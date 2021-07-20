@@ -11,10 +11,15 @@ folder: tags
 
 ## jetson nano
 
-![image](https://user-images.githubusercontent.com/42961200/126303736-3e916ad9-e6d6-4f9e-8aba-6b087bba83ae.png)
+|   |   |
+| -- | -- |
+| Image | ![image](https://user-images.githubusercontent.com/42961200/126303736-3e916ad9-e6d6-4f9e-8aba-6b087bba83ae.png) |
+| Download | [download_image](https://developer.nvidia.com/jetson-nano-sd-card-image)  ## download Etcher/BalenaEtcher |
+| sd-card | ![image](https://user-images.githubusercontent.com/42961200/126304920-4f3952db-904e-4671-8592-97d2a2fa59ba.png) |
 
-[download_image](https://developer.nvidia.com/jetson-nano-sd-card-image)  ## download Etcher/BalenaEtcher
+---
+Image: ![image](https://user-images.githubusercontent.com/42961200/126303736-3e916ad9-e6d6-4f9e-8aba-6b087bba83ae.png) 
+Download: [download_image](https://developer.nvidia.com/jetson-nano-sd-card-image)  ## download Etcher/BalenaEtcher
+sd-card: ![image](https://user-images.githubusercontent.com/42961200/126304920-4f3952db-904e-4671-8592-97d2a2fa59ba.png)
+---
 
-- Insert the micro sd card;
- 
- ![image](https://user-images.githubusercontent.com/42961200/126304920-4f3952db-904e-4671-8592-97d2a2fa59ba.png)
