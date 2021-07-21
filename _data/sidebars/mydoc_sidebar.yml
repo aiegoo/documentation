@@ -326,6 +326,14 @@ entries:
     - title: Overview 
       url: /tag_aiotoverview.html
       output: web, pdf
+        
+    - title: Jetson nano 
+      url: /tag_jetson_nano.html
+      output: web, pdf
+        
+    - title: Jetson xavier 
+      url: /tag_jetson_xavier.html
+      output: web, pdf
 
       subfolders:
       - title: Intel Edison projects
