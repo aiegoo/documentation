@@ -18,3 +18,16 @@ folder: mydoc
 # text in gray
 @@ text in purple (and bold)@@
 ```
+
+## git cli
+
+```
+git diff --stat --cached [remote/branch]
+
+git grep 'Build 0051' $(git rev-list --all)
+
+git log --since="2013-11-12" --before="2013-11-13"
+
+git reset --hard origin/master
+
+```
