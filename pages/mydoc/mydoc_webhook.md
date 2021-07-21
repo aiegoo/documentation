@@ -31,3 +31,7 @@ git log --since="2013-11-12" --before="2013-11-13"
 git reset --hard origin/master
 
 ```
+
+```
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+```
