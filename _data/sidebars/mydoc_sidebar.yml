@@ -328,7 +328,7 @@ entries:
       output: web, pdf       
       
       subfolders:
-      - title: Intel Edison projects
+      - title: +Intel Edison projects
         output: web
         subfolderitems:
 
@@ -355,8 +355,8 @@ entries:
     - title: Jetson nano 
       url: /tag_jetson_nano.html
       output: web, pdf
-      subfolders:  
-        
+      
+      subfolders:        
       - title: Jetson xavier 
         output: web, pdf
 
