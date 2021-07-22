@@ -1227,7 +1227,7 @@ h4.panel-title {
 
 .rotated {
     
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     background-color: amber;
     border: 1px solid red;
 }
