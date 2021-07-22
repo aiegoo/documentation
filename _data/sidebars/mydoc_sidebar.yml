@@ -340,8 +340,8 @@ entries:
           url: /tag_realsense.html
           output: web
 
-        - title: Special layout pages
-          url: /tag_special_layouts.html
+        - title: Edison Arduino
+          url: /tag_edison_arduino.html
           output: web
 
         - title: Collaboration pages
