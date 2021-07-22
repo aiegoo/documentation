@@ -1204,7 +1204,7 @@ h4.panel-title {
 
 /* additonal for my project portfolio */
 
-img .rotated {
+.rotated {
     
     transform: rotate(90deg);
     background-color: amber;
