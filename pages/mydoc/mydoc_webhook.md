@@ -30,6 +30,7 @@ git log --since="2013-11-12" --before="2013-11-13"
 
 git reset --hard origin/master
 
+git log --since="5 day 10 hours ago" --grep pilot_handbook --all-match
 ```
 
 ```
