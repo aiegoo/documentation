@@ -27,8 +27,8 @@ folder: mydoc
 
 
 <div markdown="1" style="max-wdith: 400px;">
-<p aligh="right">
-  <img alt="greenlight" src="https://user-images.githubusercontent.com/42961200/126643172-bf3dfe3d-9004-4427-a7bf-d62723bd94b1.png" style="width: 200px; max-width: 80%; margin-left: 300px;" />
+<p>
+  <img alt="greenlight" src="https://user-images.githubusercontent.com/42961200/126643172-bf3dfe3d-9004-4427-a7bf-d62723bd94b1.png" style="width: 200px; max-width: 80%; margin-left: 200px;" />
   </p>
 </div>
 
