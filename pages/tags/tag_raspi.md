@@ -14,6 +14,23 @@ folder: mydoc
 - Arduino ESP8266 drone
 - Raspberry Pi integration
 
+## Ch3. Final preparation
+- ESP8266 connection
+
+|     |     |
+| --- | --- |
+| Pin: Function RX: It receives data VCC: Power pin (usually 3.3V maximum) GPIO 0: General purpose input output pin 0 RESET: It is a reset pin CH_PD: Chip power down pin GPIO 2: General purpose input output pin 2 TX: It transmits data GND: Ground pin | ![image](https://user-images.githubusercontent.com/42961200/126641477-3bc0c033-38ab-4a84-893b-a47092f751ff.png) |
+| RX - 3, TX - 2, VCC - 3V, CH_PD - 3V | ![image](https://user-images.githubusercontent.com/42961200/126641671-b3497384-d728-47d6-98cf-83c39fff7282.png) |
+
+- adding blynk library to Sketch/Include Library of IDE
+[libr_git](https://github.com/blynkkk/blynk-library/releases/tag/v1.0.1)
+
+
+<div markdown="1" style="max-wdith: 400px;">
+<p aligh="right">
+  <img alt="greenlight" src="https://user-images.githubusercontent.com/42961200/126643172-bf3dfe3d-9004-4427-a7bf-d62723bd94b1.png" style="width: 200px; max-width: 80%; transform: rotate(-90deg); margin-left: 300px;" />
+  </p>
+</div>
 
 ## Ch2. Assembling
 
@@ -38,7 +55,7 @@ folder: mydoc
 | --- | --- |
 | Pin 1: Roll/aileron Pin 2: Pitch/elevator Pin 3: Throttle Pin 4: Yaw/rudder Pin 5: Auxiliary channel 1 (for example, mode switch) Pin 6: Auxiliary channel 2 | ![image](https://user-images.githubusercontent.com/42961200/126631175-c8ff7618-c2ca-4b1f-b4d1-32237f0221a5.png) |
 
-### Bidnign transmitter to the receiver
+### Binding transmitter to the receiver
 1. You can bind your transmitter with at least the following things. Note taht the binding process differs from teh RC receiver's model to model. (binding cable, esc, servo motor, battery)
 
 2. Connect the binding cable to rc receiver on the BAT pinor B/VCC
@@ -84,6 +101,7 @@ The pitch is the rotation of the drone in the Y direction, while the rotation al
 
 $\displaystyle \frac{\partial f}{\partial x}$  <img src="https://render.githubusercontent.com/render/math?math=x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}">
 
+[math-writing](https://www.mathcha.io/editor)
 
 \begin{equation*}
 \left(\frac{xdx}{dy} -\frac{ydy}{dx}\right)^{2} \ ,\ [\vec{F} =m\vec{a}] \ ,\ \left| \frac{a}{b}\right| \ \left\Vert \frac{a}{b}\right\Vert \ \left< \frac{a}{b}\right> \left\{\sqrt{a+\sqrt{a+\sqrt{a}}}\rightarrow \infty \right\}
