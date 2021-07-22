@@ -379,28 +379,24 @@ entries:
 
 
       subfolders:
-      - title: Intel Edison projects
+      - title: Jetson Xavier
         output: web
         subfolderitems:
 
-        - title: Detection serializer
-          url: /tag_sensor_detection.html
+        - title: project overview
+          url: /tag_jetson_xavier.html
+          output: web
+          
+        - title: Raspberry Pi projects
+          url: /tag_raspi.html
+          output: web, pdf
+
+        - title: Sensor serializer
+          url: /tag_serializer.html
           output: web
 
-        - title: Realsense drone
-          url: /tag_realsense.html
-          output: web
-
-        - title: Special layout pages
-          url: /tag_special_layouts.html
-          output: web
-
-        - title: Collaboration pages
-          url: /tag_collaboration.html
-          output: web
-
-        - title: Troubleshooting pages
-          url: /tag_troubleshooting.html
+        - title: Lora monitoring system
+          url: /tag_lora_monitoring.html
           output: web
 
   - title: Books
