@@ -1221,3 +1221,13 @@ h4.panel-title {
 .post-header {
     margin-top: 50px;
 }
+
+
+/* additonal for my project portfolio */
+
+.rotated {
+    
+    transform: rotate(90deg);
+    background-color: amber;
+    border: 1px solid red;
+}
