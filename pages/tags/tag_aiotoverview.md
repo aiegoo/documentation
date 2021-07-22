@@ -1,5 +1,5 @@
 ---
-title: Korea drone companies
+title: 🔭AIOT projects
 tags: [drone, job, resume ]
 last_updated: July 22, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
@@ -11,3 +11,4 @@ folder: mydoc
 ---
 
 ## AIOT project overview
+
