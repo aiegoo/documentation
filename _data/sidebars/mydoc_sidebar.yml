@@ -213,7 +213,7 @@ entries:
       output: web, pdf
 
       subfolders:
-      - title: rFlyeval CopterSim
+      - title: +rFlyeval CopterSim
         output: web
         subfolderitems:
 
@@ -357,7 +357,7 @@ entries:
       output: web, pdf
       
       subfolders:
-      - title: +Jetson Xavier
+      - title: Jetson Xavier
         output: web
         subfolderitems:
         
@@ -379,7 +379,7 @@ entries:
 
 
       subfolders:
-      - title: Jetson Xavier
+      - title: +Jetson Xavier
         output: web
         subfolderitems:
 
