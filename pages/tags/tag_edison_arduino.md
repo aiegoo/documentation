@@ -36,8 +36,8 @@ Find the microswitch in between the USB ports on the expansion board. Switch the
 
 - A green light should light up on the expansion board. If it does not, check your connection
 
-<div markdown="1" style="align: center;">
-  <img alt="greenlight" class="rotated" src="https://user-images.githubusercontent.com/42961200/125905066-0d28aee4-1806-427e-877c-0691ea9995b0.jpg" style="width: 500px; max-width: 80%;" />
+<div markdown="1" style="align: right;">
+  <img alt="greenlight" class="rotated" src="https://user-images.githubusercontent.com/42961200/125905066-0d28aee4-1806-427e-877c-0691ea9995b0.jpg" style="width: 300px; max-width: 80%;" />
 </div>
 
 - you are all set to rock!!
