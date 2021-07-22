@@ -17,9 +17,9 @@ folder: mydoc
 ## Ch3. Final preparation
 - ESP8266 connection
 
-|     |     |
-| --- | --- |
-| Pin: Function RX: It receives data VCC: Power pin (usually 3.3V maximum) GPIO 0: General purpose input output pin 0 RESET: It is a reset pin CH_PD: Chip power down pin GPIO 2: General purpose input output pin 2 TX: It transmits data GND: Ground pin | ![image](https://user-images.githubusercontent.com/42961200/126641477-3bc0c033-38ab-4a84-893b-a47092f751ff.png) |
+|     |     |      |
+| --- | --- | ---  |
+| Pin: Function RX: It receives data VCC: Power pin (usually 3.3V maximum) GPIO 0: General purpose input output pin 0 RESET: It is a reset  | pin CH_PD: Chip power down pin GPIO 2: General purpose input output pin 2 TX: It transmits data GND: Ground pin | ![image](https://user-images.githubusercontent.com/42961200/126641477-3bc0c033-38ab-4a84-893b-a47092f751ff.png) |
 | RX - 3, TX - 2, VCC - 3V, CH_PD - 3V | ![image](https://user-images.githubusercontent.com/42961200/126641671-b3497384-d728-47d6-98cf-83c39fff7282.png) |
 
 - adding blynk library to Sketch/Include Library of IDE
