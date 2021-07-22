@@ -356,11 +356,12 @@ entries:
       url: /tag_jetson_nano.html
       output: web, pdf
       
-      subfolders:        
-      - title: Jetson xavier 
-        output: web, pdf
-
+            
+      subfolders:
+      - title: +Jetson Xavier
+        output: web
         subfolderitems:
+        
         - title: project overview
           url: /tag_jetson_xavier.html
           output: web
