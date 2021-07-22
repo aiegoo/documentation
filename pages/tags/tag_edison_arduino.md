@@ -1,9 +1,10 @@
 ---
-title: "Special layout pages"
+title: "Edison && Arduino"
 tagName: special_layouts
 search: exclude
-permalink: tag_special_layouts.html
+permalink: tag_edison_arduino.html
 sidebar: mydoc_sidebar
+datatable: true
 folder: tags
 ---
 
