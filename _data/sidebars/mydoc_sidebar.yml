@@ -356,7 +356,6 @@ entries:
       url: /tag_jetson_nano.html
       output: web, pdf
       
-            
       subfolders:
       - title: +Jetson Xavier
         output: web
@@ -378,30 +377,6 @@ entries:
           url: /tag_lora_monitoring.html
           output: web
 
-      subfolders:
-      - title: Intel Edison projects
-        output: web
-        subfolderitems:
-
-        - title: Detection serializer
-          url: /tag_sensor_detection.html
-          output: web
-
-        - title: Realsense drone
-          url: /tag_realsense.html
-          output: web
-
-        - title: Special layout pages
-          url: /tag_special_layouts.html
-          output: web
-
-        - title: Collaboration pages
-          url: /tag_collaboration.html
-          output: web
-
-        - title: Troubleshooting pages
-          url: /tag_troubleshooting.html
-          output: web
 
       subfolders:
       - title: Intel Edison projects
