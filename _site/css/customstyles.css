@@ -1201,3 +1201,12 @@ h4.panel-title {
         display:block !important;
     }
 }
+
+/* additonal for my project portfolio */
+
+img > .rotated {
+    
+    transform: rotate(90deg);
+    background-color: amber;
+    border: 1px solid red;
+}
