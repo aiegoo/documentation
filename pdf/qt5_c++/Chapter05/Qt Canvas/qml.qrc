@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>main.qml</file>
-        <file>glcode.js</file>
-        <file>three.js</file>
-        <file>brick.jpg</file>
-    </qresource>
-</RCC>

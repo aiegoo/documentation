@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>main.qml</file>
-        <file>horse_1.png</file>
-    </qresource>
-</RCC>
