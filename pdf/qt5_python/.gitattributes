@@ -1,0 +1,1 @@
+qt5_python.pdf filter=lfs diff=lfs merge=lfs -text
