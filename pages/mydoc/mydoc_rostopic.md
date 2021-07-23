@@ -9,7 +9,7 @@ permalink: mydoc_rostopic.html
 folder: mydoc
 ---
 
-## Rqt development [git_overview](https://docs.ros.org/en/foxy/Concepts/About-RQt.html#rqt-components-structure)
+## Rqt development [git_overview](https://docs.ros.org/en/foxy/Concepts/About-RQt.html#rqt-components-structure) [wiki](http://wiki.ros.org/rqt)
 - rqt_console/logger
 - rqt_bag
 - rqt_web
