@@ -32,6 +32,11 @@ folder: mydoc
   </p>
 </div>
 
+- follow these steps below for initial setup
+  - From the app, 1. Enter a project name, 2. Choose a device. 
+  - You will receive an email assoicated with the app's account  and also the same auth token can be found in the project settings.
+
+
 ## Ch2. Assembling
 
 |     |     |
