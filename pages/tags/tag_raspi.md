@@ -35,7 +35,8 @@ folder: mydoc
 - follow these steps below for initial setup
   - From the app, 1. Enter a project name, 2. Choose a device. 
   - You will receive an email assoicated with the app's account  and also the same auth token can be found in the project settings.
-
+[token](41uIJwHrV-gCNsBJN1Tk8LqRE7-UpYXW)
+![image](https://user-images.githubusercontent.com/42961200/126847091-d6a93678-b3c1-4861-9bc8-c466abee343d.png)
 
 ## Ch2. Assembling
 
