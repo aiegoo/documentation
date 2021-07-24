@@ -32,6 +32,11 @@ folder: mydoc
 [software_installation](https://github.com/aiegoo/_mydrone/wiki/Software-Installation)
 
 
+### example of GUI 
+[youtube](https://www.youtube.com/watch?v=93SpvPLL-_s)
+
+`Pixhawk to Simulink MavLink Communication (Real Time virtual Cockpit instruments and Gagues) `
+
 `x = 4`{:.ruby}
 
 {:color-style: style="background: black;"}
