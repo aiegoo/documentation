@@ -72,9 +72,26 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Rostopic integration
-      url: /mydoc_rostopic.html
+    subfolders:
+    - title: Rostopic integration for GUI
       output: web, pdf
+      subfolderitems:
+
+      - title: GUI overview
+        url: /mydoc_rostopic.html
+        output: web, pdf
+      
+      - title: Rqt
+        url: /tag_rqt.html
+        output: web, pdf
+
+      - title: webrtc
+        url: /tag_webrtc.html
+        output: web, pdf
+
+      - title: mqtt
+        url: /tag_mqtt.html
+        output: web, pdf        
 
     - title: Django restapi frameworks
       url: /mydoc_django.html
