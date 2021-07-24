@@ -78,6 +78,7 @@ Full featured and widely used GCS.
 -  **Licence**: `Open source <https://github.com/ArduPilot/MissionPlanner/blob/master/COPYING.txt>`__
    (GPLv3)
 
+![image](https://user-images.githubusercontent.com/42961200/126874232-2cfc24f1-0415-40fd-a32e-c0e432ab5802.png)
 
 .. image:: ../../../images/MP-FP-Screen.jpg
     :target: ../_images/MP-FP-Screen.jpg
@@ -98,6 +99,8 @@ user base and a reduced feature set when compared with Mission Planner.
 - **Licence**: `Open source <https://github.com/ArduPilot/apm_planner/blob/master/license.txt>`__
    (GPLv3)
 
+![image](https://user-images.githubusercontent.com/42961200/126874248-ca6a906a-2ce1-4734-937c-a04661c677cb.png)
+
    .. image:: ../../../images/planner2_choose_agcs.jpg
     :target: ../_images/planner2_choose_agcs.jpg
 
@@ -117,6 +120,8 @@ Python, and extensible via python modules.
 -  **Licence**: `Open source <https://github.com/tridge/MAVProxy/blob/master/COPYING.txt>`__
    (GPLv3)
 
+![image](https://user-images.githubusercontent.com/42961200/126874263-728ca0c5-6780-4608-9f19-9d7b9f93e091.png)
+
 .. image:: ../../../images/mavproxy_linux.jpg
     :target:  ../_images/mavproxy_linux.jpg
 
@@ -133,6 +138,8 @@ It's unique among the GCS offerings as it runs on all platforms desktop and mobi
 -  **Platform**: Windows, Mac OS X, Linux, Android and iOS
 -  **Licence**: `Open Source <http://www.qgroundcontrol.org/license>`__
    (GPLv3)
+
+![image](https://user-images.githubusercontent.com/42961200/126874278-5dc72d8c-6c6c-4024-a995-137660d75118.png)
 
 .. image:: ../../../images/QGroundControlTabletImage.jpg
     :target: ../_images/QGroundControlTabletImage.jpg
@@ -159,6 +166,8 @@ Supports multi-node installation, meaning that it is possible to connect multipl
 -  **Platform**: Windows, Mac OS X, Ubuntu
 -  **Licence**: Proprietary with a free licence available as well (UgCS Open)
 
+![image](https://user-images.githubusercontent.com/42961200/126874288-3e2aba83-baf3-4527-bc92-300da1892749.png)
+
 .. image:: https://www.ugcs.com/files/2016-04/1459769168_elevation-profile.jpeg
     :target:  https://www.ugcs.com/files/2016-04/1459769168_elevation-profile.jpeg
 
@@ -179,6 +188,8 @@ drone) and special missions for 3D mapping.
 -  **Platform**: Android Phones and Tablets
 -  **Licence**: `Open source <https://github.com/DroidPlanner/Tower/blob/develop/LICENSE.md>`__
    (GPLv3)
+
+![image](https://user-images.githubusercontent.com/42961200/126874301-ba2cc80b-003e-4c8a-973d-c66537249590.png)
 
 .. image:: ../../../images/tower_droid_planner3_structure_scan.jpg
     :target: ../_images/tower_droid_planner3_structure_scan.jpg
@@ -208,6 +219,8 @@ See website for how-to on how connect it to your autopilot
 -  **Platform**: iPhone, iPad
 -  **Licence**: Proprietary
 
+![image](https://user-images.githubusercontent.com/42961200/126874307-4c4dd9c9-2d12-491b-b5b4-37fe99bc8f60.png)
+
 .. image:: ../../../images/MAVPilot_1.4.png
     :target: ../_images/MAVPilot_1.4.png
 
@@ -225,6 +238,8 @@ See website for how-to on how connect it to your autopilot
 
 -  **Platform**: iPhone, iPad
 -  **Licence**: Proprietary
+
+![image](https://user-images.githubusercontent.com/42961200/126874327-c9b51302-601e-4613-b937-edcbcc4ee61c.png)
 
 .. image:: ../../../images/sidepilot.jpg
     :target: ../_images/sidepilot.jpg
@@ -247,6 +262,8 @@ Android GCS intended for enthusiasts.
 -  **Platform**: Android Phones and Tablets
 -  **Licence**: `Open Source <https://github.com/geeksville/arduleader/blob/master/LICENSE.md>`__
    (GPLv3)
+
+![image](https://user-images.githubusercontent.com/42961200/126874337-94587d26-8b7f-4201-ace5-e04bfb73b2fd.png)
 
 .. image:: ../../../images/Andropilot_-_Android_Apps_on_Google_Play.jpg
     :target: ../_images/Andropilot_-_Android_Apps_on_Google_Play.jpg
