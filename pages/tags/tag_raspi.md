@@ -113,7 +113,7 @@ $\displaystyle \frac{\partial f}{\partial x}$  <img src="https://render.githubus
 \left(\frac{xdx}{dy} -\frac{ydy}{dx}\right)^{2} \ ,\ [\vec{F} =m\vec{a}] \ ,\ \left| \frac{a}{b}\right| \ \left\Vert \frac{a}{b}\right\Vert \ \left< \frac{a}{b}\right> \left\{\sqrt{a+\sqrt{a+\sqrt{a}}}\rightarrow \infty \right\}
 \end{equation*}
 
-[image](https://user-images.githubusercontent.com/42961200/126624695-d4f7211d-73aa-4bb4-9295-9c63396e86f7.png)
+![image](https://user-images.githubusercontent.com/42961200/126624695-d4f7211d-73aa-4bb4-9295-9c63396e86f7.png)
 
 > If P is the payload capacity of your drone (how much your drone can lift. I'll explain how
 you can find it), M is the number of motors, W is the weight of the drone itself, and H is the
