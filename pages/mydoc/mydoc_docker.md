@@ -964,9 +964,25 @@ I&rsquo;m going with `Watchtower` as a random choice.
 
 <a id="orgc9df158"></a>
 
-## Think of and deploy (at least one) service that will be actually of use to you
+#### Think of and deploy (at least one) service that will be actually of use to you
 
 This is an unsupervised task. You can choose any application you want, as long
 as it does not have *too many* moving parts, deploy it with Docker, secure the
 frontend with Nginx.
 
+## example : webrtc
+[resource_download](https://webrtchacks.com/webrtc-cv-tensorflow/)
+                
+![image](https://user-images.githubusercontent.com/42961200/126855734-3bf4b593-944d-40de-a1c6-82dbcef9bee0.png)
+                
+```
+git clone https://github.com/webrtcHacks/tfObjWebrtc.git
+cd tfObjWebrtc
+python setup.py install
+```
+
+- docker command 
+                
+```
+docker run -it -p 5000:5000 --name tf-webrtchacks -v $(pwd):/code chadhart/tensorflow-object-detection:webrtchacks
+```                
