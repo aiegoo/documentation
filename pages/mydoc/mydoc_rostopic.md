@@ -26,4 +26,4 @@ MQTT is an OASIS standard messaging protocol for the Internet of Things (IoT). I
 ## instruction pdfs
 [qt5_python](../../pdf/qt5_python/qt5_python.pdf)
 
-[qt5_c++](../../pdf/qt5_c++/Qt5_C++.pdf)
+[qt5_c++](../../pdf/qt5_c++/qt5_cplus.pdf)
