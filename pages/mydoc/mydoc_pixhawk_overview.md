@@ -20,8 +20,8 @@ folder: mydoc
 </div>
 
 ### reference site
-[Pixhawk](http://dronecode.org) 
+[Pixhawk](http://px4.io) 
 
-[Dronecode](http://ardupilot.com)
+[Dronecode](http://dronecode.org)
 
-[ardupilot](http://px4.io)
+[ardupilot](http://ardupilot.com)
