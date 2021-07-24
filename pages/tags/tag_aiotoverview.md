@@ -12,3 +12,8 @@ folder: mydoc
 
 ## AIOT project overview
 
+## Qt designer
+[example_codes](/pdf/qt5_python/9781788831000_Code/)
+
+## Qt creator
+[instruction&&exercises](/pdf/qt5_cplus/)
