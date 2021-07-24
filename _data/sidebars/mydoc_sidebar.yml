@@ -77,7 +77,7 @@ entries:
       output: web, pdf
 
       subfolders:
-      - title: Rostopic integration for GUI
+      - title: +Rostopic integration for GUI
         output: web, pdf
         subfolderitems:
 
