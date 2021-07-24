@@ -12,7 +12,7 @@ folder: mydoc
 [template](github.com/grantmcconnaughey/cookiecutter-django-vue-graphql-aws)
 
 <div>
-{{ "## - here's the resulting django project" | markdownify }}
+- here's the resulting django project
 </div>
 
 <div markdown="1" align="center" >
@@ -36,6 +36,8 @@ folder: mydoc
 [youtube](https://www.youtube.com/watch?v=93SpvPLL-_s)
 
 `Pixhawk to Simulink MavLink Communication (Real Time virtual Cockpit instruments and Gagues) `
+
+- connecting ros to bebop [mathworks](https://kr.mathworks.com/help/supportpkg/android/examples/set-position-of-bebop-drone-on-gazebo-simulator-from-android-device-using-ros.html)
 
 `x = 4`{:.ruby}
 
