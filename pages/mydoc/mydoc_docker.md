@@ -986,3 +986,16 @@ python setup.py install
 ```
 docker run -it -p 5000:5000 --name tf-webrtchacks -v $(pwd):/code chadhart/tensorflow-object-detection:webrtchacks
 ```                
+### example: aiortc
+
+```
+$ pip install aiohttp aiortc opencv-python
+```                
+                
+```
+git clone https://github.com/jlaine/aiortc
+cd examples/server
+python server.py
+```                
+check localhost:8080 and select opitons for audio/video/server.
+                
