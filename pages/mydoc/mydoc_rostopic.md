@@ -9,7 +9,8 @@ permalink: mydoc_rostopic.html
 folder: mydoc
 ---
 
-## Rqt development [_mydrone wiki](https://github.com/aiegoo/_mydrone/wiki/OGC-RQt) :leaves: [git_overview](https://docs.ros.org/en/foxy/Concepts/About-RQt.html#rqt-components-structure) [wiki](http://wiki.ros.org/rqt)
+## Rqt development [_mydrone wiki](https://github.com/aiegoo/_mydrone/wiki/OGC-RQt) 
+:leaves: [git_overview](https://docs.ros.org/en/foxy/Concepts/About-RQt.html#rqt-components-structure) [wiki](http://wiki.ros.org/rqt)
 - rqt_console/logger
 - rqt_bag
 - rqt_web
