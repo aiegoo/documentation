@@ -72,6 +72,9 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Django restapi frameworks
+      url: /mydoc_django.html
+      output: web, pdf
 
       subfolders:
       - title: Rostopic integration for GUI
@@ -93,11 +96,6 @@ entries:
         - title: mqtt
           url: /tag_mqtt.html
           output: web, pdf        
-
-
-    - title: Django restapi frameworks
-      url: /mydoc_django.html
-      output: web, pdf
 
     - title: Gitlab-github actions
       url: /mydoc_actions.html
