@@ -6,10 +6,9 @@ hide: false
 toc: false
 sidebar: mydoc_sidebar
 permalink: index.html
-summary: From the graphic designer with hands-on experience in the industry, I witnessed myself transform into a full-fledged web developer covering both front-end and back-end offices.
+summary: From a graphic designer with hands-on experience in the industry, I witnessed myself transform into a full-fledged web developer covering both front-end and back-end offices.
 ---
 
-Welcome to the portfolio wiki!
 ### Hello visitor, welcome to my Github portfolio wiki
 <img src="http://i.imgur.com/pjmxrDI.gif" style="width:450px;">
 
