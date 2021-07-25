@@ -10,12 +10,13 @@ folder: mydoc
 ---
 
 ## Rqt development [_mydrone wiki](https://github.com/aiegoo/_mydrone/wiki/OGC-RQt) 
+
 :leaves: [git_overview](https://docs.ros.org/en/foxy/Concepts/About-RQt.html#rqt-components-structure) [wiki](http://wiki.ros.org/rqt)
 - rqt_console/logger
 - rqt_bag
 - rqt_web
 
-ROS GUI is designed as a plugin architecture which allows users to quickly implement Qt-based GUI's plugins with ROS, in particular for state information.
+ROS GUI is designed as a plugin architecture which allows users to quickly implement Qt-based GUI's plugins with ROS for state information.
 
 rqt_console/logger provides graphical interface to capture and broadcast log messages for filtering. _bag is designed to view ros bag contents such as images and visualized outputs (via rqt_plot). _web is integrated work space for ROS GUI.
 ```
@@ -90,7 +91,7 @@ Full featured and widely used GCS.
 -  `Source Code <https://github.com/ArduPilot/MissionPlanner>`__
 
 #### APM Planner 2.0
----------------
+
 
 The best autopilot for use on MAC and Linux platforms. It has a smaller
 user base and a reduced feature set when compared with Mission Planner.
@@ -107,10 +108,10 @@ user base and a reduced feature set when compared with Mission Planner.
 - :ref:`Wiki <planner2:home>`
 - `Support Forum <https://discuss.ardupilot.org/c/ground-control-software/apm-planner-2-0>`__
 - `Issues List <https://github.com/ArduPilot/apm_planner/issues>`__
-- `Source Code <https://github.com/ArduPilot/apm_planner>`__
+- `[ SourceCode ](https://github.com/ArduPilot/apm_planner)`__
 
 #### MAVProxy
----------------
+
 
 Linux GCS often used by Plane developers. Primarily a command line
 interface with graphical modules for map and mission editing. Written in
@@ -127,10 +128,10 @@ Python, and extensible via python modules.
 
 -   :ref:`Wiki <mavproxy:home>`
 -  `Issues List <https://github.com/ArduPilot/MAVProxy/issues>`__
--  `Source Code <https://github.com/ArduPilot/MAVProxy>`__
+-  `[SourceCode](https://github.com/ArduPilot/MAVProxy)`__
 
 ####  QGroundControl
----------------
+
 
 QGroundControl works with MAVLink capable autopilots including ArduPilot.
 It's unique among the GCS offerings as it runs on all platforms desktop and mobile.
@@ -144,12 +145,12 @@ It's unique among the GCS offerings as it runs on all platforms desktop and mobi
 .. image:: ../../../images/QGroundControlTabletImage.jpg
     :target: ../_images/QGroundControlTabletImage.jpg
 
--  `Website <http://qgroundcontrol.com/>`__
+-  `[Website](http://qgroundcontrol.com/)`__
 -  `Support Forum <https://groups.google.com/forum/#!forum/qgroundcontrol>`__
 -  `Gitter <https://gitter.im/mavlink/qgroundcontrol>`__
 
 #### UgCS - Universal Ground Control Station
----------------
+
 
 Universal and easy to use ground control station with a 3D interface. 
 Supports APM, Pixhawk as well as drones from other manufacturers such as DJI, Mikrokopter and more.
@@ -173,12 +174,12 @@ Supports multi-node installation, meaning that it is possible to connect multipl
 
 -  `UgCS Website <http://www.ugcs.com>`__
 -  `DIY Drones Group for UgCS Users <https://diydrones.com/group/ugcs>`__
--  `UgCS Github Repository <https://github.com/ugcs>`__
+-  `[GithubRepository](https://github.com/ugcs)`__
 
 ### Comparison Mobile
 
 #### Tower
----------------
+
 
 Tower (a.k.a. "DroidPlanner 3") is an Android GCS for phones and
 tablets. It is intended for end users and enthusiasts, and includes
@@ -201,7 +202,7 @@ drone) and special missions for 3D mapping.
 -  `Wiki <https://github.com/DroidPlanner/Tower/wiki>`__
 -  `Support Forum <https://discuss.ardupilot.org/c/ground-control-software/tower>`__
 -  `Issues List <https://github.com/DroidPlanner/Tower/issues>`__
--  `Source Code <https://github.com/DroidPlanner/droidplanner>`__
+-  `[SourceCode](https://github.com/DroidPlanner/droidplanner)`__
 
 .. note::
 
@@ -210,7 +211,7 @@ drone) and special missions for 3D mapping.
    can also be downloaded from Google Play.
 
 #### MAV Pilot 1.4
----------------
+
 
 A GCS in your pocket that supports predominantly ArduPilot autopilot on iPhone/iPad. Supports for Plane, Copter & Rover vehicle types
 
@@ -230,7 +231,7 @@ See website for how-to on how connect it to your autopilot
 -  `iTunes Store link <https://itunes.apple.com/ca/developer/communis-tech/id649232032>`__
 
 #### SidePilot
----------------
+
 
 ArduPilot compatible GCS that runs on iPhone/iPad.
 
@@ -250,7 +251,7 @@ See website for how-to on how connect it to your autopilot
 -  `iTunes Store link <https://itunes.apple.com/us/app/sidepilot/id1138193193?ls=1&mt=8>`__
 
 #### AndroPilot
----------------
+
 
 Android GCS intended for enthusiasts.
 
@@ -273,13 +274,13 @@ Android GCS intended for enthusiasts.
 -  `Wiki <https://github.com/geeksville/arduleader/wiki>`__
 -  `Support Forum <https://discuss.ardupilot.org/c/ground-control-software/other-gcs>`__
 -  `Issues List <https://github.com/geeksville/arduleader/issues>`__
--  `Source Code <https://github.com/geeksville/arduleader/tree/master/andropilot>`__
+-  `[SourceCode](https://github.com/geeksville/arduleader/tree/master/andropilot)`__
 
 ### Additional GCS hardware
 
 
 #### Android
----------------
+
 
 For Android devices, you will need:
 
@@ -296,7 +297,7 @@ For Android devices, you will need:
 
    
 #### iOS
----------------
+
 
 For iOS devices, you will need:
 
