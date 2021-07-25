@@ -9,7 +9,10 @@ permalink: index.html
 summary: From a graphic designer with hands-on experience in the industry, I witnessed myself transform into a full-fledged web developer covering both front-end and back-end offices.
 ---
 
+<div markdown="1" align="center">
+
 ### Hello visitor, welcome to my Github portfolio wiki
+
 <img src="http://i.imgur.com/pjmxrDI.gif" style="width:450px;">
 
 ## What do I do?
@@ -64,6 +67,7 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 
 **aiegoo/portfolio** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
+</div>
 
 {% include note.html content="If you're cloning this theme, you're probably writing documentation of some kind. I have a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='https://tinyletter.com/tomjoht'>subscribing</a>. I also have a site on <a href='http://idratherbewriting.com/learnapidoc'>writing API documentation</a>." %}
 
