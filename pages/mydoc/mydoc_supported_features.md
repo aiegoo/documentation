@@ -15,6 +15,8 @@ folder: mydoc
 [github](dotfiles.github.io)
 [blog](https://driesvints.com/blog/getting-started-with-dotfiles/) 
 
+If you don't know how important to keep dotfiles in a safe secure way, you don't deserve to be a developer! Please read the linked blog above. I am scared enough to still keep my two DO server running as a backup and a proof of all the stuffs I've been doing. Github has all the repositories and its README files would give an instant insight into what's going on. 
+
 ## ubuntu hp-mosa
 
 ## ubuntu nlp-mosa
