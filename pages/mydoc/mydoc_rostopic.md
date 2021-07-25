@@ -329,6 +329,20 @@ For Desktop devices you will need:
 
 ![simulink](https://user-images.githubusercontent.com/42961200/126034319-a160b15b-fcc1-4586-bfc1-df62371d2783.png)
 
+As shown in the figure above, the 1st–5th input ports are five input channels from the RC transmitter (“ch1”–“ch5”); the 6th–8th input ports are the angular velocity (“p”, “q”, “r”) from the gyroscope sensor; the 9th–10th input ports are the roll angle and pitch angles (“phi”, “theta”) estimated from the inertial sensor. As shown in Fig. 3.8, the computing process of the entire “Controller” subsystem is roughly divided into five steps.
+
+(1). The “Input Interfaces” module receives the RC transmitter signals and the multicopter state estimation signals. [1]
+
+(2). The “RC Signal Process” module maps the five-channel signals of the RC transmitter to the desired roll and pitch angle values.
+
+(3). The “Attitude Controller” module computes the desired force and torque values to control the multicopter to the desired attitude.
+
+(4). The “Motor Control Signal Computation” module maps the force and torque values to the control signals (ranging from 1000 to 2000) for the four motors.
+
+(5). The “Output Interfaces” module fills the remaining 4-dimensional control signals and generates an 8-dimensional PWM signal (there are eight PWM output ports on Pixhawk) ranging from 1000 to 2000µs. [2]
+
+***see other details*** [rFlyeval_introduction](https://aiegoo.github.io/documentation/mydoc_commenting_on_files.html#21-controller)
+
 ## ROS topic
 
 
