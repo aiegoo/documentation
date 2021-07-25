@@ -70,7 +70,7 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 
 </div>
 
-{% include note.html content="Wow, thanks for reading. The theme author has a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='http:159.65.8.38:10055'>to give me a 5 star rating</a>.  %}
+{% include note.html content="Wow, thanks for reading. The theme author has a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='http:159.65.8.38:10055'>to give me a 5 star rating</a>."  %}
 
 ## Build the Theme
 
