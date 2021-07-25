@@ -11,6 +11,32 @@ permalink: mydoc_supported_features.html
 folder: mydoc
 ---
 
+## dotfile github
+[github](dotfiles.github.io)
+[blog](https://driesvints.com/blog/getting-started-with-dotfiles/) 
+
+## ubuntu hp-mosa
+
+## ubuntu nlp-mosa
+
+## centos cti-nlp
+
+## windows 10
+
+## github aiegoo
+
+## github onofflink
+
+## github eozz
+
+## github tonyrhee
+
+## godaddy
+
+## cafe24
+
+## wordpress
+
 Before you get into exploring Jekyll as a potential platform for help content, you may be wondering if it supports some basic features needed to fulfill your tech doc requirements. The following table shows what is supported in Jekyll and this theme.
 
 ## Supported features
