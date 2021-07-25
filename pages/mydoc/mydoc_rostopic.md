@@ -108,7 +108,7 @@ user base and a reduced feature set when compared with Mission Planner.
 - :ref:`Wiki <planner2:home>`
 - `Support Forum <https://discuss.ardupilot.org/c/ground-control-software/apm-planner-2-0>`__
 - `Issues List <https://github.com/ArduPilot/apm_planner/issues>`__
-- `[ SourceCode ](https://github.com/ArduPilot/apm_planner)`__
+- [ SourceCode ](https://github.com/ArduPilot/apm_planner)
 
 #### MAVProxy
 
@@ -128,7 +128,7 @@ Python, and extensible via python modules.
 
 -   :ref:`Wiki <mavproxy:home>`
 -  `Issues List <https://github.com/ArduPilot/MAVProxy/issues>`__
--  `[SourceCode](https://github.com/ArduPilot/MAVProxy)`__
+-  [SourceCode](https://github.com/ArduPilot/MAVProxy)
 
 ####  QGroundControl
 
@@ -145,7 +145,7 @@ It's unique among the GCS offerings as it runs on all platforms desktop and mobi
 .. image:: ../../../images/QGroundControlTabletImage.jpg
     :target: ../_images/QGroundControlTabletImage.jpg
 
--  `[Website](http://qgroundcontrol.com/)`__
+-  [Website](http://qgroundcontrol.com/)
 -  `Support Forum <https://groups.google.com/forum/#!forum/qgroundcontrol>`__
 -  `Gitter <https://gitter.im/mavlink/qgroundcontrol>`__
 
@@ -174,7 +174,7 @@ Supports multi-node installation, meaning that it is possible to connect multipl
 
 -  `UgCS Website <http://www.ugcs.com>`__
 -  `DIY Drones Group for UgCS Users <https://diydrones.com/group/ugcs>`__
--  `[GithubRepository](https://github.com/ugcs)`__
+-  [GithubRepository](https://github.com/ugcs)
 
 ### Comparison Mobile
 
@@ -202,7 +202,7 @@ drone) and special missions for 3D mapping.
 -  `Wiki <https://github.com/DroidPlanner/Tower/wiki>`__
 -  `Support Forum <https://discuss.ardupilot.org/c/ground-control-software/tower>`__
 -  `Issues List <https://github.com/DroidPlanner/Tower/issues>`__
--  `[SourceCode](https://github.com/DroidPlanner/droidplanner)`__
+-  [SourceCode](https://github.com/DroidPlanner/droidplanner)
 
 .. note::
 
@@ -246,7 +246,7 @@ See website for how-to on how connect it to your autopilot
     :target: ../_images/sidepilot.jpg
 
 -  `Release announcement Blog & Discussion <https://diydrones.com/profiles/blogs/sidepilot-app-version-1-1-formerly-imavlink>`__
--  `Website <http://sidepilot.net>`__
+-  [Website](http://sidepilot.net)
 -  `Support Forum <http://sidepilot.net/forum>`__
 -  `iTunes Store link <https://itunes.apple.com/us/app/sidepilot/id1138193193?ls=1&mt=8>`__
 
@@ -274,7 +274,7 @@ Android GCS intended for enthusiasts.
 -  `Wiki <https://github.com/geeksville/arduleader/wiki>`__
 -  `Support Forum <https://discuss.ardupilot.org/c/ground-control-software/other-gcs>`__
 -  `Issues List <https://github.com/geeksville/arduleader/issues>`__
--  `[SourceCode](https://github.com/geeksville/arduleader/tree/master/andropilot)`__
+-  [SourceCode](https://github.com/geeksville/arduleader/tree/master/andropilot)
 
 ### Additional GCS hardware
 
