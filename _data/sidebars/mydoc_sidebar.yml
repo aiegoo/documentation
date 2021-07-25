@@ -40,7 +40,7 @@ entries:
       url: /mydoc_about.html
       output: web, pdf
 
-    - title: tltr
+    - title: tl;dr
       url: /mydoc_support.html
       output: web, pdf
 
