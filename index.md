@@ -49,9 +49,9 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 </p>
 
 
-  
+<p markdown="1" align="center">  
 ![Engineer](https://profile-counter.glitch.me/{aiegoo}/count.svg)
-
+</p>
 
 
 <h3 align="center"><a href="https://github.com/aiegoo">⌨GitHub Status:</a></h3>
