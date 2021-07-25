@@ -16,8 +16,9 @@ I was on a mission to join the workforce; my portfolio and its project details h
 
 If credits I have inserted along the way are not enough to satisfy the standards of business or not fulfilling the required criteria, please allow me to apologize and I will do my best to amend and reflect or scrap away the questionable projects entirely. I owe everything to you and my teachers.
 
-On Mar 8, 2019 as I wrap up my NCS course and join Onofflink for my first stint in a real job. This is the beginning of my developer career.
-## Survey of features
+On Mar 8, 2019 as I wrap up my NCS course and join Onofflink for my first stint in a real job. This was the beginning of my developer career, then continued the same path with Jiseoan where I found my true passion on mobility and aiot integration. In 2021, I've been looking forward to making this road of learning a reality.
+
+## Highlights of
 
 Some of the more prominent features of this theme include the following:
 
