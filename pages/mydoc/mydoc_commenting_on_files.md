@@ -27,6 +27,28 @@ folder: mydoc
 
 ### Matlab + other tool boxes
 
+-Simulink toolboxes required to install
+
+```diff
+The required MATLAB toolboxes include the following.
+
+• MATLAB/Simulink
+
+• Control System Toolbox
+
+• Curve Fitting Toolbox
+
+• Aerospace Blockset
+
+• Aerospace Toolbox
+
+• MATLAB Coder
+
+• Simulink Coder
+
+• Stateflow
+```
+
 #### (1)PixhawkSupportPackage(PSP)Toolbox
 It  is  a  Simulink  toolbox  officially  released  by Mathworks for controller design, code generation, and  firmware  upload  of  the  Pixhawk  autopilot. We  have  made  some  updates  and optimizations based   on   the   official   PSP  toolbox   to   ensure compatibility    with    the latest    Pixhawk    and MATLAB versions
 
