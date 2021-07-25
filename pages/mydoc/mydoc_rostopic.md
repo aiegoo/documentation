@@ -15,7 +15,7 @@ folder: mydoc
 - rqt_bag
 - rqt_web
 
-ROS GUI is designed as a plugin architecture which allows users to quickly implement Qt-based GUI's plugins with ROS for state information.
+ROS GUI is designed as a plugin architecture which allows users to quickly implement Qt-based GUI's plugins with ROS, in particular for state information.
 
 rqt_console/logger provides graphical interface to capture and broadcast log messages for filtering. _bag is designed to view ros bag contents such as images and visualized outputs (via rqt_plot). _web is integrated work space for ROS GUI.
 ```
