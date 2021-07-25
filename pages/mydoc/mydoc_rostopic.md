@@ -327,6 +327,7 @@ For Desktop devices you will need:
 
 ![image](https://user-images.githubusercontent.com/42961200/126862432-627a1492-ea5a-4181-ad18-5d4fe40a5459.png)
 
+![simulink](https://user-images.githubusercontent.com/42961200/126034319-a160b15b-fcc1-4586-bfc1-df62371d2783.png)
 
 ## ROS topic
 
