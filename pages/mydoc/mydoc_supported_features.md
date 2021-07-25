@@ -1,5 +1,5 @@
 ---
-title: Supported features
+title: Dotfiles and features
 tags:
   - getting_started
 keywords: "features, capabilities, scalability, multichannel output, dita, hats, comparison, benefits"
