@@ -32,15 +32,15 @@ entries:
       url: /mydoc_aboutsite.html
       output: web, pdf
 
-    - title: Supported features
+    - title: dotfiles
       url: /mydoc_supported_features.html
       output: web, pdf
 
-    - title: About the theme author
+    - title: About the author
       url: /mydoc_about.html
       output: web, pdf
 
-    - title: Support
+    - title: tltr
       url: /mydoc_support.html
       output: web, pdf
 
