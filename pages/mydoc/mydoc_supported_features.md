@@ -39,6 +39,34 @@ If you don't know how important to keep dotfiles in a safe secure way, you don't
 
 ## wordpress
 
+## developer localization
+
+## Project list and its makings
+> portfolio projects
+
+### yogaman club
+
+### oscar-django
+
+### travel blog
+
+### resume sites
+
+> on the job projects
+
+### freepbx
+
+- [documents](https://github.com/onofflink/callSystem)
+- [cdc project](https://github.com/onofflink/callSystem) check its submodule onoffjoin
+- [freepbx install](https://github.com/onofflink/freepbx)
+- [develop journal](https://github.com/onofflink/orientation) check VSC journal workspace during this time
+- [callconf](https://github.com/onofflink/115.68.120.121) based on wowza
+
+`root@159.65.8.44` check the nginx to reconfigure to its gui dashboard
+
+### unity autonomous motor HUD
+
+
 Before you get into exploring Jekyll as a potential platform for help content, you may be wondering if it supports some basic features needed to fulfill your tech doc requirements. The following table shows what is supported in Jekyll and this theme.
 
 ## Supported features
