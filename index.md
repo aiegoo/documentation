@@ -22,21 +22,21 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 - ⚡ Fun fact: 2021> I ran my first full lap around my neighborhood lake in 2 years
 
 ## 📫 Feel free to reach out
-
-<a href="https://www.linkedin.com/in/tonyleekorea/">
+<table align="center">
+  <tr>
+    <td> <a href="https://www.linkedin.com/in/tonyleekorea/">
   <img alt="tonylee's LinkedIN" style="width:22px; align: left;" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" />
-</a>
-
-<a href="https://twitter.com/tonyleekorea">
+      </a> </td> </tr>
+  <tr>
+    <td> <a href="https://twitter.com/tonyleekorea">
   <img alt="tonylee | Twitter" style="width:22px; align: left;" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg" />
-</a>
-
-
-
-
-<a href="https://aiegoo.github.io/resume">
+      </a> </td> </tr>
+  <tr>
+    <td> <a href="https://aiegoo.github.io/resume">
   <img alt="📕 Visi Project's Blog" style="width:22px; align: left;" width="66px" src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" />
-</a>
+      </a> </td>
+  </tr>
+  </table>
 
 
 
