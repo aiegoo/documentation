@@ -132,5 +132,5 @@ topnav: topnav
 | 신고표시위반, 허위신고           | 50  | 75   | 100 |
 | 사고에 관한 보고를 하지 않거나 허위로 한 경우    | 15  | 22.5 | 30  |
 
-![correction](https://github.com/aiegoo/drone-eggs/blob/94286b99e999f3431d4cfd59c0916fc09040787d/correction.jpg)
+![correction](https://user-images.githubusercontent.com/42961200/126898188-8746e92a-ae0f-4131-a889-990799bb7e0b.jpg)
 ![image](https://user-images.githubusercontent.com/42961200/122031221-78b3aa00-ce09-11eb-86bd-9b437c63bc27.png)
