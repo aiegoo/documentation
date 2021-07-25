@@ -90,7 +90,7 @@ Full featured and widely used GCS.
 -  `Source Code <https://github.com/ArduPilot/MissionPlanner>`__
 
 #### APM Planner 2.0
-
+---------------
 
 The best autopilot for use on MAC and Linux platforms. It has a smaller
 user base and a reduced feature set when compared with Mission Planner.
@@ -110,7 +110,7 @@ user base and a reduced feature set when compared with Mission Planner.
 - `Source Code <https://github.com/ArduPilot/apm_planner>`__
 
 #### MAVProxy
-
+---------------
 
 Linux GCS often used by Plane developers. Primarily a command line
 interface with graphical modules for map and mission editing. Written in
@@ -130,7 +130,7 @@ Python, and extensible via python modules.
 -  `Source Code <https://github.com/ArduPilot/MAVProxy>`__
 
 ####  QGroundControl
-
+---------------
 
 QGroundControl works with MAVLink capable autopilots including ArduPilot.
 It's unique among the GCS offerings as it runs on all platforms desktop and mobile.
@@ -149,7 +149,7 @@ It's unique among the GCS offerings as it runs on all platforms desktop and mobi
 -  `Gitter <https://gitter.im/mavlink/qgroundcontrol>`__
 
 #### UgCS - Universal Ground Control Station
-
+---------------
 
 Universal and easy to use ground control station with a 3D interface. 
 Supports APM, Pixhawk as well as drones from other manufacturers such as DJI, Mikrokopter and more.
@@ -178,7 +178,7 @@ Supports multi-node installation, meaning that it is possible to connect multipl
 ### Comparison Mobile
 
 #### Tower
-
+---------------
 
 Tower (a.k.a. "DroidPlanner 3") is an Android GCS for phones and
 tablets. It is intended for end users and enthusiasts, and includes
@@ -210,7 +210,7 @@ drone) and special missions for 3D mapping.
    can also be downloaded from Google Play.
 
 #### MAV Pilot 1.4
-
+---------------
 
 A GCS in your pocket that supports predominantly ArduPilot autopilot on iPhone/iPad. Supports for Plane, Copter & Rover vehicle types
 
@@ -230,7 +230,7 @@ See website for how-to on how connect it to your autopilot
 -  `iTunes Store link <https://itunes.apple.com/ca/developer/communis-tech/id649232032>`__
 
 #### SidePilot
-
+---------------
 
 ArduPilot compatible GCS that runs on iPhone/iPad.
 
@@ -250,7 +250,7 @@ See website for how-to on how connect it to your autopilot
 -  `iTunes Store link <https://itunes.apple.com/us/app/sidepilot/id1138193193?ls=1&mt=8>`__
 
 #### AndroPilot
-
+---------------
 
 Android GCS intended for enthusiasts.
 
@@ -279,7 +279,7 @@ Android GCS intended for enthusiasts.
 
 
 #### Android
-
+---------------
 
 For Android devices, you will need:
 
@@ -296,7 +296,7 @@ For Android devices, you will need:
 
    
 #### iOS
-
+---------------
 
 For iOS devices, you will need:
 
