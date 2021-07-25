@@ -47,8 +47,9 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 <p align="center">
 <img alt="Python" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/>
 
-<img alt="C" src="https://img.shields.io/badge/git%20-orange.svg?&style=for-the-badge&logo=git&logoColor=brightgreen"/>
+<img alt="C" src="https://img.shields.io/badge/django%20-orange.svg?&style=for-the-badge&logo=django&logoColor=brightgreen"/>
 <img alt="C++" src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/>
+<img alt="C" src="https://img.shields.io/badge/git%20-blueviolet.svg?&style=for-the-badge&logo=git&logoColor=success"/>
 </p>
 
 
