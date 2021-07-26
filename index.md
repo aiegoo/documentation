@@ -18,7 +18,7 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 ## What do I do?
 ### Enjoy Engineering, Researching and being a life amateur.
 
-- 🔭 I’m currently working on few meaningful things
+- 🔭 I’m currently working on a few meaningful things
 - 🌱 Currently learning the art of life-long learning
 - 🤔 I’m looking for help on figuring out how to help
 - 💬 Ask me about how can I help, else internet has you covered ;)
