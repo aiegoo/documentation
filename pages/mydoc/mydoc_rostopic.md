@@ -381,6 +381,7 @@ On the ground control station, the message is decoded using the same dictionary 
   
 >		0 : "Throttle disarmed", 
 >		1 : "Throttle armed",
+		
 #### 1 : Mission
   
 >		16 : "Waypoint", 
@@ -414,6 +415,7 @@ On the ground control station, the message is decoded using the same dictionary 
 >		212 : "Autotune Enable", 
 >		223 : "Engine Control", 
 >		3000 : "VTOL Transition", 
+
 #### 2 : Waypoint
   
 >		No handling here
@@ -423,24 +425,36 @@ On the ground control station, the message is decoded using the same dictionary 
 >		0 : "Transition done", 
 >		1 : "Reached transition speed ", 
 >		2 : "Transition speed not reached. Hovering", 
+
 #### 4 : Land
+
 >		0 : "Land complete", 
 >		1 : "Land final started", 
 >		2 : "Land descend started"
+
 #### 5 : Baro
+
 >		0 : "Barometer calibration complete", 
 >		1 : "Skipping baro calibration", 
 >		2 : "Calibrating barometer", 
+
 #### 6 : GPS
->		0 : "GPS not found", 
+
+>		0 : "GPS not found",
+
 #### 7 : VTOL
+
 >		0 : "Exited VTOL mode", 
 >		1 : "Entered VTOL mode", 
 >		2 : "VTOL transition only in AUTO", 
 >		3 : "VTOL not available", 
+
 #### 8 : PreArm
+
 >		0 : "Cannot arm at the moment", 
+
 #### 9 : Compass
+
 >		0 : "Compass bad orientation", 
 
 <hr>
