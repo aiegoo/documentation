@@ -1,10 +1,10 @@
 ---
-title: Dotfiles and features
+title: Supported features
 tags:
   - getting_started
 keywords: "features, capabilities, scalability, multichannel output, dita, hats, comparison, benefits"
 last_updated: "July 16, 2016"
-summary: "linux windiws vendors. onofflink jiseoan lightup projects."
+summary: "If you're not sure whether Jekyll and this theme will support your requirements, this list provides a semi-comprehensive overview of available features."
 published: true
 sidebar: mydoc_sidebar
 permalink: mydoc_supported_features.html
@@ -15,7 +15,7 @@ folder: mydoc
 [github](dotfiles.github.io)
 [blog](https://driesvints.com/blog/getting-started-with-dotfiles/) 
 
-If you don't know how important to keep dotfiles in a safe secure way, you don't deserve to be a developer! Please read the linked blog above. I am scared enough to still keep my two DO servers running as a backup and a proof of all the stuffs I've been doing. Github has all the repositories and its README files would give an instant insight into what's going on. 
+If you don't know how important to keep dotfiles in a safe secure way, you don't deserve to be a developer! Please read the linked blog above. I am scared enough to still keep my two DO server running as a backup and a proof of all the stuffs I've been doing. Github has all the repositories and its README files would give an instant insight into what's going on. 
 
 ## ubuntu hp-mosa
 
@@ -53,7 +53,7 @@ If you don't know how important to keep dotfiles in a safe secure way, you don't
 ### resume sites
 
 > on the job projects
-
+--------------------
 ### freepbx
 
 - [documents](https://github.com/onofflink/callSystem)
@@ -65,6 +65,11 @@ If you don't know how important to keep dotfiles in a safe secure way, you don't
 `root@159.65.8.44` check the nginx to reconfigure to its gui dashboard
 
 ### unity autonomous motor HUD
+
+- [mobis](https://github.com/tonyrhee/mobis) collaboration with jotaekwan
+- [project dashboard](https://github.com/tonyrhee/mobis/projects) check 10 dashboard 
+- [mobis3 tony branch](https://github.com/tonyrhee/mobis3/tree/tony) to sync with hardware PLC
+
 
 
 Before you get into exploring Jekyll as a potential platform for help content, you may be wondering if it supports some basic features needed to fulfill your tech doc requirements. The following table shows what is supported in Jekyll and this theme.
