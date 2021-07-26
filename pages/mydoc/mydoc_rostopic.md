@@ -347,6 +347,99 @@ As shown in the figure above, the 1st–5th input ports are five input channels 
 
 ***see other details*** [rFlyeval_introduction](https://aiegoo.github.io/documentation/mydoc_commenting_on_files.html#21-controller)
 
+## Statustext
+------------
+
+MAVROS statustext contains a lot of information about the the system but not all may be relevant or critical. The statustext node will listen to these statustext and send the critical ones to the ground control so that the operator is able to see the status of the aircraft in real time. 
+
+- Overview
+
+As statustext is primarily text, some are too long and it is not cost-efficient to send them as-is. Instead, we use a dictionary to encode them to a few characters. They are decoded on the receiving side using the same dictionary. 
+
+- Code architecture
+
+### On the aircraft
+
+The statustext node on the aircraft subscribes to the `/mavros/statustext/recv/` topic and converts relevant statustext to 4 alphanumeric fields for efficient communication. 
+
+| Field     | Description	|
+| :---      | :---			|
+| Prefix    | This includes I (info), W (warning) and E (error) and it will be shown on the GUI along with different coloured text so that the operator is able to easily identify the statustext that require immediate attention. <br>**Note:** This is different from the IWE prefixes in message headers and is only relevant to Statustext. |
+| Type      | Type is a single digit assigned to Throttle, Mission, Waypoint, Transition, Land, Baro, GPS, VTOL, PreArm and Compass. These are the categories to which the statustext belong. |
+| Status    | Status determines the actual message that the statustext contains and is specific to each type. For example, a status of 1 in the Throttle type implies that the throttle has been armed. |
+| Details   | Details will contain the additional information that is required in a float. This usually includes distances such as the distance to the next waypoint. If there are no details, this field will be left as 0.0 |
+
+### On the ground control station
+
+On the ground control station, the message is decoded using the same dictionary and converted into readable strings to be displayed on the GUI. The dictionary used can be found in `/scripts/gnd_statustext.py`. 
+
+- Misc
+
+### Dictionary used
+
+>	### 0 : Throttle
+>		0 : "Throttle disarmed", 
+>		1 : "Throttle armed",
+>	### 1 : Mission
+>		16 : "Waypoint", 
+>		17 : "Loiter Unlimited", 
+>		18 : "Loiter Turns", 
+>		19 : "Loiter Time", 
+>		20 : "Return to Launch", 
+>		21 : "Land", 
+>		22 : "Takeoff", 
+>		30 : "Continue Change Alt", 
+>		31 : "Loiter to Alt", 
+>		83 : "Altitude Wait", 
+>		84 : "VTOL Takeoff", 
+>		85 : "VTOL Land", 
+>		112 : "Delay", 
+>		113 : "Distance", 
+>		176 : "Set Mode", 
+>		177 : "Jump", 
+>		178 : "Change Speed", 
+>   	182 : "Repeat Relay", 
+>		184 : "Repeat Servo", 
+>		189 : "Land Start", 
+>		200 : "Control Video", 
+>		201 : "Set ROI", 
+>		202 : "Digicam Configure", 
+>		205 : "Mount Control", 
+>		206 : "Set Cam Trigger Distance", 
+>		207 : "Fence Enable", 
+>		208 : "Parachute", 
+>		210 : "Inverted Flight", 
+>		212 : "Autotune Enable", 
+>		223 : "Engine Control", 
+>		3000 : "VTOL Transition", 
+>	### 2 : Waypoint
+>		No handling here
+>	### 3 : Transition
+>		0 : "Transition done", 
+>		1 : "Reached transition speed ", 
+>		2 : "Transition speed not reached. Hovering", 
+>	### 4 : Land
+>		0 : "Land complete", 
+>		1 : "Land final started", 
+>		2 : "Land descend started"
+>	### 5 : Baro
+>		0 : "Barometer calibration complete", 
+>		1 : "Skipping baro calibration", 
+>		2 : "Calibrating barometer", 
+>	### 6 : GPS
+>		0 : "GPS not found", 
+>	### 7 : VTOL
+>		0 : "Exited VTOL mode", 
+>		1 : "Entered VTOL mode", 
+>		2 : "VTOL transition only in AUTO", 
+>		3 : "VTOL not available", 
+>	### 8 : PreArm
+>		0 : "Cannot arm at the moment", 
+>	### 9 : Compass
+>		0 : "Compass bad orientation", 
+
+<hr>
+
 ## ROS topic
 
 
