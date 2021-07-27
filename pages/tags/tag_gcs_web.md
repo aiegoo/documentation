@@ -22,3 +22,13 @@ folder: mydoc
 | Live remote control using keyboard, onscreen joystick or regular gamepads | Live video stream | Autonomous mission flights |
 | Scheduled or event-triggered flights | External viewers without or limited control capabilities | 3rd party services integration| 
 
+
+### uno gcs installation guide [instruction](https://docs.gcs.uno/ServerSetup/BasicInstallation/)
+
+| guide  |  detail | serviced at  |
+|  --- | --- | :---: |
+| [config&run](https://docs.gcs.uno/ServerSetup/ConfigureAndRun/) |  |  |
+| [wowzasetup](https://docs.gcs.uno/LiveVideoStreaming/WowzaCloudStreaming/) |  |  |
+| [nimblemediaserver](https://wmspanel.com/nimble/install#os_ubuntu)  |   |   |
+| [installingnimble](https://github.com/aiegoo/documentation/issues/3#issuecomment-887372362) |  |   |
+| [control_dashboard](https://docs.gcs.uno/DroneControl/ControlDashboard/) |  |  ![image](https://user-images.githubusercontent.com/42961200/127134215-52c22493-f5c5-42f2-9249-d3b5dfb20b2d.png) |
