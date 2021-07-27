@@ -27,7 +27,7 @@ folder: mydoc
 
 | guide  |  detail | serviced at  |
 |  --- | --- | :---: |
-| [config&run](https://docs.gcs.uno/ServerSetup/ConfigureAndRun/) |  |  |
+| [config&run](https://docs.gcs.uno/ServerSetup/ConfigureAndRun/) [or here](https://github.com/aiegoo/documentation/issues/4#issue-954161944) |  |  |
 | [wowzasetup](https://docs.gcs.uno/LiveVideoStreaming/WowzaCloudStreaming/) |  |  |
 | [nimblemediaserver](https://wmspanel.com/nimble/install#os_ubuntu)  |   |   |
 | [installingnimble](https://github.com/aiegoo/documentation/issues/3#issuecomment-887372362) |  |   |
