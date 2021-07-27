@@ -34,9 +34,11 @@ folder: tags
 ![image](https://user-images.githubusercontent.com/42961200/127105510-49ef2813-59e8-42c6-b697-bf412bf823ea.png)
 
 #### webrtc architecture
+
 |  |    |
 | ---- | --- |
 | ![image](https://user-images.githubusercontent.com/42961200/127107253-5ed188ea-4527-40f8-8c9f-46edcd7caa67.png) | [details](https://webrtc.github.io/webrtc-org/architecture#) |
+
 
 
 
