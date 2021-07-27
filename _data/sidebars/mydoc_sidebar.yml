@@ -82,7 +82,7 @@ entries:
         subfolderitems:
 
         - title: GCS-web
-          url: /mydoc_gcs_web.html
+          url: /tags_gcs_web.html
           output: web, pdf
 
         - title: GUI overview
