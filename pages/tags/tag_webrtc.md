@@ -41,5 +41,12 @@ folder: tags
 | ![image](https://user-images.githubusercontent.com/42961200/127108300-194d2dbf-588b-43d4-ab90-4119240b6a15.png) | data flow chart [article](https://github.com/aiegoo/documentation/issues/3#issue-953602858) |
 
 
+- RTC peer connection object
+
+```
+var conn = new RTCPeerConnection(conf); conn.onaddstream = function(stream){
+// use stream here
+};
+```
 
 
