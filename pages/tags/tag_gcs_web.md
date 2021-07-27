@@ -1,7 +1,7 @@
 ---
-title: 🔭Ground Control Station web-based approach
+title: 🔭 Ground Control Station web-based approach
 tags: [drone, job, resume ]
-last_updated: July 22, 2021
+last_updated: July 27, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "summary."
 sidebar: mydoc_sidebar
