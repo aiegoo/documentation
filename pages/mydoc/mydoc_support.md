@@ -135,3 +135,5 @@ topnav: topnav
 
 ![correction](https://user-images.githubusercontent.com/42961200/126898188-8746e92a-ae0f-4131-a889-990799bb7e0b.jpg)
 ![image](https://user-images.githubusercontent.com/42961200/122031221-78b3aa00-ce09-11eb-86bd-9b437c63bc27.png)
+
+for more details of aeronautic journals and my course works [clickhere](https://github.com/aiegoo/drone-eggs/wiki)
