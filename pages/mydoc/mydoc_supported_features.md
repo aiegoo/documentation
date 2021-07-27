@@ -17,6 +17,9 @@ folder: mydoc
 
 If you don't know how important to keep dotfiles in a safe secure way, you don't deserve to be a developer! Please read the linked blog above. I am scared enough to still keep my two DO servers running as a backup and a proof of all the stuffs I've been doing. Github has all the repositories and its README files would give an instant insight into what's going on. 
 
+{% include note.html content="I was a little tired of having long alias files and everything strewn about (which is extremely common on other dotfiles projects, too). That led to this project being much more topic-centric. I realized I could split a lot of things up into the main areas I used (Ruby, git, system libraries, and so on), so I structured the project accordingly." %}
+
+
 ## ubuntu hp-mosa
 
 ## ubuntu nlp-mosa
@@ -55,6 +58,9 @@ If you don't know how important to keep dotfiles in a safe secure way, you don't
 > on the job projects
 --------------------
 ### freepbx
+
+
+{% include note.html content=" clone config repo and copy downloads/downloads and run the 'install.sh' to make a new server in sync with your nlp server" %}
 
 - [documents](https://github.com/onofflink/callSystem)
 - [cdc project](https://github.com/onofflink/callSystem) check its submodule onoffjoin
