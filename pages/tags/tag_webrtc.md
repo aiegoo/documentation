@@ -11,3 +11,20 @@ folder: tags
 ---
 
 ## webrtc overview
+
+[sipwebrtc](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:386bab89-bb74-428b-bcf5-310e910fafbe)  2018
+[webrtcbrowser](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:9c028ffb-d353-43da-8c5b-1d61e736ae3b)   Reiley 2015
+
+
+### concept
+#### nework layer
+
+|  | 
+| ---- |
+|Teleconferencing, Video Teleconferencing/Videoconferencing, Multimedia Application Sharing, and other Applications SIP/SDP, WebRTC/SDP, RTSP/SDP, SAP/SDP, RTP/RTCP|
+| TCP, UDP, SCTP, TLS, DTLS |
+| IP |
+
+|  |    
+| ---- |
+| generic-message    =   start-line *message-header CRLF [ message-body ]   start-line        =    |Request-Line / Status-Line 
