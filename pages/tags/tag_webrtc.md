@@ -38,6 +38,7 @@ folder: tags
 |  |    |
 | ---- | --- |
 | ![image](https://user-images.githubusercontent.com/42961200/127107253-5ed188ea-4527-40f8-8c9f-46edcd7caa67.png) | [details](https://webrtc.github.io/webrtc-org/architecture#) |
+| ![image](https://user-images.githubusercontent.com/42961200/127108300-194d2dbf-588b-43d4-ab90-4119240b6a15.png) | data flow chart |
 
 
 
