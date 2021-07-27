@@ -81,10 +81,14 @@ entries:
         output: web, pdf
         subfolderitems:
 
+        - title: GCS-web
+          url: /mydoc_gcs_web.html
+          output: web, pdf
+
         - title: GUI overview
           url: /mydoc_rostopic.html
           output: web, pdf
-        
+          
         - title: Rqt
           url: /tag_rqt.html
           output: web, pdf
