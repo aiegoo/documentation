@@ -13,5 +13,12 @@ allowed-tags:
   - news
   - troubleshooting
   - mobile
+  - gcs
+  - webrtc
+  - mqtt
+  - blog
+  - drone
+  - dji
+  - apm
 
 # Copyright 2021 Google LLC
