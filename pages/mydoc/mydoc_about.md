@@ -20,4 +20,4 @@ This is my first web page I have created, without any css, html or jquery snippe
   - cariana.tonyleekorea.com was a very simple shopping web app with no cart, no payment options. 
   - then I have created more extensive shopping cart from cafe24 almost 4 years ago, which is still in service, with all the frills and jingles of shopping mall site would need. [yogaman](https://yogaman.club)
 
-{% include links.html %}
+{% include links.html content="https://aiegoo.github.io/resume" %}
