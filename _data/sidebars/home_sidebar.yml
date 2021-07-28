@@ -14,10 +14,10 @@ entries:
     - title: weekly focus
       url: /mydoc_rostopic.html
       output: web
-    - title: staging output1
+    - title: staging showcase 1
       url: /p1_landing_page.html
       output: web
-    - title: staging output2
+    - title: staging showcase 2
       url: /p2_landing_page.html
       output: web
 
