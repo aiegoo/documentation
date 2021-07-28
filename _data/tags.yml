@@ -24,5 +24,7 @@ allowed-tags:
   - sensor
   - setup
   - git
+  - django
+  - xfile
 
 # Copyright 2021 Google LLC
