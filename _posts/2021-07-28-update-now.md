@@ -2,10 +2,10 @@
 title:  "Update report"
 categories: jekyll update
 permalink: test-post-from-last-year.html
-tags: [news] [blog]
+tags: [news]
 ---
 
-# Wednesday, April 29, 2020
+# Wednesday, April 29, 2021
 - MEMO: google IoT API*
 - MEMO: https://www.chirpstack.io/gateway-bridge/install/config/
 
