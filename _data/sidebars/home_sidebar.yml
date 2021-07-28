@@ -5,20 +5,20 @@ entries:
   levels: one
   folders:
 
-  - title: Products
+  - title: News
     output: web
     folderitems:
-    - title: News
+    - title: update news
       url: /news.html
       output: web
-    - title: Theme instructions
-      url: /mydoc_introduction.html
+    - title: weekly focus
+      url: /mydoc_rostopic.html
       output: web
-    - title: Product 1
+    - title: staging output1
       url: /p1_landing_page.html
       output: web
-    - title: Product 2
+    - title: staging output2
       url: /p2_landing_page.html
       output: web
 
-# Copyright 2021 Google LLC
+# Copyright 2021 Tonyleekorea
