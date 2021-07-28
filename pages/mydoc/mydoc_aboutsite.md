@@ -1,6 +1,6 @@
 ---
 title: About this site and its author
-tags: [tonylee, profile ]
+tags: [getting_started, drone]
 last_updated: July 11, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "My portofolio site and its mission statement"
