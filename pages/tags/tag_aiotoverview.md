@@ -17,3 +17,5 @@ folder: mydoc
 
 ## Qt creator
 [instruction&&exercises](/pdf/qt5_cplus/)
+
+{% include taglogic.html %}
