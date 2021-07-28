@@ -1,7 +1,7 @@
 ---
 title:  "Update report"
 categories: jekyll update
-permalink: test-post-from-last-year.html
+permalink: updare-now.html
 tags: [news]
 ---
 
