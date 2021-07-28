@@ -11,4 +11,4 @@ You should know that I am not an expert. My views do not constitute legal advice
 
 Finally, all of the contents either of my own creation or of someone other than me should be considered as proprietary and you are warned in advance as such to use your discretion if you decided to quote or copy any portion of them for possible breach of intellectual property law.
 
-{% include note.html content="All due credits will be placed in each proper place in due course. I apologize and fledge to do my best to do so as soon as possible after my job search which would I hope come to an end soon" %}
+{% include warning.html content="Credits will be placed at each proper place in due course. I apologize and fledge to do my best to do so as soon as possible after my job search which I hope would come to an end soon" %}
