@@ -32,7 +32,7 @@ entries:
       url: /mydoc_aboutsite.html
       output: web, pdf
 
-    - title: dotfiles
+    - title: Dotfiles
       url: /mydoc_supported_features.html
       output: web, pdf
 
