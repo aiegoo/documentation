@@ -1,6 +1,6 @@
 ---
 title: "Rules of thumb"
-tags: [getting_started, troubleshooting]
+tags: [getting_started, drone, gcs]
 keywords: questions, troubleshooting, contact, support
 last_updated: July 3, 2016
 summary: "Contact me for any support issues."
