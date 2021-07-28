@@ -20,5 +20,7 @@ allowed-tags:
   - drone
   - dji
   - apm
+  - aiot
+  - sensor
 
 # Copyright 2021 Google LLC
