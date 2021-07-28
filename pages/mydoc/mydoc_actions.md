@@ -10,3 +10,5 @@ folder: mydoc
 ---
 
 ## Github Actions
+
+{% include tip.html content="daily tips: 1, 2, 3 and 4" %}
