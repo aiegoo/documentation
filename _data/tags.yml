@@ -22,5 +22,7 @@ allowed-tags:
   - apm
   - aiot
   - sensor
+  - setup
+  - git
 
 # Copyright 2021 Google LLC
