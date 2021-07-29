@@ -1,6 +1,6 @@
 ---
 title: self-managed gitlab
-tags: [git, github, gitlab, data ]
+tags: [git, drone, setup]
 last_updated: July 10, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "summary."

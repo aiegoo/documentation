@@ -1,6 +1,6 @@
 ---
 title: Automation pipeline
-tags: [samtech,lora, hitech ]
+tags: [git, setup, drone]
 last_updated: July 10, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "summary."

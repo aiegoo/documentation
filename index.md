@@ -1,7 +1,7 @@
 ---
 title: "Project Documentation Portal"
 keywords: personal project documentation
-tags: [getting_started]
+tags: [getting_started,drone]
 hide: false
 toc: false
 sidebar: mydoc_sidebar
