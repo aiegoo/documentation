@@ -3,7 +3,7 @@ title: My favorite fiction books
 tags: [fiction, hobby, pleasure ]
 last_updated: July 10, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
-summary: "summary."
+summary: "Reading develops your brain, provides a window into the world around you and helps you do better in all school subjects.Most importantly, reading can not only help you become a better student, but a better person.  You can learn from the brightest people whenever and wherever you choose."
 sidebar: mydoc_sidebar
 permalink: mydoc_fiction.html
 toc: false
