@@ -462,7 +462,7 @@ entries:
           output: web
 
     - title: Web-dev-ops
-      url: /mydoc_webdev.md
+      url: /mydoc_webdev.html
       output: web, pdf
 
     - title: two scoops of django
