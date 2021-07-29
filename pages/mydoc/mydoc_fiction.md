@@ -161,7 +161,7 @@ folder: mydoc
 <!-- tool books -->
 <div role="tabpanel" class="tab-pane" id="toolbook">
     <h2>Toolbooks</h2>
-    <p>I spend all of my research stipends on it books.</p>
+    <p>I spend all of my research stipends on its books.</p>
      <ul>
           <li>
           <i>
