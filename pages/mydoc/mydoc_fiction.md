@@ -6,6 +6,7 @@ keywords: API, content API, UI text, inline help, context-sensitive help, popove
 summary: "summary."
 sidebar: mydoc_sidebar
 permalink: mydoc_fiction.html
+toc: false
 folder: mydoc
 ---
 
