@@ -95,12 +95,355 @@ folder: mydoc
      <a href="http://www.cs.cornell.edu/~arb/data/index.html#hon" title="⭐⭐⭐⭐⭐⭐">data</a>
      accompanying the paper.     
      </li></ul>
+
+     <p> more fictional</p>
+     <ul>
+     여기부터 .. .
+     <li>
+     Mo Hayder
+     <a href="https://www.amazon.com/Devil-Nanking-Mo-Hayder-ebook/dp/B004L6230Y/ref=sr_1_1?keywords=mo+hayder+the+devil+of+nanking&amp;qid=1569638843&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">The devil of nanking</a>
+     From its start in 1937, as the Japanese overrun the Chinese port of Nanking and massacre hundreds of thousands, to its narrative core in 1990, as a disturbed young British woman who calls herself Grey searches for 
+     
+     </li><li>
+     Bruce Fulton
+     <a href="https://www.amazon.com/Waxen-Wings-Koreana-Anthology-Fiction/dp/1597432032/ref=sr_1_1?keywords=waxen+wings&amp;qid=1569641138&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">Waxen Wings</a>
+     The short story has been the genre of choice for writers of literary fiction in modern Korea and it continues to thrive in the new millennium. Waxen Wings
+     
+     </li><li>
+     Ivan Doig
+
+     <a href="https://www.amazon.com/Work-Song-Two-Medicine-Country-ebook/dp/B003NX7OEG/ref=sr_1_1?crid=34CYRKRCHRHZJ&amp;keywords=work+song+by+ivan+doig&amp;qid=1569641313&amp;sprefix=ivan+doig+wo%2Caps%2C346&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
+     Work Song</a>
+     Starred Review. Doig affectionately revisits Morris "Morrie" Morgan from the much-heralded The Whistling Season.
+     
+     </li><li>
+     Jim Nisbet
+     <a href="https://www.amazon.com/Damned-Dont-Die-Novel-ebook/dp/B07NQ9YG47/ref=sr_1_1?keywords=jim+nisbet+the+damned+don%27t+die&amp;qid=1569641806&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
+     The damned don't die</a>
+     "Ah, sweet mystery... where sex has co
+     
+     </li><li>
+     Jane Austen
+     <a href="https://www.amazon.com/Persuasion-Jane-Austen/dp/150329031X/ref=sr_1_2?crid=LJ54RCAP5UAO&amp;keywords=jane+austen+persuasion&amp;qid=1569641953&amp;sprefix=jane+austen+per%2Caps%2C336&amp;sr=8-2" title="⭐⭐⭐⭐⭐⭐">Persuasion</a>
+    
+    One of England s most beloved authors, Jane Austen wrote such classic novels as Pride and Prejudice, Sense and Sensibility, Emma, and Northanger Abbey. Published anonymously during her life, Austen s work was renowned for its realism, humour, and 
+     
+     
+     </li><li>
+      Constance Squires
+     <a href="https://www.amazon.com/Along-Watchtower-Constance-Squires/dp/1594485232/ref=sr_1_2?keywords=constance+squires&amp;qid=1569642168&amp;sr=8-2" title="⭐⭐⭐⭐⭐⭐">Along the Watchtower</a>  
+     Set in 1980s West Germany and Lawton, Oklahoma, Constance Squires's compelling debut novel takes both ghost story and soldier's story and remyths these into a unique and fascinating hybrid.
+
+     
+     </li><li>
+     Andrei Makine
+     <a href="https://www.amazon.com/Once-Upon-River-Love-Novel/dp/1611458064/ref=sr_1_15?keywords=andrei+makine&amp;qid=1569643173&amp;sr=8-15" title="⭐⭐⭐⭐⭐⭐">Once Upon the River Love</a>
+     In the immense virgin pine forests of Siberia, where the snows of winter are vast and endless, sits the little village of Svetlaya. Once, the village had been larger, more prosperous, but time and
+     
+     </li><li> Carol-June
+     <a href="https://www.amazon.com/New-American-Dictionary-Difficult-Words/dp/0451199308/ref=sr_1_1?keywords=the+new+american+dictionary+of+difficult+words&amp;qid=1569643444&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">The New American Dictionary of Difficult Words</a>
+     handy reference to some 3,000 commonly misused or confused words. Its usefulness would have been enhanced by some pronunciation guidance and more substantial binding.
+     
+     </li><li> Melissa Bank
+     <a href="https://www.amazon.com/Girls-Guide-Hunting-Fishing/dp/0140293248/ref=sr_1_2?crid=131LNGXMTVXDP&amp;keywords=melissa+bank&amp;qid=1569643519&amp;sprefix=melisa+bank%2Caps%2C348&amp;sr=8-2" title="⭐⭐⭐⭐⭐⭐">
+      The Girls' Guide to Hunting and Fishing</a>
+      Her work has appeared in the Chicago Tribune, Cosmopolitan, and Zoetrope, among other publications, and has been heard on National Public Radio and featured at Symphony Space in New York City. Bank holds an MFA from Cornell University and is the winner of a Nelson Algren Award for short fiction. She divides her time between New York City and East Hampton.
+     
+     </li></ul>
+
      </div>
 
 <!-- courese books -->
      <div role="tabpanel" class="tab-pane" id="coursebook">
           <h2>Coursebooks</h2>
           <p>I counted 18 books for the first year and I thought it was it. I was wrong as the number sees no boundary. </p>
+
+
+     <ul>
+     
+     <li> J. Kleinberg.  <a href="auth.pdf">Authoritative sources
+     in a hyperlinked environment.</a>
+     Proc. 9th ACM-SIAM Symposium on Discrete Algorithms, 1998.
+     Extended version in Journal of the ACM 46(1999).
+     Also appears as IBM Research Report RJ 10076, May 1997.
+     
+     </li><li> D. Gibson, J. Kleinberg, P. Raghavan.
+     <a href="ht98-comm.pdf">Inferring Web communities from link topology.</a>
+     Proc. 9th ACM Conference on Hypertext and Hypermedia, 1998.
+     
+     </li><li> S. Chakrabarti, B. Dom, D. Gibson, J. Kleinberg,
+     P. Raghavan, S. Rajagopalan,
+     <a href="www98-arc.pdf">
+     Automatic resource list compilation by
+     analyzing hyperlink structure and associated text.</a>
+     Proc. 7th International World Wide Web Conference, 1998.
+     
+     </li><li> S. Chakrabarti, B. Dom, D. Gibson, J. Kleinberg, S.R. Kumar,
+     P. Raghavan, S. Rajagopalan, A. Tomkins,
+     <a href="sciam99.html">
+     Hypersearching the Web.</a>
+     Scientific American, June 1999.
+     
+     
+     </li></ul>
+
+     <p>Interactions of Algorithmic and human decision-making</p>
+     <ul>
+     
+     <li>
+     J. Kleinberg, H. Lakkaraju, J. Leskovec, J. Ludwig, S. Mullainathan.
+     <a href="w23180.pdf">
+     Human Decisions and Machine Predictions.</a>
+     Quarterly Journal of Economics (QJE) volume 133:1, February 2018.
+     Also appears as NBER Working Paper Number 23180, February 2017.
+     
+     </li><li>
+     H. Lakkaraju, J. Kleinberg, J. Leskovec, J. Ludwig, S. Mullainathan.
+     <a href="kdd17-selective.pdf">The Selective Labels Problem: Evaluating Algorithmic Predictions in the Presence of Unobservables.</a>
+     Proc. 23rd ACM SIGKDD Intl. Conf. on Knowledge Discovery and Data Mining, 2017.
+     
+     </li><li>
+     J. Kleinberg, A. Liang, S. Mullainathan.
+     <a href="https://arxiv.org/abs/1706.06974">
+     The Theory is Predictive, but is it Complete? An Application to Human Perception of Randomness.</a>
+     Proc. 18th ACM Conference on Economics and Computation (EC), 2017.
+     
+     </li><li>
+     J. Kleinberg, J. Ludwig, S. Mullainathan.
+     <a href="https://hbr.org/2016/12/a-guide-to-solving-social-problems-with-machine-learning">A Guide to Solving Social Problems with Machine Learning.</a>
+     Harvard Business Review, December 2016.
+     
+     </li><li>
+     M. Luca, J. Kleinberg, S. Mullainathan.
+     <a href="https://hbr.org/2016/01/algorithms-need-managers-too">
+     Algorithms Need Managers, Too.</a>
+     Harvard Business Review, 94:1(Jan/Feb 2016).
+     
+     </li><li>
+     A. Anderson, J. Kleinberg, S. Mullainathan.
+     <a href="http://arxiv.org/abs/1606.04956">
+     Assessing Human Error Against a Benchmark of Perfection.</a>
+     Proc. 22nd ACM SIGKDD Intl. Conf. on Knowledge Discovery and Data Mining, 2016.     
+     
+     </li><li>
+     J. Kleinberg, S. Mullainathan.
+     <a href="http://edge.org/response-detail/26192">We Built Them, But We Don't Understand Them</a>.
+     In <a href="https://www.harpercollins.com/9780062425652/what-to-think-about-machines-that-think" title="⭐⭐⭐⭐⭐⭐">What to Think About Machines That Think: Today's Leading Thinkers on the Age of Machine Intelligence.</a>
+     (J. Brockman, editor), Harper Perennial 2015.
+     
+     </li></ul>
+
+     <p>Information flow and dynamic behavior in networks</p>
+
+     <ul>
+     
+     
+     <li>
+      Susan Johnson
+     <a href="https://www.amazon.com/Pink-Berkley-Sensation-Susan-Johnson-ebook/dp/B072SSMHL6/ref=sr_1_1?crid=3AF3B4DLJV3BF&amp;keywords=hot+pink+susan+johnson&amp;qid=1569643711&amp;sprefix=susan+johnson+hot%2Caps%2C333&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">Hot Pink</a>
+     Chloe Chisholm, pink-haired graphic designer and small-business owner, meets drop-dead gorgeous Rocco Vinelli in the elevator and sparks fly.
+     
+     </li><li>
+     Jonathan Spence
+     <a href="https://www.amazon.com/Mao-Zedong-Life-Jonathan-Spence/dp/0143037722/ref=sr_1_1?keywords=jonathan+spence+mao+zedong&amp;qid=1569652308&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
+      Mao Zedong</a>
+      Spence draws upon his extensive knowledge of Chinese politics and culture to create an illuminating picture of Mao.
+     
+     </li><li>
+     Graham Greene
+     <a href="https://www.amazon.com/The-Quiet-American/dp/B0025UMMAY/ref=sr_1_1?crid=IGNU3J72ICUX&amp;keywords=graham+greene+the+quiet+american&amp;qid=1569652569&amp;sprefix=graham+greene%2Caps%2C328&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">The Quiet American</a>
+     Alden Pyle, an idealistic young American, is sent to Vietnam to promote democracy amidst the intrigue and violence of the French war with the Vietminh, while his friend, Fowler, a cynical foreign correspondent, looks on.
+     
+     </li><li>
+      Thomas Cathcart
+     <a href="https://www.amazon.com/gp/product/0143113879/ref=dbs_a_def_rwt_bibl_vppi_i0" title="⭐⭐⭐⭐⭐⭐">Plato and a Platypus Walk into a Bar . . .:</a>
+     Outrageously funny, Plato and a Platypus Walk into a Bar... has been a breakout bestseller ever since authors—and born vaudevillians—Thomas Cathcart and Daniel Klein did their
+     
+     </li><li>
+      Trevor Homer
+     <a href="https://www.amazon.com/Book-Origins-Discover-Amazing-Languages-ebook/dp/B00256Z2DM/ref=sr_1_2?keywords=trevor+homer&amp;qid=1569652913&amp;s=books&amp;sr=1-2" title="⭐⭐⭐⭐⭐⭐">The Book of Origins</a>
+     The best way to approach this book is to simply open it and read a few random pages. It contains obscure and unknown details at almost every turn, plus a natural sense of when enough detail is enough…
+     
+     </li><li>
+      Klara Glowczewska
+     <a href="https://www.amazon.com/Conde-Nast-Traveler-Unforgettable-Journeys/dp/0143121472/ref=sr_1_7?keywords=klara+glowczewska&amp;qid=1569679105&amp;s=books&amp;sr=1-7" title="⭐⭐⭐⭐⭐⭐">The Conde Nast Traveler Book of Unforgettable Journeys</a>
+     Poetry may be literature’s nirvana, but travel writing occupies a celestial sphere only fractionally inferior in sublimity. Anthologies of travel writing abound, most of them like a pirate’s chest filled to the brim with gems.
+     
+     </li><li>
+      Meg Mullins
+     <a href="https://www.amazon.com/Rug-Merchant-Meg-Mullins-ebook/dp/B000U913F2/ref=sr_1_2?keywords=Meg+Mullins&amp;qid=1569679280&amp;s=books&amp;sr=1-2" title="⭐⭐⭐⭐⭐⭐">
+      The Rug Merchant</a>
+      New York City teems with quiet desperation in this lucidly written but languid debut novel. The titular carpet salesman, Ushman Khan, has left his mother and his wife, Farak, in Iran in order to make a new start in America.
+     
+     </li><li>
+      Garrison Keillor
+     <a href="https://www.amazon.com/Good-Poems-Hard-Times-Various-ebook/dp/B001QWFYC0/ref=sr_1_5?keywords=Garrison+Keillor&amp;qid=1569679393&amp;s=books&amp;sr=1-5" title="⭐⭐⭐⭐⭐⭐">
+      Good Poems for Hard Times</a>
+      In any given week, probably more people hear him read poems than attend poetry readings and slams. That's good because his taste is excellent.
+     
+     </li><li> 
+      Arianne Cohen
+     <a href="https://www.amazon.com/Confessions-High-School-Word-Nerd/dp/0143038362/ref=sr_1_1?keywords=Arianne+Cohen&amp;qid=1569679553&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      Confessions of a High School Word Nerd</a>
+      Every year, 9 million American students expend large amounts of time and energy preparing for proficiency and entrance exams like the SAT, ACT, PSAT, and SSAT with a heap of vocabulary flash cards and a fat volume of repetitive practice tests. Each one of them
+     
+     </li><li>
+      Nancy Macdonell
+     <a href="https://www.amazon.com/Know-Classic-Guide-Being-Cultured-ebook/dp/B002TZ3EPW/ref=sr_1_4?keywords=Nancy+Macdonell&amp;qid=1569679688&amp;s=books&amp;sr=1-4" title="⭐⭐⭐⭐⭐⭐">In the Know</a>
+     There are still a few things money can’t buy. Love is one, cool is another. But while love can be left to fate, cool doesn’t need to be.
+     
+     </li><li>
+      Ira Glass
+     <a href="https://www.amazon.com/New-Kings-Nonfiction-Michael-Lewis/dp/1594482675/ref=sr_1_2?keywords=Ira+Glass&amp;qid=1569679828&amp;s=books&amp;sr=1-2" title="⭐⭐⭐⭐⭐⭐">The New Kings of Nonfiction</a>
+     We're living in an age of great nonfiction writing, says Glass, the host of the radio program This American Life, who picks out 14 of his favorite journalistic features from writers who are entertainers in the best sense of the word, unafraid to insert their personal perspective into the stories they're telling. The collection really is 
+     
+     </li><li>
+      Lesley Kagen
+     <a href="https://www.amazon.com/Whistling-Dark-Lesley-Kagen-ebook/dp/B001M0BUPG/ref=sr_1_1?keywords=Lesley+Kagen&amp;qid=1569680009&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">Whistling In the Dark</a>
+     The loss of innocence can be as dramatic as the loss of a parent or the discovery that what's perceived to be truth can actually be a big fat lie, as shown in Kagen's compassionate debut, a coming-of-age thriller set in Milwaukee during the summer of 1959.
+     <dt><ul><li><i>See also the 
+     <a href="https://www.facebook.com/notes/facebook-data-science/can-cascades-be-predicted/10152056491448859?stream_ref=10" title="⭐⭐⭐⭐⭐⭐">Facebook Data Science blog post</a> about this work.
+     </i></li></ul>
+     
+     <li>
+      Greg Mortenson
+     <a href="https://www.amazon.com/Three-Cups-Tea-Mission-Promote/dp/0143038257/ref=sr_1_1?keywords=Greg+Mortenson&amp;qid=1569680307&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      Three Cups of Tea</a>
+      The astonishing, uplifting story of a real-life Indiana Jones and his humanitarian campaign to use education to combat terrorism in the Taliban’s backyard
+     
+     </li><li>
+      Margaret Dilloway
+     <a href="https://www.amazon.com/How-American-Housewife-Margaret-Dilloway-ebook/dp/B003QMLCCE/ref=sr_1_6?keywords=Margaret+Dilloway&amp;qid=1569680439&amp;s=books&amp;sr=1-6" title="⭐⭐⭐⭐⭐⭐">
+      How to Be an American Housewife</a>
+      In this enchanting first novel, Dilloway mines her own family's history to produce the story of Japanese war bride Shoko, her American daughter, Sue, and their challenging relationship.
+     
+     </li><li>
+     Craig Johnson
+     <a href="https://www.amazon.com/Junkyard-Dogs-Longmire-Mystery-Mysteries-ebook/dp/B003NX7540/ref=sr_1_1?keywords=Junkyard+Dogs&amp;qid=1569680537&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      Junkyard Dogs</a>
+      After a severed thumb turns up at the dump outside of Durant, Wyoming, Sheriff Walt Longmire ignores the fact that someone has claimed it.
+     </li><li>
+      Maile Meloy
+     <a href="https://www.amazon.com/Both-Ways-Only-Way-Want-ebook/dp/B002IPZG0O/ref=sr_1_3?keywords=Maile+Meloy&amp;qid=1569680744&amp;s=books&amp;sr=1-3" title="⭐⭐⭐⭐⭐⭐">
+      Both Ways Is the Only Way I Want It</a>
+      I was taking a class from Ann Patchett then, and she said, about the number of stories in a collection, that Salinger's Nine was like eight hours sleep—a little more was okay, a little less was fine, but it was a good general guideline. About variety, she said that a collection was like a mall
+     
+     </li><li>
+      Cammie Mcgovern 
+     <a href="https://www.amazon.com/Neighborhood-Watch-Novel-Cammie-McGovern/dp/B007MXULS4/ref=sr_1_10?keywords=Cammie+Mcgovern&amp;qid=1569680874&amp;s=books&amp;sr=1-10" title="⭐⭐⭐⭐⭐⭐">Neighborhood Watch</a>
+     A murder, a sleep disorder, a DNA test, an alternative energy source, a childless couple, a neighborhood watch group, and a troubled teenager it seems unlikely that this motley combination of plot points could coalesce into a compelling story.
+     
+     </li><li>Sophie Hannah
+     <a href="https://www.amazon.com/Cradle-CRADLE-Hannah-Aug-30-11-Paperback/dp/B007SLL210/ref=sr_1_2?keywords=sophie+hannah+the+cradle+in+the+grave&amp;qid=1569681086&amp;s=books&amp;sr=1-2" title="⭐⭐⭐⭐⭐⭐">
+      The Cradle in the Grave</a>
+      The author has certainly chosen to work with a lot of ingredients here, and yet the subtlety with which she does so makes for a hearty literary meal-one in which each part feels as if it's essential.
+     
+     </li><li>
+      Kaniel J. Levitin
+     <a href="https://www.amazon.com/This-Your-Brain-Music-Obsession/dp/0452288525/ref=sr_1_1?keywords=Kaniel+J.+Levitin&amp;qid=1569681282&amp;s=books&amp;sr=1-1-spell" title="⭐⭐⭐⭐⭐⭐">
+      This Is Your Brain on Music</a>
+      Levitin is a deft and patient explainer of the basics for the non-scientist as well as the non-musician....By tracing music's deep ties to memory, Levitin helps quantify some of music's magic without breaking its spell.
+     
+     </li><li>
+      Carol Wolper
+     <a href="https://www.amazon.com/Secret-Celebrity-Carol-Wolper/dp/1573222143/ref=sr_1_10?keywords=Carol+Wolper&amp;qid=1569681388&amp;s=books&amp;sr=1-10" title="⭐⭐⭐⭐⭐⭐">
+      Secret Celebrity</a>
+      Although not technically a sequel to Cigarette Girl, Wolper's second novel reads like part two of her treatise on the cult of celebrity. Struggling filmmaker Christine Chase is the protagonist, rather than Cigarette's screenwriter, Elizabeth West
+
+     
+     </li><li>lynne Truss
+     <a href="https://www.amazon.com/Eats-Shoots-Leaves-Tolerance-Punctuation/dp/1592402038/ref=sr_1_1?crid=3IEJH0XH4A06S&amp;keywords=lynne+truss&amp;qid=1569725925&amp;sprefix=Lynne+Truss%2Caps%2C336&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
+      Eats, Shoots &amp; Leaves</a>
+      Witty, smart, passionate.”—Los Angeles Times Book Review, Best Books Of 2004: Nonfiction “This book changed my life in small, perfect ways like learning how to make better coffee or fold an omelet. It’s the perfect gift for anyone who cares about grammar and a gentle introduction for those who don’t care enough.”—The Boston Sunday Globe 
+     
+     </li><li>
+      Anu Garg
+     <a href="https://www.amazon.com/Dord-Diglot-Avocado-Two-Not-So-Common-ebook/dp/B000XPRS5M/ref=sr_1_5?crid=32NJVZ6DJ7ZZZ&amp;keywords=anu+garg&amp;qid=1569726026&amp;sprefix=Anu+Garg%2Caps%2C313&amp;sr=8-5" title="⭐⭐⭐⭐⭐⭐">The Dord, the Diglot, and an Avocado or Two</a> 
+     Garg, logophilic founder of wordsmith.org and the 600,000-subscriber A.Word.A.Day email newsletter, jam-packs his latest good-natured, reader-friendly book (after Another Word A Day) with terms exotic and domestic, lessons in etymology and surprising tricks of the linguist trade, such as the fact that "as a copyright trap...
+     
+     </li><li>
+      Spencer Johnson, M.D.
+     <a href="https://www.amazon.com/Spencer-Johnson-Moved-Cheese-%E3%80%902018%E3%80%91/dp/B07HCCDS3M/ref=sr_1_5?crid=6VGVQVGJJVKG&amp;keywords=who+moved+my+cheese&amp;qid=1569726236&amp;sprefix=who+moved%2Caps%2C321&amp;sr=8-5" title="⭐⭐⭐⭐⭐⭐">Who Moved My Cheese?</a>
+     The long-awaited sequel to Who Moved My Cheese?, the beloved 28-million-copy bestseller that became a worldwide sensation.
+     
+     
+     </li><li>
+      Meg Mullins
+     <a href="https://www.amazon.com/Dear-Strangers-Novel-Meg-Mullins-ebook/dp/B0030CVQ12/ref=sr_1_4?keywords=Meg+Mullins&amp;qid=1569726421&amp;sr=8-4" title="⭐⭐⭐⭐⭐⭐">Dear Strangers</a>
+     Oliver is only seven when his father announces the family will adopt a baby boy. But when Oliver’s father suddenly dies, his mother finds she can no longer keep the baby and gives him away.
+     
+     
+     
+     
+     </li><li>
+      T.C. Boyle
+     <a href="https://www.amazon.com/Talk/dp/B000GTLPTA/ref=sr_1_1?keywords=T.C.+Boyle+talk+talk&amp;qid=1569726803&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">Talk Talk</a>There's more than one way to take a life...The first time he saw Dana she was dancing barefoot, her hair aflame in the red glow of the club, her body throbbing with rhythms and cross-rhythms that only she could hear.
+     <dt> <ul> <li><i>
+         We are interested in gathering additional data about the spread
+         of the chain-letter petitions described in this paper.  
+         Please visit
+         <a href="http://petitions.cs.cornell.edu">
+         http://petitions.cs.cornell.edu</a>
+         or
+         <a href="http://petitions.cs.carleton.edu">
+         http://petitions.cs.carleton.edu</a>
+         to learn more or to help.  </i>
+        </li> </ul>
+     
+     <li>
+      Katherine Valentine
+     <a href="https://www.amazon.com/Miracle-St-Cecilias-Katherine-Valentine/dp/0142003050/ref=sr_1_1?keywords=Katherine+Valentine&amp;qid=1569726990&amp;s=audible&amp;sr=1-1-catcorr" title="⭐⭐⭐⭐⭐⭐">A Miracle for St. Cecilia's </a>
+     The charming New England town of Dorsetville and its cast of wry, tough inhabitants struggle to stay afloat after the wool mill closes as they gather at the town church of St. Cecilia
+     
+     </li><li>
+      David Guterson
+     <a href="https://www.amazon.com/Snow-Falling-on-Cedars/dp/B075NPVZRT/ref=sr_1_4?keywords=David+Guterson&amp;qid=1569730567&amp;sr=8-4" title="⭐⭐⭐⭐⭐⭐">Snow Falling on Cedars</a>
+     The whiteness covers the courthouse, but it cannot conceal the memories at work inside: the internment of
+     
+     </li><li>
+      Elizabeth Lowell
+     <a href="https://www.amazon.com/Remember-Summer-Elizabeth-Lowell-ebook/dp/B000FC13IG/ref=sr_1_1?keywords=elizabeth+lowell+remember+summer&amp;qid=1569730726&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">Remember Summer</a>
+     The most grueling challenge of Raine Smith's equestrian career looms before her—the Olympic Games.
+     
+     </li><li>
+      Larry Mcmurtry
+     <a href="https://www.amazon.com/evening-star-novel-Larry-McMurtry/dp/B002B6L5FU/ref=sr_1_2?keywords=Larry+Mcmurtry+evening+star&amp;qid=1569730927&amp;sr=8-2" title="⭐⭐⭐⭐⭐⭐">The evening star</a>
+     Here old age and death catch up with some beloved McMurtry characters familiar to readers since Terms of Endearment . Willful, tart-tongued Aurora Greenway and her outspoken maid and confidante, Rose Dunlup, sp ok? yes are in their 70s when this book begins; Aurora's lover, Gen.
+     
+     </li><li>
+      Dean Koontz 
+     <a href="https://www.amazon.com/Vision-Dean-Koontz-ebook/dp/B001HYOD5G/ref=sr_1_1?keywords=Dean+Koontz+the+vision&amp;qid=1569731170&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
+      The Vision</a>
+      In every industry there exist ‘artists’ that are not only unforgettable, but know their craft better than the rest. Dean Koontz...is among these artisans.
+     
+     </li><li>
+      John Grisham
+     <a href="https://www.amazon.com/Testament-Novel-John-Grisham-ebook/dp/B003B02O7I/ref=sr_1_9?keywords=John+Grisham&amp;qid=1569731332&amp;sr=8-9" title="⭐⭐⭐⭐⭐⭐">
+      The Testament
+     </a>
+     Back in the States, the legal proceedings drag on and Grisham has a high time with Phelan's money-hungry descendents, a regrettable bunch who squandered millions, married strippers, got druggy, and befriended the Mob. The youngest son, Ramble, is a multi-pierced, tattoo-covered malcontent with big dreams for his rock band, the Demon Monkeys.
+     
+     </li><li>
+     Stephen King
+     <a href="https://www.amazon.com/The-Regulators/dp/B01AVGFZ5M/ref=sr_1_3?keywords=Richard+Bachman&amp;qid=1569731623&amp;sr=8-3" title="⭐⭐⭐⭐⭐⭐">
+      The Regulators</a>
+      The battle against evil has begun in this "devishly entertaining" (Publishers Weekly) story of a suburban neighborhood in the grip of surreal terror - a number-one national best seller from Stephen King writing as Richard Bachman. 
+     
+     </li><li>
+      Dean Koontz
+     <a href="https://www.amazon.com/The-Key-to-Midnight/dp/B002ZOVVW0/ref=sr_1_1?keywords=Dean+Koontz+the+key+to+midnight&amp;qid=1569731849&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
+      The Key to Midnight</a>
+      At night she's plagued by the dream of a man with a needle and feelings of being violated. She meets fellow American Alex Hunter, who helps Joanna awaken to the fact that she's not who she thinks she is.
+     
+     </li><li>
+      Faye Kellerman
+     <a href="https://www.amazon.com/Stalker-Decker-Lazarus-Novel-Peter-ebook/dp/B000W917TM/ref=sr_1_1?keywords=Faye+Kellerman+stalker&amp;qid=1569732013&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
+      Stalker</a>
+      LAPD detective Peter Decker, promoted to lieutenant after his heroics in Jupiter's Bones (1999), is overloaded with troubles in this outstanding, suspense-packed mystery, the 12th in Kellerman's acclaimed series. As usual, a challenging case distracts Decker from his family, but this time there is one difference.
+     
+     
+     
+     </li></dt></li></dt></li></ul>
 
      <ul>
           
