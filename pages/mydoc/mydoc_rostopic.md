@@ -7,6 +7,8 @@ summary: "summary."
 sidebar: mydoc_sidebar
 permalink: mydoc_rostopic.html
 folder: mydoc
+series: "ACME series"
+weight: 1
 ---
 
 ## Rqt development [_mydrone wiki](https://github.com/aiegoo/_mydrone/wiki/OGC-RQt) 
@@ -466,3 +468,5 @@ On the ground control station, the message is decoded using the same dictionary 
 [qt5_python](../../pdf/qt5_python/qt5_python.pdf)
 
 [qt5_c++](../../pdf/qt5_c++/qt5_cplus.pdf)
+
+{% include custom/series_acme_next.html %}

@@ -7,6 +7,8 @@ summary: "summary."
 sidebar: mydoc_sidebar
 permalink: mydoc_challenger-project.html
 folder: mydoc
+series: "ACME series"
+weight: 2
 ---
 
 # Challenger Engineering Project
@@ -376,4 +378,5 @@ Schooling pages:
 {{page.title}}
 {% endif %} {% endfor %} {% endfor %}
 
+{% include custom/series_acme_next.html %}
 {% include links.html %}
