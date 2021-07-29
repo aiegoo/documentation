@@ -148,3 +148,4 @@ follows:
  
 > 5000mAh with discharging rate of 10C would be ` I = 5.0 x 10 = 50A`
 
+{% include custom/series_acme_next.html %}
