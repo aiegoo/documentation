@@ -445,6 +445,288 @@ folder: mydoc
      
      </li></dt></li></dt></li></ul>
 
+     <p>Incentives and game theoretic analysis</p>
+     <ul>
+     
+     <li>
+      David Baldacci
+     <a href="https://www.amazon.com/Simple-Truth-David-Baldacci-ebook/dp/B000SEFOKO/ref=sr_1_1?keywords=the+simple+truth&amp;qid=1569847457&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐"> 
+      The Simple Truth</a>
+      The complex drama of Rufus Harms is only one of the interwoven threads in this massive, violent legal thriller that also draws from the vocabulary of hard-boiled crime fiction. Baldacci offers glimpses into the arcane politics of the high court, where Justice Elizabeth Knight wages war with the manipulative Chief Justice Harold Ramsay.
+     
+     </li><li>
+      J. K. Rowling
+     <a href="https://www.amazon.com/Harry-Potter-Paperback-Box-Books/dp/0545162076/ref=sr_1_1?keywords=harry+potter&amp;qid=1569847535&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      Harry Potter</a>
+      The Harry Potter series has been hailed as “one for the ages” by Stephen King and “a spellbinding saga’ by USA Today. And most recently, The New York Times called Harry Potter and the Deathly Hallows the “fastest selling book in history.”
+     
+     </li><li>
+     Jack Welch
+     <a href="https://www.amazon.com/Jack-Straight-from-the-Gut/dp/B00005NZJG/ref=sr_1_2?keywords=jack+welch&amp;qid=1569847718&amp;s=books&amp;sr=1-2" title="⭐⭐⭐⭐⭐⭐">
+      Jack</a>
+      As CEO of General Electric for the past 20 years, Jack Welch has built its market cap by more than $450 billion and established himself as the most admired business leader in the world.
+     
+     </li><li>
+      Dirk Zeller
+     <a href="https://www.amazon.com/Successful-Time-Management-Dummies-Zeller/dp/1118982665/ref=sr_1_1?crid=1R8Z3AI3DH2LW&amp;keywords=successful+time+management&amp;qid=1569847959&amp;s=books&amp;sprefix=successful+time%2Caudible%2C328&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">Successful Time Management</a>.  
+     Feel like there's never enough time to get things done? This friendly guide can help change your work day — and your life. Filled with practical tips on managing distractions, fighting procrastination, and optimizing your workspace, it offers you a tried-and-true roadmap for taking back precious hours to make the most of every minute of every day. 
+     
+     </li><li> 
+      John Marks
+     <a href="https://www.amazon.com/Wall-John-Marks/dp/0792722779" title="⭐⭐⭐⭐⭐⭐">
+      The Wall</a>
+      Once, years ago in Belgrade, I met a beautiful blonde Serbian nationalist named Simonida, and we got to talking vampires. I knew from my own research that the vampire of American popular culture had its roots in Serbian folklore, and she offered to do more than confirm the truth. 
+     
+     </li><li>
+      Nick Hornby
+     <a href="https://www.amazon.com/Hornby-Nick-Author-Good-Available/dp/B01GF0U44A/ref=sr_1_3?crid=UNUOITDX62EP&amp;keywords=nick+hornby+how+to+be+good&amp;qid=1569848590&amp;sprefix=nick+hornby+how%2Cstripbooks-intl-ship%2C348&amp;sr=8-3" title="⭐⭐⭐⭐⭐⭐">How to Be Good</a>
+     Nick Hornby is the author of the novels A Long Way Down, How to Be Good (a New York Times bestseller), High Fidelity, and About a Boy, and of the memoir Fever Pitch. 
+     
+     </li><li> 
+     Matt Beaumont
+     <a href="https://www.amazon.com/Novel-Matt-Beaumont/dp/0452281881/ref=sr_1_1?keywords=matt+beaumont&amp;qid=1569848729&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
+      E</a>
+      Lightbulb jokes, office snafus and scatological humor are ostensibly the stuff of comedy in this debut epistolary novel constituted solely of e-mails. It's the dawn of the new millennium and the London advertising firm of Miller Shanks is about to embark on two weeks of intensive effort with the goal of winning the most impressive jewel in the industry's crown:
+     
+     </li><li>
+      Brian McDonald
+     <a href="https://www.amazon.com/My-Fathers-Gun-Family-Hundred/dp/052594396X/ref=sr_1_2?keywords=my+father%27s+gun&amp;qid=1569848902&amp;sr=8-2" title="⭐⭐⭐⭐⭐⭐">My Father's Gun</a>
+     An intriguing memoir of a family of Irish-American cops in New York City traces the lives and careers of three generations of NYPD officers,
+     
+     </li><li> 
+      William Sutcliffe
+     <a href="https://www.amazon.com/Love-Hexagon-William-Sutcliffe/dp/0140296093/ref=sr_1_8?keywords=the+love+hexagon&amp;qid=1569849058&amp;s=books&amp;sr=1-8" title="⭐⭐⭐⭐⭐⭐">The Love Hexagon</a>
+     A group of six young Londoners--three men and three women--embark on a series of sexual adventures, misadventures, triumphs, and failures with one another, until these casual indiscretions begin to have profound and irreversible consequences for them all. Original.
+     
+     </li><li>de Botton, Alain
+     <a href="https://www.amazon.com/Love-Novel-Alain-Botton/dp/0802142400/ref=sr_1_1?keywords=on+love&amp;qid=1569849161&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      On Love</a>
+      Imagine, of all impossible things, a young British Woody Allen with the benefit of a classical education and you have the nameless and exquisitely erudite narrator of On Love, a first novel by Alain de Botton, who seems to have been born to write.
+     
+     
+     </li><li>
+      Richard Carlson
+     <a href="https://www.amazon.com/Dont-Sweat-Small-Stuff-Its/dp/0786881852/ref=sr_1_1?crid=1NC6RFJN9Z3KB&amp;keywords=don%27t+sweat+the+small+stuff+.+.+.+and+it%27s+all+small+stuff&amp;qid=1569849298&amp;s=books&amp;sprefix=don%27t%2Cstripbooks-intl-ship%2C335&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      Don't Sweat the Small Stuff . . . and It's All Small Stuff</a>
+      Got a stress case in your life? Of course you do: "Without question, many of us have mastered the neurotic art of spending much of our lives worrying about a variety of things all at once.
+     
+     </li><li>
+      Joan Anderson
+     <a href="https://www.amazon.com/Year-Sea-Thoughts-Unfinished-Woman/dp/0767905938/ref=sr_1_1?keywords=a+year+by+the+sea&amp;qid=1569849417&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      A Year By The Sea</a>
+      The basis for the major motion picture of the same name. An entrancing memoir of how one woman's journey of self-discovery gave her the courage to persevere in re-creating her life.
+     
+     </li><li>
+      Tim Green
+     <a href="https://www.amazon.com/Kingdom-Come-Tim-Green-ebook/dp/B000GCFC9Q/ref=sr_1_1?keywords=kingdom+come+tim+green&amp;qid=1569849582&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">Kingdom Come</a>
+     Bob King is a self-made billionaire who parlayed a rusty backhoe into the 27th spot on Forbes list. Now, his corporation is a multi-billion dollar construction company that instills greed and competition among friends, including his son Scott and his two best friends, Thane and Ben.
+     
+     </li><li> Steve Berry, 
+      <a href="https://www.amazon.com/Amber-Room-Novel-Suspense-ebook/dp/B000FBJAMI/ref=sr_1_1?keywords=the+amber+room&amp;qid=1569849729&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">The Amber Room</a>
+      First-time novelist Berry weighs in with a hefty thriller that's long on interesting research but short on thrills. Atlanta judge Rachel Cutler and ex-husband Paul are divorced but still care for each other. Rachel's father, Karol Borya, knows secrets about the famed Amber Room, a massive set of intricately carved panels crafted from the precious substance and looted by Nazis during WWII from Russia's Catherine Palace.
+          
+     </li></ul>
+
+     <p>Opinion, evaluation and polorization</p>
+     <ul>
+     
+     <li> Dean Koontz, Stephen Lang, et al.
+      
+     <a href="https://www.amazon.com/Light-Moon/dp/B000NA6MJA/ref=sr_1_3?keywords=by+the+light+of+the+moon&amp;qid=1569849860&amp;s=books&amp;sr=1-3" title="⭐⭐⭐⭐⭐⭐">
+     
+By the Light of the Moon: A Novel
+
+</a>
+Dean Koontz has surpassed his longtime reputation as “America’s most popular suspense novelist”(Rolling Stone) to become one of the most celebrated and successful writers of our time. 
+     
+     </li><li>
+    
+Stephen L. Carter, Richard Allen, et al.
+
+     <a href="https://www.amazon.com/The-Emperor-of-Ocean-Park/dp/B00023O10A/ref=sr_1_1?keywords=the+emperor+of+the+ocean+park&amp;qid=1569849992&amp;s=audible&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">The Emperor of Ocean Park
+    </a>
+    Set in the era of the Nixon and Reagan presidencies, this novel examines the American conscience while inviting us into the glittering world of the East Coast legal community. Stephen L. Carter's book follows black Ivy League law professor Talcott Garland as he investigates the death of his father, Judge Oliver.
+     
+     </li><li>
+      Lenore Hart.
+     <a href="https://www.amazon.com/Waterwoman-Novel-Eastern-Lenore-Hart-dp-1937997596/dp/1937997596/ref=mt_paperback?_encoding=UTF8&amp;me=&amp;qid=" title="⭐⭐⭐⭐⭐⭐">
+      Waterwoman: A Novel of the Eastern Shore</a>
+      Even as a child, plain, boyish Annie Revels had everyone's role in life figured out. Everyone's, that is, except her own. Her mother was sickly and needed to be taken care of. Her little sister Rebecca was remarkably beautiful, where Annie was not. Her father was a waterman, a free-looking life Annie deeply envied and could've had, if only she'd been born a son.
+     
+     </li><li>
+      Leif Enger 
+     <a href="https://www.amazon.com/Peace-Like-River-Leif-Enger/dp/0802139256/ref=sr_1_1?keywords=peace+like+a+river&amp;qid=1569850389&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">Peace Like a River: A Novel</a>.
+     For me to really like a book, it's got to feel real: dialogue needs to sound authentic, characters need to well developed &amp; a mix of good &amp; bad, as real people are. Likewise, I don't want the ending to be predictable, nor all happy or all tragic. I also prefer fairly clean language &amp; no graphic sex scenes. (Not because I think those have no place in literature, but just for my own mental health.)
+     
+     </li><li>
+     Sarah Willis .
+     <a href="https://www.amazon.com/Peace-Like-River-Leif-Enger/dp/0802139256/ref=sr_1_1?keywords=peace+like+a+river&amp;qid=1569850389&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">The Sound of Us </a>
+     Content with her life alone, except for a cat named Sampson, Alice Marlowe, a woman in her late forties, makes her living as a sign-language interpreter for the deaf, until a beautiful, terrified, six-year-old girl comes into her life and forces her to rediscover the language of love. By the author of Some Things That Stay.
+     
+     </li><li>I. J. Parker
+
+     <a href="https://www.amazon.com/Island-Exiles-Akitada-Mysteries-Book-ebook/dp/B000UZJPYM/ref=sr_1_1?crid=3VB0TOJB0DY0S&amp;keywords=island+of+exiles&amp;qid=1569850672&amp;s=books&amp;sprefix=island+of+exil%2Cstripbooks-intl-ship%2C351&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+     
+      Island of Exiles (Akitada Mysteries Book 4)
+      </a>
+      I.J. Parker was born and educated in Europe and turned to mystery writing after an academic career in the U.S. She has published in Alfred Hitchcock's Mystery Magazine, winning the short story Shamus award in 2000. The Akitada series, about an eleventh century Japanese nobleman/detective, now consists of fourteen titles plus a short story collection. The books are available in print, audio format, and on Kindle and are translated into twelve languages..
+     
+     </li><li>
+      Sarah Waters
+     <a href="https://www.amazon.com/Little-Stranger-Sarah-Waters/dp/1594484465/ref=sr_1_1?keywords=the+little+stranger&amp;qid=1569850789&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">Predicting Positive and Negative Links in Online Social Networks.</a>
+     Blurbed by the likes of Stephen King for its exceptional creepiness, "The Little Stranger" will disappoint those who are looking for a page turner in the mold of the American master of Gothic horror. Yes, the novel has all the trappings of a standard haunted house thriller: a once-grand, remotely situated mansion; owners reduced to shabby gentility; things that inexplicably go bump in the night; violent disfigurements and mysterious deaths. But all this is only scaffolding for a meticulously thoughtful.
+     
+     </li><li>
+      Kate Furnivall  
+     <a href="https://www.amazon.com/Russian-Concubine-Novel-ebook/dp/B000V4SXS6/ref=sr_1_1?crid=3F9TMEIGVZXNA&amp;keywords=the+russian+concubine&amp;qid=1569850882&amp;sprefix=the+russian+con%2Caps%2C331&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">The Russian Concubine (A Russian Concubine Novel).</a>
+     The experiences of the author's mother inspired this debut novel, a somewhat improbable tale of star-crossed love in 1928 China. Valentina Ivanova and her 16-year-old daughter, Lydia, White Russian refugees, live in grinding poverty in the International Settlement of Junchow, subsisting off whatever presents Valentina can charm from gentlemen admirers and the profits Lydia makes from pawning stolen goods. When Lydia inadvertently attracts the unwelcome attentions of a criminal gang, the Black Snakes, she finds a rescuer in Chang An Lo, an English-speaking Communist and kung fu master. Danger is never far as the two fall in love. Lydia's travails are mirrored by those of Theo Willoughby, the British headmaster of her school.
+     
+     </li><li> Jeffery Deaver 
+     <a href="https://www.amazon.com/Empty-Chair-Novel-Lincoln-Rhyme-ebook/dp/B000FC0NVY/ref=sr_1_3?keywords=the+empty+chair&amp;qid=1569893344&amp;s=books&amp;sr=1-3" title="⭐⭐⭐⭐⭐⭐">
+      The Empty Chair</a>
+      Lincoln Rhyme, the gruff quadriplegic detective and forensic expert of Bone Collector fame, strays far from his Manhattan base to a spooky North Carolina backwater in this engrossing and outlandish tale about the hunt for evil. The hick town is called Tanner's Corner, where Rhyme--in North Carolina for experimental surgery--
+     
+     
+     </li></ul>
+
+     <p>Temporal analysis and burst phenomena</p>
+     <ul>
+     
+     <li> 
+     Lisa Wingate
+     <a href="https://www.amazon.com/Good-Hope-Road-Tending-Roses/dp/B07H37YJ63/ref=sr_1_1?keywords=good+hope+road&amp;qid=1569893458&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      Good Hope Road</a>
+      Twenty-one-year-old Jenilee Lane's dreams are as narrow as the sky is wide. She doesn't imagine any good could come out of the tornado that has ripped across the Missouri farmland where she's made her home. But some inner spark compels her to take action.
+     
+     </li><li>
+      Giles Milton
+     <a href="https://www.amazon.com/Samurai-William-Adventurer-Unlocked-Japan/dp/0340794682/ref=sr_1_1?keywords=samurai+william&amp;qid=1569893648&amp;s=audible&amp;sr=1-1-catcorr" title="⭐⭐⭐⭐⭐⭐">Meme-tracking and the
+      Samurai William</a>
+      The traders were even more amazed to learn that, rather than be horrified by this strange country, Adams had fallen in love with the barbaric splendour of Japan - and decided to settle.
+     
+     </li><li>
+      David Crystal
+     <a href="https://www.amazon.com/English-Language-Guided-Tour-ebook/dp/B002TJLEQE/ref=sr_1_13?keywords=the+english+language&amp;qid=1569893735&amp;sr=8-13" title="⭐⭐⭐⭐⭐⭐">The English Language</a>
+     This is the definitive survey of the English language - in all its forms. Crystal writes accessibly about the structure of the language, the uses of English throughout the world and finally he gives a brief history of English.
+     
+     </li><li> Sebastian Barry
+     <a href="https://www.amazon.com/Annie-Dunne-Sebastian-Barry-ebook/dp/B0031TZ8NQ/ref=sr_1_1?keywords=annie+dunne&amp;qid=1569893853&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">Annie Dunne</a>
+     It is 1959 in Wicklow, Ireland, and Annie and her cousin Sarah are living and working together to keep Sarah's small farm running. Suddenly, Annie's young niece and nephew are left in their care.
+     
+     </li><li> Edna O'brien
+     <a href="https://www.amazon.com/Girls-Their-Married-Bliss-OBRIEN/dp/B002F6QEPM/ref=sr_1_4?keywords=girls+in+their+married+bliss&amp;qid=1569893971&amp;sr=8-4" title="⭐⭐⭐⭐⭐⭐">
+      Girls in Their Married Bliss</a>
+      Kate and Baba are in London, playing out the tragicomedy of their married lives to its surprisingly level-headed conclusion. 
+     
+     
+     </li><li> Jennifer Lawler
+     <a href="https://www.amazon.com/Dojo-Wisdom-Compass-Jennifer-Lawler/dp/0142196223/ref=sr_1_1?keywords=dojo+wisdom&amp;qid=1569894138&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">Dojo Wisdom</a>
+     A martial arts expert draws on the principles and practices of her training to present a series of one hundred life lessons to help readers find their inner warriors, accompanied by brief exercises that demonstrate how to apply the teachings to everyday life
+     <dt><ul><li><i>See also some <a href="kdd02.html">sample results</a>
+     from the burst detection algorithm described in this paper.</i></li></ul>
+     
+     
+     </dt></li></ul>
+
+     <p>Representations for learning</p>
+     <ul>
+     
+     <li> 
+     Lisa Wingate
+     <a href="https://www.amazon.com/Good-Hope-Road-Tending-Roses/dp/B07H37YJ63/ref=sr_1_1?keywords=good+hope+road&amp;qid=1569893458&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      Good Hope Road</a>
+      Twenty-one-year-old Jenilee Lane's dreams are as narrow as the sky is wide. She doesn't imagine any good could come out of the tornado that has ripped across the Missouri farmland where she's made her home. But some inner spark compels her to take action.
+     
+     </li><li>
+      Giles Milton
+     <a href="https://www.amazon.com/Samurai-William-Adventurer-Unlocked-Japan/dp/0340794682/ref=sr_1_1?keywords=samurai+william&amp;qid=1569893648&amp;s=audible&amp;sr=1-1-catcorr" title="⭐⭐⭐⭐⭐⭐">Meme-tracking and the
+      Samurai William</a>
+      The traders were even more amazed to learn that, rather than be horrified by this strange country, Adams had fallen in love with the barbaric splendour of Japan - and decided to settle.
+     
+     </li><li>
+      David Crystal
+     <a href="https://www.amazon.com/English-Language-Guided-Tour-ebook/dp/B002TJLEQE/ref=sr_1_13?keywords=the+english+language&amp;qid=1569893735&amp;sr=8-13" title="⭐⭐⭐⭐⭐⭐">The English Language</a>
+     This is the definitive survey of the English language - in all its forms. Crystal writes accessibly about the structure of the language, the uses of English throughout the world and finally he gives a brief history of English.
+     
+     </li><li> Sebastian Barry
+     <a href="https://www.amazon.com/Annie-Dunne-Sebastian-Barry-ebook/dp/B0031TZ8NQ/ref=sr_1_1?keywords=annie+dunne&amp;qid=1569893853&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">Annie Dunne</a>
+     It is 1959 in Wicklow, Ireland, and Annie and her cousin Sarah are living and working together to keep Sarah's small farm running. Suddenly, Annie's young niece and nephew are left in their care.
+     
+     </li><li> Edna O'brien
+     <a href="https://www.amazon.com/Girls-Their-Married-Bliss-OBRIEN/dp/B002F6QEPM/ref=sr_1_4?keywords=girls+in+their+married+bliss&amp;qid=1569893971&amp;sr=8-4" title="⭐⭐⭐⭐⭐⭐">
+      Girls in Their Married Bliss</a>
+      Kate and Baba are in London, playing out the tragicomedy of their married lives to its surprisingly level-headed conclusion. 
+     
+     
+     </li><li> Jennifer Lawler
+     <a href="https://www.amazon.com/Dojo-Wisdom-Compass-Jennifer-Lawler/dp/0142196223/ref=sr_1_1?keywords=dojo+wisdom&amp;qid=1569894138&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">Dojo Wisdom</a>
+     A martial arts expert draws on the principles and practices of her training to present a series of one hundred life lessons to help readers find their inner warriors, accompanied by brief exercises that demonstrate how to apply the teachings to everyday life
+     <dt><ul><li><i>See also some <a href="kdd02.html">sample results</a>
+     from the burst detection algorithm described in this paper.</i></li></ul>
+     
+     
+     </dt></li></ul>
+
+     <p>Language, text content and social interactions</p>
+     <ul>
+     
+     <li>
+     Mia Yun
+     <a href="https://www.amazon.com/House-Winds-Emerging-Voices-Hardcover/dp/1566563054/ref=sr_1_1?keywords=house+of+the+winds+mia+yun&amp;qid=1569894498&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      House of the Winds</a>
+      1960s Korea. A girl stands in the middle of a sunny patch with her mother. The air is full of butterflies (the souls of little children in afternoon naps) and secrets (although they were not secrets at the time)
+     
+     </li><li>
+     Larry Millett
+     <a href="https://www.amazon.com/Sherlock-Holmes-Red-Demon-Minnesota/dp/B01GW6116C/ref=sr_1_13?keywords=larry+millett&amp;qid=1569894578&amp;s=books&amp;sr=1-13" title="⭐⭐⭐⭐⭐⭐">
+      Sherlock Holmes and the Red Demon</a>
+      In the summer of 1994, a workman at the historic mansion of railroad baron James J. Hill in St. Paul, Minnesota, stumbles on a long-hidden wall safe.
+     
+     </li></ul>
+
+     <p>Team formation and dynamics</p>
+     <ul>
+     
+     <li>
+      William Dalrymple
+     <a href="https://www.amazon.com/City-Djinns-Delhi-William-Dalrymple-ebook/dp/B004WC07VE/ref=sr_1_1?keywords=city+of+djinns&amp;qid=1569894700&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      City of Djinns</a>
+      He pursues Delhi’s interlacing layers of history along narrow alleys and broad boulevards, brilliantly conveying its intoxicating mix of mysticism and mayhem.
+     
+     
+     </li><li> 
+      Jennifer Belle
+     <a href="https://www.amazon.com/High-Maintenance-Jennifer-Belle/dp/1573221856/ref=sr_1_1?keywords=high+maintenance+jennifer+belle&amp;qid=1569894818&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      High Maintenance</a>
+      Real estate is everything in Manhattan. When, at 26, Liv Kellerman separates from her cheating husband, she has no skills, education, or more importantly, she no longer has the fabulous penthouse apartment with a view of the Empire State Building. In desperation, she takes a rundown place in Greenwich Village that spews brown water and has a shower usable only with a pair of pliers
+     
+     </li></ul>
+
+     <p>Algorythms and models for online education</p>
+     <ul>
+     
+     <li>
+      Carol Wolper
+     <a href="https://www.amazon.com/Cigarette-Girl-Carol-Wolper-ebook/dp/B005UDIBEY/ref=sr_1_5?keywords=the+cigarette+girl&amp;qid=1569894997&amp;s=books&amp;sr=1-5" title="⭐⭐⭐⭐⭐⭐">Cigarette Girl</a>
+     Screenwriter Elizabeth West is 28 and convinced her life is over. She is in "the zone," and all she wants to do is "resolve the marriage and baby issues," as she so romantically puts it. Elizabeth has abandoned the search for Mr. Right and is now looking for Mr. Maybe. She decides this is not her current boyfriend
+     
+     </li><li>
+      Sharon Wyse
+     <a href="https://www.amazon.com/Box-Children-Sharon-Wyse/dp/1573222194/ref=sr_1_1?keywords=the+box+children+sharon+wyse&amp;qid=1569895169&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      The Box Children</a>
+      Finding her only friends in five tiny dolls she has named for her miscarried siblings, twelve-year-old Lou Ann witnesses her once-again-pregnant mother's grasp on reality slipping away and must rely on her own wit and courage to make sense of adolescence.
+     
+     </li><li>
+     Nora Roberts
+     <a href="https://www.amazon.com/Dance-Gods-Circle-Trilogy-Book/dp/B001AZT942/ref=sr_1_1?keywords=dance+of+the+gods&amp;qid=1569895242&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
+      Dance of the Gods</a>
+      Raised in a family of demon hunters, Blair Murphy has her own personal demons to fight: the father who trained, then abandoned her, and the fiancé who walked out on her after learning what she is. 
+     
+     
+     </li></ul>
+
+
+
      <ul>
           
           <li>
