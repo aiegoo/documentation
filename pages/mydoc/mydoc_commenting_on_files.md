@@ -1,12 +1,13 @@
 ---
 title: Commenting on files
-tags:
-  - navigation
+tags:  [drone, getting_started, setup]
 keywords: "annotations, comments, feedback"
-last_updated: "November 30, 2016"
+last_updated: "July 29, 2021"
 summary: "You can add a button to your pages that allows people to add comments."
 sidebar: mydoc_sidebar
 permalink: mydoc_commenting_on_files.html
+series: "ACME series"
+weight: 3
 folder: mydoc
 ---
 
@@ -1149,5 +1150,7 @@ Note that if you're making updates online, those updates will be out of sync wit
 ## Prose.io
 
  Prose.io is an overlay on Github that would allow people to make comments in an easier interface. If you simply go to [prose.io](http://prose.io), it asks to authorize your Github account, and so it will read files directly from Github but in the Prose.io interface.
+ 
+{% include custom/series_acme_next.html %}
 
  {% include links.html %}
