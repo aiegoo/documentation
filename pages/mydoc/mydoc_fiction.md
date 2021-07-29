@@ -56,7 +56,5 @@ folder: mydoc
      </ul>
      
      </ul>
-     
-     <hr>
 </div>
 </div>
