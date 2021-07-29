@@ -1,12 +1,14 @@
 ---
 title: 🔭raspberry pi project
-tags: [drone, job, resume ]
+tags: [drone, collaboration, git, getting_started]
 last_updated: July 22, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "summary."
 sidebar: mydoc_sidebar
 permalink: tag_raspi.html
 datatable: true
+series: "ACME series"
+weight: 4
 folder: mydoc
 ---
 
