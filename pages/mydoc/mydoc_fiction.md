@@ -19,15 +19,15 @@ folder: mydoc
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="profile">
     <h2>Fictions</h2>
-<p>Praesent sit amet fermentum leo....</p>
+<p>I read thousands of novels since my hi-teen years.</p>
 </div>
 
 <div role="tabpanel" class="tab-pane" id="about">
     <h2>Coursebooks</h2>
-    <p>Lorem ipsum ...</p></div>
+    <p>I counted 18 books for the first year and I thought it was it. I was wrong as the number sees no boundary. </p></div>
 
 <div role="tabpanel" class="tab-pane" id="match">
     <h2>Toolbooks</h2>
-    <p>Vel vehicula ....</p>
+    <p>I spend all of my research stipends on it books.</p>
 </div>
 </div>
