@@ -1,5 +1,5 @@
 ---
-title: bebop autonomous codes
+title: My course list
 summary: "my course list from udemy, udacity, NCS and other sources"
 permalink: mydoc_mycourse.html
 sidebar: mydoc_sidebar
