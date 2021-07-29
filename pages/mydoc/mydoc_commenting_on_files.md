@@ -1,9 +1,9 @@
 ---
 title: pixhawk tools
-tags:  [drone, getting_started, setup]
+tags: [drone, getting_started, setup]
 keywords: "annotations, comments, feedback"
 last_updated: "July 29, 2021"
-summary: "You can add a button to your pages that allows people to add comments."
+summary: "rFlyeval project details where Matlab Mathwor Simulink were used for complete process of UAV and UAS."
 sidebar: mydoc_sidebar
 permalink: mydoc_commenting_on_files.html
 series: "ACME series"
