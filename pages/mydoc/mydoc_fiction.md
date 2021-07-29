@@ -37,7 +37,6 @@ folder: mydoc
           <i>
      This book together with my other Udemy course I am taking is the core of my learning curves for now.
           </i></li>
-     </ul>
      
           <li>
           Most of the on-line courses on <a href="https://www.udemy.com/home/my-courses/learning/?p=5">UDEMY</a> listed here
@@ -47,7 +46,7 @@ folder: mydoc
           <li>
           Recent courses: in collaborative development env. </li>
           
-     <ul>
+     
           <li>
           <a href="https://eggs.or.kr/index.php">
           Transcripting solution</a> 
