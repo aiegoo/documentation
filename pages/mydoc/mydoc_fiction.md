@@ -13,8 +13,8 @@ folder: mydoc
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a href="#fiction" data-toggle="tab">Fictions</a></li>
-    <li><a href="#about" data-toggle="tab">Coursebooks</a></li>
-    <li><a href="#match" data-toggle="tab">Toolbooks</a></li>
+    <li><a href="#coursebook" data-toggle="tab">Coursebooks</a></li>
+    <li><a href="#toolbook" data-toggle="tab">Toolbooks</a></li>
 </ul>
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="fiction">
