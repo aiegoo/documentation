@@ -22,7 +22,7 @@
           {% endif %}
           {% for subfolders in folderitem.subfolders %}
           {% if subfolders.output contains "web" %}
-          <li class="subfolders">
+          <li class="subfolders subfolder-background">
               <a title="{{subfolders.title}}" href="#">{{ subfolders.title }}</a>
               <ul>
                   {% for subfolderitem in subfolders.subfolderitems %}
