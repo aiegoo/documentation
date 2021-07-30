@@ -38,3 +38,15 @@ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.s
 
 sudo apt install git-lfs
 ```
+
+### to unstage and remove a file from commit
+
+```
+$ git restore --source=HEAD^ --staged  -- newfile
+
+$ git reset HEAD newfile
+
+$ git rm --cached newfile
+
+```
+
