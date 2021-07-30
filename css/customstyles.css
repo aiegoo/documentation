@@ -331,6 +331,10 @@ a.accordion-toggle, a.accordion-collapsed {
 
 .nav > li li {
     margin: 2px 0;
+}
+
+.nav > li li::after {
+
     background-color: #0088cc;
 }
 
