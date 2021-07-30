@@ -11,6 +11,7 @@ permalink: mydoc_github.html
 folder: mydoc
 ---
 
+{% include custom/series_git_next.html %}
 ## Git glossary
 
 
