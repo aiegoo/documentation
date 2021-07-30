@@ -315,6 +315,7 @@ a.accordion-toggle, a.accordion-collapsed {
 
 .nav .subfolder-background {
     background: #8bd4f6;
+    text-decoration: underline;
 }
 
 .nav ul {
