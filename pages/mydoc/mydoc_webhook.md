@@ -9,6 +9,7 @@ series: "GIT series"
 weight: 1
 permalink: mydoc_webhook.html
 folder: mydoc
+toc: false
 ---
 
 ## Git webhook
@@ -61,7 +62,6 @@ $ git rm --cached newfile
     <li><a href="#gitlogic" data-toggle="tab">Gitlogic</a></li>
     <li><a href="#gitconfig" data-toggle="tab">Gitconfig</a></li>
 </ul>
-
 <div class="tab-content">
 <!-- Git cli -->
      <div role="tabpanel" class="tab-pane active" id="git">

@@ -5,6 +5,8 @@ last_updated: July 11, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "summary."
 sidebar: mydoc_sidebar
+series: "GIT series"
+weight: 2
 permalink: mydoc_github.html
 folder: mydoc
 ---

@@ -4,6 +4,8 @@ tags: [git, drone, setup]
 last_updated: July 10, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "summary."
+series: "GIT series"
+weight: 3
 sidebar: mydoc_sidebar
 permalink: mydoc_gitlab.html
 folder: mydoc
@@ -13,7 +15,7 @@ folder: mydoc
 ## Gitlab
 [link](https://eggs.or.kr)
 
-
+{% include custom/series_git_next.html %}
 ### gitlab-rails console
 
 ```bash
