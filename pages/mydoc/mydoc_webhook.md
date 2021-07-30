@@ -65,11 +65,11 @@ $ git rm --cached newfile
 <div class="tab-content">
 <!-- Git cli -->
      <div role="tabpanel" class="tab-pane active" id="git">
-                  <h3>Viewing the Commit History</h2> 
+                  <h3>Viewing the Commit History</h3> 
      </div>
 <!-- courese books -->
      <div role="tabpanel" class="tab-pane" id="gitlogic">
-          <h2>git logic</h2>
+          <h3>git logic</h3>
           <p>I counted 18 books for the first year and I thought it was it. I was wrong as the number sees no boundary. </p>
      </div>
 <!-- tool books -->
