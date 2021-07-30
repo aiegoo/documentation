@@ -66,7 +66,7 @@ $ git rm --cached newfile
 
 <!-- Git cli -->
      <div role="tabpanel" class="tab-pane active" id="git">
-                            <h2>cli highlights</h2>
+                  <h2>cli highlights</h2>
                     
                   <h3>Viewing the Commit History</h2>
                   <div class="paragraph">
@@ -239,10 +239,7 @@ $ git rm --cached newfile
                   <table id="pretty_format" class="tableblock frame-all grid-all stretch">
                   <caption class="title">Table 1. Useful specifiers for <code>git log --pretty=format</code>
                   </caption>
-                  <colgroup>
-                  <col style="width: 20%;">
-                  <col style="width: 80%;">
-                  </colgroup>
+             
                   <thead>
                   <tr>
                   <th class="tableblock halign-left valign-top">Specifier</th>
@@ -466,10 +463,6 @@ $ git rm --cached newfile
                   <table id="limit_options" class="tableblock frame-all grid-all stretch">
                   <caption class="title">Table 3. Options to limit the output of <code>git log</code>
                   </caption>
-                  <colgroup>
-                  <col style="width: 33.3333%;">
-                  <col style="width: 66.6667%;">
-                  </colgroup>
                   <thead>
                   <tr>
                   <th class="tableblock halign-left valign-top">Option</th>
@@ -692,10 +685,6 @@ $ git rm --cached newfile
                 <table id="log_options" class="tableblock frame-all grid-all stretch">
                 <caption class="title">Table 2. Common options to <code>git log</code>
                 </caption>
-                <colgroup>
-                <col style="width: 20%;">
-                <col style="width: 80%;">
-                </colgroup>
                 <thead>
                 <tr>
                 <th class="tableblock halign-left valign-top">Option</th>
@@ -811,10 +800,6 @@ $ git rm --cached newfile
                 <table id="limit_options" class="tableblock frame-all grid-all stretch">
                 <caption class="title">Table 3. Options to limit the output of <code>git log</code>
                 </caption>
-                <colgroup>
-                <col style="width: 33.3333%;">
-                <col style="width: 66.6667%;">
-                </colgroup>
                 <thead>
                 <tr>
                 <th class="tableblock halign-left valign-top">Option</th>
@@ -944,10 +929,7 @@ $ git rm --cached newfile
                 </tbody></table>
                 </div>
                 </div>
-                <div id="nav"><a href="/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">prev</a> | <a href="/book/en/v2/Git-Basics-Undoing-Things">next</a></div></div>
-                </div>
-
-                        </div>
+                <div id="nav"><a href="/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">prev</a> | <a href="/book/en/v2/Git-Basics-Undoing-Things">next</a></div>                     </div>
                 <table>
                 <tbody><tr>
                 <td class="icon">
@@ -966,7 +948,6 @@ $ git rm --cached newfile
                 </div>
                 <div id="nav"><a href="/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">prev</a> | <a href="/book/en/v2/Git-Basics-Undoing-Things">next</a></div></div>
                 </div>
-
                         </div>
                 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--until</code>, <code>--before</code></p></td>
                 <td class="tableblock halign-left valign-top"><p class="tableblock">Limit the commits to those made before the specified date.</p></td>
@@ -1026,7 +1007,6 @@ $ git rm --cached newfile
                 </div>
                 <div id="nav"><a href="/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">prev</a> | <a href="/book/en/v2/Git-Basics-Undoing-Things">next</a></div></div>
                 </div>
-
                         </div>
                 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>--until</code>, <code>--before</code></p></td>
                 <td class="tableblock halign-left valign-top"><p class="tableblock">Limit the commits to those made before the specified date.</p></td>
@@ -1086,7 +1066,6 @@ $ git rm --cached newfile
                 </div>
                 <div id="nav"><a href="/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">prev</a> | <a href="/book/en/v2/Git-Basics-Undoing-Things">next</a></div></div>
                 </div>
-
                         </div>
                 <div class="paragraph">
                 <p>In addition to output-formatting options, <code>git log</code> takes a number of useful limiting options; that is, options that let you show only a subset of commits.
@@ -1152,10 +1131,6 @@ $ git rm --cached newfile
                 <table id="limit_options" class="tableblock frame-all grid-all stretch">
                 <caption class="title">Table 3. Options to limit the output of <code>git log</code>
                 </caption>
-                <colgroup>
-                <col style="width: 33.3333%;">
-                <col style="width: 66.6667%;">
-                </colgroup>
                 <thead>
                 <tr>
                 <th class="tableblock halign-left valign-top">Option</th>
@@ -1228,8 +1203,8 @@ $ git rm --cached newfile
                 </tbody></table>
                 </div>
                 </div>
-                <div id="nav"><a href="/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">prev</a> | <a href="/book/en/v2/Git-Basics-Undoing-Things">next</a></div></div>
-                </div>
+                <div id="nav"><a href="/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">prev</a> | <a href="/book/en/v2/Git-Basics-Undoing-Things">next</a></div>
+             
 
   </div>
 
