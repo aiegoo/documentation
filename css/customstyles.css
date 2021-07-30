@@ -310,7 +310,8 @@ a.accordion-toggle, a.accordion-collapsed {
 
 /* navgoco sidebar styles (customized) */
 .nav, .nav ul, .nav li {
-    list-style: none;
+    list-style: none;    
+    background-color: #8bd4f6;
 }
 
 .nav ul {
