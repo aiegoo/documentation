@@ -17,7 +17,6 @@ The following needs engineering and design;
 
 •	Drone Flight control board. (VTOL, fixed wing, ground vehicle, and multi-copter) (GPS/RTK) Payload integration. 
 
-<img alt="fc" src="./images/challenger/fc.jpg" />
 ![image](https://user-images.githubusercontent.com/42961200/127731083-14185d39-d265-4e20-81b1-6057551995c7.png)
 
 •	Specs as follows:
@@ -146,7 +145,7 @@ Operating temperature: -10~+50℃
 
 |    |   |   | 
 | --- | --- | --- |
-| ![tracking](./images/challenger/tracking.jpg) | ![video](./images/challenger/video.jpg) | ![telemetry](./images/challenger/telemetry.jpg) |
+| ![tracking](https://user-images.githubusercontent.com/42961200/127731175-03b6b7e2-0bdd-4be0-b410-6c816fd995d0.png) | ![video](https://user-images.githubusercontent.com/42961200/127731205-c003ab3b-b0f8-48ec-869e-c4416114464d.png)  | ![telemetry](https://user-images.githubusercontent.com/42961200/127731226-f68cf4ef-0c83-4e1b-a942-b631182c35df.png) |
 
 •	Tracking antenna, video, and telemetry
 
@@ -176,7 +175,7 @@ microSD card for logging telemetry data
 2x4 pin with analogue input for antenna position tuning potentiometer
 external buzzer
 
-![gcs](./images/challenger/gcs.png)
+![gcs](https://user-images.githubusercontent.com/42961200/127731250-1cd684d5-700b-4966-b736-19faa685839b.png)
 
 •	Ground control station. Windows based.
 Dimensions	
@@ -272,7 +271,7 @@ GCS foldable stand
 
 |    |   |  
 | --- | --- |
-| ![gcs-notebook](images/challenger/gcs-notebook.jpg) | ![gcs-console](./images/challenger/video.jpg) | ![telemetry](./images/challenger/gcs-console.jpg) |
+| ![gcs-notebook](https://user-images.githubusercontent.com/42961200/127731275-48fb278d-0323-4505-88dc-add6ee4d7c26.png) | ![gcs-console](https://user-images.githubusercontent.com/42961200/127731309-12e7b2ee-2ffc-4fc5-95ce-690bbd771660.png) | ![telemetry](https://user-images.githubusercontent.com/42961200/127731415-2ee01fee-ee5a-4e48-ba85-afcc64cb9d5b.png) |
 
 •	Software windows based.
 
