@@ -1,6 +1,6 @@
 ---
 title: Challenger Engineering Project
-tags: [drone, vtol, gcs, payload ]
+tags: [drone, getting_started]
 last_updated: July 10, 2021
 keywords: contest, drone, vtol, gcs, payload
 summary: "summary."
@@ -216,12 +216,7 @@ DC input
 10 – 32 VDC, over-voltage protection, reverse polarity protection
 
 Battery type	
-Lithium ion
-
-Battery capacity	
-108 Wh
-
-Battery operation time	
+Lithium ion 	 time	
 2 h (typical)
 
 Connections (all routed to Dell Latitude 7424 Rugged Extreme)	
