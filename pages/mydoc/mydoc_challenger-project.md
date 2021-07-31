@@ -21,8 +21,8 @@ The following needs engineering and design;
 
 •	Specs as follows:
 
-|  |  |
-| --- | --- |
+|  |  |  |
+| --- | --- |  --- |
 |•	Dimensions | 5.59 x 1.81 x 2.46 inches (142.00 x 46.00 x 62.60 mm) Unflanged |
 | •	Weight |7.7 oz (200 g) with 900 MHz radio |
 |•	Enclosure/Mounting | EMI shielded carbon, flanged, unflanged |
@@ -143,7 +143,7 @@ Antenna: 2dB rubber ducky antenna
 
 Operating temperature: -10~+50℃
 
-|    |   |   | 
+| tracking   | video  | telemetry  | 
 | --- | --- | --- |
 | ![tracking](https://user-images.githubusercontent.com/42961200/127731175-03b6b7e2-0bdd-4be0-b410-6c816fd995d0.png) | ![video](https://user-images.githubusercontent.com/42961200/127731205-c003ab3b-b0f8-48ec-869e-c4416114464d.png)  | ![telemetry](https://user-images.githubusercontent.com/42961200/127731226-f68cf4ef-0c83-4e1b-a942-b631182c35df.png) |
 
@@ -269,8 +269,8 @@ Power supply cable with push-pull connector, unterminated, 12 AWG, 5 m (16.4 ft)
 
 GCS foldable stand
 
-|    |   |  
-| --- | --- |
+|  notebook  | gcs  | telemetry | 
+| --- | --- | --- |
 | ![gcs-notebook](https://user-images.githubusercontent.com/42961200/127731275-48fb278d-0323-4505-88dc-add6ee4d7c26.png) | ![gcs-console](https://user-images.githubusercontent.com/42961200/127731309-12e7b2ee-2ffc-4fc5-95ce-690bbd771660.png) | ![telemetry](https://user-images.githubusercontent.com/42961200/127731415-2ee01fee-ee5a-4e48-ba85-afcc64cb9d5b.png) |
 
 •	Software windows based.
