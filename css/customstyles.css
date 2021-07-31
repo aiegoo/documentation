@@ -422,7 +422,7 @@ ul#mysidebar {
     padding-left:10px;
 }
 
-.nav li a:visited::before {
+.nav li a:visited {
     border-color: transparent transparent transparent #c3c309;
     color: white;
 }
