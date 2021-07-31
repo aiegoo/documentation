@@ -18,6 +18,7 @@ The following needs engineering and design;
 •	Drone Flight control board. (VTOL, fixed wing, ground vehicle, and multi-copter) (GPS/RTK) Payload integration. 
 
 <img alt="fc" src="./images/challenger/fc.jpg" />
+![image](https://user-images.githubusercontent.com/42961200/127731083-14185d39-d265-4e20-81b1-6057551995c7.png)
 
 •	Specs as follows:
 
