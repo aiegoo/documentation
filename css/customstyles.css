@@ -395,6 +395,7 @@ ul#mysidebar {
 
 .nav ul li ul li a {
     padding-left:40px;
+    background-color: #d4ecc3;
 }
 
 .nav li.thirdlevel > a {
