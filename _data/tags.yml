@@ -20,11 +20,13 @@ allowed-tags:
   - drone
   - dji
   - apm
+  - vtol
   - aiot
   - sensor
   - setup
   - git
   - django
   - xfile
+  - webdev
 
 # Copyright 2021 Google LLC
