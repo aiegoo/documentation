@@ -424,6 +424,7 @@ ul#mysidebar {
 
 .nav li a:visited::before {
     border-color: transparent transparent transparent #c3c309;
+    color: white;
 }
 /* end sidebar */
 
