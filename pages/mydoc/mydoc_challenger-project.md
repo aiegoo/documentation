@@ -358,7 +358,8 @@ GCS provides live video feed integration right in the app. You can see either fu
 •	And many more...
 
 
-![missionplanner](./images/challenger/missonplanner.jpg)
+![missionplanner](https://user-images.githubusercontent.com/42961200/127731633-8aa8a3d8-28ff-4b3e-91a2-aaf2fdd49e7b.png)
+
 
 {% raw %}Schooling pages:
 <ul>
