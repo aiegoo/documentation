@@ -271,7 +271,7 @@ GCS foldable stand
 
 |    |   |  
 | --- | --- |
-| ![gcs-notebook](./images/challenger/gcs-notebook.jpg) | ![gcs-console](./images/challenger/video.jpg) | ![telemetry](./images/challenger/gcs-console.jpg) |
+| ![gcs-notebook](images/challenger/gcs-notebook.jpg) | ![gcs-console](./images/challenger/video.jpg) | ![telemetry](./images/challenger/gcs-console.jpg) |
 
 •	Software windows based.
 
