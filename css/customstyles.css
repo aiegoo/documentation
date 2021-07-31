@@ -314,9 +314,8 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav .subfolder-background {
-    text-decoration: underline;
+    text-decoration: blink;
     color: #0088cc !important;
-    text-decoration-color: red;
 }
 
 .nav ul {
