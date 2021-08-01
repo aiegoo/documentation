@@ -1,5 +1,5 @@
 ---
-title: github config and glossary
+title: git config
 tags: [git, glossary ]
 last_updated: July 11, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
