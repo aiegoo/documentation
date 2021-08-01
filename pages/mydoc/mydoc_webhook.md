@@ -67,7 +67,7 @@ $ git rm --cached newfile
      <div role="tabpanel" class="tab-pane active" id="git">
           <h3>Viewing the Commit History</h3> 
           <div markdown="1">
-          ```diff
+          <pre>
                [filter "lfs"]
                     smudge = git-lfs smudge -- %f
                     process = git-lfs filter-process
@@ -84,8 +84,7 @@ $ git rm --cached newfile
                     tool = vimdiff
                [difftool "vscode"]
                     cmd = code --wait --new-window --diff $LOCAL $REMOTE
-                    prompt = false
-                                   
+                    prompt = false                          
                [alias]
                     a = !git config --global
                     amd = !git add -A && git commit --amend --no-edit
@@ -110,8 +109,7 @@ $ git rm --cached newfile
                     pr-clean = "!git for-each-ref refs/heads/pr/* --format=\"%(refname)\" | while read ref; do branch=${ref#refs/heads/} ; git branch -D $branch;"
                     files  = "!git diff-tree --no-commit-id --name-only -r"
                     find = log --pretty=\"format:%Cgreen%H %Cblue%s\" --name-status --grep
-               filter = !git filter-branch --index-filter \"git rm --cached -f -r --ignore-unmatch\" --tag-name-     filter cat -- --all
-
+                    filter = !git filter-branch --index-filter \"git rm --cached -f -r --ignore-unmatch\" --tag-name-     filter cat -- --all
                     df = difftool
                     saved = !git show --pretty=\"\" --name-only
                     areusure = !git filter-branch --index-filter "git rm --cached -f -r --ignore-unmatch filenameOrFolderName" --tag-name-filter cat -- --all 
@@ -119,9 +117,8 @@ $ git rm --cached newfile
                     set-url = !git remote set-url --add --push origin
                     conflict = !git diff --name-only --diff-filter=U
                [difftool]
-                    prompt = false
-     
-          ```                  
+                    prompt = false     
+          </pre>                
         </div>
      </div>
 <!-- courese books -->
