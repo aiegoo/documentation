@@ -65,7 +65,7 @@ $ git rm --cached newfile
 <div class="tab-content">
 <!-- Git cli -->
      <div role="tabpanel" class="tab-pane active" id="git">
-          <h3>Viewing the Commit History</h3> 
+          <h3>git cli alias </h3> 
           <div>
           <xmp>[filter "lfs"]
                     smudge = git-lfs smudge -- %f
@@ -86,35 +86,65 @@ $ git rm --cached newfile
                     prompt = false                          
                [alias]
                     a = !git config --global
+
                     amd = !git add -A && git commit --amend --no-edit
+
                     alias = config --get-regexp ^alias\\.
+
                     p = !git push origin $(git rev-parse --abbrev-ref HEAD)
-                    lg = !git log --all --graph --oneline --date=short --pretty=format:\"%C(yellow)%h%Creset%C(red)%C(bold)%d%Creset%C(white)(%cd)%Creset %s\"
+
                     sub = !git submodule update --init --recursive
+
                     adds = !git add . && git commit -m
-                    lc = !git log ORIG_HEAD.. --stat --no-merges
+
                     upstream = !git branch --set-upstream-to=origin/$(git rev-parse --abbrev-ref HEAD)
+
                     unstream = !git branch --unset-upstream $(git rev-parse --abbrev-ref HEAD)
+
                     f = !git fetch --all && git rebase origin/master
+
                     edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; code `f`"
+
                     add-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`"
+
                     uncommit = !git reset --soft HEAD^ && git reset
+
                     commitagain = !git commit -c ORIG_HEAD
+
                     desc = !git add . && git commit
+
                     conflicts = !git diff --name-only --diff-filter=U | grep -oE '[^/ ]+$'
+                    
+                    conflict = !git diff --name-only --diff-filter=U
+
                     history = !git rev-list --all
+
                     lt = !git log --stat --pretty=\"format:%h%an%ai%f\"
+
+                    lc = !git log ORIG_HEAD.. --stat --no-merges
+
+                    lg = !git log --all --graph --oneline --date=short --pretty=format:\"%C(yellow)%h%Creset%C(red)%C(bold)%d%Creset%C(white)(%cd)%Creset %s\"
+                    
                     pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
+
                     pr-clean = "!git for-each-ref refs/heads/pr/* --format=\"%(refname)\" | while read ref; do branch=${ref#refs/heads/} ; git branch -D $branch;"
+
                     files  = "!git diff-tree --no-commit-id --name-only -r"
+
                     find = log --pretty=\"format:%Cgreen%H %Cblue%s\" --name-status --grep
+
                     filter = !git filter-branch --index-filter \"git rm --cached -f -r --ignore-unmatch\" --tag-name-     filter cat -- --all
+
                     df = difftool
                     saved = !git show --pretty=\"\" --name-only
+
                     areusure = !git filter-branch --index-filter "git rm --cached -f -r --ignore-unmatch filenameOrFolderName" --tag-name-filter cat -- --all 
+
                     clone-branches = "! git branch -a | sed -n \"/\\/HEAD /d; /\\/master$/d; /remotes/p;\" | xargs -L1 git checkout -t"
+
                     set-url = !git remote set-url --add --push origin
-                    conflict = !git diff --name-only --diff-filter=U
+                    
+                    lstree = !git diff-tree --no-commit-id --name-status -r
                [difftool]
                     prompt = false</xmp>                
         </div> <!-- end of gitcli contents -->
