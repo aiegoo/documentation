@@ -21,6 +21,12 @@ folder: mydoc
 
 ### Branching strategies
 
+• how to choose a branching convention for your team. 
+• mainline development 
+• branch-per-feature deployment 
+• scheduled deployment
+
+{% include note.html content="Know when to increment  with  semantic  versioning In  semantic  versioning,  a  release  should  always  be  numbered  as  follows:  MAJOR.MINOR.PATCH.  The  first  number  (MAJOR)  should be  incremented  when  you  make  API-level  changes  which  are  not backwards  compatible.  The  second  number  (MINOR)  should  be  incremented  when  you  add  new  functionality  which  does  not  break existing  functionality  (it  is  “backwards-compatible”).  The  third  number  (PATCH)  should  be  incremented  when  you  make  backwardscompatible  bug  fixes." %}
 ### comand and control
 
 
