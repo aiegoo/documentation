@@ -7,4 +7,4 @@ tags: [news, getting_started]
 
 ## Integration of css and navigation logics within the site
 
-{% include _includes/gitlog.html %}
+{% include links.html %}
