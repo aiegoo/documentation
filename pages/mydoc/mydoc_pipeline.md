@@ -115,3 +115,24 @@ All files should be located within the same directory as the programs.
 ```bash
 echo 'task goes here' | cat - todo.txt | tee todo.txt
 ```
+
+### to sync local with servers
+
+> Deploy your Generated Site
+In the previous step you created a stand-alone version of your site built from static HTML files. These files, which reside in output_prod, need to be uploaded to your publicly-accessible web server.
+
+> Some common options are covered here: 
+> rsync to your own server
+
+
+```bash
+rsync -avze 'ssh -p 999' output_prod/ user@example.com:public_html
+```
+
+> You might want to use the --delete option to also delete files that got removed. Always make sure that there are no other files in the target directory that you do not want to be deleted. When in doubt, try with the --dry-run/-n flag first and check what rsync would do.
+
+> GitHub
+For GitHub pages, you will commit the rendered files in a git repository. Please refer to the official instructions on GitHub pages.
+
+> Amazon S3 bucket
+The skeleton site comes with a s3-publish.sh script which you may edit and use to upload to your bucket. You will need to install the s3cmd utility in your system for this script to work.
