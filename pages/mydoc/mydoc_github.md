@@ -6,7 +6,7 @@ keywords: API, content API, UI text, inline help, context-sensitive help, popove
 summary: "summary."
 sidebar: mydoc_sidebar
 series: "GIT series"
-weight: 2
+weight: 4
 permalink: mydoc_github.html
 folder: mydoc
 ---
