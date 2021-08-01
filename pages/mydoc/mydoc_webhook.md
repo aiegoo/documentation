@@ -12,7 +12,7 @@ folder: mydoc
 toc: false
 ---
 
-## Git webhook
+## :octocat: Git webhook
 
 ```diff
 - text in red
