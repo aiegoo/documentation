@@ -1,8 +1,8 @@
 ---
-title: :octocat: github team by Oreily, Emma Jane
+title: github team
 tags: [git, getting_started]
 last_updated: July 11, 2021
-keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
+keywords: by Oreily, Emma Jane, API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "summary."
 sidebar: mydoc_sidebar
 series: "GIT series"
