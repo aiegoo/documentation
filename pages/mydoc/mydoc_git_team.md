@@ -18,3 +18,10 @@ folder: mydoc
 ## Git team
 
 [gitknitters](https://github.com/gitforknitters/gitforknitters)
+
+### Branching strategies
+
+### comand and control
+
+
+### Working in a team
