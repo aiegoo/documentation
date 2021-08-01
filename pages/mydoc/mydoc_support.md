@@ -138,4 +138,7 @@ topnav: topnav
 
 for more details of aeronautic journals and my course works [clickhere](https://github.com/aiegoo/drone-eggs/wiki)
 
+## Commynity guideline
+[Flickr](https://www.flickr.com/help/guidelines)
+
 {% include taglogic.html %}
