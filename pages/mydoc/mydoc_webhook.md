@@ -143,10 +143,16 @@ $ git rm --cached newfile
                     clone-branches = "! git branch -a | sed -n \"/\\/HEAD /d; /\\/master$/d; /remotes/p;\" | xargs -L1 git checkout -t"
 
                     set-url = !git remote set-url --add --push origin
-                    
+
                     lstree = !git diff-tree --no-commit-id --name-status -r
                [difftool]
-                    prompt = false</xmp>                
+                    prompt = false</xmp>  
+
+          <xmp>$ git lg -n 3
+* 36a7365 (HEAD -> gh-pages, origin/gh-pages, origin/HEAD)(2021-08-01) add git config template to webhook.md
+* fd26087(2021-08-01) add git config template to webhook.md
+* 6c05cf4(2021-08-01) add git config template to webhook.md</xmp>
+            
         </div> <!-- end of gitcli contents -->
      </div>
 <!-- courese books -->
@@ -180,3 +186,16 @@ $ git rm --cached newfile
                now private github repository</a> <i>(to be completed in November).</i></li>
           </ul></div>
 </div>
+
+### cli examples
+
+```diff
+$ git lg -n 3
+* 36a7365 (HEAD -> gh-pages, origin/gh-pages, origin/HEAD)(2021-08-01) add git config template to webhook.md
+* fd26087(2021-08-01) add git config template to webhook.md
+* 6c05cf4(2021-08-01) add git config template to webhook.md
+
+$ git lstree fd26087
+M       pages/mydoc/mydoc_webhook.md
+
+```
