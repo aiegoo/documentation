@@ -106,3 +106,12 @@ The files and folders needed for slave are:
 
 Both secret.txt files on the server-update side and the slave side should be identical.
 All files should be located within the same directory as the programs.
+
+
+## bash cli
+
+### to add texts to the head of a file
+
+```bash
+echo 'task goes here' | cat - todo.txt | tee todo.txt
+```
