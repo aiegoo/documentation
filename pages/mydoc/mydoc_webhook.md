@@ -151,7 +151,10 @@ $ git rm --cached newfile
           <xmp>$ git lg -n 3
 * 36a7365 (HEAD -> gh-pages, origin/gh-pages, origin/HEAD)(2021-08-01) add git config template to webhook.md
 * fd26087(2021-08-01) add git config template to webhook.md
-* 6c05cf4(2021-08-01) add git config template to webhook.md</xmp>
+* 6c05cf4(2021-08-01) add git config template to webhook.md
+
+$ git lstree fd26087
+M       pages/mydoc/mydoc_webhook.md</xmp>
             
         </div> <!-- end of gitcli contents -->
      </div>
