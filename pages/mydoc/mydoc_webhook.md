@@ -66,8 +66,8 @@ $ git rm --cached newfile
 <!-- Git cli -->
      <div role="tabpanel" class="tab-pane active" id="git">
           <h3>Viewing the Commit History</h3> 
-          <div markdown="1">
-          <pre>
+          <div>
+               <pre>
                [filter "lfs"]
                     smudge = git-lfs smudge -- %f
                     process = git-lfs filter-process
@@ -117,9 +117,9 @@ $ git rm --cached newfile
                     set-url = !git remote set-url --add --push origin
                     conflict = !git diff --name-only --diff-filter=U
                [difftool]
-                    prompt = false     
+                    prompt = false
           </pre>                
-        </div>
+        </div> <!-- end of gitcli contents -->
      </div>
 <!-- courese books -->
      <div role="tabpanel" class="tab-pane" id="gitlogic">
