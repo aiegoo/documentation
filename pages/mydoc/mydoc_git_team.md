@@ -11,7 +11,10 @@ permalink: mydoc_git_team.html
 folder: mydoc
 ---
 
+[gitteampdf](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:79f561c5-f23e-4c3b-9112-77b06a3ca77d)
 
 {% include custom/series_git_next.html %}
 
 ## Git team
+
+[gitknitters](https://github.com/gitforknitters/gitforknitters)
