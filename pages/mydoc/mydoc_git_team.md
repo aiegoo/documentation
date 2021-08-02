@@ -19,6 +19,12 @@ folder: mydoc
 
 [gitknitters](https://github.com/gitforknitters/gitforknitters)
 
+
+### workflow
+> Create and customize step-by-step documentation for your team on how to use Git in your own work flow
+
+
+
 ### Branching strategies
 
 • how to choose a branching convention for your team. 
