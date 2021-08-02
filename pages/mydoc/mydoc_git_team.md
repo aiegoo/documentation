@@ -30,6 +30,21 @@ folder: mydoc
 • sample states for your ticketing system
 ```
 
+Example
+
+```
+
+Product Manager [Name] 
+Dev site [URL] Branch deployed on dev site [name of branch] 
+Live site [URL] 
+Branch deployed on live site [name of branch] 
+When starting a dev ticket, branch from [name of branch] 
+When starting a hotfix ticket, branch from [name of branch] 
+When updating your work, use [git command] 
+When merging your work, post review use [git command]
+```
+
+
 
 
 ### Branching strategies
