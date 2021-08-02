@@ -23,14 +23,22 @@ folder: mydoc
 ### workflow
 > Create and customize step-by-step documentation for your team on how to use Git in your own work flow
 
+```
+• basic tools to document your team’s process; 
+• where documentation should be placed; 
+• what types of things need to be documented; and, 
+• sample states for your ticketing system
+```
+
 
 
 ### Branching strategies
-
+```
 • how to choose a branching convention for your team. 
 • mainline development 
 • branch-per-feature deployment 
 • scheduled deployment
+```
 
 {% include note.html content="Know when to increment  with  semantic  versioning In  semantic  versioning,  a  release  should  always  be  numbered  as  follows:  MAJOR.MINOR.PATCH.  The  first  number  (MAJOR)  should be  incremented  when  you  make  API-level  changes  which  are  not backwards  compatible.  The  second  number  (MINOR)  should  be  incremented  when  you  add  new  functionality  which  does  not  break existing  functionality  (it  is  “backwards-compatible”).  The  third  number  (PATCH)  should  be  incremented  when  you  make  backwardscompatible  bug  fixes." %}
 
