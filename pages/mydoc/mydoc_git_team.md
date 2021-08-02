@@ -32,21 +32,52 @@ folder: mydoc
 
 Example
 
+```diff
++Product Manager [Name] 
+-Dev site [URL] Branch deployed on dev site [name of branch] 
++Live site [URL] 
+-Branch deployed on live site [name of branch] 
++When starting a dev ticket, branch from [name of branch] 
+-When starting a hotfix ticket, branch from [name of branch] 
++When updating your work, use [git command] 
+-When merging your work, post review use [git command]
 ```
 
-Product Manager [Name] 
-Dev site [URL] Branch deployed on dev site [name of branch] 
-Live site [URL] 
-Branch deployed on live site [name of branch] 
-When starting a dev ticket, branch from [name of branch] 
-When starting a hotfix ticket, branch from [name of branch] 
-When updating your work, use [git command] 
-When merging your work, post review use [git command]
+> ghi cli: 
+The most commonly used ghi commands are:
+
+```bash
+   list        List your issues (or a repository's)
+   show        Show an issue's details
+   open        Open (or reopen) an issue
+   close       Close an issue
+   edit        Modify an existing issue
+   comment     Leave a comment on an issue
+   label       Create, list, modify, or delete labels
+   assign      Assign an issue to yourself (or someone else)
+   milestone   Manage project milestones
 ```
 
+> color the shell output for git: add below in .gitconfig
 
+```
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+You can also fine control what you want to have coloured in what way, e.g.
 
+[color "status"]
+  added = green
+  changed = red bold
+  untracked = magenta bold
 
+[color "branch"]
+  remote = yellow
+```
 ### Branching strategies
 ```
 • how to choose a branching convention for your team. 
