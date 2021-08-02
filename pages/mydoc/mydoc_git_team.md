@@ -59,6 +59,7 @@ The most commonly used ghi commands are:
 ```
 
 > color the shell output for git: add below in .gitconfig
+> You can also fine control what you want to have coloured in what way, e.g.
 
 ```
 [color]
@@ -68,7 +69,7 @@ The most commonly used ghi commands are:
   interactive = auto
   ui = true
   pager = true
-You can also fine control what you want to have coloured in what way, e.g.
+
 
 [color "status"]
   added = green
