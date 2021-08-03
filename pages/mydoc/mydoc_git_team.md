@@ -15,6 +15,9 @@ folder: mydoc
 
 {% include custom/series_git_next.html %}
 
+## Git team of one
+
+
 ## Git team
 
 [gitknitters](https://github.com/gitforknitters/gitforknitters)
