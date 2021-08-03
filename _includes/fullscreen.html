@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {% include head.html %}
 <style>
 body, html {
   height: 100%;
@@ -18,6 +17,16 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
 }
 
 #mainBackground{
@@ -41,6 +50,5 @@ body, html {
 </style>
 </head>
 <body>
-
-<div id="mainBackground"></div>
+<img src="images/tony_doc.svg" id="bg" alt="">
 </body>
