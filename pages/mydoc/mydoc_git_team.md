@@ -80,6 +80,17 @@ The most commonly used ghi commands are:
   remote = yellow
 ```
 
+#### diagram and workflow gui
+[pencil](http://pencil.evolus.vn/Features.html)
+
+[omnigraffle](https://www.omnigroup.com/omnigraffle)
+
+[Dia](http://dia-installer.de/)
+
+[inkspace](https://inkscape.org/about/features/)
+
+[balsamiq](https://balsamiq.com/)
+
 #### github pages documentation for visibility and dns
 
 
