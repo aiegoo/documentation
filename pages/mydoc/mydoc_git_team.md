@@ -79,6 +79,15 @@ The most commonly used ghi commands are:
 [color "branch"]
   remote = yellow
 ```
+
+#### github pages documentation for visibility and dns
+
+
+#### git pull/merge strategy
+
+[bucketdoc](https://www.atlassian.com/git/tutorials/using-branches/merge-strategy)
+
+
 ### Branching strategies
 ```
 • how to choose a branching convention for your team. 
