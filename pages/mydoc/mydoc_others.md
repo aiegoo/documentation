@@ -15,10 +15,10 @@ folder: mydoc
 
 ### [setup_instruction](https://blog.ssdnodes.com/blog/installing-nextcloud-docker/)
 
-
 ## revealjs presentation framework
 
 ### installation
+
 [slide.com](https://revealjs.com/installation/)
 
 {% include_relative revealjs.md %}
