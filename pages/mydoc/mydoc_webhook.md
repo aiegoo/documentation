@@ -51,7 +51,22 @@ $ git reset HEAD newfile
 
 $ git rm --cached newfile
 
+$ git checkout -b master SHA
+
+$ git merge -s ours branch1 branch2 brancN  # resolve ours subtree octopus
+
 ```
+
+- MEMO: 01daab67641deef5bfba8668973c13f48a562128
+- MEMO: git config --global --unset user.password
+- MEMO: sudo chmod 777 DIR_NAME
+- MEMO: sudo chmod a+rwx /var/szDirectoryName
+- MEMO: how to reset --hard origin/master and then revert
+  - git -a -m "saved just in case"
+  - git checkout -b incase  ---- save tmp files to the branch
+  - git checkout applicable branch and then 
+  - git reflog # to get the latest commit on the remote
+  - git reset --hard HEAD@{n}  # for the lastest commit hash or index #
 
 {% include custom/series_git_next.html %}
 
