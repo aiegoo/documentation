@@ -14,7 +14,7 @@ folder: books
 
 ### installation
 
-[slide.com](https://revealjs.com/installation/)
+[Usemarkdown](https://revealjs.com/markdown/)
 
 {% capture my_include %}{% include custom/contents/revealjs.md %}{% endcapture %}
 {{ my_include | markdownify }}
