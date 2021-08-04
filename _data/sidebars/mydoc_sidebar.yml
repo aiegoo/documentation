@@ -469,8 +469,8 @@ entries:
       url: /mydoc_twoscoops.html
       output: web, pdf
 
-    - title: more to come
-      url: /
+    - title: presentation
+      url: /books_revealjs.html
       output: web, pdf
 
     - title: more to come
