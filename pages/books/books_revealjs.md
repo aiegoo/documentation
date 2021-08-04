@@ -7,8 +7,11 @@ summary: "summary."
 sidebar: mydoc_sidebar
 permalink: books_revealjs.html
 folder: books
+series: "REVEAL series"
+weight: 1
 ---
 
+{% include custom/series_reveal.html %}
 
 ## revealjs presentation framework
 
