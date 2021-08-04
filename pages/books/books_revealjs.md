@@ -19,6 +19,9 @@ weight: 1
 
 [Usemarkdown](https://revealjs.com/markdown/)
 
+[ES6_integration](https://v8.dev/features/modules)
+> the link will explain in expository details about ES6 syntax and implementation methods
+
 {% capture my_include %}{% include custom/contents/revealjs.md %}{% endcapture %}
 {{ my_include | markdownify }}
 
