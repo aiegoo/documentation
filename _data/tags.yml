@@ -28,5 +28,6 @@ allowed-tags:
   - django
   - xfile
   - webdev
+  - books
 
 # Copyright 2021 Google LLC
