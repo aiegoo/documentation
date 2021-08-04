@@ -1,5 +1,7 @@
 ---
+title: revealjus
 layout: default
+folder: _contents
 ---
 
 # Installation
