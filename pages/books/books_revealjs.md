@@ -11,7 +11,7 @@ series: "REVEAL series"
 weight: 1
 ---
 
-{% include custom/series_reveal.html %}
+{% include custom/series_reveal_next.html %}
 
 ## revealjs presentation framework
 
