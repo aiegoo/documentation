@@ -21,4 +21,5 @@ folder: mydoc
 
 [slide.com](https://revealjs.com/installation/)
 
-{% include_relative _contents/revealjs.md %}
+{% capture my_include %}{% include custom/contents/revealjs.md %}{% endcapture %}
+{{ my_include | markdownify }}
