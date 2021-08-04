@@ -21,4 +21,4 @@ folder: mydoc
 
 [slide.com](https://revealjs.com/installation/)
 
-{% include_relative revealjs.md %}
+{% include_relative _contents/revealjs.md %}

@@ -1,4 +1,3 @@
-
 # Installation
 
 We provide three different ways to install reveal.js depending on your use case and technical experience.
