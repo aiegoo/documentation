@@ -14,6 +14,8 @@ toc: false
 
 ## :octocat: Git webhook
 
+[stackoverflowSolution](https://stackoverflow.com/questions/44864419/how-to-automate-docker-deployment-based-on-github-webhook/44866845#44866845)
+
 ```diff
 - text in red
 + text in green
