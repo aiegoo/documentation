@@ -1,3 +1,9 @@
 [submodule "actions"]
 	path = actions
 	url = git@github.com:aiegoo/test-actions
+[submodule "source-code"]
+	path = source-code
+	url = git@github.com:aiegoo/documentation-theme-jekyll
+[submodule "gitteam"]
+	path = gitteam
+	url = git@github.com:aiegoo/gitteam
