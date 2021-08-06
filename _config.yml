@@ -118,7 +118,7 @@ description: "This documentation site is intended to keep my past and current pr
 github: [metadata]
 
 plugins:
-  - jemoji
+#  - jemoji
 
 
 # Where things are
