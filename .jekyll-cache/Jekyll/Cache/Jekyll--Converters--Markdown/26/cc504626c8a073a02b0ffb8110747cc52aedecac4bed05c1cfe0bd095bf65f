@@ -1,0 +1,26 @@
+I"�<h2 id="jetson-nano">jetson nano</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Image</td>
+      <td><img alt="nano" src="https://user-images.githubusercontent.com/42961200/126303736-3e916ad9-e6d6-4f9e-8aba-6b087bba83ae.png" width="500px" /></td>
+    </tr>
+    <tr>
+      <td>Download</td>
+      <td><a href="https://developer.nvidia.com/jetson-nano-sd-card-image">download_image</a>  ## download Etcher/BalenaEtcher</td>
+    </tr>
+    <tr>
+      <td>sd-card</td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126304920-4f3952db-904e-4671-8592-97d2a2fa59ba.png" alt="image" /></td>
+    </tr>
+  </tbody>
+</table>
+
+:ET

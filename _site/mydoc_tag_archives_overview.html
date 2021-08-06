@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="This is an overview to the tag archives section. Really the only reason this section is listed explicitly in the TOC here is to demonstrate how to add a thir...">
 <meta name="keywords" content="navigation,  archives, tagging">
+<meta name="theme-color" content="#72ac4a" />
 <title>Tag archives overview | Tonylee Project Showcase</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -17,7 +18,7 @@
 <link rel="stylesheet" href="css/customstyles.css">
 <link rel="stylesheet" href="css/boxshadowproperties.css">
 <!-- most color styles are extracted out to here -->
-<link rel="stylesheet" href="css/theme-blue.css">
+<link rel="stylesheet" href="css/theme-green.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -41,7 +42,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="aiegoo.github.io/feed.xml">
 
 
 
@@ -98,7 +99,7 @@
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top fixed-top">
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -107,7 +108,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Tonylee Project Documentation</span></a>
+            <a class="fa fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"><img src="images/tony_doc.svg" style="width: 117px; max-width: 12%;"> My Project Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -181,7 +182,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:onofftony@gmail.com?subject=Jekyll documentation theme feedback&body=I have some feedback about the Tag archives overview page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="https://aiegoo.github.io/portfolio">portfolio wiki</a>
 
 </li>
 
@@ -248,28 +249,28 @@
           
           
           
-          <li><a title="Introduction" href="mydoc_introduction.html">Introduction</a></li>
+          <li><a title="About this site" href="mydoc_aboutsite.html">About this site</a></li>
           
           
           
           
           
           
-          <li><a title="Supported features" href="mydoc_supported_features.html">Supported features</a></li>
+          <li><a title="Dotfiles" href="mydoc_supported_features.html">Dotfiles</a></li>
           
           
           
           
           
           
-          <li><a title="About the theme author" href="mydoc_about.html">About the theme author</a></li>
+          <li><a title="About the author" href="mydoc_about.html">About the author</a></li>
           
           
           
           
           
           
-          <li><a title="Support" href="mydoc_support.html">Support</a></li>
+          <li><a title="tl;dr" href="mydoc_support.html">tl;dr</a></li>
           
           
           
@@ -285,35 +286,35 @@
           
           
           
-          <li><a title="Ansible" href="mydoc_release_notes_60.html">Ansible</a></li>
+          <li><a title="Ansible" href="mydoc_ansible.html">Ansible</a></li>
           
           
           
           
           
           
-          <li><a title="Git webhook" href="mydoc_release_notes_50.html">Git webhook</a></li>
+          <li><a title="Git webhook" href="mydoc_webhook.html">Git webhook</a></li>
           
           
           
           
           
           
-          <li><a title="Bash pipeline" href="bash-pipeline.html">Bash pipeline</a></li>
+          <li><a title="Bash pipeline" href="mydoc_pipeline.html">Bash pipeline</a></li>
           
           
           
           
           
           
-          <li><a title="Docker" href="docker.html">Docker</a></li>
+          <li><a title="Docker" href="mydoc_docker.html">Docker</a></li>
           
           
           
           
           
           
-          <li><a title="Gitlab" href="gitlab.html">Gitlab</a></li>
+          <li><a title="Gitlab" href="mydoc_gitlab.html">Gitlab</a></li>
           
           
           
@@ -329,35 +330,67 @@
           
           
           
-          <li><a title="Rostopic integration" href="rostopic.html">Rostopic integration</a></li>
+          <li><a title="Django restapi frameworks" href="mydoc_django.html">Django restapi frameworks</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Rostopic integration for GUI" href="#">+Rostopic integration for GUI</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="GUI overview" href="mydoc_rostopic.html">GUI overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="GCS-web" href="tag_gcs_web.html">GCS-web</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Rqt" href="tag_rqt.html">Rqt</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="webrtc" href="tag_webrtc.html">webrtc</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="mqtt" href="tag_mqtt.html">mqtt</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
           
           
           
           
           
           
-          <li><a title="Django restapi frameworks" href="djangorestapi.html">Django restapi frameworks</a></li>
+          <li><a title="Gitlab-github actions" href="mydoc_actions.html">Gitlab-github actions</a></li>
           
           
           
           
           
           
-          <li><a title="Gitlabithub actions" href="mydoc_install_jekyll_on_windows.html">Gitlabithub actions</a></li>
+          <li><a title="pipeline, heroku, mailchimps" href="mydoc_heroku.html">pipeline, heroku, mailchimps</a></li>
           
           
           
           
           
           
-          <li><a title="pipeline, heroku, mailchimps" href="heroku.html">pipeline, heroku, mailchimps</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="others" href="others.html">others</a></li>
+          <li><a title="others" href="mydoc_others.html">others</a></li>
           
           
           
@@ -373,28 +406,28 @@
           
           
           
-          <li><a title="Oscar" href="oscar.html">Oscar</a></li>
+          <li><a title="Oscar" href="mydoc_oscar.html">Oscar</a></li>
           
           
           
           
           
           
-          <li><a title="Raspi" href="raspi.html">Raspi</a></li>
+          <li><a title="Raspi" href="mydoc_raspi.html">Raspi</a></li>
           
           
           
           
           
           
-          <li><a title="Lora" href="lora.html">Lora</a></li>
+          <li><a title="Lora" href="mydoc_lora.html">Lora</a></li>
           
           
           
           
           
           
-          <li><a title="Drone-gui" href="dronegui.html">Drone-gui</a></li>
+          <li><a title="Drone-gui" href="mydoc_drone.html">Drone-gui</a></li>
           
           
           
@@ -438,42 +471,42 @@
           
           
           
-          <li><a title="Django+Vue" href="djangovue.html">Django+Vue</a></li>
+          <li><a title="Django+Vue" href="mydoc_djangovue.html">Django+Vue</a></li>
           
           
           
           
           
           
-          <li><a title="Weather app" href="weather.html">Weather app</a></li>
+          <li><a title="Weather app" href="mydoc_weather.html">Weather app</a></li>
           
           
           
           
           
           
-          <li><a title="Chat app" href="chatapp.html">Chat app</a></li>
+          <li><a title="Chat app" href="mydoc_chatapp.html">Chat app</a></li>
           
           
           
           
           
           
-          <li><a title="Bootstrap" href="bootstrap.html">Bootstrap</a></li>
+          <li><a title="Bootstrap" href="mydoc_bootstrap.html">Bootstrap</a></li>
           
           
           
           
           
           
-          <li><a title="lightup.co.kr/blog" href="lightup.html">lightup.co.kr/blog</a></li>
+          <li><a title="lightup.co.kr/blog" href="mydoc_lightup.html">lightup.co.kr/blog</a></li>
           
           
           
           
           
           
-          <li><a title="lightup.co.kr/admin" href="lightupadmin.html">lightup.co.kr/admin</a></li>
+          <li><a title="lightup.co.kr/admin" href="mydoc_lightupadmin.html">lightup.co.kr/admin</a></li>
           
           
           
@@ -489,28 +522,28 @@
           
           
           
-          <li><a title="DaLrC215" href="dalrc.html">DaLrC215</a></li>
+          <li><a title="DaLrC215" href="mydoc_dalrc.html">DaLrC215</a></li>
           
           
           
           
           
           
-          <li><a title="Dev-skyhero" href="skyhero.html">Dev-skyhero</a></li>
+          <li><a title="Dev-skyhero" href="mydoc_skyhero.html">Dev-skyhero</a></li>
           
           
           
           
           
           
-          <li><a title="MiniCp04" href="minicp.html">MiniCp04</a></li>
+          <li><a title="MiniCp04" href="mydoc_minicp.html">MiniCp04</a></li>
           
           
           
           
           
           
-          <li><a title="Dev-Nazam 02" href="devnazam.html">Dev-Nazam 02</a></li>
+          <li><a title="Dev-Nazam 02" href="mydoc_devnazam.html">Dev-Nazam 02</a></li>
           
           
           
@@ -575,21 +608,42 @@
           
           
           
-          <li><a title="pixhawk4" href="mydoc_commenting_on_files.html">pixhawk4</a></li>
+          <li><a title="pixhawk overview" href="mydoc_pixhwak_overview.html">pixhawk overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+rFlyeval CopterSim" href="#">+rFlyeval CopterSim</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Instrucdtions&&documentation" href="mydoc_commenting_on_files.html">Instrucdtions&&documentation</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Implementating Pixhawk Cube" href="tag_rfly_cube.html">Implementating Pixhawk Cube</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
           
           
           
           
           
           
-          <li><a title="Dev-Apmdr 01 / pixhawk lite" href="">Dev-Apmdr 01 / pixhawk lite</a></li>
+          <li><a title="Dev-Apmdr 01 / pixhawk lite" href="mydoc_apmdr.html">Dev-Apmdr 01 / pixhawk lite</a></li>
           
           
           
           
           
           
-          <li><a title="Cube black" href="">Cube black</a></li>
+          <li><a title="Cube black" href="mydoc_cube.html">Cube black</a></li>
           
           
           
@@ -605,35 +659,35 @@
           
           
           
-          <li><a title="Quad wookong" href="mydoc_build_arguments.html">Quad wookong</a></li>
+          <li><a title="Quad wookong" href="mydoc_quad.html">Quad wookong</a></li>
           
           
           
           
           
           
-          <li><a title="S1000 wookong" href="mydoc_themes.html">S1000 wookong</a></li>
+          <li><a title="S1000 wookong" href="mydoc_s1000.html">S1000 wookong</a></li>
           
           
           
           
           
           
-          <li><a title="S1000 A2" href="mydoc_generating_pdfs.html">S1000 A2</a></li>
+          <li><a title="S1000 A2" href="mydoc_s100a2.html">S1000 A2</a></li>
           
           
           
           
           
           
-          <li><a title="S900 wookong" href="mydoc_help_api.html">S900 wookong</a></li>
+          <li><a title="S900 wookong" href="mydoc_s900.html">S900 wookong</a></li>
           
           
           
           
           
           
-          <li><a title="Nazam" href="mydoc_search_configuration.html">Nazam</a></li>
+          <li><a title="Nazam" href="mydoc_nazam.html">Nazam</a></li>
           
           
           
@@ -670,35 +724,35 @@
           
           
           
-          <li><a title="Yuneec H" href="mydoc_kb_layout.html">Yuneec H</a></li>
+          <li><a title="Yuneec H" href="mydoc_yuneec.html">Yuneec H</a></li>
           
           
           
           
           
           
-          <li><a title="Bebop Parrot" href="mydoc_bebop_auto.md">Bebop Parrot</a></li>
+          <li><a title="Bebop Parrot" href="mydoc_bebop.html">Bebop Parrot</a></li>
           
           
           
           
           
           
-          <li><a title="Jetbot rover" href="mydoc_faq_layout.html">Jetbot rover</a></li>
+          <li><a title="Jetbot rover" href="mydoc_jetbot.html">Jetbot rover</a></li>
           
           
           
           
           
           
-          <li><a title="AGX Xavier rover" href="mydoc_shuffle.html">AGX Xavier rover</a></li>
+          <li><a title="AGX Xavier rover" href="mydoc_xavier.html">AGX Xavier rover</a></li>
           
           
           
           
           
           
-          <li><a title="Vtol & flight data" href="">Vtol & flight data</a></li>
+          <li><a title="Vtol & flight data" href="mydoc_vtol.html">Vtol & flight data</a></li>
           
           
           
@@ -714,42 +768,130 @@
           
           
           
-          <li><a title="My courses" href="mydoc_troubleshooting.html">My courses</a></li>
+          <li><a title="My courses" href="mydoc_mycourse.html">My courses</a></li>
           
           
           
           
           
           
-          <li><a title="Course overview" href="">Course overview</a></li>
+          <li><a title="ncs-ML/DL" href="mydoc_deeplearning.html">ncs-ML/DL</a></li>
           
           
           
           
           
           
-          <li><a title="Portfolio" href="">Portfolio</a></li>
+          <li><a title="C++" href="mydoc_cplus.html">C++</a></li>
           
           
           
           
           
           
-          <li><a title="ncs-ML/DL" href="">ncs-ML/DL</a></li>
+          <li><a title="Web-scraping" href="mydoc_webscraping.html">Web-scraping</a></li>
           
           
           
           
           
           
-          <li><a title="C++" href="">C++</a></li>
+          <li><a title="Challenger project" href="mydoc_challenger-project.html">Challenger project</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="AIOT embedded projects" href="#">AIOT embedded projects</a>
+      <ul>
+          
+          
+          
+          <li><a title="Overview" href="tag_aiotoverview.html">Overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Intel Edison projects" href="#">+Intel Edison projects</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Detection serializer" href="tag_sensor_detection.html">Detection serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Realsense drone" href="tag_realsense.html">Realsense drone</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Edison Arduino" href="tag_edison_arduino.html">Edison Arduino</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collaboration pages" href="tag_collaboration.html">Collaboration pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Troubleshooting pages" href="tag_troubleshooting.html">Troubleshooting pages</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
           
           
           
           
           
           
-          <li><a title="Web-scraping" href="">Web-scraping</a></li>
+          <li><a title="Jetson nano" href="tag_jetson_nano.html">Jetson nano</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Jetson Xavier" href="#">+Jetson Xavier</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="project overview" href="tag_jetson_xavier.html">project overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Raspberry Pi projects" href="tag_raspi.html">Raspberry Pi projects</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Sensor serializer" href="tag_serializer.html">Sensor serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Lora monitoring system" href="tag_lora_monitoring.html">Lora monitoring system</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
           
           
           
@@ -765,11 +907,11 @@
           
           
           
-          <li class="active"><a title="Fiction" href="mydoc_tag_archives_overview.html">Fiction</a></li>
+          <li><a title="Fiction" href="mydoc_fiction.html">Fiction</a></li>
           
           
           
-          <li class="subfolders">
+          <li class="subfolders subfolder-background">
               <a title="Tag archive pages" href="#">Tag archive pages</a>
               <ul>
                   
@@ -823,35 +965,35 @@
           
           
           
-          <li><a title="Web-dev-ops" href="">Web-dev-ops</a></li>
+          <li><a title="Web-dev-ops" href="mydoc_webdev.html">Web-dev-ops</a></li>
           
           
           
           
           
           
-          <li><a title="" href=""></a></li>
+          <li><a title="two scoops of django" href="mydoc_twoscoops.html">two scoops of django</a></li>
           
           
           
           
           
           
-          <li><a title="" href=""></a></li>
+          <li><a title="presentation" href="books_revealjs.html">presentation</a></li>
           
           
           
           
           
           
-          <li><a title="" href=""></a></li>
+          <li><a title="more to come" href="">more to come</a></li>
           
           
           
           
           
           
-          <li><a title="" href=""></a></li>
+          <li><a title="drone companies" href="mydoc_contact.html">drone companies</a></li>
           
           
           
@@ -861,11 +1003,11 @@
      
       
       
-      <!-- if you aren't using the accordion, uncomment this block:
+     
          <p class="external">
              <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
          </p>
-         -->
+       
 </ul>
 
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
@@ -912,7 +1054,10 @@ $('#toc').on('click', 'a', function() {
 });
 </script>
 
-<div id="toc"></div>
+<details>
+  <summary>
+    <div id="toc"></div></summary>
+</details>
 
 
 
@@ -921,7 +1066,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/pages/mydoc/mydoc_tag_archives_overview.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/source-code/pages/mydoc/mydoc_tag_archives_overview.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
@@ -930,30 +1075,6 @@ $('#toc').on('click', 'a', function() {
 <p>Tags provide alternate groupings for your content. In the documentation for this theme, there are a number of equally plausible ways I could have grouped the content. The folder names and items I chose for each item could have been grouped in other ways with good reason.</p>
 
 <p>Tags allow you to go beyond the traditional hierarchical classification and provide other groupings. For example, the same item can belong to two different groups. You can also introduce other dimensions not used in your table of contents, such as platform-specific tags or audience-specific tags.</p>
-
-<p>[]:</p>
-
-<p>[]:</p>
-
-<p>[]:</p>
-
-<p>[]:</p>
-
-<p>[]:</p>
-
-<p>[]:</p>
-
-<p>[]:</p>
-
-<p>[]:</p>
-
-<p>[]:</p>
-
-<p>[]:</p>
-
-<p>[]:</p>
-
-<p>[]:</p>
 
 <p>[]:</p>
 
@@ -972,10 +1093,6 @@ $('#toc').on('click', 'a', function() {
     </div>
 
 
-<div id="commento"></div>
-<script src="https://cdn.commento.io/js/commento.js"></script>
-<noscript>Please enable JavaScript to load the comments.</noscript>
-
 
 
 
@@ -988,9 +1105,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
-               &copy;2021 Copyright 2021 Tonyleekorea. All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Jul 7, 2021 <br />
-<p><img src="images/company_logo.png" alt="Company logo"/></p>
+               &copy;2021 Tonyleekorea. All rights reserved. <br />
+<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Aug 6, 2021 <br />
+<p align="right"><img src="images/tonyillust_atwork.svg" alt="tonyillust" style="width: 20%; max-width: 30%;"/></p>
                 </div>
             </div>
 </footer>

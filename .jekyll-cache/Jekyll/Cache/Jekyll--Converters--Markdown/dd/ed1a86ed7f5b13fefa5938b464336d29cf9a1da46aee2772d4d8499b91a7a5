@@ -1,0 +1,1077 @@
+I"z�<h2 id="docker">Docker</h2>
+
+<p>I’ve been anxious to master this new trendy skill and had a couple of tutors even, but I realized that in all I should practice in real-life rather than trying to learn from a tutor.</p>
+
+<h3 id="github-repos">github repos</h3>
+<ul>
+  <li><a href="https://github.com/aiegoo/node-dockerapp">nodedockerapp</a></li>
+  <li><a href="https://github.com/aiegoo/docker-examples">dockerexample</a></li>
+  <li><a href="https://github.com/aiegoo/docker-exercise">dockerexercise</a></li>
+  <li><a href="https://github.com/aiegoo/docker">docker</a></li>
+  <li><a href="https://github.com/aiegoo/django-docker">djangodocker</a></li>
+  <li><a href="https://github.com/aiegoo/scrappy-development-docker">scrappy</a></li>
+</ul>
+
+<h3 id="udemy-course-list">udemy course list</h3>
+<ul>
+  <li>Docker mastery with kubernetes + swarm from a docker captain <a href="https://github.com/aiegoo/udemy/wiki/devop30">dockermastery</a></li>
+  <li>Net devops: cisco python, automation netconf.sdn, docker <a href="https://github.com/aiegoo/udemy/wiki/devop24">udemywiki</a></li>
+</ul>
+
+<h3 id="books">books</h3>
+
+<h3 id="lesson-github-with-tasks-dockerlesson-and-dockersetup">lesson github with tasks <a href="https://github.com/aiegoo/docker-lesson/wiki/Tasks">dockerlesson</a> and <a href="https://github.com/aiegoo/docker-lesson/wiki/Task-1-Install-and-setup">dockersetup</a></h3>
+
+<blockquote>
+  <p>below is the task wiki page</p>
+</blockquote>
+
+<hr />
+
+<hr />
+
+<h1 id="table-of-contents">Table of Contents</h1>
+
+<ul>
+  <li><a href="#table-of-contents">Table of Contents</a></li>
+  <li><a href="#task-1">Task 1</a>
+    <ul>
+      <li><a href="#install-docker-on-ubuntu">Install Docker on Ubuntu</a>
+        <ul>
+          <li><a href="#install-dependencies">Install dependencies</a></li>
+          <li><a href="#add-dockers-gpg-key">Add Docker’s GPG Key</a></li>
+          <li><a href="#add-repository">Add repository</a></li>
+          <li><a href="#install-docker">Install Docker</a></li>
+        </ul>
+      </li>
+      <li><a href="#create-an-user-defined-bridge-network-with-a-custom-subnet">Create an user defined bridge network with a custom subnet</a></li>
+      <li><a href="#run-a-container-with-a-webui">Run a container with a webUI</a></li>
+      <li><a href="#docker-volumes">Docker Volumes</a></li>
+      <li><a href="#docker-compose">Docker Compose</a>
+        <ul>
+          <li><a href="#install-docker-compose">Install Docker Compose</a></li>
+          <li><a href="#make-the-binary-executable">Make the binary executable</a></li>
+          <li><a href="#deploy-nextcloud-and-postgres-using-docker-compose">Deploy Nextcloud and Postgres using Docker Compose</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#task-2">Task 2</a>
+    <ul>
+      <li><a href="#run-a-webserver-with-ports-80-and-443-bound-to-the-container">Run a webserver with ports 80 and 443 bound to the container</a></li>
+      <li><a href="#fetch-ssl-certificates--redirect">Fetch SSL Certificates &amp; Redirect</a>
+        <ul>
+          <li><a href="#ssl">SSL</a></li>
+          <li><a href="#redirection">Redirection</a></li>
+        </ul>
+      </li>
+      <li><a href="#serve-the-container-through-the-webserver">Serve the container through the webserver</a>
+        <ul>
+          <li><a href="#configuration">Configuration</a></li>
+          <li><a href="#reload-nginx">Reload Nginx</a></li>
+        </ul>
+      </li>
+      <li><a href="#load-balance-multiple-containers">Load balance multiple containers</a>
+        <ul>
+          <li><a href="#docker-1">Docker</a></li>
+          <li><a href="#webserver">Webserver</a></li>
+        </ul>
+      </li>
+      <li><a href="#get-an-extra-ip">Get an extra IP…</a>
+        <ul>
+          <li><a href="#docker-2">Docker</a></li>
+          <li><a href="#nginx">Nginx</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#task-3">Task 3</a>
+    <ul>
+      <li><a href="#portainer-as-the-web-frontend-for-container-management">Portainer as the web frontend for container management</a>
+        <ul>
+          <li><a href="#tool">Tool</a></li>
+          <li><a href="#docker-3">Docker</a></li>
+          <li><a href="#nginx-1">Nginx</a></li>
+        </ul>
+      </li>
+      <li><a href="#use-monitoring-tools-like-fail2ban-to-prevent-abuse">Use monitoring tools like fail2ban to prevent abuse</a>
+        <ul>
+          <li><a href="#tool-1">Tool</a></li>
+          <li><a href="#docker-4">Docker</a></li>
+        </ul>
+      </li>
+      <li><a href="#setup-auto-updates-for-your-containers">Setup auto-updates for your containers</a>
+        <ul>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#docker-5">Docker</a></li>
+        </ul>
+      </li>
+      <li><a href="#think-of-and-deploy-at-least-one-service-that-will-be-actually-of-use-to-you">Think of and deploy (at least one) service that will be actually of use to you</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><a id="org24deff6"></a></p>
+
+<h1 id="task-1">Task 1</h1>
+
+<p><a id="orga28590e"></a></p>
+
+<h2 id="install-docker-on-ubuntu">Install Docker on Ubuntu</h2>
+
+<p>This process lists installation on Ubuntu. Similar steps need to be followed for CentOS.</p>
+
+<p><a id="orgaf5c9e1"></a></p>
+
+<h3 id="install-dependencies">Install dependencies</h3>
+
+<p>Install dependencies required for Docker.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+</code></pre></div></div>
+
+<p><a id="org75515c6"></a></p>
+
+<h3 id="add-dockers-gpg-key">Add Docker’s GPG Key</h3>
+
+<p>Let our system trust the Docker repository to be added.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+</code></pre></div></div>
+
+<p><a id="orgf22b3a4"></a></p>
+
+<h3 id="add-repository">Add repository</h3>
+
+<p>Since Docker is not included in the official repositories, we have to add Docker’s repository which contains essential packages for Docker.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
+sudo apt update
+</code></pre></div></div>
+
+<p><a id="org3754c60"></a></p>
+
+<h3 id="install-docker">Install Docker</h3>
+
+<p>Install Docker (the engine), Docker (the CLI tool), containerd.io (Docker’s container runtime)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install docker-ce docker-ce-cli containerd.io
+</code></pre></div></div>
+
+<p><a id="org2799de2"></a></p>
+
+<h2 id="create-an-user-defined-bridge-network-with-a-custom-subnet">Create an user defined bridge network with a custom subnet</h2>
+
+<p>Docker Networks provide a path to connect containers.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">bridge</code> type network is the default network type used by Docker and it does
+not require a separate MAC address like the <code class="language-plaintext highlighter-rouge">macvlan</code> network type. The simplest
+way to create a Docker Network is:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network create &lt;network-name&gt;
+</code></pre></div></div>
+
+<p>Or more explicitly:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network create --driver=bridge &lt;network-name&gt;
+</code></pre></div></div>
+
+<p>Subnetting is a way to divide networks or IP addresses in a network to smaller
+ranges. For example, something like: <code class="language-plaintext highlighter-rouge">172.20.0.0/16</code> indicates addresses from
+<code class="language-plaintext highlighter-rouge">172.20.0.0</code> to <code class="language-plaintext highlighter-rouge">172.20.255.255</code>. You can read more about subnets <a href="http://www.steves-internet-guide.com/subnetting-subnet-masks-explained/">here</a>.</p>
+
+<p>To create a docker network with a custom subnet:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker network create --driver=bridge --subnet=172.20.0.0/24 &lt;network-name&gt;
+</code></pre></div></div>
+
+<p>Can you tell me what IP addresses are included in the above subnet?</p>
+
+<p><a id="org877bc55"></a></p>
+
+<h2 id="run-a-container-with-a-webui">Run a container with a webUI</h2>
+
+<p>For this example, we’re going to use Nextcloud.</p>
+
+<p>Nextcloud doubles as a file server and as a cloud suite. It offers various tools
+that may be deemed alternatives to something like the google or microsoft suite
+of services.</p>
+
+<p>Nextcloud supports 3 database backends:</p>
+
+<ul>
+  <li>SQLite (only recommended for test instances)</li>
+  <li>MariaDB (official recommendation)</li>
+  <li>PostgreSQL</li>
+</ul>
+
+<p>We’re going to use PostgreSQL. In our last session, I remembered reading that
+Nextcloud has PostgreSQL support until version 11. It turns out to be <a href="https://docs.nextcloud.com/server/latest/admin_manual/installation/system_requirements.html">right</a>.</p>
+
+<p>To run a PostgreSQL container, we need to define a few variables.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POSTGRES_USER=root
+POSTGRES_PASSWORD=root
+</code></pre></div></div>
+
+<p>And save it in a file called <code class="language-plaintext highlighter-rouge">postgres.env</code>. The filename can be anything you
+choose. PostgreSQL stores data in the directory <code class="language-plaintext highlighter-rouge">/var/lib/postgresql/data</code>.
+Thereafter, running the following command deploys postgres.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run \
+    --env-file /path/to/env/file \
+    --detach \
+    --interactive \
+    --name &lt;container-name&gt; \
+    --net &lt;network-name&gt; \
+    --volume /path/to/pgsql/data:/var/lib/postgresql/data
+    --tty \
+    postgres:11
+</code></pre></div></div>
+
+<p>Then we run our Nextcloud instance. Nextcloud saves data in the directory:
+<code class="language-plaintext highlighter-rouge">/var/www/html</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run \
+    --detach \
+    --interactive \
+    --name &lt;container-name&gt; \
+    --net &lt;network-name&gt; \
+    --publish &lt;random-port&gt;:80
+    --volume /path/to/nc/data:/var/www/html
+    --tty \
+    nextcloud
+</code></pre></div></div>
+
+<p>Thereafter open <ip-address>:<random-port> in the browser to get the WebUI.
+Connect the Nextcloud container to the PostgreSQL container and send me a
+screenshot.</random-port></ip-address></p>
+
+<p><a id="orge36380f"></a></p>
+
+<h2 id="docker-volumes">Docker Volumes</h2>
+
+<p>Docker allows storage of stateful data in two ways:</p>
+
+<ul>
+  <li>
+    <p><span class="underline">Docker Volumes</span></p>
+
+    <p>An interface provided by Docker to store and manage data by itself. The
+process of storing data, managing permissions and moving files around is
+abstracted by Docker. The user does not have to worry about permission
+problems that might arise because of a non-existent directory.</p>
+
+    <p>A docker volume can be created as:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker volume create &lt;volume-name&gt;
+</code></pre></div>    </div>
+
+    <p>It can be used as:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run --volume &lt;volume-name&gt;:/path/on/container &lt;image&gt;
+</code></pre></div>    </div>
+
+    <p>The data will be stored somewhere in <code class="language-plaintext highlighter-rouge">/var/lib/docker/volumes/&lt;volume-name&gt;</code>.
+Access to the directory is restricted to the superuser.</p>
+  </li>
+  <li>
+    <p><span class="underline">Filesystem bind-mounts</span></p>
+
+    <p>Exactly the same as <code class="language-plaintext highlighter-rouge">mount --bind</code> which mounts an existing directory or file
+somewhere else so that they’re available at both places. In this case, the
+user needs to worry about permissions and creation of files and folders.</p>
+
+    <p>To use filesystem mounts, create a directory first and then map that directory
+to one inside the container:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p &lt;some-directory&gt;
+    
+docker run --volume /path/to/&lt;some-directory&gt;:/path/in/container &lt;image&gt;
+</code></pre></div>    </div>
+
+    <p>How do you make a bind-mount read-only?</p>
+  </li>
+</ul>
+
+<p><a id="orgfef50e4"></a></p>
+
+<h2 id="docker-compose">Docker Compose</h2>
+
+<p>Whatever tasks we completed until now were done in an imperative manner – we
+performed tasks one by one. This works until you need to reproduce the exact
+same series of steps in some manner or the other, which becomes increasingly
+difficult when you combine deployment + debugging + various other checks.</p>
+
+<p>Hence, docker-compose is a tool by Docker (not included in the packages we’ve
+installed till now) which lets us deploy declaratively. Instead of performing
+tasks one-by-one, we perform them all at once.</p>
+
+<p><a id="orga049c61"></a></p>
+
+<h3 id="install-docker-compose">Install Docker Compose</h3>
+
+<p>Download the binary from GitHub with <code class="language-plaintext highlighter-rouge">curl</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+</code></pre></div></div>
+
+<p><a id="org1cf8e39"></a></p>
+
+<h3 id="make-the-binary-executable">Make the binary executable</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod +x /usr/local/bin/docker-compose
+</code></pre></div></div>
+
+<p><a id="org68bbf72"></a></p>
+
+<h3 id="deploy-nextcloud-and-postgres-using-docker-compose">Deploy Nextcloud and Postgres using Docker Compose</h3>
+
+<ol>
+  <li>
+    <p>The Compose file</p>
+
+    <p>For PostgreSQL and Nextcloud, we can do the following:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.7'
+    
+services:
+  database:
+    container_name: PostgreSQL
+    image: postgres:11
+    restart: unless-stopped
+    env_file:
+      - /path/to/env/file
+    volumes:
+      - "/some/path:/var/lib/postgres/data"
+    networks:
+      - &lt;custom-network&gt;
+  cloud:
+    container_name: Nextcloud
+    image: nextcloud
+    restart: unless-stopped
+    depends_on:
+      - database
+    volumes:
+      - "/some/path:/var/www/html"
+    ports:
+      - "&lt;custom-port&gt;:80"
+    networks:
+      - &lt;custom-network&gt;
+    
+networks:
+  &lt;custom-network&gt;:
+    external:
+      name: &lt;custom-network&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Understanding the Compose file</p>
+
+    <ol>
+      <li>
+        <p>Version</p>
+
+        <p>This is the docker-compose file version we’ll be using. Docker Compose is backwards compatible so we can use any version up till 3.7.</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.7'
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Services</p>
+
+        <p>List of services we’ll be defining:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>services:
+</code></pre></div>        </div>
+
+        <p>Name of the service:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>database:
+</code></pre></div>        </div>
+
+        <p>Container name:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>container_name: PostgreSQL
+</code></pre></div>        </div>
+
+        <p>Image that we’ll be using:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image: postgres:11
+</code></pre></div>        </div>
+
+        <p>We want the service to be restarted if it fails. However with a value of <code class="language-plaintext highlighter-rouge">always</code>,
+the service will continue to restart even if we manually stop it, which is
+troublesome. So a value of <code class="language-plaintext highlighter-rouge">unless-stopped</code> prevents that.</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>restart: unless-stopped
+</code></pre></div>        </div>
+
+        <p>The file which contains the environment variables to be used in the container.
+For example, <code class="language-plaintext highlighter-rouge">POSTGRES_USER=root</code>.</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>env_file:
+  - /path/to/env/file
+</code></pre></div>        </div>
+
+        <p>Mount volumes inside the container:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>volumes:
+  - "/some/path:/var/lib/postgres/data"
+</code></pre></div>        </div>
+
+        <p>Use a network defined in the <code class="language-plaintext highlighter-rouge">networks:</code> section:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>networks:
+  - &lt;custom-network&gt;
+</code></pre></div>        </div>
+
+        <p>When Nextcloud is deployed, <code class="language-plaintext highlighter-rouge">docker-compose</code> automatically deploys <code class="language-plaintext highlighter-rouge">PostgreSQL</code>
+first because of this dependency declaration:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>depends_on:
+  - database
+</code></pre></div>        </div>
+
+        <p>Map a port from host to container:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ports:
+  - "&lt;custom-port&gt;:80"
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Networks</p>
+
+        <p>Define the a list of networks.</p>
+
+        <p>We specify that the <code class="language-plaintext highlighter-rouge">&lt;custom-network&gt;</code> is actually an externally created (user
+created, outside of <code class="language-plaintext highlighter-rouge">docker-compose</code>) network which has the name <code class="language-plaintext highlighter-rouge">&lt;custom-network&gt;.</code></p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>networks:
+  &lt;custom-network&gt;:
+    external:
+      name: &lt;custom-network&gt;
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Deployment</p>
+
+    <p>Now that understanding is out of the way, let’s get to deployment.</p>
+
+    <p>It’s as simple as:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose -f &lt;compose-file-name&gt; up -d
+</code></pre></div>    </div>
+
+    <p><code class="language-plaintext highlighter-rouge">-d</code> tells <code class="language-plaintext highlighter-rouge">docker-compose</code> to run the container in detached mode / the background.
+<code class="language-plaintext highlighter-rouge">-f</code> defaults to <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> if you decide to skip the option.</p>
+
+    <p>The above command will start the services in order.</p>
+
+    <p>If starting a specific service is desired, we can instead do:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose -f &lt;compose-file-name&gt; up -d &lt;service-name&gt;
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><a id="orgdb87a71"></a></p>
+
+<h1 id="task-2">Task 2</h1>
+
+<p>All containers will be deployed with <code class="language-plaintext highlighter-rouge">docker-compose</code>.</p>
+
+<p><a id="orgdc02d16"></a></p>
+
+<h2 id="run-a-webserver-with-ports-80-and-443-bound-to-the-container">Run a webserver with ports 80 and 443 bound to the container</h2>
+
+<p>For this setup, we’re going to use Nginx.</p>
+
+<p>We’re going to use the Alpine image of Nginx because it supports bcrypt
+algorithm for basic authentication.</p>
+
+<p>To deploy <code class="language-plaintext highlighter-rouge">nginx</code>, we can use the following <code class="language-plaintext highlighter-rouge">compose</code> file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.7'
+
+services:
+  webserver:
+    container_name: Nginx
+    image: nginx:alpine
+    restart: unless-stopped
+    volumes:
+      - "/docker/webserver/config:/etc/nginx/conf.d"
+      - "/docker/webserver/certs:/etc/nginx/certs"
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - bridge-network
+
+networks:
+  bridge-network:
+    external:
+      name: bridge-network
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">config</code> directory is for storing nginx configuration and the <code class="language-plaintext highlighter-rouge">certs</code> directory
+is for storing the certificates we’ll fetch in the next step.</p>
+
+<p><a id="org4983b53"></a></p>
+
+<h2 id="fetch-ssl-certificates--redirect">Fetch SSL Certificates &amp; Redirect</h2>
+
+<p><a id="org7ab7400"></a></p>
+
+<h3 id="ssl">SSL</h3>
+
+<ol>
+  <li>
+    <p>Validation Methods</p>
+
+    <p>For SSL certificates, we’re going to use HTTP-01 validation method and the tool
+we’re going to use is <code class="language-plaintext highlighter-rouge">acme.sh</code> which is a simple bash script.</p>
+
+    <p>With HTTP-01 validation, all requests are made to the webserver by the CA
+(Certificate Authority) to validate that you <em>own</em> the domain.</p>
+
+    <p>With DNS-01 validation, all requests are made to your DNS provider instead. An
+attempt is made by <code class="language-plaintext highlighter-rouge">acme.sh</code> to create a TXT record on the DNS provider side and
+it waits some X seconds to verify that those TXT records do exist.</p>
+
+    <p>HTTP-01 validation is useful for one-off domains.</p>
+
+    <p>DNS-01 validation is useful for wildcard certificates; when you have a lot of
+subdomains and would like to have one certificate for all of them.</p>
+  </li>
+  <li>
+    <p>Installing ACME</p>
+
+    <p>Let’s get started by fetching and installing <code class="language-plaintext highlighter-rouge">acme.sh</code> with our certificates
+stored in the webserver’s certs directory.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/Neilpang/acme.sh.git
+    
+cd acme.sh
+    
+./acme.sh \
+    --install  \
+    --config-home /docker/webserver/certs
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Using ACME to fetch certificates</p>
+
+    <p>Since we’re going to be using HTTP-01, we’ll be using <code class="language-plaintext highlighter-rouge">acme.sh</code>’s standalone mode
+which might require installation of <code class="language-plaintext highlighter-rouge">socat</code> on Ubuntu.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>acme.sh \
+    --issue \
+    -d &lt;our-domain&gt; \
+    --standalone \
+    --pre-hook 'docker stop Nginx' \
+    --post-hook 'docker start Nginx'
+</code></pre></div>    </div>
+
+    <p>The pre / post hooks are required because port 80 is bound to Nginx and <code class="language-plaintext highlighter-rouge">acme</code>
+cannot use the port unless the process using the port releases it. That is
+achieved by stopping the container before fetching the certificates and starting
+it thereafter.</p>
+  </li>
+</ol>
+
+<p><a id="org4baf811"></a></p>
+
+<h3 id="redirection">Redirection</h3>
+
+<p>All requests to port 80 can be redirected server side by using this
+configuration snippet.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server {
+  listen 80 default_server;
+  server_name _;
+
+  return 301 https://$host$request_uri;
+}
+</code></pre></div></div>
+
+<p><a id="orge870986"></a></p>
+
+<h2 id="serve-the-container-through-the-webserver">Serve the container through the webserver</h2>
+
+<p>In this step, we’re going to serve the <code class="language-plaintext highlighter-rouge">Nextcloud</code> container we deployed in <a href="#orgc94ac38">Task 1</a>
+through Nginx.</p>
+
+<p><a id="org8a4408b"></a></p>
+
+<h3 id="configuration">Configuration</h3>
+
+<p>Below is the complete configuration (excluding the <a href="#org4baf811">redirection snippet</a> above).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server {
+  # HTTPS only
+  listen 443 ssl http2;
+
+  # Domain
+  server_name &lt;subdomain&gt;.&lt;domain&gt;.&lt;tld&gt;;
+
+  # SSL Certificates
+  ssl_certificate '/etc/nginx/certs/&lt;domain&gt;/fullchain.cer';
+  ssl_certificate_key '/etc/nginx/certs/&lt;domain&gt;/&lt;domain&gt;.key';
+
+
+  location / {
+    proxy_pass http://&lt;backend&gt;:80;
+
+    # https://caddyserver.com/v1/docs/proxy
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-Port $server_port;
+
+    # https://caddyserver.com/v1/docs/proxy
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+  }
+}
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">&lt;backend&gt;</code> can be replaced with an alias or IP of the container.</p>
+
+<p><a id="org97aec67"></a></p>
+
+<h3 id="reload-nginx">Reload Nginx</h3>
+
+<p>Put the above  configuration in a file called <code class="language-plaintext highlighter-rouge">nextcloud.conf</code> in
+<code class="language-plaintext highlighter-rouge">/docker/webserver/config</code> and then restart Nginx with:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker restart Nginx
+</code></pre></div></div>
+
+<p><a id="org0e7779e"></a></p>
+
+<h2 id="load-balance-multiple-containers">Load balance multiple containers</h2>
+
+<p><a id="org446ce51"></a></p>
+
+<h3 id="docker-1">Docker</h3>
+
+<p>First we need to create additional instances of our Nextcloud container. This
+can be done with the help of <code class="language-plaintext highlighter-rouge">docker-compose</code>. First, navigate to where the
+<code class="language-plaintext highlighter-rouge">compose</code> file is stored and then create additional instances with:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># '3' is arbitrary
+docker-compose -f &lt;compose-file-name&gt; up --scale=3
+</code></pre></div></div>
+
+<p><a id="orgc32151f"></a></p>
+
+<h3 id="webserver">Webserver</h3>
+
+<p>Now we need to configure Nginx to resolve to those 3 backends instead of one.
+That can be achieved by defining an <code class="language-plaintext highlighter-rouge">upstream</code> directive such as:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>upstream nextcloud {
+  server &lt;backend-1&gt;
+  server &lt;backend-2&gt;
+  server &lt;backend-3&gt;
+}
+</code></pre></div></div>
+
+<p>Put that at the top of your configuration and refer to it by replacing the
+<code class="language-plaintext highlighter-rouge">&lt;backend&gt;</code> with the <code class="language-plaintext highlighter-rouge">upstream</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+proxy_pass http://nextcloud;
+...
+</code></pre></div></div>
+
+<p><a id="orgbeb8b82"></a></p>
+
+<h2 id="get-an-extra-ip">Get an extra IP…</h2>
+
+<p><a id="org3762d40"></a></p>
+
+<h3 id="docker-2">Docker</h3>
+
+<p>Let’s assume we have two IPs:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">120.120.120.120</code></li>
+  <li><code class="language-plaintext highlighter-rouge">220.220.220.220</code></li>
+</ul>
+
+<p>For two different webservers, our <code class="language-plaintext highlighter-rouge">docker-compose</code> will look like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.7'
+
+services:
+  webserver-1:
+    container_name: Nginx-1
+    image: nginx:alpine
+    restart: unless-stopped
+    volumes:
+      - "/docker/webserver-1/config:/etc/nginx/conf.d"
+      - "/docker/webserver-1/certs:/etc/nginx/certs"
+    ports:
+      - "120.120.120.120:80:80"
+      - "120.120.120.120:443:443"
+    networks:
+      - bridge-network
+  webserver-2:
+    container_name: Nginx-2
+    image: nginx:alpine
+    restart: unless-stopped
+    volumes:
+      - "/docker/webserver-2/config:/etc/nginx/conf.d"
+      - "/docker/webserver-2/certs:/etc/nginx/certs"
+    ports:
+      - "220.220.220.220:80:80"
+      - "220.220.220.220:443:443"
+    networks:
+      - bridge-network
+
+networks:
+  bridge-network:
+    external:
+      name: bridge-network
+</code></pre></div></div>
+
+<p><a id="orga87e541"></a></p>
+
+<h3 id="nginx">Nginx</h3>
+
+<p>We can configure Nginx to resolve to the different instances of the same
+container. We already have more than one instance of our Nextcloud app running
+so our task is reduced.</p>
+
+<p>Nginx-1:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server {
+  # HTTPS only
+  listen 443 ssl http2;
+
+  # Domain
+  server_name &lt;subdomain&gt;-1.&lt;domain&gt;.&lt;tld&gt;;
+
+  # SSL Certificates
+  ssl_certificate '/etc/nginx/certs/&lt;domain&gt;/fullchain.cer';
+  ssl_certificate_key '/etc/nginx/certs/&lt;domain&gt;/&lt;domain&gt;.key';
+
+  location / {
+    proxy_pass http://&lt;backend-1&gt;:80;
+
+    # https://caddyserver.com/v1/docs/proxy
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-Port $server_port;
+
+    # https://caddyserver.com/v1/docs/proxy
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+  }
+}
+</code></pre></div></div>
+
+<p>Nginx-2:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server {
+  # HTTPS only
+  listen 443 ssl http2;
+
+  # Domain
+  server_name &lt;subdomain&gt;-2.&lt;domain&gt;.&lt;tld&gt;;
+
+  # SSL Certificates
+  ssl_certificate '/etc/nginx/certs/&lt;domain&gt;/fullchain.cer';
+  ssl_certificate_key '/etc/nginx/certs/&lt;domain&gt;/&lt;domain&gt;.key';
+
+  location / {
+    proxy_pass http://&lt;backend-2&gt;:80;
+
+    # https://caddyserver.com/v1/docs/proxy
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-Port $server_port;
+
+    # https://caddyserver.com/v1/docs/proxy
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+  }
+}
+</code></pre></div></div>
+
+<p><a id="orgbfe4aeb"></a></p>
+
+<h1 id="task-3">Task 3</h1>
+
+<p><a id="orgb768218"></a></p>
+
+<h2 id="portainer-as-the-web-frontend-for-container-management">Portainer as the web frontend for container management</h2>
+
+<p><a id="org8d6632b"></a></p>
+
+<h3 id="tool">Tool</h3>
+
+<p>Portainer offers a webUI for controlling, monitoring and deploying your
+containers. It is particularly useful when you do not have a dedicated machine
+that is comfortable enough to type or ssh in from.</p>
+
+<p>It also offers paid extensions for role management.</p>
+
+<p><a id="org7a72011"></a></p>
+
+<h3 id="docker-3">Docker</h3>
+
+<p>Since <code class="language-plaintext highlighter-rouge">Portainer</code> will be used to fully manage Docker, it needs full access to the
+<code class="language-plaintext highlighter-rouge">Docker</code> socket.</p>
+
+<p>The compose file looks like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.7'
+
+services:
+  portainer:
+    container_name: Portainer
+    image: portainer/portainer:
+    restart: unless-stopped
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "/docker/portainer/data:/data"
+    networks:
+      - custom-network
+
+networks:
+  custom-network:
+    external:
+      name: custom-network
+</code></pre></div></div>
+
+<p>If you want Portainer to manage containers across multiple networks, add more
+networks in the above compose file.</p>
+
+<p><a id="orgb93114d"></a></p>
+
+<h3 id="nginx-1">Nginx</h3>
+
+<p>We’ll use Nginx to deploy container to the web. The configuration won’t look any
+different than our previous ones. Infact, it’s exactly the same with
+replacements for the subdomain and the backend.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>server {
+  # HTTPS only
+  listen 443 ssl http2;
+
+  # Domain
+  server_name &lt;subdomain&gt;.&lt;domain&gt;.&lt;tld&gt;;
+
+  # SSL Certificates
+  ssl_certificate '/etc/nginx/certs/&lt;domain&gt;/fullchain.cer';
+  ssl_certificate_key '/etc/nginx/certs/&lt;domain&gt;/&lt;domain&gt;.key';
+
+
+  location / {
+    proxy_pass http://&lt;backend&gt;:80;
+
+    # https://caddyserver.com/v1/docs/proxy
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-Port $server_port;
+
+    # https://caddyserver.com/v1/docs/proxy
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+  }
+}
+</code></pre></div></div>
+
+<p><a id="org1287288"></a></p>
+
+<h2 id="use-monitoring-tools-like-fail2ban-to-prevent-abuse">Use monitoring tools like fail2ban to prevent abuse</h2>
+
+<p><a id="org866846c"></a></p>
+
+<h3 id="tool-1">Tool</h3>
+
+<p><code class="language-plaintext highlighter-rouge">fail2ban</code> is a tool that monitors your webserver logs for abuse and limits or
+blocks those IP addresses accordingly. Since Docker manipulates <code class="language-plaintext highlighter-rouge">iptables</code> rules
+on its own, blocking IP addresses on the host is of not much use as all of our
+applications are running in containers. It’s the container traffic that needs to
+be dealt with.</p>
+
+<p>Instead of adding rules to the <code class="language-plaintext highlighter-rouge">INPUT</code> chain, we’ll add rules to the <code class="language-plaintext highlighter-rouge">DOCKER-USER</code>
+chain. This has two advantages:</p>
+
+<ol>
+  <li>Rules are persistent by default as the <code class="language-plaintext highlighter-rouge">DOCKER-USER</code> chain rules are added
+before any other rule. This is handled by Docker by default.</li>
+  <li>IPs get blocked in containers instead of on the host.</li>
+</ol>
+
+<p><a id="org8e1aece"></a></p>
+
+<h3 id="docker-4">Docker</h3>
+
+<p>Since <code class="language-plaintext highlighter-rouge">fail2ban</code> manipulates firewall rules, it needs to have access to the system
+<em>in some form</em>. For that, we need to do the following:</p>
+
+<ul>
+  <li>Run the <code class="language-plaintext highlighter-rouge">fail2ban</code> container in host networking mode instead of bridge networking.</li>
+  <li>Assign the <code class="language-plaintext highlighter-rouge">NET_ADMIN</code> and <code class="language-plaintext highlighter-rouge">NET_RAW</code>. More information about capabilities can be
+found <a href="https://man7.org/linux/man-pages/man7/capabilities.7.html">here</a>.</li>
+</ul>
+
+<p>The docker-compose file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.7'
+
+services:
+  fail2ban:
+    container_name: Fail2ban
+    image: crazymax/fail2ban:latest
+    restart: unless-stopped
+    network_mode: "host"
+    env_file:
+      - "./fail2ban.env"
+    volumes:
+      - "/docker/fail2ban/data:/data"
+      - "/docker/webserver/logs:/var/log:ro"
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+</code></pre></div></div>
+
+<p>See how we don’t need to define networks here?</p>
+
+<p>Note: You need to enable logging in Nginx for this to work. Can you figure out how?</p>
+
+<p><a id="org609bbd1"></a></p>
+
+<h2 id="setup-auto-updates-for-your-containers">Setup auto-updates for your containers</h2>
+
+<p><a id="org3ede4ac"></a></p>
+
+<h3 id="tools">Tools</h3>
+
+<p>For auto-updates, we’re going to use either <code class="language-plaintext highlighter-rouge">Watchtower</code> or <code class="language-plaintext highlighter-rouge">Ouroboros</code>. Both of
+them provide exactly the same functionality. The only difference is former is
+written in Golang and the latter is written in Python.</p>
+
+<p>I’m going with <code class="language-plaintext highlighter-rouge">Watchtower</code> as a random choice.</p>
+
+<p><a id="org77da81d"></a></p>
+
+<h3 id="docker-5">Docker</h3>
+
+<ol>
+  <li>
+    <p>Compose</p>
+
+    <p>To deploy Watchtower, we can write the following compose file:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.7'
+    
+services:
+  auto-updates:
+    container_name: Watchtower
+    image: containerrr/watchtower:latest
+    restart: unless-stopped
+    env_file:
+      - /path/to/env/file
+    volume:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    networks:
+      - custom-network
+    
+networks:
+  custom-network:
+    external:
+      name: custom-network
+</code></pre></div>    </div>
+
+    <p>A filesystem bind-mount is made for the <code class="language-plaintext highlighter-rouge">docker</code> socket because Watchtower needs
+privileges over Docker to update containers which is not really different than
+performing the following steps;</p>
+
+    <ul>
+      <li>Download new image for the container (with the same tag)</li>
+      <li>Stop and remove the running container</li>
+      <li>Create a container with the new image</li>
+    </ul>
+
+    <p>Note: <code class="language-plaintext highlighter-rouge">Watchtower</code> will only monitor and update those containers which are in the
+same network.</p>
+  </li>
+  <li>
+    <p>Environment</p>
+
+    <p>Environment variables can be configured for Watchtower as described <a href="https://containrrr.dev/watchtower/arguments/">here</a>.
+Everything is just a <code class="language-plaintext highlighter-rouge">var=value</code> declaration.</p>
+
+    <p>For example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WATCHTOWER_POLL_INTERVAL=3600
+</code></pre></div>    </div>
+
+    <p>The above changes the frequency of checking for updates from 5 minutes to an hour.</p>
+  </li>
+</ol>
+
+<p><a id="orgc9df158"></a></p>
+
+<h4 id="think-of-and-deploy-at-least-one-service-that-will-be-actually-of-use-to-you">Think of and deploy (at least one) service that will be actually of use to you</h4>
+
+<p>This is an unsupervised task. You can choose any application you want, as long
+as it does not have <em>too many</em> moving parts, deploy it with Docker, secure the
+frontend with Nginx.</p>
+
+<h2 id="example--webrtc">example : webrtc</h2>
+<p><a href="https://webrtchacks.com/webrtc-cv-tensorflow/">resource_download</a></p>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126855734-3bf4b593-944d-40de-a1c6-82dbcef9bee0.png" alt="image" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/webrtcHacks/tfObjWebrtc.git
+cd tfObjWebrtc
+python setup.py install
+</code></pre></div></div>
+
+<ul>
+  <li>docker command</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -it -p 5000:5000 --name tf-webrtchacks -v $(pwd):/code chadhart/tensorflow-object-detection:webrtchacks
+</code></pre></div></div>
+<h3 id="example-aiortc">example: aiortc</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pip install aiohttp aiortc opencv-python
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/jlaine/aiortc
+cd examples/server
+python server.py
+</code></pre></div></div>
+<p>check localhost:8080 and select opitons for audio/video/server.</p>
+
+:ET

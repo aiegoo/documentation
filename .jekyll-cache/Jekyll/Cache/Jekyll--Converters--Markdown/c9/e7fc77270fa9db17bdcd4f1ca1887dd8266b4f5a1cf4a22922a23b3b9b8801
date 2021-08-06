@@ -1,0 +1,155 @@
+I"�+<h2 id="ansible">Ansible</h2>
+
+<p>I have worked on this a couple of months as a part of deploy automation. Ansible is powerful as in itself is a network language affiliated with corporations such as Cisco, Amazon, Openstack, Azure and other paramount vendors in equal standing.</p>
+<h3 id="github-repo">github repo</h3>
+<p>-<a href="https://github.com/aiegoo/ansible">ansible</a></p>
+
+<h3 id="udemy-course-i-have-taken">udemy course I have taken;</h3>
+<ul>
+  <li>DevOps: Automate your infrastructure using Ansible in 9 hours</li>
+  <li>Ansible Essentials Simplicity in Automation <a href="https://github.com/aiegoo/udemy/wiki/devop27">udemyWiki</a></li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="nt">--single-branch</span> <span class="nt">--branch</span> june2 git@github.com:aiegoo/ansible.git
+
+</code></pre></div></div>
+
+<p>Above script will copy the june2 branch of the repository, which contains readme and codes I have worked on. Below is the replicate of the branch readme contents.</p>
+
+<hr />
+
+<hr />
+
+<h1 id="1-introduction">1. Introduction</h1>
+
+<p>We need to configure three kinds of machines -</p>
+
+<ol>
+  <li>Master Server (M)</li>
+  <li>Deployment Servers (X, Y, Z, etc.)</li>
+  <li>Development Machines (A, B, etc.)</li>
+</ol>
+
+<p>where M, X, Y, Z, A, B, etc. refer to the IP addresses of these machines respectively.</p>
+
+<h2 id="11-architecture">1.1 Architecture</h2>
+<p>This is the architecture diagram which will be used for reference.
+<img src="https://github.com/aiegoo/ansible/blob/june2/Architecture.jpg?raw=true" alt="Architecture" title="Architecture" /></p>
+
+<h1 id="2-configuring-master-server-m">2. Configuring Master Server (M)</h1>
+<p>On the Master Server, four things need to be set up which are -</p>
+<ol>
+  <li>A <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server" title="bare git repository">bare git repository</a> (G) that hosts the code and acts like github.com</li>
+  <li>Ansible control node configurations</li>
+  <li>Passwordless SSH into each of the development servers (X, Y, Z, etc.)</li>
+  <li>post-receive hook on the bare repository (G) created in step 1</li>
+</ol>
+
+<h2 id="21-setting-up-the-bare-git-repository">2.1 Setting up the bare git repository</h2>
+<p><a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server" title="This guide">This guide</a> explains the process of creating a bare git repository. Follow this or any other guide to set up your bare repository on this server. It may or may not have shared file server facility as explained <a href="https://mindchasers.com/dev/git-bare" title="here">here</a>. Just create a basic bare git repository which you can push to from one of the development machines (A, B, etc.).
+You can either create a new bare repository -</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init <span class="nt">--bare</span> <span class="nb">.</span>
+</code></pre></div></div>
+<p>or clone an existing repository in bare mode -</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="nt">--bare</span> https://github.com/example/example.git
+</code></pre></div></div>
+
+<h2 id="22-configuring-the-ansible-control-node">2.2 Configuring the Ansible control node</h2>
+<p>The Master server (M) needs to be configured for use as an Ansible control node.
+For this, follow the steps given below -</p>
+
+<h3 id="221-install-ansible">2.2.1 Install Ansible</h3>
+<p>For installing Ansible on (M) follow the steps given <a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html" title="here">here</a>.</p>
+
+<h3 id="222-clone-this-repository">2.2.2 Clone this repository</h3>
+<p>This repository contains the code for ansible playbooks in the branch develop-ansible. Clone it and checkout the branch develop-ansible.
+The expected path where this repository should be cloned on the master server is <code class="language-plaintext highlighter-rouge">/root/</code>
+So, after cloning, the contents of this repository should be inside <code class="language-plaintext highlighter-rouge">/root/ansible/</code> folder. Following is a set of commands you might require -</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /root
+git clone https://github.com/aiegoo/ansible.git
+<span class="nb">cd </span>ansible
+git checkout develop-ansible
+</code></pre></div></div>
+
+<h3 id="223-configure-the-necessary-variables">2.2.3 Configure the necessary variables</h3>
+<p>In the cloned repository, see config variables in the file playbooks/roles/git_update/defaults/main.yml
+You can edit these variables in the editor of your choice. Assuming you use vim, you can refer to this <a href="https://vim.rtorr.com/" title="quick cheatsheet">quick cheatsheet</a> of vim commands. Here are some commands you might need -</p>
+
+<p>Open the file:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi /root/ansible/playbooks/roles/git_update/defaults/main.yml
+</code></pre></div></div>
+<p>Enter INSERT mode by pressing <code class="language-plaintext highlighter-rouge">i</code>, then navigate to the position of the variables given below. Use <code class="language-plaintext highlighter-rouge">DELETE</code> to remove parts you don’t want and type in the text required. When done, press <code class="language-plaintext highlighter-rouge">ESC</code> to reach back to the command mode. Type <code class="language-plaintext highlighter-rouge">:wq</code> to save and quit the file. Repeat as required for as many of the variables given below as required.</p>
+
+<h5 id="2231-github_base_url">2.2.3.1 GITHUB_BASE_URL</h5>
+<p>This is the base URL for the repo you’re trying to set up. For repos hosted on github.com, this will be ‘https://github.com’.
+For a bare repo on, say 52.79.239.222, this will be ‘ssh://root@52.79.239.222:’
+For the latter case, make sure you have passwordless ssh auth from that location and don’t forget the colon at the end. This is explained in the later sections.</p>
+
+<h5 id="2232-github_repo_name">2.2.3.2 GITHUB_REPO_NAME</h5>
+
+<p>This is the complete repo name. For repos hosted on github.com, include the username too, e.g. ‘aiegoo/hanuman’
+For bare repos, this is the full path of the repository e.g. ‘root/repos/project.git’.
+Please note that a ‘/’ is automatically added preceding this value to conjunct correctly with GITHUB_BASE_URL.</p>
+
+<h5 id="2233-github_localdir">2.2.3.3 GITHUB_LOCALDIR</h5>
+
+<p>Path where the repo should be cloned in the target server.</p>
+
+<h5 id="2234-github_default_branch">2.2.3.4 GITHUB_DEFAULT_BRANCH</h5>
+<p>Branch of the repo to be cloned. By default this is ‘master’</p>
+
+<h5 id="2235-list-your-deployment-servers-x-y-z-etc">2.2.3.5 List your deployment servers (X, Y, Z, etc.)</h5>
+<p>Next, configure the list of servers in playbooks/inventory.ini
+Comment out the [localhost] part and add each new server in a new block, e.g.,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[X]
+ip_addr ansible_connection=ssh ansible_user=user ansible_ssh_private_key_file=/home/user/.ssh/id_rsa
+
+[Y]
+ip_addr ansible_connection=ssh ansible_user=user ansible_ssh_private_key_file=/home/user/.ssh/id_rsa
+</code></pre></div></div>
+
+<p>This server block contains 5 parts -</p>
+<h6 id="block-name">Block name</h6>
+<p>This is what you write in square brackets, e.g. [X] and [Y] above.</p>
+<h6 id="ip-address">IP Address</h6>
+<p>This is the IP Address of the deployment server in consideration.</p>
+<h6 id="ansible_connection">ansible_connection</h6>
+<p>This is the type of ansible connection to use. Refer to <a href="https://docs.ansible.com/ansible/latest/plugins/connection.html" title="this">this</a>, and in this case this should be ‘ssh’ so you can leave it as it is.</p>
+<h6 id="ansible_user">ansible_user</h6>
+<p>The username that should be used in your SSH connection to the deployment server in consideration.</p>
+<h6 id="ansible_ssh_private_key">ansible_ssh_private_key</h6>
+<p>The path of the SSH key to be used for this connection on the Master server (M). If you login with ‘root’ user, this should be ‘/root/.ssh/id_rsa’</p>
+
+<h3 id="23-passwordless-ssh">2.3 Passwordless SSH</h3>
+<p>Make sure the servers you add here with ansible_connection=ssh allow passwordless ssh connection from the Master server (M)
+To enable this, follow <a href="https://askubuntu.com/questions/46930/how-can-i-set-up-password-less-ssh-login" title="this guide">this guide</a> for each of the deployment servers you add.
+Basically this boils down to running two commands -</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ssh-keygen <span class="o">(</span>only the first <span class="nb">time</span><span class="o">)</span>
+    ssh-copy-id user@ssh-host <span class="o">(</span><span class="k">for </span>each deployment server<span class="o">)</span>
+</code></pre></div></div>
+<h3 id="24-configuring-the-post-receive-hook">2.4 Configuring the post-receive hook</h3>
+<p>On this bare repo (G) we need to configure the post-receive hook so that it runs ansible when something is pushed to it.
+The ‘post-receive’ hook file is provided in this repository. Copy it to the hooks folder inside your bare git repository.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cp</span> /root/ansible/post-receive /path/to/your/bare/repo.git/hooks/
+</code></pre></div></div>
+<p>Make sure it is executable by running
+<code class="language-plaintext highlighter-rouge">chmod +x post-receive</code></p>
+
+<h1 id="3-configuring-the-deployment-servers">3. Configuring the deployment servers</h1>
+<p>Next, we need to setup the deployment servers that we have listed in 2.2.3.5</p>
+
+<p>For each deployment server (X, Y, Z, etc.), the step 2.3 Passwordless SSH access needs to be performed for connection to the Master server (M). Basically, each deployment machine needs to be able to connect without a password to the Master server (M) as it needs to pull the code from the bare git repo (G) from there.</p>
+
+<h1 id="4-configure-the-development-machines">4. Configure the development machines</h1>
+<p>In each development machine, make sure you have sufficient access to push to the bare git repository hosted at the Master server (M)</p>
+
+<h1 id="5-how-it-all-works">5. How it all works?</h1>
+<p>Refer to the Architecture diagram, when you push something from, say ‘A’ to ‘M’, the file post-receive inside the bare repository is triggered.
+This file runs the script ‘server-update-ansible’.
+In ‘server-update-ansible’, there’s code which runs an ansible playbook.
+This ansible playbook has some configurations as done in 2.2.3.
+he playbook connects with each of the deployment servers, say ‘X’, and pulls the code from the bare git repo.</p>
+
+<p>``</p>
+:ET

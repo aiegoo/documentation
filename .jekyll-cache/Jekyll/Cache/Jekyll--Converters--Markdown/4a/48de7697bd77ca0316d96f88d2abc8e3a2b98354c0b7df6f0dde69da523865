@@ -1,0 +1,31 @@
+I"�<h1 id="wednesday-april-29-2021">Wednesday, April 29, 2021</h1>
+<ul>
+  <li>MEMO: google IoT API*</li>
+  <li>MEMO: https://www.chirpstack.io/gateway-bridge/install/config/</li>
+</ul>
+
+<h2 id="tasks">Tasks</h2>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TASK: ETRI 자료 검토 및 정리</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TASK: 홈페이지 스크롤  / 크롬 이슈 재진단</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />TASK: 개발에 필요한 요구 사항 정리하기 – 계속 정리</li>
+</ul>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+  <li>
+    <p>NOTE: <a href="./29/ETRI_Project.md">ETRI Project</a></p>
+  </li>
+  <li>NOTE: <a href="./29/01. Kora_Italy_R&amp;D_Item00_hightech.hwp">(hwp) 01. Kora Italy R&amp;D Item00 hightech</a></li>
+  <li>NOTE: <a href="./29/02. 기술개발 수요조사서 양식_건축문화재를 위한 통합형 원거리 측정센서 기술개발.hwp">(hwp) 02. 기술개발 수요조사서 양식 건축문화재를 위한 통합형 원거리 측정센서 기술개발</a></li>
+  <li>NOTE: <a href="./29/03. 긴급대응연구 상반기 현안 수요조사_ETRI(문화재).hwp">(hwp) 03. 긴급대응연구 상반기 현안 수요조사 ETRI(문화재)</a></li>
+  <li>NOTE: <a href="./29/ARCH overview for ETRI.pptx">(pptx) ARCH overview for ETRI</a></li>
+  <li>NOTE: <a href="./29/ETRI for ARCH-27-04-2020.docx">(docx) ETRI for ARCH-27-04-2020</a></li>
+</ul>
+
+<p><a href="https://console.cloud.google.com/marketplace/details/google/cloudiot.googleapis.com?returnUrl=%2Fiot%2Fregistries%3F_ga%3D2.164375421.396365871.1588135524-1785057429.1585022316%26pli%3D1%26project%3Ddark-bit-247907%26folder%3D%26organizationId%3D&amp;project=dark-bit-247907&amp;folder&amp;organizationId">Console</a></p>
+
+<p>[]:</p>
+
+:ET

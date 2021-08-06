@@ -1,0 +1,128 @@
+I"<h2 id="dji-quad-custom-frame">dji quad custom frame</h2>
+
+<h3 id="overview">overview</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">frame</td>
+      <td> </td>
+      <td style="text-align: center">FC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">motor</td>
+      <td> </td>
+      <td style="text-align: center">ESC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">RC</td>
+      <td> </td>
+      <td style="text-align: center">mode</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">weight</td>
+      <td> </td>
+      <td style="text-align: center">class</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">battery</td>
+      <td> </td>
+      <td style="text-align: center">air-time</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">configurator</td>
+      <td> </td>
+      <td style="text-align: center">last updated</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="checklist-and-indicator-status">checklist and indicator status</h3>
+<ul>
+  <li>Servo power will shut off 3 seconds after the landing gear has reached its target position.</li>
+  <li>When powering on the system, if the transmitter switch is in the [Upper] position, the LED will flash red quickly as a warning. Toggle the switch to the [Lower] position to continue.</li>
+  <li>If there is an abnormal signal or no signal input into the “IN” port, the LED will slowly flash red. Check receiver and connections for problems.</li>
+  <li>If servo power consumption is too high, the LED will light up red. If this lasts more than 4 seconds, the landing gear will lower and the LED will flash green slowly. Re-calibration is needed beforeflying.</li>
+  <li>A2 flight control system users can use the A2 Assistant to set intelligent gear on the “Advanced” page. Refer to the “A2 user manual” for details</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">LED control</th>
+      <th style="text-align: left">Board Indicator</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">System normal</td>
+      <td style="text-align: left">— Solid green.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Calibration required</td>
+      <td style="text-align: left">Blinks rapid green.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Recalibration required</td>
+      <td style="text-align: left">Blinks slow green.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Calibration failed</td>
+      <td style="text-align: left">— Solid yellow.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Enter calibration mode</td>
+      <td style="text-align: left">Blinks rapid yellow.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">System calibrating</td>
+      <td style="text-align: left">Blinks slow yellow.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Motor stalled</td>
+      <td style="text-align: left">— Solid red.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Unsafe startup alert</td>
+      <td style="text-align: left">Blinks rapid red.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Input signal abnormal</td>
+      <td style="text-align: left">Blinks slow green</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="compass-calibration">compass calibration</h3>
+
+<p>Using the remote controller:</p>
+<ol>
+  <li>Quickly flip the control mode switch from P mode to A mode, and then back to P mode three times, and the Aircraft Status indicator will display a solid yellow light.</li>
+  <li>Hold and rotate the aircraft horizontally 360 degrees, and the Aircraft Status Indicator will display a solid green light.</li>
+  <li>Hold the aircraft vertically with nose pointing downward, and rotate it 360 degrees around the center axis, Recalibrate the compass if the Aircraft Status indicator is solid red.</li>
+</ol>
+:ET

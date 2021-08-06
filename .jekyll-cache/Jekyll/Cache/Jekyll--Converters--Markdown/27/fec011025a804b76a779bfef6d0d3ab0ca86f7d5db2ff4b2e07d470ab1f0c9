@@ -1,0 +1,41 @@
+I"Y<h2 id="django-2-channels-2">django 2 channels 2</h2>
+
+<ul>
+  <li>posgresql module error</li>
+</ul>
+
+<p>Instead of psycopg2, run <code class="language-plaintext highlighter-rouge">pip install psycopg2-binary</code></p>
+
+<ul>
+  <li>postgresql shell</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> <span class="nt">-u</span> postgres psql
+<span class="nv">postgres</span><span class="o">=</span><span class="c"># create database mydb;</span>
+<span class="nv">postgres</span><span class="o">=</span><span class="c"># create user myuser with encrypted password 'mypass';</span>
+<span class="nv">postgres</span><span class="o">=</span><span class="c"># grant all privileges on database mydb to myuser;</span>
+
+<span class="c">## default user of postgres to another</span>
+<span class="nb">sudo</span> <span class="nt">-u</span> postgresql psql
+<span class="nv">postgresql</span><span class="o">=</span><span class="c">#ALTER USER yourusername WITH PASSWORD </span>
+<span class="s1">'set_new_password_without_special_character'</span><span class="p">;</span>
+<span class="c">## after this, run manage.py</span>
+</code></pre></div></div>
+
+<ul>
+  <li>checking postgresql service</li>
+</ul>
+
+<p>``shell
+sudo service postgresql status
+sudo service postgresql start
+sudo netstat -plunt |grep postgres</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- django test permission issue
+
+```shell
+sudo -u postgres psql
+postgres=# =&gt; ALTER USER booktime CREATEDB;
+</code></pre></div></div>
+
+:ET

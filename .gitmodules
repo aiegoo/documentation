@@ -7,3 +7,9 @@
 [submodule "gitteam"]
 	path = gitteam
 	url = git@github.com:aiegoo/gitteam
+[submodule "wiki"]
+	path = wiki
+	url = https://github.com/DroidPlanner/Tower.wiki.git
+[submodule "projects.wiki"]
+	path = projects.wiki
+	url = git@github.com:aiegoo/projects.wiki

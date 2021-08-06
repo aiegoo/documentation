@@ -1,0 +1,208 @@
+I"�:<h2 id="where-to-author-content">Where to author content</h2>
+<p>Use a text editor such as Sublime Text, WebStorm, IntelliJ, Visual Studio Code or Atom to create pages. Atom is recommended because it’s created by Github, which is driving some of the Jekyll development through Github Pages.</p>
+
+<h2 id="where-to-save-pages">Where to save pages</h2>
+
+<p>You can store your pages in any folder structures you want, with any level of folder nesting. The site output will pull all of those pages out of their folders and put them into the root directory. Check out the _site folder, which is where Jekyll is generated, to see the difference between your project’s structure and the resulting site output.</p>
+
+<p>The listing of all pages in the root directory (which happens when you add a permalink property to the pages) is what allows the relative linking and offline viewing of the site to work.</p>
+
+<h2 id="frontmatter">Frontmatter</h2>
+
+<p>Make sure each page has frontmatter at the top like this:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Alerts</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">formatting</span><span class="pi">]</span>
+<span class="na">keywords</span><span class="pi">:</span> <span class="s">notes, tips, cautions, warnings, admonitions</span>
+<span class="na">last_updated</span><span class="pi">:</span> <span class="s">July 3, </span><span class="m">2016</span>
+<span class="na">summary</span><span class="pi">:</span> <span class="s2">"</span><span class="s">You</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">insert</span><span class="nv"> </span><span class="s">notes,</span><span class="nv"> </span><span class="s">tips,</span><span class="nv"> </span><span class="s">warnings,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">important</span><span class="nv"> </span><span class="s">alerts</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">content."</span>
+<span class="na">sidebar</span><span class="pi">:</span> <span class="s">mydoc_sidebar</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">mydoc_alerts.html</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>Frontmatter is always formatted with three hyphens at the top and bottom. Your frontmatter must have a <code class="language-plaintext highlighter-rouge">title</code> and <code class="language-plaintext highlighter-rouge">permalink</code> value. All the other values are optional.</p>
+
+<p>Note that you cannot use variables in frontmatter.</p>
+
+<p>The following table describes each of the frontmatter that you can use with this theme:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Frontmatter</th>
+      <th>Required?</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>title</strong></td>
+      <td>Required</td>
+      <td>The title for the page</td>
+    </tr>
+    <tr>
+      <td><strong>tags</strong></td>
+      <td>Optional</td>
+      <td>Tags for the page. Make all tags single words, with underscores if needed (rather than spaces). Separate them with commas. Enclose the whole list within brackets. Also, note that tags must be added to _data/tags_doc.yml to be allowed entrance into the page. This prevents tags from becoming somewhat random and unstructured. You must create a tag page for each one of your tags following the pattern shown in the tags folder. (Tag pages aren’t automatically created.)</td>
+    </tr>
+    <tr>
+      <td><strong>keywords</strong></td>
+      <td>Optional</td>
+      <td>Synonyms and other keywords for the page. This information gets stuffed into the page’s metadata to increase SEO. The user won’t see the keywords, but if you search for one of the keywords, it will be picked up by the search engine.</td>
+    </tr>
+    <tr>
+      <td><strong>last_updated</strong></td>
+      <td>Optional</td>
+      <td>The date the page was last updated. This information could helpful for readers trying to evaluate how current and authoritative information is. If included, the last_updated date appears in the footer of the page in small font.</td>
+    </tr>
+    <tr>
+      <td><strong>sidebar</strong></td>
+      <td>Required</td>
+      <td>Refers to the sidebar data file for this page. Don’t include the “.yml” file extension for the sidebar — just provide the file name. If no sidebar is specified, this value will inherit the <code class="language-plaintext highlighter-rouge">default</code> property set in your _config.yml file for the page’s frontmatter.</td>
+    </tr>
+    <tr>
+      <td><strong>summary</strong></td>
+      <td>Optional</td>
+      <td>A 1-2 word sentence summarizing the content on the page. This gets formatted into the summary section in the page layout. Adding summaries is a key way to make your content more scannable by users (check out <a href="http://www.nngroup.com/articles/corporate-blogs-front-page-structure/">Jakob Nielsen’s site</a> for a great example of page summaries.) The only drawback with summaries is that you can’t use variables in them.</td>
+    </tr>
+    <tr>
+      <td><strong>permalink</strong></td>
+      <td>Required</td>
+      <td>The permalink <em>must</em> match the filename in order for automated links to work. Additionally, you must include the “.html” in the filename. Do not put forward slashes around the permalink (this makes Jekyll put the file inside a folder in the output). When Jekyll builds the site, it will put the page into the root directory rather than leaving it in a subdirectory or putting it inside a folder and naming the file index.html. Having all files flattened in the root directory is essential for relative linking to work and for all paths to JS and CSS files to be valid.</td>
+    </tr>
+    <tr>
+      <td><strong>datatable</strong></td>
+      <td>Optional</td>
+      <td>‘true’. If you add <code class="language-plaintext highlighter-rouge">datatable: true</code> in the frontmatter, scripts for the <a href="https://www.datatables.net/">jQuery Datatables plugin</a> get included on the page. You can see the scripts that conditionally appear by looking in the _layouts/default.html page.</td>
+    </tr>
+    <tr>
+      <td><strong>toc</strong></td>
+      <td>Optional</td>
+      <td>If you specify <code class="language-plaintext highlighter-rouge">toc: false</code> in the frontmatter, the page won’t have the table of contents that appears below the title. The toc refers to the list of jump links below the page title, not the sidebar navigation. You probably want to hide the TOC on the homepage and product landing pages.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="colons-in-page-titles">Colons in page titles</h2>
+
+<p>If you want to use a colon in your page title, you must enclose the title’s value in quotation marks.</p>
+
+<h2 id="page-names-and-excluding-files-from-outputs">Page names and excluding files from outputs</h2>
+
+<p>By default, everything in your project is included in the output. You can exclude all files that don’t belong to that project by specifying the file name, the folder name, or by using wildcards in your configuration file:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">exclude</span><span class="pi">:</span>
+
+<span class="pi">-</span> <span class="s">filename.md</span>
+<span class="pi">-</span> <span class="s">subfolder_name/</span>
+<span class="pi">-</span> <span class="s">mydoc_*</span>
+<span class="pi">-</span> <span class="s">gitignore</span>
+</code></pre></div></div>
+
+<p>Wildcards will exclude every match after the <code class="language-plaintext highlighter-rouge">*</code>.</p>
+
+<h2 id="saving-pages-as-drafts">Saving pages as drafts</h2>
+
+<p>If you add <code class="language-plaintext highlighter-rouge">published: false</code> in the frontmatter, your page won’t be published. You can also move draft pages into the _drafts folder to exclude them from the build. With posts, you can also keep them as drafts by omitting the date in the title.</p>
+
+<h2 id="markdown-or-html-format">Markdown or HTML format</h2>
+
+<p>Pages can be either Markdown or HTML format (specified through either an .md or .html file extension).</p>
+
+<p>If you use Markdown, you can also include HTML formatting where needed. But if your format is HTML, you must add a <code class="language-plaintext highlighter-rouge">markdown="1"</code> attribute to the element in order to use Markdown inside that HTML element:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div markdown="1"&gt;This is a [link](http://exmaple.com).&lt;/div&gt;
+</code></pre></div></div>
+
+<p>For your Markdown files, note that a space or two indent will set text off as code or blocks, so avoid spacing indents unless intentional.</p>
+
+<p>If you have a lot of HTML, as long as the top and bottom tags of the HTML are flush left in a Markdown file, all the tags inside those bookend HTML tags will render as HTML, regardless of their indentation. (This can be especially useful for tables.)</p>
+
+<h2 id="page-names">Page names</h2>
+
+<p>I recommend prefixing your page names with the product, such as “mydoc_pages” instead of just “pages.” This way if you have other products that also have topics with generic names such as “pages,” there won’t be naming conflicts.</p>
+
+<p>Additionally, consider adding the product name in parentheses after the title, such as “Pages (Mydoc)” so that users can clearly navigate different topics for each product.</p>
+
+<h2 id="kramdown-markdown">Kramdown Markdown</h2>
+
+<p>Kramdown is the Markdown flavor used in the theme but you are free to move to <a href="https://jekyllrb.com/docs/configuration/markdown/#commonmark">CommonMark</a> or <a href="https://jekyllrb.com/docs/configuration/markdown/#redcarpet">Redcarpet</a>. This mostly aligns with Github-flavored Markdown, but with some differences in the indentation allowed within lists. Basically, Kramdown requires you to line up the indent between list items with the first starting character after the space in your list item numbering. See this <a href="http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/">blog post on Kramdown and Rouge</a> for more details.</p>
+
+<p>You can use standard Multimarkdown syntax for tables. You can also use fenced code blocks with lexers specifying the type of code. The configuration file shows the Markdown processor and extension:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+<span class="na">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
+<span class="na">kramdown</span><span class="pi">:</span>
+ <span class="na">input</span><span class="pi">:</span> <span class="s">GFM</span>
+ <span class="na">auto_ids</span><span class="pi">:</span> <span class="no">true</span>
+ <span class="na">hard_wrap</span><span class="pi">:</span> <span class="no">false</span>
+ <span class="na">syntax_highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+</code></pre></div></div>
+
+<h2 id="automatic-mini-tocs">Automatic mini-TOCs</h2>
+
+<p>By default, a TOC appears at the top of your pages and posts. If you don’t want the TOC to appear for a specific page, such as for a landing page or other homepage, add <code class="language-plaintext highlighter-rouge">toc: false</code> in the frontmatter of the page.</p>
+
+<p>The mini-TOC requires you to use the <code class="language-plaintext highlighter-rouge">##</code> Markdown syntax for headings. If you use <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code> elements, you must add an ID attribute for the heading element in order for it to appear in the mini-TOC (for example, <code class="language-plaintext highlighter-rouge">&lt;h2 id="mysampleid"&gt;Heading&lt;/h2&gt;</code>.</p>
+
+<h2 id="headings">Headings</h2>
+
+<p>Use pound signs before the heading title to designate the level. Note that kramdown requires headings to have one space before and after the heading. Without this space above and below, the heading won’t render into HTML.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Second-level heading
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<h2 id="second-level-heading">Second-level heading</h2>
+
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### Third-level heading
+</code></pre></div></div>
+<p><strong>Result:</strong></p>
+
+<h3 id="third-level-heading">Third-level heading</h3>
+
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#### Fourth-level heading
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<h4 id="fourth-level-heading">Fourth-level heading</h4>
+
+<h2 id="someIdTag">Headings with ID Tags</h2>
+
+<p>If you want to use a specific ID tag with your heading, add it like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Headings with ID Tags {#someIdTag}
+</code></pre></div></div>
+
+<p>Then you can reference it with a link like this on the same page:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Some link](#someIdTag)
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<p><a href="#someIdTag">Some link</a></p>
+
+<p>For details about linking to headings on different pages, see <a href="mydoc_hyperlinks.html#bookmarklinks">Automated links to headings on pages</a>.</p>
+
+<h2 id="specify-a-particular-page-layout">Specify a particular page layout</h2>
+
+<p>The configuration file sets the default layout for pages as the “page” layout.</p>
+
+<p>You can create other layouts inside the layouts folder. If you create a new layout, you can specify that your page use your new layout by adding <code class="language-plaintext highlighter-rouge">layout: mylayout.html</code> in the page’s frontmatter. Whatever layout you specify in the frontmatter of a page will override the layout default set in the configuration file.</p>
+
+<h2 id="comments">Comments</h2>
+
+<p>Disqus, a commenting system, is integrated into the theme. In the configuration file, specify the Disqus code for the universal code, and Disqus will appear. If you don’t add a Disqus value, the Disqus form isn’t included.</p>
+
+<p>[]:</p>
+
+:ET

@@ -1,0 +1,410 @@
+I"�C<h2 id="bebop-parrot-drone">Bebop Parrot drone</h2>
+
+<h3 id="bebop-parrot-ardupilot-connection">bebop parrot ardupilot connection</h3>
+<p><a href="https://ardupilot.org/copter/docs/parrot-bebop-autopilot.html">parrotb_bebop_autopilot</a></p>
+
+<p><a href="https://ardupilot.org/dev/docs/building-for-bebop-2.html#building-for-bebop-2">Building_for_bebop2</a></p>
+
+<p><a href="http://wiki.ros.org/action/fullsearch/bebop_autonomy?action=fullsearch&amp;context=180&amp;value=linkto%3A%22bebop_autonomy%22">Bebop_ROS</a></p>
+
+<h3 id="hacking-bebop">hacking bebop</h3>
+<p><a href="https://github.com/autonomylab/bebop-hacking.git">autonomylab</a></p>
+<hr />
+
+<h2 id="building-ardupilot-for-bebop2">building ardupilot for bebop2</h2>
+<p>.. _building-for-bebop-2:</p>
+
+<p>====================
+Building for Bebop 2
+====================</p>
+
+<p>These instructions explain how to use ArduPilot for the
+<code class="language-plaintext highlighter-rouge">Bebop2 &lt;https://www.parrot.com/us/drones/parrot-bebop-2?ref=#parrot-bebop-2-details/&gt;</code>__ on a Linux
+machine. The Bebop 2 is based on the same architecture as the Bebop with
+a few noticeable changes, not the least being a much better quality GPS
+(UBlox GPS with a bigger antenna).</p>
+
+<p>.. warning::</p>
+
+<p>Making the changes described in this article will void your
+   warranty! Parrot’s technical support will not help you with this hack or
+   to recover your original software.</p>
+
+<p>.. warning::</p>
+
+<p>Hacking a commercial product is risky! This software is still evolving.</p>
+
+<p>That said, it is almost always possible to recover a drone and members
+   of the ardupilot dev team can likely help people hacking or recovering
+   their Bebop on <code class="language-plaintext highlighter-rouge">this google group &lt;https://groups.google.com/forum/#!forum/bebop-ardupilot&gt;</code>__.</p>
+
+<h1 id="building-arducopter-for-bebop-2">Building ArduCopter for Bebop 2</h1>
+
+<p>.. tip::</p>
+
+<p>You can skip this step if you just want to try out the
+   (experimental) binary version.</p>
+
+<p>The following steps show how to build a custom version of the Copter
+software for Bebop 2:</p>
+
+<h2 id="install-armhf-toolchain">Install armhf toolchain</h2>
+
+<p>#. Install Parrot’s version of linaro <em>arm-linux-gnueabihf</em> toolchain that can be downloaded from
+   <code class="language-plaintext highlighter-rouge">here &lt;https://firmware.parrot.com/Toolchains/parrot-tools-linuxgnutools-2016.02-linaro_1.0.0-5_amd64.deb&gt;</code>__</p>
+
+<p>#. Install it (the toolchain will be extracted in /opt)</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   sudo dpkg -i parrot-tools-linuxgnutools-2016.02-linaro_1.0.0-5_amd64.deb
+</code></pre></div></div>
+
+<p>#. Add the path to the toolchain to the PATH variable</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   export PATH=/opt/arm-2016.02-linaro/bin:$PATH
+</code></pre></div></div>
+
+<h2 id="download-and-compile-arducopter">Download and compile ArduCopter</h2>
+
+<p>#. Clone ardupilot repository</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   git clone https://github.com/ArduPilot/ardupilot.git
+   cd ardupilot
+   git submodule update --init --recursive
+</code></pre></div></div>
+
+<p>#. Building the flight control firmware is nearly identical for
+   :ref:<code class="language-plaintext highlighter-rouge">building for the Pixhawk &lt;building-px4-with-make&gt;</code>
+   except the build command is:
+#. ::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   ./waf configure --board=bebop
+   ./waf build
+</code></pre></div></div>
+
+<h1 id="uploading-the-firmware">Uploading the Firmware</h1>
+
+<p>Mission Planner can now upload stable and custom versions of ardupilot to the Bebop2.</p>
+
+<p>..  youtube:: Ir0DyvlbTM0
+    :width: 100%</p>
+
+<p>Instructions below are for the manual method of uploading</p>
+
+<p>#. Install adb (android debug tool):</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   sudo apt-get install android-tools-adb
+</code></pre></div></div>
+
+<p>#. Connect to the Bebop2’s WiFi network (BebopDrone-XXXX).
+#. Enable adb server by pressing the power button 4 times.
+#. Connect to the Bebop’s adb server on port 9050:</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   adb connect 192.168.42.1:9050
+</code></pre></div></div>
+
+<p>#. If the previous command returns an error, try again (press the power
+   button 4 times and retry).
+#. Remount the system partition as writeable:</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   adb shell mount -o remount,rw /
+</code></pre></div></div>
+
+<p>#. Push the stripped arducopter binary to the Bebop2:</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   adb mkdir /data/ftp/internal_000/APM
+   adb push arducopter /data/ftp/internal_000/APM/
+</code></pre></div></div>
+
+<h1 id="starting-ardupilot">Starting ArduPilot</h1>
+
+<p>#. Kill the regular autopilot:</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   adb shell
+   kk
+</code></pre></div></div>
+
+<p>#. Launch Copter:</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   cd /data/ftp/internal_000/APM
+   arducopter -A udp:192.168.42.255:14550:bcast -B /dev/ttyPA1 -C udp:192.168.42.255:14551:bcast -l /data/ftp/internal_000/APM/logs -t /data/ftp/internal_000/APM/terrain
+</code></pre></div></div>
+
+<h1 id="launch-copter-at-startup">Launch Copter at startup</h1>
+
+<p>As for Bebop, modify the init script <strong>/etc/init.d/rcS_mode_default</strong>.
+Comment the following line:</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DragonStarter.sh -out2null &amp;
+</code></pre></div></div>
+
+<p>Replace it with:</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/data/ftp/internal_000/APM/arducopter -A udp:192.168.42.255:14550:bcast -B /dev/ttyPA1 -C udp:192.168.42.255:14551:bcast -l /data/ftp/internal_000/APM/logs -t /data/ftp/internal_000/APM/terrain &amp;
+</code></pre></div></div>
+
+<p>#. Enable adb server by pressing the power button 4 times.
+#. Connect to adb server as described before:</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   adb connect 192.168.42.1:9050
+</code></pre></div></div>
+
+<p>#. Re-mount the system partition as writeable:</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   adb shell mount -o remount,rw /
+</code></pre></div></div>
+
+<p>#. In order to avoid editing the file manually, you can download <code class="language-plaintext highlighter-rouge">this one &lt;https://github.com/Parrot-Developers/ardupilot/releases/download/bebop-v0.1/rcS_mode_default&gt;</code>__.
+#. Save the original one and push this one to the bebop
+#. ::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   adb shell cp /etc/init.d/rcS_mode_default /etc/init.d/rcS_mode_default_backup
+   adb push rcS_mode_default /etc/init.d/
+</code></pre></div></div>
+
+<p>#. Sync and reboot:</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   adb shell sync
+   adb shell reboot
+</code></pre></div></div>
+
+<h1 id="recovery">Recovery</h1>
+
+<p>For recovery, you can use the same cable as the one used on Bebop, see
+:ref:<code class="language-plaintext highlighter-rouge">here &lt;building-for-bebop-on-linux_recovery&gt;</code>.</p>
+
+<p>#. Remove the two screws using a torx T6 screwdriver</p>
+
+<p>.. image:: ../images/bebop_remove_screws.jpg
+      :target: ../_images/bebop_remove_screws.jpg</p>
+
+<p>#. Remove the neck by pulling it towards the front of the Bebop</p>
+
+<p>.. image:: ../images/bebop_recovery_remove_neck.jpg
+       :target: ../_images/bebop_recovery_remove_neck.jpg</p>
+
+<p>#. The UART connector is located on the right side</p>
+
+<p>.. image:: ../images/bebop_uart_connection.jpg
+       :target: ../_images/bebop_uart_connection.jpg</p>
+
+<p>#. Plug the cable with the black wire at the front</p>
+
+<p>.. image:: ../images/bebop_connections3.jpg
+       :target: ../_images/bebop_connections3.jpg</p>
+
+<p>#. Connect to the bebop with the UART port using any terminal emulator
+#. Copy the backup rcS file back to its place</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   mount -o remount,rw /
+   cp /etc/init.d/rcS_mode_default_backup /etc/init.d/rcS_mode_default
+</code></pre></div></div>
+
+<p>#. Sync and reboot</p>
+
+<p>::</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   sync
+   reboot
+</code></pre></div></div>
+
+<h1 id="flying-and-rc-over-udp">Flying and RC over UDP</h1>
+
+<p>Flying and RC over UDP instructions are the same as :ref:<code class="language-plaintext highlighter-rouge">the ones for Bebop &lt;building-for-bebop-on-linux_flying&gt;</code></p>
+
+<h1 id="basic-configuration-and-frame-parameters">Basic configuration and frame parameters</h1>
+
+<p>#. The set of tuning parameters can be found
+   <code class="language-plaintext highlighter-rouge">here &lt;https://github.com/ArduPilot/ardupilot/blob/master/Tools/Frame_params/Parrot_Bebop2.param&gt;</code>__.
+   These are not yet fully tuned for Bebop 2
+#. In order to do the basic configuration and calibration, you can use
+   any of the GCSs and perform:</p>
+
+<p>#. Magnetometer Calibration
+   #. RC Calibration
+   #. Accelerometer Calibration</p>
+
+<h1 id="additional-information">Additional information</h1>
+
+<p>The loiter mode quality is very good compared to the first Bebop because
+of the (much better) UBlox GPS. It is now safe to takeoff and land in
+the mode you want.</p>
+
+<p>There is still no support for video yet and the optical flow and sonar
+are currently under development.</p>
+
+<p>This is a good time to participate and help improve them!</p>
+
+<h2 id="bebop-firmware-flashing-with-uart">bebop firmware flashing with UART</h2>
+
+<p>Here is my procedure once you get your usb cable with PIN ID tied to 1.
+Then download the 2 archives here :
+https://drive.google.com/drive/folders/1EWS_rFyLK9QZU39achJWOpyjjL1K6jQP?usp=sharing 28</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> ~/parrot
+<span class="nb">cp </span>Bebop_Tools.tar.gz ~/parrot
+<span class="nb">cd</span> ~/parrot
+<span class="nb">tar</span> <span class="nt">-xvf</span> Bebop_Tools.tar.gz
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> parrot-tools-installer-flashtools_5.9.47_all.deb
+<span class="nb">mkdir</span> ~/.pinstrc
+<span class="nb">cp </span>milos_linux_installer.tar.gz ~/.pinstrc
+<span class="nb">cd</span> ~/.pinstrc
+<span class="nb">tar</span> <span class="nt">-xvf</span> milos_linux_installer.tar.gz
+</code></pre></div></div>
+
+<p>Then unplug the battery of your bebop 2, plug the special USB cable.
+Type <code class="language-plaintext highlighter-rouge">sudo pinst_usb milos linux installer</code>
+Press the power button on your bebop 2.
+Normally you should see messages on the console telling you the flashing is currently ongoing.
+Scan Parrot ROM…</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>– found device : idVendor 0x19cf - idProduct 0x5037 - bcdDevice 0x0100 –
+– Product: P7 USB Boot –
+,
+Send parrot bootloader /home/julien/.pinstrc/milos_inst_usb_bootldr.bin…
+– bootloader loading OK –
+
+Scan ParrotBoot device…
+– found device : idVendor 0x19cf - idProduct 0x1111 - bcdDevice 0x0100 –
+– Product: USB Stage 1 –
+,
+Send installer /home/julien/.pinstrc/milos_linux_installer_installer.plf…
+the transfert took less than 1 second
+– installer loading OK –
+</code></pre></div></div>
+
+<p>Scan Parrot installer…</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>– found device : idVendor 0x19cf - idProduct 0x1000 - bcdDevice 0x2499 –
+– Product: Gadget Serial v2.4 –
+,
+Send payload /home/julien/.pinstrc/milos_linux_installer_payload.plf…
+– 100 % complete –
+the transfert took 26 s (957 KB/s)
+Waiting flashing status…
+– payload flashing OK –
+</code></pre></div></div>
+
+<p>And then you are done, though your bebop has gone back to an old version so you should update it asap to a more recent firmware version.</p>
+<hr />
+
+<hr />
+
+<h2 id="_swarming">_swarming:</h2>
+
+<p>========
+Swarming
+========</p>
+
+<h1 id="swarmingformation-flying-interface-beta">Swarming/Formation-Flying Interface (Beta)</h1>
+
+<p><img src="https://ardupilot.org/planner/_images/radiohub.jpg" alt="Belkin_hub" /></p>
+
+<p>.. image:: ../images/radiohub.jpg
+    :target: ../_images/radiohub.jpg</p>
+
+<p>Mission Planner supports limited “swarming”, or formation-flying with
+multiple UAVs.  At the moment this is in an experimental beta
+implementation, which is admittedly neither easy to use nor 100%
+reliable. However, if you’re interested in multiple-UAV coordination,
+this is a good place to start.</p>
+
+<p>More sophisticated swarming/multiple-UAV control is available in
+QGroundControl and APM Planner 2.0, which are both built on a
+multiple-vehicle architecture. But Mission Planner accomplishes this in
+a limited way by simply opening multiple serial port MAVLink connections
+simultaneously (see four-UAV USB hub above) and passing GPS position
+information from one (“leader”, flying in any mode, from manual to auto)
+to the other (“followers”, flying in Guided mode). The GPS position of
+the leader is adjusted by a set offset and then sent to the followers as
+a series of dynamic waypoints.  In this fashion the followers will
+follow the leader at set X,Y and Z offset distances.</p>
+
+<p>This interface can be entered by pressing Control-F in the Mission
+Planner. That will bring up a pretty crowded box of buttons (see below),
+but the key ones are marked below: identifying the serial port of the
+“follower” UAVs, and the “swarm” button, which will bring up the second
+window, with a grid showing the relative position offset of the other
+UAVs.</p>
+
+<p><img src="https://github.com/ArduPilot/ardupilot_wiki/raw/master/planner/source/images/mp_screen_with_swarming_button.png" alt="swarm_button" /></p>
+
+<p>.. figure:: ../images/mp_screen_with_swarming_button.png
+   :target: ../_images/mp_screen_with_swarming_button.png</p>
+
+<p>Mission Planner: Screen with SwarmButton</p>
+
+<p><strong>Setup Procedure:</strong></p>
+
+<p>#. Plug in one 3DR radio per vehicle
+#. Connect to the “leader” in the Mission Planner
+#. Press Control-F and click “swarm”
+#. Click “set leader”
+#. Click “Connect MAVs” (“MAV” stands for “micro air vehicle”). Click it
+   once for each MAV. As each connects via MAVLink they will appear on
+   the grid
+#. Drag the MAV circles around the grid to set the desired offsets. The
+   Mission Planner assumes that “up” is North.
+#. “Start” will start sending Guided Mode waypoints to all vehicles
+   except the leader.</p>
+
+<p>Now, as you may have guessed, getting the starting position can be the
+hardest. In the grid they are identified by the MAV number and COM port.
+It’s a good idea to tape that MAV number to the physical vehicles
+themselves, so you can correspond the on-screen numbers and grid
+position with the physical layout of the vehicles on the ground.</p>
+
+<p>Currently the code does no path prediction etc. A good place to start is
+with two quadcopters about 20 m apart to test, and work up from there.</p>
+
+<p><strong>First Flight:</strong></p>
+
+<p>#. Take off with the leader, sit at say 2-10 m high (loiter). The leader
+   flight mode doesn’t matter
+#. Click start. This should make the follower take off in guided mode
+   (it will take 3-5 seconds to launch) and sit at the same altitude as
+   the master (assuming you haven’t changed the altitude offsets)
+#. Manually move the leaders, and the 2nd quad (follower) should follow.
+#. When you’re done, manually land the leader. Use the “Land” button to
+   tell the follower to land, too.</p>
+
+<p><strong>Tips</strong></p>
+
+<ul>
+  <li>Don’t close the swarming screen, as it will stop the swarming. (Since
+we use guided mode, if you do the quad will just sit at the last
+commanded location.)</li>
+  <li>The main map interface will show both quads.</li>
+  <li>If you drag the quad around the grid screen, while it’s active. the
+quad should actually move as well.</li>
+  <li>Increase the position stream rate in the mp. config&gt;planner&gt;position.
+to say 5, from the default of 3. to reduce the latency</li>
+</ul>
+
+:ET

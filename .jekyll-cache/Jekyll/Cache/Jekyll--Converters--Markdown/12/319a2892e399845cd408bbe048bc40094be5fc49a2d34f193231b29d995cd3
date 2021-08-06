@@ -1,0 +1,146 @@
+I"~<h2 id="darlc215">Darlc215</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">frame</td>
+      <td> </td>
+      <td style="text-align: center">FC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">motor</td>
+      <td> </td>
+      <td style="text-align: center">ESC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">RC</td>
+      <td> </td>
+      <td style="text-align: center">mode</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">weight</td>
+      <td> </td>
+      <td style="text-align: center">class</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">battery</td>
+      <td> </td>
+      <td style="text-align: center">air-time</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">configurator</td>
+      <td> </td>
+      <td style="text-align: center">last updated</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="highlight">highlight</h3>
+<p><img src="images/dal/dalrc.jpg" alt="dalrc" /></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Highlights
+Angle-adjustable camera mount, with shock-absorber function
+Motor protective mount, with landing gear function
+Multiple antenna holes on upper board and center board, convenient to fix antenna
+1.5MM 3K all carbon fiber upper layer board
+3MM integrated arm and body, super tough
+Smart layout, easy installation
+Adopt imported YFS screw
+Support Mobius 808, Runcam, SJCAM camera
+DL180 is designed for FPV race, all carbon integrated fiber body, super powerful, very tough. It comes with motor protection base and adjustable camera base which can used to change angle
+</code></pre></div></div>
+
+<h3 id="specification">specification</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">General</th>
+      <th style="text-align: left"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Type</td>
+      <td style="text-align: left">Frame Kit</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Material</td>
+      <td style="text-align: left">Carbon fiber</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Size/Weight</td>
+      <td style="text-align: left">Wheelbase: 180mm</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Weight:</td>
+      <td style="text-align: left">80g</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Arm thickness:</td>
+      <td style="text-align: left">3mm</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Parts Recommended (Not included):</td>
+      <td style="text-align: left">Motor: Eachine BG1806 2300KV or Emax PM1806 2300KV motor or Emax MT2204 2300KV Motor(If use 2204 motors, we suggest 4045 props, 4S 1000MAH)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ESC:</td>
+      <td style="text-align: left">10-20A Eachine XM Series 10A ESC BLHeli or EMAX BLHeli Series 12A 20A ESC or Emax Simonk Series 12A 20A ESC or DYS BL16A Mini ESC OPTO or DYS BL20A Mini 20A BLHeli ESC OPTO</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Flight controller:</td>
+      <td style="text-align: left">OpenPilot CC3D Atom or EMAX Skyline32 Naze32</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Propeller:</td>
+      <td style="text-align: left">4 inch HQProp Bullnose 4045 Propeller or Gemfan 4045 Bullnose Propeller or DAL 4045 Propeller</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Battery:</td>
+      <td style="text-align: left">1100MAH 3S, 1500MAH 4S</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Camera:</td>
+      <td style="text-align: left">Mobius ActionCam 808#16 or runcam camera</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Compatible</td>
+      <td style="text-align: left">Racing Quadcopter</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="fc">FC</h2>
+
+<blockquote>
+  <p>Spacing f3 6dot</p>
+</blockquote>
+
+<h2 id="camera">camera</h2>
+
+<blockquote>
+  <p>Aomway</p>
+</blockquote>
+
+<h2 id="controller----stick-mode-2">Controller - 💯 Stick Mode 2</h2>
+
+<blockquote>
+  <p>Devention
+<a href="https://www.manualslib.com/products/Devention-Devo-F12e-3790325.html">site</a>
+<a href="./devo_f12e.pdf">pdf</a></p>
+</blockquote>
+:ET

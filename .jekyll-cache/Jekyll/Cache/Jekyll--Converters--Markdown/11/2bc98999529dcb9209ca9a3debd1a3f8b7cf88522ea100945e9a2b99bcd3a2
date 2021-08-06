@@ -1,0 +1,27 @@
+I"<h2 id="overview">Overview</h2>
+
+<p>This site provides documentation, training, and other notes for the Jekyll Documentation theme. There’s a lot of information about how to do a variety of things here, and it’s not all unique to this theme. But by and large, understanding how to do things in Jekyll depends on how your theme is coded. As a result, these additional details are provided.</p>
+
+<p>The instructions here are geared towards technical writers working on documentation. You may have a team of one or more technical writers working on documentation for multiple projects. You can use this same theme to author all of your documentation for each of your products. The theme is built to accommodate documentation for multiple products on the same site.</p>
+
+<h2 id="survey-of-features">Survey of features</h2>
+
+<p>Some of the more prominent features of this theme include the following:</p>
+
+<ul>
+  <li>Bootstrap framework</li>
+  <li><a href="http://www.komposta.net/article/navgoco">Navgoco multi-level sidebar</a> for table of contents</li>
+  <li>Ability to specify different sidebars for different products</li>
+  <li>Top navigation bar with drop-down menus</li>
+  <li>Notes, tips, and warning information notes</li>
+  <li>Tags for alternative navigation</li>
+  <li>Advanced landing page layouts from the <a href="http://startbootstrap.com/template-overviews/modern-business/">Modern Business theme</a>.</li>
+</ul>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>To get started, see <a href="index.html">Getting Started</a>.</p>
+
+<p>[]:</p>
+
+:ET

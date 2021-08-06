@@ -1,0 +1,77 @@
+I"|<h1 id="installation">Installation</h1>
+
+<p>We provide three different ways to install reveal.js depending on your use case and technical experience.</p>
+<ol>
+  <li>The <a href="#basic-setup">basic setup</a> is the easiest way to get started. No need to set up any build tools.</li>
+  <li>The <a href="#full-setup">full setup</a> gives you access to the build tools needed to make changes to the reveal.js source code. It includes a web server which is required if you want to load external Markdown files (the basic setup paired with your own choice of local web server works too).</li>
+  <li>If you want to use reveal.js as a dependency in your project, you can <a href="#installing-from-npm">install from npm</a>.</li>
+</ol>
+
+<h4 id="next-steps">Next Steps</h4>
+
+<p>Once reveal.js is installed, we recommend checking out the <a href="/markup/">Markup</a> and <a href="/config/">Config Option</a> guides.</p>
+
+<h2 id="basic-setup">Basic Setup</h2>
+
+<p>We make a point of distributing reveal.js in a way that it can be used by as many people as possible. The basic setup is our most broadly accessible way to get started and only requires that you have a web browser. There’s no need to go through a build process or install any dependencies.</p>
+
+<ol>
+  <li>Download the latest reveal.js version <a href="https://github.com/hakimel/reveal.js/archive/master.zip">https://github.com/hakimel/reveal.js/archive/master.zip</a></li>
+  <li>Unzip and replace the example contents in index.html with your own</li>
+  <li>Open index.html in a browser to view it</li>
+</ol>
+
+<p>That’s it 🚀</p>
+
+<h2 id="full-setup---recommendedidfull-setup">Full Setup <span class="text-gray-500 font-normal">- Recommended</span>{id=”full-setup”}</h2>
+
+<p>Some reveal.js features, like external Markdown, require that presentations run from a local web server. The following instructions will set up such a server as well as all of the development tasks needed to make edits to the reveal.js source code.</p>
+
+<ol>
+  <li>
+    <p>Install <a href="https://nodejs.org/">Node.js</a> (10.0.0 or later)</p>
+  </li>
+  <li>Clone the reveal.js repository
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone https://github.com/hakimel/reveal.js.git
+</code></pre></div>    </div>
+  </li>
+  <li>Move to the reveal.js folder and install dependencies
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd </span>reveal.js <span class="o">&amp;&amp;</span> npm <span class="nb">install</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Serve the presentation and monitor source files for changes
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm start
+</code></pre></div>    </div>
+  </li>
+  <li>Open <a href="http://localhost:8000">http://localhost:8000</a> to view your presentation</li>
+</ol>
+
+<h3 id="development-server-port">Development Server Port</h3>
+<p>The development server defaults to port 8000. You can use the the <code class="language-plaintext highlighter-rouge">port</code> argument to switch to a different one:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm start <span class="nt">--</span> <span class="nt">--port</span><span class="o">=</span>8001
+</code></pre></div></div>
+
+<h2 id="installing-from-npm">Installing From npm</h2>
+
+<p>The framework is published to, and can be installed from, <a href="https://www.npmjs.com/package/reveal.js">npm</a>. Note that reveal.js is targeted at the browser and includes CSS, fonts and other assets so the npm dependency use case may be limited.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>reveal.js
+<span class="c"># or</span>
+yarn add reveal.js
+</code></pre></div></div>
+
+<p>Once installed, you can include reveal.js as an ES module:</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">Reveal</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">reveal.js</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Markdown</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">reveal.js/plugin/markdown/markdown.esm.js</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">let</span> <span class="nx">deck</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Reveal</span><span class="p">({</span>
+   <span class="na">plugins</span><span class="p">:</span> <span class="p">[</span> <span class="nx">Markdown</span> <span class="p">]</span>
+<span class="p">})</span>
+<span class="nx">deck</span><span class="p">.</span><span class="nx">initialize</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>You’ll also need to include the reveal.js styles and a <a href="/themes/">presentation theme</a>.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/node_modules/reveal.js/dist/reveal.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/node_modules/reveal.js/dist/theme/black.css"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+:ET

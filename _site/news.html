@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" news, blog, updates, release notes, announcements">
+<meta name="theme-color" content="#72ac4a" />
 <title>News | Tonylee Project Showcase</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -17,7 +18,7 @@
 <link rel="stylesheet" href="css/customstyles.css">
 <link rel="stylesheet" href="css/boxshadowproperties.css">
 <!-- most color styles are extracted out to here -->
-<link rel="stylesheet" href="css/theme-blue.css">
+<link rel="stylesheet" href="css/theme-green.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -41,7 +42,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="aiegoo.github.io/feed.xml">
 
 
 
@@ -98,7 +99,7 @@
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top fixed-top">
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -107,7 +108,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Tonylee Project Documentation</span></a>
+            <a class="fa fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"><img src="images/tony_doc.svg" style="width: 117px; max-width: 12%;"> My Project Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -181,7 +182,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:onofftony@gmail.com?subject=Jekyll documentation theme feedback&body=I have some feedback about the News page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="https://aiegoo.github.io/portfolio">portfolio wiki</a>
 
 </li>
 
@@ -234,33 +235,33 @@
   
   
   <li>
-      <a title="Products" href="#">Products</a>
+      <a title="News" href="#">News</a>
       <ul>
           
           
           
-          <li class="active"><a title="News" href="news.html">News</a></li>
+          <li class="active"><a title="update news" href="news.html">update news</a></li>
           
           
           
           
           
           
-          <li><a title="Theme instructions" href="mydoc_introduction.html">Theme instructions</a></li>
+          <li><a title="weekly focus" href="mydoc_rostopic.html">weekly focus</a></li>
           
           
           
           
           
           
-          <li><a title="Product 1" href="p1_landing_page.html">Product 1</a></li>
+          <li><a title="staging showcase 1" href="p1_landing_page.html">staging showcase 1</a></li>
           
           
           
           
           
           
-          <li><a title="Product 2" href="p2_landing_page.html">Product 2</a></li>
+          <li><a title="staging showcase 2" href="p2_landing_page.html">staging showcase 2</a></li>
           
           
           
@@ -270,11 +271,11 @@
      
       
       
-      <!-- if you aren't using the accordion, uncomment this block:
+     
          <p class="external">
              <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
          </p>
-         -->
+       
 </ul>
 
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
@@ -303,13 +304,89 @@
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/pages/news/news.html" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/source-code/pages/news/news.html" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
    <div class="home">
 
     <div class="post-list">
+        
+
+
+    <h2><a class="post-link" href="progress-update.html">update report on documentation upto 2021 july</a></h2>
+        <span class="post-meta">Aug 1, 2021 /
+            
+
+                <a href="tag_news.html">news</a>, 
+
+                
+
+                <a href="tag_getting_started.html">getting_started</a>
+
+                </span>
+        <p> Integration of css and navigation logics within the site * 6e63423 (HEAD -&gt; gh-pages, origin/gh-pages, origin/HEAD)(Sun Aug 1 10:23:49 2021) lstree exmaple * 44f332b(Sun Aug 1 10:20:53 2021) lstree exmaple * 36a7365(Sun Aug 1 10:07:13 2021) add git config template to webhook.md * fd26087(Sun Aug 1 09:52:30 2021) add... </p>
+
+        
+
+
+    <h2><a class="post-link" href="huge-tip.html">Tools of the trade: How I communicate with project participants (and why)</a></h2>
+        <span class="post-meta">Jul 29, 2021 /
+            
+
+                <a href="tag_news.html">news</a>, 
+
+                
+
+                <a href="tag_getting_started.html">getting_started</a>
+
+                </span>
+        <p> One of my favorite “laws” is Conway’s Law, an adage that organizations will design systems that mirror their communication structure. As I’ve long said, “how you work is as important as what you work on”:  The tools you choose matter. Tools are more than mere convenience. Tools... </p>
+
+        
+
+
+    <h2><a class="post-link" href="fine-print.html">Fine print for use of contents</a></h2>
+        <span class="post-meta">Jul 29, 2021 /
+            
+
+                <a href="tag_news.html">news</a>, 
+
+                
+
+                <a href="tag_getting_started.html">getting_started</a>
+
+                </span>
+        <p> This is my personal site. The opinions expressed herein represent my own, and not those of any employer, group, or organization. You should know that I am not an expert. My views do not constitute legal advice, nor is their validity, accuracy, currentness, or completeness guaranteed. If you need a... </p>
+
+        
+
+
+    <h2><a class="post-link" href="updare-now.html">Update report</a></h2>
+        <span class="post-meta">Jul 28, 2021 /
+            
+
+                <a href="tag_news.html">news</a>
+
+                </span>
+        <p> Wednesday, April 29, 2021  MEMO: google IoT API* MEMO: https://www.chirpstack.io/gateway-bridge/install/config/  Tasks  TASK: ETRI 자료 검토 및 정리 TASK: 홈페이지 스크롤 / 크롬 이슈 재진단 TASK: 개발에 필요한 요구 사항... </p>
+
+        
+
+
+    <h2><a class="post-link" href="samplepost.html">Sample post</a></h2>
+        <span class="post-meta">Feb 26, 2016 /
+            
+
+                <a href="tag_news.html">news</a>, 
+
+                
+
+                <a href="tag_getting_started.html">getting_started</a>
+
+                </span>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries... </p>
+
         
 
 
@@ -350,27 +427,29 @@
 
 []:
 
-[]:
+ </p>
 
-[]:
+        
 
-[]:
 
-[]:
+    <h2><a class="post-link" href="myupdate.html">Welcome to Jekyll!</a></h2>
+        <span class="post-meta">Feb 24, 2016 /
+            
 
-[]:
+                <a href="tag_news.html">news</a>
 
-[]:
+                </span>
+        <p> Theme updates:
 
-[]:
 
-[]:
+  Permalinks
+  Kramdown
+  URL specified in config file
+  removed PDF output
+  removed some of the alternative layouts
+  added blog feature
+  sidebars configurable per page
 
-[]:
-
-[]:
-
-[]:
 
 []:
 
@@ -390,27 +469,19 @@
 
 []:
 
-[]:
+ </p>
 
-[]:
+        
 
-[]:
 
-[]:
+    <h2><a class="post-link" href="test-post-from-last-year.html">Test post from last year</a></h2>
+        <span class="post-meta">Apr 12, 2015 /
+            
 
-[]:
+                <a href="tag_news.html">news</a>
 
-[]:
-
-[]:
-
-[]:
-
-[]:
-
-[]:
-
-[]:
+                </span>
+        <p> This is just a test post from the previous year.
 
 []:
 
@@ -432,10 +503,6 @@
     </div>
 
 
-<div id="commento"></div>
-<script src="https://cdn.commento.io/js/commento.js"></script>
-<noscript>Please enable JavaScript to load the comments.</noscript>
-
 
 
 
@@ -448,9 +515,9 @@
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
-               &copy;2021 Copyright 2021 Tonyleekorea. All rights reserved. <br />
- Site last generated: Jul 7, 2021 <br />
-<p><img src="images/company_logo.png" alt="Company logo"/></p>
+               &copy;2021 Tonyleekorea. All rights reserved. <br />
+ Site last generated: Aug 6, 2021 <br />
+<p align="right"><img src="images/tonyillust_atwork.svg" alt="tonyillust" style="width: 20%; max-width: 30%;"/></p>
                 </div>
             </div>
 </footer>

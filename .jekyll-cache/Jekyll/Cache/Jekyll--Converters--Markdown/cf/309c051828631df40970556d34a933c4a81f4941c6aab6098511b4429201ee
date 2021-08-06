@@ -1,0 +1,74 @@
+I"�<h2 id="about-exclusion">About exclusion</h2>
+<p>By default, all files in your project are included in your output (regardless of whether they’re listed in the sidebar_doc.yml file or not). To exclude files, note them in the <code class="language-plaintext highlighter-rouge">exclude</code> section in the configuration file. Here’s a sample:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+exclude:
+  - mydoc_writers_*
+  - bower_components
+  - Gemfile
+</code></pre></div></div>
+
+<p>If you have different outputs for your site, you’ll want to customize the exclude sections in your various configuration files.</p>
+
+<h2 id="exclude-strategies">Exclude strategies</h2>
+<p>Here’s the process I recommend. Put all files in the root directory of your project. Suppose one project’s name is alpha and the other is beta. Then name each file as follows:</p>
+
+<ul>
+  <li>alpha_sample.html</li>
+  <li>beta_sample.html</li>
+</ul>
+
+<p>In your exclude list for your beta project, specify it as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exclude:
+- alpha_*
+</code></pre></div></div>
+
+<p>In your exclude list for your alpha project, specify it as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exclude:
+- beta_*
+</code></pre></div></div>
+
+<p>If you have more sophisticated exclusion, add another level to your file names. For example, if you have different programming languages you want to filter by, add this:</p>
+
+<ul>
+  <li>alpha_java_sample.html</li>
+  <li>alpha_cpp_sample.html</li>
+</ul>
+
+<p>Then you exclude files for your Alpha C++ project as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exclude:
+
+- alpha_java_*
+- beta_*
+</code></pre></div></div>
+
+<p>And you exclude files for your Alpha Java project as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exclude:
+
+- alpha_cpp_*
+- alpha_beta_*
+</code></pre></div></div>
+
+<p>When you exclude folders, include the trailing slash at the end of the folder name:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exclude:
+- images/alpha/
+</code></pre></div></div>
+
+<p>There isn’t a way to automatically exclude anything. By default, everything is included unless you explicitly list it under the exclude section.</p>
+
+<h2 id="excluding-draft-content">Excluding draft content</h2>
+
+<p>If you’re working on a draft, put it inside the _drafts folder or add <code class="language-plaintext highlighter-rouge">published: false</code> in the frontmatter. The _drafts folder is excluded by default, so you don’t have to specify it in your exclude list.</p>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>What if a file should appear in two projects but not the third? This can get tricky. For some files, rather than using a wildcard, you may need to manually specify the entire filename that you’re excluding instead of excluding it by way of a wildcard pattern.</p>
+
+<p>[]:</p>
+
+:ET

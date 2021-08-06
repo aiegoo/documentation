@@ -1,0 +1,216 @@
+I",?<h2 id="about-alerts">About alerts</h2>
+
+<p>Alerts are little warnings, info, or other messages that you have called out in special formatting. In order to use these alerts or callouts, reference the appropriate value stored in the alerts.yml file as described in the following sections.</p>
+
+<h2 id="alerts">Alerts</h2>
+
+<p>Similar to [inserting images][mydoc_images], you insert alerts through various includes that have been developed. These includes provide templates through which you pass parameters to easily populate the right HTML code.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include note.html content="This is my note. All the content I type here is treated as a single paragraph." %}
+</code></pre></div></div>
+
+<p>Here’s the result:</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This is my note. All the content I type here is treated as a single paragraph.</div>
+
+<p>With alerts, there’s just one include property:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>content</td>
+      <td>The content for the alert.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="blockleveltags">Using block level tags inside the alerts</h2>
+
+<p>If you need multiple paragraphs, enter <code class="language-plaintext highlighter-rouge">&lt;br/&gt;&lt;br/&gt;</code> tags. This is because block level tags aren’t allowed here, as Kramdown is processing the content as Markdown despite the fact that the content is surrounded by HTML tags. Here’s an example with a break:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include note.html content="This is my note. All the content I type here is treated as a single paragraph. &lt;br/&gt;&lt;br/&gt; Now I'm typing on a  new line." %}
+</code></pre></div></div>
+
+<p>Here’s the result:</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This is my note. All the content I type here is treated as a single paragraph. <br /><br /> Now I’m typing on a new line.</div>
+
+<p>The include uses <code class="language-plaintext highlighter-rouge">markdown="span"</code> as an attribute, which means kramdown will process the entire <code class="language-plaintext highlighter-rouge">content</code> as a span. You can’t use block elements such as <code class="language-plaintext highlighter-rouge">p</code> or <code class="language-plaintext highlighter-rouge">div</code> or <code class="language-plaintext highlighter-rouge">pre</code>. If you need these elements, you can either manually surround the content with the HTML from the include, or you can use these tags:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{site.data.alerts.note}}
+&lt;p&gt;This is my note.&lt;/p&gt;
+&lt;pre&gt;
+def foo(x):&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return x+1
+&lt;/pre&gt;
+{{site.data.alerts.end}}
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
+<p>This is my note.</p>
+<pre>
+def foo(x):<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return x+1
+</pre>
+</div>
+
+<p>The same Bootstrap code from the alert is stored in yaml files inside the _data folder. (This was how I previously implemented this code, but since this method was prone to error and didn’t trigger any build warnings or failures when incorrectly coded, I changed the approach to use includes instead.)</p>
+
+<h2 id="types-of-alerts-available">Types of alerts available</h2>
+
+<p>There are four types of alerts you can leverage:</p>
+
+<ul>
+  <li>note.html</li>
+  <li>tip.html</li>
+  <li>warning.html</li>
+  <li>important.html</li>
+</ul>
+
+<p>They function the same except they have a different color, icon, and alert word. You include the different types by selecting the include template you want. Here are samples of each alert:</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> This is my note.</div>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> This is my tip.</div>
+
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> This is my warning.</div>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This is my important info.</div>
+
+<p>These alerts leverage includes stored in the _include folder. The <code class="language-plaintext highlighter-rouge">content</code> option is a parameter that you pass to the include. In the include, the parameter is passed like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div markdown="span" class="alert alert-info" role="alert"&gt;&lt;i class="fa fa-info-circle"&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; {{include.content}}&lt;/div&gt;
+</code></pre></div></div>
+
+<p>The content in <code class="language-plaintext highlighter-rouge">content="This is my note."</code> gets inserted into the <code class="language-plaintext highlighter-rouge">{{include.content}}}</code> part of the template. You can follow this same pattern to build additional includes. See this <a href="http://jekyll.tips/jekyll-casts/includes/">Jekyll screencast on includes</a> or <a href="https://www.youtube.com/watch?v=TJcn_PJ2100">this screencast</a> for more information.</p>
+
+<h2 id="callouts">Callouts</h2>
+
+<p>There’s another type of callout available called callouts. This format is typically used for longer callout that spans more than one or two paragraphs, but really it’s just a stylistic preference whether to use an alert or callout.</p>
+
+<p>Here’s the syntax for a callout:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include callout.html content="This is my callout. It has a border on the left whose color you define by passing a type parameter. I typically use this style of callout when I have more information that I want to share, often spanning multiple paragraphs. " type="primary" %} 
+</code></pre></div></div>
+
+<p>Here’s the result:</p>
+
+<div class="bs-callout bs-callout-primary">This is my callout. It has a border on the left whose color you define by passing a type parameter. I typically use this style of callout when I have more information that I want to share, often spanning multiple paragraphs.</div>
+
+<p>The available properties for callouts are as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>content</td>
+      <td>The content for the callout.</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>The style for the callout. Options are <code class="language-plaintext highlighter-rouge">danger</code>, <code class="language-plaintext highlighter-rouge">default</code>, <code class="language-plaintext highlighter-rouge">primary</code>, <code class="language-plaintext highlighter-rouge">success</code>, <code class="language-plaintext highlighter-rouge">info</code>, and <code class="language-plaintext highlighter-rouge">warning</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The types just define the color of the left border. Each of these callout types get inserted as a class name in the callout template. These class names correspond with styles in Bootstrap. These classes are common Bootstrap class names whose style attributes differ depending on your Bootstrap theme and style definitions.</p>
+
+<p>Here’s an example of each different type of callout:</p>
+
+<div class="bs-callout bs-callout-danger">This is my <strong>danger</strong> type callout. It has a border on the left whose color you define by passing a type parameter.</div>
+
+<div class="bs-callout bs-callout-default">This is my <strong>default</strong> type callout. It has a border on the left whose color you define by passing a type parameter.</div>
+
+<div class="bs-callout bs-callout-primary">This is my <strong>primary</strong> type callout. It has a border on the left whose color you define by passing a type parameter.</div>
+
+<div class="bs-callout bs-callout-success">This is my <strong>success</strong> type callout. It has a border on the left whose color you define by passing a type parameter.</div>
+
+<div class="bs-callout bs-callout-info">This is my <strong>info</strong> type callout. It has a border on the left whose color you define by passing a type parameter.</div>
+
+<div class="bs-callout bs-callout-warning">This is my <strong>warning</strong> type callout. It has a border on the left whose color you define by passing a type parameter.</div>
+
+<p>Now that in contrast to alerts, callouts don’t include the alert word (note, tip, warning, or important). You have to manually include it inside <code class="language-plaintext highlighter-rouge">content</code> if you want it.</p>
+
+<p>To include paragraph breaks, use <code class="language-plaintext highlighter-rouge">&lt;br/&gt;&lt;br/&gt;</code> inside the callout:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include callout.html content="**Important information**: This is my callout. It has a border on the left whose color you define by passing a type parameter. I typically use this style of callout when I have more information that I want to share, often spanning multiple paragraphs. &lt;br/&gt;&lt;br/&gt;Here I am starting a new paragraph, because I have lots of information to share. You may wonder why I'm using line breaks instead of paragraph tags. This is because Kramdown processes the Markdown here as a span rather than a div (for whatever reason). Be grateful that you can be using Markdown at all inside of HTML. That's usually not allowed in Markdown syntax, but it's allowed here." type="primary" %} 
+</code></pre></div></div>
+
+<p>Here’s the result:</p>
+
+<div class="bs-callout bs-callout-primary"><strong>Important information</strong>: This is my callout. It has a border on the left whose color you define by passing a type parameter. I typically use this style of callout when I have more information that I want to share, often spanning multiple paragraphs. <br /><br />Here I am starting a new paragraph, because I have lots of information to share. You may wonder why I’m using line breaks instead of paragraph tags. This is because Kramdown processes the Markdown here as a span rather than a div (for whatever reason). Be grateful that you can be using Markdown at all inside of HTML. That’s usually not allowed in Markdown syntax, but it’s allowed here.</div>
+
+<h2 id="use-liquid-variables-inside-parameters-with-includes">Use Liquid variables inside parameters with includes</h2>
+
+<p>Suppose you have a product name or some other property that you’re storing as a variable in your configuration file (_config.yml), and you want to use this variable in the <code class="language-plaintext highlighter-rouge">content</code> parameter for your alert or callout. You will get an error if you use Liquid syntax inside a include parameter. For example, this syntax will produce an error:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include note.html content="The {{site.company}} is pleased to announce an upcoming release." %}
+</code></pre></div></div>
+
+<p>The error will say something like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Liquid Exception: Invalid syntax for include tag. File contains invalid characters or sequences: ... Valid syntax: {% include file.ext param='value' param2='value' %}
+</code></pre></div></div>
+
+<p>To use variables in your include parameters, you must use the “variable parameter” approach. First you use a <code class="language-plaintext highlighter-rouge">capture</code> tag to capture some content. Then you reference this captured tag in your include. Here’s an example.</p>
+
+<p>In my site configuration file (_congfig.yml), I have a property called <code class="language-plaintext highlighter-rouge">company_name</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">company_name</span><span class="pi">:</span> <span class="s">Your company</span>
+</code></pre></div></div>
+
+<p>I want to use this variable in my note include.</p>
+
+<p>First, before the note I capture the content for my note’s include like this:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="nv">company_note</span><span class="w"> </span><span class="p">%}</span>The <span class="p">{{</span><span class="nv">site</span><span class="p">.</span><span class="nv">company_name</span><span class="p">}}</span> company is pleased to announce an upcoming release.<span class="p">{%</span><span class="w"> </span><span class="nt">endcapture</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>Now reference the <code class="language-plaintext highlighter-rouge">company_note</code> in your <code class="language-plaintext highlighter-rouge">include</code> parameter like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include note.html content=company_note}
+</code></pre></div></div>
+
+<p>Here’s the result:</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The Tonyleekorea is pleased to announce an upcoming release.</div>
+
+<p>Note the omission of quotation marks with variable parameters.</p>
+
+<p>Also note that instead of storing the variable in your site’s configuration file, you could also put the variable in your page’s frontmatter. Then instead of using <code class="language-plaintext highlighter-rouge">{{site.company_name}}</code> you would use <code class="language-plaintext highlighter-rouge">{{page.company_name}}</code>.</p>
+
+<h2 id="markdown-inside-of-callouts-and-alerts">Markdown inside of callouts and alerts</h2>
+
+<p>You can use Markdown inside of callouts and alerts, even though this content actually gets inserted inside of HTML in the include. This is one of the advantages of kramdown Markdown. The include template has an attribute of <code class="language-plaintext highlighter-rouge">markdown="span"</code> that allows for the processor to parse Markdown inside of HTML.</p>
+
+<h2 id="validity-checking">Validity checking</h2>
+
+<p>If you have some of the syntax wrong with an alert or callout, you’ll see an error when Jekyll tries to build your site. The error may look like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Liquid Exception: Invalid syntax for include tag: content="This is my **info** type callout. It has a border on the left whose color you define by passing a type parameter. type="info" Valid syntax: {% include file.ext param='value' param2='value' %} in mydoc/mydoc_alerts.md 
+</code></pre></div></div>
+
+<p>These errors are a good thing, because it lets you know there’s an error in your syntax. Without the errors, you may not realize that you coded something incorrectly until you see the lack of alert or callout styling in your output.</p>
+
+<p>In this case, the quotation marks aren’t set correctly. I forgot the closing quotation mark for the content parameter include.</p>
+
+<h2 id="blast-a-warning-to-users-on-every-page">Blast a warning to users on every page</h2>
+
+<p>If you want to blast a warning to users on every page, add the alert or callout to the _layouts/page.html page right below the frontmatter. Every page using the page layout (all, by default) will show this message.</p>
+
+<p>[]:</p>
+
+:ET

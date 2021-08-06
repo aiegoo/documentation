@@ -119,6 +119,7 @@ github: [metadata]
 
 plugins:
 #  - jemoji
+   - kramdown-parser-gfm
 
 
 # Where things are

@@ -1,0 +1,123 @@
+I"�<h2 id="image-include-template">Image Include Template</h2>
+
+<p>Instead of using Markdown or HTML syntax directly in your page for images, the syntax for images has been extracted out into an image include that allows you to pass the parameters you need. Include the image.html like this:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>image.html<span class="w"> </span><span class="na">file</span><span class="o">=</span><span class="s2">"jekyll.png"</span><span class="w"> </span><span class="na">url</span><span class="o">=</span><span class="s2">"http://jekyllrb.com"</span><span class="w"> </span><span class="na">alt</span><span class="o">=</span><span class="s2">"Jekyll"</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"This is a sample caption"</span><span class="w"> </span><span class="p">%}</span>
+
+</code></pre></div></div>
+
+<p>The available include properties are as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>file</td>
+      <td>The name of the file. Store it in the /images folder. If you want to organize your images in subfolders, reference the subfolder path here, like this: <code class="language-plaintext highlighter-rouge">mysubfolder/jekyllrb.png</code></td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>Whether to link the image to a URL</td>
+    </tr>
+    <tr>
+      <td>alt</td>
+      <td>Alternative image text for accessibility and SEO</td>
+    </tr>
+    <tr>
+      <td>caption</td>
+      <td>A caption for the image</td>
+    </tr>
+    <tr>
+      <td>max-width</td>
+      <td>a maximum width for the image (in pixels). Just specify the number, not px.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The properties of the include get populated into the image.html template.</p>
+
+<p>Here’s the result:</p>
+
+<figure><a class="no_icon" target="_blank" rel="noopener" href="http://jekyllrb.com"><img class="docimage" src="images/jekyll.png" alt="Jekyll" /></a><figcaption>This is a sample caption</figcaption></figure>
+
+<h2 id="inline-image-includes">Inline image includes</h2>
+
+<p>For inline images, such as with a button that you want to appear inline with text, use the inline_image.html include, like this:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Click the **Android SDK Manager** button <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>inline_image.html<span class="err">
+</span><span class="na">file</span><span class="o">=</span><span class="s2">"androidsdkmanagericon.png"</span><span class="w"> </span><span class="na">alt</span><span class="o">=</span><span class="s2">"SDK button"</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>Click the <strong>Android SDK Manager</strong> button <img class="inline" src="images/androidsdkmanagericon.png" alt="SDK button" /></p>
+
+<p>The inline_image.html include properties are as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>file</td>
+      <td>The name of the file</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>The type of file (png, svg, and so on)</td>
+    </tr>
+    <tr>
+      <td>alt</td>
+      <td>Alternative image text for accessibility and SEO</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="svg-images">SVG Images</h2>
+
+<p>You can also embed SVG graphics. If you use SVG, you need to use the HTML syntax so that you can define a width/container for the graphic. Here’s a sample embed:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>image.html<span class="w"> </span><span class="na">file</span><span class="o">=</span><span class="s2">"helpapi.svg"</span><span class="w"> </span><span class="na">url</span><span class="o">=</span><span class="s2">"http://idratherbewriting.com/documentation-theme-jekyll/mydoc_help_api/"</span><span class="w"> </span><span class="na">alt</span><span class="o">=</span><span class="s2">"Building a Help API"</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"A help API provides a JSON file at a web URL with content that can be pulled into different targets"</span><span class="w"> </span><span class="na">max-width</span><span class="o">=</span><span class="s2">"600"</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>Here’s the result:</p>
+
+<figure><a class="no_icon" target="_blank" rel="noopener" href="http://idratherbewriting.com/documentation-theme-jekyll/mydoc_help_api/"><img class="docimage" src="images/helpapi.svg" alt="Building a Help API" style="max-width: 600px" /></a><figcaption>A help API provides a JSON file at a web URL with content that can be pulled into different targets</figcaption></figure>
+
+<p>The stylesheet even handles SVG display in IE 9 and earlier through the following style (based on this <a href="https://gist.github.com/larrybotha/7881691">gist</a>):</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/*
+ * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+ *
+ * [1] IE9
+ * [2] IE10+
+ */</span>
+<span class="c">/* 1 */</span>
+<span class="nc">.ie9</span> <span class="nt">img</span><span class="o">[</span><span class="nt">src</span><span class="err">$</span><span class="o">=</span><span class="s1">".svg"</span><span class="o">]</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* 2 */</span>
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">-ms-high-contrast</span><span class="p">:</span> <span class="n">active</span><span class="p">),</span> <span class="p">(</span><span class="n">-ms-high-contrast</span><span class="p">:</span> <span class="nb">none</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nt">img</span><span class="o">[</span><span class="nt">src</span><span class="err">$</span><span class="o">=</span><span class="s1">".svg"</span><span class="o">]</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Also, if you’re working with SVG graphics, note that Firefox does not support SVG fonts. In Illustrator, when you do a Save As with your AI file and choose SVG, to preserve your fonts, in the Font section, select “Convert to outline” as the Type (don’t choose SVG in the Font section).</p>
+
+<p>Also, remove the check box for “Use textpath element for text on a path”. And select “Embed” rather than “Link.” The following screenshot shows the settings I use. Your graphics will look great in Firefox.</p>
+
+<figure><img class="docimage" src="images/illustratoroptions.png" alt="" /><figcaption>Essential options for SVG with Illustrator</figcaption></figure>
+
+<p>[]:</p>
+
+:ET

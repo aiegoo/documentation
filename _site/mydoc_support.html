@@ -5,8 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Contact me for any support issues.">
-<meta name="keywords" content="getting_startedtroubleshooting,  questions, troubleshooting, contact, support">
-<title>Support | Tonylee Project Showcase</title>
+<meta name="keywords" content="getting_starteddronegcs,  questions, troubleshooting, contact, support">
+<meta name="theme-color" content="#72ac4a" />
+<title>Rules of thumb | Tonylee Project Showcase</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,7 +18,7 @@
 <link rel="stylesheet" href="css/customstyles.css">
 <link rel="stylesheet" href="css/boxshadowproperties.css">
 <!-- most color styles are extracted out to here -->
-<link rel="stylesheet" href="css/theme-blue.css">
+<link rel="stylesheet" href="css/theme-green.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -41,7 +42,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="aiegoo.github.io/feed.xml">
 
 
 
@@ -98,7 +99,7 @@
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top fixed-top">
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -107,7 +108,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Tonylee Project Documentation</span></a>
+            <a class="fa fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"><img src="images/tony_doc.svg" style="width: 117px; max-width: 12%;"> My Project Documentation</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -181,7 +182,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:onofftony@gmail.com?subject=Jekyll documentation theme feedback&body=I have some feedback about the Support page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="https://aiegoo.github.io/portfolio">portfolio wiki</a>
 
 </li>
 
@@ -201,7 +202,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Support">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Rules of thumb">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -248,28 +249,28 @@
           
           
           
-          <li><a title="Introduction" href="mydoc_introduction.html">Introduction</a></li>
+          <li><a title="About this site" href="mydoc_aboutsite.html">About this site</a></li>
           
           
           
           
           
           
-          <li><a title="Supported features" href="mydoc_supported_features.html">Supported features</a></li>
+          <li><a title="Dotfiles" href="mydoc_supported_features.html">Dotfiles</a></li>
           
           
           
           
           
           
-          <li><a title="About the theme author" href="mydoc_about.html">About the theme author</a></li>
+          <li><a title="About the author" href="mydoc_about.html">About the author</a></li>
           
           
           
           
           
           
-          <li class="active"><a title="Support" href="mydoc_support.html">Support</a></li>
+          <li class="active"><a title="tl;dr" href="mydoc_support.html">tl;dr</a></li>
           
           
           
@@ -285,35 +286,35 @@
           
           
           
-          <li><a title="Ansible" href="mydoc_release_notes_60.html">Ansible</a></li>
+          <li><a title="Ansible" href="mydoc_ansible.html">Ansible</a></li>
           
           
           
           
           
           
-          <li><a title="Git webhook" href="mydoc_release_notes_50.html">Git webhook</a></li>
+          <li><a title="Git webhook" href="mydoc_webhook.html">Git webhook</a></li>
           
           
           
           
           
           
-          <li><a title="Bash pipeline" href="bash-pipeline.html">Bash pipeline</a></li>
+          <li><a title="Bash pipeline" href="mydoc_pipeline.html">Bash pipeline</a></li>
           
           
           
           
           
           
-          <li><a title="Docker" href="docker.html">Docker</a></li>
+          <li><a title="Docker" href="mydoc_docker.html">Docker</a></li>
           
           
           
           
           
           
-          <li><a title="Gitlab" href="gitlab.html">Gitlab</a></li>
+          <li><a title="Gitlab" href="mydoc_gitlab.html">Gitlab</a></li>
           
           
           
@@ -329,35 +330,67 @@
           
           
           
-          <li><a title="Rostopic integration" href="rostopic.html">Rostopic integration</a></li>
+          <li><a title="Django restapi frameworks" href="mydoc_django.html">Django restapi frameworks</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Rostopic integration for GUI" href="#">+Rostopic integration for GUI</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="GUI overview" href="mydoc_rostopic.html">GUI overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="GCS-web" href="tag_gcs_web.html">GCS-web</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Rqt" href="tag_rqt.html">Rqt</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="webrtc" href="tag_webrtc.html">webrtc</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="mqtt" href="tag_mqtt.html">mqtt</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
           
           
           
           
           
           
-          <li><a title="Django restapi frameworks" href="djangorestapi.html">Django restapi frameworks</a></li>
+          <li><a title="Gitlab-github actions" href="mydoc_actions.html">Gitlab-github actions</a></li>
           
           
           
           
           
           
-          <li><a title="Gitlabithub actions" href="mydoc_install_jekyll_on_windows.html">Gitlabithub actions</a></li>
+          <li><a title="pipeline, heroku, mailchimps" href="mydoc_heroku.html">pipeline, heroku, mailchimps</a></li>
           
           
           
           
           
           
-          <li><a title="pipeline, heroku, mailchimps" href="heroku.html">pipeline, heroku, mailchimps</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="others" href="others.html">others</a></li>
+          <li><a title="others" href="mydoc_others.html">others</a></li>
           
           
           
@@ -373,28 +406,28 @@
           
           
           
-          <li><a title="Oscar" href="oscar.html">Oscar</a></li>
+          <li><a title="Oscar" href="mydoc_oscar.html">Oscar</a></li>
           
           
           
           
           
           
-          <li><a title="Raspi" href="raspi.html">Raspi</a></li>
+          <li><a title="Raspi" href="mydoc_raspi.html">Raspi</a></li>
           
           
           
           
           
           
-          <li><a title="Lora" href="lora.html">Lora</a></li>
+          <li><a title="Lora" href="mydoc_lora.html">Lora</a></li>
           
           
           
           
           
           
-          <li><a title="Drone-gui" href="dronegui.html">Drone-gui</a></li>
+          <li><a title="Drone-gui" href="mydoc_drone.html">Drone-gui</a></li>
           
           
           
@@ -438,42 +471,42 @@
           
           
           
-          <li><a title="Django+Vue" href="djangovue.html">Django+Vue</a></li>
+          <li><a title="Django+Vue" href="mydoc_djangovue.html">Django+Vue</a></li>
           
           
           
           
           
           
-          <li><a title="Weather app" href="weather.html">Weather app</a></li>
+          <li><a title="Weather app" href="mydoc_weather.html">Weather app</a></li>
           
           
           
           
           
           
-          <li><a title="Chat app" href="chatapp.html">Chat app</a></li>
+          <li><a title="Chat app" href="mydoc_chatapp.html">Chat app</a></li>
           
           
           
           
           
           
-          <li><a title="Bootstrap" href="bootstrap.html">Bootstrap</a></li>
+          <li><a title="Bootstrap" href="mydoc_bootstrap.html">Bootstrap</a></li>
           
           
           
           
           
           
-          <li><a title="lightup.co.kr/blog" href="lightup.html">lightup.co.kr/blog</a></li>
+          <li><a title="lightup.co.kr/blog" href="mydoc_lightup.html">lightup.co.kr/blog</a></li>
           
           
           
           
           
           
-          <li><a title="lightup.co.kr/admin" href="lightupadmin.html">lightup.co.kr/admin</a></li>
+          <li><a title="lightup.co.kr/admin" href="mydoc_lightupadmin.html">lightup.co.kr/admin</a></li>
           
           
           
@@ -489,28 +522,28 @@
           
           
           
-          <li><a title="DaLrC215" href="dalrc.html">DaLrC215</a></li>
+          <li><a title="DaLrC215" href="mydoc_dalrc.html">DaLrC215</a></li>
           
           
           
           
           
           
-          <li><a title="Dev-skyhero" href="skyhero.html">Dev-skyhero</a></li>
+          <li><a title="Dev-skyhero" href="mydoc_skyhero.html">Dev-skyhero</a></li>
           
           
           
           
           
           
-          <li><a title="MiniCp04" href="minicp.html">MiniCp04</a></li>
+          <li><a title="MiniCp04" href="mydoc_minicp.html">MiniCp04</a></li>
           
           
           
           
           
           
-          <li><a title="Dev-Nazam 02" href="devnazam.html">Dev-Nazam 02</a></li>
+          <li><a title="Dev-Nazam 02" href="mydoc_devnazam.html">Dev-Nazam 02</a></li>
           
           
           
@@ -575,21 +608,42 @@
           
           
           
-          <li><a title="pixhawk4" href="mydoc_commenting_on_files.html">pixhawk4</a></li>
+          <li><a title="pixhawk overview" href="mydoc_pixhwak_overview.html">pixhawk overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+rFlyeval CopterSim" href="#">+rFlyeval CopterSim</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Instrucdtions&&documentation" href="mydoc_commenting_on_files.html">Instrucdtions&&documentation</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Implementating Pixhawk Cube" href="tag_rfly_cube.html">Implementating Pixhawk Cube</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
           
           
           
           
           
           
-          <li><a title="Dev-Apmdr 01 / pixhawk lite" href="">Dev-Apmdr 01 / pixhawk lite</a></li>
+          <li><a title="Dev-Apmdr 01 / pixhawk lite" href="mydoc_apmdr.html">Dev-Apmdr 01 / pixhawk lite</a></li>
           
           
           
           
           
           
-          <li><a title="Cube black" href="">Cube black</a></li>
+          <li><a title="Cube black" href="mydoc_cube.html">Cube black</a></li>
           
           
           
@@ -605,35 +659,35 @@
           
           
           
-          <li><a title="Quad wookong" href="mydoc_build_arguments.html">Quad wookong</a></li>
+          <li><a title="Quad wookong" href="mydoc_quad.html">Quad wookong</a></li>
           
           
           
           
           
           
-          <li><a title="S1000 wookong" href="mydoc_themes.html">S1000 wookong</a></li>
+          <li><a title="S1000 wookong" href="mydoc_s1000.html">S1000 wookong</a></li>
           
           
           
           
           
           
-          <li><a title="S1000 A2" href="mydoc_generating_pdfs.html">S1000 A2</a></li>
+          <li><a title="S1000 A2" href="mydoc_s100a2.html">S1000 A2</a></li>
           
           
           
           
           
           
-          <li><a title="S900 wookong" href="mydoc_help_api.html">S900 wookong</a></li>
+          <li><a title="S900 wookong" href="mydoc_s900.html">S900 wookong</a></li>
           
           
           
           
           
           
-          <li><a title="Nazam" href="mydoc_search_configuration.html">Nazam</a></li>
+          <li><a title="Nazam" href="mydoc_nazam.html">Nazam</a></li>
           
           
           
@@ -670,35 +724,35 @@
           
           
           
-          <li><a title="Yuneec H" href="mydoc_kb_layout.html">Yuneec H</a></li>
+          <li><a title="Yuneec H" href="mydoc_yuneec.html">Yuneec H</a></li>
           
           
           
           
           
           
-          <li><a title="Bebop Parrot" href="mydoc_bebop_auto.md">Bebop Parrot</a></li>
+          <li><a title="Bebop Parrot" href="mydoc_bebop.html">Bebop Parrot</a></li>
           
           
           
           
           
           
-          <li><a title="Jetbot rover" href="mydoc_faq_layout.html">Jetbot rover</a></li>
+          <li><a title="Jetbot rover" href="mydoc_jetbot.html">Jetbot rover</a></li>
           
           
           
           
           
           
-          <li><a title="AGX Xavier rover" href="mydoc_shuffle.html">AGX Xavier rover</a></li>
+          <li><a title="AGX Xavier rover" href="mydoc_xavier.html">AGX Xavier rover</a></li>
           
           
           
           
           
           
-          <li><a title="Vtol & flight data" href="">Vtol & flight data</a></li>
+          <li><a title="Vtol & flight data" href="mydoc_vtol.html">Vtol & flight data</a></li>
           
           
           
@@ -714,42 +768,130 @@
           
           
           
-          <li><a title="My courses" href="mydoc_troubleshooting.html">My courses</a></li>
+          <li><a title="My courses" href="mydoc_mycourse.html">My courses</a></li>
           
           
           
           
           
           
-          <li><a title="Course overview" href="">Course overview</a></li>
+          <li><a title="ncs-ML/DL" href="mydoc_deeplearning.html">ncs-ML/DL</a></li>
           
           
           
           
           
           
-          <li><a title="Portfolio" href="">Portfolio</a></li>
+          <li><a title="C++" href="mydoc_cplus.html">C++</a></li>
           
           
           
           
           
           
-          <li><a title="ncs-ML/DL" href="">ncs-ML/DL</a></li>
+          <li><a title="Web-scraping" href="mydoc_webscraping.html">Web-scraping</a></li>
           
           
           
           
           
           
-          <li><a title="C++" href="">C++</a></li>
+          <li><a title="Challenger project" href="mydoc_challenger-project.html">Challenger project</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="AIOT embedded projects" href="#">AIOT embedded projects</a>
+      <ul>
+          
+          
+          
+          <li><a title="Overview" href="tag_aiotoverview.html">Overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Intel Edison projects" href="#">+Intel Edison projects</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Detection serializer" href="tag_sensor_detection.html">Detection serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Realsense drone" href="tag_realsense.html">Realsense drone</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Edison Arduino" href="tag_edison_arduino.html">Edison Arduino</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collaboration pages" href="tag_collaboration.html">Collaboration pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Troubleshooting pages" href="tag_troubleshooting.html">Troubleshooting pages</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
           
           
           
           
           
           
-          <li><a title="Web-scraping" href="">Web-scraping</a></li>
+          <li><a title="Jetson nano" href="tag_jetson_nano.html">Jetson nano</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Jetson Xavier" href="#">+Jetson Xavier</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="project overview" href="tag_jetson_xavier.html">project overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Raspberry Pi projects" href="tag_raspi.html">Raspberry Pi projects</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Sensor serializer" href="tag_serializer.html">Sensor serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Lora monitoring system" href="tag_lora_monitoring.html">Lora monitoring system</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
           
           
           
@@ -765,11 +907,11 @@
           
           
           
-          <li><a title="Fiction" href="mydoc_tag_archives_overview.html">Fiction</a></li>
+          <li><a title="Fiction" href="mydoc_fiction.html">Fiction</a></li>
           
           
           
-          <li class="subfolders">
+          <li class="subfolders subfolder-background">
               <a title="Tag archive pages" href="#">Tag archive pages</a>
               <ul>
                   
@@ -823,35 +965,35 @@
           
           
           
-          <li><a title="Web-dev-ops" href="">Web-dev-ops</a></li>
+          <li><a title="Web-dev-ops" href="mydoc_webdev.html">Web-dev-ops</a></li>
           
           
           
           
           
           
-          <li><a title="" href=""></a></li>
+          <li><a title="two scoops of django" href="mydoc_twoscoops.html">two scoops of django</a></li>
           
           
           
           
           
           
-          <li><a title="" href=""></a></li>
+          <li><a title="presentation" href="books_revealjs.html">presentation</a></li>
           
           
           
           
           
           
-          <li><a title="" href=""></a></li>
+          <li><a title="more to come" href="">more to come</a></li>
           
           
           
           
           
           
-          <li><a title="" href=""></a></li>
+          <li><a title="drone companies" href="mydoc_contact.html">drone companies</a></li>
           
           
           
@@ -861,11 +1003,11 @@
      
       
       
-      <!-- if you aren't using the accordion, uncomment this block:
+     
          <p class="external">
              <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
          </p>
-         -->
+       
 </ul>
 
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
@@ -880,7 +1022,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Support</h1>
+   <h1 class="post-title-main">Rules of thumb</h1>
 </div>
 
 
@@ -912,7 +1054,10 @@ $('#toc').on('click', 'a', function() {
 });
 </script>
 
-<div id="toc"></div>
+<details>
+  <summary>
+    <div id="toc"></div></summary>
+</details>
 
 
 
@@ -921,11 +1066,1855 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/pages/mydoc/mydoc_support.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/pages/mydoc/mydoc_support.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <p>I’m not actively working on this theme. However, feel free to click <strong>Feedback</strong> on the top navbar to send me an email or open an issue on <a href="https://github.com/tomjoht/documentation-theme-jekyll/issues">GitHub</a>.</p>
+   <h2 id="dron-id-research-pdf">Dron ID research <a href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:daac1ad7-e106-49f5-8596-63d535fcdb63">pdf</a></h2>
+
+<ul>
+  <li>usa</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">단계</th>
+      <th style="text-align: left">내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: left">• 드론과 조종자 간의 거리가 최대 122m(400ft) 이내 가시권 내 비행 •14 CFR Part 101 준수하는 드론(일부 제외) •ATC 관리하에 운영되는 드론 •FAA에 의해 식별 및 추적이 면제되는 드론</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">•0 2 3 단계에 속하지 않는 드론 •14 CFR Part 107에 속하는 드론</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">•비가시권 비행 드론 • 14 CFR Part 107에서 정의한 최대고도 이상에서비행하는 드론 • 보호되지 않는 사람에게 운영되는 드론</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">• 무게가 25kg 이상이고 비가시권 내 비행하는 드론 • IFR 조건에서 동작하는 드론 • 통제된 공역에서 비행하는 드론</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL0</td>
+      <td style="text-align: left">• 최대 이륙 중량 250g 이하 • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • 드론 원격 식별 불필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL1</td>
+      <td style="text-align: left">• 최대 이륙 중량 900g 이하(운동에너지 80J 이하) • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL2</td>
+      <td style="text-align: left">• 최대 이륙 중량 4kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시  통신 복구 기능 또는 안전한 비행 종료 기능 필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL3</td>
+      <td style="text-align: left">• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시 통신 복구 기능 또는 안전한 비행 종료 기능 필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL4</td>
+      <td style="text-align: left">• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 및 속도 제한 없음</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>EU</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">클래스</th>
+      <th style="text-align: left">주요 특징</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">CL0</td>
+      <td style="text-align: left">• 최대 이륙 중량 250g 이하 • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • 드론 원격 식별 불필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL1</td>
+      <td style="text-align: left">• 최대 이륙 중량 900g 이하(운동에너지 80J 이하) • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL2</td>
+      <td style="text-align: left">• 최대 이륙 중량 4kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시  통신 복구 기능 또는 안전한 비행 종료 기능 필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL3</td>
+      <td style="text-align: left">• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시 통신 복구 기능 또는 안전한 비행 종료 기능 필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL4</td>
+      <td style="text-align: left">• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 및 속도 제한 없음</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="구술시험">구술시험</h2>
+
+<h3 id="요약-사항">요약 사항</h3>
+
+<h3 id="제원표">제원표</h3>
+
+<blockquote>
+  <p>기체 제원</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>모델</td>
+      <td>형식명: 무인멀티콥터 /인투스카이 /한국</td>
+      <td>형식: E615s -ED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>📏</td>
+      <td>치수: 가로 1723, 세로 1723, 높이 560</td>
+      <td>접었을때: 가로 1000, 세로 1000, 높이 560</td>
+      <td>순항속도: 3-5m/s, 최대 7m/s</td>
+    </tr>
+    <tr>
+      <td>⚖️</td>
+      <td>중량: 19kg</td>
+      <td>이륙중량: 26kg</td>
+      <td>탑재 중량: 7kg(l)</td>
+    </tr>
+    <tr>
+      <td>🔋</td>
+      <td>배터리: 22.2v 1600mAh * 2</td>
+      <td>🦼  모터수: 하비윙 X8 (8120) brushless motor x 6</td>
+      <td>🖥️ 프로펠러: 30인치 (3090), FC: K3A pro</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>비행 실기 항목</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>비행전</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1. 비행전 전검</td>
+      <td>밧데리 점검, 밧데리 장착, 기체점검, 조정기 점검, 조정기 전원 온, 기체 전원 온,</td>
+      <td>프랍파손, 고정, 마운트, 회전, 암대, GPS/안테나 위치 고정 이상무, main frame, landing skid 고정 이상무,  🥇 (조정기 점검)  스틱 및 gps 토클 스위치 이상무,  조정기 전원 온,  조정기 전압 6.5V 이상 무, 기체 전원 온                    🥇  5미터 안전거리 이동, gps 조작후 수신 이상무, 비행전 점검 이상 무</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>비행장 점검</td>
+      <td>풍향, 풍속, 시정, 좌측 전방 우측 사람 및 장애물 이상무, 이륙전 점검 이상무</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2. 기체의 시동</td>
+      <td>시동</td>
+      <td>프랍회전 이상 무, 4미터 이륙</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3. 이륙 및 비행 조작</td>
+      <td>이륙후 기체점검  정지 호버링 실시</td>
+      <td>엘러베이터, 에일러런, 러더 이상무 (정지), 🥇  호버링 위치로 (정지), 좌측면 호버링 (정지), 우측면 호버링 (정지), 기체정렬 (정지)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>전진/후진 비행, 삼각비행,</td>
+      <td>전진 비행 (정지), 후진 (정지), 기체 정렬, 🥇 삼각비행 위치로(정지) 상승 (정지) 하강 (정지), 호버링 위치로 (정지),</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>원주 비행</td>
+      <td>원주 비행 위치로 (정지), 좌측면 호버링 (정지), 원주 비행실시 (정지), 기체 정렬 (정지)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>비상착륙, 정상 접근 및 착륙</td>
+      <td>비상착륙 실시 2미터 상승 “비상!” 착륙, 프롭 정지 확인, 🥇 정상접근 및 착륙 , 자세모드 변환, 시동, 프롭 회전 이상무, 이륙, (정지), 착륙장 위치로 (정지), 착륙 - 프롭 정지 확인</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>측풍 접근 및 착륙</td>
+      <td>(측풍 접근 및 착륙) GPS 전환, 변경 확인, 시동, 프롭 회전 이상무, 이륙 4미터 상승 (정지), 측풍 위치로 (정지), 우측면 호버링 (정지), 착륙장 위치로 (정지), 기체 정렬 (정지), 착륙 (시동 오프)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4. 비행후 기체 점검</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>5.  일반/공역</td>
+      <td>6. 비상 조치 및 조정자 사항</td>
+      <td>7. 과태료 표</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="기체-및-공역-등">기체 및 공역 등</h3>
+
+<blockquote>
+  <p>행정적 사항</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>자격증 명칭</th>
+      <th>초경량비행장치 무인멀티콥터 조종자  (1종: 25초과-150kg 🏋️ 2종: 7초과-25kg 🏋️ 3종: 2초과-7kg 🏋️ 250g)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>비행시 필수 휴대서류</td>
+      <td>운전면허증, 조종자 자격증, 비행기록부, 비행승인서, 기체신고서, 안전성인증서(25KG초과시)</td>
+    </tr>
+    <tr>
+      <td>비행승인신청</td>
+      <td>각 지역 지방항공청 - 3일전 드론 원스톱 사이트</td>
+    </tr>
+    <tr>
+      <td>비행금지구역</td>
+      <td>P72 A,B-청와대인근 (2NM), P518 -휴전선인근                             P61 -고리원전(부산기장), P62 -월성원전(경북경주),                            P63 - 한빛원전(전남영광)  P64 -한울원전(경북울진),                          P65 - 원자력연구소(대전), 관제권/관제구 150m</td>
+    </tr>
+    <tr>
+      <td>비행제한구역</td>
+      <td>R75 - 수도권</td>
+    </tr>
+    <tr>
+      <td>관제권</td>
+      <td>관제탑으로 부터 반경 9.3km 공역</td>
+    </tr>
+    <tr>
+      <td>관제구</td>
+      <td>수면 또는 지면으로 부터 200m 이상 상공</td>
+    </tr>
+    <tr>
+      <td>지역별 지방항공청</td>
+      <td>서울지방항공청 - 서울, 경기, 인천, 강원, 충청, 전북             🏙️                부산지방항공청 -  전남, 경상, 울산, 부산     🏙️                                     제주지방항공청 - 제주</td>
+    </tr>
+    <tr>
+      <td>비행장치신고</td>
+      <td><code class="language-plaintext highlighter-rouge">자체중량 --&gt; 이륙중량</code> 12kg 초과시, 사업용은 12kg이하도 신고</td>
+    </tr>
+    <tr>
+      <td>안전성인증검사와 종류</td>
+      <td>최대이륙중량 25kg 초과                                                             초도검사(처음) , 정기검사, 수시검사, 재검사  (항공안전 기술원</td>
+    </tr>
+    <tr>
+      <td>항공촬영신청</td>
+      <td>7일전 국방부에 신청 - 드론 원스톱 사이트</td>
+    </tr>
+    <tr>
+      <td>기타 관할청</td>
+      <td>지방항공청 : 장치신고, 사업등록, 비행승인  👍 교통안전공단: 조정자격증명  👍 국방부/수방사 : 항공촬영</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="비상-조치-및-기체에-관한-사항-등">비상 조치 및 기체에 관한 사항 등</h3>
+<blockquote>
+  <p>기체 및 운영</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>인명사고시 신고해야 하는 곳</th>
+      <th>119, 경찰서, 지방항공청, 항공철도사고위원회</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>비상시 조치요령</td>
+      <td>주변에 ‘비상’이라고 외친후 인명이나 시설에 피해가 가지않는 장소로 빨리 착륙시킨다.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>이륙시 기체결함 발견</td>
+      <td>주변에 ‘비상’이라고 외친후 바로 착륙하여 기체를 점검한다.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>비행중 GPS 미수신시</td>
+      <td>주변에 ‘비상’ 상황을 알린 후 ATTI 모드로 전환하여 인명이나 시설에 피해가 가지 않는 장소로 착륙시킨다.  ATTI 모드로도 조종이 불가능해지면 사람이 없는 장소에 최대한 빨리 착륙 또는 추락시킨다.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>노탐(NOTAM)</td>
+      <td>항공고시보, 안전운항을 위한 각종 항공정보를 수록 - 최대 기간 3개월</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>AIP</td>
+      <td>항공정보간행물로 비행에 관련된 일반사항, 항공로, 비행장 정보등을 수록 - 영구적인 성격</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>멀티콥터의 분류</td>
+      <td>프로펠러 개수로 구분                                                               4개 -쿼드코터, 6개 -헥사콥터, 8개 - 옥토콥터,                                       10 - 데카콥터, 12개 -도데카콥터</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>항공기에 작용하는 힘</td>
+      <td>양력, 중력, 추력, 항력</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>센서의 종류</td>
+      <td>🌱 자이로 센서 -각속도 측정, 기체의 자세를 잡아줌                                   🌱 기압계 센서 - 기압측정으로 고도측정                                            🌱 가속도 센서 - 자이로센서와 함께 각속도 측정                              🌱 지자계 센서 - 지구자기장을 이용, 방위각 측정                              GPS - 위치측정</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>IMU(관성측정장치)</td>
+      <td>기체의 기울어짐과 움직임을 감지하여 균형을 잃지 않도록 하는 장치. 자이로센서, 기압계센서, 가속도센서</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>고홈기능</td>
+      <td>조종기의 고홈 키를 이용하여 키를 작동하였을 경우 지정된 장소로 이동하거나 이륙지점으로 이동하게 하는 기능</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>페일 세이프</td>
+      <td>조종기와 기체의 연결이 끊긴 경우 기체가자동으로 안전하게 이륙지점으로 찾아와 착륙하게 하는 기능</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>변속기</td>
+      <td>FC에서 계산해 보낸 값을 각 모터에 전달해주는 장치</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>GPS모드와 ATTI 모드의 차이</td>
+      <td>GPS 모드 - 위치정보를 받아 기체의 위차와 자세를 유지함.                 ATTI 모드 - 기체의 수평만 유지(방향은 유지하지 않음)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>비행원리</td>
+      <td>✈️ 전진 - 후방모터 증속, ✈️후진 - 전방모터 증속                                    ✈️우측이동 - 좌측모터 증속, ✈️좌측이동 - 우측모터 증속                               ✈️ 좌선회- 회전모터 증속(짝수모터), ✈️우선회-좌회전모터 증속(홀수모터)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>배터리 취급시 주의사항</td>
+      <td>상온 보관, 습기가 많은 지역 보관 금지,                                          🦺       셀간 전압 차이가 심한 경우 사용금지,  🦺 충격주의                                  🦺    외관이 변형된 배터리 사용금지,                                                    🦺       장기보관시 40~60% 상태로 방전후 보관</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>피치</td>
+      <td>프로펠러가 1회전 했을 때, 이동하는 거리 (인치로표시)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>KV</td>
+      <td>모터에 1V의 전압을 주었을 때, 1분간 회전하는 수</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>헬리콥터와 멀티콥터의 차이</td>
+      <td>헬리콥터 - 단축 변동피치                                      🚁                     멀티콥터 - 다축, 고정피치</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>비행금지 기상조건</td>
+      <td>눈, 비, 안개, 우박, 뇌우, 번개, 강풍</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>조종자 준수사항</th>
+      <th>인명이나 재산에 피해를 줄수 있는 낙하물 투하금지   인구밀집지역이나 사람이 많은 곳에 인명이나 재산에 피해를 줄수 있는 비행금지          일몰 후 일출전 까지 비행금지(야간비행금지)      관제공역, 통제공역, 주의공역 비행금지     육안으로 식별 할수 있는 거리까지만 비행         음주비행금지</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="과태료-표">과태료 표</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>위반행위</td>
+      <td>과태료</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>1차</td>
+      <td>2차</td>
+      <td>3차</td>
+    </tr>
+    <tr>
+      <td>안전성 인증을 받지 않고 비행한 경우</td>
+      <td>250</td>
+      <td>375</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>보험 미가입후 사업을 한 경우</td>
+      <td>50</td>
+      <td>250</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>기체신고, 변경, 말소신고를 하지 않고 비행한 경우</td>
+      <td>50</td>
+      <td>250</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>조종자 증명없이 비행한 경우</td>
+      <td>150</td>
+      <td>225</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>조종자 준수사항 위반</td>
+      <td>100</td>
+      <td>150</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>승인받지않은 야간비행</td>
+      <td>100</td>
+      <td>150</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>고도,관제,통제,주의공역 비행위반</td>
+      <td>50</td>
+      <td>75</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>신고표시위반, 허위신고</td>
+      <td>50</td>
+      <td>75</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>사고에 관한 보고를 하지 않거나 허위로 한 경우</td>
+      <td>15</td>
+      <td>22.5</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126898188-8746e92a-ae0f-4131-a889-990799bb7e0b.jpg" alt="correction" />
+<img src="https://user-images.githubusercontent.com/42961200/122031221-78b3aa00-ce09-11eb-86bd-9b437c63bc27.png" alt="image" /></p>
+
+<p>for more details of aeronautic journals and my course works <a href="https://github.com/aiegoo/drone-eggs/wiki">clickhere</a></p>
+
+<h2 id="commynity-guideline">Commynity guideline</h2>
+<p><a href="https://www.flickr.com/help/guidelines">Flickr</a>
+<a href="https://www.drupal.org/dcoc">Drupal</a></p>
+<p>The following pages and posts are tagged with <button type="button" style="cursor: default" class="btn btn-default navbar-btn" onclick="location.href='https://github.com/aiegoo/documentation/settings/access'"></button></p>
+<table><thead><tr><th>Title</th><th>Type</th><th>Excerpt</th></tr></thead>
+    <tbody>
+    
+  
+    
+   
+    
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+   </tbody>
+</table>
+
 
 
     <div class="tags">
@@ -938,16 +2927,16 @@ $('#toc').on('click', 'a', function() {
         
         
         
-        <a href="tag_troubleshooting.html" class="btn btn-default navbar-btn cursorNorm" role="button">troubleshooting</a>
+        <a href="tag_drone.html" class="btn btn-default navbar-btn cursorNorm" role="button">drone</a>
+        
+        
+        
+        <a href="tag_gcs.html" class="btn btn-default navbar-btn cursorNorm" role="button">gcs</a>
         
         
         
     </div>
 
-
-<div id="commento"></div>
-<script src="https://cdn.commento.io/js/commento.js"></script>
-<noscript>Please enable JavaScript to load the comments.</noscript>
 
 
 
@@ -961,9 +2950,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
-               &copy;2021 Copyright 2021 Tonyleekorea. All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Jul 7, 2021 <br />
-<p><img src="images/company_logo.png" alt="Company logo"/></p>
+               &copy;2021 Tonyleekorea. All rights reserved. <br />
+<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Aug 6, 2021 <br />
+<p align="right"><img src="images/tonyillust_atwork.svg" alt="tonyillust" style="width: 20%; max-width: 30%;"/></p>
                 </div>
             </div>
 </footer>
