@@ -363,7 +363,7 @@ Short demo video of an early version: https://youtu.be/rEDzUT3ymw4
 Cars have to navigate through a course without touching the walls or any other obstacles of the course. A car has five front-facing sensors which measure the distance to obstacles in a given direction. The readings of these sensors serve as the input of the car's neural network. Each sensor points into a different direction, covering a front facing range of approximately 90 degrees. The maximum range of a sensor is 10 unity units. The output of the Neural Network then determines the car’s current engine and turning force.
 
 
-<img src="https://github.com/aiegoo/Applying_EANNs/raw/masterImages/Car.png" width="250">
+<img src="https://github.com/aiegoo/Applying_EANNs/raw/master/Images/Car.png" width="250">
 
 
 If you would like to tinker with the parameters of the simulation, you can do so in the Unity Editor. If you would simply like to run the simulation with default parameters, you can start the built file [Builds/Applying EANNs.exe](Builds/Applying EANNs.exe).
@@ -400,4 +400,4 @@ In order to start the simulation on a specific course, open the Main scene and e
 
 
 
-![Two different courses the cars can be trained on.](https://github.com/aiegoo/Applying_EANNs/raw/masterImages/Courses.png)
+![Two different courses the cars can be trained on.](https://github.com/aiegoo/Applying_EANNs/raw/master/Images/Courses.png)
