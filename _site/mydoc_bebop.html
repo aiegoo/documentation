@@ -731,7 +731,7 @@
           
           
           
-          <li><a title="Bebop Parrot" href="mydoc_bebop.html">Bebop Parrot</a></li>
+          <li class="active"><a title="Bebop Parrot" href="mydoc_bebop.html">Bebop Parrot</a></li>
           
           
           
@@ -1032,17 +1032,94 @@
    
 
     
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<details>
+  <summary>
+    <div id="toc"></div></summary>
+</details>
+
 
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/pages/mydoc/mydoc_bebop_auto.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <hr />
-<p>bebop_autonomy - ROS Driver for Parrot Bebop Drone (quadrocopter) 1.0 &amp; 2.0
-<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><em>**</em></p>
+    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/pages/mydoc/mydoc_bebop.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">frame</td>
+      <td> </td>
+      <td style="text-align: center">FC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">motor</td>
+      <td> </td>
+      <td style="text-align: center">ESC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">RC</td>
+      <td> </td>
+      <td style="text-align: center">mode</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">weight</td>
+      <td> </td>
+      <td style="text-align: center">class</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">battery</td>
+      <td> </td>
+      <td style="text-align: center">air-time</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">configurator</td>
+      <td> </td>
+      <td style="text-align: center">last updated</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<h2 id="bebop_autonomy---ros-driver-for-parrot-bebop-drone-quadrocopter-10--20">bebop_autonomy - ROS Driver for Parrot Bebop Drone (quadrocopter) 1.0 &amp; 2.0</h2>
+<hr />
 
 <p><em>bebop_autonomy</em> is a :abbr:<code class="language-plaintext highlighter-rouge">ROS (Robot Operating System)</code> driver for <code class="language-plaintext highlighter-rouge">Parrot Bebop 1.0 &lt;http://www.parrot.com/ca/products/bebop-drone/&gt;</code>_ and <code class="language-plaintext highlighter-rouge">2.0 &lt;https://www.parrot.com/ca/drones/parrot-bebop-2&gt;</code>_ drones (quadrocopters), based on Parrot’s official <code class="language-plaintext highlighter-rouge">ARDroneSDK3 &lt;http://developer.parrot.com/docs/SDK3/&gt;</code><em>. This driver has been developed in <code class="language-plaintext highlighter-rouge">Autonomy Lab &lt;http://autonomylab.org/&gt;</code></em> of <code class="language-plaintext highlighter-rouge">Simon Fraser University &lt;http://www.sfu.ca/&gt;</code>_ by <code class="language-plaintext highlighter-rouge">Mani Monajjemi &lt;http://mani.im&gt;</code>_ and other contributers (:ref:<code class="language-plaintext highlighter-rouge">sec-contribs</code>). This software is maintained by <code class="language-plaintext highlighter-rouge">Sepehr MohaimenianPour &lt;http://sepehr.im/&gt;</code>_ (AutonomyLab, Simon Fraser University), <code class="language-plaintext highlighter-rouge">Thomas Bamford &lt;#&gt;</code>_ (Dynamic Systems Lab, University of Toronto) and <code class="language-plaintext highlighter-rouge">Tobias Naegeli &lt;https://ait.ethz.ch/people/naegelit/&gt;</code>_ (Advanced Interactive Technologies Lab, ETH Zürich).</p>
 
@@ -1053,7 +1130,8 @@
 
 <p>.. _sec-roadmap:</p>
 
-<h1 id="features-and-roadmap">Features and Roadmap</h1>
+<h3 id="features-and-roadmap">Features and Roadmap</h3>
+<p>====================</p>
 
 <p>.. csv-table::
   :header: “Feature”, “Status”, “Notes”</p>
@@ -1113,7 +1191,8 @@
 <p>Installation
 <strong>**</strong><strong>**</strong></p>
 
-<h1 id="compiling-from-source">Compiling From Source</h1>
+<h2 id="compiling-from-source">Compiling From Source</h2>
+<p>=====================</p>
 
 <p>Pre-requirements:</p>
 
@@ -1123,33 +1202,33 @@
   <li>Basic familiarity with building ROS packages</li>
 </ul>
 
-<p>.. code-block:: bash</p>
-
-<p>$ sudo apt-get install build-essential python-rosdep python-catkin-tools</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  <span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>build-essential python-rosdep python-catkin-tools
+</code></pre></div></div>
 
 <p>To compile from source, you need to clone the source code in a new or existing <code class="language-plaintext highlighter-rouge">catkin</code> workspace, use <code class="language-plaintext highlighter-rouge">rosdep</code> to install dependencies and finally compile the workspace using <code class="language-plaintext highlighter-rouge">catkin</code>. The following commands demonstrate this procedure in a newly created <code class="language-plaintext highlighter-rouge">catkin</code> workspace.</p>
 
 <p>.. note:: Since version 0.6, <code class="language-plaintext highlighter-rouge">Parrot ARSDK &lt;http://developer.parrot.com/docs/SDK3/&gt;</code><em>, the main underlying dependency of  *bebop_autonomy* is not build inline anymore. Instead, the slightly patched and catkinized version of it, called <code class="language-plaintext highlighter-rouge">parrot_arsdk &lt;https://github.com/AutonomyLab/parrot_arsdk&gt;</code></em>, is fetched as a dependency during the <code class="language-plaintext highlighter-rouge">rosdep install</code> step below. This dramatically decreases the compile time of the package compared to previous versions (e.g. from ~15 minutes to less than a minute on a modern computer). If you are re-compiling from source, you need to clean your workspace first: <code class="language-plaintext highlighter-rouge">$ catkin clean [-y]</code>.</p>
 
-<p>.. code-block:: bash</p>
-
-<p># Create and initialize the workspace
-  $ mkdir -p ~/bebop_ws/src &amp;&amp; cd ~/bebop_ws
-  $ catkin init
-  $ git clone https://github.com/AutonomyLab/bebop_autonomy.git src/bebop_autonomy
-  # Update rosdep database and install dependencies (including parrot_arsdk)
-  $ rosdep update
-  $ rosdep install –from-paths src -i
-  # Build the workspace
-  $ catkin build</p>
-
-<hr />
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  <span class="c"># Create and initialize the workspace</span>
+  <span class="nv">$ </span><span class="nb">mkdir</span> <span class="nt">-p</span> ~/bebop_ws/src <span class="o">&amp;&amp;</span> <span class="nb">cd</span> ~/bebop_ws
+  <span class="nv">$ </span>catkin init
+  <span class="nv">$ </span>git clone https://github.com/AutonomyLab/bebop_autonomy.git src/bebop_autonomy
+  <span class="c"># Update rosdep database and install dependencies (including parrot_arsdk)</span>
+  <span class="nv">$ </span>rosdep update
+  <span class="nv">$ </span>rosdep <span class="nb">install</span> <span class="nt">--from-paths</span> src <span class="nt">-i</span>
+  <span class="c"># Build the workspace</span>
+  <span class="nv">$ </span>catkin build 
+</code></pre></div></div>
 
 <hr />
 
 <hr />
-<p>Running the Driver
-<strong>**</strong><strong>**</strong><strong>**</strong></p>
+
+<hr />
+<h2 id="running-the-driver">Running the Driver</h2>
+<hr />
 
 <p>You can run Bebop’s ROS drivereither as a ROS <code class="language-plaintext highlighter-rouge">Nodelet &lt;http://wiki.ros.org/nodelet&gt;</code>_ or as a standalone ROS Node. The former is recommended if you intend to perform any kind of processing on Bebop’s video stream.</p>
 
@@ -1157,7 +1236,8 @@
 
 <p>.. note:: Ensure that your Bebop’s firmware is at least <strong>2.0.29</strong> and your computer is connected to Bebop’s wireless network.</p>
 
-<h1 id="running-the-driver-as-a-node">Running the driver as a Node</h1>
+<h3 id="running-the-driver-as-a-node">Running the driver as a Node</h3>
+<p>================================</p>
 
 <p>The executable node is called <code class="language-plaintext highlighter-rouge">bebop_driver_node</code> and exists in <code class="language-plaintext highlighter-rouge">bebop_driver</code> package. It’s recommended to run the Node in its own namespace and with default configuration. The driver package comes with a sample launch file <code class="language-plaintext highlighter-rouge">bebop_driver/launch/bebop_node.launch</code> which demonstrates the procedure.</p>
 
@@ -1170,13 +1250,14 @@
   :language: XML
   :caption: bebop_node.launch</p>
 
-<h1 id="running-the-driver-as-a-nodelet">Running the driver as a Nodelet</h1>
+<h3 id="running-the-driver-as-a-nodelet">Running the driver as a Nodelet</h3>
+<p>===================================</p>
 
 <p>To run the driver as a ROS Nodelet, you need to first run a Nodelet manager, then load the driver’s Nodelet (<code class="language-plaintext highlighter-rouge">bebop_driver/BebopDriverNodelet</code>) in it, along with other Nodelets that need to communicate with the driver. <code class="language-plaintext highlighter-rouge">bebop_tools/launch/bebop_nodelet_iv.launch</code> is a sample launch file that demonstrates these steps by visualizing Bebop’s video stream using an instance of <code class="language-plaintext highlighter-rouge">image_view/image &lt;http://wiki.ros.org/image_view#image_view.2BAC8-diamondback.image_view.2BAC8-image&gt;</code>_ Nodelet. Similar to <code class="language-plaintext highlighter-rouge">bebop_node.launch</code>, it also runs everything in its own namespace and loads the default configuration.</p>
 
-<p>.. code-block:: bash</p>
-
-<p>$ roslaunch bebop_tools bebop_nodelet_iv.launch</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  <span class="nv">$ </span>roslaunch bebop_tools bebop_nodelet_iv.launch
+</code></pre></div></div>
 
 <p>.. literalinclude::
   ../bebop_tools/launch/bebop_nodelet_iv.launch
@@ -1193,14 +1274,15 @@
 <hr />
 
 <hr />
-<p>Sending Commands to Bebop
-<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>*</p>
+<h2 id="sending-commands-to-bebop">Sending Commands to Bebop</h2>
+<hr />
 
 <p>.. _sec-pilot-teleop:</p>
 
 <p>.. note:: <code class="language-plaintext highlighter-rouge">bebop_tools</code> package comes with a launch file for tele-operating Bebop with a joystick using ROS <code class="language-plaintext highlighter-rouge">joy_teleop &lt;http://wiki.ros.org/joy_teleop&gt;</code>_ package. The configuration file (key-action map) is written for <code class="language-plaintext highlighter-rouge">Logitech F710 controller &lt;http://gaming.logitech.com/en-ca/product/f710-wireless-gamepad&gt;</code>_ and is located in <code class="language-plaintext highlighter-rouge">bebop_tools/config</code> folder. Adapting the file to your own controller is straightforward. To teleop Bebop while the driver is running execute <code class="language-plaintext highlighter-rouge">roslaunch bebop_tools joy_teleop.launch</code>.</p>
 
-<h1 id="takeoff">Takeoff</h1>
+<h3 id="takeoff">Takeoff</h3>
+<p>=======</p>
 
 <p>Publish a message of type <code class="language-plaintext highlighter-rouge">std_msgs/Empty</code> to <code class="language-plaintext highlighter-rouge">takeoff</code> topic.</p>
 
@@ -1208,7 +1290,8 @@
 
 <p>$ rostopic pub –once [namespace]/takeoff std_msgs/Empty</p>
 
-<h1 id="land">Land</h1>
+<h3 id="land">Land</h3>
+<p>====</p>
 
 <p>Publish a message of type <code class="language-plaintext highlighter-rouge">std_msgs/Empty</code> to <code class="language-plaintext highlighter-rouge">land</code> topic.</p>
 
@@ -1216,7 +1299,8 @@
 
 <p>$ rostopic pub –once [namespace]/land std_msgs/Empty</p>
 
-<h1 id="emergency">Emergency</h1>
+<h3 id="emergency">Emergency</h3>
+<p>=========</p>
 
 <p>Publish a message of type <code class="language-plaintext highlighter-rouge">std_msgs/Empty</code> to <code class="language-plaintext highlighter-rouge">reset</code> topic.</p>
 
@@ -1224,7 +1308,8 @@
 
 <p>$ rostopic pub –once [namespace]/reset std_msgs/Empty</p>
 
-<h1 id="piloting">Piloting</h1>
+<h3 id="piloting">Piloting</h3>
+<p>========</p>
 
 <p>To move Bebop around, publish messages of type <code class="language-plaintext highlighter-rouge">geometry_msgs/Twist &lt;http://docs.ros.org/api/geometry_msgs/html/msg/Twist.html&gt;</code>_ to <code class="language-plaintext highlighter-rouge">cmd_vel</code> topic while Bebop is flying. The effect of each field of the message on Bebop’s movement is listed below:</p>
 
@@ -1252,7 +1337,8 @@
   ver_vel_m_per_s   = linear.z  * max_vert_speed
   rot_vel_deg_per_s = angular.z * max_rot_speed</p>
 
-<h1 id="moving-the-virtual-camera">Moving the Virtual Camera</h1>
+<h3 id="moving-the-virtual-camera">Moving the Virtual Camera</h3>
+<p>=========================</p>
 
 <p>To move Bebop’s virtual camera, publish a message of type <code class="language-plaintext highlighter-rouge">geometry_msgs/Twist &lt;http://docs.ros.org/api/geometry_msgs/html/msg/Twist.html&gt;</code>_ to <code class="language-plaintext highlighter-rouge">camera_control</code> topic. <code class="language-plaintext highlighter-rouge">angular.y</code> and <code class="language-plaintext highlighter-rouge">angular.z</code> fields of this message set <strong>absolute</strong> tilt and pan of the camera in <strong>degrees</strong> respectively. The field of view of this virtual camera (based on our measurements) is ~80 (horizontal) and ~50 (vertical) degrees.</p>
 
@@ -1265,7 +1351,8 @@
   angular.z (+)      pan left
             (-)      pan right</p>
 
-<h1 id="gps-navigation">GPS Navigation</h1>
+<h3 id="gps-navigation">GPS Navigation</h3>
+<p>==============</p>
 
 <h2 id="start-flight-plan">Start Flight Plan</h2>
 
@@ -1302,24 +1389,28 @@
 * Connect.
 </code></pre></div></div>
 
-<h2 id="pause-flight-plan">Pause Flight Plan</h2>
+<h3 id="pause-flight-plan">Pause Flight Plan</h3>
+<hr />
 
 <p>To pause the execution of an autonomous flight plan, publish a message of type <code class="language-plaintext highlighter-rouge">std_msgs/Empty &lt;http://docs.ros.org/api/std_msgs/html/msg/Empty.html&gt;</code>_ to <code class="language-plaintext highlighter-rouge">autoflight/pause</code> topic. Bebop will then hover and await further commands.
 To resume a paused flight plan, publish the same message that was used to start the autonomous flight (ie. to the topic <code class="language-plaintext highlighter-rouge">autoflight/start</code>). Bebop will fly to the lastest waypoint reached before continuing the flight plan.</p>
 
 <p>.. note:: Any velocity commands sent to Bebop during an autonomous flight plan will pause the plan.</p>
 
-<h2 id="stop-flight-plan">Stop Flight Plan</h2>
+<h3 id="stop-flight-plan">Stop Flight Plan</h3>
+<hr />
 
 <p>To stop the execution of an autonomous flight plan, publish a message of type <code class="language-plaintext highlighter-rouge">std_msgs/Empty &lt;http://docs.ros.org/api/std_msgs/html/msg/Empty.html&gt;</code>_ to <code class="language-plaintext highlighter-rouge">autoflight/stop</code> topic. Bebop will hover and await further commands.</p>
 
-<h2 id="navigate-home">Navigate Home</h2>
+<h3 id="navigate-home">Navigate Home</h3>
+<hr />
 
 <p>To ask Bebop to autonomously fly to it’s home position, publish a message of type <code class="language-plaintext highlighter-rouge">std_msgs/Bool &lt;http://docs.ros.org/api/std_msgs/html/msg/Bool.html&gt;</code>_ to <code class="language-plaintext highlighter-rouge">autoflight/navigate_home</code> topic with the <code class="language-plaintext highlighter-rouge">data</code> field set to <code class="language-plaintext highlighter-rouge">true</code>. To stop Bebop from navigating home, publish another message with <code class="language-plaintext highlighter-rouge">data</code> set to <code class="language-plaintext highlighter-rouge">false</code>.</p>
 
 <p>.. warning:: The topic has changed from <code class="language-plaintext highlighter-rouge">navigate_home</code> to <code class="language-plaintext highlighter-rouge">autoflight/navigate_home</code> after version 0.5.1.</p>
 
-<h1 id="flat-trim">Flat Trim</h1>
+<h3 id="flat-trim">Flat Trim</h3>
+<p>=========</p>
 
 <p>.. error:: Test fails, probably not working.</p>
 
@@ -1329,7 +1420,8 @@ To resume a paused flight plan, publish the same message that was used to start 
 
 <p>$ rostopic pub –once [namespace]/flattrim std_msgs/Empty</p>
 
-<h1 id="flight-animations">Flight Animations</h1>
+<h3 id="flight-animations">Flight Animations</h3>
+<p>=================</p>
 
 <p>.. warning:: Be extra cautious when performing any flight animations, specially in indoor environments.</p>
 
@@ -1344,7 +1436,8 @@ To resume a paused flight plan, publish the same message that was used to start 
 
 <p>.. _sec-snapshot:</p>
 
-<h1 id="take-on-board-snapshot">Take on-board Snapshot</h1>
+<h3 id="take-on-board-snapshot">Take on-board Snapshot</h3>
+<p>======================</p>
 
 <p>.. versionadded:: 0.4.1</p>
 
@@ -1358,7 +1451,8 @@ To resume a paused flight plan, publish the same message that was used to start 
   <li>Password: *<no password="">*</no></li>
 </ul>
 
-<h1 id="set-camera-exposure">Set camera exposure</h1>
+<h3 id="set-camera-exposure">Set camera exposure</h3>
+<p>===================</p>
 
 <p>It is possible to set camera exposure by publishing <code class="language-plaintext highlighter-rouge">std_msgs/Float32</code> message on <code class="language-plaintext highlighter-rouge">set_exposure</code> topic. Note that this functionality is not supported in Bebop1 Fw 3.3.0.</p>
 
@@ -1366,7 +1460,8 @@ To resume a paused flight plan, publish the same message that was used to start 
   <li>Exposure value range: <code class="language-plaintext highlighter-rouge">-3.0 .. +3.0</code></li>
 </ul>
 
-<h1 id="toggle-on-board-video-recording">Toggle on-board Video Recording</h1>
+<h3 id="toggle-on-board-video-recording">Toggle on-board Video Recording</h3>
+<p>===============================</p>
 
 <p>.. versionadded:: 0.4.1</p>
 
@@ -1377,10 +1472,11 @@ To resume a paused flight plan, publish the same message that was used to start 
 <hr />
 
 <hr />
-<p>Reading from Bebop
-<strong>**</strong><strong>**</strong><strong>**</strong></p>
+<h2 id="reading-from-bebop">Reading from Bebop</h2>
+<hr />
 
-<h1 id="camera">Camera</h1>
+<h3 id="camera">Camera</h3>
+<p>======</p>
 
 <p>The video stream from Bebop’s front camera is published on <code class="language-plaintext highlighter-rouge">image_raw</code> topic as <code class="language-plaintext highlighter-rouge">sensor_msgs/Image</code> messages. <em>bebop_driver</em> complies with ROS camera interface specifications and publishes camera information and calibration data to <code class="language-plaintext highlighter-rouge">camera_info</code> topic. Due to limitations in Parrot’s ARDroneSDK3, the quality of video stream is limited to <strong>640 x 368 @ 30 Hz</strong>. The field of view of this virtual camera (based on our measurements) is ~80 (horizontal) and ~50 (vertical) degrees.</p>
 
@@ -1388,7 +1484,8 @@ To resume a paused flight plan, publish the same message that was used to start 
 
 <p>.. _sec-ros-topic:</p>
 
-<h1 id="standard-ros-messages">Standard ROS messages</h1>
+<h3 id="standard-ros-messages">Standard ROS messages</h3>
+<p>=====================</p>
 
 <p>.. _sec-odom:</p>
 
@@ -1425,7 +1522,8 @@ To resume a paused flight plan, publish the same message that was used to start 
 
 <p>.. _sec-tf:</p>
 
-<h1 id="tf">TF</h1>
+<h3 id="tf">TF</h3>
+<p>==</p>
 
 <p>.. versionadded:: 0.5</p>
 
@@ -1452,12 +1550,13 @@ Bebop-specific States
 <hr />
 
 <hr />
-<p>Configuring Bebop and the Driver
-<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>**</p>
+<h2 id="configuring-bebop-and-the-driver">Configuring Bebop and the Driver</h2>
+<hr />
 
 <p>.. _sec-params:</p>
 
-<h1 id="driver-parameters">Driver Parameters</h1>
+<h3 id="driver-parameters">Driver Parameters</h3>
+<p>=================</p>
 
 <p>Following parameters are set during driver’s startup:</p>
 
@@ -1507,7 +1606,8 @@ Bebop-specific States
 
 <p>.. _sec-dyn-params:</p>
 
-<h1 id="dynamically-reconfigurable-parameters-for-bebop">Dynamically Reconfigurable Parameters for Bebop</h1>
+<h3 id="dynamically-reconfigurable-parameters-for-bebop">Dynamically Reconfigurable Parameters for Bebop</h3>
+<p>===============================================</p>
 
 <p>Following ROS parameters change Bebop’s settings. They can be tweaked during runtime using <code class="language-plaintext highlighter-rouge">dynamic reconfigure GUI &lt;http://wiki.ros.org/dynamic_reconfigure#dynamic_reconfigure.2BAC8-groovy.reconfigure_gui&gt;</code><em>. Setting <code class="language-plaintext highlighter-rouge">~reset_settings</code></em> parameter to <code class="language-plaintext highlighter-rouge">true</code> will reset all these settings to factory defaults.</p>
 
@@ -1518,12 +1618,13 @@ Bebop-specific States
 <hr />
 
 <hr />
-<p>Coordinate System Conventions
-<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>*****</p>
+<h2 id="coordinate-system-conventions">Coordinate System Conventions</h2>
+<hr />
 
 <p>.. _sec-coords:</p>
 
-<h1 id="ros-standard-message-types-ie-twist-odometery---rep-103">ROS Standard Message Types (i.e Twist, Odometery) - REP 103</h1>
+<h3 id="ros-standard-message-types-ie-twist-odometery---rep-103">ROS Standard Message Types (i.e Twist, Odometery) - REP 103</h3>
+<p>===========================================================</p>
 
 <p>+x    forward
 +y    left
@@ -1534,20 +1635,23 @@ Bebop-specific States
   <li>More information: http://www.ros.org/reps/rep-0103.html</li>
 </ul>
 
-<h1 id="bebop-velocities">Bebop Velocities</h1>
+<h3 id="bebop-velocities">Bebop Velocities</h3>
+<p>================</p>
 
 <p>+x    East
 +y    South
 +z    Down</p>
 
-<h1 id="bebop-attitude">Bebop Attitude</h1>
+<h3 id="bebop-attitude">Bebop Attitude</h3>
+<p>==============</p>
 
 <p>+x    forward
 +y    right
 +z    down
 +yaw  CW</p>
 
-<h1 id="sdks-setpilotingpcmd">SDK’s setPilotingPCMD</h1>
+<h3 id="sdks-setpilotingpcmd">SDK’s setPilotingPCMD</h3>
+<p>=====================</p>
 
 <p>+roll   right
 +pitch  forward
@@ -1559,32 +1663,37 @@ Bebop-specific States
 <hr />
 
 <hr />
-<p>Under The Hood
-<strong>**</strong><strong>**</strong>**</p>
+<h3 id="under-the-hood">Under The Hood</h3>
+<hr />
 
 <p>This page contains information about the architecture of the driver and different techniques used for its development.</p>
 
-<h1 id="automatic-code-generation">Automatic Code Generation</h1>
+<h3 id="automatic-code-generation">Automatic Code Generation</h3>
+<p>=========================</p>
 
 <p>TBA</p>
 
-<h1 id="threading-model">Threading Model</h1>
+<h3 id="threading-model">Threading Model</h3>
+<p>===============</p>
 
 <p>TBA</p>
 
-<h1 id="publishing-the-states">Publishing the States</h1>
+<h3 id="publishing-the-states">Publishing the States</h3>
+<p>=====================</p>
 
 <p>TBA</p>
 
 <p>.. _sec-dev-dyn:</p>
 
-<h1 id="configuring-the-drone">Configuring the Drone</h1>
+<h3 id="configuring-the-drone">Configuring the Drone</h3>
+<p>=====================</p>
 
 <p>TBA</p>
 
 <p>.. _sec-dev-test:</p>
 
-<h1 id="tests">Tests</h1>
+<h3 id="tests">Tests</h3>
+<p>=====</p>
 
 <h2 id="enabling-bebop-in-the-loop-tests">Enabling Bebop In The Loop Tests</h2>
 
@@ -1604,7 +1713,8 @@ Bebop-specific States
   $ make tests
   $ rostest –text bebop_driver bebop_itl_test.test</p>
 
-<h1 id="upgrading-the-bebop-sdk">Upgrading the Bebop SDK</h1>
+<h3 id="upgrading-the-bebop-sdk">Upgrading the Bebop SDK</h3>
+<p>=======================</p>
 
 <p>.. warning:: Since version 0.6, <code class="language-plaintext highlighter-rouge">Parrot ARSDK &lt;http://developer.parrot.com/docs/SDK3/&gt;</code><em>, the main underlying dependency of  *bebop_autonomy* is not build inline anymore. Instead, the slightly patched and catkinized version of it, called <code class="language-plaintext highlighter-rouge">parrot_arsdk &lt;https://github.com/AutonomyLab/parrot_arsdk&gt;</code></em>, is fetched as a dependency. <strong>The following documentation needs to be updated</strong>.</p>
 
@@ -1668,7 +1778,7 @@ Bebop-specific States
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 Tonyleekorea. All rights reserved. <br />
-<span>Page last updated:</span> July 9, 2021<br/> Site last generated: Aug 7, 2021 <br />
+<span>Page last updated:</span> July 8, 2021<br/> Site last generated: Aug 7, 2021 <br />
 <p align="right"><img src="images/tonyillust_atwork.svg" alt="tonyillust" style="width: 20%; max-width: 30%;"/></p>
                 </div>
             </div>
