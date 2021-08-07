@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="summary.">
+<meta name="keywords" content="MLDLAIAutonomous,  API, content API, UI text, inline help, context-sensitive help, popovers, tooltips">
+<meta name="theme-color" content="#72ac4a" />
+<title>Machine learning, deep learning, AI | Tonylee Project Showcase</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-green.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="aiegoo.github.io/feed.xml">
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"><img src="images/tony_doc.svg" style="width: 117px; max-width: 12%;"> My Project Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://github.com/aiegoo/portfolio/wiki" target="_blank" rel="noopener">GitHub</a></li>
+                
+                
+                
+                <li><a href="news">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xaas<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/en" target="_blank" rel="noopener">o-lora</a></li>
+                        
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/admin" target="_blank" rel="noopener">o-lora/admin aiegoo/</a></li>
+                        
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/blog" target="_blank" rel="noopener">o-lora/blog</a></li>
+                        
+                        
+                        
+                        <li><a href="http://idratherbewriting.com/category-jekyll/" target="_blank" rel="noopener">Jekyll on my blog</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xaas 2<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="mydoc_introduction.html">Conference call</a></li>
+                        
+                        
+                        
+                        <li><a href="p1_landing_page.html">LasVegas CES</a></li>
+                        
+                        
+                        
+                        <li><a href="p2_landing_page.html">Autonomous drone</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="https://aiegoo.github.io/portfolio">portfolio wiki</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Machine learning, deep learning, AI">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">my portfolio 1.0</li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="Overview" href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a title="Get started" href="index.html">Get started</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="About this site" href="mydoc_aboutsite.html">About this site</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dotfiles" href="mydoc_supported_features.html">Dotfiles</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="About the author" href="mydoc_about.html">About the author</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="tl;dr" href="mydoc_support.html">tl;dr</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Automation" href="#">Automation</a>
+      <ul>
+          
+          
+          
+          <li><a title="Ansible" href="mydoc_ansible.html">Ansible</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Git webhook" href="mydoc_webhook.html">Git webhook</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bash pipeline" href="mydoc_pipeline.html">Bash pipeline</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Docker" href="mydoc_docker.html">Docker</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Gitlab" href="mydoc_gitlab.html">Gitlab</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="ROS, Serializer" href="#">ROS, Serializer</a>
+      <ul>
+          
+          
+          
+          <li><a title="Django restapi frameworks" href="mydoc_django.html">Django restapi frameworks</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Rostopic integration for GUI" href="#">+Rostopic integration for GUI</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="GUI overview" href="mydoc_rostopic.html">GUI overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="GCS-web" href="tag_gcs_web.html">GCS-web</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Rqt" href="tag_rqt.html">Rqt</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="webrtc" href="tag_webrtc.html">webrtc</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="mqtt" href="tag_mqtt.html">mqtt</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Gitlab-github actions" href="mydoc_actions.html">Gitlab-github actions</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="pipeline, heroku, mailchimps" href="mydoc_heroku.html">pipeline, heroku, mailchimps</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="others" href="mydoc_others.html">others</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Django frameworks" href="#">Django frameworks</a>
+      <ul>
+          
+          
+          
+          <li><a title="Oscar" href="mydoc_oscar.html">Oscar</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Raspi" href="mydoc_raspi.html">Raspi</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Lora" href="mydoc_lora.html">Lora</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Drone-gui" href="mydoc_drone.html">Drone-gui</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Content reuse" href="mydoc_content_reuse.html">Content reuse</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Collections" href="mydoc_collections.html">Collections</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="WebStorm editor tips" href="mydoc_webstorm_text_editor.html">WebStorm editor tips</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Atom editor tips" href="mydoc_atom_text_editor.html">Atom editor tips</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Node frameworks" href="#">Node frameworks</a>
+      <ul>
+          
+          
+          
+          <li><a title="Django+Vue" href="mydoc_djangovue.html">Django+Vue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Weather app" href="mydoc_weather.html">Weather app</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Chat app" href="mydoc_chatapp.html">Chat app</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bootstrap" href="mydoc_bootstrap.html">Bootstrap</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="lightup.co.kr/blog" href="mydoc_lightup.html">lightup.co.kr/blog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="lightup.co.kr/admin" href="mydoc_lightupadmin.html">lightup.co.kr/admin</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Racing drones" href="#">Racing drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="DaLrC215" href="mydoc_dalrc.html">DaLrC215</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-skyhero" href="mydoc_skyhero.html">Dev-skyhero</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="MiniCp04" href="mydoc_minicp.html">MiniCp04</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-Nazam 02" href="mydoc_devnazam.html">Dev-Nazam 02</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Xugong" href="xugong.html">Xugong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Labels" href="mydoc_labels.html">Labels</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Links" href="mydoc_hyperlinks.html">Links</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Navtabs" href="mydoc_navtabs.html">Navtabs</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Tables" href="mydoc_tables.html">Tables</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Syntax highlighting" href="mydoc_syntax_highlighting.html">Syntax highlighting</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Workflow maps" href="mydoc_workflow_maps.html">Workflow maps</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="APM drones" href="#">APM drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="pixhawk overview" href="mydoc_pixhwak_overview.html">pixhawk overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+rFlyeval CopterSim" href="#">+rFlyeval CopterSim</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Instrucdtions&&documentation" href="mydoc_commenting_on_files.html">Instrucdtions&&documentation</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Implementating Pixhawk Cube" href="tag_rfly_cube.html">Implementating Pixhawk Cube</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-Apmdr 01 / pixhawk lite" href="mydoc_apmdr.html">Dev-Apmdr 01 / pixhawk lite</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Cube black" href="mydoc_cube.html">Cube black</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="DJI drones" href="#">DJI drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="Quad wookong" href="mydoc_quad.html">Quad wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S1000 wookong" href="mydoc_s1000.html">S1000 wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S1000 A2" href="mydoc_s100a2.html">S1000 A2</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S900 wookong" href="mydoc_s900.html">S900 wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Nazam" href="mydoc_nazam.html">Nazam</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="iTerm profiles" href="mydoc_iterm_profiles.html">iTerm profiles</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pushing builds to server" href="mydoc_push_build_to_server.html">Pushing builds to server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Publishing on Github Pages" href="mydoc_publishing_github_pages.html">Publishing on Github Pages</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Feature drones" href="#">Feature drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="Yuneec H" href="mydoc_yuneec.html">Yuneec H</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bebop Parrot" href="mydoc_bebop.html">Bebop Parrot</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jetbot rover" href="mydoc_jetbot.html">Jetbot rover</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="AGX Xavier rover" href="mydoc_xavier.html">AGX Xavier rover</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Vtol & flight data" href="mydoc_vtol.html">Vtol & flight data</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Schooling" href="#">Schooling</a>
+      <ul>
+          
+          
+          
+          <li><a title="My courses" href="mydoc_mycourse.html">My courses</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="ncs-ML/DL" href="mydoc_deeplearning.html">ncs-ML/DL</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="C++" href="mydoc_cplus.html">C++</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Web-scraping" href="mydoc_webscraping.html">Web-scraping</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Challenger project" href="mydoc_challenger-project.html">Challenger project</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="AIOT embedded projects" href="#">AIOT embedded projects</a>
+      <ul>
+          
+          
+          
+          <li><a title="Overview" href="tag_aiotoverview.html">Overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Intel Edison projects" href="#">+Intel Edison projects</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Detection serializer" href="tag_sensor_detection.html">Detection serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Realsense drone" href="tag_realsense.html">Realsense drone</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Edison Arduino" href="tag_edison_arduino.html">Edison Arduino</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collaboration pages" href="tag_collaboration.html">Collaboration pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Troubleshooting pages" href="tag_troubleshooting.html">Troubleshooting pages</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jetson nano" href="tag_jetson_nano.html">Jetson nano</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Jetson Xavier" href="#">+Jetson Xavier</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="project overview" href="tag_jetson_xavier.html">project overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Raspberry Pi projects" href="tag_raspi.html">Raspberry Pi projects</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Sensor serializer" href="tag_serializer.html">Sensor serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Lora monitoring system" href="tag_lora_monitoring.html">Lora monitoring system</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Books" href="#">Books</a>
+      <ul>
+          
+          
+          
+          <li><a title="Fiction" href="mydoc_fiction.html">Fiction</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="Tag archive pages" href="#">Tag archive pages</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Formatting pages" href="tag_formatting.html">Formatting pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Navigation pages" href="tag_navigation.html">Navigation pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Content types pages" href="tag_content_types.html">Content types pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Publishing pages" href="tag_publishing.html">Publishing pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Special layout pages" href="tag_special_layouts.html">Special layout pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collaboration pages" href="tag_collaboration.html">Collaboration pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Troubleshooting pages" href="tag_troubleshooting.html">Troubleshooting pages</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Web-dev-ops" href="mydoc_webdev.html">Web-dev-ops</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="two scoops of django" href="mydoc_twoscoops.html">two scoops of django</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="presentation" href="books_revealjs.html">presentation</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="more to come" href="">more to come</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="drone companies" href="mydoc_contact.html">drone companies</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+     
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+       
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Machine learning, deep learning, AI</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">summary.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<details>
+  <summary>
+    <div id="toc"></div></summary>
+</details>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/pages/mydoc/mydoc_deeplearning.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <h2 id="machine-learning-deep-learning">Machine-learning, deep-learning</h2>
+
+<h3 id="dlml-concept">DL/ML concept</h3>
+
+<blockquote>
+  <p>for setup and basic lessons, see here <a href="https://github.com/aiegoo/resume/wiki">schoolWiki</a></p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Level of Big Data Maturity</th>
+      <th style="text-align: center">Tools used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="https://user-images.githubusercontent.com/42961200/83480803-40c81600-a4d7-11ea-92fa-c2ad6ce9eac4.png" alt="image" /></td>
+      <td style="text-align: center"><img src="https://user-images.githubusercontent.com/42961200/83480002-212fee00-a4d5-11ea-8e25-12b4d0e1f4e4.png" alt="image" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="500--𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹-𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲-𝗣𝗿𝗼𝗷𝗲𝗰𝘁-𝗟𝗶𝘀𝘁-𝘄𝗶𝘁𝗵-𝗰𝗼𝗱𝗲">500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁 𝘄𝗶𝘁𝗵 𝗰𝗼𝗱𝗲</h2>
+
+<p><em>500 AI Machine learning Deep learning Computer vision NLP Projects with code</em></p>
+
+<p><strong><em>This list is continuously updated.</em></strong> - You can take pull request and contribute.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>180 Machine learning Project</td>
+      <td><a href="http://is.gd/MLtyGk">is.gd/MLtyGk</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>12 Machine learning Object Detection</td>
+      <td><a href="http://is.gd/jZMP1A">is.gd/jZMP1A</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>20 NLP Project with Python</td>
+      <td><a href="http://is.gd/jcMvjB">is.gd/jcMvjB</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>10 Machine Learning Projects on Time Series Forecasting</td>
+      <td><a href="http://is.gd/dOR66m">is.gd/dOR66m</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>20 Deep Learning Projects Solved and Explained with Python</td>
+      <td><a href="http://is.gd/8Cv5EP">is.gd/8Cv5EP</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>20 Machine learning Project</td>
+      <td><a href="http://is.gd/LZTF0J">is.gd/LZTF0J</a></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>30 Python Project Solved and Explained</td>
+      <td><a href="http://is.gd/xhT36v">is.gd/xhT36v</a></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Machine learning Course for Free</td>
+      <td>https://lnkd.in/ekCY8xw</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>5 Web Scraping Projects with Python</td>
+      <td><a href="http://is.gd/6XOTSn">is.gd/6XOTSn</a></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>20 Machine Learning Projects on Future Prediction with Python</td>
+      <td><a href="http://is.gd/xDKDkl">is.gd/xDKDkl</a></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>4 Chatbot Project With Python</td>
+      <td><a href="http://is.gd/LyZfXv">is.gd/LyZfXv</a></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>7 Python Gui project</td>
+      <td><a href="http://is.gd/0KPBvP">is.gd/0KPBvP</a></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>All Unsupervised learning Projects</td>
+      <td><a href="http://is.gd/cz11Kv">is.gd/cz11Kv</a></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>10 Machine learning Projects for Regression Analysis</td>
+      <td><a href="http://is.gd/k8faV1">is.gd/k8faV1</a></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>10 Machine learning Project for Classification with Python</td>
+      <td><a href="http://is.gd/BJQjMN">is.gd/BJQjMN</a></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>6 Sentimental Analysis Projects with python</td>
+      <td><a href="http://is.gd/WeiE5p">is.gd/WeiE5p</a></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>4 Recommendations Projects with Python</td>
+      <td><a href="http://is.gd/pPHAP8">is.gd/pPHAP8</a></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>20 Deep learning Project with python</td>
+      <td><a href="http://is.gd/l3OCJs">is.gd/l3OCJs</a></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>5 COVID19 Projects with Python</td>
+      <td><a href="http://is.gd/xFCnYi">is.gd/xFCnYi</a></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>9 Computer Vision Project with python</td>
+      <td><a href="http://is.gd/lrNybj">is.gd/lrNybj</a></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>8 Neural Network Project with python</td>
+      <td><a href="is.gd/FCyOOf">is.gd/FCyOOf</a></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>5 Machine learning Project for healthcare</td>
+      <td><a href="https://bit.ly/3b86bOH">link</a></td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>5 NLP Project with Python</td>
+      <td><a href="https://bit.ly/3hExtNS">link</a></td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>47 Machine Learning Projects for 2021</td>
+      <td><a href="https://bit.ly/356bjiC">link</a></td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>19 Artificial Intelligence Projects for 2021</td>
+      <td><a href="https://bit.ly/38aLgsg">link</a></td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>28 Machine learning Projects for 2021</td>
+      <td><a href="https://bit.ly/3bguRF1">link</a></td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>16 Data Science Projects with Source Code for 2021</td>
+      <td><a href="https://bit.ly/3oa4zYD">link</a></td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>24 Deep learning Projects with Source Code for 2021</td>
+      <td><a href="https://bit.ly/3rQrOsU">link</a></td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>25 Computer Vision Projects with Source Code for 2021</td>
+      <td><a href="https://bit.ly/2JDMO4I">link</a></td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>23 Iot Projects with Source Code for 2021</td>
+      <td><a href="https://bit.ly/354gT53">link</a></td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>27 Django Projects with Source Code for 2021</td>
+      <td><a href="https://bit.ly/2LdRPRZ">link</a></td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>37 Python Fun Projects with Code for 2021</td>
+      <td><a href="https://bit.ly/3hBHzz4">link</a></td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>500 + Top Deep learning Codes</td>
+      <td><a href="https://bit.ly/3n7AkAc">link</a></td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>500 + Machine learning Codes</td>
+      <td><a href="https://bit.ly/3b32n13">link</a></td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>20+ Machine Learning Datasets &amp; Project Ideas</td>
+      <td><a href="https://bit.ly/3b2J48c">link</a></td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>1000+ Computer vision codes</td>
+      <td><a href="https://bit.ly/2LiX1nv">link</a></td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>300 + Industry wise Real world projects with code</td>
+      <td><a href="https://bit.ly/3rN7lVR">link</a></td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>1000 + Python Project Codes</td>
+      <td><a href="https://bit.ly/3oca2xM">link</a></td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>363 + NLP Project with Code</td>
+      <td><a href="https://bit.ly/3b442DO">link</a></td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>50 + Code ML Models (For iOS 11) Projects</td>
+      <td><a href="https://bit.ly/389dB2s">link</a></td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>180 + Pretrained Model Projects for Image, text, Audio and Video</td>
+      <td><a href="https://bit.ly/3hFyQMw">link</a></td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>50 + Graph Classification Project List</td>
+      <td><a href="https://bit.ly/3rOYFhH">link</a></td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>100 + Sentence Embedding(NLP Resources)</td>
+      <td><a href="https://bit.ly/355aS8c">link</a></td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>100 + Production Machine learning Projects</td>
+      <td><a href="https://bit.ly/353ckI0">link</a></td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>300 + Machine Learning Resources Collection</td>
+      <td><a href="https://bit.ly/3b2LjIE">link</a></td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>70 + Awesome AI</td>
+      <td><a href="https://bit.ly/3hDIXkD">link</a></td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>150 + Machine learning Project Ideas with code</td>
+      <td><a href="https://bit.ly/38bfpbg">link</a></td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>100 + AutoML Projects with code</td>
+      <td><a href="https://bit.ly/356zxZX">link</a></td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>100 + Machine Learning Model Interpretability Code Frameworks</td>
+      <td><a href="https://bit.ly/3n7FaNB">link</a></td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>120 + Multi Model Machine learning Code Projects</td>
+      <td><a href="https://bit.ly/38QRI76">link</a></td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Awesome Chatbot Projects</td>
+      <td><a href="https://bit.ly/3rQyxmE">link</a></td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Awesome ML Demo Project with iOS</td>
+      <td><a href="https://bit.ly/389hZOY">link</a></td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>100 + Python based Machine learning Application Projects</td>
+      <td><a href="https://bit.ly/3n9zLWv">link</a></td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>100 + Reproducible Research Projects of ML and DL</td>
+      <td><a href="https://bit.ly/2KQ0J8C">link</a></td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>25 + Python Projects</td>
+      <td><a href="https://bit.ly/353fRpK">link</a></td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>8 + OpenCV Projects</td>
+      <td><a href="https://bit.ly/389mj0B">link</a></td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>1000 + Awesome Deep learning Collection</td>
+      <td><a href="https://bit.ly/3b0a9Jj">link</a></td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>200 + Awesome NLP learning Collection</td>
+      <td><a href="https://bit.ly/3b74b9o">link</a></td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>200 + The Super Duper NLP Repo</td>
+      <td><a href="https://bit.ly/3hDNnbd">link</a></td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>100 + NLP dataset for your Projects</td>
+      <td><a href="https://bit.ly/353h2Wc">link</a></td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>100 + NLP dataset for your Projects</td>
+      <td><a href="https://bit.ly/353h2Wc">link</a></td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>364 + Machine Learning Projects definition</td>
+      <td><a href="https://bit.ly/2X5QRdb">link</a></td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>300+ Google Earth Engine Jupyter Notebooks to Analyze Geospatial Data</td>
+      <td><a href="https://bit.ly/387JwjC">link</a></td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>1000 + Machine learning Projects Information</td>
+      <td><a href="https://bit.ly/3rMGk4N">link</a></td>
+    </tr>
+    <tr>
+      <td>64.</td>
+      <td>11 Computer Vision Projects with code</td>
+      <td><a href="https://bit.ly/38gz2OR">link</a></td>
+    </tr>
+    <tr>
+      <td>65.</td>
+      <td>13 Computer Vision Projects with Code</td>
+      <td><a href="https://bit.ly/3hMJdhh">link</a></td>
+    </tr>
+    <tr>
+      <td>66.</td>
+      <td>13 Cool Computer Vision GitHub Projects To Inspire You</td>
+      <td><a href="https://bit.ly/2LrSv6d">link</a></td>
+    </tr>
+    <tr>
+      <td>67.</td>
+      <td>Open-Source Computer Vision Projects (With Tutorials)</td>
+      <td><a href="https://bit.ly/3pUss6U">link</a></td>
+    </tr>
+    <tr>
+      <td>68.</td>
+      <td>OpenCV Computer Vision Projects with Python</td>
+      <td><a href="https://bit.ly/38jmGpn">link</a></td>
+    </tr>
+    <tr>
+      <td>69.</td>
+      <td>100 + Computer vision Algorithm Implementation</td>
+      <td><a href="https://bit.ly/3rWgrzF">link</a></td>
+    </tr>
+    <tr>
+      <td>70.</td>
+      <td>80 + Computer vision Learning code</td>
+      <td><a href="https://bit.ly/3hKCpkm">link</a></td>
+    </tr>
+    <tr>
+      <td>71.</td>
+      <td>Deep learning Treasure</td>
+      <td><a href="https://bit.ly/359zLQb">link</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="road-lane-line-detection--computer-vision-project-in-python">Road Lane line detection – Computer Vision Project in Python</h2>
+<p>Lane Line detection is a critical component for self driving cars and also for computer vision in general. This concept is used to describe the path for self-driving cars and to avoid the risk of getting in another lane.</p>
+
+<p>In this project, we will build a machine learning project to detect lane lines in real-time. We will do this using the concepts of computer vision using OpenCV library. To detect the lane we have to detect the white markings on both sides on the lane.</p>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/125195194-9b61a300-e28f-11eb-9046-b8ffa1ae73e7.gif" alt="lane-line-detection-ml-project" /></p>
+
+<p>Road Lane-Line Detection with Python &amp; OpenCV
+Using computer vision techniques in Python, we will identify road lane lines in which autonomous cars must run. This will be a critical part of autonomous cars, as the self-driving cars should not cross it’s lane and should not go in opposite lane to avoid accidents.</p>
+
+<p>Frame Masking and Hough Line Transformation
+To detect white markings in the lane, first, we need to mask the rest part of the frame. We do this using frame masking. The frame is nothing but a NumPy array of image pixel values. To mask the unnecessary pixel of the frame, we simply update those pixel values to 0 in the NumPy array.</p>
+
+<p>After making we need to detect lane lines. The technique used to detect mathematical shapes like this is called Hough Transform. Hough transformation can detect shapes like rectangles, circles, triangles, and lines.</p>
+
+<p>Code Download
+Please download the source code: <a href="https://github.com/aiegoo/portfolio/raw/assets/lane-line-detection-project-code.zip">Lane Line Detection Project Code</a></p>
+
+<p>Follow the below steps for lane line detection in Python:</p>
+
+<ol>
+  <li>preparation</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="k">as</span> <span class="n">mpimg</span>
+<span class="kn">from</span> <span class="nn">moviepy.editor</span> <span class="kn">import</span> <span class="n">VideoFileClip</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="c1">## apply frame masking and find region of interest
+</span><span class="k">def</span> <span class="nf">interested_region</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">vertices</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span> 
+        <span class="n">mask_color_ignore</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,)</span> <span class="o">*</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">mask_color_ignore</span> <span class="o">=</span> <span class="mi">255</span>
+        
+    <span class="n">cv2</span><span class="p">.</span><span class="n">fillPoly</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">img</span><span class="p">),</span> <span class="n">vertices</span><span class="p">,</span> <span class="n">mask_color_ignore</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">cv2</span><span class="p">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">img</span><span class="p">))</span>
+    
+<span class="c1">## convert pixels to a line
+</span><span class="k">def</span> <span class="nf">hough_lines</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">rho</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">min_line_len</span><span class="p">,</span> <span class="n">max_line_gap</span><span class="p">):</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">HoughLinesP</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">rho</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([]),</span> <span class="n">minLineLength</span><span class="o">=</span><span class="n">min_line_len</span><span class="p">,</span> <span class="n">maxLineGap</span><span class="o">=</span><span class="n">max_line_gap</span><span class="p">)</span>
+    <span class="n">line_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">)</span>
+    <span class="n">lines_drawn</span><span class="p">(</span><span class="n">line_img</span><span class="p">,</span><span class="n">lines</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">line_img</span>
+    
+<span class="c1">## create two lines per frame after Hough  transformation
+</span><span class="k">def</span> <span class="nf">lines_drawn</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">lines</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">thickness</span><span class="o">=</span><span class="mi">6</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">cache</span>
+    <span class="k">global</span> <span class="n">first_frame</span>
+    <span class="n">slope_l</span><span class="p">,</span> <span class="n">slope_r</span> <span class="o">=</span> <span class="p">[],[]</span>
+    <span class="n">lane_l</span><span class="p">,</span><span class="n">lane_r</span> <span class="o">=</span> <span class="p">[],[]</span>
+
+    <span class="n">α</span> <span class="o">=</span><span class="mf">0.2</span> 
+  <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">x1</span><span class="p">,</span><span class="n">y1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">y2</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+            <span class="n">slope</span> <span class="o">=</span> <span class="p">(</span><span class="n">y2</span><span class="o">-</span><span class="n">y1</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">x2</span><span class="o">-</span><span class="n">x1</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">slope</span> <span class="o">&gt;</span> <span class="mf">0.4</span><span class="p">:</span>
+                <span class="n">slope_r</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">slope</span><span class="p">)</span>
+                <span class="n">lane_r</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">slope</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mf">0.4</span><span class="p">:</span>
+                <span class="n">slope_l</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">slope</span><span class="p">)</span>
+                <span class="n">lane_l</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">,</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">if</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">lane_l</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lane_r</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)):</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s">'no lane detected'</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="n">slope_mean_l</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">slope_l</span><span class="p">,</span><span class="n">axis</span> <span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">slope_mean_r</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">slope_r</span><span class="p">,</span><span class="n">axis</span> <span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">mean_l</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">(</span><span class="n">lane_l</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">mean_r</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">(</span><span class="n">lane_r</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="p">((</span><span class="n">slope_mean_r</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">slope_mean_l</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'dividing by zero'</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    
+    <span class="n">x1_l</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span><span class="o">/</span><span class="n">slope_mean_l</span><span class="p">)</span> 
+    <span class="n">x2_l</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span><span class="o">/</span><span class="n">slope_mean_l</span><span class="p">)</span>   
+    <span class="n">x1_r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span><span class="o">/</span><span class="n">slope_mean_r</span><span class="p">)</span>
+    <span class="n">x2_r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span><span class="o">/</span><span class="n">slope_mean_r</span><span class="p">)</span>
+    
+   
+    <span class="k">if</span> <span class="n">x1_l</span> <span class="o">&gt;</span> <span class="n">x1_r</span><span class="p">:</span>
+        <span class="n">x1_l</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">x1_l</span><span class="o">+</span><span class="n">x1_r</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">x1_r</span> <span class="o">=</span> <span class="n">x1_l</span>
+        <span class="n">y1_l</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">x1_l</span> <span class="p">)</span> <span class="o">+</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="n">y1_r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">x1_r</span> <span class="p">)</span> <span class="o">+</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="n">y2_l</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">x2_l</span> <span class="p">)</span> <span class="o">+</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="n">y2_r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">x2_r</span> <span class="p">)</span> <span class="o">+</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">y1_l</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">y2_l</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">y1_r</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">y2_r</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+      
+    <span class="n">present_frame</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="n">x1_l</span><span class="p">,</span><span class="n">y1_l</span><span class="p">,</span><span class="n">x2_l</span><span class="p">,</span><span class="n">y2_l</span><span class="p">,</span><span class="n">x1_r</span><span class="p">,</span><span class="n">y1_r</span><span class="p">,</span><span class="n">x2_r</span><span class="p">,</span><span class="n">y2_r</span><span class="p">],</span><span class="n">dtype</span> <span class="o">=</span><span class="s">"float32"</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">first_frame</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">next_frame</span> <span class="o">=</span> <span class="n">present_frame</span>        
+        <span class="n">first_frame</span> <span class="o">=</span> <span class="mi">0</span>        
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="n">prev_frame</span> <span class="o">=</span> <span class="n">cache</span>
+        <span class="n">next_frame</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">α</span><span class="p">)</span><span class="o">*</span><span class="n">prev_frame</span><span class="o">+</span><span class="n">α</span><span class="o">*</span><span class="n">present_frame</span>
+             
+    <span class="n">cv2</span><span class="p">.</span><span class="n">line</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">1</span><span class="p">])),</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">3</span><span class="p">])),</span> <span class="n">color</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="p">.</span><span class="n">line</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">4</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">5</span><span class="p">])),</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">6</span><span class="p">]),</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">7</span><span class="p">])),</span> <span class="n">color</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
+    
+    <span class="n">cache</span> <span class="o">=</span> <span class="n">next_frame</span>
+    
+<span class="c1">## process each video for lane  detection
+</span>
+<span class="k">def</span> <span class="nf">weighted_img</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">initial_img</span><span class="p">,</span> <span class="n">α</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">β</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">λ</span><span class="o">=</span><span class="mf">0.</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">cv2</span><span class="p">.</span><span class="n">addWeighted</span><span class="p">(</span><span class="n">initial_img</span><span class="p">,</span> <span class="n">α</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="n">β</span><span class="p">,</span> <span class="n">λ</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">process_image</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+
+    <span class="k">global</span> <span class="n">first_frame</span>
+
+    <span class="n">gray_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+    <span class="n">img_hsv</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_RGB2HSV</span><span class="p">)</span>
+
+
+    <span class="n">lower_yellow</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="s">"uint8"</span><span class="p">)</span>
+    <span class="n">upper_yellow</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">30</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="s">"uint8"</span><span class="p">)</span>
+
+    <span class="n">mask_yellow</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">inRange</span><span class="p">(</span><span class="n">img_hsv</span><span class="p">,</span> <span class="n">lower_yellow</span><span class="p">,</span> <span class="n">upper_yellow</span><span class="p">)</span>
+    <span class="n">mask_white</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">inRange</span><span class="p">(</span><span class="n">gray_image</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+    <span class="n">mask_yw</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">bitwise_or</span><span class="p">(</span><span class="n">mask_white</span><span class="p">,</span> <span class="n">mask_yellow</span><span class="p">)</span>
+    <span class="n">mask_yw_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">gray_image</span><span class="p">,</span> <span class="n">mask_yw</span><span class="p">)</span>
+
+    <span class="n">gauss_gray</span><span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">mask_yw_image</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="n">canny_edges</span><span class="o">=</span><span class="n">cv2</span><span class="p">.</span><span class="n">Canny</span><span class="p">(</span><span class="n">gauss_gray</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
+
+    <span class="n">imshape</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="n">shape</span>
+    <span class="n">lower_left</span> <span class="o">=</span> <span class="p">[</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">9</span><span class="p">,</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="n">lower_right</span> <span class="o">=</span> <span class="p">[</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">9</span><span class="p">,</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="n">top_left</span> <span class="o">=</span> <span class="p">[</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">8</span><span class="p">,</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="p">]</span>
+    <span class="n">top_right</span> <span class="o">=</span> <span class="p">[</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">8</span><span class="p">,</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="p">]</span>
+    <span class="n">vertices</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="n">lower_left</span><span class="p">,</span><span class="n">top_left</span><span class="p">,</span><span class="n">top_right</span><span class="p">,</span><span class="n">lower_right</span><span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">int32</span><span class="p">)]</span>
+    <span class="n">roi_image</span> <span class="o">=</span> <span class="n">interested_region</span><span class="p">(</span><span class="n">canny_edges</span><span class="p">,</span> <span class="n">vertices</span><span class="p">)</span>
+
+    <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span>
+
+    <span class="n">line_image</span> <span class="o">=</span> <span class="n">hough_lines</span><span class="p">(</span><span class="n">roi_image</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">180</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">weighted_img</span><span class="p">(</span><span class="n">line_image</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">α</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">β</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">λ</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="c1">## clip the input video to frames and get the resulant output video file
+</span><span class="n">first_frame</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">white_output</span> <span class="o">=</span> <span class="s">'__path_to_output_file__'</span>
+<span class="n">clip1</span> <span class="o">=</span> <span class="n">VideoFileClip</span><span class="p">(</span><span class="s">"__path_to_input_file__"</span><span class="p">)</span>
+<span class="n">white_clip</span> <span class="o">=</span> <span class="n">clip1</span><span class="p">.</span><span class="n">fl_image</span><span class="p">(</span><span class="n">process_image</span><span class="p">)</span>
+<span class="n">white_clip</span><span class="p">.</span><span class="n">write_videofile</span><span class="p">(</span><span class="n">white_output</span><span class="p">,</span> <span class="n">audio</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>Lane line detection  profject gui (code)</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="n">tk</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageTk</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+
+<span class="k">global</span> <span class="n">last_frame1</span>                                   
+<span class="n">last_frame1</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">480</span><span class="p">,</span> <span class="mi">640</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">)</span>
+<span class="k">global</span> <span class="n">last_frame2</span>                                      
+<span class="n">last_frame2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">480</span><span class="p">,</span> <span class="mi">640</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">)</span>
+<span class="k">global</span> <span class="n">cap1</span>
+<span class="k">global</span> <span class="n">cap2</span>
+<span class="n">cap1</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="s">"path_to_input_test_video"</span><span class="p">)</span>
+<span class="n">cap2</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="s">"path_to_resultant_lane_detected_video"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">show_vid</span><span class="p">():</span>                                       
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">cap1</span><span class="p">.</span><span class="n">isOpened</span><span class="p">():</span>                             
+        <span class="k">print</span><span class="p">(</span><span class="s">"cant open the camera1"</span><span class="p">)</span>
+    <span class="n">flag1</span><span class="p">,</span> <span class="n">frame1</span> <span class="o">=</span> <span class="n">cap1</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">frame1</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">frame1</span><span class="p">,(</span><span class="mi">400</span><span class="p">,</span><span class="mi">500</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">flag1</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s">"Major error!"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">flag1</span><span class="p">:</span>
+        <span class="k">global</span> <span class="n">last_frame1</span>
+        <span class="n">last_frame1</span> <span class="o">=</span> <span class="n">frame1</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">pic</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">last_frame1</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>     
+        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">pic</span><span class="p">)</span>
+        <span class="n">imgtk</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="p">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">img</span><span class="p">)</span>
+        <span class="n">lmain</span><span class="p">.</span><span class="n">imgtk</span> <span class="o">=</span> <span class="n">imgtk</span>
+        <span class="n">lmain</span><span class="p">.</span><span class="n">configure</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">imgtk</span><span class="p">)</span>
+        <span class="n">lmain</span><span class="p">.</span><span class="n">after</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">show_vid</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">show_vid2</span><span class="p">():</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">cap2</span><span class="p">.</span><span class="n">isOpened</span><span class="p">():</span>                             
+        <span class="k">print</span><span class="p">(</span><span class="s">"cant open the camera2"</span><span class="p">)</span>
+    <span class="n">flag2</span><span class="p">,</span> <span class="n">frame2</span> <span class="o">=</span> <span class="n">cap2</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">frame2</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">frame2</span><span class="p">,(</span><span class="mi">400</span><span class="p">,</span><span class="mi">500</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">flag2</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s">"Major error2!"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">flag2</span><span class="p">:</span>
+        <span class="k">global</span> <span class="n">last_frame2</span>
+        <span class="n">last_frame2</span> <span class="o">=</span> <span class="n">frame2</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">pic2</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">last_frame2</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+        <span class="n">img2</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">pic2</span><span class="p">)</span>
+        <span class="n">img2tk</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="p">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">img2</span><span class="p">)</span>
+        <span class="n">lmain2</span><span class="p">.</span><span class="n">img2tk</span> <span class="o">=</span> <span class="n">img2tk</span>
+        <span class="n">lmain2</span><span class="p">.</span><span class="n">configure</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">img2tk</span><span class="p">)</span>
+        <span class="n">lmain2</span><span class="p">.</span><span class="n">after</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">show_vid2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="n">root</span><span class="o">=</span><span class="n">tk</span><span class="p">.</span><span class="n">Tk</span><span class="p">()</span>                                     
+    <span class="n">lmain</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">master</span><span class="o">=</span><span class="n">root</span><span class="p">)</span>
+    <span class="n">lmain2</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">master</span><span class="o">=</span><span class="n">root</span><span class="p">)</span>
+
+    <span class="n">lmain</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span> <span class="o">=</span> <span class="n">LEFT</span><span class="p">)</span>
+    <span class="n">lmain2</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span> <span class="o">=</span> <span class="n">RIGHT</span><span class="p">)</span>
+    <span class="n">root</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Lane-line detection"</span><span class="p">)</span>            
+    <span class="n">root</span><span class="p">.</span><span class="n">geometry</span><span class="p">(</span><span class="s">"900x700+100+10"</span><span class="p">)</span> 
+    <span class="n">exitbutton</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">'Quit'</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s">"red"</span><span class="p">,</span><span class="n">command</span><span class="o">=</span>   <span class="n">root</span><span class="p">.</span><span class="n">destroy</span><span class="p">).</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span> <span class="o">=</span> <span class="n">BOTTOM</span><span class="p">,)</span>
+    <span class="n">show_vid</span><span class="p">()</span>
+    <span class="n">show_vid2</span><span class="p">()</span>
+    <span class="n">root</span><span class="p">.</span><span class="n">mainloop</span><span class="p">()</span>                                  
+    <span class="n">cap</span><span class="p">.</span><span class="n">release</span><span class="p">()</span>
+    
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/125195892-b8e43c00-e292-11eb-90d5-3e30a0ca0ba8.gif" alt="lane-line-detection-ml-project-2" /></p>
+
+<h2 id="defect-detection-in-ssd-network-in-ultrasonic-inspection">Defect detection in ssd network in ultrasonic inspection</h2>
+<p><a href="https://www.youtube.com/watch?v=PUT7HFGWuMM">youtube</a></p>
+
+<p><a href="https://github.com/jasonngai01/UTPA_SSD">code</a></p>
+
+<pre><code class="language-txt">This project aims to develop a system using convolutional neutral networks (CNNs) to detect defects in composite laminate materials automatically in order to increase ultrasonic inspection accuracy and efficiency. For inspectors, ultrasonic testing is a labor-intensive and time-consuming manual task. This approach improves their efficiency, accuracy and reduces their workload when when interpreting ultrasonic scanning images to identify defects. Discontinuities and defects in materials are usually not specific shapes, positions, and orientations. A Jetson TX2 Developer Kit runs in real time an image analysis function using a Single Shot MultiBox Detector (SSD) network and computer vision trained on images of delamination defects. The SSD network can also evaluate components and specimens with other methods, such as thermography inspection.
+</code></pre>
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2021 Tonyleekorea. All rights reserved. <br />
+<span>Page last updated:</span> July 10, 2021<br/> Site last generated: Aug 7, 2021 <br />
+<p align="right"><img src="images/tonyillust_atwork.svg" alt="tonyillust" style="width: 20%; max-width: 30%;"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+
