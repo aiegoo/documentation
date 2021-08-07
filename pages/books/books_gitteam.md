@@ -11,6 +11,8 @@ folder: books
 
 |You Want To… | Notes | Solution|
 |:----| :---: | ---- |
+| Discard changes you’ve made to a file in your working directory. |Changed file is not staged, or committed. |checkout — [filename] |
+| Discard all unsaved changes in the working directory File is staged, but not committed. | | reset --hard |
 |Combine several commits up to but not including a specific commit.|  |reset [commit-id]|
 |Remove all unsaved changes including untracked files. | Changed files are not committed | clean -fd|
 |Remove all staged changes and previously committed |work up to a specific commit but do not remove new files from the working directory.| reset --hard [commitid]|
