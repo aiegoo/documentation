@@ -1,0 +1,15 @@
+I"<h2 id="creating-tooltips">Creating tooltips</h2>
+<p>Because this theme is built on Bootstrap, you can simply use a specific attribute on an element to insert a tooltip.</p>
+
+<p>Suppose you have a glossary.yml file inside your _data folder. You could pull in that glossary definition like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-original-title=</span><span class="s">"{{site.data.glossary.jekyll_platform}}"</span><span class="nt">&gt;</span>Jekyll<span class="nt">&lt;/a&gt;</span> is my favorite tool for building websites.
+</code></pre></div></div>
+
+<p>This renders to the following:</p>
+
+<p><a href="#" data-toggle="tooltip" data-original-title="Jekyll is a static site generator that builds sites using most modern web technologies.">Jekyll</a> is my favorite tool for building websites.</p>
+
+<p>[]:</p>
+
+:ET

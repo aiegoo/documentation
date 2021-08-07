@@ -1,0 +1,70 @@
+I"�<h2 id="gcs-web">GCS-web</h2>
+
+<ul>
+  <li>compare other commercial solution
+<a href="https://gcs.uno">gcs_uno</a>, <a href="https://github.com/aiegoo/gcs-uno">github</a></li>
+</ul>
+
+<h3 id="typical-features">typical features</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Live remote control using keyboard, onscreen joystick or regular gamepads</td>
+      <td>Live video stream</td>
+      <td>Autonomous mission flights</td>
+    </tr>
+    <tr>
+      <td>Scheduled or event-triggered flights</td>
+      <td>External viewers without or limited control capabilities</td>
+      <td>3rd party services integration</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="uno-gcs-installation-guide-instruction">uno gcs installation guide <a href="https://docs.gcs.uno/ServerSetup/BasicInstallation/">instruction</a></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>guide</th>
+      <th>detail</th>
+      <th style="text-align: center">serviced at</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://docs.gcs.uno/ServerSetup/ConfigureAndRun/">config&amp;run</a> <a href="https://github.com/aiegoo/documentation/issues/4#issue-954161944">or here</a></td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://docs.gcs.uno/LiveVideoStreaming/WowzaCloudStreaming/">wowzasetup</a></td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://wmspanel.com/nimble/install#os_ubuntu">nimblemediaserver</a></td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/aiegoo/documentation/issues/3#issuecomment-887372362">installingnimble</a></td>
+      <td> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td><a href="https://docs.gcs.uno/DroneControl/ControlDashboard/">control_dashboard</a></td>
+      <td> </td>
+      <td style="text-align: center"><img alt="dashboard" src="https://user-images.githubusercontent.com/42961200/127134215-52c22493-f5c5-42f2-9249-d3b5dfb20b2d.png" max-width="250px" /></td>
+    </tr>
+  </tbody>
+</table>
+:ET

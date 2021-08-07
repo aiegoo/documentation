@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="summary.">
+<meta name="keywords" content="dronejobresume,  API, content API, UI text, inline help, context-sensitive help, popovers, tooltips">
+<meta name="theme-color" content="#72ac4a" />
+<title>🔭Serializer with API | Tonylee Project Showcase</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-green.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="aiegoo.github.io/feed.xml">
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+    <!-- Include the standard DataTables bits -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
+    <!-- First, this walks through the tables that occur between ...-begin
+         and ...-end and add the "datatable" class to them.
+         Then it invokes DataTable's standard initializer
+         Credit here: http://www.beardedhacker.com/blog/2015/08/28/add-class-attribute-to-markdown-table/
+      -->
+    <script>
+      $(document).ready(function(){
+          $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
+          $('table.display').DataTable( {
+              paging: true,
+              stateSave: true,
+              searching: true
+          });
+       });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"><img src="images/tony_doc.svg" style="width: 117px; max-width: 12%;"> My Project Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://github.com/aiegoo/portfolio/wiki" target="_blank" rel="noopener">GitHub</a></li>
+                
+                
+                
+                <li><a href="news">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xaas<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/en" target="_blank" rel="noopener">o-lora</a></li>
+                        
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/admin" target="_blank" rel="noopener">o-lora/admin aiegoo/</a></li>
+                        
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/blog" target="_blank" rel="noopener">o-lora/blog</a></li>
+                        
+                        
+                        
+                        <li><a href="http://idratherbewriting.com/category-jekyll/" target="_blank" rel="noopener">Jekyll on my blog</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xaas 2<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="mydoc_introduction.html">Conference call</a></li>
+                        
+                        
+                        
+                        <li><a href="p1_landing_page.html">LasVegas CES</a></li>
+                        
+                        
+                        
+                        <li><a href="p2_landing_page.html">Autonomous drone</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="https://aiegoo.github.io/portfolio">portfolio wiki</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="🔭Serializer with API">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">my portfolio 1.0</li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="Overview" href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a title="Get started" href="index.html">Get started</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="About this site" href="mydoc_aboutsite.html">About this site</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dotfiles" href="mydoc_supported_features.html">Dotfiles</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="About the author" href="mydoc_about.html">About the author</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="tl;dr" href="mydoc_support.html">tl;dr</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Automation" href="#">Automation</a>
+      <ul>
+          
+          
+          
+          <li><a title="Ansible" href="mydoc_ansible.html">Ansible</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Git webhook" href="mydoc_webhook.html">Git webhook</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bash pipeline" href="mydoc_pipeline.html">Bash pipeline</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Docker" href="mydoc_docker.html">Docker</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Gitlab" href="mydoc_gitlab.html">Gitlab</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="ROS, Serializer" href="#">ROS, Serializer</a>
+      <ul>
+          
+          
+          
+          <li><a title="Django restapi frameworks" href="mydoc_django.html">Django restapi frameworks</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Rostopic integration for GUI" href="#">+Rostopic integration for GUI</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="GUI overview" href="mydoc_rostopic.html">GUI overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="GCS-web" href="tag_gcs_web.html">GCS-web</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Rqt" href="tag_rqt.html">Rqt</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="webrtc" href="tag_webrtc.html">webrtc</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="mqtt" href="tag_mqtt.html">mqtt</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Gitlab-github actions" href="mydoc_actions.html">Gitlab-github actions</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="pipeline, heroku, mailchimps" href="mydoc_heroku.html">pipeline, heroku, mailchimps</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="others" href="mydoc_others.html">others</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Django frameworks" href="#">Django frameworks</a>
+      <ul>
+          
+          
+          
+          <li><a title="Oscar" href="mydoc_oscar.html">Oscar</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Raspi" href="mydoc_raspi.html">Raspi</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Lora" href="mydoc_lora.html">Lora</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Drone-gui" href="mydoc_drone.html">Drone-gui</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Content reuse" href="mydoc_content_reuse.html">Content reuse</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Collections" href="mydoc_collections.html">Collections</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="WebStorm editor tips" href="mydoc_webstorm_text_editor.html">WebStorm editor tips</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Atom editor tips" href="mydoc_atom_text_editor.html">Atom editor tips</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Node frameworks" href="#">Node frameworks</a>
+      <ul>
+          
+          
+          
+          <li><a title="Django+Vue" href="mydoc_djangovue.html">Django+Vue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Weather app" href="mydoc_weather.html">Weather app</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Chat app" href="mydoc_chatapp.html">Chat app</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bootstrap" href="mydoc_bootstrap.html">Bootstrap</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="lightup.co.kr/blog" href="mydoc_lightup.html">lightup.co.kr/blog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="lightup.co.kr/admin" href="mydoc_lightupadmin.html">lightup.co.kr/admin</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Racing drones" href="#">Racing drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="DaLrC215" href="mydoc_dalrc.html">DaLrC215</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-skyhero" href="mydoc_skyhero.html">Dev-skyhero</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="MiniCp04" href="mydoc_minicp.html">MiniCp04</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-Nazam 02" href="mydoc_devnazam.html">Dev-Nazam 02</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Xugong" href="xugong.html">Xugong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Labels" href="mydoc_labels.html">Labels</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Links" href="mydoc_hyperlinks.html">Links</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Navtabs" href="mydoc_navtabs.html">Navtabs</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Tables" href="mydoc_tables.html">Tables</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Syntax highlighting" href="mydoc_syntax_highlighting.html">Syntax highlighting</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Workflow maps" href="mydoc_workflow_maps.html">Workflow maps</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="APM drones" href="#">APM drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="pixhawk overview" href="mydoc_pixhwak_overview.html">pixhawk overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+rFlyeval CopterSim" href="#">+rFlyeval CopterSim</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Instrucdtions&&documentation" href="mydoc_commenting_on_files.html">Instrucdtions&&documentation</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Implementating Pixhawk Cube" href="tag_rfly_cube.html">Implementating Pixhawk Cube</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-Apmdr 01 / pixhawk lite" href="mydoc_apmdr.html">Dev-Apmdr 01 / pixhawk lite</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Cube black" href="mydoc_cube.html">Cube black</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="DJI drones" href="#">DJI drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="Quad wookong" href="mydoc_quad.html">Quad wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S1000 wookong" href="mydoc_s1000.html">S1000 wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S1000 A2" href="mydoc_s100a2.html">S1000 A2</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S900 wookong" href="mydoc_s900.html">S900 wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Nazam" href="mydoc_nazam.html">Nazam</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="iTerm profiles" href="mydoc_iterm_profiles.html">iTerm profiles</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pushing builds to server" href="mydoc_push_build_to_server.html">Pushing builds to server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Publishing on Github Pages" href="mydoc_publishing_github_pages.html">Publishing on Github Pages</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Feature drones" href="#">Feature drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="Yuneec H" href="mydoc_yuneec.html">Yuneec H</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bebop Parrot" href="mydoc_bebop.html">Bebop Parrot</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jetbot rover" href="mydoc_jetbot.html">Jetbot rover</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="AGX Xavier rover" href="mydoc_xavier.html">AGX Xavier rover</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Vtol & flight data" href="mydoc_vtol.html">Vtol & flight data</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Schooling" href="#">Schooling</a>
+      <ul>
+          
+          
+          
+          <li><a title="My courses" href="mydoc_mycourse.html">My courses</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="ncs-ML/DL" href="mydoc_deeplearning.html">ncs-ML/DL</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="C++" href="mydoc_cplus.html">C++</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Web-scraping" href="mydoc_webscraping.html">Web-scraping</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Challenger project" href="mydoc_challenger-project.html">Challenger project</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="AIOT embedded projects" href="#">AIOT embedded projects</a>
+      <ul>
+          
+          
+          
+          <li><a title="Overview" href="tag_aiotoverview.html">Overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Intel Edison projects" href="#">+Intel Edison projects</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Detection serializer" href="tag_sensor_detection.html">Detection serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Realsense drone" href="tag_realsense.html">Realsense drone</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Edison Arduino" href="tag_edison_arduino.html">Edison Arduino</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collaboration pages" href="tag_collaboration.html">Collaboration pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Troubleshooting pages" href="tag_troubleshooting.html">Troubleshooting pages</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jetson nano" href="tag_jetson_nano.html">Jetson nano</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Jetson Xavier" href="#">+Jetson Xavier</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="project overview" href="tag_jetson_xavier.html">project overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Raspberry Pi projects" href="tag_raspi.html">Raspberry Pi projects</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="active"><a title="Sensor serializer" href="tag_serializer.html">Sensor serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Lora monitoring system" href="tag_lora_monitoring.html">Lora monitoring system</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Books" href="#">Books</a>
+      <ul>
+          
+          
+          
+          <li><a title="Fiction" href="mydoc_fiction.html">Fiction</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="Tag archive pages" href="#">Tag archive pages</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Formatting pages" href="tag_formatting.html">Formatting pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Navigation pages" href="tag_navigation.html">Navigation pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Content types pages" href="tag_content_types.html">Content types pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Publishing pages" href="tag_publishing.html">Publishing pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Special layout pages" href="tag_special_layouts.html">Special layout pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collaboration pages" href="tag_collaboration.html">Collaboration pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Troubleshooting pages" href="tag_troubleshooting.html">Troubleshooting pages</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Web-dev-ops" href="mydoc_webdev.html">Web-dev-ops</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="two scoops of django" href="mydoc_twoscoops.html">two scoops of django</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="presentation" href="books_revealjs.html">presentation</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="more to come" href="">more to come</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="drone companies" href="mydoc_contact.html">drone companies</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+     
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+       
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">🔭Serializer with API</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">summary.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<details>
+  <summary>
+    <div id="toc"></div></summary>
+</details>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/pages/tags/tag_serializer.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <h2 id="aiot-serializer-api">AIOT serializer api</h2>
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_drone.html" class="btn btn-default navbar-btn cursorNorm" role="button">drone</a>
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2021 Tonyleekorea. All rights reserved. <br />
+<span>Page last updated:</span> July 22, 2021<br/> Site last generated: Aug 7, 2021 <br />
+<p align="right"><img src="images/tonyillust_atwork.svg" alt="tonyillust" style="width: 20%; max-width: 30%;"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,70 @@
+I"�"<h2 id="navgoco-foundation">Navgoco foundation</h2>
+
+<p>The sidebar uses the <a href="https://github.com/tefra/navgoco">Navgoco jQuery plugin</a> as its basis. Why not use Bootstrap? Navgoco provides a few features that I couldn’t find in Bootstrap:</p>
+
+<ul>
+  <li>Navgoco sets a cookie to remember the user’s position in the sidebar. If you refresh the page, the cookie allows the plugin to remember the state.</li>
+  <li>Navgoco inserts an <code class="language-plaintext highlighter-rouge">active</code> class based on the navigation option that’s open. This is essential for keeping the accordion open.</li>
+  <li>Navgoco includes the expand and collapse features of a sidebar.</li>
+</ul>
+
+<p>In short, the sidebar has some complex logic here. I’ve integrated Navgoco’s features with the sidebar.html and sidebar data files to build the sidebar. It’s probably the most impressive part of this theme. (Other themes usually aren’t focused on creating hierarchies of pages, but this kind of hierarchy is important in a documentation site.)</p>
+
+<h2 id="accordion-sidebar-feature">Accordion sidebar feature</h2>
+
+<p>The sidebar.html file (inside the _includes folder) contains the <code class="language-plaintext highlighter-rouge">.navgoco</code> method called on the <code class="language-plaintext highlighter-rouge">#mysidebar</code> element.</p>
+
+<p>There are some options to set within the <code class="language-plaintext highlighter-rouge">.navgoco</code> method. The only noteworthy option is <code class="language-plaintext highlighter-rouge">accordion</code>. This option makes it so when you expand a section, the other sections collapse. It’s a way of keeping your navigation controls condensed.</p>
+
+<p>The value for <code class="language-plaintext highlighter-rouge">accordion</code> is a Boolean (<code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code>). By default, the <code class="language-plaintext highlighter-rouge">accordion</code> option is set as <code class="language-plaintext highlighter-rouge">true</code>. If you don’t want the accordion, set it to <code class="language-plaintext highlighter-rouge">false</code>. Note that there’s also a block of code near the bottom of sidebar.html that is commented out. Uncomment out that section to have the Collapse all and Expand All buttons appear.</p>
+
+<p>There’s a danger with setting the accordion to <code class="language-plaintext highlighter-rouge">false</code>. If you click Expand All and the sidebar expands beyond the dimensions of the browser, users will be stuck. When that happens, it’s hard to collapse it. As a best practice, leave the sidebar’s accordion option set to <code class="language-plaintext highlighter-rouge">true</code>.</p>
+
+<h2 id="fixed-position-sidebar">Fixed position sidebar</h2>
+
+<p>The sidebar has one other feature — this one from Bootstrap. If the user’s viewport is tall enough, the sidebar remains fixed on the page. This allows the user to scroll down the page and still keep the sidebar in view.</p>
+
+<p>In the customsscripts.js file in the js folder, there’s a function that adds an <code class="language-plaintext highlighter-rouge">affix</code> class if the height of the browser window is greater than 800 pixels. If the browser’s height is less than 800 pixels, the <code class="language-plaintext highlighter-rouge">nav affix</code> class does not get inserted. As a result, the sidebar can slide up and down as the user scrolls up and down the page.</p>
+
+<p>Depending on your content, you may need to adjust <code class="language-plaintext highlighter-rouge">800</code> pixel number. If your sidebar is so long that having it in a fixed position makes it so the bottom of the sidebar gets cut off, increase the <code class="language-plaintext highlighter-rouge">800</code> pixel number here to a higher number.</p>
+
+<h2 id="opening-sidebar-links-into-external-pages">Opening sidebar links into external pages</h2>
+
+<p>In the attributes for each sidebar item, if you use <code class="language-plaintext highlighter-rouge">external_url</code> instead of <code class="language-plaintext highlighter-rouge">url</code>, the theme will insert the link into an <code class="language-plaintext highlighter-rouge">a href</code> element that opens in a blank target.</p>
+
+<p>For example, the sidebar.html file contains the following code:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">external_url</span><span class="w"> </span><span class="p">%}</span>
+    &lt;li&gt;&lt;a href="<span class="p">{{</span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">external_url</span><span class="p">}}</span>" target="_blank" rel="noopener"&gt;<span class="p">{{</span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">title</span><span class="p">}}</span>&lt;/a&gt;&lt;/li&gt;
+</code></pre></div></div>
+
+<p>You can see that the <code class="language-plaintext highlighter-rouge">external_url</code> is a condition that applies a different formatting. Although this feature is available, I recommend putting any external navigation links in the top navigation bar instead of the side navigation bar.</p>
+
+<h2 id="sidebar-item-highlighting">Sidebar item highlighting</h2>
+
+<p>The sidebar.html file inserts an <code class="language-plaintext highlighter-rouge">active</code> class into the sidebar element when the <code class="language-plaintext highlighter-rouge">url</code> attribute in the sidebar data file matches the page URL.</p>
+
+<p>For example, the sidebar.html file contains the following code:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+   &lt;li class="active"&gt;&lt;a href="<span class="p">{{</span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">remove</span><span class="p">:</span><span class="w"> </span><span class="s2">"/"</span><span class="p">}}</span>"&gt;<span class="p">{{</span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">title</span><span class="p">}}</span>&lt;/a&gt;&lt;/li&gt;
+</code></pre></div></div>
+
+<p>If the <code class="language-plaintext highlighter-rouge">page.url</code> matches the <code class="language-plaintext highlighter-rouge">subfolderitem.url</code>, then an <code class="language-plaintext highlighter-rouge">active</code> class gets applied. If not, the <code class="language-plaintext highlighter-rouge">active</code> class does not get applied.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">page.url</code> in Jekyll is a site-wide variable. If you insert <code class="language-plaintext highlighter-rouge">{{page.url}}</code> on a page, it will render as follows: /mydoc_sidebar_navigation.html. The <code class="language-plaintext highlighter-rouge">url</code> attribute in the sidebar item must match the page URL in order to get the <code class="language-plaintext highlighter-rouge">active</code> class applied.</p>
+
+<p>This is why the <code class="language-plaintext highlighter-rouge">url</code> value in the sidebar data file looks something like this:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Understanding how the sidebar works</span>
+      <span class="na">permalink</span><span class="pi">:</span> <span class="s">mydoc_understand_sidebar.html</span>
+      <span class="na">output</span><span class="pi">:</span> <span class="s">web, pdf</span>
+</code></pre></div></div>
+
+<p>Note that the url does not include the project folder where the file is stored. This is because the site uses permalinks, which pulls the topics out of subfolders and places them into the root directory when the site builds.</p>
+
+<p>Now the page.url and the item.url can match and the <code class="language-plaintext highlighter-rouge">active</code> class can get applied. With the <code class="language-plaintext highlighter-rouge">active</code> class applied, the sidebar section remains open.</p>
+
+<p>[]:</p>
+
+:ET

@@ -1,0 +1,71 @@
+I"<h2 id="minicp">Minicp</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">frame</td>
+      <td> </td>
+      <td style="text-align: center">FC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">motor</td>
+      <td> </td>
+      <td style="text-align: center">ESC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">RC</td>
+      <td> </td>
+      <td style="text-align: center">mode</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">weight</td>
+      <td> </td>
+      <td style="text-align: center">class</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">battery</td>
+      <td> </td>
+      <td style="text-align: center">air-time</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">configurator</td>
+      <td> </td>
+      <td style="text-align: center">last updated</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="fc">FC</h2>
+
+<blockquote>
+  <p>Spacing f3 6dot</p>
+</blockquote>
+
+<h2 id="camera">camera</h2>
+
+<blockquote>
+  <p>Aomway</p>
+</blockquote>
+
+<h2 id="controller----stick-mode-2">Controller - 💯 Stick Mode 2</h2>
+
+<blockquote>
+  <p>Devention
+<a href="https://www.manualslib.com/products/Devention-Devo-F12e-3790325.html">site</a>
+<a href="./devo_f12e.pdf">pdf</a></p>
+</blockquote>
+:ET

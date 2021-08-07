@@ -1,0 +1,145 @@
+I"r<h2 id="bulleted-lists">Bulleted Lists</h2>
+
+<p>This is a bulleted list:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*  first item
+*  second item
+*  third item
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<ul>
+  <li>first item</li>
+  <li>second item</li>
+  <li>third item</li>
+</ul>
+
+<h2 id="numbered-list">Numbered list</h2>
+
+<p>This is a simple numbered list:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  First item.
+1.  Second item.
+1.  Third item.
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<ol>
+  <li>First item.</li>
+  <li>Second item.</li>
+  <li>Third item.</li>
+</ol>
+
+<p>You can use whatever numbers you want — when the Markdown filter processes the content, it will assign the correct numbers to the list items.</p>
+
+<h2 id="complex-lists">Complex Lists</h2>
+
+<p>Here’s a more complex list:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  Sample first item.
+
+    * sub-bullet one
+    * sub-bullet two
+
+2.  Continuing the list
+
+    1. sub-list numbered one
+    2. sub-list numbered two
+
+3.  Another list item.
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<ol>
+  <li>
+    <p>Sample first item.</p>
+
+    <ul>
+      <li>sub-bullet one</li>
+      <li>sub-bullet two</li>
+    </ul>
+  </li>
+  <li>
+    <p>Continuing the list</p>
+
+    <ol>
+      <li>sub-list numbered one</li>
+      <li>sub-list numbered two</li>
+    </ol>
+  </li>
+  <li>
+    <p>Another list item.</p>
+  </li>
+</ol>
+
+<h2 id="another-complex-list">Another Complex List</h2>
+
+<p>Here’s a list with some intercepting text:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  Sample first item.
+
+    This is a result statement that talks about something....
+
+2.  Continuing the list
+
+    &lt;div markdown="span" class="alert alert-info" role="alert"&gt;&lt;i class="fa fa-info-circle"&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; Remember to do this. If you have "quotes", you must escape them.&lt;/div&gt;
+
+
+
+
+    Here's a list in here:
+
+    * first item
+    * second item
+
+3.  Another list item.
+
+    ```js
+    function alert("hello");
+    ```
+
+4.  Another item.
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<ol>
+  <li>
+    <p>Sample first item.</p>
+
+    <p>This is a result statement that talks about something….</p>
+  </li>
+  <li>
+    <p>Continuing the list</p>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Remember to do this. If you have “quotes”, you must escape them.</div>
+
+    <p>Here’s a list in here:</p>
+
+    <ul>
+      <li>first item</li>
+      <li>second item</li>
+    </ul>
+  </li>
+  <li>
+    <p>Another list item.</p>
+
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Another item.</p>
+  </li>
+</ol>
+
+<h3 id="key-principle-to-remember-with-lists">Key Principle to Remember with Lists</h3>
+
+<p>The key principle is to line up the first character after the dot following the number:</p>
+
+<figure><img class="docimage" src="images/liningup.png" alt="" /><figcaption>Lining up the left edge ensures the list stays in tact.</figcaption></figure>
+
+<p>For the sake of simplicity, use two spaces after the dot for numbers 1 through 9. Use one space for numbers 10 and up. If any part of your list doesn’t align symmetrically on this left edge, the list will not render correctly. Also note that this is characteristic of kramdown-flavored Markdown and may not yield the same results in other Markdown flavors.</p>
+:ET

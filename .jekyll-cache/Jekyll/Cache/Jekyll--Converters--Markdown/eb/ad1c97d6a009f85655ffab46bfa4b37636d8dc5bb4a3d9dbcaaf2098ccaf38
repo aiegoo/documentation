@@ -1,0 +1,94 @@
+I"<h2 id="webrtc-overview">webrtc overview</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://www.webrtc.org/">official</a></td>
+      <td><a href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:386bab89-bb74-428b-bcf5-310e910fafbe">sipwebrtc</a>  2018</td>
+      <td><a href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:9c028ffb-d353-43da-8c5b-1d61e736ae3b">webrtcbrowser</a>   Reiley 2015</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/aiegoo/documentation/raw/gh-pages/pdf/webrtc/webrtc_tutorial.pdf">webrtc_tutorial</a></td>
+      <td><a href="https://github.com/aiegoo/gcu-uno.git">gcuuno</a></td>
+      <td><a href="https://webrtc.github.io/webrtc-org/start/">github_pages</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="concept">concept</h3>
+<h4 id="nework-layer">nework layer</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Teleconferencing, Video Teleconferencing/Videoconferencing, Multimedia Application Sharing, and other Applications SIP/SDP, WebRTC/SDP, RTSP/SDP, SAP/SDP, RTP/RTCP</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">TCP, UDP, SCTP, TLS, DTLS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">IP</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>generic-message    =   start-line *message-header CRLF [ message-body ]   start-line        =</td>
+      <td>Request-Line / Status-Line</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/127105510-49ef2813-59e8-42c6-b697-bf412bf823ea.png" alt="image" /></p>
+
+<h4 id="webrtc-architecture">webrtc architecture</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://user-images.githubusercontent.com/42961200/127107253-5ed188ea-4527-40f8-8c9f-46edcd7caa67.png" alt="image" /></td>
+      <td><a href="https://webrtc.github.io/webrtc-org/architecture#">details</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://user-images.githubusercontent.com/42961200/127108300-194d2dbf-588b-43d4-ab90-4119240b6a15.png" alt="image" /></td>
+      <td>data flow chart <a href="https://github.com/aiegoo/documentation/issues/3#issue-953602858">article</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>RTC peer connection object</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var conn = new RTCPeerConnection(conf); conn.onaddstream = function(stream){
+// use stream here
+};
+</code></pre></div></div>
+
+:ET

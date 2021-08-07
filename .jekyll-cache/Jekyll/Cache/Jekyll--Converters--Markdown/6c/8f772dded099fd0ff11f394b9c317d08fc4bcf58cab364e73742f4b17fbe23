@@ -1,0 +1,1716 @@
+I"t<h1 id="challenger-engineering-project">Challenger Engineering Project</h1>
+
+<p>The following needs engineering and design;</p>
+
+<p>•	Drone Flight control board. (VTOL, fixed wing, ground vehicle, and multi-copter) (GPS/RTK) Payload integration.</p>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/127731083-14185d39-d265-4e20-81b1-6057551995c7.png" alt="image" /></p>
+
+<p>•	Specs as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>•	Dimensions</td>
+      <td>5.59 x 1.81 x 2.46 inches (142.00 x 46.00 x 62.60 mm) Unflanged</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Weight</td>
+      <td>7.7 oz (200 g) with 900 MHz radio</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Enclosure/Mounting</td>
+      <td>EMI shielded carbon, flanged, unflanged</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Operating Case Temperature</td>
+      <td>40˚C to 80˚C (calibrated range, no case)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Power Requirements</td>
+      <td>VIN:  8 - 20 volts</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Power:</td>
+      <td>4 W (typical including 900 MHz radio)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	RS232 Payload Interface</td>
+      <td>5</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	CAN</td>
+      <td>Simulation / General interface</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Flight Termination</td>
+      <td>Deadman output</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Digital/Analog I/O</td>
+      <td>16 configurable GPIO lines. 4 GPIO lines can be configured as analog inputs, 0-5V input, 10-bit conversion</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Integrated RF Data Link Options</td>
+      <td>900 MHz unlicensed ISM. 900 MHz Australian band. 2.4 GHz unlicensed ISM. 310-390 MHz discrete. 1350-1390 MHz discrete. 1670-1700 MHz discrete.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	GPS</td>
+      <td>4 Hz uBlox module GPS receiver, 5 volts</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Pressure Sensors</td>
+      <td>Ported static. 15-115 KPa-ported pitot. 4 Kpa differential. 155 kts max indicated airspeed</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Waypoint Navigation</td>
+      <td>1000 waypoints saved in autopilot</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Inertial Sensors</td>
+      <td>3 axis gyroscopes, 300°/sec. 3 axis acceleration, ±8g</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Supported Peripherals</td>
+      <td>Transponders, secondary comms radios, Iridium SatComm, TASE gimbals, servo PTZ gimbals, magnetometers, laser altimeters, payload passthrough, RTK GPS.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Radio Options</td>
+      <td>900 MHz unlicensed ISM 🔨 900 MHz Australian band 🔨  2.4 GHz unlicensed ISM 🔨 310-390 MHz discrete 🔨 1350-1390 MHz discrete 🔨</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Standard Feature Set + Peripherals</td>
+      <td>Adds new support for pan-tilt servos, improved GPS/INS performance, and more flexibility in configuring payload ports.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Laser Altimeter Autoland</td>
+      <td>Provides accurate altitude information allowing the vehicle to perform a soft flared landing (Laser altimeter hardware sold separately).</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	DGPS Autoland</td>
+      <td>Extends the autoland performance by using 2 cm accuracy DGPS. Supports autonomous taxi, rolling take-off, stationary and moving net recovery. Uses NovAtel DGPS equipment</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	DGPS and Moving Net Recovery</td>
+      <td>Adds support of moving net recovery needed for shipboard and other moving capture applications. Uses NovAtel DGPS equipment and associated antennas.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>•	Helicopter Operations (VTOL)</td>
+      <td>Includes take-off and landing, precision hover, and automated path following along with autopilot assisted manual steering modes.</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>•	Transmitter/receiver for drone operation. Tablet based design; windows based.</p>
+
+<p>Specifications:</p>
+
+<p>Challenger tablet-based GCS</p>
+
+<p>Dimension: 364mm(L)<em>190mm(W)</em>40mm(H)</p>
+
+<p>Weight: 1900g(T30), 3100g(T30S)</p>
+
+<p>Channel: 23</p>
+
+<p>Control range: 15KM (longer if possible)</p>
+
+<p>Output power: Max. 25 dBm</p>
+
+<p>Remote control latency: 40ms</p>
+
+<p>Battery capacity: 12V/10200mAh, external battery is available</p>
+
+<p>Endurance: 3H with full capacity</p>
+
+<p>Display screen: 10.1-inch touch screen+800cd/sunlight readable screen</p>
+
+<p>Resolution: 1920*1200</p>
+
+<p>Processor: Intel i7 5th generation 5500U (or higher)</p>
+
+<p>Memory: 8GB DDR3L</p>
+
+<p>Storage capacity: 128GB</p>
+
+<p>Operation system: Windows 10</p>
+
+<p>Three proofing’s: IP53</p>
+
+<p>Network type: 4G/WIFI (optional)</p>
+
+<p>Interface: USB3.0, 4G card slot, LAN, Audio, Amplifier, HDMI</p>
+
+<p>Operating temperature: -10~+60℃</p>
+
+<p>V30 Transmitter</p>
+
+<p>Dimension: 91mm<em>57mm</em>20mm</p>
+
+<p>Weight: 120g (exclude antennas)</p>
+
+<p>Frequency:  800MHZ:806-826MHZ</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                1.4GHZ:1427.9-1447.9MHZ
+</code></pre></div></div>
+
+<p>Wireless modulation mode: OFDM</p>
+
+<p>Video input: LAN port、HDMI (optional)、CVBS</p>
+
+<p>Wireless signal bandwidth: 10MHz/20MHz</p>
+
+<p>Coding mode: H.265/H.264</p>
+
+<p>Power supply voltage: 7.4~12V</p>
+
+<p>Data output interface: UART *1/SBUS *2</p>
+
+<p>HDMI interface type: Type A</p>
+
+<p>Operation current: 300MA（12V power input）</p>
+
+<p>Power: 0.1-1W</p>
+
+<p>Antenna: 2-4dB rubber ducky antenna</p>
+
+<p>Operating temperature: -10~+50℃</p>
+
+<p>R20 Data Transmitter</p>
+
+<p>Dimension: 53mm<em>40mm</em>14mm</p>
+
+<p>Weight: 43g (exclude antennas)</p>
+
+<p>Frequency: 900MHZ: 902-920MHZ (changeable)</p>
+
+<p>Data output interface: TTL<em>1/SBUS</em>2</p>
+
+<p>Transmission Range: 10km (or longer)</p>
+
+<p>Power supply voltage: 7.4~12V</p>
+
+<p>Operation current: 100MA（12V power input）</p>
+
+<p>Power: 0.1-1W</p>
+
+<p>Antenna: 2dB rubber ducky antenna</p>
+
+<p>Operating temperature: -10~+50℃</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>tracking</th>
+      <th>video</th>
+      <th>telemetry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://user-images.githubusercontent.com/42961200/127731175-03b6b7e2-0bdd-4be0-b410-6c816fd995d0.png" alt="tracking" /></td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/127731205-c003ab3b-b0f8-48ec-869e-c4416114464d.png" alt="video" /></td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/127731226-f68cf4ef-0c83-4e1b-a942-b631182c35df.png" alt="telemetry" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>•	Tracking antenna, video, and telemetry</p>
+
+<p>telemetry decoder,
+tracking antenna driver,
+2-channel diversity based on video signal analysis,
+3 separated video outputs,
+telemetry logger on microSD card,
+LCD screen with touch panel as user interface.
+To be fully functional, the FPV Ground Station needs:
+tracking antenna mechanism,
+2 standard servos with torque about 10Ncm
+switcher BEC for powering servos,
+1 or 2 video receivers with antennas,
+12V power source.
+Ground Station is equipped with connectors:
+2x video input with RCA socket (black)
+2x audio input with RCA socket (red)
+3x video output with RCA socket (black)
+1x audio output with RCA socket (red)
+power input with voltage and current measurement
+power output for other devices: BEC for driving tracking antenna servos, receivers etc.
+mini-USB socket for firmware actualization
+microSD card for logging telemetry data
+3x3 pin servo connector for tracking antenna servos (2 servos + external power input)
+2x4 pin with UART for Bluetooth output and Mavlink telemetry input
+2x4 pin with analogue input for antenna position tuning potentiometer
+external buzzer</p>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/127731250-1cd684d5-700b-4966-b736-19faa685839b.png" alt="gcs" /></p>
+
+<p>•	Ground control station. Windows based.
+Dimensions	
+1000 x 420 x 170 mm</p>
+
+<p>(39.4 x 16.5 x 6.7 in)</p>
+
+<p>Weight (excl. laptop)	
+18.9 kg (41.7 lb)</p>
+
+<p>Environmental protection	
+IP66 (when closed)</p>
+
+<p>Operating temperature	
+-20°C to +60°C (-4°F to +140°F)</p>
+
+<p>Electronics mounting base	
+M4 threaded mounting grid, 45 mm pitch, aluminum mount kit included</p>
+
+<p>Accessory bag internal dimensions	
+220 x 160 x 70 mm</p>
+
+<p>(8.7 x 6.3 x 2.8 in)</p>
+
+<p>Case features	
+Rugged plastic case, side handles, carry handle, wheels, pressure purge valve, shoulder strap (optional)</p>
+
+<p>Electronics compartment dimensions	
+320 x 270 x 80 mm</p>
+
+<p>(12.6 x 10.6 x 3.2 in)</p>
+
+<p>Computer mounting	
+Docking</p>
+
+<p>Electrical Specifications
+DC input	
+10 – 32 VDC, over-voltage protection, reverse polarity protection</p>
+
+<p>Battery type	
+Lithium ion 	 time	
+2 h (typical)</p>
+
+<p>Connections (all routed to Dell Latitude 7424 Rugged Extreme)	
+2 serial (RS 232), 5 USB, 2 Ethernet, 1 composite video in (IMPERX video device needed), 1 VGA in (optional), 1 microphone in, 1 audio out, PCMCIA slot, HDMI</p>
+
+<p>Connections to 17” display	
+Composite video (optional), external VGA input (optional)</p>
+
+<p>DC power output 1	
+12 V, 50 W (5 A fused)</p>
+
+<p>DC power output 2	
+12 V, 50 W (5 A fused)</p>
+
+<p>Antenna pass-through	
+Two 50 Ohm antenna pass-through to upper lid. SMA-RP termination, RG 142</p>
+
+<p>Computer Specifications (not included with GCS)
+Model	
+Dell Latitude 7424 Rugged Extreme</p>
+
+<p>Durability	
+MIL-STD-810G &amp; IP65 certified (up to 6’ drop)</p>
+
+<p>Display type	
+14’’ Full-HD, touchscreen</p>
+
+<p>Brightness	
+1000 nits</p>
+
+<p>17” Display Specifications
+Display type	
+17” TFT 1280x1024p (SXGA), optional touchscreen</p>
+
+<p>Brightness	
+1600 nits</p>
+
+<p>Signal source	
+Selectable between Dell Latitude 7424 Rugged Extreme Heavy-Duty Laptop and external VGA input (optional)</p>
+
+<p>Accessories
+AC/DC adapter 110 - 240 VAC to 24 VDC complete with push-pull connector</p>
+
+<p>Power supply cable with push-pull connector, unterminated, 12 AWG, 5 m (16.4 ft)</p>
+
+<p>GCS foldable stand</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>notebook</th>
+      <th>gcs</th>
+      <th>telemetry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://user-images.githubusercontent.com/42961200/127731275-48fb278d-0323-4505-88dc-add6ee4d7c26.png" alt="gcs-notebook" /></td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/127731309-12e7b2ee-2ffc-4fc5-95ce-690bbd771660.png" alt="gcs-console" /></td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/127731415-2ee01fee-ee5a-4e48-ba85-afcc64cb9d5b.png" alt="telemetry" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>•	Software windows based.</p>
+
+<blockquote>
+  <p>CONFIGURE</p>
+
+  <p>Integrated configurator allows you easily install and configure GCS 300 Autopilot specifically for your vehicle type in less than 10 minutes from the scratch. Various settings provide extremely flexible configuration to meet any requirements. (This is closed source software) This software would be based on qground station or other software.</p>
+</blockquote>
+
+<blockquote>
+  <p>PLAN</p>
+
+  <p>Creating the flight plan has never been easier - simply tap and drag &amp; drop to place the waypoints and adjust various mission parameters. Intuitive planning interface allows you generating complex missions with no efforts.</p>
+</blockquote>
+
+<blockquote>
+  <p>FLY</p>
+
+  <p>Monitor various flight parameters of the system and adjust the plan during the mission. In case something is not right GCS will automatically notify you and suggest the available actions. Real-time video feed is integrated right in the app.</p>
+</blockquote>
+
+<blockquote>
+  <p>ANALYZE</p>
+
+  <p>All flights data is stored in GCS and can be easily accessed for mission replay and parameters analysis. Payload data acquisition can be tightly integrated with the flight data. This allows you concentrating on the mission, not the flight.</p>
+</blockquote>
+
+<blockquote>
+  <p>Air Map integrated</p>
+
+  <p>GCS has integrated services from Air Map - the world’s leading airspace management platform for drones. Air Map connects drone operators with airspace authorities to enable safe, efficient, and scalable drone operations through core UTM services</p>
+</blockquote>
+
+<blockquote>
+  <p>Fleet Control</p>
+
+  <p>Unlimited number of drones supported simultaneously with super easy and intuitive control. Just as example, put a couple of drones for an autonomous survey mission while the third one is monitoring what they do.</p>
+</blockquote>
+
+<blockquote>
+  <p>FEATURES</p>
+
+  <p>Configure via USB or Telemetry
+Supports 15+ types of airframes
+Radio configuration
+Easy IMU settings / calibration
+Fast parameters tuning
+On-Screen Display configuration
+Camera / Gimbal settings
+Various failsafe actions
+Advanced parameters list access
+Command line interface
+Intuitive user interface
+Waypoint’s mode mission interface
+Region mode mission interface
+Automatic mission planning
+Automatic altitude calculation
+Various map providers
+Camera parameters support
+Independent take-off and landing points
+In-flight mission adjust
+Waypoint’s transition customization
+Win, Mac, Android, iOS, Linux
+Logging 200+ parameters
+Flight’s history
+Log replay with powerful control
+Plot window for parameters visualization
+Flight plan export / import
+Map’s cache for offline use
+Google Earth KML export
+CSV logs export</p>
+</blockquote>
+
+<blockquote>
+  <p>Firmware updates</p>
+
+  <ul>
+    <li>PRO Approach
+GCS is not just an application for consumer tablets. Our Software is designed with deep hardware integration mindset and to be used for mission critical applications on industrial laptops and tablets.</li>
+  </ul>
+</blockquote>
+
+<ul>
+  <li>
+    <p>Live Video
+GCS provides live video feed integration right in the app. You can see either full screen map, or video - you to choose. Any of the options possible with minimum latency and exceptional image quality.</p>
+  </li>
+  <li>
+    <p>Capabilities
+•	All-integrated system approach - plug and fly
+•	Extremely stable flight in</p>
+    <ul>
+      <li>stabilize (user control)</li>
+      <li>position hold (semi-autonomous control)</li>
+      <li>auto (fully autonomous navigation and control)
+•	Mavlink compatible Ground Control Station protocol
+•	Accurate Position hold</li>
+      <li>Horizontal: up to 40cm</li>
+      <li>Vertical: up to 10cm
+•	Manual altitude override
+•	Fully autonomous waypoints flight
+•	Autonomous take off
+•	Autonomous landing
+•	Return to Home mode
+•	Low battery detection and Failsafe triggering
+•	And many more…</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/127731633-8aa8a3d8-28ff-4b3e-91a2-aaf2fdd49e7b.png" alt="missionplanner" /></p>
+
+<p>Schooling pages:</p>
+<ul>
+{% assign sorted_pages = site.pages | sort: 'title' %}
+{% for page in sorted_pages %}
+{% for tag in page.tags %}
+{% if tag == "getting_started" %}
+<li>&lt;a href="{{ page.url | remove: "/" }}"&gt;{{page.title}}&lt;/a&gt;</li>
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+
+<p>Schooling pages:</p>
+
+<div class="seriesContext">
+    <a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="mydoc_commenting_on_files.html"><button type="button" class="btn btn-primary">Next: pixhawk tools</button></a>
+        
+    </a>
+    &nbsp;
+    <div class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Jump to: <span class="caret"></span></button>
+        <ol class="dropdown-menu">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_rostopic.html">ROS topic for micro control</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo1.html">Series demo 1</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo2.html">Series demo 2</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="active"> → 2. Challenger Engineering Project</li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_commenting_on_files.html">pixhawk tools</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo3.html">Series demo 3</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo4.html">Series demo 4</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="tag_raspi.html">🔭raspberry pi project</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+        </ol>
+    </div>
+</div>
+
+<p>[]:</p>
+
+:ET

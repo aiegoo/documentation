@@ -1,0 +1,49 @@
+I"<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">You Want To…</th>
+      <th style="text-align: center">Notes</th>
+      <th>Solution</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Combine several commits up to but not including a specific commit.</td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+      <td>reset [commit-id]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Remove all unsaved changes including untracked files.</td>
+      <td style="text-align: center">Changed files are not committed</td>
+      <td>clean -fd</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Remove all staged changes and previously committed</td>
+      <td style="text-align: center">work up to a specific commit but do not remove new files from the working directory.</td>
+      <td>reset –hard [commitid]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">You want to remove previous work but keep the commit history intact (“roll forwards”).</td>
+      <td style="text-align: center">Branch has been published; working directory is clean.</td>
+      <td>revert [commit-id]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Remove a single commit from a branch’s history. Changed files are committed; working directory is clean;</td>
+      <td style="text-align: center">branch has not been published.</td>
+      <td>rebase –interactive</td>
+      <td>[commit-id]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Keep previous work but combine it with another commit.</td>
+      <td style="text-align: center">Select the squash option</td>
+      <td>rebase –interactive [commit-id]</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+:ET

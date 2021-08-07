@@ -1,0 +1,35 @@
+I"w<p>If you haven’t downloaded <a href="https://atom.io/">Atom</a>, download and install it. Use this as your editor when working with Jekyll. The syntax highlighting is probably the best among the available editors, as it was designed with Jekyll-authoring in mind. However, if you prefer Sublime Text, WebStorm, or some other editor, you can also use that.</p>
+
+<p>Customize the invisibles and tab spacing in Atom:</p>
+
+<ol>
+  <li>Go to <strong>Atom &gt; Preferences</strong>.</li>
+  <li>On the <strong>Settings</strong> tab, keep the default options but also select the following:
+    <ul>
+      <li><strong>Show Invisibles</strong></li>
+      <li><strong>Soft Wrap</strong></li>
+      <li>For the <strong>Tab Length</strong>, type <strong>4</strong>.</li>
+      <li>For the <strong>Tab Type</strong>, select <strong>soft</strong>.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Turn off auto-complete:</p>
+
+<ol>
+  <li>Go to <strong>Atom &gt; Preferences</strong>.</li>
+  <li>Click the <strong>Packages</strong> tab.</li>
+  <li>Search for <strong>autocomplete-plus</strong>.</li>
+  <li>Disable the autocomplete package.</li>
+</ol>
+
+<h3 id="atom-shortcuts">Atom Shortcuts</h3>
+
+<ul>
+  <li><strong>Cmd + T</strong>: Find file</li>
+  <li><strong>Cmd + Shift + F</strong>: Find across project</li>
+  <li><strong>Cmd + Alt + S</strong>: Save all</li>
+</ul>
+
+<p>(For Windows, replace “Cmd” with “Ctrl”.)</p>
+:ET

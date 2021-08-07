@@ -1,0 +1,150 @@
+I"�<h2 id="lora-gateway-and-setup">Lora gateway and setup</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>((( Y )))
+    |
+    |
++- -|- - - - - - - - - - - - -+        xxxxxxxxxxxx          +--------+
+|+--+-----------+     +------+|       xx x  x     xxx        |        |
+||              |     |      ||      xx  Internet  xx        |        |
+|| Concentrator |&lt;----+ Host |&lt;------xx     or    xx--------&gt;|        |
+||              | SPI |      ||      xx  Intranet  xx        | Server |
+|+--------------+     +------+|       xxxx   x   xxxx        |        |
+|   ^                    ^    |           xxxxxxxx           |        |
+|   | PPS  +-----+  NMEA |    |                              |        |
+|   +------| GPS |-------+    |                              +--------+
+|          +-----+            |
+|                             |
+|            Gateway          |
++- - - - - - - - - - - - - - -+
+</code></pre></div></div>
+
+<h2 id="lora-packetforwarder-concntrator">Lora Packetforwarder (concntrator)</h2>
+
+<p>The Semtech LoRa GW reference design has been tested with a Raspberry Pi 2:
+https://www.raspberrypi.org/products/raspberry-pi-2-model-b</p>
+
+<p>Use an external 5.0V (&gt;1A) to supply GW reference design power supply, do not use the 5.0V supply from Raspberry Pi board.</p>
+
+<p>For basic testing, the utilities provided on the lora_gateway repository (https://github.com/Lora-net/lora_gateway) will do the job (pkt_logger, util_tx_test, etc….):</p>
+
+<ol>
+  <li>
+    <p><strong>lora_gateway</strong>: SX1301 driver library source code (https://github.com/Lora-net/lora_gateway)</p>
+
+    <p>This source code has been adapted to use the Raspberry Pi hardware SPI. Please refer to the readme.md file which is in the lora_gateway directory to get details about how to use it.</p>
+  </li>
+  <li>
+    <p><strong>packet_forwarder</strong>: Gateway application source code (https://github.com/Lora-net/packet_forwarder)</p>
+
+    <p>A LoRa packet forwarder is a program that forwards RF packets received by the SX1301 concentrator to a server through an IP/UDP link (uplinks), and emits RF packets that are sent by the server (downlinks). Please refer to the readme.md file which is in the packet_forwarder directory to get details about how to use it.</p>
+  </li>
+</ol>
+
+<p>Note: lora_gateway and packet_forwarder are compatible with the two Semtech GW LoRa reference design versions (i.e. with and without FPGA). There is an automatic check which allows distinguishing the 2 different designs.</p>
+
+<p>Please also note that the default configuration file “global_conf.json”, is given as an example (based on Semtech IoT starter kit reference design i.e. without FPGA) and may need to be adapted according to your design.
+The configuration file to be used for “GW LoRa EU v1.5 reference design” is located in [PATH]/packet_forwarder/lora_pkt_fwd/cfg/global_conf.json.PCB_E336.EU868.*
+ </p>
+<h2 id="spi-connection">SPI connection</h2>
+
+<p>Raspberry Pi connector &lt;-&gt; J100_PC_HOST GW ref design v1.5 connector</p>
+<ul>
+  <li>MOSI (Pin19) &lt;-&gt; MOSI_PC_HOST (Pin 2)</li>
+  <li>MISO (Pin 21) &lt;-&gt; MISO_PC_HOST (Pin 3)</li>
+  <li>SCLK (Pin 23) &lt;-&gt; SCK_PC_HOST (Pin 4)</li>
+  <li>CE0 (Pin 24) &lt;-&gt; CSN_PC_HOST (Pin 1)</li>
+  <li>GND (Pin 25) &lt;-&gt; GND (Pin 5)</li>
+</ul>
+
+<h2 id="software-installation">Software installation</h2>
+
+<p>Download a Raspbian image to be installed on Raspberry Pi’s SD card, for example the “Raspbian Jessie Lite” that can be found here:
+https://www.raspberrypi.org/downloads/raspbian/</p>
+
+<p>Refer to following guide to setup your SD card with the downloaded image:
+https://www.raspberrypi.org/documentation/installation/installing-images/</p>
+
+<ul>
+  <li>format the SD card: https://www.sdcard.org/downloads/formatter_4/</li>
+  <li>write the image previously downloaded on the SD card: https://sourceforge.net/projects/win32diskimager/</li>
+</ul>
+
+<h2 id="connect-to-the-raspberry-pi-host">Connect to the Raspberry Pi host</h2>
+
+<p>Once the SD card is flashed, insert it in the Raspberry Pi and choose a way to login Raspberry Pi:</p>
+<ul>
+  <li>HDMI monitor and USB keyboard directly plugged on the RPi</li>
+  <li>UART terminal (using a USB to TTL serial cable)</li>
+  <li>SSH client through LAN connection</li>
+</ul>
+
+<h2 id="enable-spi-driver-on-raspberry-pi">Enable SPI driver on Raspberry Pi</h2>
+
+<p>The SPI peripheral is not turned on by default. To enable it, do the following.</p>
+
+<ul>
+  <li>Run <code class="language-plaintext highlighter-rouge">sudo raspi-config</code>.</li>
+  <li>Use the down arrow to select <code class="language-plaintext highlighter-rouge">5 Interfacing Options</code></li>
+  <li>Arrow down to <code class="language-plaintext highlighter-rouge">P4 SPI</code>.</li>
+  <li>Select yes when it asks you to enable SPI</li>
+  <li>Also select yes when it asks about automatically loading the kernel module.</li>
+  <li>Use the right arrow to select the <Finish> button.</Finish></li>
+  <li>Select yes when it asks to reboot.</li>
+</ul>
+
+<p>The system will reboot. When it comes back up, log in and enter the following command
+<code class="language-plaintext highlighter-rouge">ls /dev/*spi*</code></p>
+
+<p>The Pi should respond with
+<code class="language-plaintext highlighter-rouge">/dev/spidev0.0  /dev/spidev0.1</code></p>
+
+<h2 id="get-the-latest-software-for-semtech-sx1301-driverhal-and-packet-forwarder">Get the latest software for Semtech (SX1301 driver/HAL and Packet Forwarder)</h2>
+
+<p>The Raspberry Pi needs to have a working internet access, either through its ethernet port, or through a WiFi dongle.</p>
+
+<ul>
+  <li>SX1301 driver/HAL:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">git clone https://github.com/Lora-net/lora_gateway.git</code></p>
+<ul>
+  <li>Packet Forwarder:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">git clone https://github.com/Lora-net/packet_forwarder.git</code></p>
+
+<h2 id="compile-sx1301-driverhal-and-packet-forwarder">Compile SX1301 driver/HAL and Packet Forwarder</h2>
+
+<p><code class="language-plaintext highlighter-rouge">cd ~/lora_gateway</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">make all</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">cd ~/packet_forwarder</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">make all</code></p>
+
+<h2 id="run-the-basic-packet-forwarder">Run the “basic” Packet Forwarder</h2>
+
+<p>Before launching the packet forwarder, there are few parameters to be set in the associated configuration files, global_conf.json and local_conf.json.</p>
+
+<h4 id="update-the-gateway_id">Update the “gateway_ID”:</h4>
+<p>The gateway ID is a unique identifier to identify a gateway on a server. It can be for example a EUI-64 converted from the 48-bits MAC address.
+Edit the local_conf.json file and change the default “gateway_ID field” by the EUI-64 you want to assign to your gateway.</p>
+
+<h4 id="use-the-proper-flavour-of-global_confjson">Use the proper flavour of global_conf.json:</h4>
+<p>Several versions of global_conf.json are provided to match with either the GW ref design 1.0 or 1.5, and to describe the desired packet forwarder flavour (basic, gps, beacon).
+So depending on the board you are using, replace the global_conf.json file with:</p>
+<ul>
+  <li>lora_pkt_fwd/cfg/global_conf.json.PCB_E336.EU868.basic for a basic packet forwarder on GW v1.5</li>
+  <li>lora_pkt_fwd/cfg/global_conf.json.PCB_E286.EU868.beacon for gps+beacon packet forwarder on GW v1.0</li>
+</ul>
+
+<h4 id="update-the-server-address-to-your-network-server">Update the server address to your network server</h4>
+<p>Set the server_address field of the global_conf.json file to the IP address or hostname of your LoRa Network Server.</p>
+
+<h4 id="run-the-packet-forwarder">Run the packet forwarder</h4>
+
+<p><code class="language-plaintext highlighter-rouge">cd ~/packet_forwarder/lora_pkt_fwd</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">./lora_pkt_fwd</code></p>
+:ET

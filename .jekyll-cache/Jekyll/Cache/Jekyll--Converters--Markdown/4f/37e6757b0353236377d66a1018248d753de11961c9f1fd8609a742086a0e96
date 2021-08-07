@@ -1,0 +1,647 @@
+I"��<h2 id="machine-learning-deep-learning">Machine-learning, deep-learning</h2>
+
+<h3 id="dlml-concept">DL/ML concept</h3>
+
+<blockquote>
+  <p>for setup and basic lessons, see here <a href="https://github.com/aiegoo/resume/wiki">schoolWiki</a></p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Level of Big Data Maturity</th>
+      <th style="text-align: center">Tools used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="https://user-images.githubusercontent.com/42961200/83480803-40c81600-a4d7-11ea-92fa-c2ad6ce9eac4.png" alt="image" /></td>
+      <td style="text-align: center"><img src="https://user-images.githubusercontent.com/42961200/83480002-212fee00-a4d5-11ea-8e25-12b4d0e1f4e4.png" alt="image" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="500--𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹-𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲-𝗣𝗿𝗼𝗷𝗲𝗰𝘁-𝗟𝗶𝘀𝘁-𝘄𝗶𝘁𝗵-𝗰𝗼𝗱𝗲">500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁 𝘄𝗶𝘁𝗵 𝗰𝗼𝗱𝗲</h2>
+
+<p><em>500 AI Machine learning Deep learning Computer vision NLP Projects with code</em></p>
+
+<p><strong><em>This list is continuously updated.</em></strong> - You can take pull request and contribute.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sr No</th>
+      <th>Name</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>180 Machine learning Project</td>
+      <td><a href="http://is.gd/MLtyGk">is.gd/MLtyGk</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>12 Machine learning Object Detection</td>
+      <td><a href="http://is.gd/jZMP1A">is.gd/jZMP1A</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>20 NLP Project with Python</td>
+      <td><a href="http://is.gd/jcMvjB">is.gd/jcMvjB</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>10 Machine Learning Projects on Time Series Forecasting</td>
+      <td><a href="http://is.gd/dOR66m">is.gd/dOR66m</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>20 Deep Learning Projects Solved and Explained with Python</td>
+      <td><a href="http://is.gd/8Cv5EP">is.gd/8Cv5EP</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>20 Machine learning Project</td>
+      <td><a href="http://is.gd/LZTF0J">is.gd/LZTF0J</a></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>30 Python Project Solved and Explained</td>
+      <td><a href="http://is.gd/xhT36v">is.gd/xhT36v</a></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Machine learning Course for Free</td>
+      <td>https://lnkd.in/ekCY8xw</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>5 Web Scraping Projects with Python</td>
+      <td><a href="http://is.gd/6XOTSn">is.gd/6XOTSn</a></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>20 Machine Learning Projects on Future Prediction with Python</td>
+      <td><a href="http://is.gd/xDKDkl">is.gd/xDKDkl</a></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>4 Chatbot Project With Python</td>
+      <td><a href="http://is.gd/LyZfXv">is.gd/LyZfXv</a></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>7 Python Gui project</td>
+      <td><a href="http://is.gd/0KPBvP">is.gd/0KPBvP</a></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>All Unsupervised learning Projects</td>
+      <td><a href="http://is.gd/cz11Kv">is.gd/cz11Kv</a></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>10 Machine learning Projects for Regression Analysis</td>
+      <td><a href="http://is.gd/k8faV1">is.gd/k8faV1</a></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>10 Machine learning Project for Classification with Python</td>
+      <td><a href="http://is.gd/BJQjMN">is.gd/BJQjMN</a></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>6 Sentimental Analysis Projects with python</td>
+      <td><a href="http://is.gd/WeiE5p">is.gd/WeiE5p</a></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>4 Recommendations Projects with Python</td>
+      <td><a href="http://is.gd/pPHAP8">is.gd/pPHAP8</a></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>20 Deep learning Project with python</td>
+      <td><a href="http://is.gd/l3OCJs">is.gd/l3OCJs</a></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>5 COVID19 Projects with Python</td>
+      <td><a href="http://is.gd/xFCnYi">is.gd/xFCnYi</a></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>9 Computer Vision Project with python</td>
+      <td><a href="http://is.gd/lrNybj">is.gd/lrNybj</a></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>8 Neural Network Project with python</td>
+      <td><a href="is.gd/FCyOOf">is.gd/FCyOOf</a></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>5 Machine learning Project for healthcare</td>
+      <td><a href="https://bit.ly/3b86bOH">link</a></td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>5 NLP Project with Python</td>
+      <td><a href="https://bit.ly/3hExtNS">link</a></td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>47 Machine Learning Projects for 2021</td>
+      <td><a href="https://bit.ly/356bjiC">link</a></td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>19 Artificial Intelligence Projects for 2021</td>
+      <td><a href="https://bit.ly/38aLgsg">link</a></td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>28 Machine learning Projects for 2021</td>
+      <td><a href="https://bit.ly/3bguRF1">link</a></td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>16 Data Science Projects with Source Code for 2021</td>
+      <td><a href="https://bit.ly/3oa4zYD">link</a></td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>24 Deep learning Projects with Source Code for 2021</td>
+      <td><a href="https://bit.ly/3rQrOsU">link</a></td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>25 Computer Vision Projects with Source Code for 2021</td>
+      <td><a href="https://bit.ly/2JDMO4I">link</a></td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>23 Iot Projects with Source Code for 2021</td>
+      <td><a href="https://bit.ly/354gT53">link</a></td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>27 Django Projects with Source Code for 2021</td>
+      <td><a href="https://bit.ly/2LdRPRZ">link</a></td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>37 Python Fun Projects with Code for 2021</td>
+      <td><a href="https://bit.ly/3hBHzz4">link</a></td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>500 + Top Deep learning Codes</td>
+      <td><a href="https://bit.ly/3n7AkAc">link</a></td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>500 + Machine learning Codes</td>
+      <td><a href="https://bit.ly/3b32n13">link</a></td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>20+ Machine Learning Datasets &amp; Project Ideas</td>
+      <td><a href="https://bit.ly/3b2J48c">link</a></td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>1000+ Computer vision codes</td>
+      <td><a href="https://bit.ly/2LiX1nv">link</a></td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>300 + Industry wise Real world projects with code</td>
+      <td><a href="https://bit.ly/3rN7lVR">link</a></td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>1000 + Python Project Codes</td>
+      <td><a href="https://bit.ly/3oca2xM">link</a></td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>363 + NLP Project with Code</td>
+      <td><a href="https://bit.ly/3b442DO">link</a></td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>50 + Code ML Models (For iOS 11) Projects</td>
+      <td><a href="https://bit.ly/389dB2s">link</a></td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>180 + Pretrained Model Projects for Image, text, Audio and Video</td>
+      <td><a href="https://bit.ly/3hFyQMw">link</a></td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>50 + Graph Classification Project List</td>
+      <td><a href="https://bit.ly/3rOYFhH">link</a></td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>100 + Sentence Embedding(NLP Resources)</td>
+      <td><a href="https://bit.ly/355aS8c">link</a></td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>100 + Production Machine learning Projects</td>
+      <td><a href="https://bit.ly/353ckI0">link</a></td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>300 + Machine Learning Resources Collection</td>
+      <td><a href="https://bit.ly/3b2LjIE">link</a></td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>70 + Awesome AI</td>
+      <td><a href="https://bit.ly/3hDIXkD">link</a></td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>150 + Machine learning Project Ideas with code</td>
+      <td><a href="https://bit.ly/38bfpbg">link</a></td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>100 + AutoML Projects with code</td>
+      <td><a href="https://bit.ly/356zxZX">link</a></td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>100 + Machine Learning Model Interpretability Code Frameworks</td>
+      <td><a href="https://bit.ly/3n7FaNB">link</a></td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>120 + Multi Model Machine learning Code Projects</td>
+      <td><a href="https://bit.ly/38QRI76">link</a></td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Awesome Chatbot Projects</td>
+      <td><a href="https://bit.ly/3rQyxmE">link</a></td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Awesome ML Demo Project with iOS</td>
+      <td><a href="https://bit.ly/389hZOY">link</a></td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>100 + Python based Machine learning Application Projects</td>
+      <td><a href="https://bit.ly/3n9zLWv">link</a></td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>100 + Reproducible Research Projects of ML and DL</td>
+      <td><a href="https://bit.ly/2KQ0J8C">link</a></td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>25 + Python Projects</td>
+      <td><a href="https://bit.ly/353fRpK">link</a></td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>8 + OpenCV Projects</td>
+      <td><a href="https://bit.ly/389mj0B">link</a></td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>1000 + Awesome Deep learning Collection</td>
+      <td><a href="https://bit.ly/3b0a9Jj">link</a></td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>200 + Awesome NLP learning Collection</td>
+      <td><a href="https://bit.ly/3b74b9o">link</a></td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>200 + The Super Duper NLP Repo</td>
+      <td><a href="https://bit.ly/3hDNnbd">link</a></td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>100 + NLP dataset for your Projects</td>
+      <td><a href="https://bit.ly/353h2Wc">link</a></td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>100 + NLP dataset for your Projects</td>
+      <td><a href="https://bit.ly/353h2Wc">link</a></td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>364 + Machine Learning Projects definition</td>
+      <td><a href="https://bit.ly/2X5QRdb">link</a></td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>300+ Google Earth Engine Jupyter Notebooks to Analyze Geospatial Data</td>
+      <td><a href="https://bit.ly/387JwjC">link</a></td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>1000 + Machine learning Projects Information</td>
+      <td><a href="https://bit.ly/3rMGk4N">link</a></td>
+    </tr>
+    <tr>
+      <td>64.</td>
+      <td>11 Computer Vision Projects with code</td>
+      <td><a href="https://bit.ly/38gz2OR">link</a></td>
+    </tr>
+    <tr>
+      <td>65.</td>
+      <td>13 Computer Vision Projects with Code</td>
+      <td><a href="https://bit.ly/3hMJdhh">link</a></td>
+    </tr>
+    <tr>
+      <td>66.</td>
+      <td>13 Cool Computer Vision GitHub Projects To Inspire You</td>
+      <td><a href="https://bit.ly/2LrSv6d">link</a></td>
+    </tr>
+    <tr>
+      <td>67.</td>
+      <td>Open-Source Computer Vision Projects (With Tutorials)</td>
+      <td><a href="https://bit.ly/3pUss6U">link</a></td>
+    </tr>
+    <tr>
+      <td>68.</td>
+      <td>OpenCV Computer Vision Projects with Python</td>
+      <td><a href="https://bit.ly/38jmGpn">link</a></td>
+    </tr>
+    <tr>
+      <td>69.</td>
+      <td>100 + Computer vision Algorithm Implementation</td>
+      <td><a href="https://bit.ly/3rWgrzF">link</a></td>
+    </tr>
+    <tr>
+      <td>70.</td>
+      <td>80 + Computer vision Learning code</td>
+      <td><a href="https://bit.ly/3hKCpkm">link</a></td>
+    </tr>
+    <tr>
+      <td>71.</td>
+      <td>Deep learning Treasure</td>
+      <td><a href="https://bit.ly/359zLQb">link</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="road-lane-line-detection--computer-vision-project-in-python">Road Lane line detection – Computer Vision Project in Python</h2>
+<p>Lane Line detection is a critical component for self driving cars and also for computer vision in general. This concept is used to describe the path for self-driving cars and to avoid the risk of getting in another lane.</p>
+
+<p>In this project, we will build a machine learning project to detect lane lines in real-time. We will do this using the concepts of computer vision using OpenCV library. To detect the lane we have to detect the white markings on both sides on the lane.</p>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/125195194-9b61a300-e28f-11eb-9046-b8ffa1ae73e7.gif" alt="lane-line-detection-ml-project" /></p>
+
+<p>Road Lane-Line Detection with Python &amp; OpenCV
+Using computer vision techniques in Python, we will identify road lane lines in which autonomous cars must run. This will be a critical part of autonomous cars, as the self-driving cars should not cross it’s lane and should not go in opposite lane to avoid accidents.</p>
+
+<p>Frame Masking and Hough Line Transformation
+To detect white markings in the lane, first, we need to mask the rest part of the frame. We do this using frame masking. The frame is nothing but a NumPy array of image pixel values. To mask the unnecessary pixel of the frame, we simply update those pixel values to 0 in the NumPy array.</p>
+
+<p>After making we need to detect lane lines. The technique used to detect mathematical shapes like this is called Hough Transform. Hough transformation can detect shapes like rectangles, circles, triangles, and lines.</p>
+
+<p>Code Download
+Please download the source code: <a href="https://github.com/aiegoo/portfolio/raw/assets/lane-line-detection-project-code.zip">Lane Line Detection Project Code</a></p>
+
+<p>Follow the below steps for lane line detection in Python:</p>
+
+<ol>
+  <li>preparation</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="k">as</span> <span class="n">mpimg</span>
+<span class="kn">from</span> <span class="nn">moviepy.editor</span> <span class="kn">import</span> <span class="n">VideoFileClip</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="c1">## apply frame masking and find region of interest
+</span><span class="k">def</span> <span class="nf">interested_region</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">vertices</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span> 
+        <span class="n">mask_color_ignore</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,)</span> <span class="o">*</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">mask_color_ignore</span> <span class="o">=</span> <span class="mi">255</span>
+        
+    <span class="n">cv2</span><span class="p">.</span><span class="n">fillPoly</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">img</span><span class="p">),</span> <span class="n">vertices</span><span class="p">,</span> <span class="n">mask_color_ignore</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">cv2</span><span class="p">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">img</span><span class="p">))</span>
+    
+<span class="c1">## convert pixels to a line
+</span><span class="k">def</span> <span class="nf">hough_lines</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">rho</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">min_line_len</span><span class="p">,</span> <span class="n">max_line_gap</span><span class="p">):</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">HoughLinesP</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">rho</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([]),</span> <span class="n">minLineLength</span><span class="o">=</span><span class="n">min_line_len</span><span class="p">,</span> <span class="n">maxLineGap</span><span class="o">=</span><span class="n">max_line_gap</span><span class="p">)</span>
+    <span class="n">line_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">)</span>
+    <span class="n">lines_drawn</span><span class="p">(</span><span class="n">line_img</span><span class="p">,</span><span class="n">lines</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">line_img</span>
+    
+<span class="c1">## create two lines per frame after Hough  transformation
+</span><span class="k">def</span> <span class="nf">lines_drawn</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">lines</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">thickness</span><span class="o">=</span><span class="mi">6</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">cache</span>
+    <span class="k">global</span> <span class="n">first_frame</span>
+    <span class="n">slope_l</span><span class="p">,</span> <span class="n">slope_r</span> <span class="o">=</span> <span class="p">[],[]</span>
+    <span class="n">lane_l</span><span class="p">,</span><span class="n">lane_r</span> <span class="o">=</span> <span class="p">[],[]</span>
+
+    <span class="n">α</span> <span class="o">=</span><span class="mf">0.2</span> 
+  <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">x1</span><span class="p">,</span><span class="n">y1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">y2</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+            <span class="n">slope</span> <span class="o">=</span> <span class="p">(</span><span class="n">y2</span><span class="o">-</span><span class="n">y1</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">x2</span><span class="o">-</span><span class="n">x1</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">slope</span> <span class="o">&gt;</span> <span class="mf">0.4</span><span class="p">:</span>
+                <span class="n">slope_r</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">slope</span><span class="p">)</span>
+                <span class="n">lane_r</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">slope</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mf">0.4</span><span class="p">:</span>
+                <span class="n">slope_l</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">slope</span><span class="p">)</span>
+                <span class="n">lane_l</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">,</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">if</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">lane_l</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lane_r</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)):</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s">'no lane detected'</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="n">slope_mean_l</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">slope_l</span><span class="p">,</span><span class="n">axis</span> <span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">slope_mean_r</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">slope_r</span><span class="p">,</span><span class="n">axis</span> <span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">mean_l</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">(</span><span class="n">lane_l</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">mean_r</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">(</span><span class="n">lane_r</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="p">((</span><span class="n">slope_mean_r</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">slope_mean_l</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'dividing by zero'</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    
+    <span class="n">x1_l</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span><span class="o">/</span><span class="n">slope_mean_l</span><span class="p">)</span> 
+    <span class="n">x2_l</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span><span class="o">/</span><span class="n">slope_mean_l</span><span class="p">)</span>   
+    <span class="n">x1_r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span><span class="o">/</span><span class="n">slope_mean_r</span><span class="p">)</span>
+    <span class="n">x2_r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span><span class="o">/</span><span class="n">slope_mean_r</span><span class="p">)</span>
+    
+   
+    <span class="k">if</span> <span class="n">x1_l</span> <span class="o">&gt;</span> <span class="n">x1_r</span><span class="p">:</span>
+        <span class="n">x1_l</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">x1_l</span><span class="o">+</span><span class="n">x1_r</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">x1_r</span> <span class="o">=</span> <span class="n">x1_l</span>
+        <span class="n">y1_l</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">x1_l</span> <span class="p">)</span> <span class="o">+</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="n">y1_r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">x1_r</span> <span class="p">)</span> <span class="o">+</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="n">y2_l</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">x2_l</span> <span class="p">)</span> <span class="o">+</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_l</span> <span class="o">*</span> <span class="n">mean_l</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="n">y2_r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">x2_r</span> <span class="p">)</span> <span class="o">+</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">slope_mean_r</span> <span class="o">*</span> <span class="n">mean_r</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">y1_l</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">y2_l</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">y1_r</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">y2_r</span> <span class="o">=</span> <span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+      
+    <span class="n">present_frame</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="n">x1_l</span><span class="p">,</span><span class="n">y1_l</span><span class="p">,</span><span class="n">x2_l</span><span class="p">,</span><span class="n">y2_l</span><span class="p">,</span><span class="n">x1_r</span><span class="p">,</span><span class="n">y1_r</span><span class="p">,</span><span class="n">x2_r</span><span class="p">,</span><span class="n">y2_r</span><span class="p">],</span><span class="n">dtype</span> <span class="o">=</span><span class="s">"float32"</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">first_frame</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">next_frame</span> <span class="o">=</span> <span class="n">present_frame</span>        
+        <span class="n">first_frame</span> <span class="o">=</span> <span class="mi">0</span>        
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="n">prev_frame</span> <span class="o">=</span> <span class="n">cache</span>
+        <span class="n">next_frame</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">α</span><span class="p">)</span><span class="o">*</span><span class="n">prev_frame</span><span class="o">+</span><span class="n">α</span><span class="o">*</span><span class="n">present_frame</span>
+             
+    <span class="n">cv2</span><span class="p">.</span><span class="n">line</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">1</span><span class="p">])),</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">3</span><span class="p">])),</span> <span class="n">color</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="p">.</span><span class="n">line</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">4</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">5</span><span class="p">])),</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">6</span><span class="p">]),</span><span class="nb">int</span><span class="p">(</span><span class="n">next_frame</span><span class="p">[</span><span class="mi">7</span><span class="p">])),</span> <span class="n">color</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
+    
+    <span class="n">cache</span> <span class="o">=</span> <span class="n">next_frame</span>
+    
+<span class="c1">## process each video for lane  detection
+</span>
+<span class="k">def</span> <span class="nf">weighted_img</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">initial_img</span><span class="p">,</span> <span class="n">α</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">β</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">λ</span><span class="o">=</span><span class="mf">0.</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">cv2</span><span class="p">.</span><span class="n">addWeighted</span><span class="p">(</span><span class="n">initial_img</span><span class="p">,</span> <span class="n">α</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="n">β</span><span class="p">,</span> <span class="n">λ</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">process_image</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+
+    <span class="k">global</span> <span class="n">first_frame</span>
+
+    <span class="n">gray_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+    <span class="n">img_hsv</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_RGB2HSV</span><span class="p">)</span>
+
+
+    <span class="n">lower_yellow</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="s">"uint8"</span><span class="p">)</span>
+    <span class="n">upper_yellow</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">30</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="s">"uint8"</span><span class="p">)</span>
+
+    <span class="n">mask_yellow</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">inRange</span><span class="p">(</span><span class="n">img_hsv</span><span class="p">,</span> <span class="n">lower_yellow</span><span class="p">,</span> <span class="n">upper_yellow</span><span class="p">)</span>
+    <span class="n">mask_white</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">inRange</span><span class="p">(</span><span class="n">gray_image</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+    <span class="n">mask_yw</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">bitwise_or</span><span class="p">(</span><span class="n">mask_white</span><span class="p">,</span> <span class="n">mask_yellow</span><span class="p">)</span>
+    <span class="n">mask_yw_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">gray_image</span><span class="p">,</span> <span class="n">mask_yw</span><span class="p">)</span>
+
+    <span class="n">gauss_gray</span><span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">mask_yw_image</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="n">canny_edges</span><span class="o">=</span><span class="n">cv2</span><span class="p">.</span><span class="n">Canny</span><span class="p">(</span><span class="n">gauss_gray</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span>
+
+    <span class="n">imshape</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="n">shape</span>
+    <span class="n">lower_left</span> <span class="o">=</span> <span class="p">[</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">9</span><span class="p">,</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="n">lower_right</span> <span class="o">=</span> <span class="p">[</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">9</span><span class="p">,</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="n">top_left</span> <span class="o">=</span> <span class="p">[</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="o">-</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">8</span><span class="p">,</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="p">]</span>
+    <span class="n">top_right</span> <span class="o">=</span> <span class="p">[</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="n">imshape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">8</span><span class="p">,</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="n">imshape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">10</span><span class="p">]</span>
+    <span class="n">vertices</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="n">lower_left</span><span class="p">,</span><span class="n">top_left</span><span class="p">,</span><span class="n">top_right</span><span class="p">,</span><span class="n">lower_right</span><span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">int32</span><span class="p">)]</span>
+    <span class="n">roi_image</span> <span class="o">=</span> <span class="n">interested_region</span><span class="p">(</span><span class="n">canny_edges</span><span class="p">,</span> <span class="n">vertices</span><span class="p">)</span>
+
+    <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span>
+
+    <span class="n">line_image</span> <span class="o">=</span> <span class="n">hough_lines</span><span class="p">(</span><span class="n">roi_image</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">180</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">weighted_img</span><span class="p">(</span><span class="n">line_image</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">α</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">β</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">λ</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="c1">## clip the input video to frames and get the resulant output video file
+</span><span class="n">first_frame</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">white_output</span> <span class="o">=</span> <span class="s">'__path_to_output_file__'</span>
+<span class="n">clip1</span> <span class="o">=</span> <span class="n">VideoFileClip</span><span class="p">(</span><span class="s">"__path_to_input_file__"</span><span class="p">)</span>
+<span class="n">white_clip</span> <span class="o">=</span> <span class="n">clip1</span><span class="p">.</span><span class="n">fl_image</span><span class="p">(</span><span class="n">process_image</span><span class="p">)</span>
+<span class="n">white_clip</span><span class="p">.</span><span class="n">write_videofile</span><span class="p">(</span><span class="n">white_output</span><span class="p">,</span> <span class="n">audio</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>Lane line detection  profject gui (code)</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="n">tk</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageTk</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+
+<span class="k">global</span> <span class="n">last_frame1</span>                                   
+<span class="n">last_frame1</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">480</span><span class="p">,</span> <span class="mi">640</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">)</span>
+<span class="k">global</span> <span class="n">last_frame2</span>                                      
+<span class="n">last_frame2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">480</span><span class="p">,</span> <span class="mi">640</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">)</span>
+<span class="k">global</span> <span class="n">cap1</span>
+<span class="k">global</span> <span class="n">cap2</span>
+<span class="n">cap1</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="s">"path_to_input_test_video"</span><span class="p">)</span>
+<span class="n">cap2</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="s">"path_to_resultant_lane_detected_video"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">show_vid</span><span class="p">():</span>                                       
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">cap1</span><span class="p">.</span><span class="n">isOpened</span><span class="p">():</span>                             
+        <span class="k">print</span><span class="p">(</span><span class="s">"cant open the camera1"</span><span class="p">)</span>
+    <span class="n">flag1</span><span class="p">,</span> <span class="n">frame1</span> <span class="o">=</span> <span class="n">cap1</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">frame1</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">frame1</span><span class="p">,(</span><span class="mi">400</span><span class="p">,</span><span class="mi">500</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">flag1</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s">"Major error!"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">flag1</span><span class="p">:</span>
+        <span class="k">global</span> <span class="n">last_frame1</span>
+        <span class="n">last_frame1</span> <span class="o">=</span> <span class="n">frame1</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">pic</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">last_frame1</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>     
+        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">pic</span><span class="p">)</span>
+        <span class="n">imgtk</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="p">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">img</span><span class="p">)</span>
+        <span class="n">lmain</span><span class="p">.</span><span class="n">imgtk</span> <span class="o">=</span> <span class="n">imgtk</span>
+        <span class="n">lmain</span><span class="p">.</span><span class="n">configure</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">imgtk</span><span class="p">)</span>
+        <span class="n">lmain</span><span class="p">.</span><span class="n">after</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">show_vid</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">show_vid2</span><span class="p">():</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">cap2</span><span class="p">.</span><span class="n">isOpened</span><span class="p">():</span>                             
+        <span class="k">print</span><span class="p">(</span><span class="s">"cant open the camera2"</span><span class="p">)</span>
+    <span class="n">flag2</span><span class="p">,</span> <span class="n">frame2</span> <span class="o">=</span> <span class="n">cap2</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">frame2</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">frame2</span><span class="p">,(</span><span class="mi">400</span><span class="p">,</span><span class="mi">500</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">flag2</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s">"Major error2!"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">flag2</span><span class="p">:</span>
+        <span class="k">global</span> <span class="n">last_frame2</span>
+        <span class="n">last_frame2</span> <span class="o">=</span> <span class="n">frame2</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">pic2</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">last_frame2</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+        <span class="n">img2</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">pic2</span><span class="p">)</span>
+        <span class="n">img2tk</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="p">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">img2</span><span class="p">)</span>
+        <span class="n">lmain2</span><span class="p">.</span><span class="n">img2tk</span> <span class="o">=</span> <span class="n">img2tk</span>
+        <span class="n">lmain2</span><span class="p">.</span><span class="n">configure</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">img2tk</span><span class="p">)</span>
+        <span class="n">lmain2</span><span class="p">.</span><span class="n">after</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">show_vid2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="n">root</span><span class="o">=</span><span class="n">tk</span><span class="p">.</span><span class="n">Tk</span><span class="p">()</span>                                     
+    <span class="n">lmain</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">master</span><span class="o">=</span><span class="n">root</span><span class="p">)</span>
+    <span class="n">lmain2</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">master</span><span class="o">=</span><span class="n">root</span><span class="p">)</span>
+
+    <span class="n">lmain</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span> <span class="o">=</span> <span class="n">LEFT</span><span class="p">)</span>
+    <span class="n">lmain2</span><span class="p">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span> <span class="o">=</span> <span class="n">RIGHT</span><span class="p">)</span>
+    <span class="n">root</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Lane-line detection"</span><span class="p">)</span>            
+    <span class="n">root</span><span class="p">.</span><span class="n">geometry</span><span class="p">(</span><span class="s">"900x700+100+10"</span><span class="p">)</span> 
+    <span class="n">exitbutton</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">'Quit'</span><span class="p">,</span><span class="n">fg</span><span class="o">=</span><span class="s">"red"</span><span class="p">,</span><span class="n">command</span><span class="o">=</span>   <span class="n">root</span><span class="p">.</span><span class="n">destroy</span><span class="p">).</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span> <span class="o">=</span> <span class="n">BOTTOM</span><span class="p">,)</span>
+    <span class="n">show_vid</span><span class="p">()</span>
+    <span class="n">show_vid2</span><span class="p">()</span>
+    <span class="n">root</span><span class="p">.</span><span class="n">mainloop</span><span class="p">()</span>                                  
+    <span class="n">cap</span><span class="p">.</span><span class="n">release</span><span class="p">()</span>
+    
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/125195892-b8e43c00-e292-11eb-90d5-3e30a0ca0ba8.gif" alt="lane-line-detection-ml-project-2" /></p>
+
+<h2 id="defect-detection-in-ssd-network-in-ultrasonic-inspection">Defect detection in ssd network in ultrasonic inspection</h2>
+<p><a href="https://www.youtube.com/watch?v=PUT7HFGWuMM">youtube</a></p>
+
+<p><a href="https://github.com/jasonngai01/UTPA_SSD">code</a></p>
+
+<pre><code class="language-txt">This project aims to develop a system using convolutional neutral networks (CNNs) to detect defects in composite laminate materials automatically in order to increase ultrasonic inspection accuracy and efficiency. For inspectors, ultrasonic testing is a labor-intensive and time-consuming manual task. This approach improves their efficiency, accuracy and reduces their workload when when interpreting ultrasonic scanning images to identify defects. Discontinuities and defects in materials are usually not specific shapes, positions, and orientations. A Jetson TX2 Developer Kit runs in real time an image analysis function using a Single Shot MultiBox Detector (SSD) network and computer vision trained on images of delamination defects. The SSD network can also evaluate components and specimens with other methods, such as thermography inspection.
+</code></pre>
+
+:ET

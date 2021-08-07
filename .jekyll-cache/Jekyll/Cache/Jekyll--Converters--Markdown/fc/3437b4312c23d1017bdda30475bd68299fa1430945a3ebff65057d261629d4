@@ -1,0 +1,164 @@
+I"l'<h2 id="vtol-and-flight-data-analysis">Vtol and flight data analysis</h2>
+
+<p>Hello!</p>
+
+<p>Follow up work from this <a href="https://discuss.ardupilot.org/t/airspeed-sensor-noise-problems-on-large-quadplane/32941">post</a> , we decided to go for another flight to get a better tuned pitch controller, rectify airspeed sensor problems and collect more flight data before we push for TECS tuning.</p>
+
+<p>We had 1 successful flight before this. Good thing is we have logs from 2 flights: 1 that flew ok. 1 that ended in a painful crash.</p>
+
+<p>For this flight, we took off and had reasonable <strong>QLOITER</strong> performance. I then switched mode from <strong>QLOITER</strong> to <strong>AUTOTUNE</strong> @ 20 meters. We saw a good transition. However, just when transition is declared done, the aircraft, with plenty of airspeed, decided to take a nose dive over a period of ~1.5 to 2 seconds.</p>
+
+<p>We have been studying the logs over the past 2 days and have not been able to identify what is happening.</p>
+
+<p>Points from on hardware that may not show on the dataflash logs</p>
+<ul>
+  <li>Post crash, Cube and servo power supply components still work.</li>
+  <li>Post crash, progressive build up of tests on servo system: all servos still work with servo tester, CAT6 cable + booster board pairs we got from ServoCity and when connected to MAIN2 of the smashed out Cube (apparently still working) in FBWA mode.</li>
+  <li>Pre crash, CG was checked to be nose heavy prior to flight. It was well below it’s design MTOW limits.</li>
+  <li>Pre crash, we did not do an accelerometer or compass calibration after the last flight, which was 1 month ago.</li>
+  <li>Pre &amp; post crash, FBWA direction of PID compensation was checked to be correct.
+<br /></li>
+</ul>
+
+<p>Key timings of this Flight</p>
+<ul>
+  <li>12:02:26 = Transition begins</li>
+  <li>12:02:34 = Dive begins</li>
+  <li>12:02:37 = Last data
+<br /></li>
+</ul>
+
+<p>A few hypotheses that we have been thinking about:</p>
+
+<ol>
+  <li>Vibrations from the DLE61 gas engine got to the Cube’s pitch estimation, causing the dive
+    <ul>
+      <li>Looking at the attitude graphs, the system knew that pitch was going down. It was also desiring more and more pitch as the aircraft dove downwards.</li>
+      <li>error_RP data from NKF4 seem to indicate small errors.</li>
+      <li>Plane pitch controllers (set of PIDP data) also seem to indicate that PID loops are actively kicking in to bring aircraft back to level</li>
+      <li>One thing we did notice is that there was a lot of clipping of accelerometers while aircraft is still on the ground. However, the clipping events stopped when aircraft is in the air.</li>
+      <li>Given that we were able to do a QLOITER with an engine in idle @ 2700 RPM, we aren’t sure if sensors and estimation are the cause of the problem.
+<br /></li>
+    </ul>
+  </li>
+  <li>GPS came loose and fell off right after transition is done
+    <ul>
+      <li>No abrupt changes to magnetic heading and GPS lock status. 
+<br /></li>
+    </ul>
+  </li>
+  <li>Servo system failed &amp; servo linkage arm broke in flight, right after transition is done.
+    <ul>
+      <li>Post crash hardware tests seem to indicate otherwise. Because it was a nose dive, most of the rear of the aircraft was salvaged and test was possible.</li>
+      <li>Post crash mechanical checks indicated that linkage arm and servo horn was still attached.
+<br /></li>
+    </ul>
+  </li>
+  <li>Vibration matched resonance frequency of some component within the Cube, causing the Cube to send wrong signal out to MAIN2.
+    <ul>
+      <li>We are not sure how to verify this
+<br /></li>
+    </ul>
+  </li>
+  <li>Auto trimming of servo acted in the wrong way, coupled with effects of bad vibration on pitch estimation , causing elevator to compensate in the wrong direction.
+    <ul>
+      <li>We are also not sure how to verify this
+<br /></li>
+    </ul>
+  </li>
+</ol>
+
+<p>Can we request some help from this community in evaluating the logs along with us (i.e. new ideas or hypothesis) We are still looking at the data ourselves but it is getting to a point where we’re running out of ideas.</p>
+
+<p>Thank you.</p>
+
+<p>/<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>**/</p>
+
+<p>Products for this <strong>failed flight</strong> are as follows</p>
+<ul>
+  <li><a href="https://drive.google.com/open?id=1-QIfIvZ6LoiI0bJM17ZKdDe374BWBOsA">Dataflash logs</a></li>
+  <li><a href="https://drive.google.com/open?id=1ryJdQBWL2OyzMR8Hx_y72ygRCGzfkSJ7">Tlogs</a> - if replaying, start from 99%</li>
+  <li><a href="https://drive.google.com/open?id=1p6WxYoGGjIPbcVS1gPDelOehxaB8hOhJ">Parameter file</a></li>
+  <li><a href="https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf">SummarySlidespdf</a> or <a href="./Crash-Analysis.pptx">download pptx</a> - we did up a slide deck to try summarize what we think to be key graphs and make sense of what’s going on</li>
+</ul>
+<object data="https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf" type="application/pdf" width="700px" height="700px">
+   <embed src="https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf" type="application/pdf" /> &lt;/embed&gt;
+</object>
+
+<ul>
+  <li><a href="https://drive.google.com/open?id=1ALfahwWxfO_IF-AR9nXCfCwKkToLq-Wj">Flight video from ground view</a></li>
+  <li><a href="https://drive.google.com/open?id=1dekB6KR_8fftuH_hhgEoikyCn4eCmGdy">Post crash photo</a></li>
+  <li><a href="https://drive.google.com/open?id=199wzbPtp_l9fuP1GW1b6hoTg8JXEFgfW">FFT chart</a></li>
+</ul>
+
+<p>Products for previous <strong>successful flight</strong></p>
+<ul>
+  <li><a href="https://drive.google.com/open?id=1teFVrss8SAQi3K0p600gb1Le4e6z_Ceu">Dataflash logs</a></li>
+  <li><a href="https://drive.google.com/open?id=1S7ZbLJt99YH3mZlkqKG-_8TdUZWbK_oR">Tlogs</a></li>
+  <li><a href="https://drive.google.com/open?id=1iAA1IwzKYxWvlA7K4sJAvqdzWYXAPlu0">Parameter file</a></li>
+  <li>More details on this flight in <a href="https://discuss.ardupilot.org/t/airspeed-sensor-noise-problems-on-large-quadplane/32941">this post</a>A few hypotheses that we have been thinking about:</li>
+</ul>
+
+<ol>
+  <li>Vibrations from the DLE61 gas engine got to the Cube’s pitch estimation, causing the dive
+    <ul>
+      <li>Looking at the attitude graphs, the system knew that pitch was going down. It was also desiring more and more pitch as the aircraft dove downwards.</li>
+      <li>error_RP data from NKF4 seem to indicate small errors.</li>
+      <li>Plane pitch controllers (set of PIDP data) also seem to indicate that PID loops are actively kicking in to bring aircraft back to level</li>
+      <li>One thing we did notice is that there was a lot of clipping of accelerometers while aircraft is still on the ground. However, the clipping events stopped when aircraft is in the air.</li>
+      <li>Given that we were able to do a QLOITER with an engine in idle @ 2700 RPM, we aren’t sure if sensors and estimation are the cause of the problem.
+<br /></li>
+    </ul>
+  </li>
+  <li>GPS came loose and fell off right after transition is done
+    <ul>
+      <li>No abrupt changes to magnetic heading and GPS lock status. 
+<br /></li>
+    </ul>
+  </li>
+  <li>Servo system failed &amp; servo linkage arm broke in flight, right after transition is done.
+    <ul>
+      <li>Post crash hardware tests seem to indicate otherwise. Because it was a nose dive, most of the rear of the aircraft was salvaged and test was possible.</li>
+      <li>Post crash mechanical checks indicated that linkage arm and servo horn was still attached.
+<br /></li>
+    </ul>
+  </li>
+  <li>Vibration matched resonance frequency of some component within the Cube, causing the Cube to send wrong signal out to MAIN2.
+    <ul>
+      <li>We are not sure how to verify this
+<br /></li>
+    </ul>
+  </li>
+  <li>Auto trimming of servo acted in the wrong way, coupled with effects of bad vibration on pitch estimation , causing elevator to compensate in the wrong direction.
+    <ul>
+      <li>We are also not sure how to verify this
+<br /></li>
+    </ul>
+  </li>
+</ol>
+
+<p>Can we request some help from this community in evaluating the logs along with us (i.e. new ideas or hypothesis) We are still looking at the data ourselves but it is getting to a point where we’re running out of ideas.</p>
+
+<p>Thank you.</p>
+
+<p>/<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>**/</p>
+
+<p>Products for this <strong>failed flight</strong> are as follows</p>
+<ul>
+  <li><a href="https://drive.google.com/open?id=1-QIfIvZ6LoiI0bJM17ZKdDe374BWBOsA">Dataflash logs</a></li>
+  <li><a href="https://drive.google.com/open?id=1ryJdQBWL2OyzMR8Hx_y72ygRCGzfkSJ7">Tlogs</a> - if replaying, start from 99%</li>
+  <li><a href="https://drive.google.com/open?id=1p6WxYoGGjIPbcVS1gPDelOehxaB8hOhJ">Parameter file</a></li>
+  <li><a href="https://drive.google.com/open?id=1n8mZzw-WBxLUCgPJhLjCWOWOv_v1FU2WlUl27TGkWng">Summary Slides</a> - we did up a slide deck to try summarize what we think to be key graphs and make sense of what’s going on</li>
+  <li><a href="https://drive.google.com/open?id=1ALfahwWxfO_IF-AR9nXCfCwKkToLq-Wj">Flight video from ground view</a></li>
+  <li><a href="https://drive.google.com/open?id=1dekB6KR_8fftuH_hhgEoikyCn4eCmGdy">Post crash photo</a></li>
+  <li><a href="https://drive.google.com/open?id=199wzbPtp_l9fuP1GW1b6hoTg8JXEFgfW">FFT chart</a></li>
+</ul>
+
+<p>Products for previous <strong>successful flight</strong></p>
+<ul>
+  <li><a href="https://drive.google.com/open?id=1teFVrss8SAQi3K0p600gb1Le4e6z_Ceu">Dataflash logs</a></li>
+  <li><a href="https://drive.google.com/open?id=1S7ZbLJt99YH3mZlkqKG-_8TdUZWbK_oR">Tlogs</a></li>
+  <li><a href="https://drive.google.com/open?id=1iAA1IwzKYxWvlA7K4sJAvqdzWYXAPlu0">Parameter file</a></li>
+  <li>More details on this flight in <a href="https://discuss.ardupilot.org/t/airspeed-sensor-noise-problems-on-large-quadplane/32941">this post</a></li>
+</ul>
+:ET

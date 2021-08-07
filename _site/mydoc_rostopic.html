@@ -1,0 +1,2878 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="summary.">
+<meta name="keywords" content="newsdronegcs,  API, content API, UI text, inline help, context-sensitive help, popovers, tooltips">
+<meta name="theme-color" content="#72ac4a" />
+<title>ROS topic for micro control | Tonylee Project Showcase</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-green.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="aiegoo.github.io/feed.xml">
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"><img src="images/tony_doc.svg" style="width: 117px; max-width: 12%;"> My Project Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://github.com/aiegoo/portfolio/wiki" target="_blank" rel="noopener">GitHub</a></li>
+                
+                
+                
+                <li><a href="news">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xaas<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/en" target="_blank" rel="noopener">o-lora</a></li>
+                        
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/admin" target="_blank" rel="noopener">o-lora/admin aiegoo/</a></li>
+                        
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/blog" target="_blank" rel="noopener">o-lora/blog</a></li>
+                        
+                        
+                        
+                        <li><a href="http://idratherbewriting.com/category-jekyll/" target="_blank" rel="noopener">Jekyll on my blog</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xaas 2<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="mydoc_introduction.html">Conference call</a></li>
+                        
+                        
+                        
+                        <li><a href="p1_landing_page.html">LasVegas CES</a></li>
+                        
+                        
+                        
+                        <li><a href="p2_landing_page.html">Autonomous drone</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="https://aiegoo.github.io/portfolio">portfolio wiki</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="ROS topic for micro control">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">my portfolio 1.0</li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="Overview" href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a title="Get started" href="index.html">Get started</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="About this site" href="mydoc_aboutsite.html">About this site</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dotfiles" href="mydoc_supported_features.html">Dotfiles</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="About the author" href="mydoc_about.html">About the author</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="tl;dr" href="mydoc_support.html">tl;dr</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Automation" href="#">Automation</a>
+      <ul>
+          
+          
+          
+          <li><a title="Ansible" href="mydoc_ansible.html">Ansible</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Git webhook" href="mydoc_webhook.html">Git webhook</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bash pipeline" href="mydoc_pipeline.html">Bash pipeline</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Docker" href="mydoc_docker.html">Docker</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Gitlab" href="mydoc_gitlab.html">Gitlab</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="ROS, Serializer" href="#">ROS, Serializer</a>
+      <ul>
+          
+          
+          
+          <li><a title="Django restapi frameworks" href="mydoc_django.html">Django restapi frameworks</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Rostopic integration for GUI" href="#">+Rostopic integration for GUI</a>
+              <ul>
+                  
+                  
+                  
+                  <li class="active"><a title="GUI overview" href="mydoc_rostopic.html">GUI overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="GCS-web" href="tag_gcs_web.html">GCS-web</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Rqt" href="tag_rqt.html">Rqt</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="webrtc" href="tag_webrtc.html">webrtc</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="mqtt" href="tag_mqtt.html">mqtt</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Gitlab-github actions" href="mydoc_actions.html">Gitlab-github actions</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="pipeline, heroku, mailchimps" href="mydoc_heroku.html">pipeline, heroku, mailchimps</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="others" href="mydoc_others.html">others</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Django frameworks" href="#">Django frameworks</a>
+      <ul>
+          
+          
+          
+          <li><a title="Oscar" href="mydoc_oscar.html">Oscar</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Raspi" href="mydoc_raspi.html">Raspi</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Lora" href="mydoc_lora.html">Lora</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Drone-gui" href="mydoc_drone.html">Drone-gui</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Content reuse" href="mydoc_content_reuse.html">Content reuse</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Collections" href="mydoc_collections.html">Collections</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="WebStorm editor tips" href="mydoc_webstorm_text_editor.html">WebStorm editor tips</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Atom editor tips" href="mydoc_atom_text_editor.html">Atom editor tips</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Node frameworks" href="#">Node frameworks</a>
+      <ul>
+          
+          
+          
+          <li><a title="Django+Vue" href="mydoc_djangovue.html">Django+Vue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Weather app" href="mydoc_weather.html">Weather app</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Chat app" href="mydoc_chatapp.html">Chat app</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bootstrap" href="mydoc_bootstrap.html">Bootstrap</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="lightup.co.kr/blog" href="mydoc_lightup.html">lightup.co.kr/blog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="lightup.co.kr/admin" href="mydoc_lightupadmin.html">lightup.co.kr/admin</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Racing drones" href="#">Racing drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="DaLrC215" href="mydoc_dalrc.html">DaLrC215</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-skyhero" href="mydoc_skyhero.html">Dev-skyhero</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="MiniCp04" href="mydoc_minicp.html">MiniCp04</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-Nazam 02" href="mydoc_devnazam.html">Dev-Nazam 02</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Xugong" href="xugong.html">Xugong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Labels" href="mydoc_labels.html">Labels</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Links" href="mydoc_hyperlinks.html">Links</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Navtabs" href="mydoc_navtabs.html">Navtabs</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Tables" href="mydoc_tables.html">Tables</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Syntax highlighting" href="mydoc_syntax_highlighting.html">Syntax highlighting</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Workflow maps" href="mydoc_workflow_maps.html">Workflow maps</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="APM drones" href="#">APM drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="pixhawk overview" href="mydoc_pixhwak_overview.html">pixhawk overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+rFlyeval CopterSim" href="#">+rFlyeval CopterSim</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Instrucdtions&&documentation" href="mydoc_commenting_on_files.html">Instrucdtions&&documentation</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Implementating Pixhawk Cube" href="tag_rfly_cube.html">Implementating Pixhawk Cube</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-Apmdr 01 / pixhawk lite" href="mydoc_apmdr.html">Dev-Apmdr 01 / pixhawk lite</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Cube black" href="mydoc_cube.html">Cube black</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="DJI drones" href="#">DJI drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="Quad wookong" href="mydoc_quad.html">Quad wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S1000 wookong" href="mydoc_s1000.html">S1000 wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S1000 A2" href="mydoc_s100a2.html">S1000 A2</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S900 wookong" href="mydoc_s900.html">S900 wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Nazam" href="mydoc_nazam.html">Nazam</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="iTerm profiles" href="mydoc_iterm_profiles.html">iTerm profiles</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pushing builds to server" href="mydoc_push_build_to_server.html">Pushing builds to server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Publishing on Github Pages" href="mydoc_publishing_github_pages.html">Publishing on Github Pages</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Feature drones" href="#">Feature drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="Yuneec H" href="mydoc_yuneec.html">Yuneec H</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bebop Parrot" href="mydoc_bebop.html">Bebop Parrot</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jetbot rover" href="mydoc_jetbot.html">Jetbot rover</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="AGX Xavier rover" href="mydoc_xavier.html">AGX Xavier rover</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Vtol & flight data" href="mydoc_vtol.html">Vtol & flight data</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Schooling" href="#">Schooling</a>
+      <ul>
+          
+          
+          
+          <li><a title="My courses" href="mydoc_mycourse.html">My courses</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="ncs-ML/DL" href="mydoc_deeplearning.html">ncs-ML/DL</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="C++" href="mydoc_cplus.html">C++</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Web-scraping" href="mydoc_webscraping.html">Web-scraping</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Challenger project" href="mydoc_challenger-project.html">Challenger project</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="AIOT embedded projects" href="#">AIOT embedded projects</a>
+      <ul>
+          
+          
+          
+          <li><a title="Overview" href="tag_aiotoverview.html">Overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Intel Edison projects" href="#">+Intel Edison projects</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Detection serializer" href="tag_sensor_detection.html">Detection serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Realsense drone" href="tag_realsense.html">Realsense drone</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Edison Arduino" href="tag_edison_arduino.html">Edison Arduino</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collaboration pages" href="tag_collaboration.html">Collaboration pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Troubleshooting pages" href="tag_troubleshooting.html">Troubleshooting pages</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jetson nano" href="tag_jetson_nano.html">Jetson nano</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Jetson Xavier" href="#">+Jetson Xavier</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="project overview" href="tag_jetson_xavier.html">project overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Raspberry Pi projects" href="tag_raspi.html">Raspberry Pi projects</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Sensor serializer" href="tag_serializer.html">Sensor serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Lora monitoring system" href="tag_lora_monitoring.html">Lora monitoring system</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Books" href="#">Books</a>
+      <ul>
+          
+          
+          
+          <li><a title="Fiction" href="mydoc_fiction.html">Fiction</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="Tag archive pages" href="#">Tag archive pages</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Formatting pages" href="tag_formatting.html">Formatting pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Navigation pages" href="tag_navigation.html">Navigation pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Content types pages" href="tag_content_types.html">Content types pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Publishing pages" href="tag_publishing.html">Publishing pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Special layout pages" href="tag_special_layouts.html">Special layout pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collaboration pages" href="tag_collaboration.html">Collaboration pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Troubleshooting pages" href="tag_troubleshooting.html">Troubleshooting pages</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Web-dev-ops" href="mydoc_webdev.html">Web-dev-ops</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="two scoops of django" href="mydoc_twoscoops.html">two scoops of django</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="presentation" href="books_revealjs.html">presentation</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="more to come" href="">more to come</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="drone companies" href="mydoc_contact.html">drone companies</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+     
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+       
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">ROS topic for micro control</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">summary.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<details>
+  <summary>
+    <div id="toc"></div></summary>
+</details>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/pages/mydoc/mydoc_rostopic.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <h2 id="rqt-development-_mydrone-wiki">Rqt development <a href="https://github.com/aiegoo/_mydrone/wiki/OGC-RQt">_mydrone wiki</a></h2>
+
+<p>:leaves: <a href="https://docs.ros.org/en/foxy/Concepts/About-RQt.html#rqt-components-structure">git_overview</a> <a href="http://wiki.ros.org/rqt">wiki</a></p>
+<ul>
+  <li>rqt_console/logger</li>
+  <li>rqt_bag</li>
+  <li>rqt_web</li>
+</ul>
+
+<p>ROS GUI is designed as a plugin architecture which allows users to quickly implement Qt-based GUI’s plugins with ROS for state information.</p>
+
+<p>rqt_console/logger provides graphical interface to capture and broadcast log messages for filtering. _bag is designed to view ros bag contents such as images and visualized outputs (via rqt_plot). _web is integrated work space for ROS GUI.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MQTT is an OASIS standard messaging protocol for the Internet of Things (IoT). It is designed as an extremely lightweight publish/subscribe messaging transport that is ideal for connecting remote devices with a small code footprint and minimal network bandwidth.
+</code></pre></div></div>
+<p>⛅ ❗ <a href="https://aiegoo.github.io/documentation/mydoc_commenting_on_files.html#matlab--other-tool-boxes">Simulink reference</a></p>
+
+<h2 id="opensource-gui-gcs-ocs">opensource GUI GCS OCS</h2>
+
+<p><code class="language-plaintext highlighter-rouge">choosing-a-ground-station:</code></p>
+
+<p>This page gives a high-level overview of the available Ground Control
+Stations (GCS) and provides links so you can make the appropriate
+choice.</p>
+
+<h3 id="overview">Overview</h3>
+
+<p>A ground station is typically a software application, running on a
+ground-based computer, that communicates with your UAV via <a href="https://ardupilot.org/copter/docs/common-telemetry-landingpage.html#common-telemetry-landingpage">wirelessTelemetry</a> :ref:<code class="language-plaintext highlighter-rouge">wireless telemetry &lt;common-telemetry-landingpage&gt;</code>. It displays real-time data
+on the UAVs performance and position and can serve as a “virtual
+cockpit”, showing many of the same instruments that you would have if
+you were flying a real plane. A GCS can also be used to control a UAV in
+flight, uploading new mission commands and setting parameters. It is
+often also used to monitor the live video streams from a UAV’s cameras.</p>
+
+<p>There are at least ten different ground control stations. On desktop there is (<em>Mission
+Planner</em>, <em>APM Planner 2</em>, <em>MAVProxy</em>, <em>QGroundControl</em> and <em>UgCS</em>. For Tablet/Smartphone there is
+<em>Tower</em> (DroidPlanner 3), <em>MAVPilot</em>, <em>AndroPilot</em> and <em>SidePilot</em> that can be
+used to communicate with ArduPilot (i.e.
+:ref:<code class="language-plaintext highlighter-rouge">Copter &lt;copter:home&gt;</code>,
+<code class="language-plaintext highlighter-rouge">Plane &lt;https://ardupilot.org/plane/index.html&gt;</code>_,
+:ref:<code class="language-plaintext highlighter-rouge">Rover &lt;rover:home&gt;</code>,
+:ref:<code class="language-plaintext highlighter-rouge">AntennaTracker &lt;antennatracker:home&gt;</code>).</p>
+
+<p>The decision to select a particular GCS often depends on your vehicle
+and preferred computing platform:</p>
+
+<ul>
+  <li><strong>Ready-to-fly</strong> users may prefer the portability and ease of use of
+<em>Tower</em> (Droid Planner 3), or another GCS running on a tablet or
+phone.</li>
+  <li><strong>DIY/Kit</strong> users and developers often have to access configuration
+and analysis tools, and would therefore need (at least initially)
+<em>Mission Planner</em>, <em>APM Planner 2</em> or another more full-featured GCS.</li>
+</ul>
+
+<p>.. note::</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   This wiki primarily refers to set-up and configuration using the
+   Mission Planner, because it was created first and is the most
+   full-featured GCS.
+</code></pre></div></div>
+<h3 id="comparison-desktop">Comparison Desktop</h3>
+
+<h4 id="mission-planner">Mission Planner</h4>
+<hr />
+
+<p>Full featured and widely used GCS.</p>
+
+<ul>
+  <li><strong>Platform</strong>: Windows, Mac OS X (Using Mono)</li>
+  <li><strong>Licence</strong>: <code class="language-plaintext highlighter-rouge">Open source &lt;https://github.com/ArduPilot/MissionPlanner/blob/master/COPYING.txt&gt;</code>__
+(GPLv3)</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126874232-2cfc24f1-0415-40fd-a32e-c0e432ab5802.png" alt="image" /></p>
+
+<p>.. image:: ../../../images/MP-FP-Screen.jpg
+    :target: ../_images/MP-FP-Screen.jpg</p>
+
+<ul>
+  <li><a href="https://firmware.ardupilot.org/Tools/MissionPlanner/MissionPlanner-latest.msi">Download</a>__</li>
+  <li>:ref:<code class="language-plaintext highlighter-rouge">Wiki &lt;planner:home&gt;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Support Forum &lt;https://discuss.ardupilot.org/c/ground-control-software/mission-planner&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Issues List &lt;https://github.com/ArduPilot/MissionPlanner/issues&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Source Code &lt;https://github.com/ArduPilot/MissionPlanner&gt;</code>__</li>
+</ul>
+
+<h4 id="apm-planner-20">APM Planner 2.0</h4>
+<hr />
+
+<p>The best autopilot for use on MAC and Linux platforms. It has a smaller
+user base and a reduced feature set when compared with Mission Planner.</p>
+
+<ul>
+  <li><strong>Platform</strong>: Windows, Mac OS X, Linux</li>
+  <li><strong>Licence</strong>: <code class="language-plaintext highlighter-rouge">Open source &lt;https://github.com/ArduPilot/apm_planner/blob/master/license.txt&gt;</code>__
+ (GPLv3)</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126874248-ca6a906a-2ce1-4734-937c-a04661c677cb.png" alt="image" /></p>
+
+<p>.. image:: ../../../images/planner2_choose_agcs.jpg
+    :target: ../_images/planner2_choose_agcs.jpg</p>
+
+<ul>
+  <li>:ref:<code class="language-plaintext highlighter-rouge">Wiki &lt;planner2:home&gt;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Support Forum &lt;https://discuss.ardupilot.org/c/ground-control-software/apm-planner-2-0&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Issues List &lt;https://github.com/ArduPilot/apm_planner/issues&gt;</code>__</li>
+  <li><a href="https://github.com/ArduPilot/apm_planner"> SourceCode </a></li>
+</ul>
+
+<h4 id="mavproxy">MAVProxy</h4>
+<hr />
+
+<p>Linux GCS often used by Plane developers. Primarily a command line
+interface with graphical modules for map and mission editing. Written in
+Python, and extensible via python modules.</p>
+
+<ul>
+  <li><strong>Platform</strong>: Linux</li>
+  <li><strong>Licence</strong>: <code class="language-plaintext highlighter-rouge">Open source &lt;https://github.com/tridge/MAVProxy/blob/master/COPYING.txt&gt;</code>__
+(GPLv3)</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126874263-728ca0c5-6780-4608-9f19-9d7b9f93e091.png" alt="image" /></p>
+
+<p>.. image:: ../../../images/mavproxy_linux.jpg
+    :target:  ../_images/mavproxy_linux.jpg</p>
+
+<ul>
+  <li>:ref:<code class="language-plaintext highlighter-rouge">Wiki &lt;mavproxy:home&gt;</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Issues List &lt;https://github.com/ArduPilot/MAVProxy/issues&gt;</code>__</li>
+  <li><a href="https://github.com/ArduPilot/MAVProxy">SourceCode</a></li>
+</ul>
+
+<h4 id="qgroundcontrol">QGroundControl</h4>
+<hr />
+
+<p>QGroundControl works with MAVLink capable autopilots including ArduPilot.
+It’s unique among the GCS offerings as it runs on all platforms desktop and mobile.</p>
+
+<ul>
+  <li><strong>Platform</strong>: Windows, Mac OS X, Linux, Android and iOS</li>
+  <li><strong>Licence</strong>: <code class="language-plaintext highlighter-rouge">Open Source &lt;http://www.qgroundcontrol.org/license&gt;</code>__
+(GPLv3)</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126874278-5dc72d8c-6c6c-4024-a995-137660d75118.png" alt="image" /></p>
+
+<p>.. image:: ../../../images/QGroundControlTabletImage.jpg
+    :target: ../_images/QGroundControlTabletImage.jpg</p>
+
+<ul>
+  <li><a href="http://qgroundcontrol.com/">Website</a></li>
+  <li><code class="language-plaintext highlighter-rouge">Support Forum &lt;https://groups.google.com/forum/#!forum/qgroundcontrol&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Gitter &lt;https://gitter.im/mavlink/qgroundcontrol&gt;</code>__</li>
+</ul>
+
+<h4 id="ugcs---universal-ground-control-station">UgCS - Universal Ground Control Station</h4>
+
+<p>Universal and easy to use ground control station with a 3D interface. 
+Supports APM, Pixhawk as well as drones from other manufacturers such as DJI, Mikrokopter and more.
+Intended for enthusiasts as well as professional users.</p>
+
+<p>It is capable of communicating with and controlling multiple drones simultaneously.</p>
+
+<p>UgCS supports multiple map layers as well as different map providers. Some of the features of UgCS include - DEM Import, ADS-B transponder and receiver support, Click &amp; Go mode, Joystick mode, image geotagging and video recording. UgCS also comes with a telemetry player, allowing the replay of all flights.</p>
+
+<p>UgCS comes with in-built no-fly zones around all major airports as well as the ability to create custom no-fly zones.</p>
+
+<p>Supports multi-node installation, meaning that it is possible to connect multiple pilots with UgCS laptops in the field to a central ground control server.</p>
+
+<ul>
+  <li><strong>Platform</strong>: Windows, Mac OS X, Ubuntu</li>
+  <li><strong>Licence</strong>: Proprietary with a free licence available as well (UgCS Open)</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126874288-3e2aba83-baf3-4527-bc92-300da1892749.png" alt="image" /></p>
+
+<p>.. image:: https://www.ugcs.com/files/2016-04/1459769168_elevation-profile.jpeg
+    :target:  https://www.ugcs.com/files/2016-04/1459769168_elevation-profile.jpeg</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">UgCS Website &lt;http://www.ugcs.com&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">DIY Drones Group for UgCS Users &lt;https://diydrones.com/group/ugcs&gt;</code>__</li>
+  <li><a href="https://github.com/ugcs">GithubRepository</a></li>
+</ul>
+
+<h3 id="comparison-mobile">Comparison Mobile</h3>
+
+<h4 id="tower">Tower</h4>
+<hr />
+
+<p>Tower (a.k.a. “DroidPlanner 3”) is an Android GCS for phones and
+tablets. It is intended for end users and enthusiasts, and includes
+features like follow-me, “dronies” (i.e. “selfies” but taken with a
+drone) and special missions for 3D mapping.</p>
+
+<ul>
+  <li><strong>Platform</strong>: Android Phones and Tablets</li>
+  <li><strong>Licence</strong>: <code class="language-plaintext highlighter-rouge">Open source &lt;https://github.com/DroidPlanner/Tower/blob/develop/LICENSE.md&gt;</code>__
+(GPLv3)</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126874301-ba2cc80b-003e-4c8a-973d-c66537249590.png" alt="image" /></p>
+
+<p>.. image:: ../../../images/tower_droid_planner3_structure_scan.jpg
+    :target: ../_images/tower_droid_planner3_structure_scan.jpg</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Download Tower &lt;https://play.google.com/store/apps/details?id=org.droidplanner.android&gt;</code>__
+(and <code class="language-plaintext highlighter-rouge">3DR Services &lt;https://play.google.com/store/apps/details?id=org.droidplanner.services.android&gt;</code>__)
+from Google Play.</li>
+  <li><code class="language-plaintext highlighter-rouge">Android compatible hardware list &lt;https://github.com/arthurbenemann/droidplanner/wiki/Compatible-Devices&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Wiki &lt;https://github.com/DroidPlanner/Tower/wiki&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Support Forum &lt;https://discuss.ardupilot.org/c/ground-control-software/tower&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Issues List &lt;https://github.com/DroidPlanner/Tower/issues&gt;</code>__</li>
+  <li><a href="https://github.com/DroidPlanner/droidplanner">SourceCode</a></li>
+</ul>
+
+<p>.. note::</p>
+
+<p>Legacy versions (<code class="language-plaintext highlighter-rouge">DroidPlanner 2 &lt;https://play.google.com/store/apps/details?id=org.droidplanner&gt;</code>__
+   and <code class="language-plaintext highlighter-rouge">Droid Planner 1 &lt;https://play.google.com/store/apps/details?id=com.droidplanner&gt;</code>__)
+   can also be downloaded from Google Play.</p>
+
+<h4 id="mav-pilot-14">MAV Pilot 1.4</h4>
+<hr />
+
+<p>A GCS in your pocket that supports predominantly ArduPilot autopilot on iPhone/iPad. Supports for Plane, Copter &amp; Rover vehicle types</p>
+
+<p>See website for how-to on how connect it to your autopilot</p>
+
+<ul>
+  <li><strong>Platform</strong>: iPhone, iPad</li>
+  <li><strong>Licence</strong>: Proprietary</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126874307-4c4dd9c9-2d12-491b-b5b4-37fe99bc8f60.png" alt="image" /></p>
+
+<p>.. image:: ../../../images/MAVPilot_1.4.png
+    :target: ../_images/MAVPilot_1.4.png</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Release announcement Blog &amp; Discussion &lt;https://diydrones.com/profiles/blogs/mav-pilot-1-4-for-iphone-released&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Support Blog &lt;http://www.communistech.com/support/&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Support Forum &lt;http://www.communistech.com/forums/&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">iTunes Store link &lt;https://itunes.apple.com/ca/developer/communis-tech/id649232032&gt;</code>__</li>
+</ul>
+
+<h4 id="sidepilot">SidePilot</h4>
+<hr />
+
+<p>ArduPilot compatible GCS that runs on iPhone/iPad.</p>
+
+<p>See website for how-to on how connect it to your autopilot</p>
+
+<ul>
+  <li><strong>Platform</strong>: iPhone, iPad</li>
+  <li><strong>Licence</strong>: Proprietary</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126874327-c9b51302-601e-4613-b937-edcbcc4ee61c.png" alt="image" /></p>
+
+<p>.. image:: ../../../images/sidepilot.jpg
+    :target: ../_images/sidepilot.jpg</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Release announcement Blog &amp; Discussion &lt;https://diydrones.com/profiles/blogs/sidepilot-app-version-1-1-formerly-imavlink&gt;</code>__</li>
+  <li><a href="http://sidepilot.net">Website</a></li>
+  <li><code class="language-plaintext highlighter-rouge">Support Forum &lt;http://sidepilot.net/forum&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">iTunes Store link &lt;https://itunes.apple.com/us/app/sidepilot/id1138193193?ls=1&amp;mt=8&gt;</code>__</li>
+</ul>
+
+<h4 id="andropilot">AndroPilot</h4>
+<hr />
+
+<p>Android GCS intended for enthusiasts.</p>
+
+<p>.. note::</p>
+
+<p>AndroPilot is not under active development. Its suitability for newer FW needs to be confirmed.</p>
+
+<ul>
+  <li><strong>Platform</strong>: Android Phones and Tablets</li>
+  <li><strong>Licence</strong>: <code class="language-plaintext highlighter-rouge">Open Source &lt;https://github.com/geeksville/arduleader/blob/master/LICENSE.md&gt;</code>__
+(GPLv3)</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126874337-94587d26-8b7f-4201-ace5-e04bfb73b2fd.png" alt="image" /></p>
+
+<p>.. image:: ../../../images/Andropilot_-<em>Android_Apps_on_Google_Play.jpg
+    :target: ../_images/Andropilot</em>-_Android_Apps_on_Google_Play.jpg</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Downloads (Google Play) &lt;https://play.google.com/store/apps/details?id=com.geeksville.andropilot&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Android compatible hardware list &lt;https://github.com/geeksville/arduleader/wiki/Android%20Device%20Compatibility%20List&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Wiki &lt;https://github.com/geeksville/arduleader/wiki&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Support Forum &lt;https://discuss.ardupilot.org/c/ground-control-software/other-gcs&gt;</code>__</li>
+  <li><code class="language-plaintext highlighter-rouge">Issues List &lt;https://github.com/geeksville/arduleader/issues&gt;</code>__</li>
+  <li><a href="https://github.com/geeksville/arduleader/tree/master/andropilot">SourceCode</a></li>
+</ul>
+
+<h3 id="additional-gcs-hardware">Additional GCS hardware</h3>
+
+<h4 id="android">Android</h4>
+<hr />
+
+<p>For Android devices, you will need:</p>
+
+<ul>
+  <li>Android based tablet that can act as a USB host. Google Nexus tablets
+are recommended, and the compatible hardware lists for the different
+GCSs are listed in the table above.</li>
+  <li>:ref:<code class="language-plaintext highlighter-rouge">SiK Telemetry Radio System &lt;common-sik-telemetry-radio&gt;</code> or
+similar (915 Mhz for US, 433 for Europe) which includes the
+bidirectional ground and air telemetry units.</li>
+  <li>USB OTG cable (typically less than $2 on
+<code class="language-plaintext highlighter-rouge">ebay &lt;http://www.ebay.com/sch/i.html?_trksid=m570.l3201&amp;_nkw=usb+otg+cable&amp;_sacat=0&gt;</code>__
+and
+<code class="language-plaintext highlighter-rouge">Amazon &lt;http://www.amazon.com/T-Flash-Adapter-Samsung-GT-i9100-GT-N7000/dp/B005FUNYSA/ref=sr_1_5?ie=UTF8&amp;qid=1376262351&amp;sr=8-5&amp;keywords=android+otg+cable&gt;</code>__).</li>
+</ul>
+
+<h4 id="ios">iOS</h4>
+<hr />
+
+<p>For iOS devices, you will need:</p>
+
+<ul>
+  <li>iOS Based device such as an iPad or iPhone. If running iPad, the cellular version is recommended for better GPS support.</li>
+  <li>Wifi or Bluetooth LE link to the Drone</li>
+  <li>Bridge Connection to a:ref:<code class="language-plaintext highlighter-rouge">SiK Telemetry Radio System &lt;common-sik-telemetry-radio&gt;</code> via Wifi or Bluetooth LE</li>
+</ul>
+
+<p>See iOS App Vendors for more details.</p>
+
+<h3 id="desktop-pcs-windowsmaclinux">Desktop PCs (Windows/Mac/Linux)</h3>
+
+<p>For Desktop devices you will need:</p>
+
+<ul>
+  <li>:ref:<code class="language-plaintext highlighter-rouge">SiK Telemetry Radio System &lt;common-sik-telemetry-radio&gt;</code> or
+:ref:<code class="language-plaintext highlighter-rouge">similar &lt;common-telemetry-landingpage&gt;</code> (915 Mhz for US, 433 for
+Europe) which includes the bidirectional ground and air telemetry
+units.</li>
+</ul>
+
+<h3 id="i-am-interested-in-">I am interested in …</h3>
+<hr />
+
+<p><a href="https://www.youtube.com/watch?v=93SpvPLL-_s">youtube</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">Pixhawk to Simulink MavLink Communication (Real Time virtual Cockpit instruments and Gagues) </code></p>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126862276-7bad9e22-fd32-4ee2-b97d-d30033edbdbd.png" alt="image" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126862432-627a1492-ea5a-4181-ad18-5d4fe40a5459.png" alt="image" /></p>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126034319-a160b15b-fcc1-4586-bfc1-df62371d2783.png" alt="simulink" /></p>
+
+<p>As shown in the figure above, the 1st–5th input ports are five input channels from the RC transmitter (“ch1”–“ch5”); the 6th–8th input ports are the angular velocity (“p”, “q”, “r”) from the gyroscope sensor; the 9th–10th input ports are the roll angle and pitch angles (“phi”, “theta”) estimated from the inertial sensor. As shown in Fig. 3.8, the computing process of the entire “Controller” subsystem is roughly divided into five steps.</p>
+
+<p>(1). The “Input Interfaces” module receives the RC transmitter signals and the multicopter state estimation signals. [1]</p>
+
+<p>(2). The “RC Signal Process” module maps the five-channel signals of the RC transmitter to the desired roll and pitch angle values.</p>
+
+<p>(3). The “Attitude Controller” module computes the desired force and torque values to control the multicopter to the desired attitude.</p>
+
+<p>(4). The “Motor Control Signal Computation” module maps the force and torque values to the control signals (ranging from 1000 to 2000) for the four motors.</p>
+
+<p>(5). The “Output Interfaces” module fills the remaining 4-dimensional control signals and generates an 8-dimensional PWM signal (there are eight PWM output ports on Pixhawk) ranging from 1000 to 2000µs. [2]</p>
+
+<p><strong><em>see other details</em></strong> <a href="https://aiegoo.github.io/documentation/mydoc_commenting_on_files.html#21-controller">rFlyeval_introduction</a></p>
+
+<h2 id="statustext">Statustext</h2>
+<hr />
+
+<p>MAVROS statustext contains a lot of information about the the system but not all may be relevant or critical. The statustext node will listen to these statustext and send the critical ones to the ground control so that the operator is able to see the status of the aircraft in real time.</p>
+
+<ul>
+  <li>Overview</li>
+</ul>
+
+<p>As statustext is primarily text, some are too long and it is not cost-efficient to send them as-is. Instead, we use a dictionary to encode them to a few characters. They are decoded on the receiving side using the same dictionary.</p>
+
+<ul>
+  <li>Code architecture</li>
+</ul>
+
+<h3 id="on-the-aircraft">On the aircraft</h3>
+
+<p>The statustext node on the aircraft subscribes to the <code class="language-plaintext highlighter-rouge">/mavros/statustext/recv/</code> topic and converts relevant statustext to 4 alphanumeric fields for efficient communication.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Field</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Prefix</td>
+      <td style="text-align: left">This includes I (info), W (warning) and E (error) and it will be shown on the GUI along with different coloured text so that the operator is able to easily identify the statustext that require immediate attention. <br /><strong>Note:</strong> This is different from the IWE prefixes in message headers and is only relevant to Statustext.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Type</td>
+      <td style="text-align: left">Type is a single digit assigned to Throttle, Mission, Waypoint, Transition, Land, Baro, GPS, VTOL, PreArm and Compass. These are the categories to which the statustext belong.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Status</td>
+      <td style="text-align: left">Status determines the actual message that the statustext contains and is specific to each type. For example, a status of 1 in the Throttle type implies that the throttle has been armed.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Details</td>
+      <td style="text-align: left">Details will contain the additional information that is required in a float. This usually includes distances such as the distance to the next waypoint. If there are no details, this field will be left as 0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="on-the-ground-control-station">On the ground control station</h3>
+
+<p>On the ground control station, the message is decoded using the same dictionary and converted into readable strings to be displayed on the GUI. The dictionary used can be found in <code class="language-plaintext highlighter-rouge">/scripts/gnd_statustext.py</code>.</p>
+
+<ul>
+  <li>Misc</li>
+</ul>
+
+<h3 id="dictionary-used">Dictionary used</h3>
+
+<h4 id="0--throttle">0 : Throttle</h4>
+
+<blockquote>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	0 : "Throttle disarmed", 
+	1 : "Throttle armed",
+</code></pre></div>  </div>
+</blockquote>
+
+<h4 id="1--mission">1 : Mission</h4>
+
+<blockquote>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	16 : "Waypoint", 
+	17 : "Loiter Unlimited", 
+	18 : "Loiter Turns", 
+	19 : "Loiter Time", 
+	20 : "Return to Launch", 
+	21 : "Land", 
+	22 : "Takeoff", 
+	30 : "Continue Change Alt", 
+	31 : "Loiter to Alt", 
+	83 : "Altitude Wait", 
+	84 : "VTOL Takeoff", 
+	85 : "VTOL Land", 
+	112 : "Delay", 
+	113 : "Distance", 
+	176 : "Set Mode", 
+	177 : "Jump", 
+	178 : "Change Speed", 
+  	182 : "Repeat Relay", 
+	184 : "Repeat Servo", 
+	189 : "Land Start", 
+	200 : "Control Video", 
+	201 : "Set ROI", 
+	202 : "Digicam Configure", 
+	205 : "Mount Control", 
+	206 : "Set Cam Trigger Distance", 
+	207 : "Fence Enable", 
+	208 : "Parachute", 
+	210 : "Inverted Flight", 
+	212 : "Autotune Enable", 
+	223 : "Engine Control", 
+	3000 : "VTOL Transition", 
+</code></pre></div>  </div>
+</blockquote>
+
+<h4 id="2--waypoint">2 : Waypoint</h4>
+
+<blockquote>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	No handling here
+</code></pre></div>  </div>
+</blockquote>
+
+<h4 id="3--transition">3 : Transition</h4>
+
+<blockquote>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	0 : "Transition done", 
+	1 : "Reached transition speed ", 
+	2 : "Transition speed not reached. Hovering", 
+</code></pre></div>  </div>
+</blockquote>
+
+<h4 id="4--land">4 : Land</h4>
+
+<blockquote>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	0 : "Land complete", 
+	1 : "Land final started", 
+	2 : "Land descend started"
+</code></pre></div>  </div>
+</blockquote>
+
+<h4 id="5--baro">5 : Baro</h4>
+
+<blockquote>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	0 : "Barometer calibration complete", 
+	1 : "Skipping baro calibration", 
+	2 : "Calibrating barometer", 
+</code></pre></div>  </div>
+</blockquote>
+
+<h4 id="6--gps">6 : GPS</h4>
+
+<blockquote>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	0 : "GPS not found",
+</code></pre></div>  </div>
+</blockquote>
+
+<h4 id="7--vtol">7 : VTOL</h4>
+
+<blockquote>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	0 : "Exited VTOL mode", 
+	1 : "Entered VTOL mode", 
+	2 : "VTOL transition only in AUTO", 
+	3 : "VTOL not available", 
+</code></pre></div>  </div>
+</blockquote>
+
+<h4 id="8--prearm">8 : PreArm</h4>
+
+<blockquote>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	0 : "Cannot arm at the moment", 
+</code></pre></div>  </div>
+</blockquote>
+
+<h4 id="9--compass">9 : Compass</h4>
+
+<blockquote>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	0 : "Compass bad orientation", 
+</code></pre></div>  </div>
+</blockquote>
+
+<hr />
+
+<h2 id="ros-topic">ROS topic</h2>
+
+<h2 id="instruction-pdfs">instruction pdfs</h2>
+<p><a href="../../pdf/qt5_python/qt5_python.pdf">qt5_python</a></p>
+
+<p><a href="../../pdf/qt5_c++/qt5_cplus.pdf">qt5_c++</a></p>
+
+<div class="seriesContext">
+    <a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="mydoc_seriesdemo2.html"><button type="button" class="btn btn-primary">Next: Series demo 2</button></a>
+        
+    </a>
+    &nbsp;
+    <div class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Jump to: <span class="caret"></span></button>
+        <ol class="dropdown-menu">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li class="active"> → 1. ROS topic for micro control</li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo1.html">Series demo 1</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo2.html">Series demo 2</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_challenger-project.html">Challenger Engineering Project</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_commenting_on_files.html">pixhawk tools</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo3.html">Series demo 3</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo4.html">Series demo 4</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="tag_raspi.html">🔭raspberry pi project</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+        </ol>
+    </div>
+</div>
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_news.html" class="btn btn-default navbar-btn cursorNorm" role="button">news</a>
+        
+        
+        
+        <a href="tag_drone.html" class="btn btn-default navbar-btn cursorNorm" role="button">drone</a>
+        
+        
+        
+        <a href="tag_gcs.html" class="btn btn-default navbar-btn cursorNorm" role="button">gcs</a>
+        
+        
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2021 Tonyleekorea. All rights reserved. <br />
+<span>Page last updated:</span> July 10, 2021<br/> Site last generated: Aug 7, 2021 <br />
+<p align="right"><img src="images/tonyillust_atwork.svg" alt="tonyillust" style="width: 20%; max-width: 30%;"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

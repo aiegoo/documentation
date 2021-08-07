@@ -1,0 +1,145 @@
+I"�<h2 id="c-console-game">C++ console game﻿</h2>
+
+<p>￣ｰ￣솔로비행 ≖ ≖</p>
+
+<p>･ﾟ✧ SOLO Flight╰(◡‿◡</p>
+
+<p>goal; C++ C# Channel Unity</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>source links</th>
+      <th style="text-align: center">video links</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/aiegoo/obstruction">github</a></td>
+      <td style="text-align: center"><a href="https://youtu.be/GHOHrMa--pQ"><img src="https://i9.ytimg.com/vi/GHOHrMa--pQ/mq1.jpg?sqp=COT7iYcG&amp;rs=AOn4CLD-8juNl2ueP8V_ebHglHhzcKXJRA" alt="youtube" /></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://aiegoo.github.io/obstruction">overview</a></td>
+      <td style="text-align: center"><a href="https://eggs.or.kr/crh/drone_resource/-/blob/tony/linux-2020-11-23_09.08.38.mp4">gitlab</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>necessary skills
+c++ c# Unity and Django Channel</li>
+</ul>
+
+<h2 id="readme"><a href="https://github.com/aiegoo/obstruction/blob/master/README.md">readme</a></h2>
+
+<h2 id="welcome-to-obstruction-help-pages">Welcome to Obstruction Help Pages</h2>
+
+<blockquote>
+  <p>Assignment Manual (recommended features included but not required)</p>
+</blockquote>
+<object data="https://github.com/aiegoo/obstruction/blob/master/50.CPP_app.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/aiegoo/obstruction/blob/master/50.CPP_app.pdf" />
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="50.CPP_app.pdf">Download PDF</a>.</p>
+    &lt;/embed&gt;
+</object>
+
+<p><a href="https://eggs.or.kr/crh/drone_resource/-/blob/8a8c0dbcb7c50f0f5b7541e4c7125fab2ec93437/50.CPP_app.pdf">assignment</a>
+You can use the <a href="https://github.com/aiegoo/obstruction/edit/master/README.md">editor on GitHub</a> to preview the source and offer your ideas through the pull request, which I would welcome with wide open arms.</p>
+
+<p>Whenever you are done with one version of Obstruction, you can choose another Tag from the branches marked Tag and sequential version numbers, which will run <a href="https//youtube.com:xkdyk??">youtube</a> to rebuild the pages in your site, from the content in your choice of version files.</p>
+
+<h3 id="obstruction">obstruction</h3>
+
+<p>Obstruction is a territory game to play against each other in order to obsruct the opponent to dominate the world of the game board.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here is the key rules of the game development
+
+<span class="gh"># rule 1 - console game</span>
+<span class="p">1.</span> use the ncurses and modular codes for game objects and features
+<span class="p">2.</span> try to make it a cross-platform (turned out to be a tall order as libraries used are speciic to each platform.) 
+<span class="gu">## rule 2 - Unity 2D</span>
+<span class="p">1.</span> Grid, preFabs, code snippets
+<span class="p">2.</span> Play music
+<span class="p">3.</span> Game control
+<span class="p">4.</span> make either an IOS or Android app
+<span class="gu">### Deployable results (to be completed)</span>
+<span class="p">1.</span> for windows
+    git checkout -b v0.1w git@github.com:aiegoo/obstruction
+<span class="p">2.</span> for linux
+    git checkout -b v0.1Lx git@github.com:aiegoo/obstruction
+<span class="p">3.</span> for Unity
+    to be continued (see the session recordings via Anydesk)
+
+<span class="gs">**Player**</span> and _Opponent_ and <span class="sb">`Territory`</span> wqar
+
+<span class="p">[</span><span class="nv">Link</span><span class="p">](</span><span class="sx">url</span><span class="p">)</span> and !<span class="p">[</span><span class="nv">Image</span><span class="p">](</span><span class="sx">src</span><span class="p">)</span>
+</code></pre></div></div>
+<h3 id="winning-strategy">winning strategy</h3>
+<p>board size is important as an odd-sized board tends to make the first player win easily by mirring the 2nd player move. In other cases, try to form a ‘L’ shape of nodes for each move, from which a player can force out the opponent leaving no room to place at the end of the game.</p>
+
+<table border="1">
+<tbody><tr align="center" height="20"><td bgcolor="#cccccc" width="20">&nbsp;</td><td bgcolor="#cccccc" width="20">&nbsp;</td><td bgcolor="#cccccc" width="20">&nbsp;</td><td bgcolor="#cccccc" width="20">&nbsp;</td><td width="20">O</td></tr>
+<tr align="center" height="20"><td bgcolor="#cccccc">&nbsp;</td><td>X</td><td bgcolor="#cccccc">&nbsp;</td><td bgcolor="#cccccc">&nbsp;</td><td bgcolor="#cccccc">&nbsp;</td></tr>
+<tr align="center" height="20"><td bgcolor="#cccccc">&nbsp;</td><td bgcolor="#cccccc">&nbsp;</td><td bgcolor="#cccccc">&nbsp;</td><td bgcolor="#cccccc">&nbsp;</td><td>O</td></tr>
+<tr align="center" height="20"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td bgcolor="#cccccc">&nbsp;</td><td bgcolor="#cccccc">&nbsp;</td></tr>
+<tr align="center" height="20"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td bgcolor="#cccccc">&nbsp;</td><td>X</td></tr>
+</tbody></table>
+
+<p>For more details see <a href="http://www.papg.com/show?2XMX">blog</a>.</p>
+
+<h3 id="jekyll-themes">Jekyll Themes</h3>
+
+<p>You can select styles for dark and light console color.
+<a href="https://github.com/aiegoo/obstruction/settings">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
+
+<h3 id="support-or-contact">Support or Contact</h3>
+
+<p>Having trouble with running Obstruction? Check out our <a href="aiegoo.github.io/obstruction">Game Center</a> or <a href="https://36io.co">contact support</a> and we’ll help you sort it out.</p>
+
+<p><code class="language-plaintext highlighter-rouge">TL;DR</code></p>
+
+<h3 id="development-story">dEvelopment story</h3>
+<p><a href="https://github.com/aiegoo/cplus/projects/1">project management</a></p>
+<ul>
+  <li>Solo Flight and my view on C++</li>
+</ul>
+<p style="text-align: center">
+I hate C++ as I rarely liked the language specific programmers. They are rare in numbers and <br />alas an odd sorts in characters too. But then it has been some paramount challenge, as untasteful as ever for me <br />to dive into the school of programmers as a student, notwithstanding becoming one, I admit. I still have the reservation to start on this path, but who knows the future? as I always believe in 'divde and conquer'.
+</p>
+<h3 id="game-process">Game process</h3>
+<p>The first player should hit ‘o’ on keyboard while ‘x’ for the 2nd player.</p>
+
+<p><img src="https://github.com/aiegoo/obstruction/blob/master/images/obstruction1.png" alt="step 1 &amp; 2" /></p>
+<hr />
+
+<p><img src="https://github.com/aiegoo/obstruction/blob/master/images/obstruction2.png" alt="step 3 &amp; 4" /></p>
+<hr />
+
+<p><img src="https://github.com/aiegoo/obstruction/blob/master/images/obstruction3.png" alt="step 5 &amp; 6" /></p>
+
+<h3 id="development-overview">dEvelopment overview</h3>
+<ol>
+  <li>ide (C++, C#)
+    <ul>
+      <li>Visual Studio 2019</li>
+      <li>VS Code</li>
+      <li>Unity</li>
+    </ul>
+  </li>
+  <li>Game idea
+    <ul>
+      <li>www.cs.ukzn.ac.za - ncurses manual</li>
+      <li>http://www.papg.com/show?2XN0 - game concept</li>
+    </ul>
+  </li>
+  <li>Project term
+    <ul>
+      <li>period 1; planning coding: 2 nights</li>
+      <li>period 2; testing: 1 night</li>
+      <li>peirod 3; Unity: 2 nights</li>
+      <li>period 4; Deployment: a couple of hours</li>
+    </ul>
+  </li>
+</ol>
+
+:ET

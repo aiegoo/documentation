@@ -1,0 +1,55 @@
+I"�<h2 id="portfolio-overview">portfolio overview</h2>
+
+<h2 id="computing-arsenal">computing arsenal</h2>
+<h3 id="pcs">pcs</h3>
+<h3 id="servers">servers</h3>
+<h3 id="peripheral">peripheral</h3>
+
+<h2 id="webapp-and-domains">Webapp and domains</h2>
+
+<h2 id="demos">Demos</h2>
+
+<h3 id="landair-vehicles">Land/Air Vehicles</h3>
+<p>| type   | name   | fc   | sensor1   | sensor2   |
+|:—|:–:|:–:|:–:|—:|
+| land   |  jetbot  | jetson nano   |  camera  |    |
+|    |    |    |    |    |
+| Air   | bebop2   | apm(?)   | android  |  fpv camera  |
+|    |    |    | arduino wifi   |    |
+|   * | APM   | pixhracer  | gymbol   | fpv camera   |
+|    |    | pixhawk mini(?)   | raspi   |    |
+|    | dji   | naza m lite   |  fpv camera  |    |
+|    |    |    |follding    |  -  |
+|    |    |  -  |  -  |  -  |
+|    | jti   | pixhawk   | -   | -   |
+|    |    |    |  -  |  -  |
+|    |  sky (흰색) |  naze32   | camera   |  -  |
+|    |    | cleanflight   |  -  | -   |
+|    | Darl   | spracing f3 6dot   |    |    |
+|    |    |    |    |    |
+| RC   | Devention   |  -  |  -  | -   |
+|    |    |  devo F12e (black)  |  -  |  -  |
+|    |  radiolink  |  -  |   - |  -  |
+|    |    |    | -   |  -  |
+|    |  shanwan  |  os3  |  for jetbot  |    |
+|    |    |    |    |    |
+| Module   | LORA Gateway   |  -  |  -  |  -  |
+|    | Lora Shield   | -   |  -  | -   |
+|    | Arduino mono   |  -  |  -  |  -  |
+|    | Arduino wifi   |  -  |  -  |  -  |
+|    |  Raspi 4  |    |    |    |
+|    |    |    |  -  |  -  |
+|    |    |    | -   |  -  |
+|  Board  | Jetson nano   |    |  -  |  -  |
+|    |    |    |   - |  -  |
+|    |  Jetson AGX Xavier  |    |  -  |  -  |
+|    |    |    |  -  |   - |
+|  Sensors  | Ambient   |  temp  |  humid  |  -  |
+|    | 3d camera   |  usb  |  -  |  -  |
+|    | IR   | 5cm   |  -  |  -  |
+|    |    |    |  -  |   - |
+| Parts   | Uart   |  2  | -   | -   |
+|    |    |    |  -  |  -  |
+|    |    |    |  -  |   - |
+|    |    |    | -   |  -  |</p>
+:ET

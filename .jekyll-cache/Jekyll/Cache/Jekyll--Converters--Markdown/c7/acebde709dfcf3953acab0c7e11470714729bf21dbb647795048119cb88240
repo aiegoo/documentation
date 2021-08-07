@@ -1,0 +1,80 @@
+I"�<h2 id="shortcuts">ShortCuts</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Main Screen
+F2 - FlightData
+F3 - FlightPlanner
+F4 - Tuning
+F5 - Refresh full param list
+Control-F - Temp screen
+Control-T - Blind connect
+
+FlightData
+Control-1 - tab 1
+Control-2 - tab 2
+Control-3 - tab 3
+Control-4 - tab 4
+Control-5 - tab 5
+Control-6 - tab 6
+Control-7 - tab 7
+Control-8 - tab 8
+Control-9 - tab 9
+Control-0 - tab 10
+
+FlightPlanner
+Control-Z - undo
+Control-O - open wp file
+Control-S - save wp file
+
+AutoWP Grid
+Control-O - open grid file
+Control-S - save grid file
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">frame</td>
+      <td> </td>
+      <td style="text-align: center">FC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">motor</td>
+      <td> </td>
+      <td style="text-align: center">ESC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">RC</td>
+      <td> </td>
+      <td style="text-align: center">mode</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">weight</td>
+      <td> </td>
+      <td style="text-align: center">class</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">battery</td>
+      <td> </td>
+      <td style="text-align: center">air-time</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">configurator</td>
+      <td> </td>
+      <td style="text-align: center">last updated</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+:ET

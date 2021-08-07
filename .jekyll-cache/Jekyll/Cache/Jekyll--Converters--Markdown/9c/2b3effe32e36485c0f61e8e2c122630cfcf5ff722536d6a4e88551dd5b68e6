@@ -1,0 +1,1481 @@
+I" ^<h2 id="aiot-raspi-project-overview">AIOT RASPI project overview</h2>
+<ul>
+  <li>Arduino ESP8266 drone</li>
+  <li>Raspberry Pi integration</li>
+</ul>
+
+<h2 id="ch3-final-preparation">Ch3. Final preparation</h2>
+<ul>
+  <li>ESP8266 connection</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pin: Function</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RX: It receives data VCC: Power pin (usually 3.3V maximum) GPIO 0: General purpose input output pin 0 RESET: It is a reset</td>
+      <td>pin CH_PD: Chip power down pin GPIO 2: General purpose input output pin 2 TX: It transmits data GND: Ground pin</td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126641477-3bc0c033-38ab-4a84-893b-a47092f751ff.png" alt="image" /> <img src="https://user-images.githubusercontent.com/42961200/126852021-ba3063bc-3843-4201-ba02-72dc593344de.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>RX - 3, TX - 2, VCC - 3V, CH_PD - 3V</td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126641671-b3497384-d728-47d6-98cf-83c39fff7282.png" alt="image" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>adding blynk library to Sketch/Include Library of IDE
+<a href="https://github.com/blynkkk/blynk-library/releases/tag/v1.0.1">libr_git</a></li>
+</ul>
+
+<div style="max-wdith: 400px;">
+  <p>
+  <img alt="greenlight" src="https://user-images.githubusercontent.com/42961200/126643172-bf3dfe3d-9004-4427-a7bf-d62723bd94b1.png" style="width: 200px; max-width: 80%; margin-left: 200px;" />
+  </p>
+</div>
+
+<ul>
+  <li>follow these steps below for initial setup
+    <ul>
+      <li>From the app, 1. Enter a project name, 2. Choose a device.</li>
+      <li>You will receive an email assoicated with the app’s account  and also the same auth token can be found in the project settings.
+<a href="41uIJwHrV-gCNsBJN1Tk8LqRE7-UpYXW">token</a>
+<img src="https://user-images.githubusercontent.com/42961200/126847091-d6a93678-b3c1-4861-9bc8-c466abee343d.png" alt="image" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="ch2-assembling">Ch2. Assembling</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>- connections</td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126628827-9d2e2567-866c-4126-9a50-dad6b6f5dabc.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- 8 types of pins on ardupilot</td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126629293-56a5a510-b8b3-47c5-94c2-7a6543a087d2.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- cable from ESC</td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126629604-4f843265-b74d-4e0b-9eb3-7a759ea80b84.png" alt="image" /> (Signal/Power/Ground)</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>sensors of sonar, airspeed, voltage/current, compass</li>
+  <li>GPS for position holding, waypoints navigations</li>
+  <li>MUX for UART0, UART2, I2C, OSD</li>
+  <li>mode types</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>- RC mode types</td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126630838-4c1332c5-683b-41e9-9f9b-3e3f9e7ffed3.png" alt="image" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>receiver connection</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pin 1: Roll/aileron Pin 2: Pitch/elevator Pin 3: Throttle Pin 4: Yaw/rudder Pin 5: Auxiliary channel 1 (for example, mode switch) Pin 6: Auxiliary channel 2</td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126631175-c8ff7618-c2ca-4b1f-b4d1-32237f0221a5.png" alt="image" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="binding-transmitter-to-the-receiver">Binding transmitter to the receiver</h3>
+<ol>
+  <li>
+    <p>You can bind your transmitter with at least the following things. Note taht the binding process differs from teh RC receiver’s model to model. (binding cable, esc, servo motor, battery)</p>
+  </li>
+  <li>
+    <p>Connect the binding cable to rc receiver on the BAT pinor B/VCC</p>
+  </li>
+  <li>
+    <p>Tane an ESC to connect the signal, 5V and ground. (Remember, the outer pin of a row is for the ground, the middle pin is for 5V, and the inner pin is for the signal.)</p>
+  </li>
+</ol>
+
+<h3 id="aero-dynamics">Aero-dynamics</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TAu, vector product of force (F), distance (r)</td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126632875-860a1985-a54e-4cb3-b5c4-cb86ac7a0ccd.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>0 is the angle between force and distance from the center of axis</td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126632924-71eb802d-494c-4de6-8011-6112b66b00b1.png" alt="image" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>thrust is the product of pressure (P) and area (A), Thrust = P x A</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126633487-c13da5f6-a842-440e-b5fa-5eebfe8a360d.png" alt="image" /></td>
+      <td><img src="https://user-images.githubusercontent.com/42961200/126633341-757efd61-f18c-4177-99c7-6fe787234a0b.png" alt="image" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Thrust (T) will be proportional to the square of the angular velocity (w) of the propellers. The thrust is perpendicular to the Z direction of the drone.</p>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126633753-52ef95b0-4d27-4c53-8c6c-cf4812064854.png" alt="image" /></p>
+
+<h3 id="hovering">Hovering</h3>
+<p><img src="https://user-images.githubusercontent.com/42961200/126633873-c32409ff-3331-40c3-a29c-55b609bb10c3.png" alt="image" /></p>
+
+<h3 id="rising">Rising</h3>
+<p><img src="https://user-images.githubusercontent.com/42961200/126633936-52db4f92-8b2b-4661-8d9c-7bf787cdeb90.png" alt="image" /></p>
+
+<h3 id="dropping">Dropping</h3>
+<p><img src="https://user-images.githubusercontent.com/42961200/126633984-262e3862-76d3-4652-bc95-98b4b90332ad.png" alt="image" /></p>
+
+<h3 id="yaw">Yaw</h3>
+<p>Yaw is the motion of the drone in the xy plane, or the horizontal plane as shown in the previous figure. The opposite kind of pair of propellers will create reaction movements. If the sum of all the movements of each propeller is equal to each other, then there is no yaw motion. But if there is difference movements between any pair of propellers, there will be yaw motion, and the drone will move, as shown in the following figure:
+<img src="https://user-images.githubusercontent.com/42961200/126634068-327c6d35-0b3b-4da8-beeb-0a5b8bd12559.png" alt="image" />
+<img src="https://user-images.githubusercontent.com/42961200/126634226-949aae09-6bda-4fab-b780-ff69c6cf9b78.png" alt="image" /></p>
+
+<h3 id="pitch-and-roll">Pitch and roll</h3>
+<p>The pitch is the rotation of the drone in the Y direction, while the rotation along the X direction is known as roll or vice versa, depending on the front of the drone. This will happen if one pair of opposite propellers provide, thrust more than the other two propellers.</p>
+
+<h2 id="ch1-background-concept">Ch1. Background concept</h2>
+<p><a href="https://onofflinkinc.slack.com/files/UHPPRAQD7/F028EF6JBHD/arduinoesp8266drone.pdf">packt_book</a></p>
+
+<p>$\displaystyle \frac{\partial f}{\partial x}$  <img src="https://render.githubusercontent.com/render/math?math=x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}" /></p>
+
+<p><a href="https://www.mathcha.io/editor">math-writing</a></p>
+
+<p>\begin{equation<em>}
+\left(\frac{xdx}{dy} -\frac{ydy}{dx}\right)^{2} \ ,\ [\vec{F} =m\vec{a}] \ ,\ \left| \frac{a}{b}\right| \ \left\Vert \frac{a}{b}\right\Vert \ \left&lt; \frac{a}{b}\right&gt; \left{\sqrt{a+\sqrt{a+\sqrt{a}}}\rightarrow \infty \right}
+\end{equation</em>}</p>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126624695-d4f7211d-73aa-4bb4-9295-9c63396e86f7.png" alt="image" /></p>
+
+<blockquote>
+  <p>If P is the payload capacity of your drone (how much your drone can lift. I’ll explain how
+you can find it), M is the number of motors, W is the weight of the drone itself, and H is the
+hover throttle % (will be explained later). Then, our thrust of the motors T will be as
+follows:</p>
+</blockquote>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126624917-601fbb85-7077-40ba-ae4d-a2d106c0df30.png" alt="image" /></p>
+
+<blockquote>
+  <p>The drone’s payload capacity can be found with the following equation:</p>
+</blockquote>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126625107-73fa86fe-4af3-4558-b7ca-9cf06f77af22.png" alt="image" /></p>
+
+<ul>
+  <li>FCs on the market</li>
+</ul>
+
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gi">+KK 2.0
+</span><span class="gd">-CC3D
+</span><span class="gi">+Naze32
+</span><span class="gd">-KISS
+</span><span class="gi">+ArduPilot
+</span><span class="gd">-Vector
+</span><span class="gi">+3DR Pixhawk
+</span><span class="gd">-DJI Naza M
+</span><span class="gi">+LUX flight controller
+</span><span class="gd">-DJI A3
+</span></code></pre></div></div>
+
+<ul>
+  <li>battery
+ If the current is I, battery capacity is C, and discharge rate is D, then the instantaneous current draw is<code class="language-plaintext highlighter-rouge">I = C X D</code></li>
+</ul>
+
+<blockquote>
+  <p>5000mAh with discharging rate of 10C would be ` I = 5.0 x 10 = 50A`</p>
+</blockquote>
+
+<div class="seriesContext">
+    <a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </a>
+    &nbsp;
+    <div class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Jump to: <span class="caret"></span></button>
+        <ol class="dropdown-menu">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_rostopic.html">ROS topic for micro control</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo1.html">Series demo 1</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo2.html">Series demo 2</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_challenger-project.html">Challenger Engineering Project</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_commenting_on_files.html">pixhawk tools</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo3.html">Series demo 3</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="mydoc_seriesdemo4.html">Series demo 4</a>
+            </li>
+            
+            
+            
+            
+            
+            <li class="active"> → 4. 🔭raspberry pi project</li>
+            
+            
+            
+            
+            
+            
+            
+        </ol>
+    </div>
+</div>
+
+:ET

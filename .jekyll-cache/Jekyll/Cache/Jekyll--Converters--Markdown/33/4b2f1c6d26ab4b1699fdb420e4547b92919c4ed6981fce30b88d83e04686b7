@@ -1,0 +1,230 @@
+I"�!<h2 id="pixhawk-lite">Pixhawk lite</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">frame</td>
+      <td> </td>
+      <td style="text-align: center">FC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">motor</td>
+      <td> </td>
+      <td style="text-align: center">ESC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">RC</td>
+      <td> </td>
+      <td style="text-align: center">mode</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">weight</td>
+      <td> </td>
+      <td style="text-align: center">class</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">battery</td>
+      <td> </td>
+      <td style="text-align: center">air-time</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">configurator</td>
+      <td> </td>
+      <td style="text-align: center">last updated</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mission-planner-connection">mission planner connection</h2>
+
+<h3 id="gps-lsm3030-and-sat-list">GPS LSM3030 and sat list</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">COMPASS_DEV_ID</th>
+      <th style="text-align: left">131594</th>
+      <th style="text-align: left">SPI</th>
+      <th style="text-align: left">1</th>
+      <th style="text-align: left">2</th>
+      <th style="text-align: left">LSM303D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">COMPASS_DEV_ID2</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COMPASS_DEV_ID3</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COMPASS_DEV_ID4</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COMPASS_DEV_ID5</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COMPASS_DEV_ID6</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COMPASS_DEV_ID7</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COMPASS_DEV_ID8</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COMPASS_PRIO1_ID</td>
+      <td style="text-align: left">131594</td>
+      <td style="text-align: left">SPI</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">LSM303D</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COMPASS_PRIO2_ID</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COMPASS_PRIO3_ID</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">INS_ACC_ID</td>
+      <td style="text-align: left">1246218</td>
+      <td style="text-align: left">SPI</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">ACC_MPU6000</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">INS_ACC2_ID</td>
+      <td style="text-align: left">1114634</td>
+      <td style="text-align: left">SPI</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">ACC_LSM303D</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">INS_ACC3_ID</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">INS_GYR_ID</td>
+      <td style="text-align: left">2163722</td>
+      <td style="text-align: left">SPI</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">GYR_MPU6000</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">INS_GYR2_ID</td>
+      <td style="text-align: left">2228490</td>
+      <td style="text-align: left">SPI</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">GYR_L3GD20</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">INS_GYR3_ID</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">MOT_BAT_IDX</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">UNKNOWN</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="sunnysky-x3108s-motors">Sunnysky x3108s motors</h2>
+
+<blockquote>
+  <p>description</p>
+</blockquote>
+
+<p>SunnySky X3108S KV720 brushless out runner motor designed specially for multirotors. Recommended to use on a multirotor that weights maximum 520 grams multiplied the number of motors on the aircraft. Recommended battery: 3S-4S LiPo Recommended ESC: 20A or 30A Recommended prop: 10x3.8, 11x4.7, or 12x3.8 inch Test data and product images:     Warranty SunnySky motors sold by Buddy RC are manufactured by using quality materials and built to last. The motors are covered by a two year limited warranty against defects in materials and workmanship. Motor bearings, shafts, and propeller adapters are normal wear parts, and as such, need to be maintained and changed periodically. Therefore these parts are not covered by the two year warranty, nor any subsequent damage caused to the motor or aircraft by these wear parts. For maximum life, we suggest to install motors and accessories properly, and put a small drop of oil on each bearing every 10 flights. If phenomena of motor vibration, shaking, roughness, or notches in bearings are observed after a period of use, it is suggested to replace motor bearings immediately. It is the responsibility of the pilot to ensure that the bearings are maintained properly and periodically. For the best overall combination of performance, quality, and value, use SunnySky brushless motors in your aircraft</p>
+
+<blockquote>
+  <p>esc types according to the ardupilot documentation</p>
+</blockquote>
+
+<p>Normal (standard PWM 1000uS - 2000uS pulse widths)
+Oneshot
+Oneshot125 (PWM pulse widths divided by 8)
+DShot150 at 150kbaud (recommended)
+DShot300 at 300kbaud
+DShot600 at 600kbaud (recommended)
+DShot1200 at 1200kbaud
+Bi-directional DShot at 150, 300, 600 and 1200kbaud on supported firmware</p>
+
+<p><a href="https://ardupilot.org/copter/docs/common-dshot.html">ardupilot</a></p>
+
+:ET

@@ -1,0 +1,1846 @@
+I"Rr<h2 id="dron-id-research-pdf">Dron ID research <a href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:daac1ad7-e106-49f5-8596-63d535fcdb63">pdf</a></h2>
+
+<ul>
+  <li>usa</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">단계</th>
+      <th style="text-align: left">내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: left">• 드론과 조종자 간의 거리가 최대 122m(400ft) 이내 가시권 내 비행 •14 CFR Part 101 준수하는 드론(일부 제외) •ATC 관리하에 운영되는 드론 •FAA에 의해 식별 및 추적이 면제되는 드론</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">•0 2 3 단계에 속하지 않는 드론 •14 CFR Part 107에 속하는 드론</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">•비가시권 비행 드론 • 14 CFR Part 107에서 정의한 최대고도 이상에서비행하는 드론 • 보호되지 않는 사람에게 운영되는 드론</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">• 무게가 25kg 이상이고 비가시권 내 비행하는 드론 • IFR 조건에서 동작하는 드론 • 통제된 공역에서 비행하는 드론</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL0</td>
+      <td style="text-align: left">• 최대 이륙 중량 250g 이하 • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • 드론 원격 식별 불필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL1</td>
+      <td style="text-align: left">• 최대 이륙 중량 900g 이하(운동에너지 80J 이하) • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL2</td>
+      <td style="text-align: left">• 최대 이륙 중량 4kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시  통신 복구 기능 또는 안전한 비행 종료 기능 필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL3</td>
+      <td style="text-align: left">• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시 통신 복구 기능 또는 안전한 비행 종료 기능 필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL4</td>
+      <td style="text-align: left">• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 및 속도 제한 없음</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>EU</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">클래스</th>
+      <th style="text-align: left">주요 특징</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">CL0</td>
+      <td style="text-align: left">• 최대 이륙 중량 250g 이하 • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • 드론 원격 식별 불필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL1</td>
+      <td style="text-align: left">• 최대 이륙 중량 900g 이하(운동에너지 80J 이하) • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL2</td>
+      <td style="text-align: left">• 최대 이륙 중량 4kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시  통신 복구 기능 또는 안전한 비행 종료 기능 필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL3</td>
+      <td style="text-align: left">• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시 통신 복구 기능 또는 안전한 비행 종료 기능 필요</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">CL4</td>
+      <td style="text-align: left">• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 및 속도 제한 없음</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="구술시험">구술시험</h2>
+
+<h3 id="요약-사항">요약 사항</h3>
+
+<h3 id="제원표">제원표</h3>
+
+<blockquote>
+  <p>기체 제원</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>모델</td>
+      <td>형식명: 무인멀티콥터 /인투스카이 /한국</td>
+      <td>형식: E615s -ED</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>📏</td>
+      <td>치수: 가로 1723, 세로 1723, 높이 560</td>
+      <td>접었을때: 가로 1000, 세로 1000, 높이 560</td>
+      <td>순항속도: 3-5m/s, 최대 7m/s</td>
+    </tr>
+    <tr>
+      <td>⚖️</td>
+      <td>중량: 19kg</td>
+      <td>이륙중량: 26kg</td>
+      <td>탑재 중량: 7kg(l)</td>
+    </tr>
+    <tr>
+      <td>🔋</td>
+      <td>배터리: 22.2v 1600mAh * 2</td>
+      <td>🦼  모터수: 하비윙 X8 (8120) brushless motor x 6</td>
+      <td>🖥️ 프로펠러: 30인치 (3090), FC: K3A pro</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>비행 실기 항목</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>비행전</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1. 비행전 전검</td>
+      <td>밧데리 점검, 밧데리 장착, 기체점검, 조정기 점검, 조정기 전원 온, 기체 전원 온,</td>
+      <td>프랍파손, 고정, 마운트, 회전, 암대, GPS/안테나 위치 고정 이상무, main frame, landing skid 고정 이상무,  🥇 (조정기 점검)  스틱 및 gps 토클 스위치 이상무,  조정기 전원 온,  조정기 전압 6.5V 이상 무, 기체 전원 온                    🥇  5미터 안전거리 이동, gps 조작후 수신 이상무, 비행전 점검 이상 무</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>비행장 점검</td>
+      <td>풍향, 풍속, 시정, 좌측 전방 우측 사람 및 장애물 이상무, 이륙전 점검 이상무</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2. 기체의 시동</td>
+      <td>시동</td>
+      <td>프랍회전 이상 무, 4미터 이륙</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3. 이륙 및 비행 조작</td>
+      <td>이륙후 기체점검  정지 호버링 실시</td>
+      <td>엘러베이터, 에일러런, 러더 이상무 (정지), 🥇  호버링 위치로 (정지), 좌측면 호버링 (정지), 우측면 호버링 (정지), 기체정렬 (정지)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>전진/후진 비행, 삼각비행,</td>
+      <td>전진 비행 (정지), 후진 (정지), 기체 정렬, 🥇 삼각비행 위치로(정지) 상승 (정지) 하강 (정지), 호버링 위치로 (정지),</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>원주 비행</td>
+      <td>원주 비행 위치로 (정지), 좌측면 호버링 (정지), 원주 비행실시 (정지), 기체 정렬 (정지)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>비상착륙, 정상 접근 및 착륙</td>
+      <td>비상착륙 실시 2미터 상승 “비상!” 착륙, 프롭 정지 확인, 🥇 정상접근 및 착륙 , 자세모드 변환, 시동, 프롭 회전 이상무, 이륙, (정지), 착륙장 위치로 (정지), 착륙 - 프롭 정지 확인</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>측풍 접근 및 착륙</td>
+      <td>(측풍 접근 및 착륙) GPS 전환, 변경 확인, 시동, 프롭 회전 이상무, 이륙 4미터 상승 (정지), 측풍 위치로 (정지), 우측면 호버링 (정지), 착륙장 위치로 (정지), 기체 정렬 (정지), 착륙 (시동 오프)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4. 비행후 기체 점검</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>5.  일반/공역</td>
+      <td>6. 비상 조치 및 조정자 사항</td>
+      <td>7. 과태료 표</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="기체-및-공역-등">기체 및 공역 등</h3>
+
+<blockquote>
+  <p>행정적 사항</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>자격증 명칭</th>
+      <th>초경량비행장치 무인멀티콥터 조종자  (1종: 25초과-150kg 🏋️ 2종: 7초과-25kg 🏋️ 3종: 2초과-7kg 🏋️ 250g)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>비행시 필수 휴대서류</td>
+      <td>운전면허증, 조종자 자격증, 비행기록부, 비행승인서, 기체신고서, 안전성인증서(25KG초과시)</td>
+    </tr>
+    <tr>
+      <td>비행승인신청</td>
+      <td>각 지역 지방항공청 - 3일전 드론 원스톱 사이트</td>
+    </tr>
+    <tr>
+      <td>비행금지구역</td>
+      <td>P72 A,B-청와대인근 (2NM), P518 -휴전선인근                             P61 -고리원전(부산기장), P62 -월성원전(경북경주),                            P63 - 한빛원전(전남영광)  P64 -한울원전(경북울진),                          P65 - 원자력연구소(대전), 관제권/관제구 150m</td>
+    </tr>
+    <tr>
+      <td>비행제한구역</td>
+      <td>R75 - 수도권</td>
+    </tr>
+    <tr>
+      <td>관제권</td>
+      <td>관제탑으로 부터 반경 9.3km 공역</td>
+    </tr>
+    <tr>
+      <td>관제구</td>
+      <td>수면 또는 지면으로 부터 200m 이상 상공</td>
+    </tr>
+    <tr>
+      <td>지역별 지방항공청</td>
+      <td>서울지방항공청 - 서울, 경기, 인천, 강원, 충청, 전북             🏙️                부산지방항공청 -  전남, 경상, 울산, 부산     🏙️                                     제주지방항공청 - 제주</td>
+    </tr>
+    <tr>
+      <td>비행장치신고</td>
+      <td><code class="language-plaintext highlighter-rouge">자체중량 --&gt; 이륙중량</code> 12kg 초과시, 사업용은 12kg이하도 신고</td>
+    </tr>
+    <tr>
+      <td>안전성인증검사와 종류</td>
+      <td>최대이륙중량 25kg 초과                                                             초도검사(처음) , 정기검사, 수시검사, 재검사  (항공안전 기술원</td>
+    </tr>
+    <tr>
+      <td>항공촬영신청</td>
+      <td>7일전 국방부에 신청 - 드론 원스톱 사이트</td>
+    </tr>
+    <tr>
+      <td>기타 관할청</td>
+      <td>지방항공청 : 장치신고, 사업등록, 비행승인  👍 교통안전공단: 조정자격증명  👍 국방부/수방사 : 항공촬영</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="비상-조치-및-기체에-관한-사항-등">비상 조치 및 기체에 관한 사항 등</h3>
+<blockquote>
+  <p>기체 및 운영</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>인명사고시 신고해야 하는 곳</th>
+      <th>119, 경찰서, 지방항공청, 항공철도사고위원회</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>비상시 조치요령</td>
+      <td>주변에 ‘비상’이라고 외친후 인명이나 시설에 피해가 가지않는 장소로 빨리 착륙시킨다.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>이륙시 기체결함 발견</td>
+      <td>주변에 ‘비상’이라고 외친후 바로 착륙하여 기체를 점검한다.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>비행중 GPS 미수신시</td>
+      <td>주변에 ‘비상’ 상황을 알린 후 ATTI 모드로 전환하여 인명이나 시설에 피해가 가지 않는 장소로 착륙시킨다.  ATTI 모드로도 조종이 불가능해지면 사람이 없는 장소에 최대한 빨리 착륙 또는 추락시킨다.</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>노탐(NOTAM)</td>
+      <td>항공고시보, 안전운항을 위한 각종 항공정보를 수록 - 최대 기간 3개월</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>AIP</td>
+      <td>항공정보간행물로 비행에 관련된 일반사항, 항공로, 비행장 정보등을 수록 - 영구적인 성격</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>멀티콥터의 분류</td>
+      <td>프로펠러 개수로 구분                                                               4개 -쿼드코터, 6개 -헥사콥터, 8개 - 옥토콥터,                                       10 - 데카콥터, 12개 -도데카콥터</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>항공기에 작용하는 힘</td>
+      <td>양력, 중력, 추력, 항력</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>센서의 종류</td>
+      <td>🌱 자이로 센서 -각속도 측정, 기체의 자세를 잡아줌                                   🌱 기압계 센서 - 기압측정으로 고도측정                                            🌱 가속도 센서 - 자이로센서와 함께 각속도 측정                              🌱 지자계 센서 - 지구자기장을 이용, 방위각 측정                              GPS - 위치측정</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>IMU(관성측정장치)</td>
+      <td>기체의 기울어짐과 움직임을 감지하여 균형을 잃지 않도록 하는 장치. 자이로센서, 기압계센서, 가속도센서</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>고홈기능</td>
+      <td>조종기의 고홈 키를 이용하여 키를 작동하였을 경우 지정된 장소로 이동하거나 이륙지점으로 이동하게 하는 기능</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>페일 세이프</td>
+      <td>조종기와 기체의 연결이 끊긴 경우 기체가자동으로 안전하게 이륙지점으로 찾아와 착륙하게 하는 기능</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>변속기</td>
+      <td>FC에서 계산해 보낸 값을 각 모터에 전달해주는 장치</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>GPS모드와 ATTI 모드의 차이</td>
+      <td>GPS 모드 - 위치정보를 받아 기체의 위차와 자세를 유지함.                 ATTI 모드 - 기체의 수평만 유지(방향은 유지하지 않음)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>비행원리</td>
+      <td>✈️ 전진 - 후방모터 증속, ✈️후진 - 전방모터 증속                                    ✈️우측이동 - 좌측모터 증속, ✈️좌측이동 - 우측모터 증속                               ✈️ 좌선회- 회전모터 증속(짝수모터), ✈️우선회-좌회전모터 증속(홀수모터)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>배터리 취급시 주의사항</td>
+      <td>상온 보관, 습기가 많은 지역 보관 금지,                                          🦺       셀간 전압 차이가 심한 경우 사용금지,  🦺 충격주의                                  🦺    외관이 변형된 배터리 사용금지,                                                    🦺       장기보관시 40~60% 상태로 방전후 보관</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>피치</td>
+      <td>프로펠러가 1회전 했을 때, 이동하는 거리 (인치로표시)</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>KV</td>
+      <td>모터에 1V의 전압을 주었을 때, 1분간 회전하는 수</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>헬리콥터와 멀티콥터의 차이</td>
+      <td>헬리콥터 - 단축 변동피치                                      🚁                     멀티콥터 - 다축, 고정피치</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>비행금지 기상조건</td>
+      <td>눈, 비, 안개, 우박, 뇌우, 번개, 강풍</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>조종자 준수사항</th>
+      <th>인명이나 재산에 피해를 줄수 있는 낙하물 투하금지   인구밀집지역이나 사람이 많은 곳에 인명이나 재산에 피해를 줄수 있는 비행금지          일몰 후 일출전 까지 비행금지(야간비행금지)      관제공역, 통제공역, 주의공역 비행금지     육안으로 식별 할수 있는 거리까지만 비행         음주비행금지</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="과태료-표">과태료 표</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>위반행위</td>
+      <td>과태료</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>1차</td>
+      <td>2차</td>
+      <td>3차</td>
+    </tr>
+    <tr>
+      <td>안전성 인증을 받지 않고 비행한 경우</td>
+      <td>250</td>
+      <td>375</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>보험 미가입후 사업을 한 경우</td>
+      <td>50</td>
+      <td>250</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>기체신고, 변경, 말소신고를 하지 않고 비행한 경우</td>
+      <td>50</td>
+      <td>250</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>조종자 증명없이 비행한 경우</td>
+      <td>150</td>
+      <td>225</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>조종자 준수사항 위반</td>
+      <td>100</td>
+      <td>150</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>승인받지않은 야간비행</td>
+      <td>100</td>
+      <td>150</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>고도,관제,통제,주의공역 비행위반</td>
+      <td>50</td>
+      <td>75</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>신고표시위반, 허위신고</td>
+      <td>50</td>
+      <td>75</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>사고에 관한 보고를 하지 않거나 허위로 한 경우</td>
+      <td>15</td>
+      <td>22.5</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/126898188-8746e92a-ae0f-4131-a889-990799bb7e0b.jpg" alt="correction" />
+<img src="https://user-images.githubusercontent.com/42961200/122031221-78b3aa00-ce09-11eb-86bd-9b437c63bc27.png" alt="image" /></p>
+
+<p>for more details of aeronautic journals and my course works <a href="https://github.com/aiegoo/drone-eggs/wiki">clickhere</a></p>
+
+<h2 id="commynity-guideline">Commynity guideline</h2>
+<p><a href="https://www.flickr.com/help/guidelines">Flickr</a>
+<a href="https://www.drupal.org/dcoc">Drupal</a></p>
+<p>The following pages and posts are tagged with <button type="button" style="cursor: default" class="btn btn-default navbar-btn" onclick="location.href='https://github.com/aiegoo/documentation/settings/access'"></button></p>
+<table><thead><tr><th>Title</th><th>Type</th><th>Excerpt</th></tr></thead>
+    <tbody>
+    
+  
+    
+   
+    
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+   </tbody>
+</table>
+
+:ET

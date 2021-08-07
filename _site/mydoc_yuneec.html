@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="yuneec">
+<meta name="keywords" content="feature_dronerealsense,  drone improvement">
+<meta name="theme-color" content="#72ac4a" />
+<title>Yuneec experience | Tonylee Project Showcase</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-green.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="aiegoo.github.io/feed.xml">
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"><img src="images/tony_doc.svg" style="width: 117px; max-width: 12%;"> My Project Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://github.com/aiegoo/portfolio/wiki" target="_blank" rel="noopener">GitHub</a></li>
+                
+                
+                
+                <li><a href="news">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xaas<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/en" target="_blank" rel="noopener">o-lora</a></li>
+                        
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/admin" target="_blank" rel="noopener">o-lora/admin aiegoo/</a></li>
+                        
+                        
+                        
+                        <li><a href="http://159.65.8.38:10024/blog" target="_blank" rel="noopener">o-lora/blog</a></li>
+                        
+                        
+                        
+                        <li><a href="http://idratherbewriting.com/category-jekyll/" target="_blank" rel="noopener">Jekyll on my blog</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xaas 2<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="mydoc_introduction.html">Conference call</a></li>
+                        
+                        
+                        
+                        <li><a href="p1_landing_page.html">LasVegas CES</a></li>
+                        
+                        
+                        
+                        <li><a href="p2_landing_page.html">Autonomous drone</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="https://aiegoo.github.io/portfolio">portfolio wiki</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Yuneec experience">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">my portfolio 1.0</li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="Overview" href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a title="Get started" href="index.html">Get started</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="About this site" href="mydoc_aboutsite.html">About this site</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dotfiles" href="mydoc_supported_features.html">Dotfiles</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="About the author" href="mydoc_about.html">About the author</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="tl;dr" href="mydoc_support.html">tl;dr</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Automation" href="#">Automation</a>
+      <ul>
+          
+          
+          
+          <li><a title="Ansible" href="mydoc_ansible.html">Ansible</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Git webhook" href="mydoc_webhook.html">Git webhook</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bash pipeline" href="mydoc_pipeline.html">Bash pipeline</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Docker" href="mydoc_docker.html">Docker</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Gitlab" href="mydoc_gitlab.html">Gitlab</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="ROS, Serializer" href="#">ROS, Serializer</a>
+      <ul>
+          
+          
+          
+          <li><a title="Django restapi frameworks" href="mydoc_django.html">Django restapi frameworks</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Rostopic integration for GUI" href="#">+Rostopic integration for GUI</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="GUI overview" href="mydoc_rostopic.html">GUI overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="GCS-web" href="tag_gcs_web.html">GCS-web</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Rqt" href="tag_rqt.html">Rqt</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="webrtc" href="tag_webrtc.html">webrtc</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="mqtt" href="tag_mqtt.html">mqtt</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Gitlab-github actions" href="mydoc_actions.html">Gitlab-github actions</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="pipeline, heroku, mailchimps" href="mydoc_heroku.html">pipeline, heroku, mailchimps</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="others" href="mydoc_others.html">others</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Django frameworks" href="#">Django frameworks</a>
+      <ul>
+          
+          
+          
+          <li><a title="Oscar" href="mydoc_oscar.html">Oscar</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Raspi" href="mydoc_raspi.html">Raspi</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Lora" href="mydoc_lora.html">Lora</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Drone-gui" href="mydoc_drone.html">Drone-gui</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Content reuse" href="mydoc_content_reuse.html">Content reuse</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Collections" href="mydoc_collections.html">Collections</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="WebStorm editor tips" href="mydoc_webstorm_text_editor.html">WebStorm editor tips</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Atom editor tips" href="mydoc_atom_text_editor.html">Atom editor tips</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Node frameworks" href="#">Node frameworks</a>
+      <ul>
+          
+          
+          
+          <li><a title="Django+Vue" href="mydoc_djangovue.html">Django+Vue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Weather app" href="mydoc_weather.html">Weather app</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Chat app" href="mydoc_chatapp.html">Chat app</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bootstrap" href="mydoc_bootstrap.html">Bootstrap</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="lightup.co.kr/blog" href="mydoc_lightup.html">lightup.co.kr/blog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="lightup.co.kr/admin" href="mydoc_lightupadmin.html">lightup.co.kr/admin</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Racing drones" href="#">Racing drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="DaLrC215" href="mydoc_dalrc.html">DaLrC215</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-skyhero" href="mydoc_skyhero.html">Dev-skyhero</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="MiniCp04" href="mydoc_minicp.html">MiniCp04</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-Nazam 02" href="mydoc_devnazam.html">Dev-Nazam 02</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Xugong" href="xugong.html">Xugong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Labels" href="mydoc_labels.html">Labels</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Links" href="mydoc_hyperlinks.html">Links</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Navtabs" href="mydoc_navtabs.html">Navtabs</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Tables" href="mydoc_tables.html">Tables</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Syntax highlighting" href="mydoc_syntax_highlighting.html">Syntax highlighting</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Workflow maps" href="mydoc_workflow_maps.html">Workflow maps</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="APM drones" href="#">APM drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="pixhawk overview" href="mydoc_pixhwak_overview.html">pixhawk overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+rFlyeval CopterSim" href="#">+rFlyeval CopterSim</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Instrucdtions&&documentation" href="mydoc_commenting_on_files.html">Instrucdtions&&documentation</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Implementating Pixhawk Cube" href="tag_rfly_cube.html">Implementating Pixhawk Cube</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dev-Apmdr 01 / pixhawk lite" href="mydoc_apmdr.html">Dev-Apmdr 01 / pixhawk lite</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Cube black" href="mydoc_cube.html">Cube black</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="DJI drones" href="#">DJI drones</a>
+      <ul>
+          
+          
+          
+          <li><a title="Quad wookong" href="mydoc_quad.html">Quad wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S1000 wookong" href="mydoc_s1000.html">S1000 wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S1000 A2" href="mydoc_s100a2.html">S1000 A2</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S900 wookong" href="mydoc_s900.html">S900 wookong</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Nazam" href="mydoc_nazam.html">Nazam</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="iTerm profiles" href="mydoc_iterm_profiles.html">iTerm profiles</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pushing builds to server" href="mydoc_push_build_to_server.html">Pushing builds to server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Publishing on Github Pages" href="mydoc_publishing_github_pages.html">Publishing on Github Pages</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Feature drones" href="#">Feature drones</a>
+      <ul>
+          
+          
+          
+          <li class="active"><a title="Yuneec H" href="mydoc_yuneec.html">Yuneec H</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bebop Parrot" href="mydoc_bebop.html">Bebop Parrot</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jetbot rover" href="mydoc_jetbot.html">Jetbot rover</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="AGX Xavier rover" href="mydoc_xavier.html">AGX Xavier rover</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Vtol & flight data" href="mydoc_vtol.html">Vtol & flight data</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Schooling" href="#">Schooling</a>
+      <ul>
+          
+          
+          
+          <li><a title="My courses" href="mydoc_mycourse.html">My courses</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="ncs-ML/DL" href="mydoc_deeplearning.html">ncs-ML/DL</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="C++" href="mydoc_cplus.html">C++</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Web-scraping" href="mydoc_webscraping.html">Web-scraping</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Challenger project" href="mydoc_challenger-project.html">Challenger project</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="AIOT embedded projects" href="#">AIOT embedded projects</a>
+      <ul>
+          
+          
+          
+          <li><a title="Overview" href="tag_aiotoverview.html">Overview</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Intel Edison projects" href="#">+Intel Edison projects</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Detection serializer" href="tag_sensor_detection.html">Detection serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Realsense drone" href="tag_realsense.html">Realsense drone</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Edison Arduino" href="tag_edison_arduino.html">Edison Arduino</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collaboration pages" href="tag_collaboration.html">Collaboration pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Troubleshooting pages" href="tag_troubleshooting.html">Troubleshooting pages</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jetson nano" href="tag_jetson_nano.html">Jetson nano</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="+Jetson Xavier" href="#">+Jetson Xavier</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="project overview" href="tag_jetson_xavier.html">project overview</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Raspberry Pi projects" href="tag_raspi.html">Raspberry Pi projects</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Sensor serializer" href="tag_serializer.html">Sensor serializer</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Lora monitoring system" href="tag_lora_monitoring.html">Lora monitoring system</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Books" href="#">Books</a>
+      <ul>
+          
+          
+          
+          <li><a title="Fiction" href="mydoc_fiction.html">Fiction</a></li>
+          
+          
+          
+          <li class="subfolders subfolder-background">
+              <a title="Tag archive pages" href="#">Tag archive pages</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Formatting pages" href="tag_formatting.html">Formatting pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Navigation pages" href="tag_navigation.html">Navigation pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Content types pages" href="tag_content_types.html">Content types pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Publishing pages" href="tag_publishing.html">Publishing pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Special layout pages" href="tag_special_layouts.html">Special layout pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collaboration pages" href="tag_collaboration.html">Collaboration pages</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Troubleshooting pages" href="tag_troubleshooting.html">Troubleshooting pages</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Web-dev-ops" href="mydoc_webdev.html">Web-dev-ops</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="two scoops of django" href="mydoc_twoscoops.html">two scoops of django</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="presentation" href="books_revealjs.html">presentation</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="more to come" href="">more to come</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="drone companies" href="mydoc_contact.html">drone companies</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+     
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+       
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Yuneec experience</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">yuneec</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<details>
+  <summary>
+    <div id="toc"></div></summary>
+</details>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/pages/mydoc/mydoc_yuneec.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <h2 id="yuneec-h-and-intel-intellisense-sensors">Yuneec H and Intel Intellisense sensors</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="yuneeccgoet.pdf">cgoet-manual</a></td>
+      <td><a href="Yuneec_Maintenance_Guide.pdf">mainteanance</a></td>
+      <td><a href="yuneecH-manual.pdf">pilot-manual</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+      <th style="text-align: center">Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">frame</td>
+      <td> </td>
+      <td style="text-align: center">FC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">motor</td>
+      <td> </td>
+      <td style="text-align: center">ESC</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">RC</td>
+      <td> </td>
+      <td style="text-align: center">mode</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">weight</td>
+      <td> </td>
+      <td style="text-align: center">class</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">battery</td>
+      <td> </td>
+      <td style="text-align: center">air-time</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">configurator</td>
+      <td> </td>
+      <td style="text-align: center">last updated</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>Overview</p>
+</blockquote>
+
+<p>Thermal imaging is of high-value for Solar Inspection, Law Enforcement, Fire Fighting, Search &amp; Rescue and Construction – the Typhoon H Thermal provides you with a low-cost, high-performance thermal system for these applications. The Yuneec Typhoon H Thermal combines the award winning Typhoon H Hexacopter with the CGOET thermal imaging and RGB camera. While the Typhoon H provides useful functions for commercial use, the CGOET provides not only thermal images, but also low-light capability, designed for monitoring in twilight or dark environments. Both thermal and RGB images are simultaneously recorded to separate streams for ease of playback and editing.</p>
+
+<blockquote>
+  <p>Typhoon H Hexacopter</p>
+</blockquote>
+
+<p>The proven Typhoon H is a safe Hexacopter system with 6 rotors. All 6 rotor arms can be folded for easy handling and compact transport of the copter. Thanks to the quick-release system, the assembly and disassembly of the propeller is easy and quick. Despite these simple actions, the high-performance propellers of the Typhoon H ensure agility, speed and direct implementation of control commands during flight. Thanks to the integrated 5-rotor mode, the copter switches from 6 to 5 rotors in the event of a rotor failure and can still be safely flown and landed. In addition, the Typhoon H has other security features, such as a manually adjustable virtual boundary that prevents the copter from flying too far or too close to you.</p>
+
+<blockquote>
+  <p>Autonomous flight modes allow you to recall pre-programmed tracking shots while focusing on the camera:</p>
+</blockquote>
+
+<p>Orbit Me: Typhoon H flies a circular path around you, keeping the camera trained on you the whole time.
+Point of Interest (POI): Select a subject and Typhoon H will orbit that subject autonomously.
+Journey Mode: Typhoon H will automatically go up and out, as far as 90 m, and capture the perfect aerial selfie.
+Follow Me / Watch Me: Follow Me ensures Typhoon H moves along with you. Watch Me tells Typhoon H to follow you while always pointing the camera at you wherever you go.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Curve Cable Cam: Easily program an invisible route for Typhoon H to fly along. Typhoon H will fly between pre-set coordinates while independently controlling camera position.
+Return Home: Simply switch to Home Mode and Typhoon H will return and land within 8 m of you.
+</code></pre></div></div>
+
+<blockquote>
+  <p>CGOET Thermal Imaging And Low-Light Camera</p>
+</blockquote>
+
+<p>The CGOET is an innovative combination of 3-axis gimbal, thermal imaging camera and low-light camera. While the thermal imaging camera selectively measures the temperature in the image enabling it to display relative temperature differences, the low-light RGB camera has a 20 times higher sensitivity than the human eye and can still take excellent shots even in low light conditions. Both images are streamed live on your remote control at the same time, and can be viewed separately as a picture-in-picture or as an overlay. The CGOET gimbal is capable of continuous 360° yaw axis rotation. This unique feature, when combined with the H520 retractable landing gear, provides the operator with continuous 360 unobstructed camera view and the ability to continuously pan the camera without yawing the airframe.</p>
+
+<blockquote>
+  <p>ST16 All-in-One Transmitter</p>
+</blockquote>
+
+<p>The ST16 Ground Station is an integrated transmitter, receiver and Android platform that gives you full control over Typhoon H, allowing you to easily program autonomous flight and capture stunning photos and videos. The large 7-inch integrated screen displays real-time footage of your flight, eliminating the need for an external device.</p>
+
+<blockquote>
+  <p>Scope Of Delivery</p>
+</blockquote>
+
+<p>The Typhoon H with CGOET includes: Typhoon H hexacopter, CGOET thermal imaging and low-light camera, ST16 remote control, 1 battery, user manual and accessories.</p>
+
+<blockquote>
+  <p>Everything At A Glance</p>
+</blockquote>
+
+<ul>
+  <li>Typhoon H with CGOET Thermal and RGB camera</li>
+  <li>Temperature measurement and display</li>
+  <li>Various color spectra allow an accurate visualization of heat sources</li>
+  <li>Adjustable temperature detection scale to focus on relevant areas</li>
+  <li>Gimbal mounted IR for smooth detection display</li>
+  <li>Large IR sensor detects greater detail in the dark than the human eye and is ideal for surveillance</li>
+  <li>Thermal and available light recorded simultaneously, so video is frame-accurate in playback with embedded timecode</li>
+  <li>Intel® RealSense™ technology with automatic obstacle and collision avoidance system availablable separatly</li>
+  <li>Including ST16 controller with integrated Android operating system</li>
+  <li>Diverse, versatile and intelligent flight modes (Orbit, POI, Journey, Curve Cable Cam, Follow Me, Return Home)</li>
+  <li>Quick and easy switching between individual applications</li>
+  <li>Increased flight safety thanks to the 5-rotor mode  – Flight safety is maintained even when automatically switching from 6 to 5 rotors whenever a motor fails</li>
+  <li>Retractable landing gear and arms for convenient transport</li>
+  <li>Cooling system for flights at high temperatures</li>
+  <li>Capable of flying even in strong winds</li>
+  <li>Team mode with Typhoon Wizard and ST16</li>
+  <li>Easy to maintain and handle</li>
+  <li>Small parts are available as spare parts</li>
+  <li>Compatible with the CGO3+ camera</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">DRONE:</th>
+      <th style="text-align: left">—————</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Dimensions:</td>
+      <td style="text-align: left">480 x 425 x 295 mm</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Weight:</td>
+      <td style="text-align: left">1,9 kg</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Battery:</td>
+      <td style="text-align: left">4S 14,8V 5400mAh LiPo</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Charger:</td>
+      <td style="text-align: left">SC4000-4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Remote Control:</td>
+      <td style="text-align: left">ST16</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Max. Flying Altitude:</td>
+      <td style="text-align: left">122 m (preset)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Max. Rate Of Ascent:</td>
+      <td style="text-align: left">5 m/s</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Max. Rate Of Descent:</td>
+      <td style="text-align: left">3 m/s</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Max. Rotation Angle:</td>
+      <td style="text-align: left">35°</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CAMERA:</td>
+      <td style="text-align: left">—————</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Camera Dimensions:</td>
+      <td style="text-align: left">81 x 108 x 138 mm</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Sensor:</td>
+      <td style="text-align: left">1/3″ 2M</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ISO Range:</td>
+      <td style="text-align: left">100 – 12800</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Shutter Speed:</td>
+      <td style="text-align: left">1/30 – 1/8000s</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Video Resolution:</td>
+      <td style="text-align: left">1920 x 1080p / 30 FPS</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Photo Format:</td>
+      <td style="text-align: left">JPEG, TIFF (14bit RAW)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Video Format:</td>
+      <td style="text-align: left">MP4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">FOV, diagonal:</td>
+      <td style="text-align: left">Low-light camera: 90° // thermal imaging camera: 71°</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">FOV, horizontal:</td>
+      <td style="text-align: left">Thermal imaging camera: 56°</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Sensitivity:</td>
+      <td style="text-align: left">&lt; 50 mK</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Thermal Imaging Camera:</td>
+      <td style="text-align: left">uncooled VOx microbolometer</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">LWIR Wave Length:</td>
+      <td style="text-align: left">8 – 14 μm</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Temperature Equalisation:</td>
+      <td style="text-align: left">automatic</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Temperature Measuring Range:</td>
+      <td style="text-align: left">-10° – 180°</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">REMOTE CONTROL:</td>
+      <td style="text-align: left">—————</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Operating System:</td>
+      <td style="text-align: left">Android™</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Number of Channels:</td>
+      <td style="text-align: left">16</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Controller Battery:</td>
+      <td style="text-align: left">3,6 V 8700 mAh 31,32 Wh Li-Ion</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Transmission Distance Range (Optimum Conditions):</td>
+      <td style="text-align: left">Up to 1,6 km</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Video Link Resolution:</td>
+      <td style="text-align: left">HD 720p</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Video Link Frequency Band:</td>
+      <td style="text-align: left">5,8 GHz WiFi</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Display Screen:</td>
+      <td style="text-align: left">7″</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Tactile and Audio Feedback:</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Telemetry Data on Screen:</td>
+      <td style="text-align: left">Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p>LED and Wizard status indicators</p>
+
+<blockquote>
+  <p>LED STATUS INDICATIONS DURING STARTUP</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Main LED Status Indicator</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>- Initialization failed</td>
+      <td>Pulses red (3 times per second)</td>
+      <td><code class="language-plaintext highlighter-rouge">initialization failed</code> <img src="https://user-images.githubusercontent.com/42961200/124340339-74e89b80-dbef-11eb-8962-d9c1b37ea50f.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- The Aircraft is in “Bind” Mode</td>
+      <td>Blinks orange very rapidly ( 10 times per second)</td>
+      <td><code class="language-plaintext highlighter-rouge">Bind mode</code> <img src="https://user-images.githubusercontent.com/42961200/124340354-86ca3e80-dbef-11eb-99a0-89c88204195e.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- The Aircraft is in a No-Fly Zone * * Please see the instrucion manual for more information regarding no-ﬂy zones</td>
+      <td>Blinks red and whilte rapidly (5 times per second)</td>
+      <td><code class="language-plaintext highlighter-rouge">no-fly zone</code> <img src="https://user-images.githubusercontent.com/42961200/124340359-96498780-dbef-11eb-95cd-43475f006769.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>LED STATUS INDICATIONS BEFORE/DURING FLIGHT</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Main LED Status Indicator</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>- The Aircraft is in Smart Mode with GPS lock</td>
+      <td>Glows sold green</td>
+      <td><code class="language-plaintext highlighter-rouge">smart mode</code>  <img src="https://user-images.githubusercontent.com/42961200/124341135-4a014600-dbf5-11eb-8c8e-2b2414f0ffc9.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- The Aircraft is in Smart Mode without GPS lock</td>
+      <td>Blinks green (3 times per second then off (for 1 second))</td>
+      <td><code class="language-plaintext highlighter-rouge">S without gps</code>  <img src="https://user-images.githubusercontent.com/42961200/124341161-6e5d2280-dbf5-11eb-81a7-572389c671af.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- The Aircraft is in Angle Mode with GPS lock</td>
+      <td>Glows solid purple</td>
+      <td><code class="language-plaintext highlighter-rouge">Angle mode w/GPS</code> <img src="https://user-images.githubusercontent.com/42961200/124341174-8634a680-dbf5-11eb-9031-0dd5f0486aac.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- The Aircraft is in Angle Mode without GPS lock</td>
+      <td>Blinks purple (3 times per second) then off (for 1 second)</td>
+      <td><code class="language-plaintext highlighter-rouge">A without gps</code> <img src="https://user-images.githubusercontent.com/42961200/124341277-3b675e80-dbf6-11eb-9302-da9eae8cc717.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- The Aircraft is in Home Mode</td>
+      <td>Blinks red rapidly (5 times per second)</td>
+      <td><code class="language-plaintext highlighter-rouge">Home mode </code> <img src="https://user-images.githubusercontent.com/42961200/124341300-5a65f080-dbf6-11eb-943b-5246ac2befb5.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- Enter Task function</td>
+      <td>Blink green and purlple slowly ( 1 time per second)</td>
+      <td><code class="language-plaintext highlighter-rouge">Task</code>  <img src="https://user-images.githubusercontent.com/42961200/124341323-779abf00-dbf6-11eb-88da-5d758218b7ed.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- First Level low Voltage Battery Warning</td>
+      <td>Blink red, green and blue every 3 seconds</td>
+      <td><code class="language-plaintext highlighter-rouge">Battery warning</code>  <img src="https://user-images.githubusercontent.com/42961200/124341338-8ed9ac80-dbf6-11eb-8e3e-ced8d4ba86be.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- Second Level low Voltage Battery Warning</td>
+      <td>Blinks red, green and blue continuously</td>
+      <td><code class="language-plaintext highlighter-rouge">Battery Alarm</code>  <img src="https://user-images.githubusercontent.com/42961200/124341361-add83e80-dbf6-11eb-86c6-6b4503bf25cb.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- GPS Disabled  NOTICE: White blink between solid flight mode indicates enough satellites for Watch Me/Follow Me.</td>
+      <td>Blinks purple (1 flash per second)</td>
+      <td><code class="language-plaintext highlighter-rouge">GPS disabled</code>  <img src="https://user-images.githubusercontent.com/42961200/124341376-c6e0ef80-dbf6-11eb-97ba-325d54ef8903.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>LED STATUS INDICATIONS FOR CALIBRATION MODES  Main LED Status Indicator</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>- Compass Calibration Mode Entered</td>
+      <td>Blinks red and green slowly (2 times per second)</td>
+      <td><code class="language-plaintext highlighter-rouge">Compass</code>  <img src="https://user-images.githubusercontent.com/42961200/124344416-ff8bc380-dc0c-11eb-94f2-238a8d06ee7e.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- Compass Calibration Started</td>
+      <td>Blinks red and green rapidly (5 times per second)</td>
+      <td><code class="language-plaintext highlighter-rouge">Compass started</code>  <img src="https://user-images.githubusercontent.com/42961200/124344442-1d592880-dc0d-11eb-88cc-86faa684d234.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- Accelerometer Calibration Mode Entered</td>
+      <td>Blinks red, green and blue slowly (1 times per second)</td>
+      <td><code class="language-plaintext highlighter-rouge">Accelerometer</code>  <img src="https://user-images.githubusercontent.com/42961200/124344462-44aff580-dc0d-11eb-9c10-a2c1d2735b70.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- Accelerometer Calibration started</td>
+      <td>Blinks red, green and blue rapidly (3 times per second)</td>
+      <td><code class="language-plaintext highlighter-rouge">Accelerometer config started</code>  <img src="https://user-images.githubusercontent.com/42961200/124344477-6a3cff00-dc0d-11eb-9ce7-58d7a7bbe3e4.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- Calibration failed</td>
+      <td>Glows solid white</td>
+      <td><code class="language-plaintext highlighter-rouge">Failed</code>  <img src="https://user-images.githubusercontent.com/42961200/124344493-80e35600-dc0d-11eb-8c29-dfc3d1a47dbf.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>CGO3+ CAMERA LED STATUS INDICATIONS</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>- Without T-card or T-card Memory Full</td>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">T-card error</code>  <img src="https://user-images.githubusercontent.com/42961200/124344604-2a2a4c00-dc0e-11eb-9ef7-5254b5627ed1.png" alt="image" /></td>
+    </tr>
+    <tr>
+      <td>- WiFi Error</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>- WiFi Initialized</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>- WiFi Connected</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>- Recording Video or Taking Still Photos</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="https://user-images.githubusercontent.com/42961200/124368223-f72d9a00-dc99-11eb-9a98-d3ec1b60538a.jpg" alt="SmartSelect_20210704-073148_Acrobat for Samsung" /></p>
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2021 Tonyleekorea. All rights reserved. <br />
+<span>Page last updated:</span> July 10, 2021<br/> Site last generated: Aug 7, 2021 <br />
+<p align="right"><img src="images/tonyillust_atwork.svg" alt="tonyillust" style="width: 20%; max-width: 30%;"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

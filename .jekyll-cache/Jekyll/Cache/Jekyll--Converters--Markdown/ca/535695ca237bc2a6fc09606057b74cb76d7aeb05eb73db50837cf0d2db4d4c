@@ -1,0 +1,74 @@
+I"�<h2 id="set-up-your-github-repo">Set up your Github repo</h2>
+
+<ol>
+  <li>Make sure you have Git installed. You can download and install <a href="https://git-scm.com/download/win">Git for Windows here</a> and <a href="https://git-scm.com/download/mac">Git for Mac here</a>. If you’re on a Mac, chances are you might already have git installed. You can check by opening up a terminal and typing <code class="language-plaintext highlighter-rouge">which git</code>.</li>
+  <li>Go to <a href="http://github.com">Github.com</a> and sign up for an account.</li>
+  <li>Click the <strong>+</strong> button in the upper-right corner and select <strong>New repository</strong>.</li>
+  <li>Name the repository something like <strong>mydoctheme</strong>.</li>
+  <li>Type a description..</li>
+  <li>Select the <strong>Initialize this repository with a README</strong> check box.</li>
+  <li>Add a license if desired.</li>
+  <li>Leave the other options at the defaults and click <strong>Create repository</strong>.</li>
+  <li>Click the <strong>Settings</strong> button.</li>
+  <li>Go to your repository’s home page, and click the branch drop-down menu.</li>
+  <li>Create a new branch called <strong>gh-pages</strong>.</li>
+  <li>Click <strong>Settings</strong> and change the default branch to <strong>gh-pages</strong>.</li>
+  <li>Go back to your repository’s homepage. With the gh-pages branch selected, copy the <strong>https clone url</strong>:</li>
+  <li>Open a terminal, browse to a convenient location for your project, and type <code class="language-plaintext highlighter-rouge">git clone https://github.com/tomjoht/myreponame.git</code>, replacing the <code class="language-plaintext highlighter-rouge">https://github.com/tomjoht/myreponame.git</code> with your repository’s https clone URL that you copied.</li>
+  <li>Move the jekyll theme files into this new folder that you just created in the previous step.</li>
+  <li>Open the _config.yml file and add the following:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   url: tomjoht.github.io
+   baseurl: /myreponame
+</code></pre></div></div>
+
+<p>Change the url to your github account name, and the baseurl to your repo name.</p>
+
+<h2 id="install-bundler">Install Bundler</h2>
+
+<p>Bundler is a package manager for Ruby that will install all dependencies you might need to build your site locally. I recommend installing Bundler through homebrew. (Sorry, these instructions apply to Mac only.)</p>
+
+<ol>
+  <li>
+    <p>Install <a href="http://brew.sh/">homebrew</a>:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Install Bundler:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="add-the-github-pages-gem">Add the github pages gem</h2>
+
+<ol>
+  <li>In terminal, browse to your Jekyll project directory.</li>
+  <li>Type <code class="language-plaintext highlighter-rouge">bundle init</code>. This creates a Gemfile and Gemfile.lock in your project.</li>
+  <li>Type <code class="language-plaintext highlighter-rouge">open gemfile</code>. This opens the gemfile in your default text editor.</li>
+  <li>
+    <p>Add the following in the gemfile (replacing the existing contents):</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+gem 'github-pages'
+</code></pre></div>    </div>
+  </li>
+  <li>Run <code class="language-plaintext highlighter-rouge">bundle install</code>.</li>
+  <li>Add the new jekyll files to git: <code class="language-plaintext highlighter-rouge">git add --all</code>.</li>
+  <li>Commit the files: <code class="language-plaintext highlighter-rouge">git commit -m "committing my jekyll theme"</code>.</li>
+  <li>Push the files up to your github repo: <code class="language-plaintext highlighter-rouge">git push</code>.</li>
+</ol>
+
+<p>Github Pages will now automatically build your site. Wait a minute or two, and then visit tomjoht.github.io/yourreponame, replacing this path with your github account and branch.</p>
+
+<h2 id="customize-your-url">Customize your URL</h2>
+
+<p>You can also customize your Github URL. More instructions on this later….</p>
+
+<p>[]:</p>
+
+:ET

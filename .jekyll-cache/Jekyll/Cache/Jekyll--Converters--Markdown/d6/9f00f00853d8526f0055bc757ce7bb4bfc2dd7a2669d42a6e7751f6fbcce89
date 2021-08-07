@@ -1,0 +1,38 @@
+I"�<h2 id="about-iterm-profiles">About iTerm profiles</h2>
+
+<p>When you’re working with tech docs, a lot of times you have builds that push files onto different servers, or that build the content for different environments. It can be a hassle to type out these commands each time. Instead, it’s easier to configure iTerm with profiles that initiate the scripts.</p>
+
+<h2 id="set-up-profiles">Set up profiles</h2>
+
+<ol>
+  <li>Open iTerm and go to <strong>Profiles &gt; Open Profiles.</strong></li>
+  <li>Click <strong>Edit Profiles</strong>.</li>
+  <li>Click the + button in the lower-left corner to create a new profile.</li>
+  <li>In the <strong>Name</strong> field, type a name describing the output, such as <code class="language-plaintext highlighter-rouge">Doc theme -- designers</code>.</li>
+  <li>
+    <p>In the <strong>Send text at start</strong> field, type the command for the build script, such as this:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>JEKYLL_ENV=production jekyll serve
+</code></pre></div>    </div>
+    <p>Leave the Login shell option selected.</p>
+  </li>
+  <li>In the Working Directory section, select <strong>Directory</strong> and enter the directory for your project, such as <strong>/Users/tjohnson/projects/documentation-theme-jekyll</strong>.</li>
+  <li>Close the profiles panel.</li>
+</ol>
+
+<p>Here’s an example:</p>
+
+<figure><img class="docimage" src="images/itermexample.png" alt="" /><figcaption>iTerm profile example</figcaption></figure>
+
+<h2 id="launching-a-profile">Launching a profile</h2>
+
+<ol>
+  <li>In iTerm, make sure the Toolbar is shown. Go to <strong>View &gt; Toggle Toolbar</strong>.</li>
+  <li>Click the <strong>New</strong> button and select your profile.</li>
+</ol>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> When you’re done with the session, make sure to click <b>Ctrl+C</b>.</div>
+
+<p>[]:</p>
+
+:ET

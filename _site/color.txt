@@ -1,0 +1,38 @@
+commit 1391faed9f6fa41ed7badc9b6d18e2644295d206
+Author: aiegoo <eozz21@gmail.com>
+Date:   Wed Aug 4 16:30:29 2021 +0900
+
+    add link of es6 module article to revealjs.md
+
+diff --git a/pages/books/books_revealjs.md b/pages/books/books_revealjs.md
+index 8e0654a..97643c1 100644
+--- a/pages/books/books_revealjs.md
++++ b/pages/books/books_revealjs.md
+@@ -19,6 +19,9 @@ weight: 1
+ 
+ [Usemarkdown](https://revealjs.com/markdown/)
+ 
++[ES6_integration](https://v8.dev/features/modules)
++> the link will explain in expository details about ES6 syntax and implementation methods
++
+ {% capture my_include %}{% include custom/contents/revealjs.md %}{% endcapture %}
+ {{ my_include | markdownify }}
+ 
+commit 1391faed9f6fa41ed7badc9b6d18e2644295d206
+Author: aiegoo <eozz21@gmail.com>
+Date:   Wed Aug 4 16:30:29 2021 +0900
+    add link of es6 module article to revealjs.md
+diff --git a/pages/books/books_revealjs.md b/pages/books/books_revealjs.md
+index 8e0654a..97643c1 100644
+--- a/pages/books/books_revealjs.md
++++ b/pages/books/books_revealjs.md
+@@ -19,6 +19,9 @@ weight: 1
+ 
+ [Usemarkdown](https://revealjs.com/markdown/)
+ 
++[ES6_integration](https://v8.dev/features/modules)
++> the link will explain in expository details about ES6 syntax and implementation methods
++
+ {% capture my_include %}{% include custom/contents/revealjs.md %}{% endcapture %}
+ {{ my_include | markdownify }}
+ 
