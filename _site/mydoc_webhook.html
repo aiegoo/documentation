@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="summary.">
-<meta name="keywords" content="gitdronesetup,  Self-managed API, content API, UI text, inline help, context-sensitive help, popovers, tooltips">
+<meta name="keywords" content="gitsetup,  API, content API, UI text, inline help, context-sensitive help, popovers, tooltips">
 <meta name="theme-color" content="#72ac4a" />
-<title>gitlab | Tonylee Project Showcase</title>
+<title>wehbook deploy automation | Tonylee Project Showcase</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -202,7 +202,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="gitlab">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="wehbook deploy automation">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -293,7 +293,7 @@
           
           
           
-          <li><a title="Git webhook" href="mydoc_webhook.html">Git webhook</a></li>
+          <li class="active"><a title="Git webhook" href="mydoc_webhook.html">Git webhook</a></li>
           
           
           
@@ -314,7 +314,7 @@
           
           
           
-          <li class="active"><a title="Gitlab" href="mydoc_gitlab.html">Gitlab</a></li>
+          <li><a title="Gitlab" href="mydoc_gitlab.html">Gitlab</a></li>
           
           
           
@@ -1022,7 +1022,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">gitlab</h1>
+   <h1 class="post-title-main">wehbook deploy automation</h1>
 </div>
 
 
@@ -1034,44 +1034,72 @@
    
 
     
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
-<script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
-
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
-
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-
-});
-</script>
-
-<details>
-  <summary>
-    <div id="toc"></div></summary>
-</details>
-
 
 
     
 
+    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/pages/mydoc/mydoc_webhook.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/pages/mydoc/mydoc_gitlab.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+   <h2 id="octocat-git-webhook">:octocat: Git webhook</h2>
 
-    
+<p><a href="https://stackoverflow.com/questions/44864419/how-to-automate-docker-deployment-based-on-github-webhook/44866845#44866845">stackoverflowSolution</a></p>
 
-   <h2 id="gitlab">Gitlab</h2>
-<p><a href="https://eggs.or.kr">link</a></p>
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">- text in red
+</span><span class="gi">+ text in green
+</span><span class="gs">! text in orange
+</span><span class="err">#</span> text in gray
+<span class="p">@@ text in purple (and bold)@@</span>
+</code></pre></div></div>
+
+<h2 id="git-cli">git cli</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git diff --stat --cached [remote/branch]
+
+git grep 'Build 0051' $(git rev-list --all)
+
+git log --since="2013-11-12" --before="2013-11-13"
+
+git reset --hard origin/master
+
+git log --since="5 day 10 hours ago" --grep pilot_handbook --all-match
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+
+sudo apt install git-lfs
+</code></pre></div></div>
+
+<h3 id="to-unstage-and-remove-a-file-from-commit">to unstage and remove a file from commit</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git restore --source=HEAD^ --staged  -- newfile
+
+$ git reset HEAD newfile
+
+$ git rm --cached newfile
+
+$ git checkout -b master SHA
+
+$ git merge -s ours branch1 branch2 brancN  # resolve ours subtree octopus
+
+</code></pre></div></div>
+
+<ul>
+  <li>MEMO: 01daab67641deef5bfba8668973c13f48a562128</li>
+  <li>MEMO: git config –global –unset user.password</li>
+  <li>MEMO: sudo chmod 777 DIR_NAME</li>
+  <li>MEMO: sudo chmod a+rwx /var/szDirectoryName</li>
+  <li>MEMO: how to reset –hard origin/master and then revert
+    <ul>
+      <li>git -a -m “saved just in case”</li>
+      <li>git checkout -b incase  —- save tmp files to the branch</li>
+      <li>git checkout applicable branch and then</li>
+      <li>git reflog # to get the latest commit on the remote</li>
+      <li>git reset –hard HEAD@{n}  # for the lastest commit hash or index #</li>
+    </ul>
+  </li>
+</ul>
 
 <div class="seriesContext">
     <a>
@@ -1637,23 +1665,7 @@ $('#toc').on('click', 'a', function() {
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="mydoc_github.html"><button type="button" class="btn btn-primary">Next: git config</button></a>
+        <a href="mydoc_git_team.html"><button type="button" class="btn btn-primary">Next: github team</button></a>
         
     </a>
     &nbsp;
@@ -2209,9 +2221,7 @@ $('#toc').on('click', 'a', function() {
             
             
             
-            <li>
-                <a href="mydoc_webhook.html">wehbook deploy automation</a>
-            </li>
+            <li class="active"> → 1. wehbook deploy automation</li>
             
             
             
@@ -2239,7 +2249,9 @@ $('#toc').on('click', 'a', function() {
             
             
             
-            <li class="active"> → 3. gitlab</li>
+            <li>
+                <a href="mydoc_gitlab.html">gitlab</a>
+            </li>
             
             
             
@@ -2265,42 +2277,152 @@ $('#toc').on('click', 'a', function() {
     </div>
 </div>
 
-<h3 id="gitlab-rails-console">gitlab-rails console</h3>
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a href="#git" data-toggle="tab">Gitcli</a></li>
+    <li><a href="#gitlogic" data-toggle="tab">Gitlogic</a></li>
+    <li><a href="#gitconfig" data-toggle="tab">Gitconfig</a></li>
+</ul>
+<div class="tab-content">
+<!-- Git cli -->
+     <div role="tabpanel" class="tab-pane active" id="git">
+          <h3>git cli alias </h3> 
+          <div>
+          <xmp>[filter "lfs"]
+                    smudge = git-lfs smudge -- %f
+                    process = git-lfs filter-process
+                    required = true
+                    clean = git-lfs clean -- %f
+               [user]
+                    name = aiegoo
+                    email = 
+               [winUpdater]
+                    recentlySeenVersion = 2.20.1.windows.1
+               [core]
+                    editor = \"C:\\Users\\Owner\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
+               [diff]
+                    tool = vimdiff
+               [difftool "vscode"]
+                    cmd = code --wait --new-window --diff $LOCAL $REMOTE
+                    prompt = false                          
+               [alias]
+                    a = !git config --global
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@159.65.8.44
-<span class="c"># gitlab-rails console</span>
-<span class="c">#  user = User.find_by_username 'exampleuser'</span>
+                    amd = !git add -A &amp;&amp; git commit --amend --no-edit
 
-<span class="c">#or</span>
+                    alias = config --get-regexp ^alias\\.
 
- user <span class="o">=</span> User.find<span class="o">(</span>123<span class="o">)</span>
+                    p = !git push origin $(git rev-parse --abbrev-ref HEAD)
 
-<span class="c">#or</span>
+                    sub = !git submodule update --init --recursive
 
- user <span class="o">=</span> User.find_by<span class="o">(</span>email: <span class="s1">'onofftony@gmail.com'</span><span class="o">)</span>
+                    adds = !git add . &amp;&amp; git commit -m
 
- user.password <span class="o">=</span> <span class="s1">'secret_pass'</span>
- user.password_confirmation <span class="o">=</span> <span class="s1">'secret_pass'</span>
+                    upstream = !git branch --set-upstream-to=origin/$(git rev-parse --abbrev-ref HEAD)
 
- user.send_only_admin_changed_your_password_notification!
- user.save!
-</code></pre></div></div>
+                    unstream = !git branch --unset-upstream $(git rev-parse --abbrev-ref HEAD)
 
-<h4 id="in-case-password-reset-doesnt-appear-to-work">in case password reset doesn’t appear to work;</h4>
+                    f = !git fetch --all &amp;&amp; git rebase origin/master
 
-<blockquote>
-  <p>skip the reconfirmation feature as in below</p>
-</blockquote>
+                    edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; code `f`"
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> user = User.find(1)
- user.skip_reconfirmation!
-</code></pre></div></div>
+                    add-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`"
 
-<blockquote>
-  <p>If the username was changed to something else and has been forgotten, one possible way is to reset the password using Rails console with user ID 1 (in almost all the cases, the first user is the default admin account).</p>
-</blockquote>
+                    uncommit = !git reset --soft HEAD^ &amp;&amp; git reset
 
-<p><img src="https://github.com/aiegoo/config/blob/master/gitlab-rails.png" alt="example" /></p>
+                    commitagain = !git commit -c ORIG_HEAD
+
+                    desc = !git add . &amp;&amp; git commit
+
+                    conflicts = !git diff --name-only --diff-filter=U | grep -oE '[^/ ]+$'
+                    
+                    conflict = !git diff --name-only --diff-filter=U
+
+                    history = !git rev-list --all
+
+                    lt = !git log --stat --pretty=\"format:%h%an%ai%f\"
+
+                    lc = !git log ORIG_HEAD.. --stat --no-merges
+
+                    lg = !git log --all --graph --oneline --date=short --pretty=format:\"%C(yellow)%h%Creset%C(red)%C(bold)%d%Creset%C(white)(%cd)%Creset %s\"
+                    
+                    pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 &amp;&amp; git checkout pr/$1; }; f"
+
+                    pr-clean = "!git for-each-ref refs/heads/pr/* --format=\"%(refname)\" | while read ref; do branch=${ref#refs/heads/} ; git branch -D $branch;"
+
+                    files  = "!git diff-tree --no-commit-id --name-only -r"
+
+                    find = log --pretty=\"format:%Cgreen%H %Cblue%s\" --name-status --grep
+
+                    filter = !git filter-branch --index-filter \"git rm --cached -f -r --ignore-unmatch\" --tag-name-     filter cat -- --all
+
+                    df = difftool
+                    saved = !git show --pretty=\"\" --name-only
+
+                    areusure = !git filter-branch --index-filter "git rm --cached -f -r --ignore-unmatch filenameOrFolderName" --tag-name-filter cat -- --all 
+
+                    clone-branches = "! git branch -a | sed -n \"/\\/HEAD /d; /\\/master$/d; /remotes/p;\" | xargs -L1 git checkout -t"
+
+                    set-url = !git remote set-url --add --push origin
+
+                    lstree = !git diff-tree --no-commit-id --name-status -r
+               [difftool]
+                    prompt = false</xmp>  
+
+          <xmp>$ git lg -n 3
+* 36a7365 (HEAD -&gt; gh-pages, origin/gh-pages, origin/HEAD)(2021-08-01) add git config template to webhook.md
+* fd26087(2021-08-01) add git config template to webhook.md
+* 6c05cf4(2021-08-01) add git config template to webhook.md
+
+$ git lstree fd26087
+M       pages/mydoc/mydoc_webhook.md</xmp>
+            
+        </div> <!-- end of gitcli contents -->
+     </div>
+<!-- courese books -->
+     <div role="tabpanel" class="tab-pane" id="gitlogic">
+          <h3>git logic</h3>
+          <p>I counted 18 books for the first year and I thought it was it. I was wrong as the number sees no boundary. </p>
+     </div>
+<!-- tool books -->
+     <div role="tabpanel" class="tab-pane" id="gitconfig">
+     <h2>Toolbooks</h2>
+     <p>I spend all of my research stipends on its books.</p>
+          <ul>
+               <li>
+               <i>
+          This book together with my other Udemy course I am taking is the core of my learning curves for now.
+               </i></li>     
+               <li>
+               Most of the on-line courses on <a href="https://www.udemy.com/home/my-courses/learning/?p=5">UDEMY</a> listed here
+               <a href="https://www.pivotaltracker.com/story/show/167956227">pivotaltracker stories board</a>, 
+               with about 60 paid courses I am taking currently. </li>          
+               <li>
+               Recent courses: in collaborative development env. </li>
+               <li>
+               <a href="https://eggs.or.kr/index.php">
+               Transcripting solution</a> 
+               <i>(with Mohammad in Parkistan, to add the call and conference transcripts to the meetme app).</i> </li>
+               <li><a href="#">
+               <i>the details of development (now in icebox).</i>&lt;/li&gt;
+               <li>
+               <a href="https://github.com/aiegoo/mohammad">
+               now private github repository</a> <i>(to be completed in November).</i></li>
+          &lt;/ul&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+### cli examples
+
+```diff
+$ git lg -n 3
+* 36a7365 (HEAD -&gt; gh-pages, origin/gh-pages, origin/HEAD)(2021-08-01) add git config template to webhook.md
+* fd26087(2021-08-01) add git config template to webhook.md
+* 6c05cf4(2021-08-01) add git config template to webhook.md
+
+$ git lstree fd26087
+M       pages/mydoc/mydoc_webhook.md
+
+```
+</a></li></ul></div></div>
 
 
     <div class="tags">
@@ -2310,10 +2432,6 @@ $('#toc').on('click', 'a', function() {
         
         
         <a href="tag_git.html" class="btn btn-default navbar-btn cursorNorm" role="button">git</a>
-        
-        
-        
-        <a href="tag_drone.html" class="btn btn-default navbar-btn cursorNorm" role="button">drone</a>
         
         
         

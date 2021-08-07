@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="summary.">
-<meta name="keywords" content="gitdronesetup,  Self-managed API, content API, UI text, inline help, context-sensitive help, popovers, tooltips">
+<meta name="keywords" content="samtechlorahitech,  API, content API, UI text, inline help, context-sensitive help, popovers, tooltips">
 <meta name="theme-color" content="#72ac4a" />
-<title>gitlab | Tonylee Project Showcase</title>
+<title>VTOL drone | Tonylee Project Showcase</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -202,7 +202,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="gitlab">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="VTOL drone">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -314,7 +314,7 @@
           
           
           
-          <li class="active"><a title="Gitlab" href="mydoc_gitlab.html">Gitlab</a></li>
+          <li><a title="Gitlab" href="mydoc_gitlab.html">Gitlab</a></li>
           
           
           
@@ -752,7 +752,7 @@
           
           
           
-          <li><a title="Vtol & flight data" href="mydoc_vtol.html">Vtol & flight data</a></li>
+          <li class="active"><a title="Vtol & flight data" href="mydoc_vtol.html">Vtol & flight data</a></li>
           
           
           
@@ -1022,7 +1022,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">gitlab</h1>
+   <h1 class="post-title-main">VTOL drone</h1>
 </div>
 
 
@@ -1066,1241 +1066,173 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/pages/mydoc/mydoc_gitlab.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/aiegoo/documentation/blob/gh-pages/pages/mydoc/mydoc_vtol.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <h2 id="gitlab">Gitlab</h2>
-<p><a href="https://eggs.or.kr">link</a></p>
+   <h2 id="vtol-and-flight-data-analysis">Vtol and flight data analysis</h2>
 
-<div class="seriesContext">
-    <a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="mydoc_github.html"><button type="button" class="btn btn-primary">Next: git config</button></a>
-        
-    </a>
-    &nbsp;
-    <div class="btn-group">
-        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Jump to: <span class="caret"></span></button>
-        <ol class="dropdown-menu">
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <li>
-                <a href="mydoc_webhook.html">wehbook deploy automation</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <li>
-                <a href="mydoc_git_team.html">github team</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <li class="active"> → 3. gitlab</li>
-            
-            
-            
-            
-            
-            
-            
-            <li>
-                <a href="mydoc_github.html">git config</a>
-            </li>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </ol>
-    </div>
-</div>
+<p>Hello!</p>
 
-<h3 id="gitlab-rails-console">gitlab-rails console</h3>
+<p>Follow up work from this <a href="https://discuss.ardupilot.org/t/airspeed-sensor-noise-problems-on-large-quadplane/32941">post</a> , we decided to go for another flight to get a better tuned pitch controller, rectify airspeed sensor problems and collect more flight data before we push for TECS tuning.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh root@159.65.8.44
-<span class="c"># gitlab-rails console</span>
-<span class="c">#  user = User.find_by_username 'exampleuser'</span>
+<p>We had 1 successful flight before this. Good thing is we have logs from 2 flights: 1 that flew ok. 1 that ended in a painful crash.</p>
 
-<span class="c">#or</span>
+<p>For this flight, we took off and had reasonable <strong>QLOITER</strong> performance. I then switched mode from <strong>QLOITER</strong> to <strong>AUTOTUNE</strong> @ 20 meters. We saw a good transition. However, just when transition is declared done, the aircraft, with plenty of airspeed, decided to take a nose dive over a period of ~1.5 to 2 seconds.</p>
 
- user <span class="o">=</span> User.find<span class="o">(</span>123<span class="o">)</span>
+<p>We have been studying the logs over the past 2 days and have not been able to identify what is happening.</p>
 
-<span class="c">#or</span>
+<p>Points from on hardware that may not show on the dataflash logs</p>
+<ul>
+  <li>Post crash, Cube and servo power supply components still work.</li>
+  <li>Post crash, progressive build up of tests on servo system: all servos still work with servo tester, CAT6 cable + booster board pairs we got from ServoCity and when connected to MAIN2 of the smashed out Cube (apparently still working) in FBWA mode.</li>
+  <li>Pre crash, CG was checked to be nose heavy prior to flight. It was well below it’s design MTOW limits.</li>
+  <li>Pre crash, we did not do an accelerometer or compass calibration after the last flight, which was 1 month ago.</li>
+  <li>Pre &amp; post crash, FBWA direction of PID compensation was checked to be correct.
+<br /></li>
+</ul>
 
- user <span class="o">=</span> User.find_by<span class="o">(</span>email: <span class="s1">'onofftony@gmail.com'</span><span class="o">)</span>
+<p>Key timings of this Flight</p>
+<ul>
+  <li>12:02:26 = Transition begins</li>
+  <li>12:02:34 = Dive begins</li>
+  <li>12:02:37 = Last data
+<br /></li>
+</ul>
 
- user.password <span class="o">=</span> <span class="s1">'secret_pass'</span>
- user.password_confirmation <span class="o">=</span> <span class="s1">'secret_pass'</span>
+<p>A few hypotheses that we have been thinking about:</p>
 
- user.send_only_admin_changed_your_password_notification!
- user.save!
-</code></pre></div></div>
+<ol>
+  <li>Vibrations from the DLE61 gas engine got to the Cube’s pitch estimation, causing the dive
+    <ul>
+      <li>Looking at the attitude graphs, the system knew that pitch was going down. It was also desiring more and more pitch as the aircraft dove downwards.</li>
+      <li>error_RP data from NKF4 seem to indicate small errors.</li>
+      <li>Plane pitch controllers (set of PIDP data) also seem to indicate that PID loops are actively kicking in to bring aircraft back to level</li>
+      <li>One thing we did notice is that there was a lot of clipping of accelerometers while aircraft is still on the ground. However, the clipping events stopped when aircraft is in the air.</li>
+      <li>Given that we were able to do a QLOITER with an engine in idle @ 2700 RPM, we aren’t sure if sensors and estimation are the cause of the problem.
+<br /></li>
+    </ul>
+  </li>
+  <li>GPS came loose and fell off right after transition is done
+    <ul>
+      <li>No abrupt changes to magnetic heading and GPS lock status. 
+<br /></li>
+    </ul>
+  </li>
+  <li>Servo system failed &amp; servo linkage arm broke in flight, right after transition is done.
+    <ul>
+      <li>Post crash hardware tests seem to indicate otherwise. Because it was a nose dive, most of the rear of the aircraft was salvaged and test was possible.</li>
+      <li>Post crash mechanical checks indicated that linkage arm and servo horn was still attached.
+<br /></li>
+    </ul>
+  </li>
+  <li>Vibration matched resonance frequency of some component within the Cube, causing the Cube to send wrong signal out to MAIN2.
+    <ul>
+      <li>We are not sure how to verify this
+<br /></li>
+    </ul>
+  </li>
+  <li>Auto trimming of servo acted in the wrong way, coupled with effects of bad vibration on pitch estimation , causing elevator to compensate in the wrong direction.
+    <ul>
+      <li>We are also not sure how to verify this
+<br /></li>
+    </ul>
+  </li>
+</ol>
 
-<h4 id="in-case-password-reset-doesnt-appear-to-work">in case password reset doesn’t appear to work;</h4>
+<p>Can we request some help from this community in evaluating the logs along with us (i.e. new ideas or hypothesis) We are still looking at the data ourselves but it is getting to a point where we’re running out of ideas.</p>
 
-<blockquote>
-  <p>skip the reconfirmation feature as in below</p>
-</blockquote>
+<p>Thank you.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> user = User.find(1)
- user.skip_reconfirmation!
-</code></pre></div></div>
+<p>/<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>**/</p>
 
-<blockquote>
-  <p>If the username was changed to something else and has been forgotten, one possible way is to reset the password using Rails console with user ID 1 (in almost all the cases, the first user is the default admin account).</p>
-</blockquote>
+<p>Products for this <strong>failed flight</strong> are as follows</p>
+<ul>
+  <li><a href="https://drive.google.com/open?id=1-QIfIvZ6LoiI0bJM17ZKdDe374BWBOsA">Dataflash logs</a></li>
+  <li><a href="https://drive.google.com/open?id=1ryJdQBWL2OyzMR8Hx_y72ygRCGzfkSJ7">Tlogs</a> - if replaying, start from 99%</li>
+  <li><a href="https://drive.google.com/open?id=1p6WxYoGGjIPbcVS1gPDelOehxaB8hOhJ">Parameter file</a></li>
+  <li><a href="https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf">SummarySlidespdf</a> or <a href="./Crash-Analysis.pptx">download pptx</a> - we did up a slide deck to try summarize what we think to be key graphs and make sense of what’s going on</li>
+</ul>
+<object data="https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf" type="application/pdf" width="700px" height="700px">
+   <embed src="https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf" type="application/pdf" /> &lt;/embed&gt;
+</object>
 
-<p><img src="https://github.com/aiegoo/config/blob/master/gitlab-rails.png" alt="example" /></p>
+<ul>
+  <li><a href="https://drive.google.com/open?id=1ALfahwWxfO_IF-AR9nXCfCwKkToLq-Wj">Flight video from ground view</a></li>
+  <li><a href="https://drive.google.com/open?id=1dekB6KR_8fftuH_hhgEoikyCn4eCmGdy">Post crash photo</a></li>
+  <li><a href="https://drive.google.com/open?id=199wzbPtp_l9fuP1GW1b6hoTg8JXEFgfW">FFT chart</a></li>
+</ul>
+
+<p>Products for previous <strong>successful flight</strong></p>
+<ul>
+  <li><a href="https://drive.google.com/open?id=1teFVrss8SAQi3K0p600gb1Le4e6z_Ceu">Dataflash logs</a></li>
+  <li><a href="https://drive.google.com/open?id=1S7ZbLJt99YH3mZlkqKG-_8TdUZWbK_oR">Tlogs</a></li>
+  <li><a href="https://drive.google.com/open?id=1iAA1IwzKYxWvlA7K4sJAvqdzWYXAPlu0">Parameter file</a></li>
+  <li>More details on this flight in <a href="https://discuss.ardupilot.org/t/airspeed-sensor-noise-problems-on-large-quadplane/32941">this post</a>A few hypotheses that we have been thinking about:</li>
+</ul>
+
+<ol>
+  <li>Vibrations from the DLE61 gas engine got to the Cube’s pitch estimation, causing the dive
+    <ul>
+      <li>Looking at the attitude graphs, the system knew that pitch was going down. It was also desiring more and more pitch as the aircraft dove downwards.</li>
+      <li>error_RP data from NKF4 seem to indicate small errors.</li>
+      <li>Plane pitch controllers (set of PIDP data) also seem to indicate that PID loops are actively kicking in to bring aircraft back to level</li>
+      <li>One thing we did notice is that there was a lot of clipping of accelerometers while aircraft is still on the ground. However, the clipping events stopped when aircraft is in the air.</li>
+      <li>Given that we were able to do a QLOITER with an engine in idle @ 2700 RPM, we aren’t sure if sensors and estimation are the cause of the problem.
+<br /></li>
+    </ul>
+  </li>
+  <li>GPS came loose and fell off right after transition is done
+    <ul>
+      <li>No abrupt changes to magnetic heading and GPS lock status. 
+<br /></li>
+    </ul>
+  </li>
+  <li>Servo system failed &amp; servo linkage arm broke in flight, right after transition is done.
+    <ul>
+      <li>Post crash hardware tests seem to indicate otherwise. Because it was a nose dive, most of the rear of the aircraft was salvaged and test was possible.</li>
+      <li>Post crash mechanical checks indicated that linkage arm and servo horn was still attached.
+<br /></li>
+    </ul>
+  </li>
+  <li>Vibration matched resonance frequency of some component within the Cube, causing the Cube to send wrong signal out to MAIN2.
+    <ul>
+      <li>We are not sure how to verify this
+<br /></li>
+    </ul>
+  </li>
+  <li>Auto trimming of servo acted in the wrong way, coupled with effects of bad vibration on pitch estimation , causing elevator to compensate in the wrong direction.
+    <ul>
+      <li>We are also not sure how to verify this
+<br /></li>
+    </ul>
+  </li>
+</ol>
+
+<p>Can we request some help from this community in evaluating the logs along with us (i.e. new ideas or hypothesis) We are still looking at the data ourselves but it is getting to a point where we’re running out of ideas.</p>
+
+<p>Thank you.</p>
+
+<p>/<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>**/</p>
+
+<p>Products for this <strong>failed flight</strong> are as follows</p>
+<ul>
+  <li><a href="https://drive.google.com/open?id=1-QIfIvZ6LoiI0bJM17ZKdDe374BWBOsA">Dataflash logs</a></li>
+  <li><a href="https://drive.google.com/open?id=1ryJdQBWL2OyzMR8Hx_y72ygRCGzfkSJ7">Tlogs</a> - if replaying, start from 99%</li>
+  <li><a href="https://drive.google.com/open?id=1p6WxYoGGjIPbcVS1gPDelOehxaB8hOhJ">Parameter file</a></li>
+  <li><a href="https://drive.google.com/open?id=1n8mZzw-WBxLUCgPJhLjCWOWOv_v1FU2WlUl27TGkWng">Summary Slides</a> - we did up a slide deck to try summarize what we think to be key graphs and make sense of what’s going on</li>
+  <li><a href="https://drive.google.com/open?id=1ALfahwWxfO_IF-AR9nXCfCwKkToLq-Wj">Flight video from ground view</a></li>
+  <li><a href="https://drive.google.com/open?id=1dekB6KR_8fftuH_hhgEoikyCn4eCmGdy">Post crash photo</a></li>
+  <li><a href="https://drive.google.com/open?id=199wzbPtp_l9fuP1GW1b6hoTg8JXEFgfW">FFT chart</a></li>
+</ul>
+
+<p>Products for previous <strong>successful flight</strong></p>
+<ul>
+  <li><a href="https://drive.google.com/open?id=1teFVrss8SAQi3K0p600gb1Le4e6z_Ceu">Dataflash logs</a></li>
+  <li><a href="https://drive.google.com/open?id=1S7ZbLJt99YH3mZlkqKG-_8TdUZWbK_oR">Tlogs</a></li>
+  <li><a href="https://drive.google.com/open?id=1iAA1IwzKYxWvlA7K4sJAvqdzWYXAPlu0">Parameter file</a></li>
+  <li>More details on this flight in <a href="https://discuss.ardupilot.org/t/airspeed-sensor-noise-problems-on-large-quadplane/32941">this post</a></li>
+</ul>
 
 
     <div class="tags">
@@ -2309,15 +1241,9 @@ $('#toc').on('click', 'a', function() {
         
         
         
-        <a href="tag_git.html" class="btn btn-default navbar-btn cursorNorm" role="button">git</a>
         
         
         
-        <a href="tag_drone.html" class="btn btn-default navbar-btn cursorNorm" role="button">drone</a>
-        
-        
-        
-        <a href="tag_setup.html" class="btn btn-default navbar-btn cursorNorm" role="button">setup</a>
         
         
         
