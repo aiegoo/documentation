@@ -4,6 +4,3 @@
 [submodule "projects.wiki"]
 	path = projects.wiki
 	url = git@github.com:aiegoo/projects.wiki
-[submodule "gitteam"]
-	path = gitteam
-	url = git@github.com:aiegoo/gitteam
