@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is just a sample topic...">
+    <meta name="keywords" content=" sample">
+    <title>Sample 1 Topic (Product 1) | Jekyll theme for documentation</title>
+    <link rel="stylesheet" href="css/syntax.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/modern-business.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/customstyles.css">
+    <link rel="stylesheet" href="css/boxshadowproperties.css">
+    <link rel="stylesheet" href="css/theme-blue.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css
+">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/jquery.navgoco.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+    <script src="js/toc.js"></script>
+    <script src="js/customscripts.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js
+"></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+
+<style>
+    body {
+        height: 100%;
+        position: relative;
+    }
+    .slick-demo {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .slick-dots {
+        bottom: 0;
+        z-index: 1;
+    }
+    .slick-dots-demo {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        list-style: none;
+        bottom: -200%;
+        left: 35%;
+        transform: translateX(-50%) translateY(-50%);
+        padding-left: 0;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .slick-dots-demo:hover {
+        opacity: 1;
+    }
+
+    .slick-dots-demo li button {
+        background-color: transparent;
+        border: 1px solid #333;
+        flex: 1 0 auto;
+    }
+    .slick-close {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+        display: block;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        cursor: pointer;
+    }
+</style>
+
+<script type="text/javascript">
+jQuery(function($){
+    var slider = $('.slick-demo').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            appendDots: '.slick-demo',
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+        
+    $('.slick-dots-demo li').each(function(){
+        $(this).click(function(e){
+            var slide = $(this).find('button').attr('id').substring(20);
+            console.log(slide);
+            slider.slick('slickGoTo', slide);
+        });
+    });
+
+    $('.slick-close').click(function(){
+        slider.hide(400);
+        $(this).fadeOut(400);
+    });
+        
+});
+  </script>
+  
+</head>
