@@ -1,0 +1,375 @@
+
+<!-- Slick CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+<!-- Slick JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<!-- Slick demo START -->
+<div class="slick-demo-wrapper">
+    <div class="slick-close">x</div>
+
+    <div class="slick-demo">
+
+            <img src="images/slider/image_1.jpg" alt="test-alt" data-dots-color="#333">
+            <img src="images/slider/image_2.jpg" alt="test-alt" data-dots-color="#333">
+            <img src="images/slider/image_3.jpg" alt="test-alt" data-dots-color="#333">
+            <img src="images/slider/image_4.jpg" alt="test-alt" data-dots-color="#333">
+            <img src="images/slider/image_6.gif" data-dots-color="#fff" alt="test-alt">
+     
+            <iframe class="embed-player slide-media" data-dots-color="#fff" src="https://www.youtube.com/embed/0Rmz9_jagKo?rel=0&autoplay=1&controls=0&modestbranding=0&fs=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+
+    <ul class="slick-dots-demo" style="" role="tablist">
+        <li class="slick-active" role="presentation"><button type="button" role="tab"
+                id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 6"
+                tabindex="0" aria-selected="true">OUR DETAIL</button></li>
+        <li role="presentation"><button type="button" role="tab" id="slick-slide-control01"
+                aria-controls="slick-slide01" aria-label="2 of 6" tabindex="-1">PROFESSIONAL</button></li>
+        <li role="presentation"><button type="button" role="tab" id="slick-slide-control02"
+                aria-controls="slick-slide02" aria-label="3 of 6" tabindex="-1">PHOTOGRAPH</button></li>
+        <li role="presentation"><button type="button" role="tab" id="slick-slide-control03"
+                aria-controls="slick-slide03" aria-label="4 of 6" tabindex="-1">REASONABLE</button></li>
+        <li role="presentation"><button type="button" role="tab" id="slick-slide-control04"
+                aria-controls="slick-slide04" aria-label="5 of 6" tabindex="-1">zara manMovie</button></li>
+        <li role="presentation"><button type="button" role="tab" id="slick-slide-control05"
+                aria-controls="slick-slide05" aria-label="6 of 6" tabindex="-1">[ ▶ ] ZARA SPRING SUMMER 2016</button></li>
+    </ul>
+    </div><!-- /.slick-demo-wrapper END -->
+
+    <!-- Slick additional CSS -->
+    <style>
+        body {
+            height: 100%;
+            max-height: 100%;
+            position: relative;
+        }
+        .container {
+            max-height: 1080px;
+            overflow: hidden;
+        }
+        /* Important overide for /css/customstyles.css line: 912-917
+        ==============================================================*/
+        .col-md-9 img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .slick-demo {
+            position: fixed;
+            /* top: 50%; */
+            top: 43%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Overlay */
+        .slick-demo.overlay::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            z-index: 1;
+        }
+        .slick-demo.overlay::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: rgb(255, 255, 255);
+            /* position: absolute; */
+            z-index: 1;
+        }
+        .slick-dots {
+            bottom: 0;
+            z-index: 1;
+        }
+        .slick-dots-demo {
+            position: absolute;
+            /* display: block; */
+            z-index: 1;
+            display: flex;
+            justify-content: start;
+            width: 100%;
+            list-style: none;
+            top: 8%;
+            left: 43%;
+            transform: translateX(-50%) translateY(-50%);
+            padding-left: 0;
+            opacity: 0;
+            transition: opacity .3s;
+            color: #333;
+            height: 250px;
+        }
+
+        .slick-dots-demo:hover {
+            opacity: 1;
+        }
+
+
+        .slick-dots-demo li button {
+            position: relative;
+            background-color: rgba(255, 255, 255, .85);
+            /* border: 1px solid #333; */
+            flex: 1 0 auto;
+            font-size: 11px;
+            letter-spacing: 0.03em;
+            padding: 0 9px;
+            margin: 0 3px;
+            line-height: 29px;
+            color: #333;
+            border: none;
+            box-shadow: inset 2px 1px 4px rgba(255,255,255 .7);
+            transition: background-color .3s;
+        }
+        .slick-dots-demo li button:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .slick-close {
+            width: 25px;
+            height: 25px;
+            font-size: 25px;
+            display: block;
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            cursor: pointer;
+        }
+        .slick-slide {
+            position: relative;
+            height: 42vw;
+        }
+
+        .slick-slide::before {
+            background-color: #000000;
+            opacity: 0.3;
+            z-index: 1;
+        }
+
+        .slick-slide iframe {
+            position: relative;
+            pointer-events: none;
+        }
+
+        .caption,
+        .slick-slide::before,
+        .slick-slide {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+    </style>
+    <!-- Slick JS Init. -->
+    <script type="text/javascript">
+          
+
+                var slideWrapper = $('.slick-demo').slick({
+                        dots: false,
+                        arrows: false,
+                        infinite: true,
+                        speed: 500,
+                        fade: true,
+                        cssEase: 'linear',
+                        appendDots: '.slick-demo',
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    });
+
+                    var iframes = slideWrapper.find('.embed-player');
+        
+            /* lazyImages = slideWrapper.find('.slide-image'),
+            lazyCounter = 0; */
+
+            // POST commands to YouTube or Vimeo API
+            function postMessageToPlayer(player, command){
+                if (player == null || command == null) return;
+                player.contentWindow.postMessage(JSON.stringify(command), "*");
+            }
+
+            // When the slide is changing
+            function playPauseVideo(slick, control){
+                var currentSlide, startTime, player, video;
+
+                currentSlide = slick.find(".slick-current");
+                // slideType = currentSlide.attr("class").split(" ")[1];
+                console.log(currentSlide);
+                if(currentSlide.hasClass('embed-player')) {
+                    player = currentSlide.get(0);
+                    startTime = currentSlide.data("start");
+
+                    currentSlide.css('height', '57vw');
+                    
+                    $('.slick-demo').css('top', '55%');
+                    $('.slick-demo').css('transform', 'translate(-50%, -50%)');
+                    
+                    $('.slick-dots-demo li').css('color', currentSlide.data('dots-color'));
+                    $(' .slick-dots-demo li button').css('border-color', currentSlide.data('dots-color'));
+
+                    switch (control) {
+                    case "play":
+                        postMessageToPlayer(player, {
+                            "event": "command",
+                            "func": "mute"
+                        });
+                        postMessageToPlayer(player, {
+                            "event": "command",
+                            "func": "playVideo"
+                        });
+                        slideWrapper.slick('slickPause');
+                        break;
+                    case "pause":
+                        postMessageToPlayer(player, {
+                            "event": "command",
+                            "func": "pauseVideo"
+                        });
+                        break;
+                    }
+                } else {
+                    currentSlide.css('height', '42vw');
+                    $('.slick-demo').css('top', '43%');
+                    $('.slick-demo').css('transform', 'translate(-50%, -50%)');
+
+                    $('.slick-dots-demo li').css('color', currentSlide.data('dots-color'));
+                    $(' .slick-dots-demo li button').css('border-color', currentSlide.data('dots-color'));
+                    return false
+                }
+                
+            }
+
+            // Resize player
+            function resizePlayer(iframes, ratio) {
+                if (!iframes[0]) return;
+                var win = $(".slick-demo"),
+                    width = win.width(),
+                    playerWidth,
+                    height = win.height(),
+                    playerHeight,
+                    ratio = ratio || 16/9;
+
+                iframes.each(function(){
+                    var current = $(this);
+                    if (width / ratio < height) {
+                    playerWidth = Math.ceil(height * ratio);
+                    current.width(playerWidth).height(height).css({
+                        left: (width - playerWidth) / 2,
+                        top: 0
+                        });
+                    } else {
+                    playerHeight = Math.ceil(width / ratio);
+                    current.width(width).height(playerHeight).css({
+                        left: 0,
+                        top: (height - playerHeight) / 2
+                    });
+                    }
+                });
+            }  
+
+            // DOM Ready
+            $(function() {
+                    
+                // Initialize
+                slideWrapper.on("init", function(slick){
+                    slick = $(slick.currentTarget);
+                    setTimeout(function(){
+                    playPauseVideo(slick,"play");
+                    }, 1000);
+                    resizePlayer(iframes, 16/9);
+                });
+                slideWrapper.on("beforeChange", function(event, slick) {
+                    slick = $(slick.$slider);
+                    console.log(slick);
+                    playPauseVideo(slick,"pause");
+                });
+                slideWrapper.on("afterChange", function(event, slick) {
+                    slick = $(slick.$slider);
+                    console.log(slick);
+                    playPauseVideo(slick,"play");
+                });
+                /* slideWrapper.on("lazyLoaded", function(event, slick, image, imageSource) {
+                    lazyCounter++;
+                    if (lazyCounter === lazyImages.length){
+                    lazyImages.addClass('show');
+                    // slideWrapper.slick("slickPlay");
+                    }
+                }); */
+
+                slideWrapper.addClass('overlay');
+
+                // $('.post-header, .post-content, #tg-sb-sidebar').hide();
+
+
+                $('.slick-dots-demo li').each(function(){
+                    $(this).click(function(e){
+                        var slide = $(this).find('button').attr('id').substring(20);
+                        console.log(slide);
+                        slideWrapper.slick('slickGoTo', slide);
+                    });
+                });
+
+                $('.slick-close').click(function(){
+                    slideWrapper.hide(430);
+                    slideWrapper.removeClass('overlay');
+                    $(this).fadeOut(430);
+                    // $('.post-header, .post-content, #tg-sb-sidebar').show(430);
+                });
+
+            });
+      
+        // Resize event
+        $(window).on("resize.slickVideoPlayer", function(){  
+            resizePlayer(iframes, 16/9);
+        });  
+  
+    </script>
+
+<script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '643',
+          videoId: 'M7lc1UVf-VE',
+          playerVars: {
+            'playsinline': 1
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+
