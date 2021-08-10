@@ -528,4 +528,5 @@ RflySim provide a unified solution for development, test and assessment of unman
 
 6. More experimental courses will be released on our website
 
+{% include custom/series_rfly_next.html %}
  {% include links.html %}
