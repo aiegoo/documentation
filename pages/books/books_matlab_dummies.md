@@ -17,7 +17,7 @@ weight: 2
 
 ### the book
 
-[pdf](./pdfs/matlab-dummies.pdf)
+[pdf](./pdf/matlab-dummies.pdf)
 
 [ES6_integration](https://v8.dev/features/modules)
 > the link will explain in expository details about ES6 syntax and implementation methods

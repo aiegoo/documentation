@@ -17,8 +17,14 @@ weight: 1
 
 ### the book
 
-[pdf](./pdfs/matlab-essential.pdf)
+[pdf](./pdf/matlab-essential.pdf)
 
-[ES6_integration](https://v8.dev/features/modules)
-> the link will explain in expository details about ES6 syntax and implementation methods
+[youtube-lesson](https://v8.dev/features/modules)
+> the link will provide the following;
 
+```
+■ You must learn the exact rules for writing MATLAB statements and using
+MATLAB utilities.
+■    You must know the mathematics associated with the problem you want to solve.
+■    You must develop a logical plan of attack—the algorithm—for solving a particular problem.
+```
