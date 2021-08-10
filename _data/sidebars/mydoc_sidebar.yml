@@ -238,8 +238,8 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Instrucdtions&&documentation
-          url: /mydoc_commenting_on_files.html
+        - title: start here with guides
+          url: /rfly_starthere.html
           output: web
 
         - title: Implementating Pixhawk Cube
