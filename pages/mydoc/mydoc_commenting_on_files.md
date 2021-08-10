@@ -48,6 +48,10 @@ The required MATLAB toolboxes include the following.
 • Simulink Coder
 
 • Stateflow
+
+• Matlab compiler
+
+• mingw.mlpkginstall (at install or later via matlab account or through cmd?
 ```
 
 #### (1)PixhawkSupportPackage(PSP)Toolbox
