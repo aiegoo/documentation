@@ -19,7 +19,7 @@ weight: 1
 
 [pdf](./pdf/matlab-essential.pdf)
 
-[youtube-lesson](https://v8.dev/features/modules)
+[lessons](hhttps://kr.mathworks.com/help/matlab/ref/plot.html)
 > the link will provide the following;
 
 ```
@@ -27,4 +27,15 @@ weight: 1
 MATLAB utilities.
 ■    You must know the mathematics associated with the problem you want to solve.
 ■    You must develop a logical plan of attack—the algorithm—for solving a particular problem.
+```
+```
+figure
+plot(x,y,'Color',[0,0.7,0.9])
+
+title('2-D Line Plot')
+xlabel('x')
+ylabel('cos(5x)')
+
+p(1).LineWidth = 2;
+p(2).Marker = '*';
 ```
