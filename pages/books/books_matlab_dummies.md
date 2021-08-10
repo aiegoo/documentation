@@ -15,6 +15,18 @@ weight: 2
 
 ## Matlab introductory course for a STEM 
 
+>math-related tasks [industry-use-case](https://stackshare.io/matlab)
+
+1. numerical computation
+2. visualization
+3. scripting
+4. application development
+5. machine learning
+6. deep learning
+7. signal processing
+8. [toolbox application](https://mathworks.com/help/thingspeak/matlab-toolbox-access.html) 
+
+
 ### the book
 
 [pdf](./pdf/matlab-dummies.pdf)
