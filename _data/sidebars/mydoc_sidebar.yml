@@ -477,6 +477,10 @@ entries:
       url: /
       output: web, pdf
 
+    - title: matlab
+      url: /books_matlab_essential.html
+      output: web, pdf
+
     - title: drone companies
       url: /mydoc_contact.html
       output: web, pdf
