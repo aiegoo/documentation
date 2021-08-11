@@ -25,6 +25,7 @@ weight: 3
 - implement simultaneous localization and mapping with algorithm
 - perform slam using 3-d lidar point clouds
 
+[![image](https://user-images.githubusercontent.com/42961200/129006952-8894b07f-de23-4d9f-bf39-c2a3ee532549.png)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
 
 
 {% include custom/series_matlab_next.html %}
