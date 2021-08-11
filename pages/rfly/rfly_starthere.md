@@ -321,6 +321,8 @@ Fig. 3.11 Simulink “Run” button for different MATLAB versions
 <hr>
 
 ## 3. PSP Toolbox
+
+![](https://rflysim.com/en/_images/Quan-ch3-Fig3.13.jpg)
 ../_images/Quan-ch3-Fig3.13.jpg
 Fig. 3.13 Relationship between Simulink and Pixhawk autopilot code generation
 
