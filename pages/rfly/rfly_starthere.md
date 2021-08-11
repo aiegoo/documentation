@@ -321,6 +321,8 @@ Fig. 3.11 Simulink “Run” button for different MATLAB versions
 <hr>
 
 ## 3. PSP Toolbox
+
+![](https://rflysim.com/en/_images/Quan-ch3-Fig3.13.jpg)
 ../_images/Quan-ch3-Fig3.13.jpg
 Fig. 3.13 Relationship between Simulink and Pixhawk autopilot code generation
 
@@ -1158,6 +1160,6 @@ Note that if you're making updates online, those updates will be out of sync wit
 
  Prose.io is an overlay on Github that would allow people to make comments in an easier interface. If you simply go to [prose.io](http://prose.io), it asks to authorize your Github account, and so it will read files directly from Github but in the Prose.io interface.
  
-
+{% include custom/series_rfly_next.html %}
 
  {% include links.html %}
