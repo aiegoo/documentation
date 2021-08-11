@@ -19,9 +19,9 @@ weight: 3
 
 - rotations, orientation, and quaternions
 - introduction to simulating IMU measurements
-- estimate positon and orientation of a gorund vehicle
+- estimate positon and orientation of a ground vehicle
 - esitamte robot pose with scan matching
-- plan mobile robot paths using RRT
+- plan mobile robot paths using RRT (rapidly exploring random tree)
 - implement simultaneous localization and mapping with algorithm
 - perform slam using 3-d lidar point clouds
 
