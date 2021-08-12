@@ -29,6 +29,8 @@ weight: 3
 
 [![dynamicmap](./images/MotionPlanningUsingDynamicMapExample_03.gif)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
 
-{% include tony.html content="hooray to go on" %}
+![](./pdf/gcs/matlab_flightsim.gif)
+
+{% include tony.html content="matlab tutorials and gcs.uno are the main source of learning for now" %}
 
 {% include custom/series_matlab_next.html %}
