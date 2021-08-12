@@ -15,12 +15,21 @@ folder: mydoc
 
 {% include custom/series_git_next.html %}
 
+## git rebase vs merge
+![rebase_log](images/gitteam/rebase_log.png)
+
+|   |   |   |
+| --- | :---: | :---: |
+| 🍂Use merge in cases where you want a set of commits to be clearly grouped together in history 🍂Use rebase when you want to keep a linear commit history 🍂 DON’T use rebase on a public/shared branch   | ![](images/gitteam/merge_pic.png) | ![](images/gitteam/rebase_pic.png) |
+
+
 ## Git team of one
 
 
 ## Git team
 
 [gitknitters](https://github.com/gitforknitters/gitforknitters)
+
 
 
 ### workflow
