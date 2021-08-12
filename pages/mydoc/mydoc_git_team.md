@@ -20,7 +20,7 @@ folder: mydoc
 
 | Golden rule  | merge  | rebase  |
 | --- | :---: | :---: |
-| 🍂Use merge in cases where you want a set of commits to be clearly grouped together in history 🍂Use rebase when you want to keep a linear commit history 🍂 DON’T use rebase on a public/shared branch   | ![](./images/gitteam/merge_pic.png) | ![](./images/gitteam/rebase_pic.png) |
+| 🍂Use merge in cases where you want a set of commits to be clearly grouped together in history 🍂Use rebase when you want to keep a linear commit history 🍂 DON’T use rebase on a public/shared branch   | <div markdown="1" width="200px"> ![](./images/gitteam/merge_pic.png) </div> | <div markdown="1" width="200px"> ![](./images/gitteam/rebase_pic.png) </div>|
 
 
 ## Git team of one
