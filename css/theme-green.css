@@ -135,16 +135,8 @@ li.sidebarTitle {
 }
 
 /* bootstrap alert-custom in place of alert-success */
-.alert-custom {
+.tony-custom {
     background-color: #d5eaec;
     border-color: #d6e9c6;
     color: #3c763d;
-  }
-  
-  .alert-custom hr {
-    border-top-color: #0e95c5;
-  }
-  
-  .alert-custom .alert-link {
-    color: #2b542c;
   }
