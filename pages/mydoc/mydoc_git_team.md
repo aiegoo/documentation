@@ -20,7 +20,7 @@ folder: mydoc
 
 | Golden rule  | merge  | rebase  |
 | --- | :---: | :---: |
-| 🍂Use merge in cases where you want a set of commits to be clearly grouped together in history              🍂Use rebase when you want to keep a linear commit history           🍂 DON’T use rebase on a public/shared branch                        [gitbucket](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing)  git checkout feature && git checkout -b temporary-branch && git rebase -i main  [Clean up the history] git checkout main && git merge temporary-branch                                     🍂 git pull --rebase | <img alt="merge pic" src="./images/gitteam/merge_pic.png" style="width: 200px;"/> | <img alt="rebase" src="./images/gitteam/rebase_pic.png" style="width: 200px;" />|
+| 🍂Use merge in cases where you want a set of commits to be clearly grouped together in history              🍂Use rebase when you want to keep a linear commit history           🍂 DON’T use rebase on a public/shared branch                      🍂  [gitbucket](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing)  🍂git checkout feature && git checkout -b temporary-branch && git rebase -i main  [Clean up the history] git checkout main && git merge temporary-branch                                     🍂 git pull --rebase | <img alt="merge pic" src="./images/gitteam/merge_pic.png" style="width: 200px;"/> | <img alt="rebase" src="./images/gitteam/rebase_pic.png" style="width: 200px;" />|
 |   | git checkout master && git merge feature | git checkout feature && git rebase master |
 
 
