@@ -246,7 +246,7 @@ div#toc ul li {
     list-style: square;
 }
 div#toc ul {
-    background-color: rgba(88, 88, 88, 0);
+    background-color: rgba(193, 179, 164, 0.35);
     padding: 5px;
     border-radius: 5px;
     max-width: 300px;
@@ -257,7 +257,9 @@ div#toc ul li ul {
     padding-left:8px;
 
 }
-
+div#toc ul li a:focus, a:hover {
+    color: rgba(6,46,82, 1);
+}
 div#toc ul li ul li::before {
     content: "–  ";
 }
