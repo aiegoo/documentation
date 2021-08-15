@@ -12,3 +12,5 @@ folder: mydoc
 ## Github Actions
 
 {% include tip.html content="daily tips: 1, 2, 3 and 4" %}
+
+{% include tony.html content="changed fa to fa-6x which would make font-size 700% %}
