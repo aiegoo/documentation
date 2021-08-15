@@ -881,6 +881,9 @@ span.soft {
     #mysidebar {
         position: relative;
     }
+    div#toc ul {
+        display: none;
+    }
 }
 
 @media (min-width: 1000px) {
