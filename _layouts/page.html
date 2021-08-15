@@ -55,15 +55,15 @@ layout: default
         {% endif %}
     </div>
 
+{% include commento.html %}
+
+</div>
+
 
     {% unless page.toc == false %}
     {% include toc.html %}
     {% endunless %}
     
-{% include commento.html %}
-
-</div>
-
 {{site.data.alerts.hr_shaded}}
 
 {% include footer.html %}
