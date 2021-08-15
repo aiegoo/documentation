@@ -250,12 +250,15 @@ div#toc ul {
     padding: 5px;
     border-radius: 5px;
     max-width: 300px;
-    color: rgba(246, 113, 3, 0.856) !important;
+    color: rgba(246, 113, 3, 0.856);
 }
 
 div#toc ul li ul {
     padding-left:8px;
 
+}
+div#toc ul li a {
+    color: rgba(246, 113, 3, 0.856) !important;
 }
 div#toc ul li a:focus, a:hover {
     color: rgba(6,46,82, 1);
