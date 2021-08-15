@@ -246,11 +246,11 @@ div#toc ul li {
     list-style: square;
 }
 div#toc ul {
-    background-color: whitesmoke;
+    background-color: rgba(88, 88, 88, 0);
     padding: 5px;
     border-radius: 5px;
     max-width: 300px;
-    color: gray;
+    color: rgba(246, 113, 3, 0.856);
 }
 
 div#toc ul li ul {
