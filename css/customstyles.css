@@ -881,7 +881,7 @@ span.soft {
     #mysidebar {
         position: relative;
     }
-    div#toc ul {
+    div#toc {
         display: none;
     }
 }
