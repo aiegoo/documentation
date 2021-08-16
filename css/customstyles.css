@@ -896,9 +896,9 @@ span.soft {
 
 @media (max-width: 1110px) {
 
-    div#toc ul {
+    div#toc {
         width: 80%;
-        margin-left: -50px;
+        
     }
 }
 @media (max-width: 900px) {
