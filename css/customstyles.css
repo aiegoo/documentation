@@ -896,9 +896,8 @@ span.soft {
 
 @media (max-width: 1110px) {
 
-    div#toc {
-        max-width: 100%;
-        font-size: 50%;
+    div#sidetoc {
+        opacity: 45%;
         
     }
 }
