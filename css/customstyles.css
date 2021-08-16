@@ -898,8 +898,7 @@ span.soft {
 
     div#toc {
         width: 80%;
-        z-index: auto;
-        padding-right: 50px;
+        right: -50px;
         
     }
 }
