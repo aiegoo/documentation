@@ -894,6 +894,14 @@ span.soft {
     }
 }
 
+@media (max-width: 1110px) {
+
+    div#sidetoc {
+        opacity: 45%;
+        
+    }
+}
+
 @media (max-width: 900px) {
 
     ul#mysidebar {
