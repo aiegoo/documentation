@@ -892,11 +892,14 @@ span.soft {
         width: 225px;
         position: fixed;
     }
+}
+
+@media (max-width: 1110px) {
+
     div#toc {
         width: 80%;
     }
 }
-
 @media (max-width: 900px) {
 
     ul#mysidebar {
