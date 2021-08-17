@@ -900,8 +900,13 @@ span.soft {
         opacity: 45%;
         
     }
+    div#toc {
+        opacity: 0;
+    }
+    div#toc:hover {
+        opacity: 40%;
+    }
 }
-
 @media (max-width: 900px) {
 
     ul#mysidebar {
