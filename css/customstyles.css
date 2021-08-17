@@ -251,6 +251,7 @@ div#toc ul {
     border-radius: 5px;
     max-width: 300px;
     color: rgba(246, 113, 3, 0.856);
+    overflow-y: auto;
 }
 
 div#toc ul li ul {
@@ -279,7 +280,6 @@ div#toc >ul::before {
     padding-top:20px;
     padding-bottom:20px;
     padding-left:10px;
-    overflow-y: auto;
 }
 
 li.dropdownActive a {
