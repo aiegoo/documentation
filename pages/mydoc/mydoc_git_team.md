@@ -126,7 +126,7 @@ The most commonly used ghi commands are:
 ![gitflow](https://user-images.githubusercontent.com/42961200/127790771-eeb74013-0a52-4873-993f-250950ae62f1.jpg)
 
 
-### comand and control
+### command and control
 
 
 ### Working in a team
