@@ -9,6 +9,9 @@ permalink: books_matlab_essential.html
 folder: books
 series: "MATLAB series"
 weight: 1
+simple_map: true
+map_name: matlab
+box_number: 1
 ---
 
 {% include custom/series_matlab_next.html %}
