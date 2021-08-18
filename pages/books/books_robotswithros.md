@@ -3,7 +3,7 @@ title: programing robots with ros
 tags: [books, getting_started]
 last_updated: August 18, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
-summary: "ROS systems are comprised of a large number of independent programs that are constantly communicating with each other"
+summary: "ROS systems are comprised of a large number of independent programs that are constantly communicating with each other, which is designed to encourage reuse of robotics sw within and outside nodes. This loosely coupled structure creates generic modules applicable to hw/sw pipelines."
 sidebar: mydoc_sidebar
 permalink: books_robotswithros.html
 folder: books
@@ -21,13 +21,12 @@ box_number: 4
 ## the book
 [doc](https://github.com/aiegoo/matlab/blob/edit/pdf/robotswithros.pdf)
 
-- rotations, orientation, and quaternions
-- introduction to simulating IMU measurements
-- estimate positon and orientation of a ground vehicle
-- esitamte robot pose with scan matching
-- plan mobile robot paths using RRT (rapidly exploring random tree)
-- implement simultaneous localization and mapping with algorithm
-- perform slam using 3-d lidar point clouds
+## ROS graph
+- navigation, computer vision, grasping
+- security patrols, cleaning, delivery
+- messages, graph nodes, edges
+
+
 
 [![image](https://user-images.githubusercontent.com/42961200/129006952-8894b07f-de23-4d9f-bf39-c2a3ee532549.png)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
 
