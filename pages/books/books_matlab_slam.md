@@ -10,7 +10,7 @@ folder: books
 series: "MATLAB series"
 weight: 3
 simple_map: true
-map_name: matlabmap
+map_name: matlab
 box_number: 3
 ---
 
