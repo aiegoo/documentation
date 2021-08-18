@@ -9,6 +9,9 @@ permalink: rfly_advanced.html
 series: "RFLY series"
 weight: 2
 folder: rfly
+simple_map: true
+map_name: usermap
+box_number: 1
 ---
 
 {% include custom/series_rfly_next.html %}
