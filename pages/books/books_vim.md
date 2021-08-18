@@ -9,7 +9,7 @@ permalink: books_vim.html
 folder: books
 ---
 
-{% include custom/tony.html content="vim, emmet, plugins, tmux books%}
+{% include tony.html content="vim, emmet, plugins, tmux books%}
 
 ## vim emmet cli
 
