@@ -26,12 +26,16 @@ box_number: 4
 - security patrols, cleaning, delivery
 - messages, graph nodes, edges
 - roscore, rosrun, roslaunch, name, namespace, remapping
+- ros_master_uri, parameter server
+- catkin, workspace(catkin_ws, catkin_make), CMakeLists.txt and package.xml
 
 ![image](https://user-images.githubusercontent.com/42961200/129859786-7f3c2d80-bc8c-4121-a6af-c6e0278258c7.png)
 
-{% include note.html content="a ROS graph node represents a software module that is sending or receiving messages, and a ROS graph edge represents a stream of messages between two nodes. Although things can get more complex, typically nodes are POSIX processes, and edges are TCP connections." %}
+{% include note.html content="a ROS graph node represents a software module that is sending or receiving messages, and a ROS graph edge represents a stream of messages between two nodes. Although things can get more complex, typically nodes are POSIX processes, and edges are TCP connections. Roscore is a program that allows nodes to find other nodes. Catkin is the ROS build system: the set of tools that ROS uses to generate executable programs, libraries, scripts, and interfaces that other code can use" %}
 
 [![image](https://user-images.githubusercontent.com/42961200/129006952-8894b07f-de23-4d9f-bf39-c2a3ee532549.png)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
+
+[cakin_wiki](http://wiki.ros.org/catkin?distro=indigo)
 
 [![dynamicmap](./images/MotionPlanningUsingDynamicMapExample_03.gif)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
 
