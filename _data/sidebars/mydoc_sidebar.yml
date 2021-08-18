@@ -473,8 +473,8 @@ entries:
       url: /books_revealjs.html
       output: web, pdf
 
-    - title: more to come
-      url: /
+    - title: programming robots with ros
+      url: /books_robotswithros.html
       output: web, pdf
 
     - title: matlab
