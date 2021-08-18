@@ -59,6 +59,17 @@ $ git merge -s ours branch1 branch2 brancN  # resolve ours subtree octopus
 
 ```
 
+### rebase and merge
+
+```
+git checkout feature
+git checkout -b temporary-branch
+git rebase -i main
+# [Clean up the history]
+git checkout main
+git merge temporary-branch
+```
+
 - MEMO: 01daab67641deef5bfba8668973c13f48a562128
 - MEMO: git config --global --unset user.password
 - MEMO: sudo chmod 777 DIR_NAME
