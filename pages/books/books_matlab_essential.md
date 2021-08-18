@@ -10,7 +10,7 @@ folder: books
 series: "MATLAB series"
 weight: 1
 simple_map: true
-map_name: usermap
+map_name: matlabmap
 box_number: 2
 ---
 

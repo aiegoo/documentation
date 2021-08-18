@@ -9,6 +9,9 @@ permalink: books_matlab_slam.html
 folder: books
 series: "MATLAB series"
 weight: 3
+simple_map: true
+map_name: matlabmap
+box_number: 3
 ---
 
 {% include custom/series_matlab_next.html %}
