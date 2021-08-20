@@ -13,6 +13,7 @@ simple_map: true
 map_name: matlab
 box_number: 4
 ---
+{% include tony.html content="matlab tutorials and gcs.uno are the main source of learning for now" %}
 
 {% include custom/series_matlab_next.html %}
 # Installation
@@ -35,13 +36,9 @@ box_number: 4
 
 {% include tony.html content="a ROS graph node represents a software module that is sending or receiving messages, and a ROS graph edge represents a stream of messages between two nodes. Although things can get more complex, typically nodes are POSIX processes, and edges are TCP connections. Roscore is a program that allows nodes to find other nodes. Catkin is the ROS build system: the set of tools that ROS uses to generate executable programs, libraries, scripts, and interfaces that other code can use" %}
 
-[![image](https://user-images.githubusercontent.com/42961200/129006952-8894b07f-de23-4d9f-bf39-c2a3ee532549.png)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
 
 [cakin_wiki](http://wiki.ros.org/catkin?distro=indigo)
 
-[![dynamicmap](./images/MotionPlanningUsingDynamicMapExample_03.gif)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
-
-![](./pdf/gcs/matlab_flightsim.gif)
 
 ```cpp
 #include <string>
@@ -170,6 +167,14 @@ int main(int argc, char** argv) {
 
 ## Summary
 
-{% include tony.html content="matlab tutorials and gcs.uno are the main source of learning for now" %}
+
+[![image](https://user-images.githubusercontent.com/42961200/129006952-8894b07f-de23-4d9f-bf39-c2a3ee532549.png)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
+
+[cakin_wiki](http://wiki.ros.org/catkin?distro=indigo)
+
+[![dynamicmap](./images/MotionPlanningUsingDynamicMapExample_03.gif)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
+
+![](./pdf/gcs/matlab_flightsim.gif)
+
 
 {% include custom/series_matlab_next.html %}
