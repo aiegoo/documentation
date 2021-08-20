@@ -1,0 +1,509 @@
+
+<!-- Slick CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+<!-- Slick JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script src="https://www.youtube.com/s/player/50e823fc/www-widgetapi.vflset/www-widgetapi.js"></script>
+
+<!-- Fullscreen Modal CSS -->
+<style>
+    [youtubeouter] iframe {
+        max-width: 100%;
+    }
+
+    [youtubeouter="wide"] {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    [youtubeouter="wide"] iframe,
+    [youtubeouter="wide"] object,
+    [youtubeouter="wide"] embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    [youtubeouter="fixed"] {
+        position: relative;
+    }
+
+    [youtubeouter="fixed"] iframe,
+    [youtubeouter="fixed"] object,
+    [youtubeouter="fixed"] embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+    }
+
+    [youtubeouter="fixed"]:after {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #sp-youtube-layer {
+        z-index: 99999;
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #sp-youtube-layer {
+        background-image: url("images/blk-80.png");
+    }
+
+    #sp-youtube-layer * {
+        outline: none;
+    }
+
+    #sp-youtube-layer button {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #fff;
+    }
+
+    #sp-youtube-layer button p {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        color: #333;
+        font-size: 16px;
+        font-family: 'dotum';
+    }
+
+    #sp-youtube-layer button p:after {
+        content: '×';
+        padding-left: 1px;
+    }
+
+    #sp-youtube-layer ul {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    #sp-youtube-layer ul li {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    #sp-youtube-layer ul li div {
+        width: 50%;
+        min-width: 700px;
+        margin: 0 auto;
+    }
+
+    #sp-youtube-layer ul li div ol {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+
+    #sp-youtube-layer ul li div ol iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (min-width:1px) and (max-width:700px) {
+        #sp-youtube-layer {
+            cursor: pointer;
+        }
+
+        #sp-youtube-layer ul li div {
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+
+
+        html {
+            display: flex;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            max-height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .container {
+            max-height: 1080px;
+            overflow: hidden;
+        }
+        /* Important overide for /css/customstyles.css line: 912-917
+        ==============================================================*/
+        .col-md-9 img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .slick-demo {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1050;
+            /* display: none; */
+            overflow: hidden;
+            -webkit-overflow-scrolling: touch;
+            outline: 0;
+        }
+
+        /* Overlay */
+        .slick-demo-wrapper {
+            /* position: relative; */
+            max-height: 1080px;
+            overflow: hidden;
+
+        }
+        .slick-demo.overlay::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            z-index: 1;
+        }
+        .slick-demo.overlay::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: rgb(255, 255, 255);
+            /* position: absolute; */
+            z-index: 1;
+        }
+        .slick-dots {
+            bottom: 0;
+            z-index: 1;
+        }
+        .slick-dots-demo {
+            position: absolute;
+            display: block;
+            z-index: 1051;
+            display: flex;
+            justify-content: start;
+            width: 1170px;
+            list-style: none;
+            top: 6.5%;
+            left: 52%;
+            transform: translateX(-50%) translateY(-50%);
+            padding-left: 0;
+            opacity: 0;
+            transition: opacity .3s;
+            color: #333;
+            height: 160px;
+        }
+
+        .slick-dots-demo:hover {
+            opacity: 1;
+        }
+
+        .slick-dots-demo li button {
+            position: relative;
+            background-color: rgba(255, 255, 255, .85);
+            /* border: 1px solid #333; */
+            flex: 1 0 auto;
+            font-size: 11px;
+            letter-spacing: 0.03em;
+            padding: 0 9px;
+            margin: 0 3px;
+            line-height: 29px;
+            color: #333;
+            border: none;
+            box-shadow: inset 2px 1px 4px rgba(255,255,255 .7);
+            transition: background-color .3s;
+        }
+        .slick-dots-demo li button:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .slick-close {
+            width: 25px;
+            height: 25px;
+            font-size: 25px;
+            display: block !important;
+            position: absolute;
+            z-index: 1060;
+            right: 0;
+            cursor: pointer;
+            top: 7px;
+        }
+        .slick-slide {
+            position: relative;
+            /* height: 42vw; */
+        }
+
+        .slick-slide::before {
+            background-color: #000000;
+            opacity: 0.3;
+            z-index: 1;
+        }
+
+        .slick-slide iframe {
+            /* position: relative; */
+            pointer-events: none;
+        }
+
+        .caption,
+        .slick-slide::before,
+        .slick-slide {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .btn-open-modal {
+            margin-bottom: 0.5em;
+        }
+
+        .navbar-static-top.video-active {
+            position: absolute;
+            width: 1170px;
+            height: auto;
+            display: block;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1055;
+        }
+
+        .navbar-static-top.navbar-inverse.video-active {
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        .video-wrapper {
+            position: absolute !important;
+            top: -254px !important;
+            left: 0 !important;
+            /* margin:-675px 0 0 -1500px; */
+            /* transform: translate(-50%,-50%); */
+            height: 1094px;
+            overflow: hidden;
+            z-index: 1053 !important;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            left: -100px;
+            z-index: 1054 !important;
+            pointer-events: all;
+        }
+
+</style>
+
+
+<!-- Slick demo START -->
+<div class="slick-demo-wrapper">
+
+            <div class="slick-demo">
+                    <img src="images/image_1.jpg" alt="test-alt" data-dots-color="#333">
+                    <img src="images/image_2.jpg" alt="test-alt" data-dots-color="#333">
+                    <img src="images/image_3.jpg" alt="test-alt" data-dots-color="#333">
+                    <img src="images/image_4.jpg" alt="test-alt" data-dots-color="#333">
+                    <img src="images/image_6.gif" data-dots-color="#fff" alt="test-alt"> 
+
+                    <div class="video-wrapper">
+                        
+                        <div id="test_id" class="_hp_yt_player_class player"  data-videoid="0Rmz9_jagKo">
+
+                        </div>
+                    
+                    </div>
+
+            </div>
+
+            <ul class="slick-dots-demo" style="" role="tablist">
+                <li class="slick-active" role="presentation"><button type="button" role="tab"
+                        id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 6"
+                        tabindex="0" aria-selected="true">OUR DETAIL</button></li>
+                <li role="presentation"><button type="button" role="tab" id="slick-slide-control01"
+                        aria-controls="slick-slide01" aria-label="2 of 6" tabindex="-1">PROFESSIONAL</button></li>
+                <li role="presentation"><button type="button" role="tab" id="slick-slide-control02"
+                        aria-controls="slick-slide02" aria-label="3 of 6" tabindex="-1">PHOTOGRAPH</button></li>
+                <li role="presentation"><button type="button" role="tab" id="slick-slide-control03"
+                        aria-controls="slick-slide03" aria-label="4 of 6" tabindex="-1">REASONABLE</button></li>
+                <li role="presentation"><button type="button" role="tab" id="slick-slide-control04"
+                        aria-controls="slick-slide04" aria-label="5 of 6" tabindex="-1">zara manMovie</button></li>
+                        <li role="presentation"><button type="button" role="tab" id="slick-slide-control04"
+                        aria-controls="slick-slide04" aria-label="5 of 6" tabindex="-1">zara manMovie</button></li>
+                <li role="presentation"><button type="button" role="tab" id="slick-slide-control05"
+                        aria-controls="slick-slide05" aria-label="6 of 6" tabindex="-1">[ ▶ ] ZARA SPRING SUMMER 2016</button></li>
+            </ul>
+        </div><!-- /.slick-demo-wrapper END -->
+
+<!-- Slick JS Init. -->
+<script>
+    /* Player functions option 2 */
+    if(!document.getElementById('yt-player-api')) {
+        var tag = document.createElement("script");
+        tag.id = 'yt-player-api';
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName("script")[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+
+    players = null;
+
+    window.onYouTubeIframeAPIReady = function() {
+
+        var playerDivs = document.querySelectorAll("._hp_yt_player_class"); // get .player nodes
+        var playerDivsArr = [].slice.call(playerDivs); // nodelist to array to use forEach();
+        players = new Array(playerDivsArr.length);
+
+        // console.log(players);
+
+        // create yt players
+        playerDivsArr.forEach(function(e, i) { // forEach ...
+
+            players[e.id] = new YT.Player(e.id, {
+                    width: "2000",
+                    height: "1350",
+                    videoId: jQuery(e).data('videoid'),
+                    playerVars: {
+                        playsinline: 1,
+                        enablejsapi: 1,
+                        autoplay: 0, 
+                        rel: 0,
+                        "host": "http://127.0.0.1:4000",
+                        "origin": "http://127.0.0.1:4000"
+                    },
+                    events: {
+                        "onReady": onPlayerReady,
+                        "onStateChange": onPlayerStateChange
+                    }
+                });
+            });
+
+            console.log(players);            
+        }
+
+        function onPlayerReady(event) {
+            players['test_id'].mute();
+            players['test_id'].playVideo();
+        }
+
+
+        var done = false;
+        function onPlayerStateChange(event) {
+            // console.log(event);
+            if (event.data == YT.PlayerState.ENDED) {
+                $('.slick-close').trigger('click');
+                $('.slick-demo').slick('slickGoTo', 0);
+                done = true;
+            }
+        }
+
+        function playVideo() {
+            players['test_id'].playVideo();
+        }
+
+        function stopVideo() {
+            players['test_id'].stopVideo();
+        }
+
+        function pauseVideo() {
+            players['test_id'].pauseVideo();
+        }
+
+	// 유투브 플레이어 //
+    $(document).ready(function(){
+        
+        // setYoutubePlayer( $('[youtubeouter]') );
+
+        var slideWrapper = $('.slick-demo').slick({
+            dots: false,
+            arrows: false,
+            infinite: false,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            appendDots: '.slick-demo',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            initialSlide: 0
+        });
+
+        // Initialize
+        slideWrapper.on("init", function(slick){
+            // var cur_target = $(slider.currentTarget);
+            pauseVideo();
+            // console.log('TEST');
+            // $(slick).append('<div class="slick-close">x</div>');
+        });
+
+        slideWrapper.on("beforeChange", function(event, slider, nextSlide) {
+            var slider = $(slider.$slider);
+        });
+
+        var i = false;
+        slideWrapper.on("afterChange", function(event, slider, foo) {
+            var slider = $(slider.$slider);
+
+            if(foo == $(slider).find('.slick-slide').length-1) {
+                slider.slick('slickPause');
+            }
+            if($('.slick-current').find('iframe').length) {
+                $('.navbar-static-top').addClass('video-active');
+                playVideo();
+            } else {
+                $('.navbar-static-top').removeClass('video-active');
+                pauseVideo();
+            }
+        });
+
+        slideWrapper.addClass('overlay');
+
+
+        $('.slick-dots-demo li').each(function(){
+            $(this).click(function(e){
+                var slide = $(this).find('button').attr('id').substring(20);
+                slideWrapper.slick('slickGoTo', slide);
+            });
+        });
+
+        $('.slick-demo').append('<div class="slick-close">x</div>');
+
+        $('.slick-close').click(function(){
+            $('.slick-demo').hide(430);
+            $('.slick-dots-demo').hide(430);
+            $('.slick-demo').removeClass('overlay');
+            $(this).fadeOut(430);
+
+            if($('.navbar-static-top').hasClass('video-active')) {
+                $('.navbar-static-top').removeClass('video-active');
+            }
+        });
+	});      
+</script>

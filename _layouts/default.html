@@ -72,7 +72,7 @@
     {% endif %}
 
 </head>
-<body>
+<body onload="";>
 {% include topnav.html %}
 <!-- Page Content -->
 <div class="container">
@@ -85,11 +85,12 @@
             <div class="col-md-3" id="tg-sb-sidebar">
                 {% include sidebar.html %}
             </div>
-            {% assign content_col_size = "col-md-6" %}
+            {% assign content_col_size = "col-md-9" %}
         {% endunless %}
 
         <!-- Content Column -->
         <div class="{{content_col_size}}" id="tg-sb-content">
+            {% include banner.html %}
             {{content}}
         </div>
     <!-- /.row -->
@@ -105,4 +106,4 @@
 {% endif %}
 </html>
 
-{% comment %} Copyright {% endcomment %}
+{% comment %} Copyright 2021 Google LLC {% endcomment %}
