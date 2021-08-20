@@ -21,13 +21,15 @@ box_number: 4
 ## the book
 [doc](https://github.com/aiegoo/matlab/blob/edit/pdf/robotswithros.pdf)
 
-## ROS graph
+## Fundamentals
+### ROS graph
 - navigation, computer vision, grasping
 - security patrols, cleaning, delivery
 - messages, graph nodes, edges
 - roscore, rosrun, roslaunch, name, namespace, remapping
 - ros_master_uri, parameter server
 - catkin, workspace(catkin_ws, catkin_make), CMakeLists.txt and package.xml
+- roslaunch
 
 ![image](https://user-images.githubusercontent.com/42961200/129859786-7f3c2d80-bc8c-4121-a6af-c6e0278258c7.png)
 
@@ -106,6 +108,68 @@ int main(int argc, char** argv) {
     return 0;
 }
 ```
+
+## Moving around using ROS
+
+### Teleop-bot
+
+### Building maps of the world
+
+
+### Navigating about the world
+
+
+### Chess-bot
+
+
+## Perception and behavior
+
+### Follow-bot
+
+### On patrol
+
+
+### Stockroom bot
+
+
+## Bringing your own stuff into ROS
+
+
+### Your own sensors and actuators
+
+
+### Your own mobile robot
+
+
+### Your own mobile robot 2
+
+
+### Your own robot arm
+
+
+
+### Adding software library
+
+
+
+## Tips and tricks
+
+
+### Tools
+
+
+### Debugging robot behavior
+
+
+### the ros community: online resources
+
+
+
+### Using CPP in ROS
+
+
+## Summary
+
 {% include tony.html content="matlab tutorials and gcs.uno are the main source of learning for now" %}
 
 {% include custom/series_matlab_next.html %}
