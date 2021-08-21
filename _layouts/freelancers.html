@@ -101,13 +101,13 @@ summary: my freelancers I work with.
         <!-- Content Column -->
 
         <div class="{{content_col_size}}" id="tg-sb-content">
-        {% for freelancers in site.freelancers %}
+        {% for freelancer in site.freelancers %}
           <h2>
-            <a href="{{ freelancers.url | prepend: site.baseurl }}">
-              {{ freelancers.name }} - {{ freelancers.skills }}
+            <a href="{{ freelancer.url | prepend: site.baseurl }}">
+              {{ freelancer.name }} - {{ freelancer.skills }}
             </a>
           </h2>
-          <p>{{ freelancers.content | markdownify }}</p>
+          <p>{{ freelancer.content | markdownify }}</p>
         {% endfor %}
     <!-- /.row -->
 </div>
