@@ -6,7 +6,7 @@ hide: false
 toc: false
 sidebar: mydoc_sidebar
 permalink: freelancers.html
-summary: my freelancers I work with.
+summary: my freelancers I work with since 2018.
 collection: freelancers
 entries_layout: grid
 classes: wide
