@@ -430,7 +430,7 @@ ul#mysidebar {
     padding-left:10px;
 }
 
-.nav li ul li a:visited {
+.nav>li>ul>li>a:visited {
     border-color: transparent transparent transparent #c3c309;
     color: goldenrod !important;
 }
