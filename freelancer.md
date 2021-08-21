@@ -5,7 +5,7 @@ tags: [getting_started,drone]
 hide: false
 toc: false
 sidebar: mydoc_sidebar
-permalink: /freelancer.html
+permalink: freelancer.html
 summary: my freelancers I work with.
 ---
 
