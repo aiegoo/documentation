@@ -386,6 +386,7 @@ a.accordion-toggle, a.accordion-collapsed {
     line-height: 18px;
     padding: 2px 10px;
     background-color: #f1f1f1;
+    color: #333 !important;
 }
 
 .nav > li > a {
