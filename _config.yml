@@ -104,7 +104,7 @@ defaults:
 
   # _freelancers
   - scope:
-      path: ""
+      path: "/freelancers/"
       type: portfolio
     values:
       layout: single
