@@ -1,6 +1,7 @@
 ---
 layout: page
 title: faheem
+permalink: faheem.html
 skills: Electrical Engineer with skills of designing.
 link: https://www.freelancer.com/u/tonyleekorea
 ---

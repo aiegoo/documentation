@@ -1,7 +1,7 @@
 ---
 layout: page
 title: tony
-permalink: /freelancers/tony.html
+permalink: tony.html
 skills: Electrical Engineer with skills of designing.
 link: https://www.freelancer.com/u/tonyleekorea
 ---
