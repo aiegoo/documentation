@@ -89,14 +89,16 @@
         {% endunless %}
 
         <!-- Content Column -->
+
+        <div class="{{content_col_size}}" id="tg-sb-content">
         {% for freelancer in site.freelancers %}
-  <h2>
-    <a href="{{ freelancer.url }}">
-      {{ freelancer.name }} - {{ freelancer.skills }}
-    </a>
-  </h2>
-  <p>{{ freelancer.content | markdownify }}</p>
-{% endfor %}
+          <h2>
+            <a href="{{ freelancer.url }}">
+              {{ freelancer.name }} - {{ freelancer.skills }}
+            </a>
+          </h2>
+          <p>{{ freelancer.content | markdownify }}</p>
+        {% endfor %}
     <!-- /.row -->
 </div>
 <!-- /.container -->
