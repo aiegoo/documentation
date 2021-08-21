@@ -66,7 +66,7 @@ collections:
   freelancers:
     output: true
     people: true
-    permalink: /my-freelancers/:name
+    permalink: /freelancers/:name
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
