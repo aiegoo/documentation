@@ -432,7 +432,7 @@ ul#mysidebar {
 
 .nav li a:visited {
     border-color: transparent transparent transparent #c3c309;
-    color: goldenrod;
+    color: goldenrod !important;
 }
 /* end sidebar */
 
