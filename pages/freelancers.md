@@ -13,14 +13,14 @@ classes: wide
 layout: page
 ---
 
-{% for freelancers in site.freelancers %}
 
-<a href="{{ freelancers.url | prepend: site.baseurl }}">
-  <h2>{{ freelancers.title }}</h2>
-</a>
-
-<p class="post-excerpt">{{ themes.description | truncate: 160 }}</p>
-
-{% endfor %}  
+{% for freelancer in site.freelancers %}
+<h2>
+     <a href="{{ freelancer.url | prepend: site.baseurl }}">
+     {{ freelancer.name }} - {{ freelancer.skills }}
+     </a>
+</h2>
+<p>{{ freelancer.content | markdownify }}</p>
+{% endfor %}
 
 {% include links.html %}
