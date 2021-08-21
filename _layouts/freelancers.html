@@ -103,7 +103,7 @@ summary: my freelancers I work with.
         <div class="{{content_col_size}}" id="tg-sb-content">
         {% for freelancers in site.freelancers %}
           <h2>
-            <a href="{{ freelancers.url }}">
+            <a href="{{ freelancers.url | prepend: site.baseurl }}">
               {{ freelancers.name }} - {{ freelancers.skills }}
             </a>
           </h2>
