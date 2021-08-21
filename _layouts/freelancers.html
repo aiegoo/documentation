@@ -99,9 +99,16 @@ summary: my freelancers I work with.
         {% endunless %}
 
         <!-- Content Column -->
-
         <div class="{{content_col_size}}" id="tg-sb-content">
-        {{ content }}
+        {% assign freelancers = site.freelancers %}
+          {% for freelancer in freelancers %}
+          <h2>
+              <a href="{{ freelancer.url | prepend: site.baseurl }}">
+              {{ freelancer.name }} - {{ freelancer.skills }}
+              </a>
+          </h2>
+          <p>{{ freelancer.content | markdownify }}</p>
+          {% endfor %}
         </div>
     </div> <!-- /.row -->
   </div> <!-- /#main -->
