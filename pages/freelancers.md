@@ -12,8 +12,8 @@ layout: page
 ---
 
 ## my 100 supporters
-
-{% for freelancer in site.freelancers %}
+{% assign freelancers = site.freelancers %}
+{% for freelancer in freelancers %}
 <h2>
      <a href="{{ freelancer.url | prepend: site.baseurl }}">
      {{ freelancer.name }} - {{ freelancer.skills }}
