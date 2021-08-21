@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: freelancer
 title: faheem
 skills: Electrical Engineer with skills of designing.
 ---
