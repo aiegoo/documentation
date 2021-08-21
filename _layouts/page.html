@@ -34,10 +34,6 @@ layout: default
     <div class="summary">{{page.summary}}</div>
    {% endif %}
 
-    {% unless page.toc == false %}
-    {% include toc.html %}
-    {% endunless %}
-
 
     {% if site.github_editme_path %}
 
@@ -62,6 +58,10 @@ layout: default
 {% include commento.html %}
 
 </div>
+
+    {% unless page.toc == false %}
+    {% include toc.html %}
+    {% endunless %}
 
 {{site.data.alerts.hr_shaded}}
 

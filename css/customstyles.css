@@ -242,22 +242,29 @@ ul#results-container a:hover {
 
 div#toc ul li {
     margin: 8px 0px 8px 22px;
-    font-size: 90%;
+    font-size: 70%;
     list-style: square;
 }
 div#toc ul {
-    background-color: whitesmoke;
+    background-color: rgba(188, 210, 172, 0.52) !important;
     padding: 5px;
     border-radius: 5px;
     max-width: 300px;
-    color: gray;
+    color: rgba(246, 113, 3, 0.856);
+    overflow-y: auto;
 }
 
 div#toc ul li ul {
     padding-left:8px;
 
 }
+div#toc ul li a {
+    color: rgba(158, 74, 3, 1) !important;
+}
 
+div#toc ul li:focus, li:hover, li a:focus, li a:hover {
+    color: rgba(6,46,82, 1) !important;
+}
 div#toc ul li ul li::before {
     content: "–  ";
 }
@@ -269,7 +276,7 @@ div#toc >ul::before {
     text-align:center;
     margin-left:auto;
     margin-right:auto;
-    width:70px;
+    width:90px;
     padding-top:20px;
     padding-bottom:20px;
     padding-left:10px;
@@ -875,6 +882,9 @@ span.soft {
     #mysidebar {
         position: relative;
     }
+    div#toc {
+        display: none;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -885,6 +895,19 @@ span.soft {
     }
 }
 
+@media (max-width: 1110px) {
+
+    div#sidetoc {
+        opacity: 45%;
+        
+    }
+    div#toc {
+        opacity: 0;
+    }
+    div#toc:hover {
+        opacity: 40%;
+    }
+}
 @media (max-width: 900px) {
 
     ul#mysidebar {

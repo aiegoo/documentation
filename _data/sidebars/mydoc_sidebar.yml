@@ -238,8 +238,8 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Instrucdtions&&documentation
-          url: /mydoc_commenting_on_files.html
+        - title: start here with guides
+          url: /rfly_starthere.html
           output: web
 
         - title: Implementating Pixhawk Cube
@@ -473,8 +473,16 @@ entries:
       url: /books_revealjs.html
       output: web, pdf
 
-    - title: more to come
-      url: /
+    - title: vim
+      url: /books_vim.html
+      output: web, pdf
+
+    - title: programming robots with ros
+      url: /books_robotswithros.html
+      output: web, pdf
+
+    - title: matlab
+      url: /books_matlab_essential.html
       output: web, pdf
 
     - title: drone companies

@@ -29,5 +29,12 @@ allowed-tags:
   - xfile
   - webdev
   - books
+  - matlab
+  - rflysim
+  - slam
+  - navigator
+  - dynamic-occupancy
+  - motion-planning
+  - rrt
 
 # Copyright 2021 Google LLC
