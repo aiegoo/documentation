@@ -7,6 +7,10 @@ toc: false
 sidebar: mydoc_sidebar
 permalink: freelancers.html
 summary: my freelancers I work with.
+collection: freelancers
+entries_layout: grid
+classes: wide
+layout: page
 ---
 
 {% for freelancers in site.freelancers %}
