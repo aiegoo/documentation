@@ -19,7 +19,8 @@ layout: page
      {{ freelancer.name }} - {{ freelancer.skills }}
      </a>
 </h2>
-<p>{{ freelancer.content | markdownify }}</p>
+<p> {{ freelancer.content | markdownify }} </p>
 {% endfor %}
+<p> hello from pages directory</p>
 
 {% include links.html %}
