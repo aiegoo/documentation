@@ -1,18 +1,7 @@
----
-title: "🌱freelancers"
-keywords: freelancers
-tags: [getting_started,drone]
-hide: false
-toc: false
-sidebar: mydoc_sidebar
-permalink: "/freelancers/"
-summary: my freelancers I work with.
----
-
 <!DOCTYPE html>
 <html>
 <head>
-{% include head.html %}
+    {% include head.html %}
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -81,6 +70,7 @@ summary: my freelancers I work with.
        });
     </script>
     {% endif %}
+
 </head>
 <body>
 {% include topnav.html %}
@@ -101,13 +91,13 @@ summary: my freelancers I work with.
         <!-- Content Column -->
 
         <div class="{{content_col_size}}" id="tg-sb-content">
-        {% for freelancers in site.freelancers %}
+        {% for freelancer in site.freelancers %}
           <h2>
-            <a href="{{ freelancers.url }}">
-              {{ freelancers.name }} - {{ freelancers.skills }}
+            <a href="{{ freelancer.url }}">
+              {{ freelancer.name }} - {{ freelancer.skills }}
             </a>
           </h2>
-          <p>{{ freelancers.content | markdownify }}</p>
+          <p>{{ freelancer.content | markdownify }}</p>
         {% endfor %}
     <!-- /.row -->
 </div>
