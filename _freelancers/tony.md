@@ -2,7 +2,7 @@
 layout: page
 title: tony
 permalink: tony.html
-skills: Electrical Engineer with skills of designing.
+skills: "Electrical, embedded"
 link: https://www.freelancer.com/u/tonyleekorea
 ---
 

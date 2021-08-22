@@ -2,7 +2,7 @@
 layout: page
 title: faheem
 permalink: faheem.html
-skills: Electrical Engineer with skills of designing.
+skills: "designer, php"
 link: https://www.freelancer.com/u/tonyleekorea
 ---
 
