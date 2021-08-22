@@ -292,7 +292,7 @@ div#toc >ul>li>a.active {
 }
 
 div#toc.toc {
-    font-size: 0.5rem;
+    font-size: 0.5rem !important;
     line-height: 70%;
 }
 
