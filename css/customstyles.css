@@ -291,6 +291,11 @@ div#toc >ul>li>a.active {
     color: #924dd3;
 }
 
+div#toc.toc {
+    font-size: 0.5rem;
+    line-height: 70%;
+}
+
 li.dropdownActive a {
     font-weight: bold;
 }
