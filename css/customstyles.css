@@ -751,6 +751,7 @@ ol.series li {
 
 #mysidebar .nav ul {
     background-color: #FAFAFA;
+    line-height: 130%;
 }
 .nav ul.series li {
     list-style: decimal;
