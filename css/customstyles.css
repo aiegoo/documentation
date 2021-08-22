@@ -283,6 +283,13 @@ div#toc >ul::before {
     padding-left:10px;
 }
 
+div#toc >ul>li>a.active {
+    font-weight: bold;
+    transition: all 0.125s ease-in 0s;
+    font-size: 0.45rem;
+    color: #924dd3;
+}
+
 li.dropdownActive a {
     font-weight: bold;
 }
