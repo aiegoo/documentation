@@ -3,7 +3,7 @@ title: "🌱freelancers"
 keywords: freelancers
 tags: [getting_started,drone]
 hide: false
-toc: false
+toc: true
 sidebar: mydoc_sidebar
 permalink: freelancers.html
 summary: my freelancers I work with since 2018.
