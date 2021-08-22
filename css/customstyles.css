@@ -265,6 +265,8 @@ div#toc ul li a {
 
 div#toc ul li:focus, li:hover, li a:focus, li a:hover {
     color: rgba(6,46,82, 1) !important;
+    font-size: 0.8rem;
+    transition: all 0.125s ease-in 0s;
 }
 div#toc ul li ul li::before {
     content: "–  ";
