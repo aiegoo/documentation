@@ -57,3 +57,5 @@ DShot1200 at 1200kbaud
 Bi-directional DShot at 150, 300, 600 and 1200kbaud on supported firmware
 
 [ardupilot](https://ardupilot.org/copter/docs/common-dshot.html)
+
+[**Preview**]({{page.link}})

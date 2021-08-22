@@ -7,3 +7,5 @@ link: https://github.com/aiegoo/portfolio/wiki/jetbot
 ---
 ## Jetbot Nvidia Nano RAPA project
 
+
+[**Preview**]({{page.link}})

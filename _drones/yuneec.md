@@ -140,5 +140,4 @@ Main LED Status Indicator |  |
 
 ![SmartSelect_20210704-073148_Acrobat for Samsung](https://user-images.githubusercontent.com/42961200/124368223-f72d9a00-dc99-11eb-9a98-d3ec1b60538a.jpg)
 
-
 [**Preview**]({{page.link}})

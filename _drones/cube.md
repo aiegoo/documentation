@@ -7,3 +7,4 @@ link: https://github.com/aiegoo/portfolio/wiki/cube
 ---
 
 ## Pixhawk Cube Black
+[**Preview**]({{page.link}})

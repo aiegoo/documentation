@@ -30,3 +30,4 @@ link: https://github.com/aiegoo/portfolio/wiki/skyhero
 > Devention
 [site](https://www.manualslib.com/products/Devention-Devo-F12e-3790325.html)
 [pdf](./devo_f12e.pdf)
+[**Preview**]({{page.link}})
