@@ -406,6 +406,7 @@ a.accordion-toggle, a.accordion-collapsed {
 
 ul#mysidebar {
     border-radius:0px;
+    line-height: 130%;
 }
 
 .nav ul li ul li a {
@@ -751,7 +752,6 @@ ol.series li {
 
 #mysidebar .nav ul {
     background-color: #FAFAFA;
-    line-height: 130%;
 }
 .nav ul.series li {
     list-style: decimal;
