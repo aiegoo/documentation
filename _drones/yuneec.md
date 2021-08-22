@@ -13,11 +13,8 @@ link: https://github.com/aiegoo/portfolio/wiki/yuneec
 
 > Overview
 
-Thermal imaging is of high-value for Solar Inspection, Law Enforcement, Fire Fighting, Search & Rescue and Construction – the Typhoon H Thermal provides you with a low-cost, high-performance thermal system for these applications. The Yuneec Typhoon H Thermal combines the award winning Typhoon H Hexacopter with the CGOET thermal imaging and RGB camera. While the Typhoon H provides useful functions for commercial use, the CGOET provides not only thermal images, but also low-light capability, designed for monitoring in twilight or dark environments. Both thermal and RGB images are simultaneously recorded to separate streams for ease of playback and editing.
 
 > Typhoon H Hexacopter 
-
-The proven Typhoon H is a safe Hexacopter system with 6 rotors. All 6 rotor arms can be folded for easy handling and compact transport of the copter. Thanks to the quick-release system, the assembly and disassembly of the propeller is easy and quick. Despite these simple actions, the high-performance propellers of the Typhoon H ensure agility, speed and direct implementation of control commands during flight. Thanks to the integrated 5-rotor mode, the copter switches from 6 to 5 rotors in the event of a rotor failure and can still be safely flown and landed. In addition, the Typhoon H has other security features, such as a manually adjustable virtual boundary that prevents the copter from flying too far or too close to you.
 
 > Autonomous flight modes allow you to recall pre-programmed tracking shots while focusing on the camera:
 
@@ -36,7 +33,6 @@ The CGOET is an innovative combination of 3-axis gimbal, thermal imaging camera 
 
 > ST16 All-in-One Transmitter
 
-The ST16 Ground Station is an integrated transmitter, receiver and Android platform that gives you full control over Typhoon H, allowing you to easily program autonomous flight and capture stunning photos and videos. The large 7-inch integrated screen displays real-time footage of your flight, eliminating the need for an external device.
 
 > Scope Of Delivery
 
@@ -44,25 +40,6 @@ The Typhoon H with CGOET includes: Typhoon H hexacopter, CGOET thermal imaging a
 
 > Everything At A Glance
 
-- Typhoon H with CGOET Thermal and RGB camera
-- Temperature measurement and display
-- Various color spectra allow an accurate visualization of heat sources
-- Adjustable temperature detection scale to focus on relevant areas
-- Gimbal mounted IR for smooth detection display
-- Large IR sensor detects greater detail in the dark than the human eye and is ideal for surveillance
-- Thermal and available light recorded simultaneously, so video is frame-accurate in playback with embedded timecode
-- Intel® RealSense™ technology with automatic obstacle and collision avoidance system availablable separatly
-- Including ST16 controller with integrated Android operating system
-- Diverse, versatile and intelligent flight modes (Orbit, POI, Journey, Curve Cable Cam, Follow Me, Return Home)
-- Quick and easy switching between individual applications
-- Increased flight safety thanks to the 5-rotor mode  – Flight safety is maintained even when automatically switching from 6 to 5 rotors whenever a motor fails
-- Retractable landing gear and arms for convenient transport
-- Cooling system for flights at high temperatures
-- Capable of flying even in strong winds
-- Team mode with Typhoon Wizard and ST16
-- Easy to maintain and handle
-- Small parts are available as spare parts
-- Compatible with the CGO3+ camera
 
 |DRONE:|—————|
 |:----|:----|
