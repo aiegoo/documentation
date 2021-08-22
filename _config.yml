@@ -1,6 +1,6 @@
 repository: aiegoo/documentation
 url: aiegoo.github.io
-baseurl: /documentation
+baseurl: /matlab
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
@@ -45,7 +45,7 @@ feedback_email: onofftony@gmail.com
 feedback_text: "portfolio wiki"
 # if you uncomment the previous line, it changes the Feedback text
 
-feedback_link: "https://aiegoo.github.io/portfolio"
+feedback_link: "https://aiegoo.github.io/matlab"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge

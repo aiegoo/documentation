@@ -21,6 +21,5 @@ layout: page
 </h2>
 <p> {{ freelancer.content | markdownify }} </p>
 {% endfor %}
-<p> hello from pages directory</p>
 
 {% include links.html %}
