@@ -1,5 +1,5 @@
 ---
-title: "🌱drones"
+title: ":flying_saucer: drones"
 keywords: drones
 tags: [getting_started,drone]
 hide: false
