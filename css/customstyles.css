@@ -252,6 +252,7 @@ div#toc ul {
     max-width: 300px;
     color: rgba(246, 113, 3, 0.856);
     overflow-y: auto;
+    line-height: 70%;
 }
 
 div#toc ul li ul {
