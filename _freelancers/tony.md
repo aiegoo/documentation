@@ -6,20 +6,25 @@ skills: "Electrical, embedded"
 link: https://www.freelancer.com/u/tonyleekorea
 ---
 
-I have done some projects related to MATLAB and tasks related to Machine Learning. I have got a lot of experience in writing and in presentations during my degree program
+I have done some projects related to MATLAB and tasks related to Machine Learning. 
 
-# Features
+## Some of my land/air vehicle projects
 
-## Customizable theme
+- VTOL **Portal of vtol codebase** [repowiki](https://github.com/aiegoo/_mydrone-ROS-packages/wiki)
+- Advanced ND project **UAV gui** [repo](https://github.com/aiegoo/_mydrone)
+- GCS ground control station **GCS codebase** [repo](https://github.com/aiegoo/_mydrone-scripts) 
+- RVIZ simuator **C++ GAZEBO** [repo](https://github.com/aiegoo/road_detection)
+- Computer vision **Road Detection** [repo](https://github.com/aiegoo/Proj_road_detection-)
+- Raspberry Pi project **LORA and sensors** [repo](https://github.com/aiegoo/django-raspi) or [here](https://github.com/aiegoo/raspi-source)
 
-The theme can be customized just by changing few variables in **\_config.yml** file.
 
-## Inline CSS
-
-Since the style used in this theme is very less, I'm inlining it. This will save a request and hence speeds up website loading.
-
-## Light-weight
-
-Since the theme is based on default Jekyll theme, it is very light-weight. No JavaScript except analytics is used!
+```diff
++ Mastering ROS for Robotics Programming Packt
+- Learning ROS for Robotic Programming 2nd Edition
+@@ ROS for Beginners, Basics, Motion and OpenCV @@
+! ROS로보틱스 
+Boost.Asio C++ 네트워크 프로그래밍 쿡북
+- Programming Robots With ROS
+```
 
 [**Preview**]({{page.link}})
