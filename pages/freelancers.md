@@ -16,7 +16,7 @@ layout: page
 {% for freelancer in freelancers %}
 <h2>
      <a href="{{ freelancer.url | prepend: site.baseurl }}">
-     {{ freelancer.title }} - {{ freelancer.skills }}
+     {{ freelancer.name }} - {{ freelancer.skills }}
      </a>
 </h2>
 <p> {{ freelancer.content | markdownify }} </p>

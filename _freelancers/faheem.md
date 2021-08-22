@@ -1,6 +1,6 @@
 ---
 layout: page
-title: faheem
+name: faheem
 permalink: faheem.html
 skills: "designer, php"
 link: https://www.freelancer.com/u/tonyleekorea

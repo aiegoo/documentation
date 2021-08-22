@@ -1,6 +1,6 @@
 ---
 layout: page
-title: tony
+name: tony
 permalink: tony.html
 skills: "Electrical, embedded"
 link: https://www.freelancer.com/u/tonyleekorea
