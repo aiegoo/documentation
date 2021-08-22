@@ -1,3 +1,10 @@
+---
+layout: page
+name: dalrc
+permalink: dalrc.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/dalrc
+---
 ## Darlc215
 
 | Type  | Details | Type  | Details |

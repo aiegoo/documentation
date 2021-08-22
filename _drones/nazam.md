@@ -1,3 +1,11 @@
+---
+layout: page
+name: nazam
+permalink: nazam.html
+type: "DJI, Assistant"
+link: https://github.com/aiegoo/portfolio/wiki/nazam
+---
+
 ## DJI Naza m Lite
 
 | Type  | Details | Type  | Details |

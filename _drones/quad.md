@@ -1,3 +1,10 @@
+---
+layout: page
+name: DJI Quad
+permalink: quad.html
+type: "DJI, Assistant"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+---
 ## dji quad custom frame
 
 ### overview

@@ -1,3 +1,10 @@
+---
+layout: page
+name: Racing Skyhero
+permalink: skyhero.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/skyhero
+---
 ## Skyhero 
 
 | Type  | Details | Type  | Details |

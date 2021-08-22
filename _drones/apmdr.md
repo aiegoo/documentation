@@ -1,3 +1,10 @@
+---
+layout: page
+name: bebop parrot
+permalink: bebop_parrot.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/parrot
+---
 ## Pixhawk lite
 
 | Type  | Details | Type  | Details |
@@ -50,5 +57,3 @@ DShot1200 at 1200kbaud
 Bi-directional DShot at 150, 300, 600 and 1200kbaud on supported firmware
 
 [ardupilot](https://ardupilot.org/copter/docs/common-dshot.html)
-
-

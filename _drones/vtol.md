@@ -1,3 +1,11 @@
+---
+layout: page
+name: Vtol
+permalink: vtol.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/vtol
+---
+
 ## Vtol and flight data analysis
 
 
@@ -7,12 +15,7 @@ Hello!
 
 Follow up work from this [post](https://discuss.ardupilot.org/t/airspeed-sensor-noise-problems-on-large-quadplane/32941) , we decided to go for another flight to get a better tuned pitch controller, rectify airspeed sensor problems and collect more flight data before we push for TECS tuning.
 
-We had 1 successful flight before this. Good thing is we have logs from 2 flights: 1 that flew ok. 1 that ended in a painful crash.
-
-For this flight, we took off and had reasonable **QLOITER** performance. I then switched mode from **QLOITER** to **AUTOTUNE** @ 20 meters. We saw a good transition. However, just when transition is declared done, the aircraft, with plenty of airspeed, decided to take a nose dive over a period of ~1.5 to 2 seconds.
-
-We have been studying the logs over the past 2 days and have not been able to identify what is happening. 
-
+We had 1 successful flightAPM, Mission-planner
 Points from on hardware that may not show on the dataflash logs
 * Post crash, Cube and servo power supply components still work.
 * Post crash, progressive build up of tests on servo system: all servos still work with servo tester, CAT6 cable + booster board pairs we got from ServoCity and when connected to MAIN2 of the smashed out Cube (apparently still working) in FBWA mode.
