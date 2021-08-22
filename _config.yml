@@ -67,6 +67,10 @@ collections:
     output: true
     people: true
     permalink: /freelancers/
+  drones:
+    output: true
+    people: true
+    permalink: /drones/
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
@@ -105,6 +109,15 @@ defaults:
   # _freelancers
   - scope:
       path: "/freelancers/"
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+  # _drones
+  - scope:
+      path: "/drones/"
       type: portfolio
     values:
       layout: single
