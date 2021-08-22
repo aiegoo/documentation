@@ -22,4 +22,6 @@ layout: page
 <p> {{ drone.content | markdownify }} </p>
 {% endfor %}
 
+[**Preview**]({{page.link}})
+
 {% include links.html %}
