@@ -95,15 +95,15 @@ summary: my drones I work with and at my disposal.
             <div class="col-md-3" id="tg-sb-sidebar">
                 {% include sidebar.html %}
             </div>
-            {% assign content_col_size = "col-md-6" %}
+            {% assign content_col_size = "col-md-9" %}
         {% endunless %}
 
         <!-- Content Column -->
         <div class="{{content_col_size}}" id="tg-sb-content">
         {% assign drones = site.drones %}
-          {% for drone in freelancers %}
+          {% for drone in drones %}
           <h2>
-              <a href="{{ freelancer.url | prepend: site.baseurl }}">
+              <a href="{{ drone.url | prepend: site.baseurl }}">
               {{ drone.name }} - {{ drone.type }}
               </a>
           </h2>
