@@ -1,25 +1,25 @@
 ---
-title: "🌱freelancers"
-keywords: freelancers
+title: "🌱drones"
+keywords: drones
 tags: [getting_started,drone]
 hide: false
 toc: true
 sidebar: mydoc_sidebar
-permalink: freelancers.html
-summary: my freelancers I work with since 2018.
-collection: freelancers
+permalink: drones.html
+summary: my drones I work with and at my disposal.
+collection: drones
 layout: page
 ---
 
-## my 100 supporters
-{% assign freelancers = site.freelancers %}
-{% for freelancer in freelancers %}
+## my drones
+{% assign drones = site.drones %}
+{% for drone in drones %}
 <h2>
-     <a href="{{ freelancer.url | prepend: site.baseurl }}">
-     {{ freelancer.name }} - {{ freelancer.skills }}
+     <a href="{{ drone.url | prepend: site.baseurl }}">
+     {{ drone.name }} - {{ drone.type }}
      </a>
 </h2>
-<p> {{ freelancer.content | markdownify }} </p>
+<p> {{ drone.content | markdownify }} </p>
 {% endfor %}
 
 {% include links.html %}

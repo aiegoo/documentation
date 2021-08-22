@@ -1,8 +1,8 @@
 ---
 layout: page
-name: faheem
-permalink: faheem.html
-skills: "designer, php"
+name: yuneec
+permalink: yuneec.html
+type: "Edison, Simulink"
 link: https://github.com/aiegoo/portfolio/wiki/yuneec
 ---
 ## Yuneec H and Intel Intellisense sensors
