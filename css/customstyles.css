@@ -272,7 +272,7 @@ div#toc ul li ul li {
     list-style-type: none;
     margin: 5px 0px 0px 0px;
     padding-left: 4px;
-    text-underline-offset: 1.7em;
+    text-underline-offset: 1em;
 }
 
 div#toc ul li ul li::before {
