@@ -241,7 +241,7 @@ ul#results-container a:hover {
 }
 
 div#toc ul li {
-    margin: 8px 0px 8px 22px;
+    margin: 8px 0px 8px 20px;
     font-size: 70%;
     list-style: square;
 }
@@ -256,8 +256,8 @@ div#toc ul {
 }
 
 div#toc ul li ul {
-    padding-left:8px;
-
+    padding-left:6px;
+    margin-left: 1em;
 }
 div#toc ul li a {
     color: rgba(158, 74, 3, 1) !important;
@@ -265,9 +265,11 @@ div#toc ul li a {
 
 div#toc ul li:focus, li:hover, li a:focus, li a:hover {
     color: rgba(6,46,82, 1) !important;
+    transition: all 0.125s ease-in 0s;
 }
 div#toc ul li ul li::before {
-    content: "–  ";
+    content: "– ";
+    margin-left: -5px;
 }
 
 div#toc >ul::before {
@@ -275,12 +277,59 @@ div#toc >ul::before {
     font-weight: 500;
     color: #555;
     text-align:center;
-    margin-left:auto;
+    /*margin-left:auto;*/
     margin-right:auto;
     width:90px;
     padding-top:20px;
     padding-bottom:20px;
     padding-left:10px;
+}
+
+div#toc  ul li a.active {
+    font-weight: bold;
+    transition: all 0.125s ease-in 0s;
+    font-size: 0.45rem;
+    color: #924dd3;
+}
+
+div#toc ul li a {
+    padding: 0.2em 0;
+    position: relative;
+    display: block;
+}
+
+div#toc ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+    width: 100%;
+    height: 0.5em;
+    background-color: hotpink;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+
+div#toc  ul li a:hover::after, ul li a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+/* scale from center */
+div#toc ul li a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+div#toc ul li a:hover::after, ul li a:focus::after {
+    transform: scale(1);
+}
+
+div#toc.toc {
+    font-size: 0.5rem !important;
+    line-height: 70%;
 }
 
 li.dropdownActive a {
@@ -397,6 +446,7 @@ a.accordion-toggle, a.accordion-collapsed {
 
 ul#mysidebar {
     border-radius:0px;
+    line-height: 130%;
 }
 
 .nav ul li ul li a {
