@@ -14,6 +14,7 @@ map_name: matlab
 box_number: 5
 ---
 
+{% include custom/series_matlab_next.html %}
 ## my drones
 {% assign drones = site.drones %}
 {% for drone in drones %}
