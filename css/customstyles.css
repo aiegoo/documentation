@@ -309,10 +309,10 @@ div#toc ul li a {
 div#toc ul li a::after {
     content: '';
     position: absolute;
-    bottom: -3px;
+    bottom: -5px;
     left: -3px;
     width: 100%;
-    height: 0.5em;
+    height: 0.6em;
     background-color: hotpink;
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
