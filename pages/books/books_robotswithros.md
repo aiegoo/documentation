@@ -128,6 +128,21 @@ rate.sleep()
 ```
 ![image](https://user-images.githubusercontent.com/42961200/130410162-d1cc94c1-6875-40aa-bef4-8eb92cf86c0f.png)
 
+```python
+#!/usr/bin/env python
+
+import rospy
+from std_msgs.msg import Int32
+
+def callback(msg):
+    print msg.data
+    
+rospy.init_node('topic_subscriber')
+
+sub = rospy.Subscriber('counter', Int32, callback)
+
+rospy.spin()
+```
 
 
 ## Moving around using ROS
