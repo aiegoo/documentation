@@ -1172,7 +1172,7 @@ h2.userMapTitle {
 
 #userMap a:hover {
     text-decoration: none;
-    background-color: #555;
+    background-color: rgb(18, 76, 53);
     color: #d4ecc3;
   }
 
