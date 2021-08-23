@@ -267,9 +267,15 @@ div#toc ul li:focus, li:hover, li a:focus, li a:hover {
     color: rgba(6,46,82, 1) !important;
     transition: all 0.125s ease-in 0s;
 }
+
+div#toc ul li ul li {
+    list-style-type: none;
+    margin: 5px 0px 0px 5px;
+}
+
 div#toc ul li ul li::before {
     content: "– ";
-    margin-left: -5px;
+    margin-left: -9px;
 }
 
 div#toc >ul::before {
@@ -683,11 +689,6 @@ ol li ol li {list-style-type: lower-alpha;}
 ol li ul li {list-style-type: disc;}
 
 li img {clear:both; }
-
-div#toc ul li ul li {
-    list-style-type: none;
-    margin: 5px 0px 0px 0px;
-}
 
 .tab-content {
     padding: 15px;
