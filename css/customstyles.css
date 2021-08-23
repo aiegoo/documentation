@@ -268,7 +268,7 @@ div#toc ul li:focus, li:hover, li a:focus, li a:hover {
     transition: all 0.125s ease-in 0s;
 }
 div#toc ul li ul li::before {
-    content: "– ";
+    content: "_ ";
     margin-left: -5px;
 }
 
