@@ -1147,6 +1147,7 @@ table thead th code.highlighter-rouge {
     hyphens: auto;
     float: left;
     font-size: 12px;
+    box-shadow: 2px 2px 4px #473e3e;
 }
 
 .box:hover {
