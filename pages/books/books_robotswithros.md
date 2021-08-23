@@ -106,6 +106,8 @@ int main(int argc, char** argv) {
 }
 ```
 
+{% include note.html content="a position is a vector of three numbers (x, y, z) that describe how far we have translated along each axis, with respect to some origin. Similarly, an orientation is a vector of three numbers (roll, pitch, yaw) that describe how far we have rotated about each axis, again with respect to some origin. 3 Taken together, a (position, orientation) pair is called a pose." %}
+
 ## Moving around using ROS
 
 ### Teleop-bot
