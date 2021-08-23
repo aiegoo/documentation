@@ -241,7 +241,7 @@ ul#results-container a:hover {
 }
 
 div#toc ul li {
-    margin: 8px 0px 8px 22px;
+    margin: 8px 0px 8px 20px;
     font-size: 70%;
     list-style: square;
 }
@@ -256,7 +256,7 @@ div#toc ul {
 }
 
 div#toc ul li ul {
-    padding-left:8px;
+    padding-left:6px;
 
 }
 div#toc ul li a {
