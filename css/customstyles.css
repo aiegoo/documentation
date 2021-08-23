@@ -284,20 +284,20 @@ div#toc >ul::before {
     padding-left:10px;
 }
 
-div#toc >ul>li>a.active {
+div#toc  ul li a.active {
     font-weight: bold;
     transition: all 0.125s ease-in 0s;
     font-size: 0.45rem;
     color: #924dd3;
 }
 
-div#toc >ul>li>a {
+div#toc ul li a {
     padding: 0.2em 0;
     position: relative;
     display: block;
 }
 
-div#toc >ul>li>a::after {
+div#toc ul li a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -310,7 +310,7 @@ div#toc >ul>li>a::after {
 }
 
 
-div#toc >ul>li>a:hover::after, >ul>li>a:focus::after {
+div#toc  ul li a:hover::after, ul li a:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
 }
