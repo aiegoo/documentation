@@ -9,6 +9,9 @@ permalink: drones.html
 summary: my drones I work with and at my disposal.
 collection: drones
 layout: page
+simple_map: true
+map_name: matlab
+box_number: 5
 ---
 
 ## my drones
