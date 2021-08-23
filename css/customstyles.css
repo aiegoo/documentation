@@ -257,7 +257,7 @@ div#toc ul {
 
 div#toc ul li ul {
     padding-left:6px;
-    margin-left: -1em;
+    margin-left: 1em;
 }
 div#toc ul li a {
     color: rgba(158, 74, 3, 1) !important;
@@ -277,7 +277,7 @@ div#toc >ul::before {
     font-weight: 500;
     color: #555;
     text-align:center;
-    margin-left:auto;
+    /*margin-left:auto;*/
     margin-right:auto;
     width:90px;
     padding-top:20px;
