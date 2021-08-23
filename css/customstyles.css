@@ -291,6 +291,30 @@ div#toc >ul>li>a.active {
     color: #924dd3;
 }
 
+div#toc >ul>li>a {
+    padding: 0.2em 0;
+    position: relative;
+    display: block;
+}
+
+div#toc >ul>li>a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: hotpink;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+
+div#toc >ul>li>a:hover::after, >ul>li>a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
 div#toc.toc {
     font-size: 0.5rem !important;
     line-height: 70%;
