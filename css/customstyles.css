@@ -257,7 +257,7 @@ div#toc ul {
 
 div#toc ul li ul {
     padding-left:6px;
-
+    margin-left: -1em;
 }
 div#toc ul li a {
     color: rgba(158, 74, 3, 1) !important;
@@ -268,8 +268,8 @@ div#toc ul li:focus, li:hover, li a:focus, li a:hover {
     transition: all 0.125s ease-in 0s;
 }
 div#toc ul li ul li::before {
-    content: "–  ";
-    margin-left: 5px;
+    content: "– ";
+    margin-left: -5px;
 }
 
 div#toc >ul::before {
