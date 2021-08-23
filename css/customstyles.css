@@ -270,7 +270,7 @@ div#toc ul li:focus, li:hover, li a:focus, li a:hover {
 
 div#toc ul li ul li {
     list-style-type: none;
-    margin: 5px 0px 0px 0px;
+    margin: 3px 0px 0px 0px;
     padding-left: 4px;
     text-underline-offset: 1em;
 }
