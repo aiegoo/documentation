@@ -300,10 +300,10 @@ div#toc ul li a {
 div#toc ul li a::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 0;
     width: 100%;
-    height: 0.1em;
+    height: 0.3em;
     background-color: hotpink;
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
@@ -313,6 +313,17 @@ div#toc ul li a::after {
 div#toc  ul li a:hover::after, ul li a:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
+}
+
+/* scale from center */
+div#toc ul li a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+div#toc ul li a:hover::after, ul li a:focus::after {
+    transform: scale(1);
 }
 
 div#toc.toc {
