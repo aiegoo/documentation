@@ -269,6 +269,7 @@ div#toc ul li:focus, li:hover, li a:focus, li a:hover {
 }
 div#toc ul li ul li::before {
     content: "–  ";
+    margin-left: 5px;
 }
 
 div#toc >ul::before {
@@ -301,9 +302,9 @@ div#toc ul li a::after {
     content: '';
     position: absolute;
     bottom: -3px;
-    left: 0;
+    left: -3px;
     width: 100%;
-    height: 0.3em;
+    height: 0.5em;
     background-color: hotpink;
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
