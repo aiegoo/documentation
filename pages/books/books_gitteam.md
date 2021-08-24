@@ -6,6 +6,8 @@ keywords: API, content API, UI text, inline help, context-sensitive help, popove
 summary: "summary."
 sidebar: mydoc_sidebar
 permalink: books_gitteam.html
+map_name: books-git
+box_number: 1
 folder: books
 ---
 
