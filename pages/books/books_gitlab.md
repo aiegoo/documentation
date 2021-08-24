@@ -7,7 +7,7 @@ permalink: books_gitlab.html
 simple_map: true
 map_name: books-git
 box_number: 1
-toc: false
+toc: true
 folder: books
 ---
 
