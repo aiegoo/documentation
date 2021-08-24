@@ -6,5 +6,5 @@ type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/cube
 ---
 
-## Pixhawk Cube Black
+### Pixhawk Cube Black
 [**Preview**]({{page.link}})
