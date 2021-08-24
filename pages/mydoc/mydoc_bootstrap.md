@@ -10,3 +10,12 @@ folder: mydoc
 ---
 
 ## Bootstrap and webapp
+
+
+## toc scroll reference
+### scroll animated with svg
+[svg_code](https://github.com/hakimel/css/tree/master/progress-nav)
+[blog](https://lab.hakim.se/progress-nav/)
+
+### scroll typical
+[blog](https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/)
