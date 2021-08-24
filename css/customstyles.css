@@ -931,11 +931,16 @@ span.soft {
         color: #444;
     }
     #top {
-        left: 22%;
+        left: 23%;
         opacity: 0.3;
     }
+    #topButton2 {
+        width:45px;
+        height: 0;
+    }
     #topButton2::after {
-        color: rgba(255, 255, 255, 0.3)
+        color: rgba(255, 255, 255, 0.3);
+        line-height: 26px;
 }
 
 @media (max-width: 990px) {
