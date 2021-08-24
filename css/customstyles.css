@@ -931,9 +931,7 @@ span.soft {
         color: #444;
     }
     #top {
-        top: 0;
-        right: 20%;
-        bottom: auto;
+        left: 20%;
     }
 }
 
