@@ -1333,31 +1333,24 @@ h4.panel-title {
   z-index:1000; 
   bottom:0; 
   right:0; 
-  display:block ; 
-  border:1px solid gold; 
-  border-radius: 50%; 
-  width:50px; 
-  height:50px;  
-  background-color:#FF9800; 
+  border:1px solid rgba(255, 217, 0, 0.267); 
+  background-color:#ff990081; 
   color: white; 
-  text-align: center; 
-  text-transform:uppercase; 
-  cursor:pointer; outline:none;
-	transition: background-color .3s, opacity .5s visibiltiy .5s; 
-  opacity: 0;
+  cursor:pointer;
+  outline:none;
 }
-	
+/* 	
 #top::after {
   font-weight: bold;
   font-style: normal;
   font-size: 2em;
   line-height: 50px; 
   color: rgba(255, 217, 0, 0.37);
-}
+} */
 
 #top:hover {
   cursor: pointer; 
-  background-color: #333; 
+  background-color: rgba(51, 51, 51, 0.404); 
   color: gold;
 } 	
 
@@ -1376,9 +1369,6 @@ h4.panel-title {
   width: 50px;
   height: 50px;
   text-align: center;
-  border-radius: 4px;
-  bottom: 100px;
-  right: 30px;
   transition: background-color .3s, 
     opacity .5s, visibility .5s;
  /* visibility: hidden;*/
@@ -1396,7 +1386,7 @@ h4.panel-title {
 }
 #topButton2:hover {
   cursor: pointer;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.548);
 }
 #topButton2:active {
   background-color: #555;
