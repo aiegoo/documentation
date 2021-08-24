@@ -1372,17 +1372,15 @@ h4.panel-title {
 	
 #topButton2 {
   display: inline-block;
-  background-color: #FF9800;
+  background-color: #ff99007c;
   width: 50px;
   height: 50px;
   text-align: center;
   border-radius: 4px;
-  position: fixed;
   bottom: 100px;
   right: 30px;
   transition: background-color .3s, 
     opacity .5s, visibility .5s;
-  opacity: 0;
  /* visibility: hidden;*/
   z-index: 1000;
 }
