@@ -932,6 +932,8 @@ span.soft {
     }
     #top {
         top: 0;
+        right: 20%;
+        bottom: auto;
     }
 }
 
