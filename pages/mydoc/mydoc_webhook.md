@@ -230,3 +230,7 @@ $ git lstree fd26087
 M       pages/mydoc/mydoc_webhook.md
 
 ```
+
+### git config credential.helper store
+
+<script src="https://gist.github.com/aiegoo/6bcf26b4be91deaa4d7d5c45700012a9.js"></script>

@@ -5,7 +5,7 @@ permalink: skyhero.html
 type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/skyhero
 ---
-## Skyhero 
+### Skyhero 
 
 | Type  | Details | Type  | Details |
 | :---: | ---  | :---: | ---  |
@@ -15,17 +15,17 @@ link: https://github.com/aiegoo/portfolio/wiki/skyhero
 | weight |  | class |  |
 | battery |  | air-time |  |
 | configurator |  |  last updated |   |
-## FC 
+### FC 
 
 > Spacing f3 6dot
 
 
-## camera
+### camera
 
 > Aomway
 
 
-## Controller - 💯 Stick Mode 2
+### Controller - 💯 Stick Mode 2
 
 > Devention
 [site](https://www.manualslib.com/products/Devention-Devo-F12e-3790325.html)

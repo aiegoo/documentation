@@ -19,7 +19,7 @@ folder: mydoc
 
 
 ****************************************************************************
-## bebop_autonomy - ROS Driver for Parrot Bebop Drone (quadrocopter) 1.0 & 2.0
+### bebop_autonomy - ROS Driver for Parrot Bebop Drone (quadrocopter) 1.0 & 2.0
 ****************************************************************************
 
 *bebop_autonomy* is a :abbr:`ROS (Robot Operating System)` driver for `Parrot Bebop 1.0 <http://www.parrot.com/ca/products/bebop-drone/>`_ and `2.0 <https://www.parrot.com/ca/drones/parrot-bebop-2>`_ drones (quadrocopters), based on Parrot's official `ARDroneSDK3 <http://developer.parrot.com/docs/SDK3/>`_. This driver has been developed in `Autonomy Lab <http://autonomylab.org/>`_ of `Simon Fraser University <http://www.sfu.ca/>`_ by `Mani Monajjemi <http://mani.im>`_ and other contributers (:ref:`sec-contribs`). This software is maintained by `Sepehr MohaimenianPour <http://sepehr.im/>`_ (AutonomyLab, Simon Fraser University), `Thomas Bamford <#>`_ (Dynamic Systems Lab, University of Toronto) and `Tobias Naegeli <https://ait.ethz.ch/people/naegelit/>`_ (Advanced Interactive Technologies Lab, ETH Zürich).
@@ -31,7 +31,7 @@ folder: mydoc
 
 .. _sec-roadmap:
 
-### Features and Roadmap
+#### Features and Roadmap
 ====================
 
 .. csv-table::
@@ -91,7 +91,7 @@ Indices and tables
 Installation
 ************
 
-## Compiling From Source
+### Compiling From Source
 =====================
 
 Pre-requirements:
@@ -126,7 +126,7 @@ To compile from source, you need to clone the source code in a new or existing `
 <hr>
 
 ******************
-## Running the Driver
+### Running the Driver
 ******************
 
 You can run Bebop's ROS drivereither as a ROS `Nodelet <http://wiki.ros.org/nodelet>`_ or as a standalone ROS Node. The former is recommended if you intend to perform any kind of processing on Bebop's video stream.
@@ -135,7 +135,7 @@ You can run Bebop's ROS drivereither as a ROS `Nodelet <http://wiki.ros.org/node
 
 .. note:: Ensure that your Bebop's firmware is at least **2.0.29** and your computer is connected to Bebop's wireless network.
 
-### Running the driver as a Node
+#### Running the driver as a Node
 ================================
 
 The executable node is called ``bebop_driver_node`` and exists in ``bebop_driver`` package. It's recommended to run the Node in its own namespace and with default configuration. The driver package comes with a sample launch file ``bebop_driver/launch/bebop_node.launch`` which demonstrates the procedure.
@@ -150,7 +150,7 @@ The executable node is called ``bebop_driver_node`` and exists in ``bebop_driver
   :language: XML
   :caption: bebop_node.launch
 
-### Running the driver as a Nodelet
+#### Running the driver as a Nodelet
 ===================================
 
 To run the driver as a ROS Nodelet, you need to first run a Nodelet manager, then load the driver's Nodelet (``bebop_driver/BebopDriverNodelet``) in it, along with other Nodelets that need to communicate with the driver. `bebop_tools/launch/bebop_nodelet_iv.launch` is a sample launch file that demonstrates these steps by visualizing Bebop's video stream using an instance of `image_view/image <http://wiki.ros.org/image_view#image_view.2BAC8-diamondback.image_view.2BAC8-image>`_ Nodelet. Similar to `bebop_node.launch`, it also runs everything in its own namespace and loads the default configuration.
@@ -174,14 +174,14 @@ To run the driver as a ROS Nodelet, you need to first run a Nodelet manager, the
   <hr>
 
   *************************
-## Sending Commands to Bebop
+### Sending Commands to Bebop
 *************************
 
 .. _sec-pilot-teleop:
 
 .. note:: ``bebop_tools`` package comes with a launch file for tele-operating Bebop with a joystick using ROS `joy_teleop <http://wiki.ros.org/joy_teleop>`_ package. The configuration file (key-action map) is written for `Logitech F710 controller <http://gaming.logitech.com/en-ca/product/f710-wireless-gamepad>`_ and is located in ``bebop_tools/config`` folder. Adapting the file to your own controller is straightforward. To teleop Bebop while the driver is running execute ``roslaunch bebop_tools joy_teleop.launch``.
 
-### Takeoff
+#### Takeoff
 =======
 
 Publish a message of type ``std_msgs/Empty`` to ``takeoff`` topic.
@@ -190,7 +190,7 @@ Publish a message of type ``std_msgs/Empty`` to ``takeoff`` topic.
 
   $ rostopic pub --once [namespace]/takeoff std_msgs/Empty
 
-### Land
+#### Land
 ====
 
 Publish a message of type ``std_msgs/Empty`` to ``land`` topic.
@@ -199,7 +199,7 @@ Publish a message of type ``std_msgs/Empty`` to ``land`` topic.
 
   $ rostopic pub --once [namespace]/land std_msgs/Empty
 
-### Emergency
+#### Emergency
 =========
 
 Publish a message of type ``std_msgs/Empty`` to ``reset`` topic.
@@ -208,7 +208,7 @@ Publish a message of type ``std_msgs/Empty`` to ``reset`` topic.
 
   $ rostopic pub --once [namespace]/reset std_msgs/Empty
 
-### Piloting
+#### Piloting
 ========
 
 To move Bebop around, publish messages of type `geometry_msgs/Twist <http://docs.ros.org/api/geometry_msgs/html/msg/Twist.html>`_ to `cmd_vel` topic while Bebop is flying. The effect of each field of the message on Bebop's movement is listed below:
@@ -237,7 +237,7 @@ The ``linear.z`` part of this message controls the **vertical velocity** of the 
   ver_vel_m_per_s   = linear.z  * max_vert_speed
   rot_vel_deg_per_s = angular.z * max_rot_speed
 
-### Moving the Virtual Camera
+#### Moving the Virtual Camera
 =========================
 
 To move Bebop's virtual camera, publish a message of type `geometry_msgs/Twist <http://docs.ros.org/api/geometry_msgs/html/msg/Twist.html>`_ to `camera_control` topic. ``angular.y`` and ``angular.z`` fields of this message set **absolute** tilt and pan of the camera in **degrees** respectively. The field of view of this virtual camera (based on our measurements) is ~80 (horizontal) and ~50 (vertical) degrees.
@@ -251,7 +251,7 @@ To move Bebop's virtual camera, publish a message of type `geometry_msgs/Twist <
   angular.z (+)      pan left
             (-)      pan right
 
-### GPS Navigation
+#### GPS Navigation
 ==============
 
 Start Flight Plan
@@ -288,7 +288,7 @@ Then open `Site Manager` (top left), click `New Site`:
     * `Logon Type`: Anonymous
     * Connect.
 
-### Pause Flight Plan
+#### Pause Flight Plan
 -----------------
 
 To pause the execution of an autonomous flight plan, publish a message of type `std_msgs/Empty <http://docs.ros.org/api/std_msgs/html/msg/Empty.html>`_ to `autoflight/pause` topic. Bebop will then hover and await further commands.
@@ -296,7 +296,7 @@ To resume a paused flight plan, publish the same message that was used to start 
 
 .. note:: Any velocity commands sent to Bebop during an autonomous flight plan will pause the plan.
 
-### Stop Flight Plan
+#### Stop Flight Plan
 ----------------
 
 To stop the execution of an autonomous flight plan, publish a message of type `std_msgs/Empty <http://docs.ros.org/api/std_msgs/html/msg/Empty.html>`_ to `autoflight/stop` topic. Bebop will hover and await further commands.
@@ -308,7 +308,7 @@ To ask Bebop to autonomously fly to it's home position, publish a message of typ
 
 .. warning:: The topic has changed from `navigate_home` to `autoflight/navigate_home` after version 0.5.1.
 
-### Flat Trim
+#### Flat Trim
 =========
 
 .. error:: Test fails, probably not working.
@@ -319,7 +319,7 @@ Publish a message of type ``std_msgs/Empty`` to ``flattrim`` topic.
 
   $ rostopic pub --once [namespace]/flattrim std_msgs/Empty
 
-### Flight Animations
+#### Flight Animations
 =================
 
 .. warning:: Be extra cautious when performing any flight animations, specially in indoor environments.
@@ -336,7 +336,7 @@ Bebop can perform four different types of flight animation (flipping). To perfor
 
 .. _sec-snapshot:
 
-### Take on-board Snapshot
+#### Take on-board Snapshot
 ======================
 
 .. versionadded:: 0.4.1
@@ -349,14 +349,14 @@ To take a high resolution on-board snapshot, publish a ``std_msgs/Empty`` messag
 * Username: ``anonymous``
 * Password: *<no password>*
 
-### Set camera exposure
+#### Set camera exposure
 ===================
 
 It is possible to set camera exposure by publishing ``std_msgs/Float32`` message on ``set_exposure`` topic. Note that this functionality is not supported in Bebop1 Fw 3.3.0.  
 
 * Exposure value range: ``-3.0 .. +3.0``
 
-### Toggle on-board Video Recording
+#### Toggle on-board Video Recording
 ===============================
 
 .. versionadded:: 0.4.1
@@ -367,10 +367,10 @@ To start or stop on-board high-resolution video recording, publish a ``std_msgs/
 <hr>
 
 ******************
-## Reading from Bebop
+### Reading from Bebop
 ******************
 
-### Camera
+#### Camera
 ======
 
 The video stream from Bebop's front camera is published on ``image_raw`` topic as ``sensor_msgs/Image`` messages. *bebop_driver* complies with ROS camera interface specifications and publishes camera information and calibration data to ``camera_info`` topic. Due to limitations in Parrot's ARDroneSDK3, the quality of video stream is limited to **640 x 368 @ 30 Hz**. The field of view of this virtual camera (based on our measurements) is ~80 (horizontal) and ~50 (vertical) degrees.
@@ -379,7 +379,7 @@ To set the location of camera calibration data, please check this page: :doc:`co
 
 .. _sec-ros-topic:
 
-### Standard ROS messages
+#### Standard ROS messages
 =====================
 
 .. _sec-odom:
@@ -441,12 +441,12 @@ Bebop-specific States
 <hr>
 
 ********************************
-## Configuring Bebop and the Driver
+### Configuring Bebop and the Driver
 ********************************
 
 .. _sec-params:
 
-### Driver Parameters
+#### Driver Parameters
 =================
 
 Following parameters are set during driver's startup:
@@ -505,7 +505,7 @@ Sets the ``frame_id`` of camera and image messages. The default value is ``camer
 
 .. _sec-dyn-params:
 
-### Dynamically Reconfigurable Parameters for Bebop
+#### Dynamically Reconfigurable Parameters for Bebop
 ===============================================
 
 Following ROS parameters change Bebop's settings. They can be tweaked during runtime using `dynamic reconfigure GUI <http://wiki.ros.org/dynamic_reconfigure#dynamic_reconfigure.2BAC8-groovy.reconfigure_gui>`_. Setting `~reset_settings`_ parameter to ``true`` will reset all these settings to factory defaults.
@@ -517,12 +517,12 @@ Following ROS parameters change Bebop's settings. They can be tweaked during run
 <hr>
 
 *****************************
-## Coordinate System Conventions
+### Coordinate System Conventions
 *****************************
 
 .. _sec-coords:
 
-### ROS Standard Message Types (i.e Twist, Odometery) - REP 103
+#### ROS Standard Message Types (i.e Twist, Odometery) - REP 103
 ===========================================================
 
 +x    forward
@@ -532,14 +532,14 @@ Following ROS parameters change Bebop's settings. They can be tweaked during run
 
 - More information: http://www.ros.org/reps/rep-0103.html
 
-### Bebop Velocities
+#### Bebop Velocities
 ================
 
 +x    East
 +y    South
 +z    Down
 
-### Bebop Attitude
+#### Bebop Attitude
 ==============
 
 +x    forward
@@ -547,7 +547,7 @@ Following ROS parameters change Bebop's settings. They can be tweaked during run
 +z    down
 +yaw  CW
 
-### SDK's setPilotingPCMD
+#### SDK's setPilotingPCMD
 =====================
 
 +roll   right
@@ -559,36 +559,36 @@ Following ROS parameters change Bebop's settings. They can be tweaked during run
 <hr>
 
 **************
-### Under The Hood
+#### Under The Hood
 **************
 
 This page contains information about the architecture of the driver and different techniques used for its development.
 
-### Automatic Code Generation
+#### Automatic Code Generation
 =========================
 
 TBA
 
-### Threading Model
+#### Threading Model
 ===============
 
 TBA
 
-### Publishing the States
+#### Publishing the States
 =====================
 
 TBA
 
 .. _sec-dev-dyn:
 
-### Configuring the Drone
+#### Configuring the Drone
 =====================
 
 TBA
 
 .. _sec-dev-test:
 
-### Tests
+#### Tests
 =====
 
 Enabling Bebop In The Loop Tests
@@ -611,7 +611,7 @@ Running Bebop In The Loop Tests
   $ make tests
   $ rostest --text bebop_driver bebop_itl_test.test
 
-### Upgrading the Bebop SDK
+#### Upgrading the Bebop SDK
 =======================
 
 .. warning:: Since version 0.6, `Parrot ARSDK <http://developer.parrot.com/docs/SDK3/>`_, the main underlying dependency of  *bebop_autonomy* is not build inline anymore. Instead, the slightly patched and catkinized version of it, called `parrot_arsdk <https://github.com/AutonomyLab/parrot_arsdk>`_, is fetched as a dependency. **The following documentation needs to be updated**.

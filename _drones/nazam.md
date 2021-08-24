@@ -6,7 +6,7 @@ type: "DJI, Assistant"
 link: https://github.com/aiegoo/portfolio/wiki/nazam
 ---
 
-## DJI Naza m Lite
+### DJI Naza m Lite
 
 | Type  | Details | Type  | Details |
 | :---: | ---  | :---: | ---  |
@@ -16,18 +16,18 @@ link: https://github.com/aiegoo/portfolio/wiki/nazam
 | weight |  | class |  |
 | battery |  | air-time |  |
 | configurator |  |  last updated |   |
-## FC 
+### FC 
 
 > Naza M Lite
 
 
-## camera
+### camera
 
 > Aomway
 
-## Gimball
+### Gimball
 
-## Controller - 💯 Stick Mode 2
+### Controller - 💯 Stick Mode 2
 
 > Devention
 [site](https://www.manualslib.com/products/Devention-Devo-F12e-3790325.html)
