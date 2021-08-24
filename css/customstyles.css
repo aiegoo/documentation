@@ -1338,6 +1338,7 @@ h4.panel-title {
   color: white; 
   cursor:pointer;
   outline:none;
+  visibility: hidden;
 }
 /* 	
 #top::after {
@@ -1359,7 +1360,7 @@ h4.panel-title {
 } 
 
 #top.show {
-  opacity: 1; 
+  opacity: 0.7; 
   visibility: visible;
 }
 	
