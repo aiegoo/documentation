@@ -930,6 +930,9 @@ span.soft {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
     }
+    #top {
+        top: 0;
+    }
 }
 
 @media (max-width: 990px) {
