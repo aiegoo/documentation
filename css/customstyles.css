@@ -931,8 +931,11 @@ span.soft {
         color: #444;
     }
     #top {
-        left: 70%;
+        left: 23%;
+        opacity: 0.3;
     }
+    #topButton2::after {
+        color: rgba(255, 255, 255, 0.3)
 }
 
 @media (max-width: 990px) {
