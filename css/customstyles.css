@@ -1344,8 +1344,7 @@ h4.panel-title {
   text-transform:uppercase; 
   cursor:pointer; outline:none;
 	transition: background-color .3s, opacity .5s visibiltiy .5s; 
-  opacity: 0;			
-  visiblity: hidden;
+  opacity: 0;
 }
 	
 #top::after {
@@ -1353,7 +1352,7 @@ h4.panel-title {
   font-style: normal;
   font-size: 2em;
   line-height: 50px; 
-  color: gold;
+  color: rgba(255, 217, 0, 0.37);
 }
 
 #top:hover {
@@ -1363,7 +1362,7 @@ h4.panel-title {
 } 	
 
 #top:active { 
-  background-color: #555;
+  background-color: rgba(224, 211, 211, 0.342);
 } 
 
 #top.show {
