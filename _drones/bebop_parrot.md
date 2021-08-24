@@ -127,10 +127,6 @@ And then you are done, though your bebop has gone back to an old version so you 
 
 ### _swarming:
 
-========
-Swarming
-========
-
 Swarming/Formation-Flying Interface (Beta)
 ==========================================
 
