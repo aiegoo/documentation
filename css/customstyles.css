@@ -931,11 +931,11 @@ span.soft {
         color: #444;
     }
     #top {
-        left: 27%;
+        left: 28%;
         opacity: 0.3;
     }
     #topButton2 {
-        width:50px;
+        width:45px;
         height: 0;
     }
     #topButton2::after {
