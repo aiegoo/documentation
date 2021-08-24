@@ -17,7 +17,7 @@ link: https://github.com/aiegoo/portfolio/wiki/parrot
 [autonomylab](https://github.com/autonomylab/bebop-hacking.git)
 <hr>
 
-## building ardupilot for bebop2
+### building ardupilot for bebop2
 .. _building-for-bebop-2:
 
 Building ArduCopter for Bebop 2
@@ -71,7 +71,7 @@ are currently under development.
 This is a good time to participate and help improve them!
 
 
-## bebop firmware flashing with UART 
+### bebop firmware flashing with UART 
 
 Here is my procedure once you get your usb cable with PIN ID tied to 1.
 Then download the 2 archives here :
@@ -125,7 +125,7 @@ And then you are done, though your bebop has gone back to an old version so you 
 <hr>
 <hr>
 
-## _swarming:
+### _swarming:
 
 ========
 Swarming
