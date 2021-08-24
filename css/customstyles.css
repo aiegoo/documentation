@@ -1326,3 +1326,85 @@ h4.panel-title {
     background-color: amber;
     border: 1px solid red;
 }
+
+/* scroll top css */
+#top { 
+  position:fixed; 
+  z-index:1000; 
+  bottom:0; 
+  right:0; 
+  display:block ; 
+  border:1px solid gold; 
+  border-radius: 50%; 
+  width:50px; 
+  height:50px;  
+  background-color:#FF9800; 
+  color: white; 
+  text-align: center; 
+  text-transform:uppercase; 
+  cursor:pointer; outline:none;
+	transition: background-color .3s, opacity .5s visibiltiy .5s; 
+  opacity: 0;			
+  visiblity: hidden;
+}
+	
+#top::after {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px; 
+  color: gold;
+}
+
+#top:hover {
+  cursor: pointer; 
+  background-color: #333; 
+  color: gold;
+} 	
+
+#top:active { 
+  background-color: #555;
+} 
+
+#top.show {
+  opacity: 1; 
+  visibility: visible;
+}
+	
+#topButton2 {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+ /* visibility: hidden;*/
+  z-index: 1000;
+}
+
+#topButton2::after {
+  content: "\f077";
+  font-family: FontAwesome;  /*fontAwesome 링크 붙여 놓고.. ascii 번호 입력하고 폰트패밀리 명시하면 되는 것 아닌감? 왜 안보일까... 버젼인가? */
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#topButton2:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#topButton2:active {
+  background-color: #555;
+}
+#topButton2.show {
+  opacity: 1;
+  visibility: visible;
+}
