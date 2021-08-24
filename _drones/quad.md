@@ -5,9 +5,9 @@ permalink: quad.html
 type: "DJI, Assistant"
 link: https://github.com/aiegoo/portfolio/wiki/quad
 ---
-## dji quad custom frame
+### dji quad custom frame
 
-### overview
+#### overview
 
 | Type  | Details | Type  | Details |
 | :---: | ---  | :---: | ---  |
@@ -18,7 +18,7 @@ link: https://github.com/aiegoo/portfolio/wiki/quad
 | battery |  | air-time |  |
 | configurator |  |  last updated |   |
 
-### checklist and indicator status
+#### checklist and indicator status
 - Servo power will shut off 3 seconds after the landing gear has reached its target position. 
 - When powering on the system, if the transmitter switch is in the [Upper] position, the LED will flash red quickly as a warning. Toggle the switch to the [Lower] position to continue. 
 - If there is an abnormal signal or no signal input into the “IN” port, the LED will slowly flash red. Check receiver and connections for problems. 
@@ -37,7 +37,7 @@ link: https://github.com/aiegoo/portfolio/wiki/quad
 |Unsafe startup alert|Blinks rapid red.|
 |Input signal abnormal|Blinks slow green|
 
-### compass calibration
+#### compass calibration
 
 Using the remote controller:
 1. Quickly flip the control mode switch from P mode to A mode, and then back to P mode three times, and the Aircraft Status indicator will display a solid yellow light.
