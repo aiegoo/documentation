@@ -47,17 +47,17 @@ DL180 is designed for FPV race, all carbon integrated fiber body, super powerful
 |Camera: | Mobius ActionCam 808#16 or runcam camera|
 |Compatible	| Racing Quadcopter|
 
-## FC 
+### FC 
 
 > Spacing f3 6dot
 
 
-## camera
+### camera
 
 > Aomway
 
 
-## Controller - 💯 Stick Mode 2
+### Controller - 💯 Stick Mode 2
 
 > Devention
 [site](https://www.manualslib.com/products/Devention-Devo-F12e-3790325.html)
