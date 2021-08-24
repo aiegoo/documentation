@@ -935,7 +935,7 @@ span.soft {
         opacity: 0.3;
     }
     #topButton2 {
-        width:47px;
+        width:45px;
         height: 0;
     }
     #topButton2::after {
