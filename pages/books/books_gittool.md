@@ -17,6 +17,14 @@ folder: books
 ![overview](https://user-images.githubusercontent.com/42961200/130544254-1678d397-ec3a-48a4-83dd-559c594cfd3a.png)
 ## Github API
 
+```bash
+curl -i/-v/-h https://api.github.com
+curl -u aiegoo https://api.github.com/rate_limit
+```
+
+### Username/pw authentication
+
+### Oauth
 ## Gists 
 
 ## Wiki with gollum
