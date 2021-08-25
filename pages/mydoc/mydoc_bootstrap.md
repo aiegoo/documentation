@@ -9,8 +9,8 @@ permalink: mydoc_bootstrap.html
 folder: mydoc
 ---
 
-## <span class="iconify-inline" data-icon="octicon:zap-16" style="color: #9826ab;" data-width="32" data-height="32" data-flip="horizontal"></span>Bootstrap and webapp
-
+## <span class="iconify-inline" data-icon="octicon:zap-16" style="color: #9826ab;" data-width="32" data-height="32" data-flip="horizontal"></span> Bootstrap and webapp
+<span class="iconify-inline" data-icon="octicon:zap-16" style="color: #9826ab;" data-width="32" data-height="32" data-flip="horizontal"></span>
 
 ## toc scroll reference
 ### scroll animated with svg
