@@ -1407,3 +1407,8 @@ h4.panel-title {
   opacity: 1;
   visibility: visible;
 }
+
+/* navbar customization */
+h1.post-title-main {
+    margin-top: 45px;
+}
