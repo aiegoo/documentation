@@ -4,7 +4,7 @@ baseurl: /matlab
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: My Project Documentation
+topnav_title: Matlab Docs
 # this appears on the top navigation bar next to the home button
 
 site_title: Tonylee Project Showcase
