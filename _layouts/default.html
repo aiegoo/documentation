@@ -98,6 +98,44 @@
 </div>
 <!-- /#main -->
     </div>
+<!-- scroll top tag -->
+<button id="top" aria-label="Scroll to top"><a href="#" id="topButton2"></span></a></button>
+<script>
+var btn = $('#top');
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  $('html, body').animate({scrollTop:0}, '300');
+});	
+	/*    $("#top").click(function(e) {
+
+            $('body, html').animate({scrollTop:0}, 200);
+
+        });  ////click  */
+
+$("header  a").click(function(e) {
+    e.preventDefault();
+
+    var x = $(this).attr('href'); 
+
+$('body, html').animate({scrollTop: $(x).offset().top });
+
+    }); ////click
+
+$(window).scroll(function(e) {
+    if($(window).scrollTop() > 0){
+        $('header').addClass('slide');
+        }else{
+            $('header').removeClass('slide');
+            }
+        });
+</script>
 
 </body>
 {% if site.google_analytics %}
