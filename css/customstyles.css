@@ -1334,7 +1334,7 @@ h4.panel-title {
     z-index:1000; 
     bottom:0; 
     right:0; 
-    left: calc(100vw - 3.3em);
+    left: calc(100vw - 4.3em);
     border:1px solid rgba(255, 217, 0, 0.267); 
     background-color:#ff990081; 
     color: white; 
