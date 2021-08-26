@@ -80,7 +80,7 @@ h5[id],
 h6[id],
 dt[id]{
 padding-top: 60px;
-margin-top: -40px
+margin-top: -20px
 }
 
 .post-content img {
@@ -204,7 +204,7 @@ p.post-meta {font-size: 80%; color: #777;}
     top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
     left: 20px;
     z-index: -1;
-    width:223px;
+    width:150px;
     border-left: 1px solid #dedede;
 }
 
@@ -505,6 +505,7 @@ ul#mysidebar {
 span.projectTitle {
     font-family: Helvetica;
     font-weight: bold;
+    margin-top: 10em;
 }
 
 .footer {
@@ -1325,7 +1326,7 @@ h4.panel-title {
 /* to fix the post-header getting under the topnav */
 
 .post-header {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 
