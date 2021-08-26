@@ -1334,7 +1334,7 @@ h4.panel-title {
     z-index:1000; 
     bottom:0; 
     right:0; 
-    left: 48.5vw;
+    left: calc(48vw - 24px);
     border:1px solid rgba(255, 217, 0, 0.267); 
     background-color:#ff990081; 
     color: white; 
@@ -1369,8 +1369,8 @@ h4.panel-title {
   #topButton2 {
     display: inline-block;
     background-color: #ff99007c;
-    width: 3em;
-    height: 3em;
+    width: 3.3em;
+    height: 3.3em;
     text-align: center;
     transition: background-color .3s, 
       opacity .5s, visibility .5s;
@@ -1401,6 +1401,6 @@ h4.panel-title {
   
   /* navbar customization */
   .col-md-6  h1 {
-      margin-top: 3em;
+      margin-top: 3.3em;
   }
   
