@@ -1,10 +1,10 @@
 repository: aiegoo/documentation
 url: aiegoo.github.io
-baseurl: /documentation
+baseurl: /matlab
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: My Project Documentation
+topnav_title: Matlab Docs
 # this appears on the top navigation bar next to the home button
 
 site_title: Tonylee Project Showcase
@@ -13,7 +13,7 @@ site_title: Tonylee Project Showcase
 company_name: Tonyleekorea
 # this appears in the footer
 
-github_editme_path: aiegoo/documentation/blob/gh-pages/
+github_editme_path: aiegoo/matlab/blob/edit/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # gitlab_editme_path: aiegoo/documentation/blob/gh-pages/
@@ -45,7 +45,7 @@ feedback_email: onofftony@gmail.com
 feedback_text: "portfolio wiki"
 # if you uncomment the previous line, it changes the Feedback text
 
-feedback_link: "https://aiegoo.github.io/portfolio"
+feedback_link: "https://aiegoo.github.io/matlab"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
@@ -63,6 +63,14 @@ kramdown:
 collections:
   tooltips:
     output: false
+  freelancers:
+    output: true
+    people: true
+    permalink: /freelancers/
+  drones:
+    output: true
+    people: true
+    permalink: /drones/
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
@@ -97,6 +105,24 @@ defaults:
       search: true
       sidebar: home_sidebar
       topnav: topnav
+
+  # _freelancers
+  - scope:
+      path: "/freelancers/"
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+  # _drones
+  - scope:
+      path: "/drones/"
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 # these are defaults used for the frontmatter for these file types
 

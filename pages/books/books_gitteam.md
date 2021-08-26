@@ -5,7 +5,11 @@ last_updated: August 7, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "summary."
 sidebar: mydoc_sidebar
+toc: true
 permalink: books_gitteam.html
+simple_map: true
+map_name: books-git
+box_number: 1
 folder: books
 ---
 

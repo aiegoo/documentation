@@ -12,7 +12,7 @@ folder: mydoc
 ## Bash pipeline
 ![appending_headoffile](https://user-images.githubusercontent.com/42961200/128584369-38e30401-2c05-497c-a6e0-341acf396f1c.png)
 
-### Bash automation is simple and delivers any job scripted to perform. I love it because it touches on the process/pid of a task.
+> Bash automation is simple and delivers any job scripted to perform. I love it because it touches on the process/pid of a task.
 
 ### github repo
 [automation](https://github.com/aiegoo/automation)

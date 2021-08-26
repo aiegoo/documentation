@@ -59,6 +59,17 @@ $ git merge -s ours branch1 branch2 brancN  # resolve ours subtree octopus
 
 ```
 
+### rebase and merge
+
+```
+git checkout feature
+git checkout -b temporary-branch
+git rebase -i main
+# [Clean up the history]
+git checkout main
+git merge temporary-branch
+```
+
 - MEMO: 01daab67641deef5bfba8668973c13f48a562128
 - MEMO: git config --global --unset user.password
 - MEMO: sudo chmod 777 DIR_NAME
@@ -219,3 +230,7 @@ $ git lstree fd26087
 M       pages/mydoc/mydoc_webhook.md
 
 ```
+
+### git config credential.helper store
+
+<script src="https://gist.github.com/aiegoo/6bcf26b4be91deaa4d7d5c45700012a9.js"></script>

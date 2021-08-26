@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+{% raw %}
+<article class="post post-article" itemscope itemtype="https://schema.org/BlogPosting">
 
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
@@ -27,10 +29,16 @@ layout: default
 
         {{ content }}
     </div>
+    <div class="toc">
+      <a href="#">&lt;맨 위로&gt;</a>
+      {% include toc_scrollspy.html html=content %}
+    </div>
 
 
 
 </article>
+
+{% endraw %}
 
 {% include commento.html %}
 

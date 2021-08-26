@@ -204,7 +204,7 @@ p.post-meta {font-size: 80%; color: #777;}
     top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
     left: 20px;
     z-index: -1;
-    width:223px;
+    width:150px;
     border-left: 1px solid #dedede;
 }
 
@@ -241,7 +241,7 @@ ul#results-container a:hover {
 }
 
 div#toc ul li {
-    margin: 8px 0px 8px 22px;
+    margin: 8px 0px 8px 20px;
     font-size: 70%;
     list-style: square;
 }
@@ -252,11 +252,12 @@ div#toc ul {
     max-width: 300px;
     color: rgba(246, 113, 3, 0.856);
     overflow-y: auto;
+    line-height: 58%;
 }
 
 div#toc ul li ul {
-    padding-left:8px;
-
+    padding-left:6px;
+    margin-left: 1em;
 }
 div#toc ul li a {
     color: rgba(158, 74, 3, 1) !important;
@@ -264,9 +265,19 @@ div#toc ul li a {
 
 div#toc ul li:focus, li:hover, li a:focus, li a:hover {
     color: rgba(6,46,82, 1) !important;
+    transition: all 0.125s ease-in 0s;
 }
+
+div#toc ul li ul li {
+    list-style-type: none;
+    margin: 5px 0px 0px 5px;
+    padding-left: 4px;
+    text-underline-offset: 1em;
+}
+
 div#toc ul li ul li::before {
-    content: "–  ";
+    content: "_ ";
+    margin-left: -9px;
 }
 
 div#toc >ul::before {
@@ -274,12 +285,59 @@ div#toc >ul::before {
     font-weight: 500;
     color: #555;
     text-align:center;
-    margin-left:auto;
+    /*margin-left:auto;*/
     margin-right:auto;
     width:90px;
     padding-top:20px;
     padding-bottom:20px;
     padding-left:10px;
+}
+
+div#toc  ul li a.active {
+    font-weight: bold;
+    transition: all 0.125s ease-in 0s;
+    font-size: 0.45rem;
+    color: #924dd3;
+}
+
+div#toc ul li a {
+    padding: 0.2em 0;
+    position: relative;
+    display: block;
+}
+
+div#toc ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -6px;
+    width: 100%;
+    height: 1.2em;
+    background-color: #ff69b46b;
+    opacity: 0;
+    transition: opacity 300ms, transform 500ms;
+}
+
+
+div#toc  ul li a:hover::after, ul li a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+/* scale from center */
+div#toc ul li a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+div#toc ul li a:hover::after, ul li a:focus::after {
+    transform: scale(1);
+}
+
+div#toc.toc {
+    font-size: 0.5rem !important;
+    line-height: 70%;
 }
 
 li.dropdownActive a {
@@ -396,6 +454,7 @@ a.accordion-toggle, a.accordion-collapsed {
 
 ul#mysidebar {
     border-radius:0px;
+    line-height: 130%;
 }
 
 .nav ul li ul li a {
@@ -429,7 +488,7 @@ ul#mysidebar {
     padding-left:10px;
 }
 
-.nav li a:visited {
+.nav>li>ul>li>a:visited {
     border-color: transparent transparent transparent #c3c309;
     color: goldenrod;
 }
@@ -632,11 +691,6 @@ ol li ol li {list-style-type: lower-alpha;}
 ol li ul li {list-style-type: disc;}
 
 li img {clear:both; }
-
-div#toc ul li ul li {
-    list-style-type: none;
-    margin: 5px 0px 0px 0px;
-}
 
 .tab-content {
     padding: 15px;
@@ -1093,10 +1147,11 @@ table thead th code.highlighter-rouge {
     hyphens: auto;
     float: left;
     font-size: 12px;
+    box-shadow: 2px 2px 4px #473e3e;
 }
 
 .box:hover {
-    background-color: #f0f0f0;
+    background-color: #440606;
 }
 
 #userMap {
@@ -1107,7 +1162,7 @@ table thead th code.highlighter-rouge {
 }
 
 #userMap .active {
-    background-color: #d6f5d6;
+    background-color: #234e23;
     border:1px solid #555;
     font-weight: bold;
 }
@@ -1118,7 +1173,9 @@ h2.userMapTitle {
 
 #userMap a:hover {
     text-decoration: none;
+    color: #d4ecc3;
   }
+
 
 div.arrow {
     max-width: 50px;
@@ -1270,3 +1327,80 @@ h4.panel-title {
     background-color: amber;
     border: 1px solid red;
 }
+
+/* scroll top css */
+#top { 
+    position:fixed; 
+    z-index:1000; 
+    bottom:0; 
+    right:0; 
+    left: calc(100vw - 3.3em);
+    border:1px solid rgba(255, 217, 0, 0.267); 
+    background-color:#ff990081; 
+    color: white; 
+    cursor:pointer;
+    outline:none;
+    visibility: hidden;
+  }
+  /* 	
+  #top::after {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px; 
+    color: rgba(255, 217, 0, 0.37);
+  } */
+  
+  #top:hover {
+    cursor: pointer; 
+    background-color: rgba(51, 51, 51, 0.404); 
+    color: gold;
+  } 	
+  
+  #top:active { 
+    background-color: rgba(224, 211, 211, 0.342);
+  } 
+  
+  #top.show {
+    opacity: 0.7; 
+    visibility: visible;
+  }
+      
+  #topButton2 {
+    display: inline-block;
+    background-color: #ff99007c;
+    width: 3.3em;
+    height: 3.3em;
+    text-align: center;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+   /* visibility: hidden;*/
+    z-index: 1000;
+  }
+  
+  #topButton2::after {
+    content: "\f077";
+    font-family: FontAwesome;  /*fontAwesome 링크 붙여 놓고.. ascii 번호 입력하고 폰트패밀리 명시하면 되는 것 아닌감? 왜 안보일까... 버젼인가? */
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #topButton2:hover {
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 0.548);
+  }
+  #topButton2:active {
+    background-color: #555;
+  }
+  #topButton2.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* navbar customization */
+  .col-md-6  h1 {
+      margin-top: 3.3em;
+  }
+  

@@ -9,4 +9,13 @@ permalink: mydoc_bootstrap.html
 folder: mydoc
 ---
 
-## Bootstrap and webapp
+## <span class="iconify-inline" data-icon="octicon:zap-16" style="color: #9826ab;" data-width="32" data-height="32" data-flip="horizontal"></span> Bootstrap and webapp
+<span class="iconify-inline" data-icon="octicon:zap-16" style="color: #9826ab;" data-width="32" data-height="32" data-flip="horizontal"></span>
+
+## toc scroll reference
+### scroll animated with svg
+[svg_code](https://github.com/hakimel/css/tree/master/progress-nav)
+[blog](https://lab.hakim.se/progress-nav/)
+
+### scroll typical
+[blog](https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/)
