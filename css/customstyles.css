@@ -1334,6 +1334,7 @@ h4.panel-title {
     z-index:1000; 
     bottom:0; 
     right:0; 
+    left: 48vw;
     border:1px solid rgba(255, 217, 0, 0.267); 
     background-color:#ff990081; 
     color: white; 
