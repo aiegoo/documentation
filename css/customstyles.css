@@ -973,6 +973,20 @@ span.soft {
     div#toc:hover {
         opacity: 40%;
     }
+
+    .box {
+        padding: 10px;
+        border: 1px solid #888;
+        width: 100px;
+        height: 80px;
+        background-color: #f5f5f5;
+        font-family: Arial;
+        font-size: 12px;
+        hyphens: auto;
+        float: left;
+        font-size: 12px;
+        box-shadow: 2px 2px 4px #473e3e;
+    }
 }
 @media (max-width: 900px) {
 
@@ -1320,6 +1334,20 @@ h4.panel-title {
     .navbar-brand .projectTitle {
         
         font-size: 9px;
+    }
+
+    .box {
+        padding: 10px;
+        border: 1px solid #888;
+        width: 100px;
+        height: 80px;
+        background-color: #f5f5f5;
+        font-family: Arial;
+        font-size: 12px;
+        hyphens: auto;
+        float: left;
+        font-size: 12px;
+        box-shadow: 2px 2px 4px #473e3e;
     }
 }
 
