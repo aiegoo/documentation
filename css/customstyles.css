@@ -80,7 +80,7 @@ h5[id],
 h6[id],
 dt[id]{
 padding-top: 60px;
-margin-top: -20px
+margin-top: -40px
 }
 
 .post-content img {
@@ -204,7 +204,7 @@ p.post-meta {font-size: 80%; color: #777;}
     top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
     left: 20px;
     z-index: -1;
-    width:150px;
+    width:223px;
     border-left: 1px solid #dedede;
 }
 
@@ -271,12 +271,10 @@ div#toc ul li:focus, li:hover, li a:focus, li a:hover {
 div#toc ul li ul li {
     list-style-type: none;
     margin: 5px 0px 0px 5px;
-    padding-left: 4px;
-    text-underline-offset: 1em;
 }
 
 div#toc ul li ul li::before {
-    content: "_ ";
+    content: "– ";
     margin-left: -9px;
 }
 
@@ -285,7 +283,7 @@ div#toc >ul::before {
     font-weight: 500;
     color: #555;
     text-align:center;
-    margin-left:auto;
+    /*margin-left:auto;*/
     margin-right:auto;
     width:90px;
     padding-top:20px;
@@ -310,12 +308,12 @@ div#toc ul li a::after {
     content: '';
     position: absolute;
     bottom: -5px;
-    left: -6px;
+    left: -3px;
     width: 100%;
     height: 1.2em;
     background-color: #ff69b46b;
     opacity: 0;
-    transition: opacity 300ms, transform 550ms;
+    transition: opacity 300ms, transform 500ms;
 }
 
 
@@ -505,7 +503,6 @@ ul#mysidebar {
 span.projectTitle {
     font-family: Helvetica;
     font-weight: bold;
-    margin-top: 10em;
 }
 
 .footer {
@@ -617,7 +614,7 @@ button.cursorNorm {
 }
 
 a.dropdown-toggle, .navbar-inverse .navbar-nav > li > a  {
-    margin-left: -5px;
+    margin-left: 10px;
 }
 
 .navbar a:focus {
@@ -931,17 +928,6 @@ span.soft {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
     }
-    #top {
-        left: 45%;
-        opacity: 0.3;
-    }
-    #topButton2 {
-        width:45px;
-        height: 0;
-    }
-    #topButton2::after {
-        color: rgba(255, 255, 255, 0.3);
-        line-height: 26px;
 }
 
 @media (max-width: 990px) {
@@ -972,20 +958,6 @@ span.soft {
     }
     div#toc:hover {
         opacity: 40%;
-    }
-
-    .box {
-        padding: 10px;
-        border: 1px solid #888;
-        width: 100px;
-        height: 80px;
-        background-color: #f5f5f5;
-        font-family: Arial;
-        font-size: 12px;
-        hyphens: auto;
-        float: left;
-        font-size: 12px;
-        box-shadow: 2px 2px 4px #473e3e;
     }
 }
 @media (max-width: 900px) {
@@ -1173,11 +1145,10 @@ table thead th code.highlighter-rouge {
     hyphens: auto;
     float: left;
     font-size: 12px;
-    box-shadow: 2px 2px 4px #473e3e;
 }
 
 .box:hover {
-    background-color: #440606;
+    background-color: #f0f0f0;
 }
 
 #userMap {
@@ -1188,7 +1159,7 @@ table thead th code.highlighter-rouge {
 }
 
 #userMap .active {
-    background-color: #234e23;
+    background-color: #d6f5d6;
     border:1px solid #555;
     font-weight: bold;
 }
@@ -1199,7 +1170,6 @@ h2.userMapTitle {
 
 #userMap a:hover {
     text-decoration: none;
-    color: #d4ecc3;
   }
 
 div.arrow {
@@ -1340,7 +1310,7 @@ h4.panel-title {
 /* to fix the post-header getting under the topnav */
 
 .post-header {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 
@@ -1351,79 +1321,4 @@ h4.panel-title {
     transform: rotate(-90deg);
     background-color: amber;
     border: 1px solid red;
-}
-
-/* scroll top css */
-#top { 
-  position:fixed; 
-  z-index:1000; 
-  bottom:0; 
-  right:0; 
-  border:1px solid rgba(255, 217, 0, 0.267); 
-  background-color:#ff990081; 
-  color: white; 
-  cursor:pointer;
-  outline:none;
-  visibility: hidden;
-}
-/* 	
-#top::after {
-  font-weight: bold;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px; 
-  color: rgba(255, 217, 0, 0.37);
-} */
-
-#top:hover {
-  cursor: pointer; 
-  background-color: rgba(51, 51, 51, 0.404); 
-  color: gold;
-} 	
-
-#top:active { 
-  background-color: rgba(224, 211, 211, 0.342);
-} 
-
-#top.show {
-  opacity: 0.7; 
-  visibility: visible;
-}
-	
-#topButton2 {
-  display: inline-block;
-  background-color: #ff99007c;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
- /* visibility: hidden;*/
-  z-index: 1000;
-}
-
-#topButton2::after {
-  content: "\f077";
-  font-family: FontAwesome;  /*fontAwesome 링크 붙여 놓고.. ascii 번호 입력하고 폰트패밀리 명시하면 되는 것 아닌감? 왜 안보일까... 버젼인가? */
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#topButton2:hover {
-  cursor: pointer;
-  background-color: rgba(51, 51, 51, 0.548);
-}
-#topButton2:active {
-  background-color: #555;
-}
-#topButton2.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* navbar customization */
-.col-md-6  h1 {
-    margin-top: 50px;
 }
