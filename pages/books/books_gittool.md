@@ -28,13 +28,7 @@ curl -u aiegoo https://api.github.com/rate_limit
 ## Gists 
 
 ```
-The important thing to note about hypermedia APIs is that payloads contain meta‐
-data about data itself and metadata about the possible options of operating on the
-data. RESTful APIs typically provide a mapping outside of the payload. You have to
-join the API sitemap with the data in an ad hoc way when using RESTful APIs; with
-hypermedia APIs your client can react to the payload itself correctly and intelligently
-without knowing anything about a sitemap stored in human-readable documenta‐
-tion.
+The important thing to note about hypermedia APIs is that payloads contain meta‐data about data itself and metadata about the possible options of operating on the data. RESTful APIs typically provide a mapping outside of the payload. You have to join the API sitemap with the data in an ad hoc way when using RESTful APIs; with hypermedia APIs your client can react to the payload itself correctly and intelligently without knowing anything about a sitemap stored in human-readable documentation.
 ```
 
 ## Wiki with gollum
