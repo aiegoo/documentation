@@ -17,5 +17,7 @@ folder: mydoc
 [blog](https://lab.hakim.se/progress-nav/)
 
 <script src="https://gist.github.com/aiegoo/1566bffb6af387720689f95c6dc16cd8.js"></script>
+
+{% gist aiegoo/23c8f2eeb375ece8a033da782036cb91 index.html %}
 ### scroll typical
 [blog](https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/)
