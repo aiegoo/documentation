@@ -72,7 +72,7 @@
     {% endif %}
 
 </head>
-<body>
+<body onload="">
 {% include topnav.html %}
 <!-- Page Content -->
 <div class="container">
@@ -90,6 +90,7 @@
 
         <!-- Content Column -->
         <div class="{{content_col_size}}" id="tg-sb-content">
+        {% include banner.html %}
             {{content}}
         </div>
     <!-- /.row -->
