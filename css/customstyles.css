@@ -1416,9 +1416,9 @@ h4.panel-title {
  }
 
  .gist .gist-meta {
-    background-color: #47d85254;
+    background-color: #47d85254 !important;
     border-radius: 0 0 6px 6px;
-    color: #d0237a;
+    color: #d0237a !important;
     font: 12px -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     overflow: hidden;
     padding: 10px;
