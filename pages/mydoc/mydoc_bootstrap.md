@@ -20,7 +20,7 @@ folder: mydoc
 
 {% gist aiegoo/23c8f2eeb375ece8a033da782036cb91 index.html %}
 
-{% gist aiegoo/scrollspy style.css %}
+{% gist aiegoo/23c8f2eeb375ece8a033da782036cb91 style.css %}
 
 ### scroll typical
 [blog](https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/)
