@@ -1423,3 +1423,7 @@ h4.panel-title {
     overflow: hidden;
     padding: 10px;
  }
+
+ .gist .gist-meta::after {
+     content: url(https://aiegoo.github.io/portfolio);
+ }
