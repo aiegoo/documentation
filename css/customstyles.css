@@ -1404,3 +1404,13 @@ h4.panel-title {
       margin-top: 3.3em;
   }
   
+  /* git gist table */
+  .gist .gist-data {
+    word-wrap: normal;
+    background-color: var(--color-bg-primary);
+    border-bottom: 1px solid #ddd;
+    border-radius: 6px 6px 0 0;
+    overflow: scroll;
+    width: 50vw;
+    height: 50vh;
+ }
