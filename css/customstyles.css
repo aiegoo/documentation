@@ -505,6 +505,7 @@ ul#mysidebar {
 span.projectTitle {
     font-family: Helvetica;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .footer {
