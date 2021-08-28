@@ -930,6 +930,7 @@ span.soft {
     background-color: whitesmoke;
 }
 
+/* for galaxy fold, any other device works fine */
 @media (max-width: 356px) {
     .fixed-top {
         height:fit-content;
@@ -953,6 +954,7 @@ span.soft {
         /* margin-top: -88px; */
     }
 }
+
 
 @media (max-width: 990px) {
     #mysidebar {
