@@ -244,6 +244,7 @@ div#toc ul li {
     margin: 8px 0px 8px 20px;
     font-size: 70%;
     list-style: square;
+    max-height: 12em;
 }
 div#toc ul {
     background-color: rgba(188, 210, 172, 0.52) !important;
