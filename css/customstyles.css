@@ -931,10 +931,9 @@ span.soft {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
     }
-    .gist .gist-data {
-    width: 90vw;
+    span.projectTitle {
+    font-size: 0.5em;
     }
-    
 }
 
 @media (max-width: 990px) {
@@ -957,8 +956,7 @@ span.soft {
 @media (max-width: 1110px) {
 
     div#sidetoc {
-        opacity: 45%;
-        
+        opacity: 45%;        
     }
     div#toc {
         opacity: 0;
@@ -971,6 +969,9 @@ span.soft {
 
     ul#mysidebar {
         max-width: 100%;
+    }
+    .gist .gist-data {
+    width: 90vw;
     }
 }
 
