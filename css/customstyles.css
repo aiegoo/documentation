@@ -931,6 +931,10 @@ span.soft {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
     }
+    .gist .gist-data {
+    width: 90vw;
+    }
+    
 }
 
 @media (max-width: 990px) {
