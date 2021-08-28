@@ -930,6 +930,12 @@ span.soft {
     background-color: whitesmoke;
 }
 
+@media (max-width: 356px) {
+    .fixed-top {
+        height:fit-content;
+    }
+}
+
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
