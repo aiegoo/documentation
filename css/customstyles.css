@@ -964,6 +964,9 @@ span.soft {
     div#toc:hover {
         opacity: 40%;
     }
+    .gist .gist-data {
+    width: 90vw;
+    }
 }
 @media (max-width: 900px) {
 
