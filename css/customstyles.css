@@ -1,3 +1,5 @@
+:root { --tonyillust: url(images/tony_doc.svg); }
+
 body {
     font-size:15px;
 }
@@ -506,6 +508,7 @@ span.projectTitle {
     font-family: Helvetica;
     font-weight: bold;
     font-size: 1.1em;
+    color: white !important;
 }
 
 .footer {
@@ -931,8 +934,17 @@ span.soft {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
     }
-    span.projectTitle {
-    font-size: 0.5em;
+    .navbar-brand span.projectTitle {
+    font-size: 1em;
+    color: white;
+    display: inline-block;
+    }
+    .projectTitle > img {
+        display: inline-block;
+    }    
+    .fixed-top img
+     {
+        /* margin-top: -88px; */
     }
 }
 
@@ -947,7 +959,7 @@ span.soft {
 
 @media (min-width: 1000px) {    
     .gist .gist-data {
-    width: 50vw;
+    width: 55vw;
     }
     ul#mysidebar {
         width: 225px;
@@ -975,8 +987,12 @@ span.soft {
     ul#mysidebar {
         max-width: 100%;
     }
-    .gist .gist-data {
-    width: 90vw;
+}
+
+@media only screen and (min-width: 900px), only screen and (min-device-width: 900px) {
+    .col-md-9 img {
+        max-width: 700px;
+        max-height: 700px;
     }
 }
 
@@ -1011,14 +1027,6 @@ span.soft {
     float: left;
     margin:15px 15px 15px 0px;
     border: 1px solid #dedede;
-}
-
-
-@media only screen and (min-width: 900px), only screen and (min-device-width: 900px) {
-    .col-md-9 img {
-        max-width: 700px;
-        max-height: 700px;
-    }
 }
 
 *:hover > .anchorjs-link {
@@ -1314,8 +1322,7 @@ h4.panel-title {
         display:block !important;
     }
     .navbar-brand .projectTitle {
-        font-size: 1.1em;
-        margin-left: 5px;
+        font-size: 1em;
     }
 }
 
