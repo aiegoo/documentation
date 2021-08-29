@@ -58,7 +58,7 @@ The required MATLAB toolboxes include the following.
 [installOptions](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:51951ade-9657-4280-a79a-6c2bbd26d231#page=18)
 > this will get about 900 links downloaded for building. Patience required.
 
-:hammer: log file [log_gist](https://gist.github.com/aiegoo/7415df308161ff861ac087c2e3bffcdf)
+🔨 log file [log_gist](https://gist.github.com/aiegoo/7415df308161ff861ac087c2e3bffcdf)
 
 ```diff
 Warning: Your Windows Path variable contains the following folders that may cause Simulink failed to generate code in some cases.
@@ -87,7 +87,7 @@ SystemNewPath =
 ■  (b) Msys2Toolchain based on toolchain;
 ■  (c) CygwinToolchain based on the toolchain.
 
-[fmu_v5](images/px4psp/px4.jpg)
+![fmu_v5](images/px4psp/px4.jpg)
 #### (1)PixhawkSupportPackage(PSP)Toolbox
 It  is  a  Simulink  toolbox  officially  released  by Mathworks for controller design, code generation, and  firmware  upload  of  the  Pixhawk  autopilot. We  have  made  some  updates  and optimizations based   on   the   official   PSP  toolbox   to   ensure compatibility    with    the latest    Pixhawk    and MATLAB versions
 
