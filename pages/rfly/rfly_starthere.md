@@ -87,6 +87,7 @@ SystemNewPath =
 ■  (b) Msys2Toolchain based on toolchain;
 ■  (c) CygwinToolchain based on the toolchain.
 
+[fmu_v5](images/px4psp/px4.jpg)
 #### (1)PixhawkSupportPackage(PSP)Toolbox
 It  is  a  Simulink  toolbox  officially  released  by Mathworks for controller design, code generation, and  firmware  upload  of  the  Pixhawk  autopilot. We  have  made  some  updates  and optimizations based   on   the   official   PSP  toolbox   to   ensure compatibility    with    the latest    Pixhawk    and MATLAB versions
 
