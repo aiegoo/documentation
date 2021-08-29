@@ -80,6 +80,13 @@ SystemNewPath =
 
     'C:\Ruby30-x64\bin;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\libnvvp;C:\Python37\Scripts\;C:\Python37\;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\PuTTY\;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web\Addins;C:\Program Files (x86)\Yarn\bin\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Owner\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git LFS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;c:\Work\전자기록뷰어;c:\Wo;k\전자기록뷰어\Pdf;c:\Wo;k\전자기록뷰어\Pdf\Addins;C:\Pr;gram Files\Docker\Docker\resources\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;%C:\Program Files\Java\jdk1.8.0_261;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;'
 ```
+
+#### firmware version
+
+■  Win10WSL based on the Windows Subsystem for Linux (WSL);
+■  (b) Msys2Toolchain based on toolchain;
+■  (c) CygwinToolchain based on the toolchain.
+
 #### (1)PixhawkSupportPackage(PSP)Toolbox
 It  is  a  Simulink  toolbox  officially  released  by Mathworks for controller design, code generation, and  firmware  upload  of  the  Pixhawk  autopilot. We  have  made  some  updates  and optimizations based   on   the   official   PSP  toolbox   to   ensure compatibility    with    the latest    Pixhawk    and MATLAB versions
 
