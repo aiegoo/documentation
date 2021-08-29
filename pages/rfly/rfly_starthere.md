@@ -26,12 +26,12 @@ folder: rfly
 |    |
 | -- |
 | Q1. Given a payload and flight endurace requriements, how to design a multicopter propulsion system? |
-| Q2. Given a Pixhawk autopilot, how to calibrate its accelerometer and mangentometer and how to design the filter to estimate the state? |
-| Q3. Based on teh designed multicopter propulsion system and airframe configuration, how to establish a multicopter dyanmical model? |
+| Q2. Given a Pixhawk autopilot, how to calibrate its accelerometer and magnetometer and how to design the filter to estimate the state? |
+| Q3. Based on the designed multicopter propulsion system and airframe configuration, how to establish a multicopter dynamical model? |
 | Q4. Based on the dynamical model established, how to design a motor controller, a control allocator and an attitude controller? |
 | Q5. Based on the designed attitude controller, how to desgin a set-position controller? |
 | Q6. Based on the designed attitude controller and set-position controller, how to design a semi-autonomous controller? |
-| Q7. Based on teh simi-autonomous controller, how to desgin a fail-safe logic for the desgined multicopter? |
+| Q7. Based on the simi-autonomous controller, how to desgin a fail-safe logic for the desgined multicopter? |
 | Q8, Given a new algorithm, how to realize it by the model-based design? |
 | Q9. How new functions are developed based on the platform, such as health evaluation or vision-based autonomous flight? |
 | Q10, Given a group of engineers, how to organize them effectively? |
