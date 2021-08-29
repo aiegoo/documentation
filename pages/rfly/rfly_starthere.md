@@ -55,6 +55,9 @@ The required MATLAB toolboxes include the following.
 • mingw.mlpkginstall (at install or later via matlab account or through cmd?
 ```
 
+[installOptions](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:51951ade-9657-4280-a79a-6c2bbd26d231#installoptions)
+> this will get about 900 links downloaded for building. Patience required.
+
 #### (1)PixhawkSupportPackage(PSP)Toolbox
 It  is  a  Simulink  toolbox  officially  released  by Mathworks for controller design, code generation, and  firmware  upload  of  the  Pixhawk  autopilot. We  have  made  some  updates  and optimizations based   on   the   official   PSP  toolbox   to   ensure compatibility    with    the latest    Pixhawk    and MATLAB versions
 
