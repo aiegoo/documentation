@@ -25,6 +25,38 @@ curl -u aiegoo https://api.github.com/rate_limit
 ### Username/pw authentication
 
 ### Oauth
+
+```
+curl -u username -d '{"scopes":["public_repo"], "note": "A new authorization"}' \
+https://api.github.com/authorizations
+
+```
+
+---
+**NOTE**
+
+It doesn't seem to work with the above script.
+
+---
+
+#### XHR, Json-p
+
+```
+curl https://api.github.com/?callback=myCallback
+```
+
+<script src="https://gist.github.com/aiegoo/b06b4d84a3f2dec1dcb1be072615ed30.js"></script>
+
+```
+URL='https://api.github.com/repos/rails/rails/issues/11819'
+
+curl -s $URL | jq '.body'
+curl -s $URL | jq '.body_html'
+curl -s $URL \
+-H "accept: application/vnd.github.html+json" | jq '.body_html'
+```
+
+
 ## Gists 
 
 ```
