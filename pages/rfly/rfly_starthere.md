@@ -87,9 +87,11 @@ SystemNewPath =
 ■  (b) Msys2Toolchain based on toolchain;
 ■  (c) CygwinToolchain based on the toolchain.
 
-|      |      |      |
-| :--: | :--: | :--: |
-|![image](https://user-images.githubusercontent.com/42961200/131242984-6ee29299-d4dc-4763-ad43-685c5d37fc8c.png) | ![image](https://user-images.githubusercontent.com/42961200/131243002-cc641ba1-dde0-4ab0-a4a4-9c1c0475eed5.png) | ![image](https://user-images.githubusercontent.com/42961200/131242536-8bc451b2-1ad1-45b6-bbe9-2257fda344be.png) |
+|--
+| :--: | :--: | :--:
+|![image](https://user-images.githubusercontent.com/42961200/131242984-6ee29299-d4dc-4763-ad43-685c5d37fc8c.png) | ![image](https://user-images.githubusercontent.com/42961200/131243002-cc641ba1-dde0-4ab0-a4a4-9c1c0475eed5.png) | ![image](https://user-images.githubusercontent.com/42961200/131242536-8bc451b2-1ad1-45b6-bbe9-2257fda344be.png) 
+|===
+| footer row
 #### (1)PixhawkSupportPackage(PSP)Toolbox
 It  is  a  Simulink  toolbox  officially  released  by Mathworks for controller design, code generation, and  firmware  upload  of  the  Pixhawk  autopilot. We  have  made  some  updates  and optimizations based   on   the   official   PSP  toolbox   to   ensure compatibility    with    the latest    Pixhawk    and MATLAB versions
 
