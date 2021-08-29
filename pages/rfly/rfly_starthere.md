@@ -55,7 +55,7 @@ The required MATLAB toolboxes include the following.
 • mingw.mlpkginstall (at install or later via matlab account or through cmd?
 ```
 
-[installOptions](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:51951ade-9657-4280-a79a-6c2bbd26d231#installoptions)
+[installOptions](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:51951ade-9657-4280-a79a-6c2bbd26d231#page=18)
 > this will get about 900 links downloaded for building. Patience required.
 
 :hammer: log file [log_gist](https://gist.github.com/aiegoo/7415df308161ff861ac087c2e3bffcdf)
