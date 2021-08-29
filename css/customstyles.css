@@ -244,7 +244,7 @@ ul#results-container a:hover {
 
 div#toc ul li {
     margin: 8px 0px 8px 20px;
-    font-size: 70%;
+    font-size: 75%;
     list-style: square;
 }
 div#toc ul {
@@ -275,6 +275,7 @@ div#toc ul li ul li {
     margin: 5px 0px 0px 5px;
     padding-left: 4px;
     text-underline-offset: 1em;
+    font-size: 1em;
 }
 
 div#toc ul li ul li::before {
