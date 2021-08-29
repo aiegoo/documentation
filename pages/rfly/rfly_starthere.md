@@ -88,10 +88,14 @@ SystemNewPath =
 ■  (c) CygwinToolchain based on the toolchain.
 
 |--
+| Knockoff | px4 LED | px1
 | :--: | :--: | :--:
 |![image](https://user-images.githubusercontent.com/42961200/131242984-6ee29299-d4dc-4763-ad43-685c5d37fc8c.png) | ![image](https://user-images.githubusercontent.com/42961200/131243002-cc641ba1-dde0-4ab0-a4a4-9c1c0475eed5.png) | ![image](https://user-images.githubusercontent.com/42961200/131242536-8bc451b2-1ad1-45b6-bbe9-2257fda344be.png) 
+|---
+|Above images are difference between popular and knockoff pixhawks. Don't buy knockoffs, it will be dangerous
+|
 |===
-| footer row
+| Mine needs to set the magnetic compass calibration
 
 |---
 | Default aligned | Left aligned | Center aligned | Right aligned
