@@ -23,6 +23,19 @@ folder: rfly
 | battery |  | air-time |  |
 | configurator |  |  last updated |   |
 
+|    |
+| -- |
+| Q1. Given a payload and flight endurace requriements, how to design a multicopter propulsion system? |
+| Q2. Given a Pixhawk autopilot, how to calibrate its accelerometer and magnetometer and how to design the filter to estimate the state? |
+| Q3. Based on the designed multicopter propulsion system and airframe configuration, how to establish a multicopter dynamical model? |
+| Q4. Based on the dynamical model established, how to design a motor controller, a control allocator and an attitude controller? |
+| Q5. Based on the designed attitude controller, how to desgin a set-position controller? |
+| Q6. Based on the designed attitude controller and set-position controller, how to design a semi-autonomous controller? |
+| Q7. Based on the simi-autonomous controller, how to desgin a fail-safe logic for the desgined multicopter? |
+| Q8, Given a new algorithm, how to realize it by the model-based design? |
+| Q9. How new functions are developed based on the platform, such as health evaluation or vision-based autonomous flight? |
+| Q10, Given a group of engineers, how to organize them effectively? |
+
 ### 🍃 pixhawk development tools
 
 ### 🌻 [pptx](https://github.com/aiegoo/rflysim/tree/master/PPT_EN)
@@ -83,8 +96,8 @@ SystemNewPath =
 
 #### firmware version
 
-■  Win10WSL based on the Windows Subsystem for Linux (WSL);
-■  (b) Msys2Toolchain based on toolchain;
+■  Win10WSL based on the Windows Subsystem for Linux (WSL); <br>
+■  (b) Msys2Toolchain based on toolchain; <br>
 ■  (c) CygwinToolchain based on the toolchain.
 
 |--
@@ -100,9 +113,10 @@ SystemNewPath =
 |---
 | Default aligned | Left aligned | Center aligned | Right aligned
 |-|:-|:-:|-:
-| First body part | Second cell | Third cell | fourth cell
-| Second line |foo | **strong** | baz
-| Third line |quux | baz | bar
+| ![image](https://user-images.githubusercontent.com/42961200/131267683-a84b51b5-8307-46ba-bb64-53069657b436.png) | ![image](https://user-images.githubusercontent.com/42961200/131267913-5a739b52-e028-4afb-b61f-1a8ee0bc1bc0.png) | ![image](https://user-images.githubusercontent.com/42961200/131268028-0e03434e-030b-40c4-b482-c537a9b200f6.png) | fourth cell
+| ![image](https://user-images.githubusercontent.com/42961200/131267775-405262b9-e55a-4488-b3d3-0a0702da88c6.png) |![image](https://user-images.githubusercontent.com/42961200/131267927-6b981dd1-ee30-439b-879b-8eccd519b237.png) | **strong** | baz
+| ![image](https://user-images.githubusercontent.com/42961200/131267804-3ef78db1-fff3-4355-b706-693b57046031.png) |![image](https://user-images.githubusercontent.com/42961200/131267969-0a38bed1-fdbf-4220-8df1-781c7f5c8c1a.png) | baz | bar
+| ![image](https://user-images.githubusercontent.com/42961200/131267822-f504f24a-06f9-4f07-bfaf-5b5a1f1a960c.png) | ![image](https://user-images.githubusercontent.com/42961200/131267997-a37f1c47-465a-4c15-8e64-e5f6d93adef9.png) |  | 
 |---
 | Second body
 | 2 line
@@ -1213,6 +1227,8 @@ Note that if you're making updates online, those updates will be out of sync wit
 ## Prose.io
 
  Prose.io is an overlay on Github that would allow people to make comments in an easier interface. If you simply go to [prose.io](http://prose.io), it asks to authorize your Github account, and so it will read files directly from Github but in the Prose.io interface.
+ 
+ {% gist aiegoo/7415df308161ff861ac087c2e3bffcdf %}
  
 {% include custom/series_rfly_next.html %}
 
