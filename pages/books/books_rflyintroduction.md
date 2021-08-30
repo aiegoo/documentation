@@ -16,237 +16,184 @@ weight: 3
 
 {% include custom/series_rfly_next.html %}
 
-# Matlab implementation
+=============================
+## What is RflySim
+=============================
 
-## Slam
-[doc](https://kr.mathworks.com/help/nav/ref/slammapbuilder-app.html)
 
-- rotations, orientation, and quaternions
-- introduction to simulating IMU measurements
-- estimate positon and orientation of a ground vehicle
-- esitamte robot pose with scan matching
-- plan mobile robot paths using RRT (rapidly exploring random tree)
-- implement simultaneous localization and mapping with algorithm
-- perform slam using 3-d lidar point clouds
+### About RflySim
+---------------------------------------
 
-[![image](https://user-images.githubusercontent.com/42961200/129006952-8894b07f-de23-4d9f-bf39-c2a3ee532549.png)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
 
-[![dynamicmap](./images/MotionPlanningUsingDynamicMapExample_03.gif)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
+- RflySim is a rapid development platform based on `Pixhawk <https://pixhawk.org/>`_ /`PX4 <https://px4.io/>`_ and MATLAB/Simulink for UAV education and research. 
+- It is the ease of use with **one-key installation** and simulation in **Windows platforms**. 
+- This platform follows the **model-based development** idea and adopts the **software-in-the-loop(SIL) simulation** and **hardware-in-the-loop(HIL) simulation** to accelerate development.
+- With RflySim and MATLAB/Simulink, low-level controllers (such as attitude control, position control) and high-level applications (such as decision-making, autonomous flight) can be deployed into **Pixhawk/PX4** ecosystem directly **without accessing the C/C++** underlying code.
+- Multicopter model parameters can be modified conveniently to adapt to your vehicles to verify control algorithms with SIL and HIL simulations.
 
-![](./pdf/gcs/matlab_flightsim.gif)
+.. RflySim allows developers to directly use MATLAB/Simulink to design low-level controllers (such as attitude control, position control) and high-level applications (such as decision-making, autonomous flight), and then deploy them into a multicopter autopilot system with no need to access the C/C++ underlying code.
 
-```cpp
-classdef FlightInstrumentsExample < matlab.apps.AppBase
+The development based on RflySim generally includes the following five phases: 
+modeling phase, controller design phase, Software-In-the-Loop (SIL) simulation 
+test phase, Hardware-In-the-Loop (HIL) simulation test phase, and experimental 
+test phase. By using code-generation technology by MATLAB/Simulink, the 
+controller can be easily uploaded to hardware automatically for the HIL 
+simulation and real test phase. 
 
-    % Properties that correspond to app components
-    properties (Access = public)
-        FlightInstrumentsFlightDataPlaybackUIFigure  matlab.ui.Figure
-        Image                  matlab.ui.control.Image
-        AirspeedIndicator      Aero.ui.control.AirspeedIndicator
-        ArtificialHorizon      Aero.ui.control.ArtificialHorizon
-        Altimeter              Aero.ui.control.Altimeter
-        TurnCoordinator        Aero.ui.control.TurnCoordinator
-        HeadingIndicator       Aero.ui.control.HeadingIndicator
-        ClimbIndicator         Aero.ui.control.ClimbIndicator
-        Time000secSliderLabel  matlab.ui.control.Label
-        Time000secSlider       matlab.ui.control.Slider
-        PiperPA24ComancheFlightDataDisplayLabel  matlab.ui.control.Label
-    end
+So far, RflySim has two types, namely **education-level RflySim** and 
+**commercial-level RflySim**, depending on how to perform the HIL simulation.
 
+* The **education-level RflySim** focuses on the ease-to-access, using personal computers to run the model and the serial port for communication with the control board. 
+* The **commercial-level RflySim** focuses on reliable performance, using real-time simulator with FPGA to run the models, sensors chips, and high-speed communication interfaces with the control board.
+
+![image](https://user-images.githubusercontent.com/42961200/131309120-b20512b8-8df0-4e62-afed-b1444d5db3f9.png)
+
+The development based on RflySim generally includes the following five phases: modeling phase, controller design phase, Software-In-the-Loop (SIL) simulation test phase, Hardware-In-the-Loop (HIL) simulation test phase, and experimental test phase. By using code-generation technology by MATLAB/Simulink, the controller can be easily uploaded to hardware automatically for the HIL simulation and real test phase.
+
+So far, RflySim has two types, namely education-level RflySim and commercial-level RflySim, depending on how to perform the HIL simulation.
+
+The education-level RflySim focuses on the ease-to-access, using personal computers to run the model and the serial port for communication with the control board.
+The commercial-level RflySim focuses on reliable performance, using real-time simulator with FPGA to run the models, sensors chips, and high-speed communication interfaces with the control board.
+
+
+![image](https://user-images.githubusercontent.com/42961200/131309167-1913422a-0d56-4292-a026-fc85a69fca7c.png)
+
+Features
+-------------------------------------
+
+Advantages of education-level RflySim platform
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Compared with other simulators (AirSim, Gazebo, etc.) in the world, our 
+education-level RflySim platform has the following advantages:
+
+1). **Ease of Use** . One-key installation and simulation in the Windows platform, which is convenient and easy to use for users to focus on algorithm development and test.
+
+2). **Distributed Structure** . As shown in Fig. 0.2, the structure of RflySim platform is completely distributed. All applications in RflySim platform can run multiple instances in the same computer or multiple computers, and each application can receive other applications�� information through UDP network. The distributed structure is flexible and reliable for large scale UAV swarm simulation tests with vision.
+
+3). **UAV Swarm Simulation** . We provide interfaces to perform HIL/SIL simulations for multiple Pixhawk with computers in the same local area network. Mavlink communications through serial (Radio telemetry) or network (WIFI) to control Pixhawk by Simulink or C++ programs are also supported.
+
+4). **Multiple Vehicle Types** . Compatible to different vehicle models, such as cars, fixed-wing, or VTOL aircraft. Users can build the vehicle models in Simulink with given interfaces and auto-generate DLL model files for the HIL simulation platform; then, the experimental platform can be applied to any other unmanned vehicle systems.
+
+5). **High-fidelity 3D Environment** . We provide source code and instruction to develop 3D environments in Unreal Engine 4 (UE4), so users can quickly develop an indoor or outdoor 3D environment for simulation or vision-based algorithm development.
+
+6). **Vision-based control** . Our 3D environments based on UE4 can send real-time images for other programs (Python/C or C++/Simulink) to process the images and feedback the control signals to HIL/SIL simulation platform to achieve vision-based control.
+
+![image](https://user-images.githubusercontent.com/42961200/131309451-b3580bdc-0d7d-4e87-8899-e51705d448b4.png)
+
+
+Advantages of commercial-level RflySim platform
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+The commercial-level RflySim platform uses a high-performance real-time 
+simulation computer to simulate the vehicle motion and use FPGA to simulate 
+and replace all sensor chips on the autopilot (control) system. As shown in 
+Fig. 0.3, the goal of commercial-level RflySim platform is to build a unified 
+test framework for different types of vehicles and autopilot systems. The 
+hardware and software structures of the commercial-level RflySim platform 
+are presented in Fig. 0.4 and Fig. 0.5 respectively. Compared with the 
+education-level RflySim platform or other simulators in the world, it has the 
+following advantages
+
+1). **Extensibility** : Models are developed in Simulink with module form, so by changing the parameters of specific subsystem modules, it is easy to extend to other types of vehicles, such as UAVs (multicopters, fixed-wings, VTOLs), unmanned cars or boats.
+
+2). **Practicability** : plug and test for different autopilot products; only need to know the sensor models used by the autopilot with no requirement to access or modify the source code of control systems, then the platform can perform black-box tests for different autopilot products.
+
+3). **Standardization** : The platform uses a modular/visual programming approach, so the system model standardization can be ensured by using certified standard modules or subsystems. Besides, the whole simulation software is obtained by automatic code generation technique, which ensures the standardization of the development process and minimizes the effect of manual differences and bugs.
+
+4). **Automation** : With the simulation model comprehensive and accurate enough, this platform can simulate normal and failure cases of outdoor flight tests. What's more automatic testing, case traversing, and assessment can be performed to ensure system safety and reliability.
+
+![image](https://user-images.githubusercontent.com/42961200/131309515-c054ab25-54ab-4e25-9eaa-b71339b0e3f1.png)
+
+![image](https://user-images.githubusercontent.com/42961200/131309560-07d8e0b1-da17-4724-b23b-8b75fdc48be5.png)
+
+Show Results
+----------------------------------------------
+.. figure:: /images/px4psp/PlatGif1.gif
+    :height: 160px
+    :width: 320px
+    :align: left
+  
+    Fig. 0.6 SIL simulation
+
+.. figure:: /images/px4psp/PlatGif2.gif
+    :height: 160px
+    :width: 320px
+    :align: right
+  
+    Fig. 0.7 automatic code generation
+
+.. figure:: /images/px4psp/PlatGif3.gif
+    :height: 160px
+    :width: 320px
+    :align: left
+  
+    Fig. 0.8 HIL simulation
+
+.. figure:: /images/px4psp/PlatGif4.gif
+    :height: 160px
+    :width: 320px
+    :align: right
+  
+    Fig. 0.9 Flight experiment
+
+.. figure:: /images/PX4SITLSim.gif
+    :height: 160px
+    :width: 320px
+    :align: left
+  
+    Fig. 0.10 One-key cluster SIL simulation
+
+.. figure:: /images/px4psp/AutoInstall.gif
+    :height: 160px
+    :width: 320px
+    :align: right
+  
+    Fig. 0.11 One-key installation and simulation
+
+.. figure:: /images/px4psp/AdvancedGIF1.gif
+    :height: 160px
+    :width: 320px
+    :align: left
+  
+    Fig. 0.12 Indoor HIL simulation based on UE4
+
+.. figure:: /images/px4psp/AdvancedGIF2.gif
+    :height: 160px
+    :width: 320px
+    :align: right
+  
+    Fig. 0.13 HIL simulation for unmanned cars
+
+.. figure:: /images/px4psp/AdvancedGIF3.gif
+    :height: 160px
+    :width: 320px
+    :align: left
+  
+    Fig. 0.14 Cluster control and HIL simulation
+
+.. figure:: /images/px4psp/AdvancedGIF4.gif
+    :height: 160px
+    :width: 320px
+    :align: right
+
+    Fig. 0.15 One-key cross rings control
+
+.. figure:: /images/px4psp/AdvancedGIF9.gif
+    :height: 160px
+    :width: 320px
+    :align: left
+  
+    Fig. 0.16 HIL simulation of motor failure
+
+
+.. figure:: /images/px4psp/AdvancedGIF10.gif
+    :height: 160px
+    :width: 320px
+    :align: right
+  
+    Fig. 0.17 Indoor cluster flight experiment
     
-    properties (Access = public)
-        simdata % Saved flight data [time X Y Z phi theta psi] 
-        animObj % Aero.Animation object
-    end
-    
-
-    % Callbacks that handle component events
-    methods (Access = private)
-
-        % Code that executes after component creation
-        function startupFcn(app)
-            
-            % Load saved flight status data
-            savedData = load(fullfile(matlabroot, 'toolbox', 'aero', 'astdemos', 'simdata.mat'), 'simdata');
-            yaw = savedData.simdata(:,7);
-            yaw(yaw<0) = yaw(yaw<0)+2*pi; % unwrap yaw angles
-            savedData.simdata(:,7) = yaw;
-            app.simdata = savedData.simdata;
-            
-            % Create animation object to visualize aircraft flight dynamics corresponding with saved data over time 
-            app.animObj = Aero.Animation;
-            app.animObj.createBody('pa24-250_orange.ac','Ac3d'); % Piper PA-24 Comanche geometry
-            app.animObj.Bodies{1}.TimeseriesSourceType = 'Array6DoF'; % [time X Y Z phi theta psi]
-            app.animObj.Bodies{1}.TimeSeriesSource = app.simdata;
-            app.animObj.Camera.PositionFcn = @staticCameraPosition;
-            app.animObj.Figure.Position = [app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(1)+625 app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(2) app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(3) app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(4)];
-            app.animObj.updateBodies(app.simdata(1,1)); % Initialize animation window at t=0
-            app.animObj.updateCamera(app.simdata(1,1));
-            app.animObj.show();
-
-        end
-
-        % Value changing function: Time000secSlider
-        function Time000secSliderValueChanging(app, event)
-            
-            % Display current time in slider component
-            t = event.Value;
-            app.Time000secSliderLabel.Text = sprintf('Time: %.1f sec', t);           
-            
-            % Find corresponding time data entry
-            k = find(app.simdata(:,1)<=t);
-            k = k(end);
-            
-            app.Altimeter.Altitude = convlength(-app.simdata(k,4), 'm', 'ft');
-            app.HeadingIndicator.Heading = convang(app.simdata(k,7),'rad','deg');
-            app.ArtificialHorizon.Roll = convang(app.simdata(k,5),'rad','deg');
-            app.ArtificialHorizon.Pitch = convang(app.simdata(k,6),'rad','deg');
-            
-            if k>1
-                % Estimate velocity and angular rates
-                Vel = (app.simdata(k,2:4)-app.simdata(k-1,2:4))/(app.simdata(k,1)-app.simdata(k-1,1));
-                rates = (app.simdata(k,5:7)-app.simdata(k-1,5:7))/(app.simdata(k,1)-app.simdata(k-1,1));
-                
-                app.AirspeedIndicator.Airspeed = convvel(sqrt(sum(Vel.^2)),'m/s','kts');
-                app.ClimbIndicator.ClimbRate = convvel(-Vel(3),'m/s','ft/min');
-
-                % Estimate turn rate and slip behavior 
-                app.TurnCoordinator.Turn = convangvel(rates(1)*sind(30) + rates(3)*cosd(30),'rad/s','deg/s');
-                app.TurnCoordinator.Slip = 1/(2*pi)*convang(atan(rates(3)*sqrt(sum(Vel.^2))/9.81)-app.simdata(k,5),'rad','deg');
-            else
-                % time = 0
-                app.ClimbIndicator.ClimbRate = 0;
-                app.AirspeedIndicator.Airspeed = 0;
-                app.TurnCoordinator.Slip = 0;
-                app.TurnCoordinator.Turn = 0;
-            end
-            
-            %% Update animation window display
-            app.animObj.updateBodies(app.simdata(k,1));
-            app.animObj.updateCamera(app.simdata(k,1));
-            
-        end
-
-        % Close request function: 
-        % FlightInstrumentsFlightDataPlaybackUIFigure
-        function FlightInstrumentsFlightDataPlaybackUIFigureCloseRequest(app, event)
-            % Close animation figure with app
-            delete(app.animObj);
-            delete(app);
-           
-        end
-    end
-
-    % Component initialization
-    methods (Access = private)
-
-        % Create UIFigure and components
-        function createComponents(app)
-
-            % Create FlightInstrumentsFlightDataPlaybackUIFigure and hide until all components are created
-            app.FlightInstrumentsFlightDataPlaybackUIFigure = uifigure('Visible', 'off');
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.AutoResizeChildren = 'off';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Color = [0.2706 0.2706 0.2784];
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Position = [100 100 620 550];
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Name = 'Flight Instruments - Flight Data Playback';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Resize = 'off';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.CloseRequestFcn = createCallbackFcn(app, @FlightInstrumentsFlightDataPlaybackUIFigureCloseRequest, true);
-
-            % Create Image
-            app.Image = uiimage(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Image.Position = [8 -2 606 577];
-            app.Image.ImageSource = 'appdesignerInstrumentPanel.png';
-
-            % Create AirspeedIndicator
-            app.AirspeedIndicator = uiaeroairspeed(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.AirspeedIndicator.Limits = [25 250];
-            app.AirspeedIndicator.ScaleColorLimits = [0 60;50 200;200 225;225 250];
-            app.AirspeedIndicator.Position = [22 317 185 185];
-
-            % Create ArtificialHorizon
-            app.ArtificialHorizon = uiaerohorizon(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.ArtificialHorizon.Position = [219 317 185 185];
-
-            % Create Altimeter
-            app.Altimeter = uiaeroaltimeter(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Altimeter.Position = [416 317 185 185];
-
-            % Create TurnCoordinator
-            app.TurnCoordinator = uiaeroturn(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.TurnCoordinator.Position = [22 70 185 185];
-
-            % Create HeadingIndicator
-            app.HeadingIndicator = uiaeroheading(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.HeadingIndicator.Position = [219 70 185 185];
-
-            % Create ClimbIndicator
-            app.ClimbIndicator = uiaeroclimb(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.ClimbIndicator.MaximumRate = 8000;
-            app.ClimbIndicator.Position = [416 70 185 185];
-
-            % Create Time000secSliderLabel
-            app.Time000secSliderLabel = uilabel(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Time000secSliderLabel.HorizontalAlignment = 'right';
-            app.Time000secSliderLabel.FontSize = 11.5;
-            app.Time000secSliderLabel.FontColor = [1 1 1];
-            app.Time000secSliderLabel.Position = [267 3 80 22];
-            app.Time000secSliderLabel.Text = 'Time: 00.0 sec';
-
-            % Create Time000secSlider
-            app.Time000secSlider = uislider(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Time000secSlider.Limits = [0 49.833333333333];
-            app.Time000secSlider.MajorTicks = [0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 49.833333333333];
-            app.Time000secSlider.MajorTickLabels = {'0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50'};
-            app.Time000secSlider.ValueChangingFcn = createCallbackFcn(app, @Time000secSliderValueChanging, true);
-            app.Time000secSlider.MinorTicks = [];
-            app.Time000secSlider.FontSize = 11.5;
-            app.Time000secSlider.FontColor = [1 1 1];
-            app.Time000secSlider.Position = [50 55 520 3];
-
-            % Create PiperPA24ComancheFlightDataDisplayLabel
-            app.PiperPA24ComancheFlightDataDisplayLabel = uilabel(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.PiperPA24ComancheFlightDataDisplayLabel.BackgroundColor = [0.8 0.8 0.8];
-            app.PiperPA24ComancheFlightDataDisplayLabel.HorizontalAlignment = 'center';
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontName = 'Courier New';
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontSize = 14;
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontWeight = 'bold';
-            app.PiperPA24ComancheFlightDataDisplayLabel.Position = [141 515 347 22];
-            app.PiperPA24ComancheFlightDataDisplayLabel.Text = 'Piper PA-24 Comanche Flight Data Display';
-
-            % Show the figure after all components are created
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Visible = 'on';
-        end
-    end
-
-    % App creation and deletion
-    methods (Access = public)
-
-        % Construct app
-        function app = FlightInstrumentsExample
-
-            % Create UIFigure and components
-            createComponents(app)
-
-            % Register the app with App Designer
-            registerApp(app, app.FlightInstrumentsFlightDataPlaybackUIFigure)
-
-            % Execute the startup function
-            runStartupFcn(app, @startupFcn)
-
-            if nargout == 0
-                clear app
-            end
-        end
-
-        % Code that executes before app deletion
-        function delete(app)
-
-            % Delete UIFigure when app is deleted
-            delete(app.FlightInstrumentsFlightDataPlaybackUIFigure)
-        end
-    end
-end
-```
 {% include tony.html content="matlab tutorials and gcs.uno are the main source of learning for now" %}
 
 {% include custom/series_matlab_next.html %}
