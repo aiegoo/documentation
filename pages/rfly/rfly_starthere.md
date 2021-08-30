@@ -134,8 +134,7 @@ It is a popular open-source flight simulator that can be used  to  easily  obser
 ![flightgear](images/px4psp/flightgear.png)
 
 #### (3) PX4 Software — Source Code
-PX4  is  an  open-source  flight  control  software  system that   runs   on   the   Pixhawk  
-hardware   platform.   The Pixhawk   hardware   +   PX4   software   constitutes   an integrated autopilot  system,  which  is  one  of  the  most widely-used autopilot systems for aerial vehicles.
+PX4  is  an  open-source  flight  control  software  system that   runs   on   the   Pixhawk hardware   platform.   The Pixhawk   hardware   +   PX4   software   constitutes   an integrated autopilot  system,  which  is  one  of  the  most widely-used autopilot systems for aerial vehicles.
 '
 
 #### (4) PX4 Toolchain — Compiling Environment
