@@ -84,8 +84,8 @@ The commercial-level RflySim focuses on reliable performance, using real-time si
 Features
 -------------------------------------
 
-Advantages of education-level RflySim platform
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>Advantages of education-level RflySim platform
+
 
 Compared with other simulators (AirSim, Gazebo, etc.) in the world, our 
 education-level RflySim platform has the following advantages:
@@ -106,8 +106,8 @@ education-level RflySim platform has the following advantages:
 
 
 
-Advantages of commercial-level RflySim platform
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>Advantages of commercial-level RflySim platform
+
 
 The commercial-level RflySim platform uses a high-performance real-time 
 simulation computer to simulate the vehicle motion and use FPGA to simulate 
