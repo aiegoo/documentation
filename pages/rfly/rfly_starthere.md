@@ -155,6 +155,7 @@ It is a real-time motion simulation software developed for the Pixhawk/PX4 autop
 #### (8) 3DDisplay — 3D Visual Display Software
 It  is  a  real-time  3D  visual  display  software.  It receives the flight data of CopterSim through UDP to display the attitude and position of a multicopter in  real-time.  CopterSim  and  3DDisplay  together constitute  an  integrated  HIL  simulation  platform. The distributed independent operation mechanism of   CopterSim   and   3DDisplay   provides   future compatibility for swarm simulations.
 
+#### (9) Pixhawk Support Package (PSP) Toolbox3 : it is a Simulink toolbox officially released by Mathworks for controller design, code generation, and firmware upload of the Pixhawk autopilot. We have made some updates and optimizations based on the official PSP toolbox to ensure compatibility with the latest Pixhawk and MATLAB versions.
 
 ### Brief Introduction to Experimental Platforms
 
