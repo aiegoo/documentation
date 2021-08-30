@@ -27,7 +27,8 @@ I've been anxious to master this new trendy skill and had a couple of tutors eve
 
 ### books
 
-### lesson github with tasks [dockerlesson](https://github.com/aiegoo/docker-lesson/wiki/Tasks) and [dockersetup](https://github.com/aiegoo/docker-lesson/wiki/Task-1-Install-and-setup)
+### lesson github with tasks 
+[dockerlesson](https://github.com/aiegoo/docker-lesson/wiki/Tasks) and [dockersetup](https://github.com/aiegoo/docker-lesson/wiki/Task-1-Install-and-setup)
 
 
 > below is the task wiki page
