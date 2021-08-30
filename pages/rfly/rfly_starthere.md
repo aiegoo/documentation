@@ -131,7 +131,7 @@ It  is  a  Simulink  toolbox  officially  released  by Mathworks for controller 
 #### (2) FlightGear — Flight Simulator
 It is a popular open-source flight simulator that can be used  to  easily  observe  the  flight  states  of  a  simulated aerial vehicle in Simulink by receiving flight data from Simulink   via  a   User   Datagram   Protocol   (UDP) interface.
 	 
-![](/images/px4psp/flightgear.png)
+![flightgear](images/px4psp/flightgear.png)
 
 #### (3) PX4 Software — Source Code
 PX4  is  an  open-source  flight  control  software  system that   runs   on   the   Pixhawk  
