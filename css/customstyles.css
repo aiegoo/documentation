@@ -1204,13 +1204,14 @@ table thead th code.highlighter-rouge {
     background-color: #234e23;
     border:1px solid #555;
     font-weight: bold;
+    color:rgba(246, 112, 3, 0.639)
 }
 
 h2.userMapTitle {
     font-family: Arial;
 }
 
-#userMap a:hover {
+#userMap a:hover, btn-lg:hover {
     text-decoration: none;
     color: #d4ecc3;
   }
