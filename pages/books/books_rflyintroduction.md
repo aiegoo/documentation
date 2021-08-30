@@ -194,6 +194,14 @@ Show Results
   
     Fig. 0.17 Indoor cluster flight experiment
     
-{% include tony.html content="matlab tutorials and gcs.uno are the main source of learning for now" %}
 
-{% include custom/series_matlab_next.html %}
+### Getting Started
+=============================
+Getting Started
+=============================
+
+First, go to Download and Support for software，then go to Configuration to install them. Thirdly, go to [Usage](https://rflysim.com/en/3_Using/Introduction.html) to learn how to use the platform and finish two demo [examples](https://rflysim.com/en/3_Using/Examples.html). Finally, go to Course to finish all experiments one by one. So far, Advanced Function is not free, only open to paying users.
+
+
+
+{% include custom/series_rfly_next.html %}
