@@ -65,7 +65,7 @@ So far, RflySim has two types, namely **education-level RflySim** and
 ..     :width: 320px
 ..     :target: https://youtu.be/RTkOHJ0NT0k
 
-
+![](images/px4psp/0-1.jpg)
 .. figure:: /images/0-1.jpg
     :align: center
 
@@ -78,6 +78,7 @@ So far, RflySim has two types, namely education-level RflySim and commercial-lev
 The education-level RflySim focuses on the ease-to-access, using personal computers to run the model and the serial port for communication with the control board.
 The commercial-level RflySim focuses on reliable performance, using real-time simulator with FPGA to run the models, sensors chips, and high-speed communication interfaces with the control board.
 
+![](images/px4psp/0-2.jpg)
 
 ![image](https://user-images.githubusercontent.com/42961200/131309167-1913422a-0d56-4292-a026-fc85a69fca7c.png)
 
@@ -101,6 +102,8 @@ education-level RflySim platform has the following advantages:
 5). **High-fidelity 3D Environment** . We provide source code and instruction to develop 3D environments in Unreal Engine 4 (UE4), so users can quickly develop an indoor or outdoor 3D environment for simulation or vision-based algorithm development.
 
 6). **Vision-based control** . Our 3D environments based on UE4 can send real-time images for other programs (Python/C or C++/Simulink) to process the images and feedback the control signals to HIL/SIL simulation platform to achieve vision-based control.
+
+![](images/px4psp/0-3.jpg)
 
 ![image](https://user-images.githubusercontent.com/42961200/131309451-b3580bdc-0d7d-4e87-8899-e51705d448b4.png)
 
@@ -126,7 +129,11 @@ following advantages
 
 4). **Automation** : With the simulation model comprehensive and accurate enough, this platform can simulate normal and failure cases of outdoor flight tests. What's more automatic testing, case traversing, and assessment can be performed to ensure system safety and reliability.
 
+![](images/px4psp/0-4.jpg)
+
 ![image](https://user-images.githubusercontent.com/42961200/131309515-c054ab25-54ab-4e25-9eaa-b71339b0e3f1.png)
+
+![](images/px4psp/0-5.jpg)
 
 ![image](https://user-images.githubusercontent.com/42961200/131309560-07d8e0b1-da17-4724-b23b-8b75fdc48be5.png)
 
