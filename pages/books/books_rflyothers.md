@@ -1,19 +1,19 @@
 ---
-title: setup install
+title: rflysim tltr
 tags: [books, getting_started]
-last_updated: August 11, 2021
+last_updated: August 31, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
-summary: "Because all control algorithms are eventually deployed in a real aerial vehicle to perform flight tests, a hardware platform must be prepared for the basic flight test requirements."
+summary: ""
 sidebar: mydoc_sidebar
-permalink: books_rflysetup.html
+permalink: books_matlab_slam.html
 folder: books
 complex_map: true
 map_name: rfly
-box_number: 1
+box_number: 3
 ---
 
 {% include custom/series_matlab_next.html %}
-# Matlab implementation
+# Commercial configuration
 
 ## Slam
 [doc](https://kr.mathworks.com/help/nav/ref/slammapbuilder-app.html)
