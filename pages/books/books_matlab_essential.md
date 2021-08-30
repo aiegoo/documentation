@@ -7,10 +7,8 @@ summary: "summary."
 sidebar: mydoc_sidebar
 permalink: books_matlab_essential.html
 folder: books
-series: "MATLAB series"
-weight: 1
-simple_map: true
-map_name: matlab
+complex_map: true
+map_name: rfly
 box_number: 1
 ---
 

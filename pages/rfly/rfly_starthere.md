@@ -23,6 +23,7 @@ folder: rfly
 | battery |  | air-time |  |
 | configurator |  |  last updated |   |
 
+### Project Goal
 |    |
 | -- |
 | Q1. Given a payload and flight endurace requriements, how to design a multicopter propulsion system? |
@@ -37,7 +38,8 @@ folder: rfly
 | Q10, Given a group of engineers, how to organize them effectively? |
 
 ### 🍃 pixhawk development tools
-
+- [flightGear](http://www.flightgear.org/download)
+- [FG_manual](https://github.com/aiegoo/documentation/edit/blob/pdf/gcs/getstart.pdf#page=59)
 ### 🌻 [pptx](https://github.com/aiegoo/rflysim/tree/master/PPT_EN)
 
 ### Matlab + other tool boxes
