@@ -49,7 +49,7 @@ So far, RflySim has two types, namely **education-level RflySim** and
 <div align="center">
       <a href="https://youtu.be/RTkOHJ0NT0k">
      <img 
-      src="images/px4psp/RflySim.png" 
+      src="https:github.com/aiegoo/documentation/edit/blob/images/px4psp/RflySim.png" 
       alt="Everything Is AWESOME" 
       style="width:100%;">
       </a>
