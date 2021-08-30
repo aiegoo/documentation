@@ -218,11 +218,11 @@ are listed below.
 code depends on the Linux compiling environment, the software package provides three sets of compiling toolchains to realize the simulation of the Linux
 compiling environment under the Windows environment.
 
-    1) `Win10WSL <https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux>`_ based on the Windows Subsystem compiler environment for Linux (WSL);
-    2) the Msys2Toolchain based on `Msys2 <https://baike.baidu.com/item/MSYS2>`_ toolchain;
-    3) the CygwinToolchain based on the `Cygwin <https://www.cygwin.com/>`_ toolchain.
+1) `Win10WSL <https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux>`_ based on the Windows Subsystem compiler environment for Linux (WSL);
+2) the Msys2Toolchain based on `Msys2 <https://baike.baidu.com/item/MSYS2>`_ toolchain;
+3) the CygwinToolchain based on the `Cygwin <https://www.cygwin.com/>`_ toolchain.
 
-    {% include note.html content="the CygwinToolchain only supports PX4 firmware with version 1.8 or above; the Msys2Toolchain only supports PX4 firmware with version 1.8 or below. Both the CygwinToolchain and the Msys2Toolchain support Windows 7 and above, which are easy to deploy, but the compiling speed is slow. For Windows10 1809 and above, readers can follow the tutorial in “0.UbuntuWSLWin10UbuntuInstallationStep.docx” to install an Ubuntu subsystem in Windows and then choose theWin10WSL toolchain shown in Fig. 2.4. The Win10WSL toolchain can greatly accelerate the compiling speed and support all versions of PX4 firmware." %}
+{% include note.html content="the CygwinToolchain only supports PX4 firmware with version 1.8 or above; the Msys2Toolchain only supports PX4 firmware with version 1.8 or below. Both the CygwinToolchain and the Msys2Toolchain support Windows 7 and above, which are easy to deploy, but the compiling speed is slow. For Windows10 1809 and above, readers can follow the tutorial in “0.UbuntuWSLWin10UbuntuInstallationStep.docx” to install an Ubuntu subsystem in Windows and then choose theWin10WSL toolchain shown in Fig. 2.4. The Win10WSL toolchain can greatly accelerate the compiling speed and support all versions of PX4 firmware." %}
 
 (5) **Whether to reinstall the PSP Toolbox (yes or no)** . If this option is set to “yes”, the PSP Toolbox is installed on MATLAB/Simulink. If the PSP toolbox has already been installed, a new installation of the PSP Toolbox is performed. If this option is set to “no”, the script does not do anything on the existing PSP toolbox (it will not uninstall the PSP toolbox or carry out other actions).
 
@@ -238,7 +238,7 @@ compiling environment under the Windows environment.
 
     .. note::
 
-        {% include note.html content="For the firmware versions 1.9 and above, the PX4 starts to use new compiling commands with the form “px4_fmu-v3_default.px4” instead of “px4fmu-v3_default.px4”. Because the simulation software package of this book will be continuously updated for the latest PX4 firmware when using the latest version of the firmware (1.9 and above), readers need to modify the compiling command in Fig. 2.4 to the correct format." %}
+{% include note.html content="For the firmware versions 1.9 and above, the PX4 starts to use new compiling commands with the form “px4_fmu-v3_default.px4” instead of “px4fmu-v3_default.px4”. Because the simulation software package of this book will be continuously updated for the latest PX4 firmware when using the latest version of the firmware (1.9 and above), readers need to modify the compiling command in Fig. 2.4 to the correct format." %}
 
 
 2.3 Installation Completion
