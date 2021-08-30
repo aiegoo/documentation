@@ -65,7 +65,7 @@ So far, RflySim has two types, namely **education-level RflySim** and
 ..     :width: 320px
 ..     :target: https://youtu.be/RTkOHJ0NT0k
 
-
+![](images/px4psp/0-1.jpg)
 .. figure:: /images/0-1.jpg
     :align: center
 
@@ -78,14 +78,14 @@ So far, RflySim has two types, namely education-level RflySim and commercial-lev
 The education-level RflySim focuses on the ease-to-access, using personal computers to run the model and the serial port for communication with the control board.
 The commercial-level RflySim focuses on reliable performance, using real-time simulator with FPGA to run the models, sensors chips, and high-speed communication interfaces with the control board.
 
+![](images/px4psp/0-2.jpg)
 
-![image](https://user-images.githubusercontent.com/42961200/131309167-1913422a-0d56-4292-a026-fc85a69fca7c.png)
 
 Features
 -------------------------------------
 
-Advantages of education-level RflySim platform
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>Advantages of education-level RflySim platform
+
 
 Compared with other simulators (AirSim, Gazebo, etc.) in the world, our 
 education-level RflySim platform has the following advantages:
@@ -102,11 +102,12 @@ education-level RflySim platform has the following advantages:
 
 6). **Vision-based control** . Our 3D environments based on UE4 can send real-time images for other programs (Python/C or C++/Simulink) to process the images and feedback the control signals to HIL/SIL simulation platform to achieve vision-based control.
 
-![image](https://user-images.githubusercontent.com/42961200/131309451-b3580bdc-0d7d-4e87-8899-e51705d448b4.png)
+![](images/px4psp/0-3.jpg)
 
 
-Advantages of commercial-level RflySim platform
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>Advantages of commercial-level RflySim platform
+
 
 The commercial-level RflySim platform uses a high-performance real-time 
 simulation computer to simulate the vehicle motion and use FPGA to simulate 
@@ -126,12 +127,15 @@ following advantages
 
 4). **Automation** : With the simulation model comprehensive and accurate enough, this platform can simulate normal and failure cases of outdoor flight tests. What's more automatic testing, case traversing, and assessment can be performed to ensure system safety and reliability.
 
-![image](https://user-images.githubusercontent.com/42961200/131309515-c054ab25-54ab-4e25-9eaa-b71339b0e3f1.png)
+![](images/px4psp/0-4.jpg)
 
-![image](https://user-images.githubusercontent.com/42961200/131309560-07d8e0b1-da17-4724-b23b-8b75fdc48be5.png)
+
+![](images/px4psp/0-5.jpg)
+
 
 Show Results
 ----------------------------------------------
+![](images/px4psp/PlatGif1.gif)
 .. figure:: /images/px4psp/PlatGif1.gif
     :height: 160px
     :width: 320px
@@ -139,6 +143,7 @@ Show Results
   
     Fig. 0.6 SIL simulation
 
+![](images/px4psp/PlatGif2.gif)
 .. figure:: /images/px4psp/PlatGif2.gif
     :height: 160px
     :width: 320px
@@ -146,13 +151,15 @@ Show Results
   
     Fig. 0.7 automatic code generation
 
+![](images/px4psp/PlatGif3.gif)
 .. figure:: /images/px4psp/PlatGif3.gif
     :height: 160px
     :width: 320px
     :align: left
   
     Fig. 0.8 HIL simulation
-
+    
+![](images/px4psp/PlatGif4.gif)
 .. figure:: /images/px4psp/PlatGif4.gif
     :height: 160px
     :width: 320px
@@ -160,6 +167,7 @@ Show Results
   
     Fig. 0.9 Flight experiment
 
+![](images/px4psp/PX4SITLSim.gif)
 .. figure:: /images/PX4SITLSim.gif
     :height: 160px
     :width: 320px
@@ -167,6 +175,7 @@ Show Results
   
     Fig. 0.10 One-key cluster SIL simulation
 
+![](images/px4psp/AutoInstall.gif)
 .. figure:: /images/px4psp/AutoInstall.gif
     :height: 160px
     :width: 320px
@@ -174,6 +183,7 @@ Show Results
   
     Fig. 0.11 One-key installation and simulation
 
+![](images/px4psp/AdvancedGIF1.gif)
 .. figure:: /images/px4psp/AdvancedGIF1.gif
     :height: 160px
     :width: 320px
@@ -181,6 +191,7 @@ Show Results
   
     Fig. 0.12 Indoor HIL simulation based on UE4
 
+![](images/px4psp/AdvancedGIF2.gif)
 .. figure:: /images/px4psp/AdvancedGIF2.gif
     :height: 160px
     :width: 320px
@@ -188,6 +199,7 @@ Show Results
   
     Fig. 0.13 HIL simulation for unmanned cars
 
+![](images/px4psp/AdvancedGIF3.gif)
 .. figure:: /images/px4psp/AdvancedGIF3.gif
     :height: 160px
     :width: 320px
@@ -195,6 +207,7 @@ Show Results
   
     Fig. 0.14 Cluster control and HIL simulation
 
+![](images/px4psp/AdvancedGIF4.gif)
 .. figure:: /images/px4psp/AdvancedGIF4.gif
     :height: 160px
     :width: 320px
@@ -202,6 +215,7 @@ Show Results
 
     Fig. 0.15 One-key cross rings control
 
+![](images/px4psp/AdvancedGIF9.gif)
 .. figure:: /images/px4psp/AdvancedGIF9.gif
     :height: 160px
     :width: 320px
@@ -210,6 +224,7 @@ Show Results
     Fig. 0.16 HIL simulation of motor failure
 
 
+![](images/px4psp/AdvancedGIF10.gif)
 .. figure:: /images/px4psp/AdvancedGIF10.gif
     :height: 160px
     :width: 320px
