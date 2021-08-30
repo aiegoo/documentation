@@ -1,5 +1,5 @@
 ---
-title: overview
+title: rflysim overview
 tags: [books, getting_started]
 last_updated: August 30, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
@@ -10,7 +10,11 @@ folder: books
 complex_map: true
 map_name: rfly
 box_number: 1
+series: "RFLY series"
+weight: 3
 ---
+
+{% include custom/series_rfly_next.html %}
 
 # Matlab implementation
 
