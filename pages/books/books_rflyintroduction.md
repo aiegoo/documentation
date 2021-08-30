@@ -51,6 +51,7 @@ src="https://youtu.be/RTkOHJ0NT0k"
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
+[![rflysim](images/px4psp/RflySim.png)](https://youtu.be/RTkOHJ0NT0k)
 
 .. RflySim.mp4
 
