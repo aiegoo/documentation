@@ -15,235 +15,129 @@ box_number: 1
 {% include custom/series_matlab_next.html %}
 # Matlab implementation
 
-## Slam
-[doc](https://kr.mathworks.com/help/nav/ref/slammapbuilder-app.html)
+========================
+Overall Introduction
+========================
 
-- rotations, orientation, and quaternions
-- introduction to simulating IMU measurements
-- estimate positon and orientation of a ground vehicle
-- esitamte robot pose with scan matching
-- plan mobile robot paths using RRT (rapidly exploring random tree)
-- implement simultaneous localization and mapping with algorithm
-- perform slam using 3-d lidar point clouds
+Hardware Platform
+-----------------------
+Because all control algorithms are eventually deployed in a real aerial 
+vehicle to perform flight tests, a hardware platform must be prepared for 
+the basic flight test requirements. As shown in Fig. 2.1, the experimental 
+hardware platform recommended in this book is composed of five main parts.
 
-[![image](https://user-images.githubusercontent.com/42961200/129006952-8894b07f-de23-4d9f-bf39-c2a3ee532549.png)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
+![](images/px4psp/Quan-ch2-Fig2.1.jpg)
+    .. figure:: /images/Quan-ch2-Fig2.1.jpg
+        :align: center
 
-[![dynamicmap](./images/MotionPlanningUsingDynamicMapExample_03.gif)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
+        Fig. 2.1 Composition of experimental hardware platform
 
-![](./pdf/gcs/matlab_flightsim.gif)
+(1) **Ground computer** : it is a high-performance Personal Computer (PC) with an operating system that performs two main tasks.
 
-```cpp
-classdef FlightInstrumentsExample < matlab.apps.AppBase
+    1) Providing the software operating environment for the simulation software tools to perform functions such as control algorithm development, SIL simulation, automatic code generation, and HIL simulation;
 
-    % Properties that correspond to app components
-    properties (Access = public)
-        FlightInstrumentsFlightDataPlaybackUIFigure  matlab.ui.Figure
-        Image                  matlab.ui.control.Image
-        AirspeedIndicator      Aero.ui.control.AirspeedIndicator
-        ArtificialHorizon      Aero.ui.control.ArtificialHorizon
-        Altimeter              Aero.ui.control.Altimeter
-        TurnCoordinator        Aero.ui.control.TurnCoordinator
-        HeadingIndicator       Aero.ui.control.HeadingIndicator
-        ClimbIndicator         Aero.ui.control.ClimbIndicator
-        Time000secSliderLabel  matlab.ui.control.Label
-        Time000secSlider       matlab.ui.control.Slider
-        PiperPA24ComancheFlightDataDisplayLabel  matlab.ui.control.Label
-    end
+    2) Working as a ground control station in outdoor flight tests to achieve functions such as sensor calibration, parameter tuning, real-time control, and communication.
 
-    
-    properties (Access = public)
-        simdata % Saved flight data [time X Y Z phi theta psi] 
-        animObj % Aero.Animation object
-    end
-    
+    To ensure all the software tools run smoothly on the ground computer, the following basic configuration requirements must be satisfied.
 
-    % Callbacks that handle component events
-    methods (Access = private)
+    * Operating System (OS): Windows 7��10, 64-bit system
+    * Processor: Intel I5 series or above
+    * Memory: 8G or above
+    * Graphics: discrete graphics, memory 2G or more
+    * Storage: 30G available space (solid-state drives are recommended)
+    * Interface: at least one USB Type-A
+    * Monitor: screen resolution 1080P or above
 
-        % Code that executes after component creation
-        function startupFcn(app)
-            
-            % Load saved flight status data
-            savedData = load(fullfile(matlabroot, 'toolbox', 'aero', 'astdemos', 'simdata.mat'), 'simdata');
-            yaw = savedData.simdata(:,7);
-            yaw(yaw<0) = yaw(yaw<0)+2*pi; % unwrap yaw angles
-            savedData.simdata(:,7) = yaw;
-            app.simdata = savedData.simdata;
-            
-            % Create animation object to visualize aircraft flight dynamics corresponding with saved data over time 
-            app.animObj = Aero.Animation;
-            app.animObj.createBody('pa24-250_orange.ac','Ac3d'); % Piper PA-24 Comanche geometry
-            app.animObj.Bodies{1}.TimeseriesSourceType = 'Array6DoF'; % [time X Y Z phi theta psi]
-            app.animObj.Bodies{1}.TimeSeriesSource = app.simdata;
-            app.animObj.Camera.PositionFcn = @staticCameraPosition;
-            app.animObj.Figure.Position = [app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(1)+625 app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(2) app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(3) app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(4)];
-            app.animObj.updateBodies(app.simdata(1,1)); % Initialize animation window at t=0
-            app.animObj.updateCamera(app.simdata(1,1));
-            app.animObj.show();
+    Noteworthy, for higher development efficiency, computer performance must be
+    as high as possible.
 
-        end
+(2) **Autopilot system (also called flight control system)** : as the operating platform of control algorithms, it has many sensors and powerful computing processor to estimate flight states and calculate the control signals for the propulsion system to realize the flight control of multicopters. For this book, we selected awidely-used open-source autopilot—Pixhawk as the development and experimental autopilot system. Pixhawk is an independent open-hardware project that aims to provide standard readily-available, high-quality, and low-cost autopilot hardware for education, amateurs, and developers. For different flight mission, performance, and cost requirements, the Pixhawk provides a series of autopilot hardware products that highly promote the development of multicopters.
 
-        % Value changing function: Time000secSlider
-        function Time000secSliderValueChanging(app, event)
-            
-            % Display current time in slider component
-            t = event.Value;
-            app.Time000secSliderLabel.Text = sprintf('Time: %.1f sec', t);           
-            
-            % Find corresponding time data entry
-            k = find(app.simdata(:,1)<=t);
-            k = k(end);
-            
-            app.Altimeter.Altitude = convlength(-app.simdata(k,4), 'm', 'ft');
-            app.HeadingIndicator.Heading = convang(app.simdata(k,7),'rad','deg');
-            app.ArtificialHorizon.Roll = convang(app.simdata(k,5),'rad','deg');
-            app.ArtificialHorizon.Pitch = convang(app.simdata(k,6),'rad','deg');
-            
-            if k>1
-                % Estimate velocity and angular rates
-                Vel = (app.simdata(k,2:4)-app.simdata(k-1,2:4))/(app.simdata(k,1)-app.simdata(k-1,1));
-                rates = (app.simdata(k,5:7)-app.simdata(k-1,5:7))/(app.simdata(k,1)-app.simdata(k-1,1));
-                
-                app.AirspeedIndicator.Airspeed = convvel(sqrt(sum(Vel.^2)),'m/s','kts');
-                app.ClimbIndicator.ClimbRate = convvel(-Vel(3),'m/s','ft/min');
+(3) **Radio Control (RC) system** :  it mainly includes an RC transmitter, an RC receiver, and a battery charger. The RC system is used to send control commands from the pilot on the ground to the autopilot system on the multicopter to realize remote flight control.
 
-                % Estimate turn rate and slip behavior 
-                app.TurnCoordinator.Turn = convangvel(rates(1)*sind(30) + rates(3)*cosd(30),'rad/s','deg/s');
-                app.TurnCoordinator.Slip = 1/(2*pi)*convang(atan(rates(3)*sqrt(sum(Vel.^2))/9.81)-app.simdata(k,5),'rad','deg');
-            else
-                % time = 0
-                app.ClimbIndicator.ClimbRate = 0;
-                app.AirspeedIndicator.Airspeed = 0;
-                app.TurnCoordinator.Slip = 0;
-                app.TurnCoordinator.Turn = 0;
-            end
-            
-            %% Update animation window display
-            app.animObj.updateBodies(app.simdata(k,1));
-            app.animObj.updateCamera(app.simdata(k,1));
-            
-        end
+(4) **Propulsion system** : it mainly includes a battery pack and several 
+propellers, Electronic Speed Controllers (ESCs), and motors. The propulsion 
+system is used to receive the Pulse Width Modulation (PWM) control signals 
+from the autopilot system, and control the movement of a multicopter with 
+thrust and torque generated by the rotation of propellers and motors.
 
-        % Close request function: 
-        % FlightInstrumentsFlightDataPlaybackUIFigure
-        function FlightInstrumentsFlightDataPlaybackUIFigureCloseRequest(app, event)
-            % Close animation figure with app
-            delete(app.animObj);
-            delete(app);
-           
-        end
-    end
+(5) **Airframe system** : it includes a fuselage, landing gear, and several arms. The airframe is used to support the propulsion system and the autopilot system and carry a payload; thus, it is required to have excellent aerodynamic performance and structural strength to ensure that flight missions are successfully and reliably accomplished.
 
-    % Component initialization
-    methods (Access = private)
 
-        % Create UIFigure and components
-        function createComponents(app)
+Software Platform
+-----------------------
 
-            % Create FlightInstrumentsFlightDataPlaybackUIFigure and hide until all components are created
-            app.FlightInstrumentsFlightDataPlaybackUIFigure = uifigure('Visible', 'off');
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.AutoResizeChildren = 'off';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Color = [0.2706 0.2706 0.2784];
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Position = [100 100 620 550];
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Name = 'Flight Instruments - Flight Data Playback';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Resize = 'off';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.CloseRequestFcn = createCallbackFcn(app, @FlightInstrumentsFlightDataPlaybackUIFigureCloseRequest, true);
+This experimental platform relies on many software tools to realize controller design, code generation, autopilot code compilation, HIL simulation, and other functions. The Simulation Software Package published along with this book has a one-click installation script. Readers can click the script to finish all the installation and configuration process of the required software environment. The MATLAB/Simulink and the Simulation Software Package comprise the software platform, which contains the following.
 
-            % Create Image
-            app.Image = uiimage(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Image.Position = [8 -2 606 577];
-            app.Image.ImageSource = 'appdesignerInstrumentPanel.png';
+(1) **MATLAB/Simulink** : it is a visual simulation tool developed by `Mathworks <https://www.mathworks.com/>`_ ,
+which is widely-used in aerial vehicles, cars, and other applications. It can be
+easily applied to develop simulation systems for dynamic system modeling,
+controller design, hardware and software simulation, and performance analysis
+through a modular programming language. The simulation software package
+and source code published along with this book support MATLAB R2017b and
+above. The required MATLAB toolboxes include the following.
 
-            % Create AirspeedIndicator
-            app.AirspeedIndicator = uiaeroairspeed(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.AirspeedIndicator.Limits = [25 250];
-            app.AirspeedIndicator.ScaleColorLimits = [0 60;50 200;200 225;225 250];
-            app.AirspeedIndicator.Position = [22 317 185 185];
+* MATLAB/Simulink
+* Control System Toolbox
+* Curve Fitting Toolbox
+* Aerospace Blockset
+* Aerospace Toolbox
+* MATLAB Coder
+* Simulink Coder
+* Stateflow
 
-            % Create ArtificialHorizon
-            app.ArtificialHorizon = uiaerohorizon(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.ArtificialHorizon.Position = [219 317 185 185];
+   {% include note.html content=":: This book does not provide the installation package or installation process for MATLAB, so please purchase and install the above-required MATLAB toolboxes by yourself. If conditions are permitted, it is recommended to install MATLAB R2017b version with all toolboxes." %}
 
-            % Create Altimeter
-            app.Altimeter = uiaeroaltimeter(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Altimeter.Position = [416 317 185 185];
 
-            % Create TurnCoordinator
-            app.TurnCoordinator = uiaeroturn(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.TurnCoordinator.Position = [22 70 185 185];
+(2) `Pixhawk Support Package (PSP) Toolbox3 <https://ww2.mathworks.cn/hardware-support/forms/pixhawk-downloads-conf.html>`_ : it is a Simulink toolbox officially
+released by Mathworks for controller design, code generation, and firmware
+upload of the Pixhawk autopilot. We have made some updates and optimizations
+based on the official PSP toolbox to ensure compatibility with the latest Pixhawk
+and MATLAB versions.
 
-            % Create HeadingIndicator
-            app.HeadingIndicator = uiaeroheading(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.HeadingIndicator.Position = [219 70 185 185];
+(3) `FlightGear�봃light Simulator <http://home.flightgear.org/>`_ : it is a popular open-source flight simulator
+that can be used to easily observe the flight states of a simulated aerial vehicle in
+Simulink by receiving flight data from Simulink via a User Datagram Protocol
+(UDP) interface.
 
-            % Create ClimbIndicator
-            app.ClimbIndicator = uiaeroclimb(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.ClimbIndicator.MaximumRate = 8000;
-            app.ClimbIndicator.Position = [416 70 185 185];
+(4) `PX4 Software�봖ource Code <https://github.com/PX4/Firmware>`_ : `PX4 <https://px4.io>`_ is an open-source flight control software
+system that runs on the Pixhawk hardware platform. The Pixhawk hardware +
+PX4 software constitutes an integrated autopilot system, which is one of the most
+widely-used autopilot systems for aerial vehicles.
 
-            % Create Time000secSliderLabel
-            app.Time000secSliderLabel = uilabel(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Time000secSliderLabel.HorizontalAlignment = 'right';
-            app.Time000secSliderLabel.FontSize = 11.5;
-            app.Time000secSliderLabel.FontColor = [1 1 1];
-            app.Time000secSliderLabel.Position = [267 3 80 22];
-            app.Time000secSliderLabel.Text = 'Time: 00.0 sec';
+(5) **PX4 Toolchain�봀ompiling Environment** : it is used to compile the PX4 source
+code along with the controller algorithms generated by the PSP toolbox into a
+��.px4�� format firmware file. Then, the firmware file is uploaded into the Pixhawk
+autopilot hardware (similar to the process of reinstalling an operating system on
+a PC). The control algorithm generated by the PSP toolbox will automatically
+run after Pixhawk restarts.
 
-            % Create Time000secSlider
-            app.Time000secSlider = uislider(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Time000secSlider.Limits = [0 49.833333333333];
-            app.Time000secSlider.MajorTicks = [0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 49.833333333333];
-            app.Time000secSlider.MajorTickLabels = {'0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50'};
-            app.Time000secSlider.ValueChangingFcn = createCallbackFcn(app, @Time000secSliderValueChanging, true);
-            app.Time000secSlider.MinorTicks = [];
-            app.Time000secSlider.FontSize = 11.5;
-            app.Time000secSlider.FontColor = [1 1 1];
-            app.Time000secSlider.Position = [50 55 520 3];
+(6) `Eclipse C/C++�봊ntegrated Development Environment (IDE) <https://www.eclipse.org/downloads/packages/>`_: it is used to perform the pre-flight tasks (e.g., sensor calibration and parameter tuning) for the Pixhawk autopilot before the multicopter takes off. The QGC is also used to receive the flight states and send the control commands of the multicopter through wireless radio telemetry during flight tests.
 
-            % Create PiperPA24ComancheFlightDataDisplayLabel
-            app.PiperPA24ComancheFlightDataDisplayLabel = uilabel(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.PiperPA24ComancheFlightDataDisplayLabel.BackgroundColor = [0.8 0.8 0.8];
-            app.PiperPA24ComancheFlightDataDisplayLabel.HorizontalAlignment = 'center';
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontName = 'Courier New';
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontSize = 14;
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontWeight = 'bold';
-            app.PiperPA24ComancheFlightDataDisplayLabel.Position = [141 515 347 22];
-            app.PiperPA24ComancheFlightDataDisplayLabel.Text = 'Piper PA-24 Comanche Flight Data Display';
+(7) `QGroundControl (QGC)�봆round Control Station <http://qgroundcontrol.com/>`_ : it is used to perform the
+pre-flight tasks (e.g., sensor calibration and parameter tuning) for the Pixhawk
+autopilot before the multicopter takes off. The QGC is also used to receive the
+flight states and send the control commands of the multicopter through wireless
+radio telemetry during flight tests.
 
-            % Show the figure after all components are created
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Visible = 'on';
-        end
-    end
+(8) **CopterSim—Real-Time Motion Simulation Software** : it is a real-time motion
+simulation software developed for the Pixhawk/PX4 autopilot system. Readers
+can configure multicopter models in CopterSim, and connect it to the Pixhawk
+autopilot via the USB serial port to perform indoor HIL simulations.
 
-    % App creation and deletion
-    methods (Access = public)
+(9) **3DDisplay—3D Visual Display Software&& : it is a real-time 3D visual display software. It receives the flight data of CopterSim through UDP to display the attitude and position of a multicopter in real-time. CopterSim and 3DDisplay together constitute an integrated HIL simulation platform. The distributed independent operation mechanism of CopterSim and 3DDisplay provides future compatibility for swarm simulations.
 
-        % Construct app
-        function app = FlightInstrumentsExample
 
-            % Create UIFigure and components
-            createComponents(app)
+Relationship Between Software and Hardware Platforms
+-------------------------------------------------------
 
-            % Register the app with App Designer
-            registerApp(app, app.FlightInstrumentsFlightDataPlaybackUIFigure)
+The previous subsection introduced the hardware and software components of the required experimental platform. These components seem to be diverse and complex, but they are necessary for the development and practical flight experiments of multicopters. Familiarization with these tools can reduce the development difficulty and significantly improved efficiency, which can save a lot of time during the learning process. Figure 2.2 shows the relationships among the various hardware and software components and the overall process of the experimental platform. Most of the software tools play important roles in all the phases of multicopter development. The roles and application methods of the components presented in Fig. 2.2 are introduced in detail in the following sections.
 
-            % Execute the startup function
-            runStartupFcn(app, @startupFcn)
+![comparison](images/px4psp/Quan-ch2-Fig2.2.jpg)
+.. figure:: /images/Quan-ch2-Fig2.2.jpg
+    :align: center
 
-            if nargout == 0
-                clear app
-            end
-        end
+    Fig. 2.2 Hardware and software components used in different phases
 
-        % Code that executes before app deletion
-        function delete(app)
 
-            % Delete UIFigure when app is deleted
-            delete(app.FlightInstrumentsFlightDataPlaybackUIFigure)
-        end
-    end
-end
-```
-{% include tony.html content="matlab tutorials and gcs.uno are the main source of learning for now" %}
-
-{% include custom/series_matlab_next.html %}
+{% include custom/series_rfly_next.html %}
