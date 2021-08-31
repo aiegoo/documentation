@@ -815,6 +815,7 @@ Fig. 3.73 Simulink controller compiling successfully
 
 Connect the computer to the Pixhawk autopilot with a USB cable, then use the “PX4Upload” function (see Fig. 3.40) to upload the firmware to the Pixhawk. A successful uploading result is shown in Fig. 3.74.
 
+![](images/px4psp/Quan-ch4-Fig4.22.jpg)
 ../_images/Quan-ch4-Fig4.22.jpg
 Fig. 3.74 Upload firmware successfully
 
@@ -827,6 +828,7 @@ As shown in Fig. 3.54, connect the RC receiver to Pixhawk with a three-color JR 
 
 Double-click the CopterSim shortcut on the Windows desktop to open it. There is no need to change the model parameters (or click “Model Parameters” - “Restore Default Parameters” - “Storage and Use Parameters” to restore aerial vehicle parameters to default values). Select the serial port of the Pixhawk autopilot in the “Select Pixhawk Com” drop-down box (usually in the format “*** FMU COM*”), click the “Start Simulation” button to start HIL simulation. As shown in Fig. 3.75, the message returned by the Pixhawk autopilot will be printed on the lower-left box of the CopterSim UI.
 
+![](images/px4psp/Quan-ch4-Fig4.23.jpg)
 ../_images/Quan-ch4-Fig4.23.jpg
 Fig. 3.75 Model simulator software configuration in CopterSim
 
@@ -834,6 +836,7 @@ Fig. 3.75 Model simulator software configuration in CopterSim
 
 Double-click the 3DDisplay shortcut on the desktop to open it. This software does not require any configuration; it passively receives the flight attitude and trajectory information of multicopters sent by CopterSim and displays it in real-time. The multicopter can be controlled by the RC transmitter to verify the designed attitude control algorithm. Move the throttle stick on the RC transmitter to the lower-right corner for three seconds to disarm the Pixhawk, and pull down (or back) the CH5 stick to the rearming position to disarm the designed controller. Then, the RC transmitter is able to control the multicopter to complete the corresponding action. As shown in Fig. 3.76, the multicopter attitude and position can be observed on the left side of the 3DDisplay interface. The real-time flight data are observed in the upper-right region, whereas the multicopter trajectory is observed in the lower-right region of the 3DDisplay UI.
 
+![](images/px4psp/Quan-ch4-Fig4.24.jpg)
 ../_images/Quan-ch4-Fig4.24.jpg
 Fig. 3.76 Multicopter 3DDisplay interface
 
