@@ -869,11 +869,13 @@ Owing to the lack of complete failsafe logic for the generated control algorithm
 
 Next, we will present the results from the HIL simulation and outdoor flight tests to verify the accuracy of the multicopter simulation model. Figure 3.80 presents the HIL simulation results when the sensor noise level in CopterSim is set to 1.0, where the solid line “PitchReal” represents the outdoor flight tests result, the dotted line “PitchSim” represents the simulation result, and the dashed line “PitchSP” represents the ideal expected value. It can be observed from Fig. 3.80 that the step response curves from the HIL simulation and the outdoor flight are close to each other in terms of dynamic processes and noise levels.
 
+![](images/px4psp/Quan-ch4-Fig4.28.jpg)
 ../_images/Quan-ch4-Fig4.28.jpg
 Fig. 3.80 HIL simulation result when noise level is set to 1.0
 
 Figure 3.81 is the HIL simulation result when the noise level in CopterSim is set to 0. It can be seen that the response curve of the HIL simulation is very smooth with no noise disturbance, and the dynamic process and outdoor flight results are slightly different. Note that because the airframe “HIL Quadcopter X” is not exactly the same as the airframe “DJI Flame Wheel F450” used in outdoor flight, there are differences in the controller parameters. In addition, the data transmission speed of the Pixhawk serial port may fluctuate during the HIL simulation, thereby affectingthe real-time performance. Finally, the aerodynamics of the multicopter in the outdoor flight is very complicated, but a simplified aerodynamic model is used in the multicopter simulation model. Therefore, the error between their response curves is acceptable.
 
+![](images/px4psp/Quan-ch4-Fig4.29.jpg)
 ../_images/Quan-ch4-Fig4.29.jpg
 Fig. 3.81 HIL simulation result when noise level is set to 0
 
