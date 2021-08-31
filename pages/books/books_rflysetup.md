@@ -82,6 +82,8 @@ above. The required MATLAB toolboxes include the following.
 | {::nomarkdown}<img width=300/> {:/} | {::nomarkdown}<img width=300/> {:/} 
 |{::nomarkdown}<ul><li>MATLAB/Simulink</li>  <li>Control System Toolbox</li> <li>Curve Fitting Toolbox </li><li> Aerospace Blockset</li> <li>Aerospace Toolbox</li> </ul> {:/} | {::nomarkdown} <ul><li> MATLAB Coder</li> <li>Simulink Coder</li> <li>Stateflow</li> </ul> {:/} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+> below kramdown talbe code works in Firefox but not in Chrome
+
 |---
 | {::nomarkdown}<div width="300px"></div>{:/}   | **Installed** {::nomarkdown}<div width="200px"></div> {:/}  | **Installed** {::nomarkdown}<div width="200px"></div> {:/}  | **Installed** {::nomarkdown}<div width="200px"></div>  {:/} |
 | - | - |  - |  - |
