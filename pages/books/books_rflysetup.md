@@ -345,7 +345,7 @@ After completing the above steps, as shown in Fig. 2.12, the source code and dir
     Fig. 2.13 Commands tapped in compiling toolchains
 
 ================================
-3. Hardware Platform Configuration
+## 3. Hardware Platform Configuration
 ================================
 This chapter will introduce the RC system configuration, Pixhawk autopilot system configuration, airframe, and propulsion system configuration.
 
@@ -393,7 +393,7 @@ Fig. 2.16 RC transmitter parameter setting page
 3). Multicopter mode setting
 
 Press the “Mode” button for several seconds to enter the “BASIC MENU” page, and click the “MODEL TYPE” item to enter the model type selection page shown in Fig. 2.17.
-Change the “TYPE” item from “HELICOPTER” to “MULTICOPTER”, and then press the “OK” button for several seconds to set the control mode to “Multicopter”.
+Change the “TYPE” item from “HELICOPTER” to “MULTICOPTER”, and then press the “OK” button for several seconds to set the control mode to `Multicopter`.
 
 ![](images/px4psp/Quan-ch2-Fig2.17.jpg)
 ../_images/Quan-ch2-Fig2.17.jpg
@@ -401,12 +401,12 @@ Fig. 2.17 Multicopter control mode switching of RC transmitter
 
 4). Throttle channel reverse setting
 
-The throttle channel of the RadioLink transmitter is opposite to normal RC transmitters, and the throttle channel reverse needs to be set. Press the “Mode” button for several seconds to enter the “REVERSE” setting page shown in Fig. 2.18, and change the throttle channel from “NOR” to “REV”.
+The throttle channel of the RadioLink transmitter is opposite to normal RC transmitters, and the throttle channel reverse needs to be set. Press the “Mode” button for several seconds to enter the “REVERSE” setting page shown in Fig. 2.18, and change the throttle channel `from “NOR” to “REV”`.
 5). CH5-CH6 mode switching channel setting
 
 Because of experimental requirements, CH5 shown in Fig. 2.15 of the RC transmitter needs to be mapped to a three-position switch for mode switching of the Pixhawk. Press the “Mode” button for several seconds, and click the “AUX-CH” item next to the “REVERSE” item shown in Fig. 2.18.
-As shown in Fig. 2.19, on the “AUX-CH” setting page, click the “CH5” item to enter the channel setting page, and map CH5 to a three-position switch “SwE” on the RC transmitter (switch “E” is located in the top-left corner of the RC transmitter in Fig. 2.15).
-Similarly, the “CH6” item in Fig. 2.19 must be modified to a three-position switch “SwG” of the RC transmitter (switch “G” is located in the upperright corner of the RC transmitter in Fig. 2.15).
+As shown in Fig. 2.19, on the “AUX-CH” setting page, click the “CH5” item to enter the channel setting page, and `map CH5 to a three-position switch “SwE” on the RC transmitter (switch “E” is located in the top-left corner of the RC transmitter in Fig. 2.15`).
+Similarly, `the “CH6” item in Fig. 2.19 must be modified to a three-position switch “SwG” of the RC transmitter (switch “G” is located in the upperright corner of the RC transmitter in Fig. 2.15`).
 
 ![](images/px4psp/Quan-ch2-Fig2.18.jpg)
 ../_images/Quan-ch2-Fig2.18.jpg
