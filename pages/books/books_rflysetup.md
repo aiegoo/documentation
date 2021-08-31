@@ -77,9 +77,9 @@ and source code published along with this book support MATLAB R2017b and
 above. The required MATLAB toolboxes include the following.
 
 |---
-| **required** 
-| - 
-|{::nomarkdown}<ul><li>MATLAB/Simulink</li>  <li>Control System Toolbox</li> <li>Curve Fitting Toolbox </li><li> Aerospace Blockset</li> <li>Aerospace Toolbox</li><li> MATLAB Coder</li> <li>Simulink Coder</li> <li>Stateflow</li> </ul> {:/}
+| **required** | **required**
+| - | -
+|{::nomarkdown}<ul><li>MATLAB/Simulink</li>  <li>Control System Toolbox</li> <li>Curve Fitting Toolbox </li><li> Aerospace Blockset</li> <li>Aerospace Toolbox</li> </ul> {:/} | {::nomarkdown} <ul><li> MATLAB Coder</li> <li>Simulink Coder</li> <li>Stateflow</li> </ul> {:/} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 |---
 |   | &nbsp;&nbsp;   | &nbsp;&nbsp;  | &nbsp;&nbsp;   |
