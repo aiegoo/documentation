@@ -15,235 +15,188 @@ box_number: 2
 {% include custom/series_matlab_next.html %}
 # Matlab advanced work
 
-## Slam
-[doc](https://kr.mathworks.com/help/nav/ref/slammapbuilder-app.html)
+## 1. Installation Method
+### 1.1. Installation Package Acquisition
+(1). Send Email to service@rflysim.com to inquiry and buy the desired version, you will obtain an installation package and an activation code. (2). Use MATLAB to enter the folder of the installation package, and run “OnekeyScript” to input your activation code as shown below.
 
-- rotations, orientation, and quaternions
-- introduction to simulating IMU measurements
-- estimate positon and orientation of a ground vehicle
-- esitamte robot pose with scan matching
-- plan mobile robot paths using RRT (rapidly exploring random tree)
-- implement simultaneous localization and mapping with algorithm
-- perform slam using 3-d lidar point clouds
+![](images/px4psp/A-1.jpg)
+../_images/A-1.jpg
+Fig. 4.1 RflySim registration dialog
 
-[![image](https://user-images.githubusercontent.com/42961200/129006952-8894b07f-de23-4d9f-bf39-c2a3ee532549.png)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
+(3). Then， click the “OK” button, and all tools and apps of RflySim platform will be installed automatically.
 
-[![dynamicmap](./images/MotionPlanningUsingDynamicMapExample_03.gif)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
+![](images/px4psp/AutoInstall.gif)
+../_images/AutoInstall.gif
+Fig. 4.2 One-key installation and configuration
 
-![](./pdf/gcs/matlab_flightsim.gif)
+### 1.2. Product Price List
+You can read our latest document about the advanced features of RflySim platform: [lesson13](pdf/gcs/rfly_code/Lesson_13_RflySim_Platform_Advanced_Features.pdf)
 
-```cpp
-classdef FlightInstrumentsExample < matlab.apps.AppBase
+Please Contact with service@rflysim.com for Price.
 
-    % Properties that correspond to app components
-    properties (Access = public)
-        FlightInstrumentsFlightDataPlaybackUIFigure  matlab.ui.Figure
-        Image                  matlab.ui.control.Image
-        AirspeedIndicator      Aero.ui.control.AirspeedIndicator
-        ArtificialHorizon      Aero.ui.control.ArtificialHorizon
-        Altimeter              Aero.ui.control.Altimeter
-        TurnCoordinator        Aero.ui.control.TurnCoordinator
-        HeadingIndicator       Aero.ui.control.HeadingIndicator
-        ClimbIndicator         Aero.ui.control.ClimbIndicator
-        Time000secSliderLabel  matlab.ui.control.Label
-        Time000secSlider       matlab.ui.control.Slider
-        PiperPA24ComancheFlightDataDisplayLabel  matlab.ui.control.Label
-    end
+Content	PDF
+Lesson 01: Introduction	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_01_Introduction.pdf)
+Lesson 02: Flight Control Experiments	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_02_Flight_Control_Experiments.pdf)
+Lesson 03: External Control Interface	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_03_External_Control_Interface.pdf)
+Lesson 04: Other Types of Vehicles	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_04_Other_Types_of_Vehicles.pdf)
+Lesson 05: UE4 3D Scene Development	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_05_UE4_3D_Scene_Development.pdf)
+Lesson 06: Vision Based Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_06_Vision_Based_Control.pdf)
+Lesson 07: UAV Swarm Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_07_UAV_Swarm_Control.pdf)
 
-    
-    properties (Access = public)
-        simdata % Saved flight data [time X Y Z phi theta psi] 
-        animObj % Aero.Animation object
-    end
-    
+### 1.3. Effect after Installation
+You will obtain the following shortcuts on Desktop, where Python38Env is a Python environment for vison/OpenCV development, RflySim3D is our latest UE4-based 3D environment simulation program, HITLRun is an one-key script for hardware-in-the-loop simulation of multiple vehicles, and SITLRun is an one-key script for Software-in-the-loop simulation of multiple vehicles.
 
-    % Callbacks that handle component events
-    methods (Access = private)
+![](images/px4psp/Advanced1.png)
+../_images/Advanced1.png
+These software tools along with other program installed into the system play important role in accelerate the development efficiency of control systems. Their relationships and using phase are presented in the following figure.
 
-        % Code that executes after component creation
-        function startupFcn(app)
-            
-            % Load saved flight status data
-            savedData = load(fullfile(matlabroot, 'toolbox', 'aero', 'astdemos', 'simdata.mat'), 'simdata');
-            yaw = savedData.simdata(:,7);
-            yaw(yaw<0) = yaw(yaw<0)+2*pi; % unwrap yaw angles
-            savedData.simdata(:,7) = yaw;
-            app.simdata = savedData.simdata;
-            
-            % Create animation object to visualize aircraft flight dynamics corresponding with saved data over time 
-            app.animObj = Aero.Animation;
-            app.animObj.createBody('pa24-250_orange.ac','Ac3d'); % Piper PA-24 Comanche geometry
-            app.animObj.Bodies{1}.TimeseriesSourceType = 'Array6DoF'; % [time X Y Z phi theta psi]
-            app.animObj.Bodies{1}.TimeSeriesSource = app.simdata;
-            app.animObj.Camera.PositionFcn = @staticCameraPosition;
-            app.animObj.Figure.Position = [app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(1)+625 app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(2) app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(3) app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(4)];
-            app.animObj.updateBodies(app.simdata(1,1)); % Initialize animation window at t=0
-            app.animObj.updateCamera(app.simdata(1,1));
-            app.animObj.show();
+![](images/px4psp/Advanced2.png)
+../_images/Advanced2.png
+Among all apps, the CopterSim is the core software for RlfySim platform. The complete UI of CopterSim after registration is mainly divided into five parts. The box (a) of the figure below is the interface for configuring the multicopter model and flight environment parameters, where readers can select propulsion system components to assemble different types of multicopters for subsequent simulations. Box (b) is the model parameter calculation and database management interface, which is mainly used to calculate the model parameters of the assembled multicopter and store the results into the database for subsequent use with convenient database management functions. Box (c) is the advanced function area, including swarm simulation, UE4 scene selection, and other functions, which will be described in detail later. Box (d) is mainly used to connect the Pixhawk autopilot and control the start and stop of the simulation. Box (e) is used to display the real-time message received from the Pixhawk autopilot as well as the position and attitude information of the simulated vehicle model.
 
-        end
+![](images/px4psp/Quan-app1-FigA.2.jpg)
+../_images/Quan-app1-FigA.2.jpg
+Fig. 4.3 CopterSim interface after registration
 
-        % Value changing function: Time000secSlider
-        function Time000secSliderValueChanging(app, event)
-            
-            % Display current time in slider component
-            t = event.Value;
-            app.Time000secSliderLabel.Text = sprintf('Time: %.1f sec', t);           
-            
-            % Find corresponding time data entry
-            k = find(app.simdata(:,1)<=t);
-            k = k(end);
-            
-            app.Altimeter.Altitude = convlength(-app.simdata(k,4), 'm', 'ft');
-            app.HeadingIndicator.Heading = convang(app.simdata(k,7),'rad','deg');
-            app.ArtificialHorizon.Roll = convang(app.simdata(k,5),'rad','deg');
-            app.ArtificialHorizon.Pitch = convang(app.simdata(k,6),'rad','deg');
-            
-            if k>1
-                % Estimate velocity and angular rates
-                Vel = (app.simdata(k,2:4)-app.simdata(k-1,2:4))/(app.simdata(k,1)-app.simdata(k-1,1));
-                rates = (app.simdata(k,5:7)-app.simdata(k-1,5:7))/(app.simdata(k,1)-app.simdata(k-1,1));
-                
-                app.AirspeedIndicator.Airspeed = convvel(sqrt(sum(Vel.^2)),'m/s','kts');
-                app.ClimbIndicator.ClimbRate = convvel(-Vel(3),'m/s','ft/min');
+### 1.4. Custom Multicopter Configuration
+In the first line of the model configuration interface shown in Fig.4.3a, the configurable parameters include basic information such as the total weight, diagonal size, and flight altitude. In the second to the fifth rows of Fig.4.3a, readers can select the propulsion system components or parameters for the multicopter components, such as motors, propellers, ESCs, and batteries. CopterSim offers two options for selecting propulsion components. As shown in Fig.4.4, the first is to assemble a multicopter directly from the propulsion system branded model database which covers many common products on the market.
 
-                % Estimate turn rate and slip behavior 
-                app.TurnCoordinator.Turn = convangvel(rates(1)*sind(30) + rates(3)*cosd(30),'rad/s','deg/s');
-                app.TurnCoordinator.Slip = 1/(2*pi)*convang(atan(rates(3)*sqrt(sum(Vel.^2))/9.81)-app.simdata(k,5),'rad','deg');
-            else
-                % time = 0
-                app.ClimbIndicator.ClimbRate = 0;
-                app.AirspeedIndicator.Airspeed = 0;
-                app.TurnCoordinator.Slip = 0;
-                app.TurnCoordinator.Turn = 0;
-            end
-            
-            %% Update animation window display
-            app.animObj.updateBodies(app.simdata(k,1));
-            app.animObj.updateCamera(app.simdata(k,1));
-            
-        end
+![](images/px4psp/Quan-app1-FigA.3.jpg)
+../_images/Quan-app1-FigA.3.jpg
+Fig. 4.4 Custom model parameter input interface
 
-        % Close request function: 
-        % FlightInstrumentsFlightDataPlaybackUIFigure
-        function FlightInstrumentsFlightDataPlaybackUIFigureCloseRequest(app, event)
-            % Close animation figure with app
-            delete(app.animObj);
-            delete(app);
-           
-        end
-    end
+Since the propulsion system product database is difficult to cover all of the products in the world, CopterSim also provides a function to customize the component parameters which enables a more flexible way to configure a multicopter model. As shown in Fig.4.4a, click on the “Custom Design” option at the end of the first line to enter the component custom parameter interface shown in Fig.4.4b. In this interface, readers can customize the detailed parameters of motors (KV value, no-load voltage, internal resistance), ESCs, batteries, and propellers. In theory, by using the “Custom Design” function, readers can simulate any propulsion system components, even products that do not exist on the market.
 
-    % Component initialization
-    methods (Access = private)
+After a multicopter model is configured, clicking on the “Calculate” button in Fig.4.3b will automatically analyze the feasibility of the inputted multicopter configuration. Unpractical multicopter configurations may cause simulation failures, such as insufficient thrust to take off, ESC and motor overheat due to excessive battery voltage, or the propeller size is too large for the fuselage. As shown in Fig.4.5, after checking the inputted multicopter configuration, CopterSim will prompt a warning dialog if the configuration is unpractical, and the reader needs to re-select a practicable multicopter configuration.
 
-        % Create UIFigure and components
-        function createComponents(app)
+![](images/px4psp/Quan-app1-FigA.4.jpg)
+../_images/Quan-app1-FigA.4.jpg
+Fig. 4.5 Model configuration feasibility detection warning dialog
 
-            % Create FlightInstrumentsFlightDataPlaybackUIFigure and hide until all components are created
-            app.FlightInstrumentsFlightDataPlaybackUIFigure = uifigure('Visible', 'off');
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.AutoResizeChildren = 'off';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Color = [0.2706 0.2706 0.2784];
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Position = [100 100 620 550];
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Name = 'Flight Instruments - Flight Data Playback';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Resize = 'off';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.CloseRequestFcn = createCallbackFcn(app, @FlightInstrumentsFlightDataPlaybackUIFigureCloseRequest, true);
+For beginners or readers who are not familiar with multicopter design, it is a difficult task to configure a multicopter that can work. So CopterSim also provides a convenient function to directly select vehicle configurations through a prepared model database. As shown in Fig.4.6, in the drop-down list of the “Model Database” item, the reader can select a usable multicopter configuration (or modify parameters based on it) to quickly obtain the multicopter model for simulations.
 
-            % Create Image
-            app.Image = uiimage(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Image.Position = [8 -2 606 577];
-            app.Image.ImageSource = 'appdesignerInstrumentPanel.png';
+![](images/px4psp/Quan-app1-FigA.5.jpg)
+../_images/Quan-app1-FigA.5.jpg
+Fig. 4.6 Multicopter model selection from model database
 
-            % Create AirspeedIndicator
-            app.AirspeedIndicator = uiaeroairspeed(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.AirspeedIndicator.Limits = [25 250];
-            app.AirspeedIndicator.ScaleColorLimits = [0 60;50 200;200 225;225 250];
-            app.AirspeedIndicator.Position = [22 317 185 185];
+After configuring a multicopter through the three methods mentioned above, clicking the “Add to Database” button shown in Fig.4.6 will store the new model into the model database for use in the future. Readers can also delete the current model from the database by clicking the “Delete from Database” button shown in Fig.4.6.
 
-            % Create ArtificialHorizon
-            app.ArtificialHorizon = uiaerohorizon(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.ArtificialHorizon.Position = [219 317 185 185];
+### 1.5. Set Initial States
+As shown in Fig.4.3c, CopterSim provides an interface to modify the multicopter initial position and altitude. As shown in Fig.4.7, readers can enter the “x” and “y” coordinates (unit: m) of the multicopter and the value of the yaw angle (unit: degree), where the x-direction and y-direction point to the front and right of the multicopter, and the yaw angle is positive when rotating to right side.
 
-            % Create Altimeter
-            app.Altimeter = uiaeroaltimeter(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Altimeter.Position = [416 317 185 185];
+![](images/px4psp/Quan-app1-FigA.6.jpg)
+../_images/Quan-app1-FigA.6.jpg
+Fig. 4.7 Setting initial simulation position
 
-            % Create TurnCoordinator
-            app.TurnCoordinator = uiaeroturn(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.TurnCoordinator.Position = [22 70 185 185];
+## 2. Basic Features
+### 2.1. HIL Simulation for One Vehicle
+You can open CopterSim and RflySm3D successively to start hardware-in-the-loop (HIL) simulation, or simple click the Desktop shortcut “HITLRun” and input the com number of the Pixhawk to start HIL simulation. The introduction of RflySim advanced platform and the method to start HIL simulation for one vehicle are presented in the following video:
 
-            % Create HeadingIndicator
-            app.HeadingIndicator = uiaeroheading(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.HeadingIndicator.Position = [219 70 185 185];
+![](images/px4psp/Advanced3.png)
+../_images/Advanced3.png
+RflySim: How to use hardware-in-the-loop simulation for one vehicle
 
-            % Create ClimbIndicator
-            app.ClimbIndicator = uiaeroclimb(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.ClimbIndicator.MaximumRate = 8000;
-            app.ClimbIndicator.Position = [416 70 185 185];
+### 2.2. HIL Simulation for Multiple Vehicles
+You can also connect multiple Pixhawks to start HIL simulation for multiple vehicles, the procedure is presented in the following video:
 
-            % Create Time000secSliderLabel
-            app.Time000secSliderLabel = uilabel(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Time000secSliderLabel.HorizontalAlignment = 'right';
-            app.Time000secSliderLabel.FontSize = 11.5;
-            app.Time000secSliderLabel.FontColor = [1 1 1];
-            app.Time000secSliderLabel.Position = [267 3 80 22];
-            app.Time000secSliderLabel.Text = 'Time: 00.0 sec';
+![](images/px4psp/Advanced4.png)
+../_images/Advanced4.png
+RflySim Advance Function: How to use hardware-in-the-loop simulation for UAV swarm
 
-            % Create Time000secSlider
-            app.Time000secSlider = uislider(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Time000secSlider.Limits = [0 49.833333333333];
-            app.Time000secSlider.MajorTicks = [0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 49.833333333333];
-            app.Time000secSlider.MajorTickLabels = {'0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50'};
-            app.Time000secSlider.ValueChangingFcn = createCallbackFcn(app, @Time000secSliderValueChanging, true);
-            app.Time000secSlider.MinorTicks = [];
-            app.Time000secSlider.FontSize = 11.5;
-            app.Time000secSlider.FontColor = [1 1 1];
-            app.Time000secSlider.Position = [50 55 520 3];
+### 2.3. SIL Simulation for One Vehicle
+If you don’t have Pixhawk hardware, you can also run PX4 control software on Windows to form a software-in-the-loop simulation system with vehicle model in CopterSim through UDP network. The method to start a PX4&CopterSim SIL simulation for one vehicle is presented in the following video:
 
-            % Create PiperPA24ComancheFlightDataDisplayLabel
-            app.PiperPA24ComancheFlightDataDisplayLabel = uilabel(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.PiperPA24ComancheFlightDataDisplayLabel.BackgroundColor = [0.8 0.8 0.8];
-            app.PiperPA24ComancheFlightDataDisplayLabel.HorizontalAlignment = 'center';
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontName = 'Courier New';
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontSize = 14;
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontWeight = 'bold';
-            app.PiperPA24ComancheFlightDataDisplayLabel.Position = [141 515 347 22];
-            app.PiperPA24ComancheFlightDataDisplayLabel.Text = 'Piper PA-24 Comanche Flight Data Display';
+![](images/px4psp/Advanced5.png)
+../_images/Advanced5.png
+RflySim Advance Function: How to quickly perform software-in-the-loop simulation for one UAV
 
-            % Show the figure after all components are created
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Visible = 'on';
-        end
-    end
+### 2.4. SIL Simulation for Multiple Vehicles
+You can also start multiple SIL simulation system by the procedure in the following video:
 
-    % App creation and deletion
-    methods (Access = public)
+![](images/px4psp/Advanced6.png)
+../_images/Advanced6.png
+RflySim Advance Function: How to quickly perform software-in-the-loop (SIL) simulation for UAV swarm
 
-        % Construct app
-        function app = FlightInstrumentsExample
 
-            % Create UIFigure and components
-            createComponents(app)
+## 3. Other Types of Vehicles
+### 3.1. Other Multicopter Types, e.g. Hexacopter
+RflySim also supports to simulate other types of multicopters. You only need to select a desired multicopter configuration in CopterSim, and set Pixhawk to specific multicopter control mode through QGC.
 
-            % Register the app with App Designer
-            registerApp(app, app.FlightInstrumentsFlightDataPlaybackUIFigure)
+In the following video, we present the procedure to use RflySim to simulate a Hexacopter.
 
-            % Execute the startup function
-            runStartupFcn(app, @startupFcn)
+![](images/px4psp/Advanced7.png)
+../_images/Advanced7.png
+RflySim Advance Function: How to simulate other types of multicopters
 
-            if nargout == 0
-                clear app
-            end
-        end
+More detailed setting methods for other types of multicopters are presented below.
 
-        % Code that executes before app deletion
-        function delete(app)
+### 3.2. HIL Simulation for Other Types of Multicopters
+In the previous courses, readers need to set up the Pixhawk autopilot through QGC to enter the “HIL Quadcopter X” airframe mode. This mode only supports the quadcopter X configuration, which has strong limitations in practical usage. In addition to quadcopters, CopterSim can be used to all multicopter types supported by the PX4 autopilot software. The specific steps are presented as follows.
 
-            % Delete UIFigure when app is deleted
-            delete(app.FlightInstrumentsFlightDataPlaybackUIFigure)
-        end
-    end
-end
-```
+(1). Select a multicopter airframe in QGC
+
+1). Correctly connect the Pixhawk autopilot with the QGC.
+
+2). Select a required multicopter airframe in the “Airframe” tab (see Fig.4.8), such as hexacopters, octocopters, coaxial multicopters, etc.
+
+3). Select a corresponding airframe size from the drop-down list of the airframe (e.g., F450, and 3DR DIY Quad).
+
+4). Confirm that the Pixhawk is in the selected airframe mode applying the airframe and restarting.
+
+Through the above steps, readers can set an airframe type that can be used for the actual flight with controller parameters matching the airframe size.
+
+![](images/px4psp/Quan-app1-FigA.12.jpg)
+../_images/Quan-app1-FigA.12.jpg
+Fig. 4.8 Choosing a required multicopter airframe in QGC
+
+(2). Set the HIL simulation mode in QGC As shown in Fig.4.9, after the QGC is properly connected to the Pixhawk autopilot, in the “Safety” tab of QGC, set the “HITL Enabled” option to “Enabled” and then re-plug the Pixhawk autopilot. After the above steps, any airframe can be set to enter the HIL simulation mode.
+
+![](images/px4psp/Quan-app1-FigA.13.jpg)
+../_images/Quan-app1-FigA.13.jpg
+Fig. 4.9 Setting “HITL Enabled” option to “Enabled”
+
+(3). Configure multicopter model in CopterSim There are two methods to set the multicopter airframe type in CopterSim. The first method is to select from the “Frame Type” drop-down menu (see Fig.4.10a) on the CopterSim UI; the other method is to open the “Model Parameters” dialog to set the number of arms, the number of rotors, and the head orientation.
+
+![](images/px4psp/Quan-app1-FigA.14.jpg)
+../_images/Quan-app1-FigA.14.jpg
+Fig. 4.10 Setting multicopter airframe in CopterSim
+
+(4). Start HIL simulation Taking a hexacopter as an example, set the Pixhawk airframe type to a general hexacopter in QGC (see Fig.4.8); enable the HIL mode in QGC (see Fig.4.9); then, configure hexacopter parameters in CopterSim, as shown in Fig.4.10b. Next, insert the Pixhawk autopilot into the computer, select the Pixhawk serial port in CopterSim, and click “Start Simulation” button to start the HIL simulation for the hexacopter.
+
+### 3.3. Other Vehicle Types, e.g., Fixed-Wing Aircraft
+RflySim also supports to convert any vehicle model in Simulink to a DLL model file, and imports it to CopterSim to perform HIL simulation. In the following video, we present the procedure to convert the Simulink model of a fixed-wing aircraft to Coptersim for hardware-in-the-loop simulation.
+
+![](images/px4psp/Advanced8.png)
+../_images/Advanced8.png
+RflySim Advance Function: How to simulate other types of multicopters
+
+More detailed setting methods for other types of vehicles are presented below.
+
+### 3.4. HIL Simulations of Other Models
+As shown in Fig.4.8, a Pixhawk autopilot supports not only multicopters, but also fixed-wing aircraft, vertical take-off and landing aircraft, rovers, boats, and other types of vehicle. To support all vehicle types supported by Pixhawk autopilots, CopterSim also provides an interface to import the Simulink model as DLL model files to perform HIL simulations.
+
+(1). Use DLL model files in CopterSim As shown in Fig.4.11a, copy the DLL model file generated by Simulink to the folder “CopterSimexternalmodel”. After re-opening the CopterSim, readers can see all available DLL model files in the “Use DLL Model” drop-down list in Fig.4.11b. These DLL model files can be used to simulate any aircraft or vehicles. Select a DLL model, configure the Pixhawk autopilot to the desired airframe in QGC, and finally start HIL simulation in CopterSim.
+
+![](images/px4psp/Quan-app1-FigA.15.jpg)
+../_images/Quan-app1-FigA.15.jpg
+Fig. 4.11 Select DLL model for simulation
+
+(2). Method to generate DLL model file in Simulink As shown in Fig.4.12, open the Simulink source code folder “MulticopterModel” (obtained with the serial number), and open the desired “.slx” Simulink file (multicopter, aircraft, etc.) in it. Then, modify the model parameters or replace some of the modules in Simulink to meet the simulation model requirements. Next, click the “compile” button in Simulink to generate C/C++ code. Finally, run the “GenarateModelDLLFile” command in MATLAB to generate the DLL model file in “.dll” format and copy it to the folder shown in Fig.4.11.
+
+![](images/px4psp/Quan-app1-FigA.16.jpg)
+../_images/Quan-app1-FigA.16.jpg
+Fig. 4.12 Simulink source code to generate DLL model file
+
+Since Simulink uses modular programming methods, in the provided “.slx” file, it is easy to obtain different vehicle configurations by changing parameters or some modules. For example, the multicopter types presented in Fig.4.12 can be easily applied by modifying the airframe type parameter ModelParam_uavType in the “Init.m” initialization script (see Fig.4.13) to a corresponding value. The default multicopter configuration of the previous experiment was uavType = 3, which is the conventional X-shaped quadcopter. [1] [#f1]_
+
+![](images/px4psp/Quan-app1-FigA.17.jpg)
+../_images/Quan-app1-FigA.17.jpg
+Fig. 4.13 Model corresponding to uavType parameter in Simulink model
+
+Notes
+
+[1]	These configurations correspond to the multicopter models supported by the PX4 autopilot. Readers can refer to the official website: http://dev.px4.io/master/en/airframes/airframe_reference.html.
+
 {% include tony.html content="matlab tutorials and gcs.uno are the main source of learning for now" %}
 
 {% include custom/series_matlab_next.html %}
