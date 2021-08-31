@@ -37,13 +37,18 @@ You can read our latest document about the advanced features of RflySim platform
 Please Contact with service@rflysim.com for Price.
 
 Content	PDF
-Lesson 01: Introduction	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_01_Introduction.pdf)
-Lesson 02: Flight Control Experiments	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_02_Flight_Control_Experiments.pdf)
-Lesson 03: External Control Interface	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_03_External_Control_Interface.pdf)
-Lesson 04: Other Types of Vehicles	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_04_Other_Types_of_Vehicles.pdf)
-Lesson 05: UE4 3D Scene Development	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_05_UE4_3D_Scene_Development.pdf)
-Lesson 06: Vision Based Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_06_Vision_Based_Control.pdf)
-Lesson 07: UAV Swarm Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_07_UAV_Swarm_Control.pdf)
+|---
+| lesson | links
+| :- | :- 
+| Lesson 01: | Introduction	[pdf](pdf/gcs/rfly_code/|RflySim_Lesson_01_Introduction.pdf)
+| Lesson 02: | Flight Control Experiments	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_02_Flight_Control_Experiments.pdf)
+| Lesson 03: | External Control Interface	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_03_External_Control_Interface.pdf)
+| Lesson 04: | Other Types of Vehicles	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_04_Other_Types_of_Vehicles.pdf)
+| Lesson 05: | UE4 3D Scene Development	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_05_UE4_3D_Scene_Development.pdf)
+| Lesson 06: | Vision Based Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_06_Vision_Based_Control.pdf)
+| Lesson 07: | UAV Swarm Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_07_UAV_Swarm_Control.pdf)
+|===
+|  | check the other 12 lessons
 
 ### 1.3. Effect after Installation
 You will obtain the following shortcuts on Desktop, where Python38Env is a Python environment for vison/OpenCV development, RflySim3D is our latest UE4-based 3D environment simulation program, HITLRun is an one-key script for hardware-in-the-loop simulation of multiple vehicles, and SITLRun is an one-key script for Software-in-the-loop simulation of multiple vehicles.
