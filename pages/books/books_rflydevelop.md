@@ -786,6 +786,7 @@ Fig. 3.70 Controller connected with multicopter model
 
 Click the FlightGear-F450 shortcut on the Windows desktop to open FlightGear, and click on the “Start Simulation” button on the Simulink UI to start the simulation. Then, it can be observed in FlightGear (see Fig. 3.71) that a quadcopter climbs up for some time and then rolls left and flies leftward, indicating that the controller has achieved the expected requirements.
 
+![](images/px4psp/Quan-ch4-Fig4.19.jpg)
 ../_images/Quan-ch4-Fig4.19.jpg
 Fig. 3.71 A quadcopter in FlightGear
 
@@ -798,6 +799,7 @@ After finishing the SIL simulation in Simulink, copy the obtained controller sub
 
 Extract the corresponding I/O interfaces from the Simulink PSP module library (see Fig. 3.55) and connect it to the controller obtained in Step 6. As shown in Fig. 3.72, a complete example is available in “e03.DesignExpsExp4_AttitudeSystemCodeGen.slx”. Note that the motor control signals should be sent the uORB message of “actuator_outputs” to the “uORB Write” module instead of the PWM output module. This is because the controller is currently used for HIL simulation instead of actual flight tests.
 
+![](images/px4psp/Quan-ch4-Fig4.20.jpg)
 ../_images/Quan-ch4-Fig4.20.jpg
 Fig. 3.72 Attitude controller in Simulink for code generation
 
@@ -805,6 +807,7 @@ Fig. 3.72 Attitude controller in Simulink for code generation
 
 Click the “Build” button (see Fig. 3.37) on the Simulink toolbar to automatically generate code and PX4 firmware file. The result in Fig. 3.73 shows a successful compilation process.
 
+![](images/px4psp/Quan-ch4-Fig4.21.jpg)
 ../_images/Quan-ch4-Fig4.21.jpg
 Fig. 3.73 Simulink controller compiling successfully
 
