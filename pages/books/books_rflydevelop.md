@@ -739,6 +739,7 @@ This section uses a well-designed attitude control system as an example to intro
 
 Create a new Simulink file and design a multicopter attitude controller in it. For simplicity, an example of a well-designed attitude controller is available in “e03.DesignExpExp_AttitudeController.slx”. Open it, and the controller details are presented in Fig. 3.67. The design requirements for the controller are in the following.
 
+![](images/px4psp/Quan-ch4-Fig4.15.jpg)
 ../_images/Quan-ch4-Fig4.15.jpg
 Fig. 3.67 Attitude controller example
 
@@ -761,9 +762,11 @@ Pull back (or down) the three-position switch (CH5 > 1500) to disarm the multico
 
 Select all the components in Fig. 3.67 with the mouse (or simultaneously press the keys CTRL + A), and right-click the mouse, choosing “Create Subsystem From Selection” to pack the controller to a subsystem in Simulink. Right-click the obtained subsystem and click “Mask”—“Create Mask” to open the mask setting box in Fig. 3.68. Then, enter text “image(‘./icon/Pixhawk.png’);” in the “Icon drawing commands” input box in Fig. 3.68. Finally, click the “OK” button and adjust the positions of the input and output ports of the obtained subsystem to get a subsystem as presented in Fig. 3.69.
 
+![](images/px4psp/Quan-ch4-Fig4.16.jpg)
 ../_images/Quan-ch4-Fig4.16.jpg
 Fig. 3.68 Mask setting dialog for Simulink subsystem
 
+![](images/px4psp/Quan-ch4-Fig4.17.jpg)
 ../_images/Quan-ch4-Fig4.17.jpg
 Fig. 3.69 Obtained attitude controller subsystem
 
@@ -775,6 +778,7 @@ Open the Simulink file for SIL simulation, i.e., file “e01.SoftwareSimExpsCopt
 
 As shown in Fig. 3.70, reconnect the controller to the multicopter model, where the output port “PosE” denotes the multicopter position vector in the earth frame, “AngEuler” denotes the Euler angle vector of the multicopter attitude, and “AngRateB” denotes the angular velocity vector of the multicopter. Given that the RC transmitter signals cannot be obtained in the SIL simulation phase, readers can use constant values to replace them or use the MATLAB functions to simulate the corresponding RC transmitter actions. The angular velocity input ports “p”, “q”, and “r” of the controller in Fig. 3.69 can be obtained from the “AngRateB” vector of the multicopter model; the angle “roll” and “pitch” can be obtained from the “AngEuler” vector. An example is also available in “e03.DesignExpsExp2_ControlSystemDemo.slx” whose controller and practical RC transmitter signals have been connected as presented in Fig. 3.70.
 
+![](images/px4psp/Quan-ch4-Fig4.18.jpg)
 ../_images/Quan-ch4-Fig4.18.jpg
 Fig. 3.70 Controller connected with multicopter model
 
