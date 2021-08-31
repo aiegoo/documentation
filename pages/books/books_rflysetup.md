@@ -109,7 +109,7 @@ above. The required MATLAB toolboxes include the following.
 </tr>
 </table>
 
-   {% include note.html content=":: This book does not provide the installation package or installation process for MATLAB, so please purchase and install the above-required MATLAB toolboxes by yourself. If conditions are permitted, it is recommended to install MATLAB R2017b version with all toolboxes." %}
+{% include note.html content=":: This book does not provide the installation package or installation process for MATLAB, so please purchase and install the above-required MATLAB toolboxes by yourself. If conditions are permitted, it is recommended to install MATLAB R2017b version with all toolboxes." %}
 
 
 (2) `Pixhawk Support Package (PSP) Toolbox3 <https://ww2.mathworks.cn/hardware-support/forms/pixhawk-downloads-conf.html>`_ : it is a Simulink toolbox officially
