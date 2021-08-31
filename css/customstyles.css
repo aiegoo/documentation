@@ -1462,3 +1462,25 @@ h4.panel-title {
  .gist .gist-meta::after {
      content: url(https://aiegoo.github.io/portfolio);
  }
+
+ /* book-navigator arrow to the next menu */
+
+ .col-md-6 .post-content .nav-arrow {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    margin: 0;
+    max-width: 150px;
+    min-width: 90px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 60px;
+    color: #ccc;
+    text-align: center;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
