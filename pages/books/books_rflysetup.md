@@ -347,6 +347,7 @@ After completing the above steps, as shown in Fig. 2.12, the source code and dir
 ================================
 ## 3. Hardware Platform Configuration
 ================================
+
 This chapter will introduce the RC system configuration, Pixhawk autopilot system configuration, airframe, and propulsion system configuration.
 
 3.1. RC System Configuration
