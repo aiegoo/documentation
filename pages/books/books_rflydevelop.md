@@ -696,6 +696,7 @@ As shown in Fig. 3.62, the code and firmware are compiled successfully when the 
 ../_images/Quan-ch4-Fig4.10.jpg
 Fig. 3.62 Diagnostic viewer showing “build process completed successfully”
 
+![](images/px4psp/Quan-ch3-Fig4.11.jpg)
 ../_images/Quan-ch4-Fig4.11.jpg
 Fig. 3.63 Generated report after compiling
 
