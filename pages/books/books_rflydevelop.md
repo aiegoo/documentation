@@ -845,9 +845,11 @@ Fig. 3.76 Multicopter 3DDisplay interface
 
 The multicopter used in the outdoor flight tests is an F450 quadcopter (see Fig. 3.77). The parameters of the multicopter are accurately measured and identified by the system identification methods to ensure that the multicopter simulation model is consistent with the dynamics of the real multicopter system. For outdoor flight tests, the airframe of Pixhawk should be changed from “HIL Quadcopter X” to “DJI Flame Wheel F450” in QGC, which is presented in Fig. 3.78. All sensors should also be calibrated in QGC.
 
+![](images/px4psp/Quan-ch4-Fig4.25.jpg)
 ../_images/Quan-ch4-Fig4.25.jpg
 Fig. 3.77 F450 airframe and its components
 
+![](images/px4psp/Quan-ch4-Fig4.26.jpg)
 ../_images/Quan-ch4-Fig4.26.jpg
 Fig. 3.78 Flight test airframe in QGC
 
@@ -855,6 +857,7 @@ Fig. 3.78 Flight test airframe in QGC
 
 Open the Simulink file in Fig. 3.72 and change the “uORB Write” module to the “PWM_out” module provided by the PSP toolbox, according to Fig. 3.79. An example with the modified motor output is presented in “e03.DesignExpsExp5_AttitudeSystemCodeGenRealFlight.slx”. Then, click the Simulink “compile” button to compile the controller into PX4 firmware and upload it to Pixhawk.
 
+![](images/px4psp/Quan-ch4-Fig4.27.jpg)
 ../_images/Quan-ch4-Fig4.27.jpg
 Fig. 3.79 Changing “uORB Write” module to PWM_output
 
