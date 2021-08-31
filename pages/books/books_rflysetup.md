@@ -16,7 +16,7 @@ box_number: 1
 # Matlab implementation
 
 ========================
-1. Overall Introduction
+## 1. Overall Introduction
 ========================
 
 1.1 Hardware Platform
@@ -136,7 +136,7 @@ The previous subsection introduced the hardware and software components of the r
 
 
 ==============================
-1. Software Package Installation
+## 2. Software Package Installation
 ==============================
 
 The installation process of the Simulation Software Package is highly automated
@@ -149,7 +149,9 @@ deployment.
 The installation steps are summarized below.
 
 (1)Download the installation image file “RFLYExpPspSoftwarePack.iso” of the Simulation Software Package from :doc:`Download and Support<../7_DownloadAndSupport/DownloadAndSupport>`, 
-and then unzip it or mount it to a virtual drive folder.
+and then unzip it or mount it to a virtual drive folder. [download_link](https://bhpan.buaa.edu.cn/#/link/9CAD9EEAB75FE6C422C4A769E484B3C6) <br> [onedrive](https://onedrive.live.com/?authkey=%21AKB7RiTNzvAu%5FiU&cid=8239F8C5DD1767EA&id=8239F8C5DD1767EA%21107&parId=8239F8C5DD1767EA%21106&action=locate)
+
+> use UltraISO to mount the image before following the next step.
 
 (2) Open MATLAB and click the “Browse for Folder” button (see Fig. 2.3). On the folder selection window, select the folder “RFLYExpPspSoftwarePack” obtained in the previous step.
 
@@ -163,6 +165,8 @@ and then unzip it or mount it to a virtual drive folder.
 
 (4) In the pop-up configuration window shown in Fig. 2.4, select the required configuration according to the actual hardware and software requirements (the default configuration is recommended for beginners, where the compiling command is px4fmu-v3_default, the PX4 firmware version is 1.7.3, and the installation directory is the C disk, which may occupy around 6G storage), and click the “OK” button in Fig. 2.4.
 
+> you can install to D drive and use vscode workspace for the firmware development
+
 ![](images/px4psp/Quan-ch2-Fig2.4.jpg)
     .. figure:: /images/Quan-ch2-Fig2.4.jpg
         :align: center
@@ -174,7 +178,9 @@ may take around 30 min.
 
 **Noteworthy** :
 
-(1)  Antivirus software may prevent this script from generating desktop shortcuts. If the script prompts that the shortcut generation has failed, please close the antivirus software (Windows 10 should also turn off the “Real-time protection” option in the Settings page) and manually click the “GenerateShortcutCMD.bat” script in the installation directory (the default directory is C:PX4PSP) to automatically generate all the software shortcuts.
+(1)  `Antivirus software` may prevent this script from generating desktop shortcuts. If the script prompts that the shortcut generation has failed, please close the antivirus software (Windows 10 should also turn off the “Real-time protection” option in the Settings page) and manually click the “GenerateShortcutCMD.bat” script in the installation directory (the default directory is C:PX4PSP) to automatically generate all the software shortcuts.
+
+> beaware that the step above would cause forcing new path to set, which would cause some programms needs redoing the system environment variables.
 
 (2) If readers want to change the firmware configurations or restore the compiling environment, just run the “PX4InstallScript” command again and select the required options.
 
@@ -183,7 +189,7 @@ may take around 30 min.
 2.2 Advanced Settings
 --------------------
 
-For advanced independent developers, Fig. 2.4 provides options to select the installation directory, Pixhawk hardware version, PX4 firmware version, compiling command, compiling environment, etc. The options in Fig. 2.4 are explained in detail
+For advanced independent developers, Fig. 2.4 provides options to select the installation directory, Pixhawk hardware version, PX4 firmware version, compiling command, compiling environment, etc. The options in Fig. 2.4 are explained in detail
 below.
 
 (1) **Software package installation directory** . All dependent files on the software package are installed in this directory, which requires around 6G storage. The default installation directory is “C: PX4PSP”. If the C disk space is not suffi- cient, readers should choose a directory in other disks; the directory name must be correct and only in English to prevent compilation failures.
@@ -202,7 +208,7 @@ are listed below.
 * Pixracer: px4fmu-v4_default
 * Pixhawk 3 Pro: px4fmu-v4pro_default
 * Pixhawk Mini: px4fmu-v3_default
-* Pixhawk 2: px4fmu-v3_default
+* Pixhawk 2: px4fmu-v3_default (***cube black***)
 * mRo Pixhawk: px4fmu-v3_default
 * HKPilot32: px4fmu-v2_default
 * Pixfalcon: px4fmu-v2_default
@@ -220,9 +226,7 @@ are listed below.
 
 (3) **PX4 firmware version** . The version of the PX4 source code is updated constantly, and the latest firmware version was 1.10 when this book was written. As the firmware version is upgraded, new features may be introduced, and more new products will be supported, but the compatibility with some old autopilot hardware will be affected. Because the Pixhawk 1 (2MB flash version, or mRo Pixhawk) hardware selected in this book is an old Pixhawk product with LED for better experimental observation effect, the older PX4 firmware version 1.7.3 was selected with the compiling command “px4fmu-v3_default” to achieve better-using effect.
 
-(4) **PX4 firmware compiling toolchain** . Because the compilation of PX4 source
-code depends on the Linux compiling environment, the software package provides three sets of compiling toolchains to realize the simulation of the Linux
-compiling environment under the Windows environment.
+(4) **PX4 firmware compiling toolchain** . Because the compilation of PX4 source code depends on the Linux compiling environment, the software package provides three sets of compiling toolchains to realize the simulation of the Linux compiling environment under the Windows environment.
 
 1) `Win10WSL <https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux>`_ based on the Windows Subsystem compiler environment for Linux (WSL);
 2) the Msys2Toolchain based on `Msys2 <https://baike.baidu.com/item/MSYS2>`_ toolchain;
@@ -272,6 +276,16 @@ on the desktop.
 
 (3)  As shown in Fig. 2.8, the installed PSP toolbox can be found on the “Add-Ons” - “Manage Add-Ons” page of MATLAB. On this page, some management operations can be performed for the PSP toolbox that includes disabling, uninstalling, and viewing the installation directory. Note that the PSP toolbox can be installed once for all the MATLAB applications on a computer whose versions are higher than or equal to MATLAB R2017b.
 than or equal to MATLAB R2017b.
+
+> Due to matlab menu being syntax-based, you will have to open a xls file first, before you see the ***libraryBrowser***
+
+|---
+| {::nomarkdown} <div width="200px"></div> {:/} | {::nomarkdown} <div width="200px"></div> {:/}
+| :-: | :-:
+| ![library_browser](/images/librarybrowser.png) | ![px4_blocks](/images/px4library.png)
+|===
+| I've wasted time figuring this out
+
 
 ![](images/px4psp/Quan-ch2-Fig2.8.jpg)
 .. figure:: /images/Quan-ch2-Fig2.8.jpg
