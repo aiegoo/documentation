@@ -73,8 +73,8 @@ The topic is closely related to our previous book [#f8]_.
 
 This experimental platform provides interfaces for multicopter controller design in MATLAB/Simulink. Readers (beginners, students, or engineers) can develop a rapid design and verify the control algorithms by SIL simulation. After the control algorithms are well designed and verified, the platform also provides a code generation function to generate Simulink controllers to C/C++ code. Then, the code can be compiled into the autopilot software firmware file; finally, it is automatically uploaded to the Pixhawk hardware. The platform also provides a HIL simulation platform for preliminary simulation tests on a Pixhawk autopilot system that may help in eliminating potential problems that may exist in flight tests. After all the tests are completed, indoor and outdoor flight tests can be carried out by assembling the Pixhawk autopilot onto a real multicopter hardware system. The performance of the designed controllers can be evaluated through experimental tests.
 
-## 2. Simulink-Based Controller Design and Simulation PlatformView page source
-2. Simulink-Based Controller Design and Simulation Platform
+## 2. Simulink Controller Design & Simulation PlatformView
+2. Simulink-Based Controller Design and Simulation Platformview source code
 To improve the design efficiency of multicopter controllers, as shown in Fig. 3.5, this book provides a high-fidelity simulation environment based on Simulink/FlightGear. The main source code file is presented in “e01.SoftwareSimExps CopterSim3DEnvironment.slx”.
 
 ![](images/px4psp/Quan-ch3-Fig3.5.jpg)
