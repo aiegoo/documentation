@@ -38,8 +38,8 @@ Please Contact with service@rflysim.com for Price.
 
 Content	PDF
 |---
-| lesson | links
-| :- | :- 
+| lesson | pdf links | download links
+| :- | :- | :-
 | Lesson 01: | Introduction	[pdf](pdf/gcs/rfly_code/|RflySim_Lesson_01_Introduction.pdf)
 | Lesson 02: | Flight Control Experiments	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_02_Flight_Control_Experiments.pdf)
 | Lesson 03: | External Control Interface	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_03_External_Control_Interface.pdf)
@@ -49,7 +49,17 @@ Content	PDF
 | Lesson 07: | UAV Swarm Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_07_UAV_Swarm_Control.pdf)
 |===
 |  | check the other 12 lessons
-
+| Lesson01: Course Introduction. |  :download:[pdf]((pdf/gcs/rfly_code/Lesson_01_Introduction.pdf) | 
+| Lesson02: Experimental Platform Configuration.  | :download:`[pdf](pdf/gcs/rfly_code/Lesson_02_Experimental_Platform_Configuration.pdf)        
+| Lesson03: Experimental Platform Usage.         |  :download:[pdf](pdf/gcs/rfly_code/Lesson_03_Experimental_Platform_Usage.pdf)         |      :download:`[e0] <https://flyeval.com/res/e0.zip>` 
+| Lesson04: Experimental Process.          |       :download:[pdf](pdf/gcs/rfly_code/Lesson_04_Experimental_Process.pdf)  | 
+| Lesson05: Exp.1 Propulsion System Design.      |    :download:[pdf](pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf)    | :download:`[e1] <https://flyeval.com/res/e1.zip>`
+| Lesson07: Exp.3 Sensor Calibration.                     :download:[pdf](pdf/gcs/rfly_code/Lesson_07_Sensor_Calibration_Experiment.pdf)     | :download:`[e3] <http://flyeval.cn/res/e3.zip>`
+| Lesson08: Exp.4 State Estimation and Filter Design.     :download:[pdf](pdf/gcs/rfly_code/Lesson_08_State_Estimation_and_Filter_Design_Experiment.pdf) |:download:`[e4] <http://flyeval.cn/res/e4.zip>`
+| Lesson09: Exp.5 Attitude Controller Design.             :download:[pdf](pdf/gcs/rfly_code/Lesson_09_Attitude_Controller_Design_Experiment.pdf)  |:download:`[e5] <http://flyeval.cn/res/e5.zip>`
+| Lesson10: Exp.6 Set-Point Controller Design.            :download:[pdf](pdf/gcs/rfly_code/Lesson_10_Set-point_Controller_Design_Experiment.pdf)   |:download:`[e6] <http://flyeval.cn/res/e6.zip>`
+| Lesson11: Exp.7 Semi-autonomous Control Mode Design.    :download:[pdf](pdf/gcs/rfly_code/Lesson_11_Semi-autonomous_Control_Mode_Design_Experiment.pdf) |:download:`[e7] <http://flyeval.cn/res/e7.zip>`
+| Lesson12: Exp.8 Failsafe Logic Design.                  :download:[pdf](pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf)     |:download:`[e8] <http://flyeval.cn/res/e8.zip>`
 ### 1.3. Effect after Installation
 You will obtain the following shortcuts on Desktop, where Python38Env is a Python environment for vison/OpenCV development, RflySim3D is our latest UE4-based 3D environment simulation program, HITLRun is an one-key script for hardware-in-the-loop simulation of multiple vehicles, and SITLRun is an one-key script for Software-in-the-loop simulation of multiple vehicles.
 
