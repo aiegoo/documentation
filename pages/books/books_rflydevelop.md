@@ -616,7 +616,7 @@ The flashing frequency and color of the LED on the Pixhawk hardware can be contr
 6.1.1. Experimental Objective
 As shown in Fig. 3.54, use two channels from CH1 to CH5 of the RC transmitter to control the LED light on Pixhawk in two different colors and two different modes.
 
-![](images/px4psp/Quan-ch3-Fig4.2.jpg)
+![](images/px4psp/Quan-ch4-Fig4.2.jpg)
 ../_images/Quan-ch4-Fig4.2.jpg
 Fig. 3.54 Hardware connection of LED control experiment
 
@@ -625,7 +625,7 @@ The experiment uses the “RGB_LED” module in the PSP toolbox introduced in th
 
 (1). Create and open a new Simulink model file. As shown in Fig. 3.55, find the “RGB_LED” module in the “Pixhawk Target Blocks” toolbox, which is in the “Library Browser” of Simulink, and drag it to the new created Simulink file. The RC transmitter module “input_rc” in Fig. 3.55 is also dragged into the Simulink as the input signals to control the LED light. A Simulink example file completing the whole process of configuration is available in “e02.PSPOfficialExpspx4demo_input_rc.slx”.
 
-![](images/px4psp/Quan-ch3-Fig4.3.jpg)
+![](images/px4psp/Quan-ch4-Fig4.3.jpg)
 ../_images/Quan-ch4-Fig4.3.jpg
 Fig. 3.55 LED output interface model for PSP toolbox
 
@@ -653,7 +653,7 @@ The above variables have been registered as MATLAB global parameters when instal
 
 (3). Controller design. According to the introduction to the RC system provided in the previous chapter, the data range of the PWM signals received by Pixhawk is 1100–1900. As shown in Fig. 3.56, we will use two channels of the RC transmitter in this experiment to control the mode and color of the LED light. The controller design procedure is described next.
 
-![](images/px4psp/Quan-ch3-Fig4.4.jpg)
+![](images/px4psp/Quan-ch4-Fig4.4.jpg)
 ../_images/Quan-ch4-Fig4.4.jpg
 Fig. 3.56 LED controller with an RC transmitter
 
@@ -664,39 +664,39 @@ Fig. 3.56 LED controller with an RC transmitter
 6.1.3. Controller Code Generation and Firmware Uploading
 (1). For MATLAB 2017b–2019a, as shown in Fig. 3.57, click the “Simulation”—“Model Configuration Parameters” option on the Simulink menu bar to enter the Simulink setting dialog; for MATLAB 2019b and above, click the “Settings” button. The obtained Simulink setting window is presented in Fig. 3.58.
 
-![](images/px4psp/Quan-ch3-Fig4.5.jpg)
+![](images/px4psp/Quan-ch4-Fig4.5.jpg)
 ../_images/Quan-ch4-Fig4.5.jpg
 Fig. 3.57 “Model Configuration parameters” option on Simulink
 
-![](images/px4psp/Quan-ch3-Fig4.6.jpg)
+![](images/px4psp/Quan-ch4-Fig4.6.jpg)
 ../_images/Quan-ch4-Fig4.6.jpg
 Fig. 3.58 Simulink setting dialog
 
 (2). Select the target hardware. As shown in Fig. 3.59, set the option “Hardware Implementation”—“Hardware Board” to “Pixhawk PX4”.
 
-![](images/px4psp/Quan-ch3-Fig4.7.jpg)
+![](images/px4psp/Quan-ch4-Fig4.7.jpg)
 ../_images/Quan-ch4-Fig4.7.jpg
 Fig. 3.59 Setting target hardware to Pixhawk PX4
 
 (3). Compile the model. As shown in Fig. 3.60, compile the designed controller into the PX4 firmware file by clicking the “Build” button on the Simulink toolbar. The code generation and firmware compiling process can be observed in the “Diagnostic Viewer” window of Simulink.
 
-![](images/px4psp/Quan-ch3-Fig4.8.jpg)
+![](images/px4psp/Quan-ch4-Fig4.8.jpg)
 ../_images/Quan-ch4-Fig4.8.jpg
 Fig. 3.60 Button for compiling code in Simulink
 
 For MATLAB 2017b–2019a, it can be opened by clicking on the “View diagnostics” button in the status bar below Simulink (see the lower box in Fig. 3.61) or by clicking the “View” - “Diagnostic Viewer” (see Fig. 3.61) button on the Simulink menu. For MATLAB 2019b and above, click the “Diagnostics” button to open the “Diagnostic Viewer” window.
 
-![](images/px4psp/Quan-ch3-Fig4.9.jpg)
+![](images/px4psp/Quan-ch4-Fig4.9.jpg)
 ../_images/Quan-ch4-Fig4.9.jpg
 Fig. 3.61 “Diagnostics” option in different Simulink versions
 
 As shown in Fig. 3.62, the code and firmware are compiled successfully when the “Build process completed successfully” message appears in the “Diagnostic Viewer” window. A code generation report shown in Fig. 3.63 can also be obtained. At this point, the corresponding C/C++ code files have been generated in the folder “Firmwaresrcmodulespx4_simulink_app”, and the “make px4fmu-v3_default” command has been called to complete the firmware compilation process.
 
-![](images/px4psp/Quan-ch3-Fig4.10.jpg)
+![](images/px4psp/Quan-ch4-Fig4.10.jpg)
 ../_images/Quan-ch4-Fig4.10.jpg
 Fig. 3.62 Diagnostic viewer showing “build process completed successfully”
 
-![](images/px4psp/Quan-ch3-Fig4.11.jpg)
+![](images/px4psp/Quan-ch4-Fig4.11.jpg)
 ../_images/Quan-ch4-Fig4.11.jpg
 Fig. 3.63 Generated report after compiling
 
@@ -706,11 +706,13 @@ Fig. 3.63 Generated report after compiling
 
 2). For MATLAB 2017b–2019a, as shown in Fig. 3.64, click the “Code”-“PX4 PSP: Upload code to Px4FMU” in the Simulink menu bar; for MATLAB 2019b and above, input the “PX4Upload” command in the MATLAB “Command Window” according to Fig. 3.40b to upload the firmware.
 
+![](images/px4psp/Quan-ch4-Fig4.12.jpg)
 ../_images/Quan-ch4-Fig4.12.jpg
 Fig. 3.64 Simulink firmware upload menu
 
 3). As shown in Fig. 3.65, Simulink will automatically recognize the Pixhawk autopilot and start to upload and deploy the PX4 firmware file. The uploading and deploying process is successfully completed when the progress bar reaches 100%. Note that Pixhawk may need to be re-plugged in some cases to start the upload progress.
 
+![](images/px4psp/Quan-ch4-Fig4.13.jpg)
 ../_images/Quan-ch4-Fig4.13.jpg
 Fig. 3.65 Firmware is successfully uploaded
 
@@ -725,6 +727,7 @@ By default, when the RC transmitter does nothing, the LED light is slowly blinki
 
 (4). When the throttle stick of the RC transmitter is placed in the lower-right position (CH3<1500 and CH4>1500), the LED is slowly blinking in blue.
 
+![](images/px4psp/Quan-ch4-Fig4.14.jpg)
 ../_images/Quan-ch4-Fig4.14.jpg
 Fig. 3.66 LED experimental results (the left LED is blue, and the right is red)
 
