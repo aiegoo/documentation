@@ -611,7 +611,7 @@ Fig. 3.54 Arm and disarm of Pixhawk autopilot through RC transmitter
 ==========================================
 
 ### 6.1. LED Control Experiment
-The flashing frequency and color of the LED on the Pixhawk hardware can be controlled by designing controller in Simulink. This section takes a simple LED light control experiment [1] as an example to introduce the operation process of the hardware and software components of the experimental platform released with this book.
+The flashing frequency and color of the LED on the Pixhawk hardware can be controlled by designing controller in Simulink. This section takes a simple LED light control experiment [1] [#f1]_ as an example to introduce the operation process of the hardware and software components of the experimental platform released with this book.
 
 6.1.1. Experimental Objective
 As shown in Fig. 3.54, use two channels from CH1 to CH5 of the RC transmitter to control the LED light on Pixhawk in two different colors and two different modes.
@@ -822,7 +822,7 @@ Fig. 3.74 Upload firmware successfully
 6.2.3. HIL Simulation
 (10). Step 10 : hardware system connection
 
-As shown in Fig. 3.54, connect the RC receiver to Pixhawk with a three-color JR cable, then connect Pixhawk to the computer via a USB cable. At this point, readers can observe that the LED on Pixhawk lights up and blinks slowly, [2] the LED on the RC receiver is blue and white (this is for RadioLink and green light for Futaba receiver). Then, turn on the RC transmitter, readers can observe that the LED light on the Pixhawk blinks quickly for a few seconds, indicating that the RC transmitter data has been successfully received. If there is no change for the Pixhawk LED light, indicating that the connection between the RC transmitter and the receiver is not correct, readers should check and confirm the hardware connection.
+As shown in Fig. 3.54, connect the RC receiver to Pixhawk with a three-color JR cable, then connect Pixhawk to the computer via a USB cable. At this point, readers can observe that the LED on Pixhawk lights up and blinks slowly, [2] [#f2]_ the LED on the RC receiver is blue and white (this is for RadioLink and green light for Futaba receiver). Then, turn on the RC transmitter, readers can observe that the LED light on the Pixhawk blinks quickly for a few seconds, indicating that the RC transmitter data has been successfully received. If there is no change for the Pixhawk LED light, indicating that the connection between the RC transmitter and the receiver is not correct, readers should check and confirm the hardware connection.
 
 (11). Step 11 : CopterSim configuration
 
@@ -863,7 +863,7 @@ Fig. 3.79 Changing “uORB Write” module to PWM_output
 
 (15). Step 15 : preparation for flight tests
 
-Owing to the lack of complete failsafe logic for the generated control algorithm, safety should be fully considered to prevent accidents in outdoor flight tests. For example, the tests should be carried out in a relatively open area (such as a lawn) and on a nice day with good weather and low wind speed. When the above conditions are met, connect Pixhawk with the battery, and press the safety switch [3] on Pixhawk for more than three seconds. Then, control the multicopter with an RC transmitter to verify the actual performance of the controller.
+Owing to the lack of complete failsafe logic for the generated control algorithm, safety should be fully considered to prevent accidents in outdoor flight tests. For example, the tests should be carried out in a relatively open area (such as a lawn) and on a nice day with good weather and low wind speed. When the above conditions are met, connect Pixhawk with the battery, and press the safety switch [3] [#f3]_ on Pixhawk for more than three seconds. Then, control the multicopter with an RC transmitter to verify the actual performance of the controller.
 
 (16). Step 16 : test results and analysis
 
