@@ -39,17 +39,18 @@ Please Contact with service@rflysim.com for Price.
 Content	PDF
 
 |---
-| lesson | pdf links | download links
+| lesson | pdf links | code links
 | :- | :- | :-
-| Lesson 01: | Introduction	[pdf](pdf/gcs/rfly_code/|RflySim_Lesson_01_Introduction.pdf) |
-| Lesson 02: | Flight Control Experiments	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_02_Flight_Control_Experiments.pdf) |
-| Lesson 03: | External Control Interface	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_03_External_Control_Interface.pdf) |
-| Lesson 04: | Other Types of Vehicles	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_04_Other_Types_of_Vehicles.pdf) |
-| Lesson 05: | UE4 3D Scene Development	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_05_UE4_3D_Scene_Development.pdf) |
-| Lesson 06: | Vision Based Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_06_Vision_Based_Control.pdf) |
-| Lesson 07: | UAV Swarm Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_07_UAV_Swarm_Control.pdf) |
+| Lesson 01: | Introduction	[pdf](pdf/gcs/rfly_code/|RflySim_Lesson_01_Introduction.pdf) | *
+| Lesson 02: | Flight Control Experiments	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_02_Flight_Control_Experiments.pdf) | *
+| Lesson 03: | External Control Interface	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_03_External_Control_Interface.pdf) | *
+| Lesson 04: | Other Types of Vehicles	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_04_Other_Types_of_Vehicles.pdf) | *
+| Lesson 05: | UE4 3D Scene Development	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_05_UE4_3D_Scene_Development.pdf) | *
+| Lesson 06: | Vision Based Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_06_Vision_Based_Control.pdf) | *
+| Lesson 07: | UAV Swarm Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_07_UAV_Swarm_Control.pdf) | *
+| | | *
 |---
-| Lesson01: Course Introduction. |  :download:[pdf]((pdf/gcs/rfly_code/Lesson_01_Introduction.pdf) | *
+| Lesson01: Course Introduction. |  :download:[pdf](pdf/gcs/rfly_code/Lesson_01_Introduction.pdf) | *
 | Lesson02: Experimental Platform Configuration.  | :download:`[pdf](pdf/gcs/rfly_code/Lesson_02_Experimental_Platform_Configuration.pdf) | *
 | Lesson03: Experimental Platform Usage.         |  :download:[pdf](pdf/gcs/rfly_code/Lesson_03_Experimental_Platform_Usage.pdf)         |  :download:[e0] <https://flyeval.com/res/e0.zip> 
 | Lesson04: Experimental Process.          |       :download:[pdf](pdf/gcs/rfly_code/Lesson_04_Experimental_Process.pdf)  | *
@@ -61,7 +62,7 @@ Content	PDF
 | Lesson11: Exp.7 Semi-autonomous Control Mode Design. |   :download:[pdf](pdf/gcs/rfly_code/Lesson_11_Semi-autonomous_Control_Mode_Design_Experiment.pdf) |:download:[e7] <http://flyeval.cn/res/e7.zip>
 | Lesson12: Exp.8 Failsafe Logic Design.             |     :download:[pdf](pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf)     |:download:[e8](pdf/gcs/rfly_code/code/e8)
 |===
-|  | |
+|  | | *
 
 > course contents overview [source_code](https://github.com/aiegoo/RflyExpCode/edit/master/README.md)
 # RflyExpCode
