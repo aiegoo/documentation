@@ -692,6 +692,7 @@ Fig. 3.61 “Diagnostics” option in different Simulink versions
 
 As shown in Fig. 3.62, the code and firmware are compiled successfully when the “Build process completed successfully” message appears in the “Diagnostic Viewer” window. A code generation report shown in Fig. 3.63 can also be obtained. At this point, the corresponding C/C++ code files have been generated in the folder “Firmwaresrcmodulespx4_simulink_app”, and the “make px4fmu-v3_default” command has been called to complete the firmware compilation process.
 
+![](images/px4psp/Quan-ch3-Fig4.10.jpg)
 ../_images/Quan-ch4-Fig4.10.jpg
 Fig. 3.62 Diagnostic viewer showing “build process completed successfully”
 
