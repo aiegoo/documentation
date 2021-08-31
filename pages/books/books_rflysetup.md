@@ -27,20 +27,20 @@ the basic flight test requirements. As shown in Fig. 2.1, the experimental
 hardware platform recommended in this book is composed of five main parts.
 
 ![](images/px4psp/Quan-ch2-Fig2.1.jpg)
-    .. figure:: /images/Quan-ch2-Fig2.1.jpg
-        :align: center
+.. figure:: /images/Quan-ch2-Fig2.1.jpg
+    :align: center
 
-        Fig. 2.1 Composition of experimental hardware platform
+    Fig. 2.1 Composition of experimental hardware platform
 
 (1) **Ground computer** : it is a high-performance Personal Computer (PC) with an operating system that performs two main tasks.
 
-    1) Providing the software operating environment for the simulation software tools to perform functions such as control algorithm development, SIL simulation, automatic code generation, and HIL simulation;
+1) Providing the software operating environment for the simulation software tools to perform functions such as control algorithm development, SIL simulation, automatic code generation, and HIL simulation;
 
     2) Working as a ground control station in outdoor flight tests to achieve functions such as sensor calibration, parameter tuning, real-time control, and communication.
 
     To ensure all the software tools run smoothly on the ground computer, the following basic configuration requirements must be satisfied.
 
-    * Operating System (OS): Windows 7��10, 64-bit system
+    * Operating System (OS): Windows 7 ~ 10, 64-bit system
     * Processor: Intel I5 series or above
     * Memory: 8G or above
     * Graphics: discrete graphics, memory 2G or more
@@ -48,8 +48,7 @@ hardware platform recommended in this book is composed of five main parts.
     * Interface: at least one USB Type-A
     * Monitor: screen resolution 1080P or above
 
-    Noteworthy, for higher development efficiency, computer performance must be
-    as high as possible.
+    Noteworthy, for higher development efficiency, computer performance must be as high as possible.
 
 (2) **Autopilot system (also called flight control system)** : as the operating platform of control algorithms, it has many sensors and powerful computing processor to estimate flight states and calculate the control signals for the propulsion system to realize the flight control of multicopters. For this book, we selected awidely-used open-source autopilot—Pixhawk as the development and experimental autopilot system. Pixhawk is an independent open-hardware project that aims to provide standard readily-available, high-quality, and low-cost autopilot hardware for education, amateurs, and developers. For different flight mission, performance, and cost requirements, the Pixhawk provides a series of autopilot hardware products that highly promote the development of multicopters.
 
@@ -77,14 +76,15 @@ through a modular programming language. The simulation software package
 and source code published along with this book support MATLAB R2017b and
 above. The required MATLAB toolboxes include the following.
 
-* MATLAB/Simulink
-* Control System Toolbox
-* Curve Fitting Toolbox
-* Aerospace Blockset
-* Aerospace Toolbox
-* MATLAB Coder
-* Simulink Coder
-* Stateflow
+|---
+| -- | -- |
+| <ul><li>* MATLAB/Simulink</li><li>* Control System Toolbox</li><li>* Curve Fitting Toolbox</li><li>* Aerospace Blockset</li><li>* Aerospace Toolbox</li><li>* MATLAB Coder</li><li>* Simulink Coder</li><li>* Stateflow</li></ul> | 
+<ul>    <li>>matlab</li> <li> 5g toolbox</li> <li>autosar blockset </li> <li>aerospace blockset</li> <li>aerospace toolbox</li>   <li>antenna toolbox</li> <li>audio toolbox</li>   <li>automated driving toolbox</li>  <li> communications toolbox</li>    <li> computer vision toolbox</li>    <li>control system toolbox</li>  
+    <li>curve fitting toolbox</li>     <li>dsp system toolbox</li>   <li>data acquisition toolbox</li>  <li>database toolbox</li>  <li>deep learning toolbo</li>  <li>embedded coder</li> <li>filter design hdl coder</li> <li>fixed-point designer</li>     <li>fuzzy logic toolbox</li>  <li>global optimization toolbox</li> <li>iec certification kit</li> <li>image acquisition toolbox</li>    <li>image processing toolbox</li>  <li>instrument control toolbox</li>   <li>lte toolbox</li>  <li>matlab coder</li> <li> matlab compiler</li><li>matlab parallel server</li>  <li>matlab report generator</li>  <li>mapping toolbox</li> <li>mixed-signal blockset</li>   <li> model predictive control toolbox</li>   <li>model-based calibration toolbox</li><li>motor control blockset </li>  <li>navigation toolbox</li>  <li>opc toolbox </li>    <li>optimization toolbox</li> <li>px4 psp </li>    <li>parallel computing toolbox</li>  <li>phased array system toolbox</li> <li>polyspace bug finder</li>  <li>polyspace bug finder server</li> <li>polyspace code prover </li><li>polyspace code prover server </li> <li>powertrain blockset  </li>   <li>predictive maintenance toolbox</li> <li>rf blockset</li> <li>rf toolbox</li> <li>ros toolbox</li>  <li>reinforcement learning toolbox</li> <li>robotics system toolbox </li>  <li> robust control toolbox </li> <li>sensor fusion and tracking toolbox</li><li>serdes toolbox</li>  <li>signal processing toolbox</li> <li>simbiology</li> <li>simevents</li>  <li>simscape </li> <li>simscape driveline</li>   <li>simscape electrical</li>   <li>simscape fluids</li>  <li>simscape multibody</li> <li>simulink 3d animation </li>  <li>simulink check </li> <li>simulink code inspector</li>  <li>simulink coder</li>  <li>simulink compiler </li>  <li>simulink control design</li>   <li>simulink coverage</li> <li>simulink design optimization </li> <li>simulink design verifier </li>  <li> simulink desktop real-time</li>  <li>simulink real-time</li>  <li>simulink report generator</li> <li>simulink requirements </li>  <li>simulink test </li><li> *stateflow </li>   <li> statistics and machine learning toolbox</li>  <li>symbolic math toolbox </li> <li> system identification toolbox </li> <li>text analytics toolbox </li><li>vehicle dynamics blockset</li>   <li>vehicle network toolbox</li> <li>wlan toolbox</li>  <li>wireless hdl toolbox</li>  <li>simulink </li>    <li>5g toolbox  </li>    <li></li>autosar blockset     <li>aerospace blockset     <li>aerospace toolbox     <li>antenna toolbox 
+    <li>audio toolbox      <li>automated driving toolbox     <li>communications toolbox      <li>computer vision toolbox     <li>control system toolbox     <li>curve fitting toolbox      <li>dsp system toolbox 
+    <li>data acquisition toolbox     <li>database toolbox      <li>deep learning toolbox     <li>embedded coder  
+    <li>filter design hdl coder       <li>fixed-point designer      <li>fuzzy logic toolbox         <li>iec certification kit      <li>image acquisition toolbox      <li>image processing toolbox     <li>instrument control toolbox      <li>lte toolbox        <li>matlab coder     <li>matlab compiler      <li>matlab parallel server     <li>matlab report generator  <li>mapping toolbox    <li>mixed-signal blockset  <li>model predictive control toolbox    <li>model-based calibration toolbox     <li>motor control blockset   <li>navigation toolbox     <li>opc toolbox    <li>optimization toolbox    <li>px4 psp   <li>parallel computing toolbox <li>phased array system toolbox    <li>polyspace bug finder   <li>polyspace bug finder server   <li>polyspace code prover    <li>polyspace code prover server  <li>powertrain blockset   <li>predictive maintenance toolbox    <li>rf blockset      <li>rf toolbox    <li>ros toolbox    <li>reinforcement learning toolbox    <li>robotics system toolbox    <li>robust control toolbox    <li>sensor fusion and tracking toolbox  <li>serdes toolbox  
+    <li>signal processing toolbox    <li>simbiology      <li>simevents  <li>simscape  <li>simscape driveline   <li>simscape electrical   <li>simscape fluids     <li>simscape multibody    <li>simulink 3d animation   <li>simulink check   <li>simulink code inspector   <li>simulink coder   <li>simulink compiler   <li>simulink control design   <li>simulink coverage   <li>simulink design optimization    <li>simulink design verifier     <li>simulink desktop real-time    <li>simulink real-time     <li>simulink report generator         <li>simulink requirements      <li>simulink test     <li>stateflow     <li>statistics and machine learning toolbox    <li>symbolic math toolbox     <li>system identification toolbox   <li>text analytics toolbox    <li>vehicle dynamics blockset    <li>vehicle network toolbox    <li>Wireless HDL Toolbox</li></ul> 
 
    {% include note.html content=":: This book does not provide the installation package or installation process for MATLAB, so please purchase and install the above-required MATLAB toolboxes by yourself. If conditions are permitted, it is recommended to install MATLAB R2017b version with all toolboxes." %}
 
@@ -130,7 +130,7 @@ The previous subsection introduced the hardware and software components of the r
 
 
 ==============================
-2. Software Package Installation
+1. Software Package Installation
 ==============================
 
 The installation process of the Simulation Software Package is highly automated
