@@ -79,6 +79,7 @@ above. The required MATLAB toolboxes include the following.
 |---
 | **required** | **required**
 | - | -
+| {::nomarkdown}<img width=300/> {:/} | {::nomarkdown}<img width=300/> {:/} 
 |{::nomarkdown}<ul><li>MATLAB/Simulink</li>  <li>Control System Toolbox</li> <li>Curve Fitting Toolbox </li><li> Aerospace Blockset</li> <li>Aerospace Toolbox</li> </ul> {:/} | {::nomarkdown} <ul><li> MATLAB Coder</li> <li>Simulink Coder</li> <li>Stateflow</li> </ul> {:/} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 |---
