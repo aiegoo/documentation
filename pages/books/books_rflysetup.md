@@ -282,7 +282,7 @@ than or equal to MATLAB R2017b.
 |---
 | {::nomarkdown} <div width="200px"></div> {:/} | {::nomarkdown} <div width="200px"></div> {:/}
 | :-: | :-:
-| ![library_browser](/images/librarybrowser.png) | ![px4_blocks](/images/px4library.png)
+| ![library_browser](images/librarybrowser.png) | ![px4_blocks](images/px4library.png)
 |===
 | I've wasted time figuring this out
 
