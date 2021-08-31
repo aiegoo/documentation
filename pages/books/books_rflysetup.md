@@ -122,7 +122,7 @@ widely-used autopilot systems for aerial vehicles.
 (9) **3DDisplay—3D Visual Display Software&& : it is a real-time 3D visual display software. It receives the flight data of CopterSim through UDP to display the attitude and position of a multicopter in real-time. CopterSim and 3DDisplay together constitute an integrated HIL simulation platform. The distributed independent operation mechanism of CopterSim and 3DDisplay provides future compatibility for swarm simulations.
 
 
-### 1.3 Relationship Between Software and Hardware Platforms
+### 1.3 Relationship Between sw and hw Platforms
 -------------------------------------------------------
 
 The previous subsection introduced the hardware and software components of the required experimental platform. These components seem to be diverse and complex, but they are necessary for the development and practical flight experiments of multicopters. Familiarization with these tools can reduce the development difficulty and significantly improved efficiency, which can save a lot of time during the learning process. Figure 2.2 shows the relationships among the various hardware and software components and the overall process of the experimental platform. Most of the software tools play important roles in all the phases of multicopter development. The roles and application methods of the components presented in Fig. 2.2 are introduced in detail in the following sections.
@@ -309,7 +309,7 @@ the following steps:
 (3) In the “Management Additional Functions” page of MATLAB presented in Fig. 2.8, click the “Uninstall” button to uninstall the PSP toolbox.
 
 
-2.4 Brief Introduction to Software
+### 2.4 Brief Introduction to Software
 -------------------------------
 
 (1) Double-click the desktop shortcuts shown in Fig. 2.6, which include “FlightGearF450”, “CopterSim”, “QGroundControl” and “3DDisplay”. Then, check the software User Interface (UI) one by one with Fig. 2.10 to confirm that each software can operate correctly.
