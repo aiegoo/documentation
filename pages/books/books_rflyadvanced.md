@@ -13,7 +13,9 @@ box_number: 2
 ---
 
 {% include custom/series_matlab_next.html %}
+=============================
 # Matlab advanced work
+=============================
 
 ## 1. Installation Method
 ### 1.1. Installation Package Acquisition
@@ -88,7 +90,9 @@ As shown in Fig.4.3c, CopterSim provides an interface to modify the multicopter 
 ../_images/Quan-app1-FigA.6.jpg
 Fig. 4.7 Setting initial simulation position
 
+=============================
 ## 2. Basic Features
+=============================
 ### 2.1. HIL Simulation for One Vehicle
 You can open CopterSim and RflySm3D successively to start hardware-in-the-loop (HIL) simulation, or simple click the Desktop shortcut “HITLRun” and input the com number of the Pixhawk to start HIL simulation. The introduction of RflySim advanced platform and the method to start HIL simulation for one vehicle are presented in the following video:
 
@@ -117,8 +121,9 @@ You can also start multiple SIL simulation system by the procedure in the follow
 ../_images/Advanced6.png
 RflySim Advance Function: How to quickly perform software-in-the-loop (SIL) simulation for UAV swarm
 
-
+=============================
 ## 3. Other Types of Vehicles
+=============================
 ### 3.1. Other Multicopter Types, e.g. Hexacopter
 RflySim also supports to simulate other types of multicopters. You only need to select a desired multicopter configuration in CopterSim, and set Pixhawk to specific multicopter control mode through QGC.
 
@@ -193,7 +198,9 @@ Since Simulink uses modular programming methods, in the provided “.slx” file
 ../_images/Quan-app1-FigA.17.jpg
 Fig. 4.13 Model corresponding to uavType parameter in Simulink model
 
+=============================
 ## 4. Customization of 3D Scenarios
+=============================
 ### 4.1. Design and Import 3D Scenarios
 RflySim3D also support to design and import your own 3D scenes, the basic principle is listed as follows:
 
@@ -237,9 +244,104 @@ The figures below present the build-in high-fidelity vehicle/car/people/target 3
 ../_images/Advanced15.png
 ../_images/Advanced16.png
 
+=============================## 5. UAV Swarm Control
+=============================
+### 5.1. Distributed Simulation Framework
+RflySim adopts totally distributed framework, you can extend to any number of computers, vehicles, observation views, etc. The basic software structure is presented in the figure below.
+
+![](images/px4psp/Advanced17.png)
+../_images/Advanced17.png
+The hardware structure is presented in the following figure.
+
+![](images/px4psp/Quan-app1-FigA.21.jpg)
+../_images/Quan-app1-FigA.21.jpg
+### 5.2. Key Problems and Solutions
+Problem 1: it is ineffective to create simulated vehicles&Pixhawks one by one
+Solution: One-key script to start and initialize all programs and parameters
+Problem 2: How to display all vehicles in the same 3D program
+Solution: we use UDP network to broadcast vehicle states, and RflySim3D dynamically create vehicle 3D model when receiving new data. Users can also create other 3D models such as obstacle, people, tracking target, checker board .
+Problem 3: The network become congested when vehicle number is too large
+Solution: we have multiple communication protocols, simplified message can be applied when vehicle number is large to improve the real-time performance of communication.
+Problem 4: It is too costly and inefficient to perform large scale swarm simulation with Pixhawk hardware.
+Solution: we provide PX4 SITL simulation mode, under which the PX4 Autopilot software is running in the windows instead of Pixhawk hardware.
+Problem 5: How much vehicle can be simulated on one computer?
+Answer: the QGroundControl and RflySim3D occupy most of the computing resource, and the CopterSim + PX4 SILT only need few computing resources. For normal high-performance PCs, we can run at least 15 vehicles with CopterSim + PX4 SITL, and at least 30 vehicles with CopterSim + PX4 HITL. The number will increase if the QGroundControl, RflySim3D, and MATLAB are not running on this computer
+Problem 6: Simulink will significantly slow down when too much vehicles to be controlled, which may affect the real-time performance
+Solution: we provide script to compile Simulink controller to exe file, which can control large-scale UAV swarm simulation system with few computing resource
+Problem 7: How to ensure controller can work in real system as in simulation
+Solution 1: All vehicle data received by Simulink is the actual data from Pixhawk through Mavlink instead of ideal data from simulator, and the output of Simulink is also Mavlink message to Pixhawk.
+Solution 2: Our swarm communication interfaces ensure the Simulink can control actual UAV swarm system when each UAV is connected to the same LAN through WIFI or radio telemetry. User can also generate the Simulink to C/C++ code to developing a swarm ground control system.
+5.3. Simulink Control Swarm on One Computer
+![](images/px4psp/Advanced18.png)
+../_images/Advanced18.png
+RflySim Advance Function: How to use Simulink to control UAV swarms in software-in-the-loop (SIL) simulation mode
+
+### 5.4. Simulink Control Swarm on Multiple Computer
+![](images/px4psp/Advanced19.png)
+../_images/Advanced19.png
+RflySim Advance Function: How to quickly perform distributed software-in-the-loop simulation (SIL) for UAV swarm with multiple computer
+
+### 5.5. Apply Control Algorithm to Real Swarm System
+![](images/px4psp/Advanced20.png)
+../_images/Advanced20.png
+RflySim Advance Function: How to quickly apply the UAV swarm control algorithms to real UAV systems for indoor flight tests
+
+=============================
+
+## 6. UAV Vision/AI Control
+
+=============================
+### 6.1. Key Problems and Solutions
+Problem 1: How to capture images from UE4-based program RflySim3D with high frame rate
+Solution: we use Python/C/Simulink to directly read screen images from windows API which is independent from RflySim3D, so our interface will not slow down the efficiency of RflySim3D, and we can read the images with a very high frame rate (within 5ms, more than 200Hz ) outside the RflySim3D
+Problem 2: How to obtain multiple camera views in the same time
+Solution: users can open multiple RflySim3D windows to display different views.
+Problem 3: How to change the image size, camera position and angle, and select cameras on the desired vehicles.
+Solution: users can set these parameters through mouse and keyboard, or send commands through our UDP interface
+Problem 4: How to ensure the algorithm can run successfully on real vehicles？
+Solution: Our programming language is Python (we will support MATLAB soon) which is cross-platform, and our communication interface is based on Mavlink which can be processed by Pixhawk directly. So the algorithms can run on onboard computer without modification
+
+### 6.2. Control with Monocular Camera
+![](images/px4psp/Advanced21.png)
+../_images/Advanced21.png
+RflySim Advance Function: How to use Python/OpenCV to perform vision-based control of a multicopter UAV
+
+### 6.3. Control with Binocular Camera
+![](images/px4psp/Advanced22.png)
+../_images/Advanced22.png
+RflySim Advance Function: How to perform binocular vision control and apply to real multicopter system
+
+### 6.4. Apply Vision Algorithm
+We also provide a serial of multicopter vision flight platform to ensure algorithm can be successfully applied to real vehicle systems.
+
+![](images/px4psp/Advanced23.png)
+../_images/Advanced23.png
+
+
+=============================
+## Future Plan
+
+=============================
+
+RflySim provide a unified solution for development, test and assessment of unmanned control systems, and we have more wonderful features are coming soon:
+
+1. More high-fidelity 3D scenes and vehicle models will be released on our website with control demos for users.
+
+2. More sensors will be supported, e.g., Lidar, depth cameras.
+
+3. Simulink interface for computer vision and machine learning, so users can train their vehicle control algorithms on RflySim
+
+4. More types of vehicle to be supported, e.g., driverless cars, fixed-wing aircraft, VTOL, unmanned boat, etc.
+
+5. Standard modeling module database to quickly develop vehicle model
+
+6. More experimental courses will be released on our website
 Notes
 
 [1]	These configurations correspond to the multicopter models supported by the PX4 autopilot. Readers can refer to the official website: http://dev.px4.io/master/en/airframes/airframe_reference.html.
+
+
+
 
 {% include tony.html content="matlab tutorials and gcs.uno are the main source of learning for now" %}
 
