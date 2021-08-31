@@ -12,238 +12,71 @@ map_name: rfly
 box_number: 2
 ---
 
-{% include custom/series_matlab_next.html %}
-# Commercial configuration
+{% include custom/series_rfly_next.html %}
 
-## Slam
-[doc](https://kr.mathworks.com/help/nav/ref/slammapbuilder-app.html)
+1. Installation Method
+1.1. Installation Package Acquisition
+(1). Send Email to service@rflysim.com to inquiry and buy the desired version, you will obtain an installation package and an activation code. (2). Use MATLAB to enter the folder of the installation package, and run “OnekeyScript” to input your activation code as shown below.
 
-- rotations, orientation, and quaternions
-- introduction to simulating IMU measurements
-- estimate positon and orientation of a ground vehicle
-- esitamte robot pose with scan matching
-- plan mobile robot paths using RRT (rapidly exploring random tree)
-- implement simultaneous localization and mapping with algorithm
-- perform slam using 3-d lidar point clouds
+../_images/A-1.jpg
+Fig. 4.1 RflySim registration dialog
 
-[![image](https://user-images.githubusercontent.com/42961200/129006952-8894b07f-de23-4d9f-bf39-c2a3ee532549.png)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
+(3). Then， click the “OK” button, and all tools and apps of RflySim platform will be installed automatically.
 
-[![dynamicmap](./images/MotionPlanningUsingDynamicMapExample_03.gif)](https://kr.mathworks.com/help/nav/ug/motion-planning-in-urban-environments-using-dynamics-occupancy-grid-map.html)
+../_images/AutoInstall.gif
+Fig. 4.2 One-key installation and configuration
 
-![](./pdf/gcs/matlab_flightsim.gif)
+1.2. Product Price List
+You can read our latest document about the advanced features of RflySim platform: https://flyeval.com/doc/Lesson_13_RflySim_Platform_Advanced_Features.pdf
 
-```cpp
-classdef FlightInstrumentsExample < matlab.apps.AppBase
+Please Contact with service@rflysim.com for Price.
 
-    % Properties that correspond to app components
-    properties (Access = public)
-        FlightInstrumentsFlightDataPlaybackUIFigure  matlab.ui.Figure
-        Image                  matlab.ui.control.Image
-        AirspeedIndicator      Aero.ui.control.AirspeedIndicator
-        ArtificialHorizon      Aero.ui.control.ArtificialHorizon
-        Altimeter              Aero.ui.control.Altimeter
-        TurnCoordinator        Aero.ui.control.TurnCoordinator
-        HeadingIndicator       Aero.ui.control.HeadingIndicator
-        ClimbIndicator         Aero.ui.control.ClimbIndicator
-        Time000secSliderLabel  matlab.ui.control.Label
-        Time000secSlider       matlab.ui.control.Slider
-        PiperPA24ComancheFlightDataDisplayLabel  matlab.ui.control.Label
-    end
+Content	PDF
+Lesson 01: Introduction	[pdf]
+Lesson 02: Flight Control Experiments	[pdf]
+Lesson 03: External Control Interface	[pdf]
+Lesson 04: Other Types of Vehicles	[pdf]
+Lesson 05: UE4 3D Scene Development	[pdf]
+Lesson 06: Vision Based Control	[pdf]
+Lesson 07: UAV Swarm Control	[pdf]
+1.3. Effect after Installation
+You will obtain the following shortcuts on Desktop, where Python38Env is a Python environment for vison/OpenCV development, RflySim3D is our latest UE4-based 3D environment simulation program, HITLRun is an one-key script for hardware-in-the-loop simulation of multiple vehicles, and SITLRun is an one-key script for Software-in-the-loop simulation of multiple vehicles.
 
-    
-    properties (Access = public)
-        simdata % Saved flight data [time X Y Z phi theta psi] 
-        animObj % Aero.Animation object
-    end
-    
+../_images/Advanced1.png
+These software tools along with other program installed into the system play important role in accelerate the development efficiency of control systems. Their relationships and using phase are presented in the following figure.
 
-    % Callbacks that handle component events
-    methods (Access = private)
+../_images/Advanced2.png
+Among all apps, the CopterSim is the core software for RlfySim platform. The complete UI of CopterSim after registration is mainly divided into five parts. The box (a) of the figure below is the interface for configuring the multicopter model and flight environment parameters, where readers can select propulsion system components to assemble different types of multicopters for subsequent simulations. Box (b) is the model parameter calculation and database management interface, which is mainly used to calculate the model parameters of the assembled multicopter and store the results into the database for subsequent use with convenient database management functions. Box (c) is the advanced function area, including swarm simulation, UE4 scene selection, and other functions, which will be described in detail later. Box (d) is mainly used to connect the Pixhawk autopilot and control the start and stop of the simulation. Box (e) is used to display the real-time message received from the Pixhawk autopilot as well as the position and attitude information of the simulated vehicle model.
 
-        % Code that executes after component creation
-        function startupFcn(app)
-            
-            % Load saved flight status data
-            savedData = load(fullfile(matlabroot, 'toolbox', 'aero', 'astdemos', 'simdata.mat'), 'simdata');
-            yaw = savedData.simdata(:,7);
-            yaw(yaw<0) = yaw(yaw<0)+2*pi; % unwrap yaw angles
-            savedData.simdata(:,7) = yaw;
-            app.simdata = savedData.simdata;
-            
-            % Create animation object to visualize aircraft flight dynamics corresponding with saved data over time 
-            app.animObj = Aero.Animation;
-            app.animObj.createBody('pa24-250_orange.ac','Ac3d'); % Piper PA-24 Comanche geometry
-            app.animObj.Bodies{1}.TimeseriesSourceType = 'Array6DoF'; % [time X Y Z phi theta psi]
-            app.animObj.Bodies{1}.TimeSeriesSource = app.simdata;
-            app.animObj.Camera.PositionFcn = @staticCameraPosition;
-            app.animObj.Figure.Position = [app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(1)+625 app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(2) app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(3) app.FlightInstrumentsFlightDataPlaybackUIFigure.Position(4)];
-            app.animObj.updateBodies(app.simdata(1,1)); % Initialize animation window at t=0
-            app.animObj.updateCamera(app.simdata(1,1));
-            app.animObj.show();
+../_images/Quan-app1-FigA.2.jpg
+Fig. 4.3 CopterSim interface after registration
 
-        end
+1.4. Custom Multicopter Configuration
+In the first line of the model configuration interface shown in Fig.4.3a, the configurable parameters include basic information such as the total weight, diagonal size, and flight altitude. In the second to the fifth rows of Fig.4.3a, readers can select the propulsion system components or parameters for the multicopter components, such as motors, propellers, ESCs, and batteries. CopterSim offers two options for selecting propulsion components. As shown in Fig.4.4, the first is to assemble a multicopter directly from the propulsion system branded model database which covers many common products on the market.
 
-        % Value changing function: Time000secSlider
-        function Time000secSliderValueChanging(app, event)
-            
-            % Display current time in slider component
-            t = event.Value;
-            app.Time000secSliderLabel.Text = sprintf('Time: %.1f sec', t);           
-            
-            % Find corresponding time data entry
-            k = find(app.simdata(:,1)<=t);
-            k = k(end);
-            
-            app.Altimeter.Altitude = convlength(-app.simdata(k,4), 'm', 'ft');
-            app.HeadingIndicator.Heading = convang(app.simdata(k,7),'rad','deg');
-            app.ArtificialHorizon.Roll = convang(app.simdata(k,5),'rad','deg');
-            app.ArtificialHorizon.Pitch = convang(app.simdata(k,6),'rad','deg');
-            
-            if k>1
-                % Estimate velocity and angular rates
-                Vel = (app.simdata(k,2:4)-app.simdata(k-1,2:4))/(app.simdata(k,1)-app.simdata(k-1,1));
-                rates = (app.simdata(k,5:7)-app.simdata(k-1,5:7))/(app.simdata(k,1)-app.simdata(k-1,1));
-                
-                app.AirspeedIndicator.Airspeed = convvel(sqrt(sum(Vel.^2)),'m/s','kts');
-                app.ClimbIndicator.ClimbRate = convvel(-Vel(3),'m/s','ft/min');
+../_images/Quan-app1-FigA.3.jpg
+Fig. 4.4 Custom model parameter input interface
 
-                % Estimate turn rate and slip behavior 
-                app.TurnCoordinator.Turn = convangvel(rates(1)*sind(30) + rates(3)*cosd(30),'rad/s','deg/s');
-                app.TurnCoordinator.Slip = 1/(2*pi)*convang(atan(rates(3)*sqrt(sum(Vel.^2))/9.81)-app.simdata(k,5),'rad','deg');
-            else
-                % time = 0
-                app.ClimbIndicator.ClimbRate = 0;
-                app.AirspeedIndicator.Airspeed = 0;
-                app.TurnCoordinator.Slip = 0;
-                app.TurnCoordinator.Turn = 0;
-            end
-            
-            %% Update animation window display
-            app.animObj.updateBodies(app.simdata(k,1));
-            app.animObj.updateCamera(app.simdata(k,1));
-            
-        end
+Since the propulsion system product database is difficult to cover all of the products in the world, CopterSim also provides a function to customize the component parameters which enables a more flexible way to configure a multicopter model. As shown in Fig.4.4a, click on the “Custom Design” option at the end of the first line to enter the component custom parameter interface shown in Fig.4.4b. In this interface, readers can customize the detailed parameters of motors (KV value, no-load voltage, internal resistance), ESCs, batteries, and propellers. In theory, by using the “Custom Design” function, readers can simulate any propulsion system components, even products that do not exist on the market.
 
-        % Close request function: 
-        % FlightInstrumentsFlightDataPlaybackUIFigure
-        function FlightInstrumentsFlightDataPlaybackUIFigureCloseRequest(app, event)
-            % Close animation figure with app
-            delete(app.animObj);
-            delete(app);
-           
-        end
-    end
+After a multicopter model is configured, clicking on the “Calculate” button in Fig.4.3b will automatically analyze the feasibility of the inputted multicopter configuration. Unpractical multicopter configurations may cause simulation failures, such as insufficient thrust to take off, ESC and motor overheat due to excessive battery voltage, or the propeller size is too large for the fuselage. As shown in Fig.4.5, after checking the inputted multicopter configuration, CopterSim will prompt a warning dialog if the configuration is unpractical, and the reader needs to re-select a practicable multicopter configuration.
 
-    % Component initialization
-    methods (Access = private)
+../_images/Quan-app1-FigA.4.jpg
+Fig. 4.5 Model configuration feasibility detection warning dialog
 
-        % Create UIFigure and components
-        function createComponents(app)
+For beginners or readers who are not familiar with multicopter design, it is a difficult task to configure a multicopter that can work. So CopterSim also provides a convenient function to directly select vehicle configurations through a prepared model database. As shown in Fig.4.6, in the drop-down list of the “Model Database” item, the reader can select a usable multicopter configuration (or modify parameters based on it) to quickly obtain the multicopter model for simulations.
 
-            % Create FlightInstrumentsFlightDataPlaybackUIFigure and hide until all components are created
-            app.FlightInstrumentsFlightDataPlaybackUIFigure = uifigure('Visible', 'off');
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.AutoResizeChildren = 'off';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Color = [0.2706 0.2706 0.2784];
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Position = [100 100 620 550];
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Name = 'Flight Instruments - Flight Data Playback';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Resize = 'off';
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.CloseRequestFcn = createCallbackFcn(app, @FlightInstrumentsFlightDataPlaybackUIFigureCloseRequest, true);
+../_images/Quan-app1-FigA.5.jpg
+Fig. 4.6 Multicopter model selection from model database
 
-            % Create Image
-            app.Image = uiimage(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Image.Position = [8 -2 606 577];
-            app.Image.ImageSource = 'appdesignerInstrumentPanel.png';
+After configuring a multicopter through the three methods mentioned above, clicking the “Add to Database” button shown in Fig.4.6 will store the new model into the model database for use in the future. Readers can also delete the current model from the database by clicking the “Delete from Database” button shown in Fig.4.6.
 
-            % Create AirspeedIndicator
-            app.AirspeedIndicator = uiaeroairspeed(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.AirspeedIndicator.Limits = [25 250];
-            app.AirspeedIndicator.ScaleColorLimits = [0 60;50 200;200 225;225 250];
-            app.AirspeedIndicator.Position = [22 317 185 185];
+1.5. Set Initial States
+As shown in Fig.4.3c, CopterSim provides an interface to modify the multicopter initial position and altitude. As shown in Fig.4.7, readers can enter the “x” and “y” coordinates (unit: m) of the multicopter and the value of the yaw angle (unit: degree), where the x-direction and y-direction point to the front and right of the multicopter, and the yaw angle is positive when rotating to right side.
 
-            % Create ArtificialHorizon
-            app.ArtificialHorizon = uiaerohorizon(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.ArtificialHorizon.Position = [219 317 185 185];
+../_images/Quan-app1-FigA.6.jpg
+Fig. 4.7 Setting initial simulation position
 
-            % Create Altimeter
-            app.Altimeter = uiaeroaltimeter(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Altimeter.Position = [416 317 185 185];
-
-            % Create TurnCoordinator
-            app.TurnCoordinator = uiaeroturn(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.TurnCoordinator.Position = [22 70 185 185];
-
-            % Create HeadingIndicator
-            app.HeadingIndicator = uiaeroheading(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.HeadingIndicator.Position = [219 70 185 185];
-
-            % Create ClimbIndicator
-            app.ClimbIndicator = uiaeroclimb(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.ClimbIndicator.MaximumRate = 8000;
-            app.ClimbIndicator.Position = [416 70 185 185];
-
-            % Create Time000secSliderLabel
-            app.Time000secSliderLabel = uilabel(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Time000secSliderLabel.HorizontalAlignment = 'right';
-            app.Time000secSliderLabel.FontSize = 11.5;
-            app.Time000secSliderLabel.FontColor = [1 1 1];
-            app.Time000secSliderLabel.Position = [267 3 80 22];
-            app.Time000secSliderLabel.Text = 'Time: 00.0 sec';
-
-            % Create Time000secSlider
-            app.Time000secSlider = uislider(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.Time000secSlider.Limits = [0 49.833333333333];
-            app.Time000secSlider.MajorTicks = [0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 49.833333333333];
-            app.Time000secSlider.MajorTickLabels = {'0', '2', '4', '6', '8', '10', '12', '14', '16', '18', '20', '22', '24', '26', '28', '30', '32', '34', '36', '38', '40', '42', '44', '46', '48', '50'};
-            app.Time000secSlider.ValueChangingFcn = createCallbackFcn(app, @Time000secSliderValueChanging, true);
-            app.Time000secSlider.MinorTicks = [];
-            app.Time000secSlider.FontSize = 11.5;
-            app.Time000secSlider.FontColor = [1 1 1];
-            app.Time000secSlider.Position = [50 55 520 3];
-
-            % Create PiperPA24ComancheFlightDataDisplayLabel
-            app.PiperPA24ComancheFlightDataDisplayLabel = uilabel(app.FlightInstrumentsFlightDataPlaybackUIFigure);
-            app.PiperPA24ComancheFlightDataDisplayLabel.BackgroundColor = [0.8 0.8 0.8];
-            app.PiperPA24ComancheFlightDataDisplayLabel.HorizontalAlignment = 'center';
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontName = 'Courier New';
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontSize = 14;
-            app.PiperPA24ComancheFlightDataDisplayLabel.FontWeight = 'bold';
-            app.PiperPA24ComancheFlightDataDisplayLabel.Position = [141 515 347 22];
-            app.PiperPA24ComancheFlightDataDisplayLabel.Text = 'Piper PA-24 Comanche Flight Data Display';
-
-            % Show the figure after all components are created
-            app.FlightInstrumentsFlightDataPlaybackUIFigure.Visible = 'on';
-        end
-    end
-
-    % App creation and deletion
-    methods (Access = public)
-
-        % Construct app
-        function app = FlightInstrumentsExample
-
-            % Create UIFigure and components
-            createComponents(app)
-
-            % Register the app with App Designer
-            registerApp(app, app.FlightInstrumentsFlightDataPlaybackUIFigure)
-
-            % Execute the startup function
-            runStartupFcn(app, @startupFcn)
-
-            if nargout == 0
-                clear app
-            end
-        end
-
-        % Code that executes before app deletion
-        function delete(app)
-
-            % Delete UIFigure when app is deleted
-            delete(app.FlightInstrumentsFlightDataPlaybackUIFigure)
-        end
-    end
-end
-```
 {% include tony.html content="matlab tutorials and gcs.uno are the main source of learning for now" %}
 
-{% include custom/series_matlab_next.html %}
+{% include custom/series_rfly_next.html %}
