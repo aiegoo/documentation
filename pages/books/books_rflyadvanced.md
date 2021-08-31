@@ -60,6 +60,26 @@ Content	PDF
 | Lesson10: Exp.6 Set-Point Controller Design.            :download:[pdf](pdf/gcs/rfly_code/Lesson_10_Set-point_Controller_Design_Experiment.pdf)   |:download:`[e6] <http://flyeval.cn/res/e6.zip>`
 | Lesson11: Exp.7 Semi-autonomous Control Mode Design.    :download:[pdf](pdf/gcs/rfly_code/Lesson_11_Semi-autonomous_Control_Mode_Design_Experiment.pdf) |:download:`[e7] <http://flyeval.cn/res/e7.zip>`
 | Lesson12: Exp.8 Failsafe Logic Design.                  :download:[pdf](pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf)     |:download:`[e8] <http://flyeval.cn/res/e8.zip>`
+
+> course contents overview [source_code](https://github.com/aiegoo/RflyExpCode/edit/master/README.md)
+# RflyExpCode
+This is the instructional package for 'Multicopter Design and Control Practice'. Please see https://rflysim.com for detailed information.<br>
+You should download and install the RflySim Basic package to use the PPTs and codes, the download link is https://rflysim.com/download<br>
+
+# Introduction
+The model in "e0" is mainly used for the introduction of the experimental platform, corresponding to the relevant  content in Chapters 3 and 4 of the book.<br>
+The last 8 chapters of the book correspond to 8 experiments, of which Propulsion System Design Experiment has no relevant instructional package. Experiments 2 to 8 correspond to the contents of Chapters 6 to 12, and the corresponding files are e2 to e8.<br>
+There are three sub-files in each folder, which correspond to the basic experiment, analysis experiment and design experiment in each experiment. Analysis experiment of chapter 2 has no source file package--"e2/e2.2",becasuse  it mainly focus on theoretical calculation and analysis.<br>
+
+# Details 
+The comparison between the instructional package and each experiment is as follows:<br>
+e2:Dynamic Modeling Experiment;<br>
+e3:Sensor Calibration Experiment;<br>
+e4:State Estimation and Filter Design Experiment;<br>
+e5:Attitude Controller Design Experiment;<br>
+e6:Set-point Controller Design Experiment;<br>
+e7:Semi-autonomous Control Model Design Experiment;<br>
+e8:Failsafe Logic Design Experiment.<br>
 ### 1.3. Effect after Installation
 You will obtain the following shortcuts on Desktop, where Python38Env is a Python environment for vison/OpenCV development, RflySim3D is our latest UE4-based 3D environment simulation program, HITLRun is an one-key script for hardware-in-the-loop simulation of multiple vehicles, and SITLRun is an one-key script for Software-in-the-loop simulation of multiple vehicles.
 
