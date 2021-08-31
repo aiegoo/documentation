@@ -253,7 +253,7 @@ div#toc ul {
     border-radius: 5px;
     max-width: 300px;
     color: rgba(246, 113, 3, 0.856);
-    overflow-y: auto;
+    /* overflow-y: auto; */
     line-height: 58%;
 }
 
