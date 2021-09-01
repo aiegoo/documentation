@@ -52,14 +52,14 @@ Content	PDF
 |---
 | Lesson01: Course Introduction. |  :download:[pdf](pdf/gcs/rfly_code/Lesson_01_Introduction.pdf) | *
 | Lesson02: Experimental Platform Configuration.  | :download:`[pdf](pdf/gcs/rfly_code/Lesson_02_Experimental_Platform_Configuration.pdf) | *
-| Lesson03: Experimental Platform Usage.         |  :download:[pdf](pdf/gcs/rfly_code/Lesson_03_Experimental_Platform_Usage.pdf)         |  :download:[e0] <https://flyeval.com/res/e0.zip> 
+| Lesson03: Experimental Platform Usage.         |  :download:[pdf](pdf/gcs/rfly_code/Lesson_03_Experimental_Platform_Usage.pdf)         |  :download:[e0](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/) 
 | Lesson04: Experimental Process.          |       :download:[pdf](pdf/gcs/rfly_code/Lesson_04_Experimental_Process.pdf)  | *
-| Lesson05: Exp.1 Propulsion System Design.      |    :download:[pdf](pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf)    | :download:[e1] <https://flyeval.com/res/e1.zip>
-| Lesson07: Exp.3 Sensor Calibration.             | :download:[pdf](pdf/gcs/rfly_code/Lesson_07_Sensor_Calibration_Experiment.pdf)     | :download:[e3] <http://flyeval.cn/res/e3.zip>
-| Lesson08: Exp.4 State Estimation and Filter Design.   |  :download:[pdf](pdf/gcs/rfly_code/Lesson_08_State_Estimation_and_Filter_Design_Experiment.pdf) |:download:[e4] <http://flyeval.cn/res/e4.zip>
-| Lesson09: Exp.5 Attitude Controller Design.         |    :download:[pdf](pdf/gcs/rfly_code/Lesson_09_Attitude_Controller_Design_Experiment.pdf)  |:download:[e5] <http://flyeval.cn/res/e5.zip>
-| Lesson10: Exp.6 Set-Point Controller Design.        |    :download:[pdf](pdf/gcs/rfly_code/Lesson_10_Set-point_Controller_Design_Experiment.pdf)   |:download:[e6] <http://flyeval.cn/res/e6.zip>
-| Lesson11: Exp.7 Semi-autonomous Control Mode Design. |   :download:[pdf](pdf/gcs/rfly_code/Lesson_11_Semi-autonomous_Control_Mode_Design_Experiment.pdf) |:download:[e7] <http://flyeval.cn/res/e7.zip>
+| Lesson05: Exp.1 Propulsion System Design.      |    :download:[pdf](pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf)    | :download:[e1](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+| Lesson07: Exp.3 Sensor Calibration.             | :download:[pdf](pdf/gcs/rfly_code/Lesson_07_Sensor_Calibration_Experiment.pdf)     | :download:[e3](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+| Lesson08: Exp.4 State Estimation and Filter Design.   |  :download:[pdf](pdf/gcs/rfly_code/Lesson_08_State_Estimation_and_Filter_Design_Experiment.pdf) |:download:[e4](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+| Lesson09: Exp.5 Attitude Controller Design.         |    :download:[pdf](pdf/gcs/rfly_code/Lesson_09_Attitude_Controller_Design_Experiment.pdf)  |:download:[e5](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+| Lesson10: Exp.6 Set-Point Controller Design.        |    :download:[pdf](pdf/gcs/rfly_code/Lesson_10_Set-point_Controller_Design_Experiment.pdf)   |:download:[e6](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+| Lesson11: Exp.7 Semi-autonomous Control Mode Design. |   :download:[pdf](pdf/gcs/rfly_code/Lesson_11_Semi-autonomous_Control_Mode_Design_Experiment.pdf) |:download:[e7](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
 | Lesson12: Exp.8 Failsafe Logic Design.             |     :download:[pdf](pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf)     |:download:[e8](pdf/gcs/rfly_code/code/e8)
 |===
 |  | | *
