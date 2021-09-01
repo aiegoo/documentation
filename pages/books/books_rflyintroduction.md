@@ -80,7 +80,10 @@ The commercial-level RflySim focuses on reliable performance, using real-time si
 
 ![](images/px4psp/0-2.jpg)
 
-
+=============================
+## 2. Getting Started
+=============================
+First, go to Download and Support for software，then go to Configuration to install them. Thirdly, go to Usage to learn how to use the platform and finish two demo examples. Finally, go to Course to finish all experiments one by one. So far, Advanced Function is not free, only open to paying users.
 Features
 -------------------------------------
 
@@ -235,7 +238,7 @@ Show Results
 
 ### Getting Started
 =============================
-Getting Started
+## 2 Getting Started
 =============================
 
 First, go to Download and Support for software，then go to Configuration to install them. Thirdly, go to [Usage](https://rflysim.com/en/3_Using/Introduction.html) to learn how to use the platform and finish two demo [examples](https://rflysim.com/en/3_Using/Examples.html). Finally, go to Course to finish all experiments one by one. So far, Advanced Function is not free, only open to paying users.
