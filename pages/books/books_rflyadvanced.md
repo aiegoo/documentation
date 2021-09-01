@@ -60,7 +60,7 @@ Content	PDF
 | Lesson09: Exp.5 Attitude Controller Design.         |    :download:[pdf](pdf/gcs/rfly_code/Lesson_09_Attitude_Controller_Design_Experiment.pdf)  |:download:[e5](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
 | Lesson10: Exp.6 Set-Point Controller Design.        |    :download:[pdf](pdf/gcs/rfly_code/Lesson_10_Set-point_Controller_Design_Experiment.pdf)   |:download:[e6](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
 | Lesson11: Exp.7 Semi-autonomous Control Mode Design. |   :download:[pdf](pdf/gcs/rfly_code/Lesson_11_Semi-autonomous_Control_Mode_Design_Experiment.pdf) |:download:[e7](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
-| Lesson12: Exp.8 Failsafe Logic Design.             |     :download:[pdf](pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf)     |:download:[e8](/pdf/gcs/rfly_code/code/e8)
+| Lesson12: Exp.8 Failsafe Logic Design.             |     :download:[pdf](pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf)     |:download:[e8](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
 |===
 |  | | *
 
