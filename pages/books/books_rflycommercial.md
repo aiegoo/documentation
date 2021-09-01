@@ -16,6 +16,6 @@ box_number: 2
 
 # Commercial devwork
 
-{% include tony.html content="matlab tutorials and gcs.uno are the main source of learning for now" %}
+{% include tony.html content="This page is blank for now. What I am projecting is in relevance to gcs.uno which is web-based groundcontrol station" %}
 
 {% include custom/series_rfly_next.html %}
