@@ -36,35 +36,6 @@ You can read our latest document about the advanced features of RflySim platform
 
 Please Contact with service@rflysim.com for Price.
 
-## PDF base-code 
-
-|---
-| lesson | pdf links | code links
-| :- | :- | :-
-| Lesson 01: | Introduction	[pdf](pdf/gcs/rfly_code/|RflySim_Lesson_01_Introduction.pdf) | *
-| Lesson 02: | Flight Control Experiments	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_02_Flight_Control_Experiments.pdf) | *
-| Lesson 03: | External Control Interface	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_03_External_Control_Interface.pdf) | *
-| Lesson 04: | Other Types of Vehicles	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_04_Other_Types_of_Vehicles.pdf) | *
-| Lesson 05: | UE4 3D Scene Development	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_05_UE4_3D_Scene_Development.pdf) | *
-| Lesson 06: | Vision Based Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_06_Vision_Based_Control.pdf) | *
-| Lesson 07: | UAV Swarm Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_07_UAV_Swarm_Control.pdf) | *
-| | | *
-|---
-| Lesson01: Course Introduction. |  :download:[pdf](pdf/gcs/rfly_code/Lesson_01_Introduction.pdf) | *
-| Lesson02: Experimental Platform Configuration.  | :download:`[pdf](pdf/gcs/rfly_code/Lesson_02_Experimental_Platform_Configuration.pdf) | *
-| Lesson03: Experimental Platform Usage.         |  :download:[pdf](pdf/gcs/rfly_code/Lesson_03_Experimental_Platform_Usage.pdf)         |  :download:[e0](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/) 
-| Lesson04: Experimental Process.          |       :download:[pdf](pdf/gcs/rfly_code/Lesson_04_Experimental_Process.pdf)  | *
-| Lesson05: Exp.1 Propulsion System Design.      |    :download:[pdf](pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf)    | :download:[e1](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
-| Lesson07: Exp.3 Sensor Calibration.             | :download:[pdf](pdf/gcs/rfly_code/Lesson_07_Sensor_Calibration_Experiment.pdf)     | :download:[e3](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
-| Lesson08: Exp.4 State Estimation and Filter Design.   |  :download:[pdf](pdf/gcs/rfly_code/Lesson_08_State_Estimation_and_Filter_Design_Experiment.pdf) |:download:[e4](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
-| Lesson09: Exp.5 Attitude Controller Design.         |    :download:[pdf](pdf/gcs/rfly_code/Lesson_09_Attitude_Controller_Design_Experiment.pdf)  |:download:[e5](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
-| Lesson10: Exp.6 Set-Point Controller Design.        |    :download:[pdf](pdf/gcs/rfly_code/Lesson_10_Set-point_Controller_Design_Experiment.pdf)   |:download:[e6](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
-| Lesson11: Exp.7 Semi-autonomous Control Mode Design. |   :download:[pdf](pdf/gcs/rfly_code/Lesson_11_Semi-autonomous_Control_Mode_Design_Experiment.pdf) |:download:[e7](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
-| Lesson12: Exp.8 Failsafe Logic Design.             |     :download:[pdf](pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf)     |:download:[e8](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
-|===
-|  | | *
-
-> course contents overview [source_code](https://github.com/aiegoo/RflyExpCode)
 # RflyExpCode
 This is the instructional package for 'Multicopter Design and Control Practice'. Please see https://rflysim.com for detailed information.<br>
 You should download and install the RflySim Basic package to use the PPTs and codes, the download link is https://rflysim.com/download<br>
@@ -375,6 +346,38 @@ RflySim provide a unified solution for development, test and assessment of unman
 
 6. More experimental courses will be released on our website
 Notes
+
+
+## PDF base-code 
+
+|---
+| lesson | pdf links | code links
+| :- | :- | :-
+| Lesson 01: | Introduction	[pdf](pdf/gcs/rfly_code/|RflySim_Lesson_01_Introduction.pdf) | *
+| Lesson 02: | Flight Control Experiments	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_02_Flight_Control_Experiments.pdf) | *
+| Lesson 03: | External Control Interface	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_03_External_Control_Interface.pdf) | *
+| Lesson 04: | Other Types of Vehicles	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_04_Other_Types_of_Vehicles.pdf) | *
+| Lesson 05: | UE4 3D Scene Development	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_05_UE4_3D_Scene_Development.pdf) | *
+| Lesson 06: | Vision Based Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_06_Vision_Based_Control.pdf) | *
+| Lesson 07: | UAV Swarm Control	[pdf](pdf/gcs/rfly_code/RflySim_Lesson_07_UAV_Swarm_Control.pdf) | *
+| | | *
+|---
+| Lesson01: Course Introduction. |  :download:[pdf](pdf/gcs/rfly_code/Lesson_01_Introduction.pdf) | *
+| Lesson02: Experimental Platform Configuration.  | :download:`[pdf](pdf/gcs/rfly_code/Lesson_02_Experimental_Platform_Configuration.pdf) | *
+| Lesson03: Experimental Platform Usage.         |  :download:[pdf](pdf/gcs/rfly_code/Lesson_03_Experimental_Platform_Usage.pdf)         |  :download:[e0](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/) 
+| Lesson04: Experimental Process.          |       :download:[pdf](pdf/gcs/rfly_code/Lesson_04_Experimental_Process.pdf)  | *
+| Lesson05: Exp.1 Propulsion System Design.      |    :download:[pdf](pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf)    | :download:[e1](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+| Lesson07: Exp.3 Sensor Calibration.             | :download:[pdf](pdf/gcs/rfly_code/Lesson_07_Sensor_Calibration_Experiment.pdf)     | :download:[e3](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+| Lesson08: Exp.4 State Estimation and Filter Design.   |  :download:[pdf](pdf/gcs/rfly_code/Lesson_08_State_Estimation_and_Filter_Design_Experiment.pdf) |:download:[e4](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+| Lesson09: Exp.5 Attitude Controller Design.         |    :download:[pdf](pdf/gcs/rfly_code/Lesson_09_Attitude_Controller_Design_Experiment.pdf)  |:download:[e5](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+| Lesson10: Exp.6 Set-Point Controller Design.        |    :download:[pdf](pdf/gcs/rfly_code/Lesson_10_Set-point_Controller_Design_Experiment.pdf)   |:download:[e6](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+| Lesson11: Exp.7 Semi-autonomous Control Mode Design. |   :download:[pdf](pdf/gcs/rfly_code/Lesson_11_Semi-autonomous_Control_Mode_Design_Experiment.pdf) |:download:[e7](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+| Lesson12: Exp.8 Failsafe Logic Design.             |     :download:[pdf](pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf)     |:download:[e8](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/code/)
+|===
+|  | | *
+
+> course contents overview [source_code](https://github.com/aiegoo/RflyExpCode)
+
 
 [1]	These configurations correspond to the multicopter models supported by the PX4 autopilot. Readers can refer to the official website: http://dev.px4.io/master/en/airframes/airframe_reference.html.
 
