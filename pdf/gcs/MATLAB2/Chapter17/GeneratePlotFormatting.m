@@ -1,0 +1,17 @@
+Bar1 = bar([5, 15, 8, 2, 9]);
+TBox1 = annotation('textbox', [.13, .825, .14, .075], 'String', 'Light', 'FontName', 'Arial Narrow', 'FontSize', 16, 'FontWeight', 'light', 'BackgroundColor', [1, 1, 0]);
+TBox2 = annotation('textbox', [.29, .825, .14, .075], 'String', 'Normal', 'FontName', 'Arial', 'FontSize', 16, 'FontWeight', 'normal', 'BackgroundColor', [1, 1, 0]);
+TBox3 = annotation('textbox', [.45, .825, .14, .075], 'String', 'Demi', 'FontName', 'Arial', 'FontSize', 16, 'FontWeight', 'bold', 'BackgroundColor', [1, 1, 0]);
+TBox4 = annotation('textbox', [.61, .825, .14, .075], 'String', 'Bold', 'FontName', 'Arial Black', 'FontSize', 16, 'FontWeight', 'normal', 'BackgroundColor', [1, 1, 0]);
+TBox5 = annotation('textbox', [.13, .72, .15, .075], 'String', 'Monospaced', 'FontName', 'CourierNew', 'BackgroundColor', [0, 1, 1]);
+TBox6 = annotation('textbox', [.13, .61, .14, .075], 'String', 'Normal', 'FontSize', 16, 'FontAngle', 'normal', 'BackgroundColor', [1, 0, 1]);
+TBox7 = annotation('textbox', [.29, .61, .14, .075], 'String', 'Italic', 'FontSize', 16, 'FontAngle', 'italic', 'BackgroundColor', [1, 0, 1]);
+TBox8 = annotation('textbox', [.45, .61, .15, .075], 'String', 'Oblique', 'FontSize', 16, 'FontAngle', 'oblique', 'BackgroundColor', [1, 0, 1]);
+TBox9 = annotation('textbox', [.13, .5, .175, .075], 'String', '\underline{Underline}', 'FontSize', 16, 'BackgroundColor', [.5, 1, .5], 'Interpreter', 'latex');
+TBox10 = annotation('textbox', [.13, .39, .51, .085], 'String', '\alpha\beta\gamma\delta\epsilon\zeta\eta\theta\iota\kappa\lambda\mu\nu\xi\pi\rho\sigma\tau\upsilon\phi\chi\psi\omega', 'FontSize', 16, 'BackgroundColor', [.5, .5, 1]);
+TBox11 = annotation('textbox', [.70, .39, .15, .075], 'String', 'Normal^{Super}_{Sub}', 'BackgroundColor', [.5, .5, 1]);
+TBox12 = annotation('textbox', [.13, .28, .15, .085], 'String', '$\displaystyle\frac{x-2y}{x+y}$', 'BackgroundColor', [1, .5, .5], 'Interpreter', 'latex');
+TBox13 = annotation('textbox', [.29, .28, .15, .085], 'String', '$\sqrt{f}$', 'BackgroundColor', [1, .5, .5], 'Interpreter', 'latex');
+TBox14 = annotation('textbox', [.45, .25, .15, .115], 'String', '$$\sum_{i=1}^{2n}{|k_i-k_j|}$$', 'BackgroundColor', [1, .5, .5], 'Interpreter', 'latex');
+TBox15 = annotation('textbox', [.61, .25, .22, .115], 'String', '$$\int_{y1(x)}^{y2(x)}{f(x,y)}\d{dx}\d{dy}$$', 'BackgroundColor', [1, .5, .5], 'Interpreter', 'latex');
+TBox16 = annotation('textbox', [.13, .17, .15, .085], 'String', '$\displaystyle\frac{d^2u}{dx^2}$', 'BackgroundColor', [1, .5, .5], 'Interpreter', 'latex');
