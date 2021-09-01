@@ -3,8 +3,7 @@ title: rflysim overview
 tags: [books, getting_started]
 last_updated: August 30, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
-summary: "RflySim is an ecosystem or a toolchain mainly for unmanned systems’ control and safety testing following Model-Based Design (MBD). MATLAB/Simulink, supporting the full design phase of MBD, is chosen as the core programming platform for control/vision/swarm algorithms. After successful implementation of Udacity projects, I find Matlab is solution for all as python is supported for top-level vision/swarm control. Besides MATLAB/Simulink and Python, the RflySim ecosystem has many open-source software and tools
-."
+summary: "RflySim is an ecosystem or a toolchain mainly for unmanned systems’ control and safety testing following Model-Based Design (MBD). MATLAB/Simulink, supporting the full design phase of MBD, is chosen as the core programming platform for control/vision/swarm algorithms. After successful implementation of Udacity projects, I find Matlab is solution for all as python is supported for top-level vision/swarm control. Besides MATLAB/Simulink and Python, the RflySim ecosystem has many open-source software and tools."
 sidebar: mydoc_sidebar
 permalink: books_rflyintroduction.html
 folder: books
@@ -17,7 +16,6 @@ weight: 3
 
 {% include custom/series_rfly_next.html %}
 
-=============================
 ## What is RflySim
 =============================
 
