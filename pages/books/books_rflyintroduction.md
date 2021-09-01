@@ -46,7 +46,7 @@ So far, RflySim has two types, namely **education-level RflySim** and
 * The **commercial-level RflySim** focuses on reliable performance, using real-time simulator with FPGA to run the models, sensors chips, and high-speed communication interfaces with the control board.
 
 
-<div align="center">
+<!-- <div align="center">
       <a href="https://youtu.be/RTkOHJ0NT0k">
      <img 
       src="https://user-images.githubusercontent.com/42961200/131620900-e23bcc1e-6a60-427f-9df3-4689ce218c88.png" 
@@ -54,7 +54,7 @@ So far, RflySim has two types, namely **education-level RflySim** and
       style="width:100%;">
       </a>
     </div>
-    
+     -->
 [![rflysim](https://user-images.githubusercontent.com/42961200/131620900-e23bcc1e-6a60-427f-9df3-4689ce218c88.png)](https://youtu.be/RTkOHJ0NT0k)
 
 .. RflySim.mp4
