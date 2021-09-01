@@ -64,7 +64,7 @@ Content	PDF
 |===
 |  | | *
 
-> course contents overview [source_code](https://github.com/aiegoo/RflyExpCode/edit/master/README.md)
+> course contents overview [source_code](https://github.com/aiegoo/RflyExpCode)
 # RflyExpCode
 This is the instructional package for 'Multicopter Design and Control Practice'. Please see https://rflysim.com for detailed information.<br>
 You should download and install the RflySim Basic package to use the PPTs and codes, the download link is https://rflysim.com/download<br>
