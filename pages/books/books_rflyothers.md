@@ -14,8 +14,12 @@ box_number: 3
 
 {% include custom/series_matlab_next.html %}
 ## tutorials and refernce guide
-
-## 1. Reference
+### 1. my reading
+|---
+| ls | desc
+| :-: | -
+[matlab_dummies](pdf/matlab-dummies.pdf) | 
+### 2. Reference
 [1] Quan Quan, Xunhua Dai, Shuai Wang. Multicopter Design and Control Practice: A Series Experiments Based on MATLAB and Pixhawk. Springer, 2020
 
 [2] Quan Quan, Introduction to Multicopter Design and Control. Springer, 2017

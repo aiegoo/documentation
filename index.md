@@ -22,7 +22,7 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 - 🌱 Currently learning the art of life-long learning
 - 🤔 I’m looking for help on figuring out how to help
 - 💬 Ask me about how can I help, else internet has you covered ;)
-- ⚡ Fun fact: 2021> I ran my first full lap around my neighborhood lake in 2 years
+- ⚡ Fun fact: 2021> I ran my first full lap around my neighborhood lake in 2 years; now I enjoy this fun everyday.
 
 ## 📫 Feel free to reach out
 <table align="center">
@@ -70,7 +70,7 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 
 </div>
 
-{% include note.html content="Wow, thanks for reading. The theme author has a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='http:159.65.8.38:10055'>to give me a 5 star rating</a>."  %}
+{% include note.html content="Wow, thanks for reading. The theme author has a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='http:159.65.8.38:10055'>to give me a 5 star rating. My learning motto: Expose and immerse; my coding motto: Divide and conquer!</a>."  %}
 
 ### I belive in time-management
 
