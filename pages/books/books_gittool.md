@@ -137,7 +137,11 @@ ruby -rubygems -e 'require "jekyll-import";
           "no_fetch_images" => false,
           "assets_folder" => "assets"
      })'
+
 ```
+
+- If you want to keep this metadata, then you might consider another import option like Exitwp. Exitwp is a Python tool that provides a much higher level of fidelity between the original Wordpress site and the final Jekyll site
+
 ## Android git data API
 
 ## Coffescript, hubot activity API
