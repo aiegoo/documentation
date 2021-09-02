@@ -9,7 +9,9 @@ permalink: mydoc_lightup.html
 folder: mydoc
 ---
 
-## Django with markdown and blogs
+## Django with markdown and blogs5
+
+![](./images/webdev/olora-pawan.png)
 
 [latest_codes](https://github.com/aiegoo/lightup-sandbox)
 
