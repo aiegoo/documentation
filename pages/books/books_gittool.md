@@ -108,6 +108,36 @@ for line in stdout.split('\n')[:-1]:
 
 ## Ruby jekyll
 
+```bash
+export USERNAME=aie***
+jekyll new $USERNAME.github.io
+cd $USERNAME.github.io
+git init
+git commit -m "Initial checkin" -a
+hub create # You'll need to login here...
+sleep $((10*60)) && open $USERNAME.github.io
+```
+
+```ruby
+ruby -rubygems -e 'require "jekyll-import";
+     JekyllImport::Importers::WordPress.run({
+          "dbname"
+          => "wordpress",
+          "user" => "hastie",
+          "password" => "lanyon",
+          "host" => "localhost",
+          "status" => ["publish"]
+     })'
+```
+
+```ruby
+ruby -rubygems -e 'require "jekyll-import";
+     JekyllImport::Importers::WordpressDotCom.run({
+          "source" => "wordpress.xml",
+          "no_fetch_images" => false,
+          "assets_folder" => "assets"
+     })'
+```
 ## Android git data API
 
 ## Coffescript, hubot activity API
