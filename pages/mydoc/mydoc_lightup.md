@@ -16,7 +16,7 @@ folder: mydoc
 | - 
 | ![](./images/webdev/olora-pawan.png)
 | ![image](https://user-images.githubusercontent.com/42961200/131829491-63133d4d-a50d-41c2-85ce-7efb3feacf60.png)
-
+| ![image](https://user-images.githubusercontent.com/42961200/131830460-012478bd-490b-4b7f-a182-fff2e3e804bc.png)
 |===
 |
 
