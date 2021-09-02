@@ -17,8 +17,9 @@ folder: mydoc
 | ![](./images/webdev/olora-pawan.png)
 | ![image](https://user-images.githubusercontent.com/42961200/131829491-63133d4d-a50d-41c2-85ce-7efb3feacf60.png)
 | ![image](https://user-images.githubusercontent.com/42961200/131830460-012478bd-490b-4b7f-a182-fff2e3e804bc.png)
+| ![image](https://user-images.githubusercontent.com/42961200/131926024-bc5ab182-fead-4968-a73b-c25710dd8b2f.png)
 |===
-|
+| blog is a separate site linked to lightup.co.kr, which is not accessible from this server
 
 [latest_codes](https://github.com/aiegoo/lightup-sandbox)
 
