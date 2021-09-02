@@ -20,7 +20,7 @@ toc: false
 |year |recap |year| recap
 | :-: | :-: | :-: | :-:
 | 2018 |  | 2019 | 
-| ![image](https://user-images.githubusercontent.com/42961200/131799609-7fa4be2d-bd50-4be3-871e-97b3cb11e762.png) |  | ![image](https://user-images.githubusercontent.com/42961200/ 131799900-207674d2-512e-46d7-911a-994546e43327.png) 
+| ![image](https://user-images.githubusercontent.com/42961200/131799609-7fa4be2d-bd50-4be3-871e-97b3cb11e762.png) |  | ![image](https://user-images.githubusercontent.com/42961200/131799900-207674d2-512e-46d7-911a-994546e43327.png)  |
 | 2020 | | 2021 | 
 |![image](https://user-images.githubusercontent.com/42961200/131800013-de3ab1cb-8122-4850-9519-b599141653eb.png) | | ![image](https://user-images.githubusercontent.com/42961200/131800086-91effdee-cdbb-4e70-b30b-904425632c22.png)  |
 |===
