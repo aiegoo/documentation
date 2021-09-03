@@ -1463,3 +1463,9 @@ h4.panel-title {
  .gist .gist-meta::after {
      content: url(https://aiegoo.github.io/portfolio);
  }
+
+/* modal-dialog viewport  */
+
+.modal-dialog {
+    top: 40vh;
+}
