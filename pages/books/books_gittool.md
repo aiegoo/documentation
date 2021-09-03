@@ -64,12 +64,83 @@ The important thing to note about hypermedia APIs is that payloads contain metaâ
 ```
 
 ## Wiki with gollum
+[gollum_repo](https://github.com/aiegoo/gollum)
 
+```
+nohup gollum . &
+
+nohup ruby image.rb &
+```
+gollum is self-managed wiki
 ## Python search API
+* Agithub https://github.com/jpaugh/agithub
+* WxPython http://www.wxpython.org
+* PyInstaller http://pythonhosted.org/PyInstaller
 
+```python
+#!/usr/bin/env python
+import os, subprocess
+import wx
+from agithub import Github
+class SearchFrame(wx.Frame):
+     pass
+if __name__ == '__main__':
+     app = wx.App()
+     SearchFrame(None)
+     app.MainLoop()
+```
+
+```python
+GITHUB_HOST = 'github.com'
+def git_credentials():
+os.environ['GIT_ASKPASS'] = 'true'
+p = subprocess.Popen(['git', 'credential', 'fill'],
+          stdout=subprocess.PIPE,
+          stdin=subprocess.PIPE)
+stdout,stderr = p.communicate('host={}\n\n'.format(GITHUB_HOST))
+creds = {}
+for line in stdout.split('\n')[:-1]:
+          k,v = line.split('=')
+          creds[k] = v
+     return creds
+```
 ## .Net status API
 
 ## Ruby jekyll
+
+```bash
+export USERNAME=aie***
+jekyll new $USERNAME.github.io
+cd $USERNAME.github.io
+git init
+git commit -m "Initial checkin" -a
+hub create # You'll need to login here...
+sleep $((10*60)) && open $USERNAME.github.io
+```
+
+```ruby
+ruby -rubygems -e 'require "jekyll-import";
+     JekyllImport::Importers::WordPress.run({
+          "dbname"
+          => "wordpress",
+          "user" => "hastie",
+          "password" => "lanyon",
+          "host" => "localhost",
+          "status" => ["publish"]
+     })'
+```
+
+```ruby
+ruby -rubygems -e 'require "jekyll-import";
+     JekyllImport::Importers::WordpressDotCom.run({
+          "source" => "wordpress.xml",
+          "no_fetch_images" => false,
+          "assets_folder" => "assets"
+     })'
+
+```
+
+- If you want to keep this metadata, then you might consider another import option like Exitwp. Exitwp is a Python tool that provides a much higher level of fidelity between the original Wordpress site and the final Jekyll site
 
 ## Android git data API
 
