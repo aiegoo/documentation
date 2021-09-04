@@ -12,6 +12,8 @@ folder: mydoc
 ---
 
 ## [server](http://159.65.8.44:51000/login?user=madison)
+![image](https://user-images.githubusercontent.com/42961200/132108199-0ebbdbdc-c615-4ee3-9565-47e72832a350.png)
+
 ### users
 root (by~), pubclass, madison(va~)
 
