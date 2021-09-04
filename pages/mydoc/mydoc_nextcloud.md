@@ -17,3 +17,4 @@ root (by~), pubclass, madison(va~)
 
 ## Different ways to access my nextcloud files
 [blog](https://ownyourbits.com/2017/04/18/different-ways-to-access-your-nextcloud-files/)
+[docs](https://pant.github.io/nextcloudpi-test-docs/en_How-to-access-and-activate-NextCloudPi.html)
