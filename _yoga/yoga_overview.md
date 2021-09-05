@@ -3,7 +3,7 @@ layout: page
 name: four types of yoga
 permalink: yoga_overview.html
 category: "overview"
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
 complex_map: true
 map_name: usermap_yoga
 box_number: 1
