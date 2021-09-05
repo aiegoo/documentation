@@ -13,7 +13,7 @@ layout: page
 ---
 
 ## yoga books
-{% assign yoga = site.yoga %}
+{% assign yoga = site.yoga | sort:"order_number" %}
 {% for yoga in yoga %}
 <h2>
      <a href="{{ yoga.url | prepend: site.baseurl }}">
