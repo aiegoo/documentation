@@ -76,6 +76,17 @@ collections:
     output: true
     people: true
     permalink: /yoga/
+    order:
+      - yoga_overview.md
+      - hathaoverview.md
+      - bikramoverview.md
+      - aerialoverview.md      
+      - hatha.md
+      - aerial.md
+      - vinyasaflow.md
+      - anatomy_vinyasa.md
+      - bikram.md      
+      - ashtanga.md
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
