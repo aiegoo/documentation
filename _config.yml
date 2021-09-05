@@ -149,7 +149,7 @@ defaults:
       author_profile: false
       share: true
       comments: false
-      sidebar: false
+      sidebar: other
       topnav: topnav
       toc: true
       show_excerpts: true
