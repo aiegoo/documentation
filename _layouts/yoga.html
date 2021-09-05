@@ -107,7 +107,7 @@ summary: "my life-long passion"
               {{ yoga.name }} - {{ yoga.category }}
               </a>
           </h2>
-          <p>{{ yoga.content | truncatewords: 50  | markdownify }}</p>
+          <p>{{ yoga.content | markdownify | truncatewords: 50  }}</p>
           {% endfor %}
           <p>hello from layout directory</p>
         </div>
