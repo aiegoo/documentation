@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_yoga
 box_number: 3
-link: https://www.pf1.36io.co
+link: https://www.36io.co
 ---
 
 I have done some projects related to MATLAB and tasks related to Machine Learning. 
