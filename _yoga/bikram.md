@@ -17,6 +17,7 @@ I have done some projects related to MATLAB and tasks related to Machine Learnin
 - Computer vision **Road Detection** [repo](https://github.com/aiegoo/Proj_road_detection-)
 - Raspberry Pi project **LORA and sensors** [repo](https://github.com/aiegoo/django-raspi) or [here](https://github.com/aiegoo/raspi-source)
 
+<!--more-->
 
 ```diff
 + Mastering ROS for Robotics Programming Packt
