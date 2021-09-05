@@ -101,7 +101,7 @@ summary: "my life-long passion"
 
         <!-- Content Column -->
         <div class="{{content_col_size}}" id="tg-sb-content">
-        {% assign yoga = site.yoga %}
+        {% assign yoga = site.yoga | sort:"order_number" %}
           {% for yoga in yogas %}
           <h2>
               <a href="{{ yoga.url | prepend: site.baseurl }}">
