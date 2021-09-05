@@ -69,4 +69,31 @@ The whole process of yoga is to take you from something that you know, and take 
 In yoga, these systems have been identified. To start with, you work with the body, then you move to the breath, then to the mind, then to the inner self. Like this many steps have been created. They are only different aspects. They are not really different types of yoga. In fact, we address all of them at once. It is important that in a very balanced way all of them are addressed at once, as one unit. Otherwise, if you work just with the body, it is only preparatory in nature. So, there is really no division as such. Yoga is a union of all these.
 
 
+## hatha and vinyasa
+
+What Are Hatha and Vinyasa Yoga?
+Hatha yoga is practiced at a slower pace, with focus on the breath, controlled movements, and stretching. 
+
+Vinyasa yoga focuses on connecting the breath to your movements, which tend to be set at a faster pace. In a vinyasa practice, you can expect to stay in a constant flow of movements.  
+
+### The Benefits of Hatha Yoga
+Hatha yoga’s focus on mindfulness puts an emphasis on breath, posture, and meditation. It can help with raising a low mood. In fact, hatha yoga has been found to noticeably reduce anxiety and depression after just 12 sessions.  
+
+Hatha yoga can also help you lower your stress levels. You’ll notice that regular practice will help you feel more relaxed, but even one 90-minute session can make a difference in reducing stress.
+
+
+‌If you’re looking to become more flexible, hatha yoga can help, especially in the hamstrings and spine.  
+
+Hatha yoga can also help boost abdominal strength and improve balance in less than a month of regular practice.
+
+### The Benefits of Vinyasa Yoga
+Because vinyasa yoga keeps you moving steadily, this heart-pumping session may be a good addition to your cardio routine. Studies show that because of the fast-paced style of vinyasa, it acts as a light aerobic exercise.
+
+
+Similar to a traditional workout, vinyasa yoga is a great way to improve your strength, muscle tone, and endurance.
+
+Vinyasa yoga can help you find better balance and stability, both on and off the mat. Mindfulness is a main principle of vinyasa, which will help you move between yoga poses more smoothly. It can also improve your sensory systems.
+
+Like most yoga styles, a vinyasa practice can lower anxiety and manage stress. It can even help you quit smoking.‌
+
 [**Preview**]({{page.link}})
