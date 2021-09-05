@@ -1,9 +1,9 @@
 ---
 layout: page
-name: tony
-permalink: tony.html
-skills: "Electrical, embedded"
-link: https://www.freelancer.com/u/tonyleekorea
+name: bikram
+permalink: yoga_bikram.html
+category: "bikram"
+link: https://www.pf1.36io.co
 ---
 
 I have done some projects related to MATLAB and tasks related to Machine Learning. 
