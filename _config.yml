@@ -138,7 +138,7 @@ defaults:
       author_profile: false
       share: true
       comments: false
-      sidebar: mydoc_sidebar
+      sidebar: false
       topnav: topnav
       toc: true
 
