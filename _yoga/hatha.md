@@ -1,7 +1,7 @@
 ---
 layout: page
 name: hotyoga
-permalink: yoga_hatha.html
+permalink: hatha.html
 category: "Hatha, hot"
 link: https://www.pf1.36io.co
 ---

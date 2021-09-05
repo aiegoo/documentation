@@ -1,7 +1,7 @@
 ---
 layout: page
 name: bikram
-permalink: yoga_bikram.html
+permalink: bikram.html
 category: "bikram"
 link: https://www.pf1.36io.co
 ---
