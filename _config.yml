@@ -72,7 +72,7 @@ collections:
     output: true
     people: true
     permalink: /drones/
-  drones:
+  yoga:
     output: true
     people: true
     permalink: /yoga/
@@ -131,7 +131,7 @@ defaults:
 
   # _yoga
   - scope:
-      path: "/yoga/"
+      path: "/poses/"
       type: portfolio
     values:
       layout: single
