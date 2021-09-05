@@ -6,6 +6,7 @@ hide: false
 toc: true
 sidebar: false
 permalink: yoga.html
+excerpt_separator: <!--more-->
 summary: my passion my life
 collection: yoga
 layout: page
@@ -19,7 +20,7 @@ layout: page
      {{ yoga.name }} - {{ yoga.category }}
      </a>
 </h2>
-<p> {{ yoga.content | markdownify }} </p>
+<p> {{ yoga.content | markdownify | truncateword 50 }} </p>
 {% endfor %}
 
 {% include links.html %}
