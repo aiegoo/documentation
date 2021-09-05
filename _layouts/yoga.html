@@ -1,12 +1,13 @@
 ---
-title: "🌱freelancers"
-keywords: freelancers
-tags: [getting_started,drone]
+title: "🌱yoga"
+keywords: yoga
+tags: [yoga]
 hide: false
-toc: false
-sidebar: mydoc_sidebar
-permalink: "/freelancers/"
-summary: my freelancers I work with.
+toc: true
+sidebar: other_sidebar
+permalink: "/yoga/"
+excerpt_separator: <!--more-->
+summary: "my life-long passion"
 ---
 
 <!DOCTYPE html>
@@ -100,14 +101,14 @@ summary: my freelancers I work with.
 
         <!-- Content Column -->
         <div class="{{content_col_size}}" id="tg-sb-content">
-        {% assign freelancers = site.freelancers %}
-          {% for freelancer in freelancers %}
+        {% assign yoga = site.yoga |  sort:"order_number" %}
+          {% for yoga in yogas %}
           <h2>
-              <a href="{{ freelancer.url | prepend: site.baseurl }}">
-              {{ freelancer.name }} - {{ freelancer.skills }}
+              <a href="{{ yoga.url | prepend: site.baseurl }}">
+              {{ yoga.name }} - {{ yoga.category }}
               </a>
           </h2>
-          <p>{{ freelancer.content | markdownify }}</p>
+          <p>{{ yoga.excerpt | markdownify | truncatewords: 50  }}</p>
           {% endfor %}
           <p>hello from layout directory</p>
         </div>
