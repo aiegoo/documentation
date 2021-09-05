@@ -20,7 +20,7 @@ layout: page
      {{ yoga.name }} - {{ yoga.category }}
      </a>
 </h2>
-<p> {{ yoga.excerpt | markdownify | truncateword: 50 }} </p>
+<p> {{ yoga.excerpt | markdownify | truncateword: 50 | strip_html }} </p>
 {% endfor %}
 
 {% include links.html %}
