@@ -97,6 +97,6 @@ Downloads:
 
 
 ```
-[PX4_Vision_carrier_board_pinouts](pdf/gcs/PX4_Vision_carrier_board_pinouts.pdf)
+[PX4_Vision_carrier_board_pinouts](pdf/gcs/PX4_Vision_carrier_board_pinouts_v1.1.pdf)
 
 [**Preview**]({{page.link}})
