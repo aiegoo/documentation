@@ -131,7 +131,7 @@ defaults:
 
   # _yoga
   - scope:
-      path: "/poses/"
+      path: "/yoga/"
       type: portfolio
     values:
       layout: single
