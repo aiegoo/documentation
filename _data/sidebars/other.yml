@@ -5,16 +5,16 @@ entries:
 - title: other
   folders:
 
-  - title: Other Links
+  - title: Yoga Home
     folderitems:
 
-    - title: Automated links bookmark
-      url: /mydoc_hyperlinks.html#automatedlinks
+    - title: yoga portal
+      url: /yoga.html
 
-    - title: Bookmark links
-      url: /mydoc_hyperlinks.html#bookmarklinks
+    - title: Hatha Aerial
+      url: /hatha.html
 
-    - title: Some link bookmark
-      url: /mydoc_pages.html#someIdTag
+    - title: Bikram Ashtanga
+      url: /bikram.html
 
 # Copyright 2021 Google LLC
