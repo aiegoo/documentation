@@ -36,5 +36,6 @@ allowed-tags:
   - dynamic-occupancy
   - motion-planning
   - rrt
+  - yoga
 
 # Copyright 2021 Google LLC
