@@ -135,8 +135,12 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
+      comments: false
+      sidebar: mydoc_sidebar
+      topnav: topnav
+      toc: true
 
 # these are defaults used for the frontmatter for these file types
 
