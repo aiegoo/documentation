@@ -3,6 +3,7 @@ layout: page
 name: bikram
 permalink: bikram.html
 category: "bikram"
+excerpt_separator: <!--more-->
 link: https://www.pf1.36io.co
 ---
 
