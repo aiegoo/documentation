@@ -1,8 +1,8 @@
 ---
 layout: page
 name: pixhawk4 vision
-permalink: cube.html
-type: "APM, Mission-planner"
+permalink: px4vision.html
+type: "APM, Mission-planner, autonomy"
 link: https://shop.holybro.com/px4-vision_p1225.html
 ---
 
