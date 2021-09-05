@@ -1,7 +1,7 @@
 ---
 layout: page
 name: Vinyasa Flow
-sidebar: other
+sidebar: other_sidebar
 permalink: vinyasaflow.html
 category: "Vinyasa"
 excerpt_separator: <!--more-->

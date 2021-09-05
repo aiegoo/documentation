@@ -1,7 +1,7 @@
 ---
 layout: page
 name: four types of yoga
-sidebar: other
+sidebar: other_sidebar
 permalink: yoga_overview.html
 category: "overview"
 excerpt_separator: "<!--more-->"

@@ -149,7 +149,7 @@ defaults:
       author_profile: false
       share: true
       comments: false
-      sidebar: other
+      sidebar: other_sidebar
       topnav: topnav
       toc: true
       show_excerpts: true
@@ -161,7 +161,7 @@ sidebars:
 - mydoc_sidebar
 - product1_sidebar
 - product2_sidebar
-- other
+- other_sidebar
 
 description: "This documentation site is intended to keep my past and current project details clearly in view for all visitors. Please howl at me to give you access and see the source wiki of this documentation, aiegoo/portfolio/wiki, where more sensitive contents are maintained. Hooray AI and AiIot gurus!"
 # the description is used in the feed.xml file
