@@ -11,8 +11,8 @@ entries:
     - title: update news
       url: /news.html
       output: web
-    - title: weekly focus
-      url: /mydoc_rostopic.html
+    - title: Yoga Home
+      url: /yoga.html
       output: web
     - title: staging showcase 1
       url: /p1_landing_page.html
