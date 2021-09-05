@@ -1,0 +1,30 @@
+---
+layout: page
+name: tony
+permalink: tony.html
+skills: "Electrical, embedded"
+link: https://www.freelancer.com/u/tonyleekorea
+---
+
+I have done some projects related to MATLAB and tasks related to Machine Learning. 
+
+## Some of my land/air vehicle projects
+
+- VTOL **Portal of vtol codebase** [repowiki](https://github.com/aiegoo/_mydrone-ROS-packages/wiki)
+- Advanced ND project **UAV gui** [repo](https://github.com/aiegoo/_mydrone)
+- GCS ground control station **GCS codebase** [repo](https://github.com/aiegoo/_mydrone-scripts) 
+- RVIZ simuator **C++ GAZEBO** [repo](https://github.com/aiegoo/road_detection)
+- Computer vision **Road Detection** [repo](https://github.com/aiegoo/Proj_road_detection-)
+- Raspberry Pi project **LORA and sensors** [repo](https://github.com/aiegoo/django-raspi) or [here](https://github.com/aiegoo/raspi-source)
+
+
+```diff
++ Mastering ROS for Robotics Programming Packt
+- Learning ROS for Robotic Programming 2nd Edition
+@@ ROS for Beginners, Basics, Motion and OpenCV @@
+! ROS로보틱스 
+Boost.Asio C++ 네트워크 프로그래밍 쿡북
+- Programming Robots With ROS
+```
+
+[**Preview**]({{page.link}})
