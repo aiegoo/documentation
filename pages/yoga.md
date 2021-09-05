@@ -4,7 +4,7 @@ keywords: yoga poses
 tags: [yoga]
 hide: false
 toc: true
-sidebar: false
+sidebar: other
 permalink: yoga.html
 excerpt_separator: <!--more-->
 summary: my passion my life

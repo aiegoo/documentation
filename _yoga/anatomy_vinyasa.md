@@ -1,6 +1,7 @@
 ---
 layout: page
 name: Anatomy of Vinyasa
+sidebar: other
 permalink: anatomy_vinyasa.html
 category: "Bikram"
 excerpt_separator: <!--more-->

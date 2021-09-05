@@ -1,6 +1,7 @@
 ---
 layout: page
 name: Hatha
+sidebar: other
 permalink: hathaoverview.html
 category: "overview"
 excerpt_separator: <!--more-->

@@ -1,6 +1,7 @@
 ---
 layout: page
 name: hotyoga
+sidebar: other
 permalink: aerial.html
 category: "aerial"
 complex_map: true

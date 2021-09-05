@@ -1,6 +1,7 @@
 ---
 layout: page
 name: hotyoga
+sidebar: other
 permalink: hatha.html
 category: "Hatha"
 excerpt_separator: <!--more-->

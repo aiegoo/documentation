@@ -1,6 +1,7 @@
 ---
 layout: page
 name: bikram
+sidebar: other
 permalink: bikram.html
 category: "bikram"
 excerpt_separator: <!--more-->

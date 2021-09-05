@@ -1,6 +1,7 @@
 ---
 layout: page
 name: Aerial
+sidebar: other
 permalink: aerialoverview.html
 category: "Aerial"
 complex_map: true

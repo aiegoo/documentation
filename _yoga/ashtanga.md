@@ -1,6 +1,7 @@
 ---
 layout: page
 name: Ashtanga
+sidebar: other
 permalink: ashtanga.html
 category: "ashtanga"
 excerpt_separator: <!--more-->
