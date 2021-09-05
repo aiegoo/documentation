@@ -4,6 +4,9 @@ name: bikram
 permalink: bikram.html
 category: "bikram"
 excerpt_separator: <!--more-->
+complex_map: true
+map_name: usermap_yoga
+box_number: 3
 link: https://www.pf1.36io.co
 ---
 

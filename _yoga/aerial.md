@@ -1,9 +1,8 @@
 ---
 layout: page
 name: hotyoga
-permalink: hatha.html
-category: "Hatha"
-excerpt_separator: <!--more-->
+permalink: aerial.html
+category: "aerial"
 complex_map: true
 map_name: usermap_yoga
 box_number: 2

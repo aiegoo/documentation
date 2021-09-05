@@ -1,8 +1,11 @@
 ---
 layout: page
-name: hotyoga
-permalink: hatha.html
-category: "Hatha"
+name: Aerial
+permalink: aerialoverview.html
+category: "Aerial"
+complex_map: true
+map_name: usermap_yoga
+box_number: 1
 link: https://www.pf1.36io.co
 ---
 

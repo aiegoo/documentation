@@ -1,8 +1,12 @@
 ---
 layout: page
-name: hotyoga
-permalink: hatha.html
-category: "Hatha"
+name: Hatha
+permalink: hathaoverview.html
+category: "hatha"
+excerpt_separator: <!--more-->
+complex_map: true
+map_name: usermap_yoga
+box_number: 1
 link: https://www.pf1.36io.co
 ---
 
