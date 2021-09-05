@@ -2,7 +2,7 @@
 layout: page
 name: Hatha
 permalink: hathaoverview.html
-category: "hatha"
+category: "overview"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_yoga

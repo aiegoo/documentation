@@ -2,7 +2,7 @@
 layout: page
 name: bikram
 permalink: bikramoverview.html
-category: "bikram"
+category: "overview"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_yoga
