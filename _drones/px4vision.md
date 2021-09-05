@@ -4,6 +4,8 @@ name: pixhawk4 vision
 permalink: cube.html
 type: "APM, Mission-planner"
 link: https://shop.holybro.com/px4-vision_p1225.html
+---
+
 
 ### Pixhawk vision
 ![](./images/px4psp/px4vision.jpg)
@@ -95,6 +97,6 @@ Downloads:
 
 
 ```
-[PX4_Vision_carrier_board_pinouts](pdf/)
+[PX4_Vision_carrier_board_pinouts](pdf/gcs/PX4_Vision_carrier_board_pinouts.pdf)
 
 [**Preview**]({{page.link}})
