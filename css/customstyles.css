@@ -1484,7 +1484,7 @@ h4.panel-title {
 }
 
 .galleyr-box {
-    flex-basis: 11%;
+    flex-basis: 15%;
     width: 100%;
     padding: 5px;
     /* margin: 2px; */
@@ -1499,6 +1499,6 @@ h4.panel-title {
 }
 
 .img-gallery:hover {
-    transform: scale(1.05) !important;
+    transform: scale(1.1) !important;
 
 }
