@@ -10,6 +10,7 @@ summary: my drones I work with and at my disposal.
 simple_map: true
 map_name: matlab
 box_number: 5
+excerpt_separator: <!--more-->
 ---
 
 <!DOCTYPE html>
@@ -103,7 +104,7 @@ box_number: 5
 
         <!-- Content Column -->
         <div class="{{content_col_size}}" id="tg-sb-content">
-        {% assign drones = site.drones %}
+        {% assign drones = site.drones | sort: "date" | reverse %}
           {% for drone in drones %}
           <h2>
               <a href="{{ drone.url | prepend: site.baseurl }}">
