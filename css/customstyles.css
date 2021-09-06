@@ -1476,28 +1476,28 @@ h4.panel-title {
 
 /* div style for image_gallery.html */
 .image-gallery {
-width: 100%;
-display: grid;
-grid-template-columns: repeat(auto-fill,minmax(60px, 1fr));
-justify-content: center;
-padding: 4px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(60px, 1fr));
+    justify-content: center;
+    padding: 1px;
 }
 
 .box {
     flex-basis: 11%;
     width: 100%;
     padding: 10px;
-    margin: 2px;
+    /* margin: 2px; */
 }
 
-.box .img-gallery {
-width: 100%;
-height: 100px;
-object-fit: cover;
-transform: scale(1);
-transition: all 0.3s ease-in-out;
+.img-gallery .box {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
 }
 
-.box .img-gallery:hover {
-transform: scale(1.05);
+.img-gallery .box:hover {
+    transform: scale(1.05);
 }
