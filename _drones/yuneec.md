@@ -4,12 +4,16 @@ name: yuneec
 permalink: yuneec.html
 type: "Edison, Simulink"
 link: https://github.com/aiegoo/portfolio/wiki/yuneec
+excerpt_separator: <!--more-->
 ---
 ### Yuneec H and Intel Intellisense sensors
 
-|  |  |  |
-| --- | --- |  --- |
+|---
+|  |  |  
+| --- | --- |  --- 
 | [cgoet-manual](yuneeccgoet.pdf) | [mainteanance](Yuneec_Maintenance_Guide.pdf) | [pilot-manual](yuneecH-manual.pdf)
+|===
+|
 
 > Overview
 
@@ -26,6 +30,8 @@ Follow Me / Watch Me: Follow Me ensures Typhoon H moves along with you. Watch Me
 Curve Cable Cam: Easily program an invisible route for Typhoon H to fly along. Typhoon H will fly between pre-set coordinates while independently controlling camera position.
 Return Home: Simply switch to Home Mode and Typhoon H will return and land within 8 m of you.
 ```
+
+<!--more-->
 
 > CGOET Thermal Imaging And Low-Light Camera
 

@@ -4,19 +4,23 @@ name: DJI Quad
 permalink: quad.html
 type: "DJI, Assistant"
 link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
 ---
 ### dji quad custom frame
 
 #### overview
 
-| Type  | Details | Type  | Details |
-| :---: | ---  | :---: | ---  |
-| frame |  | FC |  |
-| motor |  | ESC |  |
-| RC  |  | mode |  |
-| weight |  | class |  |
-| battery |  | air-time |  |
-| configurator |  |  last updated |   |
+|---
+| Type  | Details | Type  | Details 
+| :---: | ---  | :---: | ---  
+| frame |  | FC |  
+| motor |  | ESC |  
+| RC  |  | mode |  
+| weight |  | class |  
+| battery |  | air-time |  
+| configurator |  |  last updated |   
+|===
+| airframe from Busan
 
 #### checklist and indicator status
 - Servo power will shut off 3 seconds after the landing gear has reached its target position. 
@@ -25,17 +29,22 @@ link: https://github.com/aiegoo/portfolio/wiki/quad
 - If servo power consumption is too high, the LED will light up red. If this lasts more than 4 seconds, the landing gear will lower and the LED will flash green slowly. Re-calibration is needed beforeflying.
 - A2 flight control system users can use the A2 Assistant to set intelligent gear on the “Advanced” page. Refer to the “A2 user manual” for details
 
-|LED control |Board Indicator|
-|:----|:----|
-|System normal|— Solid green.| |
-|Calibration required|Blinks rapid green.| |
-|Recalibration required|Blinks slow green.| |
-|Calibration failed|— Solid yellow.| |
-|Enter calibration mode|Blinks rapid yellow.| |
-|System calibrating|Blinks slow yellow.| |
+<!--more-->
+
+|---
+|LED control |Board Indicator
+|:----|:----
+|System normal|— Solid green.| 
+|Calibration required|Blinks rapid green.| 
+|Recalibration required|Blinks slow green.| 
+|Calibration failed|— Solid yellow.| 
+|Enter calibration mode|Blinks rapid yellow.| 
+|System calibrating|Blinks slow yellow.| 
 |Motor stalled|— Solid red.| |
 |Unsafe startup alert|Blinks rapid red.|
 |Input signal abnormal|Blinks slow green|
+|===
+|
 
 #### compass calibration
 

@@ -6,6 +6,8 @@ type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/parrot
 ---
 
+## bebop parrots
+
 ### bebop parrot ardupilot connection
 [parrotb_bebop_autopilot](https://ardupilot.org/copter/docs/parrot-bebop-autopilot.html)
 
@@ -17,6 +19,7 @@ link: https://github.com/aiegoo/portfolio/wiki/parrot
 [autonomylab](https://github.com/autonomylab/bebop-hacking.git)
 <hr>
 
+<!--more-->
 ### building ardupilot for bebop2
 .. _building-for-bebop-2:
 

@@ -4,6 +4,7 @@ name: dalrc
 permalink: dalrc.html
 type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/dalrc
+excerpt_separator: <!--more-->
 ---
 ## Darlc215
 
@@ -47,6 +48,7 @@ DL180 is designed for FPV race, all carbon integrated fiber body, super powerful
 |Camera: | Mobius ActionCam 808#16 or runcam camera|
 |Compatible	| Racing Quadcopter|
 
+<!--more-->
 ### FC 
 
 > Spacing f3 6dot

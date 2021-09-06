@@ -4,17 +4,22 @@ name: Racing Skyhero
 permalink: skyhero.html
 type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/skyhero
+excerpt_separator: <!--more-->
 ---
 ### Skyhero 
 
-| Type  | Details | Type  | Details |
-| :---: | ---  | :---: | ---  |
-| frame |  | FC |  |
-| motor |  | ESC |  |
-| RC  |  | mode |  |
-| weight |  | class |  |
-| battery |  | air-time |  |
-| configurator |  |  last updated |   |
+|---
+| Type  | Details | Type  | Details 
+| :---: | ---  | :---: | ---  
+| frame |  | FC |  
+| motor |  | ESC |  
+| RC  |  | mode |  
+| weight |  | class |  
+| battery |  | air-time |  
+| configurator |  |  last updated |   
+|===
+| airframe 
+
 ### FC 
 
 > Spacing f3 6dot
@@ -24,6 +29,7 @@ link: https://github.com/aiegoo/portfolio/wiki/skyhero
 
 > Aomway
 
+<!--more-->
 
 ### Controller - 💯 Stick Mode 2
 

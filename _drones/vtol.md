@@ -4,10 +4,10 @@ name: Vtol
 permalink: vtol.html
 type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/vtol
+excerpt_separator: <!--more-->
 ---
 
-
-Hello! 
+### Vtol with single prop
 
 Follow up work from this [post](https://discuss.ardupilot.org/t/airspeed-sensor-noise-problems-on-large-quadplane/32941) , we decided to go for another flight to get a better tuned pitch controller, rectify airspeed sensor problems and collect more flight data before we push for TECS tuning.
 
@@ -21,6 +21,7 @@ A few hypotheses that we have been thinking about:
 * One thing we did notice is that there was a lot of clipping of accelerometers while aircraft is still on the ground. However, the clipping events stopped when aircraft is in the air.
 * Given that we were able to do a QLOITER with an engine in idle @ 2700 RPM, we aren't sure if sensors and estimation are the cause of the problem.
 <br>
+<!--more-->
 
 2. GPS came loose and fell off right after transition is done
 * No abrupt changes to magnetic heading and GPS lock status. 

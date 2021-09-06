@@ -4,6 +4,7 @@ name: nazam
 permalink: nazam.html
 type: "DJI, Assistant"
 link: https://github.com/aiegoo/portfolio/wiki/nazam
+excerpt_separator: <!--more-->
 ---
 
 ### DJI Naza m Lite

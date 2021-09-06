@@ -4,20 +4,26 @@ name: bebop parrot
 permalink: bebop_parrot.html
 type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/parrot
+excerpt_separator: <!--more-->
 ---
 ## Pixhawk lite
 
-| Type  | Details | Type  | Details |
-| :---: | ---  | :---: | ---  |
-| frame |  | FC |  |
-| motor |  | ESC |  |
-| RC  |  | mode |  |
-| weight |  | class |  |
-| battery |  | air-time |  |
-| configurator |  |  last updated |   |
+|---
+| Type  | Details | Type  | Details 
+| :---: | ---  | :---: | ---  
+| frame |  | FC |  
+| motor |  | ESC |  
+| RC  |  | mode |  
+| weight |  | class |  
+| battery |  | air-time |  
+| configurator |  |  last updated |   
+|===
+| airframe from rapa
 ## mission planner connection
 
-### GPS LSM3030 and sat list
+#### GPS LSM3030 and sat list
+
+<!--more-->
 
 |COMPASS_DEV_ID|131594|SPI|1|2|LSM303D|
 |:----|:----|:----|:----|:----|:----|
@@ -39,7 +45,7 @@ link: https://github.com/aiegoo/portfolio/wiki/parrot
 |INS_GYR3_ID|0|UNKNOWN|0|0|0|
 |MOT_BAT_IDX|0|UNKNOWN|0|0|0|
 
-## Sunnysky x3108s motors
+### Sunnysky x3108s motors
 
 > description
 

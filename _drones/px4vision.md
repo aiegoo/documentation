@@ -10,6 +10,8 @@ link: https://shop.holybro.com/px4-vision_p1225.html
 ### Pixhawk vision
 ![](./images/px4psp/px4vision.jpg)
 
+<!--more-->
+
 ```
 
 The PX4 Vision Development Kit contains following components:
