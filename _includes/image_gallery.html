@@ -1,6 +1,6 @@
 <div class ="image-gallery">
   {% assign sorted = site.static_files %}
-  {% for file in sorted | sort(attribute="alt") %}
+  {% for file in sorted | sort(attribute="title") %}
   {% if file.path contains include.folder %}
   {% if file.extname == '.jpg' %}
     {% assign filenameparts = file.path | split: "/" %}
