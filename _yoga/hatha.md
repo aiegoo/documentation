@@ -1,6 +1,6 @@
 ---
 layout: page
-name: hotyoga
+name: "Hatha yoga"
 sidebar: other_sidebar
 permalink: hatha.html
 category: "Hatha"
