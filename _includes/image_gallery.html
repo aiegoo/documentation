@@ -1,5 +1,5 @@
 <div class ="image-gallery">
-  {% assign sorted = site.static_files | sort(attribute="title") %}
+  {% assign sorted = site.static_files | sort(attribute="title") | reverse %}
   {% for file in sorted %}
   {% if file.path contains include.folder %}
   {% if file.extname == '.jpg' %}
