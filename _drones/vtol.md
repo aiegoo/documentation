@@ -23,6 +23,20 @@ A few hypotheses that we have been thinking about:
 <br>
 <!--more-->
 
+
+
+|---
+| Type  | Details | Type  | Details 
+| :---: | ---  | :---: | ---  
+| frame |  | FC | 
+| motor |  | ESC |  
+| RC  |  | mode |  
+| weight |  | class |  
+| battery |  | air-time |  
+| configurator |  |  last updated |   
+|===
+| airframe
+
 2. GPS came loose and fell off right after transition is done
 * No abrupt changes to magnetic heading and GPS lock status. 
 <br>

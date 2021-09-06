@@ -10,7 +10,22 @@ link: https://shop.holybro.com/px4-vision_p1225.html
 ### Pixhawk vision
 ![](./images/px4psp/px4vision.jpg)
 
+
 <!--more-->
+
+
+
+|---
+| Type  | Details | Type  | Details 
+| :---: | ---  | :---: | ---  
+| frame |  | FC | 
+| motor |  | ESC |  
+| RC  |  | mode |  
+| weight |  | class |  
+| battery |  | air-time |  
+| configurator |  |  last updated |   
+|===
+| airframe
 
 ```
 

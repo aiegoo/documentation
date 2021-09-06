@@ -20,7 +20,8 @@ excerpt_separator: <!--more-->
 |===
 | airframe from rapa
 
-## mission planner connection
+### APMdr a racing drone
+### mission planner connection
 
 #### GPS LSM3030 and sat list
 

@@ -4,9 +4,25 @@ name: bebop parrot
 permalink: bebop_parrot.html
 type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/parrot
+excerpt_separator: <!--more-->
 ---
 
 ## bebop parrots
+
+
+
+|---
+| Type  | Details | Type  | Details 
+| :---: | ---  | :---: | ---  
+| frame |  | FC | 
+| motor |  | ESC |  
+| RC  |  | mode |  
+| weight |  | class |  
+| battery |  | air-time |  
+| configurator |  |  last updated |   
+|===
+| airframe
+
 
 ### bebop parrot ardupilot connection
 [parrotb_bebop_autopilot](https://ardupilot.org/copter/docs/parrot-bebop-autopilot.html)
