@@ -11,7 +11,7 @@ box_number: 3
 link: https://www.36io.co
 ---
 
-{% include image.html file="yoga/asana_prayanama.bmp" caption="Asanas and pranayama work together to establish good posture and to open the torso for better breathing" %}
+{% include image.html file="yoga/asana_pranayama.bmp" caption="Asanas and pranayama work together to establish good posture and to open the torso for better breathing" %}
 
 
 My first yoga book I bought during my trip to Thailand has set off a series of events that truly made me who I am now. Believe it or not.
