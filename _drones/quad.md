@@ -8,6 +8,15 @@ excerpt_separator: <!--more-->
 ---
 ### dji quad custom frame
 
+### dji wookong with gimball
+
+|---
+|
+| :-:
+| ![xugong](./images/xugong/Folded.jpg)
+|===
+|
+
 #### overview
 <!--more-->
 
