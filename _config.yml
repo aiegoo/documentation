@@ -2,6 +2,8 @@ repository: aiegoo/documentation
 url: aiegoo.github.io
 baseurl: /documentation
 output: web
+imagesurl_yoga: "/images/yoga/"
+# thumbsurl_yoga: "/images/yoga/thumbs/"
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
 topnav_title: Matlab Docs
