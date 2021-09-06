@@ -11,7 +11,7 @@ box_number: 3
 link: https://www.36io.co
 ---
 
-{% include image.html url="https://user-images.githubusercontent.com/42961200/132157688-8bf150bb-9a67-47d2-80f2-71bc32fd99e5.png" caption="Hot Yoga is a moving meditation combining asana, breath work and heat. All are needed to get the best resul." %}
+{% include image.html url="yoga/42961200/132157688-8bf150bb-9a67-47d2-80f2-71bc32fd99e5.png" caption="Hot Yoga is a moving meditation combining asana, breath work and heat. All are needed to get the best resul." %}
 ![image](https://user-images.githubusercontent.com/42961200/132157688-8bf150bb-9a67-47d2-80f2-71bc32fd99e5.png)
 Hot Yoga is a moving meditation combining asana, breath work and heat. All are needed to get the best resul
 
