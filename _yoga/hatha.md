@@ -18,4 +18,5 @@ My first yoga book I bought during my trip to Thailand has set off a series of e
 
 
 {% include image_gallery.html folder="hatha" %}
+
 [**Preview**]({{page.link}})
