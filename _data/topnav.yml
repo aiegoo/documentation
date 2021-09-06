@@ -36,5 +36,7 @@ topnav_dropdowns:
           url: /drones/
         - title: freelancers
           url: /freelancers/
+        - title: yoga
+          url: /yoga/
 
 # Copyright 2021 Google LLC
