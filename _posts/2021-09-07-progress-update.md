@@ -1,5 +1,5 @@
 ---
-title: 'July updated report'
+title: 'August updated report'
 categories: jekyll update
 permalink: progress-update.html
 summary: "update report on documentation upto 2021 Augus"
