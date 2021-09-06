@@ -9,18 +9,22 @@ excerpt_separator: <!--more-->
 
 ### DJI Naza m Lite
 
-| Type  | Details | Type  | Details |
-| :---: | ---  | :---: | ---  |
-| frame |  | FC |  |
-| motor |  | ESC |  |
-| RC  |  | mode |  |
-| weight |  | class |  |
-| battery |  | air-time |  |
-| configurator |  |  last updated |   |
+|---
+| Type  | Details | Type  | Details 
+| :---: | ---  | :---: | ---  
+| frame |  | FC | 
+| motor |  | ESC |  
+| RC  |  | mode |  
+| weight |  | class |  
+| battery |  | air-time |  
+| configurator |  |  last updated |   
+|===
+| airframe
 ### FC 
 
 > Naza M Lite
 
+<!--more-->
 
 ### camera
 

@@ -8,14 +8,17 @@ excerpt_separator: <!--more-->
 ---
 ## Darlc215
 
-| Type  | Details | Type  | Details |
-| :---: | ---  | :---: | ---  |
-| frame |  | FC |  |
-| motor |  | ESC |  |
-| RC  |  | mode |  |
-| weight |  | class |  |
-| battery |  | air-time |  |
-| configurator |  |  last updated |   |
+|---
+| Type  | Details | Type  | Details 
+| :---: | ---  | :---: | ---  
+| frame |  | FC |  
+| motor |  | ESC |  
+| RC  |  | mode |  
+| weight |  | class |  
+| battery |  | air-time |  
+| configurator |  |  last updated |   
+|===
+|
 ### highlight
 ![dalrc](images/dal/dalrc.jpg)
 ```
