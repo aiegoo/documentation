@@ -11,7 +11,7 @@ box_number: 2
 link: https://www.36io.co
 ---
 
-{% include image.html file="yoga/backbend.png" caption="Hot Yoga is a moving meditation combining asana, breath work and heat. All are needed to get the best result." %}
+{% include image.html file="yoga/backbend.png" caption="Hot Yoga is a moving meditation combining asana, breath work and heat. All are needed to get the best resultgit s." %}
 
 
 My first yoga book I bought during my trip to Thailand has set off a series of events that truly made me who I am now. Believe it or not.
