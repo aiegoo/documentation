@@ -37,6 +37,9 @@ DL180 is designed for FPV race, all carbon integrated fiber body, super powerful
 
 ### specification
 
+
+<!--more-->
+
 |---
 |General|  
 |:----| :--- 
@@ -56,7 +59,6 @@ DL180 is designed for FPV race, all carbon integrated fiber body, super powerful
 |
 
 
-<!--more-->
 ### FC 
 
 > Spacing f3 6dot
