@@ -19,6 +19,7 @@ excerpt_separator: <!--more-->
 | configurator |  |  last updated |   
 |===
 | airframe from rapa
+
 ## mission planner connection
 
 #### GPS LSM3030 and sat list
