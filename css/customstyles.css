@@ -566,6 +566,9 @@ figcaption {
     font-style: italic;
     color: gray;
     text-align: center;
+    background: #afd69338;
+    margin: 0 auto;
+    border-radius: 3%;
 
 }
 
