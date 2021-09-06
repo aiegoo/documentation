@@ -9,6 +9,7 @@ excerpt_separator: <!--more-->
 ### dji quad custom frame
 
 #### overview
+<!--more-->
 
 |---
 | Type  | Details | Type  | Details 
@@ -29,7 +30,7 @@ excerpt_separator: <!--more-->
 - If servo power consumption is too high, the LED will light up red. If this lasts more than 4 seconds, the landing gear will lower and the LED will flash green slowly. Re-calibration is needed beforeflying.
 - A2 flight control system users can use the A2 Assistant to set intelligent gear on the “Advanced” page. Refer to the “A2 user manual” for details
 
-<!--more-->
+
 
 |---
 |LED control |Board Indicator

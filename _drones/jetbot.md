@@ -9,7 +9,6 @@ excerpt_separator: <!--more-->
 ## Jetbot Nvidia Nano RAPA project
 
 
-
 |---
 | Type  | Details | Type  | Details 
 | :---: | ---  | :---: | ---  

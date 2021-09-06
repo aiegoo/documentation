@@ -10,7 +10,6 @@ excerpt_separator: <!--more-->
 ## bebop parrots
 
 
-
 |---
 | Type  | Details | Type  | Details 
 | :---: | ---  | :---: | ---  

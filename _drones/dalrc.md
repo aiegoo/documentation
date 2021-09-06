@@ -34,11 +34,9 @@ Adopt imported YFS screw
 Support Mobius 808, Runcam, SJCAM camera
 DL180 is designed for FPV race, all carbon integrated fiber body, super powerful, very tough. It comes with motor protection base and adjustable camera base which can used to change angle
 ```
-
+<!--more-->
 ### specification
 
-
-<!--more-->
 
 |---
 |General|  
