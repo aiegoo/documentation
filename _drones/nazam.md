@@ -10,6 +10,13 @@ excerpt_separator: <!--more-->
 ### DJI Naza m Lite
 
 |---
+| |
+| :-: | :-: | :-:
+| ![nazam](./images/nazam/nazam_folded.jpg) | ![nazam](./images/nazam/nazam.jpg) | ![nazam](./images/nazam/nazam2.jpg)
+|===
+|
+
+|---
 | Type  | Details | Type  | Details 
 | :---: | ---  | :---: | ---  
 | frame |  | FC | 

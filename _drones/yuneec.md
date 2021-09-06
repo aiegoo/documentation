@@ -20,6 +20,13 @@ excerpt_separator: <!--more-->
 
 > Typhoon H Hexacopter 
 
+|---
+|
+| :-:
+| ![yuneecth](./images/yuneec/YuneecTH.gif)
+|===
+|
+
 > Autonomous flight modes allow you to recall pre-programmed tracking shots while focusing on the camera:
 
 Orbit Me: Typhoon H flies a circular path around you, keeping the camera trained on you the whole time.
