@@ -1483,7 +1483,7 @@ h4.panel-title {
     padding: 1px;
 }
 
-.galleyr-box {
+.image-gallery .galleyr-box {
     flex-basis: 11%;
     width: 100%;
     padding: 5px;
