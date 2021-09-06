@@ -505,7 +505,7 @@ ul#mysidebar {
 
 .nav>li>ul>li>a:visited {
     border-color: transparent transparent transparent #c3c309;
-    color: goldenrod;
+    color: rgba(173, 124, 0, 0.705);
 }
 /* end sidebar */
 
