@@ -1503,3 +1503,13 @@ h4.panel-title {
     transform: scale(1.7) !important;
 
 }
+
+/* for image_yoga.html */
+.image-gallery-yoga {
+    width: 80%;
+    margin-left: -10vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(90px, 1fr));
+    justify-content: center;
+    padding: 1px;
+}
