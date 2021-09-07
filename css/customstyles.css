@@ -1069,6 +1069,9 @@ span.soft {
     .container {
         width: 1100px;
     }
+    #toc.toc {
+        width: 80em;
+    }
 }
 
 
