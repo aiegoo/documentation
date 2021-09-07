@@ -25,11 +25,9 @@ entries:
   - title: Drones
     output: web, pdf
     url: /drones/
-    folderitems:
 
-  - title: freelancers
+  - title: Freelancers
     output: web, pdf
     url: /freelancers/
-    folderitems:
     
 # Copyright 2021 Google LLC
