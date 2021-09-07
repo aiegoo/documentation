@@ -251,7 +251,7 @@ div#toc ul {
     background-color: rgba(188, 210, 172, 0.52) !important;
     padding: 5px;
     border-radius: 5px;
-    max-width: 300px;
+    max-width: 400px;
     color: rgba(246, 113, 3, 0.856);
     /* overflow-y: auto; */
     line-height: 58%;
@@ -339,7 +339,7 @@ div#toc ul li a:hover::after, ul li a:focus::after {
 }
 
 div#toc.toc {
-    font-size: 0.5rem !important;
+    font-size: 0.8rem !important;
     line-height: 70%;
     width: 60em;
 }
