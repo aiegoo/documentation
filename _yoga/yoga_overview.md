@@ -27,7 +27,7 @@ Yogi and mystic, Sadhguru answers a question on the different types of yoga and 
 <!--more-->
 
 {% include image.html file="yoga/yoga_type.jpg" caption="Two of the best-known styles of hatha
-are Iyengar and Ashtanga"}
+are Iyengar and Ashtanga" %}
 
 4 types of yoga for 4 aspects
 These are the only four realities in your life: body, mind, emotion, and energy. Whatever you wish to do with yourself, it must be on these four levels. Whatever you wish to do, you can only do it with your body, your mind, your emotions or your energy. If you use your emotions and try to reach the ultimate, we call this bhakti yoga. That means the path of devotion. If you use your intelligence and try to reach the ultimate, we call this gnana yoga. That means the path of intelligence. If you use your body, or physical action to reach the ultimate, we call this karma yoga. That means the path of action. If you transform your energies and try to reach the ultimate, we call this kriya yoga. That means internal action.
