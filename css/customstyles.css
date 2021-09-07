@@ -263,6 +263,7 @@ div#toc ul li ul {
 }
 div#toc ul li a {
     color: rgba(158, 74, 3, 1) !important;
+    font-size: 1.2rem !important;
 }
 
 div#toc ul li:focus, li:hover, li a:focus, li a:hover {
@@ -299,7 +300,7 @@ div#toc >ul::before {
 div#toc  ul li a.active {
     font-weight: bold;
     transition: all 0.125s ease-in 0s;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #924dd3;
 }
 
@@ -1056,7 +1057,7 @@ span.soft {
     }
 
     .navbar-brand .projectTitle {
-        font-size: 1em;
+        font-size: 1.3em;
     }
     #search-input {
         width: 10em;
