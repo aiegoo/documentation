@@ -274,7 +274,7 @@ designed controllers can be evaluated through experimental tests.
 
 <hr>
 
-## 2. Simulink-Based Controller Design and Simulation Platform
+## 2. Simulink-Based Controller Design/Simulation
 To improve the design efficiency of multicopter controllers, as shown in Fig. 3.5, this book provides a high-fidelity simulation environment based on Simulink/FlightGear. The main source code file is presented in “e01.SoftwareSimExps CopterSim3DEnvironment.slx”.
 
 ![image](https://user-images.githubusercontent.com/42961200/126034282-e9ca908c-7792-441b-afee-5f388215ad7d.png)
