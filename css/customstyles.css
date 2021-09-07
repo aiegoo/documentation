@@ -1513,3 +1513,9 @@ h4.panel-title {
     justify-content: center;
     padding: 1px;
 }
+
+.gallery-box {
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
