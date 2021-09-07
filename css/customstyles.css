@@ -1050,6 +1050,10 @@ span.soft {
         left: 0;
         width: 100vw;
         z-index: 1030;
+    }
+    .navbar-toggle {
+        display: none;
+    }
 }
 
 
