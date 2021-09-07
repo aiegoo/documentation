@@ -15,6 +15,6 @@ link: https://www.36io.co
 ## its origin
 Once known mainly as the “yoga of the stars,” the Bikram style of hatha has spread from Beverly
 Hills throughout the United States since the late 1970s. The Bikram style is the original “hot
-yoga” style, and its classes are taught in a room kept at approximately 106 degrees Fahrenheit (41 degrees Celsius). Bikram yoga is based on one series consisting of 26 poses, which are practiced twice in a class session. [pdf](pdf/yoga/insturctinghatha.pdf#page=33)
+yoga” style, and its classes are taught in a room kept at approximately 106 degrees Fahrenheit (41 degrees Celsius). Bikram yoga is based on one series consisting of 26 poses, which are practiced twice in a class session. [pdf](https://github.com/aiegoo/documentation/blob/edit/pdf/yoga/instructinghatha.pdf#page=33) [pdf2](pdf/yoga/instructinghatha.pdf#page=33)
 
 [**Preview**]({{page.link}})
