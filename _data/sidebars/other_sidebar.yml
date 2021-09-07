@@ -22,12 +22,12 @@ entries:
       output: web
       url: /hatha.html
 
-  - title: Drones
-    output: web, pdf
-    url: /drones/
+- title: Drones
+  output: web, pdf
+  url: /drones/
 
-  - title: Freelancers
-    output: web, pdf
-    url: /freelancers/
-    
+- title: Freelancers
+  output: web, pdf
+  url: /freelancers/
+
 # Copyright 2021 Google LLC
