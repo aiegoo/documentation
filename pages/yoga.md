@@ -12,6 +12,7 @@ collection: yoga
 layout: page
 ---
 
+{% include topnav.html %}
 ## yoga books
 {% assign yoga = site.yoga | sort:"date" | reverse %}
 {% for yoga in yoga %}
