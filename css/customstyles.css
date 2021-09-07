@@ -1521,6 +1521,6 @@ h4.panel-title {
     height: max-content;
 }
 
-.gallery-box.img-gallery:hover  {
+.gallery-box:hover  {
     z-index: 999;
 }
