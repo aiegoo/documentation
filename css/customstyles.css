@@ -1021,10 +1021,43 @@ span.soft {
     }
 }
 
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+/* @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+} */
+
+/* Portrait */
+/* @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+} */
+
+/* Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 1030;
+}
+
+
 .col-md-9 img {
     max-width: 100%;
     max-height: 100%;
 }
+
 
 
 .post-content img {
