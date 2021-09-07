@@ -8,13 +8,13 @@ entries:
   - title: Yoga Home
     folderitems:
 
-    - title: yoga portal
-      url: /yoga.html
+    - title: yoga overview
+      url: /yoga_overview.html
 
-    - title: Hatha Aerial
-      url: /hatha.html
-
-    - title: Bikram Ashtanga
+    - title: Bikram Aerial
       url: /bikram.html
+
+    - title: Hatha Ashtanga
+      url: /hatha.html
 
 # Copyright 2021 Google LLC
