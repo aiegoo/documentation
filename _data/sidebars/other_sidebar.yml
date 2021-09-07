@@ -2,8 +2,23 @@
 # Follow the pattern here for the URLs -- no slash at the beginning, and include the .html. The link here is rendered exactly as is in the Markdown references.
 
 entries:
-- title: other_sidebar
+- title: Sidebar
+  product: yoga
   folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
 
   - title: Yoga Home
     folderitems:
