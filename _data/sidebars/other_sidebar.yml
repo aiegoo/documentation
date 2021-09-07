@@ -5,31 +5,20 @@ entries:
 - title: Sidebar
   product: yoga
   folders:
-
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-    - title:
-      url: /titlepage.html
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
-
-
   - title: Yoga Home
+    output: web, pdf
     folderitems:
 
     - title: yoga overview
+      output: web
       url: /yoga_overview.html
 
     - title: Bikram Aerial
+      output: web
       url: /bikram.html
 
     - title: Hatha Ashtanga
+      output: web
       url: /hatha.html
 
 # Copyright 2021 Google LLC
