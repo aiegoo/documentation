@@ -6,8 +6,31 @@ entries:
   product: collections
   version: 1.0
   folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Drones
+    output: web, pdf
+    url: /drones/
+
+  - title: Freelancers
+    output: web, pdf
+    url: /freelancers/
+
   - title: Yoga Home
     output: web, pdf
+    type: homepage
     folderitems:
 
     - title: yoga overview
@@ -21,13 +44,5 @@ entries:
     - title: Hatha Ashtanga
       output: web
       url: /hatha.html
-
-- title: Drones
-  output: web, pdf
-  url: /drones/
-
-- title: Freelancers
-  output: web, pdf
-  url: /freelancers/
 
 # Copyright 2021 Google LLC
