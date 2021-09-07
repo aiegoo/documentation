@@ -12,3 +12,20 @@
     {% endif %}
   {% endfor %}
  </div>
+
+<!-- 
+Another method would be to take only specific files you want included from an image folder. This one uses the imagesurl variable we set above. Otherwise it will give the same format as above.
+credit goes to; https://dmnfarrell.github.io/software/jekyll-galleries
+-->
+<!--
+{% assign filenames = "img1.png,img2.png,img3.png" | split: "," %}
+<div class ="image-gallery">
+{% for name in filenames %}
+    <div class="box">
+    <a href="{{ site.imagesurl }}{{ name }}">
+      <img src="{{ site.imagesurl_yoga }}{{ name }} " alt="{{ name }}"  class="img-gallery" />
+     </a>
+    </div>
+ {% endfor %}
+</div>
+-->
