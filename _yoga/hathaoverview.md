@@ -13,7 +13,7 @@ link: https://www.36io.co
 ---
 
 ## Breathing
-
+[pdf](pdf/yoga/instructinghatha.pdf#page=48)
 ### types
 10 Types of Pranayama Breathing (With Instructions)
 Experts say that the best time to practice pranayama is early in the morning and on an empty stomach. Ideally, it would be practiced outdoors, but only if you live in a place with good air quality. Some will recommend these breathing exercises with different types of mudras while others will say to simply relax. Give each a try until you find what works for you.
