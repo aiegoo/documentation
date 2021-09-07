@@ -672,7 +672,7 @@ After completing the above steps, the controller designed in Simulink has been r
 <hr>
 
 ## 4. Pixhawk Hardware System
-### 4.1. Hardware System Composition and Connection
+### 4.1. HW System Composition/Connection
 As shown in Fig. 3.41, the hardware components required by this book include an RC transmitter, an RC receiver, a JR signal cable (connecting the Pixhawk autopilot and the RC receiver), a Pixhawk autopilot (Pixhawk 1 is recommended for studying, and higher hardware versions are recommended for outdoor flight tests), and a MicroUSB cable (connecting the computer and the Pixhawk hardware for power supply and data transmission). The connection relationships among the above components are presented in Fig. 3.42.
 
 ![image](https://user-images.githubusercontent.com/42961200/126034950-cafad8de-f833-41b4-b122-3e1180dd5ca0.png)
