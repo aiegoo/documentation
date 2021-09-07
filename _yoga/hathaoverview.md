@@ -104,4 +104,22 @@ Sit in a comfortable seated position with the back straight and shoulders relaxe
 
 This is one round. You can repeat for 10 – 20 rounds.
 
+### Yoga postures and major body systems
+[pdf](pdf/yoga/instructinghatha.pdf#page=56)
+#### Skeletal system
+#### Muscular system
+#### Digestive system
+#### Reproductive system
+#### Respiratory system
+#### Circulatory system
+#### Endocrine system
+#### Nervous system
+
+### Energetic anatomy
+#### Chakras
+#### Bandhas
+#### Koshas
+#### Energy words
+`Bandhas`  `Drishti` `Gunas` `Koshas` `Mudras` `Prana`
+
 [**Preview**]({{page.link}})
