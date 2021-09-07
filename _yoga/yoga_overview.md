@@ -26,7 +26,7 @@ Yogi and mystic, Sadhguru answers a question on the different types of yoga and 
 
 <!--more-->
 
-{% include image.html file="yoga/yoga_type.jpg" caption="Two of the best-known styles of hatha
+{% include image.html file="yoga/yoga-type.jpg" caption="Two of the best-known styles of hatha
 are Iyengar and Ashtanga" %}
 
 4 types of yoga for 4 aspects
