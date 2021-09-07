@@ -1520,3 +1520,7 @@ h4.panel-title {
     justify-content: center;
     height: max-content;
 }
+
+.img-gallery:hover .gallery-box {
+    z-index: 999;
+}
