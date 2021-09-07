@@ -342,7 +342,7 @@ div#toc ul li a:hover::after, ul li a:focus::after {
 div#toc.toc {
     font-size: 0.8rem !important;
     line-height: 70%;
-    width: 60em;
+    width: 40em;
 }
 /* toc scrollspy */
 div#toc ul li.active > a {
