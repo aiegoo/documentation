@@ -327,7 +327,7 @@ div#toc ul li a::after {
 
 div#toc  ul li a:hover::after, ul li a:focus::after {
     opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
+    /* transform: translate3d(0, 0.2em, 0); */
     text-decoration: dotted;
     transform-origin: center;
 }
@@ -959,6 +959,7 @@ span.soft {
     }
 }
 
+/* for mobile breakpoint */
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
@@ -977,7 +978,7 @@ span.soft {
     }
 }
 
-/* mobile breakpoint */
+/* mobile breakpoint 992 is where navbar becomes 3 rows from 2*/
 @media (max-width: 992px) {
     #mysidebar {
         position: relative;
