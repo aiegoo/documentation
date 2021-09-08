@@ -333,7 +333,7 @@ div#toc  ul li a:hover::after, ul li a:focus::after {
 }
 
 /* scale from center */
-/* div#toc ul li a::after {
+div#toc ul li a::after {
     opacity: 1;
     transform: scale(0);
     transform-origin: center;
@@ -341,7 +341,7 @@ div#toc  ul li a:hover::after, ul li a:focus::after {
 
 div#toc ul li a:hover::after, ul li a:focus::after {
     transform: scale(1);
-} */
+}
 
 div#toc.toc {
     font-size: 0.8rem !important;
