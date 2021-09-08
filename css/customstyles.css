@@ -206,7 +206,7 @@ p.post-meta {font-size: 80%; color: #777;}
     top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
     left: 20px;
     z-index: -1;
-    width:150px;
+    width:100px;
     border-left: 1px solid #dedede;
 }
 
@@ -226,7 +226,7 @@ ul#results-container a:hover {
 #search-input {
     padding: .5em;
     margin-left:20px;
-    width:18em;
+    width:10em;
     font-size: 0.8em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -244,7 +244,7 @@ ul#results-container a:hover {
 
 div#toc ul li {
     margin: 8px -15px 8px 20px;
-    font-size: 1em;
+    font-size: 1.2rem;
     list-style: square;
 }
 div#toc ul {
@@ -332,7 +332,7 @@ div#toc  ul li a:hover::after, ul li a:focus::after {
 }
 
 /* scale from center */
-/* div#toc ul li a::after {
+div#toc ul li a::after {
     opacity: 1;
     transform: scale(0);
     transform-origin: center;
@@ -340,7 +340,7 @@ div#toc  ul li a:hover::after, ul li a:focus::after {
 
 div#toc ul li a:hover::after, ul li a:focus::after {
     transform: scale(1);
-} */
+}
 
 div#toc.toc {
     font-size: 0.8rem !important;
@@ -407,6 +407,17 @@ a.accordion-toggle, a.accordion-collapsed {
     margin:0px;
 }
 
+/* to move navbar-right closer to the navbarbrand or logo */
+.ipad {
+    padding: 0;
+    margin: 5px 0 0 -90px !important;
+}
+@media (min-width: 768px) {
+    .navbar-right {
+        float: left !important;
+        margin-right: -15px;
+    }
+}
 .nav {
     /* padding: 4px;*/
     padding:0px;
@@ -958,6 +969,7 @@ span.soft {
     }
 }
 
+/* for mobile breakpoint */
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
@@ -976,8 +988,8 @@ span.soft {
     }
 }
 
-
-@media (max-width: 990px) {
+/* mobile breakpoint 992 is where navbar becomes 3 rows from 2*/
+@media (max-width: 992px) {
     #mysidebar {
         position: relative;
     }
@@ -1369,6 +1381,8 @@ h4.panel-title {
 @media (max-width: 900px) {
     .navbar-header {
         float: none;
+        margin-right: 0;
+        margin-left: -10px;
     }
     .navbar-left,.navbar-right {
         float: none !important;
