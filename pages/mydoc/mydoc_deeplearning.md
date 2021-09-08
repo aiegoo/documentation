@@ -102,7 +102,7 @@ folder: mydoc
 | 70.   | 80 + Computer vision Learning code                           | [link](https://bit.ly/3hKCpkm)              |
 | 71.   | Deep learning Treasure                                       | [link](https://bit.ly/359zLQb)              |
 
-## Road Lane line detection – Computer Vision Project
+## Road Lane line detection – CV Project
 Lane Line detection is a critical component for self driving cars and also for computer vision in general. This concept is used to describe the path for self-driving cars and to avoid the risk of getting in another lane.
 
 In this project, we will build a machine learning project to detect lane lines in real-time. We will do this using the concepts of computer vision using OpenCV library. To detect the lane we have to detect the white markings on both sides on the lane.
@@ -123,7 +123,7 @@ Please download the source code: [Lane Line Detection Project Code](https://gith
 Follow the below steps for lane line detection in Python:
 
 
-1. preparation
+#### 1. preparation
 
 ```python
 import matplotlib.pyplot as plt
@@ -264,7 +264,7 @@ white_clip.write_videofile(white_output, audio=False)
 
 ```
 
-2. Lane line detection  profject gui (code)
+#### 2. Lane line detection  profject gui (code)
 
 ```python
 import tkinter as tk
@@ -339,7 +339,8 @@ if __name__ == '__main__':
 ![lane-line-detection-ml-project-2](https://user-images.githubusercontent.com/42961200/125195892-b8e43c00-e292-11eb-90d5-3e30a0ca0ba8.gif)
 
 
-## Defect detection in ssd network in ultrasonic inspection
+## Defect detection in ssd network 
+(in ultrasonic inspection)
 [youtube](https://www.youtube.com/watch?v=PUT7HFGWuMM)
 
 [code](https://github.com/jasonngai01/UTPA_SSD)
