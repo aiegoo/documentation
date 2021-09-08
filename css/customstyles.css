@@ -206,7 +206,7 @@ p.post-meta {font-size: 80%; color: #777;}
     top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
     left: 20px;
     z-index: -1;
-    width:150px;
+    width:100px;
     border-left: 1px solid #dedede;
 }
 
@@ -226,7 +226,7 @@ ul#results-container a:hover {
 #search-input {
     padding: .5em;
     margin-left:20px;
-    width:18em;
+    width:10em;
     font-size: 0.8em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -244,7 +244,7 @@ ul#results-container a:hover {
 
 div#toc ul li {
     margin: 8px -15px 8px 20px;
-    font-size: 1em;
+    font-size: 1.2rem;
     list-style: square;
 }
 div#toc ul {
