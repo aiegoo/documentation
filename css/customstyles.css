@@ -973,7 +973,7 @@ span.soft {
 }
 
 /* mobile breakpoint */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #mysidebar {
         position: relative;
     }
