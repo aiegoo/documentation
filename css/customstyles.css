@@ -411,9 +411,14 @@ a.accordion-toggle, a.accordion-collapsed {
 /* to move navbar-right closer to the navbarbrand or logo */
 .ipad {
     padding: 0;
-    margin: 0 0 0 -150px !important;
+    margin: 5px 0 0 -90px !important;
 }
-
+@media (min-width: 768px) {
+    .navbar-right {
+        float: left !important;
+        margin-right: -15px;
+    }
+}
 .nav {
     /* padding: 4px;*/
     padding:0px;
