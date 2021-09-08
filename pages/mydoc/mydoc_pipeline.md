@@ -9,6 +9,12 @@ permalink: mydoc_pipeline.html
 folder: mydoc
 ---
 
+### git colour output to a file
+
+You can pass -c color.ui=always to any git command and it will keep coloring on redirection. For example: git -c color.ui=always status > file
+
+[example](1.5update.md)
+
 ## Bash pipeline
 ![appending_headoffile](https://user-images.githubusercontent.com/42961200/128584369-38e30401-2c05-497c-a6e0-341acf396f1c.png)
 
