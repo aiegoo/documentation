@@ -2,6 +2,7 @@
 layout: page
 name: Hatha
 sidebar: other_sidebar
+toc: true
 permalink: hathaoverview.html
 category: "overview"
 excerpt_separator: <!--more-->
