@@ -411,7 +411,7 @@ a.accordion-toggle, a.accordion-collapsed {
 /* to move navbar-right closer to the navbarbrand or logo */
 .navbar-static-top, .fixed-top, .ipad {
     padding: 0;
-    margin: 0 0 0 -80px !important;
+    margin: 0 0 0 -150px !important;
 }
 
 .nav {
