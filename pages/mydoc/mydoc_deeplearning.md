@@ -21,7 +21,7 @@ folder: mydoc
 |  ![image](https://user-images.githubusercontent.com/42961200/83480803-40c81600-a4d7-11ea-92fa-c2ad6ce9eac4.png) |  ![image](https://user-images.githubusercontent.com/42961200/83480002-212fee00-a4d5-11ea-8e25-12b4d0e1f4e4.png) |
 
 
-## 500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁 𝘄𝗶𝘁𝗵 𝗰𝗼𝗱𝗲
+## 500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁
 
 *500 AI Machine learning Deep learning Computer vision NLP Projects with code*
 
@@ -102,7 +102,7 @@ folder: mydoc
 | 70.   | 80 + Computer vision Learning code                           | [link](https://bit.ly/3hKCpkm)              |
 | 71.   | Deep learning Treasure                                       | [link](https://bit.ly/359zLQb)              |
 
-## Road Lane line detection – Computer Vision Project in Python
+## Road Lane line detection – Computer Vision Project
 Lane Line detection is a critical component for self driving cars and also for computer vision in general. This concept is used to describe the path for self-driving cars and to avoid the risk of getting in another lane.
 
 In this project, we will build a machine learning project to detect lane lines in real-time. We will do this using the concepts of computer vision using OpenCV library. To detect the lane we have to detect the white markings on both sides on the lane.
