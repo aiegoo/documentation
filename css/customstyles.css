@@ -1125,10 +1125,10 @@ span.soft {
     border: 1px solid #dedede;
 }
 
-*:hover > .anchorjs-link {
+/* *:hover > .anchorjs-link {
     transition: color .25s linear;
     text-decoration: none;
-}
+} */
 
 .kbCaption {
     color: white;
