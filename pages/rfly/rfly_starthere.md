@@ -15,16 +15,22 @@ folder: rfly
 
 ## 1. pixhawk4
 
-| Type  | Details | Type  | Details |
-| :---: | ---  | :---: | ---  |
-| frame |  | FC |  |
-| motor |  | ESC |  |
-| RC  |  | mode |  |
-| weight |  | class |  |
-| battery |  | air-time |  |
-| configurator |  |  last updated |   |
+|---
+| Type  | Details | Type  | Details 
+| :---: | ---  | :---: | ---  
+| frame |  | FC |  
+| motor |  | ESC |  
+| RC  |  | mode |  
+| weight |  | class |  
+| battery |  | air-time |  
+| configurator |  |  last updated |   
+|---
+|===
+|
 
 ### Project Goal
+
+|---
 |    |
 | -- |
 | Q1. Given a payload and flight endurace requriements, how to design a multicopter propulsion system? |
@@ -37,6 +43,8 @@ folder: rfly
 | Q8, Given a new algorithm, how to realize it by the model-based design? |
 | Q9. How new functions are developed based on the platform, such as health evaluation or vision-based autonomous flight? |
 | Q10, Given a group of engineers, how to organize them effectively? |
+|===
+|
 
 ### 🍃 pixhawk development tools
 - [flightGear](http://www.flightgear.org/download)
