@@ -25,7 +25,7 @@ This is the beginning of each Bikram Yoga training. You breathe in warm air to h
 You try to find the rhythm with the teacher and the other students and before you can even think you have started the journey through your body in the here and now. You become conscious of your breathing and you realise, you don’t have to think anymore as the teacher leads you word by word and the journey begins.
 
 
-#### 2. ARDHA CHANDRASANA – PADA HASTASANA (HALF MOON/HANDS TO FEED POSE)
+#### 2. ARDHA CHANDRASANA – PADA HASTASANA (HALF MOON/HANDS TO FEET POSE)
 Toes and heels touching, arms over your head, we bend to the right, to the left, backwards and forwards, your spine is warming up.
 
 
