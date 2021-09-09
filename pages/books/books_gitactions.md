@@ -12,8 +12,8 @@ folder: books
 ---
 
 ## the book
-[kindle](https://github.com/aiegoo/matlab/blob/edit/pdf/githubtools.pdf)
-[code](https://github.com/aiegoo/building-tools-with-github.git)
+[pdf](https://github.com/aiegoo/documentation/blob/edit/pdf/gitactions.pdf)
+[code_by_author](https://github.com/Apress/hands-on-functional-test-automation.git)
 ![overview](https://user-images.githubusercontent.com/42961200/130544254-1678d397-ec3a-48a4-83dd-559c594cfd3a.png)
 ## Github API
 
