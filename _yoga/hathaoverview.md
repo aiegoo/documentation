@@ -38,7 +38,7 @@ This completes one round. Repeat this alternating pattern for several more round
 I would say this pranayama is one of the most used in yoga classes today. It is the foundational breath used in the ashtanga vinyasa style of yoga.
 
 The ujjayi breath is meant to mimic the sound of ocean waves. This rhythmic sound can help you focus your mind and link your movements to the sound of your breath.
-
+<!--more-->
 Begin by breathing through the mouth. Constrict the back of the throat, as if you are trying to fog up a mirror. Next, close the mouth and continue to breathe through the nose with the throat still constricted.
 
 The sound of the breath can keep the mind from wandering during meditative practices.
