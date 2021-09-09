@@ -12,7 +12,7 @@ folder: books
 ---
 
 ## the book
-[pdf](https://github.com/aiegoo/matlab/blob/edit/pdf/githubtools.pdf)
+[kindle](https://github.com/aiegoo/matlab/blob/edit/pdf/githubtools.pdf)
 [code](https://github.com/aiegoo/building-tools-with-github.git)
 ![overview](https://user-images.githubusercontent.com/42961200/130544254-1678d397-ec3a-48a4-83dd-559c594cfd3a.png)
 ## Github API
@@ -22,7 +22,14 @@ curl -i/-v/-h https://api.github.com
 curl -u aiegoo https://api.github.com/rate_limit
 ```
 
-### Username/pw authentication
+### Goal
+
+> What You Will Learn
+
+- Create workflows for any platform and any language with GitHub Actions
+- Develop custom GitHub actions to enhance features and usage of database and service containers
+- Use hosted runners and create self-hosted runners for GitHub workflows
+- Use GitHub Package registry with GitHub Actions to share and use packages
 
 ### Oauth
 
