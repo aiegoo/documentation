@@ -321,7 +321,7 @@ div#toc ul li a::after {
     height: 0.4em;
     background-color: #ff69b46b;
     opacity: 0;
-    transition: opacity 300ms, transform 500ms;
+    /* transition: opacity 300ms, transform 500ms; */
 }
 
 
