@@ -415,11 +415,8 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 @media (min-width: 768px) {
     .navbar-right {
-        /* float: left !important; */
+        float: left !important;
         margin-right: -15px;
-    }
-    .navbar-collapse.collapse {
-        float: right !important;
     }
 }
 .nav {
