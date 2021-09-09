@@ -327,7 +327,7 @@ div#toc ul li a::after {
 
 div#toc  ul li a:hover::after, ul li a:focus::after {
     opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
+    /* transform: translate3d(0, 0.2em, 0); */
     text-decoration: none;
     transform-origin: center;
 }
