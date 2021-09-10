@@ -28,7 +28,7 @@ This page explains how to interpret the plots and identify common problems.
 Features that are common to many plots:
 
 - Plot background color is used to indicate flight mode during recording (where graphs depend on mode):
-  ![Flight Modes](images/drones/dev/flight_modes.png)
+  ![Flight Modes](./images/drones/dev/flight_modes.png)
   - **Flight mode:** Background colour on the body of the plot indicates flight mode.
     Hovering with the mouse over a plot shows the flight mode labels.
   - **VTOL flight mode:** VTOL vehicles additionally show the VTOL mode as background colour in the bottom part of the plot (blue for multicopter, yellow for fixed wing, and red for transition).
