@@ -1,3 +1,13 @@
+---
+layout: page
+name: "filter tuning"
+permalink: filter_tuning.html
+sidebar: other_sidebar
+type: "APM, Pixhawk4"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # MC Filter Tuning & Control Latency
 
 Filters can be used to trade off [control latency](#control-latency), which affects flight performance, and noise filtering, which impacts both flight performance and motor health.
@@ -8,7 +18,7 @@ This topic provides an overview of control latency and PX4 filter tuning.
 Before filter tuning you should do a first pass at [Basic MC PID tuning](../config_mc/pid_tuning_guide_multicopter_basic.md).
 The vehicle needs to be undertuned (the **P** and **D** gains should be set too low), such that there are no oscillations from the controller that could be interpreted as noise (the default gains might be good enough).
 :::
-
+<!--more-->
 ## Control Latency
 
 The *control latency* is the delay from a physical disturbance of the vehicle until the motors react to the change.

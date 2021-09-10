@@ -1,3 +1,13 @@
+---
+layout: page
+name: "pid tuning guide multicopter"
+permalink: pid_tuning_guide_multicopter.html
+sidebar: other_sidebar
+type: "APM, Pixhawk4"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # Multicopter PID Tuning Guide (Advanced/Detailed)
 
 This topic provides detailed information about PX4 controllers, and how they are tuned.
@@ -16,7 +26,7 @@ For safety reasons, the default gains are set to low values.
 You must increase the gains before you can expect good control responses.
 :::
 
-Here are some general points to follow when tuning:
+Here are some general points to follow when tuning: <!--more-->
 - All gains should be increased very slowly as large gains may cause dangerous oscillations!
   Typically increase gains by 20-30% per iteration, reducing to 5-10% for final fine tuning.
 - Land before changing a parameter.

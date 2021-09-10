@@ -1,3 +1,13 @@
+---
+layout: page
+name: "pid tuning guide multicopter basic"
+permalink: pid_tuning_guide_multicopter.html
+sidebar: other_sidebar
+type: "APM, Pixhawk4"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # Multicopter PID Tuning Guide
 
 This tutorial explains how to tune the PID loops on PX4 for all [multicopter setups](../airframes/airframe_reference.md#copter) (Quads, Hexa, Octo etc).
@@ -9,7 +19,7 @@ For example, different ESCs or motors require different tuning gains.
 Generally if you're using an appropriate [supported airframe configuration](../airframes/airframe_reference.md#copter) (selected from [QGroundControl > Airframe](../config/airframe.md)), the default tuning should allow you to fly the vehicle safely.
 To get the _very best_ performance we recommend you tune your new vehicle.
 :::
-
+<!--more-->
 :::warning
 Poorly tuned vehicles are likely to be unstable, and easy to crash.
 Make sure to have assigned a [Kill switch](../config/safety.md#emergency-switches).

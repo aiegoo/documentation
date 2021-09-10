@@ -1,3 +1,13 @@
+---
+layout: page
+name: "parameter reference"
+permalink: parameter_reference.html
+sidebar: other_sidebar
+type: "APM, Pixhawk4"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # Parameter Reference
 
 :::note

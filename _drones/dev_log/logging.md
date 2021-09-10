@@ -1,3 +1,13 @@
+---
+layout: page
+name: "logging guide"
+permalink: logging.html
+sidebar: other_sidebar
+type: "APM, Pixhawk4"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # Logging
 
 The logger is able to log any ORB topic with all included fields.

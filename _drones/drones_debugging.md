@@ -38,7 +38,7 @@ Features that are common to many plots:
 
 <span id="tracking"></span>
 ## PID Tracking Performance
-
+<!--more-->
 Depending on the flight mode, the vehicle controllers may attempt to track position, velocity, altitude or rate setpoints (the tracked setpoints depend on the mode, e.g.: in Stabilized mode there is no velocity setpoint).
 
 The **Estimated** line (red) should closely match with the **Setpoint** (green).
