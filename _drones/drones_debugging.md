@@ -44,7 +44,7 @@ Depending on the flight mode, the vehicle controllers may attempt to track posit
 The **Estimated** line (red) should closely match with the **Setpoint** (green).
 If they do not, in most cases the PID gains of that controller need to be tuned.
 
-The [Multicopter PID Tuning Guide](_drones/config_mc/pid_tuning_guide_multicopter.md) contains example plots and information about analysing tracking performance.
+The [Multicopter PID Tuning Guide](pid_tuning_guide_multicopter.html) contains example plots and information about analysing tracking performance.
 <!--more-->
 
 :::tip
