@@ -48,7 +48,7 @@ The [Multicopter PID Tuning Guide](pid_tuning_guide_multicopter.html) contains e
 <!--more-->
 
 :::tip
-For the rate controller in particular, it is useful to enable the high-rate logging profile ([SDLOG_PROFILE](_drones/advanced_config/parameter_reference.md#SDLOG_PROFILE)) to get more details when zooming in.
+For the rate controller in particular, it is useful to enable the high-rate logging profile ([SDLOG_PROFILE](parameter_reference.html#SDLOG_PROFILE)) to get more details when zooming in.
 :::
 
 ## Vibration
@@ -77,7 +77,7 @@ It is worth looking at multiple charts when analyzing vibration (different chart
 ### Actuator Controls FFT
 
 :::note
-You need to enable the high-rate logging profile ([SDLOG_PROFILE](_drones/advanced_config/parameter_reference.md#SDLOG_PROFILE)) to see this plot.
+You need to enable the high-rate logging profile ([SDLOG_PROFILE](parameter_reference.html#SDLOG_PROFILE)) to see this plot.
 :::
 
 This graph shows a frequency plot for the roll, pitch and yaw axis based on the actuator controls signal (the PID output from the rate controller). 
@@ -88,7 +88,7 @@ Note that the y-axis scaling is different for different vehicles, but logs from 
 
 #### Examples: Good Vibration
 
-[QAV-R 5" Racer](_drones/frames_multicopter/qav_r_5_kiss_esc_racer.md) frame (excellent vibration).
+[QAV-R 5" Racer](qav_r_5_kiss_esc_racer.html) frame (excellent vibration).
 
 ![Low vibration QAV-R 5 Racer - FFT plot](images/drones/dev/vibrations_good_actuator_controls_fft.png)
 
@@ -126,7 +126,7 @@ Ideally only the lowest part up to a few Hz is yellow, and the rest is mostly gr
 
 #### Examples: Good Vibration
 
-[QAV-R 5" Racer](_drones/frames_multicopter/qav_r_5_kiss_esc_racer.md) frame (excellent vibration).
+[QAV-R 5" Racer](qav_r_5_kiss_esc_racer.html) frame (excellent vibration).
 
 ![Low vibration QAV-R 5 Racer - spectral density plot](images/drones/dev/vibrations_good_spectral.png)
 <!-- https://logs.px4.io/plot_app?log=cd88b091-ec89-457c-85f6-e63e4fa0f51d -->
@@ -180,7 +180,7 @@ The best way to use this graph is to zoom in a bit to a part where the vehicle i
 
 #### Examples: Good Vibration
 
-[QAV-R 5" Racer](frames_multicopter/qav_r_5_kiss_esc_racer.md) frame (excellent vibration).
+[QAV-R 5" Racer](qav_r_5_kiss_esc_racer.html) frame (excellent vibration).
 
 ![Low vibration QAV-R 5 Racer - raw accel. plot](images/drones/dev/vibrations_good_accel.png)
 
@@ -234,7 +234,7 @@ To use it, some parameters need to be changed:
   :::tip
   See [Logging > SD Cards](../dev_log/logging.md#sd-cards) for a comparison of popular SD card.
   :::
-- Enable either the gyro or accel high-rate FIFO profile in [SDLOG_PROFILE](advanced_config/parameter_reference.md#SDLOG_PROFILE) and disable the rest of the entries.
+- Enable either the gyro or accel high-rate FIFO profile in [SDLOG_PROFILE](parameter_reference.html#SDLOG_PROFILE) and disable the rest of the entries.
   If you are using a really good SD card (seeing few/no dropouts), you can:
   - either enable both accel and gyro profiles
   - or enable accel/gyro plus the default logging profile
@@ -258,7 +258,7 @@ Do not forget to restore the parameters after testing.
 Often a source of vibration (or combination of multiple sources) cannot be identified from logs alone.
 
 In this case the vehicle should be inspected.
-[Vibration Isolation](../assembly/vibration_isolation.md) explains some basic things you can check (and do) to reduce vibration levels.
+[Vibration Isolation](vibration_isolation.html) explains some basic things you can check (and do) to reduce vibration levels.
 
 
 
@@ -383,7 +383,7 @@ This is a good example:
 ![Sampling regularity good](images/drones/dev/sampling_regularity_good.png)
 
 The following example contains too many dropouts, the quality of the used SD card was too low in that case
-(see [here](../dev_log/logging.md#sd-cards) for good SD cards):
+(see [here](logging.html#sd-cards) for good SD cards):
 
 ![Many Dropouts](.images/drones/dev/sampling_regularity_many_drops.png)
 
@@ -406,7 +406,7 @@ The section below groups a few (previously presented) charts by flight/vehicle.
 
 ### QAV-R 5" Racer
 
-These charts are all from the same flight of a [QAV-R 5" Racer](../frames_multicopter/qav_r_5_kiss_esc_racer.md).
+These charts are all from the same flight of a [QAV-R 5" Racer](qav_r_5_kiss_esc_racer.html).
 <!-- https://logs.px4.io/plot_app?log=cd88b091-ec89-457c-85f6-e63e4fa0f51d -->
 
 They show a vehicle that has very low vibration:
