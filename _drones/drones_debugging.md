@@ -44,11 +44,11 @@ Depending on the flight mode, the vehicle controllers may attempt to track posit
 The **Estimated** line (red) should closely match with the **Setpoint** (green).
 If they do not, in most cases the PID gains of that controller need to be tuned.
 
-The [Multicopter PID Tuning Guide](images/drones/dev/pid_tuning_guide_multicopter.md) contains example plots and information about analysing tracking performance.
+The [Multicopter PID Tuning Guide](_drones/config_mc/pid_tuning_guide_multicopter.md) contains example plots and information about analysing tracking performance.
 <!--more-->
 
 :::tip
-For the rate controller in particular, it is useful to enable the high-rate logging profile ([SDLOG_PROFILE](advanced_config/parameter_reference.md#SDLOG_PROFILE)) to get more details when zooming in.
+For the rate controller in particular, it is useful to enable the high-rate logging profile ([SDLOG_PROFILE](_drones/advanced_config/parameter_reference.md#SDLOG_PROFILE)) to get more details when zooming in.
 :::
 
 ## Vibration
@@ -77,7 +77,7 @@ It is worth looking at multiple charts when analyzing vibration (different chart
 ### Actuator Controls FFT
 
 :::note
-You need to enable the high-rate logging profile ([SDLOG_PROFILE](advanced_config/parameter_reference.md#SDLOG_PROFILE)) to see this plot.
+You need to enable the high-rate logging profile ([SDLOG_PROFILE](_drones/advanced_config/parameter_reference.md#SDLOG_PROFILE)) to see this plot.
 :::
 
 This graph shows a frequency plot for the roll, pitch and yaw axis based on the actuator controls signal (the PID output from the rate controller). 
@@ -88,7 +88,7 @@ Note that the y-axis scaling is different for different vehicles, but logs from 
 
 #### Examples: Good Vibration
 
-[QAV-R 5" Racer](frames_multicopter/qav_r_5_kiss_esc_racer.md) frame (excellent vibration).
+[QAV-R 5" Racer](_drones/frames_multicopter/qav_r_5_kiss_esc_racer.md) frame (excellent vibration).
 
 ![Low vibration QAV-R 5 Racer - FFT plot](images/drones/dev/vibrations_good_actuator_controls_fft.png)
 
@@ -126,7 +126,7 @@ Ideally only the lowest part up to a few Hz is yellow, and the rest is mostly gr
 
 #### Examples: Good Vibration
 
-[QAV-R 5" Racer](frames_multicopter/qav_r_5_kiss_esc_racer.md) frame (excellent vibration).
+[QAV-R 5" Racer](_drones/frames_multicopter/qav_r_5_kiss_esc_racer.md) frame (excellent vibration).
 
 ![Low vibration QAV-R 5 Racer - spectral density plot](images/drones/dev/vibrations_good_spectral.png)
 <!-- https://logs.px4.io/plot_app?log=cd88b091-ec89-457c-85f6-e63e4fa0f51d -->
