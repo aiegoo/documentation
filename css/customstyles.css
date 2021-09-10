@@ -321,13 +321,13 @@ div#toc ul li a::after {
     height: 0.4em;
     background-color: #ff69b46b;
     opacity: 0;
-    transition: opacity 300ms, transform 500ms;
+    /* transition: opacity 300ms, transform 500ms; */
 }
 
 
 div#toc  ul li a:hover::after, ul li a:focus::after {
     opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
+    /* transform: translate3d(0, 0.2em, 0); */
     text-decoration: none;
     transform-origin: center;
 }
@@ -1550,13 +1550,13 @@ h4.panel-title {
     width: 200%;
     margin-left: -3vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(90px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(120px, 1fr));
     justify-content: center;
     padding: 1px;
 }
 
 .gallery-box {
-    flex-basis: 15%;
+    flex-basis: 20%;
     width: 100%;
     padding: 15px;
     /* margin: 2px; */
