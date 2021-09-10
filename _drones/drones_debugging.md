@@ -186,7 +186,7 @@ The best way to use this graph is to zoom in a bit to a part where the vehicle i
 ![Low vibration QAV-R 5 Racer - raw accel. plot](images/drones/dev/vibrations_good_accel.png)
 
 DJI F450 frame (good vibration).
-![Low vibration DJI F450 - raw accel. plot](.images/drones/dev/vibrations_f450_accel.png)
+![Low vibration DJI F450 - raw accel. plot](images/drones/dev/vibrations_f450_accel.png)
 
 <!-- https://logs.px4.io/plot_app?log=cd88b091-ec89-457c-85f6-e63e4fa0f51d -->
 
