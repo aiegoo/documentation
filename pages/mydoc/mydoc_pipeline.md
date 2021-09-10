@@ -12,12 +12,8 @@ folder: mydoc
 ### add suffix to each file in a folder
 
 ```bash
-for i in *.png; do mv "$i" "${i%.*}_3.6.14.png"; done
-# It replaces .png in all the .png files with _3.6.14.png.
-
-# ${i%.*} Anything after last dot would be cutdown. So .png part would be cutoff from the filename.
-
-mv $i ${i%.*}_3.6.14.png Rename original .png files with the filename+_3.6.14.png.
+for i in *.png; do mv "$i" "${i%.*}_3.6.14.png"; done  # It replaces .png in all the .png files with _3.6.14.png.
+mv $i ${i%.*}_3.6.14.png Rename original .png files with the filename+_3.6.14.png. # ${i%.*} Anything after last dot would be cutdown. So .png part would be cutoff from the filename.
 ```
 
 ### git colour output to a file
