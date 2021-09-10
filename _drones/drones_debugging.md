@@ -2,6 +2,7 @@
 layout: page
 name: debugging tool
 permalink: drones_debugging.html
+sidebar: other_sidebar
 type: "DJI, Assistant"
 link: https://github.com/aiegoo/portfolio/wiki/quad
 excerpt_separator: <!--more-->
