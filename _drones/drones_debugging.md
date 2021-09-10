@@ -226,14 +226,14 @@ For an in-depth analysis there is an option to log the raw IMU data at full rate
 This allows inspection of much higher frequencies than with normal logging, which can help when selecting vibration mounts or configuring low-pass and notch filters appropriately.
 
 To use it, some parameters need to be changed:
-- Set [IMU_GYRO_RATEMAX](advanced_config/parameter_reference.md#IMU_GYRO_RATEMAX) to 400.
+- Set [IMU_GYRO_RATEMAX](advanced_config/parameter_reference.html#IMU_GYRO_RATEMAX) to 400.
   This ensures that the raw sensor data is more efficiently packed when sent from the sensor to the rest of the system, and reduces the log size (without reducing useful data). 
   <!-- Explanation in https://github.com/PX4/px4_user_guide/pull/751/files#r440509688
   Data is sent in a fixed size array that will largely empty if sent at higher rate. The "empty data" is also logged.-->
 - Use a good SD card, as the IMU data requires a high logging bandwidth (Flight Review will show dropouts if the logging rate gets too high).
   
   :::tip
-  See [Logging > SD Cards](../dev_log/logging.md#sd-cards) for a comparison of popular SD card.
+  See [Logging > SD Cards](dev_log/logging.md#sd-cards) for a comparison of popular SD card.
   :::
 - Enable either the gyro or accel high-rate FIFO profile in [SDLOG_PROFILE](parameter_reference.html#SDLOG_PROFILE) and disable the rest of the entries.
   If you are using a really good SD card (seeing few/no dropouts), you can:
@@ -242,7 +242,7 @@ To use it, some parameters need to be changed:
 
 Example plot:
 
-![high-rate accel power spectral density](images/drones/dev/flight_review/accel_spectral_density_fifo.png)
+![high-rate accel power spectral density](images/drones/dev/accel_spectral_density_fifo.png)
 
 :::note
 Data of the first IMU is logged, which is not necessarily the same as the one used for flying.
@@ -386,7 +386,7 @@ This is a good example:
 The following example contains too many dropouts, the quality of the used SD card was too low in that case
 (see [here](logging.html#sd-cards) for good SD cards):
 
-![Many Dropouts](.images/drones/dev/sampling_regularity_many_drops.png)
+![Many Dropouts](images/drones/dev/sampling_regularity_many_drops.png)
 
 ## Logged Messages
 
