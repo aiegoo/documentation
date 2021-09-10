@@ -25,7 +25,7 @@ This is the beginning of each Bikram Yoga training. You breathe in warm air to h
 You try to find the rhythm with the teacher and the other students and before you can even think you have started the journey through your body in the here and now. You become conscious of your breathing and you realise, you don’t have to think anymore as the teacher leads you word by word and the journey begins.
 
 
-#### 2. ARDHA CHANDRASANA – PADA HASTASANA (HALF MOON/HANDS TO FEED POSE)
+#### 2. ARDHA CHANDRASANA – PADA HASTASANA (HALF MOON/HANDS TO FEET POSE)
 Toes and heels touching, arms over your head, we bend to the right, to the left, backwards and forwards, your spine is warming up.
 
 
@@ -41,7 +41,7 @@ Toes and heels touching, arms over your head, we bend to the right, to the left,
 Now the fun begins, you open joint by joint. Here you focus on your knee, the heat stretches the tendons and the backside of your knee opens up, the fluid in the joint can reach the entire cartilage, nourishes and rebuilds it. Unfortunately the body dries up with age, as does the fluid within your joints, leaving behind crystals which grind away the cartilage. But not in Bikram Yoga, we simply dissolve them back into the fluid.
 
 But you will need “Bengal tiger strength“ and “English bulldog determination“ as Bikram says. You have to overcome your inner demon, which will be of great benefit in your life out there. You are stronger than you think, you can do it.
-
+<!--more-->
 
 #### 6. DANDAYAMANA – DHANURASANA (STANDING BOW PULLING POSE)
 This is the favorite pose for all those who could never live the dream of being a ballerina. Balance on one leg, almost like Denise Biellmann’s pirouette, but you just want to turn your spine sideways and move your internal organs from left to right and back again.

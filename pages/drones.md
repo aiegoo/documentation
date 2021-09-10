@@ -4,14 +4,14 @@ keywords: drones
 tags: [getting_started,drone]
 hide: false
 toc: true
-sidebar: mydoc_sidebar
+sidebar: other_sidebar
 permalink: drones.html
 summary: my drones I work with and at my disposal.
 collection: drones
 layout: page
-simple_map: true
-map_name: matlab
-box_number: 5
+complex_map: true
+map_name: usermap_drones
+box_number: 1
 excerpt_separator: <!--more-->
 ---
 

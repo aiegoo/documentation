@@ -23,6 +23,12 @@ entries:
   - title: Drones
     output: web, pdf
     url: /drones/
+    type: homepage
+    folderitems:
+
+    - title: drones overview
+      output: web
+      url: /drones_overview.html
 
   - title: Freelancers
     output: web, pdf
