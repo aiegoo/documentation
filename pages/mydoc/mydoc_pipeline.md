@@ -9,6 +9,17 @@ permalink: mydoc_pipeline.html
 folder: mydoc
 ---
 
+### add suffix to each file in a folder
+
+---bash
+for i in *.png; do mv "$i" "${i%.*}_3.6.14.png"; done
+# It replaces .png in all the .png files with _3.6.14.png.
+
+# ${i%.*} Anything after last dot would be cutdown. So .png part would be cutoff from the filename.
+
+mv $i ${i%.*}_3.6.14.png Rename original .png files with the filename+_3.6.14.png.
+---
+
 ### git colour output to a file
 
 You can pass -c color.ui=always to any git command and it will keep coloring on redirection. For example: git -c color.ui=always status > file
