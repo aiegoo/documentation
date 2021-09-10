@@ -93,16 +93,16 @@ Note that the y-axis scaling is different for different vehicles, but logs from 
 ![Low vibration QAV-R 5 Racer - FFT plot](images/drones/dev/vibrations_good_actuator_controls_fft.png)
 
 :::note
-The excellent vibration characteristics of the above frame mean that we can considerably increase the cutoff frequency of the [software filters](config_mc/filter_tuning.md) (reducing control latency).
+The excellent vibration characteristics of the above frame mean that we can considerably increase the cutoff frequency of the [software filters](filter_tuning.html) (reducing control latency).
 :::
 
 DJI F450 frame (good vibration).
 
-![Low vibration DJI F450 - FFT plot](images/drones/dev/flight_review/vibrations_f450_actuator_controls_fft.png)
+![Low vibration DJI F450 - FFT plot](images/drones/dev/vibrations_f450_actuator_controls_fft.png)
 
 S500 frame:
 
-![Low vibration S500 actuator controls - FFT plot](images/drones/dev/light_review/vibrations_s500_actuator_controls_fft.png)
+![Low vibration S500 actuator controls - FFT plot](images/drones/dev/vibrations_s500_actuator_controls_fft.png)
 
 :::note
 While the plot above looks good, the [Raw Acceleration graph for the same flight](#raw_acc_s500) shows that the vibration levels are a bit high for x and y.
