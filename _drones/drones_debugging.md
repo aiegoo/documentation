@@ -2,6 +2,7 @@
 layout: page
 name: debugging tool
 permalink: drones_debugging.html
+sidebar: other_sidebar
 type: "DJI, Assistant"
 link: https://github.com/aiegoo/portfolio/wiki/quad
 excerpt_separator: <!--more-->
@@ -16,19 +17,7 @@ excerpt_separator: <!--more-->
 #### overview
 
 
-|---
-| Type  | Details | Type  | Details 
-| :---: | ---  | :---: | ---  
-| frame |  | FC |  
-| motor |  | ESC |  
-| RC  |  | mode |  
-| weight |  | class |  
-| battery |  | air-time |  
-| configurator |  |  last updated |   
-|===
-| airframe from Busan
-
-# Log Analysis using Flight Review
+## Log Analysis using Flight Review
 
 The [Flight Review](http://logs.px4.io) plots for a flight can be used to analyze general vehicle condition.
 
