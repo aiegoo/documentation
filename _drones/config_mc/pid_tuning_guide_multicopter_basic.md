@@ -47,7 +47,7 @@ Then adjust the sliders (as discussed below) to improve the tracking of the resp
 - use Acro/Stabilized/Altitude mode to tune the rate controller
 - Use [Position mode](../flight_modes/position_mc.md) to tune the *Velocity Controller* and the *Position Controller*.
   Make sure to switch to the *Simple position control* mode so you can generate step inputs.
-  ![QGC PID tuning: Simple control selector](../../assets/mc_pid_tuning/qgc_mc_pid_tuning_simple_control.png)
+  ![QGC PID tuning: Simple control selector](images/drones/mc_pid_tuning/qgc_mc_pid_tuning_simple_control.png)
 :::
 
 ## Preconditions
@@ -55,11 +55,11 @@ Then adjust the sliders (as discussed below) to improve the tracking of the resp
 - You are using the QGroundControl [**daily build**](https://docs.qgroundcontrol.com/master/en/releases/daily_builds.html) (the latest tuning UI will be in the next release build after March 2021).
 - You have selected the closest matching [default airframe configuration](../config/airframe.md) for your vehicle.
   This should give you a vehicle that already flies.
-- You should have done an [ESC calibration](../advanced_config/esc_calibration.md).
-- If using PWM output: [PWM_MAIN_MIN](../advanced_config/parameter_reference.md#PWM_MAIN_MIN) is set correctly.
+- You should have done an [ESC calibration](_drones/advanced_config/esc_calibration.md).
+- If using PWM output: [PWM_MAIN_MIN](_drones/advanced_config/parameter_reference.md#PWM_MAIN_MIN) is set correctly.
   It needs to be set low, but such that the **motors never stop** when the vehicle is armed.
 
-  This can be tested in [Acro mode](../flight_modes/acro_mc.md) or in [Manual/Stabilized mode](../flight_modes/manual_stabilized_mc.md):
+  This can be tested in [Acro mode](_drones/flight_modes/acro_mc.md) or in [Manual/Stabilized mode](../flight_modes/manual_stabilized_mc.md):
   - Remove propellers
   - Arm the vehicle and lower the throttle to the minimum
   - Tilt the vehicle to all directions, about 60 degrees
@@ -74,7 +74,7 @@ The tuning procedure is:
 
 1. Arm the vehicle, takeoff, and hover (typically in [Position mode](../flight_modes/position_mc.md)).
 1. Open _QGroundControl_ **Vehicle Setup > PID Tuning**
-   ![QGC Rate Controller Tuning UI](../../assets/mc_pid_tuning/qgc_mc_pid_tuning_rate_controller.png)
+   ![QGC Rate Controller Tuning UI](images/drones/mc_pid_tuning/qgc_mc_pid_tuning_rate_controller.png)
 1. Select the **Rate Controller** tab.
 1. Confirm that the airmode selector is set to **Disabled**
 1. Set the *Thrust curve* value to: 0.3 (PWM, power-based controllers) or 1 (RPM-based ESCs)
