@@ -1,9 +1,15 @@
 ---
-author: Jimmy Johnson
+layout: page
+author: "Jimmy Johnson"
+name: "Follow me"
+permalink: follow_me.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/parrot
+excerpt_separator: <!--more-->
 ---
-
 ## Follow-Me Mode
 
+<!--more-->
 
 [<img src="images/drones/site/position_fixed.svg" title="Position fix required (e.g. GPS)" width="30px" />](../getting_started/flight_modes.md#key_position_fixed)
 
