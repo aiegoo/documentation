@@ -128,7 +128,7 @@ The tuning procedure is:
    - Use Position mode when tuning these controllers
    - Select the **Simple position control** option in the *Position control mode ...* selector (this allows direct control for the generation of step inputs)
    
-     ![QGC PID tuning: Simple control selector](../../assets/mc_pid_tuning/qgc_mc_pid_tuning_simple_control.png)
+     ![QGC PID tuning: Simple control selector](images/drones/mc_pid_tuning/qgc_mc_pid_tuning_simple_control.png)
 
 All done!
 Remember to re-enable airmode before leaving the setup.
