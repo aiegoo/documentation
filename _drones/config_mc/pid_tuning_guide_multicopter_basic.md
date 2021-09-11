@@ -32,7 +32,7 @@ PX4 uses **P**roportional, **I**ntegral, **D**erivative (PID) controllers (thes
 The _QGroundControl_ **PID Tuning** setup provides real-time plots of the vehicle setpoint and response curves. 
 The goal of tuning is to set the P/I/D values such that the _Response_ curve matches the _Setpoint_ curve as closely as possible (i.e. a fast response without overshoots).
 
-![QGC Rate Controller Tuning UI](../../assets/mc_pid_tuning/qgc_mc_pid_tuning_rate_controller.png)
+![QGC Rate Controller Tuning UI](images/drones/mc_pid_tuning/qgc_mc_pid_tuning_rate_controller.png)
 
 The controllers are layered, which means a higher-level controller passes its results to a lower-level controller.
 The lowest-level controller is the **rate controller**, followed by the **attitude controller**, and finally the **velocity & position controller**.
