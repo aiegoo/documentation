@@ -4,6 +4,7 @@ author: Jimmy Johnson
 
 ## Follow-Me Mode
 
+
 [<img src="images/drones/site/position_fixed.svg" title="Position fix required (e.g. GPS)" width="30px" />](../getting_started/flight_modes.md#key_position_fixed)
 
 *Follow Me* mode allows a multicopter to autonomously follow and track another system that is broadcasting its position using the [FOLLOW_TARGET](https://mavlink.io/en/messages/common.html#FOLLOW_TARGET) MAVLink message.
@@ -11,7 +12,7 @@ author: Jimmy Johnson
 The vehicle will automatically yaw to face and follow the target from a specified [relative position](#NAV_FT_FS), [horizontal separation](#NAV_FT_DST) and [height](#NAV_MIN_FT_HT) above the home position.
 By default it will follow from directly behind the target at a distance of 8 meters, and a height of 8 meters above the home/arming position.
 While in this mode no user input is required.
-<!--more-->
+
 
 :::tip
 PX4 currently ignores the altitude of/from the target and follows at a constant altitude above home.
