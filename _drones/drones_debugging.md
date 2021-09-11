@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 |
 | :-:
 | ![xugong](./images/xugong/Folded.jpg)
-| {::nomarkdown} {% include image.html file="xugong/Folded.jpg" caption="folded xugong frame" %} {:/nomarkdown}
+| folded xugong frame
 |===
 |
 
