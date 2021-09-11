@@ -1,10 +1,17 @@
 @startuml
-actor tony #SaddleBrown
-entity "Auth System" as authSys #lightGreen
-
-tony -> authSys: Authentication Request
-
-create wrappedRequest
-authSys -> wrappedRequest: new request()
-tony <-- authSys: response
-'!include ../../plantuml-styles/ae-copyright-footer.txt
+scale 2
+start
+:Good Morning, Tony;
+:Jogging, yoga;
+:Check cookie;
+while (if cookie?) is (is not done)
+:Prepare patty;
+endwhile
+fork
+:Eat;
+fork again
+:cook;
+end fork
+:Start a fine day;
+stop
+@enduml
