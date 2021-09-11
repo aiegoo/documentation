@@ -1009,8 +1009,10 @@ span.soft {
     }
 }
 
-@media (min-width: 992px) .container {
-    width: 1021px;
+@media (min-width: 992px) {
+  .container {
+    width: 1021px !important;
+  }
 }
 
 @media (max-width: 1110px) {
