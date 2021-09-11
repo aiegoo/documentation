@@ -11,6 +11,7 @@ author: Jimmy Johnson
 The vehicle will automatically yaw to face and follow the target from a specified [relative position](#NAV_FT_FS), [horizontal separation](#NAV_FT_DST) and [height](#NAV_MIN_FT_HT) above the home position.
 By default it will follow from directly behind the target at a distance of 8 meters, and a height of 8 meters above the home/arming position.
 While in this mode no user input is required.
+<!--more-->
 
 :::tip
 PX4 currently ignores the altitude of/from the target and follows at a constant altitude above home.
