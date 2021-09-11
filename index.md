@@ -78,7 +78,7 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 |
 | :-:
 | ![cartoon](https://imgs.xkcd.com/comics/automation.png)
-| ![test](out/test.svg "test")
+| ![test](out/test.svg)
 |================================================================
 |
 
