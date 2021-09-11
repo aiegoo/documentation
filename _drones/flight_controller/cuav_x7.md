@@ -18,6 +18,7 @@ CUAV has also provided a variety of carrier boards for you to choose from.
 :::note
 This flight controller is [manufacturer supported](../flight_controller/autopilot_manufacturer_supported.md).
 :::
+<!--more-->
 
 ## Features
 

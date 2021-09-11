@@ -14,6 +14,7 @@ excerpt_separator: <!--more-->
 PX4 does not manufacture this (or any) autopilot.
 Contact the [manufacturer](https://shop.holybro.com/) for hardware support or compliance issues.
 :::
+<!--more-->
 
 The *Pixhawk<sup>&reg;</sup> 4 Mini* autopilot is designed for engineers and hobbyists who are looking to tap into the power of *Pixhawk 4* but are working with smaller drones.
 *Pixhawk 4 Mini* takes the FMU processor and memory resources from the *Pixhawk 4* while eliminating interfaces that are normally unused.

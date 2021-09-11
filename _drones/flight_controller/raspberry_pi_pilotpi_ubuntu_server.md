@@ -4,6 +4,7 @@
 Ubuntu Server on RPi 4B consumes a lot of current and generates a lot of heat.
 Design for better heat dissipation and high power consumption when using this hardware.
 :::
+<!--more-->
 
 ## Developer Quick Start
 

@@ -3,6 +3,7 @@
 :::warning
 The Snapdragon Flight Autopilot has been [discontinued](../flight_controller/autopilot_experimental.md) and is no longer commercially available.
 For information about how it is/was used see [PX4 User Guide v1.11](https://docs.px4.io/v1.11/en/flight_controller/snapdragon_flight.html)
+<!--more-->
 
 PX4 does not manufacture this (or any) autopilot.
 Contact the [manufacturer](https://www.intrinsyc.com/) for hardware support or compliance issues.

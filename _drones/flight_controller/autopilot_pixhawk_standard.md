@@ -17,6 +17,7 @@ These boards are maintained, updated, tested and otherwise supported by the PX4 
 :::tip
 For more information about PX4 project autopilot board support levels see: [px4.io/autopilots/](https://px4.io/autopilots/).
 :::
+<!--more-->
 
 The boards in this category are:
 

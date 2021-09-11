@@ -25,10 +25,10 @@ The *3DR Pixhawk<sup>&reg;</sup> 1* autopilot is a popular general purpose fligh
 It runs PX4 on the [NuttX](https://nuttx.apache.org/) OS.
 
 
-![Pixhawk Image](../../assets/hardware/hardware-pixhawk.png)
+![Pixhawk Image](hw-px4/hardware-pixhawk.png)
 
 Assembly/setup instructions for use with PX4 are provided here: [Pixhawk Wiring Quickstart](../assembly/quick_start_pixhawk.md)
-
+<!--more-->
 
 ## Key Features
 

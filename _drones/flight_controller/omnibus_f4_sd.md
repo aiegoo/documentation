@@ -4,6 +4,7 @@
 PX4 does not manufacture this (or any) autopilot.
 Contact the manufacturer for support or compliance issues.
 :::
+<!--more-->
 
 The *Omnibus F4 SD* is a controller board designed for racers. 
 In contrast to a typical racer board it has some additional features, such as an SD card and a faster CPU.

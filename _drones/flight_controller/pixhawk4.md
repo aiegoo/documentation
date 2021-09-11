@@ -17,6 +17,7 @@ Contact the [manufacturer](https://shop.holybro.com/) for hardware support or co
 
 *Pixhawk 4*<sup>&reg;</sup> is an advanced autopilot designed and made in collaboration with Holybro<sup>&reg;</sup> and the PX4 team.
 It is optimized to run PX4 v1.7 and later, and is suitable for academic and commercial developers.
+<!--more-->
 
 It is based on the [Pixhawk-project](https://pixhawk.org/) **FMUv5** open hardware design and runs PX4 on the [NuttX](https://nuttx.apache.org/) OS.
 

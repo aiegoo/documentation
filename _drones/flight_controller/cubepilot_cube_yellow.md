@@ -14,6 +14,7 @@ excerpt_separator: <!--more-->
 PX4 does not manufacture this (or any) autopilot.
 Contact the [manufacturer](https://cubepilot.org/#/home) for hardware support or compliance issues.
 :::
+<!--more-->
 
 :::tip
 The PX4 dev team supports this flight controller as a footprint compatible replacement for Cube Black. We recommend however to consider products built on industry standards, such as the [Pixhawk Standards](https://pixhawk.org). This flight controller is not following the standard and uses a patented connector.

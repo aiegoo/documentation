@@ -18,6 +18,7 @@ This flight controller has been [discontinued](../flight_controller/autopilot_ex
 PX4 does not manufacture this (or any) autopilot.
 Contact the [manufacturer](https://store.cuav.net/) for hardware support or compliance issues.
 :::
+<!--more-->
 
 *CUAV v5*<sup>&reg;</sup> (previously "Pixhack v5") is an advanced autopilot designed and made by CUAV<sup>&reg;</sup>. 
 The board is based on the [Pixhawk-project](https://pixhawk.org/) **FMUv5** open hardware design.

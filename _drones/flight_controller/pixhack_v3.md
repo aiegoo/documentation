@@ -16,6 +16,7 @@ Contact the [manufacturer](https://store.cuav.net/) for hardware support or comp
 :::
 
 The CUAV *Pixhack V3* flight controller board is a flexible autopilot intended primarily for manufacturers of commercial systems.
+<!--more-->
 
 The board is a variant of the SOLO Pixhawk<sup>&reg;</sup> 2 (PH2) flight controller, which is in turn based on the [Pixhawk-project](https://pixhawk.org/) **FMUv3** open hardware design.
 It runs PX4 on the [NuttX](https://nuttx.apache.org/) OS, and is fully compatible with both PX4 or ArduPilot<sup>&reg;</sup> (APM) firmware.

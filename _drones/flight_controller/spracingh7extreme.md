@@ -4,6 +4,7 @@
 PX4 does not manufacture this (or any) autopilot.
 Contact the [manufacturer](https://shop.seriouslypro.com) for hardware support or compliance issues.
 :::
+<!--more-->
 
 The [SPRacingH7EXTREME](https://shop.seriouslypro.com/sp-racing-h7-extreme) is a feature packed FC/PDB with DUAL ICM20602 gyros, H7 400/480Mhz(+) CPU, high-precision BMP388 barometer, SD Card socket, current sensor, 8 easily accessible motor outputs, OSD, Microphone, Audio output, and more.
 

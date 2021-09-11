@@ -17,6 +17,7 @@ This list is not exhaustive - there are other compatible flight controllers and 
 :::tip
 You can also try PX4 on a [Complete Vehicle](complete_vehicles/README.md) (consumer drones and reference platforms that can run PX4).
 :::
+<!--more-->
 
 - [Pixhawk Series](pixhawk_series.html)
   - [Silicon Errata](silicon_errata.html)
@@ -30,7 +31,7 @@ You can also try PX4 on a [Complete Vehicle](complete_vehicles/README.md) (consu
   - [Holybro pix32 (FMUv2)](holybro_pix32.html)
   - [mRo Pixracer (FMUv4)](pixracer.html)
   - [mRo Pixhawk (FMUv2)](mro_pixhawk.html)
-- [Manufacturer-Supported Autopilots](autopilot_manufacturer_supported.html)
+  - [Manufacturer-Supported Autopilots](autopilot_manufacturer_supported.html)
   - [AirMind MindPX](mindpx.html)
   - [AirMind MindRacer](mindracer.html)
   - [CUAV X7](cuav_x7.html)

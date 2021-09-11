@@ -4,6 +4,7 @@
 PX4 does not manufacture this (or any) autopilot.
 Contact the [manufacturer](https://store.mrobotics.io/) for hardware support or compliance issues.
 :::
+<!--more-->
 
 The *mRo Pixhawk<sup>&reg;</sup>* is a hardware compatible version of the original [Pixhawk 1](../flight_controller/pixhawk.md).  It runs PX4 on the [NuttX](https://nuttx.apache.org/) OS. 
 

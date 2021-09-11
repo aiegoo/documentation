@@ -5,6 +5,7 @@
 ### OS Image
 
 The latest official [Raspberry Pi OS Lite](https://downloads.raspberrypi.org/raspios_lite_armhf_latest) image is always recommended.
+<!--more-->
 
 To install you must already have a working SSH connection to RPi.
 

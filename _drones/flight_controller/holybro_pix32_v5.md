@@ -4,6 +4,7 @@
 PX4 does not manufacture this (or any) autopilot.
 Contact the [manufacturer](https://shop.holybro.com/) for hardware support or compliance issues.
 :::
+<!--more-->
 
 [Pix32 v5](https://shop.holybro.com/pix32-v5_p1218.html)<sup>&reg;</sup> is an advanced autopilot flight controller designed and made by Holybro<sup>&reg;</sup>.
 It is optimized to run on PX4 firmware, which is intended for both academic and commercial developers.

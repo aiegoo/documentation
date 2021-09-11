@@ -25,6 +25,7 @@ These are *not supported* by the head revision of PX4 and are no longer no longe
 - [mRo AUAV-X2](../flight_controller/auav_x2.md)  (Pixhawk FMUv2)
 - [3DR Pixhawk 1](../flight_controller/pixhawk.md) (Pixhawk FMUv2)
 
+<!--more-->
 ## Complete Vehicles
 
 - [Intel® Aero RTF Drone](../complete_vehicles/intel_aero.md) ([Complete Vehicle](../complete_vehicles/README.md))

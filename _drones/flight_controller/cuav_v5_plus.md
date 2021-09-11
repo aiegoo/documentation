@@ -19,6 +19,7 @@ Contact the [manufacturer](https://store.cuav.net/) for hardware support or comp
 It was designed by CUAV<sup>&reg;</sup> in collaboration with the PX4 team.
 
 The autopilot is recommended for commercial systems integration, but is also suitable for academic research and any other use.
+<!--more-->
 
 ![V5+ AutoPilot - hero image](../../assets/flight_controller/cuav_v5_plus/v5+_01.png)
 

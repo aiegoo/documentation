@@ -18,8 +18,8 @@ Contact the [manufacturer](https://store-drotek.com/) for hardware support or co
 The Pixhawk<sup>&reg;</sup> 3 Pro is based on the FMUv4 hardware design (Pixracer) with some upgrades and additional features.
 The board was designed by [Drotek<sup>&reg;</sup>](https://drotek.com) and PX4.
 
-![Pixhawk 3 Pro hero image](../../assets/hardware/hardware-pixhawk3_pro.jpg)
-
+![Pixhawk 3 Pro hero image](hw-px4/hardware-pixhawk3_pro.jpg)
+<!--more-->
 :::note
 The main hardware documentation is here: https://drotek.gitbook.io/pixhawk-3-pro/hardware
 :::

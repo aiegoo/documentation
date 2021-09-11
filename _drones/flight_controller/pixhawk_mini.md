@@ -24,6 +24,7 @@ The Pixhawk Mini is based on the PX4 open-hardware project and has been optimize
 ![Pixhawk Mini](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_hero.jpg)
 
 Wiring information is available [below](#wiring).
+<!--more-->
 
 :::note
 This flight controller was designed by 3DR in collaboration with HobbyKing<sup>&reg;</sup>.

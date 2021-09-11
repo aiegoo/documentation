@@ -39,7 +39,7 @@ The [AUAV<sup>&reg;</sup>](http://www.auav.com/) *AUAV-X2 autopilot* is based on
   * Mounting Points: 30.5mm x 30.5mm 3.2mm diameter
   * Weight: 10.9g
 * Power OR-ing schematic with reverse voltage protection. 5V power module is required!
-
+<!--more-->
 ## Connectivity
 
 * 2.54mm headers:

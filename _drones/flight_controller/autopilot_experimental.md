@@ -21,7 +21,7 @@ For more information about PX4 project autopilot board support levels see: [px4.
 
 Boards in this category are fully supported, but are not following industry standards and might have sole-source supply chain risks.
 See the [list of Pixhawk standard boards](../flight_controller/autopilot_pixhawk_standard.md) for a list of products that are officially supported by PX4 and are following industry standards.
-
+<!--more-->
 ## Experimental Autopilots
 
 This category is for experimental autopilots (and autopilot "platforms") that are *not supported* by either the PX4 project team or by a manufacturer.

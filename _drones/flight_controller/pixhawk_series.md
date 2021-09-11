@@ -21,6 +21,7 @@ For computationally intensive tasks (e.g. computer vision) you will need a separ
 :::
 
 ## Key Benefits
+<!--more-->
 
 Key benefits of using a *Pixhawk series* controller include:
 * Software support - as PX4 reference hardware these are our best-maintained boards.
