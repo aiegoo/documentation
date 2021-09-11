@@ -1,3 +1,13 @@
+---
+layout: page
+name: "omnibus_f4_sd"
+permalink: omnibus_f4_sd.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # Omnibus F4 SD
 
 :::warning

@@ -1,7 +1,7 @@
 
 ---
 layout: page
-name: "ppixhawk4_mini"
+name: "pixhawk4_mini"
 permalink: pixhawk4_mini.html
 sidebar: other_sidebar
 type: "px4 flight controller"

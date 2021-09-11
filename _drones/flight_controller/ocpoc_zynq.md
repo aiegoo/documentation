@@ -1,3 +1,13 @@
+---
+layout: page
+name: "aerotenna ocpoc"
+permalink: aocpoc_zynq.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # Aerotenna OcPoC-Zynq Mini Flight Controller (Discontinued)
 
 :::warning

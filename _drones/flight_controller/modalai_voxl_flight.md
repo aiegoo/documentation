@@ -1,3 +1,13 @@
+---
+layout: page
+name: "modalai_voxl_flight"
+permalink: modalai_voxl_flight.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # ModalAI VOXL Flight
 
 :::warning

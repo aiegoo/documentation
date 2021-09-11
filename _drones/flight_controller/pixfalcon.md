@@ -1,3 +1,13 @@
+---
+layout: page
+name: "pixfalcon"
+permalink: pixfalcon.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # Pixfalcon Flight Controller (Discontinued)
 
 :::warning

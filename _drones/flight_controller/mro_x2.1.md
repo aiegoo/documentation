@@ -1,3 +1,13 @@
+---
+layout: page
+name: "mRo X2"
+permalink: mro_x2.1.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # mRo-X2.1 Autopilot
 
 :::warning

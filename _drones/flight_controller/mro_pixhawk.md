@@ -1,3 +1,13 @@
+---
+layout: page
+name: "mro pixhawk"
+permalink: mro_pixhawk.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # mRo Pixhawk Flight Controller (Pixhawk 1)
 
 :::warning

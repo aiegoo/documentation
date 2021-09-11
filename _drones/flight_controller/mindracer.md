@@ -1,4 +1,12 @@
-# MindRacer Hardware
+---
+layout: page
+name: "mindracer"
+permalink: mindracer.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
 
 :::warning
 PX4 does not manufacture this (or any) autopilot.

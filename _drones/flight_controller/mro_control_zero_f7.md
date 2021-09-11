@@ -1,3 +1,13 @@
+---
+layout: page
+name: "mro_control_zero"
+permalink: mro_control_zero_f7.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # mRo Control Zero F7 Flight Controller
 
 :::warning

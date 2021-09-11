@@ -1,3 +1,13 @@
+---
+layout: page
+name: "nxprddrone"
+permalink: nxp_rddrone_fmuk66.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # NXP RDDRONE-FMUK66 FMU
 
 :::warning

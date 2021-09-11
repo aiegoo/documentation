@@ -1,3 +1,13 @@
+---
+layout: page
+name: "holybr_pix32"
+permalink: holybro_pix32.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # Holybro pix32 Flight Controller
 
 :::warning

@@ -1,3 +1,13 @@
+---
+layout: page
+name: "kakutef7"
+permalink: kakutef7.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # Kakute F7
 
 :::warning

@@ -1,3 +1,13 @@
+---
+layout: page
+name: "mind_series"
+permalink: mind_series.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # (Air)Mind Series
 
 AirMind<sup>&reg;</sup> have created two new controller series branched from the [Pixhawk Series](../flight_controller/pixhawk_series.md). 

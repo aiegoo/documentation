@@ -1,3 +1,13 @@
+---
+layout: page
+name: "cuav_x7"
+permalink: cuav_x7.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # CUAV X7 Flight Controller
 
 :::warning

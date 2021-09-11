@@ -1,3 +1,13 @@
+---
+layout: page
+name: "modalai_fc_v1"
+permalink: modalai_fc_v1.html
+sidebar: other_sidebar
+type: "px4 flight controller"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # ModalAI Flight Core v1
 
 :::warning
