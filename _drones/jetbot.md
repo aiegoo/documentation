@@ -7,7 +7,8 @@ link: https://github.com/aiegoo/portfolio/wiki/jetbot
 excerpt_separator: <!--more-->
 ---
 ## Jetbot Nvidia Nano RAPA project
-
+<!--more-->
+     
 
 |---
 | Type  | Details | Type  | Details 
