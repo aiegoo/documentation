@@ -1,0 +1,10 @@
+@startuml
+actor tony #SaddleBrown
+entity "Auth System" as authSys #lightGreen
+
+tony -> authSys: Authentication Request
+
+create wrappedRequest
+authSys -> wrappedRequest: new request()
+tony <-- authSys: response
+'!include ../../plantuml-styles/ae-copyright-footer.txt

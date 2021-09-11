@@ -75,5 +75,6 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 ### I belive in time-management
 
 ![cartoon](https://imgs.xkcd.com/comics/automation.png)
+![test](/svg/LO_1Ri9034Jl-nKc7A273NTKeSAbz_85rcOeaHRludMKxj-JWA8AoPVdqSpONyLORRX5ny6IaYMfj3vprqMSD8tY8DPRfUOus9NEjHXk3N4XddX2MiV-zshV2eXpJxi_BEAUPjUS4DZw9FI3-u1YpWK56sXKpXdTibuofuHtPK-2aVG5suzNpwVt_qMAafCKkCsgbn273jIsksboP9aVzCLgHDanV4YvwdorlwHaqDR-x040 "test")
 
 {% include links.html %}
