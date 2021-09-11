@@ -1,3 +1,13 @@
+---
+layout: page
+name: "vibration isolation"
+permalink: vibration_isolation.html
+sidebar: other_sidebar
+type: "APM, Pixhawk4"
+link: https://github.com/aiegoo/portfolio/wiki/quad
+excerpt_separator: <!--more-->
+---
+
 # Vibration Isolation
 
 This topic shows how to determine whether vibration levels are too high, and lists some simple steps to improve vibration characteristics.
@@ -9,6 +19,7 @@ High vibration levels can cause a range of problems, including reduced flight ef
 
 Well-designed airframes damp/reduce the amplitude of specific structural resonances at the autopilot mounting location.
 Further isolation may be needed in order to reduce vibration to the level that sensitive components can handle (e.g. some flight controllers must be attached to the airframe using some form of anti-vibration foam/mount - while others are internally isolated).
+<!--more-->
 
 
 ## Vibration Analysis

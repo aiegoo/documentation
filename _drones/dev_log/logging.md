@@ -16,6 +16,7 @@ An optional interval parameter specifies the maximum logging rate of a certain t
 All existing instances of a topic are logged.
 
 The output log format is [ULog](../dev_log/ulog_file_format.md).
+<!--more-->]
 
 ## Usage
 By default, logging is automatically started when arming, and stopped when disarming.
