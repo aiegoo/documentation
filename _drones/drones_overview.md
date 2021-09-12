@@ -11,7 +11,7 @@ box_number: 1
 link: https://www.36io.co
 ---
 
-{% include image.html file="drones/hardware/drone_inflight.jpg" caption="Test flight after assembly" %}
+{% include image.html file="drones/hw_gallery/drone_inflight.jpg" caption="Test flight after assembly" %}
 
 
 Our class team made its first test flight after assembly.
