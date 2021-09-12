@@ -18,6 +18,6 @@ Our class team made its first test flight after assembly.
 
 
 {% include image_drones.html folder="hardware" %}
-{% include image_drones_dev.html folder="dev_gallery" %}
+{% include image_drone_dev.html folder="dev_gallery" %}
 
 [**Preview**]({{page.link}})
