@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContactSheetIISettings>
+  <source imageSource="Folder" path="D:\repos\portfolio\matlab\images\drones\hardware" includeSubfolders="false" groupImages="false"/>
+  <document units="pixels" width="150" height="200" resolution="120" resUnits="pixels/inch" mode="RGB Color" bitDepth="8-bit" colorProfile="sRGB IEC61966-2.1" flattenLayers="true"/>
+  <thumbnail place="across first" cols="2" rows="1" bestFit="true" useAutospacing="false" horz="10 px" vert="10 px"/>
+  <caption enabled="true">
+    <font name="ArialMT" size="10"/>
+  </caption>
+  <date>2021-09-12T10:39:18</date>
+  <version>2.2.14</version>
+  <locale>en_US</locale>
+</ContactSheetIISettings>
