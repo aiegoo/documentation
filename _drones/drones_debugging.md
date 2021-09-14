@@ -475,4 +475,19 @@ They show a vehicle that has borderline-acceptable vibration:
 
 ![Borderline vibration S500 x, y - raw accel. plot](images/drones/dev/vibrations_s500_accel.png)
 
+## CFD of Boeing 777 wing
+
+|---
+|
+| :-:
+| ![image](https://user-images.githubusercontent.com/42961200/133213858-f5bdcb8d-66b5-4ddd-a29d-51add0283715.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133214072-140505f6-1a8c-48b4-98f8-8c04d14e65ee.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133214125-21182044-4889-4140-ab05-10620d378a67.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133214163-eb64b6a4-8e38-470b-8611-87fc12242cee.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133214272-a1af4748-1f99-497b-ba94-17b00e6d2e4b.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133214317-015462b6-201a-410b-89ed-100547682640.png)
+
+
+
+
 [**Preview**]({{page.link}})
