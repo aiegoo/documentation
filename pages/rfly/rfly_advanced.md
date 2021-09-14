@@ -3,7 +3,7 @@ title: pixhawk tools advanced
 tags: [drone, getting_started, setup]
 keywords: "annotations, comments, feedback"
 last_updated: "August 11, 2021"
-summary: "rFlyeval project details where Matlab Mathwor Simulink were used for complete process of UAV and UAS."
+summary: "rFlyeval project details where Matlab Mathwork Simulink were used for complete process of UAV and UAS."
 sidebar: mydoc_sidebar
 permalink: rfly_advanced.html
 series: "RFLY series"
