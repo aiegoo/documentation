@@ -1,6 +1,7 @@
 repository: aiegoo/documentation
 url: aiegoo.github.io
-baseurl: /documentation
+#baseurl: /documentation
+baseurl: ""
 output: web
 imagesurl_yoga: "images/yoga/"
 imagesurl_yoga_hatha: "images/yoga/hatha/"
@@ -183,7 +184,9 @@ description: "This documentation site is intended to keep my past and current pr
 github: [metadata]
 
 plugins:
-  - jemoji
+  - jekyll-gist
+  - jekyll-spaceship
+#  - jemoji
 
 
 # Where things are
