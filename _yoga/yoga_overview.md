@@ -105,4 +105,51 @@ Vinyasa yoga can help you find better balance and stability, both on and off the
 
 Like most yoga styles, a vinyasa practice can lower anxiety and manage stress. It can even help you quit smoking.‌
 
+## Beat yoga
+### 비트요가 1 : 
+총 9개의 시리즈로 구성된 자세를 1시간 동안 수련합니다.
+
+1. Warm up
+
+2. Side stretch & Lunge
+
+3. Knee Flot & Pelvic Clocks
+
+4. Full Body Stretch
+
+5. Spine Stretch
+
+6. Single Leg Lift
+
+7. Swan & Swimming
+
+8. Bridge & Leg turning around
+
+9. Single Leg Stretch & Crunch
+
+
+### 비트요가 2 : 
+총 9개의 시리즈로 구성된 자세를 1시간 동안 수련합니다.
+
+
+1. Warm up : Angle Flow Sequence
+
+2. Chair Series
+
+3. Half moon Series
+
+4. Hero & Camel Series
+
+5. Scorpion Series
+
+6. Dog Series
+
+7. Mermaid Series
+
+8. Locust Series
+
+9. Crunch Series
+
+
+
 [**Preview**]({{page.link}})
