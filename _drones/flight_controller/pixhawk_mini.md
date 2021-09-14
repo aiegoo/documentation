@@ -21,7 +21,7 @@ It is about 1/3rd the size of the original Pixhawk and has more powerful process
 
 The Pixhawk Mini is based on the PX4 open-hardware project and has been optimized for the PX4 flight stack.
 
-![Pixhawk Mini](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_hero.jpg)
+![Pixhawk Mini](images/flight_controller/pixhawk_mini/pixhawk_mini_hero.jpg)
 
 Wiring information is available [below](#wiring).
 <!--more-->
