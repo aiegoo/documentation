@@ -77,7 +77,8 @@ The whole process of yoga is to take you from something that you know, and take 
 In yoga, these systems have been identified. To start with, you work with the body, then you move to the breath, then to the mind, then to the inner self. Like this many steps have been created. They are only different aspects. They are not really different types of yoga. In fact, we address all of them at once. It is important that in a very balanced way all of them are addressed at once, as one unit. Otherwise, if you work just with the body, it is only preparatory in nature. So, there is really no division as such. Yoga is a union of all these.
 
 
-## hatha and vinyasa {: .notoc}
+## hatha and vinyasa 
+{: .notoc}
 
 What Are Hatha and Vinyasa Yoga?
 Hatha yoga is practiced at a slower pace, with focus on the breath, controlled movements, and stretching. 
