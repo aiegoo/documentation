@@ -15,14 +15,14 @@ folder: mydoc
 - here's the resulting django project
 </div>
 
-<!-- <div markdown="1" align="center" > -->
+
 
 |---
 | Simulator  | Details   | Front-end integration | Details
 | :---: | :--- | :---: | :---
 | [![finalproject](https://github.com/aiegoo/finalproject/blob/master/misc/drone-logo.png)](https://youtu.be/E7Fl_TwEi_I) | Ardupilot and px4-based simulator | [![pf-frontend](https://github.com/aiegoo/finalproject/blob/master/misc/Artboard1.png)](https://youtu.be/8dkMs62s8-w) | Django, Postgresql, Vue, Axios and Kalman libraries. Live vehicle tracking 
 
-<!-- </div> -->
+
 
 ## Drone gui and navigator development
 
