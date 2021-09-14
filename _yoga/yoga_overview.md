@@ -15,7 +15,8 @@ link: https://www.36io.co
 
 The Types of Yoga: Understanding the Four Essential Paths
 Sadhguru looks at the four paths of yoga, and how the best way to progress is through the right combination of these four.
-the-four-paths-of-yoga
+
+## the-four-paths-of-yoga
  
  
 Yogi and mystic, Sadhguru answers a question on the different types of yoga and explains that any yoga that you do comes under four essential paths.
@@ -29,7 +30,7 @@ Yogi and mystic, Sadhguru answers a question on the different types of yoga and 
 {% include image.html file="yoga/yoga-type.jpg" caption="Two of the best-known styles of hatha
 are Iyengar and Ashtanga" %}
 
-4 types of yoga for 4 aspects
+### 4 types of yoga for 4 aspects
 These are the only four realities in your life: body, mind, emotion, and energy. Whatever you wish to do with yourself, it must be on these four levels. Whatever you wish to do, you can only do it with your body, your mind, your emotions or your energy. If you use your emotions and try to reach the ultimate, we call this bhakti yoga. That means the path of devotion. If you use your intelligence and try to reach the ultimate, we call this gnana yoga. That means the path of intelligence. If you use your body, or physical action to reach the ultimate, we call this karma yoga. That means the path of action. If you transform your energies and try to reach the ultimate, we call this kriya yoga. That means internal action.
 
 These are the only four realities in your life: body, mind, emotion, and energy. Whatever you wish to do with yourself, it must be on these four levels.
@@ -62,7 +63,7 @@ God said, "At last you four idiots got together!"
 
 If these dimensions don’t walk together, human beings will be one big mess. Right now, for most people, these dimensions are aligned in different directions. Your mind is thinking and feeling one way, your physical body is going another way, your energy another way. Yoga is simply the science of aligning these three dimensions.
 
-Yoga - The ultimate union
+### Yoga - The ultimate union
 When we say "yoga", for many of you it probably means some impossible physical postures. That is not what we are referring to here. Yoga simply means to be in perfect tune. When you are in yoga, your body, mind and energy and existence are in absolute harmony. When your body and mind are in a relaxed state and at a certain level of blissfulness, you can be free of so many nagging ailments. Let us say, you go and sit in your office with a nagging headache. Your headache is not a major disease, but just that throbbing could take away some of your enthusiasm for work and perhaps some of your capability for that day. But with the practice of yoga, your body and mind can be kept at the highest possible peak.
 
 When you experience everything as one in your consciousness, then you are in yoga
@@ -72,7 +73,6 @@ So we start with the body. Hatha yoga is a way of working with the body, discipl
 
 For example, someone sees a tree. A tree is just a tree. Most people don’t even see it. Somebody sees the tree in more detail. An artist sees every shade of it. Someone else not only sees the tree but also sees the divine in it. Seeing is not the same because the level of intensity with which you experience life is not the same.
 
-The whole process of yoga is to take you from something that you know, and take the next step into the unknown. We have made this yogic science almost like a physical science
 The whole process of yoga is to take you from something that you know, and take the next step into the unknown. We have made this yogic science almost like a physical science. Suppose you mix two parts of hydrogen and one part of oxygen, you get water. Even when a great scientist puts it together, it is water. Even if an idiot puts it together, it is only water. Similarly, in yoga too, whether a great yogi does it or an ignorant person does it, it does not matter. If he does the practices and sadhana properly, the result is there to be seen.
 In yoga, these systems have been identified. To start with, you work with the body, then you move to the breath, then to the mind, then to the inner self. Like this many steps have been created. They are only different aspects. They are not really different types of yoga. In fact, we address all of them at once. It is important that in a very balanced way all of them are addressed at once, as one unit. Otherwise, if you work just with the body, it is only preparatory in nature. So, there is really no division as such. Yoga is a union of all these.
 
