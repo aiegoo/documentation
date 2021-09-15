@@ -4,7 +4,7 @@ keywords: mycourse
 tags: [getting_started,mycourse]
 hide: false
 toc: true
-sidebar: mydoc_sidebar
+sidebar: other_sidebar
 permalink: mycourse.html
 summary: "courses I have basesed my skills on"
 collection: mycourse
