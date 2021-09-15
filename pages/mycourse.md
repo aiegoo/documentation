@@ -17,7 +17,7 @@ weight: 1
 excerpt_separator: <!--more-->
 ---
 
-{% include custom/series_mycourse_next.html %}
+{% include custom/series_mycourse.html %}
 
 ## my courses
 
