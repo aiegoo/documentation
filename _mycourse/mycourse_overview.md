@@ -11,7 +11,7 @@ map_name: usermap_mycourse
 box_number: 1
 order_number: 1
 series: "MYCOURSE series"
-weight: 2
+weight: 1
 link: https://www.36io.co
 ---
 
