@@ -51,7 +51,7 @@ entries:
       output: web
       url: /hatha.html
 
-  - title: my course home
+  - title: mycourse home
     output: web, pdf
     type: homepage
     folderitems:
