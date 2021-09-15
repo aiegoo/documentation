@@ -1,13 +1,13 @@
 ---
 layout: page
-name: Anatomy of Vinyasa
+name: lora
 sidebar: other_sidebar
-permalink: anatomy_vinyasa.html
-category: "Bikram"
+permalink: lora.html
+category: "lora"
 excerpt_separator: <!--more-->
 complex_map: true
-map_name: usermap_yoga
-box_number: 3
+map_name: usermap_mycourse
+box_number: 2
 link: https://www.36io.co
 ---
 
