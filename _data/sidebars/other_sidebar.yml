@@ -51,4 +51,13 @@ entries:
       output: web
       url: /hatha.html
 
+  - title: my course home
+    output: web, pdf
+    type: homepage
+    folderitems:
+
+    - title: mycourse
+      output: web
+      url: /mycourse.html
+
 # Copyright 2021 Google LLC
