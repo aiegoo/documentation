@@ -33,12 +33,12 @@ topnav_dropdowns:
     - title: Collection
       folderitems:
         - title: drones
-          url: /drones/
+          url: /drones_overview.html
         - title: freelancers
-          url: /freelancers/
+          url: /freelancer_overview.html
         - title: yoga
-          url: /yoga/
+          url: /yoga_overview.html
         - title: mycourse
-          url: /mycourse/
+          url: /mycourse_overview.html
 
 # Copyright 2021 Google LLC
