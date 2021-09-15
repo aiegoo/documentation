@@ -4,7 +4,6 @@ name: python
 sidebar: other_sidebar
 toc: true
 permalink: python.html
-collection: mycourse
 category: "python"
 excerpt_separator: <!--more-->
 complex_map: true
@@ -15,6 +14,8 @@ series: "MYCOURSE series"
 weight: 2
 link: https://www.36io.co
 ---
+
+## python course
 
 {% include custom/series_mycourse_next.html %}
 

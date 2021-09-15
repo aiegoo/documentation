@@ -3,7 +3,6 @@ layout: page
 name: four types of yoga
 sidebar: other_sidebar
 permalink: mycourse_overview.html
-collection: mycourse
 category: "overview"
 excerpt_separator: "<!--more-->"
 complex_map: true
@@ -15,9 +14,10 @@ weight: 1
 link: https://www.36io.co
 ---
 
-{% include custom/series_mycourse_next.html %}
 
 ## mycourse overview
+
+{% include custom/series_mycourse_next.html %}
 
 
 [**Preview**]({{page.link}})

@@ -16,6 +16,8 @@ weight: 3
 link: https://www.36io.co
 ---
 
+## C++ course
+
 {% include custom/series_mycourse_next.html %}
 
 ## its origin

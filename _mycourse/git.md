@@ -15,6 +15,8 @@ weight: 4
 link: https://www.36io.co
 ---
 
+## Git overview
+
 {% include custom/series_mycourse_next.html %}
 
 My first yoga book I bought during my trip to Thailand has set off a series of events that truly made me who I am now. Believe it or not.
