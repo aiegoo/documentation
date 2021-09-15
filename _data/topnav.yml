@@ -38,5 +38,7 @@ topnav_dropdowns:
           url: /freelancers/
         - title: yoga
           url: /yoga/
+        - title: mycourse
+          url: /mycourse/
 
 # Copyright 2021 Google LLC
