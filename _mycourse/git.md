@@ -4,6 +4,7 @@ name: git
 sidebar: other_sidebar
 summary: "git with vendors"
 permalink: git.html
+collection: mycourse
 category: "git"
 complex_map: true
 map_name: usermap_mycourse
