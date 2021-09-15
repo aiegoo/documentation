@@ -19,7 +19,407 @@ link: https://www.36io.co
 
 ## baseball
 <script src="https://gist.github.com/aiegoo/87938fa7607c2b7de1ce7bb031be9069.js"></script>
-https://gist.github.com/aiegoo/87938fa7607c2b7de1ce7bb031be9069
+[share](https://gist.github.com/aiegoo/87938fa7607c2b7de1ce7bb031be9069)
+
+Above code has some errors and I have implemented class (OOP) and than called the functions inside the the class using a object.
+
+```python
+# Baseball Game
+# By: Sergio Camalich
+# Website: www.camali.ch
+
+# Import modules
+import sys
+import random
+import time
+
+
+
+# Are we playing?
+class PLAY:
+
+    def __init__(self):
+        # Playing?
+        self.playing = 'y'
+
+        # Agreements
+        self.yes = ('y','yes')
+        self.no = ('n', 'no')
+
+        self.loses = 0
+        self.ties = 0
+
+        # Throws
+        self.strikes = 0
+        self.balls = 0
+        self.fouls = True
+
+        # Pitches
+        self.pitches = 0
+
+        # Hits
+        self.hits = ('catch', 'single', 'double', 'triple', 'homerun')
+        self.options = ('strike', 'ball', 'foul', 'hit', 'miss')
+
+        # Runs
+        self.position = 0
+        self.runs = 0
+
+        # Outs
+        self.outs = 0
+
+    def Play(self):
+
+    # YES WE ARE
+        while self.playing in self.yes:
+
+            # Swing
+            self.Swing()
+
+            # Play Again?
+            self.PlayAgain()
+
+    def Swing(self):
+
+        human = input('Press \'enter\' to swing or write \'q\' and enter to quit: ')
+
+        if human == 'q':
+            print ('\nThanks for playing!')
+            sys.exit()
+
+
+        while self.strikes < 3 or self.balls < 4:
+
+            # Random choice
+            batter = random.choice(self.options)
+            pitcher = random.choice(self.options)
+
+            if batter != pitcher:
+                # That's a strike!
+                if batter == self.options[0]:
+                    self.Strike()
+                # That's a ball!
+                elif batter == self.options[1]:
+                    self.Ball()
+                # That's a foul!
+                elif batter == self.options[2]:
+                    self.Foul()
+                # That's a hit!
+                elif batter == self.options[3]:
+                    self.Hit()
+                # That's a miss!
+                elif batter == self.options[4]:
+                    self.Miss()
+            # THAT'S A HOOOOOOOOOOOMMMMMMMMEEEEEE RUUUUUUNNNN!!!!!!!
+            elif batter == pitcher:
+                self.HomeRun()
+
+            if self.strikes == 3:
+                self.Out()
+            elif self.balls == 4:
+                print ('\nBASEBALL!\n')
+
+            # Strikes/Balls Status
+            self.Count()
+            
+            self.PlayAgain()
+
+# What is Strike()?
+    def Strike(self):
+
+        print ('\nThats:')
+
+        # global strikes
+
+        while self.strikes <= 3:
+
+            # This is a strike
+            self.strikes += 1
+
+            # Indeed it is...
+            print ('STRIKE ', self.strikes, '!\n', sep='')
+
+            # Strike 3!
+            if self.strikes == 3:
+                self.Out()
+
+            self.Count()
+
+            self.Swing()
+
+    # What is Ball()?
+    def Ball(self):
+
+        print ('\nThats:')
+
+        # global balls
+
+        while self.balls <= 4:
+
+            # This is a ball
+            self.balls += 1
+
+            # Indeed it is...
+            print ('BALL ', self.balls, '!\n', sep='')
+
+            # Ball 4!
+            if self.balls == 4:
+                self.Single()
+
+            self.Count()
+
+            self.Swing()
+
+    # What is Foul()?
+    def Foul(self):
+
+        print ('\nFoul Ball!')
+
+        # global strikes
+        # global fouls
+
+        if self.fouls == True:
+
+            while self.strikes < 2:
+
+                self.Strike()
+
+                self.Swing()
+
+            self.Count()
+
+            self.Swing()
+
+    # What is Hit()?
+    def Hit(self):
+
+        # global hits
+        
+        baseball = random.choice(self.hits)
+
+        if baseball == self.hits[0]:
+            print()  
+            self.Catch()  
+
+        elif baseball == self.hits[1]:
+            print()
+            self.Single()
+
+        elif baseball == self.hits[2]:
+            print()
+            self.Double()
+
+        elif baseball == self.hits[3]:
+            print()
+            self.Triple()
+
+        elif baseball == self.hits[4]:
+            print()
+            self.HomeRun()
+
+        self.PlayAgain()
+
+    # What is a Miss()?
+    def Miss(self):
+
+        print ('\nYou missed the ball!')
+
+        self.Strike()
+
+    # What is the count?
+    def Count(self):
+
+        # global pitches
+
+        self.pitches += 1
+
+        print ('Strikes: ', self.strikes, sep='')
+        print ('Balls: ', self.balls, '\n', sep='')
+        print ('Outs: ', self.outs)
+        print ('Runs: ', self.runs, '\n')
+
+        self.Pitches()
+
+    def Pitches(self):
+        
+        print('Pitches this batter: ', self.pitches, '\n')
+
+    # What is BaseBall()?
+    def BaseBall(self):
+
+        #global position
+
+        self.position += 1
+
+        print ('BAAAAAAAASSSSSEEEEEE BAAAAAAAALLL!')
+
+        self.Position()
+
+        self.PlayAgain()
+
+    # What is a HomeRun()?
+    def HomeRun(self):
+
+        # global position
+        # global strikes
+        # global balls
+
+        print ('\nTHAT\'S A HOOOOOOOOOOOMMMMMMMMEEEEEE RUUUUUUNNNN!!!!!!!\n')
+
+        self.position += 4
+
+        self.strikes = 0
+        self.balls = 0
+
+        self.Position()
+
+        self.NextBatter()    
+
+    # What is Triple()?
+    def Single(self):
+
+        # global position
+
+        self.position += 1
+
+        print ('SINGLE!')
+
+        self.Position()
+
+        self.NextBatter()
+
+    # What is Double()?
+    def Double(self):
+
+        # global position
+
+        self.position += 2
+
+        print ('DOUBLE!')
+
+        self.Position()
+
+        self.NextBatter()
+
+    # What is Triple()?
+    def Triple(self):
+
+        # global position
+
+        self.position += 3
+
+        print ('TRIPLE!')
+
+        self.Position()
+
+        self.NextBatter()
+
+    # What is Position()?
+    def Position(self):
+
+        # global position
+
+        if self.position <= 3:
+            print ('\nYou reached base', self.position, '\n')
+
+        elif self.position % 4:
+            self.AddRun()
+
+    # What is Run()?
+    def AddRun(self):
+        
+        # global runs
+        # global strikes
+        # global balls
+
+        self.strikes = 0
+        self.balls = 0
+
+        print ('You scored a run!\n')
+
+        self.runs += 1
+
+    # What is Catch()?
+    def Catch(self):
+
+        print ('The fielder caught the ball.')
+
+        self.Out()
+
+    # What is Out()?
+    def Out(self):
+
+        # global outs
+
+        print ('You are OUT!\n')
+
+        while self.outs <= 3:
+
+            self.outs += 1
+
+            print ('Outs: ', self.outs, '\n')
+
+            if self.outs == 3:
+                print ('End of inning')
+                sys.exit()
+
+            self.NextBatter()
+
+    # What is NextBatter()?
+    def NextBatter(self):
+        
+        #global playing
+        #global yes
+        #global no
+        #global pitches
+
+        self.pitches = 0
+
+        # Next batter?
+        self.playing = input('Bring next batter?(y/n): ')
+
+        # YAY! :D
+        while self.playing in self.yes:        
+            print()
+            self.Play()
+
+        # NAY! :(
+        if self.playing in self.no:
+            print ('\nThanks for playing!')
+            sys.exit()
+
+    # What is PlayAgain()?
+    def PlayAgain(self):
+
+        #global playing
+        #global yes
+        #global no
+
+        # global pitches
+
+        self.pitches = 0
+
+        # Play again?
+        self.playing = input('Would you like to play again?(y/n): ')
+
+        # YAY! :D
+        while self.playing in self.yes:        
+            print()
+            self.Play()
+
+        # NAY! :(
+        if self.playing in self.no:
+            print ('\nThanks for playing!')
+            sys.exit()
+
+# Can we FINALLY play?    
+# Play()
+
+obj = PLAY()
+obj.Play()
+
+
+```
 
 ### types
 10 Types of Pranayama Breathing (With Instructions)
