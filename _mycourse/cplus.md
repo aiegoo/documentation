@@ -13,7 +13,6 @@ box_number: 1
 order_number: 3
 series: "MYCOURSE series"
 weight: 3
-folder: mycourse
 link: https://www.36io.co
 ---
 
