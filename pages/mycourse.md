@@ -18,6 +18,7 @@ excerpt_separator: <!--more-->
 ---
 
 {% include custom/series_mycourse.html %}
+{% include custom/series_mycourse_next.html %}
 
 ## my courses
 
