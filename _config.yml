@@ -42,7 +42,9 @@ exclude:
   - .gitignore
   - vendor
 # these are the files and directories that jekyll will exclude from the build
-
+include:
+ - _mycourse
+# to enable series site.page
 feedback_subject_line: You are my best candidate!
 
 feedback_email: onofftony@gmail.com
