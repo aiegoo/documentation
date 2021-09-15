@@ -14,10 +14,10 @@ weight: 1
 link: https://www.36io.co
 ---
 
+{% include custom/series_mycourse_next.html %}
 
 ## mycourse overview
 
-{% include custom/series_mycourse_next.html %}
 
 
 [**Preview**]({{page.link}})

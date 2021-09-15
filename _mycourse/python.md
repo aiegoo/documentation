@@ -15,9 +15,11 @@ weight: 2
 link: https://www.36io.co
 ---
 
+{% include custom/series_mycourse_next.html %}
+
 ## python course
 
-{% include custom/series_mycourse_next.html %}
+
 
 ## baseball
 <script src="https://gist.github.com/aiegoo/87938fa7607c2b7de1ce7bb031be9069.js"></script>

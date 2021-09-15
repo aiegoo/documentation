@@ -16,9 +16,11 @@ weight: 3
 link: https://www.36io.co
 ---
 
+{% include custom/series_mycourse_next.html %}
+
 ## C++ course
 
-{% include custom/series_mycourse_next.html %}
+
 
 ## its origin
 Once known mainly as the “yoga of the stars,” the Bikram style of hatha has spread from Beverly
