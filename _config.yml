@@ -96,6 +96,11 @@ collections:
       - anatomy_vinyasa.md
       - bikram.md      
       - ashtanga.md
+  mycourse:
+    output: true
+    people: true
+    permalink: /mycourse/
+    
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
@@ -153,6 +158,20 @@ defaults:
   # _yoga
   - scope:
       path: "/yoga/"
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      comments: false
+      sidebar: other_sidebar
+      topnav: topnav
+      toc: true
+      show_excerpts: true
+
+  # _mycourse
+  - scope:
+      path: "/mycourse/"
       type: portfolio
     values:
       layout: single
