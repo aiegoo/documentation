@@ -17,8 +17,7 @@ link: https://www.36io.co
 My first yoga book I bought during my trip to Thailand has set off a series of events that truly made me who I am now. Believe it or not.
 
 
-<!-- {% include image_gallery.html folder="hatha" %}
-
+<!-- 
 {% include image.html file="yoga/1standingsequence.jpg" caption="Standing sequence" %}
 {% include image.html file="yoga/2backbend.jpg" caption="Backbend series" %}
 {% include image.html file="yoga/3primaryseries.jpg" caption="Primary series" %}
