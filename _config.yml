@@ -205,7 +205,7 @@ github: [metadata]
 plugins:
   - jekyll-gist
   - jekyll-spaceship
-#  - jemoji
+  - jemoji
 
 
 # Where things are
