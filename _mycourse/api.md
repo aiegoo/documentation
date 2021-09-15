@@ -1,13 +1,13 @@
 ---
 layout: page
-name: Vinyasa Flow
+name: api
 sidebar: other_sidebar
-permalink: vinyasaflow.html
-category: "Vinyasa"
+permalink: api.html
+category: "api"
 excerpt_separator: <!--more-->
 complex_map: true
-map_name: usermap_yoga
-box_number: 3
+map_name: usermap_mycourse
+box_number: 2
 link: https://www.36io.co
 ---
 
