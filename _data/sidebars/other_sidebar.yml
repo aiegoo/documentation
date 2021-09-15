@@ -32,7 +32,7 @@ entries:
 
   - title: Freelancers
     output: web, pdf
-    url: /freelancers/
+    url: /freelancers.html
 
   - title: Yoga Home
     output: web, pdf
