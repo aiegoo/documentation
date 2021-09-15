@@ -12,6 +12,8 @@ layout: page
 complex_map: true
 map_name: usermap_mycourse
 box_number: 1
+series: "MYCOURSE series"
+weight: 1
 excerpt_separator: <!--more-->
 ---
 
