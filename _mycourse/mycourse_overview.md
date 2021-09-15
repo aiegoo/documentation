@@ -3,7 +3,7 @@ layout: page
 name: four types of yoga
 sidebar: other_sidebar
 permalink: mycourse_overview.html
-category: "overview"
+title: "overview"
 excerpt_separator: "<!--more-->"
 complex_map: true
 map_name: usermap_mycourse

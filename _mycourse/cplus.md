@@ -5,7 +5,7 @@ summary: "C++"
 sidebar: other_sidebar
 permalink: cplus.html
 collection: mycourse
-category: "cplus"
+title: "cplus"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_mycourse

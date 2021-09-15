@@ -4,7 +4,7 @@ name: python
 sidebar: other_sidebar
 toc: true
 permalink: python.html
-category: "python"
+title: "python"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_mycourse
