@@ -44,6 +44,10 @@ exclude:
 # these are the files and directories that jekyll will exclude from the build
 include:
  - _mycourse
+ - _wiki
+ - _yoga
+ - _drones
+ - _tags
 # to enable series site.page
 feedback_subject_line: You are my best candidate!
 
@@ -211,7 +215,9 @@ defaults:
       search: true
       tooltip: true
 
-
+paginate: 10
+paginator_path: "/wiki"
+paginate_path: "/wiki/page:num/"
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
