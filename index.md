@@ -82,4 +82,5 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 |================================================================
 |
 
+{% include latest.html %}
 {% include links.html %}
