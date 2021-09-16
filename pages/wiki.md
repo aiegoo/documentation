@@ -1,6 +1,6 @@
 ---
 title: "🌱ROOT"
-layout: post
+layout: page
 summary: "journal hopeful"
 sidebar: other_sidebar
 collection: wiki
