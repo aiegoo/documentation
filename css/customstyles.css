@@ -1597,3 +1597,38 @@ h4.panel-title {
 .gallery-box > .img-gallery:hover  {
     z-index: 999;
 }
+
+
+/* latest.html and blog style from kramdown-kn */
+// 작성에 참조한 링크 : https://developer.mozilla.org/ko/docs/Web/HTML/Element/kbd
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+// 작성에 참조한 링크: http://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html
+.PageNavigation {
+	font-size: 14px;
+	display: block;
+	width: auto;
+	overflow: hidden;
+}
+
+.PageNavigation a {
+	display: block;
+	float: left;
+	margin: 1em 0;
+}
+
+.PageNavigation .next {
+	float: right;
+}
