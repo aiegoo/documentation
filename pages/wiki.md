@@ -1,6 +1,7 @@
 ---
-layout  : category
-title   : ROOT
+title   : "🌱ROOT"
+layout  : post
+summary: "journal hopeful"
 sidebar : other_sidebar
 collection: wiki
 excerpt_separator: <!--more-->
@@ -9,8 +10,8 @@ toc     : true
 public  : true
 comment : false
 updated : 2021-09-17 18:00:13 +0900
-regenerate: true
 ---
+
 
 ## wiki
 {% assign wiki = site.wiki | sort:"date" | reverse %}
