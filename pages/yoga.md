@@ -17,7 +17,7 @@ layout: page
 {% for yoga in yoga %}
 <h2>
      <a href="{{ yoga.url | prepend: site.baseurl }}">
-     {{ yoga.name }} - {{ yoga.category }}
+     {{ yoga.name }} - {{ yoga.keywords }}
      </a>
 </h2>
 <p> {{ yoga.excerpt | markdownify | truncateword: 50 | strip_html }} </p>

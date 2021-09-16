@@ -105,7 +105,7 @@ summary: "my life-long passion"
           {% for yoga in yogas %}
           <h2>
               <a href="{{ yoga.url | prepend: site.baseurl }}">
-              {{ yoga.name }} - {{ yoga.category }}
+              {{ yoga.name }} - {{ yoga.keywords }}
               </a>
           </h2>
           <p>{{ yoga.excerpt | markdownify | truncatewords: 50  }}</p>

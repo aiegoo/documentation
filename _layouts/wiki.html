@@ -105,7 +105,7 @@ summary: "a journal hopeful"
           {% for wiki in wiki %}
           <h2>
               <a href="{{wiki.url | prepend: site.baseurl }}">
-              {{ wiki.name }} - {{ wiki.updated }}
+              {{ wiki.title }} - {{ wiki.updated }}
               </a>
           </h2>
           <p>{{ wiki.excerpt | markdownify | truncatewords: 50  }}</p>
