@@ -8,7 +8,7 @@
         {% for pg in documents %}{% if pg.public != false and pg.title != 'wiki' %}
             
                 <div>
-                    <a class="post-link" href="{{ pg.url }}">
+                    <a class="post-link" href="{{ pg.url }}" style=" text-decoration: none;">
                         <div class="post-meta" style="line-height:1.1rem;">{{ pg.updated | date: "%Y.%m.%d" }} - {{ pg.title }}</div>
                         <div class="post-excerpt">{{ pg.summary }}</div>
                         {% if pg.tags %}
