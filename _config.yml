@@ -44,6 +44,8 @@ exclude:
 # these are the files and directories that jekyll will exclude from the build
 include:
  - _mycourse
+ - _yoga
+ - _drones
 # to enable series site.page
 feedback_subject_line: You are my best candidate!
 
@@ -208,6 +210,7 @@ plugins:
   - jekyll-gist
   - jekyll-spaceship
   - jemoji
+  - jekyll-feed
 
 
 # Where things are
