@@ -4,9 +4,9 @@
     <ul class="post-list leaders" style="padding-left: 1em;">
 {% for pg in documents %}{% if pg.public != false and pg.title != 'wiki' %}
         <li>
-            <div style="line-height:1.1rem; height: 1em;">
+            <div>
                 <a class="post-link" href="{{ pg.url }}">
-                    <div class="post-meta">{{ pg.updated | date: "%Y.%m.%d" }} - {{ pg.title }}</div>
+                    <div class="post-meta" style="line-height:1.1rem;">{{ pg.updated | date: "%Y.%m.%d" }} - {{ pg.title }}</div>
                     <div class="post-excerpt">{{ pg.summary }}</div>
         {% if pg.tags %}
                     <ul class="tag-list"><li class="post-tag">{{ pg.tags }}</li></ul>
