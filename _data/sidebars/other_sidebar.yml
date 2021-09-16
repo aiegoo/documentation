@@ -60,4 +60,13 @@ entries:
       output: web
       url: /mycourse.html
 
+  - title: wiki home
+    output: web, pdf
+    type: homepage
+    folderitems:
+
+    - title: wiki
+      output: web
+      url: /wiki.html
+
 # Copyright 2021 Google LLC
