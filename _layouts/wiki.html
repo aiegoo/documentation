@@ -102,7 +102,7 @@ summary: "a journal hopeful"
         <!-- Content Column -->
         <div class="{{content_col_size}}" id="tg-sb-content">
         {% assign wiki = site.wiki |  sort:"date" %}
-          {% for wiki in wiki %}
+          {% for wiki in wikis %}
           <h2>
               <a href="{{wiki.url | prepend: site.baseurl }}">
               {{ wiki.title }} - {{ wiki.updated }}
