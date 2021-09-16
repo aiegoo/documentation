@@ -21,26 +21,6 @@
 {% endif %}{% endfor %}
     </ul>
     </div> <!-- end of row -->
-<!--
-{% assign documents = site.mycourse | sort: 'updated' | reverse %}
-<div id="app" class="post post-article">
-    <H3 class="post-title">최근 변경된 문서</H3>
-    <ul class="post-list leaders" style="padding-left: 1em;">
-{% for pg in documents %}{% if pg.public != false and pg.title != 'wiki' %}
-        <li>
-            <div>
-                <a class="post-link" href="{{ pg.url }}">
-                    <div class="post-meta" style="line-height:1.1rem;">{{ pg.updated | date: "%Y.%m.%d" }} - {{ pg.title }}</div>
-                    <div class="post-excerpt">{{ pg.summary }}</div>
-        {% if pg.tags %}
-                    <ul class="tag-list"><li class="post-tag">{{ pg.tags }}</li></ul>
-        {% endif %}
-                </a>
-            </div>
-        </li>
-{% endif %}{% endfor %}
-    </ul>
-</div>
--->
+
 <script src="/js/axios.min.js"></script>
 <script async src="/js/parent.js"></script>
