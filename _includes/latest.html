@@ -1,7 +1,6 @@
-<!-- Page Content -->
-    <!-- Content Row -->
     <div class="row">
-        {% assign documents = site.mycourse | sort: 'updated' | reverse %}        
+        {% assign documents = site.mycourse | sort: 'updated' | reverse %}       
+        {% assign content_col_size = "col-md-6" %} 
         <!-- Content Column -->
         <H3 class="post-title">최근 변경된 문서</H3>
         <div class="{{content_col_size}}" id="tg-sb-content">
@@ -12,15 +11,15 @@
                 <a class="post-link" href="{{ pg.url }}">
                     <div class="post-meta" style="line-height:1.1rem;">{{ pg.updated | date: "%Y.%m.%d" }} - {{ pg.title }}</div>
                     <div class="post-excerpt">{{ pg.summary }}</div>
-        {% if pg.tags %}
+                    {% if pg.tags %}
                     <ul class="tag-list"><li class="post-tag">{{ pg.tags }}</li></ul>
-        {% endif %}
+                    {% endif %}
                 </a>
             </div>
         </li>
-{% endif %}{% endfor %}
+        {% endif %}{% endfor %}
     </ul>
-    </div> <!-- end of row -->
+    </div>
 
 <script src="/js/axios.min.js"></script>
 <script async src="/js/parent.js"></script>
