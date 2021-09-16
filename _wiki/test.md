@@ -1,9 +1,10 @@
 ---
+title: test 1
 layout  : wiki
-title   : test 1
+sidebar: ohter_sidebar
 summary : test summary
 date    : 2021-08-26 21:39:45 +0900
-tags    : test wiki
+tags    : wiki
 toc     : true
 public  : true
 parent  : index
