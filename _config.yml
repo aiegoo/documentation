@@ -205,7 +205,7 @@ defaults:
   -
     scope:
       path: "/wiki/"
-      type: "wiki"
+      type: "post"
     values:
       layout: "page"
       search: true
