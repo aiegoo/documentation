@@ -12,7 +12,7 @@ regenerate: true
 ---
 
 ## wiki
-{% assign yoga = site.wiki | sort:"date" | reverse %}
+{% assign wiki = site.wiki | sort:"date" | reverse %}
 {% for wiki in wiki %}
 <h2>
      <a href="{{ wiki.url | prepend: site.baseurl }}">

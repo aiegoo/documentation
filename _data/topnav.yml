@@ -41,6 +41,6 @@ topnav_dropdowns:
         - title: mycourse
           url: /mycourse.html
         - title: wiki
-          url: /wiki.html
+          url: wiki.html
 
 # Copyright 2021 Google LLC
