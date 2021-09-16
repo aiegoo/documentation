@@ -1,7 +1,7 @@
 {% assign documents = site.mycourse | sort: 'updated' | reverse %}
-<div id="app" class="post post-article">
+<div id="app" class="post post-article" itemscope itemtype="https://schema.org/BlogPosting">
     <H3 class="post-title">최근 변경된 문서</H3>
-    <ul class="post-list">
+    <ul class="post-list" itemprop="articleBody">
 {% for pg in documents %}{% if pg.public != false and pg.title != 'wiki' %}
         <li>
             <div>
