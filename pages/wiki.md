@@ -11,3 +11,13 @@ updated : 2021-09-17 18:00:13 +0900
 regenerate: true
 ---
 
+## wiki
+{% assign yoga = site.wiki | sort:"date" | reverse %}
+{% for wiki in wiki %}
+<h2>
+     <a href="{{ wiki.url | prepend: site.baseurl }}">
+     {{ wiki.name }} - {{ wiki.updated }}
+     </a>
+</h2>
+<p> {{ wiki.excerpt | markdownify | truncateword: 50 | strip_html }} </p>
+{% endfor %}
