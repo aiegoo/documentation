@@ -21,21 +21,18 @@ folder: mydoc
 <script src="js/jquery.ba-throttle-debounce.min.js"></script>
 {% endunless %}
 
-      <div class="filter-options">
-      <button class="btn btn-primary" data-group="all">All</button>
-      <button class="btn btn-primary" data-group="getting_started">Getting Started</button>
-      <button class="btn btn-primary" data-group="formatting">Formatting</button>
-      <button class="btn btn-primary" data-group="publishing">Publishing</button>
-      <button class="btn btn-primary" data-group="content-types">Content types</button>
-          <button class="btn btn-primary" data-group="single_sourcing">Single Sourcing</button>
-      <button class="btn btn-primary" data-group="special_layouts">Special Layouts</button>
-    </div>      
+<div class="filter-options">
+  <button class="btn btn-primary" data-group="all">All</button>
+  <button class="btn btn-primary" data-group="getting_started">Getting Started</button>
+  <button class="btn btn-primary" data-group="formatting">Formatting</button>
+  <button class="btn btn-primary" data-group="publishing">Publishing</button>
+  <button class="btn btn-primary" data-group="content-types">Content types</button>
+  <button class="btn btn-primary" data-group="single_sourcing">Single Sourcing</button>
+  <button class="btn btn-primary" data-group="special_layouts">Special Layouts</button>
+</div>
 
 <div id="grid" class="row">
-
-
     <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["getting_started"]'>
-
                <div class="panel panel-default">
                <div class="panel-heading">Getting started</div>
                <div class="panel-body">
@@ -50,13 +47,9 @@ folder: mydoc
                 {% endfor %} 
                   </ul>
                </div>
-            </div>
-    
+            </div>    
     </div>
-   
-
     <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["content-types"]'>
-
         <div class="panel panel-default">
             <div class="panel-heading">Content types</div>
             <div class="panel-body">
@@ -71,14 +64,9 @@ folder: mydoc
                     {% endfor %}
                 </ul>
             </div>
-        </div>
-        
+        </div>        
     </div>
-
-
-
     <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["formatting"]'>
-
                 <div class="panel panel-default">
                <div class="panel-heading">Formatting</div>
                <div class="panel-body">
@@ -94,11 +82,8 @@ folder: mydoc
                   </ul>
                </div>
             </div>
-
     </div>
-
-    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["single_sourcing"]'>
-         
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["single_sourcing"]'>         
       <div class="panel panel-default">
                <div class="panel-heading">Single Sourcing</div>
                <div class="panel-body">These topics cover strategies for single_sourcing. Single sourcing refers to strategies for re-using the same source in different outputs for different audiences or purposes.
@@ -113,11 +98,8 @@ folder: mydoc
                </ul>
             </div>
          </div>
-
     </div>
-
-       <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["publishing"]'>
-
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["publishing"]'>
            <div class="panel panel-default">
                <div class="panel-heading">Publishing</div>
                <div class="panel-body">When you're building, publishing, and deploying your Jekyll site, you might find these topics helpful.
@@ -132,11 +114,8 @@ folder: mydoc
                    </ul>
                </div>
             </div>
-
     </div>
-
-        <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["special_layouts"]'>
-
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["special_layouts"]'>
              <div class="panel panel-default">
                <div class="panel-heading">Special Layouts</div>
                <div class="panel-body">
@@ -152,17 +131,12 @@ folder: mydoc
                   </ul>
                </div>
             </div>
-
     </div>
           <!-- sizer -->
-      <div class="col-xs-6 col-sm-4 col-md-1 shuffle_sizer"></div>          
-
-
+      <div class="col-xs-6 col-sm-4 col-md-1 shuffle_sizer"></div>
     </div><!-- /#grid -->
-
 {% unless site.output == "pdf" %}
 {% include initialize_shuffle.html %}
 {% endunless %}
-
 {{site.data.alerts.note}} This was mostly an experiment to see if I could break away from the hierarchical TOC and provide a different way of arranging the content. However, this layout is somewhat problematic because it doesn't allow you to browse other navigation options on the side while viewing a topic.{{site.data.alerts.end}}
 
