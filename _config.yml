@@ -111,7 +111,7 @@ collections:
     permalink: /tags/
   wiki:
       output: true
-      permalink: /:collection/:path/
+      permalink: /wiki/
 
 
     
