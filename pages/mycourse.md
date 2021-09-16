@@ -1,14 +1,14 @@
 ---
 title: "🌿 mycourse"
 keywords: mycourse
-tags: [getting_started,mycourse]
+tags: [getting_started, mycourse]
 hide: false
 toc: true
 sidebar: other_sidebar
 permalink: mycourse.html
 summary: "courses I have basesed my skills on"
 collection: mycourse
-layout: page
+layout: default
 complex_map: true
 map_name: usermap_mycourse
 box_number: 1

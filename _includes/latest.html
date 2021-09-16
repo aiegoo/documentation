@@ -1,7 +1,7 @@
 {% assign documents = site.mycourse | sort: 'updated' | reverse %}
 <div id="app" class="post post-article">
     <H3 class="post-title">최근 변경된 문서</H3>
-    <ul class="post-list leaders" line-height="0.5rem">
+    <ul class="post-list leaders" style="line-height:0.5rem; height: 0.5em;">
 {% for pg in documents %}{% if pg.public != false and pg.title != 'wiki' %}
         <li>
             <div>
@@ -9,7 +9,7 @@
                     <div class="post-meta">{{ pg.updated | date: "%Y.%m.%d" }} - {{ pg.title }}</div>
                     <div class="post-excerpt">{{ pg.summary }}</div>
         {% if pg.tags %}
-                    <ul class="tag-list"><li class="post-tag">{{ pg.tag }}</li></ul>
+                    <ul class="tag-list"><li class="post-tag">{{ pg.tags }}</li></ul>
         {% endif %}
                 </a>
             </div>
