@@ -1,7 +1,7 @@
 {% assign documents = site.mycourse | sort: 'updated' | reverse %}
 <div id="app" class="post post-article">
     <H3 class="post-title">최근 변경된 문서</H3>
-    <ul class="post-list leaders" style="line-height:0.5rem; height: 0.5em;">
+    <ul class="post-list leaders" style="line-height:1.1rem; height: 1em;">
 {% for pg in documents %}{% if pg.public != false and pg.title != 'wiki' %}
         <li>
             <div>
@@ -17,3 +17,5 @@
 {% endif %}{% endfor %}
     </ul>
 </div>
+<script src="/js/axios.min.js"></script>
+<script async src="/js/parent.js"></script>
