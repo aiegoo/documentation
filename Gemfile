@@ -17,3 +17,10 @@ gem "jekyll-spaceship"
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform? # for Winodows polling issue
 gem "webrick", "~> 1.7"
+
+# from kramdown-kn for latest post
+
+gem 'tzinfo', '~> 1.2'
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'jekyll-paginate'
