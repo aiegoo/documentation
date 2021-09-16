@@ -105,6 +105,10 @@ collections:
   tags:
     output: false
     permalink: /tags/
+  wiki:
+      output: true
+      permalink: /:collection/:path/
+
 
     
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
@@ -197,6 +201,16 @@ defaults:
       layout: "page"
       search: true
       tooltip: true
+  # wiki
+  -
+    scope:
+      path: "/wiki/"
+      type: "wiki"
+    values:
+      layout: "page"
+      search: true
+      tooltip: true
+
 
 # these are defaults used for the frontmatter for these file types
 
