@@ -1,13 +1,15 @@
 ---
 title: test 1
-layout  : wiki
+layout  : page
+permanlink: test.html
+collection: wiki
 sidebar: ohter_sidebar
 summary : test summary
 date    : 2021-08-26 21:39:45 +0900
 tags    : wiki
 toc     : true
 public  : true
-parent  : index
+parent  : default
 latex   : true
 ---
 
