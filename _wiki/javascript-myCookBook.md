@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 name: Javascript basics 
 permalink: javascript-myCookBook.html
 sidebar: other_sidebar

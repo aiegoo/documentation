@@ -1,6 +1,6 @@
 ---
 name: test 1
-layout: page
+layout: post
 permanlink: test.html
 collection: wiki
 sidebar: ohter_sidebar

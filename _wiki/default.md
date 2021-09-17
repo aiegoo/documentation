@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 name: ROOT
 permalink: default.html
 sidebar: other_sidebar

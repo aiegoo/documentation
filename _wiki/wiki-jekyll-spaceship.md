@@ -1,6 +1,6 @@
 ---
 name: jekyll-spaceship
-layout: page
+layout: post
 permalink: wiki-jekyll-spaceship.html
 sidebar: other_sidebar
 collection: wiki
