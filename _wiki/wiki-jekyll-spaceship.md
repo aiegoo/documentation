@@ -179,6 +179,7 @@ toc: true
 
 ### Cell Markdown
 
+{% raw %}
 <style>
 .td-img img { width: 138px; }
 </style>
@@ -226,12 +227,13 @@ toc: true
 
 [cell-image]: https://jekyllrb.com/img/octojekyll.png
 {:height="138px"}
-
+{% endraw %}
 
 ### Cell Inline Attributes
 
 * attribute definitions (ALDs) 를 사용하는 방법
-* 
+  
+  {% raw %}
   ```liquid
   {:ref-name: #id .cls1 .cls2}
   {:second: ref-name #id-of-other title="hallo you"}
@@ -264,7 +266,7 @@ toc: true
 | ^^      | Blue {: style="background: blue; color: white" }            |||
 | ^^      | Black {: color-style text-style}                            |||
 
-```
+{% endraw %}
 
 * [Block Inline Attribute Lists](https://kramdown.gettalong.org/syntax.html#block-ials) - 이곳에서 IAL에 대해 자세하게 배울 수 있다. 
   
