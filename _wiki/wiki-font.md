@@ -14,11 +14,10 @@ parent: [[Wiki-Setting-Category]]
 latex: false
 ---
 
-
 * TOC
 {:toc}
 
-# 폰트 변경의 발단
+## 폰트 변경의 발단
 
 * 위키 제목으로 쓸 아스키 아트를 만들어 봤다. 
   * 의외로 한글을 아스키 아트로 만들어주는 곳을 찾지 못해서 직접 만들어야 했다.
@@ -43,7 +42,7 @@ latex: false
 * D2Coding폰트를 웹폰트로 만들어 주신 고마운분 [링크](https://wani.kr/posts/2019/05/25/d2coding-webfont/)
 * 위의 아스키아트를 대문에 쓸까 했는데 디자인이 별로라 그냥 영문으로 씀.
 
-# 그 외 폰트관련 의문점 & 이슈 
+## 그 외 폰트관련 의문점 & 이슈 
 
 * 현재 폰트가 뭐지? 통화표시 W 가 안나오고 /\ 가 잘나오지만 monotype은 아닌듯..
 * code block을 쓰지 않으면 깨지는 문제가 있음. 일부 문자를 markdown 표기로 인식
@@ -52,7 +51,7 @@ latex: false
   * 표 만드는 걸로 인식하면 자간이 전부 틀어짐.
   * txt 확장자에서 편집하여 그대로 복사하는 방식으로 편집중.. 
     
-# 개인위키에서 폰트 수정 절차
+## 개인위키에서 폰트 수정 절차
 
 * Jekyll에서 폰트 수정 방법 [링크](https://frhyme.github.io/others/jekyll_korea_font_change/)
 
@@ -69,7 +68,7 @@ latex: false
 * [전체 폰트 실제 수정 commit 링크](https://github.com/aiegoo/kramdown-kn/commit/36c09285351317c51fab1c5b48625ca2b8a133b3) 
 * [코딩 폰트 실제 수정 commit 링크](https://github.com/aiegoo/kramdown-kn/commit/a7d39da6acfcc5e3cb7e330713e8e1f34a47486a) 
 
-# 폰트 관련 링크
+## 폰트 관련 링크
 
 * [서울시체를 웹폰트로 사용하기](https://martian36.tistory.com/1392) - 목마른 사람이 우물파는 법.. (개인서버 or 구글 드라이브 사용)
 * [Webfont 사용과 최적화, 이상진](https://slides.com/sangjinlee/webconf-2018-5#/)
