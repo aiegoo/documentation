@@ -6,23 +6,16 @@ sidebar: other_sidebar
 collection: wiki
 tags: [wiki, getting_started]
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-15 12:25 PM
+updated: 2021-09-17 12:25 PM
 toc: true
-comment: false
-regenerate: true
 ---
 
-# 1. 사전 작성 문서
 
-* [2021년 1주차 블로그](/blog/2021/01/01/week-01th/#jekyll-spaceship-테스트) 에서 위키문서로 빼기로 하고 넘어옴 
-* [2020년 50주차 블로그](/blog/2020/12/07/week-50th/#Markdown-table-작성시-table-셀-styling-하기)에 적었던 테이블 스타일링 기법도 여기로 모아 정리하기로 했다.
-
-
-# 2. 마크다운 테이블 스타일링
+## 1. 마크다운 테이블 스타일링
 
 * 이 부분은 `jekyll-spaceship`과 상관없이 별도로 적용가능한 부분임
 
-## Markdown table 작성시 table 셀 styling 하기
+### Markdown table 작성시 table 셀 styling 하기
 
 * 위키에서 table 작성하다가 특정 셀을 강조하고 싶을 때가 있다.
 * inline으로 필요할 때만 하는 방법을 알아보자
@@ -37,7 +30,7 @@ regenerate: true
   * [How to add multiple classes to MarkDown using Jekyll?, stackoverflow 답변](https://stackoverflow.com/a/27501209/9457247)
   * [Attirbute List Definitions, Kramdown Official 문서](https://kramdown.gettalong.org/syntax.html#attribute-list-definitions)
 
-## 위 링크 정보를 참조하여 테이블 스타일링 예시
+### 위 링크 정보를 참조하여 테이블 스타일링 예시
 
 <style>
 .customtable tr:nth-child(1) { background: red; }
@@ -57,14 +50,14 @@ regenerate: true
     | 노란줄  | 노란줄 | 노란줄 |
     |         | 파란열 |        |
 
-# 3.  jekyll-spaceship 테스트
+## 3.  jekyll-spaceship 테스트
 
 
 * github : [https://github.com/jeffreytse/jekyll-spaceship](https://github.com/jeffreytse/jekyll-spaceship)
 
-## 1. Table Usage
+### 1. Table Usage
 
-### Rowspan and Colsapn
+#### Rowspan and Colsapn
 
 * 예제 
   
@@ -83,7 +76,7 @@ regenerate: true
   * 우선 vimwiki 포맷에 따라 편집한다 (모든 delimiter 줄이 맞도록 한다)
   * 그다음 jekyll-spaceship 포맷에 따라 공백을 제거한다 
     
-### MultiLine    
+#### MultiLine    
 
 * 줄 마지막의 backslash는 내용이 다음줄과 Join 한다는 표시이다
  
@@ -96,7 +89,7 @@ regenerate: true
   | Apple | Banana | Orange |
   | Apple | Banana | Orange |
 
-### Headerless
+#### Headerless
 
 <style>
 .big-chess-table {font-size: 2.0rem;}
@@ -170,7 +163,7 @@ regenerate: true
 
 [poster-img]: https://upload.wikimedia.org/wikipedia/en/1/12/The_Queen%27s_Gambit_%28miniseries%29.png "The Queen's Gambit Poster"
 
-### Cell Alignment
+#### Cell Alignment
 
 * 예제
   
@@ -184,7 +177,7 @@ regenerate: true
   | ^^ B. Orange      || ^^ 2. Bad |
   | ^^ C. Banana      || It's OK!  |
 
-### Cell Markdown
+#### Cell Markdown
 
 <style>
 .td-img img { width: 138px; }
@@ -234,7 +227,7 @@ regenerate: true
 {:height="138px"}
 
 
-### Cell Inline Attributes
+#### Cell Inline Attributes
 
 * attribute definitions (ALDs) 를 사용하는 방법
   ```
@@ -270,7 +263,7 @@ regenerate: true
 * [Block Inline Attribute Lists](https://kramdown.gettalong.org/syntax.html#block-ials) - 이곳에서 IAL에 대해 자세하게 배울 수 있다. 
   
  
-## 2. MathJax Usage
+## 4. MathJax Usage
 
 * 예제
 
@@ -297,7 +290,7 @@ example 1) 이 수식 $ a*b = c^b $을 다른 문자열과 같이 써 본다.
 
 example 2) 이 수식 $$ a*b = c^b $$을 다른 문자열과 같이 써 본다.
 
-## 3. PlantUML Usage
+## 5. PlantUML Usage
 
 * #platuml
 * [PlantUML 설명서](https://plantuml.com/)
@@ -314,7 +307,7 @@ example 2) 이 수식 $$ a*b = c^b $$을 다른 문자열과 같이 써 본다.
   @enduml
 
 
-## 4. Mermaid Usage
+## 6. Mermaid Usage
 
 * #mermaid
 * [mermaid-js 문서 홈페이지](https://mermaid-js.github.io/mermaid/#/)
@@ -335,7 +328,7 @@ example 2) 이 수식 $$ a*b = c^b $$을 다른 문자열과 같이 써 본다.
     "Rats" : 35
   @endmermaid
   
-## 5. Media Usage
+## 7. Media Usage
 
 * two ways to embed a video/audio in your jekyll blog page
   * inline-style
@@ -388,14 +381,14 @@ example 2) 이 수식 $$ a*b = c^b $$을 다른 문자열과 같이 써 본다.
   * <span style="background:pink;">Audio는 안되는 듯.. 아직은 필요없어서 왜 안되는지는 확인안해봄.</span>
  
  
-## 6. Hybrid HTML with Markdown
+## 8. Hybrid HTML with Markdown
 
 * script block은 무시되는 듯함 HTML로 렌더링 되지 않음
 * 일단 Usage 예제는 삭제함
 
-## 7. Markdown Polyfill 
+## 9. Markdown Polyfill 
 
-### 7.1 Escape Ordered List
+### 9.1 Escape Ordered List
 
 Normal:
 
@@ -412,7 +405,7 @@ Escaped:
 * <span style="background:pink;">이건 잘 안되고 있음</span>
 * `<li>` tag 로 렌더링 되어야 하는데 그냥 `<p>` tag로 렌더링 됨 
 
-## 8. Emoji Usage :+1:
+## 10. Emoji Usage :+1:
 
 * #emoji
   * [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908) : github에서 사용하는 emoji 목록
@@ -436,11 +429,11 @@ Escaped:
     * [stackoverflow에 이 건으로 질문을 올리고 자문자답함](https://stackoverflow.com/a/65550809/9457247)...:sweat_smile:
 
 
-## 9. Modifying Element Usage
+## 11. Modifying Element Usage
 
 * _config.yml에 jekyll-spaceship 옵션을 설정하여 element 설정을 바꿀 수 있는건데.. 아직은 사용할 계획이 없어서 Pass.
 
-# 4. jekyll-spaceship을 github에 적용하기
+# 12. jekyll-spaceship을 github에 적용하기
 
 * 로컬 Ruby 환경에서 `jekyll-spaceship`이 문제없이 적용되었기에 github에 그대로 올려서 잘될줄 알았다면 큰 오산이다.
 * [Jekyll-spaceship Inatallation: github](https://github.com/jeffreytse/jekyll-spaceship#installation)의 **:bulb:Tip** 을 잘 읽어보자
