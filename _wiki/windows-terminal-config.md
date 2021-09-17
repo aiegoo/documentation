@@ -2,7 +2,7 @@
 name: 윈도우즈 터미널 설정하기  
 layout: post
 permalink: Windows-Terminal_Setting.html
-sidebar: mydoc_sidebar
+sidebar: other_sidebar
 collection: wiki
 summary: "요즘 핫한 터미널"
 tags: [wiki, window,teriminus, tmuxinator, getting_started]
