@@ -17,7 +17,7 @@ layout: page
 {% for yoga in yoga %}
 <h2>
      <a href="{{ yoga.url | prepend: site.baseurl }}">
-     {{ yoga.name }} - {{ yoga.keywords }}
+     {{ yoga.name }} - {{ yoga.keywords }} - {{ yoga.updated }}
      </a>
 </h2>
 <span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time></span>
