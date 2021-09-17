@@ -40,5 +40,7 @@ topnav_dropdowns:
           url: /yoga.html
         - title: mycourse
           url: /mycourse.html
+        - title: wiki
+          url: wiki.html
 
 # Copyright 2021 Google LLC

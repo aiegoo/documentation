@@ -44,8 +44,10 @@ exclude:
 # these are the files and directories that jekyll will exclude from the build
 include:
  - _mycourse
+ - _wiki
  - _yoga
  - _drones
+ - _tags
 # to enable series site.page
 feedback_subject_line: You are my best candidate!
 
@@ -104,6 +106,14 @@ collections:
     output: true
     people: true
     permalink: /mycourse/
+  tags:
+    output: false
+    permalink: /tags/
+  wiki:
+    output: true
+    permalink: /wiki/
+
+
     
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
@@ -186,7 +196,28 @@ defaults:
       topnav: topnav
       toc: true
       show_excerpts: true
+  # tags
+  -
+    scope:
+      path: "/tags/"
+      type: "tags"
+    values:
+      layout: "page"
+      search: true
+      tooltip: true
+  # wiki
+  -
+    scope:
+      path: "/wiki/"
+      type: post
+    values:
+      layout: "page"
+      search: true
+      tooltip: true
 
+paginate: 10
+paginator_path: "/wiki"
+paginate_path: "/wiki/page:num/"
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
@@ -209,8 +240,12 @@ github: [metadata]
 plugins:
   - jekyll-gist
   - jekyll-spaceship
-  - jemoji
-  - jekyll-feed
+  - jemoji  
+  - jekyll-last-modified-at
+
+# Optional. The default date format, used if none is specified in the tag.
+last-modified-at:
+    date-format: '%d-%b-%y'
 
 
 # Where things are

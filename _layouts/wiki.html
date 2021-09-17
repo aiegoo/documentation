@@ -1,13 +1,13 @@
 ---
-title: "🌱yoga"
-keywords: yoga
-tags: [yoga]
+name: "🌱wiki home"
+keywords: wiki
+tags: [getting_started, wiki]
 hide: false
 toc: true
 sidebar: other_sidebar
-permalink: "/yoga/"
+permalink: "/wiki/"
+summary: A journal hopeful
 excerpt_separator: <!--more-->
-summary: "my life-long passion"
 ---
 
 <!DOCTYPE html>
@@ -94,27 +94,100 @@ summary: "my life-long passion"
         {% unless page.hide_sidebar %}
             <!-- Sidebar Column -->
             <div class="col-md-3" id="tg-sb-sidebar">
-                {% include other_sidebar.html %}
+                {% include sidebar.html %}
             </div>
             {% assign content_col_size = "col-md-6" %}
         {% endunless %}
 
         <!-- Content Column -->
         <div class="{{content_col_size}}" id="tg-sb-content">
-        {% assign yoga = site.yoga |  sort:"order_number" %}
-          {% for yoga in yogas %}
+        {% assign wikis = site.wiki | sort: "date" | reverse %}
+          {% for pg in wikis %}
           <h2>
-              <a href="{{ yoga.url | prepend: site.baseurl }}">
-              {{ yoga.name }} - {{ yoga.keywords }}
+              <a href="{{ pg.url | prepend: site.baseurl }}">
+              {{ pg.name }} - {{ pg.updated }}
               </a>
           </h2>
-          <p>{{ yoga.excerpt | markdownify | truncatewords: 50  }}</p>
+          <p>{{ pg.excerpt | markdownify | truncatewords: 50 }}</p>
           {% endfor %}
           <p>hello from layout directory</p>
         </div>
     </div> <!-- /.row -->
   </div> <!-- /#main -->
 </div> <!-- /.container -->
+
+<script>
+  function getTOCNodes(master) {
+    var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
+    var tocNodes = nodes.filter(function(elem) {
+        return elem.tagName == "A";
+    });
+    return tocNodes;
+  }
+  function getHeaderNodes(master) {
+    var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
+    var headerNodes = nodes.filter(function(elem) {
+        return elem.tagName == "H1" || elem.tagName == "H2" || elem.tagName == "H3" || elem.tagName == "H4" || elem.tagName == "H5" || elem.tagName == "H6";
+    });
+    return headerNodes;
+  }
+
+  var title = document.getElementsByClassName("post-title")[0];
+  var titleY = window.pageYOffset + title.getBoundingClientRect().top;
+  
+  var article = document.getElementsByClassName("post-article")[0];
+  var articleY = window.pageYOffset + article.getBoundingClientRect().top;
+
+  var toc = document.getElementsByClassName("toc")[0];
+
+  var headerNodes = getHeaderNodes(article);
+  var tocNodes = getTOCNodes(toc);
+
+  var before = undefined;
+
+  document.addEventListener('scroll', function(e) {
+    if (window.scrollY >= articleY-60) {
+      toc.style.cssText = "position: fixed; top: 60px;";
+    }
+    else {
+      toc.style.cssText = "";
+    }
+
+    var current = headerNodes.filter(function(header) {
+      var headerY = window.pageYOffset + header.getBoundingClientRect().top;
+      return window.scrollY >= headerY - 60;
+    });
+
+    if (current.length > 0) {
+      current = current[current.length-1];
+
+      var currentA = tocNodes.filter(function(tocNode) {
+        return tocNode.innerHTML == current.innerHTML;
+      })
+      
+      currentA = currentA[0];
+      if (currentA) {
+        if (before == undefined) before = currentA;
+
+        if (before != currentA) {
+          before.classList.remove("toc-active");
+          before = currentA;
+        }
+
+        currentA.classList.add("toc-active");
+      }
+      else {
+        if (before) 
+          before.classList.remove("toc-active");
+      }
+    }
+    else {
+      if (before) 
+          before.classList.remove("toc-active");
+    }
+
+  }, false);
+</script>
 </body>
 {% if site.google_analytics %}
 {% include google_analytics.html %}
