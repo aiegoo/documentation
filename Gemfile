@@ -17,7 +17,3 @@ gem "jekyll-spaceship"
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform? # for Winodows polling issue
 gem "webrick", "~> 1.7"
-
-group :jekyll_plugins do
-     gem "jekyll-last-modified-at"
-   end
