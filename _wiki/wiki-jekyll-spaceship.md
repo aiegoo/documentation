@@ -176,3 +176,90 @@ toc: true
   | ^^ A. Peach       || 1. Fine : |
   | ^^ B. Orange      || ^^ 2. Bad |
   | ^^ C. Banana      || It's OK!  |
+
+### Cell Markdown
+
+<style>
+.td-img img { width: 138px; }
+</style>
+
+* 예제
+  * 아래 예제를 스타일링 하지 않고 그냥 작성하면 그림이 100% 크기로 꽉차게 된다
+  * img 태그에 대해 height 속성을 정해줬다.
+    * 브라우저에 F12로 디버깅모드에서 그림의 원래 크기를 알수 있는데..
+    * height을 원래 크기 (552)의  1/4값인 138px로 정해주었다.
+  * [vim에서 간단한 사칙연산을 하려면..](https://vim.fandom.com/wiki/Using_vim_as_calculator)
+    * step1: insert mode로 진입
+    * step2: <kbd>Ctrl</kbd>+<kbd>r</kbd> 입력
+    * step3: `=552/4` 입력
+    * step4: insert mode 시작한 자리에 138이 입력된다
+
+* 예제
+
+  {: .td-img}
+  | : MathJax \|\| Image : |||
+  | :--- | :--- | :--- |
+  | Apple  | : Apple :| Apple                          \
+  | Banana | Banana   | Banana                         \
+  | Orange | Orange | Orange |
+  | : Rowspan is 4 : || : How's it? :                  |
+  | ^^ A. Peach      || 1. ![exmple][cell-image]      |
+  | ^^ B. Orange     || ^^ 2. $I = \int \rho R^{2} dV$ |
+  | ^^ C. Banana     || **It's OK!**                   |
+
+
+* 주의
+  * Kramdown 설명에는 Reference Style IAL로 그림에 attribute을 설정할 수 있다고 하는데..
+    * [kramdown syntax.html #images](https://kramdown.gettalong.org/syntax.html#images)
+
+      ```
+      1. ![cell-image]
+      [cell-image]: ~.png
+      {:height="138px"}
+      ```
+    * table 밖에서는 동작하지만 table 내부에서는 동작하지 않음 (아래는 Reference 스타일 적용)
+     
+      ![cell-image]
+    * 위의 표에서는 Reference Style로 적용하지 않고 별도 style 태그를 사용함.
+      * 일단 표안에서의 해결책은 style block으로 설정하는것
+
+[cell-image]: https://jekyllrb.com/img/octojekyll.png
+{:height="138px"}
+
+
+### Cell Inline Attributes
+
+* attribute definitions (ALDs) 를 사용하는 방법
+  ```
+  {:ref-name: #id .cls1 .cls2}
+  {:second: ref-name #id-of-other title="hallo you"}
+  {:other: ref-name second}
+  ```
+* ALD line 구조
+  * 왼쪽 brace로 시작, 공백 3개까지 허용
+  * colon(:) 으로 이어짐, 아이디를 적고 다시 colon 으로 마무리
+  * 속성 정의가 이어짐 (허용되는 문자는 backslash로 escape된 closing brace 혹은 closing brace를 escape하지 않는 어떤 문자라도 허용) 
+  * 오른쪽 brace로 마침, 줄 마지막까지 공백 허용함
+* 같은 reference 이름을 가진 ALD가 한개 이상이면 한 곳에서 모두 정의된 것처럼 간주된다.
+* 다른 element에 속성을 붙이고자 할 때 inline attribute list (IAL)도 사용할 수 있다
+  ```
+  {: #id .cls1 .cls2} <!-- #id <=> id="id", .cls1 .cls2 <=> class="cls1 cls2" -->
+  {: ref-name title="hallo you"} 
+  {: ref-name class='.cls3' .cls4} 
+  ```
+
+{:color-style: style="background: black;"}
+{:color-style: style="color: white;"}
+{:text-style: style="font-weight: 800; text-decoration: underline;"}
+
+| : Here's an Inline Attribute Lists example : ||||
+| --- | --- | --- | --- |
+| : : | : <div style="color: red;"> &lt; Normal HTML Block > </div>   : |||
+| ^^      | Red {: .cls style="background: orange" }                    |||
+| ^^ IALs | Green {: #id style="background: green; color: white" }      |||
+| ^^      | Blue {: style="background: blue; color: white" }            |||
+| ^^      | Black {: color-style text-style}                            |||
+
+* [Block Inline Attribute Lists](https://kramdown.gettalong.org/syntax.html#block-ials) - 이곳에서 IAL에 대해 자세하게 배울 수 있다. 
+  
+ 
