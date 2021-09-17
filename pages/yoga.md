@@ -20,6 +20,7 @@ layout: page
      {{ yoga.name }} - {{ yoga.keywords }}
      </a>
 </h2>
+<span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date } date: "%b %-d, %Y" }}</time></span>
 <p> {{ yoga.excerpt | markdownify | truncateword: 50 | strip_html }} </p>
 {% endfor %}
 
