@@ -17,7 +17,7 @@ updated: 2021-09-17 18:00:13 +0900
 {% for pg in wikis %}
 <h2>
      <a href="{{ pg.url | prepend: site.baseurl }}">
-     {{ pg.title }} - {{ pg.updated }}
+     {{ pg.name }} - {{ pg.updated }}
      </a>
 </h2>
 <p> {{ pg.excerpt | markdownify | truncateword: 50 | strip_html }} </p>
