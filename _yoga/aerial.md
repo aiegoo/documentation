@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 name: hotyoga
 sidebar: other_sidebar
 permalink: aerial.html

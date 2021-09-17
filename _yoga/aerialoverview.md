@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 name: Aerial
 sidebar: other_sidebar
 permalink: aerialoverview.html
