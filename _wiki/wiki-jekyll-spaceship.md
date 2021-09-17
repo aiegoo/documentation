@@ -177,7 +177,9 @@ toc: true
   | ^^ B. Orange      || ^^ 2. Bad |
   | ^^ C. Banana      || It's OK!  |
 
- 
+## markdown table and inline attribute
+
+<script src="https://gist.github.com/aiegoo/49f814269cd1816208e6b0ef2ea27082.js"></script>
 ## 2. MathJax Usage
 
 * 예제
