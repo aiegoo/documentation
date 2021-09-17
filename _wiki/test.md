@@ -1,17 +1,17 @@
 ---
-title: test 1
-layout  : page
+name: test 1
+layout: page
 permanlink: test.html
 collection: wiki
 sidebar: ohter_sidebar
-summary : test summary
-date    : 2021-08-26 21:39:45 +0900
+summary: test summary
+date: 2021-08-26 21:39:45 +0900
 updated: 2021-09-15 10:21:45 +0900
-tags    : wiki
-toc     : true
-public  : true
-parent  : default
-latex   : true
+tags: wiki
+toc: true
+public: true
+parent: default
+latex: true
 ---
 
 # test

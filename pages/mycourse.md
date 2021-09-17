@@ -1,5 +1,5 @@
 ---
-title: "🌿 mycourse"
+name: "🌿 mycourse"
 keywords: mycourse
 tags: [getting_started,mycourse]
 hide: false
