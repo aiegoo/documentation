@@ -110,8 +110,8 @@ collections:
     output: false
     permalink: /tags/
   wiki:
-      output: true
-      permalink: /wiki/
+    output: true
+    permalink: /wiki/
 
 
     
