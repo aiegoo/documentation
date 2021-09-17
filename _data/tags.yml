@@ -54,5 +54,6 @@ allowed-tags:
   - terminus
   - tmuxinator
   - jekyll
+  - stringinterpolation
 
 # Copyright 2021 Google LLC
