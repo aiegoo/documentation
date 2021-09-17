@@ -46,5 +46,13 @@ allowed-tags:
   - asana
   - breathing
   - journal
+  - vim
+  - font
+  - windows
+  - linux
+  - mediaquery
+  - terminus
+  - tmuxinator
+  - jekyll
 
 # Copyright 2021 Google LLC
