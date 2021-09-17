@@ -116,6 +116,19 @@ excerpt_separator: <!--more-->
     </div> <!-- /.row -->
   </div> <!-- /#main -->
 </div> <!-- /.container -->
+
+
+    {% unless page.toc == false %}
+    {% include toc.html %}
+    {% endunless %}
+
+{{site.data.alerts.hr_shaded}}
+
+{% include footer.html %}
+
+{% comment %} Copyright {% endcomment %}
+
+
 <!-- scroll top tag -->
 <button id="top" aria-label="Scroll to top"><a href="#" id="topButton2"></span></a></button>
 <script>
