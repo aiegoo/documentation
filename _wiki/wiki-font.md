@@ -63,11 +63,7 @@ latex: false
 2. (전체 폰트 수정) root / _sass / _base.scss 편집
   * `body, th, td, div, p, li { .. }` 에 `font-family` 속성 추가 
 3. (코딩 폰트 수정) root / _sass / _syntax.scss 편집
-  * `code { .. }` 에 `font-family` 속성에 `$coding-font` 적용 
-    
-* [전체 폰트 실제 수정 commit 링크](https://github.com/aiegoo/kramdown-kn/commit/36c09285351317c51fab1c5b48625ca2b8a133b3) 
-* [코딩 폰트 실제 수정 commit 링크](https://github.com/aiegoo/kramdown-kn/commit/a7d39da6acfcc5e3cb7e330713e8e1f34a47486a) 
-
+  * `code { .. }` 에 `font-family` 속성에 `$coding-font` 적#
 ## 폰트 관련 링크
 
 * [서울시체를 웹폰트로 사용하기](https://martian36.tistory.com/1392) - 목마른 사람이 우물파는 법.. (개인서버 or 구글 드라이브 사용)
