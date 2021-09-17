@@ -1,6 +1,6 @@
 ---
-layout: page
 title: jekyll-spaceship
+layout: page
 permalink: wiki-jekyll-spaceship.html
 sidebar: other_sidebar
 collection: wiki
@@ -8,7 +8,6 @@ tags: [wiki, getting_started]
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 12:25 PM
 toc: true
-public: true
 comment: false
 regenerate: true
 ---
