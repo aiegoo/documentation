@@ -46,7 +46,7 @@ latex: false
 
 * tag 페이지에 같은 태그로 검색한 stackoverflow의 결과도 넣고 싶다.
 * 그럼 일단 axios를 써야 하는데.. 이걸 참조 [JavaScript: using axios in the browser to make API requests](https://gabrieleromanato.name/javascript-using-axios-in-the-browser-to-make-api-requests)
-* 구현 후 실제 반영한 [commit](https://github.com/honggaruy/honggaruy.github.io/commit/ae64485c090a045baf1d10142741a246d4a39c96)
+* 구현 후 실제 반영한 [commit](https://github.com/aiegoo/kramdown-kn/commit/ae64485c090a045baf1d10142741a246d4a39c96)
 
 ### insertAfter 기능 구현하기
 
@@ -128,4 +128,4 @@ latex: false
 
 ### 반영
 
-* [반영한 commit](https://github.com/honggaruy/honggaruy.github.io/commit/fcfde15c600a2258b9dc445b96fbb01e37fa3cf4)
+* [반영한 commit](https://github.com/aiegoo/kramdown-kn/commit/fcfde15c600a2258b9dc445b96fbb01e37fa3cf4)

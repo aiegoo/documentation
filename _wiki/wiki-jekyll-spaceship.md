@@ -39,7 +39,7 @@ toc: true
 </style>
 
 * 아래 테이블의 markdown 작성예를 보고 싶으면 
-  * [현재 문서의 Raw 파일](https://raw.githubusercontent.com/honggaruy/honggaruy.github.io/master/_wiki/wiki-jekyll-spaceship.md)을 참조
+  * [현재 문서의 Raw 파일](https://raw.githubusercontent.com/aiegoo/kramdown-kn/master/_wiki/wiki-jekyll-spaceship.md)을 참조
   * 테이블 바로 위의 로컬 sytle 태그와 테이블 속성주는 명령어가 핵심
 
     {: .customtable}
@@ -417,7 +417,7 @@ A GitHub Action to deploy the jekyll site conveniently for GitHub Pages.
 * 이 Tool은 `jekyll-spaceship`을 만든 `jeffreytse`가 만든 도구
 * 위에서 로컬에서 미리 빌드해서 Push하는 것처럼 CI 도구를 이용하면 온라인상에서, 자동으로 빌드하고 Push할 수 있다.
   * 즉, 환경만 만들어 놓으면 기존에 포스트 작성하고, git push 하듯이 할 수 있다. 
-  * honggaruy.github.io의 마스터가 기존에 소스코드와 사이트 static file을 모두 포함했다면..
+  * aiegoo.github.io의 마스터가 기존에 소스코드와 사이트 static file을 모두 포함했다면..
   * 이제 마스터는 소스파일만 관리하고 다른 git branch에서 사이트 정적파일을 관리한다고 보면된다
 * Jekyll Deploy Action을 이용하면 GitHub Action (CI 도구)를 이용한다.
 * 근데 `jeffreytse`는 [자신의 블로그](https://github.com/jeffreytse/jekyll-jeffreytse-blog)는 `travis`를 이용한다.
@@ -428,7 +428,7 @@ A GitHub Action to deploy the jekyll site conveniently for GitHub Pages.
  
 1. github page repository의 master 브랜치에 github workflow file을 만든다. ( 예. `.github/workflows/build-jekyll.yml`)
   * 위의 `Usage` example대로 설정하면 `push`될 때마다 자동으로 빌드하고, 빌드된 static file들이 배포할 브랜치( 예: gh-pages)에 등록된다. 
-  * [이 사항을 적용한 commit](https://github.com/honggaruy/honggaruy.github.io/commit/e9431282cbf0e8bcb56461ce6b4d81accc058e57)
+  * [이 사항을 적용한 commit](https://github.com/aiegoo/kramdown-kn/commit/e9431282cbf0e8bcb56461ce6b4d81accc058e57)
   * 로컬 사양과 맞춘다고 `runs-on`을 `windows-latest`로 바꾸지 말것. `ubuntu-latest`에서만 실행됨
 1. [Personal Token](https://github.com/settings/tokens) 사이트에 접속하여 토큰을 만들어야 한다.
   * 이건 일종의 인증키 같은 것인가? 
