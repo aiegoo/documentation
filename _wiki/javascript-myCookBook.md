@@ -13,8 +13,6 @@ public  : true
 parent  : [[Web-Category]] 
 latex   : false
 ---
-* TOC
-{:toc}
 
 ## 1. Start
 Recently, I would like to write down some Javascript tips I want to keep organized while completing a Google-Apps-Script project.
