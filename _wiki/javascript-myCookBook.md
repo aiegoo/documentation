@@ -1,17 +1,16 @@
 ---
 layout  : page
-permalink: javascript-myCookBook.html
-collection: wiki
-sidebar: other_sidebar
 title   : Javascript basics 
-summary : It's exciting! Now finally get the function in real codes 
+permalink: javascript-myCookBook.html
+sidebar: other_sidebar
+collection: wiki
+tags: [wiki, getting_started]
 date    : 2020-09-05 23:30:03 +0900
 updated : {% last_modified_at %Y:%B:%A:%d:%S:%R %}
-tag     : javascript typescript falsy truthy 
 toc     : true
 public  : true
-parent  : [[Web-Category]] 
-latex   : false
+comment : false
+regenerate: true
 ---
 
 ## 1. Start
