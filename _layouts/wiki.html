@@ -116,78 +116,43 @@ excerpt_separator: <!--more-->
     </div> <!-- /.row -->
   </div> <!-- /#main -->
 </div> <!-- /.container -->
-
+<!-- scroll top tag -->
+<button id="top" aria-label="Scroll to top"><a href="#" id="topButton2"></span></a></button>
 <script>
-  function getTOCNodes(master) {
-    var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
-    var tocNodes = nodes.filter(function(elem) {
-        return elem.tagName == "A";
-    });
-    return tocNodes;
+var btn = $('#top');
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
   }
-  function getHeaderNodes(master) {
-    var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
-    var headerNodes = nodes.filter(function(elem) {
-        return elem.tagName == "H1" || elem.tagName == "H2" || elem.tagName == "H3" || elem.tagName == "H4" || elem.tagName == "H5" || elem.tagName == "H6";
-    });
-    return headerNodes;
-  }
+});
 
-  var title = document.getElementsByClassName("post-title")[0];
-  var titleY = window.pageYOffset + title.getBoundingClientRect().top;
-  
-  var article = document.getElementsByClassName("post-article")[0];
-  var articleY = window.pageYOffset + article.getBoundingClientRect().top;
+btn.on('click', function(e) {
+  $('html, body').animate({scrollTop:0}, '300');
+});	
+	/*    $("#top").click(function(e) {
 
-  var toc = document.getElementsByClassName("toc")[0];
+            $('body, html').animate({scrollTop:0}, 200);
 
-  var headerNodes = getHeaderNodes(article);
-  var tocNodes = getTOCNodes(toc);
+        });  ////click  */
 
-  var before = undefined;
+$("header  a").click(function(e) {
+    e.preventDefault();
 
-  document.addEventListener('scroll', function(e) {
-    if (window.scrollY >= articleY-60) {
-      toc.style.cssText = "position: fixed; top: 60px;";
-    }
-    else {
-      toc.style.cssText = "";
-    }
+    var x = $(this).attr('href'); 
 
-    var current = headerNodes.filter(function(header) {
-      var headerY = window.pageYOffset + header.getBoundingClientRect().top;
-      return window.scrollY >= headerY - 60;
-    });
+$('body, html').animate({scrollTop: $(x).offset().top });
 
-    if (current.length > 0) {
-      current = current[current.length-1];
+    }); ////click
 
-      var currentA = tocNodes.filter(function(tocNode) {
-        return tocNode.innerHTML == current.innerHTML;
-      })
-      
-      currentA = currentA[0];
-      if (currentA) {
-        if (before == undefined) before = currentA;
-
-        if (before != currentA) {
-          before.classList.remove("toc-active");
-          before = currentA;
-        }
-
-        currentA.classList.add("toc-active");
-      }
-      else {
-        if (before) 
-          before.classList.remove("toc-active");
-      }
-    }
-    else {
-      if (before) 
-          before.classList.remove("toc-active");
-    }
-
-  }, false);
+$(window).scroll(function(e) {
+    if($(window).scrollTop() > 0){
+        $('header').addClass('slide');
+        }else{
+            $('header').removeClass('slide');
+            }
+        });
 </script>
 </body>
 {% if site.google_analytics %}
