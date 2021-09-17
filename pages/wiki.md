@@ -13,12 +13,12 @@ updated: 2021-09-17 18:00:13 +0900
 ---
 
 ## wiki
-{% assign wiki = site.wiki | sort:"date" | reverse %}
-{% for wiki in wikis %}
+{% assign wikis = site.wiki | sort:"date" | reverse %}
+{% for pg in wikis %}
 <h2>
-     <a href="{{ wiki.url | prepend: site.baseurl }}">
-     {{ wiki.title }} - {{ wiki.updated }}
+     <a href="{{ pg.url | prepend: site.baseurl }}">
+     {{ pg.title }} - {{ pg.updated }}
      </a>
 </h2>
-<p> {{ wiki.excerpt | markdownify | truncateword: 50 | strip_html }} </p>
+<p> {{ pg.excerpt | markdownify | truncateword: 50 | strip_html }} </p>
 {% endfor %}

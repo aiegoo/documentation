@@ -1,7 +1,7 @@
 ---
 title: "🌱wiki home"
 keywords: wiki
-tags: [getting_started,wiki]
+tags: [getting_started, wiki]
 hide: false
 toc: true
 sidebar: other_sidebar
@@ -101,14 +101,14 @@ excerpt_separator: <!--more-->
 
         <!-- Content Column -->
         <div class="{{content_col_size}}" id="tg-sb-content">
-        {% assign wiki = site.wiki | sort: "date" | reverse %}
-          {% for wiki in wikis %}
+        {% assign wikis = site.wiki | sort: "date" | reverse %}
+          {% for pg in wikis %}
           <h2>
-              <a href="{{ wiki.url | prepend: site.baseurl }}">
-              {{ wiki.title }} - {{ wiki.updated }}
+              <a href="{{ pg.url | prepend: site.baseurl }}">
+              {{ pg.title }} - {{ pg.updated }}
               </a>
           </h2>
-          <p>{{ wiki.excerpt | markdownify | truncatewords: 50 }}</p>
+          <p>{{ pg.excerpt | markdownify | truncatewords: 50 }}</p>
           {% endfor %}
           <p>hello from layout directory</p>
         </div>
