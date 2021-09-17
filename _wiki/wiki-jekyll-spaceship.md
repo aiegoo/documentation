@@ -227,33 +227,42 @@ toc: true
 {:height="138px"}
 
 
-## 2. MathJax Usage
+### Cell Inline Attributes
 
-* 예제
+* attribute definitions (ALDs) 를 사용하는 방법
+  ```
+  {:ref-name: #id .cls1 .cls2}
+  {:second: ref-name #id-of-other title="hallo you"}
+  {:other: ref-name second}
+  ```
+* ALD line 구조
+  * 왼쪽 brace로 시작, 공백 3개까지 허용
+  * colon(:) 으로 이어짐, 아이디를 적고 다시 colon 으로 마무리
+  * 속성 정의가 이어짐 (허용되는 문자는 backslash로 escape된 closing brace 혹은 closing brace를 escape하지 않는 어떤 문자라도 허용) 
+  * 오른쪽 brace로 마침, 줄 마지막까지 공백 허용함
+* 같은 reference 이름을 가진 ALD가 한개 이상이면 한 곳에서 모두 정의된 것처럼 간주된다.
+* 다른 element에 속성을 붙이고자 할 때 inline attribute list (IAL)도 사용할 수 있다
+  ```
+  {: #id .cls1 .cls2} <!-- #id <=> id="id", .cls1 .cls2 <=> class="cls1 cls2" -->
+  {: ref-name title="hallo you"} 
+  {: ref-name class='.cls3' .cls4} 
+  ```
 
-$ a*b = c^b $
+{:color-style: style="background: black;"}
+{:color-style: style="color: white;"}
+{:text-style: style="font-weight: 800; text-decoration: underline;"}
 
-$ 2^{\frac{n-1}{3}} $
+| : Here's an Inline Attribute Lists example : ||||
+| --- | --- | --- | --- |
+| : : | : <div style="color: red;"> &lt; Normal HTML Block > </div>   : |||
+| ^^      | Red {: .cls style="background: orange" }                    |||
+| ^^ IALs | Green {: #id style="background: green; color: white" }      |||
+| ^^      | Blue {: style="background: blue; color: white" }            |||
+| ^^      | Black {: color-style text-style}                            |||
 
-$ \int\_a^b f(x)\,dx. $
-
-* [원래 johngrib님 가이드](https://johngrib.github.io/wiki/mathjax-latex/)대로 `$`를 두 개씩 써서 감쌌는데..
-* `jekyll-spaceship`을 사용하면서 ...
-  * 두개씩 쓰면 그 줄은 그 수식만 존재하게 되며 
-  * 하나씩만 쓰면 다른 글자와도 어울릴수 있게됨.
-  * 원래부터 이런 것은 아니었음.
-    * [이 문서](/wiki/re2-translation/#syntax)에서 `$`를 두 개써도 다른 글자와 어울릴 수 있었음
-    * 해당 문서 히스토리를 보면 알겠지만 jekyll-spaceship 적용이후 틀려져서 하나짜리로 변경하게 됨
-    * 왜 이렇게 되는지는 아직 알아보지 않음. 
-
-* `$` 하나로 감싼 예제 
-
-example 1) 이 수식 $ a*b = c^b $을 다른 문자열과 같이 써 본다.
-
-* `$` 두 개로 감싼 예제 
-
-example 2) 이 수식 $$ a*b = c^b $$을 다른 문자열과 같이 써 본다.
-
+* [Block Inline Attribute Lists](https://kramdown.gettalong.org/syntax.html#block-ials) - 이곳에서 IAL에 대해 자세하게 배울 수 있다. 
+  
+ 
 ## 3. PlantUML Usage
 
 * #platuml
