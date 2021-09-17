@@ -2,7 +2,7 @@
 layout  : page
 permalink: javascript-myCookBook.html
 collection: wiki
-
+sidebar: other_sidebar
 title   : Javascript basics 
 summary : It's exciting! Now finally get the function in real codes 
 date    : 2020-09-05 23:30:03 +0900
@@ -33,7 +33,7 @@ For a detailed explanation of the content…
 Except for the above values, all values ​​are the same (Truthy)
 - MDN > Definitions of Web-realated terms > Truthy : true-like values
   
-  
+
 Truthy values ​​to watch out for
 All objects, even those that return false when the valueOf( ) method is called, are also true values.
 All arrays, even empty arrays are true
