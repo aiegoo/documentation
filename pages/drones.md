@@ -1,5 +1,5 @@
 ---
-title: "🌿 drones"
+name: "🌿 drones"
 keywords: drones
 tags: [getting_started,drone]
 hide: false

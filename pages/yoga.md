@@ -1,5 +1,5 @@
 ---
-title: "🌱yoga"
+name: "🌱yoga"
 keywords: yoga poses
 tags: [yoga]
 hide: false

@@ -1,5 +1,5 @@
 ---
-title: jekyll-spaceship
+name: jekyll-spaceship
 layout: page
 permalink: wiki-jekyll-spaceship.html
 sidebar: other_sidebar

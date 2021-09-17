@@ -1,5 +1,5 @@
 ---
-title: "🌱wiki home"
+name: "🌱wiki home"
 keywords: wiki
 tags: [getting_started, wiki]
 hide: false
@@ -105,7 +105,7 @@ excerpt_separator: <!--more-->
           {% for pg in wikis %}
           <h2>
               <a href="{{ pg.url | prepend: site.baseurl }}">
-              {{ pg.title }} - {{ pg.updated }}
+              {{ pg.name }} - {{ pg.updated }}
               </a>
           </h2>
           <p>{{ pg.excerpt | markdownify | truncatewords: 50 }}</p>

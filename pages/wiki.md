@@ -1,5 +1,5 @@
 ---
-title: "🌱wiki home"
+name: "🌱wiki home"
 tags: [getting_started,wiki]
 summary: "journal hopeful"
 sidebar: other_sidebar
