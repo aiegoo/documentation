@@ -100,7 +100,7 @@ summary: "my life-long passion"
         {% endunless %}
 
         <!-- Content Column -->
-        <div class="{{content_col_size}}" id="tg-sb-content">
+        <div class="{{content_col_size}} post-article itemscope itemtype="https:/>/schema.org/BlogPosting" id="tg-sb-content">
         {% assign yoga = site.yoga |  sort:"order_number" %}
           {% for yoga in yogas %}
           <h2>
