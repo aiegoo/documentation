@@ -240,7 +240,12 @@ github: [metadata]
 plugins:
   - jekyll-gist
   - jekyll-spaceship
-  - jemoji
+  - jemoji  
+  - jekyll-last-modified-at
+
+# Optional. The default date format, used if none is specified in the tag.
+last-modified-at:
+    date-format: '%d-%b-%y'
 
 
 # Where things are

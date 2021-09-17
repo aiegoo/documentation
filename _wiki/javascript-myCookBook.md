@@ -6,7 +6,7 @@ sidebar: other_sidebar
 title   : Javascript basics 
 summary : It's exciting! Now finally get the function in real codes 
 date    : 2020-09-05 23:30:03 +0900
-updated : {{ "now" | date: "%Y-%m-%d %H:%M" }}
+updated : {% last_modified_at %Y:%B:%A:%d:%S:%R %}
 tag     : javascript typescript falsy truthy 
 toc     : true
 public  : true
