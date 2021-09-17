@@ -14,25 +14,6 @@ excerpt_separator: <!--more-->
 <html>
 <head>
 {% include head.html %}
-    <script>---
-title: "🌱drones"
-keywords: drones
-tags: [getting_started,drone]
-hide: false
-toc: true
-sidebar: home_sidebar
-permalink: "/drones/"
-summary: my drones I work with and at my disposal.
-simple_map: true
-map_name: matlab
-box_number: 5
-excerpt_separator: <!--more-->
----
-
-<!DOCTYPE html>
-<html>
-<head>
-{% include head.html %}
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -109,7 +90,7 @@ excerpt_separator: <!--more-->
   <div id="main">
     <!-- Content Row -->
     <div class="row">
-        
+        {% assign content_col_size = "col-md-12" %}
         {% unless page.hide_sidebar %}
             <!-- Sidebar Column -->
             <div class="col-md-3" id="tg-sb-sidebar">
@@ -128,182 +109,6 @@ excerpt_separator: <!--more-->
               </a>
           </h2>
           <p>{{ wiki.excerpt | markdownify | truncatewords: 50 }}</p>
-          {% endfor %}
-          <p>hello from layout directory</p>
-        </div>
-    </div> <!-- /.row -->
-  </div> <!-- /#main -->
-</div> <!-- /.container -->
-
-<script>
-  function getTOCNodes(master) {
-    var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
-    var tocNodes = nodes.filter(function(elem) {
-        return elem.tagName == "A";
-    });
-    return tocNodes;
-  }
-  function getHeaderNodes(master) {
-    var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
-    var headerNodes = nodes.filter(function(elem) {
-        return elem.tagName == "H1" || elem.tagName == "H2" || elem.tagName == "H3" || elem.tagName == "H4" || elem.tagName == "H5" || elem.tagName == "H6";
-    });
-    return headerNodes;
-  }
-
-  var title = document.getElementsByClassName("post-title")[0];
-  var titleY = window.pageYOffset + title.getBoundingClientRect().top;
-  
-  var article = document.getElementsByClassName("post-article")[0];
-  var articleY = window.pageYOffset + article.getBoundingClientRect().top;
-
-  var toc = document.getElementsByClassName("toc")[0];
-
-  var headerNodes = getHeaderNodes(article);
-  var tocNodes = getTOCNodes(toc);
-
-  var before = undefined;
-
-  document.addEventListener('scroll', function(e) {
-    if (window.scrollY >= articleY-60) {
-      toc.style.cssText = "position: fixed; top: 60px;";
-    }
-    else {
-      toc.style.cssText = "";
-    }
-
-    var current = headerNodes.filter(function(header) {
-      var headerY = window.pageYOffset + header.getBoundingClientRect().top;
-      return window.scrollY >= headerY - 60;
-    });
-
-    if (current.length > 0) {
-      current = current[current.length-1];
-
-      var currentA = tocNodes.filter(function(tocNode) {
-        return tocNode.innerHTML == current.innerHTML;
-      })
-      
-      currentA = currentA[0];
-      if (currentA) {
-        if (before == undefined) before = currentA;
-
-        if (before != currentA) {
-          before.classList.remove("toc-active");
-          before = currentA;
-        }
-
-        currentA.classList.add("toc-active");
-      }
-      else {
-        if (before) 
-          before.classList.remove("toc-active");
-      }
-    }
-    else {
-      if (before) 
-          before.classList.remove("toc-active");
-    }
-
-  }, false);
-</script>
-</body>
-{% if site.google_analytics %}
-{% include google_analytics.html %}
-{% endif %}
-</html>
-
-{% comment %} Copyright {% endcomment %}
-ue,
-                openClass: 'active', // open
-                save: false, // leave false or nav highlighting doesn't work right
-                cookie: {
-                    name: 'navgoco',
-                    expires: false,
-                    path: '/'
-                },
-                slide: {
-                    duration: 400,
-                    easing: 'swing'
-                }
-            });
-
-            $("#collapseAll").click(function(e) {
-                e.preventDefault();
-                $("#mysidebar").navgoco('toggle', false);
-            });
-
-            $("#expandAll").click(function(e) {
-                e.preventDefault();
-                $("#mysidebar").navgoco('toggle', true);
-            });
-
-        });
-
-    </script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("#tg-sb-link").click(function() {
-                $("#tg-sb-sidebar").toggle();
-                $("#tg-sb-content").toggleClass('col-md-9');
-                $("#tg-sb-content").toggleClass('col-md-12');
-                $("#tg-sb-icon").toggleClass('fa-toggle-on');
-                $("#tg-sb-icon").toggleClass('fa-toggle-off');
-            });
-        });
-    </script>
-    {% if page.datatable == true %}
-    <!-- Include the standard DataTables bits -->
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
-    <!-- First, this walks through the tables that occur between ...-begin
-         and ...-end and add the "datatable" class to them.
-         Then it invokes DataTable's standard initializer
-         Credit here: http://www.beardedhacker.com/blog/2015/08/28/add-class-attribute-to-markdown-table/
-      -->
-    <script>
-      $(document).ready(function(){
-          $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
-          $('table.display').DataTable( {
-              paging: true,
-              stateSave: true,
-              searching: true
-          });
-       });
-    </script>
-    {% endif %}
-</head>
-<body>
-{% include topnav.html %}
-<!-- Page Content -->
-<div class="container">
-  <div id="main">
-    <!-- Content Row -->
-    <div class="row">
-        {% assign content_col_size = "col-md-12" %}
-        {% unless page.hide_sidebar %}
-            <!-- Sidebar Column -->
-            <div class="col-md-3" id="tg-sb-sidebar">
-                {% include sidebar.html %}
-            </div>
-            {% assign content_col_size = "col-md-9" %}
-        {% endunless %}
-
-        <!-- Content Column -->
-        <div class="{{content_col_size}}" id="tg-sb-content">
-        {% assign drones = site.drones | sort: "date" | reverse %}
-          {% for drone in drones %}
-          <h2>
-              <a href="{{ drone.url | prepend: site.baseurl }}">
-              {{ drone.name }} - {{ drone.type }}
-              </a>
-          </h2>
-          <p>{{ drone.content | markdownify }}</p>
           {% endfor %}
           <p>hello from layout directory</p>
         </div>
