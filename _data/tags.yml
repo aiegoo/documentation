@@ -61,5 +61,6 @@ allowed-tags:
   - mathjax
   - anaconda
   - api
+  - web
 
 # Copyright 2021 Google LLC
