@@ -1,5 +1,5 @@
 ---
-name: title   : Puppeteer 시작하기 
+name: Puppeteer 시작하기 
 layout: post
 permalink: meet-puppeteer.html
 sidebar: other_sidebar
