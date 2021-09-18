@@ -2,5 +2,23 @@
 {
   "files.associations": {
     "*.html": "liquid"
-  }
+  },
+  "cSpell.words": [
+    "encour",
+    "hasaccepted",
+    "hascode",
+    "hasnotice",
+    "inbookmarks",
+    "inquestion",
+    "intags",
+    "isaccepted",
+    "isanswered",
+    "lastactive",
+    "maintenace",
+    "nomarkdown",
+    "oveflow",
+    "Reputiona",
+    "serach",
+    "stackoverflow"
+  ]
 }
