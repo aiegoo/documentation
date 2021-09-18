@@ -1,7 +1,7 @@
 ---
 name: wikiindex 
 layout: post
-permalink: meet-puppeteer.html
+permalink: main.html
 sidebar: other_sidebar
 collection: wiki
 summary: "parents category index "
