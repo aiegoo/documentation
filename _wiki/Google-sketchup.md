@@ -1,7 +1,7 @@
 ---
 name: 구글 스케치업 정리  
 layout: post
-permalink: GoogleAppsScript-Category.html
+permalink: Google-sketchup.html
 sidebar: other_sidebar
 collection: wiki
 summary: "Keyboard shortkey "
