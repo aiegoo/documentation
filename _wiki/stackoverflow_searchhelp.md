@@ -4,10 +4,10 @@ layout: post
 permalink: stackoverflow_searchhelp.html
 sidebar: other_sidebar
 collection: wiki
-summary: " 누구보다 빠르게 난 남들과는 다르게 ..." Short-circuit-evaluation short-circuiting minimal-evaluation McCarthy-evaluation "
+summary: " 누구보다 빠르게 난 남들과는 다르게 ..."
 tags: [wiki]
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-18 10:36 AM
+updated: 2021-09-18 11:23 AM
 toc: true
 public: true
 parent: [[Term-Category]]
@@ -18,7 +18,7 @@ latex: false
 
 아마 계속 작업중 ...
 
-# 1. 발단
+## 1. 발단
 
 * stack overflow에서 태그를 클릭할 경우 ...
   ![태그 가리키는 짤](/wiki-img/2020/stackoverflow-01.png)
@@ -29,7 +29,7 @@ latex: false
 * 추가로 태그에 없는 문자열을 포함해서 ... 원하는 답변을 더 빨리 찾을 수 있다.
   * 그런데 .. [누구보다 빠르게 난 남들과는 다르게 ... 유래](https://namu.wiki/w/%EB%88%84%EA%B5%AC%EB%B3%B4%EB%8B%A4%20%EB%B9%A0%EB%A5%B4%EA%B2%8C%20%EB%82%9C%20%EB%82%A8%EB%93%A4%EA%B3%BC%EB%8A%94%20%EB%8B%A4%EB%A5%B4%EA%B2%8C) 
 
-# 2. 전개
+## 2. 전개
 
 * 이걸 계기로 stack oveflow의 [serach help 페이지](https://stackoverflow.com/help/searching)를 번역해 보기로 했다.
 * 구글 번역으로 1차 번역, 이상한 것만 찾아서 2차 번역
@@ -39,10 +39,10 @@ latex: false
   * [MDN 키보드 입력 요소의 CSS 설정](https://developer.mozilla.org/ko/docs/Web/HTML/Element/kbd)
   * 써먹을 게 많이 나올줄 알았는데 `Enter` 한 개 있네
 
-# 3. 번역결과
+## 3. 번역결과
 * 원본 링크 : [https://stackoverflow.com/help/searching](https://stackoverflow.com/help/searching) ,2020년 5월 15일자 번역이후 업데이트 안함.
 
-## 어떻게 검색 하나요?
+### 어떻게 검색 하나요?
 
 모든 페이지에서 상단 표시 줄의 왼쪽 가운데에 표시되는 검색 상자에 검색어를 입력하고 {::nomarkdown}<kbd>Enter</kbd>{:/}를 누르십시오.
 
@@ -60,11 +60,11 @@ latex: false
 * 태그, 용어 또는 문구에서 결과를 제외하려면 검색어 앞에 접두사 `-`를 붙이십시오. `waffles -unicorns`는 신화적인 생물을 포함하지 않고 맛있는 반죽 베이스의 아침 식사를 언급하는 게시물을 찾는 반면 `[laurel] -[hardy]`는 고전 코미디 커플([1930년대 로렐과 하디](https://namu.wiki/w/%EB%A1%9C%EB%A0%90%EA%B3%BC%20%ED%95%98%EB%94%94)) 검색결과중 (하디를 포함하지 않는) 로렐의 검색결과만 찾는다.
 * 와일드 카드 검색을 사용하여 검색 결과를 확장합니다; `encour*` 또는 `Ex*nge`와 같이 단어의 아무 곳에 나 별표(*)를 추가하십시오.
 
-## 고급 검색 옵션:
+### 고급 검색 옵션:
 
 매우 구체적인 정보를 찾는 데 도움이되는 여러 가지 고급 검색 연산자를 제공합니다.
 
-### 범위 연산자
+#### 범위 연산자
 
 특정 범위의 **score** 또는 **answers**의 갯수 또는 특정 범위의 **views**의 갯수에 속하는 질문만 검색하려면 upper 또는 lower 매개 변수 또는 range를 입력 할 수 있습니다.
 
@@ -72,7 +72,7 @@ latex: false
 * `views:500..1000`또는 `views:500-1000`은 조회수가 500 ~ 1000 인 게시물을 보여줍니다.
 * `answers:..3`은 3 개 이하의 답변으로 질문을 반환합니다. (3개 포함)
 
-### 날짜
+#### 날짜
 
 다음의 연산자를 이용해 특정 기간 내에 생성되거나 활성화 된 게시물로 결과 범위를 좁힐 수 있습니다.
 
@@ -94,7 +94,7 @@ latex: false
 **주목하세요.** 모든 시간은 UTC로 기록됩니다. 결과가 당신의 시간대와 일치하지 않을 수 있습니다.
 
 
-### 사용자 연산자
+#### 사용자 연산자
 
 검색을 특정 사용자의 콘텐츠 (당신 자신 또는 다른 사람의 콘텐츠)로 제한 할 수도 있습니다. 다른 사용자의 게시물을 검색하려면 사용자 ID가 필요합니다.
 
@@ -102,7 +102,7 @@ latex: false
 * `inbookmarks:mine` (또는 모든 사용자 ID)은 당신(또는 사용자가 입력 한 사용자)이 북마크 한 질문 만 반환합니다.
 * `intags:mine`은 즐겨 찾기(favorite)로 표시 한 태그에 나타나는 게시물만 반환합니다.(태그가 없으면 이 연산자는 아무 작업도 수행하지 않습니다. 더 나은 결과를 얻으려면 환경 설정을 업데이트하십시오.)
 
-### 부울 연산자
+#### 부울 연산자
 
 다음 검색 연산자를 yes/no, true/false 또는 1/0 값과 함께 사용할 수 있습니다 (각 쌍은 동일하게 동작 함).
 
@@ -138,25 +138,25 @@ latex: false
 
 [사이트 운영자](https://stackoverflow.com/help/site-moderators)는 이 연산자를 사용하여 다른 사용자가 소유한 게시물을 포함하여 사이트의 모든 게시물을 검색할 수 있습니다.
 
-# 4. 결론및 활용
+## 4. 결론및 활용
 
-## 같이 알면 좋은 링크
+### 같이 알면 좋은 링크
 
 * [Stack Overflow에는 어떤 태그가 있는지 알고 싶을때](https://stackoverflow.com/tags) : 2020년 5월 현재 1719 (9x4=36개/페이지, 61,884개정도?)페이지나 된다. 검색 해보자.
   * 2020년 5월 15일 현재 가장 Popular한 태그는 javascript ( 태그를 단 article이 2,007,023개 )
 * [번역글, 내가 StackOverflow를 사용하는 방법, 2017/04/15](https://rinae.dev/posts/how-i-use-stackoverflow-kor) : StackOverflow 사용 경험 공유
 * [나를 위한 StackOverflow 명성(Reputiona) 쌓기](https://blog.kimkevin.net/how_to_earn_reputation_stackoverflow/) : StackOverflow 에서 명성 올리는 방법
 
-## Stack Overflow에서 검색시 써볼만한 옵션 응용
+### Stack Overflow에서 검색시 써볼만한 옵션 응용
 
 * `[tag1] [tag2]` : 태그 중첩으로 범위 좁히기
 
-## Stack Overflow에 등록된 관심있는 태그
+### Stack Overflow에 등록된 관심있는 태그
 
 * [google-apps-script](https://stackoverflow.com/questions/tagged/google-apps-script) : 구글 앱스 스크립트
 * [google-sheets-formula](https://stackoverflow.com/questions/tagged/google-sheets-formula) : 구글 시트 수식
 
-## Stack Overflow Help Center 에서 관심있는 article
+### Stack Overflow Help Center 에서 관심있는 article
 
 * [How do I find topics I'm interested in?](https://stackoverflow.com/help/interesting-topics) : 관심있는 주제 찾는 방법?
 *
