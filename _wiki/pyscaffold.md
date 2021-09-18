@@ -1,7 +1,7 @@
 ---
 name: PyScaffold로 파이썬 프로젝트 시작하기 
 layout: post
-permalink:pyscaffold.html
+permalink: pyscaffold.html
 sidebar: other_sidebar
 collection: wiki
 summary: " ... "
