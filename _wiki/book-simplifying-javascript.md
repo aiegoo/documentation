@@ -15,7 +15,12 @@ latex: false
 simple_map: true
 map_name: javascript
 box_number: 2
+series: "JAVASCRIPT series"
+weight: 2
 ---
+
+{% include custom/series_javascript_next.html %}
+
 * TOC
 {:toc}
 
