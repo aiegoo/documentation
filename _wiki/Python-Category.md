@@ -21,3 +21,5 @@ latex: false
 * [Python.org 홈](https://www.python.org/)
 
 ## Python - 카테고리 문서
+
+{% include links.html %}

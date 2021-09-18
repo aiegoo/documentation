@@ -25,3 +25,5 @@ latex: false
   * [컴퓨터 화면을 캡쳐해서 GIF로 만드는 간단한 방법](https://steemit.com/kr/@youngbinlee/gif) : screen2gif 소개글입니다.
 
 # 카테고리 문서 
+
+{% include links.html %}

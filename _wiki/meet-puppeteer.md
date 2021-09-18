@@ -105,3 +105,5 @@ latex: false
 * [tsconfig.json 사용하기, What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#using-tsconfigjson-or-jsconfigjson)
   * tsconfig.json 이 있으면 Typescript project의 루트임. jsconfig.json과 비슷한 역할 
 
+
+{% include links.html %}

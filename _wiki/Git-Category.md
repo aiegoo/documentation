@@ -56,3 +56,5 @@ latex: false
 * [Hugo로 github.io 블로그 만들기](https://ryan-han.com/post/etc/creating_static_blog/) : 여러가지 설정 참고할것이 있을듯..
 
 # git - 카테고리 문서 
+
+{% include links.html %}

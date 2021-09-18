@@ -129,3 +129,5 @@ latex: false
 ### 반영
 
 * [반영한 commit](https://github.com/aiegoo/kramdown-kn/commit/fcfde15c600a2258b9dc445b96fbb01e37fa3cf4)
+
+{% include links.html %}

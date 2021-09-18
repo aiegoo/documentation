@@ -17,3 +17,5 @@ regenerate: true
 
 ### first page for wiki collection
 which would be my future journal site my career expedition
+
+{% include links.html %}

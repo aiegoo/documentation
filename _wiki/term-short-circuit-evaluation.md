@@ -42,3 +42,5 @@ latex: false
 
 * [Be aware of the short-circuit behavior ...](https://wiki.sei.cmu.edu/confluence/display/c/EXP02-C.+Be+aware+of+the+short-circuit+behavior+of+the+logical+AND+and+OR+operators)
 * [Watch out for Side-effects](https://chortle.ccsu.edu/Java5/Notes/chap40/ch40_3.html)
+
+{% include links.html %}

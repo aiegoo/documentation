@@ -66,3 +66,5 @@ const message = `The current temperature is $(currentTemp)\u00b0C`;
 * [Python String Formatting Best Practices](https://realpython.com/python-string-formatting/)
 * [ES6 In Depth: 템플릿 문자열 (Template string)](http://hacks.mozilla.or.kr/2015/08/es6-in-depth-template-strings-2/)
 
+
+{% include links.html %}

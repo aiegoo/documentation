@@ -32,3 +32,5 @@ latex: false
 * [WSL과 윈도우즈의 상호 운용성](https://webdir.tistory.com/545) : WSL에서 윈도우즈 프로그램 호출하기. 그래픽 UI를 지원하지 않지만 윈도우즈 프로그램 호출은 할 수 있다!!! cron job 도??  [공식문서](https://docs.microsoft.com/ko-kr/windows/wsl/interop)
 
 
+
+{% include links.html %}

@@ -127,3 +127,5 @@ latex: false
     </ul>
 </div>
 
+
+{% include links.html %}

@@ -147,3 +147,5 @@ $ git difftool --diff-filter=d
 * 위에서 만든 움짤은 [컴퓨터 화면을 캡쳐해서 GIF로 만드는 간단한 방법](https://steemit.com/kr/@youngbinlee/gif)을 참고했다.
 * 윈도우에 설치하는 프로그램이며 홈페이지는 [이곳](https://www.screentogif.com/)이다.
 * 오픈소스인가? [github](https://github.com/NickeManarin/ScreenToGif)가 있다.
+
+{% include links.html %}

@@ -42,3 +42,5 @@ latex: false
 
 * [VS Code Vim 기능 지원 Roadmap](https://github.com/VSCodeVim/Vim/blob/master/ROADMAP.md)
 * [VS Code 단축키 모음](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
+{% include links.html %}

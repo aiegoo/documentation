@@ -436,3 +436,5 @@ A GitHub Action to deploy the jekyll site conveniently for GitHub Pages.
 1. `Github Repository's Settings`에 가서 `Secrets` tab으로 전환
 1. 거기서 `GH_TOKEN` 이라는 이름으로 토큰을 만들것
 1. 마지막으로, `Github Repository's Settings`로 가서 `GitHub Pages section`까지 scroll down 하고 `gh-pages` branch를 `GitHub Pages` source로 선택하라.
+
+{% include links.html %}

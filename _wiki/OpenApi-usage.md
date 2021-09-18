@@ -173,3 +173,5 @@ latex: false
   * 위 지시사항대로 `cfg_secret.js`를 `cfg_secret.cjs`로 수정하고, 관련코드를 수정하고 실행해보니 잘 되었다.
 * 소감
   * 결과적으로 CommonJS와 ES Module은 호환은 가능하지만 신경을 써줘야한다.
+
+{% include links.html %}

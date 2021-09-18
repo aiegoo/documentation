@@ -52,3 +52,5 @@ latex: false
 1. `.clasp.json`에 `filepushorder`옵션을 사용한다.( setup과 maintain이 어렵지 않단다)
   * 이 해결책의 실제 사용예는 [sample repository](https://github.com/PopGoesTheWza/clasp-filePushOrder)에서 볼 수 있다. 
 1. 답변자가 만든 또 다른 [template 리포지토리](https://github.com/PopGoesTheWza/ts-gas-project-starter)에서 세밀한 조정을 할 수 있다. 
+
+{% include links.html %}

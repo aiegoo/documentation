@@ -261,3 +261,5 @@ latex: false
 ### 임포트
 
 ## Better Way 3.
+
+{% include links.html %}

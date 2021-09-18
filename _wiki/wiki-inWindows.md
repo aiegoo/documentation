@@ -144,3 +144,5 @@ latex: false
   * 의존성 문제 : windows의 경우 tzinfo-1.x를 써야하는데.. jekyll이 `activesupport`라는 gem에 간접적인 의존성이 있고 `activesupport`의 신버전이 `tzinfo-1.x`를 지원하지 않는 문제가 있음.
 * 따라서 이도저도 아닌 교착상태에 있어서... Community에서 더 좋은 해결책이 나오길 기대하는 상황..
   
+
+{% include links.html %}

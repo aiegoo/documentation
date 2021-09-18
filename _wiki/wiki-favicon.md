@@ -44,3 +44,5 @@ latex: false
   <link rel="manifest" href="/site.webmanifest">
   ```
 * 관련 해서 [Johngrib님 Commit](https://github.com/johngrib/johngrib.github.io/commit/edfc0836ab2a3f94f72f2cce420e3afa5a00cbd9)이 있는데 참고해서 적용하면 된다.
+
+{% include links.html %}

@@ -168,3 +168,5 @@ latex: false
   * 여러가지 kbd 태그 style [링크](https://auth0.github.io/kbd/)
     * 위 링크에서 kbd 태그가 적용된 엘리먼트는 hover, 클릭동작 표현이 모두 적용되어 있다. 한 번 눌러보자
     * Game에 응용할 수도 ...?
+
+{% include links.html %}

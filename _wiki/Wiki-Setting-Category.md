@@ -21,3 +21,5 @@ latex: false
 * [Liquid](https://shopify.github.io/liquid/) - 템플리팅 언어 (templating language) , [Jekill에서 채용](https://jekyllrb.com/docs/liquid/)
 
 # 위키 설정 - 카테고리 문서
+
+{% include links.html %}
