@@ -1,5 +1,5 @@
 ---
-name: PyScaffold로 파이썬 프로젝트 시작하기 
+name: PyScaffold python project 
 layout: post
 permalink: pyscaffold.html
 sidebar: other_sidebar
