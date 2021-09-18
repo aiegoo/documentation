@@ -1,16 +1,4 @@
 ---
-layout  : wiki
-title   : 무료 한글 서체 
-summary : 무료.. 
-date    : 2020-10-08 22:08:42 +0900
-updated : 2020-10-08 23:41:38 +0900
-tag     : font 
-toc     : true
-public  : true
-parent  : [[Cross-Category]] 
-latex   : false
----
----
 name: 무료 한글 서체 
 layout: post
 permalink: korean-font.html
