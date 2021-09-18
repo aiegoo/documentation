@@ -18,6 +18,7 @@ link: https://www.36io.co
 
 My first yoga book I bought during my trip to Thailand has set off a series of events that truly made me who I am now. Believe it or not.
 
+{% include image.html file="yoga/vinyasa-flow.png" caption="vinyasa flow when standing is not possible" %}
 ## 90m Session sequence (40 asanas plus ashtanga)
 
 |---
