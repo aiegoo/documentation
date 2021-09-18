@@ -1,7 +1,7 @@
 ---
 name: 공통 도구
 layout: post
-permalink: css-meaning.html
+permalink: Cross-Category.html
 sidebar: other_sidebar
 collection: wiki
 summary: " 카테고리 문서 1단계"
