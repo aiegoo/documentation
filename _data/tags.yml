@@ -59,5 +59,6 @@ allowed-tags:
   - re2
   - latex
   - mathjax
+  - anaconda
 
 # Copyright 2021 Google LLC
