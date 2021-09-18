@@ -1,7 +1,7 @@
 ---
 layout: post
 name: ROOT
-permalink: default.html
+permalink: default-wiki.html
 sidebar: other_sidebar
 collection: wiki
 tags: [wiki, getting_started]

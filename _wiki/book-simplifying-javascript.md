@@ -13,7 +13,7 @@ public: true
 parent: [[Books-Category]] 
 latex: false
 simple_map: true
-map_name: javascript
+map_name: JAVASCRIPT
 box_number: 2
 series: "JAVASCRIPT series"
 weight: 2

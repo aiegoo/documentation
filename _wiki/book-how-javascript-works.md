@@ -15,6 +15,7 @@ latex: false
 simple_map: true
 map_name: javascript
 box_number: 1
+folder: wiki
 series: "JAVASCRIPT series"
 weight: 1
 ---
