@@ -21,11 +21,11 @@ latex: false
 ## 1. 발단
 
 * stack overflow에서 태그를 클릭할 경우 ...
-  ![태그 가리키는 짤](/wiki-img/2020/stackoverflow-01.png)
+  ![태그 가리키는 짤](wiki-img/2020/stackoverflow-01.png)
 * 이렇게 해당 태그를 포함하는 질문 목록이 나온다.
-  ![태그 관련 목록 짤](/wiki-img/2020/stackoverflow-02.png)
+  ![태그 관련 목록 짤](wiki-img/2020/stackoverflow-02.png)
 * 그런데 여기에 태그를 한 개 더해주면 ... and 효과로 범위를 더 좁힐 수 있다
-  ![태그 두개 짤](/wiki-img/2020/stackoverflow-03.png)
+  ![태그 두개 짤](wiki-img/2020/stackoverflow-03.png)
 * 추가로 태그에 없는 문자열을 포함해서 ... 원하는 답변을 더 빨리 찾을 수 있다.
   * 그런데 .. [누구보다 빠르게 난 남들과는 다르게 ... 유래](https://namu.wiki/w/%EB%88%84%EA%B5%AC%EB%B3%B4%EB%8B%A4%20%EB%B9%A0%EB%A5%B4%EA%B2%8C%20%EB%82%9C%20%EB%82%A8%EB%93%A4%EA%B3%BC%EB%8A%94%20%EB%8B%A4%EB%A5%B4%EA%B2%8C) 
 
