@@ -15,6 +15,9 @@ latex: false
 series: "JAVASCRIPT series"
 weight: 3
 ---
+
+{% include custom/series_javascript_next.html %}
+
 * TOC
 {:toc}
 
