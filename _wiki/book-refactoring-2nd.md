@@ -12,6 +12,8 @@ toc: true
 public: true
 parent: [[Books-Category]] 
 latex: false
+series: "JAVASCRIPT series"
+weight: 3
 ---
 * TOC
 {:toc}
