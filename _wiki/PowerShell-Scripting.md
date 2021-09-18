@@ -10,7 +10,7 @@ date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 2:32 PM
 toc: true
 public: true
-parent: [[Python-Category]] `
+parent: [[Python-Category]] 
 latex: false
 ---
 * TOC
