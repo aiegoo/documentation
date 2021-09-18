@@ -55,5 +55,9 @@ allowed-tags:
   - tmuxinator
   - jekyll
   - stringinterpolation
+  - regex
+  - re2
+  - latex
+  - mathjax
 
 # Copyright 2021 Google LLC
