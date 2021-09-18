@@ -60,5 +60,6 @@ allowed-tags:
   - latex
   - mathjax
   - anaconda
+  - api
 
 # Copyright 2021 Google LLC
