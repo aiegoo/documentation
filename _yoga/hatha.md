@@ -18,6 +18,22 @@ link: https://www.36io.co
 
 My first yoga book I bought during my trip to Thailand has set off a series of events that truly made me who I am now. Believe it or not.
 
+## 90m Session sequence (40 asanas plus ashtanga)
+
+|---
+| :-:
+|
+| ![image](https://user-images.githubusercontent.com/42961200/133865562-c6afd79f-5827-4924-842e-7fb7311f8da9.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133865573-4ec283b3-b7e7-4acc-b464-4c16019fc105.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133865590-111bce8d-277f-492e-93e1-754a957ebf5c.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133865614-0936bbc7-fee0-4cf5-b8b4-787b9d0dafee.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133865630-da1410a3-6e00-4275-bf54-092916189f85.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133865643-9e419ff8-1dc2-47ba-ba53-40328e510a91.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133865654-9478132a-cfea-4cd7-aad4-c468480e1871.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133865677-350fca3c-491a-4c7a-a439-e637d9e299c6.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133865693-896e5f44-e691-4720-a9fb-60e1e937408d.png)
+| ![image](https://user-images.githubusercontent.com/42961200/133865725-2073f2a1-cfc5-4a28-a8ac-eae94020db5b.png)
+
 
 {% include image_gallery.html folder="hatha" %}
 
