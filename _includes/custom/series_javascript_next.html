@@ -1,8 +1,8 @@
 <div class="seriesContext">
     <a>
-        {% assign pages = site.pages | sort:"weight"  %}
+        {% assign pages = site.wiki | sort:"weight"  %}
         {% for pg in pages %}
-        {% if pg.series == "RFLY series" %}
+        {% if pg.series == "JAVASCRIPT series" %}
         {% if pg.weight > page.weight %}
         <a href="{{pg.url | remove: '/'}}"><button type="button" class="btn btn-primary">Next: {{pg.title}}</button></a>
         {% break %}
@@ -15,7 +15,7 @@
         <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Jump to: <span class="caret"></span></button>
         <ol class="dropdown-menu">
             {% for pg in pages %}
-            {% if pg.series == "RFLY series" %}
+            {% if pg.series == "JAVASCRIPT series" %}
             {% if pg.url == page.url %}
             <li class="active"> → {{pg.weight}}. {{pg.title}}</li>
             {% else %}
