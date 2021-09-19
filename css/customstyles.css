@@ -371,6 +371,10 @@ li.dropdownActive a {
     margin-top:10px;
 }
 
+.navbar-inverse .navbar-nav>li>a:hover {
+    color:rgba(255, 255, 255, .5)
+}
+
 .post-content .rssfeedLink {
     color: #248EC2;
 }
