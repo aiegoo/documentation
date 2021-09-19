@@ -652,7 +652,7 @@ a.dropdown-toggle, .navbar-inverse .navbar-nav > li > a  {
     margin-left: 10px;
 }
 
-.navbar a:focus {
+.navbar a:focus, a:hover {
     outline: 1px solid #fff;
 }
 
