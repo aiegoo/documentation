@@ -747,10 +747,11 @@ li.activeSeries {
 }
 
 /* to make drondown menu larger to accomodate long titles */
-.seriesContext .btn-group {
-    width: 33vw !important;
+.seriesContext  {
+    width: 70vw !important;
+    z-index: 999;
 }
-.seriesContext .dropdown-menu ol {
+.seriesContext ol.dropdown-menu {
     width: 100%;
 }
 
