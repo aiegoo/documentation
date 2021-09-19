@@ -752,7 +752,7 @@ li.activeSeries {
     z-index: 999;
 }
 .seriesContext ol.dropdown-menu {
-    width: 60%;
+    width: 400px;
 }
 
 .alert-warning {
