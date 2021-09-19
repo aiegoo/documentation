@@ -70,7 +70,14 @@ The purpose of this book is to give you a firm grounding of the JavaScript langu
 ### 감사의 말
 
 
-## 
+## types and typeof operator
+
+|--
+| | |
+| | |
+| A number | The Boolean values false and true | The special values null and undefined
+| A string | A symbol | An object
+| primitive types 
 
 # 05 리팩터링 카탈로그를 보는 법
 
