@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: " 누구보다 빠르게 난 남들과는 다르게 ..."
 tags: [wiki]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 11:23 AM
 toc: true

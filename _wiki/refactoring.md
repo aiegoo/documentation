@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: " toc의 css를 조정하다가 우연히 깨닫게 된 CSS 어원의 의미Javascript 에서 출력된 html string을 브라우저로 확인하기"
 tags: [web, publishing]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:20 PM
 toc: true

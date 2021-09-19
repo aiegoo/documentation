@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "parents category index "
 tags: [wiki]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 2:32 PM
 toc: true

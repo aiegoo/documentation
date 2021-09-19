@@ -1,11 +1,12 @@
 ---
-name: 리팩토링 2판
+name: javascript for impatient
 layout: post
 permalink: book-javascript-for-impatient.html
 sidebar: other_sidebar
 collection: wiki
 summary: "코드 구조를 체계적으로 개선하여 효율적인 리팩터링 구현하기 "
 tags: [web, regex, publishing, javascript]
+excerpt_separator: <!--more-->
 date: 2021-09-19 12:42:03 +0900
 updated: 2021-09-18 4:47 PM
 toc: true
@@ -62,7 +63,7 @@ The purpose of this book is to give you a firm grounding of the JavaScript langu
 ### 예시는 자바스트립트로
 
 ### 누가 읽어야 하나
-)
+
 
 ### 밥상을 차려주신 이들
 

@@ -5,6 +5,7 @@ permalink: javascript-myCookBook.html
 sidebar: other_sidebar
 collection: wiki
 tags: [wiki, getting_started]
+excerpt_separator: <!--more-->
 date: 2021-09-05 23:30:03 +0900
 updated: 2021-09-15 11:24 AM
 toc: true

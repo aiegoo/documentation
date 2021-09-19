@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "powershell 환경설정"
 tags: [git]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:20 PM
 toc: true

@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "요즘 핫한 터미널"
 tags: [wiki, window,teriminus, tmuxinator, getting_started]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 9:27 PM
 toc: true

@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "위키 운영하면서 생기는 문제 정리 "
 tags: [wiki, vim, troubleshooting]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 9:53 PM
 toc: true

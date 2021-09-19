@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "플릿 문자열, 백틱 문자열, f문자열"
 tags: [wiki, vim]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 7:13 AM
 toc: true

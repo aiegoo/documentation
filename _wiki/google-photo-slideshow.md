@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "구글 포토로만 하는 건 아님... "
 tags: [windows]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 3:16 PM
 toc: true

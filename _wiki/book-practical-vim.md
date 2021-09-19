@@ -5,7 +5,8 @@ permalink: book-practical-vim.html
 sidebar: other_sidebar
 collection: wiki
 summary: "손이 먼저 반응하는"
-tags: [web, regex, publishing]
+tags: [web, regex, vim, publishing]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:50 PM
 toc: true

@@ -4,8 +4,9 @@ layout: post
 permalink: book-developer-writing.html
 sidebar: other_sidebar
 collection: wiki
-summary: "변수 네이밍부터 릴리스노트, ..."
+summary: "변수 네이밍부터 릴리스노트..."
 tags: [web, regex, publishing]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:59 PM
 toc: true

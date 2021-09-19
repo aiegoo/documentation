@@ -6,6 +6,7 @@ sidebar: mydoc_sidebar
 collection: wiki
 summary: "settings, dotfile and guide application"
 tags: [wiki, window, getting_started]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 9:27 PM
 toc: true

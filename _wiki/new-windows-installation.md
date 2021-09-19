@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "구글 슬라이드로. "
 tags: [windows]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 2:32 PM
 toc: true

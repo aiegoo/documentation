@@ -65,5 +65,6 @@ allowed-tags:
   - Javascript
   - python
   - cplus
+  - node
 
 # Copyright 2021 Google LLC
