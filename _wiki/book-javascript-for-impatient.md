@@ -24,7 +24,7 @@ weight: 4
 
 # 개요
 
-| ![표지](images/jsimpatient.jpg) | 저자: Cay Horstmann<br> 책제목 : Javascript for the impatient  <br> 부제 : Exploit the power of modern javascript and avoid the pitfalls<br><br> 출판사 : 한빛미디어 (원책: Pearson, Addison-Wesley) <br> ISBN 영문 9780136502142 <br> <br> 값: 28.79USD |
+| ![표지](images/jsimpatient.jpg) | 저자: Cay Horstmann<br> 책제목 : Javascript for the impatient  <br> 부제 : Exploit the power of modern javascript and avoid the pitfalls<br><br> 출판사 : 원책: Pearson, Addison-Wesley <br> ISBN 영문 9780136502142 <br> <br> 값: 28.79USD |
 
 ## 저자 설명
 Cay S. Horstmann is principal author of Core Java™, Volumes I & II, Eleventh Edition (Pearson, 2018), Scala for the Impatient, Second Edition (Addison-Wesley, 2016), and Core Java SE 9 for the Impatient (Addison-Wesley, 2017). Cay is a professor emeritus of computer science at San Jose State University, a Java Champion, and a frequent speaker at computer industry conferences.
@@ -50,7 +50,7 @@ Cay S. Horstmann is principal author of Core Java™, Volumes I & II, Eleventh E
 
 ### 다루는 내용
 
-In Chapter 1, we get going with the basic concepts of JavaScript: values and their types, variables, and most importantly, object literals. Chapter 2 covers control flow. You can probably skim over it quickly if you are familiar with Java, C#, or C++. In Chapter 3, you will learn about functions and functional programming, which is very important in JavaScript. JavaScript has an object model that is very different from class-based programming languages. Chapter 4 goes into detail, with a focus on modern syntax. Chapters 5 and 6 cover the library classes that you will most often use for working with numbers, dates, strings, and regular expressions. These chapters are largely at the basic level, with a sprinkling of more advanced sections.
+In Chapter 1, we get going with the basic concepts of JavaScript: values and their types, variables, and most importantly, object literals. Chapter 2 covers control flow. <!--more--> You can probably skim over it quickly if you are familiar with Java, C#, or C++. In Chapter 3, you will learn about functions and functional programming, which is very important in JavaScript. JavaScript has an object model that is very different from class-based programming languages. Chapter 4 goes into detail, with a focus on modern syntax. Chapters 5 and 6 cover the library classes that you will most often use for working with numbers, dates, strings, and regular expressions. These chapters are largely at the basic level, with a sprinkling of more advanced sections.
 
 The next four chapters cover intermediate level topics. In Chapter 7, you will see how to work with arrays and the other collections that the standard JavaScript library offers. If your programs interact with users from around the world, you will want to pay special attention to the coverage of internationalization in Chapter 8. Chapter 9 on asynchronous programming is very important for all programmers. Asynchronous programming used to be quite complex in JavaScript, but it has become much simpler with the introduction of promises and the async and await keywords. JavaScript now has a standard module system that is the topic of Chapter 10. You will see how to use modules that other programmers have written, and to produce your own.
 
