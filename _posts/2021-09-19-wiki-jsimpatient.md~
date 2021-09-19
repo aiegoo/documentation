@@ -1,0 +1,26 @@
+---
+title:  "v2 roadmap"
+published: true
+permalink: v2-roadmap.html
+summary: "More integration where it counts most"
+tags: [news]
+links: https://aiegoo.github.io/documentation/yoga
+---
+
+### 2021-09-17 roadmap for v2.0
+
+## Tasks
+- [ ] TASK: integrate vscode-journal and vimwiki plugins
+- [ ] TASK: modulization of codes
+- [ ] TASK: Drone devworks, other contents added -- 계속 정리
+- [ ] TASK: Create contextual symlinks for related topics and series
+- [ ] TASK: advance taglogic and search feature
+
+## Notes
+
+- NOTE: see the link below for yoga contents
+
+
+
+
+{% include links.html %}
