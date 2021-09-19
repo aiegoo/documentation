@@ -115,4 +115,5 @@ latex: false
   * 깔끔하게 정리된 느낌은 없고...
   * ...그냥 그때 의식의 흐름이 이랬구나를 알게 된다.
 
+{% include toc_scrollslpy.html %}
 {% include links.html %}
