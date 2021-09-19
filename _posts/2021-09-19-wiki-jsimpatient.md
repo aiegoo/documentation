@@ -15,10 +15,11 @@ links: https://aiegoo.github.io/documentation/yoga
 - [ ] TASK: use node to display backends via web for web-based qgcround api
 - [ ] TASK: is there more to get from this book?
 - [ ] TASK: next is REGEX?
+- [ ] TASK: create a lesson submodule and try to use curl/wget for lesson files
 
 ## Notes
 
-- NOTE: see the link below for yoga contents
+- NOTE: see the link below for more contents
 
 
 

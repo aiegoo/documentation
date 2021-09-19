@@ -1,20 +1,20 @@
 ---
-title:  "v2 roadmap"
+title:  "jsimpatient learning path"
 published: true
-permalink: v2-roadmap.html
-summary: "More integration where it counts most"
-tags: [news]
+permalink: wiki-jsimpatient.html
+summary: "javascript revisited"
+tags: [news, wiki, javascript]
 links: https://aiegoo.github.io/documentation/yoga
 ---
 
-### 2021-09-17 roadmap for v2.0
+### 2021-09-19 the modern javascript for impatient
 
 ## Tasks
-- [ ] TASK: integrate vscode-journal and vimwiki plugins
-- [ ] TASK: modulization of codes
-- [ ] TASK: Drone devworks, other contents added -- 계속 정리
-- [ ] TASK: Create contextual symlinks for related topics and series
-- [ ] TASK: advance taglogic and search feature
+- [ ] TASK: skimm through the first 4 chapters
+- [ ] TASK: focus on the control flow scripts 
+- [ ] TASK: use node to display backends via web for web-based qgcround api
+- [ ] TASK: is there more to get from this book?
+- [ ] TASK: next is REGEX?
 
 ## Notes
 
