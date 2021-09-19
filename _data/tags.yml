@@ -62,5 +62,8 @@ allowed-tags:
   - anaconda
   - api
   - web
+  - Javascript
+  - python
+  - cplus
 
 # Copyright 2021 Google LLC
