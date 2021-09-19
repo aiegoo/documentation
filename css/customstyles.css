@@ -746,6 +746,14 @@ li.activeSeries {
     font-size:15px;
 }
 
+/* to make drondown menu larger to accomodate long titles */
+.seriesContext .btn-group {
+    width: 33vw !important;
+}
+.seriesContext .dropdown-menu ol {
+    width: 100%;
+}
+
 .alert-warning {
     color: #444;
 }
