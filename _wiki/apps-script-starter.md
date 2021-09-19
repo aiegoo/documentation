@@ -1,5 +1,6 @@
 ---
 name: 로컬 구글 Apps Script 개발
+title: 로컬 구글 Apps Script 개발
 layout: post
 permalink: apps-script-starter.html
 sidebar: other_sidebar
