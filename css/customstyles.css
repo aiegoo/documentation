@@ -267,7 +267,7 @@ div#toc ul li:focus, li:hover, li a:focus, li a:hover {
     color: rgba(6,46,82, 1) !important;
     transition: all 0.125s ease-in 0s;
     text-decoration: none;
-    bottom: -0.2em;
+    /* bottom: -0.2em; */
 }
 
 div#toc ul li ul li {
