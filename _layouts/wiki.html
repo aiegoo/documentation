@@ -109,7 +109,7 @@ excerpt_separator: <!--more-->
               </a>
           </h2>
          <span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time></span>
-          <p>{{ pg.excerpt | markdownify | truncatewords: 50 }}</p>
+          <p>{{ pg.excerpt | markdownify | truncatewords: 150 }}</p>
           {% endfor %}
           <p>hello from layout directory</p>
         </div>
