@@ -6,10 +6,10 @@ sidebar: other_sidebar
 collection: wiki
 permalink: /wiki.html
 excerpt_separator: <!--more-->
-date: 2021-08-26 12:42:03 +0900
+date: 2021-09-20 15:37:09 +0900
 toc: true
 comment: false
-updated: 2021-09-17 18:00:13 +0900
+updated: 2021-09-17 3:38 PM
 ---
 
 ## wiki
