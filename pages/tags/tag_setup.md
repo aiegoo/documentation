@@ -1,5 +1,5 @@
 ---
-title: "Installation"
+title: "SETUP pages"
 tagName: setup
 search: exclude
 permalink: tag_setup.html
