@@ -17,10 +17,7 @@ updated: 2021-09-17 3:38 PM
 <div class="home">
      {% if page.summary %}
     <div class="summary">{{page.summary}}</div>
-     {% endif %}
-     {% if site.github_editme_path %}
-    <a target="_blank" rel="noopener" href="https://github.com/{{site.github_editme_path}}{{page.path}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
-     {% endif %}
+     {% endif %}     
     <div class="post-list">
         {% for wiki in site.wiki reversed %}
     <h2><a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ wiki.name }}</a></h2>
