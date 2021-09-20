@@ -1,6 +1,7 @@
 ---
 layout: page
 name: four types of yoga
+tags: yoga
 sidebar: other_sidebar
 permalink: yoga_overview.html
 category: "overview"

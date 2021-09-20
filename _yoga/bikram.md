@@ -1,6 +1,7 @@
 ---
 layout: page
 name: "Bikram Hot yoga"
+tags: yoga, bikram
 sidebar: other_sidebar
 permalink: bikram.html
 category: "bikram"
