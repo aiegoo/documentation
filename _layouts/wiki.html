@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 <div class="home">
 
     <div class="post-list">
-        {% for wiki in site.wiki limit:40 | sort: "date" | reverse %}
+        {% for wiki in site.wiki reversed %}
 
 
     <h2><a class="post-link" href="{{ wiki.url | remove: "/" }}">{{ wiki.name }}</a></h2>
