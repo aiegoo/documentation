@@ -110,7 +110,7 @@ excerpt_separator: <!--more-->
           </h2>
          <span class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time> 
-            <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+            <a href="{{ 'tag_' | append: page.tag | append: '.html'}}">{{page.tag}}</a>{% unless forloop.last %}, {% endunless%}
           </span>
           <p>{{ pg.excerpt | markdownify | truncatewords: 50 }}</p>
           {% endfor %}
