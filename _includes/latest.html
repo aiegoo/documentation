@@ -6,7 +6,7 @@ layout: default
 <div id="app">
     <H3 class="indent">최근 변경된 문서</H3>
     <ul class="post-list">
-{% for pg in documents %}{% if pg.public != false and pg.title != 'wiki' %}
+{% for pg in documents limit: 5 %}{% if pg.public != false and pg.title != 'wiki' %}
         <li>
             <div>
                 <a class="post-link" href="{{ pg.url }}">
