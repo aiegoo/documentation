@@ -108,10 +108,10 @@ excerpt_separator: <!--more-->
               {{ pg.name }} - {{ pg.updated }}
               </a>
           </h2>
-         <span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time></span>
-
-                <a href="{{ "tag_" | append: tag | append: ".html"}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
-                
+         <span class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time> 
+            <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+          </span>
           <p>{{ pg.excerpt | markdownify | truncatewords: 50 }}</p>
           {% endfor %}
           <p>hello from layout directory</p>
