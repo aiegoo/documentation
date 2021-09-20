@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 name: aerial
 tags: hotyoga, bikram, yoga
 sidebar: other_sidebar
