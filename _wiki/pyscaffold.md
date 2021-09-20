@@ -4,7 +4,7 @@ layout: post
 permalink: pyscaffold.html
 sidebar: other_sidebar
 collection: wiki
-summary: " ... "
+summary: " pyscaffold "
 tags: [anaconda]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
