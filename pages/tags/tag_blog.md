@@ -1,5 +1,5 @@
 ---
-title: "News"
+title: "Blog pages"
 tagName: blog
 search: exclude
 permalink: tag_blog.html

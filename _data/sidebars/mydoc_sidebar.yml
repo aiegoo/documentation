@@ -86,19 +86,19 @@ entries:
           output: web, pdf
 
         - title: GCS-web
-          url: /tag_gcs_web.html
+          url: /mydoc_gcs_web.html
           output: web, pdf
           
         - title: Rqt
-          url: /tag_rqt.html
+          url: /mydoc_rqt.html
           output: web, pdf
 
         - title: webrtc
-          url: /tag_webrtc.html
+          url: /mydoc_webrtc.html
           output: web, pdf
 
         - title: mqtt
-          url: /tag_mqtt.html
+          url: /mydoc_mqtt.html
           output: web, pdf        
 
     - title: Gitlab-github actions
@@ -243,7 +243,7 @@ entries:
           output: web
 
         - title: Implementating Pixhawk Cube
-          url: /tag_rfly_cube.html
+          url: /mydoc_rfly_cube.html
           output: web
 
     - title: Dev-Apmdr 01 / pixhawk lite 
@@ -345,7 +345,7 @@ entries:
     folderitems:
         
     - title: Overview 
-      url: /tag_aiotoverview.html
+      url: /mydoc_aiotoverview.html
       output: web, pdf       
       
       subfolders:
@@ -354,15 +354,15 @@ entries:
         subfolderitems:
 
         - title: Detection serializer
-          url: /tag_sensor_detection.html
+          url: /mydoc_sensor_detection.html
           output: web
 
         - title: Realsense drone
-          url: /tag_realsense.html
+          url: /mydoc_realsense.html
           output: web
 
         - title: Edison Arduino
-          url: /tag_edison_arduino.html
+          url: /mydoc_edison_arduino.html
           output: web
 
         - title: Collaboration pages
@@ -374,7 +374,7 @@ entries:
           output: web
        
     - title: Jetson nano 
-      url: /tag_jetson_nano.html
+      url: /mydoc_jetson_nano.html
       output: web, pdf
       
       subfolders:
@@ -383,19 +383,19 @@ entries:
         subfolderitems:
         
         - title: project overview
-          url: /tag_jetson_xavier.html
+          url: /mydoc_jetson_xavier.html
           output: web
           
         - title: Raspberry Pi projects
-          url: /tag_raspi.html
+          url: /mydoc_raspi.html
           output: web, pdf
 
         - title: Sensor serializer
-          url: /tag_serializer.html
+          url: /mydoc_serializer.html
           output: web
 
         - title: Lora monitoring system
-          url: /tag_lora_monitoring.html
+          url: /mydoc_lora_monitoring.html
           output: web
 
 
@@ -405,19 +405,19 @@ entries:
         subfolderitems:
 
         - title: project overview
-          url: /tag_jetson_xavier.html
+          url: /mydoc_jetson_xavier.html
           output: web
           
         - title: Raspberry Pi projects
-          url: /tag_raspi.html
+          url: /mydoc_raspi.html
           output: web, pdf
 
         - title: Sensor serializer
-          url: /tag_serializer.html
+          url: /mydoc_serializer.html
           output: web
 
         - title: Lora monitoring system
-          url: /tag_lora_monitoring.html
+          url: /mydoc_lora_monitoring.html
           output: web
 
   - title: Books

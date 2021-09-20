@@ -6,23 +6,31 @@ sidebar: other_sidebar
 collection: wiki
 permalink: /wiki.html
 excerpt_separator: <!--more-->
-date: 2021-08-26 12:42:03 +0900
+date: 2021-09-20 15:37:09 +0900
 toc: true
 comment: false
-updated: 2021-09-17 18:00:13 +0900
+updated: 2021-09-17 3:38 PM
 ---
 
-## wiki
-{% assign wikis = site.wiki | sort:"date" | reverse %}
-{% for pg in wikis %}
-<h2>
-     <a href="{{ pg.url | prepend: site.baseurl }}">
-     {{ pg.name }} - {{ pg.updated }}
-     </a>
-</h2>
-<span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time>
-</span>
-<p>{{ pg.excerpt | markdownify | truncateword: 50 | strip_html }} </p>
-{% endfor %}
+## wiki Home
 
+<div class="home">
+    <div class="post-list">
+        {% for wiki in site.wiki reversed %}
+    <h2><a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ wiki.name }}</a></h2>
+        <span class="post-meta">{{ wiki.updated | date: "%b %-d, %Y" }} /
+            {% for tag in wiki.tags %}
+                <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+                {% endfor %}</span>
+        <p>{% if page.summary %} {{ page.summary | strip_html | strip_newlines }} 
+           {% else %} 
+           {{ pg.excerpt | markdownify | truncatewords: 150 }} {% endif %}
+        </p>
+        {% endfor %}
+        <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
+
+<hr />
+        <p>See more wikis from the <a href="wiki_archive.html">Wiki Archive</a>. </p>
+    </div>
+</div>
 {% include links.html %}

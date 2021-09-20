@@ -1,5 +1,5 @@
 ---
-title: "News"
+title: "Drone pages"
 tagName: drone
 search: exclude
 permalink: tag_drone.html

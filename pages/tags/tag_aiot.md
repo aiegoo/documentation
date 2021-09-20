@@ -1,5 +1,5 @@
 ---
-title: "News"
+title: "AIOT pages"
 tagName: aiot
 search: exclude
 permalink: tag_aiot.html
