@@ -111,7 +111,7 @@ excerpt_separator: <!--more-->
          <span class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time> /
             {% for tag in page.tags %}
-            <a href="{{ 'tag_' | append: page.tags | append: '.html'}}">{{page.tags}}</a>{% unless forloop.last %}, {% endunless%}
+            <a href="{{ 'tag_' | append: pg.tags | append: '.html'}}">{{pg.tags}}</a>{% unless forloop.last %}, {% endunless%}
           </span>
           <p>{{ pg.excerpt | markdownify | truncatewords: 50 }}</p>
           {% endfor %}

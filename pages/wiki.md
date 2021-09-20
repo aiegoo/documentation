@@ -21,8 +21,8 @@ updated: 2021-09-17 18:00:13 +0900
      </a>
 </h2>
 <span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time>/
-            {% for tag in page.tags %}
-<a href="{{ 'tag_' | append: page.tags | append: '.html'}}">{{tags}}</a>{% unless forloop.last %}, {% endunless%}
+            {% for tag in pg.tags %}
+<a href="{{ 'tag_' | append: pg.tags | append: '.html'}}">{{pg.tags}}</a>{% unless forloop.last %}, {% endunless%}
 </span>
 <p>{{ pg.excerpt | markdownify | truncateword: 50 | strip_html }} </p>
 
