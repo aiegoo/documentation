@@ -11,6 +11,9 @@ updated: 2021-09-17 5:32 PM
 toc: true
 ---
 
+## jekyll commento integration
+
+[blog](https://www.jamify.org/2020/05/12/add-comments-with-commento/)
 
 ## 1. 마크다운 테이블 스타일링
 
