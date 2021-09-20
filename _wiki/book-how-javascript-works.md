@@ -6,7 +6,7 @@ permalink: book-how-javascript-works.html
 sidebar: other_sidebar
 collection: wiki
 summary: "더글라스 크락포드가 알려주는"
-tags: [web, regex, publishing, javascript]
+tags: [web, regex, javascript]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:53 PM
