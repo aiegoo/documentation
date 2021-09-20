@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "여덟 가지 프로그래밍 언어별 완벽 해설 "
 tags: [web, regex, publishing]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:44 PM
 toc: true
@@ -180,3 +181,5 @@ latex: false
 # 6장. 숫자
 # 7장. URL, 경로, 인터넷주소
 # 8장. 마크업과 데이터 상호변환
+
+{% include links.html %}

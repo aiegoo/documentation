@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "favicon 추가 방법, 관련 링크"
 tags: [wiki, vim, troubleshooting]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 3:53 AM
 toc: true
@@ -44,3 +45,5 @@ latex: false
   <link rel="manifest" href="/site.webmanifest">
   ```
 * 관련 해서 [Johngrib님 Commit](https://github.com/johngrib/johngrib.github.io/commit/edfc0836ab2a3f94f72f2cce420e3afa5a00cbd9)이 있는데 참고해서 적용하면 된다.
+
+{% include links.html %}

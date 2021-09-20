@@ -5,6 +5,7 @@ permalink: sed-problem-solving.html
 sidebar: other_sidebar
 collection: wiki
 tags: [wiki, getting_started]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 5:32 PM
 toc: true
@@ -239,3 +240,5 @@ a : [b]_(      )
 * 어그로성 낚시성 제목을 달았다.  
 * 어차피 나 혼자 보는 컨셉이므로 ..
 * 나만 잘 기억나면 된다. 
+
+{% include links.html %}

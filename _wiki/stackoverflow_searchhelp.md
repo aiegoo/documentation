@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: " 누구보다 빠르게 난 남들과는 다르게 ..."
 tags: [wiki]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 11:23 AM
 toc: true
@@ -168,3 +169,5 @@ latex: false
   * 여러가지 kbd 태그 style [링크](https://auth0.github.io/kbd/)
     * 위 링크에서 kbd 태그가 적용된 엘리먼트는 hover, 클릭동작 표현이 모두 적용되어 있다. 한 번 눌러보자
     * Game에 응용할 수도 ...?
+
+{% include links.html %}

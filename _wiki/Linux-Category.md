@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "카테고리 2단계 (끝)  "
 tags: [linux]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 2:48 PM
 toc: true
@@ -32,3 +33,5 @@ latex: false
 * [https://helloworld.kurly.com/blog/reg-exp-01/](https://helloworld.kurly.com/blog/reg-exp-01/) : 마켓컬리 기술 블로그중 규식이형..
 
 # 카테고리 문서 
+
+{% include links.html %}

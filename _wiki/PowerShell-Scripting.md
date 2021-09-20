@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: " ... "
 tags: [terminus]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 2:32 PM
 toc: true
@@ -101,3 +102,5 @@ latex: false
 * 즉, 리눅스에서 BOM이 있을 경우 처리되지 못하는 경우가 발생할 수 있음. 
 * 리눅스에서도 대부분은 BOM을 처리할 수 있다고 함.
 
+
+{% include links.html %}

@@ -1,5 +1,5 @@
 ---
-title: "wiki pages"
+title: "Getting started pages"
 tagName: wiki
 search: exclude
 permalink: tag_wiki.html

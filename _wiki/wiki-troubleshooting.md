@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "위키 운영하면서 생기는 문제 정리 "
 tags: [wiki, vim, troubleshooting]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 9:53 PM
 toc: true
@@ -68,3 +69,5 @@ https://help.github.com/en/github/working-with-github-pages/troubleshooting-jeky
   * 로컬에서 테스트 해보지 않고 github에 올려서 push 이후 문제를 발견. 
   * 로컬에 jekyll 환경이 필요하다 생각함.
   * 이 사이트에서 [jekyll 환경 설정](https://shryu8902.github.io/_posts/2018-06-22-jekyll-on-windows/) 참조 해서 로컬에 jekyll 설치. 
+
+{% include links.html %}

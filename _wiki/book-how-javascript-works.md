@@ -1,11 +1,13 @@
 ---
 name: 자바스크립트는 왜 그 모양일까? 
+title: 자바스크립트는 왜 그 모양일까?
 layout: post
 permalink: book-how-javascript-works.html
 sidebar: other_sidebar
 collection: wiki
 summary: "더글라스 크락포드가 알려주는"
-tags: [web, regex, publishing]
+tags: [web, regex, publishing, javascript]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:53 PM
 toc: true
@@ -15,6 +17,7 @@ latex: false
 simple_map: true
 map_name: javascript
 box_number: 1
+folder: wiki
 series: "JAVASCRIPT series"
 weight: 1
 ---
@@ -338,3 +341,5 @@ weight: 1
     
 
 # 다른 채프터
+
+{% include links.html %}

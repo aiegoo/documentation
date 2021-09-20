@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "구글 포토로만 하는 건 아님... "
 tags: [windows]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 3:16 PM
 toc: true
@@ -84,3 +85,5 @@ When you add photos to an album you can sort from older to newer (3-dots > Edit 
 * [5 ways to  make the most of Google slides animation features](https://www.brightcarbon.com/blog/5-google-slides-animation-features/)
 * [How to Create 'Moving' Presentations](https://medium.com/google-design/moving-presentations-d4f895e78de3)
 * [6 Google slides image editing hacks](https://www.brightcarbon.com/blog/google-slides-image-editing/)
+
+{% include links.html %}

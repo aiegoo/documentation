@@ -4,7 +4,8 @@ layout: post
 permalink: wiki-jekyll-spaceship.html
 sidebar: other_sidebar
 collection: wiki
-tags: [wiki, getting_started]
+tags: [wiki, getting_started, jekyll]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 5:32 PM
 toc: true
@@ -436,3 +437,5 @@ A GitHub Action to deploy the jekyll site conveniently for GitHub Pages.
 1. `Github Repository's Settings`에 가서 `Secrets` tab으로 전환
 1. 거기서 `GH_TOKEN` 이라는 이름으로 토큰을 만들것
 1. 마지막으로, `Github Repository's Settings`로 가서 `GitHub Pages section`까지 scroll down 하고 `gh-pages` branch를 `GitHub Pages` source로 선택하라.
+
+{% include links.html %}

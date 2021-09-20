@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: " 한컴서체 "
 tags: [windows]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 2:48 PM
 toc: true
@@ -28,3 +29,5 @@ latex: false
 * 위 폰트를 웹에서 사용하는 방법
   * [@font-face 사용규칙](https://aboooks.tistory.com/153) 보면 될 것 같은데 ... 아직 안봄
   * [Web Font-@font-face 적용 방법](https://webclub.tistory.com/261)
+
+{% include links.html %}

@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: " 단축평가 terminology Short-circuit-evaluation short-circuiting minimal-evaluation McCarthy-evaluation "
 tags: [wiki]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 7:13 AM
 toc: true
@@ -42,3 +43,5 @@ latex: false
 
 * [Be aware of the short-circuit behavior ...](https://wiki.sei.cmu.edu/confluence/display/c/EXP02-C.+Be+aware+of+the+short-circuit+behavior+of+the+logical+AND+and+OR+operators)
 * [Watch out for Side-effects](https://chortle.ccsu.edu/Java5/Notes/chap40/ch40_3.html)
+
+{% include links.html %}

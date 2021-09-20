@@ -1,5 +1,6 @@
 ---
 name: 로컬 구글 Apps Script 개발
+title: 로컬 구글 Apps Script 개발
 layout: post
 permalink: apps-script-starter.html
 sidebar: other_sidebar
@@ -253,6 +254,6 @@ prompt$ clasp clone "<script_Id>" --rootDir src
 * [clasp github/docs/settings.md](https://github.com/google/clasp/blob/master/docs/settings.md) 에서 건진 VSCode 설정
 * 일단 써진대로 `Code > Prefereces > Settings` 로 들어간다
 * `User > Extensions` 메뉴에 `JSON`을 찾아 `Schemas`에 `Edit in settings.json`을 찾는다.
-* 들어 가서 추천하는 명령은 선택하면 일단 넣을수 있는 템플릿이 완성된다. 
+* 들어 가서 추천하는 명령은 선택하면 일단 넣을수 있는 템플릿이 완성된다.
 
-
+{% include links.html %}

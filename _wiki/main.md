@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "parents category index "
 tags: [wiki]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 2:32 PM
 toc: true
@@ -14,6 +15,7 @@ parent: [[Web-Category]]
 latex: false
 ---
 
+## {{ page.name }}
 ## [[Gray-Category]]{어디에 둘 지 모를때 Category}
 
 * [[stackoverflow_searchhelp]]{스택 오버플로우에서 검색하기}
@@ -127,3 +129,5 @@ latex: false
     </ul>
 </div>
 
+
+{% include links.html %}

@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "javascript로 브라우저 자동화 "
 tags: [windows]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 2:32 PM
 toc: true
@@ -105,3 +106,5 @@ latex: false
 * [tsconfig.json 사용하기, What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#using-tsconfigjson-or-jsconfigjson)
   * tsconfig.json 이 있으면 Typescript project의 루트임. jsconfig.json과 비슷한 역할 
 
+
+{% include links.html %}

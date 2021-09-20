@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "vimrc가 점점 커진다면 폴딩을 적용해보자."
 tags: [wiki, vim, troubleshooting]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 3:53 AM
 toc: true
@@ -150,3 +151,5 @@ latex: false
 ### ToDos
 * jekyll에서 `typora`, `github`에서 지원하는 [이모지](https://gist.github.com/rxaviers/7360908)가 표시안됨. 방법있나 찾아볼 것 (2020-03-24 ~ )
   * 아마 markdown 엔진관련 이슈일 것 같음. 
+
+{% include links.html %}

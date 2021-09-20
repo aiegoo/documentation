@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "위키의 기본 작성법및 기능 추가 방법"
 tags: [wiki, getting_started]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 6:27 PM
 toc: true
@@ -129,3 +130,5 @@ latex: false
 ### 반영
 
 * [반영한 commit](https://github.com/aiegoo/kramdown-kn/commit/fcfde15c600a2258b9dc445b96fbb01e37fa3cf4)
+
+{% include links.html %}

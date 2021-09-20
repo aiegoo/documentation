@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: " 카테고리 문서 1단계"
 tags: [web, publishing]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:30 PM
 toc: true
@@ -30,3 +31,5 @@ latex: false
   * [Regular Expressions Cookbook 두번째 저자](https://www.amazon.com/dp/1449319432/?tag=slfb-20)
 
 # 카테고리 문서 
+
+{% include links.html %}

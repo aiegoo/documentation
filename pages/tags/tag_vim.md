@@ -1,8 +1,8 @@
 ---
-title: "Publishing pages"
-tagName: regex
+title: "Vim pages"
+tagName: vim
 search: exclude
-permalink: tag_publishing.html
+permalink: tag_vim.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

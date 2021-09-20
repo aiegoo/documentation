@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "wiki font with ascii art"
 tags: [wiki, getting_started]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 9:27 PM
 toc: true
@@ -77,3 +78,5 @@ latex: false
   * CJK ( Chinese - Japanese - Korean ) 
     
 High 65 to 70. 
+
+{% include links.html %}

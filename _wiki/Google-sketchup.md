@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "Keyboard shortkey "
 tags: [windows]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 3:12 PM
 toc: true
@@ -71,3 +72,5 @@ latex: false
 * 창문 한세트 폭 : 100 mm
 * 창문 한짝 폭 : 50 mm
 * 창유리 두께 : 8 mm
+
+{% include links.html %}

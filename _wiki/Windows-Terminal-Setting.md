@@ -6,6 +6,7 @@ sidebar: mydoc_sidebar
 collection: wiki
 summary: "settings, dotfile and guide application"
 tags: [wiki, window, getting_started]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 9:27 PM
 toc: true
@@ -65,3 +66,5 @@ latex: false
 * symlink를 사용하지 않고 일반 파일로 설정된 settings.json은 WT를 다시 시작하지 않아도 편집하면 즉시 변경사항이 반영된다.
 * 하지만 symlink를 걸어서 사용할 경우 편집내용이 즉시 반영되지 않는다는 말이 있다.
 * 해결책 : `settings.json`에 symlink를 걸지말고 바로 위의 디렉토리인 `Localstate`에 링크를 걸면 일반 파일과 동일하게 즉시 반영된다고 함. [답변 링크](https://github.com/microsoft/terminal/issues/1455#issuecomment-691470907)
+
+{% include links.html %}

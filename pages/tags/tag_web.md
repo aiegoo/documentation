@@ -1,8 +1,8 @@
 ---
-title: "Publishing pages"
-tagName: regex
+title: "Web pages"
+tagName: web
 search: exclude
-permalink: tag_publishing.html
+permalink: tag_web.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

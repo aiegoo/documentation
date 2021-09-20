@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "google-apps-script를 배우는 좋은 시작점"
 tags: [git]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 3:27 PM
 toc: true
@@ -115,3 +116,5 @@ latex: false
 * 사용한 엑셀파일및 구글시트 파일은 저장소에 보내고, 일정시간(2달?)후 제거하는 
 * 내용의 자동화가 필요할 듯
 
+
+{% include links.html %}

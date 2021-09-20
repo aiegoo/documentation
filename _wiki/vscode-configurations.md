@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "vscode settings for theme and vim"
 tags: [wiki, vim, troubleshooting]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 3:53 AM
 toc: true
@@ -42,3 +43,5 @@ latex: false
 
 * [VS Code Vim 기능 지원 Roadmap](https://github.com/VSCodeVim/Vim/blob/master/ROADMAP.md)
 * [VS Code 단축키 모음](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
+{% include links.html %}

@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: " glossary "
 tags: [getting_started, keyword, string-interpolation]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 2:48 PM
 toc: true
@@ -103,3 +104,5 @@ latex: false
 
 
 * 별도 문서로 작성 : [String interpolation](/wiki/term-string-interpolation/)
+
+{% include links.html %}

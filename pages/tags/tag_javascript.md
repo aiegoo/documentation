@@ -1,8 +1,8 @@
 ---
-title: "Publishing pages"
-tagName: regex
+title: "Javascript pages"
+tagName: javascript
 search: exclude
-permalink: tag_publishing.html
+permalink: tag_javascript.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

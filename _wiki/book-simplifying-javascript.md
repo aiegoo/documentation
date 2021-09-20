@@ -1,11 +1,13 @@
 ---
 name: 자바스크립트 코딩의 기술
+title: 자바스크립트 코딩의 기술
 layout: post
 permalink: book-simplifying-javascript.html
 sidebar: other_sidebar
 collection: wiki
 summary: "똑똑하게 코딩하는 법"
-tags: [web, publishing]
+tags: [web, publishing, javascript]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:38 PM
 toc: true
@@ -13,7 +15,7 @@ public: true
 parent: [[Books-Category]] 
 latex: false
 simple_map: true
-map_name: javascript
+map_name: JAVASCRIPT
 box_number: 2
 series: "JAVASCRIPT series"
 weight: 2
@@ -139,3 +141,5 @@ weight: 2
 # 6장. 숫자
 # 7장. URL, 경로, 인터넷주소
 # 8장. 마크업과 데이터 상호변환
+
+{% include links.html %}

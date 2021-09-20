@@ -267,7 +267,7 @@ div#toc ul li:focus, li:hover, li a:focus, li a:hover {
     color: rgba(6,46,82, 1) !important;
     transition: all 0.125s ease-in 0s;
     text-decoration: none;
-    bottom: -0.2em;
+    /* bottom: -0.2em; */ /* this has been the cause of flickering */
 }
 
 div#toc ul li ul li {
@@ -369,6 +369,10 @@ li.dropdownActive a {
 .navbar-inverse .navbar-nav > li > a {
     background-color: transparent;
     margin-top:10px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color:rgba(226, 217, 217, 0.5)
 }
 
 .post-content .rssfeedLink {
@@ -740,6 +744,15 @@ li.activeSeries {
     font-weight: bold;
     margin-left: 21px;
     font-size:15px;
+}
+
+/* to make drondown menu larger to accomodate long titles */
+.seriesContext  {
+    width: 70vw !important;
+    z-index: 999;
+}
+.seriesContext ol.dropdown-menu {
+    width: 400px;
 }
 
 .alert-warning {

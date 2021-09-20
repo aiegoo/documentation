@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "카테고리 1단계 (끝) "
 tags: [wiki]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 3:04 PM
 toc: true
@@ -25,3 +26,5 @@ latex: false
   * [컴퓨터 화면을 캡쳐해서 GIF로 만드는 간단한 방법](https://steemit.com/kr/@youngbinlee/gif) : screen2gif 소개글입니다.
 
 # 카테고리 문서 
+
+{% include links.html %}

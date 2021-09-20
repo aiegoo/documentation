@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: " toc의 css를 조정하다가 우연히 깨닫게 된 CSS 어원의 의미Javascript 에서 출력된 html string을 브라우저로 확인하기"
 tags: [web, publishing]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:20 PM
 toc: true
@@ -114,3 +115,5 @@ latex: false
 * [이 글](https://www.digitalocean.com/community/tutorials/how-to-apply-css-styles-to-html-with-cascade-and-specificity#using-the-lt-style-gt-tag-to-write-css)을 보고 `head`태그 안에 빈 `script` 태그를 넣으면 기본 스타일 적용되는 걸로 생각했는데...
 * 결론은 `Content-Type` 설정에 좌우 되는 것이었다.
 * `charset: utf-8`도 누락되면 인코딩 문제가 생기므로 꼭 추가한다
+
+{% include links.html %}

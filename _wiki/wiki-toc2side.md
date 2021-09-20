@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: "CSS및 SCSS에 대한 정리"
 tags: [wiki, vim, troubleshooting]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 3:53 AM
 toc: true
@@ -113,3 +114,6 @@ latex: false
 * 그래서 그런지 몰라도 정리한 내용을 다시보면 ...
   * 깔끔하게 정리된 느낌은 없고...
   * ...그냥 그때 의식의 흐름이 이랬구나를 알게 된다.
+
+{% include toc_scrollslpy.html %}
+{% include links.html %}

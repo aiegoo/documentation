@@ -5,7 +5,8 @@ permalink: book-practical-vim.html
 sidebar: other_sidebar
 collection: wiki
 summary: "손이 먼저 반응하는"
-tags: [web, regex, publishing]
+tags: [web, regex, vim, publishing]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:50 PM
 toc: true
@@ -141,3 +142,5 @@ latex: false
 *  dot command : 마지막 **change**를 반복한다.
   * vim에서 가장 다목적 이며, 가장 강력한 기능이다.
 * **change** 란 무엇인가? 
+
+{% include links.html %}

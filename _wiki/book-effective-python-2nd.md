@@ -5,7 +5,8 @@ permalink: book-effective-python-2nd.html
 sidebar: other_sidebar
 collection: wiki
 summary: "똑똑하게 코딩하는 법"
-tags: [web, regex, publishing]
+tags: [web, regex, publishing, python]
+excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:56 PM
 toc: true
@@ -261,3 +262,5 @@ latex: false
 ### 임포트
 
 ## Better Way 3.
+
+{% include links.html %}
