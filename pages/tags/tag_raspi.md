@@ -2,10 +2,10 @@
 title: 🔭raspberry pi project
 tags: [drone, collaboration, git, getting_started]
 last_updated: July 22, 2021
-keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
+keywords: ai, drone, aiot
 summary: "summary."
 sidebar: mydoc_sidebar
-permalink: tag_raspi.html
+permalink: mydoc_raspi.html
 datatable: true
 series: "ACME series"
 weight: 4
