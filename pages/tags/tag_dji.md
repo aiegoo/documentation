@@ -1,5 +1,5 @@
 ---
-title: "News"
+title: "DJI pages"
 tagName: dji
 search: exclude
 permalink: tag_dji.html

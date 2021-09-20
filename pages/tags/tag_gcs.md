@@ -1,5 +1,5 @@
 ---
-title: "News"
+title: "GCS pages"
 tagName: gcs
 search: exclude
 permalink: tag_gcs.html

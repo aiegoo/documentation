@@ -1,5 +1,5 @@
 ---
-title: "Git"
+title: "Git pages"
 tagName: git
 search: exclude
 permalink: tag_git.html
