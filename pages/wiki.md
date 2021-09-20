@@ -28,4 +28,5 @@ updated: 2021-09-17 18:00:13 +0900
 <p>{{ pg.excerpt | markdownify | truncateword: 50 | strip_html }} </p>
 {% endfor %}
 
+{% include taglogic.html %}
 {% include links.html %}
