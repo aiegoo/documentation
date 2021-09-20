@@ -16,7 +16,7 @@ updated: 2021-09-17 3:38 PM
 
 <div class="home">
     <div class="post-list">
-        {% for wiki in site.wiki limit:20 %}
+        {% for wiki in site.wiki limit:40 | sort: date | reverse %}
     <h2><a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ wiki.name }}</a></h2>
         <span class="post-meta">{{ wiki.updated | date: "%b %-d, %Y" }} /
             {% for tag in wiki.tags %}
