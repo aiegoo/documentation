@@ -1,6 +1,6 @@
 ---
 layout: post
-name: hotyoga
+name: aerial
 tags: hotyoga, bikram, yoga
 sidebar: other_sidebar
 permalink: aerial.html
