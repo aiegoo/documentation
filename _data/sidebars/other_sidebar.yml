@@ -39,9 +39,9 @@ entries:
     type: homepage
     folderitems:
 
-    - title: yoga overview
+    - title: Collection list
       output: web
-      url: /yoga_overview.html
+      url: /yoga.html
 
     - title: Bikram Aerial
       output: web
@@ -65,8 +65,25 @@ entries:
     type: homepage
     folderitems:
 
-    - title: wiki
+    - title: Collection list
       output: web
       url: /wiki.html
+
+    - title: Javascript series
+      output: web
+      url: /book-how-javascript-works.html
+
+    - title: Python series
+      output: web
+      url: /book-effective-python-2nd.html
+
+    - title: C++ series
+      output: web
+      folder: mycourse
+      url: /cplus.html
+
+    - title: Tools series
+      output: web
+      url: /vim-basic.html
 
 # Copyright 2021 Google LLC
