@@ -4,12 +4,17 @@ layout: post
 permalink: wiki-jekyll-spaceship.html
 sidebar: other_sidebar
 collection: wiki
+summary: "md/kramdown table, datatable"
 tags: [wiki, getting_started, jekyll]
 excerpt_separator: <!--more-->
 date: 2021-09-20 12:42:03 +0900
 updated: 2021-09-21 5:32 PM
 toc: true
 ---
+
+##  datatable implementation
+[mydoc_page](pages/mydoc/mydoc_pages.md)
+[example](https://aiegoo.github.io/documentation/mydoc_contact.html)
 
 ## jekyll commento integration
 
