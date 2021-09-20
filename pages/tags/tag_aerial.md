@@ -1,8 +1,8 @@
 ---
-title: "Bikram pages"
-tagName: bikram
+title: "Aerial pages"
+tagName: aerial
 search: exclude
-permalink: tag_bikram.html
+permalink: tag_aerial.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
