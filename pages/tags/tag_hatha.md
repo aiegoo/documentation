@@ -1,8 +1,8 @@
 ---
-title: "Bikram pages"
-tagName: bikram
+title: "Hatha pages"
+tagName: hatha
 search: exclude
-permalink: tag_bikram.html
+permalink: tag_hatha.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
