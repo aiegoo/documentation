@@ -9,7 +9,7 @@ summary: "똑똑하게 코딩하는 법"
 tags: [web, publishing, javascript]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-18 4:38 PM
+updated: 2021-09-21 12:10 AM
 toc: true
 public: true
 parent: [[Books-Category]] 
