@@ -5,14 +5,16 @@
     <H3 class="indent">최근 변경된 문서</H3>
     <ul class="post-list" text-decoration="none">
 {% for pg in documents limit: 5 %}{% if pg.public != false and pg.title != 'wiki' %}
+        <p>{% if pg.title %} {{ pg.title }} {% else %} {{ pg.name }} {% endif %}</p>
         <li>
             <div>
                 <a class="post-link" href="{{ pg.url | prepend: site.baseurl }}">
-                    <div class="post-meta">{{ pg.updated | date: "%Y.%m.%d" }} - {% if pg.title %} {{ pg.title }} {% else %} {{ pg.name }} {% endif %} </div>
-                    <div class="post-excerpt">{{ pg.summary }}</div>
-        {% if pg.tags %}
+                    <div class="post-meta">{{ pg.updated | date: "%Y.%m.%d" }} -  
+                    {% if pg.tags %}
                     <ul class="tag-list"><li class="post-tag">{{ pg.tag }}</li></ul>
-        {% endif %}
+                    {% endif %}
+                    </div>
+                    <div class="post-excerpt">{{ pg.summary }}</div>
                 </a>
             </div>
         </li>
