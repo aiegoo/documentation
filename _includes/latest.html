@@ -9,10 +9,8 @@
             <div>
                 <a class="post-link" href="{{ pg.url | prepend: site.baseurl }}">
                     <p>{% if pg.title %} {{ pg.title }} {% else %} {{ pg.name }} {% endif %}</p>
-                    <div class="post-meta">{{ pg.updated | date: "%Y.%m.%d" }} -  
-                    {% if pg.tags %}
-                    <ul class="tag-list"><li class="post-tag">{{ pg.tag }}</li></ul>
-                    {% endif %}
+                    <div class="post-meta">{{ pg.updated | date: "%Y.%m.%d" }} -                      
+                    <ul class="tag-list"><li class="post-tag">{% if pg.tags %}{{ pg.tag }} {% endif %}</li></ul>                   
                     </div>
                     <div class="post-excerpt">{{ pg.summary }}</div>
                 </a>
