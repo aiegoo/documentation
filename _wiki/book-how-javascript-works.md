@@ -13,7 +13,17 @@ updated: 2021-09-18 4:53 PM
 toc: true
 public: true
 parent: [[Books-Category]] 
-latex: falsel
+latex: false
+simple_map: true
+map_name: javascript
+box_number: 1
+folder: wiki
+series: "JAVASCRIPT series"
+weight: 1
+---
+
+{% include custom/series_javascript_next.html %}
+
 * TOC
 {:toc}
 
@@ -60,7 +70,7 @@ latex: falsel
 * 다음 프로그래밍 패러다임은 `분산 비동기 프로그래밍`
   * 기존의 패러다임은 지역적, 불안전하며, 순차적인 패러다임, Javascript도 마찬가지
 
-## 이 단락을 읽어보면 이 사람 성격및 고집 정도를 알 수 있다....
+## 영어 - 이 단락을 읽어보면 이 사람 성격및 고집 정도를 알 수 있다....
 
 * (내생각) 이사람의 코딩 예제 중에 `wun` 혹은 `wunth`로 명명한 이름이 있는데 구글에 물어봐도 의미를 알기어렵다. 이 단락에 설명이 되어있다
 * one → wun
