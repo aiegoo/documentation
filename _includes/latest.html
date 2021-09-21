@@ -3,15 +3,15 @@
 {% assign documents = site.wiki | reverse %}
 <div id="app">
     <H3 class="indent">최근 변경된 문서</H3>
-    <ul class="post-list" text-decoration="none">
-    {% for pg in documents limit: 5 %}{% if pg.public != false and pg.title != 'wiki' %}
+    <ul class="post-list">
+{% for pg in documents limit: 5 %}{% if pg.public != false and pg.title != 'wiki' %}
         <li>
             <div>
                 <a class="post-link" href="{{ pg.url | prepend: site.baseurl }}">
-                    <p>{% if pg.title %} {{ pg.title }} {% else %} {{ pg.name }} {% endif %}</p>
-                    <div class="post-meta">{{ pg.updated | date: "%Y.%m.%d" }} -                      
-                    <ul class="tag-list"><li class="post-tag">{% if pg.tags %}{{ pg.tag }} {% endif %}</li></ul>                   
-                    </div>
+                    <div class="post-meta">{{ pg.updated | date: "%Y.%m.%d" }} - {% if pg.title %} {{ pg.title }} {% else %} {{ pg.name }} {% endif %} </div>
+        {% if pg.tags %}
+                    <ul class="tag-list"><li class="post-tag">{{ pg. tag }}</li></ul>
+        {% endif %}
                     <div class="post-excerpt">{{ pg.summary }}</div>
                 </a>
             </div>
