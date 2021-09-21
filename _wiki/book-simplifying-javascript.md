@@ -1,7 +1,7 @@
 ---
 name: 자바스크립트 코딩의 기술
 title: 자바스크립트 코딩의 기술
-layout: post
+layout: page
 permalink: book-simplifying-javascript.html
 sidebar: other_sidebar
 collection: wiki

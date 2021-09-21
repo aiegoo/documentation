@@ -1,7 +1,7 @@
 ---
 name: 리팩토링 2판
 title: 리팩토링 2판
-layout: post
+layout: page
 permalink: book-refactoring-2nd.html
 sidebar: other_sidebar
 collection: wiki
@@ -14,6 +14,9 @@ toc: true
 public: true
 parent: [[Books-Category]] 
 latex: false
+simple_map: true
+map_name: javascript
+box_number: 3
 series: "JAVASCRIPT series"
 weight: 3
 ---
