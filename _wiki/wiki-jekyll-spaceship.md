@@ -13,7 +13,7 @@ toc: true
 ---
 
 ##  datatable implementation
-[mydoc_page](pages/mydoc/mydoc_pages.md)
+[mydoc_page](mydoc_contact.html)
 [example](https://aiegoo.github.io/documentation/mydoc_contact.html)
 
 ## jekyll commento integration
