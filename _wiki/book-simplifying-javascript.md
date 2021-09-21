@@ -51,6 +51,9 @@ weight: 2
   * 출처: [Jan Goyvarets 소개 페이지](https://www.just-great-software.com/aboutjg.html) 
  
 ![](https://www.just-great-software.com/special/JanGoyvaerts.wav)
+<audio controls preload="auto">
+  <source src="https://www.just-great-software.com/special/JanGoyvaerts.wav">
+</audio>
 
 </div>
 
