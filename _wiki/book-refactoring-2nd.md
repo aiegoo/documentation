@@ -1,7 +1,7 @@
 ---
 name: 리팩토링 2판
 title: 리팩토링 2판
-layout: page
+layout: post
 permalink: book-refactoring-2nd.html
 sidebar: other_sidebar
 collection: wiki
