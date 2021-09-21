@@ -50,12 +50,8 @@ weight: 2
 * Jan Goyvaerts가 직접 알려주는 자신의 이름을 발음하는 방법
   * 출처: [Jan Goyvarets 소개 페이지](https://www.just-great-software.com/aboutjg.html) 
  
-![](https://www.just-great-software.com/special/JanGoyvaerts.wav)
-{::nomarkdown}
-<audio controls preload="auto">
-  <source src="https://www.just-great-software.com/special/JanGoyvaerts.wav">
-</audio>
-{:/}
+![audio](https://www.just-great-software.com/special/JanGoyvaerts.wav)
+
 </div>
 
 
