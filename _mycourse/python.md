@@ -18,7 +18,7 @@ link: https://www.36io.co
 
 {% include custom/series_mycourse_next.html %}
 
-## python course
+## python course overview
 
 
 
