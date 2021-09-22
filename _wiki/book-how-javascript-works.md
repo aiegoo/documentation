@@ -1,6 +1,5 @@
 ---
 name: 자바스크립트는 왜 그 모양일까? 
-title: 자바스크립트는 왜 그 모양일까?
 layout: page
 permalink: book-how-javascript-works.html
 sidebar: other_sidebar
