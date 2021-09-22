@@ -1,27 +1,15 @@
 ---
 name: 자바스크립트 코딩의 기술
-title: 자바스크립트 코딩의 기술
 layout: post
 permalink: book-simplifying-javascript.html
 sidebar: other_sidebar
-collection: wiki
 summary: "똑똑하게 코딩하는 법"
 tags: [web, publishing, javascript]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-18 4:38 PM
+updated: 2021-09-22 10:10 AM
 toc: true
-public: true
-parent: [[Books-Category]] 
-latex: false
-simple_map: true
-map_name: JAVASCRIPT
-box_number: 2
-series: "JAVASCRIPT series"
-weight: 2
 ---
-
-{% include custom/series_javascript_next.html %}
 
 * TOC
 {:toc}
@@ -50,7 +38,7 @@ weight: 2
 * Jan Goyvaerts가 직접 알려주는 자신의 이름을 발음하는 방법
   * 출처: [Jan Goyvarets 소개 페이지](https://www.just-great-software.com/aboutjg.html) 
  
-![](https://www.just-great-software.com/special/JanGoyvaerts.wav)
+![audio](https://www.just-great-software.com/special/JanGoyvaerts.wav)
 
 </div>
 

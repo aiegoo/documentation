@@ -397,29 +397,7 @@ entries:
         - title: Lora monitoring system
           url: /mydoc_lora_monitoring.html
           output: web
-
-
-      subfolders:
-      - title: +Jetson Xavier
-        output: web
-        subfolderitems:
-
-        - title: project overview
-          url: /mydoc_jetson_xavier.html
-          output: web
           
-        - title: Raspberry Pi projects
-          url: /mydoc_raspi.html
-          output: web, pdf
-
-        - title: Sensor serializer
-          url: /mydoc_serializer.html
-          output: web
-
-        - title: Lora monitoring system
-          url: /mydoc_lora_monitoring.html
-          output: web
-
   - title: Books
     output: web
     folderitems:
