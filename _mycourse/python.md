@@ -26,7 +26,7 @@ link: https://www.36io.co
 <script src="https://gist.github.com/aiegoo/87938fa7607c2b7de1ce7bb031be9069.js"></script>
 [share](https://gist.github.com/aiegoo/87938fa7607c2b7de1ce7bb031be9069)
 
-Above code has some errors and I have implemented class (OOP) and than called the functions inside the the class using a object.
+Above code has some errors and I have implemented class (OOP) and than called the functions inside the the class using it as an object.
 
 ```python
 # Baseball Game
