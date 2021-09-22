@@ -1,6 +1,7 @@
 ---
 layout: post
 name: ROOT
+summary: "wiki test page"
 permalink: default-wiki.html
 sidebar: other_sidebar
 collection: wiki
