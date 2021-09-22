@@ -11,9 +11,6 @@ updated: 2021-09-22 10:10 AM
 toc: true
 ---
 
-
-{% include custom/series_javascript_next.html %}
-
 * TOC
 {:toc}
 

@@ -11,7 +11,7 @@ date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-21 10:18 AM
 toc: true
 simple_map: true
-map_name: JAVASCRIPT
+map_name: javascript
 folder: wiki
 box_number: 2
 series: "JAVASCRIPT series"
