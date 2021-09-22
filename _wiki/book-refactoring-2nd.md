@@ -14,6 +14,10 @@ toc: true
 public: true
 parent: [[Books-Category]] 
 latex: false
+simple_map: true
+map_name: javascript
+box_number: 3
+folder: wiki
 series: "JAVASCRIPT series"
 weight: 3
 ---
