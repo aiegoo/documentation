@@ -9,12 +9,6 @@ excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-22 10:10 AM
 toc: true
-simple_map: true
-map_name: JAVASCRIPT
-folder: wiki
-box_number: 2
-series: "JAVASCRIPT series"
-weight: 2
 ---
 
 
