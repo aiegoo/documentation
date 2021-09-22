@@ -33,6 +33,13 @@ div.navbar-collapse .dropdown-menu > li > a:hover {
      color: #f0f0f0;
 }
 
+/* to make menu hover to light up */
+.navbar-inverse .navbar-nav>li>a:hover {
+    /*  color:rgba(226, 217, 217, 0.5) */
+    color: #f90;
+    transition: all 0.25;
+}
+
 .nav li.thirdlevel > a {
     background-color: #FAFAFA !important;
     color: #72ac4a;
