@@ -1,6 +1,7 @@
 ---
 layout: post
 name: Javascript basics 
+summary: "javascript mycookbook"
 permalink: javascript-myCookBook.html
 sidebar: other_sidebar
 collection: wiki
