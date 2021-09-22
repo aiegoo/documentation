@@ -439,6 +439,27 @@ entries:
           url: /tag_troubleshooting.html
           output: web
 
+    - title: Wiki Series
+      url: /wiki/:title
+      output: web
+
+      subfolders:
+      - title: Lang Series
+        output: web
+        subfolderitems:
+
+        - title: Javascript
+          url: /book-how-javascript-works.html
+          output: web
+
+        - title: Python
+          url: /book-effective-python-2nd.html
+          output: web
+
+        - title: C++
+          url: /cplus.html
+          output: web
+
     - title: Web-dev-ops
       url: /mydoc_webdev.html
       output: web, pdf
