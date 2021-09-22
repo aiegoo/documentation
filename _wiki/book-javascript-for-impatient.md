@@ -11,6 +11,10 @@ excerpt_separator: <!--more-->
 date: 2021-09-19 12:42:03 +0900
 updated: 2021-09-18 4:47 PM
 toc: true 
+simple_map: true
+map_name: javascript
+box_number: 4
+folder: wiki
 series: "JAVASCRIPT series"
 weight: 4
 ---
