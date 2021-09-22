@@ -1,6 +1,7 @@
 ---
 layout: page
 name: Hatha
+tags: yoga, hatha
 sidebar: other_sidebar
 toc: true
 permalink: hathaoverview.html

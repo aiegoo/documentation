@@ -12,12 +12,10 @@ comment: false
 updated: 2021-09-17 3:38 PM
 ---
 
-## wiki Home
-
 <div class="home">
     <div class="post-list">
         {% for wiki in site.wiki reversed %}
-    <h2><a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ wiki.name }}</a></h2>
+    <h3><a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ wiki.name }}</a></h3>
         <span class="post-meta">{{ wiki.updated | date: "%b %-d, %Y" }} /
             {% for tag in wiki.tags %}
                 <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
@@ -34,3 +32,11 @@ updated: 2021-09-17 3:38 PM
     </div>
 </div>
 {% include links.html %}
+
+{% include commento.html %}
+
+{{site.data.alerts.hr_shaded}}
+
+{% include footer.html %}
+
+{% comment %} Copyright {% endcomment %}

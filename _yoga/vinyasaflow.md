@@ -1,6 +1,7 @@
 ---
 layout: page
 name: Vinyasa Flow
+tags: yoga, hatha
 sidebar: other_sidebar
 permalink: vinyasaflow.html
 category: "Vinyasa"
@@ -14,5 +15,8 @@ link: https://www.36io.co
 ---
 
 My first yoga book I bought during my trip to Thailand has set off a series of events that truly made me who I am now. Believe it or not.
+
+[60m_session](https://www.youtube.com/watch?app=desktop&reload=9&v=9ZRvdbG54H4&feature=youtu.be)
+
 
 [**Preview**]({{page.link}})

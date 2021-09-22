@@ -1,6 +1,7 @@
 ---
 layout: page
 name: bikram
+tags: yoga, bikram
 summary: "A discipline without dogma"
 sidebar: other_sidebar
 permalink: bikramoverview.html

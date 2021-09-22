@@ -1,8 +1,8 @@
 ---
-title: "Vim pages"
-tagName: vim
+title: "Hatha pages"
+tagName: hatha
 search: exclude
-permalink: tag_vim.html
+permalink: tag_hatha.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
