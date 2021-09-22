@@ -4,13 +4,15 @@ title: 자바스크립트 코딩의 기술
 layout: page
 permalink: book-simplifying-javascript.html
 sidebar: other_sidebar
+collection: wiki
 summary: "똑똑하게 코딩하는 법"
 tags: [web, publishing, javascript]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-22 10:10 AM
 toc: true
-latex: false
+public: true
+parent: [[Books-Category]]
 simple_map: true
 map_name: JAVASCRIPT
 box_number: 2
