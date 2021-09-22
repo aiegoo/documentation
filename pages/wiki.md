@@ -19,7 +19,7 @@ updated: 2021-09-17 3:38 PM
           {% for tag in wiki.tags %}
                 <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
                 {% endfor %}</span>
-               <p>{% if page.summary %} {{ page.summary | strip_html | strip_newlines }} 
+               <p>{% if pg.summary %} {{ pg.summary | strip_html | strip_newlines }} 
           {% else %} {{ pg.excerpt | markdownify | truncatewords: 150 }} {% endif %}
                </p>
      {% endfor %}
