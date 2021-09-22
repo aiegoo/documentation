@@ -19,8 +19,8 @@ updated: 2021-09-17 3:38 PM
           {% for tag in wiki.tags %}
                 <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
                 {% endfor %}</span>
-               <p>{% if pg.summary %} {{ pg.summary | strip_html | strip_newlines }} 
-          {% else %} {{ pg.excerpt | markdownify | truncatewords: 150 }} {% endif %}
+               <p>{% if wiki.summary %} {{ wiki.summary | strip_html | strip_newlines }} 
+          {% else %} {{ wiki.excerpt | markdownify | truncatewords: 150 }} {% endif %}
                </p>
      {% endfor %}
         <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
