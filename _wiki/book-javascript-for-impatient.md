@@ -1,6 +1,6 @@
 ---
 name: javascript for impatient
-layout: post
+layout: page
 permalink: book-javascript-for-impatient.html
 sidebar: other_sidebar
 collection: wiki
