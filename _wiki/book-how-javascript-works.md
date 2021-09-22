@@ -27,13 +27,13 @@ weight: 1
 * TOC
 {:toc}
 
-# 개요
+#### 개요
 
 | ![표지](http://image.kyobobook.co.kr/images/book/xlarge/595/x9788966262595.jpg) | 저자: 더글러스 크락포드 (Douglas Crockford) <br> 책제목 : 자바스크립트는 왜 그 모양일까? (원제 : How JavaScript Works) <br> 부제 : 더글러스 크락포드가 알려주는 <br> 위험한 자바스크립트를 안전하게 사용하는 법 <br> 출판사 : 인사이트 <br> ISBN 한글 : 978-89-6626-259-5 <br> ISBN 영문 : 978-1949815009 <br> <br> 값: 28,000원 |
 
-## 저자 설명
+#### 저자 설명
 
-### 더글러스 크락포드
+#### 더글러스 크락포드
 
 * 더글러스 크락포드는 자바스크립트 구루(Guru)라고 불리지만, 구루보다는 사실 성인(Mahatma)에 가깝다
   * (내생각) 번역한 책을 읽어보면 말하는 스타일이 ... 그런 스타일이라는 걸 알 수 있다.
@@ -45,7 +45,7 @@ weight: 1
 * [Douglas Crockford, homepage](https://www.crockford.com/isbn-13.html)
   * [Douglas Crockford, 소개페이지](https://www.crockford.com/about.html)
 
-# {"number": 0, "chapter": "시작하기 전에"}
+#### {"number": 0, "chapter": "시작하기 전에"}
 
 * 제가 사용하는 프로그래밍 언어를 다루는 스킬을 향상시키는 가장 효과적인 방법은 다음과 같습니다
   > 이따금 유용하지만 때때로 위험한 기능과 안전하면서 더 나은 다른 기능이 있다면, 항상 더 나은 다른 기능을 사용하라
@@ -53,24 +53,25 @@ weight: 1
   * 십년 전과 비교했을 때 자바스크립트의 좋은 부분은 점점 더 적어지긴 했지만, 대행히 좋은 부분은 훨씬 더 좋아지고 있습니다.
   * ECMA-Script 표준 개정안은 자바스크립트의 본질적인 문제를 해결하지 않고, 오히려 새로운 문제를 일으키기도 합니다.
 
-## 이단
+#### 이단
 
 * 더글라스 크락포드는 공격받는데 익숙하지만 대체로 옳았다고 본인이 생각함 ( Javascirpt를 옹호했을때, JSON을 창시했을 때)
 * 이 책의 관점이 이단이라고 공격받을 수 있다는 점을 암시
 
-## 코드
+#### 코드
 
 * 코드는 공개되어 있음
 * [원서의 정오표](http://howjavascriptworks.com/erratums/) - 2020-12-01 현재 발견된 에러가 없다고 한다....
 * [번역서의 정오표](https://bit.ly/33d6t0R) - 2020-12-01 2개 있음
+* [my_code](https://github.com/aiegoo/how-javascript-works)
 
-## 다음 세대 언어
+#### 다음 세대 언어
 
 * 전 아이들이 미래라고 믿습니다. 아, 물론 로봇도요. ( 로봇 예찬론자인가..)
 * 다음 프로그래밍 패러다임은 `분산 비동기 프로그래밍`
   * 기존의 패러다임은 지역적, 불안전하며, 순차적인 패러다임, Javascript도 마찬가지
 
-## 영어 - 이 단락을 읽어보면 이 사람 성격및 고집 정도를 알 수 있다....
+#### 이 단락을 읽어보면 이 사람 성격및 고집 정도를 알 수 있다....
 
 * (내생각) 이사람의 코딩 예제 중에 `wun` 혹은 `wunth`로 명명한 이름이 있는데 구글에 물어봐도 의미를 알기어렵다. 이 단락에 설명이 되어있다
 * one → wun
@@ -93,14 +94,14 @@ weight: 1
     * 0 to 3 = 0, 1, 2 포함 (개발자의 to 의미)
     * 0 thru 3 = 0, 1, 2, 3 포함 ( 일반인의 to 의미)
 
-## 예제
+#### 예제
 
 * 정규표현식은 공백이 없어 이해하기 힘듬
 * 이해를 돕기 위해 정규표현식에 공백을 추가함
 * 실제 적용하려면 공백문자를 없애고 사용하셈
 
 
-# {"number": 1, "chapter": "이름"}
+#### {"number": 1, "chapter": "이름"}
 
 * 모든 이름은 문자로 시작하여 문자로 끝낼것
   * _(밑줄)로 시작하는 이름은 일반적으로 public 속성이나 전역변수
@@ -127,14 +128,14 @@ weight: 1
   * new를 쓰지 않으면 대문자로 시작할 일이 없음
   * 때문에 모든 이름을 소문자로 쓸 것...
 
-## 예약어
+#### 예약어
 
 * 예약어는 컴퓨터 메모리가 부족하던 50~60년대의 어쩔수 없는 선택
 * 현재는 의미없는 제한된 사고 방식
 * 불안정한 예약어 전략은 언어에 새로운 기능을 깔끔하고 직관적으로 추가하기 어렵게 만듬
 * 앞으로는 예약어 없는 언어가 개발되길..
 
-# {"number": 2, "chapter": "숫자"}
+#### {"number": 2, "chapter": "숫자"}
 
 * 자바스크립트는 숫자형이 number 하나라는 이유로 자주 비판받았습니다
   * 하지만 이는 자바스크립트의 아주 큰 강점중 하나입니다
@@ -152,7 +153,7 @@ weight: 1
   * 자바스크립트의 number는 자바의 double과 아주 밀접
     * 64비트 2진 부동소수점 타입
 
-## 영(0)
+#### 영(0)
 
 * 0이 하나만 존재하는 것이 제대로 된 시스템
 * 두 개의 0
@@ -164,7 +165,7 @@ weight: 1
     ```
 * 0으로 무언가를 나누거나 Object.is()를 굳이 사용할 필요도 없으니 무시해도 됨
 
-## 숫자 리터럴
+#### 숫자 리터럴
 
 * 자바스크립트에는 18437736874454810627개의 불변 숫자 객체가 내장되어 있음
   * 어떤 경우에는 딱 맞는 값이고
@@ -186,7 +187,7 @@ weight: 1
     * 값이 NaN인지를 테스트 하려면 Number.isNaN(value)를 사용해야함
     * [Number.isFinite(value)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/isFinite)는 value = NaN, Infinity, -Infinity인 경우 false를 반환
 
-## Number
+#### Number
 
 * Number : 숫자를 만드는 함수
   * Number에 new를 사용하면 안됨 - 기대하는 결과가 나오지 않음
@@ -216,9 +217,9 @@ weight: 1
     * 여기에 사용한 `Mathjax`가 렌더링 안되고 있는데 [현재 문의중임](https://github.com/jeffreytse/jekyll-spaceship/issues/50). 
       * [2021-04-02 고쳐짐](https://github.com/jeffreytse/jekyll-spaceship/issues/50#issuecomment-812444737)
 
-## 연산자
+#### 연산자
 
-### 전위 연산자
+##### 전위 연산자
 
 * [Unary plus (+), MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus) , 전위 연산자 타입
   * 문자열 숫자를 숫자타입으로 바꾸는 가장 빠르고 선호되는 방법 ( unary negation 보다 선호됨)
@@ -233,7 +234,7 @@ weight: 1
   * 피연산자의 타입을 알려주는 문자열을 반환함
   * 피연산자가 [NaN(Not a Number)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)일 때도 "number"를 반환한다는 것을 주의할 것. `Number.NaN` 과 같은 값. 
 
-###  중위 연산자
+#####  중위 연산자
 
 * [ Addition (+) 연산자, MDN Ref](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition)
   * `+` 연산자는 문자열 연결에도 사용하기 때문에 아주 위험함
@@ -252,19 +253,19 @@ weight: 1
   * 설명을 읽어봐도 어느게 더 좋은지는 잘 모르겠지만...
     * 결과가 달라지는 부분에 대한 설명은 위의 Real Python 링크를 읽어볼것 
    
-### 참고링크
+#### 참고링크
 
 * [Expressions and operators, MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
   * 전위 / 후위 연산자 = unary operator
   * 중위 연산자 = binary operator
 
-## 비트 단위 연산자
+#### 비트 단위 연산자
 
 * [Bitwise operators, MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise_operators)
   * 피연산자들을 32 bits binary 수 (zeros and ones)로 변환.
   * 결과는 표쥰 Javascript numerical values로 반환
 
-### Javascript의 Bitwise Operator가 잘 쓰이지 않는 이유
+#### Javascript의 Bitwise Operator가 잘 쓰이지 않는 이유
 
 * 안전하게 하려면 54 bit 정수형으로 변환해서 사용하는게 좋은데 Javascript는 안 그러고 있음
   * 그 결과 상위 22 bit는 경고없이 사라질 수 있음
@@ -286,7 +287,7 @@ weight: 1
 * Java의 경우, 부호의 확장은 연산자에 의해 정해짐. [Java Sign Extension, mkyong's blog](https://mkyong.com/java/java-sign-extension/)
   * Javascript는 Java의 잘못된 결정을 그대로 따름. 조심해야 함. [Unsigned right shift (>>>), MDN Ref](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift)
 
-# {"number": 7, "chapter": "배열"}
+#### {"number": 7, "chapter": "배열"}
 
 * 배열에 관한 몇가지 흥미로운 사실
   * 자바스크립트 초기 배포시에는 배열이 없었다
@@ -305,13 +306,13 @@ weight: 1
   * typedof 연산자로는 배열과 객체를 구분할 수 없음. 모두 실질적으로 객체임 
   * 배열이 배열인지 확인하려면 Array.isArray(value)를 사용해야 함
 
-## 배열의 원점
+#### 배열의 원점
 
 * 인덱스를 0 부터 시작해야하는지 1 부터 시작해야하는지에 대한 논쟁
   * 배열을 처리할 때 하나씩 처리하기보다, 함수로 처리하면 원점에 대한 논쟁이 필요없음
   * 배열의 첫번째 요소를 지칭할 때 `first` 보다는 `zeroth` 라는 용어가 적당 (저자의 개인적 의견..)
 
-## 초기화
+#### 초기화
 
 * 배열을 만드는 두 가지 방법
   ```js
@@ -324,7 +325,7 @@ weight: 1
 * 같은 값으로 초기화되지만, 따로 선언되어 서로 다른 배열임
 * 다른 객체와 마찬가지로 실제 같은 배열인 경우에만 같은 것으로 판정
 
-## 스택과 큐
+#### 스택과 큐
 
 * push, pop 메서드로 배열을 stack처럼 쓸 수 있음
 * 스택의 사용법, 아래 처럼 스택은 인터프리터나 계산기에서 주로 사용
@@ -340,6 +341,35 @@ weight: 1
     * [JavaScript queues, shift를 사용하지 않고 performance를 높인 Queue](https://code.iamkate.com/javascript/queues/)
     
 
-# 다른 채프터
+### 다른 채프터
+
+## 9
+### 9-1 web message push notification mechanism
+
+> Plese refer to the original text [here](https://blog.sessionstack.com/how-javascript-works-the-mechanics-of-web-push-notifications-290176c5c55d), with slight cuts.
+
+Now let's turn our attention to web push notifications: we will look at its building components, explore the process behind sending/receiving notifications, and finally share how we plan to use these features to create new product features at [SessionStack](sessisonstack.com).
+
+The function of push notifications is already very common on the mobile terminal. For some reason, push notifications on the web side are coming out every time, even if most developers strongly demand this feature.
+
+### 9-2 overview
+
+Web push notifications allow users to choose to get news updates from web applications in a timely manner. It aims to re-engage users through important and appropriate content that users may feel.
+
+The push service is a service worker based on the service worker, which was explained in detail in the previous article [ch8](#8) .
+
+In this case, the service worker is used because it runs in the background so that it does not block the rendering of the interface. For push notifications, this is quite important, because it means that only when the user interacts with the push notification itself will the code related to the push notification be executed.
+
+### 9-3 message push and notification
+Message push and notification are two different interfaces. 
+* message push - called when the message push serer pushes a messate to a service
+* message notification - the service worker or script in the web application operates to display a message notification to the user.
+
+Thre are roughly three steps to implement message push:
+  * interface-add client-side lgoic to let users subscribe to push servcies. Write javascript code logic in the web application inteface to allow users to register for the push message service
+  * send message-implment inteface calls on the server side to trigger the push to the user's devcie.
+  * receive a message in the browser.
+
+
 
 {% include links.html %}
