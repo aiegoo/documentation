@@ -12,10 +12,12 @@ updated: 2021-09-22 10:10 AM
 toc: true
 simple_map: true
 map_name: JAVASCRIPT
+folder: wiki
 box_number: 2
 series: "JAVASCRIPT series"
 weight: 2
 ---
+
 
 {% include custom/series_javascript_next.html %}
 
