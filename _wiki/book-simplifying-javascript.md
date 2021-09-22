@@ -8,9 +8,8 @@ summary: "똑똑하게 코딩하는 법"
 tags: [web, publishing, javascript]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-22 08:10 AM
+updated: 2021-09-22 10:10 AM
 toc: true
-parent: [[Books-Category]] 
 latex: false
 simple_map: true
 map_name: JAVASCRIPT
