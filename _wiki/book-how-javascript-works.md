@@ -11,9 +11,7 @@ excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 4:53 PM
 toc: true
-public: true
 parent: [[Books-Category]] 
-latex: false
 simple_map: true
 map_name: javascript
 box_number: 1
