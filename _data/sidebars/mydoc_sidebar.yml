@@ -438,11 +438,7 @@ entries:
         - title: Troubleshooting pages
           url: /tag_troubleshooting.html
           output: web
-
-    - title: Wiki Series
-      url: /wiki/:title
-      output: web
-
+          
       subfolders:
       - title: Lang Series
         output: web
