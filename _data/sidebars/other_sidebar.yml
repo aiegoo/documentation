@@ -32,7 +32,12 @@ entries:
 
   - title: Freelancers
     output: web, pdf
-    url: /freelancers.html
+    url: /freelancers/
+    type: portoflio
+    folderitems:
+      - title: Collection list
+        output: web, pdf
+        url: /freelancers.html
 
   - title: Yoga Home
     output: web, pdf
