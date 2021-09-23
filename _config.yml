@@ -208,7 +208,7 @@ defaults:
   # wiki
   -
     scope:
-      path: "/wiki/:title"
+      path: "/wiki/"
       type: post
     values:
       layout: "page"
