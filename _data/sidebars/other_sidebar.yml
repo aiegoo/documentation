@@ -35,6 +35,7 @@ entries:
     url: /freelancers/
     type: portoflio
     folderitems:
+      
       - title: Collection list
         output: web, pdf
         url: /freelancers.html
