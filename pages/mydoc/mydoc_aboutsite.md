@@ -13,23 +13,23 @@ toc: false
 
 <div class="row">
         <div class="col-lg-12">
-            <h2 class="page-header">Sitemap overview</h2>
-            <p>I was on a mission to join the workforce; my portfolio and its project details have grown very fast for the last three months. They are purely based on the fictional ideas and themes I created for the purpose of my portfolio and projects.</p>
-            <p>If credits I have inserted along the way are not enough to satisfy the standards of business or not fulfilling the required criteria, please allow me to apologize and I will do my best to amend and reflect or scrap away the questionable projects entirely. I owe everything to you and my teachers.</p>
-            <p>On Mar 8, 2019 as I wrapped up my NCS course and joined Onofflink for my first stint in a real job. This was the beginning of my developer career, then continued the same path with Jiseoan where I found my true passion on mobility and aiot integration. In 2021, I've been looking forward to making this road of learning a reality.</p>
-            <h3> Highlights</h3>
-            <p>Some of the more prominent features of this theme include the following:</p>
-            <ul>
-               <li>Bootstrap framework</li>
-               <li><a href="http://www.komposta.net/article/navgoco">Navgoco multi-level sidebar</a> for table of contents</li>
-               <li>Ability to specify different sidebars for different products</li>
-               <li>Top navigation bar with drop-down menus</li>
-               <li>Notes, tips, and warning information notes</li>
-               <li>Tags for alternative navigation</li>
-               <li>Advanced landing page layouts from the <a href="http://startbootstrap.com/template-overviews/modern-business/">Modern Business theme</a>.</li>
-          </ul>
-          <h3>Getting started</h3>
-          <p>To get started, see <a href="index.html">Getting Started</a>.</p>
+               <h2 class="page-header">Sitemap overview</h2>
+               <p>I was on a mission to join the workforce; my portfolio and its project details have grown very fast for the last three months. They are purely based on the fictional ideas and themes I created for the purpose of my portfolio and projects.</p>
+               <p>If credits I have inserted along the way are not enough to satisfy the standards of business or not fulfilling the required criteria, please allow me to apologize and I will do my best to amend and reflect or scrap away the questionable projects entirely. I owe everything to you and my teachers.</p>
+               <p>On Mar 8, 2019 as I wrapped up my NCS course and joined Onofflink for my first stint in a real job. This was the beginning of my developer career, then continued the same path with Jiseoan where I found my true passion on mobility and aiot integration. In 2021, I've been looking forward to making this road of learning a reality.</p>
+               <h3> Highlights</h3>
+               <p>Some of the more prominent features of this theme include the following:</p>
+               <ul>
+                    <li>Bootstrap framework</li>
+                    <li><a href="http://www.komposta.net/article/navgoco">Navgoco multi-level sidebar</a> for table of contents</li>
+                    <li>Ability to specify different sidebars for different products</li>
+                    <li>Top navigation bar with drop-down menus</li>
+                    <li>Notes, tips, and warning information notes</li>
+                    <li>Tags for alternative navigation</li>
+                    <li>Advanced landing page layouts from the <a href="http://startbootstrap.com/template-overviews/modern-business/">Modern Business theme</a>.</li>
+               </ul>
+               <h3>Getting started</h3>
+               <p>To get started, see <a href="index.html">Getting Started</a>.</p>
         </div>
         <div class="col-md-9 col-sm-6">
             <div class="panel panel-default text-center">
@@ -79,9 +79,9 @@ toc: false
                 </div>
             </div>
         </div>
-    </div>
+</div>
     <!-- Service Tabs -->
-    <div class="row">
+<div class="row">
         <div class="col-lg-12">
             <h2 class="page-header">In this site</h2>
         </div>
@@ -119,10 +119,10 @@ toc: false
                 </div>
             </div>
         </div>
-    </div>
+</div>
     <!-- Service List -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <div class="row">
+<div class="row">
         <div class="col-lg-12">
             <h2 class="page-header">Service List</h2>
         </div>
@@ -240,7 +240,7 @@ toc: false
                 </div>
             </div>
         </div>
-    </div>
+</div>
 
 
 {% include links.html %}
