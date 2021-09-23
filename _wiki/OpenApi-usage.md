@@ -7,8 +7,8 @@ collection: wiki
 summary: " 실제 사용법 정리 "
 tags: [api]
 excerpt_separator: <!--more-->
-date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-18 2:32 PM
+date: 2021-09-21 12:42:03 +0900
+updated: 2021-09-23 7:24 PM
 toc: true
 public: true
 parent: [[Gray-Category]]
@@ -17,7 +17,12 @@ latex: false
 * TOC
 {:toc}
 
-# 1. 발단
+## icnonify api
+[home](https://iconify.design/)
+
+### usage with node
+<script src="https://gist.github.com/aiegoo/fe2948708f0de82d27d2ae7cd60dd266.js"></script>
+## 1. 발단
 
 * 가족과 같이 특정 영화를 보고자할 때..
   * 애들과 같이 봐도 될지 등급은 어떻게 매겨진건지 알고 싶을때가 있다.
@@ -25,9 +30,9 @@ latex: false
   * 영등위는 [open api](https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=3043382) 도 제공한다.
 * 사용하는 예제를 만들어보자
 
-# 2. 전개
+## 2. 전개
 
-## 이슈들
+### 이슈들
 
 ### API Key가 URL encoding 처리가 되어 승인되지 않은 키 에러가 나는 문제 
 
@@ -71,14 +76,14 @@ latex: false
     * "%"를 인코딩하면 "%25"로 변환됨
 * [해결책은 한번 더 인코딩되지 않도록 URI에 직접 포함시킴](https://stackoverflow.com/a/39152383/9457247)
 
-### request deprecated ... :sob:
+#### request deprecated ... :sob:
 
 * node.js 생태계에서 오래된 package인 [request가 deprecate 되었다, request github](https://github.com/request/request/issues/3142). 
   * 예제로 많이 보였는데...
   * [Alternative libraries to request, request github](https://github.com/request/request/issues/3143) 
     * 대체재로 axios가 있다.
 
-### config-js 사용하기
+#### config-js 사용하기
 
 * open api를 사용하다보면 필연적으로 credentials를 사용하게 된다.
 * 이런 정보들은 남에게 공개되면 안되는 정보들이므로 github에 올릴때 제외해야 한다.
@@ -86,7 +91,7 @@ latex: false
   * 윗 글을 발췌번역한 국내 글 : [9.5 Node.js에서 비밀 설정 정보 관리](https://poiemaweb.com/nodejs-keeping-secrets)
 * 나는 설정파일 사용하는 방법을 사용하기로 하고 [`config-js`](https://www.npmjs.com/package/config-js)를 찾아내었다.
 
-#### CommonJS 방식과 ES Modues 방식의 조합
+##### CommonJS 방식과 ES Modues 방식의 조합
 
 * 나는 OpenApiTest 프로젝트에서 module 방식을 사용하고 있다.
   * [Node.js 는 디폴트로 CommonJs를 지원하며 package.json 설정으로 ES Module을 Enable 한다.](https://nodejs.org/api/esm.html#esm_enabling)
