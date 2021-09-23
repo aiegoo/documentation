@@ -35,7 +35,7 @@ toc: false
         <div class="col-md-9 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading arrow">
-                    <span class="iconify" data-icon="eos-icons:atom-electron" style="color: #9826ab;" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="eos-icons:atom-electron" style="color: #9826ab;"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Collections</h4>
@@ -94,7 +94,7 @@ toc: false
                 </li>
                 <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Projects</a>
                 </li>
-                <li class=""><a href="#service-four" data-toggle="tab"><span class="iconify" data-icon="eos-icons:arrow-rotate"></span></i>Learning</a>
+                <li class=""><a href="#service-four" data-toggle="tab"><span class="iconify" data-icon="eos-icons:arrow-rotate"></span>Learning</a>
                 </li>
             </ul>
             <div id="myTabContent" class="tab-content">
