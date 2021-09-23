@@ -14,7 +14,7 @@ toc: false
 ## What inspired me to work on this site
 <div class="row">
         <div class="col-lg-12">
-               <h2 class="page-header">Sitemap overview</h2>
+               <h2 class="page-header">What inspired me to work on this site</h2>
                <p>I was on a mission to join the workforce; my portfolio and its project details have grown very fast for the last three months. They are purely based on the fictional ideas and themes I created for the purpose of my portfolio and projects.</p>
                <p>If credits I have inserted along the way are not enough to satisfy the standards of business or not fulfilling the required criteria, please allow me to apologize and I will do my best to amend and reflect or scrap away the questionable projects entirely. I owe everything to you and my teachers.</p>
                <p>On Mar 8, 2019 as I wrapped up my NCS course and joined Onofflink for my first stint in a real job. This was the beginning of my developer career, then continued the same path with Jiseoan where I found my true passion on mobility and aiot integration. In 2021, I've been looking forward to making this road of learning a reality.</p>
@@ -35,7 +35,7 @@ toc: false
         <div class="col-md-9 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading arrow">
-                    <span class="iconify" data-icon="eos-icons:atom-electron" style="color: #9826ab;" data-width="32" data-height="32" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="eos-icons:atom-electron" style="color: #9826ab;" data-flip="horizontal"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Collections</h4>
@@ -94,7 +94,7 @@ toc: false
                 </li>
                 <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Projects</a>
                 </li>
-                <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-database"></i>Learning</a>
+                <li class=""><a href="#service-four" data-toggle="tab"><span class="iconify" data-icon="eos-icons:arrow-rotate"></span></i>Learning</a>
                 </li>
             </ul>
             <div id="myTabContent" class="tab-content">
