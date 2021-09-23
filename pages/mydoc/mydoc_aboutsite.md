@@ -1,5 +1,6 @@
 ---
 title: About this site and its author
+layout: portfolio
 tags: [getting_started, drone]
 last_updated: July 11, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
@@ -7,32 +8,239 @@ summary: "My portofolio site and its mission statement"
 sidebar: mydoc_sidebar
 permalink: mydoc_aboutsite.html
 folder: mydoc
+toc: false
 ---
 
+<div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">Sitemap overview</h2>
+            <p>I was on a mission to join the workforce; my portfolio and its project details have grown very fast for the last three months. They are purely based on the fictional ideas and themes I created for the purpose of my portfolio and projects.</p>
+            <p>If credits I have inserted along the way are not enough to satisfy the standards of business or not fulfilling the required criteria, please allow me to apologize and I will do my best to amend and reflect or scrap away the questionable projects entirely. I owe everything to you and my teachers.</p>
+            <p>On Mar 8, 2019 as I wrapped up my NCS course and joined Onofflink for my first stint in a real job. This was the beginning of my developer career, then continued the same path with Jiseoan where I found my true passion on mobility and aiot integration. In 2021, I've been looking forward to making this road of learning a reality.</p>
+            <h3> Highlights</h3>
+            <p>Some of the more prominent features of this theme include the following:</p>
+            <ul>
+               <li>Bootstrap framework</li>
+               <li><a href="http://www.komposta.net/article/navgoco">Navgoco multi-level sidebar</a> for table of contents</li>
+               <li>Ability to specify different sidebars for different products</li>
+               <li>Top navigation bar with drop-down menus</li>
+               <li>Notes, tips, and warning information notes</li>
+               <li>Tags for alternative navigation</li>
+               <li>Advanced landing page layouts from the <a href="http://startbootstrap.com/template-overviews/modern-business/">Modern Business theme</a>.</li>
+          </ul>
+          <h3>Getting started</h3>
+          <p>To get started, see <a href="index.html">Getting Started</a>.</p>
+        </div>
+        <div class="col-md-9 col-sm-6">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading arrow">
+                    <span class="iconify" data-icon="octicon:zap-16" style="color: #9826ab;" data-width="32" data-height="32" data-flip="horizontal"></span>
+                </div>
+                <div class="panel-body">
+                    <h4>Collections</h4>
+                    <p font-size="0.5em">There are 5 collections in this site, yoga, drones, freelancers, mycourse and wiki, which would expand as more contents are added during my dev career.</p>
+                    <a href="https://github.com/documentation/blob/edit/.config.yml" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                <span class="iconify" data-icon="fe:align-center"></span>
+                </div>
+                <div class="panel-body">
+                    <h4>Usermap simple or complex</h4>
+                    <p>In usermap, I was able to link pages by topic and in a sequencial order. For simple usermap, each button will open its page within the page frame, while complex uermap will open in a modal winodw with a list of pages.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                <span class="iconify" data-icon="lucide:bar-chart-2"></span>
+                </div>
+                <div class="panel-body">
+                    <h4>Contextual series</h4>
+                    <p>I have used this feature without reservation as it is simple to create a dropdonw menu with a list of files I would link contextually.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                <span class="iconify" data-icon="lucide:archive"></span>
+                </div>
+                <div class="panel-body">
+                    <h4>Taglogic grouping the dots</h4>
+                    <p>As the contents start to pile up, locating relevant information has been a taunting task and taglogic has been solution that worked well and served beyond its original design </p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Tabs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">In this site</h2>
+        </div>
+        <div class="col-lg-12">
+            <ul id="myTab" class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Yoga</a>
+                </li>
+                <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> Drones</a>
+                </li>
+                <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Projects</a>
+                </li>
+                <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-database"></i>Learning</a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="service-one">
+                    <h4>Yoga</h4>
+                    <p>its origin Once known mainly as the “yoga of the stars,” the Bikram style of hatha has spread from Beverly Hills throughout the United States since the late 1970s. The Bikram style is the original “hot yoga” style, and its classes are taught in a room kept at approximately 106 degrees Fahrenheit (41 degrees Celsius). Bikram yoga is based on one series consisting of 26 poses,</p>
+                    <p>Hot Yoga is a moving meditation combining asana, breath work and heat. All are needed to get the best result. My first yoga book I bought during my trip to Thailand has set off a series of events that truly made me who I am now. Believe it or not. 26 poses 1. PRANAYAMA (STANDING DEEP BREATHING) This is the beginning of each Bikram Yoga training. You breathe in warm air to heat up your body inside, you fill your blood with lots of oxygen, you loosen up our neck and shoulders and you are surprised about the funny sound of this breathing that fills the entire room. You try to find the rhythm with the teacher and the other students and before you can even think you have started the journey through your body in the here and now. </p>
+                </div>
+                <div class="tab-pane fade" id="service-two">
+                    <h4>Drones</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                </div>
+                <div class="tab-pane fade" id="service-three">
+                    <h4>Projects</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                </div>
+                <div class="tab-pane fade" id="service-four">
+                    <h4>Learning</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service List -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">Service List</h2>
+        </div>
+        <div class="col-md-4">
+            <div class="media">
+                <div class="pull-left">
+                    <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service One</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-left">
+                    <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service Two</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-left">
+                    <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service Three</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="media">
+                <div class="pull-left">
+                    <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service Four</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-left">
+                    <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-bomb fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service Five</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-left">
+                    <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-bank fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service Six</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="media">
+                <div class="pull-left">
+                    <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service Seven</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-left">
+                    <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-space-shuttle fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service Eight</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-left">
+                    <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                          <i class="fa fa-recycle fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service Nine</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-## Overview
-
-I was on a mission to join the workforce; my portfolio and its project details have grown very fast for the last three months. They are purely based on the fictional ideas and themes I created for the purpose of my portfolio and projects.
-
-If credits I have inserted along the way are not enough to satisfy the standards of business or not fulfilling the required criteria, please allow me to apologize and I will do my best to amend and reflect or scrap away the questionable projects entirely. I owe everything to you and my teachers.
-
-On Mar 8, 2019 as I wrapped up my NCS course and joined Onofflink for my first stint in a real job. This was the beginning of my developer career, then continued the same path with Jiseoan where I found my true passion on mobility and aiot integration. In 2021, I've been looking forward to making this road of learning a reality.
-
-## Highlights of this documentation site
-
-Some of the more prominent features of this theme include the following:
-
-* Bootstrap framework
-* [Navgoco multi-level sidebar](http://www.komposta.net/article/navgoco) for table of contents
-* Ability to specify different sidebars for different products
-* Top navigation bar with drop-down menus
-* Notes, tips, and warning information notes
-* Tags for alternative navigation
-* Advanced landing page layouts from the [Modern Business theme](http://startbootstrap.com/template-overviews/modern-business/).
-
-
-## Getting started
-
-To get started, see [Getting Started][index].
 
 {% include links.html %}
