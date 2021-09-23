@@ -8,7 +8,7 @@ summary: "keep them by heart"
 tags: [wiki, vim]
 excerpt_separator: <!--more-->
 date: 2021-09-06 12:42:03 +0900
-updated: 2021-09-21 12:23 PM
+updated: 2021-09-23 -7:42 PM
 toc: true
 public: true
 parent: [[Vim-Category]] 
@@ -17,6 +17,8 @@ latex: false
 * TOC
 {:toc}
 
+## Fugitive Vim cheatsheet
+<script src="https://gist.github.com/aiegoo/2f557ee90b86139d26e8fed23d9db4b5.js"></script>
 ## Tip 1. `hightlight search` 끄기
 
 * #hightlight, #unimpared
