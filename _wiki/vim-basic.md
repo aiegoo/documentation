@@ -8,7 +8,7 @@ summary: "keep them by heart"
 tags: [wiki, vim]
 excerpt_separator: <!--more-->
 date: 2021-09-06 12:42:03 +0900
-updated: 2021-09-23 08:20 PM
+updated: 2021-09-28 08:20 PM
 toc: true
 public: true
 parent: [[Vim-Category]] 
