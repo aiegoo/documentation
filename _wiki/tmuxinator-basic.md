@@ -1,7 +1,7 @@
 ---
 name: tmuxinator 기초 사용법  
 layout: post
-permalink: /wiki/tmuxinator-basic.html
+permalink: tmuxinator-basic.html
 sidebar: other_sidebar
 collection: wiki
 summary: "keep them by heart"
