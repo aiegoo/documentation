@@ -111,7 +111,7 @@ collections:
     permalink: /tags/
   wiki:
     output: true
-    permalink: /wiki/
+    permalink: /wiki/:title
 
 
     
