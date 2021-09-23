@@ -3,7 +3,7 @@ name: "🌱wiki home"
 tags: [getting_started,wiki]
 sidebar: other_sidebar
 collection: wiki
-permalink: /wiki/wiki.html
+permalink: wiki.html
 excerpt_separator: <!--more-->
 date: 2021-09-20 15:37:09 +0900
 toc: true
