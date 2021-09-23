@@ -35,7 +35,7 @@ toc: false
         <div class="col-md-9 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading arrow">
-                    <span class="iconify" data-icon="mdi:drone"></span>
+                    <span class="iconify" data-icon="eos-icons:atom-electron"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Collections</h4>
@@ -90,7 +90,7 @@ toc: false
             <ul id="myTab" class="nav nav-tabs nav-justified">
                 <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Yoga</a>
                 </li>
-                <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> Drones</a>
+                <li class=""><a href="#service-two" data-toggle="tab"><span class="iconify" data-icon="mdi:drone"></span></i> Drones</a>
                 </li>
                 <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Projects</a>
                 </li>
