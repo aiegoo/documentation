@@ -1,7 +1,7 @@
 ---
 name: vim 기초 사용법  
 layout: post
-permalink: vim-basic.html
+permalink: wiki/vim-basic.html
 sidebar: other_sidebar
 collection: wiki
 summary: "keep them by heart"

@@ -1,10 +1,10 @@
 
 
-{% assign documents = site.wiki | reverse | sort: "updated" %}
+{% assign documents = site.wiki | reverse %}
 <div id="app">
     <H3 class="indent">최근 변경된 wiki 문서</H3>
     <ul class="post-list">
-{% for pg in documents limit: 5 %}{% if pg.public != false and pg.title != 'wiki' %}
+{% for pg in documents limit: 5 | sort: "updated" %}{% if pg.public != false and pg.title != 'wiki' %}
         <li>
             <div>
                 <a class="post-link" href="{{ pg.url | prepend: site.baseurl }}">
