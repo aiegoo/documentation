@@ -32,7 +32,7 @@ toc: false
                <h3>Getting started</h3>
                <p>To get started, see <a href="index.html">Getting Started</a>.</p>
         </div>
-        <div class="col-md-9 col-sm-6">
+        <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
                     <span class="iconify" data-icon="eos-icons:atom-electron"></span>
