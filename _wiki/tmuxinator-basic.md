@@ -4,7 +4,7 @@ layout: post
 permalink: tmuxinator-basic.html
 sidebar: other_sidebar
 collection: wiki
-summary: "keep them by heart"
+summary: "tmux, keep them by heart"
 tags: [wiki, vim, tmuxinator]
 excerpt_separator: <!--more-->
 date: 2021-09-23 22:21:03 +0900

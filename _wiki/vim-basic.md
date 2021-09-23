@@ -4,7 +4,7 @@ layout: post
 permalink: vim-basic.html
 sidebar: other_sidebar
 collection: wiki
-summary: "keep them by heart"
+summary: "keep them by heart, fugitive"
 tags: [wiki, vim]
 excerpt_separator: <!--more-->
 date: 2021-09-22 12:42:03 +0900
