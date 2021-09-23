@@ -35,7 +35,7 @@ toc: false
         <div class="col-md-9 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading arrow">
-                    <span class="iconify" data-icon="eos-icons:atom-electron" style="color: #9826ab;"></span>
+                    <span class="iconify-inline" data-icon="eos-icons:atom-electron" style="color: #9826ab;"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Collections</h4>
