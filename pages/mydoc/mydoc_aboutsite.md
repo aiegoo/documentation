@@ -34,7 +34,7 @@ toc: false
         </div>
         <div class="col-md-9 col-sm-6">
             <div class="panel panel-default text-center">
-                <div class="panel-heading arrow">
+                <div class="panel-heading">
                     <span class="iconify" data-icon="eos-icons:atom-electron"></span>
                 </div>
                 <div class="panel-body">
