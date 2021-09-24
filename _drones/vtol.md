@@ -66,7 +66,7 @@ Products for this **failed flight** are as follows
 
 <object data="https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf" type="application/pdf" width="700px" height="700px">   
 </object>
-![crash_data](https://docs.google.com/viewer?url=https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf)
+[crash_data](https://docs.google.com/viewer?url=https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf)
 
 * [Flight video from ground view](https://drive.google.com/open?id=1ALfahwWxfO_IF-AR9nXCfCwKkToLq-Wj)
 * [Post crash photo](https://drive.google.com/open?id=1dekB6KR_8fftuH_hhgEoikyCn4eCmGdy)
