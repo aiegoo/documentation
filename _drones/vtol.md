@@ -62,10 +62,12 @@ Products for this **failed flight** are as follows
 * [Tlogs](https://drive.google.com/open?id=1ryJdQBWL2OyzMR8Hx_y72ygRCGzfkSJ7) - if replaying, start from 99%
 * [Parameter file](https://drive.google.com/open?id=1p6WxYoGGjIPbcVS1gPDelOehxaB8hOhJ)
 * [SummarySlidespdf](https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf) or [download pptx](./Crash-Analysis.pptx) - we did up a slide deck to try summarize what we think to be key graphs and make sense of what's going on
+
+<script type="text/markdown">
 <object data="https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf" type="application/pdf" width="700px" height="700px">
    <embed src="https://github.com/aiegoo/portfolio/blob/master/Crash-Analysis.pdf" type="application/pdf"> </embed>
 </object>
-
+</script>
 
 * [Flight video from ground view](https://drive.google.com/open?id=1ALfahwWxfO_IF-AR9nXCfCwKkToLq-Wj)
 * [Post crash photo](https://drive.google.com/open?id=1dekB6KR_8fftuH_hhgEoikyCn4eCmGdy)
