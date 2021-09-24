@@ -96,10 +96,6 @@ The reconstruction result below was obtained with the L515_JackJack dataset with
 "max_depth_diff": 0.03
 ```
 
-<video width="320" height="240" autoplay>
-  <source src="images/realsense/JackJack_colormap_opt_result.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
 
 #### RealSense camera configuration, live capture, processing and recording
 ##### RealSense camera discovery
@@ -129,6 +125,7 @@ Here is sample output when only one L515 camera is connected:
 [Open3D INFO]       visual_preset: [RS2_L500_VISUAL_PRESET_CUSTOM | RS2_L500_VISUAL_PRESET_DEFAULT | RS2_L500_VISUAL_PRESET_LOW_AMBIENT | RS2_L500_VISUAL_PRESET_MAX_RANGE | RS2_L500_VISUAL_PRESET_NO_AMBIENT | RS2_L500_VISUAL_PRESET_SHORT_RANGE]
 [Open3D INFO] Open3D only supports synchronized color and depth capture (color_fps = depth_fps).
 ```
+
 This data can also be obtained programmatically to configure a camera based on custom specifications (e.g.: resolution less than 720p) and to independently configure multiple cameras.
 
 #### RealSense camera configuration
@@ -161,6 +158,7 @@ Here is an example json configuration file to capture 30fps, 540p color and 480p
     "visual_preset": "RS2_L500_VISUAL_PRESET_MAX_RANGE"
  }
  ```
+
  #### RealSense camera capture, processing and recording
 
  The following code snippets show how to capture live RGBD video from a RealSense camera. They capture the first 150 frames and also record them to an RS bag file. The bag file can be played back with Open3D tools, realsense-viewer. You can also use ROS tools such as rosbag, rqt_bag and rviz to examine, play and modify the bag file. You can adapt the snippets to your needs by processing or displaying the frames after capture.
