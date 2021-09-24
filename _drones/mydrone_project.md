@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: wiki
 summary: "an autonomous UAS to work under any circumstances for the logistics industry"
 name: _mydrone-readme
 permalink: mydrone_project.html
