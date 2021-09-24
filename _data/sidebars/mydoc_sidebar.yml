@@ -358,7 +358,7 @@ entries:
           output: web
 
         - title: Realsense drone
-          url: /mydoc_realsense.html
+          url: /mydoc_realsense_drone.html
           output: web
 
         - title: Edison Arduino
