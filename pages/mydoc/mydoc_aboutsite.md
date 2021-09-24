@@ -243,4 +243,9 @@ toc: false
 </div>
 
 
+
+{{site.data.alerts.hr_shaded}}
+
+{% include footer.html %}
+
 {% include links.html %}
