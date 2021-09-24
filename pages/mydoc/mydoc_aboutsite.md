@@ -11,7 +11,6 @@ folder: mydoc
 toc: false
 ---
 
-## What inspired me to work on this site
 <div class="row">
         <div class="col-lg-12">
                <h2 class="page-header">What inspired me to work on this site</h2>
@@ -174,8 +173,8 @@ toc: false
                     </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service Four</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading">Delivery drone</h4>
+                    <p>Yolov3 Bounding Boxes: Here is where we created a transfer learning model from the Yolov3 architecture to find bounding boxes of cars, people, and trees in our images. These bounding boxes were used by our probability model to calculate the probability of collision.</p>
                 </div>
             </div>
             <div class="media">
@@ -186,8 +185,8 @@ toc: false
                     </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service Five</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading">Behavioral cloning</h4>
+                    <p>The model I trained can do infinitely number of laps at either 0.2, 0.25, or 0.3 throttle settings. However at 0.3 its execution on the first corner is not as smooth as I like (even though it doesn't go on to the concrete curve), so I decided to submit the drive.py with the 0.25 throttle setting.</p>
                 </div>
             </div>
             <div class="media">
@@ -198,8 +197,8 @@ toc: false
                     </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service Six</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading">Kalman filters</h4>
+                    <p>Medial Axis and Grid discretization have diagonal actions activated by default, you can change the value in the MotionPlanner constructor. Note that all the scripts use arguments to define the goal position. Use --goal_lon=x --goal_lat=y --goal_alt=z to use a custom destination. A default one is defined so it's not mandatory.</p>
                 </div>
             </div>
         </div>
@@ -212,8 +211,8 @@ toc: false
                     </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service Seven</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading">Jetbot gazebo</h4>
+                    <p>I have used RViz to create this plugin to be used in my Gazebo simulatorLorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
                 </div>
             </div>
             <div class="media">
@@ -224,8 +223,8 @@ toc: false
                     </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service Eight</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading">Matlab Nvidia</h4>
+                    <p><div markdown="1"> [road-follwoing](https://github.com/aiegoo/drones/blob/462ee53513489b7e0d4d22ae40143985e2d9d916/jetbot-peer/road_following/live_demo.ipynb)</div></p>
                 </div>
             </div>
             <div class="media">
@@ -236,8 +235,8 @@ toc: false
                     </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service Nine</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading">Yuneec edison fc</h4>
+                    <p><div markdown="1">[docs](http://www.open3d.org/docs/release/tutorial/sensor/realsense.html)</div></p>
                 </div>
             </div>
         </div>
