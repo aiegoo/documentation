@@ -126,7 +126,7 @@ toc: false
         <div class="col-lg-12">
             <h2 class="page-header">Featured wiki list</h2>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-sm-12">
             <div class="media">
                 <div class="pull-left">
                     <span class="fa-stack fa-2x">
@@ -164,7 +164,7 @@ toc: false
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-sm-12">
             <div class="media">
                 <div class="pull-left">
                     <span class="fa-stack fa-2x">
@@ -202,7 +202,7 @@ toc: false
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-sm-12">
             <div class="media">
                 <div class="pull-left">
                     <span class="fa-stack fa-2x">
