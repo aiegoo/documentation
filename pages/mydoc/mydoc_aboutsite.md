@@ -276,6 +276,7 @@ toc: false
 | ![music_album](images/unity/05_Music_1105.png) 
 |=
 
+{{% include image.html file="images/unity/05_Music_1105.png" caption="With psd design proposal, I have created an album navigation control created in Unity" %}
 {{site.data.alerts.hr_shaded}}
 
 {% include footer.html %}
