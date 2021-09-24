@@ -87,7 +87,7 @@ toc: false
             <h2 class="page-header">In this site</h2>
         </div>
         <div class="col-lg-12">
-            <ul id="myTab" class="nav nav-tabs nav-justified">
+            <ul id="myTab" class="nav nav-tabs nav-justified nav-tabs-hover">
                 <li class="active"><a href="#service-one" data-toggle="tab"><span class="iconify" data-icon="iconoir:yoga"></span> Yoga</a>
                 </li>
                 <li class=""><a href="#service-two" data-toggle="tab"><span class="iconify" data-icon="mdi:drone"></span> Drones</a>
@@ -127,7 +127,7 @@ toc: false
         <div class="col-lg-12">
             <h2 class="page-header">Featured wiki list</h2>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-sm-12">
             <div class="media">
                 <div class="pull-left">
                     <span class="fa-stack fa-2x">
@@ -165,7 +165,7 @@ toc: false
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-sm-12">
             <div class="media">
                 <div class="pull-left">
                     <span class="fa-stack fa-2x">
@@ -203,7 +203,7 @@ toc: false
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-sm-12">
             <div class="media">
                 <div class="pull-left">
                     <span class="fa-stack fa-2x">
@@ -225,7 +225,7 @@ toc: false
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">Matlab Nvidia</h4>
-                    <p><div markdown="1"> [road-follwoing](https://github.com/aiegoo/drones/blob/462ee53513489b7e0d4d22ae40143985e2d9d916/jetbot-peer/road_following/live_demo.ipynb)</div></p>
+                    <p><a href="https://github.com/aiegoo/drones/blob/462ee53513489b7e0d4d22ae40143985e2d9d916/jetbot-peer/road_following/live_demo.ipynb"></a></p>
                 </div>
             </div>
             <div class="media">
@@ -237,11 +237,16 @@ toc: false
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">Yuneec edison fc</h4>
-                    <p><div markdown="1">[docs](http://www.open3d.org/docs/release/tutorial/sensor/realsense.html)</div></p>
+                    <p><a href="http://www.open3d.org/docs/release/tutorial/sensor/realsense.html"></a></p>
                 </div>
             </div>
         </div>
 </div>
 
+
+
+{{site.data.alerts.hr_shaded}}
+
+{% include footer.html %}
 
 {% include links.html %}
