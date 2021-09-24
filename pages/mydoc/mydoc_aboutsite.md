@@ -271,7 +271,7 @@ toc: false
 - [mobis3 tony branch](https://github.com/tonyrhee/mobis3/tree/tony) to sync with hardware PLC
 
 
-{% include image.htmlunity/05_Music_1105.png" caption="With psd proposal design, I have worked on an album navigation control created in Unity" %}
+{% include image.html file="unity/05_Music_1105.png" caption="With psd proposal design, I have worked on an album navigation control created in Unity" %}
 
 {{site.data.alerts.hr_shaded}}
 

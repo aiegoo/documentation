@@ -204,4 +204,4 @@ make RealSenseRecorder
 bin/examples/RealSenseRecorder --config ../examples/test_data/rs_default_config.json --record test_data.bag
 ```
 
-{% include image.html file="images/realsense/RealSenseRecorder.jpg" caption="visualizing live capture" %}
+{% include image.html file="realsense/RealSenseRecorder.jpg" caption="visualizing live capture" %}
