@@ -12,7 +12,7 @@ toc: false
 ---
 
 ## What inspired me to work on this site
-<div class="row">
+<div class="row" display="table">
         <div class="col-lg-12">
                <h2 class="page-header">What inspired me to work on this site</h2>
                <p>I was on a mission to join the workforce; my portfolio and its project details have grown very fast for the last three months. They are purely based on the fictional ideas and themes I created for the purpose of my portfolio and projects.</p>
@@ -32,7 +32,7 @@ toc: false
                <h3>Getting started</h3>
                <p>To get started, see <a href="index.html">Getting Started</a>.</p>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6" style="float:none; display: table-cell; vertical-align: top;">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
                     <span class="iconify" data-icon="eos-icons:atom-electron" style="height: 5rem;"></span>
@@ -44,7 +44,7 @@ toc: false
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6" style="float:none; display: table-cell; vertical-align: top;">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
                 <span class="iconify" data-icon="fe:align-center" style="height: 5rem;"></span>
@@ -56,7 +56,7 @@ toc: false
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6" style="float:none; display: table-cell; vertical-align: top;">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
                 <span class="iconify" data-icon="lucide:bar-chart-2" style="height: 5rem;"></span>
@@ -68,7 +68,7 @@ toc: false
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6" style="float:none; display: table-cell; vertical-align: top;">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
                 <span class="iconify" data-icon="lucide:archive" style="height: 5rem;"></span>
