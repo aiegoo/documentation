@@ -125,7 +125,7 @@ toc: false
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
 <div class="row">
         <div class="col-lg-12">
-            <h2 class="page-header">Featured wiki list</h2>
+            <h2 class="page-header">Featured projects</h2>
         </div>
         <div class="col-md-6 col-sm-12">
             <div class="media">
@@ -243,6 +243,25 @@ toc: false
         </div>
 </div>
 
+## Projects from previous work
+### freepbx
+
+
+{% include note.html content=" clone config repo and copy downloads/downloads and run the 'install.sh' to make a new server in sync with your nlp server" %}
+
+- [documents](https://github.com/onofflink/callSystem)
+- [cdc project](https://github.com/onofflink/callSystem) check its submodule onoffjoin
+- [freepbx install](https://github.com/onofflink/freepbx)
+- [develop journal](https://github.com/onofflink/orientation) check VSC journal workspace during this time
+- [callconf](https://github.com/onofflink/115.68.120.121) based on wowza
+
+`root@159.65.8.44` check the nginx to reconfigure to its gui dashboard
+
+### unity autonomous motor HUD
+
+- [mobis](https://github.com/tonyrhee/mobis) collaboration with jotaekwan
+- [project dashboard](https://github.com/tonyrhee/mobis/projects) check 10 dashboard 
+- [mobis3 tony branch](https://github.com/tonyrhee/mobis3/tree/tony) to sync with hardware PLC
 
 
 {{site.data.alerts.hr_shaded}}
