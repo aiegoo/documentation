@@ -1,5 +1,5 @@
 ---
-layout: portfolio
+layout: page
 name: _mydrone readme
 permalink: mydrone_project.html
 type: "ros, apm"

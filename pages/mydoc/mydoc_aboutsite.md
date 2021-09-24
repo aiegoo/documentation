@@ -255,7 +255,14 @@ toc: false
 - [develop journal](https://github.com/onofflink/orientation) check VSC journal workspace during this time
 - [callconf](https://github.com/onofflink/115.68.120.121) based on wowza
 
-`root@159.65.8.44` check the nginx to reconfigure to its gui dashboard
+`root@159.65.8.44` check the nginx to reconfigure its gui dashboard
+> images 
+
+|---
+|
+| :-: | :-:
+| ![adduser](images/freepbx/indexAdduser.png) | ![index](images/freepbx/indexImage.png)
+|===
 
 ### unity autonomous motor HUD
 
