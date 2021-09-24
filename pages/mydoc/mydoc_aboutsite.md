@@ -88,11 +88,11 @@ toc: false
         </div>
         <div class="col-lg-12">
             <ul id="myTab" class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Yoga</a>
+                <li class="active"><a href="#service-one" data-toggle="tab"><span class="iconify" data-icon="iconoir:yoga"></span> Yoga</a>
                 </li>
                 <li class=""><a href="#service-two" data-toggle="tab"><span class="iconify" data-icon="mdi:drone"></span> Drones</a>
                 </li>
-                <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Projects</a>
+                <li class=""><a href="#service-three" data-toggle="tab"><span class="iconify" data-icon="emojione:deciduous-tree"></span> Projects</a>
                 </li>
                 <li class=""><a href="#service-four" data-toggle="tab"><span class="iconify" data-icon="eos-icons:arrow-rotate"></span>Learning</a>
                 </li>
