@@ -161,7 +161,7 @@ toc: false
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">ROS dronekit</h4>
-                    <p>ROS bag and </p>
+                    <p>ROS-bag and Gazebo</p>
                 </div>
             </div>
         </div>

@@ -58,6 +58,7 @@ excerpt_separator: <!--more-->
 - [Visualization](#visualization)
   - [Simulator Control](#simulator-control)
 - [Roadmap](#roadmap)
+- [Project images](#project-images)
 - [Contribute](#contribute)
     - [:wavy_dash: references](#wavy_dash-references)
   - [Contribute on proposed features](#contribute-on-proposed-features)
@@ -167,6 +168,26 @@ SessionSerializer, MovementSerializer, GlobalPoistionSerializer, GlobalHomeSeria
 
 ## Roadmap
 [finalproject](https://github.com/aiegoo/finalproject#Roadmap)
+
+## Project images
+> on Jan 21 2021 for fcnd simulator using pathfinding script
+
+[![FCND_Pathfinder](https://img.youtube.com/vi/S_ZqrOXAAVU/2.jpg)](https://youtu.be/S_ZqrOXAAVU) 
+
+> on Jan 22 2022 for venv simulartor using matlab 
+
+[![FCND_Pathfinder2](https://img.youtube.com/vi/E7Fl_TwEi_I/3.jpg)](https://youtu.be/E7Fl_TwEi_I)
+
+|  front-end  | db  | fcnd  | unity simulator   |
+|:---|:--:|:--:|:---:|
+| ![image](https://user-images.githubusercontent.com/42961200/120050084-1875e780-c057-11eb-80be-6fbd7c134ea6.png) ![image](https://user-images.githubusercontent.com/42961200/120056494-8fbb7380-c077-11eb-8d1e-47289a397859.png)  |    |   ![image](https://user-images.githubusercontent.com/42961200/120050449-558ea980-c058-11eb-891b-8aeb724d9c64.png) |  ![image](https://user-images.githubusercontent.com/42961200/120050698-ca61e380-c058-11eb-8643-3cc186b1200b.png)  |
+| pipenv shell, makemigrations/migrate, runserver, npm run serve -- --port 8000   |    |  conda activate fcnd, python script  | [contorl keys](https://user-images.githubusercontent.com/42961200/120051003-de5a1500-c059-11eb-9457-25e559161a7f.png)|
+| [source](https://root:BkTyEVaVGeMdaL3sPYse@eggs.or.kr/root/px4-autopilot)   | docker   | remote backup Fetch URL: git@github.com:aiegoo/_kalman    | [download](https://github.com/udacity/FCND-Simulator-Releases/releases)   |
+
+| youtube preview | heroku pipeline |
+| :---: | :---: | 
+| [![youtubue](https://img.youtube.com/vi/knkagdDBulA/1.jpg)](https://www.youtube.com/watch?v=knkagdDBulA) |  [![app link](https://user-images.githubusercontent.com/42961200/120058702-c8fbdf80-c087-11eb-940f-61bdbbc160b5.png)](https://bstagram-django.herokuapp.com/)  |
+
 ## Contribute
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
