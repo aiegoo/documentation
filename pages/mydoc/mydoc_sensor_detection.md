@@ -97,7 +97,7 @@ The reconstruction result below was obtained with the L515_JackJack dataset with
 ```
 
 <p><video id="scenario-1" class="video-js vjs-default-skin vjs-big-play-centered" controls
- preload="auto" width="640" height="480" data-setup='{}'>
+ preload="auto" width="533" height="400" data-setup='{}'>
   <source src="images/realsense/JackJack_colormap_opt_result.mp4" type='video/mp4'>
 </video></p>
 
