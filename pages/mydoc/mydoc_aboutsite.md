@@ -224,7 +224,7 @@ toc: false
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">Matlab Nvidia</h4>
-                    <p><div markdown="1"> [road-follwoing](https://github.com/aiegoo/drones/blob/462ee53513489b7e0d4d22ae40143985e2d9d916/jetbot-peer/road_following/live_demo.ipynb)</div></p>
+                    <p><a href="https://github.com/aiegoo/drones/blob/462ee53513489b7e0d4d22ae40143985e2d9d916/jetbot-peer/road_following/live_demo.ipynb"></a></p>
                 </div>
             </div>
             <div class="media">
@@ -236,7 +236,7 @@ toc: false
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">Yuneec edison fc</h4>
-                    <p><div markdown="1">[docs](http://www.open3d.org/docs/release/tutorial/sensor/realsense.html)</div></p>
+                    <p><a href="http://www.open3d.org/docs/release/tutorial/sensor/realsense.html"></a></p>
                 </div>
             </div>
         </div>
