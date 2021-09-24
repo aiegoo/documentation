@@ -86,7 +86,7 @@ toc: false
             <h2 class="page-header">In this site</h2>
         </div>
         <div class="col-lg-12">
-            <ul id="myTab" class="nav nav-tabs nav-justified">
+            <ul id="myTab" class="nav nav-tabs nav-justified nav-tabs-hover">
                 <li class="active"><a href="#service-one" data-toggle="tab"><span class="iconify" data-icon="iconoir:yoga"></span> Yoga</a>
                 </li>
                 <li class=""><a href="#service-two" data-toggle="tab"><span class="iconify" data-icon="mdi:drone"></span> Drones</a>

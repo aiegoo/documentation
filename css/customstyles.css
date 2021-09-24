@@ -725,6 +725,10 @@ h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
     background-color: #248ec2;
     color: white;
 }
+/* hover color change */
+.nav-tabs nav-tabs-hover {
+    backgroundcolor: #234e23 !important;
+}
 
 ol li ol li {list-style-type: lower-alpha;}
 ol li ul li {list-style-type: disc;}
