@@ -270,11 +270,6 @@ toc: false
 - [project dashboard](https://github.com/tonyrhee/mobis/projects) check 10 dashboard 
 - [mobis3 tony branch](https://github.com/tonyrhee/mobis3/tree/tony) to sync with hardware PLC
 
-|---
-|
-| :-: 
-| ![music_album](images/unity/05_Music_1105.png) 
-|=
 
 {% include image.htmlunity/05_Music_1105.png" caption="With psd proposal design, I have worked on an album navigation control created in Unity" %}
 
