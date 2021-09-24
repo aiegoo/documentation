@@ -273,7 +273,7 @@ toc: false
 |---
 |
 | :-: 
-| ![music_album](images/unity/05_music_1105.png) 
+| ![music_album](images/unity/05_Music_1105.png) 
 |=
 
 {{site.data.alerts.hr_shaded}}
