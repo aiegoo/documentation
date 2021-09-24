@@ -21,7 +21,11 @@ folder: mydoc
 | :---: | :--- | :---: | :---
 | [![finalproject](images/misc/drone-logo.png)](https://youtu.be/E7Fl_TwEi_I) | Ardupilot and px4-based simulator | [![pf-frontend](images/misc/Artboard1.png)](https://youtu.be/8dkMs62s8-w) | Django, Postgresql, Vue, Axios and Kalman libraries. Live vehicle tracking 
 
-
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/42961200/108057722-58135780-7096-11eb-888c-12866dbffba2.png" alt="simul visualization" width="300" height="120"> 
+    <br>
+    <em> Live tracking of drone path</em>
+</p> 
 
 ## Drone gui and navigator development
 
