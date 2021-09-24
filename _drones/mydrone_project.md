@@ -1,8 +1,9 @@
 ---
-layout: page
-name: _mydrone readme
+layout: post
+summary: "an autonomous UAS to work under any circumstances for the logistics industry"
+name: _mydrone-readme
 permalink: mydrone_project.html
-type: "ros, apm"
+type: "ros, apm, lora"
 link: https://github.com/aiegoo/_mydrone
 excerpt_separator: <!--more-->
 ---
