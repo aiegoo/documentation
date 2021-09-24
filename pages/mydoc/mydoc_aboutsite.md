@@ -35,7 +35,7 @@ toc: false
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <span class="iconify" data-icon="eos-icons:atom-electron" style="height: 32px;"></span>
+                    <span class="iconify" data-icon="eos-icons:atom-electron" style="height: 5rem;"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Collections</h4>
@@ -47,7 +47,7 @@ toc: false
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                <span class="iconify" data-icon="fe:align-center"></span>
+                <span class="iconify" data-icon="fe:align-center" style="height: 5rem;"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Usermap simple or complex</h4>
@@ -59,7 +59,7 @@ toc: false
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                <span class="iconify" data-icon="lucide:bar-chart-2"></span>
+                <span class="iconify" data-icon="lucide:bar-chart-2" style="height: 5rem;"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Contextual series</h4>
@@ -71,7 +71,7 @@ toc: false
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                <span class="iconify" data-icon="lucide:archive"></span>
+                <span class="iconify" data-icon="lucide:archive" style="height: 5rem;"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Taglogic grouping the dots</h4>
@@ -90,7 +90,7 @@ toc: false
             <ul id="myTab" class="nav nav-tabs nav-justified">
                 <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Yoga</a>
                 </li>
-                <li class=""><a href="#service-two" data-toggle="tab"><span class="iconify" data-icon="mdi:drone"></span></i> Drones</a>
+                <li class=""><a href="#service-two" data-toggle="tab"><span class="iconify" data-icon="mdi:drone"></span> Drones</a>
                 </li>
                 <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Projects</a>
                 </li>
@@ -125,7 +125,7 @@ toc: false
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
 <div class="row">
         <div class="col-lg-12">
-            <h2 class="page-header">Service List</h2>
+            <h2 class="page-header">Featured wiki list</h2>
         </div>
         <div class="col-md-4">
             <div class="media">
@@ -136,8 +136,8 @@ toc: false
                     </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service One</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading">RAPA project</h4>
+                    <p>Final project with fusion filters and dronekit api based on Udacity platform <a href="https://github.com/aiegoo/_mydrone.git">github</a></p>
                 </div>
             </div>
             <div class="media">
@@ -148,8 +148,8 @@ toc: false
                     </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service Two</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading">Matlab Simulation</h4>
+                    <p>Simulink and other drone toolbox empowering APM simulation</p>
                 </div>
             </div>
             <div class="media">
@@ -160,8 +160,8 @@ toc: false
                     </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service Three</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading">ROS dronekit</h4>
+                    <p>ROS bag and </p>
                 </div>
             </div>
         </div>
