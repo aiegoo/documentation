@@ -189,6 +189,7 @@ $( document ).ready(function() {
                     <p>Yolov3 Bounding Boxes: Here is where we created a transfer learning model from the Yolov3 architecture to find bounding boxes of cars, people, and trees in our images. These bounding boxes were used by our probability model to calculate the probability of collision.</p>
                 </div>
             </div>
+        </div>
         <div class="col-md-6 col-sm-12">
             <div class="media">
                 <div class="pull-left">
@@ -214,6 +215,7 @@ $( document ).ready(function() {
                     <p>Medial Axis and Grid discretization have diagonal actions activated by default, you can change the value in the MotionPlanner constructor. Note that all the scripts use arguments to define the goal position. Use --goal_lon=x --goal_lat=y --goal_alt=z to use a custom destination. A default one is defined so it's not mandatory.</p>
                 </div>
             </div>
+        </div>
         <div class="col-md-6 col-sm-12">
             <div class="media">
                 <div class="pull-left">
