@@ -722,8 +722,7 @@ h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #234e23 /* #248ec2 */
-    ;
+    background-color: #234e23 /* #248ec2 */;
     color: white;
 }
 /* hover color change */
