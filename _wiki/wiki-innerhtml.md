@@ -18,7 +18,7 @@ latex: false
 * TOC
 {:toc}
 
-## sample
+### sample
 
 ```html
 <div id="div1"> 
