@@ -8,7 +8,7 @@ summary: " 실제 사용법 정리 "
 tags: [api]
 excerpt_separator: <!--more-->
 date: 2021-09-21 12:42:03 +0900
-updated: 2021-09-25 5:24 PM
+updated: 2021-09-26 00:44 PM
 toc: true
 public: true
 parent: [[Gray-Category]]
@@ -17,7 +17,7 @@ latex: false
 * TOC
 {:toc}
 
-## icnonify api
+## iconify api
 [home](https://iconify.design/)
 
 ### usage with node
