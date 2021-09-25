@@ -81,6 +81,17 @@ toc: false
             </div>
         </div>
 </div>
+<script type="text/javascript">
+$( document ).ready(function() {
+    var heights = $(".panel-default").map(function() {
+        return $(this).height();
+    }).get();
+
+    maxHeight = Math.max.apply(null, heights);
+
+    $(".panel-default").height(maxHeight);
+});
+</script>
     <!-- Service Tabs -->
 <div class="row">
         <div class="col-lg-12">
