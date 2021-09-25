@@ -40,7 +40,7 @@ toc: false
                 <div class="panel-body">
                     <h4>Collections</h4>
                     <p font-size="0.5em">There are 5 collections in this site, yoga, drones, freelancers, mycourse and wiki, which would expand as more contents are added during my dev career.</p>
-                    <a href="https://github.com/documentation/blob/edit/.config.yml" class="btn btn-primary">Learn More</a>
+                    <a href="https://github.com/documentation/blob/edit/_config.yml" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
