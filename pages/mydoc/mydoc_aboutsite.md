@@ -32,7 +32,7 @@ toc: false
                <h3>Getting started</h3>
                <p>To get started, see <a href="index.html">Getting Started</a>.</p>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-6 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
                     <span class="iconify" data-icon="eos-icons:atom-electron" style="height: 5rem; width: 5rem"></span>
@@ -44,7 +44,7 @@ toc: false
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-6 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
                 <span class="iconify" data-icon="fe:align-center" style="height: 5rem; width: 5rem"></span>
@@ -56,7 +56,7 @@ toc: false
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-6 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
                 <span class="iconify" data-icon="lucide:bar-chart-2" style="height: 5rem; width: 5rem"></span>
@@ -68,7 +68,7 @@ toc: false
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-6 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
                 <span class="iconify" data-icon="lucide:archive" style="height: 5rem; width: 5rem"></span>
