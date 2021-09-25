@@ -17,14 +17,11 @@ link: https://www.36io.co
 Our class team made its first test flight after assembly.
 
 
-{% include image_drones.html folder="hw_gallery" %}
-
 |---
 | 
 | :-:
 | ![demo](https://github.com/aiegoo/Applying_EANNs/raw/master/Images/Demo.gif)
 
 
-{% include image_drone_dev.html folder="dev_gallery" %}
 
 [**Preview**]({{page.link}})
