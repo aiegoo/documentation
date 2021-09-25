@@ -726,7 +726,7 @@ h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
     color: white;
 }
 /* hover color change */
-.nav-tabs nav-tabs-hover:hover {
+.nav-tabs nav-tabs-hover>li:hover {
     /* backgroundcolor: #234e23 !important; */
 }
 
