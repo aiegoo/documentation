@@ -2,7 +2,7 @@
 layout: page
 name: "drones hardware_specs"
 sidebar: other_sidebar
-permalink: drones_hardwarehtml
+permalink: drones_hardware.html
 category: "drones"
 excerpt_separator: <!--more-->
 complex_map: true
