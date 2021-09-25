@@ -35,6 +35,7 @@ folder: mydoc
 
 [software_installation](https://github.com/aiegoo/_mydrone/wiki/Software-Installation)
 
+[mathlab_example](https://kr.mathworks.com/help/supportpkg/android/ref/get-started-with-deploying-customizable-dashboard-blocks-on-android-device.html)
 
 ### example of GUI 
 [youtube](https://www.youtube.com/watch?v=93SpvPLL-_s)
