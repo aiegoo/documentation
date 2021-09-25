@@ -168,7 +168,6 @@ latex: false
 ### 내용정리
 
 * google sheets에 있는 데이터의 CRUD가 가능한 android, ios, web 앱을 지원하는 api를 배움
-* [gsheets, pu 
 
 ### Android Studio 업데이트중 에러
 
