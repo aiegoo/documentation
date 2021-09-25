@@ -35,7 +35,7 @@ toc: false
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <span class="iconify" data-icon="eos-icons:atom-electron" style="height: 5rem;"></span>
+                    <span class="iconify" data-icon="eos-icons:atom-electron" style="height: 5rem; width: 5rem"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Collections</h4>
@@ -47,7 +47,7 @@ toc: false
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                <span class="iconify" data-icon="fe:align-center" style="height: 5rem;"></span>
+                <span class="iconify" data-icon="fe:align-center" style="height: 5rem; width: 5rem"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Usermap simple or complex</h4>
@@ -59,7 +59,7 @@ toc: false
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                <span class="iconify" data-icon="lucide:bar-chart-2" style="height: 5rem;"></span>
+                <span class="iconify" data-icon="lucide:bar-chart-2" style="height: 5rem; width: 5rem"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Contextual series</h4>
@@ -71,7 +71,7 @@ toc: false
         <div class="col-md-3 col-sm-6">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                <span class="iconify" data-icon="lucide:archive" style="height: 5rem;"></span>
+                <span class="iconify" data-icon="lucide:archive" style="height: 5rem; width: 5rem"></span>
                 </div>
                 <div class="panel-body">
                     <h4>Taglogic to group the scattered dots</h4>
