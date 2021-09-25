@@ -74,7 +74,7 @@ toc: false
                 <span class="iconify" data-icon="lucide:archive" style="height: 5rem;"></span>
                 </div>
                 <div class="panel-body">
-                    <h4>Taglogic grouping the dots</h4>
+                    <h4>Taglogic to group the scattered dots</h4>
                     <p>As the contents start to pile up, locating relevant information has been a taunting task and taglogic has been solution that worked well and served beyond its original design </p>
                     <a href="#" class="btn btn-primary">Learn More</a>
                 </div>
