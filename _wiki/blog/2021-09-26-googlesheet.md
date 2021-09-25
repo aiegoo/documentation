@@ -73,7 +73,7 @@ latex: false
 2. Python 3.6 or later
 3. Excel data와 프로그래밍 언어에 대한 기본적인 이해 
    
-### Google Clud Console에서 프로젝트를 시작함
+### Google Cloud Console에서 프로젝트를 시작함
 
 1. 구글 API Manager로 가서 신규 프로젝트를 생성한다
   ![그림1](https://lh3.googleusercontent.com/jBPBoxONLLhITXHoGjBE2gDxMp2pW85TaqVEpW7UOw7zJWLT5kOu8zRRY_UK1dSSMI1G9AvquG-aBGN7W4JDWo_QUYpANqXH9XjfWi9X8Ofj-XUH1eJcC_gidNLqSWBUZVm1rNRK)
