@@ -1,8 +1,8 @@
 ---
 layout: page
-name: "drones debugging"
+name: "drones autonomous"
 sidebar: other_sidebar
-permalink: drones_debugging.html
+permalink: drones_aidrone.html
 category: "drones"
 excerpt_separator: <!--more-->
 complex_map: true

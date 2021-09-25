@@ -1,8 +1,8 @@
 ---
 layout: page
-name: "drones debugging"
+name: "middleware devwork"
 sidebar: other_sidebar
-permalink: drones_debugging.html
+permalink: drones_middleware.html
 category: "drones"
 excerpt_separator: <!--more-->
 complex_map: true
