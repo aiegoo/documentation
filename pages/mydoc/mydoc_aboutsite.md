@@ -175,8 +175,6 @@ $( document ).ready(function() {
                     <p>ROS-bag and Gazebo</p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
             <div class="media">
                 <div class="pull-left">
                     <span class="fa-stack fa-2x">
@@ -212,9 +210,7 @@ $( document ).ready(function() {
                     <h4 class="media-heading">Kalman filters</h4>
                     <p>Medial Axis and Grid discretization have diagonal actions activated by default, you can change the value in the MotionPlanner constructor. Note that all the scripts use arguments to define the goal position. Use --goal_lon=x --goal_lat=y --goal_alt=z to use a custom destination. A default one is defined so it's not mandatory.</p>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
+            </div>        
             <div class="media">
                 <div class="pull-left">
                     <span class="fa-stack fa-2x">
