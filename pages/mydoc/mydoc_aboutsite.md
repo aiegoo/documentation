@@ -116,8 +116,8 @@ $( document ).ready(function() {
                 </div>
                 <div class="tab-pane fade" id="service-two">
                     <h4>Drones</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    <p>I remember the first time I held the drone rc at a flying school. The rotors whirled in a distance and echoed in my ears like thumping of my heart. I felt the exhilaration of the air vehicle taking off smoothly, balancing and firm in its position at my fingertips. </p>
+                    <p>It goes back almost 40 years at my sophomore year when somehow I got a notion to apply for the airforce academy, which never got into a reality. Now I have this dream of flying UAVs all programmatically. This is a chapter of my life I started and would finish to the end until when satisfaction should be on my lips, in aftermath of all the turbulence in life.</p>
                 </div>
                 <div class="tab-pane fade" id="service-three">
                     <h4>Projects</h4>
@@ -224,7 +224,7 @@ $( document ).ready(function() {
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">Jetbot gazebo</h4>
-                    <p>I have used RViz to create this plugin to be used in my Gazebo simulatorLorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <p>I have used RViz to create this plugin to be used in my Gazebo simulator.</p>
                 </div>
             </div>
             <div class="media">
