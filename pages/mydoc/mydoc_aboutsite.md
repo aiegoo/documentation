@@ -138,7 +138,7 @@ $( document ).ready(function() {
         <div class="col-lg-12">
             <h2 class="page-header">Featured projects</h2>
         </div>
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-4 col-sm-12">
             <div class="media">
                 <div class="pull-left">
                     <span class="fa-stack fa-2x">
