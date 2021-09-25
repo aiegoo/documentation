@@ -22,7 +22,7 @@ latex: false
 
 * [Using Google Sheets as a Database: A Comprehensive Analysis, HEVO](https://hevodata.com/learn/google-sheets-as-a-database/)
 
-## Using Google Sheeta as a Database: A Comprehensive Analysis
+### Using Google Sheeta as a Database: A Comprehensive Analysis
 
 ### 개요
 
@@ -45,7 +45,7 @@ latex: false
   4. Microsoft Excel과 사용방법이 유사하여 경험이 있다면 어려운점은 없을것이다.
   5. 시트의 데이타를 효율적으로 분석하기 위해 플러그인 , 애드온, 커스텀 코드를 적용할 수 있다.
 
-## Introduction to Databases
+### Introduction to Databases
 
 * database는 행과 열로 표현된 data collection 이다
 * database는 database management system(DBMS)의 도움을 받아, 데이타의 구조적인 정보를 조정하고 구성한다.
@@ -57,7 +57,7 @@ latex: false
   3. SQL Server
   4. MongoDB(NoSQL database)
 
-## Google Sheets as a Database
+### Google Sheets as a Database
 
 * 구글 시트는 매우 발전된 형태의 spreadsheet로 바로 사용할 수있는 많은 능력이 탑재되어있다
 * 클라우드 기반 앱이기 때문에, 작은 어플리케이션이나 웹사이트의 database로도 활용할 수 있다.
@@ -77,14 +77,14 @@ latex: false
 
 1. 구글 API Manager로 가서 신규 프로젝트를 생성한다
   ![그림1](https://lh3.googleusercontent.com/jBPBoxONLLhITXHoGjBE2gDxMp2pW85TaqVEpW7UOw7zJWLT5kOu8zRRY_UK1dSSMI1G9AvquG-aBGN7W4JDWo_QUYpANqXH9XjfWi9X8Ofj-XUH1eJcC_gidNLqSWBUZVm1rNRK)
-1. **Google Drive API**를 프로젝트에 추가한다. 이것은 구글 드라이브에 저장된 spreadsheet에 접근을 허용하는 것이다.
+2. **Google Drive API**를 프로젝트에 추가한다. 이것은 구글 드라이브에 저장된 spreadsheet에 접근을 허용하는 것이다.
   ![그림2](https://lh3.googleusercontent.com/36ioGEr6hp5RtO1PVMFhSXH4qZ1L-dJkom627hqkeJTFfejgM4vL4L3fEtao9QKYucBXRVco0TcYRVwUzB7Xo1MjYd5cbA7BrYPjVFb-xcS_A2Dlp10yfNQGbsanFHnxpVtYvVa0)
-1. Python 프로그램에서 생성 될 요청을 인증(authenticate)하는 데 사용할 자격 증명(credential)을 생성한다.
+3. Python 프로그램에서 생성 될 요청을 인증(authenticate)하는 데 사용할 자격 증명(credential)을 생성한다.
   ![그림3](https://lh4.googleusercontent.com/KMoH9JB7Pg_8L1uozU3dI416jvwxa4N0S8d4QTJIPk1T-AWMewvc00qKcQyQUIFk1Wk4GXv-dPxDGjklKo8ka6NJiOoN5JVzq4PHbMeHvaJ_t4vSdnZKcOyLmFlLIQJEIZdGYQbj)
-1. 생성된 JSON Key를 로컬머신에 `keys.json`이라는 이름으로 저장한다
-1. 텍스트 에디터로 생성된 키를 Open하고 **client_email** 프로퍼티 로 언급된 이메일 주소를 복사한다. 
-1. "Tutorial" 이름으로 시트를 생성하고 몆가지 데이터를 추가해본다
-1. 그 시트의 접근권한을 위 email 주소에 공유한다. 이 작업은 API를 통해 그 시트로의 접근권한을 허용한다.
+4. 생성된 JSON Key를 로컬머신에 `keys.json`이라는 이름으로 저장한다
+5. 텍스트 에디터로 생성된 키를 Open하고 **client_email** 프로퍼티 로 언급된 이메일 주소를 복사한다. 
+6. "Tutorial" 이름으로 시트를 생성하고 몆가지 데이터를 추가해본다
+7. 그 시트의 접근권한을 위 email 주소에 공유한다. 이 작업은 API를 통해 그 시트로의 접근권한을 허용한다.
   ![그림4](https://lh6.googleusercontent.com/dl_tSQ4HObs0gFVZeJAlgT6vy5fUHd-5WMNtRXBlA5bYBvQDXGyS1jYMhHDTSmx3SptRbp8EIilssq-rS8nxUjf6QWervs75plItAEuRc1CO359XPaKJXFIkMwfLNJOXaAySUyZM)
   
 ### Connect to Spreadsheet via Python
@@ -94,7 +94,7 @@ latex: false
   > pip install gspread oauth2client
   ```
 
-1. `googleSheetToPython.py` 이름으로된 파일을 생성하고 아래 코드를 적어넣자
+2. `googleSheetToPython.py` 이름으로된 파일을 생성하고 아래 코드를 적어넣자
   ```python
   # 라이브러리를 임포트한다 
   import gspread
@@ -115,9 +115,9 @@ latex: false
   result = sheet.get_all_record()
   ```
 
-1. 일단 자격증명이 setup되면, spreadsheet에 접근하는데 API를 사용할수 있으며 CRUD(Create, Read, Update, Delete) opertation을 구글시트에 적용하는 것이 가능해진다
+3. 일단 자격증명이 setup되면, spreadsheet에 접근하는데 API를 사용할수 있으며 CRUD(Create, Read, Update, Delete) opertation을 구글시트에 적용하는 것이 가능해진다
 
-1. 아래 Python code는 구글 시트에서 data를 읽어오는 코드이다
+4. 아래 Python code는 구글 시트에서 data를 읽어오는 코드이다
   ```python
   result = sheet.row_values(5) # 각각의 row를 본다
   result_col = sheet.col.values(5) # 각각의 column을 본다
@@ -125,7 +125,7 @@ latex: false
   pp = pprint.PrettyPrinter()
   ```
 
-1. 시트의 값을 업데이트한다
+5. 시트의 값을 업데이트한다
   ```python
   #update values
   sheet.update_cell(2, 9, '500000') # 시트의 cell(2, 9) 위치의 값을 변경한다
@@ -133,7 +133,7 @@ latex: false
   pp.pprint(result)
   ```
 
-## Limitations of Using Google Sheets as a Database
+### Limitations of Using Google Sheets as a Database
 
 * 구글 시트는 사용자가 데이타를 관리하고 분석할 수있는 훌륭한 기능들을 제공한다
 * 하지만 그것이 기존 database를 완전히 대체하는 것은 아니다
@@ -151,34 +151,34 @@ latex: false
     * 부드럽게 joins 기능을 수행하는 표준 API는 없다
     * 이런 동작을 하기 위해서는 직접 복잡한 프로그래밍을 해야한다
 
-## 결론
+### 결론
 
 * 이 포스트에서 구글 시트와 그 특징들, 구글시트를 어떻게 database로 사용하는지를 배웠다
 * 하지만 특정 기능들의 부족으로 database를 완전히 대체할 수는 없다
 * 당신이 다른 대체품을 찾고있다면, `Hevo Data`를 한 번 써보길 권한다,
 * 여기서 부터는 Hevo 홍보 ( 유료 서비스임)
 
-# Flutter Tutorial - Google Sheets API
+## Flutter Tutorial - Google Sheets API
 
-## 개요
+### 개요
 
 * Youtube 시리즈
 * [Flutter Tutorial - Google Sheets API 1/3, youtube](https://www.youtube.com/watch?v=3UJ6RnWTGIY)
 
-## 내용정리
+### 내용정리
 
 * google sheets에 있는 데이터의 CRUD가 가능한 android, ios, web 앱을 지원하는 api를 배움
 * [gsheets, pu 
 
-# Android Studio 업데이트중 에러
+### Android Studio 업데이트중 에러
 
-## 참고링크
+### 참고링크
 
 * [첫번째 링크: Android Emulator Hypervisor Driver for AMD Processors](https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors)
 * [두번째 링크: Is Hyper V really disabled?](https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors/wiki/Is-Hyper-V-really-disabled%3F)
 * [첫번째](첫번째) 링크에서 Prerequiste를 맞추도록 해야함.
 
-# Javascript 개념 설명 사이트
+#### Javascript 개념 설명 사이트
 
 * [클로저의 개념, Polemaweb?](https://poiemaweb.com/js-closure) : 클로저의 개념 설명, 모던 자바스크립트 Deep Dive의 저자?
 
