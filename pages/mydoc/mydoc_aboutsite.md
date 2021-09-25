@@ -87,9 +87,9 @@ $( document ).ready(function() {
         return $(this).height();
     }).get();
 
-    maxHeight = Math.max.apply(null, heights);
+    maxHeight = Math.max.apply(null, heights + 50);
 
-    $(".panel-default").height(maxHeight+"50px");
+    $(".panel-default").height(maxHeight);
 });
 </script>
     <!-- Service Tabs -->
