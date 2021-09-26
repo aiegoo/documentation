@@ -32,7 +32,7 @@ latex: false
     class="video-js vjs-default-skin"
     controls
     autoplay
-    width="640" height="264"
+    width="560" height="315"
     data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/embed/p3SmaHOb0Bo"}] }'
   >
   </video>
