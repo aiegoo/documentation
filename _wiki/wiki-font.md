@@ -8,7 +8,7 @@ summary: "wiki font with ascii art"
 tags: [wiki, getting_started]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-17 9:27 PM
+updated: 2021-09-26 06:27 PM
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
@@ -17,6 +17,9 @@ latex: false
 
 * TOC
 {:toc}
+
+## next tasks
+Test it out with [my_copy](aiegoo.github.io/documentation-theme-jekyll)
 
 ## 폰트 변경의 발단
 

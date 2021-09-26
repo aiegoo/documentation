@@ -23,7 +23,7 @@ latex: false
 [Lidar_teraRanger](https://youtu.be/p3SmaHOb0Bo)
 
 |--
-|
+| youtube
 | :-:
 | [![tera_Ranger](https://img.youtube.com/vi/p3SmaHOb0Bo/1.jpg)](https://youtu.be/p3SmaHOb0Bo)
 
