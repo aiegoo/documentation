@@ -21,12 +21,11 @@ latex: false
 [repository](https://github.com/aiegoo/thesis.git)
 
 [Lidar_teraRanger](https://youtu.be/p3SmaHOb0Bo)
-<p><video id="scenario-1" class="video-js vjs-default-skin vjs-big-play-centered" controls
- preload="auto" width="467" height="350" data-setup='{}'>
-  <source src="https://youtu.be/p3SmaHOb0Bo" type='video/youtube'>
-</video></p>
 
-[![tera_Ranger](https://img.youtube.com/vi/p3SmaHOb0Bo/1.jpg)](https://youtu.be/p3SmaHOb0Bo)
+|--
+|
+| :-:
+| [![tera_Ranger](https://img.youtube.com/vi/p3SmaHOb0Bo/1.jpg)](https://youtu.be/p3SmaHOb0Bo)
 
   <video
     id="vid1"
