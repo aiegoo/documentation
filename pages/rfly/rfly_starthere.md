@@ -52,7 +52,9 @@ folder: rfly
     data-setup='{ "techOrder": ["video"], "sources": [{ "type": "video/mp4", "src": "https://drive.google.com/file/d/1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly/preview"}] }'
   >
   </video>
-
+  
+<script src="node_modules/video.js/dist/video.min.js"></script>
+<script src="dist/Youtube.min.js"></script>
 ### Project Goal
 
 |---
