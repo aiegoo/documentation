@@ -1,5 +1,5 @@
 ---
-name: google sheet
+name: latex wiki
 layout: post
 permalink: 2021-09-26-wiki-latex.html
 sidebar: other_sidebar
