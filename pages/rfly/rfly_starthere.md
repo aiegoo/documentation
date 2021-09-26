@@ -28,33 +28,12 @@ folder: rfly
 |===
 |
 
-  <video
-    id="vid1"
-    class="video-js vjs-default-skin"
-    controls
-    autoplay
-    width="560" height="315"
-    data-setup='{ "techOrder": ["mp4"], "sources": [{ "type": "video/mp4", "src": "images/rflysim/rflysim_1-2.mp4"}] }'
-  >
-  </video>
 
 <p><video id="scenario-1" class="video-js vjs-default-skin vjs-big-play-centered" controls
  preload="auto" width="467" height="350" data-setup='{}'>
   <source src="images/rflysim/rflysim_1-2.mp4" type='video/mp4'>
 </video></p>
 
-  <video
-    id="vid1"
-    class="video-js vjs-default-skin"
-    controls
-    autoplay
-    width="560" height="315"
-    data-setup='{ "techOrder": ["video"], "sources": [{ "type": "video/mp4", "src": "https://drive.google.com/file/d/1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly/preview"}] }'
-  >
-  </video>
-  
-<script src="node_modules/video.js/dist/video.min.js"></script>
-<script src="dist/Youtube.min.js"></script>
 ### Project Goal
 
 |---
