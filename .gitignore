@@ -6,3 +6,6 @@ _pdf
 vendor/
 .bundle/
 _site/
+node_modules
+build
+npm-debug.log

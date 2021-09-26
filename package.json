@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "videojs-youtube": "^2.6.1"
+  }
+}

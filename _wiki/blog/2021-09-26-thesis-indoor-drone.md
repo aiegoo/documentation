@@ -28,6 +28,19 @@ latex: false
 
 [![tera_Ranger](https://img.youtube.com/p3SmaHOb0Bo/1.jpg)](https://youtu.be/p3SmaHOb0Bo)
 
+  <video
+    id="vid1"
+    class="video-js vjs-default-skin"
+    controls
+    autoplay
+    width="640" height="264"
+    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/p3SmaHOb0Bo"}] }'
+  >
+  </video>
+
+  <script src="/node_modules/video.js/dist/video.min.js"></script>
+  <script src="/dist/Youtube.min.js"></script>
+
 This repository contains all of the ROS packages.
 
 ## Abstract
