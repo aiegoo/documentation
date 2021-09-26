@@ -4,7 +4,7 @@ layout: post
 permalink: 2021-09-26-wiki-latex.html
 sidebar: other_sidebar
 collection: wiki
-summary: "thesis latex wiki"
+summary: "how to add latex to wiki as from example of thesis repository"
 tags: [wiki, getting_started]
 excerpt_separator: <!--more-->
 date: 2021-09-26 18:22:03 +0900
