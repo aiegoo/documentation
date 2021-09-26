@@ -22,9 +22,7 @@ latex: false
 
 [Lidar_teraRanger](https://youtu.be/p3SmaHOb0Bo)
 <p><video id="scenario-1" class="video-js vjs-default-skin vjs-big-play-centered" controls
- preload="auto" width="467" height="350" data-setup='{"techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}] }'>
-  <source src="https://youtu.be/p3SmaHOb0Bo" type='video/youtube'>
-</video></p>
+ preload="auto" width="467" height="350" data-setup='{"techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}] }'></video></p>
 
 [![tera_Ranger](https://img.youtube.com/vi/p3SmaHOb0Bo/1.jpg)](https://youtu.be/p3SmaHOb0Bo)
 
@@ -38,8 +36,8 @@ latex: false
   >
   </video>
 
-  <script src="/node_modules/video.js/dist/video.min.js"></script>
-  <script src="/dist/Youtube.min.js"></script>
+  <script src="node_modules/video.js/dist/video.min.js"></script>
+  <script src="dist/Youtube.min.js"></script>
 
 This repository contains all of the ROS packages.
 

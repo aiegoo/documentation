@@ -27,7 +27,7 @@ latex: false
   * 한컴 훈민정음 세로쓰기
 
 * 위 폰트를 웹에서 사용하는 방법
-  * [@font-face 사용규칙](https://aboooks.tistory.com/153) 보면 될 것 같은데 ... 아직 안봄
+  * [@font-face 사용규칙](https://aboooks.tistory.com/153) 
   * [Web Font-@font-face 적용 방법](https://webclub.tistory.com/261)
 
 {% include links.html %}
