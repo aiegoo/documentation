@@ -26,7 +26,7 @@ latex: false
   <source src="https://youtu.be/p3SmaHOb0Bo" type='video/youtube'>
 </video></p>
 
-[![tera_Ranger](https://img.youtube.com/p3SmaHOb0Bo/0.jpg)](https://youtu.be/p3SmaHOb0Bo)
+[![tera_Ranger](https://img.youtube.com/p3SmaHOb0Bo/1.jpg)](https://youtu.be/p3SmaHOb0Bo)
 
 This repository contains all of the ROS packages.
 
