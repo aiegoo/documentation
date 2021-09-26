@@ -33,7 +33,7 @@ latex: false
     controls
     autoplay
     width="640" height="264"
-    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/p3SmaHOb0Bo"}] }'
+    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/embed/p3SmaHOb0Bo"}] }'
   >
   </video>
 
