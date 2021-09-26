@@ -34,6 +34,8 @@ folder: rfly
   <source src="images/rflysim/rflysim_1-2.mp4" type='video/mp4'>
 </video></p>
 
+[video](images/rflysim/rflysim_1-2.mp4)
+
 ### Project Goal
 
 |---
