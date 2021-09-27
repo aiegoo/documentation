@@ -28,10 +28,11 @@ latex: false
 - etc.
 
 ### example of this issue can be found:
-[rlfy_shtarthere]({{ site.baseurl}}/rfly_starthere.html#lessons)
+[rlfy_starthere]({{ site.baseurl}}/rfly_starthere.html#lessons)
 
 ## videojs
 [tutorial](https://docs.videojs.com/tutorial-setup.html)
 [example]({{site.github_editme_path}}mydoc_sensor_detection.md)
+[using_script]({{ site.github_editme_path}}thesis-indoor-drone.md)
 
 {% include links.html %}
