@@ -18,6 +18,11 @@ latex: false
 * TOC
 {:toc}
 
+## jekyllvideo readme
+<script src="https://gist.github.com/aiegoo/e9542db822bcf7b8921e54d772ec8741.js"></script>
+
+
+## videojs
 
 
 {% include links.html %}
