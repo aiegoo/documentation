@@ -40,8 +40,8 @@ driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 | lessons | summary
 | :-: |
 | [video](images/rflysim/rflysim_1-2.mp4)
-| | lesson 1, 2
-| . | lesson 3, 4: install
+|{::nomarkdonw}{% include youtubePlayer.html id=page.youtubeID %}}{:/} | lesson 1, 2
+| {::nomarkdown}{% include googleDrivePlayer.html id=page.driveID %}{:/} | lesson 3, 4: install
 |---
 |
 
