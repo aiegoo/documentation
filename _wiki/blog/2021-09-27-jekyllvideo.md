@@ -1,6 +1,6 @@
 ---
 name: jekyll video player
-layout: page
+layout: post
 permalink: 2021-09-27-jekyllvideo.html
 sidebar: other_sidebar
 collection: wiki
