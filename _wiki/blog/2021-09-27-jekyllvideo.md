@@ -8,7 +8,7 @@ summary: "videojs, plugin, include"
 tags: [wiki, getting_started]
 excerpt_separator: <!--more-->
 date: 2021-09-27 09:44:03 +0900
-updated: 2021-09-27 9:44 AM
+updated: 2021-09-28 05:12AM
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
@@ -58,5 +58,8 @@ latex: false
 [tutorial](https://docs.videojs.com/tutorial-setup.html)
 [example]({{site.github_editme_path}}mydoc_sensor_detection.md)
 [using_script]({{ site.github_editme_path}}thesis-indoor-drone.md)
+
+### converting markdown to html with json_module
+[source](https://gist.github.com/cjmlgrto/8052101e3c272d1050091b16c185ba1c)
 
 {% include links.html %}
