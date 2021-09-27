@@ -13,7 +13,7 @@ toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
 latex: false
-repos: aiegoo/thesis/tree/master/drone_2nd_nav
+repos: aiegoo/thesis/tree/master/drone_2d_nav
 ---
 
 * TOC
