@@ -36,10 +36,10 @@ youtubeID: jBLaP-XwGE8
 </video></p>
 
 [video](images/rflysim/rflysim_1-2.mp4) \n
-[![youtube](https://img.youtube.com/v1/image0.jpg)](https://youtu.be/jBLaP-XwGE8)
 
 {% include youtubePlayer.html id=page.youtubeID %}
 
+https://drive.google.com/file/d/1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly/preview
 ### Project Goal
 
 |---
