@@ -31,6 +31,6 @@ latex: false
 [rlfy_shtarthere]({{ site.baseurl}}/rfly_starthere.html#lessons)
 
 ## videojs
-
+[tutorial](https://docs.videojs.com/tutorial-setup.html)
 
 {% include links.html %}
