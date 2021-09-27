@@ -32,5 +32,6 @@ latex: false
 
 ## videojs
 [tutorial](https://docs.videojs.com/tutorial-setup.html)
+[example](https://github.com/aiegoo/edit/blob/pages/mydoc/mydoc_sensor_detection.md)
 
 {% include links.html %}
