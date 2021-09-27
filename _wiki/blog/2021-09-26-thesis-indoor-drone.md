@@ -29,18 +29,7 @@ youtubeID: p3SmaHOb0Bo
 | :-:
 | [![tera_Ranger](https://img.youtube.com/vi/p3SmaHOb0Bo/1.jpg)](https://youtu.be/p3SmaHOb0Bo)
 
-  <video
-    id="vid1"
-    class="video-js vjs-default-skin"
-    controls
-    autoplay
-    width="560" height="315"
-    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/embed/p3SmaHOb0Bo"}] }'
-  >
-  </video>
-
-  <script src="node_modules/video.js/dist/video.min.js"></script>
-  <script src="dist/Youtube.min.js"></script>
+### youtube
 
 {% include youtubePlayer.html id=page.youtubeID %}
 
