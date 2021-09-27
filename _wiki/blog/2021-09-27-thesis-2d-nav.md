@@ -18,7 +18,7 @@ latex: false
 * TOC
 {:toc}
 
-[repository](https://github.com/aiegoo/thesis.git)
+[repository](https://github.com/aiegoo/thesis/tree/master/drone_2d_nav)
 
 This repository contains all of the ROS packages.
 
