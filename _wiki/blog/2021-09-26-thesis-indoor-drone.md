@@ -8,7 +8,7 @@ summary: "After launching a file, call the following services to initialize the 
 tags: [wiki, getting_started]
 excerpt_separator: <!--more-->
 date: 2021-09-26 13:33:03 +0900
-updated: 2021-09-26 02:07 PM
+updated: 2021-09-27 08:17 PM
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
