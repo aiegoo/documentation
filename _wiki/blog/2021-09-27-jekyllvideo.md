@@ -49,6 +49,16 @@ See the raw text in `example.md` for a complete example. Remember to add in [vid
   - [Responsive Videos](#responsive-videos)
   - [Iframe Attributes](#iframe-attributes)
   - [Full example](#full-example)
+  - [Embed Youtube](#embed-youtube-1)
+  - [Embed Vimeo](#embed-vimeo-1)
+  - [Embed Twitch](#embed-twitch-1)
+  - [Embed Facebook](#embed-facebook-1)
+  - [Embed Streamable](#embed-streamable-1)
+  - [Embed Google Drive](#embed-google-drive-1)
+  - [Embed 20Detik](#embed-20detik-1)
+  - [Embed Dailymotion](#embed-dailymotion-1)
+  - [Embed Vidio](#embed-vidio-1)
+  - [Embed LINE Today](#embed-line-today-1)
 
 ## Embed YouTube
 
@@ -68,18 +78,21 @@ Create a file in your `_includes` folder called `youtubePlayer.html` with this c
 
 Place this snippet inside your .md file where you want to embed your video:
 
+{% raw %}
 ```liquid
 {% include youtubePlayer.html id=page.youtubeId %}
 ```
+{% endraw %}
 
 On the top of your .md file, put the YouTube video ID. You could also put the ID of the video directly.
 
+{% raw %}
 ```yaml
 ---
 youtubeId: putYourIDHere
 ---
 ```
-
+{% endraw %}
 ## Embed Vimeo
 
 Create a file in your `_includes` folder called `vimeoPlayer.html` with this code inside:
@@ -100,9 +113,11 @@ Create a file in your `_includes` folder called `vimeoPlayer.html` with this cod
 
 Place this snippet inside your .md file where you want to embed your video:
 
+{% raw %}
 ```liquid
 {% include vimeoPlayer.html id=page.vimeoId %}
 ```
+{% endraw %}
 
 On the top of your .md file, put the Vimeo video ID. You could also put the ID of the video directly. Take a look at [accessing and editing embed codes](https://vimeo.zendesk.com/hc/en-us/articles/360000710167-Accessing-and-editing-embed-codes) to find your video's embed code ID.
 
@@ -204,9 +219,11 @@ Next create a file in your `_includes` folder called `facebookPlayer.html` with 
 
 Place this snippet inside your .md file where you want to embed your video:
 
+{% raw %}
 ```liquid
 {% include facebookPlayer.html id=page.facebookId %}
 ```
+{% endraw %}
 
 On the top of your .md file, put the Facebook video ID. You could also put the ID of the video directly.
 
@@ -237,9 +254,11 @@ Create a file in your `_includes` folder called `streamablePlayer.html` with thi
 
 Place this snippet inside your .md file where you want to embed your video:
 
+{% raw %}
 ```liquid
 {% include streamablePlayer.html id=page.streamableId %}
 ```
+{% endraw %}
 
 On the top of your .md file, put the Streamable video ID. You could also put the ID of the video directly.
 
@@ -287,9 +306,11 @@ Create a file in your `_includes` folder called `googleDrivePlayer.html` with th
 
 Place this snippet inside your .md file where you want to embed your video:
 
+{% raw %}
 ```liquid
 {% include googleDrivePlayer.html id=page.driveId %}
 ```
+{% endraw %}
 
 On the top of your .md file, put the Google Drive video ID. You could also put the ID of the video directly.
 
@@ -320,9 +341,11 @@ Create a file in your `_includes` folder called `20detikPlayer.html` with this c
 
 Place this snippet inside your .md file where you want to embed your video:
 
+{% raw %}
 ```liquid
 {% include 20detikPlayer.html id=page.detikId %}
 ```
+{% endraw %}
 
 On the top of your .md file, put the Detik video ID. You could also put the ID of the video directly.
 
@@ -351,9 +374,11 @@ Create a file in your `_includes` folder called `dailymotionPlayer.html` with th
 
 Place this snippet inside your .md file where you want to embed your video:
 
+{% raw %}
 ```liquid
 {% include dailymotionPlayer.html id=page.dailymotionId %}
 ```
+{% endraw %}
 
 On the top of your .md file, put the Dailymotion video ID. You could also put the ID of the video directly.
 
@@ -382,9 +407,11 @@ Create a file in your `_includes` folder called `vidioPlayer.html` with this cod
 
 Place this snippet inside your .md file where you want to embed your video:
 
+{% raw %}
 ```liquid
 {% include vidioPlayer.html id=page.vidioId %}
 ```
+{% endraw %}
 
 On the top of your .md file, put the Vidio video ID. You could also put the ID of the video directly.
 
@@ -420,9 +447,11 @@ Create a file in your `_includes` folder called `linetodayPlayer.html` with this
 
 Place this snippet inside your .md file where you want to embed your video:
 
+{% raw %}
 ```liquid
 {% include linetodayPlayer.html id=page.linetodayId country=page.countryId %}
 ```
+{% endraw %}
 
 On the top of your .md file, put the LINE Today video and country ID. You could also put the IDs directly.
 
@@ -487,6 +516,7 @@ vidioId: putYourIDHere
 linetodayId: putYourIDHere
 countryId: putYourIDHere
 ---
+```
 
 ## Embed Youtube
 
@@ -496,7 +526,9 @@ Include this next line in your .md for Youtube videos, make sure to put your vid
 Example:     youtubeId: lDi9uFcD7XI
 -->
 
+{% raw %}
 {% include youtubePlayer.html id=page.youtubeId %}
+{% endraw %}
 
 ## Embed Vimeo
 
@@ -506,7 +538,9 @@ Include this next line in your .md file for Vimeo videos, make sure to put your 
 Example:     vimeoID: 22439234
 -->
 
+{% raw %}
 {% include vimeoPlayer.html id=page.vimeoId %}
+{% endraw %}
 
 ## Embed Twitch
 
@@ -517,7 +551,9 @@ Example:     twitchId: GrotesqueArbitraryGullPupper
              twitchDomain: www.nathan-lam.com
 -->
 
+{% raw %}
 {% include twitchPlayer.html id=page.twitchId domain=page.twitchDomain %}
+{% endraw %}
 
 ## Embed Facebook
 
@@ -527,7 +563,9 @@ Include this next line in your .md file for Facebook videos, make sure to put yo
 Example:     facebookId: 1243061482783766 
 -->
 
+{% raw %}
 {% include facebookPlayer.html id=page.facebookId %}
+{% endraw %}
 
 ## Embed Streamable
 
@@ -537,7 +575,9 @@ Include this next line in your .md file for Streamable videos, make sure to put 
 Example:     streamableId: s9ijg 
 -->
 
+{% raw %}
 {% include streamablePlayer.html id=page.streamableId %}
+{% endraw %}
 
 ## Embed Google Drive
 
@@ -547,7 +587,9 @@ Include this next line in your .md file for Google Drive videos, make sure to pu
 Example:     driveId: 0B7L_dMcaZknxVTRndmdSQ0F5OFE/preview
 -->
 
+{% raw %}
 {% include googleDrivePlayer.html id=page.driveId %}
+{% endraw %}
 
 ## Embed 20Detik
 
@@ -557,7 +599,9 @@ Include this next line in your .md file for 20Detik videos, make sure to put you
 Example:     detikId: 190130051
 -->
 
+{% raw %}
 {% include 20detikPlayer.html id=page.detikId %}
+{% endraw %}
 
 ## Embed Dailymotion
 
@@ -567,7 +611,9 @@ Include this next line in your .md file for Dailymotion videos, make sure to put
 Example:     dailymotionId: x2btuie
 -->
 
+{5 raw %}
 {% include dailymotionPlayer.html id=page.dailymotionId %}
+{% endraw %}
 
 ## Embed Vidio
 
@@ -577,7 +623,9 @@ Include this next line in your .md file for Vidio videos, make sure to put your 
 Example:     vidioId: 1671743
 -->
 
+{% raw %}
 {% include vidioPlayer.html id=page.vidioId %}
+{% endraw %}
 
 ## Embed LINE Today
 
@@ -588,8 +636,10 @@ Example:     linetodayId: abcdefg
              countryId: hk
 -->
 
+{% raw %}
 {% include linetodayPlayer.html id=page.linetodayId country=page.countryId %}
-```
+{% endraw %}
+
 
 
 
