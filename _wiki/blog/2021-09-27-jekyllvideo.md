@@ -146,9 +146,11 @@ Embedding Twitch clips requires an additional "Domain" parameter. Create a file 
 
 Place this snippet inside your .md file where you want to embed your video:
 
+{% raw %}
 ```liquid
 {% include twitchPlayer.html id=page.twitchId domain=page.twitchDomain %}
 ```
+{% endraw %}
 
 On the top of your .md file, put the Twitch video ID and domain name. You could also put the ID of the video directly.
 
