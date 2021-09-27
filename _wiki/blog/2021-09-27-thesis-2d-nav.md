@@ -20,7 +20,7 @@ repos: aiegoo/thesis/tree/master/drone_2d_nav
 {:toc}
 
 {::nomarkdown}
-<a target="_blank" rel="noopener" href="https://github.com/{{page.repos}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i>view github</a>
+<a target="_blank" rel="noopener" href="https://github.com/{{page.repos}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i>&nbsp;view github</a>
 {:/}
 
 This repository contains all of the ROS packages.
