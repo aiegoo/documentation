@@ -13,12 +13,15 @@ toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
 latex: false
+repos: aiegoo/thesis/tree/master/drone_2nd_nav
 ---
 
 * TOC
 {:toc}
 
-[repository](https://github.com/aiegoo/thesis/tree/master/drone_2d_nav)
+{::nomarkdown}
+<a target="_blank" rel="noopener" href="https://github.com/{{page.repos}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i>view github</a>
+{:/}
 
 This repository contains all of the ROS packages.
 
