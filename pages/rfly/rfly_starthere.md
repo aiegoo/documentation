@@ -10,7 +10,7 @@ series: "RFLY series"
 weight: 1
 folder: rfly
 youtubeID: jBLaP-XwGE8
-driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
+driveID: 1zSw_xu2eSc5RsxGfsOQrA2Z7VuuRL-de/preview
 ---
 
 {% include custom/series_rfly_next.html %}
@@ -42,7 +42,7 @@ driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 
 {% include googleDrivePlayer.html id=page.driveID %}
 
-https://drive.google.com/file/d/1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly/preview
+https://drive.google.com/file/d/1zSw_xu2eSc5RsxGfsOQrA2Z7VuuRL-de/view?usp=sharing
 ### Project Goal
 
 |---
