@@ -13,7 +13,15 @@ excerpt_separator: <!--more-->
    {% if page.summary %}
     <div class="summary">{{page.summary}}</div>
    {% endif %}
+
+
+    {% if page.repos %}
+    <a target="_blank" rel="noopener" href="https://github.com/{{page.repos}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i>&nbsp;view github</a>
+    {% else %}
     <a target="_blank" rel="noopener" href="https://github.com/{{site.github_editme_path}}{{page.path}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    {% endif %}
+
+    
 
     <div class="post-list">
         {% for wiki in site.wiki reversed %}
