@@ -24,7 +24,7 @@ folder: mydoc
 
 ### 🍃 pixhawk development tools
 
-### 🌻 [pptx](https://github.com/aiegoo/rflysim/tree/master/PPT_EN)
+### 🌻 [pptx](https://github.com/aiegoo/documentation/tree/master/PPT_EN)
 
 ### Matlab + other tool boxes
 

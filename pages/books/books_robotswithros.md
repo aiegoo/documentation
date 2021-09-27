@@ -20,7 +20,7 @@ box_number: 4
 [rosorg](http://wiki.ros.org/indigo/Installation/Ubuntu)
 
 ## the book
-[doc](https://github.com/aiegoo/matlab/blob/edit/pdf/robotswithros.pdf)
+[doc](https://github.com/aiegoo/documentation/blob/edit/pdf/robotswithros.pdf)
 
 ## Fundamentals
 ### ROS graph

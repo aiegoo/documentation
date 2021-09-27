@@ -12,7 +12,7 @@ folder: books
 ---
 
 ## the book
-[pdf](https://github.com/aiegoo/matlab/blob/edit/pdf/githubtools.pdf)
+[pdf](https://github.com/aiegoo/documentation/blob/edit/pdf/githubtools.pdf)
 [code](https://github.com/aiegoo/building-tools-with-github.git)
 ![overview](https://user-images.githubusercontent.com/42961200/130544254-1678d397-ec3a-48a4-83dd-559c594cfd3a.png)
 ## Github API
