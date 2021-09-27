@@ -213,7 +213,7 @@ autopilot.
 The HIL simulation platform includes a real-time motion simulation software—CopterSim (see Fig. 3.2a) and a 3D visual display software—3DDisplay (see Fig. 3.2b). The simulation model of CopterSim is obtained by importing parameters from the Simulink-based simulation platform mentioned earlier. Both CopterSim and 3DDisplay must run on a computer with Windows OS (Win7 or higher, x64). They are connected with the Pixhawk autopilot through a USB cable, thereby establishing a closed-loop control system for HIL simulations.
 
 
-![](https://rflysim.com/en/_images/Quan-ch3-Fig3.2.jpg)
+![](https://rflysim.com/docs/en/images/Quan-ch3-Fig3.2.jpg)
 
     .. figure:: /images/Quan-ch3-Fig3.2.jpg
         :align: center
