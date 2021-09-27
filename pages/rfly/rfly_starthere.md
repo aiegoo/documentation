@@ -34,7 +34,8 @@ folder: rfly
   <source src="images/rflysim/rflysim_1-2.mp4" type='video/mp4'>
 </video></p>
 
-[video](images/rflysim/rflysim_1-2.mp4)
+[video](images/rflysim/rflysim_1-2.mp4) \n
+[![youtube](https://img.youtube.com/v1/image0.jpg)](https://youtu.be/jBLaP-XwGE8)
 
 ### Project Goal
 
