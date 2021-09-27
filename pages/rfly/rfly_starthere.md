@@ -36,6 +36,16 @@ driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 
 ## lessons
 
+### Course design
+#### basic experiment
+- open the given code example. Then, read and run its source code directly to observe and record the results.
+#### analysis experiment
+- Modify the given code example. Then, run the modified example program to collect and analyze the data
+  
+#### Design experiment
+Based on the previous two experiments, complete the given design task independently
+### lesson videos
+
 {% include youtubePlayer.html id=page.youtubeID %}
 
 |--
