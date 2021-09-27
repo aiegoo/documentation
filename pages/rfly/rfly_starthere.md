@@ -36,6 +36,7 @@ driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
   <source src="images/rflysim/rflysim_1-2.mp4" type='video/mp4'>
 </video></p>
 
+<div markdown="1">
 |---
 | lessons | summary
 | :-: |
@@ -44,7 +45,7 @@ driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 | {% include googleDrivePlayer.html id=page.driveID %} | lesson 3, 4: install
 |---
 |
-
+</div>
 
 {% include youtubePlayer.html id=page.youtubeID %}
 {% include googleDrivePlayer.html id=page.driveID %}
