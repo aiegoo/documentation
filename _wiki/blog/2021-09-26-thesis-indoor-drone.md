@@ -13,6 +13,7 @@ toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
 latex: false
+repos: aiegoo/thesis
 ---
 
 * TOC
