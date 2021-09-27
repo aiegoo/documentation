@@ -14,6 +14,7 @@ public: true
 parent: [[Wiki-Setting-Category]] 
 latex: false
 repos: aiegoo/thesis
+youtubeID: p3SmaHOb0Bo
 ---
 
 * TOC
@@ -40,6 +41,8 @@ repos: aiegoo/thesis
 
   <script src="node_modules/video.js/dist/video.min.js"></script>
   <script src="dist/Youtube.min.js"></script>
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 This repository contains all of the ROS packages.
 
