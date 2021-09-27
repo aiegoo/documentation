@@ -37,7 +37,21 @@ driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 ## lessons
 
 {% include youtubePlayer.html id=page.youtubeID %}
+
+|--
+| pdf | outline | summary
+| | :- | :-
+| [lesson1](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_01_Introduction.pdf) | rflysim, coptersim and unreal plugins  | course design
+| [lesson2](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_02_Experimental_Platform_Configuration.pdf) | sw install / hw configuration | platform config.
+
 {% include googleDrivePlayer.html id=page.driveID %}
+
+|--
+| pdf | outline | summary
+| | :- | :-
+| [lesson3](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_03_Experimental_Platform_Usage.pdf) | ex pf, controller design/sim platform, psp toolbox, hardware system, HIL  | Plaform usage
+| [lesson4](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_04_Experimental_Process.pdf) | ex process, LED control, Atti control | ex process.
+
 {% include youtubePlayer.html id=page.youtubeID2 %}
 
 ### Project Goal
