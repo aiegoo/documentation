@@ -59,7 +59,7 @@ driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 
 ### 🍃 pixhawk development tools
 - [flightGear](http://www.flightgear.org/download)
-- [FG_manual](https://github.com/aiegoo/documentation/edit/blob/pdf/gcs/getstart.pdf#page=59)
+- [FG_manual](https://github.com/aiegoo/documentation/edit/blob/pdf/gcs/rfly/getstart.pdf#page=59)
 ### 🌻 [pptx](https://github.com/aiegoo/rflysim/tree/master/PPT_EN)
 
 ### Matlab + other tool boxes
