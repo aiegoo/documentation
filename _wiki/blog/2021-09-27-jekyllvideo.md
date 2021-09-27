@@ -21,6 +21,14 @@ latex: false
 ## jekyllvideo readme
 <script src="https://gist.github.com/aiegoo/e9542db822bcf7b8921e54d772ec8741.js"></script>
 
+### minor issues
+- when embedding a link, check for the right url as embed, sharing, previewing and other options might have different pointer to the video clip.
+  - in youtube, play id 
+  - googledrive, look for the embed menu and get the src from the iframe tags
+- etc.
+
+### example of this issue can be found:
+[rlfy_shtarthere]({{ site.baseurl}}/rfly_starthere.html#lessons)
 
 ## videojs
 
