@@ -201,7 +201,7 @@ Pixhawk Support Package (PSP) toolbox can be used to generate C/C++ code
 of the control algorithms, which is then compiled and uploaded to a Pixhawk
 autopilot.
 
-![](https://rflysim.com/en/_images/Quan-ch3-Fig3.1.jpg)
+![](https://rflysim.com/docs/en/images/Quan-ch3-Fig3.1.jpg)
 
     .. figure:: /images/Quan-ch3-Fig3.1.jpg
         :align: center
@@ -255,7 +255,7 @@ is chosen as an example to study its hardware system design, such as
 airframe design, propulsion system selection. Then, the control algorithms are
 designed for the resulting multicopter hardware system.
 
-![](https://rflysim.com/en/_images/Quan-ch3-Fig3.4.jpg)
+![](https://rflysim.com/docs/en/images/Quan-ch3-Fig3.4.jpg)
 
 
     .. figure:: /images/Quan-ch3-Fig3.4.jpg
@@ -400,13 +400,13 @@ Fig. 3.11 Simulink “Run” button for different MATLAB versions
 
 (3). Then, as shown in Fig. 3.12, the multicopter takes off vertically from the ground and starts flying forward at a certain pitch angle after 5 s.
 
-![](https://rflysim.com/en/_images/Quan-ch3-Fig3.12.jpg)
+![](https://rflysim.com/docs/en/images/Quan-ch3-Fig3.12.jpg)
 
 <hr>
 
 ## 3. PSP Toolbox
 
-![](https://rflysim.com/en/_images/Quan-ch3-Fig3.13.jpg)
+![](https://rflysim.com/docs/en/images/Quan-ch3-Fig3.13.jpg)
 ../_images/Quan-ch3-Fig3.13.jpg
 Fig. 3.13 Relationship between Simulink and Pixhawk autopilot code generation
 
@@ -1075,7 +1075,7 @@ Fig. 3.70 Controller connected with multicopter model
 Click the FlightGear-F450 shortcut on the Windows desktop to open FlightGear, and click on the “Start Simulation” button on the Simulink UI to start the simulation. Then, it can be observed in FlightGear (see Fig. 3.71) that a quadcopter climbs up for some time and then rolls left and flies leftward, indicating that the controller has achieved the expected requirements.
 
 
-![](https://rflysim.com/en/_images/Quan-ch4-Fig4.19.jpg)
+![](https://rflysim.com/docs/en/images/Quan-ch4-Fig4.19.jpg)
 
 ../_images/Quan-ch4-Fig4.19.jpg
 Fig. 3.71 A quadcopter in FlightGear
