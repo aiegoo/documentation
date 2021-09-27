@@ -9,6 +9,7 @@ permalink: rfly_starthere.html
 series: "RFLY series"
 weight: 1
 folder: rfly
+youtubeID: jBLaP-XwGE8
 ---
 
 {% include custom/series_rfly_next.html %}
@@ -30,12 +31,14 @@ folder: rfly
 
 
 <p><video id="scenario-1" class="video-js vjs-default-skin vjs-big-play-centered" controls
- preload="auto" width="467" height="350" data-setup='{}'>
+ preload="auto" wideight="350" data-setup='{}'>
   <source src="images/rflysim/rflysim_1-2.mp4" type='video/mp4'>
 </video></p>
 
 [video](images/rflysim/rflysim_1-2.mp4) \n
 [![youtube](https://img.youtube.com/v1/image0.jpg)](https://youtu.be/jBLaP-XwGE8)
+
+{% include youtubePlayer.html %}
 
 ### Project Goal
 
