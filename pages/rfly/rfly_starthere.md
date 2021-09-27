@@ -31,19 +31,8 @@ driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 |
 
 
-<p><video id="scenario-1" class="video-js vjs-default-skin vjs-big-play-centered" controls
- preload="auto" wideight="350" data-setup='{}'>
-  <source src="images/rflysim/rflysim_1-2.mp4" type='video/mp4'>
-</video></p>
+[video](images/rflysim/rflysim_1-2.mp4)
 
-|---
-| lessons | summary
-| :-: |
-| [video](images/rflysim/rflysim_1-2.mp4)
-|{% include youtubePlayer.html id=page.youtubeID %} | lesson 1, 2
-|{% include googleDrivePlayer.html id=page.driveID %} | lesson 3, 4: install
-|---
-|
 
 
 {% include youtubePlayer.html id=page.youtubeID %}
