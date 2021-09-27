@@ -9,7 +9,7 @@ permalink: rfly_starthere.html
 series: "RFLY series"
 weight: 1
 folder: rfly
-youtubeID: iKaubsS8OMh_mX9Y
+youtubeID: jBLaP-XwGE8
 ---
 
 {% include custom/series_rfly_next.html %}
@@ -38,7 +38,7 @@ youtubeID: iKaubsS8OMh_mX9Y
 [video](images/rflysim/rflysim_1-2.mp4) \n
 [![youtube](https://img.youtube.com/v1/image0.jpg)](https://youtu.be/jBLaP-XwGE8)
 
-{% include youtubePlayer.html %}
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ### Project Goal
 
