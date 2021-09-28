@@ -86,6 +86,10 @@ Based on the previous two experiments, complete the given design task independen
 - [flightGear](http://www.flightgear.org/download)
 - [FG_manual](https://github.com/aiegoo/documentation/edit/blob/pdf/gcs/rfly_code/getstart.pdf#page=59)
 ### 🌻 [pptx](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/sourcecode/)
+### companion books
+[multicopter_introduciton](pdf/gcs/rfly_code/multicopter_introduciton.pdf)
+
+[multicopter_practice](pdf/gcs/rfly_code/multicopter_practice.pdf)
 
 ### Matlab + other tool boxes
 
