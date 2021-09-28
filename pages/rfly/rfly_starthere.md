@@ -171,15 +171,13 @@ SystemNewPath =
 | Mine needs to set the magnetic compass calibration
 
 |---
-| Default aligned | Left aligned | Center aligned | Right aligned
-|-|:-|:-:|-:
-| ![image](https://user-images.githubusercontent.com/42961200/131267683-a84b51b5-8307-46ba-bb64-53069657b436.png) | ![image](https://user-images.githubusercontent.com/42961200/131267913-5a739b52-e028-4afb-b61f-1a8ee0bc1bc0.png) | ![image](https://user-images.githubusercontent.com/42961200/131268028-0e03434e-030b-40c4-b482-c537a9b200f6.png) | fourth cell
-| ![image](https://user-images.githubusercontent.com/42961200/131267775-405262b9-e55a-4488-b3d3-0a0702da88c6.png) |![image](https://user-images.githubusercontent.com/42961200/131267927-6b981dd1-ee30-439b-879b-8eccd519b237.png) | **strong** | baz
-| ![image](https://user-images.githubusercontent.com/42961200/131267804-3ef78db1-fff3-4355-b706-693b57046031.png) |![image](https://user-images.githubusercontent.com/42961200/131267969-0a38bed1-fdbf-4220-8df1-781c7f5c8c1a.png) | baz | bar
-| ![image](https://user-images.githubusercontent.com/42961200/131267822-f504f24a-06f9-4f07-bfaf-5b5a1f1a960c.png) | ![image](https://user-images.githubusercontent.com/42961200/131267997-a37f1c47-465a-4c15-8e64-e5f6d93adef9.png) |  | 
-|---
-| Second body
-| 2 line
+| |
+|-|:-|
+| ![image](https://user-images.githubusercontent.com/42961200/131267683-a84b51b5-8307-46ba-bb64-53069657b436.png) | ![image](https://user-images.githubusercontent.com/42961200/131267913-5a739b52-e028-4afb-b61f-1a8ee0bc1bc0.png) 
+| ![image](https://user-images.githubusercontent.com/42961200/131268028-0e03434e-030b-40c4-b482-c537a9b200f6.png) | ![image](https://user-images.githubusercontent.com/42961200/131267775-405262b9-e55a-4488-b3d3-0a0702da88c6.png) 
+|![image](https://user-images.githubusercontent.com/42961200/131267927-6b981dd1-ee30-439b-879b-8eccd519b237.png) | ![image](https://user-images.githubusercontent.com/42961200/131267804-3ef78db1-fff3-4355-b706-693b57046031.png) 
+|![image](https://user-images.githubusercontent.com/42961200/131267969-0a38bed1-fdbf-4220-8df1-781c7f5c8c1a.png) | ![image](https://user-images.githubusercontent.com/42961200/131267822-f504f24a-06f9-4f07-bfaf-5b5a1f1a960c.png) 
+| ![image](https://user-images.githubusercontent.com/42961200/131267997-a37f1c47-465a-4c15-8e64-e5f6d93adef9.png) 
 |===
 | Footer row
 
