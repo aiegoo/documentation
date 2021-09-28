@@ -61,6 +61,17 @@ Based on the previous two experiments, complete the given design task independen
 | | :- | :-
 | [lesson3](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_03_Experimental_Platform_Usage.pdf) | ex pf, controller design/sim platform, psp toolbox, hardware system, HIL  | Plaform usage
 | [lesson4](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_04_Experimental_Process.pdf) | ex process, LED control, Atti control | ex process.
+|[lesson5](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf) | |
+|[lesson5](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf) | |
+|[lesson5](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf) | |
+|[lesson6](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_06_Dynamic_Modeling_Expeirment.pdf) | | dynamic modeling
+|[lesson7](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_07_Sensor_Calibration_Experiment.pdf) | | sensor calibration
+|[lesson8](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_08_State_Estimation_and_Filter_Design_Experiment.pdf) | |state est./filter
+|[lesson9](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_09_Attitude_Controller_Design_Experiment.pdf) | |atti controller
+|[lesson10](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_10_Set-point_Controller_Design_Experiment.pdf) | |set-point controller
+|[lesson11](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_11_Semi-autonomous_Control_Mode_Design_Experiment.pdf) | |semi-auto control
+|[lesson12](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf) | | failsafe-logic
+|[lesson13](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_13_RflySim_Platform_Advanced_Features.pdf) | |advanced feature
 
 {% include youtubePlayer.html id=page.youtubeID2 %}
 
