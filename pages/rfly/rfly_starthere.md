@@ -49,21 +49,19 @@ Based on the previous two experiments, complete the given design task independen
 {% include youtubePlayer.html id=page.youtubeID %}
 
 |--
-| pdf | outline | summary
+| pdf | outline | keyword
 | | :- | :-
 | [lesson1](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_01_Introduction.pdf) | rflysim, coptersim and unreal plugins  | course design
 | [lesson2](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_02_Experimental_Platform_Configuration.pdf) | sw install / hw configuration | platform config.
 
 {% include googleDrivePlayer.html id=page.driveID %}
-
+{% include youtubePlayer.html id=page.youtubeID2 %}
 |--
 | pdf | outline | summary
 | | :- | :-
 | [lesson3](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_03_Experimental_Platform_Usage.pdf) | ex pf, controller design/sim platform, psp toolbox, hardware system, HIL  | Plaform usage
 | [lesson4](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_04_Experimental_Process.pdf) | ex process, LED control, Atti control | ex process.
-|[lesson5](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf) | |
-|[lesson5](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf) | |
-|[lesson5](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf) | |
+|[lesson5](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_05_Propulsion_System_Design_Experiment.pdf) | | propulsion system
 |[lesson6](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_06_Dynamic_Modeling_Expeirment.pdf) | | dynamic modeling
 |[lesson7](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_07_Sensor_Calibration_Experiment.pdf) | | sensor calibration
 |[lesson8](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_08_State_Estimation_and_Filter_Design_Experiment.pdf) | |state est./filter
@@ -73,7 +71,7 @@ Based on the previous two experiments, complete the given design task independen
 |[lesson12](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf) | | failsafe-logic
 |[lesson13](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_13_RflySim_Platform_Advanced_Features.pdf) | |advanced feature
 
-{% include youtubePlayer.html id=page.youtubeID2 %}
+
 
 ### Project Goal
 
