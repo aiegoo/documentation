@@ -421,7 +421,7 @@ Fig. 3.10 Initialization interface for the “Init_control.m” script
 
 All the parameters required by the “Multicopter Model” are stored in the script “e01.SoftwareSimExpsiconInit.m”. This script will be automatically called when the second line (see Table 3.1) of the “Init_control.m” script is executed. The key model parameters are listed in Tables 3.2, 3.3, 3.4, 3.5, and 3.6. By modifying the above model parameters, multicopters with different sizes and configurations (see Table 3.5) can be obtained, and flight simulations under different environments (see Table 3.6) can be performed.
 
-### 2.3. FlightGear Interface [pdf]({{site.baseurl}}tree/edit/pdf/gcs/rfly_code/Lesson_03_Experimental_Platform_Usage.pdf#page=11)
+### 2.3. FlightGear Interface [pdf](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/Lesson_03_Experimental_Platform_Usage.pdf#page=11)
 As shown in Fig. 3.7, the “FlightGear Interface” subsystem has three input ports representing the multicopter position, Euler angles, and motor PWM signals, respectively. This subsystem sends multicopter flight state information to FlightGear to observe the flight attitude and trajectory of the multicopter in a 3D scene. The steps to follow are described next.
 
 (1). Double-click the FlightGear-F450 shortcut on the desktop to open FlightGear;
