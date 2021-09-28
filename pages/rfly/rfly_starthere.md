@@ -216,9 +216,9 @@ It  is  a  real-time  3D  visual  display  software.  It receives the flight dat
 ------------------------
 
 |---
-| | |[multicopter_introduciton](pdf/gcs/rfly_code/multicopter_introduciton.pdf) |[multicopter_practice](pdf/gcs/rfly_code/multicopter_practice.pdf) |
 | | | | |
-| ![image](https://user-images.githubusercontent.com/42961200/135004940-4bb5d314-f19f-4ae8-9ae2-5f9245a85e8d.png) | ![image](https://user-images.githubusercontent.com/42961200/135004920-492e1e9a-1980-47c8-a153-358b7d7a004d.png) | ![image](https://user-images.githubusercontent.com/42961200/135004889-63862ef6-81db-492f-904c-e23c90b9401b.png) |![image](https://user-images.githubusercontent.com/42961200/135004854-0cd076eb-43b6-40e9-bba9-fcc608ed8df8.png) | ![image](https://user-images.githubusercontent.com/42961200/135004818-23e168ab-d965-4f64-97b2-64fd7c32ccb3.png)
+| | | | |
+| ![image](https://user-images.githubusercontent.com/42961200/135004940-4bb5d314-f19f-4ae8-9ae2-5f9245a85e8d.png) | ![image](https://user-images.githubusercontent.com/42961200/135004920-492e1e9a-1980-47c8-a153-358b7d7a004d.png) | ![image](https://user-images.githubusercontent.com/42961200/135004889-63862ef6-81db-492f-904c-e23c90b9401b.png) [multicopter_introduciton](pdf/gcs/rfly_code/multicopter_introduciton.pdf) [multicopter_practice](pdf/gcs/rfly_code/multicopter_practice.pdf) |![image](https://user-images.githubusercontent.com/42961200/135004854-0cd076eb-43b6-40e9-bba9-fcc608ed8df8.png) | ![image](https://user-images.githubusercontent.com/42961200/135004818-23e168ab-d965-4f64-97b2-64fd7c32ccb3.png)
 
 
 The experimental platform is a rapid development platform for multicopter control
