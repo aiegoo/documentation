@@ -214,7 +214,8 @@ It  is  a  real-time  3D  visual  display  software.  It receives the flight dat
 |---
 | | | | |
 | | | | |
-| . | . | . | . | .
+| ![image](https://user-images.githubusercontent.com/42961200/135004940-4bb5d314-f19f-4ae8-9ae2-5f9245a85e8d.png) | ![image](https://user-images.githubusercontent.com/42961200/135004920-492e1e9a-1980-47c8-a153-358b7d7a004d.png) | ![image](https://user-images.githubusercontent.com/42961200/135004889-63862ef6-81db-492f-904c-e23c90b9401b.png)
+ |![image](https://user-images.githubusercontent.com/42961200/135004854-0cd076eb-43b6-40e9-bba9-fcc608ed8df8.png) | ![image](https://user-images.githubusercontent.com/42961200/135004818-23e168ab-d965-4f64-97b2-64fd7c32ccb3.png)
 
 The experimental platform is a rapid development platform for multicopter control
 algorithm design based on MATLAB/Simulink and Pixhawk. It is mainly composed
@@ -242,6 +243,8 @@ autopilot.
         Fig. 3.1 Simulink-based controller design and simulation platform
 
 (2). HIL Simulation Platform
+
+![image](https://user-images.githubusercontent.com/42961200/135005022-6f429c8e-f61f-4b79-8e97-e5e766348da7.png)
 
 The HIL simulation platform includes a real-time motion simulation software—CopterSim (see Fig. 3.2a) and a 3D visual display software—3DDisplay (see Fig. 3.2b). The simulation model of CopterSim is obtained by importing parameters from the Simulink-based simulation platform mentioned earlier. Both CopterSim and 3DDisplay must run on a computer with Windows OS (Win7 or higher, x64). They are connected with the Pixhawk autopilot through a USB cable, thereby establishing a closed-loop control system for HIL simulations.
 
@@ -320,7 +323,7 @@ designed controllers can be evaluated through experimental tests.
 .. rubric:: References
 .. [#f2] corresponding to the circuit diagram version Pixhawk 2.4.6; for more details, please visit this website: https://docs.px4.io/master/en/flight_controller/pixhawk.html.
 .. [#f3] In addition to supporting the PX4 autopilot software used in this book, the Pixhawk series autopilots also support Ardupilot open-source autopilot software; see: http://ardupilot.org/dev/index.html.
-.. [#f8] 짤 Publishing House of Electronics Industry 2020 Q. Quan et al., Multicopter Design and Control Practice, https://doi.org/10.1007/978-981-15-3138-5_3
+.. [#f8] Publishing House of Electronics Industry 2020 Q. Quan et al., Multicopter Design and Control Practice, https://doi.org/10.1007/978-981-15-3138-5_3
 
 
 
