@@ -201,17 +201,25 @@ It is a real-time motion simulation software developed for the Pixhawk/PX4 autop
 #### (8) 3DDisplay — 3D Visual Display Software
 It  is  a  real-time  3D  visual  display  software.  It receives the flight data of CopterSim through UDP to display the attitude and position of a multicopter in  real-time.  CopterSim  and  3DDisplay  together constitute  an  integrated  HIL  simulation  platform. The distributed independent operation mechanism of   CopterSim   and   3DDisplay   provides   future compatibility for swarm simulations.
 
-#### (9) Pixhawk Support Package (PSP) Toolbox3 : it is a Simulink toolbox officially released by Mathworks for controller design, code generation, and firmware upload of the Pixhawk autopilot. We have made some updates and optimizations based on the official PSP toolbox to ensure compatibility with the latest Pixhawk and MATLAB versions.
+#### (9) Pixhawk Support Package (PSP) Toolbox3 :
+ it is a Simulink toolbox officially released by Mathworks for controller design, code generation, and firmware upload of the Pixhawk autopilot. We have made some updates and optimizations based on the official PSP toolbox to ensure compatibility with the latest Pixhawk and MATLAB versions.
 
+
+## Lesson 3
 ### Brief Introduction to Experimental Platforms
 
 ### - Platform Composition
 ------------------------
 
+|---
+| | | | |
+| | | | |
+| . | . | . | . | .
+
 The experimental platform is a rapid development platform for multicopter control
 algorithm design based on MATLAB/Simulink and Pixhawk. It is mainly composed
 of the following five parts: the Simulink-based Controller Design and Simulation
-Platform, the HIL Simulation Platform, the `Pixhawk Autopilot System <https://docs.px4.io/master/en/flight_controller/pixhawk_series.html>`_ ,
+Platform, the HIL Simulation Platform, the `Pixhawk Autopilot System <https://docs.px4.io/master/en/flight_controller/pixhawk_series.html>`_ , [pixhawk_series.md]({{site.baseurl}}pixhawk_series.html)
 the Multicopter Hardware System, and the Instructional Package.
 
 (1). Simulink-based Controller Design and Simulation Platform
