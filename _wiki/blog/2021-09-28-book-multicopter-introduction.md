@@ -1,5 +1,5 @@
 ---
-name: drone ros package 2d nav
+name: rflysim book
 layout: post
 permalink: 2021-09-28-book-multicopter-introduction.html
 sidebar: other_sidebar
