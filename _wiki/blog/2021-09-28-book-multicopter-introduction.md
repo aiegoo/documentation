@@ -13,7 +13,7 @@ toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
 latex: false
-repos: aiegoo/thesis/tree/master/drone_2d_nav
+repos: aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/multicopter_introduction.pdf
 ---
 
 * TOC
