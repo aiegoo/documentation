@@ -19,7 +19,7 @@ map_name: rfly
 box_number: 4
 folder: rflysim
 next_post: rflysim-lesson8.html
-previous_post: rflysim-lesson16.html
+previous_post: rflysim-lesson6.html
 ---
 
 * TOC
