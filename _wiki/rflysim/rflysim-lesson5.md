@@ -21,8 +21,8 @@ folder: rflysim
 youtubeID: jBLaP-XwGE8
 youtubeID2: IXglpmzFfBA
 driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
-next: rflysim-lesson6.html
-previous: rflysim-lesson14.html
+next_post: rflysim-lesson6.html
+previous_post: rflysim-lesson14.html
 ---
 
 * TOC
