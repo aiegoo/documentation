@@ -45,28 +45,25 @@ layout: default
 </article>
 
 <div class="post-nav next-previous">
-  <p>
-    {% if page.previous %}
-    {% if page.previous.url %}
-    {% if page.previous.subtitle %}
-    <a href="{{page.previous.url}}">&#8672;&nbsp;{{page.previous.name}}</a>
+    {% if post.previous %}
+    {% if post.previous.url %}
+    {% if post.previous.name %}
+    <a href="{{post.previous.url}}"><span class="iconify" data-icon="mdi:chevron-double-right" data-rotate="180deg" style="font-size: 36px;"></span>&nbsp;{{post.previous.name}}</a>
     {% else %}
-    <a href="{{page.previous.url}}">&#8672;&nbsp;{{page.previous.subtitle}}</a>
+    <a href="{{post.previous.url}}" class="wiki-previous">&#8672;&nbsp;{{post.previous.subtitle}}</a>
     {% endif %}
     {% endif %}
     {% endif %}
-  </p>
-  <p>
-    {% if page.next %}
-    {% if page.next.url %}
-    {% if page.next.subtitle %}
-    <a href="{{page.next.url}}">{{page.next.name}}&nbsp;&#8674;</a>
+  
+    {% if post.next %}
+    {% if post.next.url %}
+    {% if post.next.name %}
+    <a href="{{post.next.url}} class="wiki-next">{{post.next.name}}&nbsp;<span class="iconify" data-icon="mdi:chevron-double-right" style="font-size: 36px;"></span></a>
     {% else %}
-    <a href="{{page.next.url}}">&#8672;&nbsp;{{page.next.subtitle}}</a>
+    <a href="{{post.next.url}}">&#8672;&nbsp;{{post.next.subtitle}}</a>
     {% endif %}
     {% endif %}
     {% endif %}
-  </p>
 </div>
 
 {% include commento.html %}
