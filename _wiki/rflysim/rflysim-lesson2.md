@@ -52,7 +52,14 @@ Based on the previous two experiments, complete the given design task independen
 | [lesson2](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_02_Experimental_Platform_Configuration.pdf) | sw install / hw configuration | platform config.
 
 - slide 36/61
+![install_complete](https://user-images.githubusercontent.com/42961200/135217166-7fb90173-dede-4d0f-888c-4cfb1c996179.png)
 
+> Check the project Explorer window for PX4 source code, to understand the architecture and implementation principles of PX4 alogrithms.
+
+- slide 37/61
+c:\PX4PSP\Firmware\build\px4fmu-v3_default\px4fmu-v3_default.px4 for pixhawk1 (2MB flash)
+
+{% include tony.html content="used    to    compile    the    source    code    to    the    firmware    file    “C:\PX4PSP\Firmware\build\px4fmu- v3_default\px4fmu-v3_default.px4” for Pixhawk 1 (2MB flash). Because the PSP toolbox will automaically call this compiling command after the code is generated, the readers do not need to know how to use it." %}
 Software Package Installation 
 
 {% include links.html %}
