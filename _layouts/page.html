@@ -44,7 +44,6 @@ layout: default
    {{content}}
 
 <div class="post-nav next-previous">
-  <p>
     {% if page.previous %}
     {% if page.previous.url %}
     {% if page.previous.name %}
@@ -53,9 +52,8 @@ layout: default
     <a href="{{page.previous.url}}" class="wiki-previous">&#8672;&nbsp;{{page.previous.subtitle}}</a>
     {% endif %}
     {% endif %}
-{% endif %}
-  </p>
-  <p>
+    {% endif %}
+  
     {% if page.next %}
     {% if page.next.url %}
     {% if page.next.name %}
@@ -65,7 +63,6 @@ layout: default
     {% endif %}
     {% endif %}
     {% endif %}
-  </p>
 </div>
 
     <div class="tags">
