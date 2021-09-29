@@ -63,4 +63,25 @@ c:\PX4PSP\Firmware\build\px4fmu-v3_default\px4fmu-v3_default.px4 for pixhawk1 (2
 
 Software Package Installation 
 
+Hardware Installation
+
+![fc_receiver_wiring](https://user-images.githubusercontent.com/42961200/135223146-7edad638-b3e4-4ad4-84e1-c5efca93e4d4.png)
+
+![rc_battery](https://user-images.githubusercontent.com/42961200/135223362-36a034d4-7e5c-4071-98d3-baf8a7bc66bd.png)
+
+![overall_setup](https://user-images.githubusercontent.com/42961200/135223631-8d63cfcf-292c-4d03-b1fa-a62ba614bdb1.png)
+
+![QGC](https://user-images.githubusercontent.com/42961200/135223902-d3129deb-51db-4b1e-90f1-25ea0d05846d.png)
+
+![rc_configuration](https://user-images.githubusercontent.com/42961200/135224149-2118207c-55af-4ce8-b0d5-143c8b2a9e8d.png)
+
+![multicopter_setting](https://user-images.githubusercontent.com/42961200/135224285-e9c8583f-4fc1-445d-aadb-878d528632d7.png)
+
+![throttle_channel_reversing](https://user-images.githubusercontent.com/42961200/135224415-6cb2f562-42f7-42ad-92d6-a28f1293b793.png)
+
+![ch5_6_modeswitching](https://user-images.githubusercontent.com/42961200/135224636-0672d4ce-88ad-4733-8298-34b36ba926fc.png)
+
+![channel_confirmation](https://user-images.githubusercontent.com/42961200/135224973-0eb638c8-e7bd-454c-97a1-211c5e7254cc.png)
+
+
 {% include links.html %}
