@@ -1,7 +1,7 @@
 ---
 name: lesson 1
 layout: page
-permalink: rflysim-lesson-1.html
+permalink: rflysim-lesson1.html
 sidebar: other_sidebar
 collection: wiki
 summary: "rflysim course design"

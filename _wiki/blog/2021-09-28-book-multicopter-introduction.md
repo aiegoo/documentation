@@ -5,7 +5,7 @@ permalink: 2021-09-28-book-multicopter-introduction.html
 sidebar: other_sidebar
 collection: wiki
 summary: "companion book for rflysim course"
-tags: [wiki, getting_started]
+tags: [wiki, getting_started, rflysim]
 excerpt_separator: <!--more-->
 date: 2021-09-28 12:43:03 +0900
 updated: 2021-09-28 12:52 PM
