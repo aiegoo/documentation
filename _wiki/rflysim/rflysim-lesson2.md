@@ -59,7 +59,8 @@ Based on the previous two experiments, complete the given design task independen
 - slide 37/61
 c:\PX4PSP\Firmware\build\px4fmu-v3_default\px4fmu-v3_default.px4 for pixhawk1 (2MB flash)
 
-{% include tony.html content="used    to    compile    the    source    code    to    the    firmware    file    “C:\PX4PSP\Firmware\build\px4fmu- v3_default\px4fmu-v3_default.px4” for Pixhawk 1 (2MB flash). Because the PSP toolbox will automaically call this compiling command after the code is generated, the readers do not need to know how to use it." %}
+{% include tony.html content="used    to    compile    the    source    code    to    the    firmware    file    “C:\PX4PSP\Firmware\build\px4fmu- v3_default\px4fmu-v3_default.px4” for Pixhawk 1 (2MB flash). Because the PSP toolbox will automaically call this compiling command after the code is generated, the readers do not need to know how to use it.-- what does this mean? How to create and use this flash card?" %}
+
 Software Package Installation 
 
 {% include links.html %}
