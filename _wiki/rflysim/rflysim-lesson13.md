@@ -1,7 +1,7 @@
 ---
 name: lesson 13
 layout: page
-permalink: 2021-09-28-rflysim-lesson13.html
+permalink: rflysim-lesson13.html
 sidebar: other_sidebar
 collection: wiki
 summary: "rflysim course Advanced_Features"
