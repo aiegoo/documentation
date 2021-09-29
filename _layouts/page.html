@@ -45,7 +45,7 @@ layout: default
 
 {% for page in site.data.tags[rflysim] %}
 <div class="post-nav next-previous">
-    {% if page.data.previous %}
+    {% if page.previous %}
     {% if page.previous.url %}
     {% if page.previous.name %}
     <a href="{{page.previous.url}}" class="wiki-previous"><span class="iconify" data-icon="mdi:chevron-double-right" data-rotate="180deg" style="font-size: 36px;"></span>&nbsp;{{page.previous.name}}</a>
@@ -55,7 +55,7 @@ layout: default
     {% endif %}
     {% endif %}
   
-    {% if page.data.next %}
+    {% if page.next %}
     {% if page.next.url %}
     {% if page.next.name %}
     <a href="{{page.next.url}}" class="wiki-next">{{page.next.name}}&nbsp;<span class="iconify" data-icon="mdi:chevron-double-right" style="font-size: 36px;"></span></a>
