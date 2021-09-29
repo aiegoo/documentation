@@ -1,7 +1,7 @@
 ---
 name: lesson1
 layout: post
-permalink: 2021-09-28-rflysim-lesson1.html
+permalink: 2021-09-29-rflysim-lesson1.html
 sidebar: other_sidebar
 collection: wiki
 summary: "rflysim course lesson 1"
