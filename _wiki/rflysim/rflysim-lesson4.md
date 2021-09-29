@@ -1,6 +1,6 @@
 ---
 name: lesson 4
-layout: post
+layout: page
 permalink: rflysim-lesson4.html
 sidebar: other_sidebar
 collection: wiki
