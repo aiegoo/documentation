@@ -55,14 +55,14 @@ Based on the previous two experiments, complete the given design task independen
 ### Software Package Installation 
 
 - slide 36/61
-![install_complete](https://user-images.githubusercontent.com/42961200/135217166-7fb90173-dede-4d0f-888c-4cfb1c996179.png)
+![install_completed](https://user-images.githubusercontent.com/42961200/135217166-7fb90173-dede-4d0f-888c-4cfb1c996179.png)
 
 > Check the project Explorer window for PX4 source code, to understand the architecture and implementation principles of PX4 alogrithms.
 
 - slide 37/61
 c:\PX4PSP\Firmware\build\px4fmu-v3_default\px4fmu-v3_default.px4 for pixhawk1 (2MB flash)
 
-{% include tony.html content="used    to    compile    the    source    code    to    the    firmware    file    “C:\PX4PSP\Firmware\build\px4fmu- v3_default\px4fmu-v3_default.px4” for Pixhawk 1 (2MB flash). Because the PSP toolbox will automaically call this compiling command after the code is generated, the readers do not need to know how to use it.-- what does this mean? How to create and use this flash card?" %}
+{% include tony.html content="used    to    compile    the    source    code    to    the    firmware    file    “C:\PX4PSP\Firmware\build\px4fmu- v3_default\px4fmu-v3_default.px4” for Pixhawk 1 (2MB flash). Because the PSP toolbox will automaically call this compiling command after the code is generated, the readers do not need to know how to use it. -- what does this mean? How to create and use this flash card?" %}
 
 ### Hardware Installation
 #### FC RC airframe configuration 
@@ -71,7 +71,7 @@ c:\PX4PSP\Firmware\build\px4fmu-v3_default\px4fmu-v3_default.px4 for pixhawk1 (2
 - Custom airframe
 
 |---
-| |
+| :-: |
 | 1 |![fc_receiver_wiring](https://user-images.githubusercontent.com/42961200/135223146-7edad638-b3e4-4ad4-84e1-c5efca93e4d4.png)
 | 2|![rc_battery](https://user-images.githubusercontent.com/42961200/135223362-36a034d4-7e5c-4071-98d3-baf8a7bc66bd.png)
 | 3 |![overall_setup](https://user-images.githubusercontent.com/42961200/135223631-8d63cfcf-292c-4d03-b1fa-a62ba614bdb1.png)
@@ -82,15 +82,15 @@ c:\PX4PSP\Firmware\build\px4fmu-v3_default\px4fmu-v3_default.px4 for pixhawk1 (2
 | 8 |![ch5_6_modeswitching](https://user-images.githubusercontent.com/42961200/135224636-0672d4ce-88ad-4733-8298-34b36ba926fc.png)
 | 9 |![channel_confirmation](https://user-images.githubusercontent.com/42961200/135224973-0eb638c8-e7bd-454c-97a1-211c5e7254cc.png)
 
-10. Channel confirmation
+1. Channel confirmation
 Move each channel stick in right figure to confirm that each channel corresponds correctly to the following rules.
 
-   - 1.	CH1：this corresponds to the horizontal movement of the right-hand stick of the RC transmitter. The right-hand stick moves from left to right, corresponding to a PWM value that changes from 1100 to 1900 (QGC’s Channel Monitor moves from left to right).
-   - 2.	CH2：this corresponds to the vertical movement of the right-hand stick of the RC transmitter. The right-hand stick moves from top to bottom, corresponding to a PWM value that changes from 1100 to 1900 (QGC’s Channel Monitor moves from left to right).
-   - 3.	CH3：this corresponds to the vertical movement of the left-hand stick of the RC transmitter. The left-hand stick moves from top to bottom, corresponding to a PWM value that changes from 1900 to 1100 (opposite to CH2, right to left in QGC’s Channel Monitor).
-   - 4. CH4：this corresponds to the horizontal movement of the left-hand stick of the RC transmitter. The left-hand stick moves from left to right, corresponding to a PWM value that changes from 1100 to 1900 (QGC’s Channel Monitor moves from left to right).
-   - 5. CH5：this corresponds to the three-position switch on the upper-left side of the RC transmitter. The switch moves from the top position (the farthest position to the user), middle position, and bottom position (the closest position to the user), corresponding to PWM values of 1100, 1500, and 1900, respectively. (left to right in QGC) 
-   - 6. CH6：this corresponds to the three-position switch on the upper-right side of the RC transmitter. The switch moves to the top position (the farthest position to the user), middle position, and bottom position (the closest position to the user), corresponding PWM values of 1100, 1500, and 1900, respectively. (left to right in QGC)
+   - CH1：this corresponds to the horizontal movement of the right-hand stick of the RC transmitter. The right-hand stick moves from left to right, corresponding to a PWM value that changes from 1100 to 1900 (QGC’s Channel Monitor moves from left to right).
+   -	CH2：this corresponds to the vertical movement of the right-hand stick of the RC transmitter. The right-hand stick moves from top to bottom, corresponding to a PWM value that changes from 1100 to 1900 (QGC’s Channel Monitor moves from left to right).
+   - CH3：this corresponds to the vertical movement of the left-hand stick of the RC transmitter. The left-hand stick moves from top to bottom, corresponding to a PWM value that changes from 1900 to 1100 (opposite to CH2, right to left in QGC’s Channel Monitor).
+   - CH4：this corresponds to the horizontal movement of the left-hand stick of the RC transmitter. The left-hand stick moves from left to right, corresponding to a PWM value that changes from 1100 to 1900 (QGC’s Channel Monitor moves from left to right).
+   - CH5：this corresponds to the three-position switch on the upper-left side of the RC transmitter. The switch moves from the top position (the farthest position to the user), middle position, and bottom position (the closest position to the user), corresponding to PWM values of 1100, 1500, and 1900, respectively. (left to right in QGC) 
+   - CH6：this corresponds to the three-position switch on the upper-right side of the RC transmitter. The switch moves to the top position (the farthest position to the user), middle position, and bottom position (the closest position to the user), corresponding PWM values of 1100, 1500, and 1900, respectively. (left to right in QGC)
 
 #### QGC configuration
 
