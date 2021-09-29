@@ -1,7 +1,7 @@
 ---
-name: lesson2
+name: lesson1
 layout: post
-permalink: 2021-09-29-rflysim-lesson2.html
+permalink: rflysim-lesson1.html
 sidebar: other_sidebar
 collection: wiki
 summary: "rflysim course lesson 1"
@@ -47,9 +47,10 @@ Based on the previous two experiments, complete the given design task independen
 [video](images/rflysim/rflysim_1-2.mp4)
 
 |--
-| pdf | outline | summary
+| pdf | outline | keyword
 | | :- | :-
-| [lesson2](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_02_Experimental_Platform_Configuration.pdf) | sw install / hw configuration | platform config.
+| [lesson1](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_01_Introduction.pdf) | rflysim, coptersim and unreal plugins  | course design
+
 
 
 

@@ -1,10 +1,10 @@
 ---
-name: lesson 10
+name: lesson 5
 layout: post
-permalink: 2021-09-28-rflysim-lesson10.html
+permalink: rflysim-lesson5.html
 sidebar: other_sidebar
 collection: wiki
-summary: "rflysim course lesson 10"
+summary: "rflysim course lesson 5"
 tags: [wiki, getting_started, rflysim]
 excerpt_separator: <!--more-->
 date: 2021-09-29 14:40:03 +0900

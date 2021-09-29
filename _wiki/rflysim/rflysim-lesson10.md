@@ -1,10 +1,10 @@
 ---
-name: lesson 6
+name: lesson 10
 layout: post
-permalink: 2021-09-28-rflysim-lesson6.html
+permalink: rflysim-lesson10.html
 sidebar: other_sidebar
 collection: wiki
-summary: "rflysim course lesson 6"
+summary: "rflysim course lesson 10"
 tags: [wiki, getting_started, rflysim]
 excerpt_separator: <!--more-->
 date: 2021-09-29 14:40:03 +0900
@@ -18,9 +18,6 @@ complex_map: true
 map_name: rfly
 box_number: 4
 folder: rflysim
-youtubeID: jBLaP-XwGE8
-youtubeID2: IXglpmzFfBA
-driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 ---
 
 * TOC
