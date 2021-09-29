@@ -13,7 +13,7 @@ toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
 latex: false
-repos: aiegoo/documentation
+repos: aiegoo/documentation/issues
 complex_map: true
 map_name: rfly
 box_number: 4
