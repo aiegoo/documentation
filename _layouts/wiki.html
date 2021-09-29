@@ -68,6 +68,30 @@ excerpt_separator: <!--more-->
           <p>hello from layout directory</p>
         </div> -->
 
+<div class="post-nav">
+  <p>
+    {% if page.previous %}
+    {% if page.previous.url %}
+    {% if page.previous.subtitle %}
+    <a href="{{page.previous.url}}">&#8672;&nbsp;{{page.previous.name}}</a>
+    {% else %}
+    <a href="{{page.previous.url}}">&#8672;&nbsp;{{page.previous.subtitle}}</a>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+  </p>
+  <p>
+    {% if page.next %}
+    {% if page.next.url %}
+    {% if page.next.subtitle %}
+    <a href="{{page.next.url}}">{{page.next.name}}&nbsp;&#8674;</a>
+    {% else %}
+    <a href="{{page.next.url}}">&#8672;&nbsp;{{page.next.subtitle}}</a>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+  </p>
+</div>
 
     {% unless page.toc == false %}
     {% include toc.html %}

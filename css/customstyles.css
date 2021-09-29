@@ -1652,6 +1652,27 @@ kbd {
 	float: right;
 }
 
+/* https://www.bytedude.com/jekyll-previous-and-next-posts/#explanation */
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post-nav p {
+    flex: 1 1 0;
+    width: 45%;
+}
+
+.post-nav p:first-child {
+    padding-right: 0.5em;
+}
+
+.post-nav p:last-child {
+    padding-left: 0.5em;
+    text-align: right;
+}
+
 /* include youtube and jekyllvideo responsive codie */
 .embed-container {
     position: relative;
