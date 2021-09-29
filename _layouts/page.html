@@ -50,7 +50,7 @@ layout: default
     {% if page.previous.name %}
     <a href="{{page.previous.url}}"><span class="iconify" data-icon="mdi:chevron-double-right" data-rotate="180deg" style="font-size: 36px;"></span>&nbsp;{{page.previous.name}}</a>
     {% else %}
-    <a href="{{page.previous.url}}">&#8672;&nbsp;{{page.previous.subtitle}}</a>
+    <a href="{{page.previous.url}}" class="wiki-previous">&#8672;&nbsp;{{page.previous.subtitle}}</a>
     {% endif %}
     {% endif %}
 {% endif %}
@@ -59,7 +59,7 @@ layout: default
     {% if page.next %}
     {% if page.next.url %}
     {% if page.next.name %}
-    <a href="{{page.next.url}}">{{page.next.name}}&nbsp;<span class="iconify" data-icon="mdi:chevron-double-right" style="font-size: 36px;"></span></a>
+    <a href="{{page.next.url}} class="wiki-next">{{page.next.name}}&nbsp;<span class="iconify" data-icon="mdi:chevron-double-right" style="font-size: 36px;"></span></a>
     {% else %}
     <a href="{{page.next.url}}">&#8672;&nbsp;{{page.next.subtitle}}</a>
     {% endif %}
