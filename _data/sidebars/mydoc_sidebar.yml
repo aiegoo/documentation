@@ -242,6 +242,10 @@ entries:
           url: /rfly_starthere.html
           output: web
 
+        - title: Overview/Lessons
+          url: /books_rflyintroduction.html
+          output: web          
+
         - title: Implementating Pixhawk Cube
           url: /mydoc_rfly_cube.html
           output: web
