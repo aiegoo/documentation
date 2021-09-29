@@ -44,6 +44,7 @@ layout: default
 
 </article>
 
+{% for page in site.tags[rflysim] %}
 <div class="post-nav next-previous">
     {% if page.previous %}
     {% if page.previous.url %}
@@ -65,6 +66,7 @@ layout: default
     {% endif %}
     {% endif %}
 </div>
+{% endfor %}
 
 {% include commento.html %}
 
