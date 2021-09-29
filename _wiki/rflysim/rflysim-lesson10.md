@@ -18,6 +18,8 @@ complex_map: true
 map_name: rfly
 box_number: 4
 folder: rflysim
+next: rflysim-lesso11.html
+previous: rflysim-lesson9.html
 ---
 
 * TOC
