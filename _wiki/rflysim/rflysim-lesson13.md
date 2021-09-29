@@ -1,10 +1,10 @@
 ---
 name: lesson 13
-layout: post
+layout: page
 permalink: 2021-09-28-rflysim-lesson13.html
 sidebar: other_sidebar
 collection: wiki
-summary: "rflysim course lesson 13"
+summary: "rflysim course Advanced_Features"
 tags: [wiki, getting_started, rflysim]
 excerpt_separator: <!--more-->
 date: 2021-09-29 14:40:03 +0900

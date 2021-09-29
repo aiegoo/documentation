@@ -51,6 +51,8 @@ Based on the previous two experiments, complete the given design task independen
 | | :- | :-
 | [lesson2](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_02_Experimental_Platform_Configuration.pdf) | sw install / hw configuration | platform config.
 
+- slide 36/61
 
+Software Package Installation 
 
 {% include links.html %}
