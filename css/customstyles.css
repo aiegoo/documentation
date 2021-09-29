@@ -1653,22 +1653,22 @@ kbd {
 }
 
 /* https://www.bytedude.com/jekyll-previous-and-next-posts/#explanation */
-.post-nav.nextprevious {
+.post-nav .nextprevious {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.post-nav.nextprevious p {
+.post-nav .nextprevious p {
     flex: 1 1 0;
     width: 45%;
 }
 
-.post-nav.nextprevious p:first-child {
+.post-nav .nextprevious p:first-child {
     padding-right: 0.5em;
 }
 
-.post-nav.nextprevious p:last-child {
+.post-nav .nextprevious p:last-child {
     padding-left: 0.5em;
     text-align: right;
 }
