@@ -1684,7 +1684,7 @@ kbd {
      margin: 1em 0;
 }
 
-.wiki-next {
+a.wiki-next {
     text-align: right;
 }
 
