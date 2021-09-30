@@ -1729,8 +1729,11 @@ kbd {
       }
 
     .scroll-nav a:before {
-          content: "";
-          font-weight: bold;
+        font-family: FontAwesome;
+        content: "\f095";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
       }
 
 
