@@ -35,5 +35,6 @@ previous_post: rflysim-lesson13.html
 <p> {{ page.summary | markdownify }} </p>
 {% endif %}
 {% endif %}
+{% endfor %}
 
 {% include links.html %}
