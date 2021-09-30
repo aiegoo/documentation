@@ -1772,9 +1772,9 @@ kbd {
   .scroll-nav__link {
       color: #0645ad;
       text-decoration: none;
-      display: block;
+/*       display: block;
       margin: 0 auto;
-      padding-left: 42px;
+      padding-left: 42px; */
   }
 
   @media screen and (min-width: 800px) {
@@ -1786,5 +1786,10 @@ kbd {
   @media screen and (max-width: 799px) {
       .scroll-nav {
           text-align: center;
+      }
+  }
+  @media only screen and (max-width: 992px) {
+      .scroll-nav {
+          display: none
       }
   }
