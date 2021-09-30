@@ -7,7 +7,7 @@ collection: wiki
 summary: "rflysim course design"
 tags: [wiki, getting_started, rflysim]
 excerpt_separator: <!--more-->
-date: 2021-09-29 14:40:03 +0900
+date: 2021-09-29 13:40:03 +0900
 updated: 2021-09-29 2:48 PM
 toc: true
 public: true

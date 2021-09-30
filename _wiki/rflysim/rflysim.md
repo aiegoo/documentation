@@ -10,6 +10,7 @@ excerpt_separator: <!--more-->
 summary: rflysim course lessons overview
 collection: wiki
 layout: page
+date: 2021-09-28 11:40:03 +0900
 updated: 2021-09-30 10:19 AM
 repos: aiegoo/documentation
 complex_map: true
