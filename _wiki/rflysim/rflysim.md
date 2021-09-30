@@ -10,6 +10,13 @@ excerpt_separator: <!--more-->
 summary: rflysim course lessons overview
 collection: wiki
 layout: page
+repos: aiegoo/documentation
+complex_map: true
+map_name: rfly
+box_number: 4
+folder: rflysim
+next_post: rflysim-lesson2.html
+previous_post: rflysim-lesson13.html
 ---
 
 ## rflysim course book
