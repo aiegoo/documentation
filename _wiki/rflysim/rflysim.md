@@ -9,7 +9,7 @@ permalink: rflysim.html
 excerpt_separator: <!--more-->
 summary: rflysim course lessons overview
 collection: wiki
-layout: post
+layout: page
 repos: aiegoo/documentation
 complex_map: true
 map_name: rfly
