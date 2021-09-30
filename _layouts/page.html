@@ -28,7 +28,7 @@ layout: default
 
 {% endif %}
 
-<div class="post-content">
+<div id="post-content" class="post-content post-article">
 
    {% if page.summary %}
     <div class="summary">{{page.summary}}</div>
@@ -84,6 +84,18 @@ layout: default
     {% unless page.toc == false %}
     {% include toc.html %}
     {% endunless %}
+
+<script>
+$(function(){
+    const content = document.querySelector('.post-article');
+    scrollnav.init(content, { 
+      debug: false,
+      easingStyle: 'linear',
+      sections: ($('.post-content > h1').length>0) ? 'h1' : 'h2',
+      subSections: ($('.post-content > h1').length>0) ? 'h2' : 'h3'
+    });
+});
+</script>
 
 {{site.data.alerts.hr_shaded}}
 
