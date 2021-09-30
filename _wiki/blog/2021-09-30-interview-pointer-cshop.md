@@ -1,5 +1,5 @@
 ---
-name: previous next button
+name: C# interview pointer
 layout: post
 permalink: 2021-09-30-itnerview-pointer-cshop.html
 sidebar: other_sidebar
