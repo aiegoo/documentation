@@ -20,7 +20,7 @@ layout: default
 
     </header>
 
-    <div class="post-content" itemprop="articleBody">
+    <div id="post-content" class="post-content post-article" itemprop="articleBody">
 
         {% if page.summary %}
         <div class="summary">{{page.summary}}</div>
@@ -66,6 +66,18 @@ layout: default
     {% endif %}
     {% endif %}
 </div>
+
+<script>
+$(function(){
+    const content = document.querySelector('.post-article');
+    scrollnav.init(content, { 
+      debug: false,
+      easingStyle: 'linear',
+      sections: ($('.post-content > h1').length>0) ? 'h1' : 'h2',
+      subSections: ($('.post-content > h1').length>0) ? 'h2' : 'h3'
+    });
+});
+</script>
 
 {% include commento.html %}
 

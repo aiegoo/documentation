@@ -85,18 +85,6 @@ layout: default
     {% include toc.html %}
     {% endunless %}
 
-<script>
-$(function(){
-    const content = document.querySelector('.post-article');
-    scrollnav.init(content, { 
-      debug: false,
-      easingStyle: 'linear',
-      sections: ($('.post-content > h1').length>0) ? 'h1' : 'h2',
-      subSections: ($('.post-content > h1').length>0) ? 'h2' : 'h3'
-    });
-});
-</script>
-
 {{site.data.alerts.hr_shaded}}
 
 {% include footer.html %}
