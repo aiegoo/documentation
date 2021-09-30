@@ -209,7 +209,7 @@ defaults:
   -
     scope:
       path: "/wiki/"
-      type: post
+      type: posts
     values:
       layout: "page"
       search: true

@@ -1687,6 +1687,9 @@ kbd {
 .post-nav.wiki-next {
     text-align: right;
 }
+.post-nav.wiki-next {
+    text-align: right;
+}
 
 /* include youtube and jekyllvideo responsive codie */
 .embed-container {
