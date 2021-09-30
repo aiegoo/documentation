@@ -386,7 +386,7 @@ To change the method `definition`in the derived class.
 
 ### Async ▲
 
-用`task`
+`task`
 
 ## Concept Comparations
 
