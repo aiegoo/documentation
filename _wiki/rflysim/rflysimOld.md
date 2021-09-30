@@ -22,17 +22,18 @@ previous_post: rflysim-lesson13.html
 ---
 
 ## rflysim course book
-{% if page.box_number == 4 %}
-{% assign rflysim = site.wiki | sort:"date" %}
-{% for page in rflysim %}
+{% for tag in site.tags %}
+  {% if tag[0] == "rflysim" %}
 <h2>
+      {% for page in tag[1] %}
      <a href="{{ page.url | prepend: site.baseurl }}">
      {{ page.name }} - {{ page.updated }}
      </a>
 </h2>
 <span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time></span>
 <p> {{ page.summary | markdownify }} </p>
+     {% endfor %}
+  {% endif %}
 {% endfor %}
-{% endif %}
 
 {% include links.html %}
