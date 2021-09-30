@@ -1752,8 +1752,8 @@ kbd {
       padding: 5px;
       font-weight: bold;
       position: relative;
-      color: white;
-      background: red;
+      color: #e44a66;
+      /* background: red; */
       text-decoration: none;
       transition: all 0.5s;
   }
