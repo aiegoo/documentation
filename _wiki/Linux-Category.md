@@ -1,5 +1,5 @@
 ---
-name: title   : Linux 
+name: Linux 
 layout: post
 permalink: Linux-Category.html
 sidebar: other_sidebar
