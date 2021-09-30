@@ -1762,6 +1762,9 @@ kbd {
           color: white
       }
   
+  .scroll-nav_sub-item {
+      list-style-type: none !important;
+  }
 
   .scroll-nav__link {
       color: #0645ad;
