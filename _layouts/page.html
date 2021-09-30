@@ -46,24 +46,16 @@ layout: default
 {% for page in page.previous_post %}   
 {% for page in page.next_post %}   
 <div class="post-nav next-previous">
-    {% if page.previous %}
-    {% if page.previous.url %}
-    {% if page.previous.name %}
-    <a href="{{page.previous.url}}" class="wiki-previous"><span class="iconify" data-icon="mdi:chevron-double-right" data-rotate="180deg" style="font-size: 36px;"></span>&nbsp;{{page.previous.name}}</a>
+    {% if page.previous_post %}
+    <a href="{{page.url}}" class="wiki-previous"><span class="iconify" data-icon="mdi:chevron-double-right" data-rotate="180deg" style="font-size: 36px;"></span>&nbsp;{{page.previous_post.name}}</a>
     {% else %}
     <a href="{{page.previous.url}}" class="wiki-previous">&#8672;&nbsp;{{page.previous.subtitle}}</a>
     {% endif %}
-    {% endif %}
-    {% endif %}
   
-    {% if page.next %}
-    {% if page.next.url %}
-    {% if page.next.name %}
-    <a href="{{page.next.url}}" class="wiki-next">{{page.next.name}}&nbsp;<span class="iconify" data-icon="mdi:chevron-double-right" style="font-size: 36px;"></span></a>
+    {% if page.next_post %}
+    <a href="{{page.url}}" class="wiki-next">{{page.next_post.name}}&nbsp;<span class="iconify" data-icon="mdi:chevron-double-right" style="font-size: 36px;"></span></a>
     {% else %}
     <a href="{{page.next.url}}" class="wiki-next">&#8672;&nbsp;{{page.next.subtitle}}</a>
-    {% endif %}
-    {% endif %}
     {% endif %}
 </div>
 {% endfor %}
