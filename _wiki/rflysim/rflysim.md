@@ -23,9 +23,8 @@ previous_post: rflysim-lesson13.html
 
 ## rflysim course book
 
-{% assign rflysim = site.wiki %}
-{% for page in rflysim %}
-{% if page.previous_post %}   
+{% for page in site.wiki %}
+{% if page.previous_post %}
 {% if page.next_post %}  
 <h2>
      <a href="{{ page.url | prepend: site.baseurl }}">
