@@ -1715,7 +1715,8 @@ kbd {
       border: 1px solid #a2a9b1;
       padding: 15px 10px;
       position: fixed;
-      bottom: 15vh;
+      bottom: 0;
+      top: 0;
       right: 0; 
       }
 
