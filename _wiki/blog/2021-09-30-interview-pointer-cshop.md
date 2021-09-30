@@ -517,9 +517,9 @@ else
 object o = "abc";
 string s = o as string; //执行第一次类型兼容性检查，并返回结果
 if (s != null)
-    MessageBox.Show("转换成功！");
+    MessageBox.Show("success！");
 else
-    MessageBox.Show("转换失败！");
+    MessageBox.Show("failed！");
 ```
 
 
