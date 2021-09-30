@@ -1741,7 +1741,7 @@ kbd {
   .scroll-nav__list {
       margin: 0;
       padding-left: 1.4em;
-      list-style-type: upper-roman;
+      list-style-type: none;
   }
 
   .scroll-nav__item {
