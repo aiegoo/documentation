@@ -23,8 +23,8 @@ previous_post: rflysim-lesson13.html
 
 ## rflysim course book
 
-{% for page in page.previous_post %}   
-{% for page in page.next_post %}  
+{% if page.previous_post %}   
+{% if page.next_post %}  
 <h2>
      <a href="{{ page.url | prepend: site.baseurl }}">
      {{ page.name }} - {{ page.updated }}
@@ -32,7 +32,7 @@ previous_post: rflysim-lesson13.html
 </h2>
 <span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time></span>
 <p> {{ page.summary | markdownify }} </p>
-{% endfor %}
-{% endfor %}
+{% endif %}
+{% endif %}
 
 {% include links.html %}
