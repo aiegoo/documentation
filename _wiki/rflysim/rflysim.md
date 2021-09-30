@@ -10,6 +10,7 @@ excerpt_separator: <!--more-->
 summary: rflysim course lessons overview
 collection: wiki
 layout: page
+updated: 2021-09-30 10:19 AM
 repos: aiegoo/documentation
 complex_map: true
 map_name: rfly
@@ -22,6 +23,7 @@ previous_post: rflysim-lesson13.html
 ## rflysim course book
 {% assign rflysim = site.wiki | sort:"date" %}
 {% for page in rflysim %}
+{% if page.map_name == rfly %}
 <h2>
      <a href="{{ page.url | prepend: site.baseurl }}">
      {{ page.name }} - {{ page.updated }}
@@ -29,6 +31,7 @@ previous_post: rflysim-lesson13.html
 </h2>
 <span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time></span>
 <p> {{ page.summary | markdownify }} </p>
+{% endif %}
 {% endfor %}
 
 {% include links.html %}
