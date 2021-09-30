@@ -852,7 +852,7 @@ Using `using` is way shorter and easier to read.
 
 ### sealed
 
-> 防止继承
+
 
 A `sealed class` is a class which cannot be a base class of another more derived class.
 
