@@ -730,7 +730,7 @@ h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
     /* backgroundcolor: #234e23 !important; */
 }
 
-ol li ol li {list-style-type: lower-alpha;}
+/* ol li ol li {list-style-type: lower-alpha;} */
 ol li ol li.scroll-nav_sub-item {
     list-style-type: none !important;
 }
