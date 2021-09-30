@@ -43,18 +43,18 @@ layout: default
 
    {{content}}
 
-{% for page in site.wiki %} 
+{% for page in site.wiki %}   
 <div class="post-nav next-previous">
     {% if page.previous_post %}
-    <a href="{{page.url}}" class="wiki-previous"><span class="iconify" data-icon="mdi:chevron-double-right" data-rotate="180deg" style="font-size: 36px;"></span>&nbsp;{{page.previous_post.name}}</a>
+    <a href="{{page.previous_post}}" class="wiki-previous"><span class="iconify" data-icon="mdi:chevron-double-right" data-rotate="180deg" style="font-size: 36px;"></span>&nbsp;{{page.previous_post.name}}</a>
     {% else %}
-    <a href="{{page.previous.url}}" class="wiki-previous">&#8672;&nbsp;{{page.previous.subtitle}}</a>
+    <a href="rflysim-lesson13.html" class="wiki-previous">&#8672;&nbsp;lesson 13</a>
     {% endif %}
   
     {% if page.next_post %}
-    <a href="{{page.url}}" class="wiki-next">{{page.next_post.name}}&nbsp;<span class="iconify" data-icon="mdi:chevron-double-right" style="font-size: 36px;"></span></a>
+    <a href="{{page.next_post}}" class="wiki-next">{{page.next_post.name}}&nbsp;<span class="iconify" data-icon="mdi:chevron-double-right" style="font-size: 36px;"></span></a>
     {% else %}
-    <a href="{{page.next.url}}" class="wiki-next">&#8672;&nbsp;{{page.next.subtitle}}</a>
+    <a href="rflysim-lesson1.html" class="wiki-next">&#8672;&nbsp;lesson1</a>
     {% endif %}
 </div>
 {% endfor %}
