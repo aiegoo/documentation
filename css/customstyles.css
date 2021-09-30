@@ -1752,7 +1752,7 @@ kbd {
       padding: 5px;
       font-weight: bold;
       position: relative;
-      color: #e44a66;
+      color: #e44a66 !important;
       /* background: red; */
       text-decoration: none;
       transition: all 0.5s;
