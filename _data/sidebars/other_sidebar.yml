@@ -88,6 +88,10 @@ entries:
       folder: mycourse
       url: /cplus.html
 
+    - title: rFlysim course list
+      output: web
+      url: /rflysim.html
+
     - title: Tools series
       output: web
       url: /vim-basic.html
