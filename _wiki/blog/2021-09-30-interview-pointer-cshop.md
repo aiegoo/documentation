@@ -78,7 +78,7 @@ In .Net, all types are inherited from `System.Object` and divide into `value typ
 
 `boxing` means converting a `value type` into a `reference type`.
 
-`unboxing` is the conversion of the same `reference type` back to `value type`, which means we can only do `unboxing` on a type that has done with `boxing` . （被boxing过才可以unboxing)
+`unboxing` is the conversion of the same `reference type` back to `value type`, which means we can only do `unboxing` on a type that has done with `boxing` . （boxing unboxing)
 
 By using `Generic`  can reduce `boxing` and `unboxing` to perform faster.
 
@@ -204,7 +204,7 @@ class StringDataStore
 
 
 
-```csharp
+```c#
 int[][] jagged_arr = new int[4][] //声明一个4行的jagged array（每行几个未知）
 
 /*
@@ -230,7 +230,7 @@ jagged_arr[3] = new int[] {0, 45, 78, 53, 99};
 
 
 
-```csharp
+```c#
 int[][] jagged_arr = new int[][] 
 {
     new int[] {1, 2, 3, 4},
