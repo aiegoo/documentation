@@ -1715,9 +1715,9 @@ kbd {
       border: 1px solid #a2a9b1;
       padding: 15px 10px;
       position: fixed;
-      bottom: 0;
-      top: 0;
+      bottom: 60vh;
       right: 0; 
+      height: min-content;
       }
 
   .scroll-nav    a {
@@ -1731,7 +1731,7 @@ kbd {
 
     .scroll-nav a:before {
         font-family: FontAwesome;
-        content: "\f095";
+        content: "";
         display: inline-block;
         padding-right: 3px;
         vertical-align: middle;
