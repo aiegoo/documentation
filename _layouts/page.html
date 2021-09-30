@@ -43,6 +43,8 @@ layout: default
 
    {{content}}
 
+{% for page in page.previous_post %}   
+{% for page in page.next_post %}   
 <div class="post-nav next-previous">
     {% if page.previous %}
     {% if page.previous.url %}
@@ -64,6 +66,8 @@ layout: default
     {% endif %}
     {% endif %}
 </div>
+{% endfor %}
+{% endfor %}
 
     <div class="tags">
         {% if page.tags != null %}
