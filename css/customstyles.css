@@ -1715,7 +1715,8 @@ kbd {
       border: 1px solid #a2a9b1;
       padding: 15px 10px;
       position: fixed;
-      top: 20vh;
+      bottom: 15vh;
+      right: 0; 
       }
 
   .scroll-nav    a {
