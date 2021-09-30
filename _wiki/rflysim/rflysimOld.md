@@ -23,9 +23,9 @@ previous_post: rflysim-lesson13.html
 
 ## rflysim course book
 {% for tag in site.tags %}
-  {% if tag[0] == "rflysim" %}
+  {% if tag == "rflysim" %}
 <h2>
-      {% for page in tag[1] %}
+      {% for page in tag %}
      <a href="{{ page.url | prepend: site.baseurl }}">
      {{ page.name }} - {{ page.updated }}
      </a>
