@@ -15,7 +15,7 @@ complex_map: true
 map_name: rfly
 box_number: 4
 folder: rflysim
-next_post: rflysim-lesson2.html
+next_post: rflysim-lesson1.html
 previous_post: rflysim-lesson13.html
 ---
 
