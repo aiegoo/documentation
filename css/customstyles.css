@@ -1729,7 +1729,7 @@ kbd {
       }
 
     .scroll-nav a:before {
-          content: "CATALOG:";
+          content: "";
           font-weight: bold;
       }
 
