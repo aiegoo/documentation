@@ -1755,7 +1755,7 @@ kbd {
       color: #e44a66 !important;
       /* background: red; */
       text-decoration: none;
-      transition: all 0.5s;
+      transition: color 0.5s;
   }
 
   .scroll-nav__item--active>a:hover {
