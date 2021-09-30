@@ -1707,34 +1707,31 @@ kbd {
 
 
   /* scrollNav css */
-  //scroll nav
+
   .scroll-nav {
-      color: $white;
+      color: white;
       font-weight: bold;
       background-color: rgba(168, 168, 168, 0.8);
-      //border: 1px solid #a2a9b1;
+      border: 1px solid #a2a9b1;
       padding: 15px 10px;
       position: fixed;
       top: 20vh;
-
-      @media #{$notlarge} {
-          display: none;
       }
 
-      a {
-          color: $white;
+  .scroll-nav    a {
+          color: white;
           text-decoration: none;
       }
 
-      a:hover {
-          color: $red;
+   .scroll-nav   a:hover {
+          color: red;
       }
 
-      &:before {
+    .scroll-nav a:before {
           content: "CATALOG:";
           font-weight: bold;
       }
-  }
+
 
   .scroll-nav__list {
       margin: 0;
@@ -1750,20 +1747,33 @@ kbd {
       padding: 5px;
       font-weight: bold;
       position: relative;
-      color: $white;
-      background: $red;
+      color: white;
+      background: red;
       text-decoration: none;
-      @include transition(0.5s);
-
-      &:hover {
-          color: $white
-      }
+      transition: all 0.5s;
   }
+
+  .scroll-nav__item--active>a:hover {
+          color: white
+      }
+  
 
   .scroll-nav__link {
       color: #0645ad;
       text-decoration: none;
-      //display: block;
-      //margin: 0 auto;
-      //padding-left: 42px;
+      display: block;
+      margin: 0 auto;
+      padding-left: 42px;
+  }
+
+  @media screen and (min-width: 800px) {
+      .scroll-nav {
+          float: right;
+      }
+  }
+
+  @media screen and (max-width: 799px) {
+      .scroll-nav {
+          text-align: center;
+      }
   }
