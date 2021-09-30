@@ -20,7 +20,7 @@ previous_post: rflysim-lesson13.html
 ---
 
 ## rflysim course book
-{% assign rflysim = site.wiki.tags[rflysim] | sort:"date" %}
+{% assign rflysim = site.wiki | sort:"date" %}
 {% for page in rflysim %}
 <h2>
      <a href="{{ page.url | prepend: site.baseurl }}">
