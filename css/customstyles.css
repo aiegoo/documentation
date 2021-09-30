@@ -1684,10 +1684,7 @@ kbd {
      margin: 1em 0;
 }
 
-.post-nav.wiki-next {
-    text-align: right;
-}
-.post-nav.wiki-next {
+.wiki-next {
     text-align: right;
 }
 
@@ -1700,7 +1697,7 @@ kbd {
     max-width: 100%;
   }
   
-  .embed-container iframe, .embed-container object, .embed-container embed {
+.embed-container iframe, .embed-container object, .embed-container embed {
     position: absolute;
     top: 0;
     left: 0;
