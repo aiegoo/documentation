@@ -240,6 +240,9 @@ description: "This documentation site is intended to keep my past and current pr
 # url: http://idratherbewriting.com
 # baseurl: /documentation-theme-jekyll
 
+# leio reading time implementation
+reading_time:       true
+words_per_minute:   150
 
 github: [metadata]
 
