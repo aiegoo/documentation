@@ -1740,7 +1740,7 @@ a.wiki-next {
     
 
 .scroll-nav    a {
-        color: white;
+        color: rgba(168, 168, 168, 0.9);
         text-decoration: none;
     }
 
@@ -1782,7 +1782,7 @@ li.scroll-nav_item a:before {
 }
 
 .scroll-nav__item--active>a:hover {
-        color: white
+        color: rgba(168, 168, 168, 0.9);
     }
 
 .scroll-nav_sub-item {
