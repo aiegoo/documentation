@@ -45,7 +45,7 @@ folder: mydoc
             {% for page in site.pages %}
             {% for tag in page.tags %}
             {% if tag == "getting_started" %}
-              <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+              <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
             {% endif %}
             {% endfor %}
             {% endfor %} 
@@ -66,7 +66,7 @@ folder: mydoc
                 {% for page in site.pages %}
                 {% for tag in page.tags %}
                 {% if tag == "content-types" %}
-                <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+                <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
                 {% endif %}
                 {% endfor %}
                 {% endfor %}
@@ -88,7 +88,7 @@ folder: mydoc
             {% for page in site.pages %}
             {% for tag in page.tags %}
             {% if tag == "formatting" %}
-              <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+              <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
             {% endif %}
             {% endfor %}
             {% endfor %}
@@ -107,7 +107,7 @@ folder: mydoc
             {% for page in site.pages %}
             {% for tag in page.tags %}
             {% if tag == "single_sourcing" %}
-              <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+              <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
             {% endif %}
             {% endfor %}
             {% endfor %} 
@@ -126,7 +126,7 @@ folder: mydoc
         {% for page in site.pages %}
         {% for tag in page.tags %}
         {% if tag == "publishing" %}
-          <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+          <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
         {% endif %}
         {% endfor %}
         {% endfor %}
@@ -146,7 +146,7 @@ folder: mydoc
         {% for page in site.pages %}
         {% for tag in page.tags %}
         {% if tag == "special_layouts" %}
-              <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+              <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
         {% endif %}
         {% endfor %}
         {% endfor %} 
@@ -168,7 +168,7 @@ folder: mydoc
             {% for page in site.pages %}
             {% for tag in page.tags %}
             {% if tag == "wiki" %}
-              <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+              <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
             {% endif %}
             {% endfor %}
             {% endfor %}
