@@ -16,7 +16,7 @@ latex: false
 repos: aiegoo/kramdown-cn/blob/master/_posts/2019-03-24-Implement%20Scroll%20Spy%20in%20Jekyll%20without%20Bootstrap.md
 ---
 
-* TOC
+* (table of content)
 {:toc}
 
 ## jquery plugin
