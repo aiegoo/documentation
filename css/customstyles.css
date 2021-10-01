@@ -1781,6 +1781,7 @@ li.scroll-nav_item a:before {
     /* background: red; */
     text-decoration: none;
     transition: color 0.3s;
+    transform: scale(1.05);
 }
 
 .scroll-nav__item--active>a:hover {
