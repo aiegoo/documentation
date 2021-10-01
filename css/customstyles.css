@@ -1727,7 +1727,7 @@ a.wiki-next {
     font-weight: bold;
     /* background-color: rgba(168, 168, 168, 0.6); */
     border: 1px solid white;
-    border-left-color: rgba(168, 168, 168, 0.9);
+    border-left-color: rgba(233, 236, 239, 0.9);
     border-left-width: 5px;
     padding: 5px;
     position: fixed;
@@ -1786,6 +1786,7 @@ li.scroll-nav_item a:before {
 
 .scroll-nav__item--active>a:hover {
         color: rgba(168, 168, 168, 0.9);
+        transform: scale(1.05);
     }
 
 .scroll-nav_sub-item {
