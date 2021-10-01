@@ -43,7 +43,7 @@ latex: false
     ```
   * 스페이스는 보통 가운데 대쉬로 변환된다.
 
-## 개선 사항)
+## 개선 사항
 - tag 페이지에 stackoverflow tag 정보도 같이 넣기 
 * tag 페이지에 같은 태그로 검색한 stackoverflow의 결과도 넣고 싶다.
 * 그럼 일단 axios를 써야 하는데.. 이걸 참조 [JavaScript: using axios in the browser to make API requests](https://gabrieleromanato.name/javascript-using-axios-in-the-browser-to-make-api-requests)
