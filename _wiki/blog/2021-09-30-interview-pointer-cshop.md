@@ -35,11 +35,11 @@ It constructs the value of data members while initializing class.
 
 VS [Destructor](#Destructor)
 
-### Commonly Used Exceptions
+##### Commonly Used Exceptions
 
 ArgumentException, ArgumentNullException, ArgumentOutOfRangeException, ArithmeticException, DivideByZeroException, OverFlowException, IndexOutOfRangeException, InvalidCastException, InvalidOperationException, IOEndOfStreamException, NullReferenceException, OutOfMemoryException, StackOverFlowException
 
-### Class types in C#
+#### Class types in C#
 
 - **Partial class:** It allows its members to be divided or shared with multiple .cs files. It is denoted by the keyword **Partial.**
 - **Sealed class:** It is a class that cannot be inherited. To access the members of a sealed class, we need to create the object of the class. It is denoted by the keyword **Sealed**.
@@ -72,7 +72,7 @@ Generic，reusable
 
 [Ref](https://www.tutorialsteacher.com/csharp/csharp-generics)
 
-### Boxing & Unboxing
+#### Boxing & Unboxing
 
 In .Net, all types are inherited from `System.Object` and divide into `value type` and `reference type`.
 
@@ -106,7 +106,7 @@ int unBoxing =  int(boxedValue); //unboxing
  ```
 
 
-### Indexer
+#### Indexer
 
 `indexer` allows instances of a class or struct to be indexed just like arrays
 
@@ -191,7 +191,7 @@ class StringDataStore
 
 [Ref](https://www.tutorialsteacher.com/csharp/csharp-indexer)
 
-### Jagged Arrays
+#### Jagged Arrays
 
 * Array of arrays
 * Length of each array can differ (not only to be a multi-dimension array) 
@@ -242,7 +242,7 @@ int[][] jagged_arr = new int[][]
 
 [Ref](https://www.geeksforgeeks.org/c-sharp-jagged-arrays/)
 
-### Serialization
+#### Serialization
 
 The process of converting an object into a byte stream.
 
@@ -252,13 +252,13 @@ Eg., if user submits a form data from front-end to server, the data should be se
 
 > j
 
-### System.Object
+#### System.Object
 
 `System.Object` is the base class in .Net which is all classes derived from.
 
 > h
 
-### Delegates
+#### Delegates
 
 
 
@@ -270,13 +270,13 @@ Delegates are especially used for **handling event and call-back methods**.
 
 [Ref](https://www.tutorialsteacher.com/csharp/csharp-delegates)
 
-#### multicast delegate
+##### multicast delegate
 
 A delegate having multiple handlers assigned to it.
 
 Each handler is assigned to a method.
 
-### Garbage Collection
+#### Garbage Collection
 
 `managed code`: Under the of control of Common Language Runtime, .NET's garbage collector manages the allocation and release of memory for your application. Garbage collector will collect and dispose of garbage memory automatically.
 
@@ -344,9 +344,9 @@ Multiple catch blocks can't be executed. Once the proper catch code executed, th
 
 ---
 
-###  Code Patters ▲
+####  Code Patters ▲
 
-#### Singleton
+##### Singleton
 
 A class only have one instance, and provides an access point to it globally.
 
@@ -366,7 +366,7 @@ Object pooling is a software creational design pattern and a `container` of obje
 [Ref](
 https://www.codeguru.com/csharp/csharp/cs_misc/object-pooling-in-c.html)
 
-### Polymorphism ▲
+#### Polymorphism ▲
 
 
 #### overloading
@@ -436,11 +436,11 @@ foreach (int num in list1 )
 }
 ```
 
-### class VS object
+#### class VS object
 
 Object is an instance of a class.
 
-### class VS struct
+#### class VS struct
 
 **Classes:**
 
@@ -467,7 +467,7 @@ Object is an instance of a class.
 
 [Ref](https://stackoverflow.com/questions/1853896/is-it-possible-to-override-a-non-virtual-method)
 
-### is VS as
+#### is VS as
 
 
 `(non-value type):
@@ -540,7 +540,7 @@ else
 
 [abcd](https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
 
-### System.String VS System.Text.StringBuilder
+#### System.String VS System.Text.StringBuilder
 
 `System.String` is **immutable** (read-only), whereas `System.Text.StringBuilder` is **mutable**. 
 
@@ -558,7 +558,7 @@ In the need of repetitive operations and multiple string manipulations, `StringB
 
 [Ref1](https://stackoverflow.com/questions/3069416/difference-between-string-and-stringbuilder-in-c-sharp) [Ref2](https://stackoverflow.com/questions/73883/string-vs-stringbuilder)
 
-### System.Array.CopyTo() VS System.Array.Clone()
+#### System.Array.CopyTo() VS System.Array.Clone()
 
 **Similarity:** Both perform `Shallow Copy`
 
@@ -566,7 +566,7 @@ In the need of repetitive operations and multiple string manipulations, `StringB
 
 `clone()`: create a `new array` containing all the elements in the Original Array.
 
-### Shallow Copy VS Deep Copy
+#### Shallow Copy VS Deep Copy
 
 `Shallow Copy`: contents (each array element) contains `references` to the same object as the elements in the original array. 
 
@@ -602,7 +602,7 @@ ob1.a = 5; // <-- If you see value of ob2.a after this line, it will be 5.
 
 [Ref1](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy) [Ref2](https://stackoverflow.com/questions/18066429/shallow-copy-or-deep-copy)
 
-### Strongly Typed Language VS Weakly Typed Language
+#### Strongly Typed Language VS Weakly Typed Language
 
 `Strongly Typed Language` will **not** automatically converted form one type to another.
 
@@ -612,7 +612,7 @@ ob1.a = 5; // <-- If you see value of ob2.a after this line, it will be 5.
 
 `4+"7" = "47"` works in `JavaScript`, but error in `C#`
 
-### throw VS throw ex
+#### throw VS throw ex
 
 `throw` re-throws the exception that was caught, and **preserves original stack trace**. 
 
@@ -688,9 +688,9 @@ int a = 30;
 string b = "Hello World"
 ```
 
-## Keywords
+### Keywords
 
-### abstract method, virtual method and override method
+#### abstract method, virtual method and override method
 
 `vitrual` and `abstract` modifier use within **base** class method.
 
@@ -704,9 +704,9 @@ string b = "Hello World"
 >
 > `abstract`body（
 >
-> ```csharp
-> public abstract void MyMethod(); 
-> ```
+```csharp
+ public abstract void MyMethod(); 
+```
 
 
 
@@ -777,7 +777,7 @@ In an interface, it only includes virtual methods that do not have a definition 
 
 > interface，public。
 
-### constant VS readonly
+#### constant VS readonly
 
 | constant                                                     | readonly                                                     |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -786,13 +786,13 @@ In an interface, it only includes virtual methods that do not have a definition 
 | can't be used with `static` modifier (because it's `static` already) | can use `static`                                             |
 | `static`                       | static` |
 
-### public, static, and void
+#### public, static, and void
 
 * **public:** accessible anywhere in application
 * **static:** globally accessible `without creating an instance` of the class 
 * **void:** no return value
 
-### ref VS out
+#### ref VS out
 
 Both indicate an argument is passed by `reference`
 
@@ -800,7 +800,7 @@ A variable is passed as an `out` parameter doesn't need to be initialized but `r
 
 
 
-### this
+#### this
 
 **this** keyword is used to refer to the `current instance` of the class / `current class oject`. 
 
@@ -812,7 +812,7 @@ In most cases, it is used to access variables and methods from current class.
 
 No, `this` can't be used in a `static method`, because `this` refers to an object instance, but no current instance in a static method
 
-### using
+#### using
 
 `using` block is used to obtain a resource and process it then automatically `dispose` it when the execution of the block completed. Even if the code throws an exception.
 
@@ -850,7 +850,7 @@ Using `using` is way shorter and easier to read.
 
 [using](https://stackoverflow.com/questions/212198/what-is-the-c-sharp-using-block-and-why-should-i-use-it)
 
-### sealed
+#### sealed
 
 
 
