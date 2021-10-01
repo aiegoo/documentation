@@ -70,8 +70,14 @@ markdown: kramdown
 kramdown:
  input: GFM
  auto_ids: true
- hard_wrap: false
- syntax_highlighter: rouge
+hard_wrap: false
+syntax_highlighter: rouge
+syntax_highlighter_opts:
+  css_class: 'highlight'
+  span:
+    line_numbers: false
+  block:
+    line_numbers: true
 # parse_block_html: true
 
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
