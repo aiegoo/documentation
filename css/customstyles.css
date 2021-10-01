@@ -1726,7 +1726,7 @@ a.wiki-next {
     color: rgba(168, 168, 168, 0.9);
     font-weight: bold;
     /* background-color: rgba(168, 168, 168, 0.6); */
-    border: 1px solid #a2a9b1;
+    border: 1px solid white;
     padding: 15px 10px;
     position: fixed;
     bottom: 1vh;
