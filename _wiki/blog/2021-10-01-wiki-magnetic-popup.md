@@ -4,11 +4,11 @@ layout: post
 permalink: 2021-10-01-wiki-magnetic-popup.html
 sidebar: other_sidebar
 collection: wiki
-summary: "Implement Scroll Spy in Jekyll without Bootstrap"
-tags: [wiki, getting_started]
+summary: "지킬 블로그에 이미지 확대 기능 추가하기"
+tags: [wiki, getting_started, web]
 excerpt_separator: <!--more-->
-date: 2021-09-30 23:10:03 +0900
-updated: 2021-09-30 23:14 PM
+date: 2021-10-01 17:10:03 +0900
+updated: 2021-10-01 5:57 PM
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
@@ -19,29 +19,7 @@ repos: aiegoo/kramdown-cn/blob/master/_posts/2019-03-24-Implement%20Scroll%20Spy
 * TOC
 {:toc}
 
->---
-title: "지킬 블로그에 이미지 확대 기능 추가하기"
-layout: post
-date: 2018-03-07 09:17
-image: images/assets/post/002/206_00title.png
-headerImage: true
-category: Blog
-tag:
-- 깃허브
-- jekyll
-- 사진확대
-blog: true
-author: Hyeyeon
-description: 지킬 블로그에 이미지 클릭시 확대 기능 추가하기
----
-
-### Summary:
-
-지킬 블로그에 사진 클릭 시 확대 기능을 추가했습니다. Magnific Popup을 활용했습니다.
-
----
-
-## 문제
+### 문제
 
 포스팅 중 이미지가 작아 이미지 안 글자가 잘 읽히지 않는 경우가 있다. 사진 원본이 충분히 크더라도 블로그로 넘어오면서 560px 규격에 맞게 사진이 자동 축소되기 때문이다. '마우스 우클릭-새 탭에서 이미지 열기'를 이용하여 이미지 확대가 가능하긴 하지만 우클릭 없이 현재창에서 사진을 크게 확대할 수 있는 기능을 추가할 수 있는 방법은 없을까?
 
@@ -55,7 +33,7 @@ description: 지킬 블로그에 이미지 클릭시 확대 기능 추가하기
 
 ---
 
-## 해결책
+### 해결책
 
 구글링 결과 Magnific Popup이라는 제이쿼리 플러그인을 사용하면 사진 확대가 가능하다는 것을 알게됐다. (제이쿼리? 플러그인? 용어 해설은 [여기에](https://imyeonn.github.io/blog/web/207/))
 
@@ -68,7 +46,7 @@ description: 지킬 블로그에 이미지 클릭시 확대 기능 추가하기
 
 ---
 
-## 기능 적용 절차
+#### 기능 적용 절차
 
 #### 요약
 
@@ -79,7 +57,7 @@ description: 지킬 블로그에 이미지 클릭시 확대 기능 추가하기
 
 ---
 
-## 1. Magnific-Popup 파일 가져오기
+### 1. Magnific-Popup 파일 가져오기
 
 블로그 루트폴더(아이디.github.io)>assets>lib 폴더 안에 `jquery-1.12.0.min.js`, `jquery-1.12.0.min.map`, `jquery.magnific-popup.js`, `jquery.magnific-popup.min.js`를 만든다.
 
@@ -89,7 +67,7 @@ description: 지킬 블로그에 이미지 클릭시 확대 기능 추가하기
 
 ---
 
-## 2. index.js 생성
+### 2. index.js 생성
 
 블로그 루트폴더(아이디.github.io)>assets>js 폴더 안에 `index.js`를 생성한다. 이미 `index.js`가 있으면 빈 공간에 아래 코드를 추가한다.
 
@@ -125,7 +103,7 @@ $('.mg-link').magnificPopup({
 
 ---
 
-## 3. default.html에 스크립트 추가
+### 3. default.html에 스크립트 추가
 
 블로그 루트폴더(아이디.github.io)>\_layouts 폴더 안에 있는 `default.html`에 아래 코드를 추가한다.
 
@@ -137,7 +115,7 @@ $('.mg-link').magnificPopup({
 
 ---
 
-## 4. 기능 작동 확인
+### 4. 기능 작동 확인
 
 지금까지 작성한 코드를 커밋, 푸쉬한다. 페이지를 새로고침한 뒤 사진을 클릭해본다. 사진 클릭이 가능해지고 사진을 클릭했을 때 화면에 변화가 생긴다면 반은 성공이다. 아무런 변화가 없다면 1-3단계로 돌아가 잘못된 부분을 찾아낸다.
 
@@ -147,15 +125,15 @@ $('.mg-link').magnificPopup({
 
 ---
 
-## 5. scss 적용
+### 5. scss 적용
 
-이제 예쁘게 꾸밀 차례다. 블로그가 scss 기반이라면 아래 코드를 적당한 곳에 넣는다. 나는 `/_scss/components/others.sass`에 추가했다. 자신의 환경에 따라 코드를 바꾸거나 추가한다.
+이제 예쁘게 꾸밀 차례다. 블로그가 scss 기반이라면 아래 코드를 적당한 곳에 넣는다. 나는 `/css/others.css`에 추가했다. 자신의 환경에 따라 코드를 바꾸거나 추가한다.
 
-코드 내용: <https://gist.github.com/imyeonn/4efaaee5db31701031d83702829e84ff>
+소스코드 내용: <https://gist.github.com/imyeonn/4efaaee5db31701031d83702829e84ff>
 
 ---
 
-## 6. 최종 확인
+### 6. 최종 확인
 
 이제 사진 확대가 가능하다.
 
