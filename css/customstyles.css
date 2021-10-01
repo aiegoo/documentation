@@ -1723,9 +1723,9 @@ a.wiki-next {
   /* scrollNav css */
 
 .scroll-nav {
-    color: white;
+    color: rgba(168, 168, 168, 0.9);
     font-weight: bold;
-    background-color: rgba(168, 168, 168, 0.6);
+    /* background-color: rgba(168, 168, 168, 0.6); */
     border: 1px solid #a2a9b1;
     padding: 15px 10px;
     position: fixed;
