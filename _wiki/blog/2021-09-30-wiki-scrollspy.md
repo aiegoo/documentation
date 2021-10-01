@@ -128,6 +128,8 @@ $(function(){
 For more information: [Styling](http://scrollnav.com/guide/styling.html)
 
 # Output
+![image](https://user-images.githubusercontent.com/42961200/135604861-b6fb462d-caff-49b9-8575-f78fd092d9ea.png)
+
 ![image](https://user-images.githubusercontent.com/42961200/135546980-0afeff0b-4f4e-4b04-bcfb-43f7c8218f0f.png)
 
 {% include links.html %}
