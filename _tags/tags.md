@@ -41,7 +41,7 @@ folder: mydoc
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["rflysim"]'>
 
             <div class="panel panel-default">
-            <div class="panel-heading">Getting started</div>
+            <div class="panel-heading">rflysim</div>
             <div class="panel-body">
               rflysim category files tagged 'rflysim' 
               <ul>
@@ -61,7 +61,7 @@ folder: mydoc
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["books"]'>
 
             <div class="panel panel-default">
-            <div class="panel-heading">Getting started</div>
+            <div class="panel-heading">books</div>
             <div class="panel-body">
               books category files tagged 'books' 
               <ul>
@@ -81,7 +81,7 @@ folder: mydoc
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["yoga"]'>
 
             <div class="panel panel-default">
-            <div class="panel-heading">Getting started</div>
+            <div class="panel-heading">yoga</div>
             <div class="panel-body">
               yoga category files tagged 'yoga' 
               <ul>
