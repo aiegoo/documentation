@@ -1725,16 +1725,17 @@ a.wiki-next {
 .scroll-nav {
     color: white;
     font-weight: bold;
-    background-color: rgba(168, 168, 168, 0.8);
+    background-color: rgba(168, 168, 168, 0.6);
     border: 1px solid #a2a9b1;
     padding: 15px 10px;
     position: fixed;
-    bottom: 0vh;
-    top: 0vh;
+    bottom: 1vh;
+    top: 7vh;
     right: 0; 
     height: min-content;
     width: 24rem;
     overflow-x: hidden;
+    overflow-y: auto;
 }
     
 
@@ -1744,7 +1745,7 @@ a.wiki-next {
     }
 
 .scroll-nav   a:hover {
-        color: red;
+        color: #e44a66;
     }
 
 .scroll-nav a:before {
@@ -1778,7 +1779,7 @@ li.scroll-nav_item a:before {
     color: #e44a66 !important;
     /* background: red; */
     text-decoration: none;
-    transition: color 0.5s;
+    transition: color 0.3s;
 }
 
 .scroll-nav__item--active>a:hover {
