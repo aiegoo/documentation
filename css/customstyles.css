@@ -1817,3 +1817,11 @@ li.scroll-nav_item a:before {
         display: none
     }
 }
+
+
+/* class reading time for post page */
+.reading-time {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 10px;
+}

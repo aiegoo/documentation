@@ -13,10 +13,8 @@ layout: default
             <a href="{{ "tag_" | append: tag | append: ".html"}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
             {% endif %}
             {% endfor %}
-            {% endif %}
-
+            {% endif %}        
         </p>
-
 
     </header>
 
@@ -28,11 +26,16 @@ layout: default
 
 
         {% if page.repos %}
-
         <a target="_blank" rel="noopener" href="https://github.com/{{page.repos}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i>&nbsp;view github</a>
-
         {% endif %}
 
+        {% if site.reading_time %}
+        <p class="reading-time">
+            <a class="no-effect-link" href="https://github.com/Lei1025/lei1025.github.io/blob/master/{{ page.path }}" target="_blank"><i class="far fa-clock"></i></a>
+            {% include read-time.html %}
+        </p><!-- /.entry-reading-time -->
+        {% endif %}
+        
         {{ content }}
     </div>
     <div class="toc">
