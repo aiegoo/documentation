@@ -12,7 +12,7 @@ box_number: 1
 order_number: 4
 series: "MYCOURSE series"
 weight: 4
-link: https://www.36io.co
+link: https://36io.co
 ---
 
 {% include custom/series_mycourse_next.html %}

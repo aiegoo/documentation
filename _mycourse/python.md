@@ -13,7 +13,7 @@ order_number: 2
 series: "MYCOURSE series"
 weight: 2
 folder: mycourse
-link: https://www.36io.co
+link: https://36io.co
 ---
 
 {% include custom/series_mycourse_next.html %}

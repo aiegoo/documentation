@@ -7,7 +7,7 @@ category: "networking"
 complex_map: true
 map_name: usermap_mycourse
 box_number: 2
-link: https://www.36io.co
+link: https://36io.co
 ---
 
 My first ccna network administrator.

@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_drones
 box_number: 2
-link: https://www.36io.co
+link: https://36io.co
 ---
 
 {% include image.html file="drones/hw_gallery/drone_inflight.jpg" caption="Test flight after assembly" %}

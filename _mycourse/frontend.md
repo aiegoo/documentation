@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_mycourse
 box_number: 2
-link: https://www.36io.co
+link: https://36io.co
 ---
 
 {% include image.html file="yoga/backbend.png" caption="Hot Yoga is a moving meditation combining asana, breath work and heat. All are needed to get the best result." %}
