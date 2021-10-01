@@ -35,7 +35,7 @@ folder: mydoc
 <div id="grid" class="row">
 
 
-<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["getting_started"]'>
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["getting_started"]'>
 
             <div class="panel panel-default">
             <div class="panel-heading">Getting started</div>
@@ -56,7 +56,7 @@ folder: mydoc
 </div>
 
 
-<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["content-types"]'>
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["content-types"]'>
 
     <div class="panel panel-default">
         <div class="panel-heading">Content types</div>
@@ -78,7 +78,7 @@ folder: mydoc
 
 
 
-<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["formatting"]'>
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["formatting"]'>
 
             <div class="panel panel-default">
             <div class="panel-heading">Formatting</div>
@@ -98,7 +98,7 @@ folder: mydoc
 
 </div>
 
-<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["single_sourcing"]'>
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["single_sourcing"]'>
       
   <div class="panel panel-default">
             <div class="panel-heading">Single Sourcing</div>
@@ -117,7 +117,7 @@ folder: mydoc
 
 </div>
 
-<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["publishing"]'>
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["publishing"]'>
 
     <div class="panel panel-default">
         <div class="panel-heading">Publishing</div>
@@ -136,7 +136,7 @@ folder: mydoc
 
 </div>
 
-<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["special_layouts"]'>
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["special_layouts"]'>
 
       <div class="panel panel-default">
         <div class="panel-heading">Special Layouts</div>
@@ -158,7 +158,7 @@ folder: mydoc
 
 
 
-<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["wiki"]'>
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["wiki"]'>
 
             <div class="panel panel-default">
             <div class="panel-heading">wiki</div>
