@@ -1773,7 +1773,6 @@ li.scroll-nav_item a:before {
 }
 
 .scroll-nav__item--active>a {
-    padding: 5px;
     font-weight: bold;
     position: relative;
     color: #e44a66 !important;

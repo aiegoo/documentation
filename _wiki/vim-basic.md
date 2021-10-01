@@ -18,7 +18,9 @@ latex: false
 {:toc}
 
 ## Fugitive Vim cheatsheet
+
 <script src="https://gist.github.com/aiegoo/2f557ee90b86139d26e8fed23d9db4b5.js"></script>
+
 ## Tip 1. `hightlight search` 끄기
 
 * #hightlight, #unimpared
