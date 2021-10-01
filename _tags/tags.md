@@ -30,10 +30,73 @@ folder: mydoc
   <button class="btn btn-primary" data-group="single_sourcing">Single Sourcing</button>
   <button class="btn btn-primary" data-group="special_layouts">Special Layouts</button>
   <button class="btn btn-primary" data-group="wiki">wiki</button>
+  <button class="btn btn-primary" data-group="rflysim">rflysim</button>
+  <button class="btn btn-primary" data-group="yoga">yoga</button>
+  <button class="btn btn-primary" data-group="books">books</button>
 </div>
 
 <div id="grid" class="row">
 
+
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["rflysim"]'>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">Getting started</div>
+            <div class="panel-body">
+              rflysim category files tagged 'rflysim' 
+              <ul>
+            {% for page in site.pages %}
+            {% for tag in page.tags %}
+            {% if tag == "rflysim" %}
+              <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %} 
+              </ul>
+            </div>
+        </div>
+
+</div>
+
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["books"]'>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">Getting started</div>
+            <div class="panel-body">
+              books category files tagged 'books' 
+              <ul>
+            {% for page in site.pages %}
+            {% for tag in page.tags %}
+            {% if tag == "books" %}
+              <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %} 
+              </ul>
+            </div>
+        </div>
+
+</div>
+
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["yoga"]'>
+
+            <div class="panel panel-default">
+            <div class="panel-heading">Getting started</div>
+            <div class="panel-body">
+              yoga category files tagged 'yoga' 
+              <ul>
+            {% for page in site.pages %}
+            {% for tag in page.tags %}
+            {% if tag == "yoga" %}
+              <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %} 
+              </ul>
+            </div>
+        </div>
+
+</div>
 
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["getting_started"]'>
 
