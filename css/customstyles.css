@@ -1729,13 +1729,14 @@ a.wiki-next {
     border: 1px solid #a2a9b1;
     padding: 15px 10px;
     position: fixed;
-    bottom: 60vh;
+    bottom: 0vh;
+    top: 0vh;
     right: 0; 
     height: min-content;
     width: 24rem;
     overflow-x: hidden;
 }
-    }
+    
 
 .scroll-nav    a {
         color: white;
