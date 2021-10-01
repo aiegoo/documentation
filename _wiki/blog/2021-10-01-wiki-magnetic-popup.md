@@ -19,6 +19,7 @@ repos: aiegoo/kramdown-cn/blob/master/_posts/2019-03-24-Implement%20Scroll%20Spy
 * TOC
 {:toc}
 
+## jquery plugin
 ### 문제
 
 포스팅 중 이미지가 작아 이미지 안 글자가 잘 읽히지 않는 경우가 있다. 사진 원본이 충분히 크더라도 블로그로 넘어오면서 560px 규격에 맞게 사진이 자동 축소되기 때문이다. '마우스 우클릭-새 탭에서 이미지 열기'를 이용하여 이미지 확대가 가능하긴 하지만 우클릭 없이 현재창에서 사진을 크게 확대할 수 있는 기능을 추가할 수 있는 방법은 없을까?
@@ -33,7 +34,7 @@ repos: aiegoo/kramdown-cn/blob/master/_posts/2019-03-24-Implement%20Scroll%20Spy
 
 ---
 
-### 해결책
+## 해결책
 
 구글링 결과 Magnific Popup이라는 제이쿼리 플러그인을 사용하면 사진 확대가 가능하다는 것을 알게됐다. (제이쿼리? 플러그인? 용어 해설은 [여기에](https://imyeonn.github.io/blog/web/207/))
 
@@ -46,9 +47,7 @@ repos: aiegoo/kramdown-cn/blob/master/_posts/2019-03-24-Implement%20Scroll%20Spy
 
 ---
 
-#### 기능 적용 절차
-
-#### 요약
+### 요약
 
 1. Magnific-Popup 파일 가져오기
 2. index.js 생성
