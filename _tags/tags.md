@@ -27,8 +27,9 @@ folder: mydoc
       <button class="btn btn-primary" data-group="formatting">Formatting</button>
       <button class="btn btn-primary" data-group="publishing">Publishing</button>
       <button class="btn btn-primary" data-group="content-types">Content types</button>
-          <button class="btn btn-primary" data-group="single_sourcing">Single Sourcing</button>
+      <button class="btn btn-primary" data-group="single_sourcing">Single Sourcing</button>
       <button class="btn btn-primary" data-group="special_layouts">Special Layouts</button>
+      <button class="btn btn-primary" data-group="wiki">wiki</button>
     </div>      
 
 <div id="grid" class="row">
@@ -154,6 +155,29 @@ folder: mydoc
             </div>
 
     </div>
+
+
+
+    <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["wiki"]'>
+
+                <div class="panel panel-default">
+               <div class="panel-heading">wiki</div>
+               <div class="panel-body">
+                  In the wiki foler, I have created three categories of blog, rflysim and wiki (default): 
+                  <ul>
+                {% for page in site.pages %}
+                {% for tag in page.tags %}
+                {% if tag == "wiki" %}
+                  <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
+                  </ul>
+               </div>
+            </div>
+
+    </div>
+
           <!-- sizer -->
       <div class="col-xs-6 col-sm-4 col-md-1 shuffle_sizer"></div>          
 
