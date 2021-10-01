@@ -879,7 +879,7 @@ class Subclass2 : Subclass1 {
 > Tips: 
 >
 > To compose a decent answer, in my view, it should answer 
-> 1. What -- interpreting the jargon（专业术语）first
+> 1. What -- interpreting the jargon first
 > 2. When -- giving an **example** with a detailed situation where you did or you should use
 > 3. Why  -- taking about some advantages or disadvantages better comparing with another related one(possibly it is the next question, good to answer it in advance)
 
