@@ -22,9 +22,10 @@ previous_post: rflysim-lesson13.html
 ---
 
 ## rflysim course book
-{% if page.box_number == 4 %}
-{% assign rflysim = site.wiki | sort:"date" %}
-{% for page in rflysim %}
+
+{% for page in site.wiki %}
+{% if page.previous_post %}
+{% if page.next_post %}  
 <h2>
      <a href="{{ page.url | prepend: site.baseurl }}">
      {{ page.name }} - {{ page.updated }}
@@ -32,7 +33,8 @@ previous_post: rflysim-lesson13.html
 </h2>
 <span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }} itemprop='datePublished'"> {{ page.date | date: "%b %-d, %Y" }}</time></span>
 <p> {{ page.summary | markdownify }} </p>
-{% endfor %}
 {% endif %}
+{% endif %}
+{% endfor %}
 
 {% include links.html %}
