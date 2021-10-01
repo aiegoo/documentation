@@ -71,10 +71,10 @@ layout: default
 $(function(){
     const content = document.querySelector('.post-article');
     scrollnav.init(content, { 
-      debug: true,
-      easingStyle: 'linear',
+      debug: false,
+      easingStyle: 'easInQuad',
       sections: ($('.post-content > h1').length>0) ? 'h1' : 'h2',
-      subSections: ($('.post-content > h2').length>0) ? 'h3' : 'h4'
+      subSections: ($('.post-content > h1').length>0) ? 'h3' : 'h4'
     });
 });
 </script>
