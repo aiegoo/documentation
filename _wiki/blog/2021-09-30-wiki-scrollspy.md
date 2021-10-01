@@ -61,6 +61,31 @@ $(function(){
     });
 });
 ```
+
+## Markup structure
+
+scrollnav follows
+[BEM (Block, Element, Modifier) Methodology](https://en.bem.info/methodology/)
+for providing class names to its markup. `scroll-nav` is the block, with
+`__list`, `__item`, and `__link` as elements. The structure looks like this.
+
+```css
+nav.scroll-nav
+  ol.scroll-nav__list
+    li.scroll-nav__item.scroll-nav__item--active
+      a.scroll-nav__link
+```
+When a user scrolls the document, scrollnav watches for each section to pass
+the threshold of the active area. As that happens the `--active` modifier is
+added to the `__item` element (and subsequently removed from previously active
+item). Use this to change or udpate the look of the active items in the
+nav.
+
+<p class="article-note">To view the location of the active area threshold
+within your document enable `debug` mode from scrollnav's list of
+[additional options](/scrollnav.com/guide/customizing.html#additional-options).
+</p>
+
 ## CSS Style .scss
 {% raw %}
 ```scss

@@ -72,9 +72,9 @@ $(function(){
     const content = document.querySelector('.post-article');
     scrollnav.init(content, { 
       debug: false,
-      easingStyle: 'easInQuad',
+      easingStyle: 'linear',
       sections: ($('.post-content > h1').length>0) ? 'h1' : 'h2',
-      subSections: ($('.post-content > h1').length>0) ? 'h3' : 'h4'
+      subSections: ($('.post-content > h1').length>0) ? 'h2' : 'h3'
     });
 });
 </script>
