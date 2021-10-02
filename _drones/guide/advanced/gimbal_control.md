@@ -1,3 +1,14 @@
+---
+layout: page
+name: pixhawk cube
+sidebar: other_sidebar
+category: "drones"
+excerpt_separator: <!--more-->
+permalink: cube.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+---
 # Gimbal Control Setup
 
 If you want to control a gimbal with a camera (or any other payload) attached to the vehicle, you need to configure how you want to control it and how PX4 can command it.

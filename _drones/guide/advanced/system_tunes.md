@@ -1,3 +1,14 @@
+---
+layout: page
+name: pixhawk cube
+sidebar: other_sidebar
+category: "drones"
+excerpt_separator: <!--more-->
+permalink: cube.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+---
 # System Notification Tunes
 
 PX4 defines a number of [standard tones/tunes](../getting_started/tunes.md) that are used to provide audio notification for important system states and problems (e.g. system startup, arming success, battery warnings, etc.)

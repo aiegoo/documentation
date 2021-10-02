@@ -1,3 +1,14 @@
+---
+layout: page
+name: pixhawk cube
+sidebar: other_sidebar
+category: "drones"
+excerpt_separator: <!--more-->
+permalink: cube.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+---
 # Installing driver on Ubuntu for Intel RealSense R200
 
 This tutorial aims to give instructions on how to install the camera driver of the Intel RealSense R200 camera head in Linux environment such that the gathered images can be accessed via the Robot Operation System (ROS).

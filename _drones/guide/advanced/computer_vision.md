@@ -1,3 +1,14 @@
+---
+layout: page
+name: "comupter vision"
+sidebar: other_sidebar
+category: "drones"
+excerpt_separator: <!--more-->
+permalink: computer_vision.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+---
 # Computer Vision (Optical Flow, MoCap, VIO, Avoidance)
 
 [Computer vision](https://en.wikipedia.org/wiki/Computer_vision) techniques enable computers to use visual data to make sense of their environment.

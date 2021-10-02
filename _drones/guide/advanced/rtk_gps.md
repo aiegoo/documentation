@@ -1,3 +1,14 @@
+---
+layout: page
+name: pixhawk cube
+sidebar: other_sidebar
+category: "drones"
+excerpt_separator: <!--more-->
+permalink: cube.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+---
 # RTK GPS (PX4 Integration)
 
 [Real Time Kinematic](https://en.wikipedia.org/wiki/Real_Time_Kinematic) (RTK) provides centimeter-level GPS accuracy.

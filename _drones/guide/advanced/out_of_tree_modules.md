@@ -1,3 +1,14 @@
+---
+layout: page
+name: pixhawk cube
+sidebar: other_sidebar
+category: "drones"
+excerpt_separator: <!--more-->
+permalink: cube.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+---
 # External Modules (Out-of-Tree)
 
 External modules provide a convenient mechanism for developers to manage/group proprietary modules that they want add to (or update in) PX4 firmware.

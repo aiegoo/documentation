@@ -1,3 +1,14 @@
+---
+layout: page
+name: pixhawk cube
+sidebar: other_sidebar
+category: "drones"
+excerpt_separator: <!--more-->
+permalink: cube.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+---
 # Windows Cygwin Development Environment (Maintenance Instructions)
 
 This topic explains how to construct and extend the development environment used for the supported [Cygwin-based Windows Development Environment](../dev_setup/dev_env_windows_cygwin.md).

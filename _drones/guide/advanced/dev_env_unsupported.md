@@ -1,3 +1,14 @@
+---
+layout: page
+name: pixhawk cube
+sidebar: other_sidebar
+category: "drones"
+excerpt_separator: <!--more-->
+permalink: cube.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+---
 # Unsupported Developer Toolchains
 
 This section contains topics about *unsupported* development platforms and tools (i.e. tools for which the code dev team are unlikely to be able to provide much advice).
