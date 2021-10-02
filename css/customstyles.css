@@ -1821,6 +1821,6 @@ li.scroll-nav_item a:before {
 
 /* class reading time for post page */
 .reading-time {
-    text-align: right;
+    font-family: FontAwesome;
     font-weight: 300;
 }

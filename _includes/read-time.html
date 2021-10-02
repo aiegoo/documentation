@@ -4,6 +4,6 @@
     {% if words < 360 %}
         1 min
     {% else %}
-        {{ words | divided_by:wpm }} mins
+        {{ words | divided_by:wpm | plus: 1 }} mins
     {% endif %}
 </span>
