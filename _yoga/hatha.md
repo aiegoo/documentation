@@ -52,7 +52,7 @@ My first yoga book I bought during my trip to Thailand has set off a series of e
 | ![image](https://user-images.githubusercontent.com/42961200/135710256-9105a6b5-44ba-42ff-9c57-4f9599a94b64.png)
 |---
 | ![image](https://user-images.githubusercontent.com/42961200/135710316-38043228-36dd-43b8-b930-08f639ef60ef.png)
-| ![Uploading image.png…]()
+| ![image](https://user-images.githubusercontent.com/42961200/135710830-1ce43c59-8019-4a68-8823-0194267d7821.png)
 | ![image](https://user-images.githubusercontent.com/42961200/135710198-171542bf-48f1-4c78-8173-8fc6cb9db79a.png)
 
 
