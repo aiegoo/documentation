@@ -52,7 +52,9 @@ All the other capabilities of the `include` tag are available to the `include_re
 such as variables.
 
 {{site.data.alerts.note}}
+<div markdonw="1">
 [mydoc_alerts](mydoc/alerts.md) also uses the same logic by inserting contents within the bootstrap box.
+</div>
 {{site.data.alerts.end}}
 ### Using variables names for the include file
 
