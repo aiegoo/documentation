@@ -1,3 +1,16 @@
+---
+layout: page
+name: prearm_arm_disarm
+sidebar: other_sidebar
+category: "drones"
+tags: drones, autopilot
+excerpt_separator: <!--more-->
+permalink: prearm_arm_disarm.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Prearm, Arm, Disarm Configuration
 
 Vehicles may have moving parts, some of which are potentially dangerous when powered (in particular motors and propellers)!

@@ -1,3 +1,17 @@
+---
+layout: page
+name: parameter_reference
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: ""
+excerpt_separator: <!--more-->
+permalink: parameter_reference2.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Parameter Reference
 
 :::note

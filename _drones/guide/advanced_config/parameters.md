@@ -1,3 +1,17 @@
+---
+layout: page
+name: parameters
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: ""
+excerpt_separator: <!--more-->
+permalink: parameters.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Finding/Updating Parameters
 
 PX4 behaviour can be configured/tuned using [parameters](../advanced_config/parameter_reference.md) (e.g. [Multicopter PID gains](../config_mc/pid_tuning_guide_multicopter.md), calibration information, etc.).

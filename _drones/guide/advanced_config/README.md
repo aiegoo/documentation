@@ -1,3 +1,17 @@
+---
+layout: page
+name: README
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: ""
+excerpt_separator: <!--more-->
+permalink: README2.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Advanced Configuration
 
 This section contains advanced configuration topics, covering vehicle-specific tuning, and less-common sensors and peripherals.

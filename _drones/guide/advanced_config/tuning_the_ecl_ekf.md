@@ -1,3 +1,17 @@
+---
+layout: page
+name: tuning_the_ecl_ekf
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: ""
+excerpt_separator: <!--more-->
+permalink: tuning_the_ecl_ekf.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Using the ECL EKF
 
 This tutorial answers common questions about use of the ECL EKF algorithm.

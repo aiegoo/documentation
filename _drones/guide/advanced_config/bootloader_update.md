@@ -1,3 +1,17 @@
+---
+layout: page
+name: bootloader_update
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: ""
+excerpt_separator: <!--more-->
+permalink: bootloader_update.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Bootloader Update
 
 The [PX4 bootloader](https://github.com/PX4/Bootloader) is used to load firmware for Pixhawk boards (PX4FMU, PX4IO) and [PX4FLOW](../sensor/px4flow.md).

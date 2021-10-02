@@ -1,3 +1,16 @@
+---
+layout: page
+name: advanced_flight_controller_orientation_leveling
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+excerpt_separator: <!--more-->
+permalink: advanced_flight_controller_orientation_leveling.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Advanced Flight Controller Orientation Tuning
 
 The orientation and horizon level may be fine-tuned manually with parameters to correct for sensor board small misalignment or minor calibration errors.

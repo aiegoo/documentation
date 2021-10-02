@@ -1,3 +1,17 @@
+---
+layout: page
+name: compass_power_compensation
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: ""
+excerpt_separator: <!--more-->
+permalink: compass_power_compensation.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Compass Power Compensation
 
 Compasses (magnetometers) should be mounted as far as possible from cables that carry large currents, as these induce magnetic fields that may corrupt the compass readings.

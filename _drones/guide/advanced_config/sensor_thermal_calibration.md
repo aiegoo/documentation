@@ -1,3 +1,17 @@
+---
+layout: page
+name: sensor_thermal_calibration
+sidebar: other_sidebar
+category: "drones"
+tags: drones, hardware, sensors
+summary: ""
+excerpt_separator: <!--more-->
+permalink: sensor_thermal_calibration.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Thermal Calibration and Compensation
 
 PX4 contains functionality to calibrate and compensate rate gyro, accelerometer and barometric pressure sensors for the effect of changing sensor temperature on sensor bias.

@@ -1,3 +1,16 @@
+---
+layout: page
+name: bootloader_update_from_betaflight
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+excerpt_separator: <!--more-->
+permalink: bootloader_update_from_betaflight.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Bootloader Flashing onto Betaflight Systems
 
 This page documents how to flash the PX4 bootloader onto boards preflashed with Betaflight (e.g. [OmnibusF4 SD](../flight_controller/omnibus_f4_sd.md) or [Kakute F7](../flight_controller/kakutef7.md)).

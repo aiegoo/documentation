@@ -1,3 +1,16 @@
+---
+layout: page
+name: esc_calibration
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+excerpt_separator: <!--more-->
+permalink: esc_calibration.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # ESC Calibration
 
 :::note

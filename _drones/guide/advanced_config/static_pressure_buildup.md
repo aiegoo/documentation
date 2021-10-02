@@ -1,3 +1,16 @@
+---
+layout: page
+name: static_pressure_buildup
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+excerpt_separator: <!--more-->
+permalink: static_pressure_buildup.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Static Pressure Buildup
 
 Air flowing over an enclosed vehicle can cause the *static pressure* to change within the canopy/hull. 

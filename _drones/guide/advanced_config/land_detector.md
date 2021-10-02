@@ -1,3 +1,17 @@
+---
+layout: page
+name: land_detector
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: ""
+excerpt_separator: <!--more-->
+permalink: land_detector.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Land Detector Configuration
 
 The land detector is a dynamic vehicle model representing key vehicle states from ground contact through to landed.
