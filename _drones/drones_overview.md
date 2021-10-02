@@ -20,12 +20,11 @@ link: https://36io.co
               </a>
           <span class="post-meta">{{ drone.updated | date: "%b %-d, %Y" }} /
                {% for tag in drone.tags %}
-               <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+               <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>
                {% endfor %}</span>
      {% endfor %}
         <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
 
-<hr />
     </div><!-- end of postlist -->
 </div><!-- end of home  -->
 
