@@ -33,7 +33,7 @@ folder: mydoc
   <button class="btn btn-primary" data-group="rflysim">rflysim</button>
   <button class="btn btn-primary" data-group="yoga">yoga</button>
   <button class="btn btn-primary" data-group="books">books</button>
-  <button class="btn btn-primary" data-group="api">API</button>>
+  <button class="btn btn-primary" data-group="api">API</button>
   <button class="btn btn-primary" data-group="jekyll">Jekyll</button>
 </div>
 
