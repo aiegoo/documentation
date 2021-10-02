@@ -55,8 +55,9 @@ folder: mydoc
             </div>
         </div>    
 </div>
+
 <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["api"]'>
-            <div class="panel panel-default">
+        <div class="panel panel-default">
             <div class="panel-heading">API</div>
             <div class="panel-body">
               Contents related to apis are tagged. 
@@ -73,10 +74,8 @@ folder: mydoc
         </div>    
 </div>
 
-
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["rflysim"]'>
-
-            <div class="panel panel-default">
+        <div class="panel panel-default">
             <div class="panel-heading">rflysim</div>
             <div class="panel-body">
               rflysim category files tagged 'rflysim' 
@@ -95,8 +94,7 @@ folder: mydoc
 </div>
 
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["books"]'>
-
-            <div class="panel panel-default">
+        <div class="panel panel-default">
             <div class="panel-heading">books</div>
             <div class="panel-body">
               books category files tagged 'books' 
@@ -115,8 +113,7 @@ folder: mydoc
 </div>
 
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["yoga"]'>
-
-            <div class="panel panel-default">
+        <div class="panel panel-default">
             <div class="panel-heading">yoga</div>
             <div class="panel-body">
               yoga category files tagged 'yoga' 
@@ -135,8 +132,7 @@ folder: mydoc
 </div>
 
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["getting_started"]'>
-
-            <div class="panel panel-default">
+        <div class="panel panel-default">
             <div class="panel-heading">Getting started</div>
             <div class="panel-body">
               If you're getting started with Jekyll, see the links in this section. It will take you from the beginning level to comfortable. 
@@ -154,9 +150,7 @@ folder: mydoc
 
 </div>
 
-
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["content-types"]'>
-
     <div class="panel panel-default">
         <div class="panel-heading">Content types</div>
         <div class="panel-body">
@@ -175,11 +169,8 @@ folder: mydoc
     
 </div>
 
-
-
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["formatting"]'>
-
-            <div class="panel panel-default">
+        <div class="panel panel-default">
             <div class="panel-heading">Formatting</div>
             <div class="panel-body">
               These topics get into formatting syntax, such as images and tables, that you'll use on each of your pages: 
@@ -197,8 +188,7 @@ folder: mydoc
 
 </div>
 
-<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["single_sourcing"]'>
-      
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["single_sourcing"]'>      
   <div class="panel panel-default">
             <div class="panel-heading">Single Sourcing</div>
             <div class="panel-body">These topics cover strategies for single_sourcing. Single sourcing refers to strategies for re-using the same source in different outputs for different audiences or purposes.
@@ -217,7 +207,6 @@ folder: mydoc
 </div>
 
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["publishing"]'>
-
     <div class="panel panel-default">
         <div class="panel-heading">Publishing</div>
         <div class="panel-body">When you're building, publishing, and deploying your Jekyll site, you might find these topics helpful.
@@ -236,7 +225,6 @@ folder: mydoc
 </div>
 
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["special_layouts"]'>
-
       <div class="panel panel-default">
         <div class="panel-heading">Special Layouts</div>
         <div class="panel-body">
@@ -255,11 +243,8 @@ folder: mydoc
 
 </div>
 
-
-
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["wiki"]'>
-
-            <div class="panel panel-default">
+        <div class="panel panel-default">
             <div class="panel-heading">wiki</div>
             <div class="panel-body">
               In the wiki foler, I have created three categories of blog, rflysim and wiki (default): 
@@ -277,10 +262,8 @@ folder: mydoc
 
 </div>
 
-    <!-- sizer -->
-<div class="col-xs-6 col-sm-4 col-md-1 shuffle_sizer"></div>          
-
-
+<!-- sizer -->
+<div class="col-xs-6 col-sm-4 col-md-1 shuffle_sizer"></div>
 </div><!-- /#grid -->
 
 {% unless site.output == "pdf" %}
