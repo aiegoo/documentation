@@ -1821,7 +1821,6 @@ li.scroll-nav_item a:before {
 
 /* class reading time for post page */
 .reading-time {
-    text-align: center;
+    text-align: right;
     font-weight: 300;
-    margin-bottom: 10px;
 }
