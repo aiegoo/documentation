@@ -17,14 +17,30 @@ link: https://36io.co
 Our class team made its first test flight after assembly.
 
 
-{% include image_drones.html folder="hw_gallery" %}
 
 |---
 | 
 | :-:
 | ![demo](https://github.com/aiegoo/Applying_EANNs/raw/master/Images/Demo.gif)
 
+## Wiki home
+<div class="home">
+    <div class="post-list">
+     {% for drone in site.drones reversed %}
+          <a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ drone.name }}</a>
+          <span class="post-meta">{{ drone.updated | date: "%b %-d, %Y" }} /
+          {% for tag in drone.tags %}
+                <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+                {% endfor %}</span>
+               <p>{% if drone.summary %} {{ drone.summary | strip_html | strip_newlines }} 
+          {% else %} {{ drone.excerpt | markdownify | truncatewords: 150 }} {% endif %}
+               </p>
+     {% endfor %}
+        <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
 
-{% include image_drone_dev.html folder="dev_gallery" %}
+<hr />
+        <p>See more wikis from the <a href="drone_archive.html">Wiki Archive</a>. </p>
+    </div>
+</div>
 
 [**Preview**]({{page.link}})
