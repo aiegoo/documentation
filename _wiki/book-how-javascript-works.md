@@ -265,7 +265,7 @@ weight: 1
   * 피연산자들을 32 bits binary 수 (zeros and ones)로 변환.
   * 결과는 표쥰 Javascript numerical values로 반환
 
-### Javascript의 Bitwise Operator가 잘 쓰이지 않는 이유
+### Javascript Bitwise Operator 잘 쓰이지 않는 이유
 
 * 안전하게 하려면 54 bit 정수형으로 변환해서 사용하는게 좋은데 Javascript는 안 그러고 있음
   * 그 결과 상위 22 bit는 경고없이 사라질 수 있음
