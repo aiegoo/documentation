@@ -8,8 +8,9 @@ layout: default
         <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
         {% if site.reading_time %}
         <p class="post-meta reading-time">
+        <i class="fa fa-clock-o"></i>
             {% include read-time.html %}
-            <a class="no-effect-link" rel="noopner" href="https://github.com/aiegoo/documentation/blob/edit/{{ page.path }}" target="_blank"><i class="fa fa-clock-o"></i></a>
+            <a class="no-effect-link" rel="noopner" href="https://github.com/aiegoo/documentation/blob/edit/{{ page.path }}" target="_blank"></a>
         </p><!-- /.entry-reading-time -->
         {% endif %}
         <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> {% if page.author %}<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">/ {{ page.author }}</span></span>{% endif %}{% if page.tags != null %}/
