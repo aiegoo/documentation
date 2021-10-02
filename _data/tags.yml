@@ -68,5 +68,7 @@ allowed-tags:
   - node
   - ai
   - projects
+  - autopilot
+  - hardware
 
 # Copyright 2021 Google LLC
