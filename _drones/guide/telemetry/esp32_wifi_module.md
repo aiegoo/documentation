@@ -7,7 +7,7 @@ They can then be used as a WiFi telemetry module with any Pixhawk series control
 No configuration is generally required if connected to `TELEM2`.
 The typical range is approximately 50m-200m (depending on the antenna used).
 
-![DroneBridge for ESP32 connection concept](../../assets/peripherals/telemetry/esp32/db_ESP32_setup.png)
+![DroneBridge for ESP32 connection concept](images/drones/peripherals/telemetry/esp32/db_ESP32_setup.png)
 
 
 ## Recommended Hardware
@@ -52,7 +52,7 @@ The main steps are:
 Wiring is very simple, and similar for all devices when connecting to the Pixhawk TELEM1/2 ports.
 You can use 2.54mm pitch header connectors or solder the PX4 telemetry cables directly to the board.
 
-![Example for wiring an ESP32 to the TELEM port](../../assets/peripherals/telemetry/esp32/pixhawk_wiring.png)
+![Example for wiring an ESP32 to the TELEM port](images/drones/peripherals/telemetry/esp32/pixhawk_wiring.png)
 
 1. Connect UART of ESP32 to a UART of your flight controller (e.g. TELEM 1 or TELEM 2 port).
    Make sure the voltage levels match: most ESP32 DevKits can only take 3.3V!
@@ -105,7 +105,7 @@ You can change the default configuration via the Webinterface.
 Connect to the ESP32 via WiFi and enter `dronebridge.local`, `http://dronebridge.local` or `192.168.2.1` in the address 
 bar of your browser.
 
-![DroneBridge for ESP32 Webinterface](../../assets/peripherals/telemetry/esp32/dbesp32_webinterface.png)
+![DroneBridge for ESP32 Webinterface](images/drones/peripherals/telemetry/esp32/dbesp32_webinterface.png)
 
 :::tip
 Some settings require you to reboot the ESP32 to take effect.

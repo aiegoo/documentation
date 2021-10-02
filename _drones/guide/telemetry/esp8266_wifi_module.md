@@ -64,14 +64,14 @@ Other modules may use settings like this:
 
 Examples of boards from AlphaUILink and DOITING are shown below: 
 
-<img src="../../assets/peripherals/telemetry/esp8266/alpha_uavlink_back.jpg" width="250px" alt="AlphaUAVLink - Back"/> <img src="../../assets/peripherals/telemetry/esp8266/alpha_uavlink_front.jpg" width="250px" alt="AlphaUAVLink - Front"/> <img src="../../assets/peripherals/telemetry/esp8266/doiting_eps_12f_back.jpg" width="250px" alt="DOITING EPS 12F - Back"/> <img src="../../assets/peripherals/telemetry/esp8266/doiting_eps_12f_front.jpg" width="250px" alt="DOITING EPS 12F - Front"/>
+<img src="images/drones/peripherals/telemetry/esp8266/alpha_uavlink_back.jpg" width="250px" alt="AlphaUAVLink - Back"/> <img src="images/drones/peripherals/telemetry/esp8266/alpha_uavlink_front.jpg" width="250px" alt="AlphaUAVLink - Front"/> <img src="images/drones/peripherals/telemetry/esp8266/doiting_eps_12f_back.jpg" width="250px" alt="DOITING EPS 12F - Back"/> <img src="images/drones/peripherals/telemetry/esp8266/doiting_eps_12f_front.jpg" width="250px" alt="DOITING EPS 12F - Front"/>
 :::
 
 On your wifi-enabled *QGroundControl* ground station computer/tablet, find and connect to the open wireless network for your ESP8266.
 On a Windows computer the connection settings for a network with name **Pixracer** and default password **pixracer** point will look like this:
 
-![Windows Network Setup: Connection](../../assets/peripherals/pixracer_network_setup_connection_windows.png)
-![Windows Network Setup: Security](../../assets/peripherals/pixracer_network_setup_security_windows.png)
+![Windows Network Setup: Connection](images/drones/peripherals/pixracer_network_setup_connection_windows.png)
+![Windows Network Setup: Security](images/drones/peripherals/pixracer_network_setup_security_windows.png)
 
 *QGroundControl* will automatically connect to the vehicle when the ground station computer is attached to a WiFi access point named  "Pixracer".
 
@@ -92,7 +92,7 @@ For any other access point name you will need to manually create a custom comm l
 
 You should now see HUD movement on your QGC computer via wireless link and be able to view the summary panel for the ESP8266 WiFi Bridge (as shown below).
 
-![QGC Summary showing Wifi Bridge](../../assets/qgc/summary/wifi_bridge.png)
+![QGC Summary showing Wifi Bridge](images/drones/qgc/summary/wifi_bridge.png)
 
 :::tip
 If you have any problem connecting, see [QGC Installation/Configuration Problems](https://docs.qgroundcontrol.com/en/Support/troubleshooting_qgc.html#waiting_for_connection).
@@ -149,16 +149,16 @@ There are various methods for setting the ESP8266 into *Flash Mode* but not all 
 In order to boot the ESP8266 in *Flash Mode*, the GPIO-0 pin must be set low (GND) and the CH_PD pin must be set high (VCC). 
 This is what my own setup looks like:
 
-![esp8266 flashing rig](../../assets/hardware/telemetry/esp8266_flashing_rig.jpg)
+![esp8266 flashing rig](images/drones/hardware/telemetry/esp8266_flashing_rig.jpg)
 
 I built a cable where RX, TX, VCC, and GND are properly wired directly from the FTDI adapter to the ESP8266. 
 From the ESP8266, I left two wires connected to GPIO-0 and CH_PD free so I can boot it either normally or in flash mode by connecting them to GND and VCC respectively.
 
 #### ESP8266 (ESP-01) Pinout
 
-![esp8266 wifi module pinout](../../assets/hardware/telemetry/esp8266_pinout.jpg)
+![esp8266 wifi module pinout](images/drones/hardware/telemetry/esp8266_pinout.jpg)
 
 
 #### Flashing Diagram using an FTDI USB/UART Adapter
 
-![esp8266 flashing](../../assets/hardware/telemetry/esp8266_flashing_ftdi.jpg)
+![esp8266 flashing](images/drones/hardware/telemetry/esp8266_flashing_ftdi.jpg)

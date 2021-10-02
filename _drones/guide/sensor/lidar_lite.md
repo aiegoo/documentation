@@ -2,7 +2,7 @@
 
 LIDAR-Lite is a compact, high-performance optical distant measurement sensor solution for drone, robot or unmanned vehicle applications. It can be connected to either I2C or PWM.
 
- ![LidarLite v3](../../assets/hardware/sensors/lidar_lite/lidar_lite_v3.jpg)
+ ![LidarLite v3](images/drones/hardware/sensors/lidar_lite/lidar_lite_v3.jpg)
 
 ## Where to Buy
 
@@ -39,7 +39,7 @@ The recommended robust setup is a v1 device interfaced via PWM.
 The standard wiring instructions for Lidar-Lite 3 (from the [Operation Manual](http://static.garmin.com/pumac/LIDAR_Lite_v3_Operation_Manual_and_Technical_Specifications.pdf)) are shown below.
 Lidar-Lite v2 and v3 are the same, except that the order of pins in the connector is reversed (i.e. it is as though the connector was turned over).
 
-![LidarLite v3 - Standard Wiring from Garmin Specification](../../assets/hardware/sensors/lidar_lite/lidar_lite2_standard_wiring_spec.jpg)
+![LidarLite v3 - Standard Wiring from Garmin Specification](images/drones/hardware/sensors/lidar_lite/lidar_lite2_standard_wiring_spec.jpg)
 
 
 ### PWM Interface Wiring
@@ -63,11 +63,11 @@ The pin numbers are hard-coded.
 The wiring for LidarLite v2 is shown below.
 Lidar-Lite v3 is wired similarly, except that the pin-numbering on the connector is reversed.
 
-![Lidar Lite 2 Interface wiring](../../assets/hardware/sensors/lidar_lite/lidar_lite_2_interface_wiring.jpg)
+![Lidar Lite 2 Interface wiring](images/drones/hardware/sensors/lidar_lite/lidar_lite_2_interface_wiring.jpg)
 
-![Lidar Lite 2 Interface wiring](../../assets/hardware/sensors/lidar_lite/lidarlite_wiring_scheme_pixhawk.jpg)
+![Lidar Lite 2 Interface wiring](images/drones/hardware/sensors/lidar_lite/lidarlite_wiring_scheme_pixhawk.jpg)
 
-![Lidar Lite 2 pins/cabling](../../assets/hardware/sensors/lidar_lite/lidarlite_wiring_pins_cables.jpg)
+![Lidar Lite 2 pins/cabling](images/drones/hardware/sensors/lidar_lite/lidarlite_wiring_pins_cables.jpg)
 
 
 ### I2C Interface Wiring

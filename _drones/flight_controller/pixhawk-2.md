@@ -25,7 +25,7 @@ This flight controller is not following the standard and uses a patented connect
 The [Hex Cube Black](http://www.proficnc.com/61-system-kits2) flight controller (previously known as Pixhawk 2.1) is a flexible autopilot intended primarily for manufacturers of commercial systems. 
 It is based on the [Pixhawk-project](https://pixhawk.org/) **FMUv3** open hardware design and runs PX4 on the [NuttX](https://nuttx.apache.org/) OS.
 
-![Cube Black](../../assets/flight_controller/cube/cube_black_hero.png)
+![Cube Black](images/drones/flight_controller/cube/cube_black_hero.png)
 
 The controller is designed to be used with a domain-specific carrier board in order to reduce the wiring, improve reliability, and ease of assembly.
 For example, a carrier board for a commercial inspection vehicle might include connections for a companion computer, 
@@ -133,7 +133,7 @@ Board schematics and other documentation can be found here: [The Cube Project](h
 
 ### Top-Side (GPS, TELEM etc)
 
-![Cube Ports - Top (GPS, TELEM etc) and Main/AUX](../../assets/flight_controller/cube/cube_ports_top_main.jpg)
+![Cube Ports - Top (GPS, TELEM etc) and Main/AUX](images/drones/flight_controller/cube/cube_ports_top_main.jpg)
 
 <span id="serial_ports"></span>
 ### Serial Port Mapping
@@ -154,11 +154,11 @@ UART8  | /dev/ttyS6 | <!-- unknown -->
 
 ### Debug Ports
 
-![Cube Debug Ports](../../assets/flight_controller/cube/cube_ports_debug.jpg)
+![Cube Debug Ports](images/drones/flight_controller/cube/cube_ports_debug.jpg)
 
 ### USB/SDCard Ports
 
-![Cube USB/SDCard Ports](../../assets/flight_controller/cube/cube_ports_usb_sdcard.jpg)
+![Cube USB/SDCard Ports](images/drones/flight_controller/cube/cube_ports_usb_sdcard.jpg)
 
 
 ## Building Firmware

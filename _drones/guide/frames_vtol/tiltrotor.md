@@ -2,7 +2,7 @@
 
 A **Tiltrotor VTOL** is a [VTOL](../frames_vtol/README.md) vehicle that has rotors that can swivel 90 degrees, allowing them to act as either multicopter rotors or as fixed-wing propellers.
 
-![Horizon Hobby E-flite Convergence](../../assets/airframes/vtol/eflite_convergence_pixfalcon/hero.jpg)
+![Horizon Hobby E-flite Convergence](images/drones/airframes/vtol/eflite_convergence_pixfalcon/hero.jpg)
 
 
 ## Videos

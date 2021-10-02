@@ -22,7 +22,7 @@ The CUAV<sup>&reg;</sup> *HV_PM* power module is a "high voltage" power module i
 
 ## Pinouts
 
-![HV PM](../../assets/hardware/power_module/cuav_hv/hv_pm.jpg)
+![HV PM](images/drones/hardware/power_module/cuav_hv/hv_pm.jpg)
 
 ## Enable HV PM
 

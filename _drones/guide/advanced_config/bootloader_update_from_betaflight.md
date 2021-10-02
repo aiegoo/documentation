@@ -15,7 +15,7 @@ To install the PX4 bootloader using the *Betaflight Configurator*:
    :::
 1. Connect the board to your PC and start the Configurator.
 1. Press the **Load Firmware [Local]** button
-   ![Betaflight Configurator - Local Firmware](../../assets/flight_controller/omnibus_f4_sd/betaflight_configurator.jpg)
+   ![Betaflight Configurator - Local Firmware](images/drones/flight_controller/omnibus_f4_sd/betaflight_configurator.jpg)
 1. Select the bootloader binary from the file system and then flash the board.
 
 You should now be able to install PX4 firmware on the board.

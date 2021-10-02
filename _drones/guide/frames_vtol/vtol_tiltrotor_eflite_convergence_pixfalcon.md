@@ -40,26 +40,26 @@ MAIN 8 | Elevon left
 
 Note that left and right in the reference are defined from the perspective of a human pilot inside a real plane (or looking from above, as shown below):
 
-<img src="../../assets/airframes/types/VTOLTiltRotor_eflite_convergence.svg" width="300px" />
+<img src="images/drones/airframes/types/VTOLTiltRotor_eflite_convergence.svg" width="300px" />
 
 ### Flight Controller
 
 The flight controller can be mounted at the same place the original autopilot was.
 
-![Mount Pixfalcon](../../assets/airframes/vtol/eflite_convergence_pixfalcon/eflight_convergence_pixfalcon_mounting.jpg)
+![Mount Pixfalcon](images/drones/airframes/vtol/eflite_convergence_pixfalcon/eflight_convergence_pixfalcon_mounting.jpg)
 
 ### Telemetry Radio
 
 The telemetry module fits into the bay meant to hold FPV transmission gear.
 
-![Mount telemetry module](../../assets/airframes/vtol/eflite_convergence_pixfalcon/eflight_convergence_telemetry_module.jpg)
+![Mount telemetry module](images/drones/airframes/vtol/eflite_convergence_pixfalcon/eflight_convergence_telemetry_module.jpg)
 
 ### GPS
 
 For the GPS we cut out a section of foam inside the "cockpit".
 That way the GPS can be put inside the body and is nicely stowed away without compromising the vehicle appearance.
 
-![Mount GPS](../../assets/airframes/vtol/eflite_convergence_pixfalcon/eflight_convergence_gps_mounting.jpg)
+![Mount GPS](images/drones/airframes/vtol/eflite_convergence_pixfalcon/eflight_convergence_gps_mounting.jpg)
 
 
 ## PX4 Configuration
@@ -69,7 +69,7 @@ Follow the [Standard Configuration](config/README.md) in *QGroundControl* (radio
 The particular settings that are relevant to this vehicle are:
 - [Airframe](config/airframe.md) 
   - Select the airframe configuration **E-flite Convergence** under **VTOL Tiltrotor** and restart *QGroundControl*.
-    ![QGroundControl Vehicle Setting - Airframe selection E-Flight](../../assets/airframes/vtol/eflite_convergence_pixfalcon/qgc_setup_airframe.jpg)
+    ![QGroundControl Vehicle Setting - Airframe selection E-Flight](images/drones/airframes/vtol/eflite_convergence_pixfalcon/qgc_setup_airframe.jpg)
 - [Flight Modes/Switches](../config/flight_mode.md)
   - As this is a VTOL vehicle, you must [assign an RC controller switch](../config/flight_mode.md#what-flight-modes-and-switches-should-i-set) for transitioning between multicopter and fixed-wing modes.
 

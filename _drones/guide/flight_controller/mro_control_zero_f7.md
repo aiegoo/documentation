@@ -7,7 +7,7 @@ Contact the [manufacturer](https://store.mrobotics.io/) for hardware support or 
 
 The *mRo Control Zero F7<sup>&reg;</sup>* is a new flight controller from mRo.
 
-![mRo Control Zero F7](../../assets/flight_controller/mro_control_zero_f7/mro_control_zero_f7.jpg)
+![mRo Control Zero F7](images/drones/flight_controller/mro_control_zero_f7/mro_control_zero_f7.jpg)
 
 It is a no-compromise triple IMU commercial grade flight controller.
 It includes 8x PWM outputs (DShot capable), 3x IMUs, 1x Magnetometer, 1x Barometric Pressure Sensor (Altimeter), 6x UART, and SD Card, all packed into a 32mm x 20mm PCB.
@@ -96,17 +96,17 @@ mRo control zero f7 | | FTDI |
 
 The [SWD port](../debug/swd_debug.md) (JTAG) for FMU debugging is a TC2030 debug connector, as shown below.
 
-![mro swd port](../../assets/flight_controller/mro_control_zero_f7/mro_control_zero_f7_swd.jpg)
+![mro swd port](images/drones/flight_controller/mro_control_zero_f7/mro_control_zero_f7_swd.jpg)
 
 You can use the [Tag Connect](https://www.tag-connect.com/) cable [TC2030 IDC NL](https://www.tag-connect.com/product/tc2030-idc-nl) below (with associated [retaining clip](https://www.tag-connect.com/product/tc2030-clip-retaining-clip-board-for-tc2030-nl-cables)) to attach to either a BlackMagic probe or a ST-LINK V2 debugger.
 
-![tc2030 idc nl cable](../../assets/flight_controller/mro_control_zero_f7/tc2030_idc_nl.jpg)
+![tc2030 idc nl cable](images/drones/flight_controller/mro_control_zero_f7/tc2030_idc_nl.jpg)
 
 There is also an [ARM20-CTX 20-Pin to TC2030-IDC adapter](https://www.tag-connect.com/product/arm20-ctx-20-pin-to-tc2030-idc-adapter-for-cortex) that can be used with other debug probes.
 
 ## Pinouts
 
-![mRo Control Zero F7](../../assets/flight_controller/mro_control_zero_f7/mro_control_pinouts.jpg)
+![mRo Control Zero F7](images/drones/flight_controller/mro_control_zero_f7/mro_control_pinouts.jpg)
 
 
 ## Serial Port Mapping

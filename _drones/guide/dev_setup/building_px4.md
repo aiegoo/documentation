@@ -36,7 +36,7 @@ make px4_sitl jmavsim
 
 This will bring up the PX4 console below:
 
-![PX4 Console (jMAVSim)](../../assets/toolchain/console_jmavsim.png)
+![PX4 Console (jMAVSim)](images/drones/toolchain/console_jmavsim.png)
 
 :::note
 You may need to start *QGroundControl* before proceeding, as the default PX4 configuration requires a ground control connection before takeoff. 
@@ -48,7 +48,7 @@ The drone can be flown by typing:
 pxh> commander takeoff
 ```
 
-![jMAVSim UI](../../assets/toolchain/jmavsim_first_takeoff.png)
+![jMAVSim UI](images/drones/toolchain/jmavsim_first_takeoff.png)
 
 The drone can be landed by typing `commander land` and the whole simulation can be stopped by doing **CTRL+C** (or by entering `shutdown`).
 
@@ -56,7 +56,7 @@ Flying the simulation with the ground control station is closer to the real oper
 Click on a location in the map while the vehicle is flying (takeoff flight mode) and enable the slider. 
 This will reposition the vehicle.
 
-![QGroundControl GoTo](../../assets/toolchain/qgc_goto.jpg)
+![QGroundControl GoTo](images/drones/toolchain/qgc_goto.jpg)
 
 :::tip
 PX4 can be used with a number of other [Simulators](../simulation/README.md), including [Gazebo Simulation](../simulation/gazebo.md) and [AirSim Simulation](../simulation/airsim.md). 
@@ -305,7 +305,7 @@ Additional make targets are discussed in relevant sections:
 
 The *PX4 Firmware Version* and *Custom Firmware Version* are published using the MAVLink [AUTOPILOT_VERSION](https://mavlink.io/en/messages/common.html#AUTOPILOT_VERSION) message, and displayed in the *QGroundControl* **Setup > Summary** airframe panel:
 
-![Firmware info](../../assets/gcs/qgc_setup_summary_airframe_firmware.jpg)
+![Firmware info](images/drones/gcs/qgc_setup_summary_airframe_firmware.jpg)
 
 These are extracted at build time from the active *git tag* for your repo tree.
 The git tag should be formatted as `<PX4-version>-<vendor-version>` (e.g. the tag in the image above was set to `v1.8.1-2.22.1`).

@@ -5,7 +5,7 @@ Tachometers (also known as [revolution-counter sensors](https://en.wikipedia.org
 This section lists the tachometer sensors supported by PX4 (linked to more detailed documentation).
 More detailed setup and configuration information is provided in the topics linked below (and sidebar).
 
-![TFRPM01A](../../assets/hardware/sensors/tfrpm/tfrpm01_electronics.jpg)
+![TFRPM01A](images/drones/hardware/sensors/tfrpm/tfrpm01_electronics.jpg)
 
 ## Supported Hardware
 

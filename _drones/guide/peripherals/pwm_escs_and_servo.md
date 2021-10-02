@@ -78,7 +78,7 @@ This is because for every positive pulse (the ESC signal) there needs to be an a
   
 The image below shows how noisy the signal becomes if GND is not connected.
 
-![PWM without ground](../../assets/hardware/pwm_esc/pwm_without_gnd.png)
+![PWM without ground](images/drones/hardware/pwm_esc/pwm_without_gnd.png)
 :::
 
 ### Power Connection / Opto-isolated ESCs

@@ -55,7 +55,7 @@ To configure the basic settings for battery 1:
 You are presented with the basic settings that characterize the battery.
 The sections below explain what values to set for each field.
 
-![QGC Power Setup](../../assets/qgc/setup/power/qgc_setup_power_px4.jpg)
+![QGC Power Setup](images/drones/qgc/setup/power/qgc_setup_power_px4.jpg)
 
 :::note
 At time of writing *QGroundControl* only allows you to set values for battery 1 in this view.

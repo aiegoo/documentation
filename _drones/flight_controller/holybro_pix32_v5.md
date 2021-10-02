@@ -15,7 +15,7 @@ The Pix32 v5 is designed for pilots who need a high power, flexible and customis
 It is comprised of a separate flight controller and carrier (base) board, which are connected by a 100pin connector.
 This design allows users to either select a base board made by Holybro, or customize their own.
 
-![Pix32 v5 Family](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_family.jpg)
+![Pix32 v5 Family](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_family.jpg)
 
 :::note
 This flight controller is [manufacturer supported](../flight_controller/autopilot_manufacturer_supported.md).
@@ -81,7 +81,7 @@ Order from [Holybro website](https://shop.holybro.com/pix32-v5_p1218.html).
 The [Pix32 v5 Wiring Quick Start](../assembly/quick_start_holybro_pix32_v5.md) provides instructions on how to assemble required/important peripherals including GPS, Power Management Board etc.
 
 ## Base Board Layouts
-![Pix32 v5 Image](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_base_boards_layout.jpg)
+![Pix32 v5 Image](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_base_boards_layout.jpg)
 
 ## Pinouts
 
@@ -91,7 +91,7 @@ Download pinouts here:
 
 ## Dimensions
 
-![Pix32 v5 Image](../../assets/flight_controller/holybro_pix32_v5/Dimensions_no_border.jpg)
+![Pix32 v5 Image](images/drones/flight_controller/holybro_pix32_v5/Dimensions_no_border.jpg)
 
 ## Voltage Ratings
 
@@ -134,7 +134,7 @@ The system's [serial console](../debug/system_console.md) and SWD interface runs
 
 <!--while the I/O console and SWD interface can be accessed via **I/O Debug** port.-->
 
-![FMU debug port diagram](../../assets/flight_controller/holybro_pix32_v5/FMU_Debug_Port_Horizontal.jpg)
+![FMU debug port diagram](images/drones/flight_controller/holybro_pix32_v5/FMU_Debug_Port_Horizontal.jpg)
 
 The pinout uses the standard [Pixhawk debug connector pinout](https://pixhawk.org/pixhawk-connector-standard/#dronecode_debug).
 For wiring information see:

@@ -9,7 +9,7 @@ Typically you will need a pair of devices - one for the vehicle and one for the 
 
 Hardware for the SiK radio can be obtained from various manufacturers/stores in variants that support different range and form factors.
 
-![SiK Radio](../../assets/hardware/telemetry/holybro_sik_radio.jpg)
+![SiK Radio](images/drones/hardware/telemetry/holybro_sik_radio.jpg)
 
 <a id="vendors"></a>
 ## Vendors

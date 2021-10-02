@@ -9,7 +9,7 @@ The [Nora](http://doc.cuav.net/flight-controller/x7/en/nora.html)<sup>&reg;</sup
 It is an ideal choice for industrial drones and large-scale heavy-duty drones.
 It is mainly supplied to commercial manufacturers.
 
-![CUAV x7](../../assets/flight_controller/cuav_nora/nora.png)
+![CUAV x7](images/drones/flight_controller/cuav_nora/nora.png)
 
 Nora is a variant of the CUAV X7.
 It adopts an integrated motherboard (soft and hard board), which reduces flight controller's internal connectors, improves reliability, and places all the interfaces on the side (making the wiring more concise).
@@ -85,9 +85,9 @@ The remaining 6 PWM ports are still being adapted (so it is not compatible with 
 
 ## Size and Pinouts
 
-![CUAV x7](../../assets/flight_controller/cuav_nora/nora-size.jpg)
+![CUAV x7](images/drones/flight_controller/cuav_nora/nora-size.jpg)
 
-![X7 pinouts](../../assets/flight_controller/cuav_nora/nora-pinouts.jpg)
+![X7 pinouts](images/drones/flight_controller/cuav_nora/nora-pinouts.jpg)
 
 :::warning
 The `RCIN` port is limited to powering the rc receiver and cannot be connected to any power/load.
@@ -151,7 +151,7 @@ CUAV provides a dedicated debugging cable, which can be connected to the `DSU7` 
 This splits out an FTDI cable for connecting the [PX4 System Console](../debug/system_console.md) to a computer USB port, and SWD pins used for SWD/JTAG debugging.
 The provided debug cable does not connect to the SWD port `Vref` pin (1).
 
-![CUAV Debug cable](../../assets/flight_controller/cuav_v5_plus/cuav_v5_debug_cable.jpg)
+![CUAV Debug cable](images/drones/flight_controller/cuav_v5_plus/cuav_v5_debug_cable.jpg)
 
 :::warning
 The SWD Vref pin (1) uses 5V as Vref but the CPU is run at 3.3V!

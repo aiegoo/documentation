@@ -101,11 +101,11 @@ Calibration refers to the process of measuring the change in sensor value across
 
 The inertial rate gyro and accelerometer sensor offsets are calculated using a 3rd order polynomial, whereas the barometric pressure sensor offset is calculated using a 5th order polynomial. Example fits are show below:
 
-![Thermal calibration gyro](../../assets/calibration/thermal_calibration_gyro.png)
+![Thermal calibration gyro](images/drones/calibration/thermal_calibration_gyro.png)
 
-![Thermal calibration accel](../../assets/calibration/thermal_calibration_accel.png)
+![Thermal calibration accel](images/drones/calibration/thermal_calibration_accel.png)
 
-![Thermal calibration barometer](../../assets/calibration/thermal_calibration_baro.png)
+![Thermal calibration barometer](images/drones/calibration/thermal_calibration_baro.png)
 
 ### Calibration Parameter Storage
 

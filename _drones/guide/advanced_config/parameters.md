@@ -20,11 +20,11 @@ While some parameters can be changed in flight, this is not recommended (except 
 You can search for a parameter by entering a term in the *Search* field.
 This will show you a list of all parameter names and descriptions that contain the entered substring (press **Clear** to reset the search).
 
-![Parameters Search](../../assets/qgc/setup/parameters/parameters_search.jpg)
+![Parameters Search](images/drones/qgc/setup/parameters/parameters_search.jpg)
 
 You can also browse the parameters by group by clicking on the buttons to the left (in the image below the *Battery Calibration* group is selected).
 
-![Parameters Screen](../../assets/qgc/setup/parameters/parameters_px4.jpg)
+![Parameters Screen](images/drones/qgc/setup/parameters/parameters_px4.jpg)
 
 :::tip
 If you can't find an expected parameter, see the [next section](#missing).
@@ -76,7 +76,7 @@ There are two options to solve this problem:
 To change the value of a parameter click on the parameter row in a group or search list.
 This will open a side dialog in which you can update the value (this dialog also provides additional detailed information about the parameter - including whether a reboot is required for the change to take effect).
 
-![Changing a parameter value](../../assets/qgc/setup/parameters/parameters_changing.png)
+![Changing a parameter value](images/drones/qgc/setup/parameters/parameters_changing.png)
 
 :::note
 When you click **Save** the parameter is automatically and silently uploaded to the connected vehicle.
@@ -87,7 +87,7 @@ Depending on the parameter, you may then need to reboot the flight controller fo
 
 You can select additional options from the **Tools** menu on the top right hand side of the screen.
 
-![Tools menu](../../assets/qgc/setup/parameters/parameters_tools_menu.png)
+![Tools menu](images/drones/qgc/setup/parameters/parameters_tools_menu.png)
 
 
 **Refresh**

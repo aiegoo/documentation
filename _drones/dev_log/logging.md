@@ -137,7 +137,7 @@ The connection does not need to be reliable, the protocol is designed to handle 
 There are different clients that support ulog streaming:
 - `mavlink_ulog_streaming.py` script in PX4-Autopilot/Tools.
 - QGroundControl:
-  ![QGC Log Streaming](../../assets/gcs/qgc-log-streaming.png)
+  ![QGC Log Streaming](images/drones/gcs/qgc-log-streaming.png)
 - [MAVGCL](https://github.com/ecmnet/MAVGCL)
 
 ### Diagnostics

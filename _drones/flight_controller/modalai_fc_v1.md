@@ -19,7 +19,7 @@ Contact the [manufacturer](https://forum.modalai.com/) for hardware support or c
 The ModalAI [Flight Core v1](https://modalai.com/flight-core) ([Datasheet](https://docs.modalai.com/flight-core-datasheet)) is a flight controller for PX4, made in the USA.
 The Flight Core can be paired with ModalAI [VOXL](https://modalai.com/voxl) ([Datasheet](https://docs.modalai.com/voxl-datasheet/)) for obstacle avoidance and GPS-denied navigation, or used independently as a standalone flight controller.
 
-![FlightCoreV1](../../assets/flight_controller/modalai/fc_v1/main.jpg)
+![FlightCoreV1](images/drones/flight_controller/modalai/fc_v1/main.jpg)
 
 Flight Core is identical to the PX4 Flight Controller portion of [VOXL Flight](https://www.modalai.com/voxl-flight) ([Datasheet](https://docs.modalai.com/voxl-flight-datasheet/)) which integrates the VOXL Companion Computer and Flight Core into a single PCB.
 
@@ -61,7 +61,7 @@ More detailed hardware documentation can be found [here](https://docs.modalai.co
 
 ## Dimensions
 
-![FlightCoreV1Dimensions](../../assets/flight_controller/modalai/fc_v1/dimensions.png)
+![FlightCoreV1Dimensions](images/drones/flight_controller/modalai/fc_v1/dimensions.png)
 
 
 ## PX4 Firwmare Compatibility
@@ -91,7 +91,7 @@ This board supported in QGroundControl 4.0 and later.
 
 The diagram below shows the recommended orientation, which corresponds to `ROTATION_NONE` starting with PX4 v1.11 (and on the [ModalAI-maintained PX4 v1.10 branch](https://github.com/modalai/px4-firmware/tree/modalai-1.10))
 
-![FlightCoreV1Orientation](../../assets/flight_controller/modalai/fc_v1/orientation.png)
+![FlightCoreV1Orientation](images/drones/flight_controller/modalai/fc_v1/orientation.png)
 
 :::warning
 For *PX4 v1.10* stable releases from *QGroundControl* use `ROTATION_YAW_180` for the above orientation.
@@ -101,7 +101,7 @@ For *PX4 v1.10* stable releases from *QGroundControl* use `ROTATION_YAW_180` for
 
 Detailed information about the pinouts can be found [here](https://docs.modalai.com/flight-core-datasheet-connectors).
 
-![FlightCoreV1Top](../../assets/flight_controller/modalai/fc_v1/top.png)
+![FlightCoreV1Top](images/drones/flight_controller/modalai/fc_v1/top.png)
 
 | Connector | Summary |
 | --- | --- |
@@ -118,7 +118,7 @@ Detailed information about the pinouts can be found [here](https://docs.modalai.
 | J12  | RC input, Spektrum/SBus/UART Connector |
 | J13  | I2C Display (Spare Sensor Connector) / Safety Button Input |
 
-![FlightCoreV1Bottom](../../assets/flight_controller/modalai/fc_v1/bottom.png)
+![FlightCoreV1Bottom](images/drones/flight_controller/modalai/fc_v1/bottom.png)
 
 ### User Guide
 

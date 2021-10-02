@@ -42,7 +42,7 @@ You can use *QGroundControl* to load (flash) PX4 onto the [vehicle control hardw
 
 *QGroundControl* runs on Windows, Android, MacOS or Linux. Download and install it from [here](http://qgroundcontrol.com/downloads/). 
 
-![QGC Main Screen](../../assets/concepts/qgc_main_screen.jpg)
+![QGC Main Screen](images/drones/concepts/qgc_main_screen.jpg)
 
 <span id="vehicle_controller"></span>
 ## Vehicle/Flight Controller Board
@@ -70,7 +70,7 @@ PX4 uses *outputs* to control: motor speed (e.g. via [ESC](#esc_and_motors)), fl
 
 For example, the images below show the PWM output ports for [Pixhawk 4](../flight_controller/pixhawk4.md) and [Pixhawk 4 mini](../flight_controller/pixhawk4_mini.md).
 
-![Pixhawk 4 output ports](../../assets/flight_controller/pixhawk4/pixhawk4_main_aux_ports.jpg) ![Pixhawk4 mini MAIN ports](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_pwm.png)
+![Pixhawk 4 output ports](images/drones/flight_controller/pixhawk4/pixhawk4_main_aux_ports.jpg) ![Pixhawk4 mini MAIN ports](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_pwm.png)
 
 The outputs are divided into `MAIN` and `AUX` outputs, and individually numbered (i.e. `MAINn` and `AUXn`, where `n` is 1 to usually 6 or 8).
 
@@ -139,7 +139,7 @@ Some RC systems can additionally receive telemetry information back from the aut
 PX4 does not require a remote control system for autonomous flight modes.
 :::
 
-![Taranis X9D Transmitter](../../assets/hardware/transmitters/frsky_taranis_x9d_transmitter.jpg)
+![Taranis X9D Transmitter](images/drones/hardware/transmitters/frsky_taranis_x9d_transmitter.jpg)
 
 [RC System Selection](../getting_started/rc_transmitter_receiver.md) explains how to choose an RC system. Other related topics include:
 * [Radio/Remote Control Setup](../config/radio.md) - Remote control configuration in *QGroundControl*.
@@ -153,7 +153,7 @@ A [computer joystick](../config/joystick.md) connected through *QGroundControl* 
 This approach is used by ground control units that have an integrated ground control station, like the *Auterion* [Skynav](https://auterion-gs.com/skynav/) or *UAVComponents* [MicroNav](https://www.uavcomp.com/command-control/micronav/).
 Joysticks are also commonly used to fly the vehicle in simulation.
 
-![Photo of MicroNav, a ground controller with integrated joysticks](../../assets/peripherals/joystick/micronav.jpg)
+![Photo of MicroNav, a ground controller with integrated joysticks](images/drones/peripherals/joystick/micronav.jpg)
 
 
 <a id="safety_switch"></a>
@@ -267,7 +267,7 @@ For more information see: [Safety](../config/safety.md) (Basic Configuration).
 
 All the vehicles, boats and aircraft have a heading direction or an orientation based on their forward motion.
 
-![Frame Heading](../../assets/concepts/frame_heading.png)
+![Frame Heading](images/drones/concepts/frame_heading.png)
 
 :::note
 For a VTOL Tailsitter the heading is relative to the multirotor configuration (i.e. vehicle pose during, takeoff, hovering, landing).
@@ -277,7 +277,7 @@ It is important to know the vehicle heading direction in order to align the auto
 Multicopters have a heading even when they are symmetrical from all sides!
 Usually manufacturers use a colored props or colored arms to indicate the heading.
 
-![Frame Heading TOP](../../assets/concepts/frame_heading_top.png)
+![Frame Heading TOP](images/drones/concepts/frame_heading_top.png)
 
 In our illustrations we will use red coloring for the front propellers of multicopter to show heading.
 

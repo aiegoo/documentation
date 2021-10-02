@@ -10,7 +10,7 @@ The system automatically chooses the best available compass based on their _prio
 If the primary compass fails in-flight, it will failover to the next one.
 If it fails before flight, arming will be denied.
 
-![GPS + Compass](../../assets/hardware/gps/gps_compass.jpg)
+![GPS + Compass](images/drones/hardware/gps/gps_compass.jpg)
 
 :::tip
 When using [Pixhawk-series](../flight_controller/pixhawk_series.md) flight controllers, we recommend using a *combined GPS + Compass* mounted as far away from the motor/ESC power supply lines as possible - typically on a pedestal or wing (for fixed-wing).
@@ -107,10 +107,10 @@ The following steps show how to configure a secondary GPS on the `TELEM 2` port 
 1. [Find and set](../advanced_config/parameters.md) the parameter [GPS_2_CONFIG](../advanced_config/parameter_reference.md#GPS_2_CONFIG) to **TELEM 2**.
    - Open *QGroundControl* and navigate to the **Vehicle Setup > Parameters** section.
    - Select the **GPS** tab (1), then open the [GPS_2_CONFIG](../advanced_config/parameter_reference.md#GPS_2_CONFIG) parameter (2) and select *TELEM 2* from the dropdown list (3).
-     ![QGC Serial Example](../../assets/peripherals/qgc_serial_config_example.png)
+     ![QGC Serial Example](images/drones/peripherals/qgc_serial_config_example.png)
 1. Reboot the vehicle in order to make the other parameters visible.
 1. Select the **Serial** tab, and open the [SER_TEL2_BAUD](../advanced_config/parameter_reference.md#SER_TEL2_BAUD) parameter (`TELEM 2` port baud rate): set it to *Auto*.
-  ![QGC Serial Baudrate Example](../../assets/peripherals/qgc_serial_baudrate_example.png)
+  ![QGC Serial Baudrate Example](images/drones/peripherals/qgc_serial_baudrate_example.png)
 
 After setting up the second GPS port:
 1. Configure the ECL/EKF2 estimator to blend data from both GPS systems.

@@ -9,7 +9,7 @@ Contact the [manufacturer](https://store.cuav.net/) for hardware support or comp
 
 The autopilot is small enough to use in 220mm racing drones, but remains powerful enough for most drone use.
 
-![V5 nano - Hero image](../../assets/flight_controller/cuav_v5_nano/v5_nano_01.png)
+![V5 nano - Hero image](images/drones/flight_controller/cuav_v5_nano/v5_nano_01.png)
 
 :::note
 The V5 nano is similar to the [CUAV V5+](../flight_controller/cuav_v5_plus.md), but has an all-in-one form factor, fewer PWM ports (can't be used for [airframes](../airframes/airframe_reference.md) that use AUX ports), and does not have internal damping.
@@ -101,7 +101,7 @@ make px4_fmu-v5_default
 The [PX4 System Console](../debug/system_console.md) and [SWD interface](../debug/swd_debug.md) operate on the **FMU Debug** port (`DSU7`).
 The board does not have an I/O debug interface.
 
-![Debug port (DSU7)](../../assets/flight_controller/cuav_v5_nano/debug_port_dsu7.jpg)
+![Debug port (DSU7)](images/drones/flight_controller/cuav_v5_nano/debug_port_dsu7.jpg)
 
 The debug port (`DSU7`) uses a [JST BM06B](https://www.digikey.com.au/product-detail/en/jst-sales-america-inc/BM06B-GHS-TBT-LF-SN-N/455-1582-1-ND/807850) connector and has the following pinout:
 
@@ -118,7 +118,7 @@ The product package includes a convenient debug cable that can be connected to t
 This splits out an FTDI cable for connecting the [PX4 System Console](../debug/system_console.md) to a computer USB port, and SWD pins used for SWD/JTAG debugging. 
 The provided debug cable does not connect to the SWD port `Vref` pin (1).
 
-![CUAV Debug cable](../../assets/flight_controller/cuav_v5_nano/cuav_nano_debug_cable.jpg)
+![CUAV Debug cable](images/drones/flight_controller/cuav_v5_nano/cuav_nano_debug_cable.jpg)
 
 :::warning
 The SWD Vref pin (1) uses 5V as Vref but the CPU is run at 3.3V!

@@ -10,7 +10,7 @@ Refer to [Specification and Model Comparison section](#specification-and-model-c
 
 Using RTK allows PX4 to get its position with centimeter-level accuracy, which is much more accurate than can be provided by a normal GPS.
 
-![h-rtk](../../assets/hardware/gps/rtk_holybro_h-rtk-f9p_all_label.jpg)
+![h-rtk](images/drones/hardware/gps/rtk_holybro_h-rtk-f9p_all_label.jpg)
 
 ## Purchase
 
@@ -31,15 +31,15 @@ The cables/connectors may need to be modified in order to connect to other fligh
 
 ## Pin Map
 
-![h-rtk-f9p_rover_pinmap](../../assets/hardware/gps/rtk_holybro_h-rtk-f9p_pinmap.jpg)
+![h-rtk-f9p_rover_pinmap](images/drones/hardware/gps/rtk_holybro_h-rtk-f9p_pinmap.jpg)
 
 
 ## Specification and Model Comparison
 
-![h-rtk-f9p_spec](../../assets/hardware/gps/rtk_holybro_h-rtk-f9p_spec.png)
+![h-rtk-f9p_spec](images/drones/hardware/gps/rtk_holybro_h-rtk-f9p_spec.png)
 
 ## GPS Accessories
 
 [H-RTK Mount (Holybro Website)](https://shop.holybro.com/spare-parts-gps-mount_p1228.html)
 
-![h-rtk](../../assets/hardware/gps/rtk_holybro_h-rtk_mount_3.png)
+![h-rtk](images/drones/hardware/gps/rtk_holybro_h-rtk_mount_3.png)

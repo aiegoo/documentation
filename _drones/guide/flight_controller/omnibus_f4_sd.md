@@ -8,7 +8,7 @@ Contact the manufacturer for support or compliance issues.
 The *Omnibus F4 SD* is a controller board designed for racers. 
 In contrast to a typical racer board it has some additional features, such as an SD card and a faster CPU.
 
-<img src="../../assets/flight_controller/omnibus_f4_sd/board.jpg" width="400px" title="Omnibus F4 SD" />
+<img src="images/drones/flight_controller/omnibus_f4_sd/board.jpg" width="400px" title="Omnibus F4 SD" />
 
 These are the main differences compared to a [Pixracer](../flight_controller/pixracer.md):
 
@@ -85,14 +85,14 @@ Layouts/Silkscreens for various versions are shown below.
 
 Below are silkscreens for the Airbot Omnibus F4 SD (V1), showing both top and bottom.
 
-![Omnibus F4 SD v1 Silkscreen Top](../../assets/flight_controller/omnibus_f4_sd/silk-top.jpg)
-![Omnibus F4 SD v1 Silkscreen Bottom](../../assets/flight_controller/omnibus_f4_sd/silk-bottom.jpg)
+![Omnibus F4 SD v1 Silkscreen Top](images/drones/flight_controller/omnibus_f4_sd/silk-top.jpg)
+![Omnibus F4 SD v1 Silkscreen Bottom](images/drones/flight_controller/omnibus_f4_sd/silk-bottom.jpg)
 
 ### Hobbywing XRotor Flight Controller F4
 
 Below are silkscreens for the Hobbywing XRotor Flight Controller F4.
 
-![Hobbywing XRotor Flight Controller F4 Silkscreen](../../assets/flight_controller/omnibus_f4_sd/hobbywing_xrotor_silk.png)
+![Hobbywing XRotor Flight Controller F4 Silkscreen](images/drones/flight_controller/omnibus_f4_sd/hobbywing_xrotor_silk.png)
 
 
 ## Pinouts
@@ -115,7 +115,7 @@ Some Omnibus F4 boards have a jumper connecting either or both the MCU SBUS and 
 
   - Airbot Omnibus F4 SD Pinout is on Port J10 (TX6/RX6):
 
-  ![Omnibus F4 SD UART6](../../assets/flight_controller/omnibus_f4_sd/uart6.jpg)
+  ![Omnibus F4 SD UART6](images/drones/flight_controller/omnibus_f4_sd/uart6.jpg)
 
 - UART4
   - TX: MCU pin PA0
@@ -126,9 +126,9 @@ Some Omnibus F4 boards have a jumper connecting either or both the MCU SBUS and 
     - TX: RSSI pin
     - RX: PWM out 5
 
-  ![Omnibus F4 SD UART4](../../assets/flight_controller/omnibus_f4_sd/uart4.jpg)
+  ![Omnibus F4 SD UART4](images/drones/flight_controller/omnibus_f4_sd/uart4.jpg)
 
-  ![Omnibus F4 SD UART4 Top](../../assets/flight_controller/omnibus_f4_sd/uart4-top.jpg)
+  ![Omnibus F4 SD UART4 Top](images/drones/flight_controller/omnibus_f4_sd/uart4-top.jpg)
 
 ### I2C
 
@@ -142,13 +142,13 @@ You can use 2.2k pullups for example to attach an external mag.
 :::
 
   - Airbot Omnibus F4 SD Pinout is on Port J10 (SCL [clock] / SCA [data]):
-<img src="../../assets/flight_controller/omnibus_f4_sd/uart6.jpg" title="Omnibus F4 SD UART6" />
+<img src="images/drones/flight_controller/omnibus_f4_sd/uart6.jpg" title="Omnibus F4 SD UART6" />
 
 Here is an example implementation. I used a Spektrum plug to get 3.3v from the DSM port, connecting only 3.3v + to each line via 2.2k resistor.
 
-![Omnibus F4 SD Pullup](../../assets/flight_controller/omnibus_f4_sd/pullup-schematic.jpg)
+![Omnibus F4 SD Pullup](images/drones/flight_controller/omnibus_f4_sd/pullup-schematic.jpg)
 
-![Omnibus F4 SD Pullup Implementation](../../assets/flight_controller/omnibus_f4_sd/pullup.jpg)
+![Omnibus F4 SD Pullup Implementation](images/drones/flight_controller/omnibus_f4_sd/pullup.jpg)
 
 ## Serial Port Mapping
 

@@ -8,7 +8,7 @@ Contact the [manufacturer](https://shop.holybro.com/) for hardware support or co
 *Durandal*<sup>&reg;</sup> is the latest update to the successful family of Holybro flight controllers. 
 It was designed and developed by Holybro.
 
-![Durandal](../../assets/flight_controller/durandal/durandal_hero.jpg)
+![Durandal](images/drones/flight_controller/durandal/durandal_hero.jpg)
 
 At high level, some of the key features are:
 - Integrated temperature control for sensors.
@@ -94,27 +94,27 @@ Order from [Holybro](https://shop.holybro.com/durandalbeta_p1189.html).
 The locations of ports/connections are shown here (and below in the [pinouts section](#pinouts)).
 
 ### Top
-![Durandal - Top Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_top.jpg)
+![Durandal - Top Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_top.jpg)
 
 ### Front
-![Durandal - Front Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_front.jpg)
+![Durandal - Front Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_front.jpg)
 
 ### Back
-![Durandal - Back Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_back.jpg)
+![Durandal - Back Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_back.jpg)
 
 ### Right
-![Durandal - Right-side Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_right.jpg)
+![Durandal - Right-side Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_right.jpg)
 
 
 ### Left
-![Durandal - Left-side Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_left.jpg)
+![Durandal - Left-side Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_left.jpg)
 
 
 ## Dimensions
 
 All dimensions are in millimeters.
 
-![Durandal Dimensions](../../assets/flight_controller/durandal/durandal_dimensions.jpg)
+![Durandal Dimensions](images/drones/flight_controller/durandal/durandal_dimensions.jpg)
 
 <!-- 
 ## Voltage Ratings
@@ -210,12 +210,12 @@ These can also be downloaded from [here](http://www.holybro.com/manual/Durandal-
 
 ### Top Pinouts
 
-![Durandal - Top Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_top.jpg)
+![Durandal - Top Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_top.jpg)
 
 
 ### Front Pinouts
 
-![Durandal - Front Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_front.jpg)
+![Durandal - Front Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_front.jpg)
 
 #### SUBS Out port
 
@@ -307,7 +307,7 @@ Pin | Signal | Volt
 
 ### Back Pinouts
 
-![Durandal - Back Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_back.jpg)
+![Durandal - Back Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_back.jpg)
 
 #### MAIN Out
 
@@ -345,7 +345,7 @@ S | SBUS_IN/PPM_IN | +3.3V
 
 ### Right-side Pinouts
 
-![Durandal - Right-side Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_right.jpg)
+![Durandal - Right-side Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_right.jpg)
 
 #### CAN2 port
 
@@ -379,7 +379,7 @@ Pin | Signal | Volt
 
 ### Left-side Pinouts
 
-![Durandal - Left-side Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_left.jpg)
+![Durandal - Left-side Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_left.jpg)
 
 <span id="debug_port"></span>
 #### DEBUG port

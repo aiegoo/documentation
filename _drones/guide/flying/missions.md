@@ -16,7 +16,7 @@ You can also use the *Pattern* tool to automate creation of survey grids.
 For more information see the [QGroundControl User Guide](https://docs.qgroundcontrol.com/en/PlanView/PlanView.html).
 :::
 
-![planning-mission](../../assets/flying/planning_mission.jpg)
+![planning-mission](images/drones/flying/planning_mission.jpg)
 
 ### Setting Vehicle Yaw
 
@@ -36,7 +36,7 @@ By default, the radius is small to ensure that multirotors pass above the waypoi
 
 The image below shows the same mission flown with different acceptance radius parameters:
 
-![acceptance radius comparison](../../assets/flying/acceptance_radius_comparison.jpg)
+![acceptance radius comparison](images/drones/flying/acceptance_radius_comparison.jpg)
 
 The speed in the turn is automatically computed based on the acceptance radius (= turning radius) and the maximum allowed acceleration and jerk (see [Jerk-limited Type Trajectory for Multicopters](../config_mc/mc_jerk_limited_type_trajectory.md#auto-mode)).
 
@@ -49,5 +49,5 @@ For more information about the impact of the acceptance radius around the waypoi
 Once the mission is uploaded, switch to the flight view.
 The mission is displayed in a way that makes it easy to track progress (it cannot be modified in this view). 
 
-![flying-mission](../../assets/flying/flying_mission.jpg)
+![flying-mission](images/drones/flying/flying_mission.jpg)
 

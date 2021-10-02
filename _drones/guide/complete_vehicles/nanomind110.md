@@ -1,6 +1,6 @@
 ## NanoMind 110
 
-![nanomind 11](../../assets/hardware/hardware-nanomind110.png)
+![nanomind 11](images/drones/hardware/hardware-nanomind110.png)
 
 ### Summary
 

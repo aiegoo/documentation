@@ -2,7 +2,7 @@
 
 PX4 uses the term VTOL to refer to vehicles that support both forward flight like a fixed-wing aircraft ("airplane") and vertical take off and landing like a helicopter or multicopter.
 
-![Vertical Technologies: Deltaquad QuadPlane VTOL](../../assets/airframes/vtol/vertical_technologies_deltaquad/hero.jpg)
+![Vertical Technologies: Deltaquad QuadPlane VTOL](images/drones/airframes/vtol/vertical_technologies_deltaquad/hero.jpg)
 
 VTOL vehicles offer the benefits of both multicopter and fixed-wing flight:
 - **Vertical takeoff and landing:** Even inexperienced pilots can take off and land virtually anywhere.
@@ -21,7 +21,7 @@ PX4 supports the three most important/main VTOL types.
     <div class="grid_text">
     Rotors permanently in fixed wing-position.
     Takes off and lands on tail. Whole vehicle tilts forward to enter forward flight.
-    <img src="../../assets/airframes/vtol/wingtraone/hero.jpg" title="wingtraone" />
+    <img src="images/drones/airframes/vtol/wingtraone/hero.jpg" title="wingtraone" />
     <ul>
       <li>Simple and robust</li>
       <li>Minimal set of actuators</li>
@@ -35,7 +35,7 @@ PX4 supports the three most important/main VTOL types.
   Rotors swivel 90 degrees to transition from multicopter to forward flight orientation.
   Takes off and lands on belly.
   <div class="grid_text">
-  <img src="../../assets/airframes/vtol/eflite_convergence_pixfalcon/hero.jpg" title="Eflight Confvergence" />
+  <img src="images/drones/airframes/vtol/eflite_convergence_pixfalcon/hero.jpg" title="Eflight Confvergence" />
   <ul>
     <li>Additional actuators for motor tilts</li>
     <li>Mechanically complex tilting mechanism</li>
@@ -47,7 +47,7 @@ PX4 supports the three most important/main VTOL types.
   <div class="grid_item_heading"><a href="standardvtol.html" title="Standard VTOL"><big>Standard VTOL</big></a></div>
   <div class="grid_text">
   Separate rotors/flight controls for multicopter and forward flight. Takes off and lands on belly.
-  <img src="../../assets/airframes/vtol/vertical_technologies_deltaquad/hero_small.png" title="Vertical Technologies: Deltaquad" />
+  <img src="images/drones/airframes/vtol/vertical_technologies_deltaquad/hero_small.png" title="Vertical Technologies: Deltaquad" />
   <ul>
     <li>Additional weight from separate hover/forward flight propulsion systems</li>
     <li>Easiest to control due to dedicated hover/forward flight actuators</li>

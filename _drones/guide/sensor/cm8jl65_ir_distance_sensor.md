@@ -6,7 +6,7 @@ It must be connected to a UART/serial bus.
 - Dimensions: 38 mm x 18mm x 7mm
 - Weight: ≤10g
 
-![PSK-CM8JL65-CC5 ToF IR Distance Sensor - Hero image](../../assets/hardware/sensors/cm8jl65/psk_cm8jl65_hero.jpg)
+![PSK-CM8JL65-CC5 ToF IR Distance Sensor - Hero image](images/drones/hardware/sensors/cm8jl65/psk_cm8jl65_hero.jpg)
 
 
 ## Hardware Setup
@@ -15,7 +15,7 @@ PSK-CM8JL65-CC5 can be connected to any unused *serial port*, e.g.: TELEM2, TELE
 
 The pinouts are labeled on the bottom of the sensor:
 
-![PSK-CM8JL65-CC5 ToF IR Distance Sensor - Pinout connections](../../assets/hardware/sensors/cm8jl65/psk-cm8jl65-cc5-02.jpg)
+![PSK-CM8JL65-CC5 ToF IR Distance Sensor - Pinout connections](images/drones/hardware/sensors/cm8jl65/psk-cm8jl65-cc5-02.jpg)
 
 
 ## Parameter Setup

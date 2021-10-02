@@ -43,7 +43,7 @@ PX4 supports two (mathematically equivalent) forms of the PID rate controller in
 
 Users can select the form that is used by setting the proportional gain for the other form to "1" (i.e. in the diagram below set **K** to 1 for the parallel form, or **P** to 1 for the standard form - this will replace either the K or P blocks with a line).
 
-![PID_Mixed](../../assets/mc_pid_tuning/PID_algorithm_Mixed.png)
+![PID_Mixed](images/drones/mc_pid_tuning/PID_algorithm_Mixed.png)
 <!-- The drawing is on draw.io: https://drive.google.com/file/d/1hXnAJVRyqNAdcreqNa5W4PQFkYnzwgOO/view?usp=sharing -->
 - _G(s)_ represents the angular rates dynamics of a vehicle
 - _r_ is the rate setpoint
@@ -69,14 +69,14 @@ For more information see:
 The *parallel form* is the simplest form, and is (hence) commonly used in textbooks.
 In this case the output of the controller is simply the sum of the proportional, integral and derivative actions.
 
-![PID_Parallel](../../assets/mc_pid_tuning/PID_algorithm_Parallel.png)
+![PID_Parallel](images/drones/mc_pid_tuning/PID_algorithm_Parallel.png)
 
 ##### Standard Form
 
 This form is mathematically equivalent to the parallel form, but the main advantage is that (even if it seems counter intuitive) it decouples the proportional gain tuning from the integral and derivative gains.
 This means that a new platform can easily be tuned by taking the gains of a drone with similar size/inertia and simply adjust the K gain to have it flying properly.
 
-![PID_Standard](../../assets/mc_pid_tuning/PID_algorithm_Standard.png)
+![PID_Standard](images/drones/mc_pid_tuning/PID_algorithm_Standard.png)
 
 
 #### Rate PID Tuning
@@ -155,12 +155,12 @@ A well-tuned vehicle in *Acro mode* will not tilt randomly towards one side, but
 Looking at a log helps to evaluate tracking performance as well.
 Here is an example for good roll and yaw rate tracking:
 
-![roll rate tracking](../../assets/mc_pid_tuning/roll_rate_tracking.png)
-![yaw rate tracking](../../assets/mc_pid_tuning/yaw_rate_tracking.png)
+![roll rate tracking](images/drones/mc_pid_tuning/roll_rate_tracking.png)
+![yaw rate tracking](images/drones/mc_pid_tuning/yaw_rate_tracking.png)
 
 And here is a good example for the roll rate tracking with several flips, which create an extreme step-input.
 You can see that the vehicle overshoots only by a very small amount:
-![roll rate tracking flips](../../assets/mc_pid_tuning/roll_rate_tracking_flip.png)
+![roll rate tracking flips](images/drones/mc_pid_tuning/roll_rate_tracking_flip.png)
 
 
 ### Attitude Controller
@@ -202,7 +202,7 @@ The motor command in PX4 called `actuator_output` can be PWM, Dshot, UAVCAN comm
 The curves shown in this plot are parametrized by both &alpha; and k, and also show thrust and PWM in real units (kgf and &mu;s).
 In order to simplify the curve fit problem, you can normalize the data between 0 and 1 to find `k` without having to estimate &alpha; (&alpha; = 1, when the data is normalized).
 
-[![Thrust Curve Compensation](../../assets/mc_pid_tuning/thrust-curve-compensation.svg)][THR_MDL_FAC_Calculation]
+[![Thrust Curve Compensation](images/drones/mc_pid_tuning/thrust-curve-compensation.svg)][THR_MDL_FAC_Calculation]
 
 :::note
 The mapping between PWM and static thrust depends highly on the battery voltage.
@@ -211,7 +211,7 @@ The mapping between PWM and static thrust depends highly on the battery voltage.
 An alternative way of performing this experiment is to make a scatter plot of the normalized motor command and thrust values, and iteratively tune the thrust curve by experimenting with the `THR_MDL_FAC` parameter.
 An example of that graph is shown here:
 
-![Graph showing relative thrust and PWM scatter](../../assets/mc_pid_tuning/relative_thrust_and_pwm_scatter.svg)
+![Graph showing relative thrust and PWM scatter](images/drones/mc_pid_tuning/relative_thrust_and_pwm_scatter.svg)
 
 If raw motor command and thrust data is collected throughout the full-scale range in the experiment, you can normalize the data using the equation:
 
@@ -274,7 +274,7 @@ The motor thrusts are in <span style="color:#6A9153">green</span>.
 With Airmode enabled, the commanded thrust is increased by <span style="color:#B85450">b</span>.
 When it is disabled, <span style="color:#9673A6">r</span> is reduced.
 
-![Airmode](../../assets/mc_pid_tuning/MC_PID_tuning-Airmode.svg)
+![Airmode](images/drones/mc_pid_tuning/MC_PID_tuning-Airmode.svg)
 <!-- The drawing is on draw.io: https://drive.google.com/file/d/1N0qjbiJX6JuEk2I1-xFvigLEPKJRIjBP/view?usp=sharing
      On the first Tab
 -->

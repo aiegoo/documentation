@@ -4,7 +4,7 @@ This vehicle was chosen to understand how a Pixhawk could be used for wheeled pl
 We chose to use a Traxxas vehicle as they are very popular and it is a very strong brand in the RC community.
 The idea was to develop a platform that allows for easy control of wheeled UGVs with an autopilot.
 
-![Traxxas Stampede VXL](../../assets/airframes/rover/traxxas_stampede_vxl/stampede.jpg)
+![Traxxas Stampede VXL](images/drones/airframes/rover/traxxas_stampede_vxl/stampede.jpg)
 
 ## Parts List
 
@@ -22,17 +22,17 @@ The idea was to develop a platform that allows for easy control of wheeled UGVs 
 The assembly consists of a wooden frame on which all the autopilot parts were attached. 
 Tests showed that a better vibration insulation should be used, especially for the Pixhawk and the Flow module.
 
-![Stampede Chassis](../../assets/airframes/rover/traxxas_stampede_vxl/stampede_chassis.jpg)
+![Stampede Chassis](images/drones/airframes/rover/traxxas_stampede_vxl/stampede_chassis.jpg)
 
-![Wooden Panel Top](../../assets/airframes/rover/traxxas_stampede_vxl/panel_top.jpg)
+![Wooden Panel Top](images/drones/airframes/rover/traxxas_stampede_vxl/panel_top.jpg)
 
-![Wooden Panel Bottom](../../assets/airframes/rover/traxxas_stampede_vxl/panel_bottom.jpg)
+![Wooden Panel Bottom](images/drones/airframes/rover/traxxas_stampede_vxl/panel_bottom.jpg)
 
-![Traxxas Stampede Final Assembly](../../assets/airframes/rover/traxxas_stampede_vxl/final_assembly.jpg)
+![Traxxas Stampede Final Assembly](images/drones/airframes/rover/traxxas_stampede_vxl/final_assembly.jpg)
 
-![Side View Final Assembly](../../assets/airframes/rover/traxxas_stampede_vxl/final_side.jpg)
+![Side View Final Assembly](images/drones/airframes/rover/traxxas_stampede_vxl/final_side.jpg)
 
-![Wodden panel fixture](../../assets/airframes/rover/traxxas_stampede_vxl/mounting_detail.jpg)
+![Wodden panel fixture](images/drones/airframes/rover/traxxas_stampede_vxl/mounting_detail.jpg)
 
 For this particular mounting we chose to use the clip supplied with the rover to attach the upper plate. 
 For this, two supports were 3D printed. 
@@ -63,7 +63,7 @@ The main rover-specific configuration is setting the correct frame:
 1. Scroll down the list to find the **Rover** icon. 
 1. Choose **Traxxas stampede vxl 2wd** from the drop down list.
 
-![Select Airframe](../../assets/airframes/rover/traxxas_stampede_vxl/airframe_px4_rover_traxxas_stampede_vxl_2wd.jpg)
+![Select Airframe](images/drones/airframes/rover/traxxas_stampede_vxl/airframe_px4_rover_traxxas_stampede_vxl_2wd.jpg)
 
 
 ## Usage
@@ -78,7 +78,7 @@ Failing to do so will cause the rover to continuously spin around a waypoint.
 
 A correct mission setup looks as follows:
 
-![mission](../../assets/airframes/rover/traxxas_stampede_vxl/correct_mission.jpg)
+![mission](images/drones/airframes/rover/traxxas_stampede_vxl/correct_mission.jpg)
  
 
 ## Video 

@@ -9,7 +9,7 @@ Note also that while [Cube Black](../flight_controller/pixhawk-2.md) is [fully s
 
 This quick start guide shows how to power the *Cube*<sup>&reg;</sup> flight controllers and connect their most important peripherals.
 
-<img src="../../assets/flight_controller/cube/orange/cube_orange_hero.jpg" width="350px" /> <img src="../../assets/flight_controller/cube/cube_black_hero.png" width="350px" /> <img src="../../assets/flight_controller/cube/yellow/cube_yellow_hero.jpg" width="150px" />
+<img src="images/drones/flight_controller/cube/orange/cube_orange_hero.jpg" width="350px" /> <img src="images/drones/flight_controller/cube/cube_black_hero.png" width="350px" /> <img src="images/drones/flight_controller/cube/yellow/cube_yellow_hero.jpg" width="150px" />
 
 :::tip
 The instructions apply to all Cube variants, including [Cube Black](../flight_controller/pixhawk-2.md), [Cube Yellow](../flight_controller/cubepilot_cube_yellow.md) and [Cube Orange](../flight_controller/cubepilot_cube_orange.md).
@@ -20,7 +20,7 @@ Further/updated information may be available in the [Cube User Manual](https://d
 
 Cube comes with most (or all) of the accessories you will need when [purchased](../flight_controller/pixhawk-2.md#stores). 
 
-![Cube Accessories](../../assets/flight_controller/cube/cube_accessories.jpg)
+![Cube Accessories](images/drones/flight_controller/cube/cube_accessories.jpg)
 
 The exception is that some kits do not include a GPS, which will have to be purchased separately ([see below](#gps)).
 
@@ -29,7 +29,7 @@ The exception is that some kits do not include a GPS, which will have to be purc
 
 The image below shows how to connect the most important sensors and peripherals. We'll go through each of these in detail in the following sections.
 
-![Cube - Wiring Overview](../../assets/flight_controller/cube/cube_wiring_overview.jpg)
+![Cube - Wiring Overview](images/drones/flight_controller/cube/cube_wiring_overview.jpg)
 
 1. [Telemetry System](#telemetry) — Allows you to plan/run missions, and control and monitor the vehicle in real time. Typically includes telemetry radios, tablet/PC and ground station software.
 2. [Buzzer](#buzzer) — Provides audio signals that indicate what the UAV is doing
@@ -51,7 +51,7 @@ More information about available ports can be found here: [Cube > Ports](../flig
 Mount the Cube as close as possible to your vehicle’s center of gravity, 
 ideally oriented top-side up and with the arrow pointing towards the front of the vehicle (note the *subtle* arrow marker on top of the cube)
 
-![Cube Mount - Direction of Front](../../assets/flight_controller/cube/cube_mount_front.jpg)
+![Cube Mount - Direction of Front](images/drones/flight_controller/cube/cube_mount_front.jpg)
 
 :::note
 If the controller cannot be mounted in the recommended/default orientation (e.g. due to space constraints) you will need to configure the autopilot software with the orientation that you actually used: [Flight Controller Orientation](../config/flight_controller_orientation.md).
@@ -61,7 +61,7 @@ The Cube can be mounted using either vibration-damping foam pads (included in th
 The mounting screws in the Cube accessories are designed for a 1.8mm thick frameboard. 
 Customized screws are supposed to be M2.5 with thread length inside Cube in range 6mm~7.55mm.
 
-![Cube Mount - Mounting Plate](../../assets/flight_controller/cube/cube_mount_plate_screws.jpg)
+![Cube Mount - Mounting Plate](images/drones/flight_controller/cube/cube_mount_plate_screws.jpg)
 
 
 <a id="gps"></a>
@@ -79,7 +79,7 @@ The module should be mounted on the frame as far away from other electronics as 
 
 The diagram below shows a schematic view of the module and its connections. 
 
-![Here+ Connector Diagram](../../assets/flight_controller/cube/here_plus_connector.png)
+![Here+ Connector Diagram](images/drones/flight_controller/cube/here_plus_connector.png)
 
 :::note
 The GPS module's integrated safety switch is enabled *by default* (when enabled, PX4 will not let you arm the vehicle).
@@ -103,7 +103,7 @@ The buzzer plays [tones and tunes](../getting_started/tunes.md) that provide aud
 
 The buzzer should be connected to the USB port as shown (no further configuration is required).
 
-![Cube Buzzer](../../assets/flight_controller/cube/cube_buzzer.jpg)
+![Cube Buzzer](images/drones/flight_controller/cube/cube_buzzer.jpg)
 
 
 <a id="rc_control"></a>
@@ -120,14 +120,14 @@ The instructions below show how to connect the different types of receivers.
 
 Connect the ground(-),power(+),and signal(S) wires to the RC pins using the provided 3-wire servo cable.
 
-![Cube - RCIN](../../assets/flight_controller/cube/cube_rc_in.jpg)
+![Cube - RCIN](images/drones/flight_controller/cube/cube_rc_in.jpg)
 
 
 ### Spektrum Satellite Receivers
 
 Spektrum DSM, DSM2, and DSM-X Satellite RC receivers connect to the **SPKT/DSM** port.
 
-![Cube - Spektrum](../../assets/flight_controller/cube/cube_rc_spektrum.jpg)
+![Cube - Spektrum](images/drones/flight_controller/cube/cube_rc_spektrum.jpg)
 
 ### PWM Receivers
 
@@ -143,7 +143,7 @@ The power module provides reliable supply and voltage/current indication to the 
 
 A typical power setup for a Multicopter vehicle is shown below.
 
-![Power Setup - MC](../../assets/flight_controller/cube/cube_wiring_power_mc.jpg)
+![Power Setup - MC](images/drones/flight_controller/cube/cube_wiring_power_mc.jpg)
 
 :::Note
 The power (+) rail of **MAIN/AUX** is *not powered* by the power module supply to the flight controller.
@@ -160,7 +160,7 @@ A telemetry system allows you to communicate with, monitor, and control a vehicl
 
 The communication channel is via [Telemetry Radios](../telemetry/README.md). The vehicle-based radio should be connected to the **TELEM1** port (if connected to this port, no further configuration is required). The other radio is connected to your ground station computer or mobile device (usually via USB).
 
-![Telemetry Radio](../../assets/flight_controller/cube/cube_schematic_telemetry.jpg)
+![Telemetry Radio](images/drones/flight_controller/cube/cube_schematic_telemetry.jpg)
 
 
 
@@ -169,7 +169,7 @@ The communication channel is via [Telemetry Radios](../telemetry/README.md). The
 SD cards are highly recommended as they are needed to [log and analyse flight details](../getting_started/flight_reporting.md), to run missions, and to use UAVCAN-bus hardware.
 Insert the Micro-SD card into Cube as shown (if not already present).
 
-![Cube - Mount SDCard](../../assets/flight_controller/cube/cube_sdcard.jpg)
+![Cube - Mount SDCard](images/drones/flight_controller/cube/cube_sdcard.jpg)
 
 :::tip
 For more information see [Basic Concepts > SD Cards (Removable Memory)](../getting_started/px4_basic_concepts.md#sd_cards).
@@ -179,7 +179,7 @@ For more information see [Basic Concepts > SD Cards (Removable Memory)](../getti
 
 Motors/servos are connected to the **MAIN** and **AUX** ports in the order specified for your vehicle in the [Airframe Reference](../airframes/airframe_reference.md). 
 
-![Cube - Motor Connections](../../assets/flight_controller/cube/cube_main_aux_outputs.jpg)
+![Cube - Motor Connections](images/drones/flight_controller/cube/cube_main_aux_outputs.jpg)
 
 :::note
 This reference lists the output port to motor/servo mapping for all supported air and ground frames (if your frame is not listed in the reference then use a "generic" airframe of the correct type). 
@@ -204,7 +204,7 @@ Configuration is performed using [QGroundContro](http://qgroundcontrol.com/).
 
 After downloading, installing and running *QGroundControl*, connect the board to your computer as shown.
 
-![Cube - USB Connection to Computer](../../assets/flight_controller/cube/cube_usb_connection.jpg)
+![Cube - USB Connection to Computer](images/drones/flight_controller/cube/cube_usb_connection.jpg)
 
 Basic/common configuration information is covered in: [Autopilot Configuration](../config/README.md).
 

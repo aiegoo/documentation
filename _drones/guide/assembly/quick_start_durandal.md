@@ -7,7 +7,7 @@ Contact the [manufacturer](https://shop.holybro.com/) for hardware support or co
 
 This quick start guide shows how to power the Holybro [Durandal](../flight_controller/durandal.md)<sup>&reg;</sup> flight controller and connect its most important peripherals.
 
-![Durandal](../../assets/flight_controller/durandal/durandal_hero.jpg)
+![Durandal](images/drones/flight_controller/durandal/durandal_hero.jpg)
 
 ## Unboxing
 
@@ -15,14 +15,14 @@ Durandal is sold bundled with a number of different combinations of accessories,
 
 The content of the box with the *PM02 V3* power module is shown below (the box also includes a pinout guide and power module instructions).
 
-![Durandal Box](../../assets/flight_controller/durandal/durandal_unboxing_schematics.jpg)
+![Durandal Box](images/drones/flight_controller/durandal/durandal_unboxing_schematics.jpg)
 
 ## Wiring Chart Overview
 
 The image below shows how to connect the most important sensors and peripherals (except the motor and servo outputs).
 We'll go through each of these in detail in the following sections.
 
-![Durandal Wiring Overview](../../assets/flight_controller/durandal/durandal_wiring_overview.jpg)
+![Durandal Wiring Overview](images/drones/flight_controller/durandal/durandal_wiring_overview.jpg)
 
 :::tip
 More information about available ports can be found here: [Durandal > Pinouts](../flight_controller/durandal.md#pinouts).
@@ -32,7 +32,7 @@ More information about available ports can be found here: [Durandal > Pinouts](.
 
 *Durandal* should be mounted on the frame positioned as close to your vehicle’s center of gravity as possible, oriented top-side up with the arrow pointing towards the front of the vehicle.
 
-![Mounting/Orientation](../../assets/flight_controller/durandal/orientation.jpg)
+![Mounting/Orientation](images/drones/flight_controller/durandal/orientation.jpg)
 
 If the controller cannot be mounted in the recommended/default orientation (e.g. due to space constraints) you will need to configure the autopilot software with the orientation that you actually used: [Flight Controller Orientation](../config/flight_controller_orientation.md).
 
@@ -48,7 +48,7 @@ It connects directly to the [GPS port](../flight_controller/durandal.md#gps) usi
 
 The GPS/Compass should be mounted on the frame as far away from other electronics as possible, with the direction marker towards the front of the vehicle (separating the compass from other electronics will reduce interference).
 
-![Connect compass/GPS to Durandal](../../assets/flight_controller/durandal/connection_gps_compass.jpg) 
+![Connect compass/GPS to Durandal](images/drones/flight_controller/durandal/connection_gps_compass.jpg) 
 
 :::note
 The GPS module's integrated safety switch is enabled *by default* (when enabled, PX4 will not let you arm the vehicle).
@@ -69,7 +69,7 @@ It provides regulated power to flight controller and sends battery voltage/curre
 
 Connect the output of the *Power Module* as shown.
 
-![Durandal PM02v3 Power connections](../../assets/flight_controller/durandal/connection_power.jpg)
+![Durandal PM02v3 Power connections](images/drones/flight_controller/durandal/connection_power.jpg)
 
 
 - PM voltage/current port: connect to [POWER1](../flight_controller/durandal.md#power) port (or `POWER2`) using the 6-wire GH cable supplied.
@@ -142,11 +142,11 @@ The instructions below show how to connect the different types of receivers to *
 
 - Spektrum/DSM receivers connect to the [DSM RC](../flight_controller/durandal.md#dsm-rc-port) input.
   
-  ![Durandal - DSM](../../assets/flight_controller/durandal/dsm.jpg)
+  ![Durandal - DSM](images/drones/flight_controller/durandal/dsm.jpg)
 
 - PPM and S.Bus receivers connect to the [SBUS_IN/PPM_IN](../flight_controller/durandal.md#rc-in) input port (marked as RC IN, next to the MAIN/AUX inputs).
   
-  ![Durandal - Back Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_back.jpg)
+  ![Durandal - Back Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_back.jpg)
 
 - PPM and PWM receivers that have an *individual wire for each channel* must connect to the **PPM RC** port *via a PPM encoder* [like this one](http://www.getfpv.com/radios/radio-accessories/holybro-ppm-encoder-module.html) (PPM-Sum receivers use a single signal wire for all channels).
 
@@ -160,7 +160,7 @@ Telemetry radios may be used to communicate and control a vehicle in flight from
 The vehicle-based radio should be connected to the [TELEM1](../flight_controller/durandal.md#telem1_2_3) port as shown below using one of the 6-pos connectors (if connected to this port, no further configuration is required).
 The other radio is connected to your ground station computer or mobile device (usually by USB).
 
-![Durandal/Telemetry Radio](../../assets/flight_controller/durandal/holybro_telemetry_radio.jpg)
+![Durandal/Telemetry Radio](images/drones/flight_controller/durandal/holybro_telemetry_radio.jpg)
 
 
 ## SD Card (Optional)
@@ -168,7 +168,7 @@ The other radio is connected to your ground station computer or mobile device (u
 SD cards are highly recommended as they are needed to [log and analyse flight details](../getting_started/flight_reporting.md), to run missions, and to use UAVCAN-bus hardware.
 Insert an SD card into the *Durandal* where indicated below.
 
-![Durandal SD Card](../../assets/flight_controller/durandal/durandal_sd_slot.jpg)
+![Durandal SD Card](images/drones/flight_controller/durandal/durandal_sd_slot.jpg)
 
 :::tip
 For more information see [Basic Concepts > SD Cards (Removable Memory)](../getting_started/px4_basic_concepts.md#sd_cards).
@@ -178,7 +178,7 @@ For more information see [Basic Concepts > SD Cards (Removable Memory)](../getti
 
 Motors/servos control signals are connected to the **I/O PWM OUT** (**MAIN OUT**) and **FMU PWM OUT** (**AUX**) ports in the order specified for your vehicle in the [Airframe Reference](../airframes/airframe_reference.md). 
 
-![Durandal - Back Pinouts (Schematic)](../../assets/flight_controller/durandal/durandal_pinouts_back.jpg)
+![Durandal - Back Pinouts (Schematic)](images/drones/flight_controller/durandal/durandal_pinouts_back.jpg)
 
 The motors must be separately [powered](#power).
 

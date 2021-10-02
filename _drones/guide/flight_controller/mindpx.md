@@ -7,7 +7,7 @@ Contact the [manufacturer](http://mindpx.net) for hardware support or compliance
 
 The AirMind<sup>&reg;</sup> [MindPX](http://mindpx.net) series is a new generation autopilot system branched from Pixhawk<sup>&reg;</sup>.
 
-![MindPX Controller](../../assets/hardware/hardware-mindpx.png)
+![MindPX Controller](images/drones/hardware/hardware-mindpx.png)
 
 :::note
 These flight controllers are [manufacturer supported](../flight_controller/autopilot_manufacturer_supported.md).
@@ -25,7 +25,7 @@ MindPX increases total PWM output channels to 16 (8 main outputs + 8 aux outputs
 This means that MindPX can support more complicated VTOL configurations and more fine control.
 It is especially meaningful for those FMU-V4 based flight controllers as MindPX implements main and aux output in one single FMU.
 
-![](../../assets/hardware/hardware-mindpx-specs.png)
+![](images/drones/hardware/hardware-mindpx-specs.png)
 
 * Main System-on-Chip: STM32F427
   * CPU: 32bits, 168 MHz ARM Cortex<sup>&reg;</sup> M4 with FPU
@@ -48,17 +48,17 @@ It is especially meaningful for those FMU-V4 based flight controllers as MindPX 
 
 ### Mounting
 
-![MindPX Mounting](../../assets/hardware/hardware-mindpx-mounting.png)
+![MindPX Mounting](images/drones/hardware/hardware-mindpx-mounting.png)
 
 ### Wiring
 
-![MindPX Wiring 1](../../assets/hardware/hardware-mindpx-wiring1.png)
+![MindPX Wiring 1](images/drones/hardware/hardware-mindpx-wiring1.png)
 
-![MindPX Wiring 2](../../assets/hardware/hardware-mindpx-wiring2.png)
+![MindPX Wiring 2](images/drones/hardware/hardware-mindpx-wiring2.png)
 
 ### Pin
 
-![MindPX Pinout](../../assets/hardware/hardware-mindpx-pin.png)
+![MindPX Pinout](images/drones/hardware/hardware-mindpx-pin.png)
 
 |Num.|Description|Num.|Description|
 |:--:|:--:|:--:|:--:|

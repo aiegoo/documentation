@@ -1,6 +1,6 @@
 # Stabilized Mode (Fixed Wing)
 
-[<img src="../../assets/site/difficulty_medium.png" title="Medium difficulty to fly" width="30px" />](../getting_started/flight_modes.md#key_difficulty)&nbsp;[<img src="../../assets/site/remote_control.svg" title="Manual/Remote control required" width="30px" />](../getting_started/flight_modes.md#key_manual)&nbsp;
+[<img src="images/drones/site/difficulty_medium.png" title="Medium difficulty to fly" width="30px" />](../getting_started/flight_modes.md#key_difficulty)&nbsp;[<img src="images/drones/site/remote_control.svg" title="Manual/Remote control required" width="30px" />](../getting_started/flight_modes.md#key_manual)&nbsp;
 
 *Stabilized mode*  puts the vehicle into straight and level flight when the RC sticks are centered, maintaining the horizontal posture against wind (but not vehicle heading and altitude).
 
@@ -14,7 +14,7 @@ The vehicle will glide if the throttle is lowered to 0% (motor stops). In order 
 
 The diagram below shows the mode behaviour visually (for a [mode 2 transmitter](../getting_started/rc_transmitter_receiver.md#transmitter_modes)).
 
-![FW Manual Flight](../../assets/flight_modes/manual_stabilized_FW.png)
+![FW Manual Flight](images/drones/flight_modes/manual_stabilized_FW.png)
 
 
 ## Technical Description

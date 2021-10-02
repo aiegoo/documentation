@@ -3,7 +3,7 @@
 Safety points are alternative [Return Mode](../flight_modes/return.md) destinations/landing points.
 When enabled, the vehicle will choose the *closest return destination* of: home location, mission landing pattern or a *safety point*.
 
-![Safety Points](../../assets/qgc/plan/rally_point/rally_points.jpg)
+![Safety Points](images/drones/qgc/plan/rally_point/rally_points.jpg)
 
 ## Creating/Defining Safety Points
 

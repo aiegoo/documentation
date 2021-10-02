@@ -3,7 +3,7 @@
 This power module provides regulated power for a flight controller and ESCs, and sends information to the autopilot about the battery’s voltage and current draw.
 It is supplied with the [Pixhawk 4 Mini](../flight_controller/pixhawk4_mini.md), but can also be separately purchased.
 
-![PM06](../../assets/hardware/power_module/holybro_pm06/pm06_hero.jpg)
+![PM06](images/drones/hardware/power_module/holybro_pm06/pm06_hero.jpg)
  
 
 ## Specifications
@@ -33,5 +33,5 @@ It is supplied with the [Pixhawk 4 Mini](../flight_controller/pixhawk4_mini.md),
 
 Wiring and connection examples can be found in: [Pixhawk 4 Mini > Power](../assembly/quick_start_pixhawk4_mini.md#power).
 
-![PM06 Pin Map](../../assets/hardware/power_module/holybro_pm06/pm06_pin_map.jpg)
+![PM06 Pin Map](images/drones/hardware/power_module/holybro_pm06/pm06_pin_map.jpg)
 

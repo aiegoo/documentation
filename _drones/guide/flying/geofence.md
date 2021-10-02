@@ -26,7 +26,7 @@ PX4 supports complex GeoFence boundaries made up of multiple circular and polygo
 
 The GeoFence is planned in *QGroundControl* alongside the mission and rally points.
 
-![GeoFence Plan](../../assets/qgc/plan_geofence/geofence_overview.jpg)
+![GeoFence Plan](images/drones/qgc/plan_geofence/geofence_overview.jpg)
 
 GeoFence planning is fully documented in [Plan View > GeoFence](https://docs.qgroundcontrol.com/en/PlanView/PlanGeoFence.html) (QGroundControl User Guide).
 
@@ -34,7 +34,7 @@ In summary:
 1. Open *QGroundControl > Plan View*.
 1. Select the *Plan Type* radio button: **Fence**.
    This will display the *GeoFence Editor*.
-   ![GeoFence Plan](../../assets/qgc/plan_geofence/geofence_editor.jpg)
+   ![GeoFence Plan](images/drones/qgc/plan_geofence/geofence_editor.jpg)
 1. Select the **Polygon Fence** or **Circular Fence** button to add a *basic* fence of the desired type to the map.
    This also adds an entry for the type of fence in the editor.
 1. Use the map to configure the shape and position of the fence.

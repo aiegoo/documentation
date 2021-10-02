@@ -10,7 +10,7 @@ Main features include:
 - Advanced jamming and spoofing detection
 
 
-<img src="../../assets/hardware/gps/here2_gps_module.jpg" />
+<img src="images/drones/hardware/gps/here2_gps_module.jpg" />
 
 
 ## Purchase
@@ -33,7 +33,7 @@ The Here2 GPS comes with an 8 pin connector that can be inserted directly into t
 The Pixhawk 3 Pro and Pixracer have a 6 pin GPS port connector.
 For these controllers you can modify the GPS cable (as shown below) to remove pin 6 and 7. 
 
-<img src="../../assets/hardware/gps/rtk_here_plug_gps_to_6pin_connector.jpg" width="500px" /> 
+<img src="images/drones/hardware/gps/rtk_here_plug_gps_to_6pin_connector.jpg" width="500px" /> 
 
 Pin 6 and 7 are for the safety button - these can be attached as well if needed.
 

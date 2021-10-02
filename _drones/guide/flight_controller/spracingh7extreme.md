@@ -13,9 +13,9 @@ Wiring up a 4in1 ESC is easy too.
 
 There is also a 12 pin stacking connector which provides 4 more motor outputs, SPI and a UART connectivity.
 
-![SPRacingH7EXTREME PCB Top](../../assets/flight_controller/spracingh7extreme/spracingh7extreme-top.jpg)
+![SPRacingH7EXTREME PCB Top](images/drones/flight_controller/spracingh7extreme/spracingh7extreme-top.jpg)
 
-![SPRacingH7EXTREME PCB Bottom](../../assets/flight_controller/spracingh7extreme/spracingh7extreme-bottom.jpg)
+![SPRacingH7EXTREME PCB Bottom](images/drones/flight_controller/spracingh7extreme/spracingh7extreme-bottom.jpg)
 
 :::note
 This flight controller is [manufacturer supported](../flight_controller/autopilot_manufacturer_supported.md).

@@ -17,7 +17,7 @@ Contact the [manufacturer](http://mindpx.net) for hardware support or compliance
 The AirMind<sup>&reg;</sup> [MindRacer](http://mindpx.net) series is a fully stackable flight *platform* for miniature UAVs.
 The platform currently has two RTF vehicles: [MindRacer 210](../complete_vehicles/mindracer210.md) and [NanoMind 110](../complete_vehicles/nanomind110.md).
 
-![MindRacer](../../assets/hardware/hardware-mindracer.png)
+![MindRacer](images/drones/hardware/hardware-mindracer.png)
 
 :::note
 This flight controller is [manufacturer supported](../flight_controller/autopilot_manufacturer_supported.md).
@@ -64,7 +64,7 @@ The main hardware documentation is [here](http://mindpx.net/assets/accessories/m
 
 ### Pin-out Map
 
-![Mindracer pinout](../../assets/hardware/hardware-mindracer-pinout.png)
+![Mindracer pinout](images/drones/hardware/hardware-mindracer-pinout.png)
 
 ### How to Build
 
@@ -82,7 +82,7 @@ make airmind_mindpx-v2_default
 
 MindRacer has an attached Adapt IO board.
 
-![Attached Adapt IO board](../../assets/hardware/hardware-mindracer-conn.png)
+![Attached Adapt IO board](images/drones/hardware/hardware-mindracer-conn.png)
 
 MindRacer has a built-in UART-to-USB converter.
 To connect a companion computer, stack MindRacer on an interface board, and connect the companion computer to the USB port on the interface board.

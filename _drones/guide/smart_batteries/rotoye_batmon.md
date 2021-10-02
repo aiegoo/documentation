@@ -9,9 +9,9 @@ Support in the codeline is pending [PR approval](https://github.com/PX4/PX4-Auto
 :::
 
 
-![Rotoye Batmon Board](../../assets/hardware/smart_batteries/rotoye_batmon/smart-battery-rotoye.jpg)
+![Rotoye Batmon Board](images/drones/hardware/smart_batteries/rotoye_batmon/smart-battery-rotoye.jpg)
 
-![Pre-assembled Rotoye smart battery](../../assets/hardware/smart_batteries/rotoye_batmon/smart-battery-rotoye-pack.jpg)
+![Pre-assembled Rotoye smart battery](images/drones/hardware/smart_batteries/rotoye_batmon/smart-battery-rotoye-pack.jpg)
 
 
 ## Purchase
@@ -23,7 +23,7 @@ Support in the codeline is pending [PR approval](https://github.com/PX4/PX4-Auto
 
 The Rotoye Batmon system uses an XT-90 battery connector with I2C pins, and an opti-isolator board to transmit data.
 
-![Board connections](../../assets/hardware/smart_batteries/rotoye_batmon/smart-battery-rotoye-connection.png)
+![Board connections](images/drones/hardware/smart_batteries/rotoye_batmon/smart-battery-rotoye-connection.png)
 
 More details can be found [here](https://github.com/rotoye/batmon_reader)
 

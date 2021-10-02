@@ -34,7 +34,7 @@ Key features:
 * User can upload, load and then share report with others.
 * Interactive plots.
 
-![Flight Review Charts](../../assets/flight_log_analysis/flight_review/flight-review-example.png)
+![Flight Review Charts](images/drones/flight_log_analysis/flight_review/flight-review-example.png)
 
 See [Log Analysis using Flight Review](flight_review.md) for an introduction.
 
@@ -107,7 +107,7 @@ Key features:
 * Easily replay with pyqtgraph's ROI (Region Of Interest)
 * Python based, cross-platform.
 
-![pyFlightAnalysis 1.0.1b1](../../assets/flight_log_analysis/pyflightanalysis.png)
+![pyFlightAnalysis 1.0.1b1](images/drones/flight_log_analysis/pyflightanalysis.png)
 
 
 ### FlightPlot
@@ -120,7 +120,7 @@ Key features:
 * Supports both new and old PX4 log formats (.ulg, .px4log, .bin)
 * Allows saving plots as images.
 
-![FlightPlot Charts](../../assets/flight_log_analysis/flightplot_0.2.16.png)
+![FlightPlot Charts](images/drones/flight_log_analysis/flightplot_0.2.16.png)
 
 
 ### PX4Tools
@@ -134,7 +134,7 @@ Key features:
 * iPython/ jupyter notebooks can be used to share analysis easily
 * Advanced plotting capabilities to allow detailed analysis
 
-![PX4Tools-based analysis](../../assets/flight_log_analysis/px4tools.png)
+![PX4Tools-based analysis](images/drones/flight_log_analysis/px4tools.png)
 
 
 ### MAVGCL
@@ -152,7 +152,7 @@ Key features:
 * Java based. Known to work on macOS and Ubuntu.
 * And many more ...
 
-![MAVGCL](../../assets/flight_log_analysis/mavgcl/time_series.png)
+![MAVGCL](images/drones/flight_log_analysis/mavgcl/time_series.png)
 
 
 ### PlotJuggler
@@ -171,7 +171,7 @@ Key features:
 
 Source code and downloads are available on [Github](https://github.com/facontidavide/PlotJuggler).
 
-![PlotJuggler](../../assets/flight_log_analysis/plotjuggler.png)
+![PlotJuggler](images/drones/flight_log_analysis/plotjuggler.png)
 
 
 ### Data Comets
@@ -180,4 +180,4 @@ Source code and downloads are available on [Github](https://github.com/facontida
 
 You can use the online version of the tool for small log files (< 32Mb), or run it locally in order to analyze longer flights.
 
-![Data Comets](../../assets/flight_log_analysis/data_comets/data_comets_overview.gif)
+![Data Comets](images/drones/flight_log_analysis/data_comets/data_comets_overview.gif)

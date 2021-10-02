@@ -29,7 +29,7 @@ To setup and use video steaming with QGC:
 1. If everything works, you should see the video stream displayed in the QGC Video Switcher (QGC Fly View bottom left corner).
    You can click on the video switcher to toggle the video full-screen, as shown in the screenshot below. 
 
-   ![QGC displaying video stream](../../assets/videostreaming/qgc-screenshot.png)
+   ![QGC displaying video stream](images/drones/videostreaming/qgc-screenshot.png)
 
 
 

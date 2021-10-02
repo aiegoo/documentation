@@ -1,12 +1,12 @@
 # Acro Mode (Multicopter)
 
-[<img src="../../assets/site/difficulty_hard.png" title="Hard to fly" width="30px" />](../getting_started/flight_modes.md#key_difficulty)&nbsp;[<img src="../../assets/site/remote_control.svg" title="Manual/Remote control required" width="30px" />](../getting_started/flight_modes.md#key_manual)&nbsp;
+[<img src="images/drones/site/difficulty_hard.png" title="Hard to fly" width="30px" />](../getting_started/flight_modes.md#key_difficulty)&nbsp;[<img src="images/drones/site/remote_control.svg" title="Manual/Remote control required" width="30px" />](../getting_started/flight_modes.md#key_manual)&nbsp;
 
 *Acro mode* is the RC mode for performing acrobatic maneuvers e.g. flips, rolls and loops.
 
 The roll, pitch and yaw sticks control the rate of angular rotation around the respective axes and throttle is passed directly to the output mixer. When sticks are centered the vehicle will stop rotating, but remain in its current orientation (on its side, inverted, or whatever) and moving according to its current momentum.
 
-![MC Manual Acrobatic Flight](../../assets/flight_modes/manual_acrobatic_MC.png)
+![MC Manual Acrobatic Flight](images/drones/flight_modes/manual_acrobatic_MC.png)
 
 <!-- image above incorrect: https://github.com/PX4/px4_user_guide/issues/182 -->
 
@@ -20,13 +20,13 @@ RC RPY stick inputs control the rate of angular rotation around the respective a
 
 The default roll, pitch, and yaw input stick mapping for Acro mode is shown below. The curve enables a high turn rate at maximum stick input for performing acrobatic maneuvers, and a zone of lower sensitivity close to the stick center for small corrections. 
 
-![Acro mode - default input curve](../../assets/flight_modes/acro_mc_input_curve_expo_superexpo_default.png)
+![Acro mode - default input curve](images/drones/flight_modes/acro_mc_input_curve_expo_superexpo_default.png)
 
 This roll and pitch input stick response can be tuned using the [MC_ACRO_EXPO](#MC_ACRO_EXPO) and [MC_ACRO_SUPEXPO](#MC_ACRO_SUPEXPO) "exponential" parameters, while the yaw stick input response is tuned using [MC_ACRO_EXPO_Y](#MC_ACRO_EXPO_Y) and [MC_ACRO_SUPEXPOY](#MC_ACRO_SUPEXPOY).
 `MC_ACRO_EXPO` and `MC_ACRO_EXPO_Y` tune the curve(s) between a linear and cubic curve as shown below. 
 `MC_ACRO_SUPEXPO` and `MC_ACRO_SUPEXPOY` allow the shape to be further tuned, modifying the width of the area of reduced sensitivity.
 
-![Acro mode - expo - pure linear input curve](../../assets/flight_modes/acro_mc_input_curve_expo_linear.png) ![Acro mode - expo - pure cubic input curve](../../assets/flight_modes/acro_mc_input_curve_expo_cubic.png)
+![Acro mode - expo - pure linear input curve](images/drones/flight_modes/acro_mc_input_curve_expo_linear.png) ![Acro mode - expo - pure cubic input curve](images/drones/flight_modes/acro_mc_input_curve_expo_cubic.png)
 
 :::note
 The mathematical relationship is: 

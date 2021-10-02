@@ -10,7 +10,7 @@ Key information:
 - **Frame:** Volantex Ranger-Ex or *Quanum Observer*
 - **Flight controller:** Pixhawk
 
-![QuadRanger](../../assets/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_complete_build.jpg)
+![QuadRanger](images/drones/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_complete_build.jpg)
 
 The VTOL conversion makes the plane a bit heavier (around 3.5kg including LiPo).
 With this conversion the plane will cruise at approximately 65% throttle.
@@ -41,7 +41,7 @@ For a full parts list with links to Hobbyking EU and International warehouse se
 
 The image below depicts the parts required for one wing.
 
-![QuadRanger Parts](../../assets/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_parts_for_one_wing.jpg)
+![QuadRanger Parts](images/drones/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_parts_for_one_wing.jpg)
 
  
 The tools required for the conversion are;
@@ -53,7 +53,7 @@ The tools required for the conversion are;
 -   Tape-line
 -   Tape
 
-![QuadRanger conversion tools](../../assets/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_conversion_tools.jpg)
+![QuadRanger conversion tools](images/drones/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_conversion_tools.jpg)
 
 ## Wing conversion
 
@@ -71,13 +71,13 @@ Making a slot in the Styrofoam wing 1.5cm deep using a rotary tool with some fo
 The slot should be the length, depth and width of one 230mm square carbon tube.
 It should be located as indicated below.
 
-![QuadRanger carbon tube slot](../../assets/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_carbon_tube_slot.jpg)
+![QuadRanger carbon tube slot](images/drones/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_carbon_tube_slot.jpg)
 
 Glue the 300x150x1.5mm carbon sheet to the 230mm carbon tube using CA glue and create an opening to run wires through.
 Insert the wires for power and signal to the ESC's.
 Using UHU POR glue the sheet and carbon tube to the Styrofoam wing as indicated below.
 
-![QuadRanger sheet attachment](../../assets/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_sheet_attachment.jpg)
+![QuadRanger sheet attachment](images/drones/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_sheet_attachment.jpg)
 
 Using CA glue, glue the 570mm square carbon tube to the carbon sheet.
 It should be located 285mm from where the wings join.
@@ -89,7 +89,7 @@ With another motor mount plate and 4 M3x25mm screws clamp the motor on the end
 Attach the ESC's with tie wraps to the carbon tube.
 When using the Afro ESC be sure to connect at least signal and ground wire.
 
-![QuadRanger motor and esc](../../assets/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_motor_and_esc.jpg)
+![QuadRanger motor and esc](images/drones/airframes/vtol/quadranger_rangerex_pixhawk/quadranger_vtol_motor_and_esc.jpg)
 
 ## Wiring 
 
@@ -120,7 +120,7 @@ For further instructions on wiring and configurations please see: [Standard VTOL
 
 Configure the frame as shown in QGroundControl below (do not forget to click **Apply and Restart** in the top).
 
-![QGC - select firmware for standard VTOL](../../assets/airframes/vtol/funcub_pixhawk/qgc_firmware_standard_vtol_fun_cub_quad.png)
+![QGC - select firmware for standard VTOL](images/drones/airframes/vtol/funcub_pixhawk/qgc_firmware_standard_vtol_fun_cub_quad.png)
 
 
 ## Support

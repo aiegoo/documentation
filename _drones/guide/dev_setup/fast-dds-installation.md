@@ -1,6 +1,6 @@
 # Fast DDS Installation
 
-<img alt="logo" src="../../assets/fastrtps/eprosima_logo.png" style="float:left;"/> [eProsima Fast DDS](https://github.com/eProsima/Fast-DDS) is a C++ implementation of the Object Management Group's (OMG) Data Distribution Service (DDS) specification and the Real Time Publish Subscribe (RTPS) protocol.
+<img alt="logo" src="images/drones/fastrtps/eprosima_logo.png" style="float:left;"/> [eProsima Fast DDS](https://github.com/eProsima/Fast-DDS) is a C++ implementation of the Object Management Group's (OMG) Data Distribution Service (DDS) specification and the Real Time Publish Subscribe (RTPS) protocol.
 
 Fast DDS enables an RTPS/DDS interface that allows PX4 uORB topics to be shared with offboard components that participate in same DDS domain, including robotics and simulator tools.
 In particular, Fast DDS is the default middleware implementation for Robot Operating System 2 (ROS 2), and is essential for integrating PX4 with ROS2.

@@ -7,7 +7,7 @@ Contact the [manufacturer](https://store.cuav.net/) for hardware support or comp
 
 This quick start guide shows how to power the [CUAV V5+](../flight_controller/cuav_v5_plus.md) flight controller and connect its most important peripherals.
  
-![V5+ AutoPilot - Hero Image](../../assets/flight_controller/cuav_v5_plus/v5+_01.png)
+![V5+ AutoPilot - Hero Image](images/drones/flight_controller/cuav_v5_plus/v5+_01.png)
 
 
 ## Wiring Chart Overview
@@ -15,7 +15,7 @@ This quick start guide shows how to power the [CUAV V5+](../flight_controller/cu
 The image below shows how to connect the most important sensors and peripherals (except the motor and servo outputs).
 We'll go through each of these in detail in the following sections.
 
-![V5+ AutoPilot](../../assets/flight_controller/cuav_v5_plus/connection/v5+_quickstart_01.png)
+![V5+ AutoPilot](images/drones/flight_controller/cuav_v5_plus/connection/v5+_quickstart_01.png)
 
 
 Main interface | Function
@@ -38,7 +38,7 @@ DSM/SBUS/RSSI | Includes DSM, SBUS, RSSI signal input interface, DSM interface c
 For more interface information, please read [V5+ Manual](http://manual.cuav.net/V5-Plus.pdf).
 :::
 
-![V5+ AutoPilot](../../assets/flight_controller/cuav_v5_plus/connection/v5+_quickstart_02.png)
+![V5+ AutoPilot](images/drones/flight_controller/cuav_v5_plus/connection/v5+_quickstart_02.png)
 
 :::note
 If the controller cannot be mounted in the recommended/default orientation (e.g. due to space constraints) you will need to configure the autopilot software with the orientation that you actually used: [Flight Controller Orientation](../advanced_features/rtk-gps.md).
@@ -60,7 +60,7 @@ Connect to the flight control GPS interface using a cable.
 If you use the [NEO V2 PRO GNSS (CAN GPS)](http://doc.cuav.net/gps/neo-series-gnss/en/neo-v2-pro.html), please use the cable to connect to the flight control CAN interface.
 :::
 
-![V5+ AutoPilot](../../assets/flight_controller/cuav_v5_plus/connection/v5+_quickstart_03.png)
+![V5+ AutoPilot](images/drones/flight_controller/cuav_v5_plus/connection/v5+_quickstart_03.png)
 
 ## Safety Switch 
 
@@ -79,7 +79,7 @@ You will need to select a compatible transmitter/receiver and then bind them so 
 
 The figure below shows how you can access your remote receiver (please find the SBUS cable in the kit).
 
-![V5+ AutoPilot](../../assets/flight_controller/cuav_v5_plus/connection/v5+_quickstart_04.png)
+![V5+ AutoPilot](images/drones/flight_controller/cuav_v5_plus/connection/v5+_quickstart_04.png)
 
 ## Spektrum Satellite Receivers
 
@@ -96,7 +96,7 @@ The supplied power module is unfused.
 Power **must** be turned off while connecting peripherals.
 :::
 
-![V5+ AutoPilot](../../assets/flight_controller/cuav_v5_plus/connection/v5+_quickstart_01.png)
+![V5+ AutoPilot](images/drones/flight_controller/cuav_v5_plus/connection/v5+_quickstart_01.png)
 
 :::note
 The power module is not a power source for peripherals connected to the PWM outputs.
@@ -111,7 +111,7 @@ The communication channel is via Telemetry Radios.
 The vehicle-based radio should be connected to either the `TELEM1` or `TELEM2` port (if connected to these ports, no further configuration is required).
 The other radio is connected to your ground station computer or mobile device (usually via USB).
 
-![V5+ AutoPilot](../../assets/flight_controller/cuav_v5_plus/connection/v5+_quickstart_06.png)
+![V5+ AutoPilot](images/drones/flight_controller/cuav_v5_plus/connection/v5+_quickstart_06.png)
 
 <span id="sd_card"></span>
 ## SD Card (Optional)
@@ -122,7 +122,7 @@ An [SD card](../getting_started/px4_basic_concepts.md#sd_cards) is inserted in t
 
 Motors/servos are connected to the MAIN and AUX ports in the order specified for your vehicle in the [Airframes Reference](../airframes/airframe_reference.md).
 
-![V5+ AutoPilot](../../assets/flight_controller/cuav_v5_plus/connection/v5+_quickstart_07.png)
+![V5+ AutoPilot](images/drones/flight_controller/cuav_v5_plus/connection/v5+_quickstart_07.png)
 
 
 ## Pinouts

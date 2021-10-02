@@ -13,7 +13,7 @@ However they are aerodynamically more complex, and can be harder to tune and fly
     <div class="grid_item_heading"><big><a href="../airframes/airframe_reference.html#vtol-duo-tailsitter">VTOL Duo Tailsitter</a></big></div>
     <div class="grid_text">
     Two rotor VTOL that uses elevons to flip from hover into fixed-wing flight.<br><br>
-    <img src="../../assets/airframes/vtol/wingtraone/hero.jpg" title="Wingtra: WingtraOne VTOL Duo Tailsitter" alt="wingtraone" /> 
+    <img src="images/drones/airframes/vtol/wingtraone/hero.jpg" title="Wingtra: WingtraOne VTOL Duo Tailsitter" alt="wingtraone" /> 
     <ul>
       <li>Forward flight more efficient</li>
       <li>Hover harder to fly, particularly in wind</li>
@@ -26,7 +26,7 @@ However they are aerodynamically more complex, and can be harder to tune and fly
   <div class="grid_item_heading"><big><a href="../airframes/airframe_reference.html#vtol-quad-tailsitter">VTOL Quad Tailsitter</a></big></div>
   Four rotor VTOL with optional elevons. Uses rotors to transition between modes (along with elevons if present).
   <div class="grid_text">
-  <img title="Skypull SP-1 VTOL QuadTailsitter" src="../../assets/airframes/vtol/skypull/skypull_sp1.jpg" />
+  <img title="Skypull SP-1 VTOL QuadTailsitter" src="images/drones/airframes/vtol/skypull/skypull_sp1.jpg" />
   <ul>
     <li>Hover mode easier to fly and more stable</li>
     <li>Less compact form factor (harder to transport)</li>
@@ -95,31 +95,31 @@ This section contains videos that are specific to Tailsitter VTOL (videos that a
   <div class="grid_item">
     <div class="grid_item_heading"><big><a href="https://wingtra.com/mapping-drone-wingtraone/">WingtraOne</a></big></div>
     <div class="grid_text">
-    <img src="../../assets/airframes/vtol/wingtraone/hero.jpg" title="Wingtra: WingtraOne VTOL Duo Tailsitter" alt="wingtraone" /> 
+    <img src="images/drones/airframes/vtol/wingtraone/hero.jpg" title="Wingtra: WingtraOne VTOL Duo Tailsitter" alt="wingtraone" /> 
     </div>
   </div>
   <div class="grid_item">
     <div class="grid_item_heading"><big><a href="https://www.skypull.technology/">Skypull</a></big></div>
     <div class="grid_text">
-      <img title="Skypull SP-1 VTOL QuadTailsitter" src="../../assets/airframes/vtol/skypull/skypull_sp1.jpg" />
+      <img title="Skypull SP-1 VTOL QuadTailsitter" src="images/drones/airframes/vtol/skypull/skypull_sp1.jpg" />
     </div>
   </div>
   <div class="grid_item">
     <div class="grid_item_heading"><big><a href="../frames_vtol/vtol_tailsitter_caipiroshka_pixracer.html">TBS Caipiroshka</a></big></div>
     <div class="grid_text">
-      <img title="TBS Caipiroshka" src="../../assets/airframes/vtol/caipiroshka/caipiroshka.jpg" />
+      <img title="TBS Caipiroshka" src="images/drones/airframes/vtol/caipiroshka/caipiroshka.jpg" />
     </div>
   </div>
   <div class="grid_item">
     <div class="grid_item_heading"><big>ax1800</big></div>
     <div class="grid_text">
-      <img title="ax1800" src="../../assets/airframes/vtol/xdwgood_ax1800/hero.jpg" />
+      <img title="ax1800" src="images/drones/airframes/vtol/xdwgood_ax1800/hero.jpg" />
     </div>
   </div>
   <div class="grid_item">
     <div class="grid_item_heading"><big><a href="https://www.valaqpatrol.com/tech-data/">UAV Works VALAQ Patrol Tailsitter</a></big></div>
     <div class="grid_text">
-      <img title="UAV Works VALAQ Patrol Tailsitter" src="../../assets/airframes/vtol/uav_works_valaq_patrol/hero.jpg" />
+      <img title="UAV Works VALAQ Patrol Tailsitter" src="images/drones/airframes/vtol/uav_works_valaq_patrol/hero.jpg" />
     </div>
   </div>
 </div>

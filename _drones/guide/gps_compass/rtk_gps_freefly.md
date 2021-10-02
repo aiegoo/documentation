@@ -12,7 +12,7 @@ Main features include:
 This module can be used with PX4 v1.9 or above (support for the u-blox ZED-F9P was added in PX4 v1.9).
 :::
 
-![FreeFly GPS Module](../../assets/hardware/gps/freefly_gps_module.jpg)
+![FreeFly GPS Module](images/drones/hardware/gps/freefly_gps_module.jpg)
 
 
 ## Purchase

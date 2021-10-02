@@ -8,7 +8,7 @@ The *Ainstein* [US-D1 Standard Radar Altimeter](https://ainstein.ai/drone-makers
 With a sensing range of about 40 metres, it is useful for applications including terrain following, precision hovering (e.g. for photography), anti-collision sensing etc.
 Particular advantages of this product are that it can operate effectively in all weather conditions and over all terrain types (including water).
 
-![Ainstein US-DA](../../assets/hardware/sensors/ainstein/us_d1_hero.jpg)
+![Ainstein US-DA](images/drones/hardware/sensors/ainstein/us_d1_hero.jpg)
 
 The rangefinder is not automatically included in most firmware, and hence cannot be used just by setting a parameter through *QGroundControl* (as is possible with some other rangefinders).
 To use it you will need to add the driver to firmware and update a configuration file to start the driver on boot.

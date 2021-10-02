@@ -8,7 +8,7 @@ Key information
 - **Flight controller:** [CUAV V5+](../flight_controller/cuav_v5_plus.md)
 - **Assembly time (approx.):** 90 minutes (45 minutes for frame, 45 minutes autopilot installation/configuration)
 
-![Finished setup 1](../../assets/airframes/multicopter/dji_f450_cuav_5plus/f450_cuav5_plus_complete.jpg)
+![Finished setup 1](images/drones/airframes/multicopter/dji_f450_cuav_5plus/f450_cuav5_plus_complete.jpg)
 
 ## Bill of materials
 
@@ -30,7 +30,7 @@ You will also need zip ties, double-sided tape, a soldering iron.
 
 The image below shows both frame and electronic components.
 
-![All components used in this build](../../assets/airframes/multicopter/dji_f450_cuav_5plus/all_components.jpg)
+![All components used in this build](images/drones/airframes/multicopter/dji_f450_cuav_5plus/all_components.jpg)
 
 
 ## Hardware
@@ -49,7 +49,7 @@ M2 5*6 screws | 24
 Velcro Battery Strap | 1
 DJI Phantom Built-in Nut Upgrade Propellers 9.4x5 | 1
 
-![F450 frame components](../../assets/airframes/multicopter/dji_f450_cuav_5plus/f450_frame_components.jpg)
+![F450 frame components](images/drones/airframes/multicopter/dji_f450_cuav_5plus/f450_frame_components.jpg)
 
 
 ### CUAV V5+ Package
@@ -77,7 +77,7 @@ TTL Plate                | 1 | 1
 NEO GPS                  | - | 1
 GPS Bracket              | - | 1
 
-![CUAV V5+ components](../../assets/airframes/multicopter/dji_f450_cuav_5plus/cuav5plus_components.jpg)
+![CUAV V5+ components](images/drones/airframes/multicopter/dji_f450_cuav_5plus/cuav5plus_components.jpg)
 
 
 ### Electronics
@@ -105,7 +105,7 @@ The following tools are used in this assembly:
 - Soldering iron
 
 
-![Required tools](../../assets/airframes/multicopter/dji_f450_cuav_5plus/required_tools.jpg)
+![Required tools](images/drones/airframes/multicopter/dji_f450_cuav_5plus/required_tools.jpg)
 
 ## Assembly
 
@@ -113,50 +113,50 @@ Estimated time to assemble is approximately 90 minutes (about 45 minutes for the
 
 1. Attach the 4 arms to the bottom plate using the provided screws.
 
-   ![Arms to bottom plate](../../assets/airframes/multicopter/dji_f450_cuav_5plus/1_attach_arms_bottom_plate.jpg)
+   ![Arms to bottom plate](images/drones/airframes/multicopter/dji_f450_cuav_5plus/1_attach_arms_bottom_plate.jpg)
 
 1. Solder ESC (Electronic Speed Controller) to the board, positive (red) and negative (black).
 
-   ![Solder ESCs](../../assets/airframes/multicopter/dji_f450_cuav_5plus/2_solder_esc.jpg)
+   ![Solder ESCs](images/drones/airframes/multicopter/dji_f450_cuav_5plus/2_solder_esc.jpg)
 
 1. Solder the Power Module, positive (red) and negative (black).
 
-   ![Solder power module](../../assets/airframes/multicopter/dji_f450_cuav_5plus/3_solder_power_module.jpg)
+   ![Solder power module](images/drones/airframes/multicopter/dji_f450_cuav_5plus/3_solder_power_module.jpg)
 
 1. Plug in the motors to the ESCs according to their positions.
 
-   ![Plug in motors](../../assets/airframes/multicopter/dji_f450_cuav_5plus/4_plug_in_motors.jpg)
+   ![Plug in motors](images/drones/airframes/multicopter/dji_f450_cuav_5plus/4_plug_in_motors.jpg)
 
 1. Attach the motors to the corresponding arms.
 
-   ![Attach motors to arms (white)](../../assets/airframes/multicopter/dji_f450_cuav_5plus/5a_attach_motors_to_arms.jpg)
-   ![Attach motors to arms (red)](../../assets/airframes/multicopter/dji_f450_cuav_5plus/5b_attach_motors_to_arms.jpg)
+   ![Attach motors to arms (white)](images/drones/airframes/multicopter/dji_f450_cuav_5plus/5a_attach_motors_to_arms.jpg)
+   ![Attach motors to arms (red)](images/drones/airframes/multicopter/dji_f450_cuav_5plus/5b_attach_motors_to_arms.jpg)
 
 1. Add the top board (screw into the top of the legs).
 
-   ![Add top board](../../assets/airframes/multicopter/dji_f450_cuav_5plus/6_add_top_board.jpg)
+   ![Add top board](images/drones/airframes/multicopter/dji_f450_cuav_5plus/6_add_top_board.jpg)
 
 1. Add double-sided tape (3M) to the CUAV V5+ flight controller (it has internal vibration damping, so no need to use foam).
 
-   ![Tape CUAV v5+](../../assets/airframes/multicopter/dji_f450_cuav_5plus/7_attach_cuav5plus.jpg)
+   ![Tape CUAV v5+](images/drones/airframes/multicopter/dji_f450_cuav_5plus/7_attach_cuav5plus.jpg)
 
 1. Attach the FrSky receiver to the bottom board with double-sided tape.
 
-   ![Attach FrSky receiver with double-sided tape](../../assets/airframes/multicopter/dji_f450_cuav_5plus/8_attach_frsky.jpg)
+   ![Attach FrSky receiver with double-sided tape](images/drones/airframes/multicopter/dji_f450_cuav_5plus/8_attach_frsky.jpg)
 
 1. Attach the telemetry module to the vehicle’s bottom board using double-sided tape.
 
-   ![Attach telemetry radio](../../assets/airframes/multicopter/dji_f450_cuav_5plus/9a_telemtry_radio.jpg)
-   ![Attach telemetry radio](../../assets/airframes/multicopter/dji_f450_cuav_5plus/9b_telemtry_radio.jpg)
+   ![Attach telemetry radio](images/drones/airframes/multicopter/dji_f450_cuav_5plus/9a_telemtry_radio.jpg)
+   ![Attach telemetry radio](images/drones/airframes/multicopter/dji_f450_cuav_5plus/9b_telemtry_radio.jpg)
 
 1. Put the aluminium standoffs on the button plate.
 
 1. Plug in Telemetry (`TELEM1`) and GPS module (`GPS/SAFETY`) to the flight controller.
-   ![Attach GPS](../../assets/airframes/multicopter/dji_f450_cuav_5plus/11a_gps.jpg)
-   ![Attach GPS](../../assets/airframes/multicopter/dji_f450_cuav_5plus/11b_gps.jpg)
+   ![Attach GPS](images/drones/airframes/multicopter/dji_f450_cuav_5plus/11a_gps.jpg)
+   ![Attach GPS](images/drones/airframes/multicopter/dji_f450_cuav_5plus/11b_gps.jpg)
    
 1. Plug in the RC receiver (`RC`), all 4 ESC’s (`M1-M4`), and the power module (`Power1`) into the flight controller.
-   ![Attach peripherals to flight controller](../../assets/airframes/multicopter/dji_f450_cuav_5plus/12_fc_attach_periperhals.jpg)
+   ![Attach peripherals to flight controller](images/drones/airframes/multicopter/dji_f450_cuav_5plus/12_fc_attach_periperhals.jpg)
    
    :::note
    The motor order is defined in the [Airframe Reference > Quadrotor x](../airframes/airframe_reference.md#quadrotor-x)
@@ -165,7 +165,7 @@ Estimated time to assemble is approximately 90 minutes (about 45 minutes for the
 That's it!
 The final build is shown below:
 
-![Finished Setup](../../assets/airframes/multicopter/dji_f450_cuav_5plus/f450_cuav5_plus_complete_2.jpg)
+![Finished Setup](images/drones/airframes/multicopter/dji_f450_cuav_5plus/f450_cuav5_plus_complete_2.jpg)
 
 
 <span id="configure"></span>
@@ -185,7 +185,7 @@ First update the firmware and airframe:
   :::note
   You will need to select the *Generic Quadrotor X* airframe (**Quadrotor x > Generic Quadrotor X**).
 
-  ![QGroundControl - Select Generic Quadrotor X airframee](../../assets/airframes/multicopter/dji_f450_cuav_5plus/qgc_select_airframe.jpg)
+  ![QGroundControl - Select Generic Quadrotor X airframee](images/drones/airframes/multicopter/dji_f450_cuav_5plus/qgc_select_airframe.jpg)
   :::
 
 Then perform the mandatory setup/calibration:

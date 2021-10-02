@@ -11,7 +11,7 @@ The diagrams use the standard [PX4 notation](../contribute/notation.md) (and eac
 
 ## Multicopter Control Architecture
 
-![MC Controller Diagram](../../assets/diagrams/mc_control_arch.jpg)
+![MC Controller Diagram](images/drones/diagrams/mc_control_arch.jpg)
 
 * This is a standard cascaded control architecture.
 * The controllers are a mix of P and PID controllers.
@@ -21,7 +21,7 @@ The diagrams use the standard [PX4 notation](../contribute/notation.md) (and eac
 
 ### Multicopter Angular Rate Controller
 
-![MC Rate Control Diagram](../../assets/diagrams/mc_angular_rate_diagram.jpg)
+![MC Rate Control Diagram](images/drones/diagrams/mc_angular_rate_diagram.jpg)
 
 * K-PID controller. See [Rate Controller](../config_mc/pid_tuning_guide_multicopter.md#rate-controller) for more information.
 * The integral authority is limited to prevent wind up.
@@ -32,14 +32,14 @@ The diagrams use the standard [PX4 notation](../contribute/notation.md) (and eac
   The IMU pipeline is: 
   gyro data > apply calibration parameters > remove estimated bias > notch filter (`IMU_GYRO_NF_BW` and `IMU_GYRO_NF_FREQ`) > low-pass filter (`IMU_GYRO_CUTOFF`) > vehicle_angular_velocity (*filtered angular rate used by the P and I controllers*) > derivative -> low-pass filter (`IMU_DGYRO_CUTOFF`) > vehicle_angular_acceleration (*filtered angular acceleration used by the D controller*)
   
-  ![IMU pipeline](../../assets/diagrams/px4_imu_pipeline.png)
+  ![IMU pipeline](images/drones/diagrams/px4_imu_pipeline.png)
   :::
   
   <!-- source for image is https://github.com/PX4/PX4-Autopilot/blob/850d0bc588af79186286652af4c8293daafd2c4c/src/lib/mixer/MultirotorMixer/MultirotorMixer.cpp#L323-L326 -->
 
 ### Multicopter Attitude Controller
 
-![MC Angle Control Diagram](../../assets/diagrams/mc_angle_diagram.jpg)
+![MC Angle Control Diagram](images/drones/diagrams/mc_angle_diagram.jpg)
 
 * The attitude controller makes use of [quaternions](https://en.wikipedia.org/wiki/Quaternion).
 * The controller is implemented from this [article](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/154099/eth-7387-01.pdf).
@@ -48,7 +48,7 @@ The diagrams use the standard [PX4 notation](../contribute/notation.md) (and eac
 
 ### Multicopter Velocity Controller
 
-![MC Velocity Control Diagram](../../assets/diagrams/mc_velocity_diagram.jpg)
+![MC Velocity Control Diagram](images/drones/diagrams/mc_velocity_diagram.jpg)
 
 * PID controller to stabilise velocity. Commands an acceleration.
 * The integrator includes an anti-reset windup (ARW) using a clamping method.
@@ -56,14 +56,14 @@ The diagrams use the standard [PX4 notation](../contribute/notation.md) (and eac
 
 ### Multicopter Position Controller
 
-![MC Position Control Diagram](../../assets/diagrams/mc_position_diagram.jpg)
+![MC Position Control Diagram](images/drones/diagrams/mc_position_diagram.jpg)
 
 * Simple P controller that commands a velocity.
 * The commanded velocity is saturated to keep the velocity in certain limits.
 
 #### Combined Position and Velocity Controller Diagram
 
-![MC Position Controller Diagram](../../assets/diagrams/px4_mc_position_controller_diagram.png)
+![MC Position Controller Diagram](images/drones/diagrams/px4_mc_position_controller_diagram.png)
 
 <!-- The drawing is on draw.io: https://drive.google.com/open?id=13Mzjks1KqBiZZQs15nDN0r0Y9gM_EjtX
 Request access from dev team. -->
@@ -74,7 +74,7 @@ Request access from dev team. -->
 The PX4 implementation of the Total Energy Control System (TECS) enables simultaneous control of true airspeed and altitude of a fixed wing aircraft.
 The code is implemented as a library which is used in the fixed wing position control module.
 
-![TECS](../../assets/diagrams/tecs_in_context.svg)
+![TECS](images/drones/diagrams/tecs_in_context.svg)
 
 As seen in the diagram above, TECS receives as inputs airspeed and altitude setpoints and outputs a throttle and pitch angle setpoint.
 These two outputs are sent to the fixed wing attitude controller which implements the attitude control solution.
@@ -101,12 +101,12 @@ We use thrust to regulate the specific total energy of the vehicle and pitch mai
 
 #### Total energy control loop
 
-![Energy loop](../../assets/diagrams/TECS_throttle.jpg)
+![Energy loop](images/drones/diagrams/TECS_throttle.jpg)
 
 
 #### Total energy balance control loop
 
-![Energy balance loop](../../assets/diagrams/TECS_pitch.jpg)
+![Energy balance loop](images/drones/diagrams/TECS_pitch.jpg)
 
 The total energy of an aircraft is the sum of kinetic and potential energy:
 
@@ -142,7 +142,7 @@ $$\dot{B} = \gamma - \frac{\dot{V_T}}{g}$$
 
 ## Fixed-Wing Attitude Controller
 
-![FW Attitude Controller Diagram](../../assets/diagrams/px4_fw_attitude_controller_diagram.png)
+![FW Attitude Controller Diagram](images/drones/diagrams/px4_fw_attitude_controller_diagram.png)
 
 <!-- The drawing is on draw.io: https://drive.google.com/file/d/1ibxekmtc6Ljq60DvNMplgnnU-JOvKYLQ/view?usp=sharing
 Request access from dev team. -->
@@ -169,7 +169,7 @@ The yaw rate controller also helps to counteract adverse yaw effects (https://yo
 
 ## VTOL Flight Controller 
 
-![VTOL Attitude Controller Diagram](../../assets/diagrams/VTOL_controller_diagram.png)
+![VTOL Attitude Controller Diagram](images/drones/diagrams/VTOL_controller_diagram.png)
 
 <!-- The drawing is on draw.io: https://drive.google.com/file/d/1tVpmFhLosYjAtVI46lfZkxBz_vTNi8VH/view?usp=sharing
 Request access from dev team. -->

@@ -50,7 +50,7 @@ div.frame_variant td, div.frame_variant th {
 ### Airship
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/Airship.svg"/>
+<img src="images/drones/airframes/types/Airship.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -81,7 +81,7 @@ div.frame_variant td, div.frame_variant th {
 ### Autogyro
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/Autogyro.svg"/>
+<img src="images/drones/airframes/types/Autogyro.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -116,7 +116,7 @@ div.frame_variant td, div.frame_variant th {
 ### Balloon
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/Balloon.svg"/>
+<img src="images/drones/airframes/types/Balloon.svg"/>
 </div>
 
 <div class="frame_variant">
@@ -138,7 +138,7 @@ div.frame_variant td, div.frame_variant th {
 ### Coaxial Helicopter
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/HelicopterCoaxial.svg"/>
+<img src="images/drones/airframes/types/HelicopterCoaxial.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -167,7 +167,7 @@ div.frame_variant td, div.frame_variant th {
 ### Dodecarotor cox
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/DodecaRotorXCoaxial.svg"/>
+<img src="images/drones/airframes/types/DodecaRotorXCoaxial.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -196,7 +196,7 @@ div.frame_variant td, div.frame_variant th {
 ### Helicopter
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/Helicopter.svg"/>
+<img src="images/drones/airframes/types/Helicopter.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -225,7 +225,7 @@ div.frame_variant td, div.frame_variant th {
 ### Hexarotor +
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/HexaRotorPlus.svg"/>
+<img src="images/drones/airframes/types/HexaRotorPlus.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -254,7 +254,7 @@ div.frame_variant td, div.frame_variant th {
 ### Hexarotor Coaxial
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/Y6B.svg"/>
+<img src="images/drones/airframes/types/Y6B.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -283,7 +283,7 @@ div.frame_variant td, div.frame_variant th {
 ### Hexarotor x
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/HexaRotorX.svg"/>
+<img src="images/drones/airframes/types/HexaRotorX.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -320,7 +320,7 @@ div.frame_variant td, div.frame_variant th {
 ### Octo Coax Wide
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/OctoRotorXCoaxial.svg"/>
+<img src="images/drones/airframes/types/OctoRotorXCoaxial.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -349,7 +349,7 @@ div.frame_variant td, div.frame_variant th {
 ### Octorotor +
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/OctoRotorPlus.svg"/>
+<img src="images/drones/airframes/types/OctoRotorPlus.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -378,7 +378,7 @@ div.frame_variant td, div.frame_variant th {
 ### Octorotor Coaxial
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/OctoRotorXCoaxial.svg"/>
+<img src="images/drones/airframes/types/OctoRotorXCoaxial.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -407,7 +407,7 @@ div.frame_variant td, div.frame_variant th {
 ### Octorotor x
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/OctoRotorX.svg"/>
+<img src="images/drones/airframes/types/OctoRotorX.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -436,7 +436,7 @@ div.frame_variant td, div.frame_variant th {
 ### Quadrotor +
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/QuadRotorPlus.svg"/>
+<img src="images/drones/airframes/types/QuadRotorPlus.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -465,7 +465,7 @@ div.frame_variant td, div.frame_variant th {
 ### Quadrotor H
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/QuadRotorH.svg"/>
+<img src="images/drones/airframes/types/QuadRotorH.svg"/>
 </div>
 
 <div class="frame_variant">
@@ -489,7 +489,7 @@ div.frame_variant td, div.frame_variant th {
 ### Quadrotor Wide
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/QuadRotorWide.svg"/>
+<img src="images/drones/airframes/types/QuadRotorWide.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -530,7 +530,7 @@ div.frame_variant td, div.frame_variant th {
 ### Quadrotor asymmetric
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/AirframeUnknown.svg"/>
+<img src="images/drones/airframes/types/AirframeUnknown.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -559,7 +559,7 @@ div.frame_variant td, div.frame_variant th {
 ### Quadrotor x
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/QuadRotorX.svg"/>
+<img src="images/drones/airframes/types/QuadRotorX.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -688,7 +688,7 @@ div.frame_variant td, div.frame_variant th {
 ### Simulation (Copter)
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/AirframeUnknown.svg"/>
+<img src="images/drones/airframes/types/AirframeUnknown.svg"/>
 </div>
 
 <div class="frame_variant">
@@ -712,7 +712,7 @@ div.frame_variant td, div.frame_variant th {
 ### Tilt-Quad
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/AirframeUnknown.svg"/>
+<img src="images/drones/airframes/types/AirframeUnknown.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -741,7 +741,7 @@ div.frame_variant td, div.frame_variant th {
 ### Tricopter Y+
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/YPlus.svg"/>
+<img src="images/drones/airframes/types/YPlus.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -770,7 +770,7 @@ div.frame_variant td, div.frame_variant th {
 ### Tricopter Y-
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/YMinus.svg"/>
+<img src="images/drones/airframes/types/YMinus.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -801,7 +801,7 @@ div.frame_variant td, div.frame_variant th {
 ### Flying Wing
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/FlyingWing.svg"/>
+<img src="images/drones/airframes/types/FlyingWing.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -866,7 +866,7 @@ div.frame_variant td, div.frame_variant th {
 ### Plane A-Tail
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/PlaneATail.svg"/>
+<img src="images/drones/airframes/types/PlaneATail.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -895,7 +895,7 @@ div.frame_variant td, div.frame_variant th {
 ### Plane V-Tail
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/PlaneVTail.svg"/>
+<img src="images/drones/airframes/types/PlaneVTail.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -924,7 +924,7 @@ div.frame_variant td, div.frame_variant th {
 ### Simulation (Plane)
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/AirframeUnknown.svg"/>
+<img src="images/drones/airframes/types/AirframeUnknown.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -957,7 +957,7 @@ div.frame_variant td, div.frame_variant th {
 ### Standard Plane
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/Plane.svg"/>
+<img src="images/drones/airframes/types/Plane.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -992,7 +992,7 @@ div.frame_variant td, div.frame_variant th {
 ### Rover
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/Rover.svg"/>
+<img src="images/drones/airframes/types/Rover.svg"/>
 </div>
 
 <div class="frame_variant">
@@ -1022,7 +1022,7 @@ div.frame_variant td, div.frame_variant th {
 ### Underwater Robot
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/AirframeUnknown.svg"/>
+<img src="images/drones/airframes/types/AirframeUnknown.svg"/>
 </div>
 
 <div class="frame_variant">
@@ -1046,7 +1046,7 @@ div.frame_variant td, div.frame_variant th {
 ### Vectored 6 DOF UUV
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/Vectored6DofUUV.svg"/>
+<img src="images/drones/airframes/types/Vectored6DofUUV.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -1077,7 +1077,7 @@ div.frame_variant td, div.frame_variant th {
 ### Standard VTOL
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/VTOLPlane.svg"/>
+<img src="images/drones/airframes/types/VTOLPlane.svg"/>
 </div>
 
 <div class="frame_variant">
@@ -1129,7 +1129,7 @@ div.frame_variant td, div.frame_variant th {
 ### VTOL Duo Tailsitter
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/VTOLDuoRotorTailSitter.svg"/>
+<img src="images/drones/airframes/types/VTOLDuoRotorTailSitter.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -1162,7 +1162,7 @@ div.frame_variant td, div.frame_variant th {
 ### VTOL Octoplane
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/VTOLPlaneOcto.svg"/>
+<img src="images/drones/airframes/types/VTOLPlaneOcto.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -1191,7 +1191,7 @@ div.frame_variant td, div.frame_variant th {
 ### VTOL Quad Tailsitter
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/VTOLQuadRotorTailSitter.svg"/>
+<img src="images/drones/airframes/types/VTOLQuadRotorTailSitter.svg"/>
 <table>
  <thead>
    <tr><th>Common Outputs</th></tr>
@@ -1224,7 +1224,7 @@ div.frame_variant td, div.frame_variant th {
 ### VTOL Tiltrotor
 
 <div class="frame_common">
-<img src="../../assets/airframes/types/VTOLTiltRotor.svg"/>
+<img src="images/drones/airframes/types/VTOLTiltRotor.svg"/>
 </div>
 
 <div class="frame_variant">

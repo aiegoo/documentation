@@ -3,7 +3,7 @@
 CAN PMU<sup>&reg;</sup> is a high-precision [UAVCAN](../uavcan/README.md) power module developed by CUAV<sup>&reg;</sup>.
 It runs the CUAV ITT compensation algorithm, which enables drones to get the battery data more accurately.
 
-![CAN PMU](../../assets/hardware/power_module/cuav_can/can_pmu.jpg)
+![CAN PMU](images/drones/hardware/power_module/cuav_can/can_pmu.jpg)
 
 It is recommended for use in large commercial vehicles, but might also be used for research vehicles.
 
@@ -37,13 +37,13 @@ It is recommended for use in large commercial vehicles, but might also be used f
 
 ## Pinouts
 
-![CAN PMU](../../assets/hardware/power_module/cuav_can/can_pmu_pinouts_en.png)
+![CAN PMU](images/drones/hardware/power_module/cuav_can/can_pmu_pinouts_en.png)
  
-![CAN PMU](../../assets/hardware/power_module/cuav_can/can_pmu_pinouts_en2.png)
+![CAN PMU](images/drones/hardware/power_module/cuav_can/can_pmu_pinouts_en2.png)
 
 ## Connection
 
-![CAN PMU](../../assets/hardware/power_module/cuav_can/can_pmu_connection_en.png)
+![CAN PMU](images/drones/hardware/power_module/cuav_can/can_pmu_connection_en.png)
 
 The connection steps are:
 * Connect the flight control CAN1/2 and the module CAN interface.
@@ -55,11 +55,11 @@ Set the following parameters in the *QGroundControl* [parameter list](../advance
 
 * `UAVCAN_ENABLE`: set to: *Sensors Automatic Config*
 
-  ![qgc set](../../assets/hardware/power_module/cuav_can/qgc_set_en.png)
+  ![qgc set](images/drones/hardware/power_module/cuav_can/qgc_set_en.png)
 
 # Package Contents
 
-![CAN PMU list](../../assets/hardware/power_module/cuav_can/can_pmu_list.png)
+![CAN PMU list](images/drones/hardware/power_module/cuav_can/can_pmu_list.png)
 
 ## Further Information
 

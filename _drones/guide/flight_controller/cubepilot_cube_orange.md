@@ -11,7 +11,7 @@ The PX4 dev team supports this flight controller as a footprint compatible repla
 
 The [Cube Orange](http://www.proficnc.com/61-system-kits2) flight controller is a flexible autopilot intended primarily for manufacturers of commercial systems. 
 
-![Cube Orange](../../assets/flight_controller/cube/orange/cube_orange_hero.jpg)
+![Cube Orange](images/drones/flight_controller/cube/orange/cube_orange_hero.jpg)
 
 The controller is designed to be used with a domain-specific carrier board in order to reduce the wiring, improve reliability, and ease of assembly.
 For example, a carrier board for a commercial inspection vehicle might include connections for a companion computer, while a carrier board for a racer could includes ESCs for the frame of the vehicle.
@@ -100,7 +100,7 @@ Board schematics and other documentation can be found here: [The Cube Project](h
 
 ### Top-Side (GPS, TELEM etc)
 
-![Cube Ports - Top (GPS, TELEM etc) and Main/AUX](../../assets/flight_controller/cube/cube_ports_top_main.jpg)
+![Cube Ports - Top (GPS, TELEM etc) and Main/AUX](images/drones/flight_controller/cube/cube_ports_top_main.jpg)
 
 
 ## Serial Port Mapping
@@ -122,11 +122,11 @@ UART8  | /dev/ttyS6 | GPS2
 
 ### Debug Ports
 
-![Cube Debug Ports](../../assets/flight_controller/cube/cube_ports_debug.jpg)
+![Cube Debug Ports](images/drones/flight_controller/cube/cube_ports_debug.jpg)
 
 ### USB/SDCard Ports
 
-![Cube USB/SDCard Ports](../../assets/flight_controller/cube/cube_ports_usb_sdcard.jpg)
+![Cube USB/SDCard Ports](images/drones/flight_controller/cube/cube_ports_usb_sdcard.jpg)
 
 
 ## Building Firmware

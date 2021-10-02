@@ -9,7 +9,7 @@ The [X7](http://doc.cuav.net/flight-controller/x7/en/x7.html)<sup>&reg;</sup> fl
 It is an ideal choice for industrial drones and large-scale heavy-duty drones.
 It is mainly supplied to commercial manufacturers.
 
-![CUAV x7](../../assets/flight_controller/cuav_x7/x7.jpg)
+![CUAV x7](images/drones/flight_controller/cuav_x7/x7.jpg)
 
 The flight controller adopts a modular design and can be matched with different base plates.
 You can design a dedicated carrier board for your UAV to improve the integration of commercial systems, reduce wiring, improve system reliability, and enhance your UAV competitiveness (for example, integrating airspeed sensors, telemetry or even a companion computer, in the carrier board).
@@ -85,9 +85,9 @@ When it runs PX4 firmware, only 8 pwm works, the remaining 6 pwm are still being
 
 ## Size and Pinouts
 
-![CUAV x7](../../assets/flight_controller/cuav_x7/x7-size.jpg)
+![CUAV x7](images/drones/flight_controller/cuav_x7/x7-size.jpg)
 
-![X7 pinouts](../../assets/flight_controller/cuav_x7/x7-pinouts.jpg)
+![X7 pinouts](images/drones/flight_controller/cuav_x7/x7-pinouts.jpg)
 
 :::warning
 The `RCIN` port is limited to powering the RC receiver and cannot be connected to any power/load.
@@ -135,7 +135,7 @@ Up to 2.5 A can be delivered to the connectors listed as pin 1 (although these a
 The system's serial console and SWD interface operate on the **DSU7** port.
 Simply connect the FTDI cable to the DSU7 connector (the product list contains the CUAV FTDI cable).
 
-![Debug port (DSU7)](../../assets/flight_controller/cuav_v5_plus/debug_port_dsu7.jpg)
+![Debug port (DSU7)](images/drones/flight_controller/cuav_v5_plus/debug_port_dsu7.jpg)
 
 
 The [PX4 System Console](../debug/system_console.md) and [SWD interface](../debug/swd_debug.md) operate on the **FMU Debug** port (`DSU7`).
@@ -155,7 +155,7 @@ CUAV provides a dedicated debugging cable, which can be connected to the `DSU7` 
 This splits out an FTDI cable for connecting the [PX4 System Console](../debug/system_console.md) to a computer USB port, and SWD pins used for SWD/JTAG debugging.
 The provided debug cable does not connect to the SWD port `Vref` pin (1).
 
-![CUAV Debug cable](../../assets/flight_controller/cuav_v5_plus/cuav_v5_debug_cable.jpg)
+![CUAV Debug cable](images/drones/flight_controller/cuav_v5_plus/cuav_v5_debug_cable.jpg)
 
 :::warning
 The SWD Vref pin (1) uses 5V as Vref but the CPU is run at 3.3V!

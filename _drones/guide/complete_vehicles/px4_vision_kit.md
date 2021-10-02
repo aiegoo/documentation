@@ -2,7 +2,7 @@
 
 The [*PX4 Vision Autonomy Development Kit*](http://www.holybro.com/product/px4-vision/) is a robust and inexpensive kit for enabling computer vision development on autonomous vehicles.
 
-![Overview](../../assets/hardware/px4_vision_devkit/px4_vision_kit_hero.jpg)
+![Overview](images/drones/hardware/px4_vision_devkit/px4_vision_kit_hero.jpg)
 
 The kit contains a near-ready-to-fly carbon-fiber quadcopter equipped with a *Pixhawk 4* flight controller, a *UP Core* companion computer (4GB memory & 64GB eMMC), and a Occipital *Structure Core* depth camera sensor.
 
@@ -39,20 +39,20 @@ The guide explains the minimal additional setup required to get the vehicle read
 1. The port labeled `USB1` may jam the GPS if used with a *USB3* peripheral (disable GPS-dependent functionality including missions).
    This is why the boot image is supplied on a *USB2.0* memory stick.
 1. PX4 Vision with ECN 010 or above (carrier board RC05 and up), the *UP Core* can be powered by either the DC plug or with battery.
-   ![RC Number](../../assets/hardware/px4_vision_devkit/rc.png) ![ECN Number](../../assets/hardware/px4_vision_devkit/Serial_Number_Update.jpg)
+   ![RC Number](images/drones/hardware/px4_vision_devkit/rc.png) ![ECN Number](images/drones/hardware/px4_vision_devkit/Serial_Number_Update.jpg)
 
 :::warning
 For PX4 Vision with ECN below 010/carrier board below RC04, the *UP Core* should only be powered using the battery (do not remove the *UP Core power* socket safety cover).
 
-![Warning - do not connect power port](../../assets/hardware/px4_vision_devkit/warning_power_port_update.png)
+![Warning - do not connect power port](images/drones/hardware/px4_vision_devkit/warning_power_port_update.png)
 :::
 
 ## What is Inside
-![Whats inside](../../assets/hardware/px4_vision_devkit/holybro_px4_vision_whats_inside_top.jpg)
+![Whats inside](images/drones/hardware/px4_vision_devkit/holybro_px4_vision_whats_inside_top.jpg)
 
-![Whats inside](../../assets/hardware/px4_vision_devkit/holybro_px4_vision_whats_inside.jpg)
+![Whats inside](images/drones/hardware/px4_vision_devkit/holybro_px4_vision_whats_inside.jpg)
 
-<img src="../../assets/hardware/px4_vision_devkit/Explode-view.png" width="500px" title="Pixhawk4 Upright Image" />
+<img src="images/drones/hardware/px4_vision_devkit/Explode-view.png" width="500px" title="Pixhawk4 Upright Image" />
 
 The PX4 Vision DevKit contains following components:
 - Core Components:
@@ -125,11 +125,11 @@ In addition, users will need ground station hardware/software:
    The binding procedure depends on the specific radio system used (read the receiver manual).
 1. Raise the GPS mast to the vertical position and screw the cover onto the holder on the base plate.
 
-   ![Raise GPS mast](../../assets/hardware/px4_vision_devkit/raise_gps_mast.jpg)
+   ![Raise GPS mast](images/drones/hardware/px4_vision_devkit/raise_gps_mast.jpg)
 
 1. Insert the pre-imaged USB2.0 stick from the kit into the *UP Core* port labeled `USB1` (highlighted below).
 
-   ![UP Core: USB1 Port ](../../assets/hardware/px4_vision_devkit/upcore_port_usb1.png)
+   ![UP Core: USB1 Port ](images/drones/hardware/px4_vision_devkit/upcore_port_usb1.png)
 1. Power the vehicle with a fully charged battery.
    :::note
    Ensure propellers are removed before connecting the battery.
@@ -169,15 +169,15 @@ In addition, users will need ground station hardware/software:
 
 1. Attach the propellers with the rotations as shown:
 
-   ![Motor Order Diagram](../../assets/hardware/px4_vision_devkit/motor_order_diagram.png)
+   ![Motor Order Diagram](images/drones/hardware/px4_vision_devkit/motor_order_diagram.png)
 
    - The propellers directions can be determined from the labels: *6045* (normal, counter-clockwise) and _6045_**R** (reversed, clockwise).
 
-     ![Propeller identification](../../assets/hardware/px4_vision_devkit/propeller_directions.jpg)
+     ![Propeller identification](images/drones/hardware/px4_vision_devkit/propeller_directions.jpg)
 
    - Screw down firmly using the provided propellor nuts:
 
-     ![Propeller nuts](../../assets/hardware/px4_vision_devkit/propeller_nuts.jpg)
+     ![Propeller nuts](images/drones/hardware/px4_vision_devkit/propeller_nuts.jpg)
 
 
 ## Fly the Drone with Avoidance
@@ -196,7 +196,7 @@ When the vehicle setup described above is complete:
 
    - The *QGroundControl* notification log displays the message: **Avoidance system connected**.
 
-     ![QGC Log showing avoidance system has started](../../assets/hardware/px4_vision_devkit/qgc_console_vision_system_started.jpg)
+     ![QGC Log showing avoidance system has started](images/drones/hardware/px4_vision_devkit/qgc_console_vision_system_started.jpg)
    - A red laser is visible on the front of the *Structure Core* camera.
 1. Wait for the GPS LED to turn green.
    This means that the vehicle has a GPS fix and is ready to fly!
@@ -278,14 +278,14 @@ Once started the companion computer can be used both as a computer vision develo
 To login to the companion computer:
 1. Connect a keyboard and mouse to the *UP Core* via port `USB2`:
 
-   ![UP Core: USB2](../../assets/hardware/px4_vision_devkit/upcore_port_usb2.png)
+   ![UP Core: USB2](images/drones/hardware/px4_vision_devkit/upcore_port_usb2.png)
    - Use the USB-JST cable from the kit to get a USB A connector
 
-     ![USB to JST cable](../../assets/hardware/px4_vision_devkit/usb_jst_cable.jpg)
+     ![USB to JST cable](images/drones/hardware/px4_vision_devkit/usb_jst_cable.jpg)
    - A USB hub can be attached to the cable if the keyboard and mouse have separate connectors.
 1. Connect a monitor to the *UP Core* HDMI port.
 
-   ![UP Core: HDMI port](../../assets/hardware/px4_vision_devkit/upcore_port_hdmi.png)
+   ![UP Core: HDMI port](images/drones/hardware/px4_vision_devkit/upcore_port_hdmi.png)
 
    The Ubuntu login screen should then appear on the monitor.
 1. Login to the *UP Core* using the credentials:
@@ -346,7 +346,7 @@ The kit is designed for creating computer vision software that runs on the compa
 You can also modify PX4 itself, and [install it as custom firmware](../config/firmware.md#custom):
 - You will need to connect *QGroundControl* to the kit's *Pixhawk 4* **via USB** in order to update firmware.
 - Select the *PX4 Vision DevKit* airframe after loading new firmware:
-  ![Airframe Selection - PX4 Vision DevKit](../../assets/hardware/px4_vision_devkit/qgc_airframe_px4_vision_devkit_platform.jpg)
+  ![Airframe Selection - PX4 Vision DevKit](images/drones/hardware/px4_vision_devkit/qgc_airframe_px4_vision_devkit_platform.jpg)
 
 :::note
 Modification of PX4 code is not *needed* to meet most computer vision use cases.

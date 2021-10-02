@@ -5,7 +5,7 @@ It is intended for applications that requre high-precision positioning (e.g. nav
 
 The receiver is connected to PX4 via a serial port (UART) and may be configured over Ethernet using a standard web browser.
 
-![MINI II Receiver](../../assets/hardware/gps/rtk_fem_miniII_receiver.jpg)
+![MINI II Receiver](images/drones/hardware/gps/rtk_fem_miniII_receiver.jpg)
 
 :::note
 PX4 drivers for Ethernet, CAN and USB are under development.
@@ -29,7 +29,7 @@ Contact [Femtones](http://www.femtomes.com) directly for sales quote:
 
 ## Functional Ports
 
-![MINI II 1](../../assets/hardware/gps/rtk_fem_miniII_1.jpg)
+![MINI II 1](images/drones/hardware/gps/rtk_fem_miniII_1.jpg)
 
 ## Wiring and Connections
 
@@ -37,7 +37,7 @@ The [MINI2 Receiver](http://www.femtomes.com) is connected to a UART on the flig
 To power the module you will need a separate 12V power supply.
 The pins on the 12-pin connector are numbered as shown below.
 
-![MINI_II_2](../../assets/hardware/gps/rtk_fem_miniII_2.jpg)
+![MINI_II_2](images/drones/hardware/gps/rtk_fem_miniII_2.jpg)
 
 
 ## Configuration
@@ -56,10 +56,10 @@ The MINI2 incorporates the following components:
 
 - [FB672](http://www.femtomes.com/en/FB672.php): Compact, dual antenna, dual frequency GNSS OEM board (delivers centimeter accurate position and precise heading).
 
-  ![FB672](../../assets/hardware/gps/rtk_fem_fb_1.jpg)
+  ![FB672](images/drones/hardware/gps/rtk_fem_fb_1.jpg)
 
 - [FB6A0](http://www.femtomes.com/en/FB6A0.php): Compact, quadruple frequency GNSS OEM board (delivers centimeter-accurate positioning)
 
-  ![FB6A0](../../assets/hardware/gps/rtk_fem_fb_2.jpg)
+  ![FB6A0](images/drones/hardware/gps/rtk_fem_fb_2.jpg)
 
 Detailed product instructions can be obtained on the official website or by contacting us.

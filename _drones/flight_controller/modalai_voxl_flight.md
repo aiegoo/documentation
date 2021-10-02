@@ -19,7 +19,7 @@ Contact the [manufacturer](https://forum.modalai.com/) for hardware support or c
 The ModalAI [VOXL Flight](https://modalai.com/voxl-flight) ([Datasheet](https://docs.modalai.com/voxl-flight-datasheet)) is one of the first computing platforms to combine the power and sophistication of Snapdragon with the flexibility and ease of use of PX4 on an STM32F7.
 Made in the USA, VOXL Flight supports obstacle avoidance and GPS-denied (indoor) navigation fused with a PX4 flight controller on a single PCB.
 
-![VOXL-Flight](../../assets/flight_controller/modalai/voxl_flight/voxl-flight-dk.jpg)
+![VOXL-Flight](images/drones/flight_controller/modalai/voxl_flight/voxl-flight-dk.jpg)
 
 :::note
 This flight controller is [manufacturer supported](../flight_controller/autopilot_manufacturer_supported.md).
@@ -89,7 +89,7 @@ More detailed hardware documentation can be found [here](https://docs.modalai.co
 
 ## Dimensions
 
-![FlightCoreV1Dimensions](../../assets/flight_controller/modalai/voxl_flight/voxl-flight-dimensions.jpg)
+![FlightCoreV1Dimensions](images/drones/flight_controller/modalai/voxl_flight/voxl-flight-dimensions.jpg)
 
 [3D STEP File](https://storage.googleapis.com/modalai_public/modal_drawings/M0019_VOXL-Flight.zip)
 
@@ -132,7 +132,7 @@ Detailed information about the pinouts can be found [here](https://docs.modalai.
 
 #### Top
 
-![VOXLFlightTop](../../assets/flight_controller/modalai/voxl_flight/voxl-flight-top.jpg)
+![VOXLFlightTop](images/drones/flight_controller/modalai/voxl_flight/voxl-flight-top.jpg)
 
 *Note: 1000 Series connectors accessible from the STM32/PX4*
 
@@ -159,7 +159,7 @@ Detailed information about the pinouts can be found [here](https://docs.modalai.
 
 #### Bottom
 
-![VOXLFlightBottom](../../assets/flight_controller/modalai/voxl_flight/voxl-flight-bottom.jpg)
+![VOXLFlightBottom](images/drones/flight_controller/modalai/voxl_flight/voxl-flight-bottom.jpg)
 
 *Note: 1000 Series connectors accessible from the STM32/PX4*
 

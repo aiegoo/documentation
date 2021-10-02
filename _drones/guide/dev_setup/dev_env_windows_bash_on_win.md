@@ -65,7 +65,7 @@ To run JMAVSim:
    ```
    The JMAVSim UI is then displayed in XMing as shown below:
 
-   ![jMAVSimOnWindows](../../assets/simulation/jmavsim_on_windows.png)
+   ![jMAVSimOnWindows](images/drones/simulation/jmavsim_on_windows.png)
 
 :::warning
 Gazebo can similarly be run within Ubuntu Bash for Windows, but too slow to be useful.

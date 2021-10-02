@@ -7,13 +7,13 @@ Contact the [manufacturer](https://shop.holybro.com/) for hardware support or co
 
 This quick start guide shows how to power the [*Pixhawk<sup>&reg;</sup> 4 Mini*](../flight_controller/pixhawk4_mini.md) flight controller and connect its most important peripherals.
 
-![Pixhawk4 mini](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_iso_1.png)
+![Pixhawk4 mini](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_iso_1.png)
 
 ## Wiring Chart Overview
 
 The image below shows where to connect the most important sensors and peripherals (except for motors and servos).
 
-![*Pixhawk 4 Mini* Wiring Overview](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_wiring_overview.png)
+![*Pixhawk 4 Mini* Wiring Overview](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_wiring_overview.png)
 
 :::tip
 More information about available ports can be found here: [*Pixhawk 4 Mini* > Interfaces](../flight_controller/pixhawk4_mini.md#interfaces).
@@ -23,7 +23,7 @@ More information about available ports can be found here: [*Pixhawk 4 Mini* > In
 *Pixhawk 4 Mini* should be mounted on your frame using vibration-damping foam pads (included in the kit).
 It should be positioned as close to your vehicle’s center of gravity as possible, oriented top-side up with the arrow pointing towards the front of the vehicle.
 
-![*Pixhawk 4 Mini* Orientation](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_orientation.png)
+![*Pixhawk 4 Mini* Orientation](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_orientation.png)
 
 :::note
 If the controller cannot be mounted in the recommended/default orientation (e.g. due to space constraints) you will need to configure the autopilot software with the orientation that you actually used: [Flight Controller Orientation](../config/flight_controller_orientation.md).
@@ -33,7 +33,7 @@ If the controller cannot be mounted in the recommended/default orientation (e.g
 
 Attach the provided GPS with integrated compass, safety switch, buzzer, and LED to the **GPS MODULE** port. The GPS/Compass should be mounted on the frame as far away from other electronics as possible, with the direction marker towards the front of the vehicle (separating the compass from other electronics will reduce interference).
 
-![Connect compass/GPS to Pixhawk 4](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_gps.png)
+![Connect compass/GPS to Pixhawk 4](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_gps.png)
 
 :::note
 The GPS module's integrated safety switch is enabled *by default* (when enabled, PX4 will not let you arm the vehicle).
@@ -50,7 +50,7 @@ In addition to providing regulated power to *Pixhawk 4 Mini* and the ESCs, it se
 Connect the output of the PMB that comes with the kit to the **POWER** port of the *Pixhawk 4 Mini* using a 6-wire cable.
 The connections of the PMB, including power supply and signal connections to the ESCs and servos, are explained in the image below.
 
-![Pixhawk 4 - Power Management Board](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_power_management.png)
+![Pixhawk 4 - Power Management Board](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_power_management.png)
 
 :::note
 The image above only shows the connection of a single ESC and a single servo.
@@ -101,11 +101,11 @@ The instructions below show how to connect the different types of receivers to *
 
 - Spektrum/DSM or S.BUS receivers connect to the **DSM/SBUS RC** input.
 
-  ![Pixhawk 4 Mini - Radio port for Spektrum receivers](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_rc_dsmsbus.png)
+  ![Pixhawk 4 Mini - Radio port for Spektrum receivers](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_rc_dsmsbus.png)
 
 - PPM receivers connect to the **PPM RC** input port.
 
-  ![Pixhawk 4 Mini - Radio port for PPM receivers](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_rc_ppm.png)
+  ![Pixhawk 4 Mini - Radio port for PPM receivers](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_rc_ppm.png)
 
 - PPM and PWM receivers that have an *individual wire for each channel* must connect to the **PPM RC** port *via a PPM encoder* [like this one](http://www.getfpv.com/radios/radio-accessories/holybro-ppm-encoder-module.html) (PPM-Sum receivers use a single signal wire for all channels).
 
@@ -119,14 +119,14 @@ Telemetry radios may be used to communicate and control a vehicle in flight from
 The vehicle-based radio should be connected to the **TELEM1** port as shown below (if connected to this port, no further configuration is required).
 The other radio is connected to your ground station computer or mobile device (usually by USB).
 
-![Pixhawk 4 Mini Telemetry](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_telemetry.png)
+![Pixhawk 4 Mini Telemetry](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_telemetry.png)
 
 ## microSD Card (Optional)
 
 SD cards are highly recommended as they are needed to [log and analyse flight details](../getting_started/flight_reporting.md), to run missions, and to use UAVCAN-bus hardware.
 Insert the card (included in the kit) into *Pixhawk 4 Mini* as shown below.
 
-![Pixhawk 4 Mini SD Card](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_sdcard.png)
+![Pixhawk 4 Mini SD Card](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_sdcard.png)
 
 :::tip
 For more information see [Basic Concepts > SD Cards (Removable Memory)](../getting_started/px4_basic_concepts.md#sd_cards).

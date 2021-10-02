@@ -113,7 +113,7 @@ It is rare that a system is setup with an entirely synchronised chain!
 
 A rough estimate of the delay can be obtained from logs by checking the offset between IMU rates and the EV rates:
 
-![ekf2_ev_delay log](../../assets/ekf2/ekf2_ev_delay_tuning.png)
+![ekf2_ev_delay log](images/drones/ekf2/ekf2_ev_delay_tuning.png)
 
 :::note
 A plot of external data vs. onboard estimate (as above) can be generated using [FlightPlot](../log/flight_log_analysis.md#flightplot) or similar flight analysis tools.

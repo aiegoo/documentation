@@ -10,7 +10,7 @@ Qt Creator has been replaced by [VSCode](../dev_setup/vscode.md) as the official
 
 Qt creator offers clickable symbols, auto-completion of the complete codebase and building and flashing firmware.
 
-![](../../assets/toolchain/qtcreator.png)
+![](images/drones/toolchain/qtcreator.png)
 
 The video below shows how it is used.
 

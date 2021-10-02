@@ -25,7 +25,7 @@ This section shows how to setup the system with the proper reference frames. The
 * NED has **X** towards North, **Y** East and **Z** down. The robot/vehicle body frame has **X** towards the front, **Z** down and **Y** accordingly.
 
 Frames are shown in the image below. NED on the left, ENU on the right:
-![Reference frames](../../assets/lpe/ref_frames.png)
+![Reference frames](images/drones/lpe/ref_frames.png)
 
 With the external heading estimation, however, magnetic North is ignored and faked with a vector corresponding to world *x* axis (which can be placed freely at mocap calibration); yaw angle will be given respect to local *x*.
 

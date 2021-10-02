@@ -3,7 +3,7 @@
 The [CUAV C-RTK GPS receiver](http://doc.cuav.net/gps/c-rtk/en/) is an [RTK GPS module](../gps_compass/rtk_gps.md) for the mass market.
 A complete RTK system consists of at least two C-RTK modules \(one for the base station and the others for the aircraft\). Using RTK, PX4 can get its position with centimetre-level accuracy, which is much more accurate than can be provided by a normal GPS.
 
-<img src="../../assets/hardware/gps/rtk_c-rtk.jpg" width="500px" title="C-RTK" />
+<img src="images/drones/hardware/gps/rtk_c-rtk.jpg" width="500px" title="C-RTK" />
 
 
 ## Purchase
@@ -25,7 +25,7 @@ The 4-pin connector is an m8n (standard) GPS interface that is intended for (opt
 At time of writing PX4 does not yet fully support a second GPS. The 4-pin port need not be connected.
 :::
 
-<img src="../../assets/hardware/gps/rtk_cuav_c-rtk_to_6pin_connector.jpg" width="500px" title="C-RTK_6PIN" />
+<img src="images/drones/hardware/gps/rtk_cuav_c-rtk_to_6pin_connector.jpg" width="500px" title="C-RTK_6PIN" />
 
 The cables/connectors may need to be modified in order to connect to other flight controller boards. The pin mappings for *Pixhawk 3 Pro* and *Pixracer* are shown below.
 

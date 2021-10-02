@@ -150,7 +150,7 @@ At this point, you should see a FlightGear window with some view of aircraft.
 You can change the view by pressing **Ctrl+V**.
 :::
 
-![FlightGear UI](../../assets/simulation/flightgear/flightgearUI.jpg)
+![FlightGear UI](images/drones/simulation/flightgear/flightgearUI.jpg)
 
 You can bring it into the air by typing:
 

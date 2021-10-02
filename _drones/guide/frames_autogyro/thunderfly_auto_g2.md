@@ -3,7 +3,7 @@
 The *ThunderFly Auto-G2* is an autopilot-controlled autogyro based on the [
 Durafly™ Auto-G2 Gyrocopter](https://hobbyking.com/en_us/duraflytm-auto-g2-gyrocopter-w-auto-start-system-821mm-pnf.html) RC model, with several parts of the original model substituted for 3D printable ones.
 
-![Auto-G2](../../assets/airframes/autogyro/auto-g2/autog2_title.jpg)
+![Auto-G2](images/drones/airframes/autogyro/auto-g2/autog2_title.jpg)
 
 :::note
 Auto-G2 autogyro’s airframe is developed and maintained by ThuderFly s.r.o. company.
@@ -52,7 +52,7 @@ Bearings used are 623 2Z C3 SKF.
 At the end of this part, there are ball rods attached via M2.5 screws to servos positioned in the bottom part of the pylon.
 It is preferable to exchange these original servos for better quality ones as they are weak and in the original construction they help each other.
 
-![Rotorhead](../../assets/airframes/autogyro/auto-g2/modif_rh.png)
+![Rotorhead](images/drones/airframes/autogyro/auto-g2/modif_rh.png)
 
 ### Two-blade rotor
 
@@ -79,7 +79,7 @@ It is also possible to print rotor blades.
 The printed rotor blads are still under development, but preliminary tests show they are of better quality mostly thanks to their precise shape and absence of longitudinal grooves.
 However, some of the production processes still need to be tuned.
 
-![Blades assembly](../../assets/airframes/autogyro/auto-g2/modif_blade.png)
+![Blades assembly](images/drones/airframes/autogyro/auto-g2/modif_blade.png)
 
 #### Balancing
 
@@ -97,7 +97,7 @@ The whole part is glued, using a hot-melt adhesive, under the engine on the bott
 If an autogyro is towed by a rope its engine must not be turned on.
 It can be handled, for example, by nulling the engine’s output in the transmitter if the release device switch is closed.
 
-![Release device](../../assets/airframes/autogyro/auto-g2/modif_release.png)
+![Release device](images/drones/airframes/autogyro/auto-g2/modif_release.png)
 
 ## Parts List
 
@@ -148,7 +148,7 @@ It can be handled, for example, by nulling the engine’s output in the transmit
 
 ## Photo gallery of changes
 
-![Auto-G2 1](../../assets/airframes/autogyro/auto-g2/autog2_1.jpg)
-![Auto-G2 2](../../assets/airframes/autogyro/auto-g2/autog2_2.jpg)
-![Auto-G2 3](../../assets/airframes/autogyro/auto-g2/autog2_3.jpg)
-![Auto-G2 4](../../assets/airframes/autogyro/auto-g2/autog2_4.jpg)
+![Auto-G2 1](images/drones/airframes/autogyro/auto-g2/autog2_1.jpg)
+![Auto-G2 2](images/drones/airframes/autogyro/auto-g2/autog2_2.jpg)
+![Auto-G2 3](images/drones/airframes/autogyro/auto-g2/autog2_3.jpg)
+![Auto-G2 4](images/drones/airframes/autogyro/auto-g2/autog2_4.jpg)

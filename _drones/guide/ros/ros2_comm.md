@@ -23,7 +23,7 @@ The [microRTPS Bridge](../middleware/micrortps.md) consists of a client running 
 This allows you to create ROS 2 subscribers or publisher nodes that interface directly with PX4 UORB topics!
 This is shown in the diagram below.
 
-![Architecture with ROS 2](../../assets/middleware/micrortps/architecture_ros2.png)
+![Architecture with ROS 2](images/drones/middleware/micrortps/architecture_ros2.png)
 
 ROS 2 uses the [`px4_msgs`](https://github.com/PX4/px4_msgs) and [`px4_ros_com`](https://github.com/PX4/px4_ros_com) packages to ensure that matching message definitions are used for creating both the client and the agent code (this is important), and also to remove the requirement for PX4 to be present when building ROS code.
 - `px4_msgs` contains PX4 ROS message definitions. When this project is built it generates the corresponding ROS 2-compatible typesupport, used by ROS 2 nodes, and IDL files, used by `fastddsgen` to generate the microRTPS agent code.

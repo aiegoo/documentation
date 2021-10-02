@@ -7,7 +7,7 @@ Contact the [manufacturer](https://store.cuav.net/) for hardware support or comp
 
 This quick start guide shows how to power the [CUAV V5 nano](../flight_controller/cuav_v5_nano.md) flight controller and connect its most important peripherals.
 
-![Nano Hero Image](../../assets/flight_controller/cuav_v5_nano/v5_nano_01.png)
+![Nano Hero Image](images/drones/flight_controller/cuav_v5_nano/v5_nano_01.png)
 
 
 ## Wiring Chart Overview
@@ -15,7 +15,7 @@ This quick start guide shows how to power the [CUAV V5 nano](../flight_controlle
 The image below shows how to connect the most important sensors and peripherals (except the motor and servo outputs).
 We'll go through each of these in detail in the following sections.
 
-![quickstart](../../assets/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_02.png)
+![quickstart](images/drones/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_02.png)
 
 Main interface | Function
 :--- | :---
@@ -37,7 +37,7 @@ DSM/SBUS/RSSI | Includes DSM, SBUS, RSSI signal input interface, DSM interface c
 For more interface information, please read [V5 nano Manual](http://manual.cuav.net/V5-nano.pdf).
 :::
 
-![quickstart](../../assets/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_03.png)
+![quickstart](images/drones/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_03.png)
 
 :::note
 If the controller cannot be mounted in the recommended/default orientation (e.g. due to space constraints) you will need to configure the autopilot software with the orientation that you actually used: [Flight Controller Orientation](../advanced_features/rtk-gps.md).
@@ -58,7 +58,7 @@ Connect to the flight control GPS interface using a cable.
 If you use CAN GPS, please use the cable to connect to the flight control CAN interface.
 :::
 
-![quickstart](../../assets/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_04.png)
+![quickstart](images/drones/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_04.png)
 
 
 ## Safety Switch
@@ -80,7 +80,7 @@ You will need to select a compatible transmitter/receiver and then bind them so 
 
 The figure below shows how you can access your remote receiver (please find the S.Bus cable in the kit)
 
-![quickstart](../../assets/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_05.png)
+![quickstart](images/drones/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_05.png)
 
 
 ## Spektrum Satellite Receivers
@@ -99,7 +99,7 @@ The supplied power module is unfused.
 Power **must** be turned off while connecting peripherals.
 :::
 
-![quickstart](../../assets/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_06.png)
+![quickstart](images/drones/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_06.png)
 
 :::note
 The power module is not a power source for peripherals connected to the PWM outputs.
@@ -114,7 +114,7 @@ The communication channel is via Telemetry Radios.
 The vehicle-based radio should be connected to the **TELEM1** or **TELEM2** port (if connected to these ports, no further configuration is required).
 The other radio is connected to your ground station computer or mobile device (usually via USB).
 
-![quickstart](../../assets/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_07.png)
+![quickstart](images/drones/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_07.png)
 
 
 <span id="sd_card"></span>
@@ -127,12 +127,12 @@ An [SD card](../getting_started/px4_basic_concepts.md#sd_cards) is inserted in t
 
 Motors/servos are connected to the MAIN ports in the order specified for your vehicle in the [Airframes Reference](../airframes/airframe_reference.md).
 
-![quickstart](../../assets/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_06.png)
+![quickstart](images/drones/flight_controller/cuav_v5_nano/connection/v5_nano_quickstart_06.png)
 
 
 ## Pinouts
 
-![V5 nano pinouts](../../assets/flight_controller/cuav_v5_nano/v5_nano_pinouts.png)
+![V5 nano pinouts](images/drones/flight_controller/cuav_v5_nano/v5_nano_pinouts.png)
 
 
 ## Further Information

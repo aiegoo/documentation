@@ -208,4 +208,4 @@ This is done by fusing the target's velocity as a measurement of the negative ve
 
 This image shows the [landing phases](#landing-phases) as a flow diagram.
 
-![Precision Landing Flow Diagram](../../assets/precision_land/precland-flow-diagram.png)
+![Precision Landing Flow Diagram](images/drones/precision_land/precland-flow-diagram.png)

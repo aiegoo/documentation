@@ -97,18 +97,18 @@ The RTK GPS connection is essentially plug and play:
 
    You can track the progress by clicking the RTK GPS status icon.
    
-   ![survey-in](../../assets/qgc/setup/rtk/qgc_rtk_survey-in.png)
+   ![survey-in](images/drones/qgc/setup/rtk/qgc_rtk_survey-in.png)
 
 1. Once Survey-in completes:
 
    - The RTK GPS icon changes to white and *QGroundControl* starts to stream position data to the vehicle:
    
-     ![RTK streaming](../../assets/qgc/setup/rtk/qgc_rtk_streaming.png)
+     ![RTK streaming](images/drones/qgc/setup/rtk/qgc_rtk_streaming.png)
 
    - Vehicle GPS switches to RTK mode.
      The new mode is displayed in the *normal* GPS status icon (`3D RTK GPS Lock`):
 
-     ![RTK GPS Status](../../assets/qgc/setup/rtk/qgc_rtk_gps_status.png)
+     ![RTK GPS Status](images/drones/qgc/setup/rtk/qgc_rtk_gps_status.png)
 
 
 ### Optional PX4 Configuration
@@ -119,7 +119,7 @@ The following settings may need to be changed (using *QGroundControl*).
 
 The RTK GPS settings are specified in the *QGroundControl* [General Settings](https://docs.qgroundcontrol.com/en/SettingsView/General.html#rtk_gps) (**SettingsView > General Settings > RTK GPS**).
 
-![RTK GPS Setup](../../assets/qgc/setup/rtk/settings_view_general_rtk_gps.jpg)
+![RTK GPS Setup](images/drones/qgc/setup/rtk/settings_view_general_rtk_gps.jpg)
 
 These settings define the minimum duration and minimum accuracy for completing the RTK GPS setup process (known as "Survey-In).
 

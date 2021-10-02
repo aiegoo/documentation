@@ -42,10 +42,10 @@ For more information, see: [https://gnu-mcu-eclipse.github.io/debug/jlink/instal
    Import takes a while, wait for it to complete.
 1. Set the MCU settings: right-click on the top-level project in the Project Explorer, select *Properties* then under MCU choose *SEGGER J-Link Path*.
    Set it as shown in the screenshot below.
-   ![Eclipse: Segger J-Link Path](../../assets/debug/eclipse_segger_jlink_path.png)
+   ![Eclipse: Segger J-Link Path](images/drones/debug/eclipse_segger_jlink_path.png)
 1. Update packs:
    - Click the small icon on the top right called *Open Perspective* and open the *Packs* perspective.
-     ![Eclipse: Workspace](../../assets/debug/eclipse_workspace_perspective.png)
+     ![Eclipse: Workspace](images/drones/debug/eclipse_workspace_perspective.png)
    - Click the **update all** button.
 
      :::tip
@@ -53,18 +53,18 @@ For more information, see: [https://gnu-mcu-eclipse.github.io/debug/jlink/instal
      Ignore all the errors about missing packages that pop up.
 	 :::
 
-     ![Eclipse: Workspace Packs Perspective](../../assets/debug/eclipse_packs_perspective.jpg)
+     ![Eclipse: Workspace Packs Perspective](images/drones/debug/eclipse_packs_perspective.jpg)
    - The STM32Fxx devices are found in the Keil folder, install by right-clicking and then selecting **install** on the according device for F4 and F7.
 1. Setup debug configuration for target:
    - Right click project and open the *Settings* (menu: **C/C++ Build > Settings**)
    - Choose the *Devices* Tab, *Devices* section (Not *Boards*).
    - Find the FMU chip you wish to debug.
 
-   ![Eclipse: Select FMU in settings](../../assets/debug/eclipse_settings_devices_fmu.png)
+   ![Eclipse: Select FMU in settings](images/drones/debug/eclipse_settings_devices_fmu.png)
 1. Select debug configurations with the small drop-down next to the bug symbol:
-   ![Eclipse: Debug config](../../assets/debug/eclipse_settings_debug_config.png)
+   ![Eclipse: Debug config](images/drones/debug/eclipse_settings_debug_config.png)
 1. Then select *GDB SEGGER J-Link Debugging* and then the **New config** button on the top left.
-   ![Eclipse: GDB Segger Debug config](../../assets/debug/eclipse_settings_debug_config_gdb_segger.png)
+   ![Eclipse: GDB Segger Debug config](images/drones/debug/eclipse_settings_debug_config_gdb_segger.png)
 1. Setup build config:
    - Give it a name and set  the *C/C++ Application* to the corresponding **.elf** file.
    - Choose *Disable Auto build*
@@ -72,11 +72,11 @@ For more information, see: [https://gnu-mcu-eclipse.github.io/debug/jlink/instal
      Remember that you must build the target from the command line before starting a debug session.
 	 :::
 
-   ![Eclipse: GDB Segger Debug config](../../assets/debug/eclipse_settings_debug_config_gdb_segger_build_config.png)
+   ![Eclipse: GDB Segger Debug config](images/drones/debug/eclipse_settings_debug_config_gdb_segger_build_config.png)
 1. The *Debugger* and *Startup* tabs shouldn’t need any modifications (just verify your settings with the screenshots below)
 
-   ![Eclipse: GDB Segger Debug config: debugger tab](../../assets/debug/eclipse_settings_debug_config_gdb_segger_build_config_debugger_tab.png)
-   ![Eclipse: GDB Segger Debug config: startup tab](../../assets/debug/eclipse_settings_debug_config_gdb_segger_build_config_startup_tab.png)
+   ![Eclipse: GDB Segger Debug config: debugger tab](images/drones/debug/eclipse_settings_debug_config_gdb_segger_build_config_debugger_tab.png)
+   ![Eclipse: GDB Segger Debug config: startup tab](images/drones/debug/eclipse_settings_debug_config_gdb_segger_build_config_startup_tab.png)
 
 
 ## Troubleshooting
@@ -91,8 +91,8 @@ This should not generally happen (but anecdotally has been reported when connect
 
 Adding missing SVD files for the *Peripheral View*:
 1. Find out where MCU Eclipse stores its packages (**Preferences > C/C++ > MCU Packages**):
-   ![Eclipse: MCU Packages](../../assets/debug/eclipse_mcu_packages.png)
+   ![Eclipse: MCU Packages](images/drones/debug/eclipse_mcu_packages.png)
 2. Download missing packages from: http://www.keil.com/dd2/Pack/
 3. Open downloaded pack with a decompression tool, and extract the **.SVD** files from: **/CMSIS/SVD**.
 4. Select desired **.SVD** file in: **Debug Options > GDB SEGGER JLink Debugging > SVD Path**
-   ![Eclipse: SVD File path](../../assets/debug/eclipse_svd_file_path.png)
+   ![Eclipse: SVD File path](images/drones/debug/eclipse_svd_file_path.png)

@@ -14,7 +14,7 @@ It is designed to be a low-cost but highly scalability platform with continuous 
 No proprietary driver is required, as all components have upstream support from RPi and PX4 community.
 PCB and schematic are open source as well.
 
-![PilotPi with RPi 4B](../../assets/flight_controller/pilotpi/hardware-pilotpi4b.png)
+![PilotPi with RPi 4B](images/drones/flight_controller/pilotpi/hardware-pilotpi4b.png)
 
 ## Quick Summary
 
@@ -58,9 +58,9 @@ Direct accessible from RPi:
 
 ## Recommended Wiring
 
-![PilotPi PowerPart wiring](../../assets/flight_controller/pilotpi/pilotpi_pwr_wiring.png)
+![PilotPi PowerPart wiring](images/drones/flight_controller/pilotpi/pilotpi_pwr_wiring.png)
 
-![PilotPi SensorPart wiring](../../assets/flight_controller/pilotpi/pilotpi_sens_wiring.png)
+![PilotPi SensorPart wiring](images/drones/flight_controller/pilotpi/pilotpi_sens_wiring.png)
 
 ## Pinout
 

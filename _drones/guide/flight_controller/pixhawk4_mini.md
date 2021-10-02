@@ -12,7 +12,7 @@ This allows the *Pixhawk 4 Mini* to be small enough to fit in a 250mm racer dron
 *Pixhawk 4 Mini* was designed and developed in collaboration with Holybro<sup>&reg;</sup> and Auterion<sup>&reg;</sup>.
 It is based on the [Pixhawk](https://pixhawk.org/) **FMUv5** design standard and is optimized to run PX4 flight control software.
 
-![Pixhawk4 mini](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_iso_1.png)
+![Pixhawk4 mini](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_iso_1.png)
 
 :::tip
 This autopilot is [supported](../flight_controller/autopilot_pixhawk_standard.md) by the PX4 maintenance and test teams.
@@ -58,7 +58,7 @@ Order from [Holybro](https://shop.holybro.com/pixhawk4-mini_p1120.html).
 
 ## Interfaces
 
-![Pixhawk 4 Mini interfaces](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_interfaces.png)
+![Pixhawk 4 Mini interfaces](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_interfaces.png)
 
 :::warning
 The **RC IN** and **PPM** ports are for RC receivers only. These are powered! NEVER connect any servos, power supplies or batteries (or to any connected receiver).
@@ -71,7 +71,7 @@ Download *Pixhawk 4 Mini* pinouts from [here](https://github.com/PX4/px4_user_gu
 
 ## Dimensions
 
-![Pixhawk 4 Mini Dimensions](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_dimensions.png)
+![Pixhawk 4 Mini Dimensions](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_dimensions.png)
 
 ## Voltage Ratings
 *Pixhawk 4 Mini* can have power supply redundancy — if two power sources are supplied. The power rails are: **POWER** and **USB**.
@@ -116,7 +116,7 @@ make px4_fmu-v5_default
 The [PX4 System Console](../debug/system_console.md) and [SWD interface](../debug/swd_debug.md) run on the **FMU Debug** port.
 In order to access these ports, the user must remove the *Pixhawk 4 Mini* casing.
 
-![Pixhawk 4 Mini FMU Debug](../../assets/flight_controller/pixhawk4mini/pixhawk4mini_fmu_debug.png)
+![Pixhawk 4 Mini FMU Debug](images/drones/flight_controller/pixhawk4mini/pixhawk4mini_fmu_debug.png)
 
 The port has a standard serial pinout and can be connected to a standard FTDI cable (3.3V, but it's 5V tolerant) or a [Dronecode probe](https://kb.zubax.com/display/MAINKB/Dronecode+Probe+documentation). The pinout uses the standard [Pixhawk debug connector](https://pixhawk.org/pixhawk-connector-standard/#dronecode_debug) pinout. Please refer to the [wiring](../debug/system_console.md) page for details of how to wire up this port.
 

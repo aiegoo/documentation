@@ -11,18 +11,18 @@ Under construction
 
 This quick start guide shows how to power the [Pixracer](../flight_controller/pixracer.md) flight controller and connect its most important peripherals.
 
-<img src="../../assets/flight_controller/pixracer/pixracer_hero_grey.jpg" width="300px" title="pixracer + 8266 grey" />
+<img src="images/drones/flight_controller/pixracer/pixracer_hero_grey.jpg" width="300px" title="pixracer + 8266 grey" />
 
 
 ## Wiring Guides
 
-![Grau pixracer double](../../assets/flight_controller/pixracer/grau_pixracer_double.jpg)
+![Grau pixracer double](images/drones/flight_controller/pixracer/grau_pixracer_double.jpg)
 
 ### Main Setup 
 
-![Grau setup pixracer top](../../assets/flight_controller/pixracer/grau_setup_pixracer_top.jpg)
+![Grau setup pixracer top](images/drones/flight_controller/pixracer/grau_setup_pixracer_top.jpg)
 
-![Grau setup pixracer bottom](../../assets/flight_controller/pixracer/grau_setup_pixracer_bottom.jpg)
+![Grau setup pixracer bottom](images/drones/flight_controller/pixracer/grau_setup_pixracer_bottom.jpg)
 
 
 ### Radio/Remote Control
@@ -35,19 +35,19 @@ The instructions below show how to connect the different types of receivers:
 
 - FrSky receivers connect via the port shown, and can use the provided I/O Connector.
   
-  ![Grau b Pixracer FrSkyS.Port Connection](../../assets/flight_controller/pixracer/grau_b_pixracer_frskys.port_connection.jpg)
+  ![Grau b Pixracer FrSkyS.Port Connection](images/drones/flight_controller/pixracer/grau_b_pixracer_frskys.port_connection.jpg)
 
-  ![Pixracer FrSkyS.Port Connection](../../assets/flight_controller/pixracer/pixracer_FrSkyTelemetry.jpg)
+  ![Pixracer FrSkyS.Port Connection](images/drones/flight_controller/pixracer/pixracer_FrSkyTelemetry.jpg)
 
 - PPM-SUM and S.BUS receivers connect to the **RCIN** port.
 
-  ![Radio Connection](../../assets/flight_controller/pixracer/grau_setup_pixracer_radio.jpg)
+  ![Radio Connection](images/drones/flight_controller/pixracer/grau_setup_pixracer_radio.jpg)
   
 - PPM and PWM receivers that have an *individual wire for each channel* must connect to the **RCIN** port *via a PPM encoder* [like this one](http://www.getfpv.com/radios/radio-accessories/holybro-ppm-encoder-module.html) (PPM-Sum receivers use a single signal wire for all channels).
 
 ### Power Module (ACSP4)
 
-![Grau ACSP4 2 roh](../../assets/flight_controller/pixracer/grau_acsp4_2_roh.jpg)
+![Grau ACSP4 2 roh](images/drones/flight_controller/pixracer/grau_acsp4_2_roh.jpg)
 
 
 

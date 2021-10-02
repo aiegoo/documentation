@@ -24,15 +24,15 @@ These have a number of advantages over [PWM ESCs](../peripherals/pwm_escs_and_se
 <div id="image_container">
 
   <div class="image_column">
-    <img src="../../assets/peripherals/esc_usavcan_zubax_sadulli/sadulli_top.jpg" alt="Sadulli - Top" /><br><a href="https://shop.zubax.com/collections/integrated-drives/products/sadulli-integrated-drive-open-hardware-reference-design-for-mitochondrik?variant=27740841181283">Zubax Sadulli Integrated Drive</a>
+    <img src="images/drones/peripherals/esc_usavcan_zubax_sadulli/sadulli_top.jpg" alt="Sadulli - Top" /><br><a href="https://shop.zubax.com/collections/integrated-drives/products/sadulli-integrated-drive-open-hardware-reference-design-for-mitochondrik?variant=27740841181283">Zubax Sadulli Integrated Drive</a>
   </div>
   
   <div class="image_column">
-  <img src="../../assets/peripherals/esc_uavcan_zubax_orel20/orel20_top.jpg" alt="Orel20 - Top"/><br><a href="https://zubax.com/products/orel_20">Zubax Orel 20</a>
+  <img src="images/drones/peripherals/esc_uavcan_zubax_orel20/orel20_top.jpg" alt="Orel20 - Top"/><br><a href="https://zubax.com/products/orel_20">Zubax Orel 20</a>
   </div>
 
   <div class="image_column">
-    <img src="../../assets/peripherals/esc_uavcan_holybro_kotleta20/kotleta20_top.jpg" alt="Holybro Kotleta20 top" /><br><a href="https://shop.holybro.com/kotleta20_p1156.html">Holybro Kotleta20</a>
+    <img src="images/drones/peripherals/esc_uavcan_holybro_kotleta20/kotleta20_top.jpg" alt="Holybro Kotleta20 top" /><br><a href="https://shop.holybro.com/kotleta20_p1156.html">Holybro Kotleta20</a>
   </div>
 
 </div>
@@ -82,10 +82,10 @@ There are many other commercially available ESCs; please add new links as you fi
 :::
 
 <!--
-![Orel20 - Top](../../assets/peripherals/esc_uavcan_zubax_orel20/orel20_top.jpg)
-![Kotleta20 - Top](../../assets/peripherals/esc_uavcan_holybro_kotleta20/kotleta20_top.jpg)
-![Kotleta20 - Bottom](../../assets/peripherals/esc_uavcan_holybro_kotleta20/kotleta20_bottom.jpg)
-![Sadulli - Top](../../assets/peripherals/esc_usavcan_zubax_sadulli/sadulli_top.jpg)
+![Orel20 - Top](images/drones/peripherals/esc_uavcan_zubax_orel20/orel20_top.jpg)
+![Kotleta20 - Top](images/drones/peripherals/esc_uavcan_holybro_kotleta20/kotleta20_top.jpg)
+![Kotleta20 - Bottom](images/drones/peripherals/esc_uavcan_holybro_kotleta20/kotleta20_bottom.jpg)
+![Sadulli - Top](images/drones/peripherals/esc_usavcan_zubax_sadulli/sadulli_top.jpg)
 -->
 
 
@@ -143,7 +143,7 @@ To enumerate the ESC:
 1. Navigate to **Vehicle Setup > Power** in QGC.
 1. Start the process of ESC auto-enumeration by pressing the **Start Assignment** button, as shown on the screenshot below.
 
-   ![QGC - UAVCAN ESC auto-enumeration](../../assets/peripherals/esc_qgc/qgc_uavcan_settings.jpg)
+   ![QGC - UAVCAN ESC auto-enumeration](images/drones/peripherals/esc_qgc/qgc_uavcan_settings.jpg)
 
    You will hear a sound indicating that the flight controller has entered the ESC enumeration mode.
 1. Manually turn each motor in the correct direction of its rotation (as specified in the [Airframe Reference](../airframes/airframe_reference.md)), starting from the first motor and finishing with the last motor.

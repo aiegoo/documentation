@@ -14,7 +14,7 @@ You will need a (free) [Github](http://github.com) account to contribute to the 
 
 Simple changes to *existing content* can be made by clicking the **Edit this page on GitHub** link that appears at the bottom of every page (this opens the page on Github for editing).
 
-![Vuepress: Edit Page button](../../assets/vuepress/vuepress_edit_page_on_github_link.png)
+![Vuepress: Edit Page button](images/drones/vuepress/vuepress_edit_page_on_github_link.png)
 
 To edit an existing page:
 1. Open the page.
@@ -158,7 +158,7 @@ In overview:
 * Images must be stored in a sub folder of **/assets**.
   This is two folders down from content folders, so if you add an image you will reference it like:
   ```
-  ![Image Description](../../assets/path_to_file/filename.jpg)
+  ![Image Description](images/drones/path_to_file/filename.jpg)
   ```
 * A file named **package.json** defines any dependencies of the build.
 * A web hook is used to track whenever files are merged into the master branch on this repository, causing the book to rebuild.

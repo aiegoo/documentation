@@ -2,7 +2,7 @@
 
 The [BetaFPV Beta75X](https://betafpv.com/products/beta75x-2s-whoop-quadcopter) is a very small quadrotor that can be flown indoors or outdoors, FPV or line-of-sight.
 
-![BetaFPV Beta75X](../../assets/hardware/betafpv_beta75x.jpg)
+![BetaFPV Beta75X](images/drones/hardware/betafpv_beta75x.jpg)
 
 ## Where to Buy
 
