@@ -4,11 +4,11 @@ layout: post
 permalink: 2021-10-02-wiki-passing-parameters.html
 sidebar: other_sidebar
 collection: wiki
-summary: "to include the content from another file stored in the `_includes` folder"
+summary: "to include the content from another file in `_includes` folder"
 tags: [wiki, getting_started, jekyll]
 excerpt_separator: <!--more-->
 date: 2021-10-02 09:10:03 +0900
-updated: 2021-10-09 9:17 AM
+updated: 2021-10-02 9:17 AM
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
