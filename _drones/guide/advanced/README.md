@@ -1,10 +1,10 @@
 ---
 layout: page
-name: pixhawk cube
+name: Readme
 sidebar: other_sidebar
 category: "drones"
 excerpt_separator: <!--more-->
-permalink: cube.html
+permalink: README.html
 type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/
 excerpt_separator: <!--more-->

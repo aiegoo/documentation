@@ -130,6 +130,12 @@ All files should be located within the same directory as the programs.
 echo 'task goes here' | cat - todo.txt | tee todo.txt
 ```
 
+### to add block of texts to the head of each file in a folders
+
+```bash
+find . -name *.md -print | while read fn; do echo fixing $fn; cat test.txt "$fn" > $fn.modified; mv $fn.modified $fn; done 
+
+```
 ### to sync local with servers
 
 > Deploy your Generated Site

@@ -1,10 +1,10 @@
 ---
 layout: page
-name: pixhawk cube
+name: rtk_gps
 sidebar: other_sidebar
 category: "drones"
 excerpt_separator: <!--more-->
-permalink: cube.html
+permalink: rtk_gps.html
 type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/
 excerpt_separator: <!--more-->
