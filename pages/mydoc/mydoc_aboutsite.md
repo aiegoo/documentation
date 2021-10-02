@@ -262,13 +262,17 @@ $( document ).ready(function() {
 
 {% include note.html content=" clone config repo and copy downloads/downloads and run the 'install.sh' to make a new server in sync with your nlp server" %}
 
+
 - [documents](https://github.com/onofflink/callSystem)
-- [cdc project](https://github.com/onofflink/callSystem) check its submodule onoffjoin
+- [cdc project](https://github.com/onofflink/callSystem) 
+    ***check its submodule onoffjoin***
 - [freepbx install](https://github.com/onofflink/freepbx)
-- [develop journal](https://github.com/onofflink/orientation) check VSC journal workspace during this time
+- [develop journal](https://github.com/onofflink/orientation)
+    ***check VSC journal workspace during this time***
 - [callconf](https://github.com/onofflink/115.68.120.121) based on wowza
 
 `root@159.65.8.44` check the nginx to reconfigure its gui dashboard
+
 > images 
 
 |---
@@ -279,9 +283,12 @@ $( document ).ready(function() {
 
 ### unity autonomous motor HUD
 
-- [mobis](https://github.com/tonyrhee/mobis) collaboration with jotaekwan
-- [project dashboard](https://github.com/tonyrhee/mobis/projects) check 10 dashboard 
-- [mobis3 tony branch](https://github.com/tonyrhee/mobis3/tree/tony) to sync with hardware PLC
+- [mobis](https://github.com/tonyrhee/mobis) 
+    ***collaboration with jotaekwan***
+- [project dashboard](https://github.com/tonyrhee/mobis/projects) 
+    ***check 10 dashboard***
+- [mobis3 tony branch](https://github.com/tonyrhee/mobis3/tree/tony) 
+    ***to sync with hardware PLC***
 
 
 {% include image.html file="unity/05_Music_1105.png" caption="With psd proposal design, I have worked on an album navigation control created in Unity" %}
