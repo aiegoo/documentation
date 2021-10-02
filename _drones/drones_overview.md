@@ -26,7 +26,8 @@ Our class team made its first test flight after assembly.
 ## Wiki home
 <div class="home">
     <div class="post-list">
-     {% for drone in site.drones reversed %}
+    {% assign drones = site.drones %}
+     {% for drone in drones reversed %}
           <a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ drone.name }}</a>
           <span class="post-meta">{{ drone.updated | date: "%b %-d, %Y" }} /
           {% for tag in drone.tags %}
