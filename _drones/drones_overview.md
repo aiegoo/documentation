@@ -10,23 +10,10 @@ map_name: usermap_drones
 box_number: 1
 link: https://36io.co
 ---
-
-{% include image.html file="drones/hw_gallery/drone_inflight.jpg" caption="Test flight after assembly" %}
-
-
-Our class team made its first test flight after assembly.
-
-
-
-|---
-| 
-| :-:
-| ![demo](https://github.com/aiegoo/Applying_EANNs/raw/master/Images/Demo.gif)
-
 ## Drones home
 <div class="home">
     <div class="post-list">
-    {% assign drones = site.drones | sort: "date" | reverse %}
+    {% assign drones = site.drones %}
      {% for drone in drones %}
           <a class="post-link" href="{{ drone.url | prepend: site.baseurl }}">
               {{ drone.name }} - {{ drone.type }}
@@ -43,8 +30,17 @@ Our class team made its first test flight after assembly.
         <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
 
 <hr />
-        <p>See more wikis from the <a href="drone_archive.html">Wiki Archive</a>. </p>
-    </div>
-</div>
+    </div><!-- end of postlist -->
+</div><!-- end of home  -->
+
+{% include image.html file="drones/hw_gallery/drone_inflight.jpg" caption="Test flight after assembly" %}
+
+
+Our class team made its first test flight after assembly.
+
+|---
+| 
+| :-:
+| ![demo](https://github.com/aiegoo/Applying_EANNs/raw/master/Images/Demo.gif)
 
 [**Preview**]({{page.link}})
