@@ -1,7 +1,7 @@
 ---
-name: magnefic popup
+name: magnific popup
 layout: post
-permalink: 2021-10-01-wiki-magnefic-popup.html
+permalink: 2021-10-01-wiki-magnific-popup.html
 sidebar: other_sidebar
 collection: wiki
 summary: "지킬 블로그에 이미지 확대 기능 추가하기"
