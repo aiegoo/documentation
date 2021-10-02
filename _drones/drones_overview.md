@@ -23,18 +23,19 @@ Our class team made its first test flight after assembly.
 | :-:
 | ![demo](https://github.com/aiegoo/Applying_EANNs/raw/master/Images/Demo.gif)
 
-## Wiki home
+## Drones home
 <div class="home">
     <div class="post-list">
     {% assign drones = site.drones %}
-     {% for drone in drones reversed %}
-          <a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ drone.name }}</a>
+     {% for drone in drones %}
+          <a class="post-link" href="{{ drone.url | remove: '/' }}">{{ drone.name }}</a>
           <span class="post-meta">{{ drone.updated | date: "%b %-d, %Y" }} /
-          {% for tag in drone.tags %}
-                <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
-                {% endfor %}</span>
+               {% for tag in drone.tags %}
+               <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+               {% endfor %}</span>
                <p>{% if drone.summary %} {{ drone.summary | strip_html | strip_newlines }} 
-          {% else %} {{ drone.excerpt | markdownify | truncatewords: 150 }} {% endif %}
+                    {% else %} {{ drone.excerpt | markdownify | truncatewords: 150 }} 
+                  {% endif %}
                </p>
      {% endfor %}
         <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
