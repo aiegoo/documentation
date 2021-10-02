@@ -1,6 +1,6 @@
 # Return Mode
 
-[<img src="../../assets/site/position_fixed.svg" title="Position fix required (e.g. GPS)" width="30px" />](../getting_started/flight_modes.md#key_position_fixed)
+[<img src="images/drones/site/position_fixed.svg" title="Position fix required (e.g. GPS)" width="30px" />](../getting_started/flight_modes.md#key_position_fixed)
 
 The *Return* flight mode is used to *fly a vehicle to safety* on an unobstructed path to a safe destination, where it may either wait (hover or circle) or land.
 
@@ -123,7 +123,7 @@ The exception is when executing a [mission path return](#mission_path_return) fr
 The return altitude for a fixed-wing vehicle is configured using the parameter [RTL_RETURN_ALT](#RTL_RETURN_ALT).
 The return altitude for multicopter and VTOL vehicles is configured using the parameters [RTL_RETURN_ALT](#RTL_RETURN_ALT) and [RTL_CONE_ANG](#RTL_CONE_ANG), which define a half cone centered around the destination (home location or safety point).
 
-![Return mode cone](../../assets/flying/rtl_cone.jpg)
+![Return mode cone](images/drones/flying/rtl_cone.jpg)
 
 <!-- Original draw.io diagram can be found here: https://drive.google.com/file/d/1W72XeZYSOkRlBSbPXCCiam9NMAyAWSg-/view?usp=sharing -->
 

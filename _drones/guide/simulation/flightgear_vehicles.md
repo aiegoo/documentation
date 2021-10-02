@@ -17,14 +17,14 @@ The [FlightGear](../simulation/flightgear.md) page shows how to install and use 
 FlightGear has models for many planes.
 The most suitable one for UAV development is currently the [Rascal RC plane](https://github.com/ThunderFly-aerospace/FlightGear-Rascal) (which also exists in multiple variants).
 
-![Rascal plane in FlightGear](../../assets/simulation/flightgear/vehicles/rascal110.jpg)
+![Rascal plane in FlightGear](images/drones/simulation/flightgear/vehicles/rascal110.jpg)
 
 The variants differ mainly by the [FDM](http://wiki.flightgear.org/Flight_Dynamics_Model) model.
 All variants have a common feature selection table that can be activated by pressing the `=` key on the computer keyboard.
 
 There is a pop-up table that could be used for advanced features activation.
 
-![Rascal plane FlightGear advanced options](../../assets/simulation/flightgear/vehicles/rascal_options.jpg)
+![Rascal plane FlightGear advanced options](images/drones/simulation/flightgear/vehicles/rascal_options.jpg)
 
 The most relevant option is:
 
@@ -74,7 +74,7 @@ The only UAV autogyro model supported by FlightGear is [TF-G1 Autogyro](https://
 make px4_sitl_nolockstep flightgear_tf-g1
 ```
 
-![TF-G1 in FlightGear](../../assets/simulation/flightgear/vehicles/tf-g1.jpg)
+![TF-G1 in FlightGear](images/drones/simulation/flightgear/vehicles/tf-g1.jpg)
 
 
 <a id="ugv"></a>
@@ -88,7 +88,7 @@ This rover is equipped with a towing hitch and might be used for aero-towing of 
 make px4_sitl_nolockstep flightgear_tf-r1
 ```
 
-![TF-R1 rover in FlightGear](../../assets/simulation/flightgear/vehicles/tf-r1_towing.jpg)
+![TF-R1 rover in FlightGear](images/drones/simulation/flightgear/vehicles/tf-r1_towing.jpg)
 
 
 <a id="quadrotor"></a>

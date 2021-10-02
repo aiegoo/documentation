@@ -45,7 +45,7 @@ The steps are:
    The updated bootloader might be supplied in custom firmware (i.e. from the dev team), or it or may be included in the latest master.
    :::
 
-   ![FMUv2 update](../../assets/qgc/setup/firmware/bootloader_update.jpg)
+   ![FMUv2 update](images/drones/qgc/setup/firmware/bootloader_update.jpg)
 1. Wait for the vehicle to reboot.
 1. [Find and enable](../advanced_config/parameters.md) the parameter [SYS_BL_UPDATE](../advanced_config/parameter_reference.md#SYS_BL_UPDATE).
 1. Reboot (disconnect/reconnect the board).

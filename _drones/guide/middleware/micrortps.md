@@ -31,7 +31,7 @@ It is possible to use Fast RTPS(DDS) over slower links (e.g., radio telemetry) b
 
 The *microRTPS* bridge exchanges messages between PX4 and DDS-participant applications, seamlessly converting between the [uORB](../middleware/uorb.md) and RTPS/DDS messages used by each system.
 
-![basic example flow](../../assets/middleware/micrortps/architecture.png)
+![basic example flow](images/drones/middleware/micrortps/architecture.png)
 
 The main elements of the architecture are the client and agent processes shown in the diagram above.
 

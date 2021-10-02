@@ -7,7 +7,7 @@ Key information:
 - **Frame:** Multiplex FunCub
 - **Flight controller:** Pixhawk
 
-![Fun Cub VTOL](../../assets/airframes/vtol/funcub_pixhawk/fun_cub_vtol_complete.jpg)
+![Fun Cub VTOL](images/drones/airframes/vtol/funcub_pixhawk/fun_cub_vtol_complete.jpg)
 
 Unmodified, the Fun Cub is a relatively affordable plane and relatively easy to fly.
 After the conversion the plane is significantly heavier and less aerodynamic. It still flies quite well but needs around 75% throttle in forward flight.
@@ -34,8 +34,8 @@ just fine - this is a Multiplex Fun Cub). The minimal equipment required is:
 
 The structure is made out of aluminum booms as shown below.
 
-![quad_frame](../../assets/airframes/vtol/funcub_pixhawk/fun_cub_aluminium_frame_for_vtol.jpg)
-![Fun Cub -frame for vtol mounted](../../assets/airframes/vtol/funcub_pixhawk/fun_cub_aluminium_frame_for_vtol_mounted.jpg)
+![quad_frame](images/drones/airframes/vtol/funcub_pixhawk/fun_cub_aluminium_frame_for_vtol.jpg)
+![Fun Cub -frame for vtol mounted](images/drones/airframes/vtol/funcub_pixhawk/fun_cub_aluminium_frame_for_vtol_mounted.jpg)
 
 ## Wiring
 
@@ -64,7 +64,7 @@ For further instructions on wiring and configurations please see:
 
 Configure the frame as shown in QGroundControl below (do not forget to click **Apply and Restart** in the top).
 
-![QCG - Select Fun Cub Quad firmware](../../assets/airframes/vtol/funcub_pixhawk/qgc_firmware_standard_vtol_fun_cub_quad.png)
+![QCG - Select Fun Cub Quad firmware](images/drones/airframes/vtol/funcub_pixhawk/qgc_firmware_standard_vtol_fun_cub_quad.png)
 
 ## Video
 

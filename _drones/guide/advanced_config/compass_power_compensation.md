@@ -18,7 +18,7 @@ The process is demonstrated for a multicopter, but is equally valid for other ve
 Performing this power compensation is advisable only if all the following statements are true:
 1. The compass cannot be moved away from the power-carrying cables.
 1. There is a strong correlation between the compass readings and the thrust setpoint, and/or the battery current. 
-   ![Corrupted mag](../../assets/advanced_config/corrupted_mag.png)
+   ![Corrupted mag](images/drones/advanced_config/corrupted_mag.png)
    
 1. The drone cables are all fixed in place/do not move (calculated compensation parameters will be invalid if the current-carrying cables can move).
 
@@ -32,7 +32,7 @@ Performing this power compensation is advisable only if all the following statem
 1. Secure the drone so that it cannot move, and attach the propellers (so the motors can draw the same current as in flight).
    This example secures the vehicle using straps.
    
-   ![strap](../../assets/advanced_config/strap.png)
+   ![strap](images/drones/advanced_config/strap.png)
 1. Power the vehicle and switch into [ACRO flight mode](../flight_modes/acro_mc.md) (using this mode ensures the vehicle won't attempt to compensate for movement resulting from the straps).   
    - Arm the vehicle and slowly raise the throttle to the maximum
    - Slowly lower the throttle down to zero
@@ -53,8 +53,8 @@ Performing this power compensation is advisable only if all the following statem
    The figures that pop up from the script show the "goodness of fit" for each compass instance, and how the data would look if compensated with the suggested values.
    If a current measurement is available, using the current-compensation usually yields the better results.
    Here is an example of a log, where the current fit is good, but the thrust parameters are unusable as the relationship is not linear.
-   ![line fit](../../assets/advanced_config/line_fit.png)
+   ![line fit](images/drones/advanced_config/line_fit.png)
 
 1. Once the parameters are identified, the power compensation must be enabled by setting [CAL_MAG_COMP_TYP](../advanced_config/parameter_reference.md#CAL_MAG_COMP_TYP) to 1 (when using thrust parameters) or 2 (when using current parameters). Additionally, the compensation parameters for each axis of each compass must be set.
 
-   ![comp params](../../assets/advanced_config/comp_params.png)
+   ![comp params](images/drones/advanced_config/comp_params.png)

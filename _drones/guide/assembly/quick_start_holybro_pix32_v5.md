@@ -7,7 +7,7 @@ Contact the [manufacturer](https://shop.holybro.com/) for hardware support or co
 
 This quick start guide shows how to power the [Holybro Pix32v5](../flight_controller/holybro_pix32_v5.md)<sup>&reg;</sup> flight controller and connect its most important peripherals.
 
-![Pix32 v5 With Base](../../assets/flight_controller/holybro_pix32_v5/IMG_3165.jpg)
+![Pix32 v5 With Base](images/drones/flight_controller/holybro_pix32_v5/IMG_3165.jpg)
 
 ## Unboxing
 
@@ -16,14 +16,14 @@ Pix32 v5 is sold bundled with a number of different combinations of accessories,
 The content of the box with the *PM02 V3* power module and *Pixhawk 4 GPS/Compass* is shown below.
 The box also includes a pinout guide and power module instructions, and Base board (not shown on the schematic below).
 
-![Pix32 v5 Box](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_unboxing_schematics.png)
+![Pix32 v5 Box](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_unboxing_schematics.png)
 
 ## Wiring Chart Overview
 
 The image below shows how to connect the most important sensors and peripherals (except the motor and servo outputs).
 We'll go through each of these in detail in the following sections.
 
-![Pix32 v5 Wiring Overview](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_wiring_overview.jpg)
+![Pix32 v5 Wiring Overview](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_wiring_overview.jpg)
 
 :::tip
 More information about available ports can be found [here](http://www.holybro.com/manual/Holybro_PIX32-V5_PINOUTS_V1.1.pdf).
@@ -33,7 +33,7 @@ More information about available ports can be found [here](http://www.holybro.co
 
 *Pix32 v5*  should be mounted on the frame positioned as close to your vehicle’s center of gravity as possible, oriented top-side up with the arrow pointing towards the front of the vehicle.
 
-![Pix32 v5 With Orientation](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_orientation.png)
+![Pix32 v5 With Orientation](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_orientation.png)
 
 :::note
 If the controller cannot be mounted in the recommended/default orientation (e.g. due to space constraints) you will need to configure the autopilot software with the orientation that you actually used: [Flight Controller Orientation](../config/flight_controller_orientation.md).
@@ -49,7 +49,7 @@ Do not use vibration-isolation foam to mount the controller (double sided tape i
 Pix32 v5 is designed to work well with the [Pixhawk 4 GPS module](https://shop.holybro.com/pixhawk-4-gps-module_p1094.html), which has an integrated compass, safety switch, buzzer and LED.
 It connects directly to the **GPS port** using the 10 pin cable.
 
-![Pix32 v5 with GPS](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_connection_gps_compass.jpg)
+![Pix32 v5 with GPS](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_connection_gps_compass.jpg)
 
 The GPS/Compass should be mounted on the frame as far away from other electronics as possible, with the direction marker towards the front of the vehicle (separating the compass from other electronics will reduce interference).
 
@@ -72,7 +72,7 @@ It provides regulated power to flight controller and sends battery voltage/curre
 
 Connect the output of the *Power Module* as shown.
 
-![Pix32 v5 With Power Module](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_connection_power.jpg)
+![Pix32 v5 With Power Module](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_connection_power.jpg)
 
 - PM voltage/current port: connect to POWER1 port (or `POWER2`) using the 6-wire GH cable supplied.
 - PM input (XT60 male connector): connect to the LiPo battery (2~12S).
@@ -119,11 +119,11 @@ The instructions below show how to connect the different types of receivers to *
 
 - Spektrum/DSM receivers connect to the **DSM RC** input shown below.
 
-  ![Pix32v5 rc receivers](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_receivers_connection.jpg)
+  ![Pix32v5 rc receivers](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_receivers_connection.jpg)
   
 - PPM and S.Bus receivers connect to the **SBUS_IN/PPM_IN** input port (marked as RC IN):
 
-  ![Pinouts](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_pinouts_back_label.png)
+  ![Pinouts](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_pinouts_back_label.png)
 
 
 - PPM and PWM receivers that have an *individual wire for each channel* must connect to the **PPM RC** port *via a PPM encoder* [like this one](http://www.getfpv.com/radios/radio-accessories/holybro-ppm-encoder-module.html) (PPM-Sum receivers use a single signal wire for all channels).
@@ -138,14 +138,14 @@ Telemetry radios may be used to communicate and control a vehicle in flight from
 The vehicle-based radio should be connected to the **TELEM1** port as shown below (if connected to this port, no further configuration is required).
 The other radio is connected to your ground station computer or mobile device (usually by USB).
 
-![Pix32 v5 With Telemetry Radios](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_telemetry_radio.jpg)
+![Pix32 v5 With Telemetry Radios](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_telemetry_radio.jpg)
 
 ## SD Card (Optional)
 
 SD cards are most commonly used to [log and analyse flight details](../getting_started/flight_reporting.md).
 A micro SD card should come preinstalled on the pix32 v5, if you have your own micro SD card, insert the card into *pix32 v5* as shown below.
 
-![Pix32 v5 With SD Card](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_sd_card.jpg)
+![Pix32 v5 With SD Card](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_sd_card.jpg)
 
 :::tip
 The SanDisk Extreme U3 32GB is [highly recommended](../dev_log/logging.md#sd-cards).
@@ -155,7 +155,7 @@ The SanDisk Extreme U3 32GB is [highly recommended](../dev_log/logging.md#sd-car
 
 Motors/servos control signals are connected to the **I/O PWM OUT** (**MAIN**) and **FMU PWM OUT** (**AUX**) ports in the order specified for your vehicle in the [Airframe Reference](../airframes/airframe_reference.md). 
 
-  ![Pix32 v5 - Back Pinouts (Schematic)](../../assets/flight_controller/holybro_pix32_v5/pix32_v5_pinouts_back_label.png)
+  ![Pix32 v5 - Back Pinouts (Schematic)](images/drones/flight_controller/holybro_pix32_v5/pix32_v5_pinouts_back_label.png)
 
 The motors must be separately [powered](#power).
 

@@ -10,9 +10,9 @@ NXP provides the schematics, gerbers, BOM and source files so that anyone can du
 
 This is the official FMU for use with [HoverGames](https://www.hovergames.com/).
 
-![RDDRONE-FMUK66 FMU Hero Image1](../../assets/flight_controller/nxp_rddrone_fmuk66/HoverGamesDrone_14042019_XL_020.jpg)
+![RDDRONE-FMUK66 FMU Hero Image1](images/drones/flight_controller/nxp_rddrone_fmuk66/HoverGamesDrone_14042019_XL_020.jpg)
 
-![RDDRONE-FMUK66 FMU Hero Image2](../../assets/flight_controller/nxp_rddrone_fmuk66/HoverGamesDrone_14042019_XL_021.jpg)
+![RDDRONE-FMUK66 FMU Hero Image2](images/drones/flight_controller/nxp_rddrone_fmuk66/HoverGamesDrone_14042019_XL_021.jpg)
 
 The NXP FMU and included peripherals have been tested to comply with FCC/CE/RoHs/REACH directives.
 
@@ -39,7 +39,7 @@ These flight controllers are [manufacturer supported](../flight_controller/autop
 This FMU is provided only as a kit, and includes [Segger Jlink EDU mini debugger](https://www.segger.com/products/debug-probes/j-link/models/j-link-edu-mini/), DCD-LZ debugger adapter, USB-TTL-3V3 console cable, HolyBro GPS module, battery power module, SDCard and case, screws and stickers.
 Telemetry radios ([HGD-TELEM433](https://www.nxp.com/part/HGD-TELEM433) and [HGD-TELEM915](https://www.nxp.com/part/HGD-TELEM915)) must be purchased separately to match ISM band frequencies used in your country.
 
-![RDDRONE-FMUK66 FMU Kit](../../assets/flight_controller/nxp_rddrone_fmuk66/rddrone_fmu66_kit_img_contents.jpg)
+![RDDRONE-FMUK66 FMU Kit](images/drones/flight_controller/nxp_rddrone_fmuk66/rddrone_fmu66_kit_img_contents.jpg)
 
 A "Lite" version RDDRONE-FMUK66L is also available which does not include the power module, GPS, Jlink or USB-TTL-3V3 console cable or SDCard.[Scroll down to see FMUK66L in the buy section of the FMUK66 buy page](https://www.nxp.com/design/designs/px4-robotic-drone-fmu-rddrone-fmuk66:RDDRONE-FMUK66#buy)
 
@@ -112,7 +112,7 @@ The DCD-LZ breakout adapter permits the use of a standard 10 pin JTAG/SWD interf
 Any multicopter / airplane / rover or boat that can be controlled with normal RC servos or Futaba S-Bus servos.
 The complete set of supported configurations can be seen in the [Airframes Reference](../airframes/airframe_reference.md).
 
-![HoverGames Drone Kit](../../assets/flight_controller/nxp_rddrone_fmuk66/HoverGamesDrone_14042019_XL_001.jpg)
+![HoverGames Drone Kit](images/drones/flight_controller/nxp_rddrone_fmuk66/HoverGamesDrone_14042019_XL_001.jpg)
 
 :::tip
 The NXP [HoverGames Drone Kit](https://www.nxp.com/kit-hgdronek66) (shown above) is a complete drone development kit that includes everything needed to build a quadcopter.
@@ -125,5 +125,5 @@ You only need to supply the 3S/4S LiPo battery.
 
 - 3DModels supporting HoverGames and RDDRONE-FMUK66 can be found on *Thingiverse* at these search links: [fmuk66](https://www.thingiverse.com/search?q=fmuk66&type=things&sort=relevant), [hovergames](https://www.thingiverse.com/search?q=hovergames&type=things&sort=relevant).
 
-![HoverGamesDronelogo](../../assets/flight_controller/nxp_rddrone_fmuk66/The HoverGames_Colored-small.png)
+![HoverGamesDronelogo](images/drones/flight_controller/nxp_rddrone_fmuk66/The HoverGames_Colored-small.png)
 

@@ -9,7 +9,7 @@ The Holybro<sup>&reg;</sup> [pix32 autopilot](https://shop.holybro.com/c/pixhawk
 This board is based on hardware version Pixhawk 2.4.6.
 It runs the PX4 flight stack on the [NuttX](https://nuttx.apache.org/) OS.
 
-![pix32](../../assets/flight_controller/holybro_pix32/pix32_hero.jpg)
+![pix32](images/drones/flight_controller/holybro_pix32/pix32_hero.jpg)
 
 As a CC-BY-SA 3.0 licensed Open Hardware design, schematics and design files should be [available here](https://github.com/PX4/Hardware).
 

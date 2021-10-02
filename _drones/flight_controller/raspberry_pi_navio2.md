@@ -13,7 +13,7 @@ PX4 support for this flight controller is [experimental](../flight_controller/au
 This is the developer "quickstart" for Raspberry Pi 2/3 Navio2 autopilots.
 It allows you to build PX4 and transfer to the RasPi, or build natively.
 
-![Ra Pi Image](../../assets/hardware/hardware-rpi2.jpg)
+![Ra Pi Image](images/drones/hardware/hardware-rpi2.jpg)
 
 
 ## OS Image

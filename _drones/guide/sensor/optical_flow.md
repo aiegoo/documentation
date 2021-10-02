@@ -28,7 +28,7 @@ For pure rotations the `integrated_xgyro` and `integrated_x` (respectively `inte
 
 An popular setup is the [PX4Flow](../sensor/px4flow.md) and [Lidar-Lite](../sensor/lidar_lite.md), as shown below.
 
-![Optical flow lidar attached](../../assets/hardware/sensors/optical_flow/flow_lidar_attached.jpg)
+![Optical flow lidar attached](images/drones/hardware/sensors/optical_flow/flow_lidar_attached.jpg)
 
 Sensor data from the optical flow device is fused with other velocity data sources.
 The approach used for fusing sensor data and any offsets from the center of the vehicle must be configured in the [estimator](#estimators). 
@@ -70,7 +70,7 @@ The settings for how fusing is done, and relative offsets to vehicle center must
 
 The offsets are calculated relative to the vehicle orientation and center as shown below:
  
-![Optical Flow offsets](../../assets/hardware/sensors/optical_flow/px4flow_offset.png)
+![Optical Flow offsets](images/drones/hardware/sensors/optical_flow/px4flow_offset.png)
 
 Optical Flow based navigation is enabled by both the availableestimators: EKF2 and LPE (deprecated).
 
@@ -79,7 +79,7 @@ Optical Flow based navigation is enabled by both the availableestimators: EKF2 a
 
 For optical flow fusion using EKF2, set the use optical flow flag in the [EKF2_AID_MASK](../advanced_config/parameter_reference.md#EKF2_AID_MASK) parameter, as shown using QGroundControl below:
 
-![QGroundControl - Calibrate Sensors](../../assets/ekf2/qgc_ekf2_enable_flow.png)
+![QGroundControl - Calibrate Sensors](images/drones/ekf2/qgc_ekf2_enable_flow.png)
 
 If your optical flow sensor is offset from the vehicle centre, you can set this using the following parameters.
 

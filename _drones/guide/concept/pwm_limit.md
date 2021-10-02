@@ -20,4 +20,4 @@
 
 
 ## State Transition Diagram
-![](../../assets/diagrams/pwm_limit_state_diagram.png)
+![](images/drones/diagrams/pwm_limit_state_diagram.png)

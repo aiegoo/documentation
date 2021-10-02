@@ -3,7 +3,7 @@
 [jDrones](http://store.jDrones.com) and [RFDesign](http://rfdesign.com.au/) offer *long-range* [SiK](../telemetry/sik_radio.md)-compatible telemetry radios.
 The radios provide reliable connectivity at greater than 5km ranges with normal antennas (and have been reported to achieve much greater ranges).
 
-![jDrones Long Range Telemetry](../../assets/hardware/telemetry/jdrones_long_range_uav_telemetry_rf900set02_2.jpg)
+![jDrones Long Range Telemetry](images/drones/hardware/telemetry/jdrones_long_range_uav_telemetry_rf900set02_2.jpg)
 
 :::tip
 *jDrones* have productized *RFDesign* modems (added a casing with power management, filtering and other electronics inside, along with cables to connect to popular flight controllers, and individually validated antennas).

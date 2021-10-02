@@ -8,7 +8,7 @@ The approximate range with output power set to 1W is 8km (5miles) when using def
 A single ground station radio can be used to communicate with multiple vehicles using point to multi-point or mesh.
 Vehicles must have different MAVLINK IDs.
 
-![Microhard Radio](../../assets/hardware/telemetry/ark_microhard_serial.jpg)
+![Microhard Radio](images/drones/hardware/telemetry/ark_microhard_serial.jpg)
 
 ## Purchase:
 
@@ -26,7 +26,7 @@ A Pixhawk-standard 6 pin JST GH telemetry cable is supplied for this purpose.
 The radio can be powered by the telemetry cable if the output power is set to less than 100mW.
 For higher output levels, the radio must be separately powered via the 2 Pin Molex Nano-Fit (i.e. from a battery).
 
-![Microhard Radio on Vehicle](../../assets/hardware/telemetry/microhard_serial_on_vehicle.jpg)
+![Microhard Radio on Vehicle](images/drones/hardware/telemetry/microhard_serial_on_vehicle.jpg)
 
 ### Ground Station Radio
 
@@ -47,13 +47,13 @@ You can configure PX4 to use any other free serial port, or configure the baud r
 
 The radios are configured using [Pico Config](https://arkelectron.com/wp-content/uploads/2021/04/PicoConfig-1.7.zip) (Windows only).
 
-![Pico Config](../../assets/hardware/telemetry/pico_configurator.png)
+![Pico Config](images/drones/hardware/telemetry/pico_configurator.png)
 
 For vehicle radio configuration you will have to connect an FTDI adapter between the radio's 3 pin JST-GH Config port and a Windows PC running *Pico Config* (the radio must be powered, which you can do from battery or the data connection to the flight-controller's `TELEM1` port).
 *Pico Config* will automatically detect the radio.
 Adjust the baud rate setting to match PX4 (and the ground station radio).
 
-![Ark Microhard Serial - Ports](../../assets/hardware/telemetry/ark_microhard_serial_ports.jpg)
+![Ark Microhard Serial - Ports](images/drones/hardware/telemetry/ark_microhard_serial_ports.jpg)
 
 The ground station radio USB C connection can be used for configuring the radio (as well as for telemetry data).
 *Pico Config* will automatically detect and connect to the configuration port.

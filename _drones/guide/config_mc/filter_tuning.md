@@ -101,9 +101,9 @@ Note that there can be negative impacts on preformance if `IMU_GYRO_CUTOFF` and 
 
 Below is an example for three different `IMU_DGYRO_CUTOFF` filter values (40Hz, 70Hz, 90Hz).
 At 90 Hz the general noise level starts to increase (especially for roll), and thus a cutoff frequency of 70 Hz is a safe setting.
-![IMU_DGYRO_CUTOFF=40](../../assets/config/mc/filter_tuning/actuator_controls_fft_dgyrocutoff_40.png)
-![IMU_DGYRO_CUTOFF=70](../../assets/config/mc/filter_tuning/actuator_controls_fft_dgyrocutoff_70.png)
-![IMU_DGYRO_CUTOFF=90](../../assets/config/mc/filter_tuning/actuator_controls_fft_dgyrocutoff_90.png)
+![IMU_DGYRO_CUTOFF=40](images/drones/config/mc/filter_tuning/actuator_controls_fft_dgyrocutoff_40.png)
+![IMU_DGYRO_CUTOFF=70](images/drones/config/mc/filter_tuning/actuator_controls_fft_dgyrocutoff_70.png)
+![IMU_DGYRO_CUTOFF=90](images/drones/config/mc/filter_tuning/actuator_controls_fft_dgyrocutoff_90.png)
 
 :::note
 The plot cannot be compared between different vehicles, as the y axis scale can be different.
@@ -114,7 +114,7 @@ If the flight plots shows significant low frequency spikes, like the one shown i
 In this case you might use the settings: [IMU_GYRO_NF_FREQ=32](../advanced_config/parameter_reference.md#IMU_GYRO_NF_FREQ) and [IMU_GYRO_NF_BW=5](../advanced_config/parameter_reference.md#IMU_GYRO_NF_BW) (note, this spike is narrower than usual).
 The low pass filters and the notch filter can be tuned independently (i.e. you don't need to set the notch filter before collecting the data for tuning the low pass filter).
 
-![IMU_GYRO_NF_FREQ=32 IMU_GYRO_NF_BW=5](../../assets/config/mc/filter_tuning/actuator_controls_fft_gyro_notch_32.png)
+![IMU_GYRO_NF_FREQ=32 IMU_GYRO_NF_BW=5](images/drones/config/mc/filter_tuning/actuator_controls_fft_gyro_notch_32.png)
 
 ## Additional Tips
 

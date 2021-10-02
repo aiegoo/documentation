@@ -3,7 +3,7 @@
 PX4FLOW is an [optical flow](../sensor/optical_flow.md) smart camera.
 It has a native resolution of 752x480 pixels and calculates optical flow on a 4x binned and cropped area at 400 Hz, giving it a very high light sensitivity.
 
-![PX4Flow v1.0](../../assets/hardware/sensors/px4flow/px4flow_v1.0_top_generated.png)
+![PX4Flow v1.0](images/drones/hardware/sensors/px4flow/px4flow_v1.0_top_generated.png)
 
 Unlike many mouse sensors, it also works indoors and in low outdoor light conditions without the need for an illumination LED.
 It can be freely reprogrammed to perform any other basic, efficient low-level computer vision tasks.
@@ -37,7 +37,7 @@ Order this module from:
 * USB power option
 * **Does fit the MatrixVision Bluefox MV mounting holes (camera center off-centered)**
 
-![PX4Flow Top](../../assets/hardware/sensors/px4flow/px4flow_top.jpg) ![px4flow-bottom](../../assets/hardware/sensors/px4flow/px4flow_bottom.jpg) 
+![PX4Flow Top](images/drones/hardware/sensors/px4flow/px4flow_top.jpg) ![px4flow-bottom](images/drones/hardware/sensors/px4flow/px4flow_bottom.jpg) 
 
 
 ## Pixhawk Setup
@@ -65,7 +65,7 @@ Flow data is transmitted over wireless channels at a lower rate.
 
 The recommended mounting orientation is defined as Y on flow board pointing towards **front of vehicle**, as shown in the following picture.
 
-![PX4Flow align with Pixhawk](../../assets/hardware/sensors/px4flow/px4flowalignwithpixhawk.jpg)
+![PX4Flow align with Pixhawk](images/drones/hardware/sensors/px4flow/px4flowalignwithpixhawk.jpg)
 
 On **PX4**, the orientation should be set using the parameter [SENS_FLOW_ROT](../advanced_config/parameter_reference.md#SENS_FLOW_ROT).
 The above orientation maps to [SENS_FLOW_ROT=270](#SENS_FLOW_ROT) degrees (the default).
@@ -142,12 +142,12 @@ Focus the lens by unscrewing the set screw and loosening and tightening the lens
 If you fly above 3m, the camera will be focused at infinity and won't need to be changed for higher flight.
 :::
 
-![Flow Focus Book](../../assets/hardware/sensors/px4flow/flow_focus_book.jpg)
+![Flow Focus Book](images/drones/hardware/sensors/px4flow/flow_focus_book.jpg)
 
 *Figure: Use a text book to focus the flow camera at the height you want to fly, typically 1-3 meters. 
 Above 3 meters the camera should be focused at infinity and work for all higher altitudes.*
 
-![Flow Focusing](../../assets/hardware/sensors/px4flow/flow_focusing.png)
+![Flow Focusing](images/drones/hardware/sensors/px4flow/flow_focusing.png)
 
 *Figure: The QGroundControl px4flow interface that can be used for focusing the camera*
 
@@ -158,7 +158,7 @@ The ortho photo below shows that a flight on the park roads is accurately measur
 This was done with a PX4FMU on a 7" quad flying at about 1.6 m altitude in manual flight.
 No GPS, only PX4FLOW integration of position.
 
-![PX4FLOW trajectory](../../assets/hardware/sensors/px4flow/px4flow_trajectory.jpg)
+![PX4FLOW trajectory](images/drones/hardware/sensors/px4flow/px4flow_trajectory.jpg)
 
 
 ## Downloads
@@ -243,7 +243,7 @@ max_vel = 4/(1/400)*grounddistance/(focallength/0.000024)
 PX4FLOW is not designed as a camera, but does all processing on-chip.
 You can configure the image quality and output (the image output is only intended for focusing the lens).
 
-![Video Downlink](../../assets/hardware/sensors/px4flow/qgc_video_downlink_px4flow.jpg)
+![Video Downlink](images/drones/hardware/sensors/px4flow/qgc_video_downlink_px4flow.jpg)
 
   - Download [QGroundControl](http://qgroundcontrol.com/#downloads)
   - Unplug your flow sensor
@@ -273,7 +273,7 @@ You can configure the image quality and output (the image output is only intende
 
   :::tip
   [Ask for help](../contribute/support.md#forums-and-chat) if you have a distorted image with visible dark lines (like the one below):
-  ![Distorted video](../../assets/hardware/sensors/px4flow/px4flow_video_distorted.png)
+  ![Distorted video](images/drones/hardware/sensors/px4flow/px4flow_video_distorted.png)
   :::
 
 
@@ -288,7 +288,7 @@ You can configure the image quality and output (the image output is only intende
 * Micro USB cable
 
 
-![PX4FLOW Testing](../../assets/hardware/sensors/px4flow/px4flow_testing.jpg)
+![PX4FLOW Testing](images/drones/hardware/sensors/px4flow/px4flow_testing.jpg)
 
 
 ## Software / Build Source
@@ -345,7 +345,7 @@ Connect PX4FLOW to QGroundControl:
 - Switch to Plot perspective: Perspectives/Plot 
 - Connect to PX4FLOW sensor: Communication/Add Link
 
-![PX4 Onboard Parameters](../../assets/hardware/sensors/px4flow/px4flow_onboard_parameters.png)
+![PX4 Onboard Parameters](images/drones/hardware/sensors/px4flow/px4flow_onboard_parameters.png)
 
 * Link Type: Serial
 * Protocol: MAVLink
@@ -458,6 +458,6 @@ No flow values are calculated in this mode.
 
 If the parameter `IMAGE_TEST_PAT` is set to 1, the sensor inserts a vertical gray-shaded test pattern in the signal chain. 
 * Test Pattern 64x64 (VIDEO ONLY Mode is OFF)
-  ![test_pattern_64x64](../../assets/hardware/sensors/px4flow/test_pattern_64x64.png)
+  ![test_pattern_64x64](images/drones/hardware/sensors/px4flow/test_pattern_64x64.png)
 * Test Pattern 376x240 (VIDEO ONLY Mode is ON)
-  ![test_pattern_376x240](../../assets/hardware/sensors/px4flow/test_pattern_376x240.png)
+  ![test_pattern_376x240](images/drones/hardware/sensors/px4flow/test_pattern_376x240.png)

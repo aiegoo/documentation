@@ -22,7 +22,7 @@ PX4 uses **P**roportional, **I**ntegral, **D**erivative (PID) controllers (thes
 The _QGroundControl_ **PID Tuning** setup provides real-time plots of the vehicle setpoint and response curves. 
 The goal of tuning is to set the P/I/D values such that the _Response_ curve matches the _Setpoint_ curve as closely as possible (i.e. a fast response without overshoots).
 
-![QGC Rate Controller Tuning UI](../../assets/mc_pid_tuning/qgc_mc_pid_tuning_rate_controller.png)
+![QGC Rate Controller Tuning UI](images/drones/mc_pid_tuning/qgc_mc_pid_tuning_rate_controller.png)
 
 The controllers are layered, which means a higher-level controller passes its results to a lower-level controller.
 The lowest-level controller is the **rate controller**, followed by the **attitude controller**, and finally the **velocity & position controller**.
@@ -37,7 +37,7 @@ Then adjust the sliders (as discussed below) to improve the tracking of the resp
 - use Acro/Stabilized/Altitude mode to tune the rate controller
 - Use [Position mode](../flight_modes/position_mc.md) to tune the *Velocity Controller* and the *Position Controller*.
   Make sure to switch to the *Simple position control* mode so you can generate step inputs.
-  ![QGC PID tuning: Simple control selector](../../assets/mc_pid_tuning/qgc_mc_pid_tuning_simple_control.png)
+  ![QGC PID tuning: Simple control selector](images/drones/mc_pid_tuning/qgc_mc_pid_tuning_simple_control.png)
 :::
 
 ## Preconditions
@@ -64,7 +64,7 @@ The tuning procedure is:
 
 1. Arm the vehicle, takeoff, and hover (typically in [Position mode](../flight_modes/position_mc.md)).
 1. Open _QGroundControl_ **Vehicle Setup > PID Tuning**
-   ![QGC Rate Controller Tuning UI](../../assets/mc_pid_tuning/qgc_mc_pid_tuning_rate_controller.png)
+   ![QGC Rate Controller Tuning UI](images/drones/mc_pid_tuning/qgc_mc_pid_tuning_rate_controller.png)
 1. Select the **Rate Controller** tab.
 1. Confirm that the airmode selector is set to **Disabled**
 1. Set the *Thrust curve* value to: 0.3 (PWM, power-based controllers) or 1 (RPM-based ESCs)
@@ -118,7 +118,7 @@ The tuning procedure is:
    - Use Position mode when tuning these controllers
    - Select the **Simple position control** option in the *Position control mode ...* selector (this allows direct control for the generation of step inputs)
    
-     ![QGC PID tuning: Simple control selector](../../assets/mc_pid_tuning/qgc_mc_pid_tuning_simple_control.png)
+     ![QGC PID tuning: Simple control selector](images/drones/mc_pid_tuning/qgc_mc_pid_tuning_simple_control.png)
 
 All done!
 Remember to re-enable airmode before leaving the setup.

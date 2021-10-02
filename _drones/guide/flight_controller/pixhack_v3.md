@@ -12,7 +12,7 @@ It runs PX4 on the [NuttX](https://nuttx.apache.org/) OS, and is fully compatibl
 
 *Pixhack V3* has significant improvements with respect to the original design, including better interface layout and the addition of vibration damping and a thermostat system.
 
-![Pixhack v3](../../assets/flight_controller/pixhack_v3/pixhack_v3_157_large_default.jpg)
+![Pixhack v3](images/drones/flight_controller/pixhack_v3/pixhack_v3_157_large_default.jpg)
 
 :::note
 This flight controller is [manufacturer supported](../flight_controller/autopilot_manufacturer_supported.md).

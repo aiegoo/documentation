@@ -21,7 +21,7 @@ It is optimized to run PX4 v1.7 and later, and is suitable for academic and comm
 
 It is based on the [Pixhawk-project](https://pixhawk.org/) **FMUv5** open hardware design and runs PX4 on the [NuttX](https://nuttx.apache.org/) OS.
 
-<img src="../../assets/flight_controller/pixhawk4/pixhawk4_hero_upright.jpg" width="200px" title="Pixhawk4 Upright Image" /> <img src="../../assets/flight_controller/pixhawk4/pixhawk4_logo_view.jpg" width="420px" title="Pixhawk4 Image" />
+<img src="images/drones/flight_controller/pixhawk4/pixhawk4_hero_upright.jpg" width="200px" title="Pixhawk4 Upright Image" /> <img src="images/drones/flight_controller/pixhawk4/pixhawk4_logo_view.jpg" width="420px" title="Pixhawk4 Image" />
 
 :::tip
 This autopilot is [supported](../flight_controller/autopilot_pixhawk_standard.md) by the PX4 maintenance and test teams.
@@ -70,7 +70,7 @@ Order from [Holybro](https://shop.holybro.com/pixhawk-4beta-launch_p1089.html).
 
 ## Connectors
 
-![Pixhawk 4 connectors](../../assets/flight_controller/pixhawk4/pixhawk4-connectors.jpg)
+![Pixhawk 4 connectors](images/drones/flight_controller/pixhawk4/pixhawk4-connectors.jpg)
 
 :::warning
 The **DSM/SBUS RC** and **PPM RC** ports are for RC receivers only.
@@ -100,7 +100,7 @@ UART8 | /dev/ttyS6 | PX4IO
 
 ## Dimensions
 
-![Pixhawk 4 Dimensions](../../assets/flight_controller/pixhawk4/pixhawk4_dimensions.jpg)
+![Pixhawk 4 Dimensions](images/drones/flight_controller/pixhawk4/pixhawk4_dimensions.jpg)
 
 ## Voltage Ratings
 
@@ -149,7 +149,7 @@ make px4_fmu-v5_default
 The [PX4 System Console](../debug/system_console.md) and [SWD interface](../debug/swd_debug.md) run on the **FMU Debug** port, while the I/O console and SWD interface can be accessed via **I/O Debug** port.
 In order to access these ports, the user must remove the *Pixhawk 4* casing.
 
-![Pixhawk 4 Debug Ports](../../assets/flight_controller/pixhawk4/pixhawk4_debug_port.jpg)
+![Pixhawk 4 Debug Ports](images/drones/flight_controller/pixhawk4/pixhawk4_debug_port.jpg)
 
 The pinout uses the standard [Pixhawk debug connector pinout](https://pixhawk.org/pixhawk-connector-standard/#dronecode_debug).
 For wiring information see:

@@ -15,7 +15,7 @@ The *3DR Pixhawk<sup>&reg;</sup> 1* autopilot is a popular general purpose fligh
 It runs PX4 on the [NuttX](https://nuttx.apache.org/) OS.
 
 
-![Pixhawk Image](../../assets/hardware/hardware-pixhawk.png)
+![Pixhawk Image](images/drones/hardware/hardware-pixhawk.png)
 
 Assembly/setup instructions for use with PX4 are provided here: [Pixhawk Wiring Quickstart](../assembly/quick_start_pixhawk.md)
 
@@ -135,7 +135,7 @@ As a CC-BY-SA 3.0 licensed Open Hardware design, all schematics and design files
 The RC IN port is for RC receivers only and provides power. **NEVER** connect any servos, power supplies or batteries to it or to the receiver connected to it.
 :::
 
-![Pixhawk Connectors](../../assets/flight_controller/pixhawk1/pixhawk_connectors.png)
+![Pixhawk Connectors](images/drones/flight_controller/pixhawk1/pixhawk_connectors.png)
 
 ## Pinouts
 
@@ -265,7 +265,7 @@ The [PX4 System Console](../debug/system_console.md) runs on the port labeled [S
 A convenient way to connect to the console is to use a [Dronecode probe](https://kb.zubax.com/display/MAINKB/Dronecode+Probe+documentation), as it comes with connectors that can be used with several different Pixhawk devices. 
 Simply connect the 6-pos DF13 1:1 cable on the [Dronecode probe](https://kb.zubax.com/display/MAINKB/Dronecode+Probe+documentation) to the Pixhawk `SERIAL4/5` port.
 
-![Dronecode probe](../../assets/flight_controller/pixhawk1/dronecode_probe.jpg)
+![Dronecode probe](images/drones/flight_controller/pixhawk1/dronecode_probe.jpg)
 :::
 
 The pinout is standard serial pinout, designed to connect to a [3.3V FTDI](https://www.digikey.com/product-detail/en/TTL-232R-3V3/768-1015-ND/1836393) cable (5V tolerant).
@@ -281,11 +281,11 @@ The pinout is standard serial pinout, designed to connect to a [3.3V FTDI](https
 
 The wiring for an FTDI cable to a 6-pos DF13 1:1 connector is shown in the figure below.
 
-![Console Connector](../../assets/flight_controller/pixhawk1/console_connector.jpg)
+![Console Connector](images/drones/flight_controller/pixhawk1/console_connector.jpg)
 
 The complete wiring is shown below.
 
-![Console Debug](../../assets/flight_controller/pixhawk1/console_debug.jpg)
+![Console Debug](images/drones/flight_controller/pixhawk1/console_debug.jpg)
 
 :::note
 For information on how to *use* the console see: [System Console](../debug/system_console.md).
@@ -297,12 +297,12 @@ For information on how to *use* the console see: [System Console](../debug/syste
 The [SWD](../debug/swd_debug.md) (JTAG) ports are hidden under the cover (which must be removed for hardware debugging).
 There are separate ports for FMU and IO, as highlighted below.
 
-![Pixhawk SWD](../../assets/flight_controller/pixhawk1/pixhawk_swd.jpg)
+![Pixhawk SWD](images/drones/flight_controller/pixhawk1/pixhawk_swd.jpg)
 
 The ports are ARM 10-pin JTAG connectors, which you will probably have to solder.
 The pinout for the ports is shown below (the square markers in the corners above indicates pin 1).
 
-![ARM 10-Pin connector pinout](../../assets/flight_controller/pixhawk1/arm_10pin_jtag_connector_pinout.jpg)
+![ARM 10-Pin connector pinout](images/drones/flight_controller/pixhawk1/arm_10pin_jtag_connector_pinout.jpg)
 
 <!-- For more information on SWD debugging see devguide [link to follow] -->
 

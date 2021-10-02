@@ -34,7 +34,7 @@ To start multiple instances (on separate ports and IDs):
 Each instance should have its own startup script, which can represent a completely different vehicle type.
 For prepared scripts you should get the following view.
 
-![Multi-vehicle simulation using PX4 SITL and FlightGear](../../assets/simulation/flightgear/flightgear-multi-vehicle-sitl.jpg)
+![Multi-vehicle simulation using PX4 SITL and FlightGear](images/drones/simulation/flightgear/flightgear-multi-vehicle-sitl.jpg)
 
 Ground stations such as *QGroundControl* connect to all instances using the normal UDP port 14550 (all traffic goes to the same port).
 

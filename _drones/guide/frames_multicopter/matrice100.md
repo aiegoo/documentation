@@ -7,7 +7,7 @@ Key information:
 - **Frame:** DJI Matrice 100
 - **Flight controller:** [Pixhawk 1](../flight_controller/pixhawk.md)
 
-![DJI Matrice 100](../../assets/airframes/multicopter/matrice100/Matrice100.jpg)
+![DJI Matrice 100](images/drones/airframes/multicopter/matrice100/Matrice100.jpg)
 
 ## Parts List
 
@@ -19,25 +19,25 @@ See the [Pixhawk Wiring Quickstart](../assembly/quick_start_pixhawk.md) for auto
 
 ### Wiring Diagram
 
-![Connections](../../assets/airframes/multicopter/matrice100/Wiring Diagram.jpg)
+![Connections](images/drones/airframes/multicopter/matrice100/Wiring Diagram.jpg)
 
 ### Wiring Harness 
 
-![Wiring Harness](../../assets/airframes/multicopter/matrice100/WiringHarness.jpg)
+![Wiring Harness](images/drones/airframes/multicopter/matrice100/WiringHarness.jpg)
 
 ### PWM Connections
  
-![PWM Connections](../../assets/airframes/multicopter/matrice100/PwmInput.jpg)
+![PWM Connections](images/drones/airframes/multicopter/matrice100/PwmInput.jpg)
 
 ### Other views
 
-![Top](../../assets/airframes/multicopter/matrice100/Top.jpg)
+![Top](images/drones/airframes/multicopter/matrice100/Top.jpg)
 
-![Back](../../assets/airframes/multicopter/matrice100/Back.jpg)
+![Back](images/drones/airframes/multicopter/matrice100/Back.jpg)
 
-![No Stack](../../assets/airframes/multicopter/matrice100/NoStack.jpg)
+![No Stack](images/drones/airframes/multicopter/matrice100/NoStack.jpg)
 
-![No Top Deck](../../assets/airframes/multicopter/matrice100/NoTopDeck.jpg)
+![No Top Deck](images/drones/airframes/multicopter/matrice100/NoTopDeck.jpg)
 
 ### Autopilot Outputs
 

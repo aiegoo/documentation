@@ -20,7 +20,7 @@ The Drotek<sup>&reg;</sup> *DroPix autopilot* is based on the [Pixhawk<sup>&reg;
 
 The DroPix system includes integrated multithreading, a Unix/Linux-like programming environment, completely new autopilot functions such as Lua scripting of missions and flight behavior, and a custom PX4 driver layer ensuring tight timing across all processes.
 
-![Dropix](../../assets/flight_controller/dropix/dropix_flight_controller_hero.jpg)
+![Dropix](images/drones/flight_controller/dropix/dropix_flight_controller_hero.jpg)
 
 :::note
 This flight controller is [manufacturer supported](../flight_controller/autopilot_manufacturer_supported.md).
@@ -62,9 +62,9 @@ This flight controller is [manufacturer supported](../flight_controller/autopilo
 
 The following diagrams show the Dropix connector information (for more information see the [drotek documentation](https://drotek.gitbook.io/dropix-user-guide/)).
 
-<img src="../../assets/flight_controller/dropix/dropix_connectors_front.jpg" alt="front connectors" width="500px" />
+<img src="images/drones/flight_controller/dropix/dropix_connectors_front.jpg" alt="front connectors" width="500px" />
 
-<img src="../../assets/flight_controller/dropix/dropix_connectors_side_and_back.jpg" alt="front connectors" width="500px" />
+<img src="images/drones/flight_controller/dropix/dropix_connectors_side_and_back.jpg" alt="front connectors" width="500px" />
 
 
 ## Building Firmware

@@ -102,7 +102,7 @@ It is rare that a system is setup with an entirely synchronised chain!
 A rough estimate of the delay can be obtained from logs by checking the offset between IMU rates and the EV rates.
 To enable logging of EV rates set bit 7 (Computer Vision and Avoidance) of [SDLOG_PROFILE](../advanced_config/parameter_reference.md#SDLOG_PROFILE).
 
-![ekf2_ev_delay log](../../assets/ekf2/ekf2_ev_delay_tuning.png)
+![ekf2_ev_delay log](images/drones/ekf2/ekf2_ev_delay_tuning.png)
 
 :::note
 A plot of external data vs. onboard estimate (as above) can be generated using [FlightPlot](../log/flight_log_analysis.md#flightplot) or similar flight analysis tools.
@@ -200,7 +200,7 @@ See [REP105: Coordinate Frames for Mobile Platforms](http://www.ros.org/reps/rep
 
 Both frames are shown in the image below (FRD on the left/FLU on the right).
 
-![Reference frames](../../assets/lpe/ref_frames.png)
+![Reference frames](images/drones/lpe/ref_frames.png)
 
 With EKF2 when using external heading estimation, magnetic north can either be ignored and or the heading offset to magnetic north can be calculated and compensated. Depending on your choice the yaw angle is given with respect to either magnetic north or local *x*.
 

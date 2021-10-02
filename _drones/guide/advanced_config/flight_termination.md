@@ -65,4 +65,4 @@ Finally, set the `PWM_AUX_FAILn` and `PWM_MAIN_FAILn` PWM values for any motors.
 
 The diagram below shows the logical flow around flight termination.
 
-![Logic diagram](../../assets/config/flight_termination_logic_diagram.png)
+![Logic diagram](images/drones/config/flight_termination_logic_diagram.png)

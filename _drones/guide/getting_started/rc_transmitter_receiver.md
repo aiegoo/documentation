@@ -14,7 +14,7 @@ An *RC system* has a ground-based *remote control unit* that is used by the oper
 The remote has physical controls that can be used to specify vehicle movement (e.g. speed, direction, throttle, yaw, pitch, roll, etc.) and to enable autopilot [flight modes](../flight_modes/README.md) (e.g. takeoff, land, return to land, mission etc.).
 On *telemetry-enabled* RC systems, the remote control unit can also receive and display information from the vehicle (e.g. battery level, flight mode).
 
-![Taranis X9D Transmitter](../../assets/hardware/transmitters/frsky_taranis_x9d_transmitter.jpg)
+![Taranis X9D Transmitter](images/drones/hardware/transmitters/frsky_taranis_x9d_transmitter.jpg)
 
 The remote control unit contains a radio module that is bound to, and communicates with, a (compatible) radio module on the vehicle.
 The vehicle-based unit is connected to the flight controller.
@@ -41,12 +41,12 @@ Ground vehicles need at least two channels (steering + throttle). An 8 or 16 cha
 The most popular *form* of remote control unit for UAVs is shown below.
 It has separate control sticks for controlling roll/pitch and for throttle/yaw as shown (i.e. aircraft need at least 4 channels).
 
-![RC Basic Commands](../../assets/flying/rc_basic_commands.png)
+![RC Basic Commands](images/drones/flying/rc_basic_commands.png)
 
 There are numerous possible layouts for the control sticks, switches, etc.
 The more common layouts have been given specific "Mode" numbers. *Mode 1* and *Mode 2* (shown below) differ only in the placement of the throttle.
 
-![Mode1-Mode2](../../assets/concepts/mode1_mode2.png)
+![Mode1-Mode2](images/drones/concepts/mode1_mode2.png)
 
 :::note
 The choice of mode is largely one of taste (*Mode 2* is more popular).

@@ -17,7 +17,7 @@ The diagram below provides a detailed overview of the building blocks of PX4.
 The top part of the diagram contains middleware blocks, while the lower
 section shows the components of the flight stack.
 
-![PX4 Architecture](../../assets/diagrams/PX4_Architecture.svg)
+![PX4 Architecture](images/drones/diagrams/PX4_Architecture.svg)
 
 <!-- This diagram can be updated from 
 [here](https://drive.google.com/file/d/0B1TDW9ajamYkaGx3R0xGb1NaeU0/view?usp=sharing) 
@@ -59,7 +59,7 @@ It includes controllers for fixed wing, multirotor and VTOL airframes as well as
 The following diagram shows an overview of the building blocks of the flight stack.
 It contains the full pipeline from sensors, RC input and autonomous flight control (Navigator), down to the motor or servo control (Actuators).
 
-![PX4 High-Level Flight Stack](../../assets/diagrams/PX4_High-Level_Flight-Stack.svg)
+![PX4 High-Level Flight Stack](images/drones/diagrams/PX4_High-Level_Flight-Stack.svg)
 <!-- This diagram can be updated from 
 [here](https://drive.google.com/a/px4.io/file/d/15J0eCL77fHbItA249epT3i2iOx4VwJGI/view?usp=sharing) 
 and opened with draw.io Diagrams. You might need to request access if you

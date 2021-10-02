@@ -10,7 +10,7 @@ It is about 1/3rd the size of the original Pixhawk and has more powerful process
 
 The Pixhawk Mini is based on the PX4 open-hardware project and has been optimized for the PX4 flight stack.
 
-![Pixhawk Mini](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_hero.jpg)
+![Pixhawk Mini](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_hero.jpg)
 
 Wiring information is available [below](#wiring).
 
@@ -105,18 +105,18 @@ The *Pixhawk Mini* is shipped with the following contents:
 
 Component | Image
 --- | --- 
-Pixhawk Mini Autopilot | ![Pixhawk Mini](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_drawing.png)
-GPS module             | ![Compass+GPS module](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_compass_drawing.png) 
-Quad Power Distribution Board        | ![Quad Power Distribution Board](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_quad_power_distribution_board_drawing.png)  
-8 Channel PWM Breakout board         | ![8 Channel PWM Breakout board](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_8_channel_pwm_breakout_board_drawing.png)  
-4-pin cable (for I2C)                | ![4-pin cable (for I2C)](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_4_pin_cable_drawing.png) 
-RC-in cable for PPM/SBUS             | ![RC-in cable for PPM/SBUS](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_rc_in_cable_drawing.png) 
-6 to 6/4 ‘Y’ adapter for GPS and additional I2C devices    | ![6 to 6/4 ‘Y’ adapter](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_6_to_6_and_4_pin_Y_cable_drawing.png) 
-6 pin cable (2)    (for power distribution board and for compass/gps)                   | ![6 pin cable](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_6_pin_cable_drawing.png) 
-6 pin JST to DF13 for legacy telemetry radio      | ![6 pin JST to DF13](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_6pin_JST_to_DF13_cable_drawing.png)
-Safety switch                        | ![Safety switch](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_safety_switch_drawing.png)
-8 Channel PWM Breakout cable         | ![8 Channel PWM Breakout cable](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_8channel_pwm_breakout_cable_drawing.png)
-Mounting foam                        | ![Mounting foam](../../assets/hardware/mounting/3dr_anti_vibration_mounting_foam.png) 
+Pixhawk Mini Autopilot | ![Pixhawk Mini](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_drawing.png)
+GPS module             | ![Compass+GPS module](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_compass_drawing.png) 
+Quad Power Distribution Board        | ![Quad Power Distribution Board](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_quad_power_distribution_board_drawing.png)  
+8 Channel PWM Breakout board         | ![8 Channel PWM Breakout board](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_8_channel_pwm_breakout_board_drawing.png)  
+4-pin cable (for I2C)                | ![4-pin cable (for I2C)](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_4_pin_cable_drawing.png) 
+RC-in cable for PPM/SBUS             | ![RC-in cable for PPM/SBUS](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_rc_in_cable_drawing.png) 
+6 to 6/4 ‘Y’ adapter for GPS and additional I2C devices    | ![6 to 6/4 ‘Y’ adapter](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_6_to_6_and_4_pin_Y_cable_drawing.png) 
+6 pin cable (2)    (for power distribution board and for compass/gps)                   | ![6 pin cable](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_6_pin_cable_drawing.png) 
+6 pin JST to DF13 for legacy telemetry radio      | ![6 pin JST to DF13](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_6pin_JST_to_DF13_cable_drawing.png)
+Safety switch                        | ![Safety switch](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_safety_switch_drawing.png)
+8 Channel PWM Breakout cable         | ![8 Channel PWM Breakout cable](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_8channel_pwm_breakout_cable_drawing.png)
+Mounting foam                        | ![Mounting foam](images/drones/hardware/mounting/3dr_anti_vibration_mounting_foam.png) 
 I2C breakout board ? - not listed  parts on handout |  - 
  
 
@@ -145,7 +145,7 @@ I2C breakout board ? - not listed  parts on handout |  -
 
 ## Connector pin assignments (pin outs)
 
-![Pixhawk Mini - Connector Pinouts](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_pinout.png)
+![Pixhawk Mini - Connector Pinouts](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_pinout.png)
 
 ## Product comparisons
 
@@ -196,7 +196,7 @@ This quick start guide shows how power the [Pixhawk Mini](../flight_controller/p
 The image below shows standard *quadcopter* wiring using the *Pixhawk Mini Kit* and 3DR Telemetry Radios (along with ESC, motor, battery and a ground control station running on a phone). 
 We'll go through each main part in the following sections.
 
-![Pixhawk Mini Electronics Wiring for QAV250 (off frame)](../../assets/airframes/multicopter/lumenier_qav250_pixhawk_mini/qav250_wiring_image_pixhawk_mini.jpg)
+![Pixhawk Mini Electronics Wiring for QAV250 (off frame)](images/drones/airframes/multicopter/lumenier_qav250_pixhawk_mini/qav250_wiring_image_pixhawk_mini.jpg)
 
 :::note
 The output wiring/powering is slightly different for other types of vehicles. This is covered in more detail below for VTOL, Plane, Copter.
@@ -209,9 +209,9 @@ vibration-damping foam pads (included in the kit). It should be
 positioned as close to your vehicle’s center of gravity as possible, oriented top-side up 
 with the arrow points towards the front of the vehicle.
 
-![Pixhawk Mini recommended orientation](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_mounting_arrow.jpg)
+![Pixhawk Mini recommended orientation](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_mounting_arrow.jpg)
 
-![Mounting foam](../../assets/hardware/mounting/3dr_anti_vibration_mounting_foam.png)
+![Mounting foam](images/drones/hardware/mounting/3dr_anti_vibration_mounting_foam.png)
 
 :::note
 If the controller cannot be mounted in the recommended/default orientation (e.g. due to space constraints) you will need to configure the autopilot software with the orientation that you actually used: [Flight Controller Orientation](../config/flight_controller_orientation.md).
@@ -222,7 +222,7 @@ If the controller cannot be mounted in the recommended/default orientation (e.g
 Attach the 3DR GPS + Compass to the Pixhawk Mini's **GPS&I2C** port (top right) using the supplied 6 pin cable.
 The GPS/Compass should be mounted on the frame as far away from other electronics as possible, facing the front of the vehicle (separating the compass from other electronics will reduce interference).
 
-![Connecting compass/GPS to Pixhawk Mini](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_with_compass.jpg)
+![Connecting compass/GPS to Pixhawk Mini](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_with_compass.jpg)
 
 NOTE - INSERT IMAGE SHOWING BOTH PORTS? OR FRONT-FACING image of GPS&I2C
 
@@ -239,7 +239,7 @@ The *Quad Power Distribution Board* includes a power module (PM) that is suitabl
 The *3DR 10S Power Module* (Discontinued) is recommended if you need more power.
 :::
 
-![Pixhawk Mini - Powering](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_powering_quad_board.jpg)
+![Pixhawk Mini - Powering](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_powering_quad_board.jpg)
 
 The *Pixhawk Mini* is powered through the **PM** port.
 When using a power module (as in this case) the port will also read analog voltage and current measurements.
@@ -260,11 +260,11 @@ Pixhawk Mini supports many different radio receiver models:
 
 - Spektrum and DSM receivers connect to the **SPKT/DSM** input.
 
-  <img src="../../assets/flight_controller/pixhawk_mini/pixhawk_mini_port_spkt_dsm.png" width="350px" title="Pixhawk Mini - Radio port for Spektrum receivers" />
+  <img src="images/drones/flight_controller/pixhawk_mini/pixhawk_mini_port_spkt_dsm.png" width="350px" title="Pixhawk Mini - Radio port for Spektrum receivers" />
   
 - PPM-SUM and S.BUS receivers connect to the **RCIN** port.
 
-  <img src="../../assets/flight_controller/pixhawk_mini/pixhawk_mini_port_rcin.png" width="350px" title="Pixhawk Mini - Radio port for PPM receivers" />
+  <img src="images/drones/flight_controller/pixhawk_mini/pixhawk_mini_port_rcin.png" width="350px" title="Pixhawk Mini - Radio port for PPM receivers" />
 
 - PPM and PWM receivers that have an *individual wire for each channel* must connect to the **RCIN** port *via a PPM encoder* [like this one](http://www.getfpv.com/radios/radio-accessories/holybro-ppm-encoder-module.html) (PPM-Sum receivers use a single signal wire for all channels).
 
@@ -277,7 +277,7 @@ For more information about selecting a radio system, receiver compatibility, and
 The controller has an integrated safety switch that you can use for motor activation once the autopilot is ready to take off.
 If this switch is hard to access on a particular vehicle you can attach the (optional) external safety button, as shown below.
 
-![Pixhawk Mini - Optional Switch](../../assets/flight_controller/pixhawk_mini/pixhawk_mini_safety_switch_wiring.jpg) 
+![Pixhawk Mini - Optional Switch](images/drones/flight_controller/pixhawk_mini/pixhawk_mini_safety_switch_wiring.jpg) 
 
 
 ### Telemetry Radios
@@ -303,7 +303,7 @@ Notes:
 * Pixhawk Mini cannot be used for QuadPlane VTOL airframes. This is because QuadPlane requires 9 outputs (4 Main, 5 AUX) and the Pixhawk Mini only has 8 outputs (8 Main).
 
   
-<img src="../../assets/flight_controller/pixhawk_mini/pixhawk_mini_port_main_out.png" width="350px" title="Pixhawk Mini - port for motors/servos" />
+<img src="images/drones/flight_controller/pixhawk_mini/pixhawk_mini_port_main_out.png" width="350px" title="Pixhawk Mini - port for motors/servos" />
 
 ### Other Peripherals
 

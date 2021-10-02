@@ -11,8 +11,8 @@ Key information:
 
 @[youtube](https://youtu.be/wMYgqvsNEwQ)
 
-![QAV Racer complete](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/preview.jpg)
-![QAV Racer complete 2](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/preview2.jpg)
+![QAV Racer complete](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/preview.jpg)
+![QAV Racer complete 2](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/preview2.jpg)
 
 
 ## Parts List
@@ -79,12 +79,12 @@ First I cut all three motor cables to directly fit when the ESCs are mounted on 
 Then I soldered them in the order they come out of the motor to the output contacts of the ESCs which are oriented with the switching MOS-FETs facing upwards to get good air cooling during flight.
 Choosing this cable order resulted in all the motors spinning counter-clockwise in my tests and I switched where necessary the direction of rotation by bridging the dedicated [JP1 solder jumper](https://1.bp.blogspot.com/-JZoWC1LjLis/VtMP6XdU9AI/AAAAAAAAAiU/4dygNp0hpwc/s640/KISS-ESC-2-5S-24A-race-edition-32bit-brushless-motor-ctrl.jpg) to conform the [Quadrotor x configuration](../airframes/airframe_reference.md#quadrotor-x).
 
-![Power motor connections](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/power-motor-connections.jpg)
+![Power motor connections](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/power-motor-connections.jpg)
 
 ### Power Module
 First I soldered the XT60 connector which comes with the frame to the labeled battery side of the *ACSP5 power module* that was shipped with the Pixracer and added the elco capacitor delivered with the power module with the correct polarity to the same side.
 
-![ACSP5 power module](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/acsp5_power_module.jpg)
+![ACSP5 power module](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/acsp5_power_module.jpg)
 
 Now comes the tricky part. I soldered all four ESC voltage source + and - ports to the corresponding pad on the labeled ESC output side of the power module.
 Make sure to not have any cold solder joint here because the quad will not end up well with a loose connection in flight.
@@ -95,7 +95,7 @@ If you are also including the FPV parts don't forget to also solder your JST mal
 You'll need it for your [FPV setup](#fpv-setup) later on.
 :::
 
-![Power module](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/power-module.jpg)
+![Power module](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/power-module.jpg)
 
 ### Signal Cables
 
@@ -104,11 +104,11 @@ Only the labeled `PWM` port on the [KISS ESCs](https://1.bp.blogspot.com/-0huvLX
 They will be connected to the correct motor signal output of the pixracer.
 The `TLM` port is for ESC telemetry and I soldered them on for future use as the needed protocol is not currently supported by PX4.
 
-![Power ESC signals](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/power-esc-signals.jpg)
+![Power ESC signals](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/power-esc-signals.jpg)
 
 I tested all ESC motor pairs and their rotation directions using a cheap PWM servo tester before proceeding further.
 
-![Motor test](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/motor-test.jpg)
+![Motor test](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/motor-test.jpg)
 
 <span id="mounting"></span>
 ## Connecting & Mounting Electronics
@@ -129,10 +129,10 @@ The board should not dangle in any way but be slightly movable if you apply forc
 This can heavily influence the vibration noise level your gyroscope and accelerometer sensors measure during flight.
 :::
 
-![](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/mount-oring.jpg)
+![](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/mount-oring.jpg)
 
-![Center connections](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/center-connections.jpg)
-![Center overview](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/center-overview.jpg)
+![Center connections](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/center-connections.jpg)
+![Center overview](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/center-overview.jpg)
 
 ### RC Receiver
 
@@ -142,21 +142,21 @@ For the smart telemetry port I used the cable shipping with the receiver.
 I removed all unnecessary pins from the connector using tweezers and switched the white loose end cable to the correct pin of the connector to have the "smart" signal connected.
 I then soldered the loose end to a cable fitting the FrSky port following this schematic:
 
-![schematic](../../assets/flight_controller/pixracer/grau_b_pixracer_frskys.port_connection.jpg)
+![schematic](images/drones/flight_controller/pixracer/grau_b_pixracer_frskys.port_connection.jpg)
 
 I also skipped the ground (GND) pin because like the voltage supply positive pin it is already connected through the RCin S-BUS cable.
 
-![](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/rc-receiver-connections.jpg)
+![](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/rc-receiver-connections.jpg)
 
 ### RC Antenna Mount
 
 To have a good RC link while not risking to have the antenna in the props I employed a rugged mount method using heat shrinks and zip ties.
 
-![](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/rc-antenna-mount-material.jpg)
+![](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/rc-antenna-mount-material.jpg)
 
 For this method you cut the big end with the hole off the zip tie, put the rest together with the antenna cable through a long heat shrink and mount this to your frame spacers using a bigger but shorter heat shrink.
 
-![](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/rc-antenna-mount.jpg)
+![](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/rc-antenna-mount.jpg)
 
 ### ESC Signal
 
@@ -204,18 +204,18 @@ The transmitter LED should light up.
 Use your 5.8GHz receiver device tuned in to the correct channel to check for the video.
 To configure the transmitter to an other channel and adjust the transmission power please refer to the [Tramp HV User Manual](https://www.immersionrc.com/?download=5016).
 
-![FPV wiring](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/fpv-wiring.jpg)
+![FPV wiring](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/fpv-wiring.jpg)
 
 Like you can see I mounted the transmitter from the inside to the "roof" of the frame using a ziptie.
 Always put a self sticking piece of foam in between when mounting electronics like this to avoid physical damage during flight.
 Make sure to place the transmitter such that the antenna connector fits to the dedicated hole of the frame.
 
-![Transmitter](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/fpv-tx.jpg)
+![Transmitter](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/fpv-tx.jpg)
 
 The magnificent FPV camera set in the part list comes not only with the best FPV lens I've seen so far but also includes multiple camera mounts one of which is very flexible for adjusting the camera angle and nicely fits into the QAV-R frame.
 I mounted it like you can see in the next picture. The two screws and nuts to lock the camera mount to the frame were taken from the spare ones remaining from the frame set.
 
-![Camera](../../assets/airframes/multicopter/qav_r_5_kiss_esc_racer/fpv-cam.jpg)
+![Camera](images/drones/airframes/multicopter/qav_r_5_kiss_esc_racer/fpv-cam.jpg)
 
 ## Software Configuration
 

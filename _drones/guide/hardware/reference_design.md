@@ -24,7 +24,7 @@ FMU generations 1-3 were designed as open hardware, while FMU generations 4 and 
 
 The diagram below shows the division of bus and functional responsibilities between the FMU and I/O boards in a Pixhawk-series flight controller (the boards are incorporated into a single physical module).
 
-![PX4 Main/IO Functional Breakdown](../../assets/diagrams/px4_fmu_io_functions.png)
+![PX4 Main/IO Functional Breakdown](images/drones/diagrams/px4_fmu_io_functions.png)
 
 <!-- Draw.io version of file can be found here: https://drive.google.com/file/d/1H0nK7Ufo979BE9EBjJ_ccVx3fcsilPS3/view?usp=sharing -->
 

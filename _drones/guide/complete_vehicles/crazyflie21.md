@@ -16,7 +16,7 @@ Crazyflie 2.1 is only able to fly in [Manual/Stabilized mode](../flight_modes/ma
 The Crazyflie line of micro quads was created by Bitcraze AB.
 An overview of the Crazyflie 2.1 can be [found here](https://www.bitcraze.io/products/crazyflie-2-1/).
 
-![Crazyflie2 Image](../../assets/flight_controller/crazyflie21/crazyflie_2.1.jpg)
+![Crazyflie2 Image](images/drones/flight_controller/crazyflie21/crazyflie_2.1.jpg)
 
 
 ## Quick Summary
@@ -77,7 +77,7 @@ After setting up the PX4 development environment, follow these steps to install 
    - Ensure it is initially unpowered.
    - Ensure battery is disconnected.
    - Hold down the reset button (see figure below...).
-     ![Crazyflie2 Reset Button](../../assets/flight_controller/crazyflie/crazyflie_reset_button.jpg)
+     ![Crazyflie2 Reset Button](images/drones/flight_controller/crazyflie/crazyflie_reset_button.jpg)
    - Plug into computer's USB port.
    - After a second, the blue LED should start blinking and after 5 seconds should start blinking faster.
    - Release button.
@@ -202,7 +202,7 @@ make venv
 :::note
 The Joystick menu in QGC, only appears after you connect the controller to the PC (for example a Playstation 3 controller).
 
-![QGC joystick menu](../../assets/flight_controller/crazyflie21/joystick_menu_qgc.png)
+![QGC joystick menu](images/drones/flight_controller/crazyflie21/joystick_menu_qgc.png)
 :::
 
 ## Hardware Setup
@@ -211,7 +211,7 @@ Crazyflie 2.1 is only able to fly in [Stabilized mode](../flight_modes/manual_st
 
 In order to log flight details, you can mount SD card deck on top of crazyflie as shown below:
 
-![Crazyflie SDCard](../../assets/flight_controller/crazyflie21/crazyflie21_sd.jpeg)
+![Crazyflie SDCard](images/drones/flight_controller/crazyflie21/crazyflie21_sd.jpeg)
 
 ## Using FrSky Taranis RC Transmitter as Joystick
 
@@ -219,27 +219,27 @@ If you already own a Taranis RC transmitter and want to use it as a controller, 
 
 - Create a new model in Taranis.
 
-  ![Taranis - new model](../../assets/flight_controller/crazyflie/taranis_model.jpg)
+  ![Taranis - new model](images/drones/flight_controller/crazyflie/taranis_model.jpg)
 
 - In *MODEL SETUP* menu page, turn off both internal and external TX modules.
 
-  ![Taranis - model setup](../../assets/flight_controller/crazyflie/taranis_model_setup.jpg)
+  ![Taranis - model setup](images/drones/flight_controller/crazyflie/taranis_model_setup.jpg)
 
 - In *OUTPUTS* menu page (also called “SERVOS” page in some Taranis transmitters), invert Throttle (CH1) and Aileron (CH3).
 
-  ![Taranis - outputs](../../assets/flight_controller/crazyflie/taranis_outputs.jpg)
+  ![Taranis - outputs](images/drones/flight_controller/crazyflie/taranis_outputs.jpg)
   
 
 To use Taranis switches to arm/disarm and switch to different flight modes:
 
 - In Taranis UI *MIXER* menu page, you can assign the switches to any channel in the range channel 9-16 which map to the buttons 0-7 in the QGroundControl Joystick setup. For example, Taranis “SD” switch can be set to channel 9 in Taranis UI:
 
-  ![Taranis switch setup](../../assets/flight_controller/crazyflie/taranis_switch_setup.jpg)
+  ![Taranis switch setup](images/drones/flight_controller/crazyflie/taranis_switch_setup.jpg)
 
 - Connect Taranis to PC with a USB cable and Open QGroundControl. 
 - In QGroundControl Joystick Setup, you can see the buttons turning yellow when you switch them on. For example, channel 9 in Taranis maps to button 0 in QGroundControl Joystick setup. You can assign any mode to this button e.g. *Altitude* mode. Now when you lower the switch "SD", flight mode will change to *Altitude*.
 
-  ![Joystick setup](../../assets/flight_controller/crazyflie/crazyflie_QGCjoystick_setup.png)
+  ![Joystick setup](images/drones/flight_controller/crazyflie/crazyflie_QGCjoystick_setup.png)
 
 ### ROS
 

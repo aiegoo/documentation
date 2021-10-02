@@ -58,7 +58,7 @@ This means that either the code must wait between publishing multiple debug mess
 
 The result in QGroundControl then looks like this on the real-time plot:
 
-![QGC debugvalue plot](../../assets/gcs/qgc-debugval-plot.jpg)
+![QGC debugvalue plot](images/drones/gcs/qgc-debugval-plot.jpg)
 
 
 ## Tutorial: Receive String / Float Pairs

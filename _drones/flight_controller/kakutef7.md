@@ -18,7 +18,7 @@ Contact the [manufacturer](https://shop.holybro.com/) for hardware support or co
 
 The *Kakute F7* from Holybro is a flight controller board designed for racers.
 
-<img src="../../assets/flight_controller/kakutef7/board.jpg" width="400px" title="Kakute F7" />
+<img src="images/drones/flight_controller/kakutef7/board.jpg" width="400px" title="Kakute F7" />
 
 
 :::note
@@ -55,7 +55,7 @@ The *Kakute F7* is designed to work with the *Tekko32* 4-in-1 ESC and they can b
 
 This is the silkscreen for the *Kakute F7*, showing the top of the board:
 
-![Kakute F7 Silkscreen](../../assets/flight_controller/kakutef7/silk.png)
+![Kakute F7 Silkscreen](images/drones/flight_controller/kakutef7/silk.png)
 
 
 | Pin              | Function                              | PX4 default |
@@ -145,5 +145,5 @@ The  [SWD interface](../debug/swd_debug.md) (JTAG) pins are:
 
 These are shown below.
 
-![SWD Pins on Kakute F7 - CLK SWO](../../assets/flight_controller/kakutef7/debug_swd_port.jpg) ![SWD Pins on Kakute F7:  GND and VDD_3V3](../../assets/flight_controller/kakutef7/debug_swd_port_gnd_vcc3_3.jpg)
+![SWD Pins on Kakute F7 - CLK SWO](images/drones/flight_controller/kakutef7/debug_swd_port.jpg) ![SWD Pins on Kakute F7:  GND and VDD_3V3](images/drones/flight_controller/kakutef7/debug_swd_port_gnd_vcc3_3.jpg)
 

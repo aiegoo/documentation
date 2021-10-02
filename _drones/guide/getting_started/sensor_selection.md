@@ -25,7 +25,7 @@ We recommend the use of an external "combined" compass/GPS module mounted as far
 
 Common GPS/compass hardware options are listed in: [GPS/Compass](../gps_compass/README.md).
 
-![GPS + Compass](../../assets/hardware/gps/gps_compass.jpg)
+![GPS + Compass](images/drones/hardware/gps/gps_compass.jpg)
 
 
 ## Airspeed
@@ -34,7 +34,7 @@ Airspeed sensors are *highly recommended* for fixed-wing and VTOL frames.
 
 They are so important because the autopilot does not have other means to detect stall. For fixed-wing flight it is the airspeed that guarantees lift not ground speed!
 
-![Digital airspeed sensor](../../assets/hardware/sensors/airspeed/digital_airspeed_sensor.jpg)
+![Digital airspeed sensor](images/drones/hardware/sensors/airspeed/digital_airspeed_sensor.jpg)
 
 For more information and recommended hardware see: [Airspeed Sensors](../sensor/airspeed.md).
 
@@ -42,7 +42,7 @@ For more information and recommended hardware see: [Airspeed Sensors](../sensor/
 
 Tachometers ([revolution-counter sensors](https://en.wikipedia.org/wiki/Tachometer#In_automobiles,_trucks,_tractors_and_aircraft)) are *highly recommended* for rotor-wing frames because they allow the autopilot to detect stall or another rotor failure (for rotor-wing flight it is the rotation of blades that guarantees lift not airspeed or ground speed).
 
-![Digital RPM Sensor - TFRPM01A](../../assets/hardware/sensors/tfrpm/tfrpm01_electronics.jpg)
+![Digital RPM Sensor - TFRPM01A](images/drones/hardware/sensors/tfrpm/tfrpm01_electronics.jpg)
 
 For more information and recommended hardware see: [Sensors > Tachometers](../sensor/tachometers.md).
 
@@ -54,7 +54,7 @@ Distance sensors are used for precision landing, object avoidance and terrain fo
 PX4 supports many affordable distance sensors, using different technologies, and supporting different ranges and features.
 For more information see: [Distance Sensors](../sensor/rangefinders.md).
 
-<img src="../../assets/hardware/sensors/lidar_lite/lidar_lite_1.png" title="lidar_lite_1" width="500px" />
+<img src="images/drones/hardware/sensors/lidar_lite/lidar_lite_1.png" title="lidar_lite_1" width="500px" />
 
 ## Optical Flow
 
@@ -62,7 +62,7 @@ For more information see: [Distance Sensors](../sensor/rangefinders.md).
 PX4 blends the sensor output with information from other position sources (e.g. GPS) to provide a more accurate position lock. 
 This sensor can be used indoors, when no GPS signal is available.
 
-![px4flow-bottom](../../assets/hardware/sensors/px4flow/px4flow_bottom.jpg) 
+![px4flow-bottom](images/drones/hardware/sensors/px4flow/px4flow_bottom.jpg) 
 
 Some options include:
 - [PX4Flow](../sensor/px4flow.md) based flow sensors, which have an integrated sonar sensor.

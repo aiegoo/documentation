@@ -39,7 +39,7 @@ The diagram below shows the simulation environment:
 * *Gazebo* and *jMAVSim* can also connect to an offboard API and bridge MAVLink messages to PX4.
 * (Optional) A serial connection can be used to connect Joystick/Gamepad hardware via *QGroundControl*.
 
-![HITL Setup - jMAVSim and Gazebo](../../assets/simulation/px4_hitl_overview_jmavsim_gazebo.png)
+![HITL Setup - jMAVSim and Gazebo](images/drones/simulation/px4_hitl_overview_jmavsim_gazebo.png)
 
 
 ## HITL vs SITL
@@ -63,18 +63,18 @@ In summary, HITL runs PX4 on the actual hardware using standard firmware, but SI
    1. Open **Setup > Safety** section.
    1. Enable HITL mode by selecting **Enabled** from the *HITL Enabled* list:
 
-      ![QGroundControl HITL configuration](../../assets/gcs/qgc_hitl_config.png)
+      ![QGroundControl HITL configuration](images/drones/gcs/qgc_hitl_config.png)
 1. Select Airframe
    1. Open **Setup > Airframes**
    1. Select a [compatible airframe](#compatible_airframe) you want to test.
       Then click **Apply and Restart** on top-right of the *Airframe Setup* page.
 
-      ![Select Airframe](../../assets/gcs/qgc_hil_config.png)
+      ![Select Airframe](images/drones/gcs/qgc_hil_config.png)
 1. Calibrate your RC or Joystick, if needed.
 1. Setup UDP
    1. Under the *General* tab of the settings menu, uncheck all *AutoConnect* boxes except for **UDP**.
 
-      ![QGC Auto-connect settings for HITL](../../assets/gcs/qgc_hitl_autoconnect.png)
+      ![QGC Auto-connect settings for HITL](images/drones/gcs/qgc_hitl_autoconnect.png)
 1. (Optional) Configure Joystick and Failsafe.
    Set the following [parameters](../advanced_config/parameters.md) in order to use a joystick instead of an RC remote control transmitter:
    * [COM_RC_IN_MODE](../advanced_config/parameter_reference.md#COM_RC_IN_MODE) to "Joystick/No RC Checks". This allows joystick input and disables RC input checks.

@@ -22,7 +22,7 @@ The PX4 development team recommend that all users [upgrade to ROS 2](../ros/ros2
 
 The application pipeline for ROS (1) bridged over ROS 2 is shown below.
 
-![Architecture with ROS](../../assets/middleware/micrortps/architecture_ros.png)
+![Architecture with ROS](images/drones/middleware/micrortps/architecture_ros.png)
 
 Essentially it is the same as for ROS 2, except that there is an additional [`ros1_bridge`](https://github.com/ros2/ros1_bridge) package (by Open Robotics) that translates messages between the two versions.
 This is needed because the original version of ROS does not support RTPS.

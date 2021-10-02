@@ -12,42 +12,42 @@ The source code for supported worlds can be found on GitHub here: [PX4/sitl_gaze
 
 [PX4/sitl_gazebo/worlds/empty.world](https://github.com/PX4/sitl_gazebo/blob/master/worlds/empty.world)
 
-![empty](../../assets/simulation/gazebo/worlds/empty.png)
+![empty](images/drones/simulation/gazebo/worlds/empty.png)
 
 ## Baylands
 
 [PX4/sitl_gazebo/worlds/baylands.world](https://github.com/PX4/sitl_gazebo/blob/master/worlds/baylands.world)
 
-![Baylands World](../../assets/simulation/gazebo/worlds/baylands.jpg)
+![Baylands World](images/drones/simulation/gazebo/worlds/baylands.jpg)
 
 ## KSQL Airport
 
 [PX4/sitl_gazebo/worlds/ksql_airport.world](https://github.com/PX4/sitl_gazebo/blob/master/worlds/ksql_airport.world)
 
-![KSQL Airport World](../../assets/simulation/gazebo/worlds/ksql_airport.jpg)
+![KSQL Airport World](images/drones/simulation/gazebo/worlds/ksql_airport.jpg)
 
 ## McMillan Airfield
 
 [PX4/sitl_gazebo/worlds/mcmillan_airfield.world](https://github.com/PX4/sitl_gazebo/blob/master/worlds/mcmillan_airfield.world)
 
-![McMillan Airfield World](../../assets/simulation/gazebo/worlds/mcmillan_airfield.jpg)
+![McMillan Airfield World](images/drones/simulation/gazebo/worlds/mcmillan_airfield.jpg)
 
 ## Sonoma Raceway
 
 [PX4/sitl_gazebo/worlds/sonoma_raceway.world](https://github.com/PX4/sitl_gazebo/blob/master/worlds/sonoma_raceway.world)
-![Sonoma_Raceway](../../assets/simulation/gazebo/worlds/sonoma_raceway.png)
+![Sonoma_Raceway](images/drones/simulation/gazebo/worlds/sonoma_raceway.png)
 
 ## Warehouse
 
 [PX4/sitl_gazebo/worlds/warehouse.world](https://github.com/PX4/sitl_gazebo/blob/master/worlds/warehouse.world)
 
-![Warehouse](../../assets/simulation/gazebo/worlds/warehouse.png)
+![Warehouse](images/drones/simulation/gazebo/worlds/warehouse.png)
 
 ## Yosemite
 
 [PX4/sitl_gazebo/worlds/yosemite.world](https://github.com/PX4/sitl_gazebo/blob/master/worlds/yosemite.world)
 
-![Yosemite](../../assets/simulation/gazebo/worlds/yosemite.jpg)
+![Yosemite](images/drones/simulation/gazebo/worlds/yosemite.jpg)
 
 <a id="model_specific_worlds"></a>
 ## Model Specific Worlds

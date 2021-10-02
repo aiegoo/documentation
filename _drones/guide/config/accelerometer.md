@@ -26,7 +26,7 @@ The calibration steps are:
 1. Select the **Gear** icon (Vehicle Setup) in the top toolbar and then **Sensors** in the sidebar.
 1. Click the **Accelerometer** sensor button.
 
-   ![Accelerometer calibration](../../assets/qgc/setup/sensor/accelerometer.jpg)
+   ![Accelerometer calibration](images/drones/qgc/setup/sensor/accelerometer.jpg)
    
    :::note
    You should already have set the [Autopilot Orientation](../config/flight_controller_orientation.md).
@@ -38,7 +38,7 @@ The calibration steps are:
    Once prompted (the orientation-image turns yellow) hold the vehicle still.
    Once the calibration is complete for the current orientation the associated image on the screen will turn green.
   
-  ![Accelerometer calibration](../../assets/qgc/setup/sensor/accelerometer_positions_px4.jpg)
+  ![Accelerometer calibration](images/drones/qgc/setup/sensor/accelerometer_positions_px4.jpg)
   
 1. Repeat the calibration process for all vehicle orientations.
    

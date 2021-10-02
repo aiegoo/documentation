@@ -25,7 +25,7 @@ The board is based on the [Pixhawk-project](https://pixhawk.org/) **FMUv5** open
 It runs PX4 on the [NuttX](https://nuttx.apache.org/) OS, and is fully compatible with PX4 firmware.
 It is intended primarily for academic and commercial developers.
 
-![CUAV v5](../../assets/flight_controller/cuav_v5/pixhack_v5.jpg)
+![CUAV v5](images/drones/flight_controller/cuav_v5/pixhack_v5.jpg)
 
 ## Quick Summary
 
@@ -68,7 +68,7 @@ Order from [CUAV](https://cuav.taobao.com/index.htm?spm=2013.1.w5002-16371268426
 
 ## Connection
 
-![CUAV v5](../../assets/flight_controller/cuav_v5/pixhack_v5_connector.jpg)
+![CUAV v5](images/drones/flight_controller/cuav_v5/pixhack_v5_connector.jpg)
 
 :::warning
 The RCIN interface is limited to powering the rc receiver and cannot be connected to any power/load.
@@ -110,7 +110,7 @@ Both ports have standard serial pins and can be connected to a standard FTDI cab
 
 The pinout is as shown.
 
-![CUAV v5 debug](../../assets/flight_controller/cuav_v5/pixhack_v5_debug.jpg)
+![CUAV v5 debug](images/drones/flight_controller/cuav_v5/pixhack_v5_debug.jpg)
 
 
 pin | CUAV v5 debug 

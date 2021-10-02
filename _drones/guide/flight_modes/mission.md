@@ -1,6 +1,6 @@
 # Mission Mode
 
-[<img src="../../assets/site/position_fixed.svg" title="Position fix required (e.g. GPS)" width="30px" />](../getting_started/flight_modes.md#key_position_fixed)
+[<img src="images/drones/site/position_fixed.svg" title="Position fix required (e.g. GPS)" width="30px" />](../getting_started/flight_modes.md#key_position_fixed)
 
 *Mission mode* causes the vehicle to execute a predefined autonomous [mission](../flying/missions.md) (flight plan) that has been uploaded to the flight controller. 
 The mission is typically created and uploaded with a Ground Control Station (GCS) application like [QGroundControl](https://docs.qgroundcontrol.com/en/) (QGC).
@@ -152,7 +152,7 @@ MC vehicles will change the *speed* when approaching or leaving a waypoint based
 The vehicle will follow a smooth rounded curve towards the next waypoint (if one is defined) defined by the acceptance radius ([NAV_ACC_RAD](../advanced_config/parameter_reference.md#NAV_ACC_RAD)).
 The diagram below shows the sorts of paths that you might expect.
 
-![acc-rad](../../assets/flying/acceptance_radius_mission.png)
+![acc-rad](images/drones/flying/acceptance_radius_mission.png)
 
 Vehicles switch to the next waypoint as soon as they enter the acceptance radius:
 - For MC this radius is defined by [NAV_ACC_RAD](../advanced_config/parameter_reference.md#NAV_ACC_RAD).

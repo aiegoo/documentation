@@ -23,7 +23,7 @@ The controller can be used as a drop-in replacement for the 3DR<sup>&reg;</sup> 
 The main difference is that it is based on the [Pixhawk-project](https://pixhawk.org/) **FMUv3** open hardware design, which corrects a bug that limited the original Pixhawk 1 to 1MB of flash.
 :::
 
-![mRo Pixhawk Image](../../assets/flight_controller/mro/mro_pixhawk.jpg)
+![mRo Pixhawk Image](images/drones/flight_controller/mro/mro_pixhawk.jpg)
 
 Assembly/setup instructions for use with PX4 are provided here: [Pixhawk Wiring Quickstart](../assembly/quick_start_pixhawk.md)
 

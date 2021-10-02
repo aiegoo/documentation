@@ -11,7 +11,7 @@ The *daily build* includes development tools that hidden in release builds.
 It may also provide access to new PX4 features that are not yet supported in release builds.
 :::
 
-![QGroundControl](../../assets/toolchain/qgc_goto.jpg)
+![QGroundControl](images/drones/toolchain/qgc_goto.jpg)
 
 
 ## IDE / Code Editors

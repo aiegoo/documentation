@@ -8,7 +8,7 @@ Contact the [manufacturer](https://store.mrobotics.io/) for hardware support or 
 The Pixhawk<sup>&reg;</sup> XRacer board family is optimized for small racing quads and planes.
 In contrast to [Pixfalcon](../flight_controller/pixfalcon.md) and [Pixhawk](../flight_controller/pixhawk.md) it has in-built Wifi, new sensors, convenient full servo headers, CAN and supports 2M flash.
 
-<img src="../../assets/flight_controller/pixracer/pixracer_hero_grey.jpg" width="300px" title="pixracer + 8266 grey" />
+<img src="images/drones/flight_controller/pixracer/pixracer_hero_grey.jpg" width="300px" title="pixracer + 8266 grey" />
 
 :::tip
 This autopilot is [supported](../flight_controller/autopilot_pixhawk_standard.md) by the PX4 maintenance and test teams.
@@ -62,17 +62,17 @@ Setup and telemetry are already available, firmware upgrade is already supported
 
 ## Wiring Diagrams
 
-![Grau setup pixracer top](../../assets/flight_controller/pixracer/grau_setup_pixracer_top.jpg)
+![Grau setup pixracer top](images/drones/flight_controller/pixracer/grau_setup_pixracer_top.jpg)
 
-![Grau setup pixracer bottom](../../assets/flight_controller/pixracer/grau_setup_pixracer_bottom.jpg)
+![Grau setup pixracer bottom](images/drones/flight_controller/pixracer/grau_setup_pixracer_bottom.jpg)
 
-![setup pixracer GPS](../../assets/flight_controller/pixracer/grau_setup_pixracer_gps.jpg)
+![setup pixracer GPS](images/drones/flight_controller/pixracer/grau_setup_pixracer_gps.jpg)
 
-![Grau b Pixracer FrSkyS.Port Connection](../../assets/flight_controller/pixracer/grau_b_pixracer_frskys.port_connection.jpg)
+![Grau b Pixracer FrSkyS.Port Connection](images/drones/flight_controller/pixracer/grau_b_pixracer_frskys.port_connection.jpg)
 
-![Grau ACSP4 2 roh](../../assets/flight_controller/pixracer/grau_acsp4_2_roh.jpg)
+![Grau ACSP4 2 roh](images/drones/flight_controller/pixracer/grau_acsp4_2_roh.jpg)
 
-![Grau ACSP5 roh](../../assets/flight_controller/pixracer/grau_acsp5_roh.jpg)
+![Grau ACSP5 roh](images/drones/flight_controller/pixracer/grau_acsp5_roh.jpg)
 
 
 ## Connectors 
@@ -82,11 +82,11 @@ Unless noted otherwise all connectors are JST GH.
 
 ## Pinouts
 
-![Pixracer top pinouts](../../assets/flight_controller/pixracer/pixracer_r09_top_pinouts.jpg)
+![Pixracer top pinouts](images/drones/flight_controller/pixracer/pixracer_r09_top_pinouts.jpg)
 
-![Pixracer bottom pinouts](../../assets/flight_controller/pixracer/pixracer_r09_bot_pinouts.jpg)
+![Pixracer bottom pinouts](images/drones/flight_controller/pixracer/pixracer_r09_bot_pinouts.jpg)
 
-![Pixracer esp](../../assets/flight_controller/pixracer/pixracer_r09_esp_01.jpg)
+![Pixracer esp](images/drones/flight_controller/pixracer/pixracer_r09_esp_01.jpg)
 
 
 #### TELEM1, TELEM2+OSD ports

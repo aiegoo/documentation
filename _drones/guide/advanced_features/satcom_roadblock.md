@@ -14,7 +14,7 @@ The following components are needed for the satellite communication link:
 
 The full system architecture is shown below:
 
-![Architecture](../../assets/satcom/architecture.jpg)
+![Architecture](images/drones/satcom/architecture.jpg)
 
 :::note
 The setup was tested with the current release of *QGroundControl* running on Ubuntu 14.04 and 16.04. 
@@ -85,7 +85,7 @@ When using the default settings one message per minute is sent from the vehicle 
 
 Set up a delivery group for the message relay server and add the module to that delivery group:
 
-![Delivery Groups](../../assets/satcom/deliverygroup.png)
+![Delivery Groups](images/drones/satcom/deliverygroup.png)
 
 ## Relay Server Setup
 
@@ -163,7 +163,7 @@ To setup the ground station:
    * Target hosts: 127.0.0.1:10001
    * High Latency: checked
 
-   ![High Latency Link Settings](../../assets/satcom/linksettings.png)
+   ![High Latency Link Settings](images/drones/satcom/linksettings.png)
 
 ### Verification
 
@@ -177,7 +177,7 @@ To setup the ground station:
 
 If in the terminal where the `udp2rabbit.py` script is running within a couple of seconds the acknowledge for a message can be observed, then the RockBlock delivery group, the relay server and the udp2rabbit script are set up correctly:
 
-![udp2rabbit message acknowledge](../../assets/satcom/verification.png)
+![udp2rabbit message acknowledge](images/drones/satcom/verification.png)
 
 
 ## Running the System
@@ -185,7 +185,7 @@ If in the terminal where the `udp2rabbit.py` script is running within a couple o
 1. Start *QGroundControl*. 
   Manually connect the high latency link first, then the regular telemetry link:
 
-   ![Connect the High Latency link](../../assets/satcom/linkconnect.png)
+   ![Connect the High Latency link](images/drones/satcom/linkconnect.png)
 1. Open a terminal on the ground station computer and change to the location of the *SatComInfrastructure* repository. 
    Then start the **udp2rabbit.py** script:
    ```
@@ -196,7 +196,7 @@ If in the terminal where the `udp2rabbit.py` script is running within a couple o
    This can be checked either using the *MAVLink Inspector* widget or on the toolbar with the *LinkIndicator*. 
    If more than one link is connected to the active vehicle the *LinkIndicator* shows all of them by clicking on the name of the shown link:
 
-   ![Link Toolbar](../../assets/satcom/linkindicator.jpg)
+   ![Link Toolbar](images/drones/satcom/linkindicator.jpg)
 
    The link indicator always shows the name of the priority link.
 1. The satellite communication system is now ready to use. 
@@ -207,7 +207,7 @@ If in the terminal where the `udp2rabbit.py` script is running within a couple o
    * The user can select a priority link over the `LinkIndicator` on the toolbar. 
      This link is kept as the priority link as long as this link is active or the user selects another priority link:
 
-     ![Prioritylink Selection](../../assets/satcom/linkselection.png)
+     ![Prioritylink Selection](images/drones/satcom/linkselection.png)
 
 ## Troubleshooting
 

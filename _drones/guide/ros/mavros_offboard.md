@@ -12,7 +12,7 @@ This example uses C++. Similar examples in Python can be found here: [integratio
 :::
 
 <video width="100%" autoplay="true" controls="true">
-	<source src="../../assets/simulation/gazebo_offboard.webm" type="video/webm">
+	<source src="images/drones/simulation/gazebo_offboard.webm" type="video/webm">
 </video>
 
 

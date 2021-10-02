@@ -115,7 +115,7 @@ Once there is an INFO print that [ecl/EKF] is `commencing GPS fusion` the vehicl
 Right-clicking the quadrotor model allows to enable follow mode from the context menu, which is handy to keep it in view.
 :::
 
-![Gazebo UI](../../assets/simulation/gazebo/gazebo_follow.jpg)
+![Gazebo UI](images/drones/simulation/gazebo/gazebo_follow.jpg)
 
 You can bring it into the air by typing:
 
@@ -398,7 +398,7 @@ make px4_sitl gazebo_typhoon_h480
 
 Streaming can be paused/restarted using the Gazebo UI *Video ON/OFF* button..
 
-![Video ON/OFF button](../../assets/simulation/gazebo/sitl_video_stream.png)
+![Video ON/OFF button](images/drones/simulation/gazebo/sitl_video_stream.png)
 
 
 ### How to View Gazebo Video
@@ -406,11 +406,11 @@ Streaming can be paused/restarted using the Gazebo UI *Video ON/OFF* button..
 The easiest way to view the SITL/Gazebo camera video stream is in *QGroundControl*.
 Simply open **Application Settings > General** and set **Video Source** to *UDP h.264 Video Stream* and **UDP Port** to *5600*:
   
-![QGC Video Streaming Settings for Gazebo](../../assets/simulation/gazebo/qgc_gazebo_video_stream_udp.png)
+![QGC Video Streaming Settings for Gazebo](images/drones/simulation/gazebo/qgc_gazebo_video_stream_udp.png)
 
 The video from Gazebo should then display in *QGroundControl* just as it would from a real camera.
 
-![QGC Video Streaming Gazebo Example](../../assets/simulation/gazebo/qgc_gazebo_video_stream_typhoon.jpg)
+![QGC Video Streaming Gazebo Example](images/drones/simulation/gazebo/qgc_gazebo_video_stream_typhoon.jpg)
 
 :::note
 The Typhoon world is not very interesting.

@@ -4,7 +4,7 @@ The [Trimble MB-Two RTK GPS receiver](https://www.trimble.com/Precision-GNSS/MB-
 
 In addition to providing precise position information, the MB-Two can estimate heading angle (it has dual-antenna support). This is useful for situations where a compass cannot provide reliable heading information, for example when flying close to metal constructs.
 
-![MB-Two Hero image](../../assets/hardware/gps/rtk_trimble_two_gnss_hero.jpg)
+![MB-Two Hero image](images/drones/hardware/gps/rtk_trimble_two_gnss_hero.jpg)
 
 
 ## Required Firmware Options
@@ -38,7 +38,7 @@ The module cannot be powered from a Pixhawk.
 
 The pins on the 28-pin connector are numbered as shown below:
 
-![MB-Two Pinout](../../assets/hardware/gps/rtk_trimble_two_gnss_pinouts.jpg)
+![MB-Two Pinout](images/drones/hardware/gps/rtk_trimble_two_gnss_pinouts.jpg)
 
 | Pin | Name  | Description
 | --- | ------------- | --- |

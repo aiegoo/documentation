@@ -20,7 +20,7 @@ To install PX4:
 1. Start *QGroundControl* and connect the vehicle.
 1. Select **"Q" icon > Vehicle Setup > Firmware** (sidebar) to open *Firmware Setup*.
 
-   ![Firmware disconnected](../../assets/qgc/setup/firmware/firmware_disconnected.jpg)
+   ![Firmware disconnected](images/drones/qgc/setup/firmware/firmware_disconnected.jpg)
 
 1. Connect the flight controller directly to your computer via USB.
 
@@ -30,14 +30,14 @@ To install PX4:
 
 1. Select the **PX4 Flight Stack X.x.x Release** option to install the latest stable version of PX4 *for your hardware* (autodetected).
 
-   ![Install PX4 default](../../assets/qgc/setup/firmware/firmware_connected_default_px4.jpg)
+   ![Install PX4 default](images/drones/qgc/setup/firmware/firmware_connected_default_px4.jpg)
 
 1. Click the **OK** button to start the update.
 
    The firmware will then proceed through a number of upgrade steps (downloading new firmware, erasing old firmware etc.). 
    Each step is printed to the screen and overall progress is displayed on a progress bar.
    
-   ![Firmware upgrade complete](../../assets/qgc/setup/firmware/firmware_upgrade_complete.jpg)
+   ![Firmware upgrade complete](images/drones/qgc/setup/firmware/firmware_upgrade_complete.jpg)
    
    Once the firmware has completed loading, the device/vehicle will reboot and reconnect.
    
@@ -53,7 +53,7 @@ Next you will need to specify the [vehicle airframe](../config/airframe.md) (and
 
 To install a different version of PX4:
 1. Connect the vehicle as above, and select **PX4 Flight Stack vX.x.x Stable Release**
-   ![Install PX4 version](../../assets/qgc/setup/firmware/qgc_choose_firmware.jpg)
+   ![Install PX4 version](images/drones/qgc/setup/firmware/qgc_choose_firmware.jpg)
 1. Check **Advanced settings** and select the version from the dropdown list:
    - **Standard Version (stable):** The default version (i.e. no need to use advanced settings to install this!)
    - **Beta Testing (beta):** A beta/candidate release.
@@ -81,7 +81,7 @@ To update the bootloader:
 1. [Update the Firmware](../config/firmware.md) to PX4 *master* version (when updating the firmware, check **Advanced settings** and then select **Developer Build (master)** from the dropdown list).
    *QGroundControl* will automatically detect that the hardware supports FMUv2 and install the appropriate Firmware.
    
-   ![FMUv2 update](../../assets/qgc/setup/firmware/bootloader_update.jpg)
+   ![FMUv2 update](images/drones/qgc/setup/firmware/bootloader_update.jpg)
    
    Wait for the vehicle to reboot.
 1. [Find and enable](../advanced_config/parameters.md) the parameter [SYS_BL_UPDATE](../advanced_config/parameter_reference.md#SYS_BL_UPDATE).
@@ -90,7 +90,7 @@ To update the bootloader:
 1. Then [Update the Firmware](../config/firmware.md) again. 
    This time *QGroundControl* should autodetect the hardware as FMUv3 and update the Firmware appropriately.
 
-   ![FMUv3 update](../../assets/qgc/setup/firmware/bootloader_fmu_v3_update.jpg)
+   ![FMUv3 update](images/drones/qgc/setup/firmware/bootloader_fmu_v3_update.jpg)
 
    :::note
    If the hardware has the *Silicon Errata* it will still be detected as FMUv2 and you will see that FMUv2 was re-installed (in console). 

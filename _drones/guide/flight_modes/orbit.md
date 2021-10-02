@@ -1,10 +1,10 @@
 # Orbit (MC)
 
-[<img src="../../assets/site/difficulty_easy.png" title="Easy to fly" width="30px" />](../getting_started/flight_modes.md#key_difficulty)&nbsp;[<img src="../../assets/site/position_fixed.svg" title="Position fix required (e.g. GPS)" width="30px" />](../getting_started/flight_modes.md#key_position_fixed)
+[<img src="images/drones/site/difficulty_easy.png" title="Easy to fly" width="30px" />](../getting_started/flight_modes.md#key_difficulty)&nbsp;[<img src="images/drones/site/position_fixed.svg" title="Position fix required (e.g. GPS)" width="30px" />](../getting_started/flight_modes.md#key_position_fixed)
 
 The *Orbit* guided flight mode allows you to command a multicopter (or VTOL in multicopter mode) to fly in a circle, by [default](https://mavlink.io/en/messages/common.html#ORBIT_YAW_BEHAVIOUR) yawing so that it always faces towards the center.
 
-![Orbit Mode - MC](../../assets/flying/orbit.jpg)
+![Orbit Mode - MC](images/drones/flying/orbit.jpg)
 
 *QGroundControl* (or other compatible GCS or MAVLink API) is *required* to enable the mode, and to set the center position, initial radius and altitude of the orbit.
 Once enabled the vehicle will fly as fast as possible to the closest point on the commanded circle trajectory and do a slow (1m/s) clockwise orbit on the planned circle, facing the center.
@@ -29,7 +29,7 @@ RC control can be used to change the orbit altitude, radius, speed, and orbit di
 
 The diagram below shows the mode behaviour visually (for a [mode 2 transmitter](../getting_started/rc_transmitter_receiver.md#transmitter_modes)).
 
-![Orbit Mode - MC](../../assets/flight_modes/orbit_MC.png)
+![Orbit Mode - MC](images/drones/flight_modes/orbit_MC.png)
 
 The mode can be stopped by switching to any other flight mode (using RC or QGC).
 

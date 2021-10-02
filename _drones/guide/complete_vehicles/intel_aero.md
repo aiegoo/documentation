@@ -12,7 +12,7 @@ The other part is an STM32 microcontroller that is connected to it and that runs
 These are integrated in the same package on the *Intel Aero Ready to Fly Drone*, 
 which also includes the vision accessory kit.
 
-![Intel Aero RTF](../../assets/hardware/intel_aero/intel-aero-rtf.jpg)
+![Intel Aero RTF](images/drones/hardware/intel_aero/intel-aero-rtf.jpg)
 
 
 ## Introduction
@@ -213,9 +213,9 @@ The pinout for the Lidar Lite V3 and Aero telemetry port are as follows
 | 5   | -              | SDA              |
 | 6   | -              | GND              |
 
-![Aero I2C splitter](../../assets/hardware/intel_aero/aero_i2c_splitter.jpg)
+![Aero I2C splitter](images/drones/hardware/intel_aero/aero_i2c_splitter.jpg)
 
-![Aero LidarLite](../../assets/hardware/intel_aero/aero_lidarlite.jpg)
+![Aero LidarLite](images/drones/hardware/intel_aero/aero_lidarlite.jpg)
 
 ## Using Optical Flow on the Aero
 

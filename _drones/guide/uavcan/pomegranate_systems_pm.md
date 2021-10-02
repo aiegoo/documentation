@@ -1,6 +1,6 @@
 # Pomegranate Systems Power Module
 
-![Module Image](../../assets/hardware/power_module/pomegranate_systems_pm/main_image.jpg)
+![Module Image](images/drones/hardware/power_module/pomegranate_systems_pm/main_image.jpg)
 
 Digital Power Module with high resolution current integration, 5V/2A supply with power monitoring, single UAVCAN v0 CANbus interface, and an RGB status LED.
 
@@ -30,7 +30,7 @@ Detailed setup, configuration, and troubleshooting information can be found on t
    - **With XT60PW Connectors:** 16g
  
  
- ![Dimensions](../../assets/hardware/power_module/pomegranate_systems_pm/mechanical.png)
+ ![Dimensions](images/drones/hardware/power_module/pomegranate_systems_pm/mechanical.png)
 
 ## Configuration
 

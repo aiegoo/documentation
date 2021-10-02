@@ -22,7 +22,7 @@ In the event of an error (blinking red), or if the vehicle can't achieve GPS loc
 Also check that the GPS module is properly attached, Pixhawk is reading your GPS properly, and that the GPS is sending a proper GPS position.
 :::
 
-![LED meanings](../../assets/flight_controller/pixhawk_led_meanings.gif)
+![LED meanings](images/drones/flight_controller/pixhawk_led_meanings.gif)
 
 
 * **[Solid Blue] Armed, No GPS Lock:** Indicates vehicle has been armed and has no position lock from a GPS unit.
@@ -60,7 +60,7 @@ If you have completed the setup process and autopilot still appears as red and f
 Three *Status LEDs* provide status for the FMU SoC, and three more provide status for the PX4IO (if present). 
 They indicate power, bootloader mode and activity, and errors.
 
-![Pixhawk 4](../../assets/flight_controller/pixhawk4/pixhawk4_status_leds.jpg)
+![Pixhawk 4](images/drones/flight_controller/pixhawk4/pixhawk4_status_leds.jpg)
 
 From power on, the FMU and PX4IO CPUs first run the bootloader (BL) and then the application (APP).
 The table below shows how the Bootloader and then APP use the LEDs to indicate condition.

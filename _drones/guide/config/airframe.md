@@ -15,7 +15,7 @@ To set the airframe:
 1. Select **"Q" icon > Vehicle Setup > Airframe** (sidebar) to open *Airframe Setup*.
 1. Select the broad vehicle group/type that matches your airframe and then use the dropdown within the group to choose the airframe that best matches your vehicle.
    
-   ![](../../assets/qgc/setup/airframe/airframe_px4.jpg)
+   ![](images/drones/qgc/setup/airframe/airframe_px4.jpg)
 
    The example above shows *Generic Hexarotor X geometry* selected from the *Hexarotor X* group.
 
@@ -23,7 +23,7 @@ To set the airframe:
 1. Click **Apply and Restart**.
    Click **Apply** in the following prompt to save the settings and restart the vehicle.
 
-   <img src="../../assets/qgc/setup/airframe/airframe_px4_apply_prompt.jpg" width="300px" title="Apply airframe selection prompt" />
+   <img src="images/drones/qgc/setup/airframe/airframe_px4_apply_prompt.jpg" width="300px" title="Apply airframe selection prompt" />
 
 
 ## Further Information

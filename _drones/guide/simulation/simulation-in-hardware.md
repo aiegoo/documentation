@@ -4,7 +4,7 @@ Simulation-In-Hardware (SIH) is an alternative to [Hardware In The Loop simulati
 In this setup, everything is running on embedded hardware - the controller, the state estimator, and the simulator.
 The Desktop computer is only used to display the virtual vehicle.
 
-![Simulator MAVLink API](../../assets/diagrams/SIH_diagram.png)
+![Simulator MAVLink API](images/drones/diagrams/SIH_diagram.png)
 
 The SIH provides two benefits over the HITL:
 - It ensures synchronous timing by avoiding the bidirectional connection to the computer.

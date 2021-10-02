@@ -7,7 +7,7 @@ The Spedix S250 is a asymmetric racing quadcopter perfectly suited for the [Pixr
 
 The hardware required for this build is displayed below.
 
-![Spedix s250 components (unassembled)](../../assets/airframes/multicopter/spedix_s250aq_pixracer/spedix_s250aq_arf_components_unassembled.jpg)
+![Spedix s250 components (unassembled)](images/drones/airframes/multicopter/spedix_s250aq_pixracer/spedix_s250aq_arf_components_unassembled.jpg)
 
 ## Mounting and Wiring
 
@@ -16,7 +16,7 @@ Connect GPS and the Wifi module as shown in the [Pixracer instructions](../flig
 Connect the motors in the layout and order defined in the [Airframe Reference](../airframes/airframe_reference.md#quadrotor-asymmetric), and as reproduced below.
 
 <div>
-<img src="../../assets/airframes/types/AirframeUnknown.svg" width="29%" style="max-height: 180px;"/>
+<img src="images/drones/airframes/types/AirframeUnknown.svg" width="29%" style="max-height: 180px;"/>
 <table style="float: right; width: 70%; font-size:1.5rem;">
  <colgroup><col></colgroup>
  <thead>
@@ -34,4 +34,4 @@ Connect the motors in the layout and order defined in the [Airframe Reference](.
 Select the Quadrotor asymmetric Spedix S250AQ configuration as shown below.
 This will not only put PX4 into quadrotor mode, but also load decent default tuning gains.
 
-![QGC - COnfigure airframe as for Spedix250aq](../../assets/airframes/multicopter/spedix_s250aq_pixracer/spedix_250aq_qgc.png)
+![QGC - COnfigure airframe as for Spedix250aq](images/drones/airframes/multicopter/spedix_s250aq_pixracer/spedix_250aq_qgc.png)

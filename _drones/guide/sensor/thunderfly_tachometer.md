@@ -6,7 +6,7 @@ The board itself does not include the actual sensor but can be used with many di
 It has an I²C connector for connecting to PX4 and is connected to the actual sensor via a 3-pin connector.
 It also has an LED that offers basic diagnostic information.
 
-![TFRPM01A](../../assets/hardware/sensors/tfrpm/tfrpm01_electronics.jpg)
+![TFRPM01A](images/drones/hardware/sensors/tfrpm/tfrpm01_electronics.jpg)
 
 :::note
 The TFRPM01 sensor is open-source hardware commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/) (manufacturing data is [available on GitHub](https://github.com/ThunderFly-aerospace/TFRPM01)).
@@ -32,7 +32,7 @@ Hall-Effect sensors (magnetically operated) are ideal for harsh environments, wh
 Many different hall effect sensors are commercially available.
 For example, a [5100 Miniature Flange Mounting Proximity Sensor](https://m.littelfuse.com/~/media/electronics/datasheets/hall_effect_sensors/littelfuse_hall_effect_sensors_55100_datasheet.pdf.pdf) is a good choice.
 
-![Example of Hall effect probe](../../assets/hardware/sensors/tfrpm/hall_probe.jpg)
+![Example of Hall effect probe](images/drones/hardware/sensors/tfrpm/hall_probe.jpg)
 
 
 ### Optical Sensor Probe
@@ -40,7 +40,7 @@ For example, a [5100 Miniature Flange Mounting Proximity Sensor](https://m.litte
 An optical sensor can also be used (and may be a better fit, depending on the measurement requirements).
 Both transmissive and reflective sensor types may be used for pulse generation.
 
-![Example of optical transmissive probe](../../assets/hardware/sensors/tfrpm/transmissive_probe.jpg)
+![Example of optical transmissive probe](images/drones/hardware/sensors/tfrpm/transmissive_probe.jpg)
 
 ## Software Setup
 

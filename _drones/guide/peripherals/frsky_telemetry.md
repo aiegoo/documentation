@@ -29,7 +29,7 @@ For Pixhawk FMUv4 and earlier, UART ports and receiver telemetry ports are typic
 Generally SPort receivers have an *inverted* S.Port signal and you have to use a converter cable to split the S.Port into uninverted TX and RX for connecting to the Pixhawk UART.
 An example is shown below.
 
-![FrSky-Taranis-Telemetry](../../assets/hardware/telemetry/frsky_telemetry_overview.jpg)
+![FrSky-Taranis-Telemetry](images/drones/hardware/telemetry/frsky_telemetry_overview.jpg)
 
 :::tip
 When connecting to an inverted S.Port it is usually cheaper and easier to buy a [ready made cable](#ready_made_cable) that contains this adapter and has the appropriate connectors for the autopilot and receiver. 
@@ -91,7 +91,7 @@ The above transmitters can display telemetry data without any further configurat
 
 Compatible Taranis receivers (e.g. X9D Plus) running OpenTX 2.1.6 or newer can use the LuaPilot script to modify the displayed telemetry (as shown in the screenshot below).
 
-![Telemetry Screen on the Taranis](../../assets/hardware/telemetry/taranis_telemetry.jpg)
+![Telemetry Screen on the Taranis](images/drones/hardware/telemetry/taranis_telemetry.jpg)
 
 Instructions for installing the script can be found here: [LuaPilot Taranis Telemetry script > Taranis Setup OpenTX 2.1.6 or newer](http://ilihack.github.io/LuaPilot_Taranis_Telemetry/)
 
@@ -193,7 +193,7 @@ The above table originates from http://www.redsilico.com/frsky-receiver-chart an
 Ready-made cables for use with Pixhawk FMUv4 and earlier (except for Pixracer) are available from:
 * [Craft and Theory](http://www.craftandtheoryllc.com/telemetry-cable). Versions are available with DF-13 compatible *PicoBlade connectors* (for FMUv2/3DR Pixhawk, FMUv2/HKPilot32) and *JST-GH connectors* (for FMUv3/Pixhawk 2 "The Cube" and FMUv4/PixRacer v1).
 
-  <a href="http://www.craftandtheoryllc.com/telemetry-cable"><img src="../../assets/hardware/telemetry/craft_and_theory_frsky_telemetry_cables.jpg" alt="Purchase cable here from Craft and Theory"></a>
+  <a href="http://www.craftandtheoryllc.com/telemetry-cable"><img src="images/drones/hardware/telemetry/craft_and_theory_frsky_telemetry_cables.jpg" alt="Purchase cable here from Craft and Theory"></a>
 
 
 <span id="diy_cables"></span>
@@ -217,9 +217,9 @@ GND need not be attached as this will have been done when attaching to S.Bus (no
 
 The S-port connection is shown below (using the provided I/O Connector).
 
-![Grau b Pixracer FrSkyS.Port Connection](../../assets/flight_controller/pixracer/grau_b_pixracer_frskys.port_connection.jpg)
+![Grau b Pixracer FrSkyS.Port Connection](images/drones/flight_controller/pixracer/grau_b_pixracer_frskys.port_connection.jpg)
 
-![Pixracer FrSkyS.Port Connection](../../assets/flight_controller/pixracer/pixracer_FrSkyTelemetry.jpg)
+![Pixracer FrSkyS.Port Connection](images/drones/flight_controller/pixracer/pixracer_FrSkyTelemetry.jpg)
 
 ### Pixracer to D-port Receivers
 

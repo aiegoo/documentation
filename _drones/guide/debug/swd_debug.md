@@ -44,7 +44,7 @@ You can also create custom cables for connecting to different boards or probes.
 Some manufacturers provide cables to make it easy to connect the SWD interface and [System Console](../debug/system_console.md). 
 For example the [CUAV V5nano](../flight_controller/cuav_v5_nano.md#debug_port) and [CUAV V5+](../flight_controller/cuav_v5_plus.md#debug-port) include this debug cable:
 
-![6-pin JST SH Cable](../../assets/debug/cuav_v5_debug_cable.jpg)
+![6-pin JST SH Cable](images/drones/debug/cuav_v5_debug_cable.jpg)
 :::
 
 
@@ -138,7 +138,7 @@ The socket is a *6-pin JST SH* - Digikey number: [BM06B-SRSS-TBT(LF)(SN)](https:
 
 You can connect to the debug port using a [cable like this one](https://www.digikey.com/products/en?keywords=A06SR06SR30K152A).
 
-![6-pin JST SH Cable](../../assets/debug/cable_6pin_jst_sh.jpg)
+![6-pin JST SH Cable](images/drones/debug/cable_6pin_jst_sh.jpg)
 
 
 <a id="pixhawk_debug_port_10_pin_sh"></a>
@@ -170,7 +170,7 @@ The socket is a *10-pin JST SH* - Digikey number: [BM10B-SRSS-TB(LF)(SN)](https:
 
 You can connect to the debug port using a [cable like this one](https://www.digikey.com/products/en?keywords=A10SR10SR30K203A).
 
-![10-pin JST SH Cable](../../assets/debug/cable_10pin_jst_sh.jpg) <!-- better to have image showing proper connections for SWD+SWO -->
+![10-pin JST SH Cable](images/drones/debug/cable_10pin_jst_sh.jpg) <!-- better to have image showing proper connections for SWD+SWO -->
 
 
 <a id="debug_probes"></a>
@@ -185,7 +185,7 @@ The following section outlines some popular debug probes and adaptors for connec
 The [Segger JLink EDU Mini](https://www.segger.com/products/debug-probes/j-link/models/j-link-edu-mini/) is an inexpensive and popular SWD debug probe. 
 The probe's connector pinout looks like the image below (connect to this using an ARM 10-pin mini connector like [FTSH-105-01-F-DV-K](https://www.digikey.com/products/en?keywords=SAM8796-ND)).
 
-![connector_jlink_mini.png](../../assets/debug/connector_jlink_mini.png)
+![connector_jlink_mini.png](images/drones/debug/connector_jlink_mini.png)
 
 The pin mapping to connect the J-Link Edu Mini to [Pixhawk 6-Pin SH Debug Port](#pixhawk_debug_port_6_pin_sh) is shown below (note, the `-` indicates a pin that is not required for SWD).
 

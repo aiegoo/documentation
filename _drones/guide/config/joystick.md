@@ -5,7 +5,7 @@ A [computer joystick](https://en.wikipedia.org/wiki/Joystick) or gamepad connect
 This approach may be used by manual control units that have an integrated ground control station (like the *UAVComponents* [MicroNav](https://www.uavcomp.com/command-control/micronav/) shown below).
 Joysticks are also commonly used to allow developers to fly the vehicle in simulation.
 
-![Joystick MicroNav.](../../assets/peripherals/joystick/micronav.jpg)
+![Joystick MicroNav.](images/drones/peripherals/joystick/micronav.jpg)
 
 :::tip
 [Radio Setup](../config/radio.md) is not required if using a joystick (because a joystick is not an RC controller)!

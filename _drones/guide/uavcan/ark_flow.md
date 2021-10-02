@@ -2,7 +2,7 @@
 
 ARK Flow is an open source [UAVCAN](README.md) [optical flow](../sensor/optical_flow.md), [distance sensor](../sensor/rangefinders.md), and IMU module.
 
-![ARK Flow](../../assets/hardware/sensors/optical_flow/ark_flow.jpg)
+![ARK Flow](images/drones/hardware/sensors/optical_flow/ark_flow.jpg)
 
 ## Where to Buy
 
@@ -53,7 +53,7 @@ General instructions for UAVCAN wiring can also be found in [UAVCAN > Wiring](..
 
 The recommended mounting orientation is with the connectors on the board pointing towards **back of vehicle**, as shown in the following picture.
 
-![ARK Flow align with Pixhawk](../../assets/hardware/sensors/optical_flow/ark_flow_orientation.png)
+![ARK Flow align with Pixhawk](images/drones/hardware/sensors/optical_flow/ark_flow_orientation.png)
 
 This corresponds to the default value (`0`) of the parameter [SENS_FLOW_ROT](../advanced_config/parameter_reference.md#SENS_FLOW_ROT).
 Change the parameter appropriately if using a different orientation.

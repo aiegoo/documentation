@@ -12,4 +12,4 @@ Contact the [manufacturer](https://www.intrinsyc.com/) for hardware support or c
 The *Qualcomm Snapdragon Flight* platform is a high-end autopilot / onboard computer which runs the PX4 Flight Stack on the DSP on the QuRT real time operating system using the [DSPAL API](https://github.com/ATLFlight/dspal) for POSIX compatibility. 
 In comparison to [Pixhawk](../flight_controller/pixhawk.md) it adds a camera and WiFi and high-end processing power, and different IO.
 
-![Snapdragon Hero Doc](../../assets/hardware/snapdragon/hardware-snapdragon.jpg)
+![Snapdragon Hero Doc](images/drones/hardware/snapdragon/hardware-snapdragon.jpg)

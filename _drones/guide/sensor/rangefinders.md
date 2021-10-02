@@ -5,7 +5,7 @@ Distance sensors provide distance measurement that can be used for [terrain foll
 This section lists the distance sensors supported by PX4 (linked to more detailed documentation), the [generic configuration](#configuration) required for all rangefinders, [testing](#testing), and [simulation](#simulation) information.
 More detailed setup and configuration information is provided in the topics linked below (and sidebar).
 
-<img src="../../assets/hardware/sensors/lidar_lite/lidar_lite_v3.jpg" alt="Lidar Lite V3" width="200px" /><img src="../../assets/hardware/sensors/lidar_lightware/sf11c_120_m.jpg" alt="LightWare SF11/C Lidar" width="200px" /><img src="../../assets/hardware/sensors/optical_flow/ark_flow_distance_sensor.jpg" alt="ARK Flow" width="200px">
+<img src="images/drones/hardware/sensors/lidar_lite/lidar_lite_v3.jpg" alt="Lidar Lite V3" width="200px" /><img src="images/drones/hardware/sensors/lidar_lightware/sf11c_120_m.jpg" alt="LightWare SF11/C Lidar" width="200px" /><img src="images/drones/hardware/sensors/optical_flow/ark_flow_distance_sensor.jpg" alt="ARK Flow" width="200px">
 
 ## Supported Rangefinders
 
@@ -116,10 +116,10 @@ To view the rangefinder output:
 
 1. Open the menu **Q > Select Tool > Analyze Tools**:
 
-   ![Menu for QGC Analyze Tool](../../assets/qgc/analyze/menu_analyze_tool.png)
+   ![Menu for QGC Analyze Tool](images/drones/qgc/analyze/menu_analyze_tool.png)
 1. Select the message `DISTANCE_SENSOR`, and then check the plot checkbox against `current_distance`.
    The tool will then plot the result:
-   ![QGC Analyze DISTANCE_SENSOR value](../../assets/qgc/analyze/qgc_analyze_tool_distance_sensor.png)
+   ![QGC Analyze DISTANCE_SENSOR value](images/drones/qgc/analyze/qgc_analyze_tool_distance_sensor.png)
 
 ### QGroundControl MAVLink Console
 

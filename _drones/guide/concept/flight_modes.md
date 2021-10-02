@@ -85,4 +85,4 @@ Vehicle movement always follows stick movement, but the level/type of response c
 
 ## Flight Mode Evaluation Diagram
 
-![Commander Flow diagram](../../assets/diagrams/commander-flow-diagram.png)
+![Commander Flow diagram](images/drones/diagrams/commander-flow-diagram.png)

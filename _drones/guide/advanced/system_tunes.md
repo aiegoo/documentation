@@ -50,7 +50,7 @@ The steps for using the software are:
    start
    ```
 1. You will then have the option to click through a few screens, then press **1** to display *Melody Master*:
-   ![Melody Master 2.1](../../assets/tunes/tunes_melody_master_2_1.jpg)
+   ![Melody Master 2.1](images/drones/tunes/tunes_melody_master_2_1.jpg)
    
    The lower half of the screen provides helpful advice on keyboard shortcuts for using the tool (arrows for moving in stave, and numbers for selecting the note length, etc.).
 1. When you're ready to save the music:
@@ -60,7 +60,7 @@ The steps for using the software are:
 1. Open the file.
    The output might look like this:
    
-   ![ANSI Output from file](../../assets/tunes/tune_musicmaker_ansi_output.png)
+   ![ANSI Output from file](images/drones/tunes/tune_musicmaker_ansi_output.png)
 
 1. The string that can be played in PX4 is the bit between `MNT` and `P64`: `150L1O3DL16CL32<B>C<AEL16A`
 

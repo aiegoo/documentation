@@ -11,7 +11,7 @@ Keeping flight logs is a legal requirement in some jurisdictions.
 
 Logs can be downloaded using [QGroundControl](http://qgroundcontrol.com/): **[Analyze View > Log Download](https://docs.qgroundcontrol.com/en/analyze_view/log_download.html)**.
 
-![Flight Log Download](../../assets/qgc/analyze/log_download.jpg)
+![Flight Log Download](images/drones/qgc/analyze/log_download.jpg)
 
 
 ## Analyzing the Logs

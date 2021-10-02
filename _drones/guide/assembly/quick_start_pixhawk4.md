@@ -7,14 +7,14 @@ Contact the [manufacturer](https://shop.holybro.com/) for hardware support or co
 
 This quick start guide shows how to power the [Pixhawk 4](../flight_controller/pixhawk4.md)<sup>&reg;</sup> flight controller and connect its most important peripherals.
 
-<img src="../../assets/flight_controller/pixhawk4/pixhawk4_logo_view.jpg" width="420px" title="Pixhawk4 Image" /> 
+<img src="images/drones/flight_controller/pixhawk4/pixhawk4_logo_view.jpg" width="420px" title="Pixhawk4 Image" /> 
 
 
 ## Wiring Chart Overview
 
 The image below shows how to connect the most important sensors and peripherals (except the motor and servo outputs). We'll go through each of these in detail in the following sections.
 
-![Pixhawk 4 Wiring Overview](../../assets/flight_controller/pixhawk4/pixhawk4_wiring_overview.png)
+![Pixhawk 4 Wiring Overview](images/drones/flight_controller/pixhawk4/pixhawk4_wiring_overview.png)
 
 :::tip
 More information about available ports can be found here: [Pixhawk 4 > Connections](../flight_controller/pixhawk4.md#connectors).
@@ -24,7 +24,7 @@ More information about available ports can be found here: [Pixhawk 4 > Connectio
 
 *Pixhawk 4* should be mounted on the frame using vibration-damping foam pads (included in the kit). It should be positioned as close to your vehicle’s center of gravity as possible, oriented top-side up with the arrow pointing towards the front of the vehicle.
 
-<img src="../../assets/flight_controller/pixhawk4/pixhawk4_mounting_and_foam.png" align="center"/>
+<img src="images/drones/flight_controller/pixhawk4/pixhawk4_mounting_and_foam.png" align="center"/>
 
 :::note
 If the controller cannot be mounted in the recommended/default orientation (e.g. due to space constraints) you will
@@ -37,7 +37,7 @@ Attach the provided GPS with integrated compass, safety switch, buzzer and LED t
 
 The GPS/Compass should be mounted on the frame as far away from other electronics as possible, with the direction marker towards the front of the vehicle (separating the compass from other electronics will reduce interference).
 
-![Connect compass/GPS to Pixhawk 4](../../assets/flight_controller/pixhawk4/pixhawk4_compass_gps.jpg) 
+![Connect compass/GPS to Pixhawk 4](images/drones/flight_controller/pixhawk4/pixhawk4_compass_gps.jpg) 
 
 :::note
 The GPS module's integrated safety switch is enabled *by default* (when enabled, PX4 will not let you arm the vehicle).
@@ -55,7 +55,7 @@ Note that the PM board does not supply power to the servos via + and - pins of *
 
 The image below shows the power management board provided with *Pixhawk 4*.
 
-![Pixhawk 4 - Power Management Board](../../assets/hardware/power_module/holybro_pm07/pixhawk4_power_management_board.png)
+![Pixhawk 4 - Power Management Board](images/drones/hardware/power_module/holybro_pm07/pixhawk4_power_management_board.png)
 
 :::note
 If using a plane or rover, the 8 pin power (+) rail of **FMU PWM-OUT** will need to be separately powered in order to drive servos for rudders, elevons etc.
@@ -132,11 +132,11 @@ The instructions below show how to connect the different types of receivers to *
 
 - Spektrum/DSM or S.BUS receivers connect to the **DSM/SBUS RC** input.
   
-  ![Pixhawk 4 - Radio port for Spektrum receivers](../../assets/flight_controller/pixhawk4/pixhawk4_receiver_sbus.png)
+  ![Pixhawk 4 - Radio port for Spektrum receivers](images/drones/flight_controller/pixhawk4/pixhawk4_receiver_sbus.png)
 
 - PPM receivers connect to the **PPM RC** input port.
   
-  ![Pixhawk 4 - Radio port for PPM receivers](../../assets/flight_controller/pixhawk4/pixhawk_4_receiver_ppm.png)
+  ![Pixhawk 4 - Radio port for PPM receivers](images/drones/flight_controller/pixhawk4/pixhawk_4_receiver_ppm.png)
 
 - PPM and PWM receivers that have an *individual wire for each channel* must connect to the **PPM RC** port *via a PPM encoder* [like this one](http://www.getfpv.com/radios/radio-accessories/holybro-ppm-encoder-module.html) (PPM-Sum receivers use a single signal wire for all channels).
 
@@ -149,7 +149,7 @@ Telemetry radios may be used to communicate and control a vehicle in flight from
 
 The vehicle-based radio should be connected to the **TELEM1** port as shown below (if connected to this port, no further configuration is required). The other radio is connected to your ground station computer or mobile device (usually by USB).
 
-![Pixhawk 4/Telemetry Radio](../../assets/flight_controller/pixhawk4/pixhawk4_telemetry_radio.jpg)
+![Pixhawk 4/Telemetry Radio](images/drones/flight_controller/pixhawk4/pixhawk4_telemetry_radio.jpg)
 
 
 <span id="sd_card"></span>
@@ -158,7 +158,7 @@ The vehicle-based radio should be connected to the **TELEM1** port as shown belo
 SD cards are highly recommended as they are needed to [log and analyse flight details](../getting_started/flight_reporting.md), to run missions, and to use UAVCAN-bus hardware.
 Insert the card (included in Pixhawk 4 kit) into *Pixhawk 4* as shown below.
 
-![Pixhawk 4/SD Card](../../assets/flight_controller/pixhawk4/pixhawk4_sd_card.png)
+![Pixhawk 4/SD Card](images/drones/flight_controller/pixhawk4/pixhawk4_sd_card.png)
 
 :::tip
 For more information see [Basic Concepts > SD Cards (Removable Memory)](../getting_started/px4_basic_concepts.md#sd_cards).

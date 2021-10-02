@@ -8,7 +8,7 @@ Contact the [manufacturer](https://store.mrobotics.io/) for hardware support or 
 The [mRo-X2.1 autopilot](http://www.mRobotics.io/) is based on the [Pixhawk<sup>&reg;</sup>-project](https://pixhawk.org/) **FMUv2** open hardware design.
 It runs PX4 on the [NuttX](https://nuttx.apache.org/) OS.
 
-![mRo X2.1](../../assets/flight_controller/mro/mro_x2.1.jpg)
+![mRo X2.1](images/drones/flight_controller/mro/mro_x2.1.jpg)
 
 :::note
 This flight controller is [manufacturer supported](../flight_controller/autopilot_manufacturer_supported.md).
@@ -32,7 +32,7 @@ This flight controller is [manufacturer supported](../flight_controller/autopilo
 The diagram below provides a side-by-side comparison with a Pixhawk 1. The mRo features almost identical hardware and connectivity but
 has a much smaller footprint. Major differences are updated sensors and Rev 3 FMU.
 
-![Mro Pixhawk 1 vs X2.1 comparison](../../assets/flight_controller/mro/px1_x21.jpg)
+![Mro Pixhawk 1 vs X2.1 comparison](images/drones/flight_controller/mro/px1_x21.jpg)
 
 
 ## Connectivity
@@ -80,7 +80,7 @@ This product can be ordered at the [mRobotics<sup>&reg;</sup> Store](https://sto
  
 ## Wiring Guide
 
-![mRo_X2.1_Wiring](../../assets/flight_controller/mro/mro_x21_wiring.png)
+![mRo_X2.1_Wiring](images/drones/flight_controller/mro/mro_x21_wiring.png)
 
 ## Building Firmware
 

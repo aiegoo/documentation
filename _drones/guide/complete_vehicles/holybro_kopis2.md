@@ -2,7 +2,7 @@
 
 The [Holybro Kopis 2](https://shop.holybro.com/kopis2-6s-v2free-shipping_p1169.html) is a ready-to-fly racer quad for flying FPV or line-of-sight.
 
-![Kopis 2](../../assets/hardware/holybro_kopis2.jpg)
+![Kopis 2](images/drones/hardware/holybro_kopis2.jpg)
 
 ## Where to Buy
 
