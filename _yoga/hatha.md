@@ -36,6 +36,20 @@ My first yoga book I bought during my trip to Thailand has set off a series of e
 | ![image](https://user-images.githubusercontent.com/42961200/133865693-896e5f44-e691-4720-a9fb-60e1e937408d.png)
 | ![image](https://user-images.githubusercontent.com/42961200/133865725-2073f2a1-cfc5-4a28-a8ac-eae94020db5b.png)
 
+## Suryan Namaskara
+|---
+| :-:
+| ![image](https://user-images.githubusercontent.com/42961200/135710227-4d9b4aba-0775-45de-8eb5-de9b594b6007.png)
+| ![image](https://user-images.githubusercontent.com/42961200/135710287-16e1fca6-ea44-48f6-9809-ca379f61c4c3.png)
+| ![image](https://user-images.githubusercontent.com/42961200/135710172-cdf0a38a-5eb7-4a6b-9b95-f6d6f2358868.png)
+| ![image](https://user-images.githubusercontent.com/42961200/135710245-c177273a-1785-4ab5-b4d5-7846a2ae19d3.png)
+| ![image](https://user-images.githubusercontent.com/42961200/135710185-3e70a5e6-fed4-464c-9849-a46dd3dcc68e.png)
+| ![image](https://user-images.githubusercontent.com/42961200/135710311-5be81e3f-8599-4df0-ada4-b0c6e097d6e9.png)
+| ![image](https://user-images.githubusercontent.com/42961200/135710256-9105a6b5-44ba-42ff-9c57-4f9599a94b64.png)
+| ![image](https://user-images.githubusercontent.com/42961200/135710316-38043228-36dd-43b8-b930-08f639ef60ef.png)
+| ![Uploading image.png…]()
+| ![image](https://user-images.githubusercontent.com/42961200/135710198-171542bf-48f1-4c78-8173-8fc6cb9db79a.png)
+
 
 {% include image_gallery.html folder="hatha" %}
 
