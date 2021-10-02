@@ -12,6 +12,7 @@ layout: page
 ---
 
 ## my 100 supporters
+
 {% assign freelancers = site.freelancers %}
 {% for freelancer in freelancers %}
 <h2>
