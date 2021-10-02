@@ -51,6 +51,9 @@ Note that you cannot use the `../` syntax to specify an include location that re
 All the other capabilities of the `include` tag are available to the `include_relative` tag,
 such as variables.
 
+{{site.data.alerts.note}}
+[mydoc_alerts](mydoc/alerts.md) also uses the same logic by inserting contents within the bootstrap box.
+{{site.data.alerts.end}}
 ### Using variables names for the include file
 
 The name of the file you want to embed can be specified as a variable instead of an actual file name. For example, suppose you defined a variable in your page's front matter like this:
