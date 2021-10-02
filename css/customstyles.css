@@ -1823,7 +1823,7 @@ li.scroll-nav_item a:before {
 .reading-time {
     font-family: FontAwesome;
     font-weight: 300;
-    text-align: center;
+    text-align: right;
     font-size: 0.8em;
     vertical-align: middle;
 }
