@@ -8,6 +8,7 @@ sidebar: mydoc_sidebar
 permalink: mydoc_pages.html
 folder: mydoc
 ---
+## Site pages
 
 ## Where to author content
 Use a text editor such as Sublime Text, WebStorm, IntelliJ, Visual Studio Code or Atom to create pages. Atom is recommended because it's created by Github, which is driving some of the Jekyll development through Github Pages.
