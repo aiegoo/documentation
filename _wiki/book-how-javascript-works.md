@@ -9,7 +9,7 @@ summary: "더글라스 크락포드가 알려주는"
 tags: [web, regex, javascript]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-18 4:53 PM
+updated: 2021-10-02 5:09 PM
 toc: true
 public: true
 parent: [[Books-Category]] 
@@ -27,7 +27,7 @@ weight: 1
 * TOC
 {:toc}
 
-#### 개요
+## 개요
 
 | ![표지](http://image.kyobobook.co.kr/images/book/xlarge/595/x9788966262595.jpg) | 저자: 더글러스 크락포드 (Douglas Crockford) <br> 책제목 : 자바스크립트는 왜 그 모양일까? (원제 : How JavaScript Works) <br> 부제 : 더글러스 크락포드가 알려주는 <br> 위험한 자바스크립트를 안전하게 사용하는 법 <br> 출판사 : 인사이트 <br> ISBN 한글 : 978-89-6626-259-5 <br> ISBN 영문 : 978-1949815009 <br> <br> 값: 28,000원 |
 
@@ -45,7 +45,7 @@ weight: 1
 * [Douglas Crockford, homepage](https://www.crockford.com/isbn-13.html)
   * [Douglas Crockford, 소개페이지](https://www.crockford.com/about.html)
 
-#### {"number": 0, "chapter": "시작하기 전에"}
+### 시작하기 전에
 
 * 제가 사용하는 프로그래밍 언어를 다루는 스킬을 향상시키는 가장 효과적인 방법은 다음과 같습니다
   > 이따금 유용하지만 때때로 위험한 기능과 안전하면서 더 나은 다른 기능이 있다면, 항상 더 나은 다른 기능을 사용하라
@@ -101,7 +101,7 @@ weight: 1
 * 실제 적용하려면 공백문자를 없애고 사용하셈
 
 
-#### {"number": 1, "chapter": "이름"}
+### 이름
 
 * 모든 이름은 문자로 시작하여 문자로 끝낼것
   * _(밑줄)로 시작하는 이름은 일반적으로 public 속성이나 전역변수
@@ -135,7 +135,7 @@ weight: 1
 * 불안정한 예약어 전략은 언어에 새로운 기능을 깔끔하고 직관적으로 추가하기 어렵게 만듬
 * 앞으로는 예약어 없는 언어가 개발되길..
 
-#### {"number": 2, "chapter": "숫자"}
+#### 숫자
 
 * 자바스크립트는 숫자형이 number 하나라는 이유로 자주 비판받았습니다
   * 하지만 이는 자바스크립트의 아주 큰 강점중 하나입니다
@@ -217,7 +217,7 @@ weight: 1
     * 여기에 사용한 `Mathjax`가 렌더링 안되고 있는데 [현재 문의중임](https://github.com/jeffreytse/jekyll-spaceship/issues/50). 
       * [2021-04-02 고쳐짐](https://github.com/jeffreytse/jekyll-spaceship/issues/50#issuecomment-812444737)
 
-#### 연산자
+### 연산자
 
 ##### 전위 연산자
 
@@ -265,7 +265,7 @@ weight: 1
   * 피연산자들을 32 bits binary 수 (zeros and ones)로 변환.
   * 결과는 표쥰 Javascript numerical values로 반환
 
-#### Javascript의 Bitwise Operator가 잘 쓰이지 않는 이유
+### Javascript의 Bitwise Operator가 잘 쓰이지 않는 이유
 
 * 안전하게 하려면 54 bit 정수형으로 변환해서 사용하는게 좋은데 Javascript는 안 그러고 있음
   * 그 결과 상위 22 bit는 경고없이 사라질 수 있음
@@ -287,7 +287,7 @@ weight: 1
 * Java의 경우, 부호의 확장은 연산자에 의해 정해짐. [Java Sign Extension, mkyong's blog](https://mkyong.com/java/java-sign-extension/)
   * Javascript는 Java의 잘못된 결정을 그대로 따름. 조심해야 함. [Unsigned right shift (>>>), MDN Ref](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift)
 
-#### {"number": 7, "chapter": "배열"}
+### 배열 
 
 * 배열에 관한 몇가지 흥미로운 사실
   * 자바스크립트 초기 배포시에는 배열이 없었다
@@ -343,7 +343,7 @@ weight: 1
 
 ### 다른 채프터
 
-## 9
+## Chapter 9
 ### 9-1 web message push notification mechanism
 
 > Plese refer to the original text [here](https://blog.sessionstack.com/how-javascript-works-the-mechanics-of-web-push-notifications-290176c5c55d), with slight cuts.
