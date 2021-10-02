@@ -242,7 +242,7 @@ description: "This documentation site is intended to keep my past and current pr
 
 # leio reading time implementation
 reading_time:       true
-words_per_minute:   150
+words_per_minute:   120
 
 github: [metadata]
 
