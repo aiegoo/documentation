@@ -1,6 +1,6 @@
 ---
 title: Tools built using Github API
-keywords: git, getting-started
+keywords: git, api, jekyll
 summary: "to build tools with the Github API and related open source technologies such as Jekyll, Hubot and Gollum"
 sidebar: mydoc_sidebar
 permalink: books_gittool.html

@@ -13,6 +13,7 @@ layout: page
 ---
 
 ## yoga books
+
 {% assign yoga = site.yoga | sort:"date" | reverse %}
 {% for yoga in yoga %}
 <h2>
