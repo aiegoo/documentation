@@ -5,7 +5,7 @@ permalink: 2021-09-26-googlesheet.html
 sidebar: other_sidebar
 collection: wiki
 summary: "Google Sheets API"
-tags: [wiki, getting_started]
+tags: [wiki, api]
 excerpt_separator: <!--more-->
 date: 2021-09-26 00:12:03 +0900
 updated: 2021-09-26 00:15 AM
