@@ -1,2 +1,9 @@
-{% assign wpm = site.words_per_minute | append: '.0' %}
-{% assign readtime = content | strip_html | number_of_words | divided_by:wpm | round %}
+<span class="reading-time" title="Estimated read time">
+    {% assign words = content | strip_html | number_of_words %}
+    {% assign wpm = site.words_per_minute | append: '.0' %}
+    {% if words < 360 %}
+        1 min
+    {% else %}
+        {{ words | divided_by:wpm }} mins
+    {% endif %}
+</span>
