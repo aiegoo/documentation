@@ -1,7 +1,7 @@
 ---
 name: "🌿 drones"
 keywords: drones
-tags: [getting_started,drone]
+tags: [drone]
 hide: false
 toc: true
 sidebar: other_sidebar
@@ -16,8 +16,10 @@ excerpt_separator: <!--more-->
 ---
 
 {% include custom/series_matlab_next.html %}
+
 ## my drones
-{% assign drones = site.drones |sort: "date" | reverse %}
+
+{% assign drones = site.drones | sort: "date" | reverse %}
 {% for drone in drones %}
 <h2>
      <a href="{{ drone.url | prepend: site.baseurl }}">
