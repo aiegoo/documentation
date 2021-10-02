@@ -1,5 +1,5 @@
 ---
-title: Pages
+title: Pages in this site
 tags: [getting_started, jekyll, formatting, content_types]
 keywords: pages, authoring, exclusion, frontmatter
 last_updated: July 16, 2016
