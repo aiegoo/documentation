@@ -33,9 +33,45 @@ folder: mydoc
   <button class="btn btn-primary" data-group="rflysim">rflysim</button>
   <button class="btn btn-primary" data-group="yoga">yoga</button>
   <button class="btn btn-primary" data-group="books">books</button>
+  <button class="btn btn-primary" data-group="api">API</button>>
+  <button class="btn btn-primary" data-group="jekyll">Jekyll</button>
 </div>
 
 <div id="grid" class="row">
+<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["jekyll"]'>
+            <div class="panel panel-default">
+            <div class="panel-heading">Jekyll</div>
+            <div class="panel-body">
+              Contents related to Jekyll are tagged. 
+              <ul>
+            {% for page in site.pages %}
+            {% for tag in page.tags %}
+            {% if tag == "jekyll" %}
+              <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %} 
+              </ul>
+            </div>
+        </div>    
+</div>
+<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["api"]'>
+            <div class="panel panel-default">
+            <div class="panel-heading">API</div>
+            <div class="panel-body">
+              Contents related to apis are tagged. 
+              <ul>
+            {% for page in site.pages %}
+            {% for tag in page.tags %}
+            {% if tag == "api" %}
+              <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %} 
+              </ul>
+            </div>
+        </div>    
+</div>
 
 
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["rflysim"]'>
