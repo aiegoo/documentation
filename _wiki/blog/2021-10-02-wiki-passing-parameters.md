@@ -19,6 +19,8 @@ repos: aiegoo/documentation
 * (table of content)
 {:toc}
 
+## passing parameters from include 
+
 The `include` tag allows you to include the content from another file stored in the `_includes` folder:
 
 {% raw %}
