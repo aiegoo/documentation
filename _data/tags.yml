@@ -67,5 +67,6 @@ allowed-tags:
   - cplus
   - node
   - ai
+  - projects
 
 # Copyright 2021 Google LLC

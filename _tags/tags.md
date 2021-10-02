@@ -35,9 +35,28 @@ folder: mydoc
   <button class="btn btn-primary" data-group="books">books</button>
   <button class="btn btn-primary" data-group="api">API</button>
   <button class="btn btn-primary" data-group="jekyll">Jekyll</button>
+  <button class="btn btn-primary" data-group="projects">Projects</button>
 </div>
 
 <div id="grid" class="row">
+<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["projects"]'>
+            <div class="panel panel-default">
+            <div class="panel-heading">Projects</div>
+            <div class="panel-body">
+              Contents related to my projects are tagged. 
+              <ul>
+            {% for page in site.pages %}
+            {% for tag in page.tags %}
+            {% if tag == "projects" %}
+              <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %} 
+              </ul>
+            </div>
+        </div>    
+</div>
+
 <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["jekyll"]'>
             <div class="panel panel-default">
             <div class="panel-heading">Jekyll</div>
