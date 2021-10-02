@@ -22,6 +22,9 @@ link: https://36io.co
                {% for tag in drone.tags %}
                <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>
                {% unless forloop.last %}, {% endunless%}{% endfor %}</span>
+               <p>{% if drone.summary %} {{ drone.summary }} 
+          {% else %} {{ drone.excerpt | markdownify | truncatewords: 50 }} {% endif %}
+               </p>
      {% endfor %}
         <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
 
