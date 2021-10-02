@@ -26,9 +26,11 @@ Our class team made its first test flight after assembly.
 ## Drones home
 <div class="home">
     <div class="post-list">
-    {% assign drones = site.drones %}
+    {% assign drones = site.drones | sort: "date" | reverse %}
      {% for drone in drones %}
-          <a class="post-link" href="{{ drone.url | remove: '/' }}">{{ drone.name }}</a>
+          <a class="post-link" href="{{ drone.url | prepend: site.baseurl }}">
+              {{ drone.name }} - {{ drone.type }}
+              </a>
           <span class="post-meta">{{ drone.updated | date: "%b %-d, %Y" }} /
                {% for tag in drone.tags %}
                <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
