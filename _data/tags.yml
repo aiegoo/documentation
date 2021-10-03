@@ -36,6 +36,12 @@ allowed-tags:
   - dynamic-occupancy
   - motion-planning
   - rrt
+  - autopilot
+  - hardware
+  - aseembly
+  - config
+  - frame
+  - guide
   - yoga
   - bikram
   - hatha
@@ -68,7 +74,4 @@ allowed-tags:
   - node
   - ai
   - projects
-  - autopilot
-  - hardware
-
 # Copyright 2021 Google LLC
