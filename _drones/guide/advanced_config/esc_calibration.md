@@ -4,6 +4,7 @@ name: esc_calibration
 sidebar: other_sidebar
 category: "drones"
 tags: drones
+summary: ""
 excerpt_separator: <!--more-->
 permalink: esc_calibration.html
 type: "APM, Mission-planner"

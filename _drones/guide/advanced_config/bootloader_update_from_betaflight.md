@@ -4,6 +4,7 @@ name: bootloader_update_from_betaflight
 sidebar: other_sidebar
 category: "drones"
 tags: drones
+summary: ""
 excerpt_separator: <!--more-->
 permalink: bootloader_update_from_betaflight.html
 type: "APM, Mission-planner"

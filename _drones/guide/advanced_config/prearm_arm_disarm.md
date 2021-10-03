@@ -4,6 +4,7 @@ name: prearm_arm_disarm
 sidebar: other_sidebar
 category: "drones"
 tags: drones, autopilot
+summary: ""
 excerpt_separator: <!--more-->
 permalink: prearm_arm_disarm.html
 type: "APM, Mission-planner"

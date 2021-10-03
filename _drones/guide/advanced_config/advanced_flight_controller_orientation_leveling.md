@@ -4,6 +4,7 @@ name: advanced_flight_controller_orientation_leveling
 sidebar: other_sidebar
 category: "drones"
 tags: drones
+summary: ""
 excerpt_separator: <!--more-->
 permalink: advanced_flight_controller_orientation_leveling.html
 type: "APM, Mission-planner"
