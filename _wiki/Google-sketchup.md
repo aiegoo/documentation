@@ -1,5 +1,6 @@
 ---
 name: 구글 스케치업 정리  
+title: 구글 스케치업 정리
 layout: post
 permalink: Google-sketchup.html
 sidebar: other_sidebar
