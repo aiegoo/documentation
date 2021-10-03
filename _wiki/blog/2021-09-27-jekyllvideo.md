@@ -5,7 +5,7 @@ permalink: 2021-09-27-jekyllvideo.html
 sidebar: other_sidebar
 collection: wiki
 summary: "videojs, plugin, include"
-tags: [wiki, getting_started]
+tags: [wiki, jekyll]
 excerpt_separator: <!--more-->
 date: 2021-09-27 09:44:03 +0900
 updated: 2021-09-28 05:12AM

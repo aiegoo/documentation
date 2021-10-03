@@ -5,7 +5,7 @@ permalink: 2021-09-29-wiki-scrollspy.html
 sidebar: other_sidebar
 collection: wiki
 summary: "Implement Scroll Spy in Jekyll without Bootstrap"
-tags: [wiki, getting_started]
+tags: [wiki, jekyll]
 excerpt_separator: <!--more-->
 date: 2021-09-30 23:10:03 +0900
 updated: 2021-09-30 23:14 PM
