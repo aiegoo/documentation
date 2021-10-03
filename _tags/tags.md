@@ -34,11 +34,30 @@ folder: mydoc
   <button class="btn btn-primary" data-group="yoga">yoga</button>
   <button class="btn btn-primary" data-group="books">books</button>
   <button class="btn btn-primary" data-group="api">API</button>
-  <button class="btn btn-primary" data-group="jekyll">Jekyll</button>
-  <button class="btn btn-primary" data-group="projects">Projects</button>
+  <button class="btn btn-primary" data-group="jekyll">jekyll</button>
+  <button class="btn btn-primary" data-group="projects">projects</button>
+  <button class="btn btn-primary" data-group="drones">drones</button>
 </div>
 
 <div id="grid" class="row">
+<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["drones"]'>
+            <div class="panel panel-default">
+            <div class="panel-heading">Drones</div>
+            <div class="panel-body">
+              Contents related to drones are tagged. 
+              <ul>
+            {% for page in site.pages %}
+            {% for tag in page.tags %}
+            {% if tag == "drones" %}
+              <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %} 
+              </ul>
+            </div>
+        </div>    
+</div>
+
 <div class="col-xs-6 col-sm-4 col-md-4" data-groups='["projects"]'>
             <div class="panel panel-default">
             <div class="panel-heading">Projects</div>
