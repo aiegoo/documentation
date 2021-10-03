@@ -1,23 +1,16 @@
 ---
 layout: page
-name: pixhawk cube
+name: paramete reference
+title: parameter reference
 sidebar: other_sidebar
 category: "drones"
 excerpt_separator: <!--more-->
-permalink: cube.html
-type: "APM, Mission-planner"
+permalink: parameter_reference.html
+type: "APM, Mission-planner, drones"
 link: https://github.com/aiegoo/portfolio/wiki/
 excerpt_separator: <!--more-->
 ---
----
-layout: page
-name: "parameter reference"
-permalink: parameter_reference.html
-sidebar: other_sidebar
-type: "APM, Pixhawk4"
-link: https://github.com/aiegoo/portfolio/wiki/quad
-excerpt_separator: <!--more-->
----
+
 
 # Parameter Reference
 

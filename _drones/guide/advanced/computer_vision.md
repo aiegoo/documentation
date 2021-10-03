@@ -1,6 +1,7 @@
 ---
 layout: page
 name: "comupter vision"
+title: "comupter vision"
 sidebar: other_sidebar
 category: "drones"
 excerpt_separator: <!--more-->

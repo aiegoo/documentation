@@ -1,6 +1,7 @@
 ---
 layout: page
 name: "dev env unsupported"
+title: "dev env unsupported"
 sidebar: other_sidebar
 category: "drones"
 excerpt_separator: <!--more-->
