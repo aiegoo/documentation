@@ -40,7 +40,7 @@ folder: mydoc
 </div>
 
 <div id="grid" class="row">
-<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["drones"]'>
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["drones"]'>
             <div class="panel panel-default">
             <div class="panel-heading">Drones</div>
             <div class="panel-body">
@@ -58,7 +58,7 @@ folder: mydoc
         </div>    
 </div>
 
-<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["projects"]'>
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["projects"]'>
             <div class="panel panel-default">
             <div class="panel-heading">Projects</div>
             <div class="panel-body">
@@ -76,7 +76,7 @@ folder: mydoc
         </div>    
 </div>
 
-<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["jekyll"]'>
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["jekyll"]'>
             <div class="panel panel-default">
             <div class="panel-heading">Jekyll</div>
             <div class="panel-body">
@@ -94,7 +94,7 @@ folder: mydoc
         </div>    
 </div>
 
-<div class="col-xs-6 col-sm-4 col-md-4" data-groups='["api"]'>
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["api"]'>
         <div class="panel panel-default">
             <div class="panel-heading">API</div>
             <div class="panel-body">
