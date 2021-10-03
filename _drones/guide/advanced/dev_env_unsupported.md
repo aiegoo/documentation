@@ -5,6 +5,7 @@ title: "dev env unsupported"
 sidebar: other_sidebar
 category: "drones"
 tags: [drone, autopilot]
+summary: "unsupported dev platforms and tools"
 excerpt_separator: <!--more-->
 permalink: dev_env_unsupported.html
 type: "APM, Mission-planner"
