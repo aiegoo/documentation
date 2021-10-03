@@ -8,7 +8,7 @@ search: exclude
 {% for page in site.html_pages %}
 {% unless page.search == "exclude" %}
 {
-"title": "{{ page.title | escape }}",
+"title": "{% if page.title %}{{ page.title | escape }} {% else %} {{ page.name | escape }} {% endif %}",
 "tags": "{{ page.tags }}",
 "keywords": "{{page.keywords}}",
 "url": "{{ page.url | remove: "/"}}",
@@ -21,7 +21,7 @@ search: exclude
 {% for post in site.posts %}
 
 {
-"title": "{{ post.title | escape }}",
+"title": "{% if post.title %}{{ post.title | escape }} {% else %} {{ post.name | escape }} {% endif %}",
 "tags": "{{ post.tags }}",
 "keywords": "{{post.keywords}}",
 "url": "{{ post.url | remove: "/" }}",
