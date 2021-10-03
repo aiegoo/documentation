@@ -4,6 +4,7 @@ name: "comupter vision"
 title: "comupter vision"
 sidebar: other_sidebar
 category: "drones"
+tags: [drones]
 excerpt_separator: <!--more-->
 permalink: computer_vision.html
 type: "APM, Mission-planner"
