@@ -9,6 +9,14 @@ permalink: mydoc_pipeline.html
 folder: mydoc
 ---
 
+### download using request api
+
+```bash
+ wget --no-parent -r -l inf --wait 5 --random-wait 'http://WEBSITE.com/DIRECTORY' 
+
+curl -LO http://example.com/someFile.type
+```
+
 ### add suffix to each file in a folder
 
 ```bash
