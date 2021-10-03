@@ -1,7 +1,7 @@
 ---
 name: 스택 오버플로우에서 검색 하기 
 layout: post
-permalink: stackoverflow_searchhelp.html
+permalink: so_searchhelp.html
 sidebar: other_sidebar
 collection: wiki
 summary: " 누구보다 빠르게 난 남들과는 다르게 ..."
