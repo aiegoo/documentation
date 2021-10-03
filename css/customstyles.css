@@ -1836,3 +1836,13 @@ li.scroll-nav_item a:before {
     font-size: 0.8em;
     vertical-align: middle;
 }
+
+
+/* custom bootstrap button colors */
+
+.tag-pink {
+    background-color: #c41953
+}
+.tag-pink a:hover, .tag-pink a:focus {
+    background-color: #ba3329;
+}

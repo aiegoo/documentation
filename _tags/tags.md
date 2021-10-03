@@ -22,7 +22,7 @@ folder: mydoc
 {% endunless %}
 
 <div class="filter-options">
-  <button class="btn btn-primary" data-group="all" background-color="#42b983b2">All</button>
+  <button class="btn btn-primary tag-pink" data-group="all">All</button>
   <button class="btn btn-primary" data-group="getting_started">Getting Started</button>
   <button class="btn btn-primary" data-group="formatting">Formatting</button>
   <button class="btn btn-primary" data-group="publishing">Publishing</button>
