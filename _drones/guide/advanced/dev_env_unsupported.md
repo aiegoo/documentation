@@ -4,7 +4,7 @@ name: "dev env unsupported"
 title: "dev env unsupported"
 sidebar: other_sidebar
 category: "drones"
-tags: [drone, autopilot]
+tags: [drones, autopilot]
 summary: "unsupported dev platforms and tools"
 excerpt_separator: <!--more-->
 permalink: dev_env_unsupported.html
