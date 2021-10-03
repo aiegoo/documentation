@@ -1,5 +1,6 @@
 ---
 name: 한 권으로 끝내는 정규표현식
+title: 한 권으로 끝내는 정규표현식
 layout: page
 permalink: book-regex-cookbook.html
 sidebar: other_sidebar

@@ -1,5 +1,6 @@
 ---
 name: typescript로 개발시 파일 순서 문제
+title: typescript로 개발시 파일 순서 문제
 layout: post
 permalink: code-isolation.html
 sidebar: other_sidebar

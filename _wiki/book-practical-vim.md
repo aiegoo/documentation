@@ -1,5 +1,6 @@
 ---
 name: Practical Vim
+title: Practical Vim
 layout: post
 permalink: book-practical-vim.html
 sidebar: other_sidebar

@@ -1,5 +1,6 @@
 ---
 name: 개발자의 글쓰기
+title: 개발자의 글쓰기
 layout: post
 permalink: book-developer-writing.html
 sidebar: other_sidebar

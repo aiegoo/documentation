@@ -1,5 +1,6 @@
 ---
 name: 파이썬 코딩의 기술 2판 
+title: 파이썬 코딩의 기술 2판
 layout: post
 permalink: book-effective-python-2nd.html
 sidebar: other_sidebar
