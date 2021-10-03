@@ -1702,6 +1702,14 @@ kbd {
 a.wiki-next {
     text-align: right;
 }
+a.wiki-next:hover {
+    text-decoration-color: #42b983;
+    text-decoration-thickness: 5px;
+}
+a.wiki-previous:hover {
+    text-decoration-color: #42b983;
+    text-decoration-thickness: 5px;
+}
 
 /* include youtube and jekyllvideo responsive codie */
 .embed-container {
