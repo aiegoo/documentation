@@ -22,14 +22,14 @@ folder: mydoc
 {% endunless %}
 
 <div class="filter-options">
-  <button class="btn btn-primary" data-group="all">All</button>
+  <button class="btn btn-primary tag-pink" data-group="all">All</button>
   <button class="btn btn-primary" data-group="getting_started">Getting Started</button>
   <button class="btn btn-primary" data-group="formatting">Formatting</button>
   <button class="btn btn-primary" data-group="publishing">Publishing</button>
   <button class="btn btn-primary" data-group="content-types">Content types</button>
   <button class="btn btn-primary" data-group="single_sourcing">Single Sourcing</button>
   <button class="btn btn-primary" data-group="special_layouts">Special Layouts</button>
-  <button class="btn btn-primary" data-group="api">API</button>>
+  <button class="btn btn-primary" data-group="api">API</button>
   <button class="btn btn-primary" data-group="jekyll">Jekyll</button>
 </div>
 
