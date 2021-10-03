@@ -7,6 +7,7 @@ toc: false
 sidebar: mydoc_sidebar
 permalink: index.html
 summary: From a graphic designer with hands-on experience in the industry, I witnessed myself transform into a full-fledged web developer covering both front-end and back-end offices.
+youtubeID: ijVpUdWZYKU
 ---
 
 <div markdown="1" align="center">
@@ -83,4 +84,6 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 |
 
 {% include latest.html %}
+
+{% include youtubePlayer.html id=page.youtubeID %}
 {% include links.html %}
