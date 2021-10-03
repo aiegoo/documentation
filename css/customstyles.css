@@ -1703,11 +1703,11 @@ a.wiki-next {
     text-align: right;
 }
 a.wiki-next:hover {
-    text-decoration-color: #42b983;
+    text-decoration-color: #42b983b2;
     text-decoration-thickness: 5px;
 }
 a.wiki-previous:hover {
-    text-decoration-color: #42b983;
+    text-decoration-color: #42b983b2;
     text-decoration-thickness: 5px;
 }
 
