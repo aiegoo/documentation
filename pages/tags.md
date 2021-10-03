@@ -60,7 +60,7 @@ folder: mydoc
                 {% for page in site.pages %}
                 {% for tag in page.tags %}
                 {% if tag == "api" %}
-                  <li><a href="{{page.url | remove: '/'}}">{{page.title}}</a></li>
+                  <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
                 {% endif %}
                 {% endfor %}
                 {% endfor %} 
