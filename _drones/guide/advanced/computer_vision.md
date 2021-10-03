@@ -5,6 +5,7 @@ title: "comupter vision"
 sidebar: other_sidebar
 category: "drones"
 tags: [drones]
+summary: "used when gps is not available"
 excerpt_separator: <!--more-->
 permalink: computer_vision.html
 type: "APM, Mission-planner"
