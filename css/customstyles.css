@@ -1841,8 +1841,8 @@ li.scroll-nav_item a:before {
 /* custom bootstrap button colors */
 
 .tag-pink {
-    background-color: #c41953;
+    background-color: #c41953 !important;
 }
 .tag-pink a:hover, .tag-pink a:focus {
-    background-color: #ba3329;
+    background-color: #ba3329 !important;
 }
