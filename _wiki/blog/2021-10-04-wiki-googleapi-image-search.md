@@ -1,5 +1,5 @@
 ---
-name: 영상 속 실시간 이미지 검색 
+name: "googleapi image search" 
 layout: post
 permalink: 2021-10-04-wiki-googleapi-image-search.html
 sidebar: other_sidebar
@@ -65,9 +65,9 @@ VIDAA 시스템 발표로부터 한 달 뒤, 미디어커머스 기업 핑거플
 제타미디어는 얼굴 인식 범위를 무명, 조연 배우로 확대하고 배우 DB를 확충함으로써 서비스를 고도화할 계획이다. 현재는 PC웹에서만 서비스 중이다.
 
 
-{% include image.html file=""assets/post/002/211_01.png" caption="비플릭스 메인" %}
+{% include image.html file="assets/post/002/211_01.png" caption="비플릭스 메인" %}
 
-{% include image.html file=""assets/post/002/211_02.png" caption="배우 검색결과" %}
+{% include image.html file="assets/post/002/211_02.png" caption="배우 검색결과" %}
 
 ---
 
