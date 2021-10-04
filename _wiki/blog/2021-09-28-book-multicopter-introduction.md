@@ -155,9 +155,9 @@ only interested in perception can read the this chapter, Modeling Part, Percepti
 
 ### chapter 1
 
-{% include image.html file="images/rflysim/multicopter_introduction_system.jpg" caption="Basic composition of a multicopter system" %}
+{% include image.html file="rflysim/multicopter_introduction_system.jpg" caption="Basic composition of a multicopter system" %}
 
-{% include image.html file="images/rflysim/multicopter_introduction_combination.jpg" caption="Combination and connection of a multicopter
+{% include image.html file="rflysim/multicopter_introduction_combination.jpg" caption="Combination and connection of a multicopter
 system '(photo by Jethro Hazelhurst from http://www.ardupilot.org)'" %}
 
 {% include links.html %}
