@@ -25,8 +25,10 @@ refer to the book wiki [multicopter_introduction](_wiki/blog/2021-09-28-book-mul
 그냥 쉽게 생각하면, 장난감 드론의 프레임과 산업용 프레임, 그리고 미션용 (유인/무인) 프레임이 있지만 기본 원리는 같다.
 
 [drone_notes](https://eggs.or.kr/crh/drone_resource/-/wikis/abridged-notes)
-
+- 법률사항, 역사, 기초 비행 이론등, 라파 공동프로젝트
+- abridged notes, drone, dynamics, historyrapa, home, legality clause, soloflight project.
 [drone_keyconcpet](https://eggs.or.kr/crh/drone_resource/-/wikis/key-concept)
+- 기체의 방향 전환, 자세/고도 유지 원리, VSI, 속도 인디케이터, 추력원리, 안정성/조정성 요소, 작용/반작용, 가속도의 법칙 등.
 
 [project_list](#project_list)
 #### fuselage
