@@ -20,8 +20,9 @@ repos: aiegoo/documentation
 {:toc}
 
 ## multicopter system
-
+refer to the book wiki [multicopter_introduction](_wiki/blog/2021-09-28-book-multicopter-introduction.md)
 ### airframes
+그냥 쉽게 생각하면, 장난감 드론의 프레임과 산업용 프레임, 그리고 미션용 (유인/무인) 프레임이 있지만 기본 원리는 같다.
 #### fuselage
 #### landing gear
 #### props
