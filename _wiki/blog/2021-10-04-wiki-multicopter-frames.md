@@ -23,18 +23,23 @@ repos: aiegoo/documentation
 refer to the book wiki [multicopter_introduction](_wiki/blog/2021-09-28-book-multicopter-introduction.md)
 ### airframes
 그냥 쉽게 생각하면, 장난감 드론의 프레임과 산업용 프레임, 그리고 미션용 (유인/무인) 프레임이 있지만 기본 원리는 같다.
+
 [drone_notes](https://eggs.or.kr/crh/drone_resource/-/wikis/abridged-notes)
 
 [drone_keyconcpet](https://eggs.or.kr/crh/drone_resource/-/wikis/key-concept)
 
-<script src="https://gist.github.com/aiegoo/64abef5341fb498f4c6108f038473876.js"></script>
+[project_list](#project_list)
 #### fuselage
 #### landing gear
 #### props
-
+- safe roation rate
+  Generally, the materials of propellers used on the multicopters are flexible. So, when rotation rate exceeds a certain value, the propellers may deform, which will reduce its efficiency. Therefore, when calculating the safety rotation rate limit, all the possible conditions should be considered. The APC Web site 2 gives an empirical formula for the maximum speed of multicopter propellers, which is 105000 Revolution Per Minute (RPM)/prop diameter (inches). Taking the 10-in. propeller for example, its maximum speed is 10500RPM. By contrast, the maximum speed of Slow Flyer (SF) propellers is only 65000RPM/prop diameter (inches).
 ### propulsion system
 
 ### control system (gcs)
 ---
 
 {% include links.html %}
+
+## project_list
+<script src="https://gist.github.com/aiegoo/64abef5341fb498f4c6108f038473876.js"></script>
