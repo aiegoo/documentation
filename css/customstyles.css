@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 :root { --tonyillust: url(images/tony_doc.svg); }
 
 body {
@@ -1672,7 +1678,8 @@ kbd {
    /*  display: flex;
     justify-content: space-between;
     flex-wrap: wrap; */
-    font-size: 14px;
+    font-size: 10px;
+    font-family: 'LAB디지털';
     display: block;
     width: auto;
     overflow: hidden;
