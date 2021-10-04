@@ -1,3 +1,17 @@
+---
+layout: page
+name: satcom_roadblock
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: ""
+excerpt_separator: <!--more-->
+permalink: satcom_roadblock.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-05 4:50 AM 
+---
 # Iridium/RockBlock Satellite Communication System
 
 A satellite communication system can be used to provide long range high latency link between a ground station and a vehicle.
