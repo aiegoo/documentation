@@ -1,3 +1,17 @@
+---
+layout: page
+name: "precision landing"
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: ""
+excerpt_separator: <!--more-->
+permalink: precland.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Precision Landing
 
 PX4 supports precision landing for *multicopters* on either stationary or moving targets.
