@@ -4,6 +4,8 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
 :root { --tonyillust: url(images/tony_doc.svg); }
 
 body {
@@ -1703,7 +1705,7 @@ kbd {
      float: left;
      margin: 1em 0;
      font-size: 10px !important;
-     font-family: 'LAB디지털' !important;
+     font-family: 'nanumsquare' !important;
 }
 
 a.wiki-next {
