@@ -1,7 +1,7 @@
 ---
 name: "🌿 mycourse"
 keywords: mycourse
-tags: [getting_started,mycourse]
+tags: [mycourse]
 hide: false
 toc: true
 sidebar: other_sidebar

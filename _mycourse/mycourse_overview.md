@@ -1,6 +1,6 @@
 ---
 layout: page
-name: four types of yoga
+name: mycourse overview
 sidebar: other_sidebar
 permalink: mycourse_overview.html
 title: "overview"
