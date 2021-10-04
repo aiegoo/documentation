@@ -1678,8 +1678,6 @@ kbd {
    /*  display: flex;
     justify-content: space-between;
     flex-wrap: wrap; */
-    font-size: 10px !important;
-    font-family: 'LAB디지털' !important;
     display: block;
     width: auto;
     overflow: hidden;
@@ -1704,6 +1702,8 @@ kbd {
      width: 50%;
      float: left;
      margin: 1em 0;
+     font-size: 10px !important;
+     font-family: 'LAB디지털' !important;
 }
 
 a.wiki-next {
