@@ -193,5 +193,13 @@ In addition to protecting the blade and ensuring personal safety, the duct can a
 ### Electronic speed controller
 ![image](https://user-images.githubusercontent.com/42961200/135810920-2b62d33e-dfc5-4259-9293-ffabf6b02c45.png)
 
+- maximum continuous/peak current
+- voltage range
+- resistance
+- refresh rate
+- programmability
+  The performance of ESCs can be optimized by tuning internal parameters. There are three ways to set the parameters of ESCs, i.e., programmable cards as shown in Fig. 2.17, computer software via the USB, and RC transmitters. The parameters that can be set up include: throttle range calibration, low voltage protection, power outage value, current limitation, brakes mode, throttle  control mode, switch timing setting, starting mode, and PWM mode setting.
+- compatability
+ 
 
 {% include links.html %}
