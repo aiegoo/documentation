@@ -154,4 +154,9 @@ Control Part, Decision
 Part, and Chap. 15.
 
 
+### chapter 1
+
+{% innclude image.html file="images/rflysim/multicopter_introduction_system.jpg" caption="Basic
+composition of a multicopter system" %}
+
 {% include links.html %}
