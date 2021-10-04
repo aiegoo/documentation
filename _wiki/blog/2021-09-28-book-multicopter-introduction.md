@@ -160,4 +160,21 @@ only interested in perception can read the this chapter, Modeling Part, Percepti
 {% include image.html file="rflysim/multicopter_introduction_combination.jpg" caption="Combination and connection of a multicopter
 system '(photo by Jethro Hazelhurst from http://www.ardupilot.org)'" %}
 
+#### diagonal size
+Diagonal size is the diameter (usually in mm) of the circumcircle determined by the motor axes. In
+general, as shown in Fig. 2.5, it is the distance of motor axes in the diagonal line and it is used to
+indicate the size of an airframe. The diagonal size restricts the size of propeller, which determines the
+maximum thrust and then the payload capacity.
+
+#### duct
+In addition to protecting the blade and ensuring personal safety, the duct can also enhance the efficiency of thrust and reduce noise. The thrust of a multicopter with ducts is composed of two parts, i.e., the thrust of the propeller and the additional thrust induced by the duct, as shown in Fig. 2.7.
+
+---
+
+#### propulsion system
+- propeller
+  Generally, the propeller model is described by a four-digit number, such as a 1045 (or 10 × 45) propeller, among which the first two represents the diameter of the propeller (unit: inch), and the latter two represents the propeller pitch (also referred to as screw pitch, blade pitch or simplified as pitch, unit: inch). Therefore, the APC1045 propeller implies that the propeller belongs to APC series, and the diameter and pitch of the propeller is 10 in. and 4.5 in., respectively.
+- chord length
+- moment of inertia
+
 {% include links.html %}
