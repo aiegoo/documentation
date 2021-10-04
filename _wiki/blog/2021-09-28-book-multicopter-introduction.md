@@ -179,4 +179,6 @@ In addition to protecting the blade and ensuring personal safety, the duct can a
 - moment of inertia
 ![image](https://user-images.githubusercontent.com/42961200/135808670-bc93c589-e7cb-470f-adec-5c5903ad9d35.png)
 
+![image](https://user-images.githubusercontent.com/42961200/135808823-80edc744-bc99-4ef3-ba81-4e1327cfb3b7.png)
+
 {% include links.html %}
