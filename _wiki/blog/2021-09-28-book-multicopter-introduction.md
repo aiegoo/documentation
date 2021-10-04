@@ -156,7 +156,8 @@ Part, and Chap. 15.
 
 ### chapter 1
 
-{% innclude image.html file="images/rflysim/multicopter_introduction_system.jpg" caption="Basic
-composition of a multicopter system" %}
+{% innclude image.html file="images/rflysim/multicopter_introduction_system.jpg" caption="Basic composition of a multicopter system" %}
+{% innclude image.html file="images/rflysim/multicopter_introduction_combination.jpg" caption="Combination and connection of a multicopter
+system '(photo by Jethro Hazelhurst from http://www.ardupilot.org)'" %}
 
 {% include links.html %}
