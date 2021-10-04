@@ -23,6 +23,11 @@ repos: aiegoo/documentation
 refer to the book wiki [multicopter_introduction](_wiki/blog/2021-09-28-book-multicopter-introduction.md)
 ### airframes
 그냥 쉽게 생각하면, 장난감 드론의 프레임과 산업용 프레임, 그리고 미션용 (유인/무인) 프레임이 있지만 기본 원리는 같다.
+[drone_notes](https://eggs.or.kr/crh/drone_resource/-/wikis/abridged-notes)
+
+[drone_keyconcpet](https://eggs.or.kr/crh/drone_resource/-/wikis/key-concept)
+
+<script src="https://gist.github.com/aiegoo/64abef5341fb498f4c6108f038473876.js"></script>
 #### fuselage
 #### landing gear
 #### props
