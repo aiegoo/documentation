@@ -7,8 +7,8 @@ collection: wiki
 summary: "개인화추천- 이커머스- 클러스터링- 협업필터링- 프로파일링"
 tags: [wiki, ai]
 excerpt_separator: <!--more-->
-date: 2021-10-04 20:54:03 +0900
-updated: 2021-10-04 8:59 PM
+date: 2021-10-04 21:10:03 +0900
+updated: 2021-10-04 9:19 PM
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
