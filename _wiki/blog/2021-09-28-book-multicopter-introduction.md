@@ -59,7 +59,7 @@ This book has five parts, fifteen chapters, as shown in Fig. 1.20.
 - Chapter 1. Introduction. It includes the basic conceptions, remote control and performance eval- 
 uation of a multicopter, history of technology development of multicopters, and the objective and 
 structure of this book.
-(1) Part I. Design Part
+#### (1) Part I. Design Part
 Through this part, readers can have a deeper understanding about the composition of a multicopter 
 system,  the  configuration  and  structural  design  for  the  airframe,  and  the  choice  of  
 the  propulsion system. These correspond to Chaps. 2–4, respectively.
@@ -73,7 +73,7 @@ ation on how to attenuate vibration and to reduce the noise.
 consists of propellers, motors, ESCs, and batteries. The components are modeled with respect to 
 energy. Then, based on these, the flight performance, such as the maximum flight time in hover mode 
 and the maximum payload, is evaluated.
-(2) Part II. Modeling Part
+#### (2) Part II. Modeling Part
 Through this part, readers can have a deeper understanding about the dynamic model of a 
 multicopter, which will be further used for the state estimation and control. This part contains 
 two chapters, including the coordinate system, attitude representation, dynamic model, and 
@@ -88,7 +88,7 @@ introduced,  which  includes  rigid  body  kinematics,  rigid  body  dynamics,  
 effectiveness model, and the propulsor model. Secondly, the aerodynamic drag model is further 
 introduced, which will be used for the state estimation in Chap. 9. Finally, methods are proposed 
 to identify the parameters of a multicopter model.
-(3) Part III. Perception Part
+#### (3) Part III. Perception Part
 Through this part, readers can have a deeper understanding about the state estimation of a 
 multicopter, which will be further used for control. This part contains three chapters.
 - Chapter 7. Sensor calibration and measurement model. A multicopter is equipped with many sen- sors, 
@@ -108,7 +108,7 @@ widely used filter, namely Kalman filter, is introduced in detail.
 obtained from sensors directly. Therefore, multisensor data fusion is very important. This chapter 
 will contain the attitude estimation, position estimation, velocity estimation, and obstacle 
 estimation.
-(4) Part IV. Control Part
+#### (4) Part IV. Control Part
 Through this part, readers can have a deeper understanding about control of a multicopter, where 
 the methods introduced are commonly used. There are three chapters in this part.
 - Chapter 10. Stability and controllability. Before controller design, the stability of a multicopter 
@@ -126,7 +126,7 @@ will be considered as a “black box.” This will be very helpful in the second
 only has it avoided the trouble of modifying the low-level source code of autopilots, but also can 
 it utilize commercial reliable autopilots to achieve the targets. This simplifies the whole design. 
 This chapter will introduce the system identification and controller design process.
-(5) Part V. Decision Part
+#### (5) Part V. Decision Part
 Through this part, readers can have a deeper understanding about high-level decision-making of a 
 multicopter. Decision-making has two objectives: mission decision-making and failsafe,¹² which cor- 
 responds to Chaps. 13 and 14, respectively.
@@ -149,15 +149,15 @@ thoughts about the opportunities and challenges.
 The  structure  shown  in  Fig. 1.20  has  considered  three  types  of  readers.  Readers  who  
 are  only interested in design can read this chapter, Design Part, and Chap. 15. Readers who are 
 only interested in perception can read the this chapter, Modeling Part, Perception Part, and Chap. 
-15. Readers who are only interested in control are suggested to read this chapter, Modeling Part, 
-Control Part, Decision
-Part, and Chap. 15.
+15. Readers who are only interested in control are suggested to read this chapter, `Modeling Part`, 
+`Control Part`, `Decision Part`, and `Chap. 15'.
 
 
 ### chapter 1
 
-{% innclude image.html file="images/rflysim/multicopter_introduction_system.jpg" caption="Basic composition of a multicopter system" %}
-{% innclude image.html file="images/rflysim/multicopter_introduction_combination.jpg" caption="Combination and connection of a multicopter
+{% include image.html file="images/rflysim/multicopter_introduction_system.jpg" caption="Basic composition of a multicopter system" %}
+
+{% include image.html file="images/rflysim/multicopter_introduction_combination.jpg" caption="Combination and connection of a multicopter
 system '(photo by Jethro Hazelhurst from http://www.ardupilot.org)'" %}
 
 {% include links.html %}
