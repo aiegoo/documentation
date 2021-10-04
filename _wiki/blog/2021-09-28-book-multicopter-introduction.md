@@ -201,5 +201,13 @@ In addition to protecting the blade and ensuring personal safety, the duct can a
   The performance of ESCs can be optimized by tuning internal parameters. There are three ways to set the parameters of ESCs, i.e., programmable cards as shown in Fig. 2.17, computer software via the USB, and RC transmitters. The parameters that can be set up include: throttle range calibration, low voltage protection, power outage value, current limitation, brakes mode, throttle  control mode, switch timing setting, starting mode, and PWM mode setting.
 - compatability
  
+### battery
+- connection
+- capacity
+- discharge rate
+  Discharge Rate (unit: C) = Current of Discharge (unit: mA) / Capacity (unit: mAh) 
+- resistance
+- energy density
+  Energy density is the amount of energy stored in a given system or region of space per unit volume or mass, and the latter is more accurately termed specific energy. In general, the units for energy density and specific energy are (Watt × hour)/kg and (Watt × hour)/L, i.e., Wh/kg and Wh/L, respectively. Batteries with higher energy density are more popular due to the contradiction between volume (weight) and endurance for a product. Lithium-ion battery as a kind of clean energy is getting more and more attentions and is widely used in many applications. The energy density of Lithium-ion batteries varies from chemistry to chemistry and the energy density can range from 240 to 300 Wh/L (double of the NiCd, 1.5 times of NiMH).
 
 {% include links.html %}
