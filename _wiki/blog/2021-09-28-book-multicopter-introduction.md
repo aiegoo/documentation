@@ -168,6 +168,7 @@ maximum thrust and then the payload capacity.
 
 #### duct
 In addition to protecting the blade and ensuring personal safety, the duct can also enhance the efficiency of thrust and reduce noise. The thrust of a multicopter with ducts is composed of two parts, i.e., the thrust of the propeller and the additional thrust induced by the duct, as shown in Fig. 2.7.
+![duct_diffuse](https://user-images.githubusercontent.com/42961200/135802184-de961195-9692-4722-a0b4-ddbb7608e6a0.png)
 
 ---
 
