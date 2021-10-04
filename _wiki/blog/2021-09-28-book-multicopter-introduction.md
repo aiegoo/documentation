@@ -209,5 +209,7 @@ In addition to protecting the blade and ensuring personal safety, the duct can a
 - resistance
 - energy density
   Energy density is the amount of energy stored in a given system or region of space per unit volume or mass, and the latter is more accurately termed specific energy. In general, the units for energy density and specific energy are (Watt × hour)/kg and (Watt × hour)/L, i.e., Wh/kg and Wh/L, respectively. Batteries with higher energy density are more popular due to the contradiction between volume (weight) and endurance for a product. Lithium-ion battery as a kind of clean energy is getting more and more attentions and is widely used in many applications. The energy density of Lithium-ion batteries varies from chemistry to chemistry and the energy density can range from 240 to 300 Wh/L (double of the NiCd, 1.5 times of NiMH).
+![image](https://user-images.githubusercontent.com/42961200/135815016-59fa4472-c13d-4000-9372-92b9e9e5f4bf.png)
+
 
 {% include links.html %}
