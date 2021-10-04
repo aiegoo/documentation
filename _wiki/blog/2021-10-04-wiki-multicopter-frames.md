@@ -8,7 +8,7 @@ summary: "multicopter introduction on airframes"
 tags: [wiki, hardware, drones, autopilot]
 excerpt_separator: <!--more-->
 date: 2021-10-04 09:44:03 +0900
-updated: 2021-10-04 
+updated: 2021-10-04 4:11 PM
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
