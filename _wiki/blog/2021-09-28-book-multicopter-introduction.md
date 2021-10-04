@@ -212,4 +212,6 @@ In addition to protecting the blade and ensuring personal safety, the duct can a
 ![image](https://user-images.githubusercontent.com/42961200/135815016-59fa4472-c13d-4000-9372-92b9e9e5f4bf.png)
 
 
+{% include image.html file="rflysim/airsim-sample.gif" caption="Learning Visuomotor Policies for Aerial Navigation Using Cross-Modal Representations" %}
+
 {% include links.html %}
