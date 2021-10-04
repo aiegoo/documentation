@@ -191,5 +191,7 @@ In addition to protecting the blade and ensuring personal safety, the duct can a
   - motor efficiency
 
 ### Electronic speed controller
+![image](https://user-images.githubusercontent.com/42961200/135810920-2b62d33e-dfc5-4259-9293-ffabf6b02c45.png)
+
 
 {% include links.html %}
