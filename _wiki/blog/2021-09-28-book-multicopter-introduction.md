@@ -177,5 +177,6 @@ In addition to protecting the blade and ensuring personal safety, the duct can a
   Generally, the propeller model is described by a four-digit number, such as a 1045 (or 10 × 45) propeller, among which the first two represents the diameter of the propeller (unit: inch), and the latter two represents the propeller pitch (also referred to as screw pitch, blade pitch or simplified as pitch, unit: inch). Therefore, the APC1045 propeller implies that the propeller belongs to APC series, and the diameter and pitch of the propeller is 10 in. and 4.5 in., respectively.
 - chord length
 - moment of inertia
+![image](https://user-images.githubusercontent.com/42961200/135808670-bc93c589-e7cb-470f-adec-5c5903ad9d35.png)
 
 {% include links.html %}
