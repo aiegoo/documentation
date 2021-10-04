@@ -153,7 +153,7 @@ only interested in perception can read the this chapter, Modeling Part, Percepti
 `Control Part`, `Decision Part`, and `Chap. 15'.
 
 
-### chapter 1
+## chapter 1
 
 {% include image.html file="rflysim/multicopter_introduction_system.jpg" caption="Basic composition of a multicopter system" %}
 
@@ -172,10 +172,21 @@ In addition to protecting the blade and ensuring personal safety, the duct can a
 
 ---
 
-#### propulsion system
-- propeller
+### propulsion system
+#### propeller
   Generally, the propeller model is described by a four-digit number, such as a 1045 (or 10 × 45) propeller, among which the first two represents the diameter of the propeller (unit: inch), and the latter two represents the propeller pitch (also referred to as screw pitch, blade pitch or simplified as pitch, unit: inch). Therefore, the APC1045 propeller implies that the propeller belongs to APC series, and the diameter and pitch of the propeller is 10 in. and 4.5 in., respectively.
 - chord length
 - moment of inertia
+
+- propeller specific thrust
+  M power(W) = Torque(N.m) X Propeller speed (rad/s)
+  - size
+  - KV value for motors
+  - No-load current, voltage
+  - max current/power
+  - resistance
+  - motor efficiency
+
+### Electronic speed controller
 
 {% include links.html %}
