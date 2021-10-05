@@ -1677,13 +1677,14 @@ kbd {
 
 /* https://www.bytedude.com/jekyll-previous-and-next-posts/#explanation */
 .post-nav.nextprevious {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
-    /* display: block; */
+    align-items: center; */
+    display:  block;
     width: auto;
     overflow: hidden;
+    position: relative;
 }
 
 /* .post-nav .nextprevious p {
@@ -1711,6 +1712,14 @@ kbd {
 
 a.wiki-next {
     text-align: right;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+a.wiki-previous {
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }
 a.wiki-next:hover {
     text-decoration-color: #42b983b2;
