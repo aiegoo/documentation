@@ -40,7 +40,6 @@ folder: mydoc
   <button class="btn btn-primary" data-group="drones">drones</button>
   <button class="btn btn-primary" data-group="python">python</button>
 </div>
-</div>
 
 <div id="grid" class="row">
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["python"]'>

@@ -13,6 +13,7 @@ date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 5:32 PM
 link: https://36io.co
 youtubeID: 1e2pDKZHNaI
+youtubeID2: rqyoWmMjJIE
 ---
 
 {% include image.html file="yoga/backbend.png" caption="Hot Yoga is a moving meditation combining asana, breath work and heat. All are needed to get the best result." %}
@@ -22,6 +23,7 @@ My first yoga book I bought during my trip to Thailand has set off a series of e
 
 {% include image_yoga.html folder="bikram" %}
 
+{% include youtubePlayer.html id=page.youtubeID2 %}
 {% include youtubePlayer.html id=page.youtubeID %}
 ### 26 poses
 
