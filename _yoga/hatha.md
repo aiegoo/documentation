@@ -12,6 +12,7 @@ box_number: 3
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 5:32 PM
 link: https://36io.co
+youtubeID: HvtECVfok58
 ---
 
 {% include image.html file="yoga/asana_pranayama.bmp" caption="Asanas and pranayama work together to establish good posture and to open the torso for better breathing" %}
@@ -36,6 +37,7 @@ My first yoga book I bought during my trip to Thailand has set off a series of e
 | ![image](https://user-images.githubusercontent.com/42961200/133865693-896e5f44-e691-4720-a9fb-60e1e937408d.png)
 | ![image](https://user-images.githubusercontent.com/42961200/133865725-2073f2a1-cfc5-4a28-a8ac-eae94020db5b.png)
 
+{% include youtubePlayer.html id=page.youtubeID %}
 ## Suryan Namaskara
 
 |---
