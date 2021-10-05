@@ -1,3 +1,17 @@
+---
+layout: page
+name: quick start cube
+sidebar: other_sidebar
+category: "drones"
+tags: [drones]
+summary: ""
+excerpt_separator: <!--more-->
+permalink: drone_quick_start_cube.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-06 7:50 AM 
+---
 # Cube Wiring Quick Start
 
 :::warning

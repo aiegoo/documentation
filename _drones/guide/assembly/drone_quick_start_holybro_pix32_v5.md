@@ -1,3 +1,17 @@
+---
+layout: page
+name: quick start holybro pix32 v5
+sidebar: other_sidebar
+category: "drones"
+tags: [drones, hardware]
+summary: ""
+excerpt_separator: <!--more-->
+permalink: drone_quick_start_holybro_pix32_v5.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-06 7:50 AM 
+---
 # Pix32 v5 Wiring Quick Start
 
 :::warning

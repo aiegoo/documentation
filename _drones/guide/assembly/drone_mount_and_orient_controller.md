@@ -1,3 +1,17 @@
+---
+layout: page
+name: mount and orient controller
+sidebar: other_sidebar
+category: "drones"
+tags: [drones, hardware]
+summary: ""
+excerpt_separator: <!--more-->
+permalink: drone_mount_and_orient_controller.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-06 7:50 AM 
+---
 # Mounting the Flight Controller
 
 ## Orientation

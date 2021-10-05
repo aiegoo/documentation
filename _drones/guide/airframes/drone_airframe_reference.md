@@ -1,3 +1,17 @@
+---
+layout: page
+name: airframe reference
+sidebar: other_sidebar
+category: "drones"
+tags: [drones, hardware]
+summary: ""
+excerpt_separator: <!--more-->
+permalink: drone_airframe_reference.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-06 7:50 AM 
+---
 # Airframes Reference
 
 :::note

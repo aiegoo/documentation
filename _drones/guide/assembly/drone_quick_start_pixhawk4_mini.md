@@ -1,3 +1,17 @@
+---
+layout: page
+name: quick start pixhawk4 mini
+sidebar: other_sidebar
+category: "drones"
+tags: [drones]
+summary: ""
+excerpt_separator: <!--more-->
+permalink: drone_quick_start_pixhawk4_mini.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-06 7:50 AM 
+---
 # *Pixhawk 4 Mini* Wiring Quick Start
 
 :::warning

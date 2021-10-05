@@ -1,3 +1,17 @@
+---
+layout: page
+name: 
+sidebar: other_sidebar
+category: "drones"
+tags: [drones]
+summary: ""
+excerpt_separator: <!--more-->
+permalink: drone_.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-06 7:50 AM 
+---
 # Basic Assembly
 
 A typical autopilot "minimal" system running PX4 consists of a flight controller connected to a power system, GPS, external compass (optional), radio control system (optional) and/or telemetry radio system (optional). 
