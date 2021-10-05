@@ -15,6 +15,7 @@ updated: 2021-09-17 5:32 PM
 link: https://36io.co
 ---
 
+## yoga overview
 
 The Types of Yoga: Understanding the Four Essential Paths
 Sadhguru looks at the four paths of yoga, and how the best way to progress is through the right combination of these four.

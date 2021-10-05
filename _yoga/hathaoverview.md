@@ -16,6 +16,7 @@ updated: 2021-09-17 5:32 PM
 link: https://36io.co
 ---
 
+## hatha overview
 ## Breathing
 [pdf](pdf/yoga/instructinghatha.pdf#page=48)
 ### types

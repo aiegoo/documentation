@@ -14,6 +14,8 @@ updated: 2021-09-17 5:32 PM
 link: https://36io.co
 ---
 
+## vinyasa flow
+
 My first yoga book I bought during my trip to Thailand has set off a series of events that truly made me who I am now. Believe it or not.
 
 [60m_session](https://www.youtube.com/watch?app=desktop&reload=9&v=9ZRvdbG54H4&feature=youtu.be)

@@ -16,6 +16,8 @@ youtubeID: 1e2pDKZHNaI
 youtubeID2: rqyoWmMjJIE
 ---
 
+## bikram 
+
 {% include image.html file="yoga/backbend.png" caption="Hot Yoga is a moving meditation combining asana, breath work and heat. All are needed to get the best result." %}
 
 

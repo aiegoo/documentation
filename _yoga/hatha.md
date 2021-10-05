@@ -15,6 +15,8 @@ link: https://36io.co
 youtubeID: HvtECVfok58
 ---
 
+## hatha 
+
 {% include image.html file="yoga/asana_pranayama.bmp" caption="Asanas and pranayama work together to establish good posture and to open the torso for better breathing" %}
 
 
