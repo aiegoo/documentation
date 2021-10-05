@@ -1685,6 +1685,7 @@ kbd {
     width: auto;
     overflow: hidden;
     position: relative;
+    height: ;
 }
 
 /* .post-nav .nextprevious p {

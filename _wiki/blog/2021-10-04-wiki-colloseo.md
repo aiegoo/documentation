@@ -1,5 +1,5 @@
 ---
-name: "추천의 원리 더 깊게 보기: 협업필터링, 프로파일링"
+name: "추천의 원리 더 깊게 보기"
 layout: post
 permalink: 2021-10-04-wiki-colloseo.html
 sidebar: other_sidebar
@@ -19,23 +19,7 @@ repos: aiegoo/documentation
 * (table of content)
 {:toc}
 
----
-title: ""
-layout: post
-date: 2018-03-17 13:38
-image: /assets/images/post/002/208_00title.png
-headerImage: true
-category: E-Commerce
-tag:
-- 개인화추천
-- 이커머스
-- 클러스터링
-- 협업필터링
-- 프로파일링
-blog: true
-author: Hyeyeon
-description: 
----
+
 
 ### Summary:
 
