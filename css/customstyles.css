@@ -1777,7 +1777,7 @@ a.wiki-previous:hover {
     }
 
 .scroll-nav   a:hover {
-        color: #e44a66;
+        color: #e44a66 !important;
     }
 
 .scroll-nav a:before {
