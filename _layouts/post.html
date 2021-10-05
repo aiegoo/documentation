@@ -49,7 +49,7 @@ layout: default
 </article>
 
 
-<div class="post-nav next-previous">
+<div class="post-nav next-previous scroll-is-hover">
     {% if page.previous %}
     {% if page.previous.url %}
     {% if page.previous.name %} 
@@ -81,6 +81,13 @@ $(function(){
       subSections: ($('.post-content > h1').length>0) ? 'h2' : 'h3'
     });
 });
+</script>
+<script>
+$('.scroll-nav a').on('mouseover', function(){
+    $(this).parent().addClass('scroll-is-hover');
+}).on('mouseout', function(){
+    $(this).parent().removeClass('scroll-is-hover');
+})
 </script>
 
 {% include commento.html %}

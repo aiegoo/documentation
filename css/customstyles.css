@@ -1776,9 +1776,8 @@ a.wiki-previous:hover {
         text-decoration: none;
     }
 
-.scroll-nav, .scroll-nav   a:hover {
+.scroll-nav   a:hover {
         color: #e44a66;
-        border-left: rgb(255, 207, 64, 0.4);
     }
 
 .scroll-nav a:before {
@@ -1831,7 +1830,10 @@ li.scroll-nav_item a:before {
     margin: 0 auto;
     padding-left: 42px; */
 }
-
+/* added this css along with js script added right after next previous script in _layouts/post.html */
+.scroll-nav.scroll-is-hover {    
+    border-left: rgb(255, 207, 64, 0.4);
+}
 @media screen and (min-width: 800px) {
     .scroll-nav {
         float: right;
