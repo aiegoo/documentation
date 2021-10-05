@@ -1,7 +1,7 @@
 ---
 layout: page
 name: "Hatha yoga"
-tags: yoga, hatha
+tags: [yoga, hatha]
 sidebar: other_sidebar
 permalink: hatha.html
 category: "Hatha"

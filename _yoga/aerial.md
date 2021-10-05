@@ -1,10 +1,10 @@
 ---
 layout: page
 name: aerial
-tags: hotyoga, bikram, yoga
+tags: [hotyoga, bikram, yoga]
 sidebar: other_sidebar
 permalink: aerial.html
-category: "aerial"
+category: "yoga, aerial"
 complex_map: true
 map_name: usermap_yoga
 box_number: 2

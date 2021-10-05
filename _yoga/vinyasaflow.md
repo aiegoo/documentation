@@ -1,7 +1,7 @@
 ---
 layout: page
 name: Vinyasa Flow
-tags: yoga, hatha
+tags: [yoga, hatha]
 sidebar: other_sidebar
 permalink: vinyasaflow.html
 category: "Vinyasa"

@@ -4,7 +4,7 @@ name: "Bikram Hot yoga"
 tags: yoga, bikram
 sidebar: other_sidebar
 permalink: bikram.html
-category: "bikram"
+category: "yoga, bikram"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_yoga

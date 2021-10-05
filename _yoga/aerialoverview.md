@@ -1,7 +1,7 @@
 ---
 layout: post
 name: Aerial overview
-tags: aerial, yoga
+tags: [aerial, yoga]
 sidebar: other_sidebar
 permalink: aerialoverview.html
 category: "Aerial"

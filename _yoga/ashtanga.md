@@ -1,7 +1,7 @@
 ---
 layout: page
 name: Ashtanga
-tags: yoga, hatha
+tags: [yoga, hatha]
 sidebar: other_sidebar
 permalink: ashtanga.html
 category: "ashtanga"

@@ -1,7 +1,7 @@
 ---
 layout: page
 name: Anatomy of Vinyasa
-tags: yoga, hatha
+tags: [yoga, hatha]
 sidebar: other_sidebar
 permalink: anatomy_vinyasa.html
 category: "Bikram"
