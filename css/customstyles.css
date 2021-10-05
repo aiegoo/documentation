@@ -1757,7 +1757,7 @@ a.wiki-previous:hover {
     font-weight: bold;
     /* background-color: rgba(168, 168, 168, 0.6); */
     border: 1px solid white;
-    border-left-color: rgba(255, 207, 64, 0.5);
+    border-left-color: rgba(255, 207, 64, 0.3);
     border-left-width: 5px;
     padding: 5px;
     position: fixed;
