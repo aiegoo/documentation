@@ -57,6 +57,14 @@ My first yoga book I bought during my trip to Thailand has set off a series of e
 | ![image](https://user-images.githubusercontent.com/42961200/135710830-1ce43c59-8019-4a68-8823-0194267d7821.png)
 | ![image](https://user-images.githubusercontent.com/42961200/135710198-171542bf-48f1-4c78-8173-8fc6cb9db79a.png)
 
+### asana 1 through 12
+![90m_session](https://user-images.githubusercontent.com/42961200/135968672-22a993c8-23aa-49db-9770-1397fa160015.png)
+
+### asana 13 through 28
+![90m_session](https://user-images.githubusercontent.com/42961200/135968915-251261f7-0557-4f38-be37-3a3c159318d6.png)
+
+### asana 29 through 41
+![90m_session](https://user-images.githubusercontent.com/42961200/135969000-8515ef1b-d586-4ec3-9d11-4a8f4222da26.png)
 
 {% include image_gallery.html folder="hatha" %}
 
