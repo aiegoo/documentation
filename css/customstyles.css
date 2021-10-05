@@ -1677,10 +1677,11 @@ kbd {
 
 /* https://www.bytedude.com/jekyll-previous-and-next-posts/#explanation */
 .post-nav.nextprevious {
-   /*  display: flex;
+    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; */
-    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    /* display: block; */
     width: auto;
     overflow: hidden;
 }
