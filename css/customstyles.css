@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
 :root { --tonyillust: url(images/tony_doc.svg); }
 
 body {
@@ -1672,7 +1680,6 @@ kbd {
    /*  display: flex;
     justify-content: space-between;
     flex-wrap: wrap; */
-    font-size: 14px;
     display: block;
     width: auto;
     overflow: hidden;
@@ -1697,6 +1704,8 @@ kbd {
      width: 50%;
      float: left;
      margin: 1em 0;
+     font-size: 14px !important;
+     font-family: 'nanumsquare' !important;
 }
 
 a.wiki-next {

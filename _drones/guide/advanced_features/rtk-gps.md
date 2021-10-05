@@ -1,3 +1,17 @@
+---
+layout: page
+name: rtk-gps
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: "GNSS/GPS systems"
+excerpt_separator: <!--more-->
+permalink: rtk-gps.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-05 0:50 AM 
+---
 # RTK GPS
 
 [Real Time Kinematic (RTK)](https://en.wikipedia.org/wiki/Real_Time_Kinematic) GNSS/GPS systems provide centimeter-level accuracy, allowing PX4 to be used in applications like precision surveying (where pinpoint accuracy is essential).

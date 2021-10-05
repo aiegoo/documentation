@@ -1,3 +1,17 @@
+---
+layout: page
+name: "readme, advanced features"
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: ""
+excerpt_separator: <!--more-->
+permalink: README.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-05 0:50 AM 
+---
 # Advanced Features
 
 This section contains topics related to some of the more advanced features of the PX4 autopilot:

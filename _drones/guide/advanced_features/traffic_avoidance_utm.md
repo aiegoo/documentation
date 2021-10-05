@@ -1,3 +1,17 @@
+---
+layout: page
+name: traffic_avoidance_utm
+sidebar: other_sidebar
+category: "drones"
+tags: drones
+summary: ""
+excerpt_separator: <!--more-->
+permalink: traffic_avoidance_utm.html
+type: "APM, Mission-planner"
+link: https://github.com/aiegoo/portfolio/wiki/
+excerpt_separator: <!--more-->
+updated: 2021-10-03 4:50 AM 
+---
 # Air Traffic Avoidance: UAS Traffic Management (UTM)
 
 PX4 can use MAVLink [`UTM_GLOBAL_POSITION`](https://mavlink.io/en/messages/common.html#UTM_GLOBAL_POSITION) messages to support simple air traffic avoidance in [missions](../flight_modes/mission.md).
