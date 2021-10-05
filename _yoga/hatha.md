@@ -61,8 +61,17 @@ My first yoga book I bought during my trip to Thailand has set off a series of e
 {% include image_gallery.html folder="hatha" %}
 
 {% include image.html file="yoga/1standingsequence.jpg" caption="Standing sequence" %}
+
+Tadasana or Samasthiti (Mountain Pose) 83 • Vrkshasana (Tree Pose) 86 • Utkata Konasana (Fire Angle Pose) 90 • Utthita Trikonasana (Extended Triangle) 93 • Parivrtta Trikonasana (Revolving Triangle Pose) 98 • Uttanasana (Intense Forward Bend) 102• Prasarita Padottanasana (Extended-Leg Forward Bend) 105 • Garudasana (Eagle Pose) 108 • Utthita Parshvakonasana (Extended Side-Angle Stretch) 112 • Ardha Chandrasana (Half-Moon Pose) 116 • 
+Parivrtta Parshvakonasana (Revolving Extended Side-Angle Stretch) 120 • Parivrtta Ardha Chandrasana (Revolving Half-Moon Pose) 124 • Utkatasana (Fierce, or Chair Pose) 128 • Virabhadrasana I (Warrior I) 131 • Virabhadrasana II 
+(Warrior II) 135 • Virabhadrasana III (Warrior III) 139 • Parshvottanasana (Intense Side Stretch) 143 • Utthita Hasta Padangusthasana (Extended Hand-to-Toe Pose) 147 • Natarajasana (King Dancer) 151
+
 {% include image.html file="yoga/2backbend.jpg" caption="Backbend series" %}
 {% include image.html file="yoga/3primaryseries.jpg" caption="Primary series" %}
+
+Malasana (Basic Squat, or Bead Pose) 157 • Dandasana (Staff Pose) 160 • Janu Shirshasana (Head-to-Knee Pose) 163 • Ardha Matsyendrasana (Half Lord of the Fishes Pose) 167 • Marichyasana A (Marichi’s Pose, Variation A) 171 • Marichyasana B (Marichi’s Pose, Variation B) 174 • Marichyasana C (Marichi’s Pose, Variation C) 177 •
+Marichyasana D (Marichi’s Pose, Variation D) 180 • Paschimottanasana (Seated Forward Bend, or Intense West-Side Stretch) 183 • Gomukhasana (Cow’s Face Pose) 187 • Paripurna Navasana (Full Boat Pose) 190 • Baddha Konasana (Bound Angle Pose) 193 • Upavishtha Konasana (Wide-Angle Seated Forward Bend) 196 • Parighasana (Kneeling Triangle, or Gate Pose) 199 • Virasana (Hero Pose) 202 • Bharadvajasana (Bharadvaja’s Pose) 205 • Padmasana (Lotus Pose) 208 • Tolasana (Scale Pose) 212 • Hanumanasana (Forward-Split Pose) 215 • Bakasana (Crane Pose) 218 
+
 {% include image.html file="yoga/4intermediate.jpg" caption="Intermediate series 1" %}
 {% include image.html file="yoga/5intermediate.jpg" caption="Intermediate series 2" %}
 {% include image.html file="yoga/6intermediate.jpg" caption="Intermediate series 3" %}
