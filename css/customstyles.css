@@ -1757,7 +1757,7 @@ a.wiki-previous:hover {
     font-weight: bold;
     /* background-color: rgba(168, 168, 168, 0.6); */
     border: 1px solid white;
-    border-left-color: rgba(255, 207, 64, 0.3);
+    border-left-color: rgba(233, 236, 239, 0.9);
     border-left-width: 5px;
     padding: 5px;
     position: fixed;
@@ -1776,8 +1776,9 @@ a.wiki-previous:hover {
         text-decoration: none;
     }
 
-.scroll-nav   a:hover {
+.scroll-nav, .scroll-nav   a:hover {
         color: #e44a66;
+        border-left: rgb(255, 207, 64, 0.4);
     }
 
 .scroll-nav a:before {
