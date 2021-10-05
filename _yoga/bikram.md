@@ -12,6 +12,7 @@ box_number: 2
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 5:32 PM
 link: https://36io.co
+youtubeID: 1e2pDKZHNaI
 ---
 
 {% include image.html file="yoga/backbend.png" caption="Hot Yoga is a moving meditation combining asana, breath work and heat. All are needed to get the best result." %}

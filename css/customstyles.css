@@ -1685,7 +1685,6 @@ kbd {
     width: auto;
     overflow: hidden;
     position: relative;
-    height: ;
 }
 
 /* .post-nav .nextprevious p {
@@ -1709,7 +1708,8 @@ kbd {
      margin: 1em 0;
      font-size: 14px !important;
      font-family: 'nanumsquare' !important;
-     white-space: nowrap;
+     white-space: nowrap;     
+    overflow: hidden;
 }
 
 a.wiki-next {
