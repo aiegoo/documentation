@@ -38,9 +38,29 @@ folder: mydoc
   <button class="btn btn-primary" data-group="jekyll">jekyll</button>
   <button class="btn btn-primary" data-group="projects">projects</button>
   <button class="btn btn-primary" data-group="drones">drones</button>
+  <button class="btn btn-primary" data-group="python">python</button>
+</div>
 </div>
 
 <div id="grid" class="row">
+<div class="col-xs-6 col-sm-4 col-md-6" data-groups='["python"]'>
+            <div class="panel panel-default">
+            <div class="panel-heading">python</div>
+            <div class="panel-body">
+              Contents related to python contents are tagged. 
+              <ul>
+            {% for page in site.pages %}
+            {% for tag in page.tags %}
+            {% if tag == "python" %}
+              <li><a href="{{page.url | remove: '/'}}">{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %} 
+              </ul>
+            </div>
+        </div>    
+</div>
+
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["drones"]'>
             <div class="panel panel-default">
             <div class="panel-heading">Drones</div>
