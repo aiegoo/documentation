@@ -1874,17 +1874,17 @@ li.scroll-nav_item a:before {
 /* moudle div well css from tykimos */
 .well {
     color: #000;
-    font-family: Monaco, "Courier New", monospace;
+    font-family: Monaco, "Courier New", monospace !important;
 }
 
 .well ul {
     color: #AAA;
     font-size: 14px;
-    list-style: none;
+    list-style: none !important;
 }
 
 .well ul a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .well ul a:hover {
