@@ -9,7 +9,7 @@ sidebar: other_sidebar
 {% if post.categories %}
 {% assign category = categories | split:',' | sort %}
 {% for item in (post.categories.size) %}{% unless forloop.last %}
-{% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
+{% assign word = category[item] | strip_newlines %}
 <h2 class="category" id="{{ word }}">{{ word }}</h2>
 <ul>
 {% for post in site.categories[word] %}{% if post.title != null %}
