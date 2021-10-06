@@ -11,8 +11,8 @@ sidebar: other_sidebar
 {% assign word = category[item] | strip_newlines %}
 <h2 class="category" id="{{ word }}">{{ word }}</h2>
 <ul>
-{% for post in post.categories[word] %}{% if post.title != null %}
-<li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+{% for post in post.categories[word] %}{% if post.name != null %}
+<li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.name }}</a></li>
 {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
@@ -24,8 +24,8 @@ sidebar: other_sidebar
 {% assign word = category[item] | strip_newlines %}
 <h2 class="category" id="{{ word }}">{{ word }}</h2>
 <ul>
-{% for post in wiki.categories[word] %}{% if post.title != null %}
-<li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+{% for post in wiki.categories[word] %}{% if post.name != null %}
+<li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ wiki.name }}</a></li>
 {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
