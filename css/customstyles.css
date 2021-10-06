@@ -1875,6 +1875,7 @@ li.scroll-nav_item a:before {
 .well {
     color: #000;
     font-family: Monaco, "Courier New", monospace !important;
+    background-color: #fff;
 }
 
 .well ul {
