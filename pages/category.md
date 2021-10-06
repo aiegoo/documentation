@@ -5,7 +5,7 @@ sidebar: other_sidebar
 ---
 
 <div class="well">
-{% for post in site.posts | sort: "date" %}
+{% for collection in site.collections %}
 {% assign category = post.categories | split:',' %}
 {% for item in category %}{% unless forloop.last %}
 <h2 class="category" id="{{ item }}">{{ item }}</h2>
