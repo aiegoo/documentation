@@ -6,7 +6,7 @@ sidebar: other_sidebar
 
 <div class="home">
 {% for post in site.posts | sort: "date" %}
-{% assign category = page.categories | split:',' | sort %}
+{% assign category = post.categories | split:',' | sort %}
 {% for item in category | size %}{% unless forloop.last %}
 {% assign word = category[item] | strip_newlines %}
 <h2 class="category" id="{{ word }}">{{ word }}</h2>
