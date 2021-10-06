@@ -4,7 +4,7 @@ permalink: category.html
 sidebar: other_sidebar
 ---
 
-<div class="well">
+<div class="app">
 {% for collection in site.collections %}
   <h6 class="post-meta">Items from {{ collection.label }}</h6>
   <ul>
