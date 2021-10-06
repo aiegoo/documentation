@@ -1870,3 +1870,15 @@ li.scroll-nav_item a:before {
 .tag-pink a:hover, .tag-pink a:focus {
     background-color: #ba3329 !important;
 }
+
+/* moudle div well css from tykimos */
+.well {
+    color: #000;
+    font-family: Monaco, "Courier New", monospace;
+}
+
+.well ul {
+    color: #AAA;
+    font-size: 14px;
+    list-style: none;
+}
