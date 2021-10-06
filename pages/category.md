@@ -6,7 +6,6 @@ sidebar: other_sidebar
 
 <div class="home">
 {% for post in site.posts | sort: "date" %}
-{% if post.categories %}
 {% assign category = categories | split:',' | sort %}
 {% for item in (post.categories.size) %}{% unless forloop.last %}
 {% assign word = category[item] | strip_newlines %}
@@ -17,7 +16,6 @@ sidebar: other_sidebar
 {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
-{% endif %}
 {% endfor %}
 <br/><br/>
 </div>
