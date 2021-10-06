@@ -65,7 +65,7 @@ layout: default
     {% if page.next.name %}
     <a class="wiki-next" href="{% if page.next_post %} {{page.next_post}} {% else %} {{page.next.url}} {% endif %}">{{page.next.name}}&nbsp;<span class="iconify" data-icon="mdi:chevron-double-right" style="font-size: 36px; vertical-align: middle;"></span></a>
     {% else %}
-    <a class="wiki-next" href="{% if page.next_post %} {{page.next_post}} {% else %} {{page.next.url}} {% endif %}">&#8672;&nbsp;{{page.next.subtitle}}</a>
+    <a class="wiki-next" href="{% if page.next_post %} {{page.next_post}} {% else %} {{page.next.url}} {% endif %}">&#8674;&nbsp;{{page.next.subtitle}}</a>
     {% endif %}
     {% endif %}
     {% endif %}
