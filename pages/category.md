@@ -20,7 +20,7 @@ sidebar: other_sidebar
 <br/><br/>
 {% for post in site.wiki | sort: "date" %}
 {% assign category = page.categories | split:',' | sort %}
-{% for item in category | size %}{% unless forloop.last %}
+{% for item in category %}{% unless forloop.last %}
 {% assign word = category[item] | strip_newlines %}
 <h2 class="category" id="{{ word }}">{{ word }}</h2>
 <ul>
