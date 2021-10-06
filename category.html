@@ -5,16 +5,17 @@ sidebar: other_sidebar
 ---
 
 <div class="home">
-{% for category in site.post.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}
+{% if post.categories %}
+{% for category in post.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}
 {% assign category = categories | split:',' | sort %}
-{% for item in (0..site.post.categories.size) %}{% unless forloop.last %}
+{% for item in (0..post.categories.size) %}{% unless forloop.last %}
 {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
 <h2 class="category" id="{{ word }}">{{ word }}</h2>
 <ul>
-{% for post in site.post.categories[word] %}{% if post.title != null %}
+{% for post in post.categories[word] %}{% if post.title != null %}
 <li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
 {% endif %}{% endfor %}
 </ul>
-{% endunless %}{% endfor %}
+{% endunless %}{% endfor %}{% endif %}
 <br/><br/>
 </div>
