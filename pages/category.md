@@ -6,10 +6,10 @@ sidebar: other_sidebar
 
 <div class="app">
 {% for collection in site.collections %}
-  <h6 class="post-meta">Items from {{ collection.label }}</h6>
-  <ul>
+  <h6 class="post-meta">List published as {{ collection.label }} collection</h6>
+  <ul class="post-list">
     {% for item in site[collection.label] %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      <li><span>{{ post.date | date: "%b %d" }}</span>»<a href="{{ item.url }}">{{ item.title }}</a></li>
     {% endfor %}
   </ul>
 
