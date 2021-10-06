@@ -8,10 +8,9 @@ sidebar: other_sidebar
 {% for post in site.posts | sort: "date" %}
 {% assign category = post.categories | split:',' %}
 {% for item in category %}{% unless forloop.last %}
-{% assign word = category[item] | strip_newlines %}
-<h2 class="category" id="{{ word }}">{{ word }}</h2>
+<h2 class="category" id="{{ item }}">{{ item }}</h2>
 <ul>
-{% for post in post.categories[word] %}{% if post.name != null %}
+{% for post in post.categories[item] %}{% if post.name != null %}
 <li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.name }}</a></li>
 {% endif %}{% endfor %}
 </ul>
