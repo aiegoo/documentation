@@ -1882,3 +1882,12 @@ li.scroll-nav_item a:before {
     font-size: 14px;
     list-style: none;
 }
+
+.well ul a {
+    text-decoration: none;
+}
+
+.well ul a:hover {
+    color: #000;
+}
+
