@@ -118,6 +118,9 @@ collections:
   wiki:
     output: true
     permalink: /wiki/:title
+  category:
+    output: true
+    permalink: /category/:title
 
 
     
