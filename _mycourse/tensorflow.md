@@ -3,7 +3,7 @@ layout: page
 name: tensorflow
 sidebar: other_sidebar
 permalink: tensorflow.html
-category: "deep learning"
+categories: "deep learning"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_mycourse

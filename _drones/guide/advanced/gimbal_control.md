@@ -2,7 +2,7 @@
 layout: page
 name: "gimbal control"
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 permalink: gimbal_control.html
 type: "APM, Mission-planner"

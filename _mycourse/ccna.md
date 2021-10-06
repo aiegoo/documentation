@@ -3,7 +3,7 @@ layout: page
 name: networking
 sidebar: other_sidebar
 permalink: ccna.html
-category: "networking"
+categories: "networking"
 complex_map: true
 map_name: usermap_mycourse
 box_number: 2

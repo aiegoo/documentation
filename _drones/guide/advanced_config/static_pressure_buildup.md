@@ -2,7 +2,7 @@
 layout: page
 name: static_pressure_buildup
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 tags: drones
 excerpt_separator: <!--more-->
 permalink: static_pressure_buildup.html

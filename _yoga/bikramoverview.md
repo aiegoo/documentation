@@ -5,7 +5,7 @@ tags: [yoga, bikram]
 summary: "A discipline without dogma"
 sidebar: other_sidebar
 permalink: bikramoverview.html
-category: "overview"
+categories: "overview"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_yoga

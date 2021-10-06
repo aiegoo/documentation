@@ -5,7 +5,7 @@ tags: [yoga, hatha]
 sidebar: other_sidebar
 toc: true
 permalink: hathaoverview.html
-category: "overview"
+categories: "overview"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_yoga

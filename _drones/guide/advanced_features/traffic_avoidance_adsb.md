@@ -2,7 +2,7 @@
 layout: page
 name: traffic avoidance adsb
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 tags: drones
 summary: ""
 excerpt_separator: <!--more-->

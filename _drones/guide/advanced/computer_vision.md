@@ -3,7 +3,7 @@ layout: page
 name: "comupter vision"
 title: "comupter vision"
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 tags: [drones]
 summary: "used when gps is not available"
 excerpt_separator: <!--more-->

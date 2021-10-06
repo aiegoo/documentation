@@ -2,7 +2,7 @@
 layout: page
 name: bikram
 permalink: bikram.html
-category: "bikram"
+categories: "bikram"
 link: https://www.pf1.36io.co
 ---
 

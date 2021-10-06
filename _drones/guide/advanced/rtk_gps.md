@@ -2,7 +2,7 @@
 layout: page
 name: rtk_gps
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 permalink: rtk_gps.html
 type: "APM, Mission-planner"

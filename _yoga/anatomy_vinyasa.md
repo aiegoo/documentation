@@ -4,7 +4,7 @@ name: Anatomy of Vinyasa
 tags: [yoga, hatha]
 sidebar: other_sidebar
 permalink: anatomy_vinyasa.html
-category: "Bikram"
+categories: "Bikram"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_yoga

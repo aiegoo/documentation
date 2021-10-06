@@ -2,7 +2,7 @@
 layout: page
 name: airframe readme
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 tags: [drones, hardware]
 summary: ""
 excerpt_separator: <!--more-->

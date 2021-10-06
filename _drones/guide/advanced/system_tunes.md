@@ -2,7 +2,7 @@
 layout: page
 name: system_tunes
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 permalink: system_tunes.html
 type: "APM, Mission-planner"

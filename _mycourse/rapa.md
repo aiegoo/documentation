@@ -3,7 +3,7 @@ layout: page
 name: "5G Flying Course"
 sidebar: other_sidebar
 permalink: rapa.html
-category: "rapa"
+categories: "rapa"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_mycourse

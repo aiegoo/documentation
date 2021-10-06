@@ -3,7 +3,7 @@ layout: page
 name: "drones dronekit"
 sidebar: other_sidebar
 permalink: drones_dronekit.html
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_drones

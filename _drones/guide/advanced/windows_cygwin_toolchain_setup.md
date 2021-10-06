@@ -2,7 +2,7 @@
 layout: page
 name: windows_cygwin_toolchain_setup
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 permalink: windows_cygwin_toolchain_setup.html
 type: "APM, Mission-planner"

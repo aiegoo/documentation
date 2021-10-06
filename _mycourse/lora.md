@@ -3,7 +3,7 @@ layout: page
 name: lora
 sidebar: other_sidebar
 permalink: lora.html
-category: "lora"
+categories: "lora"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_mycourse

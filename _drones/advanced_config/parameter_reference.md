@@ -3,7 +3,7 @@ layout: page
 name: paramete reference
 title: parameter reference
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 permalink: parameter_reference.html
 type: "APM, Mission-planner, drones"

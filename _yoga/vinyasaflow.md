@@ -4,7 +4,7 @@ name: Vinyasa Flow
 tags: [yoga, hatha]
 sidebar: other_sidebar
 permalink: vinyasaflow.html
-category: "Vinyasa"
+categories: "Vinyasa"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_yoga

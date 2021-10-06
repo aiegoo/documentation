@@ -2,7 +2,7 @@
 layout: page
 name: realsense_intel_driver
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 permalink: realsense_intel_driver.html
 type: "APM, Mission-planner"

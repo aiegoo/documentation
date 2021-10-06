@@ -2,7 +2,7 @@
 layout: page
 name: Readme
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 permalink: README.html
 type: "APM, Mission-planner"

@@ -2,7 +2,7 @@
 layout: page
 name: rtk-gps
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 tags: drones
 summary: "GNSS/GPS systems"
 excerpt_separator: <!--more-->

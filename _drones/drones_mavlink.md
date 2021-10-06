@@ -3,7 +3,7 @@ layout: page
 name: "drones mavlink"
 sidebar: other_sidebar
 permalink: drones_mavlink.html
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_drones

@@ -3,7 +3,7 @@ layout: page
 name: "drones hardware_specs"
 sidebar: other_sidebar
 permalink: drones_hardware.html
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_drones

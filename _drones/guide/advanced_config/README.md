@@ -2,7 +2,7 @@
 layout: page
 name: README
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 tags: drones
 summary: ""
 excerpt_separator: <!--more-->

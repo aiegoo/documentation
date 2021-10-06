@@ -2,7 +2,7 @@
 layout: page
 name: parameters_and_configurations
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 permalink: parameters_and_configurations.html
 type: "APM, Mission-planner"

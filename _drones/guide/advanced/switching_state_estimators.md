@@ -2,7 +2,7 @@
 layout: page
 name: switching_state_estimators
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 permalink: switching_state_estimators.html
 type: "APM, Mission-planner"

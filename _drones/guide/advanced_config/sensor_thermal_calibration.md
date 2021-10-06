@@ -2,7 +2,7 @@
 layout: page
 name: sensor_thermal_calibration
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 tags: drones, hardware, sensors
 summary: ""
 excerpt_separator: <!--more-->

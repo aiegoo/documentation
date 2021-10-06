@@ -2,7 +2,7 @@
 layout: page
 name: out_of_tree_modules
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 excerpt_separator: <!--more-->
 permalink: out_of_tree_modules.html
 type: "APM, Mission-planner"

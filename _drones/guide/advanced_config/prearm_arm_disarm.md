@@ -2,7 +2,7 @@
 layout: page
 name: prearm_arm_disarm
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 tags: drones, autopilot
 summary: ""
 excerpt_separator: <!--more-->

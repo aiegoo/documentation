@@ -2,7 +2,7 @@
 layout: page
 name: quick start pixhawk4
 sidebar: other_sidebar
-category: "drones"
+categories: "drones"
 tags: [drones, hardware]
 summary: ""
 excerpt_separator: <!--more-->

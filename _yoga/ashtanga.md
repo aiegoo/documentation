@@ -4,7 +4,7 @@ name: Ashtanga
 tags: [yoga, hatha]
 sidebar: other_sidebar
 permalink: ashtanga.html
-category: "ashtanga"
+categories: "ashtanga"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_yoga

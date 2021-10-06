@@ -2,7 +2,7 @@
 layout: page
 name: hotyoga
 permalink: hatha.html
-category: "Hatha"
+categories: "Hatha"
 link: https://www.pf1.36io.co
 ---
 
