@@ -5,9 +5,6 @@ sidebar: other_sidebar
 ---
 
 <div class="home">
-{% for post in site.posts %}
-{% for wiki in site.wiki %}
-{% if site.collections %}
 {% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}
 {% assign category = categories | split:',' | sort %}
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
@@ -19,8 +16,5 @@ sidebar: other_sidebar
 {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endif %}
 <br/><br/>
 </div>
