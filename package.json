@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "videojs-youtube": "^2.6.1"
+    "videojs-youtube": "^2.6.1",
+    "yamljs": "^0.3.0"
   }
 }

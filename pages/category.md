@@ -7,7 +7,7 @@ sidebar: other_sidebar
 <div class="home">
 {% for post in site.posts | sort: "date" %}
 {% assign category = post.categories | split:',' | sort %}
-{% for item in (category.size) %}{% unless forloop.last %}
+{% for item in category | size %}{% unless forloop.last %}
 {% assign word = category[item] | strip_newlines %}
 <h2 class="category" id="{{ word }}">{{ word }}</h2>
 <ul>
@@ -20,7 +20,7 @@ sidebar: other_sidebar
 <br/><br/>
 {% for post in site.wiki | sort: "date" %}
 {% assign category = wiki.categories | split:',' | sort %}
-{% for item in (category.size) %}{% unless forloop.last %}
+{% for item in category | size %}{% unless forloop.last %}
 {% assign word = category[item] | strip_newlines %}
 <h2 class="category" id="{{ word }}">{{ word }}</h2>
 <ul>
