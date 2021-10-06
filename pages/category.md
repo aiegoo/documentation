@@ -5,9 +5,10 @@ sidebar: other_sidebar
 ---
 
 <div class="home">
-{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}
+{% for post in site.posts | sort: "date" %}
+{% if post.categories %}
 {% assign category = categories | split:',' | sort %}
-{% for item in (0..site.categories.size) %}{% unless forloop.last %}
+{% for item in (post.categories.size) %}{% unless forloop.last %}
 {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
 <h2 class="category" id="{{ word }}">{{ word }}</h2>
 <ul>
@@ -16,5 +17,7 @@ sidebar: other_sidebar
 {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
+{% endif %}
+{% endfor %}
 <br/><br/>
 </div>
