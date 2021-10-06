@@ -6,6 +6,13 @@ sidebar: other_sidebar
 
 <div class="well">
 {% for collection in site.collections %}
+  <h6 class="post-meta">Items from {{ collection.label }}</h6>
+  <ul>
+    {% for item in site[collection.label] %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+
 {% assign category = post.categories | split:',' %}
 {% for item in category %}{% unless forloop.last %}
 <h2 class="category" id="{{ item }}">{{ item }}</h2>
