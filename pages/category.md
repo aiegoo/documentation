@@ -9,7 +9,7 @@ sidebar: other_sidebar
   <h6 class="post-meta">List published as {{ collection.label }} collection</h6>
   <ul class="post-list">
     {% for item in site[collection.label] %}
-      <li><span>{{ time_tag: '%a, %b %d, %Y' }}</span>»<a href="{{ item.url }}">{{ item.title }}</a></li>
+      <li><span>{{ time_tag: '%a, %b %d, %Y' }}</span>»<a href="{{ item.url }}">{{ item.title }}</a><span>{{ item.tags }}</span></li>
     {% endfor %}
   </ul>
 
