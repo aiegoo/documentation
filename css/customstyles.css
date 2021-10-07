@@ -1934,6 +1934,7 @@ li.scroll-nav_item a:before {
 font-family: 'NanumBarunpen' !important;
     margin: 1em 0 !important;
     font-size: 16px !important;
+    font-spacing: 3px;
 }
 
 @media only screen and (min-width: 992px){
