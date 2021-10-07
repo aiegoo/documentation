@@ -1931,6 +1931,10 @@ li.scroll-nav_item a:before {
     z-index: 1;
 }
 
+.well h6.category-h6 {
+    font-family: 'NanumBarunpen';
+    margin: 1em 0;
+}
 
 /* highlight css */
 .highlight {
