@@ -1917,6 +1917,9 @@ li.scroll-nav_item a:before {
     padding-right: 0.33em;
 }
 
+.well ul span {
+    overflow: hidden;
+}
 
 .well ul span+div {
     float: right;
