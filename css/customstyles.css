@@ -4,7 +4,16 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+// 눈누 링크: https://noonnu.cc/font_page/42 나눔바른펜
+@font-face {
+    font-family: 'NanumBarunpen';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root { --tonyillust: url(images/tony_doc.svg); }
 
@@ -1871,6 +1880,7 @@ li.scroll-nav_item a:before {
     background-color: #ba3329 !important;
 }
 
+/* category css */
 /* moudle div well css from tykimos */
 .well {
     color: #000;
@@ -1892,3 +1902,31 @@ li.scroll-nav_item a:before {
     color: #000;
 }
 
+/* baseurl/category css */
+
+/* index의 blog 목차에 "dot leader" 형식 적용 */
+/* 참조 링크: https://www.w3.org/Style/Examples/007/leaders.en.html */
+.well ul {
+    overflow-x: hidden;
+}
+
+.well ul span:after {
+    float: left;
+    width: 0;
+    white-space: pre;
+    content:
+        "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
+        "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
+        "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
+}
+
+.well ul span:first-child {
+    padding-right: 0.33em;
+}
+
+.well ul span+div {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    z-index: 1;
+}
