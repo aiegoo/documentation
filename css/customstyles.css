@@ -1886,6 +1886,8 @@ li.scroll-nav_item a:before {
     color: #000;
     font-family: Monaco, "Courier New", monospace !important;
     background-color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .well ul {
@@ -1917,7 +1919,8 @@ li.scroll-nav_item a:before {
     content:
         "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
         "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
-        "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
+        "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ";
+        overflow: hidden;
 }
 
 .well ul span:first-child {
