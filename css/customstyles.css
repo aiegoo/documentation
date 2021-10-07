@@ -1910,7 +1910,7 @@ li.scroll-nav_item a:before {
     overflow-x: hidden;
 }
 
-.well ul span:after {
+.well ul span:before {
     float: left;
     width: 0;
     white-space: pre;
