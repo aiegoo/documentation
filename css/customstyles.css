@@ -1912,17 +1912,6 @@ li.scroll-nav_item a:before {
     overflow-x: hidden;
 }
 
-.well ul span:before {
-    float: left;
-    width: 0;
-    white-space: pre;
-    content:
-        "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
-        "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
-        "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ";
-        overflow: hidden;
-}
-
 .well ul span:first-child {
     padding-right: 0.33em;
 }
@@ -1938,6 +1927,19 @@ li.scroll-nav_item a:before {
 font-family: 'NanumBarunpen' !important;
     margin: 1em 0 !important;
     font-size: 19px !important;
+}
+
+@media  only screen and (min-width: 768px){
+    .well ul span:before {
+        float: left;
+        width: 0;
+        white-space: pre;
+        content:
+            "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
+            "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
+            "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ";
+        overflow: hidden;
+    }
 }
 
 /* highlight css */
