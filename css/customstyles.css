@@ -1910,7 +1910,7 @@ li.scroll-nav_item a:before {
 /* index의 blog 목차에 "dot leader" 형식 적용 */
 /* 참조 링크: https://www.w3.org/Style/Examples/007/leaders.en.html */
 .well ul {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 .well ul span:first-child {
