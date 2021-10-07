@@ -1898,6 +1898,7 @@ li.scroll-nav_item a:before {
 
 .well ul a {
     text-decoration: none !important;
+    text-overflow: hidden !important;
 }
 
 .well ul a:hover {
@@ -1921,6 +1922,7 @@ li.scroll-nav_item a:before {
     padding-left: 0.33em;
     position: relative;
     z-index: 1;
+    overflow: hidden !important;
 }
 
 .well h6.category-h6 {
