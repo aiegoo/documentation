@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: none
 permalink: category.html
 sidebar: other_sidebar
 ---
