@@ -6,7 +6,7 @@ sidebar: other_sidebar
 
 <div class="well">
 {% for collection in site.collections %}
-  <h6 class="post-meta">List published as {{ collection.label }} collection</h6>
+  <h6 class="post-meta">{{ collection.label }} collection articles</h6>
   <ul class="post-list">
     {% for item in site[collection.label] %}
       <li>
