@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: portfolio
 permalink: category.html
 sidebar: other_sidebar
 ---
