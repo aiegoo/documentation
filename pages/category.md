@@ -10,7 +10,7 @@ sidebar: other_sidebar
   <ul class="post-list col-xs-12">
     {% for item in site[collection.label] %}
       <li>
-      <time datetime="{{ site.time | date_to_xmlschema }}" itemprop="datePublished">{{ site.time | date: "%b %-d" }}</time>» <a href="{{ item.url }}">{{ item.title }}</a><span> {% if item.tags != blank %} &#8674; {{ item.tags  | array_to_sentence_string }} {% endif %}</span></li>
+      <time datetime="{{ page.date  | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d" }}</time>» <a href="{{ item.url }}">{{ item.title }}</a><span> {% if item.tags != blank %} &#8674; {{ item.tags  | array_to_sentence_string }} {% endif %}</span></li>
     {% endfor %}
   </ul>
 
