@@ -1926,10 +1926,10 @@ li.scroll-nav_item a:before {
 .well h6.category-h6 {
 font-family: 'NanumBarunpen' !important;
     margin: 1em 0 !important;
-    font-size: 19px !important;
+    font-size: 16px !important;
 }
 
-@media  only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
     .well ul span:before {
         float: left;
         width: 0;
