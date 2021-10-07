@@ -7,7 +7,7 @@ sidebar: other_sidebar
 <div class="well">
 {% for collection in site.collections %}
   <h6 class="post-meta">{{ collection.label }} collection articles</h6>
-  <ul class="post-list">
+  <ul class="post-list col-xs-12">
     {% for item in site[collection.label] %}
       <li>
       <time datetime="{{ site.time | date_to_xmlschema }}" itemprop="datePublished">{{ site.time | date: "%b %-d" }}</time>» <a href="{{ item.url }}">{{ item.title }}</a><span> {% if item.tags != blank %} &#8674; {{ item.tags  | array_to_sentence_string }} {% endif %}</span></li>
