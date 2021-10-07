@@ -1919,6 +1919,7 @@ li.scroll-nav_item a:before {
 
 .well ul span {
     overflow: hidden;
+    letter-spacing: 4px;
 }
 
 .well ul span+div {
