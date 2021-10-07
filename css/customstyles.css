@@ -1932,8 +1932,9 @@ li.scroll-nav_item a:before {
 }
 
 .well h6.category-h6 {
-    font-family: 'NanumBarunpen';
-    margin: 1em 0;
+font-family: 'NanumBarunpen' !important;
+    margin: 1em 0 !important;
+    font-size: 19px !important;
 }
 
 /* highlight css */
