@@ -30,7 +30,26 @@ sidebar: other_sidebar
 
 
 <div class="home">
-
+<ul class="topics">
+{% capture category %}
+  {% for category in site.categories %}
+    {{ category[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sorted_category = category | split: ' ' | sort %}
+  {% for category in sorted_category %}
+  <li class="topic-head><b> {{ category }} ({{ site.categories[category] | size }} topics)</b>
+    <ul class='subnavlist'>
+    {% assign topics = site.categories[category] %}
+    {% for topic in topics %}
+      <li class='topic-item {% if topic.url == page.url %}active{% endif%}'>
+      <a href='/{{ baseurl }}{{ page.url }}'> {{ page.name}}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </li>
+  {% endfor %}
+</ul>
 
 {% assign entry = wiki.categories[entries]  %}
 {% for wiki in site.wiki reversed %}
