@@ -16,27 +16,25 @@ sidebar: other_sidebar
 
 {% for wiki in site.wiki %}
 {% assign category = wiki.categories | split:',' %}
-{% for item in wiki.categories[item] %}{% unless forloop.last %}
+{% for item in wiki.categories[item] %}
 <h3 class="category" id="{{ item }}">{{ item }}</h3>
-<ul class="post-list">
-{% for item in wiki.categories[item] %}{% if wiki.name != null %}
-<li><span>{{ wiki.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ wiki.url }}">{{ wiki.name }}</a></li>
-{% endif %}{% endfor %}
-</ul>
-{% endunless %}{% endfor %}
+{% endfor %}
 {% endfor %}
 <br/><br/>
 
-{% for post in site.wiki | sort: "date" %}
+{% for post in site.wiki %}
 {% assign category = page.categories | split:',' | sort %}
-{% for item in category %}{% unless forloop.last %}
+{% for item in category %}
 <h2 class="category" id="{{ item }}">{{ item }}</h2>
 <ul>
 {% for post in wiki.categories[item] %}{% if post.name != null %}
 <li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ item.url }}">{{ item.name }}</a></li>
-{% endif %}{% endfor %}
+{% endif %}
+{% endfor %}
 </ul>
-{% endunless %}{% endfor %}
+{% endfor %}
 {% endfor %}
 <br/><br/>
+
+{% endfor %}
 </div>

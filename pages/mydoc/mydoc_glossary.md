@@ -51,7 +51,7 @@ gratuitous
 impertinent
 : {{site.data.glossary.intrepid}}{% endraw %}
 ```
-항행안전시설
+'항행안전시설'
 : {{site.data.glossary}}
 The glossary works well as a link in the top navigation bar.
 
