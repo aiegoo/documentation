@@ -1,7 +1,7 @@
 repository: aiegoo/documentation
 url: aiegoo.github.io
-#baseurl: /documentation
-baseurl: ""
+baseurl: /documentation
+#baseurl: ""
 output: web
 imagesurl_yoga: "images/yoga/"
 imagesurl_yoga_hatha: "images/yoga/hatha/"
@@ -250,9 +250,10 @@ words_per_minute:   120
 github: [metadata]
 
 plugins:
+  - jekyll-paginate
   - jekyll-gist
   - jekyll-spaceship
-  - jemoji  
+#  - jemoji  
 
 
 # Where things are
