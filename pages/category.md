@@ -12,6 +12,7 @@ sidebar: other_sidebar
       <time datetime="{{ item.date  | date_to_xmlschema }}" itemprop="datePublished">{{ item.date | date: "%b %-d" }}</time>» <a href="{{ item.url }}">{{ item.title }}</a><span> {% if item.tags != blank %} &#8674; {{ item.tags  | array_to_sentence_string }} {% endif %}</span></li>
     {% endfor %}
   </ul>
+{% endfor %}
 
 {% assign category = wiki.categories  %}
 {% for wiki in site.wiki reversed | where: "wiki", "wiki.categories" %}
@@ -33,5 +34,5 @@ sidebar: other_sidebar
 {% endfor %}
 <br/>
 
-{% endfor %}
+
 </div>
