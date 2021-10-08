@@ -17,7 +17,7 @@ sidebar: other_sidebar
 {% for category in category %}
 <h3 class="category category-h6 highlight o" id="{{ category }}">{{ category }}</h3>
 {% endfor %}
-<br/><br/>
+<br/>
 
 {% for post in site.wiki %}
 {% assign category = page.categories | split:',' | sort %}
@@ -31,7 +31,7 @@ sidebar: other_sidebar
 </ul>
 {% endfor %}
 {% endfor %}
-<br/><br/>
+<br/>
 
 {% endfor %}
 </div>
