@@ -14,7 +14,6 @@ sidebar: other_sidebar
   </ul>
 
 {% for category in wiki.categories %}
-{% assign category = wiki.categories | split:',' %}
 <h3 class="category category-h6 highlight o" id="{{ category }}">{{ category }}</h3>
 {% endfor %}
 <br/><br/>
