@@ -1937,15 +1937,14 @@ font-family: 'NanumBarunpen' !important;
     font-spacing: 3px;
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 993px){
     .well ul span:before {
         float: left;
-        width: 0;
+        width: 7%;
         white-space: nowrap;
-        content:
-            "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
-            "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · "
-            "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ";
+        content: "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · " "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · " "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ";
+        overflow: hidden;
+        margin-left: -30px;
     }
 }
 
