@@ -1692,7 +1692,6 @@ kbd {
     align-items: center; */
     display:  block;
     width: auto;
-    overflow: hidden;
     position: relative;
 }
 
