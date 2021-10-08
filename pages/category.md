@@ -24,7 +24,7 @@ sidebar: other_sidebar
 <li><span>{{ wiki.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ wiki.url }}">{{ wiki.name }}</a></li>
 {% endif %}{% endfor %}
 </ul>
-{% endif %}{% endunless %}{% endif %}{% endfor %}
+{% endunless %}{% endif %}{% endfor %}
 {% endfor %}
 <br/><br/>
 
