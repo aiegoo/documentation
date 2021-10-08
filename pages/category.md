@@ -6,7 +6,7 @@ sidebar: other_sidebar
 
 <div class="well">
 {% for collection in site.collections %}
-  <h6 class="post-meta category-h6">{{ collection.label }} collection articles</h6>
+  <h6 class="post-meta category-h6">{{ collection.label }} collection categoy</h6>
   <ul class="post-list">
     {% for item in site[collection.label] %}
       <li>
@@ -14,12 +14,12 @@ sidebar: other_sidebar
     {% endfor %}
   </ul>
 
-{% assign category = post.categories | split:',' %}
+{% assign category = wiki.categories | split:',' %}
 {% for item in category %}{% unless forloop.last %}
-<h2 class="category" id="{{ item }}">{{ item }}</h2>
+<h3 class="category" id="{{ item }}">{{ item }}</h3>
 <ul>
-{% for post in post.categories[item] %}{% if post.name != null %}
-<li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.name }}</a></li>
+{% for item in wiki.categories[item] %}{% if wiki.name != null %}
+<li><span>{{ wiki.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ wiki.name }}</a></li>
 {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
