@@ -15,7 +15,7 @@ sidebar: other_sidebar
 {% endfor %}
 
 {% assign category = wiki.categories  %}
-{% for wiki in site.wiki reversed | where: "wiki", "wiki.categories" %}
+{% for wiki in site.wiki reversed %}
 <h3 class="category category-h6 highlight o" id="{{ category }}">{{ category }}</h3>
 {% endfor %}
 <br/>
