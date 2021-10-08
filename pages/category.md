@@ -13,13 +13,6 @@ sidebar: other_sidebar
     {% endfor %}
   </ul>
 {% endfor %}
-
-{% assign category = wiki.categories  %}
-{% for wiki in site.wiki reversed %}
-<h3 class="category category-h6 highlight o" id="{{ category }}">{{ category }}</h3>
-{% endfor %}
-<br/>
-
 {% for post in site.wiki %}
 {% assign category = page.categories | split:',' | sort %}
 {% for item in category %}
@@ -31,6 +24,17 @@ sidebar: other_sidebar
 {% endfor %}
 </ul>
 {% endfor %}
+{% endfor %}
+<br/>
+</div>
+
+
+<div class="home">
+
+
+{% assign category = wiki.categories  %}
+{% for wiki in site.wiki reversed %}
+<h3 class="post-meta category category-h6 highlight o" id="{{ category }}">{{ category }}</h3>
 {% endfor %}
 <br/>
 
