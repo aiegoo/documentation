@@ -9,7 +9,7 @@ entries:
 
   - title: Category
     url: /category/
-    output: pdf
+    output: web, pdf
     type: frontmatter
     folderitems:
     - title:
