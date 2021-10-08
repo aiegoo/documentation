@@ -9,7 +9,7 @@ entries:
   - title: Category
     url: /category/
     output: web, pdf
-  folders:
+    folders:
 
   - title: Category
     url: /category/
