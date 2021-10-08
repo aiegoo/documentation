@@ -3,7 +3,6 @@ layout: portfolio
 permalink: category.html
 sidebar: other_sidebar
 ---
-
 <div class="well">
 {% for collection in site.collections %}
   <h6 class="post-meta category-h6">{{ collection.label }} collection categoy</h6>
