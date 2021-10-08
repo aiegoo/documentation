@@ -21,7 +21,7 @@ sidebar: other_sidebar
 <h3 class="category" id="{{ item }}">{{ item }}</h3>
 <ul class="post-list">
 {% for item in wiki.categories[item] %}{% if wiki.name != null %}
-<li><span>{{ wiki.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ wiki.name }}</a></li>
+<li><span>{{ wiki.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ wiki.url }}">{{ wiki.name }}</a></li>
 {% endif %}{% endfor %}
 </ul>
 {% endif %}{% endunless %}{% endif %}{% endfor %}
