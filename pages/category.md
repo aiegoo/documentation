@@ -32,7 +32,7 @@ sidebar: other_sidebar
 <div class="home">
 
 
-{% assign category = wiki.categories  %}
+{% assign category = site.wiki[categories]  %}
 {% for wiki in site.wiki reversed %}
 <h3 class="post-meta category category-h6 highlight o" id="{{ category }}">{{ category }}</h3>
 {% endfor %}
