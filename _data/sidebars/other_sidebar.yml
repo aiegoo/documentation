@@ -5,9 +5,12 @@ entries:
 - title: Sidebar
   product: Collections
   version: 1.1
+- items:
+  - title: Category
+    url: /category/
+    output: web, pdf
   folders:
 
-- items:
   - title: Category
     url: /category/
     output: web, pdf
