@@ -37,11 +37,9 @@ sidebar: other_sidebar
   {% assign topics = topics | push: categories %}
   {% capture category-item %}{{ page.categories | strip_newline | sort }}{% endcapture %}
 <h6 class="post-meta category-h6 category" id="{{ category-item }}"> {{ category-item }}</h6>
-    {% for item in category-item | sort_by: "categories" %}
 <ul class="topics">
-  <li><a href='{{ page.url }}'>{{ page.url }} &#8674; {{page.categories}} &#8672; {{ item }}</a></li>
+  <li><a href='{{ page.url }}'>{{ page.url }} &#8674; {{page.categories}} &#8672; {{ topics }}</a></li>
 </ul>
-    {% endfor %}
   {% endif %}
 {% endfor %} 
 <br/>
