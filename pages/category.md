@@ -13,6 +13,7 @@ sidebar: other_sidebar
     {% endfor %}
   </ul>
 {% endfor %}
+
 {% for post in site.wiki %}
 {% assign category = page.categories | split:',' | sort %}
 {% for item in category %}
@@ -24,6 +25,7 @@ sidebar: other_sidebar
 {% endfor %}
 </ul>
 {% endfor %}
+
 {% endfor %}
 <br/>
 </div>
