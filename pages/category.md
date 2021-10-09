@@ -36,7 +36,9 @@ sidebar: other_sidebar
 {% for page in site.pages %}
   {% if page contains "categories" %}
   <!-- push topics into array -->
-  {% assign topics = topics | push: categories  %}
+  {% assign topics = topics | push: categories %}
+  {% capture category-item %}{{ page.categories | strip_newline }}{% endcapture %}
+  <h6 class="post-meta category-h6 category" id="{{ category-item }}>{{ category-item }} </h6>
   <li>{{ page.url }}{{page.categories}}</li>
   {% endif %}
 {% endfor %}
