@@ -50,6 +50,7 @@ sidebar: other_sidebar
   </li>
   {% endfor %}
 </ul>
+<br/>
 
 {% assign entry = wiki.categories[entries]  %}
 {% for wiki in site.wiki reversed %}
@@ -57,5 +58,12 @@ sidebar: other_sidebar
 {% endfor %}
 <br/>
 
+{% assign topics = "" | split: ',' %}
+{% for topics in site.categories %}
+  {% if topics contains "drones" %}
+  <!-- push topics into array -->
+  {% assign topics = topics | push: drones %}
+  {% endif %}
+{% endfor %}
 
 </div>
