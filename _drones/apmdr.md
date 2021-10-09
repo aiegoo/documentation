@@ -1,7 +1,7 @@
 ---
 layout: page
 name: bebop parrot
-permalink: bebop_parrot.html
+permalink: apmdr.html
 type: "APM, bebop"
 link: https://github.com/aiegoo/portfolio/wiki/parrot
 excerpt_separator: <!--more-->
