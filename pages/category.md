@@ -52,12 +52,6 @@ sidebar: other_sidebar
 </ul>
 <br/>
 
-{% assign entry = wiki.categories[entries]  %}
-{% for wiki in site.wiki reversed %}
-<h3 class="post-meta category category-h6 highlight o" id="{{ entry.name }}">{{ entry.name }}</h3>
-{% endfor %}
-<br/>
-
 {% assign topics = "" | split: ',' %}
 {% for topics in site.categories %}
   {% if topics contains "drones" %}
