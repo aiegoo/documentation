@@ -57,6 +57,7 @@ sidebar: other_sidebar
   {% if topics contains "drones" %}
   <!-- push topics into array -->
   {% assign topics = topics | push: drones %}
+  <li>{{ topics }}</li>
   {% endif %}
 {% endfor %}
 
