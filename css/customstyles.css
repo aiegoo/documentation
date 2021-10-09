@@ -1726,11 +1726,9 @@ a.wiki-next {
     top: 0;
     bottom: 0; */
 }
-/* a.wiki-previous {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-} */
+a.wiki-previous {
+    overflow: hidden;
+}
 a.wiki-next:hover {
     text-decoration-color: #42b983b2;
     text-decoration-thickness: 5px;
