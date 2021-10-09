@@ -71,6 +71,8 @@ dataList.sort(function(a, b) {
         url: page.url,
         updated: page.updated || page.date,
         children: [],
+        folder: page.dir,
+        categories: page.categories,
     };
 
 });

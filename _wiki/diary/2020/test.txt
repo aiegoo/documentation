@@ -1,0 +1,23 @@
+---
+name: 
+layout: page
+permalink: .html
+sidebar: other_sidebar
+collection: wiki
+summary: ""
+tags: [wiki, blog]
+excerpt_separator: <!--more-->
+date: 
+updated: 2021-09-29 2:48 PM
+toc: true
+public: true
+parent: [[Wiki-Setting-Category]] 
+latex: false
+repos: aiegoo/documentation/issues
+folder: diary
+youtubeID: jBLaP-XwGE8
+youtubeID2: IXglpmzFfBA
+driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
+next_post: .html
+previous_post: .html
+---
