@@ -117,6 +117,10 @@ The required MATLAB toolboxes include the following.
 [installOptions](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:51951ade-9657-4280-a79a-6c2bbd26d231#page=18)
 > this will get about 900 links downloaded for building. Patience required.
 
+- path issue
+![image](https://user-images.githubusercontent.com/42961200/136666979-e949b738-243e-4ec8-9f77-50314283041b.png)
+
+
 🔨 log file [log_gist](https://gist.github.com/aiegoo/7415df308161ff861ac087c2e3bffcdf)
 
 ```diff
