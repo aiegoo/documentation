@@ -35,10 +35,15 @@ sidebar: other_sidebar
   {% if page contains "categories" %}
   <!-- push topics into array -->
   {% assign topics = topics | push: categories %}
-  {% capture category-item %}{{ page.categories | strip_newline }}{% endcapture %}
-<h6 class="post-meta category-h6 category" id="{{ category-item }}> {{ category-item }} </h6>
+  {% capture category-items %}{{ page.categories | strip_newline }}{% endcapture %}
+
+  {% for category-item in category-items %}
+<h6 class="post-meta category-h6 category" id="{{ category-item }}"> {{ category-item | first }} {% unless forloop.last %}, {% endunless %} </h6>
+  {% endfor %}
 <ul class="topics">
-  <li><a href='{{ page.url }}'>{{ page.url }} &#8674; {{page.categories}}</a></li>
+  {% for page in category-items %}
+  <li><a href="{{ page.url }}">{{ page.url }} &#8674; {{page.categories}}</a></li>
+  {% endfor %}
 </ul>
 {% endif %}
 {% endfor %}
