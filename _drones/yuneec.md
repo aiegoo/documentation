@@ -5,6 +5,8 @@ permalink: yuneec.html
 type: "Edison, Simulink"
 link: https://github.com/aiegoo/portfolio/wiki/yuneec
 excerpt_separator: <!--more-->
+tags: mydrone
+folder: '/.'
 ---
 ### Yuneec H and Intel Intellisense sensors
 
