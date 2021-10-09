@@ -41,7 +41,6 @@ sidebar: other_sidebar
 <ul class="topics">
   <li><a href='{{ page.url }}'>{{ page.url }} &#8674; {{page.categories}} &#8672; {{ item }}</a></li>
 </ul>
-    {% endunless %}
     {% endfor %}
   {% endif %}
 {% endfor %}
