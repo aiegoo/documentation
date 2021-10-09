@@ -37,7 +37,7 @@ sidebar: other_sidebar
   {% if page contains "categories" %}
   <!-- push topics into array -->
   {% assign topics = topics | push: categories  %}
-  <li>{{ topics }}</li>
+  <li>{{ page.url }}</li>
   {% endif %}
 {% endfor %}
 
