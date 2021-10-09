@@ -16,7 +16,8 @@ folder: '/.'
 <div class="home">
     <div class="post-list">
     {% assign drones = site.drones %}
-     {% for drone in drones | where: 'tags', 'mydrone' %}
+     {% for drone in drones %}
+        {% if page.tags == mydrone %}
           <a class="post-link" href="{{ drone.url | prepend: site.baseurl }}">
               {{ drone.name }} - {{ drone.type }}
               </a>
@@ -26,6 +27,7 @@ folder: '/.'
                {% unless forloop.last %}, {% endunless%}{% endfor %}</span>
                <p>{% if drone.summary %} {{ drone.summary }}  {% endif %}
                </p>
+        {% endif %}
      {% endfor %}
         <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
 
