@@ -38,9 +38,9 @@ sidebar: other_sidebar
 {% endcapture %}
 {% assign sorted_category = category | split: ' ' | sort %}
   {% for category in sorted_category %}
-  <li class="topic-head><b> {{ category }} ({{ drones.categories[category] | size }} topics)</b>
+  <li class="topic-head><b> {{ category }} ({{ drones.categories | size }} topics)</b>
     <ul class='subnavlist'>
-    {% assign topics = drones.categories[category] %}
+    {% assign topics = drones.categories %}
     {% for topic in topics %}
       <li class='topic-item {% if topic.url == page.url %}active{% endif%}'>
       <a href='/{{ baseurl }}{{ page.url }}'> {{ page.name}}</a>
@@ -53,8 +53,8 @@ sidebar: other_sidebar
 <br/>
 
 {% assign topics = "" | split: ',' %}
-{% for topics in site.categories %}
-  {% if topics contains "lecture" %}
+{% for page in site.pages[categories] %}
+  {% if page contains "categories" %}
   <!-- push topics into array -->
   {% assign topics = topics | push: drones %}
   <li>{{ topics }}</li>
