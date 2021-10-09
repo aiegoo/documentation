@@ -1,6 +1,7 @@
 ---
 layout: page
 name: "drone books"
+type: books
 sidebar: other_sidebar
 permalink: drones_books.html
 categories: "drones"
@@ -9,6 +10,8 @@ complex_map: true
 map_name: usermap_drones
 box_number: 1
 link: https://36io.co
+tags: mydrone
+folder: '/.'
 ---
 
 {% include image.html file="drones/hw_gallery/drone_inflight.jpg" caption="Test flight after assembly" %}
