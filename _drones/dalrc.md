@@ -5,6 +5,8 @@ permalink: dalrc.html
 type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/dalrc
 excerpt_separator: <!--more-->
+tags: mydrone
+folder: '/.'
 ---
 ## Darlc215
 
