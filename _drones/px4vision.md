@@ -4,6 +4,8 @@ name: pixhawk4 vision
 permalink: px4vision.html
 type: "APM, Mission-planner, autonomy"
 link: https://shop.holybro.com/px4-vision_p1225.html
+tags: mydrone
+folder: '/.'
 ---
 
 
