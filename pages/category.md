@@ -39,12 +39,12 @@ sidebar: other_sidebar
 
   {% for category-item in category-items | sort %}
 <h6 class="post-meta category-h6 category" id="{{ category-item }}"> {{ category-item }}</h6>
-  {% endfor %}
 <ul class="topics">
-  {% for page in category-items %}
-  <li><a href="{{ page.url }}">{{ page.url }} &#8674; {{page.categories}}</a></li>
-  {% endfor %}
+  {% for page in pages %}
+  <li><a href="{{ page.url }}">{{ page.url }} &#8674; {{page.categories}}</a></li>  
 </ul>
+{% endfor %}
+{% endfor %}
 {% endif %}
 {% endfor %}
 <br/>
