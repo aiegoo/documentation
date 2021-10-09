@@ -5,6 +5,8 @@ permalink: bebop_parrot.html
 type: "APM, Mission-planner"
 link: https://github.com/aiegoo/portfolio/wiki/parrot
 excerpt_separator: <!--more-->
+tags:
+folder: '/.'
 ---
 ## Pixhawk lite
 
