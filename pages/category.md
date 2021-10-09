@@ -38,7 +38,7 @@ sidebar: other_sidebar
   <!-- push topics into array -->
   {% assign topics = topics | push: categories %}
   {% capture category-item %}{{ page.categories | strip_newline }}{% endcapture %}
-<h6 class="post-meta category-h6 category" id="{{ category-item }}> {{ category-item }} </h6>
+<h6 class="post-meta category-h6 category" id="{{ category-item }}"> {{ category-item }} </h6>
 <ul class="topics">
   <li><a href='{{ page.url }}'>{{ page.url }} &#8674; {{page.categories}}</a></li>
 </ul>
