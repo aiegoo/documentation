@@ -16,7 +16,7 @@ folder: '/.'
 <div class="home">
     <div class="post-list">
     {% assign drones = site.drones %}
-     {% for drone in drones %}
+     {% for drone in drones | where: 'tags', 'mydrone' %}
           <a class="post-link" href="{{ drone.url | prepend: site.baseurl }}">
               {{ drone.name }} - {{ drone.type }}
               </a>
