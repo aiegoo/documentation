@@ -2,10 +2,10 @@
 layout: page
 name: bebop parrot
 permalink: bebop_parrot.html
-type: "APM, Mission-planner"
+type: "APM, bebop"
 link: https://github.com/aiegoo/portfolio/wiki/parrot
 excerpt_separator: <!--more-->
-tags:
+tags: mydrone
 folder: '/.'
 ---
 ## Pixhawk lite
