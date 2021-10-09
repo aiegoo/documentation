@@ -42,7 +42,7 @@ sidebar: other_sidebar
 <ul class="topics">
     {% for entry in page.categories | where: 'categories', 'drones' | sort | inspect %}
       {% for item in entry.items %}
-  <li><a href='{{ page.url }}'>{{ item.name }}  {{page.categories}} &#8672; {{ category }}&#8674; {{ item.path }}</a> {{ page.categories[item] }}</li>
+  <li><a href='{{ page.url }}'>{{ item.name }}  {{page.categories}} &#8672; {{ category }}&#8674; {{ item.path }}</a> {{ page.categories.item }}</li>
       {% endfor %}
     {% endfor %}
 </ul>
@@ -50,5 +50,5 @@ sidebar: other_sidebar
   {% endif %}
 {% endfor %}
 <br/>
-  
+
 </div>
