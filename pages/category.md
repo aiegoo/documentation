@@ -27,7 +27,7 @@ sidebar: other_sidebar
 {% endfor %}
 
 {% endfor %}
-<br/>h
+<br/>
 </div>
 
 
