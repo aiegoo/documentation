@@ -41,7 +41,7 @@ sidebar: other_sidebar
 <h6 class="post-meta category-h6 category" id="{{ category-item }}"> {{ category-item }} </h6>    
 <ul class="topics">
     {% for category in page.categories | inspect %}
-  <li><a href='{{ page.url }}'>{{ page.name }} &#8674; {{page.categories}} &#8672; {{ category }}</a></li>
+  <li><a href='{{ page.url }}'>{{ page.name }} &#8674; {{page.categories}} &#8672; {{ category }} {{ page.dir }}</a></li>
     {% endfor %}
 </ul>
     
