@@ -6,6 +6,8 @@ permalink: mydrone_project.html
 type: "ros, apm, lora"
 link: https://github.com/aiegoo/_mydrone
 excerpt_separator: <!--more-->
+tags: mydrone
+folder: '/.'
 ---
 
 #### overview
