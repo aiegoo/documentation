@@ -29,28 +29,8 @@ sidebar: other_sidebar
 </div>
 
 
-<div class="home">
+<div class="app">
 <ul class="topics">
-{% capture category %}
-  {% for category in site.drones[categories] %}
-    {{ category[0] }}
-  {% endfor %}
-{% endcapture %}
-{% assign sorted_category = category | split: ' ' | sort %}
-  {% for category in sorted_category %}
-  <li class="topic-head"><b> {{ category }} ({{ category.name | size }} topics)</b>
-    <ul class="subnavlist">
-    {% assign topics = category[entries] %}
-    {% for topic in topics %}
-      <li class="topic-item {% if topic.url == page.url %}active{% endif %}">
-      <a href="/{{ baseurl }}{{ page.url }}"> {{ page.name}}</a>
-      </li>
-    {% endfor %}
-    </ul>
-  </li>
-  {% endfor %}
-</ul>
-<br/>
 
 {% assign topics = "" | split: ',' %}
 {% for page in site.pages[categories] %}
@@ -60,5 +40,10 @@ sidebar: other_sidebar
   <li>{{ topics }}</li>
   {% endif %}
 {% endfor %}
+
+</ul>
+<br/>
+
+
 
 </div>

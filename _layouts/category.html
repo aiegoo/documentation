@@ -25,4 +25,24 @@ sidebar: other_sidebar
 <h3 class="post-meta category category-h6 highlight o" id="{{ entry.name }}">{{ entry.name }}</h3>
 {% endfor %}
 <br/>
+
+
+{% capture category %}
+  {% for category in site.drones[categories] %}
+    {{ category[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sorted_category = category | split: ' ' | sort %}
+  {% for category in sorted_category %}
+  <li class="topic-head"><b> {{ category }} ({{ category.name | size }} topics)</b>
+    <ul class="subnavlist">
+    {% assign topics = category[entries] %}
+    {% for topic in topics %}
+      <li class="topic-item {% if topic.url == page.url %}active{% endif %}">
+      <a href="/{{ baseurl }}{{ page.url }}"> {{ page.name}}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </li>
+  {% endfor %}
 </div>
