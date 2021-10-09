@@ -40,7 +40,7 @@ sidebar: other_sidebar
   {% capture category-item %}{{ page.categories | strip_newline }}{% endcapture %}
     
 <h6 class="post-meta category-h6 category" id="{{ category-item }}"> {{ category-item }} </h6>
-    {% for category in page.categories | split: ',' | sort_by: categories | inspect %}
+    {% for category in page.categories['drones', 'guide'] | split: ',' | inspect %}
 <ul class="topics">
   <li><a href='{{ page.url }}'>{{ page.url }} &#8674; {{page.categories}} &#8672; {{ category }}</a></li>
 </ul>
