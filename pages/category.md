@@ -38,9 +38,9 @@ sidebar: other_sidebar
   {% capture category-items %}{{ page.categories | strip_newline }}{% endcapture %}
 
   {% for category-item in category-items | sort %}
-<h6 class="post-meta category-h6 category" id="{{ category-item }}"> {{ category-item }}</h6>
-<ul class="topics">
   {% if category-item.url == page.url %}
+<h6 class="post-meta category-h6 category" id="{{ category-item }}"> {{ category-item }}</h6>
+<ul class="topics">  
   <li><a href="{{ page.url }}">{{ page.url }} &#8674; {{page.categories}}</a></li>  
 </ul>
 {% endif %}
