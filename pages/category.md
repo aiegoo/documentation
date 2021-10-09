@@ -54,7 +54,7 @@ sidebar: other_sidebar
 
 {% assign topics = "" | split: ',' %}
 {% for topics in site.categories %}
-  {% if topics contains "drones" %}
+  {% if topics contains "lecture" %}
   <!-- push topics into array -->
   {% assign topics = topics | push: drones %}
   <li>{{ topics }}</li>

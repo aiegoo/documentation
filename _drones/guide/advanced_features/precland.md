@@ -2,7 +2,7 @@
 layout: page
 name: "precision landing"
 sidebar: other_sidebar
-categories: "drones"
+categories: "advanced_features"
 tags: drones
 summary: ""
 excerpt_separator: <!--more-->

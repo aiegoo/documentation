@@ -2,7 +2,7 @@
 layout: page
 name: mount and orient controller
 sidebar: other_sidebar
-categories: "drones"
+categories: "assembly"
 tags: [drones, hardware]
 summary: ""
 excerpt_separator: <!--more-->

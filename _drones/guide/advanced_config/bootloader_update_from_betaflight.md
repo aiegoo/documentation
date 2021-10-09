@@ -2,7 +2,7 @@
 layout: page
 name: bootloader_update_from_betaflight
 sidebar: other_sidebar
-categories: "drones"
+categories: "advanced_config"
 tags: drones
 summary: ""
 excerpt_separator: <!--more-->
