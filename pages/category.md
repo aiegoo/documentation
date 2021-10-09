@@ -40,8 +40,12 @@ sidebar: other_sidebar
   {% capture category-item %}{{ page.categories | strip_newline }}{% endcapture %}    
 <h6 class="post-meta category-h6 category" id="{{ category-item }}"> {{ category-item }} </h6>    
 <ul class="topics">
-    {% for page in site.pages | where: 'categories', 'drones' | sort | inspect %}
-  <li><a href='{{ page.url }}'>{{ page.name }}  {{page.categories}} &#8672; {{ category }}&#8674; {{ page.path }}</a> {{ page.categories[item] }}</li>
+    {% for entry in page.categories | where: 'categories', 'drones' | sort | inspect %}
+    {% for item in entry.items %} 
+    {% if item in entry.item %}
+  <li><a href='{{ page.url }}'>{{ item.name }}  {{page.categories}} &#8672; {{ category }}&#8674; {{ item.path }}</a> {{ page.categories[item] }}</li>
+    {% endif %}
+    {% endfor %}
     {% endfor %}
 </ul>
     
