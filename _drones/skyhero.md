@@ -2,9 +2,11 @@
 layout: page
 name: Racing Skyhero
 permalink: skyhero.html
-type: "APM, Mission-planner"
+type: "APM, skyhero"
 link: https://github.com/aiegoo/portfolio/wiki/skyhero
 excerpt_separator: <!--more-->
+tags: mydrone
+folder: '/.'
 ---
 ### Skyhero 
 
