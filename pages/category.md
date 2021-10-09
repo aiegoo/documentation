@@ -33,10 +33,10 @@ sidebar: other_sidebar
 <ul class="topics">
 
 {% assign topics = "" | split: ',' %}
-{% for page in site.wiki[categories] %}
+{% for page in site.pages %}
   {% if page contains "categories" %}
   <!-- push topics into array -->
-  {% assign topics = topics | push:  %}
+  {% assign topics = topics | push: categories  %}
   <li>{{ topics }}</li>
   {% endif %}
 {% endfor %}
