@@ -38,12 +38,12 @@ sidebar: other_sidebar
 {% endcapture %}
 {% assign sorted_category = category | split: ' ' | sort %}
   {% for category in sorted_category %}
-  <li class="topic-head><b> {{ category }} ({{ drones.categories | size }} topics)</b>
-    <ul class='subnavlist'>
+  <li class="topic-head"><b> {{ category }} ({{ drones.categories | size }} topics)</b>
+    <ul class="subnavlist">
     {% assign topics = drones.categories %}
     {% for topic in topics %}
-      <li class='topic-item {% if topic.url == page.url %}active{% endif%}'>
-      <a href='/{{ baseurl }}{{ page.url }}'> {{ page.name}}</a>
+      <li class="topic-item {% if topic.url == page.url %}active{% endif %}">
+      <a href="/{{ baseurl }}{{ page.url }}"> {{ page.name}}</a>
       </li>
     {% endfor %}
     </ul>
