@@ -2,9 +2,11 @@
 layout: page
 name: Vtol
 permalink: vtol.html
-type: "APM, Mission-planner"
+type: "APM, vtol"
 link: https://github.com/aiegoo/portfolio/wiki/vtol
 excerpt_separator: <!--more-->
+tags: mydrone
+folder: '/.'
 ---
 
 ### Vtol with single prop
