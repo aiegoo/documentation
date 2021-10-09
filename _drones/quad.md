@@ -2,9 +2,11 @@
 layout: page
 name: DJI Quad
 permalink: quad.html
-type: "DJI, Assistant"
+type: "DJI, quad"
 link: https://github.com/aiegoo/portfolio/wiki/quad
 excerpt_separator: <!--more-->
+tags: mydrone
+folder: '/.'
 ---
 ### dji quad custom frame
 
