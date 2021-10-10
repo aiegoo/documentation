@@ -6,7 +6,7 @@ collection: wiki
 permalink: wiki.html
 excerpt_separator: <!--more-->
 date: 2021-09-20 15:37:09 +0900
-toc: true
+toc: false
 comment: false
 updated: 2021-09-17 3:38 PM
 ---
