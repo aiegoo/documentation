@@ -12,6 +12,7 @@ imagesurl_drones_dev: "images/drones/dev_gallery/"
 imagesurl_drones_hw_gallery: "images/drones/hw_gallery/"
 # thumbsurl_yoga: "/images/yoga/thumbs/"
 # this property is useful for conditional filtering of content that is separate from the PDF.
+encoding: UTF-8
 
 topnav_title: Matlab Docs
 # this appears on the top navigation bar next to the home button
@@ -247,6 +248,13 @@ description: "This documentation site is intended to keep my past and current pr
 # leio reading time implementation
 reading_time:       true
 words_per_minute:   120
+
+author:
+  facebook: aiegoo
+facebook:
+  app_id: 839268703254603
+  publisher: 1234
+  admins: 1234
 
 github: [metadata]
 
