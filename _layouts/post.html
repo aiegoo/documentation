@@ -53,7 +53,7 @@ layout: default
     {% if page.previous %}
     {% if page.previous.url %}
     {% if page.previous.name %} 
-    <a class="wiki-previous" href="{% if page.previous_post %} {{page.previous_post}} {% else %} {{page.previous.url}} {% endif %}" title="{{ page.next_post.date}}"><span class="iconify" data-icon="mdi:chevron-double-right" data-rotate="180deg" style="font-size: 36px; vertical-align: middle;"></span>&nbsp;{{page.previous.name}}</a>
+    <a class="wiki-previous" href="{% if page.previous_post %} {{page.previous_post}} {% else %} {{page.previous.url}} {% endif %}" title="{{ page.previous_post.date}}"><span class="iconify" data-icon="mdi:chevron-double-right" data-rotate="180deg" style="font-size: 36px; vertical-align: middle;"></span>&nbsp;{{page.previous.name}}</a>
     {% else %}
     <a class="wiki-previous" href="{% if page.previous_post %} {{page.previous_post}} {% else %} {{page.previous.url}} {% endif %}">&#8672;&nbsp;{{page.previous.subtitle}}</a>
     {% endif %}
