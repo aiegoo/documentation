@@ -3,6 +3,23 @@ layout: portfolio
 permalink: category.html
 sidebar: other_sidebar
 ---
+## categories in the post
+<div class="well">
+{% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign category = categories | split:',' | sort %}
+{% for item in (0..site.categories.size) %}{% unless forloop.last %}
+{% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
+<h2 class="category" id="{{ word }}">{{ word }}</h2>
+<ul>
+{% for post in site.categories[word] %}{% if post.title != null %}
+<li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+{% endif %}{% endfor %}
+</ul>
+{% endunless %}{% endfor %}
+<br/><br/>
+</div>
+
+
 <div class="well">
 {% for collection in site.collections %}
   <h6 class="post-meta category-h6">{{ collection.label }} collection categoy</h6>
@@ -49,19 +66,4 @@ sidebar: other_sidebar
 {% endfor %}
 <br/>
 
-</div>
-
-<div class="well">
-{% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign category = categories | split:',' | sort %}
-{% for item in (0..site.categories.size) %}{% unless forloop.last %}
-{% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
-<h2 class="category" id="{{ word }}">{{ word }}</h2>
-<ul>
-{% for post in site.categories[word] %}{% if post.title != null %}
-<li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-{% endif %}{% endfor %}
-</ul>
-{% endunless %}{% endfor %}
-<br/><br/>
 </div>

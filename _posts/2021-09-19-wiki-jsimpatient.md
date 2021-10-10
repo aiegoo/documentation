@@ -1,7 +1,7 @@
 ---
 title:  "jsimpatient learning path"
 published: true
-categories: Task
+categories: task
 permalink: wiki-jsimpatient.html
 summary: "javascript revisited"
 tags: [news, wiki, javascript]
