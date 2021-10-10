@@ -52,7 +52,7 @@ previous_post: 2020-04-18-todays-ideas.html
 ![tpope github drop ice]( wiki-img/2020/tpope_github_drop_ice.jpg )
   * github가 얼음을 떨어뜨렸다 ?? drop ice라는 숙어가 있나 해서 찾아봤는데...
   * [ice drop](https://en.wiktionary.org/wiki/ice_drop) : 우리나라에서 `하드`라고 불리는 냉동 주스(?) 밖에 못찾았었는데..( `popsicle`이라고도 한다.)
-    {% include image.html file="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dongbei_Daban_ice-cropped.jpg/130px-Dongbei_Daban_ice-cropped.jpg" caption="popsicle" %}
+    {% include image.html links="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dongbei_Daban_ice-cropped.jpg/130px-Dongbei_Daban_ice-cropped.jpg" caption="popsicle" %}
   * 앞에 붙어있는 Github에 주목해서 찾아봤더니 이런 내용이 있었다. [dear-github-2.0](https://github.com/drop-ice/dear-github-2.0)
     * 테이블을 만들어 해석을 붙이려고 [kramdown 테이블 작성법](https://kramdown.gettalong.org/syntax.html#tables)을 찾아봤는데 multiline은 안된다고 한다. 즉 한줄에 한셀만 넣을수 있다. 한 문단을 넣으려면 줄로 자르지 말고 길게 한줄로 넣어야 함..
     > Header rows, footer rows and normal rows are all done using these table rows. Table cells can only contain a single line of text, **no multi-line text is supported.** The text of a table cell is parsed as span-level elements.
