@@ -329,5 +329,12 @@ jekyll-spaceship:
       class: emoji
     src: https://github.githubassets.com/images/icons/emoji/
 
+# facebook comments
+comments:
+	provider : "facebook"
+	facebook:
+		appid : 839268703254603
+		num_posts : # 5 (default)
+		colorscheme : # "light" (default), "dark"
 
 # Copyright 2021 Google LLC
