@@ -20,7 +20,7 @@ updated: 2021-09-17 3:38 PM
 </style>
     <div class="post-list" style="line-height: 1.1;">
      {% for wiki in site.wiki reversed %}
-          <a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ wiki.name }}</a>
+          <a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ wiki.name }} style="color: pink;"</a>
           <span class="post-meta">{{ wiki.updated | date: "%b %-d, %Y" }} /
           {% for tag in wiki.tags %}
                 <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
