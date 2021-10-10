@@ -1,13 +1,13 @@
 ---
-name: 
+name: Properties Serveice 사용법 
 layout: page
 permalink: .html
 sidebar: other_sidebar
 collection: wiki
-summary: ""
+summary: "오늘의 영감"
 tags: [wiki, blog]
 excerpt_separator: <!--more-->
-date: 
+date: 2020-06-04 12:26:32 +0900
 updated: 2021-09-29 2:48 PM
 toc: true
 public: true
@@ -20,39 +20,6 @@ youtubeID2: IXglpmzFfBA
 driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 next_post: .html
 previous_post: .html
----
----
-name: 
-layout: page
-permalink: .html
-sidebar: other_sidebar
-collection: wiki
-summary: ""
-tags: [wiki, blog]
-excerpt_separator: <!--more-->
-date: 2021-09-29 13:42:03 +0900
-updated: 2021-09-29 2:48 PM
-toc: true
-public: true
-parent: [[Wiki-Setting-Category]] 
-latex: false
-repos: aiegoo/documentation/issues
-folder: diary
-youtubeID: jBLaP-XwGE8
-youtubeID2: IXglpmzFfBA
-driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
-next_post: .html
-previous_post: .html
----
----
-layout  : post
-title   : Properties Serveice 사용법 
-summary : 오늘의 영감 제목은 그만 써야지..  
-date    : 2020-06-04 12:26:32 +0900
-tag     : google-apps-script 
-toc     : true
-comment : true
-public  : true
 ---
 * TOC
 {:toc}

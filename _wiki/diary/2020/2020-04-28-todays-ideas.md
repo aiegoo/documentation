@@ -1,13 +1,13 @@
 ---
-name: 
+name: 오늘의 영감 
 layout: page
-permalink: .html
+permalink: 2020-04-28-todays-ideas.html
 sidebar: other_sidebar
 collection: wiki
 summary: ""
 tags: [wiki, blog]
 excerpt_separator: <!--more-->
-date: 
+date: 2020-04-28 00:35:32 +0900
 updated: 2021-09-29 2:48 PM
 toc: true
 public: true
@@ -18,41 +18,8 @@ folder: diary
 youtubeID: jBLaP-XwGE8
 youtubeID2: IXglpmzFfBA
 driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
-next_post: .html
-previous_post: .html
----
----
-name: 
-layout: page
-permalink: .html
-sidebar: other_sidebar
-collection: wiki
-summary: ""
-tags: [wiki, blog]
-excerpt_separator: <!--more-->
-date: 2021-09-29 13:42:03 +0900
-updated: 2021-09-29 2:48 PM
-toc: true
-public: true
-parent: [[Wiki-Setting-Category]] 
-latex: false
-repos: aiegoo/documentation/issues
-folder: diary
-youtubeID: jBLaP-XwGE8
-youtubeID2: IXglpmzFfBA
-driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
-next_post: .html
-previous_post: .html
----
----
-layout  : post
-title   : 오늘의 영감 
-summary : sample summary
-date    : 2020-04-28 00:35:32 +0900
-tag     : github gif png drop-ice 번역 markdown-table
-toc     : true
-comment : true
-public  : true
+next_post: 2020-04-30-todays-ideas.html
+previous_post: 2020-04-18-todays-ideas.html
 ---
 * TOC
 {:toc}

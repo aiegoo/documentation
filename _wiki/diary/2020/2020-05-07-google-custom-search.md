@@ -1,13 +1,13 @@
 ---
-name: 
+name: 구글 맞춤 검색 안됨 [해결] 
 layout: page
 permalink: .html
 sidebar: other_sidebar
 collection: wiki
-summary: ""
+summary: "장기 미해결 과제 "
 tags: [wiki, blog]
 excerpt_separator: <!--more-->
-date: 
+date: 2020-05-07 13:26:32 +0900
 updated: 2021-09-29 2:48 PM
 toc: true
 public: true
@@ -20,39 +20,6 @@ youtubeID2: IXglpmzFfBA
 driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 next_post: .html
 previous_post: .html
----
----
-name: 
-layout: page
-permalink: .html
-sidebar: other_sidebar
-collection: wiki
-summary: ""
-tags: [wiki, blog]
-excerpt_separator: <!--more-->
-date: 2021-09-29 13:42:03 +0900
-updated: 2021-09-29 2:48 PM
-toc: true
-public: true
-parent: [[Wiki-Setting-Category]] 
-latex: false
-repos: aiegoo/documentation/issues
-folder: diary
-youtubeID: jBLaP-XwGE8
-youtubeID2: IXglpmzFfBA
-driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
-next_post: .html
-previous_post: .html
----
----
-layout  : post
-title   : 구글 맞춤 검색 안됨 [해결] 
-summary : 장기 미해결 과제 
-date    : 2020-05-07 13:26:32 +0900
-tag     : google custom search 
-toc     : true
-comment : true
-public  : true
 ---
 * TOC
 {:toc}

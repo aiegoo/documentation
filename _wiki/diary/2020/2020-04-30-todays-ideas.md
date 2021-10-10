@@ -1,13 +1,13 @@
 ---
-name: 
+name: 원래 제목은 오늘의 영감이지만 .. 제목을 아주아주 길게 해볼까 CSS RULES for Wrapping Text 좀 테스트 해볼려구 어라 아직도 끝이 아니네
 layout: page
 permalink: .html
 sidebar: other_sidebar
 collection: wiki
-summary: ""
+summary: "CSS로 dot leaders 표기하기"
 tags: [wiki, blog]
 excerpt_separator: <!--more-->
-date: 
+date: 2020-04-30 13:43:32 +0900
 updated: 2021-09-29 2:48 PM
 toc: true
 public: true
@@ -20,39 +20,6 @@ youtubeID2: IXglpmzFfBA
 driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 next_post: .html
 previous_post: .html
----
----
-name: 
-layout: page
-permalink: .html
-sidebar: other_sidebar
-collection: wiki
-summary: ""
-tags: [wiki, blog]
-excerpt_separator: <!--more-->
-date: 2021-09-29 13:42:03 +0900
-updated: 2021-09-29 2:48 PM
-toc: true
-public: true
-parent: [[Wiki-Setting-Category]] 
-latex: false
-repos: aiegoo/documentation/issues
-folder: diary
-youtubeID: jBLaP-XwGE8
-youtubeID2: IXglpmzFfBA
-driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
-next_post: .html
-previous_post: .html
----
----
-layout  : post
-title   : 원래 제목은 오늘의 영감이지만 .. 제목을 아주아주 길게 해볼까 CSS RULES for Wrapping Text 좀 테스트 해볼려구 어라 아직도 끝이 아니네
-summary : CSS로 dot leaders 표기하기 
-date    : 2020-04-30 13:43:32 +0900
-tag     : dot-leaders css
-toc     : true
-comment : true
-public  : true
 ---
 * TOC
 {:toc}
