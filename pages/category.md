@@ -58,8 +58,8 @@ sidebar: other_sidebar
 {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
 <h2 class="category" id="{{ word }}">{{ word }}</h2>
 <ul>
-{% for wiki in site.categories[word] %}{% if wiki.title != null %}
-<li><span>{{ wiki.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ wiki.url }}">{{ post.title }}</a></li>
+{% for post in site.categories[word] %}{% if post.title != null %}
+<li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
 {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
