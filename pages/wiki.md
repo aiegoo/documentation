@@ -13,7 +13,12 @@ updated: 2021-09-17 3:38 PM
 
 ## Wiki home
 <div class="well">
-    <div class="post-list">
+<style type="text/css">
+.col-md-6 {
+    width: 70% !important;
+}
+</style>
+    <div class="post-list" style="line-height: 1.1;">
      {% for wiki in site.wiki reversed %}
           <a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ wiki.name }}</a>
           <span class="post-meta">{{ wiki.updated | date: "%b %-d, %Y" }} /
