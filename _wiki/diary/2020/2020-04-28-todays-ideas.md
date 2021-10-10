@@ -49,7 +49,7 @@ previous_post: 2020-04-18-todays-ideas.html
 # GITHUB DROP ICE ?
 
 * vim의 유명 플러그인 개발자 tim pope의 github를 방문했다가 다음과 같은 문구(**github drop ice**)를 발견했다
-![tpope github drop ice]( /post-img/2020/tpope_github_drop_ice.jpg )
+![tpope github drop ice]( wiki-img/2020/tpope_github_drop_ice.jpg )
   * github가 얼음을 떨어뜨렸다 ?? drop ice라는 숙어가 있나 해서 찾아봤는데...
   * [ice drop](https://en.wiktionary.org/wiki/ice_drop) : 우리나라에서 `하드`라고 불리는 냉동 주스(?) 밖에 못찾았었는데..( `popsicle`이라고도 한다.)
     ![popsicle](https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dongbei_Daban_ice-cropped.jpg/130px-Dongbei_Daban_ice-cropped.jpg)

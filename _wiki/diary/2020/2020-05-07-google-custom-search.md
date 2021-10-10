@@ -36,18 +36,18 @@ previous_post: .html
 # 해결 됨 ?
 
 * 처음에는 아래 맞춤 검색 사이트의 공개 URL을 보고 [johngrib님이 작성한 코드](https://github.com/johngrib/johngrib.github.io/blob/master/search.html)와 URL이 달라 시간이 지나 변경된건가 했다. 일단 아래 공개 URL로 serach.html의 URL을 변경했다
-  ![공개 URL](/post-img/2020/cse-blog-01.png)
+  ![공개 URL](wiki-img/2020/cse-blog-01.png)
 * 요기서 이것저것 뒤적이다 디자인좀 바꿔볼까 하고 맞춤검색 사이트에서 디자인 변경후 코드 다자인 변경하고 `저장후 코드 생성`을 클릭했더니...
-  ![저장후 코드 생성](/post-img/2020/cse-blog-02.png)
+  ![저장후 코드 생성](wiki-img/2020/cse-blog-02.png)
 * johngrib님이 작성한 것과 동일한 URL이 나온다. 이걸 그대로 코드 변경없이 search.html에 추가 했더니 일단 동작은 함.
   하지만 각 페이지에서 작성한 쿼리 스트링을 얻어 오지는 못한다. 일단 서치 페이지로 접속후 쿼리 스트링을 다시 작성해야함
-  ![코드 가져오기](/post-img/2020/cse-blog-03.png)
+  ![코드 가져오기](wiki-img/2020/cse-blog-03.png)
 * 위 코드는 없애고 URL만 변경했더니 ... 작동함.
 
 # 참고
 
 * johngrib님의 search결과와 내 search 결과 비교시 개발자 tool 에서 아래 에러만 달랐음
-  ![CORB 에러](/post-img/2020/cse-blog-04.png)
+  ![CORB 에러](wiki-img/2020/cse-blog-04.png)
 
 # 교훈
 

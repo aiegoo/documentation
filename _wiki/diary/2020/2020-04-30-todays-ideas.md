@@ -48,7 +48,7 @@ previous_post: 2020-04-28-todays-ideas.html
       * contents: leader('.') 하니`invalid property value` 에러가 남
   * 위 링크에서 CSS Level 2 방식으로 적용, wiki-index와 blog-index에 동시 적용함 
   * 현재 적용된 버전도 완벽하진 않은데... 이런 상황이 발생하기 때문임
-    ![애매하게 긴 제목]( /post-img/2020/middle-long-title.png )
+    ![애매하게 긴 제목]( wiki-img/2020/middle-long-title.png )
   * 길게 적으려면 한줄이 넘도록 하든지 .. 아니면 날짜 이전까지만 짧게 적든지 결정해야함.
 
 # 무료 폰트 발견
