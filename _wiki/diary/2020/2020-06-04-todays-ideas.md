@@ -1,6 +1,6 @@
 ---
 name: Properties Serveice 사용법 
-layout: page
+layout: post
 permalink: 2020-06-04-todays-ideas.html
 sidebar: other_sidebar
 collection: wiki

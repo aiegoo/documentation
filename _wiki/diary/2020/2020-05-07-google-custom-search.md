@@ -1,6 +1,6 @@
 ---
 name: 구글 맞춤 검색 안됨 [해결] 
-layout: page
+layout: post
 permalink: 2020-05-07-google-custom-search.html
 sidebar: other_sidebar
 collection: wiki

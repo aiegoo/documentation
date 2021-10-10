@@ -1,6 +1,6 @@
 ---
 name: 오늘의 영감
-layout: page
+layout: post
 permalink: 2020-05-02-todays-ideas.html
 sidebar: other_sidebar
 collection: wiki
