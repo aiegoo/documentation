@@ -255,6 +255,7 @@ plugins:
   - jekyll-gist
   - jekyll-spaceship
   - jemoji  
+  - jekyll-babel
 
 
 # Where things are

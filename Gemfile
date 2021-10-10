@@ -19,3 +19,5 @@ gem 'wdm', '>= 0.1.0' if Gem.win_platform? # for Winodows polling issue
 gem "webrick", "~> 1.7"
 
 gem 'jekyll-paginate'
+
+gem 'jekyll-babel'

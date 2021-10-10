@@ -7,6 +7,7 @@ const list = [];
 
 getFiles('./_wiki', 'wiki', list);
 getFiles('./_posts', 'blog', list);
+getFiles('./_drones', 'drone', list);
 
 const dataList = list.map(function collectData(file) {
 
