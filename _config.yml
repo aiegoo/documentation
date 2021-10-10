@@ -231,6 +231,7 @@ paginator_path: "/wiki"
 paginate_path: "/wiki/page:num/"
 # these are defaults used for the frontmatter for these file types
 
+
 sidebars:
 - home_sidebar
 - mydoc_sidebar
