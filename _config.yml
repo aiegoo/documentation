@@ -200,9 +200,9 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
-      comments: false
+      comments: true
       sidebar: other_sidebar
       topnav: topnav
       toc: true
