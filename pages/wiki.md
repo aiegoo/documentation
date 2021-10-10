@@ -12,7 +12,7 @@ updated: 2021-09-17 3:38 PM
 ---
 
 ## Wiki home
-<div class="home">
+<div class="well">
     <div class="post-list">
      {% for wiki in site.wiki reversed %}
           <a class="post-link" href="{{ wiki.url | remove: '/' }}">{{ wiki.name }}</a>
