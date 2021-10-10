@@ -4,6 +4,7 @@ layout: post
 permalink: 2020-05-02-todays-ideas.html
 sidebar: other_sidebar
 collection: wiki
+categories: kramdownkn
 summary: ""
 tags: [wiki, blog]
 excerpt_separator: <!--more-->
