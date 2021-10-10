@@ -59,7 +59,7 @@ sidebar: other_sidebar
 <h2 class="category" id="{{ word }}">{{ word }}</h2>
 <ul>
 {% for wiki in site.categories[word] %}{% if wiki.title != null %}
-<li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+<li><span>{{ wiki.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ wiki.url }}">{{ post.title }}</a></li>
 {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
