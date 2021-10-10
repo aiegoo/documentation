@@ -1,7 +1,7 @@
 ---
 name: 오늘의 영감 
 layout: page
-permalink: .html
+permalink: 2020-05-11-todays-ideas.html
 sidebar: other_sidebar
 collection: wiki
 summary: "생산성 향상 "
@@ -18,8 +18,8 @@ folder: diary
 youtubeID: jBLaP-XwGE8
 youtubeID2: IXglpmzFfBA
 driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
-next_post: .html
-previous_post: .html
+next_post: 2020-06-04-todays-ideas.html
+previous_post: 2020-05-07-google-custom-search.html
 ---
 * TOC
 {:toc}

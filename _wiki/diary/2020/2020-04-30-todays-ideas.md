@@ -1,7 +1,7 @@
 ---
 name: 원래 제목은 오늘의 영감이지만 .. 제목을 아주아주 길게 해볼까 CSS RULES for Wrapping Text 좀 테스트 해볼려구 어라 아직도 끝이 아니네
 layout: page
-permalink: .html
+permalink:2020-04-30-todays-ideas.html
 sidebar: other_sidebar
 collection: wiki
 summary: "CSS로 dot leaders 표기하기"
@@ -18,8 +18,8 @@ folder: diary
 youtubeID: jBLaP-XwGE8
 youtubeID2: IXglpmzFfBA
 driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
-next_post: .html
-previous_post: .html
+next_post: 2020-05-02-todays-ideas.html
+previous_post: 2020-04-28-todays-ideas.html
 ---
 * TOC
 {:toc}

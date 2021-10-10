@@ -4,6 +4,7 @@ layout: page
 permalink: 2020-04-15-todays-ideas.html
 sidebar: other_sidebar
 collection: wiki
+categories: diary
 summary: ""
 tags: [wiki, blog]
 excerpt_separator: <!--more-->

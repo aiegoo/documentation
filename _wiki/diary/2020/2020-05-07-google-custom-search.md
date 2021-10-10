@@ -1,7 +1,7 @@
 ---
 name: 구글 맞춤 검색 안됨 [해결] 
 layout: page
-permalink: .html
+permalink: 2020-05-07-google-custom-search.html
 sidebar: other_sidebar
 collection: wiki
 summary: "장기 미해결 과제 "
@@ -18,7 +18,7 @@ folder: diary
 youtubeID: jBLaP-XwGE8
 youtubeID2: IXglpmzFfBA
 driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
-next_post: .html
+next_post: 2020-05-11-todays-ideas.html
 previous_post: .html
 ---
 * TOC
