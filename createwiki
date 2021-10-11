@@ -1,0 +1,77 @@
+#!/bin/sh
+
+# Using a 'cat' here document, create a file for jekyll
+# website containing what's required for tag pages.
+
+# Pass in wiki name 
+#   ./creatediary javascript-is-asesome
+# Pass in other parameters such as title, tag name, summary and categories
+
+CMDLINEPARAM=1     #  Takes at least one param.
+TAGDIR="_wiki/blog"
+fileName=$(date +"%Y-%m-%d")
+date=$(date +"%FT%T")
+
+if [ $# -ge $CMDLINEPARAM ]
+then
+  wikis=$@
+else
+  echo "Atleast ${CMDLINEPARAM} wiki name is required."
+  exit 1
+fi
+
+if [ -d "${TAGDIR}" ]; then
+
+  echo "Creating wiki(s) for ${wiki}"
+
+  for wiki in ${wikis}; do
+    echo "Title for $wiki:"
+    read title
+    echo "Tag name is:"
+    read tag
+    echo "summarize:"
+    read summary
+    echo "Place a category:"
+    read categories
+  # Cannot indent here string.
+cat <<EOF >"${TAGDIR}/${fileName}-${wiki}.md"
+---
+title: "${title}"
+name: "${wiki}"
+tags: [[$tag]]
+permalink: ${fileName}-${wiki}.html
+sidebar: other_sidebar
+folder: blog
+collection: wiki
+categories: ${categories}
+summary: "${summary}"
+excerpt_separator: <!--more-->
+toc: true
+public: true
+parent: [[Wiki-Setting-Category]] 
+date: ${date} +0900
+updated: ${date}
+---
+
+{% include taglogic.html %}
+
+{% include links.html %}
+
+{% include commento.html %}
+
+{{site.data.alerts.hr_shaded}}
+
+{% include footer.html %}
+EOF
+
+echo "  - ${wikis}" >> _data/wikiMap.yml
+
+  done
+
+else
+  echo "Directory ${TAGDIR} doesn't exist or you are not in the top-level directory."
+  echo "Please run again from the root directory of your project."
+  exit 1
+fi
+
+exit

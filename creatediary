@@ -1,0 +1,77 @@
+#!/bin/sh
+
+# Using a 'cat' here document, create a file for jekyll
+# website containing what's required for tag pages.
+
+# Pass in diary name 
+#   ./creatediary Monday
+# Pass in other parameters such as title, tag name, summary and categories
+
+CMDLINEPARAM=1     #  Takes at least one param.
+TAGDIR="_wiki/diary/2021"
+fileName=$(date +"%Y-%m-%d-%U")
+date=$(date +"%FT%T")
+
+if [ $# -ge $CMDLINEPARAM ]
+then
+  diary=$@
+else
+  echo "Atleast ${CMDLINEPARAM} journal name is required."
+  exit 1
+fi
+
+if [ -d "${TAGDIR}" ]; then
+
+  echo "Creating journal(s) for ${diary}"
+
+  for journal in ${diary}; do
+    echo "Title for $diary:"
+    read title
+    echo "Tags name is:"
+    read tag
+    echo "summarize:"
+    read summary
+    echo "Place a category:"
+    read categories
+  # Cannot indent here string.
+cat <<EOF >"${TAGDIR}/${fileName}th.md"
+---
+title: "${title}"
+name: "${diary}"
+tags: [[$tag]]
+permalink: ${date}.html
+sidebar: other_sidebar
+folder: 2021
+collection: wiki
+categories: ${categories}
+summary: "${summary}"
+excerpt_separator: <!--more-->
+toc: true
+public: true
+parent: [[Wiki-Setting-Category]] 
+date: ${date} +0900
+updated: ${date}
+---
+
+{% include taglogic.html %}
+
+{% include links.html %}
+
+{% include commento.html %}
+
+{{site.data.alerts.hr_shaded}}
+
+{% include footer.html %}
+EOF
+
+echo "  - ${diary}" >> _data/wikiMap.yml
+
+  done
+
+else
+  echo "Directory ${TAGDIR} doesn't exist or you are not in the top-level directory."
+  echo "Please run again from the root directory of your project."
+  exit 1
+fi
+
+exit
