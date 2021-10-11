@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "using git with vim"
 name: "fugitive-vim-cheatsheet"
 tags: [[vim]]
