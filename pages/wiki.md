@@ -17,6 +17,11 @@ updated: 2021-10-11 3:38 AM
 .col-md-6 {
     width: 70% !important;
 }
+@media only screen and (max-wdith:767px){
+    .col-md-6 {
+        width: 100% !important;
+    }
+}
 </style>
     <div class="post-list" style="line-height: 1.1;">
      {% for wiki in site.wiki reversed %}
