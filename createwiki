@@ -36,6 +36,7 @@ if [ -d "${TAGDIR}" ]; then
   # Cannot indent here string.
 cat <<EOF >"${TAGDIR}/${fileName}-${wiki}.md"
 ---
+layout: post
 title: "${title}"
 name: "${wiki}"
 tags: [[$tag]]
