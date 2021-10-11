@@ -4,7 +4,7 @@ keywords: freelancers
 tags: [getting_started,drone]
 hide: false
 toc: true
-sidebar: mydoc_sidebar
+sidebar: other_sidebar
 permalink: freelancers.html
 summary: my freelancers I work with since 2018.
 collection: freelancers
