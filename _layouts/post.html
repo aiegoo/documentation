@@ -55,7 +55,7 @@ layout: default
     {% if page.previous.name %} 
     <a class="wiki-previous" href="{% if page.previous_post %} {{page.previous_post}} {% else %} {{page.previous.url}} {% endif %}" title="{{ page.previous.date}}"><span class="iconify" data-icon="mdi:chevron-double-right" data-rotate="180deg" style="font-size: 36px; vertical-align: middle;"></span>&nbsp;{{page.previous.name}}</a>
     {% else %}
-    <a class="wiki-previous" href="{% if page.previous_post %} {{page.previous_post}} {% else %} {{page.previous.url}} {% endif %}" title="{{ page.previous.date}}"><span>&#8672;</span>&nbsp;{% if page.previous.title %}{{page.previous.title}} {% else %} {{page.previous.name}}{% endif %}</a>
+    <a class="wiki-previous" href="{% if page.previous_post %} {{page.previous_post | remove: "/" }} {% else %} {{page.previous.url | remove: "/" }} {% endif %}" title="{{ page.previous.date}}"><span>&#8672;</span>&nbsp;{% if page.previous.title %}{{page.previous.title}} {% else %} {{page.previous.name}}{% endif %}</a>
     {% endif %}
     {% endif %}
     {% endif %}
@@ -65,7 +65,7 @@ layout: default
     {% if page.next.name %}
     <a class="wiki-next" href="{% if page.next_post %} {{page.next_post}} {% else %} {{page.next.url}} {% endif %}" title="{{ page.next.date}}">{{page.next.name}}&nbsp;<span class="iconify" data-icon="mdi:chevron-double-right" style="font-size: 36px; vertical-align: middle;"></span></a>
     {% else %}
-    <a class="wiki-next" href="{% if page.next_post %} {{page.next_post}} {% else %} {{page.next.url}} {% endif %}" title="{{ page.next.date}}"><span>&#8674;</span>&nbsp;{% if page.next.title %} {{page.next.title}} {% else %} {{page.next.name}} {% endif %}</a>
+    <a class="wiki-next" href="{% if page.next_post %} {{page.next_post | remove: "/" }} {% else %} {{page.next.url | remove: "/" }} {% endif %}" title="{{ page.next.date}}"><span>&#8674;</span>&nbsp;{% if page.next.title %} {{page.next.title}} {% else %} {{page.next.name}} {% endif %}</a>
     {% endif %}
     {% endif %}
     {% endif %}
