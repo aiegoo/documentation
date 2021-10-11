@@ -68,7 +68,6 @@ allowed-tags:
   - anaconda
   - api
   - web
-  - Javascript
   - python
   - cplus
   - node
@@ -76,4 +75,5 @@ allowed-tags:
   - projects
   - mycourse
   - mydrone
-# Copyright 2021 Google LLC
+  - lecture
+  - javascript
