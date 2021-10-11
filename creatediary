@@ -39,7 +39,7 @@ cat <<EOF >"${TAGDIR}/${fileName}th.md"
 layout: post
 title: "${title}"
 name: "${diary}"
-tags: [[$tag]]
+tags: [$tag]
 permalink: ${date}.html
 sidebar: other_sidebar
 folder: 2021

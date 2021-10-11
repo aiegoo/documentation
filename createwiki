@@ -39,7 +39,7 @@ cat <<EOF >"${TAGDIR}/${fileName}-${wiki}.md"
 layout: post
 title: "${title}"
 name: "${wiki}"
-tags: [[$tag]]
+tags: [$tag]
 permalink: ${fileName}-${wiki}.html
 sidebar: other_sidebar
 folder: blog
