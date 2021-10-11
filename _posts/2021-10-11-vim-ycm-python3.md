@@ -1,18 +1,15 @@
 ---
-layout  : post
-title   : youcompleteme를 python3로 구동하기
-summary : python2 좀 그만 쓰자
-date    : 2021-10-11 11:48:40 +0900
-updated : 2021-10-11 11:59 AM
-tag     : vim
-keywords: vim, python, ycm
-toc     : true
-public  : true
-parent  : [[Vim]]
-latex   : false
-categories: lecture
+title: "youcompleteme를 python3로 구동하기"
+published: true
+categories: task
 permalink: vim-ycm-python3.html
+summary: "python2 좀 그만 쓰자"
+tags: [vim]
+links: https://aiegoo.github.io/documentation/yoga
+date: 2021-10-11 11:48:40 +0900
+updated: 2021-10-11 11:59 AM
 ---
+
 * TOC
 {:toc}
 
