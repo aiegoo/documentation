@@ -15,7 +15,7 @@ public: true
 parent: [[Vim]] 
 latex: false
 repos: aiegoo/documentation
-------
+---
 
 * TOC
 {:toc}
