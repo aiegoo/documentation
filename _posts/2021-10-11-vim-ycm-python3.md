@@ -10,7 +10,7 @@ public  : true
 parent  : [[Vim]]
 latex   : false
 categories: lecture
-permalink: 2021-10-11-vim-ycm-python3.html
+permalink: vim-ycm-python3.html
 ---
 * TOC
 {:toc}
