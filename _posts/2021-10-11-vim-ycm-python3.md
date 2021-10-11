@@ -7,7 +7,7 @@ summary: "python2 좀 그만 쓰자"
 tags: [vim]
 links: https://aiegoo.github.io/documentation/yoga
 date: 2021-10-11 11:48:40 +0900
-updated: 2021-10-11 11:59 AM
+updated: 2021-10-11 6:07 PM
 ---
 
 * TOC
