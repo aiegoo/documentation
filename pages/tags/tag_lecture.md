@@ -1,8 +1,8 @@
 ---
-title: "javascript page"
-tagName: javascript
+title: "lecture page"
+tagName: lecture
 search: exclude
-permalink: tag_javascript.html
+permalink: tag_lecture.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
