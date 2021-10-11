@@ -1,16 +1,16 @@
 ---
 layout  : post
-title   : youcompleteme를 python3로 구동하기
+name   : youcompleteme를 python3로 구동하기
 summary : python2 좀 그만 쓰자
 date    : 2021-10-11 11:48:40 +0900
 updated : 2021-10-11 8:19 PM
-tag     : vim python
+tag     : vim, python
 toc     : true
 public  : true
 parent  : [[Vim]]
 latex   : false
 categories: lecture
-permalink: vim-ycm-python3.html
+permalink: 2021-10-11-vim-ycm-python3.html
 ---
 * TOC
 {:toc}
