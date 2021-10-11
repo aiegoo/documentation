@@ -13,7 +13,7 @@ toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
 date: 2021-10-11T23:56:32 +0900
-updated: 2021-10-11T23:56:32
+updated: 2021-10-12 00:15 AM
 ---
 
 ## vim fugitive installation
