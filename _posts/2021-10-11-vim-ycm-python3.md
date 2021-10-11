@@ -1,7 +1,7 @@
 ---
 title: "youcompleteme를 python3로 구동하기"
 published: true
-categories: task
+categories: lecture
 permalink: vim-ycm-python3.html
 summary: "python2 좀 그만 쓰자"
 tags: [vim]
