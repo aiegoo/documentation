@@ -1728,7 +1728,7 @@ a.wiki-next {
 }
 a.wiki-previous {
     overflow: hidden;
-    line-height: 19px;
+    line-height: 28px;
 }
 a.wiki-next:hover {
     text-decoration-color: #42b983b2;
