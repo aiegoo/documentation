@@ -1,5 +1,5 @@
 ---
-name: "youcompleteme를 python3로 구동하기"
+name: "youcompleteme python"
 layout: post
 categories: lecture
 permalink: 2021-10-11-vim-ycm-python3.html
