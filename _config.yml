@@ -331,10 +331,10 @@ jekyll-spaceship:
 
 # facebook comments
 comments:
-	provider : "facebook"
-	facebook:
-		appid : 839268703254603
-		num_posts : # 5 (default)
-		colorscheme : # "light" (default), "dark"
+    provider : "facebook"
+    facebook:
+        appid : 839268703254603
+        num_posts : 5 # 5 (default)
+        colorscheme : light # "light" (default), "dark"
 
 # Copyright 2021 Google LLC
