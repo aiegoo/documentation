@@ -24,6 +24,8 @@ updated: 2021-10-12 9:52 AM
 ## cheatsheet
 <script src="https://gist.github.com/mikaelz/38600d22b716b39b031165cd6d201a67.js"></script>
 
+<script src="https://gist.github.com/ayushxx7/b7e749f3623e22f61ef821c362459620.js"></script>
+
 {% include taglogic.html %}
 
 {% include links.html %}
