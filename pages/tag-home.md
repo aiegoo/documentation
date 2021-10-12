@@ -44,7 +44,7 @@ public: true
                 <a class="post-link" href="{{ tagMap| prepend: site.baseurl }}">
                     <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
                     <div class="post-meta" style="color: red;">
-                        {{ post.updated | date: "%Y.%m.%d" }}
+                       <span> {{ post.updated | date: "%Y.%m.%d" }}</span>
                     </div>
             {% if post.summary != empty and post.summary != undefined %}
                         <div class="post-excerpt">
