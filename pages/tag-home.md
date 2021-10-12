@@ -21,7 +21,7 @@ public: true
 {% assign tagMap = site.html_pages %}
 {% assign tagList = site.data.tags.allowed-tags %}
 <div>
-    <ul class="post-list" style="line-height: 1.1;">
+    <ul class="tag-list" style="line-height: 1.1;">
 {% for tag in tagList %}
         <li>
             <a href="#{{tag}}" onclick="showTag('#{{tag}}')">
@@ -31,7 +31,7 @@ public: true
 {% endfor %}
     </ul>
 </div>
-<div class="post-meta post-nav">
+<div class="post-meta">
 {% for tag in tagList %}
     <div class="archive-group invisible" id="{{tag}}">
         <h3 id="{{tag}}">#{{ tag }}</h3>

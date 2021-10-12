@@ -1858,6 +1858,25 @@ li.scroll-nav_item a:before {
     }
 }
 
+/* tag-list from the tag-home page */
+
+ul.tag-list {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.tag-list li {
+        float: left;
+    }
+
+ul.tag-list li a {
+        padding-right: 5px;
+        text-decoration: none;
+    }
+
 
 /* class reading time for post page */
 .reading-time {
