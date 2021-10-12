@@ -6,9 +6,9 @@ public: true
 ---
 
 ## tag-home
-<div class="app">
+<div class="well">
 <h6>이곳에 보이는 태그는 <a href="https://stackoverflow.com/tags?tab=popular">stackoverflow tag 페이지</a> 에서 인기도가 높은 태그를 우선으로 선정했습니다.</h6>
-{% assign tagMap = site.documents %}
+{% assign tagMap = site.pages %}
 {% assign tagList = site.data.allowed-tags %}
 <div>
     <ul class="tag-list">
