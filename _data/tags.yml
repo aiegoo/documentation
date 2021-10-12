@@ -58,7 +58,6 @@ allowed-tags:
   - linux
   - mediaquery
   - terminus
-  - tmuxinator
   - jekyll
   - stringinterpolation
   - regex
@@ -80,3 +79,4 @@ allowed-tags:
   - javascript
   - lecture
   - vscode
+  - tmuxinator

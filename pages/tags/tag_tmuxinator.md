@@ -1,11 +1,12 @@
 ---
-title: "Books pages"
-tagName: books
+title: "Tmuxinator page"
+tagName: tmuxinator
 search: exclude
-permalink: tag_books.html
+permalink: tag_tmuxinator.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
+
 {% include taglogic.html %}
 
 {% include links.html %}
