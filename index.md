@@ -10,6 +10,17 @@ summary: From a graphic designer with hands-on experience in the industry, I wit
 youtubeID: ijVpUdWZYKU
 ---
 
+<style type="text/css">
+.col-md-6 {
+    width: 70% !important;
+}
+@media only screen and (max-width:767px){
+    .col-md-6 {
+        width: 100% !important;
+    }
+}
+</style>
+
 <div markdown="1" align="center">
 
 ### Hello visitor, welcome to my Github portfolio wiki
