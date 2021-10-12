@@ -39,7 +39,7 @@ public: true
             <ul class="post-list leaders">
         {% assign thisTag = page.tagName %}
         {% for post in site.posts %}
-            {% if post contains tag %}
+            {% if post.tags contains tag %}
             {% assign tagMap = post.url %}
             {% if post.public != false %}
                 <li>
