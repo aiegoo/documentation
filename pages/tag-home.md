@@ -12,7 +12,7 @@ public: true
 {% for page in site.pages %}
 <div>
     <ul class="tag-list">
-    {% for tag in page.tags | map: 'tags' | join: ',' | split: ',' | group_by: tag %}
+    {% for tag in page.tags %}
         {% if tag == thisTag %}
         <li>
             <a href="#{{tag}}" onclick="showTag('#{{tag}}')">
