@@ -8,19 +8,17 @@ public: true
 ## tag-home
 <div class="well">
 <h6>이곳에 보이는 태그는 <a href="https://stackoverflow.com/tags?tab=popular">stackoverflow tag 페이지</a> 에서 인기도가 높은 태그를 우선으로 선정했습니다.</h6>
-{% assign thisTag = page.tagName %}
-{% for tag in site.tags %}
+{% assign tagMap = site.html_pages %}
+{% assign tagList = site.data.tags.allowed-tags %}
 <div>
     <ul class="tag-list">
-    {% for tag in page.tags %}
-        {% if tag == thisTag %}
+{% for tag in tagList %}
         <li>
             <a href="#{{tag}}" onclick="showTag('#{{tag}}')">
-                {{tag}}<sup>{{ tag | size }}</sup>
+                {{tag}}<sup>{{ tagMap[tag] | size }}</sup>
             </a>
         </li>
-        {% endif %}
-    {% endfor %}
+{% endfor %}
     </ul>
 </div>
 <div class="post-meta post-nav">
@@ -52,7 +50,6 @@ public: true
     </div> <!-- end of archive-group -->
 {% endfor %}
 </div>
-{% endfor %}
 </div> <!-- end of well -->
 
 <script src="js/axios.min.js"></script>
