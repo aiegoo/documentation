@@ -31,6 +31,7 @@ public: true
     {% endfor %}
         </ul>
     </div>
+    <hr class="faded">
     <div class="post-meta">
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
