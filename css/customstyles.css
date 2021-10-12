@@ -1821,6 +1821,17 @@ li.scroll-nav_item a:before {
     transform: scale(1.05);
 }
 
+.scroll-nav__item--active:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 14px;
+    background: black;
+    position: absolute;
+    left: -20px;
+    top: 2px;
+}
+
 .scroll-nav__item--active>a:hover {
         color: rgba(168, 168, 168, 0.9);
         transform: scale(1.05);
