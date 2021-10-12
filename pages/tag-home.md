@@ -33,7 +33,7 @@ public: true
             <li>
                 <a class="post-link" href="{{ tagMap| prepend: site.baseurl }}">
                     <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
-                    <div class="post-meta" style="float: right;">
+                    <div class="post-meta" style="color: red;">
                         {{ post.updated | date: "%Y.%m.%d" }}
                     </div>
             {% if post.summary != empty and post.summary != undefined %}
