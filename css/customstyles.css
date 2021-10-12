@@ -1876,7 +1876,9 @@ ul.tag-list li a {
         padding-right: 5px;
         text-decoration: none;
     }
-
+ul.tag-list li a:hover {
+    color: rgb(253, 135, 155);
+}
 ul.tag-list li span {
     overflow: hidden;
     letter-spacing: -1px;
