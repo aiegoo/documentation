@@ -21,7 +21,7 @@ public: true
 {% endfor %}
     </ul>
 </div>
-        <h3 id="stackoverflow">Checking ... "#{{ tag }}" in StackOverflow</h3>
+        
         
 <div class="post-meta post-nav">
 {% for tag in tagList %}
@@ -48,7 +48,7 @@ public: true
         {% endif %}
     {% endfor %}
         </ul>
-
+<h3 id="stackoverflow">Checking ... "#{{ tag }}" in StackOverflow</h3>
     </div>
 {% endfor %}
 </div>
