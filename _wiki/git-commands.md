@@ -23,6 +23,24 @@ latex: false
 * 레시피 제목은 2단계 제목으로..
 *
 
+## conflict, overwrite, housekeeping
+### conflict issue가 많다고 예상될때 다음을,
+
+```bash
+ git fetch origin master
+
+ git merge -s recursive -X theirs origin/master
+ or
+ git reset --hard origin/master
+ ```
+
+### housekeeping
+[git_gc](https://git-scm.com/docs/git-gc)
+
+```bash
+git gc --aggressive
+```
+
 
 ## 아직 add 하기 전 작업중인 파일을 되돌린다 - restore
 
