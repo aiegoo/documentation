@@ -17,49 +17,49 @@ public: true
     }
 }
 </style>
-<h6>이곳에 보이는 태그는 <a href="https://stackoverflow.com/tags?tab=popular">stackoverflow tag 페이지</a> 에서 인기도가 높은 태그를 우선으로 선정했습니다.</h6>
-{% assign tagMap = site.html_pages %}
-{% assign tagList = site.data.tags.allowed-tags %}
-<div>
-    <ul class="tag-list" style="line-height: 1.1;">
-{% for tag in tagList | sort %}
-        <li>
-            <a href="#{{tag}}" onclick="showTag('#{{tag}}')">
-                {{tag}}<sup>{{ tagMap[tag] | size }}</sup>
-            </a>
-        </li>
-{% endfor %}
-    </ul>
-</div>
-<div class="post-meta">
-{% for tag in tagList %}
-    <div class="archive-group invisible" id="{{tag}}">
-        <h3 id="{{tag}}">#{{ tag }}</h3>
-        <ul class="post-list leaders">
-    {% assign thisTag = page.tagName %}
-    {% for post in site.posts %}
-        {% assign tagMap = post.url %}
-        {% if post.public != false %}
+    <h6>이곳에 보이는 태그는 <a href="https://stackoverflow.com/tags?tab=popular">stackoverflow tag 페이지</a> 에서 인기도가 높은 태그를 우선으로 선정했습니다.</h6>
+    {% assign tagMap = site.html_pages %}
+    {% assign tagList = site.data.tags.allowed-tags %}
+    <div>
+        <ul class="tag-list" style="line-height: 1.1;">
+    {% for tag in tagList | sort %}
             <li>
-                <a class="post-link" href="{{ tagMap| prepend: site.baseurl }}">
-                    <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
-                    <div class="post-meta" style="color: red;">
-                       <span class="parameter red"> {{ post.updated | date: "%Y.%m.%d" }}</span>
-                    </div>
-            {% if post.summary != empty and post.summary != undefined %}
-                        <div class="post-excerpt">
-                            - {{ post.summary }}
-                        </div>
-            {% endif %}
+                <a href="#{{tag}}" onclick="showTag('#{{tag}}')">
+                    {{tag}}<sup>{{ tagList | map: "tags" | size }}</sup>
                 </a>
             </li>
-        {% endif %}
     {% endfor %}
         </ul>
-<h3 id="stackoverflow">Checking ... "#{{ tag }}" in StackOverflow</h3>
-    </div> <!-- end of archive-group -->
-{% endfor %}
-</div>
+    </div>
+    <div class="post-meta">
+    {% for tag in tagList %}
+        <div class="archive-group invisible" id="{{tag}}">
+            <h3 id="{{tag}}">#{{ tag }}</h3>
+            <ul class="post-list leaders">
+        {% assign thisTag = page.tagName %}
+        {% for post in site.posts %}
+            {% assign tagMap = post.url %}
+            {% if post.public != false %}
+                <li>
+                    <a class="post-link" href="{{ tagMap| prepend: site.baseurl }}">
+                        <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
+                        <div class="post-meta" style="color: red;">
+                        <span class="parameter red"> {{ post.updated | date: "%Y.%m.%d" }}</span>
+                        </div>
+                {% if post.summary != empty and post.summary != undefined %}
+                            <div class="post-excerpt">
+                                - {{ post.summary }}
+                            </div>
+                {% endif %}
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+            </ul>
+    <h3 id="stackoverflow">Checking ... "#{{ tag }}" in StackOverflow</h3>
+        </div> <!-- end of archive-group -->
+    {% endfor %}
+    </div>
 </div> <!-- end of well -->
 
 <script src="js/axios.min.js"></script>
