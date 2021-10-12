@@ -16,7 +16,7 @@ layout: page
 
 <style type="text/css">
 .col-md-6 {
-    width: 70% !important;
+    width: 65% !important;
 }
 @media only screen and (max-width:767px){
     .col-md-6 {
