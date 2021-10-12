@@ -9,7 +9,7 @@ public: true
 <div class="well">
 <h6>이곳에 보이는 태그는 <a href="https://stackoverflow.com/tags?tab=popular">stackoverflow tag 페이지</a> 에서 인기도가 높은 태그를 우선으로 선정했습니다.</h6>
 {% assign thisTag = page.tagName %}
-{% for page in site.pages %}
+{% for tag in site.tags %}
 <div>
     <ul class="tag-list">
     {% for tag in page.tags %}
