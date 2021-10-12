@@ -82,3 +82,5 @@ allowed-tags:
   - tmuxinator
   - ajax
   - pandas
+  - database
+  - algorithm
