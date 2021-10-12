@@ -3,6 +3,7 @@ layout: post
 title: Tag
 permalink: tag-home.html
 public: true
+toc: false
 ---
 
 ## tag-home
