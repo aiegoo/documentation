@@ -1902,6 +1902,14 @@ ul.tag-list span+div {
     overflow: hidden !important;
 }
 
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
 /* class reading time for post page */
 .reading-time {
     font-family: FontAwesome;
@@ -1993,6 +2001,8 @@ font-family: 'NanumBarunpen' !important;
         margin-left: -30px;
     }
 }
+
+
 
 /* highlight css */
 .highlight {
