@@ -1821,15 +1821,15 @@ li.scroll-nav_item a:before {
     transform: scale(1.05);
 }
 
-.scroll-nav__item--active:before {
+.scroll-nav__item--active>a:before {
     content: '';
     display: block;
-    width: 5px;
+    width: 8px;
     height: 14px;
-    background: black;
+    background: rgba(233, 236, 239, 0.9);
     position: absolute;
-    left: -20px;
-    top: 2px;
+    left: -11px;
+    top: 3px;
 }
 
 .scroll-nav__item--active>a:hover {
