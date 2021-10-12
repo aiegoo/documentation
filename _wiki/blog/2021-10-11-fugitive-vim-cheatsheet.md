@@ -34,5 +34,3 @@ updated: 2021-10-12 9:52 AM
 {% include commento.html %}
 
 {{site.data.alerts.hr_shaded}}
-
-{% include footer.html %}
