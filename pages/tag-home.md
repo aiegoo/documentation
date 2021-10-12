@@ -22,7 +22,7 @@ public: true
 {% assign tagList = site.data.tags.allowed-tags %}
 <div>
     <ul class="tag-list" style="line-height: 1.1;">
-{% for tag in tagList %}
+{% for tag in tagList | sort %}
         <li>
             <a href="#{{tag}}" onclick="showTag('#{{tag}}')">
                 {{tag}}<sup>{{ tagMap[tag] | size }}</sup>
