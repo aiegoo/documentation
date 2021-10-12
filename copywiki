@@ -1,7 +1,11 @@
 #!/bin/bash
+source=$(source)
+
+echo "source file for ${source} is?"
+read source
+
+source ./${source}
 while IFS= read -r line; do
     echo "Text read from file: $line"
 done < "$1"
-
-source ./test.txt
-echo $week
+echo ${layout}
