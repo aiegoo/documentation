@@ -25,7 +25,7 @@ public: true
     {% for tag in tagList | sort_natural %}
             <li>
                 <a href="#{{tag}}" onclick="showTag('#{{tag}}')">
-                    {{tag}}<sup>{{ tagList | map: "tags" | size }}</sup>
+                    {{tag}}<sup color="hotpink">{{ tag | size }}</sup>
                 </a>
             </li>
     {% endfor %}
