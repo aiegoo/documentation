@@ -14,6 +14,17 @@ layout: page
 
 ## yoga books
 
+<style type="text/css">
+.col-md-6 {
+    width: 70% !important;
+}
+@media only screen and (max-width:767px){
+    .col-md-6 {
+        width: 100% !important;
+    }
+}
+</style>
+
 {% assign yoga = site.yoga | sort:"date" | reverse %}
 {% for yoga in yoga %}
 <h2>
