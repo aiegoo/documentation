@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tag
-permalink: /tag-home/
+permalink: tag-home.html
 public: true
 ---
 
