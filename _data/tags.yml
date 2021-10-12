@@ -80,3 +80,5 @@ allowed-tags:
   - lecture
   - vscode
   - tmuxinator
+  - ajax
+  - pandas
