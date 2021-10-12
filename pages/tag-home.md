@@ -22,14 +22,14 @@ public: true
     </ul>
 </div>
 
-<div>
+<div class="post-meta post-nav">
 {% for tag in tagList %}
     <div class="archive-group invisible" id="{{tag}}">
         <h3 id="{{tag}}">#{{ tag }}</h3>
         <ul class="post-list leaders">
-    {% assign list = tagMap[tag]  %}
+    {% assign list = tagMap[loc] | remove: 'aiegoo.github.io/'  %}
     {% for postObj in list %}
-        {% assign post = site.data.pageMap[postObj.fileName] %}
+        {% assign post = tagMap[postObj.loc] %}
         {% if post.public != false %}
             <li>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
@@ -53,8 +53,8 @@ public: true
 </div>
 </div> <!-- end of home -->
 
-<script src="../js/axios.min.js"></script>
-<script src="../js/taginstackoverflow.js"></script>
+<script src="js/axios.min.js"></script>
+<script src="js/taginstackoverflow.js"></script>
 <script>
     function showTag(selector) {
         document.querySelectorAll('.visible')
