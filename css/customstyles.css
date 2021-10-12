@@ -1877,6 +1877,17 @@ ul.tag-list li a {
         text-decoration: none;
     }
 
+ul.tag-list li span {
+    overflow: hidden;
+    letter-spacing: -1px;
+}
+ul.tag-list span+div {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden !important;
+}
 
 /* class reading time for post page */
 .reading-time {
