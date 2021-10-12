@@ -26,13 +26,13 @@ public: true
     <div class="archive-group invisible" id="{{tag}}">
         <h3 id="{{tag}}">#{{ tag }}</h3>
         <ul class="post-list leaders">
-    {% assign list = tagMap[loc] | remove: 'aiegoo.github.io/'  %}
-    {% for postObj in list %}
-        {% assign post = tagMap[postObj.loc] %}
+    {% assign thisTag = page.tagName %}
+    {% for post in site.posts %}
+        {% assign tagMap = post.url %}
         {% if post.public != false %}
             <li>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                    <span>{{ post.title }}</span>
+                <a class="post-link" href="{{ tagMap| prepend: site.baseurl }}">
+                    <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
                     <div class="post-meta" style="float: right;">
                         {{ post.updated | date: "%Y.%m.%d" }}
                     </div>
