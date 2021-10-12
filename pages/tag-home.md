@@ -31,17 +31,16 @@ public: true
     {% endfor %}
         </ul>
     </div>
-    <hr><hr class="shaded"/>
+    <hr class="shaded"/>
     <div class="post-meta">
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
             <h3 id="{{tag}}">#{{ tag }}</h3>
             <ul class="post-list leaders">
         {% assign thisTag = page.tagName %}
-        {% for post in site.posts %}
-            {% if post.tags contains tag %}
+        {% for post in site.posts %}            
             {% assign tagMap = post.url %}
-            {% if post.public != false %}
+            {% if post.tags contains tag and post.public != false %}
                 <li>
                     <a class="post-link" href="{{ tagMap| prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
@@ -55,7 +54,6 @@ public: true
                 {% endif %}
                     </a>
                 </li>
-            {% endif %}
             {% endif %}
         {% endfor %}
             </ul>
