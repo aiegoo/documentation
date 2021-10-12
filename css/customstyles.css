@@ -1877,7 +1877,7 @@ ul.tag-list li a {
         text-decoration: none;
     }
 ul.tag-list li a:hover {
-    color: rgb(253, 135, 155);
+    color: rgb(253, 135, 155) !important;
 }
 ul.tag-list li span {
     overflow: hidden;
