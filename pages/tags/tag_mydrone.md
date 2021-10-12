@@ -1,6 +1,6 @@
 ---
 title: "mydrone pages"
-tagName: ai
+tagName: mydrone
 search: exclude
 permalink: tag_mydrone.html
 sidebar: mydoc_sidebar
