@@ -2,7 +2,7 @@
 layout: post
 title: "using git with vim"
 name: "fugitive-vim-cheatsheet"
-tags: [vim]
+tags: vim
 permalink: 2021-10-11-fugitive-vim-cheatsheet.html
 sidebar: other_sidebar
 folder: blog
