@@ -42,7 +42,7 @@ toc: false
         {% for post in site.posts %}
             {% assign thisTag = thisTag | push: page.tags %}
             {% capture thisTag-item %}{{page.tags | strip_newline }}{% endcapture %}
-            {% if post.public != false %}
+            {% if page contains tag %}
                 <li>
                     <a class="post-link" href="{{ thisTag-item | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
