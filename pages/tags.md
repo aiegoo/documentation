@@ -97,7 +97,7 @@ folder: mydoc
 </div>
 
 <div class="col-xs-6 col-sm-4 col-md-6" data-groups='["jekyll"]'>
-            <div class="panel panel-default">
+        <div class="panel panel-default">
             <div class="panel-heading">Jekyll</div>
             <div class="panel-body">
               Contents related to Jekyll are tagged. 
