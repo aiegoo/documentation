@@ -40,7 +40,7 @@ toc: false
             <ul class="post-list leaders">
         {% assign thisTag = "" | split: ',' %}
         {% for post in site.posts %}
-            {% assign thisTag = push: page.tags %}
+            {% assign thisTag = thisTag | push: page.tags %}
             {% capture thisTag-item %}{{page.tags | strip_newline }}{% endcapture %}
             {% if post.public != false %}
                 <li>
