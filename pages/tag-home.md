@@ -19,6 +19,7 @@ toc: false
 }
 </style>
     <h6>이곳에 보이는 태그는 <a href="https://stackoverflow.com/tags?tab=popular">stackoverflow tag 페이지</a> 에서 인기도가 높은 태그를 우선으로 선정했습니다.</h6>
+    {% assign tagMap = site.pages %}
     {% assign tagList = site.data.tags.allowed-tags | sort_natural %}
     <div>
         <ul class="tag-list" style="line-height: 1.1;">
@@ -33,24 +34,23 @@ toc: false
     </div>
     <hr class="faded">
     <div class="post-meta">
-    {% for post in site.posts %}
+    {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
             <h3 id="{{tag}}">#{{ tag }}</h3>
             <ul class="post-list leaders">
-        {% assign thisTag = "" | split: ',' %}
+        {% assign thisTag = page.tagName %}
         {% for post in site.posts %}
-            {% assign thisTag = thisTag | push: page.tags %}
-            {% capture thisTag-item %}{{ page.tags | strip_newline }}{% endcapture %}
-            {% if page contains thisTag-item %}
+            {% assign tagMap = tag.url %}
+            {% if post.public != false %}
                 <li>
-                    <a class="post-link" href="{{ page.url }}">
+                    <a class="post-link" href="{{ tagMap | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
                         <div class="post-meta" style="color: red;">
                         <span class="parameter red"> {{ post.updated | date: "%Y.%m.%d" }}</span>
                         </div>
                 {% if post.summary != empty and post.summary != undefined %}
                             <div class="post-excerpt">
-                              {{thisTag-item}}  - {{ post.summary }}
+                              {{thisTag}}  - {{ post.summary }}
                             </div>
                 {% endif %}
                     </a>
@@ -58,7 +58,7 @@ toc: false
             {% endif %}
         {% endfor %}
             </ul>
-    <h3 id="stackoverflow">Checking ... "{{ thisTag-item }}" in StackOverflow</h3>
+    <h3 id="stackoverflow">Checking ... "{{ tag }}" in StackOverflow</h3>
         </div> <!-- end of archive-group -->
     {% endfor %}
     </div>
