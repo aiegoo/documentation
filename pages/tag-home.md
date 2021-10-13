@@ -39,7 +39,7 @@ toc: false
             <h3 id="{{tag}}">#{{ tag }}</h3>
             <ul class="post-list leaders">
         {% assign thisTag = page.tag %}
-        {% for page in site.pagess %}
+        {% for page in site.pages %}
             {% assign tagMap = page.url %}
             {% if thisTag == tag %}
                 <li>
