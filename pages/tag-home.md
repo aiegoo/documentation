@@ -42,9 +42,9 @@ toc: false
         {% for post in site.posts %}
             {% assign thisTag = thisTag | push: page.tags %}
             {% capture thisTag-item %}{{page.tags | strip_newline }}{% endcapture %}
-            {% if page contains tag %}
+            {% if page contains thisTag-item %}
                 <li>
-                    <a class="post-link" href="{{ thisTag-item | prepend: site.baseurl }}">
+                    <a class="post-link" href="{{ page.url }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
                         <div class="post-meta" style="color: red;">
                         <span class="parameter red"> {{ post.updated | date: "%Y.%m.%d" }}</span>
