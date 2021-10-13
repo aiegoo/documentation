@@ -40,6 +40,7 @@ toc: false
             <ul class="post-list leaders">
         {% assign thisTag = page.tag %}
         {% for page in site.pages %}
+            {% for tag in page.tags %}
             {% if tag == thisTag %}            
                 <li>
                     <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">
@@ -55,6 +56,7 @@ toc: false
                     </a>
                 </li>
             {% endif %}
+            {% endfor %}
         {% endfor %}
             </ul>
     <h3 id="stackoverflow">Checking ... "{{ tag }}" in StackOverflow</h3>
