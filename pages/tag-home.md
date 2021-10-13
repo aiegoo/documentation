@@ -44,13 +44,13 @@ toc: false
             {% if thisTag == tag %}
                 <li>
                     <a class="post-link" href="{{ tagMap| prepend: site.baseurl }}">
-                        <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
+                        <span>{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</span>
                         <div class="post-meta" style="color: red;">
-                        <span class="parameter red"> {{ post.updated | date: "%Y.%m.%d" }}</span>
+                        <span class="parameter red"> {{ page.updated | date: "%Y.%m.%d" }}</span>
                         </div>
-                {% if post.summary != empty and post.summary != undefined %}
+                {% if page.summary != empty and page.summary != undefined %}
                             <div class="post-excerpt">
-                                - {{ post.summary }}
+                                - {{ page.summary }}
                             </div>
                 {% endif %}
                     </a>
