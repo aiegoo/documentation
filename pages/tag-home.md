@@ -34,15 +34,15 @@ toc: false
     </div>
     <hr class="faded">
     <div class="post-meta">
-    {% assign thisTag = "" | split: ',' %}
     {% for tag in site.tags %}
         <div class="archive-group invisible" id="{{tag}}">
             <h3 id="{{tag}}">#{{ tag }}</h3>
-            <ul class="post-list leaders">        
+            <ul class="post-list leaders">
+        {% assign thisTag = "" | split: ',' %}
         {% for post in site.posts %}
-            {% assign thisTag = thisTag | push: site.tags %}
+            {% assign thisTag = thisTag | push: page.tags %}
             {% capture thisTag-item %}{{page.tags | strip_newline }}{% endcapture %}
-            {% if page contains thisTag %}
+            {% if post.public != false %}
                 <li>
                     <a class="post-link" href="{{ thisTag-item | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
