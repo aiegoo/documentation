@@ -19,7 +19,6 @@ toc: false
 }
 </style>
     <h6>이곳에 보이는 태그는 <a href="https://stackoverflow.com/tags?tab=popular">stackoverflow tag 페이지</a> 에서 인기도가 높은 태그를 우선으로 선정했습니다.</h6>
-    {% assign tagMap = site.pages %}
     {% assign tagList = site.data.tags.allowed-tags | sort_natural %}
     <div>
         <ul class="tag-list" style="line-height: 1.1;">
@@ -34,14 +33,14 @@ toc: false
     </div>
     <hr class="faded">
     <div class="post-meta">
-    {% for tag in site.tags %}
+    {% for post in site.posts %}
         <div class="archive-group invisible" id="{{tag}}">
             <h3 id="{{tag}}">#{{ tag }}</h3>
             <ul class="post-list leaders">
         {% assign thisTag = "" | split: ',' %}
         {% for post in site.posts %}
             {% assign thisTag = thisTag | push: page.tags %}
-            {% capture thisTag-item %}{{page.tags | strip_newline }}{% endcapture %}
+            {% capture thisTag-item %}{{ page.tags | strip_newline }}{% endcapture %}
             {% if page contains thisTag-item %}
                 <li>
                     <a class="post-link" href="{{ page.url }}">
