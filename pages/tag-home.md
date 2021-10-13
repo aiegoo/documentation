@@ -40,9 +40,9 @@ toc: false
             <h3 id="{{tag}}">#{{ tag }}</h3>
             <ul class="post-list leaders">        
         {% for post in site.posts %}
-            {% assign thisTag = thisTag | push: page.tags %}
+            {% assign thisTag = thisTag | push: site.tags %}
             {% capture thisTag-item %}{{page.tags | strip_newline }}{% endcapture %}
-            {% if post.public != false %}
+            {% if page contains thisTag %}
                 <li>
                     <a class="post-link" href="{{ thisTag-item | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
