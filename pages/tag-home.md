@@ -39,9 +39,8 @@ toc: false
             <h3 id="{{tag}}">#{{ tag }}</h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
-        {% for post in site.posts %}
-            {% assign tagMap = tag.url %}
-            {% if page contains tag %}
+        {% assign tagMap = tag.url %}
+            {% if post contains tag %}
                 <li>
                     <a class="post-link" href="{{ tag | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
@@ -56,7 +55,6 @@ toc: false
                     </a>
                 </li>
             {% endif %}
-        {% endfor %}
             </ul>
     <h3 id="stackoverflow">Checking ... "{{ tag }}" in StackOverflow</h3>
         </div> <!-- end of archive-group -->
