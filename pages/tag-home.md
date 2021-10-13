@@ -38,12 +38,13 @@ toc: false
         <div class="archive-group invisible" id="{{tag}}">
             <h3 id="{{tag}}">#{{ tag }}</h3>
             <ul class="post-list leaders">
-        {% assign thisTag = page.tagName %}
+        {% assign thisTag = "" | split: ',' %}
         {% for post in site.posts %}
-            {% assign tagMap = tag.url %}
+            {% assign thisTag = push: page.tags %}
+            {% capture thisTag-item %}{{page.tags | strip_newline }}{% endcapture %}
             {% if post.public != false %}
                 <li>
-                    <a class="post-link" href="{{ tagMap | prepend: site.baseurl }}">
+                    <a class="post-link" href="{{ thisTag-item | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
                         <div class="post-meta" style="color: red;">
                         <span class="parameter red"> {{ post.updated | date: "%Y.%m.%d" }}</span>
