@@ -264,7 +264,8 @@ plugins:
   - jekyll-gist
   - jekyll-spaceship
   - jemoji  
-  - jekyll-babel
+  - jekyll-babel]
+  - jekyll-sitemap
 
 
 # Where things are
