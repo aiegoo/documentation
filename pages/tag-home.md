@@ -39,9 +39,9 @@ toc: false
             <h3 id="{{tag}}">#{{ tag }}</h3>
             <ul class="post-list leaders">
         {% assign thisTag = page.tag %}
-        {% for post in site.posts %}
-            {% assign tagMap = post.url %}
-            {% if post.public != false %}
+        {% for page in site.pagess %}
+            {% assign tagMap = page.url %}
+            {% if thisTag == tag %}
                 <li>
                     <a class="post-link" href="{{ tagMap| prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
