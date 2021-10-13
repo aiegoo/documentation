@@ -48,14 +48,14 @@ toc: false
                         <div class="post-meta" style="color: red;">
                         <span class="parameter red"> {{ post.updated | date: "%Y.%m.%d" }}</span>
                         </div>
-                {% if post.summary != empty %}
+                    {% if post.summary != empty %}
                             <div class="post-excerpt">
                                 - {{ post.summary }}
-                            </div>
-                {% endfor %}
-            {% endif %}
+                            </div>               
+                    {% endif %}
                     </a>
-                </li>
+                </li> 
+                {% endfor %}
             {% endif %}
             </ul>
     <h3 id="stackoverflow">Checking ... "{{ tag }}" in StackOverflow</h3>
