@@ -50,7 +50,7 @@ toc: false
                         </div>
                 {% if post.summary != empty and post.summary != undefined %}
                             <div class="post-excerpt">
-                              {{thisTag}}  - {{ post.summary }}
+                              {{thisTag-item}}  - {{ post.summary }}
                             </div>
                 {% endif %}
                     </a>
@@ -58,7 +58,7 @@ toc: false
             {% endif %}
         {% endfor %}
             </ul>
-    <h3 id="stackoverflow">Checking ... "{{ tag }}" in StackOverflow</h3>
+    <h3 id="stackoverflow">Checking ... "{{ thisTag-item }}" in StackOverflow</h3>
         </div> <!-- end of archive-group -->
     {% endfor %}
     </div>
