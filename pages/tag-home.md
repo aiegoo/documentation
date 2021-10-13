@@ -50,7 +50,7 @@ toc: false
                         </div>
                 {% if post.summary != empty and post.summary != undefined %}
                             <div class="post-excerpt">
-                              {{thisTag}}  - {{ post.summary }}
+                              - {{ post.summary }}
                             </div>
                 {% endif %}
                     </a>
