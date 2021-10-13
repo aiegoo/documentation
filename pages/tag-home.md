@@ -19,7 +19,7 @@ toc: false
 }
 </style>
     <h6>이곳에 보이는 태그는 <a href="https://stackoverflow.com/tags?tab=popular">stackoverflow tag 페이지</a> 에서 인기도가 높은 태그를 우선으로 선정했습니다.</h6>
-    {% assign tagMap = site.html_pages %}
+    {% assign tagMap = site.pages %}
     {% assign tagList = site.data.tags.allowed-tags | sort_natural %}
     <div>
         <ul class="tag-list" style="line-height: 1.1;">
@@ -40,15 +40,14 @@ toc: false
             <ul class="post-list leaders">
         {% assign thisTag = page.tag %}
         {% for page in site.pages %}
-            {% if tag == thisTag %}
-            {% assign tagMap = page.url %}            
+            {% if tag == thisTag %}            
                 <li>
-                    <a class="post-link" href="{{ tagMap| prepend: site.baseurl }}">
+                    <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">
                         <span>{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</span>
-                        <div class="post-meta" style="color: red;">
+                        <div class="post-meta"  style="color: red;">
                         <span class="parameter red"> {{ page.updated | date: "%Y.%m.%d" }}</span>
                         </div>
-                {% if page.summary != empty and page.summary != undefined %}
+                {% if page.summary  %}
                             <div class="post-excerpt">
                                 - {{ page.summary }}
                             </div>
