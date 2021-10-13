@@ -38,7 +38,7 @@ toc: false
         <div class="archive-group invisible" id="{{tag}}">
             <h3 id="{{tag}}">#{{ tag }}</h3>
             <ul class="post-list leaders">
-        {% assign thisTag = page.tagName %}
+        {% assign thisTag = page.tag %}
         {% for post in site.posts %}
             {% assign tagMap = post.url %}
             {% if post.public != false %}
