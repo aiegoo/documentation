@@ -34,11 +34,11 @@ toc: false
     </div>
     <hr class="faded">
     <div class="post-meta">
-    {% for tag in tagList %}
+    {% assign thisTag = "" | split: ',' %}
+    {% for tag in site.tags %}
         <div class="archive-group invisible" id="{{tag}}">
             <h3 id="{{tag}}">#{{ tag }}</h3>
-            <ul class="post-list leaders">
-        {% assign thisTag = "" | split: ',' %}
+            <ul class="post-list leaders">        
         {% for post in site.posts %}
             {% assign thisTag = thisTag | push: page.tags %}
             {% capture thisTag-item %}{{page.tags | strip_newline }}{% endcapture %}
