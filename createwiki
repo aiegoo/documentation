@@ -61,8 +61,6 @@ updated: ${date}
 {% include commento.html %}
 
 {{site.data.alerts.hr_shaded}}
-
-{% include footer.html %}
 EOF
 
 echo "  - ${wikis}" >> _data/wikiMap.yml
