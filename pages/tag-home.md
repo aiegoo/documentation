@@ -43,15 +43,15 @@ toc: false
             {% for tag in page.tags %}
             {% if tag == thisTag %}            
                 <li>
-                    <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">
+                    <a class="post-link" href="{{ thisTag | prepend: site.baseurl }}">
                         <span>{% if page.title %} {{page.title}} {% else %} {{ page.name }} {% endif %}</span>
                         <div class="post-meta"  style="color: red;">
-                        <span class="parameter red"> {{ page.updated | date: "%Y.%m.%d" }}</span>
+                            <span class="parameter red"> {{ page.updated | date: "%Y.%m.%d" }}</span>
                         </div>
                 {% if page.summary  %}
-                            <div class="post-excerpt">
-                                - {{ page.summary }}
-                            </div>
+                        <div class="post-excerpt">
+                            - {{ page.summary }}
+                        </div>
                 {% endif %}
                     </a>
                 </li>
