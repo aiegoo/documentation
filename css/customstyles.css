@@ -1940,8 +1940,8 @@ ul.tag-list span+div {
 }
 
 .well a {
-    letter-spacing: -2px !important;    
-    font-size: 1.5rem !important;
+    letter-spacing: 0 !important;    
+    font-size: 1.6rem !important;
 }
 
 .well ul {
