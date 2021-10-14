@@ -38,6 +38,7 @@ updated: 2021-10-15 03:18
 ### references and books...
 [book](pdf/LearningJavascript.pdf) ✨ [node](pdf/Web-Development.pdf)
 * book : Ethan Brown, 3rd Edition(2016), 번역판-한빛미디어(2017), p151. 5.7.1 참 같은 값과 거짓 같은 값
+> it includes all data types, effectively allowing you to partition any value into truthy or falsy buckets. Logical Operators
 * [MDN > Definitions of Web-realated terms > Fasly](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) : 거짓 같은 값
 * 위 값 외에는 모두 참 같은 값 (Truthy)
   * [MDN > Definitions of Web-realated terms > Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) : 참 같은 값
