@@ -12,7 +12,7 @@ TAGDIR="_wiki/diary/2021"
 fileName=$(date +"%Y-%m-%d-%U")
 date=$(date +"%FT%T")
 update=$(date +"%Y-%m-%d %H:%M")
-journal=$(date +"%Y-%m-%d-%A)
+journal=$(date +"%a, %b %d, %y")
 
 if [ $# -ge $CMDLINEPARAM ]
 then
@@ -42,12 +42,12 @@ layout: post
 title: "${title}"
 name: "${diary}"
 tags: [$tag]
-permalink: ${journal}.html
+permalink: ${fileName}th.html
 sidebar: other_sidebar
 folder: 2021
 collection: wiki
 categories: ${categories}
-summary: "${summary}"
+summary: "${journal} + ${summary}"
 excerpt_separator: <!--more-->
 toc: true
 public: true
