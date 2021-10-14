@@ -50,7 +50,7 @@ sidebar: other_sidebar
                         <span class="parameter red"> {{ post.updated | date: "%Y.%m.%d" }}</span>
                         </div>
                     {% if post.summary != empty %}
-                            <div class="post-excerpt">
+                            <div class="post-meta">
                                📫  - {{ post.summary }}
                             </div>
                     {% else %}
