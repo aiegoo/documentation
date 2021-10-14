@@ -40,7 +40,7 @@ toc: false
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
         {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
-                {% for post in site.wiki[tagMap] %}
+                {% for post in site.wiki %}
                 <li>
                     <a class="post-link" href="{{ tag | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
