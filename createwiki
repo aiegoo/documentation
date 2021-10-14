@@ -11,6 +11,8 @@ CMDLINEPARAM=1     #  Takes at least one param.
 TAGDIR="_wiki/blog"
 fileName=$(date +"%Y-%m-%d")
 date=$(date +"%FT%T")
+update=$(date +"%Y-%m-%d %H:%M")
+journal=$(date +"%a, %b %d, %y")
 
 if [ $# -ge $CMDLINEPARAM ]
 then
@@ -45,13 +47,13 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: ${categories}
-summary: "${summary}"
+summary: "${journal}, ${summary}"
 excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
 date: ${date} +0900
-updated: ${date}
+updated: ${update}
 ---
 
 {% include taglogic.html %}
