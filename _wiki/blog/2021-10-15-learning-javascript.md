@@ -20,7 +20,7 @@ updated: 2021-10-15 03:18
 * TOC
 {:toc}
 
-## 1. how it all began
+## 1. How it all began
 
 * generateData implementation of this theme documentation
 
