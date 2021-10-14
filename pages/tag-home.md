@@ -43,7 +43,7 @@ toc: false
             {% for post in site.pages %}
                 {% if post.tags contains  tag %}
                 <li>
-                    <a class="post-link" href="{{ tag | prepend: site.baseurl }}">
+                    <a class="post-link" href="{{ tag.url | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
                         <div class="post-meta" style="color: red;">
                         <span class="parameter red"> {{ post.updated | date: "%Y.%m.%d" }}</span>
