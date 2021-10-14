@@ -28,7 +28,7 @@ youtubeID: ijVpUdWZYKU
 <img src="http://i.imgur.com/pjmxrDI.gif" style="width:450px;">
 
 ## What do I do?
-### Enjoy Engineering, Researching and being a life amateur.
+### Enjoy Engineering, Researching and Being a life amateur.
 
 - 🔭 I’m currently working on a few meaningful things
 - 🌱 Currently learning the art of life-long learning
