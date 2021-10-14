@@ -12,9 +12,9 @@ summary: "Fri, Oct 15, 21, a practical and thorough coverage of important langua
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Books]] 
 date: 2021-10-15T03:18:56 +0900
-updated: 2021-10-15 03:18
+updated: 2021-10-15 03:54
 ---
 
 * TOC
@@ -36,7 +36,7 @@ updated: 2021-10-15 03:18
 * **제목의 의도대로 판단 하고자 한다면 `if ( newfiles.length )`를 사용한다.**
 
 ### references and books...
-[book](pdf/LearningJavascript.pdf) ✨ [node](pdf/Web-Development.pdf)
+[book](https://github.com/aiegoo/documentation/blob/edit/pdf/LearningJavascript.pdf) ✨ [node](https://github.com/aiegoo/documentation/blob/edit/pdf/Web-Development.pdf)
 * book : Ethan Brown, 3rd Edition(2016), 번역판-한빛미디어(2017), p151. 5.7.1 참 같은 값과 거짓 같은 값
 > it includes all data types, effectively allowing you to partition any value into truthy or falsy buckets. Logical Operators
 * [MDN > Definitions of Web-realated terms > Fasly](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) : 거짓 같은 값
@@ -47,7 +47,7 @@ updated: 2021-10-15 03:18
   * 모든 배열, 빈 배열도 참 값
   * 공백만 있는 문자열 (" " 등)
   * 문자열 "false"
-
+it includes all data types, effectively allowing you to partition any value into truthy or falsy buckets. 
 ### isEven & isOdd 한 줄 함수
 
 ```js
