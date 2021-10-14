@@ -39,9 +39,9 @@ toc: false
             <h3 id="{{tag}}">#{{ tag }}</h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
-        {% assign tagMap = tag.url %}
-            {% if page contains thisTag %}
-                {% for post in site.wiki %}
+        {% capture tagMap %}{{ tag | strip_newlines }}{% endcapture %}
+            {% if page contains tagList %}
+                {% for post in site.wiki[tagMap] %}
                 <li>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
