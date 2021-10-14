@@ -51,7 +51,11 @@ toc: false
                     {% if post.summary != empty %}
                             <div class="post-excerpt">
                                 - {{ post.summary }}
-                            </div>               
+                            </div>
+                    {% else %}
+                            <div class="post-excerpt">
+                                - {{ post.excerpt }}
+                            </div>
                     {% endif %}
                     </a>
                 </li> 
