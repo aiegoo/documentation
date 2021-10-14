@@ -46,9 +46,7 @@ sidebar: other_sidebar
                 <li>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
-                        <div class="post-meta" style="color: red;">
-                        <span class="parameter red"> {{ post.updated | date: "%Y.%m.%d" }}</span>
-                        </div>
+                        <span class="post-meta red" style="color: red;"> {{ post.updated | date: "%Y.%m.%d" }}</span>
                     {% if post.summary != empty %}
                             <div class="post-meta">
                                📫  - {{ post.summary }}
