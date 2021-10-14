@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Tag
+title: Tag cloud
 permalink: tag-home.html
 public: true
 toc: false
+sidebar: other_sidebar
 ---
 
 ## tag-home
