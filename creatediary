@@ -47,7 +47,7 @@ sidebar: other_sidebar
 folder: 2021
 collection: wiki
 categories: ${categories}
-summary: "${journal} + ${summary}"
+summary: "${journal}, ${summary}"
 excerpt_separator: <!--more-->
 toc: true
 public: true
