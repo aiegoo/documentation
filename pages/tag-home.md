@@ -40,8 +40,8 @@ toc: false
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
         {% assign tagMap = tag.url %}
-            {% if page contains tag %}
-                {% for post in tagMap %}
+            {% if page contains thisTag %}
+                {% for post in site.posts %}
                 <li>
                     <a class="post-link" href="{{ tag | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
