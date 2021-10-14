@@ -39,10 +39,10 @@ toc: false
             <h3 id="{{tag}}">#{{ tag }}</h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
-        {% capture tagMap %}{{ tag | strip_newlines }}{% endcapture %}
+        {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
                 {% for post in site.wiki[tagMap] %}
                 <li>
-                    <a class="post-link" href="{{ wiki.url | prepend: site.baseurl }}">
+                    <a class="post-link" href="{{ tag | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
                         <div class="post-meta" style="color: red;">
                         <span class="parameter red"> {{ post.updated | date: "%Y.%m.%d" }}</span>
