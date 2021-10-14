@@ -12,6 +12,11 @@ folder: books
 
 {% include tony.html content="vim, emmet, plugins, tmux books" %}
 
+## how to when you forgot to give write permission
+> " Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+- save this in your vimrc
+
 ## vim emmet cli
 ### complete guide
 [gist](#complete-guide)
