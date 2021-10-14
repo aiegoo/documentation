@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Tag cloud
-permalink: tag-home.html
+permalink: tag.html
 public: true
 toc: false
 sidebar: other_sidebar
 ---
 
-## tag-home
+## tag cloud
 <div class="well">
 <style type="text/css">
 .col-md-6 {
