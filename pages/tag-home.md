@@ -40,7 +40,8 @@ toc: false
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
         {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
-                {% for post in site.wiki %}
+            {% for post in site.wiki %}
+                {% if post contains tag %}
                 <li>
                     <a class="post-link" href="{{ tag | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
@@ -54,7 +55,8 @@ toc: false
                     {% endif %}
                     </a>
                 </li> 
-                {% endfor %}
+                {% endif %}
+            {% endfor %}
             </ul>
     <h3 id="stackoverflow">Checking ... "{{ tag }}" in StackOverflow</h3>
         </div> <!-- end of archive-group -->
