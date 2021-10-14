@@ -41,7 +41,7 @@ toc: false
         {% assign thisTag = tag %}
         {% assign tagMap = tag.url %}
             {% if page contains thisTag %}
-                {% for post in site.posts %}
+                {% for post in site.wiki %}
                 <li>
                     <a class="post-link" href="{{ tag | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
