@@ -29,4 +29,5 @@ folder: books
 <C-Y>,        emmet-expand-abbr 
 ```
 
-
+### complete guide
+<script src="https://gist.github.com/aiegoo/4972f6c4ca22bf593441c8fdaea8afdd.js"></script>
