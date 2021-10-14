@@ -54,7 +54,7 @@ toc: false
                             </div>
                     {% else %}
                             <div class="post-excerpt">
-                                - {{ post.excerpt }}
+                              <i class="fa fa-github" aria-hidden="true"></i>  - {{ post.excerpt }}
                             </div>
                     {% endif %}
                     </a>
