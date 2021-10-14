@@ -1983,6 +1983,9 @@ ul.tag-list span+div {
     z-index: 1;
     overflow: hidden !important;
 }
+.well ul span+div.tag-home {
+    float: revert;
+}
 
 .well h6.category-h6 {
 font-family: 'NanumBarunpen' !important;
