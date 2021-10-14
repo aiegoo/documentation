@@ -41,7 +41,7 @@ toc: false
         {% assign thisTag = tag %}
         {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
             {% for post in site.wiki %}
-                {% if post contains tag %}
+                {% if post contains tagMap %}
                 <li>
                     <a class="post-link" href="{{ tag | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name }} {% endif %}</span>
