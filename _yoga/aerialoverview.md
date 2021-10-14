@@ -4,7 +4,8 @@ name: Aerial overview
 tags: [aerial, yoga]
 sidebar: other_sidebar
 permalink: aerialoverview.html
-categories: "Aerial"
+categories: aerial
+summary: "Aerial yoga requires a special kind of hammock, a prop designed to support up to 300 kilograms on average."
 complex_map: true
 map_name: usermap_yoga
 box_number: 1

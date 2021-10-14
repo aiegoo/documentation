@@ -1,10 +1,11 @@
 ---
 layout: page
 name: Anatomy of Vinyasa
-tags: [yoga, hatha]
+tags: [yoga, hatha, vinyasa]
 sidebar: other_sidebar
 permalink: anatomy_vinyasa.html
-categories: "Bikram"
+categories: vinyasa
+summary: "body and muscle anatomy"
 excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_yoga

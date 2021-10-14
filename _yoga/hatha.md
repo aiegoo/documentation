@@ -4,8 +4,9 @@ name: "Hatha yoga"
 tags: [yoga, hatha]
 sidebar: other_sidebar
 permalink: hatha.html
-categories: "Hatha"
+categories: hatha
 excerpt_separator: <!--more-->
+summary: "my main yoga training"
 complex_map: true
 map_name: usermap_yoga
 box_number: 3

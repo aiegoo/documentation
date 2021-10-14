@@ -4,7 +4,8 @@ name: aerial
 tags: [hotyoga, bikram, yoga]
 sidebar: other_sidebar
 permalink: aerial.html
-categories: "yoga, aerial"
+categories: aerial
+summary: "doing gymnastic tricks that you might not normally try without an assist from the suspension silk."
 complex_map: true
 map_name: usermap_yoga
 box_number: 2

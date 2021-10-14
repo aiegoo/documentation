@@ -4,8 +4,9 @@ name: Ashtanga
 tags: [yoga, hatha]
 sidebar: other_sidebar
 permalink: ashtanga.html
-categories: "ashtanga"
+categories: ashtanga
 excerpt_separator: <!--more-->
+summary: "Hatha yoga’s focus on mindfulness puts an emphasis on breath, posture, and meditation"
 complex_map: true
 map_name: usermap_yoga
 box_number: 3

@@ -4,8 +4,9 @@ name: four types of yoga
 tags: yoga
 sidebar: other_sidebar
 permalink: yoga_overview.html
-categories: "overview"
+categories: yoga
 excerpt_separator: "<!--more-->"
+summary: "yoga overview"
 complex_map: true
 map_name: usermap_yoga
 box_number: 1

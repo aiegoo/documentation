@@ -5,8 +5,9 @@ tags: [yoga, hatha]
 sidebar: other_sidebar
 toc: true
 permalink: hathaoverview.html
-categories: "overview"
+categories: hatha
 excerpt_separator: <!--more-->
+summary: "Experts say that the best time to practice pranayama is early in the morning and on an empty stomach"
 complex_map: true
 map_name: usermap_yoga
 box_number: 1

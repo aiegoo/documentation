@@ -5,8 +5,9 @@ tags: [yoga, bikram]
 summary: "A discipline without dogma"
 sidebar: other_sidebar
 permalink: bikramoverview.html
-categories: "overview"
+categories: bikram
 excerpt_separator: <!--more-->
+summary: "The Bikram style is the original 'hotyoga' style"
 complex_map: true
 map_name: usermap_yoga
 box_number: 1
