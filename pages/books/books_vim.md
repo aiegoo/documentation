@@ -13,6 +13,8 @@ folder: books
 {% include tony.html content="vim, emmet, plugins, tmux books" %}
 
 ## vim emmet cli
+### complete guide
+[gist](#complete-guide)
 
 ```
 <C-Y>A        emmet-anchorize-summary
@@ -30,5 +32,13 @@ folder: books
 <C-Y>,        emmet-expand-abbr 
 ```
 
-### complete guide
+## vim fugitive
+
+## vim plugins
+
+## tmux
+
+## tmuxinator
+
+### complete-guide
 <script src="https://gist.github.com/aiegoo/4972f6c4ca22bf593441c8fdaea8afdd.js"></script>
