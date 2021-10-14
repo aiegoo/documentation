@@ -51,7 +51,7 @@ sidebar: other_sidebar
                         </div>
                     {% if post.summary != empty %}
                             <div class="post-excerpt">
-                                - {{ post.summary }}
+                               📫  - {{ post.summary }}
                             </div>
                     {% else %}
                             <div class="post-excerpt">
