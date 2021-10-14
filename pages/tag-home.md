@@ -40,7 +40,7 @@ toc: false
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
         {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
-            {% for post in site.collections %}
+            {% for post in site.pages %}
                 {% if post.tags contains  tag %}
                 <li>
                     <a class="post-link" href="{{ tag | prepend: site.baseurl }}">
