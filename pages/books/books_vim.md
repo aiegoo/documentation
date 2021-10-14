@@ -3,7 +3,7 @@ title: vim howtos
 name: vim
 tags: [books, vim]
 updated: 2021-10-15 04:51 AM
-keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
+keywords: vim fugitive emmet
 summary: "vim fugitive emmets shortcut keys and howtos"
 sidebar: mydoc_sidebar
 permalink: books_vim.html
