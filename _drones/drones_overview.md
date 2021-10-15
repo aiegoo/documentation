@@ -24,8 +24,8 @@ folder: '/.'
           <span class="post-meta">{{ drone.updated | date: "%b %-d, %Y" }} /
                {% for tag in drone.tags %}
                <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>
-               {% unless forloop.last %}, {% endunless%}{% endfor %}</span>
-               <p>{% if drone.summary %} {{ drone.summary }} {% else %} {{ drone.excerpt }} {% endif %}
+               {% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+               <p>{% if page.summary %} {{ page.summary }} {% else %} {{ page.excerpt }} {% endif %}
                </p>
         {% endif %}
      {% endfor %}
