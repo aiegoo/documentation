@@ -12,6 +12,10 @@ toc: false
 ---
 
 ## site overview
+<p>While you wait, maybe listen to some William Grant Still. You’ll have a better day.</p>
+
+<iframe src="https://open.spotify.com/embed/track/1neicGfHfBxe5jLuHcBL5A?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
 <div class="row">
         <div class="col-lg-12">
                <h2 class="page-header">What inspired me to work on this site</h2>
@@ -39,7 +43,7 @@ toc: false
                 </div>
                 <div class="panel-body">
                     <h4>Collections</h4>
-                    <p font-size="0.5em">There are 5 collections in this site, yoga, drones, freelancers, mycourse and wiki, which would expand as more contents are added during my dev career.</p>
+                    <p font-size="0.5em">There are 6 collections in this site, yoga, drones, freelancers, mycourse, tags and wiki, which would expand as more contents are added during my dev career.</p>
                     <a href="https://github.com/documentation/blob/edit/_config.yml" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
@@ -75,7 +79,10 @@ toc: false
                 </div>
                 <div class="panel-body">
                     <h4>Taglogic to group the scattered dots</h4>
-                    <p>As the contents start to pile up, locating relevant information has been a taunting task and taglogic has been solution that worked well and served beyond its original design </p>
+                    <p>As the contents start to pile up, locating relevant information has been a taunting task and taglogic has been solution that worked well and served beyond its original design. </p>
+                    <p>
+                    Another similar solution I pursued as it seems popular among korean bloggers was to use tag-cloudding with strikingly same logic behind it but implementing it had costed me quite a few days and nights. Most would use a javascript or python packages or custom scripts to generate a sitemap, tagmap and taglist that would double as a database for querries. I didn't like the static-prone architect of this and wanted it to be dynamic as to reflect any changes or additons I would make should be deployable at the right moment without further steps. I did it eventually.
+                    </p>
                     <a href="#" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
