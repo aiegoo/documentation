@@ -97,4 +97,5 @@ youtubeID: ijVpUdWZYKU
 {% include latest.html %}
 
 {% include youtubePlayer.html id=page.youtubeID %}
+🎉 🎆 🔥
 {% include links.html %}
