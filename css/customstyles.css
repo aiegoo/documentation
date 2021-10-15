@@ -1263,12 +1263,12 @@ div.results {
 }
 
 time {
-    margin-right: 10px;
-    margin-left: 30px;
+    margin-right: 10px;    
 }
 
 p.post-meta time {
     margin-right: 0px;
+    margin-left: 30px;
 }
 
 span.label.label-default {
