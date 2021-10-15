@@ -12,7 +12,7 @@ link: https://36io.co
 tags: mydrone
 folder: '/.'
 ---
-## Drones home
+
 <div class="home">
     <div class="post-list">
     {% assign drones = site.drones %}
