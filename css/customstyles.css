@@ -27,6 +27,11 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: ‘Avenir Next’;
+    src: url(/fonts/Avenir_Next_Font.ttf);
+    /* File to be stored at your site */
+}
 :root { --tonyillust: url(images/tony_doc.svg); }
 
 body {
@@ -741,6 +746,7 @@ a[data-toggle] {
     margin:20px 0px 20px 0px;
     border-left: 5px solid #ED1951;
     padding-left: 10px;
+    font-family: ‘Avenir Next’, "NanumBarunpen";
 
 }
 
