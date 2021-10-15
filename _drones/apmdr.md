@@ -1,6 +1,6 @@
 ---
 layout: page
-name: bebop parrot
+name: pixhawk lite
 permalink: apmdr.html
 type: "APM, bebop"
 link: https://github.com/aiegoo/portfolio/wiki/parrot
