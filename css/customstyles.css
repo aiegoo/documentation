@@ -1956,7 +1956,8 @@ ul.tag-list span+div {
 
 .well a {
     letter-spacing: 0 !important;    
-    font-size: 2rem !important;
+    font-size: 1.4rem !important;
+    font-family: 'NanumBarunpen' !important;
 }
 
 .well ul {
@@ -1988,7 +1989,7 @@ ul.tag-list span+div {
 
 .well ul span {
     overflow: hidden;
-    letter-spacing: -1px;
+    letter-spacing: 0;
 }
 
 .well ul span+div {
