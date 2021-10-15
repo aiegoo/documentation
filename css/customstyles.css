@@ -1271,6 +1271,7 @@ time {
 p.post-meta time {
     margin-right: 0px;
     margin-left: 15px;
+    text-transform: uppercase;
 }
 
 span.label.label-default {
