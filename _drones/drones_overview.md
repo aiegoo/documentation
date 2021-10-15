@@ -25,8 +25,7 @@ folder: '/.'
                {% for tag in drone.tags %}
                <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>
                {% unless forloop.last %}, {% endunless %}{% endfor %}</span>
-               <p>{% if page.summary %} {{ page.summary }} {% else %} {{ page.excerpt }} {% endif %}
-               </p>
+               <p>{% if page.summary %} {{ page.summary }} {% else %} {{ page.excerpt }} {% endif %}</p>
         {% endif %}
      {% endfor %}
         <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
