@@ -9,11 +9,11 @@
              "request": "launch",
              "reAttach": true,
              "name": "Launch index.html",
-             "file": "${workspaceFolder}/source-code/learningjavascript/chapter1/index.html"
+             "file": "${workspaceFolder}/resources/learningjavascript/chapter1/index.html"
          },
          {
              "name": "Launch Program",
-             "program": "${workspaceFolder}/source-code/learningjavascript/js/main.js",
+             "program": "${workspaceFolder}/resources/learningjavascript/js/main.js",
              "request": "launch",
              "skipFiles": [
                  "<node_internals>/**"
