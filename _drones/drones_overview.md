@@ -18,14 +18,14 @@ folder: '/.'
     {% assign drones = site.drones %}
      {% for drone in drones %}
         {% if drone.tags contains "mydrone" %}
-          <a class="post-link leaguegothic dronesoverview" href="{{ drone.url | prepend: site.baseurl }}">
+          <a class="post-link leaguegothic dronesoverview" href="{{ drone.url | prepend: site.baseurl }}" style="color: pink;">
               {{ drone.name }} - {{ drone.type }}
               </a>
           <span class="post-meta">{{ drone.updated | date: "%b %-d, %Y" }} /
                {% for tag in drone.tags %}
                <a href="{{ 'tag_' | append: tag | append: '.html'}}">{{tag}}</a>
                {% unless forloop.last %}, {% endunless %}{% endfor %}</span>
-               <p>{% if drone.summary %} {{ drone.summary }} {% else %} {{ page.excerpt }} {% endif %}</p>
+               <p class="post-meta tag-home">{% if drone.summary %} {{ drone.summary }} {% else %} {{ page.excerpt }} {% endif %}</p>
         {% endif %}
      {% endfor %}
         <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
