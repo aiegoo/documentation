@@ -8,6 +8,13 @@ sidebar: mydoc_sidebar
 permalink: mydoc_pipeline.html
 folder: mydoc
 ---
+
+### copying a same file over to multiple location
+
+```bash
+f=text.txt; tee ~/folder{1..2}/$f < ~/$f > /dev/null
+```
+
 ### mkdir -p
 ```bash
 mkdir sa{1..50}
