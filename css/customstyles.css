@@ -7,10 +7,22 @@
 
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
-// 눈누 링크: https://noonnu.cc/font_page/42 나눔바른펜
+/* 눈누 링크: https://noonnu.cc/font_page/42 나눔바른펜 */
 @font-face {
     font-family: 'NanumBarunpen';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* from charliepark.org */
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('/fonts/League_Gothic-webfont.eot');
+    src: url('/fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/League_Gothic-webfont.woff') format('woff'),
+         url('/fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('/fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
