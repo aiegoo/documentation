@@ -18,7 +18,7 @@ folder: '/.'
     {% assign drones = site.drones %}
      {% for drone in drones %}
         {% if drone.tags contains "mydrone" %}
-          <a class="post-link" href="{{ drone.url | prepend: site.baseurl }}">
+          <a class="post-link leaguegothic" href="{{ drone.url | prepend: site.baseurl }}">
               {{ drone.name }} - {{ drone.type }}
               </a>
           <span class="post-meta">{{ drone.updated | date: "%b %-d, %Y" }} /
