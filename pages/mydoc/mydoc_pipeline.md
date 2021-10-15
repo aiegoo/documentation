@@ -13,6 +13,30 @@ folder: mydoc
 
 ```bash
 f=text.txt; tee ~/folder{1..2}/$f < ~/$f > /dev/null
+# sample implementation on learningjavascript
+touch .gitkeep
+
+f=.gitkeep; tee chapter{1..10}/$f < ~/$f > /dev/null
+
+Tree /F
+
+│   .gitkeep
+│
+├───chapter1
+│       .gitkeep
+│       index.html
+│       index.html~
+│
+├───chapter10
+│       .gitkeep
+│
+├───chapter2
+│       .gitkeep
+│
+├───chapter3
+│       .gitkeep
+│
+
 ```
 
 ### mkdir -p
