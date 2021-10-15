@@ -1266,6 +1266,9 @@ div.results {
 .post-link.leaguegothic {
     font-family: "LeagueGothicRegular", "League Gothic", "NanumBarunpen";
 }
+.post-link.leaguegothic.dronesoverview {
+    color: #337ab79e;
+}
 .post-list p {
     margin: 10px 0px;
 }
