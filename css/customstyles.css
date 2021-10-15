@@ -1257,7 +1257,9 @@ div.results {
 .post-link {
     font-size: 22px;
 }
-
+.post-link.leaguegothic {
+    font-family: "LeagueGothicRegular", "League Gothic", "NanumBarunpen";
+}
 .post-list p {
     margin: 10px 0px;
 }
@@ -1955,7 +1957,6 @@ ul.tag-list span+div {
 .well a {
     letter-spacing: 0 !important;    
     font-size: 2rem !important;
-    font-family: "LeagueGothicRegular", "League Gothic", 'LAB디지털', "NanumBarunpen";
 }
 
 .well ul {
@@ -2022,7 +2023,7 @@ font-family: 'NanumBarunpen' !important;
 /* post-header title for leaguegothic from charliepark.org */
 
 .post-title.leaguegothic {
-    font-family: "LeagueGothicRegular", "League Gothic", "LeagueGothicRegular", "League Gothic", "LAB디지털", "NanumBarunpen" !important;
+    font-family: "LeagueGothicRegular", "League Gothic", "LeagueGothicRegular", "League Gothic", "NanumBarunpen" !important;
 }
 
 /* highlight css */
