@@ -2017,7 +2017,11 @@ font-family: 'NanumBarunpen' !important;
     }
 }
 
+/* post-header title for leaguegothic from charliepark.org */
 
+.post-title.leaguegothic {
+    font-family: "LeagueGothicRegular", "League Gothic" !important;
+}
 
 /* highlight css */
 .highlight {
