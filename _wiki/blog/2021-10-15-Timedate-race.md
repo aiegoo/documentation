@@ -68,6 +68,14 @@ So when we made the function just a bit more complex, it increased the processin
 
 **When you're processing Times and Dates in your app, and you don't *need* to use the Date object for some reason, use Time.**
 
+### Avenir Next font free download
+![image](https://user-images.githubusercontent.com/42961200/137477937-ab950310-4b67-4100-9c85-b1fc236d29a7.png)
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("http://www.yoursite.com/fonts/Avenir_Next.otf"); /* File to be stored at your site */
+  }
+
 {% include taglogic.html %}
 
 {% include links.html %}
