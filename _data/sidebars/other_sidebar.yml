@@ -17,6 +17,9 @@ entries:
       url: /category
       output: pdf, web
       type: frontmatter
+    - title: tag cloud
+      url: /tocpage.html
+      output: pdf, web
     - title:
       url: /tocpage.html
       output: pdf
