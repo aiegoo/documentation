@@ -7,6 +7,8 @@ link: https://github.com/aiegoo/portfolio/wiki/cube
 excerpt_separator: <!--more-->
 tags: mydrone
 folder: '/.'
+summary: "cube black"
+updated: 2021-10-16 5:39 AM
 ---
 
 ### Pixhawk Cube Black
