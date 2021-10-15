@@ -44,7 +44,7 @@ sidebar: other_sidebar
             {% for post in site.pages | sort_natural %}
                 {% if post.tags contains  tag %}
                 <li>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                    <a class="post-link leaguegothic" href="{{ post.url | prepend: site.baseurl }}">
                         <span>{% if post.title %} {{post.title}} {% else %} {{ post.name | remove: ".md" }} {% endif %}</span>
                         <span class="post-meta red" style="color: red;"> {{ post.updated | date: "%Y.%m.%d" }}</span>
                     {% if post.summary != empty %}
