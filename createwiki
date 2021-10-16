@@ -55,6 +55,10 @@ parent: [[Wiki-Setting-Category]]
 date: ${date} +0900
 updated: ${update}
 ---
+* TOC
+{:toc}
+
+## 
 
 {% include taglogic.html %}
 
