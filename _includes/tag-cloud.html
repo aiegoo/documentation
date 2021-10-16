@@ -14,7 +14,7 @@
 {% else %}
   {% assign tag_names = "" | split: "|"  %}
 
-  {% for posts_by_tag in site.tags %}
+  {% for posts_by_tag in site.data.tags.allowed-tags %}
     {% assign tag_names = tag_names | push: posts_by_tag.first %}
   {% endfor %}
 

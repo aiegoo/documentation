@@ -60,13 +60,10 @@ summary: "add another variation of tag cloud with style"
 }
 </style>
 
-{% assign tag_names = "" | split: "|"  %}
+{% assign tag_names = site.data.tags.allowed-tags | sort_natural %}
 
-{% for posts_by_tag in site.tags %}
-  {% assign tag_names = tag_names | push: posts_by_tag.first %}
+{% for posts_by_tag in tag_names | sort_natural %}
 {% endfor %}
-
-{% assign tag_names = tag_names | sort %}
 
 {% include tag-cloud.html tag_names=tag_names %}
 
