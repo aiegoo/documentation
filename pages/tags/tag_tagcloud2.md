@@ -65,7 +65,7 @@ summary: "add another variation of tag cloud with style"
 <!-- get all tags -->
 {% for c in site.collections %}
   <!-- Map and flatten -->
-  {% assign collectionTags =  c.docs | map: 'subject-tags' | join: ',' | split: ',' %}
+  {% assign collectionTags =  c.posts | map: 'tags' | join: ',' | split: ',' %}
   <!-- Push to tags -->
   {% for tag in collectionTags %}
     {% assign many_tags = many_tags | push: tag %}
