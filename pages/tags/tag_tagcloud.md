@@ -125,11 +125,15 @@ tagcloud {
 </div>
 
 <div id="tagcloud">
- {% if post %}
+{% for post in site.posts %}<>
+  {% if post %}
     {% assign tags = post.tags %}
-  {% else %}
+  {% endif %}
+{% for page in site.pages %}
+  {% if page %}
     {% assign tags = page.tags %}
   {% endif %}
+  
   {% for tag in tags %}
 <a href="#{{ tag[0] | slugify }}" class= "btn btn-default" style="font-size: {{ tag | last | size | times: 4 | plus: 90 }}%">
   <span cloass="fa fa-folder-open" aria-hidden="true">
