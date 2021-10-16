@@ -81,7 +81,7 @@ summary: "add another variation of tag cloud with style"
   <!-- initiate an array to hold related content-items -->
   {% assign tags_posts = '' | split: ',' %}
   <!-- go through every collection (posts  is also a collection) -->
-  {% for c in site.wiki %}
+  {% for c in site.collections %}
     <!-- every item in that collection -->
     {% for content-item in c.label[item] %}
       <!-- every subject-tag that a content-item has -->
