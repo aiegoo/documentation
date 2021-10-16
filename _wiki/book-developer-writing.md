@@ -5,7 +5,7 @@ layout: post
 permalink: book-developer-writing.html
 sidebar: other_sidebar
 collection: wiki
-summary: "변수 네이밍부터 릴리스노트..."
+summary: "개발자 글쓰기의 3원칙 : 정확성, 간결성, 가독성, 변수 네이밍부터 릴리스노트..."
 tags: [web, regex, publishing]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
