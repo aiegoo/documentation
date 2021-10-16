@@ -65,11 +65,11 @@ summary: "add another variation of tag cloud with style"
 <!-- get all tags -->
 {% for c in site.collections %}
   <!-- Map and flatten -->
-  {% assign collectionTags =  c.label[item] | map: 'item.tags' | join: ',' | split: ',' %}<p>{{ item.tags }}</p>
+  {% assign collectionTags =  c.label[item] | map: 'item.tags' | join: ',' | split: ',' %}<p>{{ collectionTags }}</p>
   <!-- Push to tags -->
   {% for tag in collectionTags %}
     {% assign many_tags = many_tags | push: tag %}
-   <p> {{ many_tags[0] }} </p>
+   <p> {{ tag }} </p>
   {% endfor %}
 {% endfor %}
 
