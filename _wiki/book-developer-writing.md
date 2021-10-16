@@ -14,6 +14,7 @@ toc: true
 public: true
 parent: [[Books-Category]] 
 latex: false
+pdf_url: https://github.com/aiegoo/documentation/blob/edit/pdf/
 ---
 * TOC
 {:toc}
@@ -372,5 +373,7 @@ latex: false
 
 ## 에필로그 : 회사가 개발자 글쓰기 교육을 하자
 
+## booklink
+[book]({{ page.pdf_url }}developer-writing.pdf)
 
 {% include links.html %}
