@@ -26,8 +26,8 @@ sidebar: other_sidebar
         <ul class="tag-list" style="line-height: 1.1;">
     {% for tag in tagList | sort_natural %}
             <li>
-                <a href="#{{tag}}" onclick="showTag('#{{tag}}')">
-                    {{tag}}<sup style="color: hotpink;">{{ tag | size }}</sup>
+                <a href="#{{tag}}" onclick="showTag('#{{tag}}')" style="font-size: {{ tag | last | size | times: 4 | plus: 90 }}%">
+                    {{tag}}<sup style="color: hotpink;">{{ tag | last | size }}</sup>
                 </a>
             </li>
     {% endfor %}
