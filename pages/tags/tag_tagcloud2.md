@@ -69,6 +69,7 @@ summary: "add another variation of tag cloud with style"
   <!-- Push to tags -->
   {% for tag in collectionTags %}
     {% assign many_tags = many_tags | push: tag %}
+    <p>{{ c.label[item][0] }}</p>
   {% endfor %}
 {% endfor %}
 
