@@ -8,6 +8,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: technology
+keywords: Avenir 
 summary: "Fri, Oct 15, 21, Time.now is much faster than date.today"
 excerpt_separator: <!--more-->
 toc: true
