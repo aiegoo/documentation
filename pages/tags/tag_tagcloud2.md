@@ -65,7 +65,7 @@ summary: "add another variation of tag cloud with style"
 <!-- get all tags -->
 {% for c in site.collections %}
   <!-- Map and flatten -->
-  {% assign collectionTags =  c.wiki | map: 'tags' | join: ',' | split: ',' %}
+  {% assign collectionTags =  c.label[item] | map: 'item.tags' | join: ',' | split: ',' %}
   <!-- Push to tags -->
   {% for tag in collectionTags %}
     {% assign many_tags = many_tags | push: tag %}
@@ -83,7 +83,7 @@ summary: "add another variation of tag cloud with style"
   <!-- go through every collection (posts  is also a collection) -->
   {% for c in site.wiki %}
     <!-- every item in that collection -->
-    {% for content-item in c.wiki %}
+    {% for content-item in c.label[item] %}
       <!-- every subject-tag that a content-item has -->
       {% for subtag in content-item.tags %}
         <!-- check if this content item matches the current tag and if so push-->
