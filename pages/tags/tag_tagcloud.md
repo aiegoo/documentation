@@ -63,16 +63,16 @@ tagcloud {
 <h1>Tag cloud</h1>
 
 <div id="tagcloud">
-  {% capture tags %}
+  {% capture siteTags %}
     {% for tag in site.tags %}
       {{ tag[0] }}
     {% endfor %}
   {% endcapture %}
 
-  {% assign sortedTags = tags | split:" " | sort %}
+  {% assign sortedTags = siteTags | split:" " | sort %}
   <ul class="cloud">
-  {% for st in sortedTags %}
-    <li class="tag{{ site.tags[st].size }}">{{ st | tag_link }}</li>
+  {% for sortedTag in sortedTags %}
+    <li class="tag{{ site.tags[sortedTag].size }}">{{ sortedTag | tag_link }}</li>
   {% endfor %}
   </ul>
 </div>
