@@ -4,8 +4,8 @@ permalink: tag_tagcloud.html
 title: Tag cloud variation
 summary: "add another variation of tag cloud with style"
 ---
-{% capture styles %}
-<styl>
+
+<style>
 /**
  Based on CSS by Maroun Baydoun: https://gist.github.com/maroun-baydoun/4188213
 **/
@@ -60,9 +60,7 @@ tagcloud {
   }
 }
 </style>
-{% endcapture %}
 
-{{ styles | sassify }}
 
 <h1>Tag cloud</h1>
 
