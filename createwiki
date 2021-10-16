@@ -35,6 +35,8 @@ if [ -d "${TAGDIR}" ]; then
     read summary
     echo "Place a category:"
     read categories
+    echo "keywords?"
+    read keywords
   # Cannot indent here string.
 cat <<EOF >"${TAGDIR}/${fileName}-${wiki}.md"
 ---
@@ -47,7 +49,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: ${categories}
-keywords: "${categories}"
+keywords: "${keywords}"
 summary: "${journal}, ${summary}"
 excerpt_separator: <!--more-->
 toc: true
