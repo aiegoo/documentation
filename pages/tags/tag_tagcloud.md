@@ -4,6 +4,7 @@ permalink: tag_tagcloud.html
 title: Tag cloud variation
 summary: "add another variation of tag cloud with style"
 ---
+{% capture styles %}
 <style>
 /**
  Based on CSS by Maroun Baydoun: https://gist.github.com/maroun-baydoun/4188213
@@ -59,6 +60,9 @@ tagcloud {
   }
 }
 </style>
+{% endcapture %}
+<style type="text/css">
+{{ styles | sassify }}</style>
 
 <h1>Tag cloud</h1>
 
@@ -66,10 +70,11 @@ tagcloud {
 {% for tag in site.tags %}
 <a href="#{{ tag[0] | slugify }}" class= "btn btn-default" style="font-size: {{ tag | last| size | times: 4 | plus: 90 }}%">
   <span cloass="fa fa-folder-open" aria-hidden="true">
-  {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
+  {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i> hello!
   </span>
 </a>
 {% endfor %}
+
   <ul class="cloud">
   {% for sortedTag in sortedTags %}
     <li class="tag{{ site.tags[sortedTag] | last | size }}">{{ sortedTag | tag_link }}</li>
