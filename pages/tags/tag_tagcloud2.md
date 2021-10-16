@@ -83,9 +83,9 @@ summary: "add another variation of tag cloud with style"
   <!-- go through every collection (posts  is also a collection) -->
   {% for c in site.collections %}
     <!-- every item in that collection -->
-    {% for content-item in c.docs %}
+    {% for content-item in c.posts %}
       <!-- every subject-tag that a content-item has -->
-      {% for subtag in content-item.subject-tags %}
+      {% for subtag in content-item.tags %}
         <!-- check if this content item matches the current tag and if so push-->
         {% if subtag .tag-cloud{
     margin: 0px 0px 0px -5px;
@@ -137,7 +137,7 @@ summary: "add another variation of tag cloud with style"
     z-index: 700;
 }
 == cloud-tag %}
-          {% assign tags_posts = tags_posts | push: content-item %}
+          {% assign tags_posts = posts | push: content-item %}
         {% endif %}
       {% endfor %}
     {% endfor %}
