@@ -69,7 +69,7 @@ tagcloud {
 
 {% assign tag_names = tag_names | sort %}
 
-{% include tag_cloud.html tag_names=tag_names %}
+{% include tag-cloud.html tag_names=tag_names %}
 
 <hr>
 
