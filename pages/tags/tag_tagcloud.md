@@ -63,16 +63,16 @@ tagcloud {
 <h1>Tag cloud</h1>
 
 <div id="tagcloud">
-  {% capture siteTags %}
-    {% for tag in site.tags %}
-      {{ tag[0] }}
-    {% endfor %}
-  {% endcapture %}
-
-  {% assign sortedTags = siteTags | split:" " | sort %}
+{% for tag in site.tags %}
+<a href="#{{ tag[0] | slugify }}" class= "btn btn-default" style="font-size: {{ tag | last| size | times: 4 | plus: 90 }}%">
+  <span cloass="fa fa-folder-open" aria-hidden="true">
+  {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i>
+  </span>
+</a>
+{% endfor %}
   <ul class="cloud">
   {% for sortedTag in sortedTags %}
-    <li class="tag{{ site.tags[sortedTag].size }}">{{ sortedTag | tag_link }}</li>
+    <li class="tag{{ site.tags[sortedTag] | last | size }}">{{ sortedTag | tag_link }}</li>
   {% endfor %}
   </ul>
 </div>
