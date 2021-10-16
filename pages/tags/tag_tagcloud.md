@@ -5,7 +5,7 @@ title: Tag cloud variation
 summary: "add another variation of tag cloud with style"
 ---
 {% capture styles %}
-<style>
+<styl>
 /**
  Based on CSS by Maroun Baydoun: https://gist.github.com/maroun-baydoun/4188213
 **/
@@ -61,8 +61,8 @@ tagcloud {
 }
 </style>
 {% endcapture %}
-<style type="text/css">
-{{ styles | sassify }}</style>
+
+{{ styles | sassify }}
 
 <h1>Tag cloud</h1>
 
