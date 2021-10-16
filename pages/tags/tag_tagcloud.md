@@ -65,7 +65,7 @@ tagcloud {
 <h1>Tag cloud</h1>
 
 <div id="tagcloud">
-{% for tag in site.data.tags %}
+{% for tag in site.collections[tags] %}
 <a href="#{{ tag[0] | slugify }}" class= "btn btn-default" style="font-size: {{ tag | last | size | times: 4 | plus: 90 }}%">
   <span cloass="fa fa-folder-open" aria-hidden="true">
   {{ tag[0] }} <i class="badge">{{ tag | last | size }}</i> hello!
