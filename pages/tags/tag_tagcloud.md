@@ -124,6 +124,7 @@ tagcloud {
 {% endfor %}
 </div>
 
+<hr />
 <div id="tagcloud">
 {% for post in site.posts %}<>
   {% if post %}
@@ -133,7 +134,7 @@ tagcloud {
   {% if page %}
     {% assign tags = page.tags %}
   {% endif %}
-  
+
   {% for tag in tags %}
 <a href="#{{ tag[0] | slugify }}" class= "btn btn-default" style="font-size: {{ tag | last | size | times: 4 | plus: 90 }}%">
   <span cloass="fa fa-folder-open" aria-hidden="true">
@@ -148,14 +149,3 @@ tagcloud {
   {% endfor %}
   </ul>
 </div>
-
-
-{% assign tags = site.tags | sort %}
-{% for tag in tags %}
- <span class="site-tag">
-    <a href="/tag/{{ tag | first | slugify }}/"
-        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-    </a>
-</span>
-{% endfor %}
