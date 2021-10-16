@@ -9,7 +9,7 @@ summary: "add another variation of tag cloud with style"
 /**
  Based on CSS by Maroun Baydoun: https://gist.github.com/maroun-baydoun/4188213
 **/
-tagcloud {
+#tagcloud {
   padding: 1em;
 }
 
@@ -19,15 +19,14 @@ tagcloud {
   width:90%;
   padding:0;
 
-  & li
+.cloud li
   {
     float:left;
     margin:1px 10px;
     font-size:14px;
     min-height:35px;
-    line-height:30px;
-
-    a {
+    line-height:30px;}
+.cloud li a {
       text-decoration:none;
       //color:#DB0058;
       color: $colorPink;
@@ -39,18 +38,18 @@ tagcloud {
       -moz-transition:opacity 0.8s;
       -o-transition:opacity 0.8s;
     }
-  }
 
-  &:hover li a
+
+.cloud:hover li a
   {
     opacity:0.3;
 
-    &:hover {
+.cloud li a:hover {
       //color:#0B61A4;
       color: $colorDarkBlue;
       opacity:1;
     }
-  }
+
 
   // Generate tag1 to tag25 classes
   @for $i from 1 through 25 {
@@ -98,6 +97,8 @@ tagcloud {
   </ul>
 {% endfor %}
 
+<hr />
+
 <h1>Tag cloud</h1>
 <ul class="tag-cloud">
 {% for tag in site.tags %}
@@ -125,6 +126,7 @@ tagcloud {
 </div>
 
 <hr />
+
 <div id="tagcloud">
 {% for post in site.posts %}<>
   {% if post %}
@@ -149,3 +151,14 @@ tagcloud {
   {% endfor %}
   </ul>
 </div>
+
+
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+ <span class="site-tag">
+    <a href="/tag/{{ tag | first | slugify }}/"
+        style="font-size: {{ tag  | size  |  times: 4 | plus: 80  }}%">
+            {{ tag[0] | replace:',', ' ' }} ({{ tag | size }})
+    </a>
+</span>
+{% endfor %}
