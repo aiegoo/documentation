@@ -62,7 +62,7 @@ tagcloud {
 
 <h1>Tag cloud</h1>
 
-<tagcloud>
+<div id="tagcloud">
   {% capture tags %}
     {% for tag in site.tags %}
       {{ tag[0] }}
@@ -75,3 +75,15 @@ tagcloud {
     <li class="tag{{ site.tags[st].size }}">{{ st | tag_link }}</li>
   {% endfor %}
   </ul>
+</div>
+
+
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+ <span class="site-tag">
+    <a href="/tag/{{ tag | first | slugify }}/"
+        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+    </a>
+</span>
+{% endfor %}
