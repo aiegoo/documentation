@@ -34,7 +34,7 @@ sidebar: other_sidebar
     {% for tag in tagList | sort_natural %}
             <li>
                 <a href="#{{tag[0]}}" onclick="showTag('#{{tag}}')" style="font-size: {{ tag | size | times: 6 | plus: 90 }}% !important;">
-                    {{tag}}<sup style="color: hotpink;">{{ tag | last | size }}</sup>{% unless forloop.last %}, {% endunless %}
+                    {{tag}}<sup style="color: hotpink;">{{ forloop.length }}</sup>{% unless forloop.last %}, {% endunless %}
                 </a>
             </li>
     {% endfor %}
