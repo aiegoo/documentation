@@ -73,10 +73,10 @@ summary: "add another variation of tag cloud with style"
   {% for tag_name in tag_names %}
     <div>
       <h3 id="{{ tag_name }}">
-        {{ tag_name | capitalize | replace: "_", " " }}
+        {{ tag_name | capitalize | replace: ",", " " }}
       </h3>
 
-      {% for post in site.tags[tag_name] %}
+      {% for post in site.data.tags.allowed-tags[tag_name] %}
         <a href="{{ post.url | prepend: baseurl }}">
           {{ post.title }}
         </a>
@@ -84,6 +84,8 @@ summary: "add another variation of tag cloud with style"
     </div>
   {% endfor %}
 </section>
+
+<hr class="faded">
 
 {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
