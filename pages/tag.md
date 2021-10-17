@@ -28,7 +28,7 @@ sidebar: other_sidebar
             <li>
                 <a href="#{{tag[0]}}" onclick="showTag('#{{tag}}')" style="font-size: {{ tag | last | size | times: 6 | plus: 90 }}% !important;">
                     {{tag}}<sup style="color: hotpink;">{{ tag | size }}</sup>
-                </a>
+                </a>{% unless forloop.last %}{% endunless %}
             </li>
     {% endfor %}
         </ul>
