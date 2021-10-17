@@ -63,17 +63,20 @@ summary: "add another variation of tag cloud with style"
 {% assign tag_names = site.data.tags.allowed-tags | sort_natural %}
 {% assign tagList = site.tags | sort_natural %}
 
+{% for posts_by_tag in tag_names | sort_natural %}
+{% endfor %}
+
 {% include tag-cloud.html tag_names=tag_names %}
 
 <hr>
 
   <div class="post-preview"> 
     {% for tag in tagList %} 
-      <h2 id="{{ tag }}" style="padding-top: 70px;"> #{{ tag }}  <i class="badge">{{ tag | size }}</i></h2> {% endfor %}
+      <h2 id="{{ tag }}" style="padding-top: 70px;"> #{{ tag }}  <i class="badge">{{ tag | size }}</i></h2>
       <ul class="post-list leaders">
       {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
         {% for post in site.pages | sort_natural %}
-          {% if post.tags contains tag %}
+          {% if post contains tag %}
           <li>
               <a class="post-link leaguegothic" href="{{ post.url | prepend: site.baseurl }}">
                   <span>{% if post.title %} {{post.title}} {% else %} {{ post.name | remove: ".md" }} {% endif %}</span>
@@ -93,7 +96,7 @@ summary: "add another variation of tag cloud with style"
         {% endfor %}
       </ul>
         <hr/>
-   
+    {% endfor %}
   </div>
   
 <hr />
