@@ -74,13 +74,15 @@ summary: "add another variation of tag cloud with style"
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
       <h2 id="{{ tag_name | slugify }}" style="padding-top: 70px;"> {{ tag_name }}  <i class="badge">{{ tag_name | size }}</i></h2>
       <ul class="later on">
-        {% for post in site.posts %}        
+        {% for post in site.pages | sort_natural %}
+          {% if post contains tag %}
           <a class="post-subtitle" href="{{ post.url }}">
           <li>
             {% if post.title %}{{ post.title }}{% else %}{{ post.name }} {% endif %}
           <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
           </li>
           </a>
+          {% endif %}
         {% endfor %}
       </ul>
         <hr/>
