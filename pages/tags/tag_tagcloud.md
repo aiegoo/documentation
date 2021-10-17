@@ -71,12 +71,12 @@ summary: "add another variation of tag cloud with style"
 
   <div class="post-preview"> 
     {% for tag in site.tags | sort_natural %} 
-    {% capture tag_name %}{{ tag | first }}{% endcapture %}
-      <h2 id="{{ tag_name | slugify }}" style="padding-top: 70px;"> {{ tag_name }}  <i class="badge">{{ tag_name | size }}</i></h2>
+      <h2 id="{{ tag }}" style="padding-top: 70px;"> #{{ tag }}  <i class="badge">{{ tag | size }}</i></h2>
       <ul class="later on">
+      {% capture tagMap %}{{ tag | strip_newlines }}{% endcapture %}
         {% for post in site.pages | sort_natural %}
           {% if post contains tag %}
-          <a class="post-subtitle" href="{{ post.url }}">
+          <a class="post-subtitle" href="{{ post.url | prepend: site.baseurl }}">
           <li>
             {% if post.title %}{{ post.title }}{% else %}{{ post.name }} {% endif %}
           <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
