@@ -60,7 +60,7 @@ summary: "add another variation of tag cloud with style"
 }
 </style>
 
-{% assign tag_names = site.tags | sort_natural %}
+{% assign tag_names = site.data.tags.allowed-tags | sort_natural %}
 
 {% for posts_by_tag in tag_names | sort_natural %}
 {% endfor %}
@@ -68,3 +68,79 @@ summary: "add another variation of tag cloud with style"
 {% include tag-cloud.html tag_names=tag_names %}
 
 <hr>
+
+  <div class="post-preview"> 
+    {% for posts_by_tag in site.data.tags.allowed-tags | sort_natural %} 
+      <h2 id="{{ posts_by_tag | slugify }}" style="padding-top: 70px;"> {{ posts_by_tag }}  <i class="badge">{{ posts_by_tag | size }}</i></h2>
+      <ul class="later on">
+        {% assign collection = site.collections[label] %}
+        {% for tag in site.tags %}
+          <a class="post-subtitle" href="{{ tag.url }}">
+        <li>
+          {% if post_by_tag.title %}{{ post_by_tag.title }}{% else %}{{ post_by_tag.name }} {% endif %}
+        <small class="post-meta"> - Posted on {{ posts_by_tag.date | date: "%B %-d, %Y" }}</small>
+        </li>
+        </a>
+        {% endfor %}
+      </ul>
+        <hr/>
+    {% endfor %}
+
+<hr />
+<hr class="shaded">
+
+<section class="posts-by-tags">
+  {% for tag_name in tag_names %}
+    <div>
+      <h3 id="{{ tag_name }}">
+        {{ tag_name | capitalize | replace: ",", " " }}
+      </h3>
+
+      {% for post in site.data.tags.allowed-tags[tag_name] %}
+        <a href="{{ post.url | prepend: baseurl }}">
+          {{ post.title }}
+        </a>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</section>
+
+<hr class="faded">
+
+{% for tag in site.tags %}
+  <h3>{{ tag[0] }}</h3>
+  <ul>
+    {% for post in tag[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+<hr />
+
+<h1>Tag cloud</h1>
+<ul class="tag-cloud">
+{% for tag in site.tags %}
+  <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
+    <a href="#{{ tag | first | slugize }}">
+      {{ tag | first }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
+<div id="archives">
+{% for tag in site.tags %}
+  <div class="archive-group">
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    <h3 id="#{{ tag_name | slugize }}">{{ tag_name }}</h3>
+    <a name="{{ tag_name | slugize }}"></a>
+    {% for post in site.tags[tag_name] %}
+    <article class="archive-item">
+      <h4><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h4>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>
+
