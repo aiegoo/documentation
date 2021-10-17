@@ -78,7 +78,7 @@ summary: "add another variation of tag cloud with style"
           <a class="post-subtitle" href="/tags/{{ tag.slug }}">
         <li>
           {% if post_by_tag.title %}{{ post_by_tag.title }}{% else %}{{ post_by_tag.name }} {% endif %}
-        <small class="post-meta"> - Posted on {{ tag.date | date: "%B %-d, %Y" }}</small>
+        <small class="post-meta"> - Posted on {{ posts_by_tag.date | date: "%B %-d, %Y" }}</small>
         </li>
         </a>
         {% endfor %}
