@@ -63,9 +63,6 @@ summary: "add another variation of tag cloud with style"
 {% assign tag_names = site.data.tags.allowed-tags | sort_natural %}
 {% assign tagList = site.tags | sort_natural %}
 
-{% for posts_by_tag in tag_names | sort_natural %}
-{% endfor %}
-
 {% include tag-cloud.html tag_names=tag_names %}
 
 <hr>
