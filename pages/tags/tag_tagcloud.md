@@ -78,20 +78,20 @@ summary: "add another variation of tag cloud with style"
         {% for post in site.pages | sort_natural %}
           {% if post contains tag %}
           <li>
-                    <a class="post-link leaguegothic" href="{{ post.url | prepend: site.baseurl }}">
-                        <span>{% if post.title %} {{post.title}} {% else %} {{ post.name | remove: ".md" }} {% endif %}</span>
-                        <span class="post-meta red" style="color: red;"> {{ post.updated | date: "%Y.%m.%d" }}</span>
-                    {% if post.summary != empty %}
-                            <div class="post-meta tag-home">
-                               📫  - {{ post.summary }}
-                            </div>
-                    {% else %}
-                            <div class="post-meta tag-home">
-                              <i class="fa fa-github" aria-hidden="true"></i>  - {{ post.excerpt }}
-                            </div>
-                    {% endif %}
-                    </a>
-                </li> 
+              <a class="post-link leaguegothic" href="{{ post.url | prepend: site.baseurl }}">
+                  <span>{% if post.title %} {{post.title}} {% else %} {{ post.name | remove: ".md" }} {% endif %}</span>
+                  <span class="post-meta red" style="color: red;"> {{ post.updated | date: "%Y.%m.%d" }}</span>
+              {% if post.summary != empty %}
+                      <div class="post-meta tag-home">
+                          📫  - {{ post.summary }}
+                      </div>
+              {% else %}
+                      <div class="post-meta tag-home">
+                        <i class="fa fa-github" aria-hidden="true"></i>  - {{ post.excerpt }}
+                      </div>
+              {% endif %}
+              </a>
+          </li> 
           {% endif %}
         {% endfor %}
       </ul>
