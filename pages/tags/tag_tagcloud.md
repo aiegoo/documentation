@@ -61,6 +61,7 @@ summary: "add another variation of tag cloud with style"
 </style>
 
 {% assign tag_names = site.data.tags.allowed-tags | sort_natural %}
+{% assign tagList = site.tags | sort_natural %}
 
 {% for posts_by_tag in tag_names | sort_natural %}
 {% endfor %}
@@ -70,18 +71,27 @@ summary: "add another variation of tag cloud with style"
 <hr>
 
   <div class="post-preview"> 
-    {% for tag in site.tags | sort_natural %} 
+    {% for tag in tagList %} 
       <h2 id="{{ tag }}" style="padding-top: 70px;"> #{{ tag }}  <i class="badge">{{ tag | size }}</i></h2>
-      <ul class="later on">
+      <ul class="post-list leaders">
       {% capture tagMap %}{{ tag | strip_newlines }}{% endcapture %}
         {% for post in site.pages | sort_natural %}
           {% if post contains tag %}
-          <a class="post-subtitle" href="{{ post.url | prepend: site.baseurl }}">
           <li>
-            {% if post.title %}{{ post.title }}{% else %}{{ post.name }} {% endif %}
-          <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
-          </li>
-          </a>
+                    <a class="post-link leaguegothic" href="{{ post.url | prepend: site.baseurl }}">
+                        <span>{% if post.title %} {{post.title}} {% else %} {{ post.name | remove: ".md" }} {% endif %}</span>
+                        <span class="post-meta red" style="color: red;"> {{ post.updated | date: "%Y.%m.%d" }}</span>
+                    {% if post.summary != empty %}
+                            <div class="post-meta tag-home">
+                               📫  - {{ post.summary }}
+                            </div>
+                    {% else %}
+                            <div class="post-meta tag-home">
+                              <i class="fa fa-github" aria-hidden="true"></i>  - {{ post.excerpt }}
+                            </div>
+                    {% endif %}
+                    </a>
+                </li> 
           {% endif %}
         {% endfor %}
       </ul>
