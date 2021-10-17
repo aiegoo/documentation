@@ -71,7 +71,7 @@ summary: "add another variation of tag cloud with style"
 
   <div class="post-preview"> 
     {% for posts_by_tag in site.tags | sort_natural %} 
-      <h2 id="{{ posts_by_tag | slugify }}" style="padding-top: 70px;"> {{ posts_by_tag }}  <i class="badge">{{ posts_by_tag | size }}</i></h2>
+      <h2 id="{{ posts_by_tag | slugify }}" style="padding-top: 70px;"> {{ posts_by_tag }}  <i class="badge">{{ posts_by_tag | last | size }}</i></h2>
       <ul class="later on">
         {% for post in site.posts %}
           <a class="post-subtitle" href="#{{ post.url }}">
