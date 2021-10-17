@@ -74,11 +74,11 @@ summary: "add another variation of tag cloud with style"
       <h2 id="{{ posts_by_tag | slugify }}" style="padding-top: 70px;"> {{ posts_by_tag }}  <i class="badge">{{ posts_by_tag | size }}</i></h2>
       <ul class="later on">
         {% assign collection = site.collections[label] %}
-        {% for item in site.collection[1] %}
-          <a class="post-subtitle" href="{{ site.baseurl }}{{ item.url }}">
+        {% for tag in site.tags %}
+          <a class="post-subtitle" href="/tags/{{ tag.slug }}">
         <li>
-          {% if item.title %}{{ item.title }}{% else %}{{ item.name }} {% endif %}
-        <small class="post-meta"> - Posted on {{ item.date | date: "%B %-d, %Y" }}</small>
+          {% if post_by_tag.title %}{{ post_by_tag.title }}{% else %}{{ post_by_tag.name }} {% endif %}
+        <small class="post-meta"> - Posted on {{ tag.date | date: "%B %-d, %Y" }}</small>
         </li>
         </a>
         {% endfor %}
