@@ -98,7 +98,7 @@ summary: "add another variation of tag cloud with style"
         <hr/>
     {% endfor %}
   </div>
-</div>
+  
 <hr />
 <hr class="shaded">
 
