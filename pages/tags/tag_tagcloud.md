@@ -73,7 +73,7 @@ summary: "add another variation of tag cloud with style"
       <ul class="post-list leaders">
       {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
         {% for post in site.pages | sort_natural %}
-          {% if post contains tag %}
+          {% if post.tags contains tag %}
           <li>
               <a class="post-link leaguegothic" href="{{ post.url | prepend: site.baseurl }}">
                   <span>{% if post.title %} {{post.title}} {% else %} {{ post.name | remove: ".md" }} {% endif %}</span>
