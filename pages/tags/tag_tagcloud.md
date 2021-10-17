@@ -74,7 +74,7 @@ summary: "add another variation of tag cloud with style"
     {% for tag in tagList %} 
       <h2 id="{{ tag }}" style="padding-top: 70px;"> #{{ tag }}  <i class="badge">{{ tag | size }}</i></h2>
       <ul class="post-list leaders">
-      {% capture tagMap %}{{ tag | strip_newlines }}{% endcapture %}
+      {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
         {% for post in site.pages | sort_natural %}
           {% if post contains tag %}
           <li>
