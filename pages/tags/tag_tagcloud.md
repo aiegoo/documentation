@@ -60,7 +60,7 @@ summary: "add another variation of tag cloud with style"
 }
 </style>
 
-{% assign tag_names = site.data.tags.allowed-tags | sort_natural %}
+{% assign tag_names = site.tags | sort_natural %}
 
 {% for posts_by_tag in tag_names | sort_natural %}
 {% endfor %}
@@ -70,7 +70,7 @@ summary: "add another variation of tag cloud with style"
 <hr>
 
   <div class="post-preview"> 
-    {% for posts_by_tag in site.data.tags.allowed-tags | sort_natural %} 
+    {% for posts_by_tag in site.tags | sort_natural %} 
       <h2 id="{{ posts_by_tag | slugify }}" style="padding-top: 70px;"> {{ posts_by_tag }}  <i class="badge">{{ posts_by_tag | size }}</i></h2>
       <ul class="later on">
         {% assign collection = site.collections[label] %}
