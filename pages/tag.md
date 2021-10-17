@@ -34,8 +34,7 @@ sidebar: other_sidebar
     {% for tag in tagList | sort_natural %}
             <li>
                 <a href="#{{tag[0]}}" onclick="showTag('#{{tag}}')" style="font-size: {{ tag | size | times: 6 | plus: 90 }}% !important;">
-                    {{tag[0]}}<sup style="color: hotpink;">{{ tag[1] | size }}</sup>{% unless forloop.last %}, {% endunless %}
-                </a>
+                    {{tag}}<sup style="color: hotpink;">{{ tag | size }}</sup>
             </li>
     {% endfor %}
         </ul>
@@ -44,7 +43,7 @@ sidebar: other_sidebar
     <div class="post-meta">
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
-            <h3 id="{{tag}}">#{{ tag }}</h3>
+            <h3 id="{{tag}}">#{{ tag }}<i class="badge">{{ tag | last | size}}</i></h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
         {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
