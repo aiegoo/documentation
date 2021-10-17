@@ -22,19 +22,13 @@ sidebar: other_sidebar
     {% assign tagMap = site.pages %}
     {% assign tagList = site.data.tags.allowed-tags | sort_natural %}
     {% assign counter = '0' %}
-    {% for page in site.pages %}
-    {% for tag in page.tags %}
-    {% if page contains tag %}
-        {% capture counter %}{{ counter | plus:'1' }}{% endcapture %}
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
     <div>
         <ul class="tag-list" style="line-height: 1.1;">
     {% for tag in tagList | sort_natural %}
             <li>
                 <a href="#{{tag[0]}}" onclick="showTag('#{{tag}}')" style="font-size: {{ tag | size | times: 6 | plus: 90 }}% !important;">
                     {{tag}}<sup style="color: hotpink;">{{ tag | size }}</sup>
+                </a>
             </li>
     {% endfor %}
         </ul>
