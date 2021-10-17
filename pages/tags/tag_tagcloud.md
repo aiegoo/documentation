@@ -72,7 +72,7 @@ summary: "add another variation of tag cloud with style"
   <div class="post-preview"> 
     {% for tag in site.tags | sort_natural %} 
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
-      <h2 id="{{ tag_name | slugify }}" style="padding-top: 70px;"> {{ tag_name }}  <i class="badge">{{ tag_name | last | size }}</i></h2>
+      <h2 id="{{ tag_name | slugify }}" style="padding-top: 70px;"> {{ tag_name }}  <i class="badge">{{ tag_name | size }}</i></h2>
       <ul class="later on">
         {% for post in site.posts %}        
           <a class="post-subtitle" href="{{ post.url }}">
