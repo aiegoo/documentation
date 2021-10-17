@@ -12,10 +12,10 @@
   {% assign tag_names = include.tag_names %}
 
 {% else %}
-  {% assign tag_names = "" | split: "|"  %}
+  {% assign tag_names = "" | split: ","  %}
 
   {% for posts_by_tag in site.data.tags.allowed-tags %}
-    {% assign tag_names = tag_names | push: posts_by_tag.first %}
+    {% assign tag_names = tag_names | push: posts_by_tag %}
   {% endfor %}
 
   {% assign tag_names = tag_names | sort %}
@@ -23,9 +23,9 @@
 
 <div class="blog-tags">
   {% for tag_name in tag_names %}
-      <a href="{{ #{{ tag_name | slugnify }}" class="btn btn-default" style="font-size: {{ tag_names | last | size  |  times: 4 | plus: 80  }}%">
+      <a href="{{ #{{ tag_name | slugnify }}" class="btn btn-default" style="font-size: {{ tag_names | size  |  times: 4 | plus: 90  }}%">
         <span class="fa fa-folder-open" aria-hidden="true"> 
-        {{ tag_name }} <i class="badge">{{ tag_names | last | size }}</i>
+        {{ tag_name }} <i class="badge">{{ tag_names | size }}</i>
       </span>
       </a>
   {% endfor %}
