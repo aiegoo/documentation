@@ -7,7 +7,6 @@ toc: false
 sidebar: other_sidebar
 ---
 
-## tag cloud
 <div class="well">
 <style type="text/css">
 .col-md-6 {
@@ -28,7 +27,7 @@ sidebar: other_sidebar
             <li>
                 <a href="#{{tag[0]}}" onclick="showTag('#{{tag}}')" style="font-size: {{ tag[0] | size | times: 6 | plus: 90 }}% !important;">
                     {{tag}}<sup style="color: hotpink;">{{ tag[0] | size }}</sup>
-                </a>{% unless forloop.last %}{% endunless %}
+                </a>
             </li>
     {% endfor %}
         </ul>
