@@ -23,7 +23,7 @@
 
 <div class="blog-tags">
   {% for tag_name in tag_names %}
-      <a href="{{ #{{ posts_by_tag | slugify }}" class="btn btn-default" style="font-size: {{ tag_name | size  |  times: 4 | plus: 90  }}%">
+      <a href="{{ #{{ tag_name }}" class="btn btn-default" style="font-size: {{ tag_name | size  |  times: 4 | plus: 90  }}%">
         <span class="fa fa-folder-open" aria-hidden="true"> 
         {{ tag_name }} <i class="badge">{{ tag_name | size }}</i>
       </span>
