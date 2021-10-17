@@ -70,10 +70,10 @@ summary: "add another variation of tag cloud with style"
 <hr>
 
   <div class="post-preview"> 
-    {% for tag_name in tag_names %} 
-      <h2 id="{{ tag_name[0] | slugify }}" style="padding-top: 70px;"> {{ tag_name[0] }}  <i class="badge">{{ tag_name | last | size }}</i></h2>
+    {% for posts_by_tag in tag_names %} 
+      <h2 id="{{ posts_by_tag[0] | slugify }}" style="padding-top: 70px;"> {{ posts_by_tag[0] }}  <i class="badge">{{ posts_by_tag | last | size }}</i></h2>
       <ul class="later on">
-        {% for post in tag_name[1] %}
+        {% for post in posts_by_tag[1] %}
           <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
         <li>
           {{ post.title }}
