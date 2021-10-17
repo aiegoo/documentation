@@ -71,7 +71,7 @@ summary: "add another variation of tag cloud with style"
 
   <div class="post-preview"> 
     {% for tag in site.tags | sort_natural %} 
-    {% capture tag_name %}{{ tag }}{% endcapture %}
+    {% capture tag_name %}{{ tag | last }}{% endcapture %}
       <h2 id="{{ tag_name | slugify }}" style="padding-top: 70px;"> {{ tag_name }}  <i class="badge">{{ tag_name | size }}</i></h2>
       <ul class="later on">
         {% for post in site.posts %}        
@@ -89,6 +89,7 @@ summary: "add another variation of tag cloud with style"
 <hr />
 <hr class="shaded">
 
+<p> posts by tags </p>
 <section class="posts-by-tags">
   {% for tag_name in tag_names %}
     <div>
@@ -107,6 +108,7 @@ summary: "add another variation of tag cloud with style"
 
 <hr class="faded">
 
+<p> tag array using [] </p>
 {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
   <ul>
