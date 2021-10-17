@@ -61,7 +61,6 @@ summary: "add another variation of tag cloud with style"
 </style>
 
 {% assign tag_names = site.data.tags.allowed-tags | sort_natural %}
-{% assign tagList = site.tags | sort_natural %}
 
 {% for posts_by_tag in tag_names | sort_natural %}
 {% endfor %}
@@ -71,38 +70,24 @@ summary: "add another variation of tag cloud with style"
 <hr>
 
   <div class="post-preview"> 
-    {% for tag in tagList %} 
-      <h2 id="{{ tag }}" style="padding-top: 70px;"> #{{ tag }}  <i class="badge">{{ tag | size }}</i></h2>
-      <ul class="post-list leaders">
-      {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
-        {% for post in site.pages | sort_natural %}
-          {% if post contains tag %}
-          <li>
-              <a class="post-link leaguegothic" href="{{ post.url | prepend: site.baseurl }}">
-                  <span>{% if post.title %} {{post.title}} {% else %} {{ post.name | remove: ".md" }} {% endif %}</span>
-                  <span class="post-meta red" style="color: red;"> {{ post.updated | date: "%Y.%m.%d" }}</span>
-              {% if post.summary != empty %}
-                      <div class="post-meta tag-home">
-                          📫  - {{ post.summary }}
-                      </div>
-              {% else %}
-                      <div class="post-meta tag-home">
-                        <i class="fa fa-github" aria-hidden="true"></i>  - {{ post.excerpt }}
-                      </div>
-              {% endif %}
-              </a>
-          </li> 
-          {% endif %}
+    {% for posts_by_tag in site.data.tags.allowed-tags | sort_natural %} 
+      <h2 id="{{ posts_by_tag | slugify }}" style="padding-top: 70px;"> {{ posts_by_tag }}  <i class="badge">{{ posts_by_tag | size }}</i></h2>
+      <ul class="later on">
+        {% for post in site.posts %}
+          <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
+        <li>
+          {% if post.title %}{{ pos.title }}{% else %}{{ post.name }} {% endif %}
+        <small class="post-meta"> - Posted on {{ posts_by_tag.date | date: "%B %-d, %Y" }}</small>
+        </li>
+        </a>
         {% endfor %}
       </ul>
         <hr/>
     {% endfor %}
-  </div>
-  
+
 <hr />
 <hr class="shaded">
 
-<p> posts by tags </p>
 <section class="posts-by-tags">
   {% for tag_name in tag_names %}
     <div>
@@ -121,7 +106,6 @@ summary: "add another variation of tag cloud with style"
 
 <hr class="faded">
 
-<p> tag array using [] </p>
 {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
   <ul>
