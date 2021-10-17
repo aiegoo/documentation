@@ -69,7 +69,7 @@ summary: "add another variation of tag cloud with style"
 
   <div class="post-preview"> 
     {% for tag in tagList %} 
-      <h2 id="{{ tag }}" style="padding-top: 70px;"> #{{ tag }}  <i class="badge">{{ tag | size }}</i></h2>
+      <h2 id="{{ tag }}" style="padding-top: 70px;"> #{{ tag }}  <i class="badge">{{ tag | size }}</i></h2> {% endfor %}
       <ul class="post-list leaders">
       {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
         {% for post in site.pages | sort_natural %}
@@ -93,7 +93,7 @@ summary: "add another variation of tag cloud with style"
         {% endfor %}
       </ul>
         <hr/>
-    {% endfor %}
+   
   </div>
   
 <hr />
