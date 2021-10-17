@@ -70,17 +70,17 @@ summary: "add another variation of tag cloud with style"
 <hr>
 
   <div class="post-preview"> 
-    {% for posts_by_tag in site.data.tags.allowed-tags | sort_natural %} 
-      <h2 id="{{ posts_by_tag | slugify }}" style="padding-top: 70px;"> {{ posts_by_tag }}  <i class="badge">{{ posts_by_tag | size }}</i></h2>
+    {% for tag in site.tags | sort_natural %} 
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+      <h2 id="{{ tag_name | slugify }}" style="padding-top: 70px;"> {{ tag_name }}  <i class="badge">{{ tag_name | last | size }}</i></h2>
       <ul class="later on">
-        {% assign collection = site.collections[label] %}
-        {% for tag in site.tags %}
-          <a class="post-subtitle" href="{{ tag.url }}">
-        <li>
-          {% if post_by_tag.title %}{{ post_by_tag.title }}{% else %}{{ post_by_tag.name }} {% endif %}
-        <small class="post-meta"> - Posted on {{ posts_by_tag.date | date: "%B %-d, %Y" }}</small>
-        </li>
-        </a>
+        {% for post in site.posts %}        
+          <a class="post-subtitle" href="{{ post.url }}">
+          <li>
+            {% if post.title %}{{ post.title }}{% else %}{{ post.name }} {% endif %}
+          <small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
+          </li>
+          </a>
         {% endfor %}
       </ul>
         <hr/>
