@@ -24,7 +24,7 @@ updated: 2021-10-18 11:18
 
 - various trials and logic implementation
 > default : uses buttons and tabs to sort and fetch tagged lists in a table
-[site]({{ site.baseurl}}{{ tags/}})
+[site]({{ site.baseurl}}tags/)
 * how it works;
 > in includes/taglogic.html, you will find the front-end setup and the shopify scripts where pages and tags are processed.
 {% raw %}
@@ -34,7 +34,7 @@ updated: 2021-10-18 11:18
 {% endraw %}
 
 > Three variations: there are two major distinct categories in building tag cloud; one uses data where you store generated taglist, tagmap and sitemaps. They are accessible through site.data[...], which is quite handy. But it's actually two step process; one to generate the data before your script is designed to tab later on. Another common is to write the scripts to loop through the data to return the values in your logics. 
-[variation1]({{ site.baseurl }}{{ tag/#}})
+[variation1]({{ site.baseurl }}tag/#python)
 * this is the main feature where font-size is determined by the size or frequency of the tags or posts can be calculated. Only huddle  I had was the default setup I made in config.yml for tag collections, which made my script to look like this 'site.data.tags.allowed-tags, which is simply site.tags in most other cases. 
 * another purprit was the size of posts or pages tagged so that the number of posts matches the badge count wit the tat name.
 * you need the javascript to switch between visible and invisible class as to display the selected tag list of posts.
@@ -45,11 +45,11 @@ updated: 2021-10-18 11:18
 
 - other variations
 > I tried out different aprroaches found via google search that seemed best candidate to my needs, for example;
-[variation]({{ site.baseurl }}{{ tag_tagcloud.md}})
+[variation]({{ site.baseurl }}tag_tagcloud.html)
 
-[variation]({{ site.baseurl }}{{ tag_tagcloud2.md}})
+[variation]({{ site.baseurl }}tag_tagcloud2.html)
 
-[variation]({{ site.baseurl }}{{ tag_tagcloud3.md}})
+[variation]({{ site.baseurl }}tag_tagcloud3.html)
 ## issues
 - common google solution
 > place a tag name with size as in this example
