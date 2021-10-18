@@ -45,10 +45,10 @@ sidebar: other_sidebar
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
             <h3 id="{{tag}}">#{{ tag }}  
-                {% assign tagitems = tag | split: '' %}              
+                {% assign tagitems = tag | split: '' %}
+                <i class="badge">              
                 {% for tag in sortedtags %}
-                <i class="badge">{{ tagitems[1] }}</i>
-                {% endfor %}
+                {{ tagitems[1] }} {% endfor %}</i>               
             </h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
