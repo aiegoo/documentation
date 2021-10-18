@@ -44,8 +44,8 @@ sidebar: other_sidebar
     {% assign sortedTags = tags | split:' ' | sort %} 
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
-            < id="{{tag}}">#{{ tag }}< class="badge">{% for post in tag[1] %}
-                {{ counter(post) }}{% endfor %}</i>               
+            <h3 id="{{tag}}">#{{ tag }}<i class="badge">{% for post in tag[1] %}
+                {{ forloop.length }}{% endfor %}</i>               
             </h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
