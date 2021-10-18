@@ -171,7 +171,7 @@ s[2] = 4; // OK
 `var` is "function" scope whereas `log` and `const` are "block" scope.
 
 ::: col-2-equal
-``` js
+```js
 function someFn() {
   if (true) {
     var localVar=1000
@@ -185,7 +185,7 @@ function someFn() {
 console.log(localVar)      //error
 ```
 
-``` js
+```js
 function someFn() {
   if (true) {
     let localVar=1000

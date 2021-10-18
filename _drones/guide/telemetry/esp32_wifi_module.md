@@ -133,7 +133,7 @@ http://dronebridge.local/api/system/reboot
 ```
 
 **Trigger a settings change:** Send a valid JSON
-``` json
+```json
 {
   "wifi_ssid": "DroneBridge ESP32",
   "wifi_pass": "dronebridge",
