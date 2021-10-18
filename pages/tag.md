@@ -45,7 +45,7 @@ sidebar: other_sidebar
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
             <h3 id="{{tag}}">#{{ tag }}<i class="badge">
-                {{ forloop.index(post) | last | size }}</i>               
+                {{ forloop.index(post) }}</i>               
             </h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
