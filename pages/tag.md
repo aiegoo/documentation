@@ -44,7 +44,7 @@ sidebar: other_sidebar
     {% assign sortedTags = tags | split:' ' | sort %} 
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
-            <h3 id="{{tag}}">#{{ tag }}<i class="badge">{% for post in site.pages | sort_natural %}{% if post.tags contains  tag %}{{ counter | plus: 1 | length }}{% endif %}{% endfor %}</i>               
+            <h3 id="{{tag}}">#{{ tag }}<i class="badge">{% for post in site.pages | sort_natural %}{% if post.tags contains  tag %}{{ counter | plus: 1 | slugify | length }}{% endif %}{% endfor %}</i>               
             </h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
