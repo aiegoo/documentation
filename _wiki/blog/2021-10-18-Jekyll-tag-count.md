@@ -51,8 +51,7 @@ whose solution and explanation can be found [here](https://github.com/christians
 ## my implemenation
 - this has been bugging me for several days. Size method results in inaccurate counts of posts and last or unless forloop.last didn't even work in my case.
 > here is the code;
-{% highlight ruby %}
-{% raw %}
+```ruby
 {% capture tags %}
         {% for tag in site.tags %}
         {{ tag[0] }}#{{ tag[1].size}}
@@ -68,8 +67,7 @@ whose solution and explanation can be found [here](https://github.com/christians
                 {% endfor %}
             </h3>
         </div>
-{% endraw %}
-{$ endhighlight %}
+```
 
 {% include links.html %}
 
