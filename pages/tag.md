@@ -25,8 +25,9 @@ sidebar: other_sidebar
     <div>
         <ul class="tag-list" style="line-height: 1.1;">
     {% for tag in tagList | sort_natural %}
+    {% capture postCounter %}{% for post in site.pages | sort_natural %}{% if post.tags contains  tag %}{{ counter | plus: 1 | length }}{% endif %}{% endfor %}{% endcapture %}
             <li>
-                <a href="#{{tag[0]}}" onclick="showTag('#{{tag}}')" style="font-size: {{ tag | size | times: 6 | plus: 90 }}% !important;">
+                <a href="#{{tag[0]}}" onclick="showTag('#{{tag}}')" style="font-size: {{ postCounter | size | times: 6 | plus: 90 }}% !important;">
                     {{tag}}<sup style="color: hotpink;">{{ postCounter | size }}</sup>
                 </a>
             </li>
