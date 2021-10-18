@@ -48,7 +48,7 @@ sidebar: other_sidebar
                 {% assign tagitems = tag | split: '' %}
                 <i class="badge">              
                 {% for tag in sortedtags %}
-                {{ tagitems[1] }} {% endfor %}</i>               
+                {{ tagitems.size }} {% endfor %}</i>               
             </h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
