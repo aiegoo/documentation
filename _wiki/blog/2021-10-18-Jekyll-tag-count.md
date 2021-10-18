@@ -24,7 +24,7 @@ updated: 2021-10-18 11:18
 
 - various trials and logic implementation
 > default : uses buttons and tabs to sort and fetch tagged lists in a table
-[site]({{ site.baseurl}}tags/)
+[site]({{ site.baseurl}}tags)
 * how it works;
 > in includes/taglogic.html, you will find the front-end setup and the shopify scripts where pages and tags are processed.
 {% raw %}
