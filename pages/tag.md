@@ -34,10 +34,17 @@ sidebar: other_sidebar
         </ul>
     </div>
     <hr class="faded">
-    <div class="post-meta">    
+    <div class="post-meta">   
+    
+    {% capture tags %}
+        {% for tag in site.tags %}
+        {{ tag[0] }}#{{ tag[1].size}}
+        {% endfor %}
+    {% endcapture %}
+    {% assign sortedTags = tags | split:' ' | sort %} 
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
-            <h3 id="{{tag}}">#{{ tag }}<i class="badge">{{ tag[1].size | plus: 1000 }}</i></h3>
+            <h3 id="{{tag}}">#{{ tag }}<i class="badge">{{ sortedTags[1].size | minus: 1000 }}</i></h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
         {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
