@@ -37,7 +37,8 @@ updated: 2021-10-18 11:18
 [variation1]({{ site.baseurl }}{{ tag/#}})
 * this is the main feature where font-size is determined by the size or frequency of the tags or posts can be calculated. Only huddle  I had was the default setup I made in config.yml for tag collections, which made my script to look like this 'site.data.tags.allowed-tags, which is simply site.tags in most other cases. 
 * another purprit was the size of posts or pages tagged so that the number of posts matches the badge count wit the tat name.
-
+* you need the javascript to switch between visible and invisible class as to display the selected tag list of posts.
+  
 {% raw %}
 {% capture postCounter %}{% for post in site.pages %}{% if post.tags contains  tag %}{{ counter | plus: 1 | length }}{% endif %}{% endfor %}{% endcapture %} {{ postCounter | size }}
 {% endraw %}
