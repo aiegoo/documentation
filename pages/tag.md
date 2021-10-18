@@ -44,11 +44,10 @@ sidebar: other_sidebar
     {% assign sortedTags = tags | split:' ' | sort %} 
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
-            <h3 id="{{tag}}">#{{ tag }}  
-                {% assign tagitems = tag | split: '' %}
-                <i class="badge">              
-                {% for tag in sortedTags %}
-                {{ tagitems[1] | last | size }} {% endfor %}</i>               
+            <h3 id="{{tag}}">#{{ tag }}<i class="badge">              
+                % for post in site.pages | sort_natural %}
+                {% if post.tags contains  tag %}
+                {{ count(post.tags) }}{% endif %} {% endfor %}</i>               
             </h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
