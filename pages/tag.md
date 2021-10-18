@@ -49,7 +49,7 @@ sidebar: other_sidebar
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
         {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
-            {% for post in site.pages | sort | reversed %}
+            {% for post in site.pages | sort | reverse %}
                 {% if post.tags contains  tag %}
                 <li>
                     <a class="post-link leaguegothic" href="{{ post.url | prepend: site.baseurl }}">
