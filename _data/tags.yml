@@ -87,3 +87,5 @@ allowed-tags:
   - 3d
   - unity
   - joydrone
+  - device
+  - docker
