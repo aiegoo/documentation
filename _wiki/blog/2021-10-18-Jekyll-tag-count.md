@@ -20,6 +20,35 @@ updated: 2021-10-18 11:18
 * TOC
 {:toc}
 
+## my workig  setup
+
+- various trials and logic implementation
+> default : uses buttons and tabs to sort and fetch tagged lists in a table
+[site]({{ site.baseurl}}{{ tags/}})
+* how it works;
+> in includes/taglogic.html, you will find the front-end setup and the shopify scripts where pages and tags are processed.
+{% raw %}
+    {% assign thisTag = page.tagName %}
+  {% for page in site.pages %}
+    {% for tag in page.tags %}
+{% endraw %}
+
+> Three variations: there are two major distinct categories in building tag cloud; one uses data where you store generated taglist, tagmap and sitemaps. They are accessible through site.data[...], which is quite handy. But it's actually two step process; one to generate the data before your script is designed to tab later on. Another common is to write the scripts to loop through the data to return the values in your logics. 
+[variation1]({{ site.baseurl }}{{ tag/#}})
+* this is the main feature where font-size is determined by the size or frequency of the tags or posts can be calculated. Only huddle  I had was the default setup I made in config.yml for tag collections, which made my script to look like this 'site.data.tags.allowed-tags, which is simply site.tags in most other cases. 
+* another purprit was the size of posts or pages tagged so that the number of posts matches the badge count wit the tat name.
+
+{% raw %}
+{% capture postCounter %}{% for post in site.pages %}{% if post.tags contains  tag %}{{ counter | plus: 1 | length }}{% endif %}{% endfor %}{% endcapture %} {{ postCounter | size }}
+{% endraw %}
+
+- other variations
+> I tried out different aprroaches found via google search that seemed best candidate to my needs, for example;
+[variation]({{ site.baseurl }}{{ tag_tagcloud.md}})
+
+[variation]({{ site.baseurl }}{{ tag_tagcloud2.md}})
+
+[variation]({{ site.baseurl }}{{ tag_tagcloud3.md}})
 ## issues
 - common google solution
 > place a tag name with size as in this example
@@ -53,6 +82,9 @@ whose solution and explanation can be found [here](https://github.com/christians
 > here is the code;
 
 <script src="https://gist.github.com/aiegoo/1b30595b6de5ead2061394f72f042099.js"></script>
+
+- currently working script
+<script src="https://gist.github.com/aiegoo/ba790d6e6ab5e7a3638c26e70cb98795.js"></script>
 
 {% include links.html %}
 
