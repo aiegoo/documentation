@@ -37,7 +37,7 @@ sidebar: other_sidebar
     <div class="post-meta">
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
-            <h3 id="{{tag}}">#{{ tag }}<i class="badge">{{ tag[1] | last | size}}</i></h3>
+            <h3 id="{{tag}}">#{{ tag }}<i class="badge">{{ tag[1].size | plus: 1000 }}</i></h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
         {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
