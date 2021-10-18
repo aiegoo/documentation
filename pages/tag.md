@@ -44,7 +44,12 @@ sidebar: other_sidebar
     {% assign sortedTags = tags | split:' ' | sort %} 
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
-            <h3 id="{{tag}}">#{{ tag }}<i class="badge">{{ sortedTags[1].size | minus: 1000 }}</i></h3>
+            <h3 id="{{tag}}">#{{ tag }}  
+                {% assign tagitems = tag | split: '#' %}              
+                {% for tag in sortedtags %}
+                <i class="badge">{{ tagitems[1] }}</i>
+                {% endfor %}
+            </h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
         {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
