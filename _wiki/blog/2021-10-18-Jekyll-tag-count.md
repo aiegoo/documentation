@@ -67,6 +67,7 @@ whose solution and explanation can be found [here](https://github.com/christians
                 <i class="badge">{{ tagitems[1] }}</i>
                 {% endfor %}
             </h3>
+        </div>
 {% endraw %}
 {$ endhighlight %}
 
