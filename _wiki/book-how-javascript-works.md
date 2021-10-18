@@ -34,6 +34,7 @@ weight: 1
 Quick references for fundamental things in JavaScript.
 
 :point_right: Notion note: [JS 101](https://www.notion.so/dinhanhthi/JS-101-986f4079607641d49ca8e149a1d29cec).
+[js 101]({{ site.baseurl }}2021-10-19-Javascript-101.html)
 
 ## Miscellaneous
 
