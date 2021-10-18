@@ -36,6 +36,7 @@ sidebar: other_sidebar
     <hr class="faded">
     <div class="post-meta">
     {% for tag in tagList %}
+        <p>{{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}</p>
         <div class="archive-group invisible" id="{{tag}}">
             <h3 id="{{tag}}">#{{ tag }}<i class="badge">{{ tag[1].size | plus: 1000 }}</i></h3>
             <ul class="post-list leaders">
