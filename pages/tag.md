@@ -44,12 +44,12 @@ sidebar: other_sidebar
     {% assign sortedTags = tags | split:' ' | sort %} 
     {% for tag in tagList %}
         <div class="archive-group invisible" id="{{tag}}">
-            <h3 id="{{tag}}">#{{ tag }}<i class="badge">{% capture postCounter %}{% for post in site.pages | sort_natural %}{% if post.tags contains  tag %}{{ counter | plus: 1 | length }}{% endif %}{% endfor %}{% endcapture %} {{ postCounter | size }}</i>               
+            <h3 id="{{tag}}">#{{ tag }}<i class="badge">{% capture postCounter %}{% for post in site.pages %}{% if post.tags contains  tag %}{{ counter | plus: 1 | length }}{% endif %}{% endfor %}{% endcapture %} {{ postCounter | size }}</i>               
             </h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
         {% capture tagMap %}{{ tagList | strip_newlines }}{% endcapture %}
-            {% for post in site.pages | sort_natural %}
+            {% for post in site.pages | sort %}
                 {% if post.tags contains  tag %}
                 <li>
                     <a class="post-link leaguegothic" href="{{ post.url | prepend: site.baseurl }}">
