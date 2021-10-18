@@ -2106,7 +2106,7 @@ font-family: 'NanumBarunpen' !important;
     /* Generic.Deleted & Diff Deleted */
     /* Generic.Inserted & Diff Inserted */
 }
-
+/* 
 .highlight .hll {
     background-color: #49483e;
 }
@@ -2359,7 +2359,7 @@ font-family: 'NanumBarunpen' !important;
 .highlight .lineno {
     color: #ffe5a0;
 }
-
+ */
 .bodycolor {
     --color-blue: #4386c3;
     --color-green: #0ab534;
