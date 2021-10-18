@@ -2042,7 +2042,7 @@ font-family: 'NanumBarunpen' !important;
 }
 
 /* highlight css */
-.highlight {
+/*.highlight {
     /* Comment */
     /* Error */
     /* Keyword */
@@ -2360,6 +2360,7 @@ font-family: 'NanumBarunpen' !important;
     color: #ffe5a0;
 }
  */
+
 .bodycolor {
     --color-blue: #4386c3;
     --color-green: #0ab534;
