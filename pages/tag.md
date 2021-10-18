@@ -35,9 +35,11 @@ sidebar: other_sidebar
     </div>
     <hr class="faded">
     <div class="post-meta">
-    {% for post in site.pages %}
+    
     {% for tag in tagList %}
+        {% for post in site.pages %}
         <p>{{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}</p> 
+        {% endfor %}
         <div class="archive-group invisible" id="{{tag}}">
             <h3 id="{{tag}}">#{{ tag }}<i class="badge">{{ tag[1].size | plus: 1000 }}</i></h3>
             <ul class="post-list leaders">
@@ -65,7 +67,6 @@ sidebar: other_sidebar
             </ul>
     <h3 id="stackoverflow">Checking ... "{{ tag }}" in StackOverflow</h3>
         </div> <!-- end of archive-group -->
-    {% endfor %}
     {% endfor %}
     </div>
 </div> <!-- end of well -->
