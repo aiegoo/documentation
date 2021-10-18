@@ -37,7 +37,7 @@ sidebar: other_sidebar
     <div class="post-meta">   
     
     {% capture tags %}
-        {% for tag in site.tags %}
+        {% for tag in tagList %}
         {{ tag[0] }}#{{ tag[1].size}}
         {% endfor %}
     {% endcapture %}
@@ -48,7 +48,7 @@ sidebar: other_sidebar
                 {% assign tagitems = tag | split: '' %}
                 <i class="badge">              
                 {% for tag in sortedtags %}
-                {{ tagitems | size }} {% endfor %}</i>               
+                {{ tagitems[1] | size }} {% endfor %}</i>               
             </h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
