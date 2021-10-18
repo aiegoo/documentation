@@ -47,7 +47,7 @@ sidebar: other_sidebar
             <h3 id="{{tag}}">#{{ tag }}<i class="badge">              
                 % for post in site.pages | sort_natural %}
                 {% if post.tags contains  tag %}
-                {{ count(post) }}{% endif %} {% endfor %}</i>               
+                {{ forloop.index(post) | size }}{% endif %} {% endfor %}</i>               
             </h3>
             <ul class="post-list leaders">
         {% assign thisTag = tag %}
