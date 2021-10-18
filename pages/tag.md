@@ -37,7 +37,7 @@ sidebar: other_sidebar
     <div class="post-meta">   
     
     {% capture tags %}
-        {% for tag in tagList %}
+        {% for tag in site.tags %}
         {{ tag[0] }}#{{ tag[1].size}}
         {% endfor %}
     {% endcapture %}
