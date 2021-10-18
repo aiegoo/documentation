@@ -62,12 +62,12 @@ Open the browser (I use [Chrome](https://www.google.com/chrome/)), press <kbd>F1
 
 ### Concise things
 
-~~~ js
+```js
 // Concise Object Literal Declarations
 const getMousePosition = (x, y) => ({ x, y });
 ~~~
 
-~~~ js
+```js
 // Concise Declarative Functions
 const person = {
   name: "Taylor",
@@ -79,7 +79,7 @@ const person = {
 
 ### Getters and setters
 
-~~~ js
+```js
 class Book {
   constructor(author) {
     this._author = author;
@@ -101,7 +101,7 @@ console.log(lol.writer);  // wut
 
 ### Export/Import to share code blocks
 
-~~~ js
+```js
 // file ./math_funcs.js
 const add = (x, y) => {return x + y};
 const subtract = (x, y) => {return x - y};
@@ -113,7 +113,7 @@ export default function(x, y) { // without name
 }
 ~~~
 
-~~~ js
+```js
 // main.js
 import {add, subtract } from './math_funcs.js';
 import * as myMathModule from "./math_functions.js"; // everything
@@ -125,13 +125,13 @@ import anything from './math_default.js'; // from export default
 
 <div class="col-2-equal">
 
-~~~ js
+```js
 var varName; // global scope
 let varName; // ES6, block scope (inside {} or function,...)
 const varName; // ES6, can't be changed
 ~~~
 
-~~~ js
+```js
 function funcName(){
   oopsGlobal = 5;  // without `var`, it's a global variable
 }
@@ -143,25 +143,25 @@ Difference between `var`, `let` and `const`,
 
 <div class="col-2-equal">
 
-~~~ js
+```js
 var a = 1;
 var a = 2; // ok, a=2 now
 a = 5; // a=5 now
 ~~~
 
-~~~ js
+```js
 let c = 1;
 let c = 2; // error
 c = 3; // c=3 now
 ~~~
 
-~~~ js
+```js
 const b = 1;
 const b = 2; // error
 b = 2 // error
 ~~~
 
-~~~ js
+```js
 const s = [1, 2, 3];
 s = [1, 2, 4]; // error
 s[2] = 4; // OK
@@ -202,7 +202,7 @@ console.log(localVar)      //error
 
 ## Output
 
-~~~ js
+```js
 myName = "Thi"
 console.log("I'm " + myName + ".");
 console.log(`I'm ${myName}.`); // ES6
@@ -214,7 +214,7 @@ Check [more operators](https://www.w3schools.com/jsref/jsref_operators.asp) & [m
 
 <div class="col-2-equal">
 
-~~~ js
+```js
 i = i + 1; // i++; // i += 1;
 i = i - 1; // i--; // i -= 1;
 i = i * 3; // i *= 3;
@@ -223,7 +223,7 @@ i = i / 2; // i /= 2;
 11 % 3 // = 2, remainder
 ~~~
 
-~~~ js
+```js
 Math.random(); // give a random number between 0 and 1
 Math.floor(); // round to its nearest whole number
 
@@ -243,7 +243,7 @@ parseInt("11", 2); // give number 3, "2" is radix
 
 <div class="col-2-equal">
 
-~~~ js
+```js
 if (true){
   // commands
 }
@@ -257,7 +257,7 @@ if (true){
 }
 ~~~
 
-~~~ js
+```js
 let var = 'papaya';
 switch (var) {
   case 'val1':
@@ -279,7 +279,7 @@ You can remove `break;` to apply the same result for multiple cases.
 
 <div class="col-2-equal">
 
-~~~ js
+```js
 // ES6 way
 const rectangleArea = (width=10, height=5) => {
   let area = width * height;
@@ -287,7 +287,7 @@ const rectangleArea = (width=10, height=5) => {
 };
 ~~~
 
-~~~ js
+```js
 // if there is no parameter
 const <func> = () => {};
 
@@ -301,7 +301,7 @@ const sumNumbers = number => number + number;
 
 Older ways (ES5),
 
-~~~ js
+```js
 function <funcName>(<para>){
   // commands
 }
@@ -314,7 +314,7 @@ function <funcName>(<para>){
 
 Rest parameter (ES6)
 
-~~~ js
+```js
 const last_element = (...args) => {
   return args[-1];
 }
@@ -326,7 +326,7 @@ last_element(1,2,3); // 3
 
 Spread Operator (ES6)
 
-~~~ js
+```js
 const arr = [6, 89, 3, 45];
 const maximus = Math.max(...arr); // 89
 ~~~
@@ -337,7 +337,7 @@ const maximus = Math.max(...arr); // 89
 
 Check [more methods](https://www.w3schools.com/jsref/jsref_obj_string.asp).
 
-~~~ js
+```js
 var a = 'Anh-Thi' + 'Dinh'; // plus the strings
 a.length; // length of the string
 a[0]; // first letter of the string
@@ -353,7 +353,7 @@ a[0] = 'D'; // !!! CAN'T change an individual word
 
 Check [more methods](https://www.w3schools.com/jsref/jsref_obj_array.asp).
 
-~~~ js
+```js
 var arrName = ['a', 1, 'c'];
 var nestedArr = [[1, 2], [3, 4]];
 
@@ -371,7 +371,7 @@ shiftedElement = arrName.shift() // remove the FIRST element of an array
 
 <div class="col-2-equal">
 
-~~~ js
+```js
 var myObj = {
   top: "hat",
   "bottom": "pants"
@@ -382,7 +382,7 @@ myObj.hasOwnProperty("top");    // true
 myObj.hasOwnProperty("middle"); // false
 ~~~
 
-~~~ js
+```js
 // Accessing Object Properties
 myObj.top; // dot
 myObj["bottom"]; // bracket
@@ -392,7 +392,7 @@ myObj[pos]; // via a variable
 ~~~
 </div>
 
-~~~ js
+```js
 myObj.top = "T-shirt"; // Update object properties
 myObj.middle = "New shoe"; // Add new properties
 delete myObj.middle; // Delete a property
@@ -400,7 +400,7 @@ delete myObj.middle; // Delete a property
 
 We can use object for lookups instead of using `if..else` or `switch`,
 
-~~~ js
+```js
 var alpha = {1:"A", 2:"B", 3:"C"};
 value = 2;
 alpha[value]; // instead of using if value==2 or switch value...
@@ -410,7 +410,7 @@ We can create a **nested object** inside an object.
 
 Prevent object mutation,
 
-~~~ js
+```js
 let obj = {
   name:"FreeCodeCamp",
   review:"Awesome"
@@ -422,20 +422,20 @@ Object.freeze(obj); // obj can't be changed
 
 Extract values from object,
 
-~~~ js
+```js
 const user = {name: "Thi", age: 30};
 const {name, age} = user; // name="Thi", age=30
 ~~~
 
 Assign variable from object,
 
-~~~ js
+```js
 const {name: uName, age: uAge} = user; // uName="Thi", uAge=30
 ~~~
 
 Assign Variables from Nested Objects,
 
-~~~ js
+```js
 const user = {
   anhThi: {
     age: 30,
@@ -450,12 +450,12 @@ Assign Variables from Arrays,
 
 <div class="col-2-equal">
 
-~~~ js
+```js
 const [a, b] = [1, 2, 3, 4, 5, 6];
 console.log(a, b); // 1, 2
 ~~~
 
-~~~ js
+```js
 const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
 console.log(a, b, c); // 1, 2, 5
 ~~~
@@ -463,7 +463,7 @@ console.log(a, b, c); // 1, 2, 5
 
 Assignment with the Rest Parameter to Reassign Array Elements,
 
-~~~ js
+```js
 const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
 console.log(a, b); // 1, 2
 console.log(arr); // [3, 4, 5, 7]
@@ -471,7 +471,7 @@ console.log(arr); // [3, 4, 5, 7]
 
 Pass an Object as a Function's Parameters,
 
-~~~ js
+```js
 const profileUpdate = ({ name, age, nationality, location }) => {
   // do something with these fields
 }
@@ -482,7 +482,7 @@ const profileUpdate = ({ name, age, nationality, location }) => {
 
 **JavaScript Object Notation** or JSON is a related data interchange format used to store data,
 
-~~~ js
+```js
 var ourMusic = [
   {
     "artist": "Daft Punk",
@@ -509,32 +509,32 @@ Check [more statements](https://www.w3schools.com/jsref/jsref_statements.asp).
 
 <div class="col-2-equal">
 
-~~~ js
+```js
 while (<conditions>){
   // commands
 }
 ~~~
 
-~~~ js
+```js
 do{
   // commands
 } while (<conditions>);
 ~~~
 
-~~~ js
+```js
 for (var i=0; i<5; i++){
   // commands
 }
 ~~~
 
-~~~ js
+```js
 // Iterate odd numbers
 for (var i=0; i<5; i+=2){
   // commands
 }
 ~~~
 
-~~~ js
+```js
 // Count backwards
 for (var i=10; i?5; i-=2){
   // commands
