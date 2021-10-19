@@ -49,10 +49,10 @@ onclick="showTag('#{{tag}}')"
 ~~~~
 {: .language-html}
 
-~~~html
+```html
 <div class="archive-group invisible" id="{{tag}}">
   </div>
-~~~~
+```
 
 - other variations
 > I tried out different aprroaches found via google search that seemed best candidate to my needs, for example;
