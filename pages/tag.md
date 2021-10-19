@@ -34,8 +34,7 @@ sidebar: other_sidebar
         </ul>
     </div>
     <hr class="faded">
-    <div class="post-meta">   
-    
+    <div class="post-meta">       
     {% capture tags %}
         {% for tag in site.tags %}
         {{ tag[0] }}#{{ tag[1].size}}

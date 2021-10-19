@@ -15,7 +15,7 @@ toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
 date: 2021-10-18T11:18:03 +0900
-updated: 2021-10-18 11:18
+updated: 2021-10-19 9:29 AM
 ---
 * TOC
 {:toc}
@@ -42,6 +42,16 @@ updated: 2021-10-18 11:18
 {% raw %}
 {% capture postCounter %}{% for post in site.pages %}{% if post.tags contains  tag %}{{ counter | plus: 1 | length }}{% endif %}{% endfor %}{% endcapture %} {{ postCounter | size }}
 {% endraw %}
+
+* jquery to swtich between visible and invisible instead of show/hide
+~~~ html
+onclick="showTag('#{{tag}}')"
+~~~~
+
+~~~html
+<div class="archive-group invisible" id="{{tag}}">
+  </div>
+~~~~
 
 - other variations
 > I tried out different aprroaches found via google search that seemed best candidate to my needs, for example;
