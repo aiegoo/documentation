@@ -25,11 +25,11 @@ updated: 2021-10-19 22:10
 keywords: "autofocus separated columns page load google webfont sass Font ligatures terms two 2 columns list Font ligatures auto convert symbol focus on input field google webfont helper regex regular expression font download media bootstrap doesn't work"
 ---
 
-## Terms
+### Terms
 
 - **Font ligatures**: When you type <kbd>=</kbd> + <kbd>></kbd>, it becomes `⇒`.
 
-## Auto focus on an input field when page loads
+### Auto focus on an input field when page loads
 
 Just add `autofocus` into the `<input>` tag.
 
@@ -37,11 +37,11 @@ Just add `autofocus` into the `<input>` tag.
 <input name="q" class="search" type="search" placeholder="..." autofocus>
 ~~~
 
-## Separate a list into 2 columns
+### Separate a list into 2 columns
 
 And make it into 1 if the screen is small.
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ~~~ html
 <div class="two-columns-list">
@@ -63,7 +63,7 @@ And make it into 1 if the screen is small.
 ~~~
 </div>
 
-## `@media` not working
+### `@media` not working
 
 When I use bootstrap, the `@media` is not working when I change to mobile use, try to add below line to `<head>`,
 
