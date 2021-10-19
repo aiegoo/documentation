@@ -22,10 +22,7 @@ updated: 2021-10-20 03:30
 {:toc}
 
 ## Thi
-keywords: js javascript package management Node Package Manager
----
 
-{% assign img-url = '/img/post/js/gatsby' %}
 
 ## Install NodeJS & NPM
 
