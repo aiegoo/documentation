@@ -1791,7 +1791,7 @@ a.wiki-previous:hover {
     border: 1px solid white;
     border-left-color: rgba(233, 236, 239, 0.9);
     border-left-width: 5px;
-    padding: 5px;
+    padding: 4px;
     position: fixed;
     bottom: 1vh;
     top: 7vh;
@@ -1800,6 +1800,7 @@ a.wiki-previous:hover {
     width: 24rem;
     overflow-x: hidden;
     overflow-y: auto;
+    font-size: 14px;
 }
     
 
