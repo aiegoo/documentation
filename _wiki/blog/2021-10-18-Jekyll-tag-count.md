@@ -27,6 +27,7 @@ updated: 2021-10-19 9:29 AM
 [site]({{ site.baseurl}}tags)
 * how it works;
 > in includes/taglogic.html, you will find the front-end setup and the shopify scripts where pages and tags are processed.
+
 {% raw %}
     {% assign thisTag = page.tagName %}
   {% for page in site.pages %}
@@ -65,12 +66,15 @@ onclick="showTag('#{{tag}}')"
 - common google solution
 > place a tag name with size as in this example
 
+{% raw %}
 {% highlight ruby %}
 {{ tag | last | size }}
 
 {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}
 {% endhighlight %}
+{% endraw %}
 
+{% raw %}
 {% highlight ruby %}
 {% capture tags %}
   {% for tag in site.tags %}
@@ -83,11 +87,12 @@ onclick="showTag('#{{tag}}')"
     <li><a href="/tags/#{{ tagitems[1] }}">{{ tagitems[1] }} ({{ tagitems[2] }})</a></li>
 {% endfor %}
 {% endhighlight %}
+{% endraw %}
 
 ## solution
 [solution_blog](https://christianspecht.de/tags/)
 whose solution and explanation can be found [here](https://github.com/christianspecht/blog/blob/49b67d1d86a41f00f705804f69dbae3f6ee17f9a/src/_layouts/default.html#L120) and [stackoverflow](https://stackoverflow.com/questions/24700749/how-do-you-sort-site-tags-by-post-count-in-jekyll/24702179)
-{% include taglogic.html %}
+
 
 ## my implemenation
 - this has been bugging me for several days. Size method results in inaccurate counts of posts and last or unless forloop.last didn't even work in my case.
@@ -97,6 +102,8 @@ whose solution and explanation can be found [here](https://github.com/christians
 
 - currently working script
 <script src="https://gist.github.com/aiegoo/ba790d6e6ab5e7a3638c26e70cb98795.js"></script>
+
+{% include taglogic.html %}
 
 {% include links.html %}
 
