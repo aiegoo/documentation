@@ -44,9 +44,10 @@ updated: 2021-10-19 9:29 AM
 {% endraw %}
 
 * jquery to swtich between visible and invisible instead of show/hide
-~~~ html
+~~~
 onclick="showTag('#{{tag}}')"
 ~~~~
+{: .language-html}
 
 ~~~html
 <div class="archive-group invisible" id="{{tag}}">
