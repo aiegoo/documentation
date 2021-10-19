@@ -5,6 +5,16 @@ sidebar: other_sidebar
 ---
 ## categories in the post
 <div class="well">
+<style type="text/css">
+.col-md-6 {
+    width: 70% !important;
+}
+@media only screen and (max-width:767px){
+    .col-md-6 {
+        width: 100% !important;
+    }
+}
+</style>
 {% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign category = categories | split:',' | sort %}
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
