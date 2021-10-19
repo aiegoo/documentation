@@ -101,7 +101,7 @@ Follow the position of viewport, auto highlight heading in toc w.r.t the current
 
 ### Fetch starred repository (JSON to `ol`)
 
-Automatically fetch a list of Github starred repositories using Github API and display it under `<ol>` html tag.{% ref "https://stackoverflow.com/questions/55090335/how-to-create-lis-based-on-fetch-result" %}
+Automatically fetch a list of Github starred repositories using Github API and display it under `<ol>` [html tag](https://stackoverflow.com/questions/55090335/how-to-create-lis-based-on-fetch-result)
 
 👉 Check [the codes](https://gist.github.com/dinhanhthi/699aa86bb5fb63fad0a6ab97410b1b5b).
 
