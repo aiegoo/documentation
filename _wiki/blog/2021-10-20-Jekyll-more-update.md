@@ -42,13 +42,13 @@ It may not reload the browser (it only detects the changes)!
 
 ## Anchor links hidden by fixed navigation
 
-If you use table of content for posts in which links starting with `#` link to headings. After jumping, headings are usually hidden by the fixed navigation. Adding below script before `</body>` tag can solve the problem (change value `100` to change where the page jump).{% link "http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to" %}
+If you use table of content for posts in which links starting with `#` link to headings. After jumping, headings are usually hidden by the fixed navigation. Adding below script before `</body>` tag can solve the problem (change value `100` to change where the page jump).[link](http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to)
 
 👉 Check [the codes](https://gist.github.com/dinhanhthi/a08f2e0f77c467b5a08dcd687339a8b7). **Update 03/10/21**: This method is not good. It works only if we click on an `<a>` tag which starts with `#` in the `hlink`. In the case of which inside `<a>` containing an `<svg>`, for example, it won't work!
 
 ### Heading hover anchor links
 
-👉 Check [the codes](https://gist.github.com/dinhanhthi/7c22452738840943dffe3e2a0249cbb7).{% link "https://ben.balter.com/2014/03/13/pages-anchor-links" %}
+👉 Check [the codes](https://gist.github.com/dinhanhthi/7c22452738840943dffe3e2a0249cbb7).[link](https://ben.balter.com/2014/03/13/pages-anchor-links)
 
 ## Back to top button
 
