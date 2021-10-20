@@ -1,6 +1,6 @@
 ---
-title: "Javascript pages"
-tagName: javascript
+title: "Books pages"
+tagName: books
 search: exclude
 permalink: tag_books.html
 sidebar: mydoc_sidebar
