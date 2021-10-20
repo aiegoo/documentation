@@ -85,7 +85,8 @@ $(document).keydown(function() {
   if(event.keyCode == 191) {
      $('#search-input').focus();
      return false;
-  }elseif(event.keycode == 27) {
+  }
+  if(event.keycode == 27) {
      $('#search-input').blur();
      return false;  
   }
