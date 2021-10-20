@@ -1870,14 +1870,6 @@ li.scroll-nav_item a:before {
 .scroll-nav__link {
     color: #0645ad;
     text-decoration: none;
-    content: counters(item, ".");
-    counter-increment: item;
-    color: var(--color-faded);
-    margin-right: 6px;
-    width: 10px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
 /*       display: block;
     margin: 0 auto;
     padding-left: 42px; */
