@@ -8,6 +8,8 @@ sidebar: mydoc_sidebar
 permalink: mydoc_pipeline.html
 folder: mydoc
 ---
+## Thi link
+[contents_moved](/2021-10-21-Bash-cli.html)
 
 ### copying a same file over to multiple location
 
