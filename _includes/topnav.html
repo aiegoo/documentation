@@ -93,6 +93,8 @@ $(document).keydown(function(e) {
 $(document).keydown(function(e) {
   // release
   if(event.key === "Escape") {
+    e.stopPropagation();
+    e.preventDefault();
     divRes.style.display = "none";
     searchInput.blur();
     window.location.reload();
