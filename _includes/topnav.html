@@ -87,7 +87,7 @@ checkInInput = document.activeElement == searchInput;
 $(document).keydown(function(e) {
   if(event.keyCode == 191) {
      searchInput.focus();
-     return false;
+     
   }
 });
 $(document).keydown(function(e) {
@@ -95,6 +95,7 @@ $(document).keydown(function(e) {
   if(event.key === "Escape") {
     divRes.style.display = "none";
     searchInput.blur();
+    return false;
   }
 });
 </script>
