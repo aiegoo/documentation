@@ -82,8 +82,9 @@
 </nav>
 <script>
 var divRes = document.getElementById("ul#results-container");
-$(document).keydown(function() {
-  if(event.keyCode == 191) {
+checkInInput = document.activeElement == searchInput;
+$(document).keydown(function(e) {
+  if(e.keyCode == 191) {
      $('#search-input').focus();
      return false;
   }
