@@ -22,13 +22,13 @@ updated: 2021-10-20 03:30
 {:toc}
 
 ## Thi
-/{{ page.fileSlug }}
+<li>/{{ page.fileSlug }}</li>
 
 ## Install NodeJS & NPM
 
 ### Install multiple versions
 
-First, need to [install nvm](https://github.com/nvm-sh/nvm). Run the line of `curl` and then run/add-to-zsh the line of `export`.
+First, need to [install nvm](https://github.com/nvm-sh/nvm). Run the line of `curl` and then run/add-to-bash the line of `export`.
 
 ::: warning
 Below commands are mostly for Linux/MacOS users.
@@ -238,6 +238,6 @@ npm i --save npm-run-all
 
 {% include links.html %}
 
-{% include commento.html %}
+{% include facebook.html %}
 
 {{site.data.alerts.hr_shaded}}
