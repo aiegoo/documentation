@@ -41,8 +41,7 @@ updated: 2021-10-21 04:32
 ### reading progress bar inside topnav
 - html tag and css were inserted in topnav.html
 - code snippets for jquery can be found in my gist (search for reading-progress)
-
-[jquery-link for scroll](https://gist.github.com/aiegoo/a20c01dd73c6da94ff2afbeaddfe643e)
+- [jquery-link for scroll](https://gist.github.com/aiegoo/a20c01dd73c6da94ff2afbeaddfe643e)
 
 ### Automatically reload page if js file changes
 
