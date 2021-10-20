@@ -92,13 +92,9 @@ $(document).keydown(function(e) {
 });
 
 $(document).keydown(function(e) {
-  if(event.key === "Enter") {
-    e.stopPropagation();
-    e.preventDefault();
-  }  
   // release
-  if (event.key === 27 ) {
-    $('#search-demo-container ul#results-container').style.display = "none";
+  if (event.key == 27 ) {
+    $('#results-container').style.display = "none";
     searchInput.blur();
   }
 };
