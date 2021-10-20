@@ -89,14 +89,10 @@ $(document).keydown(function(e) {
      $('#search-input').focus();
      return false;
   }
-});
-
-$(document).keydown(function(e) {
-  // release
-  if (event.key == 27 ) {
+  if (event.keyCode == 27 ) {
     $('#results-container').style.display = "none";
     searchInput.blur();
   }
-};
+});
 </script>
 {% comment %} Copyright  {% endcomment %}
