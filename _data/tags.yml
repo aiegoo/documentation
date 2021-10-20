@@ -91,3 +91,6 @@ allowed-tags:
   - docker
   - update
   - npm
+  - ubuntu
+  - machine-learning
+  - tensorflow
