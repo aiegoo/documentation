@@ -23,15 +23,6 @@ updated: 2021-10-20 16:57
 
 ## Thi
 
----
-layout: post
-title: "Fresh Windows 10 Installation"
-tags: [Others, Fresh Installation, Windows, Collection]
-toc: true
-icon: windows.svg
-keywords: "windows 10 reinstall install reset application softs need to do k380 keyboard logitech"
----
-
 This is my personal list of to-do things after reinstall Windows.
 
 👉 Note: [Ubuntu / Pop!_OS fresh start](/fresh-installation-ubuntu).
