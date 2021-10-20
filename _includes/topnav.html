@@ -90,7 +90,7 @@ $(document).keydown(function(e) {
      return false;
   }
 });
-searchInput.onkeydown(function(e) {
+$(document).onkeydown(function(e) {
   // release
   if(event.key === "Escape") {
     divRes.style.display = "none";
