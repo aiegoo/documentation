@@ -127,10 +127,16 @@ Automatically fetch a list of Github starred repositories using Github API and d
 
 ## prepending-file
 
-```
+``` bash
 find . -name "*.md" -print | while read fn; do echo fixing $fn; cat .test.txt "$fn" > $fn.modified; mv $fn.modified $f done
 ```
 I have copied a test.txt file with a frontmatter into the first line of a file.
+
+``` bash
+sed -n '/aa/,/fff/p' file1 > tmp
+sed '1 r tmp' file2
+```
+
 {% include taglogic.html %}
 
 {% include links.html %}
