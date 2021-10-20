@@ -91,14 +91,14 @@ $(document).keydown(function(e) {
   }
 });
 
-searchInput.onkeydown = (e) => {
-  if (e.key === "Enter") {
+$(document).keydown(function(e) {
+  if (event.key === "Enter") {
     e.stopPropagation();
     e.preventDefault();
   }  
   // release
-  if (e.key === "Escape") {
-    divRes.style.display = "none";
+  if (event.key === 27 ) {
+    $('#search-demo-container ul#results-container').style.display = "none";
     searchInput.blur();
   }
 };
