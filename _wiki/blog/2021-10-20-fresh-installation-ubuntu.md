@@ -28,7 +28,7 @@ The basic steps I often do every time I install a new Ubuntu system. The order o
 👉 Note: [Linux](/linux-tips/)
 👉 Note: [Windows fresh start](/2021-10-20-Windows-fresh-install.html)
 👉 Note: [Mac fresh start](/2021-10-20-fresh-install-macos.html)
-👉 Note: [Bash](/bash-command-line/)
+👉 Note: [Bash](/2021-10-21-Bash-cli.html)
 
 :::info
 Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only for Pop!\_OS.
