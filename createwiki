@@ -46,7 +46,7 @@ layout: post
 title: "${title}"
 name: "${wiki}"
 tags: [$tag]
-tagName: [$tagName]
+tagName: $tagName
 permalink: ${fileName}-${wiki}.html
 sidebar: other_sidebar
 folder: blog
