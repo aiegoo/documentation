@@ -37,7 +37,8 @@ updated: 2021-10-21 04:32
   - adapt existing scripts for createwiki and add awk/sed bash cli to insert each file in the same/subdirectory 
   - I have used a bash script in similar case where I prepend contents in a file to every file in the directory.
   - [code_snippets](#prepending-file)
-### reading progress bar inside nav
+
+### reading progress bar inside topnav
 - html tag and css were inserted in topnav.html
 - code snippets for jquery can be found in my gist (search for reading-progress)
 
