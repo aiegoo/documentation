@@ -83,7 +83,7 @@ nvm uninstall 12.13.0
 
 ### Single version
 
-:point_right: Install NodeJS and NPM: [Windows & MacOS](https://nodejs.org/en/download), [Linux](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions).
+👉 Install NodeJS and NPM: [Windows & MacOS](https://nodejs.org/en/download), [Linux](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions).
 
 ::: col-2-equal
 ``` bash
