@@ -18,7 +18,7 @@ sidebar: other_sidebar
     }
 }
 </style>
-    <h6><a href="https://stackoverflow.com/tags?tab=popular">stackoverflow tag 페이지</a> 에서 인기도가 높은 결과를 검색 할 수 있습니다.</h6>
+    <h6><a href="https://stackoverflow.com/tags?tab=popular">stackoverflow tag 페이지</a> 에서 해당tag의 인기도 결과를 검색 할 수 있습니다.</h6>
     {% assign tagMap = site.pages %}
     {% assign tagList = site.data.tags.allowed-tags | sort_natural %}
     {% assign counter = '0' %}
