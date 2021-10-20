@@ -1830,6 +1830,14 @@ a.wiki-previous:hover {
 
 .scroll-nav__item {
     margin-bottom: 5px;
+    content: counters(item, ".");
+    counter-increment: item;
+    color: var(--color-yellow);
+    margin-right: 6px;
+    width: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 li.scroll-nav_item a:before {
