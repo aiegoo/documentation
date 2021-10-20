@@ -22,7 +22,7 @@ updated: 2021-10-20 03:30
 {:toc}
 
 ## Thi
-<li>/{{ page.fileSlug }}</li>
+<li>/{{ page.slug }}</li>
 
 ## Install NodeJS & NPM
 
@@ -237,7 +237,5 @@ npm i --save npm-run-all
 {% include taglogic.html %}
 
 {% include links.html %}
-
-{% include facebook.html %}
 
 {{site.data.alerts.hr_shaded}}
