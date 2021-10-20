@@ -24,7 +24,9 @@ updated: 2021-10-20 13:10
 
 ### currently working research configuration
 - original script from Thi
+
 [see_below](#Thi)
+
 ## About search
 The search is configured through the search.json file in the root directory. The search is a simple search that looks at content in pages. It looks at titles, summaries, keywords, and tags.
 
@@ -134,6 +136,7 @@ Where you see `{url}` and `{title}`, the search is retrieving the values for the
 Overall, the built-in search only works for small documentation projects. If you have more robust search needs, consider integrating [Google Custom Search](https://cse.google.com/cse/), [Algolia](http://algolia.com), or [Swifttype](http://swiftype.com).
 
 ## Thi
+
 <script src="https://gist.github.com/aiegoo/bbce47a132bbccba2950e4232be06ad3.js"></script>
 
 {% include taglogic.html %}
