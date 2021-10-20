@@ -86,15 +86,15 @@ var searchInput = document.getElementById("search-input");
 checkInInput = document.activeElement == searchInput;
 $(document).keydown(function(e) {
   if(event.keyCode == 191) {
-     searchinput.focus();
+     searchInput.focus();
      return false;
   }
 });
-searchInput.onkeydown = (e) => {
+searchInput.onkeydown(function) {
   // release
   if (e.key === "Escape") {
     divRes.style.display = "none";
-    inputSearch.blur();
+    searchInput.blur();
   }
 };
 </script>
