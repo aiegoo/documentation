@@ -86,11 +86,11 @@ var searchInput = document.getElementById("search-input");
 checkInInput = document.activeElement == searchInput;
 $(document).keydown(function(e) {
   if(event.keyCode == 191) {
-     $('#search-input').focus();
+     searchInput.focus();
      return false;
   }
   if (event.keyCode == 27 ) {
-    $('#results-container').style.display = "none";
+    divRes.style.display = "none";
     searchInput.blur();
   }
 });

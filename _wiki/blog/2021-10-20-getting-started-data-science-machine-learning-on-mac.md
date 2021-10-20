@@ -2,7 +2,7 @@
 layout: post
 title: "basic setup using mac's new gpu"
 name: "getting-started-data-science-machine-learning-on-mac"
-tags: [machine-learning tensorflow]
+tags: [machine-learning, tensorflow]
 tagName: machine-learning
 permalink: 2021-10-20-getting-started-data-science-machine-learning-on-mac.html
 sidebar: other_sidebar
@@ -25,9 +25,7 @@ updated: 2021-10-20 17:25
 
 This is my personal list of to-do things for a new Macbook.
 
-👉 Note: [Mac fresh start](/fresh-install-macos/).
-
-👉 [My dockerfiles](https://github.com/dinhanhthi/my-dockerfiles/tree/master/docker-ai) on Github.
+👉 Note: [Mac fresh start](/2021-10-20-fresh-install-macos.html).
 
 ## Install
 
