@@ -31,6 +31,8 @@ if [ -d "${TAGDIR}" ]; then
     read title
     echo "Tag name is:"
     read tag
+    echo "tagName for taglogic is:"
+    read tagName
     echo "summarize:"
     read summary
     echo "Place a category:"
@@ -44,6 +46,7 @@ layout: post
 title: "${title}"
 name: "${wiki}"
 tags: [$tag]
+tagName: $tagName
 permalink: ${fileName}-${wiki}.html
 sidebar: other_sidebar
 folder: blog

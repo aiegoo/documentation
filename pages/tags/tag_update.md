@@ -1,11 +1,12 @@
 ---
-title: "Books pages"
-tagName: books
+title: "Update pages"
+tagName: update
 search: exclude
-permalink: tag_books.html
+permalink: tag_update.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
+
 {% include taglogic.html %}
 
 {% include links.html %}

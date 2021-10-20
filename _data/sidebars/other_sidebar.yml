@@ -20,6 +20,9 @@ entries:
     - title: tag cloud
       url: /tag.html
       output: pdf, web
+    - title: taglogic
+      url: /tags.html
+      output: pdf, web
     - title:
       url: /tocpage.html
       output: pdf

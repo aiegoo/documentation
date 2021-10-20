@@ -80,5 +80,12 @@
         </div>
         <!-- /.container -->
 </nav>
-
+<script>
+$(document).keydown(function() {
+  if(event.keyCode == 191) {
+     $('#search-input').focus();
+     return false;
+  }
+});
+</script>
 {% comment %} Copyright  {% endcomment %}

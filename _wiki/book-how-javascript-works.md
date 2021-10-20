@@ -448,7 +448,7 @@ const {anhThi: {age: userAge, email: userEmail}} = user;
 
 Assign Variables from Arrays,
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```js
 const [a, b] = [1, 2, 3, 4, 5, 6];
@@ -507,7 +507,7 @@ To access `"CD"`: `ourMusic[0].formats[0]`.
 
 Check [more statements](https://www.w3schools.com/jsref/jsref_statements.asp).
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```js
 while (<conditions>){
