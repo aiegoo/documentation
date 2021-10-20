@@ -23,6 +23,20 @@ updated: 2021-10-21 04:32
 
 ## Thi
 
+### how to automate adding frontmatters 
+> specific to files with contents only
+> example, drones guide files in this sites
+
+[sof](https://stackoverflow.com/questions/46423572/append-a-file-in-the-middle-of-another-file-in-bash)
+
+- issues
+  - it's important to keep the original file name due to existing file links
+  - then, I will have to add frontmatters prepend to existing contents, but I have more scripts after frontmatters to be generated (ex, include scripts)
+  - bash should generate some time data in date and updated parameters, in additon to other bash variables suc as tags tagName etc.
+- solution
+  - adapt existing scripts for createwiki and add awk/sed bash cli to insert each file in the same/subdirectory 
+  - I have used a bash script in similar case where I prepend contents in a file to every file in the directory.
+  - [code_snippets](#prepending-file)
 ### reading progress bar inside nav
 - html tag and css were inserted in topnav.html
 - code snippets for jquery can be found in my gist (search for reading-progress)
@@ -111,6 +125,12 @@ Automatically fetch a list of Github starred repositories using Github API and d
 
 👉 Check [the codes](https://gist.github.com/dinhanhthi/699aa86bb5fb63fad0a6ab97410b1b5b).
 
+## prepending-file
+
+```
+find . -name "*.md" -print | while read fn; do echo fixing $fn; cat .test.txt "$fn" > $fn.modified; mv $fn.modified $f done
+```
+I have copied a test.txt file with a frontmatter into the first line of a file.
 {% include taglogic.html %}
 
 {% include links.html %}
