@@ -16,12 +16,18 @@ toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
 date: 2021-10-20T02:32:00 +0900
-updated: 2021-10-20 02:32
+updated: 2021-10-21 04:32
 ---
 * TOC
 {:toc}
 
 ## Thi
+
+### reading progress bar inside nav
+- html tag and css were inserted in topnav.html
+- code snippets for jquery can be found in my gist (search for reading-progress)
+
+[jquery-link for scroll](https://gist.github.com/aiegoo/a20c01dd73c6da94ff2afbeaddfe643e)
 
 ### Automatically reload page if js file changes
 
