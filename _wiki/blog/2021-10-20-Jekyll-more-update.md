@@ -2,7 +2,7 @@
 layout: post
 title: "more to-dos or mini projects relating this jekyll site"
 name: "Jekyll-more-update"
-tags: [jekyll]
+tags: [jekyll, update]
 tagName: [update]
 permalink: 2021-10-20-Jekyll-more-update.html
 sidebar: other_sidebar
