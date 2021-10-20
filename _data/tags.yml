@@ -90,3 +90,4 @@ allowed-tags:
   - device
   - docker
   - update
+  - npm
