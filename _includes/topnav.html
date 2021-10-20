@@ -90,13 +90,13 @@ $(document).keydown(function(e) {
      return false;
   }
 });
-searchInput.onkeydown(function) {
+searchInput.onkeydown(function(e) {
   // release
-  if (e.key === "Escape") {
+  if(event.key === "Escape") {
     divRes.style.display = "none";
     searchInput.blur();
   }
-};
+});
 </script>
 {% comment %} Copyright  {% endcomment %}
 
