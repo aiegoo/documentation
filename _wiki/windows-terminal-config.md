@@ -57,7 +57,7 @@ latex: false
 * 한가지 더 추천드리는 설정은 PowerShell 프롬프트 설정입니다. 
 * [Oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh#themes) 저장소에 가시면 몇가지 theme 예시가 있는데  
 * 아래 제 Powershell 설정을 보시면 `프롬프트 부분`은 위에서 나온 부분과는 좀 틀린데.. 
-![myPowerShell 그림]( /wiki-img/2020/windows-terminal-01.png)
+![myPowerShell 그림](wiki-img/2020/windows-terminal-01.png)
 * 이 부분은 `wt`의 설정이 아닌, PowerShell의 별도 설정입니다.
 
 {% include links.html %}
