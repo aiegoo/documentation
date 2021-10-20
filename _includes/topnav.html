@@ -81,14 +81,16 @@
         <!-- /.container -->
 </nav>
 <script>
+var divRes = document.getElementById("ul#results-container");
 $(document).keydown(function() {
   if(event.keyCode == 191) {
      $('#search-input').focus();
      return false;
   }
-  if(event.keycode == 27) {
-     $('#search-input').blur();
-     return false;  
+    // release
+  if (e.key === "Escape") {
+    divRes.style.display = "none";
+    $('#search-input').blur();
   }
 });
 </script>
