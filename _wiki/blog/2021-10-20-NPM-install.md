@@ -2,7 +2,7 @@
 layout: post
 title: "npm install cheatsheet"
 name: "NPM-install"
-tags: [npm]
+tags: npm
 tagName: web
 permalink: 2021-10-20-NPM-install.html
 sidebar: other_sidebar
