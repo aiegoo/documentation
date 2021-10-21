@@ -143,7 +143,7 @@ They say it brings full firewall functionality to virtualized
 environments to secure data center traffic and multi-tenant environments.
 I think that's pretty much what I need.
 
-Cisco does party hard. They charge you and it can get quite pricey. :cry: They predefine
+Cisco does party hard. They charge you and it can get quite pricey. They predefine
 the instances you can select which does not fall under the AWS free usage tier.
 As I write this, there is a 5-day trial and thereafter a charge of \$0.69 per hour.
 
