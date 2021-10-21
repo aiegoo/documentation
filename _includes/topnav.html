@@ -1,6 +1,6 @@
 <!-- Navigation -->
 <style>
-.nav .reading-progress-container {
+.reading-progress-container {
         padding-bottom: 1px;
         background: #ffd479;
         width: 100%;
@@ -9,17 +9,19 @@
         z-index: 9999;
         left: 0;
 }
-nav .reading-progress-container #reading-progress {
-        /*border-bottom:2px solid #ffd479;*/
+.reading-progress-container #reading-progress {
+        border-bottom:2px solid #ffd479;
         width:100vw;
         height: 2px;
         will-change:transform;
         pointer-events:none;
 }
-nav .reading-progress-container #reading-progress {
+.reading-progress-container #reading-progress {
     top: 2px;
 }
 </style>    
+<!-- reading progress bar -->
+<div class="reading-progress-container"><div id="reading-progress" aria-hidden="true"><div class="progress-bar"></div></div></div>    
 <nav class="navbar navbar-inverse navbar-static-top fixed-top">
     <div class="container topnavlinks">
         <div class="navbar-header">
