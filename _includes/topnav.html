@@ -84,8 +84,8 @@
         padding-bottom: 1px;
         background: #282a36;
         width: 100%;
-        position: absolute;
-        bottom: 0;
+        position: fixed;
+        top: -51px;
         z-index: 9999;
         left: 0;
 }
@@ -95,6 +95,7 @@ nav .reading-progress-container #reading-progress {
         transform:translate(-100vw,0);
         will-change:transform;
         pointer-events:none;
+        top: -51px !important;
 }
 nav .reading-progress-container #reading-progress.show {
     top: 10px;
@@ -112,9 +113,9 @@ $(window).bind("scroll", () => {
   let percentageScrolled = Math.round(scrollPosition / scrollHeight * 100);
   if (percentageScrolled > 100) percentageScrolled = 100;
   if ($(window).scrollTop() > 55) {
-    $(".reading-progress-container #reading-progress").addClass("show");
+    $(".reading-progress-container").addClass("show");
   } else {
-    $(".reading-progress-container #reading-progress").removeClass("show");
+    $(".reading-progress-container").removeClass("show");
   }
   $(".reading-progress-container .progress-bar").css(
   "width",
