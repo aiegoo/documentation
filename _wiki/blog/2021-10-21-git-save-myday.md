@@ -49,7 +49,7 @@ We can also page through commits that have files that have been deleted. These f
 
 git lg --diff-filter=D --summary
 <style>
-    .emoji {
+    img.emoji {
         font-size: 1em;
     }
 </style>
