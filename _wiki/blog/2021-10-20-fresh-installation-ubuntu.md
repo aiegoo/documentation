@@ -87,11 +87,11 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
 
     In case you wanna hide some options in the boot manager with rEFInd, you can use [[-]] button to hide it.
 
-    <div ><div class="hsbox">
+    <div markdown="1"><div class="hsbox">
     <div class="hs__title">
     Old method
     </div>
-    <div class="hs__content">
+    <div class="hs__content" markdown="1">
 
     [**Pop!_OS**] **Dual boot with Windows** and others Linux distro: different from Ubuntu (using **grub**), Pop!\_OS uses **systemd-boot** -> follow [this guide](https://pop-planet.info/forums/threads/copy-the-microsoft-bootloader-into-pops-efi-beginners-guide.357/).
 
@@ -117,7 +117,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     ```
 
     </div>
-    </div>
+    </div></div>
 
 11. Make **Alt-Tab** show windows instead of applications: change in Settings > Keyboards > Custom keyboards > Switch windows. Gnome: install [this one](https://extensions.gnome.org/extension/1437/current-screen-only-for-alternate-tab/) to switch between windows on current screen only.
 12. [**Optional**] Make emojis showing up
