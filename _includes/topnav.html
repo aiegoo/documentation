@@ -11,7 +11,7 @@
 }
 .reading-progress-container #reading-progress {
         /*border-bottom:2px solid #ffd479;*/
-        background: #ffd479;
+        background: #8fca66cf;
         width:100vw;
         height: 2px;
         will-change:transform;
@@ -109,7 +109,7 @@
 <script>
 $(window).bind("scroll", () => {
   // show percentage of progress
-  const scrollHeight = $(document).height() - 300; // using -200 to denote footer height
+  const scrollHeight = $(document).height() - 200; // using -200 to denote footer height
   const scrollPosition = $(window).height() + $(window).scrollTop();
 
   let percentageScrolled = Math.round(scrollPosition / scrollHeight * 100);
