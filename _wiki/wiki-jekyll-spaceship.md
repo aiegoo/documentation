@@ -382,6 +382,7 @@ Escaped:
   * [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908) : github에서 사용하는 emoji 목록
   * [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md) : 이모지 치트 시트 
 * I give this plugin two :+1:!
+* [my_gist](https://gist.github.com/aiegoo/5e16b9e7c2d56681c43caa03208982f1)
  
 <style>
 .emoji-size img { font-size: 4rem;}
@@ -399,6 +400,17 @@ Escaped:
     * 폰트 사이즈를 재 설정해주면 emoji size를 변경할 수 있음!!
     * [stackoverflow에 이 건으로 질문을 올리고 자문자답함](https://stackoverflow.com/a/65550809/9457247)...:sweat_smile:
 
+- example
+### 8.1 Emoji Usage :+1:
+
+* I give this plugin two :+1:!
+
+<style>
+.emoji-big-size img {font-size: 4rem;}
+</style>
+
+{: .emoji-big-size}
+* I give this plugin two :+1:!
 
 ## 9. Modifying Element Usage
 
