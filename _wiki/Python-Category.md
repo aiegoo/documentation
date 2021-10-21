@@ -5,7 +5,7 @@ permalink: Python-Category.html
 sidebar: other_sidebar
 collection: wiki
 summary: " 카테고리 2단계 (끝) "
-tags: [wiki, re2, regex, latex, mathjax]
+tags: [python]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 2:17 PM
@@ -17,7 +17,7 @@ latex: false
 * TOC
 {:toc}
 
-# 주요 사이트
+# python test
 
 * [Python.org 홈](https://www.python.org/)
 
