@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "playing detectives to restore my sanity when something is terribly gone wrong"
+title: "playing detectives to restore my sanity when something terribly wrong"
 name: "git-save-myday"
 tags: [git]
 tagName: git
@@ -8,7 +8,7 @@ permalink: 2021-10-21-git-save-myday.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
-categories: 911
+categories: emergency
 keywords: "git restore reset revert rev list checkout name status"
 summary: "Thu, Oct 21, 21, refactor move delete and remove differ-filter rev-list to restore lost files"
 excerpt_separator: <!--more-->
