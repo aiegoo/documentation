@@ -4,7 +4,7 @@ title: "playing detectives to restore my sanity when something is terribly gone 
 name: "git-save-myday"
 tags: [git]
 tagName: git
-permalink: 2021-10-21-git-save-myday.html
+permalink: 021-10-21-git-save-myday.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
