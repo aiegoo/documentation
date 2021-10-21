@@ -55,7 +55,7 @@ git lg --diff-filter=D --summary
     }
 </style>
 ``` diff
-:star: * 151ef7f |  Something destructive with my about page (4 weeks ago) [Clarice Bouwer]
+* 151ef7f |  Something destructive with my about page (4 weeks ago) [Clarice Bouwer]
 |
 |  delete mode 100644 src/Components/About/Contact/index.js
 :point_right: |  delete mode 100644 src/pages/about.js
@@ -64,7 +64,7 @@ git lg --diff-filter=D --summary
 * 1410b48 |  Generate articles (4 months ago) [Clarice Bouwer]
 |
 |  delete mode 100644 build/pages-article.js
-...
+
 * 23cc5dc |  Delete old themes (4 months ago) [Clarice Bouwer]
 |
 |  delete mode 100644 src/Components/Themes/Dark.js
@@ -106,7 +106,7 @@ This is crappy so we are going to take these results and use them as arguments i
 ``` bash
 git rev-list HEAD -- src/pages/about.js | xargs git show $1 --name-status
 $ git rev-list HEAD -- src/images/about/people.jpg | xargs git show $1 --name-status
-:star: commit faed0b3ef95d23a2f465eeedb5be8da0ece19075
+commit faed0b3ef95d23a2f465eeedb5be8da0ece19075
 Author: Clarice Bouwer <cbillowes@gmail.com>
 Date:   Tue May 4 20:24:05 2021 +0400
 
@@ -154,10 +154,10 @@ git reset --soft HEAD~1
 Deleted and then made more commits. Decide how far back you want to go to restore this file. Each one will be an incremented number starting from 1. ~ indicates that you are going back in time. Use the commit hash where the file was deleted and add this number to the end. faed0b3ef95d23a2f465eeedb5be8da0ece19075~1 Alternatively end the hash with a caret ^ to go to its previous commit.
 
 ```bash
-### go back in time
+# go back in time
 git checkout <deletion commit hash>~1 -- <filename>
 
-### another way to retrieve the file using the previous commit
+# another way to retrieve the file using the previous commit
 git checkout <deletion commit hash>^ <filename>
 ```
 Deleted and then pushed that commit.
