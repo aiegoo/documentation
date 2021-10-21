@@ -79,19 +79,30 @@
         </div>
         </div>
         <!-- /.container -->
-        <style>
-        .nav .reading-progress-container {
-                padding-bottom: 1px;
-                background: #282a36;
-                width: 100%;
-                position: absolute;
-                bottom: 0;
-                z-index: 9999;
-                left: 0;
-        }
-        </style>
+<style>
+.nav .reading-progress-container {
+        padding-bottom: 1px;
+        background: #282a36;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 9999;
+        left: 0;
+}
+nav .reading-progress-container #reading-progress{
+        border-bottom:2px solid #ffd479;
+        width:100vw;
+        transform:translate(-100vw,0);
+        will-change:transform;
+        pointer-events:none;
+}
+</style>
+
         <div class="reading-progress-container"><div id="reading-progress" aria-hidden="true" style="transform: translate(-34.6728vw, 0px);"></div></div>
 </nav>
+<script>
+
+</script>
 <script>
 var divRes = document.getElementById("results-container");
 var searchInput = document.getElementById("search-input");
