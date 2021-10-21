@@ -1,5 +1,29 @@
 <!-- Navigation -->
+<style>
+.nav .reading-progress-container {
+        padding-bottom: 1px;
+        background: #282a36;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        left: 0;
+}
+nav .reading-progress-container #reading-progress {
+        border-bottom:2px solid #ffd479;
+        width:100vw;
+        transform:translate(-100vw,0);
+        will-change:transform;
+        pointer-events:none;
+}
+nav .reading-progress-container #reading-progress {
+    top: 2px;
+}
+</style>
+        
 <nav class="navbar navbar-inverse navbar-static-top fixed-top">
+<!-- reading progress bar -->
+    <div class="reading-progress-container"><div id="reading-progress" aria-hidden="true"><div class="progress-bar"></div></div></div>
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -79,30 +103,6 @@
         </div>
         </div>
         <!-- /.container -->
-<style>
-.nav .reading-progress-container {
-        padding-bottom: 1px;
-        background: #282a36;
-        width: 100%;
-        position: fixed;
-        top: -51px;
-        z-index: 9999;
-        left: 0;
-}
-nav .reading-progress-container #reading-progress {
-        border-bottom:2px solid #ffd479;
-        width:100vw;
-        transform:translate(-100vw,0);
-        will-change:transform;
-        pointer-events:none;
-        top: -51px !important;
-}
-nav .reading-progress-container #reading-progress.show {
-    top: 10px;
-}
-</style>
-
-        <div class="reading-progress-container"><div id="reading-progress" aria-hidden="true"><div class="progress-bar"></div></div></div>
 </nav>
 <script>
 $(window).bind("scroll", () => {
