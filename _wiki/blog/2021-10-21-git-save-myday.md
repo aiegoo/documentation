@@ -48,6 +48,11 @@ $ git lg --name-status | grep about
 We can also page through commits that have files that have been deleted. These files are listed in the output.
 
 git lg --diff-filter=D --summary
+<style>
+    .emoji {
+        font-size: 1em;
+    }
+</style>
 ...
 :star: * 151ef7f |  Something destructive with my about page (4 weeks ago) [Clarice Bouwer]
 |
