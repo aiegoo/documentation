@@ -89,12 +89,15 @@
         z-index: 9999;
         left: 0;
 }
-nav .reading-progress-container #reading-progress{
+nav .reading-progress-container #reading-progress {
         border-bottom:2px solid #ffd479;
         width:100vw;
         transform:translate(-100vw,0);
         will-change:transform;
         pointer-events:none;
+}
+nav .reading-progress-container #reading-progress.show {
+    top: 0;
 }
 </style>
 
