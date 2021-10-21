@@ -97,14 +97,30 @@ nav .reading-progress-container #reading-progress {
         pointer-events:none;
 }
 nav .reading-progress-container #reading-progress.show {
-    top: 0;
+    top: 10px;
 }
 </style>
 
         <div class="reading-progress-container"><div id="reading-progress" aria-hidden="true" style="transform: translate(-34.6728vw, 0px);"></div></div>
 </nav>
 <script>
+$(window).bind("scroll", () => {
+  // show percentage of progress
+  const scrollHeight = $(document).height() - 300; // using -200 to denote footer height
+  const scrollPosition = $(window).height() + $(window).scrollTop();
 
+  let percentageScrolled = Math.round(scrollPosition / scrollHeight * 100);
+  if (percentageScrolled > 100) percentageScrolled = 100;
+  if ($(window).scrollTop() > 55) {
+    $(".reading-progress-container").addClass("show");
+  } else {
+    $(".reading-progress-container").removeClass("show");
+  }
+  $(".reading-progress-container .progress-bar").css(
+  "width",
+  `${percentageScrolled}%`);
+
+});
 </script>
 <script>
 var divRes = document.getElementById("results-container");
