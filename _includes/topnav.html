@@ -20,6 +20,9 @@
 .reading-progress-container #reading-progress {
     top: 2px;
 }
+.progress-bar {
+    background-color: #629043 !important;
+}
 </style>    
 <!-- reading progress bar -->
 <div class="reading-progress-container"><div id="reading-progress" aria-hidden="true"><div class="progress-bar"></div></div></div>    
@@ -65,9 +68,8 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ folder.title }}<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         {% for folderitem in folder.folderitems %}
-                        {% if folderitem.external_url %}
-                        <li><a href="{{folderitem.external_url}}" target="_blank" rel="noopener">{{folderitem.title}}</a></li>
-                        {% elsif page.url contains folderitem.url %}
+                  
+    background-color: #629043;      {% elsif page.url contains folderitem.url %}
                         <li class="dropdownActive"><a href="{{folderitem.url |  remove: "/"}}">{{folderitem.title}}</a></li>
                         {% else %}
                         <li><a href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
