@@ -50,7 +50,7 @@ We can also page through commits that have files that have been deleted. These f
 git lg --diff-filter=D --summary
 <style>
     img.emoji {
-        font-size: 1em;
+        font-size: 10px;
     }
 </style>
 ...
@@ -146,18 +146,18 @@ Deleted and committed the file. --soft so that you don't lose all your current c
 git reset --soft HEAD~1
 Deleted and then made more commits. Decide how far back you want to go to restore this file. Each one will be an incremented number starting from 1. ~ indicates that you are going back in time. Use the commit hash where the file was deleted and add this number to the end. faed0b3ef95d23a2f465eeedb5be8da0ece19075~1 Alternatively end the hash with a caret ^ to go to its previous commit.
 
-# go back in time
+### go back in time
 git checkout <deletion commit hash>~1 -- <filename>
 
-# another way to retrieve the file using the previous commit
+### another way to retrieve the file using the previous commit
 git checkout <deletion commit hash>^ <filename>
 Deleted and then pushed that commit.
 
-# --no-commit
-# option prevents the command from creating a new commit right away,
-# instead allowing you to choose exactly which of the changes introduced in the old
-# commit you want to revert in your new commit.
+### --no-commit
+This option prevents the command from creating a new commit right away, instead allowing you to choose exactly which of the changes introduced in the old commit you want to revert in your new commit.
+
 git revert --no-commit <commit>
+
 And that's it! 🎉 Let me know if you have better techniques or alternative approaches. It would be great to add them here!
 
 References
