@@ -101,7 +101,7 @@ nav .reading-progress-container #reading-progress.show {
 }
 </style>
 
-        <div class="reading-progress-container"><div id="reading-progress" aria-hidden="true" style="transform: translate(-34.6728vw, 0px);"><div class="progress-bar"></div></div></div>
+        <div class="reading-progress-container"><div id="reading-progress" aria-hidden="true"><div class="progress-bar"></div></div></div>
 </nav>
 <script>
 $(window).bind("scroll", () => {
@@ -112,9 +112,9 @@ $(window).bind("scroll", () => {
   let percentageScrolled = Math.round(scrollPosition / scrollHeight * 100);
   if (percentageScrolled > 100) percentageScrolled = 100;
   if ($(window).scrollTop() > 55) {
-    $(".reading-progress-container").addClass("show");
+    $(".reading-progress-container #reading-progress").addClass("show");
   } else {
-    $(".reading-progress-container").removeClass("show");
+    $(".reading-progress-container #reading-progress").removeClass("show");
   }
   $(".reading-progress-container .progress-bar").css(
   "width",
