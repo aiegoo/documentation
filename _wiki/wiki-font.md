@@ -19,7 +19,7 @@ latex: false
 {:toc}
 
 ## next tasks
-Test it out with [my_copy](aiegoo.github.io/documentation-theme-jekyll)
+Test it out with [my_copy](https://www.aiegoo.github.io/documentation-theme-jekyll)
 
 [___Ascii_Art___](https://www.kammerl.de/ascii/AsciiSignature.php)
 
