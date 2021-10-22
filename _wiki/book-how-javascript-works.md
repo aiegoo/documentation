@@ -210,7 +210,7 @@ console.log(`I'm ${myName}.`); // ES6
 
 ## Basic operators
 
-Check [more operators](https://www.w3schools.com/jsref/jsref_operators.asp) & [more operators with `Math`](https://www.w3schools.com/jsref/jsref_obj_math.asp).
+Check [more operators](https://www.w3schools.com/jsref/jsrautomationef_operators.asp) & [more operators with `Math`](https://www.w3schools.com/jsref/jsref_obj_math.asp).
 
 <div class="col-2-equal">
 
