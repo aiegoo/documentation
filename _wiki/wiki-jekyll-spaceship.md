@@ -4,7 +4,7 @@ layout: post
 permalink: wiki-jekyll-spaceship.html
 sidebar: other_sidebar
 collection: school
-summary: "md/kramdown table, datatable"
+summary: "md/kramdown table, datatable 마크다운 테이블 스타일링"
 tags: [bash, jekyll]
 excerpt_separator: <!--more-->
 date: 2021-09-20 12:42:03 +0900
