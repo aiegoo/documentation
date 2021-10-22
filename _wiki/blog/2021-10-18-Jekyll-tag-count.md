@@ -3,6 +3,7 @@ layout: post
 title: "how to sort and size tagged post sizes"
 name: "Jekyll-tag-count"
 tags: [jekyll]
+tagName: jekyll
 permalink: 2021-10-18-Jekyll-tag-count.html
 sidebar: other_sidebar
 folder: blog
