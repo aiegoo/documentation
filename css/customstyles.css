@@ -2042,6 +2042,11 @@ font-family: 'NanumBarunpen' !important;
 
 }
 
+/* img.emoji size */
+img.emoji {
+    width: 1rem !important;
+}
+
 /* highlight css */
 /*.highlight {
     /* Comment */
@@ -2106,7 +2111,7 @@ font-family: 'NanumBarunpen' !important;
     /* Generic.Subheading & Diff Unified/Comment? */
     /* Generic.Deleted & Diff Deleted */
     /* Generic.Inserted & Diff Inserted */
-}
+/* } */
 /* 
 .highlight .hll {
     background-color: #49483e;
