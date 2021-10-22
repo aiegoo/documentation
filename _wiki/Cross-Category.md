@@ -4,11 +4,11 @@ layout: post
 permalink: Cross-Category.html
 sidebar: other_sidebar
 collection: wiki
-summary: " 카테고리 문서 1단계"
-tags: [web, publishing]
+summary: "regex links Jan Goyvaerts Steven Levithan"
+tags: [regex]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-18 4:30 PM
+updated: 2021-10-22 12:30 PM
 toc: true
 public: true
 parent: [[Tools-Category]] 
