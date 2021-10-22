@@ -1,14 +1,14 @@
 ---
 name: 위키 편집 안내서
 layout: post
-permalink: sed-problem-solving.html
+permalink: wiki-update-guide.html
 sidebar: other_sidebar
 collection: wiki
 summary: "위키의 기본 작성법및 기능 추가 방법"
-tags: [wiki, getting_started]
+tags: [jekyll]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-17 6:27 PM
+updated: 2021-10-22 6:27 PM
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 

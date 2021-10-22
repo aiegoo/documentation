@@ -5,10 +5,10 @@ summary: "bash for windows and linux"
 permalink: sed-problem-solving.html
 sidebar: other_sidebar
 collection: wiki
-tags: [wiki, getting_started]
+tags: [bash, regex]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-17 5:32 PM
+updated: 2021-10-22 5:32 PM
 toc: true
 ---
 
