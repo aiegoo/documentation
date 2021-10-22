@@ -27,7 +27,7 @@ weight: 1
 * TOC
 {:toc}
 
-# Thi
+## Thi
 
 {% assign img-url = '/img/post/js' %}
 
@@ -36,7 +36,7 @@ Quick references for fundamental things in JavaScript.
 :point_right: Notion note: [JS 101](https://www.notion.so/dinhanhthi/JS-101-986f4079607641d49ca8e149a1d29cec).
 [js 101]({{ site.baseurl }}2021-10-19-Javascript-101.html)
 
-## Miscellaneous
+### Miscellaneous
 
 - Using `//` for 1 line comment, `/* */` for multi-line comment.
 - End of each command by `;`.
@@ -123,7 +123,7 @@ import anything from './math_default.js'; // from export default
 
 ## Declare variables & Scopes
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```js
 var varName; // global scope
@@ -141,7 +141,7 @@ oppsGlobal; // returns 5
 
 Difference between `var`, `let` and `const`,
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```js
 var a = 1;
@@ -241,7 +241,7 @@ parseInt("11", 2); // give number 3, "2" is radix
 - **Short-circuit evaluation**: `let a = b || 'Thi';` (if `b` isn't defined yet, `a` takes value `'Thi'`)
 - **Ternary Operator**: `isNightTime ? console.log('Yes!') : console.log('No!');`. We can use multiple nested ternary.
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```js
 if (true){
@@ -277,7 +277,7 @@ You can remove `break;` to apply the same result for multiple cases.
 
 ## Functions
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```js
 // ES6 way
@@ -307,7 +307,7 @@ function <funcName>(<para>){
 }
 ~~~
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 
 <div>
@@ -369,7 +369,7 @@ shiftedElement = arrName.shift() // remove the FIRST element of an array
 
 ## Objects
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```js
 var myObj = {
