@@ -168,4 +168,6 @@ $ git difftool --diff-filter=d
 * 윈도우에 설치하는 프로그램이며 홈페이지는 [이곳](https://www.screentogif.com/)이다.
 * 오픈소스인가? [github](https://github.com/NickeManarin/ScreenToGif)가 있다.
 
+
+{% include taglogic.html %}
 {% include links.html %}
