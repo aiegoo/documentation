@@ -56,7 +56,7 @@ Open the browser (I use [Chrome](https://www.google.com/chrome/)), press <kbd>F1
 - "ES" = "ECMAScript" ~ "Javascript".
 - Most of browsers use ES6 but not all.
 - ES6 = ES2015
-- [JS timeline]({{img-url}}/js_timeline.svg){:target="_blank"}.
+- ![JS timeline]({{img-url}}/js_timeline.svg){:target="_blank"}.
 - **New features**: [Arrow functions](https://www.w3schools.com/js/js_arrow_function.asp), Classes, Modules, Promises, Generators, `let` and `const`.
 - Read [more about ES6 on w3schools](https://www.w3schools.com/js/js_es6.asp).
 
