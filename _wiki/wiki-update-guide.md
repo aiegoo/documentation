@@ -64,7 +64,7 @@ latex: false
     * 복수의 tag를 조사한다면 `tags` 에 `javascript;python` 으로 `;` 구분자를 넣어 구분하는식이다. 
       
 * anonymous quota가 있어 몇번하니까 bad request 에러남
-* 등록하고 써야함 : [내 app 링크](https://stackapps.com/apps/oauth/view/19796)
+* 등록하고 써야함 : [내 app 링크](https://stackapps.com/apps/oauth/view/21155)
 * 대충 등록하면 위의 app 링크 페이지로 리다이렉트 되는데 여기에서 `key`를 요청하는 파라메터중 하나로 넣으면 quota가 풀림.
 
 ### 태그 편집시 참고할 사항
