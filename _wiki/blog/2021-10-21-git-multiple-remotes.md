@@ -3,7 +3,7 @@ layout: post
 title: "working with git remotes"
 name: "git-multiple-remotes"
 tags: [git]
-tagName: automation
+tagName: git, automation
 permalink: 2021-10-21-git-multiple-remotes.html
 sidebar: other_sidebar
 folder: blog

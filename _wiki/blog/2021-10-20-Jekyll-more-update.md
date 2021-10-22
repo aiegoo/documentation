@@ -21,6 +21,11 @@ updated: 2021-10-21 04:32
 * TOC
 {:toc}
 
+## late-discovered issues
+- reading progress-bar disappearing on scroll with some posts (happens on mobile only so far)
+  - [Windows-Termianl-Setting.html](Windows-Termianl-Setting.html)
+  - 
+
 ## Thi
 
 ### how to automate adding frontmatters 

@@ -5,7 +5,8 @@ permalink: git-commands.html
 sidebar: other_sidebar
 collection: wiki
 summary: "git 명령어 상황별 레시피  "
-tags: [windows]
+tags: [git]
+tagName: git
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 3:21 PM
