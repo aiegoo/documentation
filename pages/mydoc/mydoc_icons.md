@@ -13,7 +13,7 @@ folder: images/cats
 <div class="image-gallery-yoga">
 {% assign sorted= site.static_files %}
 {% for file in sorted %}
-  {% if file.path contains include.folder %}
+  {% if file.path contains page.folder %}
     {% if file.extname == '.svg' %}
       {% assign filenameparts = file.path | split: "/" %}
         {% assign filename = filenameparts | last | replace: file.extname, "" %}
