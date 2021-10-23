@@ -89,7 +89,7 @@ This note contains __apps__ and __tools__. For the notes of __bookmarks__ (inter
 
 ## Windows
 
-:point_right: Note: [Windows fresh installation](/fresh-install-windows/).
+:point_right: Note: [Windows fresh installation](/2021-10-20-Windows-fresh-install.html).
 
 - [Big Stretch Reminder](https://monkeymatt.com/bigstretch/) — free simple reminder tool that prompts a user to take regular breaks and helps prevent the symptoms of Repetitive Strain Injury (RSI).
 - [cmder](https://cmder.net/) (Console Emulator) — (__update 11/20__: should use [Windows Terminal with dropdown support](/terminal#windows)) drop-down terminal for windows. My [setting file](https://github.com/dinhanhthi/scripts/blob/master/settings/windows/user-ConEmu.xml).
@@ -105,7 +105,7 @@ This note contains __apps__ and __tools__. For the notes of __bookmarks__ (inter
 ## Linux
 
 :point_right: Note: [Linux](/linux-tips/).
-:point_right: Note: [Ubuntu / Pop!_OS Fresh Installation](/fresh-installation-ubuntu/).
+:point_right: Note: [Ubuntu / Pop!_OS Fresh Installation](/2021-10-20-fresh-installation-ubuntu.html).
 
 - **Cheese** (Appstore) — webcam for linux.
 - **Foliate** (Appstore) — Book reader.
@@ -122,7 +122,7 @@ This note contains __apps__ and __tools__. For the notes of __bookmarks__ (inter
 
 ## MacOS
 
-:point_right: Note: [Fresh installation MacOS](/fresh-install-macos/#applications).
+:point_right: Note: [Fresh installation MacOS](/2021-10-20-fresh-install-macos.html/#applications).
 
 ## Education
 
@@ -169,11 +169,11 @@ This note contains __apps__ and __tools__. For the notes of __bookmarks__ (inter
 
 ## Data Science / Machine Learning
 
-👉 Note: [Resources for DS & ML & DL.](/data-ml-tools-resources/)
+👉 Note: [Resources for DS & ML & DL.](/2021-10-23-data-ml-tools-resources.html)
 
 ## Web Dev tools & frameworks & resources
 
-👉 Note: [Web Dev tools & resources.](/web-dev-tools-resources/)
+👉 Note: [Web Dev tools & resources.](/2021-10-23-web-dev-tools-resources.html)
 
 ## Illustration tools
 
