@@ -1,6 +1,6 @@
 ---
 title: programing robots with ros
-tags: [books, getting_started]
+tags: [books, matlab]
 last_updated: August 18, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "ROS systems are comprised of a large number of independent programs that are constantly communicating with each other, which is designed to encourage reuse of robotics sw within and outside nodes. This loosely coupled structure creates generic modules applicable to hw/sw pipelines."
