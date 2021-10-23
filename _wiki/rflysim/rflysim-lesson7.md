@@ -5,7 +5,7 @@ permalink: rflysim-lesson7.html
 sidebar: other_sidebar
 collection: wiki
 summary: "rflysim course lesson 7"
-tags: [wiki, getting_started, rflysim]
+tags: [rflysim]
 excerpt_separator: <!--more-->
 date: 2021-09-29 14:49:03 +0900
 updated: 2021-09-29 

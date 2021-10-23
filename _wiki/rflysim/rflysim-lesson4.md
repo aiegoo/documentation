@@ -5,7 +5,7 @@ permalink: rflysim-lesson4.html
 sidebar: other_sidebar
 collection: wiki
 summary: "rflysim course process, LED control, Atti control"
-tags: [wiki, getting_started, rflysim]
+tags: [rflysim]
 excerpt_separator: <!--more-->
 date: 2021-09-29 14:46:03 +0900
 updated: 2021-09-29 
