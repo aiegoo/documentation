@@ -23,6 +23,9 @@ updated: 2021-10-24 00:04
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
+## book nodejs npm
+{% include image.html file="bookcover/webdev-nodejs.png" caption="web development with node and express" %}
+
 ## Thi
 
 ## Install NodeJS & NPM
