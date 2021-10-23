@@ -31,7 +31,7 @@ updated: 2021-10-23 11:30
 👉 Note: [My bookmarks.](/2021-10-23-my-bookmarks.html)
 
 ::: info
-This note contains __apps__ and __tools__. For the notes of __bookmarks__ (interesting/useful websites), [check here](/my-bookmarks/).
+This note contains __apps__ and __tools__. For the notes of __bookmarks__ (interesting/useful websites), [check here](/2021-10-23-my-bookmarks.html).
 :::
 
 ## Online tools
