@@ -38,6 +38,9 @@ famous 100 mountains in korea
 
 {% include youtubePlayer.html id=page.youtubeID %}
 
+### future project
+- how to integrate Django (backend) with jekyll (front-end)
+- apply github Actions to automate web-scraping to update the Jekyll pages. (such as weather, exchange rate, or NOTAM notice from ICAO)
 
 ## Python Installation
 
