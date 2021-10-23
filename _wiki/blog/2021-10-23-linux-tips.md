@@ -141,7 +141,7 @@ dpkg-reconfigure lightdm
 lightdm --show-config
 ```
 
-🔅 Save / Load dconf{% external_url "https://bgstack15.wordpress.com/2017/10/04/dconf-save-and-load-from-file/" %}: `~/.config/dconf/user`
+🔅 Save / Load dconf[external_url](https://bgstack15.wordpress.com/2017/10/04/dconf-save-and-load-from-file/): `~/.config/dconf/user`
 
 ``` bash
 # save guake configs to a file
@@ -406,7 +406,7 @@ ifuse /media/$USER/ipad
 
 <div class="p-list" markdown="1">
 
-🔅 How to add existing user to an existing group{% external_url "https://askubuntu.com/questions/79565/how-to-add-existing-user-to-an-existing-group" %}
+🔅 How to add existing user to an existing group[external_url](https://askubuntu.com/questions/79565/how-to-add-existing-user-to-an-existing-group)
 
 ~~~ bash
 sudo usermod -a -G groupName userName
@@ -445,7 +445,7 @@ s = settings;s.matlab.desktop.DisplayScaleFactor
 s.matlab.desktop.DisplayScaleFactor.PersonalValue = 2
 ~~~
 
-🔅 Launching matlab without graphic ui{% external_url "https://blogs.mathworks.com/community/2010/02/22/launching-matlab-without-the-desktop/" %}
+🔅 Launching matlab without graphic ui[external_url](https://blogs.mathworks.com/community/2010/02/22/launching-matlab-without-the-desktop/)
 
 ~~~ bash
 matlab -nodesktop
@@ -720,7 +720,7 @@ sudo apt-get install jstest-gtk
 ```
 :::
 
-If you cannot connect controller to bluetooth,{% external_url "https://askubuntu.com/questions/1038001/xbox-one-controller-ubuntu-18-04" %}
+If you cannot connect controller to bluetooth,[external_url](https://askubuntu.com/questions/1038001/xbox-one-controller-ubuntu-18-04)
 
 ``` bash
 sudo apt install sysfsutils
