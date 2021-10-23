@@ -38,7 +38,8 @@ famous 100 mountains in korea
 - codebase
 <script src="https://gist.github.com/aiegoo/832f95be5714b0cab2b06adfae88074c.js"></script>
 #### screencast
-{% include youtubePlayer.html youtubeID=page.youtubeID %}
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 
 ## Python Installation
