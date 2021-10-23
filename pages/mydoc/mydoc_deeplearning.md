@@ -35,7 +35,10 @@ folder: mydoc
 |  ![image](https://user-images.githubusercontent.com/42961200/83480803-40c81600-a4d7-11ea-92fa-c2ad6ce9eac4.png) |  ![image](https://user-images.githubusercontent.com/42961200/83480002-212fee00-a4d5-11ea-8e25-12b4d0e1f4e4.png) |
 
 > ml pipeline [article_link](https://blogs.nvidia.co.kr/2020/09/11/what-is-mlops/)
-{% include image.html file="mldl/mlpipeline.png" caption="machine learning pipeline" %}
+{% include image.html file="dlml/mlpipeline.png" caption="machine learning pipeline" %}
+
+> MLDLC architecture (same link as above)
+{% include image.html file="dlml/mldlc-architecture.png" caption="machine learning and deep learning operationize arechitecture" %}
 
 ## 500 + 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁
 
