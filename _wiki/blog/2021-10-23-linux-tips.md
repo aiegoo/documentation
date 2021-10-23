@@ -428,11 +428,11 @@ ls -l
 ls -l <file>
 ~~~
 
-{$ raw %}
+
 {{site.data.alerts.note "Check this photo"}}
 ![check ll](/img/post/linux/ll-user.png){:.img-full-100}
 {{sidte.data.alerts.end}}
-{% endraw %}
+
 </div>
 
 ## Matlab
