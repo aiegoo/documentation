@@ -5,7 +5,7 @@ permalink: rflysim-lesson2.html
 sidebar: other_sidebar
 collection: wiki
 summary: "rflysim course Platform Configuration"
-tags: [wiki, getting_started, rflysim]
+tags: [rflysim]
 excerpt_separator: <!--more-->
 date: 2021-09-29 13:42:03 +0900
 updated: 2021-09-29 2:48 PM
