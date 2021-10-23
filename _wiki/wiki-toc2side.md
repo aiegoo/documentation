@@ -5,7 +5,7 @@ permalink: wiki-toc2side.html
 sidebar: other_sidebar
 collection: wiki
 summary: "CSS및 SCSS에 대한 정리"
-tags: [wiki, vim, troubleshooting]
+tags: [web, jekyll
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-18 3:53 AM
