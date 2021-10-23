@@ -5,7 +5,7 @@ permalink: rflysim-lesson3.html
 sidebar: other_sidebar
 collection: wiki
 summary: "controller design/sim platform, psp toolbox, hardware system, HIL "
-tags: [wiki, getting_started, rflysim]
+tags: [rflysim]
 excerpt_separator: <!--more-->
 date: 2021-09-29 14:45:03 +0900
 updated: 2021-09-29 
