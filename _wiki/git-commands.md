@@ -24,6 +24,8 @@ latex: false
 * 레시피 제목은 2단계 제목으로..
 *
 
+## finding the created_at date of the repository
+{% raw %}curl -s https://api.github.com/repos/KhronosGroup/WebGL | grep 'created_at' | cut -d: -f2-{% endraw %}
 ## conflict, overwrite, housekeeping
 ### conflict issue가 많다고 예상될때 다음을,
 
