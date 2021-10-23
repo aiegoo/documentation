@@ -105,8 +105,8 @@ Deactivate
 '''
 
 ## Chan
-### GitHub Action을 사용하여 자동 스크래핑(scraping)과 Push 구현하기
-
+### GitHub Action을 
+- 사용하여 자동 스크래핑(scraping)과 Push 구현하기
 
 
 GitHub 저장소를 생성한 후에 들어가 보면, 탭 메뉴 중에 **Action**이라는 메뉴가 있습니다.
@@ -223,8 +223,9 @@ print('뉴스기사 스크래핑 끝')
 
 ------
 
-### 2. GitHub Action으로 스크래핑 자동 실행 및 Push 하기
-
+### 2. GitHub Action으로 
+- 스크래핑 자동 실행 및 Push 하기
+  
 이렇게 스크래퍼 파일을 만들어 두면, GitHub Action 에서 이 파일을 주기적으로 자동 실행하고 Push 까지 되도록 Workflow를 작성할 수 있습니다.
 
 이것의 작성에 앞서, 해당 저장소에 **requirements.txt** 파일을 푸쉬하도록 하겠습니다.
