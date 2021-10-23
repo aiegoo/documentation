@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "tool resources"
+keywords: "tool resources earning application framework repository gihub package plugins extensions font ligatures useful tools frameworks javascript frameworks library plugins extensions dev tools"
 summary: "Sat, Oct 23, 21, tools for webdev frameworks, drawing, visualization text-editor"
 excerpt_separator: <!--more-->
 toc: true
@@ -24,14 +24,12 @@ updated: 2021-10-23 13:18
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## Thi
-keywords: "tool resources learning application framework repository gihub package plugins extensions font ligatures useful tools frameworks javascript frameworks library plugins extensions dev tools"
----
 
 {% assign img-url = '/img/post/web-dev' %}
 
-👉 Site: [Collection of quick js/html tools.](https://dinhanhthi.github.io/tools/){:target="_blank"}
+👉 Site: [Collection of quick js/html tools.](https://aiegoo.github.io/tools/){:target="_blank"}
 👉 Note: [Resources for DS & ML & DL.](/data-ml-tools-resources/)
-👉 Note: [Useful tools for working & studying.](/good-applications-useful-tools/)
+👉 Note: [Useful tools for working & studying.](/2021-10-23-useful-applications-study-tools.html)
 
 ## URLs
 
