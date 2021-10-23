@@ -429,9 +429,9 @@ ls -l <file>
 ~~~
 
 {$ raw %}
-{% hsbox "Check this photo" %}
+{{site.data.alerts.note "Check this photo"}}
 ![check ll](/img/post/linux/ll-user.png){:.img-full-100}
-{% endhsbox %}
+{{sidte.data.alerts.end}}
 {% endraw %}
 </div>
 
