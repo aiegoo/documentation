@@ -31,6 +31,7 @@ updated: 2021-10-21 04:32
   2. If given a value of 0, the element can be focused via the keyboard and falls into the tabbing flow of the document.
   3. Values greater than 0 create a priority level with 1 being the most important.
   ```
+  - the above tip works in the body tags as the author described, and in the case of topnav being hidden on scroll with javascript, you need more script to add to disable the scroll-trigger so that tabindex gets the priority. I found this is the conflict of priority issues. So be it.
 
 ## Thi
 
