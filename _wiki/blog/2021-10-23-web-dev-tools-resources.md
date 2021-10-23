@@ -28,7 +28,7 @@ updated: 2021-10-23 13:18
 {% assign img-url = '/img/post/web-dev' %}
 
 👉 Site: [Collection of quick js/html tools.](https://aiegoo.github.io/tools/){:target="_blank"}
-👉 Note: [Resources for DS & ML & DL.](/data-ml-tools-resources/)
+👉 Note: [Resources for DS & ML & DL.](/2021-10-23-data-ml-tools-resources.html)
 👉 Note: [Useful tools for working & studying.](/2021-10-23-useful-applications-study-tools.html)
 
 ## URLs

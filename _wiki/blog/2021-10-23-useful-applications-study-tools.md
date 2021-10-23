@@ -26,9 +26,9 @@ updated: 2021-10-23 11:30
 ## Thi
 
 👉 Site: [Collection of quick js/html tools.](https://aiegoo.github.io/tools/){:target="_blank"}
-👉 Note: [Web Dev tools & resources.](/web-dev-tools-resources/)
-👉 Note: [Resources for DS & ML & DL.](/data-ml-tools-resources/)
-👉 Note: [My bookmarks.](/my-bookmarks/)
+👉 Note: [Web Dev tools & resources.](/2021-10-23-web-dev-tools-resources.html)
+👉 Note: [Resources for DS & ML & DL.](/2021-10-23-data-ml-tools-resources.html)
+👉 Note: [My bookmarks.](/2021-10-23-my-bookmarks.html)
 
 ::: info
 This note contains __apps__ and __tools__. For the notes of __bookmarks__ (interesting/useful websites), [check here](/my-bookmarks/).
