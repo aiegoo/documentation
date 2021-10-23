@@ -1,6 +1,6 @@
 ---
 title: Machine learning, deep learning, AI
-tags: [ML, DL, AI, Autonomous ]
+tags: [python, machine-learning]
 last_updated: July 10, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "summary."
