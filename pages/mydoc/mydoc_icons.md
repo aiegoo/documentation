@@ -17,7 +17,7 @@ folder: images/cats
     {% if file.extname == '.svg' %}
       {% assign filenameparts = file.path | split: "/" %}
         {% assign filename = filenameparts | last | replace: file.extname, "" %}
-        <div class="gallery-box"><a href="{{ file.path | relative_url }}" title="{{ filename }}" class="img-gallery"><img src="{{ file.path | relative_url }}">
+        <div class="gallery-box"><a href="{{ file.path | relative_url }}" title="{{ filename }}" class="img-gallery"><img src="{{ file.path | relative_url }}" title="{{ filename }}">
           </a></div>
     {% endif %}
   {% endif %}
