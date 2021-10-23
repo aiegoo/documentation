@@ -24,7 +24,13 @@ updated: 2021-10-21 04:32
 ## late-discovered issues
 - reading progress-bar disappearing on scroll with some posts (happens on mobile only so far)
   - [Windows-Termianl-Setting.html](Windows-Termianl-Setting.html)
-  - 
+- regarding backwarding slash and esc to activate focus in search box, it still requires scrolling to the top to see the search box when I start typing, but I found the solution as follows;
+  ```
+  The tabindex value can allow for some interesting behaviour.
+  1. If given a value of "-1", the element can't be tabbed to but focus can be given to the element programmatically (using element.focus()).
+  2. If given a value of 0, the element can be focused via the keyboard and falls into the tabbing flow of the document.
+  3. Values greater than 0 create a priority level with 1 being the most important.
+  ```
 
 ## Thi
 
