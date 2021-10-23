@@ -10,6 +10,7 @@ folder: mydoc
 youtubeID: B6QEKvzoP2Y
 ---
 
+{{site.data.alerts.callout_warning}}Most of contents below are drafts from my previous collaboration work and yet to be finished{{site.data.alerts.end}}
 ## Rapa dashboard using webscraping.
 ### blackyak :blush:
 famous 100 mountains in korea
