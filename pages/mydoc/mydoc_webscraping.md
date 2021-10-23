@@ -14,9 +14,6 @@ youtubeID: B6QEKvzoP2Y
 ### blackyak :blush:
 famous 100 mountains in korea
 <hr>
-
-### Centre Association of Coding aka ***CCG*** :tm:
-
 ### 한국의 100대 명산 정보 제공용 웹페이지
 - 명산정보 :sunrise_over_mountains:
 - 날씨정보 :umbrella:
@@ -33,7 +30,7 @@ famous 100 mountains in korea
 ### Key Dev Skills
 - Django Framework
 - python API
-- MongoDB
+- MongoDB (not used)
 - Server configuration
 - codebase
 <script src="https://gist.github.com/aiegoo/832f95be5714b0cab2b06adfae88074c.js"></script>
