@@ -1,6 +1,6 @@
 ---
 title: rflysim tltr
-tags: [books, getting_started]
+tags: [books, rflysim, drone]
 last_updated: August 31, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: ""
