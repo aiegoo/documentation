@@ -5,7 +5,7 @@ permalink: 2021-10-01-wiki-magnific-popup.html
 sidebar: other_sidebar
 collection: wiki
 summary: "지킬 블로그에 이미지 확대 기능 추가하기"
-tags: [wiki, getting_started, web, jekyll]
+tags: [web, jekyll]
 excerpt_separator: <!--more-->
 date: 2021-10-01 17:10:03 +0900
 updated: 2021-10-01 5:57 PM
