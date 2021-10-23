@@ -5,11 +5,11 @@ layout: page
 permalink: book-javascript-for-impatient.html
 sidebar: other_sidebar
 collection: wiki
-summary: "코드 구조를 체계적으로 개선하여 효율적인 리팩터링 구현하기 "
+summary: "Exploit the power of modern javascript and avoid the pitfalls "
 tags: [web, regex, javascript]
 excerpt_separator: <!--more-->
 date: 2021-09-19 12:42:03 +0900
-updated: 2021-09-21 12:47 PM
+updated: 2021-10-23 11:23 AM
 toc: true
 public: true
 parent: [[Books-Category]] 
