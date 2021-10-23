@@ -51,7 +51,7 @@ Depend on each theme, you should follow the installation steps given in that the
 
 Sometimes, 11ty takes too much time to build (especially on the task of optimizing images. On my site, it takes almost 10 minutes). You shouldn't use branch `master` to build you site because every time you make a push, Netlify will rebuild your whole site. You should create and use a new branch, so-called `prod` instead.
 
-{% hsbox "**Idea 1** -- manually build but should not use many times" %}
+{% raw %} {% hsbox "**Idea 1** -- manually build but should not use many times" %}
 On Netlify, go to **Site settings** > **Build & deploy**:
 
 {:indent}
@@ -64,11 +64,11 @@ On Netlify, go to **Site settings** > **Build & deploy**:
   - _Production branch_: **prod** (the same as the your created branch)
   - _Deploy previews_: **Don't deploy pull requests** (you don't want someone pull request and it auto make a deploy)
   - _Branch deploys_: **Deploy only the production branch**.
-    {% endhsbox %}
+    {% endhsbox %}{% endraw %}
 
 The weakness of _Idea 1_ is that you let netlify build again your whole site with its resources. That's why it takes too much time! Remember that, you have only 300 free minutes to build.
 
-{% hsbox "**Idea 2** -- build locally and push `_site` only" %}
+{% raw %} {% hsbox "**Idea 2** -- build locally and push `_site` only" %}
 You should know that, even if your site contains only html files, netlify is able to make it live as usual.
 
 1. Working mainly on branch `dev` like in Idea 1.
@@ -88,9 +88,9 @@ You should know that, even if your site contains only html files, netlify is abl
      - _Publish directory_: \_site/
      - _Builds_: Active.
    - **Deploy context**: - _Production branch_: _site_ - _Deploy previews_: Don’t deploy pull requests - _Branch deploys_: Deploy only the production branch
-     {% endhsbox %}
+     {% endhsbox %}{% endraw %}
 
-{% hsbox "Example workflow with dinhanhthi.com" %}
+{% raw %} {% hsbox "Example workflow with dinhanhthi.com" %}
 From the [main repo](https://github.com/dinhanhthi/dinhanhthi.com), I clone to 2 different folders
 
 ```bash
@@ -126,13 +126,13 @@ update_dat
 ```
 
 I saved from 1h of building to 2m of building on netlify with this method!
-{% endhsbox %}
+{% endhsbox %}{% endraw %}
 
 ## Templating
 
 ### SCSS to CSS
 
-{% hsbox "If you use [node-sass](https://www.npmjs.com/package/node-sass)" %}
+{% raw %} {% hsbox "If you use [node-sass](https://www.npmjs.com/package/node-sass)" %}
 
 <div class="col-2-equal">
 
@@ -162,9 +162,9 @@ css/components/....
 <link rel="stylesheet" href="css/main.css" />
 ```
 
-{% endhsbox %}
+{% endhsbox %}{% endraw %}
 
-{% hsbox "If you use [rollup](https://rollupjs.org/guide/en/) (like this site)" %}
+{% raw %} {% hsbox "If you use [rollup](https://rollupjs.org/guide/en/) (like this site)" %}
 
 <div class="col-2-equal">
 
@@ -215,9 +215,9 @@ export default [
 <link rel="stylesheet" href="css/main.css" />
 ```
 
-{% endhsbox %}
+{% endhsbox %}{% endraw %}
 
-{% hsbox "If you use [parcel](https://parceljs.org)" %}
+{% raw %} {% hsbox "If you use [parcel](https://parceljs.org)" %}
 
 <div class="col-2-equal">
 
@@ -267,7 +267,7 @@ import "./../css/main.scss";
 npm start
 ```
 
-{% endhsbox %}
+{% endhsbox %}{% endraw %}
 
 ### Using [`postcss`](https://github.com/postcss/postcss)?
 
@@ -872,7 +872,7 @@ Using [markdown-it-mathjax](https://github.com/classeur/markdown-it-mathjax)
 
 ### KaTeX (my choice)
 
-{% hsbox "KaTeX: Use `markdown-it-katex`" %}
+{% raw %} {% hsbox "KaTeX: Use `markdown-it-katex`" %}{% endraw %}
 Using [markdown-it-katex](https://github.com/iktakahiro/markdown-it-katex/) (use this version only),
 
 ```js
@@ -924,7 +924,7 @@ $$
 
 :::
 
-{% endhsbox %}
+{% endhsbox %}{% endraw %}
 
 In this site, I use [`markdown-it-texmath`](https://www.npmjs.com/package/markdown-it-texmath). I choose this because we can overcome the weakness of `markdown-it-katex` in case of breaking lines in list mode & it's [more flexible](https://goessner.github.io/markdown-it-texmath/index.html) (you can try it online [here](https://goessner.github.io/markdown-it-texmath/markdown-it-texmath-demo.html)).
 
@@ -1205,7 +1205,7 @@ To creata the same code block like above, i.e.,
 Just by using,
 
 ```html {% raw %}
-{% hsbox "Custom Title" %}
+{% raw %} {% hsbox "Custom Title" %}{% endraw %}
 <!-- Custom markdown texts -->
 {% endhsbox %} {% endraw %}
 ```
@@ -1257,12 +1257,12 @@ module.exports = function (eleventyConfig) {
 
 For me, the best choice for search feature in 11ty is using [Elasticlunr](http://elasticlunr.com/) with some customizations.
 
-{% hsbox "Why not others?" %}
+{% raw %} {% hsbox "Why not others?" %}{% endraw %}
 Based on the purpose of **free**, **quick**, **full text** search:
 
 - We don't choose Google's [Programmable Search](https://programmablesearchengine.google.com/) because: it contains ads, not index as we want, difficult to customize with personal theme,...
 - We don't choose paid options like [Agolia](https://www.algolia.com/) because the free option contains very few units. It's absolutely not enough for your need. In case you still want to use it with less consumption, read [this article](https://www.kizu.ru/algolia-search/).
-  {% endhsbox %}
+  {% endhsbox %}{% endraw %}
 
 Because your site becomes bigger in future, you cannot index the whole text of your site (every time you build). **My idea** is to create a custom frontmatter tag called "keywords" which contains all of the important keywords used to determine the content of your posts. Of course, the cons is that you have to put the keywords manually!!
 
