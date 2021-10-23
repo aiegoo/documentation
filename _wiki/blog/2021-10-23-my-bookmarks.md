@@ -46,7 +46,7 @@ This note contains useful/interesting __websites__. For a note of __applications
 
 ## Web Dev
 
-👉 Note: [Web Dev tools & resources.](/web-dev-tools-resources/)
+👉 Note: [Web Dev tools & resources.](/2021-10-23-web-dev-tools-resources.html)
 
 ## Others
 

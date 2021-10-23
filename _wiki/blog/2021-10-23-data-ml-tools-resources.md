@@ -64,18 +64,18 @@ updated: 2021-10-23 13:30
 - [daft](https://docs.daft-pgm.org/en/latest/#) — a Python package that uses matplotlib to render pixel-perfect probabilistic graphical models for publication in a journal or on the internet.
 - [CSAPS](https://github.com/espdev/csaps) — a Python package for univariate, multivariate and n-dimensional grid data approximation using cubic smoothing splines. The package can be useful in practical engineering tasks for data approximation and smoothing.
 
-## For Vietnamese
+## For korean
 
 👉 [Dataset for Vietnamese](/dataset-collection/#vietnamese).
 
-- [KbQAS](http://youtu.be/M1PHvJvv1Z8) (ISWC 2013): Video demo of the knowledge-based Vietnamese question answering system KbQAS.
-- [PhoBERT](https://github.com/VinAIResearch/PhoBERT) (EMNLP 2020 Findings): Pre-trained language models for Vietnamese.
-- [PhoW2V](https://github.com/datquocnguyen/PhoW2V) (2020): Pre-trained Word2Vec syllable- and word-level embeddings for Vietnamese.
-- [RDRsegmenter](https://github.com/datquocnguyen/RDRsegmenter) (LREC 2018): A fast and accurate Vietnamese word segmenter.
-- [ViText2SQL](https://github.com/VinAIResearch/ViText2SQL) (EMNLP 2020 Findings): A dataset for Vietnamese Text2SQL semantic parsing.
-- [VnCoreNLP](https://github.com/vncorenlp/VnCoreNLP) (NAACL 2018): A Vietnamese NLP pipeline of word (and sentence) segmentation, POS tagging, named entity recognition and dependency parsing.
-- [VnDT](http://vndp.sourceforge.net/) (NLDB 2014): A Vietnamese dependency treebank.
-- [VnMarMoT](https://github.com/datquocnguyen/VnMarMoT) (ALTA 2017): A pre-trained Vietnamese POS tagging model.
+- [KbQAS]() (ISWC 2013): Video demo of the knowledge-based question answering system KbQAS.
+- [PhoBERT]() (EMNLP 2020 Findings): Pre-trained language models for korean.
+- [PhoW2V]() (2020): Pre-trained Word2Vec syllable- and word-level embeddings for korean.
+- [RDRsegmenter](https://github.com/datquocnguyen/RDRsegmenter) (LREC 2018): A fast and accurate word segmenter.
+- [ViText2SQL](https://github.com/VinAIResearch/ViText2SQL) (EMNLP 2020 Findings): A dataset for Text2SQL semantic parsing.
+- [VnCoreNLP](https://github.com/vncorenlp/VnCoreNLP) (NAACL 2018): A NLP pipeline of word (and sentence) segmentation, POS tagging, named entity recognition and dependency parsing.
+- [VnDT](http://vndp.sourceforge.net/) (NLDB 2014): A dependency treebank.
+- [VnMarMoT](https://github.com/datquocnguyen/VnMarMoT) (ALTA 2017): A pre-trained POS tagging model.
 
 ## Tools
 
