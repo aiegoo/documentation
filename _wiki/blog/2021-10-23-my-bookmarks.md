@@ -30,14 +30,14 @@ updated: 2021-10-23 13:39
 👉 Note: [Resources for DS & ML & DL.](/2021-10-23-data-ml-tools-resources.html)
 
 ::: info
-This note contains useful/interesting __websites__. For a note of __applications__, [check here](/good-applications-useful-tools/).
+This note contains useful/interesting __websites__. For a note of __applications__, [check here](/2021-10-23-useful-applications-study-tools.html).
 :::
 
 ## Maths
 
 ## AI
 
-👉 Note: [Resources for DS & ML & DL.](/data-ml-tools-resources/)
+👉 Note: [Resources for DS & ML & DL.](/2021-10-23-data-ml-tools-resources.html)
 
 ## Tech
 
