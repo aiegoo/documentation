@@ -3,6 +3,7 @@ url: aiegoo.github.io
 #baseurl: /documentation #for github.io/documentation
 baseurl: ""
 output: web
+imagesurl_cats: "images/cats/"
 imagesurl_yoga: "images/yoga/"
 imagesurl_yoga_hatha: "images/yoga/hatha/"
 imagesurl_yoga_bikram: "images/yoga/bikram/"

@@ -2,13 +2,27 @@
 title: Icons
 tags: [formatting]
 keywords: font icons, buttons, images, vectors, font awesome, glyphicons
-last_updated: July 16, 2016
+last_updated: October 24, 2021
 summary: "You can integrate font icons through the Font Awesome and Glyphical Halflings libraries. These libraries allow you to embed icons through their libraries delivered as a link reference. You don't need any image libraries downloaded in your project."
 sidebar: mydoc_sidebar
 permalink: mydoc_icons.html
 folder: mydoc
 ---
 
+## Thi icons
+<div class="image-gallery-yoga">
+{% assign sorted= site.static_files %}
+{% for file in sorted %}
+  {% if file.path contains include.folder %}
+    {% if file.extname == '.svg' %}
+      {% assign filenameparts = file.path | split: "/" %}
+        {% assign filename = filenameparts | last | replace: file.extname, "" %}
+        <div class="gallery-box"><a href="{{ file.path | relative_url }}" title="{{ filename }}" class="img-gallery">
+          </a></div>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</div>
 ## Font icon options
 The theme has two font icon sets integrated: Font Awesome and Glyphicons Halflings. The latter is part of Bootstrap, while the former is independent. Font icons allow you to insert icons drawn as vectors from a CDN (so you don't have any local images on your own site).
 
