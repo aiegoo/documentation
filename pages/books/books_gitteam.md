@@ -1,6 +1,6 @@
 ---
 title: gitteam book summary
-tags: [books, getting_started, gcs]
+tags: [books, git]
 last_updated: August 7, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
 summary: "summary."
