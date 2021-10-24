@@ -7,7 +7,7 @@ summary: "This layout shows an example of a knowledge-base style navigation syst
 permalink: tags.html
 sidebar: false
 collection: tags
-layout: page
+layout: wiki
 folder: mydoc
 ---
 
