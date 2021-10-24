@@ -1,12 +1,12 @@
 <audio controls>
-  <source src="{{ include.src }}" type="audio/mpeg">
+  <source src="{{ include.src }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 <script>
     function wav_embed() {
     var p = document.getElementsByTagName('p');
     for (var i = 0; i < p.length; i++) {
-        if (p[i].innerHTML.indexOf('.wav') !== -1) {
+        if (p[i].innerHTML.indexOf('.mp3') !== -1) {
             var str = p[i].innerHTML.split('?');
             if (str.length == 1) str[1] = '';
             var str1 = str[1];
@@ -16,7 +16,7 @@
             str1 = str1.replace('controls=0', '').replace('controls=1', '');
 
             if (
-                str[0].lastIndexOf('.wav', str[0].length - 4) === str[0].length - 4 &&
+                str[0].lastIndexOf('.mp3', str[0].length - 4) === str[0].length - 4 &&
                 str1.length == 0
             ) {
                 if (str[1].indexOf('autoplay=1') !== -1) var autoplay = 1;
@@ -32,7 +32,7 @@
                 newInnerHTML +=
                     '><source src="' +
                     str[0] +
-                    '" type="audio/mpeg">Your browser does not support the audio element.</audio>';
+                    '" type="audio/mp3">Your browser does not support the audio element.</audio>';
                 p[i].innerHTML = newInnerHTML;
             }
         }
