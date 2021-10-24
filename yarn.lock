@@ -95,14 +95,14 @@
   "resolved" "https://registry.npmjs.org/dom-walk/-/dom-walk-0.1.2.tgz"
   "version" "0.1.2"
 
-"file-match@^1.0.1":
+"file-match@^1.0.1", "file-match@^1.0.2":
   "integrity" "sha1-ycrSZdLIrfOoFHWw30dYWQafrvc="
   "resolved" "https://registry.npmjs.org/file-match/-/file-match-1.0.2.tgz"
   "version" "1.0.2"
   dependencies:
     "utils-extend" "^1.0.6"
 
-"file-system@^1.2.2":
+"file-system@^1.2.9":
   "integrity" "sha1-EEb93dRs/X9lFELfLA70hKG7By8="
   "resolved" "https://registry.npmjs.org/file-system/-/file-system-1.2.9.tgz"
   "version" "1.2.9"
@@ -134,6 +134,11 @@
   dependencies:
     "min-document" "^2.19.0"
     "process" "^0.11.10"
+
+"http@^0.0.1-security":
+  "integrity" "sha512-RnDvP10Ty9FxqOtPZuxtebw1j4L/WiqNMDtuc1YMH1XQm5TgDRaR1G9u8upL6KD1bXHSp9eSXo/ED+8Q7FAr+g=="
+  "resolved" "https://registry.npmjs.org/http/-/http-0.0.1-security.tgz"
+  "version" "0.0.1-security"
 
 "individual@^2.0.0":
   "integrity" "sha1-gzsJfa0jKU52EXqY+zjg2a1hu5c="
@@ -256,7 +261,7 @@
   "resolved" "https://registry.npmjs.org/url-toolkit/-/url-toolkit-2.2.3.tgz"
   "version" "2.2.3"
 
-"utils-extend@^1.0.4", "utils-extend@^1.0.6":
+"utils-extend@^1.0.4", "utils-extend@^1.0.6", "utils-extend@^1.0.8":
   "integrity" "sha1-zP17ZFQPjpDuIe7Fd2nQZRyril8="
   "resolved" "https://registry.npmjs.org/utils-extend/-/utils-extend-1.0.8.tgz"
   "version" "1.0.8"
