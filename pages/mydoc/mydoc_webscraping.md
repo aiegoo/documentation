@@ -4,7 +4,8 @@ permalink: mydoc_webscraping.html
 summary: "webscraping lessons, rapa, blackyak, 100 famous mountains, github actions and python install"
 sidebar: mydoc_sidebar
 keywords: "webscraping crawler rapa dashboard django mongo db python project projects chrome driver news"
-tags: [python, machine-learning, projects]
+tags: [python, machine-learning, projects, webdev]
+tagName: machine-learning
 last_updated: July 29, 2021
 toc: true
 folder: mydoc
