@@ -22,8 +22,11 @@ latex: false
 
 * 처음 시작한 블로그 포스트 : [20년 48주차 블로그 포스팅#meet-puppeteer](/blog/2020/11/23/week-48th/#meet-puppeteer--2020-11-25)
 
+|---
+| |
 |![Puppeteer 로고](https://user-images.githubusercontent.com/10379601/29446482-04f7036a-841f-11e7-9872-91d1fc2ea683.png)| 깃허브 링크 : [https://github.com/puppeteer/puppeteer](https://github.com/puppeteer/puppeteer)<br> 문서 페이지 : [https://pptr.dev/](https://pptr.dev/) <br> API 문서 : [https://github.com/puppeteer/puppeteer/blob/v5.5.0/docs/api.md](https://github.com/puppeteer/puppeteer/blob/v5.5.0/docs/api.md)|
-| [webscraping](/mydoc_webscraping.html)
+| [webscraping](/mydoc_webscraping.html) |
+
 # 1. 발단
 
 * Python + Selenium 조합으로 크롤링하는 프로젝트를 몇 개 만들어 봤는데..
