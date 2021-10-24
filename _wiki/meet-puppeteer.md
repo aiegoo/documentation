@@ -5,11 +5,11 @@ permalink: meet-puppeteer.html
 sidebar: other_sidebar
 collection: wiki
 summary: "javascript로 브라우저 자동화 "
-tags: [windows, machine-learning, webdev]
+tags: [windows, machine-learning, webdev, rgex]
 tagName: machine-learning
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-18 2:32 PM
+updated: 2021-10-25 8:02 AM
 toc: true
 public: true
 parent: [[Web-Category]]
@@ -18,25 +18,23 @@ latex: false
 * TOC
 {:toc}
 
-# 참조 링크 
-
-* 처음 시작한 블로그 포스트 : [20년 48주차 블로그 포스팅#meet-puppeteer](/blog/2020/11/23/week-48th/#meet-puppeteer--2020-11-25)
+## 참조 링크 
 
 |---
 | |
 |![Puppeteer 로고](https://user-images.githubusercontent.com/10379601/29446482-04f7036a-841f-11e7-9872-91d1fc2ea683.png)| 깃허브 링크 : [https://github.com/puppeteer/puppeteer](https://github.com/puppeteer/puppeteer)<br> 문서 페이지 : [https://pptr.dev/](https://pptr.dev/) <br> API 문서 : [https://github.com/puppeteer/puppeteer/blob/v5.5.0/docs/api.md](https://github.com/puppeteer/puppeteer/blob/v5.5.0/docs/api.md)|
 | [webscraping](/mydoc_webscraping.html) |
 
-# 1. 발단
+## 1. 발단
 
 * Python + Selenium 조합으로 크롤링하는 프로젝트를 몇 개 만들어 봤는데..
 * Google Apps Script를 쓰다보니 Javascript로 할 수 없을지 찾아보게됨
 * puppeteer를 찾아냄
 * 공부해보기로 함
 
-# 2. 전개
+## 2. 전개
 
-## Puppeteer란 ?
+### Puppeteer란 ?
 
 * Google Chrome DevTools 개발팀에서 만든 WebDriver 기능의 Node.js 라이브러리
 * 단어의미 :  인형사 - 인형(puppet)을 부리는 사람
@@ -48,7 +46,7 @@ latex: false
 * Python에서 Selenium으로 웹 스크레이핑 하듯이 Javascript로 Puppeteer를 써서 스크레이핑할 수 있다.
 * [Puppeteer의 alternatives, stackshare.io](https://stackshare.io/puppeteer/alternatives)
 
-## 사전학습
+### 사전학습
 
 * Javascript 비동기 개념 강의 시리즈
   * [1. 비동기 처리와 콜백함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/)
@@ -57,7 +55,7 @@ latex: false
   * 콜백 대신
 
 
-## 예제 : Typescript로 puppeteer 사용해보기
+### 예제 : Typescript로 puppeteer 사용해보기
 
 * [원문: Simple web crawling with Puppeteer in TypeScript](https://www.lewuathe.com/simple-crawling-with-puppeteer-in-typescript.html)
 
@@ -95,7 +93,7 @@ latex: false
   * 일단 여기까지가 실행파일 환경 셋업. 이 이후는 기능을 추가하면된다.
     * 기능 추가는 위의 링크 문서를 참조한다.
         
-#### typescript 시작하기
+## typescript 시작하기
 
 * [타입스크립트 환경 구축하기, Typescript Tooling in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html) 발췌
   * npm을 이미 사용하고 있다면 , 혹시 typescript 컴파일러를 global로 설치했는지 확인해보자
