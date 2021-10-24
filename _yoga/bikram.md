@@ -25,7 +25,7 @@ youtubeID2: rqyoWmMjJIE
 My first yoga book I bought during my trip to Thailand has set off a series of events that truly made me who I am now. Believe it or not.
 
 {% include image_yoga.html folder="bikram" %}
-
+{% include audio.html src="resources/audio/hotyoga.mp3" %}
 {% include youtubePlayer.html id=page.youtubeID2 %}
 {% include youtubePlayer.html id=page.youtubeID %}
 ### 26 poses
