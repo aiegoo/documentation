@@ -2047,6 +2047,27 @@ img.emoji {
     width: 1.3rem !important;
 }
 
+/* customizing markdown-toc css from joshua1988 */
+
+.page-content .toc li>a {
+    border-bottom-width: 0;
+}
+.page-content p a:hover, .page-content li a:hover {
+    border-bottom-style: solid;
+}
+.toc li>a:hover, .toc li>a:focus {
+    background: #dfdfdf;
+}
+.page-content p a, .page-content li a {
+    border-bottom: 1px dotted #a2a2a2;
+}
+.toc li>a {
+    display: block;
+    padding: 7px 1.618rem;
+    color: #313130;
+    border-left: 2px solid transparent;
+}
+
 /* highlight css */
 /*.highlight {
     /* Comment */
