@@ -23,6 +23,8 @@ updated: 2021-10-21 04:32
 
 ## more update on markdown-toc css
 [style_link](https://clickhelp.com/clickhelp-technical-writing-blog/advanced-autonumbering-techniques-with-css/)
+[nested number issues](https://gabrieleromanato.name/css-counters-in-depth)
+{{site.data.alerts.note}}`content: counters(term, ".", lower-roman) " ";` Note that the counters() function can also accept a third argument (lower-roman) as the last member of its arguments list, separated by a second comma from the preceding period. However, the counters() function doesn't allow us to specify different styles for each level of nesting.{{site.data.alerts.end}}
 ```
 /* customizing markdown-toc css from joshua1988 */
 
@@ -69,15 +71,7 @@ ul#markdown-toc li::before {
     counter-increment: list;
     background-color: #eee;
     margin-right: 6px;
-    width: 10px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-.post-content >ul#markdown-toc li::before {
-    border-radius: 5px;
-    padding: 1px 11px;
-}
+    width: 10p`
 
 ul#markdown-toc li >ul {
     counter-reset: list;
