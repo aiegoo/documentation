@@ -21,6 +21,11 @@ folder: mydoc
 <script src="js/jquery.ba-throttle-debounce.min.js"></script>
 {% endunless %}
 
+<style>
+  col-md-6 {
+    width: 72%;
+  }
+</style>
 <div class="row">
 {% assign content_col_size = "col-md-9" %}
 <div class="{{content_col_size}}" id="tg-sb-content">
