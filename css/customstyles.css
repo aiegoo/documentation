@@ -386,7 +386,7 @@ ul#markdown-toc {
 }
 ul#markdown-toc li {    
     list-style: none;
-    margin-left: -40px;
+    margin-left: -9px;
 }
 ul#markdown-toc li>a {
     display: inline-block;
@@ -394,6 +394,7 @@ ul#markdown-toc li>a {
 ul#markdown-toc li::before {
     content: counters(list, ".") " ";
     counter-increment: list;
+    counter-reset: list;
     background-color: #eee;
     margin-right: 6px;
     width: 10px;
