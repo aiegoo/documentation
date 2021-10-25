@@ -380,12 +380,16 @@ div#toc.toc {
 }
 
 /* Thi style numbering of toc */
+ul#markdown-toc {
+    list-style-type: none;
+    counter-reset: list;
+}
 ul#markdown-toc li {    
     list-style: none;
 }
 ul#markdown-toc li::before {
-    content: counters(item,".");
-    counter-increment: item;
+    content: counters(list, ".") ". ";
+    counter-increment: list;
     background-color: #eee;
     margin-right: 6px;
     width: 10px;
