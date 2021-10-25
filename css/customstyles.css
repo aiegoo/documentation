@@ -393,7 +393,8 @@ ul#markdown-toc >li {
     line-height: 10px;
 }
 ul#markdown-toc >li a:hover{
-    border-bottom-style: solid !important;
+    /* border-bottom-style: solid !important; */
+    font-weight: bold !important;
 }
 ul#markdown-toc li>a {
     display: inline-block;
