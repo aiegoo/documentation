@@ -55,7 +55,7 @@ When you add photos to an album you can sort from older to newer (3-dots > Edit 
   * 삽입 메뉴에서 바로 구글 포토에 연결하면 사이드에 구글포토를 띄워서 드래그로 가져올 수 있다.
 * 근데 사실 이것도 귀찮을 수 있기 때문에, 템플릿을 한개 만들어 놓고 특정 앨뱀에 있는 사진을 시간 순서로 한 페이지에 한장씩 불러와서 문서를 만들어주는 스크립트가 있으면 좋을것 같다.. (나중에 개발해 보자)
 
-## 구글 포토를 자동으로 슬라이드에 넣어주는 확장프로그램
+## 구글포토를 슬라이드에 자동 넣어주는 프로그램
 
 * 위에서 말했던 프로그램이 실제로 있었다.. [Photos To Slides](https://gsuite.google.com/marketplace/app/photos_to_slides/859164198261)
 * 해보니 잘되긴 하는데.... [테스트 문서 링크](https://docs.google.com/presentation/d/1JJK_alvKbPXoSNad7sgVGVDAkqswczz7oZetiFp0fAE/edit#slide=id.a8c2551a-7783-4ea4-ae1a-46fc96576f13)
