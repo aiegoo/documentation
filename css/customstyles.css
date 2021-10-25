@@ -394,7 +394,6 @@ ul#markdown-toc li>a {
 ul#markdown-toc li::before {
     content: counters(list, ".") " ";
     counter-increment: list;
-    counter-reset: list;
     background-color: #eee;
     margin-right: 6px;
     width: 10px;
@@ -405,6 +404,15 @@ ul#markdown-toc li::before {
 .post-content >ul#markdown-toc li::before {
     border-radius: 5px;
     padding: 1px 11px;
+}
+
+ul#markdown-toc li >ul {
+    counter-reset: list;
+}
+
+ul#markdown-toc li >ul li::before {
+    content: counters(list, ".") " ";
+    counter-increment: list;
 }
 
 /* toc scrollspy */
