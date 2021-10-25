@@ -2095,16 +2095,16 @@ img.emoji {
 /* customizing markdown-toc css from joshua1988 */
 
 #markdown-toc li>a {
-    border-bottom-width: 0;
+   /*  border-bottom-width: 0; */
 }
 #markdown-toc p a:hover, #markdown-toc li:hover {
-    color:#0088cc;
+    color:#0088cc !important;
 }
 #markdown-toc li:hover, li:focus {
     background: #dfdfdf;
 }
 #markdown-toc p a, #markdown-toc li a {
-    color: #0088cc;
+   /*  color: #0088cc; */
 }
 #markdown-toc li>a {
     display: block;
