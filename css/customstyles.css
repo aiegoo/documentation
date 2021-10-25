@@ -417,12 +417,12 @@ ul#markdown-toc li::before {
 
 ul#markdown-toc li >ul {
     counter-reset: list;
+    overflow: hidden;
 }
 
 ul#markdown-toc li >ul li::before {
     content: counters(list, ".") " ";
     counter-increment: list;
-    overflow: hidden;
 }
 
 /* toc scrollspy */
