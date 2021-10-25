@@ -3,7 +3,7 @@ title: Machine learning, deep learning, AI
 tags: [python, machine-learning]
 last_updated: July 10, 2021
 keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
-summary: "summary."
+summary: "DL/ML concept google search model 𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗟𝗶𝘀𝘁"
 sidebar: mydoc_sidebar
 permalink: mydoc_deeplearning.html
 folder: mydoc
