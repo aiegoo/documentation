@@ -380,16 +380,16 @@ div#toc.toc {
 }
 
 /* Thi style numbering of toc */
-/* .toc>.ol-container>ol li::before {
+.post-content >ul#markdown-toc>ul li::before {
     content: counters(item,".");
     counter-increment: item;
-    color: var(--color-faded);
+    color: #eee;
     margin-right: 6px;
     width: 10px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-} */
+}
 
 /* toc scrollspy */
 div#toc ul li.active > a {
