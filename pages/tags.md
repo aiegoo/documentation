@@ -22,7 +22,7 @@ folder: mydoc
 {% endunless %}
 
 <style>
-  col-md-6 {
+  .col-md-6 {
     width: 72%;
   }
 </style>
