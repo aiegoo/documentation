@@ -1,15 +1,13 @@
 // meadowlark.js is  a travel website built using express.
 //
 
-var express = require('express');
+const express = require('express');
   
-var app = express();
+const app = express();
+
+const port = prcess.env.PORT || 3000
 
 //set up handlebars instance for views
-var handlebars = require('express3-handlebars')
-                .create({defaultLayout:'main'});
-app.engine('handlebars', handlebars.engine);
-app.set('view engine', 'handlebars');
 
 var fortunes = [
         "Conquer your fears or they will conquer you.",
@@ -23,40 +21,28 @@ var fortunes = [
         "Love is a mystery."
 ]; 
 
-app.set('port', process.env.PORT || 3000);
-
 // static middleware for content like CSS, images, client side JS files.
 //
-app.use(express.static(__dirname + '/public'));
+//  custom 404 page
+app.use((req, res) => {
+        res.type('text/plain')
+        res.status(404)
+        res.send('404 - not found')
+})
+//custom 500 page
+app.use((err, req, res, next) => {
+        console.error(err.message)
+        res.type('text/plain')
+        res.send('500 - Server Error')
+})
 
 // routes for homepage and about page.
-app.get('/', function(req, res){
-        res.render('home');
-});
-
-
-app.get('/about', function(req, res){
-        var randomFortune =
-                    fortunes[Math.floor(Math.random() * fortunes.length)];
-        res.render('about', {fortune: randomFortune});
-});
 
 
 // custom 404 page /// these are middlewares.
-app.use(function(req, res){
-        res.status(404);
-        res.render('404');
-});
-
 
 
 // custom 500 page // middlewares.
-app.use(function(err, req, res, next){
-      console.error(err.stack);
-      res.status(500);
-      res.render('500');
-});
-
 
 app.listen(app.get('port'), function(){
     console.log('Express started on http://localhost:' +
