@@ -393,7 +393,7 @@ ul#markdown-toc >li {
     line-height: 10px;
 }
 ul#markdown-toc >li a:hover{
-    border-bottom-style: solid !important;
+    border-bottom-style: none !important;
 }
 ul#markdown-toc li>a {
     display: inline-block;
@@ -2098,7 +2098,7 @@ img.emoji {
     border-bottom-width: 0;
 }
 #markdown-toc p a:hover, #markdown-toc li:hover {
-    border-bottom-style: solid;
+    border-bottom-style: none !important;
 }
 #markdown-toc li:hover, li:focus {
     background: #dfdfdf;
