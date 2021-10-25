@@ -393,7 +393,7 @@ ul#markdown-toc >li {
     line-height: 10px;
 }
 ul#markdown-toc >li a:hover{
-    border-bottom-style: none !important;
+    border-bottom-style: solid !important;
 }
 ul#markdown-toc li>a {
     display: inline-block;
@@ -2098,13 +2098,13 @@ img.emoji {
     border-bottom-width: 0;
 }
 #markdown-toc p a:hover, #markdown-toc li:hover {
-    border-bottom-style: none !important;
+    color:#0088cc;
 }
-#markdown-toc li:hover ul li, li:focus ul li {
+#markdown-toc li:hover, li:focus {
     background: #dfdfdf;
 }
 #markdown-toc p a, #markdown-toc li a {
-    border-bottom: 1px dotted #a2a2a2;
+    color: #0088cc;
 }
 #markdown-toc li>a {
     display: block;
