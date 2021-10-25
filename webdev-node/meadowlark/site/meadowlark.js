@@ -5,7 +5,7 @@ const express = require('express');
   
 const app = express();
 
-const port = prcess.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 //set up handlebars instance for views
 
@@ -44,7 +44,6 @@ app.use((err, req, res, next) => {
 
 // custom 500 page // middlewares.
 
-app.listen(app.get('port'), function(){
-    console.log('Express started on http://localhost:' +
-    app.get('port') + '; press Cltr-C to terminate.');
-});
+app.listen(port, () => console.log(
+        `Express started on http://localhost:${port}; ` +
+        `press Ctrl-C to terminate.`))
