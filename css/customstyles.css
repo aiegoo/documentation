@@ -386,12 +386,13 @@ ul#markdown-toc {
 }
 ul#markdown-toc li {    
     list-style: none;
+    margin-left: -38px;
 }
 ul#markdown-toc li>a {
     display: inline-block;
 }
 ul#markdown-toc li::before {
-    content: counters(list, ".") ". ";
+    content: counters(list, "") ". ";
     counter-increment: list;
     background-color: #eee;
     margin-right: 6px;
