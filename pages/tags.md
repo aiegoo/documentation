@@ -22,13 +22,11 @@ folder: mydoc
 {% endunless %}
 
 <style>
-  .col-md-9 {
-    width: 72%;
+  .col-md-6 {
+    width: 100%;
   }
 </style>
 <div class="row">
-{% assign content_col_size = "col-md-9" %}
-<div class="{{content_col_size}}" id="tg-sb-content">
 <div class="filter-options">
   <button class="btn btn-primary tag-pink" data-group="all">All</button>
   <button class="btn btn-primary" data-group="getting_started">Getting Started</button>
@@ -329,8 +327,6 @@ folder: mydoc
           <!-- sizer -->
       <div class="col-xs-6 col-sm-4 col-md-1 shuffle_sizer"></div>
     </div><!-- /#grid -->
-</div><!-- end of content col-size -->
-</div><!-- end of row -->
 {% unless site.output == "pdf" %}
 {% include initialize_shuffle.html %}
 {% endunless %}
