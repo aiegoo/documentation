@@ -2076,7 +2076,7 @@ img.emoji {
 }
 #markdown-toc li>a {
     display: block;
-    padding: 7px 1.618rem;
+    padding: 2px 1.618rem;
     color: #313130;
     border-left: 2px solid transparent;
 }
