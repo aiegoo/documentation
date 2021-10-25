@@ -2,7 +2,7 @@
 layout: post
 title: "Dataset Collection for dl ml sources"
 name: "dataset-collection"
-tags: [machine-learning]
+tags: [machine-learning, data-science]
 tagName: machine-learning
 permalink: 2021-10-26-dataset-collection.html
 sidebar: other_sidebar
