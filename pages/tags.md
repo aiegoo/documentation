@@ -23,7 +23,7 @@ folder: mydoc
 
 <style>
   .col-md-6 {
-    width: 100%;
+    width: 80%;
   }
 </style>
 <div class="filter-options">
