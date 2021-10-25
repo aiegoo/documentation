@@ -387,9 +387,11 @@ ul#markdown-toc {
 ul#markdown-toc li {    
     list-style: none;
     margin-left: -9px;
+    border-bottom: 1px dotted !important;
 }
 ul#markdown-toc li>a {
     display: inline-block;
+    border-bottom: none !important;
 }
 ul#markdown-toc li::before {
     content: counters(list, ".") " ";
