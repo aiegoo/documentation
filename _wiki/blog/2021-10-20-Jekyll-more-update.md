@@ -22,6 +22,7 @@ updated: 2021-10-21 04:32
 {:toc}
 
 ## more update on markdown-toc css
+[style_link](https://clickhelp.com/clickhelp-technical-writing-blog/advanced-autonumbering-techniques-with-css/)
 ```
 /* customizing markdown-toc css from joshua1988 */
 

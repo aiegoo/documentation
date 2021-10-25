@@ -422,6 +422,7 @@ ul#markdown-toc li >ul {
 ul#markdown-toc li >ul li::before {
     content: counters(list, ".") " ";
     counter-increment: list;
+    overflow: hidden;
 }
 
 /* toc scrollspy */
