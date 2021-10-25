@@ -17,7 +17,7 @@ latex: false
 * TOC
 {:toc}
 
-### 1. 발단
+### 발단
 
 * johngrib 님 홈페이지와 비교하다보니 toc위치가 다른것을 발견
 * [github 스켈레톤 repository](https://github.com/johngrib/johngrib-jekyll-skeleton/)에서 해당 [commit](https://github.com/johngrib/johngrib-jekyll-skeleton/commit/4f58609b71e52a226d7e29f9240ad659ac953ba9?diff=unified)을 찾아냄
@@ -25,7 +25,7 @@ latex: false
 * 위의 commit된 코드상에 모르는게 많아 공부를 해보려고 함
   * scss 파일?, #markdown-toc? 스크롤시 고정?
 
-## 2. 전개
+### 전개
 
 #### scss 파일
 
@@ -87,25 +87,25 @@ latex: false
 * font-size: em 단위, 동적인 값, 0.8em이면 메인폰트 대비 80% 정도 크기로 지정, [em 참조 링크](https://developer.mozilla.org/ko/docs/Web/CSS/font-size#Ems)
 * [@media (min-width: xxxxpx) { ... } 의 의미](https://developer.mozilla.org/ko/docs/Web/Guide/CSS/Media_queries#Targeting_media_features)
 
-## 3. 결론
+### 결론
 
 ### 의문사항 ~~결과 정리~~ 조사후 소감  
 
-#### 1. SCSS
+#### SCSS
 
 * 본 지 얼마 안되었지만 잘 지내야 할 것 같은 아이..
 * 곳곳에 좋은 posting이 많아서 한동안 링크 따라 다닐듯
 
-#### 2. #markdown-toc
+#### markdown-toc
 
 * jekyll 이용시 SCSS보다 더 근본적인 영향을 주는 kramdown이 배후 
 * 추천 공부 링크:  [https://kramdown.gettalong.org/documentation.html](https://kramdown.gettalong.org/documentation.html)
 
-#### 3. toc를 side로 빼고 스크롤을 따라 내려오게 하는 방법
+#### toc를 side로 빼고 스크롤을 따라 내려오게 하는 방법
 
 * CSS 기본을 잘 알자... 전부 다 CSS 표준이었다. 
 
-#### 4. Edit text at the speed of thought !!!
+#### Edit text at the speed of thought !!!
 
 * johngrib 님의 Vimwiki + Jekyll + Github.io 를 사용하면서 드는 생각은... 딱 이 느낌..
  
