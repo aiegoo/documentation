@@ -101,7 +101,7 @@ latex: false
       * 따라서 `Gemfile`에 `tzinfo`를 1.2 로 낮출것을 추천함.
     * linux 환경에서 구현된 johngrib님 위키를 그대로 따라하다 보니 빼먹은 듯..
 
-### 해결책 실행
+## 해결책 실행
 
 * 프로젝트 루트의 `GemFile.lock`에 다음 줄을 추가 ( 위의 Timezone Managemnt 링크에서 추천)
   ```ruby
