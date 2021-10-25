@@ -380,15 +380,19 @@ div#toc.toc {
 }
 
 /* Thi style numbering of toc */
-.post-content >ul#markdown-toc>ul li::before {
+.post-content >ul#markdown-toc li::before {
     content: counters(item,".");
     counter-increment: item;
-    color: #eee;
+    background-color: #eee;
     margin-right: 6px;
     width: 10px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+.post-content >ul#markdown-toc li::before {
+    border-radius: 5px;
+    padding: 1px 7px;
 }
 
 /* toc scrollspy */
