@@ -378,6 +378,19 @@ div#toc.toc {
     line-height: 70%;
     width: 40em;
 }
+
+/* Thi style numbering of toc */
+/* .toc>.ol-container>ol li::before {
+    content: counters(item,".");
+    counter-increment: item;
+    color: var(--color-faded);
+    margin-right: 6px;
+    width: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 /* toc scrollspy */
 div#toc ul li.active > a {
     color: #333;
