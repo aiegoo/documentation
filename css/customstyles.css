@@ -380,7 +380,10 @@ div#toc.toc {
 }
 
 /* Thi style numbering of toc */
-.post-content >ul#markdown-toc li::before {
+ul#markdown-toc li {    
+    list-style: none;
+}
+ul#markdown-toc li::before {
     content: counters(item,".");
     counter-increment: item;
     background-color: #eee;
@@ -392,7 +395,7 @@ div#toc.toc {
 }
 .post-content >ul#markdown-toc li::before {
     border-radius: 5px;
-    padding: 1px 7px;
+    padding: 1px 11px;
 }
 
 /* toc scrollspy */
