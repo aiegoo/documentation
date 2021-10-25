@@ -2049,19 +2049,19 @@ img.emoji {
 
 /* customizing markdown-toc css from joshua1988 */
 
-#markdown-toc .toc li>a {
+#markdown-toc li>a {
     border-bottom-width: 0;
 }
-#markdown-toc p a:hover, .page-content li a:hover {
+#markdown-toc p a:hover, #markdown-toc li a:hover {
     border-bottom-style: solid;
 }
-#markdown-toc .toc li>a:hover, .toc li>a:focus {
+#markdown-toc li>a:hover, li>a:focus {
     background: #dfdfdf;
 }
-#markdown-toc p a, .page-content li a {
+#markdown-toc p a, #markdown-toc li a {
     border-bottom: 1px dotted #a2a2a2;
 }
-#markdown-toc .toc li>a {
+#markdown-toc li>a {
     display: block;
     padding: 7px 1.618rem;
     color: #313130;
