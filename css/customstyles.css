@@ -386,7 +386,7 @@ ul#markdown-toc {
 }
 ul#markdown-toc li {    
     list-style: none;
-    margin-left: -38px;
+    margin-left: -40px;
 }
 ul#markdown-toc li>a {
     display: inline-block;
