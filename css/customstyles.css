@@ -2094,7 +2094,7 @@ img.emoji {
 #markdown-toc p a:hover, #markdown-toc li a:hover {
     border-bottom-style: solid;
 }
-#markdown-toc li>a:hover, li>a:focus {
+#markdown-toc li:hover, li:focus {
     background: #dfdfdf;
 }
 #markdown-toc p a, #markdown-toc li a {
