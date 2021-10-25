@@ -392,8 +392,8 @@ ul#markdown-toc >li {
     border-bottom: 1px dotted #a2a2a2 !important;
     line-height: 10px;
 }
-ul#markdown-toc >li:hover a{
-    border-bottom-style: solid ;
+ul#markdown-toc >li a:hover{
+    border-bottom-style: solid !important;
 }
 ul#markdown-toc li>a {
     display: inline-block;
