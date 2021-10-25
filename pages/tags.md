@@ -25,6 +25,9 @@ folder: mydoc
   .col-md-6 {
     width: 75%;
   }
+  .col-md-9 {
+    width: 75%;
+  }
 </style>
 <div class="filter-options">
   <button class="btn btn-primary tag-pink" data-group="all">All</button>
