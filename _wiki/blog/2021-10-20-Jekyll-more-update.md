@@ -21,6 +21,72 @@ updated: 2021-10-21 04:32
 * TOC
 {:toc}
 
+## more update on markdown-toc css
+```
+/* customizing markdown-toc css from joshua1988 */
+
+#markdown-toc li>a {
+    border-bottom-width: 0;
+}
+#markdown-toc p a:hover, #markdown-toc li a:hover {
+    border-bottom-style: solid;
+}
+#markdown-toc li:hover, li:focus {
+    background: #dfdfdf;
+}
+#markdown-toc p a, #markdown-toc li a {
+    border-bottom: 1px dotted #a2a2a2;
+}
+#markdown-toc li>a {
+    display: block;
+    padding: 2px 1.618rem;
+    color: #313130;
+    border-left: 2px solid transparent;
+}
+/* Thi style numbering of toc */
+ul#markdown-toc {
+    list-style-type: none;
+    counter-reset: list;
+}
+ul#markdown-toc li {    
+    list-style: none;
+    margin-left: -9px;
+}
+ul#markdown-toc >li {
+    border-bottom: 1px dotted #a2a2a2 !important;
+    line-height: 10px;
+}
+ul#markdown-toc >li a:hover{
+    border-bottom-style: solid !important;
+}
+ul#markdown-toc li>a {
+    display: inline-block;
+    border-bottom: none !important;
+}
+ul#markdown-toc li::before {
+    content: counters(list, ".") " ";
+    counter-increment: list;
+    background-color: #eee;
+    margin-right: 6px;
+    width: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-content >ul#markdown-toc li::before {
+    border-radius: 5px;
+    padding: 1px 11px;
+}
+
+ul#markdown-toc li >ul {
+    counter-reset: list;
+}
+
+ul#markdown-toc li >ul li::before {
+    content: counters(list, ".") " ";
+    counter-increment: list;
+}
+```
 ## late-discovered issues
 - reading progress-bar disappearing on scroll with some posts (happens on mobile only so far)
   - [Windows-Termianl-Setting.html](Windows-Termianl-Setting.html)
