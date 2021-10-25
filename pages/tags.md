@@ -26,7 +26,6 @@ folder: mydoc
     width: 100%;
   }
 </style>
-<div class="row">
 <div class="filter-options">
   <button class="btn btn-primary tag-pink" data-group="all">All</button>
   <button class="btn btn-primary" data-group="getting_started">Getting Started</button>
