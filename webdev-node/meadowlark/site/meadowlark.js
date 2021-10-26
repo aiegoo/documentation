@@ -1,7 +1,14 @@
 const express = require('express')
 const expressHandlebars = require('express-handlebars')
-
+const fortunes = [
+  "Conquer your fears or they will conquer you.",
+  "Rivers need springs.",
+  "Do not fear what you don't know.",
+  "You will have a pleasant surprise.",
+  "Whenever possible, keep it simple.",
+]
 const app = express()
+const path = require ('path')
 
 // configure Handlebars view engine
 app.engine('handlebars', expressHandlebars({
@@ -15,13 +22,7 @@ const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => res.render('home'))
 
-const fortunes = [
-  "Conquer your fears or they will conquer you.",
-  "Rivers need springs.",
-  "Do not fear what you don't know.",
-  "You will have a pleasant surprise.",
-  "Whenever possible, keep it simple.",
-]
+
 
 app.get('/about', (req, res) => {
   const randomFortune = fortunes[Math.floor(Math.random()*fortunes.length)]
