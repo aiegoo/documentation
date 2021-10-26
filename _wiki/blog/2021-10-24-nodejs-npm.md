@@ -9,8 +9,8 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "js javascript package management Node Package Manager"
-summary: "Sun, Oct 24, 21, install nvm node npm and other packages"
+keywords: "js javascript package management Node Package Manager Ethan Brown espress live serve"
+summary: "Sun, Oct 24, 21, install nvm node npm and other packages, covered by Web Development with Node and Express by Ethan Brown"
 excerpt_separator: <!--more-->
 toc: true
 public: true
@@ -25,6 +25,9 @@ updated: 2021-10-24 00:04
 
 ## book nodejs npm
 {% include image.html file="bookcover/webdev-nodejs.png" caption="web development with node and express" %}
+
+{% include tony.html content="Run npm install in the root folder of the project or lesson folder where package-lock.json is located" %}
+
 
 ## Thi
 
