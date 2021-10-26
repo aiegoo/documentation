@@ -11,5 +11,8 @@
     "utils-extend": "^1.0.8",
     "videojs-youtube": "^2.6.1",
     "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1"
   }
 }
