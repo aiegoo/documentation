@@ -28,6 +28,14 @@ updated: 2021-10-24 00:04
 
 {% include tony.html content="Run npm install in the root folder of the project or lesson folder where package-lock.json is located" %}
 
+> As of version of 5 of npm, an additional file, package-lock.json, will
+be created. Whereas package.json can be “loose” in its specification
+of dependency versions (with the ^ and ~ version modifiers),
+package-lock.json records the exact versions that were installed,
+which can be helpful if you need to re-create the exact dependency
+versions in your project. I recommend you check this file into
+source control and don’t modify it by hand. See the package-
+lock.json documentation for more information.
 
 ## Thi
 
