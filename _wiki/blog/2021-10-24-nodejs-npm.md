@@ -25,7 +25,7 @@ updated: 2021-10-24 00:04
 
 ## book nodejs npm
 {% include image.html file="bookcover/webdev-nodejs.png" caption="web development with node and express" %}
-
+<script src="https://gist.github.com/aiegoo/9c1f463bb69075dd0ddffd7718dd8677.js"></script>
 {% include tony.html content="Run npm install in the root folder of the project or lesson folder where package-lock.json is located" %}
 
 > As of version of 5 of npm, an additional file, package-lock.json, will
