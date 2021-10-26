@@ -10,7 +10,7 @@ app.engine('handlebars', expressHandlebars({
         defaultLayout: 'main',
 }))
 app.set('view engine', 'handlebars')
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/layouts');
 
 const port = process.env.PORT || 3000
 
