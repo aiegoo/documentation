@@ -1,11 +1,20 @@
 // meadowlark.js is  a travel website built using express.
 //
 
-const express = require('express');
-  
-const app = express();
+const express = require('express')
+const expressHandlebars = require('express3-handlebars')  
+const app = express()
+
+// configure Handlebars view engine
+app.engine('handlebars', expressHandlebars({
+        defaultLayout: 'main',
+}))
+app.set('view engine', 'handlebars')
+app.set('views', __dirname + '/views');
 
 const port = process.env.PORT || 3000
+
+//const getMousePosition = (x, y) => ({ x, y });
 
 //set up handlebars instance for views
 
@@ -27,17 +36,26 @@ var fortunes = [
 app.use((req, res) => {
         res.type('text/plain')
         res.status(404)
-        res.send('404 - not found')
+        res.render('404')
 })
 //custom 500 page
 app.use((err, req, res, next) => {
         console.error(err.message)
-        res.type('text/plain')
-        res.send('500 - Server Error')
+        res.status(500)
+        res.render('500')
 })
 
 // routes for homepage and about page.
+app.get('/', (req, res) => res.render('home')) /* {
+        res.type('text/plain')
+        res.send('Meadowlark Travel');
+}) */
 
+app.get('/about', (req, res) => res.render('about'))/*  {
+        res.type('text/plain')
+        res.status(404)
+        res.send('404 - Not Found')
+}) */
 
 // custom 404 page /// these are middlewares.
 
