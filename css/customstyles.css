@@ -1097,6 +1097,10 @@ span.soft {
      {
         /* margin-top: -88px; */
     }
+
+    .gist .gist-data {
+        width: 90vw;
+    }
 }
 
 /* mobile breakpoint 992 is where navbar becomes 3 rows from 2*/
