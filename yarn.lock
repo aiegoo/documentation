@@ -207,6 +207,13 @@
     "graceful-fs" "^4.2.7"
     "handlebars" "^4.7.7"
 
+"express-handler@^0.2.0":
+  "integrity" "sha1-as8rFiHi4cJFtzMlhY0V99uWrDc="
+  "resolved" "https://registry.npmjs.org/express-handler/-/express-handler-0.2.0.tgz"
+  "version" "0.2.0"
+  dependencies:
+    "underscore" "^1.7.0"
+
 "express@^4.17.1":
   "integrity" "sha512-mHJ9O79RqluphRrcw2X/GTh3k9tVv8YcoyY4Kkh4WDMUYKRZUq0h1o0w2rrrxBqM7VoeUVqgb27xlEMXTnYt4g=="
   "resolved" "https://registry.npmjs.org/express/-/express-4.17.1.tgz"
@@ -718,6 +725,11 @@
     "async" "~0.2.6"
     "optimist" "~0.3.5"
     "source-map" "~0.1.7"
+
+"underscore@^1.7.0":
+  "integrity" "sha512-hzSoAVtJF+3ZtiFX0VgfFPHEDRm7Y/QPjGyNo4TVdnDTdft3tr8hEkD25a1jC+TjTuE7tkHGKkhwCgs9dgBB2g=="
+  "resolved" "https://registry.npmjs.org/underscore/-/underscore-1.13.1.tgz"
+  "version" "1.13.1"
 
 "unpipe@~1.0.0", "unpipe@1.0.0":
   "integrity" "sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw="
