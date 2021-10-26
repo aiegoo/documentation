@@ -20,11 +20,11 @@ updated: 2021-10-15 03:54
 * TOC
 {:toc}
 
-## 1. How it all began
+## How it all began
 
 * generateData implementation of this theme documentation
 
-## 2. Challenges
+## Challenges
 
 바로 내용으로 들어간다
 
