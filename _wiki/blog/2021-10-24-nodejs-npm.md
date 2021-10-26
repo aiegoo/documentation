@@ -37,6 +37,8 @@ versions in your project. I recommend you check this file into
 source control and don’t modify it by hand. See the package-
 lock.json documentation for more information.
 
+{% include callout.html content="**Beaware** Node modules (also called CJS) use a different syntax than ECMAScript modules(ESM), and you may have to switch between the two syntaxes when you go between frontend and backend code. It’s a good idea to be familiar with both." type="information" %}
+
 ## Thi
 
 ## Install NodeJS & NPM
