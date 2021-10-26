@@ -25,7 +25,7 @@ repos: aiegoo/thesis/tree/master/drone_2d_nav
 
 This repository contains all of the ROS packages.
 
-# Drone 2D Navigation
+## Drone 2D Navigation
 
 ## Overview
 
