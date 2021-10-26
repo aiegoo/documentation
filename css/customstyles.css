@@ -1646,8 +1646,8 @@ h4.panel-title {
     border-bottom: 1px solid #ddd;
     border-radius: 6px 6px 0 0;
     overflow: scroll;
-    width: 90vw;
-    height: 50vh;
+    width: 49.5vw;
+    height: 45vh;
  }
 
  .gist .gist-meta {
@@ -1662,7 +1662,11 @@ h4.panel-title {
  .gist .gist-meta::after {
      content: url(https://aiegoo.github.io/portfolio);
  }
-
+.gist .markdown-body {
+    font-size: 14px;
+    line-height: 1.3;
+    word-wrap: normal;
+}
 /* modal-dialog viewport for userMap complex */
 
 .modal-dialog {
