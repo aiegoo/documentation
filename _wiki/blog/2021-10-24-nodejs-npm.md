@@ -30,14 +30,7 @@ updated: 2021-10-24 00:04
 
 --------------
 ```diff
-As of version of 5 of npm, an additional file, package-lock.json, will
-be created. Whereas package.json can be “loose” in its specification
-of dependency versions (with the ^ and ~ version modifiers),
-package-lock.json records the exact versions that were installed,
-which can be helpful if you need to re-create the exact dependency
-versions in your project. I recommend you check this file into
-source control and don’t modify it by hand. See the package-
-lock.json documentation for more information.
+As of version of 5 of npm, an additional file, package-lock.json, will be created. Whereas package.json can be “loose” in its specification of dependency versions (with the ^ and ~ version modifiers), package-lock.json records the exact versions that were installed, which can be helpful if you need to re-create the exact dependency versions in your project. I recommend you check this file into source control and don’t modify it by hand. See the package-lock.json documentation for more information.
 ```
 {% include callout.html content="**Beaware** Node modules (also called CJS) use a different syntax than ECMAScript modules(ESM), and you may have to switch between the two syntaxes when you go between frontend and backend code. It’s a good idea to be familiar with both." type="info" %}
 {% include callout.html content="**goodPoint!** Whenever you have a dependency, you have something that needs to be mocked(simulated) for effective testing. For example, our primary dependency is Express, which is already thoroughly tested, so we don’t need or want to test Express itself, just how we use it. The only way we can determine if we’re using Express correctly is tosimulate Express itself." type="default" %}
