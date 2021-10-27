@@ -386,7 +386,7 @@ ul#markdown-toc {
 }
 ul#markdown-toc li {    
     list-style: none;
-    margin-left: -30px;
+    margin-left: -25px;
 }
 ul#markdown-toc >li {
     border-bottom: 1px dotted #a2a2a2 !important;
@@ -2128,7 +2128,7 @@ img.emoji {
 }
 #markdown-toc li>a {
     display: block;
-    padding: 2px 1.618rem;
+    padding: 2px 1.418rem;
     color: #313130;
     border-left: 2px solid transparent;
 }
