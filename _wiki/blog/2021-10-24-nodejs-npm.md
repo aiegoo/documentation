@@ -38,7 +38,7 @@ As of version of 5 of npm, an additional file, package-lock.json, will be create
 
 {{site.data.alerts.important}}
 <pre>
-{% raw %}{% highlight js %}
+{% highlight js %}
 const fortune = require('./fortune')
 
 exports.home = (req, res) => res.render('home')
@@ -52,7 +52,7 @@ exports.notFound = (req, res) => res.render('404')
 // argumetns, so we have to disable ESLint's no-unused-vars rule
 /* eslint-disable no-unused-vars */
 exports.serverError = (err, req, res, next) => res.render('500')
-{% endhighlight %}{% endraw %}
+{% endhighlight %}
 </pre> 
 {{site.data.alerts.end}}
 
