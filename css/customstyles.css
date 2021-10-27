@@ -404,7 +404,7 @@ ul#markdown-toc li::before {
     content: counters(list, ".") " ";
     counter-increment: list;
     background-color: #eee;
-    margin-right: 6px;
+    margin-right: 4px;
     width: 10px;
     display: inline-flex;
     justify-content: center;
