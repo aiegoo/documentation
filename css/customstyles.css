@@ -990,7 +990,7 @@ pre, table code {
 pre {
     margin: 25px 0px;
 }
-pre. highlight {
+pre.highlight {
     word-break: keep-all !important;
 }
 
