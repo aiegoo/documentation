@@ -1118,7 +1118,7 @@ span.soft {
 
 @media (min-width: 1000px) {    
     .gist .gist-data {
-    width: 49.5vw;
+    width: 49.5vw !important;
     }
     ul#mysidebar {
         width: 225px;
