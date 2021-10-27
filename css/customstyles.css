@@ -1111,6 +1111,9 @@ span.soft {
     div#toc {
         display: none;
     }
+   .gist .gist-data {
+    width: 95vw;
+    }
 }
 
 @media (min-width: 1000px) {    
