@@ -44,7 +44,8 @@ repos: aiegoo/documentation
 
 ---
 
-## 티몬 앱의 시작을 알리는 2초, 스플래시 스크린 제작기[(링크)](http://tmondev.blog.me/220992527657)
+## 티몬 앱의 시작을 알리는 2초, 
+***스플래시스크린** 제작기[(링크)](http://tmondev.blog.me/220992527657)
 
 모바일 앱을 실행시켰을 때 앱이 켜지기 전 1~2초 동안 나오는 시작 화면을 스플래시 스크린 또는 런치 스크린이라 부른다. 티몬은 스플래시 스크린을 고객경험의 시작으로 보고 티몬의 색이 가장 잘 드러난 스플래시 화면을 디자인하는 프로젝트를 진행했다.
 
@@ -64,7 +65,8 @@ repos: aiegoo/documentation
 
 ---
 
-## 검색 기획자의 고민, 검색으로 고객의 마음 읽기 (1), (2)[(링크)](http://tmondev.blog.me/220957031204)
+## 검색 기획자의 고민, 검색으로 고객의 마음 읽기 (1), (2)
+[(링크)](http://tmondev.blog.me/220957031204)
 
 "고객은 마음을 말하지 않는다"
 
@@ -100,7 +102,8 @@ repos: aiegoo/documentation
 
 ---
 
-## SKT T전화의 보이는 ARS 프로젝트[(링크)](https://brunch.co.kr/@amyyoungah/9)
+## SKT T전화의 보이는 ARS 프로젝트
+[(링크)](https://brunch.co.kr/@amyyoungah/9)
 
 보이는 ARS 프로젝트는 'DISCOVERY - DEFINE - DEVELOP - DELIVER' 프로세스를 거쳐 완성됐다.
 
