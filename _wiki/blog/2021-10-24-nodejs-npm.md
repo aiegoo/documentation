@@ -37,7 +37,7 @@ As of version of 5 of npm, an additional file, package-lock.json, will be create
 
 {{site.data.alerts.important}}
 <div markdown="span">
-``` javascript
+<pre><code>
 const fortune = require('./fortune')
 
 exports.home = (req, res) => res.render('home')
@@ -52,7 +52,7 @@ exports.notFound = (req, res) => res.render('404')
 /* eslint-disable no-unused-vars */
 exports.serverError = (err, req, res, next) => res.render('500')
 /* eslint-enable no-unused-vars */
-```
+</code></pre>
 </div>
 {{site.data.alerts.end}}
 
