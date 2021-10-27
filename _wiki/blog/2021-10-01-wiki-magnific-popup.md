@@ -22,12 +22,11 @@ repos: aiegoo/kramdown-cn/blob/master/_posts/2019-03-24-Implement%20Scroll%20Spy
 ## jquery plugin
 
 {{site.data.alerts.callout_info}}My intention was to carry out this implementation right away, but I was in the middle of fixing issues in next-previous logic and scrollspy integration. So here's the note for that as I will have to leave this borrowed post here until I get around to do doing it really, I hope soon{{site.data.alerts.end}}
-### 문제
+### 문제 및 요구사항 정의
 
 포스팅 중 이미지가 작아 이미지 안 글자가 잘 읽히지 않는 경우가 있다. 사진 원본이 충분히 크더라도 블로그로 넘어오면서 560px 규격에 맞게 사진이 자동 축소되기 때문이다. '마우스 우클릭-새 탭에서 이미지 열기'를 이용하여 이미지 확대가 가능하긴 하지만 우클릭 없이 현재창에서 사진을 크게 확대할 수 있는 기능을 추가할 수 있는 방법은 없을까?
 
-#### 요구사항 정의
-
+- 요구사항
 * **사진 확대 기능 추가**
   1. 사진에 마우스를 가져다 댔을 때 클릭이 가능함을 인지하도록 마우스 모양 변경
   2. 포스팅 속 사진 클릭 시 현재 창에서 사진 확대본 노출
