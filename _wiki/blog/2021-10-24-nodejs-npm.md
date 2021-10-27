@@ -43,6 +43,7 @@ lock.json documentation for more information.
 {% include callout.html content="**goodPoint!** Whenever you have a dependency, you have something that needs to be mocked(simulated) for effective testing. For example, our primary dependency is Express, which is already thoroughly tested, so we don’t need or want to test Express itself, just how we use it. The only way we can determine if we’re using Express correctly is tosimulate Express itself." type="default" %}
 
 {{site.data.alerts.important}}
+<div markdown="span">
 ``` javascript
 const fortune = require('./fortune')
 
@@ -59,6 +60,7 @@ exports.notFound = (req, res) => res.render('404')
 exports.serverError = (err, req, res, next) => res.render('500')
 /* eslint-enable no-unused-vars */
 ```
+</div>
 {{site.data.alerts.end}}
 
 ## Thi
