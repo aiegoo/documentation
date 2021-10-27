@@ -57,6 +57,7 @@ exports.serverError = (err, req, res, next) => res.render('500')
 {{site.data.alerts.end}}
 
 {{site.data.alerts.note}}
+> how to write a test script using Jest
 <pre>
 {% highlight js %}
 const handlers = require('../handlers')
