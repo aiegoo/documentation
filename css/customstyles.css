@@ -1118,7 +1118,7 @@ span.soft {
 
 @media (min-width: 1000px) {    
     .gist .gist-data {
-    width: 95vw;
+    width: 49.5vw;
     }
     ul#mysidebar {
         width: 225px;
@@ -1658,7 +1658,7 @@ h4.panel-title {
     border-bottom: 1px solid #ddd;
     border-radius: 6px 6px 0 0;
     overflow: scroll;
-    width: 49.5vw;
+    width: 90vw;
     height: 45vh;
  }
 
