@@ -412,7 +412,7 @@ ul#markdown-toc li::before {
 }
 .post-content >ul#markdown-toc li::before {
     border-radius: 5px;
-    padding: 1px 11px;
+    padding: 1px 10px;
 }
 
 ul#markdown-toc li >ul {
