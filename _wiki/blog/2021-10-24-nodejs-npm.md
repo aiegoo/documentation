@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "js javascript package management Node Package Manager Ethan Brown espress live serve"
+keywords: "js javascript package management Node Package Manager Ethan Brown espress live serve unit testing mocking refactoring"
 summary: "Sun, Oct 24, 21, install nvm node npm and other packages, covered by Web Development with Node and Express by Ethan Brown"
 excerpt_separator: <!--more-->
 toc: true
