@@ -381,7 +381,8 @@ function expect(result) {
 expect(sum(1,2)).toBe(5);
 ```
 
-![error]({{ site.url }}/images/posts/web/javascript/js-testing/error1.png)
+![image](https://user-images.githubusercontent.com/42961200/139293231-abe2929b-37a3-4bd6-8bb0-a7084d0f185b.png)
+
 
 #### 그럴싸한 테스트 함수 만들어보기
 
@@ -418,6 +419,8 @@ test('sum(1, 2) is not equal 5', function() {
 ```
 
 앞의 예제와 마찬가지로 동일한 오류를 발생시키지만 이번엔 좀 더 추적하기가 쉽습니다.
+![image](https://user-images.githubusercontent.com/42961200/139293438-03fba9e7-5a55-4095-a09b-218c75f072dc.png)
+
 
 {% include taglogic.html %}
 
