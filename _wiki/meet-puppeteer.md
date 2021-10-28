@@ -9,7 +9,7 @@ tags: [windows, machine-learning, webdev, rgex]
 tagName: machine-learning
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-10-25 8:02 AM
+updated: 2021-10-28 8:02 PM
 toc: true
 public: true
 parent: [[Web-Category]]
@@ -61,11 +61,11 @@ latex: false
 
 ### 예제에 사용된 도구
 
-#### [Commander.js](https://github.com/tj/commander.js/)
+### [Commander.js](https://github.com/tj/commander.js/)
 
 * nodejs app을 command-line tool로 만드는 도구
  
-##### [Creating a Command-line Application with Node and Commander.js](https://hackwild.com/article/creating-a-command-line-application-with-nodejs/)
+### [Creating a Command-line Application with Node/Commander.js](https://hackwild.com/article/creating-a-command-line-application-with-nodejs/)
 
 * 본 내용은 linux 환경에서 진행한 것 같은데 windows 환경도 많이 다르지 않음 
 * Project Setup
