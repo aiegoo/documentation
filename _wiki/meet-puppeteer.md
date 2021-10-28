@@ -67,7 +67,7 @@ latex: false
 
 * nodejs app을 command-line tool로 만드는 도구
  
-### [Creating a Command-line Application with Node/Commander.js](https://hackwild.com/article/creating-a-command-line-application-with-nodejs/)
+### [Creating Command-line Application with Node/Commander.js](https://hackwild.com/article/creating-a-command-line-application-with-nodejs/)
 
 * 본 내용은 linux 환경에서 진행한 것 같은데 windows 환경도 많이 다르지 않음 
 * Project Setup
