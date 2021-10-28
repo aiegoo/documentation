@@ -1137,6 +1137,9 @@ span.soft {
 }
 
 @media (max-width: 1110px) {
+    ul#markdown-toc li {    
+      margin-left: -24px;
+    }
 
     div#sidetoc {
         opacity: 45%;        

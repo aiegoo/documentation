@@ -1,3 +1,37 @@
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+/* 눈누 링크: https://noonnu.cc/font_page/42 나눔바른펜 */
+@font-face {
+    font-family: 'NanumBarunpen';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* from charliepark.org */
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('/fonts/League_Gothic-webfont.eot');
+    src: url('/fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/League_Gothic-webfont.woff') format('woff'),
+         url('/fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('/fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ‘Avenir Next’;
+    src: url(/fonts/Avenir_Next_Font.ttf);
+    /* File to be stored at your site */
+}
 :root { --tonyillust: url(images/tony_doc.svg); }
 
 body {
@@ -9,7 +43,7 @@ body {
     margin: 20px 0;
     border: 1px solid #eee;
     border-left-width: 5px;
-    border-radius: 3px;
+    border-radius: 0.7rem !important;
 }
 .bs-callout h4 {
     margin-top: 0;
@@ -206,7 +240,7 @@ p.post-meta {font-size: 80%; color: #777;}
     top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
     left: 20px;
     z-index: -1;
-    width:100px;
+    width:160px;
     border-left: 1px solid #dedede;
 }
 
@@ -216,7 +250,7 @@ ul#results-container a {
 }
 
 ul#results-container a:hover {
-    color: black;
+    color: #a1650a !important;
 }
 
 
@@ -254,7 +288,7 @@ div#toc ul {
     max-width: 400px;
     color: rgba(246, 113, 3, 0.856);
     /* overflow-y: auto; */
-    line-height: 50%;
+    line-height: 38%;
 }
 
 div#toc ul li ul {
@@ -267,7 +301,7 @@ div#toc ul li:focus, li:hover, li a:focus, li a:hover {
     color: rgba(6,46,82, 1) !important;
     transition: all 0.125s ease-in 0s;
     text-decoration: none;
-    bottom: -0.2em;
+    /* bottom: -0.2em; */ /* this has been the cause of flickering */
 }
 
 div#toc ul li ul li {
@@ -327,7 +361,7 @@ div#toc ul li a::after {
 
 div#toc  ul li a:hover::after, ul li a:focus::after {
     opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
+    transform: scale(1) translate3d(0, 0.2em, 0);
     text-decoration: none;
     transform-origin: center;
 }
@@ -339,15 +373,57 @@ div#toc ul li a::after {
     transform-origin: center;
 }
 
-div#toc ul li a:hover::after, ul li a:focus::after {
-    transform: scale(1);
-}
-
 div#toc.toc {
     font-size: 0.8rem !important;
     line-height: 70%;
     width: 40em;
 }
+
+/* Thi style numbering of toc */
+ul#markdown-toc {
+    list-style-type: none;
+    counter-reset: list;
+}
+ul#markdown-toc li {    
+    list-style: none;
+    margin-left: 12px;
+}
+ul#markdown-toc >li {
+    border-bottom: 1px dotted #a2a2a2 !important;
+    line-height: 10px;
+}
+ul#markdown-toc >li a:hover{
+    /* border-bottom-style: solid !important; */
+    font-weight: bold !important;
+}
+ul#markdown-toc li>a {
+    display: inline-block;
+    border-bottom: none !important;
+}
+ul#markdown-toc li::before {
+    content: counters(list, ".") " ";
+    counter-increment: list;
+    background-color: #eee;
+    margin-right: 4px;
+    width: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-content >ul#markdown-toc li::before {
+    border-radius: 5px;
+    padding: 1px 10px;
+}
+
+ul#markdown-toc li >ul {
+    counter-reset: list;
+}
+
+ul#markdown-toc li >ul li::before {
+    content: counters(list, ".") " ";
+    counter-increment: list;
+}
+
 /* toc scrollspy */
 div#toc ul li.active > a {
     color: #333;
@@ -369,10 +445,27 @@ li.dropdownActive a {
     color: orange;
 }
 
+/* scrollspy by hakim, applied to page/toc.html*/
+.toc-marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+    .toc-marker path {
+      transition: all 0.3s ease; }
+
 
 .navbar-inverse .navbar-nav > li > a {
     background-color: transparent;
     margin-top:10px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+   /*  color:rgba(226, 217, 217, 0.5) */
+   color:#f90;
+   transition: all 0.25;
 }
 
 .post-content .rssfeedLink {
@@ -699,6 +792,7 @@ a[data-toggle] {
     margin:20px 0px 20px 0px;
     border-left: 5px solid #ED1951;
     padding-left: 10px;
+    font-family: ‘Avenir Next’, "NanumBarunpen";
 
 }
 
@@ -720,11 +814,18 @@ h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #248ec2;
+    background-color: #234e23 /* #248ec2 */;
     color: white;
 }
+/* hover color change */
+.nav-tabs nav-tabs-hover>li:hover {
+    /* backgroundcolor: #234e23 !important; */
+}
 
-ol li ol li {list-style-type: lower-alpha;}
+ol li ol li {list-style-type: none;}
+ol li ol li.scroll-nav_sub-item {
+    list-style-type: none !important;
+}
 ol li ul li {list-style-type: disc;}
 
 li img {clear:both; }
@@ -744,6 +845,15 @@ li.activeSeries {
     font-weight: bold;
     margin-left: 21px;
     font-size:15px;
+}
+
+/* to make drondown menu larger to accomodate long titles */
+.seriesContext  {
+    width: 70vw !important;
+    z-index: 999;
+}
+.seriesContext ol.dropdown-menu {
+    width: 400px;
 }
 
 .alert-warning {
@@ -880,6 +990,10 @@ pre, table code {
 pre {
     margin: 25px 0px;
 }
+pre.highlight, pre p {
+    word-break: keep-all !important;
+}
+
 
 #json-box-container pre {
     margin: 0px;
@@ -987,6 +1101,10 @@ span.soft {
      {
         /* margin-top: -88px; */
     }
+
+    .gist .gist-data {
+        width: 90vw;
+    }
 }
 
 /* mobile breakpoint 992 is where navbar becomes 3 rows from 2*/
@@ -997,11 +1115,14 @@ span.soft {
     div#toc {
         display: none;
     }
+   .gist .gist-data {
+    width: 95vw;
+    }
 }
 
 @media (min-width: 1000px) {    
     .gist .gist-data {
-    width: 55vw;
+    width: 49.5vw !important;
     }
     ul#mysidebar {
         width: 225px;
@@ -1009,8 +1130,10 @@ span.soft {
     }
 }
 
-@media (min-width: 992px) .container {
+@media (min-width: 992px) {
+  .container {
     width: 1021px !important;
+  }
 }
 
 @media (max-width: 1110px) {
@@ -1033,6 +1156,11 @@ span.soft {
     ul#mysidebar {
         max-width: 100%;
     }
+
+    .gist .gist-data {
+        width: 90vw;
+    }
+    
 }
 
 @media only screen and (min-width: 900px), only screen and (min-device-width: 900px) {
@@ -1197,17 +1325,24 @@ div.results {
 .post-link {
     font-size: 22px;
 }
-
+.post-link.leaguegothic {
+    font-family: "LeagueGothicRegular", "League Gothic", "NanumBarunpen";
+}
+.post-link.leaguegothic.dronesoverview {
+    color: #337ab79e;
+}
 .post-list p {
     margin: 10px 0px;
 }
 
 time {
-    margin-right: 10px;
+    margin-right: 10px;    
 }
 
 p.post-meta time {
     margin-right: 0px;
+    margin-left: 15px;
+    text-transform: uppercase;
 }
 
 span.label.label-default {
@@ -1517,6 +1652,7 @@ h4.panel-title {
   /* navbar customization */
   .col-md-6  h1 {
       margin-top: 1.3em;
+      margin-left: 10px;
   }
   
   /* git gist table */
@@ -1527,7 +1663,7 @@ h4.panel-title {
     border-radius: 6px 6px 0 0;
     overflow: scroll;
     width: 90vw;
-    height: 50vh;
+    height: 45vh;
  }
 
  .gist .gist-meta {
@@ -1542,7 +1678,14 @@ h4.panel-title {
  .gist .gist-meta::after {
      content: url(https://aiegoo.github.io/portfolio);
  }
-
+.gist .markdown-body {
+    font-size: 14px;
+    line-height: 1.3;
+    word-wrap: normal;
+}
+.gist .markdown-body h4[id] {
+    padding-top: 0;
+}
 /* modal-dialog viewport for userMap complex */
 
 .modal-dialog {
@@ -1598,4 +1741,787 @@ h4.panel-title {
 
 .gallery-box > .img-gallery:hover  {
     z-index: 999;
+}
+
+
+/* latest.html and blog style from kramdown-kn */
+/*작성에 참조한 링크 : https://developer.mozilla.org/ko/docs/Web/HTML/Element/kbd*/
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+/* 작성에 참조한 링크: http://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html */
+.PageNavigation {
+	font-size: 14px;
+	display: block;
+	width: auto;
+	overflow: hidden;
+}
+
+.PageNavigation a {
+	display: block;
+	float: left;
+	margin: 1em 0;
+}
+
+.PageNavigation .next {
+	float: right;
+}
+
+/* https://www.bytedude.com/jekyll-previous-and-next-posts/#explanation */
+.post-nav.nextprevious {
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; */
+    display:  block;
+    width: auto;
+    position: relative;
+}
+
+/* .post-nav .nextprevious p {
+    flex: 1 1 0;
+    width: 45%;
+}
+
+.post-nav .nextprevious p:first-child {
+    padding-right: 0.5em;
+}
+
+.post-nav .nextprevious p:last-child {
+    padding-left: 0.5em;
+    text-align: right;
+} */
+
+.post-nav a {
+     display: block;
+     width: 50%;
+     float: left;
+     margin: 1em 0;
+     font-size: 14px !important;
+     font-family: 'nanumsquare' !important;
+     white-space: nowrap;     
+     /* overflow: hidden; */
+}
+
+a.wiki-next {
+    text-align: right;
+   /*  position: absolute;
+    top: 0;
+    bottom: 0; */
+}
+a.wiki-previous {
+    overflow: hidden;
+    line-height: 28px;
+}
+a.wiki-next:hover {
+    text-decoration-color: #42b983b2;
+    text-decoration-thickness: 5px;
+}
+a.wiki-previous:hover {
+    text-decoration-color: #42b983b2;
+    text-decoration-thickness: 5px;
+}
+
+/* include youtube and jekyllvideo responsive codie */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* scrollNav css */
+
+.scroll-nav {
+    color: rgba(168, 168, 168, 0.9);
+    font-weight: bold;
+    /* background-color: rgba(168, 168, 168, 0.6); */
+    border: 1px solid white;
+    border-left-color: rgba(233, 236, 239, 0.9);
+    border-left-width: 5px;
+    padding: 4px;
+    position: fixed;
+    bottom: 1vh;
+    top: 7vh;
+    right: 0; 
+    height: min-content;
+    width: 24rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 14px;
+}
+    
+
+.scroll-nav    a {
+        color: rgba(168, 168, 168, 0.9);
+        text-decoration: none;
+    }
+
+.scroll-nav   a:hover {
+        color: #e44a66;
+    }
+
+.scroll-nav a:before {
+    font-family: FontAwesome;
+    content: "";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    }
+
+
+.scroll-nav__list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.scroll-nav__item {
+    margin-bottom: 5px;
+}
+
+li.scroll-nav_item a:before {
+    content: "_ ";
+    margin-left: -9px;
+}
+
+.scroll-nav__item--active>a {
+    font-weight: bold;
+    position: relative;
+    color: #e44a66 !important;
+    /* background: red; */
+    text-decoration: none;
+    transition: color 0.3s;
+    transform: scale(1.05);
+}
+
+.scroll-nav__item--active>a:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 14px;
+    background: rgba(224, 210, 161, 0.904);
+    position: absolute;
+    left: -11px;
+    top: 3px;
+}
+
+.scroll-nav__item--active>a:hover {
+        color: rgba(168, 168, 168, 0.9);
+        transform: scale(1.05);
+    }
+
+.scroll-nav_sub-item {
+    list-style-type: none !important;
+}
+
+.scroll-nav__link {
+    color: #0645ad;
+    text-decoration: none;
+/*       display: block;
+    margin: 0 auto;
+    padding-left: 42px; */
+}
+/* added this css along with js script added right after next previous script in _layouts/post.html */
+.scroll-is-hover {    
+    border-left: rgba(255, 207, 64, 0.4);
+}
+@media screen and (min-width: 800px) {
+    .scroll-nav {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .scroll-nav {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .scroll-nav {
+        display: none
+    }
+}
+
+/* tag-list from the tag-home page */
+
+ul.tag-list {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.tag-list li {
+        float: left;
+    }
+
+ul.tag-list li a {
+        padding-right: 5px;
+        text-decoration: none;
+    }
+ul.tag-list li a:hover {
+    color: rgb(253, 135, 155) !important;
+}
+ul.tag-list li span {
+    overflow: hidden;
+    letter-spacing: -1px;
+}
+ul.tag-list span+div {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden !important;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+/* class reading time for post page */
+.reading-time {
+    font-family: FontAwesome;
+    font-weight: 300;
+    text-align: right;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+
+/* custom bootstrap button colors */
+
+.tag-pink {
+    background-color: #c41953 !important;
+}
+.tag-pink a:hover, .tag-pink a:focus {
+    background-color: #ba3329 !important;
+}
+
+/* category css */
+/* moudle div well css from tykimos */
+.well {
+    color: #000;
+    font-family: Monaco, "Courier New", monospace !important;
+    background-color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.well a {
+    letter-spacing: 0 !important;    
+    font-size: 2rem !important;
+    font-family: 'NanumBarunpen' !important;
+}
+
+.well ul {
+    color: #AAA;
+    font-size: 14px;
+    list-style: none !important;
+}
+
+.well ul a {
+    text-decoration: none !important;
+    text-overflow: hidden !important;
+}
+
+.well ul a:hover {
+    color: #000;
+}
+
+/* baseurl/category css */
+
+/* index의 blog 목차에 "dot leader" 형식 적용 */
+/* 참조 링크: https://www.w3.org/Style/Examples/007/leaders.en.html */
+.well ul {
+    overflow-x: hidden !important;
+}
+
+.well ul span:first-child {
+    padding-right: 0.33em;
+}
+
+.well ul span {
+    overflow: hidden;
+    letter-spacing: 0;
+}
+
+.well ul span+div {
+    float: right;
+    padding-left: 0.33em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden !important;
+}
+.well ul span+div.tag-home {
+    float: revert;
+}
+
+.well h6.category-h6 {
+font-family: 'NanumBarunpen' !important;
+    margin: 0 0 1em 0 !important;
+    font-size: 16px !important;
+    letter-spacing: 3px;
+}
+
+@media only screen and (min-width: 993px){
+    .well ul span:before {
+        float: left;
+        width: 6.7%;
+        white-space: nowrap;
+        content: "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · " "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · " "· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ";
+        overflow: hidden;
+        margin-left: -30px;
+    }
+}
+
+/* post-header title for leaguegothic from charliepark.org */
+
+.post-title.leaguegothic {
+    font-family: "LeagueGothicRegular", "League Gothic", "LeagueGothicRegular", "League Gothic", "NanumBarunpen" !important;
+    font-size: 4rem !important;
+   /*  padding: 1em 0 .2em 1em !important;
+    text-indent: -0.3em !important; */
+
+}
+
+/* img.emoji size */
+img.emoji {
+    width: 1.3rem !important;
+}
+
+/* customizing markdown-toc css from joshua1988 */
+
+#markdown-toc li>a {
+   /*  border-bottom-width: 0; */
+}
+#markdown-toc p a:hover, #markdown-toc li:hover {
+    color:#0088cc !important;
+}
+#markdown-toc li:hover, li:focus {
+    background: #dfdfdf;
+}
+#markdown-toc p a, #markdown-toc li a {
+   /*  color: #0088cc; */
+}
+#markdown-toc li>a {
+    display: block;
+    padding: 2px 1.418rem;
+    color: #313130;
+    border-left: 2px solid transparent;
+}
+
+/* highlight css */
+/*.highlight {
+    /* Comment */
+    /* Error */
+    /* Keyword */
+    /* Literal */
+    /* Name */
+    /* Operator */
+    /* Punctuation */
+    /* Comment.Multiline */
+    /* Comment.Preproc */
+    /* Comment.Single */
+    /* Comment.Special */
+    /* Generic.Emph */
+    /* Generic.Strong */
+    /* Keyword.Constant */
+    /* Keyword.Declaration */
+    /* Keyword.Namespace */
+    /* Keyword.Pseudo */
+    /* Keyword.Reserved */
+    /* Keyword.Type */
+    /* Literal.Date */
+    /* Literal.Number */
+    /* Literal.String */
+    /* Name.Attribute */
+    /* Name.Builtin */
+    /* Name.Class */
+    /* Name.Constant */
+    /* Name.Decorator */
+    /* Name.Entity */
+    /* Name.Exception */
+    /* Name.Function */
+    /* Name.Label */
+    /* Name.Namespace */
+    /* Name.Other */
+    /* Name.Property */
+    /* Name.Tag */
+    /* Name.Variable */
+    /* Operator.Word */
+    /* Text.Whitespace */
+    /* Literal.Number.Float */
+    /* Literal.Number.Hex */
+    /* Literal.Number.Integer */
+    /* Literal.Number.Oct */
+    /* Literal.String.Backtick */
+    /* Literal.String.Char */
+    /* Literal.String.Doc */
+    /* Literal.String.Double */
+    /* Literal.String.Escape */
+    /* Literal.String.Heredoc */
+    /* Literal.String.Interpol */
+    /* Literal.String.Other */
+    /* Literal.String.Regex */
+    /* Literal.String.Single */
+    /* Literal.String.Symbol */
+    /* Name.Builtin.Pseudo */
+    /* Name.Variable.Class */
+    /* Name.Variable.Global */
+    /* Name.Variable.Instance */
+    /* Literal.Number.Integer.Long */
+    /* Generic Heading & Diff Header */
+    /* Generic.Subheading & Diff Unified/Comment? */
+    /* Generic.Deleted & Diff Deleted */
+    /* Generic.Inserted & Diff Inserted */
+/* } */
+/* 
+.highlight .hll {
+    background-color: #49483e;
+}
+
+.highlight .c {
+    color: #75715e;
+}
+
+.highlight .err {
+    color: #960050;
+    background-color: #1e0010;
+}
+
+.highlight .k {
+    color: #66d9ef;
+}
+
+.highlight .l {
+    color: #ae81ff;
+}
+
+.highlight .n {
+    color: #f8f8f2;
+}
+
+.highlight .o {
+    color: #cc7832;
+}
+
+.highlight .p {
+    color: #fdfd6c;
+}
+
+.highlight .cm {
+    color: #fcba03;
+}
+
+.highlight .cp {
+    color: #75715e;
+}
+
+.highlight .c1 {
+    color: #acca8b;
+}
+
+.highlight .cs {
+    color: #75715e;
+}
+
+.highlight .ge {
+    font-style: italic;
+}
+
+.highlight .gs {
+    font-weight: bold;
+}
+
+.highlight .kc {
+    color: #66d9ef;
+}
+
+.highlight .kd {
+    color: #00d0a5;
+}
+
+.highlight .kn {
+    color: #f92672;
+}
+
+.highlight .kp {
+    color: #66d9ef;
+}
+
+.highlight .kr {
+    color: #66d9ef;
+}
+
+.highlight .kt {
+    color: #66d9ef;
+}
+
+.highlight .ld {
+    color: #e6db74;
+}
+
+.highlight .m {
+    color: #ae81ff;
+}
+
+.highlight .s {
+    color: #e6db74;
+}
+
+.highlight .na {
+    color: #a6e22e;
+}
+
+.highlight .nb {
+    color: #f8f8f2;
+}
+
+.highlight .nc {
+    color: #ff8080;
+}
+
+.highlight .no {
+    color: #66d9ef;
+}
+
+.highlight .nd {
+    color: #a6e22e;
+}
+
+.highlight .ni {
+    color: #f8f8f2;
+}
+
+.highlight .ne {
+    color: #a6e22e;
+}
+
+.highlight .nf {
+    color: #bed6ff;
+}
+
+.highlight .nl {
+    color: #f8f8f2;
+}
+
+.highlight .nn {
+    color: #f8f8f2;
+}
+
+.highlight .nx {
+    color: #a6e22e;
+}
+
+.highlight .py {
+    color: #f8f8f2;
+}
+
+.highlight .nt {
+    color: #f92672;
+}
+
+.highlight .nv {
+    color: #6c9ff8;
+}
+
+.highlight .ow {
+    color: #f92672;
+}
+
+.highlight .w {
+    color: #d0d0d0;
+}
+
+.highlight .mf {
+    color: #ae81ff;
+}
+
+.highlight .mh {
+    color: #ae81ff;
+}
+
+.highlight .mi {
+    color: #f8ff30;
+}
+
+.highlight .mo {
+    color: #ae81ff;
+}
+
+.highlight .sb {
+    color: #e6db74;
+}
+
+.highlight .sc {
+    color: #e6db74;
+}
+
+.highlight .sd {
+    color: #e6db74;
+}
+
+.highlight .s2 {
+    color: #e6db74;
+}
+
+.highlight .se {
+    color: #ae81ff;
+}
+
+.highlight .sh {
+    color: #e6db74;
+}
+
+.highlight .si {
+    color: #e6db74;
+}
+
+.highlight .sx {
+    color: #e6db74;
+}
+
+.highlight .sr {
+    color: #e6db74;
+}
+
+.highlight .s1 {
+    color: #e6db74;
+}
+
+.highlight .ss {
+    color: #e6db74;
+}
+
+.highlight .bp {
+    color: #f8f8f2;
+}
+
+.highlight .vc {
+    color: #f8f8f2;
+}
+
+.highlight .vg {
+    color: #f8f8f2;
+}
+
+.highlight .vi {
+    color: #f8f8f2;
+}
+
+.highlight .il {
+    color: #ae81ff;
+}
+
+.highlight .gu {
+    color: #75715e;
+}
+
+.highlight .gd {
+    color: #f92672;
+}
+
+.highlight .gi {
+    color: #a6e22e;
+}
+
+.highlight .lineno {
+    color: #ffe5a0;
+}
+ */
+
+.bodycolor {
+    --color-blue: #4386c3;
+    --color-green: #0ab534;
+    --color-yellow: #ffc342;
+    --color-invert: #000;
+    --color-faded: #555;
+    --color-faded-invert: #bbb;
+    --font-color: #4b4b4b;
+    --font-color-darker: #333;
+    --color-background: #f6f6f6;
+    --color-background-post: #fff;
+    --font-bold-color: #222;
+    --code-bg: #fff;
+    --code-bd: #e4e2e2;
+    --code-inline-text: #067b26;
+    --code-inline-background: #ececec;
+    --code-inline-bd: 1px solid #ddd;
+    --a-list-homepage: #4b4b4b;
+    --a-list-homepage-bd: #cacaca;
+    --font-a: #0b74cd;
+    --font-a-border: #0b74cda6;
+    --filter-invert: invert(1);
+    --toc-title: #3a3a3a;
+    --toc-title-bd: #ccc;
+    --toc-appendix: #545454;
+    --heading-color: #3a3a3a;
+    --wave-bd-index: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 70 500 60' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='500' style='stroke: none; fill: %23f6f6f6;' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none; fill: %23282a36;'%3E%3C/path%3E%3C/svg%3E);
+    --wave-bd-post: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 70 500 60' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='500' style='stroke: none; fill: %23fff;' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none; fill: %23282a36;'%3E%3C/path%3E%3C/svg%3E);
+    --badge-black-bg: #f3f3f3;
+    --badge-black-bd: #ddd;
+    --table-bg: #e8e8e8;
+    --badge-green: #0ab534;
+    --badge-reading: #15941c;
+    --badge-choice: #ac3b8c;
+    --scroll-thumb-bg: #ced4da;
+    --scroll-thumb-bg-hover: #adb5bd;
+    --bg-hs-box: rgba(255, 255, 255, 0.25);
+    --prism-bg: #f7f7f7;
+    --prism-color: #525252;
+    --prism-border: #e4e2e2;
+    --prism-selection: #b3d4fc;
+    --prism-token-doctype: slategray;
+    --prism-token-doctype-tag: green;
+    --prism-token-comment: #007979;
+    --prism-token-number: #b854f6;
+    --prism-token-string: #ca4f0e;
+    --prism-token-function: #2e68fc;
+    --prism-token-class-name: #3b8fce;
+    --prism-token-variable: #905;
+    --prism-token-selector: #690;
+    --prism-token-cdata: slategray;
+    --prism-token-regex: #e90;
+    --prism-token-rule: #c7254e;
+    --prism-token-attr-name: #007cbe;
+    --prism-token-parameter: #b61bb6;
+    --prism-token-constant: #4f1fb6;
+    --prism-highlight-line-bg: #dfdfdf;
+    --prism-highlight-line-add-bg: #00c7134f;
+    --prism-highlight-line-remove-bg: #ff9f9f94;
+    --alert-info-bg: #5ca7ff30;
+    --alert-info-bd: #5ca7ff;
+    --alert-success-bg: #34d05830;
+    --alert-success-bd: #34d058;
+    --alert-danger-bg: #ff818e30;
+    --alert-danger-bd: #ff818e;
+    --alert-warning-bg: #ffcd0030;
+    --alert-warning-bd: #ffcd00;
 }
