@@ -26,6 +26,8 @@ updated: 2021-10-28 1:41 PM
 ## Udemy course 
 [course-link](https://www.udemy.com/course/matlabsimulink-for-the-absolute-beginner/learn/lecture/10049600#overview)
 
+[git-project-link](https://github.com/aiegoo/matlab-coursera.git) (:. matlab python project)
+
 {% include taglogic.html %}
 
 {% include links.html %}
