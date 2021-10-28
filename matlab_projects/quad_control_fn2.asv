@@ -1,0 +1,90 @@
+% The function used with the program: Quadrotor control
+function xdot = quad_control_fn2(t,~)
+
+% time for change start of each variable
+ztime = 3;
+phitime = 1;
+thetatime = 0.2;
+psitime = 2;
+%%% HEIGHT %%%
+if t < ztime
+Zd = Zinit;
+end
+if t >= ztime
+Zd = ZdF;
+end
+%%%%%%%%%%%%%%
+%%% Phi %%%
+if t < phitime
+Phid = Phiinit;
+end
+if t >= phitime
+Phid = PhidF;
+end
+%%%%%%%%%%%%%%
+%%% Theta %%%
+if t < thetatime
+Thetad = Thetainit;
+end
+if t >= thetatime
+Thetad = ThetadF;
+end
+%%%%%%%%%%%%%%
+%%% Psi %%%
+if t < psitime
+Psid = Psiinit;
+end
+if t >= psitime
+Psid = PsidF;
+end
+%%%%%%%%%%%%%%
+PsidF = 2*pi;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+thetaddot = 0;
+phiddot = 0;
+psiddot = 0;
+Zddot = 0;
+% Zd = 10;
+ % Bounding the angles within the -2*pi / 2*pi range
+ if (x(7)> 2*pi || x(7)< - 2*pi)
+ x(7) = rem(x(7),2*pi);
+ end
+
+ if (x(9)> 2*pi || x(9)< - 2*pi)
+ x(9) = rem(x(9),2*pi);
+ end
+
+ if (x(11)> 2*pi || x(11)< 2*pi)
+ x(11) = rem(x(11),2*pi);
+ end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%PD-Z-Control%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Evaluate the Controls
+ U = []; % The control vector
+ U(1) = m*(g + Kpz*(Zd - x(5)) + Kdz*( -
+x(6)))/(cos(x(9))*cos(x(7))); % Total Thrust on the body
+along z-axis
+ U(2) = (Kpp*(Phid - x(7)) + Kdp*( - x(8))); % Roll input
+ U(3) = (Kpt*(Thetad - x(9)) + Kdt*( - x(10))); % Pitch
+input
+ U(4) = (Kpps*(Psid - x(11)) + Kdps*( - x(12))); % Yawing
+moment
+
+ U = real(U);
+ U = [U(1);U(2);U(3);U(4)]; % The control vector
+
+% %Bounding the controls
+% if U(1) > 15.7
+% U(1) = 15.7;
+% end
+%
+% if U(1) < 0
+% U(1) = 0;
+% end
+%
+% for j = 2:4
+% if U(j) > 1
+% U(j) = 1;
+
