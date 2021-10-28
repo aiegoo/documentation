@@ -992,6 +992,8 @@ pre {
 }
 pre.highlight, pre p {
     word-break: keep-all !important;
+    color: #d6deeb;
+    background-color: #272822;
 }
 
 
