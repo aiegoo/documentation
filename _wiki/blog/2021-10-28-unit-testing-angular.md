@@ -28,7 +28,7 @@ updated: 2021-10-28 10:40
 {{site.data.alerts.note}}
 Statements are referring to JavaScript statements, such as every expression, control flow statement, etc. Note that you could have 100% line coverage but not 100% state‐ment coverage because you can put multiple statements on a single line in JavaScript. Branch coverage refers to control flow statements, such as if-else. If you have an if-else statement and your test exercises only the if part, you will have 50% branch coverage for that statement.
 <pre>
-``` bash
+~~~ bash
 $ npm test -- --coverage
 
 > meadowlark@1.0.0 test
@@ -52,7 +52,7 @@ Tests:       4 passed, 4 total
 Snapshots:   0 total
 Time:        1.448 s
 Ran all test suites.
-```
+~~~
 </pre>
 {{site.data.alerts.end}}
 
