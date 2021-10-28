@@ -45,7 +45,7 @@ There are 4 types of merging, like in [SQL](https://www.w3schools.com/sql/sql_jo
 - **Left**: includes all of the rows from the "left" dataframe along with any rows from the "right" dataframe with a common key; the result retains all columns from both of the original dataframes.
 - **Right**: includes all of the rows from the "right" dataframe along with any rows from the "left" dataframe with a common key; the result retains all columns from both of the original dataframes.
 
-![Types of merge]({{img-url}}/type_of_join.png){:.img-full-100}
+![Types of merge](images/dlml/type_of_join.webp){:.img-full-100}
 
 On **the same column name**,
 

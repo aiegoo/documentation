@@ -14,9 +14,9 @@
     "express-handlebars": "^3.0.2"
   },
   "devDependencies": {
-    "eslint": "^5.15.3",
-    "jest": "^24.9.0",
-    "portfinder": "^1.0.20",
-    "puppeteer": "^1.13.0"
+    "eslint": "^8.1.0",
+    "jest": "^27.3.1",
+    "portfinder": "^1.0.28",
+    "puppeteer": "^1.20.0"
   }
 }
