@@ -106,7 +106,7 @@ test('500 handler renders', () => {
 
 **Ref:**
 [meet puppeteer.md](meet-puppeteer.html)
-
+[creating a simple test code](#simple-test)
 ## Thi
 
 ## Install NodeJS & NPM
@@ -318,6 +318,105 @@ npm i --save npm-run-all
 }
 ```
 :::
+
+## simple test
+#### 간단한 자바스크립트 테스트 코드 만들어보기
+
+간단한 테스트 코드 작성을 위해서 아래와 같이 두 숫자의 합을 구하는 함수를 정의합니다.
+
+
+```js
+function sum(a, b) {
+	return a + b;
+}
+```
+
+이제 이 함수의 결과를 확인하는 테스트 코드를 작성해보겠습니다.
+함수의 결과 값을 result라 하고, 기대 값을 expected라고 하겠습니다.
+
+```js
+var result = sum(1, 2);
+var expected = 5;
+
+if (result !== expected) {
+	throw new Error(result + ' is not equal to ' + expected);
+}
+```
+
+두 개의 합을 더한 결과(result)는 3이고 기대 값(expected)는 5이기 때문에 아래와 같은 오류가 발생합니다.
+
+![error]({{ site.url }}/images/posts/web/javascript/js-testing/error1.png)
+
+#### 간단한 테스트 함수 만들어보기
+
+앞의 코드를 API 형태로 사용할 수 있게 함수로 변환해보겠습니다. 아래의 API 형태는 일반적인 테스트 라이브러리에서 흔하게 찾아볼 수 있습니다.
+
+```js
+expect(result).toBe(expected)
+```
+
+위와 같은 API를 사용하기 위해 앞에서 살펴본 테스트 코드를 expect()라는 함수에 포함합니다.
+테스트 함수의 코드는 다음과 같습니다.
+
+```js
+function sum(a, b) {
+	return a + b;
+}
+
+function expect(result) {
+  return {
+    toBe: function(expected) {
+      if (result !== expected) {
+      	throw new Error(result + ' is not equal to ' + expected);
+      }
+    }
+  }
+}
+```
+
+위의 함수를 아래와 같이 실행하면 아까와 같이 동일한 에러가 발생합니다.
+
+```js
+expect(sum(1,2)).toBe(5);
+```
+
+![error]({{ site.url }}/images/posts/web/javascript/js-testing/error1.png)
+
+#### 그럴싸한 테스트 함수 만들어보기
+
+앞에서 작성한 테스트 함수는 몇 번째 줄에서 오류가 났는지 추적하기가 어렵다는 단점이 있습니다.
+또한, 각 테스트 함수의 역할이 구분되지 않죠. 이번엔 좀 더 의미 있는 테스트 함수를 작성해보겠습니다.
+
+```js
+function test(title, testCode) {
+  try {
+    testCode();
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+function expect(result) {
+  return {
+    toBe: function(expected) {
+      if (result !== expected) {
+      	throw new Error(result + ' is not equal to ' + expected);
+      }
+    }
+  }
+}
+```
+
+위 코드의 모양은 전형적인 테스트 라이브러리의 API 형태와 비슷합니다.
+위 함수를 이용하면 다음과 같이 테스트를 할 수 있습니다.
+
+```js
+test('sum(1, 2) is not equal 5', function() {
+  expect(sum(1, 2)).toBe(5);
+});
+```
+
+앞의 예제와 마찬가지로 동일한 오류를 발생시키지만 이번엔 좀 더 추적하기가 쉽습니다.
 
 {% include taglogic.html %}
 
