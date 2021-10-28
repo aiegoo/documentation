@@ -103,6 +103,10 @@ test('500 handler renders', () => {
 <p>To invoke our render, we need request and response objects. We’d be writing code all week if we wanted to simulate the whole request and response objects, but fortunately we don’t actually need much from them. We know that we don’t need anything at all from the request object in this case (so we just use an empty object), and the only thing we need from the response object is a render method. Note how we construct the render function: we just call a Jest method called jest.fn(). This creates a generic mock function that keeps track of how it’s called.</p>
 </pre>
 {{site.data.alerts.end}}
+
+**Ref:**
+[meet puppeteer.md](meet-puppeteer.html)
+
 ## Thi
 
 ## Install NodeJS & NPM
