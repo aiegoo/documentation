@@ -24,6 +24,9 @@ updated: 2021-10-28 10:40
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## webdev-node unit test
+
+{{site.data.alerts.note}}
+<pre>
 ``` bash
 $ npm test -- --coverage
 
@@ -49,6 +52,8 @@ Snapshots:   0 total
 Time:        1.448 s
 Ran all test suites.
 ```
+</pre>
+{{site.data.alerts.end}}
 
 ## Thi
 ## Angular Unit Testing
