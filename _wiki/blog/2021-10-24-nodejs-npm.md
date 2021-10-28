@@ -112,12 +112,14 @@ test('500 handler renders', () => {
 
 {{site.data.alerts.note}}
 <pre>
+<p>
 1. Starts our application server on an unoccupied port
 2. Launches a headless Chrome browser and opens a page
 3. Navigates to our application’s home page
 4. Finds a link with data-test-id="about" and clicks it
 5. Waits for the navigation to happen
 6. Verifies that we are on the /about page
+</p>
 {% highlight js %}
 const portfinder = require('portfinder')
 const puppeteer = require('puppeteer')
