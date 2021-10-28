@@ -24,4 +24,14 @@ This is my first web page I have created, without any css, html or jquery snippe
   - I looked for something where a community is really active; Saleor in the beginning and then Oscar. Oscar is a complete django framework, providing a front-end, backend and blog with an admin panel for customer/product/shipping/payment management. 
   - I later customized it for my older job. www.lightup.co.kr/en is built to integrate all of the Oscar functionality with markdown editing tools. [front-end](http://www.lightup.co.kr/en) [admin](http://159.65.8.38:10088/admin)  [blog](http://159.65.8.38:10088/blog)
 
+## my profile goal as a front-end engineer
+- Profound knowledge of JavaScript (4+ years), especially React (3+years) and Typescript (3+ years).
+- You have experience with testing and bundling of Javascript code
+- You treat CSS as a first class citizen and have deep knowledge in CSS Frameworks and Preprocessors (e.g. Sass, SCSS)
+- You are comfortable with the ins-and-outs and capable of squeezing every millisecond of performance out of the browser
+- Putting code live every day is a given
+- You have been part of an agile development team. You favor open communication, constant feedback and short decision paths
+- You have a “never-stop-learning” attitude and a desire to develop and grow
+- You are fluent in English
+
 {% include links.html content="https://aiegoo.github.io/resume" %}
