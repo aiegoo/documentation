@@ -69,6 +69,7 @@ test('home page renders', () => {
   expect(res.render.mock.calls.length).toBe(1)
   expect(res.render.mock.calls[0][0]).toBe('home')
 })
+// the first array index specifies which invocation, and the second one specifies which argument
 
 test('about page renders with fortune', () => {
   const req = {}
