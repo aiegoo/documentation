@@ -23,6 +23,33 @@ updated: 2021-10-28 10:40
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
+## webdev-node unit test
+``` bash
+$ npm test -- --coverage
+
+> meadowlark@1.0.0 test
+> jest "--coverage"
+
+ PASS  lib/__tests__/handlers.test.js
+  √ home page renders (3 ms)
+  √ about page renders with fortune (1 ms)
+  √ 404 handler renders
+  √ 500 handler renders
+
+-------------|---------|----------|---------|---------|-------------------
+File         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+-------------|---------|----------|---------|---------|-------------------
+All files    |     100 |      100 |     100 |     100 |
+ fortune.js  |     100 |      100 |     100 |     100 |
+ handlers.js |     100 |      100 |     100 |     100 |
+-------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        1.448 s
+Ran all test suites.
+```
+
 ## Thi
 ## Angular Unit Testing
 
