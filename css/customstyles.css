@@ -1127,6 +1127,7 @@ span.soft {
     ul#mysidebar {
         width: 225px;
         position: fixed;
+        min-height: 2.5rem;
     }
 }
 
