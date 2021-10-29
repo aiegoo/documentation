@@ -1,7 +1,7 @@
 ---
 name: C# interview pointer
 layout: post
-permalink: 2021-09-30-itnerview-pointer-cshop.html
+permalink: 2021-09-30-interview-pointer-cshop.html
 sidebar: other_sidebar
 collection: wiki
 summary: "C# Interview Questions"
