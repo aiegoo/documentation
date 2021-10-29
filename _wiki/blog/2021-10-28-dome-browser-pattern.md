@@ -9,14 +9,14 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "javascript"
-summary: "Thu, Oct 28, 21, accessing"
+keywords: "javascript dome tree events listener manipulation innerhtml"
+summary: "Thu, Oct 28, 21, Javascipt Patterns 책의 8장 'DOM 과 브라우저 패턴' 을 요약"
 excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
 date: 2021-10-28T18:11:01 +0900
-updated: 2021-10-28 18:11
+updated: 2021-10-29 20:11
 ---
 * TOC
 {:toc}
