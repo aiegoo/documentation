@@ -14,7 +14,6 @@ public: true
 parent: [[Web-Category]]
 latex: false
 ---
-
 ## [[Gray-Category]]{어디에 둘 지 모를때 Category}
 
 * [[stackoverflow_searchhelp]]{스택 오버플로우에서 검색하기}
