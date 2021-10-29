@@ -116,7 +116,7 @@ test('500 handler renders', () => {
 1. Starts our application server on an unoccupied port
 2. Launches a headless Chrome browser and opens a page
 3. Navigates to our application’s home page
-4. Finds a link with data-test-id="about" and clicks it
+4. Finds a link with data-test-id="about" to click it
 5. Waits for the navigation to happen
 6. Verifies that we are on the /about page
 </p>
@@ -154,7 +154,7 @@ test('home page links to about page', async () => {
 {{site.data.alerts.end}}
 
 ### Eslint
-Broadly speaking, a linting error has one of three causes:
+- Broadly speaking, a linting error has one of three causes:
 • It’s a legitimate problem, and you should fix it. It may not always be obvious, in which case you may need to refer to the ESLint documentation for the particular error.
 • It’s a rule you don’t agree with, and you can simply disable it. Many of the rules in ESLint are a matter of opinion. I’ll demonstrate disabling a rule in a moment.
 • You agree with the rule, but there’s an instance where it’s infeasible or costly to fix in some specific circumstance. For those situations, you can disable rules for only specific lines in a file, which we’ll also see an example of.
