@@ -303,7 +303,7 @@ it('should create the app', () => {
 
 ### Child component with input
 
-👉  Good to read: [Towards Better Testing In Angular. Part 1 — Mocking Child Components | by Abdul Wahab Rafehi | Medium](https://medium.com/@abdul_74410/towards-better-testing-in-angular-part-1-mocking-child-components-b51e1fd571da)
+👉  Good to read: [Towards Better Testing In Angular. Part 1 — Mocking Child Components | by Abdul Wahab Rafehi | [Medium](https://medium.com/@abdul_74410/towards-better-testing-in-angular-part-1-mocking-child-components-b51e1fd571da)
 
 💡 Recommended in the Angular Testing Guide, is to manually mock (or stub) components
 
@@ -333,7 +333,7 @@ If cannot find child component errors? ([source](https://medium.com/@abdul_74410
 
 - Some examples of checking parent.
     
-    ![Angular%20Unit%20Testing%20d05340b7b5f04e4d8e07a372822bee6e/Untitled.png](Angular%20Unit%20Testing%20d05340b7b5f04e4d8e07a372822bee6e/Untitled.png)
+    ![Angular-Unit-Testing](Angular%20Unit%20Testing%20d05340b7b5f04e4d8e07a372822bee6e/Untitled.png)
     
 
 ### `nativeElement` contains?
