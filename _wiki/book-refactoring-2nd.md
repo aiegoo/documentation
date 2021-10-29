@@ -466,4 +466,218 @@ weight: 3
 
 ## 리팩터링 카탈로그를 보는 법
 
+## refactoring result
+
+``` bash
+$ mocha --watch --recursive --require babel-core/register
+
+
+
+  statement
+    √ should print a statement for multiple plays, single customer and multiple seats in plain text
+    √ should print a statement for multiple plays, single customer and multiple seats in html
+
+  customerName
+    √ should give "occupant" if customer is "unknown" 
+    √ should give customer name if customer is not "unknown" 
+
+  billingPlan
+    √ should give basic billing plan
+    √ should give customer billing plan when it is not "unknown" 
+
+  changeBillingPlan
+    √ do nothing to customer billing plan is customer is "unknown" 
+    √ change customer billing plan when customer is not "unknown" 
+
+  weeksDelinquent
+    √ should have no/zero weeks delinquent for unknown customer
+    √ should report weeks delinquent from customer payment history
+
+  plumages
+    √ calculates plumages for all supported birds, gives unknown for unsupported 
+
+  speeds
+    √ calculates airSpeedVelocity for all supported birds, gives null for unsupported 
+
+  rating`
+    √ give a B
+
+  payAmount
+    √ calculate pay amount for Separated
+    √ calculate pay amount for Retired
+    √ calculate pay amount for not-retired and non-separated
+
+  adjustedCapital
+    √ give 0 adjusted capital if capital is 0 or less than 0
+    √ give 0 adjusted capital if interestRate is 0 or less than 0
+    √ give 0 adjusted capital if duration is 0 or less than 0
+    √ calculate adjusted capital when capital, interestRate and duration are greater than 0
+
+  baseCharge
+    √ should be zero when usage is zero
+    √ should be zero when usage is less than zero
+    √ bottom band
+    √ middle band
+    √ top band
+
+  temperatureAlerts
+    √ should not report alert when room low and high temperature are in range
+    √ should report alert when room low temperature is outside range
+    √ should report alert when room high temperature is outside range
+
+  temperatureAlerts
+    √ should not report alert when room low and high temperature are in range
+    √ should report alert when room low temperature is outside range
+    √ should report alert when room high temperature is outside range
+
+  ChargeCalculator
+    √ should calculate total  charge
+
+  Employee
+    √ create a Manager with the employee name 
+    √ create an Engineer with the employee name 
+
+  score
+    √ gives a score to a smoker with low original state
+    √ gives a score to a smoker with high original state
+    √ gives a score to a NON-smoker with low original state
+    √ gives a score to a NON-smoker with hight original state
+
+  Order
+    √ should calculate final price for quantity <= 100
+    √ should calculate final price for quantity > 100
+
+  Booking
+    √ should have not talkBack on peak day and calculate base price for peak day
+    √ should have talkBack on non-peak day and calculate base price for non-peak day
+
+  PremiumBooking
+    √ should have talkBack on peak day and calculate base price for peak day
+    √ should have talkBack on non-peak day and calculate base price for non-peak day
+
+  Employee
+    √ create engineer
+    √ create manager
+    √ create salesman
+    √ throw error for invalid employee code
+
+  ascentVelocity
+    √ should calculate ascent velocity
+
+  findMiscreant
+    √ find Don and set off alarm
+    √ find John and set off alarm
+
+  circumference
+    √ should calculate circumference given a radius
+
+  Book
+    √ report no reservation for non reserved customers
+    √ report reservation for reserved customers
+
+  inNewEngland
+    √ should find no New England Customers when there are no customers
+    √ should find a single New England Customer
+    √ should find a multiple New England Customer
+
+  CombineFunctionsIntoClass-Client1.js
+    √ baseCharge
+
+  CombineFunctionsIntoClass-Client2.js
+    √ taxableCharge
+
+  CombineFunctionsIntoClass-Client3.js
+    √ basicChargeAmount
+
+  defaultOwner
+    √ is Martin Folwer
+    √ can be set
+    √ can not be changed outside the code
+
+  Extract Variable 1
+    √ should price order which quantity is under 50
+    √ should price order which quantity is above 50
+
+  Extract Variable 2
+    √ should price order which quantity is under 50
+    √ should price order which quantity is above 50
+
+  Rating
+    √ should give rating 1 when late deliveries less than or equal to 5 
+    √ should give rating 2 when late deliveries more than 5 
+
+  isDeliveryFree
+    √ should have free delivery for order price over 1000
+    √ should not have free delivery for order price equal or less than 1000
+
+  readingsOutsideRange
+    √ give the reading outside temperature outside range
+
+  PrintOwing
+    √ should print owing
+
+  priceOrder
+    √ should price an order with discount and shipping cost applied
+
+  Person
+    √ can set courses
+    √ can add courses
+    √ remove courses
+    √ internal courses can not be modified by the courses passed to setter
+    √ internal courses can not be modified by the courses obtained by getter
+
+  organization
+    √ should give right name
+    √ should set name
+
+  Person
+    √ returns name, area code, number and telephone number correctly
+
+  Person
+    √ report tracking information
+
+  Shipment
+    √ report tracking information
+
+  highPriorityCount
+    √ has 2 orders
+
+  Order
+    √ calculates price when total cost is lower than 1000
+    √ calculates price when total cost is more than 1000
+
+  foundPerson
+    √ can find candidates
+    √ report no candidate is found
+
+  Customer
+    √ calculates discount
+
+  trackSummary
+    √ calculate distance, pace and time between two points
+
+  Account
+    √ has bankCharge of 4.5 when daysOverdrawn is 0
+    √ has bankCharge more than 4.5 when daysOverdrawn is more than 0
+    √ has no overdraftCharge when no overdrawn for non premium
+    √ has a basis overdraftCharge even when no overdrawn for non premium
+
+  photoDiv
+    √ render a photo div
+
+  renderPerson
+    √ has bankCharge of 4.5 when daysOverdrawn is 0
+
+  acquireData
+    √ pick India cities only
+
+  reportYoungestAgeAndTotalSalary
+    √ report youngest age and total salary
+
+  Main
+    √ should be a class
+
+
+  100 passing (215ms)
+  ```
 {% include links.html %}
