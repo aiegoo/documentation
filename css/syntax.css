@@ -24,7 +24,7 @@
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #aaaaaa } /* Generic.Subheading */
 .highlight .gt { color: #aa0000 } /* Generic.Traceback */
-.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kc {font-weight: bold; color:#aaa6a6;}/* Keyword.Constant */
 .highlight .kd { font-weight: bold;
                  color: #7fdbca;} /* Keyword.Declaration */
 .highlight .kp { font-weight: bold } /* Keyword.Pseudo */
