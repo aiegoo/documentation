@@ -9,7 +9,7 @@ summary: "Exploit the power of modern javascript and avoid the pitfalls "
 tags: [web, regex, javascript]
 excerpt_separator: <!--more-->
 date: 2021-09-19 12:42:03 +0900
-updated: 2021-10-23 11:23 AM
+updated: 2021-10-29 3:20 PM
 toc: true
 public: true
 parent: [[Books-Category]] 
@@ -27,7 +27,7 @@ weight: 4
 * TOC
 {:toc}
 
-# 개요
+## 개요
 
 | ![표지](images/jsimpatient.jpg) | 저자: Cay Horstmann<br> 책제목 : Javascript for the impatient  <br> 부제 : Exploit the power of modern javascript and avoid the pitfalls<br><br> 출판사 : 원책: Pearson, Addison-Wesley <br> ISBN 영문 9780136502142 <br> <br> 값: 28.79USD |
 
@@ -37,9 +37,7 @@ Cay S. Horstmann is principal author of Core Java™, Volumes I & II, Eleventh E
 ### Cay Hortsmann
 [Source Code](https://github.com/aiegoo/jsimpatient.git)
 
-## 시작전
-
-### 초판의 추천사
+## 시작전, 초판의 추천사
 
 
 
@@ -85,6 +83,6 @@ The purpose of this book is to give you a firm grounding of the JavaScript langu
 | A string | A symbol | An object
 | primitive types 
 
-# 05 리팩터링 카탈로그를 보는 법
+
 
 {% include links.html %}

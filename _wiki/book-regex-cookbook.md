@@ -9,7 +9,7 @@ summary: "여덟 가지 프로그래밍 언어별 완벽 해설 "
 tags: [web, regex, publishing]
 excerpt_separator: <!--more-->
 date: 2021-09-20 12:42:03 +0900
-updated: 2021-09-21 10:18 AM
+updated: 2021-10-29 3:15 PM
 toc: true
 simple_map: true
 map_name: javascript
@@ -24,11 +24,11 @@ weight: 2
 * TOC
 {:toc}
 
-# 개요
+## 개요
 
 | ![표지](https://www.hanbit.co.kr/data/books/B1048739715_l.jpg) | 저자: 잰 고이바에르츠(Jan Goyvaerts), 스티븐 리바이선(Steven Levithan) <br> 책제목 : 한 권으로 끝내는 정규표현식<br> (원서 제목 : Regular Expressions Cookbook) <br> 부제 : 여덟 가지 프로그래밍 언어별 완벽 해설<br> (원서 부제: Detailed Solutions in Eight Programming Languages)<br><br> 출판사 : 한빛출판네트워크 (원책: O'Reilly Media, Inc.) <br> ISBN 한글 : 9788979147742 <br> ISBN 영문 : 9781449319434 <br> <br> 값: 36,000원 |
 
-## 추가 개요 
+### 추가 개요 
 
 * 이 책은 1판 번역서이다. ( 출간일: 2010-09-17 , [한빛출판사 링크](https://www.hanbit.co.kr/store/books/look.php?p_code=B1048739715))
 * 영문판은 2판 까지 나왔다. ( 출간일: 2012년, [O'Reilly 링크](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/))
@@ -36,9 +36,7 @@ weight: 2
 * [Outsider's Dev Stroy의 해당 북 리뷰](https://blog.outsider.ne.kr/546)
 * [하이바네.P의 해당 북 리뷰](https://chszard.tistory.com/entry/리뷰-한-권으로-끝내는-정규표현식)
 
-## 저자 설명
-
-### 얀 고이바르츠 (Jan Goyvaerts)
+## 저자 설명 - 얀 고이바르츠 (Jan Goyvaerts)
 
 <style>
 .author-container {display: flex; align-items: center; justify-content: space-around;}
@@ -93,13 +91,13 @@ weight: 2
 [stevlev-img]:https://blog.stevenlevithan.com/assets/images/steven_levithan2.jpg
 {:width="180px"}
 
-# Chapter1. Introduction to Regular Expressions 
+## Chapter1. Introduction to Regular Expressions 
 
 * 실무에 바로 적용할 수 있는 내용은 4장 ~ 8장(마지막장) 참고
 * 일단 정규식을 코드에 넣어버리면 에러가 발생해도 찾기 힘듬
   * 1장에서 소개하는 툴로 테스트하고 디버깅하는 것이 좋음
 
-## 1. Regular Expressions Defined 
+### Regular Expressions Defined 
 
 * History of the Term "Regular Expression" 
   * 정통 컴퓨터 과학자들이 정해놓은 정의와 실용적 프로그래머들이 실용적으로 사용하는 용어에는 차이가 있음을 알아둘것
@@ -125,7 +123,7 @@ weight: 2
 
 #### Ruby
 
-## 2. Search and Replace with Regular Expressions
+### Search and Replace with Regular Expressions
 
 * 용어
   * 치환 텍스트 ( Replacement Text ) : 정규식은 아니지만 일부 정규식 문법을 사용하여 동적인 치환을 가능케 함
@@ -135,11 +133,11 @@ weight: 2
 * 각자 개발하다보니 문법과 기능이 다른 여러가지 정규식 스타일이 파생됨
 
 
-## 3. 정규표현식 작성 툴
+### 정규표현식 작성 툴
 
-# 2장. 정규표현식 기본 기술
+## 2장. 정규표현식 기본 기술
 
-## 1. 리터럴 텍스트에 일치
+### 리터럴 텍스트에 일치
 
 * [Match Literal Text 예제 실행](https://regex101.com/r/kgY65G/1)
   * 메타 문자는 기본적으로 **back slash( ∖ )** 로 escape 한다. 
@@ -161,7 +159,7 @@ weight: 2
   * 자체 모드 변경자 예제
   * sensitive(?i)caseless(?-i)sensitive 
 
-## 3. 여러 문자 중 하나와 일치 
+### 여러 문자 중 하나와 일치 
 
 * [Match One of Many Characters , calendar 예제](https://regex101.com/r/UvkSK7/1)
 * 용어
@@ -176,17 +174,17 @@ weight: 2
 * 다음 Flavor에서 `<\w>` 는  `<[a-zA-Z0-9_]>`와 언제나 결과가 같다.
   * Java, JavaScript, PCRE, Ruby
  
-# 3장. 프로그래밍을 위한 정규 표현식
-# 4장. 유효검사와 형식화
+## 3장. 프로그래밍을 위한 정규 표현식
+## 4장. 유효검사와 형식화
 
-## 13. 한국 주민등록번호
+### 한국 주민등록번호
 
 * 원서에는 없는데 역자가 집어넣은듯..
 
  
-# 5장. 단어, 행, 특수문자
-# 6장. 숫자
-# 7장. URL, 경로, 인터넷주소
-# 8장. 마크업과 데이터 상호변환
+## 5장. 단어, 행, 특수문자
+## 6장. 숫자
+## 7장. URL, 경로, 인터넷주소
+## 8장. 마크업과 데이터 상호변환
 
 {% include links.html %}

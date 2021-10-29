@@ -9,7 +9,7 @@ summary: "더글라스 크락포드가 알려주는"
 tags: [web, regex, javascript]
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-10-19 4:09 AM
+updated: 2021-10-29 3:19 PM
 toc: true
 public: true
 parent: [[Books-Category]] 
