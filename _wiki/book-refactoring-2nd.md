@@ -27,7 +27,7 @@ weight: 3
 * TOC
 {:toc}
 
-# 개요
+## 개요
 
 | ![표지](http://image.kyobobook.co.kr/images/book/xlarge/742/x9791162242742.jpg) | 저자: 마틴 파울러 (Martin Fowler) <br> 책제목 : 리팩터링 2판 (원제 : Refactoring: Improving the Design of Existing Code (2nd Edition)) <br> 부제 : 코드 구조를 체계적으로 개선하여 효율적인 리팩터링 구현하기<br><br> 출판사 : 한빛미디어 (원책: Pearson, Addison-Wesley) <br> ISBN 한글 : 979-11-6224-274-2 <br> ISBN 영문 : 978-0134757599 <br> <br> 값: 35,000원 |
 
