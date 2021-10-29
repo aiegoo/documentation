@@ -153,6 +153,11 @@ test('home page links to about page', async () => {
 </pre>
 {{site.data.alerts.end}}
 
+### Eslint
+Broadly speaking, a linting error has one of three causes:
+• It’s a legitimate problem, and you should fix it. It may not always be obvious, in which case you may need to refer to the ESLint documentation for the particular error.
+• It’s a rule you don’t agree with, and you can simply disable it. Many of the rules in ESLint are a matter of opinion. I’ll demonstrate disabling a rule in a moment.
+• You agree with the rule, but there’s an instance where it’s infeasible or costly to fix in some specific circumstance. For those situations, you can disable rules for only specific lines in a file, which we’ll also see an example of.
 
 ## Thi
 
