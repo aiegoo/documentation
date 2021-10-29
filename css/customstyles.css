@@ -995,7 +995,7 @@ pre.highlight, pre p {
     color: #d6deeb;
     background-color: #272822;
 }
-pre code {background-color: black !important;} /* to enable my custom syntax highlight and classes */
+pre figure.highlight > pre {background-color: black !important;} /* to enable my custom syntax highlight and classes */
 
 #json-box-container pre {
     margin: 0px;
