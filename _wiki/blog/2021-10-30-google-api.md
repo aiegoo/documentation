@@ -326,7 +326,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 
 <code>projects.agent.sessions.detectIntent</code>
 <ul>
-<li><code>POST https://{endpoint}/v2/{session=projects/*/locations/*/agent/sessions/*}:detectIntent</code></li>
+<li><code>POST https://{endpoint}/v2/{session=projects/*/locations/\n*/agent/sessions/*}:detectIntent</code></li>
 <li><strong>REST</strong>: <a href="https://cloud.google.com/dialogflow/es/docs/reference/rest/v2/projects.agent.sessions/detectIntent" rel="nofollow">.../v2/projects.agent.sessions/detectIntent</a></li>
 <li><strong>SDK</strong>: <a href="https://googleapis.dev/nodejs/dialogflow/latest/v2.SessionsClient.html#detectIntent" rel="nofollow">.../v2.SessionsClient.html#detectIntent</a>
 :::</li>
