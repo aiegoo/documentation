@@ -244,7 +244,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 👉 [List of samples](https://github.com/google/google-api-javascript-client/tree/master/samples).
 👉 You have to use [REST API](https://cloud.google.com/dialogflow/es/docs/reference/rest) in this case.
 
-{{site.data.alerts.info}}
+{{site.data.alerts.callout_info}}
 💡 **Tip**: If you are using [VSCode](/visual-studio-code/), you can install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to quickly create a server (port `5500` by default). Just click the button at the bottom right of the file and a website will appear.
 {{site.data.alerts.end}}
 
