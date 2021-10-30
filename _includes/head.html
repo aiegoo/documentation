@@ -51,4 +51,10 @@
 <meta  property="og:title"  content="TITLE"  />
 <meta  property="og:description"  content="DESC"  />
 <meta  property="og:image"  content="IMG"  />
+<!-- query-details run over every details element it finds and polyfills support for it, if necessary -->
+<script src="/js/zepto.min.js"></script>
+<script>jQuery = Zepto;</script>
+<script src="/js/jquery.details.min.js"></script>
+<script>$('details').details();</script>
+
 {% comment %} Copyright {% endcomment %}

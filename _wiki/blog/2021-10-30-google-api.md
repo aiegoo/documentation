@@ -271,7 +271,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 👉 [REST API](https://cloud.google.com/dialogflow/docs/reference/rest/v2-overview).
 👉 [Node.js SDK](https://googleapis.dev/nodejs/dialogflow/latest/index.html).
 
-<details markdown="1">
+<details>
 <summary>Examples</summary>
 
 <p>
