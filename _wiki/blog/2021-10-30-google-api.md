@@ -37,18 +37,6 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 <details>
 <summary>click to open</summary>
 
-<style>
-details {width: 90%;}
-details>p, details p {
-    font-family: 'NanumBarunpen';
-    font-size: 0.9em;
-    border-radius: 0 0 10px 10px;
-    background-color: #ddd;
-    padding: 2px 6px;
-    margin: 0;
-    box-shadow: 3px 3px 4px black;
-}
-</style>
 <p>
 <ol>
      <li>
@@ -118,18 +106,6 @@ The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) an
 <details>
 <summary>steps</summary>
 
-<style>
-details {width: 90%;}
-details>p, details p {
-    font-family: 'NanumBarunpen';
-    font-size: 0.9em;
-    border-radius: 0 0 10px 10px;
-    background-color: #ddd;
-    padding: 2px 6px;
-    margin: 0;
-    box-shadow: 3px 3px 4px black;
-}
-</style>
 <p>
 <ol>
      <li>
@@ -191,18 +167,6 @@ details>p, details p {
 <details>
 <summary>try something outside 'samples'</summary>
 
-<style>
-details {width: 90%;}
-details>p, details p, ol {
-    font-family: 'NanumBarunpen';
-    font-size: 0.9em;
-    border-radius: 0 0 10px 10px;
-    background-color: #ddd;
-    padding: 2px 6px;
-    margin: 0;
-    box-shadow: 3px 3px 4px black;
-}
-</style>
 <p>       
 In case you wanna try something outside the files given in <a
      href="https://github.com/googleapis/nodejs-dialogflow/tree/main/samples">samples</a>. Check 
@@ -249,23 +213,11 @@ In case you wanna try something outside the files given in <a
 
 </details>
 
-
+<hr />
 
 <details>
 <summary>Different locations?</summary>
 
-<style>
-details {width: 90%;}
-details>p, details p, ol {
-    font-family: 'NanumBarunpen';
-    font-size: 0.9em;
-    border-radius: 0 0 10px 10px;
-    background-color: #ddd;
-    padding: 2px 6px;
-    margin: 0;
-    box-shadow: 3px 3px 4px black;
-}
-</style>
 <p>
 The example in "Try something outside..." gives us an example of using different regions. Below are some remarks:
 <ol>
@@ -323,18 +275,6 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 </details>
 <summary>Steps</summary>
 
-<style>
-details {width: 90%;}
-details>p, details p, ol {
-    font-family: 'NanumBarunpen';
-    font-size: 0.9em;
-    border-radius: 0 0 10px 10px;
-    background-color: #ddd;
-    padding: 2px 6px;
-    margin: 0;
-    box-shadow: 3px 3px 4px black;
-}
-</style>
 <p>
 
      <ol>
@@ -370,18 +310,6 @@ details>p, details p, ol {
 <details>
 <summary>Examples</summary>
 
-<style>
-details {width: 90%;}
-details>p, details p, ul {
-    font-family: 'NanumBarunpen';
-    font-size: 0.9em;
-    border-radius: 0 0 10px 10px;
-    background-color: #ddd;
-    padding: 2px 6px;
-    margin: 0;
-    box-shadow: 3px 3px 4px black;
-}
-</style>
 <p>
 
 <code>projects.agent.search</code>
@@ -418,18 +346,6 @@ details>p, details p, ul {
 <details>
 <summary>Additional configurations</summary>
 
-<style>
-details {width: 90%;}
-details>p, details p, ul {
-    font-family: 'NanumBarunpen';
-    font-size: 0.9em;
-    border-radius: 0 0 10px 10px;
-    background-color: #ddd;
-    padding: 2px 6px;
-    margin: 0;
-    box-shadow: 3px 3px 4px black;
-}
-</style>
 <p>
 <ul><li>Create a collection and add the Authorization for this collection. All of its request will use the same auth method.</li><li>Create variables (on tab "Variables") to store "CLIENT ID" (<code>client_id</code>) and "CLIENT SECRET" (as <code>client_secret</code>), then use them in the form by <code>{{client_id}}</code> and <code>{{client_secret}}</code>.</li></ul>
 </p>
