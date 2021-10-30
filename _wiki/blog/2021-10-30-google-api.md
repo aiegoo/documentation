@@ -100,7 +100,9 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 👉 Link of [all samples on github](https://github.com/googleapis/nodejs-dialogflow#samples).
 
 {{site.data.alerts.note}}
-The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) and [`@type/dialogflow`](https://www.npmjs.com/package/@types/dialogflow). The new version uses only one [`@google-cloud/dialogflow`](https://www.npmjs.com/package/@google-cloud/dialogflow)!
+<p>
+The old version uses <a href="https://www.npmjs.com/package/dialogflow" rel="nofollow"><code>dialogflow</code></a> and <a href="https://www.npmjs.com/package/@types/dialogflow" rel="nofollow"><code>@type/dialogflow</code></a>. The new version uses only one <a href="https://www.npmjs.com/package/@google-cloud/dialogflow" rel="nofollow"><code>@google-cloud/dialogflow</code></a>!
+:::</p>
 {{site.data.alerts.end}}
 
 <details>
@@ -250,9 +252,8 @@ The example in "Try something outside..." gives us an example of using different
 ## Wanna try `gapi` (JS client)?
 
 {{site.data.alerts.callout_primary}}
-
-Google has announced that [they will be discontinuing the Google Sign-In JavaScript Platform Library for web](https://developers.googleblog.com/2021/08/gsi-jsweb-deprecation.html). You will have to switch to using *Google Identity Services* (or [Sign In With Google](https://developers.google.com/identity/gsi/web/guides/client-library) or `gsi`). The old service will be **completely discontinued on March 31, 2023**.
-
+<p>
+Google has announced that <a href="https://developers.googleblog.com/2021/08/gsi-jsweb-deprecation.html" rel="nofollow">they will be discontinuing the Google Sign-In JavaScript Platform Library for web</a>. You will have to switch to using <em>Google Identity Services</em> (or <a href="https://developers.google.com/identity/gsi/web/guides/client-library" rel="nofollow">Sign In With Google</a> or <code>gsi</code>). The old service will be <strong>completely discontinued on March 31, 2023</strong>.</p>
 <pre>
 {% highlight html %}
 
