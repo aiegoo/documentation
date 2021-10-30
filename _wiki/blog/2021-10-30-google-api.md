@@ -60,6 +60,7 @@ The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) an
 
 <details markdown="1">
 <summary>try something outside 'samples'</summary>
+
 <p>       
 In case you wanna try something outside the files given in [samples](https://github.com/googleapis/nodejs-dialogflow/tree/main/samples). Check [this SDK](https://googleapis.dev/nodejs/dialogflow/latest/index.html). Suppose we wanna try this one -- [`AgentsClient.searchAgents()`](https://googleapis.dev/nodejs/dialogflow/4.5.0/v2.AgentsClient.html#searchAgents)
 
@@ -100,6 +101,7 @@ In case you wanna try something outside the files given in [samples](https://git
 
 <details markdown="1">
 <summary>Different locations?</summary>
+
 <p>
 The example in "Try something outside..." gives us an example of using different regions. Below are some remarks:
 
@@ -140,6 +142,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 
 <details markdown="1">
 <summary>Steps</summary>
+
 <p>
 1. For setting up, follow [these steps](https://console.developers.google.com/apis/library).
 2. After that, you should obtain an `API_KEY` and an `CLIENT_ID`.
@@ -161,6 +164,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 
 <details markdown="1">
 <summary>Examples</summary>
+
 <p>
 `projects.agent.search`
 
@@ -183,6 +187,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 
 <details markdown="1">
 <summary>Additional configurations</summary>
+
 <p>
 - Create a collection and add the Authorization for this collection. All of its request will use the same auth method.
 - Create variables (on tab "Variables") to store "CLIENT ID" (`client_id`) and "CLIENT SECRET" (as `client_secret`), then use them in the form by `{% raw %}{{client_id}}{% endraw %}` and `{% raw %}{{client_secret}}{% endraw %}`.
