@@ -38,7 +38,59 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 <summary>click to open</summary>
 
 <p>
-<ol><li><p><a href="https://cloud.google.com/dialogflow/es/docs/reference">APIs &amp; references</a> -- the root of all things.</p><ol><li><a href="https://cloud.google.com/dialogflow/es/docs/reference/libraries/nodejs">Node.js client library</a> -- wanna use in a backend?<ol><li><a href="https://googleapis.dev/nodejs/dialogflow/latest/index.html">Dialogflow SDK Client Reference</a></li><li><a href="https://github.com/googleapis/nodejs-dialogflow">googleapis/nodejs-dialogflow</a> -- Github repo.<ol><li><a href="https://github.com/googleapis/nodejs-dialogflow#samples">Samples</a> -- wanna run these? Step to <a href="#run-samples">this section</a>.</li></ol></li></ol></li><li><a href="https://cloud.google.com/dialogflow/docs/reference/rest">REST APIs</a> -- wanna use <code>GET</code>, <code>POST</code>,...?</li></ol></li><li><p><a href="https://cloud.google.com/dialogflow/es/docs/reference/rest/v2-overview#service-endpoint">Service endpoint</a>.</p><div class="info"><p>💡 <strong>Tip</strong>: <code>us-dialogflow.googleapis.com</code> and <code>dialogflow.googleapis.com</code> are the same, so you can use <code>&lt;location&gt;-dialogflow.googleapis.com</code> in your codes.</p></div></li><li><p><a href="https://cloud.google.com/dialogflow/es/docs/how/region#regions">Available regions</a> (used in <code>locations</code>).</p><div class="info"><p>💡 <strong>Tip</strong>: <code>&lt;region&gt;-dialogflow.googleapis.com</code> = endpoint.</p></div></li><li><p><a href="https://github.com/google/google-api-javascript-client">google/google-api-javascript-client</a> -- aka <code>gapi</code>. Github repo.</p></li><li><p><a href="https://developers.google.com/apis-explorer/">Google APIs Explorer</a>.</p></li><li><p><a href="https://developers.google.com/oauthplayground/">OAuth 2.0 Playground</a>.</p></li><li><p><a href="https://cloud.google.com/iam/docs/understanding-roles?authuser=1&amp;_ga=2.35673635.-287242851.1634158283#dialogflow-roles">Understand roles</a> -- If you decide to create a service account, you will need to assign a role to some users/emails. Each role has different rights to use your data.</p></li></ol>
+<ol>
+     <li>
+          <p><a href="https://cloud.google.com/dialogflow/es/docs/reference">APIs &amp; references</a> -- the root of
+               all things.</p>
+          <ol>
+               <li><a href="https://cloud.google.com/dialogflow/es/docs/reference/libraries/nodejs">Node.js client
+                         library</a> -- wanna use in a backend?<ol>
+                         <li><a href="https://googleapis.dev/nodejs/dialogflow/latest/index.html">Dialogflow SDK Client
+                                   Reference</a></li>
+                         <li><a href="https://github.com/googleapis/nodejs-dialogflow">googleapis/nodejs-dialogflow</a>
+                              -- Github repo.<ol>
+                                   <li><a href="https://github.com/googleapis/nodejs-dialogflow#samples">Samples</a> --
+                                        wanna run these? Step to <a href="#run-samples">this section</a>.</li>
+                              </ol>
+                         </li>
+                    </ol>
+               </li>
+               <li><a href="https://cloud.google.com/dialogflow/docs/reference/rest">REST APIs</a> -- wanna use
+                    <code>GET</code>, <code>POST</code>,...?</li>
+          </ol>
+     </li>
+     <li>
+          <p><a href="https://cloud.google.com/dialogflow/es/docs/reference/rest/v2-overview#service-endpoint">Service
+                    endpoint</a>.</p>
+          <div class="info">
+               <p>💡 <strong>Tip</strong>: <code>us-dialogflow.googleapis.com</code> and
+                    <code>dialogflow.googleapis.com</code> are the same, so you can use
+                    <code>&lt;location&gt;-dialogflow.googleapis.com</code> in your codes.</p>
+          </div>
+     </li>
+     <li>
+          <p><a href="https://cloud.google.com/dialogflow/es/docs/how/region#regions">Available regions</a> (used in
+               <code>locations</code>).</p>
+          <div class="info">
+               <p>💡 <strong>Tip</strong>: <code>&lt;region&gt;-dialogflow.googleapis.com</code> = endpoint.</p>
+          </div>
+     </li>
+     <li>
+          <p><a href="https://github.com/google/google-api-javascript-client">google/google-api-javascript-client</a> --
+               aka <code>gapi</code>. Github repo.</p>
+     </li>
+     <li>
+          <p><a href="https://developers.google.com/apis-explorer/">Google APIs Explorer</a>.</p>
+     </li>
+     <li>
+          <p><a href="https://developers.google.com/oauthplayground/">OAuth 2.0 Playground</a>.</p>
+     </li>
+     <li>
+          <p><a href="https://cloud.google.com/iam/docs/understanding-roles?authuser=1&amp;_ga=2.35673635.-287242851.1634158283#dialogflow-roles">Understand
+                    roles</a> -- If you decide to create a service account, you will need to assign a role to some
+               users/emails. Each role has different rights to use your data.</p>
+     </li>
+</ol>
 </p>
 
 </details>
@@ -55,7 +107,57 @@ The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) an
 <summary>steps</summary>
 
 <p>
-<ol><li><p>Create a folder, eg. <code>/home/thi/df-samples/</code></p></li><li><p>If you come from <a href="https://dialogflow.cloud.google.com/#/agents">Dialogflow Console</a> &gt; choose an agent &gt; click on the gear next to the its name &gt; Click on "Project ID" to open Google Cloud Platform Console.</p></li><li><p>If you come from GCP Console, it's the same.</p></li><li><p>Follow <a href="https://cloud.google.com/storage/docs/reference/libraries#setting_up_authentication">these steps</a> to generate a JSON key (you'll download a JSON file). Store your JSON file in <code>df-samples/credential.json</code>. <strong>Note down</strong> the <em>project_id</em>, we will use it later, eg. <code>project_abc</code>.</p></li><li><p>Run each time you wanna test <code>export GOOGLE_APPLICATION_CREDENTIALS="/home/thi/df-samples/credential.json"</code> OR save this line to <code>/home/thi/.bashrc</code> or <code>/home/thi/.zshrc</code> (if you <a href="/terminal/#zsh-linux">use ZSH</a>) and then refresh the current terminal (with this method, you don't need to run again previous line).</p><div class="info"><p><strong>Alternative</strong>: You don't have to use system variable <code>GOOGLE_APPLICATION_CREDENTIALS</code> if you don't want. In <code>credential.json</code>, copy <code>private_key</code> and <code>client_email</code> and then use them as,</p><pre class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token keyword">const</span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AgentsClient</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>    credentials<span class="token operator">:</span> <span class="token punctuation">{</span> private_key<span class="token punctuation">,</span> client_email <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div></li><li><p>Go to <code>/df-samples/</code> and run <code>npm i @google-cloud/dialogflow</code>.</p></li><li><p>Try this <a href="https://github.com/googleapis/nodejs-dialogflow/blob/main/samples/quickstart.js">quickstart.js</a>.</p></li><li><p>On terminal, run</p><pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash">node quickstart.js project_abc</code></pre></li><li><p>Read carefully the content of each file in <a href="https://github.com/googleapis/nodejs-dialogflow/tree/main/samples">samples</a>, you have to put the corresponding inputs for the sample to work!</p></li></ol>  
+<ol>
+     <li>
+          <p>Create a folder, eg. <code>/home/thi/df-samples/</code></p>
+     </li>
+     <li>
+          <p>If you come from <a href="https://dialogflow.cloud.google.com/#/agents">Dialogflow Console</a> &gt; choose
+               an agent &gt; click on the gear next to the its name &gt; Click on "Project ID" to open Google Cloud
+               Platform Console.</p>
+     </li>
+     <li>
+          <p>If you come from GCP Console, it's the same.</p>
+     </li>
+     <li>
+          <p>Follow <a href="https://cloud.google.com/storage/docs/reference/libraries#setting_up_authentication">these
+                    steps</a> to generate a JSON key (you'll download a JSON file). Store your JSON file in
+               <code>df-samples/credential.json</code>. <strong>Note down</strong> the <em>project_id</em>, we will use
+               it later, eg. <code>project_abc</code>.</p>
+     </li>
+     <li>
+          <p>Run each time you wanna test <code>export
+                    GOOGLE_APPLICATION_CREDENTIALS="/home/thi/df-samples/credential.json"</code> OR save this line to
+               <code>/home/thi/.bashrc</code> or <code>/home/thi/.zshrc</code> (if you <a
+                    href="/terminal/#zsh-linux">use ZSH</a>) and then refresh the current terminal (with this method,
+               you don't need to run again previous line).</p>
+          <div class="info">
+               <p><strong>Alternative</strong>: You don't have to use system variable
+                    <code>GOOGLE_APPLICATION_CREDENTIALS</code> if you don't want. In <code>credential.json</code>, copy
+                    <code>private_key</code> and <code>client_email</code> and then use them as,</p>
+               <pre
+                    class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token keyword">const</span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AgentsClient</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>    credentials<span class="token operator">:</span> <span class="token punctuation">{</span> private_key<span class="token punctuation">,</span> client_email <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+          </div>
+     </li>
+     <li>
+          <p>Go to <code>/df-samples/</code> and run <code>npm i @google-cloud/dialogflow</code>.</p>
+     </li>
+     <li>
+          <p>Try this <a
+                    href="https://github.com/googleapis/nodejs-dialogflow/blob/main/samples/quickstart.js">quickstart.js</a>.
+          </p>
+     </li>
+     <li>
+          <p>On terminal, run</p>
+          <pre
+               class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash">node quickstart.js project_abc</code></pre>
+     </li>
+     <li>
+          <p>Read carefully the content of each file in <a
+                    href="https://github.com/googleapis/nodejs-dialogflow/tree/main/samples">samples</a>, you have to
+               put the corresponding inputs for the sample to work!</p>
+     </li>
+</ol>
 </p>
 
 </details>
@@ -94,6 +196,7 @@ In case you wanna try something outside the files given in [samples](https://git
     });
     main();
     ```
+    
     Then run `node search-agents.js`.
 
 </p>
