@@ -34,12 +34,12 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 
 ## Official documentation
 
-<detail markdown="1">
+<details markdown="1">
 <summary>click to open</summary>
 <p>
 <ol><li><p><a href="https://cloud.google.com/dialogflow/es/docs/reference">APIs &amp; references</a> -- the root of all things.</p><ol><li><a href="https://cloud.google.com/dialogflow/es/docs/reference/libraries/nodejs">Node.js client library</a> -- wanna use in a backend?<ol><li><a href="https://googleapis.dev/nodejs/dialogflow/latest/index.html">Dialogflow SDK Client Reference</a></li><li><a href="https://github.com/googleapis/nodejs-dialogflow">googleapis/nodejs-dialogflow</a> -- Github repo.<ol><li><a href="https://github.com/googleapis/nodejs-dialogflow#samples">Samples</a> -- wanna run these? Step to <a href="#run-samples">this section</a>.</li></ol></li></ol></li><li><a href="https://cloud.google.com/dialogflow/docs/reference/rest">REST APIs</a> -- wanna use <code>GET</code>, <code>POST</code>,...?</li></ol></li><li><p><a href="https://cloud.google.com/dialogflow/es/docs/reference/rest/v2-overview#service-endpoint">Service endpoint</a>.</p><div class="info"><p>💡 <strong>Tip</strong>: <code>us-dialogflow.googleapis.com</code> and <code>dialogflow.googleapis.com</code> are the same, so you can use <code>&lt;location&gt;-dialogflow.googleapis.com</code> in your codes.</p></div></li><li><p><a href="https://cloud.google.com/dialogflow/es/docs/how/region#regions">Available regions</a> (used in <code>locations</code>).</p><div class="info"><p>💡 <strong>Tip</strong>: <code>&lt;region&gt;-dialogflow.googleapis.com</code> = endpoint.</p></div></li><li><p><a href="https://github.com/google/google-api-javascript-client">google/google-api-javascript-client</a> -- aka <code>gapi</code>. Github repo.</p></li><li><p><a href="https://developers.google.com/apis-explorer/">Google APIs Explorer</a>.</p></li><li><p><a href="https://developers.google.com/oauthplayground/">OAuth 2.0 Playground</a>.</p></li><li><p><a href="https://cloud.google.com/iam/docs/understanding-roles?authuser=1&amp;_ga=2.35673635.-287242851.1634158283#dialogflow-roles">Understand roles</a> -- If you decide to create a service account, you will need to assign a role to some users/emails. Each role has different rights to use your data.</p></li></ol>
 </p>
-</detail>
+</details>
 
 ## Wanna run the Node.js samples?{:#run-samples}
 
@@ -49,7 +49,7 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) and [`@type/dialogflow`](https://www.npmjs.com/package/@types/dialogflow). The new version uses only one [`@google-cloud/dialogflow`](https://www.npmjs.com/package/@google-cloud/dialogflow)!
 {{site.data.alerts.end}}
 
-<detail markdown="1">
+<details markdown="1">
 <summary>steps</summary>
 <p>
 <pre>
@@ -84,7 +84,7 @@ The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) an
 
 ----
 
-<detail markdown="1">
+<details markdown="1">
 <summary>try something outside 'samples'</summary>
 <p>
 In case you wanna try something outside the files given in [samples](https://github.com/googleapis/nodejs-dialogflow/tree/main/samples). Check [this SDK](https://googleapis.dev/nodejs/dialogflow/latest/index.html). Suppose we wanna try this one -- [`AgentsClient.searchAgents()`](https://googleapis.dev/nodejs/dialogflow/4.5.0/v2.AgentsClient.html#searchAgents)
@@ -122,7 +122,7 @@ In case you wanna try something outside the files given in [samples](https://git
 </details>
 
 ====
-<detail markdown="1">
+<details markdown="1">
 <summary>Different locations?</summary>
 <p>
 The example in "Try something outside..." gives us an example of using different regions. Below are some remarks:
