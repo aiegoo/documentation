@@ -182,8 +182,9 @@ In case you wanna try something outside the files given in <a
           change the input. Here is <a href="https://gist.github.com/dinhanhthi/b40217eff2b938ffbfece82de8bb0907">an
                example</a>,</li>
 </ol>
+<pre>
+{% highlight js %}
 
-```js
     "use strict";
     async function main() {
     const location = "global";
@@ -205,8 +206,9 @@ In case you wanna try something outside the files given in <a
     process.exitCode = 1;
     });
     main();
-```
 
+{% endhighlight %}
+</pre>
     Then run `node search-agents.js`.
 
 </p>
