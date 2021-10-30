@@ -308,8 +308,10 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 </details>
 
 {{site.data.alerts.callout_warning}}
+<div markdown="1">
 - Make sure you create the "OAuth consent screen" before you create "OAuth 2.0 Client IDs". The "consent screen" is the popup window that contains all the information about the scopes your app will ask users for permission.
 - Make sure you add `http://localhost:5500` (which is created in step 4) to "Authorized JavaScript origins" and "Authorized redirect URIs". You may have to wait a few "ten minutes" for everything to work. Without this step, you may encounter the error `mismatch_uri`.
+</div>
 {{site.data.alerts.end}}
 
 <details>
