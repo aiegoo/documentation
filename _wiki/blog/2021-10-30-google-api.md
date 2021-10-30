@@ -39,29 +39,8 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 
 <detail markdown="1">
 <summary>click to open</summary>
-<p markdown="span">
-1. [APIs & references](https://cloud.google.com/dialogflow/es/docs/reference) -- the root of all things.
-   1. [Node.js client library](https://cloud.google.com/dialogflow/es/docs/reference/libraries/nodejs) -- wanna use in a backend?
-      1. [Dialogflow SDK Client Reference](https://googleapis.dev/nodejs/dialogflow/latest/index.html)
-      2. [googleapis/nodejs-dialogflow](https://github.com/googleapis/nodejs-dialogflow) -- Github repo.
-         1. [Samples](https://github.com/googleapis/nodejs-dialogflow#samples) -- wanna run these? Step to [this section](#run-samples).
-   2. [REST APIs](https://cloud.google.com/dialogflow/docs/reference/rest) -- wanna use `GET`, `POST`,...?
-2. [Service endpoint](https://cloud.google.com/dialogflow/es/docs/reference/rest/v2-overview#service-endpoint).
-
-     {{site.data.alerts.info}}
-    💡 **Tip**: `us-dialogflow.googleapis.com` and `dialogflow.googleapis.com` are the same, so you can use `<location>-dialogflow.googleapis.com` in your codes.
-     {{site.data.alerts.end}}
-
-3. [Available regions](https://cloud.google.com/dialogflow/es/docs/how/region#regions) (used in `locations`).
-
-    {{site.data.alerts.info}}
-    💡 **Tip**: `<region>-dialogflow.googleapis.com` = endpoint.
-    {{site.data.alerts.end}}
-
-4. [google/google-api-javascript-client](https://github.com/google/google-api-javascript-client) -- aka `gapi`. Github repo.
-5. [Google APIs Explorer](https://developers.google.com/apis-explorer/).
-6. [OAuth 2.0 Playground](https://developers.google.com/oauthplayground/).
-7. [Understand roles](https://cloud.google.com/iam/docs/understanding-roles?authuser=1&_ga=2.35673635.-287242851.1634158283#dialogflow-roles) -- If you decide to create a service account, you will need to assign a role to some users/emails. Each role has different rights to use your data.
+<p>
+<ol><li><p><a href="https://cloud.google.com/dialogflow/es/docs/reference">APIs &amp; references</a> -- the root of all things.</p><ol><li><a href="https://cloud.google.com/dialogflow/es/docs/reference/libraries/nodejs">Node.js client library</a> -- wanna use in a backend?<ol><li><a href="https://googleapis.dev/nodejs/dialogflow/latest/index.html">Dialogflow SDK Client Reference</a></li><li><a href="https://github.com/googleapis/nodejs-dialogflow">googleapis/nodejs-dialogflow</a> -- Github repo.<ol><li><a href="https://github.com/googleapis/nodejs-dialogflow#samples">Samples</a> -- wanna run these? Step to <a href="#run-samples">this section</a>.</li></ol></li></ol></li><li><a href="https://cloud.google.com/dialogflow/docs/reference/rest">REST APIs</a> -- wanna use <code>GET</code>, <code>POST</code>,...?</li></ol></li><li><p><a href="https://cloud.google.com/dialogflow/es/docs/reference/rest/v2-overview#service-endpoint">Service endpoint</a>.</p><div class="info"><p>💡 <strong>Tip</strong>: <code>us-dialogflow.googleapis.com</code> and <code>dialogflow.googleapis.com</code> are the same, so you can use <code>&lt;location&gt;-dialogflow.googleapis.com</code> in your codes.</p></div></li><li><p><a href="https://cloud.google.com/dialogflow/es/docs/how/region#regions">Available regions</a> (used in <code>locations</code>).</p><div class="info"><p>💡 <strong>Tip</strong>: <code>&lt;region&gt;-dialogflow.googleapis.com</code> = endpoint.</p></div></li><li><p><a href="https://github.com/google/google-api-javascript-client">google/google-api-javascript-client</a> -- aka <code>gapi</code>. Github repo.</p></li><li><p><a href="https://developers.google.com/apis-explorer/">Google APIs Explorer</a>.</p></li><li><p><a href="https://developers.google.com/oauthplayground/">OAuth 2.0 Playground</a>.</p></li><li><p><a href="https://cloud.google.com/iam/docs/understanding-roles?authuser=1&amp;_ga=2.35673635.-287242851.1634158283#dialogflow-roles">Understand roles</a> -- If you decide to create a service account, you will need to assign a role to some users/emails. Each role has different rights to use your data.</p></li></ol>
 </p>
 </detail>
 
@@ -188,13 +167,12 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 
 <details markdown="1">
 <summary>Steps</summary>
-<p><pre>
+<p>
 1. For setting up, follow [these steps](https://console.developers.google.com/apis/library).
 2. After that, you should obtain an `API_KEY` and an `CLIENT_ID`.
 3. First, try [this sample](https://github.com/google/google-api-javascript-client/blob/master/samples/authSample.html).
 4. Using something like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and open `authSample.html`.
 5. Make a test.
-</pre>
 </p>
 </details>
 
@@ -226,7 +204,6 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 </details>
 
 
-
 ## Dialogflow REST APIs with Postman
 
 👉 [Check this official guide](https://github.com/GoogleCloudPlatform/dialogflow-integrations/blob/master/dialogflow-api-quick-start/postman/README.md).
@@ -234,10 +211,9 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 <details markdown="1">
 <summary>Additional configurations</summary>
 <p>
-<pre>
 - Create a collection and add the Authorization for this collection. All of its request will use the same auth method.
 - Create variables (on tab "Variables") to store "CLIENT ID" (`client_id`) and "CLIENT SECRET" (as `client_secret`), then use them in the form by `{% raw %}{{client_id}}{% endraw %}` and `{% raw %}{{client_secret}}{% endraw %}`.
-</pre></p>
+</p>
 </details>
 
 {% include taglogic.html %}
