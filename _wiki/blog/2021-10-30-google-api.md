@@ -63,9 +63,10 @@ The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) an
 <p>       
 In case you wanna try something outside the files given in [samples](https://github.com/googleapis/nodejs-dialogflow/tree/main/samples). Check [this SDK](https://googleapis.dev/nodejs/dialogflow/latest/index.html). Suppose we wanna try this one -- [`AgentsClient.searchAgents()`](https://googleapis.dev/nodejs/dialogflow/4.5.0/v2.AgentsClient.html#searchAgents)
 
-1. Make the same things in "Step by step". At step 7, create `search-agents.js` with the same content as [`samples/set-agent.js`](https://github.com/googleapis/nodejs-dialogflow/blob/main/samples/set-agent.js). We are going to change this file.
-2. Read the [reference](https://googleapis.dev/nodejs/dialogflow/4.5.0/v2.AgentsClient.html#searchAgents), change the input. Below is an example,
+- Make the same things in "Step by step". At step 7, create `search-agents.js` with the same content as [`samples/set-agent.js`](https://github.com/googleapis/nodejs-dialogflow/blob/main/samples/set-agent.js). We are going to change this file. 
+-  Read the [reference](https://googleapis.dev/nodejs/dialogflow/4.5.0/v2.AgentsClient.html#searchAgents), change the input. Below is an example,
 
+<pre>
     ```js
     "use strict";
     async function main() {
@@ -89,7 +90,7 @@ In case you wanna try something outside the files given in [samples](https://git
     });
     main();
     ```
-
+</pre>
     Then run `node search-agents.js`.
 
 </p>
