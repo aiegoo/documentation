@@ -24,9 +24,6 @@ updated: 2021-10-30 09:47
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## Thi
-keywords: "apis request http apis application programming interface dialogflow google sdk google cloud gcp apis credentials REST postman gapi gsi sign in with google new version service account endpoint location detect intent roles tokens"
-date: 2021-10-29
----
 
 {% assign img-url = '/img/post/api' %}
 
