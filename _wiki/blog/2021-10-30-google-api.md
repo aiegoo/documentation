@@ -38,7 +38,7 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 <summary>click to open</summary>
 
 <style>
-details {width: 70%;}
+details {width: 90%;}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
@@ -119,7 +119,7 @@ The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) an
 <summary>steps</summary>
 
 <style>
-details {width: 70%;}
+details {width: 90%;}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
@@ -192,7 +192,7 @@ details>p, details p {
 <summary>try something outside 'samples'</summary>
 
 <style>
-details {width: 70%;}
+details {width: 90%;}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
@@ -255,7 +255,7 @@ In case you wanna try something outside the files given in <a
 <summary>Different locations?</summary>
 
 <style>
-details {width: 70%;}
+details {width: 90%;}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
@@ -320,7 +320,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 <summary>Steps</summary>
 
 <style>
-details {width: 70%;}
+details {width: 90%;}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
@@ -362,17 +362,14 @@ details>p, details p {
 - Make sure you create the "OAuth consent screen" before you create "OAuth 2.0 Client IDs". The "consent screen" is the popup window that contains all the information about the scopes your app will ask users for permission.
 - Make sure you add `http://localhost:5500` (which is created in step 4) to "Authorized JavaScript origins" and "Authorized redirect URIs". You may have to wait a few "ten minutes" for everything to work. Without this step, you may encounter the error `mismatch_uri`.
 {{site.data.alerts.end}}
-
-## The corresponding between REST API and Node.js clients
-
-👉 [REST API](https://cloud.google.com/dialogflow/docs/reference/rest/v2-overview).
-👉 [Node.js SDK](https://googleapis.dev/nodejs/dialogflow/latest/index.html).
+/*! http://mths.be/details v0.1.0 by @mathias | includes http://mths.be/noselect v1.0.3 */
+!function(e,t){var r,n=t.fn,o="[object Opera]"==Object.prototype.toString.call(window.opera),a=function(e){var t,r,n,o=e.createElement("details");return"open"in o?(r=e.body||function(){var r=e.documentElement;return t=!0,r.insertBefore(e.createElement("body"),r.firstElementChild||r.firstChild)}(),o.innerHTML="<summary>a</summary>b",o.style.display="block",r.appendChild(o),n=o.offsetHeight,o.open=!0,n=n!=o.offsetHeight,r.removeChild(o),t&&r.parentNode.removeChild(r),n):!1}(e),i=function(e,t,r,n){var o=e.prop("open"),a=o&&n||!o&&!n;a?(e.removeClass("open").prop("open",!1).triggerHandler("close.details"),t.attr("aria-expanded",!1),r.hide()):(e.addClass("open").prop("open",!0).triggerHandler("open.details"),t.attr("aria-expanded",!0),r.show())};n.noSelect=function(){var e="none";return this.bind("selectstart dragstart mousedown",function(){return!1}).css({MozUserSelect:e,msUserSelect:e,webkitUserSelect:e,userSelect:e})},a?(r=n.details=function(){return this.each(function(e){var r=t(this),n=t("summary",r).first();r.attr("id")||r.attr("id","details-id-"+e),r.attr("role","group"),n.attr({role:"button","aria-expanded":r.prop("open"),"aria-controls":r.attr("id")}).on("click",function(){var e=r.prop("open");n.attr("aria-expanded",!e),r.triggerHandler((e?"close":"open")+".details")})})},r.support=a):(r=n.details=function(){return this.each(function(e){var r=t(this),n=t("summary",r).first(),a=r.children(":not(summary)"),s=r.contents(":not(summary)");r.attr("id")||r.attr("id","details-id-"+e),r.attr("role","group"),n.length||(n=t("<summary>").text("Details").prependTo(r)),a.length!=s.length&&(s.filter(function(){return 3==this.nodeType&&/[^ \t\n\f\r]/.test(this.data)}).wrap("<span>"),a=r.children(":not(summary)")),r.prop("open","string"==typeof r.attr("open")),i(r,n,a),n.attr({role:"button","aria-controls":r.attr("id")}).noSelect().prop("tabIndex",0).on("click",function(){n.focus(),i(r,n,a,!0)}).keyup(function(e){(32==e.keyCode||13==e.keyCode&&!o)&&(e.preventDefault(),n.click())})})},r.support=a)}(document,jQuery);SDK](https://googleapis.dev/nodejs/dialogflow/latest/index.html).
 
 <details>
 <summary>Examples</summary>
 
 <style>
-details {width: 70%;}
+details {width: 90%;}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
@@ -420,7 +417,7 @@ details>p, details p {
 <summary>Additional configurations</summary>
 
 <style>
-details {width: 70%;}
+details {width: 90%;}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
