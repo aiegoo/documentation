@@ -295,7 +295,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 
 👉 [Check this official guide](https://github.com/GoogleCloudPlatform/dialogflow-integrations/blob/master/dialogflow-api-quick-start/postman/README.md).
 
-<details markdown="span">
+<details markdown="1">
 <summary>Additional configurations</summary>
 
 <p>
