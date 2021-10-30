@@ -2147,7 +2147,6 @@ img.emoji {
 /* details, summary tag css */
 details {
     font: 16px "Open Sans",
-    'LAB디지털',
     sans-serif;
     width: 620px;
 }
@@ -2160,6 +2159,7 @@ details>summary {
     box-shadow: 3px 3px 4px black;
     cursor: pointer;
     list-style: none;
+    font-family: 'LAB디지털';
 }
 
 details>summary::-webkit-details-marker {
