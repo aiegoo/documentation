@@ -253,13 +253,13 @@ Google has announced that [they will be discontinuing the Google Sign-In JavaScr
 
 <pre>
 {% highlight html %}
-```html
+
 <!-- OLD -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <!-- NEW -->
 <script src="https://accounts.google.com/gsi/client" async defer></script>
-```
+
 {% endhighlight %}
 </pre>
 {{site.data.alerts.end}}
