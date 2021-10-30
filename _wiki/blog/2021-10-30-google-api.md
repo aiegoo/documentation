@@ -99,7 +99,7 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 
 👉 Link of [all samples on github](https://github.com/googleapis/nodejs-dialogflow#samples).
 
-{{site.data.alerts.warning}}
+{{site.data.alerts.note}}
 The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) and [`@type/dialogflow`](https://www.npmjs.com/package/@types/dialogflow). The new version uses only one [`@google-cloud/dialogflow`](https://www.npmjs.com/package/@google-cloud/dialogflow)!
 {{site.data.alerts.end}}
 
@@ -243,12 +243,14 @@ The example in "Try something outside..." gives us an example of using different
 
 </details>
 
+{{site.data.alerts.hr_faded}}
+
 ## Wanna try `gapi` (JS client)?
 
-{{site.data.alerts.note}}
+{{site.data.alerts.callout_primary}}
 Google has announced that [they will be discontinuing the Google Sign-In JavaScript Platform Library for web](https://developers.googleblog.com/2021/08/gsi-jsweb-deprecation.html). You will have to switch to using *Google Identity Services* (or [Sign In With Google](https://developers.google.com/identity/gsi/web/guides/client-library) or `gsi`). The old service will be **completely discontinued on March 31, 2023**.
 
-
+<pre>
 ```html
 <!-- OLD -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -256,23 +258,20 @@ Google has announced that [they will be discontinuing the Google Sign-In JavaScr
 <!-- NEW -->
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 ```
-
+</pre>
 {{site.data.alerts.end}}
 
 What's this `gapi`? You can use it completely inside an HTML file without using any backend.
 
-👉 [List of samples](ht<details markdown="1">
-<summary>Steps</summary>
+👉 [List of samples](https://github.com/google/google-api-javascript-client/tree/master/samples).
+👉 You have to use [REST API](https://cloud.google.com/dialogflow/es/docs/reference/rest) in this case.
 
-<p>
-1. For setting up, follow [these steps](https://console.developers.google.com/apis/library).
-2. After that, you should obtain an `API_KEY` and an `CLIENT_ID`.
-3. First, try [this sample](https://github.com/google/google-api-javascript-client/blob/master/samples/authSample.html).
-4. Using something like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and open `authSample.html`.
-5. Make a test.
-</p>
 
-</details>
+{{site.data.alerts.note}}
+💡 **Tip**: If you are using [VSCode](/visual-studio-code/), you can install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to quickly create a server (port `5500` by default). Just click the button at the bottom right of the file and a website will appear.
+{{site.data.alerts.end}}
+
+<details markdown="1">
 <summary>Steps</summary>
 
 <p>
@@ -302,7 +301,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 </p>
 </details>
 
-{{site.data.alerts.note}}
+{{site.data.alerts.callout_warning}}
 - Make sure you create the "OAuth consent screen" before you create "OAuth 2.0 Client IDs". The "consent screen" is the popup window that contains all the information about the scopes your app will ask users for permission.
 - Make sure you add `http://localhost:5500` (which is created in step 4) to "Authorized JavaScript origins" and "Authorized redirect URIs". You may have to wait a few "ten minutes" for everything to work. Without this step, you may encounter the error `mismatch_uri`.
 {{site.data.alerts.end}}
@@ -351,6 +350,8 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 </p>
 
 </details>
+
+{{site.data.alerts.hr_faded}}
 
 <details markdown="1">
 <summary>Testing zipto profill</summary>
