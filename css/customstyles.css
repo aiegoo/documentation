@@ -2166,7 +2166,7 @@ details>summary::-webkit-details-marker {
     display: none;
 }
 
-details>p, details p ol {
+details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
     border-radius: 0 0 10px 10px;

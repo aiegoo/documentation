@@ -34,9 +34,20 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 
 ## Official documentation
 
-<details markdown="1">
+<details>
 <summary>click to open</summary>
 
+<style>
+details>p, details p {
+    font-family: 'NanumBarunpen';
+    font-size: 0.9em;
+    border-radius: 0 0 10px 10px;
+    background-color: #ddd;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+}
+</style>
 <p>
 <ol>
      <li>
@@ -103,9 +114,20 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) and [`@type/dialogflow`](https://www.npmjs.com/package/@types/dialogflow). The new version uses only one [`@google-cloud/dialogflow`](https://www.npmjs.com/package/@google-cloud/dialogflow)!
 {{site.data.alerts.end}}
 
-<details markdown="1">
+<details>
 <summary>steps</summary>
 
+<style>
+details>p, details p {
+    font-family: 'NanumBarunpen';
+    font-size: 0.9em;
+    border-radius: 0 0 10px 10px;
+    background-color: #ddd;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+}
+</style>
 <p>
 <ol>
      <li>
@@ -167,13 +189,34 @@ The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) an
 <details markdown="1">
 <summary>try something outside 'samples'</summary>
 
+<style>
+details>p, details p {
+    font-family: 'NanumBarunpen';
+    font-size: 0.9em;
+    border-radius: 0 0 10px 10px;
+    background-color: #ddd;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+}
+</style>
 <p>       
-In case you wanna try something outside the files given in [samples](https://github.com/googleapis/nodejs-dialogflow/tree/main/samples). Check [this SDK](https://googleapis.dev/nodejs/dialogflow/latest/index.html). Suppose we wanna try this one -- [`AgentsClient.searchAgents()`](https://googleapis.dev/nodejs/dialogflow/4.5.0/v2.AgentsClient.html#searchAgents)
+In case you wanna try something outside the files given in <a
+     href="https://github.com/googleapis/nodejs-dialogflow/tree/main/samples">samples</a>. Check 
+     <a href="https://googleapis.dev/nodejs/dialogflow/latest/index.html">this SDK</a>. Suppose we wanna try this one -- <a
+     href="https://googleapis.dev/nodejs/dialogflow/4.5.0/v2.AgentsClient.html#searchAgents"><code>AgentsClient.searchAgents()</code></a>
+<ol>
+     <li>Make the same things in "Step by step". At step 7, create <code>search-agents.js</code> with the same content
+          as <a
+               href="https://github.com/googleapis/nodejs-dialogflow/blob/main/samples/set-agent.js"><code>samples/set-agent.js</code></a>.
+          We are going to change this file.</li>
+     <li>Read the <a
+               href="https://googleapis.dev/nodejs/dialogflow/4.5.0/v2.AgentsClient.html#searchAgents">reference</a>,
+          change the input. Here is <a href="https://gist.github.com/dinhanhthi/b40217eff2b938ffbfece82de8bb0907">an
+               example</a>,</li>
+</ol>
 
-- Make the same things in "Step by step". At step 7, create `search-agents.js` with the same content as [`samples/set-agent.js`](https://github.com/googleapis/nodejs-dialogflow/blob/main/samples/set-agent.js). We are going to change this file. 
--  Read the [reference](https://googleapis.dev/nodejs/dialogflow/4.5.0/v2.AgentsClient.html#searchAgents), change the input. Below is an example,
-
-    ```js
+```js
     "use strict";
     async function main() {
     const location = "global";
@@ -195,7 +238,7 @@ In case you wanna try something outside the files given in [samples](https://git
     process.exitCode = 1;
     });
     main();
-    ```
+```
 
     Then run `node search-agents.js`.
 
@@ -208,18 +251,38 @@ In case you wanna try something outside the files given in [samples](https://git
 <details markdown="1">
 <summary>Different locations?</summary>
 
+<style>
+details>p, details p {
+    font-family: 'NanumBarunpen';
+    font-size: 0.9em;
+    border-radius: 0 0 10px 10px;
+    background-color: #ddd;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+}
+</style>
 <p>
 The example in "Try something outside..." gives us an example of using different regions. Below are some remarks:
-
-1. On [DF console](https://dialogflow.cloud.google.com/), you can create some agents in a different regions, default is `global` (or `us`).
-2. On the Google's documentations, they don't mention about the usage of location. If they say `parent = "projects/-"`, we shoud use `parent = "projects/-" + "/locations/" + location` where `location` can be [one of "Region ID"](https://cloud.google.com/dialogflow/es/docs/how/region#regions).
-3. Change also the endpoint, option `apiEndpoint` in [`AgentsClient`'s constructor](https://googleapis.dev/nodejs/dialogflow/latest/v2.AgentsClient.html), for example.
-
-    ```js
-    const client = new AgentsClient({
-        apiEndpoint: location + "-dialogflow.googleapis.com",
-    });
-    ```
+<ol>
+     <li>
+          <p>On <a href="https://dialogflow.cloud.google.com/">DF console</a>, you can create some agents in a different
+               regions, default is <code>global</code> (or <code>us</code>).</p>
+     </li>
+     <li>
+          <p>On the Google's documentations, they don't mention about the usage of location. If they say <code>parent =
+                    "projects/-"</code>, we shoud use <code>parent = "projects/-" + "/locations/" + location</code>
+               where <code>location</code> can be <a
+                    href="https://cloud.google.com/dialogflow/es/docs/how/region#regions">one of "Region ID"</a>.</p>
+     </li>
+     <li>
+          <p>Change also the endpoint, option <code>apiEndpoint</code> in <a
+                    href="https://googleapis.dev/nodejs/dialogflow/latest/v2.AgentsClient.html"><code>AgentsClient</code>'s
+                    constructor</a>, for example.</p>
+          <pre
+               class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token keyword">const</span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AgentsClient</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>    apiEndpoint<span class="token operator">:</span> location <span class="token operator">+</span> <span class="token string">"-dialogflow.googleapis.com"</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+     </li>
+</ol>
 </p>
 
 </details>
@@ -254,12 +317,29 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 <summary>Steps</summary>
 
 <p>
-1. For setting up, follow [these steps](https://console.developers.google.com/apis/library).
-2. After that, you should obtain an `API_KEY` and an `CLIENT_ID`.
-3. First, try [this sample](https://github.com/google/google-api-javascript-client/blob/master/samples/authSample.html).
-4. Using something like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and open `authSample.html`.
-5. Make a test.
-</p>
+
+     <ol>
+          <li>For setting up, follow <a href="https://console.developers.google.com/apis/library">these steps</a>.</li>
+          <li>After that, you should obtain an <code>API_KEY</code> and an <code>CLIENT_ID</code>.</li>
+          <li>First, try <a
+                    href="https://github.com/google/google-api-javascript-client/blob/master/samples/authSample.html">this
+                    sample</a>.</li>
+          <li>Using something like <a
+                    href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a> and
+               open <code>authSample.html</code>.</li>
+          <li>Make a test.</li>
+     </ol>
+     <div class="warning">
+          <ul>
+               <li>Make sure you create the "OAuth consent screen" before you create "OAuth 2.0 Client IDs". The
+                    "consent screen" is the popup window that contains all the information about the scopes your app
+                    will ask users for permission.</li>
+               <li>Make sure you add <code>http://localhost:5500</code> (which is created in step 4) to "Authorized
+                    JavaScript origins" and "Authorized redirect URIs". You may have to wait a few "ten minutes" for
+                    everything to work. Without this step, you may encounter the error <code>mismatch_uri</code>.</li>
+          </ul>
+     </div>
+
 
 </details>
 
@@ -277,17 +357,29 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 <summary>Examples</summary>
 
 <p>
-`projects.agent.search`
 
-- `GET https://{endpoint}/v2/{parent=projects/*}/agent:search`
-- **REST**: [.../v2/projects.agent/search](https://cloud.google.com/dialogflow/es/docs/reference/rest/v2/projects.agent/search)
-- **SDK**: [.../v2.AgentsClient.html#searchAgents](https://googleapis.dev/nodejs/dialogflow/latest/v2.AgentsClient.html#searchAgents)
+     <p><code>projects.agent.search</code></p>
+     <ul>
+          <li><code>GET https://{endpoint}/v2/{parent=projects/*}/agent:search</code></li>
+          <li><strong>REST</strong>: <a
+                    href="https://cloud.google.com/dialogflow/es/docs/reference/rest/v2/projects.agent/search">.../v2/projects.agent/search</a>
+          </li>
+          <li><strong>SDK</strong>: <a
+                    href="https://googleapis.dev/nodejs/dialogflow/latest/v2.AgentsClient.html#searchAgents">.../v2.AgentsClient.html#searchAgents</a>
+          </li>
+     </ul>
+     <p><code>projects.agent.sessions.detectIntent</code></p>
+     <ul>
+          <li><code>POST https://{endpoint}/v2/{session=projects/*/locations/*/agent/sessions/*}:detectIntent</code>
+          </li>
+          <li><strong>REST</strong>: <a
+                    href="https://cloud.google.com/dialogflow/es/docs/reference/rest/v2/projects.agent.sessions/detectIntent">.../v2/projects.agent.sessions/detectIntent</a>
+          </li>
+          <li><strong>SDK</strong>: <a
+                    href="https://googleapis.dev/nodejs/dialogflow/latest/v2.SessionsClient.html#detectIntent">.../v2.SessionsClient.html#detectIntent</a>
+          </li>
+     </ul>
 
-`projects.agent.sessions.detectIntent`
-
-- `POST https://{endpoint}/v2/{session=projects/*/locations/*/agent/sessions/*}:detectIntent`
-- **REST**: [.../v2/projects.agent.sessions/detectIntent](https://cloud.google.com/dialogflow/es/docs/reference/rest/v2/projects.agent.sessions/detectIntent)
-- **SDK**: [.../v2.SessionsClient.html#detectIntent](https://googleapis.dev/nodejs/dialogflow/latest/v2.SessionsClient.html#detectIntent)
 </p>
 
 </details>
@@ -301,8 +393,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 <summary>Additional configurations</summary>
 
 <p>
-- Create a collection and add the Authorization for this collection. All of its request will use the same auth method.
-- Create variables (on tab "Variables") to store "CLIENT ID" (`client_id`) and "CLIENT SECRET" (as `client_secret`), then use them in the form by `{% raw %}{{client_id}}{% endraw %}` and `{% raw %}{{client_secret}}{% endraw %}`.
+<ul><li>Create a collection and add the Authorization for this collection. All of its request will use the same auth method.</li><li>Create variables (on tab "Variables") to store "CLIENT ID" (<code>client_id</code>) and "CLIENT SECRET" (as <code>client_secret</code>), then use them in the form by <code>{{client_id}}</code> and <code>{{client_secret}}</code>.</li></ul>
 </p>
 
 </details>
