@@ -2143,6 +2143,40 @@ img.emoji {
     border-left: 2px solid transparent;
 }
 
+
+/* details, summary tag css */
+details {
+    font: 16px "Open Sans",
+    'LAB디지털',
+    sans-serif;
+    width: 620px;
+}
+
+details>summary {
+    padding: 2px 6px;
+    width: 15em;
+    background-color: #ddd;
+    border: none;
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+    list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+details>p {
+    font-family: 'NanumBarunpen';
+    font-size: 0.9em;
+    border-radius: 0 0 10px 10px;
+    background-color: #ddd;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+}
+
+
 /* highlight css */
 /*.highlight {
     /* Comment */
