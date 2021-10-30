@@ -226,7 +226,7 @@ The example in "Try something outside..." gives us an example of using different
 
 ## Wanna try `gapi` (JS client)?
 
-{{site.data.alerts.callout_warning}}
+{{site.data.alerts.note}}
 Google has announced that [they will be discontinuing the Google Sign-In JavaScript Platform Library for web](https://developers.googleblog.com/2021/08/gsi-jsweb-deprecation.html). You will have to switch to using *Google Identity Services* (or [Sign In With Google](https://developers.google.com/identity/gsi/web/guides/client-library) or `gsi`). The old service will be **completely discontinued on March 31, 2023**.
 <pre>
 ``` html
