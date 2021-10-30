@@ -193,7 +193,7 @@ details>p, details p {
 
 <style>
 details {width: 90%;}
-details>p, details p {
+details>p, details p, ol {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
     border-radius: 0 0 10px 10px;
@@ -256,7 +256,7 @@ In case you wanna try something outside the files given in <a
 
 <style>
 details {width: 90%;}
-details>p, details p {
+details>p, details p, ol {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
     border-radius: 0 0 10px 10px;
@@ -309,19 +309,23 @@ Google has announced that [they will be discontinuing the Google Sign-In JavaScr
 
 What's this `gapi`? You can use it completely inside an HTML file without using any backend.
 
-👉 [List of samples](https://github.com/google/google-api-javascript-client/tree/master/samples).
-👉 You have to use [REST API](https://cloud.google.com/dialogflow/es/docs/reference/rest) in this case.
+👉 [List of samples](ht<details markdown="1">
+<summary>Steps</summary>
 
-{{site.data.alerts.callout_info}}
-💡 **Tip**: If you are using [VSCode](/visual-studio-code/), you can install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to quickly create a server (port `5500` by default). Just click the button at the bottom right of the file and a website will appear.
-{{site.data.alerts.end}}
+<p>
+1. For setting up, follow [these steps](https://console.developers.google.com/apis/library).
+2. After that, you should obtain an `API_KEY` and an `CLIENT_ID`.
+3. First, try [this sample](https://github.com/google/google-api-javascript-client/blob/master/samples/authSample.html).
+4. Using something like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and open `authSample.html`.
+5. Make a test.
+</p>
 
-<details>
+</details>
 <summary>Steps</summary>
 
 <style>
 details {width: 90%;}
-details>p, details p {
+details>p, details p, ol {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
     border-radius: 0 0 10px 10px;
@@ -368,7 +372,7 @@ details>p, details p {
 
 <style>
 details {width: 90%;}
-details>p, details p {
+details>p, details p, ul {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
     border-radius: 0 0 10px 10px;
@@ -416,7 +420,7 @@ details>p, details p {
 
 <style>
 details {width: 90%;}
-details>p, details p {
+details>p, details p, ul {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
     border-radius: 0 0 10px 10px;
