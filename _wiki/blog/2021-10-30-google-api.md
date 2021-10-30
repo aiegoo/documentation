@@ -196,7 +196,7 @@ In case you wanna try something outside the files given in [samples](https://git
     });
     main();
     ```
-    
+
     Then run `node search-agents.js`.
 
 </p>
@@ -295,10 +295,10 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 
 👉 [Check this official guide](https://github.com/GoogleCloudPlatform/dialogflow-integrations/blob/master/dialogflow-api-quick-start/postman/README.md).
 
-<details markdown="1">
+<details>
 <summary>Additional configurations</summary>
 
-<p>
+<p markdown="span">
 - Create a collection and add the Authorization for this collection. All of its request will use the same auth method.
 - Create variables (on tab "Variables") to store "CLIENT ID" (`client_id`) and "CLIENT SECRET" (as `client_secret`), then use them in the form by `{% raw %}{{client_id}}{% endraw %}` and `{% raw %}{{client_secret}}{% endraw %}`.
 </p>
