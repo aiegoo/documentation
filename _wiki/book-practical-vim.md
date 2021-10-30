@@ -42,7 +42,7 @@ latex: false
 .author-container {display: flex; align-items: center; justify-content: space-around;}
 </style>
 
-<div markdown="1" class="author-container">
+<divclass="author-container" markdown="1" >
 
  ![Drew Neil Photo][author-img]
 
@@ -51,7 +51,7 @@ latex: false
 * [GitHub](https://github.com/nelstrom/) : 
 * [twitter](https://twitter.com/nelstrom) : 가끔 괜찮은 vi tip을 올린다
 
-</div>
+</divclass=>
 
 [author-img]:https://avatars.githubusercontent.com/u/7069?v=4
 {:width="300px" height="300px" object-fit="cover" object-position="20% 10%"}

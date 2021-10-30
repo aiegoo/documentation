@@ -21,7 +21,7 @@ youtubeID: ijVpUdWZYKU
 }
 </style>
 
-<div markdown="1" align="center">
+<div align="center" markdown="1" >
 
 ### Hello visitor, welcome to my Github portfolio wiki
 
@@ -65,7 +65,7 @@ youtubeID: ijVpUdWZYKU
 </p>
 
 
-<p markdown="1" align="center">  
+<p align="center" markdown="1">  
 ![Engineer](https://profile-counter.glitch.me/{aiegoo}/count.svg)
 </p>
 
