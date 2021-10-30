@@ -52,7 +52,6 @@ The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) an
 <details markdown="1">
 <summary>steps</summary>
 <p>
-<pre>
 1. Create a folder, eg. `/home/thi/df-samples/`
 2. If you come from [Dialogflow Console](https://dialogflow.cloud.google.com/#/agents) > choose an agent > click on the gear next to the its name > Click on "Project ID" to open Google Cloud Platform Console.
 3. If you come from GCP Console, it's the same.
@@ -78,7 +77,6 @@ The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) an
     ```
 
 9.  Read carefully the content of each file in [samples](https://github.com/googleapis/nodejs-dialogflow/tree/main/samples), you have to put the corresponding inputs for the sample to work!
-</pre>
 </p>
 </details>
 
