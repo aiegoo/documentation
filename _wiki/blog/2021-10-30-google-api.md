@@ -39,7 +39,7 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 
 <detail markdown="1">
 <summary>click to open</summary>
-<p>
+<p markdown="span">
 1. [APIs & references](https://cloud.google.com/dialogflow/es/docs/reference) -- the root of all things.
    1. [Node.js client library](https://cloud.google.com/dialogflow/es/docs/reference/libraries/nodejs) -- wanna use in a backend?
       1. [Dialogflow SDK Client Reference](https://googleapis.dev/nodejs/dialogflow/latest/index.html)
@@ -48,15 +48,15 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
    2. [REST APIs](https://cloud.google.com/dialogflow/docs/reference/rest) -- wanna use `GET`, `POST`,...?
 2. [Service endpoint](https://cloud.google.com/dialogflow/es/docs/reference/rest/v2-overview#service-endpoint).
 
-    ::: info
+     {{site.data.alerts.info}}
     💡 **Tip**: `us-dialogflow.googleapis.com` and `dialogflow.googleapis.com` are the same, so you can use `<location>-dialogflow.googleapis.com` in your codes.
-    :::
+     {{site.data.alerts.end}}
 
 3. [Available regions](https://cloud.google.com/dialogflow/es/docs/how/region#regions) (used in `locations`).
 
-    ::: info
+    {{site.data.alerts.info}}
     💡 **Tip**: `<region>-dialogflow.googleapis.com` = endpoint.
-    :::
+    {{site.data.alerts.end}}
 
 4. [google/google-api-javascript-client](https://github.com/google/google-api-javascript-client) -- aka `gapi`. Github repo.
 5. [Google APIs Explorer](https://developers.google.com/apis-explorer/).
@@ -69,14 +69,14 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 
 👉 Link of [all samples on github](https://github.com/googleapis/nodejs-dialogflow#samples).
 
-::: warning
+{{site.data.alerts.warning}}
 The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) and [`@type/dialogflow`](https://www.npmjs.com/package/@types/dialogflow). The new version uses only one [`@google-cloud/dialogflow`](https://www.npmjs.com/package/@google-cloud/dialogflow)!
-:::
+{{site.data.alerts.end}}
 
 <detail markdown="1">
 <summary>steps</summary>
 <p>
-{% raw %}
+<pre>
 1. Create a folder, eg. `/home/thi/df-samples/`
 2. If you come from [Dialogflow Console](https://dialogflow.cloud.google.com/#/agents) > choose an agent > click on the gear next to the its name > Click on "Project ID" to open Google Cloud Platform Console.
 3. If you come from GCP Console, it's the same.
@@ -102,9 +102,11 @@ The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) an
     ```
 
 9.  Read carefully the content of each file in [samples](https://github.com/googleapis/nodejs-dialogflow/tree/main/samples), you have to put the corresponding inputs for the sample to work!
-{% endraw %}
+</pre>
 </p>
 </details>
+
+----
 
 <detail markdown="1">
 <summary>try something outside 'samples'</summary>
@@ -143,6 +145,7 @@ In case you wanna try something outside the files given in [samples](https://git
 </p>
 </details>
 
+====
 <detail markdown="1">
 <summary>Different locations?</summary>
 <p>
@@ -162,7 +165,7 @@ The example in "Try something outside..." gives us an example of using different
 
 ## Wanna try `gapi` (JS client)?
 
-::: danger
+{{site.data.alerts.danger}}
 Google has announced that [they will be discontinuing the Google Sign-In JavaScript Platform Library for web](https://developers.googleblog.com/2021/08/gsi-jsweb-deprecation.html). You will have to switch to using *Google Identity Services* (or [Sign In With Google](https://developers.google.com/identity/gsi/web/guides/client-library) or `gsi`). The old service will be **completely discontinued on March 31, 2023**.
 
 ``` html
@@ -172,32 +175,33 @@ Google has announced that [they will be discontinuing the Google Sign-In JavaScr
 <!-- NEW -->
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 ```
-:::
+{{site.data.alerts.end}}
 
 What's this `gapi`? You can use it completely inside an HTML file without using any backend.
 
 👉 [List of samples](https://github.com/google/google-api-javascript-client/tree/master/samples).
 👉 You have to use [REST API](https://cloud.google.com/dialogflow/es/docs/reference/rest) in this case.
 
-::: info
+{{site.data.alerts.info}}
 💡 **Tip**: If you are using [VSCode](/visual-studio-code/), you can install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to quickly create a server (port `5500` by default). Just click the button at the bottom right of the file and a website will appear.
-:::
+{{site.data.alerts.end}}
 
 <details markdown="1">
 <summary>Steps</summary>
-<p>
+<p><pre>
 1. For setting up, follow [these steps](https://console.developers.google.com/apis/library).
 2. After that, you should obtain an `API_KEY` and an `CLIENT_ID`.
 3. First, try [this sample](https://github.com/google/google-api-javascript-client/blob/master/samples/authSample.html).
 4. Using something like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and open `authSample.html`.
 5. Make a test.
+</pre>
 </p>
 </details>
 
-::: warning
+{{site.data.alerts.warning}}
 - Make sure you create the "OAuth consent screen" before you create "OAuth 2.0 Client IDs". The "consent screen" is the popup window that contains all the information about the scopes your app will ask users for permission.
 - Make sure you add `http://localhost:5500` (which is created in step 4) to "Authorized JavaScript origins" and "Authorized redirect URIs". You may have to wait a few "ten minutes" for everything to work. Without this step, you may encounter the error `mismatch_uri`.
-:::
+{{site.data.alerts.end}}
 
 ## The corresponding between REST API and Node.js clients
 
@@ -230,9 +234,10 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 <details markdown="1">
 <summary>Additional configurations</summary>
 <p>
+<pre>
 - Create a collection and add the Authorization for this collection. All of its request will use the same auth method.
 - Create variables (on tab "Variables") to store "CLIENT ID" (`client_id`) and "CLIENT SECRET" (as `client_secret`), then use them in the form by `{% raw %}{{client_id}}{% endraw %}` and `{% raw %}{{client_secret}}{% endraw %}`.
-</p>
+</pre></p>
 </details>
 
 {% include taglogic.html %}
