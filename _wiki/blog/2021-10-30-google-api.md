@@ -38,6 +38,7 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 <summary>click to open</summary>
 
 <style>
+details {width: 70%;}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
@@ -118,6 +119,7 @@ The old version uses [`dialogflow`](https://www.npmjs.com/package/dialogflow) an
 <summary>steps</summary>
 
 <style>
+details {width: 70%;}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
@@ -186,10 +188,11 @@ details>p, details p {
 
 ----
 
-<details markdown="1">
+<details>
 <summary>try something outside 'samples'</summary>
 
 <style>
+details {width: 70%;}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
@@ -248,10 +251,11 @@ In case you wanna try something outside the files given in <a
 
 ----
 
-<details markdown="1">
+<details>
 <summary>Different locations?</summary>
 
 <style>
+details {width: 70%;}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
@@ -313,9 +317,21 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 💡 **Tip**: If you are using [VSCode](/visual-studio-code/), you can install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to quickly create a server (port `5500` by default). Just click the button at the bottom right of the file and a website will appear.
 {{site.data.alerts.end}}
 
-<details markdown="1">
+<details>
 <summary>Steps</summary>
 
+<style>
+details {width: 70%;}
+details>p, details p {
+    font-family: 'NanumBarunpen';
+    font-size: 0.9em;
+    border-radius: 0 0 10px 10px;
+    background-color: #ddd;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+}
+</style>
 <p>
 
      <ol>
@@ -356,29 +372,41 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 <details markdown="1">
 <summary>Examples</summary>
 
+<style>
+details {width: 70%;}
+details>p, details p {
+    font-family: 'NanumBarunpen';
+    font-size: 0.9em;
+    border-radius: 0 0 10px 10px;
+    background-color: #ddd;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+}
+</style>
 <p>
 
-     <p><code>projects.agent.search</code></p>
-     <ul>
-          <li><code>GET https://{endpoint}/v2/{parent=projects/*}/agent:search</code></li>
-          <li><strong>REST</strong>: <a
-                    href="https://cloud.google.com/dialogflow/es/docs/reference/rest/v2/projects.agent/search">.../v2/projects.agent/search</a>
-          </li>
-          <li><strong>SDK</strong>: <a
-                    href="https://googleapis.dev/nodejs/dialogflow/latest/v2.AgentsClient.html#searchAgents">.../v2.AgentsClient.html#searchAgents</a>
-          </li>
-     </ul>
-     <p><code>projects.agent.sessions.detectIntent</code></p>
-     <ul>
-          <li><code>POST https://{endpoint}/v2/{session=projects/*/locations/*/agent/sessions/*}:detectIntent</code>
-          </li>
-          <li><strong>REST</strong>: <a
-                    href="https://cloud.google.com/dialogflow/es/docs/reference/rest/v2/projects.agent.sessions/detectIntent">.../v2/projects.agent.sessions/detectIntent</a>
-          </li>
-          <li><strong>SDK</strong>: <a
-                    href="https://googleapis.dev/nodejs/dialogflow/latest/v2.SessionsClient.html#detectIntent">.../v2.SessionsClient.html#detectIntent</a>
-          </li>
-     </ul>
+<code>projects.agent.search</code>
+<ul>
+     <li><code>GET https://{endpoint}/v2/{parent=projects/*}/agent:search</code></li>
+     <li><strong>REST</strong>: <a
+               href="https://cloud.google.com/dialogflow/es/docs/reference/rest/v2/projects.agent/search">.../v2/projects.agent/search</a>
+     </li>
+     <li><strong>SDK</strong>: <a
+               href="https://googleapis.dev/nodejs/dialogflow/latest/v2.AgentsClient.html#searchAgents">.../v2.AgentsClient.html#searchAgents</a>
+     </li>
+</ul>
+<code>projects.agent.sessions.detectIntent</code>
+<ul>
+     <li><code>POST https://{endpoint}/v2/{session=projects/*/locations/*/agent/sessions/*}:detectIntent</code>
+     </li>
+     <li><strong>REST</strong>: <a
+               href="https://cloud.google.com/dialogflow/es/docs/reference/rest/v2/projects.agent.sessions/detectIntent">.../v2/projects.agent.sessions/detectIntent</a>
+     </li>
+     <li><strong>SDK</strong>: <a
+               href="https://googleapis.dev/nodejs/dialogflow/latest/v2.SessionsClient.html#detectIntent">.../v2.SessionsClient.html#detectIntent</a>
+     </li>
+</ul>
 
 </p>
 
@@ -389,9 +417,21 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 
 👉 [Check this official guide](https://github.com/GoogleCloudPlatform/dialogflow-integrations/blob/master/dialogflow-api-quick-start/postman/README.md).
 
-<details markdown="1">
+<details>
 <summary>Additional configurations</summary>
 
+<style>
+details {width: 70%;}
+details>p, details p {
+    font-family: 'NanumBarunpen';
+    font-size: 0.9em;
+    border-radius: 0 0 10px 10px;
+    background-color: #ddd;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+}
+</style>
 <p>
 <ul><li>Create a collection and add the Authorization for this collection. All of its request will use the same auth method.</li><li>Create variables (on tab "Variables") to store "CLIENT ID" (<code>client_id</code>) and "CLIENT SECRET" (as <code>client_secret</code>), then use them in the form by <code>{{client_id}}</code> and <code>{{client_secret}}</code>.</li></ul>
 </p>
