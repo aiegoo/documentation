@@ -274,7 +274,9 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 
 
 {{site.data.alerts.note}}
+<div markdown="1">
 💡 **Tip**: If you are using [VSCode](/visual-studio-code/), you can install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to quickly create a server (port `5500` by default). Just click the button at the bottom right of the file and a website will appear.
+</div>
 {{site.data.alerts.end}}
 
 <details markdown="1">
@@ -353,19 +355,6 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 </details>
 
 {{site.data.alerts.hr_faded}}
-
-<details markdown="1">
-<summary>Testing zipto profill</summary>
-
-<p>
-1. For setting up, follow [these steps](https://console.developers.google.com/apis/library).
-2. After that, you should obtain an `API_KEY` and an `CLIENT_ID`.
-3. First, try [this sample](https://github.com/google/google-api-javascript-client/blob/master/samples/authSample.html).
-4. Using something like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and open `authSample.html`.
-5. Make a test.
-</p>
-
-</details>
 
 {% include taglogic.html %}
 
