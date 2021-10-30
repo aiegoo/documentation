@@ -271,7 +271,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 👉 [REST API](https://cloud.google.com/dialogflow/docs/reference/rest/v2-overview).
 👉 [Node.js SDK](https://googleapis.dev/nodejs/dialogflow/latest/index.html).
 
-<details>
+<details markdown="1">
 <summary>Examples</summary>
 
 <p>
@@ -295,10 +295,10 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 
 👉 [Check this official guide](https://github.com/GoogleCloudPlatform/dialogflow-integrations/blob/master/dialogflow-api-quick-start/postman/README.md).
 
-<details>
+<details markdown="span">
 <summary>Additional configurations</summary>
 
-<p markdown="span">
+<p>
 - Create a collection and add the Authorization for this collection. All of its request will use the same auth method.
 - Create variables (on tab "Variables") to store "CLIENT ID" (`client_id`) and "CLIENT SECRET" (as `client_secret`), then use them in the form by `{% raw %}{{client_id}}{% endraw %}` and `{% raw %}{{client_secret}}{% endraw %}`.
 </p>
