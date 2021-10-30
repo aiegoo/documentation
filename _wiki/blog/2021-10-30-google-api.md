@@ -249,7 +249,7 @@ In case you wanna try something outside the files given in <a
 
 </details>
 
-----
+
 
 <details>
 <summary>Different locations?</summary>
@@ -295,16 +295,15 @@ The example in "Try something outside..." gives us an example of using different
 
 {{site.data.alerts.note}}
 Google has announced that [they will be discontinuing the Google Sign-In JavaScript Platform Library for web](https://developers.googleblog.com/2021/08/gsi-jsweb-deprecation.html). You will have to switch to using *Google Identity Services* (or [Sign In With Google](https://developers.google.com/identity/gsi/web/guides/client-library) or `gsi`). The old service will be **completely discontinued on March 31, 2023**.
-<pre>
 
-``` html
+
+```html
 <!-- OLD -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 <!-- NEW -->
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 ```
-</pre>
 
 {{site.data.alerts.end}}
 
@@ -356,7 +355,7 @@ details>p, details p {
           </ul>
      </div>
 
-
+</p>
 </details>
 
 {{site.data.alerts.note}}
@@ -369,7 +368,7 @@ details>p, details p {
 👉 [REST API](https://cloud.google.com/dialogflow/docs/reference/rest/v2-overview).
 👉 [Node.js SDK](https://googleapis.dev/nodejs/dialogflow/latest/index.html).
 
-<details markdown="1">
+<details>
 <summary>Examples</summary>
 
 <style>
