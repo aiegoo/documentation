@@ -71,7 +71,6 @@ In case you wanna try something outside the files given in [samples](https://git
 - Make the same things in "Step by step". At step 7, create `search-agents.js` with the same content as [`samples/set-agent.js`](https://github.com/googleapis/nodejs-dialogflow/blob/main/samples/set-agent.js). We are going to change this file. 
 -  Read the [reference](https://googleapis.dev/nodejs/dialogflow/4.5.0/v2.AgentsClient.html#searchAgents), change the input. Below is an example,
 
-<pre>
     ```js
     "use strict";
     async function main() {
@@ -95,7 +94,6 @@ In case you wanna try something outside the files given in [samples](https://git
     });
     main();
     ```
-</pre>
     Then run `node search-agents.js`.
 
 </p>
