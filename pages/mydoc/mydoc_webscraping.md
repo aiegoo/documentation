@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 keywords: "webscraping crawler rapa dashboard django mongo db python project projects chrome driver news"
 tags: [python, machine-learning, projects, webdev]
 tagName: machine-learning
-last_updated: July 29, 2021
+last_updated: October 29, 2021
 toc: true
 folder: mydoc
 youtubeID: B6QEKvzoP2Y
@@ -82,7 +82,8 @@ The file should appear as python-3.7.4-amd64.exe.
 
 3. Move this file to a more permanent location, so that you can install Python (and reinstall it later, if necessary).
 4. Start the installation by double clicking the file.
-5. Navigate to the directory C:\Users\$USER\AppData\Local\Programs\Python\Python37 (or to the directory where Python was installed: see the pop-up window for installing step 3).
+5. Navigate to the directory 
+   - C:\Users\$USER\AppData\Local\Programs\Python\Python37 (or to the directory where Python was installed: see the pop-up window for installing step 3).
 6. Double-click the icon/file python.exe.
 The following pop-up window will appear:
 ![image](https://user-images.githubusercontent.com/42961200/133080768-69bab03c-c191-475f-bf04-26bdc86a44da.png)
