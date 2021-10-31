@@ -4,7 +4,7 @@ title: "11ty and jekyll"
 name: "in-making-it"
 tags: [jekyll]
 tagName: jekyll
-permalink: 2021-10-23-in-making-it.html
+permalink: 2021-10-31-in-making-it.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
@@ -15,8 +15,8 @@ excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
-date: 2021-10-23T16:52:03 +0900
-updated: 2021-10-23 16:52
+date: 2021-10-31T08:52:03 +0900
+updated: 2021-10-31 09:52
 ---
 * TOC
 {:toc}
@@ -53,7 +53,12 @@ Depend on each theme, you should follow the installation steps given in that the
 
 Sometimes, 11ty takes too much time to build (especially on the task of optimizing images. On my site, it takes almost 10 minutes). You shouldn't use branch `master` to build you site because every time you make a push, Netlify will rebuild your whole site. You should create and use a new branch, so-called `prod` instead.
 
-{% raw %} {% hsbox "**Idea 1** -- manually build but should not use many times" %}
+
+<details>
+<summary><div markdown="span">"**Idea 1** -- manually build but should not use many times"</div></summary>
+
+<p>
+<div markdown="1">
 On Netlify, go to **Site settings** > **Build & deploy**:
 
 {:indent}
@@ -66,11 +71,17 @@ On Netlify, go to **Site settings** > **Build & deploy**:
   - _Production branch_: **prod** (the same as the your created branch)
   - _Deploy previews_: **Don't deploy pull requests** (you don't want someone pull request and it auto make a deploy)
   - _Branch deploys_: **Deploy only the production branch**.
-    {% endhsbox %}{% endraw %}
+</div>
+</p>
+</details>
 
 The weakness of _Idea 1_ is that you let netlify build again your whole site with its resources. That's why it takes too much time! Remember that, you have only 300 free minutes to build.
 
-{% raw %} {% hsbox "**Idea 2** -- build locally and push `_site` only" %}
+<details>
+<summary><div markdown="span">"**Idea 2** -- build locally and push `_site` only"</div></summary>
+
+<p>
+<div markdown="1">
 You should know that, even if your site contains only html files, netlify is able to make it live as usual.
 
 1. Working mainly on branch `dev` like in Idea 1.
@@ -90,9 +101,17 @@ You should know that, even if your site contains only html files, netlify is abl
      - _Publish directory_: \_site/
      - _Builds_: Active.
    - **Deploy context**: - _Production branch_: _site_ - _Deploy previews_: Don’t deploy pull requests - _Branch deploys_: Deploy only the production branch
-     {% endhsbox %}{% endraw %}
 
-{% raw %} {% hsbox "Example workflow with dinhanhthi.com" %}
+</div>
+</p>
+</details>
+
+
+<details>
+<summary><div markdown="span">"Example workflow with dinhanhthi.com"</div></summary>
+
+<p>
+<div markdown="1">
 From the [main repo](https://github.com/dinhanhthi/dinhanhthi.com), I clone to 2 different folders
 
 ```bash
@@ -128,15 +147,21 @@ update_dat
 ```
 
 I saved from 1h of building to 2m of building on netlify with this method!
-{% endhsbox %}{% endraw %}
+
+</div>
+</p>
+</details>
 
 ## Templating
 
 ### SCSS to CSS
 
-{% raw %} {% hsbox "If you use [node-sass](https://www.npmjs.com/package/node-sass)" %}
 
-<div class="col-2-equal">
+<details>
+<summary><div markdown="span">"If you use [node-sass](https://www.npmjs.com/package/node-sass)"</div></summary>
+
+<p>
+<div markdown="1">
 
 ```bash
 # Folder's structure
@@ -157,18 +182,23 @@ css/components/....
 }
 ```
 
-</div>
 
 ```html
 <!-- in <head> -->
 <link rel="stylesheet" href="css/main.css" />
 ```
 
-{% endhsbox %}{% endraw %}
 
-{% raw %} {% hsbox "If you use [rollup](https://rollupjs.org/guide/en/) (like this site)" %}
+</div>
+</p>
+</details>
 
-<div class="col-2-equal">
+
+<details>
+<summary><div markdown="span">"If you use [rollup](https://rollupjs.org/guide/en/) (like this site)"</div></summary>
+
+<p>
+<div markdown="1">
 
 ```bash
 # Folder's structure
@@ -190,7 +220,6 @@ css/main_input.js
 }
 ```
 
-</div>
 
 ```js
 import scss from "rollup-plugin-scss";
@@ -217,11 +246,16 @@ export default [
 <link rel="stylesheet" href="css/main.css" />
 ```
 
-{% endhsbox %}{% endraw %}
+</div>
+</p>
+</details>
 
-{% raw %} {% hsbox "If you use [parcel](https://parceljs.org)" %}
 
-<div class="col-2-equal">
+<details>
+<summary><div markdown="span">"If you use [parcel](https://parceljs.org)"</div></summary>
+
+<p>
+<div markdown="1">
 
 ```bash
 # install
@@ -236,9 +270,6 @@ ___________/_bootstrap.scss
 _______/js/main.js
 ```
 
-</div>
-
-<div class="col-2-equal">
 
 ```bash
 # main.scss
@@ -250,7 +281,6 @@ _______/js/main.js
 import "./../css/main.scss";
 ```
 
-</div>
 
 ```bash
 # package.json
@@ -269,7 +299,11 @@ import "./../css/main.scss";
 npm start
 ```
 
-{% endhsbox %}{% endraw %}
+
+</div>
+</p>
+</details>
+
 
 ### Using [`postcss`](https://github.com/postcss/postcss)?
 
@@ -320,7 +354,7 @@ npm i bootstrap jquery popper.js
 
 Using alongside with section "[SCSS to CSS](#scss-to-css)".
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```bash
 # folder structure
@@ -392,7 +426,7 @@ Check the code `-doc` in `src/fontello/config.json`, field `"css"`.
 
 ### Layout
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```bash
 mkdir _includes/layouts
@@ -439,7 +473,7 @@ Split layout into parts and include them in the main file.
 
 Read this [tutorial](https://mozilla.github.io/nunjucks/templating.html#template-inheritance).
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```html {% raw %}
 <!-- _includes/layouts/base.njk -->
@@ -517,7 +551,7 @@ If `pageUrlLength > 1`, it's not home page!
 
 ### Frontmatter
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```yml
 ---
@@ -815,7 +849,7 @@ Last modified date,
 
 **Code syntax highlight**: Need [this plugin](https://www.11ty.dev/docs/plugins/syntaxhighlight/). List of [supported languages](https://prismjs.com/#languages-list).
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ````markdown
 # Highlight line 2
@@ -874,7 +908,12 @@ Using [markdown-it-mathjax](https://github.com/classeur/markdown-it-mathjax)
 
 ### KaTeX (my choice)
 
-{% raw %} {% hsbox "KaTeX: Use `markdown-it-katex`" %}{% endraw %}
+<details>
+<summary><div markdown="span">"KaTeX: Use `markdown-it-katex`"</div></summary>
+
+<p>
+<div markdown="1">
+
 Using [markdown-it-katex](https://github.com/iktakahiro/markdown-it-katex/) (use this version only),
 
 ```js
@@ -926,7 +965,9 @@ $$
 
 :::
 
-{% endhsbox %}{% endraw %}
+</div>
+</p>
+</details>
 
 In this site, I use [`markdown-it-texmath`](https://www.npmjs.com/package/markdown-it-texmath). I choose this because we can overcome the weakness of `markdown-it-katex` in case of breaking lines in list mode & it's [more flexible](https://goessner.github.io/markdown-it-texmath/index.html) (you can try it online [here](https://goessner.github.io/markdown-it-texmath/markdown-it-texmath-demo.html)).
 
@@ -950,7 +991,12 @@ module.exports = function (eleventyConfig) {
 };
 ```
 
-::: hsbox 💡 If you wanna modify yourself `markdown-it-texmath`?
+<details>
+<summary><div markdown="span"> If you wanna modify yourself `markdown-it-texmath`</div></summary>
+
+<p>
+<div markdown="1">
+
 
 Copy the cloned folder `markdown-it-temath` (except `.git`, `.gitignore`, `test/`, `package-lock.json`) to a so-called `/third-party/` folder in your project. In `.eleventy.js`, you import it as
 
@@ -973,6 +1019,9 @@ const tm = require("./third_party/markdown-it-texmath");
   href="https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css"
 />
 ```
+</div>
+</p>
+</details>
 
 ## Figures
 
@@ -1118,7 +1167,7 @@ You can put in `.eleventy.js` like,
 
 ### Markdown inside `.njk`
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```js
 // .eleventy.js
@@ -1183,7 +1232,7 @@ module.exports = function (eleventyConfig) {
 
 ### Custom block shortcodes
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 <div>
 
@@ -1207,7 +1256,7 @@ To creata the same code block like above, i.e.,
 Just by using,
 
 ```html {% raw %}
-{% raw %} {% hsbox "Custom Title" %}{% endraw %}
+{% hsbox "Custom Title" %}
 <!-- Custom markdown texts -->
 {% endhsbox %} {% endraw %}
 ```
@@ -1259,12 +1308,21 @@ module.exports = function (eleventyConfig) {
 
 For me, the best choice for search feature in 11ty is using [Elasticlunr](http://elasticlunr.com/) with some customizations.
 
-{% raw %} {% hsbox "Why not others?" %}{% endraw %}
+<details>
+<summary><div markdown="span">"Why not others?"</div></summary>
+
+<p>
+<div markdown="1">
+
 Based on the purpose of **free**, **quick**, **full text** search:
 
 - We don't choose Google's [Programmable Search](https://programmablesearchengine.google.com/) because: it contains ads, not index as we want, difficult to customize with personal theme,...
 - We don't choose paid options like [Agolia](https://www.algolia.com/) because the free option contains very few units. It's absolutely not enough for your need. In case you still want to use it with less consumption, read [this article](https://www.kizu.ru/algolia-search/).
-  {% endhsbox %}{% endraw %}
+
+</div>
+</p>
+</details>
+
 
 Because your site becomes bigger in future, you cannot index the whole text of your site (every time you build). **My idea** is to create a custom frontmatter tag called "keywords" which contains all of the important keywords used to determine the content of your posts. Of course, the cons is that you have to put the keywords manually!!
 
@@ -1350,7 +1408,7 @@ module.exports = function (eleventyConfig) {
 
 You put all your data files (`.js` or `.json`) in `_data`, e.g.,
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```json
 // _data/dataUrls.json
@@ -1374,7 +1432,7 @@ endraw%}
 
 </div>
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```json
 // _data/cat_icon.json
@@ -1402,7 +1460,7 @@ catIcon[page.data.tags[1]].svg,
 
 For example, export a **current year** on site,
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```js
 // _data/helpers.js
@@ -1514,7 +1572,7 @@ module.exports = function (eleventyConfig) {
 
 Or using in the template,
 
-<div class="col-2-equal">
+<div class="col-2-equal" markdown="1">
 
 ```js
 // _data/myProject.js
