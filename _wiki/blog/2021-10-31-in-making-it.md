@@ -26,7 +26,7 @@ updated: 2021-10-31 09:52
 ## Thi
 {{site.data.alerts.bulletin}}
 <div markdown="span">
-**for currenttly working site, see** [v2 roadmap report](v2-roadmap.html#october-30-report)
+**for currenttly working site, see** [v2 roadmap](v2-roadmap.html#october-30-report)
 </div>
 {{site.data.alerts.end}}
 {% assign img-url = '/img/post/js/gatsby' %}
