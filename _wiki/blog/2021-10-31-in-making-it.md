@@ -1609,6 +1609,47 @@ For example,
 - Only process posts in `sample_posts/*` on local (ignore `notes/*`).
 
 <script src="https://gist.github.com/aiegoo/f9c4f7aa00854345609ac664df36e160.js"></script>
+
+## Nunjucks things
+
+Add a new item to a list,
+
+```js {% raw %}
+{% assign a = [1,2] %}
+{% assign a = (a.push(3),a) %}
+{% endraw %}
+```
+
+Create a dictionary with nunjucks
+
+```js {% raw %}
+{% assign items = {'a': 1, 'b': 2} %}
+{% endraw %}
+```
+
+Add a new key-value to a dictionary,
+
+```js {% raw %}
+// .eleventy.js -> create a new filter
+eleventyConfig.addFilter('setAttribute', function(dictionary, key, value) {
+	dictionary[key] = value;
+	return dictionary;
+});
+
+// usage
+{% assign myDict = {"key1": 0, "key2": 0, "key3": 0}%}
+{% assign myDict = myDict|setAttribute('key2', 123) %}
+{{myDict['key2']}} // pring "123" as expected
+{% endraw %}
+```
+
+String concatenations,
+
+```html {% raw %}
+{# Not working #} {% set url = "/bits/{{ data.slug }}" %} {# Working #} {% set
+url = ["/bits/", data.slug] | join %} {% endraw %}
+```
+
 ## Errors
 
 ```bash
