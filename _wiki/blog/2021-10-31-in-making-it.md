@@ -1034,10 +1034,11 @@ module.exports = function (eleventyConfig) {
 
 We use [markdown-it](https://github.com/markdown-it/markdown-it) and [its plugins](https://www.npmjs.com/search?q=keywords:markdown-it-plugin). Just use `npm i <plugin-name> --save-dev` to install.
 
-{% raw %}
-<div class="hsbox">
-<div class="hs__title">My choices of useful plugins</div>
-<div class="hs__content">
+<details>
+<summary>My choices of useful plugins</summary>
+
+<p>
+<div markdown="1">
 
 Search on [npm page](https://www.npmjs.com/) with the same name.
 
@@ -1054,13 +1055,17 @@ Search on [npm page](https://www.npmjs.com/) with the same name.
 - `@gerhobbelt/markdown-it-inline-text-color` for coloring inline text by using something like `{color:red}Text{color}`.
 
 </div>
-</div>
-{% endraw %}
+</p>
+</details>
 
-{% raw %}
-<div class="hsbox">
-<div class="hs__title">How to use markdown-it's plugins in 11ty?</div>
-<div class="hs__content">
+{{site.data.alerts.hr_faded}}
+
+
+<details>
+<summary>How to use markdown-it's plugins in 11ty?</summary>
+
+<p>
+<div markdown="1">
 
 Below are an example of inserting 2 plugins,
 
@@ -1081,10 +1086,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLibrary);
 };
 ```
-
 </div>
-</div>
-{% endraw %}
+</p>
+</details>
 
 ### Custom container
 
