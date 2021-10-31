@@ -94,7 +94,11 @@ body {
 .bs-callout-info h4 {
     color: #5bc0de;
 }
-
+/* custom callout used in data alerts.yml */
+.alert.alert-bulletin:before {
+    content: url('https://api.iconify.design/ri/double-quotes-l.svg?color=%239c9ccc');
+    font-size: 3em;
+}
 
 .gi-2x{font-size: 2em;}
 .gi-3x{font-size: 3em;}
