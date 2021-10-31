@@ -469,7 +469,7 @@ Split layout into parts and include them in the main file.
 // inside postlist.njk, just use {{ customClass }}
 
 ```
-{% endraw %}
+{% endhighlight %}
 
 #### Template inheritance
 
@@ -548,7 +548,7 @@ Suppose you use `specialTitle` in the frontmatter of your page (eg. `index.js`).
 ```html 
 {% set pageUrlLength = page.url | length %} 
 ```
-{% endraw %}
+{% endhighlight %}
 
 If `pageUrlLength > 1`, it's not home page!
 
@@ -591,7 +591,7 @@ Normal,
 </ul>
 
 ```
-{% endraw %}
+{% endhighlight %}
 
 ::: info
 Other default variable (like `post.url`) can be found [here](https://www.11ty.dev/docs/data-eleventy-supplied/#page-variable-contents). Note that, you can use `page.templateContent` for the content of a page in some collections (not tested yet but you can try!{% ref "https://www.11ty.dev/docs/collections/" %}).
@@ -616,7 +616,7 @@ newPostList) %} {% endfor %}
 </ul>
 
 ```
-{% endraw %}
+{% endhighlight %}
 
 ### Posts by categories / tags
 
@@ -703,7 +703,7 @@ newPostList) %} {% endfor %} {% endif %}
 </div>
 {% endfor %} 
 ```
-{% endraw %}
+{% endhighlight %}
 
 ### Next / Previous post
 {% highlight html %}
@@ -724,7 +724,7 @@ newPostList) %} {% endfor %} {% endif %}
 </ul>
 
 ```
-{% endraw %}
+{% endhighlight %}
 
 ## Custom js scripts
 
@@ -740,7 +740,7 @@ newPostList) %} {% endfor %} {% endif %}
 <script async defer src="{{ '/js/min.js' | addHash }}"></script>
 
 ```
-{% endraw %}
+{% endhighlight %}
 :::
 
 Using [rollupjs](https://rollupjs.org/),
@@ -783,7 +783,7 @@ Suppose that you have a custom frontmatter `customJS: ["file1.js, file2.js"]` co
 </script>
 {% endif %} 
 ```
-{% endraw %}
+{% endhighlight %}
 
 Where `jsmin` is a filter created in [next section](#minify-js-file). All files `file1.js`, `file2.js` are stored in `_includes/_scripts/`.
 
@@ -820,7 +820,7 @@ Usage (`_includes/scripts/search.js`),
 </script>
 
 ```
-{% endraw %}
+{% endhighlight %}
 
 ## Last modified date
 
@@ -855,7 +855,7 @@ Last modified date,
 ```html
 {{ page.inputPath | lastModifiedDate | htmlDateString }} 
 ```
-{% endraw %}
+{% endhighlight %}
 
 ## Insert code highlight
 
@@ -1160,7 +1160,7 @@ Just by using,
 ```html 
 ::: hsbox Custom Title Custom markdown texts :::
 ```
-{% endraw %}
+{% endhighlight %}
 
 You can put in `.eleventy.js` like,
 
@@ -1206,7 +1206,7 @@ module.exports = function (eleventyConfig) {
 <!-- no need spaces before/after -->
 {% endmarkdown %} 
 ```
-{% endraw %}
+{% endhighlight %}
 </div>
 
 ### HTML/nunjucks tags inside `.md`
@@ -1235,7 +1235,7 @@ module.exports = function (eleventyConfig) {
 </div>
 
 ```
-{% endraw %}
+{% endhighlight %}
 
 {% raw %}
 ```html 
@@ -1284,7 +1284,7 @@ Just by using,
 <!-- Custom markdown texts -->
 {% endhsbox %} 
 ```
-{% endraw %}
+{% endhighlight %}
 
 </div>
 </div>
@@ -1454,7 +1454,7 @@ You put all your data files (`.js` or `.json`) in `_data`, e.g.,
 <!-- in a .njk file -->
 {% for item in dataUrls %} {{ item.name }} {{ item.url }} {% endfor %} 
 ```
-{% endraw %}
+{% endhighlight %}
 </div>
 
 <div class="col-2-equal" markdown="1">
@@ -1502,7 +1502,7 @@ module.exports = {
 <div>{{ helpers.currentYear() }}</div>
 
 ```
-{% endraw %}
+{% endhighlight %}
 </div>
 
 ### Fetched JSON from an external source
@@ -1563,7 +1563,7 @@ module.exports = function (eleventyConfig) {
 {% list_repos %}
 
 ```
-{% endraw %}
+{% endhighlight %}
 ## Working style
 
 ### Custom environment
@@ -1614,7 +1614,7 @@ module.exports = {
 {% endif %}
 
 ```
-{% endraw %} 
+{% endhighlight %} 
 </div>
 
 ### Incremental build
@@ -1698,7 +1698,7 @@ Create a dictionary with nunjucks
 {% set items = {'a': 1, 'b': 2} %}
 
 ```
-{% endraw %}
+{% endhighlight %}
 
 Add a new key-value to a dictionary,
 {% highlight js %}
@@ -1715,7 +1715,7 @@ eleventyConfig.addFilter('setAttribute', function(dictionary, key, value) {
 {{myDict['key2']}} // pring "123" as expected
 
 ```
-{% endraw %}
+{% endhighlight %}
 
 String concatenations,
 {% highlight html %}
@@ -1723,7 +1723,7 @@ String concatenations,
 {# Not working #} {% set url = "/bits/{{ data.slug }}" %} {# Working #} {% set
 url = ["/bits/", data.slug] | join %} 
 ```
-{% endraw %}
+{% endhighlight %}
 
 ## Errors
 
