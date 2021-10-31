@@ -35,9 +35,9 @@ This is not a tutorial to create an 11ty website, this's a note! You can find so
 This note will be always updated!
 {{site.data.alerts.end}}
 
-## custom plugin locally and deployed as site
+## customized locally and deployed as site
 [github_actions](https://gist.github.com/aiegoo/55437ea80b9f04055a89190d89777247)
-## Installation
+## Installation && Setting up with Netlify
 
 👉 First, install [nodejs](/nodejs-npm).
 👉 Using [this starter template](https://github.com/11ty/eleventy-base-blog) or [Google's high performance statrer theme](https://github.com/google/eleventy-high-performance-blog) (recommended).
@@ -48,8 +48,6 @@ npm install
 ```
 
 Depend on each theme, you should follow the installation steps given in that theme.
-
-### Setting up with Netlify
 
 Sometimes, 11ty takes too much time to build (especially on the task of optimizing images. On my site, it takes almost 10 minutes). You shouldn't use branch `master` to build you site because every time you make a push, Netlify will rebuild your whole site. You should create and use a new branch, so-called `prod` instead.
 
@@ -155,7 +153,7 @@ I saved from 1h of building to 2m of building on netlify with this method!
 
 ## Templating
 
-### SCSS to CSS
+### SCSS to CSS & Using [`postcss`](https://github.com/postcss/postcss)
 
 
 <details>
@@ -308,7 +306,7 @@ npm start
 </details>
 
 
-### Using [`postcss`](https://github.com/postcss/postcss)?
+##### Using [`postcss`](https://github.com/postcss/postcss)
 
 ```bash
 # Install it and its plugin first
@@ -332,7 +330,7 @@ module.exports = {
 postcss --watch main.css -o main_.css --use autoprefixer
 ```
 
-### Nunjucks inside css
+##### Nunjucks inside css
 
 ```html
 <style>
@@ -432,10 +430,71 @@ Check the code `-doc` in `src/fontello/config.json`, field `"css"`.
 {{site.data.alerts.end}}
 
 ### Layout
+<div class="col-2-equal" markdown="1">
 
-<div class="col-2-equal"><pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token function">mkdir</span> _includes/layouts<br><span class="token function">touch</span> _includes/layouts/post.html</code></pre><pre class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token comment">// create an alias</span><br>module<span class="token punctuation">.</span><span class="token function function-variable">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  eleventyConfig<span class="token punctuation">.</span><span class="token function">addLayoutAlias</span><span class="token punctuation">(</span><span class="token string">"post"</span><span class="token punctuation">,</span> <span class="token string">"layouts/post.html"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre><pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token comment"># update changes</span><br><span class="token function">touch</span> .eleventy.js</code></pre><pre class="language-yml"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-yml"><span class="token comment"># then use</span><br><span class="token punctuation">---</span><br><span class="token atrule key">layout</span><span class="token punctuation">:</span> post<br><span class="token punctuation">---</span></code></pre></div>
+```bash
+mkdir _includes/layouts
+touch _includes/layouts/post.njk
+```
 
-<script src="https://gist.github.com/aiegoo/21882ce2086c11e63642ecd9549e3438.js"></script>
+```js
+// create an alias
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+};
+```
+
+```bash
+# update changes
+touch .eleventy.js
+```
+
+```yml
+# then use
+---
+layout: post
+---
+```
+
+</div>
+
+#### Includes
+
+Split layout into parts and include them in the main file.
+
+```js {% raw %}
+// in _includes/components/head.njk
+{% include "custom/head.html" %}
+
+// custom parameter
+{% assign customClass = 'list-homepage' %}
+{% include "custom/postslist.html" %}
+// inside postlist.njk, just use {{ customClass }}
+{% endraw %}
+```
+
+#### Template inheritance
+
+Read this [tutorial](https://mozilla.github.io/nunjucks/templating.html#template-inheritance).
+
+<div class="col-2-equal" markdown="1">
+
+```html {% raw %}
+<!-- _includes/layouts/base.njk -->
+<body>
+  <header>{% include topnav.html %}</header>
+</body>
+{% endraw %}
+```
+
+```html {% raw %}
+<!-- _includes/layouts/post.njk -->
+--- --- {% include "layouts/base.html" %} {% include topnav.html %}
+<!-- only appear on post layout -->
+{% endraw %}
+```
+
+</div>
 
 ### Post's components
 
