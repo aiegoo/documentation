@@ -428,67 +428,6 @@ Check the code `-doc` in `src/fontello/config.json`, field `"css"`.
 
 <div class="col-2-equal"><pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token function">mkdir</span> _includes/layouts<br><span class="token function">touch</span> _includes/layouts/post.html</code></pre><pre class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token comment">// create an alias</span><br>module<span class="token punctuation">.</span><span class="token function function-variable">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  eleventyConfig<span class="token punctuation">.</span><span class="token function">addLayoutAlias</span><span class="token punctuation">(</span><span class="token string">"post"</span><span class="token punctuation">,</span> <span class="token string">"layouts/post.html"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre><pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token comment"># update changes</span><br><span class="token function">touch</span> .eleventy.js</code></pre><pre class="language-yml"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-yml"><span class="token comment"># then use</span><br><span class="token punctuation">---</span><br><span class="token atrule key">layout</span><span class="token punctuation">:</span> post<br><span class="token punctuation">---</span></code></pre></div>
 
-#### Includes
-
-Split layout into parts and include them in the main file.
-
-
-<pre
-  class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token comment">// in _includes/head.html</span><br><span class="token punctuation">{</span><span class="token operator">%</span> include <span class="token string">"components/head.html"</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><br><span class="token comment">// custom parameter</span><br><span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">set</span> customClass <span class="token operator">=</span> <span class="token string">'list-homepage'</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><span class="token punctuation">{</span><span class="token operator">%</span> include <span class="token string">"components/postslist.html"</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><span class="token comment">// inside postlist.html, just use {{ customClass }}</span><br></code></pre>
-
-#### Template inheritance
-
-Read this [tutorial](https://mozilla.github.io/nunjucks/templating.html#template-inheritance).
-
-<div class="col-2-equal" markdown="1"><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _layouts/base.html --&gt;</span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>{% include topnav.html %}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><br></code></pre><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _layouts/post.html --&gt;</span><br>--- --- {% include "layouts/base.html" %} {% include topnav.html %}<br><span class="token comment">&lt;!-- only appear on post layout --&gt;</span><br></code></pre></div>
-
-### Post's components
-
-👉 [Page variable components](https://www.11ty.dev/docs/data-eleventy-supplied/#page-variable-contents).
-
-```js
-// URL can be used in <a href> to link to other templates
-url: "/current/page/myFile/",
-
-// For permalinks: inputPath filename minus template file extension (New in v0.3.4)
-fileSlug: "myFile",
-
-// For permalinks: inputPath minus template file extension (New in v0.9.0)
-filePathStem: "/current/page/myFile",
-
-// JS Date Object for current page (used to sort collections)
-date: new Date(),
-
-// The path to the original source file for the template
-// Note: this will include your input directory path!
-inputPath: "./current/page/myFile.md",
-
-// Depends on your output directory (the default is _site)
-// You probably won’t use this: `url` is better.
-outputPath: "./_site/current/page/myFile/index.html"
-
-templateContent: //the rendered content of this template. This does not include layout wrappers.
-
-data: // all data for this piece of content (includes any data inherited from layouts)
-// self-defined frontmatter tags can be found here
-```
-
-::: info
-For ones who wanna get only the content (escape HTML tags and special characters) of the post:
-<pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token punctuation">{</span><span class="token punctuation">{</span> page.templateContent <span class="token operator">|</span> dump <span class="token operator">|</span> safe <span class="token operator">|</span> striptags<span class="token punctuation">(</span>true<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><br></code></pre>
-
-### Custom frontmatter fields
-
-Suppose you use `specialTitle` in the frontmatter of your page (eg. `index.js`). You can use it in the template, eg. `header.njk`, as
-
-{% raw %}
-```html 
-{% if specialTitle %} {# content #} {% endif %}
-```
- {% endraw %}
-
-### Recognize home page
-
 
 {% include taglogic.html %}
 
