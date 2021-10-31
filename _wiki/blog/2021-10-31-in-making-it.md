@@ -432,13 +432,15 @@ Check the code `-doc` in `src/fontello/config.json`, field `"css"`.
 
 Split layout into parts and include them in the main file.
 
-<pre class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token comment">// in _includes/components/head.html</span><br><span class="token punctuation">{</span><span class="token operator">%</span> include <span class="token string">"components/head.html"</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><br><span class="token comment">// custom parameter</span><br><span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">set</span> customClass <span class="token operator">=</span> <span class="token string">'list-homepage'</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><span class="token punctuation">{</span><span class="token operator">%</span> include <span class="token string">"components/postslist.html"</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><span class="token comment">// inside postlist.html, just use {{ customClass }}</span><br></code></pre>
+
+<pre
+  class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token comment">// in _includes/head.html</span><br><span class="token punctuation">{</span><span class="token operator">%</span> include <span class="token string">"components/head.html"</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><br><span class="token comment">// custom parameter</span><br><span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">set</span> customClass <span class="token operator">=</span> <span class="token string">'list-homepage'</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><span class="token punctuation">{</span><span class="token operator">%</span> include <span class="token string">"components/postslist.html"</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><span class="token comment">// inside postlist.html, just use {{ customClass }}</span><br></code></pre>
 
 #### Template inheritance
 
 Read this [tutorial](https://mozilla.github.io/nunjucks/templating.html#template-inheritance).
 
-<div class="col-2-equal" markdown="1"><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _includes/layouts/base.html --&gt;</span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>{% include headerLogo %}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><br></code></pre><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _includes/layouts/post.html --&gt;</span><br>--- --- {% include "layouts/base.html" %} {% include headerLogo%}<br><span class="token comment">&lt;!-- only appear on post layout --&gt;</span><br></code></pre></div>
+<div class="col-2-equal" markdown="1"><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _layouts/base.html --&gt;</span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>{% include topnav.html %}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><br></code></pre><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _layouts/post.html --&gt;</span><br>--- --- {% include "layouts/base.html" %} {% include topnav.html %}<br><span class="token comment">&lt;!-- only appear on post layout --&gt;</span><br></code></pre></div>
 
 ### Post's components
 
@@ -714,7 +716,7 @@ Suppose that you have a custom frontmatter `customJS: ["file1.js, file2.js"]` co
 
 {% raw %}
 ```html 
-{% if customJS %} {% assign js %} {% for file in customJS %} {% include "scripts/"
+{% if customJS %} {% assign js %} {% for file in customJS %} {% include "js/"
 + file %} {% endfor %}
 <script>
   {
@@ -752,7 +754,7 @@ Usage (`_includes/scripts/search.js`),
 
 {% raw %}
 ```html 
-{% assign js %} {% include "scripts/search.js" %}
+{% assign js %} {% include "js/search.js" %}
 <script>
   {
     {
