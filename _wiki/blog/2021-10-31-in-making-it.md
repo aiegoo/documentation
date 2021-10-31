@@ -438,23 +438,7 @@ Split layout into parts and include them in the main file.
 
 Read this [tutorial](https://mozilla.github.io/nunjucks/templating.html#template-inheritance).
 
-<div class="col-2-equal" markdown="1">
-
-{% highlight html %}
-```html 
-<!-- _includes/layouts/base.njk -->
-<body>
-  <header>{% block headerLogo %}{% endblock %}</header>
-</body>
-
-<!-- _includes/layouts/post.njk -->
---- --- {% include "layouts/base.njk" %} {% block headerLogo%}
-<!-- only appear on post layout -->
-{% endblock %} 
-```
-
-
-</div>
+<div class="col-2-equal"><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _includes/layouts/base.njk --&gt;</span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>{% block headerLogo %}{% endblock %}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><br></code></pre><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _includes/layouts/post.njk --&gt;</span><br>--- --- {% extends "layouts/base.njk" %} {% block headerLogo%}<br><span class="token comment">&lt;!-- only appear on post layout --&gt;</span><br>{% endblock %} </code></pre></div>
 
 ### Post's components
 
