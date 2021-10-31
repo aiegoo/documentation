@@ -921,9 +921,15 @@ $$
 </p>
 </details>
 
+{{site.data.alerts.hr_faded}}
+
 In this site, I use [`markdown-it-texmath`](https://www.npmjs.com/package/markdown-it-texmath). I choose this because we can overcome the weakness of `markdown-it-katex` in case of breaking lines in list mode & it's [more flexible](https://goessner.github.io/markdown-it-texmath/index.html) (you can try it online [here](https://goessner.github.io/markdown-it-texmath/markdown-it-texmath-demo.html)).
 
+{{site.data.alerts.callout_primary}}
+<div markdown="1">
 **An important note**: the original version has a problem of whitespace before and after `<eq>` tag in the inline mode. That why instead of seeing `aaa x aaa` with `aaa $x$ aaa`, we see `aaaxaaa`. I've changed (and reported [an issue](https://github.com/goessner/markdown-it-texmath/issues/25)). For a moment, I use a modified version [here](https://github.com/dinhanhthi/markdown-it-texmath). **Update**: The author couldn't reproduce the issue I met (with version 0.8), he keep updating the plugin but I didn't try version 0.9. You better try it before trying my option!
+</div>
+{{site.data.alerts.end}}
 
 ```bash
 # Install
@@ -975,6 +981,7 @@ const tm = require("./third_party/markdown-it-texmath");
 </p>
 </details>
 
+{{site.data.alerts.hr_faded}}
 ## Figures
 
 
