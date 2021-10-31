@@ -1301,7 +1301,7 @@ Based on the purpose of **free**, **quick**, **full text** search:
 
 {{site.data.alerts.hr_faded}}
 
-{% include tony.html content="Because your site becomes bigger in future, you cannot index the whole text of your site (every time you build). **My idea** is to create a custom frontmatter tag called "keywords" which contains all of the important keywords used to determine the content of your posts. Of course, the cons is that you have to put the keywords manually!!" %}
+{% include tony.html content="Because your site becomes bigger in future, you cannot index the whole text of your site (every time you build). **My idea** is to create a custom frontmatter tag called 'keywords' which contains all of the important keywords used to determine the content of your posts. Of course, the cons is that you have to put the keywords manually!!" %}
 
 Check [this repository](https://github.com/dinhanhthi/eleventy-search-demo), I've pulled and modified from [this one](https://github.com/duncanmcdougall/eleventy-search-demo) (The author takes so long to check my pull request ^^). My customization supports:
 
