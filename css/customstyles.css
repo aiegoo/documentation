@@ -95,7 +95,7 @@ body {
     color: #5bc0de;
 }
 /* custom callout used in data alerts.yml */
-.alert.alert-bulletin {
+.alert.alert-bulletin div {
         border: 1px solid transparent !important;
         border-left: 4px dotted !important;
         border-bottom: 1px solid #dedede !important;
