@@ -1623,14 +1623,14 @@ module.exports = {
 
 👎 **Weakness of 11ty**:
 
-{:.indent}
+
 
 1. There is some change in files, 11ty rebuilds the whole site. It's painful if we work with markdown files and save them regularly!
 2. Cannot access the site while the building processing.
 
 💡 **Idea**:
 
-{:.indent}
+
 
 1. Build manually, e.g. `npm run build-local` to `_site` folder.
 2. Copy all files in `_site` to a so-called folder `_live`
@@ -1751,7 +1751,7 @@ url = ["/bits/", data.slug] | join %}
 
 ## References
 
-{:.indent}
+
 
 1. [Official website.](https://www.11ty.dev/)
 2. [Nunjucks Documentation](https://mozilla.github.io/nunjucks/templating.html)
