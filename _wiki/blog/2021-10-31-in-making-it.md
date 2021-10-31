@@ -615,7 +615,6 @@ newPostList) %} {% endfor %}
 
 In this case, ==we consider a category as the first tag== of a post. For example, if a post has tags `tags: [tag 1, tag 2, tag 3]`, then `tag 1` will be its category!
 
-::: col-2-equal
 
 ```json
 // _data/categories.json
@@ -722,7 +721,6 @@ newPostList) %} {% endfor %} {% endif %}
 
 ## Custom js scripts
 
-::: col-2-equal
 
 ```bash
 # Put scripts in
@@ -935,7 +933,7 @@ markdownLibrary.use(markdownItKatex);
 
 💡 **Some tips**: working with KaTeX
 
-::: col-2-equal
+
 
 ```bash
 # working
@@ -1025,7 +1023,7 @@ const tm = require("./third_party/markdown-it-texmath");
 
 ## Figures
 
-::: col-2-equal
+
 
 ```bash {% raw %}
 # Insert normally,
@@ -1192,7 +1190,7 @@ module.exports = function (eleventyConfig) {
 
 ### HTML/nunjucks tags inside `.md`
 
-::: col-2-equal
+
 
 ```html
 <!-- not working -->
