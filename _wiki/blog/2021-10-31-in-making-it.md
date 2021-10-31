@@ -426,50 +426,13 @@ Check the code `-doc` in `src/fontello/config.json`, field `"css"`.
 
 ### Layout
 
-<div class="col-2-equal" markdown="1">
-
-```bash
-mkdir _includes/layouts
-touch _includes/layouts/post.njk
-```
-
-```js
-// create an alias
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-};
-```
-
-```bash
-# update changes
-touch .eleventy.js
-```
-
-```yml
-# then use
----
-layout: post
----
-```
-
-</div>
+<div class="col-2-equal"><pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token function">mkdir</span> _includes/layouts<br><span class="token function">touch</span> _includes/layouts/post.njk</code></pre><pre class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token comment">// create an alias</span><br>module<span class="token punctuation">.</span><span class="token function function-variable">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  eleventyConfig<span class="token punctuation">.</span><span class="token function">addLayoutAlias</span><span class="token punctuation">(</span><span class="token string">"post"</span><span class="token punctuation">,</span> <span class="token string">"layouts/post.njk"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre><pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token comment"># update changes</span><br><span class="token function">touch</span> .eleventy.js</code></pre><pre class="language-yml"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-yml"><span class="token comment"># then use</span><br><span class="token punctuation">---</span><br><span class="token atrule key">layout</span><span class="token punctuation">:</span> post<br><span class="token punctuation">---</span></code></pre></div>
 
 #### Includes
 
 Split layout into parts and include them in the main file.
 
-{% highlight js %}
-```js 
-// in _includes/components/head.njk
-{% include "components/head.njk" %}
-
-// custom parameter
-{% set customClass = 'list-homepage' %}
-{% include "components/postslist.njk" %}
-// inside postlist.njk, just use {{ customClass }}
-
-```
-{% endhighlight %}
+<pre class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token comment">// in _includes/components/head.njk</span><br><span class="token punctuation">{</span><span class="token operator">%</span> include <span class="token string">"components/head.njk"</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><br><span class="token comment">// custom parameter</span><br><span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">set</span> customClass <span class="token operator">=</span> <span class="token string">'list-homepage'</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><span class="token punctuation">{</span><span class="token operator">%</span> include <span class="token string">"components/postslist.njk"</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><span class="token comment">// inside postlist.njk, just use {{ customClass }}</span><br></code></pre>
 
 #### Template inheritance
 
