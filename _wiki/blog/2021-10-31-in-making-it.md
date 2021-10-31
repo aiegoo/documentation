@@ -594,7 +594,7 @@ Normal,
 
 {{site.data.alerts.callout_info}}
 <div markdown="1">
-Other default variable (like `post.url`) can be found [here](https://www.11ty.dev/docs/data-eleventy-supplied/#page-variable-contents). Note that, you can use `page.templateContent` for the content of a page in some collections (not tested yet but you can try![link](https://www.11ty.dev/docs/collections/)).
+Other default variable (like `post.url`) can be found [here](https://www.11ty.dev/docs/data-eleventy-supplied/#page-variable-contents). Note that, you can use `page.templateContent` for the content of a page in some collections (not tested yet but you can try [link](https://www.11ty.dev/docs/collections/)).
 </div>
 {{site.data.alerts.end}}
 
