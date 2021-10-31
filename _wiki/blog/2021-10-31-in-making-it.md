@@ -428,20 +428,1199 @@ Check the code `-doc` in `src/fontello/config.json`, field `"css"`.
 
 <div class="col-2-equal"><pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token function">mkdir</span> _includes/layouts<br><span class="token function">touch</span> _includes/layouts/post.html</code></pre><pre class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token comment">// create an alias</span><br>module<span class="token punctuation">.</span><span class="token function function-variable">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  eleventyConfig<span class="token punctuation">.</span><span class="token function">addLayoutAlias</span><span class="token punctuation">(</span><span class="token string">"post"</span><span class="token punctuation">,</span> <span class="token string">"layouts/post.html"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre><pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token comment"># update changes</span><br><span class="token function">touch</span> .eleventy.js</code></pre><pre class="language-yml"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-yml"><span class="token comment"># then use</span><br><span class="token punctuation">---</span><br><span class="token atrule key">layout</span><span class="token punctuation">:</span> post<br><span class="token punctuation">---</span></code></pre></div>
 
-#### Includes
+<script src="https://gist.github.com/aiegoo/21882ce2086c11e63642ecd9549e3438.js"></script>
+### Post's components
 
-Split layout into parts and include them in the main file.
+👉 [Page variable components](https://www.11ty.dev/docs/data-eleventy-supplied/#page-variable-contents).
+
+```js
+// URL can be used in <a href> to link to other templates
+url: "/current/page/myFile/",
+
+// For permalinks: inputPath filename minus template file extension (New in v0.3.4)
+fileSlug: "myFile",
+
+// For permalinks: inputPath minus template file extension (New in v0.9.0)
+filePathStem: "/current/page/myFile",
+
+// JS Date Object for current page (used to sort collections)
+date: new Date(),
+
+// The path to the original source file for the template
+// Note: this will include your input directory path!
+inputPath: "./current/page/myFile.md",
+
+// Depends on your output directory (the default is _site)
+// You probably won’t use this: `url` is better.
+outputPath: "./_site/current/page/myFile/index.html"
+
+templateContent: //the rendered content of this template. This does not include layout wrappers.
+
+data: // all data for this piece of content (includes any data inherited from layouts)
+// self-defined frontmatter tags can be found here
+```
+
+::: info
+For ones who wanna get only the content (escape HTML tags and special characters) of the post:
+<pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token punctuation">{</span><span class="token punctuation">{</span> page.templateContent <span class="token operator">|</span> dump <span class="token operator">|</span> safe <span class="token operator">|</span> striptags<span class="token punctuation">(</span>true<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><br></code></pre>
+
+### Custom frontmatter fields
+
+Suppose you use `specialTitle` in the frontmatter of your page (eg. `index.js`). You can use it in the template, eg. `header.njk`, as
+
+{% raw %}
+```html 
+{% if specialTitle %} {# content #} {% endif %}
+```
+ {% endraw %}
+
+### Recognize home page
+{% raw %}
+```html 
+{% assign pageUrlLength = page.url | length %} 
+```
+{% endraw %}
+
+If `pageUrlLength > 1`, it's not home page!
+
+### Frontmatter
+
+<div class="col-2-equal" markdown="1">
+
+```yml
+---
+title: Title of the post
+description: description of the post
+date: 2020-09-11
+layout: layouts/post.html
+---
+```
+
+```yml
+---
+tags:
+  - default
+# or
+tags: [tag 1, tag 2]
+---
+```
+
+</div>
+
+### List of posts
+
+Normal,
+
+{% raw %}
+```html 
+<ul>
+  {% for post in collections.posts %}
+  <li>
+    <a href="{{ post.url | url }}"> {{ post.data.title }} </a>
+  </li>
+  {% endfor %}
+</ul>
+
+```
+{% endraw %}
+
+::: info
+Other default variable (like `post.url`) can be found [here](https://www.11ty.dev/docs/data-eleventy-supplied/#page-variable-contents). Note that, you can use `page.templateContent` for the content of a page in some collections (not tested yet but you can try![link](https://www.11ty.dev/docs/collections/)).
+:::
+
+#### Sort posts by titles
+
+{% raw %}
+```html 
+<!-- Create a new list -->
+{% assign newPostList = [] %} {% for post in collections.posts %} {% assign
+newPostList = (newPostList.push({title: post.data.title, url: post.url}),
+newPostList) %} {% endfor %}
+
+<!-- list of post by alphabet -->
+<ul>
+  {% for post in newPostList|sort(attribute='title') %}
+  <li>
+    <a href="{{ post.url | url }}"> {{ post.title }} </a>
+  </li>
+  {% endfor %}
+</ul>
+
+```
+{% endraw %}
+
+### Posts by categories / tags
+
+In this case, ==we consider a category as the first tag== of a post. For example, if a post has tags `tags: [tag 1, tag 2, tag 3]`, then `tag 1` will be its category!
 
 
-<pre
-  class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token comment">// in _includes/head.html</span><br><span class="token punctuation">{</span><span class="token operator">%</span> include <span class="token string">"components/head.html"</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><br><span class="token comment">// custom parameter</span><br><span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">set</span> customClass <span class="token operator">=</span> <span class="token string">'list-homepage'</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><span class="token punctuation">{</span><span class="token operator">%</span> include <span class="token string">"components/postslist.html"</span> <span class="token operator">%</span><span class="token punctuation">}</span><br><span class="token comment">// inside postlist.html, just use {{ customClass }}</span><br></code></pre>
+```json
+// _data/categories.json
+[
+  {
+    "name": "Cat 1",
+    "icon": "/img/cats/cat_1.svg"
+  },
+  {
+    "name": "Cat 2",
+    "icon": "/img/cats/cat_2.svg"
+  }
+]
+```
+{% raw %}
+```html 
+{% for item in categories %}
+<div class="category-wrapper">
+  <h2>{{ item.icon }} {{ item.name }}</h2>
+  <ul class="post-list">
+    {% for post in collections[item.name] %}
+    <li class="post-item">
+      <a href="{{ post.url }}"><h3>{{ post.data.title }}</h3></a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %} 
+```
+{% endraw %}
 
-#### Template inheritance
+:::
 
-Read this [tutorial](https://mozilla.github.io/nunjucks/templating.html#template-inheritance).
+#### External posts
 
-<div class="col-2-equal" markdown="1"><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _layouts/base.html --&gt;</span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>{% include topnav.html %}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><br></code></pre><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _layouts/post.html --&gt;</span><br>--- --- {% include "layouts/base.html" %} {% include topnav.html %}<br><span class="token comment">&lt;!-- only appear on post layout --&gt;</span><br></code></pre></div>
+If you wanna add external posts (not generated by 11ty from `.md` files), do below steps. For example, on this site, I cretae some pages created by [Notion](https://www.notion.so/) and I wanna add them to category `MOOC`.
 
+**Remark**: This section is used with [section "posts by categories"](#posts-by-categories-%2F-tags) and [section "sort posts by title"](#sort-posts-by-title).
+
+```json
+// _data/cat_ex_posts.json
+[
+  {
+    "title": "DL4 - Convolutional Neural Network (CNN)",
+    "url": "https://www.notion.so/dinhanhthi/CNN-by-deeplearning-ai-a081d253fc2c4c0b99edd2757c759b9e",
+    "tags": ["MOOC", "Deep Learning"]
+  },
+  {
+    "title": "DL5 - Sequence models",
+    "url": "https://www.notion.so/dinhanhthi/CNN-by-deeplearning-ai-a081d253fc2c4c0b99edd2757c759b9e",
+    "tags": ["MOOC", "Deep Learning"]
+  },
+  {
+    "title": "NLP by HSE",
+    "url": "https://www.notion.so/dinhanhthi/NLP-by-HSE-20cec3e92201475eb4d48787954f3aa4",
+    "tags": ["MOOC", "NLP"]
+  }
+]
+```
+{% raw %}
+```html 
+{% for item in categories %} {% assign postslist = collections[item.name] %} {% assign
+newPostListCat = [] %} {% for post in cat_ex_posts %} {% for tg in post.tags %}
+{% if tg == item.name %} {% assign more_post = true %} {% assign newPostListCat =
+(newPostListCat.push({title: post.title, url: post.url, tags: post.tags}),
+newPostListCat) %} {% endif %} {% endfor %} {% endfor %} {% assign newPostList = []
+%} {% for post in postslist %} {% assign newPostList = (newPostList.push({title:
+post.data.title, url: post.url}), newPostList) %} {% endfor %} {% if more_post
+%} {% for post in newPostListCat %} {% assign newPostList =
+(newPostList.push({title: post.title, url: post.url, tags: post.tags}),
+newPostList) %} {% endfor %} {% endif %}
+
+<div class="category-wrapper">
+  <h2>{{ item.icon }} {{ item.name }}</h2>
+  <ul class="post-lihsboxst.url }}"><h3>{{ post.title }}</h3></a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %} 
+```
+{% endraw %}
+
+### Next / Previous post
+{% raw %}
+```html 
+<ul>
+  {%- assign nextPost = collections.posts | getNextCollectionItem(page) %} {%- if
+  nextPost %}
+  <li>
+    Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+  </li>
+  {% endif %} {%- assign previousPost = collections.posts |
+  getPreviousCollectionItem(page) %} {%- if previousPost %}
+  <li>
+    Previous:
+    <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
+  </li>
+  {% endif %}
+</ul>
+
+```
+{% endraw %}
+
+## Custom js scripts
+
+
+```bash
+# Put scripts in
+# /src/main.js
+```
+
+{% raw %}
+```html 
+<!-- in <head> -->
+<script async defer src="{{ '/js/min.js' | addHash }}"></script>
+
+```
+{% endraw %}
+
+
+Using [rollupjs](https://rollupjs.org/),
+
+```js
+// rollup.config.js
+export default [
+  {
+    input: "src/main.js",
+    output: [
+      {
+        file: "js/min.js",
+        format: "iife",
+        sourcemap: true,
+        plugins: [terser()],
+      },
+    ],
+  },
+];
+```
+
+::: warning
+Using `rollup` as above way, we have only one output file `js.min.js`!
+:::
+
+### Using custom js files for each page
+
+Suppose that you have a custom frontmatter `customJS: ["file1.js, file2.js"]` containing all custom js files. It means that the files `file1.js` and `file2.js` are presented only in this page! (If we integrate them in `main.js`, they will be integrated ub all other pages after being rendered even if they're useless in those pages).
+
+{% raw %}
+```html 
+{% if customJS %} {% assign js %} {% for file in customJS %} {% include "js/"
++ file %} {% endfor %}
+<script>
+  {
+    {
+      js | jsmin | safe;
+    }
+  }
+</script>
+{% endif %} 
+```
+{% endraw %}
+
+Where `jsmin` is a filter created in [next section](#minify-js-file). All files `file1.js`, `file2.js` are stored in `_includes/_scripts/`.
+
+### Minify js files{:#minify-js-file}
+
+```js
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addNunjucksAsyncFilter(
+    "jsmin",
+    async function (code, callback) {
+      try {
+        const minified = await minify(code);
+        callback(null, minified.code);
+      } catch (err) {
+        console.error("Terser error: ", err);
+        callback(null, code);
+      }
+    }
+  );
+};
+```
+
+Usage (`_includes/scripts/search.js`),
+
+{% raw %}
+```html 
+{% assign js %} {% include "js/search.js" %}
+<script>
+  {
+    {
+      js | jsmin | safe;
+    }
+  }
+</script>
+
+```
+{% endraw %}
+
+## Last modified date
+
+```js
+// .eleventy.js
+const { DateTime } = require("luxon");
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "dd LLL yyyy"
+    );
+  });
+
+  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd-LL-yyyy");
+  });
+
+  eleventyConfig.addFilter("sitemapDateTimeString", (dateObj) => {
+    const dt = DateTime.fromJSDate(dateObj, { zone: "utc" });
+    if (!dt.isValid) {
+      return "";
+    }
+    return dt.toISO();
+  });
+};
+```
+
+Last modified date,
+
+{% raw %}
+```html
+{{ page.inputPath | lastModifiedDate | htmlDateString }} 
+```
+{% endraw %}
+
+## Insert code highlight
+
+**Code syntax highlight**: Need [this plugin](https://www.11ty.dev/docs/plugins/syntaxhighlight/). List of [supported languages](https://prismjs.com/#languages-list).
+
+<div class="col-2-equal" markdown="1">
+
+````markdown
+# Highlight line 2
+
+```js/2
+// lines of codes
+```
+````
+
+````markdown
+# Highlight line 2 to 4
+
+```js/2-4
+// lines of codes
+```
+````
+
+````markdown
+# Highlight line 2, 4
+
+```js/2,4
+// lines of codes
+```
+````
+
+````markdown
+# Delete line 2 (red highlight)
+
+# and add line 4 (green highlight)
+
+```js/4/2
+// lines of codes
+```
+````
+
+</div>
+
+### Insert liquid / nunjuck code
+
+Inline code, put `{{ "{% raw " }}%}` and `{{ "{% endraw " }}%}` around the keyword.
+
+Code block,
+
+```js
+~~~ js {{ "{% raw " }}%}
+// line of codes
+{{ "{% endraw " }}%}
+~~~
+```
+
+## Math equations
+
+### Mathjax
+
+Using [markdown-it-mathjax](https://github.com/classeur/markdown-it-mathjax)
+
+### KaTeX (my choice)
+
+<details>
+<summary><div markdown="span">"KaTeX: Use `markdown-it-katex`"</div></summary>
+
+<p>
+<div markdown="1">
+
+Using [markdown-it-katex](https://github.com/iktakahiro/markdown-it-katex/) (use this version only),
+
+```js
+// .eleventy.js
+const markdownIt = require("markdown-it");
+const markdownItKatex = require("@iktakahiro/markdown-it-katex");
+
+let markdownLibrary = markdownIt();
+markdownLibrary.use(markdownItKatex);
+```
+
+```html
+<!-- inside <head> -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css"
+/>
+```
+
+💡 **Some tips**: working with KaTeX
+
+
+
+```bash
+# working
+$$
+\dfrac{1}{2}
+$$
+```
+
+```bash
+# not working
+- Item
+
+	$$
+	\dfrac{1}{2}
+	$$
+- Item
+```
+
+```bash
+# working again
+- Item
+
+  $$\dfrac{1}{2}$$ # without \n
+- Item
+
+```
+
+:::
+
+</div>
+</p>
+</details>
+
+In this site, I use [`markdown-it-texmath`](https://www.npmjs.com/package/markdown-it-texmath). I choose this because we can overcome the weakness of `markdown-it-katex` in case of breaking lines in list mode & it's [more flexible](https://goessner.github.io/markdown-it-texmath/index.html) (you can try it online [here](https://goessner.github.io/markdown-it-texmath/markdown-it-texmath-demo.html)).
+
+**An important note**: the original version has a problem of whitespace before and after `<eq>` tag in the inline mode. That why instead of seeing `aaa x aaa` with `aaa $x$ aaa`, we see `aaaxaaa`. I've changed (and reported [an issue](https://github.com/goessner/markdown-it-texmath/issues/25)). For a moment, I use a modified version [here](https://github.com/dinhanhthi/markdown-it-texmath). **Update**: The author couldn't reproduce the issue I met (with version 0.8), he keep updating the plugin but I didn't try version 0.9. You better try it before trying my option!
+
+```bash
+# Install
+# npm i markdown-it-texmath --save-dev # original, whitespace problem
+npm i git+https://github.com/dinhanhthi/markdown-it-texmath.git --save-dev
+```
+
+```js
+// .eleventy.js
+const tm = require("markdown-it-texmath"); // or local folder if you use a customized version
+module.exports = function (eleventyConfig) {
+  md = require("markdown-it")().use(tm, {
+    engine: require("katex"),
+    delimiters: "dollars",
+    katexOptions: { macros: { "\\RR": "\\mathbb{R}" } },
+  });
+};
+```
+
+<details>
+<summary><div markdown="span"> If you wanna modify yourself `markdown-it-texmath`</div></summary>
+
+<p>
+<div markdown="1">
+
+
+Copy the cloned folder `markdown-it-temath` (except `.git`, `.gitignore`, `test/`, `package-lock.json`) to a so-called `/third-party/` folder in your project. In `.eleventy.js`, you import it as
+
+```js
+const tm = require("./third_party/markdown-it-texmath");
+```
+
+:::
+
+```html
+<!-- Add in <head> -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
+/>
+
+<!-- Save to local and modify (or just use) -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css"
+/>
+```
+</div>
+</p>
+</details>
+
+## Figures
+
+
+{% raw %}
+```bash 
+# Insert normally,
+![description](/path/to/image)
+
+```
+{% endraw %}
+
+```bash
+# With custom classes
+# (using markdown-it-attrs)
+![](){:.custom-class}
+```
+
+:::
+
+### Using relative path?
+
+In sert images with the path relative to the directory of `.md` files. Let's use [eleventy-plugin-page-assets](https://www.npmjs.com/package/eleventy-plugin-page-assets).
+
+```bash
+|- sample_posts/
+| |- post.md
+| |- img/
+| | |- figure1.png
+| |- figure2.png
+|- src/
+```
+
+In `.eleventy.js`,
+
+```js
+const pageAssetsPlugin = require("eleventy-plugin-page-assets");
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(pageAssetsPlugin, {
+    mode: "parse",
+    postsMatching: "sample_posts/*.md",
+    recursive: true,
+  });
+};
+```
+
+## Markdown
+
+### markdown-it & its plugins
+
+We use [markdown-it](https://github.com/markdown-it/markdown-it) and [its plugins](https://www.npmjs.com/search?q=keywords:markdown-it-plugin). Just use `npm i <plugin-name> --save-dev` to install.
+
+{% raw %}
+<div class="hsbox">
+<div class="hs__title">My choices of useful plugins</div>
+<div class="hs__content">
+
+Search on [npm page](https://www.npmjs.com/) with the same name.
+
+- `markdown-it-anchor` (use with `eleventy-plugin-nesting-toc`) to create anchor links for headings.
+- `markdown-it-attrs` to use something like `{:#heading-id}` (like in Jekyll).
+- `markdown-it-emoji` to insert emoji with shortcodes.
+- `markdown-it-container` to use something like `:::info` for blocks.
+- `markdown-it-footnote`
+- `markdown-it-heading-wrapper` to wrap heading with containers.
+- `markdown-it-kbd` to use `[[Ctrl]]` for keyboard-like style.
+- `markdown-it-mark` to use `==Text==` for rendering to `<mark>Text</mark>`.
+- `markdown-it-table-of-contents` for using `[[toc]]` anywhere we want.
+- My [customized version](https://github.com/dinhanhthi/markdown-it-texmath) of `markdown-it-texmath`. **Update**: Check [this section](#math-equations).
+- `@gerhobbelt/markdown-it-inline-text-color` for coloring inline text by using something like `{color:red}Text{color}`.
+
+</div>
+</div>
+{% endraw %}
+
+{% raw %}
+<div class="hsbox">
+<div class="hs__title">How to use markdown-it's plugins in 11ty?</div>
+<div class="hs__content">
+
+Below are an example of inserting 2 plugins,
+
+```js
+// .eleventy.js
+// An example of using plugins
+const markdownIt = require("markdown-it");
+var markdownItp = require("markdown-it")();
+
+module.exports = function (eleventyConfig) {
+  let markdownLibrary = markdownIt({
+    html: true, // html tag inside source
+    breaks: true, // use '\n' as <br>
+    linkify: true, // Autoconvert URL-like text to links
+  })
+    .use(require("markdown-it-emoji")) // emoji
+    .use(require("markdown-it-table-of-contents")); // [[toc]] (no spaces)
+  eleventyConfig.setLibrary("md", markdownLibrary);
+};
+```
+
+</div>
+</div>
+{% endraw %}
+
+### Custom container
+
+If you wanna create an **advanced custom container**, use plugin `markdown-it-container`. For example, you want export something like,
+
+```html
+<div class="hsbox">
+  <div class="hs__title">
+    <!-- Custom Title -->
+  </div>
+  <div class="hs__content">
+    <!-- Custom markdown texts -->
+  </div>
+</div>
+```
+
+Just by using,
+
+{% raw %}
+```html 
+::: hsbox Custom Title Custom markdown texts :::
+```
+{% endraw %}
+
+You can put in `.eleventy.js` like,
+
+```js
+.use(require('markdown-it-container'), 'hsbox', {
+  validate: function (params) {
+    return params.trim().match(/^hsbox\s+(.*)$/);
+  },
+  render: function (tokens, idx) {
+    var m = tokens[idx].info.trim().match(/^hsbox\s+(.*)$/);
+    if (tokens[idx].nesting === 1) {
+      // opening tag
+      return '<div class="hsbox"><div class="hs__title">'
+        + markdownItp.renderInline(m[1])
+        + '</div><div class="hs__content">';
+    } else {
+      // closing tag
+      return '</div></div>';
+    }
+  }
+})
+```
+
+### Markdown inside `.njk`
+
+<div class="col-2-equal" markdown="1">
+
+```js
+// .eleventy.js
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPairedShortcode("markdown", (content, inline = null) => {
+    return inline
+      ? markdownLibrary.renderInline(content)
+      : markdownLibrary.render(content);
+  });
+};
+```
+{% raw %}
+```html 
+{% markdown %}
+<!-- html tags -->
+<!-- no need spaces before/after -->
+{% endmarkdown %} 
+```
+{% endraw %}
+</div>
+
+### HTML/nunjucks tags inside `.md`
+
+
+
+```html
+<!-- not working -->
+<div>__abc__</div>
+```
+
+```html
+<!-- working -->
+<div>__abc__</div>
+```
+
+{% raw %}
+```html 
+<!-- not working -->
+<div class="list-of">
+  {% for item in cv.education.list %}
+  <div class="where">{{ item.where }}</div>
+  <div class="title">{{ item.title }}</div>
+  <div class="date">{{ item.date }}</div>
+  {% endfor %}
+</div>
+
+```
+{% endraw %}
+
+{% raw %}
+```html 
+<!-- working -->
+<div class="list-of">
+  {% for item in cv.education.list %}
+  <div class="where">{{ item.where }}</div>
+  <div class="title">{{ item.title }}</div>
+  <div class="date">{{ item.date }}</div>
+  {% endfor %}
+</div>
+
+```
+{% endraw %}
+
+:::
+
+### Custom block shortcodes
+
+<div class="col-2-equal" markdown="1">
+
+<div>
+
+To creata the same code block like above, i.e.,
+
+```html
+<div class="hsbox">
+  <div class="hs__title">
+    <!-- Custom Title -->
+  </div>
+  <div class="hs__content">
+    <!-- Custom markdown texts -->
+  </div>
+</div>
+```
+
+</div>
+
+<div>
+
+Just by using,
+
+{% raw %}
+```html 
+{% hsbox "Custom Title" %}
+<!-- Custom markdown texts -->
+{% endhsbox %} 
+```
+{% endraw %}
+
+</div>
+</div>
+
+```js
+// .eleventy.js
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPairedShortcode("hsbox", (content, title) => {
+    return (
+      '<div class="hsbox"><div class="hs__title">' +
+      markdownLibrary.renderInline(title) +
+      '</div><div class="hs__content">' +
+      markdownLibrary.render(content) +
+      "</div></div>"
+    );
+  });
+};
+```
+
+### Custom inline shortcodes
+
+If you wanna export something like,
+
+```html
+<a href="custom-url">ref</a>
+```
+
+by using `{% raw %}[link](custom-url){% endraw %}` (`""` is required). You can set,
+
+```js
+// .eleventy.js
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addShortcode("ref", function (url) {
+    return (
+      '<sup><a href="' +
+      url +
+      '" rel="noopener noreferrer" target="_blank">[ref]</a></sup>'
+    );
+  });
+};
+```
+
+## Search
+
+For me, the best choice for search feature in 11ty is using [Elasticlunr](http://elasticlunr.com/) with some customizations.
+
+<details>
+<summary><div markdown="span">"Why not others?"</div></summary>
+
+<p>
+<div markdown="1">
+
+Based on the purpose of **free**, **quick**, **full text** search:
+
+- We don't choose Google's [Programmable Search](https://programmablesearchengine.google.com/) because: it contains ads, not index as we want, difficult to customize with personal theme,...
+- We don't choose paid options like [Agolia](https://www.algolia.com/) because the free option contains very few units. It's absolutely not enough for your need. In case you still want to use it with less consumption, read [this article](https://www.kizu.ru/algolia-search/).
+
+</div>
+</p>
+</details>
+
+
+Because your site becomes bigger in future, you cannot index the whole text of your site (every time you build). **My idea** is to create a custom frontmatter tag called "keywords" which contains all of the important keywords used to determine the content of your posts. Of course, the cons is that you have to put the keywords manually!!
+
+Check [this repository](https://github.com/dinhanhthi/eleventy-search-demo), I've pulled and modified from [this one](https://github.com/duncanmcdougall/eleventy-search-demo) (The author takes so long to check my pull request ^^). My customization supports:
+
+- Index your customizable keywords.
+- Fix UX bugs in the main repo.
+- Highlight found keywords in the search result.
+- Limit the max number of texts in the result (show around the found keywords).
+- Adapt to the newest version of 11ty.
+
+## Data files
+
+### Apply data for all posts in a directory
+
+👉 Check more in [official doc](https://www.11ty.dev/docs/data-template-dir/).
+
+For example, we wanna add tag "posts" for all posts in a folder named "sample_posts". Inside `/sample_posts/`, create a file `sample_posts.son` (yes, the same name as "sample_posts") with following content,
+
+```json
+{
+  "tags": ["posts"]
+}
+```
+
+### Using external data files with environment `env`
+
+Suppose your data file `_data` is not in `src/` but `notes/_data/`.
+
+```js
+// .eleventy.js
+module.exports = function (eleventyConfig) {
+  return {
+    dir: {
+      data: dataDir,
+    },
+  };
+};
+```
+
+You can change `dataDir` based on the settings of `env`.
+
+In case you have a setting file in `notes/_data/settings.json`. Sometimes, you use it as a data files via `dataDir` (just `settings.*`), sometimes, you use it as a nseparated `json` file. For example, you use it in a separated js file `toggle-notes.js`,
+
+```js
+// You CAN'T use below
+import settings from "../../../notes/_data/settings.json";
+// ❗ There will be an error
+// Cannot use import statement outside a module
+```
+
+**Solution**, in `.eleventy.js`,
+
+```js
+const settings = require("./" + thiDataDir + "/settings.json");
+module.exports = {
+  environment: process.env.ELEVENTY_ENV, // the same place with this
+  settings: settings,
+};
+```
+
+Then in `toggle-notes.js`,
+
+```js
+env.settings.someThing;
+```
+
+### Local data files
+
+```js
+// .eleventy.js
+module.exports = function (eleventyConfig) {
+  return {
+    dir: {
+      input: ".",
+      includes: "_includes",
+      data: "_data",
+      output: "_site",
+    },
+  };
+};
+```
+
+You put all your data files (`.js` or `.json`) in `_data`, e.g.,
+
+<div class="col-2-equal" markdown="1">
+
+```json
+// _data/dataUrls.json
+[
+  {
+    "name": "abc",
+    "url": "http://abc.com"
+  },
+  {
+    "name": "xyz",
+    "url": "http://xyz.com"
+  }
+]
+```
+
+{% raw %}
+```html 
+<!-- in a .njk file -->
+{% for item in dataUrls %} {{ item.name }} {{ item.url }} {% endfor %} 
+```
+{% endraw %}
+</div>
+
+<div class="col-2-equal" markdown="1">
+
+```json
+// _data/cat_icon.json
+{
+  "Project-based Learning": {
+    "svg": "/img/cats/project.svg"
+  },
+  "MOOC": {
+    "svg": "/img/cats/mooc.svg"
+  }
+}
+```
+
+```js
+// .eleventy.js
+const catIcon = require("./_data/cat_icon.json")
+// usage
+catIcon[page.data.tags[1]].svg,
+
+// .njk
+catIcon[page.data.tags[1]].svg,
+```
+
+</div>
+
+For example, export a **current year** on site,
+
+<div class="col-2-equal" markdown="1">
+
+```js
+// _data/helpers.js
+module.exports = {
+  currentYear() {
+    const today = new Date();
+    return today.getFullYear();
+  },
+};
+```
+{% raw %}
+```html 
+<!-- in a .njk file -->
+<div>{{ helpers.currentYear() }}</div>
+
+```
+{% endraw %}
+</div>
+
+### Fetched JSON from an external source
+
+For example, [this post](/good-github-repositories/) displays a list of starred github repositories (by me) which is fetched from `https://api.github.com/users/dinhanhthi/starred`.
+
+```js
+// in .eleventy.js
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addShortcode("list_repos", getLiList);
+  async function getRepoData(_url) {
+    const response = await fetch(_url);
+    return await response.json();
+  }
+  async function getLiList() {
+    function compare(a, b) {
+      if (a.name.toLowerCase() < b.name.toLowerCase()) {
+        return -1;
+      }
+      if (a.name.toLowerCase() > b.name.toLowerCase()) {
+        return 1;
+      }
+      return 0;
+    }
+    // escape HTML tags
+    function htmlEntities(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+    var repos = "";
+    const data = await getRepoData(
+      "https://api.github.com/users/dinhanhthi/starred?page=1&per_page=10000"
+    );
+    data.sort(compare).forEach((obj) => {
+      repos +=
+        "<li>" +
+        '<a href="' +
+        obj.html_url +
+        '" target="_blank">' +
+        obj.name +
+        "</a>" +
+        " by <i>" +
+        obj.owner.login +
+        "</i> — " +
+        htmlEntities(obj.description) +
+        "</li>";
+    });
+    return "<ol>" + repos + "</ol>";
+  }
+};
+```
+{% raw %}
+```js 
+// in post
+{% list_repos %}
+
+```
+{% endraw %}
+## Working style
+
+### Custom environment
+
+More info, read [official doc](https://www.11ty.dev/docs/data-js/#example-exposing-environment-variables). For example, we only perform something differently on local.
+
+```json
+{
+  "scripts": {
+    "local-build": "ELEVENTY_ENV=local eleventy"
+  }
+}
+```
+
+An example of using in `.eleventy.js`,
+
+```js
+// .eleventy.js
+module.exports = {
+  environment: process.env.ELEVENTY_ENV,
+};
+
+module.exports = function (eleventyConfig) {
+  if (process.env.ELEVENTY_ENV == "local") {
+    // do something locally
+  } else {
+    // do something on server
+  }
+};
+```
+
+Or using in the template,
+
+<div class="col-2-equal" markdown="1">
+
+```js
+// _data/myProject.js
+module.exports = {
+  environment: process.env.ELEVENTY_ENV,
+};
+```
+{% raw %}
+```js 
+{% if myProject.environment == "local" %}
+  <style>{{ css | cssmin | safe }}</style>
+{% else %}
+  <style>{{ css | safe }}</style>
+{% endif %}
+
+```
+{% endraw %} 
+</div>
+
+### Incremental build
+
+❗ It's impossible for the current version (up to`^1.0.0`)! (However, it's [on the list of priorities](https://github.com/orgs/11ty/projects/3#card-33546621)).
+
+👎 **Weakness of 11ty**:
+
+
+
+1. There is some change in files, 11ty rebuilds the whole site. It's painful if we work with markdown files and save them regularly!
+2. Cannot access the site while the building processing.
+
+💡 **Idea**:
+
+
+
+1. Build manually, e.g. `npm run build-local` to `_site` folder.
+2. Copy all files in `_site` to a so-called folder `_live`
+3. Run a custom server on folder `_site` (install `npm i http-server -g` first)
+
+An example of scripts,
+
+```json
+{
+  "scripts": {
+    "local-build": "ELEVENTY_ENV=local eleventy && mkdir -p _live && cp -Rf _site/* _live/",
+    "local-serve": "mkdir -p _live && cp -Rf _site/* _live/ && http-server _live"
+  }
+}
+```
+
+### Working with themes locally?
+
+From version 1.0.0 (currently, I use version `1.0.0-canary.38`), we can customize `eleventyConfig.ignores` right in `.eleventy.js`. Use this to make different `posts` folders for local and for remote. Because there are too many posts which are going to be built, it takes a very long time to see the changes. **If you just wanna make changes in theme, you need a separated folder (having less number of posts)**.
+
+For example,
+
+- Only process posts in `notes/*` on remote (ignore `sample_posts/*`).
+- Only process posts in `sample_posts/*` on local (ignore `notes/*`).
+
+<script src="https://gist.github.com/aiegoo/f9c4f7aa00854345609ac664df36e160.js"></script>
+## Errors
+
+```bash
+# TypeError: Cannot read property 'type' of undefined
+# => Class comes before ![]() of an image!
+```
+
+```bash
+# EISDIR: illegal operation on a directory
+# Solution:
+# Delete _site/ and rebuild!
+```
+
+```bash
+# ENOTDIR: not a directory...
+# Solution:
+# Delete _site/ and rebuild!
+```
+
+```bash
+# Invalid DateTime
+# Just for new posts => try to commit (on branch "dev") before building!
+```
+
+## References
+
+
+
+1. [Official website.](https://www.11ty.dev/)
+2. [Nunjucks Documentation](https://mozilla.github.io/nunjucks/templating.html)
+3. [Moving from WordPress to Eleventy](https://www.mattnortham.com/blog/2020/moving-from-wordpress-to-eleventy/)
+4. [From Jekyll to Eleventy - Webstoemp](https://www.webstoemp.com/blog/from-jekyll-to-eleventy/)
+5. [Creating an 11ty Plugin - SVG Embed Tool - bryanlrobinson.com](https://bryanlrobinson.com/blog/creating-11ty-plugin-embed-svg-contents/)
 
 
 {% include taglogic.html %}
