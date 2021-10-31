@@ -97,7 +97,8 @@ body {
 /* custom callout used in data alerts.yml */
 .alert.alert-bulletin > div::before {
     content: url('https://api.iconify.design/ri/double-quotes-l.svg?color=%239c9ccc&height=36') !important;
-    font-size: 3em !important;
+    /* font-size: 3em !important; */
+    vertical-align: -20% !important;
 }
 
 .gi-2x{font-size: 2em;}
