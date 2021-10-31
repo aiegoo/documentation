@@ -25,7 +25,9 @@ updated: 2021-10-31 09:52
 [creating_your_own_plugin](https://jekyllrb.com/docs/configuration/markdown/)
 ## Thi
 {{site.data.alerts.bulletin}}
+<div markdown="span">
 **for currenttly working site, see** [v2 roadmap report](v2-roadmap.html#october-30-report)
+</div>
 {{site.data.alerts.end}}
 {% assign img-url = '/img/post/js/gatsby' %}
 
