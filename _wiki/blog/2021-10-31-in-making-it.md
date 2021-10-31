@@ -438,7 +438,7 @@ Split layout into parts and include them in the main file.
 
 Read this [tutorial](https://mozilla.github.io/nunjucks/templating.html#template-inheritance).
 
-<div class="col-2-equal"><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _includes/layouts/base.njk --&gt;</span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>{% block headerLogo %}{% endblock %}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><br></code></pre><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _includes/layouts/post.njk --&gt;</span><br>--- --- {% extends "layouts/base.njk" %} {% block headerLogo%}<br><span class="token comment">&lt;!-- only appear on post layout --&gt;</span><br>{% endblock %} </code></pre></div>
+<div class="col-2-equal" markdown="1"><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _includes/layouts/base.njk --&gt;</span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>{% block headerLogo %}{% endblock %}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><br></code></pre><pre class="language-html"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-html"><span class="token comment">&lt;!-- _includes/layouts/post.njk --&gt;</span><br>--- --- {% extends "layouts/base.njk" %} {% block headerLogo%}<br><span class="token comment">&lt;!-- only appear on post layout --&gt;</span><br>{% endblock %} </code></pre></div>
 
 ### Post's components
 
@@ -473,12 +473,7 @@ data: // all data for this piece of content (includes any data inherited from la
 
 ::: info
 For ones who wanna get only the content (escape HTML tags and special characters) of the post:
-{% raw %}
-```bash 
-{{ page.templateContent | dump | safe | striptags(true) }}
-
-```
-{% endraw %}
+<pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token punctuation">{</span><span class="token punctuation">{</span> page.templateContent <span class="token operator">|</span> dump <span class="token operator">|</span> safe <span class="token operator">|</span> striptags<span class="token punctuation">(</span>true<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><br></code></pre>
 
 ### Custom frontmatter fields
 
