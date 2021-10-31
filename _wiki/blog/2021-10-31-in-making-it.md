@@ -75,7 +75,7 @@ On Netlify, go to **Site settings** > **Build & deploy**:
 </p>
 </details>
 
-- The weakness of _Idea 1_ is that you let netlify build again your whole site with its resources. That's why it takes too much time! Remember that, you have only 300 free minutes to build.
+{% include tony.html content="The weakness of _Idea 1_ is that you let netlify build again your whole site with its resources. That's why it takes too much time! Remember that, you have only 300 free minutes to build." %}
 
 <details>
 <summary><div markdown="span">"**Idea 2** -- build locally and push `_site` only"</div></summary>
@@ -106,6 +106,7 @@ You should know that, even if your site contains only html files, netlify is abl
 </p>
 </details>
 
+{{site.data.alerts.hr_faded}}
 
 <details>
 <summary><div markdown="span">"Example workflow with dinhanhthi.com"</div></summary>
@@ -115,19 +116,19 @@ You should know that, even if your site contains only html files, netlify is abl
 From the [main repo](https://github.com/dinhanhthi/dinhanhthi.com), I clone to 2 different folders
 
 ```bash
-|- dinhanhthi.com # <- branch "dev"
-|- dat.com 				# <- branch "_site"
+|- pf3.36io.co # <- branch "dev"
+|- github.com/aiegoo/documentation 				# <- branch "_site"
 ```
 
-On `dat.com`, I create a script called `ud_site.sh` which contains,
+On `github.com`, I create a script called `ud_site.sh` which contains,
 
 ```bash
 echo "Start building site"
-cd ../dinhanhthi.com/
+cd ../pf3.36io.co/
 npm run build
-cd ../dat.com/
+cd ../github.com/aiegoo/documentation/
 echo "Start copying...."
-cp -Rf ../dinhanhthi.com/_site/* _site/
+cp -Rf ../pf3.36io.co/_site/* _site/
 echo "End copying"
 git add .
 git commit -m "Updated: `date +'%Y-%m-%d %H:%M:%S'`"
@@ -137,7 +138,7 @@ git push
 For covenience, I create an alias in bash shell,
 
 ```bash
-alias update_dat='cd ~/git/dat.com && sh ud_site.sh && cd -1'
+alias update_dat='cd ~/git/github.com && sh ud_site.sh && cd -1'
 ```
 
 From now, whenever I wanna build and deploy my site on netlify, I just run,
@@ -193,6 +194,7 @@ css/components/....
 </p>
 </details>
 
+{{site.data.alerts.hr_faded}}
 
 <details>
 <summary><div markdown="span">"If you use [rollup](https://rollupjs.org/guide/en/) (like this site)"</div></summary>
@@ -250,6 +252,7 @@ export default [
 </p>
 </details>
 
+{{site.data.alerts.hr_faded}}
 
 <details>
 <summary><div markdown="span">"If you use [parcel](https://parceljs.org)"</div></summary>
@@ -422,13 +425,18 @@ module.exports = function (eleventyConfig) {
 
 Check the code `-doc` in `src/fontello/config.json`, field `"css"`.
 
+{{site.data.alerts.note}}
+<div markdown="1">
 **Note**: Sometimes, there are duplicates hexa/decimal code (although the names are different). On fontello website, navigate to "Customize Codes" tab, find duplicates and change them. Note that, in this tab, the codes are shown in hexa base but in the downlowded config, the codes are shown in decimal based (field `"code"`). You can use [this site](https://www.rapidtables.com/convert/number/decimal-to-hex.html) to convert between them.
+</div>
+{{site.data.alerts.end}}
 
 ### Layout
 
 <div class="col-2-equal"><pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token function">mkdir</span> _includes/layouts<br><span class="token function">touch</span> _includes/layouts/post.html</code></pre><pre class="language-js"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-js"><span class="token comment">// create an alias</span><br>module<span class="token punctuation">.</span><span class="token function function-variable">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  eleventyConfig<span class="token punctuation">.</span><span class="token function">addLayoutAlias</span><span class="token punctuation">(</span><span class="token string">"post"</span><span class="token punctuation">,</span> <span class="token string">"layouts/post.html"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre><pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token comment"># update changes</span><br><span class="token function">touch</span> .eleventy.js</code></pre><pre class="language-yml"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-yml"><span class="token comment"># then use</span><br><span class="token punctuation">---</span><br><span class="token atrule key">layout</span><span class="token punctuation">:</span> post<br><span class="token punctuation">---</span></code></pre></div>
 
 <script src="https://gist.github.com/aiegoo/21882ce2086c11e63642ecd9549e3438.js"></script>
+
 ### Post's components
 
 👉 [Page variable components](https://www.11ty.dev/docs/data-eleventy-supplied/#page-variable-contents).
@@ -460,9 +468,10 @@ data: // all data for this piece of content (includes any data inherited from la
 // self-defined frontmatter tags can be found here
 ```
 
-::: info
+{{site.data.alerts.callout_info}}
 For ones who wanna get only the content (escape HTML tags and special characters) of the post:
 <pre class="language-bash"><div class="copy"><i class="fontello-icon icon-clone"></i></div><code class="language-bash"><span class="token punctuation">{</span><span class="token punctuation">{</span> page.templateContent <span class="token operator">|</span> dump <span class="token operator">|</span> safe <span class="token operator">|</span> striptags<span class="token punctuation">(</span>true<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><br></code></pre>
+{{site.data.alerts.end}}
 
 ### Custom frontmatter fields
 
@@ -695,7 +704,7 @@ export default [
 
 {{site.data.alerts.callout_warning}}
 Using `rollup` as above way, we have only one output file `js.min.js`!
-:::
+{{site.data.alerts.end}}
 
 ### Using custom js files for each page
 
