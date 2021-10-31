@@ -1072,6 +1072,7 @@ module.exports = function (eleventyConfig) {
 
 We use [markdown-it](https://github.com/markdown-it/markdown-it) and [its plugins](https://www.npmjs.com/search?q=keywords:markdown-it-plugin). Just use `npm i <plugin-name> --save-dev` to install.
 
+{% raw %}
 <div class="hsbox">
 <div class="hs__title">My choices of useful plugins</div>
 <div class="hs__content">
@@ -1092,7 +1093,9 @@ Search on [npm page](https://www.npmjs.com/) with the same name.
 
 </div>
 </div>
+{% endraw %}
 
+{% raw %}
 <div class="hsbox">
 <div class="hs__title">How to use markdown-it's plugins in 11ty?</div>
 <div class="hs__content">
@@ -1119,6 +1122,7 @@ module.exports = function (eleventyConfig) {
 
 </div>
 </div>
+{% endraw %}
 
 ### Custom container
 
