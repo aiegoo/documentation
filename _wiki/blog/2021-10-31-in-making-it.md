@@ -27,13 +27,13 @@ updated: 2021-10-31 09:52
 
 {% assign img-url = '/img/post/js/gatsby' %}
 
-::: warning
+{{site.data.alerts.callout_warning}}
 This is not a tutorial to create an 11ty website, this's a note! You can find some **very new and useful** techniques on this note alongside [the official documentation](https://www.11ty.dev/docs/).
-:::
+{{site.data.alerts.end}}
 
-::: success
+{{site.data.alerts.callout_sucess}}
 This note will be always updated!
-:::
+{{site.data.alerts.end}}
 
 ## custom plugin locally and deployed as site
 [github_actions](https://gist.github.com/aiegoo/55437ea80b9f04055a89190d89777247)
@@ -693,7 +693,7 @@ export default [
 ];
 ```
 
-::: warning
+{{site.data.alerts.callout_warning}}
 Using `rollup` as above way, we have only one output file `js.min.js`!
 :::
 
