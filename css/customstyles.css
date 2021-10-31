@@ -95,11 +95,15 @@ body {
     color: #5bc0de;
 }
 /* custom callout used in data alerts.yml */
+.alert.alert-bulletin {
+        border: 1px solid transparent !important;
+        border-left: 4px dotted !important;
+        border-bottom: 1px solid #dedede !important;
+}
 .alert.alert-bulletin > div::before {
     content: url('https://api.iconify.design/ri/double-quotes-l.svg?color=%239c9ccc&height=36') !important;
     /* font-size: 3em !important; */
     vertical-align: -20% !important;
-    border-left: 3px dotted transparent;
 }
 
 .gi-2x{font-size: 2em;}
