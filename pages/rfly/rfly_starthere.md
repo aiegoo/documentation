@@ -23,8 +23,8 @@ contextual awareness + sequential control
 
 {{site.data.alerts.details | include.content: "testing" }}
 * control envs
-  - Path fluctuation control
-  - Sensing waypoints irregularities/divergency for state estimtes/counter measures
+  - Deviating path-fluctuation/-finding control
+  - Sensing waypoints irregularities/divergency for state estimates/counter measures
   - Calculation of contextual awareness data and mean values. 
   - PID control for flight stability
   - Control design for optimum flight course guidance
