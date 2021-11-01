@@ -27,7 +27,7 @@ contextual awareness + sequential control
   - Sensing waypoints irregularities/divergency for counter measures
   - Calculation of contextual awareness data and mean values. 
   - PID control for flight stability
-  - Design control for optimum flight course guidance
+  - Control design for optimum flight course guidance
 * flight factors
   - Gust and headwind measure in viscosity and friction
   - Fixing gyro IMU sensor irregularities 
