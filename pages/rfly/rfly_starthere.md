@@ -396,6 +396,7 @@ designed controllers can be evaluated through experimental tests.
 ## 2. Simulink-Based Controller Design/Simulation
 To improve the design efficiency of multicopter controllers, as shown in Fig. 3.5, this book provides a high-fidelity simulation environment based on Simulink/FlightGear. The main source code file is presented in “e01.SoftwareSimExps CopterSim3DEnvironment.slx”.
 
+{{site.data.alerts.details}}
 ![image](https://user-images.githubusercontent.com/42961200/126034282-e9ca908c-7792-441b-afee-5f388215ad7d.png)
 
 
@@ -502,6 +503,8 @@ Fig. 3.11 Simulink “Run” button for different MATLAB versions
 
 ![](https://rflysim.com/docs/en/images/Quan-ch3-Fig3.12.jpg)
 
+:::
+{{site.data.alerts.ended}}
 <hr>
 
 ## 3. PSP Toolbox
@@ -512,6 +515,7 @@ Fig. 3.13 Relationship between Simulink and Pixhawk autopilot code generation
 
 Figure 3.13 shows the relationship among the PSP toolbox, the PX4 software, and the Pixhawk hardware. The main features of the toolbox are summarized below.
 
+{{site.data.alerts.details}}
 (1). The toolbox can simulate and test different multicopter models and flight control algorithms in Simulink and then automatically deploy the algorithms to the Pixhawk autopilot.
 
 (2). The toolbox provides many practical examples, including LED control, RC data process, and attitude controller.
@@ -715,6 +719,10 @@ Fig. 3.32 Example of PX4 internal parameter reading
 Fig. 3.33 Simulink initialization script for accessing PX4 parameters
 
 PX4 internal parameter access is realized by using the function “Pixhawk_CSC.Parameter( {*, *})”, which needs to be called in the Simulink initialization function ( click “Simple”—“Model Properties”—“Callbacks”—“InitFcn” in the Simulink menu bar). For the example shown in Fig. 3.32, the corresponding parameter initialization script is shown in Fig. 3.33.
+
+:::
+{{site.data.alerts.ended}}
+{{site.data.alerts.hr_faded}}
 
 ### 3.3. Configuration for Code Generation
 (1). Preparation of the Simulink controller for code generation The preparation procedure is described below.
