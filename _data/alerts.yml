@@ -2,7 +2,7 @@ tip: '<div class="alert alert-success" role="alert"><i class="fa fa-check-square
 note: '<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>'
 important: '<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important: </b>'
 warning: '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>'
-bulletin: '<div class="alert alert-default alert-bulletin" role="alert">< markdown="1">'
+bulletin: '<div class="alert alert-default alert-bulletin" role="alert"><div markdown="1">'
 end: '</div>'
 ends: '</div></div>'
 
