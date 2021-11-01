@@ -99,6 +99,7 @@ body {
         border: 1px solid transparent !important;
         border-left: 4px dotted transparent !important;
         position: relative;
+        width: 100%;
      /*    border-bottom: 1px solid #dedede !important; */
 }
 .alert.alert-bulletin > div::before {
@@ -106,6 +107,7 @@ body {
     /* font-size: 3em !important; */
     vertical-align: -20% !important;
     margin-left: -1.3em;
+    display: inline-block;
 }
 .alert.alert-bulletin p {
     left: 3em;
