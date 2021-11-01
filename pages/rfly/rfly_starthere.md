@@ -127,13 +127,17 @@ Based on the previous two experiments, complete the given design task independen
 {{site.data.alerts.ended}}
 
 ### 🍃 pixhawk development tools
+
+{{site.data.alerts.details}}
 - [flightGear](http://www.flightgear.org/download)
 - [FG_manual](https://github.com/aiegoo/documentation/edit/blob/pdf/gcs/rfly_code/getstart.pdf#page=59)
-### 🌻 [pptx](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/sourcecode/)
-### companion books
-[multicopter_introduciton](pdf/gcs/rfly_code/multicopter_introduciton.pdf)
 
-[multicopter_practice](pdf/gcs/rfly_code/multicopter_practice.pdf)
+### 🌻[pptx](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/sourcecode/)
+### companion books
+
+|--
+| [multicopter_introduciton](pdf/gcs/rfly_code/multicopter_introduciton.pdf)
+| [multicopter_practice](pdf/gcs/rfly_code/multicopter_practice.pdf)
 
 ### Matlab + other tool boxes
 
@@ -166,7 +170,7 @@ The required MATLAB toolboxes include the following.
 [installOptions](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:51951ade-9657-4280-a79a-6c2bbd26d231#page=18)
 > this will get about 900 links downloaded for building. Patience required.
 
-- path issue
+- **path issuej**
 ![image](https://user-images.githubusercontent.com/42961200/136666979-e949b738-243e-4ec8-9f77-50314283041b.png)
 
 
@@ -253,7 +257,8 @@ It  is  a  real-time  3D  visual  display  software.  It receives the flight dat
 
 #### (9) Pixhawk Support Package (PSP) Toolbox3 :
  it is a Simulink toolbox officially released by Mathworks for controller design, code generation, and firmware upload of the Pixhawk autopilot. We have made some updates and optimizations based on the official PSP toolbox to ensure compatibility with the latest Pixhawk and MATLAB versions.
-
+:::
+{{site.data.alerts.ended}}
 
 ## Lesson 3
 
