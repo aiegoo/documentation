@@ -264,6 +264,7 @@ It  is  a  real-time  3D  visual  display  software.  It receives the flight dat
 
 ### Brief Introduction to Experimental Platforms
 
+{{site.data.alerts.details}}
 ### - Platform Composition
 ------------------------
 
@@ -384,7 +385,8 @@ designed controllers can be evaluated through experimental tests.
 .. [#f3] In addition to supporting the PX4 autopilot software used in this book, the Pixhawk series autopilots also support Ardupilot open-source autopilot software; see: http://ardupilot.org/dev/index.html.
 .. [#f8] Publishing House of Electronics Industry 2020 Q. Quan et al., Multicopter Design and Control Practice, https://doi.org/10.1007/978-981-15-3138-5_3
 
-
+::: 
+{{site.data.alerts.ended}}
 
 <hr>
 
