@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "git"
+keywords: "github git ssh readme shields badge https errors"
 summary: "Mon, Nov 01, 21, ssh token key created first time"
 excerpt_separator: <!--more-->
 toc: true
@@ -24,13 +24,10 @@ updated: 2021-11-01 13:36
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## Thi
-keywords: "github git ssh readme shields badge https errors"
-date: 2021-10-27
----
 
 {% assign img-url = '/img/post/others' %}
 
-👉 Note: [SSH](/ssh/).
+👉 Note: [SSH](2021-10-21-Bash-cli.html#ssh).
 👉 Note: [Git](/git/).
 
 ## View `README.md` localhost
