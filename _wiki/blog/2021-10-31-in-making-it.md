@@ -30,8 +30,9 @@ updated: 2021-10-31 09:52
 {% assign img-url = '/img/post/js/gatsby' %}
 
 {{site.data.alerts.callout_warning}}
+<div markdown="1">
 This is not a tutorial to create an 11ty website, this's a note! You can find some **very new and useful** techniques on this note alongside [the official documentation](https://www.11ty.dev/docs/).
-
+</div>
 {{site.data.alerts.end}}
 
 {{site.data.alerts.callout_success}}
