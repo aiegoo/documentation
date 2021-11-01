@@ -115,6 +115,10 @@ body {
     font-size: 1.2em;
     text-transform: uppercase;
 }
+.alert.alert-bulletin ul {
+    list-style-type: none;
+    
+}
 
 .gi-2x{font-size: 2em;}
 .gi-3x{font-size: 3em;}
