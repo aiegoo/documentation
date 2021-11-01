@@ -16,8 +16,8 @@ callout_warning: '<div class="bs-callout bs-callout-warning">'
 hr_faded: '<hr class="faded"/>'
 hr_shaded: '<hr class="shaded"/>'
 
-{% assign Content=page.Content %}
-details: '<details><summary class="detailSummary">Click to open {{ include.Content }}</summary><p><div markdown="1">'
+
+details: '<details><summary class="detailSummary">Click to open {{ include.page.Content }}</summary><p><div markdown="1">'
 ended: '</div></p></details>'
 
 # Copyright 2021 Google LLC
