@@ -26,14 +26,15 @@ updated: 2021-10-31 09:52
 ## Thi
 {{site.data.alerts.bulletin}}
 **for currenttly working site, see** [v2 roadmap](v2-roadmap.html#october-30-report)
-{{site.data.alerts.end}}
+{{site.data.alerts.ends}}
 {% assign img-url = '/img/post/js/gatsby' %}
 
 {{site.data.alerts.callout_warning}}
 This is not a tutorial to create an 11ty website, this's a note! You can find some **very new and useful** techniques on this note alongside [the official documentation](https://www.11ty.dev/docs/).
+
 {{site.data.alerts.end}}
 
-{{site.data.alerts.callout_sucess}}
+{{site.data.alerts.callout_success}}
 This note will be always updated!
 {{site.data.alerts.end}}
 
