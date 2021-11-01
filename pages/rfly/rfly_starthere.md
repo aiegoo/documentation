@@ -29,11 +29,12 @@ contextual awareness + sequential control
   - PID control for flight stability
   - Design control for optimum flight course guidance
 * flight factors
-  - Gust and headwind measure
+  - Gust and headwind measure in viscosity and friction
   - Fixing gyro IMU sensor irregularities 
-  - GPS-precision control
-  - Battery efficiency optimization using self-heating insulation
+  - Smart GPS-fitting control
+  - Battery efficiency optimization using self-heating insulation/algos
   - 3D mission/navigation flights
+:::
 {{site.data.alerts.ended}}
 
 
@@ -54,6 +55,8 @@ contextual awareness + sequential control
 - battery insulation
   
 ### Hardware 
+
+:::
 {{site.data.alerts.ended}}
 
 ## lessons
@@ -99,6 +102,7 @@ Based on the previous two experiments, complete the given design task independen
 |[lesson12](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf) | | failsafe-logic
 |[lesson13](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_13_RflySim_Platform_Advanced_Features.pdf) | |advanced feature
 
+:::
 {{site.data.alerts.ended}}
 
 ### Project Goal
