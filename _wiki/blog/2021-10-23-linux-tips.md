@@ -429,7 +429,8 @@ ls -l <file>
 ~~~
 
 
-{{site.data.alerts.note}}"Check this photo"{{site.data.alerts.end}}
+{{site.data.alerts.note}}
+"Check this photo"
 
 ![check ll](/img/post/linux/ll-user.png){:.img-full-100}
 {{sidte.data.alerts.end}}
