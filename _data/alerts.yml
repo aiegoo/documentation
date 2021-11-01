@@ -16,7 +16,7 @@ callout_warning: '<div class="bs-callout bs-callout-warning">'
 hr_faded: '<hr class="faded"/>'
 hr_shaded: '<hr class="shaded"/>'
 
-details: '<details><summary class="detailSummary">{{include.content}}<p><div markdown="1">'
+details: '<details><summary class="detailSummary">{{include.content}}</summary><p><div markdown="1">'
 ended: '</div></p></details>'
 
 # Copyright 2021 Google LLC
