@@ -34,6 +34,7 @@ contextual awareness + sequential control
   - Smart GPS-fitting control
   - Battery efficiency optimization using self-heating insulation/algos
   - 3D mission/navigation flights
+
 :::
 {{site.data.alerts.ended}}
 
@@ -124,6 +125,7 @@ Based on the previous two experiments, complete the given design task independen
 |===
 |
 
+:::
 {{site.data.alerts.ended}}
 
 ### 🍃 pixhawk development tools
@@ -257,6 +259,7 @@ It  is  a  real-time  3D  visual  display  software.  It receives the flight dat
 
 #### (9) Pixhawk Support Package (PSP) Toolbox3 :
  it is a Simulink toolbox officially released by Mathworks for controller design, code generation, and firmware upload of the Pixhawk autopilot. We have made some updates and optimizations based on the official PSP toolbox to ensure compatibility with the latest Pixhawk and MATLAB versions.
+
 :::
 {{site.data.alerts.ended}}
 
