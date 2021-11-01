@@ -20,24 +20,19 @@ driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 contextual awareness + sequential control
 {{site.data.alerts.ends}}
 
-{{site.data.alerts.details | include.content="testing" }}
-<ol class="color_12 font_8" style="font-family:wfont_bad902_c2ea50e0acc243a4805866717bf6fd8b, wf_c2ea50e0acc243a4805866717, orig_noto_sans_kr_light;line-height:1.6em;font-size:15px">
-	<li style="line-height: 1.6em;">
-	<p class="font_8" style="line-height:1.6em;font-size:15px"><span class="color_12"><span style="font-family:wfont_bad902_c2ea50e0acc243a4805866717bf6fd8b,wf_c2ea50e0acc243a4805866717,orig_noto_sans_kr_light">비행경로환경 인지 및 제어</span></span></p>
-	</li>
-	<li style="line-height: 1.6em;">
-	<p class="font_8" style="line-height:1.6em;font-size:15px"><span class="color_12"><span style="font-family:wfont_bad902_c2ea50e0acc243a4805866717bf6fd8b,wf_c2ea50e0acc243a4805866717,orig_noto_sans_kr_light">상황인지 데이터 백업</span></span></p>
-	</li>
-	<li style="line-height: 1.6em;">
-	<p class="font_8" style="line-height:1.6em;font-size:15px"><span class="color_12"><span style="font-family:wfont_bad902_c2ea50e0acc243a4805866717bf6fd8b,wf_c2ea50e0acc243a4805866717,orig_noto_sans_kr_light">상황인지 데이터 연산/평균산출</span></span></p>
-	</li>
-	<li style="line-height: 1.6em;">
-	<p class="font_8" style="line-height:1.6em;font-size:15px"><span class="color_12"><span style="font-family:wfont_bad902_c2ea50e0acc243a4805866717bf6fd8b,wf_c2ea50e0acc243a4805866717,orig_noto_sans_kr_light">경로비행 PID 적용</span></span></p>
-	</li>
-	<li style="line-height: 1.6em;">
-	<p class="font_8" style="line-height:1.6em;font-size:15px"><span class="color_12"><span style="font-family:wfont_bad902_c2ea50e0acc243a4805866717bf6fd8b,wf_c2ea50e0acc243a4805866717,orig_noto_sans_kr_light">최적경로 설정 및 변경</span></span></p>
-	</li>
-</ol>
+{{site.data.alerts.details | include.content: "testing" }}
+* control envs
+  - 비행경로환경 인지 및 제어
+  - 상황인지 데이터 백업
+  - 상황인지 데이터 연산/평균산출
+  - 경로비행 PID 적용
+  - 최적경로 설정 및 변경
+* flight factors
+  - 돌풍, 맞바람 대처
+  - 지자계 오작동 대처
+  - GPS 오작동 대처
+  - 배터리 효율 극대화
+  - 3D 경로비행
 {{site.data.alerts.ended}}
 
 {{site.data.alerts.details}}
