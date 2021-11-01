@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Github created firs time"
+title: "Github created first time"
 name: "github-readme"
 tags: [git]
 tagName: git
