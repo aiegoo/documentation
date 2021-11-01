@@ -50,7 +50,7 @@ grip # Running on http://localhost:6419/
 
 
 <details>
-<summary><div markdown="span">If using 1 single account or need to create id keys</div></summary>
+<summary class="detailSummary"><div markdown="span">If using 1 single account or need to create id keys</div></summary>
 
 <p>
 <div markdown="1">
@@ -72,7 +72,7 @@ ssh-keygen -t rsa -b 4096 -C "dinhanhthi@gmail.com"
 
 
 <details>
-<summary><div markdown="span">Tell who you are</div></summary>
+<summary class="detailSummary"><div markdown="span">Tell who you are</div></summary>
 
 <p>
 <div markdown="1">
@@ -94,7 +94,7 @@ git config user.email "dinhanhthi@gmail.com"
 
 
 <details>
-<summary><div markdown="span">ssh/config for different accounts
+<summary class="detailSummary"><div markdown="span">ssh/config for different accounts
 If 2 accounts on 2 different platforms</div></summary>
 
 <p>
@@ -134,7 +134,7 @@ Host *
 
 
 <details>
-<summary><div markdown="span">If you use [zsh](/terminal/#zsh-linux)?</div></summary>
+<summary class="detailSummary"><div markdown="span">If you use [zsh](/terminal/#zsh-linux)?</div></summary>
 
 <p>
 <div markdown="1">
@@ -159,7 +159,7 @@ Everytime you have problems, just `ud_ssh`.
 
 
 <details>
-<summary><div markdown="span">Reset ssh-agent on terminal</div></summary>
+<summary class="detailSummary"><div markdown="span">Reset ssh-agent on terminal</div></summary>
 
 <p>
 <div markdown="1">
@@ -202,7 +202,7 @@ git clone git@github.com:dinhanhthi/dinhanhthi.com.git
 
 
 <details>
-<summary><div markdown="span">Archived on 14/10/21</div></summary>
+<summary class="detailSummary"><div markdown="span">Archived on 14/10/21</div></summary>
 
 <p>
 <div markdown="1">

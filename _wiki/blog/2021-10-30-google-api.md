@@ -35,7 +35,7 @@ Google's documentation is like an ocean. It's not easy to find a right one to st
 ## Official documentation
 
 <details>
-<summary>click to open</summary>
+<summary class="detailSummary">click to open</summary>
 
 <p>
 <ol>
@@ -106,7 +106,7 @@ The old version uses <a href="https://www.npmjs.com/package/dialogflow" rel="nof
 {{site.data.alerts.end}}
 
 <details>
-<summary>steps</summary>
+<summary class="detailSummary">steps</summary>
 
 <p>
 <ol>
@@ -167,7 +167,7 @@ The old version uses <a href="https://www.npmjs.com/package/dialogflow" rel="nof
 ----
 
 <details>
-<summary>try something outside 'samples'</summary>
+<summary class="detailSummary">try something outside 'samples'</summary>
 
 <p>       
 In case you wanna try something outside the files given in <a
@@ -220,7 +220,7 @@ In case you wanna try something outside the files given in <a
 <hr />
 
 <details>
-<summary>Different locations?</summary>
+<summary class="detailSummary">Different locations?</summary>
 
 <p>
 The example in "Try something outside..." gives us an example of using different regions. Below are some remarks:
@@ -280,7 +280,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 {{site.data.alerts.end}}
 
 <details markdown="1">
-<summary>Steps</summary>
+<summary class="detailSummary">Steps</summary>
 
 <p>
 
@@ -317,7 +317,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 {{site.data.alerts.end}}
 
 <details>
-<summary>Examples</summary>
+<summary class="detailSummary">Examples</summary>
 
 <p>
 
@@ -346,7 +346,7 @@ What's this `gapi`? You can use it completely inside an HTML file without using 
 👉 [Check this official guide](https://github.com/GoogleCloudPlatform/dialogflow-integrations/blob/master/dialogflow-api-quick-start/postman/README.md).
 
 <details>
-<summary>Additional configurations</summary>
+<summary class="detailSummary">Additional configurations</summary>
 
 <p>
 <ul><li>Create a collection and add the Authorization for this collection. All of its request will use the same auth method.</li><li>Create variables (on tab "Variables") to store "CLIENT ID" (<code>client_id</code>) and "CLIENT SECRET" (as <code>client_secret</code>), then use them in the form by <code>{{client_id}}</code> and <code>{{client_secret}}</code>.</li></ul>

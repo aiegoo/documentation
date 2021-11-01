@@ -57,7 +57,7 @@ Sometimes, 11ty takes too much time to build (especially on the task of optimizi
 
 
 <details>
-<summary><div markdown="span">"**Idea 1** -- manually build but should not use many times"</div></summary>
+<summary class="detailSummary"><div markdown="span">"**Idea 1** -- manually build but should not use many times"</div></summary>
 
 <p>
 <div markdown="1">
@@ -80,7 +80,7 @@ On Netlify, go to **Site settings** > **Build & deploy**:
 {% include tony.html content="The weakness of _Idea 1_ is that you let netlify build again your whole site with its resources. That's why it takes too much time! Remember that, you have only 300 free minutes to build." %}
 
 <details>
-<summary><div markdown="span">"**Idea 2** -- build locally and push `_site` only"</div></summary>
+<summary class="detailSummary"><div markdown="span">"**Idea 2** -- build locally and push `_site` only"</div></summary>
 
 <p>
 <div markdown="1">
@@ -111,7 +111,7 @@ You should know that, even if your site contains only html files, netlify is abl
 {{site.data.alerts.hr_faded}}
 
 <details>
-<summary><div markdown="span">"Example workflow with dinhanhthi.com"</div></summary>
+<summary class="detailSummary"><div markdown="span">"Example workflow with dinhanhthi.com"</div></summary>
 
 <p>
 <div markdown="1">
@@ -161,7 +161,7 @@ I saved from 1h of building to 2m of building on netlify with this method!
 
 
 <details>
-<summary><div markdown="span">"If you use [node-sass](https://www.npmjs.com/package/node-sass)"</div></summary>
+<summary class="detailSummary"><div markdown="span">"If you use [node-sass](https://www.npmjs.com/package/node-sass)"</div></summary>
 
 <p>
 <div markdown="1">
@@ -198,7 +198,7 @@ css/components/....
 {{site.data.alerts.hr_faded}}
 
 <details>
-<summary><div markdown="span">"If you use [rollup](https://rollupjs.org/guide/en/) (like this site)"</div></summary>
+<summary class="detailSummary"><div markdown="span">"If you use [rollup](https://rollupjs.org/guide/en/) (like this site)"</div></summary>
 
 <p>
 <div markdown="1">
@@ -255,7 +255,7 @@ export default [
 {{site.data.alerts.hr_faded}}
 
 <details>
-<summary><div markdown="span">"If you use [parcel](https://parceljs.org)"</div></summary>
+<summary class="detailSummary"><div markdown="span">"If you use [parcel](https://parceljs.org)"</div></summary>
 
 <p>
 <div markdown="1">
@@ -927,7 +927,7 @@ Using [markdown-it-mathjax](https://github.com/classeur/markdown-it-mathjax)
 ##### KaTeX (my choice)
 
 <details>
-<summary><div markdown="span">"KaTeX: Use `markdown-it-katex`"</div></summary>
+<summary class="detailSummary"><div markdown="span">"KaTeX: Use `markdown-it-katex`"</div></summary>
 
 <p>
 <div markdown="1">
@@ -1016,7 +1016,7 @@ module.exports = function (eleventyConfig) {
 ```
 
 <details>
-<summary><div markdown="span"> If you wanna modify yourself `markdown-it-texmath`</div></summary>
+<summary class="detailSummary"><div markdown="span"> If you wanna modify yourself `markdown-it-texmath`</div></summary>
 
 <p>
 <div markdown="1">
@@ -1101,7 +1101,7 @@ module.exports = function (eleventyConfig) {
 We use [markdown-it](https://github.com/markdown-it/markdown-it) and [its plugins](https://www.npmjs.com/search?q=keywords:markdown-it-plugin). Just use `npm i <plugin-name> --save-dev` to install.
 
 <details>
-<summary>My choices of useful plugins</summary>
+<summary class="detailSummary">My choices of useful plugins</summary>
 
 <p>
 <div markdown="1">
@@ -1128,7 +1128,7 @@ Search on [npm page](https://www.npmjs.com/) with the same name.
 
 
 <details>
-<summary>How to use markdown-it's plugins in 11ty?</summary>
+<summary class="detailSummary">How to use markdown-it's plugins in 11ty?</summary>
 
 <p>
 <div markdown="1">
@@ -1351,7 +1351,7 @@ module.exports = function (eleventyConfig) {
 For me, the best choice for search feature in 11ty is using [Elasticlunr](http://elasticlunr.com/) with some customizations.
 
 <details>
-<summary><div markdown="span">"Why not others?"</div></summary>
+<summary class="detailSummary"><div markdown="span">"Why not others?"</div></summary>
 
 <p>
 <div markdown="1">

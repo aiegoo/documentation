@@ -816,7 +816,7 @@ a[data-toggle] {
     margin:20px 0px 20px 0px;
     border-left: 5px solid #ED1951;
     padding-left: 10px;
-    font-family: ‘Avenir Next’, "NanumBarunpen";
+    font-family: ‘Avenir Next’, "NanumBarunpen" !important;
 
 }
 
@@ -2175,7 +2175,7 @@ details {
     width: 410px;
 }
 
-details>summary {
+details>summary.detailSummary {
     padding: 2px 6px;
     /* width: 15em; */
     background-color: #ddd;
