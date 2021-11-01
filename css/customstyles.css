@@ -2186,10 +2186,12 @@ details>summary.detailSummary {
     font-family: 'LAB디지털';
 }
 
-details>summary::-webkit-details-marker {
+details>summary.detailSummary::-webkit-details-marker {
     display: none;
 }
-
+details>summary.detailSummary:hover {
+    background-color: #0ab534;
+}
 details>p, details p {
     font-family: 'NanumBarunpen';
     font-size: 0.9em;
