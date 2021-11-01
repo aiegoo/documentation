@@ -160,8 +160,12 @@ Everytime you have problems, just `ud_ssh`.
 </p>
 </details>
 
-::: hsbox Reset ssh-agent on terminal
 
+<details>
+<summary><div markdown="span">Reset ssh-agent on terminal</div></summary>
+
+<p>
+<div markdown="1">
 ```bash
 # Delete all cached keys (be careful)
 ssh-add -D
@@ -238,7 +242,7 @@ I wanna make a theme `notetheme2` based on [dinhanhthi.com](https://github.com/d
    git merge master && sh reset_folders.sh
    ```
 
-8. Update changes from `dinhanhthi.com/notetheme2` to repo `notetheme2`{% ref "https://stackoverflow.com/questions/56577184/github-pull-changes-from-a-template-repository/56577320" %}.
+8. Update changes from `/notetheme2` to repo `notetheme2`[link](https://stackoverflow.com/questions/56577184/github-pull-changes-from-a-template-repository/56577320).
 
    ```bash
    # add dinhanhthi.com as a remote
@@ -271,7 +275,7 @@ I wanna make a theme `notetheme2` based on [dinhanhthi.com](https://github.com/d
 ## Add Shields tags
 
 👉 Main shield site [here](https://shields.io/).
-👉 Example of usage: [my main github page](https://github.com/dinhanhthi/dinhanhthi).
+👉 Example of usage: [my main github page](https://pf3.36io.co).
 
 ```bash
 # scikit-learn badge
