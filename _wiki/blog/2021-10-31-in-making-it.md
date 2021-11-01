@@ -189,7 +189,6 @@ css/components/....
 <link rel="stylesheet" href="css/main.css" />
 ```
 
-
 </div>
 </p>
 </details>
@@ -247,7 +246,6 @@ export default [
 <!-- in <head> -->
 <link rel="stylesheet" href="css/main.css" />
 ```
-
 </div>
 </p>
 </details>
