@@ -16,6 +16,11 @@ driveID: 1v8L4SaELogEU0gRyGa2b5X-WWs9NE4Ly
 
 {% include custom/series_rfly_next.html %}
 
+{{site.data.alerts.bulletin}}
+contextual awareness + sequential control
+{{site.data.alerts.ends}}
+
+
 ## lessons
 
 ### Course design
