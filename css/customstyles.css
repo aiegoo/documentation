@@ -107,10 +107,10 @@ body {
     /* font-size: 3em !important; */
     vertical-align: -20% !important;
     margin-left: -1.3em;
-    display: inline-block;
 }
 .alert.alert-bulletin p {
     left: 3em;
+    display: inline-block;
 }
 
 .gi-2x{font-size: 2em;}
