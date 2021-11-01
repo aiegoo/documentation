@@ -132,7 +132,7 @@ sudo apt-get install alacarte
 
 🔅 Turn off animation open and minimize windows on ubuntu 17.10 and later (gnome desktop): *Gnome Tweak Tools > Apperance > Animations OFF*
 
-🔅 Choose between "lightdm" and "gdm3" ([ref](https://wiki.debian.org/LightDM)):
+🔅 Choose between "lightdm" and "gdm3" ([link](https://wiki.debian.org/LightDM)):
 
 ``` bash
 sudo apt install lightdm
@@ -153,7 +153,7 @@ dconf load / < dconf-settings.ini
 cat dconf-settings.ini | dconf load /
 ```
 
-🔅 Save / load custom keyboard shortcuts ([ref](https://askubuntu.com/questions/682513/how-to-backup-restore-system-custom-keyboard-shortcuts))
+🔅 Save / load custom keyboard shortcuts ([link](https://askubuntu.com/questions/682513/how-to-backup-restore-system-custom-keyboard-shortcuts))
 
 ``` bash
 # keybindings
@@ -429,7 +429,8 @@ ls -l <file>
 ~~~
 
 
-{{site.data.alerts.note "Check this photo"}}
+{{site.data.alerts.note}}"Check this photo"{{site.data.alerts.end}}
+
 ![check ll](/img/post/linux/ll-user.png){:.img-full-100}
 {{sidte.data.alerts.end}}
 
@@ -635,7 +636,7 @@ ffmpeg -i input.ts -c:v libx264 -c:a aac output.mp4
 sudo apt install exfalso  # Ex Falso
 ~~~
 
-🔅 Spotify controller shortcut keyboards on Ubuntu ([ref](https://askubuntu.com/questions/1105363/spotify-keyboard-controls-not-working)): using below commands for controlling playbacks in spotify, put them in a shortcut keys on ubuntu:
+🔅 Spotify controller shortcut keyboards on Ubuntu ([link](https://askubuntu.com/questions/1105363/spotify-keyboard-controls-not-working)): using below commands for controlling playbacks in spotify, put them in a shortcut keys on ubuntu:
 
 ``` bash
 # play/puase
