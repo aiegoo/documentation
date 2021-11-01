@@ -109,9 +109,10 @@ body {
     margin-left: -1.3em;
 }
 .alert.alert-bulletin p {
-    left: 3em;
-    display: inline-block;
-    margin-left: 3em;
+    margin-left: 0em;
+    display: inline;
+    font-size: 2em;
+    text-transform: uppercase;
 }
 
 .gi-2x{font-size: 2em;}
