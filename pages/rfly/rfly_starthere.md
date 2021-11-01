@@ -23,17 +23,17 @@ contextual awareness + sequential control
 
 {{site.data.alerts.details | include.content: "testing" }}
 * control envs
-  - 비행경로환경 인지 및 제어
-  - 상황인지 데이터 백업
-  - 상황인지 데이터 연산/평균산출
-  - 경로비행 PID 적용
-  - 최적경로 설정 및 변경
+  - Path fluctuation control
+  - Sensing waypoints irregularities/divergency for counter measures
+  - Calculation of contextual awareness data and mean values. 
+  - PID control for flight stability
+  - Design control for optimum flight course guidance
 * flight factors
-  - 돌풍, 맞바람 대처
-  - 지자계 오작동 대처
-  - GPS 오작동 대처
-  - 배터리 효율 극대화
-  - 3D 경로비행
+  - Gust and headwind measure
+  - Fixing gyro IMU sensor irregularities 
+  - GPS-precision control
+  - Battery efficiency optimization using self-heating insulation
+  - 3D mission/navigation flights
 {{site.data.alerts.ended}}
 
 
@@ -60,6 +60,8 @@ contextual awareness + sequential control
 
 ### Course design
 [course_issue](https://github.com/aiegoo/portfolio/issues)
+
+{{site.data.alerts.details}}
 #### basic experiment
 - open the given code example. Then, read and run its source code directly to observe and record the results.
 #### analysis experiment
@@ -97,7 +99,7 @@ Based on the previous two experiments, complete the given design task independen
 |[lesson12](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_12_Failsafe_Logic_Design_Experiment.pdf) | | failsafe-logic
 |[lesson13](https://github.com/aiegoo/documentation/blob/edit/pdf/gcs/rfly_code/Lesson_13_RflySim_Platform_Advanced_Features.pdf) | |advanced feature
 
-
+{{site.data.alerts.ended}}
 
 ### Project Goal
 
