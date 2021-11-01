@@ -725,6 +725,8 @@ PX4 internal parameter access is realized by using the function “Pixhawk_CSC.P
 {{site.data.alerts.hr_faded}}
 
 ### 3.3. Configuration for Code Generation
+
+{{site.data.alerts.details}}
 (1). Preparation of the Simulink controller for code generation The preparation procedure is described below.
 
 1). As shown in Fig. 3.7, design a controller in Simulink and verify it with SIL simulations.
@@ -796,9 +798,13 @@ Fig. 3.40 Firmware upload methods for different MATLAB versions
 
 After completing the above steps, the controller designed in Simulink has been run on the Pixhawk autopilot.
 
+:::
+{{site.data.alerts.ended}}
 <hr>
 
 ## 4. Pixhawk Hardware System
+
+{{site.data.alerts.details}}
 ### 4.1. HW System Composition/Connection
 As shown in Fig. 3.41, the hardware components required by this book include an RC transmitter, an RC receiver, a JR signal cable (connecting the Pixhawk autopilot and the RC receiver), a Pixhawk autopilot (Pixhawk 1 is recommended for studying, and higher hardware versions are recommended for outdoor flight tests), and a MicroUSB cable (connecting the computer and the Pixhawk hardware for power supply and data transmission). The connection relationships among the above components are presented in Fig. 3.42.
 
@@ -907,11 +913,14 @@ After the RC transmitter is successfully calibrated, enter the “Flight Modes�
 ../_images/Quan-ch3-Fig3.49.jpg
 Fig. 3.49 Flight mode setting page in QGC
 
+:::
+{{site.data.alerts.ended}}
 <hr>
 
 ## 5. HIL Simulation Platform
 The HIL simulation platform includes a Real-time Motion Simulation Software— CopterSim and a 3D Visual Display Software—3DDisplay.
 
+{{site.data.alerts.details}}
 ### 5.1. CopterSim
 Double-click the CopterSim shortcut on the Windows desktop to open the CopterSim software, whose UI is presented in Fig. 3.50. The default simulation model and parameters are the same as for the Simulink multicopter model used in the SIL simulation system (see Fig. 3.1). This is because the CopterSim is developed based on the code generation technique with the Simulink multicopter model. CopterSim needs to run on a 64-bit Windows computer platform with a serial port and a MicroUSB cable to communicate with the Pixhawk autopilot (see Fig. 3.42).
 
@@ -984,6 +993,8 @@ Notes
 
 [1]	Higher Pixhawk hardware (e.g., Pixhawk 2/3/4/5) starts to discard LED module, so an external I2C LED module is required to observe the lighting effect.
 
+:::
+{{site.data.alerts.ended}}
 <hr>
 <hr>
 
