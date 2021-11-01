@@ -111,6 +111,7 @@ body {
 .alert.alert-bulletin p {
     left: 3em;
     display: inline-block;
+    margin-left: 3em;
 }
 
 .gi-2x{font-size: 2em;}
