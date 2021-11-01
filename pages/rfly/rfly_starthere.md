@@ -36,9 +36,10 @@ contextual awareness + sequential control
   - 3D 경로비행
 {{site.data.alerts.ended}}
 
-{{site.data.alerts.details}}
+
 ## Analogue control vs digital control
 
+{{site.data.alerts.details}}
 ### IMU
 
 ### Guided Landing
@@ -117,7 +118,7 @@ Based on the previous two experiments, complete the given design task independen
 |===
 |
 
-{{site.data.alerts.ends}}
+{{site.data.alerts.ended}}
 
 ### 🍃 pixhawk development tools
 - [flightGear](http://www.flightgear.org/download)
@@ -249,6 +250,7 @@ It  is  a  real-time  3D  visual  display  software.  It receives the flight dat
 
 
 ## Lesson 3
+
 ### Brief Introduction to Experimental Platforms
 
 ### - Platform Composition
@@ -962,7 +964,7 @@ Notes
 <hr>
 
 ## 6.Examples
-
+{{site.data.alerts.details}}
 ### 6.1. Procedure for LED Control Experiment
 The flashing frequency and color of the LED on the Pixhawk hardware can be controlled by designing controller in Simulink. This section takes a simple LED light control experiment [1] as an example to introduce the operation process of the hardware and software components of the experimental platform released with this book.
 
@@ -1272,6 +1274,7 @@ to be continued
 <hr>
 <hr>
 
+{{site.data.alerts.ended}}
 ## About the review process
 
 If you're using the doc as code approach, you might also consider using the same techniques for reviewing the doc as people use in reviewing code. This approach will involve using Github to edit the files.
