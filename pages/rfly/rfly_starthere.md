@@ -100,6 +100,7 @@ Based on the previous two experiments, complete the given design task independen
 
 ### Project Goal
 
+{{site.data.alerts.details}}
 |---
 |    |
 | -- |
@@ -115,7 +116,7 @@ Based on the previous two experiments, complete the given design task independen
 | Q10, Given a group of engineers, how to organize them effectively? |
 |===
 |
-
+{{site.data.alerts.ends}}
 ### 🍃 pixhawk development tools
 - [flightGear](http://www.flightgear.org/download)
 - [FG_manual](https://github.com/aiegoo/documentation/edit/blob/pdf/gcs/rfly_code/getstart.pdf#page=59)
