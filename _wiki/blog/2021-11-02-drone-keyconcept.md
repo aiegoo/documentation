@@ -24,7 +24,8 @@ updated: 2021-11-02 10:36
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## eggs drone-resource
-## 	비행기의 방향 전환 조종면 - 방향타(rudder), 승강타(elevator), 보조날개(aileron)
+## 	비행기의 방향 전환 
+- 조종면 - 방향타(rudder), 승강타(elevator), 보조날개(aileron)
 
 
 ### [ Aircraft principal axes 비행기 주축 ]
@@ -42,7 +43,7 @@ updated: 2021-11-02 10:36
 > 비행기의 수직 꼬리 날개는 비행기를 흔들리지 않고 똑바로 날아갈 수 있도록 중심을 잡아주는 역할을 한다. 수직꼬리에는 방향타도 있어서 방향타를 오른쪽으로 꺾으면 비행기는 오른쪽으로 향하고, 왼쪽으로 꺾으면 비행기는 왼쪽으로 향한다. 그러나 비행기가 방향을 바꿀 때는 방향타와 함께 주날개에 달려는 보조날개의 도움이 필요하다. 주날개에 달려있는 보조날개는 모양을 바꿔 양력을 조절할 수 있는 데 비행기가 회전을 해야 할 때는 양쪽날개의 양력을 서로 다르게 하여 비행기의 몸체를 기울이게 한다. 만약 왼쪽 날개의 양력은 줄이고 오른쪽 날개의 양력을 늘리면 비행기는 왼쪽 아래로 기울어지고 왼쪽으로 회전할 수 있게 되는 것이다.
 
 
-![aileronyaw](drone-resource-wiki/images1/Aileron_yaw.gif)
+![aileronyaw](images/drone-resource-wiki/images1/Aileron_yaw.gif)
 *An animation of an airplane yawing with its rudder.*
 
 ### [ Aircraft rudders ]
@@ -52,7 +53,7 @@ updated: 2021-11-02 10:36
 > 비행기에서 방향타(rudder)는 각각 pitch를 조종하는, 방향타와 비슷한 승강타(elevator)와 roll을 조종하는 보조날개(aileron)와 함께 직접적인 조종면이다. 방향타는 보통 수직안정판(fin, vertical stabilizer)에 붙어 있어서 조종사가 수직축의 yaw를 조종하게 한다. 즉 비행기 앞부분의 수평 방향을 바꾼다.
 비행기의 방향 전환 조종면 - 방향타(rudder), 승강타(elevator), 보조날개(aileron)
 
-![aileronpitch](drone-resource-wiki/images1/Aileron_pitch.gif)
+![aileronpitch](images/drone-resource-wiki/images1/Aileron_pitch.gif)
 *An airplane pitching via tail elevators.*
 
 ### [ Elevator (aircraft) ]
@@ -61,7 +62,7 @@ updated: 2021-11-02 10:36
 
 > 승강타(elevator)는 보통 비행기의 뒤쪽에 있는 비행조종면으로 비행기의 pitch와 또한 날개의 받음각(angle of attack)을 변화시켜 비행기의 방향을 조종한다. 쉽게 말해서 승강타는 비행기의 앞부분을 상하로 움직인다. (상승과 하강은 날개의 큰 기능이다.— 비행기는 일반적으로 앞부분을 들고 착륙한다.) 커지는 받음각은 날개의 옆모습에 의해 만들어지는 큰 양력과 비행기 속도의 감소를 발생시킨다. 작아지는 받음각은 속도의 증가를 가져온다. 승강타는 존재하는 유일한 피치조종면일 것이다. 고정되거나 조절 가능한 승강타는 꼬리날개(tailplane)나 수평안정판(horizontal stabilizer)으로 불린다.
 
-![aileronroll](drone-resource-wiki/images1/Aileron_roll.gif)
+![aileronroll](images/drone-resource-wiki/images1/Aileron_roll.gif)
 <p>
   An animation of an airplane rolling via its ailerons
 
@@ -73,21 +74,21 @@ updated: 2021-11-02 10:36
 
 > 보조날개(aileron)는 고정익 날개의 뒷전에 부착된 비행조종면이다. Roll 상태의 비행기를 조종하는 데 사용되는 보조날개는 젖혀짐에 의한 양력 때문에 방향의 변화를 가져온다. 두 개의 보조날개는 일반적으로 서로 연결되어 있어서 하나가 올라갔을 때 다른 하나는 내려간다: 위로 올라가는 보조날개가 날개의 양력을 감소시키는 동안 아래로 내려가는 보조날개가 날개의 양력을 증가시켜서 비행기의 종축에서 rolling 힘을 발생시킨다. 보조날개는 보통 날개의 끝부분 가까이에 위치하지만 때때로 날개 뿌리에 더 가까이 위치할 때도 있다. Outboard aileron(외측 보조날개)와 inboard aileron(내측 보조날개)라는 용어는 이들 각각의 위치를 표현하는 데 사용된다. Aileron의 프랑스어는 little wing이다.
 
-![controsurface](drone-resource-wiki/images1/ControlSurfaces.gif)
-![controsurface2](drone-resource-wiki/images1/ControlSurfaces2.gif)
+![controsurface](images/drone-resource-wiki/images1/ControlSurfaces.gif)
+![controsurface2](images/drone-resource-wiki/images1/ControlSurfaces2.gif)
 
 
 
 ## Bernui Pt Pd Ps
-![altimeter](drone-resource-wiki/uploads/altimeter.jpg)
+![altimeter](images/drone-resource-wiki/uploads/altimeter.jpg)
 ### Altimeter에 대해 설명하겠습니다.
 
 > Aneroid wafer는 주변 기압의 변화에 따라 팽창/수축하는데, 만약 비행기가 높이 상승을 하게되면 대기압이 낮아지고 이것은 Static port와 직접연결된 계기안의 대기압도 동일하게 낮아져서 Aneroid wafer는 팽창하고, 만약 비행기가 낮게 비행을 한다면 상대적으로 대기압이 높아지고, 계기안의 대기압도 높아서 Aneroid wafer는 수축하게 됩니다. 이것이  indicator랑 기계적으로 연결되어 고도를 표시하게 되는겁니다.
 
-![static](drone-resource-wiki/uploads/pitot_static_system.jpg)
+![static](images/drone-resource-wiki/uploads/pitot_static_system.jpg)
 *pitot / static hole diagram --altimeter, speedometer, elevator(vsi)
 <hr>
-![VSI](drone-resource-wiki/uploads/vsi.jpg)
+![VSI](images/drone-resource-wiki/uploads/vsi.jpg)
 
 ### VSI
 
@@ -95,15 +96,15 @@ updated: 2021-11-02 10:36
 
 >그림에 보면 Diaphragm는 static port랑 직접 연결이 되어있고, 주변은 Calibrated leak이라는 것으로 static port랑 연결이 되어 있습니다. 해서 Diaphragm는 비행기가 상승하면 상승하고 있는 고도의 대기압을 동일하게 유지하고, 하강하면 하강하고 있는 위치의 대기압을 그대로 맞춰 유지하게 됩니다. 하지만 Calibrated leak과 연결된 Diaphragm의 주변은 대기압을 맞추기하지만 구멍이 너~~~~~~ 무 작아서 느리게 맞춰진다고 생각하지면 됩니다. 해서 비행기가 상승하게되면 Diaphragm는 상승 고도에 맞는 대기압이지만, 주변기압은 상승하기전 cruise때 대기압이랑 크게 차이가 나지 않게 되어 둘간의 압력차가 생기게 되는거죠~ 이 차이를 기계적으로 indicator에 연결하여 보여주는것이 VSI입니다. 둘이 차이가 나더라도 고도를 바꾸고 다시 Cruise flight을하게되면 압력차가 같아지면 indicator는 '0'을 표시하겠죠.
 
-![beruni](drone-resource-wiki/images/bernui.jpg)
+![beruni](images/drone-resource-wiki/images/bernui.jpg)
 *P = pgh (pressure vs. depth) P=ρgh. P is pressure, ρ is the density of the fluid; g is the gravitational constant, h is the height from the surface, or depth that the object is submerged. Pressure at the surface is 0 because h = 0.
 
-![ASI operation](drone-resource-wiki/uploads/ASI-operation.png)
+![ASI operation](images/drone-resource-wiki/uploads/ASI-operation.png)
 ### Airspeed Indicator부터 어떻게 작동하나 알아보겠습니다.
 
 > 비행기가 앞으로 비행하게되면, pitot tube hole을따라서 ram air가 airspeed indicator안에 Diaphragm안으로 들어가게되면서 이 압력에 의해 Diaphragm이 팽창하게 되고, 이 팽창되는 양을 Mechanically indicator와 연결되어 airspeed를 보여줍니다. 속도가 빨라지면 들어오는공기압이 커져서 속도가 빠른것으로 표시가 되고 느리면 압력이 낮아져 속도가 느린것으로 표시가 됩니다. 
 
-![Pt](drone-resource-wiki/uploads/9d5c68d7a2ccdceb033b8cd38fce65d2/Pt.jpg)
+![Pt](images/drone-resource-wiki/uploads/9d5c68d7a2ccdceb033b8cd38fce65d2/Pt.jpg)
 
 
 ## 추력 원리
@@ -138,7 +139,7 @@ updated: 2021-11-02 10:36
    - 평형상태 equilibrium: 항공기에 작용하는 모든 힘이 균형 잡힌 상태로 힘의 변화가 없는 정상 비행 상태
    - 정적 불안정 : 평형상태를 벗어난 후 초기의 평형상태로 부터 벗어나려는 경향을 말한다.
    - 정적 중립: 평형 상태를 벗어난후 그 상태를 유지하려는 경향을 말한다. 
-![](drone-resource-wiki/stability.jpg)
+![](images/drone-resource-wiki/stability.jpg)
 
 '
 X - 전진 - Roll - 중력 양력
@@ -157,7 +158,7 @@ Z - 수직  -  Yaw -  측력 외력
 
   - 방향 안정성: 수직축에 대한 항공기의 운동을 안정시키는 것으로 ***수직 안정판에 설치된 방향타 러더를 조작하여 요잉 운동을 통해 확보한다.***
 
-![xyz](drone-resource-wiki/images/xyz.jpg)
+![xyz](images/drone-resource-wiki/images/xyz.jpg)
 
 ## 14 비행장치에 미치는 힘
 
@@ -252,7 +253,7 @@ CG = TM(총 모멘트) / TW (총 무게)
 세로 안정성 -- 피칭, 가로 안정성 롤링, 방향 안정성 요잉
 ```
 
-![](drone-resource-wiki/./images/media/image3.jpg)
+![](images/drone-resource-wiki/./images/media/image3.jpg)
 
 6. 관성의 법칙
 ```
@@ -278,7 +279,7 @@ CG = TM(총 모멘트) / TW (총 무게)
 
 헬리콥터의 주 로터가 회전 시 기체는 반대방향으로 회전하려는 토크(Torque)현상도 작용반작용의 법칙
 
-![](drone-resource-wiki/images/media/image4.png)
+![](images/drone-resource-wiki/images/media/image4.png)
 
 
 9.베르누이 정리
