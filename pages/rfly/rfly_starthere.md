@@ -141,6 +141,8 @@ Based on the previous two experiments, complete the given design task independen
 | [multicopter_introduciton](pdf/gcs/rfly_code/multicopter_introduciton.pdf)
 | [multicopter_practice](pdf/gcs/rfly_code/multicopter_practice.pdf)
 | [handbook](https://drive.google.com/file/d/1DEwc2EwtMmpoR9jK7aC7eobOsnKJIrHQ/view?usp=drivesdk)
+| [pilot_faa](https://drive.google.com/file/d/1SCsWfGKWhFEH-U8-euIzOcq1N74A2-SM/view?usp=sharing)
+| [remote-pilot](https://drive.google.com/file/d/14xxPdJ5Hz6QucJQ_KW30b_V7oGhocNgw/view?usp=sharing)
 ### Matlab + other tool boxes
 
 -Simulink toolboxes required to install
