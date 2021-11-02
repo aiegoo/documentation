@@ -80,7 +80,7 @@ imagesurl: images/drone-resource-wiki/handbook/
 
 </p>  
 
-{% assign filenames="77-1.jpg,77-2.jpg" %}
+{% assign filenames="77-1.jpg,77-2.jpg" | split: "," %}
 {% include page_gallery.html %}
 ### [ Aileron ]
 
