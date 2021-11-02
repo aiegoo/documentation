@@ -145,7 +145,6 @@ Based on the previous two experiments, complete the given design task independen
 | [handbook](https://drive.google.com/file/d/1DEwc2EwtMmpoR9jK7aC7eobOsnKJIrHQ/view?usp=drivesdk)
 | [pilot_faa](https://drive.google.com/file/d/1SCsWfGKWhFEH-U8-euIzOcq1N74A2-SM/view?usp=sharing)
 | [remote-pilot](https://drive.google.com/file/d/14xxPdJ5Hz6QucJQ_KW30b_V7oGhocNgw/view?usp=sharing)
-|---
 | [maintenance](https://github.com/aiegoo/uas-reference/blob/master/uas/UAV_maintenance_operations.pdf)
 | [sensing](https://github.com/aiegoo/uas-reference/blob/master/uas/UAV_sensing.pdf)
 | [uav-swarm](https://github.com/aiegoo/uas-reference/blob/master/uas/UAV_swarm.pdf)
