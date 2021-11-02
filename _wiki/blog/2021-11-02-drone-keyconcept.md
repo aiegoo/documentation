@@ -17,6 +17,7 @@ public: true
 parent: [[Wiki-Setting-Category]] 
 date: 2021-11-02T10:36:09 +0900
 updated: 2021-11-02 10:36
+imagesurl: images/drone-resource-wiki/handbook/
 ---
 * TOC
 {:toc}
@@ -79,6 +80,8 @@ updated: 2021-11-02 10:36
 
 </p>  
 
+{% assign filenames="77-1.jpg,77-2.jpg" %}
+{% include page_gallery.html %}
 ### [ Aileron ]
 
 > Ailerons are hinged flight control surfaces attached to the trailing edge of the wing of a fixed-wing aircraft. The ailerons are used to control the aircraft in roll, which results in a change in heading due to the tilting of the lift vector. The two ailerons are typically interconnected so that one goes down when the other goes up: the down-going aileron increases the lift on its wing while the up-going aileron reduces the lift on its wing, producing a rolling moment about the aircraft's longitudinal axis. Ailerons are usually situated near the wing tip, but may sometimes be situated nearer the wing root. The terms "outboard aileron" and "inboard aileron" are used to describe these positions respectively. The word aileron is French for "little wing".
