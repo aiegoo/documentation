@@ -70,7 +70,7 @@ Aircraft: "A device that is used, or intended to be used, for flight."
 
 Aircraft altitude: "The actual height above sea level at which the aircraft is flying."
 
-Aircraft approach category: "A performance grouping of aircraft based on a speed of 1."3 times the stall speed in the landing configuration at maximum gross landing weight."
+Aircraft approach category: "A performance grouping of aircraft based on a speed of 1.3 times the stall speed in the landing configuration at maximum gross landing weight."
 
 Air data computer (ADC): "An aircraft computer that receives and processes pitot pressure, static pressure, and temperature to calculate very precise altitude, indicated airspeed, true airspeed, and air temperature."
 
