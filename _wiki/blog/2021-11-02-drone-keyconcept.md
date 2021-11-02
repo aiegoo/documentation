@@ -28,6 +28,17 @@ updated: 2021-11-02 10:36
 - 조종면 - 방향타(rudder), 승강타(elevator), 보조날개(aileron)
 
 {% include image.html file="drone-resource-wiki/handbook/155-1.jpg" caption="three axes with center of gravity" %}
+
+{% assign filenames = "160-1.jpg,157-1.jpg,156-1.jpg" | split: "," %}
+<div class ="image-gallery-yoga">
+{% for name in filenames %}
+    <div class="gallery-box">
+    <a href="{{ site.imagesurl_handbook }}{{ name }}">
+      <img src="{{ site.imagesurl_handbook }}{{ name }} " alt="{{ name }}"  class="img-gallery" />
+     </a>
+    </div>
+ {% endfor %}
+</div>
 ### [ Aircraft principal axes 비행기 주축 ]
 > An aircraft in flight is free to rotate in three dimensions: pitch, nose up or down about an axis running from wing to wing, yaw, nose left or right about an axis running up and down; and roll, rotation about an axis running from nose to tail. The axes are alternatively designated as lateral, vertical, and longitudinal.
 
