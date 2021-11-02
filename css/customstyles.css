@@ -2149,6 +2149,7 @@ img.emoji {
 /* customizing markdown-toc css from joshua1988 */
 
 #markdown-toc li>a {
+    padding: 5px 0 0 !important;
    /*  border-bottom-width: 0; */
 }
 #markdown-toc p a:hover, #markdown-toc li:hover {
