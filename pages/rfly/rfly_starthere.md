@@ -137,7 +137,7 @@ Based on the previous two experiments, complete the given design task independen
 ### 🌻[pptx](https://github.com/aiegoo/documentation/tree/edit/pdf/gcs/rfly_code/sourcecode/)
 ### companion books
 
-|--
+|---
 | books 
 | :--
 | [multicopter_introduciton](pdf/gcs/rfly_code/multicopter_introduciton.pdf)
