@@ -1,0 +1,185 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.1 225752  9424 ?        Ss   Oct07   0:27 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    Oct07   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        I<   Oct07   0:00 [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    Oct07   0:00 [ksoftirqd/0]
+root         8  0.0  0.0      0     0 ?        I    Oct07   2:04 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        I    Oct07   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    Oct07   0:00 [migration/0]
+root        11  0.0  0.0      0     0 ?        S    Oct07   0:00 [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    Oct07   0:00 [cpuhp/0]
+root        13  0.0  0.0      0     0 ?        S    Oct07   0:00 [cpuhp/1]
+root        14  0.0  0.0      0     0 ?        S    Oct07   0:00 [watchdog/1]
+root        15  0.0  0.0      0     0 ?        S    Oct07   0:00 [migration/1]
+root        16  0.0  0.0      0     0 ?        S    Oct07   0:00 [ksoftirqd/1]
+root        18  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/1:0H]
+root        19  0.0  0.0      0     0 ?        S    Oct07   0:00 [cpuhp/2]
+root        20  0.0  0.0      0     0 ?        S    Oct07   0:00 [watchdog/2]
+root        21  0.0  0.0      0     0 ?        S    Oct07   0:00 [migration/2]
+root        22  0.0  0.0      0     0 ?        S    Oct07   0:00 [ksoftirqd/2]
+root        24  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/2:0H]
+root        25  0.0  0.0      0     0 ?        S    Oct07   0:00 [cpuhp/3]
+root        26  0.0  0.0      0     0 ?        S    Oct07   0:00 [watchdog/3]
+root        27  0.0  0.0      0     0 ?        S    Oct07   0:00 [migration/3]
+root        28  0.0  0.0      0     0 ?        S    Oct07   0:00 [ksoftirqd/3]
+root        30  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/3:0H]
+root        31  0.0  0.0      0     0 ?        S    Oct07   0:00 [kdevtmpfs]
+root        32  0.0  0.0      0     0 ?        I<   Oct07   0:00 [netns]
+root        33  0.0  0.0      0     0 ?        S    Oct07   0:00 [rcu_tasks_kthre]
+root        34  0.0  0.0      0     0 ?        S    Oct07   0:00 [kauditd]
+root        36  0.0  0.0      0     0 ?        S    Oct07   0:00 [khungtaskd]
+root        37  0.0  0.0      0     0 ?        S    Oct07   0:00 [oom_reaper]
+root        38  0.0  0.0      0     0 ?        I<   Oct07   0:00 [writeback]
+root        39  0.0  0.0      0     0 ?        S    Oct07   0:00 [kcompactd0]
+root        40  0.0  0.0      0     0 ?        SN   Oct07   0:00 [ksmd]
+root        41  0.0  0.0      0     0 ?        SN   Oct07   0:05 [khugepaged]
+root        42  0.0  0.0      0     0 ?        I<   Oct07   0:00 [crypto]
+root        43  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kintegrityd]
+root        44  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kblockd]
+root        45  0.0  0.0      0     0 ?        I<   Oct07   0:00 [ata_sff]
+root        46  0.0  0.0      0     0 ?        I<   Oct07   0:00 [md]
+root        47  0.0  0.0      0     0 ?        I<   Oct07   0:00 [edac-poller]
+root        48  0.0  0.0      0     0 ?        I<   Oct07   0:00 [devfreq_wq]
+root        49  0.0  0.0      0     0 ?        I<   Oct07   0:00 [watchdogd]
+root        55  0.0  0.0      0     0 ?        S    Oct07   0:00 [kswapd0]
+root        56  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/u9:0]
+root        57  0.0  0.0      0     0 ?        S    Oct07   0:00 [ecryptfs-kthrea]
+root        99  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kthrotld]
+root       100  0.0  0.0      0     0 ?        I<   Oct07   0:00 [acpi_thermal_pm]
+root       101  0.0  0.0      0     0 ?        S    Oct07   0:00 [scsi_eh_0]
+root       102  0.0  0.0      0     0 ?        I<   Oct07   0:00 [scsi_tmf_0]
+root       103  0.0  0.0      0     0 ?        S    Oct07   0:00 [scsi_eh_1]
+root       104  0.0  0.0      0     0 ?        I<   Oct07   0:00 [scsi_tmf_1]
+root       110  0.0  0.0      0     0 ?        I<   Oct07   0:00 [ipv6_addrconf]
+root       119  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kstrp]
+root       136  0.0  0.0      0     0 ?        I<   Oct07   0:00 [charger_manager]
+root       194  0.0  0.0      0     0 ?        S    Oct07   0:00 [scsi_eh_2]
+root       195  0.0  0.0      0     0 ?        I<   Oct07   0:00 [scsi_tmf_2]
+root       277  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/3:1H]
+root       318  0.0  0.0      0     0 ?        I<   Oct07   0:00 [raid5wq]
+root       367  0.0  0.0      0     0 ?        R    Oct07   0:06 [jbd2/vda1-8]
+root       368  0.0  0.0      0     0 ?        I<   Oct07   0:00 [ext4-rsv-conver]
+root       422  0.0  0.0      0     0 ?        I<   Oct07   0:01 [kworker/0:1H]
+root       440  0.0  0.0      0     0 ?        I<   Oct07   0:00 [iscsi_eh]
+root       443  0.0  0.0      0     0 ?        I<   Oct07   0:00 [ib-comp-wq]
+root       444  0.0  0.0      0     0 ?        I<   Oct07   0:00 [ib-comp-unb-wq]
+root       445  0.0  0.0      0     0 ?        I<   Oct07   0:00 [ib_mcast]
+root       446  0.0  0.0      0     0 ?        I<   Oct07   0:00 [ib_nl_sa_wq]
+root       448  0.0  1.3 220996 112700 ?       S<s  Oct07   0:35 /lib/systemd/systemd-journald
+root       449  0.0  0.0      0     0 ?        I<   Oct07   0:00 [rdma_cm]
+root       469  0.0  0.0  97704  1772 ?        Ss   Oct07   0:00 /sbin/lvmetad -f
+root       480  0.0  0.0      0     0 ?        I<   Oct07   0:01 [kworker/2:1H]
+root       481  0.0  0.0  43712  4600 ?        Ss   Oct07   0:03 /lib/systemd/systemd-udevd
+root       508  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/1:1H]
+root       586  0.0  0.0      0     0 ?        S<   Oct07   0:00 [loop0]
+root       606  0.0  0.0      0     0 ?        S<   Oct07   0:00 [loop1]
+root       614  0.0  0.0      0     0 ?        S<   Oct07   0:00 [loop2]
+root       615  0.0  0.0      0     0 ?        S<   Oct07   0:00 [loop3]
+root       624  0.0  0.0      0     0 ?        S<   Oct07   0:00 [loop4]
+root       626  0.0  0.0      0     0 ?        S<   Oct07   0:00 [loop5]
+root       628  0.0  0.0      0     0 ?        S<   Oct07   0:00 [loop6]
+root       637  0.0  0.0      0     0 ?        S<   Oct07   0:00 [loop8]
+systemd+   639  0.0  0.0 141952  3292 ?        Ssl  Oct07   0:00 /lib/systemd/systemd-timesyncd
+root       667  0.0  0.0      0     0 ?        S<   Oct07   0:00 [loop9]
+root       687  0.0  0.0      0     0 ?        S<   Oct07   0:00 [loop10]
+root       698  0.0  0.0      0     0 ?        S<   Oct07   0:00 [loop11]
+root       841  0.0  0.0  62164  5836 ?        Ss   Oct07   0:06 /lib/systemd/systemd-logind
+message+   843  0.0  0.0  50156  4516 ?        Ss   Oct07   0:16 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       859  0.0  0.0 155360  3288 ?        Ss   Oct07   0:00 /usr/sbin/cron -f
+daemon     862  0.0  0.0  28328  2356 ?        Ss   Oct07   0:00 /usr/sbin/atd -f
+root       867  0.0  0.0 411688  7096 ?        Ssl  Oct07   0:12 /usr/lib/accountsservice/accounts-daemon
+root       873  0.0  0.0 110480  3432 ?        Ssl  Oct07   0:08 /usr/sbin/irqbalance --foreground
+root       876  0.0  0.0 310188  3188 ?        Ssl  Oct07   0:01 /usr/bin/lxcfs /var/lib/lxcfs/
+root       879  0.0  0.1 502896 10452 ?        Ssl  Oct07   0:00 /usr/lib/udisks2/udisksd
+syslog     882  0.0  0.0 263036  4896 ?        Ssl  Oct07   0:09 /usr/sbin/rsyslogd -n
+root       883  0.0  0.3 1162844 29084 ?       Ssl  Oct07   0:18 /usr/lib/snapd/snapd
+root       888  0.0  0.2 294580 17460 ?        Ssl  Oct07   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root       910  0.0  0.0 288880  6472 ?        Ssl  Oct07   0:02 /usr/lib/policykit-1/polkitd --no-debug
+postgres   963  0.0  0.3 477436 27504 ?        S    Oct07   0:04 /usr/lib/postgresql/10/bin/postgres -D /var/lib/postgresql/10/main -c config_file=/etc/postgresql/10/main/postgresql.conf
+postgres   971  0.0  0.0 477548  7156 ?        Ss   Oct07   0:00 postgres: 10/main: checkpointer process   
+postgres   972  0.0  0.0 477436  4352 ?        Ss   Oct07   0:04 postgres: 10/main: writer process   
+postgres   973  0.0  0.1 477436  9228 ?        Ss   Oct07   0:03 postgres: 10/main: wal writer process   
+postgres   976  0.0  0.0 477840  6720 ?        Ss   Oct07   0:02 postgres: 10/main: autovacuum launcher process   
+postgres   978  0.0  0.0 332360  3612 ?        Ss   Oct07   0:02 postgres: 10/main: stats collector process   
+systemd+   980  0.0  0.0  72004  6040 ?        Ss   Oct07   0:00 /lib/systemd/systemd-networkd
+postgres   982  0.0  0.0 477744  5068 ?        Ss   Oct07   0:00 postgres: 10/main: bgworker: logical replication launcher   
+systemd+  1002  0.0  0.0  70896  6228 ?        Ss   Oct07   0:00 /lib/systemd/systemd-resolved
+root      1043  0.0  0.0      0     0 ?        I    Oct11   0:00 [kworker/3:1]
+memcache  1048  0.0  0.0 424764  3008 ?        Ssl  Oct07   0:51 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1 -P /var/run/memcached/memcached.pid
+root      1049  0.0  0.5 550288 42080 ?        Ss   Oct07   0:14 php-fpm: master process (/etc/php/7.1/fpm/php-fpm.conf)
+root      1051  0.0  0.2 311296 20532 ?        Ssl  Oct07   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root      1055  0.1  1.0 830052 84712 ?        Ssl  Oct07   8:03 dockerd --group docker --exec-root=/var/snap/docker/471/run/docker --data-root=/var/snap/docker/common/var-lib-docker --pidfile=/var/snap/docker/471/run/docker.pid --config-file=/var/snap/docker/471/config/daemon.json
+root      1056  0.0  0.3 523740 24952 ?        Ss   Oct07   0:14 php-fpm: master process (/etc/php/7.4/fpm/php-fpm.conf)
+pawan     1059  0.0  0.2 191684 24356 ?        Ss   Oct07   0:48 /home/pawan/olora/sandbox/venv/bin/python3 /home/pawan/olora/sandbox/venv/bin/gunicorn --workers 3 --threads 3 --bind unix:/home/pawan/olora/server/server.sock -m 007 wsgi:application
+root      1064  0.1  0.4 1255372 40196 ?       Ssl  Oct07   9:24 /usr/bin/containerd
+root      1092  0.0  0.0 142292  1588 ?        Ss   Oct07   0:00 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+www-data  1093  0.0  0.0 144924  6284 ?        S    Oct07   0:00 nginx: worker process
+www-data  1094  0.0  0.0 145284  7480 ?        S    Oct07   0:00 nginx: worker process
+www-data  1095  0.0  0.0 144924  6284 ?        S    Oct07   0:00 nginx: worker process
+www-data  1096  0.0  0.0 144924  6284 ?        S    Oct07   0:00 nginx: worker process
+redis     1100  0.1  0.0 175488  4060 ?        Ssl  Oct07   6:39 /usr/bin/redis-server 127.0.0.1:6379
+www-data  1110  0.0  0.1 526036 11888 ?        S    Oct07   0:00 php-fpm: pool www
+www-data  1111  0.0  0.1 526036 11888 ?        S    Oct07   0:00 php-fpm: pool www
+www-data  1115  0.0  0.1 552584 14552 ?        S    Oct07   0:00 php-fpm: pool www
+www-data  1116  0.0  0.1 552584 14552 ?        S    Oct07   0:00 php-fpm: pool www
+pawan     1152  0.0  1.5 596020 130612 ?       Sl   Oct07   1:01 /home/pawan/olora/sandbox/venv/bin/python3 /home/pawan/olora/sandbox/venv/bin/gunicorn --workers 3 --threads 3 --bind unix:/home/pawan/olora/server/server.sock -m 007 wsgi:application
+pawan     1156  0.0  1.6 599100 134476 ?       Sl   Oct07   1:02 /home/pawan/olora/sandbox/venv/bin/python3 /home/pawan/olora/sandbox/venv/bin/gunicorn --workers 3 --threads 3 --bind unix:/home/pawan/olora/server/server.sock -m 007 wsgi:application
+pawan     1169  0.0  1.6 596280 131296 ?       Sl   Oct07   1:01 /home/pawan/olora/sandbox/venv/bin/python3 /home/pawan/olora/sandbox/venv/bin/gunicorn --workers 3 --threads 3 --bind unix:/home/pawan/olora/server/server.sock -m 007 wsgi:application
+root      1258  0.0  0.0      0     0 ?        I    Oct11   0:00 [kworker/2:2]
+root      1377  0.0  0.0  72300  6440 ?        Ss   Oct07   0:18 /usr/sbin/sshd -D
+root      1380  0.0  0.0 140000  2368 ttyS0    Ss+  Oct07   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root      1393  0.0  0.0 140224  1932 tty1     Ss+  Oct07   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root      1754  0.1  0.5 767544 43884 ?        Ssl  Oct07   7:31 containerd --config /var/snap/docker/471/run/docker/containerd/containerd.toml --log-level error
+root      2345  0.0  0.0 298188  3548 ?        Sl   Oct07   0:00 /snap/docker/471/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 52001 -container-ip 172.17.0.2 -container-port 3080
+root      2359  0.0  0.0 371920  2764 ?        Sl   Oct07   0:00 /snap/docker/471/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 85 -container-ip 172.21.0.3 -container-port 85
+root      2388  0.0  0.0 107600  6152 ?        Sl   Oct07   0:08 containerd-shim -namespace moby -workdir /var/snap/docker/common/var-lib-docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/e6505920752ae3e2420df867ce9989856a8b4df02cc67f7b73e0f462d90c555a -address /var/snap/docker/471/run/docker/containerd/containerd.sock -containerd-binary /snap/docker/471/bin/containerd -runtime-root /var/snap/docker/471/run/docker/runtime-runc
+root      2392  0.0  0.0 109008  5976 ?        Sl   Oct07   0:08 containerd-shim -namespace moby -workdir /var/snap/docker/common/var-lib-docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/8e80bd9316d18dce13345164cbb73330b95e4b0f834dd055035adb77fa031b8e -address /var/snap/docker/471/run/docker/containerd/containerd.sock -containerd-binary /snap/docker/471/bin/containerd -runtime-root /var/snap/docker/471/run/docker/runtime-runc
+root      2398  0.0  0.0 224456  2688 ?        Sl   Oct07   0:00 /snap/docker/471/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 5005 -container-ip 172.20.0.2 -container-port 5005
+root      2406  0.0  0.0 107600  5340 ?        Sl   Oct07   0:07 containerd-shim -namespace moby -workdir /var/snap/docker/common/var-lib-docker/containerd/daemon/io.containerd.runtime.v1.linux/moby/6ec6d6dd1332f61ba0d8a282e6d224ea1dcd4ca44459e2ebd57f0e489620b41c -address /var/snap/docker/471/run/docker/containerd/containerd.sock -containerd-binary /snap/docker/471/bin/containerd -runtime-root /var/snap/docker/471/run/docker/runtime-runc
+root      2469  0.0  0.4 565016 38500 ?        Ssl+ Oct07   0:00 node ./api/server.js
+root      2478  0.0  0.0  10628  5772 ?        Ss   Oct07   0:00 nginx: master process nginx -g daemon off;
+root      2488  0.0  0.2  30028 23380 ?        Ss   Oct07   0:56 /usr/local/bin/python /usr/local/bin/gunicorn --config gunicorn-cfg.py core.wsgi
+systemd+  2642  0.0  0.0  11024  2604 ?        S    Oct07   0:00 nginx: worker process
+do-agent  2661  0.0  0.2 1387724 22372 ?       Ssl  Oct08   1:30 /opt/digitalocean/bin/do-agent --syslog
+root      2712  0.0  0.4  46168 33888 ?        S    Oct07   0:05 /usr/local/bin/python /usr/local/bin/gunicorn --config gunicorn-cfg.py core.wsgi
+root      2859  0.0  0.2  68356 17388 ?        S    Oct07   0:00 /usr/bin/python /usr/local/bin/powerline-daemon -q
+root      2983  0.0  0.1 162236 12196 ?        Ss   Oct07   0:42 tmux new-session -As root
+root      2986  0.0  0.1 153484 11864 pts/1    Ss   Oct07   0:00 -bash
+root      3729  0.0  0.1 154004 12396 pts/2    Ss   Oct07   0:00 -bash
+root      3737  0.0  0.1 153992 12324 pts/3    Ss   Oct07   0:00 -bash
+root      3745  0.0  0.1 153484 11836 pts/4    Ss+  Oct07   0:00 -bash
+root      3751  0.0  0.1 153480 11916 pts/5    Ss   Oct07   0:00 -bash
+root      3763  0.0  0.1 153480 11704 pts/6    Ss+  Oct07   0:00 -bash
+root      3774  0.0  0.1 153476 11908 pts/7    Ss+  Oct07   0:00 -bash
+root      3791  0.0  0.1 153996 12320 pts/8    Ss   Oct07   0:00 -bash
+root      3815  0.0  0.1 153996 12480 pts/9    Ss+  Oct07   0:00 -bash
+root      3835  0.0  0.1 153480 11764 pts/10   Ss+  Oct07   0:00 -bash
+root      3860  0.0  0.1 153484 11744 pts/11   Ss+  Oct07   0:00 -bash
+root      3886  0.0  0.1 153480 11676 pts/12   Ss+  Oct07   0:00 -bash
+root      3909  0.0  0.1 153484 11844 pts/13   Ss+  Oct07   0:00 -bash
+root      9464  0.0  0.0 131548   872 pts/5    S+   Oct07   0:00 tail -f nohup.out
+root      9797  0.2  0.0 168260  4100 pts/2    S+   Oct07  13:44 top
+root      9819  0.0  0.6 2684344 52468 pts/3   Sl+  Oct07   0:03 vim +CtrlP
+root      9992  0.0  0.7 282096 63872 pts/8    S+   Oct07   0:01 /root/anaconda3/bin/python /root/anaconda3/bin/jupyter-notebook --ip 0.0.0.0 --no-browser --port=8081 --allow-root
+root     10012  0.0  0.7 912576 62680 ?        Ssl  Oct07   4:15 node --no-warnings /root/.vim/pack/coc/start/coc.nvim-release/build/index.js
+root     10103  0.0  0.7 2583456 60720 ?       Ssl  Oct07   0:32 /root/anaconda3/bin/python3 /root/.vim/bundle/YouCompleteMe/python/ycm/../../third_party/ycmd/ycmd --port=52505 --options_file=/tmp/tmpsob5w2tk --log=info --idle_suicide_seconds=1800 --stdout=/tmp/ycmd_52505_stdout_fe1_ju39.log --stderr=/tmp/ycmd_52505_stderr_f2p0gxol.log
+root     11673  0.0  0.0      0     0 ?        I    02:39   0:00 [kworker/1:2]
+root     11886  0.0  0.0      0     0 ?        I    Oct10   0:02 [kworker/0:2]
+root     15001  0.0  0.0      0     0 ?        I    04:09   0:00 [kworker/3:2]
+root     16257  0.0  0.0      0     0 ?        I    05:09   0:00 [kworker/2:0]
+root     16650  0.0  0.0      0     0 ?        I    05:35   0:00 [kworker/u8:0]
+root     16814  0.0  0.0      0     0 ?        I    05:39   0:00 [kworker/0:0]
+root     16923  0.0  0.0      0     0 ?        I    05:45   0:00 [kworker/u8:2]
+root     16991  0.0  0.0      0     0 ?        I    05:50   0:00 [kworker/u8:1]
+root     16996  0.0  0.0  74656  6540 ?        Ss   05:50   0:00 sshd: root@pts/14
+root     16998  0.1  0.1 150320  8684 pts/14   Ss+  05:50   0:00 -bash
+root     17120  0.0  0.0   4628   832 pts/14   S+   05:50   0:00 /bin/sh /root/repos/tmux/tat.sh
+root     17124  0.0  0.0 145248  3360 pts/14   S+   05:50   0:00 tmux new-session -As root
+root     17158  0.0  0.0  72300  5712 ?        Ss   05:51   0:00 sshd: [accepted]
+sshd     17159  0.0  0.0  72300   752 ?        S    05:51   0:00 sshd: [net]
+root     17233  0.0  0.0  72300  5600 ?        Ss   05:51   0:00 sshd: [accepted]
+sshd     17234  0.0  0.0  72300  2908 ?        S    05:51   0:00 sshd: [net]
+root     17235  0.0  0.0 163708  3580 pts/1    R+   05:51   0:00 ps aux
+root     30930  0.0  0.0      0     0 ?        S<   Oct08   0:00 [loop12]
+root     32046  0.0  0.0      0     0 ?        I    Oct11   0:00 [kworker/1:1]
