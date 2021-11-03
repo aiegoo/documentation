@@ -145,6 +145,20 @@ The color scheme is the default colors from Bootstrap. You can modify the icons 
 
 ## Creating your own combinations
 
+* I created a details tag combination (look above for the alerts.yml for details)
+> here's an example below
+{% highlight ruby %}
+{% raw %}
+{{site.data.alerts.details}}
+## samples
+### contents etc
+
+{{site.data.alerts.ended}}
+{% endraw %}
+{% endhighlight %}
+
+`above script will create collpased <details> with contents parsed from the markdown`
+
 You can innovate with your own combinations. Here's a similar approach with a file download icon:
 
 ```html
