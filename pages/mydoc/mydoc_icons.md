@@ -161,10 +161,11 @@ The color scheme is the default colors from Bootstrap. You can modify the icons 
 
 *another example called `bulletin`
 > A single double quote with callout script
-{% hightlight ruby %}
+
+{% highlight ruby %}
 {% raw %}
 {{site.data.alerts.bulletin}}
-#contents
+# contents
 {{site.data.alerts.ends}}
 {% endraw %}
 {% endhighlight %}
