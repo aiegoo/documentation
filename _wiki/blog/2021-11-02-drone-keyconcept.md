@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "drone handbook yaw rudder pitch roll aileron airfoil center gravity axes angle attack"
+keywords: "drone handbook yaw rudder pitch roll aileron airfoil center gravity axes angle attack IFR VFR chart"
 summary: "Tue, Nov 02, 21, pilot's handbook summarized on top of key cocnepts from rapa drone-resource"
 excerpt_separator: <!--more-->
 toc: true
