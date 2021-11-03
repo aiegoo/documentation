@@ -12,25 +12,25 @@ intrepid: "Brave and courageous especially in a difficult, dangerous situation."
 
 항행안전시설:	"Navigational Aids"
 
-14 CFR: "See Title 14 of the Code of Federal Regulations."
+14_CFR: "See Title 14 of the Code of Federal Regulations."
 
-100-hour inspection: "An inspection identical in scope to an annual inspection. Conducted every 100 hours of flight on aircraft of under 12,500 pounds that are used to carry passengers for hire."
+100-hour_inspection: "An inspection identical in scope to an annual inspection. Conducted every 100 hours of flight on aircraft of under 12,500 pounds that are used to carry passengers for hire."
 
-absolute accuracy: "The ability to determine present position in space independently, and is most often used by pilots."
+absolute_accuracy: "The ability to determine present position in space independently, and is most often used by pilots."
 
-absolute altitude: "The actual distance between an aircraft and the terrain over which it is flying."
+absolute_altitude: "The actual distance between an aircraft and the terrain over which it is flying."
 
-absolute pressure: "Pressure measured from the reference of zero pressure, or a vacuum."
+absolute_pressure: "Pressure measured from the reference of zero pressure, or a vacuum."
 
-A.C: "Alternating current."
+AC: "Alternating current."
 
 acceleration: "Force involved in overcoming inertia, and which may be defined as a change in velocity per unit of time."
 
-acceleration error: "A magnetic compass error apparent when the aircraft accelerates while flying on an easterly or westerly heading, causing the compass card to rotate toward North."
+acceleration_error: "A magnetic compass error apparent when the aircraft accelerates while flying on an easterly or westerly heading, causing the compass card to rotate toward North."
 
-accelerate-go distance: "The distance required to accelerate to V1 with all engines at takeoff power, experience an engine failure at V1, and continue the takeoff on the remaining engine(s). The runway required includes the distance required to climb to 35 feet by which time V2 speed must be attained."
+accelerate-go_distance: "The distance required to accelerate to V1 with all engines at takeoff power, experience an engine failure at V1, and continue the takeoff on the remaining engine(s). The runway required includes the distance required to climb to 35 feet by which time V2 speed must be attained."
 
-accelerate-stop distance: "The distance required to accelerate to V1 with all engines at takeoff power, experience an engine failure at V1, and abort the takeoff and bring the airplane to a stop using braking action only (use of thrust reversing is not considered)."
+accelerate-stop_distance: "The distance required to accelerate to V1 with all engines at takeoff power, experience an engine failure at V1, and abort the takeoff and bring the airplane to a stop using braking action only (use of thrust reversing is not considered)."
 
 accelerometer: "A part of an inertial navigation system (INS) that accurately measures the force of acceleration in one direction."
 
@@ -40,69 +40,69 @@ ADF: "See automatic direction finder."
 
 ADI: "See attitude director indicator."
 
-adiabatic cooling: "A process of cooling the air through expansion. For example, as air moves up slope it expands with the reduction of atmospheric pressure and cools as it expands."
+adiabatic_cooling: "A process of cooling the air through expansion. For example, as air moves up slope it expands with the reduction of atmospheric pressure and cools as it expands."
 
-adiabatic heating: "A process of heating dry air through compression. For example, as air moves down a slope it is compressed, which results in an increase in temperature."
+adiabatic_heating: "A process of heating dry air through compression. For example, as air moves down a slope it is compressed, which results in an increase in temperature."
 
-adjustable-pitch propeller: "A propeller with blades whose pitch can be adjusted on the ground with the engine not running, but which cannot be adjusted in flight. Also referred to as a ground adjustable propeller. Sometimes also used to refer to constant-speed propellers that are adjustable in flight."
+adjustable-pitch_propeller: "A propeller with blades whose pitch can be adjusted on the ground with the engine not running, but which cannot be adjusted in flight. Also referred to as a ground adjustable propeller. Sometimes also used to refer to constant-speed propellers that are adjustable in flight."
 
-adjustable stabilizer: "A stabilizer that can be adjusted in flight to trim the airplane, thereby allowing the airplane to fly hands-off at any given airspeed."
+adjustable_stabilizer: "A stabilizer that can be adjusted in flight to trim the airplane, thereby allowing the airplane to fly hands-off at any given airspeed."
 
 ADM: "See aeronautical decision-making."
 
 ADS-B: "See automatic dependent surveillance-broadcast."
 
-advection fog: "Fog resulting from the movement of warm, humid air over a cold surface."
+advection_fog: "Fog resulting from the movement of warm, humid air over a cold surface."
 
-adverse yaw: "A condition of flight in which the nose of an airplane tends to yaw toward the outside of the turn. This is caused by the higher induced drag on the outside wing, which is also producing more lift. Induced drag is a by-product of the lift associated with the outside wing."
+adverse_yaw: "A condition of flight in which the nose of an airplane tends to yaw toward the outside of the turn. This is caused by the higher induced drag on the outside wing, which is also producing more lift. Induced drag is a by-product of the lift associated with the outside wing."
 
 aerodynamics: "The science of the action of air on an object, and with the motion of air on other gases. Aerodynamics deals with the production of lift by the aircraft, the relative wind, and the atmosphere."
 
-aeronautical chart: "A map used in air navigation containing all or part of the following: topographic features, hazards and obstructions, navigation aids, navigation routes, designated airspace, and airports."
+aeronautical_chart: "A map used in air navigation containing all or part of the following: topographic features, hazards and obstructions, navigation aids, navigation routes, designated airspace, and airports."
 
-aeronautical decision-making: "A systematic approach to the mental process used by pilots to consistently determine the best course of action in response to a given set of circumstances."
+aeronautical_decision-making: "A systematic approach to the mental process used by pilots to consistently determine the best course of action in response to a given set of circumstances."
 
-agonic line: "An irregular imaginary line across the surface of the Earth along which the magnetic and geographic poles are in alignment, and along which there is no magnetic variation."
+agonic_line: "An irregular imaginary line across the surface of the Earth along which the magnetic and geographic poles are in alignment, and along which there is no magnetic variation."
 
 ailerons: "Primary flight control surfaces mounted on the trailing edge of an airplane wing, near the tip. Ailerons control roll about the longitudinal axis."
 
 aircraft: "A device that is used, or intended to be used, for flight."
 
-aircraft altitude: "The actual height above sea level at which the aircraft is flying."
+aircraft_altitude: "The actual height above sea level at which the aircraft is flying."
 
-aircraft approach category: "A performance grouping of aircraft based on a speed of 1.3 times the stall speed in the landing configuration at maximum gross landing weight."
+aircraft_approach_category: "A performance grouping of aircraft based on a speed of 1.3 times the stall speed in the landing configuration at maximum gross landing weight."
 
-air data computer: "An aircraft computer that receives and processes pitot pressure, static pressure, and temperature to calculate very precise altitude, indicated airspeed, true airspeed, and air temperature."
+air_data_computer: "An aircraft computer that receives and processes pitot pressure, static pressure, and temperature to calculate very precise altitude, indicated airspeed, true airspeed, and air temperature."
 
 airfoil: "Any surface, such as a wing, propeller, rudder, or even a trim tab, which provides aerodynamic force when it interacts with a moving stream of air."
 
-air mass: "An extensive body of air having fairly uniform properties of temperature and moisture."
+air_mass: "An extensive body of air having fairly uniform properties of temperature and moisture."
 
 AIRMET: "Inflight weather advisory issued as an amendment to the area forecast, concerning weather phenomena of operational interest to all aircraft and that is potentially hazardous to aircraft with limited capability due to lack of equipment, instrumentation, or pilot qualifications."
 
 airplane: "An engine-driven, fixed-wing aircraft heavier than air that is supported in flight by the dynamic reaction of air against its wings."
 
-airplane Flight Manual: "A document developed by the airplane manufacturer and approved by the Federal Aviation Administration (FAA). It is specific to a particular make and model airplane by serial number and it contains operating procedures and limitations."
+airplane_Flight_Manual: "A document developed by the airplane manufacturer and approved by the Federal Aviation Administration (FAA). It is specific to a particular make and model airplane by serial number and it contains operating procedures and limitations."
 
-airplane Owner/Information Manual: "A document developed by the airplane manufacturer containing general information about the make and model of an airplane. The airplane owner’s manual is not FAA approved and is not specific to a particular serial numbered airplane. This manual is not kept current, and therefore cannot be substituted for the AFM/POH."
+airplane_Owner_Information_Manual: "A document developed by the airplane manufacturer containing general information about the make and model of an airplane. The airplane owner’s manual is not FAA approved and is not specific to a particular serial numbered airplane. This manual is not kept current, and therefore cannot be substituted for the AFM/POH."
 
-airport diagram: "The section of an instrument approach procedure chart that shows a detailed diagram of the airport. This diagram includes surface features and airport configuration information."
+airport_diagram: "The section of an instrument approach procedure chart that shows a detailed diagram of the airport. This diagram includes surface features and airport configuration information."
 
-Airport/Facility Directory: "See Chart Supplement U.S."
+Airport_Facility_Directory: "See Chart Supplement U.S."
 
-airport surface detection equipment: "Radar equipment specifically designed to detect all principal features and traffic on the surface of an airport, presenting the entire image on the control tower console; used to augment visual observation by tower personnel of aircraft and/or vehicular movements on runways and taxiways."
+airport_surface_detection_equipment: "Radar equipment specifically designed to detect all principal features and traffic on the surface of an airport, presenting the entire image on the control tower console; used to augment visual observation by tower personnel of aircraft and/or vehicular movements on runways and taxiways."
 
-airport surveillance radar: "Approach control radar used to detect and display an aircraft’s position in the terminal area."
+airport_surveillance_radar: "Approach control radar used to detect and display an aircraft’s position in the terminal area."
 
-airport surveillance radar approach: "An instrument approach in which ATC issues instructions for pilot compliance based on aircraft position in relation to the final approach course and the distance from the end of the runway as displayed on the controller’s radar scope."
+airport_surveillance_radar_approach: "An instrument approach in which ATC issues instructions for pilot compliance based on aircraft position in relation to the final approach course and the distance from the end of the runway as displayed on the controller’s radar scope."
 
-air route surveillance radar: "Air route traffic control center (ARTCC) radar used primarily to detect and display an aircraft’s position while en route between terminal areas."
+air_route_surveillance_radar: "Air route traffic control center (ARTCC) radar used primarily to detect and display an aircraft’s position while en route between terminal areas."
 
-air route traffic control center: "Provides ATC service to aircraft operating on IFR flight plans within controlled airspace and principally during the en route phase of flight."
+air_route_traffic_control_center: "Provides ATC service to aircraft operating on IFR flight plans within controlled airspace and principally during the en route phase of flight."
 
 airspeed: "Rate of the aircraft’s progress through the air."
 
-airspeed indicator: "A differential pressure gauge that measures the dynamic pressure of the air through which the aircraft is flying. Displays the craft’s airspeed, typically in knots, to the pilot."
+airspeed_indicator: "A differential pressure gauge that measures the dynamic pressure of the air through which the aircraft is flying. Displays the craft’s airspeed, typically in knots, to the pilot."
 
-Angle of attack: "The angle of attack is the angle at which relative wind meets an airfoil. It is the angle that is formed by the chord of the airfoil and the direction of the relative wind or between the chord line and the flight path. The angle of attack changes during a flight as the pilot changes the direction of the aircraft and is related to the amount of lift being produced."
+angle_of_attack: "The angle of attack is the angle at which relative wind meets an airfoil. It is the angle that is formed by the chord of the airfoil and the direction of the relative wind or between the chord line and the flight path. The angle of attack changes during a flight as the pilot changes the direction of the aircraft and is related to the amount of lift being produced."
 # Copyright 2021 Google LLC
