@@ -14,7 +14,7 @@ summary: "Tue, Nov 02, 21, pilot's handbook summarized on top of key cocnepts fr
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2021-11-02T10:36:09 +0900
 updated: 2021-11-02 10:36
 imagesurl: images/drone-resource-wiki/handbook/
@@ -25,7 +25,7 @@ imagesurl: images/drone-resource-wiki/handbook/
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## eggs drone-resource
-## 	비행기의 방향 전환 
+## 	비행기의 방향 전환
 - 조종면 - 방향타(rudder), 승강타(elevator), 보조날개(aileron)
 
 {% include image.html file="drone-resource-wiki/handbook/155-1.jpg" caption="three axes with center of gravity" %}
@@ -70,7 +70,7 @@ imagesurl: images/drone-resource-wiki/handbook/
 
 ### [ Elevator (aircraft) ]
 
-> Elevators are flight control surfaces, usually at the rear of an aircraft, which control the aircraft's orientation by changing the pitch of the aircraft, and so also the angle of attack of the wing. In simplified terms, they make the aircraft nose-up or nose-down. (Ascending and descending are more a function of the wing—aircraft typically land nose up.) An increased wing angle of attack will cause a greater lift to be produced by the profile of the wing, and a slowing of the aircraft speed. A decrease in angle of attack will produce an increase in speed. The elevators may be the only pitch control surface present (and are then called a slab elevator or stabilator), or may be hinged to a fixed or adjustable surface called a tailplane or horizontal stabilizer.
+> Elevators are flight control surfaces, usually at the rear of an aircraft, which control the aircraft's orientation by changing the pitch of the aircraft, and so also the angle of attack of the wing. In simplified terms, they make the aircraft nose-up or nose-down. (Ascending and descending are more a function of the wing—aircraft typically land nose up.) An increased wing <a href="#" data-toggle="tooltip" data-original-title="{{site.data.glossary.'angle of attack'}}">angle of attack</a> will cause a greater lift to be produced by the profile of the wing, and a slowing of the aircraft speed. A decrease in angle of attack will produce an increase in speed. The elevators may be the only pitch control surface present (and are then called a slab elevator or stabilator), or may be hinged to a fixed or adjustable surface called a tailplane or horizontal stabilizer.
 
 > 승강타(elevator)는 보통 비행기의 뒤쪽에 있는 비행조종면으로 비행기의 pitch와 또한 날개의 받음각(angle of attack)을 변화시켜 비행기의 방향을 조종한다. 쉽게 말해서 승강타는 비행기의 앞부분을 상하로 움직인다. (상승과 하강은 날개의 큰 기능이다.— 비행기는 일반적으로 앞부분을 들고 착륙한다.) 커지는 받음각은 날개의 옆모습에 의해 만들어지는 큰 양력과 비행기 속도의 감소를 발생시킨다. 작아지는 받음각은 속도의 증가를 가져온다. 승강타는 존재하는 유일한 피치조종면일 것이다. 고정되거나 조절 가능한 승강타는 꼬리날개(tailplane)나 수평안정판(horizontal stabilizer)으로 불린다.
 
@@ -78,7 +78,7 @@ imagesurl: images/drone-resource-wiki/handbook/
 <p>
   An animation of an airplane rolling via its ailerons
 
-</p>  
+</p>
 
 {% assign filenames="77-1.jpg,77-2.jpg" | split: "," %}
 {% include page_gallery.html %}
@@ -116,17 +116,17 @@ imagesurl: images/drone-resource-wiki/handbook/
 ![ASI operation](images/drone-resource-wiki/uploads/ASI-operation.png)
 ### Airspeed Indicator부터 어떻게 작동하나 알아보겠습니다.
 
-> 비행기가 앞으로 비행하게되면, pitot tube hole을따라서 ram air가 airspeed indicator안에 Diaphragm안으로 들어가게되면서 이 압력에 의해 Diaphragm이 팽창하게 되고, 이 팽창되는 양을 Mechanically indicator와 연결되어 airspeed를 보여줍니다. 속도가 빨라지면 들어오는공기압이 커져서 속도가 빠른것으로 표시가 되고 느리면 압력이 낮아져 속도가 느린것으로 표시가 됩니다. 
+> 비행기가 앞으로 비행하게되면, pitot tube hole을따라서 ram air가 airspeed indicator안에 Diaphragm안으로 들어가게되면서 이 압력에 의해 Diaphragm이 팽창하게 되고, 이 팽창되는 양을 Mechanically indicator와 연결되어 airspeed를 보여줍니다. 속도가 빨라지면 들어오는공기압이 커져서 속도가 빠른것으로 표시가 되고 느리면 압력이 낮아져 속도가 느린것으로 표시가 됩니다.
 
 ![Pt](images/drone-resource-wiki/uploads/9d5c68d7a2ccdceb033b8cd38fce65d2/Pt.jpg)
 
 
 ## 추력 원리
-- 방법 
+- 방법
 > 멀티콥터에서 추력을 담당하는 부분은 기체를 중심으로 사방으로 펼쳐진 로터다. 이 로터의 회전에 의해 멀티콥터가 균형을 유지하고 이동할 수 있게 된다. 멀티콥터에서는 추력과 양력의 구분이 모호할 수 있고, 단순히 정지 비행을 위해서 양력을 발생시키기도 하지만 바람이 많이 불면 호버링 자세를 수평으로 유지하기 위해 추력을 이용해야 하는 경우도 있다.
 
 - 호버링:
-> ** 모든 로터가 균형을 이루어 멀티콥터의 중량만큼 양력을 발생시키면 된다. 정지 비행시에는 비행체에 작용하는 4가지 힘, ***양략, 중력, 추력, 항력***은 모두 평형을 이루게 된다. 
+> ** 모든 로터가 균형을 이루어 멀티콥터의 중량만큼 양력을 발생시키면 된다. 정지 비행시에는 비행체에 작용하는 4가지 힘, ***양략, 중력, 추력, 항력***은 모두 평형을 이루게 된다.
 
 - 상승/하강:
 > ** 모든 로터가 동일하게 같은 추력을 증가 시켜서 상승하고 반대로 해서 하강한다.
@@ -152,7 +152,7 @@ imagesurl: images/drone-resource-wiki/handbook/
  - 정적 안정: 평형상태를 벗어난 후 다시 원래의 형태로 돌아가려는 경향을 말한다.
    - 평형상태 equilibrium: 항공기에 작용하는 모든 힘이 균형 잡힌 상태로 힘의 변화가 없는 정상 비행 상태
    - 정적 불안정 : 평형상태를 벗어난 후 초기의 평형상태로 부터 벗어나려는 경향을 말한다.
-   - 정적 중립: 평형 상태를 벗어난후 그 상태를 유지하려는 경향을 말한다. 
+   - 정적 중립: 평형 상태를 벗어난후 그 상태를 유지하려는 경향을 말한다.
 ![](images/drone-resource-wiki/stability.jpg)
 
 '
@@ -213,7 +213,7 @@ Z - 수직  -  Yaw -  측력 외력
 
 2. 블레이드의 구조
 
-``` 
+```
 길이에 따라 익근의 속도는 느리고 익단의 속도는 빠르게 회전한다.
 
 익근의 꼬임각이 익단의 꼬임각보다 크게 한다.
@@ -237,7 +237,7 @@ Z - 수직  -  Yaw -  측력 외력
 
   - 평균공력시위 -- 실제 날개 꼴과 같은 동일한 항공역학적 특성을 갖는가상 날개끝
 
-  - 기류박리: 
+  - 기류박리:
     - 표면에 흐르는 기류가 날개의 표면과 공기입자 간의 마찰력으로 표면으로부터 떨어져 나가는 현상
 
     - 날개의 표면과 공기입자간의 마찰력으로 공기속도 감소로 정체구역 발생

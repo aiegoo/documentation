@@ -103,4 +103,6 @@ air route traffic control center: "Provides ATC service to aircraft operating on
 airspeed: "Rate of the aircraft’s progress through the air."
 
 airspeed indicator: "A differential pressure gauge that measures the dynamic pressure of the air through which the aircraft is flying. Displays the craft’s airspeed, typically in knots, to the pilot."
+
+Angle of attack: "The angle of attack is the angle at which relative wind meets an airfoil. It is the angle that is formed by the chord of the airfoil and the direction of the relative wind or between the chord line and the flight path. The angle of attack changes during a flight as the pilot changes the direction of the aircraft and is related to the amount of lift being produced."
 # Copyright 2021 Google LLC
