@@ -1079,6 +1079,11 @@ const tm = require("./third_party/markdown-it-texmath");
 </div>
 ```
 
+{% raw %}
+{% assign filenames="123.jpg,345.jpg,567.jpg" %}
+{% include page_gallery.html %}
+{% endraw %}
+
 :::
 
 ### Using relative path?
