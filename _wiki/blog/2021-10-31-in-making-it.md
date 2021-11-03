@@ -1067,8 +1067,7 @@ const tm = require("./third_party/markdown-it-texmath");
 * customzing image.html to act as an inline callout script for image files
 > Add imagesurl frontmatter for the directory containing the images, and then assign the image files in `filenames="` `split: ","` before including `page_gallery.html` See below for an example
 
-{% raw %}
-{% highlight html %}
+```html
 <div class ="image-gallery-yoga">
 {% for name in filenames %}
     <div class="gallery-box">
@@ -1078,8 +1077,7 @@ const tm = require("./third_party/markdown-it-texmath");
     </div>
  {% endfor %}
 </div>
-{% endhighlight %}
-{% endraw %}
+```
 
 :::
 
