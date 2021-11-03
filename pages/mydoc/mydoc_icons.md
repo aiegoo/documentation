@@ -145,7 +145,7 @@ The color scheme is the default colors from Bootstrap. You can modify the icons 
 
 ## Creating your own combinations
 
-* I created a details tag combination (look above for the alerts.yml for details)
+* I created this combination (look above for the alerts.yml for details)
 > here's an example below
 {% highlight ruby %}
 {% raw %}
@@ -158,6 +158,18 @@ The color scheme is the default colors from Bootstrap. You can modify the icons 
 {% endhighlight %}
 
 `above script will create collpased <details> with contents parsed from the markdown`
+
+*another example called `bulletin`
+> A single double quote with callout script
+{% hightlight ruby %}
+{% raw %}
+{{site.data.alerts.bulletin}}
+#contents
+{{site.data.alerts.ends}}
+{% endraw %}
+{% endhighlight %}
+
+`above will create a headline callout`
 
 You can innovate with your own combinations. Here's a similar approach with a file download icon:
 
