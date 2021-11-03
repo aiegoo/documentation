@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "drone handbook"
+keywords: "drone handbook yaw rudder pitch roll aileron airfoil center gravity axes angle attack"
 summary: "Tue, Nov 02, 21, pilot's handbook summarized on top of key cocnepts from rapa drone-resource"
 excerpt_separator: <!--more-->
 toc: true
@@ -359,6 +359,7 @@ CG = TM(총 모멘트) / TW (총 무게)
   -  회전운동의 세차 -- 회전하는 물체에 힘을 가했을때 90도가 지난
     지점에서 현상이 나타나는 것
 
+{% include image.html file="drone-resource-wiki/handbook/advisory-circular.jpg" caption="sectional VFR chart IFR chart and chart supplement" %}
 
 
 {% include taglogic.html %}
