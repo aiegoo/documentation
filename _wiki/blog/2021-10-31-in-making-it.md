@@ -1081,12 +1081,12 @@ const tm = require("./third_party/markdown-it-texmath");
 ```
 {% endraw %}
 
-{% raw %}
 {% highlight ruby %}
+{% raw %}
 {% assign filenames="123.jpg,345.jpg,567.jpg" %}
 {% include page_gallery.html %}
-{% endhighlight %}
 {% endraw %}
+{% endhighlight %}
 
 :::
 
