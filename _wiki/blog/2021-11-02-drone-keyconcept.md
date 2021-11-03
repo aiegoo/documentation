@@ -218,6 +218,7 @@ Z - 수직  -  Yaw -  측력 외력
 
 익근과 익단의 꼬임각이 서로 다른 이유는 양력 불균형을 해소하기 위함이다.
 ```
+
 3.  압력중심
 
 에어포일 표면에 작용하는 모든 항공역학적 압력이 힘으로 한점에
@@ -245,6 +246,7 @@ Z - 수직  -  Yaw -  측력 외력
   - 비행기 날개 종횡비의 비율이 커지면 유해항력이 증가 유도항력이 감소, 활공성능이 좋아진다.
 
   - 상대풍:
+
 ```
 날개(Airfoil)에 상대적인 공기의 흐름
 
@@ -254,7 +256,8 @@ Z - 수직  -  Yaw -  측력 외력
 아래로
 ```
 
-5. 무게중심
+1. 무게중심
+
 ```
 CG = TM(총 모멘트) / TW (총 무게)
 
@@ -268,7 +271,8 @@ CG = TM(총 모멘트) / TW (총 무게)
 ![](images/drone-resource-wiki/images/media/image3.jpg)
 {% include image.html file="drone-resource-wiki/images/media/image3.jpg" caption="center of gravity" %}
 
-1. 관성의 법칙
+6. 관성의 법칙
+
 ```
 외부의 힘에 의한 변화에 저항하는 힘
 
