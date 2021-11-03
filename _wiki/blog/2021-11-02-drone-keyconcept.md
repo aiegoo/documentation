@@ -262,7 +262,7 @@ CG = TM(총 모멘트) / TW (총 무게)
 세로 안정성 -- 피칭, 가로 안정성 롤링, 방향 안정성 요잉
 ```
 
-![](images/drone-resource-wiki/./images/media/image3.jpg)
+![](images/drone-resource-wiki/images/media/image3.jpg)
 
 6. 관성의 법칙
 ```
