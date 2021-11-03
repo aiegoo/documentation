@@ -31,7 +31,6 @@ imagesurl: images/drone-resource-wiki/handbook/
 {% include image.html file="drone-resource-wiki/handbook/155-1.jpg" caption="three axes with center of gravity" %}
 
 {% assign filenames = "160-1.jpg,157-1.jpg,156-1.jpg" | split: "," %}
-<div class ="image-gallery-yoga">
 {% include page_gallery.html %}
 
 ### [ Aircraft principal axes 비행기 주축 ]
@@ -76,6 +75,8 @@ imagesurl: images/drone-resource-wiki/handbook/
 
 {% assign filenames="77-1.jpg,77-2.jpg" | split: "," %}
 {% include page_gallery.html %}
+
+{{site.data.alerts.hr_faded}}
 ### [ Aileron ]
 
 > <a href="#" data-toggle="tooltip" data-original-title="{{site.data.glossary.ailerons}}">Ailerons</a> are hinged flight control surfaces attached to the trailing edge of the wing of a fixed-wing aircraft. The ailerons are used to control the aircraft in roll, which results in a change in heading due to the tilting of the lift vector. The two ailerons are typically interconnected so that one goes down when the other goes up: the down-going aileron increases the lift on its wing while the up-going aileron reduces the lift on its wing, producing a rolling moment about the aircraft's longitudinal axis. Ailerons are usually situated near the wing tip, but may sometimes be situated nearer the wing root. The terms "outboard aileron" and "inboard aileron" are used to describe these positions respectively. The word aileron is French for "little wing".
@@ -334,12 +335,7 @@ CG = TM(총 모멘트) / TW (총 무게)
 
   -형상항력 -- 블레이드가 회전할때 공기와 마찰하면서 발생하는 마찰성항력(회전익 항공기에만 발생); 영각(받음각) 변화에 좌우되지 않으나, 속도에 좌우됨 (날개자체가 받는 항력)
 
-  -유해항력 -- 전체항력 -- 메인로터에 작용하는 항력, 속도제곱에 비례; 항공기의 형체, 표면마찰, 크기, 설계등에 영향을 받으며, 노출최소화 및상을 유선형으로 설계 (동체가 받는)
-
-  - 유도항력 -- 헬리콥터의 양력을 발생함으로서 나타나는 유도기류에 의한 항력 속도증가시 감소; 저속 및 제자리 비행 시 유도항력이 가장크다.
-
-
-2. 기타사항
+  -유해항력 -- 전체항력 -- 메인로터에 작용하는 항력, 속도제곱에 비례; 항공기의 형체, 표면마찰, 크기, 설계등에 영향을 받으며, 노출최소화 및상을 유선형으로 설계 (동체가 did not find expected key while parsing a block mapping
 
   - 유도기류 -- 헬리콥터 로터의 움직임에 의해 변화된 하강기류; 취부각 (붙임각) 의 증가로 영각(받음각)이 증가하면 공기는 아래로 가속 취부각과 비례한다.
 
@@ -361,6 +357,7 @@ CG = TM(총 모멘트) / TW (총 무게)
 
 {% include image.html file="drone-resource-wiki/handbook/advisory-circular.jpg" caption="sectional VFR chart IFR chart and chart supplement" %}
 
+{{site.data.alerts.hr_shaded}}
 
 {% include taglogic.html %}
 
