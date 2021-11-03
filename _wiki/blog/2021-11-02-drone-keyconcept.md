@@ -148,14 +148,16 @@ imagesurl: images/drone-resource-wiki/handbook/
    - 평형상태 equilibrium: 항공기에 작용하는 모든 힘이 균형 잡힌 상태로 힘의 변화가 없는 정상 비행 상태
    - 정적 불안정 : 평형상태를 벗어난 후 초기의 평형상태로 부터 벗어나려는 경향을 말한다.
    - 정적 중립: 평형 상태를 벗어난후 그 상태를 유지하려는 경향을 말한다.
-![](images/drone-resource-wiki/stability.jpg)
+   -
+![](images/drone-resource-wiki/images/stability.jpg)
+{% include image.html file="drone-resource-wiki/images/xyz.jpg" caption="xyz stability" %}
 
-'
-X - 전진 - Roll - 중력 양력
-'
+'X - 전진 - Roll - 중력 양력'
+
 <em>
 Y - 좌우측 날개 - Pitch -  추력 항력
 </em>
+
 Z - 수직  -  Yaw -  측력 외력
 
 
@@ -168,6 +170,7 @@ Z - 수직  -  Yaw -  측력 외력
   - 방향 안정성: 수직축에 대한 항공기의 운동을 안정시키는 것으로 ***수직 안정판에 설치된 방향타 러더를 조작하여 요잉 운동을 통해 확보한다.***
 
 ![xyz](images/drone-resource-wiki/images/xyz.jpg)
+{% include image.html file="drone-resource-wiki/images/xyz.jpg" caption="xyz stability" %}
 
 ## 14 비행장치에 미치는 힘
 
@@ -263,8 +266,9 @@ CG = TM(총 모멘트) / TW (총 무게)
 ```
 
 ![](images/drone-resource-wiki/images/media/image3.jpg)
+{% include image.html file="drone-resource-wiki/images/media/image3.jpg" caption="center of gravity" %}
 
-6. 관성의 법칙
+1. 관성의 법칙
 ```
 외부의 힘에 의한 변화에 저항하는 힘
 
@@ -289,6 +293,8 @@ CG = TM(총 모멘트) / TW (총 무게)
 헬리콥터의 주 로터가 회전 시 기체는 반대방향으로 회전하려는 토크(Torque)현상도 작용반작용의 법칙
 
 ![](images/drone-resource-wiki/images/media/image4.png)
+{% include image.html file="drone-resource-wiki/images/media/image4.jpg" caption="Newton Third law, law of motion" %}
+
 
 
 9.베르누이 정리
