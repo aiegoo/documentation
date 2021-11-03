@@ -148,7 +148,6 @@ imagesurl: images/drone-resource-wiki/handbook/
    - 평형상태 equilibrium: 항공기에 작용하는 모든 힘이 균형 잡힌 상태로 힘의 변화가 없는 정상 비행 상태
    - 정적 불안정 : 평형상태를 벗어난 후 초기의 평형상태로 부터 벗어나려는 경향을 말한다.
    - 정적 중립: 평형 상태를 벗어난후 그 상태를 유지하려는 경향을 말한다.
-   -
 
 {% include image.html file="drone-resource-wiki/images/xyz.jpg" caption="xyz stability" %}
 
@@ -172,7 +171,7 @@ Z - 수직  -  Yaw -  측력 외력
 ![xyz](images/drone-resource-wiki/images/xyz.jpg)
 {% include image.html file="drone-resource-wiki/images/xyz.jpg" caption="xyz stability" %}
 
-## 14 비행장치에 미치는 힘
+## 비행장치에 미치는 힘
 
 1. 양력
   - 유체는 물체에 닿은 유체를 밀어내려는 힘에 대한 반작용이며 물체가 진행하는 방향에 대한 경사각과 물체의 면적, 흐름의 속도, 유체의 밀도에 따라 정해진다.
