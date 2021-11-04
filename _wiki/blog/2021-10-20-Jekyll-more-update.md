@@ -14,7 +14,7 @@ summary: "Wed, Oct 20, 21, live-server mathjax issues-to-fix show-box photo TOC 
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2021-10-20T02:32:00 +0900
 updated: 2021-10-21 04:32
 ---
@@ -25,7 +25,7 @@ updated: 2021-10-21 04:32
 - to view custom callouts, details tags and image gallery grid.
 
 * double quote headline, collpasible detail tags
-* 
+
 {{site.data.alerts.details}}
 
 {% raw %}
@@ -57,11 +57,12 @@ ended: '</div></p></details>'
 :::
 {{site.data.alerts.ended}}
 
+{{site.data.alerts.hr_faded}}
+
 * I created this combination (look above for the alerts.yml for details)
 > here's an example below
 
 {{site.data.alerts.details}}
-{% highlight ruby %}
 
 * customzing image.html to act as an inline callout script for image files
 > Add imagesurl frontmatter for the directory containing the images, and then assign the image files in `filenames="` `split: ","` before including `page_gallery.html` See below for an example
@@ -205,7 +206,7 @@ ul#markdown-toc {
     list-style-type: none;
     counter-reset: list;
 }
-ul#markdown-toc li {    
+ul#markdown-toc li {
     list-style: none;
     margin-left: -9px;
 }
@@ -253,7 +254,7 @@ ul#markdown-toc li >ul li::before {
 
 ## Thi
 
-### how to automate adding frontmatters 
+### how to automate adding frontmatters
 > specific to files with contents only
 > example, drones guide files in this sites
 
@@ -264,7 +265,7 @@ ul#markdown-toc li >ul li::before {
   - then, I will have to add frontmatters prepend to existing contents, but I have more scripts after frontmatters to be generated (ex, include scripts)
   - bash should generate some time data in date and updated parameters, in additon to other bash variables suc as tags tagName etc.
 - solution
-  - adapt existing scripts for createwiki and add awk/sed bash cli to insert each file in the same/subdirectory 
+  - adapt existing scripts for createwiki and add awk/sed bash cli to insert each file in the same/subdirectory
   - I have used a bash script in similar case where I prepend contents in a file to every file in the directory.
   - [code_snippets](#prepending-file)
 
