@@ -5,6 +5,8 @@ permalink: mydoc_introduction.html
 folder: mydoc
 ---
 
+## Google dialogflow guide
+[pdf](https://github.com/aiegoo/uas-reference/blob/master/web-dev/dialogflowpdf.pdf)
 ## Overview
 
 I was on a mission to join the workforce; my portfolio and projects have grown very fast 
