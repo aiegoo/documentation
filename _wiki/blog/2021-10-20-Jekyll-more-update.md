@@ -68,7 +68,7 @@ ended: '</div></p></details>'
 
 {{site.data.alerts.hr_faded}}
 
-*another example called `bulletin`
+*another example called `bulletin` {:. details-p}
 > A single double quote with callout script
 
 {% highlight ruby %}
