@@ -1,7 +1,7 @@
 ---
 title: Icons
 tags: [formatting]
-keywords: font icons, buttons, images, vectors, font awesome, glyphicons
+keywords: "callout alerts fontawesome glyph font icons buttons images vectors font awesome glyphicons"
 last_updated: October 24, 2021
 summary: "You can integrate font icons through the Font Awesome and Glyphical Halflings libraries. These libraries allow you to embed icons through their libraries delivered as a link reference. You don't need any image libraries downloaded in your project."
 sidebar: mydoc_sidebar
@@ -79,7 +79,7 @@ Here's the result:
 
 <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle fa-lg"></i> This is a special warning message.</div>
 
-The notes, tips, warnings, etc., are pre-coded with Font Awesome and stored in the alerts.yml file. That file includes the following:
+The notes, tips, warnings, etc., are pre-coded with Font Awesome and stored in the alerts.yml file. That file includes the following (updated as of November 3, 2021):
 
 {% raw %}
 ```yaml
@@ -87,7 +87,9 @@ tip: '<div class="alert alert-success" role="alert"><i class="fa fa-check-square
 note: '<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>'
 important: '<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important: </b>'
 warning: '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>'
+bulletin: '<div class="alert alert-default alert-bulletin" role="alert"><div markdown="1">'
 end: '</div>'
+ends: '</div></div>'
 
 callout_danger: '<div class="bs-callout bs-callout-danger">'
 callout_default: '<div class="bs-callout bs-callout-default">'
@@ -98,6 +100,10 @@ callout_warning: '<div class="bs-callout bs-callout-warning">'
 
 hr_faded: '<hr class="faded"/>'
 hr_shaded: '<hr class="shaded"/>'
+
+
+details: '<details><summary class="detailSummary">Click to open</summary><p><div markdown="1">'
+ended: '</div></p></details>'
 ```
 {% endraw %}
 
@@ -138,6 +144,33 @@ Here's the result:
 The color scheme is the default colors from Bootstrap. You can modify the icons or colors as needed.
 
 ## Creating your own combinations
+
+* I created this combination (look above for the alerts.yml for details)
+> here's an example below
+{% highlight ruby %}
+{% raw %}
+{{site.data.alerts.details}}
+## samples
+### contents etc
+
+{{site.data.alerts.ended}}
+{% endraw %}
+{% endhighlight %}
+
+`above script will create collpased <details> with contents parsed from the markdown`
+
+*another example called `bulletin`
+> A single double quote with callout script
+
+{% highlight ruby %}
+{% raw %}
+{{site.data.alerts.bulletin}}
+# contents
+{{site.data.alerts.ends}}
+{% endraw %}
+{% endhighlight %}
+
+`above will create a headline callout`
 
 You can innovate with your own combinations. Here's a similar approach with a file download icon:
 

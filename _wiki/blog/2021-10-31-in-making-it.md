@@ -14,7 +14,7 @@ summary: "Sat, Oct 23, 21, secret receipe of customizing 11th and this jekyll"
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2021-10-31T08:52:03 +0900
 updated: 2021-10-31 09:52
 ---
@@ -539,15 +539,15 @@ For ones who wanna get only the content (escape HTML tags and special characters
 Suppose you use `specialTitle` in the frontmatter of your page (eg. `index.js`). You can use it in the template, eg. `header.njk`, as
 
 {% raw %}
-```html 
+```html
 {% if specialTitle %} {# content #} {% endif %}
 ```
  {% endraw %}
 
 ### Recognize home page
 {% raw %}
-```html 
-{% assign pageUrlLength = page.url | length %} 
+```html
+{% assign pageUrlLength = page.url | length %}
 ```
 {% endraw %}
 
@@ -582,7 +582,7 @@ tags: [tag 1, tag 2]
 Normal,
 
 {% raw %}
-```html 
+```html
 <ul>
   {% for post in collections.posts %}
   <li>
@@ -603,7 +603,7 @@ Other default variable (like `post.url`) can be found [here](https://www.11ty.de
 #### Sort posts by titles
 
 {% raw %}
-```html 
+```html
 <!-- Create a new list -->
 {% assign newPostList = [] %} {% for post in collections.posts %} {% assign
 newPostList = (newPostList.push({title: post.data.title, url: post.url}),
@@ -640,7 +640,7 @@ In this case, ==we consider a category as the first tag== of a post. For example
 ]
 ```
 {% raw %}
-```html 
+```html
 {% for item in categories %}
 <div class="category-wrapper">
   <h2>{{ item.icon }} {{ item.name }}</h2>
@@ -652,7 +652,7 @@ In this case, ==we consider a category as the first tag== of a post. For example
     {% endfor %}
   </ul>
 </div>
-{% endfor %} 
+{% endfor %}
 ```
 {% endraw %}
 
@@ -707,13 +707,13 @@ newPostList) %} {% endfor %} {% endif %}
     {% endfor %}
   </ul>
 </div>
-{% endfor %} 
+{% endfor %}
 ```
 {% endraw %}
 
 ### Next / Previous post
 {% raw %}
-```html 
+```html
 <ul>
   {%- assign nextPost = collections.posts | getNextCollectionItem(page) %} {%- if
   nextPost %}
@@ -741,7 +741,7 @@ newPostList) %} {% endfor %} {% endif %}
 ```
 
 {% raw %}
-```html 
+```html
 <!-- in <head> -->
 <script async defer src="{{ '/js/min.js' | addHash }}"></script>
 
@@ -777,7 +777,7 @@ Using `rollup` as above way, we have only one output file `js.min.js`!
 Suppose that you have a custom frontmatter `customJS: ["file1.js, file2.js"]` containing all custom js files. It means that the files `file1.js` and `file2.js` are presented only in this page! (If we integrate them in `main.js`, they will be integrated ub all other pages after being rendered even if they're useless in those pages).
 
 {% raw %}
-```html 
+```html
 {% if customJS %} {% assign js %} {% for file in customJS %} {% include "js/"
 + file %} {% endfor %}
 <script>
@@ -787,7 +787,7 @@ Suppose that you have a custom frontmatter `customJS: ["file1.js, file2.js"]` co
     }
   }
 </script>
-{% endif %} 
+{% endif %}
 ```
 {% endraw %}
 
@@ -815,7 +815,7 @@ module.exports = function (eleventyConfig) {
 Usage (`_includes/scripts/search.js`),
 
 {% raw %}
-```html 
+```html
 {% assign js %} {% include "js/search.js" %}
 <script>
   {
@@ -859,7 +859,7 @@ Last modified date,
 
 {% raw %}
 ```html
-{{ page.inputPath | lastModifiedDate | htmlDateString }} 
+{{ page.inputPath | lastModifiedDate | htmlDateString }}
 ```
 {% endraw %}
 
@@ -1052,7 +1052,7 @@ const tm = require("./third_party/markdown-it-texmath");
 
 
 {% raw %}
-```bash 
+```bash
 # Insert normally,
 ![description](/path/to/image)
 
@@ -1064,6 +1064,29 @@ const tm = require("./third_party/markdown-it-texmath");
 # (using markdown-it-attrs)
 ![](){:.custom-class}
 ```
+* customzing image.html to act as an inline callout script for image files
+> Add imagesurl frontmatter for the directory containing the images, and then assign the image files in `filenames="` `split: ","` before including `page_gallery.html` See below for an example
+
+{% raw %}
+```html
+<div class ="image-gallery-yoga">
+{% for name in filenames %}
+    <div class="gallery-box">
+    <a href="{{ page.imagesurl }}{{ name }}">
+      <img src="{{ page.imagesurl }}{{ name }} " alt="{{ name }}"  class="img-gallery" />
+     </a>
+    </div>
+ {% endfor %}
+</div>
+```
+{% endraw %}
+
+{% highlight ruby %}
+{% raw %}
+{% assign filenames="123.jpg,345.jpg,567.jpg" %}
+{% include page_gallery.html %}
+{% endraw %}
+{% endhighlight %}
 
 :::
 
@@ -1174,7 +1197,7 @@ If you wanna create an **advanced custom container**, use plugin `markdown-it-co
 Just by using,
 
 {% raw %}
-```html 
+```html
 ::: hsbox Custom Title Custom markdown texts :::
 ```
 {% endraw %}
@@ -1217,11 +1240,11 @@ module.exports = function (eleventyConfig) {
 };
 ```
 {% raw %}
-```html 
+```html
 {% markdown %}
 <!-- html tags -->
 <!-- no need spaces before/after -->
-{% endmarkdown %} 
+{% endmarkdown %}
 ```
 {% endraw %}
 </div>
@@ -1241,7 +1264,7 @@ module.exports = function (eleventyConfig) {
 ```
 
 {% raw %}
-```html 
+```html
 <!-- not working -->
 <div class="list-of">
   {% for item in cv.education.list %}
@@ -1255,7 +1278,7 @@ module.exports = function (eleventyConfig) {
 {% endraw %}
 
 {% raw %}
-```html 
+```html
 <!-- working -->
 <div class="list-of">
   {% for item in cv.education.list %}
@@ -1296,10 +1319,10 @@ To creata the same code block like above, i.e.,
 Just by using,
 
 {% raw %}
-```html 
+```html
 {% hsbox "Custom Title" %}
 <!-- Custom markdown texts -->
-{% endhsbox %} 
+{% endhsbox %}
 ```
 {% endraw %}
 
@@ -1468,9 +1491,9 @@ You put all your data files (`.js` or `.json`) in `_data`, e.g.,
 ```
 
 {% raw %}
-```html 
+```html
 <!-- in a .njk file -->
-{% for item in dataUrls %} {{ item.name }} {{ item.url }} {% endfor %} 
+{% for item in dataUrls %} {{ item.name }} {{ item.url }} {% endfor %}
 ```
 {% endraw %}
 </div>
@@ -1515,7 +1538,7 @@ module.exports = {
 };
 ```
 {% raw %}
-```html 
+```html
 <!-- in a .njk file -->
 <div>{{ helpers.currentYear() }}</div>
 
@@ -1576,7 +1599,7 @@ module.exports = function (eleventyConfig) {
 };
 ```
 {% raw %}
-```js 
+```js
 // in post
 {% list_repos %}
 
@@ -1624,7 +1647,7 @@ module.exports = {
 };
 ```
 {% raw %}
-```js 
+```js
 {% if myProject.environment == "local" %}
   <style>{{ css | cssmin | safe }}</style>
 {% else %}
@@ -1632,7 +1655,7 @@ module.exports = {
 {% endif %}
 
 ```
-{% endraw %} 
+{% endraw %}
 </div>
 
 ### Incremental build
