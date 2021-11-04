@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: update
-keywords: "js tips automatically reload page mathjax anchor link fixed navigation header hover links back to top button zoom enlarge photo js prevent default event keyboard arrow json fetch"
+keywords: "js tips automatically reload page mathjax anchor link fixed navigation header hover links back to top button zoom enlarge photo js prevent default event keyboard arrow json fetch callout details gallery image grid"
 summary: "Wed, Oct 20, 21, live-server mathjax issues-to-fix show-box photo TOC Github API"
 excerpt_separator: <!--more-->
 toc: true
@@ -22,14 +22,19 @@ updated: 2021-10-21 04:32
 {:toc}
 
 ## bulletin, details and page_gallery.html
+- to view custom callouts, details tags and image gallery grid.
 
+* double quote headline, collpasible detail tags
+{{site.data.alerts.details}}
 {% raw %}
 ```yaml
 tip: '<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>'
 note: '<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>'
 important: '<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important: </b>'
 warning: '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>'
+bulletin: '<div class="alert alert-default alert-bulletin" role="alert"><div markdown="1">'
 end: '</div>'
+ends: '</div></div>'
 
 callout_danger: '<div class="bs-callout bs-callout-danger">'
 callout_default: '<div class="bs-callout bs-callout-default">'
@@ -40,8 +45,70 @@ callout_warning: '<div class="bs-callout bs-callout-warning">'
 
 hr_faded: '<hr class="faded"/>'
 hr_shaded: '<hr class="shaded"/>'
+
+
+details: '<details><summary class="detailSummary">Click to open</summary><p><div markdown="1">'
+ended: '</div></p></details>'
 ```
 {% endraw %}
+
+
+
+* I created this combination (look above for the alerts.yml for details)
+> here's an example below
+{% highlight ruby %}
+{% raw %}
+{{site.data.alerts.details}}
+
+* customzing image.html to act as an inline callout script for image files
+> Add imagesurl frontmatter for the directory containing the images, and then assign the image files in `filenames="` `split: ","` before including `page_gallery.html` See below for an example
+
+{% raw %}
+```html
+<div class ="image-gallery-yoga">
+{% for name in filenames %}
+    <div class="gallery-box">
+    <a href="{{ page.imagesurl }}{{ name }}">
+      <img src="{{ page.imagesurl }}{{ name }} " alt="{{ name }}"  class="img-gallery" />
+     </a>
+    </div>
+ {% endfor %}
+</div>
+```
+{% endraw %}
+
+{% highlight ruby %}
+{% raw %}
+{% assign filenames="123.jpg,345.jpg,567.jpg" %}
+{% include page_gallery.html %}
+{% endraw %}
+{% endhighlight %}
+
+:::
+
+{{site.data.alerts.ended}}
+## samples
+### contents etc
+
+{{site.data.alerts.ended}}
+{% endraw %}
+{% endhighlight %}
+
+`above script will create collpased <details> with contents parsed from the markdown`
+
+*another example called `bulletin`
+> A single double quote with callout script
+
+{% highlight ruby %}
+{% raw %}
+{{site.data.alerts.bulletin}}
+# contents
+{{site.data.alerts.ends}}
+{% endraw %}
+{% endhighlight %}
+
+`above will create a headline callout`
+
 
 ## stackoverflow app settings
 
