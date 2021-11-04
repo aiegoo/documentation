@@ -25,7 +25,9 @@ updated: 2021-10-21 04:32
 - to view custom callouts, details tags and image gallery grid.
 
 * double quote headline, collpasible detail tags
+* 
 {{site.data.alerts.details}}
+
 {% raw %}
 ```yaml
 tip: '<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>'
@@ -52,18 +54,18 @@ ended: '</div></p></details>'
 ```
 {% endraw %}
 
-
+:::
+{{site.data.alerts.ended}}
 
 * I created this combination (look above for the alerts.yml for details)
 > here's an example below
-{% highlight ruby %}
-{% raw %}
+
 {{site.data.alerts.details}}
+{% highlight ruby %}
 
 * customzing image.html to act as an inline callout script for image files
 > Add imagesurl frontmatter for the directory containing the images, and then assign the image files in `filenames="` `split: ","` before including `page_gallery.html` See below for an example
 
-{% raw %}
 ```html
 <div class ="image-gallery-yoga">
 {% for name in filenames %}
@@ -75,18 +77,18 @@ ended: '</div></p></details>'
  {% endfor %}
 </div>
 ```
-{% endraw %}
 
-{% highlight ruby %}
-{% raw %}
+```liquid
 {% assign filenames="123.jpg,345.jpg,567.jpg" %}
 {% include page_gallery.html %}
 {% endraw %}
 {% endhighlight %}
+```
 
 :::
 
 {{site.data.alerts.ended}}
+
 ## samples
 ### contents etc
 
