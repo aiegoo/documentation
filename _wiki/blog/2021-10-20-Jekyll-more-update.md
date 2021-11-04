@@ -52,12 +52,6 @@ details: '<details><summary class="detailSummary">Click to open</summary><p><div
 ended: '</div></p></details>'
 ```
 
-
-:::
-{{site.data.alerts.ended}}
-
-{{site.data.alerts.hr_faded}}
-
 * I created this combination (look above for the alerts.yml for details)
 > here's an example below
 {% highlight ruby %}
@@ -88,6 +82,9 @@ ended: '</div></p></details>'
 :::
 
 {{site.data.alerts.ended}}
+
+{{site.data.alerts.hr_faded}}
+
 
 ## stackoverflow app settings
 
