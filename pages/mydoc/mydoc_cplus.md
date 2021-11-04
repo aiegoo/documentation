@@ -52,7 +52,7 @@ Here is the key rules of the game development
 
 # rule 1 - console game
 1. use the ncurses and modular codes for game objects and features
-2. try to make it a cross-platform (turned out to be a tall order as libraries used are speciic to each platform.) 
+2. try to make it a cross-platform (turned out to be a tall order as libraries used are speciic to each platform.)
 ## rule 2 - Unity 2D
 1. Grid, preFabs, code snippets
 2. Play music
@@ -71,7 +71,7 @@ Here is the key rules of the game development
 [Link](url) and ![Image](src)
 ```
 ### winning strategy
-board size is important as an odd-sized board tends to make the first player win easily by mirring the 2nd player move. In other cases, try to form a 'L' shape of nodes for each move, from which a player can force out the opponent leaving no room to place at the end of the game. 
+board size is important as an odd-sized board tends to make the first player win easily by mirring the 2nd player move. In other cases, try to form a 'L' shape of nodes for each move, from which a player can force out the opponent leaving no room to place at the end of the game.
 
 <table border="1">
 <tbody><tr align="center" height="20"><td bgcolor="#cccccc" width="20">&nbsp;</td><td bgcolor="#cccccc" width="20">&nbsp;</td><td bgcolor="#cccccc" width="20">&nbsp;</td><td bgcolor="#cccccc" width="20">&nbsp;</td><td width="20">O</td></tr>
@@ -97,7 +97,7 @@ Having trouble with running Obstruction? Check out our [Game Center](aiegoo.gith
 `TL;DR`
 
 ### dEvelopment story
-[project management](https://github.com/aiegoo/cplus/projects/1) 
+[project management](https://github.com/aiegoo/cplus/projects/1)
 - Solo Flight and my view on C++
 <p style="text-align: center">
 I hate C++ as I rarely liked the language specific programmers. They are rare in numbers and <br>alas an odd sorts in characters too. But then it has been some paramount challenge, as untasteful as ever for me <br>to dive into the school of programmers as a student, notwithstanding becoming one, I admit. I still have the reservation to start on this path, but who knows the future? as I always believe in 'divde and conquer'.
@@ -105,27 +105,27 @@ I hate C++ as I rarely liked the language specific programmers. They are rare in
 ### Game process
 The first player should hit 'o' on keyboard while 'x' for the 2nd player.
 
-![step 1 & 2](https://github.com/aiegoo/obstruction/blob/master/images/obstruction1.png)
+![step 1 & 2](https://github.com/aiegoo/obstruction/blob/6fac25f80f23a0c381fc8cb4dab5d84bf2da9793/images/obstruction1.png)
 <hr>
 
-![step 3 & 4](https://github.com/aiegoo/obstruction/blob/master/images/obstruction2.png)
+![step 3 & 4](https://github.com/aiegoo/obstruction/blob/6fac25f80f23a0c381fc8cb4dab5d84bf2da9793/images/obstruction2.png)
 <hr>
 
-![step 5 & 6](https://github.com/aiegoo/obstruction/blob/master/images/obstruction3.png)
+![step 5 & 6](https://github.com/aiegoo/obstruction/blob/6fac25f80f23a0c381fc8cb4dab5d84bf2da9793/images/obstruction3.png)
 
-### dEvelopment overview 
+### dEvelopment overview
 1. ide (C++, C#)
     - Visual Studio 2019
     - VS Code
     - Unity
 
-2. Game idea 
-    - www.cs.ukzn.ac.za - ncurses manual 
+2. Game idea
+    - www.cs.ukzn.ac.za - ncurses manual
     - http://www.papg.com/show?2XN0 - game concept
-    
+
 3. Project term
     - period 1; planning coding: 2 nights
     - period 2; testing: 1 night
     - peirod 3; Unity: 2 nights
     - period 4; Deployment: a couple of hours
-    
+
