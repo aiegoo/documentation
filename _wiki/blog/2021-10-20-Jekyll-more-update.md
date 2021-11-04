@@ -60,33 +60,9 @@ ended: '</div></p></details>'
 
 * I created this combination (look above for the alerts.yml for details)
 > here's an example below
-
+{% highlight ruby %}
+{% raw %}
 {{site.data.alerts.details}}
-
-* customzing image.html to act as an inline callout script for image files
-> Add imagesurl frontmatter for the directory containing the images, and then assign the image files in `filenames="` `split: ","` before including `page_gallery.html` See below for an example
-
-```html
-<div class ="image-gallery-yoga">
-{% for name in filenames %}
-    <div class="gallery-box">
-    <a href="{{ page.imagesurl }}{{ name }}">
-      <img src="{{ page.imagesurl }}{{ name }} " alt="{{ name }}"  class="img-gallery" />
-     </a>
-    </div>
- {% endfor %}
-</div>
-```
-
-```liquid
-{% assign filenames="123.jpg,345.jpg,567.jpg" %}
-{% include page_gallery.html %}
-```
-
-:::
-
-{{site.data.alerts.ended}}
-
 ## samples
 ### contents etc
 
@@ -109,6 +85,9 @@ ended: '</div></p></details>'
 
 `above will create a headline callout`
 
+:::
+
+{{site.data.alerts.ended}}
 
 ## stackoverflow app settings
 
