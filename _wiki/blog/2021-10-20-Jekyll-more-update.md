@@ -66,6 +66,8 @@ ended: '</div></p></details>'
 
 `above script will create collpased <details> with contents parsed from the markdown`
 
+{{site.data.alerts.hr_faded}}
+
 *another example called `bulletin`
 > A single double quote with callout script
 
