@@ -28,7 +28,6 @@ updated: 2021-10-21 04:32
 
 {{site.data.alerts.details}}
 
-{% raw %}
 ```yaml
 tip: '<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>'
 note: '<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>'
@@ -52,7 +51,7 @@ hr_shaded: '<hr class="shaded"/>'
 details: '<details><summary class="detailSummary">Click to open</summary><p><div markdown="1">'
 ended: '</div></p></details>'
 ```
-{% endraw %}
+
 
 :::
 {{site.data.alerts.ended}}
