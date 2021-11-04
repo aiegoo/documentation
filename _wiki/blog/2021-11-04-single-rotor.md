@@ -28,7 +28,7 @@ updated: 2021-11-04 21:25
 |---
 | | |
 | -- | -- |
-| [report](https://github.com/aiegoo/single-rotor/blob/master/report.pdf) | [sr-vtol]({{baseurl}}pdf/sr-vtol.pdf) | [helicopter]({{baseurl}}pdf/helicopter.pdf)
+| [report](https://github.com/aiegoo/single-rotor/blob/master/report.pdf) | [sr-vtol]({{site.github_editme_path}}pdf/sr-vtol.pdf) | [helicopter]({{site.github_editme_path}}pdf/helicopter.pdf)
 
 ## Spherical-VTOL-UAV
 This paper presents the design and modeling of the UNI-Copter, a portable spherical unmanned aerial vehicle (UAV) that is powered by a single rotor. This type of single-rotor spherical UAV has many advantages over other types of multi-rotor UAVs, but the spherical external structure takes up more volume, thereby reducing its portability. We focus on designing and building the UNI-Copter to provide ease of assembly and portability while taking advantage of the existing spherical structure.
