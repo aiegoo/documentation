@@ -77,9 +77,7 @@ ended: '</div></p></details>'
 {% endraw %}
 {% endhighlight %}
 
-`above will create a headline callout`
-
-:::
+`above will create a headline callout` :::
 
 {{site.data.alerts.ended}}
 
