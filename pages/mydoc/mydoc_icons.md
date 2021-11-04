@@ -229,7 +229,7 @@ The previously shown alerts might be fine for short messages, but with longer no
 And here's the shortcode:
 
 {% raw %}
-```
+```liquid
 {{site.data.alerts.callout_info}This is a special callout information message.{{site.data.alerts.end}}
 {% endraw %}
 ```
@@ -240,7 +240,7 @@ Here's the result:
 
 You can use any of the following:
 {% raw %}
-```
+```liquid
 {{site.data.alerts.callout_default}}
 {{site.data.alerts.callout_primary}}
 {{site.data.alerts.callout_success}}

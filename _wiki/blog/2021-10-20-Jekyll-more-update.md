@@ -21,7 +21,31 @@ updated: 2021-10-21 04:32
 * TOC
 {:toc}
 
+## bulletin, details and page_gallery.html
+
+{% raw %}
+```yaml
+tip: '<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>'
+note: '<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>'
+important: '<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important: </b>'
+warning: '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>'
+end: '</div>'
+
+callout_danger: '<div class="bs-callout bs-callout-danger">'
+callout_default: '<div class="bs-callout bs-callout-default">'
+callout_primary: '<div class="bs-callout bs-callout-primary">'
+callout_success: '<div class="bs-callout bs-callout-success">'
+callout_info: '<div class="bs-callout bs-callout-info">'
+callout_warning: '<div class="bs-callout bs-callout-warning">'
+
+hr_faded: '<hr class="faded"/>'
+hr_shaded: '<hr class="shaded"/>'
+```
+{% endraw %}
+
 ## stackoverflow app settings
+
+{{site.data.alerts.details}}
 ```
 36ioco
 Client Id
@@ -76,11 +100,17 @@ Applications that have the client side flow enabled can use https://stackexchang
 This is provided so non-web clients can participate in OAuth 2.0 without requiring a full fledged web server. Applications that do not need this behavior can disable it.
 
 ```
+
+:::
+{{site.data.alerts.ended}}
+
 ## more update on markdown-toc css
 [style_link](https://clickhelp.com/clickhelp-technical-writing-blog/advanced-autonumbering-techniques-with-css/)
 [nested number issues](https://gabrieleromanato.name/css-counters-in-depth)
+
+{{site.data.alerts.details}}
 {{site.data.alerts.note}}`content: counters(term, ".", lower-roman) " ";` Note that the counters() function can also accept a third argument (lower-roman) as the last member of its arguments list, separated by a second comma from the preceding period. However, the counters() function doesn't allow us to specify different styles for each level of nesting.{{site.data.alerts.end}}
-```
+```css
 /* customizing markdown-toc css from joshua1988 */
 
 #markdown-toc li>a {
@@ -137,6 +167,9 @@ ul#markdown-toc li >ul li::before {
     counter-increment: list;
 }
 ```
+
+:::
+{{site.data.alerts.ended}}
 ## late-discovered issues
 - reading progress-bar disappearing on scroll with some posts (happens on mobile only so far)
   - [Windows-Termianl-Setting.html](Windows-Termianl-Setting.html)
