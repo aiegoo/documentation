@@ -81,8 +81,6 @@ ended: '</div></p></details>'
 ```liquid
 {% assign filenames="123.jpg,345.jpg,567.jpg" %}
 {% include page_gallery.html %}
-{% endraw %}
-{% endhighlight %}
 ```
 
 :::
