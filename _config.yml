@@ -26,6 +26,7 @@ company_name: Tonyleekorea
 # this appears in the footer
 
 github_editme_path: aiegoo/documentation/blob/edit/
+github_link: https://github.com/aiegoo/documentation/blob/edit/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # gitlab_editme_path: aiegoo/documentation/blob/gh-pages/
@@ -104,12 +105,12 @@ collections:
       - yoga_overview.md
       - hathaoverview.md
       - bikramoverview.md
-      - aerialoverview.md      
+      - aerialoverview.md
       - hatha.md
       - aerial.md
       - vinyasaflow.md
       - anatomy_vinyasa.md
-      - bikram.md      
+      - bikram.md
       - ashtanga.md
   mycourse:
     output: true
@@ -126,7 +127,7 @@ collections:
     permalink: /category/:title
 
 
-    
+
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
@@ -265,7 +266,7 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-spaceship
-  - jemoji  
+  - jemoji
   - jekyll-babel]
   - jekyll-sitemap
 
