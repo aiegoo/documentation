@@ -21,7 +21,7 @@ topnav_dropdowns:
         - title: o-lora/blog
           external_url: http://159.65.8.38:10024/blog
         - title: Jekyll on my blog
-          external_url: http://idratherbewriting.com/category-jekyll/
+          url: /2021-10-31-in-making-it.html
     - title: Xaas 2
       folderitems:
         - title: Conference call
