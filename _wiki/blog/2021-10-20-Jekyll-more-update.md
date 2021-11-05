@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: update
-keywords: "js tips automatically reload page mathjax anchor link fixed navigation header hover links back to top button zoom enlarge photo js prevent default event keyboard arrow json fetch callout details gallery image grid"
+keywords: "js tips automatically reload page mathjax anchor link fixed navigation header hover links back to top button zoom enlarge photo js prevent default event keyboard arrow json fetch callout details gallery image grid srcset image"
 summary: "Wed, Oct 20, 21, live-server mathjax issues-to-fix show-box photo TOC Github API"
 excerpt_separator: <!--more-->
 toc: true
