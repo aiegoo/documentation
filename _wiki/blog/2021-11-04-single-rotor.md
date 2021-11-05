@@ -38,11 +38,11 @@ This paper explains our design concepts and the development process of improving
 <br />
 <b>Free Body Diagram</b>
 [Images/FBD.jpg](https://github.com/aiegoo/single-rotor/blob/8942856a6c598fc4c8a6f4495a73b732eff8175e/Images/FBD.jpg)
-{% include image.html srcset="https://github.com/aiegoo/single-rotor/blob/8942856a6c598fc4c8a6f4495a73b732eff8175e/Images/FBD.jpg" %}
+{% include image.html links="https://github.com/aiegoo/single-rotor/blob/8942856a6c598fc4c8a6f4495a73b732eff8175e/Images/FBD.jpg" %}
 <br />
 <b>Final Working Model</b>
 [finalmodel.jpg](https://github.com/aiegoo/single-rotor/blob/8942856a6c598fc4c8a6f4495a73b732eff8175e/Images/finalmodel.jpg)
-{% include image.html srcset="https://github.com/aiegoo/single-rotor/blob/8942856a6c598fc4c8a6f4495a73b732eff8175e/Images/finalmodel.jpg" %}
+{% include image.html links="https://github.com/aiegoo/single-rotor/blob/8942856a6c598fc4c8a6f4495a73b732eff8175e/Images/finalmodel.jpg" %}
 
 <br />
 <b>Test Video<b/>
@@ -52,7 +52,4 @@ This paper explains our design concepts and the development process of improving
 {% include taglogic.html %}
 
 {% include links.html %}
-
-{% include commento.html %}
-
-{{site.data.alerts.hr_shaded}}
+```yaml
