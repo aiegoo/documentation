@@ -127,7 +127,7 @@ imagesurl: images/drone-resource-wiki/handbook/
 
 ![Pt](images/drone-resource-wiki/uploads/9d5c68d7a2ccdceb033b8cd38fce65d2/Pt.jpg)
 
-{% assign filenames="163-1.jpg,163-2.jpg" %}
+{% assign filenames="163-1.jpg,163-2.jpg" | split: "," %}
 {% include page_gallery.html %}
 ## 추력 원리
 - 방법
