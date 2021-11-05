@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: projects
-keywords: "single rotor drone vtol"
+keywords: "single rotor drone vtol swashplate"
 summary: "Thu, Nov 04, 21, single rotor air vehilce with rudder and flap to navigate"
 excerpt_separator: <!--more-->
 toc: true
@@ -34,6 +34,7 @@ updated: 2021-11-04 21:25
 This paper presents the design and modeling of the UNI-Copter, a portable spherical unmanned aerial vehicle (UAV) that is powered by a single rotor. This type of single-rotor spherical UAV has many advantages over other types of multi-rotor UAVs, but the spherical external structure takes up more volume, thereby reducing its portability. We focus on designing and building the UNI-Copter to provide ease of assembly and portability while taking advantage of the existing spherical structure.
 {% include image.html file="drone-resource-wiki/handbook/154-3.jpg" caption="Helicopter flight control system" %}
 * The swashplate, located at the rotor shaft, consists of one fixed plate and one rotating plate connected to the blades. The plates can be moved up, down and be tilted. By moving the plates up and down the pitch of all of the blades will be changed equlally and the lift will increase or decrease without roll or pitch movements.
+![swashplate](https://user-images.githubusercontent.com/42961200/140443385-6aca25d2-4503-4179-95f1-a287a9fd85eb.png)
 
 This paper explains our design concepts and the development process of improving the performance through various prototypes. We also verify flight stability of our new design by conducting several flight tests. To do so, a mathematical model of the UNI-Copter is derived in detail, and then we implement a state feedback controller for hovering flight. As a result, the indoor flight tests show stable performance, and the outdoor flight tests show that stable performance could also be achieved provided that the wind speed is low.
 <br><b>KEYWORDS:</b>UAV, flight computer, Ground station, single rotor, VTOL
