@@ -51,6 +51,10 @@ imagesurl: images/drone-resource-wiki/handbook/
 
 > 비행기의 수직 꼬리 날개는 비행기를 흔들리지 않고 똑바로 날아갈 수 있도록 중심을 잡아주는 역할을 한다. 수직꼬리에는 방향타도 있어서 방향타를 오른쪽으로 꺾으면 비행기는 오른쪽으로 향하고, 왼쪽으로 꺾으면 비행기는 왼쪽으로 향한다. 그러나 비행기가 방향을 바꿀 때는 방향타와 함께 주날개에 달려는 보조날개의 도움이 필요하다. 주날개에 달려있는 보조날개는 모양을 바꿔 양력을 조절할 수 있는 데 비행기가 회전을 해야 할 때는 양쪽날개의 양력을 서로 다르게 하여 비행기의 몸체를 기울이게 한다. 만약 왼쪽 날개의 양력은 줄이고 오른쪽 날개의 양력을 늘리면 비행기는 왼쪽 아래로 기울어지고 왼쪽으로 회전할 수 있게 되는 것이다.
 
+{% assign filenames="163-1.jpg,163-2.jpg,164-1.jpg" | split: "," %}
+{% include page_gallery.html %}
+
+
 ![aileronyaw](images/drone-resource-wiki/images1/Aileron_yaw.gif)
 *An animation of an airplane yawing with its rudder.*
 
@@ -83,6 +87,9 @@ imagesurl: images/drone-resource-wiki/handbook/
 ### [ Aileron ]
 
 > <a href="#" data-toggle="tooltip" data-original-title="{{site.data.glossary.ailerons}}">Ailerons</a> are hinged flight control surfaces attached to the trailing edge of the wing of a fixed-wing aircraft. The ailerons are used to control the aircraft in roll, which results in a change in heading due to the tilting of the lift vector. The two ailerons are typically interconnected so that one goes down when the other goes up: the down-going aileron increases the lift on its wing while the up-going aileron reduces the lift on its wing, producing a rolling moment about the aircraft's longitudinal axis. Ailerons are usually situated near the wing tip, but may sometimes be situated nearer the wing root. The terms "outboard aileron" and "inboard aileron" are used to describe these positions respectively. The word aileron is French for "little wing".
+
+{% assign filenames="159-1.jpg,159-2.jpg,159-3.jpg" | split: "," %}
+{% include page_gallery.html %}
 
 > 보조날개(aileron)는 고정익 날개의 뒷전에 부착된 비행조종면이다. Roll 상태의 비행기를 조종하는 데 사용되는 보조날개는 젖혀짐에 의한 양력 때문에 방향의 변화를 가져온다. 두 개의 보조날개는 일반적으로 서로 연결되어 있어서 하나가 올라갔을 때 다른 하나는 내려간다: 위로 올라가는 보조날개가 날개의 양력을 감소시키는 동안 아래로 내려가는 보조날개가 날개의 양력을 증가시켜서 비행기의 종축에서 rolling 힘을 발생시킨다. 보조날개는 보통 날개의 끝부분 가까이에 위치하지만 때때로 날개 뿌리에 더 가까이 위치할 때도 있다. Outboard aileron(외측 보조날개)와 inboard aileron(내측 보조날개)라는 용어는 이들 각각의 위치를 표현하는 데 사용된다. Aileron의 프랑스어는 little wing이다.
 
