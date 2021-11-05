@@ -108,7 +108,7 @@ angle_of_attack: "The angle of attack is the angle at which relative wind meets 
 
 air_traffic_control_radar_beacon_system: "Sometimes called secondary surveillance radar (SSR), which utilizes a transponder in the aircraft. The ground equipment is an interrogating unit, in which the beacon antenna is mounted so it rotates with the surveillance antenna. The interrogating unit transmits a coded pulse sequence that actuates the aircraft transponder. The transponder answers the coded sequence by transmitting a preselected coded sequence back to the ground equipment, providing a strong return signal and positive aircraft identification, as well as other special data."
 
-airway: "An airway is based on a centerline that extends from one navigation aid or intersection to another navigation aid (or through several navigation aids or intersections); used to establish a known route for en route procedures between terminal areas.""
+airway: "An airway is based on a centerline that extends from one navigation aid or intersection to another navigation aid (or through several navigation aids or intersections); used to establish a known route for en route procedures between terminal areas."
 
 airworthiness certificate: "A certificate issued by the FAA to all aircraft that have been proven to meet the minimum standards set down by the Code of Federal Regulations."
 
