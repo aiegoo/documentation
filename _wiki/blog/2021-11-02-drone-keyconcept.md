@@ -118,7 +118,8 @@ imagesurl: images/drone-resource-wiki/handbook/
 
 ![Pt](images/drone-resource-wiki/uploads/9d5c68d7a2ccdceb033b8cd38fce65d2/Pt.jpg)
 
-
+{% assign filenames="163-1.jpg,163-2.jpg" %}
+{% include page_gallery.html %}
 ## 추력 원리
 - 방법
 > 멀티콥터에서 추력을 담당하는 부분은 기체를 중심으로 사방으로 펼쳐진 로터다. 이 로터의 회전에 의해 멀티콥터가 균형을 유지하고 이동할 수 있게 된다. 멀티콥터에서는 추력과 양력의 구분이 모호할 수 있고, 단순히 정지 비행을 위해서 양력을 발생시키기도 하지만 바람이 많이 불면 호버링 자세를 수평으로 유지하기 위해 추력을 이용해야 하는 경우도 있다.
