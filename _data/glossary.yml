@@ -105,4 +105,18 @@ airspeed: "Rate of the aircraft’s progress through the air."
 airspeed_indicator: "A differential pressure gauge that measures the dynamic pressure of the air through which the aircraft is flying. Displays the craft’s airspeed, typically in knots, to the pilot."
 
 angle_of_attack: "The angle of attack is the angle at which relative wind meets an airfoil. It is the angle that is formed by the chord of the airfoil and the direction of the relative wind or between the chord line and the flight path. The angle of attack changes during a flight as the pilot changes the direction of the aircraft and is related to the amount of lift being produced."
+
+air_traffic_control_radar_beacon_system: "Sometimes called secondary surveillance radar (SSR), which utilizes a transponder in the aircraft. The ground equipment is an interrogating unit, in which the beacon antenna is mounted so it rotates with the surveillance antenna. The interrogating unit transmits a coded pulse sequence that actuates the aircraft transponder. The transponder answers the coded sequence by transmitting a preselected coded sequence back to the ground equipment, providing a strong return signal and positive aircraft identification, as well as other special data."
+
+airway: "An airway is based on a centerline that extends from one navigation aid or intersection to another navigation aid (or through several navigation aids or intersections); used to establish a known route for en route procedures between terminal areas.""
+
+airworthiness certificate: "A certificate issued by the FAA to all aircraft that have been proven to meet the minimum standards set down by the Code of Federal Regulations."
+
+airworthiness Directive: "A regulatory notice sent out by the FAA to the registered owner of an aircraft informing the owner of a condition that prevents the aircraft from continuing to meet its conditions for airworthiness. Airworthiness Directives (AD notes) are to be complied with within the required time limit, and the fact of compliance, the date of compliance, and the method of compliance are recorded in the aircraft’s maintenance records."
+
+alert area: "An area in which there is a high volume of pilot training or an unusual type of aeronautical activity."
+
+almanac data: "Information the global positioning system (GPS) receiver can obtain from one satellite which describes the approximate orbital positioning of all satellites in the constellation. This information is necessary for the GPS receiver to know what satellites to look for in the sky at a given time."
+
+ALS: "See approach lighting system."
 # Copyright 2021 Google LLC
