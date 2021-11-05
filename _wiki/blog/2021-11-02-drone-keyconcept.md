@@ -117,7 +117,7 @@ imagesurl: images/drone-resource-wiki/handbook/
 
 >그림에 보면 Diaphragm는 static port랑 직접 연결이 되어있고, 주변은 Calibrated leak이라는 것으로 static port랑 연결이 되어 있습니다. 해서 Diaphragm는 비행기가 상승하면 상승하고 있는 고도의 대기압을 동일하게 유지하고, 하강하면 하강하고 있는 위치의 대기압을 그대로 맞춰 유지하게 됩니다. 하지만 Calibrated leak과 연결된 Diaphragm의 주변은 대기압을 맞추기하지만 구멍이 너~~~~~~ 무 작아서 느리게 맞춰진다고 생각하지면 됩니다. 해서 비행기가 상승하게되면 Diaphragm는 상승 고도에 맞는 대기압이지만, 주변기압은 상승하기전 cruise때 대기압이랑 크게 차이가 나지 않게 되어 둘간의 압력차가 생기게 되는거죠~ 이 차이를 기계적으로 indicator에 연결하여 보여주는것이 VSI입니다. 둘이 차이가 나더라도 고도를 바꾸고 다시 Cruise flight을하게되면 압력차가 같아지면 indicator는 '0'을 표시하겠죠.
 
-![beruni](images/drone-resource-wiki/images/bernui.jpg)
+![Bernoulli](images/drone-resource-wiki/images/bernui.jpg)
 *P = pgh (pressure vs. depth) P=ρgh. P is pressure, ρ is the density of the fluid; g is the gravitational constant, h is the height from the surface, or depth that the object is submerged. Pressure at the surface is 0 because h = 0.
 
 ![ASI operation](images/drone-resource-wiki/uploads/ASI-operation.png)
