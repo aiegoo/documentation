@@ -51,16 +51,15 @@ imagesurl: images/drone-resource-wiki/handbook/
 
 > 비행기의 수직 꼬리 날개는 비행기를 흔들리지 않고 똑바로 날아갈 수 있도록 중심을 잡아주는 역할을 한다. 수직꼬리에는 방향타도 있어서 방향타를 오른쪽으로 꺾으면 비행기는 오른쪽으로 향하고, 왼쪽으로 꺾으면 비행기는 왼쪽으로 향한다. 그러나 비행기가 방향을 바꿀 때는 방향타와 함께 주날개에 달려는 보조날개의 도움이 필요하다. 주날개에 달려있는 보조날개는 모양을 바꿔 양력을 조절할 수 있는 데 비행기가 회전을 해야 할 때는 양쪽날개의 양력을 서로 다르게 하여 비행기의 몸체를 기울이게 한다. 만약 왼쪽 날개의 양력은 줄이고 오른쪽 날개의 양력을 늘리면 비행기는 왼쪽 아래로 기울어지고 왼쪽으로 회전할 수 있게 되는 것이다.
 
-{% assign filenames="163-1.jpg,163-2.jpg,164-1.jpg" | split: "," %}
-{% include page_gallery.html %}
-
-
 ![aileronyaw](images/drone-resource-wiki/images1/Aileron_yaw.gif)
 *An animation of an airplane yawing with its rudder.*
 
 ### [ Aircraft rudders ]
 
 > On an aircraft, the rudder is a directional control surface along with the rudder-like elevator (usually attached to horizontal tail structure, if not a slab elevator ) and ailerons (attached to the wings) that control pitch and roll, respectively. The rudder is usually attached to the fin (or vertical stabilizer) which allows the pilot to control yaw about the vertical axis, i.e. change the horizontal direction in which the nose is pointing.
+
+{% assign filenames="160-1.jpg,160-2.jpg,154-3.jpg" | split: "," %}
+{% include page_gallery.html %}
 
 > 비행기에서 방향타(rudder)는 각각 pitch를 조종하는, 방향타와 비슷한 승강타(elevator)와 roll을 조종하는 보조날개(aileron)와 함께 직접적인 조종면이다. 방향타는 보통 수직안정판(fin, vertical stabilizer)에 붙어 있어서 조종사가 수직축의 yaw를 조종하게 한다. 즉 비행기 앞부분의 수평 방향을 바꾼다.
 비행기의 방향 전환 조종면 - 방향타(rudder), 승강타(elevator), 보조날개(aileron)
@@ -71,6 +70,9 @@ imagesurl: images/drone-resource-wiki/handbook/
 ### [ Elevator (aircraft) ]
 
 > Elevators are flight control surfaces, usually at the rear of an aircraft, which control the aircraft's orientation by changing the pitch of the aircraft, and so also the angle of attack of the wing. In simplified terms, they make the aircraft nose-up or nose-down. (Ascending and descending are more a function of the wing—aircraft typically land nose up.) An increased wing <a href="#" data-toggle="tooltip" data-original-title="{{site.data.glossary.angle_of_attack}}">angle of attack</a> will cause a greater lift to be produced by the profile of the wing, and a slowing of the aircraft speed. A decrease in angle of attack will produce an increase in speed. The elevators may be the only pitch control surface present (and are then called a slab elevator or stabilator), or may be hinged to a fixed or adjustable surface called a tailplane or horizontal stabilizer.
+
+{% assign filenames="163-1.jpg,163-2.jpg,164-1.jpg" | split: "," %}
+{% include page_gallery.html %}
 
 > 승강타(elevator)는 보통 비행기의 뒤쪽에 있는 비행조종면으로 비행기의 pitch와 또한 날개의 받음각(angle of attack)을 변화시켜 비행기의 방향을 조종한다. 쉽게 말해서 승강타는 비행기의 앞부분을 상하로 움직인다. (상승과 하강은 날개의 큰 기능이다.— 비행기는 일반적으로 앞부분을 들고 착륙한다.) 커지는 받음각은 날개의 옆모습에 의해 만들어지는 큰 양력과 비행기 속도의 감소를 발생시킨다. 작아지는 받음각은 속도의 증가를 가져온다. 승강타는 존재하는 유일한 피치조종면일 것이다. 고정되거나 조절 가능한 승강타는 꼬리날개(tailplane)나 수평안정판(horizontal stabilizer)으로 불린다.
 
