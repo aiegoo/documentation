@@ -127,7 +127,7 @@ imagesurl: images/drone-resource-wiki/handbook/
 
 
 |---
-| ![Pt](images/drone-resource-wiki/uploads/9d5c68d7a2ccdceb033b8cd38fce65d2/Pt.jpg) | ![foam drag](images/drone-resource-wiki/handbook/106-1.jpg)
+| ![Pt](images/drone-resource-wiki/uploads/9d5c68d7a2ccdceb033b8cd38fce65d2/Pt.jpg) | {% include image.html file="drone-resource-wiki/handbook/106-1.jpg" caption="foam drag" %}
 
 
 {% assign filenames="163-1.jpg,163-2.jpg" | split: "," %}
