@@ -125,8 +125,10 @@ imagesurl: images/drone-resource-wiki/handbook/
 
 > 비행기가 앞으로 비행하게되면, pitot tube hole을따라서 ram air가 airspeed indicator안에 Diaphragm안으로 들어가게되면서 이 압력에 의해 Diaphragm이 팽창하게 되고, 이 팽창되는 양을 Mechanically indicator와 연결되어 airspeed를 보여줍니다. 속도가 빨라지면 들어오는공기압이 커져서 속도가 빠른것으로 표시가 되고 느리면 압력이 낮아져 속도가 느린것으로 표시가 됩니다.
 
+
 |---
-| ![Pt](images/drone-resource-wiki/uploads/9d5c68d7a2ccdceb033b8cd38fce65d2/Pt.jpg)
+| ![Pt](images/drone-resource-wiki/uploads/9d5c68d7a2ccdceb033b8cd38fce65d2/Pt.jpg) | ![form drag](images/drone-resource-wiki/handbook/106-1.jpg)
+
 
 {% assign filenames="163-1.jpg,163-2.jpg" | split: "," %}
 {% include page_gallery.html %}
