@@ -119,4 +119,5 @@ alert area: "An area in which there is a high volume of pilot training or an unu
 almanac data: "Information the global positioning system (GPS) receiver can obtain from one satellite which describes the approximate orbital positioning of all satellites in the constellation. This information is necessary for the GPS receiver to know what satellites to look for in the sky at a given time."
 
 ALS: "See approach lighting system."
+form_drag: "The drag created because of the shape of a component or the aircraft."
 # Copyright 2021 Google LLC
