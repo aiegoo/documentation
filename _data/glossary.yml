@@ -120,5 +120,37 @@ almanac data: "Information the global positioning system (GPS) receiver can obta
 
 ALS: "See approach lighting system."
 
+altimeter: "A flight instrument that indicates altitude by sensing pressure changes."
+
+altimeter_setting: "Station pressure (the barometric pressure at the location the reading is taken) which has been corrected for the height of the station above sea level."
+
+altitude_engine: "A reciprocating aircraft engine having a rated takeoff power that is producible from sea level to an established higher altitude."
+
+ambient_pressure: "The pressure in the area immediately surrounding the aircraft."
+
+ambient_temperature: "The temperature in the area immediately surrounding the aircraft."
+
+AME: "See aviation medical examiner."
+
+amendment_status: "The circulation date and revision number of an instrument approach procedure, printed above the procedure identification."
+
+ammeter: "An instrument installed in series with an electrical load used to measure the amount of current flowing through the load."
+
+aneroid: "The sensitive component in an altimeter or barometer that measures the absolute pressure of the air. It is a sealed, flat capsule made of thin disks of corrugated metal soldered together and evacuated by pumping all of the air out of it."
+
+aneroid_barometer: "An instrument that measures the absolute pressure of the atmosphere by balancing the weight of the air above it against the spring action of the aneroid."
+
+angle_of_attack: "The angle of attack is the angle at which relative wind meets an airfoil. It is the angle that is formed by the chord of the airfoil and the direction of the relative wind or between the chord line and the flight path. The angle of attack changes during a flight as the pilot changes the direction of the aircraft and is related to the amount of lift being produced."
+
+angle_of_incidence: "The acute angle formed between the chord line of an airfoil and the longitudinal axis of the aircraft on which it is mounted."
+
+anhedral: "A downward slant from root to tip of an aircraft’s wing or horizontal tail surface."
+
+annual_inspection: "A complete inspection of an aircraft and engine, required by the Code of Federal Regulations, to be accomplished every 12 calendar months on all certificated aircraft. Only an A&P technician holding an Inspection Authorization can conduct an annual inspection."
+
+anti-ice: "Preventing the accumulation of ice on an aircraft structure via a system designed for that purpose."
+
+antiservo_tab: "An adjustable tab attached to the trailing edge of a stabilator that moves in the same direction as the primary control. It is used to make the stabilator less sensitive."
+
 form_drag: "The drag created because of the shape of a component or the aircraft."
 # Copyright 2021 Google LLC
