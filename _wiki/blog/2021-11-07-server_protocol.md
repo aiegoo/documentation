@@ -33,7 +33,7 @@ UDP (User Datagram Protocol)
 
 
 
-UDP를 이용한 Service 종류
+### UDP를 이용한 Service 종류
 
   - 빠른 통신 속도가 필요한 서비스: 실시간 통신, 음성 서비스에 많이 사용됨
 
@@ -51,7 +51,7 @@ UDP를 이용한 Service 종류
 
 
 
-UDP Header
+### UDP Header
 
   - Header의 크기 : (고정) 8 byte
 ![image](https://user-images.githubusercontent.com/42961200/140618284-08889f2f-2068-4d26-ad2c-81801fb12c95.png)
@@ -77,7 +77,7 @@ TCP
 
 
 
-TCP를 이용한 Service 종류
+### TCP를 이용한 Service 종류
 
   - 정확한 데이터 전달이 필요한 대부분의 서비스
 
@@ -93,7 +93,7 @@ TCP를 이용한 Service 종류
 
 
 
-TCP Header
+### TCP Header
 
   - Header 크기 : Option 필드의 크기에 따라 가변적 (최소 20byte ~ 최대 60byte)
 
@@ -103,7 +103,7 @@ TCP Header
 ![image](https://user-images.githubusercontent.com/42961200/140618311-a7890ca2-1ecf-4b5b-9c56-de5df9f4162d.png)
 
 
-TCP Header
+#### TCP Header
 Source Port Address (16bit)
 : 출발지 port 주소 - dynamic port
 Destination Port Address (16bit)
@@ -132,7 +132,7 @@ TCP Flags (8bit)
 
 ![image](https://user-images.githubusercontent.com/42961200/140618334-03083872-4c36-4d3e-bf7b-ef7f1c5412e3.png)
 
-TCP Flags
+#### TCP Flags
 U : 긴급데이터이므로, 다른 데이터보다 빨리 처리해야함 → Urgent Pointer을 확인함
 A : 확인 응답번호를 확인해야함 → Acknowledgment Number을 확인함
 P : 원래 TCP는 하나 가고 하나 받아야하는데, 이를 무시하고 보낼 데이터를 데이터를 받을 프로그램에 바로 바로 전달
@@ -155,21 +155,21 @@ TCP Option (0 ~ 40byte)
   - length(byte) → 옵션 data의 크기
   - option data → 옵션 값
 
-TCP Option
+### TCP Option
 
 
 MSS : 초기값으로 MPU사이즈가 들어가게 됨
 SACK : 양쪽다 기능이 있어야 가능하므로. option에서 먼저 확인한 후 사용함
 ![image](https://user-images.githubusercontent.com/42961200/140618370-172faad3-a024-4f10-89b4-b9a7cc7cb977.png)
 
-일반 확인 응답
+#### 일반 확인 응답
 - 출발지에서 Segment가 전달되면 반드시 목적지에서 전달 받았음을 확인함
 
 - 출발지는 목적지의 확인응답 TCP 메시지를 전달받아야지만, 다음 순서의 데이터를 전달할 수 있음
 
 - Segment : ACK → 1 : 1
 
-누적 확인 응답
+#### 누적 확인 응답
 - TCP 연결 설정을 통해 한번에 보낼 수 있는 Segment의 양을 약속함
 
 - 출발지에서는 지정된 양에 해당하는 Segment를 목적지의 확인 응답이 없어도 계속 전달함
@@ -178,7 +178,7 @@ SACK : 양쪽다 기능이 있어야 가능하므로. option에서 먼저 확인
 
 - Segment : ACK → N : 1
 
-선택적 확인 응답
+#### 선택적 확인 응답
 - 누적 확인 응답의 문제점의 해결 : 중간에 손실된 Segment가 발생하면 정상적으로 전달받은 Segment까지 재전송을 해야함
 
 - 누적 확인 응답과 비슷하지만 확인 응답을 할 때 재전송이 필요없는 Segment의 정보를 알림으로 불필요한 재전송을 방지함
@@ -191,7 +191,7 @@ TCP는 순차적으로 입력을 받고 확인을 하는데,
 
 
 
-Layer 4의 오류 검출
+### Layer 4의 오류 검출
 
 
 
