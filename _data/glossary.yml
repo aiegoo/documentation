@@ -174,7 +174,7 @@ aspect_ratio: "Span of a wing divided by its average chord."
 
 ASR: See airport surveillance radar."
 
-asymmetric thrust: "Also known as P-factor. A tendency for an aircraft to yaw to the left due to the descending propeller blade on the right producing more thrust than the ascending blade on the left. This occurs when the aircraft’s longitudinal axis is in a climbing attitude in relation to the relative wind. The P-factor would be to the right if the aircraft had a counterclockwise rotating propeller."
+asymmetric_thrust: "Also known as P-factor. A tendency for an aircraft to yaw to the left due to the descending propeller blade on the right producing more thrust than the ascending blade on the left. This occurs when the aircraft’s longitudinal axis is in a climbing attitude in relation to the relative wind. The P-factor would be to the right if the aircraft had a counterclockwise rotating propeller."
 
 ATC: "Air Traffic Control."
 
@@ -185,6 +185,8 @@ ATIS: "See automatic terminal information service."
 atmospheric_propagation_delay: "A bending of the electromagnetic (EM) wave from the satellite that creates an error in the GPS system."
 
 attitude: "A personal motivational predisposition to respond to persons, situations, or events in a given manner that can, nevertheless, be changed or modified through training as sort of a mental shortcut to decision-making"
+
+attitude_and_heading_reference_system: "A system composed of three-axis sensors that provide heading, attitude, and yaw information for aircraft. AHRS are designed to replace traditional mechanical gyroscopic flight instruments and provide superior reliability and accuracy."
 
 form_drag: "The drag created because of the shape of a component or the aircraft."
 # Copyright 2021 Google LLC
