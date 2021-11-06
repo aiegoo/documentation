@@ -188,5 +188,39 @@ attitude: "A personal motivational predisposition to respond to persons, situati
 
 attitude_and_heading_reference_system: "A system composed of three-axis sensors that provide heading, attitude, and yaw information for aircraft. AHRS are designed to replace traditional mechanical gyroscopic flight instruments and provide superior reliability and accuracy."
 
+attitude_director_indicator: "An aircraft attitude indicator that incorporates flight command bars to provide pitch and roll commands."
+
+attitude_indicator: "The foundation for all instrument flight, this instrument reflects the airplane’s attitude in relation to the horizon."
+
+attitude_instrument_flying: "Controlling the aircraft by reference to the instruments rather than by outside visual cues."
+
+attitude_management: "The ability to recognize hazardous attitudes in oneself and the willingness to modify them as necessary through the application of an appropriate antidote thought."
+
+autokinesis: "Nighttime visual illusion that a stationary light is moving, which becomes apparent after several seconds of staring at the light."
+
+automated_surface_observing_system: "Weather reporting system which provides surface observations every minute via digitized voice broadcasts and printed reports."
+
+automated_weather_observing_system: "Automated weather reporting system consisting of various sensors, a processor, a computer-generated voice subsystem, and a transmitter to broadcast weather data."
+
+automatic_dependent_surveillance—broadcast: "A function on an aircraft or vehicle that periodically broadcasts its state vector (i.e., horizontal and vertical position, horizontal and vertical velocity) and other information."
+
+automatic_direction_finder: "Electronic navigation equipment that operates in the low- and medium-frequency bands. Used in conjunction with the ground-based nondirectional beacon (NDB), the instrument displays the number of degrees clockwise from the nose of the aircraft to the station being received."
+
+automatic_terminal_information_service: "The continuous broadcast of recorded non-control information in selected terminal areas. Its purpose is to improve controller effectiveness and relieve frequency congestion by automating repetitive transmission of essential but routine information."
+
+autopilot: "An automatic flight control system which keeps an aircraft in level flight or on a set course. Automatic pilots can be directed by the pilot, or they may be coupled to a radio navigation signal."
+
+aviation_medical_examiner: "A physician with training in aviation medicine designated by the Civil Aerospace Medical Institute (CAMI)."
+
+aviation_routine_weather_report: "Observation of current surface weather reported in a standard international format."
+
+AWOS: "See Automated Weather Observing System."
+
+axes_of_an_aircraft: "Three imaginary lines that pass through an aircraft’s center of gravity. The axes can be considered as imaginary axles around which the aircraft rotates. The three axes pass through the center of gravity at 90° angles to each other. The axis from nose to tail is the longitudinal axis (pitch), the axis that passes from wingtip to wingtip is the lateral axis (roll), and the axis that passes vertically through the center of gravity is the vertical axis (yaw)."
+
+axial_flow_compressor: "A type of compressor used in a turbine engine in which the airflow through the compressor is essentially linear. An axial-flow compressor is made up of several stages of alternate rotors and stators. The compressor ratio is determined by the decrease in area of the succeeding stages."
+
+azimuth_card: "A card that may be set, gyroscopically controlled, or driven by a remote compass."
+
 form_drag: "The drag created because of the shape of a component or the aircraft."
 # Copyright 2021 Google LLC
