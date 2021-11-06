@@ -110,13 +110,13 @@ air_traffic_control_radar_beacon_system: "Sometimes called secondary surveillanc
 
 airway: "An airway is based on a centerline that extends from one navigation aid or intersection to another navigation aid (or through several navigation aids or intersections); used to establish a known route for en route procedures between terminal areas."
 
-airworthiness certificate: "A certificate issued by the FAA to all aircraft that have been proven to meet the minimum standards set down by the Code of Federal Regulations."
+airworthiness_certificate: "A certificate issued by the FAA to all aircraft that have been proven to meet the minimum standards set down by the Code of Federal Regulations."
 
-airworthiness Directive: "A regulatory notice sent out by the FAA to the registered owner of an aircraft informing the owner of a condition that prevents the aircraft from continuing to meet its conditions for airworthiness. Airworthiness Directives (AD notes) are to be complied with within the required time limit, and the fact of compliance, the date of compliance, and the method of compliance are recorded in the aircraft’s maintenance records."
+airworthiness_directive: "A regulatory notice sent out by the FAA to the registered owner of an aircraft informing the owner of a condition that prevents the aircraft from continuing to meet its conditions for airworthiness. Airworthiness Directives (AD notes) are to be complied with within the required time limit, and the fact of compliance, the date of compliance, and the method of compliance are recorded in the aircraft’s maintenance records."
 
-alert area: "An area in which there is a high volume of pilot training or an unusual type of aeronautical activity."
+alert_area: "An area in which there is a high volume of pilot training or an unusual type of aeronautical activity."
 
-almanac data: "Information the global positioning system (GPS) receiver can obtain from one satellite which describes the approximate orbital positioning of all satellites in the constellation. This information is necessary for the GPS receiver to know what satellites to look for in the sky at a given time."
+almanac_data: "Information the global positioning system (GPS) receiver can obtain from one satellite which describes the approximate orbital positioning of all satellites in the constellation. This information is necessary for the GPS receiver to know what satellites to look for in the sky at a given time."
 
 ALS: "See approach lighting system."
 
@@ -151,6 +151,40 @@ annual_inspection: "A complete inspection of an aircraft and engine, required by
 anti-ice: "Preventing the accumulation of ice on an aircraft structure via a system designed for that purpose."
 
 antiservo_tab: "An adjustable tab attached to the trailing edge of a stabilator that moves in the same direction as the primary control. It is used to make the stabilator less sensitive."
+
+approach lighting system: "Provides lights that will penetrate the atmosphere far enough from touchdown to give directional, distance, and glidepath information for safe transition from instrument to visual flight."
+
+area_chart: "Part of the low-altitude en route chart series, this chart furnishes terminal data at a larger scale for congested areas."
+
+area_forecast: "A report that gives a picture of clouds, general weather conditions, and visual meteorological conditions (VMC) expected over a large area encompassing several states."
+
+area_navigation: "Allows a pilot to fly a selected course to a predetermined point without the need to overfly ground-based navigation facilities, by using waypoints."
+
+arm: "See moment arm."
+
+ARSR: "See air route surveillance radar."
+
+ARTCC: "See air route traffic control center."
+
+ASDE: "See airport surface detection equipment."
+
+ASOS: "See Automated Surface Observing System."
+
+aspect_ratio: "Span of a wing divided by its average chord."
+
+ASR: See airport surveillance radar."
+
+asymmetric thrust: "Also known as P-factor. A tendency for an aircraft to yaw to the left due to the descending propeller blade on the right producing more thrust than the ascending blade on the left. This occurs when the aircraft’s longitudinal axis is in a climbing attitude in relation to the relative wind. The P-factor would be to the right if the aircraft had a counterclockwise rotating propeller."
+
+ATC: "Air Traffic Control."
+
+ATCRBS: "See air traffic control radar beacon system."
+
+ATIS: "See automatic terminal information service."
+
+atmospheric_propagation_delay: "A bending of the electromagnetic (EM) wave from the satellite that creates an error in the GPS system."
+
+attitude: "A personal motivational predisposition to respond to persons, situations, or events in a given manner that can, nevertheless, be changed or modified through training as sort of a mental shortcut to decision-making"
 
 form_drag: "The drag created because of the shape of a component or the aircraft."
 # Copyright 2021 Google LLC
