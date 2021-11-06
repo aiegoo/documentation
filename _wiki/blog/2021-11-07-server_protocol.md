@@ -54,7 +54,7 @@ UDP를 이용한 Service 종류
 UDP Header
 
   - Header의 크기 : (고정) 8 byte
-
+![image](https://user-images.githubusercontent.com/42961200/140618284-08889f2f-2068-4d26-ad2c-81801fb12c95.png)
 
 Source Port Address (16bit)
 : 출발지 port 주소 - dynamic port
@@ -100,6 +100,7 @@ TCP Header
   - TCP의 동작을 지시하는 메시지를 생성하여 연결상태를 제어함 → TCP Flags
 
   - 하나의 연결을 통해 한 단위의 Data(Application Data)를 전달
+![image](https://user-images.githubusercontent.com/42961200/140618311-a7890ca2-1ecf-4b5b-9c56-de5df9f4162d.png)
 
 
 TCP Header
@@ -129,6 +130,8 @@ TCP Flags (8bit)
 = 1   : 긍정, 일을 하고 있다.
 = 0  : 부정, 일을 안하고 있다.
 
+![image](https://user-images.githubusercontent.com/42961200/140618334-03083872-4c36-4d3e-bf7b-ef7f1c5412e3.png)
+
 TCP Flags
 U : 긴급데이터이므로, 다른 데이터보다 빨리 처리해야함 → Urgent Pointer을 확인함
 A : 확인 응답번호를 확인해야함 → Acknowledgment Number을 확인함
@@ -157,6 +160,8 @@ TCP Option
 
 MSS : 초기값으로 MPU사이즈가 들어가게 됨
 SACK : 양쪽다 기능이 있어야 가능하므로. option에서 먼저 확인한 후 사용함
+![image](https://user-images.githubusercontent.com/42961200/140618370-172faad3-a024-4f10-89b4-b9a7cc7cb977.png)
+
 일반 확인 응답
 - 출발지에서 Segment가 전달되면 반드시 목적지에서 전달 받았음을 확인함
 
@@ -193,6 +198,7 @@ Layer 4의 오류 검출
 
 3way Handshake
 
+![image](https://user-images.githubusercontent.com/42961200/140618428-d51847da-c418-4677-a801-77b7164ce70c.png)
 
 
 {% include taglogic.html %}
