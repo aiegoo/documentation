@@ -222,5 +222,25 @@ axial_flow_compressor: "A type of compressor used in a turbine engine in which t
 
 azimuth_card: "A card that may be set, gyroscopically controlled, or driven by a remote compass."
 
+back_course: "The reciprocal of the localizer course for an ILS. When flying a back-course approach, an aircraft approaches the instrument runway from the end at which the localizer antennas are installed."
+
+balance_tab: "An auxiliary control mounted on a primary control surface, which automatically moves in the direction opposite the primary control to provide an aerodynamic assist in the movement of the control."
+
+baro-aiding: "A method of augmenting the GPS integrity solution by using a nonsatellite input source. To ensure that baro-aiding is available, the current altimeter setting must be entered as described in the operating manual."
+
+barometric_scale: "A scale on the dial of an altimeter to which the pilot sets the barometric pressure level from which the altitude shown by the pointers is measured."
+
+basic_empty_weight: "Basic empty weight includes the standard empty weight plus optional and special equipment that has been installed."
+
+BC: "See back course."
+
+Bernoulli’s_principle: "A principle that explains how the pressure of a moving fluid varies with its speed of motion. An increase in the speed of movement causes a decrease in the fluid’s pressure."
+
+biplanes: "Airplanes with two sets of wings."
+
+block_altitude: "A block of altitudes assigned by ATC to allow altitude deviations; for example, 'Maintain block altitude 9 to 11 thousand.'"
+
+bypass ratio: "The ratio of the mass airflow in pounds per second through the fan section of a turbofan engine to the mass airflow that passes through the gas generator portion of the engine."
+
 form_drag: "The drag created because of the shape of a component or the aircraft."
 # Copyright 2021 Google LLC
