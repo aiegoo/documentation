@@ -21,6 +21,11 @@ box_number: 4
 
 ## the book
 
+<style>
+.customtable tr:nth-child(1) { color: red; }
+</style>
+
+{:.customtable}
 |---
 | [doc](https://github.com/aiegoo/documentation/blob/edit/pdf/robotswithros.pdf) | [masteringRos](https://github.com/aiegoo/uas-reference/blob/master/drone-dev/masteringros.pdf) | [masteringRos-github](https://github.com/aiegoo/masteringros.git)
 
