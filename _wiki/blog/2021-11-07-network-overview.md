@@ -28,6 +28,15 @@ updated: 2021-11-07 20:11
 
 [illustratednetwork](https://github.com/aiegoo/usa-reference/blob/master/network/illustratednetwork.pdf)
 
+## installing latest wireshark to linux
+
+{% highlight bash %}
+{% raw %}
+sudo add-apt-repository ppa:wireshark-dev/stable
+sudo apt update
+sudo apt install wireshark
+{% endraw %}
+{% endhighlight %}
 
 
 {% include taglogic.html %}
