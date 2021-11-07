@@ -26,7 +26,7 @@ updated: 2021-11-07 20:11
 ## books
 [wiresharklab](https://github.com/aiegoo/uas-reference/blob/master/network/wiresharlab.pdf)
 
-[illustratednetwork](https://github.com/aiegoo/uas-reference/blob/master/network/iluustratednetwork.pdf)
+[illustratednetwork](https://github.com/aiegoo/uas-reference/blob/master/network/iluustratednewtork.pdf)
 
 ## installing latest wireshark to linux
 
