@@ -24,9 +24,9 @@ updated: 2021-11-07 20:11
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## books
-[wiresharklab](https://github.com/aiegoo/usa-reference/blob/master/network/wiresharklab.pdf)
+[wiresharklab](https://github.com/aiegoo/uas-reference/blob/master/network/wiresharklab.pdf)
 
-[illustratednetwork](https://github.com/aiegoo/usa-reference/blob/master/network/illustratednetwork.pdf)
+[illustratednetwork](https://github.com/aiegoo/uas-reference/blob/master/network/illustratednetwork.pdf)
 
 
 
