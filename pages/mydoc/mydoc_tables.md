@@ -10,6 +10,9 @@ permalink: mydoc_tables.html
 folder: mydoc
 ---
 
+## **ref**
+[various_ways_formatting](/wiki-jekyll-spaceship.html)
+
 ## Multimarkdown Tables
 
 You can use Multimarkdown syntax for tables. The following shows a sample:
