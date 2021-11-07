@@ -22,7 +22,7 @@ box_number: 4
 ## the book
 
 <style>
-.customtable tr:nth-child(1) { color: red; }
+.customtable td:nth-child(1) { color: red; }
 </style>
 
 {:.customtable}
