@@ -198,7 +198,6 @@ TCP는 순차적으로 입력을 받고 확인을 하는데,
 
 3way Handshake
 
-![image]()
 {% include image.html links="https://user-images.githubusercontent.com/42961200/140618428-d51847da-c418-4677-a801-77b7164ce70c.png" caption="layer 4  error extraction TCP segment shadow header" %}
 
 {% include taglogic.html %}
