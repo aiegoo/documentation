@@ -21,7 +21,7 @@ box_number: 4
 
 ## the book
 [doc](https://github.com/aiegoo/documentation/blob/edit/pdf/robotswithros.pdf)
-
+[masteringRos](https://github.com/aiegoo/uas-refrenece/blob/master/drone-dev/masteringros.pdf)
 ## Fundamentals
 ### ROS graph
 - navigation, computer vision, grasping
@@ -119,7 +119,7 @@ from std_msgs.msg import Int32
 
 rospy.init_node('topic_publisher')
 
-pub = rospy.Publisher('counter', Int32) 
+pub = rospy.Publisher('counter', Int32)
 rate = rospy.Rate(2)
 count = 0
 while not rospy.is_shutdown(): pub.publish(count)
@@ -136,7 +136,7 @@ from std_msgs.msg import Int32
 
 def callback(msg):
     print msg.data
-    
+
 rospy.init_node('topic_subscriber')
 
 sub = rospy.Subscriber('counter', Int32, callback)
