@@ -2,7 +2,7 @@
 layout: post
 title: "Network books and reference"
 name: "network-overview"
-tags: [network]
+tags: network
 tagName: network
 permalink: 2021-11-07-network-overview.html
 sidebar: other_sidebar
