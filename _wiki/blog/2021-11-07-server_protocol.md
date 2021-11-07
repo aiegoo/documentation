@@ -130,6 +130,7 @@ TCP Flags (8bit)
 = 1   : 긍정, 일을 하고 있다.
 = 0  : 부정, 일을 안하고 있다.
 
+{% include image.html links="https://user-images.githubusercontent.com/42961200/140618334-03083872-4c36-4d3e-bf7b-ef7f1c5412e3.png" caption="testing" %}
 ![image](https://user-images.githubusercontent.com/42961200/140618334-03083872-4c36-4d3e-bf7b-ef7f1c5412e3.png)
 
 #### TCP Flags
