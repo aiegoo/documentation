@@ -21,7 +21,7 @@ box_number: 4
 
 ## the book
 [doc](https://github.com/aiegoo/documentation/blob/edit/pdf/robotswithros.pdf)
-[masteringRos](https://github.com/aiegoo/uas-refrenece/blob/master/drone-dev/masteringros.pdf)
+[masteringRos](https://github.com/aiegoo/uas-reference/blob/master/drone-dev/masteringros.pdf)
 ## Fundamentals
 ### ROS graph
 - navigation, computer vision, grasping
