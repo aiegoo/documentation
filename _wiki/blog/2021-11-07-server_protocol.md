@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "udt tcp"
+keywords: "udt tcp layer  error extraction TCP segment shadow header urg ack psh rst syn fin cwr ecn flags mss wscale sack"
 summary: "Sun, Nov 07, 21, definition of protocols"
 excerpt_separator: <!--more-->
 toc: true
@@ -130,8 +130,7 @@ TCP Flags (8bit)
 = 1   : 긍정, 일을 하고 있다.
 = 0  : 부정, 일을 안하고 있다.
 
-{% include image.html links="https://user-images.githubusercontent.com/42961200/140618334-03083872-4c36-4d3e-bf7b-ef7f1c5412e3.png" caption="testing" %}
-![image](https://user-images.githubusercontent.com/42961200/140618334-03083872-4c36-4d3e-bf7b-ef7f1c5412e3.png)
+{% include image.html links="https://user-images.githubusercontent.com/42961200/140618334-03083872-4c36-4d3e-bf7b-ef7f1c5412e3.png" caption="URG:urgent ACK:acknowledgement PSH:push RST:reset SYN:synchroization FIN:finish CWR:congestion window reduced ECN:explict congestion notification echo" %}
 
 #### TCP Flags
 U : 긴급데이터이므로, 다른 데이터보다 빨리 처리해야함 → Urgent Pointer을 확인함
@@ -199,8 +198,8 @@ TCP는 순차적으로 입력을 받고 확인을 하는데,
 
 3way Handshake
 
-![image](https://user-images.githubusercontent.com/42961200/140618428-d51847da-c418-4677-a801-77b7164ce70c.png)
-
+![image]()
+{% include image.html links="https://user-images.githubusercontent.com/42961200/140618428-d51847da-c418-4677-a801-77b7164ce70c.png" caption="layer 4  error extraction TCP segment shadow header" %}
 
 {% include taglogic.html %}
 
