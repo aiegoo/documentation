@@ -60,7 +60,7 @@ ol li {
 3. adding more data fields
    1. flight goal, location, flight range, duration, altitude, battery stat as to fill out the form's entries of basic information
    2. integrating data mining scripts using [this](https://pf3.36io.co/images/network/data_viz.jpg)
-{% include image.html file="network/heatmap.jpg" caption="with 7 prior check dataset" %}
+{% include image.html file="network/heatmap.jpg" caption="heatmap with 7 prior check dataset" %}
 
 {% include taglogic.html %}
 
