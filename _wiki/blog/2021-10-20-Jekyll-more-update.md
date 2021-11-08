@@ -98,13 +98,13 @@ t.succ
 ### applying github copycode to jekyll theme
 > another typical copy to clipboard example [blog](https://www.aleksandrhovhannisyan.com/blog/how-to-add-a-copy-to-clipboard-button-to-your-jekyll-blog/)
 
-[include_codeHeader.html]({{site.github_link}}_includes/copyHeader.html)
+[include_copyto.html]({{site.github_link}}_includes/copyto.html)
 [js/copyCode.js]({{site.github_link}}js/copyCode.js)
 ### how to use this
 
 {% highlight liquid %}
 {% raw %}
-{% include codeHeader.html %}
+{% include copyto.html %}
 ```someLanguage
 code goes in here!
 ```
@@ -115,7 +115,7 @@ code goes in here!
 ## external image links not covered by file=
 - to link to external images, use the sourceset parameters of image tag with this format `links=https..`
 
-{% include copyHeader.html %}
+{% include copyto.html %}
 ```liquid
 <figure style="text-align: center; width: fit-content;">{% if {{include.url}} %}<a class="no_icon" target="_blank" rel="noopener" href="{{include.url}}">{% endif %}<img class="docimage" src="images/{{include.file}}" srcset="{{include.links}}" alt="{{include.alt}}" {% if {{include.max-width}} %}style="max-width: {{include.max-width}}px"{% endif %} />{% if {{include.url}} %}</a>{% endif %}{% if {{include.caption}} %}<figcaption style="text-align: center;">{{include.caption}}</figcaption>{% endif %}</figure>
 ```
