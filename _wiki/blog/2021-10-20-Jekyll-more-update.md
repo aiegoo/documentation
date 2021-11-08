@@ -21,6 +21,76 @@ updated: 2021-10-21 04:32
 * TOC
 {:toc}
 
+
+## codeblock copytoclipboard
+
+{% raw %}
+{% assign code = include.code %}
+{% assign language = include.language %}
+
+``` {{ language }}
+{{ code }}
+```
+{% assign nanosecond = "now" | date: "%N" %}
+<textarea id="code{{ nanosecond }}" style="display:none;">{{ code | xml_escape }}</textarea>
+<button id="copybutton{{ nanosecond }}" data-clipboard-target="#code{{ nanosecond }}">
+  Copy to clipboard
+</button>
+
+<script>
+var copybutton = document.getElementById('copybutton{{ nanosecond }}');
+var clipboard{{ nanosecond }} = new Clipboard(copybutton);
+
+clipboard{{ nanosecond }}.on('success', function(e) {
+    console.log(e);
+});
+clipboard{{ nanosecond }}.on('error', function(e) {
+    console.log(e);
+});
+</script>
+
+{% endraw %}
+
+### a usecase example
+
+{% highlight liquid %}
+{% raw %}
+{%- capture code -%}
+/* Some js code */
+const redis = require('redis');
+const host = <HOSTNAME>;
+{%- endcapture -%}
+
+{% include code_snippet.md code=code language='javascript' %}
+
+{%- capture code -%}
+# Some ruby code
+t = Time.now
+t.succ  
+{%- endcapture -%}
+
+{% endraw %}
+{% endhighlight %}
+
+above code will result in the following;
+{%- capture code -%}
+/* Some js code */
+const redis = require('redis');
+const host = <HOSTNAME>;
+{%- endcapture -%}
+
+{% include code_snippet.md code=code language='javascript' %}
+
+{%- capture code -%}
+# Some ruby code
+t = Time.now
+t.succ  
+{%- endcapture -%}
+
+{% include code_snippet.md code=code language='ruby' %}
+
+{% include code_snippet.md code=code language='ruby' %}
+
 ## external image links not covered by file=
 - to link to external images, use the sourceset parameters of image tag with this format `links=https..`
 
