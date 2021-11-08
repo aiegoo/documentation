@@ -29,11 +29,6 @@ updated: 2021-10-21 04:32
 {% assign language = include.language %}
 {% endraw %}
 
-{% raw %}
-``` {{ language }}
-{{ code }}
-```
-{% endraw %}
 
 <script src="https://gist.github.com/aiegoo/dee57252ff0379ed25a96993d8d8761c.js"></script>
 
