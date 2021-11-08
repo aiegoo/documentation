@@ -73,6 +73,7 @@ t.succ
 {% endhighlight %}
 
 above code will result in the following;
+
 {%- capture code -%}
 /* Some js code */
 const redis = require('redis');
@@ -86,8 +87,6 @@ const host = <HOSTNAME>;
 t = Time.now
 t.succ  
 {%- endcapture -%}
-
-{% include code_snippet.md code=code language='ruby' %}
 
 {% include code_snippet.md code=code language='ruby' %}
 
