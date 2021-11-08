@@ -59,7 +59,7 @@ clipboard{{ nanosecond }}.on('error', function(e) {
 
 {% highlight liquid %}
 {% raw %}
-{%- capture code -%}
+{% capture code %}
 /* Some js code */
 const redis = require('redis');
 const host = <HOSTNAME>;
@@ -67,7 +67,7 @@ const host = <HOSTNAME>;
 
 {% include code_snippet.md code=code language='javascript' %}
 
-{%- capture code -%}
+{% capture code %}
 # Some ruby code
 t = Time.now
 t.succ
@@ -78,20 +78,20 @@ t.succ
 
 above code will result in the following;
 
-{%- capture code -%}
+{% capture code %}
 /* Some js code */
 const redis = require('redis');
 const host = <HOSTNAME>;
-{%- endcapture -%}
+{% endcapture %}
 
 {% include code_snippet.md code=code language='javascript' %}
 
 
-{%- capture code -%}
+{% capture code %}
 # Some ruby code
 t = Time.now
 t.succ
-{%- endcapture -%}
+{% endcapture %}
 
 {% include code_snippet.md code=code language='ruby' %}
 
@@ -115,6 +115,7 @@ code goes in here!
 ## external image links not covered by file=
 - to link to external images, use the sourceset parameters of image tag with this format `links=https..`
 
+{% include copyHeader.html %}
 ```liquid
 <figure style="text-align: center; width: fit-content;">{% if {{include.url}} %}<a class="no_icon" target="_blank" rel="noopener" href="{{include.url}}">{% endif %}<img class="docimage" src="images/{{include.file}}" srcset="{{include.links}}" alt="{{include.alt}}" {% if {{include.max-width}} %}style="max-width: {{include.max-width}}px"{% endif %} />{% if {{include.url}} %}</a>{% endif %}{% if {{include.caption}} %}<figcaption style="text-align: center;">{{include.caption}}</figcaption>{% endif %}</figure>
 ```
