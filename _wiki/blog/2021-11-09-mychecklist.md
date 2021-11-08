@@ -28,9 +28,22 @@ After successfully obtaining my pilot's license, I have yet to feel comfortable 
 
 ### my research
 I began by referring to articles of the law in fine prints, and realized that it didn't have specific format except in general terms. One form that came across was the one created by a local regional government with a drone division for aerial photography. And the other is from the FAA handbook for pilot's manual. My research findings;
+
 |---
 | ![faa_checklist](images/drone-resource-wiki/handbook/49-1.jpg) | [operationrules]({{site.github_link}}pdf/gcs/fllight_rules.pdf) | [maintenancelog]({{site.github_link}}pdf/gcs/maintenancelog.hwp) | [flightlog]({{site.github_link}}pdf/gcs/flightlog.xlsx)
 
+## idea expansion
+Now that I need this form and and what' required of it, I set off to a drawing table, whoa! my usual Starbucks table and started dawdling on the ideas.
+
+Steps to follow;
+1. a preliminary write-up of project design [ProjectDesgin]({{site.github_link}}pdf/gcs/ProjectDesign.odt)
+2. a db orm
+
+<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/bfb24bd8-9df1-40f5-bcb6-7784df312c70" id="3E7pQLU7-FM8"></iframe></div>
+
+3. more update of data fields
+   1. flight goal, location, flight range, duration, altitude, battery stat as form's basic information
+   2. integrating data mining scripts using [this](https://pf3.36io.co/images/network/data_viz.jpg)
 
 {% include taglogic.html %}
 
