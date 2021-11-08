@@ -2,7 +2,7 @@ const codeBlocks = document.querySelectorAll('.code-header + .highlighter-rouge'
 const copyCodeButtons = document.querySelectorAll('.copy-code-button');
 
 copyCodeButtons.forEach((copyCodeButton, index) => {
-  const code = codeBlocks[index].innerHTML;
+  const code = codeBlocks[index].textContent();
 
   copyCodeButton.addEventListener('click', () => {
     window.navigator.clipboard.writeText(code);
@@ -14,3 +14,8 @@ copyCodeButtons.forEach((copyCodeButton, index) => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.querySelectorAll('.copy-code-button').forEach((copyCodeButton) => {
+      copyCodeButton.addEventListener('click', copyCode);
+  });
+});
