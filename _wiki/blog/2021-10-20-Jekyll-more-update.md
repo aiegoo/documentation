@@ -27,11 +27,15 @@ updated: 2021-10-21 04:32
 {% raw %}
 {% assign code = include.code %}
 {% assign language = include.language %}
+{% endraw %}
 
+{% raw %}
 ``` {{ language }}
 {{ code }}
 ```
+{% endraw %}
 
+{% raw %}
 {% assign nanosecond = "now" | date: "%N" %}
 <textarea id="code{{ nanosecond }}" style="display:none;">{{ code | xml_escape }}</textarea>
 <button id="copybutton{{ nanosecond }}" data-clipboard-target="#code{{ nanosecond }}">
