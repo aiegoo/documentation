@@ -46,6 +46,7 @@ impenetrable for a human being.
 2.  Longevity  -  generally  well-established,  community-driven  and popular.
 3.  Best of breed, allowing for 2.- at the sweet spont between popularity and utility.
 
+{% include image.html file="network/data_viz.jpg" caption="data viz toolchain" %}
 
 ## installing latest wireshark to linux
 
