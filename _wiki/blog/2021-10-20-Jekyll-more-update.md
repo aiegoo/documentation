@@ -21,6 +21,35 @@ updated: 2021-10-21 04:32
 * TOC
 {:toc}
 
+## to enable ref in css html
+
+```css
+:root {
+  counter-reset: link;
+}
+
+a[href] {
+  counter-increment: link;
+}
+
+a[href]:empty::after {
+  content: "[" counter(link) "]";
+}
+
+h1 {
+  counter-set: chapter section 1 page;
+  /* Sets the chapter and page counters to 0,
+     and the section counter to 1 */
+}
+
+```
+
+```html
+<p>See <a href="https://www.mozilla.org/"></a></p>
+<p>Do not forget to <a href="contact-me.html">leave a message</a>!</p>
+<p>See also <a href="https://developer.mozilla.org/"></a></p>
+
+```
 ## how to utilize github issues api to open disucssion
 [blog](https://www.aleksandrhovhannisyan.com/blog/static-site-comments-github-issues/)
 
