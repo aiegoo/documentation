@@ -45,6 +45,7 @@ impenetrable for a human being.
 
 ## installing latest wireshark to linux
 
+{% include copyHeader.html %}
 {% highlight bash %}
 {% raw %}
 sudo add-apt-repository ppa:wireshark-dev/stable
@@ -53,6 +54,7 @@ sudo apt install wireshark
 {% endraw %}
 {% endhighlight %}
 
+<script src="/js/copyCode.js"></script>
 
 {% include taglogic.html %}
 
