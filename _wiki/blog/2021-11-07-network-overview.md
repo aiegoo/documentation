@@ -36,11 +36,11 @@ updated: 2021-11-07 20:11
 
 While  there  is  some  brilliant  coding  behind  these  JavaScript  con‐ verters and many solid
 use-cases, they do have big limitations:
-•  Automated code-conversion may well do the job but the code produced is usually pretty
+* Automated code-conversion may well do the job but the code produced is usually pretty
 impenetrable for a human being.
-•  Adapting and customising the resulting plots using the power‐ ful browser-based JavaScript development environment is likely to be very painful.
-•  You are limited to the subset of plot types currently available in the libraries.
-• Interactivity is very basic at the moment. Stitching this together is better done in JavaScript, using the browser’s dev-tools.
+* Adapting and customising the resulting plots using the power‐ ful browser-based JavaScript development environment is likely to be very painful.
+*  You are limited to the subset of plot types currently available in the libraries.
+*   Interactivity is very basic at the moment. Stitching this together is better done in JavaScript, using the browser’s dev-tools.
 
 
 ## installing latest wireshark to linux
