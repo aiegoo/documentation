@@ -93,6 +93,7 @@ t.succ
 
 {% include code_snippet.md code=code language='ruby' %}
 
+### applying github copycode to jekyll theme
 > another typical copy to clipboard example
 
 [include_codeHeader.html]({{site.github_link}}_includes/copyHeader.html)
