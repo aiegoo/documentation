@@ -46,16 +46,13 @@ impenetrable for a human being.
 ## installing latest wireshark to linux
 
 {% include copyHeader.html %}
-{% highlight bash %}
-{% raw %}
+```bash
 sudo add-apt-repository ppa:wireshark-dev/stable
 sudo apt update
 sudo apt install wireshark
-{% endraw %}
-{% endhighlight %}
+```
 
 {% include copyHeader.html %}
-
 ```html
 document.addEventListener("DOMContentLoaded", function(event) {
     document.querySelectorAll('.copy-code-button').forEach((copyCodeButton) => {
