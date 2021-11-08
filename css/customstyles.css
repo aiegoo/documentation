@@ -368,6 +368,7 @@ div#toc ul li a {
     display: block;
     color: rgba(158, 74, 3, 1) !important;
     font-size: 1.2rem !important;
+    min-width: 400px !important;
 }
 
 div#toc ul li a::after {
@@ -1143,6 +1144,15 @@ span.soft {
     }
    .gist .gist-data {
     width: 95vw;
+    }
+}
+
+@media (max-width: 992px) {
+    #mysidebar {
+        position: relative;
+    }
+    div#toc {
+        margin-left: ;
     }
 }
 
