@@ -117,7 +117,7 @@ body {
 }
 .alert.alert-bulletin ul {
     list-style-type: none;
-    
+
 }
 
 .gi-2x{font-size: 2em;}
@@ -408,7 +408,7 @@ ul#markdown-toc {
     list-style-type: none;
     counter-reset: list;
 }
-ul#markdown-toc li {    
+ul#markdown-toc li {
     list-style: none;
     margin-left: -23px;
 }
@@ -512,7 +512,7 @@ a.accordion-toggle, a.accordion-collapsed {
 
 /* navgoco sidebar styles (customized) */
 .nav, .nav ul, .nav li {
-    list-style: none;    
+    list-style: none;
 }
 
 .nav .subfolder-background {
@@ -1122,7 +1122,7 @@ span.soft {
     }
     .projectTitle > img {
         display: inline-block;
-    }    
+    }
     .fixed-top img
      {
         /* margin-top: -88px; */
@@ -1146,7 +1146,7 @@ span.soft {
     }
 }
 
-@media (min-width: 1000px) {    
+@media (min-width: 1000px) {
     .gist .gist-data {
     width: 49.5vw !important;
     }
@@ -1164,12 +1164,12 @@ span.soft {
 }
 
 @media (max-width: 1110px) {
-    ul#markdown-toc li {    
+    ul#markdown-toc li {
       margin-left: -24px;
     }
 
     div#sidetoc {
-        opacity: 45%;        
+        opacity: 45%;
     }
     div#toc {
         opacity: 0;
@@ -1190,7 +1190,7 @@ span.soft {
     .gist .gist-data {
         width: 90vw;
     }
-    
+
 }
 
 @media only screen and (min-width: 900px), only screen and (min-device-width: 900px) {
@@ -1202,25 +1202,25 @@ span.soft {
 
 /* ----------- iPad Pro ----------- */
 /* Portrait and Landscape */
-/* @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
+/* @media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
   and (-webkit-min-device-pixel-ratio: 1.5) {
 } */
 
 /* Portrait */
-/* @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (orientation: portrait) 
+/* @media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1.5) {
 } */
 
 /* Landscape */
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (orientation: landscape) 
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 1.5) {
     .fixed-top {
         position: fixed;
@@ -1366,7 +1366,7 @@ div.results {
 }
 
 time {
-    margin-right: 10px;    
+    margin-right: 10px;
 }
 
 p.post-meta time {
@@ -1602,62 +1602,62 @@ h4.panel-title {
 /* additonal for my project portfolio */
 
 .rotated {
-    
+
     transform: rotate(-90deg);
     background-color: amber;
     border: 1px solid red;
 }
 
 /* scroll top css */
-#top { 
-    position:fixed; 
-    z-index:1000; 
-    bottom:0; 
-    right:0; 
+#top {
+    position:fixed;
+    z-index:1000;
+    bottom:0;
+    right:0;
     left: calc(100vw - 4.3em);
-    border:1px solid rgba(255, 217, 0, 0.267); 
-    background-color:#ff990081; 
-    color: white; 
+    border:1px solid rgba(255, 217, 0, 0.267);
+    background-color:#ff990081;
+    color: white;
     cursor:pointer;
     outline:none;
     visibility: hidden;
   }
-  /* 	
+  /*
   #top::after {
     font-weight: bold;
     font-style: normal;
     font-size: 2em;
-    line-height: 50px; 
+    line-height: 50px;
     color: rgba(255, 217, 0, 0.37);
   } */
-  
+
   #top:hover {
-    cursor: pointer; 
-    background-color: rgba(51, 51, 51, 0.404); 
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 0.404);
     color: gold;
-  } 	
-  
-  #top:active { 
+  }
+
+  #top:active {
     background-color: rgba(224, 211, 211, 0.342);
-  } 
-  
+  }
+
   #top.show {
-    opacity: 0.7; 
+    opacity: 0.7;
     visibility: visible;
   }
-      
+
   #topButton2 {
     display: inline-block;
     background-color: #ff99007c;
     width: 3.3em;
     height: 3.3em;
     text-align: center;
-    transition: background-color .3s, 
+    transition: background-color .3s,
       opacity .5s, visibility .5s;
    /* visibility: hidden;*/
     z-index: 1000;
   }
-  
+
   #topButton2::after {
     content: "\f077";
     font-family: FontAwesome;  /*fontAwesome 링크 붙여 놓고.. ascii 번호 입력하고 폰트패밀리 명시하면 되는 것 아닌감? 왜 안보일까... 버젼인가? */
@@ -1678,13 +1678,13 @@ h4.panel-title {
     opacity: 1;
     visibility: visible;
   }
-  
+
   /* navbar customization */
   .col-md-6  h1 {
       margin-top: 1.3em;
       margin-left: 10px;
   }
-  
+
   /* git gist table */
   .gist .gist-data {
     word-wrap: normal;
@@ -1840,7 +1840,7 @@ kbd {
      margin: 1em 0;
      font-size: 14px !important;
      font-family: 'nanumsquare' !important;
-     white-space: nowrap;     
+     white-space: nowrap;
      /* overflow: hidden; */
 }
 
@@ -1871,7 +1871,7 @@ a.wiki-previous:hover {
     overflow: hidden;
     max-width: 100%;
   }
-  
+
 .embed-container iframe, .embed-container object, .embed-container embed {
     position: absolute;
     top: 0;
@@ -1894,14 +1894,14 @@ a.wiki-previous:hover {
     position: fixed;
     bottom: 1vh;
     top: 7vh;
-    right: 0; 
+    right: 0;
     height: min-content;
     width: 24rem;
     overflow-x: hidden;
     overflow-y: auto;
     font-size: 14px;
 }
-    
+
 
 .scroll-nav    a {
         color: rgba(168, 168, 168, 0.9);
@@ -1974,7 +1974,7 @@ li.scroll-nav_item a:before {
     padding-left: 42px; */
 }
 /* added this css along with js script added right after next previous script in _layouts/post.html */
-.scroll-is-hover {    
+.scroll-is-hover {
     border-left: rgba(255, 207, 64, 0.4);
 }
 @media screen and (min-width: 800px) {
@@ -2065,7 +2065,7 @@ ul.tag-list span+div {
 }
 
 .well a {
-    letter-spacing: 0 !important;    
+    letter-spacing: 0 !important;
     font-size: 2rem !important;
     font-family: 'NanumBarunpen' !important;
 }
@@ -2203,6 +2203,40 @@ details>p, details p {
    /*  box-shadow: 3px 3px 4px black; */
 }
 
+/* copyto clipboard css using copyHeader.html in _includes */
+.code-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.copy-code-button {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-column-gap: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 4px 8px;
+}
+
+.copy-code-button::before {
+        content: "Copy";
+    }
+.copy-code-button::after {
+        content: "📋";
+        display: block;
+    }
+
+/* This class will be toggled via JavaScript */
+.copy-code-button.copied::before {
+            content: "Copied!";
+        }
+
+.copy-code-button.copied::after {
+            content: "✔️";
+        }
+
 
 /* highlight css */
 /*.highlight {
@@ -2269,7 +2303,7 @@ details>p, details p {
     /* Generic.Deleted & Diff Deleted */
     /* Generic.Inserted & Diff Inserted */
 /* } */
-/* 
+/*
 .highlight .hll {
     background-color: #49483e;
 }
