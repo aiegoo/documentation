@@ -24,15 +24,14 @@ updated: 2021-10-21 04:32
 
 ## codeblock copytoclipboard
 
-{% raw %}
+```liquid
 {% assign code = include.code %}
 {% assign language = include.language %}
-{% endraw %}
-
+```
 
 <script src="https://gist.github.com/aiegoo/dee57252ff0379ed25a96993d8d8761c.js"></script>
 
-{% raw %}
+```liquid
 {% assign nanosecond = "now" | date: "%N" %}
 <textarea id="code{{ nanosecond }}" style="display:none;">{{ code | xml_escape }}</textarea>
 <button id="copybutton{{ nanosecond }}" data-clipboard-target="#code{{ nanosecond }}">
@@ -50,8 +49,7 @@ clipboard{{ nanosecond }}.on('error', function(e) {
     console.log(e);
 });
 </script>
-
-{% endraw %}
+```
 
 ### a usecase example
 
