@@ -83,6 +83,7 @@ const host = <HOSTNAME>;
 
 {% include code_snippet.md code=code language='javascript' %}
 
+
 {%- capture code -%}
 # Some ruby code
 t = Time.now
