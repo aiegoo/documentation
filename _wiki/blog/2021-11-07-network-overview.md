@@ -54,7 +54,17 @@ sudo apt install wireshark
 {% endraw %}
 {% endhighlight %}
 
+{% include copyHeader.html %}
+
+```html
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.querySelectorAll('.copy-code-button').forEach((copyCodeButton) => {
+        copyCodeButton.addEventListener('click', copyCode);
+    });
+});
+```
 <script src="/js/copyCode.js"></script>
+
 
 {% include taglogic.html %}
 
