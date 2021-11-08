@@ -35,6 +35,8 @@ updated: 2021-10-21 04:32
 ```
 {% endraw %}
 
+<script src="https://gist.github.com/aiegoo/dee57252ff0379ed25a96993d8d8761c.js"></script>
+
 {% raw %}
 {% assign nanosecond = "now" | date: "%N" %}
 <textarea id="code{{ nanosecond }}" style="display:none;">{{ code | xml_escape }}</textarea>
@@ -71,7 +73,7 @@ const host = <HOSTNAME>;
 {%- capture code -%}
 # Some ruby code
 t = Time.now
-t.succ  
+t.succ
 {%- endcapture -%}
 
 {% endraw %}
@@ -91,7 +93,7 @@ const host = <HOSTNAME>;
 {%- capture code -%}
 # Some ruby code
 t = Time.now
-t.succ  
+t.succ
 {%- endcapture -%}
 
 {% include code_snippet.md code=code language='ruby' %}
