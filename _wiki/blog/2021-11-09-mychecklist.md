@@ -14,7 +14,7 @@ summary: "Tue, Nov 09, 21, preflight checklist with data mining"
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2021-11-09T02:36:33 +0900
 updated: 2021-11-09 02:36
 ---
@@ -23,7 +23,14 @@ updated: 2021-11-09 02:36
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 
+## how it began
+After successfully obtaining my pilot's license, I have yet to feel comfortable going out about flying my drones outside, even within a greenzone. By law, I am obliged to keep the flight  records and the first time I saw any actual log was during the liecense test site, where I start reading off the airframe tag number from the drone I was about to fly. The examiner assistant will fill out the rest of the form, by observing me to conduct the preflight checks. Properly performing the items listed on pre-flight and related checklists is crucial to identifying hazards ensuring a safe flight. A co-pilot can make sure that the pilot-in-command (PIC) does not miss any items by solely keeping track of the checklist while the PIC performs the checks.
+
+### my research
+I began by referring to articles of the law in fine prints, and realized that it didn't have specific format except in general terms. One form that came across was the one created by a local regional government with a drone division for aerial photography. And the other is from the FAA handbook for pilot's manual. My research findings;
+|---
+| ![faa_checklist](images/drone-resource-wiki/handbook/49-1.jpg) | [operationrules]({{site.github_link}}pdf/gcs/fllight_rules.pdf) | [maintenancelog]({{site.github_link}}pdf/gcs/maintenancelog.hwp) | [flightlog]({{site.github_link}}pdf/gcs/flightlog.xlsx)
+
 
 {% include taglogic.html %}
 
