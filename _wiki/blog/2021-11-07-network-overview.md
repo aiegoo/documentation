@@ -50,7 +50,7 @@ impenetrable for a human being.
 
 ## installing latest wireshark to linux
 
-{% include copyHeader.html %}
+{% include copyto.html %}
 ```bash
 sudo add-apt-repository ppa:wireshark-dev/stable
 sudo apt update
