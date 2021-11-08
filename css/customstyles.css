@@ -2229,6 +2229,7 @@ details>p, details p {
     font-size: 1rem;
     padding: 4px 8px;
     margin-bottom: -35px;
+    background-color: #0ab5354e;
 }
 
 .copy-code-button::before {
