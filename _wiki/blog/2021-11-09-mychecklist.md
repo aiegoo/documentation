@@ -24,17 +24,21 @@ updated: 2021-11-09 02:36
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 {{site.data.alerts.bulletin}}
-### my copilot in the palm of the hand!
+my copilot in the palm of the hand!
 {{site.data.alerts.ends}}
 
 ## how it began
-After successfully obtaining my pilot's license, I have yet to feel comfortable going out about flying my drones outside, even within the flyzone. By law, I am obliged to keep the flight  records and the first time I saw any actual log being kept was during the license test, where I started reading off the airframe tag number from the drone I was about to fly, to my so=called copilot. The copilot examiner assistant would fill out the rest of the form, by observing me to conduct the preflight checks. {{site.data.alerts.note}}Properly performing the items listed on pre-flight and related checklists is crucial to identifying hazards ensuring a safe flight. A co-pilot can make sure that the pilot-in-command (PIC) does not miss any items by solely keeping track of the checklist while the PIC performs the checks.{{site.data.alerts.end}}
+{% include tony.html content="After successfully obtaining my pilot's license, I have yet to feel comfortable going out about flying my drones outside, even within the flyzone. By law, I am obliged to keep the flight  records and the first time I saw any actual log being kept was during the license test, where I started reading off the airframe tag number from the drone I was about to fly, to my so=called copilot. The examiner assistant doubling as my copilot would fill out the rest of the form, by observing me to conduct the preflight checks." %}
+
+{{site.data.alerts.note}}
+Properly performing the items listed on pre-flight and related checklists is crucial to identifying hazards ensuring a safe flight. A co-pilot can make sure that the pilot-in-command (PIC) does not miss any items by solely keeping track of the checklist while the PIC performs the checks.
+{{site.data.alerts.end}}
 
 ### my goal
 - to create a webapp to fulfill this pre-flight checks, with a db, api and ui.
-- to document this process for future update and more integration needs in the future.
+- to document this process for future update and more integration needs later in this project.
 ### my research
-I began by referring to articles of the law in fine prints, and realized that it didn't have specific format except in general terms. One form that came across was the one created by a local regional government with a drone division for aerial photography. And the other is from the FAA handbook for pilot's manual. My research findings;
+I began by referring to articles of the law in fine prints, and realized that it didn't have specific format except in general terms. One form that came across was the one created by a regional government with a drone team for aerial photography. And the other is from the FAA handbook for pilot's manual. My research findings are as follows;
 
 |---
 | ![faa_checklist](images/drone-resource-wiki/handbook/49-1.jpg) | [operationrules]({{site.github_link}}pdf/gcs/fllight_rules.pdf) | [maintenancelog]({{site.github_link}}pdf/gcs/maintenancelog.hwp) | [flightlog]({{site.github_link}}pdf/gcs/flightlog.xlsx)
@@ -48,7 +52,7 @@ Steps to follow;
 
 <div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/bfb24bd8-9df1-40f5-bcb6-7784df312c70" id="3E7pQLU7-FM8"></iframe></div>
 
-3. more update of data fields
+3. adding more data fields
    1. flight goal, location, flight range, duration, altitude, battery stat as form's basic information
    2. integrating data mining scripts using [this](https://pf3.36io.co/images/network/data_viz.jpg)
 
