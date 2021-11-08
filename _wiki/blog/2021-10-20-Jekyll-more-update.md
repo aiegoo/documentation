@@ -95,7 +95,7 @@ t.succ
 
 > another typical copy to clipboard example
 
-[include_codeHeader.html]({{site.github_link}}_include/codeHeader.html)
+[include_codeHeader.html]({{site.github_link}}_includes/copyHeader.html)
 [js/copyCode.js]({{site.github_link}}js/copyCode.js)
 ### how to use this
 
