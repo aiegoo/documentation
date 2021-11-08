@@ -309,7 +309,7 @@ div#toc ul {
     background-color: rgba(188, 210, 172, 0.52) !important;
     padding: 5px;
     border-radius: 5px;
-    min-width: 400px;
+    min-width: 350px;
     color: rgba(246, 113, 3, 0.856);
     /* overflow-y: auto; */
     line-height: 38%;
@@ -1252,7 +1252,7 @@ span.soft {
     }
 }
 
-
+/* end of media screen for ipad */
 .col-md-9 img {
     max-width: 100%;
     max-height: 100%;
