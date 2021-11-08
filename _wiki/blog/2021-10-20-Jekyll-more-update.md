@@ -21,6 +21,8 @@ updated: 2021-10-21 04:32
 * TOC
 {:toc}
 
+## how to utilize github issues api to open disucssion
+[blog](https://www.aleksandrhovhannisyan.com/blog/static-site-comments-github-issues/)
 
 ## codeblock copytoclipboard
 
@@ -94,7 +96,7 @@ t.succ
 {% include code_snippet.md code=code language='ruby' %}
 
 ### applying github copycode to jekyll theme
-> another typical copy to clipboard example
+> another typical copy to clipboard example [blog](https://www.aleksandrhovhannisyan.com/blog/how-to-add-a-copy-to-clipboard-button-to-your-jekyll-blog/)
 
 [include_codeHeader.html]({{site.github_link}}_includes/copyHeader.html)
 [js/copyCode.js]({{site.github_link}}js/copyCode.js)

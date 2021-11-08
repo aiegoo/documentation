@@ -34,13 +34,17 @@ updated: 2021-11-07 20:11
 
 ### data_viz with javascript and python
 
-While  there  is  some  brilliant  coding  behind  these  JavaScript  con‐ verters and many solid
-use-cases, they do have big limitations:
+While  there  is  some  brilliant  coding  behind  these  JavaScript  converters and many solid use-cases, they do have big limitations:
 * Automated code-conversion may well do the job but the code produced is usually pretty
 impenetrable for a human being.
 * Adapting and customising the resulting plots using the power‐ ful browser-based JavaScript development environment is likely to be very painful.
 *  You are limited to the subset of plot types currently available in the libraries.
 *   Interactivity is very basic at the moment. Stitching this together is better done in JavaScript, using the browser’s dev-tools.
+
+> what counts most in using libraries;
+1.  Open-source and free as in beer - you shouldn’t have to invest any extra money to learn with this book.
+2.  Longevity  -  generally  well-established,  community-driven  and popular.
+3.  Best of breed, allowing for 2.- at the sweet spont between popularity and utility.
 
 
 ## installing latest wireshark to linux
