@@ -24,6 +24,8 @@ updated: 2021-10-21 04:32
 
 ## codeblock copytoclipboard
 
+> one example of copying entire liquid script below
+
 ```liquid
 {% assign code = include.code %}
 {% assign language = include.language %}
@@ -90,6 +92,22 @@ t.succ
 {%- endcapture -%}
 
 {% include code_snippet.md code=code language='ruby' %}
+
+> another typical copy to clipboard example
+
+[include_codeHeader.html]({{site.github_link}}_include/codeHeader.html)
+[js/copyCode.js]({{site.github_link}}js/copyCode.js)
+### how to use this
+
+{% highlight liquid %}
+{% raw %}
+{% include codeHeader.html %}
+```someLanguage
+code goes in here!
+```
+{% endraw %}
+{% endhighlight %}
+
 
 ## external image links not covered by file=
 - to link to external images, use the sourceset parameters of image tag with this format `links=https..`
