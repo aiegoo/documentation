@@ -23,9 +23,16 @@ updated: 2021-11-09 02:36
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## how it began
-After successfully obtaining my pilot's license, I have yet to feel comfortable going out about flying my drones outside, even within a greenzone. By law, I am obliged to keep the flight  records and the first time I saw any actual log was during the liecense test site, where I start reading off the airframe tag number from the drone I was about to fly. The examiner assistant will fill out the rest of the form, by observing me to conduct the preflight checks. Properly performing the items listed on pre-flight and related checklists is crucial to identifying hazards ensuring a safe flight. A co-pilot can make sure that the pilot-in-command (PIC) does not miss any items by solely keeping track of the checklist while the PIC performs the checks.
+{{site.data.alerts.bulletin}}
+### my copilot in the palm of the hand!
+{{site.data.alerts.ends}}
 
+## how it began
+After successfully obtaining my pilot's license, I have yet to feel comfortable going out about flying my drones outside, even within the flyzone. By law, I am obliged to keep the flight  records and the first time I saw any actual log being kept was during the license test, where I started reading off the airframe tag number from the drone I was about to fly, to my so=called copilot. The copilot examiner assistant would fill out the rest of the form, by observing me to conduct the preflight checks. {{site.data.alerts.note}}Properly performing the items listed on pre-flight and related checklists is crucial to identifying hazards ensuring a safe flight. A co-pilot can make sure that the pilot-in-command (PIC) does not miss any items by solely keeping track of the checklist while the PIC performs the checks.{{site.data.alerts.end}}
+
+### my goal
+- to create a webapp to fulfill this pre-flight checks, with a db, api and ui.
+- to document this process for future update and more integration needs in the future.
 ### my research
 I began by referring to articles of the law in fine prints, and realized that it didn't have specific format except in general terms. One form that came across was the one created by a local regional government with a drone division for aerial photography. And the other is from the FAA handbook for pilot's manual. My research findings;
 
