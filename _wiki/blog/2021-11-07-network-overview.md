@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 });
 ```
-<script src="/js/copyCode.js"></script>
 
 
 {% include taglogic.html %}
