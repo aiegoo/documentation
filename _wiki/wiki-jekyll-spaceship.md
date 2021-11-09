@@ -4,7 +4,7 @@ layout: post
 permalink: wiki-jekyll-spaceship.html
 sidebar: other_sidebar
 collection: school
-keywords: "plantuml datatable table styling multiline chess rowspan mermaid media image hybrid polyfil emoji jekyll action deploy"
+keywords: "plantuml datatable table styling multiline chess rowspan mermaid media image hybrid polyfil emoji jekyll action deploy mathjax"
 summary: "md/kramdown table, datatable 마크다운 테이블 스타일링"
 tags: [bash, jekyll]
 excerpt_separator: <!--more-->
@@ -225,6 +225,7 @@ example 2) 이 수식 $$ a*b = c^b $$을 다른 문자열과 같이 써 본다.
 
 * #platuml
 * [PlantUML 설명서](https://plantuml.com/)
+* [guide_ko]({{site.github_link}}pdf/plantuml.pdf)
 
 * plantuml 예제
 
