@@ -69,7 +69,7 @@ You can even add some custom action to your viewset using @action decorator.
 
 Now that writing views is finished, you’ve saved enough time to have a cup of coffee.
 
-## Differenty serializer
+## Different serializer
 As a DRF user you don’t need to bother with views and url configurations, so you will probably pay most of your attention to serializers, which act as translators between Django model instances and their representations such as json. There is a handful of functionalities connected with serializers that you might want to know.
 
 Every serializer can be used for both reading and writing operations. The way it is initialized determines the action that it will fulfill. In these terms we can distinguish 3 types of serializers: create, update and retrieve.
