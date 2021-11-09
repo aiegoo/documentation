@@ -1,5 +1,6 @@
 ---
 name: jekyll-spaceship
+title: jekyll-playground
 layout: post
 permalink: wiki-jekyll-spaceship.html
 sidebar: other_sidebar
