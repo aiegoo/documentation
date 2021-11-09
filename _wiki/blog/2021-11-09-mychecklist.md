@@ -408,7 +408,7 @@ self.assertEqual(response.status_code,400)
 ```
 to make sure that all question (point based) are required to be filled out in order to allow submit.
 
-**ref** check both the the risk_assesment/test and api/test; also have a look at api/view.py, and api/permisssions.py
+**ref** check both the risk_assesment/test and api/test; also have a look at api/view.py, and api/permisssions.py
 
 ### more update on db schema change
 * following is to let user know the unit or type of data, and you can now search using any of the fields (from the three fields).
