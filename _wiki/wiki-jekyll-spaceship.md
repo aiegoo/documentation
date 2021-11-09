@@ -4,6 +4,7 @@ layout: post
 permalink: wiki-jekyll-spaceship.html
 sidebar: other_sidebar
 collection: school
+keywords: "plantuml datatable table styling multiline chess rowspan mermaid media image hybrid polyfil emoji jekyll action deploy"
 summary: "md/kramdown table, datatable 마크다운 테이블 스타일링"
 tags: [bash, jekyll]
 excerpt_separator: <!--more-->

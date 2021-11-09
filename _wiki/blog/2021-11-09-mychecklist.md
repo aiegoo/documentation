@@ -55,7 +55,7 @@ Steps to follow;
 <style>
 ol li {
      counter-set: list 3;
-}
+}echo 
 </style>
 3. adding more data fields
    1. flight goal, location, flight range, duration, altitude, battery stat as to fill out the form's entries of basic information

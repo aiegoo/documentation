@@ -1,0 +1,5 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+<div id='viz'></div>
+<script type="text/javascript" src="script.js" async></script>
