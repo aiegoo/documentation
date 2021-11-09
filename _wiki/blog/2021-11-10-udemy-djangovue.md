@@ -49,7 +49,7 @@ I find that using Django with linux is comparatively more reliable, from the bal
 I remember using Django (cookiecutter or something) with Visual Studio, which was a nice experience. Just sharing.
 
 
-Happy coding, especially if you are new here like me. Let's go.
+Happy coding, especially if you are new here like me. Let's divide and conquer.
 {{site.data.alerts.end}}
 
 
