@@ -40,7 +40,7 @@
 .highlight .ni { color: #800080 } /* Name.Entity */
 .highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
 .highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
-.highlight .nn { color: #bfb6b6 } /* Name.Namespace */
+.highlight .nn { color: #bce036 } /* Name.Namespace */
 .highlight .nt { color: #9999c1 } /* Name.Tag */
 .highlight .nv { color: #008080 } /* Name.Variable */
 .highlight .nx { color: #82aaff;} /* method like sum() */
