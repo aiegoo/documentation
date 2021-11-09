@@ -110,6 +110,265 @@ cid         name        type        notnull     dflt_value  pk
 20          battery_st  varchar(10  0                       0  
 ```
 
+## RESTful API
+
+Please read the [restfulapi blog](/2021-11-09-django-api.html) for more details. 
+
+I have once created this serializer for Arduino sensors;
+
+```python
+import serial
+#import mysql.connector
+from datetime import datetime
+import threading
+import time
+#import sqlite3
+import requests
+
+port = serial.Serial('/dev/ttyACM0',9600)
+base_url = "http://172.30.1.15:9001"
+#con = sqlite3.connect('sensor.db')
+#def sql_insert(con, entities):
+#    cursorObj = con.cursor()
+#    cursorObj.execute('INSERT INTO Sensor_Detections(Server_Name, Detect_Time) VALUES(?,?)', entities)
+#    con.commit()
+#port.open()
+if port.isOpen():
+    print("already open")
+else:
+    print("Opening port")
+    port.open()
+def readarduino(ServerName):
+	while True:
+		try:
+			data=port.readline()
+			
+			data2 = data.decode(encoding="utf-8").strip()
+			print(data2)
+			form_data = {"Server_Name": ServerName,"NameSpace":"namespace","Detected_Count":data2}
+			url = base_url + "/sensordata/"
+			resp = requests.post(url,data=form_data,json=True)
+			print(resp.json())
+			# if data2=="<D>":
+			# 	now = datetime.now()
+			# 	entities = (ServerName, now.strftime("%Y-%m-%d %H:%M:%S"))
+			# 	sql_insert(con, entities)
+				
+			print("record inserted")
+		except KeyboardInterrupt:
+			break
+		time.sleep(0.05)
+	port.close()
+	
+def startread():
+	thread = threading.Thread(target=readarduino, args=("RPI_1",))
+	thread.start()
+
+
+def main():
+	startread()
+	
+
+if __name__ == '__main__':
+    main()
+```
+
+> model.py
+
+```python
+from django.db import models
+
+# Create your models here.
+
+class SensorData(models.Model):
+    id = models.AutoField(primary_key=True)
+    Detect_Time = models.DateTimeField(auto_now=True)
+    Server_Name = models.CharField(max_length=10)
+    NameSpace = models.CharField(max_length=10, default="")
+    Detected_Count = models.CharField(max_length=10000,default="")
+```
+
+> serializer.py
+
+```python
+from rest_framework import serializers
+
+from .models import SensorData
+
+class SensorDataSerializer (serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = SensorData
+        fields = ('id','Server_Name','Detect_Time',"NameSpace","Detected_Count")
+```
+
+But in this case, it's simple input table for the CRUD operations, or whatever lacks of it.
+
+> serializer.py
+
+```python
+from risk_assesment.models import Assessment
+from rest_framework import serializers
+
+class AssessmentSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Assessment
+        fields = [
+        'pk',
+        'date',
+        'pilot_name',
+        'flight_from',
+        'to',
+        'sleep',
+        'how_do_you_feel',
+        'weather_at_termination',
+        'how_is_the_day_going',
+        'is_the_flight',
+        'planning',
+        'used_computer_program_for_all_planning',
+        'did_you_verify_weigth_and_balance',
+        'did_you_evaluate_performance',
+        'do_you_brief_your_passangers_on_the_ground_and_in_flight',
+        'flight_goal',
+        'location',
+        'flight_range',
+        'duration',
+        'altitude',
+        'battery_stat',
+        ]
+        extra_kwargs = {
+            'pk': {'read_only': True},
+            'date': {'read_only': True}
+        }
+```
+
+> models.py
+
+```python
+from django.db import models
+from django.core.exceptions import ValidationError
+# Create your models here.
+
+class Assessment(models.Model):
+     date=models.DateField(auto_now_add=True)
+     pilot_name=models.CharField(max_length=50,)
+     flight_from=models.CharField(max_length=255,)
+     to=models.CharField(max_length=255,)
+     SLEEP_CHOICES = [
+        ('2','Did you sleep well or less than 8 hours'),
+        ('0','Slept well')
+     ]
+     sleep=models.CharField(
+        max_length=1,
+        choices = SLEEP_CHOICES,
+
+     )
+     HOW_DO_YOU_FEEL_CHOICES = [
+        ('4', 'Have a cold or ill'),
+        ('0', 'Feel great'),
+        ('2', 'Feel a bit off')
+     ]
+     how_do_you_feel=models.CharField(
+        max_length=1,
+        choices = HOW_DO_YOU_FEEL_CHOICES,
+
+     )
+     WEATHER_AT_TERMINATION_CHOICES = [
+        ('1','Greater than 5 miles visibility and 3,000 feet ceillings'),
+        ('3','At least 3 miles visibility and 1,000 feet ceillings, but less than 3,000 feet ceillings and 5 miles visibility'),
+        ('4', 'IMC conditions')
+     ]
+     weather_at_termination=models.CharField(
+        max_length=1,
+        choices = WEATHER_AT_TERMINATION_CHOICES,
+
+     )
+     HOW_IS_THE_DAY_GOING_CHOICES = [
+        ('3','Seems like one thing after another (late, making errors, out of step)'),
+        ('0','Great day')
+     ]
+     how_is_the_day_going=models.CharField(
+        max_length=1,
+        choices = HOW_IS_THE_DAY_GOING_CHOICES,
+
+     )
+     IS_THE_FLIGHT_CHOICES = [
+        ('1','Day?'),
+        ('3','Night')
+     ]
+     is_the_flight=models.CharField(
+        max_length=1,
+        choices = IS_THE_FLIGHT_CHOICES,
+
+     )
+     PLANNING_CHOICES = [
+        ('3','Rush to get off ground'),
+        ('1','No Hurry'),
+        ('0','Used charts and computer to assist')
+     ]
+     planning=models.CharField(
+        max_length=1,
+        choices = PLANNING_CHOICES,
+
+     )
+     BOOLEAN_CHOICES_30 = [
+        ('3','Yes'),
+        ('0','No'),
+     ]
+     used_computer_program_for_all_planning=models.CharField(
+        max_length=1,
+        choices = BOOLEAN_CHOICES_30,
+
+     )
+     BOOLEAN_CHOICES_03 = [
+        ('0','Yes'),
+        ('3','No'),
+     ]
+     did_you_verify_weigth_and_balance=models.CharField(
+        max_length=1,
+        choices = BOOLEAN_CHOICES_03,
+
+     )
+     did_you_evaluate_performance=models.CharField(
+        max_length=1,
+        choices = BOOLEAN_CHOICES_03,
+
+     )
+     BOOLEAN_CHOICES_02 = [
+        ('0','Yes'),
+        ('2','No')
+     ]
+     do_you_brief_your_passangers_on_the_ground_and_in_flight=models.CharField(
+        max_length=1,
+        choices = BOOLEAN_CHOICES_02,
+
+     )
+     flight_goal = models.TextField(null=True,blank=True)
+     location = models.CharField(null=True,blank=True,max_length=100)
+     flight_range = models.DecimalField(null=True,blank=True,decimal_places=2, max_digits=10)
+     duration = models.DurationField(null=True,blank=True,max_length=100)#4 days, 5:06
+     altitude = models.CharField(null=True,blank=True,max_length=50)
+     battery_stat = models.CharField(null=True,blank=True,max_length=100)
+
+     def get_score(self):
+         return sum([
+            int(self.sleep),
+            int(self.how_do_you_feel),
+            int(self.weather_at_termination),
+            int(self.how_is_the_day_going),
+            int(self.is_the_flight),
+            int(self.planning),
+            int(self.used_computer_program_for_all_planning),
+            int(self.did_you_verify_weigth_and_balance),
+            int(self.did_you_evaluate_performance),
+            int(self.do_you_brief_your_passangers_on_the_ground_and_in_flight)
+         ])
+
+     def __str__(self):
+         return f"{self.date}. {self.pilot_name}, Flight from: {self.flight_from} To: {self.to}. Score ({self.get_score()})"
+```
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
