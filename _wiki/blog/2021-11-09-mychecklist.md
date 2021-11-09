@@ -64,6 +64,7 @@ ol li {
 {% include image.html file="network/heatmap.jpg" caption="heatmap with 7 prior check dataset" %}
 
 ## .table
+- install sqlite3 on windows 'npm install --save sqlite3` in the project directory.
 > run following cli to access sqlite3 table
 
 ```
