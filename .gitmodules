@@ -7,3 +7,6 @@
 [submodule "resources/learningjavascript/ethan-brown"]
 	path = resources/learningjavascript/ethan-brown
 	url = https://github.com/Li-YangZhong/learning_javascript_by_ethan_brown.git
+[submodule "djangovue"]
+	path = djangovue
+	url = git@github.com:aiegoo/djangovue
