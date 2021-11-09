@@ -368,6 +368,38 @@ class Assessment(models.Model):
          return f"{self.date}. {self.pilot_name}, Flight from: {self.flight_from} To: {self.to}. Score ({self.get_score()})"
 ```
 
+## django validation and test
+
+```python
+python manage.py test
+```
+to run a validation test. This test to make sure that only the selected values are valid for each question that why trying to replace each point with 50 will raise error 400)#bad request and the form will not be submitted
+
+and check the code from test/test_view.py
+
+```python
+  count = 0
+        for key in new_assessment_score:
+            #test valid assesment point
+            response = client.post(url,data={**test_data_1,key:50})
+            self.assertEqual(response.status_code,400)#bad request
+            cp = test_data_1.copy()
+            del cp[key]
+            #test that all assesment choice field are filled before submitting
+            response = client.post(url,data=cp)
+            self.assertEqual(response.status_code,400)#bad request
+```
+
+While del cp[key] `#test` that all assesment choice field are filled before submitting
+```python
+response = client.post(url,data=cp)
+self.assertEqual(response.status_code,400)
+```
+to make sure that all question (point based) are required to be filled out in order to allow submit.
+
+**ref** check both the the risk_assesment/test and api/test; also have a look at api/view.py, and api/permisssions.py
+
+
 
 {% include taglogic.html %}
 
