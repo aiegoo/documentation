@@ -60,7 +60,55 @@ ol li {
 3. adding more data fields
    1. flight goal, location, flight range, duration, altitude, battery stat as to fill out the form's entries of basic information
    2. integrating data mining scripts using [this](https://pf3.36io.co/images/network/data_viz.jpg)
+   3. 
 {% include image.html file="network/heatmap.jpg" caption="heatmap with 7 prior check dataset" %}
+
+## .table
+> run following cli to access sqlite3 table
+
+```
+sqlite3 db.sqlite3
+.tables
+
+# or
+python manage.py dbshell 
+
+# instead of using db client run the following;
+.header on
+.mode column
+pragma table_info('table you are looking for');
+# this will get the outputs like in far below
+```
+```
+CREATE TABLE IF NOT EXISTS "risk_assesment_assessment" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "date" date NOT NULL, "pilot_name" varchar(50) NOT NULL, "flight_from" varchar(255) NOT NULL, "to" varchar(255) NOT NULL, "sleep" varchar(1) NOT NULL, "how_do_you_feel" varchar(1) NOT NULL, "weather_at_termination" varchar(1) NOT NULL, "how_is_the_day_going" varchar(1) NOT NULL, "is_the_flight" varchar(1) NOT NULL, "planning" varchar(1) NOT NULL, "used_computer_program_for_all_planning" varchar(1) NOT NULL, "did_you_verify_weigth_and_balance" varchar(1) NOT NULL, "did_you_evaluate_performance" varchar(1) NOT NULL, "do_you_brief_your_passangers_on_the_ground_and_in_flight" varchar(1) NOT NULL, "flight_goal" text NULL, "location" varchar(100) NULL, "flight_range" decimal NULL, "duration" bigint NULL, "altitude" varchar(50) NULL, "battery_stat" varchar(100) NULL);
+```
+
+```
+sqlite> pragma table_info('risk_assesment_assessment');
+cid         name        type        notnull     dflt_value  pk        
+----------  ----------  ----------  ----------  ----------  ----------
+0           id          integer     1                       1         
+1           date        date        1                       0         
+2           pilot_name  varchar(50  1                       0         
+3           flight_fro  varchar(25  1                       0         
+4           to          varchar(25  1                       0         
+5           sleep       varchar(1)  1                       0         
+6           how_do_you  varchar(1)  1                       0         
+7           weather_at  varchar(1)  1                       0         
+8           how_is_the  varchar(1)  1                       0         
+9           is_the_fli  varchar(1)  1                       0         
+10          planning    varchar(1)  1                       0         
+11          used_compu  varchar(1)  1                       0         
+12          did_you_ve  varchar(1)  1                       0         
+13          did_you_ev  varchar(1)  1                       0         
+14          do_you_bri  varchar(1)  1                       0         
+15          flight_goa  text        0                       0         
+16          location    varchar(10  0                       0         
+17          flight_ran  decimal     0                       0         
+18          duration    bigint      0                       0         
+19          altitude    varchar(50  0                       0         
+20          battery_st  varchar(10  0                       0  
+```
 
 {% include taglogic.html %}
 
