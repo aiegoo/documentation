@@ -406,6 +406,35 @@ to make sure that all question (point based) are required to be filled out in or
 ### more update on db schema change
 * let user know the unit or type of data, and you can now search using any of the fields (from the three fields).
 
+```diff
+cid         name        type        notnull     dflt_value  pk
+----------  ----------  ----------  ----------  ----------  ----------
+0           id          integer     1                       1
+1           date        date        1                       0
+2           pilot_name  varchar(50  1                       0
+3           flight_fro  varchar(25  1                       0
+4           to          varchar(25  1                       0
+5           sleep       varchar(1)  1                       0
+6           how_do_you  varchar(1)  1                       0
+7           weather_at  varchar(1)  1                       0
+8           how_is_the  varchar(1)  1                       0
+9           is_the_fli  varchar(1)  1                       0
+10          planning    varchar(1)  1                       0
+11          used_compu  varchar(1)  1                       0
+12          did_you_ve  varchar(1)  1                       0
+13          did_you_ev  varchar(1)  1                       0
+14          do_you_bri  varchar(1)  1                       0
+15          flight_goa  text        0                       0
+16          location    varchar(10  0                       0
+17          flight_ran  decimal     0                       0
+18          duration    bigint      0                       0
+19          battery_st  varchar(10  0                       0
+20          altitude    decimal     0                       0
+sqlite>
+
+```
+**see** the difference between the  changes.
+
 {% include taglogic.html %}
 
 {% include links.html %}
