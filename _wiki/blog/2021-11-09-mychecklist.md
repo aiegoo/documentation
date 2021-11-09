@@ -65,7 +65,7 @@ ol li {
 
 ## .table
 - install sqlite3 on windows 'npm install --save sqlite3` in the project directory.
-> run following cli to access sqlite3 table
+> run following cli to access sqlite3 table [sof](https://dba.stackexchange.com/questions/40656/how-to-properly-format-sqlite-shell-output)
 
 ```diff
 sqlite3 db.sqlite3
