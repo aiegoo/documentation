@@ -35,8 +35,7 @@ updated: 2021-11-07 20:11
 ### data_viz with javascript and python
 
 While  there  is  some  brilliant  coding  behind  these  JavaScript  converters and many solid use-cases, they do have big limitations:
-* Automated code-conversion may well do the job but the code produced is usually pretty
-impenetrable for a human being.
+* Automated code-conversion may well do the job but the code produced is usually pretty impenetrable for a human being.
 * Adapting and customising the resulting plots using the power‐ ful browser-based JavaScript development environment is likely to be very painful.
 *  You are limited to the subset of plot types currently available in the libraries.
 *   Interactivity is very basic at the moment. Stitching this together is better done in JavaScript, using the browser’s dev-tools.
@@ -48,6 +47,16 @@ impenetrable for a human being.
 
 {% include image.html file="network/data_viz.jpg" caption="data viz toolchain" %}
 
+### installing simple python webserver
+
+```bash
+# If Python version returned above is 3.X
+# On Windows, try "python -m http.server" or "py -3 -m http.server"
+python3 -m http.server
+# If Python version returned above is 2.X
+python -m SimpleHTTPServer
+```
+To change ports; `python3 -m http.server 8800`
 ## installing latest wireshark to linux
 
 {% include copyto.html %}

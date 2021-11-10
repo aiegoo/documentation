@@ -4,11 +4,13 @@ layout: post
 permalink: 2021-09-26-googlesheet.html
 sidebar: other_sidebar
 collection: wiki
-summary: "Google Sheets API"
-tags: [wiki, api]
+summary: "Google Sheets API with github Pages and API"
+tags: [django, database, api]
+tagName: api
+keywords: "django api google sheet database credential github sync"
 excerpt_separator: <!--more-->
 date: 2021-09-26 00:12:03 +0900
-updated: 2021-09-26 00:15 AM
+updated: 2021-11-10 5:55 PM
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
@@ -95,6 +97,8 @@ latex: false
   ```
 
 2. `googleSheetToPython.py` 이름으로된 파일을 생성하고 아래 코드를 적어넣자
+
+
   ```python
   # 라이브러리를 임포트한다 
   import gspread
@@ -180,5 +184,64 @@ latex: false
 #### Javascript 개념 설명 사이트
 
 * [클로저의 개념, Polemaweb?](https://poiemaweb.com/js-closure) : 클로저의 개념 설명, 모던 자바스크립트 Deep Dive의 저자?
+
+
+## Data hacker
+<p>As part of the research for my Spencer Fellowship, I’m trying to track as many of the financial, political, and social networks in ed-tech as I can. (I’m casting the net wide at first, but my project will surely narrow as I progress.)
+
+I’m using a variety of digital tools to do this, but relying heavily on GitHub Pages (which I already use to manage all my websites and projects) and Google Spreadsheets. This walkthrough is as much to remind me how this process works as it is to help others.
+</p>
+- what you will need;
+* a GitHub account
+* the desktop version of GitHub
+* a Google account
+* a text editor (I use Sublime Text; also recommended: Atom, which is built by GitHub)
+
+### Create a github repo
+You will need to enable github Pages as well before starting to edit the files for layout or structure.
+
+### Create a google spreadsheet
+<p> The Google Spreadsheet is going to work as the database, of sorts, for this project. All updates to the data will take place in the spreadsheet, and through a couple of pieces of code, the GitHub repository will then be updated. (This can be scheduled to happen [programmatically](https://www.easycron.com/), or you can just do this manually. I do the latter.)
+Each tab in your spreadsheet will be used to create a YAML file – a human-readable data file. I recommend lower case names for the tabs. Use hyphens if you want the name to be more than one word. The top row in each tab will dictate the data structure.</p>
+
+### make the spreadsheet public
+This won’t allow anyone else to edit the document. But it will provide a JSON representation of its contents, which means you can program against it.
+
+![publish-to-web](https://s3.amazonaws.com/hackedu/2017-07-28-howto11.png)
+
+Google gives you the link to your spreadsheet. Copy that down somewhere. If you look at the URL in your browser, you can readily see what you need to know: there’s lengthy string of characters after docs.google.com/spreadsheets/d/ and before /edit. That’s the sheet ID.
+
+### set up the code for integration
+So here’s one of the things I love about GitHub and why I use it for all my projects. You can really easily copy files from another project into your new project, so you don’t need to write anything from scratch. You mostly need to edit a few lines in various files. And because the files on GitHub are openly available, you can also download or fork repositories.
+
+Copy all the files from one of my data projects – there’s a long list at Hack Education Data – into the local folder that contains your project. Don’t worry. Nothing will change on GitHub until you sync what’s stored locally with what’s stored on GitHub. And you can always revert back to earlier changes. (Another huge benefit.)
+
+Here I’ve copied all the files from my work on the Chan Zuckerberg Initiative because the data structure for the project is almost identical. In that project too, I had two tabs in my Google Spreadsheet – one for people and one for investments. If your tabs have different names, you’ll need to rename the files inside the _data folder.
+![data_file](https://s3.amazonaws.com/hackedu/2017-07-28-howto12.png)
+Open up all the files in the folder in your text editor. Mostly, you’re just going to have to make a bunch of small changes to each file – changing headers, in my case, from Chan Zuckerberg Initiative to Emerson Collective.
+
+![liquid_script](https://s3.amazonaws.com/hackedu/2017-07-28-howto14.png)
+
+This is the markup language that’s used to build sites using the data in the _data folder. But I think you can see a bit of the logic here. The variable “investments” draws on the data in the site.data.investments file. The data is going to be sorted by “Name.” (Note: “Name” is capitalized in that column in my Google Spreadsheet.) And for each record – “investment” – display on the page the investment.Name, Investment.Date, and Investment.Amount. (Also note: these are also capitalized.) These are displayed as a list, but you can change the HTML to suit your needs.
+
+You'll need to change data in the _config.yml file. ![_config](https://s3.amazonaws.com/hackedu/2017-07-28-howto15.png)  
+
+You’ll need to add the sheet ID from your Google Spreadsheet. (Remember that? You wrote it down, right?) That’s the integration_spreadsheet_key. Make sure your GitHub user name and the name of the repo are correct too.
+### personal access token for URL
+
+Updating your GitHub repository with your spreadsheet data is going to happen via a URL. Obviously, update the URL below with the correct data.
+
+https://[your GitHub name].github.io/[the name of your repository]/pull-spreadsheet/?key=[spreadsheet ID]&worksheet=[name of the worksheet]&token=[your GitHub personal access token]&org=[your GitHub name]&repo=[the name of the repository]&branch=master
+
+I always open the browser console to make sure the code has run correctly.
+You can double-check and make sure the YAML file has been updated successfully. Ideally if there are errors, the console will help you troubleshoot them. (I have found that sometimes characters like accents throw errors at this stage.)
+
+The repository on GitHub will now be updated with the new spreadsheet data. You will need to sync the repo locally to update the files on your machine.
+
+The URL for your project will be [your GitHub username].github.io/[repo name]. In my case, this project is available at hack-education-data.github.io/emerson-collective.
+
+## more reading
+[githubapi](https://mixedanalytics.com/knowledge-base/access-github-data-in-google-sheets/)
+
 
 {% include links.html %}

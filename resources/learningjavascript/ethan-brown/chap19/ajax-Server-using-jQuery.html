@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="serverInfo">
+        Server is running on <span data-replace="platform">???</span>
+        with Node <span data-replace="nodeVersion">???</span>. It has
+        been up for <span data-replace="uptime">???</span> seconds.
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+    <script>
+        const req = new XMLHttpRequest();
+        function refreshServerInfo() {
+            const $serverInfo = $('.serverInfo');
+            $.get('http://localhost:7070').then(
+                // successful return
+                function (data) {
+                    Object.keys(data).forEach(p => {
+                        $(`[data-replace="${p}"]`).text(data[p]);
+                    });
+                },
+                function (jqXHR, textStatus, err) {
+                    console.error(err);
+                    $serverInfo.addClass('error')
+                        .html('Error connecting to server.');
+                }
+            );
+        }
+        setInterval(refreshServerInfo, 200);
+
+        req.addEventListener('load', function () {
+            // this.responseText is a string containing JSON; we use
+            // JSON.parse to convert it to an object
+            const data = JSON.parse(this.responseText);
+            // In this example, we only want to replace text within the <div>
+            // that has class "serverInfo"
+            const serverInfo = document.querySelector('.serverInfo');
+            // Iterate over the keys in the object returned from the server
+            // ("platform", "nodeVersion", and "uptime"):
+            Object.keys(data).forEach(p => {
+                // Find elements to replace for this property (if any)
+                const replacements =
+                    serverInfo.querySelectorAll(`[data-replace="${p}"]`);
+                // replace all elements with the value returned from the server
+                for (let r of replacements) {
+                    r.textContent = data[p];
+
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

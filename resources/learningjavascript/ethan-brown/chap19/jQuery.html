@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="highlight">This is the first sentence</p>
+    <p class="highlight">This is the second sentence <span class="code">a span</span></p>
+    <p>This is the third sentence<span class="code">a span</span></p>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            // code here is run after all HTML has been
+            // loaded and the DOM is constructed
+            console.log('first sentence written inside jQuery code')
+        });
+
+        $(function () {
+            // code here is run after all HTML has been
+            // loaded and the DOM is constructed
+            console.log('second sentence written inside jQuery code')
+        });
+        jQuery(function () {
+            console.log('third sentence written inside jQuery code')
+        });
+
+        jQuery(document).ready(function () {
+            console.log('fourth sentence written inside jQuery code')
+        });
+
+        const $paras = $('p');
+        console.log($paras.length); // number of paragraph tags matched
+        console.log(typeof $paras); // "object"
+        console.log($paras instanceof $); // true
+        console.log($paras instanceof jQuery); // true
+
+        const $newPara = $('<p>Newly created paragraph...</p>');
+        console.log(typeof $newPara)
+
+        // $('p').text('ALL PARAGRAPHS REPLACED');
+
+        // $('p').html('<i>ALL</i> PARAGRAPHS REPLACED');
+
+        /*  $('p') // matches all paragraphs
+             .eq(2) // third paragraph (zero-based indices)
+             .html('<i>THIRD</i> PARAGRAPH REPLACED');
+         */
+
+        // $('p').eq(2).remove();
+
+        // $('p')
+        //     .append('<sup>*</sup>');
+
+        // $('p')
+        //     .after('<hr>')
+        //     .before('<hr>');
+
+        // $('<sup>*</sup>').appendTo('p'); // equivalent to $('p').append('<sup>*</sup>')
+        // $('<hr>').insertBefore('p'); // equivalent to $('p').before('<hr>')
+        // $('<hr>').insertAfter('p'); // equivalent to $('p').after('<hr>');
+
+        // $('p:odd').css('color', 'red');
+
+        // $('p')
+        //     .after('<hr>')
+        //     .append('<sup>*</sup>')
+        //     .filter(':odd')
+        //     .css('color', 'red');
+
+        // $('p')
+        //     .after('<hr>')
+        //     .not('.highlight')
+        //     .css('margin-left', '20px');
+
+        // $('p')
+        //     .before('<hr>')
+        //     .find('.code')
+        //     .css('font-size', '30px');
+
+        // const para2 = $('p').get(1); // second <p> (zero-based indices)
+        // console.log(para2)
+
+        const paras = $('p').get(); // array of all <p> elements
+        console.log(paras)
+
+    </script>
+</body>
+
+</html>
