@@ -33,13 +33,16 @@ latex: false
 
 ### 개요
 
+{{site.data.alerts.details}}
+
 * 당신혹은 당신조직이 구글 시트를 데이타 저장용도로 써본적이 있나?
 * 구글 시트를 무료 데이타베이스로 쓸 수 있을지 궁금했던적이 있나?
 * 전통적인 database를 구매하지 않고 당신의 웹서비스에 구글시트를 database로 활용할 수 있을지 생각하나?
 * 위의 질문들이 모두 Yes 라면, 바로 정확한 지점에 왔다 .
 * 이 포스트에서는 구글시트를 database로 사용하기 위해 data를 변환하는 방법과 사용방법에 대해 논의한다.
 * 다음의 목차를 참고 해라 (목차 생략, 위의 목차를 참고하라)
-
+:::
+{{site.data.alerts.ended}}
 ### Introduction to Google Sheets
 
 * 구글 시트는 클라우드에서 spreadsheet 기능을 제공하는 구글의 서비스다.
@@ -53,6 +56,18 @@ latex: false
   5. 시트의 데이타를 효율적으로 분석하기 위해 플러그인 , 애드온, 커스텀 코드를 적용할 수 있다.
 
 ### Introduction to Databases
+<style>
+  details.calloutDetails::after { /* to place marker for the height of content */
+    content: "";
+    position: absolute;
+    display: table;
+    clear: both;
+    left: 1px;
+    width: 20px;
+    background-color: rgba(128, 128, 128, 0.644);}
+</style>
+
+{{site.data.alerts.details}}
 
 * database는 행과 열로 표현된 data collection 이다
 * database는 database management system(DBMS)의 도움을 받아, 데이타의 구조적인 정보를 조정하고 구성한다.
@@ -64,6 +79,7 @@ latex: false
   3. SQL Server
   4. MongoDB(NoSQL database)
 
+{{site.data.alerts.ended}}
 ### Google Sheets as a Database
 
 * 구글 시트는 매우 발전된 형태의 spreadsheet로 바로 사용할 수있는 많은 능력이 탑재되어있다
