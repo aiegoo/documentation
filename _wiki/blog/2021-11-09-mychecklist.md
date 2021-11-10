@@ -60,7 +60,6 @@ ol li {
 3. adding more data fields
    1. flight goal, location, flight range, duration, altitude, battery stat as to fill out the form's entries of basic information
    2. integrating data mining scripts using [this](https://pf3.36io.co/images/network/data_viz.jpg)
-   3.
 {% include image.html file="network/heatmap.jpg" caption="heatmap with 7 prior check dataset" %}
 
 ## .table
@@ -74,6 +73,8 @@ sqlite3 db.sqlite3
 
 # or
 python manage.py dbshell
+# or
+python manage.py shell
 
 # instead of using db client run the following;
 .header on
@@ -86,6 +87,17 @@ pragma table_info('table you are looking for');
 .separator ROW "\n"
 .nullvalue NULL
 ```
+
+### to update from shell
+
+```bash
+from risk_assesment.models import Assessment
+data = Assessment.objects.all()
+data.delete()
+```
+
+{% include image.html file="dbshell.png" caption="the output of the shell cli above" %}
+
 
 ```diff
 CREATE TABLE IF NOT EXISTS "risk_assesment_assessment" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "date" date NOT NULL, "pilot_name" varchar(50) NOT NULL, "flight_from" varchar(255) NOT NULL, "to" varchar(255) NOT NULL, "sleep" varchar(1) NOT NULL, "how_do_you_feel" varchar(1) NOT NULL, "weather_at_termination" varchar(1) NOT NULL, "how_is_the_day_going" varchar(1) NOT NULL, "is_the_flight" varchar(1) NOT NULL, "planning" varchar(1) NOT NULL, "used_computer_program_for_all_planning" varchar(1) NOT NULL, "did_you_verify_weigth_and_balance" varchar(1) NOT NULL, "did_you_evaluate_performance" varchar(1) NOT NULL, "do_you_brief_your_passangers_on_the_ground_and_in_flight" varchar(1) NOT NULL, "flight_goal" text NULL, "location" varchar(100) NULL, "flight_range" decimal NULL, "duration" bigint NULL, "altitude" varchar(50) NULL, "battery_stat" varchar(100) NULL);

@@ -36,7 +36,8 @@ updated: 2021-11-10 01:50
 
 #### regarding python version issue
 - I have posted this issue at the forum;
-- 
+
+{{site.data.alerts.note}}
 Hi drf gurus;
 
 This is to say hello to everyone here. Thanks for keeping me a company on this learning journey.
