@@ -28,6 +28,7 @@ I stopped. Paused. Did some physical exercise. And sat down on my other pc where
 I followed a strict step-by-step to deal with the issues. First, I removed unnecessary submodules and changed ssh naming with https:// protocol and made sure that each repo is public. Satisfied that no other liquid syntax issues were hiding from sights, I ran `git push origin edit --force` This command played out and got it deployed as well.
 
 Back to my laptop pc with the issues, I created a branch and pushed to the remote for safekeeping. Back onto the edit branch, I pulled from the remote and found fortunately that a couple of files were in merge conflicts. I have fixed them by committing it. No issues were found. And started checking for the status quo of any issues, which were nonexistant.
+![image](https://user-images.githubusercontent.com/42961200/141099724-d8cd3c09-f38c-4d3a-a975-77e433e1518e.png)
 
 ## curious programmer
 I was working on an about module a few months ago. I wasn't satisfied with it so I deleted it with all its related files 😬 Now I need to recover parts of this data that I had so conveniently discarded. 🤦‍♀️
