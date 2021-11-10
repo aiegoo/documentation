@@ -66,6 +66,8 @@ sudo apt update
 sudo apt install wireshark
 ```
 
+<iframe width="100%" height="500" frameborder="0"
+  src="https://observablehq.com/embed/@d3/bubble-chart?cell=*"></iframe>
 
 {% include taglogic.html %}
 
