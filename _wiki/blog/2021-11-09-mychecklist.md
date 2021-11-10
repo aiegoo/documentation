@@ -2,14 +2,14 @@
 layout: post
 title: "Pilot's preflight checklist FAA"
 name: "mychecklist"
-tags: [drone]
+tags: [drone, django]
 tagName: drone
 permalink: 2021-11-09-mychecklist.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: drone
-keywords: "drone preflight checklist"
+keywords: "drone preflight checklist django"
 summary: "Tue, Nov 09, 21, preflight checklist with data mining"
 excerpt_separator: <!--more-->
 toc: true
@@ -55,65 +55,73 @@ Steps to follow;
 <style>
 ol li {
      counter-set: list 3;
-}
+}echo
 </style>
 3. adding more data fields
    1. flight goal, location, flight range, duration, altitude, battery stat as to fill out the form's entries of basic information
    2. integrating data mining scripts using [this](https://pf3.36io.co/images/network/data_viz.jpg)
-   3. 
+   3.
 {% include image.html file="network/heatmap.jpg" caption="heatmap with 7 prior check dataset" %}
 
 ## .table
 - install sqlite3 on windows 'npm install --save sqlite3` in the project directory.
-> run following cli to access sqlite3 table
+> run following cli to access sqlite3 table [sof](https://dba.stackexchange.com/questions/40656/how-to-properly-format-sqlite-shell-output)
 
-```
+```diff
 sqlite3 db.sqlite3
 .tables
 
 # or
-python manage.py dbshell 
+python manage.py dbshell
 
 # instead of using db client run the following;
 .header on
 .mode column
 pragma table_info('table you are looking for');
 # this will get the outputs like in far below
-```
-```
-CREATE TABLE IF NOT EXISTS "risk_assesment_assessment" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "date" date NOT NULL, "pilot_name" varchar(50) NOT NULL, "flight_from" varchar(255) NOT NULL, "to" varchar(255) NOT NULL, "sleep" varchar(1) NOT NULL, "how_do_you_feel" varchar(1) NOT NULL, "weather_at_termination" varchar(1) NOT NULL, "how_is_the_day_going" varchar(1) NOT NULL, "is_the_flight" varchar(1) NOT NULL, "planning" varchar(1) NOT NULL, "used_computer_program_for_all_planning" varchar(1) NOT NULL, "did_you_verify_weigth_and_balance" varchar(1) NOT NULL, "did_you_evaluate_performance" varchar(1) NOT NULL, "do_you_brief_your_passangers_on_the_ground_and_in_flight" varchar(1) NOT NULL, "flight_goal" text NULL, "location" varchar(100) NULL, "flight_range" decimal NULL, "duration" bigint NULL, "altitude" varchar(50) NULL, "battery_stat" varchar(100) NULL);
+# for more detailed control of shell output formatting
+.mode column
+.headers on
+.separator ROW "\n"
+.nullvalue NULL
 ```
 
+```diff
+CREATE TABLE IF NOT EXISTS "risk_assesment_assessment" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "date" date NOT NULL, "pilot_name" varchar(50) NOT NULL, "flight_from" varchar(255) NOT NULL, "to" varchar(255) NOT NULL, "sleep" varchar(1) NOT NULL, "how_do_you_feel" varchar(1) NOT NULL, "weather_at_termination" varchar(1) NOT NULL, "how_is_the_day_going" varchar(1) NOT NULL, "is_the_flight" varchar(1) NOT NULL, "planning" varchar(1) NOT NULL, "used_computer_program_for_all_planning" varchar(1) NOT NULL, "did_you_verify_weigth_and_balance" varchar(1) NOT NULL, "did_you_evaluate_performance" varchar(1) NOT NULL, "do_you_brief_your_passangers_on_the_ground_and_in_flight" varchar(1) NOT NULL, "flight_goal" text NULL, "location" varchar(100) NULL, "flight_range" decimal NULL, "duration" bigint NULL, "altitude" varchar(50) NULL, "battery_stat" varchar(100) NULL);
 ```
+{% include copyto.html %}
+
+```diff
 sqlite> pragma table_info('risk_assesment_assessment');
-cid         name        type        notnull     dflt_value  pk        
+cid         name        type        notnull     dflt_value  pk
 ----------  ----------  ----------  ----------  ----------  ----------
-0           id          integer     1                       1         
-1           date        date        1                       0         
-2           pilot_name  varchar(50  1                       0         
-3           flight_fro  varchar(25  1                       0         
-4           to          varchar(25  1                       0         
-5           sleep       varchar(1)  1                       0         
-6           how_do_you  varchar(1)  1                       0         
-7           weather_at  varchar(1)  1                       0         
-8           how_is_the  varchar(1)  1                       0         
-9           is_the_fli  varchar(1)  1                       0         
-10          planning    varchar(1)  1                       0         
-11          used_compu  varchar(1)  1                       0         
-12          did_you_ve  varchar(1)  1                       0         
-13          did_you_ev  varchar(1)  1                       0         
-14          do_you_bri  varchar(1)  1                       0         
-15          flight_goa  text        0                       0         
-16          location    varchar(10  0                       0         
-17          flight_ran  decimal     0                       0         
-18          duration    bigint      0                       0         
-19          altitude    varchar(50  0                       0         
-20          battery_st  varchar(10  0                       0  
+0           id          integer     1                       1
+1           date        date        1                       0
+2           pilot_name  varchar(50  1                       0
+3           flight_fro  varchar(25  1                       0
+4           to          varchar(25  1                       0
+5           sleep       varchar(1)  1                       0
+6           how_do_you  varchar(1)  1                       0
+7           weather_at  varchar(1)  1                       0
+8           how_is_the  varchar(1)  1                       0
+9           is_the_fli  varchar(1)  1                       0
+10          planning    varchar(1)  1                       0
+11          used_compu  varchar(1)  1                       0
+12          did_you_ve  varchar(1)  1                       0
+13          did_you_ev  varchar(1)  1                       0
+14          do_you_bri  varchar(1)  1                       0
+15          flight_goa  text        0                       0
+16          location    varchar(10  0                       0
+17          flight_ran  decimal     0                       0
+18          duration    bigint      0                       0
+19          altitude    varchar(50  0                       0
+20          battery_st  varchar(10  0                       0
+
 ```
 
 ## RESTful API
 
-Please read the [restfulapi blog](/2021-11-09-django-api.html) for more details. 
+Please read the [restfulapi blog](/2021-11-09-django-api.html) for more details.
 
 I have once created this serializer for Arduino sensors;
 
@@ -143,7 +151,7 @@ def readarduino(ServerName):
 	while True:
 		try:
 			data=port.readline()
-			
+
 			data2 = data.decode(encoding="utf-8").strip()
 			print(data2)
 			form_data = {"Server_Name": ServerName,"NameSpace":"namespace","Detected_Count":data2}
@@ -154,13 +162,13 @@ def readarduino(ServerName):
 			# 	now = datetime.now()
 			# 	entities = (ServerName, now.strftime("%Y-%m-%d %H:%M:%S"))
 			# 	sql_insert(con, entities)
-				
+
 			print("record inserted")
 		except KeyboardInterrupt:
 			break
 		time.sleep(0.05)
 	port.close()
-	
+
 def startread():
 	thread = threading.Thread(target=readarduino, args=("RPI_1",))
 	thread.start()
@@ -168,7 +176,7 @@ def startread():
 
 def main():
 	startread()
-	
+
 
 if __name__ == '__main__':
     main()
@@ -374,6 +382,7 @@ class Assessment(models.Model):
 ```python
 python manage.py test
 ```
+
 to run a validation test. This test to make sure that only the selected values are valid for each question that why trying to replace each point with 50 will raise error 400)#bad request and the form will not be submitted
 
 and check the code from test/test_view.py
@@ -392,15 +401,46 @@ and check the code from test/test_view.py
 ```
 
 While del cp[key] `#test` that all assesment choice field are filled before submitting
+
 ```python
 response = client.post(url,data=cp)
 self.assertEqual(response.status_code,400)
 ```
 to make sure that all question (point based) are required to be filled out in order to allow submit.
 
-**ref** check both the the risk_assesment/test and api/test; also have a look at api/view.py, and api/permisssions.py
+**ref** check both the risk_assesment/test and api/test; also have a look at api/view.py, and api/permisssions.py
 
+### more update on db schema change
+* following is to let user know the unit or type of data, and you can now search using any of the fields (from the three fields).
 
+```diff
+cid         name        type        notnull     dflt_value  pk
+----------  ----------  ----------  ----------  ----------  ----------
+0           id          integer     1                       1
+1           date        date        1                       0
+2           pilot_name  varchar(50  1                       0
+3           flight_fro  varchar(25  1                       0
+4           to          varchar(25  1                       0
+5           sleep       varchar(1)  1                       0
+6           how_do_you  varchar(1)  1                       0
+7           weather_at  varchar(1)  1                       0
+8           how_is_the  varchar(1)  1                       0
+9           is_the_fli  varchar(1)  1                       0
+10          planning    varchar(1)  1                       0
+11          used_compu  varchar(1)  1                       0
+12          did_you_ve  varchar(1)  1                       0
+13          did_you_ev  varchar(1)  1                       0
+14          do_you_bri  varchar(1)  1                       0
+15          flight_goa  text        0                       0
+16          location    varchar(10  0                       0
+17          flight_ran  decimal     0                       0
+18          duration    bigint      0                       0
+19          battery_st  varchar(10  0                       0
+20          altitude    decimal     0                       0
+sqlite>
+
+```
+**see** the difference between the  changes.
 
 {% include taglogic.html %}
 
