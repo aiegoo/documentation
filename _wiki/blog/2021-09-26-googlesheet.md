@@ -219,4 +219,11 @@ Copy all the files from one of my data projects – there’s a long list at Hac
 Here I’ve copied all the files from my work on the Chan Zuckerberg Initiative because the data structure for the project is almost identical. In that project too, I had two tabs in my Google Spreadsheet – one for people and one for investments. If your tabs have different names, you’ll need to rename the files inside the _data folder.
 ![data_file](https://s3.amazonaws.com/hackedu/2017-07-28-howto12.png)
 Open up all the files in the folder in your text editor. Mostly, you’re just going to have to make a bunch of small changes to each file – changing headers, in my case, from Chan Zuckerberg Initiative to Emerson Collective.
+
+![liquid_script](https://s3.amazonaws.com/hackedu/2017-07-28-howto14.png)
+
+This is the markup language that’s used to build sites using the data in the _data folder. But I think you can see a bit of the logic here. The variable “investments” draws on the data in the site.data.investments file. The data is going to be sorted by “Name.” (Note: “Name” is capitalized in that column in my Google Spreadsheet.) And for each record – “investment” – display on the page the investment.Name, Investment.Date, and Investment.Amount. (Also note: these are also capitalized.) These are displayed as a list, but you can change the HTML to suit your needs.
+
+You'll need to change data in the _config.yml file. ![c_conf](https://s3.amazonaws.com/hackedu/2017-07-28-howto15.png)  You’ll need to add the sheet ID from your Google Spreadsheet. (Remember that? You wrote it down, right?) That’s the integration_spreadsheet_key. Make sure your GitHub user name and the name of the repo are correct too.
+### personal access token
 {% include links.html %}
