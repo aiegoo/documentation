@@ -47,6 +47,16 @@ While  there  is  some  brilliant  coding  behind  these  JavaScript  converters
 
 {% include image.html file="network/data_viz.jpg" caption="data viz toolchain" %}
 
+### installing simple python webserver
+
+```bash
+# If Python version returned above is 3.X
+# On Windows, try "python -m http.server" or "py -3 -m http.server"
+python3 -m http.server
+# If Python version returned above is 2.X
+python -m SimpleHTTPServer
+```
+To change ports; `python3 -m http.server 8800`
 ## installing latest wireshark to linux
 
 {% include copyto.html %}
