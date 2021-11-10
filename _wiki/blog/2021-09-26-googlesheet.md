@@ -4,13 +4,13 @@ layout: post
 permalink: 2021-09-26-googlesheet.html
 sidebar: other_sidebar
 collection: wiki
-summary: "Google Sheets API"
+summary: "Google Sheets API with github Pages and API"
 tags: [django, database, api]
 tagName: api
-keywords: "django api google sheet database credential"
+keywords: "django api google sheet database credential github sync"
 excerpt_separator: <!--more-->
 date: 2021-09-26 00:12:03 +0900
-updated: 2021-09-26 00:15 AM
+updated: 2021-11-10 5:55 PM
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]] 
@@ -224,6 +224,24 @@ Open up all the files in the folder in your text editor. Mostly, you’re just g
 
 This is the markup language that’s used to build sites using the data in the _data folder. But I think you can see a bit of the logic here. The variable “investments” draws on the data in the site.data.investments file. The data is going to be sorted by “Name.” (Note: “Name” is capitalized in that column in my Google Spreadsheet.) And for each record – “investment” – display on the page the investment.Name, Investment.Date, and Investment.Amount. (Also note: these are also capitalized.) These are displayed as a list, but you can change the HTML to suit your needs.
 
-You'll need to change data in the _config.yml file. ![c_conf](https://s3.amazonaws.com/hackedu/2017-07-28-howto15.png)  You’ll need to add the sheet ID from your Google Spreadsheet. (Remember that? You wrote it down, right?) That’s the integration_spreadsheet_key. Make sure your GitHub user name and the name of the repo are correct too.
-### personal access token
+You'll need to change data in the _config.yml file. ![_config](https://s3.amazonaws.com/hackedu/2017-07-28-howto15.png)  
+
+You’ll need to add the sheet ID from your Google Spreadsheet. (Remember that? You wrote it down, right?) That’s the integration_spreadsheet_key. Make sure your GitHub user name and the name of the repo are correct too.
+### personal access token for URL
+
+Updating your GitHub repository with your spreadsheet data is going to happen via a URL. Obviously, update the URL below with the correct data.
+
+https://[your GitHub name].github.io/[the name of your repository]/pull-spreadsheet/?key=[spreadsheet ID]&worksheet=[name of the worksheet]&token=[your GitHub personal access token]&org=[your GitHub name]&repo=[the name of the repository]&branch=master
+
+I always open the browser console to make sure the code has run correctly.
+You can double-check and make sure the YAML file has been updated successfully. Ideally if there are errors, the console will help you troubleshoot them. (I have found that sometimes characters like accents throw errors at this stage.)
+
+The repository on GitHub will now be updated with the new spreadsheet data. You will need to sync the repo locally to update the files on your machine.
+
+The URL for your project will be [your GitHub username].github.io/[repo name]. In my case, this project is available at hack-education-data.github.io/emerson-collective.
+
+## more reading
+[githubapi](https://mixedanalytics.com/knowledge-base/access-github-data-in-google-sheets/)
+
+
 {% include links.html %}
