@@ -14,12 +14,20 @@ summary: "Thu, Oct 21, 21, refactor move delete and remove differ-filter rev-lis
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2021-10-21T14:59:50 +0900
-updated: 2021-10-21 14:59
+updated: 2021-11-10 07:29 PM
 ---
 * TOC
 {:toc}
+
+## Nov 10, 2021 submodule issue스크린샷, 2021-11-10 19-46-26 ran `git submodule deinit -- submodule path` which produced many errors such as not having the path. So I ran `rm -rf the submodule folder`, then `git rm --cached submodule_path` all of these actions I took resulted in more chaos. From this catastrophe, I had foreboding sense that I would run `git reset --hard toworkingcommit`. I know I would lose all the work of today.
+
+I stopped. Paused. Did some physical exercise. And sat down on my other pc where my work of yesterday was preserved.
+
+I followed a strict step-by-step to deal with the issues. First, I removed unnecessary submodules and changed ssh naming with https:// protocol and made sure that each repo is public. Satisfied that no other liquid syntax issues were hiding from sights, I ran `git push origin edit --force` This command played out and got it deployed as well.
+
+Back to my laptop pc with the issues, I created a branch and pushed to the remote for safekeeping. Back onto the edit branch, I pulled from the remote and found fortunately that a couple of files were in merge conflicts. I have fixed them by committing it. No issues were found. And started checking for the status quo of any issues, which were nonexistant.
 
 ## curious programmer
 I was working on an about module a few months ago. I wasn't satisfied with it so I deleted it with all its related files 😬 Now I need to recover parts of this data that I had so conveniently discarded. 🤦‍♀️
@@ -37,7 +45,7 @@ git lg --name-status | grep <TERM>
 Below is an example of the output where I got the relative filename for the about page. 👏
 
 $ git lg --name-status | grep about
-```diff 
+```diff
 * 1a1305c |  Add about page (4 months ago) [Clarice Bouwer]
 | A     src/Components/Headers/about.js
 | A     src/images/about/people.jpg
