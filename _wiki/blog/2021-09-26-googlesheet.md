@@ -185,4 +185,28 @@ latex: false
 
 * [클로저의 개념, Polemaweb?](https://poiemaweb.com/js-closure) : 클로저의 개념 설명, 모던 자바스크립트 Deep Dive의 저자?
 
+
+## Data hacker
+<p>As part of the research for my Spencer Fellowship, I’m trying to track as many of the financial, political, and social networks in ed-tech as I can. (I’m casting the net wide at first, but my project will surely narrow as I progress.)
+
+I’m using a variety of digital tools to do this, but relying heavily on GitHub Pages (which I already use to manage all my websites and projects) and Google Spreadsheets. This walkthrough is as much to remind me how this process works as it is to help others.
+</p>
+- what you will need;
+* a GitHub account
+* the desktop version of GitHub
+* a Google account
+* a text editor (I use Sublime Text; also recommended: Atom, which is built by GitHub)
+
+### Create a github repo
+You will need to enable github Pages as well before starting to edit the files for layout or structure.
+
+### Create a google spreadsheet
+<p> The Google Spreadsheet is going to work as the database, of sorts, for this project. All updates to the data will take place in the spreadsheet, and through a couple of pieces of code, the GitHub repository will then be updated. (This can be scheduled to happen [programmatically](https://www.easycron.com/), or you can just do this manually. I do the latter.)
+Each tab in your spreadsheet will be used to create a YAML file – a human-readable data file. I recommend lower case names for the tabs. Use hyphens if you want the name to be more than one word. The top row in each tab will dictate the data structure.</p>
+
+### make the spreadsheet public
+This won’t allow anyone else to edit the document. But it will provide a JSON representation of its contents, which means you can program against it.
+
+![publish-to-web](https://s3.amazonaws.com/hackedu/2017-07-28-howto11.png)
+
 {% include links.html %}
