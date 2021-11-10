@@ -3,7 +3,3 @@
 	url = git@github.com:aiegoo/test-actions
 [submodule "jsimpatient"]
 	path = jsimpatient
-	url = https://github.com/aiegoo/jsimpatient
-[submodule "resources/learningjavascript/ethan-brown"]
-	path = resources/learningjavascript/ethan-brown
-	url = https://github.com/Li-YangZhong/learning_javascript_by_ethan_brown.
