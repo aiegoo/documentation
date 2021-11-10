@@ -2,7 +2,7 @@
 layout: post
 title: "Pilot's preflight checklist FAA"
 name: "mychecklist"
-tags: [drone, django]
+tags: [drone, django, database]
 tagName: drone
 permalink: 2021-11-09-mychecklist.html
 sidebar: other_sidebar
