@@ -25,8 +25,14 @@ latex: false
 
 [d3-official](d3js.org)
 
-## 원문
+### books
+[datacleaning](https://github.com/aiegoo/uas-reference/blob/master/data/datacleaning.pdf)
 
+[googleugide](https://github.com/aiegoo/uas-reference/blob/master/data/googleguide.pdf)
+
+[googlesheet-gas](https://github.com/aiegoo/uas-reference/blob/master/data/googlesheet-gas.pdf)
+## 원문
+  
 * [Using Google Sheets as a Database: A Comprehensive Analysis, HEVO](https://hevodata.com/learn/google-sheets-as-a-database/)
 
 ### Using Google Sheeta as a Database: A Comprehensive Analysis
