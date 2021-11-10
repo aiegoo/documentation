@@ -30,6 +30,7 @@ updated: 2021-11-10 01:50
 ### getting development environment
 - vscode, python, visualstudio intellicode preview, **editor.rulers 79**.
 - webapi objective, api definition
+- First to use non-standard python packages, we will create venv with cli `python3 -m venv venv` and then source the env by `source venv/bin or /Scripts/activate`, which will display (venv) to the shell prompt. To check successful setup, run `pip list` and check the packages.
 - how to handle requirements.txt; `python -m pip install -r requirements.txt` to install all the packages.
 
 
