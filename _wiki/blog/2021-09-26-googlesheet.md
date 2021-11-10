@@ -13,12 +13,17 @@ date: 2021-09-26 00:12:03 +0900
 updated: 2021-11-10 5:55 PM
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 latex: false
 ---
 
 * TOC
 {:toc}
+
+## googlesheet and  data-viz
+[observablehq](https://observablehq.com/@floatingpurr/observable-twitter-2021)
+
+[d3-official](d3js.org)
 
 ## 원문
 
@@ -65,16 +70,16 @@ latex: false
 * 클라우드 기반 앱이기 때문에, 작은 어플리케이션이나 웹사이트의 database로도 활용할 수 있다.
 * MySQL이나 PostgreSQL 처럼 많은 돈을 지불해야하는 DB들은 가볍게 무시하고..
   * 구글 시트를 이용하여 실시간으로 data를 저장하거나 관리할 수 있다.
-* DB의 사용처를 구글 시트가 완전히 대체할 수있다고 말하는것은 아니지만 
+* DB의 사용처를 구글 시트가 완전히 대체할 수있다고 말하는것은 아니지만
   * 작은 dataset에 한해서 옵션정도가 될 수는 있다
 * 어떻게 Google Sheets를 database로 사용하는지 보자
 
-### 필요한 준비물 
+### 필요한 준비물
 
 1. Google Cloud Platform Account
 2. Python 3.6 or later
-3. Excel data와 프로그래밍 언어에 대한 기본적인 이해 
-   
+3. Excel data와 프로그래밍 언어에 대한 기본적인 이해
+
 ### Google Cloud Console에서 프로젝트를 시작함
 
 1. 구글 API Manager로 가서 신규 프로젝트를 생성한다
@@ -84,11 +89,11 @@ latex: false
 3. Python 프로그램에서 생성 될 요청을 인증(authenticate)하는 데 사용할 자격 증명(credential)을 생성한다.
   ![그림3](https://lh4.googleusercontent.com/KMoH9JB7Pg_8L1uozU3dI416jvwxa4N0S8d4QTJIPk1T-AWMewvc00qKcQyQUIFk1Wk4GXv-dPxDGjklKo8ka6NJiOoN5JVzq4PHbMeHvaJ_t4vSdnZKcOyLmFlLIQJEIZdGYQbj)
 4. 생성된 JSON Key를 로컬머신에 `keys.json`이라는 이름으로 저장한다
-5. 텍스트 에디터로 생성된 키를 Open하고 **client_email** 프로퍼티 로 언급된 이메일 주소를 복사한다. 
+5. 텍스트 에디터로 생성된 키를 Open하고 **client_email** 프로퍼티 로 언급된 이메일 주소를 복사한다.
 6. "Tutorial" 이름으로 시트를 생성하고 몆가지 데이터를 추가해본다
 7. 그 시트의 접근권한을 위 email 주소에 공유한다. 이 작업은 API를 통해 그 시트로의 접근권한을 허용한다.
   ![그림4](https://lh6.googleusercontent.com/dl_tSQ4HObs0gFVZeJAlgT6vy5fUHd-5WMNtRXBlA5bYBvQDXGyS1jYMhHDTSmx3SptRbp8EIilssq-rS8nxUjf6QWervs75plItAEuRc1CO359XPaKJXFIkMwfLNJOXaAySUyZM)
-  
+
 ### Connect to Spreadsheet via Python
 
 1. 좋아하는 Python IDE를 열고 아래 패키지를 설치한다
@@ -100,7 +105,7 @@ latex: false
 
 
   ```python
-  # 라이브러리를 임포트한다 
+  # 라이브러리를 임포트한다
   import gspread
   # oauth2client 에서 가져온 Service client credential
   from oauth2client.service_account import ServiceAccountCredentials
@@ -142,8 +147,8 @@ latex: false
 * 구글 시트는 사용자가 데이타를 관리하고 분석할 수있는 훌륭한 기능들을 제공한다
 * 하지만 그것이 기존 database를 완전히 대체하는 것은 아니다
 * 구글 시트를 database로 사용하게 될 때 맞닥뜨리게 되는 몇가지 제약(constraints)들에 대해 알아보자
-  1. **내결함성 부족** 
-    * 구글시트는 클라우드를 통해 이용가능하지만, 기존 database와 수준의 내결함성(fault-tolerant)은 없다 
+  1. **내결함성 부족**
+    * 구글시트는 클라우드를 통해 이용가능하지만, 기존 database와 수준의 내결함성(fault-tolerant)은 없다
     * 만약 어떤 사용자라도 spreadsheet을 지운다면, 모든 데이타는 날아갈 것이다.
     * 반면에 기존 database는 데이타가 다중 노드로 복제되며 훨신 내결함성이 좋은 시스템을 제공한다.
   2. **스토리지 제약**
@@ -224,7 +229,7 @@ Open up all the files in the folder in your text editor. Mostly, you’re just g
 
 This is the markup language that’s used to build sites using the data in the _data folder. But I think you can see a bit of the logic here. The variable “investments” draws on the data in the site.data.investments file. The data is going to be sorted by “Name.” (Note: “Name” is capitalized in that column in my Google Spreadsheet.) And for each record – “investment” – display on the page the investment.Name, Investment.Date, and Investment.Amount. (Also note: these are also capitalized.) These are displayed as a list, but you can change the HTML to suit your needs.
 
-You'll need to change data in the _config.yml file. ![_config](https://s3.amazonaws.com/hackedu/2017-07-28-howto15.png)  
+You'll need to change data in the _config.yml file. ![_config](https://s3.amazonaws.com/hackedu/2017-07-28-howto15.png)
 
 You’ll need to add the sheet ID from your Google Spreadsheet. (Remember that? You wrote it down, right?) That’s the integration_spreadsheet_key. Make sure your GitHub user name and the name of the repo are correct too.
 ### personal access token for URL

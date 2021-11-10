@@ -17,7 +17,7 @@ hr_faded: '<hr class="faded"/>'
 hr_shaded: '<hr class="shaded"/>'
 
 
-details: '<details><summary class="detailSummary">Click to open</summary><p><div markdown="1">'
+details: '<details style="max-width: 640px;background: #dacf97;box-sizing: border-box;padding: 10px 20px;"><summary class="detailSummary">Click to open</summary><p><div markdown="1">'
 ended: '</div></p></details>'
 
 # Copyright 2021 Google LLC
