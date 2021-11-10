@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<p class="rainbow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos veniam porro totam numquam, eligendi provident sequi. Ut veritatis minus recusandae ullam cum alias at error laudantium modi animi minima cumque, quis nesciunt eaque optio quidem esse similique vitae debitis!</p>
+
+    <script>
+
+        function getRainbowIterator() {
+            const colors = ['red', 'orange', 'yellow', 'green',
+                'blue', 'indigo', 'violet'];
+            let colorIndex = -1;
+            return {
+                next() {
+                    if (++colorIndex >= colors.length) colorIndex = 0;
+                    return { value: colors[colorIndex], done: false };
+                }
+            };
+        }
+
+        const rainbowIterator = getRainbowIterator();
+        setInterval(function () {
+            document.querySelector('.rainbow')
+                .style['background-color'] = rainbowIterator.next().value;
+        }, 500);
+
+    </script>
+</body>
+
+</html>

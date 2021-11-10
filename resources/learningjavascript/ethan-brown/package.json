@@ -1,0 +1,32 @@
+{
+  "name": "learning_javascript_by_ethan_brown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Li-YangZhong/learning_javascript_by_ethan_brown.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Li-YangZhong/learning_javascript_by_ethan_brown/issues"
+  },
+  "homepage": "https://github.com/Li-YangZhong/learning_javascript_by_ethan_brown#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "moment": "^2.24.0",
+    "underscore": "^1.9.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0"
+  }
+}
