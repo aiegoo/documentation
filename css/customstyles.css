@@ -2214,12 +2214,12 @@ details>p, details p {
 }
 details.calloutDetails::after { /* to place marker for the height of content */
     content: "";
-    position: absolute;
+/*     position: absolute;
     display: table;
     clear: both;
     left: 1px;
     width: 20px;
-    background-color: rgba(128, 128, 128, 0.644);
+    background-color: rgba(128, 128, 128, 0.644); */
 }
 
 /* copyto clipboard css using copyHeader.html in _includes */
