@@ -98,7 +98,7 @@ latex: false
 
 2. `googleSheetToPython.py` 이름으로된 파일을 생성하고 아래 코드를 적어넣자
 
-{% include copyto.html %}
+
   ```python
   # 라이브러리를 임포트한다 
   import gspread
