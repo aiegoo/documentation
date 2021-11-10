@@ -29,7 +29,8 @@ updated: 2021-11-10 01:50
 
 ### getting development environment
 - vscode, python, visualstudio intellicode preview, **editor.rulers 79**.
-- webapi objective, api definition,
+- webapi objective, api definition
+- how to handle requirements.txt; `python -m pip install -r requirements.txt` to install all the packages.
 
 
 #### regarding python version issue
