@@ -5,7 +5,9 @@ permalink: 2021-09-26-googlesheet.html
 sidebar: other_sidebar
 collection: wiki
 summary: "Google Sheets API"
-tags: [wiki, api]
+tags: [django, database, api]
+tagName: api
+keywords: "django api google sheet database credential"
 excerpt_separator: <!--more-->
 date: 2021-09-26 00:12:03 +0900
 updated: 2021-09-26 00:15 AM
@@ -95,6 +97,8 @@ latex: false
   ```
 
 2. `googleSheetToPython.py` 이름으로된 파일을 생성하고 아래 코드를 적어넣자
+
+{% include copyto.html %}
   ```python
   # 라이브러리를 임포트한다 
   import gspread
