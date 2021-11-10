@@ -209,4 +209,14 @@ This won’t allow anyone else to edit the document. But it will provide a JSON 
 
 ![publish-to-web](https://s3.amazonaws.com/hackedu/2017-07-28-howto11.png)
 
+Google gives you the link to your spreadsheet. Copy that down somewhere. If you look at the URL in your browser, you can readily see what you need to know: there’s lengthy string of characters after docs.google.com/spreadsheets/d/ and before /edit. That’s the sheet ID.
+
+### set up the code for integration
+So here’s one of the things I love about GitHub and why I use it for all my projects. You can really easily copy files from another project into your new project, so you don’t need to write anything from scratch. You mostly need to edit a few lines in various files. And because the files on GitHub are openly available, you can also download or fork repositories.
+
+Copy all the files from one of my data projects – there’s a long list at Hack Education Data – into the local folder that contains your project. Don’t worry. Nothing will change on GitHub until you sync what’s stored locally with what’s stored on GitHub. And you can always revert back to earlier changes. (Another huge benefit.)
+
+Here I’ve copied all the files from my work on the Chan Zuckerberg Initiative because the data structure for the project is almost identical. In that project too, I had two tabs in my Google Spreadsheet – one for people and one for investments. If your tabs have different names, you’ll need to rename the files inside the _data folder.
+![data_file](https://s3.amazonaws.com/hackedu/2017-07-28-howto12.png)
+Open up all the files in the folder in your text editor. Mostly, you’re just going to have to make a bunch of small changes to each file – changing headers, in my case, from Chan Zuckerberg Initiative to Emerson Collective.
 {% include links.html %}
