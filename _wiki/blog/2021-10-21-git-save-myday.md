@@ -21,13 +21,14 @@ updated: 2021-11-10 07:29 PM
 * TOC
 {:toc}
 
-## Nov 10, 2021 submodule issue스크린샷, 2021-11-10 19-46-26 ran `git submodule deinit -- submodule path` which produced many errors such as not having the path. So I ran `rm -rf the submodule folder`, then `git rm --cached submodule_path` all of these actions I took resulted in more chaos. From this catastrophe, I had foreboding sense that I would run `git reset --hard toworkingcommit`. I know I would lose all the work of today.
+## Nov 10, 2021 submodule issue
+I ran `git submodule update --recursive --remote` to get the all the files from different repos. My documentation repo is serving Pages and some issues of not accepting ssh format (git@github.com) resulted in the infamous build error. In confusion, I only deleted the part in `.git/config`, and honestly looked for modules with a wrong name. So I ran ran `git submodule deinit -- submodule path` which produced many errors such as not having the path. So I ran `rm -rf the submodule folder`, then `git rm --cached submodule_path` all of these actions I took resulted in more chaos. From this catastrophe, I had foreboding sense that I would run `git reset --hard toworkingcommit`. I know I would lose all the work of today.
 
 I stopped. Paused. Did some physical exercise. And sat down on my other pc where my work of yesterday was preserved.
 
 I followed a strict step-by-step to deal with the issues. First, I removed unnecessary submodules and changed ssh naming with https:// protocol and made sure that each repo is public. Satisfied that no other liquid syntax issues were hiding from sights, I ran `git push origin edit --force` This command played out and got it deployed as well.
 
-Back to my laptop pc with the issues, I created a branch and pushed to the remote for safekeeping. Back onto the edit branch, I pulled from the remote and found fortunately that a couple of files were in merge conflicts. I have fixed them by committing it. No issues were found. And started checking for the status quo of any issues, which were nonexistant.
+Back to my laptop pc with the issues, I created a branch and pushed to the remote for safekeeping. Back onto the edit branch, I pulled from the remote and found fortunately that only a couple of files were in merge conflicts. I have fixed them by committing it. No issues were found. And started checking for the status quo of any issues, which were nonexistant.
 ![image](https://user-images.githubusercontent.com/42961200/141099724-d8cd3c09-f38c-4d3a-a975-77e433e1518e.png)
 
 When I pushed the once-again-whole commit, I noticed there were 16 other commits being pushed together.
