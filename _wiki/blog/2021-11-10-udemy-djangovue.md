@@ -53,7 +53,7 @@ I remember using Django (cookiecutter or something) with Visual Studio, which wa
 
 Happy coding, especially if you are new here like me. Let's divide and conquer.
 
-
+{{site.data.alerts.end}}
 
 
 {% include taglogic.html %}
