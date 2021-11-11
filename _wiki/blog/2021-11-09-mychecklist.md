@@ -459,7 +459,6 @@ sqlite>
 
 ## d3js
 
-{% highlight html %}
 {% include copyto.html %}
       <template id="">
           <svg  id='' width='100%' height='100%'>
@@ -696,7 +695,10 @@ sqlite>
 
       });
     </script>
-{% endhighlight %}
+
+as of Nov 12, 2021, I have updated some fields and can be found here [code](https://github.com/aiegoo/mychecklist/blob/195d463847b0bcc8b1ebad566475355db2680864/risk_assesment_project/risk_assesment/templates/risk_assesment/assesment.html),
+
+[result](https://github.com/aiegoo/mychecklist/blob/195d463847b0bcc8b1ebad566475355db2680864/risk_assesment_project/risk_assesment/templates/risk_assesment/assesment_result.html)
 
 {% include taglogic.html %}
 
