@@ -14,7 +14,7 @@ summary: "Thu, Nov 11, 21, data binding"
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2021-11-11T10:30:01 +0900
 updated: 2021-11-11 10:30
 ---
@@ -262,7 +262,7 @@ This is data binding, and it's a big topic, so it gets its own section.
 [next](/2021-11-11-d3-databinding.html)
 
 
-<script type="text/javascript" src="{{ "/js/parts-of-a-graph.js" }}"></script>
+<script type="text/javascript" src="{{ '/js/parts-of-a-graph.js' }}"></script>
 
 <style>
 @font-face {
@@ -285,8 +285,8 @@ svg text {
 </style>
 
 <div id="wrapper"></div>
-<script type="text/javascript" src="{{ "/js/d3.v7.js" }}"></script>
-<script type="text/javascript" src="{{ "/js/nyc-chart.js" }}"></script>
+<script type="text/javascript" src="{{ '/js/d3.v7.js' }}"></script>
+<script type="text/javascript" src="{{ '/js/nyc-chart.js' }}"></script>
 
 
 {% include taglogic.html %}
