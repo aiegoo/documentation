@@ -673,7 +673,7 @@ sqlite>
           function( event ) {
             event.preventDefault();
             var formValues = $(this).serialize();
-            $.post('{% url "assesment-page" %}',
+            $.post('/assesment/',
                 formValues,
                 function(data){
                   if (data['status'] == 'ok')
