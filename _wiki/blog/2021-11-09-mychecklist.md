@@ -457,6 +457,247 @@ sqlite>
 ```
 **see** the difference between the  changes.
 
+## d3js
+
+{% include copyto.html %}
+'''html
+      <template id="">
+          <svg  id='' width='100%' height='100%'>
+            <defs>
+              <linearGradient id="grad1" x1="100%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(0,117,192);stop-opacity:1" />
+                <stop offset="25%" style="stop-color:rgb(43,169,83);stop-opacity:1" />
+                <stop offset="75%" style="stop-color:rgb(249,238,25);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(146,42,37);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <text id='bottom-text'  x='2.2em' y='97%' dominant-baseline="central" text-anchor="middle" fill="darkblue">Low risk</text>
+            <text id='top-text' x='4em' y='2.5%'  text-anchor="middle" dominant-baseline="central" fill="red">Endangerment</text>
+        </svg>
+
+      </template>
+      <div id='svg_container' class="row my-3">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2.2.1/src/js.cookie.min.js"></script>
+
+    <script src = "https://d3js.org/d3-path.v1.min.js"></script>
+    <script src = "https://d3js.org/d3.v4.min.js"></script>
+    <script>
+
+      $(document).ready(function() {
+        var lineData = [];
+        const makeSVG = () => {
+          let parentCont = document.getElementById('svg_container');
+          let size = parentCont.getBoundingClientRect();
+          // console.log(size)
+          let HEIGHT = size.height*0.97;
+          let WIDTH = size.width*0.97;
+          let y_margin = HEIGHT*0.14;
+          let x_margin = WIDTH*0.06;
+          parentCont.innerHTML = '';
+          var temp = document.getElementsByTagName("template")[0];
+          var clon = temp.content.cloneNode(true);
+
+          parentCont.appendChild(clon);
+          // console.log(parentCont.children)
+          parentCont.children[0].id='visualisation';
+
+          let vis = d3.select('#visualisation');
+          x1 = WIDTH*0.01,
+          barWidth = size.height*0.78,
+          y1 = HEIGHT*0.08,
+          barHeight = size.height*0.3,
+          numberHues = 35;
+            var idGradient = "legendGradient";
+            var svgForLegendStuff = vis;
+            svgForLegendStuff.append("rect")
+                .attr("fill","url(#" + 'grad1' + ")")
+                .attr("x",x1)
+                .attr("y",y1)
+                .attr("width",barHeight)
+                .attr("height",barWidth)
+                .attr("rx",20)  //rounded corners, of course!
+                .attr("ry",20);
+
+            //we go from a somewhat transparent blue/green (hue = 160º, opacity = 0.3) to a fully opaque reddish (hue = 0º, opacity = 1)
+            var hueStart = 160, hueEnd = 0;
+            var opacityStart = 0.3, opacityEnd = 1.0;
+            var theHue, rgbString, opacity,p;
+
+            var deltaPercent = 1/(numberHues-1);
+            var deltaHue = (hueEnd - hueStart)/(numberHues - 1);
+            var deltaOpacity = (opacityEnd - opacityStart)/(numberHues - 1);
+
+
+            var theData = [];
+            for (var i=0;i < numberHues;i++) {
+            theHue = hueStart + deltaHue*i;
+
+            rgbString = d3.hsl(theHue,1,0.6).toString();
+            opacity = opacityStart + deltaOpacity*i;
+            p = 0 + deltaPercent*i;
+            theData.push({"rgb":rgbString, "opacity":opacity, "percent":p});
+            }
+            var stops = d3.select('#' + idGradient).selectAll('stop')
+                .data(theData);
+
+            stops.enter().append('stop');
+
+            stops.attr('offset',function(d) {
+                        return d.percent;
+            })
+            .attr('stop-color',function(d) {
+                        return d.rgb;
+            })
+            .attr('stop-opacity',function(d) {
+                        return d.opacity;
+            });
+
+            Date.prototype.addDays = function(hours,minus=false) {
+                var date = new Date(this.valueOf());
+                if(!minus){
+                  date.setHours(date.getHours() + hours);
+                }else{
+                  date.setHours(date.getHours() - hours);
+                }
+
+                return date;
+            }
+
+            Date.prototype.addDays = function(days,minus=false) {
+                var date = new Date(this.valueOf());
+                if(minus){
+                  date.setDate(date.getDate() - days);
+                }else{
+                  date.setDate(date.getDate() + days);
+                }
+                return date;
+            }
+
+          var date = new Date();
+          var min_date = new Date();
+          var max_date = new Date();
+          if (lineData.length==0){
+            min_date = min_date.addDays(days=1,minus=true);
+            max_date = max_date.addDays(days=1,minus=false);
+          }else{
+            min_date = new Date(lineData[0][0])
+            min_date = min_date.addDays(days=1,minus=true);
+            max_date = new Date(lineData[lineData.length-1][0])
+            max_date = max_date.addDays(days=1,minus=false);
+          }
+          var xScale = d3.scaleTime()
+           .domain([min_date,max_date])
+           .range([x_margin,WIDTH*0.88]);
+          var yScale = d3.scaleLinear()
+           .domain([30, 0])
+           .range([(y_margin*0.8), HEIGHT-(y_margin)]);
+           var xAxis = d3.axisBottom(xScale);
+           var yAxis = d3.axisLeft(yScale).ticks(4);
+            vis.append("g")
+              .attr('transform', "translate("+x_margin+"," + 0 + ')')
+             .call(yAxis);
+            vis.append("g")
+             .attr('transform', "translate("+ x_margin +"," + (HEIGHT-y_margin) + ')')
+             .call(xAxis);
+             var lineFunc = d3.line()
+              .x(function(d, index) {
+                return xScale(new Date(d[0]));
+              })
+              .y(function(d) {
+              return yScale(d[1]);
+              })
+              .curve(d3.curveBasis);
+
+              var path = vis.append("svg:path")
+             .attr("d", lineFunc(lineData))
+             .attr("stroke", "grey")
+             .attr("stroke-width", 2)
+             .attr("fill", "none");
+
+
+             var d = vis.selectAll("dot")
+              .data(lineData)
+              .enter().append("circle")
+              .attr("r", '0.3em')
+              .attr("cx", function(d) { return xScale(new Date(d[0])); })
+              .attr("cy", function(d) { return yScale(d[1]); })
+              .attr("fill",
+                function(d) {
+                  if(d[1]<=10){
+                    return '#008F8F'
+                  }else if(d[1]<=20){
+                    return '#8FC73E';
+                  }else{
+                    return '#F05723';
+                  }
+
+                });
+        }
+        makeSVG()
+        $(window).resize(function(){
+          makeSVG();
+        })
+        document.getElementById('assessment_form').addEventListener('input',(e)=>{
+          var column_1 = 0;
+          for(let el of document.querySelectorAll('.column_1 input[type=radio]') ){
+            if (el.checked){
+              column_1+=parseInt(el.value)
+            }
+          }
+          document.querySelector('.column_1 input[name=col_1]').value=column_1;
+
+          var column_2 = 0;
+          for(let el of document.querySelectorAll('.column_2 input[type=radio]') ){
+            if (el.checked){
+              column_2+=parseInt(el.value)
+            }
+          }
+          document.querySelector('.column_2 input[name=col_2]').value=column_2;
+          document.querySelector('input[name=col_3]').value= column_2+column_1 ;
+        })
+        var csrftoken = Cookies.get('csrftoken');
+        function csrfSafeMethod(method) {
+          // these HTTP methods do not require CSRF protection
+          return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+              if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+              }
+            }
+          });
+        document.querySelector('#assessment_form').addEventListener('submit',
+          function( event ) {
+            event.preventDefault();
+            var formValues = $(this).serialize();
+            $.post('{% url "assesment-page" %}',
+                formValues,
+                function(data){
+                  if (data['status'] == 'ok')
+                  {
+                    lineData = [];
+                    // console.log(data['prev_data']);
+                    for(let ent of data['prev_data']){
+                        lineData.push([ent['date'],ent['score']]);
+                      }
+                      // Clear the form fields
+                    	event.target.reset();
+                      makeSVG();
+
+                  }
+              }
+            );
+          }
+        );
+
+      });
+    </script>
+'''
+
 {% include taglogic.html %}
 
 {% include links.html %}
