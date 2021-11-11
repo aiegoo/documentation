@@ -287,8 +287,8 @@ svg text {
 </style>
 
 <div id="wrapper"></div>
-<script src="/js/d3.v7.js"></script>
-<script src="/js/nyc-chart.js"></script>
+<script type="text/javascript" src="{{ "/js/d3.v7.js" }}"></script>
+<script type="text/javascript" src="{{ "/js/nyc-chart.js" }}"></script>
 
 
 {% include taglogic.html %}
