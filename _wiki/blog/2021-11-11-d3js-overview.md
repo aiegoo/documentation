@@ -24,7 +24,7 @@ updated: 2021-11-11 10:30
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## square.github.io
-
+[d3fullstack](https://github.com/aiegoo/uas-reference/data/d3fullstack.pdf)
 ## Example
 
 Let's say you have a table in Excel and want to graph it. It's easy! Just point
