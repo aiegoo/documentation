@@ -259,9 +259,7 @@ objects, and by default, it labeled the tick marks appopriately!
 The next thing to do is take our data and transform it into something visible.
 This is data binding, and it's a big topic, so it gets its own section.
 
-<a href="{{ "/data-binding/" | prepend: site.baseurl }}" class="giant-button">
-  Next
-</a>
+[next](/2021-11-11-d3-databinding.html)
 
 
 <script type="text/javascript" src="{{ "/js/parts-of-a-graph.js" }}"></script>
