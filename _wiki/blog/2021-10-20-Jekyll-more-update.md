@@ -21,6 +21,14 @@ updated: 2021-10-21 04:32
 * TOC
 {:toc}
 
+## gulp
+<h2 id="5-참고하면-좋은-자료"><a href="#5-참고하면-좋은-자료" class="headerlink" title="5. 참고하면 좋은 자료"></a>5. 참고하면 좋은 자료</h2><ul>
+<li>Gulp 4.0 달라진 것들 : <a href="https://programmingsummaries.tistory.com/393" target="_blank" rel="noopener">https://programmingsummaries.tistory.com/393</a></li>
+<li>Gulp 공식 사이트 : <a href="https://gulpjs.com" target="_blank" rel="noopener">https://gulpjs.com</a></li>
+<li>Gulp 주요 개념들 : <a href="https://gulpjs.com/docs/en/api/concepts" target="_blank" rel="noopener">https://gulpjs.com/docs/en/api/concepts</a></li>
+<li>프론트엔드 개발을 위한 Gulp <a href="https://github.com/FEDevelopers/tech.description/wiki/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-Gulp" target="_blank" rel="noopener">https://github.com/FEDevelopers/tech.description/wiki/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%9C%84%ED%95%9C-Gulp</a></li>
+</ul>
+
 ## to enable ref in css html
 
 ```css
