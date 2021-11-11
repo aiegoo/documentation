@@ -97,7 +97,7 @@ async function drawLineChart() {
 
 drawLineChart();
 
-
+const makeChart = () => {
 const data = [35, 15, 15, 35]
 const div = d3.select('body')
 const width = window.innerWidth
@@ -124,3 +124,5 @@ g.append('path')
   .style('fill', (d, i) => colorScale(i))
   .style('stroke', '#11141c')
   .style('stroke-width', 4)
+}
+makeChart()
