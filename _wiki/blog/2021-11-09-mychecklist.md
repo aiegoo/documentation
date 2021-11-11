@@ -459,7 +459,8 @@ sqlite>
 
 ## d3js
 
-
+{% highlight html %}
+{% include copyto.html %}
       <template id="">
           <svg  id='' width='100%' height='100%'>
             <defs>
@@ -695,6 +696,7 @@ sqlite>
 
       });
     </script>
+{% endhighlight %}
 
 {% include taglogic.html %}
 
