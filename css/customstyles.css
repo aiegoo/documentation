@@ -1211,6 +1211,12 @@ span.soft {
 }
 
 /* ----------- iPad Pro ----------- */
+@media only screen and (min-device-width: 1112px) and (orientation: landscape) { 
+	div#toc {
+		opacity: 20%;}
+	div#toc:hover {
+		opacity: 100%;
+}
 /* Portrait and Landscape */
 /* @media only screen
   and (min-width: 1024px)
