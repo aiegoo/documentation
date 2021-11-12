@@ -105,6 +105,15 @@ data.delete()
 python manage.py dumpdata risk_assesment --indent=2 --output=risk_assesment/fixtures/assesments.json
 
 python manage.py dumpdata auth.User --indent=2 --output=risk_assesment/fixtures/users.json
+
+# when importing it, just the scripts as in below
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py test
+python manage.py loaddata assesments.json
+python manage.py loaddata users.json
+python manage.py runserver
 ```
 
 
