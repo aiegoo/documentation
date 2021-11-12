@@ -80,8 +80,6 @@ mv $i ${i%.*}_3.6.14.png Rename original .png files with the filename+_3.6.14.pn
 ```
 
 ### git clone branches
-
-{% include copyto.html %}
 ```bash
 git config --global alias.clone-branches '! git branch -a | sed -n "/\/HEAD /d; /\/master$/d; /remotes/p;" | xargs -L1 git checkout -t'
 ```
