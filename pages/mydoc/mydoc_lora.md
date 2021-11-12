@@ -9,6 +9,8 @@ permalink: mydoc_lora.html
 folder: mydoc
 ---
 
+## Narshing archicture 
+[pdf]({{site.github_link}}pdf/lora_architecture.pdf)
 ## Lora gateway and setup
 
 
