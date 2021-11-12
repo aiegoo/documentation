@@ -98,6 +98,15 @@ data.delete()
 
 {% include image.html file="dbshell.png" caption="the output of the shell cli above" %}
 
+### to dump a table to json
+[output_dump](https://github.com/aiegoo/mychecklist/commit/7ac03a3d547376172691522669be66e9d544965c)
+
+```python
+python manage.py dumpdata risk_assesment --indent=2 --output=risk_assesment/fixtures/assesments.json
+
+python manage.py dumpdata auth.User --indent=2 --output=risk_assesment/fixtures/users.json
+```
+
 
 ```diff
 CREATE TABLE IF NOT EXISTS "risk_assesment_assessment" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "date" date NOT NULL, "pilot_name" varchar(50) NOT NULL, "flight_from" varchar(255) NOT NULL, "to" varchar(255) NOT NULL, "sleep" varchar(1) NOT NULL, "how_do_you_feel" varchar(1) NOT NULL, "weather_at_termination" varchar(1) NOT NULL, "how_is_the_day_going" varchar(1) NOT NULL, "is_the_flight" varchar(1) NOT NULL, "planning" varchar(1) NOT NULL, "used_computer_program_for_all_planning" varchar(1) NOT NULL, "did_you_verify_weigth_and_balance" varchar(1) NOT NULL, "did_you_evaluate_performance" varchar(1) NOT NULL, "do_you_brief_your_passangers_on_the_ground_and_in_flight" varchar(1) NOT NULL, "flight_goal" text NULL, "location" varchar(100) NULL, "flight_range" decimal NULL, "duration" bigint NULL, "altitude" varchar(50) NULL, "battery_stat" varchar(100) NULL);
