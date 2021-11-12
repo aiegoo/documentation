@@ -1212,9 +1212,9 @@ span.soft {
 
 /* ----------- iPad Pro ----------- */
 @media only screen and (min-device-width: 1112px) and (orientation: landscape) { 
-	div#toc {
+	div#sidetoc {
 		opacity: 20%;}
-	div#toc:hover {
+	div#sidetoc:hover {
 		opacity: 100%;
 }
 /* Portrait and Landscape */
