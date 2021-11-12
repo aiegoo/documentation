@@ -15,7 +15,15 @@ folder: mydoc
 
 [ARTICLES](#articles)
 
+## it begins with;
 
+{% include copyto.html %}
+```shell
+python -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 ## chapter 5 settings and requirements files
 
 ### settings 
