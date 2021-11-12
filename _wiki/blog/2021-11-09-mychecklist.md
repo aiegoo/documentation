@@ -700,6 +700,78 @@ as of Nov 12, 2021, I have updated some fields and can be found here [code](http
 
 [result](https://github.com/aiegoo/mychecklist/blob/195d463847b0bcc8b1ebad566475355db2680864/risk_assesment_project/risk_assesment/templates/risk_assesment/assesment_result.html)
 
+## issues tracker
+
+```python
+Environment:
+
+
+Request Method: GET
+Request URL: http://127.0.0.1:8000/admin/risk_assesment/assessment/
+
+Django Version: 3.2.9
+Python Version: 3.8.10
+Installed Applications:
+['django.contrib.admin',
+ 'django.contrib.auth',
+ 'django.contrib.contenttypes',
+ 'django.contrib.sessions',
+ 'django.contrib.messages',
+ 'django.contrib.staticfiles',
+ 'risk_assesment.apps.RiskAssesmentConfig',
+ 'rest_framework',
+ 'api.apps.ApiConfig']
+Installed Middleware:
+['django.middleware.security.SecurityMiddleware',
+ 'django.contrib.sessions.middleware.SessionMiddleware',
+ 'django.middleware.common.CommonMiddleware',
+ 'django.middleware.csrf.CsrfViewMiddleware',
+ 'django.contrib.auth.middleware.AuthenticationMiddleware',
+ 'django.contrib.messages.middleware.MessageMiddleware',
+ 'django.middleware.clickjacking.XFrameOptionsMiddleware']
+
+
+
+Traceback (most recent call last):
+  File "/home/tony/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/tony/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tony/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/tony/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tony/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/tony/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/tony/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/tony/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tony/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1815, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/home/tony/.local/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/home/tony/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/tony/.local/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/tony/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1208, in execute_sql
+    return list(result)
+  File "/home/tony/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1646, in cursor_iter
+    for rows in iter((lambda: cursor.fetchmany(itersize)), sentinel):
+  File "/home/tony/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1646, in <lambda>
+    for rows in iter((lambda: cursor.fetchmany(itersize)), sentinel):
+  File "/home/tony/.local/lib/python3.8/site-packages/django/db/utils.py", line 97, in inner
+    return func(*args, **kwargs)
+  File "/usr/lib/python3.8/sqlite3/dbapi2.py", line 64, in convert_date
+    return datetime.date(*map(int, val.split(b"-")))
+
+Exception Type: ValueError at /admin/risk_assesment/assessment/
+Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
+```
+
 {% include taglogic.html %}
 
 {% include links.html %}
