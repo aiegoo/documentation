@@ -719,6 +719,11 @@ as of Nov 12, 2021, I have updated some fields and they can be found here;
 
 [result](https://github.com/aiegoo/mychecklist/blob/195d463847b0bcc8b1ebad566475355db2680864/risk_assesment_project/risk_assesment/templates/risk_assesment/assesment_result.html)
 
+## googlesheet and api
+[google_doc]()
+[client_cred](https://github.com/aiegoo/config/blob/e0e951a27be0b482e6c820a4d9e31548f73056d2/client_secret_18507158082-u2u59jf1om0jf15nl9q0kmu1l18u337j.apps.googleusercontent.com.json)
+[api_evangelist](https://apievangelist.com/blog/)
+[unito_subs](https://unito.io/integrations/google-sheets-github/)
 ## issues tracker
 
 ```python

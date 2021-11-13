@@ -1211,7 +1211,7 @@ span.soft {
 }
 
 /* ----------- iPad Pro ----------- */
-/* @media only screen and (min-device-width: 1112px) and (orientation: landscape) { 
+/* @media only screen and (min-device-width: 1112px) and (orientation: landscape) {
 	div#sidetoc {
 		opacity: 20%;}
 	div#sidetoc:hover {
@@ -1972,6 +1972,16 @@ li.scroll-nav_item a:before {
     left: -11px;
     top: 3px;
 }
+
+.scroll-nav__item--active a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 6 px;
+    left: 0;
+    top: 9 px;
+    bottom: 9 px;
+    background: #ffc313;}
 
 .scroll-nav__item--active>a:hover {
         color: rgba(168, 168, 168, 0.9);
