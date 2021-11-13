@@ -206,9 +206,7 @@ on the corresponding element in the DOM via `selection.exit()`.
 We can use the `remove()` method to immediately delete matched elements, it's
 the opposite of `append()`.
 
-<div class="example-row-2">
-  <div class="example">
-    {% highlight javascript %}
+```javascript
 sales.pop(); // drops the last element
 
 var rects = rects.data(sales); // join the data again
@@ -219,9 +217,9 @@ rectsToRemove.size()
 // 1 -- one element is part of the exit selection
 
 rectsToRemove.remove(); // instantly removes
-    {% endhighlight %}
-  </div>
+```
 
+```html
   <div class="example">
     <svg width="300" height="100">
       <g transform="translate(5, 5)">
@@ -230,7 +228,8 @@ rectsToRemove.remove(); // instantly removes
       </g>
     </svg>
   </div>
-</div>
+```
+
 
 ## Identity and the Key Function
 
@@ -238,9 +237,7 @@ As a quick aside: Javascript object equality is very shallow. Objects are only
 equal if they are actually the same object (identity), not if they have the same
 values:
 
-<div class="example-row-1">
-  <div class="example">
-    {% highlight javascript %}
+```javascript
 var obj1 = { value: 1 };
 // true -- identity
 obj1 == obj1;
@@ -249,9 +246,7 @@ var obj2 = { value: 2 };
 var obj3 = { value: 2 };
 // false -- huh? they have the same values!
 obj2 == obj3;
-    {% endhighlight %}
-  </div>
-</div>
+```
 
 But the example with `selection.exit()` above works! It only removed one element
 from the DOM because we only removed one element from the array, and all the
@@ -267,9 +262,7 @@ parameter, the key function. It's another `(d, i)` callback.
 This example keys objects on their date, so we can match elements across
 separate arrays.
 
-<div class="example-row-1">
-  <div class="example">
-    {% highlight javascript %}
+```javascript
 var sales1 = [
   { product: 'Hoodie', count: 7 },
   { product: 'Jacket', count: 6 }
@@ -296,9 +289,8 @@ nextrects.exit().size();
 nextrects.exit().remove();
 
 nextrects.enter().append('rect'); // adds one element
-    {% endhighlight %}
-  </div>
-</div>
+```
+
 
 ## Transitions `selection.transition()`
 
@@ -375,8 +367,6 @@ We can use transitions to demonstrate this update.
 </div>
 
 ```javascript
-    {% highlight javascript %}
-function toggle() {
   sales = (sales == days[0]) ? days[1] : days[0];
   update();
 }
@@ -403,8 +393,9 @@ function update() {
       return x(d.count);
     });
 };
+```
 
-
+```html
   <div class="example example-result">
     <div>
       <svg width="300" height="100"></svg>
@@ -452,13 +443,14 @@ function update() {
 };
 ```
 
-
+```html
   <div class="example example-result">
     <div>
       <svg width="300" height="100"></svg>
       <button class="toggle">toggle()</button>
     </div>
   </div>
+```
 
 Ok! That was the basics of D3! We've got a few more complex examples, but they
 mostly build on what we've already shown.
