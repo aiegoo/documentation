@@ -743,7 +743,7 @@ I've been trying to find a way to make the model work smoothly with the google d
 
 For now I have two options to choose from;
 -  make the app automatically update the google sheet and to upload all db to google.
--  create a json file that keep track of the app database
+-  create a json file that keeps track of the app database
 
 see the code and setup details in the links below;
 
