@@ -14,7 +14,7 @@ summary: "Thu, Nov 11, 21, data binding"
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2021-11-11T11:09:45 +0900
 updated: 2021-11-11 11:09
 ---
@@ -54,15 +54,15 @@ query later** (the elements may not have been constructed yet).
 Selections are used to map pieces of our data to elements in the DOM. Suppose we
 have some data:
 
-<div class="example-row-1">
+<div class="example-row-1" markdown="1">
   <div class="example">
-    {% highlight javascript %}
+```javascript
 var sales = [
   { product: 'Hoodie',  count: 7 },
   { product: 'Jacket',  count: 6 },
   { product: 'Snuggie', count: 9 },
 ];
-    {% endhighlight %}
+```
   </div>
 </div>
 
