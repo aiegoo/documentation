@@ -54,8 +54,7 @@ query later** (the elements may not have been constructed yet).
 Selections are used to map pieces of our data to elements in the DOM. Suppose we
 have some data:
 
-<div class="example-row-1" markdown="1">
-  <div class="example">
+
 ```javascript
 var sales = [
   { product: 'Hoodie',  count: 7 },
@@ -63,16 +62,13 @@ var sales = [
   { product: 'Snuggie', count: 9 },
 ];
 ```
-  </div>
-</div>
+
 
 And we want to map these to points on a scatterplot. We know we want each object
 in this array to turn into a `<rect>` tag, inside of our `<svg>`
 below:
 
-<div class="example-row-2">
-  <div class="example">
-    {% highlight html %}
+```html
 <!-- before, empty graph -->
 <svg>
 </svg>
@@ -87,16 +83,11 @@ below:
   <rect /><!-- { product: 'Jacket',  count: 6 } -->
   <rect /><!-- { product: 'Snuggie', count: 9 } -->
 </svg>
-    {% endhighlight %}
-  </div>
-</div>
-
+```
 To connect these, we're going to create a selection and use `.data()` to bind
 our data to the selection.
 
-<div class="example-row-1">
-  <div class="example">
-    {% highlight javascript %}
+```javascript
 var svg = d3.select('svg');
 svg.size();
 // 1 -- one <svg> element exists
@@ -106,9 +97,7 @@ var rects = svg.selectAll('rect')
 
 rects.size();
 // 0 -- no <rect> elements exist yet!
-    {% endhighlight %}
-  </div>
-</div>
+```
 
 Okay, now we have a selection but still no elements! We have more work to do.
 
@@ -128,22 +117,16 @@ rects.
 The part of a D3 selection that represents these element-less data-points
 is `selection.enter()`;
 
-<div class="example-row-1"> <div class="example">
-    {% highlight javascript %}
+```javascript
 var newRects = rects.enter();
-    {% endhighlight %}
-  </div>
-</div>
-
+```
 So now `newRects` represents these element-less data-points, so we use
 `append` to add new elements. The elements don't add themselves, we have to
 create the elements that will match the selection ourselves. We use the same
 attribute editing helpers to configure each circle per its data point.
 
 
-<div class="example-row-2">
-  <div class="example">
-    {% highlight javascript %}
+```javascript
 // recall that scales are functions that map from
 // data space to screen space
 var maxCount = d3.max(sales, function(d, i) {
@@ -167,8 +150,8 @@ newRects.append('rect')
   .attr('width', function(d, i) {
     return x(d.count);
   });
-    {% endhighlight %}
-  </div>
+```
+
 
   <div class="example">
     <div class="info">
@@ -393,8 +376,7 @@ We can use transitions to demonstrate this update.
   </div>
 </div>
 
-<div class="ex-2 example-row-2">
-  <div class="example">
+```javascript
     {% highlight javascript %}
 function toggle() {
   sales = (sales == days[0]) ? days[1] : days[0];
@@ -423,8 +405,7 @@ function update() {
       return x(d.count);
     });
 };
-    {% endhighlight %}
-  </div>
+
 
   <div class="example example-result">
     <div>
@@ -432,7 +413,7 @@ function update() {
       <button class="toggle">toggle()</button>
     </div>
   </div>
-</div>
+
 
 Ok, but now time to make it pretty. That's where `selection.transition()`
 comes in. In the above example, we were just using the plain update
@@ -442,9 +423,7 @@ selection to change the values. Here, we'll use `transition()` to make our trans
 and `.delay()` and even a custom easing function `.ease()`, but the defaults
 are pretty nice.
 
-<div class="ex-3 example-row-2">
-  <div class="example">
-    {% highlight javascript %}
+```javascript
 function toggle() {
   sales = (sales == days[0]) ? days[1] : days[0];
   update();
@@ -472,9 +451,8 @@ function update() {
         return x(d.count);
       });
 };
+```
 
-    {% endhighlight %}
-  </div>
 
   <div class="example example-result">
     <div>
@@ -482,7 +460,6 @@ function update() {
       <button class="toggle">toggle()</button>
     </div>
   </div>
-</div>
 
 Ok! That was the basics of D3! We've got a few more complex examples, but they
 mostly build on what we've already shown.
