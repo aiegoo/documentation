@@ -731,6 +731,23 @@ as of Nov 12, 2021, I have updated some fields and they can be found here;
 |---
 | [datacleaning](https://github.com/aiegoo/uas-reference/blob/master/data/datacleaning.pdf) | [googe_guide](https://github.com/aiegoo/uas-reference/blob/master/data/googleguide.pdf) | [googsheet-gas](https://github.com/aiegoo/uas-reference/blob/master/data/googlesheet-gas.pdf)
 
+**other wiki here**
+
+[googleapi]()
+[googleAppScript]()
+[googlesheet]()
+### tl;dr
+I thought it was a quick setup task for the api and googlesheet to work. **principle** working method is to export the db to json format locally to import into google sheet, which then would be ported or pushed to the github repo for deployment.
+
+I've been trying to find a way to make the model work smoothly with the google drive, but it seem it can't be done at least without using commercial service such as unito (see above for the link).
+
+For now I have two options to choose from;
+-  make the app automatically update the google sheet and to upload all db to google.
+-  create a json file that keep track of the app database
+
+see the code and setup details in the links below;
+
+
 ## issues tracker
 
 ```python
