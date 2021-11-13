@@ -42,7 +42,7 @@ but now, it's really time to dig in. `d3.select()` will find one element,
 
 With types, the functions might look something like:
 
-```
+```javascript
 d3.select(String selector) -> (d3.selection)
 ```
 
@@ -70,13 +70,11 @@ below:
 
 ```html
 <!-- before, empty graph -->
-<svg>
-</svg>
-    {% endhighlight %}
-  </div>
+ <div class="example">
+   <svg></svg>
+</div>
 
-  <div class="example">
-    {% highlight html %}
+
 <!-- after, rects graph -->
 <svg>
   <rect /><!-- { product: 'Hoodie',  count: 7 } -->
@@ -413,6 +411,7 @@ function update() {
       <button class="toggle">toggle()</button>
     </div>
   </div>
+```
 
 
 Ok, but now time to make it pretty. That's where `selection.transition()`
