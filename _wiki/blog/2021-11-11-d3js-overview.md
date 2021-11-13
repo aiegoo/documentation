@@ -78,11 +78,11 @@ $80. However, the SVG is drawn in a box that's about 200 by 300 pixels. Dates
 and pixels don't map to one another on their own, so we have to specify a mapping
 somehow.
 
-<div class="info">
+{{site.data.alerts_callout_info}}
   Note that the y-axis flips! The SVG origin, <kbd>(0, 0)</kbd> is in the top left,
   but in this graph, the origin is the bottom left. We call the chart
   <em>y-up</em> and we call SVG <em>y-down</em>.
-</div>
+{{site.data.alerts.end}}
 
 ### The Axes
 
@@ -151,17 +151,13 @@ group. These callbacks are almost always called back with two arguments: the
 element and its index. It's common to name these parameters `d` and `i`
 respectively.
 
-<div class="example-row-1">
-  <div class="example">
-    {% highlight javascript %}
+```javascript
 d3.max(data, function(d, i) { return d.amount });
 // 80
 
 d3.extent(numbers);
 // [1, 10]
-    {% endhighlight %}
-  </div>
-</div>
+```
 
 ### Scales
 
@@ -172,25 +168,16 @@ the approprate part of the screen (screen space).
 
 Here is how we set up the y-scale for the above money example:
 
-<div class="example-row-1">
-  <div class="example">
-    {% highlight javascript %}
-var y = d3.scaleLinear()
+```javascript
   .domain([0, 80]) // $0 to $80
   .range([200, 0]); // Seems backwards because SVG is y-down
-    {% endhighlight %}
-  </div>
-</div>
+```
 
 Or if we wanted to take advantage of the helper methods above:
 
-<div class="example-row-1">
-  <div class="example">
-    {% highlight javascript %}
+```javascript
 y.domain(d3.extent(data, function(d) { return d.amount }));
-    {% endhighlight %}
-  </div>
-</div>
+```
 
 
 The domain is in the data space, so its units are your source units. The range
@@ -199,22 +186,16 @@ is in screen space (pixels).
 This scale object is also a function! Calling the scale as a function is how
 we translate values from one coordinate to another.
 
-<div class="example-row-1">
-  <div class="example">
-    {% highlight javascript %}
+```javascript
 y(0);   // in: $0
 // 200  // out: 200px (bottom of graph)
 y(80);  // in: $80
 // 0    // out: 0px (top of graph)
-    {% endhighlight %}
-  </div>
-</div>
+```
 
 We can even do the same things with dates!
 
-<div class="example-row-1">
-  <div class="example">
-    {% highlight javascript %}
+```javascript
 var x = d3.scaleTime()
     .domain([
       new Date(Date.parse('2014-01-01')),
@@ -224,9 +205,7 @@ var x = d3.scaleTime()
 
 x(new Date(Date.parse('2014-02-01')));
 // 103.3811949976841
-    {% endhighlight %}
-  </div>
-</div>
+```
 
 Scales are not just for linear transforms (continuous or quantitative scales),
 they can also be used for arbitrary transforms (discrete or ordinal scales).
