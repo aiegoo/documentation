@@ -720,13 +720,16 @@ as of Nov 12, 2021, I have updated some fields and they can be found here;
 [result](https://github.com/aiegoo/mychecklist/blob/195d463847b0bcc8b1ebad566475355db2680864/risk_assesment_project/risk_assesment/templates/risk_assesment/assesment_result.html)
 
 ## googlesheet and api
+
 **ref**
 |---
 | [google_console](https://console.cloud.google.com/cloud-resource-manager?pli=1) | [client_cred](https://github.com/aiegoo/config/blob/e0e951a27be0b482e6c820a4d9e31548f73056d2/client_secret_18507158082-u2u59jf1om0jf15nl9q0kmu1l18u337j.apps.googleusercontent.com.json) | [api_evangelist](https://apievangelist.com/blog/) | [another_blog](https://medium.com/@aswinvb/how-to-use-google-sheets-as-a-database-for-your-application-254b2c6210fc#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3YzcyNjE5ZDA5MzVhMjkwYzQxYzNmMDEwMTY3MTM4Njg1ZjdlNTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2MzY1MDg1ODcsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwOTg5NDgxNTM2ODc0MDY2NTI3NSIsImVtYWlsIjoib25vZmZ0b255QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJuYW1lIjoibGluayBvbm9mZiIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaFFjcDE3QzBfd1pQeS15VHViY002MFIxeXVzbXhpX1JxNy13Tkg9czk2LWMiLCJnaXZlbl9uYW1lIjoibGluayIsImZhbWlseV9uYW1lIjoib25vZmYiLCJpYXQiOjE2MzY1MDg4ODcsImV4cCI6MTYzNjUxMjQ4NywianRpIjoiYzdlODg3N2Q1ZWNjM2NlNmZlNmQzMWZlMzQ5N2Y1MTc1YWUyMjllMyJ9.ElLOsBQuGgBgpAyWS8EkFCLDGkofWkFInP9NLr-sZn2ZUj0kpxxtBtc_WqTqSfCtS7yTBPAqd-DYKTNPRbkC3ibKTSo5jlRZoFVSId-54JFFulEdSz5ZgiMA4dMm0QlMNtNRvMc1nZyOdpCvjIYZpArF_TFhXQlMFioXC75QTun5kRedHaJ4tThFO5TzpzKZEFmGLUvfHt0HOMNpCMceUpvWJhLy4RZxjIg2_F6AMPPN0C54-UYNOpPjv1mKTWMwpYz34aH7tQv3Xql6wuJ1hY63sMyqWd6j-LE8Oi3qjaT27qF6QUNNGNbbnn47zh6dIfa6p58gjw09EZhFqm6t5A) | [unito_subs](https://unito.io/integrations/google-sheets-github/)
 
 **books**
+
 |---
 | [datacleaning](https://github.com/aiegoo/uas-reference/blob/master/data/datacleaning.pdf) | [googe_guide](https://github.com/aiegoo/uas-reference/blob/master/data/googleguide.pdf) | [googsheet-gas](https://github.com/aiegoo/uas-reference/blob/master/data/googlesheet-gas.pdf)
+
 ## issues tracker
 
 ```python
