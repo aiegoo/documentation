@@ -733,9 +733,9 @@ as of Nov 12, 2021, I have updated some fields and they can be found here;
 
 **other wiki here**
 
-[googleapi]()
-[googleAppScript]()
-[googlesheet]()
+[googleapi](/2021-10-04-wiki-googleapi-image-search.html)
+[googleAppScript](/GoogleAppsScript-Category.html)
+[googlesheet](/2021-09-26-googlesheet.html)
 ### tl;dr
 I thought it was a quick setup task for the api and googlesheet to work. **principle** working method is to export the db to json format locally to import into google sheet, which then would be ported or pushed to the github repo for deployment.
 
