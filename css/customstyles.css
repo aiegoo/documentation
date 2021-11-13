@@ -1973,7 +1973,7 @@ li.scroll-nav_item a:before {
     top: 3px;
 }
 
-.scroll-nav__item--active a:before {
+/* .scroll-nav__item--active a:before {
     content: '';
     display: block;
     position: absolute;
@@ -1981,7 +1981,7 @@ li.scroll-nav_item a:before {
     left: 0;
     top: 9 px;
     bottom: 9 px;
-    background: #ffc313;}
+    background: #ffc313;} */
 
 .scroll-nav__item--active>a:hover {
         color: rgba(168, 168, 168, 0.9);
