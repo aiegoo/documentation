@@ -789,7 +789,7 @@ so you will always run gsPush() to push all record in the database to google she
 
 {% include image.html file="google/google_gsPull.png" caption="when gsPull is entered in django shell" %}
 
-{{site.data.alerts.callout_warning}}**Warning** as the gsheet is snynced with the db, any changes in format and headings will result in errors and the sync will not work  at all.{{site.data.alerts.end}}
+{% include callout.html content="**Warning** as the gsheet is snynced with the db, any changes in format and headings will result in errors and the sync will not work  at all." %}
 ## issues tracker
 
 ```python
