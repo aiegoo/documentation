@@ -759,6 +759,8 @@ see the code and setup details in the links below;
 ### how it's built
 
 {% include image.html file="google/google_addkey.png" caption="manually adding key if the default steps failed to produce one" %}
+{% include image.html file="google/google_service.png" caption="no key is present to the mychecklist project" %}
+
 - google creds and cred.json
   like in a settings.py, access to gsheet is granted through this cred.json file with  contents from my credential issued by google.
 - add this script to settings.py
@@ -784,6 +786,9 @@ If you change anything in there, make sure to pull to database before any other 
 If you run into issues, run `python manage.py shell`, `from risk_assesment.gsScripts import *`, `gsPush()` This will update the googlesheet.
 so you will always run gsPush() to push all record in the database to google sheet. Any new data should be automatically be updated in the google sheet too, either  via api, html form or directly created in the admin page.
 {% include image.html file="google/gsScripts-running.png" caption="when gsPush is called" %}
+
+{% include image.html file="google/google_gsPull.png" caption="when gsPull is entered in django shell" %}
+
 {{site.data.alerts.callout_warning}}**Warning** as the gsheet is snynced with the db, any changes in format and headings will result in errors and the sync will not work  at all.{{site.data.alerts.end}}
 ## issues tracker
 
