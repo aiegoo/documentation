@@ -721,9 +721,10 @@ as of Nov 12, 2021, I have updated some fields and they can be found here;
 
 ## googlesheet and api
 <style>
-.customtable tr:nth-child(1) { background: red; }
-.customtable td:nth-child(2) { color: white; background: blue; }
-.customtable tr:nth-child(3) td { color: black; background: yellow; }
+.customtable tr:nth-child(odd) { background-color: #0087ff6e; }
+.customtable td:nth-child(2) { color: white; background: #0087ff6e; }
+.customtable tr:nth-child(3) { color: black; background: yellow; }
+.customtable td:nth-child(even) { color: black; background: #b1b0e1}
 </style>
 
 **ref**
