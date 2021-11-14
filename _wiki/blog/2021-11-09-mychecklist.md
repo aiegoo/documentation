@@ -737,9 +737,9 @@ as of Nov 12, 2021, I have updated some fields and they can be found here;
 [googleAppScript](/GoogleAppsScript-Category.html)
 [googlesheet](/2021-09-26-googlesheet.html)
 ### tl;dr
-I thought it was a quick setup task for the api and googlesheet to work. **principle** working method is to export the db to json format locally to import into google sheet, which then would be ported or pushed to the github repo for deployment.
+I thought it was a quick setup task for the api and googlesheet to work. A **principle** working method is to export the db to json format locally to import into google sheet, which then would be ported or pushed to the github repo for deployment.
 
-I've been trying to find a way to make the model work smoothly with the google drive, but it seem it can't be done at least without using commercial service such as unito (see above for the link).
+I've been trying to find a way to make the model work smoothly with the google drive, but it seem it can't be done at least without using a commercial service such as unito (see above for the link).
 
 For now I have two options to choose from;
 -  make the app automatically update the google sheet and to upload all db to google.
