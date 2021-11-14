@@ -789,7 +789,19 @@ so you will always run gsPush() to push all record in the database to google she
 
 {% include image.html file="google/google_gsPull.png" caption="when gsPull is entered in django shell" %}
 
-{% include callout.html content="**Warning** as the gsheet is snynced with the db, any changes in format and headings will result in errors and the sync will not work  at all." %}
+{% include callout.html content="**Warning** as the gsheet is snynced with the db, any changes in format and headings will result in errors and the sync will not work  at all. For data validation,  make sure the data types are correct or it will not be loaded onto the django database" %}
+
+### more to do
+**data limit** So unfortunately, there is nothing I can do about google limit when we initially try to load data from the fixture.
+
+## Heroku implementation
+{{site.data.alerts.callout_default}}
+So my original setup plan to use github Pages will not work for a non-static site, as I will use this app mostly through my mobile phone, which needs to display the input html form for user data. Unless I edit the google sheet for this purpose, which would be too cumbersome task to do on site.{{site.data.alerts.end}}
+{{site.data.alerts.callout_primary}}
+So I decided to use a free django service (AWS free tier was an option too). But I want to keep my amazon account as free as it is now. Pythonanywhere  was a good alternative. Goorm is another service I am familiar with and will make a good candidate too, otherwise.{{site.data.alerts.end}}
+
+- Heroku turned out to add some more custom settings for gspread and oauth2client to work.
+- 
 ## issues tracker
 
 ```python
