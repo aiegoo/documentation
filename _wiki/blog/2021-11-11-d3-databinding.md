@@ -2,7 +2,7 @@
 layout: post
 title: "D3 square.github.io data binding"
 name: "d3-databinding"
-tags: [api, javascript, googlesheet]
+tags: [api, javascript, googlesheet, d3]
 tagName: api
 permalink: 2021-11-11-d3-databinding.html
 sidebar: other_sidebar
@@ -39,6 +39,9 @@ is the most powerful part of selections.
 |---
 | ![image](https://user-images.githubusercontent.com/42961200/141664938-35924f65-8498-43cc-b369-086be2cc8545.png) | ![image](https://user-images.githubusercontent.com/42961200/141664964-73b6bb51-b2c0-4518-8e56-806c94e58689.png)
 
+{% include image.html links="https://user-images.githubusercontent.com/42961200/141665253-9f161212-2b02-4f1b-a4e5-c3b1f7b37d2e.png" caption="introducing function parameter i and n" %}
+
+![image](https://user-images.githubusercontent.com/42961200/141665253-9f161212-2b02-4f1b-a4e5-c3b1f7b37d2e.png)
 
 ## Selections `d3.selectAll`
 
