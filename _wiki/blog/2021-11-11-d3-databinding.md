@@ -35,7 +35,10 @@ because the same selection can be updated for different data later on. Updating
 is the most powerful part of selections.
 
 **example** 
-![image](https://user-images.githubusercontent.com/42961200/141664938-35924f65-8498-43cc-b369-086be2cc8545.png)
+
+|---
+| ![image](https://user-images.githubusercontent.com/42961200/141664938-35924f65-8498-43cc-b369-086be2cc8545.png) | ![image](https://user-images.githubusercontent.com/42961200/141664964-73b6bb51-b2c0-4518-8e56-806c94e58689.png)
+
 
 ## Selections `d3.selectAll`
 
