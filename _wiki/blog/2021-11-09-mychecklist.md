@@ -800,8 +800,8 @@ So my original setup plan to use github Pages will not work for a non-static sit
 {{site.data.alerts.callout_primary}}
 So I decided to use a free django service (AWS free tier was an option too). But I want to keep my amazon account as free as it is now. Pythonanywhere  was a good alternative. Goorm is another service I am familiar with and will make a good candidate too, otherwise.{{site.data.alerts.end}}
 
-- Heroku turned out to add some more custom settings for gspread and oauth2client to work.
-- 
+- Heroku turned out that I need to add some more custom settings for gspread and oauth2client to work.
+-
 ## issues tracker
 
 ```python
