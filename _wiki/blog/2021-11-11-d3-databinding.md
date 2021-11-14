@@ -34,6 +34,7 @@ D3 selections are a different way to look at data binding. They're powerful
 because the same selection can be updated for different data later on. Updating
 is the most powerful part of selections.
 
+**example** 
 ## Selections `d3.selectAll`
 
 Ok, so we've referenced `d3.select()` and `d3.selectAll()` a few times already
