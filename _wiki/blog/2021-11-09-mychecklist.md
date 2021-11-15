@@ -774,7 +774,7 @@ see the code and setup details in the links below;
 {% include image.html file="google/google_addkey.png" caption="manually adding key if the default steps failed to produce one" %}
 {% include image.html file="google/google_service.png" caption="no key is present to the mychecklist project" %}
 
-- with google creds and cred.json like in a settings.py, access to gsheet is granted through this cred.json file with  contents from my credential issued by google.
+- with google creds and cred.json like in the settings.py, access to gsheet is granted through this cred.json file containing  contents from my cred issued by google.
 - add this script to settings.py
 
 ```python
@@ -794,7 +794,7 @@ GSHEETS = {
 - run `python manage.py check` and `python manage.py runserver 8099`
 
 this will ordinarily set you up to interact with the googlesheet and default db.
-If you change anything in there, make sure to pull to database before any other changes to the database, because every change to the database automatically update the json file. Don't confuse it with the assesments.json under the fixtures directory it completely different.
+If you change anything in there, make sure to pull to database before any other changes to the database, because every change to the database automatically update the json file. Don't confuse it with the assesments.json under the fixtures directory which is completely different.
 If you run into issues, run `python manage.py shell`, `from risk_assesment.gsScripts import *`, `gsPush()` This will update the googlesheet. or `risk_assesment.gsScripts import *`, `gsPull()`
 so you will always run gsPush() to push all record in the database to google sheet. Any new data should be automatically be updated in the google sheet too, either  via api, html form or directly created in the admin page.
 {% include image.html file="google/gsScripts-running.png" caption="when gsPush is called" %}
