@@ -40,7 +40,7 @@ latex: false
   * [Switch to v2](https://developers.google.com/drive/api/v3/about-sdk) : 버전을 v2로 변경 
 
 * [Google Apps Script 대쉬보드](https://script.google.com/home) : 구글 앱스 스크립트 대쉬 보드, 요기서 스크립트를 직접 편집할 수 있다.
-
+![Warn](https://onofflinkinc.slack.com/files/UHPPRAQD7/F02N47WHE7J/smartselect_20211116-070730_chrome.jpg)
 # 관련 인물
 
 * PopGoesTheWza
