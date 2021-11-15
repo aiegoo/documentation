@@ -108,7 +108,8 @@ data.delete()
 python manage.py dumpdata risk_assesment --indent=2 --output=risk_assesment/fixtures/assesments.json
 
 python manage.py dumpdata auth.User --indent=2 --output=risk_assesment/fixtures/users.json
-
+# these two files have caused a couple of build errors with Heroku. Delete all key values except array symbol []
+`from risk_assesment.gsScripts import *`, `gsPush()
 # when importing it, just the scripts as in below
 pip install -r requirements.txt
 python manage.py makemigrations
