@@ -2,7 +2,7 @@
 layout: post
 title: "Pilot's preflight checklist FAA"
 name: "mychecklist"
-tags: [drone, django, database]
+tags: [drone, django, database, api]
 tagName: drone
 permalink: 2021-11-09-mychecklist.html
 sidebar: other_sidebar
@@ -10,7 +10,7 @@ folder: blog
 collection: wiki
 categories: drone
 keywords: "drone preflight checklist django"
-summary: "Tue, Nov 09, 21, preflight checklist with data mining"
+summary: "Tue, Nov 09, 21, preflight checklist with data mining, d3 visualization"
 excerpt_separator: <!--more-->
 toc: true
 public: true
@@ -54,7 +54,8 @@ Steps to follow;
 
 <style>
 ol li {
-     counter-set: list 3;
+    content: "";
+    counter-reset: list 3;
 }
 </style>
 3. adding more data fields
@@ -157,6 +158,7 @@ Please read the [restfulapi blog](/2021-11-09-django-api.html) for more details.
 
 I have once created this serializer for Arduino sensors;
 
+{{site.data.alerts.detail}}
 ```python
 import serial
 #import mysql.connector
@@ -213,6 +215,8 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+:::
+{{site.data.alerts.ended}}
 
 > model.py
 
@@ -285,6 +289,7 @@ class AssessmentSerializer(serializers.ModelSerializer):
 
 > models.py
 
+{{site.data.alerts.details}}
 ```python
 from django.db import models
 from django.core.exceptions import ValidationError
@@ -408,7 +413,8 @@ class Assessment(models.Model):
      def __str__(self):
          return f"{self.date}. {self.pilot_name}, Flight from: {self.flight_from} To: {self.to}. Score ({self.get_score()})"
 ```
-
+:::
+{{site.data.alerts.ended}}
 ## django validation and test
 
 ```python
@@ -477,6 +483,7 @@ sqlite>
 
 ## d3js
 
+{{site.data.alerts.details}}
 {% include copyto.html %}
       <template id="">
           <svg  id='' width='100%' height='100%'>
@@ -714,6 +721,9 @@ sqlite>
       });
     </script>
 
+:::
+{{site.data.alerts.ended}}
+
 as of Nov 12, 2021, I have updated some fields and they can be found here;
 [Assesment](https://github.com/aiegoo/mychecklist/blob/195d463847b0bcc8b1ebad566475355db2680864/risk_assesment_project/risk_assesment/templates/risk_assesment/assesment.html),
 
@@ -801,8 +811,13 @@ So I decided to use a free django service (AWS free tier was an option too). But
 
  {% include callout.html content="Heroku turned out that I need to add some more custom settings for gspread and oauth2client to work." %}
 
+### now being served here
+[heroku](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Samuel)
+currently I am serving only the admin page, assessment input form and results with api actions.
+
 ## issues tracker
 
+{{site.data.alerts.details}}
 ```python
 Environment:
 
@@ -872,6 +887,8 @@ Traceback (most recent call last):
 Exception Type: ValueError at /admin/risk_assesment/assessment/
 Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
 ```
+:::
+{{site.data.alerts.ended}}
 
 {% include taglogic.html %}
 
