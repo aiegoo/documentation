@@ -9,8 +9,8 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: drone
-keywords: "drone preflight checklist django"
-summary: "Tue, Nov 09, 21, preflight checklist with data mining, d3 visualization"
+keywords: "drone preflight checklist django heroku orm google sheet api"
+summary: "Tue, Nov 09, 21, preflight checklist with data mining, d3 visualization and google sheet implementation"
 excerpt_separator: <!--more-->
 toc: true
 public: true
@@ -808,15 +808,16 @@ so you will always run gsPush() to push all record in the database to google she
 ## Heroku implementation
 {{site.data.alerts.callout_default}}
 So my original setup plan to use github Pages will not work for a non-static site, as I will use this app mostly through my mobile phone, which needs to display the input html form for user data. Unless I edit the google sheet for this purpose, which would be too cumbersome task to do on site.{{site.data.alerts.end}}
+[heroku_django_blog](https://realpython.com/django-hosting-on-heroku/#step-7-deploy-your-django-project-to-heroku)
 {{site.data.alerts.callout_primary}}
 So I decided to use a free django service (AWS free tier was an option too). But I want to keep my amazon account as free as it is now. Pythonanywhere  was a good alternative. Goorm is another service I am familiar with and will make a good candidate too, otherwise.{{site.data.alerts.end}}
 
  {% include callout.html content="Heroku turned out that I need to add some more custom settings for gspread and oauth2client to work." %}
-	    
+
 - how I got the dummy data back in heroku app
 ![image](https://user-images.githubusercontent.com/42961200/141774588-44a6b950-6a31-4df4-9937-54e182a71890.png)
 - I ran the same script in the heroku console, boooom! it worked. [heeroku_console](https://dashboard.heroku.com/apps/myfaa/deploy/github?web-console=myfaa)
-	    
+
 ### now being served here
 [heroku](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Samuel)
 currently I am serving only the admin page, assessment input form and results with api actions.
