@@ -761,8 +761,7 @@ see the code and setup details in the links below;
 {% include image.html file="google/google_addkey.png" caption="manually adding key if the default steps failed to produce one" %}
 {% include image.html file="google/google_service.png" caption="no key is present to the mychecklist project" %}
 
-- google creds and cred.json
-  like in a settings.py, access to gsheet is granted through this cred.json file with  contents from my credential issued by google.
+- with google creds and cred.json like in a settings.py, access to gsheet is granted through this cred.json file with  contents from my credential issued by google.
 - add this script to settings.py
 
 ```python
