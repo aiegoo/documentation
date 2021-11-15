@@ -782,7 +782,7 @@ GSHEETS = {
 
 this will ordinarily set you up to interact with the googlesheet and default db.
 If you change anything in there, make sure to pull to database before any other changes to the database, because every change to the database automatically update the json file. Don't confuse it with the assesments.json under the fixtures directory it completely different.
-If you run into issues, run `python manage.py shell`, `from risk_assesment.gsScripts import *`, `gsPush()` This will update the googlesheet.
+If you run into issues, run `python manage.py shell`, `from risk_assesment.gsScripts import *`, `gsPush()` This will update the googlesheet. or `risk_assesment.gsScripts import *`, `gsPull()`
 so you will always run gsPush() to push all record in the database to google sheet. Any new data should be automatically be updated in the google sheet too, either  via api, html form or directly created in the admin page.
 {% include image.html file="google/gsScripts-running.png" caption="when gsPush is called" %}
 
