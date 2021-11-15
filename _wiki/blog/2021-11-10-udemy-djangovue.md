@@ -2,7 +2,7 @@
 layout: post
 title: "Complete guide to django rest framework and vue js"
 name: "udemy-djangovue"
-tags: [django]
+tags: [django, web]
 tagName: django
 permalink: 2021-11-10-udemy-djangovue.html
 sidebar: other_sidebar

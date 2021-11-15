@@ -1,8 +1,9 @@
 ---
 title: two scoops of django
-tags: [school django ]
+tags: [python, django]
+tagName: django
 last_updated: July 14, 2021
-keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
+keywords: API, content API, two scoops, django, books
 summary: "summary."
 sidebar: mydoc_sidebar
 permalink: mydoc_twoscoops.html
@@ -14,7 +15,23 @@ folder: mydoc
 [if any link not working, click here for details](#links)
 
 [ARTICLES](#articles)
+**books**
 
+<style>
+.customtable tr:nth-child(odd) { background-color: #0087ff6e; }
+.customtable td:nth-child(2) { color: white; background: #0087ff6e; }
+.customtable tr:nth-child(3) { color: black; background: yellow; }
+.customtable td:nth-child(even) { color: black; background: #b1b0e1}
+</style>
+
+{:.customtable}
+|---
+| [two_scoop3](https://github.com/aiegoo/uas-reference/blob/master/web-dev/twoscoops.pdf) | [django_microservice](https://github.com/aiegoo/uas-reference/blob/master/web-dev/django-microservice.pdf)
+| [django-pratical](https://github.com/aiegoo/uas-reference/blob/master/web-dev/django-pratical.pdf) | [djangoapi](https://github.com/aiegoo/uas-reference/blob/master/web-dev/djangoapi.pdf)
+| [two_scoop1](/django.html)
+
+**you will like these links**
+- udemy course, and other resources in this site.
 ## it begins with;
 
 {% include copyto.html %}
