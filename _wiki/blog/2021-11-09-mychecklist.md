@@ -158,7 +158,7 @@ Please read the [restfulapi blog](/2021-11-09-django-api.html) for more details.
 
 I have once created this serializer for Arduino sensors;
 
-{{site.data.alerts.detail}}
+{{site.data.alerts.details}}
 ```python
 import serial
 #import mysql.connector
