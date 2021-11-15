@@ -808,10 +808,10 @@ so you will always run gsPush() to push all record in the database to google she
 
 ## Heroku implementation
 {{site.data.alerts.callout_default}}
-So my original setup plan to use github Pages will not work for a non-static site like this project, as I will use this app mostly through my mobile phone, which needs to display the input html form for user data. Unless I edit the google sheet for this purpose, which would be too cumbersome task to do on site.{{site.data.alerts.end}}
+So my original setup plan to use github Pages with a json file will not work for a non-static site like this project, as I will use this app mostly through my mobile phone, which needs to display the input html form for user data. Unless I edit the google sheet for this purpose, which would be too cumbersome task to do on site.{{site.data.alerts.end}}
 [heroku_django_blog](https://realpython.com/django-hosting-on-heroku/#step-7-deploy-your-django-project-to-heroku)
 {{site.data.alerts.callout_primary}}
-So I decided to use a free django hosting service (AWS free tier was an option too). But I want to keep my amazon account as free as it is now. `Pythonanywhere`  was a good alternative. `Goorm` is another service I am familiar with and will make a good candidate too, otherwise.{{site.data.alerts.end}}
+So I decided to use a free django hosting service (AWS free tier was an option too). But I want to keep my amazon account as free as it is now. Pythonanywhere  was a good alternative. Goorm is another service I am familiar with and will make a good candidate too, otherwise.{{site.data.alerts.end}}
 
  {% include callout.html content="Heroku turned out that I need to add some more custom settings for gspread and oauth2client to work." %}
 
