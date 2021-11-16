@@ -840,6 +840,36 @@ currently I am serving only the admin page, assessment input form and results wi
 |---
 | [admin_captain_mychecklist](https://myfaa.herokuapp.com/admin/login/?next=/admin/) | [api_get_post](https://myfaa.herokuapp.com/api/)
 
+###  heroku custom command
+[heroku_doc](https://devcenter.heroku.com/articles/scheduling-custom-django-management-commands)
+
+{{site.data.alerts.details}}
+```python
+from django.core.management.base import BaseCommand, CommandError
+from some_app.models import Book
+
+class Command(BaseCommand):
+    help = 'Prints all book titles in the database'
+
+    def handle(self):
+        try:
+            books = Book.objects.all()
+            for book in books:
+                 self.stdout.write(self.style.SUCCESS(book.title))
+        except FieldDoesNotExist:
+            self.stdout.write(self.style.ERROR('Field "title" does not exist.'))
+            return
+
+        self.stdout.write(self.style.SUCCESS('Successfully printed all Book titles'))
+        return
+
+```
+{{site.data.alerts.ended}}
+
+```shell
+heroku run bash -a [yourappname]
+python manage.py <your_custom_command>
+```
 ## issues tracker
 
 {{site.data.alerts.details}}
