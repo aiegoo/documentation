@@ -728,9 +728,9 @@ sqlite>
 {{site.data.alerts.ended}}
 
 as of Nov 12, 2021, I have updated some fields and they can be found here;
-[Assesment](https://github.com/aiegoo/mychecklist/blob/gh-pages/risk_assesment_project/risk_assesment/templates/risk_assesment/assesment.html),
+[Assesment](https://github.com/aiegoo/myfaa/blob/master/risk_assesment/templates/risk_assesment/assesment.html),
 
-[result](https://github.com/aiegoo/mychecklist/blob/gh-pages/risk_assesment_project/risk_assesment/templates/risk_assesment/assesments_result.html)
+[result](https://github.com/aiegoo/myfaa/blob/master/risk_assesment/templates/risk_assesment/assesments_result.html)
 
 ## googlesheet and api
 <style>
