@@ -424,7 +424,7 @@ class Assessment(models.Model):
 python manage.py test
 ```
 
-to run a validation test. This test to make sure that only the selected values are valid for each question that why trying to replace each point with 50 will raise error 400)#bad request and the form will not be submitted
+It's the cli to run a validation test. This test is to make sure that the selected values are valid for each question. That's why trying to replace each point with 50 will raise error 400 #bad request and the form will not be submitted
 
 and check the code from test/test_view.py
 
