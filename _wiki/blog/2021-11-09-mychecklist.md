@@ -920,7 +920,7 @@ Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
 [source](https://github.com/aiegoo/bdook-weather2)
 
 <style>
-.wrap {width:100%; height:100%; margin:auto; background:url(../img/iphone.png) no-repeat; background-size:auto 100%; position:relative;}
+.wrap {width:100%; height:100%; margin:auto; background:url(images/bdook/iphone.png) no-repeat; background-size:auto 100%; position:relative;}
 .tabs {border-bottom:1px solid #999; position:absolute; top:11.2%; left:7.13%; width:86%;}
 .tabs > li {padding:0.75rem; width:50%; float:left; text-align:center;}
 .wrap > div {width:86%; top:calc(11.2% + 3rem); position:absolute; height:calc(77.4% - 3rem); left:7.13%; }
