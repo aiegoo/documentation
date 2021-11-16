@@ -916,6 +916,46 @@ Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
 {{site.data.alerts.ended}}
 
 ### weather api app
+<div class="wrap">
+		<ul class="tabs clear">
+			<li class="hvr-underline-from-center">오늘의 날씨</li>
+			<li  class="hvr-underline-from-center">5일간 날씨</li>
+		</ul>
+		<div>
+			<ul class="conts daily">
+				<li>
+					<img id="wt_icon">
+				</li>
+				<li>
+					<span class="tit">날씨</span>
+					<span id="wt_main" class="cont"></span>
+				</li>
+				<li>
+					<span class="tit">온도</span>
+					<span id="wt_temp" class="cont"></span>
+				</li>
+				<li>
+					<span class="tit">바람</span>
+					<span id="wt_wind" class="cont"></span>
+				</li>
+				<li>
+					<span class="tit">위치</span>
+					<span id="wt_coord" class="cont"></span>
+				</li>
+			</ul>
+			<ul class="conts weekly">
+				<li><span>주간</span>날씨</li>
+			</ul>
+		</div>
+	</div>
+	<ul class="clear">
+		<li><img src="" alt=""></li>
+		<li class="wk_time"></li>
+		<li class="wk_main"></li>
+		<li class="wk_temp"></li>
+		<li class="wk_wind"></li>
+	</ul>
+	<script src="js/weather.js"></script>
 
 {% include taglogic.html %}
 
