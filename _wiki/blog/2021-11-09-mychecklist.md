@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS "risk_assesment_assessment" ("id" integer NOT NULL PR
 
 {% include copyto.html %}
 
-```diff
+```diffhttps://myfaa.herokuapp.com/assesment/results/?pilot_name=Udo%20Samuel
 sqlite> pragma table_info('risk_assesment_assessment');
 cid         name        type        notnull     dflt_value  pk
 ----------  ----------  ----------  ----------  ----------  ----------
@@ -820,7 +820,7 @@ So I decided to use a free django hosting service (AWS free tier was an option t
 - I ran the same script in the heroku console, boooom! it worked. [heeroku_console](https://dashboard.heroku.com/apps/myfaa/deploy/github?web-console=myfaa)
 
 ### now being served here
-[heroku](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Samuel)
+[heroku](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Udo%20Samuel)
 currently I am serving only the admin page, assessment input form and results with api actions.
 
 ## issues tracker
