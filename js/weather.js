@@ -22,7 +22,7 @@
 			}
 			else {
 				$(".wrap").css({
-					"background":"url(../imges/iphone.png) no-repeat", 
+					"background":"url(imges/bdook/iphone.png) no-repeat", 
 					"background-size":"auto 100%"
 				});
 				$(".tabs").css({
@@ -89,7 +89,7 @@ $(".tabs > li").eq(0).trigger("click");
 
 function dailyFn(data) {
 	console.log(data);
-	$("#wt_icon").attr("src", "../imges/icon/"+data.weather[0].icon+".png");
+	$("#wt_icon").attr("src", "imges/bdook/icon/"+data.weather[0].icon+".png");
 	$("#wt_main").html(data.weather[0].main+" / "+data.weather[0].description);
 	$("#wt_temp").html(data.main.temp+"("+data.main.temp_max+"/"+data.main.temp_min+")");
 	$("#wt_wind").html(data.wind.speed+"/ms ("+data.wind.deg+"deg)");
@@ -104,7 +104,7 @@ function weeklyFn(data) {
 		v = data.list[i];
 		html = `
 		<ul class="clear">
-			<li><img src="../imges/icon/${v.weather[0].icon}.png" class="img"></li>
+			<li><img src="imges/bdook/icon/${v.weather[0].icon}.png" class="img"></li>
 			<li class="wk_time"><span>${v.dt_txt}</span></li>
 			<li class="wk_main">
 				<span>날씨:</span> ${v.weather[0].main}(${v.weather[0].description}) 
