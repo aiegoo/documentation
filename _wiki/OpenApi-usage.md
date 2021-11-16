@@ -24,7 +24,7 @@ latex: false
 
 ### usage with node
 <script src="https://gist.github.com/aiegoo/fe2948708f0de82d27d2ae7cd60dd266.js"></script>
-## 1. 발단
+## 발단
 
 * 가족과 같이 특정 영화를 보고자할 때..
   * 애들과 같이 봐도 될지 등급은 어떻게 매겨진건지 알고 싶을때가 있다.
@@ -32,7 +32,7 @@ latex: false
   * 영등위는 [open api](https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=3043382) 도 제공한다.
 * 사용하는 예제를 만들어보자
 
-## 2. 전개
+## 전개
 
 ### 이슈들
 
