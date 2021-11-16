@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: " 실제 사용법 정리 "
 tags: [api]
+tagName: api
 excerpt_separator: <!--more-->
 date: 2021-09-21 12:42:03 +0900
 updated: 2021-09-26 00:44 PM
@@ -17,6 +18,7 @@ latex: false
 * TOC
 {:toc}
 
+**ref** please find other api resources
 ## iconify api
 [home](https://iconify.design/)
 
