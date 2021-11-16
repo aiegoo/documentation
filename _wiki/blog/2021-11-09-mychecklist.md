@@ -820,9 +820,17 @@ So I decided to use a free django hosting service (AWS free tier was an option t
 - I ran the same script in the heroku console, boooom! it worked. [heeroku_console](https://dashboard.heroku.com/apps/myfaa/deploy/github?web-console=myfaa)
 
 ### now being served here
-[heroku](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Udo%20Samuel)
+
+|---
+| [Hira Fava](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Hira%20Fava) | [Manjeet Carpentier](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Manjeet%20Carpentier) | [McKenzie Mantovani](https://myfaa.herokuapp.com/assesment/results/?pilot_name=McKenzie%20Mantovani)
+| [Munashe Zilberschlag](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Munashe%20Zilberschlag) | [Naomi Derrick](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Naomi%20Derrick) | [Otobong Schubert](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Otobong%20Schubert)
+| [peter](https://myfaa.herokuapp.com/assesment/results/?pilot_name=peter) | [Ratna Newell](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Ratna%20Newell) | [anthony](https://myfaa.herokuapp.com/assesment/results/?pilot_name=anthony)
+| [tony](https://myfaa.herokuapp.com/assesment/results/?pilot_name=tony) | [Tafadzwa Lončartony](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Tafadzwa%20Lončar) | [Udo Samuel](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Udo%20Samuel)
+
 currently I am serving only the admin page, assessment input form and results with api actions.
 
+|---
+| [admin_captain_mychecklist](https://myfaa.herokuapp.com/admin/login/?next=/admin/) | [api_get_post](https://myfaa.herokuapp.com/api/)
 ## issues tracker
 
 {{site.data.alerts.details}}
