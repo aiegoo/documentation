@@ -916,6 +916,103 @@ Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
 {{site.data.alerts.ended}}
 
 ### weather api app
+[firebase](eggs-weather.web.app)
+[source](https://github.com/aiegoo/bdook-weather2)
+
+<style>
+.wrap {width:100%; height:100%; margin:auto; background:url(../img/iphone.png) no-repeat; background-size:auto 100%; position:relative;}
+.tabs {border-bottom:1px solid #999; position:absolute; top:11.2%; left:7.13%; width:86%;}
+.tabs > li {padding:0.75rem; width:50%; float:left; text-align:center;}
+.wrap > div {width:86%; top:calc(11.2% + 3rem); position:absolute; height:calc(77.4% - 3rem); left:7.13%; }
+.conts {width:100%; height:100%; overflow-y:auto; position:absolute; font-size:1rem; }
+.daily {display:block;}
+.weekly {display:none;}
+
+
+.daily > :first-child {padding:2em; text-align:center;}
+.daily #wt_icon {width:50%;}
+.daily .tit {text-align:right; display:inline-block; width:30%; padding:1em;}
+.daily .cont {text-align:left; display:inline-block; width:60%; padding:1em;}
+
+.weekly > ul {border-bottom:1px solid #999;}
+.weekly > ul > :first-child {width:28%; padding:2%; float:left;}
+.weekly > ul > li:not(:first-child) {float:right; width:72%; padding:1%;}
+.weekly span {color:rgb(30, 56, 172)}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2098D1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: white;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+</style>
 <div class="wrap">
 		<ul class="tabs clear">
 			<li class="hvr-underline-from-center">오늘의 날씨</li>
@@ -956,6 +1053,7 @@ Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
 		<li class="wk_wind"></li>
 	</ul>
 	<script src="js/weather.js"></script>
+
 
 {% include taglogic.html %}
 
