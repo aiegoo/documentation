@@ -6,6 +6,7 @@ sidebar: other_sidebar
 collection: wiki
 summary: " 실제 사용법 정리 "
 tags: [api]
+tagName: api
 excerpt_separator: <!--more-->
 date: 2021-09-21 12:42:03 +0900
 updated: 2021-09-26 00:44 PM
@@ -17,12 +18,13 @@ latex: false
 * TOC
 {:toc}
 
+**ref** please find other api resources
 ## iconify api
 [home](https://iconify.design/)
 
 ### usage with node
 <script src="https://gist.github.com/aiegoo/fe2948708f0de82d27d2ae7cd60dd266.js"></script>
-## 1. 발단
+## 발단
 
 * 가족과 같이 특정 영화를 보고자할 때..
   * 애들과 같이 봐도 될지 등급은 어떻게 매겨진건지 알고 싶을때가 있다.
@@ -30,11 +32,11 @@ latex: false
   * 영등위는 [open api](https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=3043382) 도 제공한다.
 * 사용하는 예제를 만들어보자
 
-## 2. 전개
+## 전개
 
 ### 이슈들
 
-### API Key가 URL encoding 처리가 되어 승인되지 않은 키 에러가 나는 문제 
+- API Key가 URL encoding 처리가 되어 승인되지 않은 키 에러가 나는 문제 
 
 * [기본 부족 보충](https://www.w3schools.com/tags/ref_urlencode.ASP)
   * URL - Uniform Resource Locator
@@ -76,14 +78,14 @@ latex: false
     * "%"를 인코딩하면 "%25"로 변환됨
 * [해결책은 한번 더 인코딩되지 않도록 URI에 직접 포함시킴](https://stackoverflow.com/a/39152383/9457247)
 
-#### request deprecated ... :sob:
+- request deprecated ... :sob:
 
 * node.js 생태계에서 오래된 package인 [request가 deprecate 되었다, request github](https://github.com/request/request/issues/3142). 
   * 예제로 많이 보였는데...
   * [Alternative libraries to request, request github](https://github.com/request/request/issues/3143) 
     * 대체재로 axios가 있다.
 
-#### config-js 사용하기
+- config-js 사용하기
 
 * open api를 사용하다보면 필연적으로 credentials를 사용하게 된다.
 * 이런 정보들은 남에게 공개되면 안되는 정보들이므로 github에 올릴때 제외해야 한다.
@@ -91,13 +93,13 @@ latex: false
   * 윗 글을 발췌번역한 국내 글 : [9.5 Node.js에서 비밀 설정 정보 관리](https://poiemaweb.com/nodejs-keeping-secrets)
 * 나는 설정파일 사용하는 방법을 사용하기로 하고 [`config-js`](https://www.npmjs.com/package/config-js)를 찾아내었다.
 
-##### CommonJS 방식과 ES Modues 방식의 조합
+  - CommonJS 방식과 ES Modues 방식의 조합
 
 * 나는 OpenApiTest 프로젝트에서 module 방식을 사용하고 있다.
   * [Node.js 는 디폴트로 CommonJs를 지원하며 package.json 설정으로 ES Module을 Enable 한다.](https://nodejs.org/api/esm.html#esm_enabling)
 * config-js는 CommonJS 방식으로의 사용법만 기술하고 있기에 현재 내환경에서 사용하려면 몇가지 수정이 필요하다.
 
-##### main.js 에서 config-js 불러오기
+  - main.js 에서 config-js 불러오기
 
 * CommonJS 방식
   ```js
@@ -122,7 +124,7 @@ latex: false
   * 즉, `this`가 `undefined`인 상태에서 `this`의 propety인 `pathToDefaults`에 접근하려고 했다.
   * `this`가 `undefined`인 이유는 `Config`을 `new`로 생성하지 않았기 때문
 
-###### debug.js 의 사용
+  - debug.js 의 사용
 
 * 위 섹션의 실패를 경험하면서 `config-js` 패키지 내부에서 사용한 `debug.js` 모듈의 출력을 보고 싶었다.
   * [npm debug](https://www.npmjs.com/package/debug)
@@ -144,7 +146,7 @@ latex: false
       * `npm run main`시에 디버그로그를 죽이고 싶다면 `main`을 위와 같이 바꾼다. 
     
 
-##### 설정파일의 확장자 문제
+  - 설정파일의 확장자 문제
 
 * 이 부분에서 많이 헤맸는데 아래 링크를 잘 참조해보자
   * [Interoperability with CommonJS](https://nodejs.org/api/esm.html#esm_interoperability_with_commonjs)

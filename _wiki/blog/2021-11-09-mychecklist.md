@@ -41,7 +41,7 @@ Properly performing the items listed on pre-flight and related checklists is cru
 I began by referring to articles of the law in fine prints, and realized that it didn't have specific format except in general terms. One form that came across was the one created by a regional government with a drone team for aerial photography. And the other is from the FAA handbook for pilot's manual. My research findings are as follows;
 
 |---
-| ![faa_checklist](images/drone-resource-wiki/handbook/49-1.jpg) | [operationrules]({{site.github_link}}pdf/gcs/fllight_rules.pdf) | [maintenancelog]({{site.github_link}}pdf/gcs/maintenancelog.hwp) | [flightlog]({{site.github_link}}pdf/gcs/flightlog.xlsx)
+| ![faa_checklist](images/drone-resource-wiki/handbook/49-1.jpg) | [operation_rules]({{site.github_link}}pdf/gcs/flight_rules.pdf) | [maintenancelog]({{site.github_link}}pdf/gcs/maintenancelog.hwp) | [flightlog]({{site.github_link}}pdf/gcs/flightlog.xlsx)
 
 ## idea expansion
 Now that I need this form and and what' required of it, I set off to a drawing table, whoa! my usual Starbucks table and started dawdling on the ideas.
@@ -68,7 +68,7 @@ ol li {
 ## .table
 - install sqlite3 on windows 'npm install --save sqlite3` in the project directory.
 
-> run following cli to access sqlite3 table [sof](https://dba.stackexchange.com/questions/40656/how-to-properly-format-sqlite-shell-output)
+> run these following clis to access sqlite3 table [sof](https://dba.stackexchange.com/questions/40656/how-to-properly-format-sqlite-shell-output)
 
 ```diff
 sqlite3 db.sqlite3
@@ -108,7 +108,8 @@ data.delete()
 python manage.py dumpdata risk_assesment --indent=2 --output=risk_assesment/fixtures/assesments.json
 
 python manage.py dumpdata auth.User --indent=2 --output=risk_assesment/fixtures/users.json
-
+# these two files have caused a couple of build errors with Heroku. Delete all key values except array symbol []
+`from risk_assesment.gsScripts import *`, `gsPush()
 # when importing it, just the scripts as in below
 pip install -r requirements.txt
 python manage.py makemigrations
@@ -126,7 +127,7 @@ CREATE TABLE IF NOT EXISTS "risk_assesment_assessment" ("id" integer NOT NULL PR
 
 {% include copyto.html %}
 
-```diff
+```diffhttps://myfaa.herokuapp.com/assesment/results/?pilot_name=Udo%20Samuel
 sqlite> pragma table_info('risk_assesment_assessment');
 cid         name        type        notnull     dflt_value  pk
 ----------  ----------  ----------  ----------  ----------  ----------
@@ -735,7 +736,7 @@ as of Nov 12, 2021, I have updated some fields and they can be found here;
 <style>
 .customtable tr:nth-child(odd) { background-color: #0087ff6e; }
 .customtable td:nth-child(2) { color: white; background: #0087ff6e; }
-.customtable tr:nth-child(3) { color: black; background: yellow; }
+.customtable tr:nth-child(3) { color: black; background: #80808026; }
 .customtable td:nth-child(even) { color: black; background: #b1b0e1}
 </style>
 
@@ -773,7 +774,7 @@ see the code and setup details in the links below;
 {% include image.html file="google/google_addkey.png" caption="manually adding key if the default steps failed to produce one" %}
 {% include image.html file="google/google_service.png" caption="no key is present to the mychecklist project" %}
 
-- with google creds and cred.json like in a settings.py, access to gsheet is granted through this cred.json file with  contents from my credential issued by google.
+- with google creds and cred.json like in the settings.py, access to gsheet is granted through this cred.json file containing  contents from my cred issued by google.
 - add this script to settings.py
 
 ```python
@@ -793,7 +794,7 @@ GSHEETS = {
 - run `python manage.py check` and `python manage.py runserver 8099`
 
 this will ordinarily set you up to interact with the googlesheet and default db.
-If you change anything in there, make sure to pull to database before any other changes to the database, because every change to the database automatically update the json file. Don't confuse it with the assesments.json under the fixtures directory it completely different.
+If you change anything in there, make sure to pull to database before any other changes to the database, because every change to the database automatically update the json file. Don't confuse it with the assesments.json under the fixtures directory which is completely different.
 If you run into issues, run `python manage.py shell`, `from risk_assesment.gsScripts import *`, `gsPush()` This will update the googlesheet. or `risk_assesment.gsScripts import *`, `gsPull()`
 so you will always run gsPush() to push all record in the database to google sheet. Any new data should be automatically be updated in the google sheet too, either  via api, html form or directly created in the admin page.
 {% include image.html file="google/gsScripts-running.png" caption="when gsPush is called" %}
@@ -807,10 +808,10 @@ so you will always run gsPush() to push all record in the database to google she
 
 ## Heroku implementation
 {{site.data.alerts.callout_default}}
-So my original setup plan to use github Pages will not work for a non-static site, as I will use this app mostly through my mobile phone, which needs to display the input html form for user data. Unless I edit the google sheet for this purpose, which would be too cumbersome task to do on site.{{site.data.alerts.end}}
+So my original setup plan to use github Pages with a json file will not work for a non-static site like this project, as I will use this app mostly through my mobile phone, which needs to display the input html form for user data. Unless I edit the google sheet for this purpose, which would be too cumbersome task to do on site.{{site.data.alerts.end}}
 [heroku_django_blog](https://realpython.com/django-hosting-on-heroku/#step-7-deploy-your-django-project-to-heroku)
 {{site.data.alerts.callout_primary}}
-So I decided to use a free django service (AWS free tier was an option too). But I want to keep my amazon account as free as it is now. Pythonanywhere  was a good alternative. Goorm is another service I am familiar with and will make a good candidate too, otherwise.{{site.data.alerts.end}}
+So I decided to use a free django hosting service (AWS free tier was an option too). But I want to keep my amazon account as free as it is now. Pythonanywhere  was a good alternative. Goorm is another service I am familiar with and will make a good candidate too, otherwise.{{site.data.alerts.end}}
 
  {% include callout.html content="Heroku turned out that I need to add some more custom settings for gspread and oauth2client to work." %}
 
@@ -819,8 +820,25 @@ So I decided to use a free django service (AWS free tier was an option too). But
 - I ran the same script in the heroku console, boooom! it worked. [heeroku_console](https://dashboard.heroku.com/apps/myfaa/deploy/github?web-console=myfaa)
 
 ### now being served here
-[heroku](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Samuel)
+
+{:.customtable}
+|---
+| [Hira Fava](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Hira%20Fava) | [Manjeet Carpentier](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Manjeet%20Carpentier) | [McKenzie Mantovani](https://myfaa.herokuapp.com/assesment/results/?pilot_name=McKenzie%20Mantovani)
+| [Munashe Zilberschlag](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Munashe%20Zilberschlag) | [Naomi Derrick](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Naomi%20Derrick) | [Otobong Schubert](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Otobong%20Schubert)
+| [peter](https://myfaa.herokuapp.com/assesment/results/?pilot_name=peter) | [Ratna Newell](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Ratna%20Newell) | [anthony](https://myfaa.herokuapp.com/assesment/results/?pilot_name=anthony)
+| [tony](https://myfaa.herokuapp.com/assesment/results/?pilot_name=tony) | [Tafadzwa Lončartony](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Tafadzwa%20Lončar) | [Udo Samuel](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Udo%20Samuel)
+
 currently I am serving only the admin page, assessment input form and results with api actions.
+
+<style>
+
+.customtable2 td:nth-child(1) { color: white; background:#0087ff6e; }
+
+</style>
+
+{:.customtable2}
+|---
+| [admin_captain_mychecklist](https://myfaa.herokuapp.com/admin/login/?next=/admin/) | [api_get_post](https://myfaa.herokuapp.com/api/)
 
 ## issues tracker
 
@@ -896,6 +914,146 @@ Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
 ```
 :::
 {{site.data.alerts.ended}}
+
+### weather api app
+[firebase](eggs-weather.web.app)
+[source](https://github.com/aiegoo/bdook-weather2)
+
+<style>
+.wrap {width:100%; height:100%; margin:auto; background:url(images/bdook/iphone.png) no-repeat; background-size:auto 100%; position:relative;}
+.tabs {border-bottom:1px solid #999; position:absolute; top:11.2%; left:7.13%; width:86%;}
+.tabs > li {padding:0.75rem; width:50%; float:left; text-align:center;}
+.wrap > div {width:86%; top:calc(11.2% + 3rem); position:absolute; height:calc(77.4% - 3rem); left:7.13%; }
+.conts {width:100%; height:100%; overflow-y:auto; position:absolute; font-size:1rem; }
+.daily {display:block;}
+.weekly {display:none;}
+
+
+.daily > :first-child {padding:2em; text-align:center;}
+.daily #wt_icon {width:50%;}
+.daily .tit {text-align:right; display:inline-block; width:30%; padding:1em;}
+.daily .cont {text-align:left; display:inline-block; width:60%; padding:1em;}
+
+.weekly > ul {border-bottom:1px solid #999;}
+.weekly > ul > :first-child {width:28%; padding:2%; float:left;}
+.weekly > ul > li:not(:first-child) {float:right; width:72%; padding:1%;}
+.weekly span {color:rgb(30, 56, 172)}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2098D1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: white;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+</style>
+<div class="wrap">
+		<ul class="tabs clear">
+			<li class="hvr-underline-from-center">오늘의 날씨</li>
+			<li  class="hvr-underline-from-center">5일간 날씨</li>
+		</ul>
+		<div>
+			<ul class="conts daily">
+				<li>
+					<img id="wt_icon">
+				</li>
+				<li>
+					<span class="tit">날씨</span>
+					<span id="wt_main" class="cont"></span>
+				</li>
+				<li>
+					<span class="tit">온도</span>
+					<span id="wt_temp" class="cont"></span>
+				</li>
+				<li>
+					<span class="tit">바람</span>
+					<span id="wt_wind" class="cont"></span>
+				</li>
+				<li>
+					<span class="tit">위치</span>
+					<span id="wt_coord" class="cont"></span>
+				</li>
+			</ul>
+			<ul class="conts weekly">
+				<li><span>주간</span>날씨</li>
+			</ul>
+		</div>
+	</div>
+	<ul class="clear">
+		<li><img src="" alt=""></li>
+		<li class="wk_time"></li>
+		<li class="wk_main"></li>
+		<li class="wk_temp"></li>
+		<li class="wk_wind"></li>
+	</ul>
+	<script src="js/weather.js"></script>
+
 
 {% include taglogic.html %}
 
