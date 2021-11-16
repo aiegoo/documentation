@@ -821,6 +821,7 @@ So I decided to use a free django hosting service (AWS free tier was an option t
 
 ### now being served here
 
+{:.customtable}
 |---
 | [Hira Fava](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Hira%20Fava) | [Manjeet Carpentier](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Manjeet%20Carpentier) | [McKenzie Mantovani](https://myfaa.herokuapp.com/assesment/results/?pilot_name=McKenzie%20Mantovani)
 | [Munashe Zilberschlag](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Munashe%20Zilberschlag) | [Naomi Derrick](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Naomi%20Derrick) | [Otobong Schubert](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Otobong%20Schubert)
@@ -829,6 +830,13 @@ So I decided to use a free django hosting service (AWS free tier was an option t
 
 currently I am serving only the admin page, assessment input form and results with api actions.
 
+<style>
+
+.customtable2 td:nth-child(2) { color: white; background:#0087ff6e; }
+
+</style>
+
+{:.customtable2}
 |---
 | [admin_captain_mychecklist](https://myfaa.herokuapp.com/admin/login/?next=/admin/) | [api_get_post](https://myfaa.herokuapp.com/api/)
 
