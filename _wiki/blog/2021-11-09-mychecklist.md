@@ -736,7 +736,7 @@ as of Nov 12, 2021, I have updated some fields and they can be found here;
 <style>
 .customtable tr:nth-child(odd) { background-color: #0087ff6e; }
 .customtable td:nth-child(2) { color: white; background: #0087ff6e; }
-.customtable tr:nth-child(3) { color: black; background: yellow; }
+.customtable tr:nth-child(3) { color: black; background: gray; }
 .customtable td:nth-child(even) { color: black; background: #b1b0e1}
 </style>
 
@@ -832,7 +832,7 @@ currently I am serving only the admin page, assessment input form and results wi
 
 <style>
 
-.customtable2 td:nth-child(2) { color: white; background:#0087ff6e; }
+.customtable2 td:nth-child(1) { color: white; background:#0087ff6e; }
 
 </style>
 
