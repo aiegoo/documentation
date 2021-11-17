@@ -775,6 +775,11 @@ see the code and setup details in the links below;
 {% include image.html file="google/google_service.png" caption="no key is present to the mychecklist project" %}
 
 - with google creds and cred.json like in the settings.py, access to gsheet is granted through this cred.json file containing  contents from my cred issued by google.
+
+|---
+| Name | By | Service Name | Overview
+| Google Sheets API | Google Enterprise API | sheets.googleapis.com | Reads and writes Google Sheets.
+
 - add this script to settings.py
 
 ```python
