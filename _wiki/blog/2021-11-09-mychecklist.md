@@ -877,6 +877,37 @@ python manage.py <your_custom_command>
 ```
 ## issues tracker
 
+{: .note}
+I've been testing the app and discovered more lacking than satisfactory; for example, API search requires exact wording for it to work. Check out the views.py under `risk_assesment_project/api/views.py`
+
+This is my solution
+
+```python
+
+    @action(detail=False,
+            methods=['get'])
+    def names(self, request, *args, **kwargs):
+        qs = set()
+        if request.query_params.get('pilot_name'):
+            qs = [i[0] for i in set(Assessment.objects.filter(pilot_name__icontains=request.query_params.get('pilot_name')).values_list('pilot_name'))]
+        return Response({'matched': qs}
+```
+
+and some minor changes below;
+
+```python
+    def list(self,request):
+        queryset = self.get_queryset().order_by('flight_date')
+        if len(request.query_params):
+            string = "and ".join([f"{k} LIKE UPPER('%{v.upper()}%')" for k,v in request.query_params.items()])
+            queryset = Assessment.objects.raw(f"""SELECT * FROM risk_assesment_Assessment WHERE {string} ORDER BY flight_date""")
+        serializer = self.serializer_class(queryset,many=True)
+        return Response(serializer.data)
+
+```
+
+
+### other issues
 {{site.data.alerts.details}}
 ```python
 Environment:
