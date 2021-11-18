@@ -424,7 +424,7 @@ class Assessment(models.Model):
 python manage.py test
 ```
 
-to run a validation test. This test to make sure that only the selected values are valid for each question that why trying to replace each point with 50 will raise error 400)#bad request and the form will not be submitted
+It's the cli to run a validation test. This test is to make sure that the selected values are valid for each question. That's why trying to replace each point with 50 will raise error 400 #bad request and the form will not be submitted
 
 and check the code from test/test_view.py
 
@@ -728,9 +728,9 @@ sqlite>
 {{site.data.alerts.ended}}
 
 as of Nov 12, 2021, I have updated some fields and they can be found here;
-[Assesment](https://github.com/aiegoo/mychecklist/blob/195d463847b0bcc8b1ebad566475355db2680864/risk_assesment_project/risk_assesment/templates/risk_assesment/assesment.html),
+[Assesment](https://github.com/aiegoo/myfaa/blob/master/risk_assesment/templates/risk_assesment/assesment.html),
 
-[result](https://github.com/aiegoo/mychecklist/blob/195d463847b0bcc8b1ebad566475355db2680864/risk_assesment_project/risk_assesment/templates/risk_assesment/assesment_result.html)
+[result](https://github.com/aiegoo/myfaa/blob/master/risk_assesment/templates/risk_assesment/assesments_result.html)
 
 ## googlesheet and api
 <style>
@@ -775,6 +775,11 @@ see the code and setup details in the links below;
 {% include image.html file="google/google_service.png" caption="no key is present to the mychecklist project" %}
 
 - with google creds and cred.json like in the settings.py, access to gsheet is granted through this cred.json file containing  contents from my cred issued by google.
+
+|---
+| Name | By | Service Name | Overview
+| Google Sheets API | Google Enterprise API | sheets.googleapis.com | Reads and writes Google Sheets.
+
 - add this script to settings.py
 
 ```python
@@ -840,6 +845,36 @@ currently I am serving only the admin page, assessment input form and results wi
 |---
 | [admin_captain_mychecklist](https://myfaa.herokuapp.com/admin/login/?next=/admin/) | [api_get_post](https://myfaa.herokuapp.com/api/)
 
+###  heroku custom command
+[heroku_doc](https://devcenter.heroku.com/articles/scheduling-custom-django-management-commands)
+
+{{site.data.alerts.details}}
+```python
+from django.core.management.base import BaseCommand, CommandError
+from some_app.models import Book
+
+class Command(BaseCommand):
+    help = 'Prints all book titles in the database'
+
+    def handle(self):
+        try:
+            books = Book.objects.all()
+            for book in books:
+                 self.stdout.write(self.style.SUCCESS(book.title))
+        except FieldDoesNotExist:
+            self.stdout.write(self.style.ERROR('Field "title" does not exist.'))
+            return
+
+        self.stdout.write(self.style.SUCCESS('Successfully printed all Book titles'))
+        return
+
+```
+{{site.data.alerts.ended}}
+
+```shell
+heroku run bash -a [yourappname]
+python manage.py <your_custom_command>
+```
 ## issues tracker
 
 {{site.data.alerts.details}}

@@ -3,6 +3,7 @@ url: aiegoo.github.io
 #baseurl: /documentation #for github.io/documentation
 baseurl: ""
 output: web
+media: https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api
 imagesurl_cats: "images/cats/"
 imagesurl_yoga: "images/yoga/"
 imagesurl_yoga_hatha: "images/yoga/hatha/"
