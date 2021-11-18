@@ -826,6 +826,17 @@ So I decided to use a free django hosting service (AWS free tier was an option t
 
 ### now being served here
 
+{: .warning}
+- sequence of cli when updating changes to django app/db
+1. (add/modify some someapp/models.py)
+2. python manage.py makemigrations someapp
+3. python manage.py migrate
+4. git add someapp/migrations/*.py (to add the new migration file)
+5. git commit -m "added migration for app someapp"
+6. git push heroku
+7. heroku run python manage.py migrate
+
+
 {:.customtable}
 |---
 | [Hira Fava](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Hira%20Fava) | [Manjeet Carpentier](https://myfaa.herokuapp.com/assesment/results/?pilot_name=Manjeet%20Carpentier) | [McKenzie Mantovani](https://myfaa.herokuapp.com/assesment/results/?pilot_name=McKenzie%20Mantovani)
