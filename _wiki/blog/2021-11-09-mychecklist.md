@@ -878,7 +878,7 @@ python manage.py <your_custom_command>
 ```
 
 <div markdown="1">
-{: .warning}
+{: .note}
 - sequence of cli when updating changes to django app/db
 1. (add/modify some someapp/models.py)
 2. python manage.py makemigrations someapp
@@ -890,6 +890,12 @@ python manage.py <your_custom_command>
 </div>
 
 ## issues tracker
+
+## to dump database
+
+```shell
+python3 manage.py dumpdata --indent 4 --natural-primary --natural-foreign -e contenttypes -e auth.Permission -e sessions  > dumpdata.json
+```
 
 {: .note}
 I've been testing the app and discovered more lacking than satisfactory; for example, API search requires exact wording for it to work. Check out the views.py under `risk_assesment_project/api/views.py`
