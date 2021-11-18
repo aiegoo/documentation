@@ -880,7 +880,7 @@ python manage.py <your_custom_command>
 {: .note}
 I've been testing the app and discovered more lacking than satisfactory; for example, API search requires exact wording for it to work. Check out the views.py under `risk_assesment_project/api/views.py`
 
-This is my solution
+This is my solution; adjust graph, added autocomplete, use gspull and gspush to reorder. filter by partial values
 
 ```python
 
@@ -903,6 +903,59 @@ and some minor changes below;
             queryset = Assessment.objects.raw(f"""SELECT * FROM risk_assesment_Assessment WHERE {string} ORDER BY flight_date""")
         serializer = self.serializer_class(queryset,many=True)
         return Response(serializer.data)
+
+```
+- Gsheet numbering was always hard to sort and hard to produce sensible order of data entries. I have added assesment_id field so that the default ordering is normally executed with most recent at the bottom of the data entry
+
+```python
+@admin.register(Assessment)
+class AssessmentAdmin(admin.ModelAdmin):
+    list_display = ['assesment_id','flight_date','pilot_name','get_score']
+    list_filter = ('flight_date', 'pilot_name', 'flight_from','to')
+    search_fields = ('flight_date', 'pilot_name', 'flight_from','to')
+```
+
+- risk_assesment/models.py
+
+```python
+from django.db import models
+from django.core.exceptions import ObjectDoesNotExist
+class OrderField(models.PositiveIntegerField):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+    def pre_save(self, model_instance, add):
+        qs = self.model.objects.all()
+        if getattr(model_instance, self.attname) is None:
+            if len(qs)==0:
+                value = 1
+            else:
+                last_item = qs.latest(self.attname)
+
+                _assesment_id = [i[self.attname] for i in qs.values(self.attname)]
+                for i in range(1,max(_assesment_id)+2):
+                    try:
+                        _assesment_id.index(i)
+                    except:
+                        value = i
+                        break
+            setattr(model_instance, self.attname, value)
+            return value
+        else:
+            return super().pre_save(model_instance, add)
+
+
+# above was placed before this; class Assessment(models.Model)
+
+# skipping
+ data = [
+            ins.assesment_id,
+            ins.flight_date,
+```
+
+- risk_assesment/signals.py
+
+```python
+
 
 ```
 
