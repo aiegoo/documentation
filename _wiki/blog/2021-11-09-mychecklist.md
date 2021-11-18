@@ -822,7 +822,7 @@ So I decided to use a free django hosting service (AWS free tier was an option t
 
 - how I got the dummy data back in heroku app
 ![image](https://user-images.githubusercontent.com/42961200/141774588-44a6b950-6a31-4df4-9937-54e182a71890.png)
-- I ran the same script in the heroku console, boooom! it worked. [heeroku_console](https://dashboard.heroku.com/apps/myfaa/deploy/github?web-console=myfaa)
+- I ran the same script in the heroku console, boooom! it worked. [heroku_console](https://dashboard.heroku.com/apps/myfaa/deploy/github?web-console=myfaa)
 
 ### now being served here
 
@@ -879,14 +879,8 @@ python manage.py <your_custom_command>
 
 <div markdown="1">
 {: .note}
-- sequence of cli when updating changes to django app/db
-1. (add/modify some someapp/models.py)
-2. python manage.py makemigrations someapp
-3. python manage.py migrate
-4. git add someapp/migrations/*.py (to add the new migration file)
-5. git commit -m "added migration for app someapp"
-6. git push heroku
-7. heroku run python manage.py migrate
+sequence of cli when updating changes to django app/db 1. (add/modify some someapp/models.py) 2. python manage.py makemigrations someapp  3. python manage.py migrate 4. git add someapp/migrations/*.py (to add the new migration file) 5. git commit -m "added migration for app someapp"
+6. git push heroku 7. heroku run python manage.py migrate
 </div>
 
 ## issues tracker
