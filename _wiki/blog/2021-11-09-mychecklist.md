@@ -1047,6 +1047,8 @@ Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+.clear {clear:both;}
+.clear:after {clear:both; display:block; content:"";}
 </style>
 <div class="wrap">
 		<ul class="tabs clear">
