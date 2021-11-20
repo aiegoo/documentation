@@ -64,7 +64,7 @@ ol li {
    1. flight goal, location, flight range, duration, altitude, battery stat as to fill out the form's entries of basic information
    2. integrating data mining scripts using [this](https://pf3.36io.co/images/network/data_viz.jpg)
 {% include image.html file="network/heatmap.jpg" caption="heatmap with 7 prior check dataset" %}
-
+4. [official documentation](pdf/mychecklist/mychecklist_doc.pdf)
 ## .table
 - install sqlite3 on windows 'npm install --save sqlite3` in the project directory.
 
