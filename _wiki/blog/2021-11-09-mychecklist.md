@@ -879,7 +879,7 @@ python manage.py <your_custom_command>
 
 <div markdown="1">
 {: .note}
-sequence of cli when updating changes to django app/db 1. (add/modify some someapp/models.py) 2. python manage.py makemigrations someapp  3. python manage.py migrate 4. git add someapp/migrations/*.py (to add the new migration file) 5. git commit -m "added migration for app someapp"
+sequence of cli when updating changes to django app/db :100: 1. (add/modify some someapp/models.py) 2. python manage.py makemigrations someapp  3. python manage.py migrate 4. git add someapp/migrations/*.py (to add the new migration file) 5. git commit -m "added migration for app someapp"
 6. git push heroku 7. heroku run python manage.py migrate
 </div>
 
