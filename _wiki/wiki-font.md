@@ -18,6 +18,10 @@ latex: false
 * TOC
 {:toc}
 
+## powerline font
+[github](https://github.com/powerline/fonts.git)
+
+
 ## next tasks
 Test it out with [my_copy](https://aiegoo.github.io/documentation-theme-jekyll)
 
