@@ -47,7 +47,9 @@ I began by referring to articles of the law in fine prints, and realized that it
 Now that I need this form and and what' required of it, I set off to a drawing table, whoa! my usual Starbucks table and started dawdling on the ideas.
 
 Steps to follow;
+
 :one: a preliminary write-up of project design [ProjectDesgin]({{site.github_link}}pdf/gcs/ProjectDesign.odt)
+
 :two: a db orm
 
 {{site.data.alerts.details}}
@@ -60,11 +62,14 @@ ol li {
     counter-reset: list 3;
 }
 </style>
+
 :three: adding more data fields
    1. flight goal, location, flight range, duration, altitude, battery stat as to fill out the form's entries of basic information
    2. integrating data mining scripts using [this](https://pf3.36io.co/images/network/data_viz.jpg)
 {% include image.html file="network/heatmap.jpg" caption="heatmap with 7 prior check dataset" %}
+
 :four: :o: [official documentation](pdf/mychecklist/mychecklist_doc.pdf)
+
 ## .table
 - install sqlite3 on windows 'npm install --save sqlite3` in the project directory.
 
