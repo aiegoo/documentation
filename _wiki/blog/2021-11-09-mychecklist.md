@@ -883,7 +883,14 @@ python manage.py <your_custom_command>
 
 <div markdown="1">
 {: .note}
-:fallen_leaf: sequence of cli when updating changes to django app/db :one: (add/modify some someapp/models.py) :two: python manage.py makemigrations someapp  :three: python manage.py migrate :four: git add someapp/migrations/*.py (to add the new migration file) :five: git commit -m "added migration for app someapp" :six: git push heroku :seven: heroku run python manage.py migrate
+:fallen_leaf: sequence of cli when updating changes to django app/db
+:one: (add/modify some someapp/models.py)
+:two: python manage.py makemigrations someapp
+:three: python manage.py migrate
+:four: git add someapp/migrations/*.py (to add the new migration file)
+:five: git commit -m "added migration for app someapp"
+:six: git push heroku
+:seven: heroku run python manage.py migrate
 </div>
 
 ## issues tracker
