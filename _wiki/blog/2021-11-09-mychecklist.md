@@ -1061,27 +1061,27 @@ Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
 ### weather api app
 [firebase](eggs-weather.web.app)
 [source](https://github.com/aiegoo/bdook-weather2)
-
+#
+### css
+{{site.data.alerts.details}}
 <style>
-.wrap {width:100%; height:100%; margin:auto; background:url(images/bdook/iphone.png) no-repeat; background-size:auto 100%; position:relative;}
-.tabs {border-bottom:1px solid #999; position:absolute; top:11.2%; left:7.13%; width:86%;}
-.tabs > li {padding:0.75rem; width:50%; float:left; text-align:center;}
-.wrap > div {width:86%; top:calc(11.2% + 3rem); position:absolute; height:calc(77.4% - 3rem); left:7.13%; }
-.conts {width:100%; height:100%; overflow-y:auto; position:absolute; font-size:1rem; }
+ol, ul, li {list-style: none;}
+.wrap {width:500px; height:500px; margin:auto; background:url(images/bdook/iphone.png) no-repeat; background-size:auto 100%; position:relative;}
+.tabs {border-bottom:1px solid #999; position:absolute; top:11.2%; left:4.13%; width:43%;}
+.tabs > li {padding:0.75rem; width:50%; float:left; text-align:center; left: -10px; }
+.wrap > div {width:66%; top:calc(11.2% + 4rem); position:absolute; height:calc(77.4% - 3rem); left:2%; }
+.conts {width:69%; height:94%; overflow-y:auto; position:absolute;     font-size: 11px; margin-top: 15px; line-height: 1;}
 .daily {display:block;}
 .weekly {display:none;}
-
-
-.daily > :first-child {padding:2em; text-align:center;}
-.daily #wt_icon {width:50%;}
-.daily .tit {text-align:right; display:inline-block; width:30%; padding:1em;}
-.daily .cont {text-align:left; display:inline-block; width:60%; padding:1em;}
-
-.weekly > ul {border-bottom:1px solid #999;}
+.daily > :first-child {padding:0em; text-align:center;}
+.daily #wt_icon {width:30%;}
+.daily .tit {text-align:right; display:inline-block; width:30%; padding:0em;margin-left: -20px !important;}
+.daily .cont {text-align:left; display:inline-block; width:72%; padding:1em;}
+.weekly > ul {border-bottom:1px solid #0606;}
+.weekly.conts {height: 91%; width: 80%; left: -35px;}
 .weekly > ul > :first-child {width:28%; padding:2%; float:left;}
-.weekly > ul > li:not(:first-child) {float:right; width:72%; padding:1%;}
+.weekly > ul > li:not(:first-child) {float:right; width:72%; padding:-3%;}
 .weekly span {color:rgb(30, 56, 172)}
-
 /* Underline From Center */
 .hvr-underline-from-center {
   display: inline-block;
@@ -1112,9 +1112,7 @@ Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
   left: 0;
   right: 0;
 }
-
-
-* Shutter Out Horizontal */
+/* Shutter Out Horizontal */
 .hvr-shutter-out-horizontal {
   display: inline-block;
   vertical-align: middle;
@@ -1157,48 +1155,176 @@ Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
 }
 .clear {clear:both;}
 .clear:after {clear:both; display:block; content:"";}
+media
 </style>
-<div class="wrap">
-		<ul class="tabs clear">
-			<li class="hvr-underline-from-center">오늘의 날씨</li>
-			<li  class="hvr-underline-from-center">5일간 날씨</li>
-		</ul>
-		<div>
-			<ul class="conts daily">
-				<li>
-					<img id="wt_icon">
-				</li>
-				<li>
-					<span class="tit">날씨</span>
-					<span id="wt_main" class="cont"></span>
-				</li>
-				<li>
-					<span class="tit">온도</span>
-					<span id="wt_temp" class="cont"></span>
-				</li>
-				<li>
-					<span class="tit">바람</span>
-					<span id="wt_wind" class="cont"></span>
-				</li>
-				<li>
-					<span class="tit">위치</span>
-					<span id="wt_coord" class="cont"></span>
-				</li>
-			</ul>
-			<ul class="conts weekly">
-				<li><span>주간</span>날씨</li>
-			</ul>
-		</div>
-	</div>
-	<ul class="clear">
-		<li><img src="" alt=""></li>
-		<li class="wk_time"></li>
-		<li class="wk_main"></li>
-		<li class="wk_temp"></li>
-		<li class="wk_wind"></li>
-	</ul>
-	<script src="js/weather.js"></script>
+{{site.data.alerts.ended}}
 
+<div class="wrap">
+     <ul class="tabs clear">
+          <li class="hvr-underline-from-center">오늘 날씨</li>
+          <li  class="hvr-underline-from-center">5일 날씨</li>
+     </ul>
+     <div>
+          <ul class="conts daily">
+               <li>
+                    <img id="wt_icon">
+               </li>
+               <li>
+                    <span class="tit">날씨</span>
+                    <span id="wt_main" class="cont"></span>
+               </li>
+               <li>
+                    <span class="tit">온도</span>
+                    <span id="wt_temp" class="cont"></span>
+               </li>
+               <li>
+                    <span class="tit">바람</span>
+                    <span id="wt_wind" class="cont"></span>
+               </li>
+               <li>
+                    <span class="tit">위치</span>
+                    <span id="wt_coord" class="cont"></span>
+               </li>
+          </ul>
+          <ul class="conts weekly">
+               <li><span>주간</span>날씨</li>
+          </ul>
+     </div>
+<ul class="clear">
+     <li><img src="" alt=""></li>
+     <li class="wk_time"></li>
+     <li class="wk_main"></li>
+     <li class="wk_temp"></li>
+     <li class="wk_wind"></li>
+</ul>
+</div>
+
+### js
+{{site.data.alerts.details}}
+<script>
+// af147f11a0bdb42f9a8efd152f7bbbf2
+// api.openweathermap.org/data/2.5/weather?id=2172797
+//api.openweathermap.org/data/2.5/forecast?id=524901
+//daegu id 1835329, Seoul 1835848
+(function checkMobileDevice() {
+	var mobileKeyWords = ['Android', 'iPhone', 'iPod', 'BlackBerry', 'Windows CE', 'SAMSUNG', 'LG', 'MOT', 'SonyEricsson'];
+	for (var i in mobileKeyWords) {
+			if (navigator.userAgent.match(mobileKeyWords[i]) != null) {
+					$(".wrap").css({"background":"none"});
+					$(".tabs").css({
+						 "position":"static",
+							"top":0,
+							"left":0,
+							"width":"100%"
+					});
+					$(".wrap > div").css({
+						"position":"relative",
+						"width":"100%",
+						"top":0,
+						"height":"calc(100% - 3rem)",
+						"left":0
+					});
+			}
+			else {
+				$(".wrap").css({
+					"background":"url(images/weather/iphone.png) no-repeat",
+					"background-size":"auto 100%"
+				});
+				$(".tabs").css({
+					"position":"absolute",
+					"top":"11.2%",
+					"left":"4.13%",
+					"width":"43%"
+				});
+				$(".wrap > div").css({
+					"position":"absolute",
+					"width":"86%",
+					"top":"calc(11.2% + 4rem)",
+					"height":"calc(77.4% - 3rem)",
+					"left":"2%"
+				});
+			}
+	}
+	return false;
+});
+var log = console.log;
+var urlBase = "https://api.openweathermap.org/data/2.5/";
+$(".tabs > li").click(function(){
+	var n = $(this).index();
+	$(".tabs > li").css({
+		"background-color":"#f8f8f8",
+		"border-bottom":"none",
+		"color":"#333",
+		"font-weight":"normal"
+	});
+	$(this).css({
+		"background-color":"#f60",
+		"border-bottom":"3px solid #390",
+		"color":"#fff",
+		"font-weight":"bold"
+	});
+	$(".conts").hide(0);
+	$(".conts").eq(n).show(0, function(){
+		if(n == 0) url = urlBase + "weather";
+		else url = urlBase + "forecast";
+		$.ajax({
+			url: url,
+			type: "get",
+			dataType: "json",
+			//https://api.openweathermap.org/data/2.5/weather?id=1835329&appid=02efdd64bdc14b279bc91d9247db4722&units=metric    	//daily
+			//https://api.openweathermap.org/data/2.5/forecast?id=1835329&appid=02efdd64bdc14b279bc91d9247db4722&units=metric 		//weekly
+			data: {
+				id: "1835329",
+				appid: "02efdd64bdc14b279bc91d9247db4722",
+				units: "metric"
+			},
+			success: function(data){
+				if(n == 0) dailyFn(data);
+				else weeklyFn(data);
+			},
+			error: function(xhr){
+				log(xhr);
+			}
+		});
+	});
+});
+$(".tabs > li").eq(0).trigger("click");
+function dailyFn(data) {
+	console.log(data);
+	$("#wt_icon").attr("src", "images/weather/icon/"+data.weather[0].icon+".png");
+	$("#wt_main").html(data.weather[0].main+" / "+data.weather[0].description);
+	$("#wt_temp").html(data.main.temp+"("+data.main.temp_max+"/"+data.main.temp_min+")");
+	$("#wt_wind").html(data.wind.speed+"/ms ("+data.wind.deg+"deg)");
+	$("#wt_coord").html("위도: "+data.coord.lat+" / 경도: "+data.coord.lon+"-" +data.name);
+}
+function weeklyFn(data) {
+	var html = '';
+	var v = '';
+	$(".weekly").empty();
+	for(var i in data.list) {
+		v = data.list[i];
+		html = `
+		<ul class="clear">
+			<li><img src="images/weather/icon/${v.weather[0].icon}.png" class="img"></li>
+			<li class="wk_time"><span>${v.dt_txt}</span></li>
+			<li class="wk_main">
+				<span>날씨:</span> ${v.weather[0].main}(${v.weather[0].description})
+			</li>
+			<li class="wk_temp">
+				<span>온도:</span> ${v.main.temp}도 (${v.main.temp_min} / ${v.main.temp_max})</li>
+			<li class="wk_wind"><span>바람:</span> ${v.wind.speed}ms(${v.wind.deg}deg)</li>
+		</ul>
+		`;
+		$(".weekly").append(html);
+	}
+}
+$(window).resize(function(){
+	var wid = $(this).height() * 0.495;
+	$(".wrap").css({"max-width":wid+"px"});
+}).trigger("resize");
+
+</script>
+{{site.data.alerts.ended}}
 
 {% include taglogic.html %}
 
