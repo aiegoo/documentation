@@ -455,6 +455,9 @@ to make sure that all question (point based) are required to be filled out in or
 
 **ref** check both the risk_assesment/test and api/test; also have a look at api/view.py, and api/permisssions.py
 
+> assesment_result.html
+
+<script src="https://gist.github.com/aiegoo/1b4244e07d71961b338b84c10a52905d.js"></script>
 ### more update on db schema change
 * following is to let user know the unit or type of data, and you can now search using any of the fields (from the three fields).
 
