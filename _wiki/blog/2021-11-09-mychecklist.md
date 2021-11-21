@@ -499,7 +499,7 @@ sqlite>
 
 ## d3js
 
-{% include image.html file="images/google/assesment_result.png" caption="as of Nov 22, sligtly differnt look" %}
+{% include image.html file="google/assesment_result.png" caption="as of Nov 22, sligtly differnt look" %}
 {{site.data.alerts.details}}
 {% include copyto.html %}
       <template id="">
