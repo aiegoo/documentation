@@ -37,6 +37,8 @@ updated: 2021-11-21 13:38
 [linuxhint](https://linuxhint.com/check-wsl-version/)
 
 [official_doc](https://docs.microsoft.com/en-us/windows/wsl/compare-versions)
+https://docs.microsoft.com/ko-kr/windows/wsl/install
+
 
 {% include taglogic.html %}
 
