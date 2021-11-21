@@ -456,6 +456,13 @@ to make sure that all question (point based) are required to be filled out in or
 **ref** check both the risk_assesment/test and api/test; also have a look at api/view.py, and api/permisssions.py
 
 > assesment_result.html
+> 
+<iframe height="300" style="width: 100%;" scrolling="no" title="assesment_result" src="https://codepen.io/leetony/embed/OJjGxEL?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/leetony/pen/OJjGxEL">
+  assesment_result</a> by LeeTony (<a href="https://codepen.io/leetony">@leetony</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OJjGxEL" data-user="leetony" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/leetony/pen/OJjGxEL">
   assesment_result</a> by LeeTony (<a href="https://codepen.io/leetony">@leetony</a>)
