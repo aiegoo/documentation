@@ -10,7 +10,7 @@ folder: blog
 collection: wiki
 categories: windows
 keywords: "wsl ubuntu 18 subsystem windows10"
-summary: "Sun, Nov 21, 21, wsl 1 to 2 upgrade"
+summary: "Sun, Nov 21, wsl 1 to 2 upgrade"
 excerpt_separator: <!--more-->
 toc: true
 public: true
