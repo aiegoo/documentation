@@ -830,6 +830,8 @@ so you will always run gsPush() to push all record in the database to google she
 {{site.data.alerts.callout_default}}
 So my original setup plan to use github Pages with a json file will not work for a non-static site like this project, as I will use this app mostly through my mobile phone, which needs to display the input html form for user data. Unless I edit the google sheet for this purpose, which would be too cumbersome task to do on site.{{site.data.alerts.end}}
 [heroku_django_blog](https://realpython.com/django-hosting-on-heroku/#step-7-deploy-your-django-project-to-heroku)
+
+[readme](https://github.com/aiegoo/mychecklist/blob/gh-pages/README.md)
 {{site.data.alerts.callout_primary}}
 So I decided to use a free django hosting service (AWS free tier was an option too). But I want to keep my amazon account as free as it is now. Pythonanywhere  was a good alternative. Goorm is another service I am familiar with and will make a good candidate too, otherwise.{{site.data.alerts.end}}
 
@@ -1185,7 +1187,7 @@ media
                <li>
                     <span class="tit">날씨</span>
                     <span id="wt_main" class="cont"></span>
-               </li>
+               </li>https://github.com/aiegoo/mychecklist/blob/gh-pages/README.md
                <li>
                     <span class="tit">온도</span>
                     <span id="wt_temp" class="cont"></span>
