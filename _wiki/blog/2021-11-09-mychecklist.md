@@ -1081,7 +1081,7 @@ ol, ul, li {list-style: none;}
 .tabs {border-bottom:1px solid #999; position:absolute; top:11.2%; left:10.13%; width:43%;}
 .tabs > li {padding:0.75rem; width:50%; float:left; text-align:center; left: -10px; }
 .wrap > div {width:100%; top:calc(11.2% + 7rem); position:absolute; height:calc(77.4% - 4rem); left:40%; }
-.conts {width:69%; height:94%; overflow-y:auto; position:absolute;     font-size: 11px; margin-top: 15px; line-height: 1;}
+.conts {width:51%; height:94%; overflow-y:auto; position:absolute;     font-size: 11px; margin-top: 15px; line-height: 1;left: -37%;}
 .daily {display:block;}
 .weekly {display:none;}
 .daily > :first-child {padding:0em; text-align:center;}
