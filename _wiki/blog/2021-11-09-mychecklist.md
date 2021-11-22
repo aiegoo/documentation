@@ -1077,17 +1077,17 @@ Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
 {{site.data.alerts.details}}
 <style>
 ol, ul, li {list-style: none;}
-.wrap {width:500px; height:500px; margin:auto; background:url(images/bdook/iphone.png) no-repeat; background-size:auto 100%; position:relative;}
+.wrap {width:500px; height:500px; margin:auto; background:url(images/bdook/iphone.png) no-repeat; background-size:auto 104%; position:relative;}
 .tabs {border-bottom:1px solid #999; position:absolute; top:11.2%; left:4.13%; width:43%;}
 .tabs > li {padding:0.75rem; width:50%; float:left; text-align:center; left: -10px; }
-.wrap > div {width:66%; top:calc(11.2% + 4rem); position:absolute; height:calc(77.4% - 3rem); left:2%; }
+.wrap > div {width:66%; top:calc(11.2% + 7rem); position:absolute; height:calc(77.4% - 6rem); left:2%; }
 .conts {width:69%; height:94%; overflow-y:auto; position:absolute;     font-size: 11px; margin-top: 15px; line-height: 1;}
 .daily {display:block;}
 .weekly {display:none;}
 .daily > :first-child {padding:0em; text-align:center;}
 .daily #wt_icon {width:30%;}
 .daily .tit {text-align:right; display:inline-block; width:30%; padding:0em;margin-left: -20px !important;}
-.daily .cont {text-align:left; display:inline-block; width:72%; padding:1em;}
+.daily .conts {text-align:left; display:inline-block; width:72%; padding:1em;}
 .weekly > ul {border-bottom:1px solid #0606;}
 .weekly.conts {height: 91%; width: 80%; left: -35px;}
 .weekly > ul > :first-child {width:28%; padding:2%; float:left;}
