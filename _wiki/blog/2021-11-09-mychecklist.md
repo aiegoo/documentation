@@ -1074,6 +1074,7 @@ Exception Value: invalid literal for int() with base 10: b'11 22:10:12.630675'
 [source](https://github.com/aiegoo/bdook-weather2)
 
 ### css
+
 {{site.data.alerts.details}}
 <style>
 ol, ul, li {list-style: none;}
@@ -1168,6 +1169,7 @@ ol, ul, li {list-style: none;}
 .clear:after {clear:both; display:block; content:"";}
 media
 </style>
+:::
 {{site.data.alerts.ended}}
 
 <div class="wrap">
@@ -1211,6 +1213,7 @@ media
 </div>
 
 ### js
+
 {{site.data.alerts.details}}
 <script>
 // af147f11a0bdb42f9a8efd152f7bbbf2
@@ -1335,7 +1338,9 @@ $(window).resize(function(){
 }).trigger("resize");
 
 </script>
+:::
 {{site.data.alerts.ended}}
+
 
 {% include taglogic.html %}
 
