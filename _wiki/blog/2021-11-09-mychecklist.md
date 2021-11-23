@@ -464,7 +464,7 @@ to make sure that all question (point based) are required to be filled out in or
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-[assessment_result](https://gist.github.com/aiegoo/1b4244e07d71961b338b84c10a52905don)
+[assessment_result_code](https://github.com/aiegoo/myfaa2/blob/93beecc93302764e32c197bd98845e7cf55dcb5d/risk_assesment/templates/risk_assesment/assesments_result.html)
 
 > db schema change
 * following is to let user know the unit or type of data, and you can now search using any of the fields (from the three fields).
