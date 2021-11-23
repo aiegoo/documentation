@@ -28,13 +28,14 @@ my copilot in the palm of the hand!
 {{site.data.alerts.ends}}
 
 ## how it began
-{% include tony.html content="After successfully obtaining my pilot's license, I have yet to feel comfortable going out about flying my drones outside, even within the flyzone. By law, I am obliged to keep the flight  records and the first time I saw any actual log being kept was during the license test, where I started reading off the airframe tag number from the drone I was about to fly, to my so=called copilot. The examiner assistant doubling as my copilot would fill out the rest of the form, by observing me to conduct the preflight checks." %}
+{% include tony.html content="After successfully obtaining my pilot's license, I have yet to feel comfortable going out about flying my drones outside, even within the flyzone. By law, I am obliged to keep the flight  records and the first time I saw any actual log being kept was during the license test, where I started reading off the airframe tag number from the drone I was about to fly, to my so-called copilot. The test inspector assistant doubling as my copilot would fill out the rest of the form, by observing me to conduct the preflight checks." %}
 
 {{site.data.alerts.note}}
 Properly performing the items listed on pre-flight and related checklists is crucial to identifying hazards ensuring a safe flight. A co-pilot can make sure that the pilot-in-command (PIC) does not miss any items by solely keeping track of the checklist while the PIC performs the checks.
 {{site.data.alerts.end}}
 
 ### my goal
+
 - to create a webapp to fulfill this pre-flight checks, with a db, api and ui.
 - to document this process for future update and more integration needs later in this project.
 ### my research
@@ -837,6 +838,31 @@ So I decided to use a free django hosting service (AWS free tier was an option t
 
  {% include callout.html content="Heroku turned out that I need to add some more custom settings for gspread and oauth2client to work." %}
 
+### settings
+
+- requirements.txt and settings.py: add django-heroku==0.3.1 and import django_heroku / django_heroku.settings(locals())
+- add two files as in below to the project root directory
+
+* heroku.yml
+
+```yml
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: bundle exec puma -C config/puma.rb
+```
+
+* Procfile
+
+```yml
+web: python manage.py runserver 0.0.0.0:$PORT
+```
+
+- Finally, follow more instructions detailed in the heroku project page.
+- Between the local code repo and heroku git (https://git.heroku.com/myfaa2.git), some heroku specific git clis should be run (refer to the relevant links here for more details)
+
+
 - how I got the dummy data back in heroku app
 ![image](https://user-images.githubusercontent.com/42961200/141774588-44a6b950-6a31-4df4-9937-54e182a71890.png)
 - I ran the same script in the heroku console, boooom! it worked. [heroku_console](https://dashboard.heroku.com/apps/myfaa/deploy/github?web-console=myfaa)
@@ -906,6 +932,8 @@ python manage.py <your_custom_command>
 :seven: heroku run python manage.py migrate
 </div>
 
+## django docker container
+> I have created a Dockerfile to implement this django-docker project for convenient distribution; please review the file in the project
 ## issues tracker
 
 ## to dump database
