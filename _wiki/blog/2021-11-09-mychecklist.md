@@ -832,6 +832,32 @@ so you will always run gsPush() to push all record in the database to google she
 {: .note}
 The main changes that I made it to allow modifying the db.json manually and independent of the django app and when you want to update the django app of the changes in the db.json just call the jsonPull(). I don't think you'll ever need to use jsonPush() nor gsPush() because the app will always update both db.json and google sheet. Only both the gsPull() and jsonPull() is what you'll most likely use, when you modified them. To summarize, just keep in mind that django app is unaware of the the changes you made to either google sheet or db.json, but any changes you made to the django database will automatically update both the db.json and google sheet.
 
+```python
+def jsonPull():
+    """
+    delete all record in database and
+    pull all record from the db.json file to replace app model database
+    """
+
+def jsonPush():
+    """
+    delete all record in db.json
+    push all record from database to replace to db.json
+    """
+
+def gsPush():
+    """
+    delete all record in google sheet and
+    push all record from data to replace to google sheet
+    """
+
+def gsPull():
+    """
+    delete all record in database and
+    pull all record from google to replace app model database
+    """
+```
+
 ## Heroku implementation
 {{site.data.alerts.callout_default}}
 So my original setup plan to use github Pages with a json file will not work for a non-static site like this project, as I will use this app mostly through my mobile phone, which needs to display the input html form for user data. Unless I edit the google sheet for this purpose, which would be too cumbersome task to do on site.{{site.data.alerts.end}}
