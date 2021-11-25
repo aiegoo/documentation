@@ -32,7 +32,7 @@ updated: 2021-11-25 17:40
 in user interface(presentation), functional process logic(business rules), computer data storage/access
 
 
-
+{% include image.html file="data/serverlessinpractice.png" caption="figure1.2 a common approach with an exteranl database and file storage for the api" %}
 
 {% include taglogic.html %}
 
