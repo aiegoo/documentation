@@ -861,11 +861,11 @@ def gsPull():
 {: .warning}
 The best practice is to follow the steps below;
 
-1) make sure to first delete db.sqlite3 file \n
-2) delete every other files in migrations folders that is not __init__.py (contents in api/migrations and risk_assesment/migrations) \n
-3) (if applicable)delete every file with the name assesments.json in the top level risk_assesment_project folder . The only assesments.json should be in risk_assesment/fixtures. So dont delete risk_assesment/fixtures/assesments.json \n
-4) Delete everything in your google sheet spreadsheet \n
-5) in the settings.py file make sure to set 'SHEET_NAME':'mychecklist' \n
+1) make sure to first delete db.sqlite3 file <br>
+2) delete every other files in migrations folders that is not __init__.py (contents in api/migrations and risk_assesment/migrations) <br>
+3) (if applicable)delete every file with the name assesments.json in the top level risk_assesment_project folder . The only assesments.json should be in risk_assesment/fixtures. So dont delete risk_assesment/fixtures/assesments.json <br>
+4) Delete everything in your google sheet spreadsheet <br>
+5) in the settings.py file make sure to set 'SHEET_NAME':'mychecklist' <br>
 6) run the bash script scripts.sh just like before, it might take long time so be patient
 
 ## Heroku implementation
