@@ -766,7 +766,7 @@ as of Nov 12, 2021, I have updated some fields and they can be found here;
 
 {:.customtable}
 |---
-| [datacleaning](https://github.com/aiegoo/uas-reference/blob/master/data/datacleaning.pdf) | [googe_guide](https://github.com/aiegoo/uas-reference/blob/master/data/googleguide.pdf) | [gs-gas](https://github.com/aiegoo/uas-reference/blob/master/data/googlesheet-gas.pdf) | [gs_programming](https://github.com/aiegoo/uas-reference/blob/master/data/googlesheet.pdf) | [Gapps](https://github.com/aiegoo/uas-reference/blob/master/data/googleapps.pdf) [rctFirebase](https://github.com/aiegoo/uas-reference/blob/master/data/nodeSeverless.pdf)
+| [datacleaning](https://github.com/aiegoo/uas-reference/blob/master/data/datacleaning.pdf) | [googe_guide](https://github.com/aiegoo/uas-reference/blob/master/data/googleguide.pdf) | [gs-gas](https://github.com/aiegoo/uas-reference/blob/master/data/googlesheet-gas.pdf) | [gs_programming](https://github.com/aiegoo/uas-reference/blob/master/data/googlesheet.pdf) | [Gapps](https://github.com/aiegoo/uas-reference/blob/master/data/googleapps.pdf) [svlnode](https://github.com/aiegoo/uas-reference/blob/master/data/nodeSeverless.pdf)  [rctFirebase](https://github.com/aiegoo/uas-reference/blob/master/data/reactfirebase.pdf)
 
 **other wiki here**
 
