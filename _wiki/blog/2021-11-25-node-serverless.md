@@ -34,6 +34,10 @@ in user interface(presentation), functional process logic(business rules), compu
 
 {% include image.html file="data/serverlessinpractice.png" caption="figure1.2 a common approach with an exteranl database and file storage for the api" %}
 
+{% include image.html file="data/serverlessapproach.png" caption="figure1.e the serverless approach for the pizza api" %}
+
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
