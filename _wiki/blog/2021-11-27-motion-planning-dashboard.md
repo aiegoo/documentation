@@ -150,6 +150,12 @@ class DroneData(models.Model):
 | ![image](https://user-images.githubusercontent.com/42961200/120056494-8fbb7380-c077-11eb-8d1e-47289a397859.png) ![image](https://user-images.githubusercontent.com/42961200/120058702-c8fbdf80-c087-11eb-940f-61bdbbc160b5.png)
 
 
+## GCS roadmap
+
+{% include image.html file="webdev/webGCS.png" caption="GCS before upgrade: the motion of the aircraft is mainly controlled by the three quantities of nx, nf and γx, which respectively represent tangential overload, normal overload, and track roll angle. nx is used to control speed, nf and γx are used to control speed direction." %}
+
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
