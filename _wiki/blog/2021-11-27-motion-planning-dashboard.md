@@ -76,6 +76,67 @@ origin	https://eggs.or.kr/root/px4-autopilot.git (push)
 * ee864e3(2021-02-04) Initial commit
 {{site.data.alerts.ended}}
 
+## how it began
+
+{:.note}
+This wiki is to refresh my memory and get it started with one of my client's drone project. My project then was to create a dashboard with Django backend and Vue fron-end to connect drone's waypoints in real-time and display them on a map. Fortunately, both projects are relevant in many ways, except that mine used FCND simulator and waypoints and movements of drones were simulated inside a Unity app instead of open-source Mavlink/Simulink or even Ardupilot including QGroundControl. So here's how the dashboard was build almost one year ago.
+
+{{site.data.alerts.bulletin}}
+Be a copycat! Break someone else's code.
+{{site.data.alerts.ends}}
+
+
+## Django and model design
+
+```python
+
+from django.db import models
+from django.contrib.postgres.fields import ArrayField
+from django.utils.translation import gettext_lazy as _
+
+
+class Session(models.Model):
+    target_altitude = models.IntegerField("Target Altitude")
+    safety_distance = models.IntegerField("Safety Distance", default=5)
+    start = ArrayField(models.FloatField(), null=True)
+    goal = ArrayField(models.FloatField(), null=True)
+    is_finished = models.BooleanField("Is Finished", default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        verbose_name = _('Session')
+        verbose_name_plural = _('Sessions')
+        db_table = "session"
+
+
+class Movement(models.Model):
+    session = models.ForeignKey(Session, on_delete=models.CASCADE)
+    timestamp = models.DateTimeField(auto_now=True)
+    value = ArrayField(models.FloatField())
+
+    class Meta:
+        get_latest_by = 'id'
+        verbose_name = _("Movement")
+        verbose_name_plural = _("Movements")
+        db_table = "movement"
+
+class DroneData(models.Model):
+    session = models.ForeignKey(Session, on_delete=models.CASCADE)
+    timestamp = models.DateTimeField(auto_now=True)
+    local_position = ArrayField(models.FloatField())
+    local_velocity = ArrayField(models.FloatField())
+    global_position = ArrayField(models.FloatField())
+    global_home = ArrayField(models.FloatField())
+
+    class Meta:
+        get_latest_by = 'id'
+        verbose_name = _("Drone Data")
+        verbose_name_plural = _("Drone Datas")
+        db_table = "drone_data"
+```
+
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
