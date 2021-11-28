@@ -908,11 +908,14 @@ web: python manage.py runserver 0.0.0.0:$PORT
 ![image](https://user-images.githubusercontent.com/42961200/141774588-44a6b950-6a31-4df4-9937-54e182a71890.png)
 - I ran the same script in the heroku console, boooom! it worked. [heroku_console](https://dashboard.heroku.com/apps/myfaa/deploy/github?web-console=myfaa)
 
-- what if you want to reset the db of heroku default postgresql?
+> what if you want to reset the db of heroku default postgresql?
 
-heroku config:get DATABASE_URL -a <your_heroku_app_name> which give you the url of the db (mine was in the amazon s3), but this didn't help drop the db [sof](https://stackoverflow.com/questions/4820549/how-to-empty-a-heroku-database)
+```python
+heroku config:get DATABASE_URL -a <your_heroku_app_name> # which give you the url of the db (mine was in the amazon s3), but this didn't help drop the db [sof](https://stackoverflow.com/questions/4820549/how-to-empty-a-heroku-database)
 
-heroku pg:reset DATABASE_URL --confirm my_great_app, which I think did the job. After that, run the scripts (bash scripts.sh, or git push heroku master to initate the install process again.)
+heroku pg:reset DATABASE_URL --confirm my_great_app # which I think did the job. After that, run the scripts (bash scripts.sh, or git push heroku master to initate the install process again.)
+```
+
 ### now being served here
 
 
@@ -996,22 +999,7 @@ This is my solution; adjust graph, added autocomplete, use gspull and gspush to 
 ```python
 
     @action(detail=False,
-            methods=['get'])
-    def names(self, request, *args, **kwargs):
-        qs = set()
-        if request.query_params.get('pilot_name'):
-            qs = [i[0] for i in set(Assessment.objects.filter(pilot_name__icontains=request.query_params.get('pilot_name')).values_list('pilot_name'))]
-        return Response({'matched': qs}
-```
-
-and some minor changes below;
-
-```python
-    def list(self,request):
-        queryset = self.get_queryset().order_by('flight_date')
-        if len(request.query_params):
-            string = "and ".join([f"{k} LIKE UPPER('%{v.upper()}%')" for k,v in request.query_params.items()])
-            queryset = Assessment.objects.raw(f"""SELECT * FROM risk_assesment_Assessment WHERE {string} ORDER BY flight_date""")
+            methods=['get'])heroku pg:reset DATABASE_URL --confirm my_great_app(f"""SELECT * FROM risk_assesment_Assessment WHERE {string} ORDER BY flight_date""")
         serializer = self.serializer_class(queryset,many=True)
         return Response(serializer.data)
 
