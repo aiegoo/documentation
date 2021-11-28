@@ -283,6 +283,53 @@ The Map displays the background satellite imagery with the position of aircraft 
 {% include image.html file="webdev/gcs19.jpg" %}
 {% include image.html file="webdev/images-type.jpg" %}
 
+- takeoff
+
+{: .tip}
+|Field|Required Value|
+|--- |--- |
+|command|MAV_CMD_NAV_VTOL_TAKEOFF|
+|frame|MAV_FRAME_GLOBAL_RELATIVE_ALT|
+|x|0|
+|y|0|
+|z|Altitude above home to takeoff to in meters|
+
+
+- landing
+
+{: .note2}
+A VTOL landing consists of a number of waypoints. If these are not all planned as specified then the aircraft may be unable to perform failsafes, or may encounter terrain obstructions while flying the landing. The waypoints must be planned as specified below.
+
+|Field|Required Value|
+|--- |--- |
+|command|MAV_CMD_DO_LAND_START|
+|x|Landing latitude in degrees * 107|
+|y|Landing longitude in degrees * 107|
+
+|Field|Required Value|
+|--- |--- |
+|command|MAV_CMD_NAV_LOITER_TIME|
+|param1|1|
+|x|Landing latitude in degrees * 107|
+|y|Landing longitude in degrees * 107|
+|z|Approach altitude in meters (can be relative or global height according to the frame field)|
+
+
+|Field|Required Value|
+|--- |--- |
+|command|MAV_CMD_NAV_LOITER_TO_ALT|
+|x|Landing latitude in degrees * 107|
+|y|Landing longitude in degrees * 107|
+|z|Approach altitude in meters (can be relative or global height according to the frame field)|
+
+|Field|Required Value|
+|--- |--- |
+|command|MAV_CMD_NAV_VTOL_LAND|
+|frame|MAV_FRAME_GLOBAL_RELATIVE_ALT|
+|x|Landing latitude in degrees * 107|
+|y|Landing longitude in degrees * 107|
+|z|Transition altitude (above home) in meters|
+
 {% include taglogic.html %}
 
 {% include links.html %}
