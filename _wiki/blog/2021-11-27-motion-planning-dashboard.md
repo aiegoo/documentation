@@ -283,7 +283,7 @@ The Map displays the background satellite imagery with the position of aircraft 
 {% include image.html file="webdev/gcs19.jpg" %}
 {% include image.html file="webdev/images-type.jpg" %}
 
-- takeoff
+- [takeoff](http://vtol.manual.srp.aero/en/simulator.html)
 
 {: .tip}
 |Field|Required Value|
@@ -329,6 +329,9 @@ A VTOL landing consists of a number of waypoints. If these are not all planned a
 |x|Landing latitude in degrees * 107|
 |y|Landing longitude in degrees * 107|
 |z|Transition altitude (above home) in meters|
+
+Once armed, the aircraft will takeoff vertically and transition to forward flight.
+[doc](http://vtol.manual.srp.aero/en/simulator.html)
 
 {% include taglogic.html %}
 
