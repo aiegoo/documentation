@@ -159,7 +159,7 @@ VTOL is an autonomous unmanned aircraft (drone) and capable of performing a miss
 
 The GCS is comprised of the following distinct sections.
 
-{% include image.html file="webdev/gcsoverview.png" %}
+{% include image.html file="webdev/gcs-overview.png" %}
 
 ### Tab Selection
 
@@ -280,6 +280,8 @@ The Map displays the background satellite imagery with the position of aircraft 
 
     Aircraft: Displays the aircraft location and heading.
 
+{% include image.html file="webdev/gcs19.jpg" %}
+{% include image.html file="webdev/images-type.jpg" %}
 
 {% include taglogic.html %}
 
