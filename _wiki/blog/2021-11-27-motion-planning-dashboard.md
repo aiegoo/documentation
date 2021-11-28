@@ -102,7 +102,7 @@ class Session(models.Model):
     goal = ArrayField(models.FloatField(), null=True)
     is_finished = models.BooleanField("Is Finished", default=False)
     created_at = models.DateTimeField(auto_now_add=True)
-    
+
     class Meta:
         verbose_name = _('Session')
         verbose_name_plural = _('Sessions')
@@ -135,6 +135,19 @@ class DroneData(models.Model):
         db_table = "drone_data"
 ```
 
+## how to run
+
+|---
+| django-vue
+| ![image](https://user-images.githubusercontent.com/42961200/120050084-1875e780-c057-11eb-80be-6fbd7c134ea6.png)
+fcnd-kalman
+| ![image](https://user-images.githubusercontent.com/42961200/120050449-558ea980-c058-11eb-891b-8aeb724d9c64.png)
+unity-simulator
+| ![image](https://user-images.githubusercontent.com/42961200/120050698-ca61e380-c058-11eb-8643-3cc186b1200b.png)
+simul-control keys
+| ![image](https://user-images.githubusercontent.com/42961200/120051003-de5a1500-c059-11eb-9457-25e559161a7f.png)
+how to npm to sync with browser
+| ![image](https://user-images.githubusercontent.com/42961200/120056494-8fbb7380-c077-11eb-8d1e-47289a397859.png) ![image](https://user-images.githubusercontent.com/42961200/120058702-c8fbdf80-c087-11eb-940f-61bdbbc160b5.png)
 
 
 {% include taglogic.html %}
