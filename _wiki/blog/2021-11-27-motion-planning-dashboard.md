@@ -282,7 +282,7 @@ The Map displays the background satellite imagery with the position of aircraft 
 
 {% include image.html file="webdev/gcs19.jpg" %}
 {% include image.html file="webdev/images-type.jpg" %}
-
+{% include image.html file="webdev/survey.png" %}
 - [takeoff](http://vtol.manual.srp.aero/en/simulator.html)
 
 {: .tip}
@@ -332,6 +332,42 @@ A VTOL landing consists of a number of waypoints. If these are not all planned a
 
 Once armed, the aircraft will takeoff vertically and transition to forward flight.
 [doc](http://vtol.manual.srp.aero/en/simulator.html)
+
+- forward flight mode comparison
+
+|Forward Modes|Auto|Rally|Guided|Cruise|FBWB|Manual|
+|--- |--- |--- |--- |--- |--- |--- |
+|Interface|GCS|GCS|GCS|Controller|Controller|Controller|
+|Link|Telem|Telem|Telem|RC|RC|RC|
+|Controlled by|Mission|Rally Point|Guided Point|Sticks|Sticks|Sticks|
+|Autonomous|x|x|x||||
+|Stabilized Pilot Inputs||||x|x||
+|GPS Required|x|x|x|x|||
+|Ground Track|x|x|x|x|||
+
+- vertical flight mode comparisons
+
+|Vertical Modes|Auto|QLand|QLoiter|QStabilize|
+|--- |--- |--- |--- |--- |
+|Interface|GCS|Controller|Controller|Controller|
+|Link|Telem|RC|RC|RC|
+|Controlled by|Mission|Sticks|Sticks|Sticks|
+|Autonomous|x|x|||
+|GPS Required|x|x|x||
+|Stick Nudging||x|||
+|Weathervaning|x|x|x||
+|Forward Assist|x|x|x||
+
+> Flying category
+
+- Mission planning
+- Changing flight modes
+- Available flight mode
+- Data links
+- Reconnecting in flight
+- failsafe
+- warnings / arming warnings
+
 
 {% include taglogic.html %}
 
