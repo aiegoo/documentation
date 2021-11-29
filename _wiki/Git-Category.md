@@ -281,6 +281,7 @@ Project 수행 시 어떻게 branch를 관리하면 좋을지에 대한 내용�
 A successful Git branching model
 
 : https://nvie.com/posts/a-successful-git-branching-model/
+![git-model@2x](https://user-images.githubusercontent.com/42961200/143953544-e71eacaa-bdd7-43f9-b8fc-dfb766ff3dcd.png)
 
 
 {% include taglogic.html %}
