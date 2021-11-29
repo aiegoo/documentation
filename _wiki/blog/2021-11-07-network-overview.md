@@ -7,6 +7,7 @@ tagName: network
 permalink: 2021-11-07-network-overview.html
 sidebar: other_sidebar
 folder: blog
+keywords: "wireshark data viz d3js d3 python webserver"
 collection: wiki
 categories: school
 keywords: "network"
