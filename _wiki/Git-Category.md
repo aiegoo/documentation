@@ -167,6 +167,7 @@ Github에서 Pull request를 merge 시 git에서 제공하는 여러 merge optio
 
 
 
+![pullrequest-mergebutton](https://user-images.githubusercontent.com/42961200/143947702-36c106e5-8523-4cb2-998b-07713efca168.png)
 
 
 
@@ -230,6 +231,7 @@ Merge pull request는
 아래 그림을 보면 feature branch에서는 default branch 기반으로 D,E를 생성하였기 때문에 A,B,C 다음 D,E를 추가하면 되지만 merge commit을 생성하여 default branch에 추가하게 된다.
 
 
+![standard-merge-commit-diagram](https://user-images.githubusercontent.com/42961200/143947739-c7522baa-043d-4cf9-b173-c775d0df93f6.png)
 
 
 
@@ -241,6 +243,7 @@ Squash and merge는
  . 수정/개발 hisotry가 중요하지 않다면 이 옵션을 사용하여 default branch를 깔끔하게 관리할 수도 있겠음.
 
 
+![commit-squashing-diagram](https://user-images.githubusercontent.com/42961200/143947762-b04acde6-5d96-4f9d-881e-e89c44de172f.png)
 
 
 
@@ -255,6 +258,7 @@ Rebase and merge는
 
 
 
+![다운로드](https://user-images.githubusercontent.com/42961200/143947770-02b432bd-61eb-4c4a-b2c1-e9a40bfcbe04.png)
 
 
 다만 rebase 수행 시 조심해야 할 점은
