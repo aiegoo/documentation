@@ -79,7 +79,7 @@ origin	https://eggs.or.kr/root/px4-autopilot.git (push)
 ## how it began
 
 {:.note}
-This wiki is to refresh my memory and get it started with one of my client's drone project. My project then was to create a dashboard with Django backend and Vue fron-end to connect drone's waypoints in real-time and display them on a map. Fortunately, both projects are relevant in many ways, except that mine used FCND simulator and waypoints and movements of drones were simulated inside a Unity app instead of open-source Mavlink/Simulink or even Ardupilot including QGroundControl. So here's how the dashboard was build almost one year ago.
+This wiki is to refresh my memory and get it started with one of my client's drone project. My project then was to create a dashboard with Django backend and Vue front-end to connect drone's waypoints in real-time and display them on a map. Fortunately, both projects are relevant in many ways, except that mine used FCND simulator and waypoints and movements of drones were simulated inside a Unity app instead of open-source Mavlink/Simulink or even Ardupilot including QGroundControl. So here's how the dashboard was built almost one year ago.
 
 {{site.data.alerts.bulletin}}
 Be a copycat! Break someone else's code.
