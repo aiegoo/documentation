@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: web
-keywords: "websocket webrtc mqtt socketio webserver"
+keywords: "websocket webrtc mqtt socketio webserver woowahan redis clustering"
 summary: "Tue, Nov 30, 21, various ways of connection and setup instruction"
 excerpt_separator: <!--more-->
 toc: true
