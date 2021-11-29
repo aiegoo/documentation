@@ -285,6 +285,21 @@ The Map displays the background satellite imagery with the position of aircraft 
 {% include image.html file="webdev/survey.png" %}
 - [takeoff](http://vtol.manual.srp.aero/en/simulator.html)
 
+{:.warning}
+DTO(data transfer format) is defined as drone_id, longitude, latitude, battery, state, altitude and speed
+
+```java
+public class DroneInfo {
+	private final String id;
+	private final double lattitude;
+	private final double longitude;
+	private final double speed;
+	private final double alt;
+	private final double battery;
+	private final String state;
+}
+```
+
 {: .tip}
 |Field|Required Value|
 |--- |--- |
