@@ -484,6 +484,13 @@ MQTT 설명
 MQTT 적용을 통한 중계시스템 개선, 우아한형제들 기술 블로그
 : http://woowabros.github.io/experience/2017/08/11/ost_mqtt_broker.html
 
+{{site.data.alerts.details}}
+
+
+
+:::
+{{site.data.alerts.ended}}
+
 MQTT 프로토콜 분석과 테스트
 : http://www.hardcopyworld.com/ngine/aduino/index.php/archives/2562
 
