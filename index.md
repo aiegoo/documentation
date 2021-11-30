@@ -82,7 +82,7 @@ youtubeID: ijVpUdWZYKU
 
 </div>
 
-{% include note.html content="Wow, thanks for reading. The theme author has a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='http:159.65.8.38:10055'>to give me a 5 star rating. My learning motto: Expose and immerse; my coding motto: Divide and conquer!</a>."  %}
+{% include note.html content="Wow, thanks for reading. The theme author has a blog on technical writing here called <a alt='technical writing blog' href='https://aiegoo.github.io/documentation2'>I'd Rather Be Writing API</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href="pagefrommyserver.html" target="myWin" onclick="setTimeout(function() {  var w = window.open('','myWin'); // get the opened window handle  if (w) { w.document.body.innerHTML = 'Hello'}},200)">to give me a 5 star rating. My learning motto: Expose and immerse; my coding motto: Divide and conquer!</a>."  %}
 
 ### I belive in time-management
 
