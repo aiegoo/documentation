@@ -1,5 +1,5 @@
 ---
-name: GIT  
+name: GIT
 layout: post
 permalink: Git-Category.html
 sidebar: other_sidebar
@@ -9,10 +9,11 @@ tags: [git]
 tagName: git
 excerpt_separator: <!--more-->
 date: 2021-08-26 12:42:03 +0900
-updated: 2021-09-18 3:27 PM
+updated: 2021-11-30 5:27 AM
+keywords: "git merge pullrequest branching"
 toc: true
 public: true
-parent: [[Tools-Category]]  
+parent: [[Tools-Category]]
 latex: false
 ---
 * TOC
@@ -136,7 +137,7 @@ Atomic commits are easier to:
 ## git 기본 명령
 
 * [git 안쓰던 프로젝트를 github에 등록하고 싶을 때](https://git-scm.com/book/ko/v2/Git의-기초-리모트-저장소#_리모트_저장소_추가하기)
-* 
+*
 
 ## git config ( 포스팅할것)
 
@@ -159,7 +160,128 @@ Atomic commits are easier to:
 * [Git 사용 규칙 - Git commit 메시지](https://tttsss77.tistory.com/58) : git 커밋 메시지 규칙
 * [Hugo로 github.io 블로그 만들기](https://ryan-han.com/post/etc/creating_static_blog/) : 여러가지 설정 참고할것이 있을듯..
 
-## git - 카테고리 문서 
+## git - 카테고리 문서
+
+Github merge 옵션 관련
+Github에서 Pull request를 merge 시 git에서 제공하는 여러 merge option을 팀 공유를 위해 간략히 정리함
+
+
+
+![pullrequest-mergebutton](https://user-images.githubusercontent.com/42961200/143947702-36c106e5-8523-4cb2-998b-07713efca168.png)
+
+
+
+
+Github에서 Pull request merge 시 아래 가이드와 같은 merge 방법이 있음.
+
+- Merge pull request
+
+- Squash and merge
+
+- Rebase and merge
+
+
+
+Merging a pull request
+
+ : https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/merging-a-pull-request
+
+
+
+각 방법들은 git에서 제공하는 merge 방법으로 아래 가이드를 보면 이해하기가 쉬울 듯함.
+
+About merge methods on GitHub
+
+: https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-merge-methods-on-github
+
+: https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-request-merges
+
+브랜치 통합하기
+
+ : https://backlog.com/git-tutorial/kr/stepup/stepup1_4.html
+
+3.2 Git Branching - Basic Branching and Merging
+
+ : https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+ : https://git-scm.com/docs/git-merge
+
+3.6 Git Branching - Rebasing
+
+ : https://git-scm.com/book/en/v2/Git-Branching-Rebasing
+ : https://git-scm.com/docs/git-rebase
+
+
+
+
+
+GitHub 가이드가 가장 깔끔하게 설명을 하고 있어 간략히 발췌하면
+
+
+
+Merge pull request는
+
+ . Pull request의 모든 commit을 default branch로 추가하고 merge commit을 생성한다.
+ . git merge 시 --no-ff option을 사용하는 것이라 merge commit을 생성하게 되는 것이다.
+   : 이 옵션은 주로 특정 branch나 개발 history를 유지하려는 경우 사용됨.
+   : https://stackoverflow.com/a/14865661
+   : https://koreabigname.tistory.com/m/65
+
+
+
+아래 그림을 보면 feature branch에서는 default branch 기반으로 D,E를 생성하였기 때문에 A,B,C 다음 D,E를 추가하면 되지만 merge commit을 생성하여 default branch에 추가하게 된다.
+
+
+![standard-merge-commit-diagram](https://user-images.githubusercontent.com/42961200/143947739-c7522baa-043d-4cf9-b173-c775d0df93f6.png)
+
+
+
+
+Squash and merge는
+
+ . 용어와 같이 pull request의 commit을 하나로 모아 default branch에 추가하여 merge하게 된다.
+ . Repository 설정에서 squash merging을 허용해야 한다.
+ . 수정/개발 hisotry가 중요하지 않다면 이 옵션을 사용하여 default branch를 깔끔하게 관리할 수도 있겠음.
+
+
+![commit-squashing-diagram](https://user-images.githubusercontent.com/42961200/143947762-b04acde6-5d96-4f9d-881e-e89c44de172f.png)
+
+
+
+
+Rebase and merge는
+
+ . Pull request의 모든 commit이 head branch에 merge commit 없이 차례로 추가된다.
+ . Git repository에서 rebase merging이 허용되어야 한다.
+ . Github의 rebase는 git rebase와 다른 점이 있는데 git rebase는 committer 정보와 commit SHA를 변경하지 않지만 Github는 변경하는 점이 다르다고 함.
+ . Github에서 자동으로 Rebase and merge가 되지 않는다면 command line에서 rebase를 수행하여 conflict를 해결하고 force push를 해야 함.
+
+
+
+
+![다운로드](https://user-images.githubusercontent.com/42961200/143947770-02b432bd-61eb-4c4a-b2c1-e9a40bfcbe04.png)
+
+
+다만 rebase 수행 시 조심해야 할 점은
+
+ . 작업 branch가 default branch에서 분기되어 오래되었다면 merge conflict이 더 자주 발생할 수 있음.
+   > default branch에 대해 자주 rebase하고 commit하면 해결 될 수 있음.
+   > 솔직히 Github에서 branch는 필요할 때 마다 만들어 사용하는게 맞는 것 같다.
+
+ . Interactive rebase 작업 도중 commit history를 잃어버릴 수 있음.
+   > git reflog를 이용하여 복원하거나 rebase 작업을 취소할 수 있다고 함.
+
+Atlassian Bitbucket git rebase
+https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
+
+
+
+마지막으로 아래 글은 Git 사용자라면 한 번쯤 봤을 정도로 고전인 article으로
+Project 수행 시 어떻게 branch를 관리하면 좋을지에 대한 내용이니 꼭 읽어보고 알아두어야 함.
+
+A successful Git branching model
+
+: https://nvie.com/posts/a-successful-git-branching-model/
+![git-model@2x](https://user-images.githubusercontent.com/42961200/143953544-e71eacaa-bdd7-43f9-b8fc-dfb766ff3dcd.png)
 
 
 {% include taglogic.html %}
