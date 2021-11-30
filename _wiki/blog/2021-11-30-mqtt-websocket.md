@@ -486,6 +486,77 @@ MQTT 적용을 통한 중계시스템 개선, 우아한형제들 기술 블로�
 
 {{site.data.alerts.details}}
 
+### 어떤 필요에 의해서?
+주문중계채널은 개별 디바이스들이 중계서버에 일정시간에 한번씩 API polling을 하는 구조로 운영되고 있습니다.
+신규주문 뿐만 아니라 주문의 취소나 상태변경과 같은 정보를 전달 받기 위해 API polling을 수행합니다.
+바로결제 이용 업소와 바로결제 주문건의 증가에 따라 채널별 디바이스에서 polling이 가파르게 증가하고 있습니다.
+이러한 polling 횟수 증가는 대응 API에 부하를 가져와 auto-scale에 의한 instance 수 증가와 이에 따른 운영비용 상승의 원인이 됩니다.
+또한 각 채널의 개별 디바이스들의 live 상태를 API 서버를 통해 update 해야 하는데 이전에는 polling API를 live signal로 판단했습니다.
+하지만 운영을 진행하면서 개별 디바이스의 live도 명시적 live message를 통해 update 해야 할 필요가 발생했습니다.
+이러한 이유로 구조적으로 polling API를 통한 pull 구조가 아닌 서비스 서버에 의한 push 구조로 변경함으로써 해법을 찾으려 했습니다.
+MQTT Broker를 적용하고 Topic 구조에 Message 발행(publication) & 구독(subscription)을 이용한 EDA(Event Driven Architecture)로의 전환을 계획하게 되었습니다.
+
+### MQTT란 무엇인가?
+MQTT(Message Queue for Telemetry Transport)는 M2M 또는 IoT 기기와 G/W의 연동을 위해 정의된 프로토콜입니다.
+Facebook messenger가 MQTT를 사용했다고 알려져 있습니다(지금도 쓰고 있는지 정확히 어떤 용도인지는 모릅니다).
+경량 프로토콜로 저전력 장비에서도 운용 가능하며 network bandwidth가 작은 곳에서도 충분히 운용 가능하도록 설계된 프로토콜입니다.
+주요한 특장점은 아래와 같습니다.
+
+- Connection Oriented
+* MQTT broker와 연결을 요청하는 client는 TCP/IP socket 연결을 한 후 명시적으로 종료하거나 network 사정에 의해 연결이 끊어질 때까지 연결 상태를 유지합니다.
+* Topic에 발행된 message와 연결상태 확인을 위한 live(heart-beat)를 항상 유지된 연결을 통해 전달하게 됩니다.
+* 연결 상태를 유지하는 것은 물론이고 연결이 끊어진 경우 재접속 등의 지원을 위한 자체 기능을 보유하고 있습니다.
+
+- Topic 그리고 발행(publication) / 구독(subscription)
+* 개설된 Topic에 message를 발행하면 해당 Topic을 구독하는 client 들에게 message를 전송합니다.
+* 따라서 one to multi 또는 one to one message 전송을 모두 지원할 수 있습니다.
+
+- QoS(Quality of Service)는 0, 1, 2 세단계를 지원
+* 0 : 최대 1회 전송. Topic을 통해 message를 전송할 뿐 꼭 받으리라는 보장은 안해줍니다.
+* 1 : 최소 1회 전송. 혹시 구독하는 client가 message를 받았는지 불확실하면 정해진 횟수만큼 재전송합니다. (계속 주는 건 좋은데 중복의 위험이 ;;;)
+* 2 : 등록된 client는 요구된 message를 정확히 한 번 수신할 수 있도록 보장합니다.
+
+- 다양한 개발언어의 다양한 클라이언트가 지원
+* C는 물론이며 JAVA, Node.js, Python 등등 여러 종류의 개발언어로 Broker/Client Library가 존재합니다.
+* 대부분 유료의 경우 QoS-2까지 지원하고 보통은 QoS-1까지 지원합니다.
+
+- 각각의 Action에 따른 Notification
+* Client의 연결, 연결해제, 구독, 발행 등등의 event에 대해서 MQTT broker가 대응할 수 있도록 해줍니다.
+
+### 우리가 적용한 MQTT Broker는?
+AWS ElasticBeanstalk + Node.js
+Module : mosca (Node.js용 module인 mosca를 사용했습니다.)
+구조가 단순하지만 필요한 기능의 지원은 모두 가능하고 사용 환경에 따라 customizing 하기도 용이합니다.
+필요에 따라 REDIS나 MongoDB를 활용한 storage option도 지원합니다.
+![pic01](https://user-images.githubusercontent.com/42961200/143967774-17fc8677-4949-4115-9dc9-3167019ea2a8.png)
+
+주문중계시스템 구성
+MQTT broker를 적용해 구성한 멀티채널 중계시스템의 모습입니다.
+앞서 발생한 주문 data의 변동내용(신규,최소,상태변경)에 따라 API 서버에서 MQTT broker로 Message 발행하고 MQTT broker를 구독하고 있던 하위 MQTT Broker#1,2에 message 중계합니다.
+각 채널에 소속된 개별 디바이스는 어느 MQTT broker를 구독하고 있던 message를 전달 받게 됩니다.
+거꾸로 개별 디바이스는 구독하는 MQTT broker#1,2에 live 상태보고를 하고 MQTT broker#1,2는 API 서버를 통해 live 상태를 저장합니다.
+
+![pic02](https://user-images.githubusercontent.com/42961200/143967873-156608c1-eedd-496b-89a7-ec3f4bf9562e.jpg)
+
+적용 효과
+MQTT를 중계시스템에 적용한 이후 기대하는 효과는 이렇습니다.
+
+API 서버 부하 감소 및 트래픽 감소 : 각 디바이스들이 일정시간에 한번씩 히트하던 API polling이 없어지면서 API 서버 상태는 훨씬 쾌적해지기를.
+중계 정확성 증가 : 발생한 이벤트에 대해서 주문번호를 MQTT로 전송하고 이를 기반으로 API에서 data를 가져오게 함으로써 좀 더 정확한 전달을 기대할 수 있게 되기를.
+각 채널별 디바이스의 live 상태 정확성 증가 : 항상 연결된 디바이스에서 message 수신이나 연결상태에 대한 MQTT 이벤트를 통해 훨씬 실시간에 가까운 상태 확인이 가능해지기를.
+디바이스의 통신 오류 감소 : 디바이스는 MQTT 연결상태에만 집중하고 다른 추가적 연결이 필요 없어져서 코드도 단순해지고 내부 관리도 개선되기를.
+아직 갈 길이 멀다
+당초 단말기를 제외한 모든 채널을 MQTT로 통합하고 client에서의 API polling을 보조적 수단으로 지원하는 것을 목표로 했습니다. 그러나 …
+
+주문접수앱
+* 추진과정에서 스마트폰의 최근 OS에서 battery와 memory의 효과적 관리를 위한 보호모드로 인해 MQTT 접속이 지속될 수 없음을 확인하게 됩니다.
+* 이러한 문제를 해결하고자 여러 방안을 시도해 보았지만 현재로서는 실패 ㅠㅠ
+* 따라서 이 부분은 기약 없이 연기한 상태입니다.
+
+**참고**
+mqtt.org
+mosca github
+joinc mqtt
 
 
 :::
