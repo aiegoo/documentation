@@ -403,7 +403,7 @@ Once armed, the aircraft will takeoff vertically and transition to forward fligh
 
 ## development process
 
-{:.info}
+{: .warning}
 The following itinerary includes only developer's steps for external sharing. Actual workloads will occur concurrently for the relevant process as the development progresses. For example, the front-end page and Django db setup will start from the earlier stage, as well as adding styles to the UI/UX would too.
 
 Some of the technologies in pursuing this routes are assumed 'not tested', which means changes should follow, affecting all proposed components such as time, a necessity to outsource, or UI designs. One example of this would be 'video streaming' and network infrastructure for latency and  concurrency. Please read my other **wiki** [mqtt_websocket](/2021-11-30-mqtt-websocket.md)
