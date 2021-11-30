@@ -383,6 +383,104 @@ Once armed, the aircraft will takeoff vertically and transition to forward fligh
 - failsafe
 - warnings / arming warnings
 
+## development process
+
+### hardware overview
+### streaming and frontend page
+
+### Big picture and Environment Setup
+
+#### Raspi plus Hardware and Network setup
+
+#### Initial App layout - libraries
+
+#### Logging Setup - Async Logback
+
+#### Python Initial App Layout
+
+
+### Video Streaming
+
+#### Python Setup on raspi as a linux service
+#### Configuration Reader Setup
+
+#### Basic Video Streaming Setup
+
+#### Video Page
+
+#### Video Stream Client
+
+#### Home Comtroller Video Endpoint
+
+#### Configurations Reader
+
+#### Websocket Configuration
+
+#### Video Stream manager
+
+#### Demonstration
+
+### Drone Control Center
+#### Index Page
+#### Index Page Backend Endpoint
+#### Javascript Usages
+
+#### Js App initialization
+#### Updating System Data
+
+#### Drone Info DTO Definition
+
+#### Loading Drones Data
+
+#### Js Frontend Drone Abstraction
+#### Js Adding a Position marker to Drone Object
+
+#### Js Drone Controls Initializers and Keyboard Control Events Reader
+
+#### Js Rendering Map PointData Component
+
+#### UI Components Library Completion
+
+#### CSS - adding styles
+
+
+#### Update System Endpoint with Mock Data
+
+#### Demonstration - Mission/Command Endpoints + Frontend App
+
+### Handler Manager Setup
+#### Adding Video Stream to UI Controls Page
+#### Rest Controller Functionality Implementation
+
+#### ControlManager Server Socket Connection Listener
+#### DroneHandler Initialization
+
+#### DroneHandler Network Message Sender and Receiver Threads
+#### DroneHandler Reading Latest Drone Data
+#### Protobuf Librarires Compilation
+#### DataMapper Transforming Protobuf Object to Domain Logic Objects
+
+#### Implementing Network Messaging Protocol
+
+#### Backend Application Build and Demonstration
+
+
+### Prototype Build and Completion
+#### Network Connection Monitoring Thread
+#### Data Receiver Thread
+#### Drone Object Vehicle Abstraction
+#### Network Message Encoding-Decoding Layer
+
+#### Drone Control Panel Object
+
+#### Maintaing Constant Speed and Direction Thread
+#### Camera Servo Controlling Thread
+#### Logic Flow Overview
+
+### Distributed App Demonstration with two drones
+
+### Feature Setup (chatbot)
+
 
 {% include taglogic.html %}
 
