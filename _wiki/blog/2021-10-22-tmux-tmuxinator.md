@@ -9,14 +9,14 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "tmux tmuxinator tmux conf window pane surgery copy paste"
+keywords: "tmux tmuxinator tmux conf window pane surgery copy paste bash shellscript"
 summary: "Fri, Oct 22, 21, cheatsheet for both tmux tmuxinator"
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2021-10-22T05:30:47 +0900
-updated: 2021-10-22 05:30
+updated: 2021-11-30 10:30 AM
 ---
 * TOC
 {:toc}
@@ -126,6 +126,13 @@ As configured in [my dotfiles](https://github.com/crittelmeyer/dotfiles/blob/mas
 * mux help => more commands + descriptions
 * mux implode => delete all projects
 
+## shellscript example
+
+{{site.data.alerts.details}}
+
+
+
+{{site.data.alerts.ended}}
 {% include taglogic.html %}
 
 {% include links.html %}
