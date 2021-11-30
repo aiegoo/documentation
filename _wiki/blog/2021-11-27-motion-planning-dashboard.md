@@ -178,6 +178,8 @@ Used to select which tab you are on, each with a particular function. There are 
 ### Side Menu
 
 The side menu corresponds to what tab you are on.
+
+{{site.data.alerts.details}}
 Menu Buttons
 
 Each menu has unique buttons that change depending on which tab you are on. The very top button is used to collapse or expand the entire side menu. This can be useful when you are flying as it increases the overall map area.
@@ -198,6 +200,9 @@ Displays important aircraft information.
     Telemetry: Displays the telemetry radio’s signal strength.
 
     Camera: The camera icon displays photo count for cameras equipped with feedback. Feedback is essential for PPK tagging but is also helpful to see if and when the camera is taking photos.
+
+:::
+{{site.data.alerts.ended}}
 
 {% include image.html file="webdev/flying1.png" %}
 
@@ -221,6 +226,8 @@ Bottom Status Bar
 
 Displays aircraft location and waypoint information.
 
+{{site.data.alerts.details}}
+
     Zoom in/Out: Zooms the map area in or out. On touchscreen devices, you can also use ‘pinch-zoom’.
 
     Wind: Displays the wind velocity and direction that the wind is blowing.
@@ -234,6 +241,8 @@ Displays aircraft location and waypoint information.
     Home: Shows the distance from the aircraft to home. If you have a tablet with built-in GPS, this can be toggled to show the distance from the aircraft to your location.
 
     Click Distance: Click distance shows the distance between your last two mouse clicks. This is a quick and useful tool for planning purposes such as determining how far away something is on the map.
+:::
+{{site.data.alerts.ended}}
 
 {% include image.html file="webdev/flying3.png" %}
 
@@ -266,6 +275,8 @@ The Map displays the background satellite imagery with the position of aircraft 
 
     Rally Point: The Rally icon shows the location of your planned Rally points. The icon is a flag within a triangle.
 
+{{site.data.alerts.details}}
+
     Flight Leg: The flight legs connect each waypoint in sequence. They are an approximate indication of how the aircraft will fly from one waypoint to the next. They do no account for the turning radius of the aircraft. It is normal to observe small deviations from the flight legs in windy conditions.
 
     Circle Radius: A dashed line will appear around certain waypoints that have a radius. Examples include the landing pattern and loiters.
@@ -279,6 +290,9 @@ The Map displays the background satellite imagery with the position of aircraft 
     Aircraft Trail: The aircraft trail shows the history of the aircraft’s flight path. At a certain length, the trail will automatically begin to disappear. The trail can also be clear manually from the Map button ⇨ Clear Aircraft Trail.
 
     Aircraft: Displays the aircraft location and heading.
+
+:::
+{{site.data.alerts.ended}}
 
 {% include image.html file="webdev/gcs19.jpg" %}
 {% include image.html file="webdev/images-type.jpg" %}
@@ -312,9 +326,10 @@ public class DroneInfo {
 
 - landing
 
-{: .note2}
+{: .note}
 A VTOL landing consists of a number of waypoints. If these are not all planned as specified then the aircraft may be unable to perform failsafes, or may encounter terrain obstructions while flying the landing. The waypoints must be planned as specified below.
 
+{{site.data.alerts.details}}
 |Field|Required Value|
 |--- |--- |
 |command|MAV_CMD_DO_LAND_START|
@@ -373,6 +388,9 @@ Once armed, the aircraft will takeoff vertically and transition to forward fligh
 |Weathervaning|x|x|x||
 |Forward Assist|x|x|x||
 
+:::
+{{site.data.alerts.ended}}
+
 > Flying category
 
 - Mission planning
@@ -390,6 +408,13 @@ The following itinerary includes only developer's steps for external sharing. Ac
 
 Some of the technologies in pursuing this routes are assumed 'not tested', which means changes should follow, affecting all proposed components such as time, a necessity to outsource, or UI designs. One example of this would be 'video streaming' and network infrastructure for latency and  concurrency. Please read my other **wiki** [mqtt_websocket](/2021-11-30-mqtt-websocket.md)
 
+> Main UI components
+
+Checklist, Plan, Geo-Tag, Parameters, and Settings
+
+> Feature components
+
+Chatbot, Log Analysis, Network Monitor and Weather API
 
 ### hardware overview
 ### streaming and frontend page
