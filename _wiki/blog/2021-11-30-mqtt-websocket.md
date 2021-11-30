@@ -174,7 +174,7 @@ for (var i = delivery.length-1; i >= 0; i--) {
 - for (var i = delivery.length;i >= 0; 배열의 크기를 미리 할당 해놓아 배열을 크기를 매번 확인하지 않는다.
 - var deliveryItem = delivery[i] 배열을 미리 지역변수에 할당 해놓고 deliveryStatus 연산시 참조 하면 delivery[i].status, delivery[i].shopName 처럼 매번 배열을 검색하지 않는다.
 
-> setTimeout을 사용하여 로직을 큐로 넘긴다.
+> **setTimeout을 사용**하여 로직을 큐로 넘긴다.
 javascript는 단일 쓰레드로 동작하며. 먼저 수행된 작업이 끝날 때 까지 다음작업은 대기하게 됩니다. 무거운 작업이 있다면 당연히 사용자는 delay를 느끼게 되고. 이러한 점을 해결 하기 위해 setTimeout을 이용하여 작업을 실행하면 javascript engine에서 UI 작업 큐로 작업은 넘겨 지게 되고 event loop가 큐의 쌓여 있는 task들을 처리 하게 됨으로써 blocking이 감소하여 좀더 성능향상을 시킬 수 있습니다. JAVASCRIPT Event Loop 링크
 
 ```javascript
@@ -185,7 +185,7 @@ javascript는 단일 쓰레드로 동작하며. 먼저 수행된 작업이 끝�
 
 ```
 
-> Angular ng-repeat loop 사용시 조합 index key를 사용.
+> **Angular ng-repeat loop** 사용시 조합 index key를 사용.
 ng-repeat은 콜렉션을 looping하여 뷰에 리스팅 하는 angularjs의 커스텀 attribute(directive)입니다. 리스팅된 데이터는 digest loop가 양방양 데이터 바인딩을 위하여 관리하는 모델 데이터 들이며 데이터 개수가 많을 수록 digest loop의 성능이 떨어지게 됩니다. 그래서 리스트의 각 항목 업소명, 배달상태, 배달주소.. 등등의 데이터는 onetime binding으로 digest loop를 가볍게 하고 배달번호+수정일시가 조합된 index key의 변경 감지만으로 뷰를 자동 갱신하게 됩니다.
 
 ```html
@@ -196,20 +196,20 @@ ng-repeat은 콜렉션을 looping하여 뷰에 리스팅 하는 angularjs의 커
  </tr>
 ```
 
-> App 처럼 화면에 나타나는 리스트만 렌더링
+> ** App 처럼 화면에 나타나는 리스트만 렌더링**
 v-repeat이라는 angularjs용 오픈소스 모듈을 사용하여 scroll up & down 할때 화면에 나타나는 tr을 렌더링하고 사라지는 tr은 제거 되도록 처리 하여 리스트가 개수가 수백 수천이 되더라도 화면에 보이는 데이터 모델만 존재 하게 되어 실질적으로 digest loop가 관리하는 모델의 개수가 현저하게 줄어드는 효과를 낼 수 있었고 실제로 성능 향상에 제일 큰도움이 되었습니다.
 
-> Web Worker 사용을 고려 하였으나 결국은 미적용…
+> **Web Worker 사용을 고려 하였으나 결국은 미적용…**
 javascript 실행을 메인쓰레드가 아닌 백그라운드쓰레드에서 처리하게 할 수 있게 하여 무거운 작업의 경우 백그라운드 쓰레드가 처리함으로써 기존 단일쓰레드에 비해서 성능향상을 이점을 얻을 수 있습니다.
 
 angularjs의 digest loop를 web worker가 처리 하도록 하고 싶었으나 digest loop를 건드리는 일은 angularjs framework core를 건드리는 일이 되어 버리므로 결국 적용을 포기하였습니다 (가장 아쉬운 부분이기도 합니다.)
 
-> 실시간 이벤트 서버의 안정성
+> **실시간 이벤트 서버의 안정성**
 사용료를 지불하고 바로 사용할 수 있는 유료 서비스들이 존재합니다. 대표적으로 pubnub, pusher 같은 서비스가 대표적이며 websocket서버를 직접 개발할 필요없이 사용 할 수 있는 장점이 있습니다. 반면에 장애나 이슈 발생시 즉각적인 처리가 어렵다는 단점도 분명 존재합니다. 실제로 BROS 2.0도 유료 서비스를 사용하다. 장애나 오류 발생시 즉각적인 대응이 어려워 결국은 websocket 서버를 개발하여 사용하고 있습니다.
 
 "유료서비스를 사용할 것인가 직접 만들것 인가의 선택은 여건과 상황에 따라 달라 질 수 있습니다."
 
-> 실시간 이벤트 유실
+> **실시간 이벤트 유실**
 websocket server는 client와 서버 간에 http protocol로 커넥션을 초기에 맺고 wswebsocketprotocol로 upgrade한 후 서로에게 heartbeat를 주기적으로 발생시켜 커넥션이 유지되고 있는지 체크하며 네트워크를 유지합니다.
 
 socket.io를 사용하여 websocket 서버를 개발 했지만 비즈니스로직 문제가 아닌 다양한 network 상황 때문에 이벤트 유실이 발생 했습니다.
@@ -222,35 +222,35 @@ socket.io를 사용하여 websocket 서버를 개발 했지만 비즈니스로�
 
 이벤트 유실을 보완하기 위해 RabbitMq같은 메시지 큐를 사용하여 이벤트를 발송하는 것도 고려 하였으나 BROS 서비스의 특성상 시간이 지난 이벤트를 수신 받게 되거나 한참이 지난후 한꺼번에 미수신된 이벤트를 수신받게 되면 잘못된 데이터가 반영될 수도 있는 문제가 발생하게 되고 그 문제해결을 위해 복잡한 로직을 추가하게 되면 오히려 파생되는 문제가 더 생길 것으로 판단하였고 되도록이면 근본적인 해결책을 찾기로 하였습니다.
 
-> 브로드 캐스팅
+> **브로드 캐스팅**
 cron job을 사용하여 2분에 1번씩 batch proccess 한곳에서 만 배달 데이터를 select 하여 database 부하를 줄이면서socket.io 실시간 이벤트로 브로드캐스팅을 하도록 하고 client는 수신받은 데이터로 유실이 발생한 배달 리스트를 fetch 하는 것으로 이벤트 누락에 대한 데이터 미변경을 보완 하였고 적용 이후에는 데이터 미변경에 대한 문제가 보고 되지 않았습니다.(더 좋은 방법도 분명 있을 겁니다.)
 
 ![websocket-broadcasting](https://user-images.githubusercontent.com/42961200/143957075-c45cd059-0118-409c-a7f7-ef76be37d0a5.png)
 
-> Websocket 서버 다운상황에 대비
+> **Websocket 서버 다운상황에 대비**
 어느 순간이나 서버가 다운되면 안되지만 만약에 다운이 된다면 심각한 장애를 초래하게 됩니다. 실시간 서비스를 개발한다면 항상 염두해 두어야 하는 이슈 입니다. BROS1.0은 socket.io server로의 연결이 disconnect가 되면 바로 api 직접 호출로 변경이 되고 설정해둔 주기만큼 reconnection을 시도 하도록 되어 있으며 reconnection이 성공하면 api 직접호출은 중단키시고 실시간 이벤트수신으로 swiching 되도록 개발 되어 있습니다. 더 좋은 방법은 메소드들을 추상화 하고 2개이상의 실시간 이벤트 서버를 switching 할 수 있으면 더욱 안정적인 시스템이 될 수 있을 것이란 생각도 해봅니다.
 
-> 실시간 이벤트 서버socket.io
+> **실시간 이벤트 서버socket.io**
 이제 실시간 서비스를 위해 필수 적으로 필요한 websocket서버에 대한 이야기를 해보고자 합니다. 앞서 잠시 언급 하였지만 서버자체를 구축할 필요없이 유료로 이용할 수 있는 서비스들이 많이 존재합니다. 유료서비스의 장점은 개발과 운영에 대한 리소스가 들지않고 사용할 수 있다는 장점이 있습니다. 하지만 이슈 발생시 빠른 대처가 어렵다는 단점도 분명 존재합니다. 직접 서버를 개발하거나 유료 서비스를 이용하거나 하는 선택은 여러가지 상황에 따라 판단해야 할 듯 싶습니다. 그리고 서버를 직접 개발 하고 안정적인 상태로 유지하기 까지 생각보다 기술 적인 learning curve 높은 편이며 서버가 안정적인 상태까지 올라오기 위해서는 실제로 운영을 해봐야 한다는 어려움도 존재합니다. socket.io 서버를 개발 하면서 겪었던 여러가지 경험에 대해서 이야기 하려고 합니다. 이야기할 내용은 socket.io 서버에만 국한된 이야기라기 보다 websocket 서버를 개발한다면 아마도 동일하게 겪어야 될 경험이라고 생각됩니다.
 
-> 용어설명
+> **용어설명**
 Namespace & Room & Event
 socket.io에서 트래픽을 격리하여 구분하는 단위로 사용됩니다 event는 명칭 그대로 송/수신하는 이벤트의 이름입니다. 트래픽격리 구분없이 이벤트를 송/수신하면 이벤트 리스너를 등록하여 이벤트를 처리하는 코드가 존재하지 않더라도 접속한 모든 client에 전송 및 수신을 하게 됩니다. 불필요한 트래픽이 발생하게 되고 서버 자체의 성능도 저하되기 때문에 적절한 설계로 구분해아합니다.
 
-> Cluster
+> **Cluster**
 nodejs는 기본적으로 싱글 프로세스로 동작하며 서버 CPU Core 수 만큼 proccess 생성하여 multi proccess로 구동하기 위해서는 cluster를 이용하여 proccess를 생성하게 됩니다.
 
 multi thread는 thread간 데이터를 공유되지만 multi processing은 데이터공유가 되지 않는 특징이 있다.
 
 그래서 특별한 처리들을 구현해야 한다.
 
-> Master & Worker
+> **Master & Worker**
 nodejs cluster 를 이용하여 proccess를 생성하면 실제 일을 수행하는 proccess를 worker 라고 하며 worker들을 제어하는 역할을 하는 proccess를 master라고 부릅니다.
 
-> Socket.io를 선택한 이유
+> **Socket.io를 선택한 이유**
 socket.io는 앞서 말한것 처럼 websocket을 지원하지 않는 브라우저도 지원합니다. websocket을 지원하지 않는 브라우저에서는 flashsocket, htmlfile, xhr-polling, jsonp-polling등의 적절한 방식으로 전환되어 통신합니다. (최근에는 버전업이 되면서 websocket, polling만 지원하는 것으로 변경 되었습니다.)
 
-flashsocket같은 경우는 브라우저에 flash가 설지되어 있지않으면 작동을 하지 않는 문제가 있었고 안정성이 떨어지는 방식은 지원에서 제외 되었습니다.
+**flashsocket**같은 경우는 브라우저에 flash가 설지되어 있지않으면 작동을 하지 않는 문제가 있었고 안정성이 떨어지는 방식은 지원에서 제외 되었습니다.
 
 그리고 nodejs 특징인 Single Thread 기반의 Non-Blocking I/O으로 성능적인 이점이 있습니다. (callback 지옥이라는 단점도 있지만..)
 
@@ -282,7 +282,7 @@ socket.emit('hello', 'world');
 > 원래 호수에 있는 오리를 보면 편하게 둥둥 떠있는 것 처럼 보인다. 하지만 물속은 난리다…..
 물론 기본 설정이나 여러가지를 구현해야 하지만 큰 로직은 수신/송신이라 할 것이 많이 없을 줄 알았습니다.(websocket 서버를 쌩으로 구현하는 예제들도 기본 예제들이긴 하지만..) 하지만 실제로 실무 서비스에 사용하려고 하니 여러가지 고려 대상이 생각보다 많았었고. 지금부터는 실제로 개발 하면서 겪었던 과정을 설명 하려고 합니다.
 
-> 트래픽의 격리와 전송방식을 잘 구현 해주어야 한다(꼬옥~)
+> **트래픽의 격리와 전송방식**을 잘 구현 해주어야 한다(꼬옥~)
 BROS는 각 지역 마다 센터로 구분 되어서 일을 하기 때문에 이벤트의 송수신은 센터 끼리 해야 됩니다.
 같은 센터라도 배달데이터 송/수신을위한 room과 채팅을 위한 room은 구분 되어야 하구요.
 전체 센터의 배달 현황을 봐야 할 경우도 있습니다.
@@ -290,10 +290,10 @@ BROS는 각 지역 마다 센터로 구분 되어서 일을 하기 때문에 이
 특정 client에게만 이벤트를 전송하기 위해서는 private로 전송 해야 하며 채팅의 메시지는 public이 되어야 합니다.
 그래서 실무에서 사용할 서버라면 namespace/room/event 트래픽 격리 구분과 public/private/broadcasting 이벤트 전송 방식을 필수로 구현해야 합니다.
 
-> Scale out에 대한 대비
+> **Scale out**에 대한 대비
 여기서 부터 멘붕이 왔습니다. 일반 웹서버처럼 세션관리만 신경쓰면 server를 스케일아웃 하더라도 사람이 신경쓸 것이 별로 없는 상황이 아니였습니다. nodejs는 싱글 프로세스라 멀티프로세스를 생성하고 서로 완벽한 clustering이 되어야 했고. 추후 서버 자체의 scale out이 되었을 경우에도 대비해야 하므로 clustering을 구성하는 것은 꼭 필요했습니다. 단순히 세션에 대한 문제 뿐만 아니라 1번 서버 > 1번 프로세스에 접속된 client가 이벤트를 전송하면 나머지 서버 > 나머지 프로세스들에 접속된 client로 이벤트를 전송하기 위해서 프로세스 끼리는 서로 연결되어 데이터가 전/수송이되어야 했습니다.
 
-> Clustring
+> **Clustring**
 nodejs는 싱글 프로세스라 node cluster로 core 수만큼 프로세스를 생성해야 했고, 멀티 쓰레드 방식이 아닌 멀티 프로세스방식이라 데이터 공유가 되지 않는 특징 때문에 데이터 공유에 대한 처리가 필요했습니다.
 
 ```javascript
@@ -324,10 +324,10 @@ if (cluster.isWorker) {
 
 ![socket io-clustring](https://user-images.githubusercontent.com/42961200/143955079-bb4823a0-a343-4a4b-a364-35f96cf9695f.jpg)
 
-> Worker의 Sticky Session 처리
+> **Worker의 Sticky Session 처리**
 스케일 아웃 된 서버에 client가 접속할 때 마다 서버를 달리하여 접속하게 되면 세션문제를 마주하게 됩니다. 그래서 일관성있게 지정된 서버에만 접속 되도록 sticky session을 보통 L4같은 로드밸런서 장비가 해주게 되는데. 물리적인 서버는 로드밸런서가 처리해 준다고 하지만 문제는 node cluster로 생성한 worker들 입니다. 1대의 물리 서버에 worker들이 멀티프로세스로 동작하는 것은 사실 서버가 여러대 돌아가는 것이나 마찬가지 상황! 그래서 worker들의 sticky session 처리는 오픈소스 모듈을 사용에 처리해 주었습니다.(nodeJs 같은 특별한 경우가 아니면 필요 없을 수도….)
 
-> wswebsocket가 아닌 http 이벤트 송신 api도 필요!
+> **wswebsocket가 아닌 http 이벤트 송신 api**도 필요!
 client는 server와 websocket으로 connection을 유지하고 서로 통신하지만 http로 이벤트를 전송할 수 있는 기능도 필수로 필요합니다. client가 websocket으로 연결되어 있을 필요는 없고 event 발송만 하면 되는 경우도 필요하고 수신은 websocket으로 송신은 restful api 처리 끝단에 http로 이벤트를 전송하는 방식으로 시스템을 구성 할 수도 있기 때문에 http 이벤트 전송 api도 구현 해야할 필요가 있습니다. 실제로 BROS 에서 콜센터 주문접수처리 하기 위해서 주문의 상세 화면을 보고 있는 경우 고객이 배민앱에서 주문 취소를 하게 되면 주문취소 api 끝단에 http로 주문 취소 이벤트를 송신했고 콜센터 주문접수 화면에서는 바로 고객주문 취소 안내를 표시 했습니다.
 
 ```javascript
@@ -355,7 +355,7 @@ app.get('/ridersorda', function (req, res, next) {
 > 서버를 띄어 놓긴 했다만 관리는 어떻게하나…
 서버를 만들어서 띄어 놓긴 했지만 서버에 대한 관리가 필요했습니다.(이런 부분때문에 유료 서비스를 사용하는 것이….) 일단 서버에 접속된 namespace/room별 접속한 client 현황이 필요 했고. 서버의 cpu/memory 등의 정보등이 필요했습니다. 그리고 서버에서 **오류가 발생했거나 멈췄을 경우 즉각적인 notification기능도 필요했습니다.
 
-> 서버 현황 데이터들은 Redis에 저장 관리
+> **서버 현황 데이터들은 Redis에 저장 관리**
 앞서 말한 것 처럼 접속한 client의 수와 이름 과 room 리스트 데이터들은 각각의 worker 프로세스에서 공유 되지 못하고 따로 관리가 되기 때문에 이런 관리 데이터들은 1곳에 저장하고 조회 할 필요성이 생겼고 채팅 기능에서 서로 간 대화 메시지들이 보관되어야 할 저장소도 필요했습니다. clustering 구성시에 redis를 사용하고 있었기 때문에 redis를 활용하여 데이터들을 저장하고 사용했고 client들이 접속 및 room에 join/out 하거 할때 redis에 정보를 update했고 실시간 이벤트로 모니터링 페이지에 전송했습니다
 
 
@@ -414,7 +414,7 @@ redis에 저장된 서버 현황 데이터를 가져와서 적절하게 조합�
 redis의 데이터 구조를 단순화 한다.
 redis는 string, list, set, hash 등의 key/value 구조의 데이터 타입을 지원하므로 RDB 스타일의 복잡한 계층구조로 데이터를 저장하게 되면 데이터를 가져와 조합하기 위해서 복잡한 처리를 하게 되므로 처음 부터 제공되는 데이터 타입에 잘 맞추어 데이터를 설계하고 저장하면 불필요한 for loop문을 줄일 수 있다.
 
-> Redis 파일저장 오류
+> **Redis 파일저장 오류**
 socket 서버의 namespace/room/account/socketid 관리 데이터들은 서버의 현황 데이터기 때문에 사실상 file로 백업 될 필요가 없지만 chatting시 채팅방에 입장 후 재입장 시 대화 내용을 다시 보여 줘야 했기 때문에 redis가 재부팅 되거 나 하는 경우에도 영구적으로 기록 되어 있어야할 필요성이 있었습니다.
 
 ![bros-chatting](https://user-images.githubusercontent.com/42961200/143955461-cd6670f1-4a62-4df1-b54c-5ccb9c0b53c5.jpg)
@@ -423,6 +423,16 @@ socket 서버의 namespace/room/account/socketid 관리 데이터들은 서버�
 # is there any role for python?
 
 ```
+
+redis에서 파일 저장 시 여러가지 옵션들이 있는데 stop-writes-on-bgsave-error 옵션이 yes로 되어 있는경우 파일로 저장하다가 오류가 발생하면 redis의 메모리에 데이터 저장 자체가 안되게 되서 오류를 발생 시킨다 no 변경하게 되면 메모리에 저장하는 행위는 파일 저장 오류과 관계없이 계속 수행하게 된다.
+
+이처럼 redis의 옵션에 따른 예상치 못한 오류때문에 socket server에 오류가 발생 하였고 옵션변경으로 문제를 해결했지만 redis 서버자체의 옵션에 대한 정보도 알아놓을 필요가 있습니다.
+
+> IE에서 disconnect를 인식 하지 못하는 문제
+IE에서 Browser 창을 닫는 경우 서버에서 client가 disconnect된 것을 인식 하지 못해 서버측에서 해당 client의 disconnect 처리를 하지 못 하였고 서버 측 disconnect 이벤트에 구현 되어 있던 데이터 처리가 제대로 되지 않아 서버 현황데이터에서 client가 살아 있는 것으로 표시 되는 문제가 발생 하였습니다. client sdk에서 옵션을 추가하면 해결되는 문제 였지만 여기서 꼭 짚고 넘어가야 할 부분이 있습니다. 유료 서비스 또는 오픈소스 라이브러리들은 기본적으로 client sdk를 제공하는데 물론 오픈소스 라이브러리는 서버를 개발 해야 하지만 기본적으로 둘다 안정적으로 connection 관리를 해주고 서버주소, 옵션값 connection, reconnection, connection interval, error 핸들링, 이벤트 전송/수신 등등의 메소드를 제공합니다. 개발자는 제공하는 메소드들만 잘 사용하면 됩니다.
+
+{: .note}
+javascript WebSocket 객체가 onopen, onclose, onerror, onmessage 등의 기본 메소드들을 제공하지만 WebSocket 객체로 client를 쌩으로 개발 하게 된다면 connection 관리가 불안하거나 장애를 경험하면서 안정적이 되어 가는 과정을 겪을 수 있을 수도 있습니다. 선택은 각자의 몫이지만 실시간 이벤트 서버를 사용해야 한다면 최대한 안정성이 높은 유료서비스를 선택 하고 차선은 오픈소스라이브러리를 사용하여 개발 "쌩"으로 개발 하는 것은 다시한번 고려 해보아야 됩니다…
 
 :::
 {{site.data.alerts.ended}}
