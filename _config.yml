@@ -342,4 +342,19 @@ comments:
         num_posts : 5 # 5 (default)
         colorscheme : light # "light" (default), "dark"
 
+uistring:
+    # tableofcontents: Table of Contents
+    # log_doc_issue: Log Doc Issue
+    # breadcrumb:
+    #   home: Home
+    #   documentation: Documentation
+    # expandall: Expand All
+    # collapseall: Collapse All
+    title: Tonyleekorea  # Displays as site title on top nav bar and on site metadata
+    description: A guide for my project documentation and wikis  # Displays as site description meta
+    # github_edit_button_text: Edit on GitHub
+    # products: Products
+    # docindex_product: Product
+    # docindex_startpage: Starting page
+
 # Copyright 2021 Google LLC
