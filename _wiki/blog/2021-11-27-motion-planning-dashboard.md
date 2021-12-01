@@ -429,11 +429,11 @@ Some of the technologies in pursuing this routes are assumed 'not tested', which
 
 > Main UI components
 
-Checklist, Plan, Geo-Tag, Parameters(controls), Video-streaming and Settings
+Checklist, Plan, Geo-Tag(geo-fence), Parameters(controls), Video-streaming and Settings
 
 > Feature components
 
-Chatbot, Log Analysis, Network Monitor and Weather API
+Chatbot, Log Analysis, Network , Status Bar and Weather API
 
 > project management
 
