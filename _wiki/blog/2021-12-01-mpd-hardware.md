@@ -1,4 +1,29 @@
-# PilotPi with Ubuntu Server
+---
+layout: post
+title: "motion planning dashboard hardware setup"
+name: "mpd-hardware"
+tags: [drones]
+tagName: drones
+permalink: 2021-12-01-mpd-hardware.html
+sidebar: other_sidebar
+folder: blog
+collection: wiki
+categories: drones
+keywords: "drone, raspi, database, ubuntu, lte, joydrone"
+summary: "Wed, Dec 01, 21, master, raspi, database, video-streaming, api server setup"
+excerpt_separator: <!--more-->
+toc: true
+public: true
+parent: [[Wiki-Setting-Category]]
+date: 2021-12-01T09:24:56 +0900
+updated: 2021-12-01 09:24
+---
+* TOC
+{:toc}
+
+{{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
+
+## raspi setup PilotPi with Ubuntu Server
 
 :::warning
 Ubuntu Server on RPi 4B consumes a lot of current and generates a lot of heat.
@@ -364,4 +389,13 @@ Then go back to the corresponding chapter above.
 
 ### Post-configuration
 
-Please refer to the instructions [here](2021-12-01-raspberry_pi_pilotpi_rpios.md)
+Please refer to the instructions [here](raspberry_pi_pilotpi_rpios.md)
+
+
+{% include taglogic.html %}
+
+{% include links.html %}
+
+{% include commento.html %}
+
+{{site.data.alerts.hr_shaded}}
