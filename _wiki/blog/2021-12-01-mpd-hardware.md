@@ -23,7 +23,12 @@ updated: 2021-12-01 09:24
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## raspi setup PilotPi with Ubuntu Server
+**required-hardware**
+- Develop/staging servers (monolithic)
+- Production servers as determined in the hardware specs
+- Endpoint raspi servers for drone sensors
+- Cloud computing resources 
+## raspi PilotPi with Ubuntu Server
 
 :::warning
 Ubuntu Server on RPi 4B consumes a lot of current and generates a lot of heat.
