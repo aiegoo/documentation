@@ -28,6 +28,19 @@ updated: 2021-12-01 09:24
 - Production servers as determined in the hardware specs
 - Endpoint raspi servers for drone sensors
 - Cloud computing resources
+
+**yonah**
+This following lists the key hardware required to operate Yonah's ROS Packages
+
+* [RUT955](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#RUT955_Cellular_Router)
+* [SIM Card](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#SIM_Card)
+* [Rockblock 9603](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#Rockblock_9603)
+* [Beaglebone Black Industrial](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#Beaglebone_Black_Industrial)
+* [Cube Black](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#Cube_Black)
+* [Wiz Serial to Ethernet](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#Wiz_Serial_to_Ethernet)
+* [Button & Buzzer](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#Button_&_Buzzer)
+* [Laptop](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#Laptop)
+
 ## raspi PilotPi with Ubuntu Server
 
 {: .warning}
