@@ -492,7 +492,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 | * rest controller functionality | * control manager server socket
 | * dronehandler init | * dronehanlder network message sd/rv thread
 | * droneHandler reading latest data | Prbf*
-| * datamapper transforming protobuf object to domain logic objects
+| * datamapper transforming protobuf object to domain logic objects | 
 | * implementing network messaging protocol | * backend application
 | * backend application | Python overview
 | Python bootsraping initial app | Python Network connection monitoring
