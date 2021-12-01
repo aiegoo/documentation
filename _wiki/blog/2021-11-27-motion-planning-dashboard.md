@@ -443,9 +443,13 @@ Pivotal, Googlesheet, Github Projects, Jira, or other options
 
 Drone sensors, api/db/web servers, cloud computing resources
 
+> software platform
+
+Front/back-end, database, OS(Ubuntu, rapibe)
+
 ### hardware overview
 
-**link** [hardware-setup](2021-12-01-mpd-hdardware.html)
+**link** [hardware-setup](2021-12-01-mpd-hardware.html)
 ### streaming and frontend page
 
 ### Big picture and Environment Setup
