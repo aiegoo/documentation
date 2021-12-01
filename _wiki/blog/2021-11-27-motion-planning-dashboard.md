@@ -472,27 +472,27 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 |---
 | Documentation | DIY drone hardware overview
 | Video steaming and front-end control | Environment setup
-| Raspi hardware/network setup | Java initial app layout
-| Java logging setup async | Python initial app layout
+| Raspi hardware/network setup | * initial app layout
+| * logging setup async | Python initial app layout
 | raspi as linux service | Configuration reader setup
 | video streaming app | Html video page
-| js video stream client | java home controller video endpoint
-| Java configuration reader | java web-socket config
-| Java Video stream manager | App overview demo
-| Drone control center html | java backend endpoint
+| js video stream client | * home controller video endpoint
+| * configuration reader | * web-socket config
+| * Video stream manager | App overview demo
+| Drone control center html | * backend endpoint
 | js usage | js app initialization
-| js update system data | Java drone info dto
+| js update system data | * drone info dto
 | Js loading drone data | js frontend drone abstraction
 | js adding a position marker | Js drone control intializer keyboard mapping
 | js rendering map point | Js UI component lib
-| css | java update system endpoint with mock data
-| Java mission command end point | Js adding video stream to ui control
-| Java rest controller functionality | java control manager server socket
-| Java dronehandler init | java dronehanlder network message sd/rv thread
-| Java droneHandler reading latest data | Protobuf
-| Java datamapper transforming protobuf object to domain logic objects
-| Java implementing network messaging protocol | Java backend application
-| Java backend application | Python overview
+| css | * update system endpoint with mock data
+| * mission command end point | Js adding video stream to ui control
+| * rest controller functionality | * control manager server socket
+| * dronehandler init | * dronehanlder network message sd/rv thread
+| * droneHandler reading latest data | Protobuf
+| * datamapper transforming protobuf object to domain logic objects
+| * implementing network messaging protocol | * backend application
+| * backend application | Python overview
 | Python bootsraping initial app | Python Network connection monitoring
 | Python data receiver thread | Python drone object vehicle abstraction
 | Python network messages encoding | Python drone control panel object
