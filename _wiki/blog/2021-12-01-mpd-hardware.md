@@ -40,7 +40,8 @@ This following lists the key hardware required to operate Yonah's ROS Packages
 * [Wiz Serial to Ethernet](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#Wiz_Serial_to_Ethernet)
 * [Button & Buzzer](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#Button_&_Buzzer)
 * [Laptop](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#Laptop)
-
+**installation**
+Follow instructions [here](https://github.com/aiegoo/_mydrone/wiki/Software-Installation)
 ## raspi PilotPi with Ubuntu Server
 
 {: .warning}
