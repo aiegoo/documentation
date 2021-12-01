@@ -450,6 +450,18 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 ### hardware overview
 
 **link** [hardware-setup](2021-12-01-mpd-hardware.html)
+
+### project overview
+
+- Key technology:
+  - logging/user database to be used for api calls
+  - video streaming latency and concurrency handler
+  - Monolithic or distributed architectures
+  - Microservice and modular applications
+  - visualization of logging, mission and weather apis
+  - messaging or chatbot features
+  - PA broadcasting features
+  - user permission levels (admin page)
 ### streaming and frontend page
 
 ### Big picture and Environment Setup
