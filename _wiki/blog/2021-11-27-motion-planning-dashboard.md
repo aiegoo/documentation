@@ -462,96 +462,97 @@ Front/back-end, database, OS(Ubuntu, rapibe)
   - messaging or chatbot features
   - PA broadcasting features
   - user permission levels (admin page)
+
 ### streaming and frontend page
 
 ### Big picture and Environment Setup
 
-#### Raspi plus Hardware and Network setup
+##### Raspi plus Hardware and Network setup
 
-#### Initial App layout - libraries
+##### Initial App layout - libraries
 
-#### Logging Setup - Async Logback
+##### Logging Setup - Async Logback
 
-#### Python Initial App Layout
+##### Python Initial App Layout
 
 
 ### Video Streaming
 
-#### Python Setup on raspi as a linux service
-#### Configuration Reader Setup
+##### Python Setup on raspi as a linux service
+##### Configuration Reader Setup
 
-#### Basic Video Streaming Setup
+##### Basic Video Streaming Setup
 
-#### Video Page
+##### Video Page
 
-#### Video Stream Client
+##### Video Stream Client
 
-#### Home Comptroller Video Endpoint
+##### Home Comptroller Video Endpoint
 
-#### Configurations Reader
+##### Configurations Reader
 
-#### Websocket Configuration
+##### Websocket Configuration
 
-#### Video Stream manager
+##### Video Stream manager
 
-#### Demonstration
+##### Demonstration
 
 ### Drone Control Center
-#### Index Page
-#### Index Page Backend Endpoint
-#### Javascript Usages
+##### Index Page
+##### Index Page Backend Endpoint
+##### Javascript Usages
 
-#### Js App initialization
-#### Updating System Data
+##### Js App initialization
+##### Updating System Data
 
-#### Drone Info DTO Definition
+##### Drone Info DTO Definition
 
-#### Loading Drones Data
+##### Loading Drones Data
 
-#### Js Frontend Drone Abstraction
-#### Js Adding a Position marker to Drone Object
+##### Js Frontend Drone Abstraction
+##### Js Adding a Position marker to Drone Object
 
-#### Js Drone Controls Initializers and Keyboard Control Events Reader
+##### Js Drone Controls Initializers and Keyboard Control Events Reader
 
-#### Js Rendering Map PointData Component
+##### Js Rendering Map PointData Component
 
-#### UI Components Library Completion
+##### UI Components Library Completion
 
-#### CSS - adding styles
+##### CSS - adding styles
 
 
-#### Update System Endpoint with Mock Data
+##### Update System Endpoint with Mock Data
 
-#### Demonstration - Mission/Command Endpoints + Frontend App
+##### Demonstration - Mission/Command Endpoints + Frontend App
 
 ### Handler Manager Setup
-#### Adding Video Stream to UI Controls Page
-#### Rest Controller Functionality Implementation
+##### Adding Video Stream to UI Controls Page
+##### Rest Controller Functionality Implementation
 
-#### ControlManager Server Socket Connection Listener
-#### DroneHandler Initialization
+##### ControlManager Server Socket Connection Listener
+##### DroneHandler Initialization
 
-#### DroneHandler Network Message Sender and Receiver Threads
-#### DroneHandler Reading Latest Drone Data
-#### Protobuf Librarires Compilation
-#### DataMapper Transforming Protobuf Object to Domain Logic Objects
+##### DroneHandler Network Message Sender and Receiver Threads
+##### DroneHandler Reading Latest Drone Data
+##### Protobuf Librarires Compilation
+##### DataMapper Transforming Protobuf Object to Domain Logic Objects
 
-#### Implementing Network Messaging Protocol
+##### Implementing Network Messaging Protocol
 
-#### Backend Application Build and Demonstration
+##### Backend Application Build and Demonstration
 
 
 ### Prototype Build and Completion
-#### Network Connection Monitoring Thread
-#### Data Receiver Thread
-#### Drone Object Vehicle Abstraction
-#### Network Message Encoding-Decoding Layer
+##### Network Connection Monitoring Thread
+##### Data Receiver Thread
+##### Drone Object Vehicle Abstraction
+##### Network Message Encoding-Decoding Layer
 
-#### Drone Control Panel Object
+##### Drone Control Panel Object
 
-#### Maintaing Constant Speed and Direction Thread
-#### Camera Servo Controlling Thread
-#### Logic Flow Overview
+##### Maintaing Constant Speed and Direction Thread
+##### Camera Servo Controlling Thread
+##### Logic Flow Overview
 
 ### Distributed App Demonstration with two drones
 
