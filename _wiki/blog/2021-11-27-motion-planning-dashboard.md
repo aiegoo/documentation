@@ -432,7 +432,7 @@ Some of the technologies in pursuing this routes are assumed 'not tested', which
 
 > Main UI components
 
-Checklist, Plan, Geo-Tag(geo-fence), Parameters(controls), Video-streaming and Settings
+Checklist, Plan, Geo-Tag(geo-fence), Parameters(controls), Video-streaming(wowza, window media streaming, on   webrtc) and Settings
 
 > Feature components
 
@@ -449,6 +449,10 @@ Drone sensors, api/db/web servers, cloud computing resources
 > software platform
 
 Front/back-end, database, OS(Ubuntu, rapibe)
+
+> issues tracker
+
+브로드 캐스팅 cron job을 사용하여 2분에 1번씩 batch proccess 한곳에서 만 배달 데이터를 select 하여 database 부하를 줄이면서socket.io 실시간 이벤트로 브로드캐스팅을 하도록 하고 client는 수신받은 데이터로 유실이 발생한 배달 리스트를 fetch 하는 것으로 이벤트 누락에 대한 데이터 미변경을 보완 하였고 적용 이후에는 데이터 미변경에 대한 문제가 보고 되지 않았습니다
 
 ### hardware overview
 
