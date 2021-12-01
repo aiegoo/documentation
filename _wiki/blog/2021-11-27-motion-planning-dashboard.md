@@ -408,9 +408,28 @@ The following milestones include only developer's steps for external sharing. Ac
 
 Some of the technologies in pursuing this routes are assumed 'not tested', which means changes are highly likely to follow, affecting schedule and sourcing out of all proposed components such as time, a necessity to outsource, or UI designs. One example of this would be 'video streaming' and network infrastructure for latency and  concurrency. Please read my other **wiki** [mqtt_websocket](/2021-11-30-mqtt-websocket.html) for options and issues raised by woowahan teams.
 
+> goals:
+
+    - Build Low Latency Cloud App to Operate From Anywhere in the World
+    - How to Control Drone with Python Application running on a Raspberry Pi
+    - Connecting Multiple Python Applications to a Single Remote App
+    - Managing Data Concurrently from Many Python Applications
+    - Low Latency Video Streaming from Raspberry Pi to a Web Page
+    - How to Have Many Active Video Streams on a Single Web Page
+    - Buiding a spa with javascript
+    - How to Control Simultaneously Many Drones From a Single Web Page
+    - Using Google Maps API to Setup and Read Mission Data From a User
+    - Real Time Data Visualization From the Drones on the Interactive Map
+    - Use Framework MVC to build Application For 4G Drone Control
+    - Multithreading Application Design
+    - Multithreading Application Design in Python
+    - Distributed Application Design
+    - Python Dronekit Library for MavLink Communication with Autopilot
+    - More feature components below as discussed
+
 > Main UI components
 
-Checklist, Plan, Geo-Tag, Parameters, Video-streaming and Settings
+Checklist, Plan, Geo-Tag, Parameters(controls), Video-streaming and Settings
 
 > Feature components
 
@@ -422,7 +441,11 @@ Pivotal, Googlesheet, Github Projects, Jira, or other options
 
 > required infra
 
+Drone sensors, api/db/web servers, cloud computing resources
+
 ### hardware overview
+
+**link** [hardware-setup](2021-12-01-mpd-hdardware.html)
 ### streaming and frontend page
 
 ### Big picture and Environment Setup
