@@ -471,8 +471,6 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 {: .customtable}
 
 |---
-| :- | :-
-| milestone | milestone
 | Documentation | DIY drone hardware overview
 | Video steaming and front-end control | Environment setup
 | Raspi hardware/network setup | * initial app layout
