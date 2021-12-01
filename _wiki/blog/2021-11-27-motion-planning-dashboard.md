@@ -410,7 +410,7 @@ Some of the technologies in pursuing this routes are assumed 'not tested', which
 
 > Main UI components
 
-Checklist, Plan, Geo-Tag, Parameters, and Settings
+Checklist, Plan, Geo-Tag, Parameters, Video-streaming and Settings
 
 > Feature components
 
@@ -419,6 +419,8 @@ Chatbot, Log Analysis, Network Monitor and Weather API
 > project management
 
 Pivotal, Googlesheet, Github Projects, Jira, or other options
+
+> required infra
 
 ### hardware overview
 ### streaming and frontend page
