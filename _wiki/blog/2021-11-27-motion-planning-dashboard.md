@@ -22,7 +22,7 @@ updated: 2021-11-27 22:54
 {:toc}
 
 <style>
-.customtable tr:nth-child(9) td:nth-child(2), tr:nth-child(16) td:nth-child(2), tr:nth-child(24) td:nth-child(2) {background: deepskyblue;}
+.customtable, tr:nth-child(9) td:nth-child(2), tr:nth-child(16) td:nth-child(2), tr:nth-child(24) td:nth-child(2) {background: deepskyblue;}
 </style>
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
