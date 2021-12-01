@@ -29,8 +29,8 @@ updated: 2021-12-01 09:24
 - Endpoint raspi servers for drone sensors
 - Cloud computing resources
 
-**yonah**
-This following lists the key hardware required to operate Yonah's ROS Packages
+**myyonah**
+This following lists the key hardware required to operate myyonah's ROS Packages
 
 * [RUT955](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#RUT955_Cellular_Router)
 * [SIM Card](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#SIM_Card)
