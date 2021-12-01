@@ -27,10 +27,10 @@ updated: 2021-12-01 09:24
 - Develop/staging servers (monolithic)
 - Production servers as determined in the hardware specs
 - Endpoint raspi servers for drone sensors
-- Cloud computing resources 
+- Cloud computing resources
 ## raspi PilotPi with Ubuntu Server
 
-:::warning
+{: .warning}
 Ubuntu Server on RPi 4B consumes a lot of current and generates a lot of heat.
 Design for better heat dissipation and high power consumption when using this hardware.
 :::
@@ -298,7 +298,7 @@ make scumaker_pilotpi_default upload
 
 #### Alternative build method for armhf (using docker)
 
-If you are compiling for the first time with docker, please refer to the [offical docs](../test_and_ci/docker.md#prerequisites).
+If you are compiling for the first time with docker, please refer to the [offical docs](2021-12-01-px4_docker.html#prerequisites).
 
 Execute the command in firmware folder:
 
