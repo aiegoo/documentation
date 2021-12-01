@@ -469,6 +469,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 - How progress is scheduled
 
 {: .customtable}
+
 |---
 | Documentation | DIY drone hardware overview
 | Video steaming and front-end control | Environment setup
@@ -489,7 +490,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 | * mission command end point | Js adding video stream to ui control
 | * rest controller functionality | * control manager server socket
 | * dronehandler init | * dronehanlder network message sd/rv thread
-| * droneHandler reading latest data | Protobuf
+| * droneHandler reading latest data | Prbf*
 | * datamapper transforming protobuf object to domain logic objects
 | * implementing network messaging protocol | * backend application
 | * backend application | Python overview
@@ -499,6 +500,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 | Python maintaining constant speed and direction | Python camera serve controlling thread
 | Python camera server control | Python finished application logic
 | Final result full distributed application | realworld flight demo
+
 ### streaming and frontend page
 
 ### Big picture and Environment Setup
