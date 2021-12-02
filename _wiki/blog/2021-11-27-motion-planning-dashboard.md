@@ -531,9 +531,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
             <td></td>
           <td> future filesystem </td>
         </tr>
-        <tr><td>simple html</td>
-            <td><span class="label label-default">modular</span></td>
-          <td> - The following is an exmample;we will have a new one when completed <pre>
+        <tr><td>- The following is an exmample;we will have a new one when completed <pre>
 .
 ├──cloudapp
 │ ├── CloudappApplication
@@ -572,6 +570,8 @@ Front/back-end, database, OS(Ubuntu, rapibe)
         ├── index.html
         └── video.html
           </pre></td>
+            <td><span class="label label-default">modular</span></td>
+          <td> </td>
         </tr>
   </tbody>
 </table>
