@@ -509,7 +509,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 ### streaming and frontend page
 - current front-end filesystem
 
-<table><thead><tr><th>filesystem</th><th>ref</th><th>filesystem</th></tr></thead>
+<table><thead><tr><th>filesystem</th><th><span class="label label-default" font-size="37px">&#11020;</span></th><th>filesystem</th></tr></thead>
     <tbody>
         <tr><td><pre>.
 ├── css
@@ -527,13 +527,13 @@ Front/back-end, database, OS(Ubuntu, rapibe)
     ├── mqtt.js
     ├── mqttws31.js
     └── mqttws31-min.js
-- we will have the following when completed </pre></td>
-            <td><span class="label label-default"><==></span></td>
+ </pre></td>
+            <td></td>
           <td> future filesystem </td>
         </tr>
-        <tr><td></td>
-            <td><span class="label label-default">portfolio</span></td>
-          <td> left blank intentilnally </td>
+        <tr><td>simple html</td>
+            <td><span class="label label-default">modular components</span></td>
+          <td> - we will have the following when completed </td>
         </tr>
   </tbody>
 </table>
