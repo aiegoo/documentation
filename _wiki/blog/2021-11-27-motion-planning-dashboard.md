@@ -532,7 +532,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
           <td> future filesystem </td>
         </tr>
         <tr><td>simple html</td>
-            <td><span class="label label-default">modular components</span></td>
+            <td><span class="label label-default">modular</span></td>
           <td> - we will have the following when completed </td>
         </tr>
   </tbody>
