@@ -511,7 +511,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 
 <table><thead><tr><th>filesystem</th><th><span class="label label-default" font-size="37px">&#11020;</span></th><th>filesystem</th></tr></thead>
     <tbody>
-        <tr><td><pre>.
+        <tr><td><pre width="150%">.
 ├── css
 │   ├── home.css
 │   └── login.css
