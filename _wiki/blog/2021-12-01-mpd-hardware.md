@@ -42,6 +42,10 @@ This following lists the key hardware required to operate myyonah's ROS Packages
 * [Laptop](https://github.com/aiegoo/_mydrone-ROS-packages/wiki/Required-Hardware#Laptop)
 **installation**
 Follow instructions [here](https://github.com/aiegoo/_mydrone/wiki/Software-Installation)
+
+{{site.data.alerts.bulletin}}
+two raspi servers to control drone sensors
+{{site.data.alerts.ends}}
 ## raspi PilotPi with Ubuntu Server
 
 {: .warning}
