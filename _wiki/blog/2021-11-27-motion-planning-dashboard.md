@@ -527,7 +527,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
     ├── mqtt.js
     ├── mqttws31.js
     └── mqttws31-min.js
-- we will have the following when completed </pre></pre></td>
+- we will have the following when completed </pre></td>
             <td><span class="label label-default"><==></span></td>
           <td> future filesystem </td>
         </tr>
