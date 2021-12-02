@@ -472,7 +472,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 
 - How progress is scheduled
 
-**note** demo sessions are scheduled at the steps indicated in blue color.
+**note** demo sessions are scheduled as indicated in blue color.
 {: .customtable}
 
 |---
@@ -564,7 +564,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
     │   ├── js
     │   │   ├── app.js
     │   │   ├── library.js
-    │   │   └── ui-components.js
+    │   │   └── ui-components
     │   └── video.jpg
     └── templates
         ├── index.html
