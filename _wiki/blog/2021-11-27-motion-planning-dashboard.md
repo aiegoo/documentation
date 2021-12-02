@@ -496,7 +496,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 | * rest controller functionality | * control manager server socket
 | * dronehandler init | * dronehanlder network message sd/rv thread
 | * droneHandler reading latest data | Prbf*
-| * datamapper transforming protobuf object to domain logic objects | 
+| * datamapper transforming protobuf object to domain logic objects |
 | * implementing network messaging protocol | * backend application
 | * backend application | Python overview
 | Python bootsraping initial app | Python Network connection monitoring
@@ -507,6 +507,36 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 | Final result full distributed application | realworld flight demo
 
 ### streaming and frontend page
+- current front-end filesystem
+
+<table><thead><tr><th>filesystem</th><th>ref</th><th>filesystem</th></tr></thead>
+    <tbody>
+        <tr><td><pre>.
+├── css
+│   ├── home.css
+│   └── login.css
+├── home.html
+├── images
+│   └── drone-icon2.png
+├── index.html
+└── js
+    ├── home.js
+    ├── index.js
+    ├── jsmpeg.min.js
+    ├── map.js
+    ├── mqtt.js
+    ├── mqttws31.js
+    └── mqttws31-min.js
+- we will have the following when completed </pre></pre></td>
+            <td><span class="label label-default"><==></span></td>
+          <td> future filesystem </td>
+        </tr>
+        <tr><td></td>
+            <td><span class="label label-default">portfolio</span></td>
+          <td> left blank intentilnally </td>
+        </tr>
+  </tbody>
+</table>
 
 ### Big picture and Environment Setup
 
