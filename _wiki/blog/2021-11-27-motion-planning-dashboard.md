@@ -533,7 +533,45 @@ Front/back-end, database, OS(Ubuntu, rapibe)
         </tr>
         <tr><td>simple html</td>
             <td><span class="label label-default">modular</span></td>
-          <td> - we will have the following when completed </td>
+          <td> - The following is an exmample;we will have a new one when completed <pre>
+.
+├──cloudapp
+│ ├── CloudappApplication
+│ ├── configuration
+│ │   ├── ConfigReader
+│ │   └── WebSocketConfiguration
+│ ├── controller
+│ │   ├── BaseController
+│ │   ├── BaseRestController
+│ │   └── VideoSocketHandler
+│ ├── dto
+│ │   ├── DataPoint
+│ │   └── DroneInfo
+│ ├── service
+│ │   ├── ControlManager
+│ │   ├── DroneHandler
+│ │   └── VideoStreamManager
+│ └── utils
+│     ├── DataMapper.java
+│     ├── NetworkFormatter
+│     └── ProtoData.
+└── resources
+    ├── application.yaml
+    ├── logback
+    ├── protobuf
+    ├── static
+    │   ├── css
+    │   │   └── app.css
+    │   ├── drone.svg
+    │   ├── js
+    │   │   ├── app.js
+    │   │   ├── library.js
+    │   │   └── ui-components.js
+    │   └── video.jpg
+    └── templates
+        ├── index.html
+        └── video.html
+          </pre></td>
         </tr>
   </tbody>
 </table>
