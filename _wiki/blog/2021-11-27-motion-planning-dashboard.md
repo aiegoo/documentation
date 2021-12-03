@@ -594,6 +594,20 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 
 ##### Basic Video Streaming Setup
 
+
+```java
+    @GetMapping("/")
+    public String indexPage(Model model) {
+
+		model.addAttribute("publicIp", getPublicIpAddress());
+		model.addAttribute("defaultSpeed", configurations.getDefaultSpeed());
+		model.addAttribute("defaultAltitude", configurations.getDefaultAltitude());
+		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
+
+        return "index";
+    }
+```
+
 ##### Video Page
 
 ##### Video Stream Client
