@@ -708,6 +708,22 @@ class Drone {
 
 ![300-2](https://user-images.githubusercontent.com/42961200/144705567-ee0ad8d1-a7a8-4018-9b2c-53930d7aeba3.jpg)
 
+![328-2](https://user-images.githubusercontent.com/42961200/144714459-ae85bcf5-b6fc-4788-93f8-33810417e05c.jpg)
+The surface analysis chart depicts an analysis of the current surface weather. [Figure 13-10] This chart is transmitted every 3 hours and covers the contiguous 48 states and adjacent areas. A surface analysis chart shows the areas of high and low pressure, fronts, temperatures, dew points, wind directions and speeds, local weather, and visual obstructions. Surface weather observations for reporting points across the United States are also depicted on this chart. Each of these reporting points is illustrated by a station model. [Figure 13-11] A station model includes:
+
+•   Sky cover—the station model depicts total sky cover and is shown as clear, scattered, broken, overcast, or obscured/partially obscured.
+
+•   Sea level pressure—given in three digits to the nearest tenth of a millibar (mb). For 1,000 mbs or greater, prefix a 10 to the three digits. For less than 1,000 mbs, prefix a 9 to the three digits.
+
+•   Pressure change/tendency—pressure change in tenths of mb over the past 3 hours. This is depicted directly below the sea level pressure.
+
+•   Dew point—given in degrees Fahrenheit.
+
+•   Present weather—over 100 different standard weather symbols are used to describe the current weather.
+
+•   Temperature—given in degrees Fahrenheit.
+
+•   Wind—true direction of wind is given by the wind pointer line, indicating the direction from which the wind is blowing. A short barb is equal to 5 knots of wind, a long barb is equal to 10 knots of wind, and a pennant is equal to 50 knots.
 ### UI Unity application
 ![298-1](https://user-images.githubusercontent.com/42961200/144705608-7dcec52c-3d75-49b4-a082-02f745e07a30.jpg)
 
