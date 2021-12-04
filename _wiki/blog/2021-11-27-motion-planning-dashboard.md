@@ -612,6 +612,26 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 
 ##### Video Stream Client
 
+```java
+class Drone {
+    constructor(id, lat, lng) {
+        this.id = id;
+        this.lat = lat;
+        this.lng = lng;
+        this.videoSocket = new VideoStreamClient(id, PUBLIC_IP, 80, VIDEO_ENDPOINT);
+        this.posMark = new google.maps.Marker({
+            position: { lat: lat, lng: lng },
+            map: WORLD_MAP,
+            label: id + '',
+            icon: 'drone.svg'
+        });
+        this.locationToPointDataMap = new Map();
+        this.labelCounter = 0;
+        this.speed = 0.0;
+        this.alt = 0.0
+    }
+```
+
 ##### Home Comptroller Video Endpoint
 
 ##### Configurations Reader
