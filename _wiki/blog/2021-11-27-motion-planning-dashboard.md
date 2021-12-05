@@ -755,6 +755,8 @@ visual flight rules (VFR) or IFR, aircraft identification and type, departure po
 	<video width="100%" height="100%" align="right" src="videos/aeronauticalmap.mp4" type="video/mp4" autoplay loop muted></video>
 </div>
 
+<p><div class="video-custom"><a href="video/aeronauticalmap.mp4" data-videoid="lJIrF4YjHfQ" class="embedded-video-custom" data-tracking-method="NOW" data-stats-method="IMMEDIATE" style="background-image: url(&quot;//i.ytimg.com/vi/lJIrF4YjHfQ/mqdefault.jpg&quot;);"><svg viewBox="0 0 48 48"><path d="M40 8.8c-1.2-.4-8.6-.8-16-.8s-14.8.4-16 .8c-3.1 1-4 8-4 15.2s.9 14.2 4 15.2c1.2.4 8.6.8 16 .8s14.8-.4 16-.8c3.1-1 4-8 4-15.2s-.9-14.2-4-15.2zM20 33V15l12 9-12 9z"></path></svg><div class="title" data-outlined="true">Embed videos and playlists</div><div class="description">To learn more please visit the YouTube Help Center: https://www.youtube.com/help</div></a></div></p>
+
 ### Drone-identification ISO
 ![image](https://user-images.githubusercontent.com/42961200/144714652-f72358b7-acc3-444b-a938-b6a480aabdec.png)
 ## Dron ID research [pdf](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:daac1ad7-e106-49f5-8596-63d535fcdb63)
