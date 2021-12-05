@@ -17,6 +17,7 @@ public: true
 parent: [[Wiki-Setting-Category]]
 date: 2021-11-27T22:54:35 +0900
 updated: 2021-11-27 22:54
+driveId: 1BSwuoFq808JSqNYexyAg3BbzOJT4igLT
 ---
 * TOC
 {:toc}
@@ -761,6 +762,9 @@ visual flight rules (VFR) or IFR, aircraft identification and type, departure po
  preload="auto" width="467" height="350" data-setup='{}'>
   <source src="videos/aeronauticalmap.mp4" type='video/mp4'>
 </video></p>
+
+{% include googleDrivePlayer.html id=page.driveId %}
+
 ### Drone-identification ISO
 ![image](https://user-images.githubusercontent.com/42961200/144714652-f72358b7-acc3-444b-a938-b6a480aabdec.png)
 ## Dron ID research [pdf](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:daac1ad7-e106-49f5-8596-63d535fcdb63)
