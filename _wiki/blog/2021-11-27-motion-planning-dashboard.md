@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "vue django fcnd udacity pawan rapa motion planning dashboard"
+keywords: "vue django fcnd udacity pawan rapa motion planning dashboard visual flight rules (VFR) IFR aircraft identification departure point estimated time of departure ETD flight altitude route of flight destination estimated time en route ETE"
 summary: "Sat, Nov 27, 21, motion planning dashboard with django vue and fcnd"
 excerpt_separator: <!--more-->
 toc: true
@@ -727,7 +727,7 @@ The surface analysis chart depicts an analysis of the current surface weather. [
 ### UI Unity application
 ![298-1](https://user-images.githubusercontent.com/42961200/144705608-7dcec52c-3d75-49b4-a082-02f745e07a30.jpg)
 
-[source](https://github.com/aiegoo/uas-reference/blob/master/uas/utam1.pdf)	
+[source](https://github.com/aiegoo/uas-reference/blob/master/uas/utam1.pdf)
 ![image](https://user-images.githubusercontent.com/42961200/144734920-dff44771-afb2-404f-a0fe-40ca6e986869.png)
 
 ![image](https://user-images.githubusercontent.com/42961200/144734910-f6f66557-12d4-4af9-a16a-8507620bc561.png)
@@ -746,6 +746,7 @@ The surface analysis chart depicts an analysis of the current surface weather. [
 
 ![UAMcorridor](https://user-images.githubusercontent.com/42961200/144735484-5bb28262-56df-4a4a-a509-0d5e52f4e2a4.png)
 
+visual flight rules (VFR) or IFR, aircraft identification and type, departure point, estimated time of departure (ETD), flight altitude, route of flight, destination, and estimated time en route (ETE).
 
 ### JDlab
 ![♧](images/webdev/jdaerial.jpg)
@@ -755,7 +756,7 @@ The surface analysis chart depicts an analysis of the current surface weather. [
 ## Dron ID research [pdf](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:daac1ad7-e106-49f5-8596-63d535fcdb63)
 
 - usa
-  
+
 |단계 | 내용|
 |:----:| :----|
 | 0 |• 드론과 조종자 간의 거리가 최대 122m(400ft) 이내 가시권 내 비행 •14 CFR Part 101 준수하는 드론(일부 제외) •ATC 관리하에 운영되는 드론 •FAA에 의해 식별 및 추적이 면제되는 드론|
@@ -767,18 +768,18 @@ The surface analysis chart depicts an analysis of the current surface weather. [
 | CL1 | • 최대 이륙 중량 900g 이하(운동에너지 80J 이하) • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치|
 | CL2 |• 최대 이륙 중량 4kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시  통신 복구 기능 또는 안전한 비행 종료 기능 필요 |
 | CL3 |• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시 통신 복구 기능 또는 안전한 비행 종료 기능 필요|
-|CL4 | • 최대 이륙 중량 25kg 이하 • 최대 비행 고도 및 속도 제한 없음 | 
+|CL4 | • 최대 이륙 중량 25kg 이하 • 최대 비행 고도 및 속도 제한 없음 |
 
 
 - EU
-  
+
 |클래스 | 주요 특징|
 | :----: | :---- |
 | CL0 | • 최대 이륙 중량 250g 이하 • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • 드론 원격 식별 불필요|
 | CL1 | • 최대 이륙 중량 900g 이하(운동에너지 80J 이하) • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치|
 | CL2 |• 최대 이륙 중량 4kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시  통신 복구 기능 또는 안전한 비행 종료 기능 필요 |
 | CL3 |• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시 통신 복구 기능 또는 안전한 비행 종료 기능 필요|
-|CL4 | • 최대 이륙 중량 25kg 이하 • 최대 비행 고도 및 속도 제한 없음 | 
+|CL4 | • 최대 이륙 중량 25kg 이하 • 최대 비행 고도 및 속도 제한 없음 |
 
 
 
