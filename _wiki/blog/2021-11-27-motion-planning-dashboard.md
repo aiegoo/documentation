@@ -732,17 +732,19 @@ The surface analysis chart depicts an analysis of the current surface weather. [
 
 ![image](https://user-images.githubusercontent.com/42961200/144734910-f6f66557-12d4-4af9-a16a-8507620bc561.png)
 
-![image](https://user-images.githubusercontent.com/42961200/144734935-96b912a3-44e2-409b-9a0d-b7d783c7ef73.png)
+![utmarchitecture](https://user-images.githubusercontent.com/42961200/144734935-96b912a3-44e2-409b-9a0d-b7d783c7ef73.png)
 
-![utmarchitecture](https://user-images.githubusercontent.com/42961200/144734957-a17c6616-2e88-4f02-9d83-0b494e86d98b.png)
-
-![RTMhub](https://user-images.githubusercontent.com/42961200/144734984-5de1bd5f-0967-471b-a3bf-d78ad29eaf81.png)
+![RTMhub](https://user-images.githubusercontent.com/42961200/144734957-a17c6616-2e88-4f02-9d83-0b494e86d98b.png)
 
 ![aussieUTM](https://user-images.githubusercontent.com/42961200/144735016-dd948079-b514-4bd6-b924-b125115bf33a.png)
 
 ![indiaUTM](https://user-images.githubusercontent.com/42961200/144735038-a3ba55c0-46b4-47b2-9bd9-98c96342a99e.png)
 
 ![remoteIDtracking](https://user-images.githubusercontent.com/42961200/144735102-65201e90-d723-4d5b-b884-6dbe249cc7d6.png)
+
+![corridorexample](https://user-images.githubusercontent.com/42961200/144735458-2d67dd86-5a38-45a4-89d6-2219f1810822.png)
+
+![UAMcorridor](https://user-images.githubusercontent.com/42961200/144735484-5bb28262-56df-4a4a-a509-0d5e52f4e2a4.png)
 
 
 ### JDlab
