@@ -751,6 +751,10 @@ visual flight rules (VFR) or IFR, aircraft identification and type, departure po
 ### JDlab
 ![♧](images/webdev/jdaerial.jpg)
 
+<div style="width: 100%; text-align:right;">
+	<video width="100%" height="100%" align="right" src="videos/aeronauticalmap.mp4" type="video/mp4" autoplay loop muted></video>
+</div>
+
 ### Drone-identification ISO
 ![image](https://user-images.githubusercontent.com/42961200/144714652-f72358b7-acc3-444b-a938-b6a480aabdec.png)
 ## Dron ID research [pdf](https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:daac1ad7-e106-49f5-8596-63d535fcdb63)
