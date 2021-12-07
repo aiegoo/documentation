@@ -8,6 +8,45 @@ sidebar: mydoc_sidebar
 permalink: mydoc_pipeline.html
 folder: mydoc
 ---
+
+## ssh issue
+SSH를 이용하여 서버에 접속하려하는데, 다음과 같은 오류가 발생하며 접속이 되지 않는다.
+
+```
+CPUU$ ssh cpuu@192.168.0.7 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! @ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY! Someone could be eavesdropping on you right now (man-in-the-middle attack)! It is also possible that a host key has just been changed. The fingerprint for the RSA key sent by the remote host is f9:64:1a:19:11:85:d4:06:d9:47:7f:f7:da:50:8a:f9. Please contact your system administrator. Add correct host key in /Users/CPUU/.ssh/known_hosts to get rid of this message. Offending RSA key in /Users/CPUU/.ssh/known_hosts:2 RSA host key for 192.168.0.7 has changed and you have requested strict checking. Host key verification failed.
+```
+이유는 192.168.0.7 이라는 IP 로 기존에 접속한 적이 있는 서버와 RSA 공유키를 교환한 상태에서,
+
+192.168.0.7이라는 서버가 바뀌었기 때문이다. 이 경우 라즈베리파이에서 192.168.0.7을 사용하다가 같은 LAN포트를 페도라를 설치한 노트북에 꼽았기에 같은 IP를 쓰게 된 상황이다.
+
+
+
+위의 경고 메시지는 Man in the Middle Attack 이라는 일명 '중간자 공격'에 대해 경고한다. 즉, 기존에 서버가 알고있던 정보를 찾아서 따라갔더니- 기존과는 전혀 다른 서버로 접속되었다는 것이다.
+
+
+
+하지만 이 경우는 운영자인 내가 고의적으로 변경한 것이기에, 해킹 등의 침해사고는 아니다. (정확히는 스푸핑)
+
+
+
+이를 해결하기위해서는 다음과 같은 명령어를 통해 초기화를 시켜준다.
+
+ssh-keygen -R [ IP or DomainName] or add this option  -o "StrictHostKeyChecking no"
+
+```
+ssh-keygen -R 192.168.0.7
+
+CPUU$ ssh-keygen -R 192.168.0.7
+# Host 192.168.0.7 found: line 2 type RSA
+/Users/CPUU/.ssh/known_hosts updated.
+Original contents retained as /Users/CPUU/.ssh/known_hosts.old
+
+CPUU$ ssh cpuu@192.168.0.7
+The authenticity of host '192.168.0.7 (192.168.0.7)' can't be established.
+RSA key fingerprint is f9:64:1a:19:11:85:d4:06:d9:47:7f:f7:da:50:8a:f9.
+Are you sure you want to continue connecting (yes/no)?
+```
+
 ## Thi link
 [contents_moved](/2021-10-21-Bash-cli.html)
 
