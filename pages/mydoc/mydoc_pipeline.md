@@ -47,6 +47,9 @@ RSA key fingerprint is f9:64:1a:19:11:85:d4:06:d9:47:7f:f7:da:50:8a:f9.
 Are you sure you want to continue connecting (yes/no)?
 ```
 
+- using ssh-copy-id -i ~/.ssh/id_rsa.pub user@hostname -p [port]
+   you need to provide login password for the first time trying out.
+
 ## Thi link
 [contents_moved](/2021-10-21-Bash-cli.html)
 
