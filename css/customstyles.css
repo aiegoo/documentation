@@ -424,6 +424,7 @@ ul#markdown-toc >li a:hover{
 ul#markdown-toc li>a {
     display: inline-block;
     border-bottom: none !important;
+    margin-left:7px;
 }
 ul#markdown-toc li::before {
     content: counters(list, ".") " ";
