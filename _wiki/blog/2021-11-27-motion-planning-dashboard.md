@@ -18,6 +18,7 @@ parent: [[Wiki-Setting-Category]]
 date: 2021-11-27T22:54:35 +0900
 updated: 2021-11-27 22:54
 driveId: 1BSwuoFq808JSqNYexyAg3BbzOJT4igLT
+youtubeID: UIKgA0SXO80
 ---
 * TOC
 {:toc}
@@ -749,8 +750,10 @@ The surface analysis chart depicts an analysis of the current surface weather. [
 
 visual flight rules (VFR) or IFR, aircraft identification and type, departure point, estimated time of departure (ETD), flight altitude, route of flight, destination, and estimated time en route (ETE).
 
+{% include youtubePlayer.html id=page.youtubeID %}
 ### JDlab
 ![♧](images/webdev/jdaerial.jpg)
+
 
 {% include googleDrivePlayer.html id=page.driveId %}
 
