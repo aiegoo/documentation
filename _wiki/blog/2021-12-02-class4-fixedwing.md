@@ -23,6 +23,8 @@ updated: 2021-12-02 13:54
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
+[Please see this link](/2021-12-01-48th.html)
+
 ## edu.kotsa.or.kr
 
 [test_bank](https://mobilerobot.co.kr/) id=rapa pw:
