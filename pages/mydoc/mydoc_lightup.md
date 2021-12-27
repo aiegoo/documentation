@@ -12,8 +12,8 @@ folder: mydoc
 ## Django with markdown and blogs5
 
 |---
-| 
-| - 
+|
+| -
 | ![](./images/webdev/olora-pawan.png)
 | ![image](https://user-images.githubusercontent.com/42961200/131829491-63133d4d-a50d-41c2-85ce-7efb3feacf60.png)
 | ![image](https://user-images.githubusercontent.com/42961200/131830460-012478bd-490b-4b7f-a182-fff2e3e804bc.png)
@@ -21,6 +21,8 @@ folder: mydoc
 | ![image](https://user-images.githubusercontent.com/42961200/133224298-2fdcfc56-44c5-46a7-a970-eb5bf3fecbdb.png)
 |===
 | blog is a separate site linked to lightup.co.kr, which is not accessible from this server
+
+[closest to what's being served at lightup.co.kr](https://aiegoo.github.io/lightup.co.kr/index.html#sensors) [source](https://github.com/aiegoo/lightup.co.kr)
 
 [latest_codes](https://github.com/aiegoo/lightup-sandbox)
 
