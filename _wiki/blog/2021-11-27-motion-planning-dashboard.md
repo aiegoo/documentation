@@ -757,7 +757,7 @@ visual flight rules (VFR) or IFR, aircraft identification and type, departure po
 {% include note.html content="java engine teaser" %}
 {% include youtubePlayer.html id=page.youtubeID2 %}
 [develop](https://github.com/aiegoo/4gremoteoperation.git)
-[documentation](https://github.com/aiegoo/udemy/blob/java/resource/)
+[documentation](https://github.com/aiegoo/jdlab/tree/java/resource)
 
 ### JDlab
 ![♧](images/webdev/jdaerial.jpg)
