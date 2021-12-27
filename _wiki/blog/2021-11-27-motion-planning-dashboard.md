@@ -751,17 +751,18 @@ The surface analysis chart depicts an analysis of the current surface weather. [
 
 visual flight rules (VFR) or IFR, aircraft identification and type, departure point, estimated time of departure (ETD), flight altitude, route of flight, destination, and estimated time en route (ETE).
 
-{% include youtubePlayer.html id=page.youtubeID %}
-### JDlab
-![♧](images/webdev/jdaerial.jpg)
-
 {% include note.html content="UI/UX preview" %}
-{% include googleDrivePlayer.html id=page.driveId %}
+{% include youtubePlayer.html id=page.youtubeID %}
 
 {% include note.html content="java engine teaser" %}
 {% include youtubePlayer.html id=page.youtubeID2 %}
 [develop](https://github.com/aiegoo/4gremoteoperation.git)
 [documentation](https://github.com/aiegoo/udemy/blob/java/resource/)
+
+### JDlab
+![♧](images/webdev/jdaerial.jpg)
+
+{% include googleDrivePlayer.html id=page.driveId %}
 
 ![image](https://user-images.githubusercontent.com/42961200/144781932-548e84d4-fb3e-4562-adaf-6438e5e2fe7c.png)
 UAM is considered a subset of advanced air mobility (AAM).1213 AAM provides local, regional, and intraregional service in addition to the urban service of UAM, with intra- and inter-city transport and an expected 50–300 mile maximum range, respectively. NASA is a key AAM pioneer whose extensive AAM vision is depicted as in above.
