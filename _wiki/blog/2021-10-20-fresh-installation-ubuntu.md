@@ -124,7 +124,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     *  ibus/xim seem to have some issues in my case, not in general ; try to install fcitx [blog](https://pstudio411.tistory.com/entry/Ubuntu-2004-%ED%81%AC%EB%A1%AC%EC%9D%B4%EB%82%98-%EC%97%AC%EB%9F%AC-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-%ED%95%9C%EC%98%81%ED%82%A4%EA%B0%80-%EC%95%88%EB%A8%B9%ED%9E%90-%EB%95%8C) and set the inputsource to fcitx in the system settings. In some cases, you need to install `sudo apt install gnome-tweak-tool`, which would provide a gui to customize the settings. Other cli that will need would be `sudo dpkg-reconfigure keyboard-configuration` after running `sudo vim /etc/default/keyboard`.
     *  Another option is to edit `sudo vim /usr/share/X11/xkb/symbols/pc` Check this [sof](https://askubuntu.com/questions/33774/how-do-i-remap-the-caps-lock-and-ctrl-keys)
     * Run this `xev`, escape and ctrl+c to cancel.
-    * For the powerline to be used in VScode, check this [dev.to](https://dev.to/mattstratton/making-powerline-work-in-visual-studio-code-terminal-1m7), which suggest you to download the patched powerline font and run `sudo fc-cache -vf /usr/share/fonts/` You will need to unzip the downloaded file into /usr/share/fonts/truetype/.
+    * For the powerline to be used in VScode, check this [dev.to](https://dev.to/mattstratton/making-powerline-work-in-visual-studio-code-terminal-1m7), which suggest you to download the patched powerline font and run `sudo fc-cache -vf /usr/share/fonts/` You will need to unzip the downloaded file into /usr/share/fonts/truetype/. Type fc-list | grep -i "meslo" to know the names of other fonts so you can use other fonts in the terminal.
 13. [**Optional**] Make emojis showing up
 
     ```bash
