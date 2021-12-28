@@ -14,7 +14,7 @@ summary: "Wed, Oct 20, 21, like windows reinstall, like macos install, a to z st
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2021-10-20T17:05:21 +0900
 updated: 2021-10-20 17:05
 ---
@@ -120,7 +120,12 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     </div></div>
 
 11. Make **Alt-Tab** show windows instead of applications: change in Settings > Keyboards > Custom keyboards > Switch windows. Gnome: install [this one](https://extensions.gnome.org/extension/1437/current-screen-only-for-alternate-tab/) to switch between windows on current screen only.
-12. [**Optional**] Make emojis showing up
+12. Hangul for system and vscode, and powerline
+    1.  ibus/xim seem to have some issues in my case, not in general ; try to install fcitx [blog](https://pstudio411.tistory.com/entry/Ubuntu-2004-%ED%81%AC%EB%A1%AC%EC%9D%B4%EB%82%98-%EC%97%AC%EB%9F%AC-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-%ED%95%9C%EC%98%81%ED%82%A4%EA%B0%80-%EC%95%88%EB%A8%B9%ED%9E%90-%EB%95%8C) and set the inputsource to fcitx in the system settings. In some cases, you need to install `sudo apt install gnome-tweak-tool`, which would provide gui to change the settings. Other cli `sudo dpkg-reconfigure keyboard-configuration` after running `sudo vim /etc/default/keyboard`.
+    2.  Another option is to edit `sudo vim /usr/share/X11/xkb/symbols/pc` Check this [sof](https://askubuntu.com/questions/33774/how-do-i-remap-the-caps-lock-and-ctrl-keys)
+    3.   run this `xev`, escape and ctrl+c to cancel.
+    4.   For the powerline to be used in VScode, check this [dev.to](https://dev.to/mattstratton/making-powerline-work-in-visual-studio-code-terminal-1m7), in which you are guided to download the patched powerline font and run `sudo fc-cache -vf /usr/share/fonts/` You will need to unzip the downloaded file into /usr/share/fonts/truetype/
+13. [**Optional**] Make emojis showing up
 
     ```bash
     sudo apt install fonts-noto-color-emoji
@@ -134,7 +139,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
 
     with [this content](https://github.com/dinhanhthi/scripts/blob/master/settings/ubuntu/01-emoji.conf).
 
-13. Cannot use f keys on keyboard Keychron K8 ([this](https://github.com/Kurgol/keychron/blob/master/k2.md) is useful too):
+14. Cannot use f keys on keyboard Keychron K8 ([this](https://github.com/Kurgol/keychron/blob/master/k2.md) is useful too):
 
     ```bash
     echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
@@ -144,7 +149,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
 
     **Hint**: You can add this command to a script on startup.
 
-14. [__Ubuntu only__] Auto install drivers
+15. [__Ubuntu only__] Auto install drivers
 
     ```bash
     sudo ubuntu-drivers autoinstall
@@ -157,13 +162,13 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     sudo prime-select nvidia
     ```
 
-15. [__Ubuntu only__] Check the NVDIA driver and install the newest version: check in **Additional Drivers**. In case you wanna remove it and reinstall it later, use
+16. [__Ubuntu only__] Check the NVDIA driver and install the newest version: check in **Additional Drivers**. In case you wanna remove it and reinstall it later, use
 
     ```bash
     sudo apt purge nvidia-*
     ```
 
-16. [__Ubuntu only__] Install GNOME Shell extensions
+17. [__Ubuntu only__] Install GNOME Shell extensions
 
     ```bash
     sudo apt install gnome-shell-extensions
@@ -171,74 +176,74 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
 
     Install also [chrome extension](https://extensions.gnome.org/). Go to the corresponding extension link and turn it on and install it. List of useful extensions: [Start Overlay in Application View](https://extensions.gnome.org/extension/1198/start-overlay-in-application-view/), [ESC to close overview from applications list](https://extensions.gnome.org/extension/1122/esc-to-close-overview-from-applications-list/), [Caffein](https://extensions.gnome.org/extension/517/caffeine/), [Alt-Tab Switcher Popup Delay Removal](https://extensions.gnome.org/extension/1317/alt-tab-switcher-popup-delay-removal/), [Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/), [gtile](https://extensions.gnome.org/extension/28/gtile/), [icon-hider](https://extensions.gnome.org/extension/351/icon-hider/) (on gnome taskbar), [Emoji selector](https://extensions.gnome.org/extension/1162/emoji-selector/), [Current screen only on window switcher](https://extensions.gnome.org/extension/1437/current-screen-only-for-alternate-tab/).
 
-17. Install video codecs,
+18. Install video codecs,
 
     ```bash
     sudo apt install ubuntu-restricted-extras
     ```
 
-18. [**Pop!_OS**] Install snap: `sudo apt update && sudo apt install snapd`.
-19. Install email client Mailsrping with snap: `sudo snap install mailspring`.
+19. [**Pop!_OS**] Install snap: `sudo apt update && sudo apt install snapd`.
+20. Install email client Mailsrping with snap: `sudo snap install mailspring`.
 
     ```bash
     # Copy icon
     sudo cp /var/lib/snapd/desktop/applications/mailspring_mailspring.desktop /usr/share/applications/
     ```
 
-20. Install **GoldenDict** (app store) and [dictionaries](https://drive.google.com/open?id=1jna8_grA-wyhPrq8BiB7ypadvW3tTlIv).
-21. [Visual Studio Code](https://code.visualstudio.com/) and its basic extensions: Bracket Pair Colorizer, Docker, Linux Themes for VS Code, Markdown All in One, Markdown Shortcuts, Remote Development, Python, Auto Close Tags
+21. Install **GoldenDict** (app store) and [dictionaries](https://drive.google.com/open?id=1jna8_grA-wyhPrq8BiB7ypadvW3tTlIv).
+22. [Visual Studio Code](https://code.visualstudio.com/) and its basic extensions: Bracket Pair Colorizer, Docker, Linux Themes for VS Code, Markdown All in One, Markdown Shortcuts, Remote Development, Python, Auto Close Tags
 
     Also add below settings to setting json file (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and search "Preferences: Open Settings (JSON)", it's in `~/.config/Code/User`)
 
-22. Install Git Client as [Gitkraken](https://www.gitkraken.com/). Log in with Github account and clone [all working repositories](https://github.com/dinhanhthi?tab=repositories).
-23. Turn off Gnome Shell Activities Animations (click on window taskbar to toggle max/min),
+23. Install Git Client as [Gitkraken](https://www.gitkraken.com/). Log in with Github account and clone [all working repositories](https://github.com/dinhanhthi?tab=repositories).
+24. Turn off Gnome Shell Activities Animations (click on window taskbar to toggle max/min),
 
     ```bash
     gsettings set org.gnome.desktop.interface enable-animations true # enable
     gsettings set org.gnome.desktop.interface enable-animations false # disable
     ```
 
-24. [IBUS Bamboo](https://github.com/BambooEngine/ibus-bamboo), Vietnamese Input Method. Need to restart Ibus and choose Bamboo in the keyboard layout. You can use also <kbd>Shift</kbd> + <kbd>~</kbd> for changing the options (Removing the underline, for example) -- You have to switch to Vietnamese Input before using this shortcut. Use <kbd>Super</kbd> + <kbd>Space</kbd> to change between input methods.
-25. [**Optional**] You may need to [install Python](/python-installation/) before install (successfully) Overgrive.
-26. Google Drive client for Ubuntu: [OverGrive](https://www.thefanclub.co.za/overgrive) (5\$ for each account). An alternative to [Vgrive](https://github.com/bcedu/VGrive).
+25. [IBUS Bamboo](https://github.com/BambooEngine/ibus-bamboo), Vietnamese Input Method. Need to restart Ibus and choose Bamboo in the keyboard layout. You can use also <kbd>Shift</kbd> + <kbd>~</kbd> for changing the options (Removing the underline, for example) -- You have to switch to Vietnamese Input before using this shortcut. Use <kbd>Super</kbd> + <kbd>Space</kbd> to change between input methods.
+26. [**Optional**] You may need to [install Python](/python-installation/) before install (successfully) Overgrive.
+27. Google Drive client for Ubuntu: [OverGrive](https://www.thefanclub.co.za/overgrive) (5\$ for each account). An alternative to [Vgrive](https://github.com/bcedu/VGrive).
 
     ```bash
     # startup commandline for overgrive
     python3 /opt/thefanclub/overgrive/overgrive
     ```
 
-27. **LaTeX**
+28. **LaTeX**
 
     ```bash
     sudo apt-get install texlive-full # 5GB
     sudo apt-get install texmaker
     ```
 
-28. If you install Matlab, you can install `matlab-support` to add matlab icon to applications. Note that, if matlab exe file is at `/usr/local/MATLAB/R2017b/bin/matlab`, we add the location of folder as `/usr/local/MATLAB/R2017b/`.
-29. Use <kbd>super</kbd> + <kbd>E</kbd> to open **Nautilus File Manager**: change in Keyboard shortcut > Custom Shortcut with command `nautilus`.
-30. Default text editor `gedit`, you can use this command in terminal.
-31. ~~**Gnome Calendar**~~ in app store.
-32. Screen Recorder, use **Kazam** (app store). If cannot recognize mic and speaker, read [this solution](https://askubuntu.com/questions/1234314/screen-recording-applications-are-not-detecting-audio-in-ubuntu-20-04). An alternative is [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
-33. VLC (app store). If there is a problem of displaying video (there is only sound without video), check [this](https://askubuntu.com/questions/668834/vlc-media-player-is-not-displaying-video-but-audio-works).
-34. Read SD card
+29. If you install Matlab, you can install `matlab-support` to add matlab icon to applications. Note that, if matlab exe file is at `/usr/local/MATLAB/R2017b/bin/matlab`, we add the location of folder as `/usr/local/MATLAB/R2017b/`.
+30. Use <kbd>super</kbd> + <kbd>E</kbd> to open **Nautilus File Manager**: change in Keyboard shortcut > Custom Shortcut with command `nautilus`.
+31. Default text editor `gedit`, you can use this command in terminal.
+32. ~~**Gnome Calendar**~~ in app store.
+33. Screen Recorder, use **Kazam** (app store). If cannot recognize mic and speaker, read [this solution](https://askubuntu.com/questions/1234314/screen-recording-applications-are-not-detecting-audio-in-ubuntu-20-04). An alternative is [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
+34. VLC (app store). If there is a problem of displaying video (there is only sound without video), check [this](https://askubuntu.com/questions/668834/vlc-media-player-is-not-displaying-video-but-audio-works).
+35. Read SD card
 
     ```bash
     sudo apt-get install exfat-utils exfat-fuse
     ```
 
-35. If you wanna make nautilus default again:
+36. If you wanna make nautilus default again:
 
     ```bash
     xdg-mime default nautilus.desktop inode/directory application/x-gnome-saved-search
     gsettings set org.gnome.desktop.background show-desktop-icons true
     ```
 
-36. If you wanna make some web app a desktop app, use [nativefier](github.com/jiahaog/nativefier).
-37. Bluetooth problem on Dell XPS 15 only: cannot turn on bluetooth ⇒ Try turn off and turn on again the bluetooth in BIOS setting.
-38. Useful shortcuts:
+37. If you wanna make some web app a desktop app, use [nativefier](github.com/jiahaog/nativefier).
+38. Bluetooth problem on Dell XPS 15 only: cannot turn on bluetooth ⇒ Try turn off and turn on again the bluetooth in BIOS setting.
+39. Useful shortcuts:
     - Capture fullscreen: `Ctrl+Alt+Print` (photos will be saved in **Pictures**)
     - Show desktop: set in Keyboards settings, try to find "Hide all normal windows".
-39. [__Only Ubuntu__] Connect Airpod to Ubuntu 20.04:
+40. [__Only Ubuntu__] Connect Airpod to Ubuntu 20.04:
 
     ```bash
     # check bluetooth service is running
@@ -258,7 +263,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     # connect to airpod as other device via bluetooth
     ```
 
-40. Location of `.desktop` files,
+41. Location of `.desktop` files,
 
     ```bash
     ~/.local/share/applications/
@@ -269,8 +274,8 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     locate \*.desktop # zsh
     ```
 
-41. [__Optional__]Xbox controller bluetooth connection: check [this](https://askubuntu.com/questions/998144/how-can-i-use-my-xbox-one-s-controller-via-bluetooth).
-42. Remove icon from dash application
+42. [__Optional__]Xbox controller bluetooth connection: check [this](https://askubuntu.com/questions/998144/how-can-i-use-my-xbox-one-s-controller-via-bluetooth).
+43. Remove icon from dash application
 
     ```bash
     sudo add-apt-repository ppa:caldas-lopes/ppa
@@ -278,7 +283,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     sudo apt-get install ezame
     ```
 
-43. Restore [dconf setting](https://github.com/dinhanhthi/scripts/tree/master/settings):
+44. Restore [dconf setting](https://github.com/dinhanhthi/scripts/tree/master/settings):
 
     ```bash
     dconf load / < dconf-settings.ini
@@ -286,7 +291,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     cat dconf-settings.ini | dconf load /
     ```
 
-44. Restore [custom keyboard shortcuts](https://github.com/dinhanhthi/scripts/tree/master/settings),
+45. Restore [custom keyboard shortcuts](https://github.com/dinhanhthi/scripts/tree/master/settings),
 
     ```bash
     # load
@@ -294,7 +299,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     dconf load /org/gnome/settings-daemon/plugins/media-keys/ < keybindings.dconf
     ```
 
-45. [__Optional__] Disable touchpad automatically when plugging mouse:
+46. [__Optional__] Disable touchpad automatically when plugging mouse:
 
     ```bash
     sudo add-apt-repository ppa:atareao/atareao
@@ -304,7 +309,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     # > action tab > "Disable touchpad when mouse plugged"
     ```
 
-46. Other applicatons:
+47. Other applicatons:
     1. [Skype](https://www.skype.com/en/get-skype/)
     2. [Extreme Download Manager](https://subhra74.github.io/xdm/) (uninstall by running as root `/opt/xdman/uninstall.sh`)
     3. ~~[AO](https://github.com/klaussinani/ao) (MS to do for Ubuntu): `snap install ao`~~
@@ -316,13 +321,13 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     9. ~~[Google Music](https://www.googleplaymusicdesktopplayer.com/)~~. This one: [Youtube Music Desktop](https://snapcraft.io/youtube-music-desktop-app) (install with snap) -- Remove the coincisive keys with the system's.
     10. ~~[Authenticator](https://flathub.org/apps/details/com.github.bilelmoussaoui.Authenticator)~~
     11. **alacarte** (Main Menu, can be found in App Store): change/add icon in launcher.
-47. Swap function keyboards on [Logitech K380](https://www.logitech.com/en-us/product/multi-device-keyboard-k380), using [this tool](https://github.com/jergusg/k380-function-keys-conf) (try all keyboard hidraws if you are not sure!).
-48. Force Unity Dash to index all files on Home: `sudo updatedb` (install by `sudo apt-get install mlocate`)
-49. [__Only Ubuntu__] There are 2 ubuntu softwares in dash? (ref [this question](https://askubuntu.com/questions/1235835/ubuntu-software-doesnt-work-and-why-are-there-two-software-center-in-ubuntu-20)). "Ubuntu software" is pre-installed snap store (run by `snap-store`), the other is `gnome-software`.
-50. <mark>Backup before installing a new system.</mark>
+48. Swap function keyboards on [Logitech K380](https://www.logitech.com/en-us/product/multi-device-keyboard-k380), using [this tool](https://github.com/jergusg/k380-function-keys-conf) (try all keyboard hidraws if you are not sure!).
+49. Force Unity Dash to index all files on Home: `sudo updatedb` (install by `sudo apt-get install mlocate`)
+50. [__Only Ubuntu__] There are 2 ubuntu softwares in dash? (ref [this question](https://askubuntu.com/questions/1235835/ubuntu-software-doesnt-work-and-why-are-there-two-software-center-in-ubuntu-20)). "Ubuntu software" is pre-installed snap store (run by `snap-store`), the other is `gnome-software`.
+51. <mark>Backup before installing a new system.</mark>
     - Settings in `~/.config/` or `~/.<software-name>`
     - All apps in `~/apps/` with their desktop files in `~/.local/share/applications/`
-51. **Pop!\_OS Tips**:
+52. **Pop!\_OS Tips**:
     1. `Super` + `Y`: toggle tiling mode.
     2. Add a windows/applition exepton of tiling mode (it won't be counted)
     3. Make clocks + dates 2 lines -> [tutorial](https://askubuntu.com/questions/1081793/how-to-display-date-under-time-in-gnome).
