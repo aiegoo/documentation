@@ -135,7 +135,7 @@ Don’t allocate too much RAM to your VM, because windows still needs some RAM t
 
 The following python script shows a full mission example using DroneKit and PX4. Mode switching is not yet fully supported from DroneKit, we therefor send our own custom mode switching commands.
 
-```C
+
 ################################################################################################
 # @File DroneKitPX4.py
 # Example usage of DroneKit with PX4
@@ -145,32 +145,39 @@ The following python script shows a full mission example using DroneKit and PX4.
 # Code partly based on DroneKit (c) Copyright 2015-2016, 3D Robotics.
 ################################################################################################
 
-# Import DroneKit-Python
+### Import DroneKit-Python
+
+```C
 from dronekit import connect, Command, LocationGlobal
 from pymavlink import mavutil
 import time, sys, argparse, math
+```
 
+### Settings
 
-# Settings
-
+```C
 connection_string       = '127.0.0.1:14540'
 MAV_MODE_AUTO   = 4
-# https://github.com/PX4/PX4-Autopilot/blob/master/Tools/mavlink_px4.py
+https://github.com/PX4/PX4-Autopilot/blob/master/Tools/mavlink_px4.py
+```
 
+### Parse connection argument
 
-# Parse connection argument
+```C
 parser = argparse.ArgumentParser()
 parser.add_argument("-c", "--connect", help="connection string")
 args = parser.parse_args()
 
 if args.connect:
     connection_string = args.connect
+```
 
 
+### Init
 
-# Init
+### Connect to the Vehicle
 
-# Connect to the Vehicle
+```C
 print "Connecting"
 vehicle = connect(connection_string, wait_ready=True)
 
@@ -201,14 +208,14 @@ def get_location_offset_meters(original_location, dNorth, dEast, alt):
     newlat = original_location.lat + (dLat * 180/math.pi)
     newlon = original_location.lon + (dLon * 180/math.pi)
     return LocationGlobal(newlat, newlon,original_location.alt+alt)
+```
 
 
 
 
+### Listeners
 
-# Listeners
-
-
+```C
 home_position_set = False
 
 #Create a message listener for home position fix
@@ -216,71 +223,106 @@ home_position_set = False
 def listener(self, name, home_position):
     global home_position_set
     home_position_set = True
+```
 
 
+### Start mission example
 
-# Start mission example
+### wait for a home position lock
 
-# wait for a home position lock
+```C
 while not home_position_set:
     print "Waiting for home position..."
     time.sleep(1)
+```
 
-# Display basic vehicle state
+### Display basic vehicle state
+
+```C
 print " Type: %s" % vehicle._vehicle_type
 print " Armed: %s" % vehicle.armed
 print " System status: %s" % vehicle.system_status.state
 print " GPS: %s" % vehicle.gps_0
 print " Alt: %s" % vehicle.location.global_relative_frame.alt
+```
 
-# Change to AUTO mode
+### Change to AUTO mode
+
+```C
 PX4setMode(MAV_MODE_AUTO)
 time.sleep(1)
 
-# Load commands
+### Load commands
 cmds = vehicle.commands
 cmds.clear()
 
 home = vehicle.location.global_relative_frame
+```
 
-# takeoff to 10 meters
+### takeoff to 10 meters
+
+```C
 wp = get_location_offset_meters(home, 0, 0, 10);
 cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, mavutil.mavlink.MAV_CMD_NAV_TAKEOFF, 0, 1, 0, 0, 0, 0, wp.lat, wp.lon, wp.alt)
 cmds.add(cmd)
+```
 
-# move 10 meters north
+### move 10 meters north
+
+```C
 wp = get_location_offset_meters(wp, 10, 0, 0);
 cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 1, 0, 0, 0, 0, wp.lat, wp.lon, wp.alt)
 cmds.add(cmd)
+```
 
-# move 10 meters east
+
+### move 10 meters east
+
+```C
 wp = get_location_offset_meters(wp, 0, 10, 0);
 cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 1, 0, 0, 0, 0, wp.lat, wp.lon, wp.alt)
 cmds.add(cmd)
+```
 
-# move 10 meters south
+### move 10 meters south
+
+```C
 wp = get_location_offset_meters(wp, -10, 0, 0);
 cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 1, 0, 0, 0, 0, wp.lat, wp.lon, wp.alt)
 cmds.add(cmd)
+```
 
-# move 10 meters west
+### move 10 meters west
+
+```C
 wp = get_location_offset_meters(wp, 0, -10, 0);
 cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, mavutil.mavlink.MAV_CMD_NAV_WAYPOINT, 0, 1, 0, 0, 0, 0, wp.lat, wp.lon, wp.alt)
 cmds.add(cmd)
+```
 
-# land
+### land
+
+```C
 wp = get_location_offset_meters(home, 0, 0, 10);
 cmd = Command(0,0,0, mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT, mavutil.mavlink.MAV_CMD_NAV_LAND, 0, 1, 0, 0, 0, 0, wp.lat, wp.lon, wp.alt)
 cmds.add(cmd)
+```
 
-# Upload mission
+### Upload mission
+
+```C
 cmds.upload()
 time.sleep(2)
+```
 
-# Arm vehicle
+### Arm vehicle
+
+```C
 vehicle.armed = True
+```
+### monitor mission execution
 
-# monitor mission execution
+```C
 nextwaypoint = vehicle.commands.next
 while nextwaypoint < len(vehicle.commands):
     if vehicle.commands.next > nextwaypoint:
@@ -288,17 +330,27 @@ while nextwaypoint < len(vehicle.commands):
         print "Moving to waypoint %s" % display_seq
         nextwaypoint = vehicle.commands.next
     time.sleep(1)
+```
 
-# wait for the vehicle to land
+### wait for the vehicle to land
+
+```C
 while vehicle.commands.next > 0:
     time.sleep(1)
 
+```
+
 
 # Disarm vehicle
+
+```C
 vehicle.armed = False
 time.sleep(1)
+```
 
-# Close vehicle object before exiting script
+### Close vehicle object before exiting script
+
+```C
 vehicle.close()
 time.sleep(1)
 
