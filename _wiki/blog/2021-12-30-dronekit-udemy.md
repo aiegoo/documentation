@@ -140,7 +140,7 @@ The following python script shows a full mission example using DroneKit and PX4.
 # @File DroneKitPX4.py
 # Example usage of DroneKit with PX4
 #
-# @author Sander Smeets <sander@droneslab.com>
+# @author Sander Smeets sander@droneslab.com
 #
 # Code partly based on DroneKit (c) Copyright 2015-2016, 3D Robotics.
 ################################################################################################
@@ -151,9 +151,7 @@ from pymavlink import mavutil
 import time, sys, argparse, math
 
 
-################################################################################################
 # Settings
-################################################################################################
 
 connection_string       = '127.0.0.1:14540'
 MAV_MODE_AUTO   = 4
@@ -169,9 +167,8 @@ if args.connect:
     connection_string = args.connect
 
 
-################################################################################################
+
 # Init
-################################################################################################
 
 # Connect to the Vehicle
 print "Connecting"
@@ -209,9 +206,8 @@ def get_location_offset_meters(original_location, dNorth, dEast, alt):
 
 
 
-################################################################################################
 # Listeners
-################################################################################################
+
 
 home_position_set = False
 
@@ -223,9 +219,7 @@ def listener(self, name, home_position):
 
 
 
-################################################################################################
 # Start mission example
-################################################################################################
 
 # wait for a home position lock
 while not home_position_set:
