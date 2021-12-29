@@ -76,6 +76,51 @@ print " System status: %s" % vehicle.system_status.state
 print " GPS: %s" % vehicle.gps_0
 print " Alt: %s" % vehicle.location.global_relative_frame.alt
 ```
+### using a vm and scripts for udemy
+
+[VM IMAGE](https://drive.google.com/open?id=1T8wIekL-DHIm9JGZ1sq8gdVNIEyPItMz)
+
+Username/Password for Preconfigured VM: dronedojo/dronedojo
+
+[DRONEKIT SCRIPTS:](https://drive.google.com/open?id=1kTmBE4VTdLUTKgkn9t-0cyBkTXYIMjyp)
+
+////////////////////////SUMMARY////////////////////////////////
+Setup our Ubuntu virtual machine in VirtualBox
+/////////////////////////////////////////////////////////////////////
+MAKING NEW VM IN VBOX:
+1. New
+2. Name it/Type (Linux) Version (Ubuntu 64 bit)
+3. RAM/Memory size. Depends on computer. ~2 gb should work
+4. Choose harddrive (Create a virtual hard drive now)
+5. Hard drive file type (VDI)
+6. Storage on physical hard drive (Dynamically Allocated)
+7. VM hardrive disk space ~30-50 gb should be lower safe amount.
+
+THIS CREATES A NEW MACHINE IN THE VBOX LIST, but need to install the ubuntu
+.iso image to this machine in VBOX
+
+1. Click on settings of the newly created machine
+2. Enable shared clipboard (CP/Paste sharing of host OS and VM OS)
+3. Drag and drop (Bidirectional
+4. Can alter things like amount of cores allocated to VM
+
+POINT THE UBUNTU IMAGE (.iso file) TO THE VM
+Sotrage>Controller
+Click on CD symbol, choose virtual CD/DVD disc file and select the iso file
+download earlier (UBUNTU Xenail Xerus)
+Click OK
+Start VM and the installation process will start
+
+Finally, your virtual machine will typically reserve all the RAM you give it,
+ whenever it is running.
+ When the virtual machine is turned off, suspended, hibernated, or otherwise not running,
+ this RAM will not be in use.
+ For example, I have about 10 virtual machines, most of which have 1 GB of RAM,
+ on a host machine with 4 GB of RAM.
+ This is not a problem; it just means I can only run up to a few of them at a time.
+
+Don’t allocate too much RAM to your VM, because windows still needs some RAM to operate.
+ Try starting out with 2 gb or 45% of your computers RAM
 
 ### issues
 - when unable to switch betweeen modes
