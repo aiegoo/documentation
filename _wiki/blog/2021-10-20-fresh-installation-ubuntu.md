@@ -319,9 +319,10 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     6. **Cheese** (camera app)
     7. [Drawing](https://maoschanz.github.io/drawing/)
     8. ~~[Stacer](https://oguzhaninan.github.io/Stacer-Web/) (optimizer system like Advanced System Care)~~
-    9. ~~[Google Music](https://www.googleplaymusicdesktopplayer.com/)~~. This one: [Youtube Music Desktop](https://snapcraft.io/youtube-music-desktop-app) (install with snap) -- Remove the coincisive keys with the system's.
+    9. ~~[Google Music](https://www.googleplaymusicdesktopplayer.com/)~~. This one: [Youtube Music Desktop](https://snapcraft.io/youtube-music-desktop-app) (install with snap) -- Remove the coincisive keys with the systems.
     10. ~~[Authenticator](https://flathub.org/apps/details/com.github.bilelmoussaoui.Authenticator)~~
     11. **alacarte** (Main Menu, can be found in App Store): change/add icon in launcher.
+
 49. Swap function keyboards on [Logitech K380](https://www.logitech.com/en-us/product/multi-device-keyboard-k380), using [this tool](https://github.com/jergusg/k380-function-keys-conf) (try all keyboard hidraws if you are not sure!).
 50. Force Unity Dash to index all files on Home: `sudo updatedb` (install by `sudo apt-get install mlocate`)
 51. [__Only Ubuntu__] There are 2 ubuntu softwares in dash? (ref [this question](https://askubuntu.com/questions/1235835/ubuntu-software-doesnt-work-and-why-are-there-two-software-center-in-ubuntu-20)). "Ubuntu software" is pre-installed snap store (run by `snap-store`), the other is `gnome-software`.
@@ -330,7 +331,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     - All apps in `~/apps/` with their desktop files in `~/.local/share/applications/`
 53. **Pop!\_OS Tips**:
     1. `Super` + `Y`: toggle tiling mode.
-    2. Add a windows/applition exepton of tiling mode (it won't be counted)
+    2. Add a windows/applition exepton of tiling mode (it wont be counted)
     3. Make clocks + dates 2 lines -> [tutorial](https://askubuntu.com/questions/1081793/how-to-display-date-under-time-in-gnome).
        - Install [clock override extension](https://extensions.gnome.org/extension/1206/clock-override/).
        - Using ` %H:%M%n%d/%m/%Y` in _text to display instead of the clock_ (with the spaces so that they are center aligned).
