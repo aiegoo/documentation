@@ -309,6 +309,63 @@ vehicle.close()
 time.sleep(1)
 
 ```
+## stm32
+|---
+|FC basic |  
+| setup | Matek bec pdb
+|   | GPIO Led
+|   | TIM Buzzer
+|   | UART init
+| Interface | 
+|   | BNO080 9 axis AB Angle SPI
+|   | ICM 20602 Angle Speed SPI
+|   | LPS22HH Altitude SPI
+| GPS data |
+|   | ublox M8N U-center
+|   | M8N UBX UART
+|   | UBX protocol
+|   | UBX data parsing
+|   | M8N setting
+| Data Rx |
+|   | FlySky Fs-i6 FS-A6B binding
+|   | FS-iA6B iBus UART
+|   | iBus data logging
+|   | iBus data parsing code
+|   | Failsafe code
+| Frame setting |
+|   | Motor & ESC
+|   | BEC and FC
+|   | Peripherials 
+| Powerup |
+|   | ESC Oneshot Multishot Dshot
+|   | Oneshot125 PWM TIM-PWM Fr. Resolution
+|   | FS-i6 motor sync
+|   | ESC calibration
+|   | Pitch analysis
+| Comm and sensors |
+| Wireless data tx/rx |
+|   | 3DR telemetry Radio config
+|   | tx/rx protocol 
+|   | roll, pitch, yaw, alt. positioning
+|   | RC data
+|   | Battery ADC
+|   | PID gain
+| Aux |
+|   | EEPROM PID gain save
+|   | Voltage check and alarm
+|   | Gyro bios calib on bootup
+| Safety |
+|   | Motor cancel on bootup
+|   | Arming on minimum throttle
+|   | Sensor check on bootup
+|   | Fail-safe
+| Flight control |
+| Roll/Pitch |
+|   | PID Single/double PID
+|   | BNO080 + ICM20602
+| Guided |
+|   | Alt. holding LPS22HH
+|   | ublox M8N
 
 #### video 1
 
