@@ -368,6 +368,7 @@ time.sleep(1)
 |   | ublox M8N
 
 #### video 1
+- hardware list
 
 ```diff
 I uploaded a STM32F4 tutorial video course few years ago. and now I'm getting started a new video course again.
@@ -856,6 +857,7 @@ Then I'll explain it next time. Thank you.
 ```
 
 #### video 2
+- STM32CubeIDE install
 
 ```diff
 Hello. This is ChrisP from M-HIVE. Last time, I introduced the drone hardware components for this course.
@@ -1248,6 +1250,7 @@ So next time is the beginnig of the drone development. See you next time.
 
 
 #### video 3
+- Powering up
 
 ```diff
 Now I'm going to do FC programming in earnest. This is Chapter 1 of Part 1. In this time, I will explain how to set up debug & development environment.
@@ -1538,6 +1541,7 @@ See you next time. Thank you.
 
 
 #### video 4
+- Buzzer setting
 
 ```diff
 Last time we used the GPIO to blink the LEDs, and briefly compared the HAL driver and LL driver.
@@ -1872,6 +1876,7 @@ See you next time. Thank you.
 
 
 #### video 5
+- PC connection UART
 
 ```diff
 This is the last time of Chapter 1. This time, we will try to do data communication with PC through UART.
@@ -2268,6 +2273,7 @@ See you next time. Thank you.
 
 ### chapter 2
 #### video 6
+- Rotation angle SPI
 
 ```diff
 In the last chapter, we were driving the LED and the buzzer for debugging, and transmitting the variable values to the PC through UART communication.
@@ -2981,6 +2987,7 @@ See you next time. Thank you.
 
 
 #### video 7
+- ICM 20602 gyro SPI
 
 ```diff
 Now, I will explain the ICM-20602 6-axis sensor that will be covered this time.
@@ -3574,6 +3581,7 @@ The next time is the last time of the Chapter 2 sensor interface. See you next t
 
 
 #### video 8
+- LPS22HH barometer SPI
 
 ```diff
 Until last time, we calculated the 3-axis rotation angle and angular rate using the BNO080 and the ICM-20602,
@@ -4179,6 +4187,7 @@ From the next time, I will explain about the GPS. See you next time. Thank you.
 - data rx
 #### video 9
 * u-center install
+
 ```diff
 Until last time, we have finished the Chapter 2 sensor interface.
 
@@ -4804,6 +4813,7 @@ Then see you next time. Thank you.
 
 
 #### video 10
+- M8N setup UBX message
 
 ```diff
 The MH-FC V2.2 production is completed and being prepared for global sales.
@@ -5151,6 +5161,7 @@ Then see you next time. Thank you.
 ```
 
 #### video 11
+- UBX message
 
 ```diff
 In the last video, you learned how to change the output message to UBX protocol using u-center.
@@ -5615,6 +5626,7 @@ Then see you next time. Thank you.
 
 
 #### video 12
+- UBX message parsing
 
 ```diff
 I 've provided a detailed explanation of the structure of the UBX message frame last time.
@@ -6296,6 +6308,7 @@ It took a long time today because the content was very very important. Thank you
 
 #### video 12
 - ubs data parsing
+
 ```diff
 I 've provided a detailed explanation of the structure of the UBX message frame last time.
 
@@ -6375,7 +6388,7 @@ After that, once 36-bytes of a message frame are received, parse and store the d
 
 Please be aware of these three premises here. 1. Frames must start with a fixed value(SYNC CHAR).
 
-2. The length of a frame(message) should be fixed. 3. We use a receive interrupt and it is requested every 1 byte.
+1. The length of a frame(message) should be fixed. 3. We use a receive interrupt and it is requested every 1 byte.
 
 The basic concept of receiving a message frame is count the order of received byte. And counting starts from 0.
 
@@ -6976,6 +6989,7 @@ It took a long time today because the content was very very important. Thank you
 ```
 
 #### video 13
+- writing M8N configuration code
 
 ```diff
 Until last time, we wrote source code for receiving POSLLH messages in ubx protocol,
@@ -7401,16 +7415,668 @@ I will also explain how the data changes when manipulating joysticks on the remo
 ```
 
 
-#### video
+#### video 14
+- FS IA6b iBus data
 
 ```diff
+Until last time, we have completed Chapter 3. GPS data receiving and parsing.
 
+In Chapter 3, we received and analyzed the ubx message of the M8N GPS, parsed and stored into the structure variable we defined.
+
+And we wrote M8N setting code so that FC can directly set M8N without u-center.
+
+Chapter 2 sensor interface took about 175us, and chapter 3 GPS data reception took about 11us.
+
+I explained that because the rx interrupt was used when receiving data,
+
+the time to actually receive data was negligible, so it was excluded from the timeline.
+
+If DMA is also used together,
+
+CPU resources are not consumed at all because the process of receiving data and storing it in a temporary buffer is handled in hardware.
+
+This makes possible the CPU to perform other operations in the meantime.
+
+However, we have not used DMA in the data receiving part until now, and we will not use it in this Chapter 4.
+
+Maybe we might use DMA later in Chapter 7. radio data communication. Because FC will send a bunch of data continuously.
+
+If it is used, then I will explain in detail what DMA is.
+
+So anyway, the contents of Chapters 2 and 3 took about 190us in total,
+
+and there is still plenty of time left for the whole process to operate at 1kHz.
+
+In this chapter, we will see later how long it takes to receive, calculate checksum and parse the FS-iA6B receiver data.
+
+What we're going to do in this chapter is similar to the last chapter 3, so it will probably take about the same amount of time as the last chapter.
+
+This time is the first time of Chapter 4.
+
+In this chapter, we will use FLYSKY's transmitter and receiver to remotely control the drone.
+
+I will explain how to set the functions of the radio controller,
+
+and how to bind the transmitter and receiver, and receive data from the radio controller.
+
+When we receive data, we will use a serial protocol called i-BUS, and this serial protocol has more advantages than PWM or PPM.
+
+So most of the latest receivers support the serial protocol.
+
+The serial protocol differs slightly from company to company, but they are all almost the same.
+
+In the last chapter, we used the UBX protocol for the M8N GPS, and if you understand it well, you can apply any serial protocol.
+
+FLYSKY's receiver outputs data to FC using a serial protocol called i-BUS.
+
+And FUTABA and FRSKY use a serial protocol called S-BUS, and other types of protocols are also used depending on the manufacturer.
+
+But you understand one of them clearly, you will be able to understand the rest as well.
+
+This is the beginning of chapter 4, we will set up FLYSKY's FS-i6 transmitter and bind it with FS-iA6B receiver.
+
+Then, from then on, receiver outputs data from the radio controller in PWM, PPM, or serial data.
+
+Among them, we will use the serial protocol(i-Bus) to receive data through UART.
+
+This represents the basic concept of data flow.
+
+When operating gimbals(sticks) or switches on the radio controller, the data is remotely transmitted to the receiver.
+
+And the receiver sends the data to FC,
+
+Among the methods of transferring data to FC,
+
+PWM and PPM have been mainly used in the past, and the trend is to use serial method these days.
+
+So we will also get data using serial interface.
+
+The left one is FS-i6 transmitter and the right one is FS-iA6B receiver.
+
+Although this transmitter/receiver set is low-cost, it has all the necessary features. So this is often used for beginners.
+
+One thing to be aware of is that only the model with 'B' at the end like FS-iA6'B' outputs data in serial.
+
+Besides this, there is just FS-iA6, which only outputs PWM and PPM. That means there is no serial output.
+
+However, in this class, data will be received in serial protocol, so if you use FS-iA6, you cannot follow this course.
+
+Be sure to pay attention to the model name when purchasing.
+
+Now, let me explain about each specification,
+
+First, the FS-i6 transmitter transmits 6 channel data out of a total of 10 control channels.
+
+The radio frequency range is the ISM band of 2.4GHz and the bandwidth is 500kHz.
+
+There are various configurations we can make, so I will explain only the necessary functions in this class.
+
+Battery voltages are displayed on the screen. Transmitter and receiver battery voltages are displayed separately,
+
+and transmitter is powered by 4xAA batteries.
+
+And transmission range which is really important is not described in the manual.
+
+So I had a range test during the outdoor flight,
+
+communication was available about 300m far, and I wanted to try it further, but to do that, I had to cross the Han River, so I couldn't.
+
+I found a video on YouTube about that communication was possible up to 2km in the open areas.
+
+But I don't think it would be possible, and I guess that it is possible to go up to about 4-500m.
+
+However, I strongly recommend you to fly within 300m, and it would be better to fly closer than this.
+
+Because it is difficult to see and control the drone in a far distance. For your safety, fly close to you.
+
+And finally, if updates the firmware of transmitter, all 10 channels are available.
+
+If it's possible to use all 10 channels, it's a great value for the price. But I haven't tried it.
+
+For those of you who want to try, search for FS-i6 firmware update on YouTube and you will find many related videos.
+
+Just watch and follow the one of them.
+
+But it doesn't seem to be the official firmware supported by FLYSKY.
+
+Therefore, if something goes wrong, you may have to roll back, but I did not find a way to do that.
+
+Therefore, YOU MUST BE CAREFUL WHEN UPDATING THE FIRMWARE!! In the worst case, you will have to buy the transmitter again.
+
+In this class, there is no need to update the firmware because we use only 6 channels.
+
+There are 4 channels of 2 sticks, 2 channels each on the left and right, and 4 switches A, B, C, and D and 2 variable resistors A and B at the top,
+
+So there are a total 10 of control channels.
+
+Channels here means a switch or a gimbal that can be controlled independently. That means there are 10 physical switches or gimbals that can be manipulated.
+
+However, FS-i6 sends only 6-channel data to the receiver.
+
+Left and right gimbals are fixedly assigned to 4 channels, 2 channels each. Then, 2 channels are left among 6 channels,
+
+and user can select and assign 2 of the switches or variable resistors to those 2 channels.
+
+Finally, in this class, we will use switch A and C. I'll explain how to assign channels a little later.
+
+So the conclusion is that only 6 channels out of 10 channels can be assigned. But if you update the firmware, it is able to use all 10 of them.
+
+And now let me explain the FS-iA6B receiver. This receiver supports 3 types of output: PWM PPM and Serial.
+
+If you look at the pin out first, there are 6 PWM output pins,
+
+and in the PWM method, 6 pins are used for 6 channel because each channel wave is physically output to a separate pin.
+
+And there is one pin where PPM is output.
+
+Since PPM is a method that can output multi-channel information with one pin, all 6-channel information are output through one single pin.
+
+PPM output can be enabled or disabled, and the initial setting is Off.
+
+And lastly there is one serial output pin and it is output in UART. The name of the serial protocol is i-Bus.
+
+I will explain i-Bus protocol in detail in the next section.
+
+The operating voltage is 4.0-8.4V.
+
+We use 5V output from the BEC to supply power the receiver.
+
+And the data output rate of i-Bus is about 7.5ms.
+
+That is, data is received 133 times per second.
+
+And it supports fail-safe which is very important,
+
+If fail-safe is enabled by the transmitter, data is changed when the transmitter and receiver are disconnected.
+
+Therefore, FC can detect whether the datalink between the transmitter and receiver is good or lost through the received data.
+
+This is very closely related to safety, so I will explain it in a separate video at the end of this chapter.
+
+Now, to explain the pins of the receiver, the red square is the +Vcc and the black one is GND.
+
+And the 6 pins in blue square are PWM output pins.
+
+If PPM output is enabled, PPM is output from the first pin marked in yellow not PWM.
+
+And as mentioned earlier, the default PPM output is disabled.
+
+And the pin marked in orange is used for binding with the transmitter.
+
+And the pin we will use is marked in green, and i-Bus serial data is output from this pin.
+
+And the SENS pin marked purple is probably used to send data back to the FS-i6 transmitter.
+
+I'm not sure because I haven't used this function before, but, conversely, receiver could send sensor data to transmitter by configuration.
+
+If you are curious, search for the FS-iA6B SENS PIN on Google.
+
+Now, let mel explain how to connect the receiver and FC with jumper wires.
+
+UART5 of FC is used for the receiver and it is connected to here (J5).
+
+This connector is a 2.54mm 4-pin connector.
+
+Each pin is arranged in order from left to right of FC: GND, +5V, RX and TX.
+
+RX5 is connected to PD2 and TX5 is connected to PC12.
+
+We're going to set UART parameters same as the receiver's. (8N1-115200)
+
+We use the three pins in the upper right. It is GND, +Vcc and i-Bus serial output order from left.
+
+The receiver and FC are connected as shown in the figure.
+
+FC will only receive data from the receiver, so only RX5 pin of FC is used and TX5 is not.
+
+Be sure to pay attention to the connection order when connecting cables! You can connect with a female to female jumper cable.
+
+If you accidentally connect +Vcc and GND in reverse, about 3A overcurrent will suddenly occur.
+
+Therefore, you must be careful not to connect them in reverse. Mis-connection may cause great damage to the receiver.
+
+Connection is done like this. The rightmost pin of the FC is not connected to any pins.
+
+Now, before to configure the transmitter and bind it to the receiver, let's first check the firmware version of the transmitter and do a factory reset.
+
+Power on the transmitter first.
+
+Note that transmitter and receiver have not been binded yet. When powered on, TX battery meter is shown above and also as a voltage below.
+
+This is the transmitter's battery voltage.
+
+If you press and hold the OK button, configuration menu appears.
+
+And there are two main menus. You can select it using the UP/DOWN button.
+
+First, enter the system setup on the left. Press OK button to enter.
+
+And press the DOWN button several times, you can find a firmware version item on the next page.
+
+If you enter, you can check the version like this.
+
+The version of the transmitter I'm using is 2.0 and 16-Aug-2017 seems to be release date.
+
+Even if the version is different from mine, it doesn't seem to be much difference in using it.
+
+Now let's do a factory reset.
+
+Press the Cancel button to return to the System Setup menu. Down a bit more and you will see an item called Factory Reset.
+
+Select it and press OK button and it asks really want to do a factory reset.
+
+Select YES and press OK.
+
+Then, you will hear a high-frequency beep, which means that the setting has been applied.
+
+Transmitter's been factory reset. After factory reset done, binding is released.
+
+So, let's proceed transmitter configurations step by step from binding procedure.
+
+Now let me explain how to bind the transmitter and receiver. First, turn off both transmitter and receiver.
+
+I'm turning transmitter off and my receiver is already powered off.
+
+Then, power on the receiver while plugging in the bundled jumper cable to the B/VCC port as shown in the picture on the right.
+
+When you purchase the receiver, it will come with a binding jumper cable. Check the picture for the location of the B/VCC port.
+
+After plugging the jumper cable into the B/VCC port like this, connect the power.
+
+When power is on, the LED on the receiver flashes rapidly.
+
+That means the receiver has now entered binding mode.
+
+Now we're going to put the transmitter into bind mode as well. Turn it on while holding down the BIND button.
+
+Let's do it. When binding is complete, the message RXBind OK is displayed on the screen.
+
+And the LED on the receiver will stop flashing and be solid.
+
+It means that it is bound and connected to the transmitter.
+
+Rx battery voltage appeared on the screen. The battery meter is shown above and the voltage is shown below.
+
+After binding is complete, remove the jumper cable. And turn the transmitter off again.
+
+Now the LED on the receiver blinks slower than before. This means there is no connection with the transmitter.
+
+Turn the transmitter on again. Once the binding is done, then connection is immediately established.
+
+No need to bind again.
+
+It doesn't matter if the order in which entering bind mode is changed.
+
+You can put transmitter into bind mode first and put receiver later.
+
+Now let's assign the stick and switch channels.
+
+As I explained before, both left and right stick use 2 channels each, for a total of 4 channels.
+
+The stick mode is default mode 2.
+
+In mode 2, the horizontal direction is channel 1 and the vertical is channel 2, of the right stick
+
+vertical direction is channel 3, and the horizontal is channel 4 of the left stick.
+
+If changing the mode, the channel number of each directions of the each stick is changed.
+
+To check this, enter the set up menu and select System setup on the left, you can find an item called Sticks mode.
+
+When you select the item, it is now in mode 2, but you can change the mode with the UP/DOWN buttons.
+
+There are a total of 4 modes, and only the location of the assigned channel varies depending on each mode.
+
+and it is same that the sticks use a total of 4 channels.
+
+We're going to use the default mode 2 as it is.
+
+Even if we change the mode here, we can change it later through the source code as well.
+
+So the stick mode doesn't really matter now.
+
+So now we have 2 out of 6 channels left. Let's assign the remaining two channels.
+
+After entering the setup menu again, this time select Functions setup on the right.
+
+Select Aux. channels.
+
+Channel 5 and 6 are assigned to VrA and VrB by default. They are the variable resistors in the upper center.
+
+We'll re-assign this.
+
+By pressing the UP/DOWN button, you can change the switch to be assigned. Choose SwA to channel 5.
+
+And press the OK button once to select channel 6. Then channel 6 is selected. Choose SwC.
+
+When the setting is complete, we have to save the setting.
+
+But if you press OK button, just the other channel is selected.
+
+Pressing and holding the OK button does not respond, and pressing CANCEL cancels the setting.
+
+Ironically, you have to press and hold the CANCEL button to save the setting.
+
+And then high-frequency beep sounds once and it turns back to the menu.
+
+If enter again, the setting we made has been applied well.
+
+We have completed all transmitter settings. In addition to this, there are many other functions,
+
+so if you are curious, it would be good to make various configurations.
+
+However, you should be careful when changing the transmitter settings after completing this lesson.
+
+In particular, changing the channel settings can cause strange controls.
+
+For example, yaw axis is rotating even moving the throttle stick, etc.
+
+Therefore, it is recommended not to change the "Aux. channels" setting once it is set.
+
+Now let's check if the settings we have made are working.
+
+Press and hold the OK button to enter the setting menu. Select Functions setup on the right and select Display item.
+
+Then, the movement of the sticks and switches assigned 6 channels is displayed as a bar graph.
+
+If you move the right stick in horizon direction, the graph of channel 1 changes.
+
+And the vertical direction is channel 2,
+
+the vertical direction of the left stick is channel 3, and the horizontal direction is channel 4.
+
+And channels 5 and 6 are assigned to SwA and SwC.
+
+Moving SwA changes the graph of Ch5. The bar graph of Ch5 changes.
+
+The graph does not change even if you move the switches that are not assigned such as SwB.
+
+And SwC has been assigned to channel 6. SwC is a 3-stage switch. So, three operations are possible: top, middle, and bottom.
+
+Now it is located top.
+
+Moved to middle,
+
+and bottom.
+
+The graph of Ch6 changes as it is moved.
+
+SwD is also not assigned, so the graph doesn't change even if you manipulate it.
+
+In this way, we checked that everything we set up works well.
+
+Now, the stick movement data is output to i-Bus, and we need to check whether the data is received well in FC.
+
+One thing to say before that, when you turn on the transmitter, throttle stick and all switches must be in their default positions.
+
+If you turn on the transmitter in a non-default position, a warning message is displayed and connection is not established.
+
+The default position is with all switches at the top and the throttle stick at the bottom.
+
+I'll turn the transmitter off and turn it on back with the throttle stick is a bit raised.
+
+When I turn on while putting the throttle stick up a bit, an error message appears and the buzzer beeps.
+
+And connection is not established. The LED on the receiver is also blinking.
+
+Now I'm going to lower the throttle down to its default position. Then, the connection now established.
+
+Again, I will turn the power off and put the SwA down and turn on the power back.
+
+Again, a warning message appears and the connection is not established. I put SwA up back to the default location and the connection was established.
+
+The reason for this is that if you turn on the transmitter with the throttle stick raised, motors may unexpectedly rotate and cause an accident.
+
+The same for switches, usually these switches are used to give commands to the drone,
+
+for example, assuming the power is turned on with auto-flight commands enabled,
+
+the drone can switch to auto-flight as soon as the transmitter is turned on. Because of these reasons, transmitter has its own safety functions.
+
+So, FS-i6/iA6B has good features even though its low-cost. Therefore, it is really good for beginners.
+
+The FS-iA6B receiver is connected to UART5 of FC. UART parameters are async mode, data length 8 bits, baud rate 115200bps,
+
+no parity and, stop bit is 1 bit. And we will use rx interrupt when receiving data.
+
+And since we will only receive i-Bus messages, we will enable not tx, but rx.
+
+And UART6 is a channel to communicate with PC and has already been configured in Chapter 1.
+
+But we lowered the baud to 9600bps to interface with the GPS in the past.
+
+But this time we will change it to 115200bps same as UART5. So, all UART parameters need to be configured as shown in the screen.
+
+Now, we're going to receive i-Bus data to FC, and then transfer the data back to the PC as it is.
+
+and check it with the terminal software how the data rules and forms are.
+
+This time will be also very fun. So now let's write the source code.
+
+Duplicate the "3-5. M8N Configuration" folder we worked on last time. Name the new folder "4-1. FS-iA6B PC Interface".
+
+And after copying the folder name, go into the folder and rename the .ioc file to the same as the folder name.
+
+And delete the .elf file and Debug folder. After that, run CubeIDE.
+
+First, close all open projects and files, and select Import project.
+
+Select Exsiting projects into workspace and select the 4-1 folder just duplicated.
+
+And click the Finish button.
+
+When the import is complete, double-click the .ioc file to launch CubeMX.
+
+Expand the Connectivity tab and select UART5.
+
+Select asynchronous mode. And open Parameter Settings tab below.
+
+Nothing to change Basic Parameters,
+
+and in the Advanced Parameters below, we will only receive data, so select the Data Direction as Receive Only.
+
+And since we will use rx interrupt, go to NVIC Settings tab and check Enable UART5 global interrupt.
+
+Looking at the right Pinout view, PD2 and PC12 are selected.
+
+Since the Tx pin will not be used, PC12 will not be connected.
+
+Now move to the Project Manager tab and Advanced Settings. Change UART5 from HAL to LL.
+
+And back to the Pinout & Configuration tab,
+
+we've set the baud rate of UART6 to 9600bps in the last chapter, but change it to 115200bps this time.
+
+Now we made all configurations in CubeMX. Let's generate code.
+
+After the code generation is complete, let's open the main.c file.
+
+Scroll down.
+
+UART5 initialization function is called in the main().
+
+And we called "LL_USART_EnableIT_RXNE()" to enable UART4 and UART6 rx interrupt before.
+
+Since we will use rx interrupt of UART5 as well for i-Bus data reception, we call it once more.
+
+And pass "UART5" as an argument. And scroll down further.
+
+In the while() loop, the code that receives the ubx message and checks the checksum will not be used this time, so let's comment out them.
+
+Now, FS-iA6B sends data to FC in i-Bus, and FC receives the data through UART5.
+
+So, what we are going to do this time is to send the received data directly to the PC and check the data on PC.
+
+In other words, we will make a program that transfers data from UART5 to UART6 .
+
+We did the very same thing in Chapter 3 to check M8N GPS data.
+
+Open the stm32f4xx_it.c file. If you scroll all the way down, UART5 interrupt handler function has been generated.
+
+Now, when data is received from UART5, this interrupt handler will be called. We just need to write some source code that sends the received data back to UART6.
+
+The source code have been written in USART6_IRQHandler(). Copy the source code in that function and paste it into UART5_IRQHandler() as it is.
+
+Then replace all "USART6" with "UART5". Note that there is no 'S'.
+
+When rx interrupt is requested, the data must be stored in a temporary variable first.
+
+Replace all "uart6_xxx" with "uart5_xxx". These two variables have not been declared yet, so let's declare them.
+
+Scroll up to the top. Declare "uint8_t uart5_rx_flag = 0;" and "uint8_t uart5_rx_data = 0;"
+
+I think the flag variable will not be used, but we'll declare it anyway.
+
+Come down again,
+
+Now that the received data needs to be transmitted as it is to USART6,
+
+"USART6" should be passed as the first argument of LL_USART_TransmitData8(),
+
+and "uart5_rx_data" in which the received data is stored should be passed as the second argument. Complete "LL_USART_TransmitData8(USART6, uart5_rx_data);"
+
+And before calling "LL_USART_TransmitData8()", we need to check if the Tx register is empty.
+
+This is a mistake I made before.
+
+When using HAL, the transmit function checks whether the tx register is empty itself, but when using LL, you have to write your own checking code yourself.
+
+Let's return to main.c and scroll up to the top.
+
+we newly added "while(!LL_USART_IsActiveFlag_TXE(USART6));" in "int _write()" last time.
+
+Copy this and back to stm32f4xx_it.c, and paste it right above "LL_USART_TransmitData8()".
+
+And in "USART6_IRQHandler()", the source code that transmits the data received from USART6(PC) to UART4 remains,
+
+paste the same code here to check if the Tx register is empty. And replace the argument with "UART4".
+
+And since this code is not going to be used, comment it out. There is nothing to do when data received from the PC.
+
+So, we wrote all source code today. Now, let's think about what happens.
+
+The data sent from FS-i6 transmitter will be received to UART5 of FC through FS-iA6B receiver,
+
+and the data is stored in a temporary variable and sent back to the USART6 as it is.
+
+Since USART6 is connected to the PC, that is, we built a program that transfers data from FS-iA6B to the PC.
+
+So now let's build and download this code. Press F11.
+
+If build isn't performed at once, try to build again.
+
+When this window pops up, click OK.
+
+Download is complete. Run it.
+
+First, remove the power of both transmitter and receiver. Turn off the transmitter and also remove the battery from FC.
+
+Then, turn only the FC on again.
+
+FC and receiver have been powered on.
+
+And the connection between receiver and transmitter has not been established yet since powered on.
+
+And then, run the terminal software.
+
+We changed baud rate of USART6 to 115200bps for PC, so select 115200bps and connect comport.
+
+Com port connected, but no data is printed yet.
+
+This means that the receiver is not sending data to the FC. Also, the connection between transmitter and receiver has not been established.
+
+Here if I turn on the transmitter, transmitter starts sending data to the receiver,
+
+and if the data is received via UART5, it will be delivered to the UART6(PC) and printed on terminal.
+
+Now I'm turning on the transmitter.
+
+As soon as the power is turned on, data started to be printed! A lot of data come in. I'm going to disconnect comport.
+
+And now I'm just going to turn off the transmitter again.
+
+Then, unlike before, receiver has been disconnected after once connection established with transmitter.
+
+Remember that. And looking at the received data, some data are being received repeatedly.
+
+The reason the data was received repeatedly is because I did not operate any stick or switch.
+
+If I operate them, the data will be changed.
+
+This picture was captured while moving the stick of the radio controller.
+
+Each line is the one single i-Bus message, and if you look at the received data, the data is slightly different.
+
+First of all, all messages start with 0x20 0x40 are the same.
+
+And the data that came in after that was a little different. Then, the same data is received again from 0xE8 0x03,
+
+and the values ​​of the last two bytes are different. All data is hexadecimal.
+
+Now, I will briefly explain the message structure of the i-Bus protocol. And deep explanation will be given in the next time.
+
+i-Bus messages start with 0x20 0x40. This is almost equivalent to 2 bytes of SYNC CHAR in the UBX protocol.
+
+After that, the channel data comes in successively. And the last two bytes are the checksum.
+
+And then a total of 14-channel data are received, but I explained that the FS-i6 transmits only 6-channel data.
+
+That is, only the first 6-channel data are valid.
+
+i-Bus protocol seems to be defined so that a total of 14 channels can be transmitted. We only use the first 6-channel data.
+
+If you update the firmware of FS-i6 transmitter, you might be able to use 10 channels. Then you should use 10-channel data from the beginning of channel data.
+
+I'll give you more information about i-Bus protocol next time. And I have one more thing to explain.
+
+I told you to remember that receiver has been disconnected after once the connection established with transmitter.
+
+Since the transmitter's been turned off, of course the connection is lost. The LED on the receiver also started blinking slowly.
+
+At the first time, when the receiver was turned on with connection not established, data wasn't sent to the FC at all.
+
+No data was printed to the terminal.
+
+However, like now, if the receiver and transmitter are disconnected after connection established, the receiver keeps sending data to FC.
+
+If connecting comport again, the data is being printed even the connection has been lost.
+
+Let's check. When I connect, the data keeps coming in.
+
+This is the condition that failsafe can be activated.
+
+Because the connection between transmitter and receiver was established and then suddenly lost.
+
+The receiver does not know why the connection was lost,
+
+but the condition for failsafe activation is met because it has lost its connection with the transmitter.
+
+However, because we haven't enabled failsafe yet, it will not be activated.
+
+To enable failsafe, we should set up the failsafe function on the transmitter. That will be explained at the end of this chapter.
+
+With failsafe enabled, if the connection is lost after connection established for any reason, some of the data is changed.
+
+This means that if FC detects the data is changed, FC can also detect that communication has been lost.
+
+But now, there is no change in the data because we did not enable the failsafe function.
+
+After that, the FC should perform some kind of safety functions such as auto landing.
+
+But in this class, we will write source code to check whether failsafe is triggered or not at the end of this chapter.
+
+To recap, this time we set up the transmitter and made binding with the receiver.
+
+we also checked the received i-Bus data through the terminal. Then, in the next video, I will explain in detail what this data means.
+
+Then see you next time. thank you.
 
 ```
 
 ### chapter 4
 - data parsing
 #### video 14
+- iBus message
 
 ```diff
 Until last time, we have completed Chapter 3. GPS data receiving and parsing.
@@ -8069,6 +8735,7 @@ Then see you next time. thank you.
 
 
 #### video 15
+- iBus message
 
 ```diff
 And we made channel configurations for transmitter and checked i-Bus message reception.
