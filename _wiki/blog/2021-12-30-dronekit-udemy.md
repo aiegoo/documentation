@@ -311,12 +311,12 @@ time.sleep(1)
 ```
 ## stm32
 |---
-|FC basic |  
+|FC basic |
 | setup | Matek bec pdb
 |   | GPIO Led
 |   | TIM Buzzer
 |   | UART init
-| Interface | 
+| Interface |
 |   | BNO080 9 axis AB Angle SPI
 |   | ICM 20602 Angle Speed SPI
 |   | LPS22HH Altitude SPI
@@ -335,7 +335,7 @@ time.sleep(1)
 | Frame setting |
 |   | Motor & ESC
 |   | BEC and FC
-|   | Peripherials 
+|   | Peripherials
 | Powerup |
 |   | ESC Oneshot Multishot Dshot
 |   | Oneshot125 PWM TIM-PWM Fr. Resolution
@@ -345,7 +345,7 @@ time.sleep(1)
 | Comm and sensors |
 | Wireless data tx/rx |
 |   | 3DR telemetry Radio config
-|   | tx/rx protocol 
+|   | tx/rx protocol
 |   | roll, pitch, yaw, alt. positioning
 |   | RC data
 |   | Battery ADC
@@ -1248,7 +1248,7 @@ So next time is the beginnig of the drone development. See you next time.
 
 ```
 
-
+### Ch1 Set-up
 #### video 3
 - Powering up
 
@@ -2271,7 +2271,7 @@ See you next time. Thank you.
 
 ```
 
-### chapter 2
+### Ch2 Sensor Interface
 #### video 6
 - Rotation angle SPI
 
@@ -4183,7 +4183,7 @@ From the next time, I will explain about the GPS. See you next time. Thank you.
 ```
 
 
-### chapter 3
+### Ch3 GPS data
 - data rx
 #### video 9
 * u-center install
@@ -7414,7 +7414,7 @@ I will also explain how the data changes when manipulating joysticks on the remo
 
 ```
 
-
+### Ch4 Radio Data
 #### video 14
 - FS IA6b iBus data
 
@@ -8073,7 +8073,7 @@ Then see you next time. thank you.
 
 ```
 
-### chapter 4
+### Ch4 Radio Data
 - data parsing
 #### video 14
 - iBus message
