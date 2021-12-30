@@ -9605,6 +9605,7 @@ That's all for today's. See you next time.
 
 
 #### video 17
+- failsafe setting
 
 ```diff
 
