@@ -125,7 +125,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     *  Another option is to edit `sudo vim /usr/share/X11/xkb/symbols/pc` Check this [sof](https://askubuntu.com/questions/33774/how-do-i-remap-the-caps-lock-and-ctrl-keys)
     * Run this `xev`, escape and ctrl+c to cancel.
     * For the powerline to be used in VScode, check this [dev.to](https://dev.to/mattstratton/making-powerline-work-in-visual-studio-code-terminal-1m7), which suggest you to download the patched powerline font and run `sudo fc-cache -vf /usr/share/fonts/` You will need to unzip the downloaded file into /usr/share/fonts/truetype/. Type fc-list | grep -i "meslo" to know the names of other fonts so you can use other fonts in the terminal.
-{% include note.html content=""}
+{% include note.html content="hmm I forgot" %}
 13. [**Optional**] Make emojis showing up
 
     ```bash
@@ -275,7 +275,7 @@ Most of commands are for both Ubuntu and Pop!\_OS, there are some which are only
     locate \*.desktop # zsh
     ```
 
-43. [__Optional__]Xbox controller bluetooth connection: check [this](https://askubuntu.com/questions/998144/how-can-i-use-my-xbox-one-s-controller-via-bluetooth).
+43. [__Optional__] Xbox controller bluetooth connection: check [this](https://askubuntu.com/questions/998144/how-can-i-use-my-xbox-one-s-controller-via-bluetooth).
 44. Remove icon from dash application
 
     ```bash
