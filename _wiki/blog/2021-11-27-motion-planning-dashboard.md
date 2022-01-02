@@ -787,7 +787,7 @@ visual flight rules (VFR) or IFR, aircraft identification and type, departure po
 [develop](https://github.com/aiegoo/4gremoteoperation.git)
 [documentation](https://github.com/aiegoo/jdlab/tree/java/resource)
 
-{% include note.html content="path planning with unity simulator; Kalman and voronoi filters %}
+{% include note.html content="path planning with unity simulator- Kalman and voronoi filters" %}
 {% include youtubePlayer.html id=page.youtubeID4 %}
 [source-github](https://github.com/aiegoo/_mydrone)
 
