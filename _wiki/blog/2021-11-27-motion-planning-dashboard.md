@@ -21,6 +21,7 @@ driveId: 1BSwuoFq808JSqNYexyAg3BbzOJT4igLT
 youtubeID: UIKgA0SXO80
 youtubeID2: EGpwwGbU4Hk
 youtubeID3: U3yJsG5qfBQ
+youtubeID4: knkagdDBulA
 ---
 * TOC
 {:toc}
@@ -785,7 +786,15 @@ visual flight rules (VFR) or IFR, aircraft identification and type, departure po
 {% include youtubePlayer.html id=page.youtubeID2 %}
 [develop](https://github.com/aiegoo/4gremoteoperation.git)
 [documentation](https://github.com/aiegoo/jdlab/tree/java/resource)
+{% include youtubePlayer.html id=page.youtubeID4 %}
+[source-github](https://github.com/aiegoo/_mydrone)
+{:.p}
+Kalman and voronoi filters
 {% include youtubePlayer.html id=page.youtubeID3 %}
+[source_github](https://github.com/aiegoo/drone-ros)
+{:.p}
+slam
+
 ### JDlab
 ![♧](images/webdev/jdaerial.jpg)
 
