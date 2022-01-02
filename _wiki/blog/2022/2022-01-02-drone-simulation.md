@@ -25,6 +25,7 @@ updated: 2022-01-02 09:38
 
 ## modeling simulation
 
+![image](https://user-images.githubusercontent.com/42961200/147863422-8d326e2d-c2cb-49e2-b207-84eb5e699636.png)
 
 
 {% include taglogic.html %}
