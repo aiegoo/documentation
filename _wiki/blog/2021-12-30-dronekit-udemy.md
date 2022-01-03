@@ -18,56 +18,58 @@ parent: [[Wiki-Setting-Category]]
 date: 2021-12-30T04:37:42 +0900
 updated: 2021-12-30 04:37
 youtubeID: jk-CFKyHqZY
-youtubeID1: JGAF2UraZUM
+youtubeID1: ZI_a-fmDvGw
 youtubeID2: RYrHzdQ3xyc
-youtubeID3: hsjv1SdNLZk
-youtubeID4: BkKuUxFzAQU
-youtubeID5: 
-youtubeID6: 
-youtubeID7: 
-youtubeID8: 
-youtubeID9: 
-youtubeID10: 
-youtubeID11: 
-youtubeID12: 
-youtubeID13: 
-youtubeID14: 
-youtubeID15: 
-youtubeID16: 
+youtubeID3: JGAF2UraZUM
+youtubeID4: 7sIKzSTfPJI
+youtubeID5: hsjv1SdNLZk
+youtubeID6: BkKuUxFzAQU
+youtubeID7: 9HNYw4b8Q_k
+youtubeID8: cJpQZ8u2yTg
+youtubeID9: Fg8h73yZYSA
+youtubeID10: gGCcEVFUai8
+youtubeID11: m1i26ofIxMw
+youtubeID12: 5IIv1p_Vn_0
+youtubeID13: n4dRZZLRl-0
+youtubeID14: _U_wOGcLe3U
+youtubeID15: ylp-ZKjsPiE
+youtubeID16: 3tUdgiBscNU
 youtubeID17: jk-CFKyHqZY
-youtubeID18: 
-youtubeID19: 
-youtubeID20: 
+youtubeID18: qE8dyCeUg64
+youtubeID19: Z3Yn2qZBhqo
+youtubeID20: gDHL4UgI6Lk
 youtubeID21: kxnXwIwKto4
-youtubeID22: 
-youtubeID23: 
-youtubeID25: 
-youtubeID26: 
-youtubeID27: 
-youtubeID28: 
+youtubeID22: iI4gBJo9L5E
+youtubeID23: 7LIrF4-dMBc
+youtubeID24: eDR69qklf1U
+youtubeID25: OsNICMJ4Cpg
+youtubeID26: DJc_jFvng20
+youtubeID27: 677mWDAT8xc
+youtubeID28: BhR-Myl3dYw
 youtubeID29: N4rH9JTPKQA
 youtubeID30: kr1NKgEp_e4
 youtubeID31: IAJoQK8eQLU
-youtubeID32: 
-youtubeID33: NZTzPQugYK4
-youtubeID34: 
-youtubeID35: 
-youtubeID36: 
-youtubeID36: 
+youtubeID32: NZTzPQugYK4
+youtubeID33: ATBbcc3VH6c
+youtubeID34: 3rTQIzFuLnQ
+youtubeID35: 0c95pR3AbOI
+youtubeID36: 7eKJKGGj4rk
+youtubeID37:
 youtubeID38: 1epRvKDbgz0
 youtubeID39: 3WFf4Sx6VtU
 youtubeID40: fkjWanK6R4U
-youtubeID41: 
-youtubeID42: 
-youtubeID43: 
-youtubeID44: xSUX98q_XPc
-youtubeID45: xiDD0eygOPA
+youtubeID41: E0AKCclOYtI
+youtubeID42: 8CksQ-mAfFw
+youtubeID43: xSUX98q_XPc
+youtubeID44: xiDD0eygOPA
+youtubeID45: pIUASjslbC8
 youtubeID46: -k9D8edMgCU
 youtubeID47: pIUASjslbC8
 youtubeID48: B9BYkA5-7LQ
 youtubeID49: iqYLS5YLIJA
 youtubeID50: cfivx15eksQ
-youtubeID51: sOSvy_ieLvE
+youtubeID51: U0myrr1GfEk
+youtubeID52: Y5oSYm4iWP8
 ---
 [youtube-playlist](https://www.youtube.com/playlist?list=PLUaCOzp6U-RryKTJDDzYU3xHhMf_wgeeh)
 * TOC
@@ -2333,7 +2335,7 @@ See you next time. Thank you.
 
 ### Ch2 Sensor Interface
 #### video 6
-- Rotation angle SPI
+- Rotation angle SPI 쿼터니언 회전 각도 계산
 
 ```diff
 In the last chapter, we were driving the LED and the buzzer for debugging, and transmitting the variable values to the PC through UART communication.
