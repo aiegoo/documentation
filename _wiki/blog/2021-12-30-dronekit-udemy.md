@@ -426,6 +426,8 @@ time.sleep(1)
 - hardware list
 - FC 전원 연결 및 디버그 LED 점멸(GPIO)
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 I uploaded a STM32F4 tutorial video course few years ago. and now I'm getting started a new video course again.
 
@@ -921,6 +923,8 @@ stm32cubeide install only
 {% include youtubePlayer.html id=page.youtubeID2 %}
 Generating tone with a buzzer
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 Hello. This is ChrisP from M-HIVE. Last time, I introduced the drone hardware components for this course.
 
@@ -1314,6 +1318,8 @@ So next time is the beginnig of the drone development. See you next time.
 #### video 3
 - Powering up, debug UART
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 Now I'm going to do FC programming in earnest. This is Chapter 1 of Part 1. In this time, I will explain how to set up debug & development environment.
 
@@ -1604,6 +1610,8 @@ See you next time. Thank you.
 
 #### video 4
 - Buzzer setting 쿼터니언 회전각도 계산
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 Last time we used the GPIO to blink the LEDs, and briefly compared the HAL driver and LL driver.
@@ -1939,6 +1947,8 @@ See you next time. Thank you.
 
 #### video 5
 - PC connection UART
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 This is the last time of Chapter 1. This time, we will try to do data communication with PC through UART.
@@ -2336,6 +2346,8 @@ See you next time. Thank you.
 ### Ch2 Sensor Interface
 #### video 6
 - Rotation angle SPI 쿼터니언 회전 각도 계산
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 In the last chapter, we were driving the LED and the buzzer for debugging, and transmitting the variable values to the PC through UART communication.
@@ -3051,6 +3063,8 @@ See you next time. Thank you.
 #### video 7
 - ICM 20602 gyro SPI
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 Now, I will explain the ICM-20602 6-axis sensor that will be covered this time.
 
@@ -3644,6 +3658,8 @@ The next time is the last time of the Chapter 2 sensor interface. See you next t
 
 #### video 8
 - LPS22HH barometer SPI
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 Until last time, we calculated the 3-axis rotation angle and angular rate using the BNO080 and the ICM-20602,
@@ -4249,6 +4265,8 @@ From the next time, I will explain about the GPS. See you next time. Thank you.
 - data rx
 #### video 9
 * u-center install
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 Until last time, we have finished the Chapter 2 sensor interface.
@@ -4877,6 +4895,8 @@ Then see you next time. Thank you.
 #### video 10
 - M8N setup UBX message
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 The MH-FC V2.2 production is completed and being prepared for global sales.
 
@@ -5224,6 +5244,8 @@ Then see you next time. Thank you.
 
 #### video 11
 - UBX message
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 In the last video, you learned how to change the output message to UBX protocol using u-center.
@@ -5689,6 +5711,8 @@ Then see you next time. Thank you.
 
 #### video 12
 - UBX message parsing
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 I 've provided a detailed explanation of the structure of the UBX message frame last time.
@@ -6370,6 +6394,8 @@ It took a long time today because the content was very very important. Thank you
 
 #### video 12
 - ubs data parsing
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 I 've provided a detailed explanation of the structure of the UBX message frame last time.
@@ -7053,6 +7079,8 @@ It took a long time today because the content was very very important. Thank you
 #### video 13
 - writing M8N configuration code
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 Until last time, we wrote source code for receiving POSLLH messages in ubx protocol,
 
@@ -7479,6 +7507,8 @@ I will also explain how the data changes when manipulating joysticks on the remo
 ### Ch4 Radio Data
 #### video 14
 - FS IA6b iBus data
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 Until last time, we have completed Chapter 3. GPS data receiving and parsing.
@@ -8140,6 +8170,8 @@ Then see you next time. thank you.
 #### video 14
 - iBus message
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 Until last time, we have completed Chapter 3. GPS data receiving and parsing.
 
@@ -8799,6 +8831,8 @@ Then see you next time. thank you.
 #### video 15
 - iBus message
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 And we made channel configurations for transmitter and checked i-Bus message reception.
 
@@ -9306,6 +9340,8 @@ This is it. See you next time.
 #### video 16
 - ibus parsing
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 Last time I explained the structure of the i-Bus message, and even calculated and verified the checksum.
 
@@ -9668,6 +9704,8 @@ That's all for today's. See you next time.
 
 #### video 17
 - ch4-4 failsafe setting
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 00:15
@@ -10192,6 +10230,8 @@ fc 에서는 연결이 끊겨 있는지 알 수가 없고요 데이터는 계속
 
 #### video 18
 - iBus failsafe configuration parsing
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 
@@ -10781,6 +10821,8 @@ fc 입장에서는 펜 세이프 가 발동 됐는지를 아느냐 가 정말 �
 ### Ch5 QAV210 frame
 #### video 19
 - hardware assembly
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 00:15
@@ -11610,6 +11652,8 @@ gps 는 연결 하진 않을 거고 그리고 개발하면서 데이터를 확�
 #### video 20
 - ESC protocol PWM One/multi-shot Dshot Proshot
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 00:10
 안녕하세요 m5 크리스피 입니다 지난 시간에 2 챕터 5에서 q&a 브
@@ -12308,6 +12352,8 @@ pid 제어는 1킬로 헤르쯔 할거구요
 #### video 21
 - ch6-2 PWM generation
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 00:14
 몇가지 esc 프로토콜 들에 대해 설명드렸습니다
@@ -12817,6 +12863,8 @@ ccr 1234 순 이란 같아요
 
 #### video 22
 - ESC calib and motor drive
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 00:15
@@ -13390,6 +13438,8 @@ fsi ux 는 지금은 구현 하실 수가 없습니다
 #### video 23
 - Option ESC calib
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 00:13
 지난 시간에 esc 캘리브레이션을 하고
@@ -13556,6 +13606,8 @@ fsi ux 는 지금은 구현 하실 수가 없습니다
 ###  Ch7 add-on functions
 #### video 24
 - Read/write data to AT24C08 EEPROM
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 00:15
@@ -14137,6 +14189,8 @@ is k 씨의 통신이 시퀀스 상 2 워드 어드레스 부분이 8bit 로
 #### video 25
 - EEPROM data
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 0:13
 지난 시간에 할 드라이버를 사용해서 아이 스퀘어 c 통신으로 잎이 롬에
@@ -14485,6 +14539,8 @@ id 5번이 회전 속도 제어의 개인 정보가 될겁니다
 
 
 #### video 26
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 00:13
@@ -14841,6 +14897,8 @@ stm32 부산은 adc 123 이렇게 3개가 있구요
 
 #### video 27
 - ch7-4 bno080 calibration
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 00:13
@@ -15272,6 +15330,8 @@ bn 5080 이랑 icm 2060 이 이렇게 두개가 있는데 이 두 개의
 #### video 28
 -  7-5. ICM-20602 Gyro DC Bias Removal
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 00:13
 지난 시간에 비해 노 080 의 가속도 자이로 자기장 센서 캘리브레이션
@@ -15678,6 +15738,8 @@ esc 캘리브레이션 도 마찬가지구요 그래서 이 두가지는 스위�
 ### Ch8 Radio data
 #### video 29
 - ch8 radio telemetry
+
+{% include youtubePlayer.html id=page.youtubeID %}
 
 ```diff
 00:14
@@ -16707,6 +16769,8 @@ tx 인터럽트 랑 그리고 tc 인터럽트가 언제 발생하는 지를 알 
 
 #### video 30
 -ch8-2 gcs introduction
+
+{% include youtubePlayer.html id=page.youtubeID30 %}
 
 ```diff
 00:15
@@ -17769,6 +17833,8 @@ fc 에서도 최대 50 페루 주로 데이터를 보내 주면 되요
 #### video 31
 - ch8-3 fc gcs comm protocol
 
+{% include youtubePlayer.html id=page.youtubeID31 %}
+
 ```diff
 00:13
 지난 시간에 gcs 설명에 이어서 이번 시간에는 fc 랑 gcs 간에
@@ -18620,6 +18686,8 @@ fc 가 짓으로 개인을 보내 줄 때는 아까 설명드린 송신 메시�
 #### video 32
 - fc data transmission blocking mode 1/2
 
+{% include youtubePlayer.html id=page.youtubeID32 %}
+
 ```diff
 00:14
 지난 시간까지 강의용 제시에서 사용법이 랑 fc 랑 gcs 간 통신
@@ -18895,6 +18963,8 @@ pid 제어 해서 목표로 하는 각도를 보낼 건데
 #### video 33
 - ch8-4 fc data trx nonblocking mode 2/2
 
+{% include youtubePlayer.html id=page.youtubeID33 %}
+
 ```diff
 00:14
 지난 시간까지 강의용 제시에서 사용법이 랑 fc 랑 gcs 간 통신
@@ -19168,6 +19238,8 @@ pid 제어 해서 목표로 하는 각도를 보낼 건데
 
 #### video 34
 - ch8-5 fc data trx gps message
+
+{% include youtubePlayer.html id=page.youtubeID34 %}
 
 ```diff
 00:13
@@ -19652,6 +19724,8 @@ gps 메시지는 100 밀리 쌕 주기 때마다 성신이 되는 겁니다
 #### video 35
 - ch8-6 fc data trx pid gain message
 
+{% include youtubePlayer.html id=page.youtubeID35 %}
+
 ```diff
 00:13
 지난 지금까지 0 액스 10ah rsc 지랑 공매 x11 gps 메시지를
@@ -19894,6 +19968,8 @@ pad 개인이 로드가 잘 됐는지 검사하는 기능도 있어요
 
 #### video 36
 - ch8-7 fc data rx pid gain setting message
+
+{% include youtubePlayer.html id=page.youtubeID36 %}
 
 ```diff
 00:13
@@ -20396,6 +20472,8 @@ pid 개인설정 메시지가 받아 진 거고 그러면 우선 그 개인을 e
 #### video 37
 - ch8-8 fc data rx pid gain request
 
+{% include youtubePlayer.html id=page.youtubeID37 %}
+
 ```diff
 0:13
 지난 시간까지 ccs 에서 무선으로 pid 개인을 설정하고
@@ -20818,6 +20896,8 @@ fc 는 요청받은 2 개인 id 에 따라서 그에 대한 응답을 보내주�
 
 #### video 37
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 
 
@@ -20827,6 +20907,8 @@ fc 는 요청받은 2 개인 id 에 따라서 그에 대한 응답을 보내주�
 
 #### video 38
 - ch9-1 sensor pid load check
+
+{% include youtubePlayer.html id=page.youtubeID38 %}
 
 ```diff
 00:13
@@ -21493,6 +21575,8 @@ icm 2060 이는 0 x 7 o 에 값을 읽어 보면
 #### video 39
 - ch9-2 joystick swa position, throttle check
 
+{% include youtubePlayer.html id=page.youtubeID39 %}
+
 ```diff
 00:13
 이번 챕터 9 에서는 안전을 위한 기능들을 설명 드리고 있구요
@@ -22020,6 +22104,8 @@ esc 캘리브레이션 도 이 펄스 폭 때로 했었습니다
 
 #### video 40
 - ch9-3 low battery alarm and motor stop
+
+{% include youtubePlayer.html id=page.youtubeID40 %}
 
 ```diff
 00:13
@@ -22716,6 +22802,8 @@ i 퍼스 데이터가 수신이 되고 그래서 그 수신된 데이터 로 페
 ### FPV freeRider
 #### video 41
 
+{% include youtubePlayer.html id=page.youtubeID41 %}
+
 ```diff
 
 
@@ -22723,6 +22811,8 @@ i 퍼스 데이터가 수신이 되고 그래서 그 수신된 데이터 로 페
 
 ### Flight test
 #### video 42
+
+{% include youtubePlayer.html id=page.youtubeID42 %}
 
 ```diff
 
@@ -22732,6 +22822,8 @@ i 퍼스 데이터가 수신이 되고 그래서 그 수신된 데이터 로 페
 ### Ch10 PID control
 #### video 43
 - ch10-1 1khz timer generation
+
+{% include youtubePlayer.html id=page.youtubeID43 %}
 
 ```diff
 00:13
@@ -23485,6 +23577,8 @@ pwm 펄스 폭을 조절함으로써 비행 방향을 결정할 수 있게 됩�
 
 #### video 44
 - - Single loop pid control 1/2
+
+{% include youtubePlayer.html id=page.youtubeID444 %}
 
 ```diff
 00:14
@@ -24847,6 +24941,8 @@ pid 제어는 개인이 정말 엄청 중요하구요
 #### video 45
 - Single loop pid control 2/2
 
+{% include youtubePlayer.html id=page.youtubeID45 %}
+
 ```diff
 00:14
 지난 시간에 싱글 pid 로 롤 피치 각도 제어 하는 코드를 구현을
@@ -26178,6 +26274,8 @@ p 제어가 각 속도를 제어하는 거라서
 #### video 46
 - ch 10 double loop pid control 1/2
 
+{% include youtubePlayer.html id=page.youtubeID46 %}
+
 ```diff
 00:14
 지난 시간에 싱글 pid 로 롤 피치 각도 제어 하는 코드를 구현을
@@ -27508,6 +27606,8 @@ p 제어가 각 속도를 제어하는 거라서
 
 #### video 47
 - ch10-3 cascade dual loop pid control
+
+{% include youtubePlayer.html id=page.youtubeID47 %}
 
 ```diff
 00:14
@@ -28841,6 +28941,8 @@ p 제어가 각 속도를 제어하는 거라서
 #### video 48
 - ch11 Roll and pitch angle cascade dual loop PID control
 
+{% include youtubePlayer.html id=page.youtubeID %}
+
 ```diff
 00:13
 지난 시간까지 pid 제어 이론에 대해서 설명을 드렸구요
@@ -29561,8 +29663,11 @@ stepi 컨트롤 버튼 줄이면 시험 작품이다
 
 ```
 
+
 ### Ch12 Heading control
 #### video 49
+
+{% include youtubePlayer.html id=page.youtubeID49 %}
 
 ```diff
 
@@ -29570,6 +29675,8 @@ stepi 컨트롤 버튼 줄이면 시험 작품이다
 ```
 
 #### video 50
+
+{% include youtubePlayer.html id=page.youtubeID50 %}
 
 ```diff
 
@@ -29579,12 +29686,16 @@ stepi 컨트롤 버튼 줄이면 시험 작품이다
 ### Review
 #### video 51
 
+{% include youtubePlayer.html id=page.youtubeID51 %}
+
 ```diff
 
 
 ```
 
 #### video 52
+
+{% include youtubePlayer.html id=page.youtubeID52 %}
 
 ```diff
 
