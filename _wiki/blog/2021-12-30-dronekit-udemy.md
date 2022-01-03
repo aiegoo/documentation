@@ -18,6 +18,56 @@ parent: [[Wiki-Setting-Category]]
 date: 2021-12-30T04:37:42 +0900
 updated: 2021-12-30 04:37
 youtubeID: jk-CFKyHqZY
+youtubeID1: JGAF2UraZUM
+youtubeID2: RYrHzdQ3xyc
+youtubeID3: 
+youtubeID4: 
+youtubeID5: 
+youtubeID6: 
+youtubeID7: 
+youtubeID8: 
+youtubeID9: 
+youtubeID10: 
+youtubeID11: 
+youtubeID12: 
+youtubeID13: 
+youtubeID14: 
+youtubeID15: 
+youtubeID16: 
+youtubeID17: jk-CFKyHqZY
+youtubeID18: 
+youtubeID19: 
+youtubeID20: 
+youtubeID21: kxnXwIwKto4
+youtubeID22: 
+youtubeID23: 
+youtubeID25: 
+youtubeID26: 
+youtubeID27: 
+youtubeID28: 
+youtubeID29: N4rH9JTPKQA
+youtubeID30: kr1NKgEp_e4
+youtubeID31: IAJoQK8eQLU
+youtubeID32: 
+youtubeID33: NZTzPQugYK4
+youtubeID34: 
+youtubeID35: 
+youtubeID36: 
+youtubeID36: 
+youtubeID38: 1epRvKDbgz0
+youtubeID39: 3WFf4Sx6VtU
+youtubeID40: fkjWanK6R4U
+youtubeID41: 
+youtubeID42: 
+youtubeID43: 
+youtubeID44: xSUX98q_XPc
+youtubeID45: xiDD0eygOPA
+youtubeID46: -k9D8edMgCU
+youtubeID47: pIUASjslbC8
+youtubeID48: B9BYkA5-7LQ
+youtubeID49: iqYLS5YLIJA
+youtubeID50: cfivx15eksQ
+youtubeID51: sOSvy_ieLvE
 ---
 * TOC
 {:toc}
@@ -860,6 +910,9 @@ Then I'll explain it next time. Thank you.
 
 #### video 2
 - STM32CubeIDE install
+
+{% include youtubePlayer.html id=page.youtubeID51 %}
+stm32cubeide install only
 
 ```diff
 Hello. This is ChrisP from M-HIVE. Last time, I introduced the drone hardware components for this course.
