@@ -20,8 +20,8 @@ updated: 2021-12-30 04:37
 youtubeID: jk-CFKyHqZY
 youtubeID1: JGAF2UraZUM
 youtubeID2: RYrHzdQ3xyc
-youtubeID3: 
-youtubeID4: 
+youtubeID3: hsjv1SdNLZk
+youtubeID4: BkKuUxFzAQU
 youtubeID5: 
 youtubeID6: 
 youtubeID7: 
@@ -69,6 +69,7 @@ youtubeID49: iqYLS5YLIJA
 youtubeID50: cfivx15eksQ
 youtubeID51: sOSvy_ieLvE
 ---
+[youtube-playlist](https://www.youtube.com/playlist?list=PLUaCOzp6U-RryKTJDDzYU3xHhMf_wgeeh)
 * TOC
 {:toc}
 
@@ -421,6 +422,7 @@ time.sleep(1)
 
 #### video 1
 - hardware list
+- FC 전원 연결 및 디버그 LED 점멸(GPIO)
 
 ```diff
 I uploaded a STM32F4 tutorial video course few years ago. and now I'm getting started a new video course again.
@@ -914,6 +916,9 @@ Then I'll explain it next time. Thank you.
 {% include youtubePlayer.html id=page.youtubeID51 %}
 stm32cubeide install only
 
+{% include youtubePlayer.html id=page.youtubeID2 %}
+Generating tone with a buzzer
+
 ```diff
 Hello. This is ChrisP from M-HIVE. Last time, I introduced the drone hardware components for this course.
 
@@ -1305,7 +1310,7 @@ So next time is the beginnig of the drone development. See you next time.
 
 ### Ch1 Set-up
 #### video 3
-- Powering up
+- Powering up, debug UART
 
 ```diff
 Now I'm going to do FC programming in earnest. This is Chapter 1 of Part 1. In this time, I will explain how to set up debug & development environment.
@@ -1596,7 +1601,7 @@ See you next time. Thank you.
 
 
 #### video 4
-- Buzzer setting
+- Buzzer setting 쿼터니언 회전각도 계산
 
 ```diff
 Last time we used the GPIO to blink the LEDs, and briefly compared the HAL driver and LL driver.
