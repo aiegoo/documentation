@@ -426,7 +426,7 @@ time.sleep(1)
 - hardware list
 - FC 전원 연결 및 디버그 LED 점멸(GPIO)
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID1 %}
 
 ```diff
 I uploaded a STM32F4 tutorial video course few years ago. and now I'm getting started a new video course again.
@@ -923,8 +923,6 @@ stm32cubeide install only
 {% include youtubePlayer.html id=page.youtubeID2 %}
 Generating tone with a buzzer
 
-{% include youtubePlayer.html id=page.youtubeID %}
-
 ```diff
 Hello. This is ChrisP from M-HIVE. Last time, I introduced the drone hardware components for this course.
 
@@ -1318,7 +1316,7 @@ So next time is the beginnig of the drone development. See you next time.
 #### video 3
 - Powering up, debug UART
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID3 %}
 
 ```diff
 Now I'm going to do FC programming in earnest. This is Chapter 1 of Part 1. In this time, I will explain how to set up debug & development environment.
@@ -1611,7 +1609,7 @@ See you next time. Thank you.
 #### video 4
 - Buzzer setting 쿼터니언 회전각도 계산
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID4 %}
 
 ```diff
 Last time we used the GPIO to blink the LEDs, and briefly compared the HAL driver and LL driver.
@@ -1948,7 +1946,7 @@ See you next time. Thank you.
 #### video 5
 - PC connection UART
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID5 %}
 
 ```diff
 This is the last time of Chapter 1. This time, we will try to do data communication with PC through UART.
@@ -2347,7 +2345,7 @@ See you next time. Thank you.
 #### video 6
 - Rotation angle SPI 쿼터니언 회전 각도 계산
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID6 %}
 
 ```diff
 In the last chapter, we were driving the LED and the buzzer for debugging, and transmitting the variable values to the PC through UART communication.
@@ -3063,7 +3061,7 @@ See you next time. Thank you.
 #### video 7
 - ICM 20602 gyro SPI
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID7 %}
 
 ```diff
 Now, I will explain the ICM-20602 6-axis sensor that will be covered this time.
@@ -3659,7 +3657,7 @@ The next time is the last time of the Chapter 2 sensor interface. See you next t
 #### video 8
 - LPS22HH barometer SPI
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID8 %}
 
 ```diff
 Until last time, we calculated the 3-axis rotation angle and angular rate using the BNO080 and the ICM-20602,
@@ -4266,7 +4264,7 @@ From the next time, I will explain about the GPS. See you next time. Thank you.
 #### video 9
 * u-center install
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID9 %}
 
 ```diff
 Until last time, we have finished the Chapter 2 sensor interface.
@@ -4895,7 +4893,7 @@ Then see you next time. Thank you.
 #### video 10
 - M8N setup UBX message
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID10 %}
 
 ```diff
 The MH-FC V2.2 production is completed and being prepared for global sales.
@@ -5245,7 +5243,7 @@ Then see you next time. Thank you.
 #### video 11
 - UBX message
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID11 %}
 
 ```diff
 In the last video, you learned how to change the output message to UBX protocol using u-center.
@@ -5712,7 +5710,7 @@ Then see you next time. Thank you.
 #### video 12
 - UBX message parsing
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID12 %}
 
 ```diff
 I 've provided a detailed explanation of the structure of the UBX message frame last time.
@@ -7079,7 +7077,7 @@ It took a long time today because the content was very very important. Thank you
 #### video 13
 - writing M8N configuration code
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID13 %}
 
 ```diff
 Until last time, we wrote source code for receiving POSLLH messages in ubx protocol,
@@ -7508,7 +7506,7 @@ I will also explain how the data changes when manipulating joysticks on the remo
 #### video 14
 - FS IA6b iBus data
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID14 %}
 
 ```diff
 Until last time, we have completed Chapter 3. GPS data receiving and parsing.
@@ -8831,7 +8829,7 @@ Then see you next time. thank you.
 #### video 15
 - iBus message
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID15 %}
 
 ```diff
 And we made channel configurations for transmitter and checked i-Bus message reception.
@@ -9340,7 +9338,7 @@ This is it. See you next time.
 #### video 16
 - ibus parsing
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID16 %}
 
 ```diff
 Last time I explained the structure of the i-Bus message, and even calculated and verified the checksum.
@@ -9705,7 +9703,7 @@ That's all for today's. See you next time.
 #### video 17
 - ch4-4 failsafe setting
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID17 %}
 
 ```diff
 00:15
@@ -10231,7 +10229,7 @@ fc 에서는 연결이 끊겨 있는지 알 수가 없고요 데이터는 계속
 #### video 18
 - iBus failsafe configuration parsing
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID18 %}
 
 ```diff
 
@@ -10822,7 +10820,7 @@ fc 입장에서는 펜 세이프 가 발동 됐는지를 아느냐 가 정말 �
 #### video 19
 - hardware assembly
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID19 %}
 
 ```diff
 00:15
@@ -11652,7 +11650,7 @@ gps 는 연결 하진 않을 거고 그리고 개발하면서 데이터를 확�
 #### video 20
 - ESC protocol PWM One/multi-shot Dshot Proshot
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID20 %}
 
 ```diff
 00:10
@@ -12352,7 +12350,7 @@ pid 제어는 1킬로 헤르쯔 할거구요
 #### video 21
 - ch6-2 PWM generation
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID21 %}
 
 ```diff
 00:14
@@ -12864,7 +12862,7 @@ ccr 1234 순 이란 같아요
 #### video 22
 - ESC calib and motor drive
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID22 %}
 
 ```diff
 00:15
@@ -13438,7 +13436,7 @@ fsi ux 는 지금은 구현 하실 수가 없습니다
 #### video 23
 - Option ESC calib
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID23 %}
 
 ```diff
 00:13
@@ -13607,7 +13605,7 @@ fsi ux 는 지금은 구현 하실 수가 없습니다
 #### video 24
 - Read/write data to AT24C08 EEPROM
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID24 %}
 
 ```diff
 00:15
@@ -14189,7 +14187,7 @@ is k 씨의 통신이 시퀀스 상 2 워드 어드레스 부분이 8bit 로
 #### video 25
 - EEPROM data
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID25 %}
 
 ```diff
 0:13
@@ -14540,7 +14538,7 @@ id 5번이 회전 속도 제어의 개인 정보가 될겁니다
 
 #### video 26
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID26 %}
 
 ```diff
 00:13
@@ -14898,7 +14896,7 @@ stm32 부산은 adc 123 이렇게 3개가 있구요
 #### video 27
 - ch7-4 bno080 calibration
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID27 %}
 
 ```diff
 00:13
@@ -15330,7 +15328,7 @@ bn 5080 이랑 icm 2060 이 이렇게 두개가 있는데 이 두 개의
 #### video 28
 -  7-5. ICM-20602 Gyro DC Bias Removal
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID28 %}
 
 ```diff
 00:13
@@ -15739,7 +15737,7 @@ esc 캘리브레이션 도 마찬가지구요 그래서 이 두가지는 스위�
 #### video 29
 - ch8 radio telemetry
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID29 %}
 
 ```diff
 00:14
