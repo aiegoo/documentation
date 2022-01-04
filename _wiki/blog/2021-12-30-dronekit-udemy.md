@@ -23574,7 +23574,7 @@ pwm 펄스 폭을 조절함으로써 비행 방향을 결정할 수 있게 됩�
 ```
 
 #### video 44
-- - Single loop pid control 1/2
+- ch10-2 Single loop pid control 1/2
 
 {% include youtubePlayer.html id=page.youtubeID44 %}
 
@@ -24937,7 +24937,41 @@ pid 제어는 개인이 정말 엄청 중요하구요
 ```
 
 #### video 45
-- Single loop pid control 2/2
+- Ch10-2 Single loop pid control 2/2
+
+```
+- 피치축 싱글 PID 제어 지그 실험 및 비행테스트
+
+- 싱글 PID 제어 코드 작성
+
+     a. 쓰로틀 키에 따른 목표 각도 계산
+
+     b. 목표 각도와 현재 각도의 차이로 오차 계산
+
+     c. 각도 오차에 따른 P제어 코드 작성
+
+     d. 각도 오차 누적으로 I제어 코드 작성
+
+     e. D제어 코드 작성 - 각도의 변화율 직접 계산 방법, 자이로 각속도 사용 방법
+
+- 쓰로틀 키가 약간 위로 올라가있을 때만 모터 동작하는 코드 작성 (안전장치)
+
+- I제어 오차 누적값을 0으로 초기화 해줘야 하는 이유 및 코드 작성
+
+- 싱글 PID제어 테스트
+
+     a. P제어만 사용했을 때
+
+     b. I제어만 사용했을 때
+
+     c. D제어만 사용했을 때
+
+     d. PD제어 사용했을 때
+
+     e. PID제어 전부 사용했을 때
+
+- 싱글 PID제어의 한계점 및 회전익에서 싱글 PID제어만으로 비행이 어려운 이유
+```
 
 {% include youtubePlayer.html id=page.youtubeID45 %}
 
