@@ -64,7 +64,7 @@ youtubeID43: xSUX98q_XPc
 youtubeID44: xiDD0eygOPA
 youtubeID45: pIUASjslbC8
 youtubeID46: -k9D8edMgCU
-youtubeID47: pIUASjslbC8
+youtubeID47: xYmf3ANW8W4
 youtubeID48: B9BYkA5-7LQ
 youtubeID49: iqYLS5YLIJA
 youtubeID50: cfivx15eksQ
@@ -27606,7 +27606,7 @@ p 제어가 각 속도를 제어하는 거라서
 - ch10-3 cascade dual loop pid control
 
 {% include youtubePlayer.html id=page.youtubeID47 %}
-
+Youtube video is missing; 
 ```diff
 00:14
 지난 시간에 싱글 pid 로 롤 피치 각도 제어 하는 코드를 구현을
