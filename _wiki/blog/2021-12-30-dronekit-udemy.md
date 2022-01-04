@@ -1314,7 +1314,30 @@ So next time is the beginnig of the drone development. See you next time.
 
 ### Ch1 Set-up
 #### video 3
+
+```
 - Powering up, debug UART
+
+- MATEK PDB XT-60 BEC와 FC 전원 연결하는 방법
+
+- ST-LINK/V2와 FC 선 연결하는 방법
+
+- STM32CubeIDE로 프로젝트 생성
+
+- 클럭 설정
+
+- GPIO 설정 및 LED 점멸 소스코드 작성 (HAL, LL 비교)
+
+에 대해 소개합니다.
+
+
+※ LL 로만 하시는 분들은 토글 함수 사용 시
+
+LL_GPIO_TogglePin(GPIOC, ​LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2);
+
+이런식으로 두번째 매개변수 핀 이름 앞에 LL_ 를 붙여주셔야 합니다!
+
+```
 
 {% include youtubePlayer.html id=page.youtubeID3 %}
 
@@ -1608,6 +1631,26 @@ See you next time. Thank you.
 
 #### video 4
 - Buzzer setting 쿼터니언 회전각도 계산
+
+```
+- 패시브타입 부저 설명
+
+- 부저 회로 설명
+
+- PWM의 주기(주파수)와 펄스 폭 설정하는 방법(PSC, ARR, CCR)
+
+- CubeIDE 프로젝트 폴더별 버전 관리 방법
+
+- CubeMX TIM3 설정 (LL드라이버)
+
+- TIM를 Enable 시키는 방법 (LL_TIM_EnableCounter() 함수)
+
+- PWM을 Enable 시키는 방법 (LL_TIM_CC_EnableChannel() 함수)
+
+- PWM의 주기(주파수) 실시간 변경하는 방법 (PSC 변경)
+
+- PWM을 Disable 시키는 방법 (LL_TIM_CC_DisableChannel() 함수)
+```
 
 {% include youtubePlayer.html id=page.youtubeID4 %}
 
