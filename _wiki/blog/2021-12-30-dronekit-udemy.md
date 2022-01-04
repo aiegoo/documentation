@@ -2411,6 +2411,47 @@ See you next time. Thank you.
 #### video 6
 - Rotation angle SPI 쿼터니언 회전 각도 계산
 
+```
+- 드론의 비행 제어 시스템에서 중요하게 고려해야 할 것들
+
+- 드론의 비행 제어 과정 설명
+
+- BNO080 9축 센서 Overview
+
+- BNO080 분해능
+
+- BNO080 출력 지연 시간
+
+- BNO080 센서 출력 주기
+
+- BNO080 인터페이스 (SPI통신)
+
+- BNO080 회로 및 핀 설명
+
+- BNO080 SPI 파라미터 설명
+
+​
+
+- CubeMX SPI2 설정
+
+- BNO080 센서 오픈소스 라이브러리 다운로드 방법 및 설명 (STM32F4 SPI LL드라이버용)
+
+- 쿼터니언 오픈소스 라이브러리 다운로드 및 설명
+
+- BNO080 초기화 소스코드 작성 (오픈소스 사용)
+
+- BNO080 Rotation Vector 데이터 출력 주기 설정 (오픈소스 사용)
+
+- BNO080 Rotation Vector 데이터 수신 (오픈소스 사용)
+
+- 쿼터니언 알고리즘 사용하여 3축 회전각 계산 (오픈소스 사용)
+
+- 3축 회전 각도 출력 (텍스트, 그래프, printf 함수 사용)
+
+- BNO080 센서 출력 주기 확인 - 400Hz
+```
+
+
 {% include youtubePlayer.html id=page.youtubeID6 %}
 
 ```diff
