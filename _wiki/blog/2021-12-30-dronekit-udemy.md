@@ -1989,6 +1989,29 @@ See you next time. Thank you.
 #### video 5
 - PC connection UART
 
+```
+- FC 디버그 UART 포트 설명
+
+- USB to UART 모듈과 선 연결 방법
+
+- CubeMX USART6 설정 (LL드라이버, 수신 인터럽트 사용)
+
+- UART로 데이터 송신 (LL_USART_TransmitData8() 함수)
+
+- UART 수신 인터럽트 활성화 (LL_USART_EnableIT_RXNE() 함수)
+
+- UART로 데이터 수신 (인터럽트 방식, LL_USART_ReceiveData8() 함수)
+
+- PC로부터 수신된 데이터 다시 PC로 송신 (에코 프로그램)
+
+- PC로부터 수신된 데이터로 LED토글 및 부저 On/Off
+
+- printf 사용 방법 (int _write(int file, char* p, int len) 함수 정의)
+
+- printf "%f" 형식지정문자로 실수형태 출력하는 방법
+```
+
+
 {% include youtubePlayer.html id=page.youtubeID5 %}
 
 ```diff
