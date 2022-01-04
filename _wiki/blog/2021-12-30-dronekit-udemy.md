@@ -10818,7 +10818,7 @@ fc 입장에서는 펜 세이프 가 발동 됐는지를 아느냐 가 정말 �
 
 ### Ch5 QAV210 frame
 #### video 19
-- hardware assembly
+- hardware assembly QAV frame
 
 {% include youtubePlayer.html id=page.youtubeID19 %}
 
@@ -11360,7 +11360,7 @@ esc 랑 b 씨도 납땜 에서 연결 하고 그리고 프레임 fc 를 고정�
 17:14
 그래 다 됐으면 이렇게 b 씨가 프레임에 고정 이 됐을 겁니다
 17:19
-이제 이 b 씨는 이 상태로 고정이 될 거구요
+이제 이 bec 씨는 이 상태로 고정이 될 거구요
 17:22
 여기 asc 의 전원을 납땜 해서 연결을 해줘야 되는데 esc 선이 또
 17:27
@@ -27606,7 +27606,72 @@ p 제어가 각 속도를 제어하는 거라서
 - ch10-3 cascade dual loop pid control
 
 {% include youtubePlayer.html id=page.youtubeID47 %}
-Youtube video is missing; 
+Youtube video is missing and the contents include;
+
+```
+- 피치축 더블 PID(cascade pid control) 제어 지그 실험 및 비행테스트
+
+- 왜 각속도 제어를 해야하는가?
+
+     a. 각도 제어 P제어의 문제점
+
+     b. 각도 제어 D제어의 문제점
+
+- 각속도 제어에서 P, I, D 제어의 역할
+
+- 각속도 PID제어의 구조
+
+- 각속도 싱글 PID 제어 코드 작성
+
+     a. 쓰로틀 키에 따른 목표 각속도 계산
+
+     b. 목표 각속도와 현재 각속도(ICM-20602 자이로)의 차이로 오차 계산
+
+     c. 각속도 오차에 따른 P제어 코드 작성
+
+     d. 각속도 오차 누적으로 I제어 코드 작성
+
+     e. D제어 코드 작성 - 자이로를 사용하여 각속도의 변화율(각가속도) 계산
+
+- 각속도 PID 제어 테스트
+
+     a. P제어만 사용했을때
+
+     b. PD제어 사용했을때
+
+- 각속도 제어의 장점
+
+- 각속도 제어의 한계
+
+- 왜 각도 제어와 각속도 제어를 같이 사용해야 하는가?
+
+- 각도 오차에 따른 각속도 제어 방법 및 예
+
+​
+
+※ 아래 내용
+
+- 각도 오차에 따른 각속도 제어 PID 제어 코드 작성
+
+- 각도 오차에 따른 각속도 싱글 PID 제어 테스트
+
+     a. PD제어 사용했을 때
+
+- 더블 PID (Cascade PID) 제어 개념 및 구조
+
+- 더블 PID 제어 코드 작성
+
+- 더블 PID 제어 테스트
+
+     a. 모든 더블 PID 제어 사용했을때
+
+- Cascade control의 정의 (wikipedia)
+
+     a. 외부 PID 루프의 역할
+
+     b. 내부 PID 루프의 역할
+```
+
 ```diff
 00:14
 지난 시간에 싱글 pid 로 롤 피치 각도 제어 하는 코드를 구현을
