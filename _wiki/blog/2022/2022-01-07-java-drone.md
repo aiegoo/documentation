@@ -24,8 +24,106 @@ updated: 2022-01-07 08:52
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## 4gremoteoperation
+### setup Libraries
+
+- Raspi lib to install
+
+```shell
+sudo apt update
+sudo apt install libhdf5-dev
+sudo apt install libhdf5-serial-dev
+sudo apt install libatlas-base-dev
+sudo apt install libjasper-dev
+sudo apt install libqtgui4
+sudo apt install libqt4-test
+sudo apt install python3-opencv
+```
+
+### SITL simulator
+
+
+- Get the project
+  git clone --recursive https://github.com/ArduPilot/ardupilot.git
+  cd ardupilot
+
+- Install required packages
+  Tools/environment_install/install-prereqs-ubuntu.sh -y
+  . ~/.profile
+
+- Cofigure the board and build vehicle type
+  ./waf configure --board fmuv3
+  ./waf copter
+
+- Go to ArduCopter directory and run simulator
+  cd ArduCopter
+  sim_vehicle.py --console --map --out 192.168.0.101:14553
+
+More detailed information from:
+    https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux
+
+
+
+
+
+When you decide to deploy finished Java application - build it, deploy it on a VPS [or any machine with public IP]
+
+and then run it with this command in terminal:
+
+java -Djava.security.egd=file:/dev/urandom -jar drone-control-station-0.0.1.jar &
+
+Wait until it starts, and then you can close the terminal and it will continue to run in the background
+
+
+```shell
+sudo pip3 install netifaces psutil google-api-python-client \
+                  dronekit wiringpi opencv-python
+```
 
 ## Deployment
+
+When you decide to deploy finished Java application - build it, deploy it on a VPS [or any machine with public IP
+
+and then run it with this command in terminal:
+
+```
+java -Djava.security.egd=file:/dev/urandom -jar drone-control-station-0.0.1.jar &
+```
+
+Wait until it starts, and then you can close the terminal and it will continue to run in the background
+
+### python app as a linux service
+
+Create droneapp.service file with this content:
+
+```
+[Unit]
+Description=DroneApp Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pi/{app directory name}/app.py --d /home/pi/{app directory name}/
+
+[Install]
+WantedBy=multi-user.target
+
+```
+{app directory name} should be replaced with the name of the folder that contains app.py main application file
+
+
+Then nn RaspPi move droneapp.service to /lib/systemd/system/
+
+Then Run
+```
+sudo systemctl daemon-reload
+
+sudo systemctl enable droneapp.service
+```
+
+If you want to stop it from autoloading on Raspi startup, Run:
+```
+sudo systemctl disable droneapp.service
+```
 
 ### Configuration
 
