@@ -65,6 +65,9 @@ Pin | Signal | Volt
 The TX and RX on the flight controller must be connected to the RX and TX on the FLARM, respectively.
 :::
 
+{% include note.html content="WHAT IS FLARM? FLARM is the traffic awareness and collision avoidance technology for General Aviation, light aircraft, and UAVs. With FLARM installed, you are alerted of both traffic and imminent collisions with other aircraft, so you can take action before it is too late. Over 50,000 manned aircraft and many UAVs are already equipped with FLARM and the number is rapidly increasing. FLARM systems are available from several manufacturers for powered airplanes, helicopters, gliders, and UAVs." %}
+[official](https://flarm.com/)
+
 ## Software Configuration
 
 ### Port Configuration
