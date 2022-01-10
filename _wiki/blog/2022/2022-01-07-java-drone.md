@@ -179,6 +179,111 @@ Config SSL
 sudo certbot --nginx
 ```
 
+## from 4gremoteoperation source git
+
+### Configuration
+
+Update `cloudapp/src/main/resources/application.yaml`: Application port, logging...
+Update port in `cloudapp/config-templates/nginx-site.conf` if needed
+
+### Build jar
+
+Change the current directory to `./soure/cloudapp`
+
+```shell
+./gradlew clean
+./gradlew bootJar
+```
+
+### Deploy
+
+```shell
+sudo mkdir /opt/cloudapp
+
+sudo cp ./build/libs/cloudapp*.jar /opt/cloudapp/app.jar
+sudo cp ./config-templates/start.sh /opt/cloudapp/start.sh
+
+sudo cp ./config-templates/cloudapp.service /etc/systemd/system/cloudapp.service
+
+sudo systemctl start cloudapp
+```
+
+If you want to start the app on boot
+
+```shell
+sudo systemctl enable cloudapp
+```
+
+### Config NGINX
+
+```shell
+sudo cp ./config-templates/nginx-site.conf /etc/nginx/sites-available/<example.com>
+
+# update your domain name
+sudo nano /etc/nginx/sites-available/<example.com>
+sudo ln -s /etc/nginx/sites-available/<example.com> /etc/nginx/sites-enabled/<example.com>
+
+sudo systemctl restart nginx
+```
+
+Config SSL
+
+[Certbot](https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal)
+
+```shell
+# Create SSL certificate for your domain¶
+sudo certbot --nginx
+```
+
+#### Disable and Enable a Website on the NGINX Web Server
+By default, NGINX installed on Ubuntu and Debian systems use the sites-available and sites-enabled directories to control website access. This approach is often used even on other Linux systems. If the Linode is already using these two directories, follow the instructions in the Use the Sites-Enabled Directory subsection. Otherwise, skip to the Use the Virtual Host File on the NGINX Web Server subsection.
+
+Use the Sites-Enabled Directory
+Ubuntu systems have a /etc/nginx/sites-available directory, which contains virtual host (vhost) files for each domain hosted on the Linode. For instance, the domain for example.com typically has a corresponding virtual host file named /etc/nginx/sites-available/www.example.com.conf. The filename might not include the .conf extension in all cases.
+
+To enable a website, you must create a symbolic link inside the /etc/nginx/sites-enabled directory pointing to the actual vhost file in /etc/nginx/sites-available. The nginx.conf file reviews the contents of the sites-enabled directory and determines which virtual host files to include. These domains are made available to potential viewers. Adding a symbolic link leading to a virtual host file enables the associated site while removing the symbolic link disables it.
+
+```shell
+...
+include /etc/nginx/sites-enabled/*;
+...
+
+```
+
+To disable and enable a website, follow these directions.
+To find the name of the domain, list all of the sites hosted on the Linode using the following command:
+
+To find the name of the domain, list all of the sites hosted on the Linode using the following command:
+```shell
+ ls /etc/nginx/sites-available
+
+```
+
+To disable a site, remove the symbolic link from the /etc/nginx/sites-enabled directory.
+```shell
+
+ sudo rm /etc/nginx/sites-enabled/example.com.conf
+```
+
+Reload NGINX to apply the change.
+```shell
+sudo systemctl reload nginx
+
+```
+Use a browser to confirm the site no longer resolves. You should see an error page when you access the site.
+
+To enable the site again, re-create the symbolic link to the virtual host file.
+```shell
+sudo ln -s /etc/nginx/sites-available/example.com.conf /etc/nginx/sites-enabled/example.com.conf
+
+```
+
+Reload NGINX to apply the change.
+
+```shell
+sudo systemctl reload nginx
+
+```
 
 {% include taglogic.html %}
 
