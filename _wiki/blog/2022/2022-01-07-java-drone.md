@@ -236,7 +236,7 @@ sudo certbot --nginx
 ```
 
 #### Disable and Enable a Website on the NGINX Web Server
-By default, NGINX installed on Ubuntu and Debian systems use the sites-available and sites-enabled directories to control website access. This approach is often used even on other Linux systems. If the Linode is already using these two directories, follow the instructions in the Use the Sites-Enabled Directory subsection. Otherwise, skip to the Use the Virtual Host File on the NGINX Web Server subsection.
+By default, NGINX installed on Ubuntu and Debian systems use the sites-available and sites-enabled directories to control website access. This approach is often used even on other Linux systems. If the Linode is already using these two directories, follow the instructions in the Use the Sites-Enabled Directory subsection.
 
 Use the Sites-Enabled Directory
 Ubuntu systems have a /etc/nginx/sites-available directory, which contains virtual host (vhost) files for each domain hosted on the Linode. For instance, the domain for example.com typically has a corresponding virtual host file named /etc/nginx/sites-available/www.example.com.conf. The filename might not include the .conf extension in all cases.
