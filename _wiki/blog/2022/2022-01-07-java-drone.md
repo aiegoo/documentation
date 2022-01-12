@@ -3,7 +3,7 @@ layout: post
 title: "java drone app with mavlink mavproxy and gcs"
 name: "java-drone"
 tags: [drones]
-tagName: drones
+tagName: java
 permalink: 2022-01-07-java-drone.html
 sidebar: other_sidebar
 folder: blog
