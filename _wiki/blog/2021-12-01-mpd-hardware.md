@@ -29,6 +29,8 @@ updated: 2021-12-01 09:24
 - Endpoint raspi servers for drone sensors
 - Cloud computing resources
 
+![architect](images/mpd/px4_jmavsim_gazebo.png)
+
 **myyonah**
 This following lists the key hardware required to operate myyonah's ROS Packages
 
