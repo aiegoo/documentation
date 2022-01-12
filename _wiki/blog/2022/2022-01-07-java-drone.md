@@ -24,6 +24,9 @@ updated: 2022-01-07 08:52
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## 4gremoteoperation
+
+[javaAll](https://github.com/aiegoo/uas-reference/blob/master/web-dev/JavaAll.pdf)
+
 ### setup Libraries
 
 - Raspi lib to install
