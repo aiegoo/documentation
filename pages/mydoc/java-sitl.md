@@ -3,7 +3,7 @@ layout: post
 title: "udemy 4g drone"
 name: "java-sitl"
 tags: [drones]
-tagName: drones
+tagName: drone
 permalink: java-sitl.html
 sidebar: other_sidebar
 folder: mydoc

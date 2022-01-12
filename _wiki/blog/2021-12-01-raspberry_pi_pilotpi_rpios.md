@@ -3,7 +3,7 @@ layout: post
 title: "post configuration for mpd-hardware setup"
 name: "raspberry_pi_pilotpi_rpios"
 tags: [drones]
-tagName: drones
+tagName: drone
 permalink: 2021-12-01-raspberry_pi_pilotpi_rpios.html
 sidebar: other_sidebar
 folder: blog

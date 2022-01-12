@@ -3,7 +3,7 @@ layout: post
 title: "ardupilot build instruction a to z"
 name: "ardupilot-build"
 tags: [drones]
-tagName: drones
+tagName: drone
 permalink: 2022-01-07-ardupilot-build.html
 sidebar: other_sidebar
 folder: blog

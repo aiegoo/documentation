@@ -3,7 +3,7 @@ layout: post
 title: "dronekit application based on pymavlink"
 name: "dronekit-udemy"
 tags: [drones]
-tagName: drones
+tagName: drone
 permalink: 2021-12-30-dronekit-udemy.html
 sidebar: other_sidebar
 folder: blog

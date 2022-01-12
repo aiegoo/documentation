@@ -3,7 +3,7 @@ layout: post
 title: "test prep for fixedwing class 4"
 name: "class4-fixedwing"
 tags: [drones]
-tagName: drones
+tagName: drone
 permalink: 2021-12-02-class4-fixedwing.html
 sidebar: other_sidebar
 folder: blog

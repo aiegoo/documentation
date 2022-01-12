@@ -3,7 +3,7 @@ layout: post
 title: "motion planning dashboard hardware setup"
 name: "mpd-hardware"
 tags: [drones]
-tagName: drones
+tagName: drone
 permalink: 2021-12-01-mpd-hardware.html
 sidebar: other_sidebar
 folder: blog

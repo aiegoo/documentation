@@ -3,7 +3,7 @@ layout: post
 title: "modeling aerospace simulation"
 name: "drone-simulation"
 tags: [drones]
-tagName: drones
+tagName: drone
 permalink: 2022-01-02-drone-simulation.html
 sidebar: other_sidebar
 folder: blog
