@@ -422,6 +422,9 @@ time.sleep(1)
 |   | Alt. holding LPS22HH
 |   | ublox M8N
 
+[source-code](https://github.com/aiegoo/udemy-stm32/blob/mhive/dev)
+
+[tutorial-one-through](https://github.com/aiegoo/master)
 #### video 1
 - hardware list
 - FC 전원 연결 및 디버그 LED 점멸(GPIO)
