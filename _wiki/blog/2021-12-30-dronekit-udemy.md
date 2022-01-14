@@ -27073,6 +27073,52 @@ pid 루프가 반복되면서 제어가 될겁니다
 그럼 이 각도 제어 부분은 우선 주석으로 맞구요
 19:24
 이 밑에 새롭게 코드 를 작성하겠습니다
+```
+
+```cplus
+  printf("Loading PID Gain...\n");
+
+
+  if(EP_PIDGain_Read(0, &roll.in.kp, &roll.in.ki, &roll.in.kd) != 0 ||
+		  EP_PIDGain_Read(1, &roll.out.kp, &roll.out.ki, &roll.out.kd) != 0 ||
+		  EP_PIDGain_Read(2, &pitch.in.kp, &pitch.in.ki, &pitch.in.kd) != 0 ||
+		  EP_PIDGain_Read(3, &pitch.out.kp, &pitch.out.ki, &pitch.out.kd) != 0 ||
+		  EP_PIDGain_Read(4, &yaw_heading.kp, &yaw_heading.ki, &yaw_heading.kd) != 0 ||
+		  EP_PIDGain_Read(5, &yaw_rate.kp, &yaw_rate.ki, &yaw_rate.kd) != 0)
+  {
+	  LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH4);
+
+	  TIM3->PSC = 1000;
+	  HAL_Delay(100);
+	  TIM3->PSC = 1500;
+	  HAL_Delay(100);
+	  TIM3->PSC = 2000;
+	  HAL_Delay(100);
+
+	  LL_TIM_CC_DisableChannel(TIM3, LL_TIM_CHANNEL_CH4);
+
+	  HAL_Delay(500);
+	  printf("\nCouldn't load PID gain.\n");
+  }
+  else
+  {
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 0, roll.in.kp, roll.in.ki, roll.in.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 1, roll.out.kp, roll.out.ki, roll.out.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 2, pitch.in.kp, pitch.in.ki, pitch.in.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 3, pitch.out.kp, pitch.out.ki, pitch.out.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 4, yaw_heading.kp, yaw_heading.ki, yaw_heading.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 5, yaw_rate.kp, yaw_rate.ki, yaw_rate.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  printf("\nAll gains OK!\n\n");
+  }
+```
+
+```diff
 19:28
 먼저 지난번 각도 제어 할 때랑 똑같이 조종기 값으로 목표 각 속도를
 19:33
@@ -27311,6 +27357,48 @@ d 라고 하고 여기에 이각 가속도 곱하기
 때문에 그냥 이대로 사용해도 될 것 같습니다 그래 이제 마지막으로 병수
 27:32
 선언을 하도록 하겠습니다
+
+  printf("Loading PID Gain...\n");
+
+
+  if(EP_PIDGain_Read(0, &roll.in.kp, &roll.in.ki, &roll.in.kd) != 0 ||
+		  EP_PIDGain_Read(1, &roll.out.kp, &roll.out.ki, &roll.out.kd) != 0 ||
+		  EP_PIDGain_Read(2, &pitch.in.kp, &pitch.in.ki, &pitch.in.kd) != 0 ||
+		  EP_PIDGain_Read(3, &pitch.out.kp, &pitch.out.ki, &pitch.out.kd) != 0 ||
+		  EP_PIDGain_Read(4, &yaw_heading.kp, &yaw_heading.ki, &yaw_heading.kd) != 0 ||
+		  EP_PIDGain_Read(5, &yaw_rate.kp, &yaw_rate.ki, &yaw_rate.kd) != 0)
+  {
+	  LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH4);
+
+	  TIM3->PSC = 1000;
+	  HAL_Delay(100);
+	  TIM3->PSC = 1500;
+	  HAL_Delay(100);
+	  TIM3->PSC = 2000;
+	  HAL_Delay(100);
+
+	  LL_TIM_CC_DisableChannel(TIM3, LL_TIM_CHANNEL_CH4);
+
+	  HAL_Delay(500);
+	  printf("\nCouldn't load PID gain.\n");
+  }
+  else
+  {
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 0, roll.in.kp, roll.in.ki, roll.in.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 1, roll.out.kp, roll.out.ki, roll.out.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 2, pitch.in.kp, pitch.in.ki, pitch.in.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 3, pitch.out.kp, pitch.out.ki, pitch.out.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 4, yaw_heading.kp, yaw_heading.ki, yaw_heading.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 5, yaw_rate.kp, yaw_rate.ki, yaw_rate.kd);
+	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
+	  printf("\nAll gains OK!\n\n");
+  }
+
 27:34
 맨 위로 올라오지 구요 역시 지역 변수로 선언 하겠읍니다
 27:40
