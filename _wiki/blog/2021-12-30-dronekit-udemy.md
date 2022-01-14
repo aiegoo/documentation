@@ -27358,47 +27358,52 @@ d 라고 하고 여기에 이각 가속도 곱하기
 27:32
 선언을 하도록 하겠습니다
 
-  printf("Loading PID Gain...\n");
+  /* USER CODE BEGIN 3 */
+	  if(tim7_1ms_flag == 1)
+	  {
+		  tim7_1ms_flag = 0;
 
+//  		  Double_Roll_Pitch_PID_Calculation(&roll, (iBus.RH-1500)*0.1f, BNO080_Roll, ICM20602.gyro_y);
+//  		  Double_Roll_Pitch_PID_Calculation(&pitch, (iBus.RV-1500)*0.1f, BNO080_Pitch, ICM20602.gyro_x);
 
-  if(EP_PIDGain_Read(0, &roll.in.kp, &roll.in.ki, &roll.in.kd) != 0 ||
-		  EP_PIDGain_Read(1, &roll.out.kp, &roll.out.ki, &roll.out.kd) != 0 ||
-		  EP_PIDGain_Read(2, &pitch.in.kp, &pitch.in.ki, &pitch.in.kd) != 0 ||
-		  EP_PIDGain_Read(3, &pitch.out.kp, &pitch.out.ki, &pitch.out.kd) != 0 ||
-		  EP_PIDGain_Read(4, &yaw_heading.kp, &yaw_heading.ki, &yaw_heading.kd) != 0 ||
-		  EP_PIDGain_Read(5, &yaw_rate.kp, &yaw_rate.ki, &yaw_rate.kd) != 0)
-  {
-	  LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH4);
+		  //Double_Roll_Pitch_PID_Calculation(&roll, ref_roll_filt, BNO080_Roll, ICM20602.gyro_y);
+		  //Double_Roll_Pitch_PID_Calculation(&pitch, ref_pitch_filt, BNO080_Pitch, ICM20602.gyro_x);
 
-	  TIM3->PSC = 1000;
-	  HAL_Delay(100);
-	  TIM3->PSC = 1500;
-	  HAL_Delay(100);
-	  TIM3->PSC = 2000;
-	  HAL_Delay(100);
+		  if(iBus.LV < 1030 || motor_arming_flag == 0)
+		  {
+			  Reset_All_PID_Integrator();
 
-	  LL_TIM_CC_DisableChannel(TIM3, LL_TIM_CHANNEL_CH4);
+		  }
 
-	  HAL_Delay(500);
-	  printf("\nCouldn't load PID gain.\n");
-  }
-  else
-  {
-	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 0, roll.in.kp, roll.in.ki, roll.in.kd);
-	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
-	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 1, roll.out.kp, roll.out.ki, roll.out.kd);
-	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
-	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 2, pitch.in.kp, pitch.in.ki, pitch.in.kd);
-	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
-	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 3, pitch.out.kp, pitch.out.ki, pitch.out.kd);
-	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
-	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 4, yaw_heading.kp, yaw_heading.ki, yaw_heading.kd);
-	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
-	  Encode_Msg_PID_Gain(&telemetry_tx_buf[0], 5, yaw_rate.kp, yaw_rate.ki, yaw_rate.kd);
-	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
-	  printf("\nAll gains OK!\n\n");
-  }
+		  if(ref_throttle_filt > pre_ref_throttle_filt) ref_throttle_filt = (iBus.LV - 1000) * 10;
+		  else ref_throttle_filt = ref_throttle_filt * 0.9 + (iBus.LV - 1000) * 10 * 0.1;
 
+		  if(iBus.LH < 1485 || iBus.LH > 1515)
+		  {
+			  yaw_heading_reference = BNO080_Yaw;
+			  Single_Yaw_Rate_PID_Calculation(&yaw_rate, (iBus.LH - 1500), ICM20602.gyro_z);
+
+			  ccr1 = 10500 + 500 + ref_throttle_filt - pitch.in.pid_result + roll.in.pid_result - yaw_rate.pid_result;
+			  ccr2 = 10500 + 500 + ref_throttle_filt + pitch.in.pid_result + roll.in.pid_result + yaw_rate.pid_result;
+			  ccr3 = 10500 + 500 + ref_throttle_filt + pitch.in.pid_result - roll.in.pid_result - yaw_rate.pid_result;
+			  ccr4 = 10500 + 500 + ref_throttle_filt - pitch.in.pid_result - roll.in.pid_result + yaw_rate.pid_result;
+		  }
+		  else
+		  {
+			  Single_Yaw_Heading_PID_Calculation(&yaw_heading, yaw_heading_reference, BNO080_Yaw, ICM20602.gyro_z);
+
+			  ccr1 = 10500 + 500 + ref_throttle_filt - pitch.in.pid_result + roll.in.pid_result - yaw_heading.pid_result;
+			  ccr2 = 10500 + 500 + ref_throttle_filt + pitch.in.pid_result + roll.in.pid_result + yaw_heading.pid_result;
+			  ccr3 = 10500 + 500 + ref_throttle_filt + pitch.in.pid_result - roll.in.pid_result - yaw_heading.pid_result;
+			  ccr4 = 10500 + 500 + ref_throttle_filt - pitch.in.pid_result - roll.in.pid_result + yaw_heading.pid_result;
+		  }
+
+		  pre_ref_throttle_filt = ref_throttle_filt;
+
+		  //printf("%f\t%f\n", BNO080_Pitch, ICM20602.gyro_x);
+		  //printf("%f\t%f\n", BNO080_Roll, ICM20602.gyro_y);
+		  //printf("%f\t%f\n", BNO080_Yaw, ICM20602.gyro_z);
+	  }
 27:34
 맨 위로 올라오지 구요 역시 지역 변수로 선언 하겠읍니다
 27:40
