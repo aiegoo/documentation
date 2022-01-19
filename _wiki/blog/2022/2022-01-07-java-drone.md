@@ -107,7 +107,51 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 ```
+> base controller
 
+
+```java
+public class BaseController {
+
+	private final ConfigReader configurations;
+
+    @GetMapping("/")
+    public String indexPage(Model model) {
+		
+		model.addAttribute("publicIp", getPublicIpAddress());
+		model.addAttribute("defaultSpeed", configurations.getDefaultSpeed());
+		model.addAttribute("defaultAltitude", configurations.getDefaultAltitude());
+		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
+        
+        return "index";
+    }
+    
+    @GetMapping("/v/{droneId}")
+	public String getVideoFeed(Model model, @PathVariable("droneId") String droneId) {
+		
+		model.addAttribute("publicIp", getPublicIpAddress());
+		model.addAttribute("droneId", droneId);
+		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
+        
+        return "video";
+    }
+
+	private String getPublicIpAddress() {
+		String ip = "";
+		try {
+			final URL whatismyip = new URL("http://checkip.amazonaws.com");
+
+			try(final BufferedReader in = new BufferedReader(new InputStreamReader(whatismyip.openStream()))){
+				ip = in.readLine();
+			}
+
+		} catch (Exception e) {
+			log.error(e.getMessage());
+		}
+		return ip;
+	}
+}
+```
 ## Deployment
 
 When you decide to deploy finished Java application - build it, deploy it on a VPS [or any machine with public IP
