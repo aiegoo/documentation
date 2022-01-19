@@ -85,6 +85,29 @@ sudo pip3 install netifaces psutil google-api-python-client \
 ## java/cloud/raspi app
 ### big picture
 ![big-picture](images/java-eggs/overview.jpg)
+
+> build.gradle
+
+{% include copyto.html %}
+```java
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+	implementation 'com.google.code.gson:gson:2.6.2'
+	implementation 'com.google.protobuf:protobuf-java:3.9.0'
+
+	implementation 'org.webjars:jquery:3.4.1'
+	implementation 'org.webjars:bootstrap:4.3.1'
+	implementation 'org.webjars:webjars-locator-core'
+	
+
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+```
+
 ## Deployment
 
 When you decide to deploy finished Java application - build it, deploy it on a VPS [or any machine with public IP
