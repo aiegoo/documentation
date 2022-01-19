@@ -82,6 +82,9 @@ sudo pip3 install netifaces psutil google-api-python-client \
                   dronekit wiringpi opencv-python
 ```
 
+## java/cloud/raspi app
+### big picture
+![big-picture](images/java-eggs/overview.jpg)
 ## Deployment
 
 When you decide to deploy finished Java application - build it, deploy it on a VPS [or any machine with public IP
