@@ -154,6 +154,8 @@ public class BaseController {
 ```
 ## Deployment
 
+[instructions](https://github.com/aiegoo/4gremoteoperation/blob/tony/source/deploy-cloudapp-note.md)
+
 When you decide to deploy finished Java application - build it, deploy it on a VPS [or any machine with public IP
 
 and then run it with this command in terminal:
@@ -165,6 +167,8 @@ java -Djava.security.egd=file:/dev/urandom -jar drone-control-station-0.0.1.jar 
 Wait until it starts, and then you can close the terminal and it will continue to run in the background
 
 ### python app as a linux service
+
+[instructions](https://github.com/aiegoo/4gremoteoperation/blob/tony/source/deploy-cloudapp-raspi.md)
 
 Create droneapp.service file with this content:
 
