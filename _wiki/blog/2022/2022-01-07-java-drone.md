@@ -100,7 +100,7 @@ dependencies {
 	implementation 'org.webjars:jquery:3.4.1'
 	implementation 'org.webjars:bootstrap:4.3.1'
 	implementation 'org.webjars:webjars-locator-core'
-	
+
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
@@ -117,22 +117,22 @@ public class BaseController {
 
     @GetMapping("/")
     public String indexPage(Model model) {
-		
+
 		model.addAttribute("publicIp", getPublicIpAddress());
 		model.addAttribute("defaultSpeed", configurations.getDefaultSpeed());
 		model.addAttribute("defaultAltitude", configurations.getDefaultAltitude());
 		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
-        
+
         return "index";
     }
-    
+
     @GetMapping("/v/{droneId}")
 	public String getVideoFeed(Model model, @PathVariable("droneId") String droneId) {
-		
+
 		model.addAttribute("publicIp", getPublicIpAddress());
 		model.addAttribute("droneId", droneId);
 		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
-        
+
         return "video";
     }
 
@@ -283,6 +283,12 @@ sudo cp ./config-templates/start.sh /opt/cloudapp/start.sh
 sudo cp ./config-templates/cloudapp.service /etc/systemd/system/cloudapp.service
 
 sudo systemctl start cloudapp
+
+sudo systemctl status/stop cloudapp
+
+netstat -tulpn | grep LISTEN / LISTEN_IP
+
+./gradlew bootRun
 ```
 
 If you want to start the app on boot
