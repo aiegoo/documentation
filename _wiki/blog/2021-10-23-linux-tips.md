@@ -168,6 +168,8 @@ dconf load /org/gnome/settings-daemon/plugins/media-keys/ < keybindings.dconf
 
 </div>
 
+[한글키보드](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=2000winwin&logNo=220747982356)
+
 ## Applications
 
 <div class="p-list" markdown="1">
