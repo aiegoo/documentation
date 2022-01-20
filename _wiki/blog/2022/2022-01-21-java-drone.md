@@ -2,9 +2,9 @@
 layout: post
 title: "java drone app with mavlink mavproxy and gcs"
 name: "java-drone"
-tags: [drones]
+tags: [drone, java, gcs]
 tagName: java
-permalink: 2022-01-07-java-drone.html
+permalink: 2022-01-21-java-drone.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
@@ -14,10 +14,9 @@ summary: "Fri, Jan 07, 22, udemy course integration, and my local dev-with linh"
 excerpt_separator: <!--more-->
 toc: true
 public: true
-published: false
 parent: [[Wiki-Setting-Category]]
-date: 2022-01-07T08:52:54 +0900
-updated: 2022-01-07 08:52
+date: 2022-01-21T08:52:54 +0900
+updated: 2022-01-21 08:52
 ---
 * TOC
 {:toc}
