@@ -32,6 +32,7 @@ updated: 2022-01-02 09:38
 
 - missionPlanner runs on Windows but possible with use of Mono
 - [ref](https://ardupilot.org/planner/docs/mission-planner-installation.html#mission-planner-on-linux)
+- Bebop SDk [ref](https://github.com/Parrot-Developers/Samples)
 
 {% include taglogic.html %}
 
