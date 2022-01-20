@@ -14,6 +14,7 @@ summary: "Sun, Jan 02, 22, modeling vertical LOS plane simulation"
 excerpt_separator: <!--more-->
 toc: true
 public: true
+published: false
 parent: [[Wiki-Setting-Category]]
 date: 2022-01-02T09:38:10 +0900
 updated: 2022-01-02 09:38
@@ -32,7 +33,7 @@ updated: 2022-01-02 09:38
 
 - missionPlanner runs on Windows but possible with use of Mono
 - [ref](https://ardupilot.org/planner/docs/mission-planner-installation.html#mission-planner-on-linux)
-- Bebop SDk [ref](https://github.com/Parrot-Developers/Samples)
+- Bebop SDk to send commands and receive [ref](https://github.com/Parrot-Developers/Samples)
 
 {% include taglogic.html %}
 
