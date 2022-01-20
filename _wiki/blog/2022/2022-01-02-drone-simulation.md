@@ -28,6 +28,11 @@ updated: 2022-01-02 09:38
 ![image](https://user-images.githubusercontent.com/42961200/147863422-8d326e2d-c2cb-49e2-b207-84eb5e699636.png)
 
 
+## missionPlanner vs QGroundcontrol
+
+- missionPlanner runs on Windows but possible with use of Mono
+- [ref](https://ardupilot.org/planner/docs/mission-planner-installation.html#mission-planner-on-linux)
+
 {% include taglogic.html %}
 
 {% include links.html %}
