@@ -43,6 +43,9 @@ USING A THERMAL CAMERA WITH A RASPBERRY PI:
 - Run the Example Code
 
 ## selecting a sensor
+
+![image](https://user-images.githubusercontent.com/42961200/150724777-5d9c9443-7878-4faa-9833-0105b4c2cae5.png)
+
 Cost and ease of use were considered most when selecting a sensor for this guide. To save yourself the trouble of fabricating your own breakout circuitry and writing your own libraries it is best to make use of what is already available.
 
 Companies such as Adafruit and Sparkfun produce breakout boards and supporting libraries for sensors such as the AMG8833and the MLX90640.
@@ -54,6 +57,9 @@ The MLX90640 is made by a company called Melexis and while costlier it is superi
 At the time of this writing, the MLX90640 breakout board is sold out with no option to backorder, so I will demonstrate the AMG8833 breakout board produced by Adafruit, as well as the python library they provide.
 
 ## wiring it
+
+![image](https://user-images.githubusercontent.com/42961200/150724760-feae54df-b399-4d72-a1c7-c678a11607e8.png)
+
 Regardless of which supplier you source the sensor from it will likely come with header pins that are not pre-soldered. For our purposes, it will be necessary to solder them in place.
 
 Something the breakout boards for the AMG8833 and the MLX90640 have in common is the I2C protocol they use to communicate with the Raspberry Pi. The protocol uses one wire for bi-directional serial data transmission and another wire to supply a clock signal.
@@ -67,6 +73,7 @@ Connect the SCL to pin 5 using the remaining wires.
 
 ## enabling i2c bus
 A fresh install of Raspberry Pi OS has the I2C interface disabled by default. It will be necessary to turn it on.
+![image](https://user-images.githubusercontent.com/42961200/150724702-8a9bb5dc-0edd-459e-8f91-3a06619a4752.png)
 
 Open a terminal window on the Raspberry Pi and run the following:
 sudo raspi-config
@@ -75,6 +82,8 @@ Select Interface Options then I2C.
 Select Yes to enable the interface.
 
 ## install libraries
+
+![image](https://user-images.githubusercontent.com/42961200/150724725-f4ebf0a2-77e9-41a2-a57e-c1bbe4b81275.png)
 
 Next, we will install a python library that will do the heavy lifting of turning the signal input from the sensor into useful data. If you are using an MLX90640 based sensor then you may have to check with the manufacturer for the appropriate library. For the AMG8833 based sensor, we will install a library provided by Adafruit.
 
@@ -97,6 +106,8 @@ Colour is a library that simplifies the manipulation of color data.
 
 
 ### running example codes
+
+
 We are almost ready to see some output.
 
 We will fetch the example code with this command:
