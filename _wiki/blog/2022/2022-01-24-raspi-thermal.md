@@ -106,7 +106,10 @@ Colour is a library that simplifies the manipulation of color data.
 
 
 ### running example codes
-
+[video](video/thermal-camera-demo.mp4)
+<div style="width: 100%; text-align:right;">
+	<video width="100%" height="100%" align="right" src="video/thermal-camera-demo.mp4" type="video/mp4" autoplay loop muted></video>
+</div>
 
 We are almost ready to see some output.
 
