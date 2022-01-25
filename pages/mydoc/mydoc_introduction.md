@@ -8,7 +8,7 @@ folder: mydoc
 ## Google dialogflow guide
 [pdf](https://github.com/aiegoo/uas-reference/blob/master/web-dev/dialogflowpdf.pdf)
 
-![voip](images/voip/voip.png)
+![voip](images/voip/)
 ## Overview
 
 I was on a mission to join the workforce; my portfolio and projects have grown very fast 
