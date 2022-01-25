@@ -7,6 +7,8 @@ folder: mydoc
 
 ## Google dialogflow guide
 [pdf](https://github.com/aiegoo/uas-reference/blob/master/web-dev/dialogflowpdf.pdf)
+
+![voip](images/voip/voip.png)
 ## Overview
 
 I was on a mission to join the workforce; my portfolio and projects have grown very fast 
@@ -28,6 +30,7 @@ Some of the more prominent features of this theme include the following:
 * Advanced landing page layouts from the [Modern Business theme](http://startbootstrap.com/template-overviews/modern-business/).
 
 ## Getting started
+
 
 To get started, see [Getting Started][index].
 
