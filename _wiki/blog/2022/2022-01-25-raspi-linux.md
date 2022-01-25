@@ -40,6 +40,8 @@ If you only have a 1GB RAM board available, it’s ok! Everything will still wor
 
 ### Download Ubuntu 20.04 image for Raspberry Pi
 Go to the Ubuntu download page for Raspberry Pi images, and download the 64-bit version for Raspberry Pi 4.
+![raspberry_pi_ubuntu_img](https://user-images.githubusercontent.com/42961200/150917325-ba6605c8-c064-4d3a-a287-e0bdcb3cc780.png)
+![raspberry_pi_ubuntu_img](https://user-images.githubusercontent.com/42961200/150917332-06d1049b-0d37-420c-93d0-db6ecd42f3a3.png)
 
 - Download Ubuntu 20.04 image for Raspberry Pi 4
 
@@ -60,6 +62,7 @@ To flash the image into your micro SD card you’ll need a software. (Well you c
 - Download balenaEtcher, install it and start it.
 
 Then, plug your micro SD card to your computer, it should be automatically detected. Finally, click on the “Flash from File” button to select the Ubuntu image. Note: select the image, not the archive file!
+![balena_etcher_rpi_ubuntu](https://user-images.githubusercontent.com/42961200/150917356-27ec738d-2158-4c2c-9edd-27c6dbc19471.png)
 
 balenaEtcher flash Raspberry Pi Ubuntu 20.04 on micro SD card
 
@@ -166,6 +169,7 @@ On Windows
 If you’re on Windows, you can use the Advanced IP Scanner tool.
 
 All you have to do is click on “Scan” and wait.
+![advanced_ip_scanner_rpi](https://user-images.githubusercontent.com/42961200/150917404-d9612669-eaa0-4e1b-b1e2-80b9cf604b34.png)
 
 Advanced IP Scanner - Find Raspberry Pi's IP
 
@@ -180,6 +184,7 @@ I usually use nmap to do that (sudo apt install nmap).
 
 First find your network IP address and mask. Run ifconfig:
 
+```bash
 $ ifconfig
 enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 192.168.43.138  netmask 255.255.255.0  broadcast 192.168.43.255
@@ -197,10 +202,12 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 947  bytes 82515 (82.5 KB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
 In this case, the IP address of my Ubuntu host is 192.168.43.138, and the mask is 255.255.255.0 (24 bits).
 
 Now, with nmap and the data you just got:
 
+```bash
 $ sudo nmap -sP 192.168.43.0/24
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-26 13:50 CEST
 Nmap scan report for _gateway (192.168.43.1)
@@ -215,17 +222,20 @@ MAC Address: 7C:B2:7D:9E:95:DA (Intel Corporate)
 Nmap scan report for ed-vm (192.168.43.138)
 Host is up.
 Nmap done: 256 IP addresses (4 hosts up) scanned in 2.07 seconds
+```
 And we find the IP address: 192.168.43.56.
 
-First ssh connection to the Raspberry Pi 4
+### First ssh connection to the Raspberry Pi 4
 Connect to the Pi wish ssh
 If you’re on Windows (older than Windows 10 with October 2018 update), use a program such as Putty.
 
 Put the IP address of the Pi and click on “Open”.
+![putty_rpi_ssh](https://user-images.githubusercontent.com/42961200/150917510-c645add5-c5ae-4e60-b903-5b4282cca388.png)
 
 Putty on Windows for ssh
 
 You’ll be asked to give username and password. Simply use “ubuntu” twice.
+![putty_rpi_ssh_login](https://user-images.githubusercontent.com/42961200/150917531-5d68ee02-964f-44c0-a2af-4e2be1dc376a.png)
 
 Putty Connect to Raspberry Pi on Ubuntu with ssh
 
@@ -236,6 +246,7 @@ The first time you connect to your Pi, you will be asked to change the default p
 
 Once done, the connection will be closed.
 
+```bash
 $ ssh ubuntu@192.168.43.57
 The authenticity of host '192.168.43.57 (192.168.43.57)' can't be established.
 ECDSA key fingerprint is SHA256:rNDFgb1H2GiIhNPJ7oYI5963+/vbob2HOY1W4FakG/0.
@@ -267,6 +278,7 @@ New password:
 Retype new password: 
 passwd: password updated successfully
 Connection to 192.168.43.57 closed.
+```
 Now, you can connect to your Pi again, using “ubuntu” as the username, and the new password you’ve just set.
 
 Configure Ubuntu 20.04 on your Raspberry Pi 4
@@ -276,21 +288,25 @@ Correctly synchronize date on Ubuntu
 It is possible that the date is not correctly synchronized.
 
 To check that, simply execute date:
-
+```bash
 $ date
 Thu 25 Jun 2020 11:55:14 AM CEST
+```
 If the date+time is not correct, first check that your Pi is connected to the Internet. Even if it is connected to a Wi-Fi network, maybe this network doesn’t have access to the Internet. For a very quick check, see if the command ping ubuntu.com gives you a positive result.
 
+```bash
 $ ping ubuntu.com
 PING ubuntu.com (91.189.91.45) 56(84) bytes of data.
 64 bytes from fautso.canonical.com (91.189.91.45): icmp_seq=1 ttl=49 time=164 ms
 64 bytes from fautso.canonical.com (91.189.91.45): icmp_seq=2 ttl=49 time=236 ms
+```
 If you get that you can be sure your Pi has access to the Internet.
 
-Now, if the date is still not synchronized, then you can simply solve that by installing htpdate: sudo apt install htpdate. After that, execute date again and you should have the current date. (you could solve that issue with a bunch of different solutions, but to keep things simple here I just used htpdate).
+Now, if the date is still not synchronized, then you can simply solve that by installing htpdate: `sudo apt install htpdate`. After that, execute date again and you should have the current date. (you could solve that issue with a bunch of different solutions, but to keep things simple here I just used htpdate).
 
-Note: here is a possible error output you can get with sudo apt update (which we’ll run later in this tutorial) if your date is not correct.
+Note: here is a possible error output you can get with `sudo apt update` (which we’ll run later in this tutorial) if your date is not correct.
 
+```bash
 $ sudo apt update
 Get:1 http://ports.ubuntu.com/ubuntu-ports focal InRelease [265 kB]
 Get:2 http://ports.ubuntu.com/ubuntu-ports focal-updates InRelease [107 kB]
@@ -301,16 +317,18 @@ E: Release file for http://ports.ubuntu.com/ubuntu-ports/dists/focal/InRelease i
 E: Release file for http://ports.ubuntu.com/ubuntu-ports/dists/focal-updates/InRelease is not valid yet (invalid for another 83d 17h 5min 42s). Updates for this repository will not be applied.
 E: Release file for http://ports.ubuntu.com/ubuntu-ports/dists/focal-backports/InRelease is not valid yet (invalid for another 83d 17h 6min 1s). Updates for this repository will not be applied.
 E: Release file for http://ports.ubuntu.com/ubuntu-ports/dists/focal-security/InRelease is not valid yet (invalid for another 83d 18h 16min 39s). Updates for this repository will not be applied.
-Set your time zone
+```
+
+### Set your time zone
 The default time zone will be UTC0.
 
 Run timedatectl list-timezones to list all available time zones.
 
 Then, run timedatectl set-timezone your_time_zone to set the time zone, for example timedatectl set-timezone Europe/Paris.
 
-Update/upgrade packages
+### Update/upgrade packages
 One of the first thing you want to do with a fresh installation is to upgrade all the packages you have to the newest version.
-
+```bash
 $ sudo apt update
 ...
 ...
@@ -321,6 +339,7 @@ $ sudo apt autoremove
 ...
 ...
 $ sudo reboot
+```
 And then reboot. Your Pi is fully ready now.
 
 Optional: install a desktop
