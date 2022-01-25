@@ -29,6 +29,7 @@ updated: 2022-01-25 19:25
 ===========================================
 Communicating with Raspberry Pi via MAVLink
 ===========================================
+![RaspberryPi_Pixhawk_wiring1](https://user-images.githubusercontent.com/42961200/150961160-aefb783f-9ee0-4ad7-add8-37279f778d31.jpg)
 
 This page explains how to connect and configure a Raspberry Pi (RPi) so
 that it is able to communicate with a flight controller using
@@ -81,6 +82,7 @@ Type:
     sudo raspi-config
 
 And in the utility, select "Interfacing Options":
+![RaspberryPi_Serial1](https://user-images.githubusercontent.com/42961200/150961225-41b4b7a5-9168-420b-b624-e91f7cb125a6.png)
 
 .. figure:: ../images/RaspberryPi_Serial1.png
    :target: ../_images/RaspberryPi_Serial1.png
@@ -88,6 +90,7 @@ And in the utility, select "Interfacing Options":
    RasPiConfiguration Utility
 
 And then "Serial":
+![RaspberryPi_Serial2](https://user-images.githubusercontent.com/42961200/150961234-f03e8cc7-2ebe-4fce-ae37-a04512984818.png)
 
 .. figure:: ../images/RaspberryPi_Serial2.png
     :target: ../_images/RaspberryPi_Serial2.png
@@ -164,6 +167,7 @@ command to display the ``ARMING_CHECK`` parameters value
     param show ARMING_CHECK
     param set ARMING_CHECK 0
     arm throttle
+![RaspberryPi_ArmTestThroughPutty](https://user-images.githubusercontent.com/42961200/150961322-d2749c4b-b646-4794-b192-5e38fd547a08.png)
 
 .. figure:: ../images/RaspberryPi_ArmTestThroughPutty.png
     :target: ../_images/RaspberryPi_ArmTestThroughPutty.png
@@ -246,6 +250,7 @@ the MAVProxy command became:
     mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 --out 192.168.137.1:14550 --aircraft MyCopter
 
 Connecting with the mission planner is shown below:
+![RaspberryPi_MissionPlanner](https://user-images.githubusercontent.com/42961200/150961468-dc3032fb-4fea-490f-80d6-71a2fa2decc7.jpg)
 
 .. image:: ../images/RaspberryPi_MissionPlanner.jpg
     :target: ../_images/RaspberryPi_MissionPlanner.jpg
@@ -257,7 +262,122 @@ Example projects
 
 Can't get it to work? Try posting your question in the `Companion Computer discussion board <https://discuss.ardupilot.org/c/apsync-companion-computers>`__.
 
+## use case with fpv 
 
+![IMG_18711](https://user-images.githubusercontent.com/42961200/150961771-09f6ab6e-054a-4788-a7e5-7b6c20496d77.jpg)
+
+After much chasing, and testing, I have found this to be an efficient way of getting low latency high quality HD video out of an Aircraft. The latency is around 0.4 seconds at worst which would be OK for an FPV with an APM doing the hard work.
+
+I will continue to search for methods to drop the latency down further, but this is a lot better than the 6-12 seconds I was getting on my first attempts.
+
+Any comment (with useful instructions) would be appreciated.
+
+For the wireless link, I am using two UBIQUITY ROCKET M 900 with Australian ACMA approved firmware, at the base station, I am using a tracking (yet to built the tracker...) 1.5 meter long X and Y polarised Yagi, and on the plane, two RF Design flexible strip antennas, placed at right angles to each other.
+
+but how you do that bit is up to you.....
+
+the critical bit is getting the Raspberry Pi's to chat to each other.
+
+I have tried to make this as user friendly as possible... good luck.
+
+ 
+
+Setting up IP video for Raspberry Pi 1080p video (FPV)
+
+ 
+
+You will need 2 B model Raspberry Pi's and 1 Pi Camera. (Element 14, or RS components)
+
+Preparing your Raspberry Pi for first boot…
+ 
+
+Follow the instructions at http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf
+
+Install the prepared SD card in the Pi and boot.
+
+Setting up your Pi
+Connect the Pi to your router with a network cable.
+
+On Start-up it will resize the FAT partition and present you with a menu.
+
+Set your language, and keyboard layout.
+
+Select Raspbian… then click install.
+
+After this has extracted (will take a while….) it will reboot into the configuration screen (again will take a while for this first boot.)
+
+The important things to change here are
+
+Enable the camera
+In advance options…..
+Set the host name (camera, for the camera end, receiver, for the viewing end)
+Memory split, set the memory for the GPU to 256
+Enable SSH ( will come in handy later, as you may need to talk to the Pi in the air.....
+Then finish and reboot.
+
+First login
+Username: pi
+
+Password: raspberry
+
+Setting up the required programs for video streaming
+ 
+
+Install the dependencies by running the following in a terminal:
+
+sudo apt-get install mplayer netcat
+
+cd /opt/vc/src/hello_pi
+
+make –C libs/ilclient
+
+make –C libs/vgfont
+
+cd /opt/vc/src/hello_pi/hello_video
+
+make
+
+cd ~
+
+Now repeat this for the other Pi….
+ 
+
+Streaming…
+First set up the receiver….
+Ensure the receiver is connected to your network and run
+
+ifconfig
+
+after you press enter, you can find your ip Address.  Note this down.
+
+Then run the following.
+
+mkfifo buffer
+
+nc -p 5001 -l > buffer | /opt/vc/src/hello_pi/hello_video/hello_video.bin buffer
+
+the Pi will now wait for the feed.
+
+On the Camera Pi
+Ensure camera is connected to the Pi
+
+Ensure Pi is connected to the network (you can confirm this with ifconfig)
+
+(see instructions at http://www.raspberrypi.org/camera for how to connect the camera)
+
+ 
+
+ 
+
+In the following command, replace the ip address with the one you just noted down.
+
+raspivid -t 0 -fps 15 -o - | nc 192.168.1.85 5001
+
+if all goes well you should be streaming 1080P video at 15fps with less than 0.5seconds of delay..
+
+now add your wireless bridge between the two, and away you go J
+
+This information has come from the Raspberry Pi foundation website, and other sources, tested and proven by myself..
 
 {% include taglogic.html %}
 
