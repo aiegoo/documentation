@@ -5,7 +5,7 @@ Qt Creator has been replaced by [VSCode](../dev_setup/vscode.md) as the official
 :::
 
 [Qt Creator](https://www.qt.io/download-open-source) is a popular cross-platform open-source IDE that can be used to compile and debug PX4.
-
+[qt_docs](https://doc.qt.io/qtcreator/index.html)
 ## Qt Creator Functionality
 
 Qt creator offers clickable symbols, auto-completion of the complete codebase and building and flashing firmware.
