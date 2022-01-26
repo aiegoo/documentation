@@ -28,8 +28,8 @@ topnav_dropdowns:
           url: /mydoc_introduction.html
         - title: LasVegas CES
           url: /p2_mobis.html
-        - title: Autonomous drone
-          url: /p2_landing_page.html
+        - title: Sky-drones
+          url: /p2_mobis.html
     - title: Collection
       folderitems:
         - title: drones
