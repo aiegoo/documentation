@@ -109,17 +109,20 @@ In any of the above cases, the Sky-Drones team would be glad to slightly or deep
 ### software deployment options
 Software Deployment Options
 Learn more about the different options of running Sky-Drones software
-Quick and easy start
+
+- Quick and easy start
 Sky-Drones software comes free with the hardware. You can use the most advanced ready-made hardware and a free comprehensive set of SmartAP GCS + Sky-Drones Cloud software package.
 UAV manufacturers can use all Sky-Drones software (including Sky-Drones Cloud) within their hardware absolutely for free
-Sky-Drones Platform On-Premise
+
+- Sky-Drones Platform On-Premise
 Deploy the platform on your server and use it privately. You can your own Sky-Drones Cloud!
 Interested?!
-Software customization and integrations
+
+- Software customization and integrations
 The Sky-Drones team implements software customizations according to your requirements and custom integrations with your IT systems.
 White-label options are available too.  for more details.
 Your custom drone software
-​ has cutting-edge equipment and system software. It allows you to enable drones for advanced scenarios involving AI and connectivity features.
+​[smartAP_Airlink](https://docs.sky-drones.com/airlink) has cutting-edge equipment and system software. It allows you to enable drones for advanced scenarios involving AI and connectivity features.
 The following options are available:
 Your team develops custom drone software and installs on AIRLink;
 Sky-Drones team develops custom drone software for you;
