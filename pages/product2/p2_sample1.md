@@ -11,29 +11,36 @@ folder: product2
 ---
 
 
-## Sample Content
-Sky-Drones Platform
-The most advanced hardware and software ecosystem for enterprise drones
-Sky-Drones provides avionics hardware and software solutions for drone manufacturers and drone service providers globally.
+## Sky-Drones Platform
+{{site.data.alerts.hr_faded}}
+{% include callout.html content="Sky-Drones provides avionics hardware and software solutions for drone manutfacturers and drone service providers globally." %}
+
+
 The Sky-Drones Platform helps to integrate drones in custom end-to-end workflows with an abundance of advanced features that are essential to enterprise customers including:
-Real-time digital HD video streaming;
-Real-time payload data processing (e.g. computer vision);
-Real-time flight control (e.g. target tracking, collision prevention and obstacle avoidance);
-In-flight telemetry and payload data streaming directly to customer’s cloud;
-Drone-to-drone communications;
-Running custom apps directly on the drone (edge computing);
-Safely performing autonomous BVLOS missions with real-time control.
-Sky-Drones Platform Structure
-Software
-​ powered by .
-​ - super easy and intuitive 3D mission planning and remote flight control applications for Windows, macOS, Linux, iOS, Android + web application in the .
+* Real-time digital HD video streaming;
+* Real-time payload data processing (e.g. computer vision);
+* Real-time flight control (e.g. target tracking, collision prevention and obstacle avoidance);
+* In-flight telemetry and payload data streaming directly to customer’s cloud;
+* Drone-to-drone communications;
+* Running custom apps directly on the drone (edge computing);
+* Safely performing autonomous BVLOS missions with real-time control.
+
+### Sky-Drones Platform Structure
+#### Software
+​* [Advanced rone software](https://docs.sky-drones.com/airlink/drone-software) powered by [SmartAP AIRLink](https://docs.sky-drones.com/airlink) .
+​* [GCS](https://docs.sky-drones.com/smartap-gcs) - super easy and intuitive 3D mission planning and remote flight control applications for Windows, macOS, Linux, iOS, Android + web application in the [skydrone-cloud](https://docs.sky-drones.com/cloud).
 ​:
-3D mission planning & control web application;
-Drone fleet management, performance monitoring, post-flight AI-analytics;
-Integration services, the “glue” that connects drones, apps, partners and customers' software (see how  was designed for customers).
-Tightly integrated partner software such as UTM services, fleet management solutions, flight logs, etc.
+     * 3D mission planning & control web application;
+     * Drone fleet management, performance monitoring, post-flight AI-analytics;
+     * Integration services, the “glue” that connects drones, apps, partners and customers' software (see how  was designed for customers).
+* Tightly integrated partner software such as UTM services, fleet management solutions, flight logs, etc.
+
+{{site.data.notes}}
 All Sky-Drones software is free to use! Software integrations from our partners (e.g. UTM) cost according to partners pricing model.
-Hardware
+{{site.data.end}}
+
+
+## Hardware
 Sky-Drones provides its users with a comprehensive set of leading drone avionics, entirely designed and manufactured in the UK:
 ​ - the most advanced AI drone flight controller;
 ​ - broadband AES-256 encrypted digital datalink for 20km.
@@ -41,7 +48,7 @@ Sky-Drones provides its users with a comprehensive set of leading drone avionics
 ​ - power distribution board with the voltage / current sensor and power supply;
 ​ - high-precision GNSS, barometer and magnetometer module.
 Sky-Drones ships its partner drones and accessory equipment (for instance,  ADS-B receiver). We are listed sellers for our partners so make sure you  to find out more!
-Sky-Drones Platform Options
+## Sky-Drones Platform Options
 Sky-Drones Platform is fully compatible with different types of aircraft. Sky-Drones customers have been using the platform for years in BVLOS and EVLOS flights, alongside fully autonomous and GNSS-assisted manual missions.
 Sky-Drones offers two major purchasing options:
 Quick-start using comprehensive ready-made hardware and free software sets;
