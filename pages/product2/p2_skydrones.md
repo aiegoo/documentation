@@ -3,8 +3,8 @@ title: project for LasVegas 2020 CES
 layout: portfolio
 tags: [projects]
 last_updated: October 02, 2021
-keywords: [jdlab, project, gcs, qt]
-summary: "this project has been showcased by Mobis for CES 2020"
+keywords: [jdlab, project, gcs, qt, skydronesm airlink]
+summary: "he most advanced hardware and software ecosystem for enterprise drones"
 sidebar: product2_sidebar
 permalink: p2_skydrones.html
 folder: product2
