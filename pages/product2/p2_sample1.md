@@ -44,12 +44,13 @@ All Sky-Drones software is free to use! Software integrations from our partners 
 
 ## Hardware
 Sky-Drones provides its users with a comprehensive set of leading drone avionics, entirely designed and manufactured in the UK:
-​ - the most advanced AI drone flight controller;
-​ - broadband AES-256 encrypted digital datalink for 20km.
-​ - broadband digital datalink with an onboard computer and LTE option for third-party autopilots;
-​ - power distribution board with the voltage / current sensor and power supply;
-​ - high-precision GNSS, barometer and magnetometer module.
-Sky-Drones ships its partner drones and accessory equipment (for instance,  ADS-B receiver). We are listed sellers for our partners so make sure you  to find out more!
+​ SmartAP Airlink - the most advanced AI drone flight controller;
+​ AIRLink Telemetery System - broadband AES-256 encrypted digital datalink for 20km.
+​ SmartLink - broadband digital datalink with an onboard computer and LTE option for third-party autopilots;
+​ SmartAP PDB - power distribution board with the voltage / current sensor and power supply;
+​ SmartAP GNSS - high-precision GNSS, barometer and magnetometer module.
+Sky-Drones ships its partner drones and accessory equipment (for instance, [uAvinoix pingRX](https://uavionix.com/products/pingrx/) ADS-B receiver). We are listed sellers for our partners so make sure you  to find out more!
+
 ### Sky-Drones Platform Options
 Sky-Drones Platform is fully compatible with different types of aircraft. Sky-Drones customers have been using the platform for years in BVLOS and EVLOS flights, alongside fully autonomous and GNSS-assisted manual missions.
 Sky-Drones offers two major purchasing options:
@@ -68,59 +69,44 @@ Sky-Drones offer two major purchasing options:
 - Purchasing hardware from Sky-Drones website or via international dealers;
 - On-site production.
 
+{{site.data.alerts.hr_faded}}
 ### Purchasing Hardware from Sky-Drones
 We appreciate the different integration levels required by the drone manufacturers. Therefore we offer two slightly different editions of AIRLink - the most advanced drone avionics: Enterprise and Core. AIRLink Enterprise is ideal for a quick start, evaluation and prototyping while Core is optimised for deep integration and mid-high volume manufacturing. 
+![image](https://user-images.githubusercontent.com/42961200/151517142-aed6d8b5-0557-4b06-9f1d-3efcef844e75.png)
 
+|---
+| Parameter |AIRLink Enterprise |AIRLink Core
+|Enclosure |Aluminum, with integrated heatsink and fan mounting option. |External heatsink or reasonable power dissipation should be provided by the design.
+|Dimensions |L103 x W61 x H37 mm |L100 x W57 x H22 mm
+|Weight |198 g |89 g
+|Operating temperature |-40°C-..+50°C |-40°C-..+50°C
+|Production volume |Low to Medium |Medium to High
 
 SmartAP AIRLink Core edition is intended for medium to high volume production and deep integration with customer's hardware. The weight of electronics is only 80g and can be tightly integrated in the airframe design. However, heat dissipation requirements (provided by Sky-Drones) should be met for proper system operation.
 
 #### Purchasing hardware from Sky-Drones website or via international dealers;
 
-### On-site production.
-Purchasing Hardware from Sky-Drones
-We appreciate the different integration levels required by the drone manufacturers. Therefore we offer two slightly different editions of AIRLink - the most advanced drone avionics: Enterprise and Core. AIRLink Enterprise is ideal for a quick start, evaluation and prototyping while Core is optimised for deep integration and mid-high volume manufacturing.
-
-![image](https://user-images.githubusercontent.com/42961200/151491671-94493a4f-dfe1-45ea-910b-3b271e841ec8.png)
-
-Parameter
-AIRLink Enterprise
-AIRLink Core
-Enclosure
-Aluminum, with integrated heatsink and fan mounting option.
-External heatsink or reasonable power dissipation should be provided by the design.
-Dimensions
-L103 x W61 x H37 mm
-L100 x W57 x H22 mm
-Weight
-198 g
-89 g
-Operating temperature
--40°C-..+50°C
--40°C-..+50°C
-Production volume
-Low to Medium
-Medium to High
-
-SmartAP AIRLink Core edition is intended for medium to high volume production and deep integration with customer's hardware. The weight of electronics is only 80g and can be tightly integrated in the airframe design. However, heat dissipation requirements (provided by Sky-Drones) should be met for proper system operation.
 
 ### On-site production
-Licensed Production
+- Licensed Production
 The Sky-Drones team helps setting up the production on-site and performs turnkey production commissioning. Manufacturing technology is not disclosed. This option allows customer to optimize the logistics and produce the system locally.
-Reference Design
+- Reference Design
 The Sky-Drones team installs all the equipment on-site and performs turnkey production commissioning as well as transferring production technology.
 
 ![image](https://user-images.githubusercontent.com/42961200/151491900-12780d14-5030-49a8-95ce-d26d190fb654.png)
 
 This option is intended for:
-Drone manufacturers;
-High-volume production;
-Excessively tight integrations.
+* Drone manufacturers;
+* High-volume production;
+* Excessively tight integrations.
 You can:
-Manufacture at your own factory;
-Control the volume;
-Modify schematics and layout to suit your needs.
+* Manufacture at your own factory;
+* Control the volume;
+* Modify schematics and layout to suit your needs.
 You receive:
-Schematics / layout / CAD / BOM;https://youtu.be/_d3SZ3LBoeU team.
+* Schematics / layout / CAD / BOM;https://youtu.be/_d3SZ3LBoeU team.
+* Engineering support from the Sky-Drones team.
+
 This option would suit well to large volume orders, e.g. UAV fleets. Interested? ​
 Hardware customizations
 In any of the above cases, the Sky-Drones team would be glad to slightly or deeply customize hardware to fit the customer's requirements.
