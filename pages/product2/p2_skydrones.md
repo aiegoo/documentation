@@ -61,7 +61,7 @@ $( document ).ready(function() {
     $(".panel-default").height(maxHeight + 50);
 });
 </script>
-    <!-- Service Tabs -->
+    <!-- To be replaced with actual contents. Only for visual satisfaction now -->
 <div class="row">
         <div class="col-lg-12">
             <h2 class="page-header">In this series</h2>
