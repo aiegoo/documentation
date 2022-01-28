@@ -55,7 +55,10 @@ Visibility
 Direct, line of sight
 Ambient temperature
 -40...+50°C
-Air module specifications
+
+### Air module specifications
+![image](https://user-images.githubusercontent.com/42961200/151568723-c6605444-31b5-4e68-a73f-742f852d0009.png)
+
 AIRLink Telemetry Air module
 Parameter
 Value
