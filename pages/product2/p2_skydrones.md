@@ -64,7 +64,7 @@ $( document ).ready(function() {
     <!-- Service Tabs -->
 <div class="row">
         <div class="col-lg-12">
-            <h2 class="page-header">In this site</h2>
+            <h2 class="page-header">In this series</h2>
         </div>
         <div class="col-lg-12">
             <ul id="myTab" class="nav nav-tabs nav-justified nav-tabs-hover">
