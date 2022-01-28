@@ -130,7 +130,8 @@ BPSK_1/2
 
 ### Interfaces
 This page describes the general information and interfaces location of AIRLink Telemetry Module.
-Front side
+
+> Front side
 ![image](https://user-images.githubusercontent.com/42961200/151568937-31be709a-be86-4fd5-b43c-d0b328d9e4b9.png)
 
 Front side
@@ -218,14 +219,21 @@ GND
 ​
 ​
 Ground
-Left side
+> Left side
+![image](https://user-images.githubusercontent.com/42961200/151569239-476bd0e1-a0ec-44a1-bf8d-188237d26346.png)
+
 Left siide
 SMA Antenna connector
+
+> Right side
 Right side
-Right side
+![image](https://user-images.githubusercontent.com/42961200/151569386-fcb2930f-11d9-4c36-8464-8a6ec6981d23.png)
+
 SMA Antenna connector
 Reset button
-Read side
+> Rear side
+> ![image](https://user-images.githubusercontent.com/42961200/151569455-4368698e-036a-4fc0-af01-567eac76604b.png)
+
 Rear side
 TX LED - Transmission activity
 RX LED - Receiving activity
