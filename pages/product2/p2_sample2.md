@@ -260,6 +260,8 @@ In case there is a chance of overheating in your application - the module has 4x
 Bottom side
 Ground module interfaces
 You can find ground module interfaces
+![image](https://user-images.githubusercontent.com/42961200/151569775-5599fec5-ddc7-4b7d-9b70-bea41ffdfcb4.png)
+
 
 ### Installation
 Installation
