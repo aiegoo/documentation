@@ -48,7 +48,7 @@ Sky-Drones provides its users with a comprehensive set of leading drone avionics
 ​ - power distribution board with the voltage / current sensor and power supply;
 ​ - high-precision GNSS, barometer and magnetometer module.
 Sky-Drones ships its partner drones and accessory equipment (for instance,  ADS-B receiver). We are listed sellers for our partners so make sure you  to find out more!
-## Sky-Drones Platform Options
+### Sky-Drones Platform Options
 Sky-Drones Platform is fully compatible with different types of aircraft. Sky-Drones customers have been using the platform for years in BVLOS and EVLOS flights, alongside fully autonomous and GNSS-assisted manual missions.
 Sky-Drones offers two major purchasing options:
 Quick-start using comprehensive ready-made hardware and free software sets;
@@ -58,13 +58,14 @@ deep hardware and software customization;
 integration with customer's infrastructure.
 For further information please see:
 
-### hardware purchasing and production options
+## hardware purchasing and production options
 
-Hardware Purchasing and Production Options
+### Hardware Purchasing and Production Options
 Learn more about the different option for getting Sky-Drones Hardware
 Sky-Drones offer two major purchasing options:
-Purchasing hardware from Sky-Drones website or via international dealers;
-On-site production.
+#### Purchasing hardware from Sky-Drones website or via international dealers;
+
+### On-site production.
 Purchasing Hardware from Sky-Drones
 We appreciate the different integration levels required by the drone manufacturers. Therefore we offer two slightly different editions of AIRLink - the most advanced drone avionics: Enterprise and Core. AIRLink Enterprise is ideal for a quick start, evaluation and prototyping while Core is optimised for deep integration and mid-high volume manufacturing.
 Parameter
@@ -105,7 +106,7 @@ This option would suit well to large volume orders, e.g. UAV fleets. Interested?
 Hardware customizations
 In any of the above cases, the Sky-Drones team would be glad to slightly or deeply customize hardware to fit the customer's requirements.
 
-### software deployment options
+## software deployment options
 Software Deployment Options
 Learn more about the different options of running Sky-Drones software
 
