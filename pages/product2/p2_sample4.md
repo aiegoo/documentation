@@ -21,6 +21,13 @@ youtubeID10: Ael1W6E-qYY
 youtubeID11: sJhzckVa1d8
 youtubeID12: bYpuynTLPTc
 youtubeID13: PQ_GYp6DDTE
+youtubeID14: VBEdQ6UKevU
+youtubeID15: amEAsH2Qbrk
+youtubeID16: La3PkNGyZV4
+youtubeID17: ZqMWScIPCaY
+youtubeID18: 3Iidbm2S9vQ
+youtubeID19: 1bSr7rFWwMQ
+youtubeID20: KqbPkaEFnIA
 ---
 
 ## SmartAP GCS
@@ -276,9 +283,17 @@ The drone will continue flying. It is likely to do so with slightly less accurac
 ## Logs Analysis
 ​ allows users to view, analyse, and export logs recorded on their SD card located in the flight controller.
 To view your logs, go to the SmartAP GCS app > Plot tab in the left-hand menu.
+![image](https://user-images.githubusercontent.com/42961200/151466385-1056cd03-d458-4039-9af6-e9e9cde773c7.png)
+
 Once you've switched to the "Plot" tab, click "Settings" in the top-right corner and select Open log file:
+![image](https://user-images.githubusercontent.com/42961200/151466397-95cf3db7-06de-4ea8-8eec-8c3944e2aae3.png)
+
 Select the log file you would like to analyse from the system file dialog and click Open. You will see the log with all the available parameters. Choose your desired fields to plot them:
+![image](https://user-images.githubusercontent.com/42961200/151466411-68cae6c2-3aff-4da0-92aa-25186282c19c.png)
+
 If you would like to export the log data as an image, KML track, or CSV file for further analysis, simply click "Settings" in the top-right corner and select the preferred option:
+![image](https://user-images.githubusercontent.com/42961200/151466418-c54880e3-1941-4132-bda0-7aa41a227913.png)
+
 
 ## Geotag Images
 ​, along with SmartAP GCS, allows users to precisely geo tag images for further post-processing. When the camera feedback pin is connected to the autopilot, the autopilot detects the exact moment the picture was taken and engraves this information into the log file. It contains the following information:
@@ -290,11 +305,23 @@ Roll - roll of aircraft
 Pitch - pitch of aircraft
 Yaw - yaw of aircraft
 To geotag images, download the log file. Then open SmartAP GCS and open the left side menu:
+![image](https://user-images.githubusercontent.com/42961200/151466443-5d64e8d0-ad85-458f-8e7d-3bb243da0502.png)
+
 And go to Plot tab:
+![image](https://user-images.githubusercontent.com/42961200/151466452-87af87d8-b520-4489-a5b0-8f50046b6bf9.png)
+
 Click the Options menu in the top-right corner and click Open log file...
+![image](https://user-images.githubusercontent.com/42961200/151466466-2ed1529e-dd4e-4ca4-abcd-fd5bb20ec285.png)
+
 You can also simply drag and drop the desired log file into the "Logs" pane. Once the file is open, locate theCAM_TRIGGER group on the right panel.
+![image](https://user-images.githubusercontent.com/42961200/151466475-9a4bafea-f603-46b0-866f-0efeae416759.png)
+
 Select the checkboxes for the fields you would like to export. Normally, all fields are recommended for further processing. Once selected - click Options and click Export CSV.
+![image](https://user-images.githubusercontent.com/42961200/151466486-7e050a30-ed2d-401b-8e8f-1ce9097abab4.png)
+https://youtu.be/VBEdQ6UKevU
 Then you select the folder destination that you'd like the log file to be exported to. After that you can open the file with any file editor and check its content:
+![image](https://user-images.githubusercontent.com/42961200/151466497-70d086fa-baaa-428d-8e96-770a2c98f2a5.png)
+
 Later, this information can be used for further post processing and map stitching.
 
 ## Processing the Logs
@@ -314,58 +341,93 @@ For instance, if you're interested in GNSS (GPS/GLONASS) data you would need GNS
 
 ## Sky-Drones Cloud
 Bringing the way you interact and work with drones online! Cloud-based web application for drone fleet management, performance monitoring, mission planning, real-time control, post-flight AI analytics
+
+![image](https://user-images.githubusercontent.com/42961200/151466534-d2c53d54-900a-41e4-a6bf-a504c672e473.png)
+
 ​
-Sky-Drones Cloud Dashboard
+### Sky-Drones Cloud Dashboard
 With Sky-Drones Cloud we provide an "Everything is Integrated Everywhere" approach
 which completely redefines the way companies build and operate commercial drones.
-Everything
+### Everything
 Sky-Drones Cloud is the place for all data when working with and operating your fleet of drones. You don't need to have your data being distributed across multiple services or excel sheets which are difficult to share and can be lost. A Sky-Drones centralized hub for all information is the key when getting drone workflow to the next level.
-Integrated
+### Integrated
 Sky-Drones Cloud is tightly integrated with all hardware and software products including autopilots and SmartLinks. The data transmitted from the drone to the ground station is also available in the cloud. Data can be synced either post-flight or during the flight with LTE connectivity. Payload data gathering is integrated as well.
-Everywhere
+### Everywhere
 Cloud can be accessed from anywhere and anytime. Drone and operator can be at the flight location while mission managers can observe the flight sitting in a command center on the other side of the globe giving valuable advice and getting exactly what they need. This brings situational awareness of using drones to a completely new level.
-Concept Diagram
+### Concept Diagram
+![image](https://user-images.githubusercontent.com/42961200/151466619-730aedea-df56-473a-bf86-2a6282488c8c.png)
 
 ### Sign up and Log in
 To sign up and log in, go to  and create a new account.
 Follow the video tutorial below:
 
+{% include youtubePlayer.html id=page.youtubeID14 %}
+
 ### Dashboard
 Sky-Drones Cloud's powerful and flexible dashboard provides all major information at a glance. General information about assets, users and flights allows you to quickly estimate fleet performance and make well-rounded decisions with confidence. Filter over a certain period of time and within a specific fleet - we provide all the necessary tools for increasing the efficiency of your drone workflows.
+![image](https://user-images.githubusercontent.com/42961200/151466746-4778e0a8-ee42-4b0f-8024-819912f7ba15.png)
+
 
 ### Drones and Operators
 Interested in which drone is used the most? Who your most experienced pilot is? The pilot the highest number of flight hours in the team? Drone and pilot analytics allows easy access to all this information, plus much more! Sky-Drones Cloud is just like Google Analytics... for Drones.
+![image](https://user-images.githubusercontent.com/42961200/151466758-66b435c8-cf04-49a3-9c1f-5be1d933f9f8.png)
+
 
 ### Flight Locations
 The flight locations widget allows fleet managers to understand how vehicles are being used, ensures that all operations are compliant, and that they stay within the required regulations. Filter for a certain period of time or specific fleet - all the tools needed for highlighting exactly what you need to see are readily available.
+![image](https://user-images.githubusercontent.com/42961200/151466778-03be5f52-326e-415a-85fc-ee106982c228.png)
+
 
 ### Fleet Management
 The fleet management part of Sky-Drones Cloud allows you to keep track of all your assets within the company. Data is synchronized in real-time with drones using LTE networks. Check for the currently installed software version on the vehicle and update remotely when necessary. Interested in real-time flights? Use this page to see which drone and/or pilot is online now right now.
+![image](https://user-images.githubusercontent.com/42961200/151466795-c2bc3da5-fcc7-40e9-98af-7743851ce9f3.png)
+
 Sky-Drones Cloud provides entire-fleet readings and status updates on one screen, with clear visuals as to where each drone has been, where its next mission is, and the type of terrain that will be encountered. Meanwhile, located in the same hub of information, flight hours, battery life, and real-time flights/flight logs provide the necessary information to maintain a vast fleet of drones.
 
 ### Flight Logs
 Every flight log is stored in the cloud and is accessible when you need it, no matter where you are in the world. Detailed flight log analytics helps to ensure the best possible flight performance of your vehicle and detect potential mechanical issues before your customers or pilots become aware.
 Flight logs allow the user to create a detailed history of all historic, ongoing, and future drone operations. Constant flight log monitoring ensures safe and reliable operations for the whole fleet and for each individual drone/pilot.
-DroneLogbook Integration
+![image](https://user-images.githubusercontent.com/42961200/151466828-a35e920b-2492-42db-bd42-731699839b70.png)
+
+### DroneLogbook Integration
 Sky-Drones Cloud offers Dronelogbook integration for exporting the flight logs to our partner.
 
+{% include youtubePlayer.html id=page.youtubeID15 %}
+
+
 ### 3D Mission Planning
+
+{% include youtubePlayer.html id=page.youtubeID16 %}
+
 Add waypoints interactively and view the flight plan from any perspective. Rotate, change view angle, tilt, view from the surface, then get back to the orthogonal view again before completing your mission. Adjust waypoint position and altitude interactively to achieve the best mission planning user experience.
 
 ### Integrated UTM
 Sky-Drones have integrated Altitude Angel, AirMap, and High Lander UTM services into Sky-Drones Cloud. To explore drone and airspace integration using Altitude Angel, watch the video below:
-Altitude Angel UTM Integration
-3D Terrain and Ground Hazards data
+### Altitude Angel UTM Integration
+{% include youtubePlayer.html id=page.youtubeID17 %}
+
+#### 3D Terrain and Ground Hazards data
 Instead of relying on elevation profiles to plan missions, pilots get an intuitive 3D view that allows them to visually create flight paths with interactive waypoints, all in the context of high-resolution World Terrain. Terrain data is integrated with weather information and airspace data from , helping pilots avoid ground hazards, manned flights, and other airspace restrictions.
-Airspace Data
-Real-Time Flight Authorization
-Sky-Drones Cloud supports real-time flight request and authorization with . Find your intended flight area and submit a flight plan. This airspace will be reserved for you and this will be publicly available on Altitude Angel's online Drone Safety Map.
+![image](https://user-images.githubusercontent.com/42961200/151467525-93e3d1b0-317e-45dc-a866-afa34d46e08f.png)
+
+#### Airspace Data
+![image](https://user-images.githubusercontent.com/42961200/151467546-064c99b0-84c3-4ac6-9e29-f30f2452219b.png)
+
+#### Real-Time Flight Authorization
+Sky-Drones Cloud supports real-time flight request and authorization with [Altitude Angel(https://www.altitudeangel.com/). Find your intended flight area and submit a flight plan. This airspace will be reserved for you and this will be publicly available on Altitude Angel's online Drone Safety Map.
 Cylinder Flight Plan
+{% include youtubePlayer.html id=page.youtubeID18 %}
+
 Corridor Flight Plan
+{% include youtubePlayer.html id=page.youtubeID19 %}
 
 ### Real-Time Flights
 Enjoy real-time LTE drone control and video streaming with Sky-Drones Cloud and SmartLink. Everything is web-based - you need only your login and password, no need to install any software whatsoever.
+{% include youtubePlayer.html id=page.youtubeID20 %}
+
 Sign in to the Cloud, select the desired online vehicle, fly via LTE networks. We provide the necessary infrastructure for ultra-low latency flights over the internet without any additional software requirements. Fly right in your web browser with HD video alongside all major telemetry. Operate multiple drones on a single page.
+![image](https://user-images.githubusercontent.com/42961200/151467714-773c6421-59a5-4727-943f-58f6c348acd9.png)
+
 
 ### Sky-Drones API
 API reference: https://cloud.sky-drones.com/swagger/
