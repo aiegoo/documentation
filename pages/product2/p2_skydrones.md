@@ -5,7 +5,7 @@ tags: [projects]
 last_updated: October 02, 2021
 keywords: [jdlab, project, gcs, qt]
 summary: "this project has been showcased by Mobis for CES 2020"
-sidebar: mydoc_sidebar
+sidebar: product2_sidebar
 permalink: p2_skydrones.html
 folder: product2
 toc: false
