@@ -131,8 +131,11 @@ BPSK_1/2
 ### Interfaces
 This page describes the general information and interfaces location of AIRLink Telemetry Module.
 Front side
+![image](https://user-images.githubusercontent.com/42961200/151568937-31be709a-be86-4fd5-b43c-d0b328d9e4b9.png)
+
 Front side
-ETHERNET - JST GH SM08B-GHS-TB
+
+> ETHERNET - JST GH SM08B-GHS-TB
 Pin number
 Pin name
 Direction
