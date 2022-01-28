@@ -52,7 +52,7 @@ iOS
 Linux
 This quick video tutorial will help you to download SmartAP GCS, create your user profile, log in and start using the app:
 
-{% include youtubePlayer.html  id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID %}
 
 Follow the steps below to install the application:
 
