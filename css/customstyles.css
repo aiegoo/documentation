@@ -1460,6 +1460,7 @@ table thead th code.highlighter-rouge {
 .box:hover {
     background-color: #440606;
 }
+.box6 {display: none;}
 
 #userMap {
     overflow-x: auto;
