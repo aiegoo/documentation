@@ -7,7 +7,7 @@ keywords: [jdlab, project, gcs, qt]
 summary: "this project has been showcased by Mobis for CES 2020"
 sidebar: mydoc_sidebar
 permalink: p2_skydrones.html
-folder: mydoc
+folder: product2
 toc: false
 simple_map: true
 map_name: usermap
