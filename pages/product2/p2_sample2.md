@@ -311,18 +311,25 @@ Flight control system design and software are based on the popular widely adopte
 
 ## Software development
 Learn more about developing the software with AIRLink and running your own custom apps.
-Accessing AIRLink Mission Computer with SSH
+
+### Accessing AIRLink Mission Computer with SSH
 Open Terminal and access AIRLink Mission Computer with SSH using the following command:
+
 ssh smartap@airlink.local
+
 You will be asked for the password, the default credentials are:
 Login: smartap
 Password: smartap
+
 If you log in successfully you will see the following welcome page:
+![image](https://user-images.githubusercontent.com/42961200/151573358-e5202a94-e79e-4aa8-8d9e-4b97bf8deedd.png)
+
 If you are connected to AIRLink using WiFi Access Point mode and your computer doesn't support local DNS, you would need to use IP address 10.42.0.1 instead of airlink.local.
 That's all you need for the development and we assume now you know what to do :)
 Root access
 SSH root access is not available as standard for security and safety reasons. However, this can be provided by Sky-Drones upon request. Please  to get an access.
-Read / Write MAVLink Telemetry data
+
+### Read / Write MAVLink Telemetry data
 SmartAP AIRLink provides user access for MAVLink telemetry stream which is useful for 3rd party applications development where you need to have access to the data from / to Autopilot and to / from Ground Control Station.
 AIRLink supports 3 ports for user applications: 2 absolutely independent UDP ports and 1 TCP port for third party apps access:
 #
@@ -346,7 +353,8 @@ TCP
 14556
 MAVLink
 For developer's convenience we offer code samples for reading and writing MAVLink messages. This example displays how to read HEARTBEAT message from the other MAVLink nodes and send HEARTBEAT from our example.
-UDP Example
+
+### UDP Example
 Read / write MAVLink using UDP connection:
 #!/usr/bin/python3
 # Usage example of MAVLink UDP port for user applications
@@ -403,7 +411,8 @@ while True:
 ​
 Run this example with:
 python3 heartbeat_example_udp.py
-TCP Example
+
+### TCP Example
 Read / write MAVLink using TCP connection:
 #!/usr/bin/python3
 # Usage example of MAVLink TCP port for user applications
@@ -454,7 +463,7 @@ while True:
         print("HEARTBEAT from %d: %s" % (msg.get_srcSystem(), msg))
 ​
 ​
-Run the example
+### Run the example
 Run the example with the following commands:
 # Login via SSH
 ssh smartap@airlink.local
@@ -462,10 +471,16 @@ ssh smartap@airlink.local
 # Make sure that you have the example
 # file in your home directory and run it with
 python3 heartbeat_example_udp.py
+
 Once you run the example above you should expect the following output. This is the Heartbeat message coming from the Flight Controller:
+![image](https://user-images.githubusercontent.com/42961200/151573808-a67d6995-0eda-448d-8694-6a7b797a1512.png)
+
 If you connect with the Ground Control Station software you will also see the heartbeat coming from the GCS:
+![image](https://user-images.githubusercontent.com/42961200/151573839-20420550-a635-4297-984d-0e4dba316c7c.png)
+
 Feel free to use these code samples for your custom apps development using SmartAP AIRLink and MAVLink communication protocol.
-Get Video feed
+
+### Get Video feed
 AIRLink provides video feed access via RTSP either locally (127.0.0.1) or remotely (airlink.local). Currently, we support integrated CSI camera and HDMI input as well as  cameras over Ethernet:
 #
 Video feed
@@ -496,87 +511,119 @@ gst-launch-1.0 rtspsrc location=rtsp://airlink.local:8554/camera/0 ! rtph264depa
 If you have any other questions related to the software development with AIRLink please get in touch with our support team
 
 ## Firmware updates
-SmartAP AIRLink firmware update on the one drone
+### SmartAP AIRLink firmware update on the one drone
 The firmware update process is simple and automated. When  finds a new firmware in , it asks the user for approval and uploads new firmware to the drone mission computer. Mission computer updates its firmware and the firmware of the flight control computer.
-Drone fleet firmware update
+### Drone fleet firmware update
 You can see firmware versions and update the firmware of your whole drone fleet or one single part using . After you choose drones, the task scheduler will gradually update the firmware as soon as these drones are connected to the .
 
 ## Update autopilot bootloader
 In some cases you might need to update the autopilot bootloader to get it to the latest version or to recover the unit.
-Download Bootloader file
+### Download Bootloader file
 First of all, you would need to download the bootloader file and save it on your computer. You can get the most recent bootloader file with the link below:
 SmartAP AIRLink Bootloader
-Copy bootloader file on a microSD card of the autopilot
+
+### Copy bootloader file on a microSD card of the autopilot
 Take the microSD card from your autopilot, plug it into your computer and copy smartap_airlink_bootloader.bin into the foot folder. After that, plug in the microSD card back into the AIRLink FMU microSD card slot.
-Run update procedure
+
+### Run update procedure
 Connect SmartAP AIRLink to your computer using FMU USB port and open Terminal in QGC.
 Locate the microsd card folder:
 cd fs/microsd
 List the files to make sure that there is a required bootloader file:
 ls
 You would see the following output:
+![image](https://user-images.githubusercontent.com/42961200/151574066-59917a00-ef5e-4fbb-9419-133beee9aa03.png)
+
 Run bootloader update procedure:
 bl_update smartap_airlink_bl.bin
 You should expect the following output:
+![image](https://user-images.githubusercontent.com/42961200/151574084-2531556d-d9d2-4a7a-a52e-f92aeddd79fc.png)
+
 Autopilot bootloader update has been successfully completed.
 
 ## Troubleshooting
-Unable to access airlink.local
+### Unable to access airlink.local
 Usually AIRLink dashboard is available at  address, however, this is browser and router dependent and not all routers support the technology needed for this (local DNS). If your router does not support the Local DNS technology, then you can find the assigned address on the settings page of your router and access AIRLink with the IP address (this is usually 192.168.1.X).
 To identify the IP address you will need to go to your router dashboard, login and find the connected devices list. Usually, it looks as follows:
+![image](https://user-images.githubusercontent.com/42961200/151574132-c0cd119a-1141-4dff-89e8-60b0ec0eda5f.png)
+
 In our case we found our that the IP address of the AIRLink in the home / office network is 192.168.0.19
 Therefore, if we go to 192.168.0.19 in the web browser we will see the same welcome page.
+![image](https://user-images.githubusercontent.com/42961200/151574159-b650fc87-278b-4ab1-beb8-a1b73dbb8bf1.png)
+
 
 ## Firmware recovery
 Steps to recover the firmware in case something doesn't go right
-Get the firmware
+### Get the firmware
 Contact Sky-Drones Technologies using this to get the firmware.
-Prepare microSD card
+
+### Prepare microSD card
 You will need an empty micro SD card with at least 32GB capacity to flash the firmware image onto it.
-Download and install the flashing tool
+
+### Download and install the flashing tool
 Download  software, this will help to prepare the bootable SD card and flash an image onto it. After the download is completed, install the software and open it.
-Flash the image onto SD card
+
+### Flash the image onto SD card
+![image](https://user-images.githubusercontent.com/42961200/151574314-b396f0ee-2db3-451f-b2b4-5b36aa291303.png)
+
 Select an image file you have just downloaded
 Select the Target (your 32 GB SD card)
 Make sure that you have selected the correct target which corresponds to the microSD card. Selecting the wrong target will result in the target being overwritten and lost data.
 Click Flash!
 The process will take approximately 20 minutes. Make sure to safely unmount SD card before unplugging it from the card reader.
- Flash image in AIRLink
-Insert the SD card into CPU SD card slot
-Connect the main Power supply to the AIRLink, the system is powered on.
+### Flash image in AIRLink
+
+1. Insert the SD card into CPU SD card slot
+2. Connect the main Power supply to the AIRLink, the system is powered on.
+![image](https://user-images.githubusercontent.com/42961200/151574379-701d675f-af8c-4105-b700-229bf38faf49.png)
+
 Firmware upgrade process will be started and will include the following key milestones:
-In approximately 5 minutes, the blue CAM LED will light up. This means that the start of the firmware upgrade process has been successfully initiated.
-In approximately 15-20 minutes CAM LED will start flashing slowly. This means that the firmware process has been completed and the verification stage is in progress.
-In approximately 2-5 minutes after the start of CAM LED flashing, the AIRLink will turn itself off automatically. This means that the firmware upgrade process has been successfully completed.
+1. In approximately 5 minutes, the blue CAM LED will light up. This means that the start of the firmware upgrade process has been successfully initiated.
+2. In approximately 15-20 minutes CAM LED will start flashing slowly. This means that the firmware process has been completed and the verification stage is in progress.
+3. In approximately 2-5 minutes after the start of CAM LED flashing, the AIRLink will turn itself off automatically. This means that the firmware upgrade process has been successfully completed.
+![image](https://user-images.githubusercontent.com/42961200/151574556-d9d111d3-dffd-4c7f-b373-e800f15eeb78.png)
+
 CAM LED Status light (Blue)
 After that, you need to turn off the power and remove the microSD card. On the next power up the AIRLink will boot in standard operating mode.
 WARNING: DO NOT DISCONNECT THE POWER SUPPLY OF AIRLINK DURING THE UPGRADE PROCESS
 Don't forget to remove the microSD card from the slot. Otherwise, the firmware update process will be started again on the next power up.
 
+## CAD model
+![image](https://user-images.githubusercontent.com/42961200/151574940-b1cc2d96-1453-485c-8dfd-961b9e535e73.png)
+
 
 ## FAQ
 A selection of questions put forward by our consumers. If you require any more information, do not hesitate to contact us today!
-When is AIRLink available to purchase?
+
+> When is AIRLink available to purchase?
 Right now! We have ramped up production of AIRLink units and it's easy to order one from our sales team by completing our  on the ​
-Where can I find detailed specifications for AIRLink?
+
+> Where can I find detailed specifications for AIRLink?
 Slightly more generic information is available on our website on the , and we have our detailed  that has a more in-depth collection of data on AIRLink
-Where can I find the setup and installation information for AIRLink?
+
+> Where can I find the setup and installation information for AIRLink?
 Via our , or follow docs.sky-drones.com - this is our online documentation portal and contains all the detailed information for all our hardware and software products
-Does AIRLink support payload connections? How can I connect my payload to AIRLink?
+
+> Does AIRLink support payload connections? How can I connect my payload to AIRLink?
 AIRLink has two camera ports. One is a CSI and the other is HDMI. We include a CSI camera in every AIRLink set, alongside a mini-HMDI to micro-HDMI cable for connecting your payload camera immediately. USB cameras or IP-based cameras are also attachable, just  and we can talk you through it!
-Can I run my own software on AIRLink?
+
+> Can I run my own software on AIRLink?
 Yes! We can give you full access to the mission computer and autopilot so you can deploy your own applications through AIRLink. This is something we can work on with you, so make sure to ​
-Is AIRLink open source?
+
+> Is AIRLink open source?
 AIRLink uses widely adopted drone industry standards so modifying the software is doable. The hardware is not open source but for our large volume manufacturers we can provide you with the reference design and help you set up your own production process. This will allow you to control your own volume of AIRLink sets
-Is AIRLink powerful enough to run AI algorithms and machine learning?
+
+> Is AIRLink powerful enough to run AI algorithms and machine learning?
 Yes! AIRLink quite literally stands for 'Artificial Intelligence and Remote Link'. This means that you have the computing power to run complex algorithms onboard
-How can I connect AIRLink to my computer?
+
+> How can I connect AIRLink to my computer?
 AIRLink has both integrated WiFi and LTE connectivity. WiFi can be used as the access point to connect AIRLink to your router, and LTE connectivity means that AIRLink comes to you with the internet already enabled. You need only set up or log into your account and enable the data plan.
 
 Alternatively, use your own carrier and data plan and manage this yourself if you'd prefer.
 
 Finally, AIRLink has an ethernet port for IP datalink integration. Stay up to date with Sky-Drones for more information!
-What is your manufacturing capability?
+
+> What is your manufacturing capability?
 AIRLink is manufactured in the hundreds per month, but if required we can manufacture thousands per month with a prior requirement notification. AIRLink is manufactured in the United Kingdom using genuine and quality-assured materials. All units are tested before being shipped to customers  
 
 {% include links.html %}
