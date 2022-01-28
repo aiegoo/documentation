@@ -9,6 +9,7 @@ map_name: usermap
 box_number: 3
 folder: product2
 youtubeID:pOlX6_TUv1w
+youtubeID: sGrz3jl88Uk
 ---
 
 ## SmartLink
@@ -104,9 +105,12 @@ BPSK_1/2
 ## Interfaces
 This page describes general information and interface location for SmartLink Air and Ground modules.
 Air Module
-Top
+
+#### Top
 Antenna SMA connectors
-Left
+![image](https://user-images.githubusercontent.com/42961200/151635316-dc124317-ed55-4487-8850-96fda49ceaf1.png)
+
+#### Left
 5V DC power input socket
 Reset button
 CSI camera Port
@@ -114,6 +118,9 @@ USB for firmware upgrade
 SPI 0 / 1
 I2C 0 / 1
 UART 0 / 1 (console and autopilot telemetry)
+
+![image](https://user-images.githubusercontent.com/42961200/151635333-a18ed200-c9f8-4562-8cef-00cbfcfcba18.png)
+
 SPI 1
 ​
 ​
@@ -164,22 +171,36 @@ SPI0 SCLK
 5V OUT
 TEL (Telemetry) port: TTL 3V3, Baudrate 57600
 DBG (Debug) port: TTL 3V3, Baudrate 9600
-Front
+
+#### Front
 Front side has an integrated fan. It is important to have a clear space to allow for air flow circulation in front of this side.
-Right
+![image](https://user-images.githubusercontent.com/42961200/151635349-b80e5cb1-852e-4372-84d4-0c7520fb53ca.png)
+
+#### Right
+
 Mini HDMI input
 Micro SD card slot
 Camera status LEDs
-Rear
+
+![image](https://user-images.githubusercontent.com/42961200/151635378-7405c766-6584-4667-a556-2d36fe1711b0.png)
+
+
+#### Rear
 USB A connectors for peripherals connection, for instance:
 4G / LTE modem
 Rockblock satellite communication system
 FLARM ADSB system
-Bottom
-Ground Module
-Top
+![image](https://user-images.githubusercontent.com/42961200/151635402-198411b0-92f3-40a7-a2c5-154c7984bf0e.png)
+
+#### Bottom
+![image](https://user-images.githubusercontent.com/42961200/151635427-e0dcc9f1-3366-4da0-8af5-df8e00151970.png)
+
+### Ground Module
+#### Top
 The front side has an integrated fan. It's important to have a clear space to allow for airflow circulation in front of this side.
-Left
+![image](https://user-images.githubusercontent.com/42961200/151635439-4ce6782e-09ee-42da-8268-7d0cf27a4cd4.png)
+
+#### Left
 TX: blinking when packets are being transmitted
 RX: blinking when packets are being received
 LNK: ethernet / USB link established
@@ -197,10 +218,17 @@ Bottom
 
 ## Set content
 Everything you need to setup and start using SmartLink
-Unboxing video
+
+#### Unboxing video
+
+{% include youtubePlayer.html id=page.youtubeID1 %}
+
 SmartLink unboxing video
-Set contents
+
+### Set contents
 SmartLink set includes everything needed to setup wireless communication for video, telemetry and control. A standard set contains:
+![image](https://user-images.githubusercontent.com/42961200/151635917-dfe4f0ab-1462-426f-b5d3-ac5956cf76d7.png)
+
 SmartLink Ground module
 SmartLink Air module
 2x Air Module antennas
@@ -212,15 +240,123 @@ Air module power cable
 Ground module power cable
 
 ## Installation
-Preparing Air module
+### Preparing Air module
 First of all, attach your antennas to the air module:
+![image](https://user-images.githubusercontent.com/42961200/151635938-b2deea2e-55a4-480b-925c-467a1559aeef.png)
+
 WARNING: DO NOT power up any of the modules without antennas! Powering up the modules without antennas may cause malfunction of the amplifier and permanent damage. Powering up without antennas voids warranty.
 Then attach the power supply cable and autopilot telemetry cables:
 Power supply goes to 5V DC connector
 Autopilot telemetry cable goes to UART connector
+![image](https://user-images.githubusercontent.com/42961200/151635965-bf69d259-280d-4b56-8097-db1c0abf1723.png)
+
 What the air module should look like with power and telemetry cables connected:
 Red cable in the autopilot telemetry cable is 5V power supply from SmartLink to Autopilot. If your autopilot is powered from its own power supply then remove the red cable. In this case you should only used black (GND) and yellow / green (Data TX / RX). By default, the whole cable is supplied without the red cable.
+![image](https://user-images.githubusercontent.com/42961200/151635982-94013e37-5afd-4703-a370-6785e3e3df17.png)
+
 Connect CSI camera to camera socket. Use a small sharp tool to unlock the crimp:
+![image](https://user-images.githubusercontent.com/42961200/151636011-505d234d-e49c-46aa-9456-92a59892478b.png)
+
+Put the FPC camera cable in and lock the crimp by pushing it. At this stage the setup should look as follows:
+![image](https://user-images.githubusercontent.com/42961200/151636558-52766873-a63d-48c6-8568-2df796eddf05.png)
+
+Connect HDMI camera if desired:
+![image](https://user-images.githubusercontent.com/42961200/151636520-5d1f2ef5-2dd4-4bb3-8a51-c57be9c3b016.png)
+
+The setup should look as follows:
+![image](https://user-images.githubusercontent.com/42961200/151636509-574bb8b2-2644-4968-90f8-221a4658e3b6.png)
+
+In this example we demonstrate with a GoPro Hero 6 video camera with 1080p@60fps video output. SmartLink is capable of capturing the following video source types:
+1080p@60fps
+1080p@30fps
+720p@60fps
+720p@30fps
+
+### Preparing Ground module
+Attach antennas to the ground module:
+![image](https://user-images.githubusercontent.com/42961200/151636491-9c636817-0dd7-41d8-aa93-35f5f5236f9a.png)
+
+By default, 5 dBi antennas come included in the set. Depending on your specific applications you might choose to use alternative antennas designed for 2.4 GHz band.
+Connect your micro USB cable and power cable to the ground module as shown below:
+![image](https://user-images.githubusercontent.com/42961200/151636481-53954509-d209-4b85-834d-7defb6eb392b.png)
+
+If you would like to use custom antennas, please contact us here
+
+### Power supply
+Ground module supports any power supply source with a voltage ranging from 10V to 50V. We recommend to use 3S or 4S LiPo battery to power the ground module. The typical current for 3S battery power is around 1A at maximum power output.
+Air module is 5V tolerant only. Peak current can be up to 3A, therefore make sure to provide a powerful, stable and reliable power supply to the air module. We highly recommend to use SmartAP PDB 5V output port to power SmartLink. SmartAP PDB has 5V at 5A max power output which powers SmartLink perfectly.
+DANGER: AIR MODULE IS 5V-ONLY TOLERANT. POWERING THE MODULE WITH HIGHER VOLTAGE MAY CAUSE PERMANENT DAMAGE TO THE SYSTEM. IT IS HIGHLY RECOMMENDED TO POWER FROM SMARTAP PDB 5V OUTPUT
+Please note that warranty is void if air module is powered with a source above 5V.
+![image](https://user-images.githubusercontent.com/42961200/151636467-8c1f63b4-9193-4056-adba-a16248f36e61.png)
+
+Connect two power leads to SmartAP PDB 5V output. SmartAP PDB can be powered from 3S-12S LiPo battery. We power it from laboratory power supply for this demonstration (15V).
+![image](https://user-images.githubusercontent.com/42961200/151636437-51921837-13b3-4d03-aee9-76a02ceda352.png)
+
+### Autopilot
+SmartLink system is compatible with any autopilot which has TTL UART telemetry port. For instance, it's compatible with:
+SmartAP Autopilot
+Pixhawk series Autopilot
+APM series Autopilot
+other TTL UART telemetry port autopilots
+For this demonstration we use [SmartAP MAX](https://sky-drones.com/smartap-max) Autopilot from Sky-Drones:
+![image](https://user-images.githubusercontent.com/42961200/151636361-25e2794f-3fa9-4e4e-9821-1cb1b0e2172a.png)
+
+Connect telemetry cable to Radio port of the autopilot as shown below:
+![image](https://user-images.githubusercontent.com/42961200/151636348-2dd89cbf-91d0-4a96-93d4-b2e443aff23f.png)
+
+After completing the steps above you will have fully assembled air module. Before the first power up, make sure you have assembled air module and ground module as shown below:
+![image](https://user-images.githubusercontent.com/42961200/151636321-029d1d42-56f4-433d-a279-649037a255a0.png)
+
+{{site.data.alerts.hr_shaded}}
+
+### Initial power up
+Power up both ground module and air module.
+![image](https://user-images.githubusercontent.com/42961200/151636306-7fe89d61-b03b-488b-b023-1a71e17cc05c.png)
+
+It might take up to 15 seconds for both modules to properly boot up and link to each other. By default, modules come pre-configured and paired. Transmission power is set to minimum.
+Ground module has status LEDs which allows it to identify the current status of the system. The most important LEDs are RSSI:
+![image](https://user-images.githubusercontent.com/42961200/151636301-df4966b4-6768-413e-ae0f-d56d7c3d7cea.png)
+
+Three RSSI LEDs blinking altogether: RF off
+Three RSSI LEDs blinking in turn: Searching for pair
+One, two or three LEDs solid: RSSI status, more solid LEDs equals better signal
+The expected LEDs pattern is as shown below - blinking in turn and then all three LEDs solid:
+![image](https://user-images.githubusercontent.com/42961200/151636236-bfd50a66-2f64-4ed2-abcf-0fc7c742e6a4.png)
+
+### Software
+#### Verify SmartLink was discovered
+Normally you don't need to run the steps in this section since SmartLink should be recognized automatically. But the steps in this section might be useful for establishing connection if this has not happened automatically.
+First of all, check if SmartLink ground module has been recognized properly by your computer. You should be able to see it as Ethernet device. For instance, go to the command line and type ifconfig  for MacOS / Linux or ipconfig  for Windows:
+![image](https://user-images.githubusercontent.com/42961200/151636212-fd2e7f16-bbca-4add-813a-f7318f1b2202.png)
+
+You should see that one of the network adapters has an IP address in the range of 192.168.168.xxx. This means that SmartLink has been successfully discovered by your computer. Alternatively, you can check the configuration with Network Manager and / or assign a static IP address:
+![image](https://user-images.githubusercontent.com/42961200/151636194-99e621f8-4d30-4399-bc94-7eb44da79d22.png)
+
+Make sure you have configured your WiFi internet connection with the priority higher than the priority of SmartLink ethernet connection. Otherwise, your computer will loose internet connection while SmartLink ground module is connected.
+Another method to check that SmartLink is properly recognized by your computer is to ping it. Open the command line and type  ping smartlink.local. If you are able to see the proper response in the command line then it means SmartLink has been discovered by your computer.
+SmartLink is configured with static IP address 192.168.168.100. For instance, if you're running SmartLink with Android which doesn't support Local DNS - please use static IP address for connecting.
+In case you're unable to ping `smartlink.local` it might be a DNS problem. In other words, the operating system can't find the IP address' corresponding name. This might happen on some Windows platforms and is applied to all Android based platforms. Follow these steps to resolve it: Use IP addressing instead of DNS
+
+### Run Ground Station Software
+Once you have everything connected and powered up you may start the ground station software. SmartLink is compatible with various popular ground control stations. In this demonstration we use SmartAP GCS by Sky-Drones. SmartLink is fully supported by SmartAP GCS. Start SmartAP GCS and go to Settings in left hand side menu:
+![image](https://user-images.githubusercontent.com/42961200/151636168-332468c4-5faf-47a9-844e-f24335a4d0e7.png)
+
+Enable the option Autoconnect to SmartLinkas this will enable SmartLink to automatically connect.
+After that, go back to the World pane and click the Connections button in the top right hand corner. You will see SmartLink connection added. If it's not added automatically, or it is missing completely, you may add it manually as shown below:
+![image](https://user-images.githubusercontent.com/42961200/151636149-45fedfa0-35a2-4043-8d7a-0970d9300c4f.png)
+
+Upon clicking Open connection will be established and you should be able to see telemetry information at this step.
+To set up the video click on the Settings button of the one of the video widgets and select the desired source. For this demonstration we need to select SmartLink Video 1 option:
+![image](https://user-images.githubusercontent.com/42961200/151636132-3c5c80b3-6173-49e6-a7d8-b3b42cfc2e54.png)
+
+After 1-2 seconds the video feed will appear and connection status will be set to OK:
+![image](https://user-images.githubusercontent.com/42961200/151636109-9aac74c9-b494-4e4c-9427-a2dd4b4b8fc8.png)
+
+You can easily switch between full map and full video simply by tapping on the video feed you'd like to see in full screen:
+![image](https://user-images.githubusercontent.com/42961200/151636096-240b9aab-c053-4dd8-96ba-7e94e6854403.png)
+
+Finally, the full setup looks as follows:
+![image](https://user-images.githubusercontent.com/42961200/151636081-b0691814-683c-483b-aded-ecfeba585bdc.png)
 
 ## Manual Control
 SmartLink allows users to transmit a manual control signal from any USB device (e.g. joystick, gamepad or RC radio with USB port) along with other messages when connected to ground control station.
