@@ -112,7 +112,7 @@ SmartAP GCS has integrated video streaming support from 2 cameras simultaneously
 ### Latency vs Quality settings
 ​ and SmartAP GCS support user configurable video streaming parameters - the feed can be optimised for latency and for quality depending on your application requirements:
 
-{% include yutubePlayer.html id=page.youtubeID3 %}
+{% include youtubePlayer.html id=page.youtubeID3 %}
 Variable bitrate and manual bitrate settings vs video quality
 Latency vs quality optimisation
 Buffering produces a smoother picture for broadcasting applications
