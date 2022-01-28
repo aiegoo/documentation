@@ -31,23 +31,23 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Sample 1
+    - title: Sky-drones platform
       url: /p2_sample1.html
       output: web, pdf
 
-    - title: Sample 2
+    - title: Telemetry
       url: /p2_sample2.html
       output: web, pdf
 
-    - title: Sample 3
+    - title: SmartLink
       url: /p2_sample3.html
       output: web, pdf
 
-    - title: Sample 4
+    - title: GCS&Cloud
       url: /p2_sample4.html
       output: web, pdf
 
-    - title: Sample 5
+    - title: SmartAP
       url: /p2_sample5.html
       output: web, pdf
 
