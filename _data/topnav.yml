@@ -29,7 +29,7 @@ topnav_dropdowns:
         - title: LasVegas CES
           url: /p2_mobis.html
         - title: Sky-drones
-          url: /p2_mobis.html
+          url: /p2_skydrones.html
     - title: Collection
       folderitems:
         - title: drones

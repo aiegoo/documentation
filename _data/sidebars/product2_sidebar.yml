@@ -27,7 +27,7 @@ entries:
       url: /p2_landing_page.html
       output: web
 
-  - title: Simple Workflow
+  - title: JDLab GCS
     output: web, pdf
     folderitems:
 
