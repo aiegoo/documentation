@@ -72,7 +72,10 @@ Dimensions
 50x50x30 mm
 Weight
 50 g
-Ground module specifications
+
+### Ground module specifications
+![image](https://user-images.githubusercontent.com/42961200/151568832-f6701080-9efd-4c06-bddf-0355fea534fd.png)
+
 AIRLink Telemetry Ground module
 Parameter
 Value
