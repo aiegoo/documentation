@@ -21,12 +21,23 @@ Recording of the LIVE webinar hosted by Sky-Drones Founder & CEO Kirill Shilov d
 {% include youtubePlayer.html id=page.youtubeID %}
 
 Description
-Air module
+
+### Air module
+![image](https://user-images.githubusercontent.com/42961200/151624548-ab9b8846-560f-4bb5-8ece-4a1354507ca7.png)
+
 ​ Air is based on a powerful quad-core ARM Cortex A53 SoC (system-on-chip) computer running Linux. The system is capable of handling two real time HD video streams from cameras (CSI and HDMI), autopilot telemetry and control. It has an abundant supply of resources for user applications with various interfaces including USB, UART, I2C, and SPI allowing users to connect their desired payloads and tightly integrate it with their flight controller and / or ground control station. LTE connection is also available and is operated by plug and play technology.
-Ground module
+
+### Ground module
+![image](https://user-images.githubusercontent.com/42961200/151624572-2fe99cd0-8114-45f7-b975-970d48be1439.png)
+
 Ground module is extremely compact and lightweight. It has a micro USB connector to interact with any kind of device - laptops, smartphones, tablets, and desktop computers are all supported. All you need to do is connect it and open the  application. Ground module features an active cooling system which allows the module to withstand high ambient temperatures making it even more reliable in harsher environments. 2x2 MIMO technology provides higher bandwidth, lower latency and longer range.
-How it works
-Included in your set
+
+### How it works
+![image](https://user-images.githubusercontent.com/42961200/151624637-d5d3bc1f-e0ac-4058-90f6-110404cec236.png)
+
+### Included in your set
+![image](https://user-images.githubusercontent.com/42961200/151624663-9676bae1-7bf0-4d43-9a9c-ea012b7eef3e.png)
+
 SmartLink Ground Module
 SmartLink Air Module
 2x Air Module antennas
@@ -36,8 +47,13 @@ Telemetry cable
 HDMI cable
 Air Module power cable
 Ground Module power cable
-Interfaces
-Software
+
+### Interfaces
+![image](https://user-images.githubusercontent.com/42961200/151624700-1622f0b7-70bd-4246-a066-a21757804d9c.png)
+
+### Software
+![image](https://user-images.githubusercontent.com/42961200/151624749-6649779e-0760-4e44-9e8b-7818d3ea40c4.png)
+
 SmartLink was specifically designed to be used with  - our powerful cross-platform ground control station.  supports:
 2x HD video streams display
 Full camera controls
