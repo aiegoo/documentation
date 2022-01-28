@@ -9,6 +9,7 @@ sidebar: mydoc_sidebar
 permalink: p2_skydrones.html
 folder: mydoc
 toc: false
+map_name: usermap
 ---
 
 ## site overview
