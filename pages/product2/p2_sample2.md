@@ -253,7 +253,10 @@ Top side
 The top side has an enclosure-integrated heatsink.
 AIRLink telemetry module is designed to work standalone (no cooling fan) without overheating at maximum output power with ambient temperatures of up to 50° C.
 In case there is a chance of overheating in your application - the module has 4x M3 mounting holes for the cooling fan.
-Bottom side
+
+> Bottom side
+> ![image](https://user-images.githubusercontent.com/42961200/151569646-2cb87da0-009b-4f99-a914-9db5fae61942.png)
+
 Bottom side
 Ground module interfaces
 You can find ground module interfaces
