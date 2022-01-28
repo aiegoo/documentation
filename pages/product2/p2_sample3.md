@@ -8,12 +8,18 @@ simple_map: true
 map_name: usermap
 box_number: 3
 folder: product2
+youtubeID:pOlX6_TUv1w
 ---
 
 ## SmartLink
 SmartLink is a broadband digital datalink with an integrated onboard computer. Two HD video channels, telemetry and control with ultra-low latency and a range of up to 20 km.
+![image](https://user-images.githubusercontent.com/42961200/151624340-a9195014-e734-484b-b71d-99981acee473.png)
+
 SmartLink Launch Webinar
 Recording of the LIVE webinar hosted by Sky-Drones Founder & CEO Kirill Shilov demonstrating the most advanced drone connectivity unit - SmartLink.
+
+{% include youtubePlayer.html id=page.youtubeID %}
+
 Description
 Air module
 ​ Air is based on a powerful quad-core ARM Cortex A53 SoC (system-on-chip) computer running Linux. The system is capable of handling two real time HD video streams from cameras (CSI and HDMI), autopilot telemetry and control. It has an abundant supply of resources for user applications with various interfaces including USB, UART, I2C, and SPI allowing users to connect their desired payloads and tightly integrate it with their flight controller and / or ground control station. LTE connection is also available and is operated by plug and play technology.
