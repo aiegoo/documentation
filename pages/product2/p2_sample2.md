@@ -245,7 +245,10 @@ RSSI LEDs status:
 Blinking in turn: searching for pair
 Blinking all at once: RF disabled
 Solid: RF connection established, pair found
-Top side
+
+> Top side
+> ![image](https://user-images.githubusercontent.com/42961200/151569573-f3061405-3a60-41e5-ab0b-a1b456f1d207.png)
+
 Top side
 The top side has an enclosure-integrated heatsink.
 AIRLink telemetry module is designed to work standalone (no cooling fan) without overheating at maximum output power with ambient temperatures of up to 50° C.
