@@ -10,6 +10,7 @@ permalink: p2_skydrones.html
 folder: mydoc
 toc: false
 map_name: usermap
+weight: 6
 ---
 
 ## site overview
