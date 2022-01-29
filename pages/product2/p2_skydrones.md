@@ -4,7 +4,7 @@ layout: portfolio
 tags: [projects]
 last_updated: October 02, 2021
 keywords: [jdlab, project, gcs, qt, skydronesm airlink]
-summary: "he most advanced hardware and software ecosystem for enterprise drones"
+summary: "the most advanced hardware and software ecosystem for enterprise drones"
 sidebar: product2_sidebar
 permalink: p2_skydrones.html
 folder: product2

@@ -23,7 +23,11 @@ youtubeID5: lex7axW8WQg
 
 ![image](https://user-images.githubusercontent.com/42961200/151491352-557155d5-81b3-47e2-b85d-6cad9166458b.png)
 
-The Sky-Drones Platform helps to integrate drones in custom end-to-ehttps://youtu.be/_d3SZ3LBoeUr’s cloud;
+The Sky-Drones Platform helps to integrate drones in custom end-to-end workflows with an abundance of advanced features that are essential to enterprise customers including:
+* Real-time digital HD video streaming;
+* Real-time payload data processing (e.g. computer vision);
+* Real-time flight control (e.g. target tracking, collision prevention and obstacle avoidance);
+* In-flight telemetry and payload data streaming directly to customer’s cloud;
 * Drone-to-drone communications;
 * Running custom apps directly on the drone (edge computing);
 * Safely performing autonomous BVLOS missions with real-time control.
@@ -38,7 +42,7 @@ The Sky-Drones Platform helps to integrate drones in custom end-to-ehttps://yout
      * Integration services, the “glue” that connects drones, apps, partners and customers' software (see how  was designed for customers).
 * Tightly integrated partner software such as UTM services, fleet management solutions, flight logs, etc.
 
-{{site.data.notes}}
+{{site.data.alerts.notes}}
 All Sky-Drones software is free to use! Software integrations from our partners (e.g. UTM) cost according to partners pricing model.
 {{site.data.end}}
 
@@ -72,7 +76,7 @@ Sky-Drones offer two major purchasing options:
 
 {{site.data.alerts.hr_faded}}
 ### Purchasing Hardware from Sky-Drones
-We appreciate the different integration levels required by the drone manufacturers. Therefore we offer two slightly different editions of AIRLink - the most advanced drone avionics: Enterprise and Core. AIRLink Enterprise is ideal for a quick start, evaluation and prototyping while Core is optimised for deep integration and mid-high volume manufacturing. 
+We appreciate the different integration levels required by the drone manufacturers. Therefore we offer two slightly different editions of AIRLink - the most advanced drone avionics: Enterprise and Core. AIRLink Enterprise is ideal for a quick start, evaluation and prototyping while Core is optimised for deep integration and mid-high volume manufacturing.
 ![image](https://user-images.githubusercontent.com/42961200/151517142-aed6d8b5-0557-4b06-9f1d-3efcef844e75.png)
 
 |---
@@ -161,10 +165,10 @@ Please refer to the PDF datasheet below for the detailed technical specification
 - Hardware
 SmartAP AIRLink hardware architecture overview
 ### General specifications
-[smartAP AirLink](https://sky-drones.com/airlink) has two computers and integrated LTE Module: 
+[smartAP AirLink](https://sky-drones.com/airlink) has two computers and integrated LTE Module:
 ![image](https://user-images.githubusercontent.com/42961200/151492845-dc375b3d-369d-44f1-8014-a7954bf8aa21.png)
 
-- The flight control computer (autopilot) has a triple-redundant vibration-dampened and temperature-stabilized IMU. 
+- The flight control computer (autopilot) has a triple-redundant vibration-dampened and temperature-stabilized IMU.
 - The powerful AI mission computer enables  like computer vision and obstacle avoidance, digital HD video streaming, and payload data streaming.
 - LTE and WiFi connectivity modules provide permanent broadband internet connection which is enabler for remote workflows.
 
@@ -177,13 +181,13 @@ SmartAP AIRLink hardware architecture overview
 | Navigation
 | Accelerometers, Gyroscopes, Magnetometer, GNSS, Rangefinders, Lidars, Optical Flow, Visual
 | IMU
-| 3x-Redundant 
+| 3x-Redundant
 | Vibration dampened
 | Temperature stabilized
 | GNSS
 | GPS, GLONASS, Galileo, BeiDou,
 | RTK (option)
-| Flight Modes                                   
+| Flight Modes
 | Manual, Stabilize, GNSS-Assisted, Autonomous Waypoints, Guided, Terrain Following
 | Flight Logs
 | SD Card, up to 256GB
@@ -206,7 +210,7 @@ RAM
 512 kB
 IMU
 3 Accelerometers, 3 Gyroscopes, 3 Magnetometers, 2 Barometers
-Ethernet                                 
+Ethernet
 10/100 Mbps
 LAN with Mission AI Computer
 UARTs
@@ -254,7 +258,7 @@ LTE Connectivity specifications
 
 > Parameter
 Value
-LTE                        
+LTE
 UMTS/HSPA(+), GSM/GPRS/EDGE
 SIM Cards
 Integrated eSIM
@@ -268,7 +272,7 @@ SmartAP AIRLink Datasheet
 
 
 ### SmartAP AIRLink Enterprise and Core
-We appreciate the different integration levels required by the drone manufacturers. Therefore we offer two slightly different editions of AIRLink - the most advanced drone avionics: Enterprise and Core. AIRLink Enterprise is ideal for a quick start, evaluation and prototyping while Core is optimised for deep integration and mid-high volume manufacturing. 
+We appreciate the different integration levels required by the drone manufacturers. Therefore we offer two slightly different editions of AIRLink - the most advanced drone avionics: Enterprise and Core. AIRLink Enterprise is ideal for a quick start, evaluation and prototyping while Core is optimised for deep integration and mid-high volume manufacturing.
 Parameter
 AIRLink Enterprise
 AIRLink Core
@@ -305,7 +309,7 @@ Looking for CAD model? It's available .
 ![image](https://user-images.githubusercontent.com/42961200/151493051-30bbf6d7-8831-4c8a-b218-6fca1fccaa8a.png)
 
 I 4xM3 mounting holes
-* Front-facing FPV Camera 
+* Front-facing FPV Camera
 ![image](https://user-images.githubusercontent.com/42961200/151493084-b7b2c5de-611f-46a9-848e-42a971eb1238.png)
 
 Front-facing FPV camera included in the set
@@ -851,35 +855,35 @@ Connect LTE antennas to LTE1 and LTE2 sockets (sides):
 ![image](https://user-images.githubusercontent.com/42961200/151565195-c42563c3-fa2d-4083-b0f7-12dcb9a9bf55.png)
 
 {{site.data.alerts.callout_info}}
-If it is not necessary, do not remove the antennas from the connector. The connectors are quite fragile and are rated for only a limited number of matching cycles. Bad connection can result in reduced RF communication performance. 
+If it is not necessary, do not remove the antennas from the connector. The connectors are quite fragile and are rated for only a limited number of matching cycles. Bad connection can result in reduced RF communication performance.
 {{site.data.alerts.end}}
 
 2. Connect FPV camera
-Camera connection is not necessary but recommended. This will allow you to test your setup and video streaming after the initial software setup described in the following sections. 
+Camera connection is not necessary but recommended. This will allow you to test your setup and video streaming after the initial software setup described in the following sections.
 First of all, take something sharp and unlock the CSI camera port connector by pulling it a bit at each side:
 ![image](https://user-images.githubusercontent.com/42961200/151565727-9d712a6f-adee-434d-b920-f79253c8e53f.png)
 
-Then insert the FPC cable from the camera and gently push back the black part of the connector mechanism until it locks itself tightly: 
+Then insert the FPC cable from the camera and gently push back the black part of the connector mechanism until it locks itself tightly:
 ![image](https://user-images.githubusercontent.com/42961200/151565781-200eca23-8d6c-47e1-b4ce-a62f7f84f059.png)
 
-Repeat the same procedure with the camera socket. Once done you should have the camera connected to AIRLink. 
+Repeat the same procedure with the camera socket. Once done you should have the camera connected to AIRLink.
 ![image](https://user-images.githubusercontent.com/42961200/151565807-28ab38f2-edd0-4407-a133-720a277b367a.png)
 
 3. Connect power supply
 Take the main power supply cable and connect this to the power source.
 ![image](https://user-images.githubusercontent.com/42961200/151565831-0c760c55-47a0-44a0-a571-348c6519d60d.png)
 
-We recommend to use SmartAP PDB for the power distribution. It has a current sensor and DC-DC converters for 5V and 12V to power SmartAP AIRLink and other peripherals. 
+We recommend to use SmartAP PDB for the power distribution. It has a current sensor and DC-DC converters for 5V and 12V to power SmartAP AIRLink and other peripherals.
 Connect power cable to 12V output of SmartAP PDB.
-Connect power monitor cable (voltage and current) to the dedicated pins on SmartAP PDB. 
+Connect power monitor cable (voltage and current) to the dedicated pins on SmartAP PDB.
 ![image](https://user-images.githubusercontent.com/42961200/151565906-1a288a2c-36c7-4ea4-b33a-7eb54f99d706.png)
 
-DANGER: Make sure to connect the cable with the right polarity. Reversing polarity may damage the equipment permanently and will void warranty. 
+DANGER: Make sure to connect the cable with the right polarity. Reversing polarity may damage the equipment permanently and will void warranty.
 The recommended power supply voltage is 12V. The acceptable input voltage limits are 10V - 20V.
 Next, connect the power cable to AIRLink as shown on the image below:
 ![image](https://user-images.githubusercontent.com/42961200/151565938-c6bc349d-ac62-4541-a002-e2681a6a7ac9.png)
 
-Minimum installation setup is complete. If you would like to test the system you can refer to the next section and power it up for the initial configuration. If you would like to connect the other peripherals, please refer to the Full Installation Setup below. 
+Minimum installation setup is complete. If you would like to test the system you can refer to the next section and power it up for the initial configuration. If you would like to connect the other peripherals, please refer to the Full Installation Setup below.
 Proceed to the initial power up or set up the other peripherals.
 It's recommended to start with the Minimum Installation Setup for the very first power up.
 
@@ -895,13 +899,13 @@ Assembled component will look as follows:
 ![image](https://user-images.githubusercontent.com/42961200/151566081-e184473b-0002-4af1-aadd-e8b58f58dd03.png)
 
 2. Connect RC Receiver
-Install RC receiver and connect it to the SBUS port of AIRLink on the rear side: 
+Install RC receiver and connect it to the SBUS port of AIRLink on the rear side:
 ![image](https://user-images.githubusercontent.com/42961200/151566110-8a611a17-de92-4641-b32a-11d35c1ed639.png)
 
-Fully assembled component will look as follows: 
+Fully assembled component will look as follows:
 ![image](https://user-images.githubusercontent.com/42961200/151566129-48de7657-e4ae-4530-84e9-fc4f6e16c659.png)
 
-If you're using any other than SBUS type of the receiver, please refer to the Interfaces section for more info. 
+If you're using any other than SBUS type of the receiver, please refer to the Interfaces section for more info.
 
 3. Connect Telemetry Radio Module
 Connect AIRLink telemetry module to Ethernet port of SmartAP AIRLink as shown on the image below:
@@ -909,21 +913,21 @@ Connect AIRLink telemetry module to Ethernet port of SmartAP AIRLink as shown on
 
 Please refer to the dedicated page for more detailed instructions regarding Air module connection:
 
-4. Connect HDMI Payload Camera 
-Take HDMI cable, HDMI-in capable video camera and SmartAP AIRLink. 
+4. Connect HDMI Payload Camera
+Take HDMI cable, HDMI-in capable video camera and SmartAP AIRLink.
 ![image](https://user-images.githubusercontent.com/42961200/151566232-360d7445-ea2b-4a1e-80e3-48d4266f3da9.png)
 
-Connect HDMI cable to AIRLink input port: 
+Connect HDMI cable to AIRLink input port:
 ![image](https://user-images.githubusercontent.com/42961200/151566255-1e4ec69c-6b44-4b5d-be86-e80415ad7718.png)
 
-Fully assembled component will look as follows: 
+Fully assembled component will look as follows:
 ![image](https://user-images.githubusercontent.com/42961200/151566279-d57e0447-a1ae-4db1-81ee-13f10525fa6d.png)
 
 5. Insert microSD card
-Insert microSD card into FMU SD slot. This SD card is needed for flight logging. 
+Insert microSD card into FMU SD slot. This SD card is needed for flight logging.
 ![image](https://user-images.githubusercontent.com/42961200/151566303-f2383ab5-e61c-4eb8-a297-85da4fda4249.png)
 
-Inserted microSD card will looks as follows: 
+Inserted microSD card will looks as follows:
 ![image](https://user-images.githubusercontent.com/42961200/151566355-5c35f61f-538e-4dfe-af04-d48e785da5fc.png)
 
 6. Insert SIM Card
@@ -1180,25 +1184,25 @@ Power supply output
 2
 USART8_TX
 OUT2. Connect FPV camera
-Camera connection is not necessary but recommended. This will allow you to test your setup and video streaming after the initial software setup described in the following sections. 
+Camera connection is not necessary but recommended. This will allow you to test your setup and video streaming after the initial software setup described in the following sections.
 First of all, take something sharp and unlock the CSI camera port connector by pulling it a bit at each side:
 
-Then insert the FPC cable from the camera and gently push back the black part of the connector mechanism until it locks itself tightly: 
+Then insert the FPC cable from the camera and gently push back the black part of the connector mechanism until it locks itself tightly:
 
-Repeat the same procedure with the camera socket. Once done you should have the camera connected to AIRLink. 
+Repeat the same procedure with the camera socket. Once done you should have the camera connected to AIRLink.
 
 3. Connect power supply
 Take the main power supply cable and connect this to the power source.
 
-We recommend to use SmartAP PDB for the power distribution. It has a current sensor and DC-DC converters for 5V and 12V to power SmartAP AIRLink and other peripherals. 
+We recommend to use SmartAP PDB for the power distribution. It has a current sensor and DC-DC converters for 5V and 12V to power SmartAP AIRLink and other peripherals.
 Connect power cable to 12V output of SmartAP PDB.
-Connect power monitor cable (voltage and current) to the dedicated pins on SmartAP PDB. 
+Connect power monitor cable (voltage and current) to the dedicated pins on SmartAP PDB.
 
-DANGER: Make sure to connect the cable with the right polarity. Reversing polarity may damage the equipment permanently and will void warranty. 
+DANGER: Make sure to connect the cable with the right polarity. Reversing polarity may damage the equipment permanently and will void warranty.
 The recommended power supply voltage is 12V. The acceptable input voltage limits are 10V - 20V.
 Next, connect the power cable to AIRLink as shown on the image below:
 
-Minimum installation setup is complete. If you would like to test the system you can refer to the next section and power it up for the initial configuration. If you would like to connect the other peripherals, please refer to the Full Installation Setup below. 
+Minimum installation setup is complete. If you would like to test the system you can refer to the next section and power it up for the initial configuration. If you would like to connect the other peripherals, please refer to the Full Installation Setup below.
 Proceed to the initial power up or set up the other peripherals.
 It's recommended to start with the Minimum Installation Setup for the very first power up.
 
@@ -1211,27 +1215,27 @@ Connect it to the GPS 1 port on the front side of AIRLink:
 Assembled component will look as follows:
 
 2. Connect RC Receiver
-Install RC receiver and connect it to the SBUS port of AIRLink on the rear side: 
+Install RC receiver and connect it to the SBUS port of AIRLink on the rear side:
 
-Fully assembled component will look as follows: 
+Fully assembled component will look as follows:
 
-If you're using any other than SBUS type of the receiver, please refer to the Interfaces section for more info. 
+If you're using any other than SBUS type of the receiver, please refer to the Interfaces section for more info.
 3. Connect Telemetry Radio Module
 Connect AIRLink telemetry module to Ethernet port of SmartAP AIRLink as shown on the image below:
 
 Please refer to the dedicated page for more detailed instructions regarding Air module connection:
 
-4. Connect HDMI Payload Camera 
-Take HDMI cable, HDMI-in capable video camera and SmartAP AIRLink. 
+4. Connect HDMI Payload Camera
+Take HDMI cable, HDMI-in capable video camera and SmartAP AIRLink.
 
-Connect HDMI cable to AIRLink input port: 
+Connect HDMI cable to AIRLink input port:
 
-Fully assembled component will look as follows: 
+Fully assembled component will look as follows:
 
 5. Insert microSD card
-Insert microSD card into FMU SD slot. This SD card is needed for flight logging. 
+Insert microSD card into FMU SD slot. This SD card is needed for flight logging.
 
-Inserted microSD card will looks as follows: 
+Inserted microSD card will looks as follows:
 
 6. Insert SIM Card
 Insert SIM Card into SIM Card slot as shown on the image below:
@@ -1259,7 +1263,7 @@ GND
 ​
 ​
 Ground
-AIRLink has integrated 1.5KΩ pull-up resistors for all I2C lines. No external pull-up resistors required. 
+AIRLink has integrated 1.5KΩ pull-up resistors for all I2C lines. No external pull-up resistors required.
 FMU USB - USB Type C
 SIM Card - micro SIM
 HDMI - mini HDMI
