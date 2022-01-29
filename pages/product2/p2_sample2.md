@@ -18,114 +18,76 @@ AIRLink Telemetry provides broadband AES-256 encrypted private channel for 20km.
 
 {% include youtubePlayer.html id=page.youtubeID %}
 
-Set content
+### Set content
 ![image](https://user-images.githubusercontent.com/42961200/151568536-d0c82fcd-9cfd-4d81-99a2-16ccdec5a9d2.png)
 
-SmartAP AIRLink Telemetry set content
-1x Ground module
-1x Air module
-2x Ground module antennas
-2x Air module antennas
-1x Telemetry cable
-1x Ground module power cable
-General specifications
-Radio
-Parameter
-Value
-Technology
-2x2 MIMO
-Frequency
-2402 - 2477 MHz
-Power
-up to 30 dBm / 1W
-Bandwidth
-4 / 8 MHz
-Encryption
-AES-256
-Data rate
-25 Mbps
-Latency
-< 100 ms
-Range
-20 km
-Environmental
-Parameter
-Value
-Visibility
-Direct, line of sight
-Ambient temperature
--40...+50°C
+- SmartAP AIRLink Telemetry set content
+* 1x Ground module
+* 1x Air module
+* 2x Ground module antennas
+* 2x Air module antennas
+* 1x Telemetry cable
+* 1x Ground module power cable
+
+### General specifications
+- Radio
+
+|---
+| Parameter | Value
+| Technology | 2x2 MIMO
+| Frequency | 2402 - 2477 MHz
+| Power | up to 30 dBm / 1W
+| Bandwidth | 4 / 8 MHz
+| Encryption | AES-256
+| Data rate | 25 Mbps
+| Latency | < 100 ms
+| Range  | 20 km
+
+- Environmental
+
+|---
+| Parameter | Value
+| Visibility | Direct, line of sight
+| Ambient temperature | -40...+50°C
 
 ### Air module specifications
 ![image](https://user-images.githubusercontent.com/42961200/151568723-c6605444-31b5-4e68-a73f-742f852d0009.png)
 
-AIRLink Telemetry Air module
-Parameter
-Value
-Power input
-5V DC, 2A min
-Antennas
-x2 SMA Omni 3dBi, 50 cm cable
-Interfaces
-Ethernet, cooling fan output
-Dimensions
-50x50x30 mm
-Weight
-50 g
+
+- AIRLink Telemetry Air module
+|---
+| Parameter | Value
+| Power input | 5V DC, 2A min
+| Antennas | x2 SMA Omni 3dBi, 50 cm cable
+| Interfaces | Ethernet, cooling fan output
+| Dimensions | 50x50x30 mm
+| Weight | 50 g
 
 ### Ground module specifications
 ![image](https://user-images.githubusercontent.com/42961200/151568832-f6701080-9efd-4c06-bddf-0355fea534fd.png)
 
 AIRLink Telemetry Ground module
-Parameter
-Value
-Power input
-7-40V DC, 1A min
-Antennas
-x2 RP-SMA 5dBi
-Interfaces
-USB, power supply
-Dimensions
-72x46x23 mm
-Weight
-83 g
-Throughput and signal strength
-Range, km
-Modulation
-Throughput, Mbps
-Sensitivity, dBm
-0 - 0.3 km
-64QAM_5/6
-27.8
--81
-0.3 - 1 km
-64QAM_3/4
-25.5
--83.5
-1 - 2 km
-64QAM_2/3
-22.8
--85
-2 - 4 km
-16QAM_3/4
-17.1
--90
-4 - 8 km
-16QAM_1/2
-11.6
--92
-8 - 12 km
-QPSK_3/4
-8.8
--96
-12 - 15 km
-QPSK_1/2
-5.9
--98
-15 - 20 km
-BPSK_1/2
-3
--99.5
+
+|---
+| Parameter | Value
+| Power input | 7-40V DC, 1A min
+| Antennas | x2 RP-SMA 5dBi
+| Interfaces | USB, power supply
+| Dimensions | 72x46x23 mm
+| Weight | 83 g
+
+### Throughput and signal strength
+
+|---
+| Range, km | Modulation | Throughput, Mbps | Sensitivity, dBm
+| 0 - 0.3 km | 64QAM_5/6 | 27.8 | -81
+| 0.3 - 1 km  | 64QAM_3/4 | 25.5 | -83.5
+| 1 - 2 km | 64QAM_2/3 | 22.8 | -85
+| 2 - 4 km | 16QAM_3/4 | 17.1 | -90
+| 4 - 8 km  | 16QAM_1/2  | 11.6 | -92
+| 8 - 12 km | QPSK_3/4  | 8.8 | -96
+| 12 - 15 km | QPSK_1/2 | 5.9 | -98
+| 15 - 20 km | BPSK_1/2 | 3 | -99.5
 
 
 ### Interfaces
@@ -137,92 +99,38 @@ This page describes the general information and interfaces location of AIRLink T
 Front side
 
 > ETHERNET - JST GH SM08B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Radio module power supply
-2
-5V
-OUT
-+5V
-Radio module power supply
-3
-ETH_TXP
-OUT
-+3.3V
-Ethernet transmit positive
-4
-ETH_TXN
-OUT
-+3.3V
-Ethernet transmit negative
-5
-ETH_RXP
-IN
-+3.3V
-Ethernet receive positive
-6
-ETH_RXN
-IN
-+3.3V
-Ethernet receive negative
-7
-GND
-​
-​
-Ground
-8
-GND
-​
-​
-Ground
+
+|---
+| Pin number | Pin name | Direction | Voltage level | Function
+| 1 | 5V | OUT | +5V | Radio module power supply
+| 2 | 5V | OUT | +5V | Radio module power supply
+| 3 | ETH_TXP | OUT | +3.3V | Ethernet transmit positive
+| 4 | ETH_TXN  | OUT|---ive
+| 5 | ETH_RXP | IN | +3.3V | Ethernet receive positive
+| 6 | ETH_RXN | IN | +3.3V | Ethernet receive negative
+| 7 | GND |  Ground
+| 8 | GND |  Ground
+
+{{site.data.alerts.callout_info}}
 The ethernet interface is decoupled with capacitors. Ethernet cable should be twisted to reduce EMI noise. Shorter cables are recommended for increased performance and higher bandwidth of the interface.
-FAN - JST GH SM06B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Fan output
-2
-Reserved
-​
-​
-​
-3
-Reserved
-​
-​
-​
-4
-Reserved
-​
-​
-​
-5
-Reserved
-​
-​
-​
-6
-GND
-​
-​
-Ground
+{{site.data.alerts.end}}
+
+- FAN - JST GH SM06B-GHS-TB
+
+|---
+Pin number | Pin name | Direction | Voltage level | Function
+| 1 | 5V | OUT | +5V | Fan output
+| 2 | Reserved | ​| ​ |
+| 3 | Reserved | ​ | ​ | ​
+| 4 | Reserved | ​ | ​ | ​
+| 5 | Reserved | ​| ​| ​
+| 6 | GND | ​| ​| Ground
+
 > Left side
 ![image](https://user-images.githubusercontent.com/42961200/151569239-476bd0e1-a0ec-44a1-bf8d-188237d26346.png)
 
-Left siide
+> Left siide
+
 SMA Antenna connector
 
 > Right side
@@ -251,8 +159,10 @@ Solid: RF connection established, pair found
 
 Top side
 The top side has an enclosure-integrated heatsink.
+{{site.data.alerts.callout_primary}}
 AIRLink telemetry module is designed to work standalone (no cooling fan) without overheating at maximum output power with ambient temperatures of up to 50° C.
 In case there is a chance of overheating in your application - the module has 4x M3 mounting holes for the cooling fan.
+{{site.data.alerts.end}}
 
 > Bottom side
 > ![image](https://user-images.githubusercontent.com/42961200/151569646-2cb87da0-009b-4f99-a914-9db5fae61942.png)
@@ -639,6 +549,6 @@ Alternatively, use your own carrier and data plan and manage this yourself if yo
 Finally, AIRLink has an ethernet port for IP datalink integration. Stay up to date with Sky-Drones for more information!
 
 > What is your manufacturing capability?
-AIRLink is manufactured in the hundreds per month, but if required we can manufacture thousands per month with a prior requirement notification. AIRLink is manufactured in the United Kingdom using genuine and quality-assured materials. All units are tested before being shipped to customers  
+AIRLink is manufactured in the hundreds per month, but if required we can manufacture thousands per month with a prior requirement notification. AIRLink is manufactured in the United Kingdom using genuine and quality-assured materials. All units are tested before being shipped to customers
 
 {% include links.html %}
