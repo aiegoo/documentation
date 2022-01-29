@@ -16,7 +16,7 @@ youtubeID: 8Q0s2Cpmm3Y
 ## Telemetry system
 AIRLink Telemetry provides broadband AES-256 encrypted private channel for 20km.
 
-{% include youtubePlayer.html id=page.youtubeID4 %}
+{% include youtubePlayer.html id=page.youtubeID %}
 
 Set content
 ![image](https://user-images.githubusercontent.com/42961200/151568536-d0c82fcd-9cfd-4d81-99a2-16ccdec5a9d2.png)
