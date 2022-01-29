@@ -168,7 +168,8 @@ In case there is a chance of overheating in your application - the module has 4x
 > ![image](https://user-images.githubusercontent.com/42961200/151569646-2cb87da0-009b-4f99-a914-9db5fae61942.png)
 
 Bottom side
-Ground module interfaces
+
+### Ground module interfaces
 You can find ground module interfaces
 ![image](https://user-images.githubusercontent.com/42961200/151569775-5599fec5-ddc7-4b7d-9b70-bea41ffdfcb4.png)
 
@@ -176,7 +177,8 @@ You can find ground module interfaces
 ### Installation
 Installation
 Let's wire up and connect AIRLink Telemetry
-Ground module
+
+#### Ground module
 Take the ground module, antennas and power cable:
 Attach the antennas to the ground module. Connect the power cable.
 DANGER: DO NOT POWER ON THE MODULE WITHOUT ANTENNAS, THIS WILL CAUSE PERMANENT DAMAGE AND IS NOT COVERED BY THE WARRANTY
