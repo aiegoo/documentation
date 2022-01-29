@@ -285,7 +285,7 @@ For tight integration in your design
 ![image](https://user-images.githubusercontent.com/42961200/151666918-50eda13f-70e6-4227-a4c3-f7cdbdb0636c.png)
 
 Download STEP files of SmartAP AIRLink Telemetry for integrating into your own design:
-[Download](https://github.com/aiegoo/sky-drones/3d/AIRLink-Telemetry-Air-Module-STEP.zip)
+[AIRLink-Telemetry-Air-Module-STEP.zip](https://github.com/aiegoo/sky-drones/3d/AIRLink-Telemetry-Air-Module-STEP.zip)
 
 
 ## Software
@@ -605,7 +605,7 @@ Don't forget to remove the microSD card from the slot. Otherwise, the firmware u
 ## CAD model
 ![image](https://user-images.githubusercontent.com/42961200/151574940-b1cc2d96-1453-485c-8dfd-961b9e535e73.png)
 
-[download](https://github.com/aiegoo/sky-drones/3d/SmartAP-AIRLink-CAD-Model-STEP.zip)
+[SmartAP-AIRLink-CAD-Model-STEP.zip](https://github.com/aiegoo/sky-drones/3d/SmartAP-AIRLink-CAD-Model-STEP.zip)
 
 ## FAQ
 A selection of questions put forward by our consumers. If you require any more information, do not hesitate to contact us today!
