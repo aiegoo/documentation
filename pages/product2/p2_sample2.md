@@ -282,7 +282,10 @@ The assembled systems should looks as follows:
 
 ### CAD Model
 For tight integration in your design
+![image](https://user-images.githubusercontent.com/42961200/151666918-50eda13f-70e6-4227-a4c3-f7cdbdb0636c.png)
+
 Download STEP files of SmartAP AIRLink Telemetry for integrating into your own design:
+[Download](https://github.com/aiegoo/sky-drones/3d/AIRLink-Telemetry-Air-Module-STEP.zip
 
 
 ## Software
