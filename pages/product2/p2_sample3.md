@@ -8,8 +8,9 @@ simple_map: true
 map_name: usermap
 box_number: 3
 folder: product2
-youtubeID:pOlX6_TUv1w
-youtubeID: sGrz3jl88Uk
+youtubeID: pOlX6_TUv1w
+youtubeID1: sGrz3jl88Uk
+youtubeID2: nbthu_aaUGg
 ---
 
 ## SmartLink
@@ -361,22 +362,38 @@ Finally, the full setup looks as follows:
 ## Manual Control
 SmartLink allows users to transmit a manual control signal from any USB device (e.g. joystick, gamepad or RC radio with USB port) along with other messages when connected to ground control station.
 In this demonstration we demonstrate how to setup manual control using FrSky Taranis radio in USB joystick mode. First of all, open  and go to Settings.
+![image](https://user-images.githubusercontent.com/42961200/151636691-a7c76180-e0aa-4ade-a2e7-402d277593a9.png)
+
 Then switch to the Joystick tab. Make sure your joystick is connected and selected from the dropdown menu.
+![image](https://user-images.githubusercontent.com/42961200/151636822-0377692d-042d-40ea-a9a4-a79de6d357d3.png)
+
 Once you've selected the joystick you will be able to assign the channels according to your preferences. Make sure that Enable pilot joystick for control is checked, otherwise manual control messages will not be sent.
+![image](https://user-images.githubusercontent.com/42961200/151636900-08028daf-c74e-4590-b87a-f712ea6cc1c6.png)
+
 Additionally, you can connect a second joystick which will be used for payload control.
 After that, if you go back to the World pane you will see a green joystick icon on toolbar. This means that the joystick has been configured successfully and is emitting a manual control signal.
+![image](https://user-images.githubusercontent.com/42961200/151636908-a11c5ca1-21ca-4936-a152-c842ba74ed76.png)
+
 
 ## Change Settings
-Accessing Settings Menu
+### Accessing Settings Menu
 SmartLink has various settings which you may change to optimize the performance. To get to 's settings menu click on the Wireless Connection icon on top toolbar:
-Changing Radio settings
+![image](https://user-images.githubusercontent.com/42961200/151636912-afdaddfc-965c-4b43-b012-7027d8fce1f1.png)
+
+### Changing Radio settings
 Radio tab allows you to change radio settings as well as observe current RSSI and SNR values for connection.
+![image](https://user-images.githubusercontent.com/42961200/151636936-6984d9e2-bb87-43da-aa2b-97148fad2bf1.png)
+
 SNR - Signal Noise Ratio, the ratio of signal power to the noise power, expressed in decibels.
 RSSI - Received Signal Strength Indication, a measure of the energy observed by an antenna when receiving a signal
 It's recommended to keep output TX power for both air and ground module at low values when working with the system on the ground. 7 dBm is the minimum and recommended value. Use higher values when flying. Using high values over long periods of time near the human body might cause health problems due to radiation.
 After changing any parameter click Save. It might take a few seconds to save changes applied. The system may loose connection when changing any parameter.
-Changing Security settings
+
+### Changing Security settings
+
 Security tab allows you to assign network name and encryption key. Connection is AES encrypted.
+![image](https://user-images.githubusercontent.com/42961200/151636967-e644fc9c-85a6-4654-8166-a6155db15511.png)
+
 Make sure that both air and ground modules have the same network name and encryption key. Otherwise, the modules are not considered to be paired and won't connect to each other.
 
 ## API and SDK
@@ -409,31 +426,53 @@ Manual Control
 Manual control comes as a part of other MAVLink telemetry messages. MANUAL_CONTROL message from MAVLink specification is recommended but not exclusive. You may use any manual control messages according to your specification.  will act as a transparent transfer layer just like any other telemetry module.
 
 ## Other AP / GCS Support
-QGroundControl
+### QGroundControl
 Follow these next steps to configure QGroundControl for :
+
+{% include youtubePlayer.html id=page.youtubeID2 %}
+
+#### Configuration settings
+Connection type: UDP
+Host: smartlink.local
+Port: 14555
+Autopilot UART: 57600 8N1 3V3 TTL
+
+### Mission Planner
+![image](https://user-images.githubusercontent.com/42961200/151637137-09804a03-9de9-4f2a-95f7-07913cabffea.png)
+
 Configuration settings
 Connection type: UDP
 Host: smartlink.local
 Port: 14555
 Autopilot UART: 57600 8N1 3V3 TTL
-Mission Planner
-Configuration settings
-Connection type: UDP
-Host: smartlink.local
-Port: 14555
-Autopilot UART: 57600 8N1 3V3 TTL
-Telemetry
+
+#### Telemetry
 Make sure to select UDPCI as the connection type and click Connect:
+![image](https://user-images.githubusercontent.com/42961200/151637168-5e1b4796-1700-44cb-8fb5-1f28df3d2966.png)
+
 Type in SmartLink IP address (192.168.168.100) or host name (smartlink.local) and click OK:
+![image](https://user-images.githubusercontent.com/42961200/151637177-4fc9c6cc-c69e-4245-8b4b-f4f12bcff2a3.png)
+
 Type in SmartLink port number (14555) and click OK:
+![image](https://user-images.githubusercontent.com/42961200/151637183-ae32525c-7750-4f89-a54d-9ddca3ab2fae.png)
+
 The connection will be established and Mission Planner will start reading parameters:
-Video
+![image](https://user-images.githubusercontent.com/42961200/151637192-c2ef93f5-0d81-4a00-ae2c-a6dfddbdac79.png)
+
+#### Video
 Right click on the primary flight display and select Video > Set GStreamer source:
+![image](https://user-images.githubusercontent.com/42961200/151637213-4b8abb8d-1eeb-4d0a-9056-a7f35cd3d67f.png)
+
 Use the following GStreamer pipeline to start the real time video in Mission Planner:
 rtspsrc location=rtsp://smartlink.local:8554/camera/0 ! rtph264depay ! avdec_h264 ! videoconvert ! video/x-raw,format=BGRA ! appsink name=outsink sync=false
 In case your system doesn't support local DNS (smartlink.local addressing) you will need to change smatlink.local to the static IP address of SmartLink: 192.168.168.100
+
 Click OK to start the video feed:
+![image](https://user-images.githubusercontent.com/42961200/151637235-c7149717-b9f1-489e-bbcf-8d3f91d55fa3.png)
+
 After a few seconds the video feed will appear:
+![image](https://user-images.githubusercontent.com/42961200/151637248-d70b19f1-68df-48b4-bccf-140ee4252d9b.png)
+
 
 ## Firmware Update
 Using Ubuntu:
@@ -482,7 +521,8 @@ If your  unit is not responding and you think eMMC might be corrupted / the devi
 Recovery images
 Click below to download the recovery image. Make sure to the select the one which suits your SmartLink version:
 ​​
-​## Troubleshooting
+
+## Troubleshooting
 Unable to detect LAN network from ground module
 In case you can't see that the LAN network from ground module was detected and established, then you would need to install the driver:
 LAN Driver - Windows 8.1
@@ -491,41 +531,52 @@ LAN Driver - Linux
 LAN Driver - Mac OS
 You can find the latest drivers from Realtek available .
 In some cases you might need to disable ’system integrity protection’ and then instal the driver For instance,  is the demo video on how to disable SIP on Mac OS.
-Unable to Ping smartlink.local - Unknown Host
+
+### Unable to Ping smartlink.local - Unknown Host
 Some operating systems might not have local DNS, resulting in the inability to access the system using the name (smartlink.local). This is known for all Android platforms and some Windows platforms. In case you can't ping smartlink.local or similar:
 ping: cannot resolve smartlink.local: Unknown host
 You'll need to find out the IP address for SmartLink. There are numerous ways to do this, we'll use the NMAP tool in this example. First of all, download and install NMAP tool using the relevant links below:
-Linux
+
+### Linux
 sudo apt-get install nmap
-Mac OS
+
+### Mac OS
 brew install nmap
-Windows
+
+### Windows
 Go to the official website for NMAP tool:
 Select Latest stable release self-installer: nmap-7.80-setup.exe or similar. Download and install it.
 Make sure to select Install Npcap in WinPcap API-compatible mode during the installation.
 After installation is complete, open command line and go to NMAP folder:
 cd "C:\Program Files (x86)\Nmap"
-Looking up SmartLink's IP Address
+
+### Looking up SmartLink's IP Address
 Execute IP addresses scan within the required range, in our case it will be:
 nmap 192.168.168.*
 As a result of this command you'll see IP addresses in this range. You'll have 192.168.168.1 which is, as a rule, configured as air module, 192.168.168.2 which is usually configured as ground module and 192.168.168.x (x: 0-255) which is the IP address for SmartLink. You should use this IP address - 192.168.168.x for direct connection instead of smartlink.local.
-No Internet Connection when SmartLink is Plugged into USB Port
+
+### No Internet Connection when SmartLink is Plugged into USB Port
 Sometimes you might not be connected to the internet after SmartLink is plugged into the USB port and detected. SmartLink is identified as LAN connection and sometimes the operating system expects this to be a primary connection for accessing the internet. It is in fact not. You still have to use your LAN / WLAN for internet access and this has to be set in the operating system.
 Do the following actions to enable internet access while SmartLink is connected:
-Windows
+
+#### Windows
 Follow the steps from this tutorial to change the MTU value for network connections:
 ​​
 A lower MTU value means higher priority for the interface. Therefore, you need to have the MTU value set lower for your LAN / WLAN network than for SmartLink networks
-Linux
+#### Linux
 Open command line and execute the following command:
 sudo ip route del default
-Mac OS
+#### Mac OS
 Go to network connections menu and make sure that the Service Order is set higher for your LAN / WLAN connection but not SmartLink:
+![image](https://user-images.githubusercontent.com/42961200/151637403-b044ea98-e7e3-4a13-9355-ddb5d7094702.png)
 
 ## Installation hints
-Antenna Orientation
+
+### Antenna Orientation
 Orientation of the antennas is vital. Ground module has high gain 5 dBi antennas with a vertical plain radiation pattern is ~40 degrees. Therefore, antennas on the ground module should be placed vertically. If you want the system to be less reliant on antenna orientation then antennas should be changed to lower gain antennas (2-5 dBi). They will yield a lower range but will be less dependent on the orientation of antennas.
 The image below demonstrates the relation between antenna gain, radiation pattern and range:
+![image](https://user-images.githubusercontent.com/42961200/151637427-14d69332-4bff-4fce-a6fd-cc61e7f6c740.png)
+
 For a solid connection the copter should stay in the blue area. In this example, the range is anywhere in the 2 dB antenna blue circle. 9 dB antenna has a reduced area but a longer range for certain directions. Same rules are applied to antennas on copters, whose antennas are 3 dBi by default and should be placed vertically down (cable from antenna facing up to the sky). Another thing to consider for longer range - ground module should be placed higher off the ground. At least one meter is required but there is a significant difference between 1 meter and 2 meters off the ground; the higher the better! 1.50 - 2.00 meters is recommended.
 Frequencies
 The system operates at 2.4 GHz, therefore, it's recommended to keep 2.4 GHz band free from other devices.
