@@ -44,7 +44,7 @@ SmartAP AIRLink - The most advanced AI Drone Avionics
 ![image](https://user-images.githubusercontent.com/42961200/151506055-b4e2618e-f058-4041-8b31-03f77815719f.png)
 
 SmartAP AIRLink Enterprise Edition
-​[airlink](https://docs.sky-drones.com/airlink) stands for Artificial Intelligence & Remote Link. The unit includes cutting-edge drone autopilot, AI mission computer and LTE connectivity unit. Start your enterprise drone operations with  and reduce the time to market from years and months down to weeks.
+​[airlink](https://pf4.36io.co/p2_sample1.html#smartap-airlink) stands for Artificial Intelligence & Remote Link. The unit includes cutting-edge drone autopilot, AI mission computer and LTE connectivity unit. Start your enterprise drone operations with  and reduce the time to market from years and months down to weeks.
 
 ### SmartLink - Drone Datalink & Onboard Mission Computer
 

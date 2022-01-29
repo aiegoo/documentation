@@ -34,8 +34,8 @@ The Sky-Drones Platform helps to integrate drones in custom end-to-end workflows
 
 ### Sky-Drones Platform Structure
 #### Software
-​* [Advanced rone software](https://docs.sky-drones.com/airlink/drone-software) powered by [SmartAP AIRLink](https://docs.sky-drones.com/airlink) .
-​* [GCS](https://docs.sky-drones.com/smartap-gcs) - super easy and intuitive 3D mission planning and remote flight control applications for Windows, macOS, Linux, iOS, Android + web application in the [skydrone-cloud](https://docs.sky-drones.com/cloud).
+​* [Advanced drone software](https://pf4.36io.co/p2_sample2.html#software-development) powered by [SmartAP AIRLink](https://pf4.36io.co/p2_sample1.html#smartap-airlink) .
+​* [GCS](https://pf4.36io.co/p2_sample1.html#smartap-gcs) - super easy and intuitive 3D mission planning and remote flight control applications for Windows, macOS, Linux, iOS, Android + web application in the [skydrone-cloud](https://pf4.36io.co/p2_sample4.html#sky-drones-cloud).
 ​:
      * 3D mission planning & control web application;
      * Drone fleet management, performance monitoring, post-flight AI-analytics;
