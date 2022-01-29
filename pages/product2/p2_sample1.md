@@ -49,21 +49,23 @@ All Sky-Drones software is free to use! Software integrations from our partners 
 
 ## Hardware
 Sky-Drones provides its users with a comprehensive set of leading drone avionics, entirely designed and manufactured in the UK:
-​ SmartAP Airlink - the most advanced AI drone flight controller;
-​ AIRLink Telemetery System - broadband AES-256 encrypted digital datalink for 20km.
-​ SmartLink - broadband digital datalink with an onboard computer and LTE option for third-party autopilots;
-​ SmartAP PDB - power distribution board with the voltage / current sensor and power supply;
-​ SmartAP GNSS - high-precision GNSS, barometer and magnetometer module.
+
+​*  SmartAP Airlink - the most advanced AI drone flight controller;
+​*  AIRLink Telemetery System - broadband AES-256 encrypted digital datalink for 20km.
+​*  SmartLink - broadband digital datalink with an onboard computer and LTE option for third-party autopilots;
+* ​ SmartAP PDB - power distribution board with the voltage / current sensor and power supply;
+​*  SmartAP GNSS - high-precision GNSS, barometer and magnetometer module.
 Sky-Drones ships its partner drones and accessory equipment (for instance, [uAvinoix pingRX](https://uavionix.com/products/pingrx/) ADS-B receiver). We are listed sellers for our partners so make sure you  to find out more!
 
 ### Sky-Drones Platform Options
 Sky-Drones Platform is fully compatible with different types of aircraft. Sky-Drones customers have been using the platform for years in BVLOS and EVLOS flights, alongside fully autonomous and GNSS-assisted manual missions.
+
 Sky-Drones offers two major purchasing options:
-Quick-start using comprehensive ready-made hardware and free software sets;
-Attractive terms for bulk purchasing customers and customization requirements:
-on-site production;
-deep hardware and software customization;
-integration with customer's infrastructure.
+* Quick-start using comprehensive ready-made hardware and free software sets;
+* Attractive terms for bulk purchasing customers and customization requirements:
+     * on-site production;
+     * deep hardware and software customization;
+     * integration with customer's infrastructure.
 For further information please see:
 
 ## hardware purchasing and production options
