@@ -180,17 +180,37 @@ Let's wire up and connect AIRLink Telemetry
 
 #### Ground module
 Take the ground module, antennas and power cable:
+![image](https://user-images.githubusercontent.com/42961200/151680803-da5e6a02-1639-4e4d-b58f-6c56d1446cfb.png)
+
 Attach the antennas to the ground module. Connect the power cable.
+{{site.data.alerts.callout_danger}}
 DANGER: DO NOT POWER ON THE MODULE WITHOUT ANTENNAS, THIS WILL CAUSE PERMANENT DAMAGE AND IS NOT COVERED BY THE WARRANTY
-Air module
+{{site.data.alerts.end}}
+
+#### Air module
 Take air module and air module antennas:
+![image](https://user-images.githubusercontent.com/42961200/151680817-be0f2b80-ab0a-41a9-bf45-088fec8346af.png)
+
 Connect air module antennas:
+![image](https://user-images.githubusercontent.com/42961200/151680820-c34eb93a-8a67-48f3-92df-ebd68d3fad0e.png)
+
 Take Ethernet telemetry cable and connect it to the Ethernet port of Air module:
+![image](https://user-images.githubusercontent.com/42961200/151680822-7c4d9447-29fb-4316-bfd3-6e12d58c656a.png)
+
 Fully assembled Air module will looks as follows:
-Connecting to AIRLink
+![image](https://user-images.githubusercontent.com/42961200/151680838-d1a166d7-398f-465d-af33-f64addbc276d.png)
+
+#### Connecting to AIRLink
 Connect Air module Ethernet cable to Ethernet port of AIRLink:
+![image](https://user-images.githubusercontent.com/42961200/151680846-2755b2f5-3d07-45be-8f04-1e821af93a32.png)
+
+{{site.data.alerts.callout_primary}}
 It's recommended to twist Ethernet cable to increase the EMI sustainability.
+{{site.data.alerts.end}}
+
 The assembled systems should looks as follows:
+![image](https://user-images.githubusercontent.com/42961200/151680853-61fd338d-0dfe-42ee-8ab9-275f38d5c6ab.png)
+
 
 ### CAD Model
 For tight integration in your design
@@ -201,8 +221,9 @@ Download STEP files of SmartAP AIRLink Telemetry for integrating into your own d
 
 
 ## Software
-Advanced drone software
+### Advanced drone software
 The Sky-Drones Platform helps to integrate drones in custom end-to-end workflows with lots of enhanced features for advancing our enterprise customers:
+
 Real-time digital HD video streaming
 Real-time payload data processing (e.g. computer vision)
 Real-time flight control (e.g. target tracking, collision prevention, and obstacle avoidance)
@@ -210,17 +231,22 @@ In-flight telemetry and payload data streaming directly to customer’s cloud
 Drone-to-drone communications
 Running custom apps directly on the drone (edge computing)
 Safely performing autonomous BVLOS missions with real-time control
+
 You have all the necessary infrastructure to develop your own drone software as well as use advanced software from Sky-Drones partners.
-SmartAP AIRLink software
-​ has two computers: an AI mission computer and a flight control system.
-AI Mission Computer software
-OS is Ubuntu 18.04. Full  to the system.
+
+### SmartAP AIRLink software
+[SmartAP AIRLink]() has two computers: an AI mission computer and a flight control system.
+
+#### AI Mission Computer software
+OS is Ubuntu 18.04. Full [SSH access]() to the system.
 The AIRLink package contents is responsible for multimedia. It enables HD video streaming, cloud connectivity, etc.
 Mission computer communicates with GCS and Cloud via standard MAVLink protocol.
-​ allow access to all telemetry data (from localhost or remote host) via MAVLink protocol.
-RTSP allows  feeds.
+[Exposed UDP ports]() allow access to all telemetry data (from localhost or remote host) via MAVLink protocol.
+RTSP allows [access to real-time video]() feeds.
+
 All AI Mission Computer software is an open-source software except the Sky-Drones AIRLink package.
-Flight Control System software
+
+#### Flight Control System software
 Flight control system design and software are based on the popular widely adopted industry standards.
 
 
