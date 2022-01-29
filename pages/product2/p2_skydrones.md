@@ -22,17 +22,17 @@ To the most advanced hardware and software ecosystem for enterprise drones.
 We provide the entire full-stack hardware and software ecosystem for enterprise drones.
 This online documentation covers the how-to, what-if, and just-in-case elements of our whole product range, including:
 
-​[SmartAP Airlink](https://docs.sky-drones.com/airlink): The most advanced AI Drone Avionics: autopilot, mission computer and LTE module.
+​[SmartAP Airlink](https://pf4.36io.co/p2_sample1.html#smartap-airlink): The most advanced AI Drone Avionics: autopilot, mission computer and LTE module.
 
-​[smartLink](https://docs.sky-drones.com/smartlink): Drone connectivity system with integrated onboard computer. Provides direct datalink, LTE connectivity, video streaming, remote control from the Cloud and more.
+​[smartLink](https://pf4.36io.co/p2_sample3.html): Drone connectivity system with integrated onboard computer. Provides direct datalink, LTE connectivity, video streaming, remote control from the Cloud and more.
 
-​[skydrone-cloud](https://docs.sky-drones.com/cloud): Cloud-based web application for drone fleet management, asset management, performance monitoring, mission planning, real-time control and post-flight AI analytics.
+​[skydrone-cloud](https://pf4.36io.co/p2_sample4.html#sky-drones-cloud): Cloud-based web application for drone fleet management, asset management, performance monitoring, mission planning, real-time control and post-flight AI analytics.
 
-​[smartAP-gcs](https://docs.sky-drones.com/smartap-gcs): Cross-platform ground control station software for vehicle configuration, mission planning and flight control.
+​[smartAP-gcs](https://pf4.36io.co/p2_sample4.html#smartap-gcs): Cross-platform ground control station software for vehicle configuration, mission planning and flight control.
 
-​[smartAP-pdb](https://docs.sky-drones.com/smartap-pdb): Power transfer from the battery to ESCs / motors and power supply for the
+​[smartAP-pdb](https://pf4.36io.co/p2_sample5.html#smartap-pdb): Power transfer from the battery to ESCs / motors and power supply for the
 
-​[smartAP-max](https://docs.sky-drones.com/smartap-autopilots): Flight Control System aimed at a wide range of purposes for consumer and professional applications with a compact main core and externally connected peripherals.
+​[smartAP-max](https://pf4.36io.co/p2_sample5.html#smartap-autopilots): Flight Control System aimed at a wide range of purposes for consumer and professional applications with a compact main core and externally connected peripherals.
 
 ​[smartAP-Pro](https://github.com/aviaks/SmartAP-Docs/tree/26912afd4da01dc4c66f7513f989640a408e0856/smartap-pro/specifications/README.md): Industry-leading Flight Control System with outstanding reliability, precision positioning, and control accuracy for professional applications with various peripherals already integrated onboard.
 ![image](https://user-images.githubusercontent.com/42961200/151506041-a0f54e99-79cf-487c-914e-6633881f2681.png)
