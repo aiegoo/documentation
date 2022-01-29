@@ -131,9 +131,10 @@ White-label options are available too.  for more details.
 Your custom drone software
 ​[smartAP_Airlink](https://docs.sky-drones.com/airlink) has cutting-edge equipment and system software. It allows you to enable drones for advanced scenarios involving AI and connectivity features.
 The following options are available:
-Your team develops custom drone software and installs on AIRLink;
-Sky-Drones team develops custom drone software for you;
-You buy ready-made software from Sky-Drones partners.
+
+* Your team develops custom drone software and installs on AIRLink;
+* Sky-Drones team develops custom drone software for you;
+* You buy ready-made software from Sky-Drones partners.
 Interested? ​
 
 {{site.data.alerts.hr_shaded}}
