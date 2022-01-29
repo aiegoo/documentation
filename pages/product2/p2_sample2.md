@@ -285,7 +285,7 @@ For tight integration in your design
 ![image](https://user-images.githubusercontent.com/42961200/151666918-50eda13f-70e6-4227-a4c3-f7cdbdb0636c.png)
 
 Download STEP files of SmartAP AIRLink Telemetry for integrating into your own design:
-[Download](https://github.com/aiegoo/sky-drones/3d/AIRLink-Telemetry-Air-Module-STEP.zip
+[Download](https://github.com/aiegoo/sky-drones/3d/AIRLink-Telemetry-Air-Module-STEP.zip)
 
 
 ## Software
@@ -335,6 +335,7 @@ SSH root access is not available as standard for security and safety reasons. Ho
 ### Read / Write MAVLink Telemetry data
 SmartAP AIRLink provides user access for MAVLink telemetry stream which is useful for 3rd party applications development where you need to have access to the data from / to Autopilot and to / from Ground Control Station.
 AIRLink supports 3 ports for user applications: 2 absolutely independent UDP ports and 1 TCP port for third party apps access:
+```yaml
 #
 Type
 Host
@@ -354,10 +355,12 @@ MAVLink
 TCP
 127.0.0.1
 14556
+```
 MAVLink
 For developer's convenience we offer code samples for reading and writing MAVLink messages. This example displays how to read HEARTBEAT message from the other MAVLink nodes and send HEARTBEAT from our example.
 
 ### UDP Example
+```yaml
 Read / write MAVLink using UDP connection:
 #!/usr/bin/python3
 # Usage example of MAVLink UDP port for user applications
@@ -370,7 +373,8 @@ Read / write MAVLink using UDP connection:
 #                                     for user applications
 #                   35 - system-id for signature
 #
-​
+```
+```python
 import pymavlink.mavutil as mavutil
 from pymavlink.dialects.v20 import common as mavlink
 import sys
@@ -410,13 +414,16 @@ while True:
     msg = mav.recv_match(blocking=True)
     if msg.get_type() == 'HEARTBEAT':
         print("HEARTBEAT from %d: %s" % (msg.get_srcSystem(), msg))
-​
+```
 ​
 Run this example with:
+```bash
 python3 heartbeat_example_udp.py
+```
 
 ### TCP Example
 Read / write MAVLink using TCP connection:
+```bash
 #!/usr/bin/python3
 # Usage example of MAVLink TCP port for user applications
 # To execute:
@@ -427,7 +434,8 @@ Read / write MAVLink using TCP connection:
 #                                     now available 14556 tcp port
 #                   35 - system-id for signature
 #
-​
+```
+```python
 import pymavlink.mavutil as mavutil
 from pymavlink.dialects.v20 import common as mavlink
 import sys
@@ -464,17 +472,18 @@ while True:
     msg = mav.recv_match(blocking=True)
     if msg.get_type() == 'HEARTBEAT':
         print("HEARTBEAT from %d: %s" % (msg.get_srcSystem(), msg))
-​
+```
 ​
 ### Run the example
 Run the example with the following commands:
+```bash
 # Login via SSH
 ssh smartap@airlink.local
 ​
 # Make sure that you have the example
 # file in your home directory and run it with
 python3 heartbeat_example_udp.py
-
+```
 Once you run the example above you should expect the following output. This is the Heartbeat message coming from the Flight Controller:
 ![image](https://user-images.githubusercontent.com/42961200/151573808-a67d6995-0eda-448d-8694-6a7b797a1512.png)
 
@@ -485,6 +494,7 @@ Feel free to use these code samples for your custom apps development using Smart
 
 ### Get Video feed
 AIRLink provides video feed access via RTSP either locally (127.0.0.1) or remotely (airlink.local). Currently, we support integrated CSI camera and HDMI input as well as  cameras over Ethernet:
+```yaml
 #
 Video feed
 Type
@@ -509,6 +519,7 @@ RTSP
 127.0.0.1 or airlink.local
 8554
 rtsp://airlink.local:8554/camera/2
+```
 To check the video stream using a standard GStreamer pipeline use the following command:
 gst-launch-1.0 rtspsrc location=rtsp://airlink.local:8554/camera/0 ! rtph264depay ! avdec_h264 ! autovideosink sync=false
 If you have any other questions related to the software development with AIRLink please get in touch with our support team
@@ -594,6 +605,7 @@ Don't forget to remove the microSD card from the slot. Otherwise, the firmware u
 ## CAD model
 ![image](https://user-images.githubusercontent.com/42961200/151574940-b1cc2d96-1453-485c-8dfd-961b9e535e73.png)
 
+[download](https://github.com/aiegoo/sky-drones/3d/SmartAP-AIRLink-CAD-Model-STEP.zip)
 
 ## FAQ
 A selection of questions put forward by our consumers. If you require any more information, do not hesitate to contact us today!
