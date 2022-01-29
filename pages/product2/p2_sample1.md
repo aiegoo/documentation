@@ -42,9 +42,9 @@ The Sky-Drones Platform helps to integrate drones in custom end-to-end workflows
      * Integration services, the “glue” that connects drones, apps, partners and customers' software (see how  was designed for customers).
 * Tightly integrated partner software such as UTM services, fleet management solutions, flight logs, etc.
 
-{{site.data.alerts.notes}}
+{{site.data.alerts.note}}
 All Sky-Drones software is free to use! Software integrations from our partners (e.g. UTM) cost according to partners pricing model.
-{{site.data.end}}
+{{site.data.alerts.end}}
 
 
 ## Hardware
