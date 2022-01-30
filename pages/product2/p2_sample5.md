@@ -309,7 +309,7 @@ WARNING! 1. Do not power on the board without GPS and wireless telemetry module 
 ### Mounting the board
 Mount your board on your copter airframe. It's highly recommended to mount the board as close to the geometrical centre of the copter as possible. Mounting should be done with four 3 mm nylon screws. Add rubber spacers to reduce motor vibration noise.
 
-{% include note.html content="Note the "FWD" arrow during instillation - FWD = Forward" %}
+{% include note.html content="Note the FWD arrow during instillation - FWD = Forward" %}
 
 ### Connections
 Connect the general peripherals as shown on the diagram below:
