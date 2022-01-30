@@ -149,7 +149,7 @@ Interested? ​
 
 ## SmartAP AIRLink
 The most Advanced AI Drone Flight Controller
-[ArILink](https://sky-drones.com/airlink) stands for Artificial Intelligence & Remote Link. The unit includes a cutting-edge drone autopilot, AI mission computer and LTE connectivity unit. Start your enterprise drone operations with AIRLink and reduce the time to market from years and months down to weeks.
+[AIRLink](https://sky-drones.com/airlink) stands for Artificial Intelligence & Remote Link. The unit includes a cutting-edge drone autopilot, AI mission computer and LTE connectivity unit. Start your enterprise drone operations with AIRLink and reduce the time to market from years and months down to weeks.
 
 - SmartAP AIRLink launch video
 
