@@ -12,6 +12,7 @@ youtubeID: pfHjs5ZuGpk
 youtubeID1: h67RtzKW6a4
 youtubeID2: SRamk5T0FUo
 youtubeID3: n81L5MTuUrw
+youtubeID4: oP77vW-1cWs
 ---
 
 ## SmartAP Autopilots
@@ -785,28 +786,48 @@ At Sky-Drones, we pay extremely high attention to the design of our hardware inc
 {% include youtubePlayer.html id=page.youtubeID4 %}
 
 ## Installation
-SmartAP PDB (Power Distribution Board) is used for batteries and ESC connection. The board has integrated voltage and current sensors, buzzers, and 5V and 12V outputs.https://youtu.be/h67RtzKW6a4
-High input voltage recommendations
+SmartAP PDB (Power Distribution Board) is used for batteries and ESC connection. The board has integrated voltage and current sensors, buzzers, and 5V and 12V outputs.
+![image](https://user-images.githubusercontent.com/42961200/151695245-d63a5c65-cad0-43e7-bbb2-cb1d22b4de1c.png)
+
+https://youtu.be/h67RtzKW6a4
+
+### High input voltage recommendations
+{{site.data.alerts.callout_warning}}
 WARNING: When input voltage is higher than +35V (8S+ battery) then it's highly recommended to attach Aluminum Electrolytic Capacitor to the power input pads with the rating of at least 100 uF / 100V.
 Recommended part number: B41851A9227M000 or similar specs
-Pinout
+{{site.data.alerts.end}}
+
+### Pinout
 The SmartAP PDB pinout diagram is shown below. The larger pads in the rear side are intended for the main battery connection. Up to 4 independent batteries can be connected using the thick wires (e.g. 8-10 AWG). The thick wires are essential to be able to handle high current loads. Both top and bottom, and left and right sides have pads for a ESC power supply connection. Therefore, up to 12 ESCs can be connected.
-Soldering
-NOTE: It's strongly recommended to use a powerful solder iron (at least 80W). A weaker soldering iron produces a high chance of a cold joint which can significantly reduce the reliability of the elements.
+![image](https://user-images.githubusercontent.com/42961200/151695326-ebad3997-89ab-489d-a41c-fee68fa4f434.png)
+
+### Soldering
+{% include note.html content="NOTE: It's strongly recommended to use a powerful solder iron (at least 80W). A weaker soldering iron produces a high chance of a cold joint which can significantly reduce the reliability of the elements." %}
 Soldered Power Distribution Board should look as follows:
+![image](https://user-images.githubusercontent.com/42961200/151695340-c89e3539-d7be-437f-ab16-9a83377e131d.png)
+
 ​
-Powering the autopilot
-SmartAP PRO
-​ autopilot is capable of receiving power directly from the main battery, therefore, specially dedicated solder terminals can be used. If you require the autopilot to receive the current sensor (integrated in PDB) readings, simply connect the GND, 5V, CURRENT signals of the PDB using a standard cable to the flight controller.
+### Powering the autopilot
+![image](https://user-images.githubusercontent.com/42961200/151695370-fabfe68c-91bd-42b8-9af2-e9a77fda92ba.png)
+
+#### SmartAP PRO
+[SmartAP PRO]() autopilot is capable of receiving power directly from the main battery, therefore, specially dedicated solder terminals can be used. If you require the autopilot to receive the current sensor (integrated in PDB) readings, simply connect the GND, 5V, CURRENT signals of the PDB using a standard cable to the flight controller.
+![image](https://user-images.githubusercontent.com/42961200/151695386-abc7d4a7-f6f7-4a78-b09e-30aa2f81ab1b.png)
+{{site.data.alerts.callout_warning}}
 WARNING: SmartAP gets power directly from the PDB which is connected to the main battery, therefore, supply voltage is the same as your battery voltage. This means that it can be up to:
 36V (8S) for SmartAP 3.0
 36V (8S) for SmartAP 3.1
-SmartAP MAX
+{{site.data.alerts.end}}
+
+#### SmartAP MAX
 SmartAP MAX gets its power and voltage / current readings from the PDB using a standard 6-pin cable with Molex PicoBlade connectors. Simply connect the cable to the PWR connector of the autopilot.
-Buzzer support
+
+### Buzzer support
 SmartAP PDB has an integrated electromagnetic buzzer (sounder) which is used for audio notifications, alerting users to the system status. Simply connect the BUZZER and GND signals of the flight controller to BUZZER and GND signals of the PDB.
-Voltage and current sensors
+
+### Voltage and current sensors
 SmartAP PDB has integrated voltage and current sensors. The current sensor is located on the bottom side of the PDB. For the correct scale / offset configuration, please now and we'd be happy to help!
+![image](https://user-images.githubusercontent.com/42961200/151695429-f1e386d1-e5a0-48b3-88b4-98af96bea926.png)
 
 ## Standard GNSS
 Specifications
