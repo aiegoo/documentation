@@ -829,10 +829,16 @@ SmartAP PDB has an integrated electromagnetic buzzer (sounder) which is used for
 SmartAP PDB has integrated voltage and current sensors. The current sensor is located on the bottom side of the PDB. For the correct scale / offset configuration, please now and we'd be happy to help!
 ![image](https://user-images.githubusercontent.com/42961200/151695429-f1e386d1-e5a0-48b3-88b4-98af96bea926.png)
 
+## SmartAP GNSS
+![image](https://user-images.githubusercontent.com/42961200/151695487-cdda60d7-1b3a-4d29-9f5a-310c465513fe.png)
+
 ## Standard GNSS
-Specifications
+![image](https://user-images.githubusercontent.com/42961200/151695503-69d2b8d1-58e9-4837-8d03-2d5259bb0d95.png)
+
+### Specifications
 SmartAP GNSS is a compact GPS/GLONASS module with an integrated active antenna, UBlox Neo-M8N chipset and 3-axis magnetometer (compass). Fully compatible with .
-Features
+
+### Features
 UBlox NEO M8N chipset based
 Integrated SAW and LNA
 25mm ceramic patch antenna
@@ -849,16 +855,24 @@ UART port for GPS interface
 Diameter 75 mm
 Weight 18g
 Fully compatible with ​
-Package includes
+
+### Package includes
 GNSS module
 Connection cable
-Dimensions
+### Dimensions
+![image](https://user-images.githubusercontent.com/42961200/151695543-d4a8a45f-5d67-44bc-a208-c555bdaefd55.png)
+
 
 ## RTK GNSS
-Specifications
+![image](https://user-images.githubusercontent.com/42961200/151695545-f1b85059-49e3-4ef8-8ebe-b3a9a656d605.png)
+
+### Specifications
 This GNSS (GPS + GLONASS) module is base on RTK technology and was specially developed for  and is intended to be used in applications where precise positioning really matters. It's based on the latest and most precise UBlox Neo M8P chipset which provides outstanding position accuracy. The set includes a base station module with external active patch antenna, an airborne module with integrated patch antenna, and a set of cables.
+{{site.data.alerts.callout_primary}}
 Real Time Kinematic (RTK) satellite navigation is a technique used to enhance the precision of position data derived from satellite-based positioning systems (global navigation satellite systems, GNSS). It uses measurements from a phase of the signal carrier waves, rather than the information content of the signal, and relies on a single reference station or interpolated virtual station to provide real-time corrections, providing up to centimetre-level accuracy.
-Features
+{{site.data.alerts.end}}
+
+### Features
 Centimeter‑level GNSS positioning
 Integrated Real Time Kinematics (RTK)
 Smallest, lightest, and energy‑efficient RTK module
@@ -878,7 +892,8 @@ UART port for GPS interface
 USB for base station module
 Airborne module cable length 30cm
 Fully compatible with ​
-Package includes
+
+### Package includes
 Base station module
 Active patch antenna for base station module
 Airborne module with integrated patch antenna
@@ -886,28 +901,45 @@ Connection cable
 
 ## Updating GNSS Module
 In the event there is a need to update the configuration of GNSS receiver, this can be done for both airborne and ground module (RTK GNS). The latest configuration files, as well as the configuration tool, can be found in the downloads section on the Sky-Drones website ​
-Getting U-Center
+
+### Getting U-Center
 First of all you need to download and install UBlox U-Center utility. After completing the installation, run the program.
-RTK GNSS Configuration update
+![image](https://user-images.githubusercontent.com/42961200/151695574-68746f05-cc62-40c3-b2ac-ba48a7cedfbf.png)
+
+### RTK GNSS Configuration update
 Plug in RTK GNSS Module to the USB port of your computer and make sure that the green LED is solid (NOT flashing).
+![image](https://user-images.githubusercontent.com/42961200/151695586-6206b664-4a26-44bc-bb97-f781fbab8e12.png)
+
 Go to U-Center utility and set up the connection in the top-left corner: choose the right COM port and set the baud rate to 115200.
+
 Then go to Tools > GNSS Configuration and select the configuration file. SetStore configuration into BBR / Flash checked.
+![image](https://user-images.githubusercontent.com/42961200/151695593-c7e33f7c-2934-469e-b10f-253cd432e13d.png)
+
 Press File > GNSS button, the update process should start.
+![image](https://user-images.githubusercontent.com/42961200/151695598-8359afd4-832a-429b-a1a7-0bd70ab4ba9a.png)
+
 If the messages dialog closes itself and you cannot see any error messages or reports, this means that the configuration of the GPS receiver has been successfully updated.
-SmartAP PRO Onboard GNSS module update
+
+### SmartAP PRO Onboard GNSS module update
 Connect your FTDI cable to the GPS port of the flight controller as follows:
+
 GND <-> GND
 TX <-> RX
 RX <-> TX
+
 Do NOT connect 5V and/or power supply pin from FTDI cable to the flight controller! Flight controller will get the power from the USB cable. Set the boot switch in UPD (“Update”) mode, connect your USB cable to the flight controller and connect the FTDI cable to your computer. Your setup should look as follows: ![](../.gitbook/assets/smartap-gps-ftdi.png)
 ​
 Once connected, proceed with the update steps described above.
+
 Troubleshooting: if it seems that there is no connection to the GPS module, try changing the TX and RX pins of the FTDI cable connected to your flight controller. Note that sometimes the colours changing means the elements have been swapped.
+
 Do not forget to put the switch back to the RUN position!
 
 ## CAD Model
 Download the STEP files of SmartAP GNSS to integrate it into your own design:
+[SmartAP-GNSS-STEP.zip](https://github.com/aiegoo/sky-drones/blob/master/3d/SmartAP-GNSS-STEP.zip)
 
+[SmartAP-GNSS-Internals.zip](https://github.com/aiegoo/sky-drones/blob/master/3d/SmartAP-GNSS-Internals.zip)
 
 ## revision history
 1.3.0
