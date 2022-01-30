@@ -757,10 +757,14 @@ If you now see the board LEDs flashing, congratulations! Bootloader has been suc
 
 
 ## SmartAP PDB
-Introduction
+
+### Introduction
 SmartAP PDB (Power Distribution Board) allows users to transfer power from the battery to ESCs / motors, and generate a power supply for the flight controller and other peripherals with different voltage levels.
+
 PDB provides the functionality for battery voltage / current measurements. SmartAP PDB makes high-power line connections easier and much more reliable.
-Features
+![image](https://user-images.githubusercontent.com/42961200/151695181-dfdd0273-a25b-4647-965d-5cdafb95a9db.png)
+
+###Features
 Size: 65x65 mm, 4no. 3mm mounting holes
 Input voltage up to 60 Volts (14S)
 Capability to handle extremely high currents (peak current up to 400A)
@@ -774,10 +778,13 @@ Integrated loud electromagnetic sounder (buzzer)
 Power output for the flight controller (both 5V and battery VIN)
 Fully compatible with all ​
 For further information, please refer to the  section.
-Manufacturing process
+
+### Manufacturing process
 At Sky-Drones, we pay extremely high attention to the design of our hardware including manufacturing, inspection and quality control. The reliability of your drone is directly affected by the quality and reliability of the hardware inside, so it's our responsibility to you to take extra are. Take a look at the video below: it demonstrates the essential steps in our hardware production process in our UK factory before being shipped worldwide to our customers.
 
-### Installation
+{% include youtubePlayer.html id=page.youtubeID4 %}
+
+## Installation
 SmartAP PDB (Power Distribution Board) is used for batteries and ESC connection. The board has integrated voltage and current sensors, buzzers, and 5V and 12V outputs.https://youtu.be/h67RtzKW6a4
 High input voltage recommendations
 WARNING: When input voltage is higher than +35V (8S+ battery) then it's highly recommended to attach Aluminum Electrolytic Capacitor to the power input pads with the rating of at least 100 uF / 100V.
