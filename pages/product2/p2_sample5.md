@@ -8,6 +8,7 @@ simple_map: true
 map_name: usermap
 box_number: 5
 folder: product2
+youtubeID: pfHjs5ZuGpk
 ---
 
 ## SmartAP Autopilots
@@ -20,17 +21,25 @@ SmartAP PRO and SmartAP MAX are Sky-Drones' flagship flight controllers.
 ![image](https://user-images.githubusercontent.com/42961200/151693424-30e0c793-e838-4e36-9be4-5c3c84011dbc.png)
 
 SmartAP MAX Autopilot is the latest generation flight control system for multirotor Unmanned Aerial Vehicles of various configurations and sizes aimed at a wide range of applications.
+
 The main feature of the system is its capability of fully autonomous flight including take off, waypoints flight, landing and much more. The core is based on a powerful 32-bit microcontroller ST Microelectronics® STM32F4 and 9-axis Inertial Measurement Unit. The latest UBlox® GPS module with integrated 3-axis magnetometer and pressure sensor can be connected externally for autonomous flight capabilities as well as possessing a wireless telemetry module for system configuration, mission planning and control, and in-flight monitoring via the purpose-designed SmartAP Ground Control Station and Configuration Tool.
+
 SmartAP MAX supports any type of multirotor UAV with outstanding flight performance, reliability, navigation and control precision. Its compact size and weight makes integration of the system fast and easy, and its various I/O interfaces allows the creation of applications for interaction with 3rd party electronics and payloads.
-Included in your Set
-SmartAP MAX flight controller
-GPS / GLONASS satellite navigation module with integrated 3-axis magnetometer
-Telemetry kit (air and ground module with antennas and connection cable)
-DC-DC Power module and current / voltage sensor
-MicroSD card with adapter
-Electromagnetic sounder
-Description
-Flight performance
+
+### Included in your Set
+![image](https://user-images.githubusercontent.com/42961200/151693450-ef27aa05-2408-4ca7-902e-dffa317de884.png)
+
+1. SmartAP MAX flight controller
+2. GPS / GLONASS satellite navigation module with integrated 3-axis magnetometer
+3. Telemetry kit (air and ground module with antennas and connection cable)
+4. DC-DC Power module and current / voltage sensor
+5. MicroSD card with adapter
+6. Electromagnetic sounder
+
+{{site.data.alerts.hr_shaded}}
+
+### Description
+#### Flight performance
 Extremely stable flight in stabilize (user control), position hold (semi-autonomous control) and autonomous (navigation and control) modes
 Vibration dampened multiple redundant temperature stabilized IMU
 Aluminium case for EMI protection
@@ -40,7 +49,8 @@ Fully autonomous waypoints flight
 Return to home mode
 Failsafe detection and event triggering
 Plus much more...
-General
+
+#### General
 Powerful microcontroller 32 bit 168 MHz STM32F4 ARM Cortex M4
 Compatible with GPS/GLONASS receiver (UBlox® NEO8, GPS/GLONASS, up to 24 sats, 10 Hz) active antenna
 Integrate OSD (On-Screen Display)
@@ -53,19 +63,22 @@ Backup battery for RTC
 Electromagnetic sound audio indicator
 3-channels LED support (up to 500mA / ch)
 2-channels solid state relay
-Processor
+
+#### Processor
 ST Microelectronics STM32F427VI
 32 bit 168 MHz ARM Cortex M4
 Hardware FPU
 2 MB Flash
 192 kB RAM
-Sensors
+
+#### Sensors
 Vibration dampened multiple redundant temperature stabilized IMU
 2x 9-axis IMU InvenSense MPU-9250 (accelerometer, gyroscope, magnetometer)
 2x Pressure sensor MS5611 (integrated and external)
 1x 3-axis magnetometer HMC5883 (external)
 1x UBlox® M8N GPS module (external)
-Flight Modes
+
+#### Flight Modes
 Stabilization
 Altitude hold
 GPS position hold
@@ -75,7 +88,8 @@ Autonomous waypoints flight
 Guided / follow me
 Take off
 Landing
-Interfaces
+
+#### Interfaces
 12x PWM I/O
 1x PPM / SBUS input
 1x SBUS output
@@ -88,69 +102,136 @@ Interfaces
 1x camera input
 1x camera output
 1x USB Mini-B
-Size and Weight
+
+#### Size and Weight
 Length: 63mm
 Width: 43mm
 Height: 16mm
 Weight: 21g
 
-### Installation
-Autopilot
+## Installation
+
+{% include youtubePlayer.html id=page.youtubeID %}
+
+### Autopilot
 The underneath of the autopilot has double-sided foam anti-vibration tape. Remove the protection layer of the anti-vibration tape and mount the autopilot in any direction you like, the actual direction can be selected during configuration procedures later. It’s recommended to mount the autopilot as close to the centre of gravity as possible.
- "FRONT" arrow indicates the original flight direction. This can be changed in the settings later.
-GNSS / MAG
-​ provides positioning information to the system and is sensitive to EMI noise. Make sure to place the GNSS module as far away as possible from:
-Main body of the airframe
-RF emitting devices, such as video transmitters
-High-current cables (ESC / motors power supply)
+![image](https://user-images.githubusercontent.com/42961200/151693563-b98be579-35a7-4fb2-82c2-c94c8af8e425.png)
+
+ {% include note.html content="'FRONT' arrow indicates the original flight direction. This can be changed in the settings later." %}
+ 
+{{site.data.alerts.hr_shaded}}
+
+#### GNSS / MAG
+[GNSS / MAG]() provides positioning information to the system and is sensitive to EMI noise. Make sure to place the GNSS module as far away as possible from:
+* Main body of the airframe
+* RF emitting devices, such as video transmitters
+* High-current cables (ESC / motors power supply)
+
 It’s recommended to use GPS mast for GNSS positioning. Connect the cable and put the GPS on the mast.
-Connecting Peripherals
-Metal case version
+![image](https://user-images.githubusercontent.com/42961200/151693645-d1bdb41a-dcdd-4675-a8da-c43153a35c7a.png)
+
+{{site.data.alerts.hr_shaded}}
+
+### Connecting Peripherals
+#### Metal case version
 Ports pinout for the front and rear panels
+![image](https://user-images.githubusercontent.com/42961200/151693670-49f2e13a-fa05-454a-9a7c-99052e48b7ef.png)
+
 Front panel connectors pinout:
+![image](https://user-images.githubusercontent.com/42961200/151693674-2e359ea0-b125-46f2-bbd1-09ee7cf66ff8.png)
+
 Rear panel connectors pinout:
-Plastic case version
+![image](https://user-images.githubusercontent.com/42961200/151693680-e24438c0-0562-4007-b687-a22215a33013.png)
+
+#### Plastic case version
 Front panel connectors pinout:
+![image](https://user-images.githubusercontent.com/42961200/151693697-08674ff0-13b6-4cc6-a021-e7957c9e6f98.png)
+
 Rear panel connectors pinout:
+![image](https://user-images.githubusercontent.com/42961200/151693706-06e18e8b-f3a0-4488-a0d0-53f410e0dbc2.png)
+
+{{site.data.alerts.callout_warning}}
 Make sure NOT to mix up polarity. GND line (black) is always nearer the edge (bottom)
-RC Receiver
+{{site.data.alerts.end}}
+
+### RC Receiver
 Connect PPM / SBUS output on the RC receiver to PPM / SBUS input port on SmartAP.
-ESC / Motors PWM
+![image](https://user-images.githubusercontent.com/42961200/151693751-d98589fc-6c6f-42b8-b271-3c45d6c3f6a1.png)
+
+{{site.data.alerts.hr_shaded}}
+
+### ESC / Motors PWM
 Connect ESC cables to SmartAP PWM outputs 1-12 depending on the number of motors your airframe has. The first motor is always front or front-right, and its spinning direction is CCW. Supported airframe types and motor numbers / spinning direction are shown below.
+![image](https://user-images.githubusercontent.com/42961200/151693771-30680397-c2ba-48a7-92e8-d656d6215fad.png)
+
  PWM signals is the top wire, GND is the bottom one.
-If you can’t find your airframe in the list above, please, let us know and we’ll add your airframe! Contact us .
-GNSS / MAG
+{{site.data.alerts.callout_primary}}
+If you can’t find your airframe in the list above, please, let us know and we’ll add your airframe!
+{{site.data.alerts.end}}]
+
+{{site.data.alerts.hr_shaded}}
+
+### GNSS / MAG
 Connect the one side of the cable to the GNSS module and the other one to the GPS / MAG port on the autopilot as shown in the images below:
-Telemetry Module
+![image](https://user-images.githubusercontent.com/42961200/151693830-768724ce-170e-4160-8c2f-b75b9cba3738.png)
+
+{{site.data.alert.hr_shaded}}
+### Telemetry Module
 Connect the one side of the cable to the air telemetry module and the other one to the RADIO port of the autopilot as shown in the images below:
-Power Module
+![image](https://user-images.githubusercontent.com/42961200/151693837-f6f447e3-b75b-4d68-8fbd-b5ce1df42f53.png)
+
+### Power Module
 Connect the power supply cable (10-36 V, 3S – 8S) to the main power distribution board of the UAV.
-Electromagnetic sounder
-Camera trigger
+![image](https://user-images.githubusercontent.com/42961200/151693849-2d81898b-2756-49e0-85e1-636397714212.png)
+
+{{site.data.alerts.hr_shafed}}
+
+### Electromagnetic sounder
+![image](https://user-images.githubusercontent.com/42961200/151693870-63d4c8e2-87f7-40b5-bf8b-dd6d8aa0263f.png)
+
+{{site.data.alerts.hr_shaded}}
+
+### Camera trigger
 SmartAP MAX supports automated camera triggering interface:
-PWM output - if you want to use PWM output, simply connect the camera trigger activator into any free PWM channel and configure the port number later in the settings.
-Relay commutation - if you want to use relay, connect the pins (these should be shorted / unshorted depending on activation) to relay pins RCOM and ROUT (marked yellow):
+* PWM output - if you want to use PWM output, simply connect the camera trigger activator into any free PWM channel and configure the port number later in the settings.
+* Relay commutation - if you want to use relay, connect the pins (these should be shorted / unshorted depending on activation) to relay pins RCOM and ROUT (marked yellow):
+* ![image](https://user-images.githubusercontent.com/42961200/151693895-6b5d8b60-47d9-4354-b0b0-bbde5cefb6b1.png)
+
 If you would like to use camera feedback at the exact moment the photo was taken (for log file and precise geotagging later), then you need to connect CS and GND pins marked above to the signal and ground of the interface, thus providing camera feedback.
-Assembled System
+
+{{site.data.alerts.hr_shaded}}
+
+### Assembled System
 Fully assembled and mounted system should look as follows:
+![image](https://user-images.githubusercontent.com/42961200/151693903-73e6e12c-7441-4deb-b6e5-8044e4a3022a.png)
+
 
 ### CAD Model
 Download STEP files of  for integrating into your own design:
+[SmartAP-MAX-STEP.zip](https://github.com/aiegoo/sky-drones/blob/master/3d/SmartAP-MAX-STEP.zip)
 
 ## SmartAP PRO
 Introduction
-​ Autopilot is the latest generation of professional flight control systems for multirotor Unmanned Aerial Vehicles, capable of fully autonomous flight.
+[smartAP PRO]() Autopilot is the latest generation of professional flight control systems for multirotor Unmanned Aerial Vehicles, capable of fully autonomous flight.
 The system has a powerful microcontroller, multiple redundant 9-axis Inertial Measurement Unit (IMU) (Gyroscopes, Accelerometers, Magnetometer) with temperature stabilization, integrated telemetry module, and an external  module with an integrated magnetometer. SmartAP supports any type of multirotor UAV with outstanding navigation and precision control.
-Set Includes
-SmartAP PRO Flight Controller main board
-External GNSS / Magnetometer module
-Ground telemetry module
-Onboard telemetry antenna
-High-gain ground telemetry antenna
-Power input cable
-MicroSD card with SD card adapter
-Description
-Capabilities
+![image](https://user-images.githubusercontent.com/42961200/151693930-d85c31b5-69a2-4aa9-8bc0-dd0f7c0d6ed1.png)
+{{site.data.alerts.hr_shaded}}
+
+### Set Includes
+![image](https://user-images.githubusercontent.com/42961200/151693949-af4466d6-f2d5-4f9c-9303-f2dc2e3c5fe3.png)
+
+1. SmartAP PRO Flight Controller main board
+2. External GNSS / Magnetometer module
+3. Ground telemetry module
+4. Onboard telemetry antenna
+5. High-gain ground telemetry antenna
+6. Power input cable
+7. MicroSD card with SD card adapter
+
+{{site.data.alerts.hr_shaded}}
+
+### Description
+#### Capabilities
 Outstanding flight stability in all modes - manual (user control), position hold (semi-autonomous control) and auto (fully autonomous navigation and control)
 Temperature-stabilized IMU
 Fully compatible with  Ground Control Station for configuration and mission planning
@@ -162,7 +243,10 @@ Fully autonomous waypoints flight mode
 Guided flight mode
 Various failsafe events configuration and triggering
 Operating temperature -40...+85C
-General
+![image](https://user-images.githubusercontent.com/42961200/151693976-c6a4ff74-9f15-43d4-b1e1-bda9afc5774b.png)
+![image](https://user-images.githubusercontent.com/42961200/151693978-7c74a222-c605-4333-8b52-766fba10161b.png)
+
+#### General
 Powerful microcontroller 32 bit 168 MHz STM32F4 ARM Cortex M4
 Compact board size of 8x8 cm (3.15"x3.15"), weight 60g, 6 layers PCB design
 Power supply from the main LiPO battery (3S - 14S) support, up to 60 volts
@@ -187,11 +271,13 @@ Electromagnetic sounder
 3-channels bright LED support (up to 300mA/ch)
 RGB LED support
 2-channel solid state relay
-Sensors
+
+#### Sensors
 IMU: InvenSense MPU-9150
 Magnetometer: Honeywell HMC5983L
 Pressure sensors: MS5611
-Flight Modes
+
+#### Flight Modes
 Stabilization
 Altitude hold
 Position hold
@@ -201,39 +287,56 @@ Guided
 Follow me
 Take off
 Landing
-Size and Weight
+
+#### Size and Weight
 Length: 80mm
 Width: 80mm
 Height: 17mm
 Weight: 39g
 
 ### Installation
-​
+
+{{site.data.alerts.callout_warning}}
 WARNING!
 1. Do not power on the board without GPS and wireless telemetry module antennas connected!
 2. Do not disconnect antennas when the board is powered on!
 Both of the above can void warranty on the device,
-Mounting the board
+{{site.data.alerts.end}}
+
+### Mounting the board
 Mount your board on your copter airframe. It's highly recommended to mount the board as close to the geometrical centre of the copter as possible. Mounting should be done with four 3 mm nylon screws. Add rubber spacers to reduce motor vibration noise.
-Note the "FWD" arrow during instillation - FWD = Forward
-Connections
+
+{% include note.html content="Note the "FWD" arrow during instillation - FWD = Forward" %}
+
+### Connections
 Connect the general peripherals as shown on the diagram below:
+![image](https://user-images.githubusercontent.com/42961200/151694043-c38b89ea-4890-41af-8aee-821984a3ceff.png)
+
 YOUTUBE
-External GNSS / MAG
+
+### External GNSS / MAG
 If you’re using external GNSS / Magnetometer module board, the connection should be as following:
-SmartAP PRO 0.2 and later
+#### SmartAP PRO 0.2 and later
 The GNSS / Magnetometer cable goes to its dedicated GNSS / MAG port with 6 wires (GND, SDA, SCL, RX, TX, 5V).
-SmartAP PRO 0.1 and Earlier
+![image](https://user-images.githubusercontent.com/42961200/151694071-effbfb28-e2fa-4128-96bc-ed8065c150e4.png)
+
+#### SmartAP PRO 0.1 and Earlier
 The GPS cable (4 wires: GND, 5V, RX, TX) goes to its dedicated GPS port, whilst the magnetometer cable (I2C: SCL, SDA) goes to the dedicated magnetometer port as shown in the picture above.
+![image](https://user-images.githubusercontent.com/42961200/151694078-aec3df0e-677b-453e-bf12-bac3f7af2039.png)
+
 Make sure to place the GPS module as far as possible from:
-Main body of the airframe
-RF emitting devices such as transmitters
-High-current cables (ESC / motors power supply)
-GPS Receiver
+* Main body of the airframe
+* RF emitting devices such as transmitters
+* High-current cables (ESC / motors power supply)
+
+### GPS Receiver
 Connect the GPS antenna to its designated GPS antenna port. Note: this is only for versions with the integrated GNSS module.
-RC Receiver
+### RC Receiver
 After mounting the board you need to connect the cables from the RC receiver to SmartAP PPM / SBUS input.
+![image](https://user-images.githubusercontent.com/42961200/151694105-e7f9f023-fdae-485c-acca-97a347fd57b9.png)
+
 You can also connect FrSky S.Port from FrSky receiver and get real-time telemetry on your FrSky transmitter (e.g. Taranis) screen. Simply connect the S.Port wire from the receiver to the Tel pin next to SBus input.
+
 Channel assignments should normally be as follows:
 Input channel 1 – Roll
 Input channel 2 – Pitch
@@ -242,18 +345,31 @@ Input channel 4 – Yaw
 Input channel 5 – Mode selection
 Input channel 6 – RTH Mode
 Input channel 7 – Auto Mode
+
 Modes can be remapped in the configuration software later.
-RSSI Monitoring
+
+### RSSI Monitoring
 If you want the flight controller to read the information about RSSI (Received Signal Strength Indicator) from RC receiver - simply connect the RSSI output and GND from your RC receiver to PWM I/0 #13 for the flight controller. RSSI information will appear in the  and also on the OSD screen.
-Motors ESC
+
+### Motors ESC
 Connect ESC inputs to SmartAP PWM outputs 1-12. The first motor is always front or front-right, its spinning direction is CCW.
+![image](https://user-images.githubusercontent.com/42961200/151694121-ac34c119-d4c1-4300-9c33-51457f37d666.png)
+
+{{site.data.alerts.callout_warning}}
 Be sure NOT to mix up polarity!
 GND line (black) is near the edge, +5V line (red) in the middle, signal line (yellow) is on the upper row.
-Telemetry Module
+{{site.data.alerts.end}}
+
+### Telemetry Module
 Connect the telemetry antenna to the telemetry antenna port. If you would like to use a external telemetry module, connect GND, 5V, RX, TX pins of the telemetry port to your external telemetry module. Later, you will need to disable the onboard telemetry module within  configurator software.
-OSD Video
+
+### OSD Video
 SmartAP has a integrated OSD (On-Screen display) module. This means that you can connect your camera output to the autopilot (instead of directly connecting to the video transmitter) and then connect the video output from the flight controller to the video transmitter. In this case, the autopilot will relay the flight information (mode, altitude, speed, battery status, etc.) on the screen. Connect the video camera to the video IN port on the autopilot (GND, 12V, VIN). Connect the video transmitter to the video OUT port on the autopilot (GND, 12V, VOUT).
-SmartAP OSD supports both PAL and NTSC video standards with automatic detection and configuration.Installation
+![image](https://user-images.githubusercontent.com/42961200/151694150-5c8a0692-6b59-431c-a7b9-65af13a77dc0.png)
+
+SmartAP OSD supports both PAL and NTSC video standards with automatic detection and configuration.
+
+Installation
 ​
 WARNING!
 1. Do not power on the board without GPS and wireless telemetry module antennas connected!
@@ -301,21 +417,33 @@ OSD Video
 SmartAP has a integrated OSD (On-Screen display) module. This means that you can connect your camera output to the autopilot (instead of directly connecting to the video transmitter) and then connect the video output from the flight controller to the video transmitter. In this case, the autopilot will relay the flight information (mode, altitude, speed, battery status, etc.) on the screen. Connect the video camera to the video IN port on the autopilot (GND, 12V, VIN). Connect the video transmitter to the video OUT port on the autopilot (GND, 12V, VOUT).
 SmartAP OSD supports both PAL and NTSC video standards with automatic detection and configuration.
 Check the voltage ratings for your video camera and video transmitter! SmartAP outputs 12V and normally camera and video TX require a 12V power supply, however, some of the cameras / transmitters need 5V or other specific voltage levels. Check this carefully and provide the required voltage level. Otherwise, it can damage your camera / video TX!
-Electromagnetic ounder
+
+### Electromagnetic ounder
 Connect your electromagnetic sounder to the BUZ port of SmartAP.
-Power Supply
+
+### Power Supply
 Connect the power supply cable from your main power distribution board on the UAV:
 SmartAP PRO 0.1 and earlier: 10-36 V, 3S – 8S
 SmartAP PRO 0.2 and later: 10-60 V, 3S – 14S
-LED & Buzzer
+
+### LED & Buzzer
 Buzzer: 12V, 0.2A (included in the kit) LED 1-4: 12V, 0.2A per each channel (enough to power an LED strip of 25cm in length)
-Pressure Sensor Foam
+
+### Pressure Sensor Foam
 The pressure sensor is highly sensitive to the air pressure noise generated by the props and sunlight. It’s highly recommended to add foam coverage on the pressure sensor to decrease the noise effect and improve measurements. This will result in more precise altitude hold positions. For example:
-Dimensions
+![image](https://user-images.githubusercontent.com/42961200/151694221-a110444f-57e5-4f00-a9d3-8d5541ac3d77.png)
+
+### Dimensions
 Dimensions of the board are 80x80mm. Diameter of mounting holes is 3mm, and distance between the centre of the mounting holes and board edges is 4.5 mm.
+![image](https://user-images.githubusercontent.com/42961200/151694225-1c3dfebb-c236-44bb-9655-0504eac91082.png)
+
 SmartAP PRO v .2 pinout
 SmartAP PRO v .1 pinout
+![image](https://user-images.githubusercontent.com/42961200/151694231-5eccf80b-08a0-4c0e-8e03-60a6172670d1.png)
+
 SmartAP PRO v .0 pinout
+![image](https://user-images.githubusercontent.com/42961200/151694237-276e3ef2-8391-41fb-9d22-520c8f53da13.png)
+
 Dimensions of the board are 80x80mm. Diameter of mounting holes is 3mm, and distance between the centre of the mounting holes and board edges is 4.5 mm.
 SmartAP PRO v .2 pinout
 SmartAP PRO v .1 pinout
@@ -323,22 +451,45 @@ SmartAP PRO v .0 pinout
 
 ## Drivers
 Occasionally the operating system can not detect the drivers or detects the drivers incorrectly. If you're experiencing any issues with connecting to the flight controller or firmware update procedure then you should reinstall the driver.
+{{site.data.alerts.callout_primary}}
 It's recommended to uninstall all previous drivers associated with the autopilot before proceeding to the next steps.
+{{site.data.alerts.end}}
+
 First of all go to the Device Manager and delete the existing drivers if they are already installed. Then plug the flight controller into the USB port. You'll see a message that the new device has been discovered:
+![image](https://user-images.githubusercontent.com/42961200/151694270-36e8061d-a074-4984-98d6-025933e99ac5.png)
+
 If you click on the message you'll see more detailed information. The operating system is trying to find the driver for SmartAP Autopilot and its bootloader.
+![image](https://user-images.githubusercontent.com/42961200/151694277-1cd16c81-36da-4e60-94cd-a36403152061.png)
+
 It is unlikely that the driver will be found automatically, so you'll need to go to Device Manager and set the correct driver. When you open Device Manager you'll see SmartAP as an unknown device.
+{{site.data.alerts.callout_info}}
 If you cannot see SmartAP bootloader in the devices list it's probably because the devices is hidden. To make the bootloader device visible (not only for the initial three seconds after power up but for the foreseeable) you can enable hidden devices in windows device manager using the steps below.
-Open CMD as administrator
-Run SET DEVMGR_SHOW_NONPRESENT_DEVICES=1
-Type devmgmt.msc into the open device manager
-Click View > Show hidden devices
-More information and further details on the steps above can be found ​
+{{site.data.alerts.end}}
+* Open CMD as administrator
+* Run SET DEVMGR_SHOW_NONPRESENT_DEVICES=1
+* Type devmgmt.msc into the open device manager
+* Click View > Show hidden devices
+More information and further details on the steps above can be found [here]()
+![image](https://user-images.githubusercontent.com/42961200/151694289-306015e9-ca0b-485f-a2a7-fb438df0b02e.png)
+
 Right click on it and choose Update Device Driver.
+![image](https://user-images.githubusercontent.com/42961200/151694328-7e31f6be-f181-4519-a29e-7dec0332f20b.png)
+
 Then choose Browse my Computer for Driver Software. Go to the  section of the Sky-Drones website and get the driver .inf file for the autopilot. Specify the location of the driver in the Browse menu.
+![image](https://user-images.githubusercontent.com/42961200/151694332-d3accf19-fdc6-4c6d-b21e-0ad6a94dcc5d.png)
+
 When the below pop up window comes choose Install this driver software anyway
+![image](https://user-images.githubusercontent.com/42961200/151694336-48b6045b-0463-42fe-9d9c-0c29f98be6b4.png)
+
 The process might take a few minutes.
+![image](https://user-images.githubusercontent.com/42961200/151694338-b81fdd62-50d6-43e3-8ee2-5008200fbabe.png)
+
 Once it's completed you can see the message that the driver was successfully installed.
+![image](https://user-images.githubusercontent.com/42961200/151694343-ba1615ff-9b42-4721-9c62-5a4fb387996a.png)
+
 Unplug and plug in the USB cable of the autopilot to reboot the board. When you next go to Device Manager you'll see that the driver is now installed successfully:
+![image](https://user-images.githubusercontent.com/42961200/151694346-5e917274-3f74-4d7c-853e-29ee31ac8c65.png)
+
 
 ## Getting the Software
 Go to  to download the all new .
