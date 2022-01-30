@@ -123,8 +123,8 @@ Weight: 21g
 The underneath of the autopilot has double-sided foam anti-vibration tape. Remove the protection layer of the anti-vibration tape and mount the autopilot in any direction you like, the actual direction can be selected during configuration procedures later. It’s recommended to mount the autopilot as close to the centre of gravity as possible.
 ![image](https://user-images.githubusercontent.com/42961200/151693563-b98be579-35a7-4fb2-82c2-c94c8af8e425.png)
 
- {% include note.html content="'FRONT' arrow indicates the original flight direction. This can be changed in the settings later." %}
- 
+ {% include note.html content="FRONT arrow indicates the original flight direction. This can be changed in the settings later." %}
+
 {{site.data.alerts.hr_shaded}}
 
 #### GNSS / MAG
