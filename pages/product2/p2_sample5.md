@@ -57,63 +57,63 @@ Failsafe detection and event triggering
 Plus much more...
 
 #### General
-Powerful microcontroller 32 bit 168 MHz STM32F4 ARM Cortex M4
-Compatible with GPS/GLONASS receiver (UBlox® NEO8, GPS/GLONASS, up to 24 sats, 10 Hz) active antenna
-Integrate OSD (On-Screen Display)
-Up to 12 PWM I/O support (5V out)
-USB interface for configuration / firmware update
-Various communication lines (UART, I2C, SPI)
-MicroSD, 4-bit SDIO interface for data-logging / parameters storage
-Backup battery for RTC
-2x ADC inputs for battery voltage / current monitoring
-Electromagnetic sound audio indicator
-3-channels LED support (up to 500mA / ch)
-2-channels solid state relay
+* Powerful microcontroller 32 bit 168 MHz STM32F4 ARM Cortex M4
+* Compatible with GPS/GLONASS receiver (UBlox® NEO8, GPS/GLONASS, up to 24 sats, 10 Hz) active  antenna
+* Integrate OSD (On-Screen Display)
+* Up to 12 PWM I/O support (5V out)
+* USB interface for configuration / firmware update
+* Various communication lines (UART, I2C, SPI)
+* MicroSD, 4-bit SDIO interface for data-logging / parameters storage
+* Backup battery for RTC
+* 2x ADC inputs for battery voltage / current monitoring
+* Electromagnetic sound audio indicator
+* 3-channels LED support (up to 500mA / ch)
+* 2-channels solid state relay
 
 #### Processor
-ST Microelectronics STM32F427VI
-32 bit 168 MHz ARM Cortex M4
-Hardware FPU
-2 MB Flash
-192 kB RAM
+* ST Microelectronics STM32F427VI
+* 32 bit 168 MHz ARM Cortex M4
+* Hardware FPU
+* 2 MB Flash
+* 192 kB RAM
 
 #### Sensors
-Vibration dampened multiple redundant temperature stabilized IMU
-2x 9-axis IMU InvenSense MPU-9250 (accelerometer, gyroscope, magnetometer)
-2x Pressure sensor MS5611 (integrated and external)
-1x 3-axis magnetometer HMC5883 (external)
-1x UBlox® M8N GPS module (external)
+* Vibration dampened multiple redundant temperature stabilized IMU
+* 2x 9-axis IMU InvenSense MPU-9250 (accelerometer, gyroscope, magnetometer)
+* 2x Pressure sensor MS5611 (integrated and external)
+* 1x 3-axis magnetometer HMC5883 (external)
+* 1x UBlox® M8N GPS module (external)
 
 #### Flight Modes
-Stabilization
-Altitude hold
-GPS position hold
-Loiter
-Return to home
-Autonomous waypoints flight
-Guided / follow me
-Take off
-Landing
+* Stabilization
+* Altitude hold
+* GPS position hold
+* Loiter
+* Return to home
+* Autonomous waypoints flight
+* Guided / follow me
+* Take off
+* Landing
 
 #### Interfaces
-12x PWM I/O
-1x PPM / SBUS input
-1x SBUS output
-1x power input port
-1x LED output port
-3x UART
-2x I2C
-1x SPI
-2x CAN
-1x camera input
-1x camera output
-1x USB Mini-B
+* 12x PWM I/O
+* 1x PPM / SBUS input
+* 1x SBUS output
+* 1x power input port
+* 1x LED output port
+* 3x UART
+* 2x I2C
+* 1x SPI
+* 2x CAN
+* 1x camera input
+* 1x camera output
+* 1x USB Mini-B
 
 #### Size and Weight
-Length: 63mm
-Width: 43mm
-Height: 16mm
-Weight: 21g
+* Length: 63mm
+* Width: 43mm
+* Height: 16mm
+* Weight: 21g
 
 ## Installation
 
@@ -217,8 +217,9 @@ Download STEP files of  for integrating into your own design:
 [SmartAP-MAX-STEP.zip](https://github.com/aiegoo/sky-drones/blob/master/3d/SmartAP-MAX-STEP.zip)
 
 ## SmartAP PRO
-Introduction
+### Introduction
 [smartAP PRO]() Autopilot is the latest generation of professional flight control systems for multirotor Unmanned Aerial Vehicles, capable of fully autonomous flight.
+
 The system has a powerful microcontroller, multiple redundant 9-axis Inertial Measurement Unit (IMU) (Gyroscopes, Accelerometers, Magnetometer) with temperature stabilization, integrated telemetry module, and an external  module with an integrated magnetometer. SmartAP supports any type of multirotor UAV with outstanding navigation and precision control.
 ![image](https://user-images.githubusercontent.com/42961200/151693930-d85c31b5-69a2-4aa9-8bc0-dd0f7c0d6ed1.png)
 {{site.data.alerts.hr_shaded}}
@@ -238,67 +239,67 @@ The system has a powerful microcontroller, multiple redundant 9-axis Inertial Me
 
 ### Description
 #### Capabilities
-Outstanding flight stability in all modes - manual (user control), position hold (semi-autonomous control) and auto (fully autonomous navigation and control)
-Temperature-stabilized IMU
-Fully compatible with  Ground Control Station for configuration and mission planning
-Integrated OSD (On-Screen Display for FPV)
-Accurate GPS position hold (up to 40cm with good GNSS reception quality)
-Accurate altitude hold (up to 10 cm), manual altitude override option
-Return to home flight mode
-Fully autonomous waypoints flight mode
-Guided flight mode
-Various failsafe events configuration and triggering
-Operating temperature -40...+85C
+* Outstanding flight stability in all modes - manual (user control), position hold (semi-autonomous * control) and auto (fully autonomous navigation and control)
+* Temperature-stabilized IMU
+* Fully compatible with  Ground Control Station for configuration and mission planning
+* Integrated OSD (On-Screen Display for FPV)
+* Accurate GPS position hold (up to 40cm with good GNSS reception quality)
+* Accurate altitude hold (up to 10 cm), manual altitude override option
+* Return to home flight mode
+* Fully autonomous waypoints flight mode
+* Guided flight mode
+* Various failsafe events configuration and triggering
+* Operating temperature -40...+85C
 ![image](https://user-images.githubusercontent.com/42961200/151693976-c6a4ff74-9f15-43d4-b1e1-bda9afc5774b.png)
 ![image](https://user-images.githubusercontent.com/42961200/151693978-7c74a222-c605-4333-8b52-766fba10161b.png)
 
 #### General
-Powerful microcontroller 32 bit 168 MHz STM32F4 ARM Cortex M4
-Compact board size of 8x8 cm (3.15"x3.15"), weight 60g, 6 layers PCB design
-Power supply from the main LiPO battery (3S - 14S) support, up to 60 volts
-Power supply from BEC 5V support
-12V, 5V, 3.3V generated onboard
-Integrated GNSS receiver UBlox NEO M8N, GPS/GLONASS, up to 24 sats, 10 Hz), active antenna
-Exnternal GNSS module support (primary configuration)
-Integrated 500 mW telemetry module (primary configuration)
-External telemetry module support
-Integrated OSD module
-Up to 24 PWM I/O support (5V out, high-power)
-SBUS input support
-FrSky S.Port output support
-USB interface for configuration / firmware update
-Various communication lines (UART/USART, RS232, I2C, SPI)
-6-pin JTAG port for programming / debugging
-MicroSD card driven by 4-bit SDIO interface for data-logging / parameters
-Backup battery for real-time clock and GNSS receiver
-Integrated main LiPo battery voltage monitoring
-4 ADC inputs, battery voltage / current monitoring
-Electromagnetic sounder
-3-channels bright LED support (up to 300mA/ch)
-RGB LED support
-2-channel solid state relay
+* Powerful microcontroller 32 bit 168 MHz STM32F4 ARM Cortex M4
+* Compact board size of 8x8 cm (3.15"x3.15"), weight 60g, 6 layers PCB design
+* Power supply from the main LiPO battery (3S - 14S) support, up to 60 volts
+* Power supply from BEC 5V support
+* 12V, 5V, 3.3V generated onboard
+* Integrated GNSS receiver UBlox NEO M8N, GPS/GLONASS, up to 24 sats, 10 Hz), active antenna
+* Exnternal GNSS module support (primary configuration)
+* Integrated 500 mW telemetry module (primary configuration)
+* External telemetry module support
+* Integrated OSD module
+* Up to 24 PWM I/O support (5V out, high-power)
+* SBUS input support
+* FrSky S.Port output support
+* USB interface for configuration / firmware update
+* Various communication lines (UART/USART, RS232, I2C, SPI)
+* 6-pin JTAG port for programming / debugging
+* MicroSD card driven by 4-bit SDIO interface for data-logging / parameters
+* Backup battery for real-time clock and GNSS receiver
+* Integrated main LiPo battery voltage monitoring
+* 4 ADC inputs, battery voltage / current monitoring
+* Electromagnetic sounder
+* 3-channels bright LED support (up to 300mA/ch)
+* RGB LED support
+* 2-channel solid state relay
 
 #### Sensors
-IMU: InvenSense MPU-9150
-Magnetometer: Honeywell HMC5983L
-Pressure sensors: MS5611
+* IMU: InvenSense MPU-9150
+* Magnetometer: Honeywell HMC5983L
+* Pressure sensors: MS5611
 
 #### Flight Modes
-Stabilization
-Altitude hold
-Position hold
-Return to home
-Autonomous waypoints flight
-Guided
-Follow me
-Take off
-Landing
+* Stabilization
+* Altitude hold
+* Position hold
+* Return to home
+* Autonomous waypoints flight
+* Guided
+* Follow me
+* Take off
+* Landing
 
 #### Size and Weight
-Length: 80mm
-Width: 80mm
-Height: 17mm
-Weight: 39g
+* Length: 80mm
+* Width: 80mm
+* Height: 17mm
+* Weight: 39g
 
 ### Installation
 
@@ -341,13 +342,13 @@ After mounting the board you need to connect the cables from the RC receiver to 
 You can also connect FrSky S.Port from FrSky receiver and get real-time telemetry on your FrSky transmitter (e.g. Taranis) screen. Simply connect the S.Port wire from the receiver to the Tel pin next to SBus input.
 
 Channel assignments should normally be as follows:
-Input channel 1 – Roll
-Input channel 2 – Pitch
-Input channel 3 – Throttle
-Input channel 4 – Yaw
-Input channel 5 – Mode selection
-Input channel 6 – RTH Mode
-Input channel 7 – Auto Mode
+- Input channel 1 – Roll
+- Input channel 2 – Pitch
+- Input channel 3 – Throttle
+- Input channel 4 – Yaw
+- Input channel 5 – Mode selection
+- Input channel 6 – RTH Mode
+- Input channel 7 – Auto Mode
 
 Modes can be remapped in the configuration software later.
 
@@ -371,62 +372,16 @@ SmartAP has a integrated OSD (On-Screen display) module. This means that you can
 
 SmartAP OSD supports both PAL and NTSC video standards with automatic detection and configuration.
 
-Installation
-​
-WARNING!
-1. Do not power on the board without GPS and wireless telemetry module antennas connected!
-2. Do not disconnect antennas when the board is powered on!
-Both of the above can void warranty on the device,
-Mounting the board
-Mount your board on your copter airframe. It's highly recommended to mount the board as close to the geometrical centre of the copter as possible. Mounting should be done with four 3 mm nylon screws. Add rubber spacers to reduce motor vibration noise.
-Note the "FWD" arrow during instillation - FWD = Forward
-Connections
-Connect the general peripherals as shown on the diagram below:
-YOUTUBE
-External GNSS / MAG
-If you’re using external GNSS / Magnetometer module board, the connection should be as following:
-SmartAP PRO 0.2 and later
-The GNSS / Magnetometer cable goes to its dedicated GNSS / MAG port with 6 wires (GND, SDA, SCL, RX, TX, 5V).
-SmartAP PRO 0.1 and Earlier
-The GPS cable (4 wires: GND, 5V, RX, TX) goes to its dedicated GPS port, whilst the magnetometer cable (I2C: SCL, SDA) goes to the dedicated magnetometer port as shown in the picture above.
-Make sure to place the GPS module as far as possible from:
-Main body of the airframe
-RF emitting devices such as transmitters
-High-current cables (ESC / motors power supply)
-GPS Receiver
-Connect the GPS antenna to its designated GPS antenna port. Note: this is only for versions with the integrated GNSS module.
-RC Receiver
-After mounting the board you need to connect the cables from the RC receiver to SmartAP PPM / SBUS input.
-You can also connect FrSky S.Port from FrSky receiver and get real-time telemetry on your FrSky transmitter (e.g. Taranis) screen. Simply connect the S.Port wire from the receiver to the Tel pin next to SBus input.
-Channel assignments should normally be as follows:
-Input channel 1 – Roll
-Input channel 2 – Pitch
-Input channel 3 – Throttle
-Input channel 4 – Yaw
-Input channel 5 – Mode selection
-Input channel 6 – RTH Mode
-Input channel 7 – Auto Mode
-Modes can be remapped in the configuration software later.
-RSSI Monitoring
-If you want the flight controller to read the information about RSSI (Received Signal Strength Indicator) from RC receiver - simply connect the RSSI output and GND from your RC receiver to PWM I/0 #13 for the flight controller. RSSI information will appear in the  and also on the OSD screen.
-Motors ESC
-Connect ESC inputs to SmartAP PWM outputs 1-12. The first motor is always front or front-right, its spinning direction is CCW.
-Be sure NOT to mix up polarity!
-GND line (black) is near the edge, +5V line (red) in the middle, signal line (yellow) is on the upper row.
-Telemetry Module
-Connect the telemetry antenna to the telemetry antenna port. If you would like to use a external telemetry module, connect GND, 5V, RX, TX pins of the telemetry port to your external telemetry module. Later, you will need to disable the onboard telemetry module within  configurator software.
-OSD Video
-SmartAP has a integrated OSD (On-Screen display) module. This means that you can connect your camera output to the autopilot (instead of directly connecting to the video transmitter) and then connect the video output from the flight controller to the video transmitter. In this case, the autopilot will relay the flight information (mode, altitude, speed, battery status, etc.) on the screen. Connect the video camera to the video IN port on the autopilot (GND, 12V, VIN). Connect the video transmitter to the video OUT port on the autopilot (GND, 12V, VOUT).
-SmartAP OSD supports both PAL and NTSC video standards with automatic detection and configuration.
+{{site.data.alerts.callout_warning}}
 Check the voltage ratings for your video camera and video transmitter! SmartAP outputs 12V and normally camera and video TX require a 12V power supply, however, some of the cameras / transmitters need 5V or other specific voltage levels. Check this carefully and provide the required voltage level. Otherwise, it can damage your camera / video TX!
-
+{{site.data.alerts.end}}
 ### Electromagnetic ounder
 Connect your electromagnetic sounder to the BUZ port of SmartAP.
 
 ### Power Supply
 Connect the power supply cable from your main power distribution board on the UAV:
-SmartAP PRO 0.1 and earlier: 10-36 V, 3S – 8S
-SmartAP PRO 0.2 and later: 10-60 V, 3S – 14S
+* SmartAP PRO 0.1 and earlier: 10-36 V, 3S – 8S
+* SmartAP PRO 0.2 and later: 10-60 V, 3S – 14S
 
 ### LED & Buzzer
 Buzzer: 12V, 0.2A (included in the kit) LED 1-4: 12V, 0.2A per each channel (enough to power an LED strip of 25cm in length)
@@ -440,6 +395,7 @@ Dimensions of the board are 80x80mm. Diameter of mounting holes is 3mm, and dist
 ![image](https://user-images.githubusercontent.com/42961200/151694225-1c3dfebb-c236-44bb-9655-0504eac91082.png)
 
 SmartAP PRO v .2 pinout
+
 SmartAP PRO v .1 pinout
 ![image](https://user-images.githubusercontent.com/42961200/151694231-5eccf80b-08a0-4c0e-8e03-60a6172670d1.png)
 
@@ -447,9 +403,9 @@ SmartAP PRO v .0 pinout
 ![image](https://user-images.githubusercontent.com/42961200/151694237-276e3ef2-8391-41fb-9d22-520c8f53da13.png)
 
 Dimensions of the board are 80x80mm. Diameter of mounting holes is 3mm, and distance between the centre of the mounting holes and board edges is 4.5 mm.
-SmartAP PRO v .2 pinout
-SmartAP PRO v .1 pinout
-SmartAP PRO v .0 pinout
+- SmartAP PRO v .2 pinout
+- SmartAP PRO v .1 pinout
+- SmartAP PRO v .0 pinout
 
 ## Drivers
 Occasionally the operating system can not detect the drivers or detects the drivers incorrectly. If you're experiencing any issues with connecting to the flight controller or firmware update procedure then you should reinstall the driver.
@@ -581,10 +537,10 @@ The sensors tab allows users to configure the GNSS module with the default param
 ### Battery
 Set battery sensor type. The system supports several battery sensors, including:
 
-Generic power module
-SmartAP PDB
-SmartAP 3.x internal monitoring
-Custom
+- Generic power module
+- SmartAP PDB
+- SmartAP 3.x internal monitoring
+- Custom
 ![image](https://user-images.githubusercontent.com/42961200/151694651-0c5d54fd-a847-4776-91c0-8fa071ec00f6.png)
 
 Set battery cells number and capacity. The system will notify you when the charge is too low.
@@ -759,20 +715,20 @@ SmartAP PDB (Power Distribution Board) allows users to transfer power from the b
 PDB provides the functionality for battery voltage / current measurements. SmartAP PDB makes high-power line connections easier and much more reliable.
 ![image](https://user-images.githubusercontent.com/42961200/151695181-dfdd0273-a25b-4647-965d-5cdafb95a9db.png)
 
-###Features
-Size: 65x65 mm, 4no. 3mm mounting holes
-Input voltage up to 60 Volts (14S)
-Capability to handle extremely high currents (peak current up to 400A)
-Power input from the main battery, possibility to connect up to 4 independent batteries
-12 pairs of pads (6 top, 6 bottom) for powering up to 12 motors (all possible airframe configurations supported)
-Integrated voltage and current sensors
-Integrated DC-DC converter from 10-60 V input (up to 14S battery) to 5V output to power peripherals
-Integrated DC-DC converter from 10-60 V input (up to 14S battery) to 12V output to power peripherals
-5V and 12V power output terminals (standard 2.54mm/0.1" connectors)
-Integrated loud electromagnetic sounder (buzzer)
-Power output for the flight controller (both 5V and battery VIN)
-Fully compatible with all ​
-For further information, please refer to the  section.
+### Features
+* Size: 65x65 mm, 4no. 3mm mounting holes
+* Input voltage up to 60 Volts (14S)
+* Capability to handle extremely high currents (peak current up to 400A)
+* Power input from the main battery, possibility to connect up to 4 independent batteries
+* 12 pairs of pads (6 top, 6 bottom) for powering up to 12 motors (all possible airframe  configurations supported)
+* Integrated voltage and current sensors
+* Integrated DC-DC converter from 10-60 V input (up to 14S battery) to 5V output to power  peripherals
+* Integrated DC-DC converter from 10-60 V input (up to 14S battery) to 12V output to power peripherals
+* 5V and 12V power output terminals (standard 2.54mm/0.1" connectors)
+* Integrated loud electromagnetic sounder (buzzer)
+* Power output for the flight controller (both 5V and battery VIN)
+* Fully compatible with all ​
+* For further information, please refer to the  section.
 
 ### Manufacturing process
 At Sky-Drones, we pay extremely high attention to the design of our hardware including manufacturing, inspection and quality control. The reliability of your drone is directly affected by the quality and reliability of the hardware inside, so it's our responsibility to you to take extra are. Take a look at the video below: it demonstrates the essential steps in our hardware production process in our UK factory before being shipped worldwide to our customers.
@@ -830,22 +786,22 @@ SmartAP PDB has integrated voltage and current sensors. The current sensor is lo
 SmartAP GNSS is a compact GPS/GLONASS module with an integrated active antenna, UBlox Neo-M8N chipset and 3-axis magnetometer (compass). Fully compatible with .
 
 ### Features
-UBlox NEO M8N chipset based
-Integrated SAW and LNA
-25mm ceramic patch antenna
-GPS / GLONASS support
-Up to 24 satellites
-18 / 10 Hz update rate (GPS / GPS + GLONASS)
-Rechargeable 3V lithium backup battery
-Ultra-Low noise 3.3V regulator
-Power and fix indicator LEDs
-Exposed RX, TX, 5V and GND pads
-Integrated magnetometer - HMC5883L
-Footprint for pressure sensor - MS5611-01BA03
-UART port for GPS interface
-Diameter 75 mm
-Weight 18g
-Fully compatible with ​
+- UBlox NEO M8N chipset based
+- Integrated SAW and LNA
+- 25mm ceramic patch antenna
+- GPS / GLONASS support
+- Up to 24 satellites
+- 18 / 10 Hz update rate (GPS / GPS + GLONASS)
+- Rechargeable 3V lithium backup battery
+- Ultra-Low noise 3.3V regulator
+- Power and fix indicator LEDs
+- Exposed RX, TX, 5V and GND pads
+- Integrated magnetometer - HMC5883L
+- Footprint for pressure sensor - MS5611-01BA03
+- UART port for GPS interface
+- Diameter 75 mm
+- Weight 18g
+- Fully compatible with ​
 
 ### Package includes
 GNSS module
@@ -864,25 +820,25 @@ Real Time Kinematic (RTK) satellite navigation is a technique used to enhance th
 {{site.data.alerts.end}}
 
 ### Features
-Centimeter‑level GNSS positioning
-Integrated Real Time Kinematics (RTK)
-Smallest, lightest, and energy‑efficient RTK module
-Complete and versatile solution due to base and rover variants
-World‑leading GNSS positioning technology
-UBlox NEO M8P chipset based
-25mm ceramic patch antenna
-GPS / GLONASS support
-Up to 24 satellites
-18 / 10 Hz update rate (GPS / GPS + GLONASS)
-Rechargeable 3V lithium backup battery
-Ultra-Low noise 3.3V regulator
-Power and fix indicator LEDs
-Exposed RX, TX, 5V and GND pads
-Integrated magnetometer on airborne module - HMC5883L
-UART port for GPS interface
-USB for base station module
-Airborne module cable length 30cm
-Fully compatible with ​
+_ Centimeter‑level GNSS positioning
+_ Integrated Real Time Kinematics (RTK)
+_ Smallest, lightest, and energy‑efficient RTK module
+_ Complete and versatile solution due to base and rover variants
+_ World‑leading GNSS positioning technology
+_ UBlox NEO M8P chipset based
+_ 25mm ceramic patch antenna
+_ GPS / GLONASS support
+_ Up to 24 satellites
+_ 18 / 10 Hz update rate (GPS / GPS + GLONASS)
+_ Rechargeable 3V lithium backup battery
+_ Ultra-Low noise 3.3V regulator
+_ Power and fix indicator LEDs
+_ Exposed RX, TX, 5V and GND pads
+_ Integrated magnetometer on airborne module - HMC5883L
+_ UART port for GPS interface
+_ USB for base station module
+_ Airborne module cable length 30cm
+_ Fully compatible with ​
 
 ### Package includes
 Base station module
@@ -914,9 +870,9 @@ If the messages dialog closes itself and you cannot see any error messages or re
 ### SmartAP PRO Onboard GNSS module update
 Connect your FTDI cable to the GPS port of the flight controller as follows:
 
-GND <-> GND
-TX <-> RX
-RX <-> TX
+* GND <-> GND
+* TX <-> RX
+* RX <-> TX
 
 Do NOT connect 5V and/or power supply pin from FTDI cable to the flight controller! Flight controller will get the power from the USB cable. Set the boot switch in UPD (“Update”) mode, connect your USB cable to the flight controller and connect the FTDI cable to your computer. Your setup should look as follows: ![](../.gitbook/assets/smartap-gps-ftdi.png)
 ​
