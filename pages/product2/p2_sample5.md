@@ -653,21 +653,42 @@ The parameters tab gives you direct access to all parameters available in the sy
 ![image](https://user-images.githubusercontent.com/42961200/151694765-10a8b3f3-88a6-4c07-9786-b40610d772f8.png)
 
 ## Firmware Update
+{{site.data.alerts.callout_warning}}
 DANGER!
 NO BATTERY, USB CONNECTION ONLY!
 Do not connect the main battery for the steps below. Use USB connection only!
-Latest firmware installation
+{{site.data.alerts.end}}
+
+### Latest firmware installation
+{% include youtubePlayer.html id=page.youtubeID2 %}
+
 If you can see an exclamation mark icon ( ! ) when pulling out the left-hand toolbar, it means that there is a firmware update available.
+![image](https://user-images.githubusercontent.com/42961200/151694837-53202a8b-9749-490f-b9a3-915526b91c76.png)
+
 Click Firmware and you will see the pane containing all the necessary information about the latest firmware, the upgrade button, and a progress indicator.
+![image](https://user-images.githubusercontent.com/42961200/151694842-135296e8-ebd0-407b-b17a-91934756d696.png)
+
 You can click WHAT'S NEW if you want to learn more about the features introduced in the latest update, or click UPGRADE to begin the procedure. The firmware will be downloaded from Sky-Drones Cloud platform.
+
 Sometimes after pressing the button you might see the reboot request. Simply plug out and then plug in flight controller USB cable.
+![image](https://user-images.githubusercontent.com/42961200/151694859-e795a84a-03bc-4e96-b203-441e763e9012.png)
+
 If the upgrade procedure still has not started, make sure you don't have any other serial (COM port) devices connected to your computer.
+
 Once the procedure has begun, you will see a progress notification and status update like the image below. Usually, an update takes between 30 to 60 seconds.
+![image](https://user-images.githubusercontent.com/42961200/151694874-b70737bd-27b4-4bdb-adeb-9a9e70435b07.png)
+
 After upgrading, you will see this confirmation message:
-Custom firmware upload
+![image](https://user-images.githubusercontent.com/42961200/151694880-bda30b6b-6a98-46b5-9374-078f4c853843.png)
+
+### Custom firmware upload
+{% include youtubePlayer.html id=page.youtubeID3 %}
 If you want to upload custom firmware you may do that by clicking the "Options" icon (three dots) in the top-right corner. Simply click Custom Firmware File, select the file you want to flash and follow further instructions.
-Getting the Log
+![image](https://user-images.githubusercontent.com/42961200/151694901-c9d29149-340d-428c-969a-07852025be47.png)
+
+### Getting the Log
 If you're struggling during the firmware upgrade you might want to see the logs to further understand the issue or provide this information to our support team if you choose to contact us for assistance. Simply click the "Options" icon (three dots) in the top-right corner and select Show Update Log.
+![image](https://user-images.githubusercontent.com/42961200/151694909-6002420c-6353-4b1e-a9ae-dcb736057dff.png)
 
 
 ## Standard PID Presets
