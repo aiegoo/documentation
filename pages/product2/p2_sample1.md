@@ -103,15 +103,18 @@ The Sky-Drones team installs all the equipment on-site and performs turnkey prod
 ![image](https://user-images.githubusercontent.com/42961200/151491900-12780d14-5030-49a8-95ce-d26d190fb654.png)
 
 This option is intended for:
+
 * Drone manufacturers;
 * High-volume production;
 * Excessively tight integrations.
+
 You can:
 * Manufacture at your own factory;
 * Control the volume;
 * Modify schematics and layout to suit your needs.
+
 You receive:
-* Schematics / layout / CAD / BOM;https://youtu.be/_d3SZ3LBoeU team.
+* Schematics / layout / CAD / BOM;
 * Engineering support from the Sky-Drones team.
 
 This option would suit well to large volume orders, e.g. UAV fleets. Interested? ​
