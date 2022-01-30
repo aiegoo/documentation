@@ -693,39 +693,66 @@ If you're struggling during the firmware upgrade you might want to see the logs 
 
 ## Standard PID Presets
 This section includes default parameter examples for various configuration types. You can find the airframe that most suits you and have parameter values for reference during tuning.
-MicroDrones MD4-1000 Quadcopter
-​
+
+{{site.data.alerts.hr_shaded}}
+### MicroDrones MD4-1000 Quadcopter
+![image](https://user-images.githubusercontent.com/42961200/151695056-76c274a4-486e-486b-88aa-81fb679e50f5.png)
+![image](https://user-images.githubusercontent.com/42961200/151695062-49ab6de9-3567-44bf-bdc8-64eb066e147b.png)
+
 
 ​
-T960 Hexacopter
-​
+### T960 Hexacopter
+![image](https://user-images.githubusercontent.com/42961200/151695067-a39c0d5c-7e50-463c-82fd-a6850cdbc97b.png)
+![image](https://user-images.githubusercontent.com/42961200/151695069-4ec03382-1e06-4707-b835-9c7ce493a8f0.png)
 
 ​
-F450 Quadcopter
-​
+### F450 Quadcopter
+![image](https://user-images.githubusercontent.com/42961200/151695077-fd4cd153-90df-4427-9bcd-89543f233b04.png)
+![image](https://user-images.githubusercontent.com/42961200/151695081-bc3f10d5-6f9a-4a67-90d7-dce4fb054567.png)
 
 ​
-3DR Hexacopter
-​
+### 3DR Hexacopter
+![image](https://user-images.githubusercontent.com/42961200/151695088-51d3366d-18c7-49eb-a011-131147821292.png)
+![image](https://user-images.githubusercontent.com/42961200/151695092-7ac35050-caf9-4b0d-b372-870f9392ac26.png)
 
 
 ## Flashing Bootloader
-Tools Required
+### Tools Required
 Manufactured boards come WITHOUT bootloader pre-installed. You can easily flash them yourself. The tools needed include:
-ST-Link v2 ARM JTAG Debugger
-ARM JTAG Mini connector 1.25 mm pitch
-Connections
+* ST-Link v2 ARM JTAG Debugger
+* ARM JTAG Mini connector 1.25 mm pitch
+
+### Connections
 ST Link debugger looks something like this:
+![image](https://user-images.githubusercontent.com/42961200/151695109-c83a73cc-dd2b-4cb4-92ee-99448566966c.png)
+
 You will need to connect the ST-Link pins to your SmartAP Pins.
+
 The reference for ST Link pins:
+![image](https://user-images.githubusercontent.com/42961200/151695118-96d83960-a49b-455b-85df-be2bc7b269b5.png)
+
 The reference for SmartAP JTAG pins (view from top):
+![image](https://user-images.githubusercontent.com/42961200/151695121-3cdbdd0f-8a91-4c01-b838-3606fd050ee5.png)
+
 Your connection should look like the below:
+![image](https://user-images.githubusercontent.com/42961200/151695126-8913c576-633a-44d1-b508-95374aeb7aab.png)
+
 Your autopilot and ST Link debugger should be powered via USB only.
-Flashing
+{{site.data.alerts.hr_shaded}}
+
+### Flashing
+![image](https://user-images.githubusercontent.com/42961200/151695140-b24071b4-79ca-467c-bc41-4e3cb6b8e0bb.png)
+
 Open STM ST Link Utility and then go to Target > Program and Verify:
 Select the bootloader file to flash:
+![image](https://user-images.githubusercontent.com/42961200/151695149-20186d5b-8f92-4a44-a3cd-4e16fd5e6487.png)
+
 Finally, press Start
+![image](https://user-images.githubusercontent.com/42961200/151695154-981c7b04-84a1-48b3-afd5-22a4fc007538.png)
+
 Once completed you'll see the following:
+![image](https://user-images.githubusercontent.com/42961200/151695157-bd2e54b1-1131-497f-b2b7-2cb505a18844.png)
+
 If you now see the board LEDs flashing, congratulations! Bootloader has been successfully flashed! Now you're able to install the firmware.
 
 
