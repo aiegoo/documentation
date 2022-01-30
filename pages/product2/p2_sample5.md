@@ -820,26 +820,25 @@ Real Time Kinematic (RTK) satellite navigation is a technique used to enhance th
 {{site.data.alerts.end}}
 
 ### Features
-_ Centimeter‑level GNSS positioning
-_ Integrated Real Time Kinematics (RTK)
-_ Smallest, lightest, and energy‑efficient RTK module
-_ Complete and versatile solution due to base and rover variants
-_ World‑leading GNSS positioning technology
-_ UBlox NEO M8P chipset based
-_ 25mm ceramic patch antenna
-_ GPS / GLONASS support
-_ Up to 24 satellites
-_ 18 / 10 Hz update rate (GPS / GPS + GLONASS)
-_ Rechargeable 3V lithium backup battery
-_ Ultra-Low noise 3.3V regulator
-_ Power and fix indicator LEDs
-_ Exposed RX, TX, 5V and GND pads
-_ Integrated magnetometer on airborne module - HMC5883L
-_ UART port for GPS interface
-_ USB for base station module
-_ Airborne module cable length 30cm
-_ Fully compatible with ​
-
+- Centimeter‑level GNSS positioning
+- Integrated Real Time Kinematics (RTK)
+- Smallest, lightest, and energy‑efficient RTK module
+- Complete and versatile solution due to base and rover variants
+- World‑leading GNSS positioning technology
+- UBlox NEO M8P chipset based
+- 25mm ceramic patch antenna
+- GPS / GLONASS support
+- Up to 24 satellites
+- 18 / 10 Hz update rate (GPS / GPS + GLONASS)
+- Rechargeable 3V lithium backup battery
+- Ultra-Low noise 3.3V regulator
+- Power and fix indicator LEDs
+- Exposed RX, TX, 5V and GND pads
+- Integrated magnetometer on airborne module - HMC5883L
+- UART port for GPS interface
+- USB for base station module
+- Airborne module cable length 30cm
+- Fully compatible with ​-
 ### Package includes
 Base station module
 Active patch antenna for base station module
