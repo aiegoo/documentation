@@ -190,7 +190,7 @@ Connect the one side of the cable to the air telemetry module and the other one 
 Connect the power supply cable (10-36 V, 3S – 8S) to the main power distribution board of the UAV.
 ![image](https://user-images.githubusercontent.com/42961200/151693849-2d81898b-2756-49e0-85e1-636397714212.png)
 
-{{site.data.alerts.hr_shafed}}
+{{site.data.alerts.hr_shaded}}
 
 ### Electromagnetic sounder
 ![image](https://user-images.githubusercontent.com/42961200/151693870-63d4c8e2-87f7-40b5-bf8b-dd6d8aa0263f.png)
