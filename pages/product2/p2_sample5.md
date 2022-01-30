@@ -303,10 +303,7 @@ Weight: 39g
 ### Installation
 
 {{site.data.alerts.callout_warning}}
-WARNING!
-1. Do not power on the board without GPS and wireless telemetry module antennas connected!
-2. Do not disconnect antennas when the board is powered on!
-Both of the above can void warranty on the device,
+WARNING! 1. Do not power on the board without GPS and wireless telemetry module antennas connected! 2. Do not disconnect antennas when the board is powered on! Both of the above can void warranty on the device.
 {{site.data.alerts.end}}
 
 ### Mounting the board
@@ -362,8 +359,7 @@ Connect ESC inputs to SmartAP PWM outputs 1-12. The first motor is always front 
 ![image](https://user-images.githubusercontent.com/42961200/151694121-ac34c119-d4c1-4300-9c33-51457f37d666.png)
 
 {{site.data.alerts.callout_warning}}
-Be sure NOT to mix up polarity!
-GND line (black) is near the edge, +5V line (red) in the middle, signal line (yellow) is on the upper row.
+Be sure NOT to mix up polarity! GND line (black) is near the edge, +5V line (red) in the middle, signal line (yellow) is on the upper row.
 {{site.data.alerts.end}}
 
 ### Telemetry Module
@@ -655,9 +651,7 @@ The parameters tab gives you direct access to all parameters available in the sy
 
 ## Firmware Update
 {{site.data.alerts.callout_warning}}
-DANGER!
-NO BATTERY, USB CONNECTION ONLY!
-Do not connect the main battery for the steps below. Use USB connection only!
+DANGER! NO BATTERY, USB CONNECTION ONLY! Do not connect the main battery for the steps below. Use USB connection only!
 {{site.data.alerts.end}}
 
 ### Latest firmware installation
@@ -793,8 +787,7 @@ https://youtu.be/h67RtzKW6a4
 
 ### High input voltage recommendations
 {{site.data.alerts.callout_warning}}
-WARNING: When input voltage is higher than +35V (8S+ battery) then it's highly recommended to attach Aluminum Electrolytic Capacitor to the power input pads with the rating of at least 100 uF / 100V.
-Recommended part number: B41851A9227M000 or similar specs
+WARNING: When input voltage is higher than +35V (8S+ battery) then it's highly recommended to attach Aluminum Electrolytic Capacitor to the power input pads with the rating of at least 100 uF / 100V. Recommended part number: B41851A9227M000 or similar specs
 {{site.data.alerts.end}}
 
 ### Pinout
@@ -814,9 +807,7 @@ Soldered Power Distribution Board should look as follows:
 [SmartAP PRO]() autopilot is capable of receiving power directly from the main battery, therefore, specially dedicated solder terminals can be used. If you require the autopilot to receive the current sensor (integrated in PDB) readings, simply connect the GND, 5V, CURRENT signals of the PDB using a standard cable to the flight controller.
 ![image](https://user-images.githubusercontent.com/42961200/151695386-abc7d4a7-f6f7-4a78-b09e-30aa2f81ab1b.png)
 {{site.data.alerts.callout_warning}}
-WARNING: SmartAP gets power directly from the PDB which is connected to the main battery, therefore, supply voltage is the same as your battery voltage. This means that it can be up to:
-36V (8S) for SmartAP 3.0
-36V (8S) for SmartAP 3.1
+WARNING: SmartAP gets power directly from the PDB which is connected to the main battery, therefore, supply voltage is the same as your battery voltage. This means that it can be up to: 36V (8S) for SmartAP and 3.0 36V (8S) for SmartAP 3.1
 {{site.data.alerts.end}}
 
 #### SmartAP MAX
