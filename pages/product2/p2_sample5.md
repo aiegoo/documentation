@@ -11,10 +11,14 @@ folder: product2
 ---
 
 ## SmartAP Autopilots
+![image](https://user-images.githubusercontent.com/42961200/151693413-377b913d-5b29-41f8-bb94-e81e747a4605.png)
+
 SmartAP PRO and SmartAP MAX are Sky-Drones' flagship flight controllers.
 
 
 ## SmartAP MAX
+![image](https://user-images.githubusercontent.com/42961200/151693424-30e0c793-e838-4e36-9be4-5c3c84011dbc.png)
+
 SmartAP MAX Autopilot is the latest generation flight control system for multirotor Unmanned Aerial Vehicles of various configurations and sizes aimed at a wide range of applications.
 The main feature of the system is its capability of fully autonomous flight including take off, waypoints flight, landing and much more. The core is based on a powerful 32-bit microcontroller ST Microelectronics® STM32F4 and 9-axis Inertial Measurement Unit. The latest UBlox® GPS module with integrated 3-axis magnetometer and pressure sensor can be connected externally for autonomous flight capabilities as well as possessing a wireless telemetry module for system configuration, mission planning and control, and in-flight monitoring via the purpose-designed SmartAP Ground Control Station and Configuration Tool.
 SmartAP MAX supports any type of multirotor UAV with outstanding flight performance, reliability, navigation and control precision. Its compact size and weight makes integration of the system fast and easy, and its various I/O interfaces allows the creation of applications for interaction with 3rd party electronics and payloads.
