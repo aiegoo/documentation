@@ -9,6 +9,7 @@ map_name: usermap
 box_number: 5
 folder: product2
 youtubeID: pfHjs5ZuGpk
+youtubeID1: h67RtzKW6a4
 ---
 
 ## SmartAP Autopilots
@@ -492,85 +493,160 @@ Unplug and plug in the USB cable of the autopilot to reboot the board. When you 
 
 
 ## Getting the Software
-Go to  to download the all new .
-Please refer to
+Go to  to download the all new [SmartAP GCS]() .
+![image](https://user-images.githubusercontent.com/42961200/151694386-1b766095-7bba-4ee5-9f1c-d5ca60e2807d.png)
+
+Please refer to [SmartAP GCS signup section]()
 
 ## General Configuration
 It's recommended to use USB connection instead of wireless telemetry connection for the steps below.
+{% include youtubePlayer.html id=page.youtubeID1 %}
+
 First of all, connect to the flight controller using the links management menu in the top-right corner. Then, click the gear icon in the left side of the toolbar: flight controller settings will appear.
-General
+{{site.data.alerts.hr_shaded}}
+
+### General
 The general tab provides major information about the hardware you're using, installed firmware version, and unique ID of the flight controller.
-Airframe
+![image](https://user-images.githubusercontent.com/42961200/151694514-953be2c8-43f9-4552-b57c-bd7b0947f54c.png)
+
+### Airframe
 The airframe tab allows you to configure your vehicle type.
+![image](https://user-images.githubusercontent.com/42961200/151694521-f45c91f4-e302-43c7-814b-229e65755fc4.png)
+
 Click AIRFRAME and choose your airframe from the list. If you can’t see your airframe there – feel free to  and we’ll add your specific airframe type for you.
+![image](https://user-images.githubusercontent.com/42961200/151694526-13d7f951-e247-44da-90dd-c5278de4b1ae.png)
+
 Channel mapping and propeller rotations are shown on the corresponding images.
-System Orientation
+
+### System Orientation
 You can choose the desired orientation of the flight controller and GNSS module from corresponding orientation menus.
-Landing Gear
+![image](https://user-images.githubusercontent.com/42961200/151694543-37a3ca22-387e-4d0c-9195-8e137aaff333.png)
+
+### Landing Gear
 SmartAP allows you to configure automatic control of retractable landing gear. Simply select the output channel where your servo is connected to and adjust the minimum/maximum values as you desire. You may apply reverse if needed.
-Motors IDLE Speed
+
+### Motors IDLE Speed
 If you want the motors slightly spinning when the system is armed you can set motors IDLE speed to the desired value.
-Radio
+![image](https://user-images.githubusercontent.com/42961200/151694558-0b8b4490-8e1c-4cc7-9506-0ce4b7b05514.png)
+
+### Radio
 Go to the RADIO tab and choose the RC receiver protocol corresponding to the one you’re using. SBUS or PPM receivers are recommended. This change will take effect after the system is has been reset. Therefore, you will need to reboot the autopilot and connect again if you have made such changes so as to ensure the changes are applied immediately.
+![image](https://user-images.githubusercontent.com/42961200/151694571-a9b9f8d1-cf95-40fb-9c78-62f263800ee6.png)
+
 Go to Settings > RADIO and make sure that your RC radio is turned on. You’ll see the sposition of the sticks displayed. Press theCALIBRATE button and move all sticks to their end points. Switch off the radio.
+![image](https://user-images.githubusercontent.com/42961200/151694579-21e6b3e7-d497-44fe-952c-9a24b418c766.png)
+
 When it’s done – press the STOP button to stop calibration and save parameters. You can remap any action to the desired channel and apply reverse if needed.
-Sensors
+![image](https://user-images.githubusercontent.com/42961200/151694583-57ae8ff4-4b6d-4b4d-be7a-9291fae3daa5.png)
+
+### Sensors
 Sensors configuration tab allows users to perform accelerometer, gyroscope and magnetometer calibrations which are very important for heightened flight performance.
-Accelerometer Calibration
+![image](https://user-images.githubusercontent.com/42961200/151694587-b0a4fdf1-0cb0-4564-9a40-bdf55646f947.png)
+
+### Accelerometer Calibration
 Click theCALIBRATE button near accelerometer data. Click START and follow the instructions shown after the procedure has begun.
+![image](https://user-images.githubusercontent.com/42961200/151694591-cd46a34f-6447-4c8f-8c97-423134d0d705.png)
+
 For accelerometer calibration you’ll have to place the autopilot in 6 positions:
-Top side up
-Top side down
-Left side down
-Front side down
-Right side down
-Rear side down
+
+* Top side up
+* Top side down
+* Left side down
+* Front side down
+* Right side down
+* Rear side down
+{{site.data.alerts.callout_info}}
 It’s highly important to hold the system still in each position during the calibration. In each step the axis should be aligned with g-acceleration vector as precise as possible.
-Gyroscope Calibration
+{{site.data.alerts.end}}
+
+### Gyroscope Calibration
 Click the CALIBRATE button near gyroscope data. Keep the board vert still and click START. Follow the instructions shown once the procedure has begun.
-Magnetometer
+![image](https://user-images.githubusercontent.com/42961200/151694617-a978b3c4-8bfc-4612-9bf0-2180b90f2a51.png)
+
+### Magnetometer
 Magnetometer calibration is highly important for precise position hold and autonomous flight modes. Make sure that you’re outdoors and don’t have any metals around you or in your pockets (e.g. keys, cell phones, etc) before calibration.
+
 Press CALIBRATE near magnetometer data and follow further instructions. You will need to rotate the vehicle around three major axes (roll, pitch, yaw). After 60 seconds, the magnetometer calibration will be automatically completed and the pop-up calibration message will disappear.
-GNSS Configuration
+![image](https://user-images.githubusercontent.com/42961200/151694621-dbcfc85f-47c5-4459-ac89-3ad317a846f3.png)
+
+### GNSS Configuration
+{{site.data.alerts.callout_info}}
 Make sure that the GPS module is connected to the autopilot before proceeding to this step. Also, make sure that the green LED indicating power supply of the module is solid green (NOT flashing)
+{{site.data.alerts.end}}
+
 The sensors tab allows users to configure the GNSS module with the default parameters and messages required to work in unison with SmartAP Autopilots. Click theCONFIGURE button near GNSS data. Click CONFIGURE in the new window again and configuration changes will take an effect after system reboot.
-Battery
+![image](https://user-images.githubusercontent.com/42961200/151694644-d03bd0d9-632e-4476-aa44-5dbc9d4d0b8d.png)
+
+### Battery
 Set battery sensor type. The system supports several battery sensors, including:
+
 Generic power module
 SmartAP PDB
 SmartAP 3.x internal monitoring
 Custom
+![image](https://user-images.githubusercontent.com/42961200/151694651-0c5d54fd-a847-4776-91c0-8fa071ec00f6.png)
+
 Set battery cells number and capacity. The system will notify you when the charge is too low.
+
 If you're using a custom sensor then select Custom and provide the scalers for voltage and current. The scale value can be calculated as follows:
+
 SCALE VALUE = SENSOR RANGE / 4096
-Tuning
+
+### Tuning
 SmartAP Autopilot is based on P-PID control algorithm. It means that the stabilization (the ability to stay in the air) and navigation (the ability to follow a desired trajectory) control algorithms include two loops: angle and rates control and position and velocity control. By default the gains (PIDs) are set to be the average for the majority of airframes, configurations, etc. Of course the parameters can be tuned precisely for better flight performance.
+![image](https://user-images.githubusercontent.com/42961200/151694670-b2d4c487-93ab-4a52-944b-5f980062a3fb.png)
+
 Here is a brief guide for PID tuning:
-Set all values to default.
-It's very important to tune the stabilization loop as precisely as possible since navigation is based on stabilization, so if not done properly, the vehicle will not hover and fly waypoints as precisely as you might like.
-The most important parameters are Stabilization Rate Roll / Pitch. Increase it until you see high-frequency oscillations or decrease it if you can already see them. Normally, this value is in between 0.1 – 0.2 depending on your airframe size, motors, ESC, props and vibration levels.
-If you can see low-frequency oscillations – it means that your Stabilization Angle Roll / Pitch is too high and you need to decrease it. This value lays in range between 3 - 6.
+
+1. Set all values to default.
+2. It's very important to tune the stabilization loop as precisely as possible since navigation is based on stabilization, so if not done properly, the vehicle will not hover and fly waypoints as precisely as you might like.
+3. The most important parameters are Stabilization Rate Roll / Pitch. Increase it until you see high-frequency oscillations or decrease it if you can already see them. Normally, this value is in between 0.1 – 0.2 depending on your airframe size, motors, ESC, props and vibration levels.
+4. If you can see low-frequency oscillations – it means that your Stabilization Angle Roll / Pitch is too high and you need to decrease it. This value lays in range between 3 - 6.
+
 Navigation gains can be tuned using the same approach, however, this is not essential as the values are fine by default for the majority of vehicle types.
+
 More information on default gains is available in the  section of this documentation.
-Control
+
+### Control
 Control tab allows users to manual configure control sensitivity, horizontal and vertical speed limits in various modes, and failsafe actions.
-OSD
+![image](https://user-images.githubusercontent.com/42961200/151694701-48dba4a8-8c6f-4b60-b46e-e3676168007d.png)
+
+### OSD
 The OSD tab provides settings for On-Screen Display module configuration.
+![image](https://user-images.githubusercontent.com/42961200/151694710-a627b776-0f5a-433c-b37b-60877e23911c.png)
+
 In OSD settings you can:
+
 Enable / disable the OSD module
 Select either metric or imperial units depending on your preference
 Narrow the overlay area to fit the information on the screen
 Choose specific parameters you would like to be shown
+
 OSD supports both PAL and NTSC video standards with auto-detection and selection. A typical information layout is shown on the images below:
+
 PAL Layout
+![image](https://user-images.githubusercontent.com/42961200/151694730-1b51ae68-0ed4-46ea-be3d-2880c29ad520.png)
+
 NTSC Layout
+![image](https://user-images.githubusercontent.com/42961200/151694736-4c3c4b8c-7161-4a5d-90a7-e0fddc72d90e.png)
+
 The actual layout on the screen typically looks as follows:
-Camera
+![image](https://user-images.githubusercontent.com/42961200/151694740-90eecfa5-7c79-45a4-8c35-11b6135a6b4f.png)
+![image](https://user-images.githubusercontent.com/42961200/151694744-471a2445-aa46-41a3-8d56-e3965166ba06.png)
+
+### Camera
 The camera tab allows you to configure the camera gimbal and shutter control settings.
+![image](https://user-images.githubusercontent.com/42961200/151694752-a24d0c4a-e944-4f4d-ada2-096f673700de.png)
+
 Gimbal: the system supports 3-axis gimbal stabilization with flexible configuration for minimum and maximum output angles as well as minimum and maximum raw output values on the physical layer (PWM is used). As an option, the output can be reversed.
+![image](https://user-images.githubusercontent.com/42961200/151694757-c5f55281-c757-4d18-a0df-ac65758b2eb8.png)
+
 Shutter: shutter configuration has settings for minimum and maximum output values for the triggering pulse. Interval is the length of time the pulse should be in an active state to initiate the shutter of the camera to trigger.
-Parameters
+![image](https://user-images.githubusercontent.com/42961200/151694761-2141feb6-735a-4774-be3d-ac4c05bf22f8.png)
+
+### Parameters
 The parameters tab gives you direct access to all parameters available in the system.
+![image](https://user-images.githubusercontent.com/42961200/151694765-10a8b3f3-88a6-4c07-9786-b40610d772f8.png)
 
 ## Firmware Update
 DANGER!
@@ -650,7 +726,7 @@ Manufacturing process
 At Sky-Drones, we pay extremely high attention to the design of our hardware including manufacturing, inspection and quality control. The reliability of your drone is directly affected by the quality and reliability of the hardware inside, so it's our responsibility to you to take extra are. Take a look at the video below: it demonstrates the essential steps in our hardware production process in our UK factory before being shipped worldwide to our customers.
 
 ### Installation
-SmartAP PDB (Power Distribution Board) is used for batteries and ESC connection. The board has integrated voltage and current sensors, buzzers, and 5V and 12V outputs.
+SmartAP PDB (Power Distribution Board) is used for batteries and ESC connection. The board has integrated voltage and current sensors, buzzers, and 5V and 12V outputs.https://youtu.be/h67RtzKW6a4
 High input voltage recommendations
 WARNING: When input voltage is higher than +35V (8S+ battery) then it's highly recommended to attach Aluminum Electrolytic Capacitor to the power input pads with the rating of at least 100 uF / 100V.
 Recommended part number: B41851A9227M000 or similar specs
