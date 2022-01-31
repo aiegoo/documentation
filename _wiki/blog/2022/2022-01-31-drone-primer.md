@@ -3978,13 +3978,9 @@ That's just our model vehicle in the python script.
 
 And then we will return that vehicle object to the outside of whatever call this connect my copter function.
 
-So let's call this connect my copter function will say vehicle equals connect to my copter and it will
+So let's call this connect my copter function will say vehicle equals connect to my copter and it will return a vehicle object to our vehicle variable.
 
-return a vehicle object to our vehicle variable.
-
-So at this point we'll have the model of our drone in Python and we'll be able to do a bunch of cool
-
-stuff with it.
+So at this point we'll have the model of our drone in Python and we'll be able to do a bunch of cool stuff with it.
 
 So let's test this script out and see if we can actually connect to a vehicle.
 
@@ -3994,15 +3990,7 @@ So we'll launch a Siddall vehicle with the sim vehicle.
 
 Cool.
 
-Let's go to course route and then A.P.M. and R2 pilot and then R2 copter and let's call Simbi a call
-
-and remember sim vehicle is going to launch a port at 14 5 5 0 that the drone is listening on that port
-
-to specify the IP address that we want our connection template file to connect to then we can verify
-
-that it's listening on that IP address by scrolling up to the output of the sim be a cool tool and see
-
-right here.
+Let's go to course route and then A.P.M. and R2 pilot and then R2 copter and let's call Simbi a call and remember sim vehicle is going to launch a port at 14 5 5 0 that the drone is listening on that port to specify the IP address that we want our connection template file to connect to then we can verify  that it's listening on that IP address by scrolling up to the output of the sim be a cool tool and see right here.
 
 So this will be the IP address that we connect to.
 
