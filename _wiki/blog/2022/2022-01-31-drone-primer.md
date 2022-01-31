@@ -4986,7 +4986,45 @@ We got reported that target altitude was reached and now our drone is hovering i
 
 - video 38 : script to automatically launch QGC with dronekit script part1
 ```javascript
+A case or at a point now and truncate where we can connect to our Siddall vehicle or a real vehicle
 
+at an IP address and we can arm the drone and take it off into the air which is really cool because
+
+this would be applicable to also a real drone but you know with a real drone you get the advantage of
+
+the excitement of seeing the drone fly in real time whereas when we're scripting on a Siddall drone
+
+it might be a little bit anti-climactic because you're just watching text roll down the screen.
+
+So to try to combat this we can launch new ground control every time you launch a drone get script so
+
+that we can see what the drone is currently doing on a visual interface so our eyes can get involved
+
+in this but it might be a little monotonous to have to start to control and make sure the right ports
+
+are open every single time we launch our drone kit script.
+
+So what we're going to do in the following videos is make a shell script called launch Siddall that
+
+will do four things for us.
+
+First thing it'll do is launch our drone kit Siddall instance then it will launch to ground control
+
+automatically then it will start map proxy and create the additional port Sneap needed for our truncate
+
+script to connect to the drone could Siddall instance and to ground control to connect to the get Seatle
+
+instance and then the fourth step will launch whatever drone kit Python script that we want.
+
+So all this will happen automatically and then once we're done with our junket get script everything
+
+else here will close automatically for us so we can start things automatically and then we can end four
+
+things automatically.
+
+So this will save us a lot of time down the road where we can just use one shell script to do all this
+
+automatically for us.
 ```
 
 
