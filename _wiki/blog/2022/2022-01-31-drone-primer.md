@@ -4740,6 +4740,99 @@ drone is now spinning its motors
 
 - video 36 : parameters in dronekit
 ```javascript
+What's crackin.
+
+So we dealt with parameters a little bit to this point already but we haven't done it in trone kit.
+
+It's a very simple process and the parameters like always are readable and ridable and we can access
+
+them through our vehicle object and it's pretty simple you just do the cool parameters and then in square
+
+brackets you type the name of the parameter that you want to see the value for.
+
+So you could say guess type Moel name is variable guess type set it equal to Biegel that parameters
+
+and whatever the value of guess type parameter is now to save the GPS type.
+
+Very easy as well you can also just write to parameters doing basically the reverse thing your vehicle
+
+that parameters and then the pram name that you want to write and then the value.
+
+So we get set the GPS type parameter to 3 by running this right here.
+
+And as always you can check out the parameters at this link below.
+
+Let's pull up a terminal and start messing around with parameters and drumkit.
+
+Let's just copy connection template and name a new file called Parama setter and Geter.
+
+Hi and then we'll get into that.
+
+All right so here we are.
+
+Let's first see with the value of our GPS type parameter is for this vehicle that we connect to we can
+
+do that by reading in the parameter value and then we'll print out the GPS type to the console right
+
+here.
+
+Let's save this and let's execute our parameter and get her file and see what it's output for the GPS
+
+type
+
+art.
+
+So we got a value of one for our GPS type VRAM.
+
+We don't know what the heck that is we can always go check it out in the documentation where we can
+
+just search type and see what the one is all about.
+
+All right here we are GPS type and we see that a 1 means auto so the pilot firmware is then going to
+
+automatically try to determine the type of gas that was being used on the drone So what if we wanted
+
+to set it to empty OK.
+
+Well we would find the value for that which is three and we would just set that in our center and get
+
+our file
+
+instead of reading the value we can actually write the value so up here GPS type will be one then we're
+
+setting the value to three.
+
+Now we're going to read the value again to see if we successfully changed our parameter value to 3 and
+
+then we'll print out the GP type to the console and verify Let's run this again all right.
+
+There we go.
+
+We successfully changed the parameter value to 3.
+
+Now the cool thing about parameters in drone kit is that you can perform logic based off of read parameters
+
+and kind of do some setup functions and some set up scripts before your drone takes off.
+
+So for example if you were using the GPS type of 4 and it was anything but for you could change the
+
+GPS type to 4 as some sort of an initialization code.
+
+So here we're just saying if the yes type parameter is not equal to 4 then we're going to set it to.
+
+And this is cool because this for actually x is an integer and not as a string.
+
+So we can actually perform some number a lot offer it to.
+
+So as you get more and more advanced in your parameter knowledge you can even batched together a bunch
+
+of initialization parameter values and a little function.
+
+And before the drone takes off you could you know make sure that all the appropriate parameters are
+
+set to the correct values.
+
+So you wouldn't have to manually do this every single time.
 
 ```
 
