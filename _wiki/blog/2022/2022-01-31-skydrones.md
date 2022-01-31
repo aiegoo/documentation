@@ -894,6 +894,7 @@ Connect it to the GPS 1 port on the front side of AIRLink:
 Assembled component will look as follows:
 ![image](https://user-images.githubusercontent.com/42961200/151566081-e184473b-0002-4af1-aadd-e8b58f58dd03.png)
 
+{:start="2"}
 2. Connect RC Receiver
 Install RC receiver and connect it to the SBUS port of AIRLink on the rear side:
 ![image](https://user-images.githubusercontent.com/42961200/151566110-8a611a17-de92-4641-b32a-11d35c1ed639.png)
@@ -903,12 +904,14 @@ Fully assembled component will look as follows:
 
 If you're using any other than SBUS type of the receiver, please refer to the Interfaces section for more info.
 
+{:start="3"}
 3. Connect Telemetry Radio Module
 Connect AIRLink telemetry module to Ethernet port of SmartAP AIRLink as shown on the image below:
 ![image](https://user-images.githubusercontent.com/42961200/151566191-930a2072-c841-4719-88c3-275cf81a13c8.png)
 
 Please refer to the dedicated page for more detailed instructions regarding Air module connection:
 
+{:start="4"}
 4. Connect HDMI Payload Camera
 Take HDMI cable, HDMI-in capable video camera and SmartAP AIRLink.
 ![image](https://user-images.githubusercontent.com/42961200/151566232-360d7445-ea2b-4a1e-80e3-48d4266f3da9.png)
@@ -919,6 +922,7 @@ Connect HDMI cable to AIRLink input port:
 Fully assembled component will look as follows:
 ![image](https://user-images.githubusercontent.com/42961200/151566279-d57e0447-a1ae-4db1-81ee-13f10525fa6d.png)
 
+{:start="5"}
 5. Insert microSD card
 Insert microSD card into FMU SD slot. This SD card is needed for flight logging.
 ![image](https://user-images.githubusercontent.com/42961200/151566303-f2383ab5-e61c-4eb8-a297-85da4fda4249.png)
@@ -926,6 +930,7 @@ Insert microSD card into FMU SD slot. This SD card is needed for flight logging.
 Inserted microSD card will looks as follows:
 ![image](https://user-images.githubusercontent.com/42961200/151566355-5c35f61f-538e-4dfe-af04-d48e785da5fc.png)
 
+{:start="6"}
 6. Insert SIM Card
 Insert SIM Card into SIM Card slot as shown on the image below:
 ![image](https://user-images.githubusercontent.com/42961200/151566387-fe9a9d3c-84e2-4e02-afd2-62777524ffc2.png)
@@ -936,7 +941,9 @@ Inserted SIM Card will looks as follows:
 
 ## Initial Power Up
 Powering up SmartAP AIRLink for the first time after wiring the peripherals
+
 Make sure you have completed all  steps and connected antennas before proceeding with the power up.
+
 1. Power up the AIRLink
 You will see that various LEDs will turn on and some of them will start blinking. This means that the AIRLink is live and booting up. In particular, make sure that the PWR green LED is solid. This means that the AIRLink is powered up and running properly.
 PWR green LED is solid meaning that the unit is powered up properly
@@ -950,6 +957,7 @@ Check available WiFi networks on your computer or tablet and connect to AIRLink 
 The name of the network is unique for each AIRLink and starts with AirLinkConfig_ and ends with a collection of unrelated symbols.
 Default password: airlink1
 ![image](https://user-images.githubusercontent.com/42961200/151566813-a231454b-da1c-4aa9-bf09-5f660e16ad53.png)
+
 {:start="3"}
 3. Open web browser
 Once you're connected to the AIRLink network, open the web browser and proceed with the initial configuration. Click the following link to open .
