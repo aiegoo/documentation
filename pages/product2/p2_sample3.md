@@ -584,28 +584,39 @@ The system operates at 2.4 GHz, therefore, it's recommended to keep 2.4 GHz band
 ## cad model
 
 ## FAQ
+
 A selection of FAQs asked by our customers.
-When will SmartLink be available to purchase?
+
+### When will SmartLink be available to purchase?
 SmartLink is already available! Just go to the  and head to the  section where you can find the full range of Sky-Drones products, including the SmartLink set.
-Where can I find the product description?
+
+### Where can I find the product description?
 This can be found on our website. For a generic product description, head to the . If you cannot find what you are looking for, we have a detailed description and setup instructions in our .
-Is there PDF documentation available for SmartLink?
+
+### Is there PDF documentation available for SmartLink?
 Whilst we do not have a dedicated PDF document, we do have the online portal that holds all the detailed documentation for the entire range of Sky-Drones products. All this documentation can he found .
-How can I connect cameras to SmartLink?
+
+### How can I connect cameras to SmartLink?
 SmartLink has 2 camera ports, 1 is CSI and 1 is HDMI. The CSI camera is included in the SmartLink set for your convenience, so camera connections are initiated by simple plug-and-play technology.
-What about the software? How can I use the mission computer?
+
+### What about the software? How can I use the mission computer?
 Our software is easy to access, set up, and configure. However we are more than happy to work with our partners and customers to provide a full step-by-step system setup. You can count on the support of the development team if you have any questions regarding software use, just drop us an email and we'll get back to you or schedule a call to talk you through it: info@sky-drones.com.
-What is the achievable range with SmartLink?
+
+### What is the achievable range with SmartLink?
 It is possible to achieve an unlimited flight range with SmartLink. This depends on a variety of independent variables such as the antennas, instillation, environmental conditions, etc. but for example:
 When using CE regulations which are 20dBm/100mW, the range would be between 4km and 6km
 When using FCC which assumes 20dBm, you can reach up to 20km in range
-How do I achieve an unlimited flight range?
+
+### How do I achieve an unlimited flight range?
 For a range beyond 20km, we recommend using LTE connectivity as this has an unlimited range providing the drone remains in the LTE coverage area. If there is no 4G coverage you can use higher range antennas which will aid in extending the range for up to several dozen kilometres. These can be purchased from our .
-What is Sky-Drones' manufacturing capability?
+
+### What is Sky-Drones' manufacturing capability?
 This is completely dependant on your requirements, but as a base point we can easily manufacture SmartLink units in the hundreds per month. Is it possible for us to manufacture the units in the thousands per month with prior notification from our clients.  to find out more.
-Where is SmartLink manufactured?
+
+### Where is SmartLink manufactured?
 SmartLink, and all hardware product in the Sky-Drones product range, are manufactured in a UK factory to ensure a high-quality product and production process throughout. Our materials come from specialised and certified vendors that we are proud to be doing business with.
-Is it possible for clients to manufacture their own SmartLink units?
+
+### Is it possible for clients to manufacture their own SmartLink units?
 In short, yes. If you are a large volume manufacturer, Sky-Drones can help you with setting up licensing, materials, and the production processes to manufacture SmartLink yourself inhouse. It could save you time, resources, and money to do this so if it is something you are interested in,  with us to discuss your needs.
 
 
