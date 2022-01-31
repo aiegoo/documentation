@@ -3719,9 +3719,7 @@ So this is what we pulled from the slide and we can see again the command field.
 
 And it uses the map command enim.
 
-So let's look for the definition of this map command ENM and you can find it because the map command
-
-string will be one of the first references of that string.
+So let's look for the definition of this map command ENM and you can find it because the map command string will be one of the first references of that string.
 
 OK.
 
@@ -3729,33 +3727,21 @@ Now here we go.
 
 This is the map command.
 
-And we can see here this is the value or the number of the command that gets mapped to the specific
+And we can see here this is the value or the number of the command that gets mapped to the specific command.
 
-command.
+So we can see here if we specified 16 in the command field of command long message number 76 we would be doing a map command nav waypoint command.
 
-So we can see here if we specified 16 in the command field of command long message number 76 we would
-
-be doing a map command nav waypoint command.
-
-So we would be telling the drone to move to a particular place and we would need to specify where the
-
-drone should move to and that is done.
+So we would be telling the drone to move to a particular place and we would need to specify where the drone should move to and that is done.
 
 And five six and seven by specifying the latitude longitude and altitude coordinates and this map command
 
 is a very very long either.
 
-And each one of these numbers as stated before is indicative of a different command that we can send
-
-to the drone.
+And each one of these numbers as stated before is indicative of a different command that we can send to the drone.
 
 So as you can see there's a lot of commands that we have available to us to send to the drone.
 
-The one thing to note here is just because the maverick command is specified in the standard Madlang
-
-message protocol does doesn't mean that the software that receives the maverick message is prepared
-
-to appropriately handle that command.
+The one thing to note here is just because the maverick command is specified in the standard Madlang message protocol does doesn't mean that the software that receives the maverick message is prepared to appropriately handle that command.
 
 So some of these commands might not actually be available in the Ardie pilot code base for example.
 
@@ -3765,33 +3751,21 @@ Let's check out some other map like messages.
 
 OK here we go.
 
-We're starting at the top of maverick messages and we can see here is that message number zero which
+We're starting at the top of maverick messages and we can see here is that message number zero which is the heartbeat message and message number one is a status message.
 
-is the heartbeat message and message number one is a status message.
+So we can get a bunch of information from the vehicle and one little standard message like battery voltage current battery.
 
-So we can get a bunch of information from the vehicle and one little standard message like battery voltage
-
-current battery.
-
-Here's Paramo request read which we've also dealt with a map proxy without knowing that we are using
-
-magnetic message number 20 just request a parameter that we want to know the value for.
+Here's Paramo request read which we've also dealt with a map proxy without knowing that we are using magnetic message number 20 just request a parameter that we want to know the value for.
 
 And most of them can be appropriately digested by Ardie pilot.
 
-But remember it is dependent on the pilot code base to enact the appropriate code when receiving this
+But remember it is dependent on the pilot code base to enact the appropriate code when receiving this specific message to fulfill the request.
 
-specific message to fulfill the request.
-
-So if the pilot code base receives message number 55 it doesn't call the correct code to handle this
-
-message.
+So if the pilot code base receives message number 55 it doesn't call the correct code to handle this message.
 
 Then it's essentially not usable Navteq is only a message standard.
 
-It doesn't directly command the drone only tells the drone of our request it is still dependent on the
-
-already pilot code base to enact that request by calling the correct code.
+It doesn't directly command the drone only tells the drone of our request it is still dependent on the already pilot code base to enact that request by calling the correct code.
 
 ```
 
