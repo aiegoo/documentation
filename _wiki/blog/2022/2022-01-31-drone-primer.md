@@ -3054,9 +3054,135 @@ Back to your drone with MAP proxy on your own.
 
 ```
 
-- video :
+- video 25 : QGC install
 ```javascript
+All right.
 
+So we're starting to get pretty you with MAP proxy to this point.
+
+And as stated previously it's pretty common practice to have both your your command line version of
+
+a grand central station connect you to your drone as well as a visually base ground control station
+
+connected to your drone.
+
+So we have the the command line right now in MAP proxy.
+
+Now let's install a gooey a graphical user interface version of a ground control station and we're going
+
+to use to ground control.
+
+It's not our open source program and we're going to download it from this link.
+
+And then we're going to add it to a global path a global directory so that we can reference that executable
+
+or that app image from wherever we are on our file system.
+
+All right let's get to it.
+
+Let's copy this link and go to the Web site right here we are.
+
+Now let's go down to Linux and boot to Linux.
+
+And we'll just click on this download button
+
+and this should take about a minute and then we'll pull up a terminal.
+
+All right.
+
+And we'll go to course through and let's make a directory called SIRC for source.
+
+And that's where we will store our app and mintage that we just downloaded
+
+notes go into source and let's copy in that app image that we just downloaded.
+
+And you can do that with this command right here aren't.
+
+So we're copying the file that we just downloaded the Q grand control that image and then right here
+
+we're naming the copied file.
+
+So let's just call it what it already is.
+
+Q On patrol the app image and her
+
+let's list the directories let's do ls minus L OK so here is our file and you'll see here that there
+
+are no Xs and if there's no Xs here than our file is not executable.
+
+And since this is a program we need it to be executable code we can do is type C S.H. maade and then
+
+plus X and then the name of the file and then enter
+
+and then let's do ellos mines again OK now you see that we have X's for the different groups that can
+
+call this file and that indicates that the file is now executable.
+
+In addition to that the file is now green which also means the files executable.
+
+So this is ready to go.
+
+The only annoying part would be that we don't want to have to be in this whole path any time we want
+
+to start new ground control.
+
+So what we can do is just place this file or we can make a copy of it and place it in a directory that
+
+is in our path environmental variable and any file that's in our path environmental variable can be
+
+referenced directly without having to specify the complete directory.
+
+So let's do that illustrates sudo.
+
+Copy.
+
+And then the name of our file.
+
+And now we specify the directory that we want to copy it to and a common one that we can use is us or
+
+we'll call bin OK.
+
+And now let's do another forward slash and let's name this something different than to grab that app
+
+image.
+
+Let's name it something a little less verbose let's just call it Q..
+
+GC dot app image.
+
+And then let's hit enter.
+
+All right.
+
+Now we should be able to type 2 G and then hit tab and it should auto complete for us.
+
+That indicates that from wherever we are on our file system when we have a terminal pull up you can
+
+just type q DC to an image and we'll be able to call this program automatically.
+
+So let's hit enter and launch it up.
+
+All right.
+
+Here we go.
+
+There were a nice little user interface here.
+
+Got the map in the background.
+
+We have a bunch of buttons we can press interact with the drone here we can change parameters here and
+
+we can do some route planning.
+
+Much cool stuff we can see the current altitude of a drone.
+
+We can see the orientation of the heading of the drone on the compass and we can see the Jones current
+
+angles in space.
+
+So this is a handy visual Grand Central Station to pair with the power of map proxy and a lot of the
+
+videos from here on out we'll be using both map proxy in Q and control at the same time.
 ```
 
 - video :
