@@ -4074,18 +4074,13 @@ So this is a handy modification that we've made to the connection template so th
 
 
 - video 34: attributes part 1
+
 ```php
 OK so now we have a function that can be used to connect our script to our drone.
 
-And once we have that vehicle object or that model of the drone that we've connected to we can begin
+And once we have that vehicle object or that model of the drone that we've connected to we can begin to do some cool stuff with it.
 
-to do some cool stuff with it.
-
-And one thing we now have access to after that connection are vehicle attributes so attributes essentially
-
-to find the State of the drone that you're connected to things like the battery voltage where it's at
-
-in 3-D space what are the pilot software versions being used.
+And one thing we now have access to after that connection are vehicle attributes so attributes essentially to find the State of the drone that you're connected to things like the battery voltage where it's at in 3-D space what are the pilot software versions being used.
 
 And we can access all these different attributes through our vehicle object.
 
