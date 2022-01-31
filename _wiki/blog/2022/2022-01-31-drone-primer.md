@@ -3185,8 +3185,121 @@ So this is a handy visual Grand Central Station to pair with the power of map pr
 videos from here on out we'll be using both map proxy in Q and control at the same time.
 ```
 
-- video :
+- video 26 : connecting qgc to sitl drone
 ```javascript
+All right so in this video we're going to connect multiple ground control stations to a singles Sudol
+
+vehicle.
+
+We might do that with Maff proxy and Maff proxy has an option called dash dash out and this allows us
+
+to stipulate a new IP address that other rock'n'roll stations can connect to.
+
+It essentially extends its connection that it connects to with the dash dash master and shares that
+
+connection to this new IP address that then other ground control stations can connect to.
+
+So we're going to continue launching these Siddall vehicle manually so we can play around with MAP proxy
+
+manually.
+
+We'll do that with this giant command here.
+
+And the only thing you really have to change is this portion here which is the location of your copter
+
+parm file writhing after your pilot will stay the same.
+
+We'll just have to change this portion.
+
+So whatever the parent directory is to the pilot just specify that here and then everything else will
+
+be the same.
+
+Just pull up a terminal and get to it.
+
+Let's go to the A.P.M. directory.
+
+And then and then build.
+
+It's going to settle.
+
+And let's go into bin and there is our arty copter executable.
+
+Let's copy this in
+
+place to here and let's hit enter.
+
+OK so the Siddall vehicle is currently waiting for a connection on port 57 60.
+
+Let's pull up map proxy and connect to it.
+
+So we know we can do that with math proxy PI and dash dash master and the IP address that the drone
+
+is listening on.
+
+All right.
+
+So we have this connection here now let's say we want to connect RAF proxy in ground control pull up
+
+another terminal and try and wants to ground control terminal crazy everybody gets terminals.
+
+So if you type puji and then hit tab if you place the queue grab control an image in a directory that
+
+is in your path environmental variable then you'll be able to start this like this.
+
+If not just navigate to where you ground control at images and start it with the dot slash and then
+
+the name of your file.
+
+So hit enter to launch queue ground control and then will minimize this terminal.
+
+You'll notice that when queue ground control launches it won't be able to automatically connect to our
+
+Siddall vehicle.
+
+That is because q grand Goetschel automatically looks for a connection on port 14 5 5 0.
+
+Well we can make that happen with MAP proxy so we can hit Control C to kill or Maff proxy and then type
+
+map proxy world run the same command we did last time when they will add this dash dash out and then
+
+UDP when 2:7
+
+And one thing to note most of your crowd control station Curie's automatically look for a vehicle connection
+
+on port 14 5 5 0.
+
+So once we hit enter our map proxy is going to create a new port that other ground control stations
+
+can connect to and map proxy should immediately connect to the drone so enter and see what happens.
+
+All right there we go.
+
+We can see now our ground control has successfully connected to our Siddall vehicle and we did that
+
+through Maff proxy by creating that port that you can control can't connect to.
+
+This is a pretty common setup.
+
+People like to have a ground control station gooey where they can easily see information presented to
+
+them and a map proxy instance gives them an easy command interface to the drone.
+
+Maybe you want to ground control to connect to different port other than 14 5 5 0.
+
+So what we can do is click on this button here and then go to comm links and then if the Add button
+
+and then all type change to TCAP and enter in our local host.
+
+And then we know our drone is currently listening on 57 62 empathies 763
+
+So it's 57 63 here and that is OK.
+
+And now let's click on the communication link that we just created and connect.
+
+And now our Q graph control should be connected on this port instead of its default 14 that the 5:0
+
+setting.
 
 ```
 
