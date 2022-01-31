@@ -2569,11 +2569,210 @@ And it probably already exists because there's a hundred fifty plus parameters i
 on what software version you're using.
 ```
 
-- video :
+- video 21: parameters with sitl drone and mav proxy
 ```javascript
+All right.
 
+So we learned a little bit about parameters in the last video in this video.
+
+We're going to use Map proxy to interact with our Siddall drone.
+
+We're going to use two new commands to interact with parameters of our civil drone.
+
+And one is going to show the value of our requested parameter and the other is going to set the parameter
+
+to a particular value.
+
+So in the first case where we just want to see the value of a parameter or type parameter show and then
+
+the name of the parameter one of those 850 parameter names that we want to see the value for and then
+
+Maff proxy.
+
+The parameters are actually case sensitive.
+
+So it doesn't matter if you're all uppercase or lowercase.
+
+But then when you run this it will return the value of RTL Alt.
+
+Now alternatively if you wanted to set the RTL parameter to a specified value you could type paradym
+
+set the name of the parameter you want to alter and then the value you want to alter the value to you
+
+could do pram set RTA Allt and then the number you want to change it to.
+
+And again this is all in Maff proxy.
+
+So this is our map proxy method of interacting with the parameters of our Siddall vehicle.
+
+So it will get to it.
+
+Let's pull up a terminal
+
+and go to the APM directory pilot and our copter.
+
+Let's launch a sim vehicle will do that with both the console and the map.
+
+All right and everything's pulled up.
+
+And don't forget to change the service of your map in case yours isn't loading.
+
+All right.
+
+So let's see the current value of art here at it's like Primm show.
+
+And then the name of the parameter.
+
+OK.
+
+So our RTL parameter is currently set to 14:00.
+
+So if we switch to RTL alt mode all the drones in the air it'll fly to 14 meters before returning home.
+
+Let's see another one.
+
+Supremum show grip and enable.
+
+So this is actually really cool.
+
+So this grip and Nabl is a boolean.
+
+It is zero if you don't have a gripper on your drone and a gripper for like package delivery or something
+
+and if you do have a grip on your drone you will make this a one so you can change one single parameter
+
+to notify the arder pilot executable that it is using a gripper.
+
+So you get to notify the article or firmware of the hardware situation by changing simple parameters
+
+to a really cool way with enacting different pieces of hardware.
+
+Let's check out another parameter and this one will be specific to Siddall vehicles.
+
+So one thing that is very handy about Siddall vehicles apart from it being a virtual drone that you
+
+can program from your from your couch is that you can easily test out software changes to the Ardie
+
+pilot code base without having to test it on a real drone.
+
+So if you change some stuff about the source code it would be pretty inconvenient after you have to
+
+go out to the field every time and test it or one that wouldnt be safe in into it wouldnt be convenient.
+
+So what you can do a lot of time with the Siddall vehicle is emulate different scenarios to see what
+
+the firmware will do.
+
+So we'll look at one parameter called Sim and GPS disable and it lets you emulate a bad CPS.
+
+So right now our GPS is green indicating its in good health.
+
+Let's see what the current value of Sims has to say is
+
+OK so it's zero.
+
+So let's change this to a one and we can do that by using the pram set map proxy command and then the
+
+name of the parameter
+
+and then the value we want to set it to.
+
+In this case 1 when we do this we should see the GPS turn red.
+
+There we go.
+
+And now let's look to see what the pilot firmware reports to us in the event of having a bad guess.
+
+Ok cool so we got this message sent to us from the pilot firmware indicating us that the EKN has stopped
+
+aging.
+
+This is really cool.
+
+We got to test out what the firmware would do what the code would do on our drone in the event of having
+
+a bad guess without actually having to test it on a real drone.
+
+OK so let's set the GPS back to good health.
+
+So or do Primm set and then all change simply disable back to zero.
+
+All right let's do one more thing.
+
+Let's set the RTA all parameter to 21:00 with the Prim's set RTL.
+
+All the name of the parameter and then the value we want to set it to.
+
+Let's do a pram show on RTL or just verify that we successfully change the parameter value.
+
+OK so that's good to go.
+
+Now let's test this out with the drone flying in the air and switching to RTL mode.
+
+And let's verify that the drone flies to around 20 meters 21 meters before flying home.
+
+So first thing let's change into a guided mode because we can command the drones movement with MAP proxy
+
+and guided mode.
+
+Now let's arm the throttle.
+
+Now let's take a look and let's go to a height of nine meters just to irritate the OCD people.
+
+OK.
+
+Drone is launching into the air.
+
+Read about nine meters and the thing to note here is this is not around the altitude that is present
+
+presented to you on the console does not round up.
+
+So it's probably like eight point eight meters or something like that.
+
+OK.
+
+So now let's fly the drone around here.
+
+This would satisfy the CDs and go to 10 meters so a drone is now flying that way point.
+
+Now let's switch now to the RTL flight mode.
+
+We'll carefully observe that the drone does not move and the latitude and longitude coordinates until
+
+it reaches the specified altitude.
+
+And then once it reaches that specified altitude then it will begin its journey back home.
+
+So let's hit Enter go into RTL mode.
+
+OK.
+
+Altitude is climbing and the drone is not moving and the latitude longitude directions.
+
+Now we're at a height of 20 meters.
+
+Now the drone can successfully run home because it's close to 21 meters.
+
+So this is really cool.
+
+We changed the behavior of our drone simply by modifying a parameter and we didn't have to recompile
+
+any code.
+
+So this is just scratching the surface on parameters as you've seen there's 850 other parameters and
+
+they're each powerful in their own little way.
+
+They're all little snowflakes.
+
+So I'd definitely encourage you to go check out the documentation on parameters and get a better feeling
+
+for some of the more highly used parameters because ultimately the more you know about parameters and
+
+Arti pilot the more dangerous of a drone programmer you will be.
 ```
 
+### section 4 GCS
 
 - video :
 ```javascript
