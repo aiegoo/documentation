@@ -2402,9 +2402,171 @@ no transcript
 ```
 
 
-- video 20:
+- video 20: parameters in ardupilot
 ```javascript
+What is up.
 
+So in this video we're going to learn about parameters in our pilot.
+
+So what exactly is a parameter.
+
+Well as to the dictionary definition first is essentially a variable that can be set to different values
+
+to modify the behavior of your Aarthi copter executable.
+
+So you don't have to recompile every time you make a small little change to your drone that didn't make
+
+any sense.
+
+Don't worry I have an analogy in my pocket so let's say you bought this brand new fishing pole.
+
+It was made out of gold it perfect to rely on it had a handle like a like a pillow.
+
+There's only one problem.
+
+The louer that came with the pole could not be removed from your pole so you're stuck with that one
+
+louer.
+
+What would be pretty stupid because what if you wanted to change your louer and trinkets different kind
+
+of fish.
+
+Thankfully that's not how fishing poles are made fishing poles are made so you can change out your Luers
+
+whenever you want to try to catch a different kind of fish so for us the fishing pole is like the ARDE
+
+copter executable and the Luers that we can change or like the parameters.
+
+So when we compile our copter executable we take a bunch of files like a hundred files compile them
+
+into one giant executable and then that executable reads parameter values that are external to the executable
+
+file.
+
+So that way we can change that parameter file and those changes will get read in by the Ardie copter
+
+executable OK.
+
+You're like oh that's nice.
+
+What were we actually ever have to change.
+
+Well let's get into a couple examples.
+
+So this is a pretty handy one aren't here.
+
+Allt this is a parameter that designates the height that the drone will fly to when it switches into
+
+the RTL flight mode.
+
+And it's in units of centimeters.
+
+So you'll see later on that when you switch to RTL mode the drone will fly to around 15 meters.
+
+Well that's because the RTL value was sent to 1300 centimeters and we could change that if we want to
+
+we could change that to 8000 if we wanted.
+
+And the drone would then go to 80 meters and we wouldn't have to recompile our code no one battery capacity
+
+or that capacity is in units of milling amp hours.
+
+Here you can tell the Arti copter software the capacity of your battery and then that can be used for
+
+some other calculations within the code base.
+
+Now this one is pretty powerful.
+
+It is angled Max in senti degrees so the angle you pass in here will be the maximum angle that the drone
+
+can rotate to.
+
+So if you want your drone to tilt forward and start flying forward and we have this at 20 degrees it
+
+will only be able to tilt forward at 20 degrees if you change this to 80 degrees.
+
+Then the drone could rotate to a maximum of 80 degrees.
+
+So you're getting some pretty drastically different behavior and a change in one simple parameter.
+
+Now if you want to see a full list of the parameters that we have on a personal vehicle we can pull
+
+up that terminal and check out the file.
+
+It is called Maff dot parm and this file is created in the same directory that you launch sim vehicle
+
+from.
+
+And it saves all of the parameter values of your Siddall vehicle at the time that the Siddall vehicle
+
+was closed.
+
+So let's pull up a terminal and go to A.P.M.
+
+R2 pilot
+
+and we've been starting our sim vehicle from Ardi copter So it's going copter
+
+and let's see if we can find Mabena part there we go.
+
+Now how many how many parameters do we have.
+
+We can do that with this command.
+
+So we have 800 50 different parameters.
+
+That is a lot of parameters.
+
+This is the complete list.
+
+So all of these work you yourself can change to whatever you feel is appropriate for whatever you're
+
+trying to accomplish.
+
+And let's try and I end the current value of RTL all.
+
+All right.
+
+So RTL was set to 4500 centimeters the last time our sim vehicle was launched from this directory.
+
+But how would you have known that this was in units of centimeters if I was just telling you.
+
+Well that's where the Ardi pilot documentation comes in handy.
+
+And this link provides a brief explanation of every parameter available in our pilot.
+
+Here's the complete ARDE pilot list of all the parameters we have for us as you could probably tell
+
+it's a super long page.
+
+So now you can start to search stuff if you want to get more information about it.
+
+You can search for RTL variable or tail parameter
+
+and there it is.
+
+Now we get a little short description here.
+
+The minimum altitude above home the vehicle climbed to before returning.
+
+OK now we see a range here is between 200 and 800.
+
+And what number is that.
+
+What's in units of centimeters are still all variable that we checked out in the mapped file was 4500
+
+that is fortune on or centimeters or 14 meters.
+
+There's a bunch of other cool stuff you can check out.
+
+Odds are if you want to change some simple functionality about your drone Oh you'll have to do is search
+
+around for a parameter relating to the changes that you want to make.
+
+And it probably already exists because there's a hundred fifty plus parameters it is more or less depending
+
+on what software version you're using.
 ```
 
 - video :
