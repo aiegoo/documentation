@@ -31,39 +31,23 @@ updated: 2022-01-31 16:32
 - video 1: course overview
 
 ```php
-OK so in this video we're going to look at the format and content that will be covered in this lecture
+OK so in this video we're going to look at the format and content that will be covered in this lecture series.
 
-series.
+So there are five main sections in this course and the first section we will set up our development environment and install any software dependencies we may need.
 
-So there are five main sections in this course and the first section we will set up our development
-
-environment and install any software dependencies we may need.
-
-If you want working from a Linux machine we will set up our virtual machine with virtual box and install
-
-Linux to it.
+If you want working from a Linux machine we will set up our virtual machine with virtual box and install Linux to it.
 
 And this is so you can follow the course from a Windows or Mac computer if needed.
 
 Then we will start learning from the bottom of the flight stack and work our way up.
 
-So in the second section we'll have an introduction into the pilot flight control software then we will
+So in the second section we'll have an introduction into the pilot flight control software then we will take our first simulated drone flight with little supplied by the R2 pilot project.
 
-take our first simulated drone flight with little supplied by the R2 pilot project.
+After this the third section is going to be a look at ground control stations from my high level and understand why they're a critical component.
 
-After this the third section is going to be a look at ground control stations from my high level and
+Then we will learn about two different ground control stations one a command line based ground control station called Maff proxy and the other a visually based user interface called Q ground control.
 
-understand why they're a critical component.
-
-Then we will learn about two different ground control stations one a command line based ground control
-
-station called Maff proxy and the other a visually based user interface called Q ground control.
-
-The fourth section will provide a high level introduction into the Mablean middleware and how it is
-
-used as an inter-process or enter vehicle communications standard and finally the last section will
-
-provide an overview of drone kit and why it's so powerful.
+The fourth section will provide a high level introduction into the Mablean middleware and how it is used as an inter-process or enter vehicle communications standard and finally the last section will provide an overview of drone kit and why it's so powerful.
 
 We will then build out various functions in Python to command and control our drone using Siddall as
 
