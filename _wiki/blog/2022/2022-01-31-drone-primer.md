@@ -3926,46 +3926,27 @@ And if you see this you're good to go when you've successfully installed drone k
 
 
 - video 32 : Function to connect python script to sitl drone part1
+
 ```php
-OK so in the last video we downloaded the drone kit Python packages to our system and this video we're
+OK so in the last video we downloaded the drone kit Python packages to our system and this video we're going to start messing around drumkit a little bit and we're going to make our first function that will be designed to connect our drunk get scripts to our vehicle of interest in this function that we make will be used in all of the following scripts that we make.
 
-going to start messing around drumkit a little bit and we're going to make our first function that will
-
-be designed to connect our drunk get scripts to our vehicle of interest in this function that we make
-
-will be used in all of the following scripts that we make.
-
-So let's pull up a terminal let's navigate to course route and let's make a new directory called DK
-
-or Donkey Kong of course and let's make a new file called connection underscore template will enter
-
-into that by typing it in and the name of the file.
+So let's pull up a terminal let's navigate to course route and let's make a new directory called DK or Donkey Kong of course and let's make a new file called connection underscore template will enter into that by typing it in and the name of the file.
 
 So here we're in our file and get it at the top.
 
 Let's include some dependencies that will need to run our file.
 
-So we're importing a bunch of functions from the drone kit package that we installed in the last video
-
-and we'll get into these in more detail as we use them.
+So we're importing a bunch of functions from the drone kit package that we installed in the last video and we'll get into these in more detail as we use them.
 
 And here we're we're importing a bunch of standard python packages that we'll be needing.
 
 And then this one you might not be familiar with it's called Art parse.
 
-It essentially allows us to input some values from the command line and use them in our drone kit script
+It essentially allows us to input some values from the command line and use them in our drone kit script write Python script.
 
-write Python script.
+So let's make our function let's call it connect my cocher and the first thing we're going to do and connect my copter is capture the IP address that we want the script to connect to and we'll do that by using our parse code.
 
-So let's make our function let's call it connect my cocher and the first thing we're going to do and
-
-connect my copter is capture the IP address that we want the script to connect to and we'll do that
-
-by using our parse code.
-
-The first thing we do is make a parser object and then once we have this parser object we can make some
-
-new options that we can start this connection template file with.
+The first thing we do is make a parser object and then once we have this parser object we can make some new options that we can start this connection template file with.
 
 So we will do parser add argument and then dash dash connect we'll call our option dash dash connect.
 
