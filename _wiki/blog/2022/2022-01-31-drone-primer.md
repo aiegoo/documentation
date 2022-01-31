@@ -2890,14 +2890,167 @@ control station can use that process.
 ```
 
 
-- video :
+- video 23 : mavproxy overview
 ```javascript
+What's crackin.
 
+So in this video we're going to check out Maff proxy and talk about in a little more depth.
+
+You've been using it to this point but haven't really been talking about it too much.
+
+So what actually is math proxy.
+
+Well it's essentially just a command line version of a ground control station which is extremely lightweight
+
+and written in Python.
+
+So most of your ground control stations are little more heavyweight meaning they might have a nice visual
+
+interface to the drone.
+
+Might have a bunch of fancy buttons that you can press to interact with your drone.
+
+But Matt proxies just simply a command line ground control station and it's an open source project you
+
+can check out the documentation on a map proxy at this link.
+
+So how do you connect a map proxy to your drone.
+
+Well when we launch our sim vehicle tool it automatically launches and connects map proxy for us.
+
+But if we want to do it manually This is how we would do it.
+
+So when you're Siddall drone launches it opens up a port that is listening on and its primarily TZP
+
+local host and then port pathy 760.
+
+So the drone saying hey I'm going to open up this connection and wait for some Gramp patrol station
+
+to connect to it.
+
+So then when you start mabbe proxy you just type map proxy got pi and then you use the dash dash master
+
+option and this dash dash master option specifies the IP address that the drone is listening on.
+
+So a drone is listening on this IP address.
+
+So we specify that after the master option of map proxy and then after we hit enter here we establish
+
+a connection with our little drone and we can send and receive Madalena messages just like you could
+
+and you ground control or mission planner or A.P.M. planner.
+
+It's just an extremely light weight command line version of a ground control station that can use Map
+
+link messages to communicate with your drone.
 ```
 
 
-- video :
+- video 24 : connecting mavproxy to drone
 ```javascript
+All right so in the last video we got a short little introduction to Matt proxy and this video we're
+
+going to manually connect a math proxy to our Siddall drone.
+
+We've been starting Siddall so far with the sim vehicle too.
+
+And it's a very convenient tool but the one thing that it does automatically for us is launch and connect
+
+map proxy to the civil drone.
+
+And in this case we want to get some experience connecting to the drone manually.
+
+So we're going to have to start our Siddall drone a little bit differently.
+
+So we're going to start the drone by running this giant command here.
+
+And the only thing you'll have to change on your system is the parent directory to wherever you have
+
+of course route which is most likely just a changing up your user name right here.
+
+OK so let's pull up a terminal here.
+
+Let's go to the APM directory
+
+an the pilot
+
+and let's list it.
+
+We're not going to go an article this time because we're starting the Ardie copter executable manually
+
+and that executable is stored in the build directory.
+
+So we'll go into build every time you compile some source code for a particular vehicle.
+
+It gets stored in the build directory.
+
+So let's list this.
+
+And here's our Siddall vehicle.
+
+So we'll going to Siddall and then list it.
+
+Now it's going to been
+
+in here you can see our green ARDE copter executable.
+
+This is the result of our compiled nation so we can start this like it's a normal program and we'll
+
+do that with this giant command here.
+
+Let's copy this in and make sure to change your directory to the copier parm file.
+
+Let's paste this OK.
+
+Now let's enter it cool so we have manually started our Siddall vehicle with that giant command.
+
+And now it says waiting for a connection.
+
+So the Siddall vehicle is waiting for a connection on port 57 60.
+
+So let's pull up another terminal and connect it with the map proxy.
+
+So what control t you want to type map proxy.
+
+And then dash dash master and then the IP address that the drone is listening on so we know it's using
+
+the TCAP protocol on port 57 60 on local host civil rights GCP Colan than our local host colon.
+
+And then the port 57 60.
+
+So enter and cool.
+
+So we have established the connection.
+
+Here's our drone terminal over here.
+
+And here is our ground control station our map proxy terminal here.
+
+And you can see it looks just like it does when we launch the same vehicle tool so we can do things
+
+like change the flight mode
+
+Rican arms.
+
+The drone is the exact same map link interface to our drone or still drone.
+
+And we just did everything manually in this case.
+
+So if nothing else this will give you a greater appreciation for what the sim the actual tool does since
+
+it launches Matt proxy for us.
+
+But there will be some scenarios where it will be useful to know about MAP proxy and the manual way
+
+to connect to the drone because you're not always going to be programming the Siddall vehicle when you
+
+start programming a real drone.
+
+You're going to need some map proxy knowledge on your own.
+
+So hopefully this will equip you with those circumstances whenever you need to.
+
+Back to your drone with MAP proxy on your own.
 
 ```
 
