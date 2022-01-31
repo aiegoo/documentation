@@ -217,14 +217,20 @@ SmartLink set includes everything needed to setup wireless communication for vid
 First of all, attach your antennas to the air module:
 ![image](https://user-images.githubusercontent.com/42961200/151635938-b2deea2e-55a4-480b-925c-467a1559aeef.png)
 
+{{site.data.alerts.callout_warning}}
 WARNING: DO NOT power up any of the modules without antennas! Powering up the modules without antennas may cause malfunction of the amplifier and permanent damage. Powering up without antennas voids warranty.
+{{site.data.alerts.end}}
 Then attach the power supply cable and autopilot telemetry cables:
-Power supply goes to 5V DC connector
-Autopilot telemetry cable goes to UART connector
+
+- Power supply goes to 5V DC connector
+- Autopilot telemetry cable goes to UART connector
 ![image](https://user-images.githubusercontent.com/42961200/151635965-bf69d259-280d-4b56-8097-db1c0abf1723.png)
 
 What the air module should look like with power and telemetry cables connected:
+
+{{site.data.alerts.callout_info}}
 Red cable in the autopilot telemetry cable is 5V power supply from SmartLink to Autopilot. If your autopilot is powered from its own power supply then remove the red cable. In this case you should only used black (GND) and yellow / green (Data TX / RX). By default, the whole cable is supplied without the red cable.
+{{site.data.alerts.end}}
 ![image](https://user-images.githubusercontent.com/42961200/151635982-94013e37-5afd-4703-a370-6785e3e3df17.png)
 
 Connect CSI camera to camera socket. Use a small sharp tool to unlock the crimp:
