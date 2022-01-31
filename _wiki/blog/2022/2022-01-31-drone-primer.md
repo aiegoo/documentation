@@ -2396,13 +2396,13 @@ get to learn all the tools we need for free because all of this is open source.
 ```
 
 
-- video :
+- video 19 : DEBUG view missint from map window
 ```javascript
-
+no transcript
 ```
 
 
-- video :
+- video 20:
 ```javascript
 
 ```
