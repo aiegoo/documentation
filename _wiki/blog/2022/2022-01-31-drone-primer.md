@@ -4837,6 +4837,153 @@ So you wouldn't have to manually do this every single time.
 ```
 
 
+
+- video 37 : functions to arm and takeoff
+```javascript
+Ole Miss Amigo's in this video we're going to make a function called Armond take off that will be designed
+
+to arm the drone and take off into the air to a specified altitude and this function in conjunction
+
+with the connect my copter function are going to be widely used in future scripts.
+
+So we're going to make a new file called Basic underscore template that will be used as a foundational
+
+file that we can copy from for future scripts Let's get started let's pull up the terminal
+
+and let's go do course route.
+
+A.K.
+
+and that's copy mode setter and name it basic underscore template
+
+and then let's get it into basic template.
+
+So we did a lot of the work that is going to be needed in the arm and take off function.
+
+In the last video.
+
+So let's actually copy all of this here all the while blocks and let's go above here into the function
+
+section above the main executable section.
+
+Let's call this function Armond take off and the passen variable is going to be the height and meters
+
+that we want the drone to fly to.
+
+So we'll call that target height OK now let's paste in the wild box that we copied and let's highlight
+
+it all again and make sure to have one time for my sisters.
+
+OK.
+
+So the function is called arm and take off.
+
+So all of this right here constitutes the arming portion of Armond take off.
+
+So we already know what all this does.
+
+We're going to check to see if Jonah's honorable James to be able to guide to flight mode and then request
+
+that the prop start spinning by setting be called armed equal that true.
+
+And now that the proper spinning we're at this point we want to fly the drone to the specified altitude
+
+that is input to this function.
+
+So we're using our vehicle object and that has available to it a function called simple underscore takeoff
+
+with a simple takeoff.
+
+Does is package up a map command that inputs the height that we want the drone to fly to and sends that
+
+command to the pilot firmware through our connection.
+
+So the drone is going to start flying into the air but our drone is kind of a perfectionist.
+
+So if we specify 10 meters the drone is going to try to apply to 10 meters.
+
+Exactly.
+
+So let's say this line here indicates the height that we want the drone to fly to and my cursor is the
+
+drone.
+
+The drone is going to try to find to 10 meters and then it works.
+
+So its a little bit above its going to try and fly below.
+
+I'm a little bit below it to go above.
+
+But we don't want the drone to fly to exactly 10 meters.
+
+We're going to be tolerant to our drone and tell it that it only needs to apply to a certain percentage
+
+accuracy of our requested height.
+
+So we can monitor the drone with this while block here.
+
+So while true sword is going to iterate with this until we break out we're going to print out the current
+
+altitude of the drone and we're going to do that by accessing the attribute vehicle that location got
+
+global relative frame and then drop out for altitude.
+
+So every one second we'll print this out to the terminal and also every one second.
+
+We're going to see how close our current altitude is to our target height.
+
+So right here we're saying if the current vehicles altitude is greater than or equal to ninety five
+
+percent of the target height then break out of the While loop.
+
+So if we passed in 10 to this arm and takeoff function the drone is going to try to fly to 10 meters.
+
+So if we get above 9.5 meters we will break out of this while block and say target altitude reached
+
+and this Armond takeoff function is done doing what it needs to do.
+
+So we'll return none because we don't need to return anything to whatever called this function.
+
+And our drone now will be in the air ready for the next command.
+
+So let's try this out in the main executable so we have our visual connection here.
+
+Equal equals connect my copper stripe arm and take off.
+
+And what's best five 10 meters just coat the example.
+
+Let's save it.
+
+So we have our two lines of code one to connect to the vehicle and then one to fly the drone to 10 meters.
+
+So let's pull up a terminal and test it out.
+
+OK we're in the donkey kong directory.
+
+Let's start our basic template file by typing Python.
+
+Basic template.
+
+So we're connected now to our copper Siddall has been started.
+
+So now we're waiting for the will to become our mobile So we're right here and our arm and takeoff function
+
+are vehicles armed.
+
+And now we are starting to fly our current altitude to zero.
+
+So we're in this portion of the while loop where we're seeing the current altitude every iteration of
+
+the while loop and we get to above 9.5 meters.
+
+And this while block broke out.
+
+We got reported that target altitude was reached and now our drone is hovering in the air at around
+
+10 meters ready for the next command.
+
+```
+
 - video 38 : script to automatically launch QGC with dronekit script part1
 ```javascript
 
