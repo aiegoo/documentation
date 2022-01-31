@@ -1408,12 +1408,216 @@ And now if we hit Enter we can navigate to a course route from any part of the s
 ```
 
 ### section 3
-- video :
+- video 14: Ardupilot introduction
 ```javascript
+What's up in this video we're going to get into a little bit.
 
+Do you pilot the history where it's going and why it's important.
+
+So why do we even need autopilot software in the first place.
+
+Well turns out is pretty difficult to have equal amounts of thrust on your multiple Motors to produce
+
+a steady flying level vehicle.
+
+This was the first quad copter and I believe it was around the early 1900s and kind of just wobbled
+
+all over the place because there is different thrust coming out of the joint at different times and
+
+it just didn't work.
+
+So the technology was a band until the advent of computers and with that allowed us to do was correct
+
+the motor outputs multiple times a second hundreds of times a second to produce the thrust required
+
+to maintain a level steady flying drone.
+
+And that is what your basic autopilot software does it just read your sensor inputs and changes the
+
+outputs of your motors according to what is needed to maintain a level drone and then once you have
+
+that core functionality you can do more cute things like have different flight modes are flying the
+
+drone.
+
+Have the various state estimators and stuff like that and we'll get into that later.
+
+So what are we going to use We're going to use Arti pilot to fly our drone a little history about our
+
+pilot.
+
+There's this guy named Chris Anderson who built a Lego drone trying to get his kid interested in drones.
+
+And it turns out that he got himself really interested and he went on to found the Web site called DIY
+
+Drones which created the community that kind of joined together everyone who was interested in drones
+
+and then people started flying drones with our Dwina hardware hence the R2 part of arti pilot software
+
+eventually got larger and larger.
+
+And the hardware requirements got higher and higher.
+
+So as you can see here in this picture as time progressed the computing power of your autopilot hardware
+
+that was available had to increase with the software A.P.M. stands for R2 pilot Maggo.
+
+So you'll notice that up until 2012 already pilot was the same name as software as it was for hardware.
+
+The hardware was branded with the term R2 pilot.
+
+And then in 2013 there's no more to what happened well early on our pilot was basically hardware and
+
+software coupled together.
+
+The software was developed and repositories an open source community and the hardware was manufactured
+
+and developed by a company called 3R and it was essentially made to foster the arty pilot software.
+
+Hence the branding of our pilot on the hardware.
+
+Well that Arti pilot 3R partnership kind of ended in 2013 when three-D are partnered with an organization
+
+called picks for picks for has their own open source hardware and open source software.
+
+And that is what the Pixar kids pick sock is a perfect for creation or an idea in 3D is the one of the
+
+manufacturers of it.
+
+So at this point the hardware software coupling of already pilot ended and now we have a bunch of different
+
+autopilot softwares that have no that have no part of the pilot name in it but can still run the autopilot
+
+software that opens up an interesting anecdote.
+
+You'll notice our pilot Mega is the name of the hardware but since the software and hardware were so
+
+tightly coupled together in the early days that even though A.P.M. hardware doesn't exist anymore it's
+
+still used as a term to refer to Aarthi pilot in general and I have news that in this course so A.P.M.
+
+today just refers to Ardie pilot software.
+
+What is your pilot doing today.
+
+Well it's pretty sophisticated code base at this point.
+
+There's over seven hundred thousand lines of code that make up the art of pilot code base.
+
+So it's getting to the point now or just doesn't even make sense to try and make your own flight controller
+
+because you're not going to get the sophistication of the 700000 lines of code by your own work.
+
+So you might as well use what's already out there and free and available to you as a bunch of other
+
+cool stuff for instance it has a common filter which takes in as input a bunch of sensor readings from
+
+various hardware sensors like like gyroscopes accelerometers compasses GPS Yes and it fuses all of that
+
+data into one output estimate of where the drone is in 3-D space.
+
+And that can be very handy for robotics also argue port seven different vehicle types in this lecture
+
+series we're just going to be focusing on multi rotors but just know that it can work for a bunch of
+
+other vehicles.
+
+Another really awesome thing that is happening is the pioneering of Linux based autopilot hardware.
+
+All of your initial heart autopilot hardwares were microcontroller based in microcontrollers are really
+
+good at running processes extremely fast in deterministic.
+
+So what I mean by that is if you need a process to run in five microseconds microcontrollers can do
+
+that with consistency whereas normal computers can not do that.
+
+And it turns out with drones you need to have that amount of dependability with your hardware because
+
+if you if you're not running the processes that need to run your drone will just fly out of the sky
+
+all of your original autopilots were microcontroller based.
+
+But Linux has been developing recently and there's a new patch available called preempt Arti which makes
+
+Linux work more like a microcontroller in that the processes become more deterministic.
+
+It's now on a Linux box.
+
+If I need a process to run in five microseconds and I'm using the preempt Arti patch I can do that with
+
+more consistency.
+
+Two every pilots started to adopt it software to running on Linux machines and that is a beautiful thing
+
+because when you have a Linux autopilot you can interact with your trone just like it's a normal Linux
+
+computer.
+
+You can S-sh into your drone then you can you know SFE files to and from the drone just becomes super
+
+convenient because your typical microcontroller is more difficult to interact with.
+
+There's a lot of active developers in the community.
+
+So the R&D of the hardware is being done by all these private companies like POSIX and Ira lock and
+
+the open source community is implementing the new and awesome pieces of hardware.
+
+And to the Republic code base for free.
+
+So with POSIX an hour lock you can start to position your drone in 3D space with a lot more consistency.
+
+So for example if you needed to land your drone in a 10 inch radius you could do that with either one
+
+of those systems and the code required to make those work is already existing in the pilot code base.
+
+One of the cool developments in the drone industrial world is matter it so matter and it is one of the
+
+leading drone delivery companies out there in the market today and they used the autopilot codebase
+
+to deliver a coffee to the roof of a Mercedes Benz.
+
+So the industrial world is starting to see the power of these open source tools and they're being used
+
+to prove out the technology in the industrial space.
+
+So I think as time goes on much like how Linux has had a wide reach in the consumer space open source
+
+tools like R2 pilot are going to be continually used by these private companies because then they don't
+
+have to spend their time and resources developing something that's already pretty sophisticated and
+
+available for free.
+
+So autopilot software used cost like $10000 for cheap ones and a hundred thousand dollars for good ones.
+
+And by 2012 2013 the public code base had advanced to the point where almost all of the three features
+
+that were available in it were comparable to the expensive autopilot software.
+
+So this is rapidly decreasing the barrier of entry into the drone space which is making the drone world
+
+kind of go exponential in a way because you don't need to spend $100000 to make a drone company now.
+
+And on top of that with the open source model though the community is contributing to the development
+
+of this software and these companies aren't having to spend this money to make the the software which
+
+makes them focus on the higher level application of drones.
+
+And with all this I really think we're on the eve of a drone industrial boom with the open source community
+
+and the lowering of the barrier of entry into the drone world for both developers and businesses.
+
+The application of drones is really about to take off.
+
+So the earlier you can learn these open source tools the more equipped you will be to handle this exciting
+
+world in the future.
 ```
 
-- video :
+- video 15: ardupilot install part 1
 ```javascript
 
 ```
