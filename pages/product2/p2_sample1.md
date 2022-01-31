@@ -211,97 +211,61 @@ SmartAP AIRLink hardware architecture overview
 
 
 > Flight Controller specifications
-Parameter
-Value
-Frequency
-216 MHz
-Flash
-2MB
-RAM
-512 kB
-IMU
-3 Accelerometers, 3 Gyroscopes, 3 Magnetometers, 2 Barometers
-Ethernet
-10/100 Mbps
-LAN with Mission AI Computer
-UARTs
-Telemetry 1, Telemetry 2 (AI Mission Computer), Telemetry 3, GPS 1, GPS 2, Extra UART, Serial Debug Console
-CAN
-CAN 1, CAN 2
-USB
-MAVLink
-Serial Console
-RC Input
-SBUS, RSSI, PPM, Spektrum
-AI Mission Computer specifications
-Parameter
-Value
-CPU
-6-Core: Dual-Core Cortex-A72
-Quad-Core Cortex-A53
-GPU
-Mali-T864, OpenGL ES1.1/2.0/3.0/3.1
-VPU
-4K VP8/9
-4K 10bits H265/H264 60fps Decoding
-Power
-Software Reset
-Power Down
-RTC Wake-Up
-Sleep Mode
-RAM
-Dual-Channel 4GB LPDDR4
-Storage
-16GB eMMC 5.1 Flash
-MicroSD up to 256GB
-Ethernet
-10/100/1000 Native Gigabit
-Wireless (WiFi/BT)
-802.11a/b/g/n/ac
-Bluetooth
-2x2 MIMO
-USB
-USB 3.0 Type C
-Video
-4-Lane MIPI CSI (FPV Camera)
-4-Lane MIPI CSI with HMDI Input (Payload Camera)
-LTE Connectivity specifications
 
-> Parameter
-Value
-LTE
-UMTS/HSPA(+), GSM/GPRS/EDGE
-SIM Cards
-Integrated eSIM
-External MicroSIM card slot
-Antenna
-2x2 MIMO
-Bands
-EMEA, North America, Australia, Japan, Other
+|---
+| Parameter | Value
+| Frequency | 216 MHz
+| Flash | 2MB
+| RAM | 512 kB
+| IMU | 3 Accelerometers, 3 Gyroscopes, 3 Magnetometers, 2 Barometers
+| Ethernet | 10/100 Mbps
+| LAN with Mission AI Computer | UARTs
+| Telemetry 1, Telemetry 2 (AI Mission Computer), Telemetry 3, GPS 1, GPS 2, Extra UART, Serial | Debug Console
+| CAN | CAN 1, CAN 2
+| USB | MAVLink, Serial Console 
+| RC Input | SBUS, RSSI, PPM, Spektrum
+
+> AI Mission Computer specifications
+
+|---
+| Parameter | Value
+| CPU | 6-Core: Dual-Core Cortex-A72 Quad-Core Cortex-A53 
+| GPU | Mali-T864, OpenGL ES1.1/2.0/3.0/3.1 
+| VPU | 4K VP8/9  4K 10bits H265/H264 60fps Decoding
+| Power | Software Reset Power Down  RTC Wake-Up Sleep Mode
+| RAM | Dual-Channel 4GB LPDDR4
+| Storage | 16GB eMMC 5.1 Flash, MicroSD up to 256GB
+| Ethernet | 10/100/1000 Native Gigabit
+| Wireless (WiFi/BT)  802.11a/b/g/n/ac  Bluetooth  2x2 MIMO
+| USB | USB 3.0 Type C
+| Video  4-Lane MIPI CSI (FPV Camera)  4-Lane MIPI SI with HMDI Input (Payload Camera)
+
+> LTE Connectivity specifications 
+
+|---
+| Parameter| Value
+| LTE | UMTS/HSPA(+), GSM/GPRS/EDGE
+| SIM Cards | Integrated eSIM, External MicroSIM card slot 
+| Antenna | 2x2 MIMO
+| Bands | EMEA, North America, Australia, Japan, Other
+
+{{site.data.alerts.callout_info}}
 Please refer to the datasheet below for full specs.
-SmartAP AIRLink Datasheet
+{{site.data.alerts.end}}
 
+### SmartAP AIRLink Datasheet
+[SmartAP AIRLink Datasheet.pdf]()
 
 ### SmartAP AIRLink Enterprise and Core
 We appreciate the different integration levels required by the drone manufacturers. Therefore we offer two slightly different editions of AIRLink - the most advanced drone avionics: Enterprise and Core. AIRLink Enterprise is ideal for a quick start, evaluation and prototyping while Core is optimised for deep integration and mid-high volume manufacturing.
-Parameter
-AIRLink Enterprise
-AIRLink Core
-Enclosure
-Aluminum, with integrated heatsink and fan mounting option.
-External heatsink or reasonable power dissipation should be provided by the design.
-Dimensions
-L103 x W61 x H37 mm
-L100 x W57 x H22 mm
-Weight
-198 g
-89 g
-Ambient temperature
--40°C-..+50°C
--40°C-..+50°C
-Production volume
-Low to Medium
-Medium to High
+
+|---
+| Parameter | AIRLink Enterprise | AIRLink Core
+| Enclosure | Aluminum, with integrated heatsink and an mounting option. | External heatsink or reasonable power dissipation should be provided by the design.
+| Dimensions | L103 x W61 x H37 mm | L100 x W57 x H22 mm
+| Weight | 198 g | 89 g
+| Ambient temperature | -40°C-..+50°C | -40°C-..+50°C
+| Production volume | Low to Medium | Medium to High
 
 ### Enterprise
 
