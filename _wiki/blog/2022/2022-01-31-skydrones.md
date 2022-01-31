@@ -102,7 +102,7 @@ We appreciate the different integration levels required by the drone manufacture
 
 SmartAP AIRLink Core edition is intended for medium to high volume production and deep integration with customer's hardware. The weight of electronics is only 80g and can be tightly integrated in the airframe design. However, heat dissipation requirements (provided by Sky-Drones) should be met for proper system operation.
 
-#### Purchasing hardware from Sky-Drones website or via international dealers;
+- Purchasing hardware from Sky-Drones website or via international dealers;
 
 
 ### On-site production
@@ -133,7 +133,7 @@ Hardware customizations
 In any of the above cases, the Sky-Drones team would be glad to slightly or deeply customize hardware to fit the customer's requirements.
 
 ## software deployment options
-### Software Deployment Options
+- Software Deployment Options
 Learn more about the different options of running Sky-Drones software
 
 - Quick and easy start
@@ -143,10 +143,10 @@ UAV manufacturers can use all Sky-Drones software (including Sky-Drones Cloud) w
 - Sky-Drones Platform On-Premise
 Deploy the platform on your server and use it privately. You can your own Sky-Drones Cloud!
 
-### Software customization and integrations
+- Software customization and integrations
 The Sky-Drones team implements software customizations according to your requirements and custom integrations with your IT systems.
 
-#### Your custom drone software
+- Your custom drone software
 
 ​[smartAP_Airlink](https://docs.sky-drones.com/airlink) has cutting-edge equipment and system software. It allows you to enable drones for advanced scenarios involving AI and connectivity features.
 The following options are available:
@@ -186,7 +186,8 @@ Please refer to the PDF datasheet below for the detailed technical specification
 
 - Hardware
 SmartAP AIRLink hardware architecture overview
-### General specifications
+
+> General specifications
 [smartAP AirLink](https://sky-drones.com/airlink) has two computers and integrated LTE Module:
 ![image](https://user-images.githubusercontent.com/42961200/151492845-dc375b3d-369d-44f1-8014-a7954bf8aa21.png)
 
@@ -264,7 +265,7 @@ SmartAP AIRLink hardware architecture overview
 Please refer to the datasheet below for full specs.
 {{site.data.alerts.end}}
 
-### SmartAP AIRLink Datasheet
+- SmartAP AIRLink Datasheet
 [SmartAP AIRLink Datasheet.pdf]()
 
 ### SmartAP AIRLink Enterprise and Core
@@ -278,19 +279,19 @@ We appreciate the different integration levels required by the drone manufacture
 | Ambient temperature | -40°C-..+50°C | -40°C-..+50°C
 | Production volume | Low to Medium | Medium to High
 
-### Enterprise
+> Enterprise
 
 ![image](https://user-images.githubusercontent.com/42961200/151492959-ef6ef9f2-48c0-49d5-9043-b31001c313bb.png)
 
 ​'s Enterprise edition is intended for prototyping and low to medium volume drone production. Quick and easy installation thanks to the dedicated mounting holes and integrated heatsink for power dissipation.
 
-### Core
+> Core
 ![image](https://user-images.githubusercontent.com/42961200/151492991-ce5015c2-62dd-4c50-bcec-f3f39b84ac3d.png)
 
-​'s Core edition is intended for medium to high volume production and deep integration with customer's hardware. It weighs only 89 g and can be attached to a metal frame for optimum cooling.
+​[SmartAP Airlink]()'s Core edition is intended for medium to high volume production and deep integration with customer's hardware. It weighs only 89 g and can be attached to a metal frame for optimum cooling.
 Looking for CAD model? It's available .
 
-### Hardware feature highlights
+> Hardware feature highlights
 * Easy to mount
 ![image](https://user-images.githubusercontent.com/42961200/151493051-30bbf6d7-8831-4c8a-b218-6fca1fccaa8a.png)
 
@@ -807,7 +808,7 @@ SmartAP AIRLink set includes everything needed to setup the system and get prepa
 1x JST-GH to Ethernet RJ45 dongle
 
 
-### AIRLink Telemetry set content
+> AIRLink Telemetry set content
 AIRLink Telemetry provides broadband AES-256 encrypted private channel for 20km. If LTE connectivity is sufficient for your applications then you don't need AIRLink Telemetry set.
 ![image](https://user-images.githubusercontent.com/42961200/151564557-5c7d3f23-88af-4226-b6f2-b0989b6c1fe4.png)
 
@@ -821,7 +822,7 @@ AIRLink Telemetry provides broadband AES-256 encrypted private channel for 20km.
 ## Installation
 Let's install and setup SmartAP AIRLink
 
-### Minimum Installation Setup
+> Minimum Installation Setup
 1. Connect WiFi and LTE antennas
 Take SmartAP AIRLink Enterprise and connect WiFi and LTE antennas.
 ![image](https://user-images.githubusercontent.com/42961200/151564957-ac8e836c-41a3-4046-a0ae-c02c3c52e17c.png)
@@ -859,19 +860,28 @@ Repeat the same procedure with the camera socket. Once done you should have the 
 Take the main power supply cable and connect this to the power source.
 ![image](https://user-images.githubusercontent.com/42961200/151565831-0c760c55-47a0-44a0-a571-348c6519d60d.png)
 
+{{site.data.alerts.callout_primary}}
 We recommend to use SmartAP PDB for the power distribution. It has a current sensor and DC-DC converters for 5V and 12V to power SmartAP AIRLink and other peripherals.
-Connect power cable to 12V output of SmartAP PDB.
-Connect power monitor cable (voltage and current) to the dedicated pins on SmartAP PDB.
+{{site.data.alerts.end}}
+
+* Connect power cable to 12V output of SmartAP PDB.
+* Connect power monitor cable (voltage and current) to the dedicated pins on SmartAP PDB.
 ![image](https://user-images.githubusercontent.com/42961200/151565906-1a288a2c-36c7-4ea4-b33a-7eb54f99d706.png)
 
-DANGER: Make sure to connect the cable with the right polarity. Reversing polarity may damage the equipment permanently and will void warranty.
-The recommended power supply voltage is 12V. The acceptable input voltage limits are 10V - 20V.
+{{site.data.alerts.callout_danger}}
+DANGER: Make sure to connect the cable with the right polarity. Reversing polarity may damage the equipment permanently and will void warranty. The recommended power supply voltage is 12V. The acceptable input voltage limits are 10V - 20V.
+{{site.data.alerts.end}}
+
 Next, connect the power cable to AIRLink as shown on the image below:
 ![image](https://user-images.githubusercontent.com/42961200/151565938-c6bc349d-ac62-4541-a002-e2681a6a7ac9.png)
 
+{{site.data.alerts.callout_info}}
 Minimum installation setup is complete. If you would like to test the system you can refer to the next section and power it up for the initial configuration. If you would like to connect the other peripherals, please refer to the Full Installation Setup below.
+{{site.data.alerts.end}}
+
 Proceed to the initial power up or set up the other peripherals.
-It's recommended to start with the Minimum Installation Setup for the very first power up.
+
+{% include note.html content="It's recommended to start with the Minimum Installation Setup for the very first power up." %}
 
 ### Full installation setup
 1. Connect GNSS Receiver
@@ -923,542 +933,6 @@ Insert SIM Card into SIM Card slot as shown on the image below:
 Inserted SIM Card will looks as follows:
 ![image](https://user-images.githubusercontent.com/42961200/151566417-bb022969-978e-44ee-b79f-2466f40ae41a.png)
 
-If it is not necessary, do not remove Interfaces
-This page describes general information and interface location of SmartAP AIRLink.
-Connectors pinout
-Left side
-Left side
-Power input with voltage & current monitoring
-AI Mission Computer micro SD card
-Flight Controller micro SD card
-AI Mission Computer USB Type-C
-PPM input, SBUS output, RSSI monitor
-POWER - JST GH SM10B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-12V
-IN
-+12V
-Main power input
-2
-12V
-IN
-+12V
-Main power input
-3
-12V
-IN
-+12V
-Main power input
-4
-BAT_CURRENT
-IN
-+3.3V
-Battery current monitoring
-5
-BAT_VOLTAGE
-IN
-+3.3V
-Battery voltage monitoring
-6
-3V3
-OUT
-+3.3V
-3.3V output
-7
-PWR_KEY
-IN
-+3.3V
-Power key input
-8
-GND
-​
-​
-Ground
-9
-GND
-​
-​
-Ground
-10
-GND
-​
-​
-Ground
-CPU SD card - microSD
-CPU USB - USB Type C
-RC Connector - JST GH SM06B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-5V output
-2
-PPM_IN
-IN
-+3.3V
-PPM input
-3
-RSSI_IN
-IN
-+3.3V
-RSSI input
-4
-FAN_OUT
-OUT
-+5V
-Fan output
-5
-SBUS_OUT
-OUT
-+3.3V
-SBUS output
-6
-GND
-​
-​
-Ground
-FMU SD card - microSD
-Right side
-Right side
-Ethernet port with power output
-Telemetry port
-Second GPS port
-Spare I2C / UART port
-Flight controller USB Type-C
-Micro SIM Card
-HDMI input port (payload camera)
-ETHERNET - JST GH SM08B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Radio module power supply
-2
-5V
-OUT
-+5V
-Radio module power supply
-3
-ETH_TXP
-OUT
-+3.3V
-Ethernet transmit positive
-4
-ETH_TXN
-OUT
-+3.3V
-Ethernet transmit negative
-5
-ETH_RXP
-IN
-+3.3V
-Ethernet receive positive
-6
-ETH_RXN
-IN
-+3.3V
-Ethernet receive negative
-7
-GND
-​
-​
-Ground
-8
-GND
-​
-​
-Ground
-Ethernet interface is decoupled with capacitors. Ethernet cable should be twisted to reduce EMI noise. Shorter cables are recommended for increased performance and higher bandwidth of the interface.
-TEL3 - JST GH SM06B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-USART2_TX
-OUT
-+3.3V
-Telemetry 3 TX
-3
-USART2_RX
-IN
-+3.3V
-Telemetry 3 RX
-4
-USART2_CTS
-IN
-+3.3V
-Telemetry 3 CTS
-5
-USART2_RTS
-OUT
-+3.3V
-Telemetry 3 RTS
-6
-GND
-​
-​
-Ground
-I2C3 / UART4 - JST GH SM06B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-USART4_TX
-OUT
-+3.3V
-UART 4 TX
-3
-USART4_RX
-IN
-+3.3V
-UART 4 RX
-4
-I2C3_SCL
-I/O
-+3.3V
-I2C3 Clock
-5
-I2C3_SDA
-I/O
-+3.3V
-I2C3 Data
-6
-GND
-​
-​
-Ground
-GPS2 - JST GH SM06B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-USART8_TX
-OUT2. Connect FPV camera
-Camera connection is not necessary but recommended. This will allow you to test your setup and video streaming after the initial software setup described in the following sections.
-First of all, take something sharp and unlock the CSI camera port connector by pulling it a bit at each side:
-
-Then insert the FPC cable from the camera and gently push back the black part of the connector mechanism until it locks itself tightly:
-
-Repeat the same procedure with the camera socket. Once done you should have the camera connected to AIRLink.
-
-3. Connect power supply
-Take the main power supply cable and connect this to the power source.
-
-We recommend to use SmartAP PDB for the power distribution. It has a current sensor and DC-DC converters for 5V and 12V to power SmartAP AIRLink and other peripherals.
-Connect power cable to 12V output of SmartAP PDB.
-Connect power monitor cable (voltage and current) to the dedicated pins on SmartAP PDB.
-
-DANGER: Make sure to connect the cable with the right polarity. Reversing polarity may damage the equipment permanently and will void warranty.
-The recommended power supply voltage is 12V. The acceptable input voltage limits are 10V - 20V.
-Next, connect the power cable to AIRLink as shown on the image below:
-
-Minimum installation setup is complete. If you would like to test the system you can refer to the next section and power it up for the initial configuration. If you would like to connect the other peripherals, please refer to the Full Installation Setup below.
-Proceed to the initial power up or set up the other peripherals.
-It's recommended to start with the Minimum Installation Setup for the very first power up.
-
-Full installation setup
-1. Connect GNSS Receiver
-Take SmartAP GNSS Module with GNSS cable:
-
-Connect it to the GPS 1 port on the front side of AIRLink:
-
-Assembled component will look as follows:
-
-2. Connect RC Receiver
-Install RC receiver and connect it to the SBUS port of AIRLink on the rear side:
-
-Fully assembled component will look as follows:
-
-If you're using any other than SBUS type of the receiver, please refer to the Interfaces section for more info.
-3. Connect Telemetry Radio Module
-Connect AIRLink telemetry module to Ethernet port of SmartAP AIRLink as shown on the image below:
-
-Please refer to the dedicated page for more detailed instructions regarding Air module connection:
-
-4. Connect HDMI Payload Camera
-Take HDMI cable, HDMI-in capable video camera and SmartAP AIRLink.
-
-Connect HDMI cable to AIRLink input port:
-
-Fully assembled component will look as follows:
-
-5. Insert microSD card
-Insert microSD card into FMU SD slot. This SD card is needed for flight logging.
-
-Inserted microSD card will looks as follows:
-
-6. Insert SIM Card
-Insert SIM Card into SIM Card slot as shown on the image below:
-
-Inserted SIM Card will looks as follows:
-+3.3V
-UART 8 TX GPS2
-3
-USART8_RX
-IN
-+3.3V
-UART 8 RX GPS2
-4
-I2C2_SCL
-I/O
-+3.3V
-I2C2 Clock
-5
-I2C2_SDA
-I/O
-+3.3V
-I2C2 Data
-6
-GND
-​
-​
-Ground
-AIRLink has integrated 1.5KΩ pull-up resistors for all I2C lines. No external pull-up resistors required.
-FMU USB - USB Type C
-SIM Card - micro SIM
-HDMI - mini HDMI
-Front side
-Front side
-Main GNSS and compass port
-Main telemetry port
-CSI camera input
-CAN 1
-CAN 2
-TEL1 - JST GH SM06B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-USART7_TX
-OUT
-+3.3V
-Telemetry 1 TX
-3
-USART7_RX
-IN
-+3.3V
-Telemetry 1 RX
-4
-USART7_CTS
-IN
-+3.3V
-Telemetry 1 CTS
-5
-USART7_RTS
-OUT
-+3.3V
-Telemetry 1 RTS
-6
-GND
-​
-​
-Ground
-GPS1 - JST GH SM10B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-USART1_TX
-OUT
-+3.3V
-GPS 1 TX
-3
-USART1_RX
-IN
-+3.3V
-GPS 1 RX
-4
-I2C1_SCL
-I/O
-+3.3V
-MAG 1 Clock
-5
-I2C1_SDA
-I/O
-+3.3V
-MAG 1 Data
-6
-SAFETY_BTN
-IN
-+3.3V
-Safety button
-7
-SAFETY_LED
-OUT
-+3.3V
-Safety LED
-8
-+3V3
-OUT
-+3.3V
-3.3V output
-9
-BUZZER
-OUT
-+5V
-Buzzer output
-10
-GND
-​
-​
-Ground
-CAN1 - JST GH SM04B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-CAN1_H
-I/O
-+5V
-CAN 1 High (120Ω)
-3
-CAN1_L
-I/O
-+5V
-CAN 1 Low (120Ω)
-4
-GND
-​
-​
-Ground
-CAN2 - JST GH SM04B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-CAN2_H
-I/O
-+5V
-CAN 2 High (120Ω)
-3
-CAN2_L
-I/O
-+5V
-CAN 2 Low (120Ω)
-4
-GND
-​
-​
-Ground
-AIRLink has integrated 120Ω CAN bus termination resistor. To comply with ISO 11898 user the second 120Ω resistor at the other end of the bus.
-CAMERA - FPC 30 pin, 0.5mm pitch
-Rear side
-Read side
-SBUS input
-16 PWM output channels
-2x LTE antenna sockets (MIMO)
-WiFi antenna socket (AP & Station modes)
-Serial ports mapping
-SmartAP AIRLink has a large number of serial ports with the following pinout:
-UART Port
-Path
-Description
-UART1
-/dev/ttyS0
-GPS 1
-UART2
-/dev/ttyS1
-Telemetry 3
-UART3
-/dev/ttyS2
-Debug console (internal connector)
-UART4
-/dev/ttyS3
-Telemetry 4
-UART5
-/dev/ttyS4
-Telemetry 2 (used internally with Mission Computer)
-UART6
-/dev/ttyS5
-PWM IO Module (used internally)
-UART7
-/dev/ttyS6
-Telemetry 1
-UART8
-/dev/ttyS7
-GPS 2
-Looking for CAD files? Here they are:
-Want to see the detailed full specifications? Here is the PDF datasheet: the antennas from the connector. The connectors are quite fragile and are rated for only a limited number of matching cycles. Bad connection can result in reduced RF communication performance.
-2. Connect FPV camera
-Camera connection is not necessary but recommended. This will allow you to test your setup and video streaming after the initial software setup described in the following sections.
-First of all, take something sharp and unlock the CSI camera port connector by pulling it a bit at each side:
-Then insert the FPC cable from the camera and gently push back the black part of the connector mechanism until it locks itself tightly:
-Repeat the same procedure with the camera socket. Once done you should have the camera connected to AIRLink.
-3. Connect power supply
-Take the main power supply cable and connect this to the power source.
-We recommend to use  for the power distribution. It has a current sensor and DC-DC converters for 5V and 12V to power  and other peripherals.
-Connect power cable to 12V output of .
-Connect power monitor cable (voltage and current) to the dedicated pins on .
-DANGER: Make sure to connect the cable with the right polarity. Reversing polarity may damage the equipment permanently and will void warranty.
-The recommended power supply voltage is 12V. The acceptable input voltage limits are 10V - 20V.
-Next, connect the power cable to  as shown on the image below:
-Minimum installation setup is complete. If you would like to test the system you can refer to the next section and power it up for the initial configuration. If you would like to connect the other peripherals, please refer to the Full Installation Setup below.
-Proceed to the initial power up or set up the other peripherals.
-It's recommended to start with the Minimum Installation Setup for the very first power up.
 
 ## Initial Power Up
 Powering up SmartAP AIRLink for the first time after wiring the peripherals
@@ -1505,6 +979,7 @@ Connect your computer to the same WiFi network which you have just connected the
 
 If you have troubles accessing AIRLink dashboard - please view .
 CONGRATULATIONS! Now your AIRLink is connected to Internet.
+
 5. Claim AIRLink ownership
 By default, your AIRLink is owned by the manufacturer (Sky-Drones) or other licensed manufacturer. You can claim ownership of the AIRLink and assign it to your account.
 AIRLink ownership is required to use Sky-Drones Cloud services. Therefore, we highly recommend to claim your AIRLink ownership at this step.  Make sure you have the following:
