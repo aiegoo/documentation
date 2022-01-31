@@ -186,6 +186,7 @@ Reset button
 * Power supply, 7-35V DC
 
 > Bottom
+![image](https://user-images.githubusercontent.com/42961200/151786387-b861d2e9-7db1-46fb-ac0b-d5a04d7df57f.png)
 
 
 ## Set content
