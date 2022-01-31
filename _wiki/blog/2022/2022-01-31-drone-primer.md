@@ -4038,9 +4038,7 @@ OK.
 
 So this is the new portion here.
 
-So right here if we didn't pass and dash dash connect option then this connection string is going to
-
-be set equal to nothing.
+So right here if we didn't pass and dash dash connect option then this connection string is going to be set equal to nothing.
 
 So what we can do is perform some logic to that and we can say if not connection string.
 
@@ -4048,17 +4046,11 @@ So if this isn't populated with a valid argument then let's import the drone kit
 
 Let's start a new Siddall drone right from our Python script.
 
-And let's grab the connection string or the IP address that we need to connect to this new trone kit
+And let's grab the connection string or the IP address that we need to connect to this new trone kit Siddall instance.
 
-Siddall instance.
+So the connection string will be populated with manual input here and then the drone gets a little input here.
 
-So the connection string will be populated with manual input here and then the drone gets a little input
-
-here.
-
-So either way we're going to have an IP address to connect to at this point in the code that the connect
-
-function and we'll get a vehicle object that we were getting before.
+So either way we're going to have an IP address to connect to at this point in the code that the connect function and we'll get a vehicle object that we were getting before.
 
 But this here will make it so we don't have to manually start a Siddall vehicle if we don't want to.
 
