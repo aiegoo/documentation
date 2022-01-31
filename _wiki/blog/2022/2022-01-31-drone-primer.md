@@ -4112,9 +4112,7 @@ So here's a bunch of attributes that we have access to and where and again we're
 
 And as you can see here you can access attributes by simply dotting the vehicle and then specifying the attribute that you want to get access to.
 
-So we have our vehicle we can dot version that and that will tell us the pilot version that we're using
-
-on our vehicle.
+So we have our vehicle we can dot version that and that will tell us the pilot version that we're using on our vehicle.
 
 We can say vehicle got location that global relative frame and this will return to us a waypoint object
 
