@@ -1964,9 +1964,435 @@ detail for that particular flight mode.
 ```
 
 
-- video :
+- video 18 : Sitl introduction
 ```javascript
+All right so in this video we're going to launch our very first Siddall drone that is our simulated
 
+vehicle that we can interact with as if it's a real drone but we don't have to spend a dime you know
+
+buying in all the pieces and putting it all together and just to figure out that it doesn't work at
+
+all.
+
+We can directly start programming on this little drone.
+
+In the last video we installed the Arctic code base and that comes with the sim vehicle got pi tool
+
+and that is one way that you can launch Siddall instance.
+
+What exactly does sim vehicle that pide do it first to text what type of vehicle that you want to build
+
+for.
+
+So if you are on a copter plane or rover all that sort of stuff and then step 2 it looks for a previous
+
+build for your requested vehicle.
+
+So there's a build directory that gets created where the binary builds are stored after you compile
+
+for particular vehicles.
+
+And if your requested buildings are there it'll just simply go to Step Three and launch that build.
+
+But if the vehicle you're trying to launch doesn't have a build for it already it will start to compile
+
+the code for you.
+
+So take all the human readable code and compile it into the ones and zeros that can then get executed
+
+as a actual program.
+
+So after compiles it then launches that executable and then in step 4 it launches a map proxy instance
+
+which gives you an interface to interact with the drone from a ground control station.
+
+Where is this tool located it's located at the arty pilot slash tool slash auto test slash Simbi called
+
+up high.
+
+All right.
+
+So let's get to it.
+
+Let's pull up a terminal and navigate to the A.P.M. directory and they're going to ARDE pilot must go.
+
+It's going to ARDE copter.
+
+Now you can start some vehicle without being in the copter directory but if you're in the copter directory
+
+that is telling some vehicle what vehicle type you want to build.
+
+In this case the copter you could specify the vehicle type you want.
+
+If you launch some vehicle from a different directory it's just a convenient way to launch some vehicle.
+
+All right so some vehicles should already be in our path so he can type sim underscore and hit tab and
+
+it should wait until we can start some vehicle with a bunch of command line parameters that is command
+
+line arguments that change the launching behavior of some vehicle switch type dash dash map and dash
+
+dash console dash dash map does is launch a geographical map that tracks our drones location.
+
+So if the drone moves from one location to another you'll be able see that on the map and what dash
+
+dash consulars is launch a little interface that reports and monitors different bits of information
+
+about your drone in real time.
+
+So you can see what flight mode you're in.
+
+You can see if the drone is armed.
+
+You can see the battery life of your drone stuff like that.
+
+So let's hit enter.
+
+And if you haven't ran this command before it could take 10 to 15 minutes as your computer compiles
+
+the code into a binary executable form.
+
+But after that the sim vehicle command should only take about 30 seconds to launch.
+
+And that is because you don't need to compile the code more than one time.
+
+OK so now everything is launched and ready to go.
+
+Here's our console right here.
+
+As stated earlier if it automatically monitors a bunch of different information for us so we can see
+
+here what flight mode we're in and stabilize fight mode and the drone is currently not armed.
+
+So this is in red if it was armed it would be green.
+
+CGP is healthy again Green is good red is bad.
+
+These are battery voltage.
+
+You can see our altitude here.
+
+So a bunch of cool stuff that we just get a nice little interface to automatically and then down here
+
+we get to see firmware messages.
+
+So as the drone is setting himself up we can see oh now the Kalman filter is using the GPS.
+
+So we're good to go.
+
+And then here this is our map.
+
+It might not automatically prompt you with the map that loads.
+
+So you can click on the View tab go to service and then right now a good map that has been working for
+
+me is the Microsoft hybrid.
+
+So you click on that and it will load up your location of your drone as you can see there's a little
+
+drone emblem indicating the location of your drone.
+
+And a little house that indicates the home or launch position of your drone.
+
+And then last but not least our map proxy terminal is launched right here.
+
+And this is our interface that we have to the drone to communicate with it and gather information from
+
+it.
+
+So without further ado let's start playing with the drone.
+
+So and Maff proxy you can change the flight mode by typing mode.
+
+And then the flight mode you want to be in if you want to be a guided flight mode just type guided if
+
+you want the drone to be in land mode type land or auto mode.
+
+So in this case we're going to change into guided mode because in guided mode the drone can accept map
+
+link command in order to move in stabilize mode.
+
+That's a manual flight mode where you need a RC controller in that sort of thing.
+
+But here is when he's mapping commands to move the drones were in guided mode now will type arm throttle
+
+and that will make the prop start spinning in a slow speed.
+
+And this red arm will change to green and if you don't begin to take off shortly after arming the drone
+
+the drone will automatically disarm.
+
+This should turn red here in a little bit.
+
+There you go.
+
+So to take off the drone has to be armed.
+
+And then you'll type this command takeoff and then altitude and meters that you want the drone to fly
+
+to.
+
+So right after we type our throttle We need to quickly type takeoff and then to the height we want the
+
+drone to fly to and then you'll begin to see the altitude start to climb.
+
+So let's do that again.
+
+Let's take our throttle our drone is armed so it's type takeoff and then 10 and now you'll see our altitude
+
+start to climb.
+
+OK.
+
+That indicates that our virtual drone our simulated drone is now hovering in the air and you can see
+
+we're Polin 28 amps on this virtual drone.
+
+And now we're in the air so we can do some cool stuff with MAP proxy here.
+
+We'll get into that later.
+
+But also even on the map you can say right click and say flight to stay at 10 meters
+
+and now we're seeing the path that the drone is flying to.
+
+You could see the little arrow of the heading that indicates the direction that the drone is traveling
+
+in.
+
+So this is a really neat because the tools that we're using while we're only dealing with a simulated
+
+drone here all of our map proxy skills that we learn are going to be directly translatable to a real
+
+drone in a real environment.
+
+So this allows us to practice some things that can be used in the real world.
+
+Right from our couch.
+
+So we're going to be using this Siddall drone to test out all the various open source tools that are
+
+available to the drone world and all of those open source tools are again like Maff proxy tools that
+
+can be used in a real environment with a real drone So while we're practicing on this fake little drone
+
+over here you shouldn't think of it as that you should think of this as some training period where we
+
+get to learn all the tools we need for free because all of this is open source.
+
+All right so in this video we're going to launch our very first Siddall drone that is our simulated
+
+vehicle that we can interact with as if it's a real drone but we don't have to spend a dime you know
+
+buying in all the pieces and putting it all together and just to figure out that it doesn't work at
+
+all.
+
+We can directly start programming on this little drone.
+
+In the last video we installed the Arctic code base and that comes with the sim vehicle got pi tool
+
+and that is one way that you can launch Siddall instance.
+
+What exactly does sim vehicle that pide do it first to text what type of vehicle that you want to build
+
+for.
+
+So if you are on a copter plane or rover all that sort of stuff and then step 2 it looks for a previous
+
+build for your requested vehicle.
+
+So there's a build directory that gets created where the binary builds are stored after you compile
+
+for particular vehicles.
+
+And if your requested buildings are there it'll just simply go to Step Three and launch that build.
+
+But if the vehicle you're trying to launch doesn't have a build for it already it will start to compile
+
+the code for you.
+
+So take all the human readable code and compile it into the ones and zeros that can then get executed
+
+as a actual program.
+
+So after compiles it then launches that executable and then in step 4 it launches a map proxy instance
+
+which gives you an interface to interact with the drone from a ground control station.
+
+Where is this tool located it's located at the arty pilot slash tool slash auto test slash Simbi called
+
+up high.
+
+All right.
+
+So let's get to it.
+
+Let's pull up a terminal and navigate to the A.P.M. directory and they're going to ARDE pilot must go.
+
+It's going to ARDE copter.
+
+Now you can start some vehicle without being in the copter directory but if you're in the copter directory
+
+that is telling some vehicle what vehicle type you want to build.
+
+In this case the copter you could specify the vehicle type you want.
+
+If you launch some vehicle from a different directory it's just a convenient way to launch some vehicle.
+
+All right so some vehicles should already be in our path so he can type sim underscore and hit tab and
+
+it should wait until we can start some vehicle with a bunch of command line parameters that is command
+
+line arguments that change the launching behavior of some vehicle switch type dash dash map and dash
+
+dash console dash dash map does is launch a geographical map that tracks our drones location.
+
+So if the drone moves from one location to another you'll be able see that on the map and what dash
+
+dash consulars is launch a little interface that reports and monitors different bits of information
+
+about your drone in real time.
+
+So you can see what flight mode you're in.
+
+You can see if the drone is armed.
+
+You can see the battery life of your drone stuff like that.
+
+So let's hit enter.
+
+And if you haven't ran this command before it could take 10 to 15 minutes as your computer compiles
+
+the code into a binary executable form.
+
+But after that the sim vehicle command should only take about 30 seconds to launch.
+
+And that is because you don't need to compile the code more than one time.
+
+OK so now everything is launched and ready to go.
+
+Here's our console right here.
+
+As stated earlier if it automatically monitors a bunch of different information for us so we can see
+
+here what flight mode we're in and stabilize fight mode and the drone is currently not armed.
+
+So this is in red if it was armed it would be green.
+
+CGP is healthy again Green is good red is bad.
+
+These are battery voltage.
+
+You can see our altitude here.
+
+So a bunch of cool stuff that we just get a nice little interface to automatically and then down here
+
+we get to see firmware messages.
+
+So as the drone is setting himself up we can see oh now the Kalman filter is using the GPS.
+
+So we're good to go.
+
+And then here this is our map.
+
+It might not automatically prompt you with the map that loads.
+
+So you can click on the View tab go to service and then right now a good map that has been working for
+
+me is the Microsoft hybrid.
+
+So you click on that and it will load up your location of your drone as you can see there's a little
+
+drone emblem indicating the location of your drone.
+
+And a little house that indicates the home or launch position of your drone.
+
+And then last but not least our map proxy terminal is launched right here.
+
+And this is our interface that we have to the drone to communicate with it and gather information from
+
+it.
+
+So without further ado let's start playing with the drone.
+
+So and Maff proxy you can change the flight mode by typing mode.
+
+And then the flight mode you want to be in if you want to be a guided flight mode just type guided if
+
+you want the drone to be in land mode type land or auto mode.
+
+So in this case we're going to change into guided mode because in guided mode the drone can accept map
+
+link command in order to move in stabilize mode.
+
+That's a manual flight mode where you need a RC controller in that sort of thing.
+
+But here is when he's mapping commands to move the drones were in guided mode now will type arm throttle
+
+and that will make the prop start spinning in a slow speed.
+
+And this red arm will change to green and if you don't begin to take off shortly after arming the drone
+
+the drone will automatically disarm.
+
+This should turn red here in a little bit.
+
+There you go.
+
+So to take off the drone has to be armed.
+
+And then you'll type this command takeoff and then altitude and meters that you want the drone to fly
+
+to.
+
+So right after we type our throttle We need to quickly type takeoff and then to the height we want the
+
+drone to fly to and then you'll begin to see the altitude start to climb.
+
+So let's do that again.
+
+Let's take our throttle our drone is armed so it's type takeoff and then 10 and now you'll see our altitude
+
+start to climb.
+
+OK.
+
+That indicates that our virtual drone our simulated drone is now hovering in the air and you can see
+
+we're Polin 28 amps on this virtual drone.
+
+And now we're in the air so we can do some cool stuff with MAP proxy here.
+
+We'll get into that later.
+
+But also even on the map you can say right click and say flight to stay at 10 meters
+
+and now we're seeing the path that the drone is flying to.
+
+You could see the little arrow of the heading that indicates the direction that the drone is traveling
+
+in.
+
+So this is a really neat because the tools that we're using while we're only dealing with a simulated
+
+drone here all of our map proxy skills that we learn are going to be directly translatable to a real
+
+drone in a real environment.
+
+So this allows us to practice some things that can be used in the real world.
+
+Right from our couch.
+
+So we're going to be using this Siddall drone to test out all the various open source tools that are
+
+available to the drone world and all of those open source tools are again like Maff proxy tools that
+
+can be used in a real environment with a real drone So while we're practicing on this fake little drone
+
+over here you shouldn't think of it as that you should think of this as some training period where we
+
+get to learn all the tools we need for free because all of this is open source.
 ```
 
 
