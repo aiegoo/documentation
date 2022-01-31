@@ -415,20 +415,21 @@ Follow these next steps to configure QGroundControl for :
 
 {% include youtubePlayer.html id=page.youtubeID2 %}
 
-#### Configuration settings
-Connection type: UDP
-Host: smartlink.local
-Port: 14555
-Autopilot UART: 57600 8N1 3V3 TTL
+> Configuration settings
+
+* Connection type: UDP
+* Host: smartlink.local
+* Port: 14555
+* Autopilot UART: 57600 8N1 3V3 TTL
 
 ### Mission Planner
 ![image](https://user-images.githubusercontent.com/42961200/151637137-09804a03-9de9-4f2a-95f7-07913cabffea.png)
 
-Configuration settings
-Connection type: UDP
-Host: smartlink.local
-Port: 14555
-Autopilot UART: 57600 8N1 3V3 TTL
+* Configuration settings
+* Connection type: UDP
+* Host: smartlink.local
+* Port: 14555
+* Autopilot UART: 57600 8N1 3V3 TTL
 
 #### Telemetry
 Make sure to select UDPCI as the connection type and click Connect:
@@ -459,79 +460,118 @@ After a few seconds the video feed will appear:
 
 
 ## Firmware Update
-Using Ubuntu:
+> Using Ubuntu:
+
 Get USB Boot Utility (only needs to be done once)
+
 First of all, you will need USB boot utility which will force the system transition into bootloader state.
+
 Download the USBBoot tool here: ​
-Force SmartLink Bootloader Mode
+{{site.data.alerts.callout_warning}} download link not working {{site.data.alerts.end}}
+
+> Force SmartLink Bootloader Mode
+
 Once you have the boot tool, let's start it and flash the firmware.
-Open command line and locate USBBoot
-Start bootloader tool
+
+* Open command line and locate USBBoot
+* Start bootloader tool
 sudo ./usbboot
-Connect USB cable, turn on power supply (make sure to connect USB cable before providing power)
-After a few seconds the terminal will show that bootloader mode has been successfully enabled. Then you can proceed to flashing or saving the image file
-Flash SmartLink Image from File
-Enable bootloader mode as described in the steps above
-Use lsblk or df -h to find out the mounting point of the unit (look for 3.9GB unit since eMMC of SmartLink has this amount of flash memory)
-Locate the firmware file
-To flash image from file (make sure to set correct filename and sdX):
+
+* Connect USB cable, turn on power supply (make sure to connect USB cable before providing power)
+* After a few seconds the terminal will show that bootloader mode has been successfully enabled. Then you can proceed to flashing or saving the image file
+
+> Flash SmartLink Image from File
+
+* Enable bootloader mode as described in the steps above
+* Use lsblk or df -h to find out the mounting point of the unit (look for 3.9GB unit since eMMC of * SmartLink has this amount of flash memory)
+* Locate the firmware file
+* To flash image from file (make sure to set correct filename and sdX):
 gunzip --stdout IMAGE_NAME.img.gz | sudo dd bs=4M of=/dev/sdX status=progress
+
 Upload process may take up to 15 minutes. Progress will be displayed on the screen.
- After upload process is complete, power off SmartLink before disconnecting the USB cable.
-Save Current SmartLink as Image to File
+
+
+{% include note.html content=" After upload process is complete, power off SmartLink before disconnecting the USB cable." %}
+
+> Save Current SmartLink as Image to File
+
 You can save the entire eMMC of  to image file and later flash this to another  unit. Please follow these steps:
-Enable bootloader mode as described in the steps above
-Use lsblk or df -h to find out the mounting point of the unit (look for 3.9GB unit since eMMC of SmartLink has this amount of flash memory)
-To save currently installed image to file (make sure to set correct sdX):
+* Enable bootloader mode as described in the steps above
+* Use lsblk or df -h to find out the mounting point of the unit (look for 3.9GB unit since eMMC of * SmartLink has this amount of flash memory)
+* To save currently installed image to file (make sure to set correct sdX):
 sudo dd bs=4M if=/dev/sdX status=progress | gzip > smartlink.img.gz
- After download process is complete, power off SmartLink before disconnecting the USB cable.
-Using Windows / MacOS:
-Get Boot Tool utility for forcing the bootloader
+
+{% include note.html content="After download process is complete, power off SmartLink before disconnecting the USB cable." %}
+
+> Using Windows / MacOS:
+
+- Get Boot Tool utility for forcing the bootloader
+
 Please ensure you are not writing to any USB devices whilst the installer is running.
-Download and run the  to install the drivers and boot tool.
-Once the driver installation is complete, run the exe tool that was previously installed.
-Plug micro USB cable into the micro USB socket marked USB on SmartLink.
-Plug the other side of the USB cable in your computer.
-Power up SmartLink. It's important to plug in the USB cable first and only then power up SmartLink.
-After a few seconds, the SmartLink eMMC will pop up under Windows as a disk (USB mass storage device).
-Get balenaEtcher for flashing the image
-Download the Windows installer from ​
-Run balenaEtcher and select the SmartLink OS image file
-Select the correct storage drive (SmartLink)
-Finally, click Burn to write the SmartLink OS image
-You'll see a progress bar. Once complete, power down SmartLink first and only then unplug the USB cable.
-Recovery procedure
-If your  unit is not responding and you think eMMC might be corrupted / the device seems to be bricked, you will need to re-flash the image to eMMC. Please contact us  and we'll provide you with the link to the latest SmartLink image file.
-Recovery images
+* Download and run the  to install the drivers and boot tool.
+* Once the driver installation is complete, run the exe tool that was previously installed.
+* Plug micro USB cable into the micro USB socket marked USB on SmartLink.
+* Plug the other side of the USB cable in your computer.
+* Power up SmartLink. It's important to plug in the USB cable first and only then power up SmartLink.
+* After a few seconds, the SmartLink eMMC will pop up under Windows as a disk (USB mass storage device).
+
+> Get balenaEtcher for flashing the image
+
+* Download the Windows installer from ​
+* Run balenaEtcher and select the SmartLink OS image file
+* Select the correct storage drive (SmartLink)
+* Finally, click Burn to write the SmartLink OS image
+* You'll see a progress bar. Once complete, power down SmartLink first and only then unplug the USB cable.
+
+> Recovery procedure
+
+If your [SmartLink]() unit is not responding and you think eMMC might be corrupted / the device seems to be bricked, you will need to re-flash the image to eMMC. Please contact us  and we'll provide you with the link to the latest SmartLink image file.
+
+> Recovery images
+
 Click below to download the recovery image. Make sure to the select the one which suits your SmartLink version:
 ​​
+* SmartLink with CSI and HMDI
+* SmartLink with HDMI and HDMI
 
 ## Troubleshooting
-Unable to detect LAN network from ground module
+
+> Unable to detect LAN network from ground module
+
 In case you can't see that the LAN network from ground module was detected and established, then you would need to install the driver:
 LAN Driver - Windows 8.1
 LAN Driver - Windows 10
 LAN Driver - Linux
 LAN Driver - Mac OS
-You can find the latest drivers from Realtek available .
-In some cases you might need to disable ’system integrity protection’ and then instal the driver For instance,  is the demo video on how to disable SIP on Mac OS.
 
+You can find the latest drivers from Realtek available .
+
+{{site.data.alerts.callout_info}}
+In some cases you might need to disable ’system integrity protection’ and then instal the driver For instance,  is the demo video on how to disable SIP on Mac OS.
+{{site.data.alerts.end}}
 ### Unable to Ping smartlink.local - Unknown Host
 Some operating systems might not have local DNS, resulting in the inability to access the system using the name (smartlink.local). This is known for all Android platforms and some Windows platforms. In case you can't ping smartlink.local or similar:
 ping: cannot resolve smartlink.local: Unknown host
 You'll need to find out the IP address for SmartLink. There are numerous ways to do this, we'll use the NMAP tool in this example. First of all, download and install NMAP tool using the relevant links below:
 
-### Linux
+>  Linux
+
 sudo apt-get install nmap
 
-### Mac OS
+>  Mac OS
+
 brew install nmap
 
-### Windows
+> Windows
+
 Go to the official website for NMAP tool:
+
 Select Latest stable release self-installer: nmap-7.80-setup.exe or similar. Download and install it.
+
 Make sure to select Install Npcap in WinPcap API-compatible mode during the installation.
+
 After installation is complete, open command line and go to NMAP folder:
+
 cd "C:\Program Files (x86)\Nmap"
 
 ### Looking up SmartLink's IP Address
@@ -543,14 +583,17 @@ As a result of this command you'll see IP addresses in this range. You'll have 1
 Sometimes you might not be connected to the internet after SmartLink is plugged into the USB port and detected. SmartLink is identified as LAN connection and sometimes the operating system expects this to be a primary connection for accessing the internet. It is in fact not. You still have to use your LAN / WLAN for internet access and this has to be set in the operating system.
 Do the following actions to enable internet access while SmartLink is connected:
 
-#### Windows
+> Windows
+
 Follow the steps from this tutorial to change the MTU value for network connections:
 ​​
 A lower MTU value means higher priority for the interface. Therefore, you need to have the MTU value set lower for your LAN / WLAN network than for SmartLink networks
-#### Linux
+> Linux
+
 Open command line and execute the following command:
 sudo ip route del default
-#### Mac OS
+> Mac OS
+
 Go to network connections menu and make sure that the Service Order is set higher for your LAN / WLAN connection but not SmartLink:
 ![image](https://user-images.githubusercontent.com/42961200/151637403-b044ea98-e7e3-4a13-9355-ddb5d7094702.png)
 
