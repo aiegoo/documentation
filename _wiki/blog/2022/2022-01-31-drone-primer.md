@@ -3898,10 +3898,9 @@ So as legislation catches up with the technology things like drone kit are going
 ```
 
 - video 31 : dronekit install
-```php
-All right so in this video we're going to install the Schroen kit in drone kits Siddall packages from
 
-the Python Pipp package installer.
+```php
+All right so in this video we're going to install the Schroen kit in drone kits Siddall packages from the Python Pipp package installer.
 
 Peter picked a patch of pickled peppers.
 
@@ -3913,19 +3912,11 @@ Let's specify a particular version of the package we want to install.
 
 And we're going to install version 2.0 9.1 will enter here.
 
-And then the next package we're going to install is the drone kit Siddall package it's all run the same
+And then the next package we're going to install is the drone kit Siddall package it's all run the same command as last time only replaced drone kit with truncates Siddall and the version will use 3.2 point zero.
 
-command as last time only replaced drone kit with truncates Siddall and the version will use 3.2 point
+And then we enter this one to stall those python packages to our system and to verify that it actually works.
 
-zero.
-
-And then we enter this one to stall those python packages to our system and to verify that it actually
-
-works.
-
-We can type the following We'll type pick berries and then we'll grep drone kit and then we'll hit enter
-
-and we should see two new Python packages as well as their version numbers here.
+We can type the following We'll type pick berries and then we'll grep drone kit and then we'll hit enter and we should see two new Python packages as well as their version numbers here.
 
 And if you see this you're good to go when you've successfully installed drone kit to your system.
 
