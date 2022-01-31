@@ -6438,9 +6438,109 @@ I'm excited to see what you will build with this new knowledge that you've obtai
 ```
 
 
-- video :
+- video 48 : build codable drone
 ```javascript
+All right.
 
+Congratulations.
+
+Through your hard work diligence and general interest in drone software specifically open source drone
+
+software.
+
+You have made it all the way through this course and you've gained a lot of awesome information things
+
+like auto pilot Matt link math proxy drone kit and a bunch of other things.
+
+And your next steps are basically limitless.
+
+You can go in a lot of different directions if you're interested in actually testing out your your drone
+
+kit code on an actual physical drone instead of just your style simulated drone.
+
+I've created a new course that will show you how to design build fly and eventually even code your own
+
+drone.
+
+A real drone with drone kit and what's cool about this drone is that it is drone Kate compatible and
+
+all the stuff you learn about the software in this course is applicable to this drone.
+
+So you know a lot about already pilot marveling math proxy and ground control stations and drone kit
+
+now.
+
+Well that's awesome because this drone will respond to all of that information that you spent time learning
+
+in this course as an added cool benefit which is the drone is actually powered by a Raspberry Pi which
+
+is pretty sweet if you are interested in making a drone as your next step after conquering this course.
+
+Look for the link to my new course in the video description and sign up for that new course with the
+
+promo code drone kit and you'll get a sale and you can buy the course at nine dollars and nine nine
+
+cents.
+
+Now stick with me in the end of this video.
+
+I'll show you some actual footage of the drone that you will build in this course being flown autonomously
+
+through your drone kit scripts.
+
+And these are drone kit scripts that we have actually made in this course called take off and land and
+
+set velocity body.
+
+So it's neat that you'll be able to see a real drone respond to a code that you saw work on a simulated
+
+vehicle.
+
+Now we need to call this script in a very special manner.
+
+We'll say python and then the name of our script take off and land and then remember the dash dash connect
+
+option that we added to our script.
+
+Well now we're going to feed in that I.P. address.
+
+After that option we created we're going to type the local host IP address which is 1 2 7 0 0 1 and
+
+then we'll type a colon and then the port number that our drone is listening on in this port number
+
+is 1 4 5 5 0 and then when you hit enter the script is going to start.
+
+So be very careful about when you type this out because your drone might be trying to fly up into the
+
+air when it's sitting inside but.
+
+All right let's go out to the field and see what happens.
+
+So you can barely see it but there's a weight you know top left of the drone but we're going to go ahead
+
+and launch this script and see what happens very short mission.
+
+We'll just.
+
+And you can see the current altitude on the consulate saying we're at 0 meters where one meter and it
+
+reaches its target altitude and simply lands back onto the Earth
+
+will hit enter and here's my RC controller.
+
+I'll be just walking around with as the script is running and you can see the console output in the
+
+top right screen here I'm just going to hold the string of the vehicle in case it goes crazy and a need
+
+to real back my dog or my drone from attacking people.
+
+Now it's going to the north for a couple of seconds.
+
+Now it's flying to the south.
+
+Now it's flying to the east and out of frame it's flying to the west.
+
+And it's simply landing now.
 ```
 
 
