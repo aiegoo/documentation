@@ -3677,11 +3677,7 @@ So if we wanted to modify the Arkia parameter we would place that string in this
 
 After this we can fill out the value we want to set the parameter to with the brand value field.
 
-And finally we can specify the type of the parameter and then all of this gets package together and
-
-constitutes the data portion of the medaling message in the message ID number 23 gets mapped to the
-
-by index number five of the map link header Hetter under Message ID.
+And finally we can specify the type of the parameter and then all of this gets package together and constitutes the data portion of the medaling message in the message ID number 23 gets mapped to the by index number five of the map link header Hetter under Message ID.
 
 And then this will get sent off and once received by the drone it will see Message-ID or 23 in the header
 
