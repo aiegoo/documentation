@@ -14,7 +14,7 @@ summary: "Mon, Jan 31, 22, sample1.md of sass2 product2_sample files The most ad
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2022-01-31T14:37:57 +0900
 updated: 2022-01-31 14:37
 youtubeID0: VcBx9DLPN54
@@ -234,15 +234,15 @@ SmartAP AIRLink hardware architecture overview
 | LAN with Mission AI Computer | UARTs
 | Telemetry 1, Telemetry 2 (AI Mission Computer), Telemetry 3, GPS 1, GPS 2, Extra UART, Serial | Debug Console
 | CAN | CAN 1, CAN 2
-| USB | MAVLink, Serial Console 
+| USB | MAVLink, Serial Console
 | RC Input | SBUS, RSSI, PPM, Spektrum
 
 > AI Mission Computer specifications
 
 |---
 | Parameter | Value
-| CPU | 6-Core: Dual-Core Cortex-A72 Quad-Core Cortex-A53 
-| GPU | Mali-T864, OpenGL ES1.1/2.0/3.0/3.1 
+| CPU | 6-Core: Dual-Core Cortex-A72 Quad-Core Cortex-A53
+| GPU | Mali-T864, OpenGL ES1.1/2.0/3.0/3.1
 | VPU | 4K VP8/9  4K 10bits H265/H264 60fps Decoding
 | Power | Software Reset Power Down  RTC Wake-Up Sleep Mode
 | RAM | Dual-Channel 4GB LPDDR4
@@ -252,12 +252,12 @@ SmartAP AIRLink hardware architecture overview
 | USB | USB 3.0 Type C
 | Video  4-Lane MIPI CSI (FPV Camera)  4-Lane MIPI SI with HMDI Input (Payload Camera)
 
-> LTE Connectivity specifications 
+> LTE Connectivity specifications
 
 |---
 | Parameter| Value
 | LTE | UMTS/HSPA(+), GSM/GPRS/EDGE
-| SIM Cards | Integrated eSIM, External MicroSIM card slot 
+| SIM Cards | Integrated eSIM, External MicroSIM card slot
 | Antenna | 2x2 MIMO
 | Bands | EMEA, North America, Australia, Japan, Other
 
@@ -845,6 +845,7 @@ Connect LTE antennas to LTE1 and LTE2 sockets (sides):
 If it is not necessary, do not remove the antennas from the connector. The connectors are quite fragile and are rated for only a limited number of matching cycles. Bad connection can result in reduced RF communication performance.
 {{site.data.alerts.end}}
 
+{:start="2"}
 2. Connect FPV camera
 Camera connection is not necessary but recommended. This will allow you to test your setup and video streaming after the initial software setup described in the following sections.
 First of all, take something sharp and unlock the CSI camera port connector by pulling it a bit at each side:
@@ -856,6 +857,7 @@ Then insert the FPC cable from the camera and gently push back the black part of
 Repeat the same procedure with the camera socket. Once done you should have the camera connected to AIRLink.
 ![image](https://user-images.githubusercontent.com/42961200/151565807-28ab38f2-edd0-4407-a133-720a277b367a.png)
 
+{:start="3"}
 3. Connect power supply
 Take the main power supply cable and connect this to the power source.
 ![image](https://user-images.githubusercontent.com/42961200/151565831-0c760c55-47a0-44a0-a571-348c6519d60d.png)
