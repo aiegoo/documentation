@@ -5529,7 +5529,115 @@ to land.
 
 - video 42: auto flight mode overview
 ```javascript
+What's going on everyone.
 
+So we've been using the guiding light mode pretty heavily to this point and in this video we're going
+
+to check out what the auto mode is all about.
+
+So they are pretty similar.
+
+The guided flight mode and the auto flight mode both don't require RC input from a manual flying pilot
+
+but there is a distinction.
+
+So let's think of the drone as being stupid when it's an guided flight mode and intelligent when it's
+
+an auto flight mode.
+
+That is because in the guided mode the drone does not move unless it is told to move somewhere.
+
+So you launched the drone up into the air.
+
+It will hover in place until it gets a movement command and will execute that movement command and then
+
+it will hover again.
+
+So it is dependent on some external source to command it to fly to different locations on the auto flight
+
+mode.
+
+It is different in the auto mode.
+
+You compile a mission which consists of a list of commands that you then upload to the drones firmware
+
+and then once you put the drone into auto mode the drum automatically execute on those commands sequentially
+
+and you don't have to do anything as a pilot or you don't even need a script a drone script telling
+
+it to fly it automatically does that stuff for you.
+
+Now there are different reasons to be in either guided mode or auto mode auto mode would be great for
+
+missions that you're going to fly continuously or for pretty monotonous and normal missions that you
+
+could fly by just assembling lists of commands.
+
+So for example if you had a field to survey and you wanted the drone to take pictures every five seconds
+
+you could do that in auto mode pretty easily.
+
+Another example might be if you wanted your drone to fly particular paths around an area of interest
+
+as if you're a security or surveillance specialist we could create some missions that consisted of commands
+
+to fly the drone around that constant area of interest.
+
+So the auto mode is good for pre-determine flight paths essentially and mode is cool because it essentially
+
+allows you to provide some special functionality that isn't available already and the pilot code base
+
+if you wanted to incorporate computer vision into your drone and let the computer vision influence movement
+
+commands you could use the guided flight mode.
+
+You could write up the open Seabee Python script that was measuring the distance away from some object
+
+and based off the distance away from that object you could send different velocity commands to your
+
+drone to get it to fly in different ways that is responsive to the object that you're tracking.
+
+So the got to bite mode is great for a sort of dynamic flight pass or dynamic missions where the flight
+
+path isn't predestined and for using it as a way to provide some custom functionality to your drone
+
+that isn't already available in the pilot code base.
+
+So things like computer vision based flight.
+
+OK so what are these commands that we can put into a list and make a mission that the drone executes
+
+automatically.
+
+Well we can check those out at this link.
+
+I'm very glad you asked.
+
+All right so here we go.
+
+Let's check out the command supported by copter section and all of these represent different commands
+
+that you can sequentially place into a mission that will then execute on the commands in order.
+
+Now the conventional way to assemble a mission for auto flight mode is to make the mission through the
+
+crowd control station gooey like ssion planner or Q ground control.
+
+And in those circumstances all of these commands will work.
+
+Unfortunately currently in drone kit only a few of these commands will work and that is the nav waypoint
+
+and have returned to launch nav land and potentially a couple of other ones but they're not all supported.
+
+Now if you want to learn more about the commands you can click into them and you know see different
+
+parameters that you have to supply as a part of calling this command and you just get some more in-depth
+
+information from the next video we're going to put this to practice and make a list of commands that
+
+will upload to our drone as a mission and then we'll switch the drone into auto mode and it will execute
+
+on an economist mission.
 ```
 
 
