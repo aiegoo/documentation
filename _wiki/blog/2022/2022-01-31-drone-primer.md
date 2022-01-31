@@ -1619,13 +1619,223 @@ world in the future.
 
 - video 15: ardupilot install part 1
 ```javascript
+So in this video we're going to install and initialize the already private repository that we're going
 
+to get from.
+
+So let's pull up a terminal and let's go to
+
+and let's make a new directory called A.P.M. and that's where we'll store our order repository.
+
+It's going to A.P.M. now or in the A.P.M. directory and let's go ahead and install ARDE pilot from get
+
+up and we can do that with this command here and we'll use it clone which will let us download the code
+
+and just copy the code from the URL that specified that you are going to be the web address of the repository
+
+that we're downloading from and then we can specify a particular branch that we want to down.
+
+Raising the minus B option will use minus B and then branch we want to use is compter dastards point
+
+by point by point to make sure we're all using the same branch in this course so that we're as close
+
+as possible to having the same code then go ahead and enter.
+
+And this will take probably around 10 minutes to finish downloading.
+
+All right.
+
+And once that download is done go ahead and test it and you'll see we have a new directory called pilot.
+
+Let's go ahead and call in to argue pilot and once we're in here the Ardee pilot repository is actually
+
+made up of a bunch of different sub repositories that his previous projects that were included in the
+
+already pilot repository.
+
+So we need to initialize those sub repositories and we can do that with the following command.
+
+All right.
+
+Get submodule update and then dash dash in it and then dash dash recursive.
+
+This will look for all of the sub modules that are in the order product code base and initialize them
+
+automatically for us.
+
+So let's go ahead and enter and then this will take maybe about 10 to 15 minutes.
+
+Well aren't.
+
+And then once that's done we only have to do one more thing we need to add a particular directory to
+
+our path environmental variable CD into tools and then auto test and we'll see a bunch of files on here
+
+that are useful but we don't want to have to be in a directory to call the files every time.
+
+So we want to launch some vehicle.
+
+We don't want to have to navigate to auto test directory every time.
+
+So what we can do is put this directory in our path environmental variable sorts type PWP and we'll
+
+copy this
+
+and then we'll go into our bash RC file type pseudo v. bash or C and then will type the following.
+
+Well export path.
+
+And then we'll put in double quotes the directory that we just copied the octet directory and then a
+
+colon and then dollar sign and path.
+
+So this is going to do is prepare our path environmental variable with this new directory.
+
+So now it's going to look in this directory first.
+
+And each time it sees an executable file puts it escaped and then shipped colon and then WQ to say now
+
+we need to initialize our bash rc files since we just changed it.
+
+All right.
+
+So let's test this out.
+
+Let's go into a directory where we don't have Simbi equal.
+
+So now we're back in Ardit pilot.
+
+So if we successfully added auto test to our path variable we should be able to type Symm underscore
+
+and then hit tab and it should auto complete for us as because the auto tests successfully in our path
+
+variable.
 ```
 
 
-- video :
+- video 17 : flight mode in ardupilot
 ```javascript
+What is going on.
 
+So in this video we're going to check out some of the flight modes that are available to us in the pilot
+
+software code base.
+
+But what exactly is flight mode.
+
+What a great question.
+
+So let's think of a truck a truck that might have two wheel drive.
+
+It might have four wheel drive.
+
+If it's a futuristic truck it might have an autonomous driving feature where you don't need a a driver
+
+at the wheel.
+
+So you have three different ways of driving the same truck or the same vehicle.
+
+Well it's the same thing with our drone.
+
+So we have the same drone hardware the same thing that can fly the same vehicle but flight modes give
+
+us different ways to control the drone.
+
+Here's a couple examples here.
+
+In the stabilized flight mode is a manual flight mode that requires a pilot on the ground controlling
+
+it with a remote controller.
+
+So the drone is moving due to the pilot's manual input commands with the remote controller.
+
+Now that loiter flight mode is a little bit different.
+
+You can fly around with a remote controller like you can stabilize flight mode but if you don't provide
+
+any RC input then the drone will lock in place.
+
+It's kind of a whole different sensors like the barometer.
+
+I am use to determine its place in three space and it's going to automatically try and maintain its
+
+place in 3-D space without the necessity of a pilot.
+
+So there's a lot of flight modes and we'll check some of them out here at this link here.
+
+Definitely check this link out if you want to learn more about flight modes.
+
+So there's around 20 but for US drone programmers who want to automate drones we really only have to
+
+worry about let's say about four flight modes.
+
+Those are the guided flight mode the auto flight mode RTL and land.
+
+So the guided flight mode is a cool little mode.
+
+It doesn't move at all until it receives a movement command through a map like message.
+
+So if we have some sort of telemetry connection where we can send maverick messages to our drone for
+
+example we could tell the drone to move from this waypoint to this waypoint.
+
+So it is reactive to the ground control station commands.
+
+Now the auto mode is similar in some ways in that you don't need a manual pilot to control the drone
+
+in auto mode but it's similar in that it's not reactive like the guided mode.
+
+So the auto flight mode is essentially a predestined flight path that the drone will take.
+
+So you'll make this list of commands that will create a mission and then you will upload that mission
+
+to your drone.
+
+And then once the drone flips into auto mode then it executes on that mission.
+
+So it's predestined and a simple mission example might be command one.
+
+Don't take off into the air command to fly to this waypoint command 3 land the drone.
+
+So all that will get done automatically then the RTL flight mode is pretty cool.
+
+So if you're flying the drone around the air and you flip into RTL mode it's going to fly to a pre-determined
+
+height which is around 15 meters but you can change this and it's going to fly back to the place that
+
+you launch the drone from.
+
+So that's why it's called Return to watch whenever you flew it to.
+
+It has saved the home coordinates on the onboard computer footprint RTL mode.
+
+They'll fly back to your home coordinates and then land the land.
+
+Flight mode is any less sophisticated close cousin of the RTL mode because whenever you flip into the
+
+land mode the drone just simply begins a gentle descent.
+
+It does not fly back to the location from where you launched from.
+
+All right.
+
+So let's check out some of these flight most a little more detail at this link.
+
+Again the Arti pilot documentation is amazing.
+
+So whenever you have any questions it's probably already answered in the pilot documentation.
+
+So here's a complete list of all the flight modes that you get to use in the Artic pilot code base.
+
+And as you can see we have a lot of different flight modes but it's simplified for us because drone
+
+programmers only have to worry about a couple of these.
+
+But regardless you can if you want to find out more information about the flight mode.
+
+You just find the flight mode click into it and then there's a dedicated page that goes into extreme
+
+detail for that particular flight mode.
 ```
 
 
