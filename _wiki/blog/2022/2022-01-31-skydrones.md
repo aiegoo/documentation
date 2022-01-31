@@ -197,29 +197,18 @@ SmartAP AIRLink hardware architecture overview
 
 ![image](https://user-images.githubusercontent.com/42961200/151492903-ef319b54-3724-4e23-90c4-16cf8445001f.png)
 
+>  System specifications
+
 |---
-| System specifications
-| Parameter
-|  Value
-| Navigation
-| Accelerometers, Gyroscopes, Magnetometer, GNSS, Rangefinders, Lidars, Optical Flow, Visual
-| IMU
-| 3x-Redundant
-| Vibration dampened
-| Temperature stabilized
-| GNSS
-| GPS, GLONASS, Galileo, BeiDou,
-| RTK (option)
-| Flight Modes
-| Manual, Stabilize, GNSS-Assisted, Autonomous Waypoints, Guided, Terrain Following
-| Flight Logs
-| SD Card, up to 256GB
-| Ambient temperature
-| from -40°C up to +50°C
-| Power consumption
-| 0.6A@12 Volts, 8W (with WiFi, 2 cameras, LTE)
-| ECCN
-| 7E994
+| Parameter |  Value
+| Navigation | Accelerometers, Gyroscopes, Magnetometer, GNSS, Rangefinders, Lidars, Optical Flow, Visual
+| IMU | 3x-Redundant / Vibration dampened / Temperature stabilized
+| GNSS | GPS, GLONASS, Galileo, BeiDou, / RTK (option)
+| Flight Modes | Manual, Stabilize, GNSS-Assisted, Autonomous Waypoints, Guided, Terrain Following
+| Flight Logs | SD Card, up to 256GB
+| Ambient temperature | from -40°C up to +50°C
+| Power consumption | 0.6A@12 Volts, 8W (with WiFi, 2 cameras, LTE)
+| ECCN | 7E994
 
 
 > Flight Controller specifications
@@ -484,33 +473,16 @@ _ WiFi antenna socket (AP & Station modes)
 ### Serial ports mapping
 SmartAP AIRLink has a large number of serial ports with the following pinout:
 
-UART Port
-Path
-Description
-UART1
-/dev/ttyS0
-GPS 1
-UART2
-/dev/ttyS1
-Telemetry 3
-UART3
-/dev/ttyS2
-Debug console (internal connector)
-UART4
-/dev/ttyS3
-Telemetry 4
-UART5
-/dev/ttyS4
-Telemetry 2 (used internally with Mission Computer)
-UART6
-/dev/ttyS5
-PWM IO Module (used internally)
-UART7
-/dev/ttyS6
-Telemetry 1
-UART8
-/dev/ttyS7
-GPS 2
+|---
+| UART Port | Path | Description
+| UART1 | /dev/ttyS0 | GPS 1
+| UART2 | /dev/ttyS1 | Telemetry 3
+| UART3 | /dev/ttyS2 | Debug console (internal connector)
+| UART4 | /dev/ttyS3 | Telemetry 4
+| UART5 | /dev/ttyS4 | Telemetry 2 (used internally with Mission Computer)
+| UART6 | /dev/ttyS5 | PWM IO Module (used internally)
+| UART7 | /dev/ttyS6 | Telemetry 1
+| UART8 | /dev/ttyS7 | GPS 2
 
 ### air module content
 verything you need to setup and start using SmartAP AIRLink
