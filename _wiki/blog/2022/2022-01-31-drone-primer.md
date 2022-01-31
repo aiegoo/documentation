@@ -67,6 +67,7 @@ But I highly encourage you to look through the documentation on your own and las
 ```
 
 - video 2 : fulld rone system overview
+
 ```php
 What's going on everyone in this video we're going to look at the typical drone set up from a high level
 
@@ -374,6 +375,7 @@ back to this video.
 ```
 
 - video 3 : drone basics and flight jargon
+
 ```php
 All right.
 
@@ -616,6 +618,7 @@ on your own.
 
 
 - video 5 : setting up preconfigured and
+
 ```php
 So this link right here if you go to this link and download it it's just a zip file that has all of
 
@@ -804,6 +807,8 @@ Let me know if you have any questions.
 
 
 - video 7: virtualization check
+
+
 ```php
 All right.
 
@@ -836,6 +841,7 @@ next video where we'll start creating our virtual machine.
 
 
 - video 8 : virtualbox install and ubuntu download
+
 ```php
 All right so in this video we're going to install a virtual box and download our mood to image that
 
@@ -926,6 +932,8 @@ to the next video.
 
 
 - video 9 : virtual machine setup
+
+
 ```php
 All right.
 
@@ -1161,6 +1169,7 @@ by just going into settings and then playing around with the virtual machine har
 ```
 
 - video 10:
+
 ```php
 IMPORTANT!! DO NOT UPGRADE TO UBUNTU 18!!
 
