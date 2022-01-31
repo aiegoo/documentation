@@ -3813,13 +3813,9 @@ While it's helpful it's not required.
 
 So this drastically lowers the barrier of entry.
 
-So these are the four lines of code that it would take to tell the drone to take off into the air go
+So these are the four lines of code that it would take to tell the drone to take off into the air go to a specified waypoint and then land.
 
-to a specified waypoint and then land.
-
-So at this you can start to see the power of Joan Kitt because all of this is intuitive human readable
-
-language and it's easily understandable how it affects our drone.
+So at this you can start to see the power of Joan Kitt because all of this is intuitive human readable language and it's easily understandable how it affects our drone.
 
 But it's all in powered by a map link to drive the point home.
 
@@ -3833,97 +3829,55 @@ Everyone was focused in on the hardware.
 
 So with the creation of the screen we get more abstraction.
 
-We get to intuitively interact with our computer hardware without having to know everything about the
+We get to intuitively interact with our computer hardware without having to know everything about the underlying details.
 
-underlying details.
-
-And then on top of that we might get different computer languages that are more abstracted than others
-
-so the creation of things like Java.
+And then on top of that we might get different computer languages that are more abstracted than others so the creation of things like Java.
 
 Now we don't even have to worry about stack and heap space.
 
-Now we can just code what we want to code and abstract all of the underlying things away from us which
+Now we can just code what we want to code and abstract all of the underlying things away from us which allows us to focus on the cool things like Spider Solitaire and so you know in the beginning everyone had to focus on hardware as abstraction started to increase eventually.
 
-allows us to focus on the cool things like Spider Solitaire and so you know in the beginning everyone
+We got a firmware layer of computers that could interact with the hardware based off of human readable code.
 
-had to focus on hardware as abstraction started to increase eventually.
+And then with the creation of a user space that could access the firmware in an abstracted manner that is in a way where they didn't have to completely understand what the firmware was doing.
 
-We got a firmware layer of computers that could interact with the hardware based off of human readable
+They could just make simple calls to the firmware layer which would then do the hardware communication for them.
 
-code.
-
-And then with the creation of a user space that could access the firmware in an abstracted manner that
-
-is in a way where they didn't have to completely understand what the firmware was doing.
-
-They could just make simple calls to the firmware layer which would then do the hardware communication
-
-for them.
-
-You get some very unique applications that no one in the 50s and 60s would have thought the computers
-
-were getting applied with so you get things like electronic mail or text processors with thousands of
-
-different textiles or inability to fill out your taxes online or watch rhinos eat snow cones.
+You get some very unique applications that no one in the 50s and 60s would have thought the computers were getting applied with so you get things like electronic mail or text processors with thousands of different textiles or inability to fill out your taxes online or watch rhinos eat snow cones.
 
 So today you can see kind of a distinction here.
 
-You can have a couple you can have many different types of engineers you can have firmware engineers
-
-you're going to have hardware engineers you're going to have software developers.
+You can have a couple you can have many different types of engineers you can have firmware engineers you're going to have hardware engineers you're going to have software developers.
 
 Well the same can be seen with the drone progression of technology.
 
-So at first we had this clunky quadcopter they couldn't fly at all and then hardware kept developing
+So at first we had this clunky quadcopter they couldn't fly at all and then hardware kept developing and now we have this cool quadcopter that can auto level itself.
 
-and now we have this cool quadcopter that can auto level itself.
-
-And then we began to get these open source tools that could operate as firmware to control the hardware
-
-like our pilot picks for.
+And then we began to get these open source tools that could operate as firmware to control the hardware like our pilot picks for.
 
 But we still don't have this high level interface into controlling the drones.
 
 We have these large code bases.
 
-You don't have an abstracted method to interact with our drone that utilizes our pilot and peaks for
+You don't have an abstracted method to interact with our drone that utilizes our pilot and peaks for to control the drone will enter drone kit.
 
-to control the drone will enter drone kit.
+Junket provides us with the high level interface that lets us control our drone in very abstracted ways where we don't even have to worry about the firmware or the hardware.
 
-Junket provides us with the high level interface that lets us control our drone in very abstracted ways
-
-where we don't even have to worry about the firmware or the hardware.
-
-So I think as abstraction keeps increasing just like computers we're going to see some forking of specified
-
-engineering fields in the Jones space.
+So I think as abstraction keeps increasing just like computers we're going to see some forking of specified engineering fields in the Jones space.
 
 So I bet we're going to have exclusively hardware engineers and exclusively firmware engineers.
 
-And then I think with the advent of Joan Kitt and other things that are bound to come out like it we're
-
-going to have some application engineers.
+And then I think with the advent of Joan Kitt and other things that are bound to come out like it we're going to have some application engineers.
 
 So what could those possibly be.
 
-Well just throwing out some examples you might have a food delivery application where some customer
-
-places a food request and you input their address and that gets transferred to a GPS waypoint all in
-
-Python and then your Python drumkit script can automatically create a route that the drone takes to
-
-deliver the food and then return back to where it launched from.
+Well just throwing out some examples you might have a food delivery application where some customer places a food request and you input their address and that gets transferred to a GPS waypoint all in Python and then your Python drumkit script can automatically create a route that the drone takes to deliver the food and then return back to where it launched from.
 
 That could easily be done in drone kit.
 
 Same for package delivery.
 
-BLITZER You had a security or surveillance system wanted to be able to fly your drone and pre-determined
-
-paths with consistency where you could create a drum kit script that could save the missions that you
-
-wanted the drone to fly.
+BLITZER You had a security or surveillance system wanted to be able to fly your drone and pre-determined paths with consistency where you could create a drum kit script that could save the missions that you wanted the drone to fly.
 
 And whenever called upon the drone would fly those mission the same way every single time.
 
