@@ -49,45 +49,21 @@ Then we will learn about two different ground control stations one a command lin
 
 The fourth section will provide a high level introduction into the Mablean middleware and how it is used as an inter-process or enter vehicle communications standard and finally the last section will provide an overview of drone kit and why it's so powerful.
 
-We will then build out various functions in Python to command and control our drone using Siddall as
+We will then build out various functions in Python to command and control our drone using Siddall as our test drone.
 
-our test drone.
+The functions we make can be thought of as Lego blocks that can be put together in any infinite amount of ways to produce different drone kit missions.
 
-The functions we make can be thought of as Lego blocks that can be put together in any infinite amount
-
-of ways to produce different drone kit missions.
-
-I'll be providing links to Linux command line in Python tutorials to get you caught up to speed if you
-
-need such information but you won't need any python knowledge until we get the drone kit section.
+I'll be providing links to Linux command line in Python tutorials to get you caught up to speed if you need such information but you won't need any python knowledge until we get the drone kit section.
 
 The general formula of the sections in this lecture series follows the following format.
 
-We will begin with a high level 15 minute introduction to the material followed by a lower level dive
+We will begin with a high level 15 minute introduction to the material followed by a lower level dive  into the content of the program we're looking at a good method of consuming this course may be to first  watch all of the high level videos at the beginning of each section to provide you with a working understanding of the different layers of the flight deck.
 
-into the content of the program we're looking at a good method of consuming this course may be to first
-
-watch all of the high level videos at the beginning of each section to provide you with a working understanding
-
-of the different layers of the flight deck.
-
-Regardless we provide a system overview video that will do just that and the more condensed matter if
-
-you just want to follow along sequentially with the videos and I will say the documentation provided
-
-for the open source projects comprising our flight deck are very excellent for Arti pilot map link map
-
-proxy in trone kit if you want to become an independent drone wizard understanding how to use the documentation
-
-to both learn new things and answer questions you might have.
+Regardless we provide a system overview video that will do just that and the more condensed matter if you just want to follow along sequentially with the videos and I will say the documentation provided for the open source projects comprising our flight deck are very excellent for Arti pilot map link map proxy in trone kit if you want to become an independent drone wizard understanding how to use the documentation to both learn new things and answer questions you might have.
 
 Is a must I'll be providing links to various documentation pages whenever necessary.
 
-But I highly encourage you to look through the documentation on your own and last but not least please
-
-do not hesitate to ask any questions for anything you may be confused about or respond as quickly as
-
-possible and it may help students coming behind you to view the answers that are provided.
+But I highly encourage you to look through the documentation on your own and last but not least please do not hesitate to ask any questions for anything you may be confused about or respond as quickly as possible and it may help students coming behind you to view the answers that are provided.
 ```
 
 - video 2 : fulld rone system overview
