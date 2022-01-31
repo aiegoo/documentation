@@ -4118,13 +4118,9 @@ We can say vehicle got location that global relative frame and this will return 
 
 we can say vehicle that attitude and see the current roll pitch and the status of our vehicle or maybe the velocity that our drone is moving at and the Northeast down frame by typing vehicle velocity we can get access to how long ago we received our last heartbeat message from the vehicle we're connected to.
 
-And that will be in seconds is underscore Carnival tells us if our system is OK to start spinning the
+And that will be in seconds is underscore Carnival tells us if our system is OK to start spinning the props.
 
-props.
-
-So if there's any underlying system that is still setting up hours maybe a GPS isn't working or something
-
-this is honorable will return a 0 and you won't be able to start spinning your drone's props.
+So if there's any underlying system that is still setting up hours maybe a GPS isn't working or something this is honorable will return a 0 and you won't be able to start spinning your drone's props.
 
 Here we can set the ground speed that we want our drone to move it.
 
