@@ -643,6 +643,7 @@ Make sure you have completed all  steps and connected antennas before proceeding
 
 1. Power up the AIRLink
 You will see that various LEDs will turn on and some of them will start blinking. This means that the AIRLink is live and booting up. In particular, make sure that the PWR green LED is solid. This means that the AIRLink is powered up and running properly.
+
 PWR green LED is solid meaning that the unit is powered up properly
 ![image](https://user-images.githubusercontent.com/42961200/151566747-dffff700-bf5d-43f1-83f5-4ab2327eba6e.png)
 
@@ -652,12 +653,14 @@ Check available WiFi networks on your computer or tablet and connect to AIRLink 
 ![image](https://user-images.githubusercontent.com/42961200/151566789-0048a868-ed92-4d14-906f-273ae090dbc6.png)
 
 The name of the network is unique for each AIRLink and starts with AirLinkConfig_ and ends with a collection of unrelated symbols.
+
 Default password: airlink1
 ![image](https://user-images.githubusercontent.com/42961200/151566813-a231454b-da1c-4aa9-bf09-5f660e16ad53.png)
 
 {:start="3"}
 3. Open web browser
 Once you're connected to the AIRLink network, open the web browser and proceed with the initial configuration. Click the following link to open .
+
 In case the link above doesn't work - then go to . In case  doesn't work either - then go to . In some cases you might need to manually type this into browser address network. This is browser-dependent, we recommend to use Google Chrome or Safari.
 
 You will see the following welcome page:
@@ -678,21 +681,26 @@ Select the network you would like to connect to and click on its name. You will 
 ![image](https://user-images.githubusercontent.com/42961200/151567046-b3ccedba-019a-4b18-b546-ce9f9db5accf.png)
 
 After you have typed the password please click Connect.
+
 After pressing the button, AIRLink will attempt to connect. This may take a few minutes. AirLinkConfig network will be disabled and most likely your computer will connect to the other known network. However, if you entered the wrong password or the access point rejects the connection for other reasons, turn on the AirLinkConfig access point again. Your computer is unlikely to automatically connect to it and you may have to do this manually.
+
 After pressing the button, the device will be expected to appear at the address , if it is supported by your router / computer, and will automatically redirect there.
 
 Connect your computer to the same WiFi network which you have just connected the AIRLink to and go to . If you are able to see the main dashboard - you have successfully connected AIRLink to WiFi network:
 ![image](https://user-images.githubusercontent.com/42961200/151567103-67dbd9f0-4c0c-438e-a313-474d7d5a8e8d.png)
 
 If you have troubles accessing AIRLink dashboard - please view .
+
 CONGRATULATIONS! Now your AIRLink is connected to Internet.
 
 {:start="5"}
 5. Claim AIRLink ownership
 By default, your AIRLink is owned by the manufacturer (Sky-Drones) or other licensed manufacturer. You can claim ownership of the AIRLink and assign it to your account.
+
 AIRLink ownership is required to use Sky-Drones Cloud services. Therefore, we highly recommend to claim your AIRLink ownership at this step.  Make sure you have the following:
-Sky-Drones Cloud account. If not - create .
-AIRLink is connected to WiFi and has internet access.
+
+- Sky-Drones Cloud account. If not - create .
+- AIRLink is connected to WiFi and has internet access.
 
 Go to the AIRLink dashboard at  and scroll down until you see Ownership Transfer section, click Claim Ownership:
 ![image](https://user-images.githubusercontent.com/42961200/151567223-4e0f05a8-65ab-4ee7-87d9-02a0c30cda89.png)
@@ -708,6 +716,7 @@ Click Claim Ownership of this AIRLink. If successful – you should see the foll
 ![image](https://user-images.githubusercontent.com/42961200/151567304-09656d78-5ff8-4c1f-8ca3-73005815edd3.png)
 
 You can click the button to return to the main dashboard.
+
 CONGRATULATIONS! Your AIRLink has been successfully set up and now you can proceed to its configuration for your vehicle. We recommend to use SmartAP GCS for the initial vehicle configuration setup. Later you can use Sky-Drones Cloud web services for real time flight monitoring and control. Your AIRLink is already available in your Sky-Drones Cloud account.
 
 ### Connect via SmartAP GCS
