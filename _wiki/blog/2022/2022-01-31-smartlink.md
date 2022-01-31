@@ -372,16 +372,19 @@ After that, if you go back to the World pane you will see a green joystick icon 
 SmartLink has various settings which you may change to optimize the performance. To get to 's settings menu click on the Wireless Connection icon on top toolbar:
 ![image](https://user-images.githubusercontent.com/42961200/151636912-afdaddfc-965c-4b43-b012-7027d8fce1f1.png)
 
-### Changing Radio settings
+> Changing Radio settings
+
 Radio tab allows you to change radio settings as well as observe current RSSI and SNR values for connection.
 ![image](https://user-images.githubusercontent.com/42961200/151636936-6984d9e2-bb87-43da-aa2b-97148fad2bf1.png)
 
 SNR - Signal Noise Ratio, the ratio of signal power to the noise power, expressed in decibels.
 RSSI - Received Signal Strength Indication, a measure of the energy observed by an antenna when receiving a signal
+{{site.data.alerts.callout_info}}
 It's recommended to keep output TX power for both air and ground module at low values when working with the system on the ground. 7 dBm is the minimum and recommended value. Use higher values when flying. Using high values over long periods of time near the human body might cause health problems due to radiation.
+{{site.data.alerts.end}}
 After changing any parameter click Save. It might take a few seconds to save changes applied. The system may loose connection when changing any parameter.
 
-### Changing Security settings
+> Changing Security settings
 
 Security tab allows you to assign network name and encryption key. Connection is AES encrypted.
 ![image](https://user-images.githubusercontent.com/42961200/151636967-e644fc9c-85a6-4654-8166-a6155db15511.png)
@@ -426,7 +429,8 @@ To check the video stream using a standard GStreamer pipeline use the following 
 
 gst-launch-1.0 rtspsrc location=rtsp://smartlink.local:8554/camera/0 ! rtph264depay ! avdec_h264 ! autovideosink sync=false
 
-### Manual Control
+> Manual Control
+
 Manual control comes as a part of other MAVLink telemetry messages. MANUAL_CONTROL message from MAVLink specification is recommended but not exclusive. You may use any manual control messages according to your specification.  will act as a transparent transfer layer just like any other telemetry module.
 
 ## Other AP / GCS Support
@@ -445,13 +449,15 @@ Follow these next steps to configure QGroundControl for :
 ### Mission Planner
 ![image](https://user-images.githubusercontent.com/42961200/151637137-09804a03-9de9-4f2a-95f7-07913cabffea.png)
 
-* Configuration settings
+>  Configuration settings
+
 * Connection type: UDP
 * Host: smartlink.local
 * Port: 14555
 * Autopilot UART: 57600 8N1 3V3 TTL
 
-#### Telemetry
+> Telemetry
+
 Make sure to select UDPCI as the connection type and click Connect:
 ![image](https://user-images.githubusercontent.com/42961200/151637168-5e1b4796-1700-44cb-8fb5-1f28df3d2966.png)
 
@@ -464,7 +470,8 @@ Type in SmartLink port number (14555) and click OK:
 The connection will be established and Mission Planner will start reading parameters:
 ![image](https://user-images.githubusercontent.com/42961200/151637192-c2ef93f5-0d81-4a00-ae2c-a6dfddbdac79.png)
 
-#### Video
+> Video
+
 Right click on the primary flight display and select Video > Set GStreamer source:
 ![image](https://user-images.githubusercontent.com/42961200/151637213-4b8abb8d-1eeb-4d0a-9056-a7f35cd3d67f.png)
 
@@ -559,9 +566,13 @@ Click below to download the recovery image. Make sure to the select the one whic
 > Unable to detect LAN network from ground module
 
 In case you can't see that the LAN network from ground module was detected and established, then you would need to install the driver:
+[Install_USB_Win8_8.1_8066.20_06222021.zip](Install_USB_Win8_8.1_8066.20_06222021.zip)
 LAN Driver - Windows 8.1
+[Install_USB_Win10_10045.20_06222021.zip](Install_USB_Win10_10045.20_06222021.zip)
 LAN Driver - Windows 10
+[r8152.53.56-2.15.0.tar.bz2](r8152.53.56-2.15.0.tar.bz2)
 LAN Driver - Linux
+[0011-RTUNICv1.0.16.zip](0011-RTUNICv1.0.16.zip)
 LAN Driver - Mac OS
 
 You can find the latest drivers from Realtek available .
@@ -569,7 +580,9 @@ You can find the latest drivers from Realtek available .
 {{site.data.alerts.callout_info}}
 In some cases you might need to disable ’system integrity protection’ and then instal the driver For instance,  is the demo video on how to disable SIP on Mac OS.
 {{site.data.alerts.end}}
-### Unable to Ping smartlink.local - Unknown Host
+
+> Unable to Ping smartlink.local - Unknown Host
+
 Some operating systems might not have local DNS, resulting in the inability to access the system using the name (smartlink.local). This is known for all Android platforms and some Windows platforms. In case you can't ping smartlink.local or similar:
 ping: cannot resolve smartlink.local: Unknown host
 You'll need to find out the IP address for SmartLink. There are numerous ways to do this, we'll use the NMAP tool in this example. First of all, download and install NMAP tool using the relevant links below:
