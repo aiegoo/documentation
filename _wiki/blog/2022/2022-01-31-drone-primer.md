@@ -14,7 +14,7 @@ summary: "Mon, Jan 31, 22, flight stack with firmware middleware and api"
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2022-01-31T16:32:15 +0900
 updated: 2022-01-31 16:32
 ---
@@ -26,8 +26,8 @@ updated: 2022-01-31 16:32
 ## drone primer from Udemy
 
 ### overview
-1. video 4: 
-### scripts 
+1. video 4:
+### scripts
 - video 1: course overview
 
 ```javascript
@@ -106,7 +106,7 @@ do not hesitate to ask any questions for anything you may be confused about or r
 possible and it may help students coming behind you to view the answers that are provided.
 ```
 
-- video 2 : fulld rone system overview 
+- video 2 : fulld rone system overview
 ```javascript
 What's going on everyone in this video we're going to look at the typical drone set up from a high level
 
@@ -655,7 +655,7 @@ on your own.
 ```
 
 
-- video 5 : setting up preconfigured and 
+- video 5 : setting up preconfigured and
 ```javascript
 So this link right here if you go to this link and download it it's just a zip file that has all of
 
@@ -843,264 +843,789 @@ Let me know if you have any questions.
 ```
 
 
-- video : 
+- video 7: virtualization check
+```javascript
+All right.
+
+So before we progress and start creating our virtual machine with Virtual Box we have one step to do
+
+beforehand and we have to make sure that virtualization is actually enabled on our host pc.
+
+I'll show you how to do that on a Windows box now.
+
+So what you do is hit control alt delete and we're going to boot up a task manager and real simple you
+
+just pull up the Performance tab and look for virtualization.
+
+If it's enabled thumbs up you're ready to go on to the next video where we'll start creating our virtual
+
+machine if it's disabled.
+
+Well you have a little bit of work to do but don't be afraid it's not too difficult.
+
+You just have to boot up into the bios of your PC where you can switch on virtualization to enable.
+
+Now I know that might sound a little bit scary but don't be afraid.
+
+I will link to a video on YouTube that goes into the subject with great detail and it walks you through
+
+all the various steps and after you get that enabled and you're good to go and we'll see you at the
+
+next video where we'll start creating our virtual machine.
+```
+
+
+- video 8 : virtualbox install and ubuntu download
+```javascript
+All right so in this video we're going to install a virtual box and download our mood to image that
+
+we'll be using in this course.
+
+You only really need to do this if you'll be running the course from my Windows machine because all
+
+of our content is going to be ran from a Linux environment and it won't work on a Windows machine.
+
+And that's what virtual box will provide us with.
+
+I still encourage you to download and use the same Linux distribution even if you already have an upper
+
+running Linux box.
+
+And that is just to maintain as much coherence as the lecture material as possible.
+
+But in theory if you already have a Linux box up and running and it happens to be different from the
+
+moon to 3:44 distro that will be using you should be good to go.
+
+Let's start by downloading virtual box and that will be the software we'll use to store our virtual
+
+machines.
+
+And this course freezing Virtual Box 5.2 point one to which you can find and the other build's button
+
+here but it shouldn't be too much difference between the distributions.
+
+So let's go down here and go to a virtual box.
+
+Older builds click on 5.2 and then find Virtual Box Five Point to Point 1 2 and then the appropriate
+
+operating system that you're running on.
+
+And this tutorial we're running from a Windows host so click on this right here download should begin.
+
+And this should only take about 30 seconds and then pull up the file explorer and navigate to wherever
+
+you're downloading your content from.
+
+And you'll see this logo here which is our Virtual Box installer.
+
+So if you double click on it it will prompt an installation window and then we can use the default settings
+
+so.
+
+So just click through.
+
+Next on all of these and then click Finish when you're done and then when the installation has finished
+
+you can navigate over here to your search bar and type virtual.
+
+And if something pops up saying desktop app you know you successfully downloaded it and if you want
+
+to pin it to the task bar you can right click in a pen to start or this will say pin to taskbar and
+
+you get this right here.
+
+So you've installed Virtual Box we need to download our Linux distribution image that we'll be using
+
+and this course is immune to 3:44 Zini.
+
+And you can get that from this link right here.
+
+Here we are you have four choices here.
+
+Make sure you're going to download the desktop image and not the server image.
+
+And then further resolution from that is 32 bit or 64 bit.
+
+If you don't know what processor you are running on your computer you can click to the file explorer
+
+and then find this PC right click it and click properties and you'll see the system type and mine a
+
+64 bit.
+
+So I'm going to click on the 64 bit image.
+
+If you're running 32 bit then click on that one.
+
+And this download will take a pretty long time maybe 20 minutes.
+
+So it's a large file that's about 1.5 gigs and then let that install and then when it's done head on
+
+to the next video.
+```
+
+
+- video 9 : virtual machine setup
+```javascript
+All right.
+
+So at this point we should have our virtual box all installed and ready to go.
+
+We should have downloaded our Embu to image that we'll be using in this course.
+
+So now let's set up our virtual machine in virtual box to go ahead and pull up virtual box
+
+and then we're going to click on this new button we're going to configure a new virtual machine and
+
+what we're going to do here is basically set up the hardware resources that are virtual machine is going
+
+to use.
+
+So let's name this let's just call it drone moon too because I'm not creative.
+
+And then we're going to select the type.
+
+So we're using Linux.
+
+And then the version we're running a 64 bit machine on my desktop that might be different for you and
+
+just a quick 32 bit tube and that applies now the memory size.
+
+So this is a bit of a balancing act because if you go too far then the operating system the parent operating
+
+system that is running your virtual machine will be able to function.
+
+So yeah our virtual machine is going to have 8 gigs of RAM but Windows is going to have no RAM to deal
+
+with.
+
+And you don't want to go too low because if you go too low your virtual machine isn't going to be able
+
+to run its processes with a lot of horsepower.
+
+It's definitely a bit of a balancing act and something you might have to play with two gigs is a safe
+
+number or 45 percent of your memory size is a general rule of thumb.
+
+And the hard disk type Let's use create a virtual hard disk and hit create
+
+and now the hard disk file type Let's use VDI virtual disk image storage on physical hard disk.
+
+We have fixed size and dynamically allocated methods dynamically allocated which means that your virtual
+
+machine is only going to take up space on your hard disk when it's needed.
+
+So if your virtual machine only needs 5 gigs that is all that is going to be used to store your virtual
+
+machine and then a safe minimum amount of file size to allocate to your virtual machine is probably
+
+around 30 gigs.
+
+You might be able to go lower but 30 gigs is a probably the lowest number that I can confidently say
+
+would work.
+
+And then lets it create and that should create a new machine here in our list of machines.
+
+So here's the one we just created trone a move to now we can modify the settings of this further by
+
+right clicking and clicking on settings.
+
+OK so let's go to System and processor.
+
+So here we can delegate the amount of Sipah use that our virtual machine is going to be able to use.
+
+And just like Ram This is also a bit of a balancing act because when your virtual machine is up and
+
+running the processors you have dedicated to your virtual machine are not going to be available to your
+
+parent operating system.
+
+So for that reason we could not dedicate all of our C-p to our virtual machine because then Windows
+
+would have no processor.
+
+The one you will probably really be enough of if you have a computer with more sleep use you should
+
+be able to dedicate more C-p use to your virtual machine without worrying about performance like the
+
+ram.
+
+General rule of thumb the 40 percent rule of thumb will probably apply in this circumstance too.
+
+But still something is going to have to play around with.
+
+And then let's go to storage and now we're going to point the hardware that we set up our virtual machine
+
+hardware to an operating system image that will run that hardware.
+
+And that is the moon to image that we download it.
+
+And the last video.
+
+So let's click on the CD button.
+
+And then hit choose disk
+
+nélisse navigate to the location that we downloaded our image to and let's double click on the moon
+
+to image that we downloaded
+
+and there we go.
+
+Now we have associated our operating system with our virtual machine.
+
+Now the next time we boot up our virtual machine it will boot with boot to 3:44 Zeny desktop.
+
+But again if some of the hardware settings that we played around with in this video isn't working for
+
+your system you can definitely still modify the hardware resource allocations that we set up initially
+
+by just going into settings and then playing around with the virtual machine hardware aspects.
+
+All right.
+
+So at this point we should have our virtual box all installed and ready to go.
+
+We should have downloaded our Embu to image that we'll be using in this course.
+
+So now let's set up our virtual machine in virtual box to go ahead and pull up virtual box
+
+and then we're going to click on this new button we're going to configure a new virtual machine and
+
+what we're going to do here is basically set up the hardware resources that are virtual machine is going
+
+to use.
+
+So let's name this let's just call it drone moon too because I'm not creative.
+
+And then we're going to select the type.
+
+So we're using Linux.
+
+And then the version we're running a 64 bit machine on my desktop that might be different for you and
+
+just a quick 32 bit tube and that applies now the memory size.
+
+So this is a bit of a balancing act because if you go too far then the operating system the parent operating
+
+system that is running your virtual machine will be able to function.
+
+So yeah our virtual machine is going to have 8 gigs of RAM but Windows is going to have no RAM to deal
+
+with.
+
+And you don't want to go too low because if you go too low your virtual machine isn't going to be able
+
+to run its processes with a lot of horsepower.
+
+It's definitely a bit of a balancing act and something you might have to play with two gigs is a safe
+
+number or 45 percent of your memory size is a general rule of thumb.
+
+And the hard disk type Let's use create a virtual hard disk and hit create
+
+and now the hard disk file type Let's use VDI virtual disk image storage on physical hard disk.
+
+We have fixed size and dynamically allocated methods dynamically allocated which means that your virtual
+
+machine is only going to take up space on your hard disk when it's needed.
+
+So if your virtual machine only needs 5 gigs that is all that is going to be used to store your virtual
+
+machine and then a safe minimum amount of file size to allocate to your virtual machine is probably
+
+around 30 gigs.
+
+You might be able to go lower but 30 gigs is a probably the lowest number that I can confidently say
+
+would work.
+
+And then lets it create and that should create a new machine here in our list of machines.
+
+So here's the one we just created trone a move to now we can modify the settings of this further by
+
+right clicking and clicking on settings.
+
+OK so let's go to System and processor.
+
+So here we can delegate the amount of Sipah use that our virtual machine is going to be able to use.
+
+And just like Ram This is also a bit of a balancing act because when your virtual machine is up and
+
+running the processors you have dedicated to your virtual machine are not going to be available to your
+
+parent operating system.
+
+So for that reason we could not dedicate all of our C-p to our virtual machine because then Windows
+
+would have no processor.
+
+The one you will probably really be enough of if you have a computer with more sleep use you should
+
+be able to dedicate more C-p use to your virtual machine without worrying about performance like the
+
+ram.
+
+General rule of thumb the 40 percent rule of thumb will probably apply in this circumstance too.
+
+But still something is going to have to play around with.
+
+And then let's go to storage and now we're going to point the hardware that we set up our virtual machine
+
+hardware to an operating system image that will run that hardware.
+
+And that is the moon to image that we download it.
+
+And the last video.
+
+So let's click on the CD button.
+
+And then hit choose disk
+
+nélisse navigate to the location that we downloaded our image to and let's double click on the moon
+
+to image that we downloaded
+
+and there we go.
+
+Now we have associated our operating system with our virtual machine.
+
+Now the next time we boot up our virtual machine it will boot with boot to 3:44 Zeny desktop.
+
+But again if some of the hardware settings that we played around with in this video isn't working for
+
+your system you can definitely still modify the hardware resource allocations that we set up initially
+
+by just going into settings and then playing around with the virtual machine hardware aspects.
+```
+
+- video 10:
+```javascript
+IMPORTANT!! DO NOT UPGRADE TO UBUNTU 18!!
+
+After you install and launch Ubuntu 16 on your Virtual Machine and first login, you will at some point be prompted to upgrade to Ubuntu 18.04. DO NOT DO THIS!!!!! The course material has only been tested on Ubuntu 16.04, and you will likely run into bugs on Ubuntu 18.04. Upgrade at your own peril :)
+```
+
+
+- video 11: ubunut install
+```javascript
+Aren't so in the last video we set up our virtual machine by allocating the real hardware resources
+
+that we will dedicate to a virtual machine and then we pointed our operating system image that will
+
+run the hardware that we allocated to it.
+
+And in this video we're going to boot up our virtual machine for that for the first time and install
+
+our operating system image to the hardware.
+
+So let's pull up virtual box
+
+and then to launch a virtual machine that you've already configured you just find the name you want
+
+to launch in that double click on it.
+
+And that will pull up a window that is your visual interface into your virtual machine in go and boot
+
+to 3:44 is booting up.
+
+OK so now Hamoud too has booted up and it has prompted us with the installation startup.
+
+So first screen is this going to click on install and boot into and then let's click both of these boxes
+
+will download updates while installing a boot to and will install third party software.
+
+So here we're going to click on erase disk install and move to.
+
+Now this sounds scary because you might think that it will wipe out your windows machine but it's the
+
+virtual machine is only seeing the hard disk space that we allocated to this specific virtual machine.
+
+So those dirty gigs.
+
+So it's saying I don't recognize any operating system.
+
+Do you want me to make this boot to the primary operating system for that disk space allocation.
+
+And yes that's what we want to do so click erase disk and install and boot to
+
+and then we'll click on continue then click whatever time zone that you're located in.
+
+Then click whatever language you're using And now let's set up some log in information so we can type
+
+or name here and then what we want our computers name to be in our username and password and choose
+
+to log in automatically or require password to log in and hit continue.
+
+Now the installation has begun and this may take a little bit of time.
+
+All right and then once the installation is complete you'll get prompted with this little window here
+
+and you'll have to restart the virtual machine to click that button all right and then once the restart
+
+is done you'll be prompted with the log in screen go and type in your password
+
+and it might take some time for all of your various windows in Taskbar is to load up ok then once everything
+
+is loaded up.
+
+Pull up a terminal and we can do that by making sure you're in the virtual box window and hit Control
+
+alt t..
+
+Now let's run two commands will run sudo apt get update we'll to update the list of programs in the
+
+repository that we have available to download and then we'll do a pseudo apt get upgrade which will
+
+install the default applications to our virtual machine.
+
+So first we're going to run the sudo apt get update command
+
+after that's done.
+
+Type pseudo apt get upgrade and this may take a little bit of time.
+
+If you get prompted with this do you want to continue.
+
+Type in a Y and then hit Enter.
+
+This may take about 10 minutes.
+```
+
+
+- video 12:
+```javascript
+IMPORTANT!! DO NOT UPGRADE PIP OR USE SUDO PIP
+
+In the video, I make two mistakes. Please follow the below instructions to modify the instructions for the next video.
+
+1. DO NOT upgrade pip with "sudo pip install --upgrade pip"
+
+2. I use "sudo pip ..." Do not use "sudo pip", simply use "pip", as this is the safer way to use this package handler.
+```
+
+
+- video 12: dependencies install
+```javascript
+All right.
+
+So in this video we're going to be setting up our Linux environment that we're going to be running the
+
+course material from.
+
+So let's get to it on the right.
+
+I have a terminal pulled up and we'll run this command here to run some of the applications will be
+
+meeting later on in the course.
+
+OK so we're installing a bunch of Python packages that Python dependencies and the vim text editor and
+
+the Get version control program.
+
+So then hit enter
+
+and any time we get product with do you want to continue and why and then enter.
+
+OK then once that's done we're going to install the python pit package handler
+
+and then hit enter
+
+and then why enter.
+
+And now that we have Pipp installed let's install mabbe proxy and we're going install a specific version
+
+to maintain coherence with this course material or run this following command.
+
+So we're telling the pip Python packet Chandler to install the map proxy package and if you use double
+
+equal signs and a number afterwards you're specifying the version that you want to download.
+
+So hit enter.
+
+All right.
+
+And then that shouldn't take too long to download.
+
+One thing you'll see here is you'll be recommended to update your pitte version to ten point 0.1.
+
+Do this at your own caution because doing so is known to produce some system problems that you have
+
+to navigate through fixing yourself and pitte version.
+
+8. 1.1 suffices for what we need to use it for in this tutorial.
+
+So now let's run this following command.
+
+And then hit enter and let's remove a program that is known to cause some problems.
+
+Hit enter and then once that's done let's make a directory that will be the parent directory for all
+
+of our core specific material.
+
+So I'm going to call it course route.
+
+And it might be more convenient for you to do the same.
+
+So you know what I'm talking about in later videos when I refer to the coarse root directory.
+
+Make sure you're in the home slash username directory and we can do that here CD in a tale they.
+
+So this is where our course information is going to be stored.
+
+So it's going to be a popular directory.
+
+So what we can do is make a shortcut variable that we can input into the cd command.
+
+Let's do that with this following command.
+
+So here we're saying export course route.
+
+So this means we're going to make a new environmental variable called course route and we're setting
+
+it equal to the directory of course.
+
+So slash home slash whatever username you're using and this dollar sign user is going to get resolved
+
+to whatever username that you're using.
+
+And then of course route and then or outputting this line of text to the bash RC file which will save
+
+our environmental variable and define it every time we open up a new terminal.
+
+So let's hit enter and then once we have modified our bash RC file we have to source it.
+
+So we'll type this right here.
+
+Enter now we can navigate to our course root directory from wherever we are on the system with the following
+
+command.
+
+So we reference our course route variable by typing a dollar sign before the course route text.
+
+And now if we hit Enter we can navigate to a course route from any part of the system.
+```
+
+### section 3
+- video :
+```javascript
+
+```
+
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
-```javascript
-
-```
-
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
+```javascript
+
+```
+
+- video :
 ```javascript
 
 ```
 
 
-- video : 
-```javascript
-
-```
-
-- video : 
-```javascript
-
-```
-
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
+```javascript
+
+```
+
+- video :
+```javascript
+
+```
+
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
-```javascript
-
-```
-
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
+```javascript
+
+```
+
+- video :
 ```javascript
 
 ```
 
 
-- video : 
-```javascript
-
-```
-
-- video : 
-```javascript
-
-```
-
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
+```javascript
+
+```
+
+- video :
+```javascript
+
+```
+
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
-```javascript
-
-```
-
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
+```javascript
+
+```
+
+- video :
 ```javascript
 
 ```
 
 
-- video : 
-```javascript
-
-```
-
-- video : 
-```javascript
-
-```
-
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
+```javascript
+
+```
+
+- video :
+```javascript
+
+```
+
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
-```javascript
-
-```
-
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
+- video :
+```javascript
+
+```
+
+- video :
 ```javascript
 
 ```
 
 
-- video : 
-```javascript
-
-```
-
-- video : 
-```javascript
-
-```
-
-- video : 
+- video :
 ```javascript
 
 ```
 
 
-- video : 
-```javascript
-
-```
-
-
-- video : 
-```javascript
-
-```
-
-
-- video : 
-```javascript
-
-```
-
-
-- video : 
-```javascript
-
-```
-
-- video : 
-```javascript
-
-```
-
-
-- video : 
-```javascript
-
-```
-
-
-- video : 
+- video :
 ```javascript
 
 ```
