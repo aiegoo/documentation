@@ -599,13 +599,16 @@ Go to network connections menu and make sure that the Service Order is set highe
 
 ## Installation hints
 
-### Antenna Orientation
+> Antenna Orientation
+
 Orientation of the antennas is vital. Ground module has high gain 5 dBi antennas with a vertical plain radiation pattern is ~40 degrees. Therefore, antennas on the ground module should be placed vertically. If you want the system to be less reliant on antenna orientation then antennas should be changed to lower gain antennas (2-5 dBi). They will yield a lower range but will be less dependent on the orientation of antennas.
 The image below demonstrates the relation between antenna gain, radiation pattern and range:
 ![image](https://user-images.githubusercontent.com/42961200/151637427-14d69332-4bff-4fce-a6fd-cc61e7f6c740.png)
 
 For a solid connection the copter should stay in the blue area. In this example, the range is anywhere in the 2 dB antenna blue circle. 9 dB antenna has a reduced area but a longer range for certain directions. Same rules are applied to antennas on copters, whose antennas are 3 dBi by default and should be placed vertically down (cable from antenna facing up to the sky). Another thing to consider for longer range - ground module should be placed higher off the ground. At least one meter is required but there is a significant difference between 1 meter and 2 meters off the ground; the higher the better! 1.50 - 2.00 meters is recommended.
-Frequencies
+
+> Frequencies
+
 The system operates at 2.4 GHz, therefore, it's recommended to keep 2.4 GHz band free from other devices.
 
 ## cad model
