@@ -4126,6 +4126,161 @@ And if you see this you're good to go when you've successfully installed drone k
 
 - video 32 : Function to connect python script to sitl drone part1
 ```javascript
+OK so in the last video we downloaded the drone kit Python packages to our system and this video we're
+
+going to start messing around drumkit a little bit and we're going to make our first function that will
+
+be designed to connect our drunk get scripts to our vehicle of interest in this function that we make
+
+will be used in all of the following scripts that we make.
+
+So let's pull up a terminal let's navigate to course route and let's make a new directory called DK
+
+or Donkey Kong of course and let's make a new file called connection underscore template will enter
+
+into that by typing it in and the name of the file.
+
+So here we're in our file and get it at the top.
+
+Let's include some dependencies that will need to run our file.
+
+So we're importing a bunch of functions from the drone kit package that we installed in the last video
+
+and we'll get into these in more detail as we use them.
+
+And here we're we're importing a bunch of standard python packages that we'll be needing.
+
+And then this one you might not be familiar with it's called Art parse.
+
+It essentially allows us to input some values from the command line and use them in our drone kit script
+
+write Python script.
+
+So let's make our function let's call it connect my cocher and the first thing we're going to do and
+
+connect my copter is capture the IP address that we want the script to connect to and we'll do that
+
+by using our parse code.
+
+The first thing we do is make a parser object and then once we have this parser object we can make some
+
+new options that we can start this connection template file with.
+
+So we will do parser add argument and then dash dash connect we'll call our option dash dash connect.
+
+And what this allows us to do is specify an IP address or some string after this dash dash connect option.
+
+We can capture that value by typing partnered up parse args and saving that to a variable called args
+
+and we can capture the specific value after dash dash connect option by typing ARGs that connect then
+
+we'll save that to this variable called connection string.
+
+So at this point we'll have the IP address that we specified at the startup of the script.
+
+Let's do a little mock run with an impromptu terminal.
+
+This is my terminal here.
+
+So this would be normally how you start a python file you just type python and the name of your python
+
+file.
+
+But now that we've added this option we can actually start the file like this where you can add this
+
+dash dash next option and then the value that we want to pass in for this option and then we can capture
+
+this value that we pass in by typing args connect and we'll save that value to the variable connection
+
+string.
+
+So in this example connection string would be equal to this IP address here so once we have the IP address
+
+that we want to connect to we can use a drone kit function to connect to our vehicle and return a vehicle
+
+object.
+
+So here's architect function that takes as input the IP address that we want to connect to and so we're
+
+specifying a connection string that we captured in the previous step and then we specify this wait ready
+
+equals true portion.
+
+And this just means that this we don't want the script to continue in execution until it is true that
+
+we have successfully connected to our drone which is nice because maybe after this we'll have some command
+
+to tell the drone flying in the air but that won't do anything if we don't have a connection already.
+
+And this connect function will then return a vehicle object and it's an object just like any other object
+
+oriented programming language it has a bunch of functions and methods that we can call on this vehicle
+
+object that we'll be able to control the drone and command the drone in various ways.
+
+That's just our model vehicle in the python script.
+
+And then we will return that vehicle object to the outside of whatever call this connect my copter function.
+
+So let's call this connect my copter function will say vehicle equals connect to my copter and it will
+
+return a vehicle object to our vehicle variable.
+
+So at this point we'll have the model of our drone in Python and we'll be able to do a bunch of cool
+
+stuff with it.
+
+So let's test this script out and see if we can actually connect to a vehicle.
+
+So let's save it and let's pull up a terminal and remember we need a Siddall vehicle to connect to.
+
+So we'll launch a Siddall vehicle with the sim vehicle.
+
+Cool.
+
+Let's go to course route and then A.P.M. and R2 pilot and then R2 copter and let's call Simbi a call
+
+and remember sim vehicle is going to launch a port at 14 5 5 0 that the drone is listening on that port
+
+to specify the IP address that we want our connection template file to connect to then we can verify
+
+that it's listening on that IP address by scrolling up to the output of the sim be a cool tool and see
+
+right here.
+
+So this will be the IP address that we connect to.
+
+So let's pull up another terminal and let's go to drone pit.
+
+And if the and if that connection template file isn't there.
+
+It's in the course root directory so we'll just move the connection template from the coarse root directory
+
+to our drumkit directory.
+
+All right.
+
+There it is.
+
+OK so let's launch this python file first we're typing Python and then connection with that pie.
+
+Now we need to specify the IP address to connect to when we use our dash dash connect our parse option
+
+and now we need the IP address and we'll use this one right here and then we'll enter ok cool.
+
+So this script we made just successfully input this IP address to the file it connected to the vehicle
+
+and it successfully found that the Siddall vehicle we were using is using the A.P.M. copter software
+
+version three point five point five.
+
+And also recognize that the frame pipe was a quad copter.
+
+So this verifies that we successfully connected our script to our Siddall vehicle.
+
+And now that we have this basic functionality we'll be able to do some cooler stuff later on in subsequent
+
+videos.
 
 ```
 
