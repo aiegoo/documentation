@@ -62,9 +62,9 @@ All Sky-Drones software is free to use! Software integrations from our partners 
 Sky-Drones provides its users with a comprehensive set of leading drone avionics, entirely designed and manufactured in the UK:
 
 
-​*  SmartAP Airlink - the most advanced AI drone flight controller;
+* ​ ​ SmartAP Airlink - the most advanced AI drone flight controller;
 
-​*  AIRLink Telemetery System - broadband AES-256 encrypted digital datalink for 20km;
+* ​ ​ AIRLink Telemetery System - broadband AES-256 encrypted digital datalink for 20km;
 ​
 *  SmartLink - broadband digital datalink with an onboard computer and LTE option for third-party autopilots;
 
