@@ -4114,15 +4114,9 @@ And as you can see here you can access attributes by simply dotting the vehicle 
 
 So we have our vehicle we can dot version that and that will tell us the pilot version that we're using on our vehicle.
 
-We can say vehicle got location that global relative frame and this will return to us a waypoint object
+We can say vehicle got location that global relative frame and this will return to us a waypoint object and latitude longitude and altitude coordinates so we can see where our drones at in the world
 
-and latitude longitude and altitude coordinates so we can see where our drones at in the world we can
-
-say vehicle that attitude and see the current roll pitch and the status of our vehicle or maybe the
-
-velocity that our drone is moving at and the Northeast down frame by typing vehicle velocity we can
-
-get access to how long ago we received our last heartbeat message from the vehicle we're connected to.
+we can say vehicle that attitude and see the current roll pitch and the status of our vehicle or maybe the velocity that our drone is moving at and the Northeast down frame by typing vehicle velocity we can get access to how long ago we received our last heartbeat message from the vehicle we're connected to.
 
 And that will be in seconds is underscore Carnival tells us if our system is OK to start spinning the
 
