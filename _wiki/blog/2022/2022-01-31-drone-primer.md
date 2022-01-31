@@ -4062,19 +4062,13 @@ Now let's start our script again by typing python in the name of the pile.
 
 But this time was not specified dash dash connect.
 
-And if we do this will launch a Siddall instance directly from our file and there we go our script recognize
+And if we do this will launch a Siddall instance directly from our file and there we go our script recognize that we didn't pass in an IP address so it booted a Siddall instance for us.
 
-that we didn't pass in an IP address so it booted a Siddall instance for us.
-
-And we're seeing here some information about our civil vehicle that it launched is using the A.P.M.
-
-copter version 3:43.
+And we're seeing here some information about our civil vehicle that it launched is using the A.P.M. copter version 3:43.
 
 Also a quad copter and some various firmware information.
 
-So this is a handy modification that we've made to the connection template so that we don't have to
-
-deal with all that manual work later on.
+So this is a handy modification that we've made to the connection template so that we don't have to deal with all that manual work later on.
 
 ```
 
