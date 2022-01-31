@@ -6186,7 +6186,159 @@ a positive number into the velocity component for the z and it.
 
 - video 46 : function to control yaw of drone
 ```javascript
+OK so now we're going to figure out how to control the drones.
 
+Yeah.
+
+And we're going to make a function that will do just that.
+
+But similar to the velocity based movement we have two different frames of reference that we can use
+
+to condition the of the drone.
+
+And believe it or not I drew this circle by hand by.
+
+So we have this compass and let's say it's oriented with respect to the earth.
+
+So this is true north through south west or east.
+
+So in the global reference the top is 0 degrees south is 180 degrees west is to 70 degrees and east
+
+is 90 degrees
+
+and the top can also be 360 degrees.
+
+So we can command the drone on this global frame if we want.
+
+We can say a drone moved to 270 degrees in the true frame of reference.
+
+We can also command the drone to move relative to where it's currently at.
+
+So let's say the drone was currently facing this direction right here.
+
+And let's call this one hundred forty degrees.
+
+We could tell the drone to move 30 degrees relative to where it's currently at.
+
+Now we're at around 170 degrees and you can tell the drone to move to a positive degree but you can't
+
+pass in a negative number.
+
+So you actually have to change the maverick message that we're using to rotate in the opposite direction.
+
+What you essentially do is change a parameter to change the positive direction of movement.
+
+For now just know that we have those two different frames of reference.
+
+So let's pull up a terminal and start making our your function and let's copy our basic template and
+
+call it your control and then edit into it.
+
+Now let's go back to the very top and add Mabu to.
+
+All right.
+
+Now let's make our new function and let's call it condition underscore ya.
+
+And we're going to pass in two different variables.
+
+One is degrees and the other we'll call relative.
+
+And this will be a one if we want to use the relative direction of travel in a G-0 if we want to use
+
+absolute angles.
+
+And you'll notice it looks pretty similar to when we were using the velocity functions where we have
+
+a message factory where we're making our own Magelang message and we're saving it under the variable
+
+name message and we're sending that message out to the drone via the send Madelin command and the degree
+
+is we pass into the condition your function get placed right into here right there.
+
+And the frame of reference we're using gets placed here.
+
+So this is how our variables change the dynamics of the Mallik message that gets created.
+
+And here you can change the direction of the positive rotation.
+
+So we have a one here if we want clockwise rotation to be positive and we can place a negative here
+
+if we want counter-clockwise to be the positive rotation we actually can't pass in a negative degrees.
+
+We have to change the rotation by changing this rate here.
+
+But for simplicity we're just going to leave it at a one Braunau And there's another weird thing about
+
+Kit which is this condition your function won't work until we have used a dummy command to fly the drone
+
+to the same place that it's already located.
+
+And we'll just call this function dummy initialiser and we're essentially just making the drone fly
+
+to where it currently is.
+
+And then after we have called this dummy initialiser we can use our condition function normally.
+
+OK so let's get into using it.
+
+So here we go.
+
+We are arming and taking off the 10 meters and we're going to call our dummy initialiser here and then
+
+we're going to sleep for two seconds and that will let us actually be able to use our condition your
+
+function.
+
+All right now we're here at condition ya know we're going to pass in 30 degrees in a one so the one
+
+means we're using the relative frame of reference.
+
+So we're going to rotate 30 degrees relative to where we currently are.
+
+So if we start at 180 degrees we're going to rotate at 210 degrees.
+
+Now let's call the condition your function again but this time let's pass and a zero for the reference
+
+system we want to use.
+
+Now let's make the drone rotate to zero degrees which will make the drone rotate to true north.
+
+And then just to drive the point home let's do condition again and pass and 270 degrees with the Zero
+
+where our reference system so it should move to True West and let's save this.
+
+And pull up at terminal and go ahead and try it out.
+
+Type launch Siddall and then your control.
+
+All right now our drone is launching.
+
+Here is our drone.
+
+We start at 180 degrees so pointed in the south direction.
+
+So we should with our first command moved to 210 degrees because we're moving 30 degrees relative to
+
+where we currently are rising and altitude right now.
+
+Marine yawing to 30 degrees relative to where we were.
+
+All right.
+
+Perfect.
+
+So we're at 210 degrees now.
+
+The next stop is moving to true north as we passed in zero degrees to rotate to in the global reference.
+
+Now we're moving to True West.
+
+We told the drone to move between it's 70 degrees and the global reference.
+
+And there you have it.
+
+That is how you do basic yawning in drone kit.
 ```
 
 ### section 7
