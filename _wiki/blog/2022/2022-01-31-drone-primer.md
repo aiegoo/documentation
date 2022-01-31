@@ -4527,7 +4527,215 @@ So the next video we're going to get into setting the values of attributes inste
 
 - video 35 : attributes part 2
 ```javascript
+All right.
 
+So in the last video we got introduced to attributes a little bit and how he can read in attributes
+
+that get sent values from the already pilot code base and this video we're not only going to read attribute
+
+values but we're going to write to attribute values.
+
+So at the end of this video we'll be able to know how to change our flight mode of the drone that we're
+
+connected to.
+
+So let's get started.
+
+Pull up a terminal
+
+and go to the course directory and let's go into the and that's copy again.
+
+Connection template and let's call this new file mode underscore setter up PI and then we'll get it
+
+into Mode's center that by all right.
+
+So here we are again we have our vehicle API all ready to go into the product code base.
+
+So we know that we can read attribute values but we can actually go one step further than that and we
+
+can perform some logic.
+
+All of the values of our attributes that we're reading so we know about the vehicle that is farmable
+
+parameter and this going to be it's a boolean which is equal to true if the vehicle can be armed and
+
+the props can start spinning and it's going to be equal to false.
+
+If there's some subsystem that is not allowing the drone to start flying.
+
+So we don't want our code to progress until our vehicle is good to go and it can be armed.
+
+We can make some logic off of this to stop the script from executing further until our vehicle is Armah
+
+Bowl OK.
+
+So here we go.
+
+We're saying while a vehicle that is arm of will is not equal to true then or now.
+
+So the terminal waiting for a vehicle to become audible and wait for one second.
+
+So this code is going to loop while his arm Bell is equal to false.
+
+And then once it's equal to true this while block will exit out it will break and we'll be at this point.
+
+And we know our vehicle is now our mobile now that we know that our vehicle is operable.
+
+Let's get into setting some of the attributes to values that we want.
+
+One of those attributes we can set is the vehicle that mode attribute.
+
+So let's switch our vehicle from stabilized flight mode to guided flight mode and we can do that with
+
+the following code will say vehicle up mode which is the name of our attribute set that equal to vehicle
+
+mode and then guided in double quotes this vehicle mode was included as a part of the drone kit package
+
+at the top.
+
+The Apple mode here but we can't think of attributes as variables because variables you can set to a
+
+value and immediately afterwards the value has been updated to that variable.
+
+Such is not the case with our attributes because we're actually sending requests to the firmware to
+
+execute on our request.
+
+So when we say vehicle that mode set that equal to guided mode we have to do under the hood is package
+
+up a maverick message that tells the pilot that we want our drone to be in guided flight mode.
+
+We have to send that through our connection to the Arta pilot code base the art firmware and Arti pilot
+
+has to parse that maverick message and then call the correct code in order to accurately switch the
+
+drone into guided flight mode.
+
+So all that takes some time.
+
+But the vehicle that moët attribute won't get updated to guided until Ardi pilot sets it for us because
+
+remember our vehicle object is an API into the pilot.
+
+So that means that people that mode will not instantaneously get set to guided mode.
+
+So we have to use another while block to pull the current state of the flight mode to not progress until
+
+our request has been met.
+
+The Arta pilot software so we can do so we can perform this while block right here which will read the
+
+current attribute value of equal that mode every iteration.
+
+So every iteration it's requesting from the pilot to get the latest flight mode that the vehicle is
+
+set to and if it's not equal to guided then we're going to loop through this while loop and we're going
+
+to wait one second.
+
+We're out to the console every time waiting for drone to enter guided flight mode.
+
+And then once the pilot finishes setting the vehicle flight mode to guided then vehicle mode will be
+
+equal to guided.
+
+And this while loop will break.
+
+At which point the code will progress.
+
+So we'll notify the consul arts or drone as arm of all our flight mode is now in guided mode and we
+
+know that guided mode is a white mode that can accept Magelang commands as input for movement.
+
+Now it's arm the drone.
+
+Let's make the props start spinning.
+
+We saw in the previous video that we have the vehicle that armed attribute.
+
+So what we can do is set the attribute equal to true.
+
+But again just like when we set the vehicle that mode equal to guided flight mode there is some latency
+
+involved with setting the armed attribute to true cause we have to wait for the pilot firmware to execute
+
+on our request to arm the drone.
+
+So that means that vehicle that armed will be equal to false for a couple seconds after we set this
+
+vehicle armed request true.
+
+So we'll need another while block.
+
+So we'll use this while black here to block the code downstream from this from continuing until our
+
+vehicle armed is set equal to true.
+
+So every iteration will read in the attribute be that armed and if it's still equal to false then we'll
+
+stay executing in the code.
+
+And then once the Arctic pilot firmware updates the vehicle armed attribute to true indicating that
+
+the props are actually now spinning then this will be true and this won't be equal to false.
+
+So this while loop will break out and we'll be able to continue with the execution of our code.
+
+So really just want to drive this point home when you set the value of attributes.
+
+It's it's not like a variable where the value you set it to is instantaneously updated.
+
+You have to wait.
+
+You are already pilot to update that attribute.
+
+So think of setting attributes as requests not variable setting.
+
+Let's pull up a terminal and we'll go to a corkscrew and DK and let's start our most Python script let's
+
+say python mode setter.
+
+All right so here we go getting connected to our drone or kept my copter function has successfully connected
+
+to a drone.
+
+OK so we're waiting for people to become audible.
+
+So it's currently not armed we're in this while loop Nichols now armed
+
+OK so we can see right here waiting for vehicle to become farmable.
+
+So we're in this while loop for.
+
+It looks like five iterations.
+
+So for five seconds our vehicle was not mobile.
+
+And then eventually firmware updated this attribute to true which broke out of this while loop and we
+
+saw this vehicle is now arm will print to the screen.
+
+Then we switched into guided flight mode and we waited for our pilot to satisfy our guided flight mode
+
+request and as we can see waiting for Joan to enter guided flight mode.
+
+So it took about one second or two pilot to set the flight mode to guided mode and then it broke out
+
+once the vehicle mode was updated to guided by the pilot firmware.
+
+Now that we're in guided mode and then we requested that the prop start spinning by setting the by requesting
+
+the vehicle the arm attribute equal to true.
+
+And it took Let's see four iterations for the pilot to actually start spinning the props.
+
+So for four seconds the props weren't spinning.
+
+After our initial request and then eventually vehicle the armed was equal to true this while loop was
+
+broken and this was printed out to the console look out virtual props are spinning indicating that our
+
+drone is now spinning its motors
 ```
 
 - video 36 : parameters in dronekit
