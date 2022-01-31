@@ -5643,13 +5643,377 @@ on an economist mission.
 
 - video 43 : autonomous dronekit mssion with auto mode
 ```javascript
+What's going on.
 
+So in this video we're going to see what the auto flight mode does in practice on our Siddall drone.
+
+We're going to make our first auto mission that's going to fly to a couple of waypoints around the Green
+
+Bay Packers field Thomas Lee without input from the guided flight mode and the core new drone function
+
+we're going to be looking at is the command function.
+
+And if you remember a mission is a list of commands.
+
+Will these command objects that we make are going to constitute the different commands that make up
+
+the list.
+
+So the command takes a bunch of arguments as you can see here a lot of these though never change.
+
+So the first three are normally always going to be zero.
+
+That is essentially our coordinate system that we're using.
+
+So are we using the northeast down frame where north is true north and south is true south.
+
+Or are we using some sort of a relative frame when North is the front of the vehicle and south is the
+
+back of the vehicle and then the next argument we pass is the Madlang command which we look at those.
+
+And the last video we're primarily going to be looking at map command nav waypoint and map command return
+
+to launch and then current waypoint and auto continue are typically both always zero.
+
+And then we have these programs and as we saw in the last video the Depending on what command that we
+
+use We're going to have some harams that we have to fill out.
+
+So here for the map command that waypoint we have three Paramo that we have to fill out and it's 5 6
+
+and 7 and PRAnd 5 is the latitude longitude and seven is the altitude.
+
+So this command would tell the drone to fly to this waypoint in three dimensional space.
+
+But pull up a terminal and go to course.
+
+And then drumkit OK.
+
+Now let's copy basic template and let's make a new file called auto mission OK and we'll get it into
+
+that and then we'll go to the very top and we're going to include a function that's going to be the
+
+command function from Joan kit.
+
+And we're also going to say from PI Madlang import mabbe still but to understand this Mabee till let's
+
+think back to when we learned about map link.
+
+And we went around the standard enemies and messages that are available.
+
+Well this map still is basically a python version of the standard messages and enemies that we saw on
+
+the map link main web site and we'll see why that is useful through the progression of this video.
+
+Let's make a waypoint object that is the home location of our drone before it took off.
+
+And we remember what this is we're using attributes to record the current location of the drone and
+
+saving that waypoint object under the weight point home variable name.
+
+Now let's make our first command object will say CMT One equals command and then we'll set it equal
+
+to all of the input variables that the command function takes.
+
+OK.
+
+These first three are going to be zero.
+
+And then here this fourth field is going to be the frame of reference that our drone is using.
+
+And this is where we use our map still.
+
+So we'll say map you till that map link.
+
+And now we're going to specify the frame of reference that we're using.
+
+So map frame global relative Allt that will be our frame of reference.
+
+And then a comma.
+
+And now we specify the command that we want to use.
+
+So again we'll say mabbe you till that map blank map command that way point and then current waypoint
+
+and auto continue will be 0 and ram 1 through 4 will be zero.
+
+And the only way points we have to worry about are 5 6 and 7 and we can verify that by checking the
+
+documentation for map command that halfway point at this link right here.
+
+OK.
+
+Now we have our first basic command.
+
+And I'll just make a basic simple mission out of it just for fun the first thing we have to do is download
+
+the current list of commands from the drone that we're connected to and we do that by typing CMD or
+
+whatever you want to name it equals vehicle that commands and then we can type in that gives us an object
+
+and then we can download the current commands that are on our drone and then we can say wait ready.
+
+So don't go further in the code until we have successfully downloaded those commands from our drone
+
+and now once we have those commands we're going to clear them out with the dumb clear function.
+
+And now that that mission has been wiped out we can add in our own commands to make our own mission.
+
+And then we can do that with typing CMBS ad and then the command object that we made.
+
+And then once our list of commands is set up we can just see beagle that commands upload and that list
+
+of commands that we made will then get sent to the drones firmware and stored on the drones hardware.
+
+And then any the drone switches into auto mode it will execute on those commands sequentially to fulfill
+
+the mission.
+
+But this would be a pretty boring mission.
+
+So we'll make three more commands and we'll add a couple other waypoints that the drone will fly to
+
+OK.
+
+So our first command we're flying to just the current waypoint so the drone won't move at all it's just
+
+sort of a dummy command.
+
+And then the second command is also a Gnab waypoint command.
+
+And we're going to actually fly to a different GPS coordinate.
+
+We're going to raise the altitude of 15 meters and then after that we'll fly to another waypoint we'll
+
+drop the out to back 10 meters then once we get to this waypoint we'll switch to RTL mode by using the
+
+map command NAV return to launch command.
+
+And that doesn't require any other parameters.
+
+So this will be our basic mission.
+
+And just to verify that the map command nav waypoint command only needs those three parameters.
+
+You can go back to that Arti pilot documentation page and then quicken to map command that waypoint
+
+again and we'll see again that ramp 5 6 and 7 represent latitude longitude and altitude.
+
+Remember our Siddall drone will launch from the 50 yard line of Packer stadium is GPS coordinates make
+
+the drone fly around the Packers stadium and I again found these GPS coordinates at this Web site.
+
+I typed in the Packer address and you can click on the map and you'll get different latitude and longitude
+
+coordinates.
+
+And now that we've added three more commands we need to add those to our commands list.
+
+So we'll add those here.
+
+And at this point the complete mission command 1 through 4 will be uploaded to the drone.
+
+But the drone won't automatically execute this mission.
+
+We have to make sure it's an auto mode but before we switch and auto mode let's arm and take off and
+
+guided mode to get it flying to around 10 meters and then we'll switch into auto mode once it's in the
+
+air.
+
+All right.
+
+So we have our arm and take off 10.
+
+And then once we're in the air we're after Armond take off we'll switch the vehicle mode to auto mode
+
+and the thing to note here is our Python script gets to continue an execution while our drone is executing
+
+its mission.
+
+So when we're in guided mode remember we had to continuously pull where the drone was relative to where
+
+we wanted to be.
+
+And then the code could get executed until the location tracking while block was broken out of.
+
+Well that is not the case when auto mode so an auto mode will switch into auto mode.
+
+Drone will keep flying its mission and this code will get executed while the drone is doing its mission.
+
+OK so let's save this and let's see if it works let's go back to Horseshoe DK and we'll type launch
+
+Siddall and then we'll type auto mission.
+
+All right.
+
+So drone is loading up.
+
+Hugh Grant is getting ready.
+
+OK so now we see our drone here.
+
+And these are our mission objects are commands that the drone will run
+
+and we know and we remember the first command it flies to its current location.
+
+So that's why we see a one here and the second command is to fly to this point the green.
+
+Now we're indicating that waypoint replying to this is Command object number to and now he's made it
+
+to this waypoint so we're flying to the third waypoint.
+
+Our third command and our object list that shows you how the auto mode is a little different than the
+
+guided mode because you still have the reins of your python script while the drones executing its mission.
 ```
 
 
 - video 44 : velocity based movement and NED sign convention
 ```javascript
+All right so we're getting pretty rehearsed in the arts of location based movement be it with guided
 
+flight mode where we specify a waypoint to fly to or with the auto flight mode where we put waypoints
+
+we want to fly to you in a mission.
+
+Now we're going to get into a different form of moving the drone and that is with velocity based movement.
+
+But before we do that we have to thoroughly understand the frames of references that we use for the
+
+drone and frames of references can just be thought of how we orient our three dimensional coordinate
+
+system and 3-D space.
+
+Is it global meaning relative to the earth where true north is always true north and west is our True
+
+West and stuff like that.
+
+Or is it local or relative to the body of the drone.
+
+So North will be relative to where the front of the drone is.
+
+So if that doesn't make sense I'm going to summon my inner Sal Khan to try and make sense of it with
+
+pictures.
+
+OK so we have this are three dimensional coordinate system here.
+
+We have our x axis which we're going to call north south axis as well.
+
+We have our y axis which is west east axis and we have our z axis which is our up and down axis.
+
+Each one of these axes needs a plus and a minus side and that's where the sign convention of the Ned
+
+comes into play.
+
+So every letter that is represented in red represents the positive side of the axis.
+
+So since we know North is in this direction we know this side is positive x and then going on to the
+
+y axis.
+
+Since he is in Ned we know that this side the east side is the positive y side and for the up down axis
+
+the z axis we have a D here.
+
+So we know that down is actually positive Z and B minus C.
+
+So if we had a velocity vector here with x y and z components and we specified the following velocity.
+
+This doesn't mean anything until we specify what frame of reference for using And here using the global
+
+frame of reference.
+
+And this just means that the axes are permanently oriented with respect to the earth.
+
+So this X-axis will always represent true north and true so this y axis will always represent true east
+
+and west and the Z axis will always represent up and down.
+
+So now that we know our frame of reference we can draw out our components of our velocity vector here
+
+on our coordinate system.
+
+So we have a one for X.
+
+And since this is a positive one we know that we are on the north side of the axis so this will be our
+
+north side vector for the x component.
+
+Now for the why we have a minus 1 so a plus one would be pointing to the east for the y component.
+
+So a minus one must be pointing to the west.
+
+So this would be our y component be pointing to the west and the last one we have minus one Brosy So
+
+a plus one would be pointing in the down direction.
+
+So a minus one must be pointing in the direction.
+
+So this would be our z component OK.
+
+Let's say we changed frames of reference and we kept the same velocity vector.
+
+So we're no longer in the global frame of reference.
+
+Now we're in the local frame of reference and this local frame of reference means we orient north and
+
+south and west and east axes according to the front of the drone and here will say this black triangle
+
+is our drone and the arrow is pointing in the direction of the drone.
+
+So since we know that North on the local frame of reference system points to the front of the drone.
+
+This now is north and the relative local frame making this sound and that means these wives are actually
+
+X-ists.
+
+So we have a minus X on this side and a plus X on this side.
+
+OK.
+
+Well that will make this site east in this site West OK.
+
+So we'll change that as well.
+
+East and we know that East means a plus Y.
+
+So we'll Friday plus Y.
+
+This is West
+
+making this a minus Y and the up and down axis actually doesn't change from global to local frames of
+
+reference so we're good there.
+
+So now let's map our same velocity vector to a different frame of reference.
+
+So one for X we have a positive number.
+
+So we're pointing in the north direction.
+
+And since we have reorganized our coordinate system to be north relative to where the drones front of
+
+the vehicle is.
+
+This is now our x component of the velocity.
+
+This is north.
+
+Now our y component.
+
+We have a minus one.
+
+So that means it should be pointed in the west direction.
+
+So we have a component over here for our y component and right here the Z.
+
+We have a minus one indicating that we go up.
+
+So those are the two different frames of reference that we can use to move the drone around three dimensional
+
+space.
 ```
 
 
