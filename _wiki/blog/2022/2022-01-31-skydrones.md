@@ -308,169 +308,67 @@ This page describes general information and interface location of SmartAP AIRLin
 Left side
 ![image](https://user-images.githubusercontent.com/42961200/151563139-78033ef9-4f28-4e96-ae24-da9b150739eb.png)
 
-Left side
-Power input with voltage & current monitoring
-AI Mission Computer micro SD card
-Flight Controller micro SD card
-AI Mission Computer USB Type-C
-PPM input, SBUS output, RSSI monitor
+- Left side
+     - Power input with voltage & current monitoring
+     - AI Mission Computer micro SD card
+     - Flight Controller micro SD card
+     - AI Mission Computer USB Type-C
+     - PPM input, SBUS output, RSSI monitor
 
 > POWER - JST GH SM10B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-12V
-IN
-+12V
-Main power input
-2
-12V
-IN
-+12V
-Main power input
-3
-12V
-IN
-+12V
-Main power input
-4
-BAT_CURRENT
-IN
-+3.3V
-Battery current monitoring
-5
-BAT_VOLTAGE
-IN
-+3.3V
-Battery voltage monitoring
-6
-3V3
-OUT
-+3.3V
-3.3V output
-7
-PWR_KEY
-IN
-+3.3V
-Power key input
-8
-GND
-​
-​
-Ground
-9
-GND
-​
-​
-Ground
-10
-GND
-​
-​
-Ground
+
+|---
+| Pin number | Pin name | Direction | Voltage level | Function
+| 1 | 12V | IN | +12V | Main power input
+| 2 | 12V | IN | +12V | Main power input
+| 3 | 12V | IN | +12V | Main power input
+| 4 | BAT_CURRENT | IN | +3.3V | Battery current monitoring
+| 5 | BAT_VOLTAGE | IN | +3.3V | Battery voltage monitoring
+| 6 | 3V3 | OUT | +3.3V | 3.3V output
+| 7 | PWR_KEY | IN | +3.3V | Power key input
+| 8 | GND | ​| ​| Ground
+| 9 | GND | ​ | ​ | Ground
+| 10 | GND | ​ | ​ | Ground
 
 - CPU SD card - microSD
 - CPU USB - USB Type C
 - RC Connector - JST GH SM06B-GHS-TB
 
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-5V output
-2
-PPM_IN
-IN
-+3.3V
-PPM input
-3
-RSSI_IN
-IN
-+3.3V
-RSSI input
-4
-FAN_OUT
-OUT
-+5V
-Fan output
-5
-SBUS_OUT
-OUT
-+3.3V
-SBUS output
-6
-GND
-​
-​
-Ground
+|---
+| Pin number | Pin name | Direction | Voltage level | Function
+| 1 | 5V | OUT | +5V | 5V output
+| 2 | PPM_IN | IN  | +3.3V | PPM input
+| 3 | RSSI_IN | IN | +3.3V | RSSI input
+| 4 | FAN_OUT | OUT | +5V | Fan output
+| 5 | SBUS_OUT | OUT | +3.3V | SBUS output
+| 6 | GND | ​| ​| Ground
 
 - FMU SD card - microSD
 Right side
 ![image](https://user-images.githubusercontent.com/42961200/151563391-80723ea6-08c0-4a32-8f25-e839058781bf.png)
 
-Right side
-Ethernet port with power output
-Telemetry port
-Second GPS port
-Spare I2C / UART port
-Flight controller USB Type-C
-Micro SIM Card
-HDMI input port (payload camera)
+- Right side
+     - Ethernet port with power output
+     - Telemetry port
+     - Second GPS port
+     - Spare I2C / UART port
+     - Flight controller USB Type-C
+     - Micro SIM Card
+     - HDMI input port (payload camera)
 
 > ETHERNET - JST GH SM08B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Radio module power supply
-2
-5V
-OUT
-+5V
-Radio module power supply
-3
-ETH_TXP
-OUT
-+3.3V
-Ethernet transmit positive
-4
-ETH_TXN
-OUT
-+3.3V
-Ethernet transmit negative
-5
-ETH_RXP
-IN
-+3.3V
-Ethernet receive positive
-6
-ETH_RXN
-IN
-+3.3V
-Ethernet receive negative
-7
-GND
-​
-​
-Ground
-8
-GND
-​
-​
-Ground
+
+|---
+| Pin number | Pin name | Direction | Voltage level | Function
+| 1 | 5V | OUT | +5V | Radio module power supply
+| 2 | 5V | OUT  | +5V | Radio module power supply
+| 3 | ETH_TXP | OUT | +3.3V | Ethernet transmit positive
+| 4 | ETH_TXN | OUT | +3.3V | Ethernet transmit negative
+| 5 | ETH_RXP | IN | +3.3V | Ethernet receive positive
+| 6 | ETH_RXN | IN | +3.3V | Ethernet receive negative
+| 7 | GND | ​ | ​ | Ground
+| 8 | GND  | ​ | ​| Ground
+
 Ethernet interface is decoupled with capacitors. Ethernet cable should be twisted to reduce EMI noise. Shorter cables are recommended for increased performance and higher bandwidth of the interface.
 
 > TEL3 - JST GH SM06B-GHS-TB
@@ -799,25 +697,25 @@ AIRLink Set content
 
 
 SmartAP AIRLink set includes everything needed to setup the system and get prepared for the flight. Standard set contains:
-1x AIRLink Enterprise unit
-1x FPV camera with CSI cable
-1x WiFi antenna with MMCX connector
-2x LTE antenna with MMCX connector
-1x HDMI to mini HDMI cable
-1x set of cables (7 cables for all connectors)
-1x JST-GH to Ethernet RJ45 dongle
+- 1x AIRLink Enterprise unit
+- 1x FPV camera with CSI cable
+- 1x WiFi antenna with MMCX connector
+- 2x LTE antenna with MMCX connector
+- 1x HDMI to mini HDMI cable
+- 1x set of cables (7 cables for all connectors)
+- 1x JST-GH to Ethernet RJ45 dongle
 
 
 > AIRLink Telemetry set content
 AIRLink Telemetry provides broadband AES-256 encrypted private channel for 20km. If LTE connectivity is sufficient for your applications then you don't need AIRLink Telemetry set.
 ![image](https://user-images.githubusercontent.com/42961200/151564557-5c7d3f23-88af-4226-b6f2-b0989b6c1fe4.png)
 
-1x Ground module
-1x Air module
-2x Ground module antennas
-2x Air module antennas
-1x Telemetry cable
-1x Ground module power cable
+- 1x Ground module
+- 1x Air module
+- 2x Ground module antennas
+- 2x Air module antennas
+- 1x Telemetry cable
+- 1x Ground module power cable
 
 ## Installation
 Let's install and setup SmartAP AIRLink
