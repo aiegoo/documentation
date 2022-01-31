@@ -229,7 +229,7 @@ Then attach the power supply cable and autopilot telemetry cables:
 What the air module should look like with power and telemetry cables connected:
 
 {{site.data.alerts.callout_info}}
-Red cable in the autopilot telemetry cable is 5V power supply from SmartLink to Autopilot. If your autopilot is powered from its own power supply then remove the red cable. In this case you should only used black (GND) and yellow / green (Data TX / RX). {::nomarkdown} <pre>By default, the whole cable is supplied without the red cable.</pre>{:/}
+Red cable in the autopilot telemetry cable is 5V power supply from SmartLink to Autopilot. If your autopilot is powered from its own power supply then remove the red cable. In this case you should only used black (GND) and yellow / green (Data TX / RX). <pre>By default, the whole cable is supplied without the red cable.</pre>
 {{site.data.alerts.end}}
 ![image](https://user-images.githubusercontent.com/42961200/151635982-94013e37-5afd-4703-a370-6785e3e3df17.png)
 
