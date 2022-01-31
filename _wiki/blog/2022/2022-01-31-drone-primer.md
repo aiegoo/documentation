@@ -3679,29 +3679,21 @@ After this we can fill out the value we want to set the parameter to with the br
 
 And finally we can specify the type of the parameter and then all of this gets package together and constitutes the data portion of the medaling message in the message ID number 23 gets mapped to the by index number five of the map link header Hetter under Message ID.
 
-And then this will get sent off and once received by the drone it will see Message-ID or 23 in the header
-
-and know how to parse the data portion of the message to fulfill the request.
+And then this will get sent off and once received by the drone it will see Message-ID or 23 in the header  and know how to parse the data portion of the message to fulfill the request.
 
 Let's check.
 
 Another important Madlang message and this is command long metalink message number 76.
 
-This is a very unique maverick message because it actually allows you to command the drone in hundreds
+This is a very unique maverick message because it actually allows you to command the drone in hundreds of different ways with the same map like message number 76 this is done by modifying the command field
 
-of different ways with the same map like message number 76 this is done by modifying the command field
-
-of the message Mallik provides us with a map of command enim which essentially maps a number to a unique
-
-command.
+of the message Mallik provides us with a map of command enim which essentially maps a number to a unique command.
 
 So for example the map command maps the number 21 to the command to land the drone.
 
 So if we send a command long message with the 21 in the command field the drone will land.
 
-There are many other commands that we can specify some of which may require some additional information
-
-here at the top.
+There are many other commands that we can specify some of which may require some additional information here at the top.
 
 You can see a deeper look into command number 21.
 
@@ -3713,15 +3705,9 @@ These are simply parameters that define the command that we're sending.
 
 These can be thought of as variables to define the command request.
 
-For example if we wanted the drone to land in required precision landing mode we would write the integer
+For example if we wanted the drone to land in required precision landing mode we would write the integer number 2 to the parameter to field and then all the data populates the command long messages before it constitutes the data portion of the Magelang message.
 
-number 2 to the parameter to field and then all the data populates the command long messages before
-
-it constitutes the data portion of the Magelang message.
-
-So let's pull up the maverick message page that we discussed at the beginning and check out some of
-
-the standard messages and commands with more detail.
+So let's pull up the maverick message page that we discussed at the beginning and check out some of the standard messages and commands with more detail.
 
 OK so here we are at the map link Web site.
 
