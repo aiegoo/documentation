@@ -3304,11 +3304,292 @@ setting.
 ```
 
 
-- video :
+- video 27 : mavproxy commands
 ```javascript
+What is up.
 
+So in this video we're going to take a deeper look at some of the math proxy commands we have available
+
+to us.
+
+These are the core commands we're going to be looking at but as we'll see later on there's many many
+
+more we can check out.
+
+And if you want more details on the commands you have available to you check out this link right here.
+
+And let's get to it.
+
+Let's pull up a terminal and we've been starting our Siddall vehicle manually over the past couple of
+
+videos.
+
+But that was primarily to show you how you could manually start map proxy if you wanted to.
+
+And now that we kind of understand how that process works we can go ahead and utilize the convenience
+
+tool of Simbi call to launch our Siddall vehicle.
+
+So let's go to the A.P.M. directory and let's go to our pilot our new copter and this launch sim vehicle.
+
+And we won't launch a map this time we'll just use cue.
+
+Ground control to be our visual interface.
+
+Remember from a video earlier that one of the things that the sim vehicle does for us is automatic start
+
+map proxy and share its connection port to different ports.
+
+So we'll scroll up and see what's happening.
+
+So here we go we're starting to have proxy connecting at 57 60 and we're making some Newport's with
+
+the dash dash out command automatically at Port 14 5 5 0 and 14 5 5 1.
+
+So that means we should be able to pull up new ground control automatically and it'll connect.
+
+So let's pull up another terminal so UGC and start new ground control or wherever you have it located
+
+it enter and it should automatically launch.
+
+OK.
+
+Here we go.
+
+And see here we have our drone here.
+
+This is pretty handy.
+
+This shows us the current attitude of the drone.
+
+So if it moves forward you'll start to see this point down if it starts to roll to the left you'll start
+
+to see this bar move up in this bar move down.
+
+So it's pretty handy interface.
+
+And this is our compass.
+
+It's representing degrees in the absolute frame.
+
+And you see things like altitude and it's just a really handy interface.
+
+All right.
+
+So let's check out some commands.
+
+OK.
+
+And if you want to get a list of the available map proxy commands you can type help in the map proxy
+
+terminal and you'll see a bunch of map proxy commands that you can use definitely more than I have time
+
+to get into.
+
+But highly encourage you to investigate these on your own and see what they do to you or settle down
+
+in addition to that if you find a particular commander interested in you can type the command name and
+
+then help.
+
+And then you can see how to use it.
+
+So here is the last we will see how to use it.
+
+You have to type the command velocity and then three components in X or Y and Z velocity component.
+
+Those are all in meters per second.
+
+Now the X corresponds to the north and south axis of the drone relative to its heading.
+
+So not true north and south relative north and south.
+
+And then the y component corresponds to east and west and then the z is the up and down.
+
+And this is all in the north east down frame so North indicates positive a positive number is north
+
+that east part of any frame indicates that the east direction is positive and the west direction is
+
+negative for the y component and the z component and the of frame d down is positive.
+
+So if you want the drone to move up you actually have to pass in a negative number.
+
+So let's play with this velocity command.
+
+But first let's get the drone up into the air.
+
+Let's go into guided mode because we know that's a mode that can except Madlen commands for movement
+
+and then let's arm the drone and then let's take off to five meters.
+
+And you should see right here the altitude start to rise.
+
+There we go.
+
+And now let's get the drone to move in the west direction relative to its heading.
+
+So how do you do that type zero.
+
+We don't want to move north or so and then minus five minus 5 and then zero will type that minus five
+
+because positive five would move it in the east direction minus 5 will move in the west direction.
+
+So enter and see what happens.
+
+There we go it starts to move in the west direction.
+
+And the thing to note here is whenever you send a velocity command to your vehicle the vehicle will
+
+only act on that command for one second.
+
+So if you want the vehicle to continue to move in that direction you have to send that velocity command
+
+once a second.
+
+Now let's move the drone in the up direction with the velocity command.
+
+And remember we have to pass in a negative number if we want the drone to move up.
+
+So we'll hit Enter having the minus number and the last component of the velocity command you will see
+
+the velocity start to the altitude start to rise.
+
+That we go and it stops after about a second.
+
+All right.
+
+Now our second command is going to be the set your command.
+
+So let's see what that's all about.
+
+So set Yeah.
+
+So we say the angle we want to rotate to the speed.
+
+And then what mode are we in absolute or relative mode.
+
+So an absolute mode you are rotating to the absolute degree coordinates.
+
+So in the absolute frame 0 and 360 is true north 180 degrees is true south 270 degrees is true West
+
+and 90 degrees is true east.
+
+So if we type in zero and a number or an angle to rotate to rotate to a number in the global frame.
+
+Alternatively with the relative frame if we pass it one will be in relative frame.
+
+The drone will rotate relative to its current position.
+
+So let's check this out.
+
+Let's do you set.
+
+Yeah.
+
+And then the angle we want to rotate to what say 180 degrees.
+
+Let's say it 5 for angular speed and then let's say and zero was moving the absolute frame.
+
+So one hundred eighty degrees in the absolute frame is true so we should see the drone move.
+
+True Sal in there we go drone is rotating through south.
+
+Now let's say we want the drone to move 30 degrees relative to where it's currently at.
+
+So it's at one hundred eighty now.
+
+So we want to be at 210 degrees.
+
+Well let's use the relative command this time let's say set.
+
+Yeah.
+
+And then 30 degrees relative to where it's at.
+
+And let's use the relative frames.
+
+Enter and see what happens.
+
+And there we go.
+
+It moved 30 degrees relative to where it was currently at so that's the set command.
+
+Next one will do is the RC command
+
+if you remember in the previous videos there is a standard channel that controls the roll pitch and
+
+the axes as well as the throttle.
+
+So one is pitch two is for roll three is for throttle and four is for ya.
+
+So here with the RC command we can actually fake some RC input that a drone will act on.
+
+So if we type.
+
+RC 4 and then a pulse with modulation value to fake this is saying for Channel 4 let's pass in an RC
+
+input value of 600 and the default values for 1300.
+
+And if we remember 4 is JASO the drone should start to rotate because 1300 means don't rotate in any
+
+divergence from 50 100 will cause the drone to rotate.
+
+So hit enter here.
+
+So we have passed in a fake RC input values or rebuying around the z axis.
+
+Now let's change our C 4 from 6800 to 4300.
+
+And you should see the drone rotate in the opposite direction.
+
+Here we go.
+
+You know if we want it to stop we'll just put it back at 1300 and there we are.
+
+This is a pretty advanced command.
+
+It can be a little dangerous passing in manual RC inputs to the drone because if you type in like RC
+
+3 2000 Well you've just cranked your drone up to 100 percent throttle and is not going to stop until
+
+you tell it to stop.
+
+So it's just going to go straight to space.
+
+So this is an advanced command and probably not the best use of the last one to look at is called The
+
+Long command.
+
+And this is actually symbolic of the command long message that is available mabbe link.
+
+So if we type long and then a command then we can get the drone to do a bunch of different vehicle based
+
+movements or other commands.
+
+So long as the command and then nav land is telling the drone to land.
+
+So we'll do that.
+
+And you should see the drone change into land mode and the altitude will begin to decrease.
+
+So there we go.
+
+Now we can also switch out of the land mode manually.
+
+Let's go back in a guided mode by taking a boat guided and we could have also just typed mode land to
+
+change into landing mode as well.
+
+There are multiple ways to skin this cat so will enter and the drone will begin to descend again.
+
+So we're going to wrap up there in this video.
+
+But like I said earlier highly encourage you to check out all the other commands and practice what they
+
+actually do on your drone if you're interested in that.
 ```
 
+### section 5 mavlink
 
 - video :
 ```javascript
