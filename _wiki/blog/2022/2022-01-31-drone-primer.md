@@ -4020,26 +4020,19 @@ And now that we have this basic functionality we'll be able to do some cooler st
 
 
 - video 33 : function to connect python script to sitl drone part2
+
 ```php
 Book.
 
 So I'm back in our connection template file that we made in the last video.
 
-And as you probably saw it might be a little annoying to have to you know externally start a Siddall
-
-vehicle every time we want to test out some code that we made in our python file so that we can actually
-
-do is use the junket Siddall Python package that we installed in the previous videos.
+And as you probably saw it might be a little annoying to have to you know externally start a Siddall vehicle every time we want to test out some code that we made in our python file so that we can actually do is use the junket Siddall Python package that we installed in the previous videos.
 
 And what this allows us to do is launch a civil vehicle directly from our script.
 
-So what we can do with our connect my copter function is say hey if there's an IP address that the user
+So what we can do with our connect my copter function is say hey if there's an IP address that the user wants to connect to we'll look for this dash dash connect option and capture that IP address.
 
-wants to connect to we'll look for this dash dash connect option and capture that IP address.
-
-But if an IP address isn't specified then launch a Siddall vehicle directly from the script and we can
-
-do that with the following code.
+But if an IP address isn't specified then launch a Siddall vehicle directly from the script and we can do that with the following code.
 
 OK.
 
