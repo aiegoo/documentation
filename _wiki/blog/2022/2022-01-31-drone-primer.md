@@ -5325,6 +5325,205 @@ us and automatically close about.
 
 - video 41 : function to move drone to waypoints
 ```javascript
+All right.
+
+So to this point now we have our lunch Siddall convenience script that we'll be able to do a bunch of
+
+things automatically for us and we have some Don't Get functions that can connect to a vehicle and fly
+
+the vehicle into the air to a specified altitude.
+
+But our drones just sitting there waiting for some commands.
+
+So now we're going to start getting into ways to move the drone.
+
+There are two primary ways that you can move the drone.
+
+One is by location based movement.
+
+That is I specify a waypoint that I want the drone to fly to and the drone flies that waypoint and the
+
+other is velocity based movement.
+
+So I want my drone to move forward at let's say three meters per second.
+
+And this video we're going to focus on the former and we're going to make some functions that can be
+
+used for location based movement.
+
+And we're going to get introduced to waypoint objects in Python.
+
+And if you're curious I'm grabbing my latitude longitude and altitude coordinates from this Web site
+
+here.
+
+All right so let's get to it.
+
+Let's pull up a terminal
+
+and let's go to.
+
+Of course.
+
+And then B.K..
+
+Now let's copy our basic template python file and name it location underscored base underscore movement.
+
+And then let's edit into location based movement.
+
+So if you remember that when we launch our launch Siddall script it starts the drone at the 50 yard
+
+line of Packer stadium.
+
+So let's create a waypoint at the Packer pro-shop which is maybe 100 yards away from that 50 yard line
+
+that the drone can fly to.
+
+So we're creating this waypoint object from the location global relative function that is important
+
+from the drone kit package.
+
+As you can see at the top in the location global relative function in ports three arguments The first
+
+is the latitude second is longitude and the third is altitude.
+
+So we're saving this waypoint object.
+
+Now how do we get our drone to fly to that or let's say go to waypoint 1 Wait a minute.
+
+We don't have a function called go to yet where we're going to make this function.
+
+But the first thing we have to do is make a helper function that can get the distance between two waypoints.
+
+And here it is we'll call it get underscored distance under square meters and it will input to waypoint
+
+objects similar to what we've done here to do some geometry magic to get the hypothenuse between two
+
+points in space.
+
+So we're going to return the absolute distance between two points in space.
+
+Now this functions only going to be reliable if the two waypoints are close.
+
+That is because the function models the two points as if they're on a two dimensional plane.
+
+And obviously that desined gets larger and larger than that modeling of the 2-D playing it's less and
+
+less accurate.
+
+Plus of course you're a flat earth or now we have this helper function.
+
+Let's start to get into the go to function see death go to and will only input one waypoint and that
+
+is the location that we want to apply to.
+
+Now the first thing we're going to do is capture the original distance between the current location
+
+of the drone and the target location of the drone.
+
+So how are we going to do that.
+
+What we can do that with our new helper function and attributes.
+
+So here we're making a new variable called distance to target location and then setting that equal to
+
+the output of get distance meters.
+
+And we're going to supply the target location the waypoint that we want to fly to and the current location
+
+of the drone which we can get with attributes.
+
+We called that location global relative to frame this will return some number and meters that will get
+
+saved to this variable here.
+
+So this will be our original distance away from the way point.
+
+Now the next step is going to be to command the vehicle to apply to the specified waypoint the target
+
+location and we can do that and the vehicle object that we get in drone kit supplies us with a function
+
+called simple go to that takes the waypoint that we want to fly to the now the drone is flying to the
+
+waypoint that we specified but similar to what we found in the arm and take off function.
+
+Our vehicle is a perfectionist.
+
+So it's going to try to apply to this waypoint.
+
+Exactly.
+
+And we don't want it to fly there exactly.
+
+We want it to fly within a certain range.
+
+So what we're going to do is pull the drones progress once a second in a while loop and determine if
+
+the drone is close enough to the waypoint to call it good.
+
+We can do that with this while back here.
+
+So we're saying while the vehicle is in guided mode which it will be.
+
+So it'll just continue iterating in this loop.
+
+We're going to get the current distance of the drones location to the target waypoint.
+
+So we're doing the same thing here but we're only taking this distance once.
+
+So we're getting the original distance here.
+
+And then as the drone gets closer and closer this current distance will get smaller and smaller every
+
+iteration of the While loop.
+
+We're going to see if the current distance is less than the original distance that the drone was away
+
+from the target waypoint times 1 percent.
+
+So we were originally one mile away and we get 0 1 miles away from the waypoint then we're going to
+
+break out of this while block and return None allowing further execution of downstream code from the
+
+go to function after it has reached its target waypoint.
+
+So until the drone has gotten to this waypoint it won't be able to execute further.
+
+So after the drone is at its target waypoint we can command it to land.
+
+We'll send in the request to Aarthi pilot to change the flight mode to land mode and then it will iterate
+
+through this while block until it's in land mode and then once it's in land mode this will break out
+
+and we'll just right.
+
+While true at the end so that ground control will stay up until we close our drone get script manually.
+
+OK so let's save this and see it in action.
+
+Let's pull up a terminal and let's use our new launch Siddall script type launch Siddall and we'll type
+
+location based movement.
+
+So here is the Siddall drone getting launched up in here is to ground control.
+
+All right so the drone is at the 50 yard line.
+
+All right so the drone is now going into the air it's in the arm and takeoff function and it's going
+
+to get the 10 meters and now it's going to begin its flight to Packer pro-shop.
+
+And those GPS coordinates are right over here.
+
+It's going to go over there and get a cheese head maybe get some cheese curds.
+
+And you can notice as we said before this go to function as a blocking function because it doesn't allow
+
+execution of downstream code until it finishes.
+
+And now we reached our target waypoint we have entered land mode and now we can see the drones start
+
+to land.
 
 ```
 
