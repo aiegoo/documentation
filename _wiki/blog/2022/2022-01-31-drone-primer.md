@@ -6344,7 +6344,97 @@ That is how you do basic yawning in drone kit.
 ### section 7
 - video :
 ```javascript
+Congratulations you've made it through the drone programming primer for software development course.
 
+We've covered a lot of ground and I think you now have the introductory foundation to take on more difficult
+
+aspects of drone development.
+
+In this video we're going to do a quick recap of everything we've learned in this course and open a
+
+channel of suggestions to you for any lecture series you may be interested with in the future.
+
+So we learn about the software flights stack that is commonly being used by businesses and hobbyists
+
+alike and how all these different flights stack layers communicate with each other through math.
+
+When we should have gained a good understanding of the necessity of each component of the flight deck.
+
+Additionally we were introduced to the power of Siddall our simulated drone for software development.
+
+We learned that we can start learning about the flight stack directly on the Siddall vehicle without
+
+the requirement of testing on a real drone.
+
+In the future you're still drone knowledge will be extremely valuable for quality assurance testing
+
+for any software development you may do.
+
+We also spent a lot of time building up the elementary drone Get functions that can communicate with
+
+and command our drone to do various things we can think of these drumkit functions as like Lego blocks
+
+that can be built into unique structures that satisfy our requirements of the script.
+
+These Lego blocks can be used as the foundation to a higher level drone applications like package delivery
+
+and security surveillance.
+
+So our lowest level in the flight stack was the arty pilot code base and we learned it AXS the low level
+
+code that directly communicates with the drones hardware allowing it to call code to produce desired
+
+movements or behavior.
+
+It has over 700 thousand lines of code and is one of the trailblazers of this open source drone movement.
+
+Now we got into map proxy and learned its power as a matter link enabled command line version of a ground
+
+control station.
+
+From here we learned about Madlang and how its powers as a communication middleware relies on its standard
+
+messages.
+
+It is essentially the glue that connects the communication between vehicles and processes like Aarthi
+
+pilot communicating with MAP proxy or a drone communicating with the ground control station.
+
+It is used both and peaks for in our pilot code bases.
+
+Then we finished off learning about drone kit we saw the power of drone kit and how it can be thought
+
+of as a high level API and to Aarthi pilot with these drone kit functions and powered by Mablean we
+
+can then develop Python scripts to make high level applications like package delivery or even a Python
+
+program that uses open C puter vision to command movement commands of our vehicle that we're connected
+
+to.
+
+Considering all this knowledge that we've obtained at this point you are now equipped to go explore
+
+this open source drone world on your own to seek areas that piqued your interest.
+
+You can now try and develop your own drone Code application or dive deeper into a particular layer of
+
+our flight deck or read the documentation to gain a deeper understanding of the tools.
+
+If you have any interest in future tutorials that will build from what we've learned in this course.
+
+Let me know we can get into things like how Arti pilot actually works.
+
+How to make custom map like messages and implement them in our pilot in Python to perform a custom behavior.
+
+You don't get scripts on a real drone and develop some more high level applications.
+
+On how to build our own real custom Open-Source drone that we can then apply this flight technology
+
+and abandon our Siddall drone or anything else you may be interested in.
+
+Please let me know as your feedback is very important from that.
+
+I'm excited to see what you will build with this new knowledge that you've obtained.
 ```
 
 
