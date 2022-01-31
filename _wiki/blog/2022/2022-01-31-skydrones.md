@@ -942,6 +942,7 @@ You will see that various LEDs will turn on and some of them will start blinking
 PWR green LED is solid meaning that the unit is powered up properly
 ![image](https://user-images.githubusercontent.com/42961200/151566747-dffff700-bf5d-43f1-83f5-4ab2327eba6e.png)
 
+{:start="2"}
 2. Connect to AIRLink WiFi
 Check available WiFi networks on your computer or tablet and connect to AIRLink network to set up the initial WiFi connection of the AIRLink. Find AirLinkConfig_XXXXX network and connect to it:
 ![image](https://user-images.githubusercontent.com/42961200/151566789-0048a868-ed92-4d14-906f-273ae090dbc6.png)
@@ -949,7 +950,7 @@ Check available WiFi networks on your computer or tablet and connect to AIRLink 
 The name of the network is unique for each AIRLink and starts with AirLinkConfig_ and ends with a collection of unrelated symbols.
 Default password: airlink1
 ![image](https://user-images.githubusercontent.com/42961200/151566813-a231454b-da1c-4aa9-bf09-5f660e16ad53.png)
-
+{:start="3"}
 3. Open web browser
 Once you're connected to the AIRLink network, open the web browser and proceed with the initial configuration. Click the following link to open .
 In case the link above doesn't work - then go to . In case  doesn't work either - then go to . In some cases you might need to manually type this into browser address network. This is browser-dependent, we recommend to use Google Chrome or Safari.
@@ -963,6 +964,7 @@ This page displays the generic information about the system including its status
 
 By default, AIRLink is configured as the access point. If you would like to connect AIRLink to your home or office WiFi network then click the Connect to another WiFi network button.
 
+{:start="4"}
 4. Connect to WiFi
 You will see the discovered WiFi networks list:
 ![image](https://user-images.githubusercontent.com/42961200/151566981-8698d7f0-ce1c-4282-b547-ed2e0531e8d3.png)
@@ -980,6 +982,7 @@ Connect your computer to the same WiFi network which you have just connected the
 If you have troubles accessing AIRLink dashboard - please view .
 CONGRATULATIONS! Now your AIRLink is connected to Internet.
 
+{:start="5"}
 5. Claim AIRLink ownership
 By default, your AIRLink is owned by the manufacturer (Sky-Drones) or other licensed manufacturer. You can claim ownership of the AIRLink and assign it to your account.
 AIRLink ownership is required to use Sky-Drones Cloud services. Therefore, we highly recommend to claim your AIRLink ownership at this step.  Make sure you have the following:
@@ -1007,18 +1010,21 @@ CONGRATULATIONS! Your AIRLink has been successfully set up and now you can proce
 Open  application and set up the new connection.
 ![image](https://user-images.githubusercontent.com/42961200/151567382-ce7e69e6-2574-4893-80f8-a52ff332ae2f.png)
 
+{:start="2"}
 2. Add new connection
 Click the WiFi icon in the top right corner to set up the new connection. You should enter the same IP address as you discovered in the previous steps during the initial power up. The port name is 14555. Click open.
 ![image](https://user-images.githubusercontent.com/42961200/151567446-15f9a351-b96c-403d-8956-a8058f5873e9.png)
 
 You should see the telemetry updates and hear the voice notification that indicated the connection was successfully established.
 
+{:start="3"}
 3. Open autopilot configuration settings
 Click on the Gear icon on the top toolbar to open the settings for the autopilot configuration.
 ![image](https://user-images.githubusercontent.com/42961200/151567514-29497182-220b-463c-a2ab-227ad44fc3ae.png)
 
 Please refer to your specific drone configuration steps for more detailed information.
 
+{:start="4"}
 4. Set up video streaming
 Click on the Gear icon in the bottom left corner and set up the video source. Select RTSP video source and type the RTSP address. In our case, this is rtsp://192.168.1.157:8554/camera/0
 ![image](https://user-images.githubusercontent.com/42961200/151567575-afe1c944-bfff-4c0b-929a-3ac3431fbe6c.png)
