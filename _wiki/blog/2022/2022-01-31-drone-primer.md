@@ -4362,7 +4362,167 @@ deal with all that manual work later on.
 
 - video 34: attributes part 1
 ```javascript
+OK so now we have a function that can be used to connect our script to our drone.
 
+And once we have that vehicle object or that model of the drone that we've connected to we can begin
+
+to do some cool stuff with it.
+
+And one thing we now have access to after that connection are vehicle attributes so attributes essentially
+
+to find the State of the drone that you're connected to things like the battery voltage where it's at
+
+in 3-D space what are the pilot software versions being used.
+
+And we can access all these different attributes through our vehicle object.
+
+Do you want to learn more about attributes.
+
+You can check out this link right here.
+
+Don't get documentation is amazing so highly encourage you to check that out.
+
+So let's just instead of talking about it just show you directly what I mean.
+
+So let's pull up terminal.
+
+Let's go to corporate directory and then decay.
+
+Now let's copy our connection template file and let's call it a new file named actually beat that for.
+
+And now let's get into actually.
+
+OK so here we are.
+
+This is where we left off in the connection template file where we have our vehicle object all ready
+
+to go.
+
+And now we're going to use this vehicle object to access some attributes of the vehicle that we're connected
+
+to.
+
+OK.
+
+So here's a bunch of attributes that we have access to and where and again we're accessing all of these
+
+there are modeled compter that is our vehicle variable.
+
+And as you can see here you can access attributes by simply dotting the vehicle and then specifying
+
+the attribute that you want to get access to.
+
+So we have our vehicle we can dot version that and that will tell us the pilot version that we're using
+
+on our vehicle.
+
+We can say vehicle got location that global relative frame and this will return to us a waypoint object
+
+and latitude longitude and altitude coordinates so we can see where our drones at in the world we can
+
+say vehicle that attitude and see the current roll pitch and the status of our vehicle or maybe the
+
+velocity that our drone is moving at and the Northeast down frame by typing vehicle velocity we can
+
+get access to how long ago we received our last heartbeat message from the vehicle we're connected to.
+
+And that will be in seconds is underscore Carnival tells us if our system is OK to start spinning the
+
+props.
+
+So if there's any underlying system that is still setting up hours maybe a GPS isn't working or something
+
+this is honorable will return a 0 and you won't be able to start spinning your drone's props.
+
+Here we can set the ground speed that we want our drone to move it.
+
+So if we tell it to fly to a particular waypoint we can specify this groundspeed attribute to tell it
+
+to move it like five meters per second.
+
+If you wanted or you could just read in the current speed that the drone will fly at and then this one
+
+is an important one vehicle that mode name or you can similarly just do vehicle that mode.
+
+This will tell us the current flight mode that our vehicle is in.
+
+So for unstabilized flight mode or guided flight mode we can read the current mode of the vehicle or
+
+we can set it and we'll get into the setting of attributes and the next video and vehicle that armed.
+
+This is also settable and gettable here.
+
+We're reading in if the vehicle is armed or not.
+
+So we'll get return true if the drone is spinning and we'll get return false if the props aren't spinning
+
+and we'll set this value in the next video.
+
+And here we have the EKN underscore OK attribute and essentially tells us if our state estimator is
+
+OK to go and it'll be a sure false Boolean and you don't want the drone to start flying if it's not
+
+OK.
+
+So this is a pretty handy attribute to have access to.
+
+But basically all of this attribute information is available in the pilot land.
+
+And since we can think of drone kit as an API to Artie pilot we can access that already pilot information
+
+by just specifying the attributes that we want to read.
+
+And then at the end we can close our connection by tightening vehicle that close.
+
+So let's save this and launch it at the command line and see what the output is.
+
+Pull up a terminal.
+
+Let's go to
+
+decay and then let's turn to file attribute patcher hit enter we're connecting to our drone kids Siddall
+
+and since being launched directly from our pile years or verification of connection and shortly we will
+
+see the attributes printed out to our screen ok cool.
+
+So we see the auto pilot version.
+
+So that is from right here auto pilot version and vehicle that version got resolve to A.P.M. copter
+
+3.3.
+
+So this came from the already pilot firmware that we are putting into drone kit in Python land through
+
+attributes.
+
+We see our position and 3D space which returns our latitude longitude and altitude current coordinates
+
+and we can see where a drone is currently on the ground because the altitude is zero.
+
+And here's our attitude attribute gives us the state of our pitch and roll and he is our velocity attribute
+
+as you can see we're not moving currently.
+
+And the last heartbeat.
+
+So we got our last heartbeat from our drone point eight seconds ago.
+
+It was the vehicle article that's currently not farmable so we couldn't start the props if we want it
+
+to Mode's stabilize.
+
+So we are in the stabilized flight mode and we access that through vehicle mode that name the drone
+
+isn't armed and the EPA is not.
+
+OK so we grabbed all this information from the already pilot firmware.
+
+You are drone Kate connection.
+
+And we got access to those in the drone kit Python script.
+
+So the next video we're going to get into setting the values of attributes instead of just reading them.
 ```
 
 - video 35 : attributes part 2
