@@ -5030,6 +5030,219 @@ automatically for us.
 
 - video 39 : script to automatically launch QGC with dronekit script part2
 ```javascript
+All right.
+
+So let's make our launch a little script.
+
+We'll be able to do the poor things described in the last video and we'll use it to make our lunch whole
+
+script.
+
+So let's typed the following and watch the camel case make sure this is capital and let's hit enter
+
+Let's go into launch Siddall the top let's do the following.
+
+So what this is is a ship bang.
+
+And when we run our launch little script as an executable it will read this and see that we want the
+
+text in the script to be interpreted as a bash script.
+
+So now it will interpret all our commands as a bash script once it's saved.
+
+So we can see the pretty little colored Yeah.
+
+OK.
+
+So remember we're going to do four things.
+
+And the first thing we're going to do is launch our drone kits Siddall instance and we're going to reference
+
+the full path to the drone kits Siddall executable.
+
+So we need to know the full path.
+
+So let's pull up a terminal and we'll type.
+
+Where is junket Siddall.
+
+And we'll get this back.
+
+So this is the path of our junket Siddall executable.
+
+Copy that in here.
+
+And then we'll write the following.
+
+All right.
+
+Copter because we want our vehicle to be a quad copter and will specify the home coordinates that we
+
+want the vehicle to launch from.
+
+And here we're going to use the latitude longitude and altitude coordinates obviously of the Green Bay
+
+Packers stadium and the ampersand here is going to start this process.
+
+The drunken Siddall process but it will throw into the background.
+
+And if we didn't go into the background any subsequent code below this drone gets a launch wouldn't
+
+get executed until we closed out of this program.
+
+But since we're throwing it into the background the code in this launch little script will continue
+
+to execute and this will exist on its own.
+
+OK so now we have our Don't kids Siddall instant started.
+
+The next thing we need to do is launch to ground control and we're going to reference the full path
+
+of our app image for q ground control.
+
+So again let's pull up a terminal and we'll type which you do see that image.
+
+And here is where we placed our app image to make it a globally reference Apple file.
+
+So we'll copy that full path to the app image and we'll call that pull path in our launch little script.
+
+We'll paste that in and when we launch cuarón patrol it prints out a bunch of crap to the terminal so
+
+we'll write this right here.
+
+All the techs to Dev-Null.
+
+And we'll also throw this process into the background so that code beneath it can execute without having
+
+to depend on this being finished.
+
+And between these two let's say sleep for five seconds and then underneath it let's sleep for another
+
+five seconds.
+
+Probably won't have to go to five seconds but just be safe.
+
+And now OK we've done the first two things.
+
+We want the script to do we have this Siddall instance up into the air.
+
+We have to ground control launch now.
+
+Now we need to launch map proxy to create the appropriate ports that we need to connect.
+
+Q ground control and our drones get script.
+
+So this is the main command we're using.
+
+So we're starting map proxy it up by we're connecting map proxy to port at the 760 and we're specifying
+
+two new ports that is 14:5 by zero.
+
+And the 762 that anyone else can connect to in here we're saying screen minus DMH which this is essentially
+
+a different way to throw the process into the background.
+
+So now we've done three of the four things we need our script to do.
+
+We now have map proxy up and running.
+
+Now we need to start our drone kit Python script and well referenced the full path to the Python executable
+
+booklet which Python and here we go or copy that.
+
+And go back to launch Siddall.
+
+OK so if you're not familiar with bash scripts this is essentially how we're going to start launch Siddall
+
+let's say this is our impromptu terminal again.
+
+We're going to have launch Siddall and they're going to specify a python file that we want to launch.
+
+Let's say we launch basic template that by well we're starting this bash script and we're specifying
+
+the file name that we want to get past into the bash script.
+
+So this is the first argument that we're passing into this launch Siddall bash script.
+
+So that is what this dollar sign one is indicating is dollar sign one will get resolved to the first
+
+argument getting passed into the script.
+
+So in this case this will get replaced with basic template and then we'll start a basic template with
+
+Python.
+
+Name of the file and then we'll connect at the specified port like we've been doing previously and we
+
+went through this process to the background because we want the progress of this launch Siddall script
+
+to stop at this point and we don't want anything underneath this line to execute until our iPhone script
+
+is done executing.
+
+So OK so now let's say our pipeline script has finished executing and we're continuing on with our code
+
+execution here.
+
+We have all these things in the background now that we have to close.
+
+So let's write a bash function that can be used to close all of these processes automatically every
+
+single time.
+
+Our Python script is done executing.
+
+OK so we can do that with the following code.
+
+Here's our function that we're making sourcing function Benish and then bash scripts are very sensitive
+
+with spaces so make sure you have a space here and then we're going to write all this beautiful stuff.
+
+I know it looks pretty ugly but I'll try and break it down for you.
+
+So if you're not familiar with the kill command let me provide a quick recap.
+
+So every time we start a process like this drunk gets Siddall instance this process is going to get
+
+a unique process ID.
+
+So let's say after we start this the drone kits Siddall executable will have a d id they call it a process
+
+ID and let's just say 1 1 3 4.
+
+So this process ID is indicative of this process.
+
+So with the kill command we can specify a process id that we want to.
+
+And so if the process id of this truncate Siddall was 1 1 3 4 and we type kill 1 1 3 4 it would stop
+
+the drunk get Siddall instance.
+
+So just like when we click this red button its hilling whatever process was running.
+
+So this is essentially the red X button only for process IDs.
+
+What we're doing in this finished function is first finding the process IDs of anything called hugely
+
+RTU and mabbe.
+
+And then we're going to say will those process IDs that we found and then will kill all of the processes
+
+that we started previously.
+
+Be very conscious of the spaces here.
+
+Again bash scripts in Linux commands can be a little sensitive.
+
+And then we want to call this function right at the end of our launch Siddall script and that's what
+
+we're doing here.
+
+We're saying trap finished exit which means that this function will be executed only at the very end
+
+of the script.
+
+So let's save this.
 
 ```
 
