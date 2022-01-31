@@ -3737,8 +3737,179 @@ and data portions of the modeling protocol for some popular messages.
 ```
 
 
-- video :
+- video 29 : mavlink message example
 ```javascript
+OK so in the last video we got into the first layer of math link or the standard message structure in
+
+this video we're going to look at how we can change the message ID to vary the types of messages that
+
+are sent with the standard message structure the standard message ids will let the receiving maverick
+
+node know how to parse the incoming data and what action should be taken.
+
+Upon receiving the specific message ID the standard also tells the sending raveling Note how to package
+
+up the data into a correctly formatted packets if you want to check out the list of standard Madelin
+
+messages you can check out this link below.
+
+But let's get into a couple of other examples.
+
+So to this point we have been setting parameters with MAP proxy of our drone but under the hood Maff
+
+proxy is actually creating a map like message with message ID number 23 and filling out the appropriate
+
+fields to satisfy our Maff proxy request so message 23 has five standard fields that must be filled
+
+out.
+
+The first one is the target system id of the map we know that we want to set the parameter to.
+
+This will typically be one for the system idea of the drone.
+
+Next we can fill up the target component if applicable but this will most likely be zero.
+
+Now we have the program ID field and we can see its type is a char array indicating to us that we should
+
+specify the name of the parameter we want the change.
+
+So if we wanted to modify the Arkia parameter we would place that string in this field.
+
+After this we can fill out the value we want to set the parameter to with the brand value field.
+
+And finally we can specify the type of the parameter and then all of this gets package together and
+
+constitutes the data portion of the medaling message in the message ID number 23 gets mapped to the
+
+by index number five of the map link header Hetter under Message ID.
+
+And then this will get sent off and once received by the drone it will see Message-ID or 23 in the header
+
+and know how to parse the data portion of the message to fulfill the request.
+
+Let's check.
+
+Another important Madlang message and this is command long metalink message number 76.
+
+This is a very unique maverick message because it actually allows you to command the drone in hundreds
+
+of different ways with the same map like message number 76 this is done by modifying the command field
+
+of the message Mallik provides us with a map of command enim which essentially maps a number to a unique
+
+command.
+
+So for example the map command maps the number 21 to the command to land the drone.
+
+So if we send a command long message with the 21 in the command field the drone will land.
+
+There are many other commands that we can specify some of which may require some additional information
+
+here at the top.
+
+You can see a deeper look into command number 21.
+
+And as you can see we have some parameter values that we can specify for the particular command.
+
+These are not parameters like we've been talking about to this point.
+
+These are simply parameters that define the command that we're sending.
+
+These can be thought of as variables to define the command request.
+
+For example if we wanted the drone to land in required precision landing mode we would write the integer
+
+number 2 to the parameter to field and then all the data populates the command long messages before
+
+it constitutes the data portion of the Magelang message.
+
+So let's pull up the maverick message page that we discussed at the beginning and check out some of
+
+the standard messages and commands with more detail.
+
+OK so here we are at the map link Web site.
+
+Let's check out command long.
+
+Here we go.
+
+So this is what we pulled from the slide and we can see again the command field.
+
+And it uses the map command enim.
+
+So let's look for the definition of this map command ENM and you can find it because the map command
+
+string will be one of the first references of that string.
+
+OK.
+
+Now here we go.
+
+This is the map command.
+
+And we can see here this is the value or the number of the command that gets mapped to the specific
+
+command.
+
+So we can see here if we specified 16 in the command field of command long message number 76 we would
+
+be doing a map command nav waypoint command.
+
+So we would be telling the drone to move to a particular place and we would need to specify where the
+
+drone should move to and that is done.
+
+And five six and seven by specifying the latitude longitude and altitude coordinates and this map command
+
+is a very very long either.
+
+And each one of these numbers as stated before is indicative of a different command that we can send
+
+to the drone.
+
+So as you can see there's a lot of commands that we have available to us to send to the drone.
+
+The one thing to note here is just because the maverick command is specified in the standard Madlang
+
+message protocol does doesn't mean that the software that receives the maverick message is prepared
+
+to appropriately handle that command.
+
+So some of these commands might not actually be available in the Ardie pilot code base for example.
+
+We've looked at the Magelang message number 76 command long and detail.
+
+Let's check out some other map like messages.
+
+OK here we go.
+
+We're starting at the top of maverick messages and we can see here is that message number zero which
+
+is the heartbeat message and message number one is a status message.
+
+So we can get a bunch of information from the vehicle and one little standard message like battery voltage
+
+current battery.
+
+Here's Paramo request read which we've also dealt with a map proxy without knowing that we are using
+
+magnetic message number 20 just request a parameter that we want to know the value for.
+
+And most of them can be appropriately digested by Ardie pilot.
+
+But remember it is dependent on the pilot code base to enact the appropriate code when receiving this
+
+specific message to fulfill the request.
+
+So if the pilot code base receives message number 55 it doesn't call the correct code to handle this
+
+message.
+
+Then it's essentially not usable Navteq is only a message standard.
+
+It doesn't directly command the drone only tells the drone of our request it is still dependent on the
+
+already pilot code base to enact that request by calling the correct code.
 
 ```
 
