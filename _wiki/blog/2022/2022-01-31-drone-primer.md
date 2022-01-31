@@ -3663,13 +3663,7 @@ Upon receiving the specific message ID the standard also tells the sending ravel
 
 But let's get into a couple of other examples.
 
-So to this point we have been setting parameters with MAP proxy of our drone but under the hood Maff
-
-proxy is actually creating a map like message with message ID number 23 and filling out the appropriate
-
-fields to satisfy our Maff proxy request so message 23 has five standard fields that must be filled
-
-out.
+So to this point we have been setting parameters with MAP proxy of our drone but under the hood Maff proxy is actually creating a map like message with message ID number 23 and filling out the appropriate fields to satisfy our Maff proxy request so message 23 has five standard fields that must be filled out.
 
 The first one is the target system id of the map we know that we want to set the parameter to.
 
@@ -3677,9 +3671,7 @@ This will typically be one for the system idea of the drone.
 
 Next we can fill up the target component if applicable but this will most likely be zero.
 
-Now we have the program ID field and we can see its type is a char array indicating to us that we should
-
-specify the name of the parameter we want the change.
+Now we have the program ID field and we can see its type is a char array indicating to us that we should specify the name of the parameter we want the change.
 
 So if we wanted to modify the Arkia parameter we would place that string in this field.
 
