@@ -4124,19 +4124,13 @@ So if there's any underlying system that is still setting up hours maybe a GPS i
 
 Here we can set the ground speed that we want our drone to move it.
 
-So if we tell it to fly to a particular waypoint we can specify this groundspeed attribute to tell it
+So if we tell it to fly to a particular waypoint we can specify this groundspeed attribute to tell it to move it like five meters per second.
 
-to move it like five meters per second.
-
-If you wanted or you could just read in the current speed that the drone will fly at and then this one
-
-is an important one vehicle that mode name or you can similarly just do vehicle that mode.
+If you wanted or you could just read in the current speed that the drone will fly at and then this one is an important one vehicle that mode name or you can similarly just do vehicle that mode.
 
 This will tell us the current flight mode that our vehicle is in.
 
-So for unstabilized flight mode or guided flight mode we can read the current mode of the vehicle or
-
-we can set it and we'll get into the setting of attributes and the next video and vehicle that armed.
+So for unstabilized flight mode or guided flight mode we can read the current mode of the vehicle or we can set it and we'll get into the setting of attributes and the next video and vehicle that armed.
 
 This is also settable and gettable here.
 
