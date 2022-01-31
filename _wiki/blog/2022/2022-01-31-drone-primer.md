@@ -3913,6 +3913,7 @@ already pilot code base to enact that request by calling the correct code.
 
 ```
 
+### section 6 dronekit
 
 - video :
 ```javascript
