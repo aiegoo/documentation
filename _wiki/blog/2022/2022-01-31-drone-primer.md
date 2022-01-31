@@ -4287,6 +4287,75 @@ videos.
 
 - video 33 : function to connect python script to sitl drone part2
 ```javascript
+Book.
+
+So I'm back in our connection template file that we made in the last video.
+
+And as you probably saw it might be a little annoying to have to you know externally start a Siddall
+
+vehicle every time we want to test out some code that we made in our python file so that we can actually
+
+do is use the junket Siddall Python package that we installed in the previous videos.
+
+And what this allows us to do is launch a civil vehicle directly from our script.
+
+So what we can do with our connect my copter function is say hey if there's an IP address that the user
+
+wants to connect to we'll look for this dash dash connect option and capture that IP address.
+
+But if an IP address isn't specified then launch a Siddall vehicle directly from the script and we can
+
+do that with the following code.
+
+OK.
+
+So this is the new portion here.
+
+So right here if we didn't pass and dash dash connect option then this connection string is going to
+
+be set equal to nothing.
+
+So what we can do is perform some logic to that and we can say if not connection string.
+
+So if this isn't populated with a valid argument then let's import the drone kits Siddall Python package.
+
+Let's start a new Siddall drone right from our Python script.
+
+And let's grab the connection string or the IP address that we need to connect to this new trone kit
+
+Siddall instance.
+
+So the connection string will be populated with manual input here and then the drone gets a little input
+
+here.
+
+So either way we're going to have an IP address to connect to at this point in the code that the connect
+
+function and we'll get a vehicle object that we were getting before.
+
+But this here will make it so we don't have to manually start a Siddall vehicle if we don't want to.
+
+So let's save this and test it out.
+
+Pull up at terminal and go to course route and DD Kong.
+
+Now let's start our script again by typing python in the name of the pile.
+
+But this time was not specified dash dash connect.
+
+And if we do this will launch a Siddall instance directly from our file and there we go our script recognize
+
+that we didn't pass in an IP address so it booted a Siddall instance for us.
+
+And we're seeing here some information about our civil vehicle that it launched is using the A.P.M.
+
+copter version 3:43.
+
+Also a quad copter and some various firmware information.
+
+So this is a handy modification that we've made to the connection template so that we don't have to
+
+deal with all that manual work later on.
 
 ```
 
