@@ -3781,6 +3781,7 @@ It doesn't directly command the drone only tells the drone of our request it is 
 ### section 6 dronekit
 
 - video 30 : intro to dronekit
+
 ```php
 OK so in this video we're going to talk a little bit about trone kit.
 
@@ -3798,21 +3799,15 @@ So we get to capitalize on these 700000 lines of code and order pilots code base
 
 So in one line of code for example we could tell the drone to move to a particular waypoint.
 
-So here's an example in four lines of code and drumkit we could tell the drone to take off into the
-
-air flight to a specified waypoint and then land on four lines of code.
+So here's an example in four lines of code and drumkit we could tell the drone to take off into the air flight to a specified waypoint and then land on four lines of code.
 
 We don't have to deal with any of the low level Madelin creations of the messages.
 
-We don't even have to know anything about Madlang and we don't have to know anything about our pilot
-
-or need to know is trone kit and the high level functions like take off into the air and move to this
+We don't even have to know anything about Madlang and we don't have to know anything about ardupilot or need to know is dronekit and the high level functions like take off into the air and move to this
 
 waypoint function and the land function and we're good to go with.
 
-We don't have to know an immense knowledge of how our maverick messages are getting sent and interpreted
-
-by our pilot.
+We don't have to know an immense knowledge of how our maverick messages are getting sent and interpreted by our pilot.
 
 While it's helpful it's not required.
 
