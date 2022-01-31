@@ -584,7 +584,9 @@ In some cases you might need to disable ’system integrity protection’ and th
 > Unable to Ping smartlink.local - Unknown Host
 
 Some operating systems might not have local DNS, resulting in the inability to access the system using the name (smartlink.local). This is known for all Android platforms and some Windows platforms. In case you can't ping smartlink.local or similar:
+
 ping: cannot resolve smartlink.local: Unknown host
+
 You'll need to find out the IP address for SmartLink. There are numerous ways to do this, we'll use the NMAP tool in this example. First of all, download and install NMAP tool using the relevant links below:
 
 >  Linux
@@ -597,7 +599,7 @@ brew install nmap
 
 > Windows
 
-Go to the official website for NMAP tool:
+Go to the official website for NMAP tool:[download](https://nmap.org/download.html)
 
 Select Latest stable release self-installer: nmap-7.80-setup.exe or similar. Download and install it.
 
@@ -607,12 +609,12 @@ After installation is complete, open command line and go to NMAP folder:
 
 cd "C:\Program Files (x86)\Nmap"
 
-### Looking up SmartLink's IP Address
+##### Looking up SmartLink's IP Address
 Execute IP addresses scan within the required range, in our case it will be:
 nmap 192.168.168.*
 As a result of this command you'll see IP addresses in this range. You'll have 192.168.168.1 which is, as a rule, configured as air module, 192.168.168.2 which is usually configured as ground module and 192.168.168.x (x: 0-255) which is the IP address for SmartLink. You should use this IP address - 192.168.168.x for direct connection instead of smartlink.local.
 
-### No Internet Connection when SmartLink is Plugged into USB Port
+##### No Internet Connection when SmartLink is Plugged into USB Port
 Sometimes you might not be connected to the internet after SmartLink is plugged into the USB port and detected. SmartLink is identified as LAN connection and sometimes the operating system expects this to be a primary connection for accessing the internet. It is in fact not. You still have to use your LAN / WLAN for internet access and this has to be set in the operating system.
 Do the following actions to enable internet access while SmartLink is connected:
 
@@ -645,7 +647,11 @@ For a solid connection the copter should stay in the blue area. In this example,
 The system operates at 2.4 GHz, therefore, it's recommended to keep 2.4 GHz band free from other devices.
 
 ## cad model
+Download STEP files of SmartLink for integrating into your own design:
 
+[SmarLink-Air-Module-STEP.zip](SmarLink-Air-Module-STEP.zip)
+
+[SmartLink-Ground-Module-STEP.zip](SmartLink-Ground-Module-STEP.zip)
 ## FAQ
 
 A selection of FAQs asked by our customers.
