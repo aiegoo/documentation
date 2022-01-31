@@ -4102,13 +4102,9 @@ And now let's get into actually.
 
 OK so here we are.
 
-This is where we left off in the connection template file where we have our vehicle object all ready
+This is where we left off in the connection template file where we have our vehicle object all ready to go.
 
-to go.
-
-And now we're going to use this vehicle object to access some attributes of the vehicle that we're connected
-
-to.
+And now we're going to use this vehicle object to access some attributes of the vehicle that we're connected to.
 
 OK.
 
