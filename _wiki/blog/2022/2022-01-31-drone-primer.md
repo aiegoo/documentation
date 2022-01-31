@@ -5249,7 +5249,77 @@ So let's save this.
 
 - video 40 : scrpt to automatically launch QGC with dronkit script part3
 ```javascript
+OK so we're almost done with this launch style script.
 
+You just have to do a couple more things so at the top here.
+
+Let's go ahead and write these four lines and these are similar to the ones we have down here.
+
+But it kills the ports that we need to use up front at the start of the script.
+
+So we're closing down anything that's using Coogee R2 Mav and apm and let's go ahead and also add this
+
+line.
+
+The APM line down here into this function finish so once again at the beginning of the script we're
+
+closing any ports we may need.
+
+And then at the end of the script we're closing any ports that we used with these programs.
+
+And one more thing we should probably do is copy this to our kill command outputs.
+
+OK.
+
+Now our script is done.
+
+Now we just need to place it in a directory that is in our path enviromental variable so that we can
+
+reference just the file name when we want to use it and not have to specify the whole path.
+
+Let's go back into our terminal and go to the directory where you were making your launch style script
+
+from AND LET'S MAKE IT executable first.
+
+So type C H mod plus X and then launch style and then we'll list again and it should be green now.
+
+Perfect.
+
+And now let's place the launch little script in USAR slash local slash Bean who will do this following
+
+line say U.S. or slash local slash bean and then we'll hit enter here.
+
+And now we type L.A. you end and hit the tab button it should autocomplete porous.
+
+That's good.
+
+Now let's test out our lunch style function.
+
+Let's write launch style and then let's launch basic template
+
+OK.
+
+So our Siddle vehicle has been launched up
+
+and here is map proxy and now queue grab control window has launched.
+
+We didn't have to launch it manually and here we can see our drunk script is now executing.
+
+And here's our drone where the Packer stadium right the 50 yard line as security guards are coming after
+
+us.
+
+And here we are launching into the air with our arm and take off function.
+
+You can see our altitude here on the screen.
+
+We're at you know five meters.
+
+And once the script is done everything is closed automatically for us.
+
+So it's a pretty handy script that we can use here on out to automatically launch a bunch of stuff for
+
+us and automatically close about.
 ```
 
 
