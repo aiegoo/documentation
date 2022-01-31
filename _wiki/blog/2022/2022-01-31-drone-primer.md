@@ -4124,85 +4124,86 @@ And if you see this you're good to go when you've successfully installed drone k
 ```
 
 
-- video :
+- video 32 : Function to connect python script to sitl drone part1
 ```javascript
 
 ```
 
 
-- video :
+- video 33 : function to connect python script to sitl drone part2
 ```javascript
 
 ```
 
 
-- video :
+- video 34: attributes part 1
 ```javascript
 
 ```
 
-- video :
+- video 35 : attributes part 2
 ```javascript
 
 ```
 
-- video :
-```javascript
-
-```
-
-
-- video :
+- video 36 : parameters in dronekit
 ```javascript
 
 ```
 
 
-- video :
+- video 38 : script to automatically launch QGC with dronekit script part1
 ```javascript
 
 ```
 
 
-- video :
+- video 39 : script to automatically launch QGC with dronekit script part2
 ```javascript
 
 ```
 
 
-- video :
-```javascript
-
-```
-
-- video :
+- video 40 : scrpt to automatically launch QGC with dronkit script part3
 ```javascript
 
 ```
 
 
-- video :
+- video 41 : function to move drone to waypoints
+```javascript
+
+```
+
+- video 42: auto flight mode overview
 ```javascript
 
 ```
 
 
-- video :
+- video 43 : autonomous dronekit mssion with auto mode
 ```javascript
 
 ```
 
 
-- video :
+- video 44 : velocity based movement and NED sign convention
 ```javascript
 
 ```
 
-- video :
+
+- video 45 : functions to move drone wiht velocity commands
 ```javascript
 
 ```
 
+- video 46 : function to control yaw of drone
+```javascript
+
+```
+
+### section 7
 - video :
 ```javascript
 
