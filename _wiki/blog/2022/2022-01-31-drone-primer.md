@@ -1713,6 +1713,131 @@ variable.
 ```
 
 
+- video 16 : ardupilot install part2
+```javascript
+OK so in this video we're going to look around the pilot directory base a little bit.
+
+Let's pull up a terminal and let's go to of course route
+
+and there is A.P.M. will go to the A.P.M. directory.
+
+OK.
+
+We're going to be going to this directory quite a lot.
+
+So it might be a little annoying to have to do those CDs every single time so we can do is make a new
+
+environmental variable called A.P.M. that will point to this directory so we can just automatically
+
+say CD to A.P.M..
+
+It'll take us to this full path.
+
+So go ahead and type PWT and grab the full path at the A.P.M. directory is and will copy this.
+
+And then let's V-I into our DOT bash RC file types.
+
+This right here.
+
+And then hit enter
+
+and let's go to the very bottom of the file.
+
+Hit shift in G.
+
+I for insert then hit enter to make some more space.
+
+OK so now let's type export A.P.M. equals.
+
+It's paste in that directory that we just grab.
+
+There we go.
+
+And now let's hit the escape key to shift colon and then WQ and this'll save the content that we just
+
+modified.
+
+And now we've changed the bash RC file but now I need to make it official.
+
+So let's say
+
+and then hit enter.
+
+All right.
+
+Now let's echo our new environmental variable OK.
+
+So now I have an easy three letter variable that can take us to this directory whenever we want.
+
+So let's go there right now.
+
+Let's say CD dollar sign A.P.M..
+
+Here we go.
+
+It's going to ARTA pilot and let's list it and look around.
+
+You'll see we have a lot of stuff in here.
+
+Let's go over some of it.
+
+So as mentioned previously the pilot code base can be built for many different vehicle types and you
+
+can see that here and these directories you have antenna tracker A.P.M. Rover Arti copter plane Adisa.
+
+All of this is human readable source code that is specific for that vehicle.
+
+Alternatively you have this right here the library's directory in all of these vehicle types share some
+
+code in this library directory.
+
+So there may be some Kalman filters that are defined in the library's directory that can be applied
+
+to any vehicle type you might have some different math libraries things like that.
+
+And then once you compile your source code into an executable a new directory will be made and that
+
+will be the build directory and that will be where the binary compile elation of your source code will
+
+be stored.
+
+But how do we compile the code.
+
+Well the primary tool in our pilot that is used is the WAF tool and we need to specify the vehicle type
+
+and the hardware target they are compiling to.
+
+So the hardware target just means the specific piece of hardware that you want the pilot code to run
+
+on.
+
+So is it going to be running on a Pixar is it going to be running on an Aveeno.
+
+We need to install the code uniquely to fit that piece of hardware that we're compiling to.
+
+And you can see a list of the different hardware boards that are available to us by doing the following
+
+command.
+
+All right.
+
+So you'll see these are all different hardware types that we can compile to.
+
+We have a beagle bone black mini a beagle bone blew a pick's hawk for Navajo.
+
+So these are all hardware.
+
+And then the cool thing you'll see here is that our Siddall target is listed in the list board's list.
+
+Even though it's purely a software drone.
+
+So the autopilot codebase treats this purely software drone Siddall as its own hardware target type.
+
+You could think of the target type as your actual computer since that is what the virtual drone will
+
+be running from.
+```
+
 - video 17 : flight mode in ardupilot
 ```javascript
 What is going on.
