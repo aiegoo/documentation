@@ -201,15 +201,15 @@ SmartLink unboxing video
 SmartLink set includes everything needed to setup wireless communication for video, telemetry and control. A standard set contains:
 ![image](https://user-images.githubusercontent.com/42961200/151635917-dfe4f0ab-1462-426f-b5d3-ac5956cf76d7.png)
 
-SmartLink Ground module
-SmartLink Air module
-2x Air Module antennas
-2x Ground Module antennas
-CSI camera
-Telemetry cable
-HDMI cable
-Air module power cable
-Ground module power cable
+* SmartLink Ground module
+* SmartLink Air module
+* 2x Air Module antennas
+* 2x Ground Module antennas
+* CSI camera
+* Telemetry cable
+* HDMI cable
+* Air module power cable
+* Ground module power cable
 
 ## Installation
 ### Preparing Air module
@@ -296,7 +296,7 @@ The expected LEDs pattern is as shown below - blinking in turn and then all thre
 ![image](https://user-images.githubusercontent.com/42961200/151636236-bfd50a66-2f64-4ed2-abcf-0fc7c742e6a4.png)
 
 ### Software
-#### Verify SmartLink was discovered
+- Verify SmartLink was discovered
 Normally you don't need to run the steps in this section since SmartLink should be recognized automatically. But the steps in this section might be useful for establishing connection if this has not happened automatically.
 First of all, check if SmartLink ground module has been recognized properly by your computer. You should be able to see it as Ethernet device. For instance, go to the command line and type ifconfig  for MacOS / Linux or ipconfig  for Windows:
 ![image](https://user-images.githubusercontent.com/42961200/151636212-fd2e7f16-bbca-4add-813a-f7318f1b2202.png)
@@ -347,7 +347,7 @@ After that, if you go back to the World pane you will see a green joystick icon 
 
 
 ## Change Settings
-### Accessing Settings Menu
+- Accessing Settings Menu
 SmartLink has various settings which you may change to optimize the performance. To get to 's settings menu click on the Wireless Connection icon on top toolbar:
 ![image](https://user-images.githubusercontent.com/42961200/151636912-afdaddfc-965c-4b43-b012-7027d8fce1f1.png)
 
@@ -368,32 +368,44 @@ Security tab allows you to assign network name and encryption key. Connection is
 Make sure that both air and ground modules have the same network name and encryption key. Otherwise, the modules are not considered to be paired and won't connect to each other.
 
 ## API and SDK
-​ system allows real time HD video, telemetry and control from one unmanned system.  features are fully integrated into  and are compatible with most of the popular ground control station software such as QGroundControl, Mission Planner, etc.
+​[Smart Link]() system allows real time HD video, telemetry and control from one unmanned system.  [SmartLink]() features are fully integrated into  and are compatible with most of the popular ground control station software such as QGroundControl, Mission Planner, etc.
+
 Find out more on using SmartLink with other GCS devices here: ​
+
 Thanks to Sky-Drones' extensive API on the system, users can take advantage of its features in any third party software too!
-Telemetry
+
+> Telemetry
+
 To access telemetry on the ground module use the following connection:
-Type: UDP
-Host: smartlink.local
-Port: 14555
-​ will forward all autopilot telemetry to this port.
+* Type: UDP
+* Host: smartlink.local
+* Port: 14555
+​[smartLink]() will forward all autopilot telemetry to this port.
 There are two other connections available for interacting with onboard computers, other peripherals and 3rd party applications:
+
 First:
-Type: TCP
-Host: smartlink.local
-Port: 14556
+* Type: TCP
+* Host: smartlink.local
+* Port: 14556
+
 Second:
-Type: UDP
-Host: smartlink.local
-Port: 14557
-Video
+* Type: UDP
+* Host: smartlink.local
+* Port: 14557
+
+> Video
+
 To access the video on the ground module use the following address:
-Type: RTSP
-HDMI Input 1: rtsp://smartlink.local:8554/camera/0
-HDMI Input 2: rtsp://smartlink.local:8554/camera/1
+
+* Type: RTSP
+* HDMI Input 1: rtsp://smartlink.local:8554/camera/0
+* HDMI Input 2: rtsp://smartlink.local:8554/camera/1
+
 To check the video stream using a standard GStreamer pipeline use the following command:
+
 gst-launch-1.0 rtspsrc location=rtsp://smartlink.local:8554/camera/0 ! rtph264depay ! avdec_h264 ! autovideosink sync=false
-Manual Control
+
+### Manual Control
 Manual control comes as a part of other MAVLink telemetry messages. MANUAL_CONTROL message from MAVLink specification is recommended but not exclusive. You may use any manual control messages according to your specification.  will act as a transparent transfer layer just like any other telemetry module.
 
 ## Other AP / GCS Support
