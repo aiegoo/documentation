@@ -2774,9 +2774,119 @@ Arti pilot the more dangerous of a drone programmer you will be.
 
 ### section 4 GCS
 
-- video :
+- video 22 : intro to gcs
 ```javascript
+All right.
 
+So in this video we're going to go over ground control stations we've been dealing with them a little
+
+bit to this point but in this video it's going to be a little bit of a lower level approach.
+
+So what exactly is a ground control station.
+
+Essentially it's some sort of computer that can connect with a drone and communicate with it.
+
+It can be used to command the drone or monitor the drone.
+
+Commands could be you know moved to this waypoint or return to launch or things like that and monitoring
+
+information could be things like seeing what the current status of the GPS health is saying what the
+
+battery levels are like seeing how fast the drone is moving.
+
+Things like that.
+
+And typically when people refer to the ground control station they're referring to some sort of gooey
+
+but that doesn't necessarily have to be the case because Maff proxy is not a duty per se.
+
+So the bare bones ground control station is just a off board computer off board from the drone that
+
+is able to bidirectional communicate with the drone in the air.
+
+So it was just an interface into your drone.
+
+Here is a stupid analogy just in case you didn't get the picture from the last slide.
+
+So let's imagine you're a customer at your favorite local store and you're trying to communicate with
+
+the cashier Well how are you going to do that.
+
+How are we going to solve this communication problem.
+
+Well you're the customer you're going to start talking from a high level we're going to start talking
+
+to the cashier.
+
+Ok but how do we know that we're not just saying much a noise is that the cashier isn't going to know
+
+how to interpret.
+
+We both have to be sharing the same language.
+
+If I'm speaking Spanish and the cashier speaks English I can be talking all I want but the cashier isn't
+
+going to interpret anything.
+
+So we need this common medium layer that is the language barrier and that the low level we need are
+
+words that we're talking in English to transmit somehow to the cashier.
+
+And that is done through sound.
+
+So our vocal chords will create some noise and then the ears of the cashier will catch that noise the
+
+words will be interpreted as English because we're both sharing this English layer and then our words
+
+will get sent to the cashier's brain which will then be able to interpret our request and grab that
+
+package of bubble gum that we are asking them for.
+
+So here's some fancy arrows just in case you didn't get that well the same can be said for our drones
+
+in our Grand Central Station communication.
+
+So let's say we want the drone to land and let's start at the high level of the ground control station.
+
+So at this high level we have mapped proxy where we could type a command telling a drone to land or
+
+we could press a button and queue ground control that would tell the drone to land.
+
+But either way their request for the drone to land will cause a land message in the protocol to get
+
+created and that is message number 76 command number 21.
+
+So this maverick message will get created all packaged up all the ones and zeros set in place and then
+
+that package will get sent through the low level which in which could be telemetry where the magnetic
+
+message gets sent from one telemetry module to the drones telemetry model or it could be through a TCAP
+
+or UDP IP interface.
+
+But that message gets sent to the drone.
+
+But how do we interpret that message.
+
+We're both using Map link to define our speech in this case.
+
+So since we're both using that link we know already that the request that is coming in is more of a
+
+link.
+
+Message number 76 21 which means that the ground control station wants us to land.
+
+So then that interpretation will get sent to the pilot which is like the brain of the drone and R2 pilot
+
+will say hey we just got this maverick message telling us to land.
+
+I'm going to go find the appropriate code that needs to get ran and the R2 pilot code base in order
+
+to make that happen.
+
+And this can work by directionally the drone can send us information through the same process and ground
+
+control station can use that process.
 ```
 
 
