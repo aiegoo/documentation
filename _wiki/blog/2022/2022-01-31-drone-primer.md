@@ -3881,25 +3881,19 @@ BLITZER You had a security or surveillance system wanted to be able to fly your 
 
 And whenever called upon the drone would fly those mission the same way every single time.
 
-So you could say drone every 30 minutes fly this route a over here and then after you fly out a go fly
-
-it route be and record video for every mission.
+So you could say drone every 30 minutes fly this route a over here and then after you fly out a go fly it route be and record video for every mission.
 
 So that I can keep tabs on these areas of interest.
 
 Other application may be into drone communication.
 
-So as the airspace starts to get more and more crowded with drones we're going to need a method for
-
-communicating drone drone so they can keep tabs of each other and not run into each other and drone.
+So as the airspace starts to get more and more crowded with drones we're going to need a method for communicating drone drone so they can keep tabs of each other and not run into each other and drone.
 
 It could be a way to do that.
 
 So I hope you're starting to see some of the high level applications that drone kit can be applied to.
 
-So as legislation catches up with the technology things like drone kit are going to be able to be used
-
-for companies to create high level applications to use their drones in the commercial space.
+So as legislation catches up with the technology things like drone kit are going to be able to be used for companies to create high level applications to use their drones in the commercial space.
 
 ```
 
