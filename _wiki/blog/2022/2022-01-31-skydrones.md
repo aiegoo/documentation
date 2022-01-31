@@ -372,278 +372,103 @@ Right side
 Ethernet interface is decoupled with capacitors. Ethernet cable should be twisted to reduce EMI noise. Shorter cables are recommended for increased performance and higher bandwidth of the interface.
 
 > TEL3 - JST GH SM06B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-USART2_TX
-OUT
-+3.3V
-Telemetry 3 TX
-3
-USART2_RX
-IN
-+3.3V
-Telemetry 3 RX
-4
-USART2_CTS
-IN
-+3.3V
-Telemetry 3 CTS
-5
-USART2_RTS
-OUT
-+3.3V
-Telemetry 3 RTS
-6
-GND
-​
-​
-Ground
+
+|---
+| Pin number | Pin name | Direction | Voltage level | Function
+| 1 | 5V | OUT | +5V | Power supply output
+| 2 | USART2_TX | OUT | +3.3V | Telemetry 3 TX
+| 3 | USART2_RX | IN | +3.3V | Telemetry 3 RX
+| 4 | USART2_CTS | IN | +3.3V | Telemetry 3 CTS
+| 5 | USART2_RTS | OUT | +3.3V | Telemetry 3 RTS
+| 6 | GND | ​ | ​| Ground
 
 > I2C3 / UART4 - JST GH SM06B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-USART4_TX
-OUT
-+3.3V
-UART 4 TX
-3
-USART4_RX
-IN
-+3.3V
-UART 4 RX
-4
-I2C3_SCL
-I/O
-+3.3V
-I2C3 Clock
-5
-I2C3_SDA
-I/O
-+3.3V
-I2C3 Data
-6
-GND
-​
-​
-Ground
+
+|---
+| Pin number | Pin name | Direction | Voltage level | Function
+| 1 | 5V | OUT | +5V | Power supply output
+| 2 | USART4_TX | OUT | +3.3V | UART 4 TX
+| 3 | USART4_RX | IN | +3.3V | UART 4 RX
+| 4 | I2C3_SCL | I/O | +3.3V | I2C3 Clock
+| 5 | I2C3_SDA | I/O | +3.3V | I2C3 Data
+| 6 | GND | ​ | ​ | Ground
 
 > GPS2 - JST GH SM06B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-USART8_TX
-OUT
-+3.3V
-UART 8 TX GPS2
-3
-USART8_RX
-IN
-+3.3V
-UART 8 RX GPS2
-4
-I2C2_SCL
-I/O
-+3.3V
-I2C2 Clock
-5
-I2C2_SDA
-I/O
-+3.3V
-I2C2 Data
-6
-GND
-​
-​
-Ground
+
+|---
+| Pin number | Pin name | Direction  | Voltage level | Function
+| 1 | 5V | OUT | +5V | Power supply output
+| 2 | USART8_TX | OUT | +3.3V | UART 8 TX GPS2
+| 3 | USART8_RX | IN | +3.3V | UART 8 RX GPS2
+| 4 | I2C2_SCL | I/O | +3.3V | I2C2 Clock
+| 5 | I2C2_SDA | I/O | +3.3V | I2C2 Data
+| 6 | GND | ​| ​| Ground
+
 {% include note.html content=" AIRLink has integrated 1.5KΩ pull-up resistors for all I2C lines. No external pull-up resistors required. " %}
 
 
-FMU USB - USB Type C
-SIM Card - micro SIM
-HDMI - mini HDMI
-Front side
+- FMU USB - USB Type C
+- SIM Card - micro SIM
+- HDMI - mini HDMI
+- Front side
 ![image](https://user-images.githubusercontent.com/42961200/151563845-893a1d85-d601-4146-97a0-37d87e088171.png)
 
 Front side
-Main GNSS and compass port
-Main telemetry port
-CSI camera input
-CAN 1
-CAN 2
+- Main GNSS and compass port
+- Main telemetry port
+- CSI camera input
+- CAN 1
+- CAN 2
 
 > TEL1 - JST GH SM06B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-USART7_TX
-OUT
-+3.3V
-Telemetry 1 TX
-3
-USART7_RX
-IN
-+3.3V
-Telemetry 1 RX
-4
-USART7_CTS
-IN
-+3.3V
-Telemetry 1 CTS
-5
-USART7_RTS
-OUT
-+3.3V
-Telemetry 1 RTS
-6
-GND
-​
-​
-Ground
+
+
+|---
+| Pin number | Pin name | Direction | Voltage level | Function
+| 1 | 5V | OUT | +5V | Power supply output
+| 2 | USART7_TX | OUT | +3.3V | Telemetry 1 TX
+| 3 | USART7_RX | IN | +3.3V | Telemetry 1 RX
+| 4  | USART7_CTS | IN | +3.3V | Telemetry 1 CTS
+| 5 | USART7_RTS | OUT | +3.3V | Telemetry 1 RTS
+| 6 | GND | ​ | ​| Ground
 
 > GPS1 - JST GH SM10B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-USART1_TX
-OUT
-+3.3V
-GPS 1 TX
-3
-USART1_RX
-IN
-+3.3V
-GPS 1 RX
-4
-I2C1_SCL
-I/O
-+3.3V
-MAG 1 Clock
-5
-I2C1_SDA
-I/O
-+3.3V
-MAG 1 Data
-6
-SAFETY_BTN
-IN
-+3.3V
-Safety button
-7
-SAFETY_LED
-OUT
-+3.3V
-Safety LED
-8
-+3V3
-OUT
-+3.3V
-3.3V output
-9
-BUZZER
-OUT
-+5V
-Buzzer output
-10
-GND
-​
-​
-Ground
+
+
+|---
+| Pin number | Pin name | Direction | Voltage level | Function
+| 1 | 5V | OUT | +5V | Power supply output
+| 2 | USART1_TX | OUT | +3.3V | GPS 1 TX
+| 3 | USART1_RX | IN | +3.3V | GPS 1 RX
+| 4 | I2C1_SCL  | I/O | +3.3V | MAG 1 Clock
+| 5 | I2C1_SDA | I/O | +3.3V | MAG 1 Data
+| 6 | SAFETY_BTN | IN | +3.3V | Safety button
+| 7 | SAFETY_LED | OUT | +3.3V | Safety LED
+| 8 | +3V3 | OUT | +3.3V | 3.3V output
+| 9 | BUZZER | OUT | +5V | Buzzer output
+| 10 | GND | ​ | ​ | Ground
 
 > CAN1 - JST GH SM04B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-CAN1_H
-I/O
-+5V
-CAN 1 High (120Ω)
-3
-CAN1_L
-I/O
-+5V
-CAN 1 Low (120Ω)
-4
-GND
-​
-​
-Ground
+
+
+
+|---
+| Pin number | Pin name | Direction | Voltage level | Function
+| 1 | 5V | OUT | +5V | Power supply output
+| 2 | CAN1_H  | I/O | +5V | CAN 1 High (120Ω)
+| 3 | CAN1_L | I/O | +5V | CAN 1 Low (120Ω)
+| 4 | GND | ​ | ​ | Ground
 
 > CAN2 - JST GH SM04B-GHS-TB
-Pin number
-Pin name
-Direction
-Voltage level
-Function
-1
-5V
-OUT
-+5V
-Power supply output
-2
-CAN2_H
-I/O
-+5V
-CAN 2 High (120Ω)
-3
-CAN2_L
-I/O
-+5V
-CAN 2 Low (120Ω)
-4
-GND
-​
-​
-Ground
+
+
+
+|---
+| Pin number | Pin name | Direction | Voltage level | Function
+| 1 | 5V | OUT | +5V | Power supply output
+| 2 | CAN2_H | I/O  | +5V | CAN 2 High (120Ω)
+| 3 | CAN2_L | I/O | +5V | CAN 2 Low (120Ω)
+| 4 | GND | ​ | ​ | Ground
 
 {% include note.html content="AIRLink has integrated 120Ω CAN bus termination resistor. To comply with ISO 11898 user the second 120Ω resistor at the other end of the bus." %}
 CAMERA - FPC 30 pin, 0.5mm pitch
@@ -651,10 +476,10 @@ Rear side
 ![image](https://user-images.githubusercontent.com/42961200/151564268-b1866bc0-adfd-4870-8af9-40f1eda4de65.png)
 
 Read side
-SBUS input
-16 PWM output channels
-2x LTE antenna sockets (MIMO)
-WiFi antenna socket (AP & Station modes)
+_ SBUS input
+_ 16 PWM output channels
+_ 2x LTE antenna sockets (MIMO)
+_ WiFi antenna socket (AP & Station modes)
 
 ### Serial ports mapping
 SmartAP AIRLink has a large number of serial ports with the following pinout:
