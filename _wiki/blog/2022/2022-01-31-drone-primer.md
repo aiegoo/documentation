@@ -3657,19 +3657,9 @@ As long as you can make a packet with the standard structure and send the packet
 
 - video 29 : mavlink message example
 ```php
-OK so in the last video we got into the first layer of math link or the standard message structure in
+OK so in the last video we got into the first layer of math link or the standard message structure in this video we're going to look at how we can change the message ID to vary the types of messages that are sent with the standard message structure the standard message ids will let the receiving maverick node know how to parse the incoming data and what action should be taken.
 
-this video we're going to look at how we can change the message ID to vary the types of messages that
-
-are sent with the standard message structure the standard message ids will let the receiving maverick
-
-node know how to parse the incoming data and what action should be taken.
-
-Upon receiving the specific message ID the standard also tells the sending raveling Note how to package
-
-up the data into a correctly formatted packets if you want to check out the list of standard Madelin
-
-messages you can check out this link below.
+Upon receiving the specific message ID the standard also tells the sending raveling Note how to package up the data into a correctly formatted packets if you want to check out the list of standard Madelin messages you can check out this link below.
 
 But let's get into a couple of other examples.
 
