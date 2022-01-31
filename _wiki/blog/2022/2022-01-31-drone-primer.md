@@ -3651,11 +3651,7 @@ in the byte above it.
 
 So this is all what makes Madelin a programming language agnostic communication tool.
 
-As long as you can make a packet with the standard structure and send the packet to the drone it doesnt
-
-really matter what programming language you use the next video we will take a look at the message ID
-
-and data portions of the modeling protocol for some popular messages.
+As long as you can make a packet with the standard structure and send the packet to the drone it doesnt really matter what programming language you use the next video we will take a look at the message ID and data portions of the modeling protocol for some popular messages.
 ```
 
 
