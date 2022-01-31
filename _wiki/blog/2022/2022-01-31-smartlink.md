@@ -246,16 +246,17 @@ The setup should look as follows:
 ![image](https://user-images.githubusercontent.com/42961200/151636509-574bb8b2-2644-4968-90f8-221a4658e3b6.png)
 
 In this example we demonstrate with a GoPro Hero 6 video camera with 1080p@60fps video output. SmartLink is capable of capturing the following video source types:
-1080p@60fps
-1080p@30fps
-720p@60fps
-720p@30fps
+* 1080p@60fps
+* 1080p@30fps
+* 720p@60fps
+* 720p@30fps
 
 ### Preparing Ground module
 Attach antennas to the ground module:
 ![image](https://user-images.githubusercontent.com/42961200/151636491-9c636817-0dd7-41d8-aa93-35f5f5236f9a.png)
 
 By default, 5 dBi antennas come included in the set. Depending on your specific applications you might choose to use alternative antennas designed for 2.4 GHz band.
+
 Connect your micro USB cable and power cable to the ground module as shown below:
 ![image](https://user-images.githubusercontent.com/42961200/151636481-53954509-d209-4b85-834d-7defb6eb392b.png)
 
@@ -263,9 +264,13 @@ If you would like to use custom antennas, please contact us here
 
 ### Power supply
 Ground module supports any power supply source with a voltage ranging from 10V to 50V. We recommend to use 3S or 4S LiPo battery to power the ground module. The typical current for 3S battery power is around 1A at maximum power output.
+
 Air module is 5V tolerant only. Peak current can be up to 3A, therefore make sure to provide a powerful, stable and reliable power supply to the air module. We highly recommend to use SmartAP PDB 5V output port to power SmartLink. SmartAP PDB has 5V at 5A max power output which powers SmartLink perfectly.
+
+{{site.data.alerts.callout_danger}}
 DANGER: AIR MODULE IS 5V-ONLY TOLERANT. POWERING THE MODULE WITH HIGHER VOLTAGE MAY CAUSE PERMANENT DAMAGE TO THE SYSTEM. IT IS HIGHLY RECOMMENDED TO POWER FROM SMARTAP PDB 5V OUTPUT
 Please note that warranty is void if air module is powered with a source above 5V.
+{{site.data.alerts.end}}
 ![image](https://user-images.githubusercontent.com/42961200/151636467-8c1f63b4-9193-4056-adba-a16248f36e61.png)
 
 Connect two power leads to SmartAP PDB 5V output. SmartAP PDB can be powered from 3S-12S LiPo battery. We power it from laboratory power supply for this demonstration (15V).
@@ -273,10 +278,10 @@ Connect two power leads to SmartAP PDB 5V output. SmartAP PDB can be powered fro
 
 ### Autopilot
 SmartLink system is compatible with any autopilot which has TTL UART telemetry port. For instance, it's compatible with:
-SmartAP Autopilot
-Pixhawk series Autopilot
-APM series Autopilot
-other TTL UART telemetry port autopilots
+* SmartAP Autopilot
+* Pixhawk series Autopilot
+* APM series Autopilot
+* other TTL UART telemetry port autopilots
 For this demonstration we use [SmartAP MAX](https://sky-drones.com/smartap-max) Autopilot from Sky-Drones:
 ![image](https://user-images.githubusercontent.com/42961200/151636361-25e2794f-3fa9-4e4e-9821-1cb1b0e2172a.png)
 
