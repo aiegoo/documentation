@@ -3998,9 +3998,7 @@ So let's pull up another terminal and let's go to drone pit.
 
 And if the and if that connection template file isn't there.
 
-It's in the course root directory so we'll just move the connection template from the coarse root directory
-
-to our drumkit directory.
+It's in the course root directory so we'll just move the connection template from the coarse root directory to our drumkit directory.
 
 All right.
 
@@ -4008,23 +4006,15 @@ There it is.
 
 OK so let's launch this python file first we're typing Python and then connection with that pie.
 
-Now we need to specify the IP address to connect to when we use our dash dash connect our parse option
+Now we need to specify the IP address to connect to when we use our dash dash connect our parse option and now we need the IP address and we'll use this one right here and then we'll enter ok cool.
 
-and now we need the IP address and we'll use this one right here and then we'll enter ok cool.
-
-So this script we made just successfully input this IP address to the file it connected to the vehicle
-
-and it successfully found that the Siddall vehicle we were using is using the A.P.M. copter software
-
-version three point five point five.
+So this script we made just successfully input this IP address to the file it connected to the vehicle and it successfully found that the Siddall vehicle we were using is using the A.P.M. copter software version three point five point five.
 
 And also recognize that the frame pipe was a quad copter.
 
 So this verifies that we successfully connected our script to our Siddall vehicle.
 
-And now that we have this basic functionality we'll be able to do some cooler stuff later on in subsequent
-
-videos.
+And now that we have this basic functionality we'll be able to do some cooler stuff later on in subsequent videos.
 
 ```
 
