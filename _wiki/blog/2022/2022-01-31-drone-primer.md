@@ -6019,7 +6019,169 @@ space.
 
 - video 45 : functions to move drone wiht velocity commands
 ```javascript
+What's up with it.
 
+So last video we got familiar with the frames of reference that we can use to command our drone in this
+
+video we're going to actually make the functions to command our drone with velocities.
+
+And the main thing to know is in order to maintain a steady state velocity for your drone you're going
+
+to have to send that velocity vector every one second.
+
+So the drone will only act on an incoming velocity command for one second.
+
+So let's get into it.
+
+Let's go to of course.
+
+And then drone get and let's copy basic template and we'll make a new file called Velocity underscore
+
+based underscore movement and then we'll edit into that.
+
+All right so here we are.
+
+And since we have two different frames of reference we're going to make two different functions to command
+
+our drone with velocities in two different frames.
+
+OK.
+
+So here's our local velocity function calling it send a local any velocity and we input velocities and
+
+the x y z components.
+
+So here we're actually making Emmanuel Magelang message with the vehicle that message factory command.
+
+And we get to populate all the different fields to get the unique behavior that we are requesting.
+
+So here we're specifying the frame of reference to use and this will get us in the local frame of reference.
+
+And this is where our velocities go.
+
+So we pass and velocities at the call of the function.
+
+And those get mapped to these fields and the message per map link that we're making.
+
+And then that will create the message factory will create a new message that we're saving here to this
+
+message object.
+
+And then we can actually send the vehicle that we're connected to Maverick messages through the vehicle
+
+that send map link function.
+
+So we'll send this message that we just created and this will be a velocity command that the drone will
+
+act on for one second and then we can say vehicle about plus just to make sure that we flush out any
+
+messages that might be in our cash.
+
+And the global velocity command is going to be very similar as you can see it's almost identical.
+
+We have seven global med wasse in said local net velocity what they all do the same thing.
+
+The only thing we changed was the frame of reference.
+
+I know it's a little confusing that it's local Ned that we're using for a global velocity but it's local
+
+to the earth.
+
+All right so let's put these functions to the test.
+
+So right now we have our vehicle connection and we're up in the air.
+
+So now let's start using these commands.
+
+OK so first let's use our local net velocity command.
+
+And remember the first component is X and Y and Z.
+
+So here we're talking the drone to move forward relative to the front of the drone at five meters per
+
+second.
+
+So this won't be true north.
+
+Will be relative to the drones front and then also remember that the drone will only act on our velocity
+
+command for one second.
+
+So we're making a counter equal to zero and we're iterating the counter by one every while loop iteration
+
+and we're sleeping for one second every iteration.
+
+So once counter is not less than five this while loop will break out.
+
+So this will let us fly in this direction for five seconds and then we'll sleep a little bit.
+
+We'll sleep for two seconds and then we'll do the same thing and just change the components a little
+
+bit to give you an idea of what's going on.
+
+We'll switch to minus five so this will fly in the west direction relative to the drones front.
+
+Now let's do the same thing but use the global net velocity.
+
+So we just copy pasted what we had above and we changed the send local blossomy to send global never
+
+lost.
+
+And we changed our print message out from moving north to moving true north and moving through west
+
+and then at the end let's just say while true do nothing so that we can keep new ground control up and
+
+running and let's do one more while block to show you the z component.
+
+So since we're only moving up and down I'm going to show you that the z axis is the same for both global
+
+and local frames.
+
+So if we're sending a minus five and here we're going to actually be moving up since it's positive down
+
+and this can be a little counter-intuitive.
+
+So I'm just going to throw this in here to kind of drive that point home.
+
+You want that job to move up into the air.
+
+If the pass sent a minus number and we'll do that with the local velocity command and then we'll move
+
+down bypassing in a positive number for the z component and we'll use the global velocity to show you
+
+that they both use the same sign convention on the up and down axis OK.
+
+So let's save this and see what the heck happens.
+
+And then before we launch the script let's make sure that we have imported the mabbe still function
+
+from PI mabbe link.
+
+Now it should be good to go.
+
+Let's pull up terminal and launch the script.
+
+All right.
+
+So here is our drone it is pointing true south which means the front of the drone is pointing to south.
+
+And since our first command tells the Jo-An to move north relative to where it's pointing then it should
+
+start to move in the south direction with Arndt's or at our target altitude.
+
+And there it goes moving north relative to front of drone moving through South but north relative to
+
+the front now are moving west.
+
+So even though this is East we're moving west because that is what the drones relative frame is now
+
+are moving toward north relative to the earth.
+
+And now we're moving back through West and then the last will be we move up in altitude.
+
+You know it passed an A minus number moved up and now we're going to be moving down that we passed in
+
+a positive number into the velocity component for the z and it.
 ```
 
 - video 46 : function to control yaw of drone
