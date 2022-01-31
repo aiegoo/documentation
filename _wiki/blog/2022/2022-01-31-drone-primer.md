@@ -30,7 +30,7 @@ updated: 2022-01-31 16:32
 ### scripts
 - video 1: course overview
 
-```javascript
+```php
 OK so in this video we're going to look at the format and content that will be covered in this lecture
 
 series.
@@ -107,7 +107,7 @@ possible and it may help students coming behind you to view the answers that are
 ```
 
 - video 2 : fulld rone system overview
-```javascript
+```php
 What's going on everyone in this video we're going to look at the typical drone set up from a high level
 
 and gain an understanding of what each component of the system does.
@@ -414,7 +414,7 @@ back to this video.
 ```
 
 - video 3 : drone basics and flight jargon
-```javascript
+```php
 All right.
 
 So in this video we're going to go over some basic drone pieces of knowledge.
@@ -590,7 +590,7 @@ The heading is just the direction that the vehicle is currently moving.
 
 #### section 2
 - video 4 : Different methods for workstation
-```javascript
+```php
 OK so we're about to get into all the exciting drone programming and stuff.
 
 But before we can you know have an environment to code on.
@@ -656,7 +656,7 @@ on your own.
 
 
 - video 5 : setting up preconfigured and
-```javascript
+```php
 So this link right here if you go to this link and download it it's just a zip file that has all of
 
 the pre written junket scripts in the launch style script.
@@ -844,7 +844,7 @@ Let me know if you have any questions.
 
 
 - video 7: virtualization check
-```javascript
+```php
 All right.
 
 So before we progress and start creating our virtual machine with Virtual Box we have one step to do
@@ -876,7 +876,7 @@ next video where we'll start creating our virtual machine.
 
 
 - video 8 : virtualbox install and ubuntu download
-```javascript
+```php
 All right so in this video we're going to install a virtual box and download our mood to image that
 
 we'll be using in this course.
@@ -966,7 +966,7 @@ to the next video.
 
 
 - video 9 : virtual machine setup
-```javascript
+```php
 All right.
 
 So at this point we should have our virtual box all installed and ready to go.
@@ -1201,7 +1201,7 @@ by just going into settings and then playing around with the virtual machine har
 ```
 
 - video 10:
-```javascript
+```php
 IMPORTANT!! DO NOT UPGRADE TO UBUNTU 18!!
 
 After you install and launch Ubuntu 16 on your Virtual Machine and first login, you will at some point be prompted to upgrade to Ubuntu 18.04. DO NOT DO THIS!!!!! The course material has only been tested on Ubuntu 16.04, and you will likely run into bugs on Ubuntu 18.04. Upgrade at your own peril :)
@@ -1209,7 +1209,7 @@ After you install and launch Ubuntu 16 on your Virtual Machine and first login, 
 
 
 - video 11: ubunut install
-```javascript
+```php
 Aren't so in the last video we set up our virtual machine by allocating the real hardware resources
 
 that we will dedicate to a virtual machine and then we pointed our operating system image that will
@@ -1295,7 +1295,7 @@ This may take about 10 minutes.
 
 
 - video 12:
-```javascript
+```php
 IMPORTANT!! DO NOT UPGRADE PIP OR USE SUDO PIP
 
 In the video, I make two mistakes. Please follow the below instructions to modify the instructions for the next video.
@@ -1307,7 +1307,7 @@ In the video, I make two mistakes. Please follow the below instructions to modif
 
 
 - video 12: dependencies install
-```javascript
+```php
 All right.
 
 So in this video we're going to be setting up our Linux environment that we're going to be running the
@@ -1409,7 +1409,7 @@ And now if we hit Enter we can navigate to a course route from any part of the s
 
 ### section 3
 - video 14: Ardupilot introduction
-```javascript
+```php
 What's up in this video we're going to get into a little bit.
 
 Do you pilot the history where it's going and why it's important.
@@ -1618,7 +1618,7 @@ world in the future.
 ```
 
 - video 15: ardupilot install part 1
-```javascript
+```php
 So in this video we're going to install and initialize the already private repository that we're going
 
 to get from.
@@ -1714,7 +1714,7 @@ variable.
 
 
 - video 16 : ardupilot install part2
-```javascript
+```php
 OK so in this video we're going to look around the pilot directory base a little bit.
 
 Let's pull up a terminal and let's go to of course route
@@ -1839,7 +1839,7 @@ be running from.
 ```
 
 - video 17 : flight mode in ardupilot
-```javascript
+```php
 What is going on.
 
 So in this video we're going to check out some of the flight modes that are available to us in the pilot
@@ -1965,7 +1965,7 @@ detail for that particular flight mode.
 
 
 - video 18 : Sitl introduction
-```javascript
+```php
 All right so in this video we're going to launch our very first Siddall drone that is our simulated
 
 vehicle that we can interact with as if it's a real drone but we don't have to spend a dime you know
@@ -2397,13 +2397,13 @@ get to learn all the tools we need for free because all of this is open source.
 
 
 - video 19 : DEBUG view missint from map window
-```javascript
+```php
 no transcript
 ```
 
 
 - video 20: parameters in ardupilot
-```javascript
+```php
 What is up.
 
 So in this video we're going to learn about parameters in our pilot.
@@ -2570,7 +2570,7 @@ on what software version you're using.
 ```
 
 - video 21: parameters with sitl drone and mav proxy
-```javascript
+```php
 All right.
 
 So we learned a little bit about parameters in the last video in this video.
@@ -2775,7 +2775,7 @@ Arti pilot the more dangerous of a drone programmer you will be.
 ### section 4 GCS
 
 - video 22 : intro to gcs
-```javascript
+```php
 All right.
 
 So in this video we're going to go over ground control stations we've been dealing with them a little
@@ -2891,7 +2891,7 @@ control station can use that process.
 
 
 - video 23 : mavproxy overview
-```javascript
+```php
 What's crackin.
 
 So in this video we're going to check out Maff proxy and talk about in a little more depth.
@@ -2947,7 +2947,7 @@ link messages to communicate with your drone.
 
 
 - video 24 : connecting mavproxy to drone
-```javascript
+```php
 All right so in the last video we got a short little introduction to Matt proxy and this video we're
 
 going to manually connect a math proxy to our Siddall drone.
@@ -3055,7 +3055,7 @@ Back to your drone with MAP proxy on your own.
 ```
 
 - video 25 : QGC install
-```javascript
+```php
 All right.
 
 So we're starting to get pretty you with MAP proxy to this point.
@@ -3186,7 +3186,7 @@ videos from here on out we'll be using both map proxy in Q and control at the sa
 ```
 
 - video 26 : connecting qgc to sitl drone
-```javascript
+```php
 All right so in this video we're going to connect multiple ground control stations to a singles Sudol
 
 vehicle.
@@ -3305,7 +3305,7 @@ setting.
 
 
 - video 27 : mavproxy commands
-```javascript
+```php
 What is up.
 
 So in this video we're going to take a deeper look at some of the math proxy commands we have available
@@ -3592,7 +3592,7 @@ actually do on your drone if you're interested in that.
 ### section 5 mavlink
 
 - video 28 : itnro to mavlink
-```javascript
+```php
 So to this point we have been thinking and talking about Madeleine from a high level perspective.
 
 And in this video we're going to take a lower level dive into the nitty gritty part of math.
@@ -3738,7 +3738,7 @@ and data portions of the modeling protocol for some popular messages.
 
 
 - video 29 : mavlink message example
-```javascript
+```php
 OK so in the last video we got into the first layer of math link or the standard message structure in
 
 this video we're going to look at how we can change the message ID to vary the types of messages that
@@ -3916,7 +3916,7 @@ already pilot code base to enact that request by calling the correct code.
 ### section 6 dronekit
 
 - video 30 : intro to dronekit
-```javascript
+```php
 OK so in this video we're going to talk a little bit about trone kit.
 
 We're going to see first what it is and then why it's so powerful.
@@ -4090,7 +4090,7 @@ for companies to create high level applications to use their drones in the comme
 ```
 
 - video 31 : dronekit install
-```javascript
+```php
 All right so in this video we're going to install the Schroen kit in drone kits Siddall packages from
 
 the Python Pipp package installer.
@@ -4125,7 +4125,7 @@ And if you see this you're good to go when you've successfully installed drone k
 
 
 - video 32 : Function to connect python script to sitl drone part1
-```javascript
+```php
 OK so in the last video we downloaded the drone kit Python packages to our system and this video we're
 
 going to start messing around drumkit a little bit and we're going to make our first function that will
@@ -4286,7 +4286,7 @@ videos.
 
 
 - video 33 : function to connect python script to sitl drone part2
-```javascript
+```php
 Book.
 
 So I'm back in our connection template file that we made in the last video.
@@ -4361,7 +4361,7 @@ deal with all that manual work later on.
 
 
 - video 34: attributes part 1
-```javascript
+```php
 OK so now we have a function that can be used to connect our script to our drone.
 
 And once we have that vehicle object or that model of the drone that we've connected to we can begin
@@ -4526,7 +4526,7 @@ So the next video we're going to get into setting the values of attributes inste
 ```
 
 - video 35 : attributes part 2
-```javascript
+```php
 All right.
 
 So in the last video we got introduced to attributes a little bit and how he can read in attributes
@@ -4739,7 +4739,7 @@ drone is now spinning its motors
 ```
 
 - video 36 : parameters in dronekit
-```javascript
+```php
 What's crackin.
 
 So we dealt with parameters a little bit to this point already but we haven't done it in trone kit.
@@ -4839,7 +4839,7 @@ So you wouldn't have to manually do this every single time.
 
 
 - video 37 : functions to arm and takeoff
-```javascript
+```php
 Ole Miss Amigo's in this video we're going to make a function called Armond take off that will be designed
 
 to arm the drone and take off into the air to a specified altitude and this function in conjunction
@@ -4985,7 +4985,7 @@ We got reported that target altitude was reached and now our drone is hovering i
 ```
 
 - video 38 : script to automatically launch QGC with dronekit script part1
-```javascript
+```php
 A case or at a point now and truncate where we can connect to our Siddall vehicle or a real vehicle
 
 at an IP address and we can arm the drone and take it off into the air which is really cool because
@@ -5029,7 +5029,7 @@ automatically for us.
 
 
 - video 39 : script to automatically launch QGC with dronekit script part2
-```javascript
+```php
 All right.
 
 So let's make our launch a little script.
@@ -5248,7 +5248,7 @@ So let's save this.
 
 
 - video 40 : scrpt to automatically launch QGC with dronkit script part3
-```javascript
+```php
 OK so we're almost done with this launch style script.
 
 You just have to do a couple more things so at the top here.
@@ -5324,7 +5324,7 @@ us and automatically close about.
 
 
 - video 41 : function to move drone to waypoints
-```javascript
+```php
 All right.
 
 So to this point now we have our lunch Siddall convenience script that we'll be able to do a bunch of
@@ -5528,7 +5528,7 @@ to land.
 ```
 
 - video 42: auto flight mode overview
-```javascript
+```php
 What's going on everyone.
 
 So we've been using the guiding light mode pretty heavily to this point and in this video we're going
@@ -5642,7 +5642,7 @@ on an economist mission.
 
 
 - video 43 : autonomous dronekit mssion with auto mode
-```javascript
+```php
 What's going on.
 
 So in this video we're going to see what the auto flight mode does in practice on our Siddall drone.
@@ -5870,7 +5870,7 @@ guided mode because you still have the reins of your python script while the dro
 
 
 - video 44 : velocity based movement and NED sign convention
-```javascript
+```php
 All right so we're getting pretty rehearsed in the arts of location based movement be it with guided
 
 flight mode where we specify a waypoint to fly to or with the auto flight mode where we put waypoints
@@ -6018,7 +6018,7 @@ space.
 
 
 - video 45 : functions to move drone wiht velocity commands
-```javascript
+```php
 What's up with it.
 
 So last video we got familiar with the frames of reference that we can use to command our drone in this
@@ -6185,7 +6185,7 @@ a positive number into the velocity component for the z and it.
 ```
 
 - video 46 : function to control yaw of drone
-```javascript
+```php
 OK so now we're going to figure out how to control the drones.
 
 Yeah.
@@ -6343,7 +6343,7 @@ That is how you do basic yawning in drone kit.
 
 ### section 7
 - video :
-```javascript
+```php
 Congratulations you've made it through the drone programming primer for software development course.
 
 We've covered a lot of ground and I think you now have the introductory foundation to take on more difficult
@@ -6439,7 +6439,7 @@ I'm excited to see what you will build with this new knowledge that you've obtai
 
 
 - video 48 : build codable drone
-```javascript
+```php
 All right.
 
 Congratulations.
@@ -6545,36 +6545,36 @@ And it's simply landing now.
 
 
 - video :
-```javascript
+```php
 
 ```
 
 
 - video :
-```javascript
+```php
 
 ```
 
 
 - video :
-```javascript
+```php
 
 ```
 
 - video :
-```javascript
-
-```
-
-
-- video :
-```javascript
+```php
 
 ```
 
 
 - video :
-```javascript
+```php
+
+```
+
+
+- video :
+```php
 
 ```
 {% include taglogic.html %}
