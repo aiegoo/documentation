@@ -14,7 +14,7 @@ summary: "Mon, Jan 31, 22, sample3 from sass2 product2 sample3"
 excerpt_separator: <!--more-->
 toc: true
 public: true
-parent: [[Wiki-Setting-Category]] 
+parent: [[Wiki-Setting-Category]]
 date: 2022-01-31T14:40:58 +0900
 updated: 2022-01-31 14:40
 folder: product2
@@ -31,22 +31,23 @@ youtubeID2: nbthu_aaUGg
 SmartLink is a broadband digital datalink with an integrated onboard computer. Two HD video channels, telemetry and control with ultra-low latency and a range of up to 20 km.
 ![image](https://user-images.githubusercontent.com/42961200/151624340-a9195014-e734-484b-b71d-99981acee473.png)
 
-SmartLink Launch Webinar
+> SmartLink Launch Webinar
+
 Recording of the LIVE webinar hosted by Sky-Drones Founder & CEO Kirill Shilov demonstrating the most advanced drone connectivity unit - SmartLink.
 
 {% include youtubePlayer.html id=page.youtubeID %}
 
-Description
+> Description
 
 ### Air module
 ![image](https://user-images.githubusercontent.com/42961200/151624548-ab9b8846-560f-4bb5-8ece-4a1354507ca7.png)
 
-​ Air is based on a powerful quad-core ARM Cortex A53 SoC (system-on-chip) computer running Linux. The system is capable of handling two real time HD video streams from cameras (CSI and HDMI), autopilot telemetry and control. It has an abundant supply of resources for user applications with various interfaces including USB, UART, I2C, and SPI allowing users to connect their desired payloads and tightly integrate it with their flight controller and / or ground control station. LTE connection is also available and is operated by plug and play technology.
+​[SmartLink]() Air is based on a powerful quad-core ARM Cortex A53 SoC (system-on-chip) computer running Linux. The system is capable of handling two real time HD video streams from cameras (CSI and HDMI), autopilot telemetry and control. It has an abundant supply of resources for user applications with various interfaces including USB, UART, I2C, and SPI allowing users to connect their desired payloads and tightly integrate it with their flight controller and / or ground control station. LTE connection is also available and is operated by plug and play technology.
 
 ### Ground module
 ![image](https://user-images.githubusercontent.com/42961200/151624572-2fe99cd0-8114-45f7-b975-970d48be1439.png)
 
-Ground module is extremely compact and lightweight. It has a micro USB connector to interact with any kind of device - laptops, smartphones, tablets, and desktop computers are all supported. All you need to do is connect it and open the  application. Ground module features an active cooling system which allows the module to withstand high ambient temperatures making it even more reliable in harsher environments. 2x2 MIMO technology provides higher bandwidth, lower latency and longer range.
+Ground module is extremely compact and lightweight. It has a micro USB connector to interact with any kind of device - laptops, smartphones, tablets, and desktop computers are all supported. All you need to do is connect it and open the [SmartAPGCS]() application. Ground module features an active cooling system which allows the module to withstand high ambient temperatures making it even more reliable in harsher environments. 2x2 MIMO technology provides higher bandwidth, lower latency and longer range.
 
 ### How it works
 ![image](https://user-images.githubusercontent.com/42961200/151624637-d5d3bc1f-e0ac-4058-90f6-110404cec236.png)
@@ -54,15 +55,15 @@ Ground module is extremely compact and lightweight. It has a micro USB connector
 ### Included in your set
 ![image](https://user-images.githubusercontent.com/42961200/151624663-9676bae1-7bf0-4d43-9a9c-ea012b7eef3e.png)
 
-SmartLink Ground Module
-SmartLink Air Module
-2x Air Module antennas
-2x Ground Module antennas
-CSI Camera
-Telemetry cable
-HDMI cable
-Air Module power cable
-Ground Module power cable
+* SmartLink Ground Module
+* SmartLink Air Module
+* 2x Air Module antennas
+* 2x Ground Module antennas
+* CSI Camera
+* Telemetry cable
+* HDMI cable
+* Air Module power cable
+* Ground Module power cable
 
 ### Interfaces
 ![image](https://user-images.githubusercontent.com/42961200/151624700-1622f0b7-70bd-4246-a066-a21757804d9c.png)
@@ -71,164 +72,120 @@ Ground Module power cable
 ![image](https://user-images.githubusercontent.com/42961200/151624749-6649779e-0760-4e44-9e8b-7818d3ea40c4.png)
 
 SmartLink was specifically designed to be used with  - our powerful cross-platform ground control station.  supports:
-2x HD video streams display
-Full camera controls
-Video recording on microSD card
-Image capture on microSD card
-Radio settings configuration
-Drone control joystick
-Payload control joystick
-​ can be used on any platform and operating system including MacOS, Windows, iOS, Android and Linux. The software provides all status information on radio link including RSSI, SNR and allows you to dynamically change all major settings. For instance, operating frequency, bandwidth or power can be changed with one click. Remote module configuration is done automatically via the ground module.
-Throughput and signal strength
-Range, km
-Modulation
-Throughput, Mbps
-Sensitivity, dBm
-0 - 0.3 km
-64QAM_5/6
-27.8
--81
-0.3 - 1 km
-64QAM_3/4
-25.5
--83.5
-1 - 2 km
-64QAM_2/3
-22.8
--85
-2 - 4 km
-16QAM_3/4
-17.1
--90
-4 - 8 km
-16QAM_1/2
-11.6
--92
-8 - 12 km
-QPSK_3/4
-8.8
--96
-12 - 15 km
-QPSK_1/2
-5.9
--98
-15 - 20 km
-BPSK_1/2
-3
--99.5
+* 2x HD video streams display
+* Full camera controls
+* Video recording on microSD card
+* Image capture on microSD card
+* Radio settings configuration
+* Drone control joystick
+* Payload control joystick
+​[SmartAP GCS]() can be used on any platform and operating system including MacOS, Windows, iOS, Android and Linux. The software provides all status information on radio link including RSSI, SNR and allows you to dynamically change all major settings. For instance, operating frequency, bandwidth or power can be changed with one click. Remote module configuration is done automatically via the ground module.
+
+> hroughput and signal strength
+
+
+|---
+| Range, km | Modulation | Throughput, Mbps | Sensitivity, dBm
+| 0 - 0.3 km | 64QAM_5/6 | 27.8 | -81
+| 0.3 - 1 km | 64QAM_3/4 | 25.5 | -83.5
+| 1 - 2 km | 64QAM_2/3 | 22.8 | -85
+| 2 - 4 km | 16QAM_3/4 | 17.1 | -90
+| 4 - 8 km | 16QAM_1/2 | 11.6 | -92
+| 8 - 12 km | QPSK_3/4 | 8.8 | -96
+| 12 - 15 km | QPSK_1/2 | 5.9 | -98
+| 15 - 20 km | BPSK_1/2  | 3 | -99.5
 
 ## Interfaces
 This page describes general information and interface location for SmartLink Air and Ground modules.
 Air Module
 
-#### Top
+>  Top
+
 Antenna SMA connectors
 ![image](https://user-images.githubusercontent.com/42961200/151635316-dc124317-ed55-4487-8850-96fda49ceaf1.png)
 
-#### Left
-5V DC power input socket
-Reset button
-CSI camera Port
-USB for firmware upgrade
-SPI 0 / 1
-I2C 0 / 1
-UART 0 / 1 (console and autopilot telemetry)
+>  Left
+
+* 5V DC power input socket
+* Reset button
+* CSI camera Port
+* USB for firmware upgrade
+* SPI 0 / 1
+* I2C 0 / 1
+* UART 0 / 1 (console and autopilot telemetry)
 
 ![image](https://user-images.githubusercontent.com/42961200/151635333-a18ed200-c9f8-4562-8cef-00cbfcfcba18.png)
 
-SPI 1
-​
-​
-​
-​
-​
-5V OUT
-SPI1 SCLK
-SPI1 MISO
-SPI1 MOSI
-SPI1 CS0
-GND
-I2C 0 / 1
-​
-​
-​
-​
-​
-5V OUT
-I2C1 SCL
-I2C1 SDA
-I2C2 SCL
-I2C2 SDA
-GND
-UART 0 / 1
-​
-​
-​
-​
-​
-GND
-TEL TX
-TEL RX
-DBG TX
-DBG RX
-5V OUT
-SPI 0
-​
-​
-​
-​
-​
-GND
-SPI0 CS0
-SPI0 MOSI
-SPI0 MISO
-SPI0 SCLK
-5V OUT
+
+|---
+| SPI 1 | ​ | ​ | ​ | ​ | ​
+| 5V OUT | SPI1 SCLK | SPI1 MISO | SPI1 MOSI | SPI1 CS0 | GND
+
+| I2C 0 / 1 | ​ | ​ | ​ | ​ | ​
+| 5V OUT | I2C1 SCL | I2C1 SDA | I2C2 SCL | I2C2 SDA | GND
+
+| UART 0 / 1 | ​ | ​ | ​ | ​ | ​
+| GND | TEL TX | TEL RX | DBG TX | DBG RX | 5V OUT
+
+| SPI 0 | ​ | ​ | ​ | ​ | ​
+| GND | SPI0 CS0 | SPI0 MOSI | SPI0 MISO | SPI0 SCLK | 5V OUT
+
 TEL (Telemetry) port: TTL 3V3, Baudrate 57600
+
 DBG (Debug) port: TTL 3V3, Baudrate 9600
 
-#### Front
+>  Front
+
 Front side has an integrated fan. It is important to have a clear space to allow for air flow circulation in front of this side.
 ![image](https://user-images.githubusercontent.com/42961200/151635349-b80e5cb1-852e-4372-84d4-0c7520fb53ca.png)
 
-#### Right
+> Right
 
-Mini HDMI input
-Micro SD card slot
-Camera status LEDs
+* Mini HDMI input
+* Micro SD card slot
+* Camera status LEDs
 
 ![image](https://user-images.githubusercontent.com/42961200/151635378-7405c766-6584-4667-a556-2d36fe1711b0.png)
 
 
-#### Rear
+>  Rear
+
 USB A connectors for peripherals connection, for instance:
-4G / LTE modem
-Rockblock satellite communication system
-FLARM ADSB system
+* 4G / LTE modem
+* Rockblock satellite communication system
+* FLARM ADSB system
 ![image](https://user-images.githubusercontent.com/42961200/151635402-198411b0-92f3-40a7-a2c5-154c7984bf0e.png)
 
-#### Bottom
+> Bottom
 ![image](https://user-images.githubusercontent.com/42961200/151635427-e0dcc9f1-3366-4da0-8af5-df8e00151970.png)
 
 ### Ground Module
-#### Top
+
+> Top
+
 The front side has an integrated fan. It's important to have a clear space to allow for airflow circulation in front of this side.
 ![image](https://user-images.githubusercontent.com/42961200/151635439-4ce6782e-09ee-42da-8268-7d0cf27a4cd4.png)
 
-#### Left
-TX: blinking when packets are being transmitted
-RX: blinking when packets are being received
-LNK: ethernet / USB link established
-CPU: module operating
-RSSI: signal quality
-Front
+> Left
+
+* TX: blinking when packets are being transmitted
+* RX: blinking when packets are being received
+* LNK: ethernet / USB link established
+* CPU: module operating
+* RSSI: signal quality
+
+> Front
+
 SMA antenna connectors
-Right
+
+> Right
 Reset button
-Rear
-USB to connect to computer / tablet
-Power supply, 7-35V DC
-Bottom
+
+> Rear
+* USB to connect to computer / tablet
+* Power supply, 7-35V DC
+
+> Bottom
 
 
 ## Set content
