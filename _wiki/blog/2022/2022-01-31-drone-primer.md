@@ -3561,13 +3561,9 @@ Link So the dictionary definitions of what that link does are as follows.
 
 It's standardizes the communication protocol for sending information.
 
-It standardizes the types of messages that can be sent and it allows for bidirectional communication
+It standardizes the types of messages that can be sent and it allows for bidirectional communication between the ground control station and the drone.
 
-between the ground control station and the drone.
-
-So both can receive and send maverick messages but much like a lot of dictionary definitions this might
-
-not have been too helpful.
+So both can receive and send maverick messages but much like a lot of dictionary definitions this might not have been too helpful.
 
 So I'm going to use an analogy to try and explain this further.
 
@@ -3577,29 +3573,19 @@ Well they can do this by speaking and understanding what the other person is say
 
 But you know let's break down what that actually means.
 
-So at the lowest level we have the sound layer we have a vocal chord which can create some sound and
-
-get transmitted through space to the recipient's ears.
+So at the lowest level we have the sound layer we have a vocal chord which can create some sound and get transmitted through space to the recipient's ears.
 
 Who will then interpret the sound wave and the brain will discern what was received.
 
 But we can't say just any sound and expect the other person to know what we're saying.
 
-If this guy wanted a high five from this girl he couldn't just make any sound and attach that to his
+If this guy wanted a high five from this girl he couldn't just make any sound and attach that to his desire.
 
-desire.
-
-That's where language comes in that defines a pool of words with objective meaning that also have some
-
-characteristic sound wave pattern that we can create with our vocal chords and also understand with
-
-our ears.
+That's where language comes in that defines a pool of words with objective meaning that also have some characteristic sound wave pattern that we can create with our vocal chords and also understand with our ears.
 
 And this allows us to communicate with people that we've never even met before.
 
-So when I say I love avocados you know what I'm trying to communicate well this is extremely similar
-
-to what Madalena provides us when two mabbe nodes are trying to communicate with each other.
+So when I say I love avocados you know what I'm trying to communicate well this is extremely similar to what Madalena provides us when two mabbe nodes are trying to communicate with each other.
 
 So let's do the same exercise.
 
@@ -3607,57 +3593,33 @@ How does Q ground control communicate with a flying drone.
 
 Well it's going to do this by using the two layers of Magelang.
 
-So similar to the sound analogy we need some consistent medium to communicate with at a low level and
+So similar to the sound analogy we need some consistent medium to communicate with at a low level and that is done with the message structure of Madlang.
 
-that is done with the message structure of Madlang.
+So each Mallik message has the exact same message structure allowing sending nodes to package information in a consistent manner and receiving nodes to parse the incoming data in a consistent manner.
 
-So each Mallik message has the exact same message structure allowing sending nodes to package information
+We provide variability within the consistently formatted Madlang messages by altering the message ID message IDs are the words of the Madlang system.
 
-in a consistent manner and receiving nodes to parse the incoming data in a consistent manner.
-
-We provide variability within the consistently formatted Madlang messages by altering the message ID
-
-message IDs are the words of the Madlang system.
-
-So each maverick message will contain a number representing what Madalena message was sent and these
-
-messages all have objective meaning.
+So each maverick message will contain a number representing what Madalena message was sent and these messages all have objective meaning.
 
 So for example message ID number zero is a heartbeat message.
 
-So when Q ground control receives a message ID of zero from the connected drone it knows that the drone
+So when Q ground control receives a message ID of zero from the connected drone it knows that the drone sent a heartbeat message and the drone is still active.
 
-sent a heartbeat message and the drone is still active.
-
-So we get drastically different behavior by altering the message ID of our Magelang message while maintaining
-
-the same message structure.
+So we get drastically different behavior by altering the message ID of our Magelang message while maintaining the same message structure.
 
 So here's a closer look at Lehre one portion of the Madelin protocol.
 
-Each Madelin message will always consist of a six byte header and the size of a maverick message can
-
-vary anywhere from eight to 263 bytes.
+Each Madelin message will always consist of a six byte header and the size of a maverick message can vary anywhere from eight to 263 bytes.
 
 And this depends on what kind of message IDs is being used.
 
-So the first bite of any Madlang packet is always the hexadecimal number of OS X F.T. So if an incoming
-
-packet does not start with OS X Ephie the drone knows not to interpret the message as a Madelin one
-
-the next byte indicates the payload length and bytes and by index 2 is the packet sequence and can be
+So the first bite of any Madlang packet is always the hexadecimal number of OS X F.T. So if an incoming packet does not start with OS X Ephie the drone knows not to interpret the message as a Madelin one the next byte indicates the payload length and bytes and by index 2 is the packet sequence and can be
 
 used to detect packet loss and therefore the dependability of the incoming message.
 
-Next up we have the system id and the system ID can be analogized to the IP address of a computer each
+Next up we have the system id and the system ID can be analogized to the IP address of a computer each Madlen network conventionally has the ground control station at a system idea of 255 and a system id of one for the drone.
 
-Madlen network conventionally has the ground control station at a system idea of 255 and a system id
-
-of one for the drone.
-
-But these are simply conventions and can be changed to this by index and the header is stamped with
-
-the system id of the know that sent the message.
+But these are simply conventions and can be changed to this by index and the header is stamped with the system id of the know that sent the message.
 
 So if the ground control station sent the message the system id portion of the header will be stamped
 
