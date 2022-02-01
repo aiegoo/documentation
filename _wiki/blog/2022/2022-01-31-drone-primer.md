@@ -4524,15 +4524,11 @@ So every one second we'll print this out to the terminal and also every one seco
 
 We're going to see how close our current altitude is to our target height.
 
-So right here we're saying if the current vehicles altitude is greater than or equal to ninety five
-
-percent of the target height then break out of the While loop.
+So right here we're saying if the current vehicles altitude is greater than or equal to ninety five percent of the target height then break out of the While loop.
 
 So if we passed in 10 to this arm and takeoff function the drone is going to try to fly to 10 meters.
 
-So if we get above 9.5 meters we will break out of this while block and say target altitude reached
-
-and this Armond takeoff function is done doing what it needs to do.
+So if we get above 9.5 meters we will break out of this while block and say target altitude reached and this Armond takeoff function is done doing what it needs to do.
 
 So we'll return none because we don't need to return anything to whatever called this function.
 
