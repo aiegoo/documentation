@@ -4912,9 +4912,7 @@ And we don't want it to fly there exactly.
 
 We want it to fly within a certain range.
 
-So what we're going to do is pull the drones progress once a second in a while loop and determine if
-
-the drone is close enough to the waypoint to call it good.
+So what we're going to do is pull the drones progress once a second in a while loop and determine if the drone is close enough to the waypoint to call it good.
 
 We can do that with this while back here.
 
@@ -4928,19 +4926,11 @@ So we're doing the same thing here but we're only taking this distance once.
 
 So we're getting the original distance here.
 
-And then as the drone gets closer and closer this current distance will get smaller and smaller every
+And then as the drone gets closer and closer this current distance will get smaller and smaller every iteration of the While loop.
 
-iteration of the While loop.
+We're going to see if the current distance is less than the original distance that the drone was away from the target waypoint times 1 percent.
 
-We're going to see if the current distance is less than the original distance that the drone was away
-
-from the target waypoint times 1 percent.
-
-So we were originally one mile away and we get 0 1 miles away from the waypoint then we're going to
-
-break out of this while block and return None allowing further execution of downstream code from the
-
-go to function after it has reached its target waypoint.
+So we were originally one mile away and we get 0 1 miles away from the waypoint then we're going to break out of this while block and return None allowing further execution of downstream code from the go to function after it has reached its target waypoint.
 
 So until the drone has gotten to this waypoint it won't be able to execute further.
 
