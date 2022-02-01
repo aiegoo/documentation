@@ -4514,17 +4514,11 @@ I'm a little bit below it to go above.
 
 But we don't want the drone to fly to exactly 10 meters.
 
-We're going to be tolerant to our drone and tell it that it only needs to apply to a certain percentage
-
-accuracy of our requested height.
+We're going to be tolerant to our drone and tell it that it only needs to apply to a certain percentage accuracy of our requested height.
 
 So we can monitor the drone with this while block here.
 
-So while true sword is going to iterate with this until we break out we're going to print out the current
-
-altitude of the drone and we're going to do that by accessing the attribute vehicle that location got
-
-global relative frame and then drop out for altitude.
+So while true sword is going to iterate with this until we break out we're going to print out the  current altitude of the drone and we're going to do that by accessing the attribute vehicle that location got global relative frame and then drop out for altitude.
 
 So every one second we'll print this out to the terminal and also every one second.
 
