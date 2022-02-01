@@ -4745,13 +4745,9 @@ Be very conscious of the spaces here.
 
 Again bash scripts in Linux commands can be a little sensitive.
 
-And then we want to call this function right at the end of our launch Siddall script and that's what
+And then we want to call this function right at the end of our launch Siddall script and that's what we're doing here.
 
-we're doing here.
-
-We're saying trap finished exit which means that this function will be executed only at the very end
-
-of the script.
+We're saying trap finished exit which means that this function will be executed only at the very end of the script.
 
 So let's save this.
 
