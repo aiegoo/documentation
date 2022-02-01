@@ -4991,13 +4991,7 @@ So for example if you had a field to survey and you wanted the drone to take pic
 
 Another example might be if you wanted your drone to fly particular paths around an area of interest as if you're a security or surveillance specialist we could create some missions that consisted of commands to fly the drone around that constant area of interest.
 
-So the auto mode is good for pre-determine flight paths essentially and mode is cool because it essentially
-
-allows you to provide some special functionality that isn't available already and the pilot code base
-
-if you wanted to incorporate computer vision into your drone and let the computer vision influence movement
-
-commands you could use the guided flight mode.
+So the auto mode is good for pre-determine flight paths essentially and mode is cool because it essentially allows you to provide some special functionality that isn't available already and the pilot code base if you wanted to incorporate computer vision into your drone and let the computer vision influence movement commands you could use the guided flight mode.
 
 You could write up the open Seabee Python script that was measuring the distance away from some object
 
