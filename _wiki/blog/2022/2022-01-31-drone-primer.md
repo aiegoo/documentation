@@ -5126,13 +5126,9 @@ And just to verify that the map command nav waypoint command only needs those th
 
 You can go back to that Arti pilot documentation page and then quicken to map command that waypoint again and we'll see again that ramp 5 6 and 7 represent latitude longitude and altitude.
 
-Remember our Siddall drone will launch from the 50 yard line of Packer stadium is GPS coordinates make
+Remember our Siddall drone will launch from the 50 yard line of Packer stadium is GPS coordinates make the drone fly around the Packers stadium and I again found these GPS coordinates at this Web site.
 
-the drone fly around the Packers stadium and I again found these GPS coordinates at this Web site.
-
-I typed in the Packer address and you can click on the map and you'll get different latitude and longitude
-
-coordinates.
+I typed in the Packer address and you can click on the map and you'll get different latitude and longitude coordinates.
 
 And now that we've added three more commands we need to add those to our commands list.
 
@@ -5142,21 +5138,13 @@ And at this point the complete mission command 1 through 4 will be uploaded to t
 
 But the drone won't automatically execute this mission.
 
-We have to make sure it's an auto mode but before we switch and auto mode let's arm and take off and
-
-guided mode to get it flying to around 10 meters and then we'll switch into auto mode once it's in the
-
-air.
+We have to make sure it's an auto mode but before we switch and auto mode let's arm and take off and guided mode to get it flying to around 10 meters and then we'll switch into auto mode once it's in the air.
 
 All right.
 
 So we have our arm and take off 10.
 
-And then once we're in the air we're after Armond take off we'll switch the vehicle mode to auto mode
-
-and the thing to note here is our Python script gets to continue an execution while our drone is executing
-
-its mission.
+And then once we're in the air we're after Armond take off we'll switch the vehicle mode to auto mode and the thing to note here is our Python script gets to continue an execution while our drone is executing its mission.
 
 So when we're in guided mode remember we had to continuously pull where the drone was relative to where
 
