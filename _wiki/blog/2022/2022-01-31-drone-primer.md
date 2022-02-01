@@ -4884,13 +4884,9 @@ And obviously that desined gets larger and larger than that modeling of the 2-D 
 
 Plus of course you're a flat earth or now we have this helper function.
 
-Let's start to get into the go to function see death go to and will only input one waypoint and that
+Let's start to get into the go to function see death go to and will only input one waypoint and that is the location that we want to apply to.
 
-is the location that we want to apply to.
-
-Now the first thing we're going to do is capture the original distance between the current location
-
-of the drone and the target location of the drone.
+Now the first thing we're going to do is capture the original distance between the current location of the drone and the target location of the drone.
 
 So how are we going to do that.
 
