@@ -4450,13 +4450,9 @@ And this is cool because this for actually x is an integer and not as a string.
 
 So we can actually perform some number a lot offer it to.
 
-So as you get more and more advanced in your parameter knowledge you can even batched together a bunch
+So as you get more and more advanced in your parameter knowledge you can even batched together a bunch  of initialization parameter values and a little function.
 
-of initialization parameter values and a little function.
-
-And before the drone takes off you could you know make sure that all the appropriate parameters are
-
-set to the correct values.
+And before the drone takes off you could you know make sure that all the appropriate parameters are set to the correct values.
 
 So you wouldn't have to manually do this every single time.
 
