@@ -4987,15 +4987,9 @@ You compile a mission which consists of a list of commands that you then upload 
 
 Now there are different reasons to be in either guided mode or auto mode auto mode would be great for missions that you're going to fly continuously or for pretty monotonous and normal missions that you could fly by just assembling lists of commands.
 
-So for example if you had a field to survey and you wanted the drone to take pictures every five seconds
+So for example if you had a field to survey and you wanted the drone to take pictures every five seconds you could do that in auto mode pretty easily.
 
-you could do that in auto mode pretty easily.
-
-Another example might be if you wanted your drone to fly particular paths around an area of interest
-
-as if you're a security or surveillance specialist we could create some missions that consisted of commands
-
-to fly the drone around that constant area of interest.
+Another example might be if you wanted your drone to fly particular paths around an area of interest as if you're a security or surveillance specialist we could create some missions that consisted of commands to fly the drone around that constant area of interest.
 
 So the auto mode is good for pre-determine flight paths essentially and mode is cool because it essentially
 
