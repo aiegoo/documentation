@@ -5015,13 +5015,7 @@ And in those circumstances all of these commands will work.
 
 Unfortunately currently in drone kit only a few of these commands will work and that is the nav waypoint and have returned to launch nav land and potentially a couple of other ones but they're not all supported.
 
-Now if you want to learn more about the commands you can click into them and you know see different
-
-parameters that you have to supply as a part of calling this command and you just get some more in-depth
-
-information from the next video we're going to put this to practice and make a list of commands that
-
-will upload to our drone as a mission and then we'll switch the drone into auto mode and it will execute
+Now if you want to learn more about the commands you can click into them and you know see different parameters that you have to supply as a part of calling this command and you just get some more in-depth information from the next video we're going to put this to practice and make a list of commands that will upload to our drone as a mission and then we'll switch the drone into auto mode and it will execute
 
 on an economist mission.
 ```
