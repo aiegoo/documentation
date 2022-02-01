@@ -5146,9 +5146,7 @@ So we have our arm and take off 10.
 
 And then once we're in the air we're after Armond take off we'll switch the vehicle mode to auto mode and the thing to note here is our Python script gets to continue an execution while our drone is executing its mission.
 
-So when we're in guided mode remember we had to continuously pull where the drone was relative to where
-
-we wanted to be.
+So when we're in guided mode remember we had to continuously pull where the drone was relative to where we wanted to be.
 
 And then the code could get executed until the location tracking while block was broken out of.
 
@@ -5156,9 +5154,7 @@ Well that is not the case when auto mode so an auto mode will switch into auto m
 
 Drone will keep flying its mission and this code will get executed while the drone is doing its mission.
 
-OK so let's save this and let's see if it works let's go back to Horseshoe DK and we'll type launch
-
-Siddall and then we'll type auto mission.
+OK so let's save this and let's see if it works let's go back to Horseshoe DK and we'll type launch Siddall and then we'll type auto mission.
 
 All right.
 
@@ -5168,19 +5164,13 @@ Hugh Grant is getting ready.
 
 OK so now we see our drone here.
 
-And these are our mission objects are commands that the drone will run
-
-and we know and we remember the first command it flies to its current location.
+And these are our mission objects are commands that the drone will run and we know and we remember the first command it flies to its current location.
 
 So that's why we see a one here and the second command is to fly to this point the green.
 
-Now we're indicating that waypoint replying to this is Command object number to and now he's made it
+Now we're indicating that waypoint replying to this is Command object number to and now he's made it to this waypoint so we're flying to the third waypoint.
 
-to this waypoint so we're flying to the third waypoint.
-
-Our third command and our object list that shows you how the auto mode is a little different than the
-
-guided mode because you still have the reins of your python script while the drones executing its mission.
+Our third command and our object list that shows you how the auto mode is a little different than the guided mode because you still have the reins of your python script while the drones executing its mission.
 ```
 
 
