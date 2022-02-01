@@ -4717,41 +4717,29 @@ Our Python script is done executing.
 
 OK so we can do that with the following code.
 
-Here's our function that we're making sourcing function Benish and then bash scripts are very sensitive
-
-with spaces so make sure you have a space here and then we're going to write all this beautiful stuff.
+Here's our function that we're making sourcing function Benish and then bash scripts are very sensitive with spaces so make sure you have a space here and then we're going to write all this beautiful stuff.
 
 I know it looks pretty ugly but I'll try and break it down for you.
 
 So if you're not familiar with the kill command let me provide a quick recap.
 
-So every time we start a process like this drunk gets Siddall instance this process is going to get
+So every time we start a process like this drunk gets Siddall instance this process is going to get a unique process ID.
 
-a unique process ID.
-
-So let's say after we start this the drone kits Siddall executable will have a d id they call it a process
-
-ID and let's just say 1 1 3 4.
+So let's say after we start this the drone kits Siddall executable will have a d id they call it a process ID and let's just say 1 1 3 4.
 
 So this process ID is indicative of this process.
 
 So with the kill command we can specify a process id that we want to.
 
-And so if the process id of this truncate Siddall was 1 1 3 4 and we type kill 1 1 3 4 it would stop
-
-the drunk get Siddall instance.
+And so if the process id of this truncate Siddall was 1 1 3 4 and we type kill 1 1 3 4 it would stop the drunk get Siddall instance.
 
 So just like when we click this red button its hilling whatever process was running.
 
 So this is essentially the red X button only for process IDs.
 
-What we're doing in this finished function is first finding the process IDs of anything called hugely
+What we're doing in this finished function is first finding the process IDs of anything called hugely RTU and mabbe.
 
-RTU and mabbe.
-
-And then we're going to say will those process IDs that we found and then will kill all of the processes
-
-that we started previously.
+And then we're going to say will those process IDs that we found and then will kill all of the processes that we started previously.
 
 Be very conscious of the spaces here.
 
