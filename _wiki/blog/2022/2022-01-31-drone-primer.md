@@ -5060,19 +5060,13 @@ And we're also going to say from PI Madlang import mabbe still but to understand
 
 And we went around the standard enemies and messages that are available.
 
-Well this map still is basically a python version of the standard messages and enemies that we saw on
-
-the map link main web site and we'll see why that is useful through the progression of this video.
+Well this map still is basically a python version of the standard messages and enemies that we saw on the map link main web site and we'll see why that is useful through the progression of this video.
 
 Let's make a waypoint object that is the home location of our drone before it took off.
 
-And we remember what this is we're using attributes to record the current location of the drone and
+And we remember what this is we're using attributes to record the current location of the drone and saving that waypoint object under the weight point home variable name.
 
-saving that waypoint object under the weight point home variable name.
-
-Now let's make our first command object will say CMT One equals command and then we'll set it equal
-
-to all of the input variables that the command function takes.
+Now let's make our first command object will say CMT One equals command and then we'll set it equal to all of the input variables that the command function takes.
 
 OK.
 
