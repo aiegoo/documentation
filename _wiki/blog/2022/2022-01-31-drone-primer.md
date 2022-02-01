@@ -4560,15 +4560,11 @@ are vehicles armed.
 
 And now we are starting to fly our current altitude to zero.
 
-So we're in this portion of the while loop where we're seeing the current altitude every iteration of
-
-the while loop and we get to above 9.5 meters.
+So we're in this portion of the while loop where we're seeing the current altitude every iteration of the while loop and we get to above 9.5 meters.
 
 And this while block broke out.
 
-We got reported that target altitude was reached and now our drone is hovering in the air at around
-
-10 meters ready for the next command.
+We got reported that target altitude was reached and now our drone is hovering in the air at around 10 meters ready for the next command.
 
 ```
 
