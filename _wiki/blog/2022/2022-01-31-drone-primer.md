@@ -4840,9 +4840,7 @@ And this video we're going to focus on the former and we're going to make some f
 
 And we're going to get introduced to waypoint objects in Python.
 
-And if you're curious I'm grabbing my latitude longitude and altitude coordinates from this Web site
-
-here.
+And if you're curious I'm grabbing my latitude longitude and altitude coordinates from this Web site here.
 
 All right so let's get to it.
 
@@ -4858,21 +4856,13 @@ Now let's copy our basic template python file and name it location underscored b
 
 And then let's edit into location based movement.
 
-So if you remember that when we launch our launch Siddall script it starts the drone at the 50 yard
+So if you remember that when we launch our launch Siddall script it starts the drone at the 50 yard line of Packer stadium.
 
-line of Packer stadium.
+So let's create a waypoint at the Packer pro-shop which is maybe 100 yards away from that 50 yard line that the drone can fly to.
 
-So let's create a waypoint at the Packer pro-shop which is maybe 100 yards away from that 50 yard line
+So we're creating this waypoint object from the location global relative function that is important from the drone kit package.
 
-that the drone can fly to.
-
-So we're creating this waypoint object from the location global relative function that is important
-
-from the drone kit package.
-
-As you can see at the top in the location global relative function in ports three arguments The first
-
-is the latitude second is longitude and the third is altitude.
+As you can see at the top in the location global relative function in ports three arguments The first is the latitude second is longitude and the third is altitude.
 
 So we're saving this waypoint object.
 
@@ -4882,11 +4872,7 @@ We don't have a function called go to yet where we're going to make this functio
 
 But the first thing we have to do is make a helper function that can get the distance between two waypoints.
 
-And here it is we'll call it get underscored distance under square meters and it will input to waypoint
-
-objects similar to what we've done here to do some geometry magic to get the hypothenuse between two
-
-points in space.
+And here it is we'll call it get underscored distance under square meters and it will input to waypoint objects similar to what we've done here to do some geometry magic to get the hypothenuse between two points in space.
 
 So we're going to return the absolute distance between two points in space.
 
@@ -4894,9 +4880,7 @@ Now this functions only going to be reliable if the two waypoints are close.
 
 That is because the function models the two points as if they're on a two dimensional plane.
 
-And obviously that desined gets larger and larger than that modeling of the 2-D playing it's less and
-
-less accurate.
+And obviously that desined gets larger and larger than that modeling of the 2-D playing it's less and less accurate.
 
 Plus of course you're a flat earth or now we have this helper function.
 
