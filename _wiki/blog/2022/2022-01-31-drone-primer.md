@@ -30,7 +30,7 @@ updated: 2022-01-31 16:32
 
 
 ### scripts
-- video 1: course overview
+#### video 1: course overview
 
 ```php
 OK so in this video we're going to look at the format and content that will be covered in this lecture series.
@@ -68,7 +68,7 @@ Is a must I'll be providing links to various documentation pages whenever necess
 But I highly encourage you to look through the documentation on your own and last but not least please do not hesitate to ask any questions for anything you may be confused about or respond as quickly as possible and it may help students coming behind you to view the answers that are provided.
 ```
 
-- video 2 : fulld rone system overview
+#### video 2 : fulld rone system overview
 
 ```php
 What's going on everyone in this video we're going to look at the typical drone set up from a high level
@@ -376,7 +376,7 @@ So so if you ever lose focus of how what you've learned fits into the grand sche
 back to this video.
 ```
 
-- video 3 : drone basics and flight jargon
+#### video 3 : drone basics and flight jargon
 
 ```php
 All right.
@@ -553,7 +553,7 @@ The heading is just the direction that the vehicle is currently moving.
 ```
 
 #### section 2
-- video 4 : Different methods for workstation
+#### video 4 : Different methods for workstation
 ```php
 OK so we're about to get into all the exciting drone programming and stuff.
 
@@ -619,7 +619,7 @@ on your own.
 ```
 
 
-- video 5 : setting up preconfigured and
+#### video 5 : setting up preconfigured and
 
 ```php
 So this link right here if you go to this link and download it it's just a zip file that has all of
@@ -808,7 +808,7 @@ Let me know if you have any questions.
 ```
 
 
-- video 7: virtualization check
+#### video 7: virtualization check
 
 
 ```php
@@ -842,7 +842,7 @@ next video where we'll start creating our virtual machine.
 ```
 
 
-- video 8 : virtualbox install and ubuntu download
+#### video 8 : virtualbox install and ubuntu download
 
 ```php
 All right so in this video we're going to install a virtual box and download our mood to image that
@@ -933,7 +933,7 @@ to the next video.
 ```
 
 
-- video 9 : virtual machine setup
+#### video 9 : virtual machine setup
 
 
 ```php
@@ -1170,7 +1170,7 @@ your system you can definitely still modify the hardware resource allocations th
 by just going into settings and then playing around with the virtual machine hardware aspects.
 ```
 
-- video 10:
+#### video 10:
 
 ```php
 IMPORTANT!! DO NOT UPGRADE TO UBUNTU 18!!
@@ -1179,7 +1179,7 @@ After you install and launch Ubuntu 16 on your Virtual Machine and first login, 
 ```
 
 
-- video 11: ubunut install
+#### video 11: ubunut install
 ```php
 Aren't so in the last video we set up our virtual machine by allocating the real hardware resources
 
@@ -1265,7 +1265,7 @@ This may take about 10 minutes.
 ```
 
 
-- video 12:
+#### video 12:
 ```php
 IMPORTANT!! DO NOT UPGRADE PIP OR USE SUDO PIP
 
@@ -1277,7 +1277,7 @@ In the video, I make two mistakes. Please follow the below instructions to modif
 ```
 
 
-- video 12: dependencies install
+#### video 12: dependencies install
 ```php
 All right.
 
@@ -1379,7 +1379,7 @@ And now if we hit Enter we can navigate to a course route from any part of the s
 ```
 
 ### section 3
-- video 14: Ardupilot introduction
+#### video 14: Ardupilot introduction
 ```php
 What's up in this video we're going to get into a little bit.
 
@@ -1588,7 +1588,7 @@ So the earlier you can learn these open source tools the more equipped you will 
 world in the future.
 ```
 
-- video 15: ardupilot install part 1
+#### video 15: ardupilot install part 1
 ```php
 So in this video we're going to install and initialize the already private repository that we're going
 
@@ -1684,7 +1684,7 @@ variable.
 ```
 
 
-- video 16 : ardupilot install part2
+#### video 16 : ardupilot install part2
 ```php
 OK so in this video we're going to look around the pilot directory base a little bit.
 
@@ -1809,7 +1809,7 @@ You could think of the target type as your actual computer since that is what th
 be running from.
 ```
 
-- video 17 : flight mode in ardupilot
+#### video 17 : flight mode in ardupilot
 ```php
 What is going on.
 
@@ -1935,7 +1935,7 @@ detail for that particular flight mode.
 ```
 
 
-- video 18 : Sitl introduction
+#### video 18 : Sitl introduction
 ```php
 All right so in this video we're going to launch our very first Siddall drone that is our simulated
 
@@ -2367,13 +2367,13 @@ get to learn all the tools we need for free because all of this is open source.
 ```
 
 
-- video 19 : DEBUG view missint from map window
+#### video 19 : DEBUG view missint from map window
 ```php
 no transcript
 ```
 
 
-- video 20: parameters in ardupilot
+#### video 20: parameters in ardupilot
 ```php
 What is up.
 
@@ -2540,7 +2540,7 @@ And it probably already exists because there's a hundred fifty plus parameters i
 on what software version you're using.
 ```
 
-- video 21: parameters with sitl drone and mav proxy
+#### video 21: parameters with sitl drone and mav proxy
 ```php
 All right.
 
@@ -2745,7 +2745,7 @@ Arti pilot the more dangerous of a drone programmer you will be.
 
 ### section 4 GCS
 
-- video 22 : intro to gcs
+#### video 22 : intro to gcs
 ```php
 All right.
 
@@ -2861,7 +2861,7 @@ control station can use that process.
 ```
 
 
-- video 23 : mavproxy overview
+#### video 23 : mavproxy overview
 ```php
 What's crackin.
 
@@ -2917,7 +2917,7 @@ link messages to communicate with your drone.
 ```
 
 
-- video 24 : connecting mavproxy to drone
+#### video 24 : connecting mavproxy to drone
 ```php
 All right so in the last video we got a short little introduction to Matt proxy and this video we're
 
@@ -3025,7 +3025,7 @@ Back to your drone with MAP proxy on your own.
 
 ```
 
-- video 25 : QGC install
+#### video 25 : QGC install
 ```php
 All right.
 
@@ -3156,7 +3156,7 @@ So this is a handy visual Grand Central Station to pair with the power of map pr
 videos from here on out we'll be using both map proxy in Q and control at the same time.
 ```
 
-- video 26 : connecting qgc to sitl drone
+#### video 26 : connecting qgc to sitl drone
 ```php
 All right so in this video we're going to connect multiple ground control stations to a singles Sudol
 
@@ -3275,7 +3275,7 @@ setting.
 ```
 
 
-- video 27 : mavproxy commands
+#### video 27 : mavproxy commands
 ```php
 What is up.
 
@@ -3562,7 +3562,7 @@ actually do on your drone if you're interested in that.
 
 ### section 5 mavlink
 
-- video 28 : itnro to mavlink
+#### video 28 : itnro to mavlink
 ```php
 So to this point we have been thinking and talking about Madeleine from a high level perspective.
 
@@ -3666,7 +3666,7 @@ As long as you can make a packet with the standard structure and send the packet
 ```
 
 
-- video 29 : mavlink message example
+#### video 29 : mavlink message example
 ```php
 OK so in the last video we got into the first layer of math link or the standard message structure in this video we're going to look at how we can change the message ID to vary the types of messages that are sent with the standard message structure the standard message ids will let the receiving maverick node know how to parse the incoming data and what action should be taken.
 
@@ -3782,7 +3782,7 @@ It doesn't directly command the drone only tells the drone of our request it is 
 
 ### section 6 dronekit
 
-- video 30 : intro to dronekit
+#### video 30 : intro to dronekit
 
 ```php
 OK so in this video we're going to talk a little bit about trone kit.
@@ -3899,7 +3899,7 @@ So as legislation catches up with the technology things like drone kit are going
 
 ```
 
-- video 31 : dronekit install
+#### video 31 : dronekit install
 
 ```php
 All right so in this video we're going to install the Schroen kit in drone kits Siddall packages from the Python Pipp package installer.
@@ -3925,7 +3925,7 @@ And if you see this you're good to go when you've successfully installed drone k
 ```
 
 
-- video 32 : Function to connect python script to sitl drone part1
+#### video 32 : Function to connect python script to sitl drone part1
 
 ```php
 OK so in the last video we downloaded the drone kit Python packages to our system and this video we're going to start messing around drumkit a little bit and we're going to make our first function that will be designed to connect our drunk get scripts to our vehicle of interest in this function that we make will be used in all of the following scripts that we make.
@@ -4019,7 +4019,7 @@ And now that we have this basic functionality we'll be able to do some cooler st
 ```
 
 
-- video 33 : function to connect python script to sitl drone part2
+#### video 33 : function to connect python script to sitl drone part2
 
 ```php
 Book.
@@ -4073,7 +4073,7 @@ So this is a handy modification that we've made to the connection template so th
 ```
 
 
-- video 34: attributes part 1
+#### video 34: attributes part 1
 
 ```php
 OK so now we have a function that can be used to connect our script to our drone.
@@ -4183,7 +4183,8 @@ And we got access to those in the drone kit Python script.
 So the next video we're going to get into setting the values of attributes instead of just reading them.
 ```
 
-- video 35 : attributes part 2
+#### video 35 : attributes part 2
+
 ```php
 All right.
 
@@ -4396,7 +4397,8 @@ broken and this was printed out to the console look out virtual props are spinni
 drone is now spinning its motors
 ```
 
-- video 36 : parameters in dronekit
+#### video 36 : parameters in dronekit
+
 ```php
 What's crackin.
 
@@ -4496,7 +4498,7 @@ So you wouldn't have to manually do this every single time.
 
 
 
-- video 37 : functions to arm and takeoff
+#### video 37 : functions to arm and takeoff
 ```php
 Ole Miss Amigo's in this video we're going to make a function called Armond take off that will be designed
 
@@ -4642,7 +4644,7 @@ We got reported that target altitude was reached and now our drone is hovering i
 
 ```
 
-- video 38 : script to automatically launch QGC with dronekit script part1
+#### video 38 : script to automatically launch QGC with dronekit script part1
 ```php
 A case or at a point now and truncate where we can connect to our Siddall vehicle or a real vehicle
 
@@ -4686,7 +4688,7 @@ automatically for us.
 ```
 
 
-- video 39 : script to automatically launch QGC with dronekit script part2
+#### video 39 : script to automatically launch QGC with dronekit script part2
 ```php
 All right.
 
@@ -4905,7 +4907,7 @@ So let's save this.
 ```
 
 
-- video 40 : scrpt to automatically launch QGC with dronkit script part3
+#### video 40 : scrpt to automatically launch QGC with dronkit script part3
 ```php
 OK so we're almost done with this launch style script.
 
@@ -4981,7 +4983,7 @@ us and automatically close about.
 ```
 
 
-- video 41 : function to move drone to waypoints
+#### video 41 : function to move drone to waypoints
 ```php
 All right.
 
@@ -5185,7 +5187,7 @@ to land.
 
 ```
 
-- video 42: auto flight mode overview
+#### video 42: auto flight mode overview
 ```php
 What's going on everyone.
 
@@ -5299,7 +5301,7 @@ on an economist mission.
 ```
 
 
-- video 43 : autonomous dronekit mssion with auto mode
+#### video 43 : autonomous dronekit mssion with auto mode
 ```php
 What's going on.
 
@@ -5527,7 +5529,7 @@ guided mode because you still have the reins of your python script while the dro
 ```
 
 
-- video 44 : velocity based movement and NED sign convention
+#### video 44 : velocity based movement and NED sign convention
 ```php
 All right so we're getting pretty rehearsed in the arts of location based movement be it with guided
 
@@ -5675,7 +5677,7 @@ space.
 ```
 
 
-- video 45 : functions to move drone wiht velocity commands
+#### video 45 : functions to move drone wiht velocity commands
 ```php
 What's up with it.
 
@@ -5842,7 +5844,7 @@ You know it passed an A minus number moved up and now we're going to be moving d
 a positive number into the velocity component for the z and it.
 ```
 
-- video 46 : function to control yaw of drone
+#### video 46 : function to control yaw of drone
 ```php
 OK so now we're going to figure out how to control the drones.
 
@@ -6000,7 +6002,7 @@ That is how you do basic yawning in drone kit.
 ```
 
 ### section 7
-- video :
+#### video :
 ```php
 Congratulations you've made it through the drone programming primer for software development course.
 
@@ -6096,7 +6098,7 @@ I'm excited to see what you will build with this new knowledge that you've obtai
 ```
 
 
-- video 48 : build codable drone
+#### video 48 : build codable drone
 ```php
 All right.
 
@@ -6202,36 +6204,36 @@ And it's simply landing now.
 ```
 
 
-- video :
+#### video :
 ```php
 
 ```
 
 
-- video :
+#### video :
 ```php
 
 ```
 
 
-- video :
+#### video :
 ```php
 
 ```
 
-- video :
-```php
-
-```
-
-
-- video :
+#### video :
 ```php
 
 ```
 
 
-- video :
+#### video :
+```php
+
+```
+
+
+#### video :
 ```php
 
 ```
