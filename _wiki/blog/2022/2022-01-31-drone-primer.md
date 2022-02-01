@@ -5647,7 +5647,7 @@ That is how you do basic yawning in drone kit.
 ```
 
 ### section 7
-#### video :
+#### video 47 : conclusion
 ```php
 Congratulations you've made it through the drone programming primer for software development course.
 
