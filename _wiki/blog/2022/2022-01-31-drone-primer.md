@@ -4406,13 +4406,9 @@ So we dealt with parameters a little bit to this point already but we haven't do
 
 It's a very simple process and the parameters like always are readable and ridable and we can access them through our vehicle object and it's pretty simple you just do the cool parameters and then in square brackets you type the name of the parameter that you want to see the value for.
 
-So you could say guess type Moel name is variable guess type set it equal to Biegel that parameters
+So you could say guess type Moel name is variable guess type set it equal to Biegel that parameters and whatever the value of guess type parameter is now to save the GPS type.
 
-and whatever the value of guess type parameter is now to save the GPS type.
-
-Very easy as well you can also just write to parameters doing basically the reverse thing your vehicle
-
-that parameters and then the pram name that you want to write and then the value.
+Very easy as well you can also just write to parameters doing basically the reverse thing your vehicle that parameters and then the pram name that you want to write and then the value.
 
 So we get set the GPS type parameter to 3 by running this right here.
 
@@ -4426,11 +4422,7 @@ Hi and then we'll get into that.
 
 All right so here we are.
 
-Let's first see with the value of our GPS type parameter is for this vehicle that we connect to we can
-
-do that by reading in the parameter value and then we'll print out the GPS type to the console right
-
-here.
+Let's first see with the value of our GPS type parameter is for this vehicle that we connect to we can do that by reading in the parameter value and then we'll print out the GPS type to the console right here.
 
 Let's save this and let's execute our parameter and get her file and see what it's output for the GPS
 
