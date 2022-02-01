@@ -4599,7 +4599,6 @@ So let's typed the following and watch the camel case make sure this is capital 
 So what this is is a ship bang.
 
 And when we run our launch little script as an executable it will read this and see that we want the
-
 text in the script to be interpreted as a bash script.
 
 So now it will interpret all our commands as a bash script once it's saved.
@@ -4650,14 +4649,12 @@ And here is where we placed our app image to make it a globally reference Apple 
 
 So we'll copy that full path to the app image and we'll call that pull path in our launch little script.
 
-We'll paste that in and when we launch cuarón patrol it prints out a bunch of crap to the terminal so 
+We'll paste that in and when we launch cuarón patrol it prints out a bunch of crap to the terminal so
 we'll write this right here.
 
 All the techs to Dev-Null.
 
-And we'll also throw this process into the background so that code beneath it can execute without having
-
-to depend on this being finished.
+And we'll also throw this process into the background so that code beneath it can execute without having to depend on this being finished.
 
 And between these two let's say sleep for five seconds and then underneath it let's sleep for another
 
