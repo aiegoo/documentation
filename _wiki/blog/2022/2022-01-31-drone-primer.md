@@ -4657,7 +4657,6 @@ All the techs to Dev-Null.
 And we'll also throw this process into the background so that code beneath it can execute without having to depend on this being finished.
 
 And between these two let's say sleep for five seconds and then underneath it let's sleep for another
-
 five seconds.
 
 Probably won't have to go to five seconds but just be safe.
@@ -4674,9 +4673,7 @@ Q ground control and our drones get script.
 
 So this is the main command we're using.
 
-So we're starting map proxy it up by we're connecting map proxy to port at the 760 and we're specifying
-
-two new ports that is 14:5 by zero.
+So we're starting map proxy it up by we're connecting map proxy to port at the 760 and we're specifying two new ports that is 14:5 by zero.
 
 And the 762 that anyone else can connect to in here we're saying screen minus DMH which this is essentially
 
@@ -4686,9 +4683,7 @@ So now we've done three of the four things we need our script to do.
 
 We now have map proxy up and running.
 
-Now we need to start our drone kit Python script and well referenced the full path to the Python executable
-
-booklet which Python and here we go or copy that.
+Now we need to start our drone kit Python script and well referenced the full path to the Python executable booklet which Python and here we go or copy that.
 
 And go back to launch Siddall.
 
@@ -4698,15 +4693,11 @@ let's say this is our impromptu terminal again.
 
 We're going to have launch Siddall and they're going to specify a python file that we want to launch.
 
-Let's say we launch basic template that by well we're starting this bash script and we're specifying
-
-the file name that we want to get past into the bash script.
+Let's say we launch basic template that by well we're starting this bash script and we're specifying the file name that we want to get past into the bash script.
 
 So this is the first argument that we're passing into this launch Siddall bash script.
 
-So that is what this dollar sign one is indicating is dollar sign one will get resolved to the first
-
-argument getting passed into the script.
+So that is what this dollar sign one is indicating is dollar sign one will get resolved to the first argument getting passed into the script.
 
 So in this case this will get replaced with basic template and then we'll start a basic template with
 
