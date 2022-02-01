@@ -4818,14 +4818,11 @@ So it's a pretty handy script that we can use here on out to automatically launc
 
 
 #### video 41 : function to move drone to waypoints
+
 ```php
 All right.
 
-So to this point now we have our lunch Siddall convenience script that we'll be able to do a bunch of
-
-things automatically for us and we have some Don't Get functions that can connect to a vehicle and fly
-
-the vehicle into the air to a specified altitude.
+So to this point now we have our lunch Siddall convenience script that we'll be able to do a bunch of things automatically for us and we have some Don't Get functions that can connect to a vehicle and fly the vehicle into the air to a specified altitude.
 
 But our drones just sitting there waiting for some commands.
 
@@ -4835,15 +4832,11 @@ There are two primary ways that you can move the drone.
 
 One is by location based movement.
 
-That is I specify a waypoint that I want the drone to fly to and the drone flies that waypoint and the
-
-other is velocity based movement.
+That is I specify a waypoint that I want the drone to fly to and the drone flies that waypoint and the other is velocity based movement.
 
 So I want my drone to move forward at let's say three meters per second.
 
-And this video we're going to focus on the former and we're going to make some functions that can be
-
-used for location based movement.
+And this video we're going to focus on the former and we're going to make some functions that can be used for location based movement.
 
 And we're going to get introduced to waypoint objects in Python.
 
