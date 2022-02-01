@@ -4993,23 +4993,13 @@ Another example might be if you wanted your drone to fly particular paths around
 
 So the auto mode is good for pre-determine flight paths essentially and mode is cool because it essentially allows you to provide some special functionality that isn't available already and the pilot code base if you wanted to incorporate computer vision into your drone and let the computer vision influence movement commands you could use the guided flight mode.
 
-You could write up the open Seabee Python script that was measuring the distance away from some object
+You could write up the open Seabee Python script that was measuring the distance away from some object and based off the distance away from that object you could send different velocity commands to your drone to get it to fly in different ways that is responsive to the object that you're tracking.
 
-and based off the distance away from that object you could send different velocity commands to your
-
-drone to get it to fly in different ways that is responsive to the object that you're tracking.
-
-So the got to bite mode is great for a sort of dynamic flight pass or dynamic missions where the flight
-
-path isn't predestined and for using it as a way to provide some custom functionality to your drone
-
-that isn't already available in the pilot code base.
+So the got to bite mode is great for a sort of dynamic flight pass or dynamic missions where the flight path isn't predestined and for using it as a way to provide some custom functionality to your drone that isn't already available in the pilot code base.
 
 So things like computer vision based flight.
 
-OK so what are these commands that we can put into a list and make a mission that the drone executes
-
-automatically.
+OK so what are these commands that we can put into a list and make a mission that the drone executes automatically.
 
 Well we can check those out at this link.
 
@@ -5017,13 +5007,9 @@ I'm very glad you asked.
 
 All right so here we go.
 
-Let's check out the command supported by copter section and all of these represent different commands
+Let's check out the command supported by copter section and all of these represent different commands that you can sequentially place into a mission that will then execute on the commands in order.
 
-that you can sequentially place into a mission that will then execute on the commands in order.
-
-Now the conventional way to assemble a mission for auto flight mode is to make the mission through the
-
-crowd control station gooey like ssion planner or Q ground control.
+Now the conventional way to assemble a mission for auto flight mode is to make the mission through the crowd control station gooey like ssion planner or Q ground control.
 
 And in those circumstances all of these commands will work.
 
