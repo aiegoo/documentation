@@ -4586,18 +4586,15 @@ So this will save us a lot of time down the road where we can just use one shell
 
 
 #### video 39 : script to automatically launch QGC with dronekit script part2
+
 ```php
 All right.
 
 So let's make our launch a little script.
 
-We'll be able to do the poor things described in the last video and we'll use it to make our lunch whole
+We'll be able to do the poor things described in the last video and we'll use it to make our lunch whole  script.
 
-script.
-
-So let's typed the following and watch the camel case make sure this is capital and let's hit enter
-
-Let's go into launch Siddall the top let's do the following.
+So let's typed the following and watch the camel case make sure this is capital and let's hit enter Let's go into launch Siddall the top let's do the following.
 
 So what this is is a ship bang.
 
@@ -4613,7 +4610,7 @@ OK.
 
 So remember we're going to do four things.
 
-And the first thing we're going to do is launch our drone kits Siddall instance and we're going to reference
+And the first thing we're going to do is launch our drone kits Siddall instance and we're going to  reference
 
 the full path to the drone kits Siddall executable.
 
@@ -4633,29 +4630,19 @@ And then we'll write the following.
 
 All right.
 
-Copter because we want our vehicle to be a quad copter and will specify the home coordinates that we
+Copter because we want our vehicle to be a quad copter and will specify the home coordinates that we want the vehicle to launch from.
 
-want the vehicle to launch from.
-
-And here we're going to use the latitude longitude and altitude coordinates obviously of the Green Bay
-
-Packers stadium and the ampersand here is going to start this process.
+And here we're going to use the latitude longitude and altitude coordinates obviously of the Green Bay Packers stadium and the ampersand here is going to start this process.
 
 The drunken Siddall process but it will throw into the background.
 
-And if we didn't go into the background any subsequent code below this drone gets a launch wouldn't
+And if we didn't go into the background any subsequent code below this drone gets a launch wouldn't get executed until we closed out of this program.
 
-get executed until we closed out of this program.
-
-But since we're throwing it into the background the code in this launch little script will continue
-
-to execute and this will exist on its own.
+But since we're throwing it into the background the code in this launch little script will continue to execute and this will exist on its own.
 
 OK so now we have our Don't kids Siddall instant started.
 
-The next thing we need to do is launch to ground control and we're going to reference the full path
-
-of our app image for q ground control.
+The next thing we need to do is launch to ground control and we're going to reference the full path of our app image for q ground control.
 
 So again let's pull up a terminal and we'll type which you do see that image.
 
@@ -4663,8 +4650,7 @@ And here is where we placed our app image to make it a globally reference Apple 
 
 So we'll copy that full path to the app image and we'll call that pull path in our launch little script.
 
-We'll paste that in and when we launch cuarón patrol it prints out a bunch of crap to the terminal so
-
+We'll paste that in and when we launch cuarón patrol it prints out a bunch of crap to the terminal so 
 we'll write this right here.
 
 All the techs to Dev-Null.
