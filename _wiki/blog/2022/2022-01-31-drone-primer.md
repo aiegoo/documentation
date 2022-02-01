@@ -4136,15 +4136,9 @@ This is also settable and gettable here.
 
 We're reading in if the vehicle is armed or not.
 
-So we'll get return true if the drone is spinning and we'll get return false if the props aren't spinning
+So we'll get return true if the drone is spinning and we'll get return false if the props aren't spinning and we'll set this value in the next video.
 
-and we'll set this value in the next video.
-
-And here we have the EKN underscore OK attribute and essentially tells us if our state estimator is
-
-OK to go and it'll be a sure false Boolean and you don't want the drone to start flying if it's not
-
-OK.
+And here we have the EKN underscore OK attribute and essentially tells us if our state estimator is OK to go and it'll be a sure false Boolean and you don't want the drone to start flying if it's not OK.
 
 So this is a pretty handy attribute to have access to.
 
