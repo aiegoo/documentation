@@ -5044,13 +5044,9 @@ Or are we using some sort of a relative frame when North is the front of the veh
 
 And the last video we're primarily going to be looking at map command nav waypoint and map command  return to launch and then current waypoint and auto continue are typically both always zero.
 
-And then we have these programs and as we saw in the last video the Depending on what command that we
+And then we have these programs and as we saw in the last video the Depending on what command that we use We're going to have some harams that we have to fill out.
 
-use We're going to have some harams that we have to fill out.
-
-So here for the map command that waypoint we have three Paramo that we have to fill out and it's 5 6
-
-and 7 and PRAnd 5 is the latitude longitude and seven is the altitude.
+So here for the map command that waypoint we have three Paramo that we have to fill out and it's 5 6 and 7 and PRAnd 5 is the latitude longitude and seven is the altitude.
 
 So this command would tell the drone to fly to this waypoint in three dimensional space.
 
