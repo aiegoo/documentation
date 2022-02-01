@@ -5054,15 +5054,9 @@ But pull up a terminal and go to course.
 
 And then drumkit OK.
 
-Now let's copy basic template and let's make a new file called auto mission OK and we'll get it into
+Now let's copy basic template and let's make a new file called auto mission OK and we'll get it into that and then we'll go to the very top and we're going to include a function that's going to be the command function from Joan kit.
 
-that and then we'll go to the very top and we're going to include a function that's going to be the
-
-command function from Joan kit.
-
-And we're also going to say from PI Madlang import mabbe still but to understand this Mabee till let's
-
-think back to when we learned about map link.
+And we're also going to say from PI Madlang import mabbe still but to understand this Mabee till let's think back to when we learned about map link.
 
 And we went around the standard enemies and messages that are available.
 
