@@ -5096,41 +5096,27 @@ Now we have our first basic command.
 
 And I'll just make a basic simple mission out of it just for fun the first thing we have to do is download the current list of commands from the drone that we're connected to and we do that by typing CMD or whatever you want to name it equals vehicle that commands and then we can type in that gives us an object and then we can download the current commands that are on our drone and then we can say wait ready.
 
-So don't go further in the code until we have successfully downloaded those commands from our drone
-
-and now once we have those commands we're going to clear them out with the dumb clear function.
+So don't go further in the code until we have successfully downloaded those commands from our drone and now once we have those commands we're going to clear them out with the dumb clear function.
 
 And now that that mission has been wiped out we can add in our own commands to make our own mission.
 
 And then we can do that with typing CMBS ad and then the command object that we made.
 
-And then once our list of commands is set up we can just see beagle that commands upload and that list
+And then once our list of commands is set up we can just see beagle that commands upload and that list of commands that we made will then get sent to the drones firmware and stored on the drones hardware.
 
-of commands that we made will then get sent to the drones firmware and stored on the drones hardware.
-
-And then any the drone switches into auto mode it will execute on those commands sequentially to fulfill
-
-the mission.
+And then any the drone switches into auto mode it will execute on those commands sequentially to fulfill the mission.
 
 But this would be a pretty boring mission.
 
-So we'll make three more commands and we'll add a couple other waypoints that the drone will fly to
+So we'll make three more commands and we'll add a couple other waypoints that the drone will fly to OK.
 
-OK.
-
-So our first command we're flying to just the current waypoint so the drone won't move at all it's just
-
-sort of a dummy command.
+So our first command we're flying to just the current waypoint so the drone won't move at all it's just sort of a dummy command.
 
 And then the second command is also a Gnab waypoint command.
 
 And we're going to actually fly to a different GPS coordinate.
 
-We're going to raise the altitude of 15 meters and then after that we'll fly to another waypoint we'll
-
-drop the out to back 10 meters then once we get to this waypoint we'll switch to RTL mode by using the
-
-map command NAV return to launch command.
+We're going to raise the altitude of 15 meters and then after that we'll fly to another waypoint we'll drop the out to back 10 meters then once we get to this waypoint we'll switch to RTL mode by using the map command NAV return to launch command.
 
 And that doesn't require any other parameters.
 
@@ -5138,9 +5124,7 @@ So this will be our basic mission.
 
 And just to verify that the map command nav waypoint command only needs those three parameters.
 
-You can go back to that Arti pilot documentation page and then quicken to map command that waypoint
-
-again and we'll see again that ramp 5 6 and 7 represent latitude longitude and altitude.
+You can go back to that Arti pilot documentation page and then quicken to map command that waypoint again and we'll see again that ramp 5 6 and 7 represent latitude longitude and altitude.
 
 Remember our Siddall drone will launch from the 50 yard line of Packer stadium is GPS coordinates make
 
