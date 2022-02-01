@@ -4434,21 +4434,15 @@ All right here we are GPS type and we see that a 1 means auto so the pilot firmw
 
 Well we would find the value for that which is three and we would just set that in our center and get our file instead of reading the value we can actually write the value so up here GPS type will be one then we're setting the value to three.
 
-Now we're going to read the value again to see if we successfully changed our parameter value to 3 and
-
-then we'll print out the GP type to the console and verify Let's run this again all right.
+Now we're going to read the value again to see if we successfully changed our parameter value to 3 and then we'll print out the GP type to the console and verify Let's run this again all right.
 
 There we go.
 
 We successfully changed the parameter value to 3.
 
-Now the cool thing about parameters in drone kit is that you can perform logic based off of read parameters
+Now the cool thing about parameters in drone kit is that you can perform logic based off of read parameters and kind of do some setup functions and some set up scripts before your drone takes off.
 
-and kind of do some setup functions and some set up scripts before your drone takes off.
-
-So for example if you were using the GPS type of 4 and it was anything but for you could change the
-
-GPS type to 4 as some sort of an initialization code.
+So for example if you were using the GPS type of 4 and it was anything but for you could change the GPS type to 4 as some sort of an initialization code.
 
 So here we're just saying if the yes type parameter is not equal to 4 then we're going to set it to.
 
