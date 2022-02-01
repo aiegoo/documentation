@@ -4892,27 +4892,15 @@ So how are we going to do that.
 
 What we can do that with our new helper function and attributes.
 
-So here we're making a new variable called distance to target location and then setting that equal to
+So here we're making a new variable called distance to target location and then setting that equal to the output of get distance meters.
 
-the output of get distance meters.
+And we're going to supply the target location the waypoint that we want to fly to and the current  location of the drone which we can get with attributes.
 
-And we're going to supply the target location the waypoint that we want to fly to and the current location
-
-of the drone which we can get with attributes.
-
-We called that location global relative to frame this will return some number and meters that will get
-
-saved to this variable here.
+We called that location global relative to frame this will return some number and meters that will get saved to this variable here.
 
 So this will be our original distance away from the way point.
 
-Now the next step is going to be to command the vehicle to apply to the specified waypoint the target
-
-location and we can do that and the vehicle object that we get in drone kit supplies us with a function
-
-called simple go to that takes the waypoint that we want to fly to the now the drone is flying to the
-
-waypoint that we specified but similar to what we found in the arm and take off function.
+Now the next step is going to be to command the vehicle to apply to the specified waypoint the target location and we can do that and the vehicle object that we get in drone kit supplies us with a function called simple go to that takes the waypoint that we want to fly to the now the drone is flying to the waypoint that we specified but similar to what we found in the arm and take off function.
 
 Our vehicle is a perfectionist.
 
