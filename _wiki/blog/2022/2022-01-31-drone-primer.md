@@ -4754,7 +4754,8 @@ So let's save this.
 ```
 
 
-#### video 40 : scrpt to automatically launch QGC with dronkit script part3
+#### video 40 : script to automatically launch QGC with dronkit script part3
+
 ```php
 OK so we're almost done with this launch style script.
 
@@ -4764,9 +4765,7 @@ Let's go ahead and write these four lines and these are similar to the ones we h
 
 But it kills the ports that we need to use up front at the start of the script.
 
-So we're closing down anything that's using Coogee R2 Mav and apm and let's go ahead and also add this
-
-line.
+So we're closing down anything that's using Coogee R2 Mav and apm and let's go ahead and also add this line.
 
 The APM line down here into this function finish so once again at the beginning of the script we're
 
@@ -4780,9 +4779,7 @@ OK.
 
 Now our script is done.
 
-Now we just need to place it in a directory that is in our path enviromental variable so that we can
-
-reference just the file name when we want to use it and not have to specify the whole path.
+Now we just need to place it in a directory that is in our path enviromental variable so that we can reference just the file name when we want to use it and not have to specify the whole path.
 
 Let's go back into our terminal and go to the directory where you were making your launch style script
 
