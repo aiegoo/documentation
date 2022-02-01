@@ -4577,23 +4577,11 @@ So to try to combat this we can launch new ground control every time you launch 
 
 So what we're going to do in the following videos is make a shell script called launch Siddall that will do four things for us.
 
-First thing it'll do is launch our drone kit Siddall instance then it will launch to ground control
+First thing it'll do is launch our drone kit Siddall instance then it will launch to ground control automatically then it will start map proxy and create the additional port Sneap needed for our truncate script to connect to the drone could Siddall instance and to ground control to connect to the get Seatle instance and then the fourth step will launch whatever drone kit Python script that we want.
 
-automatically then it will start map proxy and create the additional port Sneap needed for our truncate
+So all this will happen automatically and then once we're done with our junket get script everything else here will close automatically for us so we can start things automatically and then we can end four things automatically.
 
-script to connect to the drone could Siddall instance and to ground control to connect to the get Seatle
-
-instance and then the fourth step will launch whatever drone kit Python script that we want.
-
-So all this will happen automatically and then once we're done with our junket get script everything
-
-else here will close automatically for us so we can start things automatically and then we can end four
-
-things automatically.
-
-So this will save us a lot of time down the road where we can just use one shell script to do all this
-
-automatically for us.
+So this will save us a lot of time down the road where we can just use one shell script to do all this automatically for us.
 ```
 
 
