@@ -5064,7 +5064,7 @@ Well this map still is basically a python version of the standard messages and e
 
 Let's make a waypoint object that is the home location of our drone before it took off.
 
-And we remember what this is we're using attributes to record the current location of the drone and saving that waypoint object under the weight point home variable name.
+And we remember what this is we're using attributes to record the current location of the drone and  saving that waypoint object under the weight point home variable name.
 
 Now let's make our first command object will say CMT One equals command and then we'll set it equal to all of the input variables that the command function takes.
 
@@ -5086,9 +5086,7 @@ And then a comma.
 
 And now we specify the command that we want to use.
 
-So again we'll say mabbe you till that map blank map command that way point and then current waypoint
-
-and auto continue will be 0 and ram 1 through 4 will be zero.
+So again we'll say mabbe you till that map blank map command that way point and then current waypoint and auto continue will be 0 and ram 1 through 4 will be zero.
 
 And the only way points we have to worry about are 5 6 and 7 and we can verify that by checking the
 
