@@ -4170,13 +4170,9 @@ And the last heartbeat.
 
 So we got our last heartbeat from our drone point eight seconds ago.
 
-It was the vehicle article that's currently not farmable so we couldn't start the props if we want it
+It was the vehicle article that's currently not farmable so we couldn't start the props if we want it to Mode's stabilize.
 
-to Mode's stabilize.
-
-So we are in the stabilized flight mode and we access that through vehicle mode that name the drone
-
-isn't armed and the EPA is not.
+So we are in the stabilized flight mode and we access that through vehicle mode that name the drone isn't armed and the EPA is not.
 
 OK so we grabbed all this information from the already pilot firmware.
 
