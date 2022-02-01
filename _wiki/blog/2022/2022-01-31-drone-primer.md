@@ -4699,17 +4699,9 @@ So this is the first argument that we're passing into this launch Siddall bash s
 
 So that is what this dollar sign one is indicating is dollar sign one will get resolved to the first argument getting passed into the script.
 
-So in this case this will get replaced with basic template and then we'll start a basic template with
+So in this case this will get replaced with basic template and then we'll start a basic template with Python.
 
-Python.
-
-Name of the file and then we'll connect at the specified port like we've been doing previously and we
-
-went through this process to the background because we want the progress of this launch Siddall script
-
-to stop at this point and we don't want anything underneath this line to execute until our iPhone script
-
-is done executing.
+Name of the file and then we'll connect at the specified port like we've been doing previously and we went through this process to the background because we want the progress of this launch Siddall script to stop at this point and we don't want anything underneath this line to execute until our iPhone script is done executing.
 
 So OK so now let's say our pipeline script has finished executing and we're continuing on with our code
 
