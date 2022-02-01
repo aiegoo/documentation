@@ -5026,11 +5026,7 @@ What's going on.
 
 So in this video we're going to see what the auto flight mode does in practice on our Siddall drone.
 
-We're going to make our first auto mission that's going to fly to a couple of waypoints around the Green
-
-Bay Packers field Thomas Lee without input from the guided flight mode and the core new drone function
-
-we're going to be looking at is the command function.
+We're going to make our first auto mission that's going to fly to a couple of waypoints around the Green Bay Packers field Thomas Lee without input from the guided flight mode and the core new drone function we're going to be looking at is the command function.
 
 And if you remember a mission is a list of commands.
 
