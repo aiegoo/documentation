@@ -5088,21 +5088,13 @@ And now we specify the command that we want to use.
 
 So again we'll say mabbe you till that map blank map command that way point and then current waypoint and auto continue will be 0 and ram 1 through 4 will be zero.
 
-And the only way points we have to worry about are 5 6 and 7 and we can verify that by checking the
-
-documentation for map command that halfway point at this link right here.
+And the only way points we have to worry about are 5 6 and 7 and we can verify that by checking the documentation for map command that halfway point at this link right here.
 
 OK.
 
 Now we have our first basic command.
 
-And I'll just make a basic simple mission out of it just for fun the first thing we have to do is download
-
-the current list of commands from the drone that we're connected to and we do that by typing CMD or
-
-whatever you want to name it equals vehicle that commands and then we can type in that gives us an object
-
-and then we can download the current commands that are on our drone and then we can say wait ready.
+And I'll just make a basic simple mission out of it just for fun the first thing we have to do is download the current list of commands from the drone that we're connected to and we do that by typing CMD or whatever you want to name it equals vehicle that commands and then we can type in that gives us an object and then we can download the current commands that are on our drone and then we can say wait ready.
 
 So don't go further in the code until we have successfully downloaded those commands from our drone
 
