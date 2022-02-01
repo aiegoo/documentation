@@ -4488,21 +4488,13 @@ So all of this right here constitutes the arming portion of Armond take off.
 
 So we already know what all this does.
 
-We're going to check to see if Jonah's honorable James to be able to guide to flight mode and then request
+We're going to check to see if Jonah's honorable James to be able to guide to flight mode and then request that the prop start spinning by setting be called armed equal that true.
 
-that the prop start spinning by setting be called armed equal that true.
+And now that the proper spinning we're at this point we want to fly the drone to the specified altitude that is input to this function.
 
-And now that the proper spinning we're at this point we want to fly the drone to the specified altitude
+So we're using our vehicle object and that has available to it a function called simple underscore takeoff with a simple takeoff.
 
-that is input to this function.
-
-So we're using our vehicle object and that has available to it a function called simple underscore takeoff
-
-with a simple takeoff.
-
-Does is package up a map command that inputs the height that we want the drone to fly to and sends that
-
-command to the pilot firmware through our connection.
+Does is package up a map command that inputs the height that we want the drone to fly to and sends that command to the pilot firmware through our connection.
 
 So the drone is going to start flying into the air but our drone is kind of a perfectionist.
 
