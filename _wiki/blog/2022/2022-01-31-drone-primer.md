@@ -4462,17 +4462,9 @@ So you wouldn't have to manually do this every single time.
 
 #### video 37 : functions to arm and takeoff
 ```php
-Ole Miss Amigo's in this video we're going to make a function called Armond take off that will be designed
+Ole Miss Amigo's in this video we're going to make a function called Armond take off that will be designed to arm the drone and take off into the air to a specified altitude and this function in conjunction with the connect my copter function are going to be widely used in future scripts.
 
-to arm the drone and take off into the air to a specified altitude and this function in conjunction
-
-with the connect my copter function are going to be widely used in future scripts.
-
-So we're going to make a new file called Basic underscore template that will be used as a foundational
-
-file that we can copy from for future scripts Let's get started let's pull up the terminal
-
-and let's go do course route.
+So we're going to make a new file called Basic underscore template that will be used as a foundational file that we can copy from for future scripts Let's get started let's pull up the terminal and let's go do course route.
 
 A.K.
 
