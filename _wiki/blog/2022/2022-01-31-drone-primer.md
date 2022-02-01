@@ -5030,9 +5030,7 @@ We're going to make our first auto mission that's going to fly to a couple of wa
 
 And if you remember a mission is a list of commands.
 
-Will these command objects that we make are going to constitute the different commands that make up
-
-the list.
+Will these command objects that we make are going to constitute the different commands that make up the list.
 
 So the command takes a bunch of arguments as you can see here a lot of these though never change.
 
@@ -5042,13 +5040,9 @@ That is essentially our coordinate system that we're using.
 
 So are we using the northeast down frame where north is true north and south is true south.
 
-Or are we using some sort of a relative frame when North is the front of the vehicle and south is the
+Or are we using some sort of a relative frame when North is the front of the vehicle and south is the back of the vehicle and then the next argument we pass is the Madlang command which we look at those.
 
-back of the vehicle and then the next argument we pass is the Madlang command which we look at those.
-
-And the last video we're primarily going to be looking at map command nav waypoint and map command return
-
-to launch and then current waypoint and auto continue are typically both always zero.
+And the last video we're primarily going to be looking at map command nav waypoint and map command  return to launch and then current waypoint and auto continue are typically both always zero.
 
 And then we have these programs and as we saw in the last video the Depending on what command that we
 
