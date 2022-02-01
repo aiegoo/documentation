@@ -4154,31 +4154,17 @@ So let's save this and launch it at the command line and see what the output is.
 
 Pull up a terminal.
 
-Let's go to
-
-decay and then let's turn to file attribute patcher hit enter we're connecting to our drone kids Siddall
-
-and since being launched directly from our pile years or verification of connection and shortly we will
-
-see the attributes printed out to our screen ok cool.
+Let's go to decay and then let's turn to file attribute patcher hit enter we're connecting to our drone kids Siddall and since being launched directly from our pile years or verification of connection and shortly we will see the attributes printed out to our screen ok cool.
 
 So we see the auto pilot version.
 
-So that is from right here auto pilot version and vehicle that version got resolve to A.P.M. copter
+So that is from right here auto pilot version and vehicle that version got resolve to A.P.M. copter 3.3.
 
-3.3.
+So this came from the already pilot firmware that we are putting into drone kit in Python land through attributes.
 
-So this came from the already pilot firmware that we are putting into drone kit in Python land through
+We see our position and 3D space which returns our latitude longitude and altitude current coordinates and we can see where a drone is currently on the ground because the altitude is zero.
 
-attributes.
-
-We see our position and 3D space which returns our latitude longitude and altitude current coordinates
-
-and we can see where a drone is currently on the ground because the altitude is zero.
-
-And here's our attitude attribute gives us the state of our pitch and roll and he is our velocity attribute
-
-as you can see we're not moving currently.
+And here's our attitude attribute gives us the state of our pitch and roll and he is our velocity attribute as you can see we're not moving currently.
 
 And the last heartbeat.
 
