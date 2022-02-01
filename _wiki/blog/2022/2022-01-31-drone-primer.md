@@ -4965,31 +4965,21 @@ And now we reached our target waypoint we have entered land mode and now we can 
 ```php
 What's going on everyone.
 
-So we've been using the guiding light mode pretty heavily to this point and in this video we're going
-
-to check out what the auto mode is all about.
+So we've been using the guiding light mode pretty heavily to this point and in this video we're going to check out what the auto mode is all about.
 
 So they are pretty similar.
 
-The guided flight mode and the auto flight mode both don't require RC input from a manual flying pilot
+The guided flight mode and the auto flight mode both don't require RC input from a manual flying pilot but there is a distinction.
 
-but there is a distinction.
-
-So let's think of the drone as being stupid when it's an guided flight mode and intelligent when it's
-
-an auto flight mode.
+So let's think of the drone as being stupid when it's an guided flight mode and intelligent when it's an auto flight mode.
 
 That is because in the guided mode the drone does not move unless it is told to move somewhere.
 
 So you launched the drone up into the air.
 
-It will hover in place until it gets a movement command and will execute that movement command and then
+It will hover in place until it gets a movement command and will execute that movement command and then it will hover again.
 
-it will hover again.
-
-So it is dependent on some external source to command it to fly to different locations on the auto flight
-
-mode.
+So it is dependent on some external source to command it to fly to different locations on the auto flight mode.
 
 It is different in the auto mode.
 
