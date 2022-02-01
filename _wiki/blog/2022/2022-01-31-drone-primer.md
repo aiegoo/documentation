@@ -5020,6 +5020,7 @@ Now if you want to learn more about the commands you can click into them and you
 
 
 #### video 43 : autonomous dronekit mssion with auto mode
+
 ```php
 What's going on.
 
