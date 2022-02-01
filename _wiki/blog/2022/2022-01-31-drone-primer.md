@@ -4956,9 +4956,7 @@ It's going to go over there and get a cheese head maybe get some cheese curds.
 
 And you can notice as we said before this go to function as a blocking function because it doesn't allow execution of downstream code until it finishes.
 
-And now we reached our target waypoint we have entered land mode and now we can see the drones start
-
-to land.
+And now we reached our target waypoint we have entered land mode and now we can see the drones start to land.
 
 ```
 
