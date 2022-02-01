@@ -4985,11 +4985,7 @@ It is different in the auto mode.
 
 You compile a mission which consists of a list of commands that you then upload to the drones firmware and then once you put the drone into auto mode the drum automatically execute on those commands sequentially and you don't have to do anything as a pilot or you don't even need a script a drone script telling it to fly it automatically does that stuff for you.
 
-Now there are different reasons to be in either guided mode or auto mode auto mode would be great for
-
-missions that you're going to fly continuously or for pretty monotonous and normal missions that you
-
-could fly by just assembling lists of commands.
+Now there are different reasons to be in either guided mode or auto mode auto mode would be great for missions that you're going to fly continuously or for pretty monotonous and normal missions that you could fly by just assembling lists of commands.
 
 So for example if you had a field to survey and you wanted the drone to take pictures every five seconds
 
