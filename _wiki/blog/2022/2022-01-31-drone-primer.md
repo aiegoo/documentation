@@ -4948,17 +4948,13 @@ So here is the Siddall drone getting launched up in here is to ground control.
 
 All right so the drone is at the 50 yard line.
 
-All right so the drone is now going into the air it's in the arm and takeoff function and it's going
-
-to get the 10 meters and now it's going to begin its flight to Packer pro-shop.
+All right so the drone is now going into the air it's in the arm and takeoff function and it's going to get the 10 meters and now it's going to begin its flight to Packer pro-shop.
 
 And those GPS coordinates are right over here.
 
 It's going to go over there and get a cheese head maybe get some cheese curds.
 
-And you can notice as we said before this go to function as a blocking function because it doesn't allow
-
-execution of downstream code until it finishes.
+And you can notice as we said before this go to function as a blocking function because it doesn't allow execution of downstream code until it finishes.
 
 And now we reached our target waypoint we have entered land mode and now we can see the drones start
 
