@@ -4936,19 +4936,13 @@ So until the drone has gotten to this waypoint it won't be able to execute furth
 
 So after the drone is at its target waypoint we can command it to land.
 
-We'll send in the request to Aarthi pilot to change the flight mode to land mode and then it will iterate
-
-through this while block until it's in land mode and then once it's in land mode this will break out
-
-and we'll just right.
+We'll send in the request to Aarthi pilot to change the flight mode to land mode and then it will  iterate through this while block until it's in land mode and then once it's in land mode this will break out and we'll just right.
 
 While true at the end so that ground control will stay up until we close our drone get script manually.
 
 OK so let's save this and see it in action.
 
-Let's pull up a terminal and let's use our new launch Siddall script type launch Siddall and we'll type
-
-location based movement.
+Let's pull up a terminal and let's use our new launch Siddall script type launch Siddall and we'll type location based movement.
 
 So here is the Siddall drone getting launched up in here is to ground control.
 
