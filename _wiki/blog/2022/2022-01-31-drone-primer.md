@@ -5013,9 +5013,7 @@ Now the conventional way to assemble a mission for auto flight mode is to make t
 
 And in those circumstances all of these commands will work.
 
-Unfortunately currently in drone kit only a few of these commands will work and that is the nav waypoint
-
-and have returned to launch nav land and potentially a couple of other ones but they're not all supported.
+Unfortunately currently in drone kit only a few of these commands will work and that is the nav waypoint and have returned to launch nav land and potentially a couple of other ones but they're not all supported.
 
 Now if you want to learn more about the commands you can click into them and you know see different
 
