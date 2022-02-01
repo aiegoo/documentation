@@ -4404,11 +4404,7 @@ What's crackin.
 
 So we dealt with parameters a little bit to this point already but we haven't done it in trone kit.
 
-It's a very simple process and the parameters like always are readable and ridable and we can access
-
-them through our vehicle object and it's pretty simple you just do the cool parameters and then in square
-
-brackets you type the name of the parameter that you want to see the value for.
+It's a very simple process and the parameters like always are readable and ridable and we can access them through our vehicle object and it's pretty simple you just do the cool parameters and then in square brackets you type the name of the parameter that you want to see the value for.
 
 So you could say guess type Moel name is variable guess type set it equal to Biegel that parameters
 
