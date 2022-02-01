@@ -4468,25 +4468,17 @@ So we're going to make a new file called Basic underscore template that will be 
 
 A.K.
 
-and that's copy mode setter and name it basic underscore template
-
-and then let's get it into basic template.
+and that's copy mode setter and name it basic underscore template and then let's get it into basic template.
 
 So we did a lot of the work that is going to be needed in the arm and take off function.
 
 In the last video.
 
-So let's actually copy all of this here all the while blocks and let's go above here into the function
+So let's actually copy all of this here all the while blocks and let's go above here into the function section above the main executable section.
 
-section above the main executable section.
+Let's call this function Armond take off and the passen variable is going to be the height and meters that we want the drone to fly to.
 
-Let's call this function Armond take off and the passen variable is going to be the height and meters
-
-that we want the drone to fly to.
-
-So we'll call that target height OK now let's paste in the wild box that we copied and let's highlight
-
-it all again and make sure to have one time for my sisters.
+So we'll call that target height OK now let's paste in the wild box that we copied and let's highlight it all again and make sure to have one time for my sisters.
 
 OK.
 
