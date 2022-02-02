@@ -372,33 +372,13 @@ sudo systemctl reload nginx
 
 ```php
 00:01
-okay so let's uh let's now create a
-00:05
-quick recap
+okay so let's uh let's now create a quick recap
 00:07
-or more precisely to make overview of
-00:10
-the complete application flow of our
-00:13
-multi-threading application concurrent
-00:15
-application
+or more precisely to make overview of the complete application flow of our multi-threading application concurrent application
 00:17
 uh
 00:19
-that we created
-00:21
-so far
-00:26
-so
-00:28
-of course we have configuration in our
-00:30
-configuration file we define some values
-00:32
-that are important
-00:34
-cloud up that's for our connection to
+that we created so far so of course we have configuration in our configuration file we define some values that are important cloud up that's for our connection to
 00:36
 our java application for a drone that's
 00:39
