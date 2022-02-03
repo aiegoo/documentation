@@ -378,30 +378,14 @@ or more precisely to make overview of the complete application flow of our multi
 00:17
 uh
 00:19
-that we created so far so of course we have configuration in our configuration file we define some values that are important cloud up that's for our connection to
-00:36
-our java application for a drone that's
-00:39
-for our uh raspberry pi application
-00:42
-and for the video as a for our video
-00:44
-streamer application
-00:46
+that we created so far so of course we have configuration in our configuration file we define some values that are important cloud up that's for our connection to our java application for a drone that's for our uh raspberry pi application and for the video as a for our video streamer application
 so whenever we start we read those
-00:48
 configurations and we what we do is
-00:51
 first
-00:52
 we once we have those configuration we
-00:54
 create our drone object that is uh you
-00:57
 as you remember uh obstruction over our
-01:00
 uh flying uh
-01:02
 entity flying machine that's from here
 01:04
 we read data and we execute whatever we
