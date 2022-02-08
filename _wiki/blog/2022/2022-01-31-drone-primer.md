@@ -2918,6 +2918,32 @@ link messages to communicate with your drone.
 
 
 #### video 24 : connecting mavproxy to drone
+```python
+What is MAVProxy?
+
+	*A command line GCS that is lightweight (requires very little resurces)
+	*Open source GCS written in python
+	*Can be used to share Drone-GCS connections with other ports/GCS
+
+Where can I learn more about MAVProxy?
+https://ardupilot.github.io/MAVProxy/html/index.html
+
+How to connect MAVProxy to Drone?
+
+Using the IP Protocol to connect MAVProxy with the drone:
+	The drone will offer an open port that a GCS can connect to. 
+	For SITL drone, the port is tcp:127.0.0.1:5760
+
+	Remember, this is the DRONE SIDE port that the GCS connects to.
+
+	To connect MAVProxy to the drone's 5760 port:
+	
+***	mavproxy.py --master tcp:127.0.0.1:5760 
+
+	This will establish a connection with the drone and launch a MAVProxy
+	terminal, where you can interact with the drone.
+```
+
 ```php
 All right so in the last video we got a short little introduction to Matt proxy and this video we're
 
@@ -3026,6 +3052,32 @@ Back to your drone with MAP proxy on your own.
 ```
 
 #### video 25 : QGC install
+
+```python
+/////////////////////////VIDEO SUMMARY////////////////////////////////
+Connect multiple GCS to a single SITL instance
+//////////////////////////////////////////////////////////////////////
+
+
+How to share data link connections with MAVPRoxy to other ports?
+
+	Use the --out option. The IP address:port specified after
+	the --out option will create an additional port that a
+	separate GCS can bind to.
+
+	Example:
+
+		mavproxy.py --master tcp:127.0.0.1:5760 --out udp:127.0.0.1:14550
+
+	Now QGC could be pulled up and connect with the SITL drone at udp:14550 while
+	mavproxy is connected at tcp:5760
+
+
+How to start the build/sitl/bin/arducopter executable:
+
+./arducopter -S -I0 --home -35.363261,149.165230,584,353 --model "+" --speedup 1 --defaults /home/caleb/courseRoot/apm/ardupilot/Tools/autotest/default_params/copter.parm
+```
+
 ```php
 All right.
 
