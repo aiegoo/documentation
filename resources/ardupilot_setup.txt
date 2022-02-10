@@ -46,7 +46,7 @@
   306  apt list|grep desktop|grep ros
   307  lsb_release 
   308  cat /etc/os-release 
-  309  # ihave moved here last Sunday and usiing my mobile to enable this wifi
+  309  # 
   310  sudo apt install       ros-melodic-desktop-full
   311  ps
   312  which .bascccc
@@ -78,7 +78,7 @@
   338  sudo apt-get install ros-noetic-mavros ros-noetic-mavros-extras
   339  wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
   340  chmod a+x install_geographiclib_datasets.sh
-  341  ./install_geographiclib_datasets.shc
+  341  ./instahave moved here last Sunday and usiing my mobile to enable this wifill_geographiclib_datasets.shc
   342  sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras
   343  ./install_geographiclib_datasets.sh 
   344  sudo ./install_geographiclib_datasets.sh 
@@ -114,5 +114,3 @@
   374  bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
   375  ./QGroundControl.AppImage 
   376  history|grep mavros
-  377  history
-  378  history >> ardupilog_setup.txt
