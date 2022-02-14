@@ -21,6 +21,29 @@ updated: 2021-10-20 17:05
 * TOC
 {:toc}
 
+## jdlab
+1. setting up vim
+2. add `startify' to vim by copying all from .vim folder
+3. install brew gem [link](https://www.whatwant.com/entry/LinuxBrew-install-Ubuntu-1804)
+   1. `sudo apt-get install build-essential curl file git`
+   2. `sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"`
+   3. vim .bashrc, `source .bashrc`
+
+4. bluetooth driver install for ubuntu [link](https://sleekdev.tistory.com/39); to install, These firmware files need to be copied and renamed to: `/lib/firmware/rtl_bt/rtl8761b_fw.bin`
+5. or if the above causes issues, download from [here](https://medium.com/nerd-for-tech/how-to-install-unsupported-bluetooth-5-0-dongle-on-linux-4bf34aa99fed)
+6. copy install.sh requirments.txt and Contents folder to target server and directory path.
+7. 
+```bash
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
+export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+
+export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+```
+
+- to try out, run `brew install hello`
+
+
 ## Thi
 
 The basic steps I often do every time I install a new Ubuntu system. The order of things is important.
