@@ -29,6 +29,7 @@ updated: 2022-02-16 03:48
 http://gazebosim.org/
 
 What is Gazebo?
+![image](https://user-images.githubusercontent.com/48428378/154136267-3c6f4631-b0a1-4d09-9680-d3a5bcec7af3.png)
 
 
 Robot simulation is an essential tool in every roboticist's toolbox. A well-designed simulator makes it possible to rapidly test algorithms, design robots, and perform regression testing using realistic scenarios. Gazebo offers the ability to accurately and efficiently simulate populations of robots in complex indoor and outdoor environments. At your fingertips is a robust physics engine, high-quality graphics, and convenient programmatic and graphical interfaces. Best of all, Gazebo is free with a vibrant community.
@@ -67,7 +68,11 @@ see the page https://bitbucket.org/osrf/gazebo_tutorials/issues/42/gazebo6-insta
 
 
 4. Run gazebo
+
+```bash
 gazebo
+```
+![image](https://user-images.githubusercontent.com/48428378/154136378-6659734e-5b36-47f9-950a-89615ba01cdb.png)
 
 
 가제보가 돌아가는 것을 확인하시면 gazebo 6의 설치가 완료되었습니다
