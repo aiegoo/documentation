@@ -51,6 +51,8 @@ cd ~/catkin_ws/src
 git clone https://github.com/Jaeyoung-Lim/modudculab_ros.git
 catkin build modudculab_ros
 ```
+![image](https://user-images.githubusercontent.com/48428378/154136705-4244d5b5-026b-4816-8069-58045bb42d25.png)
+
 
 패키지 설치가 완료되었다면 순차적으로 ROS를 구동시키면 되겠습니다. 일단 항상 기억하셔야 하는 건 ROS 를 사용하려면 첫 번째 해줘야하는 일은 roscore를 구동시키는 것입니다.
 
@@ -58,6 +60,7 @@ catkin build modudculab_ros
 roscore
 ```
 roscore를 구동시킬 때 다음과 같은 문제가 발생할 수 있습니다.
+![image](https://user-images.githubusercontent.com/48428378/154136748-fe548878-283d-43a7-b17e-27c060cb6a47.png)
 
 이 경우에는 처음에 설정해줬던 IP주소가 달라졌기 때문인데 터미널 창에서 지금 IP를 검색해서 설정파일에서 고쳐주고 다시 실행해주면 실행이 됩니다. 관련 내용은 제 2번째 포스팅을 참고 하시길 바랍니다.
 http://www.modulabs.co.kr/board_GDCH80/1562
@@ -77,10 +80,11 @@ roslaunch modudculab_ros ctrl_pos_gazebo.launch
 ```
 
 3. Simulation of iris drone default
-4.
+
 ```bash
 roslaunch modudculab_ros ctrl_pos_gazebo.launch
 ```
+![image](https://user-images.githubusercontent.com/48428378/154136803-76309fa3-6dbc-424c-9bde-57fa4a9d66e6.png)
 
 다른 터미널 창을 열고 이제 iris drone을 arming시켜줍니다.
 
@@ -96,6 +100,7 @@ rosrun mavros mavsys mode -c OFFBOARD
 미션은 hovering으로서 (0,0,1)위치에서 떠있으라는 명령을 주었습니다. 명령은 /src/modudculab_ros/src/pub_setpoint_pos.cpp에 다음과 같이 적혀있습니다.
 
 이 명령을 받으면 iris drone이 다음과 같이 작동합니다.
+![image](https://user-images.githubusercontent.com/48428378/154136866-bda079f1-0b4c-4dac-85f9-ebe498b8674f.png)
 
 gazebo가 상당히 좋은 점이 가상 보드로 사용하고 있는 픽스호크는 시뮬레이션에서 기압센서로 고도를 측정중인데 그 센서의 drift현상까지 표현하고 있다는 점입니다. 따라서 위와 같이 실행해놓고 시간이 좀 지나서 보면 더 위로 드론이 올라가 있는 것을 볼 수 있습니다.
 
@@ -114,6 +119,7 @@ optical flow sensor : 밑 바닥에 무늬가 없을 경우는 위치추정이 �
 optical flow에 대한 정의는 다음과 같습니다. https://en.wikipedia.org/wiki/Optical_flow
 
 카메라의 이미지의 변화를 통해서 자신의 속도를 알 수 있게 해주는 센서인 것 같습니다. 즉 이전 프레임과 현재 프레임을 비교해서 각 포인트의 변화 벡터를 계산하는 형식입니다. 세계적으로 유명한 드론인 비밥드론 또한 이 센서를 사용하였습니다. 사실 저 위의 세 개의 센서를 다 사용하였습니다. http://www.parrot.com/usa/products/bebop-drone/
+![image](https://user-images.githubusercontent.com/48428378/154136907-038e13b3-f3e8-4ed0-a49b-ea0a79e68524.png)
 
 
 따라서 위에서 했던 과정에서 make posix_sitl_default gazebo 부분만 다음과 같은 명령어로 바꿔서 실행하면 기존의 iris drone에 optical flow 센서가 탑재가 되는 것인데 좀 더 고도가 정확하게 유지가 되게 됩니다.
@@ -123,6 +129,7 @@ optical flow에 대한 정의는 다음과 같습니다. https://en.wikipedia.or
 cd ~/src/Firmware
 make posix gazebo_iris_opt_flow
 ```
+![image](https://user-images.githubusercontent.com/48428378/154136931-eab451f6-576d-487a-878e-f136f10514f1.png)
 
 드론을 보면 뒤 쪽에 흰색이 뭔가 추가된 것을 볼 수 있는데 그게 optical flow센서입니다.
 
@@ -146,8 +153,9 @@ http://wiki.ros.org/ROS/Tutorials/Recording%20and%20playing%20back%20data
 ```bash
 rostopic list -v
 ```
+![image](https://user-images.githubusercontent.com/48428378/154136964-f48ad291-b01d-4261-96af-f5433a3d03a2.png)
 
-제가 기록하고자 하는 topic은 /mavros/local_position/pose 입니다. 파일이름은 -O 뒤에 적어주시고 기록하고자 하는 topic을 적어줍니다. 다음과 같은 명령어를 새로운 터미널 창에서 실행해주셔야 합니다.
+기록하고자 하는 topic은 /mavros/local_position/pose 입니다. 파일이름은 -O 뒤에 적어주시고 기록하고자 하는 topic을 적어줍니다. 다음과 같은 명령어를 새로운 터미널 창에서 실행해주셔야 합니다.
 
 
 ```bash
@@ -169,11 +177,16 @@ rosbag info iris_default_1.bag
 ```
 그 뒤에 다음 명령어를 실행시켜주었습니다.
 
+```bash
 rqt_bag
+```
+![image](https://user-images.githubusercontent.com/48428378/154137043-ef3ce0c5-d0b7-4aa0-898e-9652b2a5c546.png)
 
 왼쪽 위에 빨간 점 옆의 열기버튼을 눌러서 기록한 파일을 열어주시기 바랍니다.
+![image](https://user-images.githubusercontent.com/48428378/154137075-68a5b5a2-8bac-403e-8494-3d8cfbdf574d.png)
 
 열기버튼 밑의 mavros/local_position/pos를 마우스 오른쪽 버튼으로 누르고 publish를 누르고 view의 plot을 눌러줍니다 그럼 위와 같은 화면이 나오는데 오른쪽 pose의 position중에서 z을 선택해주면 그래프가 plot이 됩니다. 이 것을 저장해주시기 바랍니다.
+![image](https://user-images.githubusercontent.com/48428378/154137103-cdab646d-d3bc-4d79-8fc6-ef53bb09ef3e.png)
 
 
 이제 optical flow sensor가 달린 iris drone도 마찬가지로 기록해줍니다.
@@ -194,7 +207,8 @@ rosbag record -O iris_optical_1 /mavros/local_position/pos
 rosrun mavros mavsys mode -c OFFBOARD
 
 rqt_bag
-```
+```![image](https://user-images.githubusercontent.com/48428378/154137137-3dc5f5a7-837d-45f2-ab51-8b6c46149e35.png)
+
 
 optical flow 센서만 사용했을 때 보다 더 정확하게 고도를 유지하고 있는 것을 볼 수 있습니다. 고도를 측정하는 센서 사이의 가중치도 qGroundControl로 조정할 수 있습니다.
 
