@@ -1,7 +1,7 @@
 # Note:
 # If you are using the createtag script, don't leave a blank line at the end of this file.
 # In other words, the last line must be the last tag in the allowed-tags list.
-wiki created since Oct 11, 2021:  
+wiki created since Oct 11, 2021:
   - javascript-is-awesome
   - vim-youcompleteme
   - fugitive-vim-cheatsheet
@@ -117,13 +117,10 @@ wiki created since Oct 11, 2021:
   - gcs-cloud
   - smartAP
   - drone-primer
-<<<<<<< HEAD
   - jdlab-ros
-=======
   - jdlab-matek
   - jdlab-docker
   - jdlab-qt
   - runcam
->>>>>>> 7b518ff45fd4ce405646a279542147ddfa848bfb
   - jdlab-ros2
   - jdlab-ros-gazebo
