@@ -216,18 +216,24 @@ optical flow 센서만 사용했을 때 보다 더 정확하게 고도를 유지
 1. SITL의 구조와 MAVROS
 저번 글에서는 SITL로 일정한 고도에 호버링하는 간단한 임무를 수행해보았습니다. 더 나아가기에 앞서 SITL이 어떻게 작동하는 지에 대해서 살펴 보려고 합니다. 다음은 PX4 documentation 페이지입니다.
 http://dev.px4.io/simulation-sitl.html
+![image](https://user-images.githubusercontent.com/48428378/154137887-1209b940-08ff-4c78-9ac3-f1e687e63a4c.png)
 
 
 
 위 그림과 같이 SITL은 MAVLINK라는 통신 프로토콜을 통해서 simulator에 연결합니다. 이것이 기본적인 세팅이고 SITL은 PX4에 들어있는 기능 중에 하나이기 때문에 위 그림에서 SITL을 PX4로 생각하고 simulator를 gazebo라고 생각하면 더 이해하기 쉬울 것 같습니다.
 
-첫 번째 글에서 PX4와 mavlink와 ros와 mavros에 대한 개념을 살펴봤는데 그 상관관계는 다음과 같습니다.  간단하게 ROS가 Control center라고 생각하면 됩니다. attitude나 local position, acceleration 등의 명령을 주면 그것이 mavros라는 어떠한 다리를 통해 mavlink의 형태의 매시지로 px4에 전달이 되고 실재로 px4가 모터들을 컨트롤하고 또 반대로 센서데이터들은 mavros를 통해서 ros로 전달됩니다. 이렇게 control이 되는 것입니다. Pixhawk 보드에서 이 모든 것들을 작동시킬 수도 있겠지만 그렇게 할 경우 안전상의 문제도 있고 기능상의 문제도 생길 수 있습니다. 예를 들어서 ROS를 돌리다가 문제가 생길 경우에 픽스호크와 연결되어 있는 companion computer로부터 분리를 시키면 쿼드콥터 자체는 픽스호크만으로도 컨트롤 할 수 있기 때문에 추락하거나 하는 문제를 방지할 수 있습니다.
+첫 번째 글에서 PX4와 mavlink와 ros와 mavros에 대한 개념을 살펴봤는데 그 상관관계는 다음과 같습니다.  
+![image](https://user-images.githubusercontent.com/48428378/154137949-f00877e5-8b23-4f42-bdb7-42157dd8a471.png)
+
+간단하게 ROS가 Control center라고 생각하면 됩니다. attitude나 local position, acceleration 등의 명령을 주면 그것이 mavros라는 어떠한 다리를 통해 mavlink의 형태의 매시지로 px4에 전달이 되고 실재로 px4가 모터들을 컨트롤하고 또 반대로 센서데이터들은 mavros를 통해서 ros로 전달됩니다. 이렇게 control이 되는 것입니다. Pixhawk 보드에서 이 모든 것들을 작동시킬 수도 있겠지만 그렇게 할 경우 안전상의 문제도 있고 기능상의 문제도 생길 수 있습니다. 예를 들어서 ROS를 돌리다가 문제가 생길 경우에 픽스호크와 연결되어 있는 companion computer로부터 분리를 시키면 쿼드콥터 자체는 픽스호크만으로도 컨트롤 할 수 있기 때문에 추락하거나 하는 문제를 방지할 수 있습니다.
+![image](https://user-images.githubusercontent.com/48428378/154137994-8d457bf8-444e-4ca3-9fc1-3e55541eb84f.png)
 
  따라서 현재는 노트북을 Companion Computer로 ROS를 실행시키지만 이후에는 라즈베리파이를 companion computer로 이용하여 pixhawk와 라즈베이를 같이 드론에 탑재해서 컨트롤 할 예정입니다.
 
 이러한 상관관계속에서 원래라면 Pixhawk에서 PX4가 작동해야하는데 그러한 보드없이 가상보드에서 작동하는 것처럼 시뮬레이션하는 것이 SITL입니다. 즉 ROS에서 mavros를 통해서 명령을 px4에 전달하면 px4는 보드없이 gazebo라는 세상에서 ros의 명령을 실행하는 것입니다.
 
 다음 그림은 SITL이 어떻게 통신하는 지를 보여주는 그림입니다.
+![image](https://user-images.githubusercontent.com/48428378/154138022-83358a16-7a69-42f8-885f-62dd9c212f3e.png)
 
 
 SITL은 PX4자체의 앱중의 하나로서 처음에 PX4를 설치할 때 함께 설치됩니다. 저희는 JMAVSim대신에 Gazebo를 사용했습니다. 이 그림에서는 ROS가 따로 표시되지는 않았습니다. 들어간다면 PX4와 Mavros로 연결되는 형태로 들어갈 것입니다. qGroundConrtol은 뒤에서 Pixhawk 보드 설정할 때 다룰건데 PX4를 픽스호크 보드에 업로드하고 센서 칼리브레이션 등 여러가지 필요한 것들을 간편하게 할 수 있도록 해줍니다. Controller은 픽스호크보드에 연결된 리시버를 통해 들어오는 조종기의 값들을 의미하는 것이고 그래서 "RC channels"라고 적혀있는 것을 알 수 있습니다. 이 통신은 Serial 통신을 이용하고 있습니다.
@@ -240,6 +246,7 @@ https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90_%EB%8D%B0%EC%9D%B4%ED%
 2. Trajectory control
 저번 글에서 SITL에서 position control을 했었는데 trajectory control도 한 번 해보겠습니다.
 /home/src/modudculab_ros/src/pub_setpoints_traj.cpp를 열어주시면 다음과 같이 trajectory가 적혀있습니다.
+![image](https://user-images.githubusercontent.com/48428378/154138070-675c3c2f-358b-4de8-bfbe-4bd170354b03.png)
 
 ```bash
 roscore
@@ -256,6 +263,7 @@ rosrun mavros mavsafety arm
 ```bash
 roslaunch modudculab_ros ctrl_traj_gazebo.launch
 ```
+![image](https://user-images.githubusercontent.com/48428378/154138107-68079d80-1238-40d9-afd8-d2c79a751d99.png)
 
 실행시켜보시면 위 사진과 같이 높이 2미터에서 원운동을 합니다. 단순히 원의 방정식만 명령으로 줬을 뿐인데 드론이 원의 궤도를 따라 움직이는 것을 볼 수 있는데 바로 이것이 ROS의 장점이라고 할 수 있습니다.이 이외에도 여러가지 다른 trajectory를 해 볼수 있겠지만 이 글에서는 간단하게 이 정도만 다루고 넘어가도록 하겠습니다.
 
