@@ -117,4 +117,11 @@ wiki created since Oct 11, 2021:
   - gcs-cloud
   - smartAP
   - drone-primer
+<<<<<<< HEAD
   - jdlab-ros
+=======
+  - jdlab-matek
+  - jdlab-docker
+  - jdlab-qt
+  - runcam
+>>>>>>> 7b518ff45fd4ce405646a279542147ddfa848bfb

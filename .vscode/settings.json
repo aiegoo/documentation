@@ -28,5 +28,6 @@
     "stackoverflow",
     "taglogic",
     "typeof"
-  ]
+  ],
+  "ros.distro": "melodic"
 }

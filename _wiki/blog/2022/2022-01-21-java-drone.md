@@ -368,6 +368,722 @@ sudo systemctl reload nginx
 
 ```
 
+### video 43 code logic
+
+```php
+00:01
+okay so let's uh let's now create a quick recap
+00:07
+or more precisely to make overview of the complete application flow of our multi-threading application concurrent application
+00:17
+uh
+00:19
+that we created so far so of course we have configuration in our configuration file we define some values that are important cloud up that's for our connection to our java application for a drone that's for our uh raspberry pi application and for the video as a for our video streamer application
+so whenever we start we read those
+configurations and we what we do is
+first
+we once we have those configuration we
+create our drone object that is uh you
+as you remember uh obstruction over our
+uh flying uh
+entity flying machine that's from here
+01:04
+we read data and we execute whatever we
+01:07
+want on it
+01:09
+so all the commands that needs to be
+01:10
+executed we do it through this uh
+01:12
+through this object
+01:14
+now once we've done that we uh start our
+01:17
+connection watchdog
+01:18
+and as you remember our connection
+01:20
+watchdog is constantly monitoring a
+01:23
+network connection whenever a network
+01:25
+connection breaks down it will try to
+01:28
+reconnect for certain connection
+01:29
+attempts and if it if it reconnects it
+01:32
+it will uh reset those attempts and
+01:35
+we'll continue to to
+01:37
+to check out if we connect it if it
+01:39
+doesn't reconnect it will activate on a
+01:42
+drone uh emergency procedure which in
+01:44
+our case is uh just to
+01:46
+return to launch and we will test it
+01:49
+later whether it works as expected
+01:52
+so okay here we have the connection
+01:53
+watchdog it's a uh
+01:56
+i just want to to
+01:58
+just to stress uh one more time that
+02:01
+it's an additional threat it runs
+02:03
+concurrently separately from at all
+02:05
+other threats even though it's executing
+02:08
+it runs concurrently separately
+02:12
+independently from any other logic that
+02:14
+runs here
+02:16
+and it's constantly monitoring even
+02:17
+though this main threat will be sending
+02:20
+data so anyway we activated this thread
+02:23
+that connection watchdog now we we know
+02:25
+that someone uh constantly monitors our
+02:28
+network connection then what we do is uh
+02:31
+we wait until watchdog clears that says
+02:34
+that okay we have internet connection
+02:36
+then we make socket connection with our
+02:39
+uh java application
+02:41
+we send our id so it would be registered
+02:44
+in our java application as a connection
+02:46
+and we uh open our video streaming
+02:49
+process once we
+02:51
+activated our video streamer
+02:54
+what we do is we activate uh yet an
+02:57
+additional thread
+02:59
+our data receiver
+03:01
+and data receiver as you know it it
+03:04
+is a separate thread that that
+03:06
+indefinitely runs and listens for our
+03:08
+socket connection whenever someone sends
+03:10
+us a message through the socket it reads
+03:12
+it it deserialize it from proto from
+03:15
+proto message it creates a local
+03:18
+variable local uh instance of this
+03:21
+object data transfer object it fills the
+03:23
+values from the serialized proto object
+03:27
+and it's uh
+03:28
+calls on a drone execute command and uh
+03:30
+sends this com and
+03:33
+sets this command okay
+03:36
+so
+03:37
+this is for our data receiver and uh
+03:40
+once we get here until watchdog is
+03:44
+is greenlighting us that we have network
+03:46
+connection and until our drone is active
+03:48
+what we do is we read from our drone um
+03:53
+the latest status values
+03:56
+which are telemetry data
+03:58
+we pack them into into a network message
+04:01
+and we're sending them and do it and
+04:03
+we're doing it every second and this
+04:05
+cycle will work under the endlessly
+04:07
+until some exception happens either in
+04:10
+here or maybe in a socket connection if
+04:13
+we disconnect from our
+04:16
+from our uh java application
+04:19
+uh the
+04:20
+error message the exception will blow up
+04:23
+we catch here this exception will lock
+04:25
+the error we will freeze the drone then
+04:27
+here we will release all the resources
+04:31
+that our raspberry pi uh engage with
+04:35
+and we will get back to here
+04:38
+and we will start over again but but
+04:41
+keep in mind that we what we're
+04:42
+releasing we're releasing resources like
+04:45
+raspberry pi camera ras like socket
+04:47
+connections but we do not release drone
+04:50
+ever okay so once we connect to it it's
+04:53
+our uh through either serial connection
+04:56
+or our uh
+04:59
+simulator
+05:00
+once we connect it that's it
+05:02
+we do not disconnect at all
+05:04
+there is no also there is no sensitive
+05:07
+to to disconnect from it because
+05:09
+we are like connected with a serial
+05:11
+connection cable and it's on the board
+05:13
+itself it's not gone
+05:16
+uh so anyway
+05:17
+uh
+05:19
+oh and also we do not restart watchdog
+05:21
+because it's a separate thread it's
+05:22
+separate thread runs and definitely it
+05:24
+has its own try catch block so whatever
+05:26
+if anything blows up here it will log it
+05:29
+and it will run again
+05:31
+indefinitely okay so that's also safe
+05:34
+but what we do need to really release is
+05:37
+everything that we engage in this uh in
+05:39
+this cycle and since it will work until
+05:42
+it's uh active drone it will run
+05:44
+indefinitely so
+05:46
+however
+05:47
+many times we disconnect from the
+05:50
+network or whatever some other exception
+05:52
+happens
+05:53
+we release everything else we close all
+05:55
+the processes
+05:57
+and we start over and this is our um
+06:00
+bootstrap application thread let's call
+06:02
+it like this
+06:04
+so uh we've seen what watchdog does
+06:07
+we've seen what that data receiver does
+06:09
+commands let's see now our uh drone
+06:12
+because we are using drone in a watch
+06:13
+dock and a data receiver
+06:15
+uh where we executing command
+06:17
+so
+06:18
+our drone uh has a method that
+06:21
+that it's
+06:22
+that it's executed by our bootstrap
+06:25
+thread
+06:26
+here you remember we all we are
+06:28
+constantly getting drawn serialized data
+06:30
+and sending it to the java application
+06:33
+and here we what we do is we uh we read
+06:37
+from vehicle vehicle object it's object
+06:39
+that is created by drunkit library and
+06:42
+it repre through which we can uh get
+06:45
+data from our pixel pixel board and send
+06:48
+data to our pixel board and and this is
+06:51
+done from the vehicle object the elk
+06:53
+object we receive once we uh connect to
+06:56
+to to either simulator or our uh our
+06:59
+pixel board and here we on the
+07:01
+constructor of the drone
+07:03
+we uh implement we create this
+07:06
+connection okay
+07:07
+so here in our drone serialized data we
+07:10
+read data from our vehicle we pack it
+07:13
+into uh into a structure
+07:17
+you see we we create proto drone data
+07:20
+structure proto data
+07:22
+we uh we fill this proto data structure
+07:25
+with the values from our vehicle
+07:28
+and then what we what we do is uh
+07:32
+we we serialize it since it's a proto
+07:35
+data from our compiled library right
+07:38
+here
+07:40
+uh we we serialize it and
+07:43
+and after that the serialized data is uh
+07:46
+added with a network
+07:48
+uh header
+07:50
+in our utils you remember what we do is
+07:52
+we just add four bytes as a header that
+07:54
+uh
+07:56
+this that describe what size it how is
+07:58
+this network message and it's safely
+08:00
+sent through the through the network
+08:02
+from the socket
+08:04
+okay
+08:05
+uh so this ob this drone also had uh the
+08:09
+control tab object and control tab
+08:11
+object is the our control panel through
+08:13
+which we uh actually execute our uh
+08:17
+control it's like imagine you are
+08:19
+sitting in the car
+08:20
+and you have your uh wheel and your
+08:23
+pedals you know all the
+08:25
+the monitor that speedometer that you
+08:27
+see that is our control tab all right so
+08:31
+handle uh
+08:33
+the the pedals
+08:35
+all those your your gear stick this is
+08:38
+all our control panel okay imagine like
+08:41
+this drone is a car
+08:43
+while
+08:44
+everything uh while uh your wheel and
+08:47
+your area speeds your
+08:49
+clutch stick and stuff like that it's
+08:51
+all uh
+08:52
+our control tab
+08:54
+so whenever here we execute command you
+08:57
+remember that our data receiver receives
+08:59
+something and uh deserialize it and
+09:01
+executes command
+09:03
+we send to the drone to execute once you
+09:05
+receive this command it it looks through
+09:07
+the code on this command
+09:09
+and uh depending on the code it decides
+09:12
+which uh which stick or how much to
+09:16
+rotate the wheel okay
+09:18
+it's the same like you you sit in the
+09:19
+car you you receive the command from
+09:22
+your passenger
+09:23
+you some some model or some girl you
+09:26
+said right and you should tell you she
+09:28
+tells you
+09:29
+increase the gas go left go right right
+09:32
+something like this
+09:33
+so you use your
+09:35
+you receive this command and you as a
+09:36
+driver know how what to activate on this
+09:40
+control tab
+09:41
+and this control tab you you know
+09:43
+whatever command you receive you know
+09:45
+that this command translates to rotate
+09:47
+right but by certain value okay and
+09:49
+control tab
+09:51
+our control tab it has two objects
+09:55
+that are speed server controller and
+09:57
+engine
+09:58
+and those objects they run in separate
+10:00
+threads
+10:01
+also independently of all other
+10:05
+logic application logic separately
+10:07
+and
+10:09
+once you
+10:10
+update value in our control tab
+10:13
+our engine
+10:15
+reads those values creates modeling
+10:17
+message and constantly sends it every
+10:19
+1.5 seconds and whenever you want to
+10:22
+uh whenever you want to do it
+10:24
+immediately
+10:26
+you you use execute changes now what it
+10:29
+does in the engine it it forced the the
+10:32
+engine to build the message from the
+10:34
+current values that you just set
+10:36
+and flush them into our pixel board
+10:40
+and since you already updated those
+10:42
+values next time this thread will
+10:44
+execute it in 1.5 seconds it will use
+10:46
+the new new values here okay
+10:49
+and this is what our thread does
+10:52
+uh
+10:53
+and
+10:54
+our uh our servo controller is also
+10:56
+thread that comes that constantly reads
+10:59
+a servo angle value
+11:01
+and sends it to the
+11:03
+to
+11:04
+the output pin on our raspberry pi
+11:07
+and the way to we change it is also from
+11:10
+control tab when we update the value of
+11:12
+the rotate rotation angle okay
+11:17
+so whenever you set the angle
+11:20
+decrease increasing
+11:22
+let's see where was that where was that
+11:25
+here right it's it it's our camera
+11:29
+we
+11:30
+we uh
+11:32
+we for first that was the initial angle
+11:34
+that we said but here is uh
+11:37
+uh we uh
+11:39
+we just
+11:40
+update the the value of the camera angle
+11:43
+and we use this object to set this value
+11:46
+that we just updated okay
+11:52
+so by updating from outside the camera
+11:55
+angle value on the on the server camera
+11:57
+object here
+11:58
+this thread is executing it though every
+12:01
+one the very 10 milliseconds here
+12:04
+and it updates on a servo volume
+12:07
+and that's uh that's that's the
+12:10
+application flow that's what happens
+12:13
+so these are the key the key objects of
+12:16
+the whole application and the video
+12:18
+streamer it's a separate application
+12:20
+that runs in a separate process for
+12:22
+maximum resilience it has its own
+12:25
+uh while true cycle that runs
+12:28
+indefinitely
+12:29
+and also
+12:31
+it can since we can
+12:33
+well not we cannot lose connection
+12:34
+because here we use a udp
+12:37
+messaging uh my messages data is a soft
+12:40
+drum
+12:41
+okay
+12:42
+and uh whatever happens we will just
+12:45
+restart it release the resources and
+12:47
+start over again
+12:49
+and it all runs in a separate process
+12:51
+but if it's this process blocks it at
+12:53
+least
+12:54
+at least
+12:55
+we will not lose our uh
+12:58
+main application
+13:00
+so that's why we run it in a separate uh
+13:02
+process
+13:05
+so yes that's these are the key objects
+13:08
+and that's the uh application logic
+13:11
+application flow
+13:15
+of our
+13:18
+flow of our application logic as you can
+13:20
+see it's
+13:23
+pretty pretty it's pretty simple
+13:25
+but it's very very effective
+13:28
+and that's the fundamental framework
+13:30
+from here you can build it up to do
+13:33
+more uh more complex
+13:36
+more complex tasks to execute from here
+13:40
+but at this stage is pretty robust
+13:42
+pretty stable i didn't have problems
+13:45
+with it yet
+13:47
+so yeah this is it
+13:49
+um
+13:50
+next what i think is uh would be
+13:54
+to
+13:55
+to test it let's to test it all out
+13:57
+we'll run it into two raspberry pi's and
+14:00
+see the whole how the whole thing works
+14:02
+as a part of our distributed application
+14:06
+okay so with the front end with a back
+14:07
+end with a two raspberry pi's that
+14:09
+connect to it that's gonna be pretty
+14:12
+exciting uh i think demonstration and
+14:14
+tests of what we've done so far
+14:17
+if you understood all these things if
+14:19
+you managed to do to pull it off right
+14:22
+until this point well congratulations
+14:26
+brother
+14:27
+you're on good great track
+14:29
+you'll do great things
+14:31
+with this application and not only
+14:34
+uh
+14:35
+some fun very fundamental parts powerful
+14:39
+stuff that we've done here
+14:41
+so congrats again
+14:43
+and let's let's do our fun part and
+14:46
+let's let's run the whole system now
+
+```
+
 {% include taglogic.html %}
 
 {% include links.html %}
