@@ -27,6 +27,7 @@ updated: 2022-02-16 04:30
 1. Off-board Control
 http://www.modulabs.co.kr/board_GDCH80/2961
 위 글에서 언급했듯이 저희가 하려는 것은 mavros를 통해서 PX4와 ROS를 연결하고, 그로 인해 offboard control을 하는 것입니다.
+![image](https://user-images.githubusercontent.com/48428378/154138195-74414fb6-f7b8-44b3-bfd1-7f6212e79e20.png)
 
 위 그림 중에서 modular approach를 하려고 합니다. 라즈베리파이에 이전에 ROS설치했던 것처럼 동일하게 설치하고 그 라즈베리파이와 PX4 flgiht stack이 설치된 pixhawk를 연결해서 자율주행을 할 계획입니다. 라즈베리파이와 연결해서 사용하기 전에 pixhawk보드에 먼저 PX4를 설치를 하고 Pixhawk로만 비행을 해 보도록 하겠습니다.
 
@@ -110,25 +111,30 @@ MEAS MS5611 barometer
 위 부품 리스트 중에서 픽스호크 보드에 GPS, buzzer, switch, power module, ppm module을 연결해주고 각 각 리시버, esc를 연결한 후에 쿼드콥터 프레임 위에 올려줍니다. 아래 왼쪽 그림에서 맨 왼쪽에 RC 부분에 PPM encoder를 연결해주시면 됩니다. 밑의 오른쪽 그림이 픽스호크에 PPM encoder와 ESC선들을 연결한 사진입니다. 세 줄이 있는데 제일 위 줄은 ground이고 두 번째 줄은 +이고 세 번째는 signal선입니다. 그거에 맞춰서 RC라고 써져있는 곳에 PPM encoder를 연결하고 Mainout 1,2,3,4에 ESC를 연결해주면 됩니다.
 
 
+![image](https://user-images.githubusercontent.com/48428378/154138314-1a2c478a-fe71-47c2-b468-66fb480a4806.png)
 
 
 
 ESC를 연결하실 때 어떤 모터가 1번인지 어떤 모터가 4번인지 알아야합니다. 3D robotics의 사진을 참고해주시면 됩니다. 다른 쿼드콥터와는 달라서 헷갈리기 때문에 정확히 보시고 연결해주세요
 http://www.dronetrest.com/t/pixhawk-flips-over/718
+![image](https://user-images.githubusercontent.com/48428378/154138386-4b7daf33-a660-4429-8b6c-c132192d85c2.png)
 
 밑의 그림은 Pixhawk 보드의 포트 정보입니다. 참고하시면 되겠습니다.
 
 
+![image](https://user-images.githubusercontent.com/48428378/154138406-ffb52dec-938f-45d1-a6ec-42af68250bd4.png)
 
 
 
 3. Qgroundcontrol 설치
 이렇게 설치가 완료되면 USB선으로 밑의 사진과 같이 컴퓨터와 픽스호크를 연결해줍니다.
+![image](https://user-images.githubusercontent.com/48428378/154138449-fe26e62e-847d-453f-a5ac-d9c738e6444e.png)
 
 이렇게 하드웨어를 준비해준 다음에 이제 소프트웨어를 준비해줍니다. 픽스호크에 올라가는 펌웨어가 PX4 flight stack이라고 말했었는데 그 PX4를 업로드하기도 하고 여러가지 쿼드콥터의 설정들(센서 칼리브레이션, 조종기 칼리브레이션, 채널 설정 등)을 할 수 있는 Qgroundcontrol을 설치하셔야 합니다. Qgroundcontrol의 홈페이지는 다음과 같습니다.
 http://qgroundcontrol.org/
 
 다음 페이지에서 linux버전을 클릭하면 다운로드가 되는데 압축파일이 다운로드가 됩니다. 다운로드가 완료가 되면 위치를 하나 정해서 압축을 풀어주시고 그 폴더안의 start.sh파일을 실행해 주시면 됩니다. https://donlakeflyer.gitbooks.io/qgroundcontrol-user-guide/content/download_and_install.html#rcbuilds
+![image](https://user-images.githubusercontent.com/48428378/154138504-024b66e4-9a5d-4f3c-9590-2e921eec5a37.png)
 
 우분투에서는 여기에 additional package를 설치해줘야합니다. 관련페이지는 다음과 같고 명령어는 밑과 같습니다. https://github.com/mavlink/qgroundcontrol
 
@@ -145,6 +151,7 @@ bash qgroundcontrol-start.sh
 
 정상적으로 실행이 되면 다음과 같은 화면이 나옵니다. 이제 Qgroundcontrol를 통해서 pixhawk 설정을 해보도록 하겠습니다.
 
+![image](https://user-images.githubusercontent.com/48428378/154138555-5c115dc3-7438-49b4-a4f5-b3ab04dc42b7.png)
 
 
 
@@ -156,6 +163,7 @@ bash qgroundcontrol-start.sh
 
 (2) 프레임 선택
 제가 사용하고 있는 프레임은 quadcopter X이고 그 중에서 450mm 프레임을 선택하면 얼추 맞기 때문에 DJI Flame Wheel F450을 선택해주었습니다.
+![image](https://user-images.githubusercontent.com/48428378/154138579-38195dc5-54cf-428d-8384-00934b702fb0.png)
 
 
 
@@ -163,19 +171,28 @@ bash qgroundcontrol-start.sh
 
 (3) Radio설정
 현재 리시버와 트랜스미터를 연결한 상황에서 트랜스미터(조종기)를 캘리브레이션해주는 단계입니다. 친절하게 설명이 계속 나오므로 그 설명대로 해주시면 됩니다.
+![image](https://user-images.githubusercontent.com/48428378/154138600-06b9f08f-6047-4b38-917f-39b7030ab266.png)
 
 
 (4) 센서 캘리브레이션
 Compass, Gyroscope, Accelerometer, Level Horizon 네 개를 calibrate 해줘야하고 하나씩 클릭해서 진행하시면 됩니다.
+![image](https://user-images.githubusercontent.com/48428378/154138621-9a12fb29-ac39-42a3-aeb3-cd131ad5c543.png)
 
 Compass : 아래 그림처럼 쿼드콥터의 자세를 잡고 회전표시가 나오면 회전해주면 됩니다. 나머지 세 개도 각각 클릭해서 진행해주시면 되는데 각각 살짝 달라서 지침을 잘 읽고 그대로 따라 주시면 캘리브레이션이 완료됩니다.
+![image](https://user-images.githubusercontent.com/48428378/154138717-c13bb327-a0ba-4f67-aa52-48e065bfc7b3.png)
 
 (5) Flight Mode 설정
 http://www.moses-modellbau.de/mediafiles/Anleitungen/DEVO/Manual%20of%20DEVO-7.pdf
-보통 조종기에서는 조종기 위쪽 버튼을 통해서 여러가지 mode들을 선택할 수 있습니다. 예를 들면, auto takeoff, landing, return to home등의 기능들입니다. 저는 Gear button을 사용해서 ROS로 드론을 컨트롤 하는 모드와 손으로 조종하는 모드를 왔다갔다 하려고 합니다.  저는 GEAR가 channel 5이고(radio test할 때 그렇게 나옵니다) 따라서 Flight mode channel에 channel 5를 사용하고 Flight Mode 1에는 Stabilized를 선택하고 Flight Mode 2에는 offboard를 선택해줍니다. 그리고 오른 쪽"Switch Settings"에서는 세 번째 offboard switch channel에서 Channel 5를 선택해주면 Gear버튼을 위로 올리고 내리는 것에 따라서 손으로 조종하다가도 off board모드로 들어가서 라즈베리 파이에 있는 명령들로 쿼드콥터를 자율주행 시킬 수 있습니다.
+보통 조종기에서는 조종기 위쪽 버튼을 통해서 여러가지 mode들을 선택할 수 있습니다. 예를 들면, auto takeoff, landing, return to home등의 기능들입니다. 저는 Gear button을 사용해서 ROS로 드론을 컨트롤 하는 모드와 손으로 조종하는 모드를 왔다갔다 하려고 합니다. 
+![image](https://user-images.githubusercontent.com/48428378/154138785-90b63a22-a8f8-4c09-ad95-a178f5466256.png)
+
+GEAR가 channel 5이고(radio test할 때 그렇게 나옵니다) 따라서 Flight mode channel에 channel 5를 사용하고 Flight Mode 1에는 Stabilized를 선택하고 Flight Mode 2에는 offboard를 선택해줍니다. 그리고 오른 쪽"Switch Settings"에서는 세 번째 offboard switch channel에서 Channel 5를 선택해주면 Gear버튼을 위로 올리고 내리는 것에 따라서 손으로 조종하다가도 off board모드로 들어가서 라즈베리 파이에 있는 명령들로 쿼드콥터를 자율주행 시킬 수 있습니다.
+![image](https://user-images.githubusercontent.com/48428378/154138835-1d7fc063-f876-4bfd-8921-e07ebc17780e.png)
+
 (6) ESC Calibration
 Qgroundcontrol에서 ESC 칼리브레이션은 상당히 간단합니다. 왼쪽의 Power탭으로 들어가서 Calibrate를 눌러주면 battery를 연결해주라는 지침이 나옵니다. 그러면 끝입니다.
 
+![image](https://user-images.githubusercontent.com/48428378/154138873-9100f761-1e51-4669-8064-5dbcf23c26c8.png)
 
 
 5. Arming
@@ -187,6 +204,7 @@ Qgroundcontrol에서 ESC 칼리브레이션은 상당히 간단합니다. 왼쪽
 6. Test Flight
 Pixhawk가 제대로 설정이 되었고 비행이 가능한 지 확인하기 위해서 실재로 낮은 고도로 비행시켜 보았습니다. 450 Frame으로 PID계수가 맞춰져있어서 Tunning안해줘도 잘 날지만 날려본 다음에 진동을 보고서 P나 I gain을 바꿔주는 것이 좋습니다. 저는 Stabilized 모드로 비행을 했습니다. 다음 사진과 같이 쿼드콥터를 세팅해놨습니다.
 
+![image](https://user-images.githubusercontent.com/48428378/154138964-fa58c6b9-26a9-46f3-b34f-adc2e65d64a1.png)
 
 https://www.facebook.com/100004068281468/videos/917401101738824/
 
@@ -211,6 +229,7 @@ https://namu.wiki/w/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%20%ED%8C%8C%EC%9D%B4(%E
 
 필요한 것들을 다 연결한 상태는 다음과 같습니다. 이제 라즈베리 파이에 올라갈 OS를 설치해보도록 하겠습니다.
 
+![image](https://user-images.githubusercontent.com/48428378/154139061-9d7036d1-c477-4b74-b2d2-529a511638f1.png)
 
 
 
@@ -221,9 +240,16 @@ Ubuntu 중에서도 라즈베리파이에 설치할 OS는 Ubuntu-MATE입니다(�
 우분투 메이트 다운로드는 위 홈페이지에서 하시면 됩니다. 이미지 파일을 구워주는 것은 Win32 disc manager를 사용하였습니다.
 
 SD 카드를 라즈베리파이에 꽂으면 다음과 같은 화면이 나옵니다.
+![image](https://user-images.githubusercontent.com/48428378/154139151-26a2ee86-30bc-4ad8-8db3-0b651aa8ff38.png)
+![image](https://user-images.githubusercontent.com/48428378/154139166-6adbc81d-2149-41fe-9e8a-a7d7c05701a6.png)
 
 
-데스크탑에 설치할 때와 마찬가지로 언어(영어)를 선택해주고 살고 있는 도시인 Seoul를 입력해주면 설치가 시작됩니다.   MATE에서는 따로 파티션을 지정해주는 단계가 없습니다. 이렇게 Raspberry Pi 3에 Ubuntu 16.04 MATE를 설치 완료했습니다. 대신에 resize를 해줘야합니다. 처음 MATE가 실행되고 켜지는 창에서 저 빨간색을 선택하면 resize를 할 수 있는 항목이 있습니다. https://www.raspberrypi.org/magpi/ubuntu-mate-review/
+데스크탑에 설치할 때와 마찬가지로 언어(영어)를 선택해주고 살고 있는 도시인 Seoul를 입력해주면 설치가 시작됩니다.  
+![image](https://user-images.githubusercontent.com/48428378/154139207-682fe37e-b111-46d0-b52a-b816305fcd50.png)
+![image](https://user-images.githubusercontent.com/48428378/154139236-abe8ae8c-bb69-4c4f-856f-f5c9e0da7326.png)
+
+
+MATE에서는 따로 파티션을 지정해주는 단계가 없습니다. 이렇게 Raspberry Pi 3에 Ubuntu 16.04 MATE를 설치 완료했습니다. 대신에 resize를 해줘야합니다. 처음 MATE가 실행되고 켜지는 창에서 저 빨간색을 선택하면 resize를 할 수 있는 항목이 있습니다. https://www.raspberrypi.org/magpi/ubuntu-mate-review/
 
 
 
@@ -248,8 +274,10 @@ mkdir -p ~/ros_catkin_ws/src
 cd ~/ros_catkin_ws/src
 catkin_init_workspace
 위와 같이 ROS Kinetic 완료한 후에 데스크탑에서 설치했던 때와 같이 ROSCORE를 구동시켜봅니다.
+![image](https://user-images.githubusercontent.com/48428378/154139436-d2f6a2dc-156a-4919-9dd0-18b733cf5820.png)
 
 ROSCORE가 문제없이 잘 실행되면 거북이 예제를 실행해봅니다.
+![image](https://user-images.githubusercontent.com/48428378/154139463-649fed7b-e8a8-40d6-9e68-c1d5385e38d1.png)
 
 rosrun turtlesim turtlesim_node
 
@@ -279,6 +307,7 @@ cd ~/ros_catkin_ws/src
 git clone https://github.com/Jaeyoung-Lim/modudculab_ros.git
 catkin build modudculab_ros
 source /home/leewoongwon/ros_catkin_ws/devel/setup/bash
+![image](https://user-images.githubusercontent.com/48428378/154139513-be137308-592e-4d9d-a5bc-4b2761cc7ee4.png)
 
 
 이제 설치된 ROS 패키지를 통해 픽스호크에게 명령을 주기 위해 두 보드를 연결해야 합니다.
@@ -286,11 +315,15 @@ source /home/leewoongwon/ros_catkin_ws/devel/setup/bash
 
 3.Pixhawk와 Raspberry Pi의 연결
 (1) GPIO
-아래 사진과 같이 Pixhawk의 Telem2 포트와 Raspberry Pi의 GPIO핀을 연결해야 합니다. 원래 Telemetry 포트는 지상국과의 연결을 하는 안테나를 연결하는 포트이고 그 안테나를 통해서 지상국(예를 들면 데스크탑)과 MAVLINK로 통신하는 것입니다. 아래 사진은 임재영님이 연결하신 방법입니다.
+아래 사진과 같이 Pixhawk의 Telem2 포트와 Raspberry Pi의 GPIO핀을 연결해야 합니다. 원래 Telemetry 포트는 지상국과의 연결을 하는 안테나를 연결하는 포트이고 그 안테나를 통해서 지상국(예를 들면 데스크탑)과 MAVLINK로 통신하는 것입니다. 아래 사진은 연결 방법입니다.
+
+![image](https://user-images.githubusercontent.com/48428378/154139593-721a84a2-94bc-4902-83d0-eb80889dd4f6.png)
 
 각 연결선들이 무엇을 연결한 건지 아래 그림을 보면 알 수 있습니다. 하지만 이 방법같은 경우에는 Baudrate에 제한이 있어서 저는 usb to ttl 포트를 사용하였습니다. http://ardupilot.org/dev/docs/raspberry-pi-via-mavlink.html
+![image](https://user-images.githubusercontent.com/48428378/154139622-5e368bfa-d1ee-40fd-ac2b-d3ee56bdfe61.png)
 
 (2) USB to TTL 이 연결 같은 경우에는 따로 모듈을 하나 구매하셔야 합니다. 연결은 첫 번째 사진과 같이 하면 되고 실재로는 밑의 사진과 같이 사용하고 있습니다.
+![image](https://user-images.githubusercontent.com/48428378/154139669-9207ed7d-27f1-435d-86c1-29d469697b74.png)
 
 
 
@@ -303,6 +336,7 @@ Mavros를 돌려보고 픽스호크로부터 토픽을 받아오는 것을 실�
 cd qgroundcontrol
 bash qgroundcontrol-start.sh
 메뉴 중에서 Parameters로 들어가서 System으로 들어갑니다. 밑의 그림에서 SYS_COMPANION이 companion컴퓨터와의 연결을 설정하는 것입니다. 저 부분을 눌러서 Companion Link(921600 baudrate 8N1)을 선택해줍니다. GPIO핀에 연결한 경우에는 이 baudrate를 사용할 수 없습니다.
+![image](https://user-images.githubusercontent.com/48428378/154139786-71ad2b32-e6a8-4061-850d-d96c748bcaa3.png)
 
 다시 라즈베리파이로 돌아와서 Mavros를 구동하기 전에 Permission문제를 해결해줘야 합니다. 픽스호크와 연결되어 있는 USB포트를 확인해봅니다. 터미널 창에서 다음을 실행해주면 그 정보를 확인할 수 있습니다.
 
@@ -314,6 +348,7 @@ Master를 실행시킵니다.
 
 roscore
 이제 Mavros를 실행시켜줍니다.
+![image](https://user-images.githubusercontent.com/48428378/154139805-96fc39a8-02cd-4087-bfaa-bbb44a1bd3d1.png)
 
 rosrun mavros mavros_node _fcu_url:="/dev/ttyUSB0:921600"
 Screenshot at 2016-07-29 01_32_16.png
@@ -321,6 +356,8 @@ Screenshot at 2016-07-29 01_32_16.png
 노드 그래프를 실행시켜봅니다. 현재는 mavros 노드 하나만 있는 것을 볼 수 있습니다.
 
 rqt_graph
+
+![image](https://user-images.githubusercontent.com/48428378/154139825-07410f96-ebbc-4dc4-8e73-a1985c8364ad.png)
 
 
 Mavros를 통해 받아온 픽스호크의 데이터를 확인해봅니다. topic monitor에서 각각의 토픽을 통해서 데이터가 오는 것을 확인할 수 있습니다.
@@ -331,15 +368,19 @@ rqt
 
 4. modudculab_ros package test
 modudculab_ros 패키지 안에서 Position control로 테스트 해 볼 겁니다. /ros_catkin_ws/src/modudculab_ros/launch안에 있는 ctrl_pos_gazebo.launch파일을 수정해줍니다. 3번 째 줄을 다음 그림과 같이 "dev/ttyUSB0:921600"으로 수정해줍니다.
+![image](https://user-images.githubusercontent.com/48428378/154139865-1c8d798c-b60d-4a14-abfe-9177000f3023.png)
 
 roslaunch명령어를 통해서 실행해줍니다.
 
 roslaunch modudculab_ros ctrl_pos_gazebo.launch
 다음과 같이 실행이 됩니다.
+![image](https://user-images.githubusercontent.com/48428378/154139885-55b854a0-1992-4099-94d7-77e4cbc00437.png)
 
 이제 위에서와 마찬가지로 node graph와 topic data들을 확인해줍니다.
+![image](https://user-images.githubusercontent.com/48428378/154139917-a183a063-19a9-4e75-baf6-303efe68242d.png)
 
 위와 같이 실행이 되면 성공한 것입니다. 노드 2개가 활성화되어 있으며 position의 명령을 주고 있습니다. 그 명령은 밑의 사진에서 /mavros/setpoint_position/local안에 pose/position z좌표 보면 1의 명령이 들어가고 있는 것을 볼 수 있습니다.
+![image](https://user-images.githubusercontent.com/48428378/154139948-7545e6de-c364-438d-aa1d-400b3ec9ec89.png)
 
 ## Off-board Control (4) Test Flight
 지금까지의 내용을 정리해보자면 저희가 하려는 것은 Pixhawk와 Raspberry Pi를 사용한 자율주행입니다. 쿼드콥터 자체의 low-level control은 Pixhawk보드에서 PX4 flight stack이라는 앱이 맡아주고 Raspberry Pi에서는 mavros를 통해서 position이나 trajectory같은 명령을 PX4에 줌으로서 드론이 스스로 비행을 하게 됩니다. 따라서
@@ -359,10 +400,12 @@ Test flight
 
 (1) USB Port
 아래와 같이 Telem 2 port와 라즈베리파이의 USB port를 연결해주는 모듈이 필요합니다. 인터넷에 USB to ttl이라고 검색해서 나오는 것을 사시면 됩니다. 저는 예전에 arduino micro를 사용하기 위해서 구매 해놓았던 micro USB to UART 모듈을 사용하였습니다. 밑 사진 중에서 왼쪽이 픽스호크와 라즈베리파이의 연결을 확인할 때 연결했 던 것이고 오른쪽이 실재로 비행을 하기 위해서 아예 납땜으로 모듈화 시켜버린 사진입니다. 연결은 아래 사진을 보시고 하시면 됩니다. (빨간선은 필요없습니다)
+![image](https://user-images.githubusercontent.com/48428378/154140101-fd50bb88-1c31-42aa-8ec0-03b2cc02f389.png)
 
 (2) GPIO pin
 위와 마찬가지로 Telem2 port와 Rx, Tx, GND, (VCC)를 연결하면 되는데 이 연결의 경우는 Baudrate가 제한되기 때문에 추천하는 방법은 아닙니다. 대신에 VCC로 라즈베리파이의 5V를 바로 연결할 수 있는 장점이 있지만 그것도 위험한 방법이기 때문에 추천드리지 않습니다.
 
+![image](https://user-images.githubusercontent.com/48428378/154140122-dcf7aa9d-3029-427e-88f8-21abac11bb8d.png)
 
 
 2. Raspberry Pi의 전원
@@ -376,7 +419,6 @@ Test flight
 
 (1) Telem2 port의 5V의 전원을 받아와서 라즈베리파이의 Power in micro usb port로 연결하는 방법
 아래 왼쪽 사진처럼 micro usb선을 자르면 4개의 선이 나오는 데 전원을 공급하려는 것이기 때문에 검은색과 빨간색 선만 필요합니다. 검은색 선은 GND로서 픽스호크와 라즈베리파이의 통신에 사용되었던 USB to ttl 모듈의 GND에 연결해주었고 빨간색(VCC)선은 Telem2 포트의 5V 핀에 연결해주었습니다. http://comterman.tistory.com/1000
-
 
 
 3. Raspberry Pi의 Wifi 연결
