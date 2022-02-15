@@ -29,10 +29,13 @@ updated: 2021-10-20 17:05
    2. `sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"`
    3. vim .bashrc, `source .bashrc`
 
-4. bluetooth driver install for ubuntu [link](https://sleekdev.tistory.com/39); to install, These firmware files need to be copied and renamed to: `/lib/firmware/rtl_bt/rtl8761b_fw.bin`
+4.~~~bluetooth driver install for ubuntu [link](https://sleekdev.tistory.com/39); to install, These firmware files need to be copied and renamed to: `/lib/firmware/rtl_bt/rtl8761b_fw.bin`~~~
+5. for drivers [googledrive](https://drive.google.com/drive/folders/18dilrzJvpcqRAWp9RGKmnOdGdiw4QZLL)  for bluetooth/uart/interface/network drivers
 5. or if the above causes issues, download from [here](https://medium.com/nerd-for-tech/how-to-install-unsupported-bluetooth-5-0-dongle-on-linux-4bf34aa99fed)
 6. copy install.sh requirments.txt and Contents folder to target server and directory path.
 7. kakao talk 설치 [블로그](https://www.hahwul.com/2018/08/02/install-kakaotalk-on-ubuntu-18.04/)
+
+
 ```bash
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
