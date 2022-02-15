@@ -116,8 +116,10 @@ make posix_sitl_default gazebo
 ```
 
 터미널 창에서는 많은 줄들이 지나가고 마지막으로 이렇게 되면서 gazebo가 실행됩니다
+![image](https://user-images.githubusercontent.com/48428378/154136566-d031f877-244d-4a33-b5c0-62ccecab694d.png)
 
 한 번 힘을 가해보았습니다. Simulator의 테스트라고 보시며 될 것 같습니다.
+![image](https://user-images.githubusercontent.com/48428378/154136599-0abd4855-7c88-4cb1-a31f-4b7b7e5d7e0b.png)
 
 
 
