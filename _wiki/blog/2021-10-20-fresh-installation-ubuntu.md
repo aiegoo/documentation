@@ -32,7 +32,7 @@ updated: 2021-10-20 17:05
 4. bluetooth driver install for ubuntu [link](https://sleekdev.tistory.com/39); to install, These firmware files need to be copied and renamed to: `/lib/firmware/rtl_bt/rtl8761b_fw.bin`
 5. or if the above causes issues, download from [here](https://medium.com/nerd-for-tech/how-to-install-unsupported-bluetooth-5-0-dongle-on-linux-4bf34aa99fed)
 6. copy install.sh requirments.txt and Contents folder to target server and directory path.
-7. 
+7. kakao talk 설치 [블로그](https://www.hahwul.com/2018/08/02/install-kakaotalk-on-ubuntu-18.04/)
 ```bash
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
@@ -43,6 +43,23 @@ export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 
 - to try out, run `brew install hello`
 
+- kakaotalk sh
+
+```bash
+sudo apt install wine-stable
+WINEARCH=win32 WINEPREFIX=~/.wine wine wineboot
+wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+chmod 777 winetricks
+sudo apt-get install cabextract
+./winetricks
+
+# 1. Select the default wineprefix 체크(Checked)
+# 2. Install a Windows DLL or component 체크(Checked)
+# 3. gdiplus, msxml6, riched30, wmp9 체크(Checked / 거꾸로 찾으시면 금방 찾습니다) 
+
+wget http://app.pc.kakao.com/talk/win32/xp/KakaoTalk_Setup.exe
+cp KakaoTalk.desktop /usr/share/applications/
+```
 
 ## Thi
 
