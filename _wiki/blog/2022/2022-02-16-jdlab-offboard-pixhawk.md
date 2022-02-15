@@ -339,7 +339,105 @@ roslaunch modudculab_ros ctrl_pos_gazebo.launch
 
 이제 위에서와 마찬가지로 node graph와 topic data들을 확인해줍니다.
 
-위와 같이 실행이 되면 성공한 것입니다. 노드 2개가 활성화되어 있으며 position의 명령을 주고 있습니다. 그 명령은 밑의 사진에서 /mavros/setpoint_position/local안에 pose/position z좌표 보면 1의 명령이 들어가고 있는 것을 볼 수 있습니다. 
+위와 같이 실행이 되면 성공한 것입니다. 노드 2개가 활성화되어 있으며 position의 명령을 주고 있습니다. 그 명령은 밑의 사진에서 /mavros/setpoint_position/local안에 pose/position z좌표 보면 1의 명령이 들어가고 있는 것을 볼 수 있습니다.
+
+## Off-board Control (4) Test Flight
+지금까지의 내용을 정리해보자면 저희가 하려는 것은 Pixhawk와 Raspberry Pi를 사용한 자율주행입니다. 쿼드콥터 자체의 low-level control은 Pixhawk보드에서 PX4 flight stack이라는 앱이 맡아주고 Raspberry Pi에서는 mavros를 통해서 position이나 trajectory같은 명령을 PX4에 줌으로서 드론이 스스로 비행을 하게 됩니다. 따라서
+(1) 첫 번째로는 Pixhawk 보드를 세팅하고 그 자체로만 비행하는 것을 해보고
+(2) 라즈베리파이에 ROS를 설치하고
+(3) 둘 사이를 mavros로 연결하게 됩니다.
+그리고 실재로 하드웨어적인 준비를 하고 실재로 여러 단계에 걸쳐서 시험 비행을 하게 됩니다. 따라서 이번 글의 순서는 다음과 같습니다.
+
+Pixhawk와 Raspberry Pi의 연결
+Raspberry Pi의 전원
+Raspberry Pi의 Wifi 연결
+Pixhawk의 flight mode 설정
+Trajectory node
+Test flight
+1. Pixhawk와 Raspberry Pi의 연결
+픽스호크와 라즈베리 파이의 연결은 저번 글에서도 언급했었습니다. 픽스호크의 Telem2 port(원래는 Ground Station과 통신하려는 포트, 안테나를 연결해서)에 라즈베리 파이를 연결하는 두 가지 방법이 있습니다. (1) USB port를 통해서 연결하는 방법과 (2) GPIO pin을 통해서 연결하는 방법이 있습니다.
+
+(1) USB Port
+아래와 같이 Telem 2 port와 라즈베리파이의 USB port를 연결해주는 모듈이 필요합니다. 인터넷에 USB to ttl이라고 검색해서 나오는 것을 사시면 됩니다. 저는 예전에 arduino micro를 사용하기 위해서 구매 해놓았던 micro USB to UART 모듈을 사용하였습니다. 밑 사진 중에서 왼쪽이 픽스호크와 라즈베리파이의 연결을 확인할 때 연결했 던 것이고 오른쪽이 실재로 비행을 하기 위해서 아예 납땜으로 모듈화 시켜버린 사진입니다. 연결은 아래 사진을 보시고 하시면 됩니다. (빨간선은 필요없습니다)
+
+(2) GPIO pin
+위와 마찬가지로 Telem2 port와 Rx, Tx, GND, (VCC)를 연결하면 되는데 이 연결의 경우는 Baudrate가 제한되기 때문에 추천하는 방법은 아닙니다. 대신에 VCC로 라즈베리파이의 5V를 바로 연결할 수 있는 장점이 있지만 그것도 위험한 방법이기 때문에 추천드리지 않습니다.
+
+
+
+2. Raspberry Pi의 전원
+현재 픽스호크는 Battery에서 Power module로 전원을 받아오고 있습니다. 라즈베리파이도 전원이 필요한데 5V의 정격전압이 필요합니다. 이것은 네 가지 정도의 방법이 있습니다.
+
+(1) Telem2 port의 5V의 전원을 받아와서 라즈베리파이의 Power in micro usb port로 연결하는 방법
+(2) ESC의 BEC에서 5V를 받아와서 라즈베리파이의 Power in으로 전원을 공급하는 방법
+(3) 별도의 보조배터리를 통해서 라즈베리파이에 Power in 포트에 전원을 공급하는 방법
+(4) 라즈베리파이에 GPIO핀에 5V를 공급하는 방법
+사실은 픽스호크와 라즈베리파이의 전원이 완전히 분리되는 것이 가장 안전하고 좋은데 그러면 쿼드콥터의 무게가 증가하고 저 같은 경우는 별도의 보조배터리를 놓을 공간이 없어서 (1) 방법을 택했습니다. (4)번은 위에서도 언급했듯이 추천하지 않는 방법입니다.
+
+(1) Telem2 port의 5V의 전원을 받아와서 라즈베리파이의 Power in micro usb port로 연결하는 방법
+아래 왼쪽 사진처럼 micro usb선을 자르면 4개의 선이 나오는 데 전원을 공급하려는 것이기 때문에 검은색과 빨간색 선만 필요합니다. 검은색 선은 GND로서 픽스호크와 라즈베리파이의 통신에 사용되었던 USB to ttl 모듈의 GND에 연결해주었고 빨간색(VCC)선은 Telem2 포트의 5V 핀에 연결해주었습니다. http://comterman.tistory.com/1000
+
+
+
+3. Raspberry Pi의 Wifi 연결
+Off-board Control은 라즈베리 파이에서 roscore와 node(trajectory or positon)가 실행되고 있어서 mavros를 통해서 픽스호크에 명령을 보내고 있다가 조종기를 통해서 Off board mode에 들어가면 그 명령이 실행되는 형태로 됩니다. 따라서 라즈베리파이에서 roscore와 node를 실행해주어야 하는데 그 방법으로 저희는 wifi 공유기를 가져가서 노트북으로 라즈베리파이에 연결해서 roscore와 node를 실행해주었습니다. 그 이외에도 라즈베리파이에 전원이 들어오면 바로 정해진 것들이 실행되도록 설정을 해줄수도 있다고 합니다(해보지 않았습니다) 다음과 같은 공유기를 들고 나갔습니다. 현재 라즈베리파이 3에는 wifi module이 내장되어 있는데 통신 거리가 짧아서 wifi 동글을 달아주시는 것이 좋습니다.
+
+
+
+wifi로 라즈베리파이에 접속하기 위한 프로그램으로 Putty를 사용하였습니다. 다음 페이지를 참고해서 진행하였습니다. http://thdev.net/555
+
+(1) ssh 설치
+sudo apt-get install ssh
+(2) putty 설치
+sudo apt-get install putty
+(3) putty 실행
+putty
+(4) Raspberry Pi의 IP 주소 확인
+ifconfig
+.png) wlan0의 inet addr입니다.
+
+(5) Putty에 session 등록
+IP주소를 입력하고 이름은 원하는 대로 작성하시고 Save를 해주시면 됩니다.
+
+(6) session실행 후 roscore실행
+라즈베리파이의 user name과 password를 입력하면 연결이 되고 똑같이 roscore라고 입력해주면 roscore가 실행됩니다.
+
+
+
+
+4. Pixhawk의 flight mode 설정
+Test flight를 할 때 세 가지 mode로 날려볼텐데 (1) position hold (2) mission mode (3) offboard mode 순서대로 입니다. mode가 바뀔 때 마다 qgroundcontrol에서 픽스호크를 설정해줘야 합니다.
+
+cd qgroundcontrol
+bash qgroundcontrol-start.sh
+제 조종기에서는 gear를 바꾸면 Flight Mode 1과 5로 왔다갔다하는데 따라서 Flight Mode 1을 Stabilized flight mode로 Flight Mode 2를 각 단계마다 position, mission, offboard로 설정해주었습니다.
+
+
+5. Trajectory node
+offboard mode를 사용할 때 라즈베리파이에서 roscore를 실행하고 ctrl_traj_test.launch를 실행해줍니다. 이 ctrl_traj_test.launch파일을 살펴보시면 아래와 같이 fcu_url을 USB port로 잡아주셔야 합니다. 관련된 내용은 바로 전 글을 참조해주시기 바랍니다. 이 launch 파일은 두 개의 node를 실행시키는데 mavros와 pub_setpoints_traj를 실행시킵니다. 이 pub_setpoints_traj node에 대해서 두 가지 변수를 설정해줄 수 있는데 반지름과 각속도입니다.
+
+
+
+pub_setpoints_traj.cpp파일을 열어보면 지워주셔야 할 부분이 있는데 아래와 같습니다. 저는 이 부분을 안 지워주고 offboard 비행을 하다가 드론이 추락했습니다. 이 부분은 자동으로 offboard 모드로 바꾸고 또 자동으로 arming을 해주는 것입니다. SITL할 때 편리하기 위해서 넣어놓은 코드인데 실재 비행할 때는 있으면 안되는 부분입니다. 그 밑에 trajectory식을 보시면 고도 2m에서 원을 도는 trajectory입니다. 그 원과 관련된 r과 wn을 launch file에서 설정하는 것입니다. qgroundcontrol에서 parameters에서 maximum velocity를 설정할 수 있는데 저의 경우에는 8 m/s로 설정되어 있었습니다. 설정하기는 r = 5m, wn = 1로 설정하고 날렸습니다. 그리고 코드에서는 높이를 15m로 바꾸어 주었습니다.
+
+
+6. Test flight
+저희는 광나루 한강 공원을 오후 시간에 예약해서 쿼드콥터를 날려보았습니다. pixhawk+raspberry pi 2대, pixhawk 1대, bird 1대를 가지고 갔었습니다. 일단 도착하면 노트북에 픽스호크를 연결해서 qgroundcontrol로 sensor calibration을 해주는 것이 좋습니다.
+
+offboard로 자율주행을 하기 전에 pixhawk만을 사용해서 GPS를 사용해서 position홀드를 해보고 qgroundcontrol로 mission을 짜서 수행해보아야 합니다. 이 두가지가 정상적으로 실행이 될 때 그 다음에 offboard mode를 실행해보았습니다.
+
+(1) position
+pixhawk에 대한 글에서 다루었듯이 픽스호크에 전원을 연결하고 보드에 초록불이 들어오면 GPS가 되는 것입니다. 그 후에 safety switch를 누른 후에 조종기의 throttle bar를 오른쪽 아래로 하면 arming이 됩니다. 처음에는 stabilized flight mode로 띄우고 적당한 거리와 적당한 높이에서 Gear를 바꾸어주면 position mode로 들어가고 GPS를 사용하여 그 때 자신의 위치에 고정되어서 hovering하게 됩니다. 이 때 Throttle은 중간에 놔주어야 합니다.
+
+(2) mission
+미션은 qgroundcontrol에서 다음과 같이 해줄 수 있는데 왼쪽 위의 +모양을 누르면 명령들을 넣을 수 있습니다. 처음에 Takeoff명령을 주고 waypoint들을 준 다음에 land명령을 줘서 하나의 mission을 형성합니다. 너무 넓게는 설정하기 말고 고도도 설정해줄 수 있고 현재는 25m로 되어있습니다. 위와 같이 바닥에 쿼드콥터를 놓고 배터리를 연결하고 arming을 한 다음에 바닥에서 mode를 바꾸어주면 이 미션을 수행하게 됩니다. 혹시나 이상이 생겼을 경우에 바로 stabilized flight mode로 바꾸어야 하니까 조종기를 들고 계시면 됩니다.
+
+(3) offboard
+위 까지 성공적으로 수행이 되었다면 이제 offboard로 비행할 차례입니다. 라즈베리파이에 전원이 들어가는 상태에서 멀리 놓고서 공유기를 통해서 wifi가 연결되었다면 노트북에서 라즈베리파이에 접속합니다. 그리고 두 개의 명령을 실행해주시면 됩니다.
+
+roscore
+roslaunch modudculab_ros ctrl_traj_test.launch
+그 후에 조종기로 arming을 해주고 offboard mode로 바꾸어주면 상공 15m에서 5m 반경으로 회전하게 됩니다. 저는 위에서 언급했듯이 자동으로 offboard모드가 되고 arming이 되는 코드를 안 빼고 test flight를 해서 추락했기 때문에 한 번 더 나가서 날려볼 예정입니다.
 
 
 {% include taglogic.html %}
