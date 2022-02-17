@@ -78,7 +78,7 @@ The TX16s natively supports Team Black Sheep MicroTX modules in CRSFmode with LU
 ![image](https://user-images.githubusercontent.com/42961200/154387289-a1e557ae-b986-4347-87cf-001a563987b7.png)
 
 ## Air Wing Pro
-[sonicmodellrc.com](https://www.sonicmodellrc.com) for product info
+[sonicmodellrc.com](https://www.sonicmodell.com) for product info
 
 [somic-modell](https://www.sonicmodell.net/) for gallery and other information.
 
