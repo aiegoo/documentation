@@ -58,6 +58,9 @@ updated: 2022-02-17 10:19
 - External UART ports to expand the capabilities of your radio.
 - CNC option parts and leather grips factory fitted.
 - Neck Strap included
+![image](https://user-images.githubusercontent.com/42961200/154386976-28cb790f-5e0d-46e3-a2fb-ffac339b9fa1.png)
+![image](https://user-images.githubusercontent.com/42961200/154386986-e7e3b0c3-c3c5-41d0-a60e-f6d25760f711.png)
+
 
 {% include taglogic.html %}
 
