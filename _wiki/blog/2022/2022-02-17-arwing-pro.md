@@ -62,6 +62,16 @@ updated: 2022-02-17 10:19
 ![image](https://user-images.githubusercontent.com/42961200/154386986-e7e3b0c3-c3c5-41d0-a60e-f6d25760f711.png)
 
 
+
+### 4.3” IPS Color Display
+The TX16s features a bright and clear 4.3-inch IPS color display for easy and convenient model setup and operation with adjustable brightness to suit all conditions.
+
+* Touch Panel included with TX16S Hall and TX16S Hall MasterFire combo only. Touch functionality requires OpenTX 2.4 (coming soon). TX16S Standard version is Touch Panel ready and can be upgraded with optional touch panel sold separately.
+
+
+### External Module Bay
+The TX16s natively supports Team Black Sheep MicroTX modules in CRSFmode with LUA scripts. Best of all the TX16s Internal 4-in-1 Multi-protocol module allows you to keep the MicroTX installed and switch between internal RF and Crossfire via software, no more module swapping. 
+
 {% include taglogic.html %}
 
 {% include links.html %}
