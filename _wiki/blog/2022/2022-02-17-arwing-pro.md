@@ -256,10 +256,12 @@ Curves (or AFR as they are rather cryptically called) provide a flexible way of 
 Servo Adjustments
 Servos can be adjusted for gain, direction and end-points. I was pleased to see that the end-points act as true electronic end stops, essential on models which use aggressive mixing. On the downside, these adjustments are too crude to match up the movement of large paired control surfaces like flaps, where even the slightest differences in linkage geometry can cause subtle mistracking which is difficult to correct. It's a shame that Futaba did not include an AFR (curves) option for each servo, in order to correct for this.
 
+![image](https://user-images.githubusercontent.com/42961200/154412073-441d1647-74a2-4ead-8404-7074e287c052.png)
 
  
 Mixers
 As one might expect, the Futaba 12FG offers a comprehensive list of built-in mixers (too many to list here) as well as ten free mixers. All mixers are based on the 'master-slave' concept, whereby one control affects multiple servos. For example, with the ELE-CAMBER mixer, an elevator command will move all the servos assigned to the Camber function.
+![image](https://user-images.githubusercontent.com/42961200/154412077-e36eb1ab-5799-4ae1-bcc8-fc7eee201b99.png)
 
 
 
