@@ -26,6 +26,10 @@ updated: 2022-02-17 10:19
 ## radiomaster
 [radiomaster.com](https://www.radiomasterrc.com)
 
+[guide](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_guide.pdf)
+
+[manual](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_manual.pdf)
+
 ### specification
 - Type: TX16S MAX Transmitter 
 - Size: 286.9*128.9*183.8mm
