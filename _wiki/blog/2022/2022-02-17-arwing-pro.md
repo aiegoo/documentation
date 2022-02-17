@@ -72,6 +72,12 @@ The TX16s features a bright and clear 4.3-inch IPS color display for easy and co
 ### External Module Bay
 The TX16s natively supports Team Black Sheep MicroTX modules in CRSFmode with LUA scripts. Best of all the TX16s Internal 4-in-1 Multi-protocol module allows you to keep the MicroTX installed and switch between internal RF and Crossfire via software, no more module swapping. 
 
+### Radio overview
+![image](https://user-images.githubusercontent.com/42961200/154387281-92bbaeaf-4538-496f-989b-a5a3140e52d2.png)
+
+![image](https://user-images.githubusercontent.com/42961200/154387289-a1e557ae-b986-4347-87cf-001a563987b7.png)
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
