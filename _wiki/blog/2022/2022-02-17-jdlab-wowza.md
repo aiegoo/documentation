@@ -17,6 +17,7 @@ public: true
 parent: [[Wiki-Setting-Category]] 
 date: 2022-02-17T17:43:02 +0900
 updated: 2022-02-17 17:43
+published: false
 ---
 * TOC
 {:toc}
@@ -24,9 +25,11 @@ updated: 2022-02-17 17:43
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## overview
-### common video data and workflow
+### common video data and workflow for jdlab
 
 
+![image](https://user-images.githubusercontent.com/42961200/154439618-5094fb1a-e1cb-4382-8570-300a150f53b9.png)이성희@바보
+![image](https://user-images.githubusercontent.com/42961200/154442070-0c9225e8-8628-4946-803d-e323585dcde9.png)
 
 
 {% include taglogic.html %}
