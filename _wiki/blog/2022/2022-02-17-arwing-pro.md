@@ -101,6 +101,24 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 8. This wing was meant to be flown with modern autopilot units for best performance. You can fly it manual, but you will need to have a perfect tuning for this. To improve aerodynamics and handling this design is not very forgiving to rookie mistakes or poor setup. Take your time to double check all is OK before going airborne.
 9. Our best results battery wise, were with a ZOHD 4S2P 18650 7000mAh and that’s what we recommend. Having said that, if you’re a PRO, you will know what to do ;)
 
+## reciever R81
+[product](https://www.radiomasterrc.com/products/r81-receiver)
+
+### Specification
+- Type: R81 - D8 Nano Sbus Receiver
+- Channels: 8
+- Frequency range: 2400-2483.5Mhz
+- Power input range: 4.5-6V
+- Signal format: Frsky D8 Compatible
+- Output format: SBUS
+- RSSI: RSSI on Ch9 of Sbus Output
+- Range: more than 1km
+- Antenna length: Approximately 6cm
+- Size: 17x11mm
+- Weight: 2 grams
+
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
