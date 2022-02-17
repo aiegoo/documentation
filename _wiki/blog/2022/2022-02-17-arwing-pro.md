@@ -26,6 +26,39 @@ updated: 2022-02-17 10:19
 ## radiomaster
 [radiomaster.com](https://www.radiomasterrc.com)
 
+### specification
+- Type: TX16S MAX Transmitter 
+- Size: 286.9*128.9*183.8mm
+- Weight: 750g (without battery)/820g (with 2 x 18650 batteries installed)
+- Voltage: DC7-8.4V
+- Battery: 2 x 18650 (tray supplied) or 2S lipo (batteries not included)
+- Current: 350mah (NO CRSF)
+- Channel: 16ch
+- External Micro SD slot: Card Included
+- 2 x External UART Expansion Ports
+- Touch Panel installed (Requires OpenTX/EdgeTX 2.4 Update)
+
+### Features
+- STM32F429BIT6 MCU
+- Industrial grade 4.3 inch IPS 480*272 Screen with touch
+- Compatible with OpenTX
+- Wheel menu button
+- Full Size HALL sensor gimbals with CNC Aluminum Facia.
+- Internal Multi-protocol RF System
+- Native Full Speed TBS Crossfire support (400K)
+- Supports Telemetry (Protocol and Receiver dependent)
+- Memory 16M (can be expanded by Micro SD card)
+- Voice function
+- Vibration reminder function
+- Improved JR module slot
+- 6-Flight Mode Buttons (Pixhawk, custom functions and more!)
+- Three-color LED status display
+- USB-C Charging port.
+- USB-C Simulator and PC connection port.
+- External UART ports to expand the capabilities of your radio.
+- CNC option parts and leather grips factory fitted.
+- Neck Strap included
+
 {% include taglogic.html %}
 
 {% include links.html %}
