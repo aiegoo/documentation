@@ -125,6 +125,7 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 ## Futaba rc and receiver 6303
 
 ### Introduction
+![image](https://user-images.githubusercontent.com/42961200/154409412-ffb7509d-1488-4c36-b619-83e91a091afa.png)
 
 
 Turbines, helicopters, scale models, F3X gliders and large aerobatic models… they all carve up the sky in their own unique manner. Yet they all have one thing in common – they all need advanced radios to control them.
@@ -153,6 +154,7 @@ PCM-G3 (narrowband PCM)
 Futaba’s latest PCM-G3 modulation provides several benefits compared with the older PCM-1024. The new protocol supports 14-channels, 2048-step resolution and channel grouping. Futaba claim that it offers a faster response.
 
 PCM-G3 provides programmable failsafe of servo positions in the event of signal loss. There is also a separate battery fail safe.
+![image](https://user-images.githubusercontent.com/42961200/154409426-538a8f86-32d5-4cc2-b860-e4984760f56c.png)
 
 
 
@@ -167,6 +169,7 @@ A good compromise has been struck with the balance. With the aerial extended, th
 
 The lower part of the facia is dominated by the LCD display. Unfortunately, while its large size is commendable, the contrast is rather poor. No amount of tweaking the contrast menu helped, and when working indoors I often found myself wishing for a backlight.
 
+![image](https://user-images.githubusercontent.com/42961200/154409450-e3568df0-ad45-425c-83bd-d9f91ca5e8b6.png)
 
 
 The stick units are very smooth, thanks to twin ball races on each axis. The spring tension was a bit weak for my liking, but was easily adjusted using an Allen key.
@@ -177,6 +180,7 @@ There are six digital trims. They have a positive action, with each step accompa
 
 The remaining controls comprise a pair of rotary knobs and eight switches. All switches are three-position types, except for the rear shoulder switches, which are two-position. All switches are of excellent quality with a silky feel and minimal lateral play.
 
+![image](https://user-images.githubusercontent.com/42961200/154409471-fa9ca7ce-6504-4837-a005-b28f19aae75a.png)
 
 
 Controls have two-character identifiers e.g. 'T1' for trim 1, 'LS' for left slider, etc. As we'll see later, all have freely assignable functions.
@@ -221,6 +225,7 @@ With a wide variety of programming features, the 12FG is well equipped to handle
 Model Types
 The Futaba 12FG provides a wide range of options when creating a model. For aircraft and gliders, there is a choice of seven wing configurations, from the simplest single-servo setup, to wings with eight servos. Tailless wings are similarly supported. Tail configuration options include V-tail and 'ailevator' (tailerons). For helicopters, there's a choice of 8 swashplate configurations.
 
+![image](https://user-images.githubusercontent.com/42961200/154409519-62c479f6-b1c7-4dab-aae3-424360509a60.png)
 
 
 There is no 'universal' option available - you must choose from the stock templates, and your choice determines the number and type of stock mixers available. However, with availability of programmable mixers, this is unlikely to be a constraint in practice.
@@ -235,6 +240,7 @@ Flight conditions are superbly flexible on the Futaba 12FG. They enable the whol
 
 Up to eight flight conditions are available (including the default condition). Each condition is assigned a priority, the highest priority taking precedence if multiple conditions are selected.
 
+![image](https://user-images.githubusercontent.com/42961200/154409579-96dcd176-adae-4ab4-aea5-40e952623e15.png)
 
 
 With a little planning, it's possible to cook up some very powerful schemes, e.g. flight conditions and mixer interlocks all controlled from the same switch. This can greatly reduce the load on the pilot.
