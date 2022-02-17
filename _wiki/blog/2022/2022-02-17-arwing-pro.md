@@ -77,6 +77,29 @@ The TX16s natively supports Team Black Sheep MicroTX modules in CRSFmode with LU
 
 ![image](https://user-images.githubusercontent.com/42961200/154387289-a1e557ae-b986-4347-87cf-001a563987b7.png)
 
+## Air Wing Pro
+[sonicmodellrc.com](https://www.sonicmodellrc.com) for product info
+
+[somic-modell](https://www.sonicmodell.net/) for gallery and other information.
+
+### manual, assembly guide and tips
+[arwing-pro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-pro.pdf)
+
+[arwing-assembly](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-assmbly.pdf)
+
+[arwing-intro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-intro.pdf)
+#### tips
+
+1. First and foremost, thanks for buying this unit. You’re not only supporting our work and families but also keeping alive a hobby that’s being threaten by all sides right now.
+2. This Wing is called “PRO” for a reason. If you’re a beginner we strongly encourage you to seek advice from experience FPV pilots even before trying to put this unit together. Seriously.
+3. The provided CG marks are a reference and a starting point for your tuning. It’s what worked for us after all the math and flights done. This doesn’t mean that will work for your flying style or type of mission. If you know what you’re doing, feel free  to experiment with it.
+4. The provided “Basic Power Combo” with the PNP version is just a “middle point” performance kit to get you in the air and  have a great experience with a good balance between speed and range. If you have something specific in mind for your
+wing, like a super fast unit or a super long range one, we suggest you to get the KIT and use your own selected electronics. A Premium power combo will be also offered down the road.
+5. In our experience the DJI FPV system was easier to setup and reply using the dedicated main hatch and placing it in the  center on the wing. In any case, you can also use the side pockets and do some DIY if needed.
+6. Without any doubt, this wing is BY FAR the most aerodynamic and the one with the better cooling system from all the 1 meter wings available in the market… use this advantages wisely and keep it light and clean.
+7. We strongly suggest “Frisbee” style launching for this unit, as you have no grip in the bottom (precisely to keep it clean and aerodynamic)… Any other style of hand-launching could damage your fingers. Be careful.
+8. This wing was meant to be flown with modern autopilot units for best performance. You can fly it manual, but you will need to have a perfect tuning for this. To improve aerodynamics and handling this design is not very forgiving to rookie mistakes or poor setup. Take your time to double check all is OK before going airborne.
+9. Our best results battery wise, were with a ZOHD 4S2P 18650 7000mAh and that’s what we recommend. Having said that, if you’re a PRO, you will know what to do ;)
 
 {% include taglogic.html %}
 
