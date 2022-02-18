@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ccs.joy-drone.com:8088/enginemanager/login.html for wowza engine"
+title: "ccs.joy-drone.com:8088/ngmngr/login.html"
 name: "jdlab-wowza"
 tags: [video]
 tagName: jdlab
