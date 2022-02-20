@@ -1,0 +1,319 @@
+---
+layout: post
+title: "my new fixed wing AR Wing Pro, ready for dji HD fpv system"
+name: "arwing-pro"
+tags: [drone]
+tagName: drone
+permalink: 2022-02-17-arwing-pro.html
+sidebar: other_sidebar
+folder: blog
+collection: wiki
+categories: drone
+keywords: "radiomaster arwing fixedwing tx165 sbus"
+summary: "Thu, Feb 17, 22, setup guide after opening the package"
+excerpt_separator: <!--more-->
+toc: true
+public: true
+parent: [[Wiki-Setting-Category]] 
+date: 2022-02-17T10:19:23 +0900
+updated: 2022-02-17 10:19
+---
+* TOC
+{:toc}
+
+{{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
+
+## radiomaster
+[radiomaster.com](https://www.radiomasterrc.com)
+
+[guide](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_guide.pdf)
+
+[manual](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_manual.pdf)
+
+### specification
+- Type: TX16S MAX Transmitter 
+- Size: 286.9*128.9*183.8mm
+- Weight: 750g (without battery)/820g (with 2 x 18650 batteries installed)
+- Voltage: DC7-8.4V
+- Battery: 2 x 18650 (tray supplied) or 2S lipo (batteries not included)
+- Current: 350mah (NO CRSF)
+- Channel: 16ch
+- External Micro SD slot: Card Included
+- 2 x External UART Expansion Ports
+- Touch Panel installed (Requires OpenTX/EdgeTX 2.4 Update)
+
+### Features
+- STM32F429BIT6 MCU
+- Industrial grade 4.3 inch IPS 480*272 Screen with touch
+- Compatible with OpenTX
+- Wheel menu button
+- Full Size HALL sensor gimbals with CNC Aluminum Facia.
+- Internal Multi-protocol RF System
+- Native Full Speed TBS Crossfire support (400K)
+- Supports Telemetry (Protocol and Receiver dependent)
+- Memory 16M (can be expanded by Micro SD card)
+- Voice function
+- Vibration reminder function
+- Improved JR module slot
+- 6-Flight Mode Buttons (Pixhawk, custom functions and more!)
+- Three-color LED status display
+- USB-C Charging port.
+- USB-C Simulator and PC connection port.
+- External UART ports to expand the capabilities of your radio.
+- CNC option parts and leather grips factory fitted.
+- Neck Strap included
+![image](https://user-images.githubusercontent.com/42961200/154386976-28cb790f-5e0d-46e3-a2fb-ffac339b9fa1.png)
+![image](https://user-images.githubusercontent.com/42961200/154386986-e7e3b0c3-c3c5-41d0-a60e-f6d25760f711.png)
+
+
+
+### 4.3” IPS Color Display
+The TX16s features a bright and clear 4.3-inch IPS color display for easy and convenient model setup and operation with adjustable brightness to suit all conditions.
+
+* Touch Panel included with TX16S Hall and TX16S Hall MasterFire combo only. Touch functionality requires OpenTX 2.4 (coming soon). TX16S Standard version is Touch Panel ready and can be upgraded with optional touch panel sold separately.
+
+
+### External Module Bay
+The TX16s natively supports Team Black Sheep MicroTX modules in CRSFmode with LUA scripts. Best of all the TX16s Internal 4-in-1 Multi-protocol module allows you to keep the MicroTX installed and switch between internal RF and Crossfire via software, no more module swapping. 
+
+### Radio overview
+![image](https://user-images.githubusercontent.com/42961200/154387281-92bbaeaf-4538-496f-989b-a5a3140e52d2.png)
+
+![image](https://user-images.githubusercontent.com/42961200/154387289-a1e557ae-b986-4347-87cf-001a563987b7.png)
+
+## Air Wing Pro
+[sonicmodellrc.com](https://www.sonicmodell.com) for product info
+
+[somic-modell](https://www.sonicmodell.net/) for gallery and other information.
+
+### manual, assembly guide and tips
+[arwing-pro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-pro.pdf)
+
+[arwing-assembly](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-assmbly.pdf)
+
+[arwing-intro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-intro.pdf)
+#### tips
+
+1. First and foremost, thanks for buying this unit. You’re not only supporting our work and families but also keeping alive a hobby that’s being threaten by all sides right now.
+2. This Wing is called “PRO” for a reason. If you’re a beginner we strongly encourage you to seek advice from experience FPV pilots even before trying to put this unit together. Seriously.
+3. The provided CG marks are a reference and a starting point for your tuning. It’s what worked for us after all the math and flights done. This doesn’t mean that will work for your flying style or type of mission. If you know what you’re doing, feel free  to experiment with it.
+4. The provided “Basic Power Combo” with the PNP version is just a “middle point” performance kit to get you in the air and  have a great experience with a good balance between speed and range. If you have something specific in mind for your
+wing, like a super fast unit or a super long range one, we suggest you to get the KIT and use your own selected electronics. A Premium power combo will be also offered down the road.
+5. In our experience the DJI FPV system was easier to setup and reply using the dedicated main hatch and placing it in the  center on the wing. In any case, you can also use the side pockets and do some DIY if needed.
+6. Without any doubt, this wing is BY FAR the most aerodynamic and the one with the better cooling system from all the 1 meter wings available in the market… use this advantages wisely and keep it light and clean.
+7. We strongly suggest “Frisbee” style launching for this unit, as you have no grip in the bottom (precisely to keep it clean and aerodynamic)… Any other style of hand-launching could damage your fingers. Be careful.
+8. This wing was meant to be flown with modern autopilot units for best performance. You can fly it manual, but you will need to have a perfect tuning for this. To improve aerodynamics and handling this design is not very forgiving to rookie mistakes or poor setup. Take your time to double check all is OK before going airborne.
+9. Our best results battery wise, were with a ZOHD 4S2P 18650 7000mAh and that’s what we recommend. Having said that, if you’re a PRO, you will know what to do ;)
+
+## reciever R81
+[product](https://www.radiomasterrc.com/products/r81-receiver)
+
+### Specification
+- Type: R81 - D8 Nano Sbus Receiver
+- Channels: 8
+- Frequency range: 2400-2483.5Mhz
+- Power input range: 4.5-6V
+- Signal format: Frsky D8 Compatible
+- Output format: SBUS
+- RSSI: RSSI on Ch9 of Sbus Output
+- Range: more than 1km
+- Antenna length: Approximately 6cm
+- Size: 17x11mm
+- Weight: 2 grams
+
+
+## Futaba rc and receiver 6303
+
+### Introduction
+![image](https://user-images.githubusercontent.com/42961200/154409412-ffb7509d-1488-4c36-b619-83e91a091afa.png)
+
+
+Turbines, helicopters, scale models, F3X gliders and large aerobatic models… they all carve up the sky in their own unique manner. Yet they all have one thing in common – they all need advanced radios to control them.
+
+Few R/C systems offer the required level of sophistication, but Futaba's latest radio, the 12FG, appears to tick all the right boxes. Let's see if it lives up to expectations.
+
+The 12FG straddles a large gap between the 9C and the flagship 14MZ. However, with 14-channels (12 + 2 switched), 30 model memories (expandable to 1882), and dual-band support via plug-in RF modules, it strays tantalisingly close to 14MZ territory.
+
+I needed little persuasion to review this radio. As a 4000 owner, I was keen to see how Futaba's new offering would stack up as a possible replacement.
+
+Out of the Box
+I have to admit to turning into a kid in a toyshop when the man from Parcel Force arrived, and the package was soon spilling its contents. These included a smart looking transmitter, R5114 receiver, mains charger and user manual. Also included were a couple of Allen keys, and a bright orange neck strap.
+
+No servos are provided with the 12FG. However, I was surprised to see that a receiver battery was also omitted, even though it is mentioned in the packing list in the user manual.
+
+Note that it is not possible to alter the stick mode after purchase, so make sure you specify the mode before ordering.
+
+2.4 GHz or 35 MHz? You Choose!
+Thanks to the use of plug-in RF modules, the Futaba 12FG offers a genuine all-in-one solution for those with 35 MHz gear who may wish migrate to 2.4 GHz later on.
+
+The system comes with a MZ-FM 35 MHz installed. The TM-14 2.4 GHz module should be available as an extra by the time you read this. It has an integral antenna and is capable of driving any Futaba 2.4 GHz FASST aircraft receiver, from the 6-channel FS606, right up to the 14-channel R6014FS. Price of the TM-14 is £119.99, and the 14-channel R6014FS receiver will set you back £149.99.
+
+Note that earlier 12FG transmitters will need a firmware upgrade in order to work with the TM-14. Also, transmitters are region-coded, so for example a UK supplied transmitter won't work with a US module. This may be an issue if you intend to use this radio abroad.
+
+PCM-G3 (narrowband PCM)
+Futaba’s latest PCM-G3 modulation provides several benefits compared with the older PCM-1024. The new protocol supports 14-channels, 2048-step resolution and channel grouping. Futaba claim that it offers a faster response.
+
+PCM-G3 provides programmable failsafe of servo positions in the event of signal loss. There is also a separate battery fail safe.
+![image](https://user-images.githubusercontent.com/42961200/154409426-538a8f86-32d5-4cc2-b860-e4984760f56c.png)
+
+
+
+All the benefits of PCM-G3 will also apply to the forthcoming 2.4 GHz module. In fact, I understand from the importers that the only difference between PCM-G3 and 2.4 GHz is the transmission scheme used (narrowband FM v. Spread Spectrum). Futaba claim that the 2.4 GHz module adds negligible (~2ms) additional latency so quick servo responses should also be maintained.
+
+The Transmitter
+First impressions were most favourable, starting with the smart black and silver mouldings. At just over 1 kg the box is nicely weighted without being heavy and it also feels comfortable to hold, thanks to the use of rubber mouldings and textured surfaces.
+
+The aerial is just over a meter in length and screws into a smart chromed ball-joint. The angle is adjustable using an Allen key, and when not in use the aerial can be stored in a recess near the bottom of the case.
+
+A good compromise has been struck with the balance. With the aerial extended, there is a slight tendency for the top to tip down, while the opposite is the case when the aerial is removed for 2.4 GHz operation. Either way, balance is acceptable.
+
+The lower part of the facia is dominated by the LCD display. Unfortunately, while its large size is commendable, the contrast is rather poor. No amount of tweaking the contrast menu helped, and when working indoors I often found myself wishing for a backlight.
+
+![image](https://user-images.githubusercontent.com/42961200/154409450-e3568df0-ad45-425c-83bd-d9f91ca5e8b6.png)
+
+
+The stick units are very smooth, thanks to twin ball races on each axis. The spring tension was a bit weak for my liking, but was easily adjusted using an Allen key.
+
+Nestling in the side cheeks are a couple of rotary levers. These have a ratchet action and a centre detent, though the centre positions were barely detectable on the review unit.
+
+There are six digital trims. They have a positive action, with each step accompanied by a beep. The size of each increment is adjustable and their positions are displayed on the LCD.
+
+The remaining controls comprise a pair of rotary knobs and eight switches. All switches are three-position types, except for the rear shoulder switches, which are two-position. All switches are of excellent quality with a silky feel and minimal lateral play.
+
+![image](https://user-images.githubusercontent.com/42961200/154409471-fa9ca7ce-6504-4837-a005-b28f19aae75a.png)
+
+
+Controls have two-character identifiers e.g. 'T1' for trim 1, 'LS' for left slider, etc. As we'll see later, all have freely assignable functions.
+
+At the back is the compartment for the battery and SD card, as well as sockets for a charger and DSC/trainer cable.
+
+Removing the back of the case reveals a beautifully neat assembly. The electronics are mainly confined to a single motherboard that is dominated by a huge 120-pin custom chip. All in all a remarkably low component count for such a capable system. Of course this also means there's less to go wrong!
+
+The overall impression is of a very well engineered, high-quality unit. Inevitably though, squeezing so much functionality into a small box has led to one or two compromises that may be noticed especially by those coming from a Euro style box. The transmitter feels a little too 'busy', and I'd have liked unused switches to be removable as on the 12Z and 14MZ. Finally, little concession has been made to the needs of the thumb-and-forefinger style flyer, except via the rather limited stick length adjustment.
+
+Nevertheless, bearing in mind the small size of the transmitter, Futaba have struck a reasonable compromise with the ergonomics.
+
+Battery and Charging
+Lifting the hinged battery cover reveals a 6-cell NiMH pack. Capacity is 1700 mAh, and based on the published current consumption of 500 mA the maximum safe duration should be around 2.5 to 3 hours. This may be a little borderline for some applications, and no doubt some users will wish to replace the pack with higher capacity cells. An audible alarm sounds when the battery voltage falls to 6.8 volts.
+
+
+
+Using the supplied charger, a full charge takes 15-hours. If you want to use your own fast charger, it must be connected directly to the battery. Fortunately the battery is easily disconnected from the main board (the lead terminates in a standard J-connector).
+
+
+
+Documentation
+The instruction manual runs to 127 pages and is divided into seven sections. These include ‘Introduction’, ‘Basic setting up procedure’, and descriptions of the System, Linkage and Model menus.
+
+On the face of it the manual looks comprehensive, but dig deeper and it has to be said the quality is somewhat lacking. It's written largely in 'Janglish', many key features are glossed over, and one or two are completely missing. For example, there is no description at all of 'offset' mixers even though they have their own unique screens. Neither is there a reference section – a single concise schematic showing the way the controls and mixers link would have saved an awful lot of hassle.
+
+All this may make it difficult for less technical users to explore the many advanced features of this radio. If in doubt, I'd recommend downloading the manual from the Futaba web site.
+On a more positive note, there is a very handy servo monitor menu that shows what the channels are doing in real time. This does at least allow experiment without the need to operate a model.
+
+Programming Interface
+Futaba have done a good job with the programming interface. There are just two controls: a large dial labelled 'edit’, which you either twist or click, and a smaller button labelled 'S1'.
+
+Menus are organised hierarchically under three headings 'System', 'Linkage', and 'Model'. Click to see a list of available functions, click again to get to a specific menu.
+Navigation within a menu is consistent too; press the S1 button to get to the 'home' field. Press a bit longer, and you're all the way back to the opening screen. Within a menu, navigation and data entry are performed in an equally consistent manner.
+
+Looking at the menu categories in more detail: The System menus provide access to system-wide settings such as buddy-box setup, LCD contrast, system timer and so on. The Linkage menus are where you do all the basic setting up, including creating new models, frequency selection, control assignments, and servo adjustments. Finally the Model menus are where you set up the flight conditions, response curves, and mixers.
+All in all, the user interface is consistent and reasonably quick, though the consistency breaks slightly when it comes to the individual mixer screens.
+
+Programming Capability
+With a wide variety of programming features, the 12FG is well equipped to handle even the most complex of models. Unfortunately there isn't space to cover everything, so I'll choose a few key features.
+
+Model Types
+The Futaba 12FG provides a wide range of options when creating a model. For aircraft and gliders, there is a choice of seven wing configurations, from the simplest single-servo setup, to wings with eight servos. Tailless wings are similarly supported. Tail configuration options include V-tail and 'ailevator' (tailerons). For helicopters, there's a choice of 8 swashplate configurations.
+
+![image](https://user-images.githubusercontent.com/42961200/154409519-62c479f6-b1c7-4dab-aae3-424360509a60.png)
+
+
+There is no 'universal' option available - you must choose from the stock templates, and your choice determines the number and type of stock mixers available. However, with availability of programmable mixers, this is unlikely to be a constraint in practice.
+
+Freely Assignable Functions
+All sticks, knobs, switches and levers can be freely assigned to any function. For example, setting up cross trims is just a question of re-assigning the trim levers. Or an unused trim lever can be used to drive an auxiliary channel.
+Multiple servos can be linked to the same function, thus avoiding the need for Y-leads in the model. Each linked servo can be adjusted for travel and centring. One obvious application is twin elevator and rudder servos for large models.
+Finally, servos can be assigned to any channel number. This makes it easy to emulate the channel arrangement of another transmitter.
+
+Flight Conditions
+Flight conditions are superbly flexible on the Futaba 12FG. They enable the whole character of the transmitter to be changed – the trim settings, mixer curves, and even the control assignments can be altered at the flick of a switch. It's not an all-or-nothing feature either as the user decides which features should be condition dependent and which should be global.
+
+Up to eight flight conditions are available (including the default condition). Each condition is assigned a priority, the highest priority taking precedence if multiple conditions are selected.
+
+![image](https://user-images.githubusercontent.com/42961200/154409579-96dcd176-adae-4ab4-aea5-40e952623e15.png)
+
+
+With a little planning, it's possible to cook up some very powerful schemes, e.g. flight conditions and mixer interlocks all controlled from the same switch. This can greatly reduce the load on the pilot.
+
+With a tilt towards traditionalists, flight conditions are disabled by default in favour of the more familiar dual rate functions.
+
+Switches
+Switches may be used in multiple contexts, with the state of each position (i.e. either on or off) independently configurable in each context. Sticks and levers can also be made to act like switches, with user-configurable on/off points. Logic switches may be defined based on two switches, using AND, OR or EOR operators.
+
+Curves (AFR)
+Curves (or AFR as they are rather cryptically called) provide a flexible way of altering the response of sticks and mixers. Curves may be linear or exponential, or point-based (up to 17 points). Expo can be set separately in each direction.
+
+Servo Adjustments
+Servos can be adjusted for gain, direction and end-points. I was pleased to see that the end-points act as true electronic end stops, essential on models which use aggressive mixing. On the downside, these adjustments are too crude to match up the movement of large paired control surfaces like flaps, where even the slightest differences in linkage geometry can cause subtle mistracking which is difficult to correct. It's a shame that Futaba did not include an AFR (curves) option for each servo, in order to correct for this.
+
+![image](https://user-images.githubusercontent.com/42961200/154412073-441d1647-74a2-4ead-8404-7074e287c052.png)
+
+ 
+Mixers
+As one might expect, the Futaba 12FG offers a comprehensive list of built-in mixers (too many to list here) as well as ten free mixers. All mixers are based on the 'master-slave' concept, whereby one control affects multiple servos. For example, with the ELE-CAMBER mixer, an elevator command will move all the servos assigned to the Camber function.
+![image](https://user-images.githubusercontent.com/42961200/154412077-e36eb1ab-5799-4ae1-bcc8-fc7eee201b99.png)
+
+
+
+The menus differ in detail, but they all have elements in common. For example, most have an AFR page for setting the curves. A second page allows a further percentage rate to be applied to each servo. A third page specifies how the mixer is activated; e.g. permanently, or via a dedicated switch, or according to flight condition.
+
+Many mixers also offer a 'fine tune' facility whereby a mixer rate can be modified dynamically. For example, you can use a volume knob to adjust aileron differential. Or the amount of ELE-FLAP mixing can be automatically reduced as flaps are deployed.
+All-in-all the programming on the Futaba 12FG is superbly flexible, the only slight niggle being the aforementioned lack of servo-side curves.
+
+Real World Testing
+Field testing often reveals strengths and weaknesses which are hidden during bench testing, so I like wherever possible to test fly a review radio.
+
+With a 30 mph Westerly breeze forecast for the only spare day, my Sting F3F racer was the obvious candidate for flight tests. This is a full-house competition glider, with four servos in the wing, and two in the V-tail. Not only is this a challenging model to program, but with the fast speeds (up to 90 mph) and short 100 meter course, fast servos and minimal latency are essential to avoid having to 'anticipate the buzz' at each end of the run.
+
+The goals for programming the Futaba 12FG were: (a) to minimise the number of switches needed to control the phases of flight and (b) allow adjustment of mixing and differential during flight. In short, to replicate the setup that I've honed on the Multiplex 4000 over many seasons of competitive flying.
+
+To accomplish this with the Futaba 12FG, I used a variety of stock mixers to control the wings and V-tail. I set up three flight conditions named Landing, Normal and Launch, all controlled by a three-position switch. I then programmed the same switch to deactivate the snapflap and crow mixers according to the flight condition. Finally the rotary knobs were programmed to allow snapflap and aileron rates to be adjusted during flight.
+
+There were a couple of hurdles to overcome, for example the flap linkage on the Sting is arranged so the servos can use their full range of travel, even though the flap movement is grossly asymmetric (95% down/5% up). This might seem a simple task, but on many radios it is difficult or impossible to achieve. After some experimentation, a solution was found via the undocumented 'offset' mix.
+
+As mentioned earlier, the crude servo adjustments were insufficient to accurately match up the flap travel on each side, however given a bit more time this could have been achieved using a corrective multi-point mix.
+
+The tight installation precluded the use of the R5114 receiver, so the existing MPX IPD receiver was kept, with the transmitter in PPM mode. Nevertheless it did offer a chance to test the 12FG's compatibility with a third party PPM receiver, and no problems were encountered.
+
+With all programming done, it was off to the slope for a most enjoyable three-hour session. Inevitably the model had to be re-trimmed, mixer and diff adjusted, in fact it was like starting with a brand new model, let alone a new radio! Nevertheless, retrimming was accomplished with great ease and soon the Sting was having a ball. Nicest of all, the control responses were noticeably quicker than the 4000. Other F3F flyers using 12FG's have reported similar quick response in PCM-G3 mode.
+
+The only irritation was that LCD again – unlike on Euro style sets, the low position means that it is often obscured by the neck strap, and I found myself having to remove the neckstrap from around my neck to do any programming.
+
+There are some nice little points, however. A warning beep is emitted if you try to power up with a non-default flight condition – this could save a few undercarriages being retracted on the ground. Also, the transmitter emits a warning beep if no activity is detected after several minutes – so less chance of arriving at the field with a drained battery. It's often the little details which count.
+
+Conclusion
+As a confirmed Multiplex user, I have to admit to having a healthy dose of scepticism when faced with the Futaba 12FG. Yet the more I got to know it, the more reluctant I was to give it back. It's a superbly flexible piece of kit, both in terms of programming and in the RF options available. It's accurate, responsive and should be well up to the task of controlling the most complex of models. The sticks are excellent too.
+
+I did have one or two reservations though. It has to be said that the user manual doesn't cut the mustard for such a complex piece of kit, although there are various Internet forums available to get help if needed. Also the LCD is crying for a backlight. Finally, the duration on a full charge can only be described as average.
+
+Nevertheless, these reservations should be kept in context, as the 12FG is a very fine radio. It's much closer to the 14MZ than that the large price differential would suggest – think of it as a 14MZ, without the twin processors or touch screen, and a few features removed. And just like the 14MZ it offers a viable route into 2.4 GHz.
+
+£775 may seem a lot to pay for a radio. However, if you're looking for a top end system with all-round flexibility, and you can afford the price tag, the Futaba 12FG deserves a place near the top of your shortlist.
+
+At a Glance
+Channel count: 12 proportional + 2 switched
+Model memories: 30 expanded to 1882 via SD card
+Frequency band: Determined by plug-in module. MZ-FM 35 MHz module supplied
+Modulation (TM-FM module): PCM-G3, PCM-1024, FM/PPM switchable
+Programming Features: Aircraft, Glider, Heli
+Current drain: 500 mA (avg)
+Battery: 7.2V 1700 mAh Ni-MH
+Tx weight: 1.1 kg incl. battery
+
+{% include taglogic.html %}
+
+{% include links.html %}
+
+{% include commento.html %}
+
+{{site.data.alerts.hr_shaded}}

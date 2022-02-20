@@ -22,6 +22,10 @@ updated: 2021-10-20 17:05
 {:toc}
 
 ## jdlab
+[issues](https://github.com/aiegoo/jdlab-setup/issues/4)
+
+[bash-history](https://gist.github.com/aiegoo/2a7ffdfb35aef092e5c64b5d03cd38ac)
+
 1. setting up vim
 2. add `startify' to vim by copying all from .vim folder
 3. install brew gem [link](https://www.whatwant.com/entry/LinuxBrew-install-Ubuntu-1804)
@@ -63,6 +67,7 @@ sudo apt-get install cabextract
 wget http://app.pc.kakao.com/talk/win32/xp/KakaoTalk_Setup.exe
 cp KakaoTalk.desktop /usr/share/applications/
 ```
+
 
 ## Thi
 
