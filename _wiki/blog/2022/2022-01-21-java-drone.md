@@ -382,6 +382,9 @@ sudo systemctl reload nginx
 3. apt install, pip install, serial, pyserial, pip3-serial all of tries didn't work
 4. So what's next????
 
+### check the source codes for any variations
+[source-code](https://github.com/aiegoo/4gremoteoperation/blob/tony/source/cloudapp-raspi/configuration.ini)
+
 ### video 43 code logic
 
 ```php
