@@ -368,6 +368,20 @@ sudo systemctl reload nginx
 
 ```
 
+## remote cloud setup
+
+### raspi setup
+
+- connect fc to raspi
+
+1. maktek fc setup 
+   1. flash the firmware and do the hardware configuration with QGroundControl or MissionPlanner. In this case, I have to map Matek UART (serial) with ardupilot mapping [link](http://www.mateksys.com/?portfolio=f765-wing#tab-id-5) RX7 TX7 RTS7 CTS7 mapped to Serial 1
+   2. Open the terminal and run following commands; ` cat /dev/ttyAM0` or later 'cat /dev/ttyS0` will send  outputs in broken symbols indicating the serial port is working
+   3. When it's done, I modified the cloud-raspi/configuration.ini file to apply the changes and change the ip and url of the cloud app or raspi app ip and ports (not sure if I am doing this right or wrong)
+2. After use-simulation changed to false in the ini file `sudo python3.8 app.py` didn't run through with errors of 'serial module not found`
+3. apt install, pip install, serial, pyserial, pip3-serial all of tries didn't work
+4. So what's next????
+
 ### video 43 code logic
 
 ```php
