@@ -23,7 +23,12 @@ updated: 2022-02-21 17:13
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 
+## Old school years
+![image](https://user-images.githubusercontent.com/42961200/154914920-8a817f4a-d5a8-4602-b599-75200ccbd30e.png)
+
+![image](https://user-images.githubusercontent.com/42961200/154915126-bc1a9d07-f195-4ff4-b578-957920d5535b.png)
+
+![image](https://user-images.githubusercontent.com/42961200/154915225-60e210e5-aec2-45fd-8613-5a36aa098715.png)
 
 {% include taglogic.html %}
 
