@@ -28,13 +28,13 @@ updated: 2022-02-21 17:13
 - [adapter-datasheet](https://www.farnell.com/datasheets/1683722.pdf)
 - [debugger-seller](https://kr.element14.com/stmicroelectronics/st-link-v2/icd-programmer-for-stm8-stm32/dp/1892523?gclid=CjwKCAiAsNKQBhAPEiwAB-I5zR5O790H8YRQRKfMU1WzH8Rqy-tvh97qBVTzUhHFHEP60f97wS5GMxoCVtsQAvD_BwE&mckv=_dc%7Cpcrid%7C519456541117%7Cpkw%7C%7Cpmt%7C%7Cslid%7C%7Cproduct%7C1892523%7Cpgrid%7C119732683897%7Cptaid%7Cpla-293946777986%7C&CMP=KNC-GKR-GEN-SMART-SHOPPING)
 - [stlinkv2](https://www.digikey.com/htmldatasheets/production/825009/0/0/1/st-link-v2-user-manual.html#pff)
-
+or [download](https://www.st.com/resource/en/user_manual/dm00026748-st-link-v2-in-circuit-debugger-programmer-for-stm8-and-stm32-stmicroelectronics.pdf)
 ### example blogs
 This is a short writeup/tutorial on low-level debugging a Pixhawk with Ardupilot. It’s based on an issue discussed over at Build Library for Pixhawk 4 - serial outputs can't be displayed 11, where one of the code examples (UART_test) would cause a system crash of the flight controller.
 
 The tutorial should work with any STM32-based flight controller that has a JTAG port (i.e. Pixhawk).
 
-Hardware Setup
+- Hardware Setup
 
 Required Hardware:
 
@@ -43,64 +43,73 @@ ST-Link v2 7 with 10-pin adapter 4
 The Flight controller may require a small plug 8 to solder on to the JTAG port.
 
 Plug the flight controller and ST-Link to each other via the JTAG port (noting that the little notch on the JTAG connector points towards the SD card on the Pixhawk). Plug both devices’ USB cables to your computer.
+![image](https://user-images.githubusercontent.com/42961200/155273086-4de85477-1735-4e80-b464-9bc0513ff2ae.png)
 
 hardwaresetup
 hardwaresetup.jpg
 826×619 71.5 KB
-Software setup
+
+- Software setup
 
 A Linux system is recommended. Windows may be possible, but I’ve not tested that.
 
 It is assumed that the arm-gcc compiler has already been installed. If not, see http://ardupilot.org/dev/docs/building-setup-linux.html 6
 
-OpenOCD 1 is to be installed next via this command:
-sudo apt-get install libusb-1.0-0-dev libusb-1.0-0 openocd
+[OpenOCD](https://openocd.org0 1 is to be installed next via this command:
+`sudo apt-get install libusb-1.0-0-dev libusb-1.0-0 openocd`
 
 OpenOCD (with the ST-Link) is the bridge between GDB and the STM32 microcontroller on the Pixhawk.
 
-Debugging UART_test
+- Debugging UART_test
 
-For this example, I used the UART_test 4 example (as of 13/11/2019). This example produced the system crash described below. This code is in ./ardupilot/libraries/AP_HAL/examples/UART_test
+For this example, I used the UART_test 4 example (as of 13/11/2019)[github](https://github.com/ArduPilot/ardupilot/tree/master/libraries/AP_HAL/examples/UART_test). This example produced the system crash described below. This code is in `./ardupilot/libraries/AP_HAL/examples/UART_test`
 
 Build and upload the debug variant of the UART_test example (noting that the --board may be different if you’re using a different board)
-
+```
 ./waf configure --board=Pixhawk1-1M --debug --enable-asserts
 ./waf --target=examples/UART_test --upload
+```
 Before OpenOCD and GDB are run, their configuration files need to be copied to the build folder. Note that the build folder’s name is the same at the board’s name in the waf configuration above.
 
-Go to the ./ardupilot/Tools/debug folder
-Copy openocd.cfg to ./ardupilot/build/Pixhawk1-1M/bin
-Copy .gdbinit to ./ardupilot/build/Pixhawk1-1M/examples
-Edit ~/.gdbinit to have the following text: set auto-load safe-path /
+1 Go to the `./ardupilot/Tools/debug` folder
+2 Copy openocd.cfg to `./ardupilot/build/Pixhawk1-1M/bin`
+3 Copy `.gdbinit to ./ardupilot/build/Pixhawk1-1M/examples`
+4 Edit ~/.gdbinit to have the following text: `set auto-load safe-path /`
+
 Next open up two terminals to run openOCD and GDB.
 
-cd ./ardupilot/build/Pixhawk1-1M/bin
-openocd
+`cd ./ardupilot/build/Pixhawk1-1M/bin`
+`openocd`
 openocd
 openocd.png
 743×523 74.6 KB
-cd ./ardupilot/build/Pixhawk1-1M/examples
-arm-none-eabi-gdb ./UART_test 
+`cd ./ardupilot/build/Pixhawk1-1M/examples`
+`arm-none-eabi-gdb ./UART_test `
 gdb
 gdb.png
 737×518 93.9 KB
-The details of the system crash will be shown in GDB:
+![image](https://user-images.githubusercontent.com/42961200/155274204-91fc1f24-b709-4916-a730-0150d1dd01aa.png)
 
+The details of the system crash will be shown in GDB:
+```
 0x0800542e in HardFault_Handler ()
     at ../../libraries/AP_HAL_ChibiOS/system.cpp:94
 94	    save_fault_watchdog(__LINE__, faultType, faultAddress);
 Breakpoint 1 at 0x800549c: file ../../libraries/AP_HAL_ChibiOS/system.cpp, line 172.
 Breakpoint 2 at 0x8005404: file ../../libraries/AP_HAL_ChibiOS/system.cpp, line 69.
 Breakpoint 3 at 0x801d4cc: file ../../modules/ChibiOS/os/rt/src/chsys.c, line 19
+```
 Now, that’s just the watchdog handler. Let’s check the threads via the info threads command in GDB:
 
-  9    Thread 536952680 (Name: IOMCU, State: CURRENT) 0x080076fe in HardFault_Handler () at ../../libraries/AP_HAL_ChibiOS/system.cpp:94
+`  9    Thread 536952680 (Name: IOMCU, State: CURRENT) 0x080076fe in HardFault_Handler () at ../../libraries/AP_HAL_ChibiOS/system.cpp:94`
 So there is something in the IOMCU thread that is causing the error.
 
-Use the i loc command to view the code that, when executed, caused the crash:
+Use the `i loc` command to view the code that, when executed, caused the crash:
 
+```
   lr_thd = 0x800bae9 <AP_Logger::WriteV(char const*, char const*, char const*, char const*, char const*, std::__va_list, bool)+28>, 
   pc = 0x800ba5c <AP_Logger::msg_fmt_for_name(char const*, char const*, char const*, char const*, char const*)+8>, 
+```
 The IOMCU thread is trying to write to the logfile (AP_Logger) and encountering an error.
 
 Looking back at the UART_test code, note that AP_Logger isn’t initialised anywhere. That’s why the system is crashing when trying to refer to a (non-existent) AP_Logger.
@@ -109,6 +118,7 @@ So, IOMCU assumes that there’s a valid AP_Logger. That’s fine for a full veh
 
 We will edit IOMCU to check if there’s a valid logger first. Make the following changes to AP_IOMCU.cpp to check for AP_Logger befure trying to write:
 
+```cpp
     if (now - last_log_ms >= 1000U) {
         last_log_ms = now;
         if (AP_Logger::get_singleton()) {
@@ -121,8 +131,10 @@ We will edit IOMCU to check if there’s a valid logger first. Make the followin
                                reg_status.num_errors,
                                num_delayed);
         }
+```
 So we upload the changed firmware, debug again and see what happens…
 
+```
 Reading symbols from ./UART_test...done.
 0x0800542e in HardFault_Handler ()
     at ../../libraries/AP_HAL_ChibiOS/system.cpp:94
@@ -185,10 +197,13 @@ faultAddress = <optimized out>
   8    Thread 536910032 (Name: apm_storage, State: SLEEPING) chVTIsArmedI (
     vtp=0x20009894 <_storage_thread_wa+2452>)
     at ../../modules/ChibiOS/os/rt/include/chvt.h:243
+
+```
 Another unchecked AP_Logger reference! This time in the apm_monitor thread.
 
-We will make a similar edit to check if there’s a valid logger first. Make the following changes to ./libraries/AP_HAL_Chibios/Scheduler.cpp:
+We will make a similar edit to check if there’s a valid logger first. Make the following changes to `./libraries/AP_HAL_Chibios/Scheduler.cpp`:
 
+```cpp
             if (AP_Logger::get_singleton()) {
                 AP::logger().Write("MON", "TimeUS,LDelay,Task,IErr,IErrCnt,MavMsg,MavCmd,SemLine,SPICnt,I2CCnt", "QIbIIHHHII",
                                    AP_HAL::micros64(),
@@ -201,9 +216,11 @@ We will make a similar edit to check if there’s a valid logger first. Make the
                                    pd.semaphore_line,
                                    pd.spi_count,
                                    pd.i2c_count);
-                }
+```
+}
 So we upload the changed firmware, debug again and see what happens…
 
+```diff
 Reading symbols from ./UART_test...done.
 _idle_thread (p=0x0) at ../../modules/ChibiOS/os/rt/src/chsys.c:72
 72	static void _idle_thread(void *p) {
@@ -240,17 +257,46 @@ No locals.
   8    Thread 536910032 (Name: apm_storage, State: SLEEPING) chVTIsArmedI (
     vtp=0x20009894 <_storage_thread_wa+2452>)
     at ../../modules/ChibiOS/os/rt/include/chvt.h:243
+
+```
 No crashes this time, so this UART_test should now run fine.
 
 Finally, build and upload a non-debug version of UART_test:
+```bash
 
 ./waf configure --board=Pixhawk1-1M
 ./waf --target=examples/UART_test --upload
+
+```
 And the expected output:
 output
 output.png
 1168×399 43.9 KB
+![image](https://user-images.githubusercontent.com/42961200/155274627-67677afa-5028-49f2-b75b-c610a32d2f36.png)
+
 So, with the help of low-level debugging, UART_test is fixe
+
+### afroflight board
+![image](https://user-images.githubusercontent.com/42961200/155274959-c5734f7f-b667-42c0-9f3c-e5f9865cc8eb.png)
+
+
+- pinouts on pcb
+![image](https://user-images.githubusercontent.com/42961200/155275032-20d8c994-4bfe-4428-9088-172d6d37e499.png)
+
+![image](https://user-images.githubusercontent.com/42961200/155275054-18a62397-f565-44e7-8a94-3237aafa60b7.png)
+
+![image](https://user-images.githubusercontent.com/42961200/155275071-8522dfbb-e809-460a-a3e9-a5ba6f00d6d9.png)
+
+- MDK-ARM 과의 연결
+
+ARM KEIL 에서
+
+Flash 메뉴 - Configure flash tools 클릭
+
+Debug 탭 클릭 - ST-Link Debugger 선택
+![image](https://user-images.githubusercontent.com/42961200/155275126-33063f46-eebf-4b98-85ca-5ae055e08c70.png)
+
+![image](https://user-images.githubusercontent.com/42961200/155275136-ff298f7b-1a75-4c7c-bc3b-60ba39ca69a0.png)
 
 
 ## Old school years
