@@ -23,6 +23,11 @@ updated: 2022-02-21 17:13
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
+## stm32 debugger tools
+- [20-10ping-adapter](https://www.11st.co.kr/products/3203938140?gclid=CjwKCAiAsNKQBhAPEiwAB-I5zS2ruvucoYHWOZCkYNUXqGGhE8QuLCsa-2YhtScPl5plKdheVR8onRoCbGAQAvD_BwE&utm_term=&utm_campaign=%B1%B8%B1%DB%BC%EE%C7%CEPC+%C3%DF%B0%A1%C0%DB%BE%F7&utm_source=%B1%B8%B1%DB_PC_S_%BC%EE%C7%CE&utm_medium=%B0%CB%BB%F6)
+- [adapter-datasheet](https://www.farnell.com/datasheets/1683722.pdf)
+- [debugger-seller](https://kr.element14.com/stmicroelectronics/st-link-v2/icd-programmer-for-stm8-stm32/dp/1892523?gclid=CjwKCAiAsNKQBhAPEiwAB-I5zR5O790H8YRQRKfMU1WzH8Rqy-tvh97qBVTzUhHFHEP60f97wS5GMxoCVtsQAvD_BwE&mckv=_dc%7Cpcrid%7C519456541117%7Cpkw%7C%7Cpmt%7C%7Cslid%7C%7Cproduct%7C1892523%7Cpgrid%7C119732683897%7Cptaid%7Cpla-293946777986%7C&CMP=KNC-GKR-GEN-SMART-SHOPPING)
+- [stlinkv2](https://www.digikey.com/htmldatasheets/production/825009/0/0/1/st-link-v2-user-manual.html#pff)
 ## Old school years
 ![image](https://user-images.githubusercontent.com/42961200/154914920-8a817f4a-d5a8-4602-b599-75200ccbd30e.png)
 
