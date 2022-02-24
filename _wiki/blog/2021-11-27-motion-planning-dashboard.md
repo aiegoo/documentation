@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "vue django fcnd udacity pawan rapa motion planning dashboard visual flight rules (VFR) IFR aircraft identification departure point estimated time of departure ETD flight altitude route of flight destination estimated time en route ETE"
+keywords: "vue django fcnd udacity pawan rapa motion planning dashboard visual flight rules (VFR) IFR aircraft identification departure point estimated time of departure ETD flight altitude route of flight destination estimated time en route ETE jdlab"
 summary: "Sat, Nov 27, 21, motion planning dashboard with django vue and fcnd"
 excerpt_separator: <!--more-->
 toc: true
