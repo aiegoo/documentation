@@ -23,7 +23,11 @@ updated: 2022-02-24 10:00
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 
+## source file
+[rf7.egg](https://drive.google.com/file/d/1_GhXx90qVKZhiUXOoGzneXYQe49VRGNw/view?usp=sharing)
+
+[manual-slack](https://onofflinkinc.slack.com/files/U01C3L1TM70/F03498R4V70/rf7_manual.pdf)
+
 
 {% include taglogic.html %}
 
