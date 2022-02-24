@@ -86,6 +86,16 @@ youtubueID4: hGxbYiV6TEA
 ![f8fa897376](https://user-images.githubusercontent.com/42961200/155499898-2bf09f01-e113-4d35-8f7f-677cc96a8abc.jpg)
 ![d4b29a44a9](https://user-images.githubusercontent.com/42961200/155499912-d74fee74-981b-4c1e-ac6f-1ed3382b7c92.jpg)
 
+### assembly
+![image](https://user-images.githubusercontent.com/42961200/155611506-28bc022a-ae9c-4dd4-b173-a835c96e3075.png)
+
+![image](https://user-images.githubusercontent.com/42961200/155611657-ea54a18f-8a55-4081-ae42-2b069b8d3fd8.png)
+
+![image](https://user-images.githubusercontent.com/42961200/155611995-927e2aa0-f1a1-439c-a0a7-80003fa2b353.png)
+
+![image](https://user-images.githubusercontent.com/42961200/155612310-2fb27c45-2f32-4e8b-98b2-c27882c85a6e.png)
+
+![image](https://user-images.githubusercontent.com/42961200/155612621-fd011028-49ef-4705-9502-778a06804073.png)
 
 #### tips
 
