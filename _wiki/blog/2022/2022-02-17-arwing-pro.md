@@ -141,6 +141,33 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 
 ![image](https://user-images.githubusercontent.com/42961200/155606619-750f6b3f-375f-419d-bb9f-e28d5fc46f1b.png)
 
+### Aomway TX001 Switchable 25mW/200mW/600mW 5.8G 40CH FPV Transmitter
+Adjustable Power: 25mW/200mW/600mW
+5.8G 40CH Tranmitter with Raceband
+2 kinds of connector, the extend cord is 50mm long
+Indicator LED to show the frequency and power
+
+![image](https://user-images.githubusercontent.com/42961200/155609976-f36119d1-9175-4f71-a23c-074549be43ac.png)
+![image](https://user-images.githubusercontent.com/42961200/155610000-34457c23-07f4-465d-9d89-bcc2fb6c4e94.png)
+
+- Specification
+
+|---
+| General |
+| Type	| Transmitter 
+| Model	| Aomway TX001 
+| Frequency	5.8Ghz | Power Adjustable 	5.8G Switchable 25mW/200mW/600mW
+| Channel	40CH 5658-5945mhz (Raceband) | Power 	Wide Power Input: 6-28V
+| | Current: 12V/200mW/150mA
+| Mic	Swithable, when open the Mic., it will occupy one audio channel |
+| Output Voltage	4.9-5.1V for camera |
+| Audio	Stereo Output | Format	Auto regonize NTSC/PAL
+| Connector	TX001A SMA short conenctor;| TX001B 50mm SMA extend cord connector
+| Dimension & Weight	Dimension: | 29x25x10mm
+| Weight(without antenna): | TX001A: 11g;TX001B: 12g
+
+
+
 ## radiomaster
 [radiomaster.com](https://www.radiomasterrc.com)
 
