@@ -17,6 +17,7 @@ public: true
 parent: [[Wiki-Setting-Category]] 
 date: 2022-02-17T10:19:23 +0900
 updated: 2022-02-17 10:19
+youtubeID: FOqkUmWkrmI
 ---
 * TOC
 {:toc}
@@ -271,7 +272,7 @@ Many mixers also offer a 'fine tune' facility whereby a mixer rate can be modifi
 All-in-all the programming on the Futaba 12FG is superbly flexible, the only slight niggle being the aforementioned lack of servo-side curves.
 
 Real World Testing
-Field testing often reveals strengths and weaknesses which are hidden during bench testing, so I like wherever possible to test fly a review radio.
+Field testing often reveals strengths and weaknesses which are hidden during bench testing, so I like wherever possible to test fly a review radio.https://youtu.be/FOqkUmWkrmI
 
 With a 30 mph Westerly breeze forecast for the only spare day, my Sting F3F racer was the obvious candidate for flight tests. This is a full-house competition glider, with four servos in the wing, and two in the V-tail. Not only is this a challenging model to program, but with the fast speeds (up to 90 mph) and short 100 meter course, fast servos and minimal latency are essential to avoid having to 'anticipate the buzz' at each end of the run.
 
@@ -309,6 +310,22 @@ Programming Features: Aircraft, Glider, Heli
 Current drain: 500 mA (avg)
 Battery: 7.2V 1700 mAh Ni-MH
 Tx weight: 1.1 kg incl. battery
+
+
+## wing covering
+### material 
+- 3m 734 P600 for abrasive sand paper
+- oracover
+- other comments from rcgroups.com  
+```
+I got the lam film from Aloft Hobbies initially, but when I realized how good it was at strengthening EPP, I ordered up a lifetime supply (that is full rolls) from from http://www.laminatorwarehouse.com/la...aminating-film
+
+I also ordered up a couple of these: http://amazon.com/Top-Flite-Sock-Iro...ilpage_o05_s00 (Hint: when you get them you'll thing the end you need to slip the iron into has been stitched shut. But no. You plonk the iron onto the sock and when you pull the drawstring tight, it wraps the sock around the iron!) The iron in question is http://smile.amazon.com/Top-Flite-TO...rch_detailpage (I wish it had an indicator light to remind me that it was powered on!)
+
+I'd also get some Scotch filament tape to protect the leading edges of the wings and V-tail, and perhaps the underside of the fuselage (depending on what you think is going to hit the ground first! )http://smile.amazon.com/Scotch-Filam...rch_detailpage
+
+```
+{% include youtubePlayer.html id=page.youtubeID %}
 
 {% include taglogic.html %}
 
