@@ -18,6 +18,8 @@ parent: [[Wiki-Setting-Category]]
 date: 2022-02-17T10:19:23 +0900
 updated: 2022-02-17 10:19
 youtubeID: FOqkUmWkrmI
+youtubeID2: 1zasW_lr6Dg
+youtubueID3: hGxbYiV6TEA
 ---
 * TOC
 {:toc}
@@ -30,16 +32,27 @@ youtubeID: FOqkUmWkrmI
 
 ### features
 1- Black EPP molded wing and fuselage, plus pre-built in carbon fiber spar, durable, light and flexible
+
 2- Detachable wing and wingtip, portable and easy to take for out door FPV fly.
+
 3- Multiple bonus camera mount, compatible for all FPV HD camera in the market
+
 4- Easy to hand launch, super stable flying performance, 10km/h - 80km/h flying speed
+
 5- Wingspan 900mm with high efficiency airfoil, create powerful elevating force.
+
 6- “No-glue” required assembly, open box and fly in few seconds
+
 7- Exactly the same motor / ESC / prop / camera with racing quads, exchangeable between each other.
-8- Spacious equipment bay for more FPV gear.
+
+8- Spacious equipment bay for more https://youtu.be/hGxbYiV6TEAFPV gear.
+
 9- Movable battery slot for better “CG” adjustment
+
 10- With bump for “CG” mark under the mainwing.
+
 11- With 2 skids for hand launch grip and landing
+
 12- With "NACA" Air inlet and outlet for FPV gear cooling
 
 ![e3d1e759c4](https://user-images.githubusercontent.com/42961200/155498941-140c09d0-b56b-4f0b-b8eb-2c37614cc321.jpg)
@@ -53,7 +66,7 @@ youtubeID: FOqkUmWkrmI
 [manual](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_manual.pdf)
 
 ### specification
-- Type: TX16S MAX Transmitter 
+- Type: TX16S MAX Transmitter https://youtu.be/hGxbYiV6TEA
 - Size: 286.9*128.9*183.8mm
 - Weight: 750g (without battery)/820g (with 2 x 18650 batteries installed)
 - Voltage: DC7-8.4V
@@ -88,6 +101,16 @@ youtubeID: FOqkUmWkrmI
 ![image](https://user-images.githubusercontent.com/42961200/154386986-e7e3b0c3-c3c5-41d0-a60e-f6d25760f711.png)
 
 
+![5efaf776c6](https://user-images.githubusercontent.com/42961200/155499063-6ce87427-7c84-410a-bbfb-e60d86cfa62f.jpg)
+
+![cca3df1f10](https://user-images.githubusercontent.com/42961200/155499081-376bc5cb-ca43-48b3-87b1-b4e39d6b6bd2.jpg)
+![ae7de03dd0](https://user-images.githubusercontent.com/42961200/15549https://youtu.be/hGxbYiV6TEA9095-6938a573-50e2-422f-ad72-e29682b7ad22.jpg)
+![334e441119](https://user-images.githubusercontent.com/42961200/155499106-eaf404a5-7b1c-4ae2-a044-338a09250d5b.jpg)
+![280ae92399](https://user-images.githubusercontent.com/42961200/155499124-8bcaed47-1fb7-451b-a0be-b47d7e242cbe.jpg)
+![7c85bd7cf5](https://user-images.githubusercontent.com/42961200/155499143-d36f38c6-d9cd-48bc-992a-b3b09137edbe.jpg)
+
+{% include youtubePlayer.html id=page.youtubeID2 %}
+{% include youtubePlayer.html id=page.youtubeID3 %}
 
 ### 4.3” IPS Color Display
 The TX16s features a bright and clear 4.3-inch IPS color display for easy and convenient model setup and operation with adjustable brightness to suit all conditions.
@@ -114,6 +137,7 @@ The TX16s natively supports Team Black Sheep MicroTX modules in CRSFmode with LU
 [arwing-assembly](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-assmbly.pdf)
 
 [arwing-intro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-intro.pdf)
+
 #### tips
 
 1. First and foremost, thanks for buying this unit. You’re not only supporting our work and families but also keeping alive a hobby that’s being threaten by all sides right now.
