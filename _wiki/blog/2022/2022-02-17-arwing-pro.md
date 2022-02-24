@@ -23,6 +23,27 @@ youtubeID: FOqkUmWkrmI
 {:toc}
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
+## arwing pro
+[intro](https://github.com/aiegoo/uas-reference/blob/master/manual/arwing-intro.pdf)
+
+[guide](https://github.com/aiegoo/uas-reference/blob/master/manual/arwing-pro.pdf)
+
+### features
+1- Black EPP molded wing and fuselage, plus pre-built in carbon fiber spar, durable, light and flexible
+2- Detachable wing and wingtip, portable and easy to take for out door FPV fly.
+3- Multiple bonus camera mount, compatible for all FPV HD camera in the market
+4- Easy to hand launch, super stable flying performance, 10km/h - 80km/h flying speed
+5- Wingspan 900mm with high efficiency airfoil, create powerful elevating force.
+6- “No-glue” required assembly, open box and fly in few seconds
+7- Exactly the same motor / ESC / prop / camera with racing quads, exchangeable between each other.
+8- Spacious equipment bay for more FPV gear.
+9- Movable battery slot for better “CG” adjustment
+10- With bump for “CG” mark under the mainwing.
+11- With 2 skids for hand launch grip and landing
+12- With "NACA" Air inlet and outlet for FPV gear cooling
+
+![e3d1e759c4](https://user-images.githubusercontent.com/42961200/155498941-140c09d0-b56b-4f0b-b8eb-2c37614cc321.jpg)
+
 
 ## radiomaster
 [radiomaster.com](https://www.radiomasterrc.com)
