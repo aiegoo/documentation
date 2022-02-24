@@ -30,6 +30,17 @@ youtubueID3: hGxbYiV6TEA
 
 [guide](https://github.com/aiegoo/uas-reference/blob/master/manual/arwing-pro.pdf)
 
+[sonicmodellrc.com](https://www.sonicmodell.com) for product info
+
+[somic-modell](https://www.sonicmodell.net/) for gallery and other information.
+
+### manual, assembly guide and tips
+[arwing-pro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-pro.pdf)
+
+[arwing-assembly](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-assmbly.pdf)
+
+[arwing-intro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-intro.pdf)
+
 ### features
 1- Black EPP molded wing and fuselage, plus pre-built in carbon fiber spar, durable, light and flexible
 
@@ -74,6 +85,60 @@ youtubueID3: hGxbYiV6TEA
 ![f8fa897376](https://user-images.githubusercontent.com/42961200/155499898-2bf09f01-e113-4d35-8f7f-677cc96a8abc.jpg)
 ![d4b29a44a9](https://user-images.githubusercontent.com/42961200/155499912-d74fee74-981b-4c1e-ac6f-1ed3382b7c92.jpg)
 
+
+#### tips
+
+1. First and foremost, thanks for buying this unit. You’re not only supporting our work and families but also keeping alive a hobby that’s being threaten by all sides right now.
+2. This Wing is called “PRO” for a reason. If you’re a beginner we strongly encourage you to seek advice from experience FPV pilots even before trying to put this unit together. Seriously.
+3. The provided CG marks are a reference and a starting point for your tuning. It’s what worked for us after all the math and flights done. This doesn’t mean that will work for your flying style or type of mission. If you know what you’re doing, feel free  to experiment with it.
+4. The provided “Basic Power Combo” with the PNP version is just a “middle point” performance kit to get you in the air and  have a great experience with a good balance between speed and range. If you have something specific in mind for your
+wing, like a super fast unit or a super long range one, we suggest you to get the KIT and use your own selected electronics. A Premium power combo will be also offered down the road.
+5. In our experience the DJI FPV system was easier to setup and reply using the dedicated main hatch and placing it in the  center on the wing. In any case, you can also use the side pockets and do some DIY if needed.
+6. Without any doubt, this wing is BY FAR the most aerodynamic and the one with the better cooling system from all the 1 meter wings available in the market… use this advantages wisely and keep it light and clean.
+7. We strongly suggest “Frisbee” style launching for this unit, as you have no grip in the bottom (precisely to keep it clean and aerodynamic)… Any other style of hand-launching could damage your fingers. Be careful.
+8. This wing was meant to be flown with modern autopilot units for best performance. You can fly it manual, but you will need to have a perfect tuning for this. To improve aerodynamics and handling this design is not very forgiving to rookie mistakes or poor setup. Take your time to double check all is OK before going airborne.
+9. Our best results battery wise, were with a ZOHD 4S2P 18650 7000mAh and that’s what we recommend. Having said that, if you’re a PRO, you will know what to do ;)
+
+## fvp camera
+### opto bl 30A
+- 1. Specification
+
+1.1 Output: Continuous 30A, burst 40A up to 10 seconds.
+
+1.2 Input Voltage: 2-6 cells lithium battery or 5-18 cells NiMH battery. 
+
+1.3 BEC: Not available.
+
+1.4 Refresh rate of the throttle signal: 50Hz to 432Hz.
+
+1.5 Control Signal Transmission: Optical/electrical coupled system.
+
+1.6 Max Speed: 210000rpm for 2 Poles BLM, 70000rpm for 6 poles BLM, 35000rpm for 12 poles BLM.
+(BLM = BrushLess Motor)
+
+1.7 Size: 55mm (L) * 25mm (W) * 12mm (H).
+
+1.8 Weight: 31g.
+
+- 2 Features
+
+2.1 High performance microprocessor, best compatibility with all kinds of motors, highest driving efficiency.
+
+2.2 Optimized for multi-rotor aircraft. 
+
+2.3 Smooth, linear, quick and precise throttle response.
+
+2.4 Multiple protection features: Low-voltage cut-off protection / Over-heat protection / Throttle signal loss protection.
+
+2.5 The throttle signal is transfered through optical/electrical coupled system to avoid electromagnetic interference.
+
+2.6 The firmware of the ESC can be updated through the built-in USB adapter in the Professional LCD Program Box.
+
+2.7 User programmable. 
+
+2.8 Multiple program methods supported: transmitter stick, Digital LED Program Card, Professional LCD Program Box, PC software. Very easy to program the ESC at home or at the flying field.
+
+![image](https://user-images.githubusercontent.com/42961200/155606619-750f6b3f-375f-419d-bb9f-e28d5fc46f1b.png)
 
 ## radiomaster
 [radiomaster.com](https://www.radiomasterrc.com)
@@ -130,30 +195,6 @@ The TX16s natively supports Team Black Sheep MicroTX modules in CRSFmode with LU
 
 ![image](https://user-images.githubusercontent.com/42961200/154387289-a1e557ae-b986-4347-87cf-001a563987b7.png)
 
-## Air Wing Pro
-[sonicmodellrc.com](https://www.sonicmodell.com) for product info
-
-[somic-modell](https://www.sonicmodell.net/) for gallery and other information.
-
-### manual, assembly guide and tips
-[arwing-pro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-pro.pdf)
-
-[arwing-assembly](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-assmbly.pdf)
-
-[arwing-intro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-intro.pdf)
-
-#### tips
-
-1. First and foremost, thanks for buying this unit. You’re not only supporting our work and families but also keeping alive a hobby that’s being threaten by all sides right now.
-2. This Wing is called “PRO” for a reason. If you’re a beginner we strongly encourage you to seek advice from experience FPV pilots even before trying to put this unit together. Seriously.
-3. The provided CG marks are a reference and a starting point for your tuning. It’s what worked for us after all the math and flights done. This doesn’t mean that will work for your flying style or type of mission. If you know what you’re doing, feel free  to experiment with it.
-4. The provided “Basic Power Combo” with the PNP version is just a “middle point” performance kit to get you in the air and  have a great experience with a good balance between speed and range. If you have something specific in mind for your
-wing, like a super fast unit or a super long range one, we suggest you to get the KIT and use your own selected electronics. A Premium power combo will be also offered down the road.
-5. In our experience the DJI FPV system was easier to setup and reply using the dedicated main hatch and placing it in the  center on the wing. In any case, you can also use the side pockets and do some DIY if needed.
-6. Without any doubt, this wing is BY FAR the most aerodynamic and the one with the better cooling system from all the 1 meter wings available in the market… use this advantages wisely and keep it light and clean.
-7. We strongly suggest “Frisbee” style launching for this unit, as you have no grip in the bottom (precisely to keep it clean and aerodynamic)… Any other style of hand-launching could damage your fingers. Be careful.
-8. This wing was meant to be flown with modern autopilot units for best performance. You can fly it manual, but you will need to have a perfect tuning for this. To improve aerodynamics and handling this design is not very forgiving to rookie mistakes or poor setup. Take your time to double check all is OK before going airborne.
-9. Our best results battery wise, were with a ZOHD 4S2P 18650 7000mAh and that’s what we recommend. Having said that, if you’re a PRO, you will know what to do ;)
 
 ## reciever R81
 [product](https://www.radiomasterrc.com/products/r81-receiver)
