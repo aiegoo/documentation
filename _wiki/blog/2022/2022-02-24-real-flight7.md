@@ -85,9 +85,13 @@ C
 L
 :
  Lift Coefficient
+ The total lift force is increased in proportion with the wing area.
  
  ![aspect-ratio-compare-768x622](https://user-images.githubusercontent.com/42961200/155660270-819d9209-d159-4563-8f7d-3d5f6f2e2749.jpg)
 
+```diff
+Higher aspect ratio wings result in a lower lift-induced drag coefficient. This is why gliders have long slender wings (high AR) as drag minimization is paramount to obtain the best glide ratio. A high aspect ratio wing is more structurally challenging to design, as the wing will flex more in flight, creating larger bending stresses and a damped roll control response. Structural flutter is also more prevalent in higher aspect ratio wings.
+```
 
 - control surface
 
@@ -97,7 +101,10 @@ The flaps and ailerons are attached to a rear spar which runs along the span. Th
 
 Trailing edge flaps are one of two devices used to extract additional lift from a wing at low speed. Slats modify the camber at the leading edge, performing a similar roll to the flaps. High-lift devices are a large topic on their own and are discussed in detail in Part 4 of this mini-series.
 
-The total lift force is increased in proportion with the wing area.
+
+
+Ailerons are used to provide roll control and do so by generating a large rolling moment through asymmetrical deflection. The figure below demonstrates a roll to the left. The aileron on the right wing deflects downwards which produces additional upward lift on the right wing. The left aileron deflects upward which modifies the flow field, generating a downforce at the left wingtip. Together these deflections generate a rolling moment which forces the right wing up, and the left wing down.
+
 [link-above](https://aerotoolbox.com/wing-structure/)
 
 
