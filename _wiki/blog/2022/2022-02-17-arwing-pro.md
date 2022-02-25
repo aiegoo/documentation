@@ -69,9 +69,6 @@ youtubueID4: hGxbYiV6TEA
 
 ![e3d1e759c4](https://user-images.githubusercontent.com/42961200/155498941-140c09d0-b56b-4f0b-b8eb-2c37614cc321.jpg)
 
-![image](https://user-images.githubusercontent.com/42961200/154386986-e7e3b0c3-c3c5-41d0-a60e-f6d25760f711.png)
-
-
 ![5efaf776c6](https://user-images.githubusercontent.com/42961200/155499063-6ce87427-7c84-410a-bbfb-e60d86cfa62f.jpg)
 
 ![cca3df1f10](https://user-images.githubusercontent.com/42961200/155499081-376bc5cb-ca43-48b3-87b1-b4e39d6b6bd2.jpg)
@@ -184,6 +181,10 @@ Indicator LED to show the frequency and power
 [guide](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_guide.pdf)
 
 [manual](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_manual.pdf)
+
+
+![image](https://user-images.githubusercontent.com/42961200/154386986-e7e3b0c3-c3c5-41d0-a60e-f6d25760f711.png)
+
 
 ### specification
 - Type: TX16S MAX Transmitter https://youtu.be/hGxbYiV6TEA
