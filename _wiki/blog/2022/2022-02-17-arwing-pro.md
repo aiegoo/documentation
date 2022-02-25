@@ -129,7 +129,7 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 
 1.7 Size: 55mm (L) * 25mm (W) * 12mm (H).
 
-1.8 Weight: 31g.
+1.8 Weight: 31g. 
 
 - 2 Features
 
