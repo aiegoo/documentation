@@ -18,6 +18,7 @@ parent: [[Wiki-Setting-Category]]
 date: 2022-02-25T12:14:34 +0900
 updated: 2022-02-25 12:14
 youtubeID: tZPgjFSu1Jk
+youtubeID2: DiD13auPObw
 ---
 * TOC
 {:toc}
@@ -62,6 +63,46 @@ In this program, you will gain experience with
 00:55
 a wide range of sensor modalities and sensor data.
 ```
+
+
+video decision making the sensor
+```cplus
+00:00
+A robot needs to make decisions based on
+00:03
+the data from various sensors and its own internal state.
+00:07
+These decisions can be as simple as answering yes or no question.
+00:12
+Like is the target object present on the table?
+00:15
+Or the decisions can be extremely
+00:17
+complex like deciding how to navigate an unknown environment.
+00:21
+In practice however, the decision-making process in robotics can require answering
+00:26
+many questions to decide on one course of
+00:28
+action from among potentially infinite possibilities.
+00:32
+Along the way, sophisticated techniques might be used.
+00:36
+For example, special tools can extract information
+00:39
+from images or compensate for a measurement error.
+00:43
+A robot needs to using
+00:44
+motion planning algorithm to decide how to get from one place to another.
+00:49
+Then, using a control algorithm to stay on track.
+00:52
+In this program, we'll cover
+00:54
+decision-making techniques to give your robots the best brains possible.
+```
+
 
 
 {% include taglogic.html %}
