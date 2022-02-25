@@ -66,6 +66,8 @@ a wide range of sensor modalities and sensor data.
 
 
 video decision making the sensor
+{% include youtubePlayer.html id=page.youtubeID2 %}
+
 ```cplus
 00:00
 A robot needs to make decisions based on

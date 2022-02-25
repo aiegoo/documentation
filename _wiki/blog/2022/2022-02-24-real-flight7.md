@@ -28,6 +28,10 @@ updated: 2022-02-24 10:00
 
 [manual-slack](https://onofflinkinc.slack.com/files/U01C3L1TM70/F03498R4V70/rf7_manual.pdf)
 
+- when choosing airframes, try challeging one such as Goldberg, which is 
+
+- wing load
+
 
 {% include taglogic.html %}
 
