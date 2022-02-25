@@ -37,9 +37,11 @@ updated: 2022-02-24 10:00
 ![lift-bending-moment](https://user-images.githubusercontent.com/42961200/155658362-45c22792-277a-4f66-8b37-b79a584b00f6.png)
 
 - wing configuration
+
 ![monoplane-biplane](https://user-images.githubusercontent.com/42961200/155658397-08fec323-1dd3-4fe3-aaa0-f9b40868c9a6.jpg)
 
 - wing location / high/ mid /low wing
+
 ![image](https://user-images.githubusercontent.com/42961200/155658474-fa00b931-d829-4056-9ccf-ee2dba28a760.png)
 
 ![wing-area-aspect-ratio-768x480](https://user-images.githubusercontent.com/42961200/155658579-6a9ba55d-3c57-4b4d-b2ad-f43931683f4c.png)
