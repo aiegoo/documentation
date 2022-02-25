@@ -107,7 +107,7 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 8. This wing was meant to be flown with modern autopilot units for best performance. You can fly it manual, but you will need to have a perfect tuning for this. To improve aerodynamics and handling this design is not very forgiving to rookie mistakes or poor setup. Take your time to double check all is OK before going airborne.
 9. Our best results battery wise, were with a ZOHD 4S2P 18650 7000mAh and that’s what we recommend. Having said that, if you’re a PRO, you will know what to do ;)
 
-## fvp camera
+## fpv camera
 ### opto bl 30A
 - 1. Specification
 
