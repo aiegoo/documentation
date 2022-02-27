@@ -2931,14 +2931,14 @@ https://ardupilot.github.io/MAVProxy/html/index.html
 How to connect MAVProxy to Drone?
 
 Using the IP Protocol to connect MAVProxy with the drone:
-	The drone will offer an open port that a GCS can connect to. 
+	The drone will offer an open port that a GCS can connect to.
 	For SITL drone, the port is tcp:127.0.0.1:5760
 
 	Remember, this is the DRONE SIDE port that the GCS connects to.
 
 	To connect MAVProxy to the drone's 5760 port:
-	
-***	mavproxy.py --master tcp:127.0.0.1:5760 
+
+***	mavproxy.py --master tcp:127.0.0.1:5760
 
 	This will establish a connection with the drone and launch a MAVProxy
 	terminal, where you can interact with the drone.
