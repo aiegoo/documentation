@@ -106,7 +106,8 @@ Trailing edge flaps are one of two devices used to extract additional lift from 
 Ailerons are used to provide roll control and do so by generating a large rolling moment through asymmetrical deflection. The figure below demonstrates a roll to the left. The aileron on the right wing deflects downwards which produces additional upward lift on the right wing. The left aileron deflects upward which modifies the flow field, generating a downforce at the left wingtip. Together these deflections generate a rolling moment which forces the right wing up, and the left wing down.
 
 [link-above](https://aerotoolbox.com/wing-structure/)
-
+ [aerodynamicsEngineeringForStudents(https://github.com/aiegoo/uas-reference/blob/master/drone-dev/aeroEngineering.pdf)
+ 
 
 {% include taglogic.html %}
 
