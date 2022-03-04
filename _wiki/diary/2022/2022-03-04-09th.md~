@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Mar 4th paycheck arrived"
+name: "Friday-paycheck"
+tags: [projects]
+permalink: 2022-03-04-09th.html
+sidebar: other_sidebar
+folder: 2021
+collection: wiki
+categories: jdlab
+keywords: "paycheck joy-drone jdlab"
+summary: "Friday-paycheck, projects"
+excerpt_separator: <!--more-->
+toc: true
+public: true
+parent: [[Wiki-Setting-Category]] 
+date: 2022-03-04T18:29:52 +0900
+updated: 2022-03-04 18:29
+---
+* TOC
+{:toc}
+
+## 
+
+{% include taglogic.html %}
+
+{% include links.html %}
+
+{% include commento.html %}
+
+{{site.data.alerts.hr_shaded}}
