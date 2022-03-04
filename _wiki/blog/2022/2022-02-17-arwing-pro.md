@@ -35,6 +35,7 @@ youtubueID4: hGxbYiV6TEA
 
 [somic-modell](https://www.sonicmodell.net/) for gallery and other information.
 
+or [others](https://usa.banggood.com/Sonicmodell-AR-Wing-Pro-1000mm-Wingspan-EPP-FPV-Flying-Wing-RC-Airplane-KIT-or-PNP-p-1756841.html?cur_warehouse=CN&ID=531466)
 ### manual, assembly guide and tips
 [arwing-pro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-pro.pdf)
 
@@ -281,8 +282,7 @@ The system comes with a MZ-FM 35 MHz installed. The TM-14 2.4 GHz module should 
 Note that earlier 12FG transmitters will need a firmware upgrade in order to work with the TM-14. Also, transmitters are region-coded, so for example a UK supplied transmitter won't work with a US module. This may be an issue if you intend to use this radio abroad.
 
 PCM-G3 (narrowband PCM)
-Futaba’s latest PCM-G3 modulation provides several benefits compared with the older PCM-1024. The new protocol supports 14-channels, 2048-step resolution and channel grouping. Futaba claim that it offers a faster response.
-
+Futaba’s latest PCM-G3 modulation providhttps://usa.banggood.com/Sonicmodell-AR-Wing-Pro-1000mm-Wingspan-EPP-FPV-Flying-Wing-RC-Airplane-KIT-or-PNP-p-1756841.html?cur_warehouse=CN&ID=531466
 PCM-G3 provides programmable failsafe of servo positions in the event of signal loss. There is also a separate battery fail safe.
 ![image](https://user-images.githubusercontent.com/42961200/154409426-538a8f86-32d5-4cc2-b860-e4984760f56c.png)
 
@@ -310,18 +310,14 @@ There are six digital trims. They have a positive action, with each step accompa
 
 The remaining controls comprise a pair of rotary knobs and eight switches. All switches are three-position types, except for the rear shoulder switches, which are two-position. All switches are of excellent quality with a silky feel and minimal lateral play.
 
-![image](https://user-images.githubusercontent.com/42961200/154409471-fa9ca7ce-6504-4837-a005-b28f19aae75a.png)
-
-
-Controls have two-character identifiers e.g. 'T1' for trim 1, 'LS' for left slider, etc. As we'll see later, all have freely assignable functions.
+![image](https://user-images.githubusercohttps://usa.banggood.com/Sonicmodell-AR-Wing-Pro-1000mm-Wingspan-EPP-FPV-Flying-Wing-RC-Airplane-KIT-or-PNP-p-1756841.html?cur_warehouse=CN&ID=531466e.g. 'T1' for trim 1, 'LS' for left slider, etc. As we'll see later, all have freely assignable functions.
 
 At the back is the compartment for the battery and SD card, as well as sockets for a charger and DSC/trainer cable.
 
 Removing the back of the case reveals a beautifully neat assembly. The electronics are mainly confined to a single motherboard that is dominated by a huge 120-pin custom chip. All in all a remarkably low component count for such a capable system. Of course this also means there's less to go wrong!
 
 The overall impression is of a very well engineered, high-quality unit. Inevitably though, squeezing so much functionality into a small box has led to one or two compromises that may be noticed especially by those coming from a Euro style box. The transmitter feels a little too 'busy', and I'd have liked unused switches to be removable as on the 12Z and 14MZ. Finally, little concession has been made to the needs of the thumb-and-forefinger style flyer, except via the rather limited stick length adjustment.
-
-Nevertheless, bearing in mind the small size of the transmitter, Futaba have struck a reasonable compromise with the ergonomics.
+https://usa.banggood.com/Sonicmodell-AR-Wing-Pro-1000mm-Wingspan-EPP-FPV-Flying-Wing-RC-Airplane-KIT-or-PNP-p-1756841.html?cur_warehouse=CN&ID=531466 Futaba have struck a reasonable compromise with the ergonomics.
 
 Battery and Charging
 Lifting the hinged battery cover reveals a 6-cell NiMH pack. Capacity is 1700 mAh, and based on the published current consumption of 500 mA the maximum safe duration should be around 2.5 to 3 hours. This may be a little borderline for some applications, and no doubt some users will wish to replace the pack with higher capacity cells. An audible alarm sounds when the battery voltage falls to 6.8 volts.

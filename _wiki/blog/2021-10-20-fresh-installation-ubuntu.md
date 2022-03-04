@@ -50,7 +50,7 @@ export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 
 - to try out, run `brew install hello`
 
-- kakaotalk sh
+- kakaotalk sh - to show how it works with Kerlym
 
 ```bash
 sudo apt install wine-stable
@@ -60,7 +60,7 @@ chmod 777 winetricks
 sudo apt-get install cabextract
 ./winetricks
 
-# 1. Select the default wineprefix 체크(Checked)
+# 1. Select the default wineprefix 체크(Checked
 # 2. Install a Windows DLL or component 체크(Checked)
 # 3. gdiplus, msxml6, riched30, wmp9 체크(Checked / 거꾸로 찾으시면 금방 찾습니다) 
 
