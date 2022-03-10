@@ -149,7 +149,7 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 
 ![image](https://user-images.githubusercontent.com/42961200/155606619-750f6b3f-375f-419d-bb9f-e28d5fc46f1b.png)
 
-### Aomway TX001 Switchable 25mW/200mW/600mW 5.8G 40CH FPV Transmitter
+### Aomway TX001 Switchable 25mW/200mW/600##mW 5.8G 40CH FPV Transmitter
 Adjustable Power: 25mW/200mW/600mW
 5.8G 40CH Tranmitter with Raceband
 2 kinds of connector, the extend cord is 50mm long
@@ -182,7 +182,7 @@ Indicator LED to show the frequency and power
 [guide](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_guide.pdf)
 
 [manual](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_manual.pdf)
-
+##
 
 ![image](https://user-images.githubusercontent.com/42961200/154386986-e7e3b0c3-c3c5-41d0-a60e-f6d25760f711.png)
 
@@ -212,7 +212,7 @@ Indicator LED to show the frequency and power
 - Voice function
 - Vibration reminder function
 - Improved JR module slot
-- 6-Flight Mode Buttons (Pixhawk, custom functions and more!)
+- 6-Flight Mode Buttons (Pixhawk, custom fu##nctions and more!)
 - Three-color LED status display
 - USB-C Charging port.
 - USB-C Simulator and PC connection port.
@@ -294,7 +294,7 @@ The Transmitter
 First impressions were most favourable, starting with the smart black and silver mouldings. At just over 1 kg the box is nicely weighted without being heavy and it also feels comfortable to hold, thanks to the use of rubber mouldings and textured surfaces.
 
 The aerial is just over a meter in length and screws into a smart chromed ball-joint. The angle is adjustable using an Allen key, and when not in use the aerial can be stored in a recess near the bottom of the case.
-
+##
 A good compromise has been struck with the balance. With the aerial extended, there is a slight tendency for the top to tip down, while the opposite is the case when the aerial is removed for 2.4 GHz operation. Either way, balance is acceptable.
 
 The lower part of the facia is dominated by the LCD display. Unfortunately, while its large size is commendable, the contrast is rather poor. No amount of tweaking the contrast menu helped, and when working indoors I often found myself wishing for a backlight.
@@ -316,7 +316,7 @@ At the back is the compartment for the battery and SD card, as well as sockets f
 
 Removing the back of the case reveals a beautifully neat assembly. The electronics are mainly confined to a single motherboard that is dominated by a huge 120-pin custom chip. All in all a remarkably low component count for such a capable system. Of course this also means there's less to go wrong!
 
-The overall impression is of a very well engineered, high-quality unit. Inevitably though, squeezing so much functionality into a small box has led to one or two compromises that may be noticed especially by those coming from a Euro style box. The transmitter feels a little too 'busy', and I'd have liked unused switches to be removable as on the 12Z and 14MZ. Finally, little concession has been made to the needs of the thumb-and-forefinger style flyer, except via the rather limited stick length adjustment.
+The overall impression is of a very well engineered, high-quality unit. Inevitably though, squeezing so much functionality into a small box has led to one or two compromises that may be noticed especially by those coming from a Euro style box. The transmitter feels a little too 'busy', and I'd have liked unused switches to be removable as on the 12Z and 14MZ. Finally, little concession has been made to the needs of the thumb-and-forefinger style flyer, except via the rather limited stick length adjustment.##
 https://usa.banggood.com/Sonicmodell-AR-Wing-Pro-1000mm-Wingspan-EPP-FPV-Flying-Wing-RC-Airplane-KIT-or-PNP-p-1756841.html?cur_warehouse=CN&ID=531466 Futaba have struck a reasonable compromise with the ergonomics.
 
 Battery and Charging
@@ -421,7 +421,7 @@ Conclusion
 As a confirmed Multiplex user, I have to admit to having a healthy dose of scepticism when faced with the Futaba 12FG. Yet the more I got to know it, the more reluctant I was to give it back. It's a superbly flexible piece of kit, both in terms of programming and in the RF options available. It's accurate, responsive and should be well up to the task of controlling the most complex of models. The sticks are excellent too.
 
 I did have one or two reservations though. It has to be said that the user manual doesn't cut the mustard for such a complex piece of kit, although there are various Internet forums available to get help if needed. Also the LCD is crying for a backlight. Finally, the duration on a full charge can only be described as average.
-
+##
 Nevertheless, these reservations should be kept in context, as the 12FG is a very fine radio. It's much closer to the 14MZ than that the large price differential would suggest – think of it as a 14MZ, without the twin processors or touch screen, and a few features removed. And just like the 14MZ it offers a viable route into 2.4 GHz.
 
 £775 may seem a lot to pay for a radio. However, if you're looking for a top end system with all-round flexibility, and you can afford the price tag, the Futaba 12FG deserves a place near the top of your shortlist.
@@ -460,6 +460,7 @@ I'd also get some Scotch filament tape to protect the leading edges of the wings
 .. warning:: This autopilot is not recommended because some versions of the board are not compatible with the official ArduPilot software despite multiple efforts to work with the manufacturer to make them compatible. The manufacturer is also apparently not abiding by the GPLv3 license which requires releasing the modified source code to its customers.  "V1.0" and "V1.2" probably work, "V1.0 II" and "V1.1" definitely do not work.
 
 
+![image](https://user-images.githubusercontent.com/42961200/157608739-040f8665-ec25-456f-ad73-d62d822d3408.png)
 
 
 .. image:: ../../../images/minipix1.jpg
@@ -500,6 +501,8 @@ I'd also get some Scotch filament tape to protect the leading edges of the wings
 - Peripheral Connections
 ======================
 
+![image](https://user-images.githubusercontent.com/42961200/157608799-9bf5faff-e9ce-4544-b3e8-0a342f8c60c5.png)
+
 .. image:: ../../../images/minipix_periphs.jpg
     :target: ../_images/minipix_periphs.jpg
     
@@ -518,9 +521,11 @@ Serial protocols can be adjusted to personal preferences.
 ### Firmware handling
 =================
 
-This hardware comes preflashed with a RadioLink-branded version of ArduCopter and an ArduPilot-compatible bootloader. To use non-branded ChibiOS-based ArduPilot firmware versions, download the required vehicle firmware .apj file from https://firmware.ardupilot.org/ and flash your board using MissionPlanner's "custom firmware" option.
+This hardware comes preflashed with a RadioLink-branded version of ArduCopter and an ArduPilot-compatible bootloader. To use non-branded ChibiOS-based ArduPilot firmware versions, download the required vehicle firmware .apj file from https://firmware.ardupilot.org/ an##d flash your board using MissionPlanner's "custom firmware" option.
 
 In case a bootloader re-installation is required, you can boot your board to DFU-mode using the following solder-points:
+
+![image](https://user-images.githubusercontent.com/42961200/157608851-6c6a5455-36c0-4888-8061-ec1c46658a13.png)
 
 .. image:: ../../../images/minipix_dfu.jpg
     :target: ../_images/minipix_dfu.jpg
@@ -536,7 +541,7 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
     MiniPix voltage and current sensing pins use Pixhawk standard ( :ref:`BATT_VOLT_PIN<BATT_VOLT_PIN>` = 2, :ref:`BATT_CURR_PIN<BATT_CURR_PIN>` = 3).
     The additional ADC pin can be used for either RSSI or analog airspeed. Set required option to PIN = 11.
 
-
+##
 {% include youtubePlayer.html id=page.youtubeID %}
 
 {% include taglogic.html %}
