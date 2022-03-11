@@ -31,7 +31,7 @@ updated: 2022-02-17 17:43
 ![image](https://user-images.githubusercontent.com/42961200/154442070-0c9225e8-8628-4946-803d-e323585dcde9.png)
 
 ## live stream
-> id: tonylee@joy-drone.com pw: xxxx5566
+> id: tonylee@joy-drone.com pw: xxxx5566  to sign in to the dashboard user the title address and admin creds are jdlab
 
 {% include taglogic.html %}
 
