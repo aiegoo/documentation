@@ -208,6 +208,7 @@ Check out this awesome short documentary on ROS that Bloomberg published recentl
 
 History
 Before diving deeper, let’s take a brief tour of the history of ROS.
+![image](https://user-images.githubusercontent.com/42961200/158000571-81cc8bac-a286-48e0-b52b-ca6678020a17.png)
 
 ### tutlesim
 More on the history of Turtles in Robotics
