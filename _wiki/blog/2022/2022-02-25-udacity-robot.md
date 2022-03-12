@@ -181,6 +181,7 @@ $ gazebo my_world
 Building a robot used to be a long and cumbersome process. Essentially all of the components had to be built from scratch.
 
 In this lesson, we’ll introduce the Robot Operating System, or “ROS”, which is a software framework that greatly simplifies robot development. There are many advantages to developing robots with ROS. Let’s start by illustrating some of its components and features.
+![image](https://user-images.githubusercontent.com/42961200/157998700-d3e2c730-56c3-426d-b14f-0043f36d2f3e.png)
 
 - Components and Features
 ROS is an open-source software framework for robotics development. It is not an operating system in the typical sense. But like an OS, it provides a means of communicating with hardware. It also provides a way for different processes to communicate with one another via message passing. Lastly, ROS features a slick build and package management system called catkin, allowing you to develop and deploy software with ease. ROS also has tools for visualization, simulation, and analysis, as well as extensive community support and interfaces to numerous powerful software libraries.
