@@ -209,6 +209,26 @@ Check out this awesome short documentary on ROS that Bloomberg published recentl
 History
 Before diving deeper, let’s take a brief tour of the history of ROS.
 
+### tutlesim
+More on the history of Turtles in Robotics
+As we mentioned in the video, William Grey Walter's influence is still felt today. He referred to his robots as 'turtles' and, as you will see, the moniker stuck.
+
+The image below is William Walter's Elsie (the robot mentioned in the video) without her protective covering.
+
+
+![image](https://user-images.githubusercontent.com/42961200/157999885-d54d0175-bc04-47ac-86b8-09cd190cc2e5.png)
+Long after William Walter’s work with Elmer and Elsie, Dr. Seymour Papert, a professor at MIT, began to use turtle robots for education. One of the characteristics of Papert's robots was their ability to draw on paper.
+
+In addition to being involved with the creation and development of MIT’s turtle robots, Dr. Papert is also known as the creator and evangelist for the educational programming language LOGO.
+
+Despite being a general-purpose language, LOGO is known for its use of “turtle graphics”, a system that allows users to draw by sending simple commands to a robotic turtle. The robotic turtle mentioned here could be either a real turtle robot, or a virtual on-screen cursor within the LOGO programming environment.
+
+The image below shows an example of Valiant Technology’s Turtle robot drawing on a sheet of paper.
+
+![image](https://user-images.githubusercontent.com/42961200/157999915-ee61a5a5-a436-40e3-8cff-55db587a97e1.png)
+
+![image](https://user-images.githubusercontent.com/42961200/157999937-452cde4a-babf-431d-a185-bcdcd16cdb66.png)
+
 
 {% include taglogic.html %}
 
