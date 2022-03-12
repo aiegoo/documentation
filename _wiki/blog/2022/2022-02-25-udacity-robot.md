@@ -19,6 +19,10 @@ date: 2022-02-25T12:14:34 +0900
 updated: 2022-02-25 12:14
 youtubeID: tZPgjFSu1Jk
 youtubeID2: DiD13auPObw
+youtubeID3: CUdc3CACoyg
+youtubeID4: tCo-jEAcAtc
+youtuebID5: urpcfbmJwO0
+youtubeID6: urpcfbmJwO0
 ---
 * TOC
 {:toc}
@@ -241,6 +245,17 @@ Make sure you use the bash command source rather than ./. There’s a subtle dis
 
 Automatically Configuring the Environment
 Setting up the ROS environment every time you open a new terminal window can be painful and tedious. To avoid the tedium, we can simply add the command to source the workspace to our ~/.bashrc file. This will cause our environment to be sourced any time a new terminal session is created. Fortunately, this command has been already added for you.
+
+- environment setup
+{% include youtubePlayer.html id=page.youtubeID3 %}
+
+- run tutlesim
+
+{% include youtubePlayer.html id=page.youtubeID4 %}
+
+- run commands
+
+{% include youtubePlayer.html id=page.youtubeID5 %}
 
 ![image](https://user-images.githubusercontent.com/42961200/158000765-b3a84bec-c116-45b4-9b42-1f315b88e8b4.png)
 
