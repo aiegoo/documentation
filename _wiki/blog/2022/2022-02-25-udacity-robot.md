@@ -244,6 +244,9 @@ Setting up the ROS environment every time you open a new terminal window can be 
 
 ![image](https://user-images.githubusercontent.com/42961200/158000765-b3a84bec-c116-45b4-9b42-1f315b88e8b4.png)
 
+![image](https://user-images.githubusercontent.com/42961200/158001898-93b7787f-fab6-49cf-8e3b-50fe1586079c.png)
+
+![image](https://user-images.githubusercontent.com/42961200/158001905-f0c38824-ecaf-4ff9-ad2d-a74816bc1ebc.png)
 
 
 {% include taglogic.html %}
