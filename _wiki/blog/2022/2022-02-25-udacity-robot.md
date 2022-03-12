@@ -231,6 +231,21 @@ The image below shows an example of Valiant Technology’s Turtle robot drawing 
 ![image](https://user-images.githubusercontent.com/42961200/157999937-452cde4a-babf-431d-a185-bcdcd16cdb66.png)
 
 
+### project setup
+Environment Setup
+Before we begin using ROS in a terminal, we must first ensure that all of the environment variables are present. To do this, we must source the setup script provided by ROS
+
+
+Caveat
+Make sure you use the bash command source rather than ./. There’s a subtle distinction between the two commands, in that source executes the script in the current session, while ./ will start a new session, containing a copy of the current environment. When a script executed via ./ is exited, all environment variables set by it will be lost. We don’t want this. For more information on environment variables and terminal sessions, please see here.
+
+Automatically Configuring the Environment
+Setting up the ROS environment every time you open a new terminal window can be painful and tedious. To avoid the tedium, we can simply add the command to source the workspace to our ~/.bashrc file. This will cause our environment to be sourced any time a new terminal session is created. Fortunately, this command has been already added for you.
+
+![image](https://user-images.githubusercontent.com/42961200/158000765-b3a84bec-c116-45b4-9b42-1f315b88e8b4.png)
+
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
