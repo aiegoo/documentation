@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: jdlab
-keywords: "gcs jdlab brainstorm sketch"
+keywords: "gcs jdlab brainstorm sketch tlog missionplanner"
 summary: "Mon, Feb 21, 22, pool resources and ideas into one single gcs you can develop"
 excerpt_separator: <!--more-->
 toc: true
@@ -333,6 +333,8 @@ Parameter | Description
 <span id="FW_LND_FL_PMIN"></span>[FW_LND_FL_PMIN](../advanced_config/parameter_reference.md#FW_LND_FL_PMIN) | Minimum pitch during flare. A positive sign means nose up Applied once `FW_LND_TLALT` is reached
 <span id="FW_LND_FL_PMAX"></span>[FW_LND_FL_PMAX](../advanced_config/parameter_reference.md#FW_LND_FL_PMAX) | Maximum pitch during flare. A positive sign means nose up Applied once `FW_LND_TLALT` is reached
 <span id="FW_LND_AIRSPD_SC"></span>[FW_LND_AIRSPD_SC](../advanced_config/parameter_reference.md#FW_LND_AIRSPD_SC) | Min. airspeed scaling factor for landing. Comment: Multiplying this factor with the minimum airspeed of the plane gives the target airspeed the landing approach. `FW_AIRSPD_MIN x FW_LND_AIRSPD_SC`
+
+[Tlog](https://ardupilot.org/planner/docs/common-mission-planner-telemetry-logs.html)
 
 ## sensor-selection
 # Sensors
