@@ -582,7 +582,32 @@ network={
     psk="yourpassword"
 }
 
+sudo apt update
+sudo apt upgrade
+sudo apt install python-pip
+sudo apt install python-dev
+sudo apt install future
+sudo apt install screen python-wxgtk4.0 python-lxml
+sudo apt install pyserial
+sudo apt install dronekit
+sudo apt install MAVProxy
+
 ```
+- set up RPI for UART communications
+  raspi-config then disable UART for console, enable it for serial prt hardware
+  Go into /boot/config.txt and add "dtoverlay=disalbe-bt"
+  If ttyAMA0 isn't in /dev, enable_uart=1 in /boot/config
+
+```bash
+mavproxy.py --master=/dev/ttyAMA0
+
+>Stabilize mode GUIDED
+GUIDED> APM: PreArm: Hartware safety swithc 
+
+
+```
+
+
 {% include youtubePlayer.html id=page.youtubeID6 %}
 
 {% include taglogic.html %}
