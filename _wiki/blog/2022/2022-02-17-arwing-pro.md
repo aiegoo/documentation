@@ -568,6 +568,21 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
 
 ## raspi connection
 
+- to make a network connection without a need to set up
+
+edit the wpa_supplicant.conf file
+```yaml
+
+country=US
+ctrl_interface-DIR=/va/run/wap_supplicant GROUP=sudo
+update_config=1
+
+network={
+    ssid="aiegoo"
+    psk="yourpassword"
+}
+
+```
 {% include youtubePlayer.html id=page.youtubeID6 %}
 
 {% include taglogic.html %}
