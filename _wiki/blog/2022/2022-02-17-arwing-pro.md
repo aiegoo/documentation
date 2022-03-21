@@ -152,7 +152,8 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 
 ![image](https://user-images.githubusercontent.com/42961200/155606619-750f6b3f-375f-419d-bb9f-e28d5fc46f1b.png)
 
-### Aomway TX001 Switchable 25mW/200mW/600##mW 5.8G 40CH FPV Transmitter
+### Aomway TX001 
+Switchable 25mW/200mW/600##mW 5.8G 40CH FPV Transmitter
 Adjustable Power: 25mW/200mW/600mW
 5.8G 40CH Tranmitter with Raceband
 2 kinds of connector, the extend cord is 50mm long
