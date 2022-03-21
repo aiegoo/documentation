@@ -549,6 +549,43 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
 {% include youtubePlayer.html id=page.youtubeID5 %}
 {% include youtubePlayer.html id=page.youtubeID %}
 
+![image](https://user-images.githubusercontent.com/42961200/159233354-b329ee02-35b1-4ff4-989a-e87cee639104.png)
+The battery is connected to the power module’s male connector. The ESC or Power Distribution Board should be connected to the power module’s female connector.
+
+Configuration
+Most ground stations provide a battery monitor interface but the parameters can also be set manually:
+
+BATT_MONITOR = 3 to measure only voltage or 4 to measure both voltage and current (you will need to reboot the board after changing this)
+BATT_VOLT_PIN = 2. The autopilot pin connected to the power module’s voltage pin
+BATT_VOLT_MULT converts the analog voltage received from the power module’s voltage pin to the battery’s voltage
+BATT_CURR_PIN = 3. The autopilot pin connected to the power module’s current pin
+BATT_AMP_PERVLT converts the analog voltage received from the power module’s current pin to the battery’s current
+BATT_AMP_OFFSET voltage offset received from the power module’s current pin when ther is no current being pulled from the battery
+Instructions for setup and calibration using the Mission Planner can be found here A Blog post with instructions for set-up using QGC can be found here
+![image](https://user-images.githubusercontent.com/42961200/159233546-a05e66bc-210f-4f82-8ed3-90e8bd07b2e7.png)
+Enable voltage and current sensing
+Enter the properties your monitor can measure, the type of monitor, the type of autopilot, and the battery capacity:
+
+Monitor: Voltage and Current or Battery Volts
+Sensor: Supported power module, or “Other”
+APM ver: Autopilot (e.g. Pixhawk )
+Battery Capacity: Battery capacity in mAh
+The Sensor selection list offers a number of analog Power Modules (including popular models from 3DR and AttoPilot) which you can select to automatically configure your module. If your PM is not on the list then you can select Other, enter its recommended values, or perform a manual calibration as described below.
+
+- using [QGC](https://discuss.ardupilot.org/t/power-monitor-setup-on-ardupilot-copter-3-6/35441)
+
+![image](https://user-images.githubusercontent.com/42961200/159233819-048025c4-208f-4d3f-ac3e-699f3fcd9d22.png)
+![image](https://user-images.githubusercontent.com/42961200/159233888-c6dfee62-4c6a-4ede-a328-bd939b811d56.png)
+![image](https://user-images.githubusercontent.com/42961200/159233903-f51b040c-51eb-45f5-a33f-e7c95790a616.png)
+
+On this case I’m setting up with a 16000 mAh 12S battery, so the Minimum Arming Voltage value set to 3.5V per cell and connected to the Port 1 on a CUAV V5 board that has 2 power inputs.
+![image](https://user-images.githubusercontent.com/42961200/159234042-c173dcd5-1fb1-48da-8522-4ca8e8d0c5a8.png)
+
+The values from the Voltage Multiplier and Amps per Volt are supplied by the manufacturer of the Mauch Power Module 46 otherwise you’ll have to determine that manually.
+
+Now that we’ve set how ArduPilot monitors the power condition, let’s move to the Safety tab on QGC and set the battery failsafes. Please note that we can only set the Battery Failsafe triggers for the Battery 1, because we haven’t the battery 2 enabled (yet)
+
+
 ![oveerall-setup](https://user-images.githubusercontent.com/42961200/159210143-f1df09a0-c682-4123-a3e5-7c4e1e4a342a.png)
 
 - how to connect
