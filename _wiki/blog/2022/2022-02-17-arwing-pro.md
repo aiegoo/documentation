@@ -22,7 +22,9 @@ youtubeID2: 1zasW_lr6Dg
 youtubeID3: hGxbYiV6TEA
 youtubueID4: hGxbYiV6TEA
 youtubeID5: g_NiBM50w8o
+youtubeID6: kB9YyG2V-nA
 ---
+
 * TOC
 {:toc}
 
@@ -544,7 +546,7 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
 
 ## pdb bee rotor
 
-{% include youtubePlayer.html id=page.youtubeID 5 %}
+{% include youtubePlayer.html id=page.youtubeID5 %}
 {% include youtubePlayer.html id=page.youtubeID %}
 
 ![oveerall-setup](https://user-images.githubusercontent.com/42961200/159210143-f1df09a0-c682-4123-a3e5-7c4e1e4a342a.png)
@@ -563,6 +565,10 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
 ![image](https://user-images.githubusercontent.com/42961200/159212129-6f92cc0e-8940-4e7a-adcd-6b898063e09c.png)
 
 [arwing_beerotor](https://drive.google.com/file/d/18V-SCoSGR1Vf4vjJNxXyvgW8yvq37KUU/view?usp=sharing)
+
+## raspi connection
+
+{% include youtubePlayer.html id=page.youtubeID6 %}
 
 {% include taglogic.html %}
 
