@@ -602,6 +602,10 @@ Now that we’ve set how ArduPilot monitors the power condition, let’s move to
 
 ![image](https://user-images.githubusercontent.com/42961200/159212129-6f92cc0e-8940-4e7a-adcd-6b898063e09c.png)
 
+- summary screen
+![image](https://user-images.githubusercontent.com/42961200/159236456-228cc0d1-d06e-4ddb-ab82-bb6ac34338db.png)
+
+
 [arwing_beerotor](https://drive.google.com/file/d/18V-SCoSGR1Vf4vjJNxXyvgW8yvq37KUU/view?usp=sharing)
 
 ## antenna
