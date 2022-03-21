@@ -601,7 +601,8 @@ Includes:
 AOMWAY ANT007b 5.8GHz Panel Antenna 
 
 ## setup overview
-![px4_wiring_chart]()
+![px4_wiring_chart](https://user-images.githubusercontent.com/42961200/159232933-02a07c44-0b78-4264-b475-dd4a5a865f83.png)
+
 ## raspi connection
 
 - to make a network connection without a need to set up
