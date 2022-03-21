@@ -547,6 +547,9 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
 {% include youtubePlayer.html id=page.youtubeID 5 %}
 {% include youtubePlayer.html id=page.youtubeID %}
 
+![oveerall-setup](https://user-images.githubusercontent.com/42961200/159210143-f1df09a0-c682-4123-a3e5-7c4e1e4a342a.png)
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
