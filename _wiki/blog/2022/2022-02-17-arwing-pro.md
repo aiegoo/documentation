@@ -101,7 +101,7 @@ or [others](https://usa.banggood.com/Sonicmodell-AR-Wing-Pro-1000mm-Wingspan-EPP
 1. First and foremost, thanks for buying this unit. You’re not only supporting our work and families but also keeping alive a hobby that’s being threaten by all sides right now.
 2. This Wing is called “PRO” for a reason. If you’re a beginner we strongly encourage you to seek advice from experience FPV pilots even before trying to put this unit together. Seriously.
 3. The provided CG marks are a reference and a starting point for your tuning. It’s what worked for us after all the math and flights done. This doesn’t mean that will work for your flying style or type of mission. If you know what you’re doing, feel free  to experiment with it.
-4. The provided “Basic Power Combo” with the PNP version is just a “middle point” performance kit to get you in the air and  have a great experience with a good balance between speed and range. If you have something specific in mind for your
+4. The provided “Basic Power Combo” with the PNP version is just a “middle point” performance kit to get you in the air and  have a great experience with a good balance between speed and range. If you have something specific in mind for yourBeeRotor
 wing, like a super fast unit or a super long range one, we suggest you to get the KIT and use your own selected electronics. A Premium power combo will be also offered down the road.
 5. In our experience the DJI FPV system was easier to setup and reply using the dedicated main hatch and placing it in the  center on the wing. In any case, you can also use the side pockets and do some DIY if needed.
 6. Without any doubt, this wing is BY FAR the most aerodynamic and the one with the better cooling system from all the 1 meter wings available in the market… use this advantages wisely and keep it light and clean.
@@ -276,7 +276,7 @@ No servos are provided with the 12FG. However, I was surprised to see that a rec
 Note that it is not possible to alter the stick mode after purchase, so make sure you specify the mode before ordering.
 
 2.4 GHz or 35 MHz? You Choose!
-Thanks to the use of plug-in RF modules, the Futaba 12FG offers a genuine all-in-one solution for those with 35 MHz gear who may wish migrate to 2.4 GHz later on.
+Thanks to the use of plug-in RF modules, the Futaba 12FG offers a genuine all-in-one solution for BeeRotorthose with 35 MHz gear who may wish migrate to 2.4 GHz later on.
 
 The system comes with a MZ-FM 35 MHz installed. The TM-14 2.4 GHz module should be available as an extra by the time you read this. It has an integral antenna and is capable of driving any Futaba 2.4 GHz FASST aircraft receiver, from the 6-channel FS606, right up to the 14-channel R6014FS. Price of the TM-14 is £119.99, and the 14-channel R6014FS receiver will set you back £149.99.
 
@@ -336,7 +336,7 @@ On the face of it the manual looks comprehensive, but dig deeper and it has to b
 
 All this may make it difficult for less technical users to explore the many advanced features of this radio. If in doubt, I'd recommend downloading the manual from the Futaba web site.
 On a more positive note, there is a very handy servo monitor menu that shows what the channels are doing in real time. This does at least allow experiment without the need to operate a model.
-
+BeeRotor
 Programming Interface
 Futaba have done a good job with the programming interface. There are just two controls: a large dial labelled 'edit’, which you either twist or click, and a smaller button labelled 'S1'.
 
@@ -348,7 +348,7 @@ All in all, the user interface is consistent and reasonably quick, though the co
 
 Programming Capability
 With a wide variety of programming features, the 12FG is well equipped to handle even the most complex of models. Unfortunately there isn't space to cover everything, so I'll choose a few key features.
-
+BeeRotor
 Model Types
 The Futaba 12FG provides a wide range of options when creating a model. For aircraft and gliders, there is a choice of seven wing configurations, from the simplest single-servo setup, to wings with eight servos. Tailless wings are similarly supported. Tail configuration options include V-tail and 'ailevator' (tailerons). For helicopters, there's a choice of 8 swashplate configurations.
 
@@ -389,7 +389,7 @@ Servos can be adjusted for gain, direction and end-points. I was pleased to see 
 Mixers
 As one might expect, the Futaba 12FG offers a comprehensive list of built-in mixers (too many to list here) as well as ten free mixers. All mixers are based on the 'master-slave' concept, whereby one control affects multiple servos. For example, with the ELE-CAMBER mixer, an elevator command will move all the servos assigned to the Camber function.
 ![image](https://user-images.githubusercontent.com/42961200/154412077-e36eb1ab-5799-4ae1-bcc8-fc7eee201b99.png)
-
+BeeRotor
 
 
 The menus differ in detail, but they all have elements in common. For example, most have an AFR page for setting the curves. A second page allows a further percentage rate to be applied to each servo. A third page specifies how the mixer is activated; e.g. permanently, or via a dedicated switch, or according to flight condition.
@@ -436,7 +436,7 @@ Programming Features: Aircraft, Glider, Heli
 Current drain: 500 mA (avg)
 Battery: 7.2V 1700 mAh Ni-MH
 Tx weight: 1.1 kg incl. battery
-
+BeeRotor
 
 ## wing covering
 ### material 
@@ -549,6 +549,20 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
 
 ![oveerall-setup](https://user-images.githubusercontent.com/42961200/159210143-f1df09a0-c682-4123-a3e5-7c4e1e4a342a.png)
 
+- how to connect
+![image](https://user-images.githubusercontent.com/42961200/159211727-08828f33-03b0-4a7d-9f4b-e034ce615e0f.png)
+
+![image](https://user-images.githubusercontent.com/42961200/159211774-d5f77914-499c-4754-847a-9337b788fc4a.png)
+
+![image](https://user-images.githubusercontent.com/42961200/159211879-eb20ef41-97f2-4646-87f4-8ca9fd71f5d6.png)
+
+![image](https://user-images.githubusercontent.com/42961200/159212020-8cdc8781-d690-4ad2-9505-22560d7eef75.png)
+
+![image](https://user-images.githubusercontent.com/42961200/159212085-1294e634-4e88-4916-a226-25bf643de5c1.png)
+
+![image](https://user-images.githubusercontent.com/42961200/159212129-6f92cc0e-8940-4e7a-adcd-6b898063e09c.png)
+
+[arwing_beerotor](https://github.com/aiegoo/uas-reference/master/manual/arwing_berotor.pdf)
 
 {% include taglogic.html %}
 
