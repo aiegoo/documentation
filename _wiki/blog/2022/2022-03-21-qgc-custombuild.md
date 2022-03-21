@@ -59,7 +59,8 @@ To build this sample custom version:
 * Run `python updateqrc.py`
 * Build QGC
 
-![Custom Build Screenshot]
+![Custom Build Screenshot](https://user-images.githubusercontent.com/42961200/159197627-dba38e56-06cd-404f-a8c2-4ed672677777.png)
+
 
 More details on what a custom build is and how to create your own can be found in the [QGC Dev Guide](https://dev.qgroundcontrol.com/en/custom_build/custom_build.html).
 
