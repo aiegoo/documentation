@@ -74,6 +74,50 @@ The main features of this example:
 * The source code is fully commented to explain what and why it is doing things.
 
 > Important Note: This custom build is not automatically built each time regular QGC code changes. This can mean that it may fall out of date with the latest changes in QGC code. This can show up as the `python updateqrc.py` steps failing due to upstream resource changes. Or possibly fail to compile because the plugin mechanism for custom builds has changed. If this happens please notify the QGC devs and they will bring it up to date. Or even better, submit a pull for the fix yourself!
+
+
+### Initial Repository Setup For Custom Build
+The suggested mechanism for working on QGC and a custom build version of QGC is to have two separate repositories. The first repo is your main QGC fork. The second repo is your custom build repo.
+
+Main QGC Respository
+This repo is used to work on changes to mainline QGC. When creating your own custom build it is not uncommon to discover that you may need a tweak/addition to the custom build to achieve what you want. By discussing those needed changes firsthand with QGC devs and submitting pulls to make the custom build architecture better you make QGC more powerful for everyone and give back to the community.
+
+The best way to create this repo is to fork the regular QGC repo to your own GitHub account.
+
+Custom Build Repository
+This is where you will do your main custom build development. All changes here should be within the custom directory as opposed to bleeding out into the regular QGC codebase.
+
+Since you can only fork a repo once, the way to create this repo is to "Create a new repository" in your GitHub account. Do not add any additional files to it like gitignore, readme's and so forth. Once it is created you will be given the option to setup up the Repo. Now you can select to "import code from another repository". Just import the regular QGC repo using the "Import Code" button.
+
+
+### Custom Build Plugins
+The mechanisms for customizing QGC for a custom build is through the existing FirmwarePlugin, AutoPilotPlugin and QGCCorePlugin architectures. By creating subclasses of these plugins in your custom build you can change the behavior of QGC to suit your needs without needed to modify the upstream code.
+
+QGCCorePlugin
+This allows you to modify the parts of QGC which are not directly related to vehicle but are related to the QGC application itself. This includes things like application settings, color palettes, branding and so forth.
+
+### Resource Overrides
+A "resource" in QGC source code terminology is anything found in the qgroundcontrol.qrc and qgcresources.qrc file. By overriding a resource you can replace it with your own version of it. This could be as simple as a single icon, or as complex as replacing an entire Vehicle Setup page of qml ui code.
+
+Be aware that using resource overrides does not isolate you from upstream QGC changes like the plugin architecture does. In a sense you are directly modify the upstream QGC resources used by the main code.
+
+Exclusion Files
+The first step to overriding a resource is to "exclude" it from the standard portion of the upstream build. This means that you are going to provide that resource in your own custom build resource file(s). There are two files which achieve this: qgroundcontrol.exclusion and qgcresources.exclusion. They correspond directly with the *.qrc counterparts. In order to exclude a resource, copy the resource line from the .qrc file into the appropriate .exclusion file.
+
+Custom version of excluded resources
+You must include the custom version of the overriden resouce in you custom build resource file. The resource alias must exactly match the upstream alias. The name and actual location of the resource can be anywhere within your custom directory structure.
+
+Generating the new modified versions of standard QGC resource file
+This is done using the updateqrc.py python script. It will read the upstream qgroundcontrol.qrc and qgcresources.qrc file and the corresponding exclusion files and output new versions of these files in your custom directory. These new versions will not have the resources you specified to exclude in them. The build system for custom builds uses these generated files (if they exist) to build with instead of the upstream versions. The generated version of these file should be added to your repo. Also whenever you update the upstream portion of QGC in your custom repo you must re-run python updateqrc.py to generate new version of the files since the upstream resources may have changed.
+
+Custom Build Example
+You can see an examples of custom build qgcresource overrides in the repo custom build example:
+
+[qgcresources.qrc](https://github.com/mavlink/qgroundcontrol/blob/master/custom-example/qgcresources.exclusion)
+[custom.qrc](https://github.com/mavlink/qgroundcontrol/blob/master/custom-example/custom.qrc)
+
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
