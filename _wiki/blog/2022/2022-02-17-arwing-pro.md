@@ -562,7 +562,7 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
 
 ![image](https://user-images.githubusercontent.com/42961200/159212129-6f92cc0e-8940-4e7a-adcd-6b898063e09c.png)
 
-[arwing_beerotor](https://github.com/aiegoo/uas-reference/master/manual/arwing_berotor.pdf)
+[arwing_beerotor](https://drive.google.com/file/d/18V-SCoSGR1Vf4vjJNxXyvgW8yvq37KUU/view?usp=sharing)
 
 {% include taglogic.html %}
 
