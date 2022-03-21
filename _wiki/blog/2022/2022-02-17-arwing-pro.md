@@ -544,7 +544,7 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
     MiniPix voltage and current sensing pins use Pixhawk standard ( :ref:`BATT_VOLT_PIN<BATT_VOLT_PIN>` = 2, :ref:`BATT_CURR_PIN<BATT_CURR_PIN>` = 3).
     The additional ADC pin can be used for either RSSI or analog airspeed. Set required option to PIN = 11.
 
-## pdb bee rotor
+## pdb bee rotor pdb
 
 {% include youtubePlayer.html id=page.youtubeID5 %}
 {% include youtubePlayer.html id=page.youtubeID %}
@@ -566,6 +566,42 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
 
 [arwing_beerotor](https://drive.google.com/file/d/18V-SCoSGR1Vf4vjJNxXyvgW8yvq37KUU/view?usp=sharing)
 
+## antenna
+[pagoda]()
+
+The Quanum Pagoda-2 omnidirectional antenna was designed by Maarten Baert who wanted some key features to be incorporated into his design, these were as follows;
+
+
+• Good omnidirectional radiation pattern
+• Good axial ratio
+• Compact dimensions
+• Easy to manufacture and at low cost
+
+
+He succeeded in his goal in designing an antenna with these attrubutes. The Quanum Pagoda-2 antenna is built using regular PCB's spaced at exact intervals with the final design taking months of fine tuning. The Quanum Pagoda-2 also have spacers in between the plates to ensure they are kept aligned with each other.  The end result is an antenna with a smoother radiation pattern and a significantly better axial ratio than most other antenna's.
+
+
+Specs:
+Polarization: RHCP
+Center Frequency: 5.8GHz
+Bandwidth: 500MHz (5.55~6.05GHz)
+SWR: S11 < -20dB, VSWR < 1.22 (at center frequency)
+Axial Ratio: < 1.3
+Gain: 1.2dBi
+Radiation Efficiency: 95%
+Weight: 9.9g
+Dimensions: 95 x 22.5mm
+Connector: SMA-plug (crimp shield + heatshrink)
+
+
+Includes:
+2 x Quanum Pagoda-2 antenna
+
+[aomway]()
+AOMWAY ANT007b 5.8GHz Panel Antenna 
+
+## setup overview
+![px4_wiring_chart]()
 ## raspi connection
 
 - to make a network connection without a need to set up
@@ -589,7 +625,33 @@ sudo apt install python-dev
 sudo apt install future
 sudo apt install screen python-wxgtk4.0 python-lxml
 sudo apt install pyserial
-sudo apt install dronekit
+sudo apt install dronekitThe Quanum Pagoda-2 omnidirectional antenna was designed by Maarten Baert who wanted some key features to be incorporated into his design, these were as follows;
+
+
+• Good omnidirectional radiation pattern
+• Good axial ratio
+• Compact dimensions
+• Easy to manufacture and at low cost
+
+
+He succeeded in his goal in designing an antenna with these attrubutes. The Quanum Pagoda-2 antenna is built using regular PCB's spaced at exact intervals with the final design taking months of fine tuning. The Quanum Pagoda-2 also have spacers in between the plates to ensure they are kept aligned with each other.  The end result is an antenna with a smoother radiation pattern and a significantly better axial ratio than most other antenna's.
+
+
+Specs:
+Polarization: RHCP
+Center Frequency: 5.8GHz
+Bandwidth: 500MHz (5.55~6.05GHz)
+SWR: S11 < -20dB, VSWR < 1.22 (at center frequency)
+Axial Ratio: < 1.3
+Gain: 1.2dBi
+Radiation Efficiency: 95%
+Weight: 9.9g
+Dimensions: 95 x 22.5mm
+Connector: SMA-plug (crimp shield + heatshrink)
+
+
+Includes:
+2 x Quanum Pagoda-2 antenna
 sudo apt install MAVProxy
 
 ```
