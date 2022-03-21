@@ -21,6 +21,7 @@ youtubeID: FOqkUmWkrmI
 youtubeID2: 1zasW_lr6Dg
 youtubeID3: hGxbYiV6TEA
 youtubueID4: hGxbYiV6TEA
+youtubeID5: g_NiBM50w8o
 ---
 * TOC
 {:toc}
@@ -541,7 +542,9 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
     MiniPix voltage and current sensing pins use Pixhawk standard ( :ref:`BATT_VOLT_PIN<BATT_VOLT_PIN>` = 2, :ref:`BATT_CURR_PIN<BATT_CURR_PIN>` = 3).
     The additional ADC pin can be used for either RSSI or analog airspeed. Set required option to PIN = 11.
 
-##
+## pdb bee rotor
+
+{% include youtubePlayer.html id=page.youtubeID 5 %}
 {% include youtubePlayer.html id=page.youtubeID %}
 
 {% include taglogic.html %}
