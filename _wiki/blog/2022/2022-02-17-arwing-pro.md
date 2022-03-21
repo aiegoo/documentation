@@ -298,7 +298,7 @@ The Transmitter
 First impressions were most favourable, starting with the smart black and silver mouldings. At just over 1 kg the box is nicely weighted without being heavy and it also feels comfortable to hold, thanks to the use of rubber mouldings and textured surfaces.
 
 The aerial is just over a meter in length and screws into a smart chromed ball-joint. The angle is adjustable using an Allen key, and when not in use the aerial can be stored in a recess near the bottom of the case.
-##
+
 A good compromise has been struck with the balance. With the aerial extended, there is a slight tendency for the top to tip down, while the opposite is the case when the aerial is removed for 2.4 GHz operation. Either way, balance is acceptable.
 
 The lower part of the facia is dominated by the LCD display. Unfortunately, while its large size is commendable, the contrast is rather poor. No amount of tweaking the contrast menu helped, and when working indoors I often found myself wishing for a backlight.
@@ -458,10 +458,10 @@ I'd also get some Scotch filament tape to protect the leading edges of the wings
 
 ========================================
 ## RadioLink MiniPix
-========================================
 
 
-.. warning:: This autopilot is not recommended because some versions of the board are not compatible with the official ArduPilot software despite multiple efforts to work with the manufacturer to make them compatible. The manufacturer is also apparently not abiding by the GPLv3 license which requires releasing the modified source code to its customers.  "V1.0" and "V1.2" probably work, "V1.0 II" and "V1.1" definitely do not work.
+
+warning:: This autopilot is not recommended because some versions of the board are not compatible with the official ArduPilot software despite multiple efforts to work with the manufacturer to make them compatible. The manufacturer is also apparently not abiding by the GPLv3 license which requires releasing the modified source code to its customers.  "V1.0" and "V1.2" probably work, "V1.0 II" and "V1.1" definitely do not work.
 
 
 ![image](https://user-images.githubusercontent.com/42961200/157608739-040f8665-ec25-456f-ad73-d62d822d3408.png)
@@ -548,20 +548,21 @@ Then follow the instructions on how to :ref:`load firmware onto ChibiOS boards <
 ## pdb bee rotor pdb
 
 {% include youtubePlayer.html id=page.youtubeID5 %}
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID6 %}
 
 ![image](https://user-images.githubusercontent.com/42961200/159233354-b329ee02-35b1-4ff4-989a-e87cee639104.png)
 The battery is connected to the power module’s male connector. The ESC or Power Distribution Board should be connected to the power module’s female connector.
 
 Configuration
 Most ground stations provide a battery monitor interface but the parameters can also be set manually:
-
+```yaml
 BATT_MONITOR = 3 to measure only voltage or 4 to measure both voltage and current (you will need to reboot the board after changing this)
 BATT_VOLT_PIN = 2. The autopilot pin connected to the power module’s voltage pin
 BATT_VOLT_MULT converts the analog voltage received from the power module’s voltage pin to the battery’s voltage
 BATT_CURR_PIN = 3. The autopilot pin connected to the power module’s current pin
 BATT_AMP_PERVLT converts the analog voltage received from the power module’s current pin to the battery’s current
 BATT_AMP_OFFSET voltage offset received from the power module’s current pin when ther is no current being pulled from the battery
+```
 Instructions for setup and calibration using the Mission Planner can be found here A Blog post with instructions for set-up using QGC can be found here
 ![image](https://user-images.githubusercontent.com/42961200/159233546-a05e66bc-210f-4f82-8ed3-90e8bd07b2e7.png)
 Enable voltage and current sensing
@@ -587,7 +588,7 @@ The values from the Voltage Multiplier and Amps per Volt are supplied by the man
 Now that we’ve set how ArduPilot monitors the power condition, let’s move to the Safety tab on QGC and set the battery failsafes. Please note that we can only set the Battery Failsafe triggers for the Battery 1, because we haven’t the battery 2 enabled (yet)
 
 
-![oveerall-setup](https://user-images.githubusercontent.com/42961200/159210143-f1df09a0-c682-4123-a3e5-7c4e1e4a342a.png)
+![overall-setup](https://user-images.githubusercontent.com/42961200/159210143-f1df09a0-c682-4123-a3e5-7c4e1e4a342a.png)
 
 - how to connect
 ![image](https://user-images.githubusercontent.com/42961200/159211727-08828f33-03b0-4a7d-9f4b-e034ce615e0f.png)
@@ -609,7 +610,7 @@ Now that we’ve set how ArduPilot monitors the power condition, let’s move to
 [arwing_beerotor](https://drive.google.com/file/d/18V-SCoSGR1Vf4vjJNxXyvgW8yvq37KUU/view?usp=sharing)
 
 ## antenna
-[pagoda]()
+[pagoda](/)
 
 The Quanum Pagoda-2 omnidirectional antenna was designed by Maarten Baert who wanted some key features to be incorporated into his design, these were as follows;
 
