@@ -712,6 +712,51 @@ GUIDED> APM: PreArm: Hartware safety swithc
 
 ```
 
+### setting up the Pixhawk
+> change the following params from the qgc or mp 
+
+1. :ref:`SERIAL2_PROTOCOL <copter:SERIAL2_PROTOCOL>` = 1 (the default) to
+enable MAVLink on the serial port.
+2. :ref:`SERIAL2_BAUD <copter:SERIAL2_BAUD>` = 921 so the Pixhawk can
+communicate with the Raspberry Pi at 921600 baud.
+3. :ref:`LOG_BACKEND_TYPE <copter:LOG_BACKEND_TYPE>` = 3 if you are
+using APSync to stream the dataflash log files to the Raspberry Pi.
+
+
+### Configure MAVProxy to always run
+
+> to setup MAVProxy to start whenever the raspi is restarted open, a terminal windown and edit the /etc/rc.local file, adding the following lines just before the final "exit 0" line
+
+```yaml
+date
+echo $PATH
+PATH=$PATH:/bin:/sbin:/usr/bin:/usr/local/bin
+export PATH
+cd /home/pi
+screen -d -m -s /bin/bash mavproxy.py --master=/dev/ttyAMA0 --baudrate 57600 --aircraft
+MyCopter
+) > /tmp/rc.log 2>&1
+exit 0
+
+```
+### installing dronekit on raspi
+
+To install DroneKit-Python dependencies (most of which will already be present from when you installed MAVProxy) and set DroneKit to load when MAVProxy starts:
+
+```bash
+
+
+sudo apt-get install python-pip python-dev python-numpy python-opencv python-serial
+python-pyparsing python-wxgtk2.8 libxml2-dev libxslt-dev
+sudo pip install droneapi
+echo "module load droneapi.module.api" >> ~/.mavinit.scr
+
+
+
+
+
+MANUAL> api start vehicle_state.py
+```
 
 {% include youtubePlayer.html id=page.youtubeID6 %}
 
