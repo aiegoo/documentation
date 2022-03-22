@@ -578,8 +578,7 @@ The Sensor selection list offers a number of analog Power Modules (including pop
 
 ![image](https://user-images.githubusercontent.com/42961200/159233819-048025c4-208f-4d3f-ac3e-699f3fcd9d22.png)
 ![image](https://user-images.githubusercontent.com/42961200/159233888-c6dfee62-4c6a-4ede-a328-bd939b811d56.png)
-![image](https://user-images.githubusercontent.com/42961200/159233903-f51b040c-51eb-45f5-a33f-e7c95790a616.png)
-
+![image](https://user-images.githuaim.koca.go.kr
 On this case I’m setting up with a 16000 mAh 12S battery, so the Minimum Arming Voltage value set to 3.5V per cell and connected to the Port 1 on a CUAV V5 board that has 2 power inputs.
 ![image](https://user-images.githubusercontent.com/42961200/159234042-c173dcd5-1fb1-48da-8522-4ca8e8d0c5a8.png)
 
@@ -647,7 +646,7 @@ AOMWAY ANT007b 5.8GHz Panel Antenna
 ![px4_wiring_chart](https://user-images.githubusercontent.com/42961200/159232933-02a07c44-0b78-4264-b475-dd4a5a865f83.png)
 
 ## raspi connection
-
+ [pdf](https://github.com/aiegoo/uas-referece/blob/manual/CommunicatingwithRaspberryPiviaMAVLink.pdf)
 - to make a network connection without a need to set up
 
 edit the wpa_supplicant.conf file
