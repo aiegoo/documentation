@@ -712,6 +712,14 @@ GUIDED> APM: PreArm: Hartware safety swithc
 
 ```
 
+### wiring 
+
+![image](https://user-images.githubusercontent.com/42961200/159659018-2d628fe0-99fb-4b88-b125-9cd9132275ea.png)
+![image](https://user-images.githubusercontent.com/42961200/159659074-4fd34865-0646-4661-a094-4acf8eaf6133.png)
+Its very imporant to connect tx, rx and ground if you want to use GPIO, and not only tx & rx.
+
+https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md
+
 ### setting up the Pixhawk
 > change the following params from the qgc or mp 
 
@@ -757,6 +765,24 @@ echo "module load droneapi.module.api" >> ~/.mavinit.scr
 
 MANUAL> api start vehicle_state.py
 ```
+
+### USB camera
+
+![image](https://user-images.githubusercontent.com/42961200/159659667-4761f936-0fde-4657-9ddf-082e73df2995.png)
+
+![image](https://user-images.githubusercontent.com/42961200/159659751-9066ddd5-dde0-4083-8b78-2bc82ee018ba.png)
+
+![image](https://user-images.githubusercontent.com/42961200/159659774-f85767c8-4571-404f-a668-cb810185e61d.png)
+
+
+PiCam
+Logitech C920
+Logitech C615
+GoPro. (Can be used with HDMI to CSI converter). This allows users to record and view live stream simultaneously.
+
+![image](https://user-images.githubusercontent.com/42961200/159659908-35a5e100-52c2-436e-8bac-fbef4d85f3ea.png)
+
+Other cameras may also work. search for (camera type) and gStreamer.
 
 {% include youtubePlayer.html id=page.youtubeID6 %}
 
