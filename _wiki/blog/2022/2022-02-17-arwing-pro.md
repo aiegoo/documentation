@@ -721,6 +721,7 @@ Its very imporant to connect tx, rx and ground if you want to use GPIO, and not 
 https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md
 
 ### setting up the Pixhawk
+[wiring](https://pf4.36io.co/2022-02-16-jdlab-offboard-pixhawk.html)
 > change the following params from the qgc or mp 
 
 1. :ref:`SERIAL2_PROTOCOL <copter:SERIAL2_PROTOCOL>` = 1 (the default) to
