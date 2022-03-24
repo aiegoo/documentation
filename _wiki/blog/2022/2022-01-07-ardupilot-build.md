@@ -19,6 +19,7 @@ date: 2022-01-07T21:40:58 +0900
 updated: 2022-01-07 21:40
 youtubeID: wh0fKGEJL4
 youtubeID2: 4B8BVskH0vc
+youtbueID3: zMxyQQEotD0PqPXo
 ---
 * TOC
 {:toc}
@@ -601,7 +602,7 @@ There's also a make wrapper called `Makefile.waf`. You can use
 You can use `waf --help` to see information about commands and options built-in
 to waf as well as some quick help on those added by ardupilot.
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID3 %}
 
 
 sim_vehicle.py -v ArduPlane --console --map --osd
