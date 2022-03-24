@@ -18,6 +18,7 @@ parent: [[Wiki-Setting-Category]]
 date: 2022-01-07T21:40:58 +0900
 updated: 2022-01-07 21:40
 youtubeID: wh0fKGEJL4
+youtubeID2: 4B8BVskH0vc
 ---
 * TOC
 {:toc}
@@ -83,6 +84,7 @@ Now you should be able to build with waf as described in `BUILD.md <https://gith
 
 .. note:: At this point you have already installed the MAVProxy Ground Control Station (MAVProxy GCS) and are also ready to do Software In the Loop (SITL) simulations of the vehicle code. See :ref:`sitl-simulator-software-in-the-loop`  and :ref:`setting-up-sitl-on-linux` . You are ready to not only build the code, but run your build in the Ardupilot SITL simulator.
 
+{% include youtubePlayer.html id=page.youtubeID2 %}
 
 .. youtube:: 4B8BVskH0vc
 
