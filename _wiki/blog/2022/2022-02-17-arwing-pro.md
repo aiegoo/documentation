@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: drone
-keywords: "radiomaster arwing fixedwing tx165 sbus"
+keywords: "radiomaster arwing fixedwing tx165 sbus pixhawk wiring raspi"
 summary: "Thu, Feb 17, 22, setup guide after opening the package"
 excerpt_separator: <!--more-->
 toc: true
