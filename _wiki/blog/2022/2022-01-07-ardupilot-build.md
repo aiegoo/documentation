@@ -72,7 +72,7 @@ Install some required packages
 If you are on a debian based system (such as Ubuntu or Mint), we provide `a script <https://github.com/ArduPilot/ardupilot/blob/master/Tools/environment_install/install-prereqs-ubuntu.sh>`__ that will do it for you. From ardupilot directory :
 ::
 
-    Tools/environment_install/install-prereqs-ubuntu.sh -y
+    Tools/environment_install/install-prereqs-ubuntu.sh -yhttps://github.com/radarku/ardupilot-sitl-docker
 
 Reload the path (log-out and log-in to make permanent):
 
@@ -216,6 +216,8 @@ Also you will need to install the c++ include headers to /usr/include to do that
 
 Setup using Docker
 ==================
+
+[pre-built](https://github.com/radarku/ardupilot-sitl-docker)
 
 Clone ArduPilot repository
 --------------------------
