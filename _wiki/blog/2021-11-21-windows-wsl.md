@@ -40,6 +40,9 @@ updated: 2021-11-21 13:38
 https://docs.microsoft.com/ko-kr/windows/wsl/install
 
 
+## Windows user
+[how_to_change](https://www.groovypost.com/howto/change-account-name-windows-10/#:~:text=Press%20Windows%20key%20%2B%20R%2C%20type,again%20to%20confirm%20the%20change.)
+
 {% include taglogic.html %}
 
 {% include links.html %}

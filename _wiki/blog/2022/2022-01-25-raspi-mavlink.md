@@ -105,6 +105,7 @@ The Raspberry Pi's serial port will now be usable on ``/dev/serial0``.
 
 Configure the Wifi
 ==================
+[howto_official](https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-headless-raspberry-pi)
 
 If desired, the Raspberry Pi's Wifi can be configured to create a
 Wifi access point. This will allow other clients to connect to
