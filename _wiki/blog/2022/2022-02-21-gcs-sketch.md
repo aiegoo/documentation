@@ -337,7 +337,7 @@ Parameter | Description
 [Tlog](https://ardupilot.org/planner/docs/common-mission-planner-telemetry-logs.html)
 
 ## sensor-selection
-# Sensors
+### Sensors
 
 PX4-based systems use sensors to determine vehicle state (needed for stabilization and to enable autonomous control). The vehicle states include: position/altitude, heading, speed, airspeed, orientation (attitude), rates of rotation in different directions, battery level, etc.
 
@@ -349,7 +349,8 @@ Below we describe some of the sensors. At the end there are links to information
 
 
 <span id="gps_compass"></span>
-## GPS & Compass
+
+### GPS & Compass
 
 PX4 supports a number of global navigation satellite system (GNSS) receivers and compasses (magnetometers). 
 It also supports [Real Time Kinematic (RTK) GPS Receivers](../gps_compass/rtk_gps.md), which extend GPS systems to centimetre-level precision.
@@ -365,6 +366,89 @@ We recommend the use of an external "combined" compass/GPS module mounted as far
 Common GPS/compass hardware options are listed in: [GPS/Compass](../gps_compass/README.md).
 
 ![GPS + Compass](../../assets/hardware/gps/gps_compass.jpg)
+
+## multiple gcs
+
+You can attach multiple additional ground control stations to SITL from MAVProxy. The simulated vehicle can then be controlled and viewed through any attached GCS.
+
+First use the output command on the MAVProxy command prompt to determine where MAVProxy is sending packets:
+
+```bash
+GUIDED> output
+GUIDED> 2 outputs
+0: 127.0.0.1:14550
+1: 127.0.0.1:14551
+```
+
+This tells us that we can connect Mission Planner to either UDP port 14550 or 14551, as shown on the dialog below.
+
+Mission Planner: Connecting to a UDPPort
+
+Tip
+
+We could connect APM Planner 2 to the remaining port. If we needed a third port, we could add it as shown:
+
+```
+GUIDED> output add 127.0.0.1:14553
+```
+
+Mission Planner can then be used to control the simulated vehicle in exactly the same way as though it were a real vehicle. We can reproduce the previous "takeoff-circle-land" example as shown below
+
+1. Change to Guided mode, arm the throttle, and the takeoff
+   1. Open the Flight Data screen and select the Actions tab on the bottom left. This is where we cna change the bmode and st commands.
+
+
+
+   2. Select Gudied in the mode selection list and then press the set Mode button
+   3. Select the Arm/Disarm button
+   4. Right click on the ma and select Takeoff. Then enter the desired takeoff altitude
+
+
+Takeoff must start within 15 seconds of arming, or the motors will disarm.
+
+Change to CIRCLE mode on the Action tab and watch the copter circle on the map.
+
+You can change the circle radius in the CONFIG/TUNING screen. Select Full Parameters List, then the Find button and search for CIRCLE_MODE. When you've changed the value press the Write Params button to save them to the vehicle.
+
+When you're ready to land you can set the mode to RTL.
+
+### Running SITL with a GCS without MAVProxy
+
+It is also possible to interact with SITL without using MAVProxy at all using ArduCopter.elf (in the ArduCopter directory).
+
+Run the file in the Cygwin Terminal, specifying a home position and vehicle model as shown below
+
+```bash
+
+hamis_000@XPS12ultra ~/ardupilot/ArduCopter
+$ ./ArduCopter.elf --home -35,149,584,270 --model quad
+Started model quad at -35,149,584,270 at speed 1.0
+Starting sketch 'ArduCopter'
+Starting SITL input
+bind port 5760 for 0
+Serial port 0 on TCP port 5760
+Waiting for connection ....
+```
+
+The command output shows that you can connect to SITL using TCP/IP at port 5760.
+
+In Mission Planner we first change the link type to TCP and then press the Connect button. Click through the remote host and remote Port prompts as these default to the correct values.
+
+
+
+Mission Planner: Connecting toSITL using TCP
+
+Mission Planner will then connect and can be used just as before.
+
+Tip
+
+ArduCopter.elf has other startup options, which you can use using the -h command line parameter:
+
+
+```sh
+./ArduCopter.elf -h
+```
+
 
 
 {% include taglogic.html %}
