@@ -212,7 +212,8 @@ https://www.facebook.com/100004068281468/videos/917401101738824/
 비행 동영상 링크는 위와 같습니다.
 
 ## Off-board Control (2) Raspberry Pi
-1. Off-board Control
+
+### 1. Off-board Control
 쿼드콥터를 자율주행하기 위해서 Pixhawk와 Raspberry Pi를 이용할 것 입니다.Pixhawk에는 PX4 flight stack이, Raspberry Pi에는 ROS가 설치됩니다. 두 Module이 Mavlink라는 통신 프로토콜을 통해 서로 통신하면서 픽스호크는 제어를 하게 되고 라즈베리파이는 offboard control을 하게 됩니다.
 
 따라서 전 글에서는 Pixhawk보드를 설정하고 쿼드콥터를 날리기 위한 준비를 했었습니다. 이제는 Offboard control을 위해서 Raspberry Pi를 설정해줘야합니다. 해야할 일은 다음과 같습니다.
@@ -223,8 +224,8 @@ https://www.facebook.com/100004068281468/videos/917401101738824/
 
 
 
-2. Raspberry Pi
-https://namu.wiki/w/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%20%ED%8C%8C%EC%9D%B4(%EC%BB%B4%ED%93%A8%ED%84%B0)   라즈베리파이란 영국 라즈베리 파이 재단에서 만든 초저가/초소형 PC입니다. 교육용 프로젝트의 일환으로 개발되었습니다. 아두이노와 함께 교육용 플랫폼의 대표 주자입니다. 아두이노와는 달리 정말 컴퓨터처럼 사용될 수 있습니다. 그렇게 컴퓨터처럼 사용되려면 몇 가지가 필요합니다.
+### 2. Raspberry Pi
+[wiki](https://namu.wiki/w/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%20%ED%8C%8C%EC%9D%B4(%EC%BB%B4%ED%93%A8%ED%84%B0)   라즈베리파이란 영국 라즈베리 파이 재단에서 만든 초저가/초소형 PC입니다. 교육용 프로젝트의 일환으로 개발되었습니다. 아두이노와 함께 교육용 플랫폼의 대표 주자입니다. 아두이노와는 달리 정말 컴퓨터처럼 사용될 수 있습니다. 그렇게 컴퓨터처럼 사용되려면 몇 가지가 필요합니다.
 
 모니터, 키보드, 마우스, 전원선, HDMI케이블, SD card
 
@@ -234,7 +235,7 @@ https://namu.wiki/w/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%20%ED%8C%8C%EC%9D%B4(%E
 
 
 
-3. 라즈베리파이에 Ubuntu 16.04 MATE 설치
+### 3. 라즈베리파이에 Ubuntu 16.04 MATE 설치
 https://ubuntu-mate.org/raspberry-pi/
 Ubuntu 중에서도 라즈베리파이에 설치할 OS는 Ubuntu-MATE입니다(설치하고 나서 정식 우분투가 라즈베리파이3를 지원한다는 것을 알았습니다 문제 생기면 그 때 다시 설치하려 합니다) 데스크탑에 우분투를 설치할 때와 마찬가지로 이미지파일을 받아서 압축을 풀고 이번에는 라즈베리파이의 SD card에 이미지파일을 구워주고 그 SD card를 라즈베리파이가 꽂아주면 됩니다. 원래는 라즈베리파이 1에 라즈비안이라는 OS를 사용하고 있었는데 Mavros가 설치되지 않는 문제가 있어서 라즈베리파이 3를 구매하고 우분투를 설치하기로 했습니다.(우분투는 라즈베리파이 2부터 지원이 됩니다)
 
@@ -254,7 +255,7 @@ MATE에서는 따로 파티션을 지정해주는 단계가 없습니다. 이렇
 
 
 
-4. 라즈베리파이에 ROS Kinetic 설치
+### 4. 라즈베리파이에 ROS Kinetic 설치
 ROS설치에 대해서는 ROS wiki를 참조해주시는 것이 가장 좋습니다. 링크는 다음과 같습니다.
 http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi
 
@@ -291,14 +292,15 @@ rosrun turtlesim turtle_teleop_key
 
 
 ## Off-board Control (3) Mavros
-1. 라즈베리파이에 Mavros 설치
+
+### 1. 라즈베리파이에 Mavros 설치
 sudo apt-get update
 sudo apt-get install ros-kinetic-mavros ros-kinetic-mavros-extras
 이 두 줄을 실행시키면 MAVROS가 설치가 됩니다.
 
 
 
-2. modudculab_ros 설치
+### 2. modudculab_ros 설치
 이제 Offboard Control을 위한 modudculab_ros package를 설치해줍니다. Package를 설치하려면 Package를 Build를 해야하는데 catkin build 명령어는 catkin_tools 패키지 안에 있습니다. 따라서 그 패키지를 설치해줘야합니다. http://answers.ros.org/question/207433/catkin-build-gives-command-not-found/
 
 sudo apt-get install python_catkin_tools
@@ -315,7 +317,7 @@ source /home/leewoongwon/ros_catkin_ws/devel/setup/bash
 이제 설치된 ROS 패키지를 통해 픽스호크에게 명령을 주기 위해 두 보드를 연결해야 합니다.
 
 
-3.Pixhawk와 Raspberry Pi의 연결
+### 3.Pixhawk와 Raspberry Pi의 연결
 (1) GPIO
 아래 사진과 같이 Pixhawk의 Telem2 포트와 Raspberry Pi의 GPIO핀을 연결해야 합니다. 원래 Telemetry 포트는 지상국과의 연결을 하는 안테나를 연결하는 포트이고 그 안테나를 통해서 지상국(예를 들면 데스크탑)과 MAVLINK로 통신하는 것입니다. 아래 사진은 임재영님이 연결하신 방법입니다.
 ![image](https://user-images.githubusercontent.com/48428378/154155828-2d6a325a-8770-4968-b673-3f0b75755611.png)
@@ -329,7 +331,7 @@ source /home/leewoongwon/ros_catkin_ws/devel/setup/bash
 
 
 
-3. MAVROS test
+### 3. MAVROS test
 Mavros를 돌려보고 픽스호크로부터 토픽을 받아오는 것을 실행함으로서 라즈베리파이와 픽스호크의 연결을 테스트해보려고 합니다.
 
 그 전에 픽스호크의 설정을 바꿔줄 것이 있습니다. 노트북에서 Qgroundcontrol을 실행시켜줍니다.
@@ -367,7 +369,7 @@ rqt
 
 
 
-4. modudculab_ros package test
+### 4. modudculab_ros package test
 modudculab_ros 패키지 안에서 Position control로 테스트 해 볼 겁니다. /ros_catkin_ws/src/modudculab_ros/launch안에 있는 ctrl_pos_gazebo.launch파일을 수정해줍니다. 3번 째 줄을 다음 그림과 같이 "dev/ttyUSB0:921600"으로 수정해줍니다.
 ![image](https://user-images.githubusercontent.com/48428378/154156108-aac87c8d-4f02-49ed-b145-b1cdcb6ac4a2.png)
 
@@ -396,7 +398,7 @@ Raspberry Pi의 Wifi 연결
 Pixhawk의 flight mode 설정
 Trajectory node
 Test flight
-1. Pixhawk와 Raspberry Pi의 연결
+### 1. Pixhawk와 Raspberry Pi의 연결
 픽스호크와 라즈베리 파이의 연결은 저번 글에서도 언급했었습니다. 픽스호크의 Telem2 port(원래는 Ground Station과 통신하려는 포트, 안테나를 연결해서)에 라즈베리 파이를 연결하는 두 가지 방법이 있습니다. (1) USB port를 통해서 연결하는 방법과 (2) GPIO pin을 통해서 연결하는 방법이 있습니다.
 
 (1) USB Port
@@ -408,7 +410,7 @@ Test flight
 
 
 
-2. Raspberry Pi의 전원
+### 2. Raspberry Pi의 전원
 현재 픽스호크는 Battery에서 Power module로 전원을 받아오고 있습니다. 라즈베리파이도 전원이 필요한데 5V의 정격전압이 필요합니다. 이것은 네 가지 정도의 방법이 있습니다.
 ![image](https://user-images.githubusercontent.com/48428378/154156322-43e201d8-6332-49bb-b5b9-519e6a4d449a.png)
 
@@ -424,7 +426,7 @@ Test flight
 ![image](https://user-images.githubusercontent.com/48428378/154156358-f7dbdda2-feda-41cb-9854-0e32df08b59d.png)
 
 
-3. Raspberry Pi의 Wifi 연결
+###  3. Raspberry Pi의 Wifi 연결
 Off-board Control은 라즈베리 파이에서 roscore와 node(trajectory or positon)가 실행되고 있어서 mavros를 통해서 픽스호크에 명령을 보내고 있다가 조종기를 통해서 Off board mode에 들어가면 그 명령이 실행되는 형태로 됩니다. 따라서 라즈베리파이에서 roscore와 node를 실행해주어야 하는데 그 방법으로 저희는 wifi 공유기를 가져가서 노트북으로 라즈베리파이에 연결해서 roscore와 node를 실행해주었습니다. 그 이외에도 라즈베리파이에 전원이 들어오면 바로 정해진 것들이 실행되도록 설정을 해줄수도 있다고 합니다(해보지 않았습니다) 다음과 같은 공유기를 들고 나갔습니다. 현재 라즈베리파이 3에는 wifi module이 내장되어 있는데 통신 거리가 짧아서 wifi 동글을 달아주시는 것이 좋습니다.
 
 ![image](https://user-images.githubusercontent.com/48428378/154156412-578fe4fc-7bd4-45ca-af4a-c32ca6fc130f.png)
@@ -455,7 +457,7 @@ IP주소를 입력하고 이름은 원하는 대로 작성하시고 Save를 해�
 ![image](https://user-images.githubusercontent.com/48428378/154156509-02481783-1c4f-4b52-97eb-6e7cb8d4b202.png)
 
 
-4. Pixhawk의 flight mode 설정
+### 4. Pixhawk의 flight mode 설정
 Test flight를 할 때 세 가지 mode로 날려볼텐데 (1) position hold (2) mission mode (3) offboard mode 순서대로 입니다. mode가 바뀔 때 마다 qgroundcontrol에서 픽스호크를 설정해줘야 합니다.
 ![image](https://user-images.githubusercontent.com/48428378/154156577-84849d22-cf9a-4023-83e1-03070ce3494a.png)
 
@@ -465,7 +467,7 @@ bash qgroundcontrol-start.sh
 ![image](https://user-images.githubusercontent.com/48428378/154156599-85185d70-5fbd-4f49-8651-bb0c052234aa.png)
 
 
-5. Trajectory node
+### 5. Trajectory node
 offboard mode를 사용할 때 라즈베리파이에서 roscore를 실행하고 ctrl_traj_test.launch를 실행해줍니다. 이 ctrl_traj_test.launch파일을 살펴보시면 아래와 같이 fcu_url을 USB port로 잡아주셔야 합니다. 관련된 내용은 바로 전 글을 참조해주시기 바랍니다. 이 launch 파일은 두 개의 node를 실행시키는데 mavros와 pub_setpoints_traj를 실행시킵니다. 이 pub_setpoints_traj node에 대해서 두 가지 변수를 설정해줄 수 있는데 반지름과 각속도입니다.
 
 ![image](https://user-images.githubusercontent.com/48428378/154156637-a40cf106-17fd-4fc0-8f77-95dd81a7ad0e.png)
@@ -475,7 +477,7 @@ pub_setpoints_traj.cpp파일을 열어보면 지워주셔야 할 부분이 있�
 ![image](https://user-images.githubusercontent.com/48428378/154156690-ea23e041-e2b0-469b-a900-dd20d35e40c5.png)
 
 
-6. Test flight
+### 6. Test flight
 저희는 광나루 한강 공원을 오후 시간에 예약해서 쿼드콥터를 날려보았습니다. pixhawk+raspberry pi 2대, pixhawk 1대, bird 1대를 가지고 갔었습니다. 일단 도착하면 노트북에 픽스호크를 연결해서 qgroundcontrol로 sensor calibration을 해주는 것이 좋습니다.
 
 offboard로 자율주행을 하기 전에 pixhawk만을 사용해서 GPS를 사용해서 position홀드를 해보고 qgroundcontrol로 mission을 짜서 수행해보아야 합니다. 이 두가지가 정상적으로 실행이 될 때 그 다음에 offboard mode를 실행해보았습니다.
