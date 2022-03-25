@@ -19,6 +19,7 @@ date: 2022-01-07T21:40:58 +0900
 updated: 2022-01-07 21:40
 youtubeID: wh0fKGEJL4
 youtubeID2: 4B8BVskH0vc
+youtbueID3: zMxyQQEotD0PqPXo
 ---
 * TOC
 {:toc}
@@ -72,7 +73,7 @@ Install some required packages
 If you are on a debian based system (such as Ubuntu or Mint), we provide `a script <https://github.com/ArduPilot/ardupilot/blob/master/Tools/environment_install/install-prereqs-ubuntu.sh>`__ that will do it for you. From ardupilot directory :
 ::
 
-    Tools/environment_install/install-prereqs-ubuntu.sh -y
+    Tools/environment_install/install-prereqs-ubuntu.sh -yhttps://github.com/radarku/ardupilot-sitl-docker
 
 Reload the path (log-out and log-in to make permanent):
 
@@ -216,6 +217,8 @@ Also you will need to install the c++ include headers to /usr/include to do that
 
 Setup using Docker
 ==================
+
+[pre-built](https://github.com/radarku/ardupilot-sitl-docker)
 
 Clone ArduPilot repository
 --------------------------
@@ -599,7 +602,7 @@ There's also a make wrapper called `Makefile.waf`. You can use
 You can use `waf --help` to see information about commands and options built-in
 to waf as well as some quick help on those added by ardupilot.
 
-{% include youtubePlayer.html id=page.youtubeID %}
+{% include youtubePlayer.html id=page.youtubeID3 %}
 
 
 sim_vehicle.py -v ArduPlane --console --map --osd

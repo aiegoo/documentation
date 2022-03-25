@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: jdlab
-keywords: "gcs jdlab brainstorm sketch tlog missionplanner"
+keywords: "gcs jdlab brainstorm sketch tlog missionplanner mavproxy ardupilot"
 summary: "Mon, Feb 21, 22, pool resources and ideas into one single gcs you can develop"
 excerpt_separator: <!--more-->
 toc: true
@@ -52,7 +52,7 @@ hardwaresetup.jpg
 - Software setup
 
 A Linux system is recommended. Windows may be possible, but I’ve not tested that.
-
+./ArduCopter.elf -h
 It is assumed that the arm-gcc compiler has already been installed. If not, see http://ardupilot.org/dev/docs/building-setup-linux.html 6
 
 [OpenOCD](https://openocd.org0 1 is to be installed next via this command:
@@ -137,7 +137,7 @@ So we upload the changed firmware, debug again and see what happens…
 ```
 Reading symbols from ./UART_test...done.
 0x0800542e in HardFault_Handler ()
-    at ../../libraries/AP_HAL_ChibiOS/system.cpp:94
+    at ../../libraries/AP_HAL_Ch./ArduCopter.elf -hibiOS/system.cpp:94
 94	    save_fault_watchdog(__LINE__, faultType, faultAddress);
 Breakpoint 1 at 0x800549c: file ../../libraries/AP_HAL_ChibiOS/system.cpp, line 172.
 Breakpoint 2 at 0x8005404: file ../../libraries/AP_HAL_ChibiOS/system.cpp, line 69.
@@ -381,6 +381,7 @@ GUIDED> 2 outputs
 ```
 
 This tells us that we can connect Mission Planner to either UDP port 14550 or 14551, as shown on the dialog below.
+![image](https://user-images.githubusercontent.com/42961200/159879563-de5330c4-e21f-4cee-8869-669c9b655d00.png)
 
 Mission Planner: Connecting to a UDPPort
 
@@ -397,11 +398,13 @@ Mission Planner can then be used to control the simulated vehicle in exactly the
 1. Change to Guided mode, arm the throttle, and the takeoff
    1. Open the Flight Data screen and select the Actions tab on the bottom left. This is where we cna change the bmode and st commands.
 
+![image](https://user-images.githubusercontent.com/42961200/159879594-58ab9d30-55a1-48d1-ac6f-6d41ad875cfb.png)
 
 
    2. Select Gudied in the mode selection list and then press the set Mode button
    3. Select the Arm/Disarm button
    4. Right click on the ma and select Takeoff. Then enter the desired takeoff altitude
+![image](https://user-images.githubusercontent.com/42961200/159879636-fc05e1be-49c3-43ac-a871-e8abe75cbd61.png)
 
 
 Takeoff must start within 15 seconds of arming, or the motors will disarm.
@@ -433,6 +436,7 @@ Waiting for connection ....
 The command output shows that you can connect to SITL using TCP/IP at port 5760.
 
 In Mission Planner we first change the link type to TCP and then press the Connect button. Click through the remote host and remote Port prompts as these default to the correct values.
+![image](https://user-images.githubusercontent.com/42961200/159879716-fc2b2af5-22c2-4ddb-80fa-89fbd74fabbe.png)
 
 
 
