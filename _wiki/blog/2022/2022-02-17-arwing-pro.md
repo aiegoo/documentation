@@ -23,6 +23,7 @@ youtubeID3: hGxbYiV6TEA
 youtubueID4: hGxbYiV6TEA
 youtubeID5: g_NiBM50w8o
 youtubeID6: kB9YyG2V-nA
+youtubeID7: ADphg7bjKow
 ---
 
 * TOC
@@ -112,6 +113,10 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 9. Our best results battery wise, were with a ZOHD 4S2P 18650 7000mAh and that’s what we recommend. Having said that, if you’re a PRO, you will know what to do ;)
 
 ## fpv camera
+
+{% include youtubePlayer.html id=page.youtubeID7 %}
+
+[openHD-raspi](https://openhd.gitbook.io/open-hd/general/getting-started)
 ### opto bl 30A
 - 1. Specification
 
