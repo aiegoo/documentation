@@ -25,6 +25,7 @@ youtubeID5: g_NiBM50w8o
 youtubeID6: kB9YyG2V-nA
 youtubeID7: ADphg7bjKow
 youtubeID8: uyx4peXAeIM
+youtubeID9: 8MercqAa7Vk
 ---
 
 * TOC
@@ -118,6 +119,10 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 {% include youtubePlayer.html id=page.youtubeID7 %}
 
 [openHD-raspi](https://openhd.gitbook.io/open-hd/general/getting-started)
+
+> setup
+
+{% include youtubePlayer.html id=page.youtubeID9 %}
 
 {% include youtubePlayer.html id=page.youtubeID8 %}
 
