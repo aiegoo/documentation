@@ -728,6 +728,10 @@ GUIDED> APM: PreArm: Hartware safety swithc
 
 ### wiring 
 
+> to-do list
+> telem cable ----- > ![image](https://user-images.githubusercontent.com/42961200/160041730-ea94ec52-1221-4575-b2d6-376833b5d1bc.png)
+
+
 ![image](https://user-images.githubusercontent.com/42961200/159659018-2d628fe0-99fb-4b88-b125-9cd9132275ea.png)
 ![image](https://user-images.githubusercontent.com/42961200/159659074-4fd34865-0646-4661-a094-4acf8eaf6133.png)
 Its very imporant to connect tx, rx and ground if you want to use GPIO, and not only tx & rx.
