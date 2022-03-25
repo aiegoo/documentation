@@ -106,7 +106,7 @@ or [others](https://usa.banggood.com/Sonicmodell-AR-Wing-Pro-1000mm-Wingspan-EPP
 1. First and foremost, thanks for buying this unit. You’re not only supporting our work and families but also keeping alive a hobby that’s being threaten by all sides right now.
 2. This Wing is called “PRO” for a reason. If you’re a beginner we strongly encourage you to seek advice from experience FPV pilots even before trying to put this unit together. Seriously.
 3. The provided CG marks are a reference and a starting point for your tuning. It’s what worked for us after all the math and flights done. This doesn’t mean that will work for your flying style or type of mission. If you know what you’re doing, feel free  to experiment with it.
-4. The provided “Basic Power Combo” with the PNP version is just a “middle point” performance kit to get you in the air and  have a great experience with a good balance between speed and range. If you have something specific in mind for yourBeeRotor
+4. The provided “Basic Power Combo” with the PNP version is just a “middle pcesium ionoint” performance kit to get you in the air and  have a great experience with a good balance between speed and range. If you have something specific in mind for yourBeeRotor
 wing, like a super fast unit or a super long range one, we suggest you to get the KIT and use your own selected electronics. A Premium power combo will be also offered down the road.
 5. In our experience the DJI FPV system was easier to setup and reply using the dedicated main hatch and placing it in the  center on the wing. In any case, you can also use the side pockets and do some DIY if needed.
 6. Without any doubt, this wing is BY FAR the most aerodynamic and the one with the better cooling system from all the 1 meter wings available in the market… use this advantages wisely and keep it light and clean.
@@ -121,6 +121,7 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 [openHD-raspi](https://openhd.gitbook.io/open-hd/general/getting-started)
 
 > setup
+![image](https://user-images.githubusercontent.com/42961200/160098341-f6803cdd-baea-402f-a300-9702f7d25153.png)
 
 {% include youtubePlayer.html id=page.youtubeID9 %}
 
