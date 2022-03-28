@@ -113,8 +113,182 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 7. We strongly suggest “Frisbee” style launching for this unit, as you have no grip in the bottom (precisely to keep it clean and aerodynamic)… Any other style of hand-launching could damage your fingers. Be careful.
 8. This wing was meant to be flown with modern autopilot units for best performance. You can fly it manual, but you will need to have a perfect tuning for this. To improve aerodynamics and handling this design is not very forgiving to rookie mistakes or poor setup. Take your time to double check all is OK before going airborne.
 9. Our best results battery wise, were with a ZOHD 4S2P 18650 7000mAh and that’s what we recommend. Having said that, if you’re a PRO, you will know what to do ;)
+## matek 743
+Matek Systems H743-WING FLIGHT CONTROLLER 
 
-## fpv camera
+- 마텍사의 신형 항공용 플라이트 컨트롤러입니다.
+
+- 라인업 중 가장 파워풀한 제품입니다. 
+
+- 자이로센서가 MPU6000과 ICM20602 두 가지 모두 내장되어 있습니다.
+
+- 정밀 고도계(DPS310)가 내장되어 있습니다.
+
+- OSD가 내장되어 여러가지 정보를 화면으로 보실 수 있습니다.
+
+- 8셀까지 직결이 가능하며, 트리플 BEC가 내장되어 있습니다.
+
+- FC용 5V 2A, VTX용 9V 2A(12V전환가능), 서보용 5V 8A(6V/7.2V전환가능) 
+
+- 듀얼 카메라를 지원하며, 조종기 토글키로 간단하게 스위칭 할 수 있습니다.
+
+- GPS와 에어스피드센서를 완벽하게 지원합니다.
+
+- 기존 제품의 USB포트가 파괴되는 문제를 해결하였습니다.
+
+- 고정익이나 대형드론에 강력 추천드립니다.
+
+​
+
+베타플라이트와 아두파일럿을 지원합니다. (INAV는 추후 지원)
+
+아두파일럿 펌웨어를 올리시면 픽스호크와 동일하게 사용하실 수 있습니다. 
+
+동사의 GPS, 디지털에어스피드센서를 함께 쓰시길 추천드립니다.
+
+​
+
+### 구성
+
+하단 사진 참조
+
+​
+
+​
+
+### FC Specifications
+
+MCU: STM32H743VIT6, 480MHz , 1MB RAM, 2MB Flash
+
+IMU: MPU6000 (SPI1) & ICM20602 (SPI4)
+
+Baro: Infineon DPS310 (I2C2)
+
+OSD: AT7456E (SPI2)
+
+Blackbox: MicroSD card slot (SDIO)
+
+7x Uarts (1,2,3,4,6,7,8) with built-in inversion.
+
+13x PWM outputs(including “LED” pad)
+
+2x I2C
+
+1x CAN
+
+6x ADC (VBAT, Current, RSSI, Analog AirSpeed, VB2, CU2)
+
+3x LEDs for FC STATUS (Blue, Red) and 3.3V indicator(Red)
+
+1x SPI3 breakout
+
+USB/Beep Extender with Type-C(USB2.0)
+
+Dual Camera Inputs switch
+
+5V/9V(12V) for Camera/VTX power switch
+
+High-precision Current Sense
+
+ADC VB2 voltage divider: 1K:10K
+
+ADC AirSpeed voltage divider: 10K:10K
+
+INAV TR/SA VTX control: Yes
+
+Beeper : Yes
+
+RSSI: Yes
+
+Analog Airspeed sensor: Yes
+
+Digital Airspeed sensor: Yes
+
+Static power 160mA@5V
+
+​
+
+### FC Firmware
+
+ArduPilot(ChiBiOS): MATEKH743
+
+INAV: MATEKH743 (To be supported soon)
+
+BetaFlight: MATEKH743
+
+​
+
+PDB
+
+Input voltage range: 9~36V (3~8S LiPo) w/TVS protection
+
+2x ESC power pads
+
+Battery Voltage Sensor: 1:10 (Scale 1100 in INAV, BATT_VOLT_MULT 11.0 in ArduPilot)
+
+Current Senor: 132A, 3.3V ADC (Scale 250 in INAV, 40 A/V in ArduPilot)
+
+Sense resistor: 60A continuous, 132A burst.
+
+​
+
+BEC 5V output
+
+Designed for Flight controller, Receiver, OSD, Camera, Buzzer, 2812 LED_Strip, Buzzer, GPS module, AirSpeed
+
+Continuous current: 2 Amps, Max.3A
+
+​
+
+BEC 9V /12V output
+
+Designed for Video Transmitter, Camera, Gimbal ect.
+
+Continuous current: 2 Amps, Max.3A
+
+12V option with Jumper pad
+
+​
+
+BEC Vx output
+
+Designed for Servos
+
+Voltage adjustable, 5V Default, 6V or 7.2V via jumper
+
+Continuous current: 8 Amps, Max.10A
+
+​
+
+BEC 3.3V output
+
+Linear Regulator
+
+Continuous current: 200mA
+
+​
+
+### Physical
+
+Mounting: 30.5 x 30.5mm, Φ4mm with Grommets Φ3mm
+
+Dimensions: 54 x 36 x 13 mm
+
+Weight: 30g with USB exte
+
+
+1x USB(Type-C)/Beep (Passive buzzer) Extender
+
+1x 20cm SH-4P to GH-4P cable for CAN port
+
+1x 20cm SH-6P to SH-6P cable for USB extender.
+
+Dupont 2.54 pins (Board is shipped unsoldered)
+
+​
+
+마텍 홈페이지에 가시면 세팅에 관한 많은 자료를 찾
+
 
 {% include youtubePlayer.html id=page.youtubeID7 %}
 
