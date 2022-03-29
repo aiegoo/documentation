@@ -117,6 +117,45 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 
 ![image](https://user-images.githubusercontent.com/42961200/160349758-44fdfa74-5688-4ad5-a072-3a3cb20a223d.png)
 
+![image](https://user-images.githubusercontent.com/42961200/160553791-6d2a14dc-c763-4255-8a14-f967a2207349.png)
+![image](https://user-images.githubusercontent.com/42961200/160553887-43b2dcea-b6d4-44d3-b634-359cf2ffffb0.png)
+![image](https://user-images.githubusercontent.com/42961200/160553917-13033e9b-a818-421b-b520-9dddd40bb6a2.png)
+![image](https://user-images.githubusercontent.com/42961200/160554096-e9ea425b-501b-4632-87d5-f2dec0f2c343.png)
+![image](https://user-images.githubusercontent.com/42961200/160554186-1a648b40-77aa-4878-a5b6-a6ea75eaff1e.png)
+
+[spec](http://www.mateksys.com/?portfolio=h743-wing-v2#tab-id-2)
+[layout](http://www.mateksys.com/?portfolio=h743-wing-v2#tab-id-3)
+[wiring](http://www.mateksys.com/?portfolio=h743-wing-v2#tab-id-4)
+[ardupilotMapping](http://www.mateksys.com/?portfolio=h743-wing-v2#tab-id-6)
+
+[ardu-pinout](http://www.mateksys.com/?portfolio=h743-wing-v2#tab-id-7)
+Camera-1 and Vsw On by default
+Make sure 2 cameras are set with identical video format, both PAL or both NTSC.
+# GPIOs
+
+PD10 PINIO1 OUTPUT GPIO(81)   //Vsw pad power switch
+PD11 PINIO2 OUTPUT GPIO(82)   //Camera switch
+# RCx_OPTION: RC input option
+
+28   Relay On/Off
+34   Relay2 On/Off
+35   Relay3 On/Off
+36   Relay4 On/Off
+e.g.
+
+RELAY_PIN       81    //Vsw GPIO
+RC7_OPTION   28    //Relay On/Off, Use CH7 of Transmitter to switch Vsw
+RELAY_PIN2     82    //Camera switch GPIO
+RC8_OPTION   34    //Relay2 On/Off, Use CH8 of Transmitter to switch camera
+or
+
+RELAY_PIN3       81    //Vsw GPIO
+RC9_OPTION     35    //Relay3 On/Off, Use CH9 of Transmitter to switch Vsw
+RELAY_PIN4       82    //Camera switch GPIO
+RC10_OPTION   36    //Relay4 On/Off, Use CH10 of Transmitter to switch camera
+The configured feature will be triggered when the auxiliary switch’s pwm value becomes higher than 1800. It will be deactivated when the value falls below 1200.
+
+Check the pwm value sent from the transmitter when the switch is high and low using the Mission Planner’s Initial Setup >> Mandatory Hardware >> Radio Calibration screen. If it does not climb higher than 1800 or lower than 1200, it is best to adjust the servo end points in the transmitter.
 Matek Systems H743-WING FLIGHT CONTROLLER 
 
 - 마텍사의 신형 항공용 플라이트 컨트롤러입니다.
@@ -212,6 +251,7 @@ Static power 160mA@5V
 ​
 
 ### FC Firmware
+[http://www.mateksys.com/?p=5159#tab-id-11)
 
 ArduPilot(ChiBiOS): MATEKH743
 
@@ -265,7 +305,7 @@ Continuous current: 8 Amps, Max.10A
 
 BEC 3.3V output
 
-Linear Regulator
+Linear Regulatorhttp://www.mateksys.com/?p=5159#tab-id-11
 
 Continuous current: 200mA
 
@@ -281,7 +321,7 @@ Weight: 30g with USB exte
 
 
 1x USB(Type-C)/Beep (Passive buzzer) Extender
-
+http://www.mateksys.com/?p=5159#tab-id-11
 1x 20cm SH-4P to GH-4P cable for CAN port
 
 1x 20cm SH-6P to SH-6P cable for USB extender.
@@ -290,8 +330,33 @@ Dupont 2.54 pins (Board is shipped unsoldered)
 
 ​
 
-마텍 홈페이지에 가시면 세팅에 관한 많은 자료를 찾
+마텍 홈페이지에 가시면 세팅에 관한 많은 자료를 찾을 수 있습니다.
 
+What is new on the H743-Wing V2
+Use ICM42605 instead of ICM20602
+Moved PDB/current sensor from FC board to bottom plate.
+Moved 8A BEC from top board to bottom plate.
+JST-GH connector for CAN port instead of JST-SH connector.
+Add a JST-GH connector for I2C2, for plug and play with ASPD-4525
+ArduPilot
+H743-WING-V2 with ICM42605 is supported by ArduPilot 4.1 latest or newer,
+ICM42605 is defined as first IMU (IMU0) ,  MPU6000 is the 2nd (IMU1).
+with ArduPilot 4.1 or higher, set INS_ENABLE_MASK to 7 or default 127.
+Current sensor range is 220A on H743-WING-V2,  make sure you set the BATT_AMP_PERVLT to 66.7
+It is recommended to use STM32CubeProgrammer to erase MCU and upload firmware.  check this blog http://www.mateksys.com/?p=6905
+Known issue and solution,  H7 will not initialize with Ardupilot firmware
+INAV
+Current sensor range is 220A on H743-WING-V2,  make sure you set the Current Meter Scale to 150
+IMU ICM42605 is supported by INAV3.0.2 or higher.
+MPU6000 is the first IMU(IMU0, default), ICM42605 is the 3rd IMU (IMU2) in INAV MATEKH743 target.
+If you want to try the new ICM-4 series of IMUs.  download inav_3.0.2_MATEKH743.hex
+set gyro_to_use = 2
+set acc_hardware = icm42605
+save
+If you stick with MPU6000 only,  H743-WING-V2 works with stable version 3.0.x downloaded from configurator also.
+SD card and MSC mode for H743 were not implemented in INAV3.x.  They are supported by INAV4.x or higher.
+Others
+If the ESCs you are using don’t have enough capacitors integrated,  low ESR electrolytic capacitor is required for reducing ESC noise.
 
 {% include youtubePlayer.html id=page.youtubeID7 %}
 
