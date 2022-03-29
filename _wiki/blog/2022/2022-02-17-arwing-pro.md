@@ -113,6 +113,7 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 7. We strongly suggest “Frisbee” style launching for this unit, as you have no grip in the bottom (precisely to keep it clean and aerodynamic)… Any other style of hand-launching could damage your fingers. Be careful.
 8. This wing was meant to be flown with modern autopilot units for best performance. You can fly it manual, but you will need to have a perfect tuning for this. To improve aerodynamics and handling this design is not very forgiving to rookie mistakes or poor setup. Take your time to double check all is OK before going airborne.
 9. Our best results battery wise, were with a ZOHD 4S2P 18650 7000mAh and that’s what we recommend. Having said that, if you’re a PRO, you will know what to do ;)
+
 ## matek 743
 
 ![image](https://user-images.githubusercontent.com/42961200/160349758-44fdfa74-5688-4ad5-a072-3a3cb20a223d.png)
@@ -131,11 +132,13 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 [ardu-pinout](http://www.mateksys.com/?portfolio=h743-wing-v2#tab-id-7)
 Camera-1 and Vsw On by default
 Make sure 2 cameras are set with identical video format, both PAL or both NTSC.
-# GPIOs
+
+### GPIOs
 
 PD10 PINIO1 OUTPUT GPIO(81)   //Vsw pad power switch
 PD11 PINIO2 OUTPUT GPIO(82)   //Camera switch
-# RCx_OPTION: RC input option
+
+### RCx_OPTION: RC input option
 
 28   Relay On/Off
 34   Relay2 On/Off
@@ -261,7 +264,7 @@ BetaFlight: MATEKH743
 
 ​
 
-PDB
+- PDB
 
 Input voltage range: 9~36V (3~8S LiPo) w/TVS protection
 
@@ -275,7 +278,7 @@ Sense resistor: 60A continuous, 132A burst.
 
 ​
 
-BEC 5V output
+- BEC 5V output
 
 Designed for Flight controller, Receiver, OSD, Camera, Buzzer, 2812 LED_Strip, Buzzer, GPS module, AirSpeed
 
@@ -358,12 +361,14 @@ SD card and MSC mode for H743 were not implemented in INAV3.x.  They are support
 Others
 If the ESCs you are using don’t have enough capacitors integrated,  low ESR electrolytic capacitor is required for reducing ESC noise.
 
+## openHD
 {% include youtubePlayer.html id=page.youtubeID7 %}
 
 [openHD-raspi](https://openhd.gitbook.io/open-hd/general/getting-started)
 
 > setup
 ![image](https://user-images.githubusercontent.com/42961200/160098341-f6803cdd-baea-402f-a300-9702f7d25153.png)
+
 
 {% include youtubePlayer.html id=page.youtubeID9 %}
 
@@ -443,7 +448,7 @@ Indicator LED to show the frequency and power
 [guide](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_guide.pdf)
 
 [manual](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_manual.pdf)
-##
+
 
 ![image](https://user-images.githubusercontent.com/42961200/154386986-e7e3b0c3-c3c5-41d0-a60e-f6d25760f711.png)
 
@@ -563,7 +568,18 @@ The lower part of the facia is dominated by the LCD display. Unfortunately, whil
 ![image](https://user-images.githubusercontent.com/42961200/154409450-e3568df0-ad45-425c-83bd-d9f91ca5e8b6.png)
 
 
-The stick units are very smooth, thanks to twin ball races on each axis. The spring tension was a bit weak for my liking, but was easily adjusted using an Allen key.
+The stick units are very smooth, thanks to twMap {
+    id: _map
+
+    //-- Qt 5.9 has rotation gesture enabled by default. Here we limit the possible gestures.
+    gesture.acceptedGestures:   MapGestureArea.PinchGesture | MapGestureArea.PanGesture | MapGestureArea.FlickGesture
+    gesture.flickDeceleration:  3000
+    plugin:                     Plugin { name: "QGroundControl" }
+
+    // https://bugreports.qt.io/browse/QTBUG-82185
+    opacity:                    0.99
+
+    property string mapNin ball races on each axis. The spring tension was a bit weak for my liking, but was easily adjusted using an Allen key.
 
 Nestling in the side cheeks are a couple of rotary levers. These have a ratchet action and a centre detent, though the centre positions were barely detectable on the review unit.
 
@@ -604,7 +620,18 @@ Menus are organised hierarchically under three headings 'System', 'Linkage', and
 Navigation within a menu is consistent too; press the S1 button to get to the 'home' field. Press a bit longer, and you're all the way back to the opening screen. Within a menu, navigation and data entry are performed in an equally consistent manner.
 
 Looking at the menu categories in more detail: The System menus provide access to system-wide settings such as buddy-box setup, LCD contrast, system timer and so on. The Linkage menus are where you do all the basic setting up, including creating new models, frequency selection, control assignments, and servo adjustments. Finally the Model menus are where you set up the flight conditions, response curves, and mixers.
-All in all, the user interface is consistent and reasonably quick, though the consistency breaks slightly when it comes to the individual mixer screens.
+All in all, the user interface is consistent aMap {
+    id: _map
+
+    //-- Qt 5.9 has rotation gesture enabled by default. Here we limit the possible gestures.
+    gesture.acceptedGestures:   MapGestureArea.PinchGesture | MapGestureArea.PanGesture | MapGestureArea.FlickGesture
+    gesture.flickDeceleration:  3000
+    plugin:                     Plugin { name: "QGroundControl" }
+
+    // https://bugreports.qt.io/browse/QTBUG-82185
+    opacity:                    0.99
+
+    property string mapNnd reasonably quick, though the consistency breaks slightly when it comes to the individual mixer screens.
 
 Programming Capability
 With a wide variety of programming features, the 12FG is well equipped to handle even the most complex of models. Unfortunately there isn't space to cover everything, so I'll choose a few key features.
