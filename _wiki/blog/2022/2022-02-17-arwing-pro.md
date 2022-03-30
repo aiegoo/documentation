@@ -1019,6 +1019,11 @@ communicate with the Raspberry Pi at 921600 baud.
 3. :ref:`LOG_BACKEND_TYPE <copter:LOG_BACKEND_TYPE>` = 3 if you are
 using APSync to stream the dataflash log files to the Raspberry Pi.
 
+### telem wiring
+telem cable - jst 1.25mm
+[ebay](https://www.ebay.com/itm/171377590802)
+
+[wiring](https://www.dronetrest.com/t/how-to-connect-the-unmanned-telemetry-kit-v2-to-pixhack-autopilot/1334)
 
 ### Configure MAVProxy to always run
 
