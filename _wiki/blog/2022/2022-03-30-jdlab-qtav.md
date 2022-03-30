@@ -24,6 +24,12 @@ updated: 2022-03-30 14:07
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## introduction
+
+## Qt multimedia framework
+
+QtAV is a multimedia playback library based on Qt and FFmpeg. It can help facilitate writing a player application. Features include: * Hardware decoding suppprt: DXVA2, VAAPI, VDA, CedarX, CUDA * OpenGL and ES2 support for Hi10P and other 16-bit YUV videos * Real time preview * Video capture in RGB and YUV format * OSD and custom filters * Subtitles * Transform video using GraphicsItemRenderer. (rotate, shear, etc) * Playing frame by frame (currently support forward playing) * Playback speed control * Variant streams: locale file, http, rtsp, etc. * Audio channel, tracks and external audio tracks * Dynamically change render engine when playing * Multiple video outputs for 1 player * Region of interest(ROI), i.e. video cropping * Video eq: brightness, contrast, saturation, hue * QML support as a plugin. Most playback APIs are compatible with QtMultiMedia module
+
+
 이글은 제가 podovat.com의 blog 올린글(http://www.podovat.com/?p=182)에서 퍼온것입니다.
 
 Qt에서 동영상을 처리하기 위해서는 QMovie를 이용하여 애니메이션 gif를 통해 처리를 하거나, Phonon::VideoPlayer을 이용하여야 합니다.
