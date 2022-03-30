@@ -113,10 +113,52 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 7. We strongly suggest “Frisbee” style launching for this unit, as you have no grip in the bottom (precisely to keep it clean and aerodynamic)… Any other style of hand-launching could damage your fingers. Be careful.
 8. This wing was meant to be flown with modern autopilot units for best performance. You can fly it manual, but you will need to have a perfect tuning for this. To improve aerodynamics and handling this design is not very forgiving to rookie mistakes or poor setup. Take your time to double check all is OK before going airborne.
 9. Our best results battery wise, were with a ZOHD 4S2P 18650 7000mAh and that’s what we recommend. Having said that, if you’re a PRO, you will know what to do ;)
+
 ## matek 743
 
 ![image](https://user-images.githubusercontent.com/42961200/160349758-44fdfa74-5688-4ad5-a072-3a3cb20a223d.png)
 
+![image](https://user-images.githubusercontent.com/42961200/160553791-6d2a14dc-c763-4255-8a14-f967a2207349.png)
+![image](https://user-images.githubusercontent.com/42961200/160553887-43b2dcea-b6d4-44d3-b634-359cf2ffffb0.png)
+![image](https://user-images.githubusercontent.com/42961200/160553917-13033e9b-a818-421b-b520-9dddd40bb6a2.png)
+![image](https://user-images.githubusercontent.com/42961200/160554096-e9ea425b-501b-4632-87d5-f2dec0f2c343.png)
+![image](https://user-images.githubusercontent.com/42961200/160554186-1a648b40-77aa-4878-a5b6-a6ea75eaff1e.png)
+
+[spec](http://www.mateksys.com/?portfolio=h743-wing-v2#tab-id-2)
+[layout](http://www.mateksys.com/?portfolio=h743-wing-v2#tab-id-3)
+[wiring](http://www.mateksys.com/?portfolio=h743-wing-v2#tab-id-4)
+[ardupilotMapping](http://www.mateksys.com/?portfolio=h743-wing-v2#tab-id-6)
+
+[ardu-pinout](http://www.mateksys.com/?portfolio=h743-wing-v2#tab-id-7)
+Camera-1 and Vsw On by default
+Make sure 2 cameras are set with identical video format, both PAL or both NTSC.
+
+### GPIOs
+
+PD10 PINIO1 OUTPUT GPIO(81)   //Vsw pad power switch
+PD11 PINIO2 OUTPUT GPIO(82)   //Camera switch
+
+### RCx_OPTION: RC input option
+
+28   Relay On/Off
+34   Relay2 On/Off
+35   Relay3 On/Off
+36   Relay4 On/Off
+e.g.
+
+RELAY_PIN       81    //Vsw GPIO
+RC7_OPTION   28    //Relay On/Off, Use CH7 of Transmitter to switch Vsw
+RELAY_PIN2     82    //Camera switch GPIO
+RC8_OPTION   34    //Relay2 On/Off, Use CH8 of Transmitter to switch camera
+or
+
+RELAY_PIN3       81    //Vsw GPIO
+RC9_OPTION     35    //Relay3 On/Off, Use CH9 of Transmitter to switch Vsw
+RELAY_PIN4       82    //Camera switch GPIO
+RC10_OPTION   36    //Relay4 On/Off, Use CH10 of Transmitter to switch camera
+The configured feature will be triggered when the auxiliary switch’s pwm value becomes higher than 1800. It will be deactivated when the value falls below 1200.
+
+Check the pwm value sent from the transmitter when the switch is high and low using the Mission Planner’s Initial Setup >> Mandatory Hardware >> Radio Calibration screen. If it does not climb higher than 1800 or lower than 1200, it is best to adjust the servo end points in the transmitter.
 Matek Systems H743-WING FLIGHT CONTROLLER 
 
 - 마텍사의 신형 항공용 플라이트 컨트롤러입니다.
@@ -212,6 +254,7 @@ Static power 160mA@5V
 ​
 
 ### FC Firmware
+[http://www.mateksys.com/?p=5159#tab-id-11)
 
 ArduPilot(ChiBiOS): MATEKH743
 
@@ -221,7 +264,7 @@ BetaFlight: MATEKH743
 
 ​
 
-PDB
+- PDB
 
 Input voltage range: 9~36V (3~8S LiPo) w/TVS protection
 
@@ -235,7 +278,7 @@ Sense resistor: 60A continuous, 132A burst.
 
 ​
 
-BEC 5V output
+- BEC 5V output
 
 Designed for Flight controller, Receiver, OSD, Camera, Buzzer, 2812 LED_Strip, Buzzer, GPS module, AirSpeed
 
@@ -265,7 +308,7 @@ Continuous current: 8 Amps, Max.10A
 
 BEC 3.3V output
 
-Linear Regulator
+Linear Regulatorhttp://www.mateksys.com/?p=5159#tab-id-11
 
 Continuous current: 200mA
 
@@ -281,7 +324,7 @@ Weight: 30g with USB exte
 
 
 1x USB(Type-C)/Beep (Passive buzzer) Extender
-
+http://www.mateksys.com/?p=5159#tab-id-11
 1x 20cm SH-4P to GH-4P cable for CAN port
 
 1x 20cm SH-6P to SH-6P cable for USB extender.
@@ -290,15 +333,42 @@ Dupont 2.54 pins (Board is shipped unsoldered)
 
 ​
 
-마텍 홈페이지에 가시면 세팅에 관한 많은 자료를 찾
+마텍 홈페이지에 가시면 세팅에 관한 많은 자료를 찾을 수 있습니다.
 
+What is new on the H743-Wing V2
+Use ICM42605 instead of ICM20602
+Moved PDB/current sensor from FC board to bottom plate.
+Moved 8A BEC from top board to bottom plate.
+JST-GH connector for CAN port instead of JST-SH connector.
+Add a JST-GH connector for I2C2, for plug and play with ASPD-4525
+ArduPilot
+H743-WING-V2 with ICM42605 is supported by ArduPilot 4.1 latest or newer,
+ICM42605 is defined as first IMU (IMU0) ,  MPU6000 is the 2nd (IMU1).
+with ArduPilot 4.1 or higher, set INS_ENABLE_MASK to 7 or default 127.
+Current sensor range is 220A on H743-WING-V2,  make sure you set the BATT_AMP_PERVLT to 66.7
+It is recommended to use STM32CubeProgrammer to erase MCU and upload firmware.  check this blog http://www.mateksys.com/?p=6905
+Known issue and solution,  H7 will not initialize with Ardupilot firmware
+INAV
+Current sensor range is 220A on H743-WING-V2,  make sure you set the Current Meter Scale to 150
+IMU ICM42605 is supported by INAV3.0.2 or higher.
+MPU6000 is the first IMU(IMU0, default), ICM42605 is the 3rd IMU (IMU2) in INAV MATEKH743 target.
+If you want to try the new ICM-4 series of IMUs.  download inav_3.0.2_MATEKH743.hex
+set gyro_to_use = 2
+set acc_hardware = icm42605
+save
+If you stick with MPU6000 only,  H743-WING-V2 works with stable version 3.0.x downloaded from configurator also.
+SD card and MSC mode for H743 were not implemented in INAV3.x.  They are supported by INAV4.x or higher.
+Others
+If the ESCs you are using don’t have enough capacitors integrated,  low ESR electrolytic capacitor is required for reducing ESC noise.
 
+## openHD
 {% include youtubePlayer.html id=page.youtubeID7 %}
 
 [openHD-raspi](https://openhd.gitbook.io/open-hd/general/getting-started)
 
 > setup
 ![image](https://user-images.githubusercontent.com/42961200/160098341-f6803cdd-baea-402f-a300-9702f7d25153.png)
+
 
 {% include youtubePlayer.html id=page.youtubeID9 %}
 
@@ -378,7 +448,7 @@ Indicator LED to show the frequency and power
 [guide](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_guide.pdf)
 
 [manual](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_manual.pdf)
-##
+
 
 ![image](https://user-images.githubusercontent.com/42961200/154386986-e7e3b0c3-c3c5-41d0-a60e-f6d25760f711.png)
 
@@ -498,7 +568,18 @@ The lower part of the facia is dominated by the LCD display. Unfortunately, whil
 ![image](https://user-images.githubusercontent.com/42961200/154409450-e3568df0-ad45-425c-83bd-d9f91ca5e8b6.png)
 
 
-The stick units are very smooth, thanks to twin ball races on each axis. The spring tension was a bit weak for my liking, but was easily adjusted using an Allen key.
+The stick units are very smooth, thanks to twMap {
+    id: _map
+
+    //-- Qt 5.9 has rotation gesture enabled by default. Here we limit the possible gestures.
+    gesture.acceptedGestures:   MapGestureArea.PinchGesture | MapGestureArea.PanGesture | MapGestureArea.FlickGesture
+    gesture.flickDeceleration:  3000
+    plugin:                     Plugin { name: "QGroundControl" }
+
+    // https://bugreports.qt.io/browse/QTBUG-82185
+    opacity:                    0.99
+
+    property string mapNin ball races on each axis. The spring tension was a bit weak for my liking, but was easily adjusted using an Allen key.
 
 Nestling in the side cheeks are a couple of rotary levers. These have a ratchet action and a centre detent, though the centre positions were barely detectable on the review unit.
 
@@ -539,7 +620,18 @@ Menus are organised hierarchically under three headings 'System', 'Linkage', and
 Navigation within a menu is consistent too; press the S1 button to get to the 'home' field. Press a bit longer, and you're all the way back to the opening screen. Within a menu, navigation and data entry are performed in an equally consistent manner.
 
 Looking at the menu categories in more detail: The System menus provide access to system-wide settings such as buddy-box setup, LCD contrast, system timer and so on. The Linkage menus are where you do all the basic setting up, including creating new models, frequency selection, control assignments, and servo adjustments. Finally the Model menus are where you set up the flight conditions, response curves, and mixers.
-All in all, the user interface is consistent and reasonably quick, though the consistency breaks slightly when it comes to the individual mixer screens.
+All in all, the user interface is consistent aMap {
+    id: _map
+
+    //-- Qt 5.9 has rotation gesture enabled by default. Here we limit the possible gestures.
+    gesture.acceptedGestures:   MapGestureArea.PinchGesture | MapGestureArea.PanGesture | MapGestureArea.FlickGesture
+    gesture.flickDeceleration:  3000
+    plugin:                     Plugin { name: "QGroundControl" }
+
+    // https://bugreports.qt.io/browse/QTBUG-82185
+    opacity:                    0.99
+
+    property string mapNnd reasonably quick, though the consistency breaks slightly when it comes to the individual mixer screens.
 
 Programming Capability
 With a wide variety of programming features, the 12FG is well equipped to handle even the most complex of models. Unfortunately there isn't space to cover everything, so I'll choose a few key features.
