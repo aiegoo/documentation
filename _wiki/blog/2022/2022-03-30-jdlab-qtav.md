@@ -233,6 +233,73 @@ QtAV on Mac OS X
 
 [img](https://camo.githubusercontent.com/cd299ec7cd7776a0b05a847f41299164ea5534af/68747470733a2f2f736f75726365666f7267652e6e65742f70726f6a656374732f717461762f73637265656e73686f74732f69705f63616d6572612e6a7067)
 
+
+### stackoom
+
+I have a working streaming device (raspberry pi with camera module - it has a tool called "raspivid"), from which I am streaming live video using netcat
+```bash
+raspivid -t 999999 -w 300 -h 300 -hf -fps 20 -o - | nc -l 9999
+```
+In Ubuntu, after connecting to the device using netcat and streaming video to mplayer, everything works like a charm...
+```bash
+nc *ip* 9999 | mplayer -fps 200 -demuxer h264es -
+```
+Now, I want to make this video available for Windows users (with minimal setup required, possibly only an .exe). I decided to use Qt 5 - it has qTcpSocket and QMediaPlayer (according to doc, it supports stream-input). I already have some code which can read data from socket and also play local files.
+
+But playing streams does not seem to work. Maybe it is because the video format and some codecs ? WMP also cant play the video I saved using raspivid, although vlc plays it perfectly. I also tested cat'ing a simple .avi file (which Qt plays successfully from local disc) in raspberry pi and playing the same TcpStream in Qt with no success.
+
+Also, after netcat'ing from PI and running the compiled program in Windows, I can see that the LED on wifi dongle on raspberry pi starts flashing - so the stream arrives in the application.
+
+Could you maybe give me some advice, what to do/try next?
+
+I have not much previous experience with C++, so if I am asking something really wrong, please do not hit me too hard :)
+
+Also, the "SimpleChatClient" comes from a random template I started working on..
+
+```c++
+SimpleChatClient::SimpleChatClient(QWidget* parent, Qt::WindowFlags flags)
+: QWidget(parent, flags)
+{
+    QVBoxLayout* main   = new QVBoxLayout(this);
+    player = new QMediaPlayer(this, QMediaPlayer::StreamPlayback);
+    QVideoWidget* widget = new QVideoWidget;
+    widget->show();
+    player->setVideoOutput(widget);
+    main->addWidget(widget);
+    setLayout(main);
+    socket = new QTcpSocket(this);
+    connect(socket, SIGNAL(connected()), this, SLOT(playStream()));
+    toggleConnection();
+}
+
+SimpleChatClient::~SimpleChatClient()
+{
+}
+
+void SimpleChatClient::toggleConnection()
+{
+    if (socket->state() == QAbstractSocket::UnconnectedState)
+    {
+        socket->connectToHost(SERVER, PORT);
+    }
+    else
+    {
+        socket->disconnectFromHost();
+    }
+}
+
+void SimpleChatClient::playStream()
+{
+    player->setMedia(QMediaContent(), socket);
+    //player->setMedia(QUrl::fromLocalFile("C:\\Users\\m\\d.avi")); //This works for local files
+    if (socket->canReadLine())
+    {
+        player->play();
+    }
+}
+```
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
