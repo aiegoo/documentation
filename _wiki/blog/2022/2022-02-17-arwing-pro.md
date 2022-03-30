@@ -77,7 +77,7 @@ or [others](https://usa.banggood.com/Sonicmodell-AR-Wing-Pro-1000mm-Wingspan-EPP
 ![e3d1e759c4](https://user-images.githubusercontent.com/42961200/155498941-140c09d0-b56b-4f0b-b8eb-2c37614cc321.jpg)
 
 ![5efaf776c6](https://user-images.githubusercontent.com/42961200/155499063-6ce87427-7c84-410a-bbfb-e60d86cfa62f.jpg)
-
+https://www.dronetrest.com/t/how-to-connect-the-unmanned-telemetry-kit-v2-to-pixhack-autopilot/1334
 ![cca3df1f10](https://user-images.githubusercontent.com/42961200/155499081-376bc5cb-ca43-48b3-87b1-b4e39d6b6bd2.jpg)
 ![ae7de03dd0](https://user-images.githubusercontent.com/42961200/15549https://youtu.be/hGxbYiV6TEA9095-6938a573-50e2-422f-ad72-e29682b7ad22.jpg)
 ![334e441119](https://user-images.githubusercontent.com/42961200/155499106-eaf404a5-7b1c-4ae2-a044-338a09250d5b.jpg)
@@ -901,7 +901,7 @@ The Quanum Pagoda-2 omnidirectional antenna was designed by Maarten Baert who wa
 • Good omnidirectional radiation pattern
 • Good axial ratio
 • Compact dimensions
-• Easy to manufacture and at low cost
+• Easy to manuwiringfacture and at low cost
 
 
 He succeeded in his goal in designing an antenna with these attrubutes. The Quanum Pagoda-2 antenna is built using regular PCB's spaced at exact intervals with the final design taking months of fine tuning. The Quanum Pagoda-2 also have spacers in between the plates to ensure they are kept aligned with each other.  The end result is an antenna with a smoother radiation pattern and a significantly better axial ratio than most other antenna's.
@@ -1017,13 +1017,14 @@ enable MAVLink on the serial port.
 2. :ref:`SERIAL2_BAUD <copter:SERIAL2_BAUD>` = 921 so the Pixhawk can
 communicate with the Raspberry Pi at 921600 baud.
 3. :ref:`LOG_BACKEND_TYPE <copter:LOG_BACKEND_TYPE>` = 3 if you are
-using APSync to stream the dataflash log files to the Raspberry Pi.
+using APSync twiringo stream the dataflash log files to the Raspberry Pi.
 
 ### telem wiring
 telem cable - jst 1.25mm
 [ebay](https://www.ebay.com/itm/171377590802)
 
 [wiring](https://www.dronetrest.com/t/how-to-connect-the-unmanned-telemetry-kit-v2-to-pixhack-autopilot/1334)
+![image](https://user-images.githubusercontent.com/42961200/160786703-78a8ca97-bff2-4946-b0c5-f78766ede2a0.png)
 
 ### Configure MAVProxy to always run
 
