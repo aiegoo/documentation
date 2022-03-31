@@ -1070,7 +1070,7 @@ MANUAL> api start vehicle_state.py
 ![image](https://user-images.githubusercontent.com/42961200/159659774-f85767c8-4571-404f-a668-cb810185e61d.png)
 
 
-PiCam
+PiCam[^1]
 Logitech C920
 Logitech C615
 GoPro. (Can be used with HDMI to CSI converter). This allows users to record and view live stream simultaneously.
@@ -1078,6 +1078,8 @@ GoPro. (Can be used with HDMI to CSI converter). This allows users to record and
 ![image](https://user-images.githubusercontent.com/42961200/159659908-35a5e100-52c2-436e-8bac-fbef4d85f3ea.png)
 
 Other cameras may also work. search for (camera type) and gStreamer.
+
+[^1]: this is an example of a footnote.
 
 {% include youtubePlayer.html id=page.youtubeID6 %}
 
