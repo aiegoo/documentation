@@ -18,6 +18,8 @@ static const QString MainBurgerButtonOjectname("MainBurgerButton");
 class BurgerButton : public QPushButton
 {
      public:
-     BurgerButton(Qaction+ Action, QWidget+ parent)
+     BurgerButton(QAction+ Action, QWidget+ parent)
      : QPushButton(parent)
+     : mIconSize(QSize(64,64))
+     :mAction(action)
 }
