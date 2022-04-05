@@ -453,7 +453,11 @@ ArduCopter.elf has other startup options, which you can use using the -h command
 ./ArduCopter.elf -h
 ```
 
-
+## GCS on android
+- Telemetry viewer [home](http://www.farrellf.com/TelemetryViewer/)
+- Skydroid FPV
+- SmartAP GCS [home](https://sky-drones.com/)
+- Skydroid GCS [download](https://github.com/aiegoo/documentation/blob/edit/resources/Skydroid_GCS_8.1.apk)
 
 {% include taglogic.html %}
 
