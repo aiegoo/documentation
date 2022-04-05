@@ -314,7 +314,7 @@ PX4 enables autopilot-controlled fixed-wing (FW) landing in [Missions](../flying
 
 The landing logic has several phases, as shown below. In the first phase the vehicle will follow a fixed trajectory ([FW_LND_ANG](#FW_LND_ANG)) towards the ground. At the flare landing altitude ([FW_LND_FLALT](#FW_LND_FLALT)) the vehicle will start to follow a flare path (the curve is based on the value of [FW_LND_HVIRT](#FW_LND_HVIRT)).
 
-![Fixed Wing - Landing Path](../../assets/flying/fw_landing_path.png)
+![Fixed Wing - Landing Path](https://github.com/aiegoo/documentation/blob/49d3115ae48d30b2dc636f70a553f5a09cd38196/images/drones/flying/fw_landing_path.png)
 
 The flare landing altitude is relative to the altitude that the FW vehicle "thinks" is ground level. In [Land mode](../flight_modes/land.md) the ground altitude is not known and the vehicle will use assume it is at 0m (sea level). Often the ground level will be much higher than sea level, so the vehicle will land in the first phase (it will land on the ground before it reaches the flare altitude).
 
