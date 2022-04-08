@@ -271,8 +271,57 @@ export DOCKER_HOST=tcp://<ip of your VM>:2375
 # run some docker command to see if it works, e.g. ps
 docker ps
 ```
+## docker running GUI apps
 
+[blog](http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/)
 
+I’ve been doing all of my real (paid) work on VMs / containers for a while now but when it comes to writing Java code for some projects for university I still need to move away from using vim and install some full blown IDE in order to be productive. This has been bothering me for quite some time but this week I was finally able put the pieces together to run NetBeans in a Docker container so that I can avoid installing a lot of Java stuff on my machine that I don’t use on a daily basis.
+
+There are a few different options to run GUI applications inside a Docker container like using SSH with X11 forwarding, or VNC but the simplest one that I figured out was to share my X11 socket with the container and use it directly.
+
+The idea is pretty simple and you can easily it give a try by running a Firefox container using the following Dockerfile as a starting point:
+
+```yaml
+FROM ubuntu:14.04
+
+RUN apt-get update && apt-get install -y firefox
+
+# Replace 1000 with your user / group id
+RUN export uid=1000 gid=1000 && \
+    mkdir -p /home/developer && \
+    echo "developer:x:${uid}:${gid}:Developer,,,:/home/developer:/bin/bash" >> /etc/passwd && \
+    echo "developer:x:${uid}:" >> /etc/group && \
+    echo "developer ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/developer && \
+    chmod 0440 /etc/sudoers.d/developer && \
+    chown ${uid}:${gid} -R /home/developer
+
+USER developer
+ENV HOME /home/developer
+CMD /usr/bin/firefox
+
+```
+
+`docker build -t firefox . it` and run the container with:
+
+```bash
+docker run -ti --rm \
+       -e DISPLAY=$DISPLAY \
+       -v /tmp/.X11-unix:/tmp/.X11-unix \
+       firefox
+
+```
+
+If all goes well you should see Firefox running from within a Docker container.
+
+![example](http://fabiorehm.com/images/posts/2014-09-11/firefox-demo.gif)
+
+### Getting a NetBeans container up and running
+Preparing a NetBeans base image was not that straightforward since we need to install some additional dependencies (namely the libxext-dev, libxrender-dev and libxtst-dev packages) in order to get it to connect to the X11 socket properly. I also had trouble using OpenJDK and had to switch to Oracle’s Java for it to work.
+
+After lots of trial and error, I was finally able to make it work and the result is a base image available at the Docker Hub with sources on GitHub.
+
+Here’s a quick demo of it in action
+![example](http://fabiorehm.com/images/posts/2014-09-11/firefox-demo.gif)
 
 {% include taglogic.html %}
 
