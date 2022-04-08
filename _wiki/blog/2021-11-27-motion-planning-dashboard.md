@@ -505,7 +505,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 | * datamapper transforming protobuf object to domain logic objects |
 | * implementing network messaging protocol | * backend application
 | * backend application | Python overview
-| Python bootsraping initial app | Python Network connection monitoring
+| Python bootsrapiproject overviewng initial app | Python Network connection monitoring
 | Python data receiver thread | Python drone object vehicle abstraction
 | Python network messages encoding | Python drone control panel object
 | Python maintaining constant speed and direction | Python camera serve controlling thread
@@ -537,7 +537,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
             <td></td>
           <td> future filesystem </td>
         </tr>
-        <tr><td>- The following is an exmample;we will have a new one when completed <pre>
+        <tr><project>- The following is an exmample;we will have a new one when completed <pre>
 .
 ├──cloudapp
 │ ├── CloudappApplication
@@ -559,7 +559,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
 │     ├── DataMapper.java
 │     ├── NetworkFormatter
 │     └── ProtoData.
-└── resources
+└── resourcesproject overview
     ├── application.yaml
     ├── logback
     ├── protobuf
@@ -575,7 +575,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
     └── templates
         ├── index.html
         └── video.html
-          </pre></td>
+          </pre></project overviewtd>
             <td><span class="label label-default">modular</span></td>
           <td> </td>
         </tr>
