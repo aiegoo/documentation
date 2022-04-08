@@ -28,3 +28,7 @@ The boards in this category are:
 - [Hex Cube Black](../flight_controller/pixhawk-2.md) (FMUv3)
 - [mRo Pixhawk](../flight_controller/mro_pixhawk.md) (FMUv3)
 - [Holybro Pixhawk Mini](../flight_controller/pixhawk_mini.md) (FMUv3)
+- [pixhawk5](http://www.holybro.com/product/pixhawk-5x/)
+
+
+![image](https://user-images.githubusercontent.com/42961200/162350757-6bae051f-0f40-4969-8621-00002ac12b51.png)
