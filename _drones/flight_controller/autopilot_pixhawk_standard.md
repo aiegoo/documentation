@@ -37,7 +37,7 @@ The boards in this category are:
 {% include youtubePlayer.html id=page.youtubeID %}
 [pin_out](https://github.com/aiegoo/uas-reference/blob/master/drone-dev/Holybro_Pixhawk5X_Pinout.pdf)
 
-
+{{site.data.alerts.details}}
 ```
 1:45
 pixhawk cube but it's a much lower
@@ -583,7 +583,8 @@ thing here this is a power distribution
 3:48
 board this looks very similar to the one
 3:50
-that was actually included in the kit
+that was actually included in the:::
+{{site.data.alerts.ended}} kit
 3:53
 with the holy bro x 500 v2 frame and the
 3:56
@@ -1744,3 +1745,6 @@ now the manual that comes in the box is
 4:11
 very basic it does give you all the pin
 ```
+
+:::
+{{site.data.alerts.ended}}
