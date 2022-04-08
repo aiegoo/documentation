@@ -35,6 +35,7 @@ The boards in this category are:
 ![image](https://user-images.githubusercontent.com/42961200/162350757-6bae051f-0f40-4969-8621-00002ac12b51.png)
 
 {% include youtubePlayer.html id=page.youtubeID %}
+[pin_out](https://github.com/aiegoo/uas-reference/blob/master/drone-dev/Holybro_Pixhawk5X_Pinout.pdf)
 
 
 ```
