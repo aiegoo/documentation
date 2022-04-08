@@ -275,6 +275,7 @@ docker ps
 
 [blog](http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/)
 
+[github](https://github.com/fgrehm/docker-netbeans)
 I’ve been doing all of my real (paid) work on VMs / containers for a while now but when it comes to writing Java code for some projects for university I still need to move away from using vim and install some full blown IDE in order to be productive. This has been bothering me for quite some time but this week I was finally able put the pieces together to run NetBeans in a Docker container so that I can avoid installing a lot of Java stuff on my machine that I don’t use on a daily basis.
 
 There are a few different options to run GUI applications inside a Docker container like using SSH with X11 forwarding, or VNC but the simplest one that I figured out was to share my X11 socket with the container and use it directly.
@@ -314,7 +315,7 @@ docker run -ti --rm \
 If all goes well you should see Firefox running from within a Docker container.
 
 ![example](http://fabiorehm.com/images/posts/2014-09-11/firefox-demo.gif)
-
+https://github.com/fgrehm/docker-netbeans
 ### Getting a NetBeans container up and running
 Preparing a NetBeans base image was not that straightforward since we need to install some additional dependencies (namely the libxext-dev, libxrender-dev and libxtst-dev packages) in order to get it to connect to the X11 socket properly. I also had trouble using OpenJDK and had to switch to Oracle’s Java for it to work.
 
