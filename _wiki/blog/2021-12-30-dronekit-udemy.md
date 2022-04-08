@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "pymavlink dronekit udemy uav"
+keywords: "pymavlink dronekit udemy uav stm32 navercafe naver"
 summary: "Thu, Dec 30, 21, integrate udemy drone course with dronekit.md of this documentation site"
 excerpt_separator: <!--more-->
 toc: true
@@ -95,9 +95,7 @@ DroneKit and PX4 are currently working on getting full compatibility. As of Dron
 Start by installing DroneKit-python from the current master.
 
 ```sh
-git clone https://github.com/dronekit/dronekit-python.git
-cd ./dronekit-python
-sudo python setup.py build
+git clone https://github.com/dronekit/dronekit-python.githttp://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/
 sudo python setup.py install
 ```
 
@@ -116,7 +114,7 @@ Connect to a MAVLink port of your drone or simulation (e.g. [JMavSim](../simulat
 ```C
 # Connect to the Vehicle
 print "Connecting"
-connection_string = '127.0.0.1:14540'
+connection_string = '127.0.0.1:14540'http://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/
 vehicle = connect(connection_string, wait_ready=True)
 
 ```
@@ -152,9 +150,7 @@ MAKING NEW VM IN VBOX:
 7. VM hardrive disk space ~30-50 gb should be lower safe amount.
 
 THIS CREATES A NEW MACHINE IN THE VBOX LIST, but need to install the ubuntu
-.iso image to this machine in VBOX
-
-1. Click on settings of the newly created machine
+.iso image to this machine in VBOXhttp://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/
 2. Enable shared clipboard (CP/Paste sharing of host OS and VM OS)
 3. Drag and drop (Bidirectional
 4. Can alter things like amount of cores allocated to VM
@@ -186,9 +182,7 @@ Don’t allocate too much RAM to your VM, because windows still needs some RAM t
 
 3. type "pip install pymavlink==2.4.8
 
-## Full mission example
-
-The following python script shows a full mission example using DroneKit and PX4. Mode switching is not yet fully supported from DroneKit, we therefor send our own custom mode switching commands.
+## Full mission examplehttp://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/
 
 ```C
 ################################################################################################
@@ -220,12 +214,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-c", "--connect", help="connection string")
 args = parser.parse_args()
 
-if args.connect:
-    connection_string = args.connect
-
-
-################################################################################################
-# Init
+if args.connect:http://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/
 ################################################################################################
 
 # Connect to the Vehicle
