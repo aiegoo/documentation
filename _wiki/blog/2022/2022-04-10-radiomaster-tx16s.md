@@ -98,6 +98,7 @@ After all files and folders (except RADIO and MODEL) are deleted:
 
 open the newest “SD contents” (sdcard-480×272-2.3V0029.zip)
 transfer all files to the sd card of the Radiomaster TX16s
+![image](https://user-images.githubusercontent.com/42961200/162608113-a8b71ac1-76d3-450a-83c0-029e085d5f17.png)
 
 
 {% include taglogic.html %}
