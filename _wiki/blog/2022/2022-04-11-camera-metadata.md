@@ -46,6 +46,23 @@ System Timestamp (ns since boot)	AP Timestamp (ms since boot)	lat	lon	alt (m)	re
 - Autel
 ![image](https://user-images.githubusercontent.com/42961200/162670487-bbd7beec-7958-44eb-bb03-2131c58c45e6.png)
 
+## Plan
+### Camera DSLR firmware
+To project IMU data(position/lat/lon/alt/relative-alt Vx Vy Vz /heading) to exif Metadata of camera module
+
+- output
+Asacii, LDI, LAS, Exif-metadata
+
+
+### Android App
+To interface with the on-board camera module(samsung galaxy) to blend seamlessly with logging information with the FC IMU and GPS data
+
+
+### Post-processing Windows App
+
+To add aircraft trajectory workflow and produce various outputs as described in the pdf link above "Leica Workflow"
+
+
 
 
 {% include taglogic.html %}
