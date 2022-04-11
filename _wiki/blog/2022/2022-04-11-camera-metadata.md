@@ -57,23 +57,35 @@ Asacii, LDI, LAS, Exif-metadata
 ### Android App
 To interface with the on-board camera module(samsung galaxy) to blend seamlessly with logging information with the FC IMU and GPS data
 
+이부분은 좀더 조사가 필요합니다.
 
 ### Post-processing Windows App
 
 To add aircraft trajectory workflow and produce various outputs as described in the pdf link above "Leica Workflow"
 
+결론: 후처리를 통한 카메라 매타데이터와 GPS, IMU 데이타를 병합하는 솔루션은 GrafNav, IPAS Pro와 같이 작동하는 앱을 개발 하는 것은 가능 합니다. 아래 Leica_workflow의 내용에 사용법이 자세히 나와 있습니다.
 
 ## Gphoto2 Lib
 ref links: [gphoto.org](http://www.gphoto.org/proj/libgphoto2/support.php), [Leica-workflow](http://home.iitk.ac.in/~blohani/LiDARSchool2008/Downloads/IndiaLecture11_LeicaWorkflow.pdf), [olliew_NTCamera](http://www.olliw.eu/storm32bgc-wiki/NT_Camera), [mavlink_camera](https://mavlink.io/en/services/camera.html)
 
 
-결론: gphoto2 라이브러리를 사용하는 기능은 Image Capture, Liveview, Configuration, Trigger-capture와 같은 카메라 셋팅과 카메라 작동과 관련된 기능을 제공하도록 하는 것입니다. rhzkxKO-40c이 라이브러리를 활용하여 만든 NT camera는 NT IMU모듈을 연결했을 때 GCS와 조정기 RC를 통해 위 4가지 기능을 제공 한다는 것입니다. (아래 첫번째 유튜브 참고)
+결론: gphoto2 라이브러리를 사용하는 기능은 Image Capture, Liveview, Configuration, Trigger-capture와 같은 카메라 작동과 카메라 설정 관련된 기능을 제공하도록 하는 것입니다. 이를 활용하여 만든 NT camera는 NT IMU모듈을 연결했을 때 GCS와 조정기 RC를 통해 위 4가지 기능을 제공 한다는 것입니다. (아래 첫번째 유튜브 참고) 
+
+결론은 IMU를 탑재한 카메라 모듈을 개발 하거나 FC와 통신 하도록 하는 방법입니다. (고려사항 gps = 1 Hz, IMU = 200 Hz)
+
+단, olliw.eu 링크의 맨 아래 씨리얼 API를 통해 시리얼 데이타 라인 응용 부분인데, 설명에는 카메라와 Raspi와의 통신을 가능 케 한다는 것으로 단순한 카메라 기능에 제한 되는 것인지, 제한되더라도 메타uorb 데이터만 불러서 (extract) IMU 데이타를 추가해 위의 센트라 카메라 데이타의 예시처럼 할 수 있는 지 여부는 좀더 알아 봐야 할 부분입니다.
+
+
+<hr>
+
+{{site.data.alerts.hr_shaded}}
+
 
 [NT_camera](http://www.olliw.eu/storm32bgc-wiki/NT_Camera)
 
 {% include youtubePlayer.html id=page.youtubeID %}
 
-```diff
+```diffuorb
 1:40
 food it's you a port to this NT IMU and
 1:44
@@ -84,10 +96,38 @@ example you can start and stop the video
 of course but you also can now access
 1:51
 the on-screen display the OSD menu
-1:55
-through the transmitter sticks and then
-1:58
-there's an additional cool feature
+1:55Serial API
+The “Serial Api” is a special camera model, designed to inter-operate with an external computing device, such as a Raspberry Pi, Arduino, and alike, via a serial data line (in the following the example of a Raspberry Pi, denoted as RPi, is chosen). The prototypical application example would be to integrate gphoto-controlled cameras into the STorM32 system.
+
+The RPi is connected to the UART on the STorM32 controller which is selected in the parameter Camera ComPort. The serial API camera model then provides a set of commands to exchange information between the STorM32's NT Camera functionality and the RPi. On the RPi a script is running which handles the communication, i.e., translates the commands of the serial API into the corresponding actions needed for the specific camera which shall be operated, and vice versa.
+
+In the [GUI:Functions] tab set as follows:
+
+Camera Model = “Serial Api”
+Camera ComPort: Select the UART (“default” is currently not supported)
+The serial API currently consists of the following:
+
+"shutter\n", "videoon\n", "videooff\n": These commands correspond to the STorM32's internal SHUTTER, VIDEOON and VIDEOOFF states, and are send whenever the respective state is assumed. This can be via an input as selected in the parameter Camera Control, a serial command, a MAVLink command, or via the MAVLink Camera microservice.
+"cntrl2high\n", "cntrl2low\n", "cntrl2stop\n": These commands are send according to the state of the input selected in the parameter Camera Control2.
+SENDCAMTEXT: This script command sends a user-defined string to the RPi (the string is appended by a '\n' character). This allows us to use the potential of scripts for controlling the camera handled by the RPi.
+An example Python script which can be run on a RPi is available in the firmware .zip file.
+
+UartX Configuration
+The number of available UART ports on STorM32 boards is limited, especially on v1.3 boards, and it can thus happen that one is running out of them.
+
+In such cases, the RC-0 and RC-1 input pins can be reconfigured to work as a further UART port, then named UARTX. This comes at the obvious cost that these inputs cannot be used anymore as PWM, Spektrum, SBus, and alike inputs.
+
+For this, set:
+
+UartX Configuration = “uartX @ 115200” (the parameter is located in the [GUI:Setup] tab)
+Camera ComPort = “uartX”
+The physical assignment is
+
+RC-0 = UARTX Rx
+RC-1 = UARTX Tx
+For the location of the RC-0, RC-1 pins on your board please refer to Pins and Connectors.
+
+
 1:59
 namely that math link has what we call a
 2:03
