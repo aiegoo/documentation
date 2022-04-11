@@ -93,6 +93,8 @@ namely that math link has what we call a
 2:03
 camera manager which provides you
 ```
+![image](https://user-images.githubusercontent.com/42961200/162684196-c4e1df2c-597d-439f-adf2-733eec1c4e9b.png)
+
 {% include youtubePlayer.html id=page.youtubeID2 %}
 
 ```
@@ -109,6 +111,8 @@ your camera to a full-fledged muffling
 5:45
 camera and this works also for for that
 ```
+![image](https://user-images.githubusercontent.com/42961200/162684289-64a652ae-37fd-4d1b-80e2-c3e8c8819776.png)
+
 
 ### NT camera parameters
 The NT Camera is related to a number of parameters, which are located in two places in the GUI, the [GUI:Functions] tab and the [GUI:Interfaces Tool] dialog.
