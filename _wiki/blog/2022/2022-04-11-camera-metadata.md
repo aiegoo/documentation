@@ -45,7 +45,7 @@ System Timestamp (ns since boot)	AP Timestamp (ms since boot)	lat	lon	alt (m)	re
 To project IMU data(position/lat/lon/alt/relative-alt Vx Vy Vz /heading) to exif Metadata of camera module
 
 - output
-Asacii, LDI, LAS, Exif-metadata
+Ascii, LDI, LAS, Exif-metadata
 
 
 ### Android App
