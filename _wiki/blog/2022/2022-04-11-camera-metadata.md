@@ -25,6 +25,9 @@ updated: 2022-04-11 13:32
 
 ## 
 
+
+[leica_workflow](https://github.com/aiegoo/uas-reference/blob/master/drone-dev/camera_metadata.pdf)
+
 ![image](https://user-images.githubusercontent.com/42961200/162666950-67979d5b-ff72-4a12-8519-70045cc3b452.png)
 
 
