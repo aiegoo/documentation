@@ -10,7 +10,7 @@ folder: blog
 collection: wiki
 categories: jdlab
 keywords: "jdlab camera dslr slr metadata exif firmware gpho2"
-summary: "Mon, Apr 11, 22, perform post processing of gps/imu data or develop camera firmware lib to infuse IMUfrom fc to exif metadata"
+summary: "Mon, Apr 11, 22, perform post processing of gps/imu data or develop camera firmware lib to infuse IMU from fc to exif metadata"
 excerpt_separator: <!--more-->
 toc: true
 public: true
