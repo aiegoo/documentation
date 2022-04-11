@@ -23,12 +23,24 @@ updated: 2022-04-11 13:32
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 
+## Workflow ideas
 
 
 [leica_workflow](https://github.com/aiegoo/uas-reference/blob/master/drone-dev/camera_metadata.pdf)
 
 ![image](https://user-images.githubusercontent.com/42961200/162666950-67979d5b-ff72-4a12-8519-70045cc3b452.png)
+
+
+### sentera camera metadata
+
+```
+System Timestamp (ns since boot)	AP Timestamp (ms since boot)	lat	lon	alt (m)	relative_alt (m)	vx (m/s)	vy (m/s)	vz (m/s)	hdg (deg)
+103704661833	100777	35.6255216	128.360851	28.63	-0.091	0	0	0.01	175.3
+103814731781	100875	35.6255216	128.360851	28.63	-0.093	0	0	0.01	175.29
+103904196573	100977	35.6255216	128.360851	28.63	-0.094	0	0	0.01	175.3
+104001914073	101078	35.6255216	128.360851	28.63	-0.093	0	0	0.01	175.3
+```
+
 
 
 {% include taglogic.html %}
