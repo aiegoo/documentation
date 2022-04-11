@@ -96,23 +96,30 @@ example you can start and stop the video
 of course but you also can now access
 1:51
 the on-screen display the OSD menu
-1:55Serial API
+1:55
+```
+
+### Serial API
 The “Serial Api” is a special camera model, designed to inter-operate with an external computing device, such as a Raspberry Pi, Arduino, and alike, via a serial data line (in the following the example of a Raspberry Pi, denoted as RPi, is chosen). The prototypical application example would be to integrate gphoto-controlled cameras into the STorM32 system.
 
 The RPi is connected to the UART on the STorM32 controller which is selected in the parameter Camera ComPort. The serial API camera model then provides a set of commands to exchange information between the STorM32's NT Camera functionality and the RPi. On the RPi a script is running which handles the communication, i.e., translates the commands of the serial API into the corresponding actions needed for the specific camera which shall be operated, and vice versa.
 
 In the [GUI:Functions] tab set as follows:
 
+```
 Camera Model = “Serial Api”
 Camera ComPort: Select the UART (“default” is currently not supported)
+```
 The serial API currently consists of the following:
 
 "shutter\n", "videoon\n", "videooff\n": These commands correspond to the STorM32's internal SHUTTER, VIDEOON and VIDEOOFF states, and are send whenever the respective state is assumed. This can be via an input as selected in the parameter Camera Control, a serial command, a MAVLink command, or via the MAVLink Camera microservice.
+
 "cntrl2high\n", "cntrl2low\n", "cntrl2stop\n": These commands are send according to the state of the input selected in the parameter Camera Control2.
+
 SENDCAMTEXT: This script command sends a user-defined string to the RPi (the string is appended by a '\n' character). This allows us to use the potential of scripts for controlling the camera handled by the RPi.
 An example Python script which can be run on a RPi is available in the firmware .zip file.
 
-UartX Configuration
+### UartX Configuration
 The number of available UART ports on STorM32 boards is limited, especially on v1.3 boards, and it can thus happen that one is running out of them.
 
 In such cases, the RC-0 and RC-1 input pins can be reconfigured to work as a further UART port, then named UARTX. This comes at the obvious cost that these inputs cannot be used anymore as PWM, Spektrum, SBus, and alike inputs.
