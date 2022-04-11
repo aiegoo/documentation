@@ -19,7 +19,7 @@ date: 2022-04-11T13:32:28 +0900
 updated: 2022-04-11 13:32
 youtubeID: nGszTJCzSMk
 youtubeID2: kT4zbvChs2g
-youtubeID3:
+youtubeID3: rhzkxKO-40c
 ---
 * TOC
 {:toc}
@@ -67,7 +67,7 @@ To add aircraft trajectory workflow and produce various outputs as described in 
 ref links: [gphoto.org](http://www.gphoto.org/proj/libgphoto2/support.php), [Leica-workflow](http://home.iitk.ac.in/~blohani/LiDARSchool2008/Downloads/IndiaLecture11_LeicaWorkflow.pdf), [olliew_NTCamera](http://www.olliw.eu/storm32bgc-wiki/NT_Camera), [mavlink_camera](https://mavlink.io/en/services/camera.html)
 
 
-결론: gphoto2 라이브러리를 사용하는 기능은 Image Capture, Liveview, Configuration, Trigger-capture와 같은 카메라 셋팅과 카메라 작동과 관련된 기능을 제공하도록 하는 것입니다. 이 라이브러리를 활용하여 만든 NT camera는 NT IMU모듈을 연결했을 때 GCS와 조정기 RC를 통해 위 4가지 기능을 제공 한다는 것입니다. (아래 첫번째 유튜브 참고)
+결론: gphoto2 라이브러리를 사용하는 기능은 Image Capture, Liveview, Configuration, Trigger-capture와 같은 카메라 셋팅과 카메라 작동과 관련된 기능을 제공하도록 하는 것입니다. rhzkxKO-40c이 라이브러리를 활용하여 만든 NT camera는 NT IMU모듈을 연결했을 때 GCS와 조정기 RC를 통해 위 4가지 기능을 제공 한다는 것입니다. (아래 첫번째 유튜브 참고)
 
 [NT_camera](http://www.olliw.eu/storm32bgc-wiki/NT_Camera)
 
@@ -113,7 +113,7 @@ camera and this works also for for that
 ```
 ![image](https://user-images.githubusercontent.com/42961200/162684289-64a652ae-37fd-4d1b-80e2-c3e8c8819776.png)
 
-
+{% include youtubePlayer.html id=page.youtubeID3 %}
 ### NT camera parameters
 The NT Camera is related to a number of parameters, which are located in two places in the GUI, the [GUI:Functions] tab and the [GUI:Interfaces Tool] dialog.
 
