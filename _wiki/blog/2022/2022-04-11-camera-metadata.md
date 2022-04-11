@@ -91,6 +91,10 @@ of course but you also can now access
 1:51
 the on-screen display the OSD menu
 1:55
+1:59
+namely that math link has what we call a
+2:03
+camera manager which provides you
 ```
 
 ### Serial API
@@ -122,18 +126,15 @@ For this, set:
 
 UartX Configuration = “uartX @ 115200” (the parameter is located in the [GUI:Setup] tab)
 Camera ComPort = “uartX”
-The physical assignment is
 
+The physical assignment is
+```
 RC-0 = UARTX Rx
 RC-1 = UARTX Tx
+```
 For the location of the RC-0, RC-1 pins on your board please refer to Pins and Connectors.
 
 
-1:59
-namely that math link has what we call a
-2:03
-camera manager which provides you
-```
 ![image](https://user-images.githubusercontent.com/42961200/162684196-c4e1df2c-597d-439f-adf2-733eec1c4e9b.png)
 
 {% include youtubePlayer.html id=page.youtubeID2 %}
@@ -152,6 +153,7 @@ your camera to a full-fledged muffling
 5:45
 camera and this works also for for that
 ```
+
 ![image](https://user-images.githubusercontent.com/42961200/162684289-64a652ae-37fd-4d1b-80e2-c3e8c8819776.png)
 
 {% include youtubePlayer.html id=page.youtubeID3 %}
