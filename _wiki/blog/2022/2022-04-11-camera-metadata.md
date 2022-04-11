@@ -41,6 +41,10 @@ System Timestamp (ns since boot)	AP Timestamp (ms since boot)	lat	lon	alt (m)	re
 104001914073	101078	35.6255216	128.360851	28.63	-0.093	0	0	0.01	175.3
 ```
 ### dji metadata
+![image](https://user-images.githubusercontent.com/42961200/162670385-16cd91f4-1d34-42dc-8712-9f691e52bca2.png)
+
+- Autel
+![image](https://user-images.githubusercontent.com/42961200/162670487-bbd7beec-7958-44eb-bb03-2131c58c45e6.png)
 
 
 
