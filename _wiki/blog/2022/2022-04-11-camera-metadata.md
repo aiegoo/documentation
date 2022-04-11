@@ -31,7 +31,7 @@ kT4zbvChs2g
 ![image](https://user-images.githubusercontent.com/42961200/162666950-67979d5b-ff72-4a12-8519-70045cc3b452.png)
 
 
-### sentera camera metadata
+### sentra camera metadata
 
 ```
 System Timestamp (ns since boot)	AP Timestamp (ms since boot)	lat	lon	alt (m)	relative_alt (m)	vx (m/s)	vy (m/s)	vz (m/s)	hdg (deg)
