@@ -174,6 +174,10 @@ Mavlink Gimbal: Enables the MAVLink Gimbal component and sets its component ID.
 Mavlink ComPort: Selects the com port used for the MAVLink communication.
 Mavlink System ID: Sets the system ID for both the MAVLink Gimbal and Camera components. A value of “0” enables autodetection.
 
+### Canon camera hotshoe with eTTL
+
+[link](https://github.com/aiegoo/jdlab-team/issues/4)
+
 
 {% include taglogic.html %}
 
