@@ -37,7 +37,24 @@ updated: 2021-10-20 17:05
 5. for drivers [googledrive](https://drive.google.com/drive/folders/18dilrzJvpcqRAWp9RGKmnOdGdiw4QZLL)  for bluetooth/uart/interface/network drivers
 5. or if the above causes issues, download from [here](https://medium.com/nerd-for-tech/how-to-install-unsupported-bluetooth-5-0-dongle-on-linux-4bf34aa99fed)
 6. copy install.sh requirments.txt and Contents folder to target server and directory path.
-7. kakao talk 설치 [블로그](https://www.hahwul.com/2018/08/02/install-kakaotalk-on-ubuntu-18.04/)
+7. For the network card;
+```
+For motherboard manufacturer
+https://www.asrock.com/MB/Intel/B660M%20Pro%20RS/index.asp#Specification
+
+For intel drivers;
+
+https://www.intel.com/content/www/us/en/download/14611/15817/intel-network-adapter-driver-for-pcie-intel-gigabit-ethernet-network-connections-under-linux.html?product=71307
+
+I have uploaded the driver to google driver under tonylee@joy-drone.com
+
+tar zxf igb-xxx.gz
+cd igb-xxx/src
+sudo make install
+
+reboot
+```
+8. kakao talk 설치 [블로그](https://www.hahwul.com/2018/08/02/install-kakaotalk-on-ubuntu-18.04/)
 
 
 ```bash
