@@ -449,7 +449,7 @@ Indicator LED to show the frequency and power
 
 [guide](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_guide.pdf)
 
-[manual](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16s_manual.pdf)
+[manual]([manual](https://github.com/aiegoo/uas-reference/blob/master/manual/TX16S_manual.pdf))
 
 
 ![image](https://user-images.githubusercontent.com/42961200/154386986-e7e3b0c3-c3c5-41d0-a60e-f6d25760f711.png)
