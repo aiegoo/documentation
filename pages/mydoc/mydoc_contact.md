@@ -14,7 +14,7 @@ youtubeID2: MeLatKqcolM
 
 ## 2022 drone show Bexco
 
-{% include youtubePlayer.html id=page.youtubeId %}
+{% include youtubePlayer.html id=page.youtubeID %}
 
 {% include youtubePlayer.html id=page.youtubeID2 %}
 ## 2020년 국내 드론 제조 업체 현황(항공안전기술원)
