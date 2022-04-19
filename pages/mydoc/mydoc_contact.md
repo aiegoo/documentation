@@ -2,14 +2,21 @@
 title: Korea drone companies
 tags: [drone, job, resume ]
 last_updated: July 10, 2021
-keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
+keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips, Bexco, drone, comapny, 2022
 summary: "summary."
 sidebar: mydoc_sidebar
 permalink: mydoc_contact.html
 datatable: true
 folder: mydoc
+youtubeID: ChHSmFWkJNI
+youtubeID2: MeLatKqcolM
 ---
 
+## 2022 drone show Bexco
+
+{% include youtubePlayer.html id=page.youtubeId %}
+
+{% include youtubePlayer.html id=page.youtubeID2 %}
 ## 2020년 국내 드론 제조 업체 현황(항공안전기술원)
 
 <div class="datatable-begin"></div>
@@ -30,7 +37,7 @@ folder: mydoc
 | 12 | 에스아이에스㈜                             | BlueSky                                                         | 기타                                                    | 052-245-5390                        | [http://www.sisinc.co.kr](http://www.sisinc.co.kr/)                                                                |
 | 13 | ㈜엑스드론                               | XD-X8U, XD-I4, XD-P4                                            |                                           | 02-761-0816                         | [http://www.xdrone.co.kr](http://www.xdrone.co.kr/)   물품수송, 촬영, 기타                                                             |
 | 14 | ㈜유시스                                | TB-303, TB-501                                                  |                                 | 052-271-8922                        | [http://www.usis.kr](http://www.usis.kr/)  촬영, 환경감시, 수색/구조, 해안관리                                                                         |
-| 15 | 유맥에어                                | UM-D12, CERES                                                   |                                               | 031-410-3262                        | [http://www.umacair.com](http://www.umacair.com/)  촬영, 농업활용                                                                |
+| 15 | 유맥에어                                | UM-D12, CERES                                                   |                                               | 031-410-3262                        | [http://www.umacair.com](http://www.umacair.com/)  촬영, 농업MeLatKqcolM활용                                                                |
 | 16 | 유콘시스템                               | RemoM, Remocopter-700                                           |                                          | 042-963-2251                        | [http://www.uconsystem.com](http://www.uconsystem.com/)  촬영, 통신망활용, 기타                                                          |
 | 17 | 자이언트드론                              | GD-1430, GD-M6                                                  |                                              | 02-496-8678                         | [http://www.giantdrone.com](http://www.giantdrone.com/)   농업활용, 기타                                                          |
 | 18 | 케바드론                                | KD2 Mapper, 　Narsha                                             |                                          | 042-825-2251                        | [http://www.keva.kr](http://www.keva.kr/)    국토조사, 촬영, 기타                                                                       |
