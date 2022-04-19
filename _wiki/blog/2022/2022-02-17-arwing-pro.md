@@ -26,6 +26,8 @@ youtubeID6: kB9YyG2V-nA
 youtubeID7: ADphg7bjKow
 youtubeID8: uyx4peXAeIM
 youtubeID9: 8MercqAa7Vk
+driveId: 1OJTnPkK1PRcH0mfmC6zzZMBjkB7_378y
+driveId2:
 ---
 
 * TOC
@@ -452,6 +454,9 @@ Indicator LED to show the frequency and power
 
 ![image](https://user-images.githubusercontent.com/42961200/154386986-e7e3b0c3-c3c5-41d0-a60e-f6d25760f711.png)
 
+### tutorial
+{% include googleDrivePlayer.html id=page.driveId %}
+{% include googleDrivePlayer.html id=page.driveId2 %}
 
 ### specification
 - Type: TX16S MAX Transmitter https://youtu.be/hGxbYiV6TEA
