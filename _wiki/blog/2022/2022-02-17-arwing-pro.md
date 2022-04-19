@@ -506,6 +506,11 @@ The TX16s natively supports Team Black Sheep MicroTX modules in CRSFmode with LU
 
 ![image](https://user-images.githubusercontent.com/42961200/154387289-a1e557ae-b986-4347-87cf-001a563987b7.png)
 
+### telemetry debug tool and blog
+
+[blog](https://learn.sparkfun.com/tutorials/terminal-basics/all)
+
+[terminalBpp](https://sites.google.com/site/terminalbpp/)
 
 ## reciever R81
 [product](https://www.radiomasterrc.com/products/r81-receiver)
