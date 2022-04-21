@@ -1540,6 +1540,49 @@ Click on the Gear icon in the bottom left corner and set up the video source. Se
 Click Start and then you should be able to see the real time video feed:
 ![image](https://user-images.githubusercontent.com/42961200/151567604-31881eaf-1480-4e41-ac0f-d1b74257ef69.png)
 
+### Implementation Details
+There are 2 ways for setting  up the networking as mentioned in https://docs.sky-drones.com/airlink/initial-power-up (or just above in `Connect via SmartAP GCS`)
+Scenario 1 is to use the drone as an access point, meaning all the networking peripherals would directly connect to the Airlink itself. 
+
+In both scenarios, you should check the address of the airlink using ifconfig command : 
+
+As you can see in the screenshot above the IP address of Airlink wireless interface (wlan0) is :
+10.42.0.1. Which makes the GCP address : 
+Udp  Direct 10.42.0.1 14550 14555
+
+
+After doing this you also need to add the camera feed according to step 4 : 
+https://docs.sky-drones.com/airlink/connect-via-smartap-gcs
+
+Which in our case makes it : 
+rtsp://10.42.0.1:8554/camera/0
+Remember camera 0 is for csi. And camera 1 and 2 are externals. You can also directly check the video feed inside a videoplaye like VLC
+
+
+### communication sync instruction
+
+> Q ethernet IP
+- lan: 192.168.1.1
+- wifi: 10.223.95.108 (air), 10.223.95.120(ground)
+
+> Translating MAC to IP address (ex, 00:30:1A:4E:A4:3E is 10.223.164.62/16)
+
+> Device login
+- Enter the IP on the browser
+- Access the control by entering ‘root’ and no passed (not set)
+- Check the firmware and device status (wow, that’s just a regular wifi router)
+- Go to NetworkConfiguration —> simple configuration
+- Wifi setting - NetworkConfiguration - Wireless - Edit
+- Interface configuration - Wireless Security - No Encryption and apply
+- Interface - NetworkConfiguration - Interface _WAN2 Edit IPv4 Address. 10.42.3.XXXX, Ipv4 Netmask 255.255.0.0
+- Interface WAN2 - iPv4 address 10.42.30.25
+
+> Example
+- AirLink : 192.168.0.x (dhcp allocated)
+- Mesh: Drone - LAN 192.168.0.10   WLAN 10.23.x.x
+           GCS - LAN 192.168.0.20.   WLAN 10.23.x.x
+- Q : Drone - LAN 10.42.3.10.  WLAN 10.42.3.11
+- PC: 10.42.1.55
 
 
 
