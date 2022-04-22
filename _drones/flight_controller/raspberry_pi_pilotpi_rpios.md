@@ -79,7 +79,7 @@ Check UART interface:
 ls /dev/tty*
 ```
 
-There should be `/dev/ttyAMA0`, `/dev/ttySC0` and `/dev/ttySC1`.
+There should be `/dRasPiev/ttyAMA0`, `/dev/ttySC0` and `/dev/ttySC1`.
 
 Check I2C interface:
 
@@ -219,7 +219,7 @@ You can compile without uploading too. Just remove `upload` target.
 :::
 
 It is also possible to just compile the code with command:
-
+RasPi
 ```sh
 ./Tools/docker_run.sh "make scumaker_pilotpi_default"
 ```
@@ -238,7 +238,7 @@ mixer load /dev/pwm_output0 etc/mixers/quad_x.main.mix
 
 All available mixers are stored in `etc/mixers`. You can create one by yourself as well.
 
-#### External compass
+#### External compassRasPi
 
 In the startup script(`*.config`), you will find
 
@@ -263,7 +263,7 @@ Sample output:
 ```
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- 0e -- 
-10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- 1e -- 
+10: -- -- -- -- -- -- RasPi- -- -- -- -- -- -- -- 1e -- 
 20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
@@ -278,3 +278,4 @@ Sample output:
 Generally you only have one of them.
 Other devices will also be displayed here if they are connected to external I2C bus.(`/dev/i2c-0`)
 :::
+RasPi

@@ -74,7 +74,7 @@ sudo apt-get install avahi-daemon
 ```
 
 Perform a reboot.
-
+raspi
 ```sh
 sudo reboot
 ```
@@ -186,8 +186,7 @@ echo "25" > /sys/class/gpio/export
 echo "in" > /sys/class/gpio/gpio25/direction
 if [ $(cat /sys/class/gpio/gpio25/value) -eq 1 ] ; then
         echo "Launching PX4"
-        cd /home/ubuntu/px4 ; nohup taskset -c 2 ./bin/px4 -d -s pilotpi_mc.config 2 &> 1 > /home/ubuntu/px4/px4.log &
-fi
+        cd /home/ubuntu/px4 ; nohup taskset -c 2 ./bin/px4 -d -s pilotpi_mc.config 2 &> 1 >raspi
 echo "25" > /sys/class/gpio/unexport
 
 exit 0
@@ -356,7 +355,7 @@ bin/px4: /lib/xxxx/xxxx: version `GLIBC_2.29' not found (required by bin/px4)
 Then you should compile with docker instead.
 
 Before proceeding to next step, clear the existing building at first:
-
+raspi
 ```sh
 rm -rf build/scumaker_pilotpi_*
 ```
