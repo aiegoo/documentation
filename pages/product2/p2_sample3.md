@@ -326,14 +326,15 @@ The expected LEDs pattern is as shown below - blinking in turn and then all thre
 
 ### Software
 #### Verify SmartLink was discovered
-Normally you don't need to run the steps in this section since SmartLink should be recognized automatically. But the steps in this section might be useful for establishing connection if this has not happened automatically.
+{{site.data.alerts.callout_info}} Normally you don't need to run the steps in this section since SmartLink should be recognized automatically. But the steps in this section might be useful for establishing connection if this has not happened automatically.{{site.data.alerts.end}}
 First of all, check if SmartLink ground module has been recognized properly by your computer. You should be able to see it as Ethernet device. For instance, go to the command line and type ifconfig  for MacOS / Linux or ipconfig  for Windows:
 ![image](https://user-images.githubusercontent.com/42961200/151636212-fd2e7f16-bbca-4add-813a-f7318f1b2202.png)
 
 You should see that one of the network adapters has an IP address in the range of 192.168.168.xxx. This means that SmartLink has been successfully discovered by your computer. Alternatively, you can check the configuration with Network Manager and / or assign a static IP address:
 ![image](https://user-images.githubusercontent.com/42961200/151636194-99e621f8-4d30-4399-bc94-7eb44da79d22.png)
 
-Make sure you have configured your WiFi internet connection with the priority higher than the priority of SmartLink ethernet connection. Otherwise, your computer will loose internet connection while SmartLink ground module is connected.
+{{site.data.alerts.callout_info}}
+Make sure you have configured your WiFi internet connection with the priority higher than the priority of SmartLink ethernet connection. Otherwise, your computer will loose internet connection while SmartLink ground module is connected. {{site.data.alerts.end}}
 Another method to check that SmartLink is properly recognized by your computer is to ping it. Open the command line and type  ping smartlink.local. If you are able to see the proper response in the command line then it means SmartLink has been discovered by your computer.
 SmartLink is configured with static IP address 192.168.168.100. For instance, if you're running SmartLink with Android which doesn't support Local DNS - please use static IP address for connecting.
 In case you're unable to ping `smartlink.local` it might be a DNS problem. In other words, the operating system can't find the IP address' corresponding name. This might happen on some Windows platforms and is applied to all Android based platforms. Follow these steps to resolve it: Use IP addressing instead of DNS
