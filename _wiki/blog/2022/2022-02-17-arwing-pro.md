@@ -340,6 +340,12 @@ Dupont 2.54 pins (Board is shipped unsoldered)
 
 마텍 홈페이지에 가시면 세팅에 관한 많은 자료를 찾을 수 있습니다.
 
+***IMPORTANT*** In order to replace the exisiting firmware by Matek for Arduplane, you should follow the link in the Matek home page. [firmware_link](http://www.mateksys.com/?p=5159#tab-id-11)
+[download](https://firmware.ardupilot.org/Plane/stable/MatekH743/)
+
+![image](https://user-images.githubusercontent.com/42961200/165229950-0471c078-bff6-4f68-937e-27999babce6e.png)
+
+
 What is new on the H743-Wing V2
 Use ICM42605 instead of ICM20602
 Moved PDB/current sensor from FC board to bottom plate.
