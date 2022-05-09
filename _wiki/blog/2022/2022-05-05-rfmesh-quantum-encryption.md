@@ -24,7 +24,6 @@ updated: 2022-05-05 14:57
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
 ## post-jdlab research
-[mesh_manual](https://github.com/aiegoo/lx-mesh/blob/master/mesh_manual.pdf)
 
 -- first of all, I didn't sign any NDA with any of the parties involved. All the data and documents were provided without any reservation or any warnings, verbal/written or any means of uderlying messages, which makes this past project with my former employer something I feel free to discuss and use to my advantage.
 
@@ -39,6 +38,10 @@ updated: 2022-05-05 14:57
 
 ## open source
 > This source code is licensed under the Apache License 2.0 as described in the file LICENSE.
+
+[application_repo](https://github.com/espressif/esp-iot-solution)
+
+[mesh_manual](https://github.com/aiegoo/lx-mesh/blob/master/mesh_manual.pdf)
 
 [what-you-need](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html#what-you-need)
 
