@@ -83,6 +83,15 @@ The root node log would look like this:
 <p> The root node log </p>
 </div>
 
+## quantum
+```
+Our current way of protecting online data is to encrypt it using mathematical problems that are easy to solve if you have a digital “key” to unlock the encryption but hard to solve without it. However, hard does not mean impossible and, with enough time and computer power, today’s methods of encryption can be broken.
+
+Quantum communication, on the other hand, creates keys using individual particles of light (photons) , which – according to the principles of quantum physics – are impossible to make an exact copy of. Any attempt to copy these keys will unavoidably cause errors that can be detected. This means a hacker, no matter how clever or powerful they are or what kind of supercomputer they possess, cannot replicate a quantum key or read the message it encrypts.
+
+This concept has already been demonstrated in satellites and over fibre-optic cables, and used to send secure messages between different countries.
+```
+
 
 {% include taglogic.html %}
 
