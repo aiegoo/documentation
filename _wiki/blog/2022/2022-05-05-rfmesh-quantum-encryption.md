@@ -99,6 +99,7 @@ When two users want to communicate, our transmitter sends them an entangled pair
 
 By using multiplexing, a common telecommunications technique of combining or splitting signals, we can effectively send these entangled photon pairs to multiple combinations of people at once.
 ```
+[blog_above](https://theconversation.com/our-quantum-internet-breakthrough-could-help-make-hacking-a-thing-of-the-past-145139)
 
 {% include taglogic.html %}
 
