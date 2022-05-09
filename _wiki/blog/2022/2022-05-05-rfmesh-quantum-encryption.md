@@ -45,6 +45,8 @@ updated: 2022-05-05 14:57
 
 It introduces a quick way to build an ESP-WIFI-MESH network without a router. For another detailed network configuration method, please refer to [examples/function_demo/mwifi](../function_demo/mwifi/README.md). Before running the example, please read the documents [lx-setup](2022-04-26-lx-setup.html) and [ESP-WIFI-MESH](https://docs.espressif.com/projects/esp-idf/en/stable/api-guides/mesh.html).
 
+![image](https://user-images.githubusercontent.com/42961200/167339843-4d863f0e-caa8-4b45-b9fe-9cf4bf372c9a.png)
+
 ## Configure
 
 To run this example, you need at least two development boards, one configured as a root node, and the other a non-root node. In this example, all the devices are non-root nodes by default.
