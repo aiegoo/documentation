@@ -92,6 +92,13 @@ Quantum communication, on the other hand, creates keys using individual particle
 This concept has already been demonstrated in satellites and over fibre-optic cables, and used to send secure messages between different countries.
 ```
 
+> in a nutshell
+
+```
+When two users want to communicate, our transmitter sends them an entangled pair of photons – one particle for each user. The users’ devices then perform a series of measurements on these photons to create a shared secret quantum key. They can then encrypt their messages with this key and transfer them securely.
+
+By using multiplexing, a common telecommunications technique of combining or splitting signals, we can effectively send these entangled photon pairs to multiple combinations of people at once.
+```
 
 {% include taglogic.html %}
 
