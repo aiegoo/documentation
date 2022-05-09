@@ -57,7 +57,7 @@ You need to go to the submenu `Example Configuration` and configure one device a
 You can also go to the submenu `Component config -> MDF Mwifi`, and configure the ESP-WIFI-MESH related parameters like max number of layers, the number of the connected devices on each layer, the broadcast interval, etc.
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/42961200/167326444-9db9c456-68d8-4b56-8f5a-47e1321514e6.png)" width="800">
+<img src="https://user-images.githubusercontent.com/42961200/167326444-9db9c456-68d8-4b56-8f5a-47e1321514e6.png" width="800">
 <p> Configure the device type </p>
 </div>
 
@@ -73,7 +73,7 @@ You can also go to the submenu `Component config -> MDF Mwifi`, and configure th
 The root node log would look like this:
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/42961200/167326482-a0193eb5-d745-49da-8888-50a3a6086e9f.png)" width="800">
+<img src="https://user-images.githubusercontent.com/42961200/167326482-a0193eb5-d745-49da-8888-50a3a6086e9f.png" width="800">
 <p> The root node log </p>
 </div>
 
