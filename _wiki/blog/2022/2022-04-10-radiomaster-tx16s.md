@@ -146,7 +146,7 @@ transfer all files to the sd card of the Radiomaster TX16s
 
 ### 조종기 INPUTS 할당
 
-![Internet_20220513_001139_3](https://user-images.githubusercontent.com/42961200/168109394-5bbeb973-5235-4444-9b59-fe3cdcb02fa2.jpeg
+![Internet_20220513_001139_3](https://user-images.githubusercontent.com/42961200/168109394-5bbeb973-5235-4444-9b59-fe3cdcb02fa2.jpeg)
 
 
 
@@ -184,7 +184,7 @@ CH3 에  8 - >0 으로...
 아래와 같습니다.
 
  
-
+![Internet_20220513_001139_8](https://user-images.githubusercontent.com/42961200/168109377-3033223b-7243-4f7b-a2ea-2aa8475d47fd.jpeg)
 
 
 조종기에서 키 할당
