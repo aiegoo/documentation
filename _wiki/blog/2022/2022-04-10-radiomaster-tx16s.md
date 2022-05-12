@@ -135,7 +135,7 @@ transfer all files to the sd card of the Radiomaster TX16s
 
 내부에 pixhawk 넣었어요.
 
-
+![Internet_20220513_001139_3](https://user-images.githubusercontent.com/42961200/168109394-5bbeb973-5235-4444-9b59-fe3cdcb02fa2.jpeg)
 
 
 
@@ -146,8 +146,7 @@ transfer all files to the sd card of the Radiomaster TX16s
 
 ### 조종기 INPUTS 할당
 
-![Internet_20220513_001139_3](https://user-images.githubusercontent.com/42961200/168109394-5bbeb973-5235-4444-9b59-fe3cdcb02fa2.jpeg)
-
+![Internet_20220513_001139_4](https://user-images.githubusercontent.com/42961200/168109388-c319bdba-7ed9-4a21-950f-91bcd8f53e3c.jpeg)
 
 
 믹싱 Ch1과 Ch2 아래와 같이 했어요. ch3은 스로틀, ch4는 사용안하지요.
