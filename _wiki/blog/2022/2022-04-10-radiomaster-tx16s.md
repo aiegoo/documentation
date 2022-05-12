@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: jdlab
-keywords: "rc reciever transmitter opentx radiomaster configuration simulation"
+keywords: "rc reciever transmitter opentx radiomaster configuration simulation flying mode rtl auto manual loiter fbwa fbwb"
 summary: "Sun, Apr 10, 22, rc reciever transmitter opentx radiomaster configuration simulation"
 excerpt_separator: <!--more-->
 toc: true
@@ -227,7 +227,9 @@ ARMING_CHECK 가 1로 되어 있을것이다. 1은 모든센서를 체크하여 
 오른쪽 메뉴 아이콘 "매개변수 쓰기 " 를 클릭하면 저장된다.
 
 그러면 시동이 될 것이다.
+
 ![Internet_20220513_001139_11](https://user-images.githubusercontent.com/42961200/168109368-9f01ad49-36e7-49f8-81aa-63ed0e7435b2.jpeg)
+
 
 
 ###  모드 설명
