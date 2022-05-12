@@ -187,8 +187,8 @@ CH3 에  8 - >0 으로...
 ![Internet_20220513_001139_9](https://user-images.githubusercontent.com/42961200/168109370-75a8dc8f-96f8-409a-91d7-de6caf3e4bb0.jpeg)
 
 조종기에서 키 할당
-![Internet_20220513_001139_11](https://user-images.githubusercontent.com/42961200/168109368-9f01ad49-36e7-49f8-81aa-63ed0e7435b2.jpeg)
 
+![Internet_20220513_001139_10](https://user-images.githubusercontent.com/42961200/168109374-0082ffc5-5ee9-4332-b8e6-eefee1930a62.jpeg)
 
 
 SF key 와 SE key에 할당하였다.
@@ -230,7 +230,7 @@ ARMING_CHECK 가 1로 되어 있을것이다. 1은 모든센서를 체크하여 
 오른쪽 메뉴 아이콘 "매개변수 쓰기 " 를 클릭하면 저장된다.
 
 그러면 시동이 될 것이다.
-![Internet_20220513_001139_10](https://user-images.githubusercontent.com/42961200/168109374-0082ffc5-5ee9-4332-b8e6-eefee1930a62.jpeg)
+![Internet_20220513_001139_11](https://user-images.githubusercontent.com/42961200/168109368-9f01ad49-36e7-49f8-81aa-63ed0e7435b2.jpeg)
 
 
 
