@@ -173,6 +173,7 @@ CH3 에  8 - >0 으로...
 
 유심히 볼것은 아래 엘레본 구성 입니다.^^
 
+![Internet_20220513_001139_8](https://user-images.githubusercontent.com/42961200/168109377-3033223b-7243-4f7b-a2ea-2aa8475d47fd.jpeg)
 가만보니...Roll이 Reverse가 체크 해제 해야 할것 같네요.
 
 
@@ -183,9 +184,8 @@ CH3 에  8 - >0 으로...
 
 아래와 같습니다.
 
- 
-![Internet_20220513_001139_8](https://user-images.githubusercontent.com/42961200/168109377-3033223b-7243-4f7b-a2ea-2aa8475d47fd.jpeg)
 
+![Internet_20220513_001139_9](https://user-images.githubusercontent.com/42961200/168109370-75a8dc8f-96f8-409a-91d7-de6caf3e4bb0.jpeg)
 
 조종기에서 키 할당
 
