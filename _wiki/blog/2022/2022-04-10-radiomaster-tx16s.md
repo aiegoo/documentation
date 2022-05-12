@@ -156,17 +156,17 @@ transfer all files to the sd card of the Radiomaster TX16s
 
 ![Internet_20220513_001139_6](https://user-images.githubusercontent.com/42961200/168109380-72f83dbf-1be4-4522-99ec-c9041567eb8d.jpeg)
 
-방향및 범위....
+방향및 범위
 
 
 
-CH3 에  8 - >0 으로...
+CH3 에  8 - >0 으로
 
 
 
 
 
-미션플래너에서...
+미션플래너에서
 
 조종기 할당된것 입니다.
 
@@ -230,9 +230,11 @@ ARMING_CHECK 가 1로 되어 있을것이다. 1은 모든센서를 체크하여 
 
 ![Internet_20220513_001139_11](https://user-images.githubusercontent.com/42961200/168109368-9f01ad49-36e7-49f8-81aa-63ed0e7435b2.jpeg)
 
+```
+€£¥₩
+```
 
-
-###  모드 설명
+### 모드 설명
 
 
 > MANUAL Mode
