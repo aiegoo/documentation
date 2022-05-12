@@ -176,10 +176,7 @@ CH3 에  8 - >0 으로...
 가만보니...Roll이 Reverse가 체크 해제 해야 할것 같네요.
 
 
-
-
-
-### 비행 모드는
+> 비행 모드
 
 아래와 같습니다.
 
@@ -233,8 +230,8 @@ ARMING_CHECK 가 1로 되어 있을것이다. 1은 모든센서를 체크하여 
 ![Internet_20220513_001139_11](https://user-images.githubusercontent.com/42961200/168109368-9f01ad49-36e7-49f8-81aa-63ed0e7435b2.jpeg)
 
 
-
 ###  모드 설명
+
 
 > MANUAL Mode
 
