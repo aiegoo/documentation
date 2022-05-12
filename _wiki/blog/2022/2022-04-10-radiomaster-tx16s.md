@@ -152,7 +152,7 @@ transfer all files to the sd card of the Radiomaster TX16s
 
 믹싱 Ch1과 Ch2 아래와 같이 했어요. ch3은 스로틀, ch4는 사용안하지요.
 
-
+![Internet_20220513_001139_5](https://user-images.githubusercontent.com/42961200/168109383-55d5e294-3b36-42c6-8122-ad5804881c3b.jpeg)
 
 
 ![Internet_20220513_001139_6](https://user-images.githubusercontent.com/42961200/168109380-72f83dbf-1be4-4522-99ec-c9041567eb8d.jpeg)
