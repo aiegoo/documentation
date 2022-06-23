@@ -17,6 +17,7 @@ public: true
 parent: [[Wiki-Setting-Category]]
 date: 2022-06-23T23:29:22 +0900
 updated: 2022-06-23 23:29
+driveId: 1gB3vZ_k2CUcn2P_LnmeOFeQDGupueRJy
 ---
 * TOC
 {:toc}
@@ -47,7 +48,7 @@ updated: 2022-06-23 23:29
 
 
 ![image](https://user-images.githubusercontent.com/42961200/175305602-bec74c33-0272-45af-ac6a-0e6abadea7fa.png)
-- this has been very tricky and I have wasted almost two days to tackle Unity version, Package Manage and plugins. My laptop is almost 6 years old and bascialy out of date and fashion. 
+- this has been very tricky and I have wasted almost two days to tackle Unity version, Package Manage and plugins. My laptop is almost 6 years old and bascialy out of date and fashion.
 
 > This is an ARWT example fro [here](https://github.com/ToughNutToCrack/ARWT)
 
@@ -55,11 +56,12 @@ updated: 2022-06-23 23:29
 
 <p>
 ARWT is a library that allows you to <b> use Unity to build AR Web applications</b>, working as a bridge between Unity and the best AR libraries available for the Web.
-Currently, we are using WebXR and ARjs. 
+Currently, we are using WebXR and ARjs.
 </p>
 
-https://user-images.githubusercontent.com/11076285/123983829-74b88800-d9c4-11eb-94d9-8676813e9e8e.mp4
+[video](https://user-images.githubusercontent.com/11076285/123983829-74b88800-d9c4-11eb-94d9-8676813e9e8e.mp4)
 
+{% include googleDrivePlayer.html id=page.driveId %}
 
 {% include taglogic.html %}
 
