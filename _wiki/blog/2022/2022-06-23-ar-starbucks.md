@@ -28,7 +28,26 @@ updated: 2022-06-23 23:29
 
 [github_issues](https://github.com/aiegoo/ar-starbucks/issues)
 
+## process
+- I first draw 3d models to use in Unity
 
+
+![image](https://user-images.githubusercontent.com/42961200/175305939-5a5f6996-de0d-4573-904f-b77ae3f22ce0.png)
+
+- 3D Max
+
+![image](https://user-images.githubusercontent.com/42961200/175305437-5708e66d-7dc9-4f5f-a031-a42fea853bb9.png)
+
+- Scripts is done in C# and made the camera working for image detection. In this setup, I am trying out 'marker-based AR', in which a marker called QR Code is triggering the code to send and display the 3d models.
+
+
+![image](https://user-images.githubusercontent.com/42961200/175305125-45f056d0-150e-4a0d-ba71-b51b830fbc38.png)
+
+- this is the implementation of it. POC is too big a word for this, but in a sense, it is.
+
+
+![image](https://user-images.githubusercontent.com/42961200/175305602-bec74c33-0272-45af-ac6a-0e6abadea7fa.png)
+- this has been very tricky and I have wasted almost two days to tackle Unity version, Package Manage and plugins. My laptop is almost 6 years old and bascialy out of date and fashion. 
 
 {% include taglogic.html %}
 
