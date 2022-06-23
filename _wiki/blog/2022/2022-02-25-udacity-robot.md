@@ -177,7 +177,7 @@ $ gazebo my_world
 ### Output
 ![alt txt](docs/with_output.png)
 
-## Lesson2
+## Ch2 ROS Essential Lesson2
 
 ### setup overview
 
