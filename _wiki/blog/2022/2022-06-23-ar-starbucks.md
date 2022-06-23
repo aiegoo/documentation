@@ -53,12 +53,12 @@ updated: 2022-06-23 23:29
 
 <h3 align="center">ARWT</h3>
 
-<p align="center">
-<a href="https://www.youtube.com/channel/UCTR740iIPwfu7Pz_BoCEJ-g" target="_blank"><img alt="Youtube Channel" src="https://img.shields.io/badge/tntc-youtube-red"></a>
-<a href="https://discord.gg/Z8QD8uF" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/697089018831306772"></a>
-<a href="https://toughnuttocrack.it/" target="_blank"><img alt="Website" src="https://img.shields.io/badge/tntc-website-informational"></a>
-<a href="https://twitter.com/tntcproject" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/tntcproject?label=Follow"></a>
+<p>
+ARWT is a library that allows you to <b> use Unity to build AR Web applications</b>, working as a bridge between Unity and the best AR libraries available for the Web.
+Currently, we are using WebXR and ARjs. 
 </p>
+
+https://user-images.githubusercontent.com/11076285/123983829-74b88800-d9c4-11eb-94d9-8676813e9e8e.mp4
 
 
 {% include taglogic.html %}
