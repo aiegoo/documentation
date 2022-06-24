@@ -18,6 +18,7 @@ parent: [[Wiki-Setting-Category]]
 date: 2022-06-23T23:29:22 +0900
 updated: 2022-06-23 23:29
 driveId: 1gB3vZ_k2CUcn2P_LnmeOFeQDGupueRJy
+driveId2: 1Sk6udx2He0Ujg0mpU6J8W-JYviNNzjoY
 ---
 * TOC
 {:toc}
@@ -62,6 +63,8 @@ Currently, we are using WebXR and ARjs.
 [video](https://user-images.githubusercontent.com/11076285/123983829-74b88800-d9c4-11eb-94d9-8676813e9e8e.mp4)
 
 {% include googleDrivePlayer.html id=page.driveId %}
+
+{% include googleDrivePlayer.html id=page.driveId2 %}
 
 {% include taglogic.html %}
 
