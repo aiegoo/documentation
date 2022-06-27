@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First AR project for MICE interview"
+title: "First AR project for K-sports"
 name: "ar-starbucks"
 tags: [ar]
 tagName: ar
