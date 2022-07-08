@@ -335,6 +335,9 @@ git diff HEAD^ HEAD --compact-summary
 git show
 git diff --cached
 git diff HEAD..origin/edit --compact-summary
+
+ git diff edit..origin/edit --compact-summary
+
 ```
 
 For other use, see below
