@@ -334,12 +334,45 @@ git remote update
 git diff HEAD^ HEAD --compact-summary
 git show
 git diff --cached
-
+git diff HEAD..origin/edit --compact-summary
 ```
 
 For other use, see below
 
 ```bash
+$ git diff HEAD..origin/edit --compact-summary
+ _data/tags.yml                                   |   1 +
+ _data/wikiMap.yml                                |   1 +
+ _wiki/blog/2021-11-01-github-readme.md           |  27 ++-
+ _wiki/blog/2022/2022-02-25-udacity-robot.md      |   2 +-
+ _wiki/blog/2022/2022-04-10-radiomaster-tx16s.md  | 291 ++++++++++++++++++++++-
+ _wiki/blog/2022/2022-06-23-ar-starbucks.md (new) |  75 ++++++
+ gcs-docker                                       |   2 +-
+ pages/tags/tag_ar.md (new)                       |  12 +
+ 8 files changed, 399 insertions(+), 12 deletions(-)
+
+$ git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), 992 bytes | 3.00 KiB/s, done.
+From github.com:aiegoo/documentation
+   3493c35a..63eb7d2e  edit       -> origin/edit
+Updating f85d4ff9..63eb7d2e
+Fast-forward
+ _data/tags.yml                                  |   1 +
+ _data/wikiMap.yml                               |   1 +
+ _wiki/blog/2021-11-01-github-readme.md          |  55 ++++-
+ _wiki/blog/2022/2022-02-25-udacity-robot.md     |   2 +-
+ _wiki/blog/2022/2022-04-10-radiomaster-tx16s.md | 291 +++++++++++++++++++++++-
+ _wiki/blog/2022/2022-06-23-ar-starbucks.md      |  75 ++++++
+ gcs-docker                                      |   2 +-
+ pages/tags/tag_ar.md                            |  12 +
+ 8 files changed, 427 insertions(+), 12 deletions(-)
+ create mode 100644 _wiki/blog/2022/2022-06-23-ar-starbucks.md
+ create mode 100644 pages/tags/tag_ar.md
+(base)
 
 ```
 
