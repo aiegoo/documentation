@@ -42,6 +42,15 @@ grip # Running on http://localhost:6419/
 
 ## Clone via git@ (ssh)
 
+```bash
+git clone --bare git@github.com:aiegoo/ar-starbucks
+
+git config --local --bool core.bare false
+```
+
+***important***
+create .git and move `HEAD branches config description hooks info objects refs` to it before run the 2nd cli.
+
 ::: success
 **Update**: It's easier if we use [Github CLI](https://cli.github.com/)!
 :::
@@ -57,11 +66,11 @@ grip # Running on http://localhost:6419/
 
 ```bash
 # Windows + Linux
-ssh-keygen -t rsa -b 4096 -C "dinhanhthi@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "eozz21@gmail.com"
 # (-C for adding comment only)
 # Enter a file:
-# Linux: /home/thi/.ssh/id_rsa
-# Windows: C:\Users\dinha\.ssh\id_rsa
+# Linux: /home/{$USER}/.ssh/id_rsa
+# Windows: C:\Users\{$USER}\.ssh\id_rsa
 # Enter password
 ```
 
@@ -78,15 +87,15 @@ ssh-keygen -t rsa -b 4096 -C "dinhanhthi@gmail.com"
 <div markdown="1">
 ```bash
 # Tell who you are? (it's global, you may need to set it locally for each repo)
-git config --global user.name "Thi Dinh"
-git config --global user.email "dinhanhthi@gmail.com"
+git config --global user.name "aiegoo"
+git config --global user.email "eozz21@gmail.com"
 ```
 
 In case you have multiple accounts, you have to indicate separatedly the account in each repository,
 
 ```bash
-git config user.name "Thi"
-git config user.email "dinhanhthi@gmail.com"
+git config user.name "aiegoo"
+git config user.email "eozz21@gmail.com"
 ```
 </div>
 </p>
@@ -101,7 +110,7 @@ If 2 accounts on 2 different platforms</div></summary>
 <div markdown="1">
 ```bash
 # ~/.ssh/config
-# Default github account: dinhanhthi@gmail.com
+# Default github account: eozz21@gmail.com
 Host github.com
    HostName github.com
    IdentityFile ~/.ssh/id_rsa
@@ -188,7 +197,7 @@ cat ~/.ssh/id_rsa.pub
 
 ```bash
 # clone some repo
-git clone git@github.com:dinhanhthi/dinhanhthi.com.git
+git clone git@github.com:aiegoo/portfolio.com.git
 ```
 
 ## Info
