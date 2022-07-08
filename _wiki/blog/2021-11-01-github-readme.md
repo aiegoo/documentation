@@ -323,6 +323,8 @@ ssh -T git@github.com
 <details>
 <summary class="detailSummary"><div markdown="span">git diff between braches or commits</div></summary>
 
+### git diff
+
 <p>
 <div markdown="1">
 
