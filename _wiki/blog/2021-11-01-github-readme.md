@@ -320,6 +320,34 @@ Host github.com
 # run again to check
 ssh -T git@github.com
 ```
+<details>
+<summary class="detailSummary"><div markdown="span">git diff between braches or commits</div></summary>
+
+<p>
+<div markdown="1">
+```bash
+git remote show origin
+git status -uno
+git show-branch *master
+git remote update 
+	
+git diff HEAD^ HEAD --compact-summary
+git show
+git diff --cached
+
+```
+
+For other use, see below
+
+```bash
+
+```
+
+
+</div>
+</p>
+</details>
+
 
 {% include taglogic.html %}
 
