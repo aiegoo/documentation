@@ -49,7 +49,7 @@ git config --local --bool core.bare false
 ```
 
 ***important***
-create .git and move `HEAD branches config description hooks info objects refs` to it before run the 2nd cli.
+create .git and move `HEAD branches config description hooks info objects refs` to it before running the 2nd cli.
 
 ::: success
 **Update**: It's easier if we use [Github CLI](https://cli.github.com/)!
