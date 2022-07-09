@@ -2,8 +2,8 @@
 layout: post
 title: "First AR project for K-sports"
 name: "ar-starbucks"
-tags: [ar]
-tagName: ar
+tags: [xr ar k-sports]
+tagName: xr
 permalink: 2022-06-23-ar-starbucks.html
 sidebar: other_sidebar
 folder: blog
