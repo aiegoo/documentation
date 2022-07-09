@@ -1,8 +1,8 @@
 ---
-title: "home for ar tag"
-tagName: ar
+title: "home for k-sports tag"
+tagName: k-sports
 search: exclude
-permalink: tag_ar.html
+permalink: tag_k-sports.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
