@@ -823,6 +823,15 @@ apt-get install -f
 
 👉 Check [this note](/docker-gpu/#errors-with-gpu).
 
+
+### conda and python setup
+
+[blog](https://towardsdatascience.com/configuring-jupyter-notebook-in-windows-subsystem-linux-wsl2-c757893e9d69)
+
+
+
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
