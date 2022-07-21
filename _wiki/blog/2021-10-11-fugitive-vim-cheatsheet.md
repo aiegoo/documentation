@@ -27,6 +27,10 @@ updated: 2021-10-12 9:52 AM
 
 <script src="https://gist.github.com/ayushxx7/b7e749f3623e22f61ef821c362459620.js"></script>
 
+### reset diagram
+![image](https://user-images.githubusercontent.com/42961200/180112510-13c7b9d5-58bc-4436-a9b7-5dad6fcd6d04.png)
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
