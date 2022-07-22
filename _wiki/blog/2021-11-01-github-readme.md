@@ -42,6 +42,15 @@ grip # Running on http://localhost:6419/
 
 ## Clone via git@ (ssh)
 
+```bash
+git clone --bare git@github.com:aiegoo/ar-starbucks
+
+git config --local --bool core.bare false
+```
+
+***important***
+create .git and move `HEAD branches config description hooks info objects refs` to it before running the 2nd cli.
+
 ::: success
 **Update**: It's easier if we use [Github CLI](https://cli.github.com/)!
 :::
@@ -57,11 +66,11 @@ grip # Running on http://localhost:6419/
 
 ```bash
 # Windows + Linux
-ssh-keygen -t rsa -b 4096 -C "dinhanhthi@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "eozz21@gmail.com"
 # (-C for adding comment only)
 # Enter a file:
-# Linux: /home/thi/.ssh/id_rsa
-# Windows: C:\Users\dinha\.ssh\id_rsa
+# Linux: /home/{$USER}/.ssh/id_rsa
+# Windows: C:\Users\{$USER}\.ssh\id_rsa
 # Enter password
 ```
 
@@ -78,15 +87,15 @@ ssh-keygen -t rsa -b 4096 -C "dinhanhthi@gmail.com"
 <div markdown="1">
 ```bash
 # Tell who you are? (it's global, you may need to set it locally for each repo)
-git config --global user.name "Thi Dinh"
-git config --global user.email "dinhanhthi@gmail.com"
+git config --global user.name "aiegoo"
+git config --global user.email "eozz21@gmail.com"
 ```
 
 In case you have multiple accounts, you have to indicate separatedly the account in each repository,
 
 ```bash
-git config user.name "Thi"
-git config user.email "dinhanhthi@gmail.com"
+git config user.name "aiegoo"
+git config user.email "eozz21@gmail.com"
 ```
 </div>
 </p>
@@ -101,7 +110,7 @@ If 2 accounts on 2 different platforms</div></summary>
 <div markdown="1">
 ```bash
 # ~/.ssh/config
-# Default github account: dinhanhthi@gmail.com
+# Default github account: eozz21@gmail.com
 Host github.com
    HostName github.com
    IdentityFile ~/.ssh/id_rsa
@@ -188,7 +197,7 @@ cat ~/.ssh/id_rsa.pub
 
 ```bash
 # clone some repo
-git clone git@github.com:dinhanhthi/dinhanhthi.com.git
+git clone git@github.com:aiegoo/portfolio.com.git
 ```
 
 ## Info
@@ -311,6 +320,73 @@ Host github.com
 # run again to check
 ssh -T git@github.com
 ```
+<details>
+<summary class="detailSummary"><div markdown="span">git diff between braches or commits</div></summary>
+
+### git diff
+
+<p>
+<div markdown="1">
+
+```bash
+git remote show origin
+git status -uno
+git show-branch *master
+git remote update 
+	
+git diff HEAD^ HEAD --compact-summary
+git show
+git diff --cached
+git diff HEAD..origin/edit --compact-summary
+
+ git diff edit..origin/edit --compact-summary
+
+```
+
+For other use, see below
+
+```bash
+$ git diff HEAD..origin/edit --compact-summary
+ _data/tags.yml                                   |   1 +
+ _data/wikiMap.yml                                |   1 +
+ _wiki/blog/2021-11-01-github-readme.md           |  27 ++-
+ _wiki/blog/2022/2022-02-25-udacity-robot.md      |   2 +-
+ _wiki/blog/2022/2022-04-10-radiomaster-tx16s.md  | 291 ++++++++++++++++++++++-
+ _wiki/blog/2022/2022-06-23-ar-starbucks.md (new) |  75 ++++++
+ gcs-docker                                       |   2 +-
+ pages/tags/tag_ar.md (new)                       |  12 +
+ 8 files changed, 399 insertions(+), 12 deletions(-)
+
+$ git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 4), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), 992 bytes | 3.00 KiB/s, done.
+From github.com:aiegoo/documentation
+   3493c35a..63eb7d2e  edit       -> origin/edit
+Updating f85d4ff9..63eb7d2e
+Fast-forward
+ _data/tags.yml                                  |   1 +
+ _data/wikiMap.yml                               |   1 +
+ _wiki/blog/2021-11-01-github-readme.md          |  55 ++++-
+ _wiki/blog/2022/2022-02-25-udacity-robot.md     |   2 +-
+ _wiki/blog/2022/2022-04-10-radiomaster-tx16s.md | 291 +++++++++++++++++++++++-
+ _wiki/blog/2022/2022-06-23-ar-starbucks.md      |  75 ++++++
+ gcs-docker                                      |   2 +-
+ pages/tags/tag_ar.md                            |  12 +
+ 8 files changed, 427 insertions(+), 12 deletions(-)
+ create mode 100644 _wiki/blog/2022/2022-06-23-ar-starbucks.md
+ create mode 100644 pages/tags/tag_ar.md
+(base)
+
+```
+
+
+</div>
+</p>
+</details>
+
 
 {% include taglogic.html %}
 

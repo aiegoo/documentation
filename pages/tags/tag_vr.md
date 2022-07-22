@@ -1,8 +1,8 @@
 ---
-title: "home for ar tag"
-tagName: ar
+title: "home for vr tag"
+tagName: vr
 search: exclude
-permalink: tag_ar.html
+permalink: tag_vr.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
