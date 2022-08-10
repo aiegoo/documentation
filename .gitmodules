@@ -4,3 +4,6 @@
 [submodule "jsimpatient"]
 	path = jsimpatient
 	url = https://github.com/aiegoo/jsimpatient
+[submodule "_drones/mavlink-devguide"]
+	path = _drones/mavlink-devguide
+	url = git@github.com:aiegoo/mavlink-devguide
