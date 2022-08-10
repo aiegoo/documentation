@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Clone Mirroring"
+name: "Wednesday"
+tags: [git]
+permalink: 2022-08-10-32th.html
+sidebar: other_sidebar
+folder: 2021
+collection: wiki
+categories: school
+keywords: "git clone mirror fork"
+summary: "Wednesday, how to clone a repo with all branches and push to a new location"
+excerpt_separator: <!--more-->
+toc: true
+public: true
+parent: [[Wiki-Setting-Category]] 
+date: 2022-08-10T20:33:01 +0900
+updated: 2022-08-10 20:33
+---
+* TOC
+{:toc}
+
+## 
+
+{% include taglogic.html %}
+
+{% include links.html %}
+
+{% include commento.html %}
+
+{{site.data.alerts.hr_shaded}}
