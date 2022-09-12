@@ -129,7 +129,31 @@ wifis:
       "YOUR_WIFI_NAME":
         password: "YOUR_WIFI_PASSWORD"
 ```
+
+with wpa_supplicant.conf file created in a new raspi SD card;
+
+```conf
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+ 
+update_config=1
+ 
+country=US
+ 
+network={
+ 
+    ssid="YOURSSID"
+ 
+    psk="YOURPASSWORD"
+ 
+    scan_ssid=1
+ 
+}
+
+```
+
+
 A few things to pay attention to:
+
 
 * Make sure the indentation is exactly 2 spaces. No tab, no 4 spaces.
 * Replace YOUR_WIFI_NAME with your actual Wi-Fi name. Keep the quotes “”.
