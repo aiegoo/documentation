@@ -155,6 +155,13 @@ network={
 
 ![image](https://user-images.githubusercontent.com/42961200/189570797-f9009b90-ebff-4240-9371-273d35c1724d.png)
 
+#### install vnc
+
+```
+sudo apt–get update
+sudo apt–get install realvnc–vnc–server realvnc–vnc–viewer
+```
+
 A few things to pay attention to:
 
 
