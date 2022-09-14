@@ -23,7 +23,20 @@ updated: 2022-09-14 11:20
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 
+## Project reference
+1. [projects_xrui](https://github.com/users/aiegoo/projects/2)
+2. [projects_facemask](https://github.com/users/aiegoo/projects/3)
+3. [leviathan_team](https://github.com/but212/leviathan)
+4. [project_blog](pf4.36io.co)
+5. [slack_team]()
+6. [spinoff_game](https://github.com/aiegoo/leviathan)
+
+
+### Project background
+
+## reference game
+### youtube
+
 
 {% include taglogic.html %}
 
