@@ -23,7 +23,27 @@ updated: 2022-09-17 16:38
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 
+## what to do
+
+1)	Installing software. (Unity/ARFoundation and an IDE) 
+-	Detailed instructions on steps and necessary packages. (arcore/arkit, vuforia, geo-ar)
+-	Explanation of steps necessary to run your applications. 
+2)	Basics of ARFoundation, Arkit, Arcore and raspi integration (mock projects that you can test and play with.) 
+-	This is an opportunity to experiment with the usage of the software and its many tracking methods. Can explore the usage of plane/marker detection alongside other methods such as hand detection. 
+-	We can talk through this stage as ARFoundation is a very large package with a lot of in-built functionality you can take advantage of. 
+3)	Facial Tracking Demo
+-	Here we will expand the ARFoundation demo to use Facial tracking, ending up with a version that can be tested and experimented with. 
+4)	Masking Demo
+-	Expand the previous demo to now allow you to place a ‘mask’ on top of the tracking points we have previously experimented with. 
+-	We will work on implementation to change this mask during runtime also. 
+5)	Integration of AR Experience with the game engine. 
+-	Here I will demonstrate ways in which you can interact with Unity to create game elements in the real world. Here we will also explore some game-making fundamentals. 
+6)	Simple AR Game demo
+-	Finally, we will wrap up by creating an early demo of the game you wish to create. You will have many of the building blocks at this stage and should only require support. 
+7)	Final Support
+-	Here I will be available for questions and assistance with the project going forth.
+8) Whenever necessary, implementing a code block should be done in a client pc
+
 
 {% include taglogic.html %}
 
