@@ -157,6 +157,8 @@ network={
 
 #### install vnc
 
+[download_enterprise](https://getintopc.com/softwares/desktop/vnc-connect-realvnc-enterprise-2021-free-download/)
+
 ```
 sudo apt–get update
 sudo apt–get install realvnc–vnc–server realvnc–vnc–viewer
