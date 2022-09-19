@@ -55,16 +55,30 @@ arcore facetracking
 2. composition of the rendered cgi images with the live action footage.
 3. use of google and apple sdks, or use mlvision base on raspi.
 
-kinect connection
+### kinect connection
 
-arecore detection with raspi
+### arecore detection with raspi
 
-3d model
+#### 3d model
 
-previewlab examples
+### previewlab examples
+
+
+## reference
+[apple_developer](https://developer.apple.com/augmented-reality/arkit/)
+
+https://user-images.githubusercontent.com/42961200/190949788-f6eb0f5d-6e8a-42ca-88b2-d02c925d3212.mp4
+
+
+
+
+
+### arfoundation-echo3d for bodytracking
+[echo3d_api](https://console.echo3d.co/#/pages/contentmanager)
 
 
 archery kinect game
+
 
 {% include taglogic.html %}
 
