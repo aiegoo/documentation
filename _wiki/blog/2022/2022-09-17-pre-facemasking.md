@@ -45,6 +45,26 @@ demonstrate ways in which you can interact with Unity to create game elements in
 -	Here please be available for questions and assistance with the project going forth.
 8) Whenever necessary, implementing a code block should be done in a client pc
 
+### from the xr-motion.html
+
+arkit facetracking
+
+arcore facetracking
+
+1. animaiton of the 3d models to snap on the tracked face; lighting and rendering of the 3d models into 2d images
+2. composition of the rendered cgi images with the live action footage.
+3. use of google and apple sdks, or use mlvision base on raspi.
+
+kinect connection
+
+arecore detection with raspi
+
+3d model
+
+previewlab examples
+
+
+archery kinect game
 
 {% include taglogic.html %}
 
