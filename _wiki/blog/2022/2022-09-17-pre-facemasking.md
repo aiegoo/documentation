@@ -73,7 +73,7 @@ demonstrate ways in which you can interact with Unity to create game elements in
 
 [googe_facetracking2](https://github.com/aiegoo/FaceTracking_google2)\
 
-[open_pose](https://github.com/aiegoo/openpose)
+[open_pose](https://github.com/aiegoo/_openpose)
 
 https://user-images.githubusercontent.com/42961200/190949788-f6eb0f5d-6e8a-42ca-88b2-d02c925d3212.mp4
 
