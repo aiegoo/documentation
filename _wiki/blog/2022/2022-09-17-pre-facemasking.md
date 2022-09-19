@@ -29,7 +29,7 @@ updated: 2022-09-17 16:38
 -	Detailed instructions on steps and necessary packages. (arcore/arkit, vuforia, geo-ar)
 -	Explanation of steps necessary to run your applications. 
 2)	Basics of ARFoundation, Arkit, Arcore and raspi integration (mock projects that you can test and play with.) 
--	This is an opportunity to experiment with the usage of the software and its many tracking methods. Can explore the usage of plane/marker detection alongside other methods such as hand detection. [arkit_details](#arkit-facetracking) [arcore_details](#arcore_facetracking)
+-	This is an opportunity to experiment with the usage of the software and its many tracking methods. Can explore the usage of plane/marker detection alongside other methods such as hand detection. [arkit_details](#arkit-facetracking) [arcore_details](#arcore-facetracking)
 -	ARFoundation is a very large package with a lot of in-built functionality you can take advantage of. [arfoundation_detail](#arfoundation-echo3d-for-bodytracking)
 3)	Facial Tracking Demo
 -	Here to expand the ARFoundation demo to use Facial tracking, ending up with a version that can be tested and experimented with. 
