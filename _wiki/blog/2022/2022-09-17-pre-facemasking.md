@@ -23,6 +23,8 @@ updated: 2022-09-17 16:38
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
+[project_dashboard](https://github.com/users/aiegoo/projects/3/views/1)
+
 ## what to do
 
 1)	Installing software. (Unity/ARFoundation and an IDE) 
