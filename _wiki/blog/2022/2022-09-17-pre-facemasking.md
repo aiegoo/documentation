@@ -80,6 +80,10 @@ demonstrate ways in which you can interact with Unity to create game elements in
 
 https://user-images.githubusercontent.com/42961200/190949788-f6eb0f5d-6e8a-42ca-88b2-d02c925d3212.mp4
 
+<div style="width: 100%; text-align:right;">
+	<video width="100%" height="100%" align="right" src="https://user-images.githubusercontent.com/42961200/190949788-f6eb0f5d-6e8a-42ca-88b2-d02c925d3212.mp4" type="video/mp4" autoplay loop muted></video>
+</div>
+
 
 
 
