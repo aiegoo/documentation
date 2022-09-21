@@ -57,6 +57,9 @@ demonstrate ways in which you can interact with Unity to create game elements in
 2. composition of the rendered cgi images with the live action footage.
 3. use of google and apple sdks, or use mlvision base on raspi.
 
+### face tracking
+[![youtube](https://img.youtube.com/vi/SzMeRtJ8oTc/0.jpg)](https://www.youtube.com/watch?v=SzMeRtJ8oTc)
+
 ### kinect connection
 
 ### arecore detection with raspi
