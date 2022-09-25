@@ -21,6 +21,14 @@ updated: 2021-10-20 17:05
 * TOC
 {:toc}
 
+## hpmosa
+
+### prelog
+I've been using my personal desktop since October 2019, and decided it's high time to redo the ubuntu install, since it's been dotted with numereous issues, especially with the distro repos and list (/etc/apt/sources.list). Nobody wanted to fix this; all the hired helps dropped in the middle of their work. I felt enough is enough and reformat the partition.
+
+### my hardware specs
+
+
 ## jdlab
 [issues](https://github.com/aiegoo/jdlab-setup/issues/4)
 
