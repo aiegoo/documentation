@@ -28,6 +28,19 @@ I've been using my personal desktop since October 2019, and decided it's high ti
 
 ### my hardware specs
 
+### jobs
+1. Open Ubuntu Download page and create a bootable usb stick [ubuntu_22.04](https://releases.ubuntu.com/22.04/) `sha256sum ~/Downloads/ubuntu-22.04-desktop-amd64.iso` and for windows `certutil -hashfile C:/Users/YOUR_USER/Downloads/ubuntu-22.04-desktop-amd64.iso SHA256`
+2. Create a starup program; in ubuntu `search for and open “Startup Disk Creator” from the Activities overview screen.` and for windows, check [unetbootin](https://unetbootin.github.io/)
+3. I have followed a blog for instructions
+4. First order of install was to install git and the followings
+5. Git
+6. create ssh key and connect with my github 
+7. 
+
+
+
+![image](https://user-images.githubusercontent.com/42961200/192138399-5220779e-5f4f-4105-b249-ac1d647d9ed3.png)
+![image](https://user-images.githubusercontent.com/42961200/192138410-e9871820-2c95-4c86-9254-2f9bbe941f04.png)
 
 ## jdlab
 [issues](https://github.com/aiegoo/jdlab-setup/issues/4)
