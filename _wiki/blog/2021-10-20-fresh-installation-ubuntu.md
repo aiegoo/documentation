@@ -39,7 +39,8 @@ I've been using my personal desktop since October 2019, and decided it's high ti
 8. Install Gparted by running `sudo apt install gparted -y`
 9. to install vscode `sudo apt update && sudo apt upgrade -y`, `sudo apt install software-properties-common apt-transport-https wget -y`, `sudo apt install software-properties-common apt-transport-https wget -y`, `echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list`, `sudo apt update`, ` sudo apt install code`
 10. Anydesk install; anydesk dependency install `sudo apt-get install -y libgtkglext1` before downloading [anydesk_download](https://anydesk.com/ko/downloads/linux)
-11. Follow instructions for Vim install
+11. Slack download with snap `sudo snap install slack` and for instructions, [instruction](https://snapcraft.io/slack) 
+12. Follow instructions for Vim install
 
 
 
