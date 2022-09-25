@@ -35,7 +35,10 @@ I've been using my personal desktop since October 2019, and decided it's high ti
 4. First order of install was to install git and the followings
 5. Git
 6. create ssh key and connect with my github 
-7. 
+7. Download Chrome and run `sudo dpkg -i google-chrome-stable_current_amd64.deb` in the terminal
+8. Install Gparted by running `sudo apt install gparted -y`
+9. to install vscode `sudo apt update && sudo apt upgrade -y`, `sudo apt install software-properties-common apt-transport-https wget -y`, `sudo apt install software-properties-common apt-transport-https wget -y`, `echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list`, `sudo apt update`, ` sudo apt install code`
+10. Follow instructions for Vim install
 
 
 
