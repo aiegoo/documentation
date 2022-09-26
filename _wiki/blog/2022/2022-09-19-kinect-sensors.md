@@ -68,6 +68,53 @@ graphic: Nvidia GTX 3060 8G GDDR6
 Software Requirements • You will need Visual Studio 2012 or newer. This includes the Express and Community flavors. This does not include Visual Studio Code. I personally use Visual Studio Enterprise 2015 (with Update 2), and the examples have been tested with such. You can download a free copy of Visual Studio at https://www. visualstudio.com/en-us/products/visual-studio-community-vs.aspx. • You will need the Kinect for Windows SDK 2.0. You can download it at https://developer.microsoft.com/en-us/windows/kinect.
 ![Image](https://user-images.githubusercontent.com/42961200/187177096-ef82d2a4-59fe-4f26-874e-d782951c1482.jpg)
 
+## Kinect Unity Packages
+
+### sdks
+
+#### About Azure Kinect Sensor SDK
+[github_src](https://github.com/aiegoo/xr-Azure-Kinect-Sensor-SDK)
+
+> Beginning Kinect Programming with the Microsoft Kinect SDK
+
+This article provides an overview of the Azure Kinect Sensor software development kit (SDK), its features, and tools.
+
+#### Features
+
+The Azure Kinect Sensor SDK provides cross-platform low-level access for Azure Kinect device configuration and hardware sensors streams, including:
+
+- Depth camera access and mode control (a passive IR mode, plus wide and narrow field-of-view depth modes) 
+- RGB camera access and control (for example, exposure and white balance) 
+- Motion sensor (gyroscope and accelerometer) access 
+- Synchronized Depth-RGB camera streaming with configurable delay between cameras 
+- External device synchronization control with configurable delay offset between devices 
+- Camera frame meta-data access for image resolution, timestamp, etc. 
+- Device calibration data access 
+
+#### Tools
+
+- An [Azure Kinect viewer](azure-kinect-viewer.md) to monitor device data streams and configure different modes.
+- An [Azure Kinect recorder](azure-kinect-recorder.md) and playback reader API that uses the [Matroska container format](record-file-format.md).
+- An Azure Kinect DK [firmware update tool](azure-kinect-firmware-tool.md).
+
+### Sensor SDK
+
+- [Download Sensor SDK](sensor-sdk-download.md).
+- The Sensor SDK is available in [open source on GitHub](https://github.com/microsoft/Azure-Kinect-Sensor-SDK).
+- For more information about usage, see [Sensor SDK API documentation](https://microsoft.github.io/Azure-Kinect-Sensor-SDK/master/index.html).
+
+
+## azure kinct
+25 points of rigging info is now providing 32 points of position 
+
+## issues
+
+
+
+![Image](https://user-images.githubusercontent.com/42961200/187845476-f6ebcfc5-9ba9-4df0-990a-e3b4ab17a9b2.png)
+![Image](https://user-images.githubusercontent.com/42961200/187845477-25937d28-5fdc-49ba-aba1-025130d62302.png)
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
