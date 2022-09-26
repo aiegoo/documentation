@@ -54,7 +54,7 @@ Required Specs • 64-bit (x64) processor • Physical dual-core 3.1 GHz process
 
 ### kinect dk
 
-[Kinect_dk](https://azure.microsoft.com/en-us/services/kinect-dk/
+[Kinect_dk](https://azure.microsoft.com/en-us/services/kinect-dk/)
 
 ![Image](https://user-images.githubusercontent.com/42961200/187614825-58202f94-2170-4d0f-a7fd-b71cdcda87dd.jpg)
 
