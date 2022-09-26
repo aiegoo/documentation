@@ -148,7 +148,7 @@ If the command succeeds, the SDK is ready for use.
 
 Be sure to install the matching version of `libk4a<major>.<minor>` with `libk4a<major>.<minor>-dev`. For example, if you install the `libk4a4.1-dev` package, install the corresponding `libk4a4.1` package that contains the matching version of shared object files. For the latest version of `libk4a`, see the links in the next section.
 
-{{site.data.alerts.callout_info}}
+{{site.data.alerts.callout_primary}}
 For other distributions than 18.04, build from the source as instructed [here](https://visp-doc.inria.fr/doxygen/visp-daily/tutorial-install-ubuntu.html)
 {{site.data.alerts.callout_end}}
 

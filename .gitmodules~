@@ -1,6 +1,0 @@
-[submodule "actions"]
-	path = actions
-	url = git@github.com:aiegoo/test-actions
-[submodule "jsimpatient"]
-	path = jsimpatient
-	url = git@github.com:aiegoo/jsimpatient
