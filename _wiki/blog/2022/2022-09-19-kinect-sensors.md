@@ -103,10 +103,11 @@ The Azure Kinect Sensor SDK provides cross-platform low-level access for Azure K
 - The Sensor SDK is available in [open source on GitHub](https://github.com/microsoft/Azure-Kinect-Sensor-SDK).
 - For more information about usage, see [Sensor SDK API documentation](https://microsoft.github.io/Azure-Kinect-Sensor-SDK/master/index.html).
 
+[quickstart-setup](https://docs.microsoft.com/ko-kr/azure/Kinect-dk/set-up-azure-kinect-dk)
+
+[sensor-sdk-instructions](https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/usage.md)
 ### Install Instructions
 #### for windows
-
-## Windows installation instructions
 
 You can find installation details for the latest and previous versions of Azure Kinect Sensor SDK and Firmware [here](https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/usage.md).
 
@@ -120,6 +121,14 @@ You can find the source code [here](https://github.com/microsoft/Azure-Kinect-Se
 Currently, the only supported distribution is Ubuntu 18.04. To request support for other distributions, see [this page](https://aka.ms/azurekinectfeedback).
 
 First, you'll need to configure [Microsoft's Package Repository](https://packages.microsoft.com/), following the instructions [here](/windows-server/administration/linux-package-repository-for-microsoft-software).
+
+> Ubuntu 18.04 bionic
+
+`curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add - `
+
+`sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod `
+
+`sudo apt udpate`
 
 Now, you can install the necessary packages. The `k4a-tools` package includes the [Azure Kinect Viewer](azure-kinect-viewer.md), the [Azure Kinect Recorder](record-sensor-streams-file.md), and the [Azure Kinect Firmware Tool](azure-kinect-firmware-tool.md). To install the package, run:
 
