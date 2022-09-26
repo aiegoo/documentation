@@ -150,7 +150,7 @@ Be sure to install the matching version of `libk4a<major>.<minor>` with `libk4a<
 
 {{site.data.alerts.callout_primary}}
 For other distributions than 18.04, build from the source as instructed [here](https://visp-doc.inria.fr/doxygen/visp-daily/tutorial-install-ubuntu.html)
-{{site.data.alerts.callout_end}}
+{{site.data.alerts.end}}
 
 ## azure kinct
 25 points of rigging info is now providing 32 points of position 
