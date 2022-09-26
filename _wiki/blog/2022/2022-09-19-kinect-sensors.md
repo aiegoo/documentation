@@ -51,6 +51,11 @@ Required Specs • 64-bit (x64) processor • Physical dual-core 3.1 GHz process
 
 ### my windows laptop
 
+MSI 장치 이름	xr-aiegoo
+Process	11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz   2.30 GHz
+Installed RAM	16.0GB(15.7GB 사용 가능)
+System type	64bit, x64
+graphic: Nvidia GTX 3060 8G GDDR6
 
 ### kinect dk
 
