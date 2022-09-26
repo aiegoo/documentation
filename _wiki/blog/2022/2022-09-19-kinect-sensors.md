@@ -56,11 +56,12 @@ Required Specs • 64-bit (x64) processor • Physical dual-core 3.1 GHz process
 
 [Kinect_dk](https://azure.microsoft.com/en-us/services/kinect-dk/
 
-![Image](https://user-images.githubusercontent.com/42961200/187614825-58202f94-2170-4d0f-a7fd-b71cdcda87dd.jpg
+![Image](https://user-images.githubusercontent.com/42961200/187614825-58202f94-2170-4d0f-a7fd-b71cdcda87dd.jpg)
+
 ### kiect v1 for windows 
 
 Software Requirements • You will need Visual Studio 2012 or newer. This includes the Express and Community flavors. This does not include Visual Studio Code. I personally use Visual Studio Enterprise 2015 (with Update 2), and the examples have been tested with such. You can download a free copy of Visual Studio at https://www. visualstudio.com/en-us/products/visual-studio-community-vs.aspx. • You will need the Kinect for Windows SDK 2.0. You can download it at https://developer.microsoft.com/en-us/windows/kinect.
-![Image](https://user-images.githubusercontent.com/42961200/187177096-ef82d2a4-59fe-4f26-874e-d782951c1482.jpg
+![Image](https://user-images.githubusercontent.com/42961200/187177096-ef82d2a4-59fe-4f26-874e-d782951c1482.jpg)
 
 {% include taglogic.html %}
 
