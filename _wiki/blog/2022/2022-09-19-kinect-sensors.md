@@ -25,6 +25,41 @@ updated: 2022-09-19 13:43
 
 ##  references
 
+### my linux
+
+> 미니 데스크탑 워크스테이션 / HP Z2 MINI G3 RAM 32GB
+> 
+> NVIDIA Quadro M620이 내장된 퍼포먼스 타입
+> 
+> ​​
+> 
+> CPU : Xeon E3-1245 V5 ( 4 Core 8 Thread , 3.5GHz /Turbo 3.9GHz )
+> 
+> RAM : 32GB ( 16GB PC4-2666V X 2EA )
+> 
+> SSD : 삼성 NVMe SM961 4 tera ( MLC , Samsung MZVKW512HMJP-00L7 )
+> 
+> HDD : 250g
+> 
+> VGA : NVIDIA Quadro M620
+> 
+> ​아답터 : HP 정품 200W 아답터
+> 
+> 윈도우즈 10 정식 라이센스
+
+Required Specs • 64-bit (x64) processor • Physical dual-core 3.1 GHz processor or faster (recommended i7)
+
+### my windows laptop
+
+
+### kinect dk
+
+
+
+### kiect v1 for windows 
+
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
