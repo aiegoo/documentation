@@ -35,6 +35,13 @@ updated: 2022-09-27 13:40
 ![SmartSelect_20220927_141024_YouTube](https://user-images.githubusercontent.com/42961200/192443279-867bff83-6ff1-4335-9399-a4eeda8857fd.jpg)
 ![Screenshot_20220927_141006_YouTube](https://user-images.githubusercontent.com/42961200/192443298-0bb71a4e-e372-46e6-8daf-66814828e8e4.jpg)
 
+
+### Prop creation with modeling and fracture modes
+1. 부서진 콘크리트 기둥 만들기
+2. 부서진 벽돌 벽 만들기
+3. Packed Level Instances
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
