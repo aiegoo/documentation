@@ -62,6 +62,8 @@ youtubeID: ijVpUdWZYKU
 <img alt="C" src="https://img.shields.io/badge/django%20-orange.svg?&style=for-the-badge&logo=django&logoColor=brightgreen"/>
 <img alt="C++" src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/>
 <img alt="C" src="https://img.shields.io/badge/git%20-blueviolet.svg?&style=for-the-badge&logo=git&logoColor=success"/>
+<img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"alt="unity"width="40"height="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>
 </p>
 
 
