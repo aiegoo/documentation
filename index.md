@@ -63,6 +63,7 @@ youtubeID: ijVpUdWZYKU
 <img alt="C++" src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/>
 <img alt="C" src="https://img.shields.io/badge/git%20-blueviolet.svg?&style=for-the-badge&logo=git&logoColor=success"/>
 <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity"/>
+
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp"/>
 </p>
 
@@ -79,7 +80,7 @@ youtubeID: ijVpUdWZYKU
   </p>
 
 <h3 align="left">Languages and Tools:</h3>
-<p align="center" markdown=0>
+<p align="center">
 <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noreferrer"> <img src="https://docs.amplify.aws/assets/logo-dark.svg" alt="amplify" /> </a> 
 <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" /> </a> 
 <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg" alt="angularjs" /> </a> 
