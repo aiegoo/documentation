@@ -81,7 +81,7 @@ youtubeID: ijVpUdWZYKU
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="center">
-<a href="https://aws.amazon.com/amplify/" target="_blank" rel="noreferrer"> <img src="https://docs.amplify.aws/assets/logo-dark.svg" alt="amplify" /> </a> 
+<a href="https://aws.amazon.com/amplify/" target="_blank" rel="noreferrer"> <img src="https://docs.amplify.aws/assets/logo-dark.svg" alt="amplify" width="40" /> </a> 
 <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" /> </a> 
 <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg" alt="angularjs" /> </a> 
 <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" /> </a> 
@@ -134,18 +134,18 @@ youtubeID: ijVpUdWZYKU
 <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" /> </a> 
 <a href="https://redis.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" /> </a> 
 <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" /> </a> 
-<a href="https://www.rust-lang.org"target="_blank"rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg"alt="rust"width="40"height="40"/></a>
-<a href="https://sass-lang.com"target="_blank"rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"alt="sass"width="40"height="40"/></a>
-<a href="https://www.sqlite.org/"target="_blank"rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"alt="sqlite"width="40"height="40"/></a>
-<a href="https://tailwindcss.com/"target="_blank"rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"alt="tailwind"width="40"height="40"/></a>
-<a href="https://www.tensorflow.org"target="_blank"rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg"alt="tensorflow"width="40"height="40"/></a>
-<a href="https://www.typescriptlang.org/"target="_blank"rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"alt="typescript"width="40"height="40"/></a>
-<a href="https://unity.com/"target="_blank"rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"alt="unity"width="40"height="40"/></a>
-<a href="https://unrealengine.com/"target="_blank"rel="noreferrer"><img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg"alt="unreal"width="40"height="40"/></a>
-<a href="https://vuejs.org/"target="_blank"rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"alt="vuejs"width="40"height="40"/></a>
-<a href="https://vuetifyjs.com/en/"target="_blank"rel="noreferrer"><img src="https://bestofjs.org/logos/vuetify.svg"alt="vuetify"width="40"height="40"/></a>
-<a href="https://webpack.js.org"target="_blank"rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg"alt="webpack"width="40"height="40"/></a>
-<a href="https://www.adobe.com/products/xd.html"target="_blank"rel="noreferrer"><img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg"alt="xd"width="40"height="40"/></a></p>
+<a href="https://www.rust-lang.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" alt="rust" /></a>
+<a href="https://sass-lang.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"alt="sass" /></a>
+<a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" /></a>
+<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" /></a>
+<a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" /></a>
+<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"  alt="typescript" /></a>
+<a href="https://unity.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" /></a>
+<a href="https://unrealengine.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" /></a>
+<a href="https://vuejs.org/"target="_blank"rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"alt="vuejs"/></a>
+<a href="https://vuetifyjs.com/en/" target="_blank" rel="noreferrer"><img src="https://bestofjs.org/logos/vuetify.svg" alt="vuetify" /></a>
+<a href="https://webpack.js.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" /></a>
+<a href="https://www.adobe.com/products/xd.html" target="_blank" rel="noreferrer"><img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd"/></a></p>
 
 <p align="center" markdown=span>
 [![xd](https://cdn.worldvectorlogo.com/logos/adobe-xd.svg)](https://www.adobe.com/products/xd.html)
