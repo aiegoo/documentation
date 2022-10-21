@@ -149,7 +149,7 @@ youtubeID: ijVpUdWZYKU
 
 <figure align="center" markdown=1>
 [![xd](https://cdn.worldvectorlogo.com/logos/adobe-xd.svg)](https://www.adobe.com/products/xd.html)
-[![webpack](https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg)](https://webpack.js.org){width="40"}
+[![webpack](https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg =40x)](https://webpack.js.org)
 </figure>
 
 **aiegoo/portfolio** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
