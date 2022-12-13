@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "How to backup using dd local or remote pc"
-name: "dd-gunzip"
+name: "dd_cloning"
 tags: [linux]
 tagName: linux
-permalink: 2022-12-13-dd-gunzip.html
+permalink: 2022-12-13-dd_cloning.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
 keywords: "linux backup raspi dd if gunzip img gz"
-summary: "Tue, Dec 13, 22, ssh root@local "dd if=[D[D[D[D[D[[C[C[C[C[C[C[C[C[C[C[Cgzip  dd of=image"
+summary: "Tue, Dec 13, 22, ssh root@172.30.1.96 "dd if=/dev/sda | gzip -1 -" | dd of=image.gz"
 excerpt_separator: <!--more-->
 toc: true
 public: true
