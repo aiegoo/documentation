@@ -10,7 +10,7 @@ folder: blog
 collection: wiki
 categories: school
 keywords: "linux backup raspi dd if gunzip img gz"
-summary: "Tue, Dec 13, 22, ssh root@172.30.1.96 "dd if=/dev/sda | gzip -1 -" | dd of=image.gz"
+summary: "Tue, Dec 13, 22, ssh root@172.30.1.96 dd if=/dev/sda | gzip -1 - | dd of=image.gz"
 excerpt_separator: <!--more-->
 toc: true
 public: true
