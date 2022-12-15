@@ -64,12 +64,12 @@ youtubeID: ijVpUdWZYKU
 <img alt="C" src="https://img.shields.io/badge/git%20-blueviolet.svg?&style=for-the-badge&logo=git&logoColor=success"/>
 <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity"/>
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="66px"/>
 </p>
 
 
-<p align="center" markdown="1">  
-![Engineer](https://profile-counter.glitch.me/{aiegoo}/count.svg)
+<p align="center">  
+<img alt="profile-count" src="https://profile-counter.glitch.me/{aiegoo}/count.svg" width="66px"/>
 </p>
 
 
