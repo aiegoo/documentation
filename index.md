@@ -39,17 +39,17 @@ youtubeID: ijVpUdWZYKU
 ## 📫 Feel free to reach out
 <table align="center">
   <tr>
-     <a href="https://www.linkedin.com/in/tonyleekorea/">
+     <td></td><a href="https://www.linkedin.com/in/tonyleekorea/">
   <img alt="tonylee's LinkedIN" style="width:22px; align: left;" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" />
-      </a>  </tr>
+      </a></td>  </tr>
   <tr>
-     <a href="https://twitter.com/tonyleekorea">
+     <td><a href="https://twitter.com/tonyleekorea">
   <img alt="tonylee | Twitter" style="width:22px; align: left;" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg" />
-      </a>  </tr>
+      </a> </td> </tr>
   <tr>
-     <a href="https://aiegoo.github.io/resume">
+     <td><a href="https://aiegoo.github.io/resume">
   <img alt="📕 Visi Project's Blog" style="width:22px; align: left;" width="66px" src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" />
-      </a> 
+      </a> </td>
   </tr>
   </table>
 
