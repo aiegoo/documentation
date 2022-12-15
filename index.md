@@ -39,7 +39,7 @@ youtubeID: ijVpUdWZYKU
 ## 📫 Feel free to reach out
 <table align="center">
   <tr>
-     <td></td><a href="https://www.linkedin.com/in/tonyleekorea/">
+     <td><a href="https://www.linkedin.com/in/tonyleekorea/">
   <img alt="tonylee's LinkedIN" style="width:22px; align: left;" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" />
       </a></td>  </tr>
   <tr>
