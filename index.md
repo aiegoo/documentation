@@ -6,7 +6,7 @@ hide: false
 toc: false
 sidebar: mydoc_sidebar
 permalink: index.html
-summary: From a graphic designer with hands-on experience in the industry, I witnessed myself transform into a full-fledged web developer covering both front-end and back-end offices.
+summary: From a graphic designer with hands-on experience in the industry, I witnessed myself transform into a full-fledged IT consultant covering both visualization and sensor APIs.
 youtubeID: ijVpUdWZYKU
 ---
 
@@ -34,7 +34,7 @@ youtubeID: ijVpUdWZYKU
 - 🌱 Currently learning the art of life-long learning
 - 🤔 I’m looking for help on figuring out how to help
 - 💬 Ask me about how can I help, else internet has you covered ;)
-- ⚡ Fun fact: 2021> I ran my first full lap around my neighborhood lake in 2 years; now I enjoy this fun everyday.
+- ⚡ Fun fact: 2022> I ran my first full lap around my neighborhood lake in 2 years; now I enjoy this fun everyday.
 
 ## 📫 Feel free to reach out
 <table align="center">
