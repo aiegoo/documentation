@@ -19,36 +19,23 @@ folder: mydoc
 </ul>
 
 <div class="tab-content">
-
 <!-- fictions -->
      <div role="tabpanel" class="tab-pane active" id="fiction">
           <h2>Fictions</h2>
           <p>I read thousands of novels since my hi-teen years.</p>
-
           <ul>
-     
-     <li><quote title="⭐⭐⭐⭐">John Case</quote>
-    
-     <a href="https://www.goodreads.com/book/show/410888.The_Murder_Artist" title="⭐⭐⭐⭐">The Murder Artist</a>The bestselling author of The Genesis Code and The Eighth Day now strikes his most harrowing chord, with a chilling novel that pushes suspense to nearly inhuman limits.
-     
-     
+     <li><quote title="⭐⭐⭐⭐">John Case</quote>   
+     <a href="https://www.goodreads.com/book/show/410888.The_Murder_Artist" title="⭐⭐⭐⭐">The Murder Artist</a>The bestselling author of The Genesis Code and The Eighth Day now strikes his most harrowing chord, with a chilling novel that pushes suspense to nearly inhuman limits.   
      </li><li><i title="⭐⭐⭐⭐⭐⭐">John Case</i>
      <a href="https://www.goodreads.com/book/show/228571.The_Eighth_Day" title="⭐⭐⭐⭐⭐⭐">The Eigth Day</a>
-     Danny Cray is a struggling 28 year-old sculptor and video artist who lives in Washington DC. To make ends meet.
-     
+     Danny Cray is a struggling 28 year-old sculptor and video artist who lives in Washington DC. To make ends meet.    
      </li><li>Michael Crichton
      <a href="https://www.amazon.com/dp/B000FC13E0/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1" title="⭐⭐⭐⭐⭐">prey</a>
-      Michael Crichton's Prey is a terrifying page-turner that masterfully combines a heart–pounding thriller with cutting-edge technology.
-  
-     
-     </li><li>Stephen King
-     
+      Michael Crichton's Prey is a terrifying page-turner that masterfully combines a heart–pounding thriller with cutting-edge technology.     
+     </li><li>Stephen King     
      <a href="https://www.amazon.com/Bag-Bones-Novel-Stephen-King-ebook/dp/B000FBJFZA/ref=sr_1_1?keywords=bag+of+bones&amp;qid=1569504616&amp;s=digital-text&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
      Bag of bones</a> No longer content to be the prolific provider of text, King grabs the audio reins to recount this haunted tale of grief, young love, and otherworldly visits. When 40-year-old bestselling novelist Mike Noonan returns to his lakeside cabin to process his wife's death, he finds the place a beacon for nightmares and ghoulish visits.
-     
-     
      </li><li>Tom Clancy
-     
      <a href="https://www.amazon.com/Executive-Orders-Jack-Ryan-Novel-ebook/dp/B001QEAQP8/ref=sr_1_1?crid=318MWII3HZYBE&amp;keywords=executive+orders+tom+clancy&amp;qid=1569504684&amp;s=digital-text&amp;sprefix=executive+orders%2Cdigital-text%2C325&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
      Executive Orders</a>Tom Clancy goes to the White House in this thriller of political terror and global disaster. The American political situation takes a disturbing turn as the President, Congress, and Supreme Court are obliterated when a Japanese terrorist lands a 747 on the Capitol. Meanwhile the Iranians are unleashing an Ebola virus threat on the country. Jack Ryan, CIA agent, is cast in the middle of this maelstrom. Because of a recent sex scandal, Ryan was appoint
      
@@ -150,9 +137,7 @@ folder: mydoc
       Her work has appeared in the Chicago Tribune, Cosmopolitan, and Zoetrope, among other publications, and has been heard on National Public Radio and featured at Symphony Space in New York City. Bank holds an MFA from Cornell University and is the winner of a Nelson Algren Award for short fiction. She divides her time between New York City and East Hampton.
      
      </li></ul>
-
      </div>
-
 <!-- courese books -->
      <div role="tabpanel" class="tab-pane" id="coursebook">
           <h2>Coursebooks</h2>
@@ -704,11 +689,11 @@ Stephen L. Carter, Richard Allen, et al.
      </li><li> Jennifer Lawler
      <a href="https://www.amazon.com/Dojo-Wisdom-Compass-Jennifer-Lawler/dp/0142196223/ref=sr_1_1?keywords=dojo+wisdom&amp;qid=1569894138&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">Dojo Wisdom</a>
      A martial arts expert draws on the principles and practices of her training to present a series of one hundred life lessons to help readers find their inner warriors, accompanied by brief exercises that demonstrate how to apply the teachings to everyday life
-     <dt><ul><li><i>See also some <a href="kdd02.html">sample results</a>
+     <><ul><li><i>See also some <a href="kdd02.html">sample results</a>
      from the burst detection algorithm described in this paper.</i></li></ul>
      
      
-     </dt></li></ul>
+     </li></ul>
 
      <p>Representations for learning</p>
      <ul>
@@ -743,11 +728,11 @@ Stephen L. Carter, Richard Allen, et al.
      </li><li> Jennifer Lawler
      <a href="https://www.amazon.com/Dojo-Wisdom-Compass-Jennifer-Lawler/dp/0142196223/ref=sr_1_1?keywords=dojo+wisdom&amp;qid=1569894138&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">Dojo Wisdom</a>
      A martial arts expert draws on the principles and practices of her training to present a series of one hundred life lessons to help readers find their inner warriors, accompanied by brief exercises that demonstrate how to apply the teachings to everyday life
-     <dt><ul><li><i>See also some <a href="kdd02.html">sample results</a>
+     <><ul><li><i>See also some <a href="kdd02.html">sample results</a>
      from the burst detection algorithm described in this paper.</i></li></ul>
      
      
-     </dt></li></ul>
+     </li></ul>
 
      <p>Language, text content and social interactions</p>
      <ul>
@@ -858,11 +843,8 @@ Stephen L. Carter, Richard Allen, et al.
           </a></li><li><a href="#">
           </a><a href="https://github.com/aiegoo/mohammad">
           now private github repository</a> <i>(to be completed in November).</i>
+          </li></ul>          
           </li></ul>
-          
-          </li></ul>
-
-
      </div>
 
 <!-- tool books -->
@@ -874,16 +856,12 @@ Stephen L. Carter, Richard Allen, et al.
           <i>
      This book together with my other Udemy course I am taking is the core of my learning curves for now.
           </i></li>
-     
           <li>
           Most of the on-line courses on <a href="https://www.udemy.com/home/my-courses/learning/?p=5">UDEMY</a> listed here
           <a href="https://www.pivotaltracker.com/story/show/167956227">pivotaltracker stories board</a>, 
           with about 60 paid courses I am taking currently. </li>
-          
           <li>
           Recent courses: in collaborative development env. </li>
-          
-     
           <li>
           <a href="https://eggs.or.kr/index.php">
           Transcripting solution</a> 
@@ -894,6 +872,5 @@ Stephen L. Carter, Richard Allen, et al.
           <a href="https://github.com/aiegoo/mohammad">
           now private github repository</a> <i>(to be completed in November).</i></li>
      </ul>
-     
 </div>
 </div>
