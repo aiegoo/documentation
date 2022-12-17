@@ -301,149 +301,231 @@ folder: mydoc
       Lesley Kagen
      <a href="https://www.amazon.com/Whistling-Dark-Lesley-Kagen-ebook/dp/B001M0BUPG/ref=sr_1_1?keywords=Lesley+Kagen&amp;qid=1569680009&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">Whistling In the Dark</a>
      The loss of innocence can be as dramatic as the loss of a parent or the discovery that what's perceived to be truth can actually be a big fat lie, as shown in Kagen's compassionate debut, a coming-of-age thriller set in Milwaukee during the summer of 1959.
-     <dt><ul><li><i>See also the 
-     <a href="https://www.facebook.com/notes/facebook-data-science/can-cascades-be-predicted/10152056491448859?stream_ref=10" title="⭐⭐⭐⭐⭐⭐">Facebook Data Science blog post</a> about this work.
-     </i></li></ul>
-     
-     <li>
-      Greg Mortenson
-     <a href="https://www.amazon.com/Three-Cups-Tea-Mission-Promote/dp/0143038257/ref=sr_1_1?keywords=Greg+Mortenson&amp;qid=1569680307&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
-      Three Cups of Tea</a>
-      The astonishing, uplifting story of a real-life Indiana Jones and his humanitarian campaign to use education to combat terrorism in the Taliban’s backyard
-     
-     </li><li>
-      Margaret Dilloway
-     <a href="https://www.amazon.com/How-American-Housewife-Margaret-Dilloway-ebook/dp/B003QMLCCE/ref=sr_1_6?keywords=Margaret+Dilloway&amp;qid=1569680439&amp;s=books&amp;sr=1-6" title="⭐⭐⭐⭐⭐⭐">
-      How to Be an American Housewife</a>
-      In this enchanting first novel, Dilloway mines her own family's history to produce the story of Japanese war bride Shoko, her American daughter, Sue, and their challenging relationship.
-     
-     </li><li>
-     Craig Johnson
-     <a href="https://www.amazon.com/Junkyard-Dogs-Longmire-Mystery-Mysteries-ebook/dp/B003NX7540/ref=sr_1_1?keywords=Junkyard+Dogs&amp;qid=1569680537&amp;s=books&amp;sr=1-1" title="⭐⭐⭐⭐⭐⭐">
-      Junkyard Dogs</a>
-      After a severed thumb turns up at the dump outside of Durant, Wyoming, Sheriff Walt Longmire ignores the fact that someone has claimed it.
-     </li><li>
-      Maile Meloy
-     <a href="https://www.amazon.com/Both-Ways-Only-Way-Want-ebook/dp/B002IPZG0O/ref=sr_1_3?keywords=Maile+Meloy&amp;qid=1569680744&amp;s=books&amp;sr=1-3" title="⭐⭐⭐⭐⭐⭐">
-      Both Ways Is the Only Way I Want It</a>
-      I was taking a class from Ann Patchett then, and she said, about the number of stories in a collection, that Salinger's Nine was like eight hours sleep—a little more was okay, a little less was fine, but it was a good general guideline. About variety, she said that a collection was like a mall
-     
-     </li><li>
-      Cammie Mcgovern 
-     <a href="https://www.amazon.com/Neighborhood-Watch-Novel-Cammie-McGovern/dp/B007MXULS4/ref=sr_1_10?keywords=Cammie+Mcgovern&amp;qid=1569680874&amp;s=books&amp;sr=1-10" title="⭐⭐⭐⭐⭐⭐">Neighborhood Watch</a>
-     A murder, a sleep disorder, a DNA test, an alternative energy source, a childless couple, a neighborhood watch group, and a troubled teenager it seems unlikely that this motley combination of plot points could coalesce into a compelling story.
-     
-     </li><li>Sophie Hannah
-     <a href="https://www.amazon.com/Cradle-CRADLE-Hannah-Aug-30-11-Paperback/dp/B007SLL210/ref=sr_1_2?keywords=sophie+hannah+the+cradle+in+the+grave&amp;qid=1569681086&amp;s=books&amp;sr=1-2" title="⭐⭐⭐⭐⭐⭐">
-      The Cradle in the Grave</a>
-      The author has certainly chosen to work with a lot of ingredients here, and yet the subtlety with which she does so makes for a hearty literary meal-one in which each part feels as if it's essential.
-     
-     </li><li>
-      Kaniel J. Levitin
-     <a href="https://www.amazon.com/This-Your-Brain-Music-Obsession/dp/0452288525/ref=sr_1_1?keywords=Kaniel+J.+Levitin&amp;qid=1569681282&amp;s=books&amp;sr=1-1-spell" title="⭐⭐⭐⭐⭐⭐">
-      This Is Your Brain on Music</a>
-      Levitin is a deft and patient explainer of the basics for the non-scientist as well as the non-musician....By tracing music's deep ties to memory, Levitin helps quantify some of music's magic without breaking its spell.
-     
-     </li><li>
-      Carol Wolper
-     <a href="https://www.amazon.com/Secret-Celebrity-Carol-Wolper/dp/1573222143/ref=sr_1_10?keywords=Carol+Wolper&amp;qid=1569681388&amp;s=books&amp;sr=1-10" title="⭐⭐⭐⭐⭐⭐">
-      Secret Celebrity</a>
-      Although not technically a sequel to Cigarette Girl, Wolper's second novel reads like part two of her treatise on the cult of celebrity. Struggling filmmaker Christine Chase is the protagonist, rather than Cigarette's screenwriter, Elizabeth West
 
-     
-     </li><li>lynne Truss
-     <a href="https://www.amazon.com/Eats-Shoots-Leaves-Tolerance-Punctuation/dp/1592402038/ref=sr_1_1?crid=3IEJH0XH4A06S&amp;keywords=lynne+truss&amp;qid=1569725925&amp;sprefix=Lynne+Truss%2Caps%2C336&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
-      Eats, Shoots &amp; Leaves</a>
-      Witty, smart, passionate.”—Los Angeles Times Book Review, Best Books Of 2004: Nonfiction “This book changed my life in small, perfect ways like learning how to make better coffee or fold an omelet. It’s the perfect gift for anyone who cares about grammar and a gentle introduction for those who don’t care enough.”—The Boston Sunday Globe 
-     
-     </li><li>
-      Anu Garg
-     <a href="https://www.amazon.com/Dord-Diglot-Avocado-Two-Not-So-Common-ebook/dp/B000XPRS5M/ref=sr_1_5?crid=32NJVZ6DJ7ZZZ&amp;keywords=anu+garg&amp;qid=1569726026&amp;sprefix=Anu+Garg%2Caps%2C313&amp;sr=8-5" title="⭐⭐⭐⭐⭐⭐">The Dord, the Diglot, and an Avocado or Two</a> 
-     Garg, logophilic founder of wordsmith.org and the 600,000-subscriber A.Word.A.Day email newsletter, jam-packs his latest good-natured, reader-friendly book (after Another Word A Day) with terms exotic and domestic, lessons in etymology and surprising tricks of the linguist trade, such as the fact that "as a copyright trap...
-     
-     </li><li>
-      Spencer Johnson, M.D.
-     <a href="https://www.amazon.com/Spencer-Johnson-Moved-Cheese-%E3%80%902018%E3%80%91/dp/B07HCCDS3M/ref=sr_1_5?crid=6VGVQVGJJVKG&amp;keywords=who+moved+my+cheese&amp;qid=1569726236&amp;sprefix=who+moved%2Caps%2C321&amp;sr=8-5" title="⭐⭐⭐⭐⭐⭐">Who Moved My Cheese?</a>
-     The long-awaited sequel to Who Moved My Cheese?, the beloved 28-million-copy bestseller that became a worldwide sensation.
-     
-     
-     </li><li>
-      Meg Mullins
-     <a href="https://www.amazon.com/Dear-Strangers-Novel-Meg-Mullins-ebook/dp/B0030CVQ12/ref=sr_1_4?keywords=Meg+Mullins&amp;qid=1569726421&amp;sr=8-4" title="⭐⭐⭐⭐⭐⭐">Dear Strangers</a>
-     Oliver is only seven when his father announces the family will adopt a baby boy. But when Oliver’s father suddenly dies, his mother finds she can no longer keep the baby and gives him away.
-     
-     
-     
-     
-     </li><li>
-      T.C. Boyle
-     <a href="https://www.amazon.com/Talk/dp/B000GTLPTA/ref=sr_1_1?keywords=T.C.+Boyle+talk+talk&amp;qid=1569726803&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">Talk Talk</a>There's more than one way to take a life...The first time he saw Dana she was dancing barefoot, her hair aflame in the red glow of the club, her body throbbing with rhythms and cross-rhythms that only she could hear.
-     <dt> <ul> <li><i>
-         We are interested in gathering additional data about the spread
-         of the chain-letter petitions described in this paper.  
-         Please visit
-         <a href="http://petitions.cs.cornell.edu">
-         http://petitions.cs.cornell.edu</a>
-         or
-         <a href="http://petitions.cs.carleton.edu">
-         http://petitions.cs.carleton.edu</a>
-         to learn more or to help.  </i>
-        </li> </ul>
-     
+     <ul>
+          <li><i>See also the
+                    <a href="https://www.facebook.com/notes/facebook-data-science/can-cascades-be-predicted/10152056491448859?stream_ref=10"
+                         title="⭐⭐⭐⭐⭐⭐">Facebook Data Science blog post</a> about this work.
+               </i></li>
+     </ul>
+
      <li>
-      Katherine Valentine
-     <a href="https://www.amazon.com/Miracle-St-Cecilias-Katherine-Valentine/dp/0142003050/ref=sr_1_1?keywords=Katherine+Valentine&amp;qid=1569726990&amp;s=audible&amp;sr=1-1-catcorr" title="⭐⭐⭐⭐⭐⭐">A Miracle for St. Cecilia's </a>
-     The charming New England town of Dorsetville and its cast of wry, tough inhabitants struggle to stay afloat after the wool mill closes as they gather at the town church of St. Cecilia
-     
-     </li><li>
-      David Guterson
-     <a href="https://www.amazon.com/Snow-Falling-on-Cedars/dp/B075NPVZRT/ref=sr_1_4?keywords=David+Guterson&amp;qid=1569730567&amp;sr=8-4" title="⭐⭐⭐⭐⭐⭐">Snow Falling on Cedars</a>
-     The whiteness covers the courthouse, but it cannot conceal the memories at work inside: the internment of
-     
-     </li><li>
-      Elizabeth Lowell
-     <a href="https://www.amazon.com/Remember-Summer-Elizabeth-Lowell-ebook/dp/B000FC13IG/ref=sr_1_1?keywords=elizabeth+lowell+remember+summer&amp;qid=1569730726&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">Remember Summer</a>
-     The most grueling challenge of Raine Smith's equestrian career looms before her—the Olympic Games.
-     
-     </li><li>
-      Larry Mcmurtry
-     <a href="https://www.amazon.com/evening-star-novel-Larry-McMurtry/dp/B002B6L5FU/ref=sr_1_2?keywords=Larry+Mcmurtry+evening+star&amp;qid=1569730927&amp;sr=8-2" title="⭐⭐⭐⭐⭐⭐">The evening star</a>
-     Here old age and death catch up with some beloved McMurtry characters familiar to readers since Terms of Endearment . Willful, tart-tongued Aurora Greenway and her outspoken maid and confidante, Rose Dunlup, sp ok? yes are in their 70s when this book begins; Aurora's lover, Gen.
-     
-     </li><li>
-      Dean Koontz 
-     <a href="https://www.amazon.com/Vision-Dean-Koontz-ebook/dp/B001HYOD5G/ref=sr_1_1?keywords=Dean+Koontz+the+vision&amp;qid=1569731170&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
-      The Vision</a>
-      In every industry there exist ‘artists’ that are not only unforgettable, but know their craft better than the rest. Dean Koontz...is among these artisans.
-     
-     </li><li>
-      John Grisham
-     <a href="https://www.amazon.com/Testament-Novel-John-Grisham-ebook/dp/B003B02O7I/ref=sr_1_9?keywords=John+Grisham&amp;qid=1569731332&amp;sr=8-9" title="⭐⭐⭐⭐⭐⭐">
-      The Testament
-     </a>
-     Back in the States, the legal proceedings drag on and Grisham has a high time with Phelan's money-hungry descendents, a regrettable bunch who squandered millions, married strippers, got druggy, and befriended the Mob. The youngest son, Ramble, is a multi-pierced, tattoo-covered malcontent with big dreams for his rock band, the Demon Monkeys.
-     
-     </li><li>
-     Stephen King
-     <a href="https://www.amazon.com/The-Regulators/dp/B01AVGFZ5M/ref=sr_1_3?keywords=Richard+Bachman&amp;qid=1569731623&amp;sr=8-3" title="⭐⭐⭐⭐⭐⭐">
-      The Regulators</a>
-      The battle against evil has begun in this "devishly entertaining" (Publishers Weekly) story of a suburban neighborhood in the grip of surreal terror - a number-one national best seller from Stephen King writing as Richard Bachman. 
-     
-     </li><li>
-      Dean Koontz
-     <a href="https://www.amazon.com/The-Key-to-Midnight/dp/B002ZOVVW0/ref=sr_1_1?keywords=Dean+Koontz+the+key+to+midnight&amp;qid=1569731849&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
-      The Key to Midnight</a>
-      At night she's plagued by the dream of a man with a needle and feelings of being violated. She meets fellow American Alex Hunter, who helps Joanna awaken to the fact that she's not who she thinks she is.
-     
-     </li><li>
-      Faye Kellerman
-     <a href="https://www.amazon.com/Stalker-Decker-Lazarus-Novel-Peter-ebook/dp/B000W917TM/ref=sr_1_1?keywords=Faye+Kellerman+stalker&amp;qid=1569732013&amp;sr=8-1" title="⭐⭐⭐⭐⭐⭐">
-      Stalker</a>
-      LAPD detective Peter Decker, promoted to lieutenant after his heroics in Jupiter's Bones (1999), is overloaded with troubles in this outstanding, suspense-packed mystery, the 12th in Kellerman's acclaimed series. As usual, a challenging case distracts Decker from his family, but this time there is one difference.
-     
-     
-     
-     </li></dt></li></dt></li></ul>
+          Greg Mortenson
+          <a href="https://www.amazon.com/Three-Cups-Tea-Mission-Promote/dp/0143038257/ref=sr_1_1?keywords=Greg+Mortenson&amp;qid=1569680307&amp;s=books&amp;sr=1-1"
+               title="⭐⭐⭐⭐⭐⭐">
+               Three Cups of Tea</a>
+          The astonishing, uplifting story of a real-life Indiana Jones and his humanitarian campaign to use education
+          to combat terrorism in the Taliban’s backyard
+
+     </li>
+     <li>
+          Margaret Dilloway
+          <a href="https://www.amazon.com/How-American-Housewife-Margaret-Dilloway-ebook/dp/B003QMLCCE/ref=sr_1_6?keywords=Margaret+Dilloway&amp;qid=1569680439&amp;s=books&amp;sr=1-6"
+               title="⭐⭐⭐⭐⭐⭐">
+               How to Be an American Housewife</a>
+          In this enchanting first novel, Dilloway mines her own family's history to produce the story of Japanese war
+          bride Shoko, her American daughter, Sue, and their challenging relationship.
+
+     </li>
+     <li>
+          Craig Johnson
+          <a href="https://www.amazon.com/Junkyard-Dogs-Longmire-Mystery-Mysteries-ebook/dp/B003NX7540/ref=sr_1_1?keywords=Junkyard+Dogs&amp;qid=1569680537&amp;s=books&amp;sr=1-1"
+               title="⭐⭐⭐⭐⭐⭐">
+               Junkyard Dogs</a>
+          After a severed thumb turns up at the dump outside of Durant, Wyoming, Sheriff Walt Longmire ignores the fact
+          that someone has claimed it.
+     </li>
+     <li>
+          Maile Meloy
+          <a href="https://www.amazon.com/Both-Ways-Only-Way-Want-ebook/dp/B002IPZG0O/ref=sr_1_3?keywords=Maile+Meloy&amp;qid=1569680744&amp;s=books&amp;sr=1-3"
+               title="⭐⭐⭐⭐⭐⭐">
+               Both Ways Is the Only Way I Want It</a>
+          I was taking a class from Ann Patchett then, and she said, about the number of stories in a collection, that
+          Salinger's Nine was like eight hours sleep—a little more was okay, a little less was fine, but it was a good
+          general guideline. About variety, she said that a collection was like a mall
+
+     </li>
+     <li>
+          Cammie Mcgovern
+          <a href="https://www.amazon.com/Neighborhood-Watch-Novel-Cammie-McGovern/dp/B007MXULS4/ref=sr_1_10?keywords=Cammie+Mcgovern&amp;qid=1569680874&amp;s=books&amp;sr=1-10"
+               title="⭐⭐⭐⭐⭐⭐">Neighborhood Watch</a>
+          A murder, a sleep disorder, a DNA test, an alternative energy source, a childless couple, a neighborhood watch
+          group, and a troubled teenager it seems unlikely that this motley combination of plot points could coalesce
+          into a compelling story.
+
+     </li>
+     <li>Sophie Hannah
+          <a href="https://www.amazon.com/Cradle-CRADLE-Hannah-Aug-30-11-Paperback/dp/B007SLL210/ref=sr_1_2?keywords=sophie+hannah+the+cradle+in+the+grave&amp;qid=1569681086&amp;s=books&amp;sr=1-2"
+               title="⭐⭐⭐⭐⭐⭐">
+               The Cradle in the Grave</a>
+          The author has certainly chosen to work with a lot of ingredients here, and yet the subtlety with which she
+          does so makes for a hearty literary meal-one in which each part feels as if it's essential.
+
+     </li>
+     <li>
+          Kaniel J. Levitin
+          <a href="https://www.amazon.com/This-Your-Brain-Music-Obsession/dp/0452288525/ref=sr_1_1?keywords=Kaniel+J.+Levitin&amp;qid=1569681282&amp;s=books&amp;sr=1-1-spell"
+               title="⭐⭐⭐⭐⭐⭐">
+               This Is Your Brain on Music</a>
+          Levitin is a deft and patient explainer of the basics for the non-scientist as well as the non-musician....By
+          tracing music's deep ties to memory, Levitin helps quantify some of music's magic without breaking its spell.
+
+     </li>
+     <li>
+          Carol Wolper
+          <a href="https://www.amazon.com/Secret-Celebrity-Carol-Wolper/dp/1573222143/ref=sr_1_10?keywords=Carol+Wolper&amp;qid=1569681388&amp;s=books&amp;sr=1-10"
+               title="⭐⭐⭐⭐⭐⭐">
+               Secret Celebrity</a>
+          Although not technically a sequel to Cigarette Girl, Wolper's second novel reads like part two of her treatise
+          on the cult of celebrity. Struggling filmmaker Christine Chase is the protagonist, rather than Cigarette's
+          screenwriter, Elizabeth West
+
+
+     </li>
+     <li>lynne Truss
+          <a href="https://www.amazon.com/Eats-Shoots-Leaves-Tolerance-Punctuation/dp/1592402038/ref=sr_1_1?crid=3IEJH0XH4A06S&amp;keywords=lynne+truss&amp;qid=1569725925&amp;sprefix=Lynne+Truss%2Caps%2C336&amp;sr=8-1"
+               title="⭐⭐⭐⭐⭐⭐">
+               Eats, Shoots &amp; Leaves</a>
+          Witty, smart, passionate.”—Los Angeles Times Book Review, Best Books Of 2004: Nonfiction “This book changed my
+          life in small, perfect ways like learning how to make better coffee or fold an omelet. It’s the perfect gift
+          for anyone who cares about grammar and a gentle introduction for those who don’t care enough.”—The Boston
+          Sunday Globe
+
+     </li>
+     <li>
+          Anu Garg
+          <a href="https://www.amazon.com/Dord-Diglot-Avocado-Two-Not-So-Common-ebook/dp/B000XPRS5M/ref=sr_1_5?crid=32NJVZ6DJ7ZZZ&amp;keywords=anu+garg&amp;qid=1569726026&amp;sprefix=Anu+Garg%2Caps%2C313&amp;sr=8-5"
+               title="⭐⭐⭐⭐⭐⭐">The Dord, the Diglot, and an Avocado or Two</a>
+          Garg, logophilic founder of wordsmith.org and the 600,000-subscriber A.Word.A.Day email newsletter, jam-packs
+          his latest good-natured, reader-friendly book (after Another Word A Day) with terms exotic and domestic,
+          lessons in etymology and surprising tricks of the linguist trade, such as the fact that "as a copyright
+          trap...
+
+     </li>
+     <li>
+          Spencer Johnson, M.D.
+          <a href="https://www.amazon.com/Spencer-Johnson-Moved-Cheese-%E3%80%902018%E3%80%91/dp/B07HCCDS3M/ref=sr_1_5?crid=6VGVQVGJJVKG&amp;keywords=who+moved+my+cheese&amp;qid=1569726236&amp;sprefix=who+moved%2Caps%2C321&amp;sr=8-5"
+               title="⭐⭐⭐⭐⭐⭐">Who Moved My Cheese?</a>
+          The long-awaited sequel to Who Moved My Cheese?, the beloved 28-million-copy bestseller that became a
+          worldwide sensation.
+
+
+     </li>
+     <li>
+          Meg Mullins
+          <a href="https://www.amazon.com/Dear-Strangers-Novel-Meg-Mullins-ebook/dp/B0030CVQ12/ref=sr_1_4?keywords=Meg+Mullins&amp;qid=1569726421&amp;sr=8-4"
+               title="⭐⭐⭐⭐⭐⭐">Dear Strangers</a>
+          Oliver is only seven when his father announces the family will adopt a baby boy. But when Oliver’s father
+          suddenly dies, his mother finds she can no longer keep the baby and gives him away.
+
+
+
+
+     </li>
+     <li>
+          T.C. Boyle
+          <a href="https://www.amazon.com/Talk/dp/B000GTLPTA/ref=sr_1_1?keywords=T.C.+Boyle+talk+talk&amp;qid=1569726803&amp;sr=8-1"
+               title="⭐⭐⭐⭐⭐⭐">Talk Talk</a>There's more than one way to take a life...The first time he saw Dana she was
+          dancing barefoot, her hair aflame in the red glow of the club, her body throbbing with rhythms and
+          cross-rhythms that only she could hear.
+     </li>
+     <ul>
+     <li><i>
+                              We are interested in gathering additional data about the spread
+                              of the chain-letter petitions described in this paper.
+                              Please visit
+                              <a href="http://petitions.cs.cornell.edu">
+                                   http://petitions.cs.cornell.edu</a>
+                              or
+                              <a href="http://petitions.cs.carleton.edu">
+                                   http://petitions.cs.carleton.edu</a>
+                              to learn more or to help. </i>
+     </li>
+     </ul>
+
+     <li>
+          Katherine Valentine
+          <a href="https://www.amazon.com/Miracle-St-Cecilias-Katherine-Valentine/dp/0142003050/ref=sr_1_1?keywords=Katherine+Valentine&amp;qid=1569726990&amp;s=audible&amp;sr=1-1-catcorr"
+               title="⭐⭐⭐⭐⭐⭐">A Miracle for St. Cecilia's </a>
+          The charming New England town of Dorsetville and its cast of wry, tough inhabitants struggle to stay afloat
+          after the wool mill closes as they gather at the town church of St. Cecilia
+
+     </li>
+     <li>
+          David Guterson
+          <a href="https://www.amazon.com/Snow-Falling-on-Cedars/dp/B075NPVZRT/ref=sr_1_4?keywords=David+Guterson&amp;qid=1569730567&amp;sr=8-4"
+               title="⭐⭐⭐⭐⭐⭐">Snow Falling on Cedars</a>
+          The whiteness covers the courthouse, but it cannot conceal the memories at work inside: the internment of
+
+     </li>
+     <li>
+          Elizabeth Lowell
+          <a href="https://www.amazon.com/Remember-Summer-Elizabeth-Lowell-ebook/dp/B000FC13IG/ref=sr_1_1?keywords=elizabeth+lowell+remember+summer&amp;qid=1569730726&amp;sr=8-1"
+               title="⭐⭐⭐⭐⭐⭐">Remember Summer</a>
+          The most grueling challenge of Raine Smith's equestrian career looms before her—the Olympic Games.
+
+     </li>
+     <li>
+          Larry Mcmurtry
+          <a href="https://www.amazon.com/evening-star-novel-Larry-McMurtry/dp/B002B6L5FU/ref=sr_1_2?keywords=Larry+Mcmurtry+evening+star&amp;qid=1569730927&amp;sr=8-2"
+               title="⭐⭐⭐⭐⭐⭐">The evening star</a>
+          Here old age and death catch up with some beloved McMurtry characters familiar to readers since Terms of
+          Endearment . Willful, tart-tongued Aurora Greenway and her outspoken maid and confidante, Rose Dunlup, sp ok?
+          yes are in their 70s when this book begins; Aurora's lover, Gen.
+
+     </li>
+     <li>
+          Dean Koontz
+          <a href="https://www.amazon.com/Vision-Dean-Koontz-ebook/dp/B001HYOD5G/ref=sr_1_1?keywords=Dean+Koontz+the+vision&amp;qid=1569731170&amp;sr=8-1"
+               title="⭐⭐⭐⭐⭐⭐">
+               The Vision</a>
+          In every industry there exist ‘artists’ that are not only unforgettable, but know their craft better than the
+          rest. Dean Koontz...is among these artisans.
+
+     </li>
+     <li>
+          John Grisham
+          <a href="https://www.amazon.com/Testament-Novel-John-Grisham-ebook/dp/B003B02O7I/ref=sr_1_9?keywords=John+Grisham&amp;qid=1569731332&amp;sr=8-9"
+               title="⭐⭐⭐⭐⭐⭐">
+               The Testament
+          </a>
+          Back in the States, the legal proceedings drag on and Grisham has a high time with Phelan's money-hungry
+          descendents, a regrettable bunch who squandered millions, married strippers, got druggy, and befriended the
+          Mob. The youngest son, Ramble, is a multi-pierced, tattoo-covered malcontent with big dreams for his rock
+          band, the Demon Monkeys.
+
+     </li>
+     <li>
+          Stephen King
+          <a href="https://www.amazon.com/The-Regulators/dp/B01AVGFZ5M/ref=sr_1_3?keywords=Richard+Bachman&amp;qid=1569731623&amp;sr=8-3"
+               title="⭐⭐⭐⭐⭐⭐">
+               The Regulators</a>
+          The battle against evil has begun in this "devishly entertaining" (Publishers Weekly) story of a suburban
+          neighborhood in the grip of surreal terror - a number-one national best seller from Stephen King writing as
+          Richard Bachman.
+
+     </li>
+     <li>
+          Dean Koontz
+          <a href="https://www.amazon.com/The-Key-to-Midnight/dp/B002ZOVVW0/ref=sr_1_1?keywords=Dean+Koontz+the+key+to+midnight&amp;qid=1569731849&amp;sr=8-1"
+               title="⭐⭐⭐⭐⭐⭐">
+               The Key to Midnight</a>
+          At night she's plagued by the dream of a man with a needle and feelings of being violated. She meets fellow
+          American Alex Hunter, who helps Joanna awaken to the fact that she's not who she thinks she is.
+
+     </li>
+     <li>
+          Faye Kellerman
+          <a href="https://www.amazon.com/Stalker-Decker-Lazarus-Novel-Peter-ebook/dp/B000W917TM/ref=sr_1_1?keywords=Faye+Kellerman+stalker&amp;qid=1569732013&amp;sr=8-1"
+               title="⭐⭐⭐⭐⭐⭐">
+               Stalker</a>
+          LAPD detective Peter Decker, promoted to lieutenant after his heroics in Jupiter's Bones (1999), is overloaded
+          with troubles in this outstanding, suspense-packed mystery, the 12th in Kellerman's acclaimed series. As
+          usual, a challenging case distracts Decker from his family, but this time there is one difference.
+
+
+
+     </li>
 
      <p>Incentives and game theoretic analysis</p>
      <ul>
