@@ -13,6 +13,7 @@ imagesurl_drones_hardware: "images/drones/hardware/"
 imagesurl_drones_dev: "images/drones/dev_gallery/"
 imagesurl_drones_hw_gallery: "images/drones/hw_gallery/"
 imagesurl_handbook: "images/drone-resource-wiki/handbook/"
+imagesurl_travel: "images/travel/"
 # thumbsurl_yoga: "/images/yoga/thumbs/"
 # this property is useful for conditional filtering of content that is separate from the PDF.
 encoding: UTF-8
