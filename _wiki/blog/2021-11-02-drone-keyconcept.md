@@ -378,6 +378,43 @@ CG = TM(총 모멘트) / TW (총 무게)
 
 {% include image.html file="drone-resource-wiki/handbook/advisory-circular.jpg" caption="sectional VFR chart IFR chart and chart supplement" %}
 
+## drone-related links
+
+드론 못날리는곳 쉽게이해하기by 하얀고양이 대구달서님 [redzone](http://cafe.naver.com/dronplay/292202)  
+
+* 비행금지구역 관련 국토교통부 첨단항공과 민원 답신 결과 및 추가사항 안내 [kosta notice](http://cafe.naver.com/dronplay/2814690 
+
+* 전세계 드론 관련 법률 정보 사이트 : [legality](https://uavcoach.com/drone-laws/) 
+* 각종 비행 허가 신청 방법 정리 by 하얀고양이 대구달서님 [permit instruction](https://cafe.naver.com/dronplay/383350)  
+* 원스탑, 비행 및 촬영허가 신고 작성법&샘플 by 포청천 [photo-permit](http://cafe.naver.com/dronplay/365122)
+
+* 공원의 월권? 드론비행금지 현수막 어떻게 해결(?)후기 by 양곰경기안양 [flying in park](https://cafe.naver.com/dronplay/409097)
+
+* 중복투자에 대한 개인적인 의견 by 가윤지윤 경기시흥 [hobby warning](https://cafe.naver.com/dronplay/431306)
+
+* 드론 입문자 드론선택 노하우 by 하니빔 부산동래 [novice](https://cafe.naver.com/dronplay/40752) 
+* 센서드론 입문자 분들 4면 호버링 마스터 하셨죠? by 레이븐 부산해운대 [hovering](https://cafe.naver.com/dronplay/419511) 
+* 드론 분실 방지를 위한 팁 by 오리카 부산진구 [loser tips](https://cafe.naver.com/dronplay/102654) 
+* 센서형 기체 비행 전 체크리스트 by 이데야 대구수성 [checklist](https://cafe.naver.com/dronplay/393893) 
+* 드론 초보자를 위한 턴에 관한 팁 [maneuver](http://cafe.naver.com/dronplay/19467) 
+* 나의 드론비행 안전수칙 by 폭풍우 인천남구 [safety tip](http://cafe.naver.com/dronplay/329994) 
+* 드론입문 두 달, 깨달음 by 벅스 경기평택 [first-step](http://cafe.naver.com/dronplay/367202)  
+* 드론, 헬기의 비행원리 by 최강검객 서울금천님 [nautical principle](http://cafe.naver.com/dronplay/282108)
+
+* 센서드론이 얼마나 위험한지, Atti 모드가 왜 필요한지...by 티제이 경기용인 http://cafe.naver.com/dronplay/305844  
+* 드론 입문자들이 많이 하시는 실수 by 젊은돼지 서울강서 http://cafe.naver.com/dronplay/276580
+
+* 드론 개념 탑재하기 "드론이란 물건은?"by 젤가스 대구달서 http://cafe.naver.com/dronplay/239837  
+* 초보가 초보에게 드리는 당부의 말씀 by 뱅뱅뱅 경북구미 http://cafe.naver.com/dronplay/240835 
+* (수치로 보는) 입문기체는 완구가 더 좋다 by 스탭 잿빛 경기이천 http://cafe.naver.com/dronplay/74701 
+* 처음 드론 입문하시는 분들을 위한 작은 지침서 by 듀부 경기일산 http://cafe.naver.com/dronplay/19157 
+*  드론에 관한 거의 모든것'中 종류/선택/구입방법 by 드론플레이TMhttp://cafe.naver.com/dronplay/140363 
+* [드플 매너] 드론 초보 입문시 꼭 읽어두면 좋은 팁! by '스탭 야채 경기하남'님 http://cafe.naver.com/dronplay/214363 
+* 기본기를 어느정도 쌓고 계십니까? by 챔피언 광주남구 http://cafe.naver.com/dronplay/122089 
+
+* 드론 날릴 때 주의점 by 페가시스 경북상주(sant****) http://cafe.naver.com/dronplay/118044
+
+
 {{site.data.alerts.hr_shaded}}
 
 {% include taglogic.html %}
