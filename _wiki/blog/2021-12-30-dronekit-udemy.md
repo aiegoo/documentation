@@ -14,7 +14,7 @@ summary: "Thu, Dec 30, 21, integrate udemy drone course with dronekit.md of this
 excerpt_separator: <!--more-->
 toc: true
 public: true
-published: false
+published: true
 parent: [[Wiki-Setting-Category]]
 date: 2021-12-30T04:37:42 +0900
 updated: 2021-12-30 04:37
