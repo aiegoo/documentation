@@ -31,6 +31,12 @@ updated: 2023-01-04 14:56
 - Learn To Create A Complete Menu System in Unity
 - Unity 3D - Create a Reusable UI System
 
+## learning projects
+
+[java groundcontrol](https://pf7.eggs.or.kr/2021-12-30-dronekit-udemy.html)
+
+[stm32 dronekit](https://pf7.eggs.or.kr/2022-01-31-drone-primer.html#overview)
+
 
 {% include taglogic.html %}
 
