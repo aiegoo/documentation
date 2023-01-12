@@ -3,7 +3,7 @@ layout: post
 title: "your life goal and action plans"
 name: "pathfinding-journey"
 tags: [getting-started]
-tagName: config
+tagName: inspiration
 permalink: 2023-01-04-pathfinding-journey.html
 sidebar: other_sidebar
 folder: blog
