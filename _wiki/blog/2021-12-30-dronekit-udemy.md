@@ -412,7 +412,10 @@ time.sleep(1)
 |   | Alt. holding LPS22HH
 |   | ublox M8N
 
-[source-code](https://github.com/aiegoo/udemy-stm32/blob/mhive/dev)
+- [tutorials](https://github.com/aiegoo/udemy-stm32/blob/mhive/dev) for tutorials
+- [sourceCode](https://github.com/aiegoo/dronekit-udemy)
+- [video-tutorials](https://www.udemy.com/course/draft/3803230/learn/lecture/24592182#reviews) the first lecture of 52 in the list
+
 
 [tutorial-one-through](https://github.com/aiegoo/master)
 #### video 1
@@ -420,6 +423,7 @@ time.sleep(1)
 - FC 전원 연결 및 디버그 LED 점멸(GPIO)
 
 {% include youtubePlayer.html id=page.youtubeID1 %}
+in case the youtube link is outdated, click [here]()
 
 ```diff
 I uploaded a STM32F4 tutorial video course few years ago. and now I'm getting started a new video course again.
