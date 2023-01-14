@@ -423,7 +423,7 @@ time.sleep(1)
 - FC 전원 연결 및 디버그 LED 점멸(GPIO)
 
 {% include youtubePlayer.html id=page.youtubeID1 %}
-in case the youtube link is outdated, click [here]()
+in case the youtube link is outdated, click [here](https://www.udemy.com/course/draft/3803230/learn/lecture/24592182#reviews)
 
 ```diff
 I uploaded a STM32F4 tutorial video course few years ago. and now I'm getting started a new video course again.
@@ -911,14 +911,19 @@ Next time, I will explain the contents of this course and how to download and in
 Then I'll explain it next time. Thank you.
 ```
 
+#####  0-2. Contents introduction and installing STM32CubeIDE.
+
+
 #### video 2
 - STM32CubeIDE install
 
 {% include youtubePlayer.html id=page.youtubeID51 %}
 stm32cubeide install only
+[udemy02](https://www.udemy.com/course/draft/3803230/learn/lecture/24592342#reviews)
 
 {% include youtubePlayer.html id=page.youtubeID2 %}
 Generating tone with a buzzer
+[udemy03](https://www.udemy.com/course/draft/3803230/learn/lecture/24592400#reviews)
 
 ```diff
 Hello. This is ChrisP from M-HIVE. Last time, I introduced the drone hardware components for this course.

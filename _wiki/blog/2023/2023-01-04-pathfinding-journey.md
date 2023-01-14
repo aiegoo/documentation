@@ -37,6 +37,8 @@ updated: 2023-01-04 14:56
 
 [stm32 dronekit](https://pf7.eggs.or.kr/2022-01-31-drone-primer.html#overview)
 
+[learningVim]()
+
 
 {% include taglogic.html %}
 
