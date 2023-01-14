@@ -33,7 +33,9 @@ updated: 2023-01-04 14:56
 
 ## learning projects
 
-[java groundcontrol](https://pf7.eggs.or.kr/2021-12-30-dronekit-udemy.html)
+[java groundcontrol](https://www.udemy.com/course/lets-build-startup-for-remote-4g-drone-operations/learn/lecture/25603640#overview)
+
+[mavlink](https://www.udemy.com/course/drone-programming-primer-for-software-development/learn/lecture/11146558#overview)
 
 [stm32 dronekit](https://pf7.eggs.or.kr/2022-01-31-drone-primer.html#overview)
 
