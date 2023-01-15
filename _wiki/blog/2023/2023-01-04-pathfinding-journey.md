@@ -59,6 +59,10 @@ updated: 2023-01-04 14:56
 #### FC and raspi
 [matekf405](https://pf7.eggs.or.kr/2022-02-10-jdlab-matek.html)
 
+#### build a drone
+- firmtech [pdf](https://drive.google.com/file/d/1mm2iS30i8srScTSOtTvNzX1EDP9i7NbU/view)
+- ARwing [parts](https://docs.google.com/spreadsheets/d/187JrOrG0T9Y52j1h923B1X3dk1W_wsJsWz5OBOhx4-U/edit#gid=0), [assemblyOpenHD](https://docs.google.com/spreadsheets/d/1Je2FdyydVKLBe-9_yxDk2aC9M0NL6yuW9LnHwtAmL54/edit#gid=1866950673)
+
 ### gaming projects
 
 ### tools
