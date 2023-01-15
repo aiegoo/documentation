@@ -33,11 +33,13 @@ updated: 2023-01-04 14:56
 
 ## learning projects
 
-[java groundcontrol](https://www.udemy.com/course/lets-build-startup-for-remote-4g-drone-operations/learn/lecture/25603640#overview)
+[java groundcontrol](https://www.udemy.com/course/lets-build-startup-for-remote-4g-drone-operations/learn/lecture/25603640#overview), udemy4gdrone
 
 [mavlink](https://www.udemy.com/course/drone-programming-primer-for-software-development/learn/lecture/11146558#overview)
+[mavlink-script](https://pf7.eggs.or.kr/2022-01-31-drone-primer.html#overview)
 
-[stm32 dronekit](https://pf7.eggs.or.kr/2022-01-31-drone-primer.html#overview)
+[stm32mhive](https://www.udemy.com/course/draft/3803230/learn/lecture/24592182?start=75#overview)
+[stm32-script](https://pf7.eggs.or.kr/2021-12-30-dronekit-udemy.html) dronekit app based on pymavlink
 
 [learningVim](https://www.udemy.com/course/vim-training-course-ruby-developers/learn/lecture/6177918#overview) for ruby developers
 
