@@ -34,6 +34,7 @@ updated: 2023-01-04 14:56
 ## learning projects
 
 ### drones
+[px4io](https://docs.px4.io/main/en/)
 #### gcs
 [java gcs](https://www.udemy.com/course/lets-build-startup-for-remote-4g-drone-operations/learn/lecture/25603640#overview), udemy4gdrone
 [github](https://github.com/aiegoo/java.eggs.or.kr) my running gcs based on the tutorial, [4gremoteopertion-source](https://github.com/aiegoo/4gremoteoperation), a develop repo; [subtitle](https://pf7.eggs.or.kr/2022-01-31-drone-primer.html)
