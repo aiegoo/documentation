@@ -23,7 +23,7 @@ updated: 2023-01-15 15:08
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## New tools to learning in 2023
+## New tools to learn in 2023
 
 ### graphic visualizations
 - dia [blog](http://dia-installer.de/c)
