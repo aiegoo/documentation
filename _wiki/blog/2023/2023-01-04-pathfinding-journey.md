@@ -52,7 +52,7 @@ updated: 2023-01-04 14:56
 
 #### embedded mcu and development
 [stm32mhive](https://www.udemy.com/course/draft/3803230/learn/lecture/24592182?start=75#overview)
-[stm32-script](https://pf7.eggs.or.kr/2021-12-30-dronekit-udemy.html) dronekit app based on pymavlink, [tutorialcode](https://github.com/aiegoo/dronekit-udemy), [pastyoutube](https://www.youtube.com/playlist?list=PLUaCOzp6U-RpF4lXNf3MblOrfQL2mDgXn) for playlist
+[stm32-script](https://pf7.eggs.or.kr/2021-12-30-dronekit-udemy.html) dronekit app based on pymavlink, [tutorialcode](https://github.com/aiegoo/dronekit-udemy), [past-youtube](https://www.youtube.com/playlist?list=PLUaCOzp6U-RpF4lXNf3MblOrfQL2mDgXn) for playlist (lesson 1 through 7-1 out of 52 tutorials in Udemy course)
 [stm-hal](https://github.com/aiegoo/drone-stm32f4-hal) forked as a reference
 
 #### FC and raspi
