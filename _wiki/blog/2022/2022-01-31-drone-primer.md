@@ -28,12 +28,12 @@ driveID: 1rXwoF8UjPwlN8MLevtwgIMFv7Sr-7Mqt
 
 ### overview
 1. video 4:
+{% include googleDrivePlayer.html id=page.driveID %}
 
 
 ### scripts
 #### video 1: course overview
 
-{% include googleDrivePlayer.html id=page.driveID %}
 
 ```php
 OK so in this video we're going to look at the format and content that will be covered in this lecture series.
