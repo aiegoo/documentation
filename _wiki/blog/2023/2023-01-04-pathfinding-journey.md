@@ -36,7 +36,7 @@ updated: 2023-01-04 14:56
 ### drones
 #### gcs
 [java gcs](https://www.udemy.com/course/lets-build-startup-for-remote-4g-drone-operations/learn/lecture/25603640#overview), udemy4gdrone
-[github](https://github.com/aiegoo/java.eggs.or.kr) my running gcs based on the tutorial
+[github](https://github.com/aiegoo/java.eggs.or.kr) my running gcs based on the tutorial, [4gremoteopertion-source](https://github.com/aiegoo/4gremoteoperation), a develop repo; [subtitle](https://pf7.eggs.or.kr/2022-01-31-drone-primer.html)
 
 [gcs.eggs.or.kr](https://github.com/aiegoo/gcs.eggs.or.kr) a javascript based gcs.
 
@@ -47,12 +47,12 @@ updated: 2023-01-04 14:56
 
 #### control and operation
 [mavlink](https://www.udemy.com/course/drone-programming-primer-for-software-development/learn/lecture/11146558#overview)
-[mavlink-script](https://pf7.eggs.or.kr/2022-01-31-drone-primer.html#overview)
+[mavlink-subtitle](https://pf7.eggs.or.kr/2022-01-31-drone-primer.html#overview)
 
 
 #### embedded mcu and development
 [stm32mhive](https://www.udemy.com/course/draft/3803230/learn/lecture/24592182?start=75#overview)
-[stm32-script](https://pf7.eggs.or.kr/2021-12-30-dronekit-udemy.html) dronekit app based on pymavlink, [tutorialcode](https://github.com/aiegoo/dronekit-udemy), [past-youtube](https://www.youtube.com/playlist?list=PLUaCOzp6U-RpF4lXNf3MblOrfQL2mDgXn) for playlist (lesson 1 through 7-1 out of 52 tutorials in Udemy course)
+[stm32-subtitle](https://pf7.eggs.or.kr/2021-12-30-dronekit-udemy.html) dronekit app based on pymavlink, [tutorialcode](https://github.com/aiegoo/dronekit-udemy), [past-youtube](https://www.youtube.com/playlist?list=PLUaCOzp6U-RpF4lXNf3MblOrfQL2mDgXn) for playlist (lesson 1 through 7-1 out of 52 tutorials in Udemy course)
 [stm-hal](https://github.com/aiegoo/drone-stm32f4-hal) forked as a reference
 
 #### FC and raspi

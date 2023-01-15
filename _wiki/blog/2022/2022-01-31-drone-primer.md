@@ -17,6 +17,7 @@ public: true
 parent: [[Wiki-Setting-Category]]
 date: 2022-01-31T16:32:15 +0900
 updated: 2022-01-31 16:32
+driveID: 1rXwoF8UjPwlN8MLevtwgIMFv7Sr-7Mqt
 ---
 * TOC
 {:toc}
@@ -31,6 +32,8 @@ updated: 2022-01-31 16:32
 
 ### scripts
 #### video 1: course overview
+
+{% include gogleDrivePlayer.html id=page.driveID %}
 
 ```php
 OK so in this video we're going to look at the format and content that will be covered in this lecture series.
