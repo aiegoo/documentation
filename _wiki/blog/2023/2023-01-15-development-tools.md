@@ -25,6 +25,12 @@ updated: 2023-01-15 15:08
 
 ## New tools to learning in 2023
 
+### graphic visualizations
+- dia [blog](http://dia-installer.de/c)
+- xfig `apt-cache search xfig`, `sudo apt-get install xfig`  for more, click [here](https://mcj.sourceforge.net/frm_editing.html)
+- graphviz (used before for data visualization)
+- plantuml (used to create my landing page flowchart for this site)
+
 {% include taglogic.html %}
 
 {% include links.html %}
