@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_drones
 box_number: 1
-link: https://36io.co
+link: https://aiegoo.github.io/gcs-java-node/
 tags: mydrone
 folder: '/.'
 ---

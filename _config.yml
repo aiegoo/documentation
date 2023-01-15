@@ -119,6 +119,19 @@ collections:
     output: true
     people: true
     permalink: /mycourse/
+    order:
+      - stm32.md
+      - gcs.md
+      - java.md
+      - control.md
+      - operation.md
+      - api.md
+      - cplus.md
+      - python.md
+      - tensorflow.md
+      - frontend.md
+      - lora.md
+      - git.md
   # tags:
   #   output: false
   #   permalink: /tags/
