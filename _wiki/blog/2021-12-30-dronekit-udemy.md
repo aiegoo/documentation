@@ -930,6 +930,7 @@ Then I'll explain it next time. Thank you.
 
 {% include youtubePlayer.html id=page.youtubeID51 %}
 {% include googleDrivePlayer.html id=page.googleDriveID1 %}
+{% include audio.html src="resources/audio/stm32/stm3202.mp3" %}
 
 stm32cubeide install only
 [udemy02](https://www.udemy.com/course/draft/3803230/learn/lecture/24592342#reviews)
@@ -937,6 +938,8 @@ stm32cubeide install only
 {% include youtubePlayer.html id=page.youtubeID2 %}
 Generating tone with a buzzer
 [udemy03](https://www.udemy.com/course/draft/3803230/learn/lecture/24592400#reviews)
+
+
 
 {{site.data.alets.details}}
 
