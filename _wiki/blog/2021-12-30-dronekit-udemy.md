@@ -937,6 +937,8 @@ stm32cubeide install only
 Generating tone with a buzzer
 [udemy03](https://www.udemy.com/course/draft/3803230/learn/lecture/24592400#reviews)
 
+{{site.data.alets.details}}
+
 ```diff
 Hello. This is ChrisP from M-HIVE. Last time, I introduced the drone hardware components for this course.
 
@@ -1325,6 +1327,7 @@ And next time, we will build the debug environment in earnest. In Chapter 1, I w
 So next time is the beginnig of the drone development. See you next time.
 
 ```
+{{site.data.alerts.ended}}
 
 ### Ch1 Set-up
 #### video 3
