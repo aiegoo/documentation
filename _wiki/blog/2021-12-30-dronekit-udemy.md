@@ -71,6 +71,7 @@ youtubeID49: iqYLS5YLIJA
 youtubeID50: cfivx15eksQ
 youtubeID51: U0myrr1GfEk
 youtubeID52: Y5oSYm4iWP8
+googleDriveID: 1Zyq4m35PvGetxPhIFq7C3buYTjzElaL_
 ---
 [youtube-playlist](https://www.youtube.com/playlist?list=PLUaCOzp6U-RryKTJDDzYU3xHhMf_wgeeh)
 * TOC
@@ -94,6 +95,7 @@ DroneKit and PX4 are currently working on getting full compatibility. As of Dron
 
 Start by installing DroneKit-python from the current master.
 
+{% include copyto.html %}
 ```sh
 git clone https://github.com/dronekit/dronekit-python.githttp://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/
 sudo python setup.py install
@@ -428,6 +430,7 @@ time.sleep(1)
 
 {% include youtubePlayer.html id=page.youtubeID1 %}
 in case the youtube link is outdated, click [here](https://www.udemy.com/course/draft/3803230/learn/lecture/24592182#reviews)
+{% include googleDrivePlayer.html id=page.googleDriveID %}
 
 ```diff
 I uploaded a STM32F4 tutorial video course few years ago. and now I'm getting started a new video course again.
