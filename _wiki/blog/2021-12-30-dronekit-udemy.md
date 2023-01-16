@@ -72,6 +72,7 @@ youtubeID50: cfivx15eksQ
 youtubeID51: U0myrr1GfEk
 youtubeID52: Y5oSYm4iWP8
 googleDriveID: 1Zyq4m35PvGetxPhIFq7C3buYTjzElaL_
+googleDriveID1: 13ABFpRzZxdloLTuH6wJir2KgZwcag723
 ---
 [youtube-playlist](https://www.youtube.com/playlist?list=PLUaCOzp6U-RryKTJDDzYU3xHhMf_wgeeh)
 * TOC
@@ -424,6 +425,7 @@ time.sleep(1)
 #### parts list
 ![image](https://user-images.githubusercontent.com/42961200/212604389-ee966f66-3e64-462e-b5aa-7855da4cf8a3.png)
 
+
 #### video 1
 - hardware list
 - FC 전원 연결 및 디버그 LED 점멸(GPIO)
@@ -432,6 +434,7 @@ time.sleep(1)
 in case the youtube link is outdated, click [here](https://www.udemy.com/course/draft/3803230/learn/lecture/24592182#reviews)
 {% include googleDrivePlayer.html id=page.googleDriveID %}
 
+{{site.data.alerts.details}}
 ```diff
 I uploaded a STM32F4 tutorial video course few years ago. and now I'm getting started a new video course again.
 
@@ -917,7 +920,7 @@ Next time, I will explain the contents of this course and how to download and in
 
 Then I'll explain it next time. Thank you.
 ```
-
+{{site.data.alets.ended}}
 #####  0-2. Contents introduction and installing STM32CubeIDE.
 
 
@@ -925,6 +928,8 @@ Then I'll explain it next time. Thank you.
 - STM32CubeIDE install
 
 {% include youtubePlayer.html id=page.youtubeID51 %}
+{% include googleDrivePlayer.html id=page.googleDriveID1 %}
+
 stm32cubeide install only
 [udemy02](https://www.udemy.com/course/draft/3803230/learn/lecture/24592342#reviews)
 
