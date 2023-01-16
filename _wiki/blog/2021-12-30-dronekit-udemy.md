@@ -418,6 +418,10 @@ time.sleep(1)
 
 
 [tutorial-one-through](https://github.com/aiegoo/master)
+
+#### parts list
+![image](https://user-images.githubusercontent.com/42961200/212604389-ee966f66-3e64-462e-b5aa-7855da4cf8a3.png)
+
 #### video 1
 - hardware list
 - FC 전원 연결 및 디버그 LED 점멸(GPIO)
