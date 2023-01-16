@@ -124,6 +124,7 @@ vehicle = connect(connection_string, wait_ready=True)
 
 Display some basic status information
 
+{% include copyto.html %}
 ```C
 # Display basic vehicle state
 print " Type: %s" % vehicle._vehicle_type
@@ -140,6 +141,7 @@ Username/Password for Preconfigured VM: dronedojo/dronedojo
 
 [DRONEKIT SCRIPTS:](https://drive.google.com/open?id=1kTmBE4VTdLUTKgkn9t-0cyBkTXYIMjyp)
 
+{{site.data.alerts.details}}
 ////////////////////////VIDEO SUMMARY////////////////////////////////
 Setup our Ubuntu virtual machine in VirtualBox
 /////////////////////////////////////////////////////////////////////
@@ -175,7 +177,7 @@ Finally, your virtual machine will typically reserve all the RAM you give it,
 
 Don’t allocate too much RAM to your VM, because windows still needs some RAM to operate.
  Try starting out with 2 gb or 45% of your computers RAM
-
+{{site.data.alerts.ended}}
 ### issues
 - when unable to switch betweeen modes
 
@@ -187,6 +189,9 @@ Don’t allocate too much RAM to your VM, because windows still needs some RAM t
 
 ## Full mission examplehttp://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/
 
+
+
+{{site.data.alerts.details}}
 ```C
 ################################################################################################
 # @File DroneKitPX4.py
@@ -356,6 +361,8 @@ vehicle.close()
 time.sleep(1)
 
 ```
+
+{{site.data.alert}}
 ## stm32
 
 |---
@@ -921,9 +928,9 @@ Next time, I will explain the contents of this course and how to download and in
 
 Then I'll explain it next time. Thank you.
 ```
-{{site.data.alets.ended}}
-#####  0-2. Contents introduction and installing STM32CubeIDE.
+{{site.data.alerts.ended}}
 
+#####  0-2. Contents introduction and installing STM32CubeIDE.
 
 #### video 2
 - STM32CubeIDE install
@@ -941,7 +948,7 @@ Generating tone with a buzzer
 
 
 
-{{site.data.alets.details}}
+{{site.data.alerts.details}}
 
 ```diff
 Hello. This is ChrisP from M-HIVE. Last time, I introduced the drone hardware components for this course.
@@ -1336,7 +1343,9 @@ So next time is the beginnig of the drone development. See you next time.
 ### Ch1 Set-up
 #### video 3
 
-```
+{{site.data.alerts.details}}
+
+```php
 - Powering up, debug UART
 
 - MATEK PDB XT-60 BEC와 FC 전원 연결하는 방법
@@ -1359,8 +1368,11 @@ LL_GPIO_TogglePin(GPIOC, ​LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2);
 이런식으로 두번째 매개변수 핀 이름 앞에 LL_ 를 붙여주셔야 합니다!
 
 ```
+{{site.data.alerts.ended}}
 
 {% include youtubePlayer.html id=page.youtubeID3 %}
+
+{{sitde.data.alerts.details}}
 
 ```diff
 Now I'm going to do FC programming in earnest. This is Chapter 1 of Part 1. In this time, I will explain how to set up debug & development environment.
@@ -1648,12 +1660,13 @@ Next time, we will use a timer to generate a buzzer beep.
 See you next time. Thank you.
 
 ```
-
+{{site.data.alerts.ended}}
 
 #### video 4
 - Buzzer setting 쿼터니언 회전각도 계산
 
-```
+{{site.data.alerts.details}}
+```Cplus
 - 패시브타입 부저 설명
 
 - 부저 회로 설명
@@ -1672,9 +1685,11 @@ See you next time. Thank you.
 
 - PWM을 Disable 시키는 방법 (LL_TIM_CC_DisableChannel() 함수)
 ```
+{{site.data.alerts.ended}}
 
 {% include youtubePlayer.html id=page.youtubeID4 %}
 
+{{site.data.alerts.details}}
 ```diff
 Last time we used the GPIO to blink the LEDs, and briefly compared the HAL driver and LL driver.
 
@@ -2005,12 +2020,13 @@ Next time, we will do UART communication and exchange data with PC.
 See you next time. Thank you.
 
 ```
-
+{{site.data.alerts.ended}}
 
 #### video 5
 - PC connection UART
 
-```
+{{site.data.alerts.details}}
+```php
 - FC 디버그 UART 포트 설명
 
 - USB to UART 모듈과 선 연결 방법
@@ -2031,10 +2047,11 @@ See you next time. Thank you.
 
 - printf "%f" 형식지정문자로 실수형태 출력하는 방법
 ```
-
+{{site.data.alerts.ended}}
 
 {% include youtubePlayer.html id=page.youtubeID5 %}
 
+{{site.data.alerts.details}}
 ```diff
 This is the last time of Chapter 1. This time, we will try to do data communication with PC through UART.
 
@@ -2427,6 +2444,7 @@ From the next time, we'll start Chapter 2. In Chapter 2, we will interface 3 sen
 See you next time. Thank you.
 
 ```
+{{site.data.alerts.ended}}
 
 ### Ch2 Sensor Interface
 #### video 6
@@ -2475,6 +2493,7 @@ See you next time. Thank you.
 
 {% include youtubePlayer.html id=page.youtubeID6 %}
 
+{{site.data.alerts.details}}
 ```diff
 In the last chapter, we were driving the LED and the buzzer for debugging, and transmitting the variable values to the PC through UART communication.
 
@@ -3183,7 +3202,7 @@ Next time, we will receive the 3-axis gyro value of the ICM-20602 via SPI commun
 See you next time. Thank you.
 
 ```
-
+{{site.data.alerts.ended}}
 
 
 #### video 7
@@ -3236,7 +3255,7 @@ See you next time. Thank you.
 ```
 
 {% include youtubePlayer.html id=page.youtubeID7 %}
-
+{{site.data.alerts.details}}
 ```diff
 Now, I will explain the ICM-20602 6-axis sensor that will be covered this time.
 
@@ -3825,7 +3844,7 @@ So it's done today, and next time, we are going to interface LPS22HH barometer a
 The next time is the last time of the Chapter 2 sensor interface. See you next time. Thank you.
 
 ```
-
+{{site.data.alerts.ended}}
 
 
 #### video 8
@@ -3833,8 +3852,11 @@ The next time is the last time of the Chapter 2 sensor interface. See you next t
 
 {% include youtubePlayer.html id=page.youtubeID8 %}
 
+
+{{site.data.alerts.details}}
 ```diff
 Until last time, we calculated the 3-axis rotation angle and angular rate using the BNO080 and the ICM-20602,
+
 
 and we even checked the results using the 2D-line graph.
 
@@ -5062,13 +5084,14 @@ In fact, it is not important because we are not using the NMEA protocol, but I t
 Then see you next time. Thank you.
 
 ```
-
+{{site.data.alerts.ended}}
 
 #### video 10
 - M8N setup UBX message
 
 {% include youtubePlayer.html id=page.youtubeID10 %}
 
+{{site.data.alerts.details}}
 ```diff
 The MH-FC V2.2 production is completed and being prepared for global sales.
 
@@ -5413,6 +5436,7 @@ Next time, we will analyze the UBX protocol and write source code to decode and 
 Then see you next time. Thank you.
 
 ```
+{{site.data.alerts.ended}}
 
 #### video 11
 - UBX message
