@@ -398,6 +398,50 @@ time.sleep(1)
 
 {{site.data.alerts.ended}}
 
+## Audio files
+
+{{site.data.alerts.details}}
+{% include audio.html src="resources/audio/stm32/stm3201-introduction.mp3" %}
+{% include audio.html src="resources/audio/stm32/stm3202-contents.mp3" %}
+{% include audio.html src="resources/audio/stm32/poweringup.mp3" %}
+{% include audio.html src="resources/audio/stm32/tone.mp3" %}
+{% include audio.html src="resources/audio/stm32/communication.mp3" %}
+***section3***
+{% include audio.html src="resources/audio/stm32/bno080.mp3" %}
+{% include audio.html src="resources/audio/stm32/icm.mp3" %}
+{% include audio.html src="resources/audio/stm32/lps22hh.mp3" %}
+***section4***
+{% include audio.html src="resources/audio/stm32/ublox.mp3" %}
+{% include audio.html src="resources/audio/stm32/m8n.mp3" %}
+{% include audio.html src="resources/audio/stm32/ubx1.mp3" %}
+{% include audio.html src="resources/audio/stm32/ubx2.mp3" %}
+{% include audio.html src="resources/audio/stm32/writingm8n.mp3" %}
+***section5***
+{% include audio.html src="resources/audio/stm32/flyskysetup.mp3" %}
+{% include audio.html src="resources/audio/stm32/busmessage.mp3" %}
+{% include audio.html src="resources/audio/stm32/busparsing.mp3" %}
+{% include audio.html src="resources/audio/stm32/busfailsafe.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+{% include audio.html src="resources/audio/stm32/.mp3" %}
+
+{{site.data.alerts.ended}}
+
 ## stm32
 
 |---
