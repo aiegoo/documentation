@@ -518,7 +518,7 @@ time.sleep(1)
 
 {% include youtubePlayer.html id=page.youtubeID1 %}
 in case the youtube link is outdated, click [here](https://www.udemy.com/course/draft/3803230/learn/lecture/24592182#reviews)
-{% include googleDrivePlayer.html id=page.googleDriveID %}
+{% include googleDrivePlayer.html id=page.googleDriveID1 %}
 {% include audio.html src="resources/audio/stm32/stm3201.mp3" %}
 
 {{site.data.alerts.details}}
@@ -1015,7 +1015,7 @@ Then I'll explain it next time. Thank you.
 - STM32CubeIDE install
 
 {% include youtubePlayer.html id=page.youtubeID51 %}
-{% include googleDrivePlayer.html id=page.googleDriveID1 %}
+{% include googleDrivePlayer.html id=page.googleDriveID2 %}
 {% include audio.html src="resources/audio/stm32/stm3202.mp3" %}
 
 stm32cubeide install only
