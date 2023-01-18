@@ -2,14 +2,14 @@
 layout: post
 title: "dronekit application based on pymavlink"
 name: "dronekit-udemy"
-tags: [drones]
+tags: [drones gcs]
 tagName: drone
 permalink: 2021-12-30-dronekit-udemy.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "pymavlink dronekit udemy uav stm32 navercafe naver"
+keywords: "pymavlink dronekit udemy uav stm32 navercafe naver chrisp gcs"
 summary: "Thu, Dec 30, 21, integrate udemy drone course with dronekit.md of this documentation site"
 excerpt_separator: <!--more-->
 toc: true
@@ -72,7 +72,41 @@ youtubeID50: cfivx15eksQ
 youtubeID51: U0myrr1GfEk
 youtubeID52: Y5oSYm4iWP8
 googleDriveID: 1Zyq4m35PvGetxPhIFq7C3buYTjzElaL_
-googleDriveID1: 13ABFpRzZxdloLTuH6wJir2KgZwcag723
+googleDriveID1: 11ORCbxm3AhOzWGvNkIU1C0QIpuj819ak
+googleDriveID2: 1LXxaSc2vLVqnJYdu83x8FAokdb66f-4v
+googleDriveID3:
+googleDriveID4:
+googleDriveID5:
+googleDriveID6:
+googleDriveID7:
+googleDriveID8:
+googleDriveID9:
+googleDriveID10:
+googleDriveID11:
+googleDriveID12:
+googleDriveID13:
+googleDriveID14:
+googleDriveID15:
+googleDriveID16:
+googleDriveID17:
+googleDriveID18:
+googleDriveID19:
+googleDriveID20:
+googleDriveID21:
+googleDriveID22:
+googleDriveID23:
+googleDriveID24:
+googleDriveID25:
+googleDriveID26:
+googleDriveID27:
+googleDriveID28:
+googleDriveID29:
+googleDriveID30:
+googleDriveID31:
+googleDriveID32:
+googleDriveID33:
+googleDriveID34:
+googleDriveID35:
 ---
 [youtube-playlist](https://www.youtube.com/playlist?list=PLUaCOzp6U-RryKTJDDzYU3xHhMf_wgeeh)
 * TOC
