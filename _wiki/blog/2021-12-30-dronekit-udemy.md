@@ -175,8 +175,9 @@ Username/Password for Preconfigured VM: dronedojo/dronedojo
 
 [DRONEKIT SCRIPTS:](https://drive.google.com/open?id=1kTmBE4VTdLUTKgkn9t-0cyBkTXYIMjyp)
 
-{{site.data.alerts.details}}
+
 ////////////////////////VIDEO SUMMARY////////////////////////////////
+{{site.data.alerts.details}}
 Setup our Ubuntu virtual machine in VirtualBox
 /////////////////////////////////////////////////////////////////////
 MAKING NEW VM IN VBOX:
@@ -222,7 +223,6 @@ Don’t allocate too much RAM to your VM, because windows still needs some RAM t
 3. type "pip install pymavlink==2.4.8
 
 ## Full mission examplehttp://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/
-
 
 
 {{site.data.alerts.details}}
@@ -396,7 +396,8 @@ time.sleep(1)
 
 ```
 
-{{site.data.alert}}
+{{site.data.alerts.ended}}
+
 ## stm32
 
 |---
