@@ -1492,7 +1492,7 @@ LL_GPIO_TogglePin(GPIOC, ​LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2);
 
 {% include youtubePlayer.html id=page.youtubeID3 %}
 
-{{sitde.data.alerts.details}}
+{{site.data.alerts.details}}
 
 ```diff
 Now I'm going to do FC programming in earnest. This is Chapter 1 of Part 1. In this time, I will explain how to set up debug & development environment.
