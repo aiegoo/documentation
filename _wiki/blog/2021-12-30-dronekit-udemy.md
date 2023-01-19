@@ -410,35 +410,35 @@ time.sleep(1)
 {% include audio.html src="resources/audio/stm32/stm3202a-tone.mp3" %} `4. generating tone with a buzzer`
 {% include audio.html src="resources/audio/stm32/stm3203a-communication.mp3" %} `5. communication with pc UART`
 
-***section3***
+#### ***Section3***
 {% include audio.html src="resources/audio/stm32/stm3203b-bno080.mp3" %} `6. BNO080 9-axis sensor SPI`
 {% include audio.html src="resources/audio/stm32/stm320513-icm.mp3" %} `7. ICM2206022 6-axis sensor SPI`
 {% include audio.html src="resources/audio/stm32/stm320621-lps22hh.mp3" %} `8. LPS22HH barometric pressure sensor SPI`
 
-***section4***
+#### ***Section4***
 {% include audio.html src="resources/audio/stm32/stm320722-ublox.mp3" %} `9. Ubox M8n gps NMEA data reception u center installation`
 {% include audio.html src="resources/audio/stm32/stm320823-m8n.mp3" %} `10. m8n setup and ubx message reception using ucenter`
 {% include audio.html src="resources/audio/stm32/stm320931-ubx1.mp3" %} `11. ubx message analysis`
 {% include audio.html src="resources/audio/stm32/stm321032-ubx2.mp3" %} `12 ubx message receiving and parsing`
 {% include audio.html src="resources/audio/stm32/stm321133-writingm8n.mp3" %} `13. writing m8n configuration code`
 
-***section5*** 
+#### ***Section5*** 
 {% include audio.html src="resources/audio/stm32/stm321234-flyskysetup.mp3" %} `14. flysky fsi6 setup and fs9a6b 9bus message reception`
 {% include audio.html src="resources/audio/stm32/stm321335-busmessage.mp3" %} `15. bus message analysis`
 {% include audio.html src="resources/audio/stm32/stm321441-busparsing.mp3" %} `16. bus message parsing `
 {% include audio.html src="resources/audio/stm32/stm321542-busfailsafe.mp3" %} `17. bus fail-safe configuraiton for fs i6`
 {% include audio.html src="resources/audio/stm32/stm321643-busfailsafe.mp3" %} `18 bus fail-safe configuration for fs i6x`
 
-***section6***
+#### ***Section6***
 {% include audio.html src="resources/audio/stm32/stm321744-dronehw.mp3" %} `19. drone hw components assembly`
 
-***section7***
+#### ***Section7***
 {% include audio.html src="resources/audio/stm32/stm321845-escprotocol.mp3" %} `20. ESC protocols pwm oneshot multishot dshot proshot`
 {% include audio.html src="resources/audio/stm32/stm321950-oneshot125.mp3" %} `21. oneshot1wt pwm signal generation`
 {% include audio.html src="resources/audio/stm32/stm322061-esccalibration.mp3" %} `22. ESC calbiration and motor driving `
 {% include audio.html src="resources/audio/stm32/stm322162-enteringoptional.mp3" %} `23. entering optioanlly esc calbiration mode using fsi6 swc`
 
-***section8***
+#### ***Section8***
 {% include audio.html src="resources/audio/stm32/stm322263-readwrite.mp3" %} `24. read/write data to at24c08 eeprom`
 {% include audio.html src="resources/audio/stm32/stm322364-eepromdata.mp3" %} `25. eeprom data management protocol definition`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `26. battery voltage3 check and low voltage  alarm`
@@ -446,7 +446,7 @@ time.sleep(1)
 {% include audio.html src="resources/audio/stm32/stm322572-bno080.mp3" %} `28. icm 20602 gyro dc bias removal`
 {% include audio.html src="resources/audio/stm32/stm322673-icm20602.mp3" %}
 
-***section9***
+#### ***Section9***
 {% include audio.html src="resources/audio/stm32/stm322774-3drradiotelemetry.mp3" %} `29. 3dr radio telemetry setting and data communication`
 {% include audio.html src="resources/audio/stm32/stm322875-gcs.mp3" %} `30. introucing ground station`
 {% include audio.html src="resources/audio/stm32/stm322981.mp3" %} `31. FC-gcs communication protocol description`
@@ -457,23 +457,23 @@ time.sleep(1)
 {% include audio.html src="resources/audio/stm32/.mp3" %} `36. fc data reception id 0x00- 0x0t pid gain setting message`
 {% include audio.html src="resources/audio/stm32/stm323284a.mp3" %} `37. fc data recption id 0x10 pid gain request message`
 
-***section10***
+#### ***Section10***
 {% include audio.html src="resources/audio/stm32/stm323284a.mp3" %} `38. Checking for sensor connection and pid gain from eeprom`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `39. checking for joystick and swa postion at boot and arming time`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `40. failsafe motor force stop and low battery alarm during flight`
 
-***section11***
+#### ***Section11***
 {% include audio.html src="resources/audio/stm32/.mp3" %} `41. Intorduction to frone simulator FPV FreeRider`
-***section12***
+#### ***Section12***
 {% include audio.html src="resources/audio/stm32/.mp3" %} `42. outdoor flight test with pid control in self-leveling mode`
-***section13***
+#### ***Section13***
 {% include audio.html src="resources/audio/stm32/.mp3" %} `43. 1Khz loop generation and sensor direction matching for pid control`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `44. the concept of basic single loop pid controller - theory`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `45. the concept of basic single loop pid controllder - coding`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `46.  the concedpt of cascade pid controller - theory`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `47. the concept of cascade pid controller - coding`
 
-***section14***
+#### ***Section14***
 {% include audio.html src="resources/audio/stm32/.mp3" %} `48. roll and pitch angle cascade dual loop control`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `49. yaw angle signle loop pid control when yaw josystick is not at midpoint`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `50. yaw rate single loop pid control when at midmpoint`
