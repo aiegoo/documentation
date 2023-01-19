@@ -2,14 +2,14 @@
 layout: post
 title: "dronekit application based on pymavlink"
 name: "dronekit-udemy"
-tags: [drones]
+tags: [drones gcs]
 tagName: drone
 permalink: 2021-12-30-dronekit-udemy.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "pymavlink dronekit udemy uav stm32 navercafe naver"
+keywords: "pymavlink dronekit udemy uav stm32 navercafe naver chrisp gcs"
 summary: "Thu, Dec 30, 21, integrate udemy drone course with dronekit.md of this documentation site"
 excerpt_separator: <!--more-->
 toc: true
@@ -71,8 +71,42 @@ youtubeID49: iqYLS5YLIJA
 youtubeID50: cfivx15eksQ
 youtubeID51: U0myrr1GfEk
 youtubeID52: Y5oSYm4iWP8
-googleDriveID: 1Zyq4m35PvGetxPhIFq7C3buYTjzElaL_
-googleDriveID1: 11ORCbxm3AhOzWGvNkIU1C0QIpuj819a
+googleDriveID1: 1Zyq4m35PvGetxPhIFq7C3buYTjzElaL_
+googleDriveID2: 11ORCbxm3AhOzWGvNkIU1C0QIpuj819ak
+googleDriveID3: 1LXxaSc2vLVqnJYdu83x8FAokdb66f-4v
+googleDriveID3b: 1YVQsG0DfVS0WMH78inW3YefBFULH-bJq
+googleDriveID4:
+googleDriveID5:
+googleDriveID6:
+googleDriveID7:
+googleDriveID8:
+googleDriveID9:
+googleDriveID10:
+googleDriveID11:
+googleDriveID12:
+googleDriveID13:
+googleDriveID14:
+googleDriveID15:
+googleDriveID16:
+googleDriveID17:
+googleDriveID18:
+googleDriveID19:
+googleDriveID20:
+googleDriveID21:
+googleDriveID22:
+googleDriveID23:
+googleDriveID24:
+googleDriveID25:
+googleDriveID26:
+googleDriveID27:
+googleDriveID28:
+googleDriveID29:
+googleDriveID30:
+googleDriveID31:
+googleDriveID32:
+googleDriveID33:
+googleDriveID34:
+googleDriveID35:
 ---
 [youtube-playlist](https://www.youtube.com/playlist?list=PLUaCOzp6U-RryKTJDDzYU3xHhMf_wgeeh)
 * TOC
@@ -141,8 +175,9 @@ Username/Password for Preconfigured VM: dronedojo/dronedojo
 
 [DRONEKIT SCRIPTS:](https://drive.google.com/open?id=1kTmBE4VTdLUTKgkn9t-0cyBkTXYIMjyp)
 
-{{site.data.alerts.details}}
+
 ////////////////////////VIDEO SUMMARY////////////////////////////////
+{{site.data.alerts.details}}
 Setup our Ubuntu virtual machine in VirtualBox
 /////////////////////////////////////////////////////////////////////
 MAKING NEW VM IN VBOX:
@@ -187,8 +222,8 @@ Don’t allocate too much RAM to your VM, because windows still needs some RAM t
 
 3. type "pip install pymavlink==2.4.8
 
-## Full mission examplehttp://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/
-
+## Full mission example
+[link](http://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/)
 
 
 {{site.data.alerts.details}}
@@ -362,7 +397,92 @@ time.sleep(1)
 
 ```
 
-{{site.data.alert}}
+{{site.data.alerts.ended}}
+
+## Audio files
+
+{{site.data.alerts.details}}
+{% include audio.html src="resources/audio/stm32/stm3201-introudction.mp3" %} `1. course introduction`
+{% include audio.html src="resources/audio/stm32/stm3202-cubeide.mp3" %} `2. course contents and stm32cubeIDE`
+
+***setting up the development environment***
+{% include audio.html src="resources/audio/stm32/stm3202-poweringup.mp3" %} `3. powering up the fc and led blinking GPIO`
+{% include audio.html src="resources/audio/stm32/stm3202a-tone.mp3" %} `4. generating tone with a buzzer`
+{% include audio.html src="resources/audio/stm32/stm3203a-communication.mp3" %} `5. communication with pc UART`
+
+#### ***Section3***
+{% include audio.html src="resources/audio/stm32/stm3203b-bno080.mp3" %} `6. BNO080 9-axis sensor SPI`
+{% include audio.html src="resources/audio/stm32/stm320513-icm.mp3" %} `7. ICM2206022 6-axis sensor SPI`
+{% include audio.html src="resources/audio/stm32/stm320621-lps22hh.mp3" %} `8. LPS22HH barometric pressure sensor SPI`
+
+#### ***Section4***
+{% include audio.html src="resources/audio/stm32/stm320722-ublox.mp3" %} `9. Ubox M8n gps NMEA data reception u center installation`
+{% include audio.html src="resources/audio/stm32/stm320823-m8n.mp3" %} `10. m8n setup and ubx message reception using ucenter`
+{% include audio.html src="resources/audio/stm32/stm320931-ubx1.mp3" %} `11. ubx message analysis`
+{% include audio.html src="resources/audio/stm32/stm321032-ubx2.mp3" %} `12 ubx message receiving and parsing`
+{% include audio.html src="resources/audio/stm32/stm321133-writingm8n.mp3" %} `13. writing m8n configuration code`
+
+#### ***Section5*** 
+{% include audio.html src="resources/audio/stm32/stm321234-flyskysetup.mp3" %} `14. flysky fsi6 setup and fs9a6b 9bus message reception`
+{% include audio.html src="resources/audio/stm32/stm321335-busmessage.mp3" %} `15. bus message analysis`
+{% include audio.html src="resources/audio/stm32/stm321441-busparsing.mp3" %} `16. bus message parsing `
+{% include audio.html src="resources/audio/stm32/stm321542-busfailsafe.mp3" %} `17. bus fail-safe configuraiton for fs i6`
+{% include audio.html src="resources/audio/stm32/stm321643-busfailsafe.mp3" %} `18 bus fail-safe configuration for fs i6x`
+
+#### ***Section6***
+{% include audio.html src="resources/audio/stm32/stm321744-dronehw.mp3" %} `19. drone hw components assembly`
+
+#### ***Section7***
+{% include audio.html src="resources/audio/stm32/stm321845-escprotocol.mp3" %} `20. ESC protocols pwm oneshot multishot dshot proshot`
+{% include audio.html src="resources/audio/stm32/stm321950-oneshot125.mp3" %} `21. oneshot1wt pwm signal generation`
+{% include audio.html src="resources/audio/stm32/stm322061-esccalibration.mp3" %} `22. ESC calbiration and motor driving `
+{% include audio.html src="resources/audio/stm32/stm322162-enteringoptional.mp3" %} `23. entering optioanlly esc calbiration mode using fsi6 swc`
+
+#### ***Section8***
+{% include audio.html src="resources/audio/stm32/stm322263-readwrite.mp3" %} `24. read/write data to at24c08 eeprom`
+{% include audio.html src="resources/audio/stm32/stm322364-eepromdata.mp3" %} `25. eeprom data management protocol definition`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `26. battery voltage3 check and low voltage  alarm`
+{% include audio.html src="resources/audio/stm32/stm322471-voltagecheck.mp3" %} `27. bno080 8-axis sensor calibration`
+{% include audio.html src="resources/audio/stm32/stm322572-bno080.mp3" %} `28. icm 20602 gyro dc bias removal`
+{% include audio.html src="resources/audio/stm32/stm322673-icm20602.mp3" %}
+
+#### ***Section9***
+{% include audio.html src="resources/audio/stm32/stm322774-3drradiotelemetry.mp3" %} `29. 3dr radio telemetry setting and data communication`
+{% include audio.html src="resources/audio/stm32/stm322875-gcs.mp3" %} `30. introucing ground station`
+{% include audio.html src="resources/audio/stm32/stm322981.mp3" %} `31. FC-gcs communication protocol description`
+{% include audio.html src="resources/audio/stm32/stm323082.mp3" %} `32. fc data transmission ID 0x10 ahrs message blocking mode`
+{% include audio.html src="resources/audio/stm32/stm323183.mp3" %} `33. - non blocking mode`
+{% include audio.html src="resources/audio/stm32/stm323284a.mp3" %} `34. fc data transmission id 0x11GPS message`
+{% include audio.html src="resources/audio/stm32/stm323284a.mp3" %} `35. FC data transmission id 0x00-0x05 pid gain message`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `36. fc data reception id 0x00- 0x0t pid gain setting message`
+{% include audio.html src="resources/audio/stm32/stm323284a.mp3" %} `37. fc data recption id 0x10 pid gain request message`
+
+#### ***Section10***
+{% include audio.html src="resources/audio/stm32/stm323284a.mp3" %} `38. Checking for sensor connection and pid gain from eeprom`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `39. checking for joystick and swa postion at boot and arming time`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `40. failsafe motor force stop and low battery alarm during flight`
+
+#### ***Section11***
+{% include audio.html src="resources/audio/stm32/.mp3" %} `41. Intorduction to frone simulator FPV FreeRider`
+#### ***Section12***
+{% include audio.html src="resources/audio/stm32/.mp3" %} `42. outdoor flight test with pid control in self-leveling mode`
+#### ***Section13***
+{% include audio.html src="resources/audio/stm32/.mp3" %} `43. 1Khz loop generation and sensor direction matching for pid control`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `44. the concept of basic single loop pid controller - theory`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `45. the concept of basic single loop pid controllder - coding`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `46.  the concedpt of cascade pid controller - theory`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `47. the concept of cascade pid controller - coding`
+
+#### ***Section14***
+{% include audio.html src="resources/audio/stm32/.mp3" %} `48. roll and pitch angle cascade dual loop control`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `49. yaw angle signle loop pid control when yaw josystick is not at midpoint`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `50. yaw rate single loop pid control when at midmpoint`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `51. reviewing hw and sw swafety rules drone rules and battery management`
+{% include audio.html src="resources/audio/stm32/.mp3" %} `52. how to check available flight ara GPS assembly and altitude hold demo`
+
+
+{{site.data.alerts.ended}}
+
 ## stm32
 
 |---
@@ -439,7 +559,7 @@ time.sleep(1)
 
 {% include youtubePlayer.html id=page.youtubeID1 %}
 in case the youtube link is outdated, click [here](https://www.udemy.com/course/draft/3803230/learn/lecture/24592182#reviews)
-{% include googleDrivePlayer.html id=page.googleDriveID %}
+{% include googleDrivePlayer.html id=page.googleDriveID1 %}
 {% include audio.html src="resources/audio/stm32/stm3201.mp3" %}
 
 {{site.data.alerts.details}}
@@ -936,7 +1056,7 @@ Then I'll explain it next time. Thank you.
 - STM32CubeIDE install
 
 {% include youtubePlayer.html id=page.youtubeID51 %}
-{% include googleDrivePlayer.html id=page.googleDriveID1 %}
+{% include googleDrivePlayer.html id=page.googleDriveID2 %}
 {% include audio.html src="resources/audio/stm32/stm3202.mp3" %}
 
 stm32cubeide install only
@@ -10438,10 +10558,297 @@ fc 에서는 연결이 끊겨 있는지 알 수가 없고요 데이터는 계속
 
 {% include youtubePlayer.html id=page.youtubeID %}
 {{site.data.alerts.details}}
-<h4 class="text-center mt-3 mt-2">[STM32CubeIDE를 이용한 STM32F4 자작드론 개발하기] 4-4강. i-Bus Fail-safe 설정 및 파싱</h4><div class="paragraph">지난 시간까지 아이 버스 메시지를 수신하고 구조체 채널 데이터를 Parsing까지 했었습니다. 이제 송 수신기를 사용할 수 있게 된 거구요 값에 범위가 1000부터 2000 이었고 중간 값은 1500 이었습니다 이 범위는 나중에 제어할 때 좀 중요하게 사용될 개념이 라서 기억을 하고 계시는게 좋아요 이제 이번 시간에 할 거는</div><div class="paragraph">필수적인 내용은 아니지만 안전 이란 관련이 있는 기능인 페일 세이프 에 대해서 설명드리겠습니다 안전 이란 관련된건 정말 너무너무 중요한 내용이니까 반드시 꼭 구현을 해 보시고 테스트도 직접 해 보셔야 되요 그럼 이번 시간엔 fsi radio 페일 세이프 설정을 하는 방법이랑 설정을 한 후에 실제 페일 세이프 가 발동이 되면 그걸 확인하는 코드를</div><div class="paragraph">작성하는 방법을 설명드리겠습니다 먼저 fc 랑 수신기 의 전원을 넣었는데 지금 수신기는 전원이 들어간 후에 아직 한번도 송신기 랑 연결이 안된 상태 그래서 통신은 끊겨 있긴 하지만 페일 세이프 가 발동이 된 상태는 아닙니다 fail 세이프 는 수신기의 전원이 들어간 후엔 transmitter 연결이 되고 나서 그 후에 어떤 이유에서든 이 둘 간의 연결이 끊기면 그 때 발동되는</div><div class="paragraph">거예요 그럼 이제 radio 을 켜 보겠읍니다 이제 연결이 된 상태고 iBus 메시지가 fc 로 보여주면서 값들이 출력이 되고 있죠 이것까지 지난 시간에 한거구요 지금 터미널에 출력되고 있는 값들은 채널 1번부터 6번까지 의 모든 값들을 다 출력하고 있는 상태구요 지난 시간에는 각 채널 들의 하위 12 비트 조종기의 값들 만 출력을 했었는데 지금은 상위 4비트 를</div><div class="paragraph">포함해서 16bit 를 전체다 출력하고 상태입니다 송신기 link on 때는 지금 보시면 상위 4비트 의 값이 다 영이어서 이 값들이 지난 시간이 랑 다를게 없죠 그래서 연결이 있으니깐 조작을 하면 또 값들이 바뀔 거구요 그리고 또 이 송신기는 지금 페일 세이프 가 설정이 되어 있구요 지금 상태에서 이 송신기의 천 원을 빼면 fail 세이프 가 발동이 될겁니다</div><div class="paragraph">이제 생식이 전원을 뺐더니 그때 출력된 값들이 이렇게 받기 전 그리고 부 저의 소리로 도 세이프 의 상태를 확인할 수 있도록 해놨습니다 당연히 지금 상태에서 조종기를 조작해 도 값들이 안 변할 거구요 다시 송신기 전원을 넣으면 둘 간의 연결이 되면서 3 1 세이프 가 해제되고 통신이 잘 될겁니다 다시 연결해 보겠습니다 연결했더니 이 값들이 원래대로 돌아 왔고 부 저도</div><div class="paragraph">거 졌구요 이제 지금 상태에서 조작하면 당연히 게 값들이 변하죠 그래서 이번 시간에는 이렇게 페일 세이프 의 상태를 확인하고 페일 세이프 가 발동되면 외부 출력 장치인 부저를 통해서 상태를 확인할 수 있도록 코드 작성 까지 해보도록 하겠습니다 펜 세이프 는 기계 고장 같은걸로 시스템이 오작동 하거나 동작하지 않을 경우를 대비한 안전 장치라고 보시면 되구요</div><div class="paragraph">일종의 예외처리 같은 개념이라고 생각하면 쉽습니다 통신에서는 보통 또 통신이 끊겼을 때 사용되는 안전장치 의미로 사용되고 드론 에서는 성 수직 연결을 끊기 면 위험한 상황이 발생할 수 있어서 보통은 펜 3 2% 정지 비행을 한다거나 자동 착륙 같은 거라 줘 내게 또 업체마다 다를 수 있는데 플라이 스카이 같은 경우는 이제 저희가 사용하는 이 제품 같은 경우는 송수신기</div><div class="paragraph">연결이 끊김 연 이 수신기에서 아이 퍼스 프로토콜로 fc 의 데이터를 보내 줄 때 특정 비트의 값을 바꿔서 보내 주는 방법으로 연결이 끊어졌다는 걸 알려줍니다 그러면 우리는 데이터를 받아서 8시까지 했으니까 그 비트의 값들을 확인해 보면 연결 상태를 알 수 있게 되는 거죠 fsi 6의 페일 세이프 기능을 사용하려면 송신기 설정 을 먼저 해야 되는데 6채널 각각 을 다 페일</div><div class="paragraph">세이프 기능을 사용할 수 있구요 그중에 저희는 채널 6번 만 활성 할 겁니다 pwm 이나 ppm 을 사용할 때는 펜스의 그 동작이 완전히 달라서 제 수업에서는 따라할 순 없고요 제 사업에서는 아이 퍼스 기준으로 설명드리겠습니다 먼저 송신기 전원을 켜 하시구요 ok 키를 길게 눌러서 메뉴로 들어가겠습니다 왼쪽 시스템 3 갑 을 선택하시구요 밑으로 쭉 내리시면 rx 셋 업 이란 메뉴가</div><div class="paragraph">있는데 오케이 에서 선택하시고 또 밑으로 내리시면 세이프 란 메뉴가 있습니다 역시 오케이 에서 들어오시면 지금 저는 채널 6번이 미리 설정을 해놓은 상태라서 - 100% 로 표시가 되어 있는데 처음 하신 분들은 다 5% 표시가 되어 있을 겁니다 채널 6번을 선택하시고 ok 에서 안으로 들어오시면 지금 상태에서 업다운 키를 누르시면 온 오프를 바꿀 수 있게 되요 5% 되어있는걸</div><div class="paragraph">온으로 바꾸시고 그리고 지금 채널 6번은 2 스위치 씨의 할당이 됐는데 지금 상태에서 세츠 씨를 도착하시면 이 게이지가 바뀌어요 내면이 로 올린 상태로 ok 하면 뒤로 돌아 오는데 지금처럼 - 100% 로 표시가 되어 있을 겁니다 만약에 스위치를 중단으로 둔 상태에서 오케이 하시면 이렇게 0% 로 들어올 거구요 다시 스위치를 하단으로 내린 상태에서 오케 하지만 플러스 100% 로</div><div class="paragraph">바뀔 거에요 4 그래서 맨 위로 올리신 후엔 오케이 에서 - 100% 이렇게 설정을 하시고 지금은 설정을 변경 마는 거고 아직 저장을 한 건 아닙니다 저장을 하려면 캔 쓰기를 길게 놓으세요 그러면 이렇게 약간 고주파음이 한번 들리고 뒤로 돌아 오는데 다시 ok 눌러서 확인해 보겠습니다 이제 지금처럼 - 100% 로 표시가 돼 있으면 설정이 잘 된겁니다 설정 데스 명선 조정기 전화</div><div class="paragraph">끊겠습니다 이렇게 해서 펜 세이프 를 온 시켰고 그리고 퍼센트 지를 - 100% 로 해놨는데 우선 조종기 의 조 장량 범위가 첨부터 2004 이점 그리고 펜 세이프 설정이 - 100% 부터 플러스 100% 사이의 값을 설정할 수 있었습니다 그래서 - 100% 가 조종기 값으로는 천이 되는거고 플러스 100% 가 2002 된단 말이에요 그리고 0% 는 1502 되겠죠 제가 지금 채널 6번 설정을 - 100% 로 했는데 이렇게</div><div class="paragraph">설정해 놓으면 3일 세이프 가 발동이 되면 어떻게 동작하면 먼저 6번 채널의 상위 4비트 의 값이 좀 바뀝니다 그리고 1위 12 비트의 값이 조 장량이 값이 - 100% 인천으로 같이 바뀐다 는 말입니다 그래서 제가 만약에 들은 조정을 하면서 채널 6번 스위치 c 를 조작해서 값을 1500 으로 바꾸었다고 했을 때 그 때 조정기 통신이 끊겨서 페일 세이프 가 발동이 되면 상위 4비트 값도</div><div class="paragraph">바뀌고 하위 12 bit 의 값이 1500 에서 지금 설정한 - 100% 인천으로 바뀐다는 소리입니다 그래서 이건 이따가 소스 코드까지 다 작성한 후에 확인을 한번 해볼 거에요 그래서 결론은 펜 세이프 가 발동이 되면 설정한 채널의 값이 그 퍼센트 티즈 대로 같이 바뀐 단 말이구요 이건 pwm 이나 ppm 을 사용할 경우에는 2% 의 값이 엄청 중요한데 저희는 아이 버스를 쓸 거라서 창이 4bit 의</div><div class="paragraph">값이 중요한 거고 2% 즈는 큰 상관은 없습니다 4 개념을 좀 알고 계시는게 좋을 것 같아서 이걸 설명 드린 거구요 수업에서는 2% 값을 이용해서 뭔가 하지는 않을 겁니다 센 세이프 가 발동되면 fc 에서 그걸 알 수 있느냐 없느냐가 정말 중요합니다 pwm 이나 ppm 을 사용한 경우에는 fc 에서 그 상황을 아기가 조금 어렵구요 하려면 별도의 채널을 1 전용으로 할당해서 사용해야 되고</div><div class="paragraph">그럼 그 채널은 3일 세이프 를 확인하는 용도로만 사용됩니다 i 버스처럼 그 한 채널에 상위 4비트 이가 상태 정보 그리고 하위 12 bit 가 조종기 정보 이렇게 사용하는게 아니고 나의 한 채널을 통으로 페일 세이프 를 확인하는 용도로만 사용해야 되는 소리예요 그리고 좀전에 설명드렸던 퍼센트 즈 설정한 애로우 pwm 이랑 피핀 값이 바뀌고 요 스로틀을 50% 로 유지 해라 같은</div><div class="paragraph">단순한 동작만 가능합니다 물론 fc 에서 연결이 끊겨 있는지를 알 수 있으면 소스코드를 구현하면 복잡한 동작들로 다 구현할 수 있게 하는데 4 좀 전에 말씀드린 것처럼 채널 하나를 페일 세이프 전용으로 사용해야 되서 아이 버스를 사용할 때보다 이 pwm 이나 ppm 을 사용할 경우에는 뭔가 좀 제안 저기요 근데 아이 버스를 사용하는 경우에는 펜 세이프 가 발동되면 fc 에서</div><div class="paragraph">확인하기가 쉽구요 별도의 채널을 따로 할당을 필요가 없습니다 그리고 fc 에서 바로 상태 확인이 되니까 단순한 동작을 당연히 가능하고 정지 비행이나 자동 착륙 같은 것도 코드 로 구현하면 할 수 있습니다 4세 수업에서는 그거 까지는 다루지 못하고 아까처럼 단순하게 부저를 올리는 걸 해 볼 거고 그리고 4 다다음 제퍼 때 모터 동작까지 들어가면 그 때는 펜 세이프 가</div><div class="paragraph">발동이 되면 모터를 강제로 꺼버리는 그런 코드를 작성할 겁니다 그럼 기체가 추락할 테니깐 실내에서 테스트에 비행하는 단계에서는 그게 좀 안전 할 거구요 만약에 이제 개발이 끝나고 실로에 서핑을 할 때 그때 그냥 추락하면 그것도 좀 위험하긴 한데 근데 사람없는 공터에서 비행을 하며 는 그때 그냥 추락을 하면 그래도 들어온 망가지는 거 외에는 큰 사고가 날 일이 없을</div><div class="paragraph">테니까 좀 덜 위험하게 쪄요 정지 비행을 하거나 서서히 착륙하는 것을 하려면 고도 센서 랑 gps 를 이용해서 제어를 해야 될텐데 우선 gps 란 고도 센서 데이터 받아오는 것은 챕터 2 챕터 3 때 다 하긴 했었으니까 구현은 활약을 할 수 있습니다 제 없고 대만 작사 하면 되니까 이제 페일 세이프 가 발동되면 아이 퍼스 데이터가 어떻게 바뀌는지 를 설명드리겠습니다 지금 여기에</div><div class="paragraph">출력된 모든 값들은 팜 22 비트의 조 장량 데이터 란 거기에 상위 4비트 의 상태 데이터를 합쳐서 16bit 데이터를 다 출력한 값들이 고요 이 왼쪽 데이터는 조종기 랑 수신기 연결이 돼 있을 때 채널 1번부터 6번까지 값들을 출력한 거고 페일 세이프 가 발동하기 전에 섬 이 상태에서 채널 4 5 6의 데이터를 봤더니 1499 천천히 런 값이고 이건 비트 구조로는 이런 구조를 가지고</div><div class="paragraph">있습니다 봤더니 상위 4비트 에 같은 탈 영웅이란 값은 에요 그리고 채널 123 도 지금 1,500 1,500 1,000 이런 값을 있는데 이것도 상위 4비트 의 값들을 보면 다영 이에요 지금 상태에서 제가 송신기의 전원을 껐습니다 영선 이성 신기에 페인 세이브 설정은 채널 6번 만 - 100% 로 설정한 상태구요 이때 데이터를 봤더니 채널 1 2 3에 값은 셀 쉐이크가 발동하기 전이랑 같은 값인데 채널 4</div><div class="paragraph">5 6 의 값이 변했습니다 이 변환 값들의 비트 구조를 봤더니 역시 하위 12 비트의 값들은 센터가 발동하기 전이랑 같은 값을 가지고 있는데 상위 4비트 의 값이 변했어요 펜 세이브가 발생하기 전에는 4 기사 비트의 값이 타 0 이었는데 페일 세이프 가발 동 햇더니 이상이 4bit 의 값들은 변해 줘 하위 12bit 난 * 했는데 또 그 중에서 채널 6번을 보시면 상위 4비트 의 값이 0 0 0 0 2</div><div class="paragraph">어떤게 영령 일념으로 변했습니다 근데 이 4개의 비트 중에 정확히 어떤 비트가 펭 세이프 를 나타내는 건지는 못찾았어요 그리고 저는 채널 6번 만 페일 세이프 를 활성화 시켰는데 어쩜 약간 이상한 것은 채널 4번 이랑 채널 5번의 값도 같이 변했습니다 이것도 이유를 모르겠어요 구글에서 아무리 검색을 해봐도 i 버스의 페일 세이프 에 대한 설명이 안 나오더라구요 어쨌든</div><div class="paragraph">확실한 거는 채널 6번을 설정 했으니까 채널 6번의 상위 4비트 값이 펜 세이프 발동 전에는 0000 이 어떤게 발동 후에는 값이 달라진다는 거죠 그래서 이 재 이 상위 4비트 의 값들을 확인 하면 연결이 끊어져 있는 지 아닌 지를 알 수 있게 되는 겁니다 그러니까 코드 작성할 때도 이런 식으로 작성할 거예요 그리고 또 중요한 게 저는 6번 채널만 - 100% 로 벨 세입 설정을 해놨는데</div><div class="paragraph">면이 6번 채널이 아닌 다른 채널을 사용한다면 펜스 f8 동 했을 때 상위 4비트 의 값이 조금 달라지는 것 같습니다 뭐 그건 은 어쨌든 상위 4비트 값이 변하니까 상관이 없는데 근데 문제는 페일 세이프 설정을 6번 채널이 랑 다른 채널을 같이 온 시켜서 확인을 해봤는데 그때 펜 세이프 가 발동을 해도 모든 채널의 상위 4비트 값이 변하지 않는 경우가 있었습니다 즉 페일 세이프</div><div class="paragraph">가 발동하게 전에 상위 4비트 값이 0 0 0 0 2 어떤게 페일 세이프 가발 동해도 상위 4비트 값이 그냥 그대로 0000 이 어떠한 소리에요 그러면 통신이 끊긴 걸 알 수가 없다는 말입니다 그래서 결론은 i 버스로 베인 세이프유 를 사용한 경우에는 반드시 재수 앞 이랑 똑같이 설정을 하시는게 좋구요 메뉴얼이 없어서 이제 저는 실험 으로만 확인 한거라 향이 4bit 의 의미를 정확히 알</div><div class="paragraph">수가 없었습니다 그래서 조심 하셔야 되고 다르게 설정하면 절대 안되고 페일 세이프 확인이 안되면 사고가 날 수 있기 때문에 정말 주의하셔야 됩니다 그럼 제가 페일 세이프 에 대해서 이렇게 별도의 영상으로 따로 설명 들으면서 계속 중요하다고 강조하고 있는데 만약에 뺀 세이퍼 를 사용하지 않으면 대체 무슨 일이 벌어지 길래 이렇게 까지 강조를 하는지 좀 설명을</div><div class="paragraph">드리자면 자 이제 들어온 개발이 다 끝나서 비행을 한다고 가정해 보겠습니다 처음에 바닥에 등을 놓고 배터리 전원을 넣게 쪄요 그리고 이룩하기 위해서 쓰 로드를 조금 높였습니다 스스로 틀은 채널 3번 을 사용 할 거니까 천에서 1285 로 좀 높인 상태가 된거죠 이때 들어오니 막 상승하기 시작한다 고 하겠습니다 그러다가 무슨 이유에서 가 연결이 끊었어요 송신기 수신기</div><div class="paragraph">연결이 끊어 졌는데 이 때 페인 세이프 를 사용하지 않으면 이 오른쪽 부분을 보시면 이게 페일 세이프 를 사용하지 않았을 텐데 연결이 끊김 연 어 데이터가 안들어 오는게 아니고 데이터가 들어 옵니다 들어오는데 연결이 끊기기 직전에 데이터들이 계속 들어요 송신기 랑 수신기 연결이 끊어 졌는데 도 수신기는 fc 로 계속 데이터를 보내 주는데 그 값이 마지막 연결 끊기기</div><div class="paragraph">전에 그 데이터를 계속 보내주는 소리입니다 fc 에서는 연결이 끊겨 있는지 알 수가 없고요 데이터는 계속 1285 이 값이 들어오니까 조정도 안되는 상태에서 계속 상승 만 한단 소리가 됩니다 차라리 아예 데이터가 안 들어가 버리면 얼마동안 데이터가 안들어오면 통신이 끊겨 따고 판단해서 어떤 뭐 펜스의 기능을 활성화 시키거나 할 수 있을텐데 이건 그것도 아니죠 동시에</div><div class="paragraph">끊겼는데 데이터는 계속 들어오고 있고 fc 는 통신이 끊겨 있는지도 모르는 상태가 되는 거니까 배터리가 다 될 때까지 그냥 계속 상승 만 하는 거죠 정도 안 되고 그러면 진짜 위험한 상황이 발생하게 되는 거죠 근데 페일 세이프 를 사용하게 되면 조종기 랑 수신기 소통 신이 끊기며 이렇게 데이터가 어떤 값이 바뀌게 되고 그걸 확인 하면 연결이 끊겨 있는지를 알 수 있으니까</div><div class="paragraph">2절을 울리면서 모터를 끈다 던지 이런걸 해서 더 큰 사고가 발생하는 걸 방지할 수 있게 되는 겁니다 그래도 사고의 우려가 있으니까 나중에 개발 다 끝나고 비행할 때는 꼭 사람없는 뻥 뚫린 공간에 서 핑 하셔야 되요 그럼 이제 페일 세이프 를 확인 하려면 설정을 어떻게 해야 되고 페일 세이프 가 발동되면 데이터 어떻게 바뀌는지 그리고 펜 세이프 를 사용하지 않으면</div><div class="paragraph">통신이 끊겨 쓸 때 얼마나 위험한 상황이 발생할 수 있는 지도 설명을 들었으니까 이제 실제로 소스 코드를 작성해서 통신 연결 상태를 확인해보고 통신이 끊겨 쓸 때 부저를 올리면서 상태를 외부로 나타내 주는 걸 구현해 보도록 하겠습니다 그럼 이제 소스 코 작업으로 넘어가겠습니다</div>
+
+```diff
+Now I'm going to do FC programming in earnest. This is Chapter 1 of Part 1. In this time, I will explain how to set up debug & development environment.
+
+how to connect power to the FC, to create a project with CubeIDE and to write source code for LED blinking with GPIO.
+
+Usually, when doing low-level coding and debugging at the firmware level, simply use LED and UART communication,
+
+we will use a buzzer so that we could know the status of the FC by sound.
+
+In particular, this buzzer will be very useful. Now, I will explain how to power on the FC first in order to drive these devices.
+
+BEC is used to power the FC. This BEC is called PDB xt-60 from MATEK.
+
+The xt-60 is the name of connector type, so be sure to purchase the battery with xt-60 connector.
+
+When you first open the BEC, the BEC board and the xt-60 connector are separated. So, you have to solder this connector to the BEC board. Pay attention to the direction of the connector.
+
+If the direction is wrong soldered, BEC may burn or the battery may explode when connecting the battery. Therefore, be sure to check the direction before soldering.
+
+The polarity of the each terminal is marked on the edge of the connector.
+
+When soldering, you will do it on the back side, At this time, put an enough amount of solder wire.
+
+And beware of cold solder joint problem.
+
+The cold solder joint is one where the solder did not melt completely. It sometimes looks soldered well but not properly attached and unrelibale. The solder bond will be poor.
+
+This is mainly due to insufficient heat being applied during soldering. Therefore, in order to prevent this, you must apply sufficient heat to the iron and soldering pad.
+
+At this time, the whole BEC board will be getting very hot. If you are unfamiliar with soldering, it is better to wear gloves to prevent getting burned.
+
+This BEC outputs 3 voltage types when a LiPo 3~4 cell battery is input.
+
+There are 7 +VBAT ports that output the battery voltage. It is marked in red.
+
+And +12V and +5V will be output one by one. We will use +5V for FC power supply and not use +12V.
+
+And to check the battery voltage, we will also connect +VBAT to FC, which we will read the battery voltage through the ADC.
+
+And later, we will connect ESC to this BEC as well.
+
+So, please connect +VBAT, GND and +5V lines like this picture. The polarity of each terminal is marked on the FC. Make sure to connect them to the correct position.
+
+And it is a solder connection, not a plug-in connection. Be careful when soldering.
+
+After that, connect the battery and both power indicator LEDs on the FC board will turn on. One is 5V power indicator LED and the other is 3.3V which is generated inside the FC board.
+
+If there is no problem, both of these LEDs should be turned on.
+
+If you have connected the battery and either LED does not turn on, remove the battery immediately and check the power connection is correct.
+
+There is a high probability of a problem with the power connection, and in the worst case, the battery power is shorted.
+
+At that time, there is a risk of battery explosion, so you must remove the battery immediately and find the problem.
+
+When connecting the wire, you can connect it with a wire about awg 22 thickness.
+
+You don't need to buy this wire, and you can cut the ESC power line and use it.
+
+The length should be about 4cm, and one of them should be 0.5cm shorter. That short wire will be used to connect to +VBAT.
+
+So, if you connect each of the three lines like this, they are twisted and connected like this. To be sure again, connect to the correct pad. very important.
+
+And when the battery is connected, each 2 red LEDs on both BEC and FC must be turned on.
+
+I have all the wire connections done. I have two types of batteries. One is the 3S 11.1V 1500mAh battery listed in the parts list table.
+
+It will also be used for actual flight after the course is complete.
+
+And the other is what I bought for use in development, and the capacity is 5200mAh, so it is very big and heavy. But this is not necessary for you.
+
+Then I will connect the battery.
+
+Now, both power LEDs on FC and BEC are all turned on.
+
+All of this must be turned on, so that the power is supplied and operating with no problem.
+
+And these three LEDs blinking are debug LEDs. We'll write the source code to control them this time.
+
+And when powering up the FC, a buzzer sounds, which I have implemented in advance for testing purposes.
+
+The buzzer operation will be explained next time.
+
+And we'll use ST-link to write source code and download firmware. Now, let's write the source code.
+
+Run the STM32CuebeIDE that was downloaded and installed last time.
+
+The first time you run it, you will see a screen like this. Click Start new STM32 project.
+
+Then something will be loaded.
+
+After loading is complete, a window will appear like this. At first, we have to select the chip we use.
+
+The chip we will be using is STM32F405RGT. Type 405rg in the search bar. There is one result, and this is the main MCU we will develop and use in this course.
+
+Click Next button. Type the project name "1-1. Debug LED" and click Finish button.
+
+Then a window will pop up. Click Yes.
+
+Also, when loading is complete, the chip shape will appear. This is the CubeMX and this is the beginning for FC development. Here you can configure each GPIO pins, core clock, and peripherals and generate initialization code.
+
+This is the UI of CubeMX v5. When I uploaded the stm32 tutorial class before, I used CubeMX v4 and the UI is a little different.
+
+The first thing we need to do is the clock configuration. To configure the clock, expand the System Core tab and select RCC.
+
+Then, a new tab appears on the right, and HSE and LSE are disabled by default. Select HSE as the crystal/ceramic resonator.
+
+Then, in the right Pinout view, the two pins will be selected in green. The MH-FC V2.2 board has an 8MHz crystal connected to these two pins.
+
+Then select the Clock Configuration tab at the top. The default input frequency is 25MHz, so change this to 8MHz.
+
+Then choose HSE, not HSI. After that, change the HCLK clock frequency to 168MHz and press Enter. When a window pops up, click ok.
+
+Then, the setting is automatically changed, select HSE again. Then HCLK is changed to 84. Please change back to 168.
+
+So, all clock configuration is complete. You must configure the clock the same as this course.
+
+Go back to the Pinout & Configuration tab. Now, we will initialize the GPIO pins which the LEDs are connected. To do that, we need to first check the schematic.
+
+This is the circuit diagram of the debug LED. On the MH-FC V2.2 board, three LEDs are connected to STM32 like this.
+
+Each LED is connected to PC0, PC1, PC2 respectively.
+
+The LED is active high. In other words, the high signal from the pin turns on and low signal turns off the LED.
+
+So now we are going to initialize these pins in CubeMX. First, let's configure the GPIO.
+
+PC0, PC1, PC2 pins should be set as GPIO output. They are side by side in the middle of the left.
+
+Left-click on PC0 and select GPIO_Output. PC1 and PC2 as GPIO_Output as well.
+
+Now we are done with this, open the Project Manager tab. The project name and location of the project are set and cannot be changed here.
+
+If you use CubeMX separately, you could change everything by changing the settings. but for CubeIDE, the project path is fixed when you first create the project, and you cannot change the settings.
+
+Similarly, this toolchain/IDE is also fixed as STM32CubeIDE and cannot be changed.
+
+Therefore, it is not possible to create a project for third-party IDE such as KEIL or IAR.
+
+As explained in the previous time, those who want to use a third-party IDE should download CubeMX separately, not CubeIDE.
+
+Now enter the Code Generator tab and check the first item in the Generated files group.
+
+Then enter to the Advanced Settings. The RCC clock settings and GPIO settings will be generated as source code. The default driver is HAL.
+
+But you can change it to LL driver.
+
+As I said last time, we will use HAL and LL driver together and mainly LL driver.
+
+First of all, let's make a quick comparison between the two. For now, I'll use HAL.
+
+It's done setting up in CubeMX. Select Generate Code in the project menu.
+
+A window will pop up and the code will be generated. If you expand the src(or core) folder, you can see that all files have been generated.
+
+Let's open the main.c file.
+
+Look at the source code, it is not very different from the STM32 tutorial course I did before.
+
+At that time, I used CubeMX to create a project, and wrote source code using HAL driver.
+
+Since GPIO was configured with CubeMX, MX_GPIO_Init() function is called. F3 is the shortcut to the function definition. Press F3.
+
+Then the GPIO.C file is opened and the screen cursor moves to the definition of the function.
+
+PC0, PC1 and PC2 pins are initialized as outputs respectively.
+
+And it has been initialized to output a low signal. GPIO_PIN_RESET means to output low signal.
+
+Back in main.c, let's build and download this code first. To download, you need to connect the ST-Link to the FC.
+
+The connector of the ST-Link is a 20 pin box connector. So you can't plug this into FC right away.
+
+You can download the firmware using this 5-pin 2.54mm pitch connector on the top of the MH-FC V2.2.
+
+So you have to connect 5 pins of the 20 pin box connector to the FC.
+
+As shown in the picture, connect with male to female jumper cables.
+
+Connect the NRST pin of FC to the NRST pin of the 20-pin box connector of ST-Link.
+
+Connect the SWDIO and SWCLK pins according to the pin description decribed in the picture.
+
+And you have to connect +3.3V and ground pin respectively. All lower pins except the left are ground, and the two leftmost pins are +3.3V.
+
+I have already connected the cable as the picture.
+
+Connect the other end of this jumper cable to the 5-pin connector of FC. Must be careful to connect the pin pairs.
+
+Please connect USB to the PC. If the FC is powered on at this time, diconnect the +3.3V pin of the FC.
+
+After that, connect the battery. We are now ready to download. Come back to CubeIDE and build/download. The shortcut key is F11.
+
+You can also push the bug icon at the top. So I'm going to press F11.
+
+When clicking it, a new window appears. Select STM32 MCU C/C++ Application below and click OK.
+
+Then the build process is running like this.
+
+When this window appears, click OK again.
+
+The build process is finished and a new window appears, which will keep appearing every time you build. So check Remember my decision at the bottom left and press Switch button.
+
+Now download is complete and the CubeIDE have entered the debug mode. You can run the code line by line by pressing Step into or Step over at the top.
+
+I'm just going to Terminate debug mode. We will not use this debug mode in the future. The Terminate hotkey is ctrl+F2 or you can click this red button.
+
+Now, the download is completed and the firmware is running. Look at FC, all debug LEDs are off.
+
+Come back to the CubeIDE and look at the source code again. The main function only has the code to initialize clock and GPIO.
+
+And there is nothing to do inside the main while loop. And inside the MX_GPIO_Init() function, low signals are output to PC0, PC1, and PC2.
+
+That's why all of the LEDs are off. So now, this is the code generated in the HAL driver, and let's try to blink the LED.
+
+I'm going to add some code inside the while loop. Write "HAL_GPIO" and press ctrl+space.
+
+Then, a list of candidates starting with HAL_GPIO is displayed by the code completion.
+
+Select HAL_GPIO_TogglePin().
+
+The first argument is the port name. Write GPIOC.
+
+And the second argument is which pin to toggle. Write "GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2" to toggle them.
+
+And needs some delay to see the LED blinking. Call HAL_Delay() function. The argument is milli seccond unit.
+
+So I'm going to put 1000 to toggle it every second.
+
+Lets do this and download again. Press F11.
+
+And if you edit and build the source code, a window will appear asking if you want to save the modified source code.
+
+This message appears everytime when you build after edit the source code, So check the box below and OK.
+
+Build and download is complete.
+
+Let's run and check that the LED blinks every second.
+
+When I ran it, the LEDs are blinking every second as the source code we wrote.
+
+Now, I used the HAL driver to control the GPIO. This time, let's switch to LL driver instead of HAL driver. Again open CubeMX by double clicking on the 1-1. Debug LED.ioc file.
+
+Change the HAL to LL in GPIO peripheral in the Advanced Settings of the Project Manager tab. Don't change anything else.
+
+After Generate Code again, let's see the contents of the source code.
+
+When the code is generated, open the main.c file again. The content of main.c has not changed. Now let's open the gpio.c file.
+
+The source code in the MX_GPIO_Init() has changed a little. The MX_GPIO_Init() function has the same name, but the source code in the function have been slightly changed, and LL_ is added in front of the function like this.
+
+When using the HAL driver, there was HAL_ in front. However, the code structure of GPIO are so simple that nothing has changed significantly.
+
+Let's go back to the main.c file. Now, to control the GPIO, we need to call the function of the LL driver, not the HAL driver.
+
+Write "LL_GPIO" and press ctrl+space. Then, a list of candidates starting with LL_GPIO is displayed.
+
+There is a LL_GPIO_WriteOutputPort() and also a LL_GPIO_TogglePin() function. I call this. The first argument is also port name. GPIOC.
+
+And the second argument is also pin name to toggle. I will use the one written above.
+
+And then build it again. If you get a build error at this time, try "LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2".
+
+When run, it operates the same as before. The LEDs are blinking once every second.
+
+The source code is not much diffrent now, it is because we just have implemented very simple operation.
+
+For complex peripherals, the HAL driver and LL driver have very different source code structures.
+
+So, in such a case, the code may vary a lot depending on whether you are using the HAL driver or the LL driver.
+
+In particular, in the case of the HAL driver, the method of handling the interrupt service routine is a little complicated. On the other hand, the structure of the code of the LL driver is less complex, but you have to write all the code yourself.
+
+HAL driver is more complex and difficult to analyze the code inside.
+
+But it is general-purpose and has good error handling. I prefer simple code, so I will proceed with mainly the LL driver.
+
+So this time, we simply tried to blink LED with GPIO using both HAL and LL driver.
+
+We have also created a project with CubeIDE and initialized the STM32 chip peripheral with CubeMX.
+
+Next time, we will use a timer to generate a buzzer beep.
+
+See you next time. Thank you.
+```
 {{site.data.alerts.ended}}
 
+
 #### video 18
+
 - iBus failsafe configuration parsing
 
 {% include youtubePlayer.html id=page.youtubeID18 %}
