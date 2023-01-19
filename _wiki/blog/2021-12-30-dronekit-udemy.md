@@ -222,7 +222,8 @@ Don’t allocate too much RAM to your VM, because windows still needs some RAM t
 
 3. type "pip install pymavlink==2.4.8
 
-## Full mission examplehttp://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/
+## Full mission example
+[link](http://www.multirotorguide.com/guide/blheli-suite-and-blheli-configurator-how-to-download-install-use-blhelisuite/)
 
 
 {{site.data.alerts.details}}
@@ -403,28 +404,34 @@ time.sleep(1)
 {{site.data.alerts.details}}
 {% include audio.html src="resources/audio/stm32/stm3201-introudction.mp3" %} `1. course introduction`
 {% include audio.html src="resources/audio/stm32/stm3202-cubeide.mp3" %} `2. course contents and stm32cubeIDE`
+
 ***setting up the development environment***
 {% include audio.html src="resources/audio/stm32/stm3202-poweringup.mp3" %} `3. powering up the fc and led blinking GPIO`
 {% include audio.html src="resources/audio/stm32/stm3202a-tone.mp3" %} `4. generating tone with a buzzer`
 {% include audio.html src="resources/audio/stm32/stm3203a-communication.mp3" %} `5. communication with pc UART`
+
 ***section3***
 {% include audio.html src="resources/audio/stm32/stm3203b-bno080.mp3" %} `6. BNO080 9-axis sensor SPI`
 {% include audio.html src="resources/audio/stm32/stm320513-icm.mp3" %} `7. ICM2206022 6-axis sensor SPI`
 {% include audio.html src="resources/audio/stm32/stm320621-lps22hh.mp3" %} `8. LPS22HH barometric pressure sensor SPI`
+
 ***section4***
 {% include audio.html src="resources/audio/stm32/stm320722-ublox.mp3" %} `9. Ubox M8n gps NMEA data reception u center installation`
 {% include audio.html src="resources/audio/stm32/stm320823-m8n.mp3" %} `10. m8n setup and ubx message reception using ucenter`
 {% include audio.html src="resources/audio/stm32/stm320931-ubx1.mp3" %} `11. ubx message analysis`
 {% include audio.html src="resources/audio/stm32/stm321032-ubx2.mp3" %} `12 ubx message receiving and parsing`
 {% include audio.html src="resources/audio/stm32/stm321133-writingm8n.mp3" %} `13. writing m8n configuration code`
+
 ***section5*** 
 {% include audio.html src="resources/audio/stm32/stm321234-flyskysetup.mp3" %} `14. flysky fsi6 setup and fs9a6b 9bus message reception`
 {% include audio.html src="resources/audio/stm32/stm321335-busmessage.mp3" %} `15. bus message analysis`
 {% include audio.html src="resources/audio/stm32/stm321441-busparsing.mp3" %} `16. bus message parsing `
 {% include audio.html src="resources/audio/stm32/stm321542-busfailsafe.mp3" %} `17. bus fail-safe configuraiton for fs i6`
 {% include audio.html src="resources/audio/stm32/stm321643-busfailsafe.mp3" %} `18 bus fail-safe configuration for fs i6x`
+
 ***section6***
 {% include audio.html src="resources/audio/stm32/stm321744-dronehw.mp3" %} `19. drone hw components assembly`
+
 ***section7***
 {% include audio.html src="resources/audio/stm32/stm321845-escprotocol.mp3" %} `20. ESC protocols pwm oneshot multishot dshot proshot`
 {% include audio.html src="resources/audio/stm32/stm321950-oneshot125.mp3" %} `21. oneshot1wt pwm signal generation`
@@ -465,6 +472,7 @@ time.sleep(1)
 {% include audio.html src="resources/audio/stm32/.mp3" %} `45. the concept of basic single loop pid controllder - coding`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `46.  the concedpt of cascade pid controller - theory`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `47. the concept of cascade pid controller - coding`
+
 ***section14***
 {% include audio.html src="resources/audio/stm32/.mp3" %} `48. roll and pitch angle cascade dual loop control`
 {% include audio.html src="resources/audio/stm32/.mp3" %} `49. yaw angle signle loop pid control when yaw josystick is not at midpoint`
