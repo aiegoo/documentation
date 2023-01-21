@@ -30,6 +30,7 @@ youtubeID10: Vc_DeHWBswk
 googleDriveId: 1OJTnPkK1PRcH0mfmC6zzZMBjkB7_378y
 googleDriveId2: 1OLHlmngPOYgSWwi_7fWhQnEVnB6fnsCi
 googleDriveId3: 1AQMyDdSqWOWdldL5eZG64BR5EwRPNi_I
+googleDriveId4: 14KiexqMdKuPlQ2wSgac9UFLqjng6975-
 ---
 
 * TOC
@@ -125,6 +126,8 @@ wing, like a super fast unit or a super long range one, we suggest you to get th
 ## matek 743
 [preview](https://www.youtube.com/watch?v=Vc_DeHWBswk)
 {% include youtubePlayer.html id=page.Vc_DeHWBswkyoutubeID10 %}
+{% include googleDrivePlayer.html id=page.googleDriveId4 %}
+[gd-dfu](https://drive.google.com/file/d/14KiexqMdKuPlQ2wSgac9UFLqjng6975-/view?usp=share_link)
 
 ![image](https://user-images.githubusercontent.com/42961200/160349758-44fdfa74-5688-4ad5-a072-3a3cb20a223d.png)
 
