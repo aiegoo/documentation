@@ -29,6 +29,7 @@ youtubeID9: 8MercqAa7Vk
 youtubeID10: Vc_DeHWBswk
 googleDriveId: 1OJTnPkK1PRcH0mfmC6zzZMBjkB7_378y
 googleDriveId2: 1OLHlmngPOYgSWwi_7fWhQnEVnB6fnsCi
+googleDriveId3: 1AQMyDdSqWOWdldL5eZG64BR5EwRPNi_I
 ---
 
 * TOC
@@ -52,9 +53,9 @@ or [others](https://usa.banggood.com/Sonicmodell-AR-Wing-Pro-1000mm-Wingspan-EPP
 
 [arwing-intro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-intro.pdf)
 
-***[PartsAssemblies](https://docs.google.com/spreadsheets/d/1kDPeVGENqa1dociazhIhNkNjyk8XgwLaM_UlStDqNKg/edit#gid=2014260221)
+***[PartsAssemblies](https://docs.google.com/spreadsheets/d/1kDPeVGENqa1dociazhIhNkNjyk8XgwLaM_UlStDqNKg/edit#gid=2014260221)***
 
-***[customizations](https://docs.google.com/spreadsheets/d/1Je2FdyydVKLBe-9_yxDk2aC9M0NL6yuW9LnHwtAmL54/edit?usp=sharing)
+***[customizations](https://docs.google.com/spreadsheets/d/1Je2FdyydVKLBe-9_yxDk2aC9M0NL6yuW9LnHwtAmL54/edit?usp=sharing)***
 
 ### features
 1- Black EPP molded wing and fuselage, plus pre-built in carbon fiber spar, durable, light and flexible
@@ -430,6 +431,7 @@ If the ESCs you are using don’t have enough capacitors integrated,  low ESR el
 
 ![image](https://user-images.githubusercontent.com/42961200/155606619-750f6b3f-375f-419d-bb9f-e28d5fc46f1b.png)
 
+{% include googleDrivePlayer.html id=page.googleDriveId3 %}
 ### Aomway TX001 
 Switchable 25mW/200mW/600##mW 5.8G 40CH FPV Transmitter
 Adjustable Power: 25mW/200mW/600mW
