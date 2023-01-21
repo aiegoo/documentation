@@ -412,6 +412,7 @@ time.sleep(1)
 
 #### ***Section3***
 {% include audio.html src="resources/audio/stm32/stm3203b-bno080.mp3" %} `6. BNO080 9-axis sensor SPI`
+{% include audio.html src="resources/audio/stm32/stm3204.mp3" %} '
 {% include audio.html src="resources/audio/stm32/stm320513-icm.mp3" %} `7. ICM2206022 6-axis sensor SPI`
 {% include audio.html src="resources/audio/stm32/stm320621-lps22hh.mp3" %} `8. LPS22HH barometric pressure sensor SPI`
 
@@ -562,6 +563,8 @@ in case the youtube link is outdated, click [here](https://www.udemy.com/course/
 {% include googleDrivePlayer.html id=page.googleDriveID1 %}
 {% include audio.html src="resources/audio/stm32/stm3201.mp3" %}
 
+{% include note.html content="개발시 주의 할점은 수동 비행에 관련하여 충분히 개발을 하고 이를 바탕으로 자동 비행 개발을 하는 것이 좋음. 쿨롬 coulomb는 discharge rate 쿨롱 효율과 관계있음. STM32" %}
+
 {{site.data.alerts.details}}
 ```diff
 I uploaded a STM32F4 tutorial video course few years ago. and now I'm getting started a new video course again.
@@ -638,9 +641,9 @@ We need 2 propellers clockwise and 2 counterclockwise, a total of 4, and the sta
 
 The battery is 3 cells 11.1V lithium polymer.
 
-The batter on picture is 1500mAh, but it's ok between 1500 to 2200mAh.
+The battery on picture is 1500mAh, but it's ok between 1500 to 2200mAh.
 
-30C or higher discharge rate is required.
+30 Coulomb (Q) or higher discharge rate is required.
 
 And in addition, It is recommended to have extra batteries.
 
