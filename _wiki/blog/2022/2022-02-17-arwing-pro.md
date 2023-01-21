@@ -52,6 +52,10 @@ or [others](https://usa.banggood.com/Sonicmodell-AR-Wing-Pro-1000mm-Wingspan-EPP
 
 [arwing-intro](https://github.com/aiegoo/uas-refernce/blob/master/manual/arwing-intro.pdf)
 
+***[PartsAssemblies](https://docs.google.com/spreadsheets/d/1kDPeVGENqa1dociazhIhNkNjyk8XgwLaM_UlStDqNKg/edit#gid=2014260221)
+
+***[customizations](https://docs.google.com/spreadsheets/d/1Je2FdyydVKLBe-9_yxDk2aC9M0NL6yuW9LnHwtAmL54/edit?usp=sharing)
+
 ### features
 1- Black EPP molded wing and fuselage, plus pre-built in carbon fiber spar, durable, light and flexible
 
@@ -750,6 +754,8 @@ BeeRotor
 - 3m 734 P600 for abrasive sand paper
 - oracover
 - other comments from rcgroups.com  
+
+{{site.data.alerts.details}}
 ```
 I got the lam film from Aloft Hobbies initially, but when I realized how good it was at strengthening EPP, I ordered up a lifetime supply (that is full rolls) from from http://www.laminatorwarehouse.com/la...aminating-film
 
@@ -758,7 +764,7 @@ I also ordered up a couple of these: http://amazon.com/Top-Flite-Sock-Iro...ilpa
 I'd also get some Scotch filament tape to protect the leading edges of the wings and V-tail, and perhaps the underside of the fuselage (depending on what you think is going to hit the ground first! )http://smile.amazon.com/Scotch-Filam...rch_detailpage
 
 ```
-
+{{site.data.alerts.ended}}
 
 ========================================
 ## RadioLink MiniPix
@@ -954,6 +960,8 @@ AOMWAY ANT007b 5.8GHz Panel Antenna
 - to make a network connection without a need to set up
 
 edit the wpa_supplicant.conf file
+
+{{site.data.alerts.details}}
 ```yaml
 
 country=US
@@ -1002,6 +1010,8 @@ Includes:
 sudo apt install MAVProxy
 
 ```
+{{site.data.alerts.ended}}
+
 - set up RPI for UART communications
   raspi-config then disable UART for console, enable it for serial prt hardware
   Go into /boot/config.txt and add "dtoverlay=disalbe-bt"
