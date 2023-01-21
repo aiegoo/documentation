@@ -264,7 +264,7 @@ Static power 160mA@5V
 ​
 
 ### FC Firmware
-[http://www.mateksys.com/?p=5159#tab-id-11)
+[Mateksys](http://www.mateksys.com/?p=5159#tab-id-11)
 
 ArduPilot(ChiBiOS): MATEKH743
 
