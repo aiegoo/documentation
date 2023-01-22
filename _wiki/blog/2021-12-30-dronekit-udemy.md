@@ -2,14 +2,14 @@
 layout: post
 title: "dronekit application based on pymavlink"
 name: "dronekit-udemy"
-tags: [drones gcs]
+tags: [drone gcs mycourse]
 tagName: drone
 permalink: 2021-12-30-dronekit-udemy.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: school
-keywords: "pymavlink dronekit udemy uav stm32 navercafe naver chrisp gcs"
+keywords: "pymavlink dronekit udemy uav stm32 navercafe naver chrisp gcs mhive"
 summary: "Thu, Dec 30, 21, integrate udemy drone course with dronekit.md of this documentation site"
 excerpt_separator: <!--more-->
 toc: true
