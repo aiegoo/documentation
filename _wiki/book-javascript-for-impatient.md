@@ -35,7 +35,7 @@ weight: 4
 Cay S. Horstmann is principal author of Core Java™, Volumes I & II, Eleventh Edition (Pearson, 2018), Scala for the Impatient, Second Edition (Addison-Wesley, 2016), and Core Java SE 9 for the Impatient (Addison-Wesley, 2017). Cay is a professor emeritus of computer science at San Jose State University, a Java Champion, and a frequent speaker at computer industry conferences.
 
 ### Cay Hortsmann
-[Source Code](https://github.com/aiegoo/jsimpatient.git)
+[Source Code](https://github.com/aiegoo/jsimpatient.git), [book](https://github.com/aiegoo/uas-reference/blob/master/web-dev/Javascript-imaptient.epub)
 
 ## 시작전, 초판의 추천사
 
