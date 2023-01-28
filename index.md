@@ -145,7 +145,7 @@ youtubeID: ijVpUdWZYKU
 <a href="https://webpack.js.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" style="width: 30pt" /></a>
 <a href="https://www.adobe.com/products/xd.html" target="_blank" rel="noreferrer"><img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" style="width: 30pt" /></a>
 <a href="https://www.qt.io/resources/qt" target="_blank" rel="noreferrer"><img src=
-"https://www.vectorlogo.zone/logos/qtio/qtio-ar21.svg" alt="QT" style="width: 30pt" /></a></p>
+"https://www.vectorlogo.zone/logos/qtio/qtio-ar21.svg" alt="QT" style="width: 40pt" /></a></p>
 
 
 **aiegoo/portfolio** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
