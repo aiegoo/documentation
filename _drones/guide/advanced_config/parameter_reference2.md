@@ -3,7 +3,7 @@ layout: page
 name: parameter_reference
 sidebar: other_sidebar
 categories: "drones"
-tags: drones
+tags: drone
 summary: ""
 excerpt_separator: <!--more-->
 permalink: parameter_reference2.html

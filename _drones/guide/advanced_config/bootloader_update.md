@@ -3,7 +3,7 @@ layout: page
 name: bootloader_update
 sidebar: other_sidebar
 categories: "drones"
-tags: drones
+tags: drone
 summary: ""
 excerpt_separator: <!--more-->
 permalink: bootloader_update.html

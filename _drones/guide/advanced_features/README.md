@@ -3,7 +3,7 @@ layout: page
 name: "readme, advanced features"
 sidebar: other_sidebar
 categories: "drones"
-tags: drones
+tags: drone
 summary: ""
 excerpt_separator: <!--more-->
 permalink: README.html

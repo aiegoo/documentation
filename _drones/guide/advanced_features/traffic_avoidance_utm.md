@@ -3,7 +3,7 @@ layout: page
 name: traffic_avoidance_utm
 sidebar: other_sidebar
 categories: "drones"
-tags: drones
+tags: drone
 summary: ""
 excerpt_separator: <!--more-->
 permalink: traffic_avoidance_utm.html

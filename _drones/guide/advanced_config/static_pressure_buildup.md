@@ -3,7 +3,7 @@ layout: page
 name: static_pressure_buildup
 sidebar: other_sidebar
 categories: "drones"
-tags: drones
+tags: drone
 excerpt_separator: <!--more-->
 permalink: static_pressure_buildup.html
 type: "APM, Mission-planner"

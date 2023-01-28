@@ -3,7 +3,7 @@ layout: page
 name: tuning_the_ecl_ekf
 sidebar: other_sidebar
 categories: "drones"
-tags: drones
+tags: drone
 summary: ""
 excerpt_separator: <!--more-->
 permalink: tuning_the_ecl_ekf.html

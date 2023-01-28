@@ -3,7 +3,7 @@ layout: page
 name: land_detector
 sidebar: other_sidebar
 categories: "drones"
-tags: drones
+tags: drone
 summary: ""
 excerpt_separator: <!--more-->
 permalink: land_detector.html

@@ -3,7 +3,7 @@ layout: page
 name: esc_calibration
 sidebar: other_sidebar
 categories: "drones"
-tags: drones
+tags: drone
 summary: ""
 excerpt_separator: <!--more-->
 permalink: esc_calibration.html

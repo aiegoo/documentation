@@ -3,7 +3,7 @@ layout: page
 name: "precision landing"
 sidebar: other_sidebar
 categories: "advanced_features"
-tags: drones
+tags: drone
 summary: ""
 excerpt_separator: <!--more-->
 permalink: precland.html

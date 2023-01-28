@@ -3,7 +3,7 @@ layout: page
 name: flight_termination
 sidebar: other_sidebar
 categories: "drones"
-tags: drones
+tags: drone
 summary: ""
 excerpt_separator: <!--more-->
 permalink: flight_termination.html

@@ -3,7 +3,7 @@ layout: page
 name: advanced_flight_controller_orientation_leveling
 sidebar: other_sidebar
 categories: "drones"
-tags: drones
+tags: drone
 summary: ""
 excerpt_separator: <!--more-->
 permalink: advanced_flight_controller_orientation_leveling.html
