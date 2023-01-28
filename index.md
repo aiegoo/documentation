@@ -146,7 +146,7 @@ youtubeID: ijVpUdWZYKU
 <a href="https://www.adobe.com/products/xd.html" target="_blank" rel="noreferrer"><img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" style="width: 30pt" /></a>
 <a href="https://www.qt.io/resources/qt" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/qtio/qtio-ar21.svg" alt="QT" style="width: 40pt" /></a>
 <a href="https://github.com/px4" target="_blank" rel="nonreferrer"><img src="https://raw.githubusercontent.com/PX4/PX4-graphics/master/PX4_Logo_Black_RGB.svg" alt="PX4" style="width: 60px" /></a>
-<a href="https://www.ardupilot.org" target="_blank" rel="noreferrer"><img src="images/misc/ardupilot.svg" alt="Ardupilot" style="width: 60px" /></a></p>
+<a href="https://www.ardupilot.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/aiegoo/ardupilot/ardupilot.svg" alt="Ardupilot" style="width: 60px" /></a></p>
 
 
 **aiegoo/portfolio** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
