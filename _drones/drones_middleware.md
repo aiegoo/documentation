@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 complex_map: true
 map_name: usermap_drones
 box_number: 2
-link: https://36io.co
+link: https://eggs.or.kr
 tags: mydrone
 folder: '/.'
 ---
