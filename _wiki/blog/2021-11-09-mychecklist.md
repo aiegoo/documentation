@@ -42,7 +42,7 @@ Properly performing the items listed on pre-flight and related checklists is cru
 I began by referring to articles of the law in fine prints, and realized that it didn't have specific format except in general terms. One form that came across was the one created by a regional government with a drone team for aerial photography. And the other is from the FAA handbook for pilot's manual. My research findings are as follows;
 
 |---
-| ![faa_checklist](images/drone-resource-wiki/handbook/49-1.jpg) | [operation_rules]({{site.github_link}}pdf/gcs/ es.pdf) | [maintenancelog]({{site.github_link}}pdf/gcs/maintenancelog.hwp) | [flightlog]({{site.github_link}}pdf/gcs/flightlog.xlsx)
+| ![faa_checklist](images/drone-resource-wiki/handbook/49-1.jpg) | [operation_rules](https://github.com/aiegoo/uas-reference/blob/master/uas/UAV_maintenance_operations.pdf) | [maintenancelog]({{site.github_link}}pdf/gcs/maintenancelog.hwp) | [flightlog]({{site.github_link}}pdf/gcs/flightlog.xlsx)
 
 ## idea expansion
 Now that I need this form and and what' required of it, I set off to a drawing table, whoa! my usual Starbucks table and started dawdling on the ideas.
