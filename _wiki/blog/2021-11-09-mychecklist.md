@@ -131,7 +131,7 @@ CREATE TABLE IF NOT EXISTS "risk_assesment_assessment" ("id" integer NOT NULL PR
 
 {% include copyto.html %}
 
-```diffhttps://myfaa.herokuapp.com/assesment/results/?pilot_name=Udo%20Samuel
+```diff
 sqlite> pragma table_info('risk_assesment_assessment');
 cid         name        type        notnull     dflt_value  pk
 ----------  ----------  ----------  ----------  ----------  ----------
@@ -158,7 +158,7 @@ cid         name        type        notnull     dflt_value  pk
 20          battery_st  varchar(10  0                       0
 
 ```
-
+https://myfaa.herokuapp.com/assesment/results/?pilot_name=Udo%20Samuel
 ## RESTful API
 
 Please read the [restfulapi blog](/2021-11-09-django-api.html) for more details.

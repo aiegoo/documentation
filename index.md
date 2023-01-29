@@ -161,7 +161,7 @@ youtubeID: ijVpUdWZYKU
 |
 | :-:
 | ![cartoon](https://imgs.xkcd.com/comics/automation.png)
-| ![test](out/test/test.svg "svg work?")
+| ![test](out/test/test.svg "svg working fine")
 |================================================================
 |
 
