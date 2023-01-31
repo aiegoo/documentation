@@ -27,6 +27,10 @@ updated: 2022-01-21 08:52
 
 [javaAll](https://github.com/aiegoo/uas-reference/blob/master/web-dev/JavaAll.pdf)
 
+[raspi-setup-with-pixhaw/matek743](https://docs.google.com/spreadsheets/d/187JrOrG0T9Y52j1h923B1X3dk1W_wsJsWz5OBOhx4-U/edit#gid=1046203717)
+
+{% include image.html file="java-eggs/javagcs-overview.jpg" caption="Java GCS remotely operating on multiple mavlink drones" %}
+
 ### setup Libraries
 
 - Raspi lib to install
@@ -386,6 +390,8 @@ sudo systemctl reload nginx
 [source-code](https://github.com/aiegoo/4gremoteoperation/blob/tony/source/cloudapp-raspi/configuration.ini)
 
 ### video 43 code logic
+
+{{site.data.alerts.details}}
 
 ```php
 00:01
@@ -1100,7 +1106,7 @@ and let's let's do our fun part and
 let's let's run the whole system now
 
 ```
-
+{{site.data.alerts.ended}}
 {% include taglogic.html %}
 
 {% include links.html %}
