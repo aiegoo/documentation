@@ -38,9 +38,10 @@ updated: 2022-01-21 08:52
 본 GCS의 특징은 다음과 같다.
 - SITL기체를 시뮬레이터에서 운영하거나, pymavlink를 설치후 픽스호크를 지원하는 기체를 현실 세계에서 운영 할 수 있다.
 - python <--> board connection; frontend->websocket->backend->socket->python/raspi->dronekit/mavlink->pixhawk
-- FC에 Pilot이 조정기를 통해 기체를 운영하는 것과 온보드 라즈베리파이가 pilot를 대신하여 기체를 조정 (미션 업로드 또는 자율 비행) 
+- FC에 Pilot이 조정기를 통해 명령을 하달하여 기체를 운영하는 것과 같은 방식으로 온보드 라즈베리파이가 pilot를 대신하여 기체를 조정 (미션 업로드 또는 자율 비행) 
 - 자율비행을 위한 메시지 업링크와 스트리밍 데이타와 IMU/log 데이타의 조작과 시각화 및 UI 구현
 - payload 임무 수행을 위한 조작
+
 ### setup Libraries
 
 - Raspi lib to install
@@ -60,21 +61,26 @@ sudo apt install python3-opencv
 
 
 - Get the project
+```bash
   git clone --recursive https://github.com/ArduPilot/ardupilot.git
   cd ardupilot
+```
 
 - Install required packages
+```bash
   Tools/environment_install/install-prereqs-ubuntu.sh -y
   . ~/.profile
-
+```
 - Cofigure the board and build vehicle type
+```bash
   ./waf configure --board fmuv3
   ./waf copter
-
+```
 - Go to ArduCopter directory and run simulator
+```bash
   cd ArduCopter
   sim_vehicle.py --console --map --out 192.168.0.101:14553
-
+```
 More detailed information from:
     https://ardupilot.org/dev/docs/building-setup-linux.html#building-setup-linux
 
@@ -85,9 +91,9 @@ More detailed information from:
 When you decide to deploy finished Java application - build it, deploy it on a VPS [or any machine with public IP]
 
 and then run it with this command in terminal:
-
+```bash
 java -Djava.security.egd=file:/dev/urandom -jar drone-control-station-0.0.1.jar &
-
+```
 Wait until it starts, and then you can close the terminal and it will continue to run in the background
 
 
@@ -201,7 +207,7 @@ WantedBy=multi-user.target
 {app directory name} should be replaced with the name of the folder that contains app.py main application file
 
 
-Then nn RaspPi move droneapp.service to /lib/systemd/system/
+Then on RaspPi move droneapp.service to /lib/systemd/system/
 
 Then Run
 ```
