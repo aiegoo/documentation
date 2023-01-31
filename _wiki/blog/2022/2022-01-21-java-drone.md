@@ -30,6 +30,8 @@ updated: 2022-01-21 08:52
 [raspi-setup-with-pixhaw/matek743](https://docs.google.com/spreadsheets/d/187JrOrG0T9Y52j1h923B1X3dk1W_wsJsWz5OBOhx4-U/edit#gid=1046203717) as a aprt of an openHD project with Tatu 
 
 [개발코드](https://github.com/aiegoo/4gremoteoperation) with screencasting and issues
+
+### big picture
 {% include image.html file="java-eggs/javagcs-overview.jpg" caption="Java GCS remotely operating on multiple mavlink drones" %}
 
 ### summary
@@ -95,8 +97,7 @@ sudo pip3 install netifaces psutil google-api-python-client \
 ```
 
 ## java/cloud/raspi app
-### big picture
-![big-picture](images/java-eggs/overview.jpg)
+
 
 > build.gradle
 
