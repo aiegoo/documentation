@@ -1119,7 +1119,7 @@ let's let's run the whole system now
 
 ## codes and future tasks
 
-
+{% include image.html file="java-eggs/raspihwnetworksetup.jpg" caption="raspi hw and network setup photo" %}
 
 
 {% include taglogic.html %}
