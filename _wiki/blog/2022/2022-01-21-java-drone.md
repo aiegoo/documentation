@@ -25,12 +25,20 @@ updated: 2022-01-21 08:52
 
 ## 4gremoteoperation
 
-[javaAll](https://github.com/aiegoo/uas-reference/blob/master/web-dev/JavaAll.pdf)
+[javaAll](https://github.com/aiegoo/uas-reference/blob/master/web-dev/JavaAll.pdf) a java crash course,
 
-[raspi-setup-with-pixhaw/matek743](https://docs.google.com/spreadsheets/d/187JrOrG0T9Y52j1h923B1X3dk1W_wsJsWz5OBOhx4-U/edit#gid=1046203717)
+[raspi-setup-with-pixhaw/matek743](https://docs.google.com/spreadsheets/d/187JrOrG0T9Y52j1h923B1X3dk1W_wsJsWz5OBOhx4-U/edit#gid=1046203717) as a aprt of an openHD project with Tatu 
 
+[개발코드](https://github.com/aiegoo/4gremoteoperation) with screencasting and issues
 {% include image.html file="java-eggs/javagcs-overview.jpg" caption="Java GCS remotely operating on multiple mavlink drones" %}
 
+### summary
+본 GCS의 특징은 다음과 같다.
+- SITL기체를 시뮬레이터에서 운영하거나, pymavlink를 설치후 픽스호크를 지원하는 기체를 현실 세계에서 운영 할 수 있다.
+- python <--> board connection; frontend->websocket->backend->socket->python/raspi->dronekit/mavlink->pixhawk
+- FC에 Pilot이 조정기를 통해 기체를 운영하는 것과 온보드 라즈베리파이가 pilot를 대신하여 기체를 조정 (미션 업로드 또는 자율 비행) 
+- 자율비행을 위한 메시지 업링크와 스트리밍 데이타와 IMU/log 데이타의 조작과 시각화 및 UI 구현
+- payload 임무 수행을 위한 조작
 ### setup Libraries
 
 - Raspi lib to install
@@ -1107,6 +1115,13 @@ let's let's run the whole system now
 
 ```
 {{site.data.alerts.ended}}
+
+
+## codes and future tasks
+
+
+
+
 {% include taglogic.html %}
 
 {% include links.html %}
