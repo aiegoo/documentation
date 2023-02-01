@@ -1127,7 +1127,7 @@ let's let's run the whole system now
 ## codes and future tasks
 
 {% include image.html file="java-eggs/raspihwnetworksetup.jpg" caption="raspi hw and network setup photo" %}
-
+{% include image.html file="java-eggs/arwing_raspi.jpg" caption="raspi and pixhawk on Arwing" %}
 ### directory tree
 
 {{site.data.alerts.details}}
@@ -1193,84 +1193,83 @@ let's let's run the whole system now
 
 ```
  +---cloudapp
-    |   |   .gitignore
-    |   |   build.gradle
-    |   |   gradlew
-    |   |   gradlew.bat
-    |   |   settings.gradle
-    |   |
-    |   +---config-templates
-    |   |       cloudapp.service
-    |   |       nginx-site.conf
-    |   |       start.sh
-    |   |
-    |   +---gradle
-    |   |   \---wrapper
-    |   |           gradle-wrapper.jar
-    |   |           gradle-wrapper.properties
-    |   |
-    |   \---src
-    |       +---main
-    |       |   +---java
-    |       |   |   \---com
-    |       |   |    \---cloudapp
-    |       |   |        |   CloudappApplication.java
-    |       |   |        |
-    |       |   |        +---configuration
-    |       |   |        |       ConfigReader.java
-    |       |   |        |       WebSocketConfiguration.java
-    |       |   |        |
-    |       |   |        +---controller
-    |       |   |        |       BaseController.java
-    |       |   |        |       BaseRestController.java
-    |       |   |        |       VideoSocketHandler.java
-    |       |   |        |
-    |       |   |        +---dto
-    |       |   |        |       DataPoint.java
-    |       |   |        |       DroneInfo.java
-    |       |   |        |
-    |       |   |        +---service
-    |       |   |        |       ControlManager.java
-    |       |   |        |       DroneHandler.java
-    |       |   |        |       VideoStreamManager.java
-    |       |   |        |
-    |       |   |        \---utils
-    |       |   |                DataMapper.java
-    |       |   |                NetworkFormatter.java
-    |       |   |                ProtoData.java
-    |       |   |
-    |       |   \---resources
-    |       |       |   application.yaml
-    |       |       |   logback-spring.xml
-    |       |       |
-    |       |       +---protobuf
-    |       |       |       compile_command.txt
-    |       |       |       protoc.exe
-    |       |       |       ProtoData.proto
-    |       |       |       ProtoData_pb2.py
-    |       |       |
-    |       |       +---static
-    |       |       |   |   drone.svg
-    |       |       |   |   video.jpg
-    |       |       |   |
-    |       |       |   +---css
-    |       |       |   |       app.css
-    |       |       |   |
-    |       |       |   \---js
-    |       |       |           app.js
-    |       |       |           library.js
-    |       |       |           ui-components.js
-    |       |       |
-    |       |       \---templates
-    |       |               index.html
-    |       |               video.html
-    |       |
-    |       \---test
-    |           \---java
-    |               \---com
-    |                   \---odafa
-    |                       \---cloudapp
-    |                               CloudappApplicationTests.java
+ |   .gitignore
+ |   build.gradle
+ |   gradlew
+ |   gradlew.bat
+ |   settings.gradle
+ |
+ +---config-templates
+ |       cloudapp.service
+ |       nginx-site.conf
+ |       start.sh
+ |
+ +---gradle
+ |   \---wrapper
+ |        gradle-wrapper.jar
+ |        gradle-wrapper.properties
+ |
+ \---src
+     +---main
+     |   +---java
+     |   | \---com
+     |   |  \---cloudapp
+     |   |  |CloudappApplication.java
+     |   |  |
+     |   |  +---configuration
+     |   |  |  ConfigReader.java
+     |   |  |  WebSocketConfiguration.java
+     |   |  |
+     |   |  +---controller
+     |   |  |  BaseController.java
+     |   |  |  BaseRestController.java
+     |   |  |  VideoSocketHandler.java
+     |   |  |
+     |   |  +---dto
+     |   |  |  DataPoint.java
+     |   |  |  DroneInfo.java
+     |   |  |
+     |   |  +---service
+     |   |  |  ControlManager.java
+     |   |  |  DroneHandler.java
+     |   |  |  VideoStreamManager.java
+     |   |  |
+     |   |  \---utils
+     |   |     DataMapper.java
+     |   |     NetworkFormatter.java
+     |   |     ProtoData.java
+     |   |
+     |   \---resources
+     |       |application.yaml
+     |       |logback-spring.xml
+     |       |
+     |       +---protobuf
+     |       |  compile_command.txt
+     |       |  protoc.exe
+     |       |  ProtoData.proto
+     |       |  ProtoData_pb2.py
+     |       |
+     |       +---static
+     |       |   | drone.svg
+     |       |   | video.jpg
+     |       |   |
+     |       |   +---css
+     |       |   |     app.css
+     |       |   |
+     |       |   \---js
+     |       |    app.js
+     |       |    library.js
+     |       |    ui-components.js
+     |       |
+     |       \---templates
+     |            index.html
+     |            video.html
+     |
+     \---test
+         \---java
+          \---com
+            \---cloudapp
+             CloudappApplicationTests.java
 
     
 ```
