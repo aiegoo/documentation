@@ -1276,6 +1276,10 @@ let's let's run the whole system now
 
     {{site.data.alerts.ended}}
 
+### components/modules and engines
+
+`python <--> board connection; frontend->websocket->backend->socket->python/raspi->dronekit/mavlink->pixhawk` is to show how the application process is connected and the features described at the beginning of this file mandates the functionality of each components. Let me give more details how this is done.
+
 {% include taglogic.html %}
 
 {% include links.html %}
