@@ -10,7 +10,7 @@ folder: blog
 collection: wiki
 categories: school
 keywords: "drone gcs uav java linh"
-summary: "Fri, Jan 07, 22, udemy course integration, and my local dev-with linh"
+summary: "Fri, Jan 07, 22, udemy/udacity course integration, and my local dev-with linh"
 excerpt_separator: <!--more-->
 toc: true
 public: true
@@ -21,7 +21,7 @@ updated: 2022-01-21 08:52
 * TOC
 {:toc}
 
-{{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
+{{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality! Some of links are private for my own personal access only{{site.data.alerts.end}}
 
 ## 4gremoteoperation
 
@@ -40,7 +40,7 @@ updated: 2022-01-21 08:52
 - python <--> board connection; frontend->websocket->backend->socket->python/raspi->dronekit/mavlink->pixhawk
 - FC에 Pilot이 조정기를 통해 명령을 하달하여 기체를 운영하는 것과 같은 방식으로 온보드 라즈베리파이가 pilot를 대신하여 기체를 조정 (미션 업로드 또는 자율 비행) 
 - 자율비행을 위한 메시지 업링크와 스트리밍 데이타와 IMU/log 데이타의 조작과 시각화 및 UI 구현
-- payload 임무 수행을 위한 조작
+- payload 임무 수행을 위한 조작 패널 구성
 
 ### setup Libraries
 
@@ -1128,6 +1128,153 @@ let's let's run the whole system now
 
 {% include image.html file="java-eggs/raspihwnetworksetup.jpg" caption="raspi hw and network setup photo" %}
 
+### directory tree
+
+{{site.data.alerts.details}}
+- cloudapp
+```
+\---cloudapp
+    |   .gitignore
+    |   build.gradle
+    |   gradlew
+    |   gradlew.bat
+    |   settings.gradle
+    |
+    +---config-templates
+    |       cloudapp.service
+    |       nginx-site.conf
+    |       start.sh
+    |
+    +---gradle
+    |   \---wrapper
+    |           gradle-wrapper.jar
+    |           gradle-wrapper.properties
+    |
+    \---src
+        \---main
+            +---java
+            |    \---cloudapp
+            |         \---controller
+            |              BaseController.java
+            |
+            \---resources
+                +---protobuf
+                |       compile_command.txt
+                |       protoc.exe
+                |       ProtoData.proto
+                |       ProtoData_pb2.py
+                |
+                \---static
+                        drone.svg
+                        video.jpg
+```
+
+- cloudapp-raspi
+
+```
+\---cloudapp-raspi
+            app.py
+            command_data_dto.py
+            configuration.ini
+            connection_watchdog.py
+            control_tab.py
+            data_receiver.py
+            drone.py
+            droneapp.service
+            engine.py
+            ProtoData_pb2.py
+            README.md
+            servo_controller.py
+            utils.py
+            video_streamer.py
+```
+
+- during development
+
+```
+ +---cloudapp
+    |   |   .gitignore
+    |   |   build.gradle
+    |   |   gradlew
+    |   |   gradlew.bat
+    |   |   settings.gradle
+    |   |
+    |   +---config-templates
+    |   |       cloudapp.service
+    |   |       nginx-site.conf
+    |   |       start.sh
+    |   |
+    |   +---gradle
+    |   |   \---wrapper
+    |   |           gradle-wrapper.jar
+    |   |           gradle-wrapper.properties
+    |   |
+    |   \---src
+    |       +---main
+    |       |   +---java
+    |       |   |   \---com
+    |       |   |    \---cloudapp
+    |       |   |        |   CloudappApplication.java
+    |       |   |        |
+    |       |   |        +---configuration
+    |       |   |        |       ConfigReader.java
+    |       |   |        |       WebSocketConfiguration.java
+    |       |   |        |
+    |       |   |        +---controller
+    |       |   |        |       BaseController.java
+    |       |   |        |       BaseRestController.java
+    |       |   |        |       VideoSocketHandler.java
+    |       |   |        |
+    |       |   |        +---dto
+    |       |   |        |       DataPoint.java
+    |       |   |        |       DroneInfo.java
+    |       |   |        |
+    |       |   |        +---service
+    |       |   |        |       ControlManager.java
+    |       |   |        |       DroneHandler.java
+    |       |   |        |       VideoStreamManager.java
+    |       |   |        |
+    |       |   |        \---utils
+    |       |   |                DataMapper.java
+    |       |   |                NetworkFormatter.java
+    |       |   |                ProtoData.java
+    |       |   |
+    |       |   \---resources
+    |       |       |   application.yaml
+    |       |       |   logback-spring.xml
+    |       |       |
+    |       |       +---protobuf
+    |       |       |       compile_command.txt
+    |       |       |       protoc.exe
+    |       |       |       ProtoData.proto
+    |       |       |       ProtoData_pb2.py
+    |       |       |
+    |       |       +---static
+    |       |       |   |   drone.svg
+    |       |       |   |   video.jpg
+    |       |       |   |
+    |       |       |   +---css
+    |       |       |   |       app.css
+    |       |       |   |
+    |       |       |   \---js
+    |       |       |           app.js
+    |       |       |           library.js
+    |       |       |           ui-components.js
+    |       |       |
+    |       |       \---templates
+    |       |               index.html
+    |       |               video.html
+    |       |
+    |       \---test
+    |           \---java
+    |               \---com
+    |                   \---odafa
+    |                       \---cloudapp
+    |                               CloudappApplicationTests.java
+
+    ```
+
+    {{site.data.alerts.ended}}
 
 {% include taglogic.html %}
 
