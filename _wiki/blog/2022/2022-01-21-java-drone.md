@@ -1272,9 +1272,9 @@ let's let's run the whole system now
     |                       \---cloudapp
     |                               CloudappApplicationTests.java
 
-    ```
-
-    {{site.data.alerts.ended}}
+    
+```
+{{site.data.alerts.ended}}
 
 ### components/modules and engines
 
