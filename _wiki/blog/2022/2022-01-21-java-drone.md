@@ -1280,6 +1280,13 @@ let's let's run the whole system now
 
 `python <--> board connection; frontend->websocket->backend->socket->python/raspi->dronekit/mavlink->pixhawk` is to show how the application process is connected and the features described at the beginning of this file mandate the functionality of each components. Let me give more details how this is done.
 
+- websocket connection
+- video stream client, controller, manager and frontend client
+- System/drone data
+- Drone controller, handler, protobuf
+- FC - Drone간 Telemetry 모듈 통신 Mavlink 포로토콜은 PX4/Ardupilot 라이버리를 불러 들여서 구현 (PID 게인 메세지 request/response)
+- GCS - Raspi - FC간 통신은 MAVSDK/ROS API를 이용.
+
 {% include taglogic.html %}
 
 {% include links.html %}
