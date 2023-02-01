@@ -1127,7 +1127,7 @@ let's let's run the whole system now
 ## codes and future tasks
 
 {% include image.html file="java-eggs/raspihwnetworksetup.jpg" caption="raspi hw and network setup photo" %}
-{% include image.html file="java-eggs/arwing_raspi.jpg" caption="raspi and pixhawk on Arwing" %}
+
 ### directory tree
 
 {{site.data.alerts.details}}
@@ -1288,6 +1288,8 @@ let's let's run the whole system now
 - Drone controller, handler, protobuf
 - FC - Drone간 Telemetry 모듈 통신 Mavlink 포로토콜은 PX4/Ardupilot 라이버리를 불러 들여서 구현 (PID 게인 메세지 request/response)
 - GCS - Raspi - FC간 통신은 MAVSDK/ROS API를 이용.
+
+{% include image.html file="java-eggs/arwing_raspi.jpg" caption="raspi and pixhawk on Arwing, yet to be tested" %}
 
 {% include taglogic.html %}
 
