@@ -1168,9 +1168,10 @@ let's let's run the whole system now
                         drone.svg
                         video.jpg
 ```
+{{site.data.alerts.ended}}
 
 - cloudapp-raspi
-
+{{site.data.alerts.details}}
 ```
 \---cloudapp-raspi
             app.py
@@ -1188,9 +1189,11 @@ let's let's run the whole system now
             utils.py
             video_streamer.py
 ```
+{{site.data.alerts.ended}}
+
 
 - during development
-
+{{site.data.alerts.details}}
 ```
  +---cloudapp
  |   .gitignore
