@@ -16,6 +16,7 @@ imagesurl_handbook: "images/drone-resource-wiki/handbook/"
 imagesurl_travel: "images/travel/"
 imagesurl_travelnamhae: "images/trip_namhae/"
 imagesurl_trucker: "images/trucker/"
+imagesurl_trucker_iveco: "images/trucker/iveco/"
 # thumbsurl_yoga: "/images/yoga/thumbs/"
 # this property is useful for conditional filtering of content that is separate from the PDF.
 encoding: UTF-8
