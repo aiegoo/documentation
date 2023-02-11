@@ -6,7 +6,7 @@
     {% assign filenameparts = file.path | split: "/" %}
       {% assign filename = filenameparts | last | replace: file.extname,"" %}
        <div class="gallery-box"><a href="{{ file.path | relative_url }}" title="{{ filename }}">
-         <img src="{{ site.imagesurl_travel }}{{file.name }} " alt="{{ filename }}"  class="img-gallery" />
+         <img src="{{ site.imagesurl_trucker }}{{file.name }} " alt="{{ filename }}"  class="img-gallery" />
        </a></div>
       {% endif %}
     {% endif %}
@@ -23,7 +23,7 @@ credit goes to; https://dmnfarrell.github.io/software/jekyll-galleries
 {% for name in filenames %}
     <div class="gallery-box">
     <a href="{{ site.imagesurl }}{{ name }}">
-      <img src="{{ site.imagesurl_travel }}{{ name }} " alt="{{ name }}"  class="img-gallery" />
+      <img src="{{ site.imagesurl_trucker }}{{ name }} " alt="{{ name }}"  class="img-gallery" />
      </a>
     </div>
  {% endfor %}
