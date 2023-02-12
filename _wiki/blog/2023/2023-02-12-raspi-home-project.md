@@ -23,7 +23,14 @@ updated: 2023-02-12 13:35
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 
+## background
+Osman and I teamed up to do some fun projects with sensors on rpi 4
+
+I was able to rerun my past experience with this breadcrum and small developer board 3 years ago.
+
+[![raspi-imager](https://img.youtube.com/vi/Cw_34fuve6E/2.jpg)](https://youtu.be/Cw_34fuve6E)
+
+In the video, you can set up wifi and other settings such as keyboard as ![this]().
 
 {% include taglogic.html %}
 
