@@ -30,7 +30,7 @@ I was able to rerun my past experience with this breadcrum and small developer b
 
 [![raspi-imager](https://img.youtube.com/vi/Cw_34fuve6E/2.jpg)](https://youtu.be/Cw_34fuve6E)
 
-In the video, you can set up wifi and other settings such as keyboard as ![this]().
+In the video, you can set up wifi and other settings such as keyboard as ![this](https://user-images.githubusercontent.com/42961200/218295531-df39f14d-b742-4ecc-b087-07471709e70c.png).
 
 {% include taglogic.html %}
 
