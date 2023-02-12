@@ -575,12 +575,13 @@ Front/back-end, database, OS(Ubuntu, rapibe)
     └── templates
         ├── index.html
         └── video.html
-          </pre></project overviewtd>
+          </pre></td>
             <td><span class="label label-default">modular</span></td>
           <td> </td>
         </tr>
   </tbody>
 </table>
+
 
 ### Big picture and Environment Setup
 
@@ -756,6 +757,7 @@ The surface analysis chart depicts an analysis of the current surface weather. [
 •   Temperature—given in degrees Fahrenheit.
 
 •   Wind—true direction of wind is given by the wind pointer line, indicating the direction from which the wind is blowing. A short barb is equal to 5 knots of wind, a long barb is equal to 10 knots of wind, and a pennant is equal to 50 knots.
+
 ### UI Unity application
 ![298-1](https://user-images.githubusercontent.com/42961200/144705608-7dcec52c-3d75-49b4-a082-02f745e07a30.jpg)
 
@@ -779,6 +781,8 @@ The surface analysis chart depicts an analysis of the current surface weather. [
 ![UAMcorridor](https://user-images.githubusercontent.com/42961200/144735484-5bb28262-56df-4a4a-a509-0d5e52f4e2a4.png)
 
 visual flight rules (VFR) or IFR, aircraft identification and type, departure point, estimated time of departure (ETD), flight altitude, route of flight, destination, and estimated time en route (ETE).
+
+{{site.data.alerts.hr_faded}}
 
 {% include note.html content="UI/UX preview" %}
 {% include youtubePlayer.html id=page.youtubeID %}
