@@ -537,7 +537,7 @@ Front/back-end, database, OS(Ubuntu, rapibe)
             <td></td>
           <td> future filesystem </td>
         </tr>
-        <tr><project>- The following is an exmample;we will have a new one when completed <pre>
+        <tr>project- The following is an exmample;we will have a new one when completed <td><pre>
 .
 ├──cloudapp
 │ ├── CloudappApplication
@@ -575,12 +575,13 @@ Front/back-end, database, OS(Ubuntu, rapibe)
     └── templates
         ├── index.html
         └── video.html
-          </pre></project overviewtd>
+          </pre></td>
             <td><span class="label label-default">modular</span></td>
           <td> </td>
         </tr>
   </tbody>
 </table>
+
 
 ### Big picture and Environment Setup
 
@@ -664,6 +665,7 @@ class Drone {
     }
 ```
 
+
 ##### Home Comptroller Video Endpoint
 
 ##### Configurations Reader
@@ -673,6 +675,7 @@ class Drone {
 ##### Video Stream manager
 
 ##### Demonstration
+
 
 ### Drone Control Center
 ##### Index Page
@@ -702,6 +705,7 @@ class Drone {
 
 ##### Demonstration - Mission/Command Endpoints + Frontend App
 
+
 ### Handler Manager Setup
 ##### Adding Video Stream to UI Controls Page
 ##### Rest Controller Functionality Implementation
@@ -724,9 +728,7 @@ class Drone {
 ##### Data Receiver Thread
 ##### Drone Object Vehicle Abstraction
 ##### Network Message Encoding-Decoding Layer
-
 ##### Drone Control Panel Object
-
 ##### Maintaing Constant Speed and Direction Thread
 ##### Camera Servo Controlling Thread
 ##### Logic Flow Overview
@@ -741,6 +743,7 @@ class Drone {
 ![300-2](https://user-images.githubusercontent.com/42961200/144705567-ee0ad8d1-a7a8-4018-9b2c-53930d7aeba3.jpg)
 
 ![328-2](https://user-images.githubusercontent.com/42961200/144714459-ae85bcf5-b6fc-4788-93f8-33810417e05c.jpg)
+
 The surface analysis chart depicts an analysis of the current surface weather. [Figure 13-10] This chart is transmitted every 3 hours and covers the contiguous 48 states and adjacent areas. A surface analysis chart shows the areas of high and low pressure, fronts, temperatures, dew points, wind directions and speeds, local weather, and visual obstructions. Surface weather observations for reporting points across the United States are also depicted on this chart. Each of these reporting points is illustrated by a station model. [Figure 13-11] A station model includes:
 
 •   Sky cover—the station model depicts total sky cover and is shown as clear, scattered, broken, overcast, or obscured/partially obscured.
@@ -756,6 +759,7 @@ The surface analysis chart depicts an analysis of the current surface weather. [
 •   Temperature—given in degrees Fahrenheit.
 
 •   Wind—true direction of wind is given by the wind pointer line, indicating the direction from which the wind is blowing. A short barb is equal to 5 knots of wind, a long barb is equal to 10 knots of wind, and a pennant is equal to 50 knots.
+
 ### UI Unity application
 ![298-1](https://user-images.githubusercontent.com/42961200/144705608-7dcec52c-3d75-49b4-a082-02f745e07a30.jpg)
 
@@ -779,6 +783,8 @@ The surface analysis chart depicts an analysis of the current surface weather. [
 ![UAMcorridor](https://user-images.githubusercontent.com/42961200/144735484-5bb28262-56df-4a4a-a509-0d5e52f4e2a4.png)
 
 visual flight rules (VFR) or IFR, aircraft identification and type, departure point, estimated time of departure (ETD), flight altitude, route of flight, destination, and estimated time en route (ETE).
+
+{{site.data.alerts.hr_faded}}
 
 {% include note.html content="UI/UX preview" %}
 {% include youtubePlayer.html id=page.youtubeID %}
@@ -816,35 +822,32 @@ UAM is considered a subset of advanced air mobility (AAM).1213 AAM provides loca
 
 - usa
 
-|단계 | 내용|
-|:----:| :----|
-| 0 |• 드론과 조종자 간의 거리가 최대 122m(400ft) 이내 가시권 내 비행 •14 CFR Part 101 준수하는 드론(일부 제외) •ATC 관리하에 운영되는 드론 •FAA에 의해 식별 및 추적이 면제되는 드론|
-| 1 | •0 2 3 단계에 속하지 않는 드론 •14 CFR Part 107에 속하는 드론|
-| 2 |•비가시권 비행 드론 • 14 CFR Part 107에서 정의한 최대고도 이상에서비행하는 드론 • 보호되지 않는 사람에게 운영되는 드론|
-| 3 |• 무게가 25kg 이상이고 비가시권 내 비행하는 드론 • IFR 조건에서 동작하는 드론 • 통제된 공역에서 비행하는 드론|
-|  |  |
-| CL0 | • 최대 이륙 중량 250g 이하 • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • 드론 원격 식별 불필요|
-| CL1 | • 최대 이륙 중량 900g 이하(운동에너지 80J 이하) • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치|
-| CL2 |• 최대 이륙 중량 4kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시  통신 복구 기능 또는 안전한 비행 종료 기능 필요 |
-| CL3 |• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시 통신 복구 기능 또는 안전한 비행 종료 기능 필요|
-|CL4 | • 최대 이륙 중량 25kg 이하 • 최대 비행 고도 및 속도 제한 없음 |
+{: .customtable}
 
+|:----:| :----
+| 0 |• 드론과 조종자 간의 거리가 최대 122m(400ft) 이내 가시권 내 비행 •14 CFR Part 101 준수하는 드론(일부 제외) •ATC 관리하에 운영되는 드론 •FAA에 의해 식별 및 추적이 면제되는 드론
+| 1 | •0 2 3 단계에 속하지 않는 드론 •14 CFR Part 107에 속하는 드론
+| 2 |•비가시권 비행 드론 • 14 CFR Part 107에서 정의한 최대고도 이상에서비행하는 드론 • 보호되지 않는 사람에게 운영되는 드론
+| 3 |• 무게가 25kg 이상이고 비가시권 내 비행하는 드론 • IFR 조건에서 동작하는 드론 • 통제된 공역에서 비행하는 드론
+|  |  
+
+{{site.data.alerts.hr_faded}}
 
 - EU
 
-|클래스 | 주요 특징|
-| :----: | :---- |
-| CL0 | • 최대 이륙 중량 250g 이하 • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • 드론 원격 식별 불필요|
-| CL1 | • 최대 이륙 중량 900g 이하(운동에너지 80J 이하) • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치|
-| CL2 |• 최대 이륙 중량 4kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시  통신 복구 기능 또는 안전한 비행 종료 기능 필요 |
-| CL3 |• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시 통신 복구 기능 또는 안전한 비행 종료 기능 필요|
-|CL4 | • 최대 이륙 중량 25kg 이하 • 최대 비행 고도 및 속도 제한 없음 |
+{: .customtable}
+
+| :----: | :---- 
+| CL0 | • 최대 이륙 중량 250g 이하 • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • 드론 원격 식별 불필요
+| CL1 | • 최대 이륙 중량 900g 이하(운동에너지 80J 이하) • 최대 비행 속도 19m/s 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 24V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치
+| CL2 |• 최대 이륙 중량 4kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시  통신 복구 기능 또는 안전한 비행 종료 기능 필요 
+| CL3 |• 최대 이륙 중량 25kg 이하 • 최대 비행 고도 120m 이하 • 최대 허용 전압 48V • ANSI/CTA-2063 기반 시리얼 번호 • 드론 등록 및 원격 식별 필요 • 지형 인식 시스템 장착 • 라이트 설치 • 드론 제어 링크 통신 단절 시 통신 복구 기능 또는 안전한 비행 종료 기능 필요
+|CL4 | • 최대 이륙 중량 25kg 이하 • 최대 비행 고도 및 속도 제한 없음 
 
 
 
 {% include taglogic.html %}
 
-{% include links.html %}
 
 {% include commento.html %}
 
