@@ -24227,6 +24227,7 @@ pwm 펄스 폭을 조절함으로써 비행 방향을 결정할 수 있게 됩�
 그럼 이제 소스 코드 작업으로 넘어가겠습니다
 
 ```
+
 {{site.data.alerts.ended}}
 
 #### video 44
@@ -27003,9 +27004,10 @@ p 제어가 각 속도를 제어하는 거라서
 - ch 10 double loop pid control 1/2
 
 {% include youtubePlayer.html id=page.youtubeID46 %}
+
 {{site.data.alerts.details}}
 
-```cplus
+```c
   printf("Loading PID Gain...\n");
 
 
@@ -27046,7 +27048,7 @@ p 제어가 각 속도를 제어하는 거라서
 	  HAL_UART_Transmit(&huart1, &telemetry_tx_buf[0], 20, 10);
 	  printf("\nAll gains OK!\n\n");
   }
-```
+
 
 19:28
 먼저 지난번 각도 제어 할 때랑 똑같이 조종기 값으로 목표 각 속도를
@@ -27333,6 +27335,7 @@ d 라고 하고 여기에 이각 가속도 곱하기
 		  //printf("%f\t%f\n", BNO080_Roll, ICM20602.gyro_y);
 		  //printf("%f\t%f\n", BNO080_Yaw, ICM20602.gyro_z);
 	  }
+
 27:34
 맨 위로 올라오지 구요 역시 지역 변수로 선언 하겠읍니다
 27:40
@@ -27479,8 +27482,7 @@ prev 했었죠 자 이렇게 까지 하면 되구요
 앞으로 아니 기울어져 있죠 그래서 뒤고 찾아 있습니다
 32:39
 그래서 아직도 개인이 좀 작은 것 같으니깐 개인을 조금 높여 보겠읍니다
-32:43
-에픽 ain't 22 너무 작은 것 같으니까 이번엔 40을 넣어보겠습니다
+32:43 에픽 ain't 22 너무 작은 것 같으니까 이번엔 40을 넣어보겠습니다
 32:50
 또 암 잉 을 하고 쓰로틀 높이 구요
 32:54
@@ -27849,13 +27851,21 @@ p 제어가 각 속도를 제어하는 거라서
 ```
 {{site.data.alerts.ended}}
 
+---
+
 #### video 47
+
 - ch10-3 cascade dual loop pid control
 
 {% include youtubePlayer.html id=page.youtubeID47 %}
+
 Youtube video is missing and the contents include;
-{{site.data.alerts.details}}
-```diff
+
+
+{{site.data.alerts.edetails}}
+
+
+```cplus
 - 피치축 더블 PID(cascade pid control) 제어 지그 실험 및 비행테스트
 
 - 왜 각속도 제어를 해야하는가?
@@ -29248,7 +29258,9 @@ p 제어가 각 속도를 제어하는 거라서
 {{site.data.alerts.ended}}
 
 ### Ch11 roll/pitch control Cascade PID
+
 #### video 48
+
 - ch11 Roll and pitch angle cascade dual loop PID control
 
 {% include youtubePlayer.html id=page.youtubeID %}
