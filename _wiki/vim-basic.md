@@ -13,6 +13,7 @@ toc: true
 public: true
 parent: [[Vim-Category]] 
 latex: false
+keywords: "vim linux"
 ---
 * TOC
 {:toc}
