@@ -41,6 +41,16 @@ updated: 2023-02-26 13:58
 
 [ivrs](https://docs.google.com/presentation/d/1BvEHbHBEI6bE7Qll0RemD1yDxuc0IvC-9UIpLsmTRDY/edit?usp=sharing)
 
+
+## project overview
+![image](https://user-images.githubusercontent.com/42961200/221393788-af317343-1f05-4578-a73a-74fa2c38228d.png)
+
+![image](https://user-images.githubusercontent.com/42961200/221393805-9b513119-dee7-45fd-9c8f-c43017b110f7.png)
+
+- NH3sensor module script for ammonia and other perception layer
+[github](https://github.com/aiegoo/tyeng)
+
+
 ## hardware
 
 - GSM ESP32
