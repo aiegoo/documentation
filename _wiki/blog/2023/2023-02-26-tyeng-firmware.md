@@ -36,14 +36,18 @@ updated: 2023-02-26 13:58
 5. Change permission privilieges for the folder and its subfolders to all privileges
 6. Paste Arduino libraries into Data>Library and reopen the app to check if Arduino is visible
 7. Install Arduino IDWE [download](https://www.arduino.cc/en/software) 
-```diff
+
+```php
 방화벽을 허용한다.
 아래의 'Programmer', 'Board Type', 'Serial 포트'를 차례로 설정한다.
 
-ssh -p 2020 tynode@git.tyeng.com 해서 접속이 되는 지 확인 한다
+ssh -p 2020 tynode@git.tyeng.com 
+접속이 되는 지 확인 한다
 
 ```
+
 8. Download dev source codes
+
 ```bash
 git clone ssh://tynode@git.tyeng.com:2020/var/www/repo/tynode/arduinoRS485 \
 git clone ssh://tynode@git.tyeng.com:2020/var/www/repo/tynode/fritzingProMini \
