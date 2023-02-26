@@ -23,7 +23,7 @@ updated: 2023-02-26 11:21
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 
+## Firebase overview
 
 시작하기 전에 간단히 Firebase에 대한 설명을 하겠습니다. Firebase는 서버리스 앱을 만들 수 있도록 하는 플랫폼 같은 겁니다. 기존에 웹 앱이나 홈페이지를 만드려면 서버가 필요했습니다. 백엔드 서버가 존재함으로써 홈페이지가 회원가입, 데이터 저장 / 불러오기 등의 기능을 수행할 수 있었습니다. 그런데 이렇게 되면 작은 규모의 프로젝트도 모두 서버를 관리해야 한다는 불편함이 따라옵니다. Firebase는 DB, 인증 등 백엔드 서버가 했던 일들을 모두 구글 서버에서 처리할 수 있도록 이 모든 기능을 api 형태로 제공해버립니다. 이에 따라, React같은 프레임워크로 프론트엔드만 깔끔하게 잘 짜도 쓸만한 웹 앱을 만들 수 있게 됩니다. 
 
@@ -136,6 +136,67 @@ Done!
 
 * * *
 
+## Mongodb crash course
+
+```txt
+
+MongoDB
+
+NoSQL Database - Document Database Type in NoSQL
+Data is stored in json like syntax
+
+Good to use when there is no ton of inter connected relations
+
+Database, Collections, Document
+
+data/db folder inside MongoDB
+
+Run mongod and mongo in another terminal
+$ mongod -directoryperdb --dbpath C:\mongodb\data\db --logpath C:\monodb\log\mongo.log --logappend --rest --install
+$ net start MongoDB
+
+$ mongo
+
+> show dbs
+> use <db_name>
+> db.createUser({ user: "", pwd: "", roles: [ "readwrite", "dbAdmin" ] });
+
+> show collections
+> db.createCollection('<collection_name>');
+
+> db.<collection_name>.insert({ });
+> db.<collection_name>.insert([ { }, { }, { } ]);
+
+> db.<collection_name>.find();
+> db.<collection_name>.find().pretty();
+> db.<collection_name>.find().count();
+> db.<collection_name>.find().limit(4);
+
+> db.<collection_name>.findById(id);
+> db.<collection_name>.find(<matchObject>);
+> db.<collection_name>.find({ "nestedObj.field": "" });
+
+> db.<collection_name>.find({ $or: [ <matchObject1>, <matchObject2> ] });
+> db.<collection_name>.find({ age: { $gt: 40 }}); // gt or gte
+> db.<collection_name>.find({ age: { $lt: 40 }}); // lt or lte
+> db.<collection_name>.find().sort({ field: 1 }); // ascending order is indicated by 1
+
+> db.<collection_name>.update(<matchObject>, {}); // matchObject: { first_name: '' }
+> db.<collection_name>.update(<matchObject>, {}, { upsert: true }); // insert if not found
+
+> db.<collection_name>.update(<matchObject>, { $set: { } }); // Preserves rest of the data in the Document
+> db.<collection_name>.update(<matchObject>, { $inc: { age: 5 } } ); // increments age by 5
+> db.<collection_name>.update(<matchObject>, { $unset: { age: 1 } } ); // deletes age field
+> db.<collection_name>.update(<matchObject>, { $rename: { "field1": "field2" }});
+
+> db.<collection_name>.remove(<matchObject>);
+> db.<collection_name>.remove(<matchObject>, { justOne: true });
+
+> db.<collection_name>.find().forEach(function(doc) {
+    print("Customer Name": + doc.field);
+  });
+
+```
 
 {% include taglogic.html %}
 
