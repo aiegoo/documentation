@@ -41,6 +41,23 @@ updated: 2023-02-26 13:58
 
 [ivrs](https://docs.google.com/presentation/d/1BvEHbHBEI6bE7Qll0RemD1yDxuc0IvC-9UIpLsmTRDY/edit?usp=sharing)
 
+## hardware
+
+- GSM ESP32
+![ali-exp32](https://user-images.githubusercontent.com/42961200/221393719-d994391c-1207-4302-8224-d09cedcdf96c.png)
+![image](https://user-images.githubusercontent.com/42961200/221393743-c7c19e6e-1a8f-49f4-9358-dc99bdd74457.png)
+
+```diff
+ESP32 Dev module
+GSM 4G Module
+Thermometer + Humidity module (AHT10/20)
+LCD display I2C or SPI (16x2 or Graphical LCD)
+Push Buttons
+Relay Module (12v or 5v)
+Current sensor (ACS712)
+Lithium battery if ESP module support
+```
+
 {% include taglogic.html %}
 
 {% include links.html %}
