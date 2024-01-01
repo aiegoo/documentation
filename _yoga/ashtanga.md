@@ -14,7 +14,7 @@ date: 2021-08-26 12:42:03 +0900
 updated: 2021-09-17 5:32 PM
 link: https://36io.co
 youtubeID: uoD-otHuJ5cRV1sw
-youtubeID1: Okpd9nxzYDsMIhMV
+youtubeID1: Y6BZ3SvbAdLXMug7
 ---
 
 ## ashtanga
