@@ -82,7 +82,9 @@ Balasana - child pose
 
 ```
 [![ashtanga](https://img.youtube.com/vi/6xc1cIyBOsQf6GUM/0.jpg)](https://youtu.be/IyQuAJgpozs?si=6xc1cIyBOsQf6GUM)
+
 {% include youtubePlayer.html id=page.youtubeID %}
+
 {% include youtubePlayer.html id=page.youtubeID1 %}
 
 
