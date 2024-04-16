@@ -527,8 +527,12 @@ entries:
 
         - title: Troubleshooting pages
           url: /tag_troubleshooting.html
-          output: web
-          
+          output: web  
+
+    - title: General or Retrieval
+      url: /aigenerative_insights.html
+      output: web
+
       subfolders:
       - title: AI
         output: web

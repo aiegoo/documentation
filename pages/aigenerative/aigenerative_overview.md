@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: aigenerative_overview.html
 simple_map: true
 map_name: usermap_ai
-box_number: 1
+box_number: 2
 toc: true
 folder: aigenerative
 ---
