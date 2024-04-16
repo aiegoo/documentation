@@ -1,10 +1,10 @@
 ---
 title: RAG HACK
 tags: [python, django]
-tagName: ai
+tagName: ai rag
 last_updated: July 14, 2021
-keywords: API, content API, two scoops, django, books
-summary: "summary."
+keywords: ai, rag, digital twin
+summary: "RAG retrieve augment generation."
 sidebar: mydoc_sidebar
 permalink: mydoc_twoscoops.html
 folder: mydoc
