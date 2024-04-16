@@ -1,7 +1,7 @@
 ---
 title: RAG HACK
 tags: [python, django]
-tagName: django
+tagName: ai
 last_updated: July 14, 2021
 keywords: API, content API, two scoops, django, books
 summary: "summary."
