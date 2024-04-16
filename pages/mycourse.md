@@ -6,7 +6,7 @@ hide: false
 toc: true
 sidebar: other_sidebar
 permalink: mycourse.html
-summary: "courses I have basesed my skills on"
+summary: "courses I have based my skills on"
 collection: mycourse
 layout: page
 complex_map: true
