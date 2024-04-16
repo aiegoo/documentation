@@ -1,21 +1,13 @@
 ---
 title: "Unlocking 3D Human Pose: Estimation Techniques"
-name: "3d-human-pose-estimation"
 tags: [visionai ucon ai]
 tagName: visionai
 permalink: 3d-human-pose-estimation.html
 sidebar: mydoc_sidebar
 folder: aigenerative
-collection: wiki
-categories: wiki
 keywords: "3D human pose, computer vision, estimation techniques, body joints, image analysis"
 summary: "Tue, Apr 16, 24, 3D human pose estimation is a computer vision technique that infers the three-dimensional positions of human body joints from 2D images or videos"
-excerpt_separator: <!--more-->
 toc: true
-public: true
-parent: [[Wiki-Setting-Category]] 
-date: 2024-04-16T22:02:57 +0900
-updated: 2024-04-16 22:02
 ---
 * TOC
 {:toc}

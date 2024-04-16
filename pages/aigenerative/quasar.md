@@ -1,21 +1,13 @@
 ---
 title: "Quasar framework for smartFarm"
-name: "quasar"
 tags: [smartfarm]
 tagName: nodered
 permalink: quasar.html
 sidebar: mydoc_sidebar
 folder: aigenerative
-collection: wiki
-categories: wiki
 keywords: "smartfarm, node-red, quasar, tyeng"
 summary: "Tue, Apr 16, 24, iot dashboard that displays node status and control page for node configuration"
-excerpt_separator: <!--more-->
 toc: true
-public: true
-parent: [[Wiki-Setting-Category]] 
-date: 2024-04-16T21:28:39 +0900
-updated: 2024-04-16 21:28
 ---
 * TOC
 {:toc}
