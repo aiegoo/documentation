@@ -5,7 +5,7 @@ summary: "control greenhouse nodes live from raspberry n"
 sidebar: mydoc_sidebar
 permalink: aigenerative_smartfarm.html
 simple_map: true
-map_name: usermap_aigenerative
+map_name: usermap_smartfarm
 box_number: 1
 toc: true
 folder: aigenerative
