@@ -493,7 +493,7 @@ entries:
     folderitems:
 
     - title: SmartFarm
-      url: /mydoc_fiction.html
+      url: /aigenerative_smartfarm.html
       output: web
 
       subfolders:
