@@ -532,6 +532,7 @@ entries:
       subfolders:
       - title: AI
         output: web
+        url: /aigenerative_overview.html
         subfolderitems:
 
         - title: HuggingFace
