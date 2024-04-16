@@ -5,7 +5,7 @@ name: "HF-framework"
 tags: [generative]
 tagName: ai
 permalink: 2024-04-16-HF-framework.html
-sidebar: other_sidebar
+sidebar: mydoc_sidebar
 folder: blog
 collection: wiki
 categories: wiki

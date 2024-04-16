@@ -5,7 +5,7 @@ name: "3d-human-pose-estimation"
 tags: [visionai ucon ai]
 tagName: visionai
 permalink: 2024-04-16-3d-human-pose-estimation.html
-sidebar: other_sidebar
+sidebar: mydoc_sidebar
 folder: blog
 collection: wiki
 categories: wiki

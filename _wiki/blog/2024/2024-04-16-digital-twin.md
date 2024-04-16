@@ -5,7 +5,7 @@ name: "digital-twin"
 tags: [digitaltwin aiot smartfactory metahuman ucon]
 tagName: digitaltwin
 permalink: 2024-04-16-digital-twin.html
-sidebar: other_sidebar
+sidebar: mydoc_sidebar
 folder: blog
 collection: wiki
 categories: wiki

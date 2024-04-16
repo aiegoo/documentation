@@ -5,7 +5,7 @@ name: "metafactory"
 tags: [metafactory iot aiot ucon]
 tagName: metafactory
 permalink: 2024-04-16-metafactory.html
-sidebar: other_sidebar
+sidebar: mydoc_sidebar
 folder: blog
 collection: wiki
 categories: wiki

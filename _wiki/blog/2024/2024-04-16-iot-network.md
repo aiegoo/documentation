@@ -5,7 +5,7 @@ name: "iot-netwrok"
 tags: [iot smartfarm mqtt]
 tagName: smartfarm
 permalink: 2024-04-16-iot-network.html
-sidebar: other_sidebar
+sidebar: mydoc_sidebar
 folder: blog
 collection: wiki
 categories: wiki

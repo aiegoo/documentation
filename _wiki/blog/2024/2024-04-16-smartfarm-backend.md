@@ -5,7 +5,7 @@ name: "smartfarm-backend"
 tags: [smartfarm iot]
 tagName: smartfarm
 permalink: 2024-04-16-smartfarm-backend.html
-sidebar: other_sidebar
+sidebar: mydoc_sidebar
 folder: blog
 collection: wiki
 categories: wiki
