@@ -506,15 +506,15 @@ entries:
           output: web
 
         - title: networking
-          url: /tag_navigation.html
+          url: /2024-04-16-iot-network.html
           output: web
 
         - title: backend
-          url: /tag_content_types.html
+          url: /2024-04-16-smartfarm-backend.html
           output: web
 
         - title: Node-Red
-          url: /tag_publishing.html
+          url: /2024-04-16-smartfarm-nodered.html
           output: web
 
         - title: Special layout pages
@@ -539,11 +539,11 @@ entries:
           output: web
 
         - title: LangChanin
-          url: /rfly_starthere.md
+          url: /2024-04-16-langchain.md
           output: web
 
         - title: gpt4all
-          url: /cplus.html
+          url: /2024-04-16-gpt4all.html
           output: web
 
     - title: Generative
@@ -551,27 +551,27 @@ entries:
       output: web, pdf
 
     - title: RAG(Retrieve Augmented Generative)
-      url: /aigenerative_overview.html
+      url: /aigenerative_rag.html
       output: web, pdf
 
     - title: 3d human pose estimation
-      url: /books_revealjs.html
+      url: /2024-04-16-3dhuman-pose-estimation.html
       output: web, pdf
 
     - title: metaFactory
-      url: /books_vim.html
+      url: /2024-04-16-metafactory.html
       output: web, pdf
 
-    - title: digital twin
-      url: /books_robotswithros.html
+    - title: Digital Twin
+      url: /2024-04-16-digital-twin.html
       output: web, pdf
 
-    - title: edge computing
-      url: /books_matlab_essential.html
+    - title: Edge AI
+      url: /2024-04-16=edgeai.html
       output: web, pdf
 
-    - title: vision AI
-      url: /mydoc_contact.html
+    - title: Vision AI
+      url: /2024-04-16-visionai.html
       output: web, pdf
 
 # Copyright 2021 Google LLC
