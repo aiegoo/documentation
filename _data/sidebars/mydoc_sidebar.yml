@@ -487,5 +487,91 @@ entries:
     - title: drone companies
       url: /mydoc_contact.html
       output: web, pdf
+          
+  - title: AI Generative
+    output: web
+    folderitems:
+
+    - title: SmartFarm
+      url: /mydoc_fiction.html
+      output: web
+
+      subfolders:
+      - title: Node-Red
+        output: web
+        subfolderitems:
+
+        - title: front-end framework
+          url: /tag_formatting.html
+          output: web
+
+        - title: networking
+          url: /tag_navigation.html
+          output: web
+
+        - title: backend
+          url: /tag_content_types.html
+          output: web
+
+        - title: Node-Red
+          url: /tag_publishing.html
+          output: web
+
+        - title: Special layout pages
+          url: /tag_special_layouts.html
+          output: web
+
+        - title: Collaboration pages
+          url: /tag_collaboration.html
+          output: web
+
+        - title: Troubleshooting pages
+          url: /tag_troubleshooting.html
+          output: web
+          
+      subfolders:
+      - title: AI
+        output: web
+        subfolderitems:
+
+        - title: HuggingFace
+          url: /rfly_advanced.md
+          output: web
+
+        - title: LangChanin
+          url: /rfly_starthere.md
+          output: web
+
+        - title: gpt4all
+          url: /cplus.html
+          output: web
+
+    - title: Generative
+      url: /mydoc_webdev.html
+      output: web, pdf
+
+    - title: retrive augment generative(RAG)
+      url: /mydoc_twoscoops.html
+      output: web, pdf
+
+    - title: 3d human pose estimation
+      url: /books_revealjs.html
+      output: web, pdf
+
+    - title: metaFactory
+      url: /books_vim.html
+      output: web, pdf
+
+    - title: digital twin
+      url: /books_robotswithros.html
+      output: web, pdf
+
+    - title: edge computing
+      url: /books_matlab_essential.html
+      output: web, pdf
+
+    - title: vision AI
+      url: /mydoc_contact.html
+      output: web, pdf
 
 # Copyright 2021 Google LLC
