@@ -156,7 +156,7 @@ youtubeID: ijVpUdWZYKU
 <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" style="width: 30pt" /> </a> 
 <a href="https://redis.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" style="width: 30pt" /> </a> 
 <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" style="width: 30pt" /> </a> 
-<a href="https://www.rust-lang.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" alt="rust" style="width: 30pt" /></a>
+<a href="https://www.rust-lang.org" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white" alt="rust" style="width: 30pt" /></a>
 <a href="https://sass-lang.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" style="width: 30pt" /></a>
 <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" style="width: 30pt" /></a>
 <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" style="width: 30pt" /></a>
@@ -170,7 +170,7 @@ youtubeID: ijVpUdWZYKU
 <a href="https://www.adobe.com/products/xd.html" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6" alt="xd" style="width: 30pt" /></a>
 <a href="https://www.qt.io/resources/qt" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/qtio/qtio-ar21.svg" alt="QT" style="width: 40pt" /></a>
 <a href="https://github.com/px4" target="_blank" rel="nonreferrer"><img src="https://raw.githubusercontent.com/PX4/PX4-graphics/master/PX4_Logo_Black_RGB.svg" alt="PX4" style="width: 60px" /></a>
-<a href="https://www.ardupilot.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/aiegoo/ardupilot/master/ardupilot.svg" alt="Ardupilot" style="width: 80px" /></a><a href="https://huggingface.co/docs/transformers/index" target="_blank" rel="noreferrer"><img src="  https://huggingface.co/front/assets/huggingface_logo-noborder.svg " alt="huggingface" style="width: 50px" /></a><a href="https://www.openai.com" target="_blank" rel="noreferrer"><img src="https://avatars.githubusercontent.com/u/14957082?s=200&v=4" alt="openAI" style="width: 60px" /></a></p>
+<a href="https://www.ardupilot.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/aiegoo/ardupilot/master/ardupilot.svg" alt="Ardupilot" style="width: 80px" /></a><a href="https://huggingface.co/docs/transformers/index" target="_blank" rel="noreferrer"><img src="  https://huggingface.co/front/assets/huggingface_logo-noborder.svg " alt="huggingface" style="width: 40px" /></a><a href="https://www.openai.com" target="_blank" rel="noreferrer"><img src="https://avatars.githubusercontent.com/u/14957082?s=200&v=4" alt="openAI" style="width: 40px" /></a></p>
 
 
 **aiegoo/portfolio** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
