@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Empowering Decentralized Manufacturing with Metafactory"
+title: "Empowering Decentralized Manufacturing with Metafactory"
 name: "metafactory"
 tags: [metafactory iot aiot ucon]
 tagName: metafactory

@@ -9,7 +9,7 @@ sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: wiki
-keywords: "transformer, tokenzier, NLP, finetune"
+keywords: "transformer, tokenzier, NLP, finetuning"
 summary: "Tue, Apr 16, 24, Hugging Face is a framework known for its open-source libraries and platforms for natural language processing (NLP) and machine learning with transformer-based models, tokenizers, and fine-tuning pipeline"
 excerpt_separator: <!--more-->
 toc: true

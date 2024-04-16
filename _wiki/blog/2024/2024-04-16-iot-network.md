@@ -4,13 +4,13 @@ title: "Modbus mqtt for networking the iot nodes"
 name: "iot-netwrok"
 tags: [iot smartfarm mqtt]
 tagName: smartfarm
-permalink: 2024-04-16-iot-netwrok.html
+permalink: 2024-04-16-iot-network.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
 categories: wiki
 keywords: "modbus mqtt smartfarm tyeng serial"
-summary: "Tue, Apr 16, 24, mqtt modbus and serialized communication"
+summary: "Tue, Apr 16, 24, mqtt modbus and serialized communication; An IoT network is a system of interconnected devices, sensors, and actuators that communicate with each other to collect, exchange, and act on data, enabling smart functionalities."
 excerpt_separator: <!--more-->
 toc: true
 public: true
