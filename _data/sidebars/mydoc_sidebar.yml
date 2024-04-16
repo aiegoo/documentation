@@ -518,7 +518,7 @@ entries:
           output: web
 
         - title: Special layout pages
-          url: /tag_special_layouts.html
+          url: /2024-04-16-iot-network.html
           output: web
 
         - title: Collaboration pages
