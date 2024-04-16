@@ -14,10 +14,21 @@ toc: true
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## pose estimation 
+## 3d human pose estimation 
 
 
 ![gaitTransformer](https://raw.githubusercontent.com/peabody124/PosePipeline/main/doc/erd.png)
+
+
+### AWS CDK
+
+{% include image.html file="./ai/aws-CDK.png" caption="AWS CDK components'"}
+{% include image.html file="./ai/aws-CDKDetail.png" caption="AWS CDK 'how it works'"}
+
+
+### live streaming in realtime full frames
+{% include image.html file="./ai/teaser.git" caption="Carrying location information in full frames'"}
+
 
 {% include taglogic.html %}
 
