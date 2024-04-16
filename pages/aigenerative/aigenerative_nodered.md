@@ -1,10 +1,10 @@
 ---
-title: smartfarm Node-Red
+title: smartfarm "Visual Programming for IoT and API Integration"
 tags: [python, django]
 tagName: ai rag
 last_updated: July 14, 2021
-keywords: ai, rag, digital twin
-summary: "RAG retrieve augment generation."
+keywords: smartfarm, Node-RED, open-source, flow-based development, visual programming, IoT, API integration, hardware devices, web-based GUI
+summary: "Node-RED is an open-source flow-based development tool for visual programming, ideal for IoT applications and integrating APIs. It offers a web-based GUI for connecting hardware devices, APIs, and online services with ease."
 sidebar: mydoc_sidebar
 permalink: aigenerative_nodered.html
 folder: aigenerative
@@ -16,14 +16,12 @@ folder: aigenerative
 
 [ARTICLES](#articles)
 
-## rag overview
+## Google links
+[Android Controllers](https://docs.google.com/document/d/1yc8BPKdzH_tueZydjOdAOuhmvddlkHLrSUEXCzk9o_0/edit?usp=sharing)
 
-![rag1](./images/ai/ragTree-1.png)
-![rag2](./images/ai/ragTree-2.png)
-![rag3](./images/ai/ragTree-3.png)
-![rag4](./images/ai/ragTree-4.png)
-![rag5](./images/ai/ragTree-5.png)
-![rag6](./images/ai/ragTree-6.png)
+[ADS1115Programming](https://docs.google.com/document/d/1LZ2A_nKCzzS4W1NkoqAES08L2MtaECzJnFbx3Ygv-vg/edit?usp=sharing)
+
+[nodeDevelopment](https://docs.google.com/presentation/d/1qBynD7hlLLe5XPuCTbKcasAS3--BkBiIbnG9ycpKybs/edit?usp=sharing)
 
 **books**
 
