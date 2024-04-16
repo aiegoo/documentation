@@ -502,23 +502,23 @@ entries:
         subfolderitems:
 
         - title: front-end framework
-          url: /2024-04-16-quasar.html
+          url: /quasar.html
           output: web
 
         - title: networking
-          url: /2024-04-16-iot-network.html
+          url: /iot-network.html
           output: web
 
         - title: backend
-          url: /2024-04-16-smartfarm-backend.html
+          url: /smartfarm-backend.html
           output: web
 
         - title: Node-Red
-          url: /2024-04-16-smartfarm-nodered.html
+          url: /martfarm-nodered.html
           output: web
 
         - title: Special layout pages
-          url: /2024-04-16-iot-network.html
+          url: /iot-network.html
           output: web
 
         - title: Collaboration pages
@@ -535,15 +535,15 @@ entries:
         subfolderitems:
 
         - title: HuggingFace
-          url: /2024-04-16-HF-framework.html
+          url: /HF-framework.html
           output: web
 
         - title: LangChanin
-          url: /2024-04-16-langchain.md
+          url: /langchain.md
           output: web
 
         - title: gpt4all
-          url: /2024-04-16-gpt4all.html
+          url: /gpt4all.html
           output: web
 
     - title: Generative
@@ -555,23 +555,23 @@ entries:
       output: web, pdf
 
     - title: 3d human pose estimation
-      url: /2024-04-16-3dhuman-pose-estimation.html
+      url: /3dhuman-pose-estimation.html
       output: web, pdf
 
     - title: metaFactory
-      url: /2024-04-16-metafactory.html
+      url: /metafactory.html
       output: web, pdf
 
     - title: Digital Twin
-      url: /2024-04-16-digital-twin.html
+      url: /digital-twin.html
       output: web, pdf
 
     - title: Edge AI
-      url: /2024-04-16=edgeai.html
+      url: /edgeai.html
       output: web, pdf
 
     - title: Vision AI
-      url: /2024-04-16-visionai.html
+      url: /visionai.html
       output: web, pdf
 
 # Copyright 2021 Google LLC

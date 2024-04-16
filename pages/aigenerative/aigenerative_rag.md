@@ -7,7 +7,7 @@ keywords: ai, rag, digital twin
 summary: "RAG retrieve augment generation."
 sidebar: mydoc_sidebar
 permalink: mydoc_twoscoops.html
-folder: mydoc
+folder: aigenerative
 ---
 
 <a href="tel:+821025441197">call my cell for text messages</a>
