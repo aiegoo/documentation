@@ -20,7 +20,7 @@ folder: mydoc
 
 ![rag1](./images/ai/ragTree-1.png)
 ![rag2](./images/ai/ragTree-2.png)!
-[rag3](./images/ai/ragTree-3.png)
+![rag3](./images/ai/ragTree-3.png)
 ![rag4](./images/ai/ragTree-4.png)
 ![rag5](./images/ai/ragTree-5.png)
 ![rag6](./images/ai/ragTree-6.png)
