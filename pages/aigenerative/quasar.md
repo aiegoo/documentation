@@ -3,7 +3,7 @@ title: "Quasar framework for smartFarm"
 name: "quasar"
 tags: [smartfarm]
 tagName: nodered
-permalink: 2024-04-16-quasar.html
+permalink: quasar.html
 sidebar: mydoc_sidebar
 folder: aigenerative
 collection: wiki

@@ -3,7 +3,7 @@ title: "Modbus mqtt for networking the iot nodes"
 name: "iot-netwrok"
 tags: [iot smartfarm mqtt]
 tagName: smartfarm
-permalink: 2024-04-16-iot-network.html
+permalink: iot-network.html
 sidebar: mydoc_sidebar
 folder: aigenerative
 collection: wiki

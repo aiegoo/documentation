@@ -3,7 +3,7 @@ title: "backend of smartfarm"
 name: "smartfarm-backend"
 tags: [smartfarm iot]
 tagName: smartfarm
-permalink: 2024-04-16-smartfarm-backend.html
+permalink: smartfarm-backend.html
 sidebar: mydoc_sidebar
 folder: aigenerative
 collection: wiki

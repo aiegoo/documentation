@@ -3,7 +3,7 @@ title: "vision ai"
 name: "vision-ai"
 tags: [visionai ai rag]
 tagName: visionai
-permalink: 2024-04-16-vision-ai.html
+permalink: vision-ai.html
 sidebar: mydoc_sidebar
 folder: aigenerative
 collection: wiki

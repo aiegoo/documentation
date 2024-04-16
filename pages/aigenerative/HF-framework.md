@@ -3,7 +3,7 @@ title: "Hugging Face Framework"
 name: "HF-framework"
 tags: [generative]
 tagName: ai
-permalink: 2024-04-16-HF-framework.html
+permalink: HF-framework.html
 sidebar: mydoc_sidebar
 folder: aigenerative
 collection: wiki

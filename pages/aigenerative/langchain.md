@@ -1,10 +1,9 @@
 ---
-layout: post
 title: "Bridging Language Barriers with Blockchain Technology"
 name: "langchain"
 tags: [nlp ai ucon]
 tagName: nlp
-permalink: 2024-04-16-langchain.html
+permalink: langchain.html
 sidebar: other_sidebar
 folder: aigenerative
 collection: wiki

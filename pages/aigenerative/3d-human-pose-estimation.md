@@ -3,7 +3,7 @@ title: "Unlocking 3D Human Pose: Estimation Techniques"
 name: "3d-human-pose-estimation"
 tags: [visionai ucon ai]
 tagName: visionai
-permalink: 2024-04-16-3d-human-pose-estimation.html
+permalink: 3d-human-pose-estimation.html
 sidebar: mydoc_sidebar
 folder: aigenerative
 collection: wiki

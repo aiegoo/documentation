@@ -3,7 +3,7 @@ title: "Exploring Digital Twin Technology"
 name: "digital-twin"
 tags: [digitaltwin aiot smartfactory metahuman ucon]
 tagName: digitaltwin
-permalink: 2024-04-16-digital-twin.html
+permalink: digital-twin.html
 sidebar: mydoc_sidebar
 folder: aigenerative
 collection: wiki

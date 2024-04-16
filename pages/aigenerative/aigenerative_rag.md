@@ -6,7 +6,7 @@ last_updated: July 14, 2021
 keywords: ai, rag, digital twin
 summary: "RAG retrieve augment generation."
 sidebar: mydoc_sidebar
-permalink: mydoc_twoscoops.html
+permalink: aigenerative_rag.html
 folder: aigenerative
 ---
 

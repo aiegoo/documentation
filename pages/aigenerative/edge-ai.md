@@ -3,7 +3,7 @@ title: "edge computing"
 name: "edge-ai"
 tags: [edgeai ai iot]
 tagName: edgeai
-permalink: 2024-04-16-edge-ai.html
+permalink: edge-ai.html
 sidebar: mydoc_sidebar
 folder: aigenerative
 collection: wiki

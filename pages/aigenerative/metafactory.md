@@ -3,7 +3,7 @@ title: "Empowering Decentralized Manufacturing with Metafactory"
 name: "metafactory"
 tags: [metafactory iot aiot ucon]
 tagName: metafactory
-permalink: 2024-04-16-metafactory.html
+permalink: metafactory.html
 sidebar: mydoc_sidebar
 folder: aigenerative
 collection: wiki
