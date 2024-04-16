@@ -8,7 +8,7 @@
 # Pass in other parameters such as title, tag name, summary and categories
 
 CMDLINEPARAM=1     #  Takes at least one param.
-TAGDIR="_wiki/blog/2023"
+TAGDIR="_wiki/blog/2024"
 fileName=$(date +"%Y-%m-%d")
 date=$(date +"%FT%T")
 update=$(date +"%Y-%m-%d %H:%M")

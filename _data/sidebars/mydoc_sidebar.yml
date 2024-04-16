@@ -550,8 +550,8 @@ entries:
       url: /aigenerative_overview.html
       output: web, pdf
 
-    - title: retrive augment generative(RAG)
-      url: /mydoc_twoscoops.html
+    - title: RAG(Retrieve Augmented Generative)
+      url: /HF-framework.html
       output: web, pdf
 
     - title: 3d human pose estimation
