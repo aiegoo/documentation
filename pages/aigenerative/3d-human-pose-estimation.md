@@ -22,12 +22,12 @@ toc: true
 
 ### AWS CDK
 
-{% include image.html file="./ai/aws-CDK.png" caption="AWS CDK components'"}
-{% include image.html file="./ai/aws-CDKDetail.png" caption="AWS CDK 'how it works'"}
+{% include image.html file="./ai/aws-CDK.png" caption="AWS CDK components'" %}
+{% include image.html file="./ai/aws-CDKDetail.png" caption="AWS CDK 'how it works'" %}
 
 
 ### live streaming in realtime full frames
-{% include image.html file="./ai/teaser.git" caption="Carrying location information in full frames'"}
+{% include image.html file="./ai/teaser.gif" caption="Carrying location information in full frames" %}
 
 
 {% include taglogic.html %}

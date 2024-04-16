@@ -228,7 +228,7 @@ defaults:
       topnav: topnav
       toc: true
       show_excerpts: true
-  # tags
+  # tagsyou 
   # -
   #   scope:
   #     path: "/tags/"
