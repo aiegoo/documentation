@@ -14,7 +14,10 @@ toc: true
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 
+## pose estimation 
+
+
+![gaitTransformer](https://raw.githubusercontent.com/peabody124/PosePipeline/main/doc/erd.png)
 
 {% include taglogic.html %}
 
