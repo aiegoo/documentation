@@ -502,7 +502,7 @@ entries:
         subfolderitems:
 
         - title: front-end framework
-          url: /tag_formatting.html
+          url: /2024-04-16-quasar.html
           output: web
 
         - title: networking
@@ -535,7 +535,7 @@ entries:
         subfolderitems:
 
         - title: HuggingFace
-          url: /rfly_advanced.md
+          url: /2024-04-16-HF-framework.html
           output: web
 
         - title: LangChanin
@@ -551,7 +551,7 @@ entries:
       output: web, pdf
 
     - title: RAG(Retrieve Augmented Generative)
-      url: /HF-framework.html
+      url: /aigenerative_overview.html
       output: web, pdf
 
     - title: 3d human pose estimation
