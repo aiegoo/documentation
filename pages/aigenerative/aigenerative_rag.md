@@ -1,5 +1,5 @@
 ---
-title: two scoops of django
+title: RAG HACK
 tags: [python, django]
 tagName: django
 last_updated: July 14, 2021
