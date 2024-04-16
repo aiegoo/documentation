@@ -6,7 +6,7 @@ hide: false
 toc: false
 sidebar: mydoc_sidebar
 permalink: index.html
-summary: From a graphic designer with hands-on experience in the industry, I witnessed myself transform into a full-fledged IT consultant covering both visualization and sensor APIs.
+summary: My recent projects are leveraging generative AI across various domains, yielding significant achievements. These encompass Digital Twin, Voice-to-Command, RAG (Retrieval-Augmented Generation), TTL STT (Text-to-Listening Speech), Metaverse, smartFarm and Edge Computing, among others.
 youtubeID: ijVpUdWZYKU
 ---
 
