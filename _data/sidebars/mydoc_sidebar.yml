@@ -514,7 +514,7 @@ entries:
           output: web
 
         - title: Node-Red
-          url: /martfarm-nodered.html
+          url: /aigenerative-nodered.html
           output: web
 
         - title: Special layout pages
@@ -538,8 +538,8 @@ entries:
           url: /HF-framework.html
           output: web
 
-        - title: LangChanin
-          url: /langchain.md
+        - title: LangChain
+          url: /langchain.html
           output: web
 
         - title: gpt4all
@@ -555,7 +555,7 @@ entries:
       output: web, pdf
 
     - title: 3D Human Pose Estimation
-      url: /3dhuman-pose-estimation.html
+      url: /3d-human-pose-estimation.html
       output: web, pdf
 
     - title: metaFactory
@@ -567,11 +567,11 @@ entries:
       output: web, pdf
 
     - title: Edge AI
-      url: /edgeai.html
+      url: /edge-ai.html
       output: web, pdf
 
     - title: Vision AI
-      url: /visionai.html
+      url: /vision-ai.html
       output: web, pdf
 
 # Copyright 2021 Google LLC

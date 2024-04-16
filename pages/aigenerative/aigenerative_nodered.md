@@ -1,12 +1,12 @@
 ---
-title: RAG HACK
+title: smartfarm Node-Red
 tags: [python, django]
 tagName: ai rag
 last_updated: July 14, 2021
 keywords: ai, rag, digital twin
 summary: "RAG retrieve augment generation."
 sidebar: mydoc_sidebar
-permalink: aigenerative_rag.html
+permalink: aigenerative_nodered.html
 folder: aigenerative
 ---
 
