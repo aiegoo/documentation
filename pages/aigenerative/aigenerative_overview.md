@@ -21,7 +21,7 @@ folder: aigenerative
 
 ### model performance eval
 
-{% include image.html file="./images/ai/applicationMap.png" caption="Azure Monitor Dashboard" %} 
+{% include image.html file="ai/applicationMap.png" caption="Azure Monitor Dashboard" %} 
 
 [understandingPerformance](https://humanloop.com/blog/llm-benchmarks)
 
