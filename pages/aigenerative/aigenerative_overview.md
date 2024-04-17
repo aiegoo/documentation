@@ -28,7 +28,7 @@ folder: aigenerative
 |---
 |
 | :-:-:
-| ![modelB])(./images/ai/modelB.png) | ![newplotModelB](./images/ai/newplot.png "svg working fine") |
+| ![modelB](./images/ai/modelB.png) | ![newplotModelB](./images/ai/newplot.png "svg working fine") |
 |================================================================
 |
 
