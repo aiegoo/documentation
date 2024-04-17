@@ -20,6 +20,8 @@ folder: aigenerative
 
 
 ### model performance eval
+![image](https://github.com/aiegoo/documentation/assets/42961200/41dea4c1-edad-4898-af84-4d2bca34efc3)
+
 [understandingPerformance](https://humanloop.com/blog/llm-benchmarks)
 
 [leaderboard](https://chat.lmsys.org/?leaderboard)
