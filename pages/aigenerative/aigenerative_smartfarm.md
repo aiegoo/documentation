@@ -14,9 +14,9 @@ folder: aigenerative
 ## the setup
 {% include image.html file="./aiot/Smartfarm.png" caption="smartfarm components" %}     
 
-{% include image.html file="./aiot/Smartfarm_UI.png" caption="smartfarm screen mockup" %}     
+{% include image.html file="./aiot/smartfarm_UI.png" caption="smartfarm screen mockup" %}     
 
-{% include image.html file="./aiot/SmartfarmHierarchy.png" caption="smartfarm node setup" %}     
+{% include image.html file="./aiot/smartfarmHierarchy.png" caption="smartfarm node setup" %}     
 
 ## resource links
 
