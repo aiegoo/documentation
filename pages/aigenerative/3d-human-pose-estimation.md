@@ -24,13 +24,14 @@ toc: true
 [awsAthleteTracking](https://aws.amazon.com/blogs/machine-learning/estimating-3d-pose-for-athlete-tracking-using-2d-videos-and-amazon-sagemaker-studio/)
 ![MomentOfSnap](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2021/04/14/Fig-9.gif)
 
-
+[3D human pose estimation in video with temporal convolutions and semi-supervised training](https://arxiv.org/abs/1811.11742)
 ### 3D human pose estimation in video with temporal convolutions and semi-supervised training
 <p align="center"><img src="https://github.com/aiegoo/VideoPose3D/blob/1afb1ca0f1237776518469876342fc8669d3f6a9/images/convolutions_anim.gif" width="50%" alt="" /></p>
 <p align="center"><img src="https://github.com/aiegoo/VideoPose3D/blob/1afb1ca0f1237776518469876342fc8669d3f6a9/images/demo_h36m.gif" width="50%" alt="" /></p>
 
+[3D human pose estimation in video with temporal convolutions and semi-supervised training](https://arxiv.org/abs/1811.11742)
 This is the implementation of the approach described in the paper:
-> Dario Pavllo, Christoph Feichtenhofer, David Grangier, and Michael Auli. [3D human pose estimation in video with temporal convolutions and semi-supervised training](https://arxiv.org/abs/1811.11742). In Conference on Computer Vision and Pattern Recognition (CVPR), 2019.
+> Dario Pavllo, Christoph Feichtenhofer, David Grangier, and Michael Auli. . In Conference on Computer Vision and Pattern Recognition (CVPR), 2019.
 
 More demos are available at https://dariopavllo.github.io/VideoPose3D
 
