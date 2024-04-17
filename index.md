@@ -23,7 +23,7 @@ youtubeID: ijVpUdWZYKU
 
 <div align="center" markdown="1" >
 
-### Hello visitor, welcome to my Github portfolio wiki
+### Hello visitor, welcome to my Github portfolio wiki / [resume](https://pf1.eggs.or.kr)
 
 <img src="http://i.imgur.com/pjmxrDI.gif" style="width:450px;">
 
