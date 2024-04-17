@@ -452,8 +452,8 @@ HTTP/1.1 200 OK
 ## code repositories
 [koreanVoiceQ&A](https://github.com/aiegoo/Korean-Voice-QnA.git)
 
-### Architectures
-![APIArchitecture](https://github.com/rifkybujana/Korean-Voice-QnA/assets/54743002/585b417a-4b40-4e6f-bfae-3a045effbb63)
+### App Architecture
+![APIArchitecture](https://github.com/aiegoo/Korean-Voice-QnA/assets/54743002/585b417a-4b40-4e6f-bfae-3a045effbb63)
 
 ## Project Deployment Documentation
 
