@@ -514,7 +514,7 @@ entries:
           output: web
 
         - title: Node-Red
-          url: /aigenerative-nodered.html
+          url: /aigenerative_nodered.html
           output: web
 
         - title: Special layout pages

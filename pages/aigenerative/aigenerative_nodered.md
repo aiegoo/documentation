@@ -1,6 +1,6 @@
 ---
 title: smartfarm "Visual Programming for IoT and API Integration"
-tags: [smartfarm]
+tags: smartfarm
 tagName: smartfarm
 last_updated: April 17, 2024
 keywords: smartfarm, Node-RED, open-source, flow-based development, visual programming, IoT, API integration, hardware devices, web-based GUI
