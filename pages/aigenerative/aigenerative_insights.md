@@ -12,7 +12,7 @@ folder: aigenerative
 ---
 
 ## sketch
-
+{{site.data.alerts.callout_primary}} The following excerpted pages explore the practical applications of GPT in diverse technological domains, including retrieval augmented generation (RAG), IoT edge computing, digital twin, and 3D human pose estimation. They delve into specific use cases and intricacies, leveraging GPT's transformer architecture and advanced natural language processing capabilities. Additionally, novel concepts like CLIF and transformer models are examined for spatial understanding enhancement. Insights into metafactory and metahuman concepts are provided, offering pragmatic perspectives on GPT-driven solutions' potential in varied technological landscapes. {{site.data.alerts.end}}
 ![generative AI overview](./images/ai/generative-AI-in-a-nutshell.png)
 {% include image.html file="./images/ai/generative-AI-in-a-nutshell.png" caption="ditto to every details in the image" %}
 {% include image.html file="ai/generative-AI-in-a-nutshell.png" caption="What and how AI is for developers in full cycle" %}
