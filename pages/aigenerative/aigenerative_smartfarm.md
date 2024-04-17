@@ -12,7 +12,7 @@ folder: aigenerative
 ---
 
 ## the setup
-
+{% include image.html file="./aiot/Smartfarm.png" caption="smartfarm components" %}
 ## resource links
 
 
