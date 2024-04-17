@@ -13,14 +13,15 @@ folder: aigenerative
 
 ## sketch
 
-![generative AI overview](./images/ai/generative-AI-in-a-nutshell.png)
+
 {% include image.html file="ai/generative-AI-in-a-nutshell.png" caption="What and how AI is for developers in full cycle" %}    
 
 ## resource links
 
 
 ### model performance eval
-![image](https://github.com/aiegoo/documentation/assets/42961200/41dea4c1-edad-4898-af84-4d2bca34efc3)
+
+{% include image.html file="./images/ai/applicationMap.png" caption="Azure Monitor Dashboard" %} 
 
 [understandingPerformance](https://humanloop.com/blog/llm-benchmarks)
 
