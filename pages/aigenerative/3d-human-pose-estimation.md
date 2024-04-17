@@ -29,6 +29,11 @@ toc: true
 ### live streaming in realtime full frames
 {% include image.html file="./ai/teaser.gif" caption="Carrying location information in full frames" %}
 
+{% include image.html file="./ai/marker1_visionai.png" caption="optical sensor'" %}
+
+{% include image.html file="./ai/marker2_visionai.png" caption="optical sensor'" %}
+{% include image.html file="./ai/marker3_visionai.png" caption="optical sensor'" %}
+{% include image.html file="./ai/marker4_visionai.png" caption="optical sensor'" %}
 
 {% include taglogic.html %}
 
