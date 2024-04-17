@@ -1,10 +1,10 @@
 ---
-title: RAG HACK
-tags: [python, django]
-tagName: ai rag
+title: RAG Enhancing Text Generation with External Knowledge
+tags: [ai rag]
+tagName: rag
 last_updated: July 14, 2021
 keywords: ai, rag, digital twin
-summary: "RAG retrieve augment generation."
+summary: "RAG combines the strengths of retrieval-based and generative models to improve the quality and relevance of generated text by leveraging external knowledge sources."
 sidebar: mydoc_sidebar
 permalink: aigenerative_rag.html
 folder: aigenerative
