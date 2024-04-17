@@ -453,7 +453,7 @@ HTTP/1.1 200 OK
 [koreanVoiceQ&A](https://github.com/aiegoo/Korean-Voice-QnA.git)
 
 ### App Architecture
-![APIArchitecture](https://github.com/aiegoo/Korean-Voice-QnA/assets/54743002/585b417a-4b40-4e6f-bfae-3a045effbb63)
+![APIArchitecture](./images/ai/apiArchitecture.png)
 
 ## Project Deployment Documentation
 
