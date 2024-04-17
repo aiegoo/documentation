@@ -1,5 +1,7 @@
 ---
 title: AI Generative Models "Creating New Content with Machine Learning"
+tags: [ai nlp models huggingface]
+tagName: ai
 keywords: ai, generative, AI generative models, machine learning, content creation, art generation, data augmentation, image generation, text generation, music generation
 summary: "AI generative models leverage machine learning techniques to create new content, such as images, text, or music, based on existing data. These models have applications in art generation, content creation, and data augmentation."
 sidebar: mydoc_sidebar
