@@ -17,5 +17,6 @@ folder: aigenerative
 {% include image.html file="./images/ai/generative-AI-in-a-nutshell.png" caption="ditto to every details in the image" %}
 {% include image.html file="ai/generative-AI-in-a-nutshell.png" caption="What and how AI is for developers in full cycle" %}
 
+
 ## resource links
 

@@ -17,6 +17,13 @@ toc: true
 ## 3d human pose estimation 
 
 [video3DPoseEstimation](https://github.com/aiegoo/VideoPose3D)
+[mediaPipe](https://github.com/googlesamples/mediapipe/tree/main/examples)
+[mediaPipe2](https://github.com/google/mediapipe)
+[msCOCO](https://paperswithcode.com/dataset/coco)
+[awsCoachingApplication](https://aws.amazon.com/blogs/machine-learning/part1-how-intel-olympic-technology-group-built-a-smart-coaching-saas-application-by-deploying-pose-estimation-models/)
+[awsAthleteTracking](https://aws.amazon.com/blogs/machine-learning/estimating-3d-pose-for-athlete-tracking-using-2d-videos-and-amazon-sagemaker-studio/)
+![MomentOfSnap](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2021/04/14/Fig-9.gif)
+
 
 ### 3D human pose estimation in video with temporal convolutions and semi-supervised training
 <p align="center"><img src="https://github.com/aiegoo/VideoPose3D/blob/1afb1ca0f1237776518469876342fc8669d3f6a9/images/convolutions_anim.gif" width="50%" alt="" /></p>
