@@ -24,12 +24,14 @@ folder: aigenerative
 
 [leaderboard](https://chat.lmsys.org/?leaderboard)
 [leaderboardDataset](https://chat.lmsys.org/?leaderboard)
+
 |---
 |
 | :-:-:
-| ![modelB])(./images/ai/modelB.png) | | ![newplotModelB](./images/ai/newplot.png "svg working fine")
+| ![modelB])(./images/ai/modelB.png) | ![newplotModelB](./images/ai/newplot.png "svg working fine") |
 |================================================================
 |
+
 [otherBoard](https://paperswithcode.com/sota/multi-task-language-understanding-on-mmlu) with a github demo
 
 [humanloop](https://humanloop.com/blog/evaluating-llm-apps)
