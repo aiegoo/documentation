@@ -1,12 +1,13 @@
 ---
-title: smartfarm "Visual Programming for IoT and API Integration"
-tags: [smartfarm]
-tagName: smartfarm
-last_updated: April 17, 2024
-keywords: smartfarm, Node-RED, open-source, flow-based development, visual programming, IoT, API integration, hardware devices, web-based GUI
-summary: "Node-RED is an open-source flow-based development tool for visual programming, ideal for IoT applications and integrating APIs. It offers a web-based GUI for connecting hardware devices, APIs, and online services with ease."
+title: Locally Managed ChatGPT: Unique Features and Capabilities
+Keywords:
+tags: [python, django]
+tagName: ai rag
+last_updated: July 14, 2021
+keywords: ai, Locally managed, ChatGPT instance, privacy, customization, performance
+summary: "This locally managed ChatGPT instance offers unique features and capabilities compared to other instances. It allows users to run ChatGPT locally, providing greater control over privacy, customization, and performance."
 sidebar: mydoc_sidebar
-permalink: aigenerative_nodered.html
+permalink: aigenerative_gpt4all.html
 folder: aigenerative
 ---
 
@@ -16,12 +17,8 @@ folder: aigenerative
 
 [ARTICLES](#articles)
 
-## Google links
-[Android Controllers](https://docs.google.com/document/d/1yc8BPKdzH_tueZydjOdAOuhmvddlkHLrSUEXCzk9o_0/edit?usp=sharing)
-
-[ADS1115Programming](https://docs.google.com/document/d/1LZ2A_nKCzzS4W1NkoqAES08L2MtaECzJnFbx3Ygv-vg/edit?usp=sharing)
-
-[nodeDevelopment](https://docs.google.com/presentation/d/1qBynD7hlLLe5XPuCTbKcasAS3--BkBiIbnG9ycpKybs/edit?usp=sharing)
+## github links
+[aiegoogle](https://github.com/aiegoo/gpt4all.git)
 
 **books**
 
@@ -421,4 +418,5 @@ $ python -m django <command> [options]
  
   
   </details>
+
 

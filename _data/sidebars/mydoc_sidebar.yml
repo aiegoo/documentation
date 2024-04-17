@@ -497,7 +497,7 @@ entries:
       output: web
 
       subfolders:
-      - title: Node-Red
+      - title: Project Scope
         output: web
         subfolderitems:
 
@@ -529,7 +529,7 @@ entries:
           url: /tag_troubleshooting.html
           output: web  
 
-    - title: General or Retrieval
+    - title: AI Projects a Big Picture
       url: /aigenerative_insights.html
       output: web
 
@@ -550,7 +550,7 @@ entries:
           url: /gpt4all.html
           output: web
 
-    - title: Generative
+    - title: LLM as a Controller
       url: /aigenerative_overview.html
       output: web, pdf
 
