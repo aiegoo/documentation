@@ -534,7 +534,7 @@ entries:
       output: web
 
       subfolders:
-      - title: AI
+      - title: AI NLP Core
         output: web
         subfolderitems:
 
