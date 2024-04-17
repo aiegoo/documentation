@@ -24,6 +24,10 @@ folder: aigenerative
 ![rag4](./images/ai/ragTree-4.png)
 ![rag5](./images/ai/ragTree-5.png)
 ![rag6](./images/ai/ragTree-6.png)
+![rag4Chatbot](./images/ai/rag4Chatbot.png)
+![hugginggpt](./images/ai/hungginggpt.png)
+![knolnowledgebasedQ&A](./images/ai/knowledgebasedQ&A.png)
+![evidenceCollection](./images/ai/evidenceCollection.png)
 
 **books**
 
