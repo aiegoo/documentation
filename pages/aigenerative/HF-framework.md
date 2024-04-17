@@ -1,4 +1,4 @@
----
+7---
 title: "Hugging Face Framework"
 tags: [generative]
 tagName: ai
@@ -453,7 +453,7 @@ HTTP/1.1 200 OK
 [koreanVoiceQ&A](https://github.com/aiegoo/Korean-Voice-QnA.git)
 
 ### App Architecture
-![APIArchitecture](./images/ai/apiArchitecture.png)
+![APIArchitecture](./images/ai/apiArchitecture.jpg)
 
 ### Swagger API page
 
