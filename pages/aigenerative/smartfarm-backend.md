@@ -65,6 +65,8 @@ formulaType 01
 
 ## Hydroponic system with two hubs
 [BOM-HOMODB](https://github.com/aiegoo/mcu-firmware/issues/5#issuecomment-1463708526)
+[googledoc](https://docs.google.com/spreadsheets/d/1WRdulFFVmN9InQkxm0iTSXRfDLUab3F8/edit#gid=991513083)
+
 ```php
                 +---------------------+
                 |      Raspberry Pi    |
