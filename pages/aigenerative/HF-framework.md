@@ -1,4 +1,4 @@
-7---
+---
 title: "Hugging Face Framework"
 tags: [generative]
 tagName: ai
