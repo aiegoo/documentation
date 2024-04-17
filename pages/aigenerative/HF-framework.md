@@ -13,12 +13,15 @@ toc: true
 {:toc}
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
+
 # Request API Documentation
 To evaluate model on Bingsu/zeroth-korean, run `evaluate.py` script, by:
 ```
 python evaluate.py
 ```
+[myHFworkspace](https://huggingface.co/aiegoo/whisper-tiny-ko) for tiny-model
 
+[app.py](https://huggingface.co/spaces/aiegoo/whisper-chatbot-ko/blob/main/app.py)
 ## Create a Chat [POST]
 
 Create a new chat conversation.
