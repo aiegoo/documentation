@@ -24,7 +24,10 @@ toc: true
 
 {% include image.html file="dt/dtLayer.png" caption="Ulsan TP project for HD Heavy Industries" %}
 
+### Asset Administration Shell
+> to improve the value chain of asset exchanges among the stakeholders
 
+{% include image.html file="dt/AASassetADminShell.png" caption="Value chain innovation"}
 
 
 {% include taglogic.html %}
