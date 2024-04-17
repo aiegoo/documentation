@@ -455,6 +455,9 @@ HTTP/1.1 200 OK
 ### App Architecture
 ![APIArchitecture](./images/ai/apiArchitecture.png)
 
+### Swagger API page
+
+
 ## Project Deployment Documentation
 
 This document provides step-by-step instructions for deploying the API and application for the project. The deployment process consists of two parts: deploying the API and deploying the application.
