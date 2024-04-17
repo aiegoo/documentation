@@ -14,6 +14,11 @@ folder: aigenerative
 
 [if any link not working, click here for details](#links)
 
+{% include image.html file="ai/hugginggpt.png" caption="LLM as a controller to leverage the external private knowledge base" %}
+
+{% include image.html file="ai/aiCoachKnowledge.png" caption="LLM as a controller to leverage the external private knowledge base" %}
+
+
 [ARTICLES](#articles)
 
 ## rag overview
