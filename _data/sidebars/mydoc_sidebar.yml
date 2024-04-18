@@ -529,7 +529,7 @@ entries:
           url: /tag_troubleshooting.html
           output: web  
 
-    - title: AI Projects a Big Picture
+    - title: GenAI a Big Picture
       url: /aigenerative_insights.html
       output: web
 
@@ -575,6 +575,10 @@ entries:
       output: web, pdf
 
     - title: Vision AI
+      url: /vision-ai.html
+      output: web, pdf
+
+    - title: AI BMS
       url: /vision-ai.html
       output: web, pdf
 
