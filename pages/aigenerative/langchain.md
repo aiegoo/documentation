@@ -17,7 +17,7 @@ toc: true
 ## langChain
 > framework for developing applications powered by language models
 
-![Diagram outlining the hierarchical organization of the LangChain framework, displaying the interconnected parts across multiple layers.](https://github.com/langchain-ai/langchain/blob/8bad536c6c5a7e7b05b4c604bac267fed2d21dda/docs/static/svg/langchain_stack_dark.svg)
+{% include image.html file="https://github.com/langchain-ai/langchain/blob/8bad536c6c5a7e7b05b4c604bac267fed2d21dda/docs/static/svg/langchain_stack_dark.svg" caption="Diagram outlining the hierarchical organization of the LangChain framework, displaying the interconnected parts across multiple layers." %}
 
 [chatPDF](www.chatpdf.com) 
 
