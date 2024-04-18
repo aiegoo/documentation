@@ -14,7 +14,8 @@ toc: true
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 
+## langChain
+> framework for developing applications powered by language models
 
 {% include taglogic.html %}
 
