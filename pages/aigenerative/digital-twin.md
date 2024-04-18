@@ -32,7 +32,7 @@ toc: true
 ### Asset Administration Shell
 > to improve the value chain of asset exchanges among the stakeholders
 
-{% include image.html file="dt/AASassetAdminShell.png" caption="Value chain innovation" %   }
+{% include image.html file="dt/AASassetAdminShell.png" caption="Value chain innovation" %}
 
 
 {% include taglogic.html %}
