@@ -23,7 +23,7 @@ toc: true
 
 {% include image.html file="dt/fusionofDT.png" caption="physical and virtual mirroring of space" %}
 
-{% include image.html file="dt/keyTechnologyinDTS.png" caption="Let's get our hands dirty like a pro with these jargons" %}
+{% include image.html file="dt/keyTechnologyinDTS.png" caption="Now is the time to get our hands dirty with these jargons" %}
 
 {% include image.html file="dt/DT_methodology.png" caption="all process required to implement DT" %}
 
