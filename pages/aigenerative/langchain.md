@@ -17,10 +17,12 @@ toc: true
 ## langChain
 > framework for developing applications powered by language models
 
-![Diagram outlining the hierarchical organization of the LangChain framework, displaying the interconnected parts across multiple layers.](https://github.com/langchain-ai/langchain/blob/8bad536c6c5a7e7b05b4c604bac267fed2d21dda/docs/static/svg/langchain_stack_dark.svg "LangChain Architecture Overview")
+![Diagram outlining the hierarchical organization of the LangChain framework, displaying the interconnected parts across multiple layers.](https://github.com/langchain-ai/langchain/blob/8bad536c6c5a7e7b05b4c604bac267fed2d21dda/docs/static/svg/langchain_stack_dark.svg)
 
 [chatPDF](www.chatpdf.com) 
-![Build and Deploy Full Stack ChatPDF Clone](ai/chatpdf.png)
+
+{% include image.html file="ai/chatpdf.png" caption="Build and Deploy Full Stack ChatPDF Clone" %}
+
 [langSmith](https://python.langchain.com/docs/get_started/introduction)
 
 {{site.data.alerts.callout_danger}}"Agentic". LangChain can allow a language model to interact with its environment by executing actions, like web search, sending an email, performing mathematical operations, or even executing Python code, LangChain's agents can determine the appropriate action to execute. {{site.data.alerts.end}}
