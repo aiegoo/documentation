@@ -17,7 +17,7 @@ toc: true
 ## dev Tools
 [openMVIDE](https://openmv.io/pages/download?gad_source=1&gclid=CjwKCAjw5v2wBhBrEiwAXDDoJaGGpXHh6wECk92xOVJMjRDeKQ6KEk6kF-bML_zCJzzrQIYijq1G8BoCLOMQAvD_BwE)
 
-[scipySignal](https://docs.scipy.org/doc/scipy/tutorial/spatial.html#qhulltutorial) for spatial similarities and distance calculation
+[scipySignal](https://docs.scipy.org/doc/scipy/tutorial/spatial.html#qhulltutorial) for spatial similarities and distance calcu
 
 ### Jargons and concepts
 
