@@ -18,7 +18,7 @@ toc: true
 > framework for developing applications powered by language models
 
 [chatPDF](www.chatpdf.com) 
-![Build and Deploy Full Stack ChatPDF Clone](https://github.com/Elliott-Chong/chatpdf-yt/assets/77007117/7fcee290-ca52-46ee-ae82-3490f505270b)
+![Build and Deploy Full Stack ChatPDF Clone](https://github.com/aiegoo/chatpdf-yt/assets/77007117/7fcee290-ca52-46ee-ae82-3490f505270b)
 [langSmith](https://python.langchain.com/docs/get_started/introduction)
 
 {{site.data.alerts.callout_danger}}"Agentic". LangChain can allow a language model to interact with its environment by executing actions, like web search, sending an email, performing mathematical operations, or even executing Python code, LangChain's agents can determine the appropriate action to execute. {{site.data.alerts.end}}
