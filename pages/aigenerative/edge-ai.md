@@ -14,9 +14,7 @@ toc: true
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 
-
-![image](https://github.com//documentation/assets/42961200/c598328e-a2b0-473e-82aa-badccf1442ef)
+## Edge AI
 
 {% include image.html file="ai/industry4.png" caption="Industry 4.0 in IOT and DT" %}
 

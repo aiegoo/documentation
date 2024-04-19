@@ -143,6 +143,9 @@ collections:
   category:
     output: true
     permalink: /category/:title
+  genai:
+    output: true
+    permalink: /genai/:title
 
 
 
