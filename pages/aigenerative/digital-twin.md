@@ -22,7 +22,7 @@ toc: true
 ### Jargons and concepts
 
 {% include image.html file="dt/fusionofDT.png" caption="physical and virtual mirroring of space" %}
-{{site.data.alerts.callout_primary}}Physical entity(PE) and virtual mirroring of it (VE) are the principle of digital twin concept.{{site.data.alerts.end}}
+{{site.data.alerts.callout_primary}}Physical entity(PE) and virtual mirroring of it (VE) are the principal elements of digital twin concept.{{site.data.alerts.end}}
 {% include image.html file="dt/keyTechnologyinDTS.png" caption="Now is the time to get our hands dirty with these jargons" %}
 
 > 5 levels of DT implementation 
