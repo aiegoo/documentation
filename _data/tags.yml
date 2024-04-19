@@ -130,3 +130,5 @@ allowed-tags:
   - generative
   - edgeai
   - huggingface
+  - gpt
+  - nlp

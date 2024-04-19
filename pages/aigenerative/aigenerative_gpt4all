@@ -1,9 +1,9 @@
 ---
 title: Locally Managed ChatGPT: Unique Features and Capabilities
 Keywords:
-tags: [python, django]
-tagName: ai rag
-last_updated: July 14, 2021
+tags: [gpt ai nlp]
+tagName: generative
+last_updated: April 19, 2024
 keywords: ai, Locally managed, ChatGPT instance, privacy, customization, performance
 summary: "This locally managed ChatGPT instance offers unique features and capabilities compared to other instances. It allows users to run ChatGPT locally, providing greater control over privacy, customization, and performance."
 sidebar: mydoc_sidebar
