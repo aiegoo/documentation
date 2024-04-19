@@ -26,6 +26,8 @@ folder: aigenerative
 | Personalization and customized content            | Generative AI, Transformers (OpenAI GPT, Google BERT), Hugging Face, Custom Datasets       |
 | Technological advancements                             | Social Media Platforms (Facebook, Instagram, TikTok), Generative AI, Voice Cloning Tools, Background Tools (Movio, Pexels), Video Editing Software (Runway Gen2)  |
 
+{% include tony.html content="With the combination of advanced AI capabilities from OpenAI and the expansive reach of Google's video platforms, Gen X could serve as a catalyst for further innovation and adoption in video content creation!! Sora Luminiere GenX" %}
+
 ## resource links
 
 
