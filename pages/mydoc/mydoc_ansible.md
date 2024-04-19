@@ -33,14 +33,14 @@ We need to configure three kinds of machines
 2. Deployment Servers (X, Y, Z, etc.)
 3. Development Machines (A, B, etc.)
 
-on Ubuntu server run (sudo apt update $$ sudo apt install software-properties-common $$ sudo apt-add-repository --yes --update ppa:ansible/ansible $$ sudo apt install ansible)
+on Ubuntu server run (`sudo apt update $$ sudo apt install software-properties-common $$ sudo apt-add-repository --yes --update ppa:ansible/ansible $$ sudo apt install ansible`)
 where M, X, Y, Z, A, B, etc. refer to the IP addresses of these machines respectively.
 
 ### 🏁 on master, create a repo ☄ your contents (배포할 내용을 저장) 
-:one: cd ~/repos $$ git clone --bare
+:one: `cd ~/repos $$ git clone --bare`
 
 ### on master, clone the playbook repo from your private repository (tonyrhee/ansible) 앤서블 리포
-:two: cd ~/ $$ git clone git@github.com:tonyrhee/ansible  $$ cd ansible
+:two: `cd ~/ $$ git clone git@github.com:tonyrhee/ansible  $$ cd ansible`
 
 ### on master, configure yml and ini files to setup access, server ips etc.
 :three:
@@ -50,7 +50,7 @@ where M, X, Y, Z, A, B, etc. refer to the IP addresses of these machines respect
 4. [post-receive](https://github.com/tonyrhee/ansible/blob/master/post-receive)
 
 ### from master, run ssh copy id to target servers (slaves)
-:four: ssh-copy-id -i ~/.ssh/mykey user@host
+:four: `ssh-copy-id -i ~/.ssh/mykey user@host`
 
 ### make sure all servers are connected on ssh creds. That's all!!
 ```
