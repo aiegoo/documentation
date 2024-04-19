@@ -16,6 +16,16 @@ folder: aigenerative
 
 {% include image.html file="ai/generative-AI-in-a-nutshell.png" caption="What and how AI is for developers in full cycle" %}    
 
+{{site.data.alerts.callout_danger}}Video short-form production{{site.data.alerts.end}}
+
+| Content                                            | Technology Stacks                                                                         |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------|
+| Short-form video production with generative AI tools | Generative AI, Video Editing Software, Transformers (OpenAI GPT, Google BERT), Hugging Face |
+| Changes in content consumption patterns               | Social Media Platforms (Facebook, Instagram, TikTok)                                      |
+| Production speed and efficiency                        | Generative AI, Video Editing Software, Transformers (OpenAI GPT, Google BERT), Hugging Face |
+| Personalization and customized content            | Generative AI, Transformers (OpenAI GPT, Google BERT), Hugging Face, Custom Datasets       |
+| Technological advancements                             | Social Media Platforms (Facebook, Instagram, TikTok), Generative AI, Voice Cloning Tools, Background Tools (Movio, Pexels), Video Editing Software (Runway Gen2)  |
+
 ## resource links
 
 
