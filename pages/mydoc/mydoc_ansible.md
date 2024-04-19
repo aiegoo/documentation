@@ -208,4 +208,7 @@ In 'server-update-ansible', there's code which runs an ansible playbook.
 This ansible playbook has some configurations as done in 2.2.3.
 he playbook connects with each of the deployment servers, say 'X', and pulls the code from the bare git repo.
 
-``
+{% include image.html file="freepbx/eventDriven1.png" caption="no polling or webhook, insteead use eventDriven microservices" %}
+
+{% include image.html file="freepbx/eventDriven2.png" caption="no polling or webhook" %}
+{% include image.html file="freepbx/eventDriven3.png" caption="eventDriven microservices" %}
