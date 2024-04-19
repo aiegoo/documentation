@@ -19,7 +19,7 @@ I have worked on this a couple of months as a part of deploy automation. Ansible
 # Pilot test on the automation prototype 
 > (collection of yml ini files and prerequisites) - 설치 및 배포 자동화 프로그램
 
-{% include image.html file="https://github.com/aiegoo/ansible/blob/master/images/webHook.png" caption="webhook polling on web server" %}
+{% include image.html file="freepbx/webHook.png" caption="webhook polling on web server" %}
 
 ## 특징
 1. 깃의 모든 기능을 사용할 수 있다.
