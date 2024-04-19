@@ -15,8 +15,11 @@ folder: mydoc
 
 
 I have worked on this a couple of months as a part of deploy automation. Ansible is powerful as in itself is a network language affiliated with corporations such as Cisco, Amazon, Openstack, Azure and other paramount vendors in equal standing. 
+
 # Pilot test on the automation prototype 
 > (collection of yml ini files and prerequisites) - 설치 및 배포 자동화 프로그램
+
+{% include image.html file="https://github.com/aiegoo/ansible/blob/master/images/webHook.png" caption="webhook polling on web server" %}
 
 ## 특징
 1. 깃의 모든 기능을 사용할 수 있다.
@@ -73,7 +76,7 @@ Above script will copy the june2 branch of the repository, which contains readme
 
 <hr>
 <hr>
-# 1. Introduction
+## 1. Introduction
 
 We need to configure three kinds of machines -
 
@@ -83,18 +86,18 @@ We need to configure three kinds of machines -
 
 where M, X, Y, Z, A, B, etc. refer to the IP addresses of these machines respectively.
 
-## 1.1 Architecture
+### 1.1 Architecture
 This is the architecture diagram which will be used for reference.
 ![Architecture](https://github.com/aiegoo/ansible/blob/june2/Architecture.jpg?raw=true "Architecture")
 
-# 2. Configuring Master Server (M)
+## 2. Configuring Master Server (M)
 On the Master Server, four things need to be set up which are -
 1. A [bare git repository](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server "bare git repository") (G) that hosts the code and acts like github.com
 2. Ansible control node configurations
 3. Passwordless SSH into each of the development servers (X, Y, Z, etc.)
 4. post-receive hook on the bare repository (G) created in step 1
 
-## 2.1 Setting up the bare git repository
+### 2.1 Setting up the bare git repository
 [This guide](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server "This guide") explains the process of creating a bare git repository. Follow this or any other guide to set up your bare repository on this server. It may or may not have shared file server facility as explained [here](https://mindchasers.com/dev/git-bare "here"). Just create a basic bare git repository which you can push to from one of the development machines (A, B, etc.).
 You can either create a new bare repository -
 ```bash
@@ -105,14 +108,14 @@ or clone an existing repository in bare mode -
 git clone --bare https://github.com/example/example.git
 ```
 
-## 2.2 Configuring the Ansible control node
+### 2.2 Configuring the Ansible control node
 The Master server (M) needs to be configured for use as an Ansible control node.
 For this, follow the steps given below -
 
-### 2.2.1 Install Ansible
+#### 2.2.1 Install Ansible
 For installing Ansible on (M) follow the steps given [here](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html "here").
 
-### 2.2.2 Clone this repository
+#### 2.2.2 Clone this repository
 This repository contains the code for ansible playbooks in the branch develop-ansible. Clone it and checkout the branch develop-ansible.
 The expected path where this repository should be cloned on the master server is `/root/`
 So, after cloning, the contents of this repository should be inside `/root/ansible/` folder. Following is a set of commands you might require -
@@ -123,7 +126,7 @@ cd ansible
 git checkout develop-ansible
 ```
 
-### 2.2.3 Configure the necessary variables
+#### 2.2.3 Configure the necessary variables
 In the cloned repository, see config variables in the file playbooks/roles/git_update/defaults/main.yml
 You can edit these variables in the editor of your choice. Assuming you use vim, you can refer to this [quick cheatsheet](https://vim.rtorr.com/ "quick cheatsheet") of vim commands. Here are some commands you might need -
 
@@ -173,7 +176,7 @@ The username that should be used in your SSH connection to the deployment server
 ###### ansible_ssh_private_key
 The path of the SSH key to be used for this connection on the Master server (M). If you login with 'root' user, this should be '/root/.ssh/id_rsa'
 
-### 2.3 Passwordless SSH
+#### 2.3 Passwordless SSH
 Make sure the servers you add here with ansible_connection=ssh allow passwordless ssh connection from the Master server (M)
 To enable this, follow [this guide](https://askubuntu.com/questions/46930/how-can-i-set-up-password-less-ssh-login "this guide") for each of the deployment servers you add.
 Basically this boils down to running two commands - 
@@ -181,7 +184,7 @@ Basically this boils down to running two commands -
     ssh-keygen (only the first time)
     ssh-copy-id user@ssh-host (for each deployment server)
 ```
-### 2.4 Configuring the post-receive hook
+#### 2.4 Configuring the post-receive hook
 On this bare repo (G) we need to configure the post-receive hook so that it runs ansible when something is pushed to it.
 The 'post-receive' hook file is provided in this repository. Copy it to the hooks folder inside your bare git repository. 
 ```bash
@@ -190,15 +193,15 @@ cp /root/ansible/post-receive /path/to/your/bare/repo.git/hooks/
 Make sure it is executable by running
 `chmod +x post-receive`
 
-# 3. Configuring the deployment servers
+## 3. Configuring the deployment servers
 Next, we need to setup the deployment servers that we have listed in 2.2.3.5
 
 For each deployment server (X, Y, Z, etc.), the step 2.3 Passwordless SSH access needs to be performed for connection to the Master server (M). Basically, each deployment machine needs to be able to connect without a password to the Master server (M) as it needs to pull the code from the bare git repo (G) from there.
 
-# 4. Configure the development machines
+## 4. Configure the development machines
 In each development machine, make sure you have sufficient access to push to the bare git repository hosted at the Master server (M)
 
-# 5. How it all works?
+## 5. How it all works?
 Refer to the Architecture diagram, when you push something from, say 'A' to 'M', the file post-receive inside the bare repository is triggered.
 This file runs the script 'server-update-ansible'.
 In 'server-update-ansible', there's code which runs an ansible playbook.
