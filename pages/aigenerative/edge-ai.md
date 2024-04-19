@@ -16,7 +16,7 @@ toc: true
 
 ## 
 
-![image](https://github.com/aiegoo/documentation/assets/42961200/c598328e-a2b0-473e-82aa-badccf1442ef)
+![image](https://github.com//documentation/assets/42961200/c598328e-a2b0-473e-82aa-badccf1442ef)
 
 {% include image.html file="./images/ai/industry4.png" caption="Industry 4.0 in IOT and DT" %}
 
