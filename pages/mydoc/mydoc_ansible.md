@@ -2,16 +2,61 @@
 title: contents deploy automation
 tags: [getting_started, drone, git, setup]
 last_updated: July 10, 2021
-keywords: API, content API, UI text, inline help, context-sensitive help, popovers, tooltips
-summary: "summary."
+keywords: ansible, webhook, serverupdate, automation
+summary: "Pilot test on the automation prototype."
 sidebar: mydoc_sidebar
 permalink: mydoc_ansible.html
 folder: mydoc
 ---
 
 ## Ansible
+[github](https://github.com/tonyrhee/ansible/blob/master/playbooks/server-update-ansible) check tonyrhee 
+[instructionWiki](https://github.com/tonyrhee/ansible/wiki#make-sure-all-servers-are-connected-on-ssh-creds-thats-all)
+
 
 I have worked on this a couple of months as a part of deploy automation. Ansible is powerful as in itself is a network language affiliated with corporations such as Cisco, Amazon, Openstack, Azure and other paramount vendors in equal standing. 
+# Pilot test on the automation prototype 
+> (collection of yml ini files and prerequisites) - 설치 및 배포 자동화 프로그램
+
+## 특징
+1. 깃의 모든 기능을 사용할 수 있다.
+2. 깃 서버는 --배어 플래그로 이닛한다.
+3. 서버간 ssh 통신과 id_rsa.pub을 모두 공유하여 상통한 상태여야 한다.
+4. 개발자, 마스터서버, 슬레이브서버 설정을 한다. - 아래 내용참고
+5. playbook 설정을 하고 실행문을 실행한다. (ini / yml 파일들)
+
+## prior requisite settings on 
+
+We need to configure three kinds of machines 
+
+1. Master Server (M)
+2. Deployment Servers (X, Y, Z, etc.)
+3. Development Machines (A, B, etc.)
+
+on Ubuntu server run (sudo apt update $$ sudo apt install software-properties-common $$ sudo apt-add-repository --yes --update ppa:ansible/ansible $$ sudo apt install ansible)
+where M, X, Y, Z, A, B, etc. refer to the IP addresses of these machines respectively.
+
+### 🏁 on master, create a repo ☄ your contents (배포할 내용을 저장) 
+:one: cd ~/repos $$ git clone --bare
+
+### on master, clone the playbook repo from your private repository (tonyrhee/ansible) 앤서블 리포
+:two: cd ~/ $$ git clone git@github.com:tonyrhee/ansible  $$ cd ansible
+
+### on master, configure yml and ini files to setup access, server ips etc.
+:three:
+1. [ini](https://github.com/tonyrhee/ansible/blob/master/playbooks/inventory.ini)
+2. [yml](https://github.com/tonyrhee/ansible/blob/master/playbooks/roles/git_update/defaults/main.yml)
+3. [실행문](https://github.com/tonyrhee/ansible/blob/master/playbooks/server-update-ansible)
+4. [post-receive](https://github.com/tonyrhee/ansible/blob/master/post-receive)
+
+### from master, run ssh copy id to target servers (slaves)
+:four: ssh-copy-id -i ~/.ssh/mykey user@host
+
+### make sure all servers are connected on ssh creds. That's all!!
+```
+./server-update-ansible
+```
+
 ### github repo
 -[ansible](https://github.com/aiegoo/ansible)
 
