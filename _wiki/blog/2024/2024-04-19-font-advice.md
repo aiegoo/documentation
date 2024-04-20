@@ -22,7 +22,21 @@ updated: 2024-04-19 11:10
 {:toc}
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
+# css tag
+```css
+/* Import Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css');
 
+/* Import Gmarket Sans */
+@font-face {
+  font-family: 'Gmarket Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Gmarket+Sans:wght@400;700&display=swap');
+  /* You can also specify font weights and styles if needed */
+}
+
+/* Other styles for your website */
+font-family: 'Gmarket Sans', sans-serif; /* Adding Korean font to tag/class or ID*/
+```
 ## 1. 프리텐다드 (Pretendard)
 첫 번째로 추천드릴 폰트는 "프리텐다드"입니다. 프리텐다드 폰트는 제가 가장 좋아하는 폰트입니다. 디자인 작업을 하다보면 "폰트가 조금 더 얇았으면 좋겠다" 혹은 "조금 더 두껍게 설정하고 싶다"고 생각한 적이 있으신가요? 이 폰트는 9가지의 굵기를 설정할 수 있어서 디자인 작업에 알맞은 굵기로 설정할 수 있습니다. 프리텐다드 폰트는 2021년에 최초로 출시되었는데, 이 폰트를 사용하기 전에는 폰트 굵기에 대해 많은 아쉬움을 가졌습니다. 그러나 프리텐다드 폰트가 출시된 이후로는 그런 걱정이 사라졌습니다. 저는 이 폰트를 가장 우선적으로 추천드립니다.
 {% include image.html file="./ai/pretendard.svg" caption="맑은 고딕과 나눔고딕을 대신해 본문용 무료 글꼴의 대명사로 쓰이고 있는 Noto Sans KR" %}

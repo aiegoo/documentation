@@ -11,6 +11,14 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Import Gmarket Sans */
+@font-face {
+  font-family: 'Gmarket Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Gmarket+Sans:wght@400;700&display=swap');
+  /* You can also specify font weights and styles if needed */
+}
+/* Other styles for your website */
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
