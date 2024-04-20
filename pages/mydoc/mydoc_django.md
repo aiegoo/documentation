@@ -33,7 +33,7 @@ postgresql=#ALTER USER yourusername WITH PASSWORD
 
 - checking postgresql service
 
-``shell
+```shell
 sudo service postgresql status
 sudo service postgresql start
 sudo netstat -plunt |grep postgres
