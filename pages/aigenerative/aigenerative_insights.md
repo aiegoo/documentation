@@ -22,3 +22,17 @@ folder: aigenerative
 
 ## resource links
 
+## Low-Rank Adaptation (LoRA): Efficient Adaptation of Pre-trained Language Models
+
+**Summary:**
+LoRA addresses the challenge of adapting large pre-trained language models, such as GPT-3 175B, to specific tasks or domains without the need for full fine-tuning, which can be prohibitively expensive. By freezing the pre-trained model weights and introducing trainable rank decomposition matrices into each layer of the Transformer architecture, LoRA significantly reduces the number of trainable parameters for downstream tasks.
+
+**Key Points:**
+1. LoRA freezes pre-trained model weights and introduces trainable rank decomposition matrices to reduce the number of trainable parameters.
+2. Compared to full fine-tuning, LoRA reduces the number of trainable parameters by 10,000 times and GPU memory requirement by 3 times.
+3. Despite having fewer trainable parameters, LoRA achieves comparable or better model quality than fine-tuning on various language models such as RoBERTa, DeBERTa, GPT-2, and GPT-3.
+4. LoRA demonstrates higher training throughput and imposes no additional inference latency compared to adapter-based approaches.
+5. An empirical investigation into rank-deficiency in language model adaptation supports the efficacy of LoRA.
+6. The authors provide a package for integrating LoRA with PyTorch models and release implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2.
+
+**Keywords:** Natural Language Processing, Pre-trained Language Models, Low-Rank Adaptation, Transformer Architecture, Fine-tuning, Model Efficiency, PyTorch.
