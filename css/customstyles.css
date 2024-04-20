@@ -1,3 +1,12 @@
+
+/* Import Gmarket Sans */
+@font-face {
+    font-family: 'Gmarket Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Gmarket+Sans:wght@400;700&display=swap');
+    /* You can also specify font weights and styles if needed */
+  }
+  /* Other styles for your website */
+
 @font-face {
     font-family: 'LAB디지털';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
@@ -1376,7 +1385,8 @@ div.results {
 }
 
 .post-link {
-    font-size: 22px;
+    font-size: 15px;
+    font-family: 'Gmarket Sans', sans-serif; /* Adding Korean font */
 }
 .post-link.leaguegothic {
     font-family: "LeagueGothicRegular", "League Gothic", "NanumBarunpen";
