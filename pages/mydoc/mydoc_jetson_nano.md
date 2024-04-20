@@ -1,9 +1,10 @@
 ---
-title: Jetson Nano
-tags: [single_sourcing]
-keywords: aiot, embedded
+title:  Exploring Jetson Nano in AIoT Applications
+tags: [aiot, ai, visionai]
+tagName: aiot
+keywords: aiot, embedded, Jetson Nano, Edge AI, TensorFlow, PyTorch, ONNX, real-time video analytics, smart surveillance, autonomous navigation, robotics, industrial IoT, predictive maintenance
 last_updated: July 20, 2021
-summary: "You can reuse chunks of content by storing these files in the includes folder. You then choose to include the file where you need it. This works similar to conref in DITA, except that you can include the file in any content type."
+summary: "Jetson Nano serves as a potent platform for Edge AI applications, supporting popular frameworks like TensorFlow, PyTorch, and ONNX. Its compact form factor and GPU-accelerated computing make it ideal for deploying AI models directly on edge devices. Notable use cases include real-time video analytics for smart surveillance, autonomous navigation in robotics, and predictive maintenance in industrial IoT. Jetson Nano enables developers to leverage the power of AI at the edge, driving innovation in various industries with efficient and intelligent edge computing solutions."
 sidebar: mydoc_sidebar
 permalink: mydoc_jetson_nano.html
 folder: mydoc

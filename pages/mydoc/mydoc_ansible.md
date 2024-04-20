@@ -1,7 +1,7 @@
 ---
 title: contents deploy automation
-tags: [getting_started, drone, git, setup]
-last_updated: July 10, 2021
+tags: [ansible, drone, git, setup]
+last_updated: April 20, 2024
 keywords: ansible, webhook, serverupdate, automation
 summary: "Pilot test on the automation prototype."
 sidebar: mydoc_sidebar
