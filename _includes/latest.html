@@ -2,7 +2,7 @@
 
 {% assign documents = site.wiki | reverse %}
 <div id="app">
-    <H3 class="indent">최근 변경된 wiki 문서</H3>
+    <H3 class="indent">최근 생성된 wiki 문서</H3>
     <ul class="post-list" list-style-type="none">
 {% for pg in documents limit: 5 | sort: "updated" %}{% if pg.public != false and pg.title != 'wiki' %}
         <li>
