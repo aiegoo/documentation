@@ -1,5 +1,25 @@
 
+/* Import Pretendard */
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/fonts/web/static/woff2/Pretendard-Regular.woff2') format('woff2'),
+         url('/fonts/web/static/woff2/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('/fonts/web/static/woff2/Pretendard-Bold.woff2') format('woff2'),
+         url('/fonts/web/static/woff/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* You can add more @font-face rules for different font weights and styles as needed */
+  
 /* Import Gmarket Sans */
+
 @font-face {
     font-family: 'Gmarket Sans';
     src: url('https://fonts.googleapis.com/css2?family=Gmarket+Sans:wght@400;700&display=swap');
@@ -194,9 +214,10 @@ caption {
 }
 th {
     text-align: left;
+    font-family: "Pretendard", sans-serif;
 }
 table {
-    max-width: 90%;
+    max-width: 100%;
     margin-bottom: 20px;
     border: 1px solid #dedede;
 }
