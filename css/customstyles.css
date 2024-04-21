@@ -300,7 +300,7 @@ p.external a {
 #definition-box-container div a.active {
     font-weight: bold;
 }
-p.post-meta {font-size: 80%; color: #541c1c;}
+p.post-meta {font-size: 80%; color:  #828282;}
 
 .entry-date{font-size:14px;font-size:0.875rem;line-height:1.71429;margin-bottom:0;text-transform:uppercase;}
 
@@ -1421,7 +1421,7 @@ div.results {
 
 .post-meta {
     font-size: 14px;
-    color: #828282;
+    color: #541c1c;
 }
 
 .post-link {
