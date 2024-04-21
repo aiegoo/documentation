@@ -1,4 +1,6 @@
 
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
 /* Import KoPub font */
 @font-face {
     font-family: 'KoPub Batang';
@@ -51,8 +53,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
 /* 눈누 링크: https://noonnu.cc/font_page/42 나눔바른펜 */
 @font-face {
