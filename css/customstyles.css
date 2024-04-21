@@ -1,5 +1,23 @@
 
+/* Import KoPub font */
+@font-face {
+    font-family: 'KoPub Batang';
+    src: url('/fonts/KoPubBatang_ProBold.otf') format("opentype"),
+         url('/fonts/KoPubBatang_ProLight.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* Import s-core dream font */
+
+@font-face {
+    font-family: 'SCDream';
+    src: url('/fonts/SCDream1.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* Import Pretendard */
+
 @font-face {
     font-family: 'Pretendard';
     src: url('/fonts/web/static/woff2/Pretendard-Regular.woff2') format('woff2'),
