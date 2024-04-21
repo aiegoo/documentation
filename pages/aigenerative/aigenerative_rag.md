@@ -30,13 +30,13 @@ folder: aigenerative
 ![rag5](./images/ai/ragTree-5.png)
 ![rag6](./images/ai/ragTree-6.png)
 ![rag4Chatbot](./images/ai/rag4Chatbot.png)
-![hugginggpt](./images/ai/hungginggpt.png)
-![knolnowledgebasedQ&A](./images/ai/knowledgebasedQ&A.png)
+{% include image.html file="ai/knowledgebasedQ&A.png" caption="knowledge based Q&A" %}
 ![evidenceCollection](./images/ai/evidenceCollection.png)
 
 **books**
 
 <style>
+.customtable {width: 100%;}
 .customtable tr:nth-child(odd) { background-color: #0087ff6e; }
 .customtable td:nth-child(2) { color: white; background: #0087ff6e; }
 .customtable tr:nth-child(3) { color: black; background: yellow; }
