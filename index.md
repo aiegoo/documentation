@@ -177,9 +177,9 @@ youtubeID: ijVpUdWZYKU
 
 </div>
 
-{% include note.html content="Wow, thanks for reading. I have another blog on technical writing here called <a alt='technical writing blog' href='https://aiegoo.github.io/apidoc'>I'd Rather Be Writing API</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='aiegoo.github.io/resume'>to give me a 5 star rating. My learning motto: Expose and immerse; my coding motto: Divide and conquer!</a>."  %}
+{% include note.html content="Wow, thanks for reading. I have another blog on technical writing here called <a alt='technical writing blog' href='https://aiegoo.github.io/apidoc'>I'd Rather Be Writing API</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='aiegoo.github.io/resume'>to give me a 5 star rating. ***My learning motto: Expose and immerse***; my coding motto: Divide and conquer!</a>."  %}
 
-### I belive in time-management
+### I believe in time-management
 
 |---
 |

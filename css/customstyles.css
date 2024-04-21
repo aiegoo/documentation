@@ -40,11 +40,12 @@
   
 /* Import Gmarket Sans */
 
-@font-face {
-    font-family: 'Gmarket Sans';
-    src: url('https://fonts.googleapis.com/css2?family=Gmarket+Sans:wght@400;700&display=swap');
-    /* You can also specify font weights and styles if needed */
-  }
+  @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
   /* Other styles for your website */
 
 @font-face {
@@ -299,7 +300,7 @@ p.external a {
 #definition-box-container div a.active {
     font-weight: bold;
 }
-p.post-meta {font-size: 80%; color: #777;}
+p.post-meta {font-size: 80%; color: #541c1c;}
 
 .entry-date{font-size:14px;font-size:0.875rem;line-height:1.71429;margin-bottom:0;text-transform:uppercase;}
 
