@@ -37,6 +37,8 @@ if [ -d "${TAGDIR}" ]; then
     read categories
     echo "keywords?"
     read keywords
+    echo "blog contents"
+    read 'blogcontents'
   # Cannot indent here string.
 cat <<EOF >"${TAGDIR}/${fileName}th.md"
 ---
@@ -61,7 +63,7 @@ updated: ${update}
 * TOC
 {:toc}
 
-## 
+${blogcontents}
 
 {% include taglogic.html %}
 
