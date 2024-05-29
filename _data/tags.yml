@@ -132,3 +132,4 @@ allowed-tags:
   - huggingface
   - gpt
   - nlp
+  - fpga
