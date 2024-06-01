@@ -1,3 +1,14 @@
+LLM: Large Language Model, a type of artificial intelligence model designed to understand and generate human-like text based on large datasets.
+API: Application Programming Interface, a set of rules and definitions that allows different software entities to communicate with each other.
+Retriever: A system or component that fetches relevant data or documents based on a given query.
+Mistral 7B: A specific large language model with 7 billion parameters, known for its capabilities in natural language processing tasks.
+Ollama: A platform designed to facilitate the deployment and interaction with large language models, offering tools and infrastructure for managing these models.
+Vector Store: A storage mechanism for embedding vectors which are numerical representations of text data, used for similarity search and retrieval in machine learning models.
+Query Engine: A component or system that processes and responds to user queries by retrieving relevant data or documents from a database or index.
+Flask: A lightweight WSGI web application framework in Python, used for creating web applications and APIs.
+GPT: Generative Pre-trained Transformer, a type of large language model developed by OpenAI, known for its capabilities in generating human-like text.
+Hugging Face: A company that provides tools and libraries for natural language processing, including the `transformers` library which hosts various pre-trained language models.
+
 elephant: "This is a sample definition."
 
 baseball: "Baseball is considered America's pasttime sport, though that may be more of a historical term than a current one. There's a lot more excitement about football than baseball. A baseball game is somewhat of a snooze to watch, for the most part."
