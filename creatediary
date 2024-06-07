@@ -48,7 +48,7 @@ name: "${diary}"
 tags: [$tag]
 permalink: ${fileName}th.html
 sidebar: other_sidebar
-folder: 2023
+folder: 2024
 collection: wiki
 categories: ${categories}
 keywords: "${keywords}"
