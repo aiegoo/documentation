@@ -184,8 +184,8 @@ UconSmith는 AI 통합 및 배포를 위한 여러 계층으로 구성되어 있
 2. **유사성 검색:** 재구성된 질문을 사용하여 관련 정보 찾기.
 
 이 접근 방식은 AI 모델이 잘 형성된 질문을 받도록 하여 응답의 품질을 향상시킵니다.
-
-
+{% include image.html file="llm/soilMaturity.png" caption="highlevel overview of S-oil DT maturity level" %}
+{% include image.html file="llm/ucongptRoadmap.png" caption="Component level overview" %}
 {% include taglogic.html %}
 
 {% include links.html %}
