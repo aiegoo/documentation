@@ -184,6 +184,87 @@ UconSmith는 AI 통합 및 배포를 위한 여러 계층으로 구성되어 있
 2. **유사성 검색:** 재구성된 질문을 사용하여 관련 정보 찾기.
 
 이 접근 방식은 AI 모델이 잘 형성된 질문을 받도록 하여 응답의 품질을 향상시킵니다.
+
+
+## Key Concepts applicable to the bottom for the onboard expression chains;
+#### Parallelization
+Parallelization involves dividing a task into multiple sub-tasks that can be processed simultaneously, leveraging multi-core processors or multiple computing units. This is crucial for high-performance computing and is widely used in:
+
+- **Voice Classification:** Speeding up feature extraction and processing by parallelizing different segments of audio data.
+- **Image Classification:** Concurrently processing different parts of an image or multiple images.
+
+**Core Technology:** Multithreading, SIMD (Single Instruction, Multiple Data) on FPGA, and GPU-based parallel processing.
+
+#### Fallback
+Fallback mechanisms ensure that when a primary process or system fails, an alternative takes over to maintain functionality. This is essential for reliability in edge AI applications.
+
+- **Voice Classification:** If the primary model fails to classify, a simpler, more robust model can provide a less precise but still valuable output.
+- **Image Classification:** Ensuring that a backup classifier steps in if the main one encounters errors.
+
+**Core Technology:** Redundant systems, failover clustering, and robust model deployment strategies.
+
+#### Streaming
+Streaming refers to the continuous processing of data as it is received, rather than waiting for the entire dataset. This is particularly useful in real-time applications.
+
+- **Voice Classification:** Real-time processing of audio streams for instant classification and response.
+- **Image Classification:** Processing video frames on-the-fly to classify objects or activities in real-time.
+
+**Core Technology:** Real-time processing frameworks, low-latency streaming protocols (e.g., WebRTC).
+
+#### Batching
+Batching involves processing data in chunks or batches to improve computational efficiency and throughput. This is opposed to processing one data point at a time.
+
+- **Voice Classification:** Aggregating multiple audio samples to process them together, improving GPU/FPGA utilization.
+- **Image Classification:** Grouping images for bulk processing, which can enhance throughput and reduce overhead.
+
+**Core Technology:** Batch processing systems, micro-batching in stream processing frameworks.
+
+#### Async (Asynchronous Processing)
+Asynchronous processing allows tasks to be executed non-blocking, meaning tasks can run in the background while other processes continue.
+
+- **Voice Classification:** Handling multiple audio inputs concurrently without waiting for each to complete before starting the next.
+- **Image Classification:** Processing images asynchronously to handle multiple requests simultaneously.
+
+**Core Technology:** Asynchronous APIs, event-driven programming, non-blocking I/O.
+
+#### Tracing
+Tracing involves monitoring and recording the execution of a program to understand its behavior, identify bottlenecks, and debug issues.
+
+- **Voice Classification:** Monitoring the pipeline to identify latency issues or errors in real-time processing.
+- **Image Classification:** Tracking the execution flow to optimize performance and debug classification models.
+
+**Core Technology:** Distributed tracing systems (e.g., Jaeger, Zipkin), performance monitoring tools.
+
+### Application for Voice/Image Classification at the Edge:
+
+1. **Parallelization:** Can be implemented using FPGA's parallel processing capabilities or multi-core CPUs/GPUs. For instance, Xilinx's Vitis AI can leverage FPGA for concurrent processing of different neural network layers or data segments, making real-time voice or image classification feasible at the edge.
+
+2. **Fallback:** Ensuring robustness in edge devices by implementing fallback mechanisms. If the primary AI model fails due to limited compute resources, a simpler model can take over. This can be implemented using frameworks like TensorFlow Lite, which supports model fallback mechanisms.
+
+3. **Streaming:** Utilizing real-time processing frameworks such as GStreamer for continuous audio and video data processing. This is essential for applications requiring instant feedback, such as voice-activated assistants or real-time surveillance systems.
+
+4. **Batching:** Employing batch processing techniques in frameworks like Apache Kafka Streams to handle bursts of data efficiently, making it suitable for scenarios where large volumes of audio or image data are processed periodically.
+
+5. **Async:** Using asynchronous processing libraries in Python (e.g., asyncio) or Node.js for handling multiple classification requests simultaneously without blocking the main application flow. This enhances the responsiveness of edge AI systems.
+
+6. **Tracing:** Implementing distributed tracing tools like Jaeger to monitor and optimize the performance of AI models deployed on edge devices. This is crucial for maintaining efficient operation and quickly identifying and resolving issues.
+
+### Summary in Korean:
+
+**병렬화:** 여러 작업을 동시에 처리하여 성능을 향상. 음성 및 이미지 분류에서 데이터를 병렬로 처리하여 빠른 응답 시간 제공.
+
+**폴백:** 주요 시스템이 실패할 때 대체 시스템이 기능을 유지하도록 함. 음성 및 이미지 분류에서 주요 모델이 실패할 경우 백업 모델이 역할을 수행.
+
+**스트리밍:** 데이터를 수신하면서 실시간으로 처리. 음성 스트림의 실시간 분류 및 영상 프레임의 즉각 처리에 유용.
+
+**배칭:** 데이터를 일괄로 처리하여 효율성을 높임. 여러 음성 샘플이나 이미지를 한 번에 처리하여 처리량 증가.
+
+**비동기 처리:** 비차단 방식으로 작업을 실행하여 동시 처리 가능. 여러 음성 입력이나 이미지 요청을 동시에 처리.
+
+**추적:** 프로그램 실행을 모니터링하고 기록하여 성능 최적화 및 문제 디버깅에 도움. 실시간 처리 파이프라인의 병목 현상 식별.
+
+이러한 기술과 방법론을 통해 엣지에서의 음성 및 이미지 분류 응용 프로그램을 최적화할 수 있습니다.
+
 {% include image.html file="llm/soilMaturity.png" caption="highlevel overview of S-oil DT maturity level" %}
 {% include image.html file="llm/ucongptRoadmap.png" caption="Component level overview" %}
 {% include taglogic.html %}
