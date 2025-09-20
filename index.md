@@ -6,7 +6,7 @@ hide: false
 toc: false
 sidebar: mydoc_sidebar
 permalink: index.html
-summary: My recent projects are leveraging generative AI across various domains, yielding significant achievements. These encompass Digital Twin, Voice-to-Command, RAG (Retrieval-Augmented Generation), TTL STT (Text-to-Listening Speech), Metaverse, smartFarm and Edge Computing, among others.
+summary: My recent projects are leveraging generative AI across various domains, yielding significant achievements. These encompass Digital Twin, Voice-to-Command, RAG (Retrieval-Augmented Generation), TTL STT (Text-to-Listening Speech), Metaverse, smartFarm and Edge Computing, and quantum security using entanglement theory, among others.
 youtubeID: ijVpUdWZYKU
 ---
 
