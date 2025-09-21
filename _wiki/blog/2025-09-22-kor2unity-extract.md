@@ -2,7 +2,7 @@
 layout: post
 title: ""Voice Platform — Extract from Kor2Unity summary"
 name: "kor2unity-extract"
-tags: [voice-platform ai likelion]
+tags: [voice-platform, ai, likelion]
 tagName: ai
 permalink: 2025-09-22-kor2unity-extract.html
 sidebar: other_sidebar

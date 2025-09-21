@@ -73,6 +73,17 @@ updated: 2025-09-22 06:00
   </table>
 </div>
 
+<style>
+  .sep {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #bbb, transparent);
+    margin: 1.25rem 0;
+  }
+</style>
+
+<hr class="sep" />
+
 ## Other AI tracks (auto, tag = likelion)
 
 <style>

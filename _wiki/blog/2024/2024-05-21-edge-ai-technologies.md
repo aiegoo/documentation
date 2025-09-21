@@ -2,8 +2,8 @@
 layout: post
 title: "Exploring Edge AI Technologies"
 name: "edge-ai-technologies"
-tags: [AI edge machine learning ai voice-platform likelion]
-tagName: AI
+tags: [ai, machine-learning, ai, voice-platform, likelion]
+tagName: ai
 permalink: 2024-05-21-edge-ai-technologies.html
 sidebar: other_sidebar
 folder: blog
