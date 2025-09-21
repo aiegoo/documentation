@@ -1,25 +1,20 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-# to publish on github page
-gem 'github-pages', 'jemoji', group: :jekyll_plugins
+ruby '>= 3.0'
 
-# to publich without github page
-#gem "jekyll"
+gem 'jekyll', '~> 4.3.3'
+gem 'kramdown-parser-gfm'
+gem 'webrick', '~> 1.8'
 
-# to use with plantuml; https://plantuml.com/en/running
-gem 'jekyll-plantuml', '~> 1.3', '>= 1.3.4'
+group :jekyll_plugins do
+  gem 'jekyll-sitemap'
+  gem 'jekyll-paginate'
+  gem 'jekyll-spaceship'
+  gem 'jekyll-babel'
+  gem 'jekyll-plantuml'   # remove if unused
+  gem 'jemoji'            # optional; keep if you use emoji
+end
 
-gem "kramdown-parser-gfm"
-
-gem "jekyll-gist"
-
-gem "jekyll-spaceship"
-
-gem 'wdm', '>= 0.1.0' if Gem.win_platform? # for Winodows polling issue
-gem "webrick", "~> 1.7"
-
-gem 'jekyll-paginate'
-
-gem 'jekyll-babel'
-
-gem 'jekyll-sitemap'
+# Windows-only helpers (won't install on Linux CI)
+gem 'wdm', '~> 0.1.1', platforms: %i[mingw x64_mingw]
+gem 'tzinfo-data', platforms: %i[mingw x64_mingw jruby]
