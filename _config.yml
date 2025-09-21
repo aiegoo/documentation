@@ -1,5 +1,5 @@
 repository: aiegoo/documentation
-url: pf7.eggs.or.kr
+url: https://pf7.eggs.or.kr
 #baseurl: /documentation #for github.io/documentation
 baseurl: ""
 output: web
@@ -286,9 +286,10 @@ defaults:
       search: true
       tooltip: true
 
-paginate: 10
-paginator_path: "/wiki"
-paginate_path: "/wiki/page:num/"
+# Temporarily disable paginate to avoid the warning
+# paginate: 10
+# paginator_path: "/wiki"
+# paginate_path: "/wiki/page:num/"
 # these are defaults used for the frontmatter for these file types
 
 

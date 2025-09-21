@@ -1,12 +1,12 @@
 ---
-title: "Home for tag development tools[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Cfor the"
+title: "Tools"
 tagName: tools
 search: exclude
 permalink: tag_tools.html
 sidebar: mydoc_sidebar
 folder: tags
+layout: page
 ---
 
 {% include taglogic.html %}
-
 {% include links.html %}
