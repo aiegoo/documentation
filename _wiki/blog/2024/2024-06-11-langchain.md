@@ -2,8 +2,8 @@
 layout: post
 title: "locally serving llm chatbots"
 name: "langchain"
-tags: [llm]
-tagName: gpt
+tags: [llm, ai, nlp, voice-platform]
+tagName: ai
 permalink: 2024-06-11-langchain.html
 sidebar: other_sidebar
 folder: blog
