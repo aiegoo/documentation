@@ -49,9 +49,43 @@ port: 4000
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 
 exclude:
-  - .idea/
+  # VCS & CI
+  - .git/
+  - .github/
   - .gitignore
+  # Bundler/vendor cache
   - vendor
+  - .bundle/
+  # Build output
+  - _site/
+  # Development & tooling
+  - docker-compose.yml
+  - Dockerfile
+  - package.json
+  - package-lock.json
+  - pnpm-lock.yaml
+  - yarn.lock
+  - node_modules/
+  - README.md
+  - archive.py
+  - generateData.js
+  - generateData.sh
+  - data.sh
+  - update.sh
+  - parser.sh
+  # Large content not needed on Pages (serve externally if required)
+  - matlab_projects/
+  - webdev-node/
+  - source-code/
+  - var/
+  - resources/
+  - qt/
+  - pdfconfigs/
+  - pdf/*.zip
+  - pdf/*.7z
+  - pdf/*.tar*
+  # System files
+  - .DS_Store
 # these are the files and directories that jekyll will exclude from the build
 include:
  - _mycourse
@@ -290,7 +324,7 @@ plugins:
   - jekyll-gist
   - jekyll-spaceship
   - jemoji
-  - jekyll-babel]
+  - jekyll-babel
   - jekyll-sitemap
 
 
