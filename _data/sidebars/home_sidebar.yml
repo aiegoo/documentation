@@ -26,5 +26,8 @@ entries:
     - title: staging showcase 2
       url: /p2_landing_page.html
       output: web
+    - title: Profile
+      url: /profile.html
+      output: web
 
 # Copyright 2021 Tonyleekorea

@@ -2,7 +2,7 @@
 layout: post
 title: "Bridging Language Barriers with Blockchain Technology"
 name: "langchain"
-tags: [nlp ai ucon]
+tags: [nlp ai ucon likelion]
 tagName: nlp
 permalink: 2024-04-16-langchain.html
 sidebar: other_sidebar

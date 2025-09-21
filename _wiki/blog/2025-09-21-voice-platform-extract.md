@@ -2,7 +2,7 @@
 layout: page
 title: "Voice Platform — Extract from Kor2Unity summary"
 name: "voice-platform-extract"
-tags: [voice-platform, ai]
+tags: [voice-platform, ai, likelion]
 tagName: voice-platform
 sidebar: other_sidebar
 folder: wiki
