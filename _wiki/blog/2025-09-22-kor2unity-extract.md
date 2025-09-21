@@ -1,17 +1,28 @@
 ---
-layout: page
-title: "Voice Platform — Extract from Kor2Unity summary"
-name: "voice-platform-extract"
+layout: post
+title: ""Voice Platform — Extract from Kor2Unity summary"
+name: "kor2unity-extract"
 tags: [voice-platform, ai, likelion]
-tagName: voice-platform
+tagName: ai
+permalink: 2025-09-22-kor2unity-extract.html
 sidebar: other_sidebar
-folder: wiki
-categories: [ai]
-permalink: /wiki/voice-platform-extract.html
-summary: "Extracted items from Kor2Unity issue summary"
+folder: blog
+collection: wiki
+categories: ai
+keywords: "ncs, likelion, ai, voice-platform, projects"
+summary: "Mon, Sep 22, 25, Extracted items from Kor2Unity issue summary"
+excerpt_separator: <!--more-->
+toc: true
+public: true
+parent: [[Wiki-Setting-Category]] 
+date: 2025-09-22T06:19:26 +0900
+updated: 2025-09-22 06:19
 ---
+* TOC
+{:toc}
 
-# Voice Platform — Extract from Kor2Unity summary
+{{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
+Voice Platform — Extract from Kor2Unity summary
 
 Source: https://github.com/aiegoo/aiegoo/issues/2
 
@@ -33,3 +44,13 @@ Source: https://github.com/aiegoo/aiegoo/issues/2
 - #70 [open] ⚡ Optimize Zero-shot Coqui TTS Configuration (https://github.com/aiegoo/kor2Unity/issues/70)
 - #69 [open] 🎯 Create Voice Quality Analysis Framework (https://github.com/aiegoo/kor2Unity/issues/69)
 - #68 [open] 🔬 Research Korean Voice Datasets from HuggingFace (https://github.com/aiegoo/kor2Unity/issues/68)
+
+  
+
+{% include taglogic.html %}
+
+{% include links.html %}
+
+{% include commento.html %}
+
+{{site.data.alerts.hr_shaded}}
