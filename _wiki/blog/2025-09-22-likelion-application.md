@@ -39,8 +39,9 @@ updated: 2025-09-22 06:00
   .ai-list table { border-collapse: collapse; width: 100%; }
   .ai-list th, .ai-list td { border: 1px solid #ddd; padding: 6px 10px; }
   .ai-list thead th { background:#222; color:#fff; }
-  .ai-list tbody tr:nth-child(odd) { background:#f5faff; }
-  .ai-list tbody tr:nth-child(even){ background:#eef6ff; }
+  /* accounting-style stripes: even rows shaded */
+  .ai-list tbody tr:nth-child(odd)  { background: #ffffff; }
+  .ai-list tbody tr:nth-child(even) { background: #f3f6fa; }
   .ai-list td:nth-child(2) { background:#e6f0ff; } /* summary column */
 </style>
 
@@ -87,12 +88,17 @@ updated: 2025-09-22 06:00
 ## Other AI tracks (auto, tag = likelion)
 
 <style>
-  .ai-list { max-width:100%; overflow-x:auto; }
+  .ai-list {
+    max-width: 100%;
+    overflow-x: auto;
+    margin-top: 200pt; /* push down due to zoomed table above */
+  }
   .ai-list table { border-collapse: collapse; width: 100%; }
   .ai-list th, .ai-list td { border: 1px solid #ddd; padding: 6px 10px; }
   .ai-list thead th { background:#222; color:#fff; }
-  .ai-list tbody tr:nth-child(odd) { background:#f5faff; }
-  .ai-list tbody tr:nth-child(even){ background:#eef6ff; }
+  /* accounting-style stripes: even rows shaded */
+  .ai-list tbody tr:nth-child(odd)  { background: #ffffff; }
+  .ai-list tbody tr:nth-child(even) { background: #f3f6fa; }
   .ai-list td:nth-child(2) { background:#e6f0ff; } /* summary column */
 </style>
 

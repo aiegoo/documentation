@@ -8,7 +8,7 @@ permalink: /wiki/kor2unity-extract.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
-categories: [ai]
+categories: wiki
 keywords: "ncs, likelion, ai, voice-platform, projects"
 summary: "Mon, Sep 22, 25, Extracted items from Kor2Unity issue summary"
 excerpt_separator: <!--more-->
@@ -18,6 +18,7 @@ parent: [[Wiki-Setting-Category]]
 date: 2025-09-22T06:19:26 +0900
 updated: 2025-09-22 06:19
 ---
+
 * TOC
 {:toc}
 
