@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "멋쟁이 사자처럼 AI 트랙 지원"
+title: "Goorm AI워크로드 최적화 클라우드 엔지니어링 트랙 지원"
 name: "likelion-application"
 tags: [ai]
 tagName: ai
@@ -23,7 +23,7 @@ updated: 2025-09-22 06:00
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-## 멋쟁이 사자처럼 AI 트랙 지원 (Application)
+##  Goorm Profect AI 클라우드 엔지니어 트랙 지원 (Application)
 
 <style>
   /* First table (quick links) */
@@ -63,7 +63,7 @@ updated: 2025-09-22 06:00
         <td class="desc-col">포트폴리오 사이트 포털</td>
       </tr>
       <tr>
-        <td class="links-col"><a href="https://colab.research.google.com/drive/12LVMjPAzTROjKxoLqEG5Q4fYg3zkdFnt">과제 답안 링크</a></td>
+        <td class="links-col"><a href="https://gist.githubusercontent.com/aiegoo/407a7a63c1a84fde581dd05d1c6820ee/raw/4fa3cbc05d8ce576fd5115ad421275773dc59f5a/code.mmd">과제 답안 링크</a></td>
         <td class="desc-col">구글 Colab 과제 답안</td>
       </tr>
       <tr>
