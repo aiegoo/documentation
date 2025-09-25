@@ -26,23 +26,32 @@ updated: 2025-09-22 06:00
 ##  Goorm Profect AI 클라우드 엔지니어 트랙 지원 (Application)
 
 <style>
-  /* First table (quick links) */
-  .table-zoom { max-width:100%; overflow-x:auto; transform: scale(2); transform-origin: top left; }
-  .table-zoom table { border-collapse: collapse; width: 100%; }
-  .table-zoom th, .table-zoom td { border: 1px solid #ddd; padding: 6px 10px; }
-  .links-head { background:#0052cc; color:#fff; }
-  .links-col  { background:#e0f2f1; }
-  .desc-col   { background:#fffde7; color:#4e342e; }
+  /* Remove permanent scale; apply only on wide screens */
+  .table-zoom{max-width:100%;overflow-x:auto}
+  .table-zoom table{border-collapse:collapse;width:100%}
+  /* desktop enhancement */
+  @media (min-width: 1100px){
+    .table-zoom table{font-size:1.05rem}
+  }
 
-  /* Second table (full list) */
-  .ai-list { max-width:100%; overflow-x:auto; }
-  .ai-list table { border-collapse: collapse; width: 100%; }
-  .ai-list th, .ai-list td { border: 1px solid #ddd; padding: 6px 10px; }
-  .ai-list thead th { background:#222; color:#fff; }
-  /* accounting-style stripes: even rows shaded */
-  .ai-list tbody tr:nth-child(odd)  { background: #ffffff; }
-  .ai-list tbody tr:nth-child(even) { background: #f3f6fa; }
-  .ai-list td:nth-child(2) { background:#e6f0ff; } /* summary column */
+  /* existing color styles (keep) */
+  .links-head{background:#0052cc;color:#fff}
+  .links-col{background:#e0f2f1}
+  .desc-col{background:#fffde7;color:#4e342e}
+
+  /* second table stripes */
+  .ai-list{max-width:100%;overflow-x:auto;margin-top:40px}
+  .ai-list table{border-collapse:collapse;width:100%}
+  .ai-list th,.ai-list td{border:1px solid #ddd;padding:6px 10px}
+  .ai-list thead th{background:#222;color:#fff}
+  .ai-list tbody tr:nth-child(even){background:#f3f6fa}
+  .ai-list tbody tr:nth-child(odd){background:#ffffff}
+
+  @media (max-width:760px){
+    .ai-list th,.ai-list td{padding:4px 6px;font-size:.8rem}
+    .ai-list td:nth-child(2){display:block;width:100%}
+    .ai-list td:nth-child(3){font-size:.7rem}
+  }
 </style>
 
 <div class="table-zoom">
