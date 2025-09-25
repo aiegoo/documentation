@@ -100,7 +100,7 @@ updated: 2025-09-22 06:00
   .ai-list {
     max-width: 100%;
     overflow-x: auto;
-    margin-top: 200pt; /* push down due to zoomed table above */
+    margin-top: 100pt; /* push down due to zoomed table above */
   }
   .ai-list table { border-collapse: collapse; width: 100%; }
   .ai-list th, .ai-list td { border: 1px solid #ddd; padding: 6px 10px; }

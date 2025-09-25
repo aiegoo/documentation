@@ -82,14 +82,20 @@ I will dockerize llm services I can deploy anywhere.
 Over the past few weeks, I have been closely monitoring and analyzing the learning curves of various LLM (Large Language Model) models. This involved comparing their performance on different tasks and understanding the nuances of their learning behaviors.
 
 Here are some visual representations of the CLI and UI used for these analyses:
-![FastChat CLI](wiki-img/2024/llm/fastchatCli.png)
+![FastChat CLI](wiki-img/2024/llm/fastchatCLI.png)
 ![Flowise UI](wiki-img/2024/llm/flowiseUI.png)
 
 ### State of the Art Project: Pronunciation Coach
 One of the significant projects I have been working on is a pronunciation coach application. This tool leverages state-of-the-art NLP and RAG (Retrieval-Augmented Generation) techniques to assist users in improving their pronunciation skills. 
 
 Below is a sample video demonstrating the functionality of the pronunciation coach:
-![Pronunciation Coach](wiki-img/2024/llm/pronunciationCoach.mov)
+<video controls preload="metadata" style="max-width:100%;height:auto;"
+  poster="{{ '/wiki-img/2024/llm/pronunciationCoach_poster.jpg' | relative_url }}">
+  <source src="{{ '/wiki-img/2024/llm/pronunciationCoach.mp4' | relative_url }}" type="video/mp4">
+  <source src="{{ '/wiki-img/2024/llm/pronunciationCoach.mov' | relative_url }}" type="video/quicktime">
+  브라우저가 동영상을 지원하지 않습니다.
+  <a href="{{ '/wiki-img/2024/llm/pronunciationCoach.mp4' | relative_url }}">Download video</a>
+</video>
 {% include googleDrivePlayer.html id=page.driveID %}
 The application is designed to provide real-time feedback and suggestions, making it an invaluable resource for language learners.
 
