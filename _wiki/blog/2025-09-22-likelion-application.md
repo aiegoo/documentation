@@ -94,7 +94,7 @@ updated: 2025-09-22 06:00
 
 <hr class="sep" />
 
-## Other AI tracks (auto, tag = likelion)
+## Other AI tracks 
 
 <style>
   .ai-list {
