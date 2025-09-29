@@ -39,7 +39,18 @@ youtubeID: ijVpUdWZYKU
 <!-- Featured updates: AI engineer content -->
 <style>
   .feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}
-  .feature-card{border:1px solid #e5e7eb;border-radius:8px;padding:12px;background:#fff}
+  .feature-card{
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    padding:12px;
+    background:#fff;
+    box-shadow: 0 6px 16px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+    transition: box-shadow .2s ease, transform .2s ease;
+  }
+  .feature-card:hover{
+    box-shadow: 0 12px 28px rgba(0,0,0,.12), 0 4px 6px rgba(0,0,0,.08);
+    transform: translateY(-2px);
+  }
   .feature-card h4{margin:4px 0 8px}
   .feature-card p{margin:0 0 10px;font-size:.95rem;line-height:1.4}
   .btn{display:inline-block;padding:6px 10px;border:1px solid #111;border-radius:6px;text-decoration:none}
@@ -63,7 +74,7 @@ youtubeID: ijVpUdWZYKU
 ### Featured updates <span class="muted">AI engineer tracks</span>
 <div class="feature-grid">
   <div class="feature-card">
-    <h4>AI Engineer — LikelyLion Application Links</h4>
+    <h4>AI Engineering show-case</h4>
     <p>Curated links and artifacts used for the Goorm AI workload optimization track application.</p>
     <div class="card-list">
       <li class="chip">portfolio</li>
@@ -78,11 +89,11 @@ youtubeID: ijVpUdWZYKU
     </div>
   </div>
   <div class="feature-card">
-    <h4>AI Engineer — About & Field Notes</h4>
-    <p>Profile highlights and Samsung SDN Summit notes (Edge RAG, on‑device LLMs, Private 5G, observability).</p>
+    <h4>AI Engineer — 리얼서밋트-COEX</h4>
+    <p>Profile highlights and Samsung SDN Real Summit notes (Edge RAG, on‑device LLMs, Private 5G, observability).</p>
     <div class="card-footer" style="margin-top:10px">
       <div class="card-links">
-        <a class="btn secondary" href="{% link pages/mydoc/mydoc_about.md %}">About page</a>
+        <a class="btn secondary" href="{% link pages/mydoc/mydoc_about.md %}">Open page</a>
       </div>
       <span class="muted">pages › mydoc</span>
     </div>
