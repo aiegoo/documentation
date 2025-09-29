@@ -46,12 +46,15 @@ youtubeID: ijVpUdWZYKU
     background:#fff;
     box-shadow: 0 6px 16px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
     transition: box-shadow .2s ease, transform .2s ease;
+   display:flex;            /* align footer button across cards */
+   flex-direction:column;   /* pin footer at bottom */
+   height:100%;
   }
   .feature-card:hover{
     box-shadow: 0 12px 28px rgba(0,0,0,.12), 0 4px 6px rgba(0,0,0,.08);
     transform: translateY(-2px);
   }
-  .feature-card h4{margin:4px 0 8px}
+  .feature-card h4{margin:4px 0 8px; font-size:110%}  /* +10% */
   .feature-card p{margin:0 0 10px;font-size:.95rem;line-height:1.4}
   .btn{display:inline-block;padding:6px 10px;border:1px solid #111;border-radius:6px;text-decoration:none}
   @media (max-width:760px){.feature-grid{grid-template-columns:1fr}}
@@ -62,7 +65,7 @@ youtubeID: ijVpUdWZYKU
   .card-links{display:flex;gap:8px;flex-wrap:wrap}
   .btn.secondary{border-color:#aaa;color:#111;background:#fafafa}
   .btn.primary{background:#111;color:#fff}
-  .card-footer{display:flex;justify-content:space-between;align-items:center}
+  .card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:auto}
   .card-footer .muted{margin-left:auto}
   .card-list{margin:6px 0 0 16px}
   .card-list li{margin:2px 0}
@@ -93,7 +96,7 @@ youtubeID: ijVpUdWZYKU
     <p>Profile highlights and Samsung SDN Real Summit notes (Edge RAG, on‑device LLMs, Private 5G, observability).</p>
     <div class="card-footer" style="margin-top:10px">
       <div class="card-links">
-        <a class="btn secondary" href="{% link pages/mydoc/mydoc_about.md %}">Open page</a>
+        <a class="btn secondary" href="{% link pages/mydoc/mydoc_about.md %}#ai-engineer-and-stint-at-a-real-job-application">Open page</a>
       </div>
       <span class="muted">pages › mydoc</span>
     </div>
