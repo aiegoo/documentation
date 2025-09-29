@@ -4,7 +4,7 @@ title: "Voice Platform — Extract from Kor2Unity summary"
 name: "kor2unity-extract"
 tags: [voice-platform, ai, likelion]
 tagName: voice-platform
-permalink: /wiki/kor2unity-extract.html
+permalink: kor2unity-extract.html
 sidebar: other_sidebar
 folder: blog
 collection: wiki
