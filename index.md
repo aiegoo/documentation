@@ -91,7 +91,7 @@ youtubeID: ijVpUdWZYKU
 
 
 <p align="center">  
-<img alt="profile-count" src="https://profile-counter.glitch.me/{aiegoo}/count.svg" width="66px"/>
+<img alt="14d unique views" src="{{ '/assets/badges/visits.svg' | relative_url }}" style="height:24px" />
 </p>
 
 
