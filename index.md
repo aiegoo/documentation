@@ -36,19 +36,83 @@ youtubeID: ijVpUdWZYKU
 - 💬 Ask me about how can I help, else internet has you covered ;)
 - ⚡ Fun fact: 2022> I ran my first full lap around my neighborhood lake in 2 years; now I enjoy this fun everyday.
 
+<!-- Featured updates: AI engineer content -->
+<style>
+  .feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}
+  .feature-card{border:1px solid #e5e7eb;border-radius:8px;padding:12px;background:#fff}
+  .feature-card h4{margin:4px 0 8px}
+  .feature-card p{margin:0 0 10px;font-size:.95rem;line-height:1.4}
+  .btn{display:inline-block;padding:6px 10px;border:1px solid #111;border-radius:6px;text-decoration:none}
+  @media (max-width:760px){.feature-grid{grid-template-columns:1fr}}
+  .muted{color:#6b7280;font-size:.85rem}
+  .chip{display:inline-block;margin-right:6px;padding:2px 6px;border-radius:9999px;background:#eef2ff;color:#3730a3;font-size:.75rem}
+  .chip.green{background:#ecfdf5;color:#065f46}
+  .chip.orange{background:#fff7ed;color:#9a3412}
+  .card-links{display:flex;gap:8px;flex-wrap:wrap}
+  .btn.secondary{border-color:#aaa;color:#111;background:#fafafa}
+  .btn.primary{background:#111;color:#fff}
+  .card-footer{display:flex;justify-content:space-between;align-items:center}
+  .card-footer .muted{margin-left:auto}
+  .card-list{margin:6px 0 0 16px}
+  .card-list li{margin:2px 0}
+  .feature-title{margin-top:22px}
+  .feature-title span{font-size:.85rem;margin-left:8px}
+  .feature-title .muted{font-weight:400}
+</style>
+
+### Featured updates <span class="muted">AI engineer tracks</span>
+<div class="feature-grid">
+  <div class="feature-card">
+    <h4>AI Engineer — LikelyLion Application Links</h4>
+    <p>Curated links and artifacts used for the Goorm AI workload optimization track application.</p>
+    <div class="card-list">
+      <li class="chip">portfolio</li>
+      <li class="chip green">deliverables</li>
+      <li class="chip orange">assignments</li>
+    </div>
+    <div class="card-footer" style="margin-top:10px">
+      <div class="card-links">
+        <a class="btn primary" href="{{ '/2025-09-22-likelion-application.html' | relative_url }}">Open page</a>
+      </div>
+      <span class="muted">wiki › blog</span>
+    </div>
+  </div>
+  <div class="feature-card">
+    <h4>AI Engineer — About & Field Notes</h4>
+    <p>Profile highlights and Samsung SDN Summit notes (Edge RAG, on‑device LLMs, Private 5G, observability).</p>
+    <div class="card-footer" style="margin-top:10px">
+      <div class="card-links">
+        <a class="btn secondary" href="{% link pages/mydoc/mydoc_about.md %}">About page</a>
+      </div>
+      <span class="muted">pages › mydoc</span>
+    </div>
+  </div>
+</div>
+
 ## 📫 Feel free to reach out
 <table align="center">
   <tr>
      <td><a href="https://www.linkedin.com/in/tonyleekorea/">
       <span class="icon  icon--linkedin">
-      <svg viewBox="0 50 512 512" >
-        <path fill="#828282" d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
-        C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z
-        M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615
-        c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915
-        s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"/>
-      </svg>
-    </span></a></td>  </tr>
+      <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+  <path d="
+    M 630, 425
+    A 195, 195 0 0 1 331, 600
+    A 142, 142 0 0 0 428, 570
+    A  70,  70 0 0 1 370, 523
+    A  70,  70 0 0 0 401, 521
+    A  70,  70 0 0 1 344, 455
+    A  70,  70 0 0 0 372, 460
+    A  70,  70 0 0 1 354, 370
+    A 195, 195 0 0 0 495, 442
+    A  67,  67 0 0 1 611, 380
+    A 117, 117 0 0 0 654, 363
+    A  65,  65 0 0 1 623, 401
+    A 117, 117 0 0 0 662, 390
+    A  65,  65 0 0 1 630, 425
+    Z"
+    style="fill:#3BA9EE;"/>
+</svg></a></td>  </tr>
   <tr>
      <td><a href="https://twitter.com/tonyleekorea">
       <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
