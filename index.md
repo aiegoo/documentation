@@ -8,6 +8,7 @@ sidebar: mydoc_sidebar
 permalink: index.html
 summary: My recent projects are leveraging generative AI across various domains, yielding significant achievements. These encompass Digital Twin, Voice-to-Command, RAG (Retrieval-Augmented Generation), TTL STT (Text-to-Listening Speech), Metaverse, smartFarm and Edge Computing, and quantum security using entanglement theory, among others.
 youtubeID: ijVpUdWZYKU
+render_with_liquid: true
 ---
 
 <style type="text/css">
@@ -259,13 +260,26 @@ youtubeID: ijVpUdWZYKU
 
 ### I believe in time-management
 
-|---
-|
-| :-:
-| ![cartoon](https://imgs.xkcd.com/comics/automation.png)
-| ![test](out/test/test.svg "svg working fine")
-|================================================================
-|
+<!-- Replace broken pipe table with robust HTML -->
+<table style="margin:10px auto; border-collapse:collapse; width:auto; text-align:center">
+  <thead>
+    <tr>
+      <th style="padding:6px 10px; border-bottom:1px solid #e5e7eb;">Time management</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px;">
+        <img src="https://imgs.xkcd.com/comics/automation.png" alt="automation cartoon" style="max-width:420px;width:100%;height:auto;">
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:10px;">
+        <img src="{{ '/out/test/test.svg' | relative_url }}" alt="svg working fine" style="max-width:420px;width:100%;height:auto;">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 {% include latest.html %}
 
