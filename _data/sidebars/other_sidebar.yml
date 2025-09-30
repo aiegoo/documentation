@@ -1,4 +1,3 @@
-
 # Follow the pattern here for the URLs -- no slash at the beginning, and include the .html. The link here is rendered exactly as is in the Markdown references.
 
 entries:
@@ -103,5 +102,18 @@ entries:
     - title: Tools series
       output: web
       url: /vim-basic.html
+
+  - title: Library
+    product: docs
+    folders:
+      - title: Books
+        output: web
+        folderitems:
+          - title: All Books
+            url: /books/index.html
+            output: web
+          - title: AI
+            url: /books/ai.html
+            output: web
 
 # Copyright 2021 Google LLC

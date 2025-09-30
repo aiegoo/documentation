@@ -182,6 +182,9 @@ collections:
   genai:
     output: true
     permalink: /genai/:title
+  books:
+    output: true
+    permalink: /books/:title
 
 
 
