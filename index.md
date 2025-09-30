@@ -285,4 +285,6 @@ render_with_liquid: true
 
 {% include youtubePlayer.html id=page.youtubeID %}
 🎉 🎆 🔥
+<div hidden aria-hidden="true" markdown="1">
 {% include links.html %}
+</div>
