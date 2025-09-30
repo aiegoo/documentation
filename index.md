@@ -105,56 +105,28 @@ render_with_liquid: true
 </div>
 
 ## 📫 Feel free to reach out
-<table align="center">
-  <tr>
-     <td><a href="https://www.linkedin.com/in/tonyleekorea/">
-      <span class="icon  icon--linkedin">
-      <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
-  <path d="
-    M 630, 425
-    A 195, 195 0 0 1 331, 600
-    A 142, 142 0 0 0 428, 570
-    A  70,  70 0 0 1 370, 523
-    A  70,  70 0 0 0 401, 521
-    A  70,  70 0 0 1 344, 455
-    A  70,  70 0 0 0 372, 460
-    A  70,  70 0 0 1 354, 370
-    A 195, 195 0 0 0 495, 442
-    A  67,  67 0 0 1 611, 380
-    A 117, 117 0 0 0 654, 363
-    A  65,  65 0 0 1 623, 401
-    A 117, 117 0 0 0 662, 390
-    A  65,  65 0 0 1 630, 425
-    Z"
-    style="fill:#3BA9EE;"/>
-</svg></a></td>  </tr>
-  <tr>
-     <td><a href="https://twitter.com/tonyleekorea">
-      <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
-  <path d="
-    M 630, 425
-    A 195, 195 0 0 1 331, 600
-    A 142, 142 0 0 0 428, 570
-    A  70,  70 0 0 1 370, 523
-    A  70,  70 0 0 0 401, 521
-    A  70,  70 0 0 1 344, 455
-    A  70,  70 0 0 0 372, 460
-    A  70,  70 0 0 1 354, 370
-    A 195, 195 0 0 0 495, 442
-    A  67,  67 0 0 1 611, 380
-    A 117, 117 0 0 0 654, 363
-    A  65,  65 0 0 1 623, 401
-    A 117, 117 0 0 0 662, 390
-    A  65,  65 0 0 1 630, 425
-    Z"
-    style="fill:#3BA9EE;"/>
-</svg></a> </td> </tr>
-  <tr>
-     <td><a href="https://aiegoo.github.io/resume">
-  <img alt="📕 Visi Project's Blog" style="width:22px; align: left;" width="66px" src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" />
-      </a> </td>
-  </tr>
-  </table>
+<style>
+  .sns-row{display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap;margin:8px 0 16px}
+  .sns-link{display:inline-flex;align-items:center;justify-content:center;padding:8px 10px;border:1px solid #e5e7eb;border-radius:10px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.06);transition:transform .15s ease, box-shadow .15s ease}
+  .sns-link:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,.1)}
+  .sns-link svg{height:28px;width:auto;display:block}
+  .sns-link img{height:28px;display:block}
+</style>
+<div class="sns-row" role="list" aria-label="Social profiles">
+  <a class="sns-link" role="listitem" href="https://www.linkedin.com/in/tonyleekorea/" aria-label="LinkedIn">
+    <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <path d="M 630, 425 A 195, 195 0 0 1 331, 600 A 142, 142 0 0 0 428, 570 A  70,  70 0 0 1 370, 523 A  70,  70 0 0 0 401, 521 A  70,  70 0 0 1 344, 455 A  70,  70 0 0 0 372, 460 A  70,  70 0 0 1 354, 370 A 195, 195 0 0 0 495, 442 A  67,  67 0 0 1 611, 380 A 117, 117 0 0 0 654, 363 A  65,  65 0 0 1 623, 401 A 117, 117 0 0 0 662, 390 A  65,  65 0 0 1 630, 425 Z" style="fill:#3BA9EE;"/>
+    </svg>
+  </a>
+  <a class="sns-link" role="listitem" href="https://twitter.com/tonyleekorea" aria-label="Twitter/X">
+    <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <path d="M 630, 425 A 195, 195 0 0 1 331, 600 A 142, 142 0 0 0 428, 570 A  70,  70 0 0 1 370, 523 A  70,  70 0 0 0 401, 521 A  70,  70 0 0 1 344, 455 A  70,  70 0 0 0 372, 460 A  70,  70 0 0 1 354, 370 A 195, 195 0 0 0 495, 442 A  67,  67 0 0 1 611, 380 A 117, 117 0 0 0 654, 363 A  65,  65 0 0 1 623, 401 A 117, 117 0 0 0 662, 390 A  65,  65 0 0 1 630, 425 Z" style="fill:#3BA9EE;"/>
+    </svg>
+  </a>
+  <a class="sns-link" role="listitem" href="https://aiegoo.github.io/resume" aria-label="Resume/Blog">
+    <img alt="📕 Visi Project's Blog" src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" />
+  </a>
+</div>
 
 
 
@@ -261,25 +233,27 @@ render_with_liquid: true
 ### I believe in time-management
 
 <!-- Replace broken pipe table with robust HTML -->
-<table style="margin:10px auto; border-collapse:collapse; width:auto; text-align:center">
-  <thead>
-    <tr>
-      <th style="padding:6px 10px; border-bottom:1px solid #e5e7eb;">Time management</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding:10px;">
-        <img src="https://imgs.xkcd.com/comics/automation.png" alt="automation cartoon" style="max-width:420px;width:100%;height:auto;">
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:10px;">
-        <img src="{{ '/out/test/test.svg' | relative_url }}" alt="svg working fine" style="max-width:420px;width:100%;height:auto;">
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="tm-wrap" markdown="0">
+<table role="presentation" style="margin:10px auto; border-collapse:collapse; width:auto; text-align:center">
+   <thead>
+     <tr>
+       <th style="padding:6px 10px; border-bottom:1px solid #e5e7eb;">Time management</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td style="padding:10px;">
+         <img src="https://imgs.xkcd.com/comics/automation.png" alt="automation cartoon" style="max-width:420px;width:100%;height:auto;">
+       </td>
+     </tr>
+     <tr>
+       <td style="padding:10px;">
+         <img src="{{ '/out/test/test.svg' | relative_url }}" alt="svg working fine" style="max-width:420px;width:100%;height:auto;">
+       </td>
+     </tr>
+   </tbody>
+ </table>
+</div>
 
 {% include latest.html %}
 
