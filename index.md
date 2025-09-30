@@ -153,7 +153,19 @@ render_with_liquid: true
 </p>
 
 
-<h3 align="center"><a href="https://github.com/aiegoo">⌨GitHub Status(public):</a></h3>
+<h3 align="center">⌨ GitHub Status (public)</h3>
+<p align="center">
+  <a href="https://github.com/aiegoo" target="_blank" rel="noopener">
+    <img
+      src="https://nirzak-streak-stats.vercel.app/?user=aiegoo&theme=dark&hide_border=false"
+      onerror="this.onerror=null;this.src='https://streak-stats.demolab.com?user=aiegoo&theme=dark&hide_border=false';"
+      alt="GitHub Streak — aiegoo"
+      style="max-width:100%;height:auto"
+      loading="lazy" decoding="async"
+    />
+  </a>
+  <br/>
+</p>
 
 <p align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=aiegoo&theme=react&show_icons=true" style="max-width: 100%;" />
