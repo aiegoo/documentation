@@ -19,7 +19,7 @@ toc: false
 ## AI Books
 
 <div class="grid">
-{% assign ai_books = site.books | where: 'category', 'ai' | sort: 'title' %}
+{% assign ai_books = site.books | where_exp: "b", "b.tags contains 'ai'" | sort: "title" %}
 {% for b in ai_books %}
   <a class="card" href="{{ b.url | relative_url }}">
     {% if b.cover %}<img src="{{ b.cover | relative_url }}" alt="{{ b.title }} cover">{% endif %}

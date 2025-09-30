@@ -115,5 +115,8 @@ entries:
           - title: AI
             url: /books/ai.html
             output: web
+          - title: Tags
+            url: /books/tags.html
+            output: web
 
 # Copyright 2021 Google LLC

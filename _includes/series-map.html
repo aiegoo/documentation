@@ -1,0 +1,57 @@
+{%- if page.complex_map and page.map_name -%} {%- assign series = site.books |
+where: "map_name", page.map_name | sort: "box_number" -%} {%- if series.size > 0
+-%}
+<style>
+  .series-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .series-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .series-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .series-card .meta {
+    font-size: 0.9rem;
+  }
+  .series-card.current {
+    outline: 2px solid #6366f1;
+  }
+  @media (max-width: 760px) {
+    .series-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<h3>In this series</h3>
+<div class="series-grid">
+  {%- for b in series -%}
+  <a
+    class="series-card{% if b.url == page.url %} current{% endif %}"
+    href="{{ b.url | relative_url }}"
+  >
+    {%- if b.cover -%}<img
+      src="{{ b.cover | relative_url }}"
+      alt="{{ b.title }} cover"
+    />{%- endif -%}
+    <div class="meta">
+      <div><strong>#{{ b.box_number }}</strong> — {{ b.title }}</div>
+      <div>{{ b.excerpt | default: b.description | default: b.category }}</div>
+    </div>
+  </a>
+  {%- endfor -%}
+</div>
+{%- endif -%} {%- endif -%}

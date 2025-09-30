@@ -1,9 +1,14 @@
 ---
 title: Practical RAG Systems
 author: "J. Doe"
-category: ai
+tags: [ai, rag]
 cover: /wiki-img/2024/llm/voiceGPTAPI.png
-description: "Design and deploy retrieval-augmented generation pipelines."
+excerpt: "Design and deploy retrieval-augmented generation pipelines."
+complex_map: true
+map_name: usermap_books_ai
+box_number: 1
+order_number: 1
 ---
 
-Short notes or highlights here. This page can include your excerpts and links.
+Notes and highlights.  
+{% include series-map.html %}
