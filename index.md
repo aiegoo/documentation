@@ -106,7 +106,7 @@ render_with_liquid: true
 
 ## 📫 Feel free to reach out
 +<!-- ensure we’re outside any prior table/float context -->
-+<div style="clear:both"></div>
+<!-- +<div style="clear:both"></div> -->
 
 -<style>
 +<div markdown="0">
@@ -148,9 +148,9 @@ render_with_liquid: true
 </p>
 
 
-<p align="center">  
+<!-- <p align="center">  
 <img alt="14d unique views" src="{{ '/assets/badges/visits.svg' | relative_url }}" style="height:24px" />
-</p>
+</p> -->
 
 
 <h3 align="center">⌨ GitHub Status (public)</h3>
