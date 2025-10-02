@@ -17,7 +17,7 @@ jobs:
           token: ${{ secrets.traffic_badge }}
       - name: Fetch traffic (last 14d)
         env:
-          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          TRAFFIC_TOKEN: ${{ secrets.traffic_badge }}
         run: |
           curl -sS -H "Authorization: Bearer ${TRAFFIC_TOKEN}" \
                -H "Accept: application/vnd.github+json" \
