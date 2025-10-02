@@ -22,10 +22,9 @@ in latest_posts limit: 5 -%}
   >{% unless forloop.last %}, {% endunless %} {%- endfor -%} {%- endif -%}
 </div>
 <p>
-  {%- if post.summary -%} {{ post.summary | strip_html | strip_newlines |
-  truncate: 200 }} {%- elsif post.excerpt -%} {{ post.excerpt | strip_html |
-  strip_newlines | truncate: 200 }} {%- else -%} {{ post.content | strip_html |
-  truncatewords: 50 }} {%- endif -%}
+  {%- if post.excerpt -%} {{ post.excerpt | strip_html | strip_newlines |
+  truncate: 300 }} {%- else -%} {{ post.content | strip_html | truncatewords: 60
+  }} {%- endif -%}
 </p>
 <hr />
 {%- endfor -%}
@@ -46,10 +45,9 @@ limit: 10 -%}
   >{% unless forloop.last %}, {% endunless %} {%- endfor -%} {%- endif -%}
 </div>
 <p>
-  {%- if p.summary -%} {{ p.summary | strip_html | strip_newlines | truncate:
-  200 }} {%- elsif p.excerpt -%} {{ p.excerpt | strip_html | strip_newlines |
-  truncate: 200 }} {%- else -%} {{ p.content | strip_html | truncatewords: 50 }}
-  {%- endif -%}
+  {%- if p.excerpt -%} {{ p.excerpt | strip_html | strip_newlines | truncate:
+  300 }} {%- else -%} {{ p.content | strip_html | truncatewords: 60 }} {%- endif
+  -%}
 </p>
 <hr />
 {%- endfor -%}
