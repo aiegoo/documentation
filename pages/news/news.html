@@ -51,8 +51,8 @@ or p.tags contains 'updates' or p.tags contains 'announcements') -%}
   -%}
 </p>
 <hr />
-{%- assign shown = shown | plus: 1 -%} {%- if shown >= 10 -%}{% break %}{% endif
--%} {%- endif -%} {%- endfor -%}
+{%- assign shown = shown | plus: 1 -%} {%- if shown >= 10 -%}{% break %}{%-
+endif -%} {%- endif -%} {%- endfor -%}
 
 <p>
   <a
