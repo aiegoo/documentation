@@ -1,0 +1,77 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "jekyll: bundle install",
+			"type": "shell",
+			"command": "$env:Path='C:/Tools/ruby34/bin;C:/ProgramData/chocolatey/bin;' + $env:Path; bundle config set path vendor/bundle; bundle install",
+			"options": {
+				"shell": {
+					"executable": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+					"args": [
+						"-NoProfile",
+						"-ExecutionPolicy",
+						"Bypass",
+						"-Command"
+					]
+				}
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "jekyll: install bundler",
+			"type": "shell",
+			"command": "$env:Path='C:/Tools/ruby34/bin;C:/ProgramData/chocolatey/bin;' + $env:Path; gem install bundler -N",
+			"options": {
+				"shell": {
+					"executable": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+					"args": [
+						"-NoProfile",
+						"-ExecutionPolicy",
+						"Bypass",
+						"-Command"
+					]
+				}
+			},
+			"group": "build"
+		},
+		{
+			"label": "jekyll: serve",
+			"type": "shell",
+			"command": "$env:Path='C:/Tools/ruby34/bin;C:/ProgramData/chocolatey/bin;' + $env:Path; bundle exec jekyll serve --livereload",
+			"isBackground": true,
+			"options": {
+				"shell": {
+					"executable": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+					"args": [
+						"-NoProfile",
+						"-ExecutionPolicy",
+						"Bypass",
+						"-Command"
+					]
+				}
+			},
+			"group": "build"
+		},
+		{
+			"label": "jekyll: clean vendor & lock",
+			"type": "shell",
+			"command": "try { Remove-Item -Recurse -Force .bundle -ErrorAction SilentlyContinue; Remove-Item -Recurse -Force vendor/bundle -ErrorAction SilentlyContinue; if (Test-Path Gemfile.lock) { Remove-Item -Force Gemfile.lock -ErrorAction SilentlyContinue } ; Write-Host 'Clean done'; exit 0 } catch { Write-Host 'Clean error (ignored)'; exit 0 }",
+			"options": {
+				"shell": {
+					"executable": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+					"args": [
+						"-NoProfile",
+						"-ExecutionPolicy",
+						"Bypass",
+						"-Command"
+					]
+				}
+			},
+			"group": "build"
+		}
+	]
+}

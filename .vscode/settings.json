@@ -29,5 +29,30 @@
     "taglogic",
     "typeof"
   ],
-  "ros.distro": "melodic"
+  "ros.distro": "melodic",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "args": ["-NoProfile"]
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\System32\\cmd.exe"
+      ]
+    }
+  },
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.8",
+    "path": "D:/jdk",
+      "default": true
+    }
+  ],
+  "java.import.gradle.java.home": "D:/jdk",
+  "java.import.maven.java.home": "D:/jdk",
+  "java.jdt.ls.java.home": "D:/jdk"
 }
