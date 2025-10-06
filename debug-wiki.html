@@ -1,0 +1,31 @@
+---
+layout: page
+title: Debug Wiki Collection
+permalink: debug-wiki.html
+---
+
+<h2>Debug: All Wiki Items</h2>
+{%- assign wiki_sorted = site.wiki | sort: "date" | reverse -%}
+<p>Total wiki items: {{ site.wiki.size }}</p>
+
+{%- for p in wiki_sorted limit: 20 -%}
+<div style="border: 1px solid #ccc; margin: 10px; padding: 10px;">
+  <h3>{{ p.title | default: p.name }}</h3>
+  <p><strong>Tags:</strong> {{ p.tags | join: ", " }}</p>
+  <p><strong>Date:</strong> {{ p.date | default: p.updated | default: p.last_modified_at }}</p>
+  <p><strong>Collection:</strong> {{ p.collection }}</p>
+  <p><strong>Layout:</strong> {{ p.layout }}</p>
+  <p><strong>Has news tag:</strong> {{ p.tags contains 'news' }}</p>
+  <p><strong>Has updates tag:</strong> {{ p.tags contains 'updates' }}</p>
+  <p><strong>Has announcements tag:</strong> {{ p.tags contains 'announcements' }}</p>
+  <p><strong>Should appear in news:</strong> 
+    {%- if p.tags and (p.tags contains 'news' or p.tags contains 'updates' or p.tags contains 'announcements') -%}
+      YES
+    {%- else -%}
+      NO
+    {%- endif -%}
+  </p>
+  <p><strong>URL:</strong> {{ p.url }}</p>
+  <hr>
+</div>
+{%- endfor -%}
