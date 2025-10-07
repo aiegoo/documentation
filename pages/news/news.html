@@ -31,28 +31,34 @@ in latest_posts limit: 5 -%}
 {%- endfor -%}
 
 <h2>From Wiki & Diary (tagged)</h2>
-{%- assign wiki_sorted = site.wiki | sort: "date" | reverse -%} {%- assign shown
-= 0 -%} {%- for p in wiki_sorted -%} {%- if p.tags and (p.tags contains 'news'
-or p.tags contains 'updates' or p.tags contains 'announcements') -%}
-<h3>
-  <a class="post-link" href="{{ p.url | relative_url }}">{{ p.title }}</a>
-</h3>
-<div class="post-meta">
-  {{ p.date | default: p.updated | default: p.last_modified_at | date: "%b %-d,
-  %Y" }} {% if p.tags and p.tags.size > 0 %} / {% for tag in p.tags %}
-  <a
-    href="{{ ('tag_' | append: (tag | slugify) | append: '.html') | relative_url }}"
-    >{{ tag }}</a
-  >{% unless forloop.last %}, {% endunless %} {% endfor %} {% endif %}
-</div>
-<p>
-  {% assign ex2 = p.excerpt | strip_html | strip_newlines | strip %} {% if ex2
-  != '' %} {{ ex2 | truncate: 300 }} {% else %} {{ p.content | strip_html |
-  truncatewords: 60 }} {% endif %}
-</p>
-<hr />
-{%- assign shown = shown | plus: 1 -%} {%- if shown >= 10 -%}{% break %}{%-
-endif -%} {%- endif -%} {%- endfor -%}
+{%- assign wiki_sorted = site.wiki | sort: "updated" | reverse -%}
+{%- assign shown = 0 -%}
+{%- for p in wiki_sorted -%}
+  {%- if p.tags and (p.tags contains 'news' or p.tags contains 'updates' or p.tags contains 'announcements') -%}
+    <h3>
+      <a class="post-link" href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a>
+    </h3>
+    <div class="post-meta">
+      {{ p.date | default: p.updated | default: p.last_modified_at | date: "%b %-d, %Y" }}
+      {% if p.tags and p.tags.size > 0 %}
+        / {% for tag in p.tags %}
+        <a href="{{ ('tag_' | append: (tag | slugify) | append: '.html') | relative_url }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      {% endif %}
+    </div>
+    <p>
+      {% assign ex2 = p.excerpt | strip_html | strip_newlines | strip %}
+      {% if ex2 != '' %}
+        {{ ex2 | truncate: 300 }}
+      {% else %}
+        {{ p.content | strip_html | truncatewords: 60 }}
+      {% endif %}
+    </p>
+    <hr />
+    {%- assign shown = shown | plus: 1 -%}
+    {%- if shown >= 10 -%}{% break %}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
 
 <p>
   <a

@@ -1,0 +1,59 @@
+---
+layout: page
+title: Debug News Filter
+permalink: debug-news.html
+---
+
+<h2>Debug: News Filter Logic</h2>
+
+<h3>All Wiki Items (first 10)</h3>
+{%- assign wiki_sorted = site.wiki | sort: "date" | reverse -%}
+<p><strong>Total wiki items:</strong> {{ site.wiki.size }}</p>
+
+{%- for p in wiki_sorted limit: 10 -%}
+<div style="border: 1px solid #ccc; margin: 10px; padding: 10px;">
+  <h4>{{ p.title | default: p.name }}</h4>
+  <p><strong>Tags:</strong> {{ p.tags | join: ", " }}</p>
+  <p><strong>Date:</strong> {{ p.date | default: p.updated | default: p.last_modified_at }}</p>
+  <p><strong>Layout:</strong> {{ p.layout }}</p>
+  <p><strong>Collection:</strong> {{ p.collection }}</p>
+  <p><strong>Categories:</strong> {{ p.categories | join: ", " }}</p>
+  <p><strong>Auto imported:</strong> {{ p.auto_imported }}</p>
+  
+  <p><strong>Tag checks:</strong></p>
+  <ul>
+    <li>Has tags: {{ p.tags != null and p.tags != empty }}</li>
+    <li>Contains 'news': {{ p.tags contains 'news' }}</li>
+    <li>Contains 'updates': {{ p.tags contains 'updates' }}</li>
+    <li>Contains 'announcements': {{ p.tags contains 'announcements' }}</li>
+  </ul>
+  
+  <p><strong>Filter result:</strong> 
+    {%- if p.tags and (p.tags contains 'news' or p.tags contains 'updates' or p.tags contains 'announcements') -%}
+      ✅ SHOULD APPEAR IN NEWS
+    {%- else -%}
+      ❌ Will not appear in news
+    {%- endif -%}
+  </p>
+  
+  <p><strong>URL:</strong> {{ p.url }}</p>
+  <hr>
+</div>
+{%- endfor -%}
+
+<h3>Items that should appear in news (filtered)</h3>
+{%- assign shown = 0 -%}
+{%- for p in wiki_sorted -%}
+  {%- if p.tags and (p.tags contains 'news' or p.tags contains 'updates' or p.tags contains 'announcements') -%}
+    <div style="background: #e8f5e8; border: 1px solid #4caf50; margin: 10px; padding: 10px;">
+      <h4>{{ p.title | default: p.name }}</h4>
+      <p><strong>Tags:</strong> {{ p.tags | join: ", " }}</p>
+      <p><strong>Date:</strong> {{ p.date | default: p.updated | default: p.last_modified_at }}</p>
+      <p><strong>Auto imported:</strong> {{ p.auto_imported }}</p>
+    </div>
+    {%- assign shown = shown | plus: 1 -%}
+    {%- if shown >= 20 -%}{% break %}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<p><strong>Total items that match filter:</strong> {{ shown }}</p>

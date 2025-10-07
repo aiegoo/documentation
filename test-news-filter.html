@@ -1,0 +1,50 @@
+---
+layout: page
+title: Test News Filter
+permalink: test-news.html
+---
+
+<h2>Test: Simple News Filter</h2>
+
+<h3>Method 1: Basic loop through site.wiki</h3>
+{%- for p in site.wiki -%}
+  {%- if p.auto_imported == true -%}
+    <div style="background: #fff3cd; border: 1px solid #ffc107; margin: 5px; padding: 8px;">
+      <h4>{{ p.title | default: p.name }}</h4>
+      <p><strong>Tags:</strong> {{ p.tags | join: ", " }}</p>
+      <p><strong>Date:</strong> {{ p.date | default: p.updated }}</p>
+      <p><strong>Auto-imported:</strong> {{ p.auto_imported }}</p>
+    </div>
+  {%- endif -%}
+{%- endfor -%}
+
+<h3>Method 2: Filter by tags (exact same logic as news.html)</h3>
+{%- assign wiki_sorted = site.wiki | sort: "date" | reverse -%}
+{%- for p in wiki_sorted -%}
+  {%- if p.tags and (p.tags contains 'news' or p.tags contains 'updates' or p.tags contains 'announcements') -%}
+    <div style="background: #d4edda; border: 1px solid #28a745; margin: 5px; padding: 8px;">
+      <h4>{{ p.title | default: p.name }}</h4>
+      <p><strong>Tags:</strong> {{ p.tags | join: ", " }}</p>
+      <p><strong>Date:</strong> {{ p.date | default: p.updated }}</p>
+      <p><strong>Auto-imported:</strong> {{ p.auto_imported }}</p>
+      <p><strong>Source file:</strong> {{ p.source_file }}</p>
+    </div>
+  {%- endif -%}
+{%- endfor -%}
+
+<h3>Method 3: Check specific tags individually</h3>
+{%- for p in site.wiki -%}
+  {%- if p.auto_imported == true -%}
+    <div style="background: #f8d7da; border: 1px solid #dc3545; margin: 5px; padding: 8px;">
+      <h4>{{ p.title | default: p.name }}</h4>
+      <p><strong>All tags:</strong> {{ p.tags | join: " | " }}</p>
+      <p><strong>Individual checks:</strong></p>
+      <ul>
+        <li>news: {{ p.tags contains 'news' }}</li>
+        <li>updates: {{ p.tags contains 'updates' }}</li>
+        <li>announcements: {{ p.tags contains 'announcements' }}</li>
+      </ul>
+      <p><strong>Combined condition:</strong> {{ p.tags and (p.tags contains 'news' or p.tags contains 'updates' or p.tags contains 'announcements') }}</p>
+    </div>
+  {%- endif -%}
+{%- endfor -%}
