@@ -1,0 +1,70 @@
+---
+layout: page
+title: Debug Tag Filter
+permalink: debug-tag-filter.html
+---
+
+<h2>Debug: Tag Filter Issue</h2>
+
+<h3>Files that appear on index (from latest.html logic)</h3>
+{% assign documents = site.wiki | reverse %}
+{% for pg in documents limit: 5 | sort: "updated" %}{% if pg.public != false and pg.title != 'wiki' %}
+<div style="background: #e8f5e8; border: 1px solid #4caf50; margin: 5px; padding: 8px;">
+  <h4>{{ pg.title | default: pg.name }}</h4>
+  <p><strong>Tags raw:</strong> {{ pg.tags }}</p>
+  <p><strong>Tags type:</strong> {{ pg.tags | jsonify }}</p>
+  <p><strong>Tags join:</strong> {{ pg.tags | join: ", " }}</p>
+  <p><strong>Auto imported:</strong> {{ pg.auto_imported }}</p>
+  <p><strong>Updated:</strong> {{ pg.updated }}</p>
+</div>
+{% endif %}{% endfor %}
+
+<h3>Test the exact news.html filter on same files</h3>
+{%- assign wiki_sorted = site.wiki | sort: "updated" | reverse -%}
+{%- assign shown = 0 -%}
+{%- for p in wiki_sorted -%}
+  {%- if p.auto_imported == true -%}
+    <div style="background: #fff3cd; border: 1px solid #ffc107; margin: 5px; padding: 8px;">
+      <h4>{{ p.title | default: p.name }}</h4>
+      <p><strong>Tags:</strong> {{ p.tags | jsonify }}</p>
+      <p><strong>Has tags check:</strong> {{ p.tags != null and p.tags != empty }}</p>
+      <p><strong>Contains 'news':</strong> {{ p.tags contains 'news' }}</p>
+      <p><strong>Contains 'updates':</strong> {{ p.tags contains 'updates' }}</p>
+      <p><strong>Contains 'announcements':</strong> {{ p.tags contains 'announcements' }}</p>
+      
+      <p><strong>Full condition result:</strong> 
+        {{ p.tags and (p.tags contains 'news' or p.tags contains 'updates' or p.tags contains 'announcements') }}
+      </p>
+      
+      <p><strong>Broken down:</strong></p>
+      <ul>
+        <li>p.tags: {{ p.tags }}</li>
+        <li>p.tags (boolean): {{ p.tags }}</li>
+        <li>news OR updates OR announcements: {{ p.tags contains 'news' or p.tags contains 'updates' or p.tags contains 'announcements' }}</li>
+        <li>AND result: {{ p.tags and (p.tags contains 'news' or p.tags contains 'updates' or p.tags contains 'announcements') }}</li>
+      </ul>
+      
+      {%- if p.tags and (p.tags contains 'news' or p.tags contains 'updates' or p.tags contains 'announcements') -%}
+        <p style="color: green; font-weight: bold;">✅ SHOULD APPEAR IN NEWS</p>
+      {%- else -%}
+        <p style="color: red; font-weight: bold;">❌ WILL NOT APPEAR IN NEWS</p>
+      {%- endif -%}
+    </div>
+    {%- assign shown = shown | plus: 1 -%}
+    {%- if shown >= 10 -%}{% break %}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<h3>Simplified test: Just check for auto_imported files</h3>
+{%- for p in site.wiki -%}
+  {%- if p.auto_imported == true -%}
+    <div style="background: #f8d7da; border: 1px solid #dc3545; margin: 5px; padding: 8px;">
+      <h4>{{ p.title | default: p.name }}</h4>
+      <p><strong>This file has auto_imported = true, so it should be one of our injected files</strong></p>
+      <p><strong>Raw tags value:</strong> "{{ p.tags }}"</p>
+      <p><strong>Tags as JSON:</strong> {{ p.tags | jsonify }}</p>
+      <p><strong>First tag:</strong> {{ p.tags[0] }}</p>
+      <p><strong>Tag count:</strong> {{ p.tags.size }}</p>
+    </div>
+  {%- endif -%}
+{%- endfor -%}
