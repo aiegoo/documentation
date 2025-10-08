@@ -13,9 +13,10 @@ excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]]
-date: 2025-10-08T07:37:25 +0900
-updated: 2025-10-08 07:37
+date: 2025-10-08T14:32:59 +0900
+updated: 2025-10-08 14:32
 source_file: "ACHIEVEMENT_SUMMARY.md"
+source_last_modified: "2025-10-08T14:32:59+0900"
 auto_imported: true
 ---
 * TOC
@@ -35,6 +36,7 @@ auto_imported: true
 - **From**: Broken vim/tmux environment emergency
 - **To**: Fully operational Korean learning platform with self-hosted LLMs
 - **Status**: All systems operational, ready for Korean language learning
+- **Linked Issues**: [#31](https://github.com/aiegoo/hhi-engineroom/issues/31), [#29](https://github.com/aiegoo/hhi-engineroom/issues/29), [#28](https://github.com/aiegoo/hhi-engineroom/issues/28), [#26](https://github.com/aiegoo/hhi-engineroom/issues/26), [#24](https://github.com/aiegoo/hhi-engineroom/issues/24), [#21](https://github.com/aiegoo/hhi-engineroom/issues/21)
 
 ## 🚀 Current System Status
 

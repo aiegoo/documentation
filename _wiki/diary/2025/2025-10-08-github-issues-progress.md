@@ -13,9 +13,10 @@ excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]]
-date: 2025-10-08T07:37:31 +0900
-updated: 2025-10-08 07:37
+date: 2025-10-08T14:30:15 +0900
+updated: 2025-10-08 14:30
 source_file: "GITHUB_ISSUES_PROGRESS.md"
+source_last_modified: "2025-10-08T14:30:15+0900"
 auto_imported: true
 ---
 * TOC
@@ -31,7 +32,8 @@ auto_imported: true
 
 ## 📋 Issues Updated with Detailed Progress Comments
 
-### ✅ **Issue #31**: 🎯 EPIC: kor2Unity Self-hosted AI Integration Sprint
+### ✅ **[Issue #31](https://github.com/aiegoo/hhi-engineroom/issues/31)**: 🎯 EPIC: kor2Unity Self-hosted AI Integration Sprint
+
 - **Status**: **COMPLETED** - All components operational  
 - **Added Progress**:
   - ✅ Self-hosted Llama 2 7B-HF loaded and serving Korean content
@@ -40,6 +42,7 @@ auto_imported: true
   - ✅ Non-blocking testing framework implemented
   - ✅ All service endpoints operational (8201-8204)
 - **CLI Commands Documented**:
+
   ```bash
   cd /home/hsyyu/repo/kor2unity
   python scripts/kor2unity_status.py      # System health
@@ -47,7 +50,8 @@ auto_imported: true
   python scripts/test_kor2unity_api.py    # API testing
   ```
 
-### ✅ **Issue #29**: Integrate Existing TUI Infrastructure with kor2Unity
+### ✅ **[Issue #29](https://github.com/aiegoo/hhi-engineroom/issues/29)**: Integrate Existing TUI Infrastructure with kor2Unity
+
 - **Status**: **FULLY OPERATIONAL** - TUI with Korean learning capabilities
 - **Added Progress**:
   - ✅ TUI application integrated (170 lines of Python)
@@ -56,6 +60,7 @@ auto_imported: true
   - ✅ Korean conversation, grammar, vocabulary features working
   - ✅ Session persistence and history tracking active
 - **Usage Commands Documented**:
+
   ```bash
   cd /home/hsyyu/repo/kor2unity
   python scripts/launch_tui.py            # Launch TUI
@@ -63,7 +68,8 @@ auto_imported: true
   # TUI Commands: /korean, /context, /history, /help
   ```
 
-### ✅ **Issue #28**: Conda Environment Configuration for kor2Unity Models
+### ✅ **[Issue #28](https://github.com/aiegoo/hhi-engineroom/issues/28)**: Conda Environment Configuration for kor2Unity Models
+
 - **Status**: **FULLY CONFIGURED** - minigpt4 environment operational
 - **Added Progress**:
   - ✅ minigpt4 conda environment active and validated
@@ -72,6 +78,7 @@ auto_imported: true
   - ✅ All ML dependencies installed and working
   - ✅ Environment auto-detection in all scripts
 - **Verification Commands Documented**:
+
   ```bash
   conda activate minigpt4
   python -c "import torch; print(f'CUDA: {torch.cuda.is_available()}')"
@@ -79,7 +86,8 @@ auto_imported: true
   python scripts/kor2unity_status.py  # Shows: ✅ Conda Environment | minigpt4
   ```
 
-### ✅ **Issue #26**: UI Architecture Decision: TUI vs Web UI for Korean Learning
+### ✅ **[Issue #26](https://github.com/aiegoo/hhi-engineroom/issues/26)**: UI Architecture Decision: TUI vs Web UI for Korean Learning
+
 - **Status**: **RESOLVED** - TUI-first approach implemented
 - **Added Progress**:
   - ✅ Decision made: Terminal User Interface with future web migration
@@ -93,7 +101,8 @@ auto_imported: true
   - Direct AI integration with self-hosted models
   - Session persistence and multi-endpoint support
 
-### ✅ **Issue #24**: LLM Integration: Self-hosted Model Strategy for Korean Learning
+### ✅ **[Issue #24](https://github.com/aiegoo/hhi-engineroom/issues/24)**: LLM Integration: Self-hosted Model Strategy for Korean Learning
+
 - **Status**: **FULLY OPERATIONAL** - Self-hosted Korean AI serving
 - **Added Progress**:
   - ✅ Llama 2 7B-HF successfully loaded (13.5GB model)
@@ -102,6 +111,7 @@ auto_imported: true
   - ✅ CUDA acceleration with float16 optimization
   - ✅ Multi-endpoint fallback architecture operational
 - **Model Performance Documented**:
+
   ```bash
   cd /home/hsyyu/repo/kor2unity
   python scripts/llm_api.py  # Loading output shows successful CUDA loading
@@ -109,7 +119,8 @@ auto_imported: true
   # Health: curl http://localhost:8204/health
   ```
 
-### ✅ **Issue #21**: 🧠 LLM Enhancement & Korean Language Features Branch
+### ✅ **[Issue #21](https://github.com/aiegoo/hhi-engineroom/issues/21)**: 🧠 LLM Enhancement & Korean Language Features Branch
+
 - **Status**: **ALL FEATURES IMPLEMENTED** - Korean platform complete
 - **Added Progress**:
   - ✅ All LLM enhancement objectives achieved
@@ -118,6 +129,7 @@ auto_imported: true
   - ✅ Interactive Korean learning interface operational
   - ✅ Advanced AI capabilities with cultural context
 - **Feature Validation Documented**:
+
   ```bash
   cd /home/hsyyu/repo/kor2unity
   tmux attach-session -t kor2unity-tui
@@ -128,12 +140,14 @@ auto_imported: true
 ## 🎯 Progress Documentation Standards Applied
 
 ### 📁 **Specific File Paths Provided**
+
 - All script locations: `/home/hsyyu/repo/kor2unity/scripts/`
 - Configuration files: Conda environment paths
 - Model locations: `/home/hsyyu/llama2-7b-hf/`, `/home/hsyyu/minigpt/`
 - Documentation: `/home/hsyyu/repo/kor2unity/docs/`
 
 ### 💻 **Exact CLI Commands Documented**
+
 - System status: `python scripts/kor2unity_status.py`
 - Korean learning: `tmux attach-session -t kor2unity-tui`
 - API testing: `python scripts/test_kor2unity_api.py`
@@ -141,6 +155,7 @@ auto_imported: true
 - Service management: `python scripts/llm_api.py`
 
 ### 📊 **Expected Outputs Specified**
+
 - Health checks with specific JSON responses
 - Model loading progress with checkpoint sharding
 - Korean learning interactions with example dialogues
@@ -148,6 +163,7 @@ auto_imported: true
 - GPU and memory usage indicators
 
 ### 🧪 **Testing Procedures Established**
+
 - Functional testing commands for each component
 - Korean learning validation with example interactions
 - Performance metric collection and interpretation
@@ -155,6 +171,7 @@ auto_imported: true
 - End-to-end workflow testing procedures
 
 ### ✅ **Current Operational Status Confirmed**
+
 - All services verified as operational through testing
 - Korean learning platform fully functional
 - Self-hosted AI models loaded and responding
@@ -163,19 +180,22 @@ auto_imported: true
 
 ## 📈 Impact of Progress Documentation
 
-### **For Development Team**:
+### **For Development Team**
+
 - Clear understanding of current system capabilities
 - Specific commands for testing and validation
 - Detailed troubleshooting information
 - Progress tracking with measurable outcomes
 
-### **For Project Management**:
+### **For Project Management**
+
 - Comprehensive status updates on all major initiatives
 - Evidence-based completion verification
 - Clear next steps and dependencies identified
 - Risk mitigation through detailed testing procedures
 
-### **For Future Development**:
+### **For Future Development**
+
 - Complete technical reference for system components
 - Established testing and validation procedures
 - Clear architecture decisions with rationale
@@ -186,7 +206,7 @@ auto_imported: true
 
 ---
 
-## 🆕 Label: `next-action` (October 7, 2025)
+## 🆕 Label: [`next-action`](https://github.com/aiegoo/hhi-engineroom/labels/next-action) (October 7, 2025)
 
 Tracking follow-up work derived from the recent service-orchestration session. Each bullet should become or map to a dedicated GitHub issue under the `next-action` label.
 

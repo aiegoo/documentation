@@ -13,9 +13,10 @@ excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]]
-date: 2025-10-08T07:37:29 +0900
-updated: 2025-10-08 07:37
+date: 2025-10-08T14:33:26 +0900
+updated: 2025-10-08 14:33
 source_file: "DOCKER_RESTORATION_PROGRESS.md"
+source_last_modified: "2025-10-08T14:33:26+0900"
 auto_imported: true
 ---
 * TOC
@@ -32,6 +33,7 @@ auto_imported: true
 **Date**: October 6, 2025  
 **Branch**: environment-setup-v1  
 **Milestone**: Docker-WSL-Restoration-v1.0  
+**Linked Issues**: [#31](https://github.com/aiegoo/hhi-engineroom/issues/31), [#29](https://github.com/aiegoo/hhi-engineroom/issues/29), [#26](https://github.com/aiegoo/hhi-engineroom/issues/26)
 
 ## 🎯 Restoration Objective
 

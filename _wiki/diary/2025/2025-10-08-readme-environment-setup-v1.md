@@ -13,9 +13,10 @@ excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]]
-date: 2025-10-08T07:37:32 +0900
-updated: 2025-10-08 07:37
+date: 2025-10-08T14:33:09 +0900
+updated: 2025-10-08 14:33
 source_file: "README-environment-setup-v1.md"
+source_last_modified: "2025-10-08T14:33:09+0900"
 auto_imported: true
 ---
 * TOC
@@ -34,6 +35,15 @@ auto_imported: true
 - **Purpose**: Dedicated port allocation strategy and Python 3.13 compatibility
 - **Date**: August 7, 2025
 - **Status**: Active development with working FastAPI backend
+- **Linked Issues**: [#31](https://github.com/aiegoo/hhi-engineroom/issues/31), [#29](https://github.com/aiegoo/hhi-engineroom/issues/29), [#28](https://github.com/aiegoo/hhi-engineroom/issues/28), [#26](https://github.com/aiegoo/hhi-engineroom/issues/26), [#24](https://github.com/aiegoo/hhi-engineroom/issues/24)
+
+## Related GitHub Issues
+
+- [#31 – EPIC: kor2Unity Self-hosted AI Integration Sprint](https://github.com/aiegoo/hhi-engineroom/issues/31)
+- [#29 – Integrate Existing TUI Infrastructure with kor2Unity](https://github.com/aiegoo/hhi-engineroom/issues/29)
+- [#28 – Conda Environment Configuration for kor2Unity Models](https://github.com/aiegoo/hhi-engineroom/issues/28)
+- [#26 – UI Architecture Decision: TUI vs Web UI](https://github.com/aiegoo/hhi-engineroom/issues/26)
+- [#24 – LLM Integration: Self-hosted Model Strategy](https://github.com/aiegoo/hhi-engineroom/issues/24)
 
 ## 🎯 Branch-Specific Features
 

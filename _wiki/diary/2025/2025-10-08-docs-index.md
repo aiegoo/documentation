@@ -13,9 +13,10 @@ excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]]
-date: 2025-10-08T07:37:29 +0900
-updated: 2025-10-08 07:37
+date: 2025-10-08T14:33:51 +0900
+updated: 2025-10-08 14:33
 source_file: "DOCS-INDEX.md"
+source_last_modified: "2025-10-08T14:33:51+0900"
 auto_imported: true
 ---
 * TOC
@@ -34,6 +35,7 @@ auto_imported: true
 - **Status**: ✅ Active with working backend (port 8201)
 - **Focus**: Dedicated port allocation + Python 3.13 compatibility
 - **Date**: August 7, 2025
+- **Linked Issues**: [#31](https://github.com/aiegoo/hhi-engineroom/issues/31), [#29](https://github.com/aiegoo/hhi-engineroom/issues/29), [#28](https://github.com/aiegoo/hhi-engineroom/issues/28), [#26](https://github.com/aiegoo/hhi-engineroom/issues/26)
 
 ## 📋 Available Documentation
 

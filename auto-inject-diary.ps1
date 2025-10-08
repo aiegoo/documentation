@@ -21,7 +21,9 @@
 param(
     [string]$SourceDir = "D:\repos\aiegoo\uconGPT\eng2Fix\kor2fix",
     [string]$DestDir = "_wiki/diary/2025",
-    [switch]$WatchMode = $false
+    [switch]$WatchMode = $false,
+    [string]$Since,
+    [switch]$ResetBaseline
 )
 
 # Get the documentation root directory
@@ -32,6 +34,62 @@ $DestPath = Join-Path $DocRoot $DestDir
 if (-not (Test-Path $DestPath)) {
     New-Item -ItemType Directory -Path $DestPath -Force
     Write-Host "Created destination directory: $DestPath" -ForegroundColor Green
+}
+
+# Ensure state directory exists
+$StateDir = Join-Path $DocRoot "var"
+if (-not (Test-Path $StateDir)) {
+    New-Item -ItemType Directory -Path $StateDir -Force | Out-Null
+}
+$StateFile = Join-Path $StateDir "auto-import-last-run.txt"
+
+function Get-LastRunTime {
+    if (Test-Path $StateFile) {
+        $raw = Get-Content $StateFile -Raw
+        $parsed = [DateTime]::MinValue
+        if ([DateTime]::TryParse($raw, [ref]$parsed)) {
+            return $parsed
+        }
+    } else {
+        $existing = Get-ChildItem -Path $DestPath -Filter "*.md" -File -Recurse |
+            Sort-Object LastWriteTime -Descending |
+            Select-Object -First 1
+        if ($existing) {
+            return $existing.LastWriteTime
+        }
+    }
+    return [DateTime]::MinValue
+}
+
+function Save-LastRunTime {
+    param([DateTime]$Timestamp)
+
+    if ($Timestamp -gt $Script:LastRunTime) {
+        $Script:LastRunTime = $Timestamp
+        $Timestamp.ToString('o') | Set-Content -Path $StateFile
+    }
+}
+
+$Script:LastRunTime = Get-LastRunTime
+$Script:ProcessedMaxTime = $Script:LastRunTime
+$Script:CurrentBaseline = $Script:LastRunTime
+
+if ($ResetBaseline.IsPresent) {
+    $Script:LastRunTime = [DateTime]::MinValue
+    $Script:ProcessedMaxTime = $Script:LastRunTime
+    $Script:CurrentBaseline = $Script:LastRunTime
+    Write-Host "Baseline reset; all source files will be reconsidered." -ForegroundColor Yellow
+} elseif ($Since) {
+    $parsedOffset = [DateTimeOffset]::MinValue
+    if (-not [DateTimeOffset]::TryParse($Since, [ref]$parsedOffset)) {
+        Write-Error "Unable to parse provided -Since value '$Since'. Use an ISO timestamp like 2025-10-08T09:23:51+09:00."
+        exit 1
+    }
+    $parsedSince = $parsedOffset.LocalDateTime
+    $Script:LastRunTime = $parsedSince
+    $Script:ProcessedMaxTime = $parsedSince
+    $Script:CurrentBaseline = $parsedSince
+    Write-Host "Baseline overridden to $($parsedOffset.ToString('yyyy-MM-dd HH:mm:ss zzz'))." -ForegroundColor Yellow
 }
 
 function Get-SafeFileName {
@@ -75,12 +133,21 @@ function Inject-Frontmatter {
         $filename = $fileInfo.Name
         $safeFilename = Get-SafeFileName $filename
         $title = Get-TitleFromFilename $filename
+        $baseline = $Script:CurrentBaseline
+        if ($fileInfo.LastWriteTime -le $baseline) {
+            Write-Host "Skipping $filename (no newer changes since last run)." -ForegroundColor Yellow
+            return $false
+        }
         
-        # Generate dates
-        $date = Get-Date -Format "yyyy-MM-ddTHH:mm:ss"
-        $updated = Get-Date -Format "yyyy-MM-dd HH:mm"
-        $journal = Get-Date -Format "ddd, MMM dd, yy"
-        $filenameDatePrefix = Get-Date -Format "yyyy-MM-dd"
+        # Generate dates based on the source file's last modification time
+        $sourceDate = $fileInfo.LastWriteTime
+        $date = $sourceDate.ToString('yyyy-MM-ddTHH:mm:ss')
+        $updated = $sourceDate.ToString('yyyy-MM-dd HH:mm')
+        $journal = $sourceDate.ToString('ddd, MMM dd, yy')
+        $filenameDatePrefix = $sourceDate.ToString('yyyy-MM-dd')
+        $offset = [System.TimeZoneInfo]::Local.GetUtcOffset($sourceDate)
+        $sign = if ($offset.Ticks -ge 0) { '+' } else { '-' }
+        $offsetString = '{0}{1:00}{2:00}' -f $sign, [Math]::Abs($offset.Hours), [Math]::Abs($offset.Minutes)
         
         # Create permalink
         $permalink = "$filenameDatePrefix-$safeFilename.html"
@@ -102,9 +169,10 @@ excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]]
-date: $date +0900
+date: $date $offsetString
 updated: $updated
 source_file: "$filename"
+source_last_modified: "$($sourceDate.ToString('o'))"
 auto_imported: true
 ---
 * TOC
@@ -124,21 +192,26 @@ auto_imported: true
             return $false
         }
         
-        # Combine frontmatter with original content
-        $newContent = $frontmatter + $content
+    # Combine frontmatter with original content
+    $newContent = $frontmatter + $content
         
-        # Create destination filename with date prefix
-        $destFilename = "$filenameDatePrefix-$safeFilename.md"
-        $finalDestPath = Join-Path $DestFile $destFilename
-        
-        # Write the new file
-        $newContent | Out-File -FilePath $finalDestPath -Encoding UTF8
+    # Create destination filename with date prefix
+    $destFilename = "$filenameDatePrefix-$safeFilename.md"
+    $finalDestPath = Join-Path $DestFile $destFilename
+
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($finalDestPath, $newContent, $utf8NoBom)
         
         Write-Host "✓ Processed: $filename -> $destFilename" -ForegroundColor Green
         Write-Host "  Title: $title" -ForegroundColor Cyan
         Write-Host "  Permalink: $permalink" -ForegroundColor Cyan
         Write-Host "  Destination: $finalDestPath" -ForegroundColor Gray
         
+        if ($sourceDate -gt $Script:ProcessedMaxTime) {
+            $Script:ProcessedMaxTime = $sourceDate
+        }
+        Save-LastRunTime $Script:ProcessedMaxTime
+
         return $true
         
     } catch {
@@ -151,16 +224,19 @@ function Process-ExistingFiles {
     param([string]$sourceDir, [string]$destDir)
     
     Write-Host "Processing existing markdown files in: $sourceDir" -ForegroundColor Yellow
+    $Script:CurrentBaseline = $Script:LastRunTime
     
     if (-not (Test-Path $sourceDir)) {
         Write-Error "Source directory does not exist: $sourceDir"
         return
     }
     
-    $markdownFiles = Get-ChildItem -Path $sourceDir -Filter "*.md" -File
+    $markdownFiles = Get-ChildItem -Path $sourceDir -Filter "*.md" -File -Recurse |
+        Where-Object { $_.LastWriteTime -gt $Script:LastRunTime } |
+        Sort-Object LastWriteTime
     
     if ($markdownFiles.Count -eq 0) {
-        Write-Host "No markdown files found in source directory." -ForegroundColor Yellow
+        Write-Host "No markdown files newer than $($Script:LastRunTime.ToString('g'))." -ForegroundColor Yellow
         return
     }
     
@@ -178,6 +254,7 @@ function Process-ExistingFiles {
     Write-Host "`nProcessing complete!" -ForegroundColor Green
     Write-Host "  Processed: $processed files" -ForegroundColor Green
     Write-Host "  Skipped: $skipped files" -ForegroundColor Yellow
+    $Script:CurrentBaseline = $Script:LastRunTime
 }
 
 function Start-FileWatcher {
@@ -190,6 +267,7 @@ function Start-FileWatcher {
     $watcher = New-Object System.IO.FileSystemWatcher
     $watcher.Path = $sourceDir
     $watcher.Filter = "*.md"
+    $watcher.IncludeSubdirectories = $true
     $watcher.NotifyFilter = [System.IO.NotifyFilters]::CreationTime -bor [System.IO.NotifyFilters]::LastWrite
     $watcher.EnableRaisingEvents = $true
     
@@ -205,6 +283,7 @@ function Start-FileWatcher {
         Start-Sleep -Milliseconds 500
         
         if (Test-Path $path) {
+            $script:CurrentBaseline = $script:LastRunTime
             Inject-Frontmatter -SourceFile $path -DestFile $destDir
         }
     }
@@ -224,6 +303,7 @@ function Start-FileWatcher {
         $watcher.Dispose()
         Get-EventSubscriber | Unregister-Event
         Write-Host "`nFile watcher stopped." -ForegroundColor Yellow
+        Save-LastRunTime $Script:ProcessedMaxTime
     }
 }
 
@@ -240,6 +320,7 @@ if ($WatchMode) {
     Write-Host ""
     Start-FileWatcher -sourceDir $SourceDir -destDir $DestPath
 } else {
-    Write-Host "`nTo enable real-time monitoring, run with -WatchMode switch" -ForegroundColor Gray
-    Write-Host "Example: .\auto-inject-diary.ps1 -WatchMode" -ForegroundColor Gray
+    Save-LastRunTime $Script:ProcessedMaxTime
+    Write-Host '`nTo enable real-time monitoring, run with -WatchMode switch' -ForegroundColor Gray
+    Write-Host 'Example: .\auto-inject-diary.ps1 -WatchMode' -ForegroundColor Gray
 }

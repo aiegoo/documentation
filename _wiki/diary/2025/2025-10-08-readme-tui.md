@@ -13,9 +13,10 @@ excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]]
-date: 2025-10-08T07:37:33 +0900
-updated: 2025-10-08 07:37
+date: 2025-10-08T14:33:18 +0900
+updated: 2025-10-08 14:33
 source_file: "README_TUI.md"
+source_last_modified: "2025-10-08T14:33:18+0900"
 auto_imported: true
 ---
 * TOC
@@ -31,6 +32,8 @@ auto_imported: true
 
 ## 🎯 Overview
 Advanced Text User Interface (TUI) for Korean language learning with multi-backend AI support. Built with Python's Textual framework for a modern terminal experience.
+
+- **Linked Issues**: [#31](https://github.com/aiegoo/hhi-engineroom/issues/31), [#29](https://github.com/aiegoo/hhi-engineroom/issues/29), [#26](https://github.com/aiegoo/hhi-engineroom/issues/26)
 
 ![Korean TUI Demo](docs/screenshots/korean-tui-demo.png) *(Screenshots will be added)*
 
