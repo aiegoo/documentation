@@ -60,6 +60,10 @@ in latest_posts limit: 5 -%}
   color: #333;
   line-height: 1.55;
   margin-bottom: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .news-card .tag-list a {
   display: inline-block;
@@ -115,16 +119,35 @@ in latest_posts limit: 5 -%}
         &nbsp;•&nbsp; {{ p.source_file }}
       {%- endif -%}
     </div>
-    <p class="excerpt">
-      {%- assign ex2 = p.excerpt | strip_html | strip_newlines | strip -%}
-      {%- if ex2 != '' -%}
-        {{ ex2 | truncate: 300 }}
+    {%- capture body_snippet -%}
+      {%- if p.content contains '<!--more-->' -%}
+        {{ p.content | split: '<!--more-->' | last }}
+      {%- elsif p.excerpt -%}
+        {{ p.excerpt }}
       {%- elsif p.summary -%}
-        {{ p.summary | strip_html | truncate: 300 }}
+        {{ p.summary }}
       {%- else -%}
-        {{ p.content | strip_html | truncatewords: 60 }}
+        {{ p.content }}
       {%- endif -%}
-    </p>
+    {%- endcapture -%}
+    {%- assign snippet_plain = body_snippet | strip_html -%}
+    {%- assign snippet_lines = snippet_plain | split: '\n' -%}
+    {%- capture cleaned -%}
+      {%- for line in snippet_lines -%}
+        {%- assign trimmed = line | strip -%}
+        {%- unless trimmed == ''
+            or trimmed == '* TOC'
+            or trimmed contains 'Auto-imported'
+            or trimmed contains 'Original filename'
+            or trimmed contains 'Import date'
+            or trimmed contains 'Source:' -%}
+          {{ trimmed }} 
+        {%- endunless -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+    {%- assign body_text = cleaned | strip_newlines | strip -%}
+    {%- assign body_text = body_text | replace: '  ', ' ' | replace: '  ', ' ' -%}
+    <p class="excerpt">{{ body_text | strip | truncatewords: 45 }}</p>
     {%- if p.tags and p.tags.size > 0 -%}
     <div class="tag-list">
       {%- for tag in p.tags -%}
