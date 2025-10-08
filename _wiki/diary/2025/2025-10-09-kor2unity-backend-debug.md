@@ -17,7 +17,7 @@ date: 2025-10-09T10:45:00 +0900
 updated: 2025-10-09 10:45
 source_file: "manual-diary-entry"
 source_last_modified: "2025-10-09T10:45:00+09:00"
-auto_imported: false
+auto_imported: true
 ---
 
 * TOC
