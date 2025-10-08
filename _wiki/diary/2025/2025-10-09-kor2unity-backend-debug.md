@@ -46,6 +46,35 @@ auto_imported: false
 | 10:28 | Rebuild & deploy | `docker-compose build backend && docker-compose up -d backend`. |
 | 10:33 | Validation | Curl responses now delivered structured pronunciation guides; TUI timeout smoke test and `demo_korean_success.py` all green. |
 
+![kor2Unity Docker images]({{ '/images/ai/kor2unity-docker-images.png' | relative_url }})
+
+*Docker registry after the fix: rebuilt `kor2unity-backend:dev` (52 minutes old) alongside Ollama 0.1.48, Rasa services, and supporting containers.*
+
+```
+nigpt4  …/uc/en/kor2fix  docker logs kor2fix-backend-1 --tail 10
+INFO:     172.82.0.1:57400 - "GET /health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1]
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8201 (Press CTRL+C to quit)
+INFO:     172.82.0.1:37058 - "POST /api/llm/chat HTTP/1.1" 200 OK
+```
+
+```
+ (e) minigpt4  …/uc/en/kor2fix  cd /mnt/d/repos/aiegoo/uconGPT/eng2Fix/kor2fix && head -5 backend/api/main.py
+"""
+Immediate Korean Knowledge Backend - Instant accurate Korean learning responses
+"""
+
+from fastapi import FastAPI, HTTPException
+
+```
+
+
 ## 🔎 Before vs After (Terminal Evidence)
 
 ### Before — Failing sessions
@@ -112,6 +141,17 @@ When the restart alone still produced garbled Hangul, I rebuilt the image:
 ```text
 (kor2fix) $ docker-compose build backend
 (kor2fix) $ docker-compose up -d backend
+```
+
+When the backend still reported a placeholder echo (because Ollama wasn’t reachable), I patched the service hostname and repeated the build:
+
+```text
+(kor2fix) $ python fix_ollama_url.py
+✅ Fixed Ollama URL to use Docker container hostname
+
+(kor2fix) $ docker-compose build backend && docker-compose up -d backend
+[+] Building ... kor2unity-backend:dev  Built
+[+] Running ... kor2fix-backend-1  Started
 ```
 
 ### After — Clean Korean responses
