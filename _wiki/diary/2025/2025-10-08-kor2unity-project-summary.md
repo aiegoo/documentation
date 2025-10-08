@@ -36,12 +36,12 @@ I have successfully analyzed your kor2Unity language development project and cre
 
 ### 🔗 Linked GitHub Issues
 
-- [#31](https://github.com/aiegoo/hhi-engineroom/issues/31) — EPIC: kor2Unity self-hosted AI integration sprint
-- [#29](https://github.com/aiegoo/hhi-engineroom/issues/29) — Integrate existing TUI infrastructure with kor2Unity
-- [#28](https://github.com/aiegoo/hhi-engineroom/issues/28) — Conda environment configuration for kor2Unity models
-- [#26](https://github.com/aiegoo/hhi-engineroom/issues/26) — UI architecture decision: TUI vs web UI for Korean learning
-- [#24](https://github.com/aiegoo/hhi-engineroom/issues/24) — LLM integration: self-hosted model strategy for Korean learning
-- [#21](https://github.com/aiegoo/hhi-engineroom/issues/21) — LLM enhancement & Korean language features branch
+- [#31](https://github.com/aiegoo/kor2Unity/issues/31) — EPIC: kor2Unity self-hosted AI integration sprint
+- [#29](https://github.com/aiegoo/kor2Unity/issues/29) — Integrate existing TUI infrastructure with kor2Unity
+- [#28](https://github.com/aiegoo/kor2Unity/issues/28) — Conda environment configuration for kor2Unity models
+- [#26](https://github.com/aiegoo/kor2Unity/issues/26) — UI architecture decision: TUI vs web UI for Korean learning
+- [#24](https://github.com/aiegoo/kor2Unity/issues/24) — LLM integration: self-hosted model strategy for Korean learning
+- [#21](https://github.com/aiegoo/kor2Unity/issues/21) — LLM enhancement & Korean language features branch
 
 ### **🚀 Main Project Issues Created:**
 

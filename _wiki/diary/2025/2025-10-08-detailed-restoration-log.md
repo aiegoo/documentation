@@ -34,7 +34,7 @@ auto_imported: true
 **Duration**: ~3 hours  
 **Operator**: aiegoo + GitHub Copilot  
 **Target**: Restore Korean language processing platform from August 25, 2025
-**Linked Issues**: [#31](https://github.com/aiegoo/hhi-engineroom/issues/31), [#29](https://github.com/aiegoo/hhi-engineroom/issues/29), [#26](https://github.com/aiegoo/hhi-engineroom/issues/26)
+**Linked Issues**: [#31](https://github.com/aiegoo/kor2Unity/issues/31), [#29](https://github.com/aiegoo/kor2Unity/issues/29), [#26](https://github.com/aiegoo/kor2Unity/issues/26)
 
 ## 📋 Initial Situation Assessment
 

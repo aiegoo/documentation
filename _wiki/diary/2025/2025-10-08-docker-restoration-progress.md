@@ -33,7 +33,7 @@ auto_imported: true
 **Date**: October 6, 2025  
 **Branch**: environment-setup-v1  
 **Milestone**: Docker-WSL-Restoration-v1.0  
-**Linked Issues**: [#31](https://github.com/aiegoo/hhi-engineroom/issues/31), [#29](https://github.com/aiegoo/hhi-engineroom/issues/29), [#26](https://github.com/aiegoo/hhi-engineroom/issues/26)
+**Linked Issues**: [#31](https://github.com/aiegoo/kor2Unity/issues/31), [#29](https://github.com/aiegoo/kor2Unity/issues/29), [#26](https://github.com/aiegoo/kor2Unity/issues/26)
 
 ## 🎯 Restoration Objective
 

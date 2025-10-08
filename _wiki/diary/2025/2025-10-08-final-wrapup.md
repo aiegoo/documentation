@@ -36,7 +36,7 @@ auto_imported: true
 - **Started**: Emergency vim/tmux restoration request
 - **Evolved**: Complete Korean learning platform development  
 - **Achieved**: Fully operational Korean learning system with self-hosted LLMs
-- **Linked Issues**: [#31](https://github.com/aiegoo/hhi-engineroom/issues/31), [#29](https://github.com/aiegoo/hhi-engineroom/issues/29), [#28](https://github.com/aiegoo/hhi-engineroom/issues/28), [#26](https://github.com/aiegoo/hhi-engineroom/issues/26), [#24](https://github.com/aiegoo/hhi-engineroom/issues/24), [#21](https://github.com/aiegoo/hhi-engineroom/issues/21)
+- **Linked Issues**: [#31](https://github.com/aiegoo/kor2Unity/issues/31), [#29](https://github.com/aiegoo/kor2Unity/issues/29), [#28](https://github.com/aiegoo/kor2Unity/issues/28), [#26](https://github.com/aiegoo/kor2Unity/issues/26), [#24](https://github.com/aiegoo/kor2Unity/issues/24), [#21](https://github.com/aiegoo/kor2Unity/issues/21)
 
 ## 🚀 SYSTEM READY FOR USE
 

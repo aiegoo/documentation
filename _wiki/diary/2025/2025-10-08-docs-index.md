@@ -35,7 +35,7 @@ auto_imported: true
 - **Status**: ✅ Active with working backend (port 8201)
 - **Focus**: Dedicated port allocation + Python 3.13 compatibility
 - **Date**: August 7, 2025
-- **Linked Issues**: [#31](https://github.com/aiegoo/hhi-engineroom/issues/31), [#29](https://github.com/aiegoo/hhi-engineroom/issues/29), [#28](https://github.com/aiegoo/hhi-engineroom/issues/28), [#26](https://github.com/aiegoo/hhi-engineroom/issues/26)
+- **Linked Issues**: [#31](https://github.com/aiegoo/kor2Unity/issues/31), [#29](https://github.com/aiegoo/kor2Unity/issues/29), [#28](https://github.com/aiegoo/kor2Unity/issues/28), [#26](https://github.com/aiegoo/kor2Unity/issues/26)
 
 ## 📋 Available Documentation
 

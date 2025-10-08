@@ -32,7 +32,7 @@ auto_imported: true
 
 ## 📋 Issues Updated with Detailed Progress Comments
 
-### ✅ **[Issue #31](https://github.com/aiegoo/hhi-engineroom/issues/31)**: 🎯 EPIC: kor2Unity Self-hosted AI Integration Sprint
+### ✅ **[Issue #31](https://github.com/aiegoo/kor2Unity/issues/31)**: 🎯 EPIC: kor2Unity Self-hosted AI Integration Sprint
 
 - **Status**: **COMPLETED** - All components operational  
 - **Added Progress**:
@@ -50,7 +50,7 @@ auto_imported: true
   python scripts/test_kor2unity_api.py    # API testing
   ```
 
-### ✅ **[Issue #29](https://github.com/aiegoo/hhi-engineroom/issues/29)**: Integrate Existing TUI Infrastructure with kor2Unity
+### ✅ **[Issue #29](https://github.com/aiegoo/kor2Unity/issues/29)**: Integrate Existing TUI Infrastructure with kor2Unity
 
 - **Status**: **FULLY OPERATIONAL** - TUI with Korean learning capabilities
 - **Added Progress**:
@@ -68,7 +68,7 @@ auto_imported: true
   # TUI Commands: /korean, /context, /history, /help
   ```
 
-### ✅ **[Issue #28](https://github.com/aiegoo/hhi-engineroom/issues/28)**: Conda Environment Configuration for kor2Unity Models
+### ✅ **[Issue #28](https://github.com/aiegoo/kor2Unity/issues/28)**: Conda Environment Configuration for kor2Unity Models
 
 - **Status**: **FULLY CONFIGURED** - minigpt4 environment operational
 - **Added Progress**:
@@ -86,7 +86,7 @@ auto_imported: true
   python scripts/kor2unity_status.py  # Shows: ✅ Conda Environment | minigpt4
   ```
 
-### ✅ **[Issue #26](https://github.com/aiegoo/hhi-engineroom/issues/26)**: UI Architecture Decision: TUI vs Web UI for Korean Learning
+### ✅ **[Issue #26](https://github.com/aiegoo/kor2Unity/issues/26)**: UI Architecture Decision: TUI vs Web UI for Korean Learning
 
 - **Status**: **RESOLVED** - TUI-first approach implemented
 - **Added Progress**:
@@ -101,7 +101,7 @@ auto_imported: true
   - Direct AI integration with self-hosted models
   - Session persistence and multi-endpoint support
 
-### ✅ **[Issue #24](https://github.com/aiegoo/hhi-engineroom/issues/24)**: LLM Integration: Self-hosted Model Strategy for Korean Learning
+### ✅ **[Issue #24](https://github.com/aiegoo/kor2Unity/issues/24)**: LLM Integration: Self-hosted Model Strategy for Korean Learning
 
 - **Status**: **FULLY OPERATIONAL** - Self-hosted Korean AI serving
 - **Added Progress**:
@@ -119,7 +119,7 @@ auto_imported: true
   # Health: curl http://localhost:8204/health
   ```
 
-### ✅ **[Issue #21](https://github.com/aiegoo/hhi-engineroom/issues/21)**: 🧠 LLM Enhancement & Korean Language Features Branch
+### ✅ **[Issue #21](https://github.com/aiegoo/kor2Unity/issues/21)**: 🧠 LLM Enhancement & Korean Language Features Branch
 
 - **Status**: **ALL FEATURES IMPLEMENTED** - Korean platform complete
 - **Added Progress**:
@@ -206,7 +206,7 @@ auto_imported: true
 
 ---
 
-## 🆕 Label: [`next-action`](https://github.com/aiegoo/hhi-engineroom/labels/next-action) (October 7, 2025)
+## 🆕 Label: [`next-action`](https://github.com/aiegoo/kor2Unity/labels/next-action) (October 7, 2025)
 
 Tracking follow-up work derived from the recent service-orchestration session. Each bullet should become or map to a dedicated GitHub issue under the `next-action` label.
 
