@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Hugging Face mark</title>
+  <desc id="desc">Friendly orange smiley inspired by the Hugging Face logo</desc>
+  <defs>
+    <linearGradient id="hf-face" x1="34%" y1="18%" x2="66%" y2="88%">
+      <stop offset="0%" stop-color="#FFD571"/>
+      <stop offset="100%" stop-color="#FFB340"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="56" fill="url(#hf-face)"/>
+  <ellipse cx="42" cy="70" rx="12" ry="10" fill="#FF9E80" opacity="0.55"/>
+  <ellipse cx="86" cy="70" rx="12" ry="10" fill="#FF9E80" opacity="0.55"/>
+  <circle cx="46" cy="52" r="8" fill="#2F1D0E"/>
+  <circle cx="82" cy="52" r="8" fill="#2F1D0E"/>
+  <path d="M40 82c7 14 21 22 24 22s17-8 24-22c1.4-2.8-1.1-5.9-4.2-5.1-9.6 2.5-18.3 2.5-27.7 0-3.1-.8-5.6 2.3-4.1 5.1z" fill="#2F1D0E"/>
+  <path d="M52 96c3.7 2.9 7.9 4.2 12 4.2s8.3-1.3 12-4.2" fill="none" stroke="#FAD961" stroke-width="4" stroke-linecap="round"/>
+  <path d="M93 40c-4.6-8-15-14-29-14s-24.4 6-29 14c-1.3 2.2.7 4.9 3.3 4.3 7.6-1.7 16.2-2.6 25.7-2.6s18.1.9 25.7 2.6c2.6.6 4.6-2.1 3.3-4.3z" fill="#FFE28A" opacity="0.5"/>
+</svg>
