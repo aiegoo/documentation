@@ -13,10 +13,10 @@ excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]]
-date: 2025-10-08T14:33:18 +0900
-updated: 2025-10-08 14:33
+date: 2025-10-08T16:01:13 +0900
+updated: 2025-10-08 16:01
 source_file: "README_TUI.md"
-source_last_modified: "2025-10-08T14:33:18+0900"
+source_last_modified: "2025-10-08T16:01:13+0900"
 auto_imported: true
 ---
 * TOC
@@ -93,6 +93,7 @@ cd /home/hsyyu/repo/kor2unity/scripts && python kor2unity_advanced_tui.py
 ```
 
 ### Supported Backends
+
 | Backend | Port | Model | Purpose |
 |---------|------|-------|---------|
 | **Ollama** | 11434 | Mistral | Fast general responses |

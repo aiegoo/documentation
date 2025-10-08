@@ -11,7 +11,6 @@ keywords: "ai nlp likelion updates news announcements automation"
 summary: "Wed, Oct 08, 25, DOCS INDEX - Auto-imported from uconGPT project"
 excerpt_separator: <!--more-->
 toc: true
-public: true
 parent: [[Wiki-Setting-Category]]
 date: 2025-10-08T14:33:51 +0900
 updated: 2025-10-08 14:33
@@ -19,6 +18,7 @@ source_file: "DOCS-INDEX.md"
 source_last_modified: "2025-10-08T14:33:51+0900"
 auto_imported: true
 ---
+
 * TOC
 {:toc}
 
@@ -31,15 +31,17 @@ auto_imported: true
 # 📚 Documentation Index - environment-setup-v1 Branch
 
 ## Branch Information
-- **Branch**: `environment-setup-v1`
-- **Status**: ✅ Active with working backend (port 8201)
-- **Focus**: Dedicated port allocation + Python 3.13 compatibility
-- **Date**: August 7, 2025
-- **Linked Issues**: [#31](https://github.com/aiegoo/kor2Unity/issues/31), [#29](https://github.com/aiegoo/kor2Unity/issues/29), [#28](https://github.com/aiegoo/kor2Unity/issues/28), [#26](https://github.com/aiegoo/kor2Unity/issues/26)
+
+* **Branch**: `environment-setup-v1`
+* **Status**: ✅ Active with working backend (port 8201)
+* **Focus**: Dedicated port allocation + Python 3.13 compatibility
+* **Date**: August 7, 2025
+* **Linked Issues**: [#31](https://github.com/aiegoo/kor2Unity/issues/31), [#29](https://github.com/aiegoo/kor2Unity/issues/29), [#28](https://github.com/aiegoo/kor2Unity/issues/28), [#26](https://github.com/aiegoo/kor2Unity/issues/26)
 
 ## 📋 Available Documentation
 
 ### 🎯 **Core Setup Guides**
+
 | File | Purpose | Status |
 |------|---------|---------|
 | **[README-environment-setup-v1.md](README-environment-setup-v1.md)** | Branch overview & quick start | ✅ Available |
@@ -47,12 +49,14 @@ auto_imported: true
 | **[docs/PORT-ALLOCATION.md](docs/PORT-ALLOCATION.md)** | Complete port reference (8200-8299) | ✅ Available |
 
 ### 🚀 **Management Scripts**
+
 | Script | Purpose | Status |
 |--------|---------|---------|
 | **[scripts/start-dev-stack.sh](scripts/start-dev-stack.sh)** | Development stack management | ✅ Executable |
 | **[test_setup.py](test_setup.py)** | Python 3.13 compatibility validation | ✅ Available |
 
 ### ⚙️ **Configuration Files**  
+
 | File | Purpose | Status |
 |------|---------|---------|
 | **[.env.example](.env.example)** | Environment variables (8200-8299 ports) | ✅ Available |
@@ -62,6 +66,7 @@ auto_imported: true
 ## 🔧 Quick Access Commands
 
 ### Documentation Access
+
 ```bash
 # Verify you're on the right branch
 git branch --show-current  # Should show: environment-setup-v1
@@ -73,6 +78,7 @@ cat docs/PORT-ALLOCATION.md
 ```
 
 ### System Status
+
 ```bash
 # Check current service status
 ./scripts/start-dev-stack.sh status
@@ -83,6 +89,7 @@ curl http://localhost:8201/api/config
 ```
 
 ### Development Stack
+
 ```bash
 # Start services
 ./scripts/start-dev-stack.sh start
@@ -97,17 +104,19 @@ curl http://localhost:8201/api/config
 ## 📊 Current Working Status
 
 ### ✅ **Confirmed Working**
-- **FastAPI Backend**: Running on port 8201
-- **Health Monitoring**: Complete system status API
-- **Port Configuration**: Full service mapping API  
-- **Python 3.13**: Compatible dependency set
-- **Development Scripts**: Service management automation
+
+* **FastAPI Backend**: Running on port 8201
+* **Health Monitoring**: Complete system status API
+* **Port Configuration**: Full service mapping API  
+* **Python 3.13**: Compatible dependency set
+* **Development Scripts**: Service management automation
 
 ### 🔄 **Ready for Setup**
-- **Docker Services**: Use `docs/DOCKER-SETUP.md` guide
-- **Ollama LLM**: Port 8203 allocated and ready
-- **MongoDB**: Port 8202 configured
-- **Frontend**: Port 8206 reserved
+
+* **Docker Services**: Use `docs/DOCKER-SETUP.md` guide
+* **Ollama LLM**: Port 8203 allocated and ready
+* **MongoDB**: Port 8202 configured
+* **Frontend**: Port 8206 reserved
 
 ## 🎯 Branch-Specific Features
 
@@ -123,12 +132,14 @@ This `environment-setup-v1` branch provides:
 ## 🔀 Branch Context
 
 ### Why This Branch Exists
-- **Port Conflicts**: Avoids typical development ports (3000, 8000, 5000)
-- **Python 3.13**: Early adoption with compatibility focus
-- **Clean Architecture**: Dedicated service isolation
-- **Production Ready**: Docker + health monitoring
+
+* **Port Conflicts**: Avoids typical development ports (3000, 8000, 5000)
+* **Python 3.13**: Early adoption with compatibility focus
+* **Clean Architecture**: Dedicated service isolation
+* **Production Ready**: Docker + health monitoring
 
 ### How to Use This Branch
+
 ```bash
 # Switch to this branch
 git checkout environment-setup-v1

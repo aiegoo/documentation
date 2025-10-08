@@ -13,10 +13,10 @@ excerpt_separator: <!--more-->
 toc: true
 public: true
 parent: [[Wiki-Setting-Category]]
-date: 2025-10-08T14:33:09 +0900
-updated: 2025-10-08 14:33
+date: 2025-10-08T16:01:13 +0900
+updated: 2025-10-08 16:01
 source_file: "README-environment-setup-v1.md"
-source_last_modified: "2025-10-08T14:33:09+0900"
+source_last_modified: "2025-10-08T16:01:13+0900"
 auto_imported: true
 ---
 * TOC
