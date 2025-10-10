@@ -1,8 +1,8 @@
 ---
-title: "Vim pages"
-tagName: vim
+title: "Bikram pages"
+tagName: bikram
 search: exclude
-permalink: tag_vim.html
+permalink: tag_bikram.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

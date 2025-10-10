@@ -2,7 +2,7 @@
 layout: post
 title: "Korean Backend Hotfix for kor2Unity"
 name: "kor2unity-backend-debug"
-tags: [ai nlp likelion updates news announcements]
+tags: ["ai", "nlp", "likelion", "updates", "news", "announcements"]
 permalink: 2025-10-09-kor2unity-backend-debug.html
 sidebar: other_sidebar
 folder: diary

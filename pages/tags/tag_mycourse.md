@@ -1,8 +1,8 @@
 ---
-title: "mycourse pages"
+title: "MyCourse pages"
 tagName: mycourse
 search: exclude
-permalink: tag_ai.html
+permalink: tag_mycourse.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
