@@ -201,20 +201,22 @@ User Speech → Microphone → ALSA → PyAudio → SpeechRecognition → Google
      ✅           ✅         ❌        ❌            ✅              ✅           ❌
 
 ```
-{: .voice-wrap }
+
 Problem Location: ALSA audio system in WSL environment cannot access hardware microphone properly.
 
 2. Voice OUTPUT Pipeline (WORKING ✅):
+
+{: .voice-wrap }
 ```
 Korean Text → espeak TTS → Audio System → Headphones → User Hearing
      ✅           ✅           ✅            ✅           ✅
-
 ```
-{: .voice-wrap }
+
 
 What's Actually Available:
 ✅ WORKING Voice Features:
 
+{: .voice-wrap }
 ```
 TTS Output: Korean pronunciation through headphones
 Audio Learning: Vocabulary games with spoken Korean
