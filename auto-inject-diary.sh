@@ -304,7 +304,7 @@ process_existing_files() {
         else
             ((skipped++))
         fi
-    done < <(find "$source_dir" -type f -name "*.md" -print0)
+    done < <(find "$source_dir" -type f \( -iname "*.md" -o -iname "*.markdown" \) -print0)
     
     echo -e "\n${GREEN}Processing complete!${NC}"
     echo -e "${GREEN}  Processed: $processed files${NC}"
@@ -336,7 +336,7 @@ start_file_watcher() {
     echo -e "${YELLOW}Starting file system watcher for: $source_dir${NC}"
     echo -e "${GRAY}Press Ctrl+C to stop watching...${NC}"
     
-    inotifywait -m -r -e create,modify --format '%w%f %e' "$source_dir" --include '\.md$' |
+    inotifywait -m -r -e create,modify --format '%w%f %e' "$source_dir" --include '(?i)\.(md|markdown)$' |
     while read file event; do
         echo -e "\n${CYAN}[$(date +%H:%M:%S)] File $event: $(basename "$file")${NC}"
         
