@@ -215,6 +215,7 @@ Korean Text → espeak TTS → Audio System → Headphones → User Hearing
 What's Actually Available:
 ✅ WORKING Voice Features:
 
+```
 TTS Output: Korean pronunciation through headphones
 Audio Learning: Vocabulary games with spoken Korean
 Voice Feedback: Audio responses for learning activities
@@ -242,6 +243,7 @@ Current Approach (Recommended): Use TTS output + text input
 Native Linux: Run on actual Linux machine with proper audio
 Windows Host: Use Windows-native Python with microphone access
 Cloud Recording: Upload audio files for processing
+```
 
 ## 🎯 Next Steps
 
