@@ -15,4 +15,5 @@ parent: [[Vim]]
 latex: false
 repos: aiegoo/documentation
 permalink: 2021-10-12-vim-ycm-python3.html
+published: false
 ---

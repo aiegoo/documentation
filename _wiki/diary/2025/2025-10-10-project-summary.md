@@ -22,6 +22,24 @@ auto_imported: true
 * TOC
 {:toc}
 
+<!-- markdownlint-disable-next-line MD033 -->
+<style>
+.voice-wrap {
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 1rem !important;
+    border-radius: 10px;
+    background: #1b1f23 !important;
+    color: #d6deeb !important;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25);
+}
+</style>
+
+<!-- markdownlint-disable -->
 > **Auto-imported from**: `D:/repos/aiegoo/uconGPT/eng2Fix/kor2fix/PROJECT_SUMMARY.md`  
 > **Original filename**: `PROJECT_SUMMARY.md`  
 > **Import date**: Fri, Oct 10, 25
@@ -183,6 +201,7 @@ User Speech → Microphone → ALSA → PyAudio → SpeechRecognition → Google
      ✅           ✅         ❌        ❌            ✅              ✅           ❌
 
 ```
+{: .voice-wrap }
 Problem Location: ALSA audio system in WSL environment cannot access hardware microphone properly.
 
 2. Voice OUTPUT Pipeline (WORKING ✅):
@@ -191,6 +210,7 @@ Korean Text → espeak TTS → Audio System → Headphones → User Hearing
      ✅           ✅           ✅            ✅           ✅
 
 ```
+{: .voice-wrap }
 
 What's Actually Available:
 ✅ WORKING Voice Features:
