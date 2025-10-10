@@ -37,6 +37,18 @@ auto_imported: true
     word-break: break-word;
     box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25);
 }
+.post-content pre,
+.post-content pre code {
+    width: 100%;
+    max-width: 100%;
+}
+@media (min-width: 768px) {
+    .post-content pre {
+        margin-left: -30px;
+        margin-right: -30px;
+        width: calc(100% + 60px);
+    }
+}
 </style>
 
 <!-- markdownlint-disable -->
