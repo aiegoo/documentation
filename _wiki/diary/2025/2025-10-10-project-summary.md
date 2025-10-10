@@ -34,7 +34,14 @@ auto_imported: true
 **Next:** Voice Input Implementation on Windows  
 
 ## 🎯 Project Overview
+
 Korean language learning platform with voice-enabled TUI interface, AI conversation, and interactive games.
+
+<img width="1307" height="1333" alt="tui_landing" src="https://github.com/user-attachments/assets/982d8bba-b8ea-4abc-b49a-355fbce19a8c" />
+<img width="1188" height="1270" alt="tui_interaction" src="https://github.com/user-attachments/assets/0c036ed2-ccc1-4aaa-b60e-333f4bf39f5b" />
+<img width="2851" height="1799" alt="tui_image2" src="https://github.com/user-attachments/assets/3df44105-ba5e-4d2a-9efc-8ab56041e279" />
+<img width="1481" height="1708" alt="tui_image1" src="https://github.com/user-attachments/assets/071220f2-1619-4c60-8bed-d4d1358dc8bb" />
+<img width="1194" height="1118" alt="tui_game" src="https://github.com/user-attachments/assets/c3ece787-586e-40e0-a5ce-ddafc97bd812" />
 
 ## ✅ Completed Features
 
