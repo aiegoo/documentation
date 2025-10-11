@@ -42,8 +42,8 @@ github_link: https://github.com/aiegoo/documentation/blob/edit/
 google_analytics: #UA-66296557-1
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
-host: 127.0.0.1
-# the preview server used. Leave as is.
+host: 0.0.0.0
+# allow external devices on the local network to access the dev server
 
 port: 4000
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
@@ -88,10 +88,6 @@ exclude:
   - .DS_Store
 # these are the files and directories that jekyll will exclude from the build
 include:
- - _mycourse
- - _wiki
- - _yoga
- - _drones
  - _tags
 # to enable series site.page
 feedback_subject_line: You are my best candidate!
@@ -132,15 +128,12 @@ collections:
     output: false
   freelancers:
     output: true
-    people: true
     permalink: /freelancers/
   drones:
     output: true
-    people: true
     permalink: /drones/
   yoga:
     output: true
-    people: true
     permalink: /yoga/
     order:
       - yoga_overview.md
@@ -155,7 +148,6 @@ collections:
       - ashtanga.md
   mycourse:
     output: true
-    people: true
     permalink: /mycourse/
     order:
       - stm32.md
