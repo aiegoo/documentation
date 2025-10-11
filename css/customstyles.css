@@ -1382,6 +1382,63 @@ span.soft {
     max-height: 100%;
 }
 
+/* Samsung Galaxy Z Fold 6 support -------------------------------------- */
+@media only screen and (max-width: 430px) and (min-height: 780px) and (-webkit-device-pixel-ratio: 3.5) {
+    /* Cover screen portrait (folded) */
+    .container {
+        width: auto !important;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    #tg-sb-sidebar {
+        display: none;
+    }
+
+    #tg-sb-content {
+        width: 100% !important;
+    }
+
+    .post-content pre,
+    .post-content .language-plaintext,
+    .post-content .highlight {
+        font-size: 0.9rem;
+    }
+
+    .post-content img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 920px) and (min-height: 700px) and (-webkit-device-pixel-ratio: 3.5) {
+    /* Main screen (unfolded) */
+    .container {
+        width: 100% !important;
+        max-width: 1200px;
+    }
+
+    #tg-sb-sidebar {
+        float: left;
+        width: 240px;
+        position: relative;
+    }
+
+    #tg-sb-content {
+        width: calc(100% - 260px);
+        margin-left: 260px;
+    }
+
+    .post-content img {
+        max-width: 92%;
+    }
+
+    .post-content pre {
+        font-size: 1.05rem;
+    }
+}
+/* ---------------------------------------------------------------------- */
+
 
 
 .post-content img {
