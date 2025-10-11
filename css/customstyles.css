@@ -1234,9 +1234,16 @@ span.soft {
 }
 
 @media (min-width: 992px) {
-  .container {
-    width: 1021px !important;
-  }
+    .container {
+        width: 1280px !important;
+        max-width: 95vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1440px !important;
+    }
 }
 
 @media (max-width: 1110px) {
@@ -1271,9 +1278,38 @@ span.soft {
 
 @media only screen and (min-width: 900px), only screen and (min-device-width: 900px) {
     .col-md-9 img {
-        max-width: 700px;
-        max-height: 700px;
+        max-width: 960px;
+        max-height: 960px;
     }
+}
+
+@media (min-width: 1200px) {
+    #tg-sb-content.col-md-9 {
+        width: calc(100% - 260px);
+    }
+
+    #tg-sb-sidebar.col-md-3 {
+        width: 260px;
+    }
+}
+
+.post-content .language-plaintext,
+.post-content .highlight {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.post-content pre {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1.25rem 0;
+}
+
+.post-content .highlight pre,
+.post-content .highlight pre code {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* ----------- iPad Pro ----------- */
