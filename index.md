@@ -247,7 +247,7 @@ render_with_liquid: true
 
 ### I believe in time-management
 
-<!-- Replace broken pipe table with robust HTML -->
+<!-- Replace the Bootstrap carousel with this vanilla JS version -->
 <div class="tm-wrap" markdown="0">
 <table role="presentation" style="margin:10px auto; border-collapse:collapse; width:auto; text-align:center">
    <thead>
@@ -263,50 +263,81 @@ render_with_liquid: true
      </tr>
      <tr>
        <td style="padding:10px;">
-         <!-- Project Showcase Slider -->
-         <div id="projectShowcaseCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" style="max-width: 500px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
-           <div class="carousel-indicators">
-             <button type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide-to="0" class="active"></button>
-             <button type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide-to="1"></button>
-             <button type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide-to="2"></button>
-           </div>
-           <div class="carousel-inner">
-             <div class="carousel-item active">
-               <img src="/images/ai/teaser.gif" class="d-block w-100" alt="AI DevOps Teaser" style="height: 300px; object-fit: cover;">
-               <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.7); border-radius: 8px; padding: 8px 12px;">
-                 <h5 style="font-size: 1.1rem; margin-bottom: 4px;">AI DevOps Pipeline</h5>
+         <!-- Vanilla JS Project Showcase Slider -->
+         <div class="project-slider" style="max-width: 500px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.12); position: relative;">
+           <div class="slides-container" style="position: relative; width: 100%; height: 300px;">
+             <div class="slide active" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 1; transition: opacity 0.5s ease;">
+               <img src="/images/ai/teaser.gif" alt="AI DevOps Teaser" style="width: 100%; height: 100%; object-fit: cover;">
+               <div class="slide-caption" style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(0,0,0,0.7); border-radius: 8px; padding: 8px 12px; color: white;">
+                 <h5 style="font-size: 1.1rem; margin: 0 0 4px 0;">AI DevOps Pipeline</h5>
                  <p style="font-size: 0.9rem; margin: 0;">Automated AI workflows and deployment orchestration</p>
                </div>
              </div>
-             <div class="carousel-item">
-               <img src="/images/ai/code_mender.gif" class="d-block w-100" alt="Code Mender" style="height: 300px; object-fit: cover;">
-               <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.7); border-radius: 8px; padding: 8px 12px;">
-                 <h5 style="font-size: 1.1rem; margin-bottom: 4px;">Code Mender AI</h5>
+             <div class="slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.5s ease;">
+               <img src="/images/ai/code_mender.gif" alt="Code Mender" style="width: 100%; height: 100%; object-fit: cover;">
+               <div class="slide-caption" style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(0,0,0,0.7); border-radius: 8px; padding: 8px 12px; color: white;">
+                 <h5 style="font-size: 1.1rem; margin: 0 0 4px 0;">Code Mender AI</h5>
                  <p style="font-size: 0.9rem; margin: 0;">Smart code repair and refactoring automation</p>
                </div>
              </div>
-             <div class="carousel-item">
-               <img src="/images/ai/ragTree-1.png" class="d-block w-100 rag-tree-animate" alt="RAG Tree Architecture" style="height: 300px; object-fit: contain; background: #f8f9fa;">
-               <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.7); border-radius: 8px; padding: 8px 12px;">
-                 <h5 style="font-size: 1.1rem; margin-bottom: 4px;">RAG Tree Pipeline</h5>
+             <div class="slide rag-tree-animate" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.5s ease;">
+               <img src="/images/ai/ragTree-1.png" alt="RAG Tree Architecture" style="width: 100%; height: 100%; object-fit: contain; background: #f8f9fa;">
+               <div class="slide-caption" style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(0,0,0,0.7); border-radius: 8px; padding: 8px 12px; color: white;">
+                 <h5 style="font-size: 1.1rem; margin: 0 0 4px 0;">RAG Tree Pipeline</h5>
                  <p style="font-size: 0.9rem; margin: 0;">Retrieval-Augmented Generation architecture visualization</p>
                </div>
              </div>
            </div>
-           <button class="carousel-control-prev" type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide="prev">
-             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Previous</span>
-           </button>
-           <button class="carousel-control-next" type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide="next">
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Next</span>
-           </button>
+           
+           <!-- Navigation buttons -->
+           <button class="slider-btn prev" onclick="changeSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; font-size: 18px; z-index: 10;">‹</button>
+           <button class="slider-btn next" onclick="changeSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; font-size: 18px; z-index: 10;">›</button>
+           
+           <!-- Indicators -->
+           <div class="slider-indicators" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
+             <button onclick="goToSlide(0)" class="indicator active" style="width: 12px; height: 12px; border-radius: 50%; border: none; background: white; cursor: pointer; opacity: 1;"></button>
+             <button onclick="goToSlide(1)" class="indicator" style="width: 12px; height: 12px; border-radius: 50%; border: none; background: white; cursor: pointer; opacity: 0.5;"></button>
+             <button onclick="goToSlide(2)" class="indicator" style="width: 12px; height: 12px; border-radius: 50%; border: none; background: white; cursor: pointer; opacity: 0.5;"></button>
+           </div>
          </div>
        </td>
      </tr>
    </tbody>
  </table>
 </div>
+
+<!-- Vanilla JavaScript for slider -->
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.project-slider .slide');
+const indicators = document.querySelectorAll('.project-slider .indicator');
+const totalSlides = slides.length;
+
+function showSlide(n) {
+  slides.forEach(slide => slide.style.opacity = '0');
+  indicators.forEach(indicator => indicator.style.opacity = '0.5');
+  
+  slides[n].style.opacity = '1';
+  indicators[n].style.opacity = '1';
+}
+
+function changeSlide(direction) {
+  currentSlide += direction;
+  if (currentSlide >= totalSlides) currentSlide = 0;
+  if (currentSlide < 0) currentSlide = totalSlides - 1;
+  showSlide(currentSlide);
+}
+
+function goToSlide(n) {
+  currentSlide = n;
+  showSlide(currentSlide);
+}
+
+// Auto-advance slides every 4 seconds
+setInterval(() => {
+  changeSlide(1);
+}, 4000);
+</script>
 
 <!-- Add CSS for RAG Tree animation -->
 <style>
@@ -318,17 +349,18 @@ render_with_liquid: true
   50% { opacity: 0.7; transform: scale(0.95) rotate(0deg); }
   100% { opacity: 1; transform: scale(1) rotate(0deg); }
 }
-.carousel-caption h5, .carousel-caption p {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+.slider-btn:hover {
+  background: rgba(0,0,0,0.7) !important;
 }
 @media (max-width: 768px) {
-  .carousel-caption {
-    display: block !important;
-    bottom: 10px;
+  .slide-caption {
+    bottom: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
     padding: 4px 8px !important;
   }
-  .carousel-caption h5 { font-size: 0.9rem !important; }
-  .carousel-caption p { font-size: 0.75rem !important; }
+  .slide-caption h5 { font-size: 0.9rem !important; }
+  .slide-caption p { font-size: 0.75rem !important; }
 }
 </style>
 
