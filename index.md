@@ -263,12 +263,74 @@ render_with_liquid: true
      </tr>
      <tr>
        <td style="padding:10px;">
-         <img src="{{ '/out/test/test.svg' | relative_url }}" alt="svg working fine" style="max-width:420px;width:100%;height:auto;">
+         <!-- Project Showcase Slider -->
+         <div id="projectShowcaseCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" style="max-width: 500px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+           <div class="carousel-indicators">
+             <button type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide-to="0" class="active"></button>
+             <button type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide-to="1"></button>
+             <button type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide-to="2"></button>
+           </div>
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img src="/images/ai/teaser.gif" class="d-block w-100" alt="AI DevOps Teaser" style="height: 300px; object-fit: cover;">
+               <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.7); border-radius: 8px; padding: 8px 12px;">
+                 <h5 style="font-size: 1.1rem; margin-bottom: 4px;">AI DevOps Pipeline</h5>
+                 <p style="font-size: 0.9rem; margin: 0;">Automated AI workflows and deployment orchestration</p>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img src="/images/ai/code_mender.gif" class="d-block w-100" alt="Code Mender" style="height: 300px; object-fit: cover;">
+               <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.7); border-radius: 8px; padding: 8px 12px;">
+                 <h5 style="font-size: 1.1rem; margin-bottom: 4px;">Code Mender AI</h5>
+                 <p style="font-size: 0.9rem; margin: 0;">Smart code repair and refactoring automation</p>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img src="/images/ai/ragTree-1.png" class="d-block w-100 rag-tree-animate" alt="RAG Tree Architecture" style="height: 300px; object-fit: contain; background: #f8f9fa;">
+               <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.7); border-radius: 8px; padding: 8px 12px;">
+                 <h5 style="font-size: 1.1rem; margin-bottom: 4px;">RAG Tree Pipeline</h5>
+                 <p style="font-size: 0.9rem; margin: 0;">Retrieval-Augmented Generation architecture visualization</p>
+               </div>
+             </div>
+           </div>
+           <button class="carousel-control-prev" type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Previous</span>
+           </button>
+           <button class="carousel-control-next" type="button" data-bs-target="#projectShowcaseCarousel" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Next</span>
+           </button>
+         </div>
        </td>
      </tr>
    </tbody>
  </table>
 </div>
+
+<!-- Add CSS for RAG Tree animation -->
+<style>
+.rag-tree-animate {
+  animation: ragZoomIn 2s ease-in-out;
+}
+@keyframes ragZoomIn {
+  0% { opacity: 0; transform: scale(0.85) rotate(-1deg); }
+  50% { opacity: 0.7; transform: scale(0.95) rotate(0deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+.carousel-caption h5, .carousel-caption p {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    display: block !important;
+    bottom: 10px;
+    padding: 4px 8px !important;
+  }
+  .carousel-caption h5 { font-size: 0.9rem !important; }
+  .carousel-caption p { font-size: 0.75rem !important; }
+}
+</style>
 
 {% include latest.html %}
 
