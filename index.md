@@ -247,10 +247,28 @@ render_with_liquid: true
 
 ### I believe in time-management
 
-| Time management |
-|-------|
-| <img src="https://imgs.xkcd.com/comics/automation.png" alt="automation cartoon" style="max-width:420px;width:100%;height:auto;"> |
-| <img src="images/test.svg" alt="test svg" style="max-width:420px;width:100%;height:auto;"> |
+<!-- Replace broken pipe table with robust HTML -->
+<div class="tm-wrap" markdown="0">
+<table role="presentation" style="margin:10px auto; border-collapse:collapse; width:auto; text-align:center">
+   <thead>
+     <tr>
+       <th style="padding:6px 10px; border-bottom:1px solid #e5e7eb;">Time management</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td style="padding:10px;">
+         <img src="https://imgs.xkcd.com/comics/automation.png" alt="automation cartoon" style="max-width:420px;width:100%;height:auto;">
+       </td>
+     </tr>
+     <tr>
+       <td style="padding:10px;">
+         <img src="{{ '/out/test/test.svg' | relative_url }}" alt="svg working fine" style="max-width:420px;width:100%;height:auto;">
+       </td>
+     </tr>
+   </tbody>
+ </table>
+</div>
 
 {% include latest.html %}
 
