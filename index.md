@@ -266,28 +266,28 @@ render_with_liquid: true
          <!-- Portfolio Showcase - Fixed positioning and background -->
          <div class="portfolio-showcase" style="position: relative; width: 100%; max-width: 600px; height: 350px; margin: 0 auto; overflow: hidden; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
            <!-- TUI Landing Page - FIXED FILENAME -->
-           <img src="/images/ai/tui_landing.png" alt="TUI Landing Page" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 1; animation: fadeSlide7 40s infinite;">
+           <img src="/images/ai/tui_landing.png" alt="TUI Landing Page" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 1; animation: fadeSlide7 80s infinite;">
            
            <!-- TUI Game Interface -->
-           <img src="/images/ai/tui_game.png" alt="TUI Game Interface" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 5s;">
+           <img src="/images/ai/tui_game.png" alt="TUI Game Interface" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 80s infinite 10s;">
            
            <!-- LLM System Chat -->
-           <img src="/images/llm/llmsyschat.png" alt="LLM System Chat" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 10s;">
+           <img src="/images/llm/llmsyschat.png" alt="LLM System Chat" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 80s infinite 20s;">
            
            <!-- LLM Catalogue -->
-           <img src="/images/llm/llmCatalogue.png" alt="LLM Catalogue" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 15s;">
+           <img src="/images/llm/llmCatalogue.png" alt="LLM Catalogue" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 80s infinite 30s;">
            
            <!-- Flowise UI -->
-           <img src="/images/llm/flowiseUI.png" alt="Flowise UI" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 20s;">
+           <img src="/images/llm/flowiseUI.png" alt="Flowise UI" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 80s infinite 40s;">
            
            <!-- AI DevOps Pipeline (GIF) -->
-           <img src="/images/ai/teaser.gif" alt="AI DevOps Pipeline" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 25s;">
+           <img src="/images/ai/teaser.gif" alt="AI DevOps Pipeline" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 80s infinite 50s;">
            
-           <!-- Code Mender AI (GIF) -->
-           <img src="/images/ai/code_mender.gif" alt="Code Mender AI" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 30s;">
+           <!-- Code Mender AI (GIF) - EXTENDED TIME -->
+           <img src="/images/ai/code_mender.gif" alt="Code Mender AI" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlideExtended 80s infinite 60s;">
            
-           <!-- RAG Tree Architecture (Fixed transparency) -->
-           <img src="/images/ai/ragTree-1-touchup.png" alt="RAG Tree Architecture" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center center; opacity: 0; animation: fadeSlide7 40s infinite 35s;">
+           <!-- RAG Tree Architecture - NO OVERLAP -->
+           <img src="/images/ai/ragTree-1-touchup.png" alt="RAG Tree Architecture" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center center; opacity: 0; animation: fadeSlide7 80s infinite 75s;">
            
            <!-- Caption overlay -->
            <div class="showcase-caption" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px 16px 12px; text-align: center;">
@@ -301,11 +301,18 @@ render_with_liquid: true
  </table>
 </div>
 
-<!-- CSS Animation for Portfolio Showcase with proper positioning -->
+<!-- CSS Animation - Updated timing to prevent overlaps -->
 <style>
 @keyframes fadeSlide7 {
   0%, 10% { opacity: 1; transform: scale(1); }
   12.5%, 97.5% { opacity: 0; transform: scale(1.01); }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+/* Extended animation for Code Mender GIF - shorter duration to prevent overlap */
+@keyframes fadeSlideExtended {
+  0%, 15% { opacity: 1; transform: scale(1); }
+  18.75%, 96.25% { opacity: 0; transform: scale(1.01); }
   100% { opacity: 0; transform: scale(1); }
 }
 
