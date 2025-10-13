@@ -249,7 +249,7 @@ render_with_liquid: true
 
 <!-- Replace broken pipe table with robust HTML -->
 <div class="tm-wrap" markdown="0">
-<table role="presentation" style="margin:10px auto; border-collapse:collapse; width:auto; text-align:center">
+<table role="presentation" style="margin:10px auto; border-collapse:collapse; width:95%; max-width:1200px; text-align:center">
    <thead>
      <tr>
        <th style="padding:6px 10px; border-bottom:1px solid #e5e7eb;">Time management</th>
@@ -263,12 +263,122 @@ render_with_liquid: true
      </tr>
      <tr>
        <td style="padding:10px;">
-         <img src="{{ '/out/test/test.svg' | relative_url }}" alt="svg working fine" style="max-width:420px;width:100%;height:auto;">
+         <!-- Portfolio Showcase - Fixed positioning and background -->
+         <div class="portfolio-showcase" style="position: relative; width: 100%; max-width: 600px; height: 350px; margin: 0 auto; overflow: hidden; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+           <!-- TUI Landing Page - FIXED FILENAME -->
+           <img src="/images/ai/tui_landing.png" alt="TUI Landing Page" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 1; animation: fadeSlide7 40s infinite;">
+           
+           <!-- TUI Game Interface -->
+           <img src="/images/ai/tui_game.png" alt="TUI Game Interface" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 5s;">
+           
+           <!-- LLM System Chat -->
+           <img src="/images/llm/llmsyschat.png" alt="LLM System Chat" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 10s;">
+           
+           <!-- LLM Catalogue -->
+           <img src="/images/llm/llmCatalogue.png" alt="LLM Catalogue" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 15s;">
+           
+           <!-- Flowise UI -->
+           <img src="/images/llm/flowiseUI.png" alt="Flowise UI" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 20s;">
+           
+           <!-- AI DevOps Pipeline (GIF) -->
+           <img src="/images/ai/teaser.gif" alt="AI DevOps Pipeline" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 25s;">
+           
+           <!-- Code Mender AI (GIF) -->
+           <img src="/images/ai/code_mender.gif" alt="Code Mender AI" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; opacity: 0; animation: fadeSlide7 40s infinite 30s;">
+           
+           <!-- RAG Tree Architecture (Fixed transparency) -->
+           <img src="/images/ai/ragTree-1-touchup.png" alt="RAG Tree Architecture" class="showcase-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; object-position: center center; opacity: 0; animation: fadeSlide7 40s infinite 35s;">
+           
+           <!-- Caption overlay -->
+           <div class="showcase-caption" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px 16px 12px; text-align: center;">
+             <h5 style="margin: 0; font-size: 1.2rem; font-weight: 600;">AI Engineering Portfolio</h5>
+             <p style="margin: 4px 0 0; font-size: 1rem; opacity: 0.9;">Korean Learning • LLM Systems • DevOps • Code Intelligence • RAG Architecture</p>
+           </div>
+         </div>
        </td>
      </tr>
    </tbody>
  </table>
 </div>
+
+<!-- CSS Animation for Portfolio Showcase with proper positioning -->
+<style>
+@keyframes fadeSlide7 {
+  0%, 10% { opacity: 1; transform: scale(1); }
+  12.5%, 97.5% { opacity: 0; transform: scale(1.01); }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+.portfolio-showcase:hover .showcase-img {
+  animation-play-state: paused;
+}
+
+.portfolio-showcase::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 10px;
+  height: 10px;
+  background: #4ade80;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.3);
+  animation: pulse 2s infinite;
+  z-index: 10;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.3); }
+}
+
+/* Wider table for better showcase */
+.tm-wrap table {
+  min-width: 800px;
+}
+
+/* Image positioning fixes */
+.showcase-img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Different background for different image types */
+.portfolio-showcase::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 1px;
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .portfolio-showcase {
+    height: 280px !important;
+    max-width: 95% !important;
+  }
+  .tm-wrap table {
+    width: 100% !important;
+    min-width: auto !important;
+  }
+  .showcase-caption h5 {
+    font-size: 1rem !important;
+  }
+  .showcase-caption p {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .portfolio-showcase {
+    max-width: 700px !important;
+    height: 400px !important;
+  }
+}
+</style>
 
 {% include latest.html %}
 
