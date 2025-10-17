@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Goorm AI워크로드 최적화 클라우드 엔지니어링 트랙 지원"
+title: "Back to School Portfolio - AI Engineering Track Application"
 name: "likelion-application"
 tags: [ai]
 tagName: ai
