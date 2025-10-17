@@ -1,29 +1,23 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '>= 3.0'
+# Use the github-pages gem which includes Jekyll and other dependencies
+gem "github-pages", group: :jekyll_plugins
 
-gem 'jekyll', '~> 4.3.3'
-gem 'webrick', '~> 1.8'
-gem 'csv'
-gem 'base64'
-gem 'kramdown-parser-gfm'
-gem 'faraday-retry' # silences the Faraday retry warning
+# Required plugins
+gem "jekyll-include-cache", group: :jekyll_plugins
 
-group :jekyll_plugins do
-  gem 'jekyll-paginate'
-  gem 'jekyll-gist'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-spaceship'
-  gem 'jekyll-babel'
-  gem 'jemoji' if Gem::Version.new(RUBY_VERSION) < Gem::Version.new('3.4')
+# These gems are needed for Ruby 3.0+
+gem "csv"
+gem "base64"
+
+# Windows and JRuby does not include zoneinfo files
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", ">= 1", "< 3"
+  gem "tzinfo-data"
 end
 
-# Windows only (ignored on Linux CI)
-platforms :mingw, :x64_mingw, :jruby do
-  gem 'tzinfo-data'
-end
+# Performance-booster for watching directories on Windows
+gem "wdm", ">= 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
-platforms :mingw, :x64_mingw do
-  # optional filesystem watcher for Windows; temporarily disabled pending build tools
-  # gem 'wdm', '>= 0.1.0'
-end
+# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds
+gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
