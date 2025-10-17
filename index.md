@@ -75,7 +75,7 @@ render_with_liquid: true
   .feature-title .muted{font-weight:400}
 </style>
 
-### Featured updates <span class="muted">AI engineer tracks</span>
+### back to school portfolio <span class="muted">AI engineer tracks</span>
 <div class="feature-grid">
   <div class="feature-card">
     <h4>AI Engineering show-case</h4>

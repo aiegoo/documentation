@@ -23,7 +23,7 @@ updated: 2025-09-22 06:00
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
-##  Goorm Profect AI 클라우드 엔지니어 트랙 지원 (Application)
+## BACK TO SCHOOL Application Reference Links
 
 <style>
   /* Remove permanent scale; apply only on wide screens */
@@ -100,7 +100,7 @@ updated: 2025-09-22 06:00
   .ai-list {
     max-width: 100%;
     overflow-x: auto;
-    margin-top: 100pt; /* push down due to zoomed table above */
+    margin-top: 30pt; /* push down due to zoomed table above */
   }
   .ai-list table { border-collapse: collapse; width: 100%; }
   .ai-list th, .ai-list td { border: 1px solid #ddd; padding: 6px 10px; }
@@ -130,6 +130,41 @@ updated: 2025-09-22 06:00
           <td><a href="{{ doc.url | relative_url }}">{{ doc.url | relative_url }}</a></td>
         </tr>
       {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<hr class="sep" />
+
+## AIOT Projects
+
+{% assign aiot_keyword = 'aiot' %}
+{% assign aiot_posts = site.posts | where_exp: 'p', 'p.keywords contains aiot_keyword' %}
+{% assign aiot_pages = site.pages | where_exp: 'p', 'p.keywords contains aiot_keyword' %}
+{% assign aiot_wiki = site.wiki | where_exp: 'w', 'w.keywords contains aiot_keyword' %}
+{% assign aiot_items = aiot_posts | concat: aiot_pages | concat: aiot_wiki | sort: 'date' | reverse %}
+
+<div class="ai-list">
+  <table>
+    <thead>
+      <tr><th>프로젝트</th><th>설명</th><th>링크</th></tr>
+    </thead>
+    <tbody>
+      {% for doc in aiot_items %}
+        {% assign sum = doc.summary | default: doc.excerpt | strip_newlines | default: "AIOT 프로젝트 문서" %}
+        <tr>
+          <td>{{ doc.title }}</td>
+          <td>{{ sum }}</td>
+          <td><a href="{{ doc.url | relative_url }}">{{ doc.url | relative_url }}</a></td>
+        </tr>
+      {% endfor %}
+      {% if aiot_items.size == 0 %}
+        <tr>
+          <td colspan="3" style="text-align: center; color: #666; font-style: italic;">
+            AIOT 키워드가 포함된 문서를 찾을 수 없습니다.
+          </td>
+        </tr>
+      {% endif %}
     </tbody>
   </table>
 </div>
