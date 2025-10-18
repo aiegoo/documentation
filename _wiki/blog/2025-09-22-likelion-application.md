@@ -138,36 +138,144 @@ updated: 2025-09-22 06:00
 
 ## AIOT Projects
 
-{% assign aiot_keyword = 'aiot' %}
-{% assign aiot_posts = site.posts | where_exp: 'p', 'p.keywords contains aiot_keyword' %}
-{% assign aiot_pages = site.pages | where_exp: 'p', 'p.keywords contains aiot_keyword' %}
-{% assign aiot_wiki = site.wiki | where_exp: 'w', 'w.keywords contains aiot_keyword' %}
-{% assign aiot_items = aiot_posts | concat: aiot_pages | concat: aiot_wiki | sort: 'date' | reverse %}
+### GitHub Repository Portfolio
+
+Here are my key AIOT (AI + IoT) projects from my GitHub portfolio:
+
+- **[3D-Printed-Drone-Assembly](https://github.com/aiegoo/3D-Printed-Drone-Assembly)** - 3D Printed Drone Assembly project showcasing custom hardware design
+- **[AI-Assisted-Inspection](https://github.com/aiegoo/AI-Assisted-Inspection)** - AI Assisted Infrastructure Inspection using Mixed Reality technology
+- **[airc-rl-agent](https://github.com/aiegoo/airc-rl-agent)** - AI RC Car Agent using deep reinforcement learning on Jetson Nano
+- **[bebop_autonomy](https://github.com/aiegoo/bebop_autonomy)** - ROS driver for Parrot Bebop Drones 1.0 & 2.0
+- **[battery_digital_twin](https://github.com/aiegoo/battery_digital_twin)** - Digital Twin for battery systems with uncertainty quantification
+- **[atest-tony](https://github.com/aiegoo/atest-tony)** - Raspberry Pi Arduino and Django API integration
+- **[checkMate](https://github.com/aiegoo/checkMate)** - Preflight-check companion for solo pilots
+- **[BruteForceAI](https://github.com/aiegoo/BruteForceAI)** - Advanced LLM-powered security tool with AI intelligence
+
+### Documentation Search Results
+
+{% comment %}
+Enhanced search for AIOT-related content across multiple keywords and fields
+{% endcomment %}
+
+{% assign aiot_items = '' | split: '' %}
+{% assign search_terms = 'aiot,iot,drone,raspberry,pi,jetson,firmware,embedded,arduino,sensor' | split: ',' %}
+
+{% comment %}
+Search across all collections for AIOT-related content
+{% endcomment %}
+{% assign all_docs = site.posts | concat: site.pages %}
+{% if site.wiki %}
+  {% assign all_docs = all_docs | concat: site.wiki %}
+{% endif %}
+
+{% for doc in all_docs %}
+  {% assign include_doc = false %}
+  
+  {% comment %}
+  Check keywords field
+  {% endcomment %}
+  {% if doc.keywords %}
+    {% for term in search_terms %}
+      {% if doc.keywords contains term %}
+        {% assign include_doc = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  
+  {% comment %}
+  Check tags
+  {% endcomment %}
+  {% if doc.tags %}
+    {% for tag in doc.tags %}
+      {% for term in search_terms %}
+        {% if tag contains term %}
+          {% assign include_doc = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% if include_doc %}{% break %}{% endif %}
+    {% endfor %}
+  {% endif %}
+  
+  {% comment %}
+  Check title
+  {% endcomment %}
+  {% if doc.title %}
+    {% assign title_lower = doc.title | downcase %}
+    {% for term in search_terms %}
+      {% if title_lower contains term %}
+        {% assign include_doc = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  
+  {% if include_doc %}
+    {% assign aiot_items = aiot_items | push: doc %}
+  {% endif %}
+{% endfor %}
+
+{% assign aiot_items = aiot_items | uniq | sort: 'date' | reverse %}
 
 <div class="ai-list">
   <table>
     <thead>
-      <tr><th>프로젝트</th><th>설명</th><th>링크</th></tr>
+      <tr><th>프로젝트</th><th>설명</th><th>유형</th><th>링크</th></tr>
     </thead>
     <tbody>
       {% for doc in aiot_items %}
-        {% assign sum = doc.summary | default: doc.excerpt | strip_newlines | default: "AIOT 프로젝트 문서" %}
+        {% assign sum = doc.summary | default: doc.excerpt | strip_newlines | strip_html | default: "AIOT 관련 프로젝트" %}
+        {% assign doc_type = doc.collection | default: "page" %}
+        {% if doc.layout == "post" %}{% assign doc_type = "blog" %}{% endif %}
         <tr>
-          <td>{{ doc.title }}</td>
-          <td>{{ sum }}</td>
-          <td><a href="{{ doc.url | relative_url }}">{{ doc.url | relative_url }}</a></td>
+          <td><strong>{{ doc.title | default: doc.name }}</strong></td>
+          <td>{{ sum | truncate: 120 }}</td>
+          <td><span class="badge badge-{{ doc_type }}">{{ doc_type }}</span></td>
+          <td><a href="{{ doc.url | relative_url }}" class="btn btn-sm btn-outline">보기</a></td>
         </tr>
       {% endfor %}
       {% if aiot_items.size == 0 %}
         <tr>
-          <td colspan="3" style="text-align: center; color: #666; font-style: italic;">
-            AIOT 키워드가 포함된 문서를 찾을 수 없습니다.
+          <td colspan="4" style="text-align: center; color: #666; font-style: italic;">
+            AIOT 관련 문서를 찾을 수 없습니다. Raspberry Pi, 드론, IoT 관련 문서를 추가해주세요.
           </td>
         </tr>
       {% endif %}
     </tbody>
   </table>
+  
+  {% if aiot_items.size > 0 %}
+  <div class="aiot-stats" style="margin-top: 15px; padding: 10px; background: #f8f9fa; border-radius: 5px;">
+    <small><strong>발견된 AIOT 프로젝트:</strong> {{ aiot_items.size }}개 문서</small>
+  </div>
+  {% endif %}
 </div>
+
+<style>
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  border-radius: 10px;
+  color: white;
+}
+.badge-wiki { background: #28a745; }
+.badge-blog { background: #007bff; }
+.badge-page { background: #6c757d; }
+.btn-outline {
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 2px 8px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 0.8em;
+}
+.btn-outline:hover {
+  background: #007bff;
+  color: white;
+}
+</style>
 
 {% include taglogic.html %}
 
