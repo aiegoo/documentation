@@ -114,7 +114,9 @@ updated: 2025-09-22 06:00
 {% assign t = 'likelion' %}
 {% assign posts = site.posts | where_exp: 'p', 'p.tags contains t' %}
 {% assign wiki  = site.wiki  | where_exp: 'w', 'w.tags contains t' %}
-{% assign items = posts | concat: wiki | sort: 'date' | reverse %}
+{% assign sorted_posts = posts | sort: 'date' | reverse %}
+{% assign sorted_wiki = wiki | sort: 'date' | reverse %}
+{% assign items = sorted_posts | concat: sorted_wiki %}
 
 <div class="ai-list">
   <table>
@@ -216,7 +218,7 @@ Search across all collections for AIOT-related content
   {% endif %}
 {% endfor %}
 
-{% assign aiot_items = aiot_items | uniq | sort: 'date' | reverse %}
+{% assign aiot_items = aiot_items | uniq %}
 
 <div class="ai-list">
   <table>
