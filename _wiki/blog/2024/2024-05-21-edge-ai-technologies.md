@@ -38,6 +38,7 @@ In this book, we will cover the following topics:
 10. The most fundamental parts of AI.
 11. The most fundamental parts of edge AI.
 12. The most fundamental parts of edge AI technologies.
+<img width="636" height="674" alt="Notes_251019_044836_ab3" src="https://github.com/user-attachments/assets/11b9c07f-bba2-476d-ba5c-a4254c194f2c" />
 
 ## Numbers Check
 - {'fact': 'log', 'status': 'Not Confirmed', 'text': '', 'page_num': '', 'source': ''}
