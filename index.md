@@ -269,7 +269,7 @@ render_with_liquid: true
       <h4>🎯 AI Engineer — Real Summit COEX</h4>
       <p>Professional profile highlights and comprehensive Samsung SDN Real Summit conference notes covering cutting-edge topics: Edge RAG, on-device LLMs, Private 5G networks, and advanced observability frameworks.</p>
       <div class="enhanced-card-footer">
-        <a class="enhanced-btn secondary" href="{% link pages/mydoc/mydoc_about.md %}#ai-engineer-and-stint-at-a-real-job-application">View Details →</a>
+        <a class="enhanced-btn secondary" href="{{ '/mydoc_about.html#ai-engineer--field-notes-from-samsung-sdn-summit' | relative_url }}">View Details →</a>
         <span style="color: #718096; font-size: 0.85rem;">pages › mydoc</span>
       </div>
     </div>
