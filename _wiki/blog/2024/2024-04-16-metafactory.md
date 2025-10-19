@@ -26,7 +26,7 @@ updated: 2024-04-16 22:00
 ## 메타팩토리
 ### 1단계 광역스캔
 <img width="1559" height="706" alt="1729751048326-1" src="https://github.com/user-attachments/assets/05cc5432-3424-4d15-9448-177d0fdcc404" />
-
+<img width="1710" height="905" alt="wide-scan-model" src="https://github.com/user-attachments/assets/13502dbe-8bda-4ad9-96cc-16e029dfaa4b" />
 
 ### 2단계 3D 모델링 & 인스턴스화
 ![1749689573788](https://github.com/user-attachments/assets/2d5ffea6-8e3f-4d1e-a91d-d6b4c1fb6eb1)
@@ -47,11 +47,13 @@ updated: 2024-04-16 22:00
 
 
 
+
 ![1744117679570](https://github.com/user-attachments/assets/d49f6aac-e190-41da-b3fc-ad6ec68a3166)
 
 
 #### Webserver
 
+<img width="1300" height="655" alt="hiemsDiagram" src="https://github.com/user-attachments/assets/a1b5e28c-5939-4330-b74e-21c4c6de6972" />
 
 ### 5단계 시각화 및 font-end
 <img width="1888" height="732" alt="Notes_251019_110711_b49" src="https://github.com/user-attachments/assets/772530e4-b2b1-48db-903e-8f76641a1416" />
@@ -62,6 +64,8 @@ updated: 2024-04-16 22:00
 
 ### 6단계 transformer & LLM
 
+![project_scope](https://github.com/user-attachments/assets/71ac8c04-87bd-4ed5-a582-310853ee757f)
+<img width="955" height="736" alt="hhiDashboard" src="https://github.com/user-attachments/assets/9404e9c7-dd17-454e-b58b-63744e964aa6" />
 
 ## DT phase
 {{site.data.alerts.callout_info}}DT - DX - AX는 정부의 지원금을 신청할때 단계별로 구분하여 신청해야 한다. 다음 단계를 참고하여 기획하여야 하고, 고객사와의 로드맵을 공유하고 추진 계획을 세울때 핵심 지표로 삼아야 한다.{{site.data.alerts.end}}
@@ -74,6 +78,7 @@ updated: 2024-04-16 22:00
 https://github.com/user-attachments/assets/9509d0b3-ffaf-4ff5-8a53-c919bd3cd4b7
 
 
+<img width="2602" height="1564" alt="hiemsEnginePanel" src="https://github.com/user-attachments/assets/4c56cad5-e247-4781-8f91-737056e23c7f" />
 
 {% include taglogic.html %}
 
