@@ -72,7 +72,8 @@ The project involved developing AI-based battery management systems with specifi
    * Future collaboration framework
    * Technical knowledge sharing
 
-{% include image.html file="mou-signing-vw-germany.jpg" alt="MOU Signing Ceremony with VW Germany" caption="Official signing ceremony for the AI-BMS development agreement with Volkswagen Germany" %}
+{% include image.html file="https://github.com/user-attachments/assets/f554058b-5ff4-47a4-91b8-281e8dd990d5" alt="MOU Signing Ceremony with VW Germany" caption="Official signing ceremony for the AI-BMS development agreement with Volkswagen Germany" %}
+
 
 #### Building Technical Partnerships
 
@@ -95,7 +96,17 @@ Working on the German VW battery module project required understanding new techn
 
 {% include image.html file="bms/ai-bms-project.png" alt="VW Battery Module Overview" caption="German VW battery module project showing technical architecture and system integration" %}
 
-{% include image.html file="https://drive.google.com/uc?export=view&id=1koU7CZ_SI3Nf5XPzcqNCJipo1qnY6NfW" alt="Additional BMS Project Image" caption="Additional technical documentation and development progress from the VW collaboration project" %}
+{% raw %}
+<!-- Replace the existing Google Drive include line with this plain HTML image tag -->
+<p>
+  <a href="https://drive.google.com/file/d/1koU7CZ_SI3Nf5XPzcqNCJipo1qnY6NfW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+    <img src="https://drive.google.com/uc?export=view&id=1koU7CZ_SI3Nf5XPzcqNCJipo1qnY6NfW"
+         alt="Additional BMS Project Image"
+         style="max-width:100%;height:auto;">
+  </a>
+</p>
+{% endraw %}
+Additional technical documentation and development progress from the VW collaboration project
 
 ### Technical Deliverables
 
