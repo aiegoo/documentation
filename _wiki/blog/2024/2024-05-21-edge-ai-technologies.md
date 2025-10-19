@@ -24,6 +24,7 @@ driveID: 1DUj5JeQp2qHCISk7OFQrnJ0AIVJpTGXQ
 
 {{site.data.alerts.callout_warning}}This is a draft, the content is not complete and of poor quality!{{site.data.alerts.end}}
 
+{{site.data.alerts.callout_info}}엣지 에이아이 책 한권을 RAG을 이용하여 할루시네이션 없이 도메인에 적합한 답을 도출할 수 있었다. 최근에는 방대한 양의 증거 문서를 바탕으로 한 각종 법원 서면을 작성하게 하고 관련 법조문을 바탕으로 공수를 병행하여 사용자에게 올코트 인사이트를 제공하게도 하였다.{{site.data.alerts.end}}
 ## Answer
 In this book, we will cover the following topics:
 1. The opportunities, limitations, and risks inherent to various edge AI technologies.
