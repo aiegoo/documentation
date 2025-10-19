@@ -1,0 +1,13 @@
+<div class="embed-container jekyllvideo">
+  <video 
+      width="{{ include.width | default: '100%' }}"
+      height="{{ include.height | default: 'auto' }}"
+      controls
+      {% if include.autoplay %}autoplay{% endif %}
+      {% if include.loop %}loop{% endif %}
+      {% if include.muted %}muted{% endif %}
+      preload="{{ include.preload | default: 'metadata' }}">
+    <source src="https://github.com/user-attachments/assets/{{ include.id }}" type="video/mp4">
+    <p>Your browser doesn't support HTML5 video. <a href="https://github.com/user-attachments/assets/{{ include.id }}">Download the video</a> instead.</p>
+  </video>
+</div>

@@ -74,8 +74,7 @@ updated: 2024-04-16 22:00
 ![30d4da2d49206a481e43050f3dd23add3703bfd413be9638e2e81aab397b54d7](https://github.com/user-attachments/assets/29d89d30-0e9d-498f-b633-0c6b0fa2a060)
 ![1713657452216](https://github.com/user-attachments/assets/2393d21f-6935-4603-be88-cd2318b3d6e9)
 
-
-https://github.com/user-attachments/assets/9509d0b3-ffaf-4ff5-8a53-c919bd3cd4b7
+{% include githubVideo.html id="9509d0b3-ffaf-4ff5-8a53-c919bd3cd4b7" width="100%" %}
 
 
 <img width="2602" height="1564" alt="hiemsEnginePanel" src="https://github.com/user-attachments/assets/4c56cad5-e247-4781-8f91-737056e23c7f" />
