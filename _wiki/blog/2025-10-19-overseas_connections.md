@@ -121,6 +121,10 @@ Working on the German VW battery module project required understanding new techn
 
 {% include image.html file="bms/ai-bms.png" alt="AI-BMS Architecture Diagram" caption="Comprehensive AI-BMS architecture showing integration with VW systems and data flow" %}
 
+{% include image.html file="bms/hv-bms.jpg" alt="High Voltage BMS Board" caption="High voltage board for electric vehicles and a specially designed demo board used for development and testing" %}
+
+{% include image.html file="bms/bms_demo_board.jpg" alt="BMS Demo Board Wired Setup" caption="Specially designed demo board with wiring configuration used for AI-BMS development and validation testing" %}
+
 ### Dataset Analysis and Machine Learning
 
 #### Comprehensive Data Collection
