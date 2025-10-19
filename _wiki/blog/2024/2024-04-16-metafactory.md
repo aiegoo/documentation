@@ -36,8 +36,6 @@ updated: 2024-04-16 22:00
 <img width="1159" height="607" alt="1734582437859" src="https://github.com/user-attachments/assets/b84048f3-b8df-4718-99c1-44252d73a4ef" />
 
 
-https://github.com/user-attachments/assets/fde25331-e756-4a71-a712-099f4afdae0f
-
 
 
 ### 4단계 HIL SIL 구현 
@@ -45,16 +43,9 @@ https://github.com/user-attachments/assets/fde25331-e756-4a71-a712-099f4afdae0f
 #### Labview
 
 
-https://github.com/user-attachments/assets/23cfcfb5-41d1-4d88-8b83-c648dd79e8d0
-
 ![SmartSelect_20250421_234445_Chrome](https://github.com/user-attachments/assets/e037c12d-9364-4699-a85b-29b812593f10)
 
 
-https://github.com/user-attachments/assets/e3e6d614-20ee-476c-8c33-c72bfa978605
-
-
-
-https://github.com/user-attachments/assets/d3830b43-e338-47ec-a7f7-1e49a6041f75
 
 ![1744117679570](https://github.com/user-attachments/assets/d49f6aac-e190-41da-b3fc-ad6ec68a3166)
 
@@ -74,6 +65,13 @@ https://github.com/user-attachments/assets/d3830b43-e338-47ec-a7f7-1e49a6041f75
 
 ## DT phase
 {{site.data.alerts.callout_info}}DT - DX - AX는 정부의 지원금을 신청할때 단계별로 구분하여 신청해야 한다. 다음 단계를 참고하여 기획하여야 하고, 고객사와의 로드맵을 공유하고 추진 계획을 세울때 핵심 지표로 삼아야 한다.{{site.data.alerts.end}}
+
+![SmartSelect_20250421_234541_Samsung Notes](https://github.com/user-attachments/assets/d9272de3-45e5-4fea-a508-8c47eda26217)
+![30d4da2d49206a481e43050f3dd23add3703bfd413be9638e2e81aab397b54d7](https://github.com/user-attachments/assets/29d89d30-0e9d-498f-b633-0c6b0fa2a060)
+![1713657452216](https://github.com/user-attachments/assets/2393d21f-6935-4603-be88-cd2318b3d6e9)
+
+
+https://github.com/user-attachments/assets/9509d0b3-ffaf-4ff5-8a53-c919bd3cd4b7
 
 
 
