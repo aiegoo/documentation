@@ -73,33 +73,205 @@ render_with_liquid: true
   .feature-title{margin-top:22px}
   .feature-title span{font-size:.85rem;margin-left:8px}
   .feature-title .muted{font-weight:400}
+  
+  /* Enhanced Back to School Section Styles */
+  .back-to-school-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 32px 24px;
+    border-radius: 16px;
+    margin: 32px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+  }
+  
+  .back-to-school-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    animation: float 20s infinite linear;
+    z-index: 1;
+  }
+  
+  @keyframes float {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  
+  .back-to-school-title {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ffffff, #f0f8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .back-to-school-subtitle {
+    position: relative;
+    z-index: 2;
+    font-size: 1.25rem;
+    font-weight: 400;
+    opacity: 0.9;
+    margin: 0 0 24px;
+    letter-spacing: 0.05em;
+  }
+  
+  .enhanced-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin: 24px 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .enhanced-feature-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #333;
+  }
+  
+  .enhanced-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  .enhanced-feature-card h4 {
+    color: #2d3748;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+    line-height: 1.3;
+  }
+  
+  .enhanced-feature-card p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0 0 16px;
+    flex-grow: 1;
+  }
+  
+  .enhanced-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 20px;
+  }
+  
+  .enhanced-chip {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .enhanced-chip.portfolio { background: #e6fffa; color: #065f46; }
+  .enhanced-chip.deliverables { background: #f0fff4; color: #22543d; }
+  .enhanced-chip.assignments { background: #fff5e6; color: #c05621; }
+  
+  .enhanced-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  .enhanced-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+  }
+  
+  .enhanced-btn.primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+  }
+  
+  .enhanced-btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+  }
+  
+  .enhanced-btn.secondary {
+    background: #f7fafc;
+    color: #2d3748;
+    border: 2px solid #e2e8f0;
+  }
+  
+  .enhanced-btn.secondary:hover {
+    background: #edf2f7;
+    border-color: #cbd5e0;
+  }
+  
+  @media (max-width: 768px) {
+    .back-to-school-title {
+      font-size: 2.2rem;
+    }
+    .enhanced-feature-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
-### back to school portfolio <span class="muted">AI engineer tracks</span>
-<div class="feature-grid">
-  <div class="feature-card">
-    <h4>AI Engineering show-case</h4>
-    <p>Curated links and artifacts used for the Goorm AI workload optimization track application.</p>
-    <div class="card-list">
-      <li class="chip">portfolio</li>
-      <li class="chip green">deliverables</li>
-      <li class="chip orange">assignments</li>
-    </div>
-    <div class="card-footer" style="margin-top:10px">
-      <div class="card-links">
-        <a class="btn primary" href="{{ '/2025-09-22-likelion-application.html' | relative_url }}">Open page</a>
+<!-- Enhanced Back to School Section -->
+<div class="back-to-school-hero">
+  <h2 class="back-to-school-title">BACK TO SCHOOL</h2>
+  <p class="back-to-school-subtitle">AI Engineer Portfolio & Professional Development Track</p>
+  
+  <div class="enhanced-feature-grid">
+    <div class="enhanced-feature-card">
+      <h4>🚀 AI Engineering Showcase</h4>
+      <p>Comprehensive portfolio featuring curated links and artifacts from the Goorm AI workload optimization track application. Demonstrating practical AI implementation skills and real-world project experience.</p>
+      <div class="enhanced-chips">
+        <span class="enhanced-chip portfolio">Portfolio</span>
+        <span class="enhanced-chip deliverables">Deliverables</span>
+        <span class="enhanced-chip assignments">Assignments</span>
       </div>
-      <span class="muted">wiki › blog</span>
-    </div>
-  </div>
-  <div class="feature-card">
-    <h4>AI Engineer — 리얼서밋트-COEX</h4>
-    <p>Profile highlights and Samsung SDN Real Summit notes (Edge RAG, on‑device LLMs, Private 5G, observability).</p>
-    <div class="card-footer" style="margin-top:10px">
-      <div class="card-links">
-        <a class="btn secondary" href="{% link pages/mydoc/mydoc_about.md %}#ai-engineer-and-stint-at-a-real-job-application">Open page</a>
+      <div class="enhanced-card-footer">
+        <a class="enhanced-btn primary" href="{{ '/2025-09-22-likelion-application.html' | relative_url }}">Explore Portfolio →</a>
+        <span style="color: #718096; font-size: 0.85rem;">wiki › blog</span>
       </div>
-      <span class="muted">pages › mydoc</span>
+    </div>
+    
+    <div class="enhanced-feature-card">
+      <h4>🎯 AI Engineer — Real Summit COEX</h4>
+      <p>Professional profile highlights and comprehensive Samsung SDN Real Summit conference notes covering cutting-edge topics: Edge RAG, on-device LLMs, Private 5G networks, and advanced observability frameworks.</p>
+      <div class="enhanced-card-footer">
+        <a class="enhanced-btn secondary" href="{% link pages/mydoc/mydoc_about.md %}#ai-engineer-and-stint-at-a-real-job-application">View Details →</a>
+        <span style="color: #718096; font-size: 0.85rem;">pages › mydoc</span>
+      </div>
     </div>
   </div>
 </div>
