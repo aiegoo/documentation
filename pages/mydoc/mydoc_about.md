@@ -74,10 +74,22 @@ This is my first web page I have created, without any css, html or jquery snippe
 - 아티팩트
   - 요약/그림: [2025-09-24-38th]({{ '/2025-09-24-38th.html' | relative_url }})
   - 파이프라인 이미지:
-    - <a href="{{ '/wiki-img/2025/diary/38th/overview.png' | relative_url }}" target="_blank">overview.png</a>,
-      <a href="{{ '/wiki-img/2025/diary/38th/monitor.png' | relative_url }}" target="_blank">monitor.png</a>,
-      <a href="{{ '/wiki-img/2025/diary/38th/pipeline.png' | relative_url }}" target="_blank">pipeline.png</a>,
-      <a href="{{ '/wiki-img/2025/diary/38th/model_serving_pipeline.png' | relative_url }}" target="_blank">model_serving_pipeline.png</a>
+
+#### System Overview
+{% include image.html file="2025/diary/38th/overview.png" alt="Samsung SDN Summit - System Overview" caption="전체 시스템 아키텍처 개요" %}
+
+#### Monitoring Dashboard  
+{% include image.html file="2025/diary/38th/monitor.png" alt="Samsung SDN Summit - Monitoring Dashboard" caption="실시간 모니터링 대시보드 및 KPI 지표" %}
+
+#### Processing Pipeline
+{% include image.html file="2025/diary/38th/pipeline.png" alt="Samsung SDN Summit - Processing Pipeline" caption="AI 튜터 에이전트 처리 파이프라인" %}
+
+#### Model Serving Pipeline
+{% include image.html file="2025/diary/38th/model_serving_pipeline.png" alt="Samsung SDN Summit - Model Serving Pipeline" caption="모델 서빙 파이프라인 구조" %}
+
+#### Korean Documentation
+{% include image.html file="2025/diary/38th/korean.png" alt="Samsung SDN Summit - Korean Summary" caption="한국어 요약 및 핵심 인사이트" %}
+
 - 액션 아이템
   - [ ] MEC 배치용 RAG 인덱스 스냅샷/롤오버 자동화
   - [ ] p95 SLA 모니터링 대시보드(OpenTelemetry + Prom/Grafana)
