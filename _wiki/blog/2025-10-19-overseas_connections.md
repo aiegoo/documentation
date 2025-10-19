@@ -95,6 +95,8 @@ Working on the German VW battery module project required understanding new techn
 
 {% include image.html file="bms/ai-bms-project.png" alt="VW Battery Module Overview" caption="German VW battery module project showing technical architecture and system integration" %}
 
+{% include image.html file="https://drive.google.com/uc?export=view&id=1koU7CZ_SI3Nf5XPzcqNCJipo1qnY6NfW" alt="Additional BMS Project Image" caption="Additional technical documentation and development progress from the VW collaboration project" %}
+
 ### Technical Deliverables
 
 #### AI-Based Battery Management System Features
