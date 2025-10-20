@@ -69,6 +69,12 @@ updated: 2024-04-16 22:00
 
 ## DT phase
 {{site.data.alerts.callout_info}}DT - DX - AX는 정부의 지원금을 신청할때 단계별로 구분하여 신청해야 한다. 다음 단계를 참고하여 기획하여야 하고, 고객사와의 로드맵을 공유하고 추진 계획을 세울때 핵심 지표로 삼아야 한다.{{site.data.alerts.end}}
+<img width="444" height="321" alt="1000007291" src="https://github.com/user-attachments/assets/6189db8c-f85d-4f58-b392-fb88d5172835" />
+<img width="671" height="453" alt="1000007293" src="https://github.com/user-attachments/assets/9a0cd863-830a-4d74-825c-28ac6ebd0fe9" />
+<img width="3231" height="2432" alt="1000007294" src="https://github.com/user-attachments/assets/c573cd33-87aa-4658-bd70-73469be98c5f" />
+
+as in a proposal
+<img width="3231" height="2432" alt="1000007292" src="https://github.com/user-attachments/assets/31527d2c-20c3-410f-adf3-f63177debdc5" />
 
 ![SmartSelect_20250421_234541_Samsung Notes](https://github.com/user-attachments/assets/d9272de3-45e5-4fea-a508-8c47eda26217)
 ![30d4da2d49206a481e43050f3dd23add3703bfd413be9638e2e81aab397b54d7](https://github.com/user-attachments/assets/29d89d30-0e9d-498f-b633-0c6b0fa2a060)
