@@ -1,341 +1,678 @@
-<!-- Google Drive Photo Album Include --><!-- Google Drive Photo Album Include -->
+<!-- Google Drive Photo Album Include --><!-- Google Drive Photo Album Include --><!-- Google Drive Photo Album Include -->
 
-<!-- <!-- 
+<!-- 
 
-Usage Options:Usage Options:
+Usage Options:<!-- <!-- 
+
+1. Simple folder embed: {% include google_drive_photo_album.html folder_id="YOUR_FOLDER_ID" title="Album Title" %}
+
+2. Album from data:    {% include google_drive_photo_album.html album="album-name" %}Usage Options:Usage Options:
+
+-->
 
 1. Simple folder embed: {% include google_drive_photo_album.html folder_id="YOUR_FOLDER_ID" title="Album Title" %}1. Simple folder embed: {% include google_drive_photo_album.html folder_id="YOUR_FOLDER_ID" title="Album Title" %}
 
-2. Album from data:    {% include google_drive_photo_album.html album="album-name" %}2. Album from data:    {% include google_drive_photo_album.html album="album-name" %}
+{% if include.folder_id %}
 
--->-->
+  <!-- Direct folder ID usage - Simple embed mode -->2. Album from data:    {% include google_drive_photo_album.html album="album-name" %}2. Album from data:    {% include google_drive_photo_album.html album="album-name" %}
 
+  {% assign folder_id = include.folder_id %}
 
+  {% assign album_title = include.title | default: "Photo Album" %}-->-->
 
-{% if include.folder_id %}{% if include.folder_id %}
+  {% assign embed_height = include.height | default: "500" %}
 
-  <!-- Direct folder ID usage - Simple embed mode -->  <!-- Direct folder ID usage - Simple embed mode -->
+  
 
-  {% assign folder_id = include.folder_id %}  {% assign folder_id = include.folder_id %}
+  <div class="google-drive-folder-embed">
 
-  {% assign album_title = include.title | default: "Photo Album" %}  {% assign album_title = include.title | default: "Photo Album" %}
-
-  {% assign embed_height = include.height | default: "500" %}  {% assign embed_height = include.height | default: "500" %}
+    <h3>{{ album_title }}</h3>{% if include.folder_id %}{% if include.folder_id %}
 
     
 
-  <div class="google-drive-folder-embed">  <div class="google-drive-folder-embed">
+    <iframe   <!-- Direct folder ID usage - Simple embed mode -->  <!-- Direct folder ID usage - Simple embed mode -->
 
-    <h3>{{ album_title }}</h3>    <h3>{{ album_title }}</h3>
+      src="https://drive.google.com/embeddedfolderview?id={{ folder_id }}#grid"
 
-        
+      width="100%"   {% assign folder_id = include.folder_id %}  {% assign folder_id = include.folder_id %}
 
-    <iframe     <iframe 
+      height="{{ embed_height }}"
 
-      src="https://drive.google.com/embeddedfolderview?id={{ folder_id }}#grid"      src="https://drive.google.com/embeddedfolderview?id={{ folder_id }}#grid"
+      frameborder="0"  {% assign album_title = include.title | default: "Photo Album" %}  {% assign album_title = include.title | default: "Photo Album" %}
 
-      width="100%"       width="100%" 
+      style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
 
-      height="{{ embed_height }}"      height="{{ embed_height }}"
+    </iframe>  {% assign embed_height = include.height | default: "500" %}  {% assign embed_height = include.height | default: "500" %}
 
-      frameborder="0"      frameborder="0"
+    
+
+    <p style="margin-top: 10px; text-align: center;">    
+
+      <a href="https://drive.google.com/drive/folders/{{ folder_id }}?usp=sharing" 
+
+         target="_blank"   <div class="google-drive-folder-embed">  <div class="google-drive-folder-embed">
+
+         rel="noopener"
+
+         style="color: #1a73e8; text-decoration: none;">    <h3>{{ album_title }}</h3>    <h3>{{ album_title }}</h3>
+
+        📁 View full folder in Google Drive →
+
+      </a>        
+
+    </p>
+
+  </div>    <iframe     <iframe 
+
+
+
+{% elsif include.album %}      src="https://drive.google.com/embeddedfolderview?id={{ folder_id }}#grid"      src="https://drive.google.com/embeddedfolderview?id={{ folder_id }}#grid"
+
+  <!-- Album data from _data/albums/ -->
+
+  {% assign album_data = site.data.albums[include.album] %}      width="100%"       width="100%" 
+
+  {% unless album_data %}
+
+    <div class="album-error">      height="{{ embed_height }}"      height="{{ embed_height }}"
+
+      <p>❌ Album "{{ include.album }}" not found. Please check the filename in _data/albums/</p>
+
+    </div>      frameborder="0"      frameborder="0"
+
+  {% else %}
 
       style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">      style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
 
-    </iframe>    </iframe>
+    {% if album_data.use_folder_embed %}
+
+      <!-- Simple folder embed mode - uses just the folder ID -->    </iframe>    </iframe>
+
+      <div class="google-drive-folder-embed">
+
+        <h3>{{ album_data.title }}</h3>        
 
         
 
-    <p style="margin-top: 10px; text-align: center;">    <p style="margin-top: 10px; text-align: center;">
+        <iframe     <p style="margin-top: 10px; text-align: center;">    <p style="margin-top: 10px; text-align: center;">
 
-      <a href="https://drive.google.com/drive/folders/{{ folder_id }}?usp=sharing"       <a href="https://drive.google.com/drive/folders/{{ folder_id }}?usp=sharing" 
+          src="https://drive.google.com/embeddedfolderview?id={{ album_data.folder_id }}#grid"
 
-         target="_blank"          target="_blank" 
+          width="100%"       <a href="https://drive.google.com/drive/folders/{{ folder_id }}?usp=sharing"       <a href="https://drive.google.com/drive/folders/{{ folder_id }}?usp=sharing" 
 
-         rel="noopener"         rel="noopener"
+          height="{{ album_data.embed_height | default: '500' }}"
 
-         style="color: #1a73e8; text-decoration: none;">         style="color: #1a73e8; text-decoration: none;">
+          frameborder="0"         target="_blank"          target="_blank" 
 
-        📁 View full folder in Google Drive →        📁 View full folder in Google Drive →
+          style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
 
-      </a>      </a>
+        </iframe>         rel="noopener"         rel="noopener"
 
-    </p>    </p>
+        
 
-  </div>  </div>
+        <p style="margin-top: 10px; text-align: center;">         style="color: #1a73e8; text-decoration: none;">         style="color: #1a73e8; text-decoration: none;">
 
+          <a href="{{ album_data.folder_url }}" 
 
+             target="_blank"         📁 View full folder in Google Drive →        📁 View full folder in Google Drive →
 
-{% elsif include.album %}{% elsif include.album %}
+             rel="noopener"
 
-  <!-- Album data from _data/albums/ -->  <!-- Album data from _data/albums/ -->
+             style="color: #1a73e8; text-decoration: none;">      </a>      </a>
 
-  {% assign album_data = site.data.albums[include.album] %}  {% assign album_data = site.data.albums[include.album] %}
+            📁 View full folder in Google Drive →
 
-  {% unless album_data %}  {% unless album_data %}
+          </a>    </p>    </p>
 
-    <div class="album-error">    <div class="album-error">
+        </p>
 
-      <p>❌ Album "{{ include.album }}" not found. Please check the filename in _data/albums/</p>      <p>❌ Album "{{ include.album }}" not found. Please check the filename in _data/albums/</p>
+      </div>  </div>  </div>
 
-    </div>    </div>
 
-  {% else %}  {% else %}
 
+    {% else %}
 
+      <!-- Custom grid mode with individual images -->
 
-    {% if album_data.use_folder_embed %}{% if album_data.use_folder_embed %}
+      <div class="google-drive-album" id="album-{{ include.album }}">{% elsif include.album %}{% elsif include.album %}
 
-      <!-- Simple folder embed mode - uses just the folder ID -->  <!-- Simple folder embed mode - uses just the folder ID -->
+        <div class="album-header">
 
-      <div class="google-drive-folder-embed">  <div class="google-drive-folder-embed">
+          <h3 class="album-title">{{ album_data.title }}</h3>  <!-- Album data from _data/albums/ -->  <!-- Album data from _data/albums/ -->
 
-        <h3>{{ album_data.title }}</h3>    <h3>{{ album_data.title }}</h3>
+          {% if album_data.description %}
 
-            
+            <p class="album-description">{{ album_data.description }}</p>  {% assign album_data = site.data.albums[include.album] %}  {% assign album_data = site.data.albums[include.album] %}
 
-        <iframe     <iframe 
+          {% endif %}
 
-          src="https://drive.google.com/embeddedfolderview?id={{ album_data.folder_id }}#grid"      src="https://drive.google.com/embeddedfolderview?id={{ album_data.folder_id }}#grid"
+        </div>  {% unless album_data %}  {% unless album_data %}
 
-          width="100%"       width="100%" 
+        
 
-          height="{{ album_data.embed_height | default: '500' }}"      height="{{ album_data.embed_height | default: '500' }}"
+        <div class="photo-grid" data-album="album-{{ include.album }}">    <div class="album-error">    <div class="album-error">
 
-          frameborder="0"      frameborder="0"
+          {% if album_data.images %}
 
-          style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">      style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            {% for photo in album_data.images %}      <p>❌ Album "{{ include.album }}" not found. Please check the filename in _data/albums/</p>      <p>❌ Album "{{ include.album }}" not found. Please check the filename in _data/albums/</p>
 
-        </iframe>    </iframe>
+              <div class="photo-item" data-index="{{ forloop.index0 }}">
 
-            
+                <div class="photo-wrapper">    </div>    </div>
 
-        <p style="margin-top: 10px; text-align: center;">    <p style="margin-top: 10px; text-align: center;">
+                  <img 
 
-          <a href="{{ album_data.folder_url }}"       <a href="{{ album_data.folder_url }}" 
+                    src="{{ photo.thumbnail }}"   {% else %}  {% else %}
 
-             target="_blank"          target="_blank" 
+                    alt="{{ photo.title | default: 'Photo' }}"
 
-             rel="noopener"         rel="noopener"
+                    loading="lazy"
 
-             style="color: #1a73e8; text-decoration: none;">         style="color: #1a73e8; text-decoration: none;">
+                    class="photo-thumbnail"
 
-            📁 View full folder in Google Drive →        📁 View full folder in Google Drive →
+                    data-full-src="{{ photo.url }}"    {% if album_data.use_folder_embed %}{% if album_data.use_folder_embed %}
 
-          </a>      </a>
+                    data-title="{{ photo.title | default: 'Photo' }}"
 
-        </p>    </p>
+                    data-description="{{ photo.description | default: '' }}"      <!-- Simple folder embed mode - uses just the folder ID -->  <!-- Simple folder embed mode - uses just the folder ID -->
 
-      </div>  </div>
+                  />
 
+                  <div class="photo-overlay">      <div class="google-drive-folder-embed">  <div class="google-drive-folder-embed">
 
+                    <div class="photo-info">
 
-    {% else %}{% else %}
+                      <h4>{{ photo.title | default: 'Photo' }}</h4>        <h3>{{ album_data.title }}</h3>    <h3>{{ album_data.title }}</h3>
 
-      <!-- Custom grid mode with individual images -->  <!-- Custom grid mode with individual images -->
+                      {% if photo.description %}
 
-      <div class="google-drive-album" id="album-{{ include.album }}">  <div class="google-drive-album" id="album-{{ include.album }}">
+                        <p>{{ photo.description }}</p>            
 
-        <div class="album-header">    <div class="album-header">
+                      {% endif %}
 
-          <h3 class="album-title">{{ album_data.title }}</h3>      <h3 class="album-title">{{ album_data.title }}</h3>
+                    </div>        <iframe     <iframe 
 
-          {% if album_data.description %}      {% if album_data.description %}
+                    <button class="view-full-btn" aria-label="View full size">
 
-            <p class="album-description">{{ album_data.description }}</p>        <p class="album-description">{{ album_data.description }}</p>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">          src="https://drive.google.com/embeddedfolderview?id={{ album_data.folder_id }}#grid"      src="https://drive.google.com/embeddedfolderview?id={{ album_data.folder_id }}#grid"
 
-          {% endif %}      {% endif %}
+                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
 
-        </div>    </div>
+                      </svg>          width="100%"       width="100%" 
 
-            
+                    </button>
 
-        <div class="photo-grid" data-album="album-{{ include.album }}">    <div class="photo-grid" data-album="album-{{ include.album }}">
+                  </div>          height="{{ album_data.embed_height | default: '500' }}"      height="{{ album_data.embed_height | default: '500' }}"
 
-          {% if album_data.images %}      {% if album_data.images %}
+                </div>
 
-            {% for photo in album_data.images %}        {% for photo in album_data.images %}
+              </div>          frameborder="0"      frameborder="0"
 
-              <div class="photo-item" data-index="{{ forloop.index0 }}">          <div class="photo-item" data-index="{{ forloop.index0 }}">
+            {% endfor %}
 
-                <div class="photo-wrapper">            <div class="photo-wrapper">
+          {% else %}          style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">      style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
 
-                  <img               <img 
+            <div class="no-photos">
 
-                    src="{{ photo.thumbnail }}"                 src="{{ photo.thumbnail }}" 
+              <p>No photos configured. Please add image data to _data/albums/{{ include.album }}.yml</p>        </iframe>    </iframe>
 
-                    alt="{{ photo.title | default: 'Photo' }}"                alt="{{ photo.title | default: 'Photo' }}"
+            </div>
 
-                    loading="lazy"                loading="lazy"
+          {% endif %}            
 
-                    class="photo-thumbnail"                class="photo-thumbnail"
+        </div>
+
+                <p style="margin-top: 10px; text-align: center;">    <p style="margin-top: 10px; text-align: center;">
+
+        <!-- Folder link -->
+
+        <div class="album-footer">          <a href="{{ album_data.folder_url }}"       <a href="{{ album_data.folder_url }}" 
+
+          <a href="{{ album_data.folder_url }}" 
+
+             target="_blank"              target="_blank"          target="_blank" 
+
+             rel="noopener"
+
+             class="folder-link">             rel="noopener"         rel="noopener"
+
+            📁 View source folder in Google Drive
+
+          </a>             style="color: #1a73e8; text-decoration: none;">         style="color: #1a73e8; text-decoration: none;">
+
+        </div>
+
+      </div>            📁 View full folder in Google Drive →        📁 View full folder in Google Drive →
+
+
+
+      <!-- Lightbox Modal -->          </a>      </a>
+
+      <div class="lightbox-modal" id="lightbox-{{ include.album }}" style="display: none;">
+
+        <div class="lightbox-backdrop"></div>        </p>    </p>
+
+        <div class="lightbox-content">
+
+          <button class="lightbox-close" aria-label="Close">&times;</button>      </div>  </div>
+
+          <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+
+          <button class="lightbox-next" aria-label="Next">&#8250;</button>
+
+          
+
+          <div class="lightbox-image-container">    {% else %}{% else %}
+
+            <img class="lightbox-image" alt="" />
+
+            <div class="lightbox-loading">Loading...</div>      <!-- Custom grid mode with individual images -->  <!-- Custom grid mode with individual images -->
+
+          </div>
+
+                <div class="google-drive-album" id="album-{{ include.album }}">  <div class="google-drive-album" id="album-{{ include.album }}">
+
+          <div class="lightbox-info">
+
+            <h3 class="lightbox-title"></h3>        <div class="album-header">    <div class="album-header">
+
+            <p class="lightbox-description"></p>
+
+            <span class="lightbox-counter"></span>          <h3 class="album-title">{{ album_data.title }}</h3>      <h3 class="album-title">{{ album_data.title }}</h3>
+
+          </div>
+
+        </div>          {% if album_data.description %}      {% if album_data.description %}
+
+      </div>
+
+    {% endif %}            <p class="album-description">{{ album_data.description }}</p>        <p class="album-description">{{ album_data.description }}</p>
+
+
+
+  {% endunless %}          {% endif %}      {% endif %}
+
+  
+
+{% else %}        </div>    </div>
+
+  <div class="album-error">
+
+    <p>❌ Please provide either folder_id or album parameter</p>            
+
+    <p>Usage: {% raw %}{% include google_drive_photo_album.html folder_id="YOUR_FOLDER_ID" %}{% endraw %}</p>
+
+    <p>Or: {% raw %}{% include google_drive_photo_album.html album="album-name" %}{% endraw %}</p>        <div class="photo-grid" data-album="album-{{ include.album }}">    <div class="photo-grid" data-album="album-{{ include.album }}">
+
+  </div>
+
+{% endif %}          {% if album_data.images %}      {% if album_data.images %}
+
+
+
+<style>            {% for photo in album_data.images %}        {% for photo in album_data.images %}
+
+/* Google Drive Photo Album Styles */
+
+.google-drive-folder-embed {              <div class="photo-item" data-index="{{ forloop.index0 }}">          <div class="photo-item" data-index="{{ forloop.index0 }}">
+
+  margin: 2rem 0;
+
+  padding: 1rem;                <div class="photo-wrapper">            <div class="photo-wrapper">
+
+  border-radius: 12px;
+
+  background: #f8fafc;                  <img               <img 
+
+  border: 1px solid #e2e8f0;
+
+}                    src="{{ photo.thumbnail }}"                 src="{{ photo.thumbnail }}" 
+
+
+
+.google-drive-folder-embed h3 {                    alt="{{ photo.title | default: 'Photo' }}"                alt="{{ photo.title | default: 'Photo' }}"
+
+  text-align: center;
+
+  color: #1e293b;                    loading="lazy"                loading="lazy"
+
+  margin-top: 0;
+
+  margin-bottom: 1rem;                    class="photo-thumbnail"                class="photo-thumbnail"
+
+}
 
                     data-full-src="{{ photo.url }}"                data-full-src="{{ photo.url }}"
 
-                    data-title="{{ photo.title | default: 'Photo' }}"                data-title="{{ photo.title | default: 'Photo' }}"
+.google-drive-album {
 
-                    data-description="{{ photo.description | default: '' }}"                data-description="{{ photo.description | default: '' }}"
+  margin: 2rem 0;                    data-title="{{ photo.title | default: 'Photo' }}"                data-title="{{ photo.title | default: 'Photo' }}"
 
-                  />              />
+  padding: 1rem;
+
+  border-radius: 12px;                    data-description="{{ photo.description | default: '' }}"                data-description="{{ photo.description | default: '' }}"
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;                  />              />
+
+}
 
                   <div class="photo-overlay">              <div class="photo-overlay">
 
-                    <div class="photo-info">                <div class="photo-info">
+.album-header {
 
-                      <h4>{{ photo.title | default: 'Photo' }}</h4>                  <h4>{{ photo.title | default: 'Photo' }}</h4>
+  text-align: center;                    <div class="photo-info">                <div class="photo-info">
 
-                      {% if photo.description %}                  {% if photo.description %}
+  margin-bottom: 1.5rem;
 
-                        <p>{{ photo.description }}</p>                    <p>{{ photo.description }}</p>
+}                      <h4>{{ photo.title | default: 'Photo' }}</h4>                  <h4>{{ photo.title | default: 'Photo' }}</h4>
 
-                      {% endif %}                  {% endif %}
+
+
+.album-title {                      {% if photo.description %}                  {% if photo.description %}
+
+  font-size: 1.5rem;
+
+  font-weight: 700;                        <p>{{ photo.description }}</p>                    <p>{{ photo.description }}</p>
+
+  color: #1e293b;
+
+  margin: 0 0 0.5rem 0;                      {% endif %}                  {% endif %}
+
+}
 
                     </div>                </div>
 
-                    <button class="view-full-btn" aria-label="View full size">                <button class="view-full-btn" aria-label="View full size">
+.album-description {
 
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  color: #64748b;                    <button class="view-full-btn" aria-label="View full size">                <button class="view-full-btn" aria-label="View full size">
+
+  margin: 0;
+
+  font-style: italic;                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+}
 
                         <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>                    <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
 
-                      </svg>                  </svg>
+.photo-grid {
 
-                    </button>                </button>
+  display: grid;                      </svg>                  </svg>
 
-                  </div>              </div>
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
-                </div>            </div>
+  gap: 1rem;                    </button>                </button>
 
-              </div>          </div>
+  margin: 1rem 0;
 
-            {% endfor %}        {% endfor %}
+}                  </div>              </div>
 
-          {% else %}      {% else %}
+
+
+.photo-item {                </div>            </div>
+
+  position: relative;
+
+  aspect-ratio: 1;              </div>          </div>
+
+  border-radius: 8px;
+
+  overflow: hidden;            {% endfor %}        {% endfor %}
+
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;          {% else %}      {% else %}
+
+}
 
             <div class="no-photos">        <div class="no-photos">
 
-              <p>No photos configured. Please add image data to _data/albums/{{ include.album }}.yml</p>          <p>No photos configured. Please add image data to _data/albums/{{ include.album }}.yml</p>
+.photo-item:hover {
 
-            </div>        </div>
+  transform: translateY(-2px);              <p>No photos configured. Please add image data to _data/albums/{{ include.album }}.yml</p>          <p>No photos configured. Please add image data to _data/albums/{{ include.album }}.yml</p>
 
-          {% endif %}      {% endif %}
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 
-        </div>    </div>
-
-            
-
-        <!-- Folder link -->    <!-- Folder link -->
-
-        <div class="album-footer">    <div class="album-footer">
-
-          <a href="{{ album_data.folder_url }}"       <a href="{{ album_data.folder_url }}" 
-
-             target="_blank"          target="_blank" 
-
-             rel="noopener"         rel="noopener"
-
-             class="folder-link">         class="folder-link">
-
-            📁 View source folder in Google Drive        📁 View source folder in Google Drive
-
-          </a>      </a>
-
-        </div>    </div>
-
-      </div>  </div>
+}            </div>        </div>
 
 
 
-      <!-- Lightbox Modal -->  <!-- Lightbox Modal -->
+.photo-wrapper {          {% endif %}      {% endif %}
 
-      <div class="lightbox-modal" id="lightbox-{{ include.album }}" style="display: none;">  <div class="lightbox-modal" id="lightbox-{{ include.album }}" style="display: none;">
+  position: relative;
 
-        <div class="lightbox-backdrop"></div>    <div class="lightbox-backdrop"></div>
+  width: 100%;        </div>    </div>
 
-        <div class="lightbox-content">    <div class="lightbox-content">
+  height: 100%;
 
-          <button class="lightbox-close" aria-label="Close">&times;</button>      <button class="lightbox-close" aria-label="Close">&times;</button>
-
-          <button class="lightbox-prev" aria-label="Previous">&#8249;</button>      <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
-
-          <button class="lightbox-next" aria-label="Next">&#8250;</button>      <button class="lightbox-next" aria-label="Next">&#8250;</button>
-
-                
-
-          <div class="lightbox-image-container">      <div class="lightbox-image-container">
-
-            <img class="lightbox-image" alt="" />        <img class="lightbox-image" alt="" />
-
-            <div class="lightbox-loading">Loading...</div>        <div class="lightbox-loading">Loading...</div>
-
-          </div>      </div>
-
-                
-
-          <div class="lightbox-info">      <div class="lightbox-info">
-
-            <h3 class="lightbox-title"></h3>        <h3 class="lightbox-title"></h3>
-
-            <p class="lightbox-description"></p>        <p class="lightbox-description"></p>
-
-            <span class="lightbox-counter"></span>        <span class="lightbox-counter"></span>
-
-          </div>      </div>
-
-        </div>    </div>
-
-      </div>  </div>
-
-    {% endif %}{% endif %}
+}            
 
 
 
-  {% endunless %}{% endunless %} 
+.photo-thumbnail {        <!-- Folder link -->    <!-- Folder link -->
 
-                src="https://drive.google.com/uc?export=view&id={{ photo.id }}" 
+  width: 100%;
 
-{% else %}              alt="{{ photo.caption | default: photo.title | default: 'Photo' }}"
+  height: 100%;        <div class="album-footer">    <div class="album-footer">
 
-  <div class="album-error">              title="{{ photo.caption | default: photo.title | default: 'Photo' }}"
+  object-fit: cover;
+
+  cursor: pointer;          <a href="{{ album_data.folder_url }}"       <a href="{{ album_data.folder_url }}" 
+
+  transition: transform 0.3s ease;
+
+}             target="_blank"          target="_blank" 
+
+
+
+.photo-item:hover .photo-thumbnail {             rel="noopener"         rel="noopener"
+
+  transform: scale(1.05);
+
+}             class="folder-link">         class="folder-link">
+
+
+
+.photo-overlay {            📁 View source folder in Google Drive        📁 View source folder in Google Drive
+
+  position: absolute;
+
+  top: 0;          </a>      </a>
+
+  left: 0;
+
+  right: 0;        </div>    </div>
+
+  bottom: 0;
+
+  background: linear-gradient(transparent 50%, rgba(0,0,0,0.8));      </div>  </div>
+
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+
+  display: flex;
+
+  flex-direction: column;      <!-- Lightbox Modal -->  <!-- Lightbox Modal -->
+
+  justify-content: space-between;
+
+  padding: 1rem;      <div class="lightbox-modal" id="lightbox-{{ include.album }}" style="display: none;">  <div class="lightbox-modal" id="lightbox-{{ include.album }}" style="display: none;">
+
+  color: white;
+
+}        <div class="lightbox-backdrop"></div>    <div class="lightbox-backdrop"></div>
+
+
+
+.photo-item:hover .photo-overlay {        <div class="lightbox-content">    <div class="lightbox-content">
+
+  opacity: 1;
+
+}          <button class="lightbox-close" aria-label="Close">&times;</button>      <button class="lightbox-close" aria-label="Close">&times;</button>
+
+
+
+.photo-info {          <button class="lightbox-prev" aria-label="Previous">&#8249;</button>      <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+
+  margin-top: auto;
+
+}          <button class="lightbox-next" aria-label="Next">&#8250;</button>      <button class="lightbox-next" aria-label="Next">&#8250;</button>
+
+
+
+.photo-info h4 {                
+
+  font-size: 0.9rem;
+
+  font-weight: 600;          <div class="lightbox-image-container">      <div class="lightbox-image-container">
+
+  margin: 0 0 0.25rem 0;
+
+}            <img class="lightbox-image" alt="" />        <img class="lightbox-image" alt="" />
+
+
+
+.photo-info p {            <div class="lightbox-loading">Loading...</div>        <div class="lightbox-loading">Loading...</div>
+
+  font-size: 0.8rem;
+
+  margin: 0;          </div>      </div>
+
+  opacity: 0.9;
+
+}                
+
+
+
+.view-full-btn {          <div class="lightbox-info">      <div class="lightbox-info">
+
+  background: rgba(255, 255, 255, 0.2);
+
+  border: none;            <h3 class="lightbox-title"></h3>        <h3 class="lightbox-title"></h3>
+
+  border-radius: 4px;
+
+  color: white;            <p class="lightbox-description"></p>        <p class="lightbox-description"></p>
+
+  cursor: pointer;
+
+  padding: 0.5rem;            <span class="lightbox-counter"></span>        <span class="lightbox-counter"></span>
+
+  transition: background-color 0.2s ease;
+
+  display: flex;          </div>      </div>
+
+  align-items: center;
+
+  justify-content: center;        </div>    </div>
+
+  position: absolute;
+
+  top: 1rem;      </div>  </div>
+
+  right: 1rem;
+
+}    {% endif %}{% endif %}
+
+
+
+.view-full-btn:hover {
+
+  background: rgba(255, 255, 255, 0.3);
+
+}  {% endunless %}{% endunless %} 
+
+
+
+.album-footer {                src="https://drive.google.com/uc?export=view&id={{ photo.id }}" 
+
+  text-align: center;
+
+  margin-top: 1rem;{% else %}              alt="{{ photo.caption | default: photo.title | default: 'Photo' }}"
+
+  padding-top: 1rem;
+
+  border-top: 1px solid #e2e8f0;  <div class="album-error">              title="{{ photo.caption | default: photo.title | default: 'Photo' }}"
+
+}
 
     <p>❌ Please provide either folder_id or album parameter</p>              loading="lazy"
 
-    <p>Usage: {% raw %}{% include google_drive_photo_album.html folder_id="YOUR_FOLDER_ID" %}{% endraw %}</p>              class="album-photo"
+.folder-link {
 
-    <p>Or: {% raw %}{% include google_drive_photo_album.html album="album-name" %}{% endraw %}</p>              data-full-src="https://drive.google.com/uc?export=view&id={{ photo.id }}"
+  color: #3b82f6;    <p>Usage: {% raw %}{% include google_drive_photo_album.html folder_id="YOUR_FOLDER_ID" %}{% endraw %}</p>              class="album-photo"
+
+  text-decoration: none;
+
+  font-weight: 500;    <p>Or: {% raw %}{% include google_drive_photo_album.html album="album-name" %}{% endraw %}</p>              data-full-src="https://drive.google.com/uc?export=view&id={{ photo.id }}"
+
+}
 
   </div>              data-caption="{{ photo.caption | default: photo.title | default: '' }}"
 
-{% endif %}              onclick="openLightbox('{{ album_id }}', {{ forloop.index0 }})"
+.folder-link:hover {
+
+  text-decoration: underline;{% endif %}              onclick="openLightbox('{{ album_id }}', {{ forloop.index0 }})"
+
+}
 
             />
 
-<style>            <div class="photo-overlay">
+.album-error {
 
-/* Google Drive Photo Album Styles */              <div class="photo-info">
+  background: #fee2e2;<style>            <div class="photo-overlay">
 
-.google-drive-folder-embed {                {% if photo.title %}
+  border: 1px solid #fecaca;
 
-  margin: 2rem 0;                  <h4 class="photo-title">{{ photo.title }}</h4>
+  border-radius: 8px;/* Google Drive Photo Album Styles */              <div class="photo-info">
 
-  padding: 1rem;                {% endif %}
+  padding: 1rem;
 
-  border-radius: 12px;                {% if photo.caption %}
+  margin: 1rem 0;.google-drive-folder-embed {                {% if photo.title %}
 
-  background: #f8fafc;                  <p class="photo-caption">{{ photo.caption }}</p>
+  color: #dc2626;
 
-  border: 1px solid #e2e8f0;                {% endif %}
+}  margin: 2rem 0;                  <h4 class="photo-title">{{ photo.title }}</h4>
 
-}                {% if photo.date %}
 
-                  <span class="photo-date">{{ photo.date }}</span>
 
-.google-drive-folder-embed h3 {                {% endif %}
+/* Responsive Design */  padding: 1rem;                {% endif %}
 
-  text-align: center;              </div>
+@media (max-width: 768px) {
 
-  color: #1e293b;              <div class="photo-actions">
+  .photo-grid {  border-radius: 12px;                {% if photo.caption %}
 
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+    gap: 0.5rem;  background: #f8fafc;                  <p class="photo-caption">{{ photo.caption }}</p>
+
+  }
+
+    border: 1px solid #e2e8f0;                {% endif %}
+
+  .google-drive-album, .google-drive-folder-embed {
+
+    padding: 0.5rem;}                {% if photo.date %}
+
+  }
+
+}                  <span class="photo-date">{{ photo.date }}</span>
+
+
+
+@media (max-width: 480px) {.google-drive-folder-embed h3 {                {% endif %}
+
+  .photo-grid {
+
+    grid-template-columns: repeat(2, 1fr);  text-align: center;              </div>
+
+  }
+
+}  color: #1e293b;              <div class="photo-actions">
+
+</style>
   margin-top: 0;                <button class="view-btn" onclick="openLightbox('{{ album_id }}', {{ forloop.index0 }})" title="View full size">
 
   margin-bottom: 1rem;                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
