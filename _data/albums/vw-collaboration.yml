@@ -1,0 +1,45 @@
+# Google Drive Photo Album: vw-collaboration
+# Generated on: 2025-10-20T03:03:14.094Z
+# 
+# Instructions:
+# 1. Replace GOOGLE_DRIVE_FILE_ID_X with actual Google Drive file IDs
+# 2. Update titles, captions, and dates as needed
+# 3. Add or remove photos as necessary
+# 
+# To get Google Drive file IDs:
+# - Right-click on image in Google Drive > Get Link
+# - Extract ID from URL: drive.google.com/file/d/FILE_ID_HERE/view
+# 
+# Usage in Jekyll:
+# {% include google_drive_photo_album.html album_id="vw-collaboration" photos=site.data.albums.vw_collaboration %}
+# 
+
+album_info:
+  title: Vw Collaboration
+  description: "Photo album: vw-collaboration"
+  created_date: 2025-10-20
+  folder_url: "https://drive.google.com/drive/folders/YOUR_FOLDER_ID_HERE"
+photos:
+  -
+    id: GOOGLE_DRIVE_FILE_ID_1
+    title: Photo Title 1
+    caption: Photo caption or description
+    date: 2025-10-20
+    tags:
+      - tag1
+      - tag2
+  -
+    id: GOOGLE_DRIVE_FILE_ID_2
+    title: Photo Title 2
+    caption: Another photo description
+    date: 2025-10-20
+    tags:
+      - tag3
+  -
+    id: GOOGLE_DRIVE_FILE_ID_3
+    title: Photo Title 3
+    caption: Third photo description
+    date: 2025-10-20
+    tags:
+      - tag1
+      - tag3

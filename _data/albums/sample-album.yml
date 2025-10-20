@@ -1,0 +1,39 @@
+# Google Drive Photo Album: Sample Album
+# Generated on: 2025-10-20
+# Folder ID: 13lEI2q-TSuRjFczcjYE5p5zBTMjLmCb8
+# Folder URL: https://drive.google.com/drive/folders/13lEI2q-TSuRjFczcjYE5p5zBTMjLmCb8
+
+title: "Sample Photo Album"
+folder_id: "13lEI2q-TSuRjFczcjYE5p5zBTMjLmCb8"
+folder_url: "https://drive.google.com/drive/folders/13lEI2q-TSuRjFczcjYE5p5zBTMjLmCb8?usp=sharing"
+
+# Option 1: Use folder embed (shows all images in folder automatically)
+use_folder_embed: true
+embed_height: "500"
+
+# Option 2: Specify individual images (more control over display)
+# Set use_folder_embed to false and list specific images below
+images:
+  - id: "REPLACE_WITH_ACTUAL_FILE_ID_1"
+    title: "Sample Image 1"
+    description: "Replace with actual image description"
+    url: "https://drive.google.com/uc?export=view&id=REPLACE_WITH_ACTUAL_FILE_ID_1"
+    thumbnail: "https://drive.google.com/thumbnail?id=REPLACE_WITH_ACTUAL_FILE_ID_1&sz=w300"
+    
+  - id: "REPLACE_WITH_ACTUAL_FILE_ID_2"
+    title: "Sample Image 2"
+    description: "Replace with actual image description"
+    url: "https://drive.google.com/uc?export=view&id=REPLACE_WITH_ACTUAL_FILE_ID_2"
+    thumbnail: "https://drive.google.com/thumbnail?id=REPLACE_WITH_ACTUAL_FILE_ID_2&sz=w300"
+
+instructions: |
+  EASY OPTION - Just use the folder:
+  Set use_folder_embed: true above and you're done!
+  
+  ADVANCED OPTION - Individual file control:
+  1. Set use_folder_embed: false
+  2. Open the Google Drive folder in your browser
+  3. Right-click on each image and select 'Get link' or 'Share'
+  4. Copy the sharing link and extract the file ID (the long string after '/d/' or 'id=')
+  5. Replace REPLACE_WITH_ACTUAL_FILE_ID_X with the actual file IDs
+  6. Update titles and descriptions as needed

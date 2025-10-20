@@ -1,0 +1,607 @@
+<!-- Google Drive Photo Album Include -->
+<!-- 
+Usage Options:
+1. Simple folder embed: {% include google_drive_photo_album.html folder_id="YOUR_FOLDER_ID" title="Album Title" %}
+2. Album from data:    {% include google_drive_photo_album.html album="album-name" %}
+-->
+
+{% if include.folder_id %}
+  <!-- Direct folder ID usage - Simple embed mode -->
+  {% assign folder_id = include.folder_id %}
+  {% assign album_title = include.title | default: "Photo Album" %}
+  {% assign embed_height = include.height | default: "500" %}
+  
+  <div class="google-drive-folder-embed">
+    <h3>{{ album_title }}</h3>
+    
+    <iframe 
+      src="https://drive.google.com/embeddedfolderview?id={{ folder_id }}#grid"
+      width="100%" 
+      height="{{ embed_height }}"
+      frameborder="0"
+      style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    </iframe>
+    
+    <p style="margin-top: 10px; text-align: center;">
+      <a href="https://drive.google.com/drive/folders/{{ folder_id }}?usp=sharing" 
+         target="_blank" 
+         rel="noopener"
+         style="color: #1a73e8; text-decoration: none;">
+        📁 View full folder in Google Drive →
+      </a>
+    </p>
+  </div>
+
+{% elsif include.album %}
+  <!-- Album data from _data/albums/ -->
+  {% assign album_data = site.data.albums[include.album] %}
+  {% unless album_data %}
+    <div class="album-error">
+      <p>❌ Album "{{ include.album }}" not found. Please check the filename in _data/albums/</p>
+    </div>
+  {% else %}
+
+{% if album_data.use_folder_embed %}
+  <!-- Simple folder embed mode - uses just the folder ID -->
+  <div class="google-drive-folder-embed">
+    <h3>{{ album_data.title }}</h3>
+    
+    <iframe 
+      src="https://drive.google.com/embeddedfolderview?id={{ album_data.folder_id }}#grid"
+      width="100%" 
+      height="{{ album_data.embed_height | default: '500' }}"
+      frameborder="0"
+      style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    </iframe>
+    
+    <p style="margin-top: 10px; text-align: center;">
+      <a href="{{ album_data.folder_url }}" 
+         target="_blank" 
+         rel="noopener"
+         style="color: #1a73e8; text-decoration: none;">
+        📁 View full folder in Google Drive →
+      </a>
+    </p>
+  </div>
+
+{% else %}
+  <!-- Custom grid mode with individual images -->
+  <div class="google-drive-album" id="album-{{ include.album }}">
+    <div class="album-header">
+      <h3 class="album-title">{{ album_data.title }}</h3>
+      {% if album_data.description %}
+        <p class="album-description">{{ album_data.description }}</p>
+      {% endif %}
+    </div>
+    
+    <div class="photo-grid" data-album="album-{{ include.album }}">
+      {% if album_data.images %}
+        {% for photo in album_data.images %}
+          <div class="photo-item" data-index="{{ forloop.index0 }}">
+            <div class="photo-wrapper">
+              <img 
+                src="{{ photo.thumbnail }}" 
+                alt="{{ photo.title | default: 'Photo' }}"
+                loading="lazy"
+                class="photo-thumbnail"
+                data-full-src="{{ photo.url }}"
+                data-title="{{ photo.title | default: 'Photo' }}"
+                data-description="{{ photo.description | default: '' }}"
+              />
+              <div class="photo-overlay">
+                <div class="photo-info">
+                  <h4>{{ photo.title | default: 'Photo' }}</h4>
+                  {% if photo.description %}
+                    <p>{{ photo.description }}</p>
+                  {% endif %}
+                </div>
+                <button class="view-full-btn" aria-label="View full size">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="no-photos">
+          <p>No photos configured. Please add image data to _data/albums/{{ include.album }}.yml</p>
+        </div>
+      {% endif %}
+    </div>
+    
+    <!-- Folder link -->
+    <div class="album-footer">
+      <a href="{{ album_data.folder_url }}" 
+         target="_blank" 
+         rel="noopener"
+         class="folder-link">
+        📁 View source folder in Google Drive
+      </a>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-{{ include.album }}" style="display: none;">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+      <button class="lightbox-next" aria-label="Next">&#8250;</button>
+      
+      <div class="lightbox-image-container">
+        <img class="lightbox-image" alt="" />
+        <div class="lightbox-loading">Loading...</div>
+      </div>
+      
+      <div class="lightbox-info">
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-description"></p>
+        <span class="lightbox-counter"></span>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% endunless %} 
+              src="https://drive.google.com/uc?export=view&id={{ photo.id }}" 
+              alt="{{ photo.caption | default: photo.title | default: 'Photo' }}"
+              title="{{ photo.caption | default: photo.title | default: 'Photo' }}"
+              loading="lazy"
+              class="album-photo"
+              data-full-src="https://drive.google.com/uc?export=view&id={{ photo.id }}"
+              data-caption="{{ photo.caption | default: photo.title | default: '' }}"
+              onclick="openLightbox('{{ album_id }}', {{ forloop.index0 }})"
+            />
+            <div class="photo-overlay">
+              <div class="photo-info">
+                {% if photo.title %}
+                  <h4 class="photo-title">{{ photo.title }}</h4>
+                {% endif %}
+                {% if photo.caption %}
+                  <p class="photo-caption">{{ photo.caption }}</p>
+                {% endif %}
+                {% if photo.date %}
+                  <span class="photo-date">{{ photo.date }}</span>
+                {% endif %}
+              </div>
+              <div class="photo-actions">
+                <button class="view-btn" onclick="openLightbox('{{ album_id }}', {{ forloop.index0 }})" title="View full size">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+                <a class="download-btn" href="https://drive.google.com/uc?export=download&id={{ photo.id }}" target="_blank" title="Download image">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7,10 12,15 17,10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <!-- Fallback: Generate from folder_id (requires manual configuration) -->
+      <div class="photo-item">
+        <div class="photo-wrapper">
+          <img 
+            src="https://drive.google.com/uc?export=view&id={{ folder_id }}" 
+            alt="Sample photo from Google Drive"
+            loading="lazy"
+            class="album-photo"
+            data-full-src="https://drive.google.com/uc?export=view&id={{ folder_id }}"
+            data-caption="Photo from Google Drive folder"
+            onclick="openLightbox('{{ album_id }}', 0)"
+          />
+          <div class="photo-overlay">
+            <div class="photo-info">
+              <p class="photo-caption">Photo from Google Drive folder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+  
+  <!-- Photo Count Info -->
+  <div class="album-footer">
+    <span class="photo-count">
+      {% if photos %}
+        {{ photos.size }} photo{% if photos.size != 1 %}s{% endif %}
+      {% else %}
+        Loading photos...
+      {% endif %}
+    </span>
+    {% if include.folder_url %}
+      <a href="{{ include.folder_url }}" target="_blank" class="view-folder-btn">View Google Drive Folder</a>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-{{ album_id }}" class="lightbox" onclick="closeLightbox('{{ album_id }}')">
+  <div class="lightbox-content" onclick="event.stopPropagation()">
+    <span class="lightbox-close" onclick="closeLightbox('{{ album_id }}')">&times;</span>
+    <img id="lightbox-img-{{ album_id }}" src="" alt="" />
+    <div class="lightbox-caption" id="lightbox-caption-{{ album_id }}"></div>
+    <div class="lightbox-nav">
+      <button class="lightbox-prev" onclick="changeLightboxPhoto('{{ album_id }}', -1)">‹</button>
+      <button class="lightbox-next" onclick="changeLightboxPhoto('{{ album_id }}', 1)">›</button>
+    </div>
+    <div class="lightbox-counter" id="lightbox-counter-{{ album_id }}"></div>
+  </div>
+</div>
+
+<style>
+/* Google Drive Photo Album Styles */
+.google-drive-album {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.album-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.album-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 0.5rem 0;
+}
+
+.album-description {
+  color: #64748b;
+  margin: 0;
+  font-style: italic;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.photo-item {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.photo-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.photo-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.album-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo-item:hover .album-photo {
+  transform: scale(1.05);
+}
+
+.photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(transparent 50%, rgba(0,0,0,0.8));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  color: white;
+}
+
+.photo-item:hover .photo-overlay {
+  opacity: 1;
+}
+
+.photo-info {
+  margin-top: auto;
+}
+
+.photo-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.photo-caption {
+  font-size: 0.8rem;
+  margin: 0 0 0.25rem 0;
+  opacity: 0.9;
+}
+
+.photo-date {
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.photo-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.view-btn, .download-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-btn:hover, .download-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.album-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.view-folder-btn {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.view-folder-btn:hover {
+  text-decoration: underline;
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.lightbox-content {
+  position: relative;
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: default;
+}
+
+.lightbox-content img {
+  width: auto;
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+}
+
+.lightbox-close:hover {
+  opacity: 0.7;
+}
+
+.lightbox-caption {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.lightbox-prev, .lightbox-next {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  pointer-events: all;
+  transition: background-color 0.2s ease;
+}
+
+.lightbox-next {
+  border-radius: 4px 0 0 4px;
+}
+
+.lightbox-prev:hover, .lightbox-next:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.lightbox-counter {
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.5rem;
+  }
+  
+  .google-drive-album {
+    padding: 0.5rem;
+  }
+  
+  .album-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .lightbox-prev, .lightbox-next {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+
+<script>
+// Google Drive Photo Album JavaScript
+let currentPhotoIndex = {};
+let albumPhotos = {};
+
+// Initialize album data
+document.addEventListener('DOMContentLoaded', function() {
+  const albumId = '{{ album_id }}';
+  const photoGrid = document.querySelector('[data-album="' + albumId + '"]');
+  if (photoGrid) {
+    const photos = photoGrid.querySelectorAll('.photo-item');
+    albumPhotos[albumId] = Array.from(photos).map(photo => {
+      const img = photo.querySelector('.album-photo');
+      return {
+        src: img.dataset.fullSrc,
+        caption: img.dataset.caption || '',
+        alt: img.alt || ''
+      };
+    });
+    currentPhotoIndex[albumId] = 0;
+  }
+});
+
+function openLightbox(albumId, photoIndex) {
+  const lightbox = document.getElementById('lightbox-' + albumId);
+  const lightboxImg = document.getElementById('lightbox-img-' + albumId);
+  const lightboxCaption = document.getElementById('lightbox-caption-' + albumId);
+  const lightboxCounter = document.getElementById('lightbox-counter-' + albumId);
+  
+  if (!albumPhotos[albumId] || !albumPhotos[albumId][photoIndex]) return;
+  
+  currentPhotoIndex[albumId] = photoIndex;
+  const photo = albumPhotos[albumId][photoIndex];
+  
+  lightboxImg.src = photo.src;
+  lightboxImg.alt = photo.alt;
+  lightboxCaption.textContent = photo.caption;
+  lightboxCounter.textContent = `${photoIndex + 1} / ${albumPhotos[albumId].length}`;
+  
+  lightbox.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+  
+  // Add keyboard navigation
+  document.addEventListener('keydown', handleKeyPress);
+}
+
+function closeLightbox(albumId) {
+  const lightbox = document.getElementById('lightbox-' + albumId);
+  lightbox.style.display = 'none';
+  document.body.style.overflow = 'auto';
+  document.removeEventListener('keydown', handleKeyPress);
+}
+
+function changeLightboxPhoto(albumId, direction) {
+  if (!albumPhotos[albumId]) return;
+  
+  const newIndex = currentPhotoIndex[albumId] + direction;
+  if (newIndex >= 0 && newIndex < albumPhotos[albumId].length) {
+    openLightbox(albumId, newIndex);
+  }
+}
+
+function handleKeyPress(event) {
+  const albumId = Object.keys(currentPhotoIndex).find(id => 
+    document.getElementById('lightbox-' + id).style.display === 'block'
+  );
+  
+  if (!albumId) return;
+  
+  switch(event.key) {
+    case 'Escape':
+      closeLightbox(albumId);
+      break;
+    case 'ArrowLeft':
+      changeLightboxPhoto(albumId, -1);
+      break;
+    case 'ArrowRight':
+      changeLightboxPhoto(albumId, 1);
+      break;
+  }
+}
+</script>
+
+  {% endunless %}
+{% else %}
+  <div class="album-error">
+    <p>❌ Please provide either folder_id or album parameter</p>
+    <p>Usage: {% raw %}{% include google_drive_photo_album.html folder_id="YOUR_FOLDER_ID" %}{% endraw %}</p>
+    <p>Or: {% raw %}{% include google_drive_photo_album.html album="album-name" %}{% endraw %}</p>
+  </div>
+{% endif %}
