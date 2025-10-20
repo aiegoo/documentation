@@ -85,7 +85,7 @@ The project involved developing AI-based battery management systems with specifi
 
 {% include image.html file="partnership-framework-vw.jpg" alt="Strategic Partnership Framework" caption="Technical collaboration framework developed with VW Germany for AI-BMS development" %}
 
-{% include google_drive_photo_album.html folder_id="13lEI2q-TSuRjFczcjYE5p5zBTMjLmCb8" title="VW Battery Module Project Documentation" %}
+## Project Documentation and Resources
 
 ### Technical Learning from the Project
 
