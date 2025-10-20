@@ -1,0 +1,27 @@
+<!-- Google Drive Image Include with fallback options -->
+<div class="google-drive-image" style="text-align: center; margin: 20px 0;">
+  <!-- Primary image with multiple fallback URLs -->
+  <img 
+    src="https://lh3.googleusercontent.com/d/{{ include.id }}" 
+    alt="{{ include.alt | default: 'Google Drive Image' }}" 
+    style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); opacity: 0; transition: opacity 0.3s ease;"
+    onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id={{ include.id }}'; if(this.complete && this.naturalWidth === 0) { this.style.display='none'; this.nextElementSibling.style.display='block'; }"
+    onload="this.style.opacity='1';">
+  
+  <!-- Fallback link if image fails to load -->
+  <div style="display: none; padding: 15px; background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; margin-top: 10px;">
+    <p style="margin: 0 0 10px 0; font-weight: bold;">📄 Image Preview Not Available</p>
+    <a href="https://drive.google.com/file/d/{{ include.id }}/view?usp=sharing" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       style="display: inline-block; padding: 8px 16px; background: #4285f4; color: white; text-decoration: none; border-radius: 4px; font-size: 14px;">
+      View on Google Drive →
+    </a>
+  </div>
+  
+  {% if include.caption %}
+  <p style="margin-top: 10px; font-size: 14px; color: #666; font-style: italic;">
+    {{ include.caption }}
+  </p>
+  {% endif %}
+</div>

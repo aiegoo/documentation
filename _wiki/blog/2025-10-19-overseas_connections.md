@@ -96,17 +96,7 @@ Working on the German VW battery module project required understanding new techn
 
 {% include image.html file="bms/ai-bms-project.png" alt="VW Battery Module Overview" caption="German VW battery module project showing technical architecture and system integration" %}
 
-{% raw %}
-<!-- Replace the existing Google Drive include line with this plain HTML image tag -->
-<p>
-  <a href="https://drive.google.com/file/d/1koU7CZ_SI3Nf5XPzcqNCJipo1qnY6NfW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-    <img src="https://drive.google.com/uc?export=view&id=1koU7CZ_SI3Nf5XPzcqNCJipo1qnY6NfW"
-         alt="Additional BMS Project Image"
-         style="max-width:100%;height:auto;">
-  </a>
-</p>
-{% endraw %}
-Additional technical documentation and development progress from the VW collaboration project
+{% include googleDriveImage.html id="1koU7CZ_SI3Nf5XPzcqNCJipo1qnY6NfW" alt="VW BMS Project Documentation" caption="Additional technical documentation and development progress from the VW collaboration project" %}
 
 ### Technical Deliverables
 
