@@ -10,6 +10,6 @@
 {% endif %}
 
 <audio controls preload="{{ include.preload | default: 'none' }}" {% if include.autoplay %}autoplay{% endif %} {% if include.loop %}loop{% endif %} {% if include.muted %}muted{% endif %}>
-  <source src="{{ include.src }}" type="{{ mime }}">
+  <source src="{{ include.src | relative_url }}" type="{{ mime }}">
   Your browser does not support the audio element.
 </audio>
