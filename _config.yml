@@ -78,7 +78,6 @@ exclude:
   - webdev-node/
   - source-code/
   - var/
-  - resources/
   - qt/
   - pdfconfigs/
   - pdf/*.zip
